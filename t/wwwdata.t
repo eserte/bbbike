@@ -170,6 +170,12 @@ Running
     (cd @{[ bbbike_root ]}/data && ./doit.pl old_bbbike_data)
 
 may help to fix the problem.
+
+Another possible problem:
+@{[ bbbike_root ]}/data and the variant in @{[ bbbike_root ]}/tmp/old-bbbike-data
+has just mismatch lines regarding the timestamp, but not
+regardning the digest. In this case, just remove the
+problematic file and run old_bbbike_data again.
 EOF
 }
 
