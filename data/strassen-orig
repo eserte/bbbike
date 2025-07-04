@@ -11310,6 +11310,7 @@ Happestr.	N 10955,-769 10953,-812 10968,-987 10973,-1041 10976,-1070
 Schumpeterstr.	N 10979,-1093 10993,-1256 11003,-1303
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8407 (Empfehlung: Umbenennung in Ottilie-Ehlers-Kollwitz-Str.)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf (Benennung einer Straﬂe; wirksam zum 15. Juli 2025)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1577439.php (feierliche Benennung am 15.07.2025)
 #: XXX wird umbenannt in Ottilie-Ehlers-Kollwitz-Str.
 #: next_check: 2025-07-15
 Straﬂe 40 (Lichtenrade)	N 11015,-1357 11003,-1303
@@ -19840,7 +19841,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straﬂe)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-07-03 vvv
+#: last_checked: 2025-07-04 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
@@ -21035,12 +21036,12 @@ An den Eiswerken	N 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	N 14886,10748 14909,10732 14984,10677
 Rummelsburger Seeblick	NN 14927,10807 14918,10769 14909,10732
 # 
-#: next_check_id: ROTESRATHAUS-2023
-#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2025-06-28
-#: next_check: 2025-07-04
-#: valid: -20250704
-(Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
+# REMOVED --- #: next_check_id: ROTESRATHAUS-2023
+# REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+# REMOVED --- #: last_checked: 2025-07-04
+# REMOVED --- #: next_check: 2025-07-04
+# REMOVED --- #: valid: -20250704
+# REMOVED --- (Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
 # 
 (Passage am Tacheles)	NN 9371,13333 9353,13273 9244,13253
 Aaron-Bernstein-Platz	NN 9353,13273 9382,13265 9385,13246 9463,13256 9476,13293

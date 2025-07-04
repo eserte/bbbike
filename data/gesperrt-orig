@@ -244,7 +244,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="21"
-#: last_checked: 2025-04-25
+#: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -2167,7 +2167,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: https://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="16"
-#: last_checked: 2025-04-26 (mapillary)
+#: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
@@ -2331,6 +2331,7 @@ Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16476,16216 16520,16200
 Berliner Allee: Straßenbahntrasse	3nocross 14499,16341 14556,16391 14610,16522
 #: by: Jörg Böhmer
 Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross -3043,16601 -3046,16548 -3050,16429
+Streitstr.: Mittelstreifen	3nocross -3042,16609 -3034,16719 -3033,16757
 Streitstr.: Mittelstreifen	3nocross -3029,16823 -3023,16925 -3018,16974
 Streitstr.: Mittelstreifen	3nocross -3009,17090 -3006,17128 -2959,17507
 #: note: Luftbild
@@ -4220,7 +4221,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 3
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-07-03
+#: last_checked: 2025-07-04
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4537,7 +4538,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-06-13
+#: last_checked: 2025-07-04
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -5108,7 +5109,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="60333311" version="35"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="289966097" version="24"
 #: priority: #A
-#: last_checked: 2025-06-28
+#: last_checked: 2025-07-04
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 # REMOVED (existiert nicht mehr) --- Grunerstr.: Straßenzug wird entfernt	2::inwork 10697,12303 10746,12364
@@ -5159,7 +5160,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-06-28
+#: last_checked: 2025-07-04
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

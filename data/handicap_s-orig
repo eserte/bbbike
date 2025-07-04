@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-07-03
+#: last_checked: 2025-07-04
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -402,19 +402,19 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11054,11992 11111,12027
 # REMOVED (Sperrung wurde aufgehoben) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-22 --- Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesperrt	q4::inwork 9456,11513 9331,11497
 # 
-#: next_check_id: ROTESRATHAUS-2023
-#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
-#: last_checked: 2025-07-03 (webcam) vvv
-#: next_check: 2025-07-04 vvv
-#: valid: -20250704 vvv
-#: note: eigentlich für Fußgänger verboten
-(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
-#: note: eigentlich nur in Richtung W-O befahrbar, deshalb q4
-(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: ROTESRATHAUS-2023
+# REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+# REMOVED --- #: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
+# REMOVED --- #: last_checked: 2025-07-04 vvv
+# REMOVED --- #: next_check: 2025-07-04 vvv
+# REMOVED --- #: valid: -20250704 vvv
+# REMOVED --- #: note: eigentlich für Fußgänger verboten
+# REMOVED --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
+# REMOVED --- #: note: eigentlich nur in Richtung W-O befahrbar, deshalb q4
+# REMOVED --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED (hier keine Bauarbeiten mehr) --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: last_checked: 2023-08-09 --- #: check_frequency: 30d --- #: next_check: 2023-08-11 --- #: valid: -20230811 --- Platz der Vereinten Nationen: Anbindung Mollstr. gesperrt, Bordsteine, Engstellen	q4::inwork 11896,13075 11904,13052
 # REMOVED (mittlerweile wieder Führung via Fahrbahn trotz nicht ganz abgeschlossener Baustelle) --- #: source_id: viz2021:13.414995,52.527328,22.05.2023,06:00 (bis 09.06.2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1660510235155484672#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndldEE0b1dBQVU0VmE2LmpwZw== --- #: next_check: 2023-06-09 --- #: valid: -20230609 --- Mollstr.: Fahrbahnsanierungsarbeiten, Radfahrer werden über den Gehweg geführt	q1-::inwork; 11160,13492 11216,13451 11270,13412 11276,13408
@@ -490,7 +490,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-05-16
+#: last_checked: 2025-07-04
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (rbb)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -828,7 +828,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="24"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-05-29 (architektur-urbanistik)
+#: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1540,7 +1540,36 @@ Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575
 (Parkweg entlang der Tiergartenstr.): einige Fußgänger, einige Bäume auf dem Weg	q1- 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553 7621,11541 7463,11538 7359,11538 7220,11542 7111,11524 7080,11508 6966,11490
 #: note: in diesem Abschnitt ist der Weg deutlich enger
 (Parkweg entlang der Tiergartenstr.): einige Fußgänger, einige Bäume auf dem Weg	q2 6966,11490 6844,11496 6826,11479
-(Bremer Weg - Fasanerieallee): einige Fußgänger	q1 6337,11887 6379,11843 6395,11806 6417,11796 6438,11784 6540,11754
+(Bremer Weg - Fasanerieallee): einige Fußgänger	q1 6337,11887 6379,11843 6395,11806 6417,11796
+(Bremer Weg - Fasanerieallee): einige Fußgänger	q1 6438,11784 6540,11754
+# 
+#: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
+#: by: http://www.carsten-schatz.de/fileadmin/linksfraktion/ka/2015/S17-16825.pdf (kleine Anfrage)
+#: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf
+#: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: I/2019 bis IV/2019)
+#: by: https://www.welt.de/print/die_welt/debatte/article206334255/Platz-der-Republik-Ganz-grosser-Kaese.html (Baubeginn 2022?)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Erwähnung; bis 2030)
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/loewenbruecke/ ("Voraussichtliche Bauzeit: noch in Planung") (Stand Juni 2023: weiterhin "noch in Planung")
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/loewenbruecke/ (geänderte URL)
+#: by: https://www.bz-berlin.de/berlin/mitte/berlin-bekommt-seine-loewenbruecke-wieder (Bauarbeiten voraussichtlich ab Sommer 2023 + 15 Monate Bauzeit)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1361549.php (Fertigstellung Ende 2024)
+#: by: https://www.berliner-woche.de/tiergarten/c-bauen/loewenbruecke-wird-bis-ende-2024-wieder-aufgebaut_a394430
+#: by: https://www.deutsches-architekturforum.de/thread/6927-rund-um-die-siegess%C3%A4ule-gro%C3%9Fer-tiergarten/?postID=763239#post763239 (Fertigstellung Q1 2025)
+#: by: https://www.morgenpost.de/bezirke/mitte/article407169185/neubau-der-loewenbruecke-im-tiergarten-endlich-gehtE28098s-voran.html (bis Anfang 2025)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1576809.php (offen!)
+# REMOVED --- #: XXX: laut Baustellenschild bis II. Quartal 2025
+#: XXX zumindest eine Stufe auf einer Seite existiert, vielleicht auch auf der anderen --- wie wirkt sich das auf handicap aus?
+#: also_indoor: search Löwenbrücke Tiergarten
+#: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
+#: osm_watch: node id="245006076" version="7"
+#: osm_watch: node id="245006075" version="8"
+# REMOVED --- #: osm_watch: way id="1272587928" version="2"
+#: osm_watch[closed]: note 4798189 6
+# REMOVED --- #: last_checked: 2025-06-30 (daf)
+# REMOVED --- #: check_frequency: 720d
+# REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
+Löwenbrücke: einige Fußgänger, schmale Brücke, Stufen	q3 6417,11796 6438,11784
+# 
 (Bremer Weg/Löwenbrücke - Großer Weg): einige Fußgänger	q1 6395,11806 6353,11730
 (zum Rosengarten): einige Fußgänger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
 #: note: Radfahren aber erlaubt, laut Schild "mit Schrittgeschwindigkeit frei"
@@ -3718,7 +3747,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-07-03
+#: last_checked: 2025-07-04
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-
@@ -4250,8 +4279,8 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.tagesspiegel.de/die-losung-an-berlins-grossem-bvg-knoten-stadtrat-zeigt-erstmals-neue-fahrradbrucke-am-rathaus-spandau-13504444.html (kein Bautermin)
 #: by: https://entwicklungsstadt.de/so-soll-die-neue-fahrradbruecke-am-rathaus-spandau-aussehen/
 #: by: https://www.morgenpost.de/bezirke/spandau/article408813542/verkehrswende-die-plaene-fuer-die-radbruecke-am-rathaus-spandau.html
-#: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
-#: last_checked: 2025-06-20 (osm) vvv
+# REMOVED (wieder benutzungspflichtig) --- #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
+#: last_checked: 2025-07-03 (mapillary) vvv
 #: check_frequency: 360d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3511,14260 -3517,14218 -3552,14082

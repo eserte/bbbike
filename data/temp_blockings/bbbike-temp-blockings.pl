@@ -28990,7 +28990,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-06-13
+#: last_checked: 2025-07-04
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -33424,10 +33424,10 @@ EOF
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="12"
+#: osm_watch: way id="362719487" version="13"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-06-27 (mapillary)
+#: last_checked: 2025-07-03 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -39804,10 +39804,10 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 4
-#: also_indoor: traffic (B,T,ex-H,re-G,re-W,ex-A)
+#: also_indoor: traffic (B,T,ex-H,re-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-06-05 (traffic)
+#: last_checked: 2025-07-04 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -40759,7 +40759,9 @@ EOF
      { from  => 1750884815, # $isodate2epoch->("2024-08-29 00:00:00"), # undef, # 
        until => $isodate2epoch->("2025-07-04 18:00:00"), # 1725554996, # $isodate2epoch->("2024-09-06 23:59:59"), # 1688759535, # undef, # XXX
 #      text  => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 29.8.2024 für voraussichtlich 6.9.2024',
-       text  => 'Rathausstr.: Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 26.6.2025 bis voraussichtlich 4.7.2025',
+       text  => 'Rathausstr.: Veranstaltung, Sperrung vor dem Roten Rathaus, Umleitungsstrecke über das Rathausforum bzw. Jüdenstr., ab 26.6.2025 bis voraussichtlich 4.7.2025',
+       periodic => 1,
+       recurrences => [['yearly', days => 26, months => 6]], # Berliner Hoffest; findet entweder Anfang Juli (z.B. 1/4/5.) oder Anfang September statt, etwa fünf Tage vorher beginnt bereits die Sperrung und dauert noch etwa drei Tage an
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ROTESRATHAUS-2023
@@ -41617,7 +41619,7 @@ EOF
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., auch Radfahrer sind betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
 #      text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, vom 09.05.2025 07:00 bis 04.06.2025 17:00',
-       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, voraussichtlich bis Juni 2026',
+       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, voraussichtlich bis Juni 2026', # diesmal Hochbauarbeiten
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
@@ -42037,7 +42039,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
-#: last_checked: 2025-06-25
+#: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 EOF
@@ -42242,11 +42244,12 @@ EOF
 EOF
      },
      { from  => 1698566400, # 2023-10-29 09:00
-       until => $isodate2epoch->("2025-07-07 17:00:00"), # 1748617200, # 2025-05-30 17:00
-       text  => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 07.07.2025 17:00 Uhr',
+       until => $isodate2epoch->("2025-08-27 17:00:00"), # $isodate2epoch->("2025-07-07 17:00:00"), # 1748617200, # 2025-05-30 17:00
+       text  => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 27.08.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/222-C/23/138 (bis 30.05.2025) (bis 07.07.2025)
+#: source_id: LS/222-C/25/125 (bis 27.08.2025)
 	2::inwork 24027,-86688 23957,-86937 23869,-87065
 EOF
      },
@@ -44662,7 +44665,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-03 vvv
+#: last_checked: 2025-07-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45155,7 +45158,7 @@ EOF
 EOF
      },
      { from  => 1750438004, # 1722618239, # 2024-08-02 19:03
-       until => undef, # 1734532309, # undef, # 1726351200, # 2024-09-15 00:00
+       until => 1751647133, # undef, # 1734532309, # undef, # 1726351200, # 2024-09-15 00:00
 #      text  => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, voraussichtlich bis 14.9.2024, evtl. wird verlängert',
 #      text  => 'Rochowstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Stralauer Allee, Ende der Bauarbeiten unbekannt',
 #      text  => 'Rochowstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
@@ -45164,11 +45167,9 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: also_indoor: traffic (H,B,T,G) --- #: note: laut Baustellenschild dauern die Bauarbeiten von 2024-09 bis 2024-10. --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-12-18 --- #: check_frequency: 14d --- #: next_check: 2024-10-31
 #	q4::inwork; 14103,10489 14170,10675
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: da die Asphaltierungsarbeiten fertig sind und nur die Absperrungen noch nicht entfernt, wird aus q4 -> q3
 #: also_indoor: traffic (H,T,G)
-#: last_checked: 2025-07-01 (Asphaltierungsarbeiten fertig, nicht nicht offen)
-#: check_frequency: 3d
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2025-07-01 (Asphaltierungsarbeiten fertig, nicht nicht offen) --- #: check_frequency: 3d
 	q3::inwork 14103,10489 14170,10675
 EOF
      },
@@ -45982,6 +45983,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
 	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
 EOF
      },
@@ -47056,12 +47058,13 @@ Scottweg	q4::inwork -1317,11300 -966,11382
 EOF
      },
      { from  => 1739772000, # 2025-02-17 07:00
-       until => 1751641200, # 2025-07-04 17:00
-       text  => 'Platanenstr.: Bauarbeiten zwischen Waldstr. und Treskowstr., Sperrung, vom 18.02.2025 07:00 bis 04.07.2025 17:00',
+       until => $isodate2epoch->("2025-07-31 17:00:00"), # 1751641200, # 2025-07-04 17:00
+       text  => 'Platanenstr.: Bauarbeiten zwischen Waldstr. und Treskowstr., Sperrung, vom 18.02.2025 07:00 bis 31.07.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: PLATANEN-2025
 #: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025)
+#: note: bei rbb wurde verlängert (bis 31.07.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1891725331691864443
 #: by: https://pbs.twimg.com/media/Gj_K-ydXgAAYbfS?format=jpg&name=large (etwa 170m der Fahrbahn und des nördlichen Bürgersteigs ab Waldstr. sind betroffen)
 	q4::inwork 9824,19910 9498,19817
@@ -47147,9 +47150,9 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,H)
-#: last_checked: 2025-07-02
-#: check_frequency: 14d
-#: next_check: 2025-07-04 (Halteverbotsschilder)
+#: last_checked: 2025-07-04 (traffic)
+#: check_frequency: 3d
+# REMOVED --- #: next_check: 2025-07-04 (Halteverbotsschilder)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
 	2::inwork 17587,9655 17668,9632
 EOF
@@ -47406,15 +47409,17 @@ EOF
 	2::inwork 34802,45368 34613,45287 34518,45231 34093,44866 32572,43561 32518,43468 32401,42954 32348,42876 30754,42070
 EOF
      },
-     { from  => $isodate2epoch->("2025-04-03 00:00:00"),
-       until => $isodate2epoch->("2025-04-07 06:00:00"),
-       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 7.4.2025 06:00 Uhr',
+     { from  => $isodate2epoch->("2025-08-07 00:00:00"), # $isodate2epoch->("2025-04-03 00:00:00"),
+       until => $isodate2epoch->("2025-08-11 06:00:00"), # $isodate2epoch->("2025-04-07 06:00:00"),
+#      text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 7.4.2025 06:00 Uhr',
+       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 8.8.2025 22:00 Uhr bis zum 11.8.2025 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/223-P/25/019 (bis 07.04.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~03-07-2025-sperrung-am-horstweg-in-potsdam (08.08.2025 ab 22 Uhr bis 11.08.2025 um 6 Uhr, auch Radfahrer sind betroffen)
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 EOF
      },
@@ -47605,8 +47610,8 @@ EOF
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
-#: source_id: bvg2024:162#HIM_FREETEXT_290898
-#: source_id: bvg2024:164#HIM_FREETEXT_290897
+#: source_id[inactive]: bvg2024:162#HIM_FREETEXT_290898
+#: source_id[inactive]: bvg2024:164#HIM_FREETEXT_290897
 #: source_id: adac:210225916 (bis 18.07.2025)
 #: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
@@ -47819,7 +47824,8 @@ EOF
      },
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2025-07-04 17:00:00"), # undef, # XXX
-       text  => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, voraussichtlich bis 4.7.2025, evtl. wird verlängert',
+#      text  => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, voraussichtlich bis 4.7.2025, evtl. wird verlängert',
+       text  => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.427246,52.523159,30.04.2025,04:30 (bis 04.07.2025)
@@ -47830,12 +47836,12 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-06-28 vvv
-#: check_frequency: 10d vvv
-#: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2025-07-04 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
 Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -48301,7 +48307,8 @@ EOF
      },
      { from  => 1748257200, # 2025-05-26 13:00
        until => 1752850800, # 2025-07-18 17:00
-       text  => 'Franz-Klühs-Str.: Bauarbeiten an der Wilhelmstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.05.2025 13:00 bis 18.07.2025 17:00',
+#      text  => 'Franz-Klühs-Str.: Bauarbeiten an der Wilhelmstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.05.2025 13:00 bis 18.07.2025 17:00',
+       text  => 'Franz-Klühs-Str.: Bauarbeiten an der Wilhelmstr., Sperrung, vom 27.05.2025 13:00 bis 18.07.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.38869,52.50071,27.05.2025,13:00 (bis 18.07.2025)
@@ -48411,11 +48418,12 @@ EOF
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
-       until => 1751641200, # 2025-07-04 17:00
-       text  => 'Ruschestr.: Bauarbeiten, Fahrbahn und Bürgersteig Richtung Vulkanstr. zwischen Kunzeweg und Gotlindstraße gesperrt, vom 02.06.2025 07:00 bis 04.07.2025 17:00',
+       until => $isodate2epoch->("2025-07-31 17:00:00"), # 1751641200, # 2025-07-04 17:00
+       text  => 'Ruschestr.: Bauarbeiten, Fahrbahn und Bürgersteig Richtung Vulkanstr. zwischen Kunzeweg und Gotlindstraße gesperrt, vom 02.06.2025 07:00 bis 31.07.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.485654,52.517757,02.06.2025,07:00 (hier nur Kfz-Verkehr, bis 04.07.2025) (mittlerweile auch Radverkehr)
+#: note: bei rbb wurde verlängert
 	q4::inwork; 15928,12483 15947,12626
 EOF
      },
@@ -48442,16 +48450,16 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Lange Str.: zwischen Krautstr. und Andreasstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+       text  => 'Lange Str.: zwischen Krautstr. und Andreasstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, möglicherweise bis Ende 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-17
+#: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2026-12-31
+#: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
 EOF
      },
@@ -48623,12 +48631,12 @@ EOF
 # REMOVED (wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 # REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
 # REMOVED (wieder offen) --- Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
-(Uferweg an der Havel)	2::temp -2723,19255 -2746,19418 -2763,19450 -2780,19530 -2870,19589 -2905,19636 -2908,19715
+# REMOVED (zur Bürgerablage vielleicht offen?) --- (Uferweg an der Havel)	2::temp -2723,19255 -2746,19418 -2763,19450 -2780,19530 -2870,19589 -2905,19636 -2908,19715
 Radelandstr.	2::temp -6518,17539 -6608,17562
 (Radelandstr. - Mauerweg)	2::temp -6608,17562 -6910,17684 -6954,17688
 Oberjägerweg	2::temp -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4485,20420
-(Niederneuendorfer Allee - Pappelweg)	2::temp -2821,18620 -2870,18553 -2919,18506 -2965,18488 -2987,18438
-(Mauerweg Spandau)	2::temp -2908,19715 -2966,19746 -3012,19757 -3161,19627
+# REMOVED (bei Mapillary keine Sperrung zu sehen) --- (Niederneuendorfer Allee - Pappelweg)	2::temp -2821,18620 -2870,18553 -2919,18506 -2965,18488 -2987,18438
+# REMOVED (laut Mapillary offen) --- (Mauerweg Spandau)	2::temp -2908,19715 -2966,19746 -3012,19757 -3161,19627
 #: note: bei Mapillary (2025-06-28) sind viele umgestürzte Bäume zu sehen
 (Mauerweg Forst Spandau)	2::temp -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7069,19436 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -7965,19069
 (Um den Laßzinssee)	2::temp -6482,20783 -6442,20864 -6465,21060

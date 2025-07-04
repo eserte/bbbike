@@ -277,7 +277,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="12"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2025-05-09 (webcam)
+#: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -801,7 +801,7 @@ Gehwegplatten	RW1; 1917,12367 1969,12375
 	RW2; -3506,14306 -3501,14365
 	RW2; -3352,14676 -3301,14669 -3255,14685 -3247,14713 -3251,14741 -3295,14777 -3355,14764 -3368,14723 -3352,14676
 asphaltiert	RW1; -3255,14685 -3209,14662 -3150,14631
-	RW2; -3150,14631 -3209,14662 -3255,14685
+asphaltiert	RW2; -3150,14631 -3209,14662 -3255,14685
 Verbundsteinpflaster	RW1;RW1 -3150,14631 -3014,14559 -2946,14533 -2831,14512 -2794,14511 -2647,14532 -2597,14532 -2460,14493 -2343,14446 -2233,14384 -2074,14366 -1947,14394 -1564,14489 -1484,14513
 	RW2; -1484,14513 -1392,14527
 neu asphaltiert	RW2; -1392,14527 -1337,14538 -1005,14604 -914,14602 -457,14536
@@ -5467,7 +5467,7 @@ asphaltiert	RW2; -532,15184 -453,15219 -344,15200
 	RW1;RW2 -1350,14646 -1336,14786
 	RW1; -1339,14910 -1336,14786
 	RW1;RW -3857,15205 -3863,15163 -3853,15097
-	RW;RW1 -3853,15097 -3769,14894 -3734,14879
+	RW1;RW1 -3853,15097 -3769,14894 -3734,14879
 # 
 #: note: Hohenzollernring, Richtung Süden
 	RW1; -3935,16225 -4135,15894 -4155,15763
@@ -6703,7 +6703,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2025-07-03 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
@@ -6721,7 +6721,7 @@ Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigr
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
 #: osm_watch: way id="153370344" version="37"
-#: osm_watch: way id="153373879" version="26"
+#: osm_watch: way id="153373879" version="28"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6826,11479
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
@@ -8114,7 +8114,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-06-28
+#: last_checked: 2025-07-04
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -8807,7 +8807,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-zeitung.de/mensch-metropole/pop-up-radweg-in-charlottenburg-so-sieht-der-zeitplan-fuer-den-abbau-in-der-kantstrasse-aus-li.2331378
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2025-07-03 (mapillary) vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
