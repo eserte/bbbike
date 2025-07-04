@@ -26049,6 +26049,8 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1873699127751737404
 #: by: https://pbs.twimg.com/media/GgC3OOnXEAE6uNt?format=jpg&name=large (Sperrung sogar ab Bachstr./Tiergartenstr./Lutherbrücke, auch für den Radverkehr? was ist mit dem westlichen Tiergarten?)
+#: by: https://www.morgenpost.de/berlin/article409432854/veranstalter-sagt-silvester-party-am-brandenburger-tor-ab.html (2025 keine Silvester-Party?)
+#: by: https://www.tagesspiegel.de/berlin/kein-geld-vom-land-berlin-silvesterparty-am-brandenburger-tor-steht-vor-dem-aus-13973120.html
 #: source_id: viz2021:13.349991,52.514511,31.12.2024,06:00 (bis 01.01.2025) (inaktiv)
 #: note: am 2023-12-29 mittags war der östliche Tiergarten komplett umzäunt, aber die Wege waren noch offen
 Pariser Platz	2::temp 8722,12268 8637,12258
@@ -36267,6 +36269,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/etliche-bueros-im-kalle-sind-bezogen-im-rest-des-komplexes-laufen-noch-die-bauarbeiten_a427858
 #: by: https://entwicklungsstadt.de/neuer-veranstaltungsort-an-der-karl-marx-strasse-smartvillage-startet-im-kalle-neukoelln/
 #: by: https://entwicklungsstadt.de/neues-startup-zentrum-delta-campus-eroeffnet-im-kalle-neukoelln/
+#: by: https://entwicklungsstadt.de/delta-campus-in-neukoelln-eroeffnet-co-working-im-ehemaligen-parkhaus/
 #: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="7"
 #: osm_watch: way id="970452276" version="8"
@@ -40957,6 +40960,7 @@ EOF
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/bauarbeiten-am-kronprinzessinnenweg-haben-begonnen_a398941
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1572015.php (Abschluss der Bauarbeiten)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/geholper-und-sperrung-rad-und-skatestrecke-neben-der-avus-erst-abgefrast-und-dann-geschlossen-13962944.html
 #: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025) (inaktiv)
 #: source_id: viz2021:13.228732,52.464169,05.10.2023,07:00 (bis 31.08.2025) (bis 30.06.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.229865,52.464817,30.06.2025,06:00 (bis 11.07.2025)
@@ -47420,6 +47424,7 @@ EOF
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~03-07-2025-sperrung-am-horstweg-in-potsdam (08.08.2025 ab 22 Uhr bis 11.08.2025 um 6 Uhr, auch Radfahrer sind betroffen)
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/fur-bruckenneubau-der-nuthestrasse-horstweg-in-potsdam-wird-komplett-gesperrt-13963847.html
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 EOF
      },
@@ -48621,14 +48626,15 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsvzp4wvrk2n (Hauptstraßen wieder offen)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/so-schlimm-war-es-noch-nie-dieser-stadtrat-warnt-noch-immer-vor-dem-berliner-waldbesuch-13967756.html (Schönwalder Allee bis min. 11.07.2025 gesperrt)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-07-01 (VIZ) vvv
+#: last_checked: 2025-07-04 (Tsp) vvv
 #: check_frequency: 7d vvv
-# REMOVED (wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
+Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 # REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
 # REMOVED (wieder offen) --- Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
 # REMOVED (zur Bürgerablage vielleicht offen?) --- (Uferweg an der Havel)	2::temp -2723,19255 -2746,19418 -2763,19450 -2780,19530 -2870,19589 -2905,19636 -2908,19715
