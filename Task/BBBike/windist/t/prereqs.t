@@ -49,7 +49,6 @@ use_ok 'Object::Iterate';
 use_ok 'Tie::IxHash', 1.23;
 use_ok 'CDB_File';
 use_ok 'Geo::METAR';
-use_ok 'Geo::Coder::Bing', 0.10;
 use_ok 'Geo::Coder::OSM';
 use_ok 'Text::Unidecode';
 use_ok 'CGI', 3.46;

@@ -36,7 +36,6 @@ WriteMakefile(
 	'Tie::IxHash'          => 1.23, # Damit Direktiven in Straßen-Daten geordnet bleiben
 	'CDB_File'             => 0, # Für die alternative A*-Optimierung in XS/C und Cache-Dateien (grid/lazy)
 	'Geo::METAR'           => 0, # Wetterdaten im METAR-Format
-	'Geo::Coder::Bing'     => 0.10, # Geocoding über Bing
 	'Geo::Coder::OSM'      => 0, # Geocoding mit OpenStreetMap-Daten
 	'Text::Unidecode'      => 0, # Für das Neu-Erzeugen der .bbd-Dateien in data; Fallback für internationale Texte in PDFs
 	'CGI'                  => 3.46, # CGI-Handling, URL-Berechnungen

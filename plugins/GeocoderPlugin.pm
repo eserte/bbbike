@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019,2020,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019,2020,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # Description (en): Geocode using various APIs
@@ -20,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.15;
+$VERSION = 3.16;
 
 BEGIN {
     if (!eval '
@@ -178,46 +177,6 @@ sub geocoder_dialog {
 		 # extract_loc/addr resused from My_Google_v3, see below
 		},
 		) : ()),
-
-		'Bing' =>
-		{
-		 'label' => 'Bing',
-		 'include_multi' => 1,
-		 'devel_only' => 1, # not really usable for the public --- users are required to create an API key, and licensing is unclear anyway
-
-		 'require' => sub {
-		     require Geo::Coder::Bing;
-		     # At least 0.04 stopped working at
-		     # some time.
-		     #
-		     # 0.06 has some output encoding
-		     # problems which are solved in 0.07,
-		     # but these are not so grave. Best is
-		     # to use at least 0.10.
-		     Geo::Coder::Bing->VERSION(0.06);
-		 },
-		 'new' => sub {
-		     my $apikey = do {
-			 my $file = "$ENV{HOME}/.bingapikey";
-			 open my $fh, $file
-			     or main::status_message("Cannot get key from $file: $!", "die");
-			 local $_ = <$fh>;
-			 chomp;
-			 $_;
-		     };
-		     Geo::Coder::Bing->new(key => $apikey);
-		 },
-		 'extract_loc' => sub {
-		     my $location = shift;
-		     ($location->{point}{coordinates}[1],
-		      $location->{point}{coordinates}[0],
-		     );
-		 },
-		 'extract_addr' => sub {
-		     my $location = shift;
-		     $location->{address}->{formattedAddress};
-		 },
-		},
 
 		'OSM' =>
 		{
@@ -534,20 +493,10 @@ Experimental. Requires a
 directory F<data_berlin_osm_bbbike> which is the result of a
 C<osm2bbd> and C<osm2bbd-postprocess> conversion.
 
-=item Bing
-
-through L<Geo::Coder::Bing>. Requires an API key which should be
-stored in F<~/.bingapikey>.
-
 =item OpenCage
 
 through L<Geo::Coder::OpenCage>. Requires an API key which should be
 stored in F<~/.opencageapikey>.
-
-=item GeocodeFarm
-
-through L<Geo::Coder::GeocodeFarm>. Does not need an API key, but
-number of requests are limited (currently 250 per day and IP).
 
 =back
 
@@ -593,6 +542,19 @@ API key stored in F<~/.googlemapsapikey>. Was replaced by Google v3.
 =item OVI
 
 Through L<Geo::Coder::Ovi>, probably API key is needed. OVI is nowadays HERE.
+
+=item GeocodeFarm
+
+Through L<Geo::Coder::GeocodeFarm>. Does not need an API key, but
+number of requests are limited (currently 250 per day and IP).
+Geocoding module stopped to work somewhen between 2020 and 2024.
+
+=item Bing
+
+through L<Geo::Coder::Bing>. Requires an API key which should be
+stored in F<~/.bingapikey>. API was EOL'ed on 2024-06-30 (actually it
+worked still some days later). Replacement is Azure Maps, which will
+not be implemented here.
 
 =back
 

@@ -179,7 +179,7 @@ sub gui {
 	$add_apt_args .= " --install-suggests";
     }
 
-    my @apikeyfiles = ('.bingapikey', '.opencageapikey');
+    my @apikeyfiles = ('.opencageapikey');
 
     $doit->make_path("$ENV{HOME}/.docker-bbbike");
 

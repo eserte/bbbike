@@ -260,8 +260,9 @@ my @req_table =
   ## Does not work anymore (since 2018 partially, since 2019-01 completely)
   #[qw/Geo::Coder::Googlev3	0	all	0	plugin/,
   # 'Geocoding über Googlemaps (API v3)'],
-  [qw/Geo::Coder::Bing	0.10	all	4	plugin/,
-   'Geocoding über Bing'],
+  ## Does not work anymore (EOL 2025-06-30)
+  #[qw/Geo::Coder::Bing	0.10	all	4	plugin/,
+  # 'Geocoding über Bing'],
   [qw/Geo::Coder::OSM	0	all	4	plugin/,
    'Geocoding mit OpenStreetMap-Daten'],
   [qw/Flickr::API	0	all	0	plugin/,
