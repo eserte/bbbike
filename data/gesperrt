@@ -257,8 +257,8 @@ Saltykowstr.	1 12726,7887 12865,7923
 Barbarastr.	1s 6456,3038 6372,2959 6329,2916 6359,2875
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
 Leipziger Platz	1 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
-Crusemarkstr.	1 10825,18634 10715,18965
-Kavalierstr.	1 10621,18837 10721,18575
+Crusemarkstr.	1 10813,18627 10695,18937
+Kavalierstr.	1 10621,18837 10729,18584
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
@@ -947,8 +947,8 @@ Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
 (Albrechtstr. - Neue Filandastr.)	1 5610,5227 5616,5182 5635,5145
 (Kurfürstenstr. - Hermsdorfer Damm)	1 2677,22448 2694,22424
 (Hermsdorfer Str. - Cyclopstr.)	1 4829,21714 4805,21715
-Straßenbahnhaltestelle	3nocross::ignrte 10680,18380 10710,18393 10784,18426
-Eintrachtstr. -> Breite Str.: Straßenbahnhaltestelle	3::igndisp 10650,18544 10710,18393 10784,18426
+Straßenbahnhaltestelle	3nocross::ignrte 10680,18380 10710,18393 10793,18433
+Eintrachtstr. -> Breite Str.: Straßenbahnhaltestelle	3::igndisp 10650,18544 10710,18393 10793,18433
 Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825
 Oberspreestr. [Nebenfahrbahn]	1s 19965,5101 19957,5083 19940,5090
 (Allee der Kosmonauten - Poelchaustr.)	1 20194,14435 20309,14431 20367,14429
@@ -2736,8 +2736,8 @@ tragen (3+3+2+2 Stufen)	0:20:84 9244,3872
 tragen (7 weite Stufen)	0:30:-41 15759,16671
 tragen (6 Stufen)	0:12:-38 15915,16526
 tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10:-150 8023,10106
-tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30:-156 -5561,12909
-tragen (wenige Stufen)	0:5:-161 -5446,13137
+tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30 -5561,12909
+tragen (wenige Stufen)	0:5:-152 -5451,13104
 tragen (4+6+7 Stufen)	0:30:48 4502,21525
 tragen (27 Stufen)	0:30:-145 3195,24825
 tragen (4 Stufen)	0:10:65 -440,4554
@@ -2953,6 +2953,7 @@ tragen (Treppe)	0:45:-77 5936,12544
 tragen (verwinkelte Treppe, 5 Stufen)	0:15:-144 18257,18947
 tragen (Treppe, 10+9 Stufen)	0:25:-258 22110,2643
 tragen (Treppe, ca. 50 Stufen)	0:70:-191 12386,8274
+tragen (Treppe, 18 Stufen)	0:25:-161 -5558,12918
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -3538,6 +3539,7 @@ Nalepastr.: Tor verschlossen	3 17059,8097 17059,8102 17056,8159
 Schranke	BNP:1:0:trailer=3 16991,-89
 Schranke fast über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5:-232:trailer=15 9135,14317
 Drängelgitter	BNP:3:-131:trailer=10 14881,13144
+Schwingtor	BNP:5:-172:trailer=10 -7347,12797
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
 Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253

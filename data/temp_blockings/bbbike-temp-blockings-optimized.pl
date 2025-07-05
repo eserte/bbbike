@@ -3228,7 +3228,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-07-01 (traffic)
+#: last_checked: 2025-07-05
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -5476,10 +5476,11 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: priority: #A
 #: last_checked: 2025-06-18 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-07-27 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
+#: next_check: 2025-07-20 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 # REMOVED --- #: osm_watch: way id="794278028" version="10"
 # REMOVED --- #: osm_watch: way id="1181902719" version="1"
+#: XXX nächste Sperrung der Hämmerlingstr.: Von Montag, 21. Juli (6 Uhr), bis Freitag, 8. August 2025 (vsl. 12 Uhr)
 # REMOVED --- Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
 #: osm_watch: way id="1163982841" version="3"
 Schubertstr.	2::inwork 21984,6317 21856,6390
@@ -6217,7 +6218,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 #: priority: #B
 #: last_checked: 2025-06-18
 #: check_frequency: 120d
-#: next_check: 2025-08-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
+#: next_check: 2025-08-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 ',
@@ -6707,9 +6708,9 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 ',
          'from' => 1755381600,
          'id' => 3881,
-         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, voraussichtlich vom 18.08.2025 bis 07.09.2025',
+         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, voraussichtlich vom 18.08.2025 6:00 Uhr bis 11.09.2025 12:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1757268000
+         'until' => 1757584800
        },
        undef,
        undef,
@@ -6742,7 +6743,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
-#: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge
+#: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 # REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
@@ -6801,7 +6802,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="36"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-06-15 (osm) vvv
+#: last_checked: 2025-07-04 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -7288,7 +7289,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        {
          'data' => '#: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
-#: note: außerdem ist eine Umleitung via Eckernförder Platz durch den Wald ausgeschildert
+#: note: getrennter Rad/Gehweg (aber schmal), außerdem ist ein gemeinsamer Rad/Gehweg via Eckernförder Platz durch den Wald ausgeschildert
 	q2::inwork; 5848,14977 5984,14819
 #: note: offiziell keine Durchfahrt erlaubt, Umweg via Nordufer
 	q4::inwork; 5984,14819 5848,14977
@@ -7361,7 +7362,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-04 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8043,7 +8044,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: note: Aber eigentlich kann man die Fußgängerampel benutzen...
-#: last_checked: 2025-07-03 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 vvv
 #	q4::inwork; 8453,13611 8572,13671
@@ -8104,7 +8105,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: osm_watch[closed]: note 4537179 1
 #: osm_watch: way id="14438318" version="8"
 #: add_fragezeichen: Ist der Steg weiterhin gesperrt?
-#: last_checked: 2025-06-17 (MoPo)
+#: last_checked: 2025-07-05
 #: check_frequency: 270d
 #: next_check: 2026-12-31
 	2::inwork -7182,15524 -7228,15504
@@ -8366,11 +8367,11 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt
 # REMOVED --- #: next_check: 2025-04-30
-Scottweg	q4::inwork -1317,11300 -966,11382
+Scottweg	q3::inwork -1317,11300 -966,11382
 ',
          'from' => 1739720880,
          'id' => 4263,
-         'text' => 'Scottweg: mögliche Sperrung; evtl. sind auch Radfahrer betroffen, bis 31.07.2025',
+         'text' => 'Scottweg: Fahrbahn gesperrt, Bürgersteig für Radfahrer frei, bis 31.07.2025',
          'type' => 'handicap',
          'until' => 1753974000
        },
@@ -8515,7 +8516,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025)
 #: osm_watch: note 4317053 7
 #: osm_watch: way id="1149646787" version="5"
-#: last_checked: 2025-06-10 (mapillary)
+#: last_checked: 2025-07-04 (mapillary)
 #: next_check: 2025-07-18 (VIZ-Verkehrsmeldung, MoPo, Tsp)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 ',
@@ -8749,7 +8750,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        {
          'data' => '#: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-06-29 (traffic)
+#: last_checked: 2025-07-05 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
@@ -8864,19 +8865,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LOBECKSPORTPLATZ-2025
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-07
-# REMOVED --- #: check_frequency: 14d
-	2::inwork 10431,10606 10492,10582
-',
-         'from' => undef,
-         'id' => 4334,
-         'text' => 'Alexandrinenstr. - Wassertorstr.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2
 #: also_indoor: traffic (G,T[zu wenig])

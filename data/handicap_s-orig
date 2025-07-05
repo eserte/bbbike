@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu fr¸h bei der VIZ gemeldet? -> aktuell l‰uft wohl die Umsetzung (auch wenn man vor Ort auﬂer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-07-04
+#: last_checked: 2025-07-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
@@ -340,12 +340,17 @@ Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336
 ### Wedding/Gesundbrunnen ###
 # 
 #: next_check_id: PEKINGERPLATZ-2025
-#: note: laut Baustellenschild bis XX/2026
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-05-24
-#: check_frequency: 90d
-#: next_check: 2026-12-31
+#: note: laut Baustellenschild bis 01/2026
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2025-05-24 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-01-31 vvv
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
+Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q3::inwork 7000,14832 7007,14911
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 # 
 # REMOVED (minimale Einschr‰nkungen, lohnt keinen Eintrag) --- #: source_id: viz2021:13.348181,52.548416,19.03.2024,07:00 (bis 14.06.2024) --- #: source_id[inactive]: bvg2021:106#BVG344476_0 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1769960995177238968 --- #: by: https://pbs.twimg.com/media/GJAoTXpXgAAvNk_?format=jpg&name=large (nur Einschr‰nkungen an der s¸dlichen Fahrbahn) --- #: last_checked: 2024-06-05 --- #: next_check: 2024-06-14 --- #: valid: -20240614 --- Antwerpener Str.: Baustelle vor der Seestr., einige Meter muss geschoben werden	q2::inwork 6555,15827 6690,15671
 # REMOVED (nicht mehr) --- #: next_check_id: SWINEMUENDER-2023 --- #: add_fragezeichen: Gibt es Ramlerstr./Swinem¸nder Str. weiterhin Bauarbeiten? --- #: also_indoor: traffic (G[zu viel]) --- #: last_checked: 2024-02-13 --- Ramlerstr.: Fahrbahn an der Swinem¸nder Str. wegen Bauarbeiten gesperrt	q2::inwork 9646,15737 9666,15739 9844,15755
@@ -793,7 +798,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen B¸
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/vorplatz-am-hbf-europacity-bebauungsplan-ii-201c.155/page-5#post-24166
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verl‰ngert?
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
-#: osm_watch: note 3913793 9
+#: osm_watch: note 3913793 10
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
 #: last_checked: 2025-04-16
@@ -862,7 +867,7 @@ Matth‰ikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 79
 #: osm_watch: way id="152832871" version="23"
 #: osm_watch: way id="1132383957" version="1"
 #: note: mittlerweile eine Art "Dr‰ngelgitter" aus dem Bauzaun gemacht
-#: last_checked: 2025-03-05
+#: last_checked: 2025-07-05
 #: check_frequency: 120d
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
@@ -1543,33 +1548,9 @@ Tiergarten: einige Fuﬂg‰nger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575
 (Bremer Weg - Fasanerieallee): einige Fuﬂg‰nger	q1 6337,11887 6379,11843 6395,11806 6417,11796
 (Bremer Weg - Fasanerieallee): einige Fuﬂg‰nger	q1 6438,11784 6540,11754
 # 
-#: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
-#: by: http://www.carsten-schatz.de/fileadmin/linksfraktion/ka/2015/S17-16825.pdf (kleine Anfrage)
-#: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf
-#: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: I/2019 bis IV/2019)
-#: by: https://www.welt.de/print/die_welt/debatte/article206334255/Platz-der-Republik-Ganz-grosser-Kaese.html (Baubeginn 2022?)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Erw‰hnung; bis 2030)
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/loewenbruecke/ ("Voraussichtliche Bauzeit: noch in Planung") (Stand Juni 2023: weiterhin "noch in Planung")
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/loewenbruecke/ (ge‰nderte URL)
-#: by: https://www.bz-berlin.de/berlin/mitte/berlin-bekommt-seine-loewenbruecke-wieder (Bauarbeiten voraussichtlich ab Sommer 2023 + 15 Monate Bauzeit)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1361549.php (Fertigstellung Ende 2024)
-#: by: https://www.berliner-woche.de/tiergarten/c-bauen/loewenbruecke-wird-bis-ende-2024-wieder-aufgebaut_a394430
-#: by: https://www.deutsches-architekturforum.de/thread/6927-rund-um-die-siegess%C3%A4ule-gro%C3%9Fer-tiergarten/?postID=763239#post763239 (Fertigstellung Q1 2025)
-#: by: https://www.morgenpost.de/bezirke/mitte/article407169185/neubau-der-loewenbruecke-im-tiergarten-endlich-gehtE28098s-voran.html (bis Anfang 2025)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1576809.php (offen!)
-#: by: https://entwicklungsstadt.de/nach-denkmalgerechter-erneuerung-loewenbruecke-im-tiergarten-wieder-begehbar/
-# REMOVED --- #: XXX: laut Baustellenschild bis II. Quartal 2025
-#: XXX zumindest eine Stufe auf einer Seite existiert, vielleicht auch auf der anderen --- wie wirkt sich das auf handicap aus?
-#: also_indoor: search Lˆwenbr¸cke Tiergarten
-#: note: fr¸her bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
-#: osm_watch: node id="245006076" version="7"
-#: osm_watch: node id="245006075" version="8"
-# REMOVED --- #: osm_watch: way id="1272587928" version="2"
-#: osm_watch[closed]: note 4798189 6
-# REMOVED --- #: last_checked: 2025-06-30 (daf)
-# REMOVED --- #: check_frequency: 720d
-# REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
-Lˆwenbr¸cke: einige Fuﬂg‰nger, schmale Br¸cke, Stufen	q3 6417,11796 6438,11784
+#: historical_note: lange Zeit gesperrt, Anfang Juli 2025 wiedererˆffnet
+#: note: auf beiden Seiten existiert je eine Stufe, hinab zur Br¸cke; f¸r Radfahrer verboten (also absteigen?)
+Lˆwenbr¸cke: schmale Br¸cke, Stufen	q4+ 6417,11796 6438,11784
 # 
 (Bremer Weg/Lˆwenbr¸cke - Groﬂer Weg): einige Fuﬂg‰nger	q1 6395,11806 6353,11730
 (zum Rosengarten): einige Fuﬂg‰nger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
@@ -1932,7 +1913,7 @@ Hebbelstr.: Fuﬂg‰nger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fuﬂg‰nger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-06-25
+#: last_checked: 2025-07-05
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fuﬂg‰nger, Engstellen	q2 12341,10218 12292,10374
@@ -3548,11 +3529,11 @@ Jenneweg: einige Fuﬂg‰nger, eng, Bordstein	q3 -3978,14766 -4015,14744
 (Viktoriaufer/J¸denstr. - Am Juliusturm): einige Fuﬂg‰nger, Bordstein	q2 -3239,14641 -3209,14662
 (Kirchhofstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 -3295,15356 -3294,15366 -3359,15426
 (Radelandstr. - Hubertusstr.): einige Fuﬂg‰nger, eng	q2 -4155,16445 -4153,16463 -4153,16562 -4154,16572 -4152,16580 -4149,16670 -4150,16676 -4149,16682 -4151,16772 -4152,16779 -4151,16787 -4150,16849 -4151,16857 -4150,16864 -4149,16929 -4152,16942
-Am Spektesee: einige Fuﬂg‰nger	q1 -5795,15026 -5780,15127 -5758,15153 -5707,15216
-Am Spektesee: einige Fuﬂg‰nger, Badestelle	q2 -5707,15216 -5706,15255 -5732,15319
-Am Spektesee: einige Fuﬂg‰nger	q1 -5732,15319 -5861,15342 -5936,15352 -5989,15390 -6018,15394 -6030,15396 -6054,15399
+Am Spektesee: einige Fuﬂg‰nger	q1 -5795,15026 -5780,15127 -5758,15153 -5738,15174
+Am Spektesee: einige Fuﬂg‰nger, Badestelle	q2 -5738,15174 -5704,15224 -5706,15255 -5732,15319
+Am Spektesee: einige Fuﬂg‰nger	q1 -5732,15319 -5883,15339 -5956,15360 -5993,15388 -6018,15394 -6030,15396 -6054,15399
 (Spektefeld): einige Fuﬂg‰nger	q1 -5633,15686 -5674,15609 -5658,15544 -5676,15507 -5665,15472 -5673,15365 -5722,15321 -5732,15319
-(Spektefeld): einige Fuﬂg‰nger	q1 -5674,15609 -5743,15634 -5845,15653 -5882,15644 -5936,15620 -5983,15572 -6011,15481 -5989,15390
+(Spektefeld): einige Fuﬂg‰nger	q1 -5674,15609 -5743,15634 -5845,15653 -5882,15644 -5936,15620 -5983,15572 -6011,15481 -5993,15388
 (Spektefeld): einige Fuﬂg‰nger	q1 -6011,15481 -6018,15481 -6018,15394 -6008,15338 -6084,15276 -6120,15249 -6147,15204 -6184,15162
 (Wolfshorst - Spektewiesen): einige Fuﬂg‰nger, eng	q2 -6573,15254 -6584,15311
 #: note: Gr¸nanlagenschild ohne Zusatzschilder
@@ -4261,7 +4242,7 @@ entlang des Friedhofs Heerstr.: Gef‰lle, Bordstein	q2; 126,12054 112,12026 160,1
 (Hahnebergweg - Am Fort): Steigung	q3; -7375,12577 -7436,12564
 #: note: wegen des Schotters besondere Vorsicht notwendig
 (Hahnebergweg - Am Fort): Gef‰lle	q3; -7436,12564 -7375,12577
-(Mauerweg - Spektelake): einige Fuﬂg‰nger, Kurven	q1 -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7211,15920
+(Mauerweg - Spektelake): einige Fuﬂg‰nger, Kurven	q1 -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7243,15943 -7228,15933 -7211,15920
 (An der Tr‰nke - Falkenseer Chaussee): schmal	q2 -7086,16140 -7076,16159
 #: XXX_prog BS: an der Seeburger Str., ansonsten trotzdem q1
 (Sotzmannstr. - P‰wesiner Weg): Fuﬂg‰nger, Bordstein	q1 -4737,13132 -4680,12998
@@ -5453,6 +5434,15 @@ Straﬂe 36: sehr schmal, kurvig	q4+ 30073,2814 30066,2831 30071,2843
 # 
 Edisonstr.: Straﬂenbahnhaltestelle, Fuﬂg‰nger, eng	q2; 17979,6379 17963,6313
 # 
+#: note: direkter Weg ist als Gehweg ausgeschildert
+Jaczostr.: Fuﬂg‰nger	q2 -4751,11262 -4798,11231
+(Jaczostr. - Gatower Str.): Gehweg f¸r Radfahrer frei	q2 -4751,11262 -4782,11270
+# 
+#: note: der N-S-Abschnitt explizit als gemeinsamer Geh- und Radweg ausgeschildert (zumindest von S¸den her), aber etwas schmal; der restliche Abschnitt sieht wie ein Wohngebietserschlieﬂungsweg aus
+Gruberzeile - Weinmeisterhornweg: einige Fuﬂg‰nger	q2 -5735,11793 -5584,11706 -5590,11651 -5623,11552
+# 
+(G‰rtnereiring - Bergstr.): schmaler Trampelpfad, Bordstein	q3 -7317,13020 -7336,13023
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -5617,7 +5607,7 @@ Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger, Radfahrer sollen schieben	q4 5370,2542 5471,2470
 # 
 #: by: garci
-Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10715,18965 10621,18837 10542,18749 10527,18718 10496,18704
+Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10695,18937 10621,18837 10542,18749 10527,18718 10496,18704
 # REMOVED (keine Behinderungen deswegen) --- #: by: anonymous --- (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgel‰nde	q1 4997,19849 5003,19833 5060,19699 5073,19656 5110,19665 5183,19454 5208,19378 5187,19368 5219,19285 5388,19186 5429,19165
 # REMOVED (nicht best‰tigt) --- #: by: Daniel (dan.berlin): --- Poschingerstr.: enge Straﬂe	q1 5701,6273 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
 #: by: Manfred Kˆhnen:
@@ -5676,8 +5666,8 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 (Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9980,16973 9880,16994 9846,16981
 # 
 #: by: anonymous, korrigiert [AM] vvv
-#: confirmed_by: srt
-L¸nette: Fuﬂg‰nger	q1 -1347,15506 -1349,15490 -1444,15443 -1485,15463
+#: corrected_by: srt (q1 -> q2)
+L¸nette: Fuﬂg‰nger	q2 -1353,15502 -1349,15490 -1444,15443 -1485,15463
 # REMOVED --- #: corrected_by: srt (q3 -> q1) --- Maselakeweg: Fuﬂg‰nger	q1 -2450,16981 -2410,16931 -2371,16776 -2391,16607 -2333,16609
 #: by: ^^^
 # 
@@ -5937,7 +5927,7 @@ Rahel-Hirsch-Weg: Fuﬂg‰nger	q3 8582,13355 8595,13375 8587,13436 8586,13440
 # REMOVED --- Helga-Hahnemann-Str.: Fuﬂg‰nger, schmal	q2 9415,13315 9408,13282 9385,13174
 An der Karolinenhˆhe: Fuﬂg‰nger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876
 Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5437,12440 -5890,12579
-Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5400,12509 -5437,12440
+Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5374,12575 -5404,12510 -5412,12490 -5421,12491 -5437,12440
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4267,11590 -4302,11669
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4310,11770 -4279,11862
 (Parkweg Swinem¸nder Str.): Fuﬂg‰nger	q1 10189,14649 10226,14568
@@ -7352,9 +7342,9 @@ Scharfe Lanke: enge Straﬂe	q0- -4265,11109 -4266,11008 -4292,10888 -4284,10834 -
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3441,13270 -3352,13135 -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 (zum R‰cknitzer Steig): einige Fuﬂg‰nger	q1 -5535,12631 -5559,12557
-(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger	q1 -5830,12712 -5808,12631 -5559,12557 -5400,12509
+(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger	q1 -5830,12712 -5808,12631 -5559,12557 -5404,12510
 #: XXX_prog BS am ˆstlichen Ende (ansonsten w‰re es q1)
-(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger, hohe Bordsteinkante	q2 -5400,12509 -5196,12452
+(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger, hohe Bordsteinkante	q2 -5404,12510 -5196,12452
 #: XXX_prog BS am nˆrdlichen Ende (ansonsten w‰re es q2)
 Annenweg: enger Weg, hohe Bordsteinkante	q3 -5121,8283 -5118,8290 -5094,8391 -5093,8398
 (Finkenkruger Weg - Eichholzbahn): enger Weg	q2 -7420,14520 -7431,14521 -7439,14521 -7452,14472 -7481,14379 -7559,14379

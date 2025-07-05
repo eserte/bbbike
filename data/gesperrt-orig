@@ -448,8 +448,8 @@ Saltykowstr.	1 12726,7887 12865,7923
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
 Leipziger Platz	1 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
-Crusemarkstr.	1 10825,18634 10715,18965
-Kavalierstr.	1 10621,18837 10721,18575
+Crusemarkstr.	1 10813,18627 10695,18937
+Kavalierstr.	1 10621,18837 10729,18584
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
@@ -1558,7 +1558,7 @@ Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
 # 
 (Hermsdorfer Str. - Cyclopstr.)	1 4829,21714 4805,21715
 # 
-Breite Str.: Straßenbahnhaltestelle	3nocross 10680,18380 10710,18393 10784,18426
+Breite Str.: Straßenbahnhaltestelle	3nocross 10680,18380 10710,18393 10793,18433
 # 
 Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825
 # 
@@ -2803,7 +2803,7 @@ tragen (3 Stufen, kann auf einer inoffiziellen Rampe umfahren werden)	0:10 8023,
 tragen (ca. 20 Stufen, kann auf Rampen umfahren werden)	0:30 -5561,12909
 #: by: Stefan Klinkusch:
 #: note: "nur ohne Anhänger befahrbar"
-tragen (wenige Stufen)	0:5 -5446,13137
+tragen (wenige Stufen)	0:5 -5451,13104
 tragen (4+6+7 Stufen)	0:30 4502,21525
 tragen (27 Stufen)	0:30 3195,24825
 #: by: mmholz...
@@ -3129,6 +3129,7 @@ tragen (Treppe)	0:45 5936,12544
 tragen (verwinkelte Treppe, 5 Stufen)	0:15 18257,18947
 tragen (Treppe, 10+9 Stufen)	0:25 22110,2643
 tragen (Treppe, ca. 50 Stufen)	0:70 12386,8274
+tragen (Treppe, 18 Stufen)	0:25 -5558,12918
 #
 #: section ^^^
 ###################################################################
@@ -3963,6 +3964,7 @@ Nalepastr.: Tor verschlossen	3 * 17059,8102 *
 Schranke	BNP:1::trailer=3 16991,-89
 Schranke fast über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5::trailer=15 9135,14317
 Drängelgitter	BNP:3::trailer=10 14881,13144
+Schwingtor	BNP:5::trailer=10 -7347,12797
 # 
 #: section ^^^
 ############################################################################
@@ -4250,7 +4252,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-06-27 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="6"
@@ -4276,7 +4278,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch: note 4126450 4
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2025-05-24
+#: last_checked: 2025-07-05
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4803,7 +4805,7 @@ Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2025-06-08
+#: last_checked: 2025-07-05
 #: check_frequency: 120d
 #: next_check: 2026-09-30 (Baustellenschild)
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -5046,7 +5048,7 @@ George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,1440
 #: by: https://www.deutsches-architekturforum.de/thread/11167-admiralspalast-umbau-und-erweiterung-in-bau/?postID=744785#post744785 (Neubau der Planckstraße, bis IV. Quartal 2024)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-am-admiralspalast-planckstra%C3%9Fe.866/post-23402
 #: XXX wann sind die Bauarbeiten beendet?
-#: osm_watch: note 3954448 9
+#: osm_watch: note 3954448 10
 #: osm_watch: way id="195397561" version="20"
 #: last_checked: 2025-07-03
 #: check_frequency: 14d
@@ -5400,7 +5402,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2025-06-08 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"

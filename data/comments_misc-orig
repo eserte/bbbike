@@ -1146,7 +1146,7 @@ Bus 237	busroute_N -7952,14632 -8118,14649 -8112,14702 -8126,14740 -8213,14837 -
 Bus 237	busroute_N -7952,14632 -7757,14606 -7550,14579 -7418,14564
 Bus 135	busroute_N -4647,12269 -4627,12243 -4412,12179
 Bus M37, Bus 131	busroute_N -5030,13017 -5234,12812 -5269,12764 -5282,12730 -5170,12690 -5146,12632 -5196,12452 -5219,12374 -5437,12440 -5518,12259
-Bus 137	busroute_N -5282,12730 -5307,12737 -5480,12793 -5594,12832 -5706,12869 -5784,12858 -5878,12845 -5975,12827 -6093,12801
+Bus 137	busroute_N -5282,12730 -5311,12738 -5480,12793 -5594,12832 -5706,12869 -5784,12858 -5878,12845 -5975,12827 -6093,12801
 Bus 318	busroute_N -7232,445 -7365,371 -7449,348 -7474,341 -7587,312 -7639,312 -7710,313 -7737,316
 Bus 112	busroute_N -3360,2917 -3417,2886 -3452,2868 -3509,2817 -3635,2668 -3686,2579 -3692,2549 -3709,2517 -3725,2475 -3726,2457 -3740,2295 -3610,2237 -3519,2180 -3568,2382 -3634,2488 -3692,2549
 Bus 115, Bus 118	busroute_N -1281,2074 -1377,2077 -1463,2080 -1537,2152 -1596,2307 -1604,2324 -1646,2434
@@ -1310,7 +1310,7 @@ Bus 358	busroute_N 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 1
 #: XXX Wann ziehen die Gaslaternen um?
 #: osm_watch: note 2969085 7
 #: priority: #C
-#: last_checked: 2025-06-25
+#: last_checked: 2025-07-05
 #: check_frequency: 90d
 Gaslaternen-Freilichtmuseum Berlin	CS 5895,11692 5835,11768 5858,11863 5900,11913
 #: ignore ^^^
@@ -1965,7 +1965,7 @@ Nußbaumallee: nicht ausgeschildert	CP2; 1788,12252 1732,12224
 #: by: https://www.berliner-woche.de/staaken/c-bauen/am-eidechsenweg-in-staaken-entstehen-140-wohnungen_a414788 (bis Ende 2026)
 #: by: https://entwicklungsstadt.de/baubeginn-in-staaken-138-neue-wohnungen-60-prozent-gefoerdert/ (Fertigstellung: zweites Quartal 2027)
 #: add_fragezeichen: Ist der Eidechsenweg bereits ausgeschildert? vvv
-#: last_checked: 2024-09-18 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 120d vvv
 Eidechsenweg: nicht ausgeschildert	CS -7720,13839 -7893,13781
 ausgeschildert "Zu den Häusern Metropolitan Park"	CP2; -7720,13839 -7893,13781
@@ -2208,6 +2208,8 @@ falsche Ausschilderung der Berlin-Leipzig-Route (Mozartstr. statt Mauerweg)	CP2;
 ausgeschildert: Str.35 zu den Nummern 24 A-C u. 26 A-D ( Karweg )	CP2; 30012,2773 30060,2767
 Straße 36: nicht ausgeschildert	CP2; 30060,2767 30073,2814
 Straße 36: nicht ausgeschildert	CP2; 30090,2923 30124,3011
+ausgeschildert: 6,4,2	CP2; -5437,12440 -5421,12491
+ausgeschildert: Hahnebergweg 50	CP2; -7344,12854 -7347,12797
 # 
 #: section ^^^
 # DO NOT ADD ANYTHING AFTE THIS POINT!

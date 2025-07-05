@@ -358,7 +358,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-07-01 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -549,7 +549,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-07-03 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1049,7 +1049,7 @@ Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/gefahrlicher-zickzack-kurs-statt-sicherheit-wird-der-millionenteure-radstreifen-auf-der-schonhauser-allee-jetzt-wieder-demontiert-13841635.html
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2025-06-12 (mapillary)
+#: last_checked: 2025-07-04 (mapillary)
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -1109,7 +1109,7 @@ alte Gehwegplatten	RW2; -3820,11721 -3708,11686 -3692,11681
 	RW2; -4641,11624 -4610,11703 -4515,11935
 	RW1; -4515,11935 -4610,11703
 	RW1; -4610,11703 -4641,11624
-	RW1;RW1 -4641,11624 -4663,11574 -4698,11483 -4798,11231
+	RW1;RW1 -4641,11624 -4663,11574 -4698,11483 -4782,11270 -4798,11231
 	RW1; -4798,11231 -4836,11138
 	RW1; -4806,10717 -4855,11031 -4859,11080 -4843,11123 -4836,11138 -4798,11231
 asphaltierter Gehweg für Radfahrer frei	RW1; -4836,11138 -4843,11123 -4859,11080 -4855,11031 -4806,10717 -4825,10560 -4851,10356
@@ -2467,9 +2467,9 @@ neu asphaltiert	RW2; -6492,12574 -6275,12498 -6025,12419 -5518,12259
 	RW2;RW2 -7294,12833 -7344,12854 -7600,12934 -7716,12970
 #: by: Stefan Klinkusch (Benutzungspflicht) vvv
 	RW2; -7716,12970 -8040,13077 -8050,13080 -8313,13167
-neu asphaltiert, relativ breit	RW2; -8313,13167 -8371,13186 -8437,13208
+neu asphaltiert, relativ breit	RW2; -8313,13167 -8384,13191 -8437,13208
 	RW2; -8437,13208 -8784,13321 -8892,13351 -9005,13354
-	RW2; -9005,13354 -8892,13351 -8784,13321 -8437,13208 -8371,13186 -8313,13167 -8050,13080 -8040,13077 -7716,12970
+	RW2; -9005,13354 -8892,13351 -8784,13321 -8437,13208 -8384,13191 -8313,13167 -8050,13080 -8040,13077 -7716,12970
 #: by ^^^
 	RW1;RW1 3380,10373 3389,10567 3395,10704
 # 
@@ -3652,7 +3652,7 @@ neu asphaltiert	RW1; -3638,14995 -3857,15205 -3937,15299 -4118,15370 -4308,15411
 neu asphaltiert, relativ breit	RW1; -4591,15496 -4466,15460
 neu asphaltiert, relativ breit	RW1; -4466,15460 -4308,15411 -4118,15370 -3937,15299
 neu asphaltiert, für Radfahrer freigegebene Busspur gilt Mo-Sa 6-20 Uhr	RW1; -3937,15299 -3857,15205
-alter Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Sa 6-20 Uhr	RW1; -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
+alter Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-19 Uhr	RW1; -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
 neu asphaltiert, relativ breit	RW1;RW1 -4591,15496 -4710,15530 -5036,15625 -5153,15658 -5370,15721 -5470,15750 -5523,15766 -5605,15790 -5618,15793 -5724,15824 -5911,15877
 	RW1; -5911,15877 -6073,15925 -6144,15946 -6313,15996 -6575,16071 -6722,16112 -6836,16141 -6952,16171 -7003,16188
 	RW1; -7003,16188 -7025,16195 -7055,16208 -7092,16224 -7154,16252 -7168,16258
@@ -4437,6 +4437,8 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: by: https://www.tagesspiegel.de/berlin/bezirke/blumberger-damm-in-berlin-biesdorf-ende-der-sperrung-in-sicht-13183375.html
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12205 (Anfrage)
 #: by: https://pascalgrothe.de/endspurt-am-blumberger-damm-bruecke-kurz-vor-fertigstellung/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lt54kt32222y
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicowo5opd6ouf5s4lcqdggougopd7vxtyuj3i35sam4xtcokwmq44@jpeg
 #: source_id: viz2021:13.562831,52.51426,02.08.2021,12:02 (bis 01.06.2025) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025) (bis 15.06.2023) (inaktiv)
 #: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025) (bis 30.11.2024, Gesamtbaumaßnahme bis 2025) (bis 30.06.2025) (bis 30.09.2025)
@@ -5453,7 +5455,7 @@ Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1547562.php (neue Fahrbahnsanierung zwischen Burscheider Weg und Gartenfelder Str., bis Mitte Juni 2025)
 # REMOVED --- #: XXX werden die Radwege Richtung Süden während der Bauarbeiten zwischen Lünette und Burscheider Weg ausgebessert? --- #: next_check: 2024-10-21
 #: historical_note: früher (bis 2024/2025): schadhafte Asphaltradwege
-teils asphaltiert, teils Verbundsteinpflaster	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
+teils unebener Asphalt, teils Verbundsteinpflaster	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
 	RW1;RW1 -1013,15433 -934,15254 -834,15053
 	RW1; -1258,14846 -1099,14925 -945,14999 -834,15053
 	RW3; -834,15053 -945,14999 -1099,14925 -1258,14846
@@ -5546,10 +5548,10 @@ Verbundsteinpflaster	RW1; -8822,14023 -8509,14109 -8243,14183 -8184,14196 -8007,
 #: by: ^^^
 #: by: mapillary (Radspur)
 	RW4; -6025,12419 -6017,12557 -6031,12605 -6051,12673 -6093,12801 -6151,13001
-#: by: mapillary
-Gehweg für Radfahrer frei	RW1; -6151,13001 -6093,12801 -6051,12673 -6031,12605 -6017,12557 -6025,12419
-#: by: mapillary (Radspur)
-	RW4;RW0 -6151,13001 -6191,13177 -6203,13221 -6223,13288 -6244,13370 -6251,13396 -6269,13464 -6272,13472 -6325,13668 -6369,13858
+#: by: mapillary, srt
+Gehweg für Radfahrer frei	RW1; -6191,13177 -6151,13001 -6093,12801 -6051,12673 -6031,12605 -6017,12557 -6025,12419
+#: by: mapillary, srt
+	RW4; -6151,13001 -6191,13177 -6203,13221 -6223,13288 -6244,13370 -6251,13396 -6269,13464 -6272,13472 -6325,13668 -6369,13858
 	RW2;RW2 -6459,14160 -6470,14247 -6465,14291 -6461,14323 -6454,14392 -6451,14413 -6442,14535
 # 
 #: note: Lutoner Str./Cosmarweg, Richtung Westen
@@ -5558,12 +5560,12 @@ Gehweg für Radfahrer frei	RW1; -6151,13001 -6093,12801 -6051,12673 -6031,12605 -
 	RW3; -5030,13017 -5118,13053 -5245,13138
 Verbundsteinpflaster	RW1; -5245,13138 -5321,13191 -5386,13226 -5472,13235 -5519,13224 -5606,13170
 #: note: doppelte Linie
-	RW3; -5606,13170 -5684,13132 -5753,13107 -5790,13097 -5822,13088
+	RW3; -5606,13170 -5684,13132 -5764,13103 -5790,13097 -5822,13088
 #: note: doppelte Linie
 	RW4; -5822,13088 -5928,13060 -6029,13033 -6151,13001
 # 
 #: note: Cosmarweg/Lutoner Str., Richtung Osten
-Verbundsteinpflaster	RW1; -5822,13088 -5790,13097 -5753,13107 -5684,13132 -5606,13170
+Verbundsteinpflaster	RW1; -5822,13088 -5790,13097 -5764,13103 -5684,13132 -5606,13170
 #: note: doppelte Linie
 	RW3; -5606,13170 -5519,13224 -5472,13235 -5386,13226 -5321,13191 -5245,13138
 Verbundsteinpflaster	RW1; -5245,13138 -5118,13053 -5030,13017
@@ -6707,8 +6709,8 @@ Gehwegplatten	RW1; 620,12144 610,12100
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
-#: osm_watch: way id="153370345" version="20"
-#: osm_watch: way id="153373877" version="28"
+#: osm_watch: way id="153370345" version="21"
+#: osm_watch: way id="153373877" version="29"
 	RW3; 6826,11479 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: die Rechtsabbieger werden an der Ampel vorbei geführt
 Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigradweg	RW3; 6168,11042 6145,10975
@@ -9487,8 +9489,9 @@ Verbundsteinpflaster	RW1; 4952,17122 4929,17069 4897,17040
 # 
 	RW3; 7834,7131 7932,7178
 # 
-	RW4?;RW4? -8371,13186 -8358,13340
-	RW4?; -8367,13409 -8358,13340
+	RW4;RW4 -8384,13191 -8364,13272 -8358,13340
+	RW4; -8367,13409 -8358,13340
+	RW3; -8358,13340 -8367,13409
 # 
 #: note: ... allerdings zu wenig, um als Radweg zu zählen
 die nördliche Fahrbahnseite hat einen Streifen mit einem anderen Rot mit Radfahr-Piktogrammen in beide Richtungen	RW0;RW0 7781,-182 8054,-198

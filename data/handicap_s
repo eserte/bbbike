@@ -20,6 +20,7 @@ G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 Marktplatz Adlershof: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 20290,3756 20336,3783
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
+Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q3::inwork 7000,14832 7007,14911
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -169,7 +170,7 @@ Tiergarten: einige Fuﬂg‰nger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575
 (Parkweg entlang der Tiergartenstr.): einige Fuﬂg‰nger, einige B‰ume auf dem Weg	q2 6966,11490 6844,11496 6826,11479
 (Bremer Weg - Fasanerieallee): einige Fuﬂg‰nger	q1 6337,11887 6379,11843 6395,11806 6417,11796
 (Bremer Weg - Fasanerieallee): einige Fuﬂg‰nger	q1 6438,11784 6540,11754
-Lˆwenbr¸cke: einige Fuﬂg‰nger, schmale Br¸cke, Stufen	q3 6417,11796 6438,11784
+Lˆwenbr¸cke: schmale Br¸cke, Stufen	q4 6417,11796 6438,11784
 (Bremer Weg/Lˆwenbr¸cke - Groﬂer Weg): einige Fuﬂg‰nger	q1 6395,11806 6353,11730
 (zum Rosengarten): einige Fuﬂg‰nger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
 Parkweg: enge Br¸cke, Fuﬂweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929
@@ -1483,11 +1484,11 @@ Jenneweg: einige Fuﬂg‰nger, eng, Bordstein	q3 -3978,14766 -4015,14744
 (Viktoriaufer/J¸denstr. - Am Juliusturm): einige Fuﬂg‰nger, Bordstein	q2 -3239,14641 -3209,14662
 (Kirchhofstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 -3295,15356 -3294,15366 -3359,15426
 (Radelandstr. - Hubertusstr.): einige Fuﬂg‰nger, eng	q2 -4155,16445 -4153,16463 -4153,16562 -4154,16572 -4152,16580 -4149,16670 -4150,16676 -4149,16682 -4151,16772 -4152,16779 -4151,16787 -4150,16849 -4151,16857 -4150,16864 -4149,16929 -4152,16942
-Am Spektesee: einige Fuﬂg‰nger	q1 -5795,15026 -5780,15127 -5758,15153 -5707,15216
-Am Spektesee: einige Fuﬂg‰nger, Badestelle	q2 -5707,15216 -5706,15255 -5732,15319
-Am Spektesee: einige Fuﬂg‰nger	q1 -5732,15319 -5861,15342 -5936,15352 -5989,15390 -6018,15394 -6030,15396 -6054,15399
+Am Spektesee: einige Fuﬂg‰nger	q1 -5795,15026 -5780,15127 -5758,15153 -5738,15174
+Am Spektesee: einige Fuﬂg‰nger, Badestelle	q2 -5738,15174 -5704,15224 -5706,15255 -5732,15319
+Am Spektesee: einige Fuﬂg‰nger	q1 -5732,15319 -5883,15339 -5956,15360 -5993,15388 -6018,15394 -6030,15396 -6054,15399
 (Spektefeld): einige Fuﬂg‰nger	q1 -5633,15686 -5674,15609 -5658,15544 -5676,15507 -5665,15472 -5673,15365 -5722,15321 -5732,15319
-(Spektefeld): einige Fuﬂg‰nger	q1 -5674,15609 -5743,15634 -5845,15653 -5882,15644 -5936,15620 -5983,15572 -6011,15481 -5989,15390
+(Spektefeld): einige Fuﬂg‰nger	q1 -5674,15609 -5743,15634 -5845,15653 -5882,15644 -5936,15620 -5983,15572 -6011,15481 -5993,15388
 (Spektefeld): einige Fuﬂg‰nger	q1 -6011,15481 -6018,15481 -6018,15394 -6008,15338 -6084,15276 -6120,15249 -6147,15204 -6184,15162
 (Wolfshorst - Spektewiesen): einige Fuﬂg‰nger, eng	q2 -6573,15254 -6584,15311
 (am Burgwallgraben): einige Fuﬂg‰nger, eng	q2 -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
@@ -2002,7 +2003,7 @@ entlang des Friedhofs Heerstr.: Steigung, Bordstein	q4; 160,11972 112,12026 126,
 entlang des Friedhofs Heerstr.: Gef‰lle, Bordstein	q2; 126,12054 112,12026 160,11972
 (Hahnebergweg - Am Fort): Steigung	q3; -7375,12577 -7436,12564
 (Hahnebergweg - Am Fort): Gef‰lle	q3; -7436,12564 -7375,12577
-(Mauerweg - Spektelake): einige Fuﬂg‰nger, Kurven	q1 -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7211,15920
+(Mauerweg - Spektelake): einige Fuﬂg‰nger, Kurven	q1 -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7243,15943 -7228,15933 -7211,15920
 (An der Tr‰nke - Falkenseer Chaussee): schmal	q2 -7086,16140 -7076,16159
 (Sotzmannstr. - P‰wesiner Weg): Fuﬂg‰nger, Bordstein	q1 -4737,13132 -4680,12998
 Rathaus Spandau: Bushaltestelle, viel Fuﬂg‰ngerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
@@ -2691,6 +2692,10 @@ Loerkesteig: Bordstein	q3 2956,24373 2969,24382
 (An der Villa Bolle - Am Marienhain): Fuﬂg‰nger	q3 22668,3125 22662,3200 22662,3205
 Straﬂe 36: sehr schmal, kurvig	q4 30073,2814 30066,2831 30071,2843
 Edisonstr.: Straﬂenbahnhaltestelle, Fuﬂg‰nger, eng	q2; 17979,6379 17963,6313
+Jaczostr.: Fuﬂg‰nger	q2 -4751,11262 -4798,11231
+(Jaczostr. - Gatower Str.): Gehweg f¸r Radfahrer frei	q2 -4751,11262 -4782,11270
+Gruberzeile - Weinmeisterhornweg: einige Fuﬂg‰nger	q2 -5735,11793 -5584,11706 -5590,11651 -5623,11552
+(G‰rtnereiring - Bergstr.): schmaler Trampelpfad, Bordstein	q3 -7317,13020 -7336,13023
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2755,7 +2760,7 @@ Joachimstr. (Kˆpenick): Bodenschwellen	q1; 21907,5517 22009,5593
 Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4930,10903 5084,10890
 Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger, Radfahrer sollen schieben	q4 5370,2542 5471,2470
-Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10715,18965 10621,18837 10542,18749 10527,18718 10496,18704
+Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10695,18937 10621,18837 10542,18749 10527,18718 10496,18704
 Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
 Georg-Lehnig-Str.: enge Straﬂe	q1 14551,13571 14527,13486 14447,13507
 Erich-Kuttner-Str.: enge Straﬂe	q1 14590,13560 14551,13571 14439,13600 14371,13619 14324,13632 14218,13661 14184,13670 14117,13685 14088,13627
@@ -2772,7 +2777,7 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0 6904,20692 6930,20808 6943,20862
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1009,5537 1697,5938
 (Breisgauer Str. - Parkplatz Einkaufszentrum): schmaler Fuﬂweg	q3 -2273,3460 -2211,3484 -2173,3513
 (Esplanade - Gr¸ntaler Str.): Zickzack-Kurs	q2 9980,16973 9880,16994 9846,16981
-L¸nette: Fuﬂg‰nger	q1 -1347,15506 -1349,15490 -1444,15443 -1485,15463
+L¸nette: Fuﬂg‰nger	q2 -1353,15502 -1349,15490 -1444,15443 -1485,15463
 Gritznerstr.: enge Straﬂe	q0 4312,5889 4380,6049 4414,6134 4430,6165 4472,6242 4511,6318 4555,6403 4630,6534 4682,6625 4734,6716
 Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 902,6642 909,6584 1057,6461 1375,6138
 Worpsweder Str.: eng mit ein- und ausparkenden Autos	q1 6182,4931 6202,5163
@@ -2909,7 +2914,7 @@ K‰uzchensteig: Fuﬂg‰nger, Bordsteine	q1 1918,6456 1895,6470
 Rahel-Hirsch-Weg: Fuﬂg‰nger	q3 8582,13355 8595,13375 8587,13436 8586,13440
 An der Karolinenhˆhe: Fuﬂg‰nger, spielende Kinder	q3 -5900,11726 -5848,11779 -5892,11820 -5847,11876
 Obstallee: Bodenschwellen, Fuﬂg‰nger, spielende Kinder	q3 -5437,12440 -5890,12579
-Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5385,12540 -5400,12509 -5437,12440
+Leubnitzweg: Fuﬂg‰nger (Wohngebiet), Bordsteine	q3 -5374,12575 -5404,12510 -5412,12490 -5421,12491 -5437,12440
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4267,11590 -4302,11669
 Enger Steig: Fuﬂg‰nger, Bordsteine	q1 -4310,11770 -4279,11862
 (Parkweg Swinem¸nder Str.): Fuﬂg‰nger	q1 10189,14649 10226,14568
@@ -3456,8 +3461,8 @@ Scharfe Lanke: enge Straﬂe	q0 -4265,11109 -4266,11008 -4292,10888 -4284,10834 -4
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3441,13270 -3352,13135 -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 (zum R‰cknitzer Steig): einige Fuﬂg‰nger	q1 -5535,12631 -5559,12557
-(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger	q1 -5830,12712 -5808,12631 -5559,12557 -5400,12509
-(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger, hohe Bordsteinkante	q2 -5400,12509 -5196,12452
+(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger	q1 -5830,12712 -5808,12631 -5559,12557 -5404,12510
+(Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger, hohe Bordsteinkante	q2 -5404,12510 -5196,12452
 Annenweg: enger Weg, hohe Bordsteinkante	q3 -5121,8283 -5118,8290 -5094,8391 -5093,8398
 (Finkenkruger Weg - Eichholzbahn): enger Weg	q2 -7420,14520 -7431,14521 -7439,14521 -7452,14472 -7481,14379 -7559,14379
 Lohrer Pfad: kombinierter Fuﬂ- und Radweg, eng	q3 -8386,14882 -8295,14948

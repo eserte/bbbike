@@ -26,7 +26,7 @@ Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork
 # 
 #: source_id: viz2021:13.390889,52.525514,01.04.2025,08:00 (bis 19.07.2025)
 #: note: Richtung Südosten auch Radwegführung auf dem Bürgersteig, Richting Nordwesten sollen Radfahrer via Tucholskystr. und Auguststr. fahren (wegen Tramschienen?!)
-#: last_checked: 2025-06-15 (mapillary)
+#: last_checked: 2025-07-05
 #: next_check: 2025-07-19 (VIZ-Verkehrsmeldung)
 #: valid: -20250719
 Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
@@ -268,7 +268,7 @@ Möckernstr./nördlich Wartenburgstr.: Gegenverkehrsregelung	X::inwork::alternatin
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-04 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -307,7 +307,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-06-13
+#: last_checked: 2025-07-05
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -486,22 +486,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # REMOVED --- #: next_check_id: BERLINERALLEE-2021 --- #: next_check_id: BERLINERALLEE-2022 --- #: XXX evtl. bis zum Ende der jetzigen Bauphase, oder bis zum Ende der Gesamtbaumaßname? --- #: last_checked: 2022-06-10 --- #: next_check: 2022-07-25 --- #: valid: -20220725 --- Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # REMOVED --- #: next_check_id: GAERTNER-2021 --- #: last_checked: 2021-09-02 --- # REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork::alternating 14272,11775 --- Grünberger Str.	F::inwork 14272,11775
 # REMOVED --- #: XXX Hauffstraße (Rummelsburg) in beiden Richtungen zwischen Wiesenweg und Schreiberhauer Straße: Arbeiten an Gasleitung, für beide Richtungen nur ein gemeinsamer Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, vom 06.07.2021 08:00 bis 23.07.2021 17:00 --- #: note: Ampeln in der Hauffstr. sowie in der Schulze-Boysen-Str. an der Buchberger Str.; außerdem ist die Anbindung Pfarrstr. offiziell gesperrt --- #: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00 (mittlerweile bis 3.9.2021) vvv --- #: last_checked: 2021-08-09 vvv --- #: valid: -20210903 vvv --- Hauffstr.: Gegenverkehrsregelung	X::inwork::alternating 15461,11313 --- Schulze-Boysen-Str.: Gegenverkehrsregelung	X::inwork::alternating 15477,11338 --- #: valid ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
-# 
-#: next_check_id: HERMANNHESSESTR-2019
-#: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erwähnung, möglicherweise Verstetigung 2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1897161150145417332
-#: by: https://pbs.twimg.com/media/GlMdG93XkAEHYWX?format=jpg&name=medium
-#: XXX wird die temporäre Ampel durch eine permanente ersetzt?
-#: source_id: viz2021:13.398354,52.576848,05.03.2025,07:00 (Ampelneubau, Einschränkungen in der Tschaikowskistr. für Kfz-Verkehr, bis 02.05.2025) (inaktiv) (bis 23.05.2025) (inaktiv)
-# REMOVED (closed) --- #: osm_watch: note 2356634 3
-#: osm_watch: node id="9569639494" version="1"
-#: osm_watch: node id="9569639496" version="1"
-#: last_checked: 2025-03-09 (mapillary)
-# REMOVED --- #: check_frequency: 60d
-# REMOVED --- #: next_check: 2025-12-31
-#: next_check: 2025-05-23 (VIZ-Verkehrsmeldung)
-	X::inwork 9868,19023
-# 
+# REMOVED (permanent) --- #: next_check_id: HERMANNHESSESTR-2019 --- #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Erwähnung, möglicherweise Verstetigung 2025) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1897161150145417332 --- #: by: https://pbs.twimg.com/media/GlMdG93XkAEHYWX?format=jpg&name=medium --- #: XXX wird die temporäre Ampel durch eine permanente ersetzt? --- #: source_id: viz2021:13.398354,52.576848,05.03.2025,07:00 (Ampelneubau, Einschränkungen in der Tschaikowskistr. für Kfz-Verkehr, bis 02.05.2025) (inaktiv) (bis 23.05.2025) (inaktiv) --- # REMOVED (closed) --- #: osm_watch: note 2356634 3 --- #: osm_watch: node id="9569639494" version="1" --- #: osm_watch: node id="9569639496" version="1" --- #: last_checked: 2025-03-09 (mapillary) --- # REMOVED --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2025-12-31 --- #: next_check: 2025-05-23 (VIZ-Verkehrsmeldung) ---	X::inwork 9868,19023
 # REMOVED --- #: note: Baustellenampel in der Neuen Roßstr. --- #: source_id: 2147345021 (bis 06.07.2020) --- #: source_id: 2147345825 --- #: XXX ist die Ampel mittlerweile abgebaut (wegen der Einbahnstraßenregelung)? --- #: XXX laut fritz Sperrung bis 2020-06-30 --- #: last_checked: 2020-05-12 --- #: next_check: 2020-05-13 --- #: valid: -20200706 ---	X::inwork 10780,11721
 # REMOVED (mittlerweile nur noch provisorische Zebrastreifen) --- #: next_check_id: HOSEMANN-2019 --- #: note: Baustellenampel in der Hosemannstr. (eigentlich 2x) --- #: last_checked: 2020-05-10 --- #: next_check: 2020-07-31 --- #: valid: -20200731 ---	X::inwork 12556,15518
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
@@ -582,6 +567,7 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
 ################################################################################
 #: section: Ampeln und Bahnübergänge in Berlin vvv
+	X 9868,19023
 #: note: Anforderung
 	F 6776,5553
 #: note: Anforderungsampel
@@ -1575,7 +1561,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3801,11858
 	X 3406,11849
 	X 1747,11719
-	X 2446,11776
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: XXX wegen nicht mehr existenter Autobahnausfahrt ausgeschaltet
+#: osm_watch: node id="12875745339" version="1"
+#: osm_watch: note 4840114 1
+#: last_checked: 2025-07-05
+#: check_frequency: 360d
+	X0 2446,11776
 	X 2330,11762
 #: off: except_event
 #: note: Ampel wahrscheinlich nur bei Waldbühnen-Veranstaltungen eingeschaltet
@@ -2375,7 +2367,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20832,15981
 	X -8784,13321
 	X -8358,13340
-	X -8371,13186
+	X -8384,13191
 #: note: Anforderungsampel
 	F -8050,13080
 	X -6405,14971
@@ -3497,6 +3489,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 16602,25646
 	F -188,22682
 	X -2295,16951
+#: note: Grüner Pfeil für alle (Kleine Eiswerderstr. -> Daumstr.)
 	X -1700,15762
 #: note: Anforderungsampel für Radfahrer aus der Eiswaldtstr. und Emmichstr.
 	X 7285,2377
@@ -4031,7 +4024,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 2
-#: last_checked: 2025-06-11 (mapillary) vvv
+#: last_checked: 2025-07-04 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

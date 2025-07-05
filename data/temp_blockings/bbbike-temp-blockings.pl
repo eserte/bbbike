@@ -22386,7 +22386,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-07-01 (traffic)
+#: last_checked: 2025-07-05
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -28942,7 +28942,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.729141.php',
        data  => <<EOF,
-	2::inwork -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7211,15920
+	2::inwork -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7243,15943 -7228,15933 -7211,15920
 EOF
      },
      { from  => 1519686000, # 2018-02-27 00:00
@@ -36492,10 +36492,11 @@ EOF
 #: priority: #A
 #: last_checked: 2025-06-18 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-07-27 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
+#: next_check: 2025-07-20 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 # REMOVED --- #: osm_watch: way id="794278028" version="10"
 # REMOVED --- #: osm_watch: way id="1181902719" version="1"
+#: XXX nächste Sperrung der Hämmerlingstr.: Von Montag, 21. Juli (6 Uhr), bis Freitag, 8. August 2025 (vsl. 12 Uhr)
 # REMOVED --- Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
 #: osm_watch: way id="1163982841" version="3"
 Schubertstr.	2::inwork 21984,6317 21856,6390
@@ -36918,7 +36919,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
 Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
-	q4::inwork 10721,18575 10784,18426
+	q4::inwork 10729,18584 10793,18433
 EOF
      },
      { from  => 1656194400, # 2022-06-26 00:00
@@ -38266,10 +38267,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1255376.php
-# REMOVED ---	2::inwork -5554,12929 -5493,12994 -5446,13137 -5472,13235
+# REMOVED ---	2::inwork -5556,12927 -5533,12970 -5504,13000 -5451,13104 -5453,13184 -5472,13235
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1428766.php
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-umwelt/parkweg-im-aktivpark-gesperrt_a410652
-	2::inwork -5753,13107 -5707,13014 -5554,12929 -5388,12841 -5273,12802 -5234,12812
+	2::inwork -5764,13103 -5745,13060 -5707,13014 -5599,12947 -5556,12927 -5457,12890 -5388,12841 -5273,12802 -5234,12812
 EOF
      },
      { from  => 1666476000, # 2022-10-23 00:00
@@ -39403,7 +39404,7 @@ EOF
 #: priority: #B
 #: last_checked: 2025-06-18
 #: check_frequency: 120d
-#: next_check: 2025-08-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag)
+#: next_check: 2025-08-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 EOF
@@ -41366,12 +41367,12 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 EOF
      },
      { from  => $isodate2epoch->("2025-08-17 00:00:00"), # $isodate2epoch->("2024-10-22 00:00:00"), # $isodate2epoch->("2023-08-27 00:00:00"),
-       until => $isodate2epoch->("2025-09-07 20:00:00"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
+       until => $isodate2epoch->("2025-09-11 12:00:00"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick, Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
 #      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 23.10.2024 bis voraussichtlich 04.11.2024',
-       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, voraussichtlich vom 18.08.2025 bis 07.09.2025',
+       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, voraussichtlich vom 18.08.2025 6:00 Uhr bis 11.09.2025 12:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -41640,7 +41641,7 @@ EOF
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
-#: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge
+#: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 # REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
@@ -41929,7 +41930,7 @@ EOF
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: osm_watch: way id="23121446" version="36"
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-06-15 (osm) vvv
+#: last_checked: 2025-07-04 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -44467,7 +44468,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2023
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
-#: note: außerdem ist eine Umleitung via Eckernförder Platz durch den Wald ausgeschildert
+#: note: getrennter Rad/Gehweg (aber schmal), außerdem ist ein gemeinsamer Rad/Gehweg via Eckernförder Platz durch den Wald ausgeschildert
 	q2::inwork; 5848,14977 5984,14819
 #: note: offiziell keine Durchfahrt erlaubt, Umweg via Nordufer
 	q4::inwork; 5984,14819 5848,14977
@@ -44669,7 +44670,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-04 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -46470,7 +46471,7 @@ EOF
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: note: Aber eigentlich kann man die Fußgängerampel benutzen...
-#: last_checked: 2025-07-03 vvv
+#: last_checked: 2025-07-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 vvv
 #	q4::inwork; 8453,13611 8572,13671
@@ -46561,7 +46562,7 @@ EOF
 #: osm_watch[closed]: note 4537179 1
 #: osm_watch: way id="14438318" version="8"
 #: add_fragezeichen: Ist der Steg weiterhin gesperrt?
-#: last_checked: 2025-06-17 (MoPo)
+#: last_checked: 2025-07-05
 #: check_frequency: 270d
 #: next_check: 2026-12-31
 	2::inwork -7182,15524 -7228,15504
@@ -47049,7 +47050,7 @@ EOF
      { from  => 1739720880, # 2025-02-16 16:48
        until => $isodate2epoch->("2025-07-31 17:00:00"), # $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
 #      text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 bis 13.06.2025',
-       text  => 'Scottweg: mögliche Sperrung; evtl. sind auch Radfahrer betroffen, bis 31.07.2025',
+       text  => 'Scottweg: Fahrbahn gesperrt, Bürgersteig für Radfahrer frei, bis 31.07.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
@@ -47058,7 +47059,7 @@ EOF
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt
 # REMOVED --- #: next_check: 2025-04-30
-Scottweg	q4::inwork -1317,11300 -966,11382
+Scottweg	q3::inwork -1317,11300 -966,11382
 EOF
      },
      { from  => 1739772000, # 2025-02-17 07:00
@@ -47274,7 +47275,7 @@ EOF
 #: by: https://pbs.twimg.com/media/Glc6s8uWAAAe6co?format=jpg&name=medium (kürzerer Baustellenbereich, nur bis etwas hinter Kavalierstr.?)
 #: by: https://www.bahninfo-forum.de/read.php?9,825696,826383#msg-826383 (gemeinsamer Rad- und Gehweg)
 #: note: q4 -> q3, da gemeinsamer Rad- und Gehweg, aber vermutlich gibt es hier noch Umwege/Engstellen
-	q3::inwork; 10680,18380 10710,18393 10784,18426 10934,18500 10958,18512 11001,18528
+	q3::inwork; 10680,18380 10710,18393 10793,18433 10934,18500 10958,18512 11001,18528
 EOF
      },
      { from  => $isodate2epoch->("2025-03-15 00:00:00"), # 1741496400, # 2025-03-09 06:00
@@ -47300,7 +47301,7 @@ EOF
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025)
 #: osm_watch: note 4317053 7
 #: osm_watch: way id="1149646787" version="5"
-#: last_checked: 2025-06-10 (mapillary)
+#: last_checked: 2025-07-04 (mapillary)
 #: next_check: 2025-07-18 (VIZ-Verkehrsmeldung, MoPo, Tsp)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 EOF
@@ -47782,7 +47783,7 @@ EOF
        data  => <<EOF,
 #: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-06-29 (traffic)
+#: last_checked: 2025-07-05 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
@@ -48027,14 +48028,12 @@ Spandauer Str.	2::temp 10687,12421 10646,12470 10599,12526 10542,12587 10431,127
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1751711928, # undef, # XXX
        text  => 'Alexandrinenstr. - Wassertorstr.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LOBECKSPORTPLATZ-2025
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-07
-# REMOVED --- #: check_frequency: 14d
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2025-07-05 --- #: check_frequency: 14d
 	2::inwork 10431,10606 10492,10582
 EOF
      },
@@ -48720,7 +48719,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lssgcmy3zc22
 #: by: https://fahrinfo.vbb.de/him-uploads/1751524936932_Kartenausschnitt_Kastanienallee.png
 #: source_id: viz2021:13.380013,52.599631,28.06.2025,15:25 (hier nur Kfz-Verkehr, bis 04.07.2025) (nun auch Radverkehr)
-#: source_id: bvg2024:124#HIM_FREETEXT_290896
+#: source_id[inactive]: bvg2024:124#HIM_FREETEXT_290896
 	q4::inwork 8498,21578 8717,21429
 EOF
      },
