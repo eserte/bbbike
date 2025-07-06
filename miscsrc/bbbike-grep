@@ -26,7 +26,7 @@ use I18N::Langinfo qw(langinfo CODESET);
 use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
 use Strassen::Core;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my $bbbike_datadir = bbbike_root . '/data';
 my $bbbike_miscdir = bbbike_root . '/misc';
@@ -64,6 +64,7 @@ my $searchterm_type = 'fixed';
 my $case_insens     = 1;
 my $limit;
 
+my $with_filename = 1;
 my $with_line_number;
 my $with_byte_offset;
 
@@ -78,6 +79,8 @@ GetOptions(
 	   'n|line-number'         => \$with_line_number,
 	   'b|byte-offset'         => \$with_byte_offset,
 	   'limit=i'               => \$limit,
+	   'filename!'             => \$with_filename,
+	   'h'                     => sub { $with_filename = 0 },
 	   'add-file=s'            => sub { push @search_file_defs, $_[1] },
 	   'add-file-with-encoding=s' => sub {
 	       if (my($filename, $encoding) = $_[1] =~ m{^(.*):(.*)$}) {
@@ -146,7 +149,10 @@ sub do_search {
 	while(<$fh>) {
 	    if ($_ =~ $search_rx) {
 		chomp;
-		my $out = "$outfile:";
+		my $out;
+		if ($with_filename) {
+		    $out .= "$outfile:";
+		}
 		if ($with_line_number) {
 		    $out .= "$.:";
 		}
@@ -249,6 +255,10 @@ like L<fgrep(1)>. This is the default.
 Specify that the search term should be used in a case sensitive way.
 By default it is case insensitive. Note that this differs from
 traditional L<grep(1)>.
+
+=item C<-h> (alias: C<--no-filename>)
+
+Do not output filename of search hits.
 
 =item C<-n> (alias: C<--line-number>)
 
