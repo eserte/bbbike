@@ -438,19 +438,19 @@ Mentelinstr. -> Rummelsburger Str.: Borstein	DH:kerb_up 17833,7351 17847,7356 17
 # REMOVED --- #: source_id: viz2021:13.414554,52.553756,24.10.2022,03:30 (inaktiv) --- #: source_id: viz2021:13.414554,52.553756,07.11.2022,03:30 (bis 14.11.2022) --- #: by: https://nitter.cz/VIZ_Berlin/status/1584236962751414272#m --- #: by: https://nitter.cz/pic/orig/media%2FFfnR3ssXgAgghIr.jpg --- #: valid: -20221114 vvv --- Wisbyer Str../Bornholmer Str./Schönhauser Allee: Radfahrer müssen die Kreuzung in Richtung Westen links überqueren, bis 14.11.2022	DH:t=90 11289,16423 11019,16465 10778,16485 --- Wisbyer Str../Bornholmer Str./Schönhauser Allee: Radfahrer müssen die Kreuzung in Richtung Westen links überqueren, bis 14.11.2022	DH:t=30 11289,16423 11019,16465 11004,16360 --- #: valid ^^^
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 ---- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/strassenbau-am-knotenpunkt-puschkinalleeelsenstrasseam-treptower-park-geht-weiter_a392743 ---- #: source_id: viz2021:13.454254,52.49393,29.07.2021,08:00 (bis Ende 2021, Gesamtbaumaßnahme bis 30.06.2023) (mittlerweile bis 30.06.2022) (inaktiv) ---- #: source_id: viz2021:13.45767,52.49173,29.12.2022,09:41 (bis 31.07.2023) (später am Tag wieder entfernt -> inaktiv) ---- #: source_id: viz2021:13.45767,52.49173,29.07.2021,08:00 (bis 30.06.2023) (inaktiv) (bis 31.07.2023) (inaktiv) ---- #: source_id: viz2021:13.45316,52.49472,29.07.2021,08:00 (bis 30.06.2023) (inaktiv) ---- #: source_id: viz2021:13.45767,52.49173,20.12.2023,14:17 (bis 29.02.2024) (inaktiv) ---- #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 30.06.2022) (inaktiv) (bis 31.12.2022) (bis 31.07.2023) (bis 22.12.2023) (bis 29.02.2024) (inaktiv) (bis 30.04.2024) (inaktiv) (bis 31.12.2024) ---- #: source_id: viz2021:13.457474,52.491787,29.07.2021,07:00 (bis 30.04.2024) (bis 30.12.2024) (bis 31.12.2024) ---- #: osm_watch: way id="1005683568" version="17" ---- #: osm_watch: way id="1022420059" version="17" ---- #: note: mittlerweile (2024-06-18, 2024-07-10) sind die Baustellenabsperrungen weggeschoben, dass man theoretisch direkt überqueren kann ---- #: last_checked: 2024-08-02 (offen!) vvv ---- #: check_frequency: 90d vvv ---- #: next_check: 2024-12-31 vvv ---- #: note: allerdings spart man hier eine Ampel ---- Elsenstr.: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 14060,9574 13973,9465 ---- Elsenstr. -> Am Treptower Park: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 14185,9509 ---- #: next_check ^^^ ---- #: check_frequency ^^^ ---- #: last_checked ^^^
 # 
-#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: osm_watch: way id="4699431" version="45"
-#: osm_watch: way id="865716506" version="20"
-#: osm_watch: way id="865716510" version="20"
-#: note: mittlerweile gibt es noch Bauarbeiten auf der Fahrbahn des Blumberger Damms südlich des Frankenholzer Wegs; Radfahrer können nun weiter auf dem Gehweg bis Alt-Biesdorf fahren (Gehweg frei für Radfahrer, beide Richtungen) oder auf der Fahrbahn fahren, wo zurzeit die Radspur nicht benutzbar ist
-#: last_checked: 2025-06-28 (mapillary) vvv
-#: check_frequency: 14d vvv
-#: next_check: 2025-09-30 (VIZ-Verkehrsmeldung) vvv
-Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945
-Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 21199,12258 21190,12193
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
+# REMOVED --- #: osm_watch: way id="4699431" version="45"
+# REMOVED --- #: osm_watch: way id="865716506" version="20"
+# REMOVED --- #: osm_watch: way id="865716510" version="20"
+# REMOVED --- #: note: mittlerweile gibt es noch Bauarbeiten auf der Fahrbahn des Blumberger Damms südlich des Frankenholzer Wegs; Radfahrer können nun weiter auf dem Gehweg bis Alt-Biesdorf fahren (Gehweg frei für Radfahrer, beide Richtungen) oder auf der Fahrbahn fahren, wo zurzeit die Radspur nicht benutzbar ist
+# REMOVED --- #: last_checked: 2025-06-28 (mapillary) vvv
+# REMOVED --- #: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2025-09-30 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21166,12023 21152,11945
+# REMOVED --- Südliche Blumberger-Damm-Brücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 21199,12258 21190,12193
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: STERNDAMM-2020 --- #: source_id: viz2021:13.508713,52.452517,06.10.2021,07:00 vvv --- #: note: laut rbb ab 28.10.2021 keine Einschränkungen mehr --- #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-28102021/ --- #: last_checked: 2021-10-20 (bahninfo-forum) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2021-11-01 vvv --- #: valid: -20211028 vvv --- Sterndamm: Umweg für Radfahrer, weitere Ampel	DH:tl:len=150 17705,5223 17648,5338 17601,5374 --- Sterndamm: Umweg für Radfahrer, weitere Ampel	DH:tl:len=150 17705,5223 17648,5338 17601,5090 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # 

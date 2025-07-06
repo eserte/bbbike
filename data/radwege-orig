@@ -358,7 +358,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-07-05 vvv
+#: last_checked: 2025-07-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1345,7 +1345,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-06-28 vvv
+#: last_checked: 2025-07-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1777,7 +1777,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2025-06-18 vvv
+#: last_checked: 2025-07-04 (mapillary) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -1808,20 +1808,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 	RW1; 14174,7505 14095,7568 14015,7631
 # REMOVED --- #: next_check_id: SONNENALLEE-2014 --- #: XXX laut fritz & vmz bis Ende Dezember 2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111 --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: last_checked: 2018-06-06 --- #: next_check: 2018-08-17 --- #: check_frequency: 30d
 	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14305,7415 14174,7505
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/estrel-tower-176m.9/page-18#post-24412
-#: by: https://www.deutsches-architekturforum.de/thread/6916-estrel-tower-berlin-176-m-neuk%C3%B6lln-in-bau/?postID=775626#post775626
-#: by: https://entwicklungsstadt.de/fortschritt-am-estrel-tower-in-neukoelln-richtfest-fuer-berlins-hoechstes-hochhaus/ (Abschluss bis Ende 2025)
-#: by: https://estreltower.com/estrel-berlin-estrel-tower-feiert-sein-richtfest/ (bis Sommer 2026)
-#: by: https://entwicklungsstadt.de/estrel-tower-berlins-hoechstes-gebaeude-kurz-vor-der-aeusseren-vollendung/
-#: XXX wegen eines Fußgängerschutztunnels unter dem Estrel-Tower ist der vorhandene Radweg abgesperrt
-#: XXX später wieder herstellen: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14305,7415 14334,7395
-#: source_id: viz2021:13.461293,52.471377,24.03.2025,07:00 (Leitungsarbeiten, bis 27.06.2025) (bis 11.07.2025)
-#: also_indoor: webcam https://portal1828.webcam-profi.de/ 
-#: last_checked: 2025-06-06
-#: check_frequency: 30d
-#: next_check: 2026-09-01 (estreltower website)
-Busspur ist immer gültig	RW5; 14174,7505 14305,7415 14334,7395
-überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14334,7395 14369,7376
+überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14174,7505 14305,7415 14334,7395 14369,7376
 	RW1; 14369,7376 14379,7372 14430,7348 14530,7301
 	RW2; 14530,7301 14617,7243
 	RW1; 14015,7631 13919,7707
@@ -3147,7 +3134,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-06-28
+#: last_checked: 2025-07-06
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4415,49 +4402,13 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 	RW1; 21108,11628 21135,11799 21139,11830 21150,11925 21152,11945
 	RW4; 21139,11830 21135,11799 21108,11628
 # 
-# REMOVED --- #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019 --- #: XXX nach den Bauarbeiten alten Zustand wiederherstellen --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/staus-zu-befuerchten_a208024 --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/suedliche_blumberger_damm_bruecke/index.shtml
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (mittlerweile Zweirichtungsradweg auf der westlichen Seite?)
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/senat-baut-ab-dem-fruehjahr-die-blumberger-damm-bruecke-in-biesdorf-neu_a297317 (neue Brücke ab 2025)
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Baubeginn 2. Quartal 2021, Bauzeit 5 Jahre, also Bauende erst 2026?) (mittlerweile: geplante Fertigstellung 3. Quartal 2025) (mittlerweile: 2025, kein genauer Zeitpunkt mehr)
-#: by: https://pascalgrothe.de/verkehrsverwaltung-informiert-ueber-den-neubau-der-blumberger-damm-bruecke/
-#: by: https://i1.wp.com/pascalgrothe.de/wp-content/uploads/2021/03/Bildschirmfoto202021-03-1320um2012.08.26.jpg?resize=2048%2C1148&ssl=1 (Verkehrsführung für Radfahrer: Zweirichtungsradweg, erstmal auf der westlichen Seite, später auf der östlichen Seite)
-#: by: https://i0.wp.com/pascalgrothe.de/wp-content/uploads/2021/03/829ca87f-07ad-4e88-99b3-eeaba5c923fc-2.jpg?w=655&ssl=1 (kurze Vollsperrungen geplant)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Brückenbauarbeiten bis 2025)
-#: by: https://sbahn.berlin/aktuelles/artikel/diese-bauprojekte-stehen-2022-an/
-#: by: https://berliner-abendblatt.de/2022/01/24/bauprojekte-der-s-bahn-2022/
-#: by: https://viz.berlin.de/2022/02/blumberger-damm-bruecke/ (2-tägige Sperrung nur für Kfz)
-#: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/halbzeit-beim-neubau-der-suedlichen-blumberger-damm-bruecke_a380524 (östliche Brückenhälfte fertig)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11107 (Anfrage)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1848567453804286081
-#: by: https://pbs.twimg.com/media/GabEfkLWYAE1i5n?format=jpg&name=large
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241029 (neue Bauphase ab 30.10.2024)
-#: by: https://pascalgrothe.de/bruecke-ueber-die-s5-am-blumberger-damm-wird-2025-eroeffnet/
-#: by: https://pascalgrothe.de/blumberger-damm-bruecke-das-warten-hat-bald-ein-ende/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/blumberger-damm-in-berlin-biesdorf-ende-der-sperrung-in-sicht-13183375.html
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12205 (Anfrage)
-#: by: https://pascalgrothe.de/endspurt-am-blumberger-damm-bruecke-kurz-vor-fertigstellung/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lt54kt32222y
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicowo5opd6ouf5s4lcqdggougopd7vxtyuj3i35sam4xtcokwmq44@jpeg
-#: source_id: viz2021:13.562831,52.51426,02.08.2021,12:02 (bis 01.06.2025) (inaktiv)
-#: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025) (bis 30.11.2025) (bis 15.06.2023) (inaktiv)
-#: source_id: viz2021:13.562465,52.512863,20.06.2023,18:00 (bis 30.11.2025) (bis 30.11.2024, Gesamtbaumaßnahme bis 2025) (bis 30.06.2025) (bis 30.09.2025)
-#: source_id: viz2021:13.56197,52.51013,26.06.2025,16:24 (bis 30.09.2025) (inaktiv)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
-#: note: früher Richtung Norden benutzungspflichtiger Hochbord, mittlerweile Gehweg für Radfahrer frei
-#: osm_watch: way id="865716506" version="20"
-#: osm_watch: note 4556943 6
-#: last_checked: 2025-06-28 (mapillary) vvv
+#: last_checked: 2025-07-05 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-09-30 (VIZ-Verkehrsmeldung) vvv
-# REMOVED ---	RW0; 21190,12193 21166,12023
-# REMOVED (während der Bauarbeiten) --- Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193
-# REMOVED (während der Bauarbeiten) --- alter Beton	RW1; 21190,12193 21199,12258
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster, alter Beton	RW2;RW8 21152,11945 21166,12023
-gemeinsamer Geh- und Radweg, Asphalt, Gehwegplatten	RW2;RW8 21166,12023 21190,12193
-#: note: Richtung Süden ein explizites Radfahren-verboten-Schild
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster, alter Beton	RW2;RW8 21190,12193 21199,12258
-# REMOVED --- #: last_checked: 2019-08-03 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2019-09-30 ---	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
+provisorische Radspur	RW4; 21152,11945 21166,12023 21190,12193 21199,12258
+gemeinsamer Geh- und Radweg, Gehwegplatten, Asphalt	RW; 21199,12258 21190,12193 21166,12023 21152,11945
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5869,11 +5820,16 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/dorfstrasse-malchow-b-2/ (Beginn des Straßenbaus voraussichtlich Mitte 2027, laut Lageplänen teilweise gemeinsamer Rad- und Gehweg, teilweise getrennt)
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/dorfstrasse-malchow-b2/lageplan_1.pdf
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/dorfstrasse-malchow-b2/lageplan_6.pdf
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="23"
 #: last_checked: 2025-06-21 (mapillary)
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 180d
+#: next_check: 2027-06-30 (SenUVK website)
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
 	RW1;RW1 15642,19179 15604,19349 15597,19573 15617,19775 15620,19809
@@ -5970,6 +5926,7 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 # REMOVED ---	RW;RW 16442,22505 16499,22789 16517,22868 16543,22942 16566,23007 16587,23067 16627,23187 16683,23354 16699,23402 16730,23492 16745,23548 16770,23593 16783,23615
 	RW6;RW6 11081,804 10903,799 10718,760
 	RW6;RW6 10726,739 10534,674
+	RW6;RW6 5734,12673 5749,12834 5755,12998 5766,13175
 Beton	RW1; 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
 # REMOVED (separat eingezeichnet) ---	RW1; 21332,4655 21289,4563
 # REMOVED (separat eingezeichnet) --- asphaltiert	RW10; 21289,4563 21206,4387
@@ -7324,7 +7281,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2025-06-18
+#: last_checked: 2025-07-04 (mapillary)
 #: check_frequency: 120d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -7690,7 +7647,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung? vvv
 #: priority: #D vvv
-#: last_checked: 2025-05-23 vvv
+#: last_checked: 2025-07-06 vvv
 #: check_frequency: 60d vvv
 Fahrradschleuse	RW3; 12714,8249 12753,8187
 	RW4; 12753,8187 12788,8101 12823,8028
@@ -7730,7 +7687,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2025-05-23
+#: last_checked: 2025-07-06
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
@@ -9169,7 +9126,7 @@ Grünbeschichtung	RW4; 12259,7164 12244,7205
 Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 #: XXX wann wird hier die Radspur komplettiert?
-#: last_checked: 2025-06-22 (mapillary)
+#: last_checked: 2025-07-06
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
 	RW3; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696

@@ -13,7 +13,8 @@
 #: source_id: viz2021:13.278443,52.516243,04.04.2025,08:00 (kein Endedatum)
 #: priority: #D
 #: last_checked: 2025-06-01
-#: next_check: 2025-12-31
+#: check_frequency: 270d
+# REMOVED --- #: next_check: 2025-12-31
 # REMOVED --- #: valid: -20251231
 Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 # 
@@ -24,7 +25,7 @@ Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 #: by: https://viz.berlin.de/aktuelle-meldungen/temporare-einbahnstrassen-in-der-lindenallee-und-ahornallee/
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9197 (Vorlage zur Kenntnisnahme, kein Endedatum)
 #: priority: #D vvv
-#: check_frequency: 120d vvv
+#: check_frequency: 270d vvv
 # REMOVED --- #: next_check: 2025-04-30 vvv
 # REMOVED --- #: valid: -20250430 vvv
 #: osm_watch: way id="38763874" version="13"
@@ -96,7 +97,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-07-05
+#: last_checked: 2025-07-06
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182

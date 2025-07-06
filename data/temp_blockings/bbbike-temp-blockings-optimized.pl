@@ -4211,7 +4211,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-06-28 vvv
+#: last_checked: 2025-07-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -5387,7 +5387,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-12
+#: last_checked: 2025-07-06
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -7709,7 +7709,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-06-24 (tempelhoferfeld website) vvv
+#: last_checked: 2025-07-05 (tempelhoferfeld website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -8777,7 +8777,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        },
        {
          'data' => '#: source_id: viz2021:13.427246,52.523159,30.04.2025,04:30 (bis 04.07.2025)
-#: source_id: adac:1977697072 (Erwähnung des Gehwegs)
+#: source_id: adac:1977697072 (Erwähnung des Gehwegs, bis 11.07.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
 #: osm_watch: note 4734747 1
@@ -8786,10 +8786,10 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: last_checked: 2025-07-04 vvv
 #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-07-11 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
 Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -9064,8 +9064,8 @@ Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::
 #: next_check_id: ROSEGGER-2024
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Frühjahr 2025 bis Ende 2025)
 #: note: Halteverbotsschilder ohne Enddatum
-#: last_checked: 2025-06-12
-#: check_frequency: 30d
+#: last_checked: 2025-07-06
+#: check_frequency: 45d
 #: next_check: 2025-12-31
 	q4::inwork 13246,7961 13236,7970 13147,8056
 ',
@@ -9196,6 +9196,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'until' => 1761951540
        },
        {
+         'accept_multi_feature_distance' => 1500,
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/massive-sturmschaden-tegeler-forst-bis-auf-weiteres-gesperrt/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lskrsuh6es25
 #: by: https://www.tagesspiegel.de/berlin/unwetter-in-berlin-tausende-baume-beschadigt--tegeler-forst-vorerst-gesperrt-13925098.html
@@ -9210,8 +9211,8 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.tagesspiegel.de/berlin/aufraumarbeiten-nach-unwettern-in-berlin-tegeler-und-spandauer-forst-bleiben-wochenlang-gesperrt-13935625.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1576243.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/unwetter-hinterlasst-grosse-verwustung-im-berliner-norden-bezirk-reinickendorf-zahlt-750-schadensmeldungen-13951765.html
-#: last_checked: 2025-06-30 (research) vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2025-07-06 (research) vvv
+#: check_frequency: 28d vvv
 #: note: nördlicher Abschnitt
 Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1061,21970 1069,21985 1135,22069
@@ -9228,8 +9229,7 @@ Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22
 (Tegeler Forst - Ehrenpfortensteig)	2::temp 1567,23054 1581,22959 1661,22851 1760,22839 1897,22781 2088,22798
 (Rote Chaussee - Beyschlagtunnel)	2::temp 904,23964 875,23836 776,23745 711,23612 664,23416 656,23373 697,23257 695,23002 652,22855 667,22755 636,22658
 #: source_id[inactive]: bvg2024:124#HIM_FREETEXT_290864
-#: note: Unklar, ob die Ruppiner Chausse betroffen ist
-Ruppiner Chaussee	2::temp 1445,21216 1427,21237 1347,21428 1254,21718 1146,21901 1061,21970 919,22068 488,22275 455,22285 355,22344
+# REMOVED (möglicherweise wieder offen?) --- #: note: Unklar, ob die Ruppiner Chausse betroffen ist --- Ruppiner Chaussee	2::temp 1445,21216 1427,21237 1347,21428 1254,21718 1146,21901 1061,21970 919,22068 488,22275 455,22285 355,22344
 #: note: südlicher Abschnitt --- unklar, ob dieser auch betroffen ist
 (Waldkauzstr., Verlängerung)	2::temp -884,19726 -671,19408 -547,19282 -538,19236 -595,19146 -646,19028 -629,18977
 (Schwarzer Weg - Waldkauzstr., Verbindung)	2::temp -519,19233 -538,19236
@@ -9245,6 +9245,10 @@ Schwarzer Weg (Tegel)	2::temp 605,20714 511,20600 436,20558 240,20457 195,20405 
 (Försterweg)	2::temp -2043,20968 -2101,20891 -1811,20818 -1292,20572 -1243,20471 -1050,20281 -871,20225 -842,20200 -716,20060 -516,19798 -303,19740
 (Waldweg im Tegeler Forst)	2::temp -1527,18645 -671,19408 -303,19740 -183,19831 97,20103
 (Försterweg - Schwarzer Weg)	2::temp -183,19831 -135,19832 6,19817
+#: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13499 (Einwohneranfrage)
+#: note: auch Wege am Tegeler Fließ möglicherweise gesperrt
+Tegeler Fließ	2::temp 4222,22854 4166,22752 4117,22715 4101,22727 4022,22691 3947,22622 3907,22606 3879,22574 3831,22479 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
+Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 2686,21720 2615,21640 2518,21565 2420,21553 2371,21524 2352,21559 2253,21527 2166,21468 2074,21469 2004,21502 1942,21564
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -9376,6 +9380,16 @@ An den Eiswerken -> Hauptstr.	3::inwork 14994,10732 15004,10791 14927,10807
          'text' => 'Gartenstr.: Anbindung Indira-Gandhi-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 29.08.2025 17:00',
          'type' => 'handicap',
          'until' => 1756479600
+       },
+       {
+         'data' => '#: XXX Ist nur das Linksabbiegen nicht möglich (Fahrtrichtung Nord) oder auch das Rechtsabbiegeb (Fahrtrichtung Süd)?
+	1::inwork 23404,5325 23293,5289
+',
+         'from' => 1751752800,
+         'id' => 4380,
+         'text' => 'Friedrichshagener Str./Salvador-Allende-Str.: für den Radverkehr ist das Abbiegen aus der Salvador-Allende-Str. in die Friedrichshagener Str. untersagt, vom 7.7.2025 bis Anfang August 2025',
+         'type' => 'gesperrt',
+         'until' => 1754085599
        }
      
 );
