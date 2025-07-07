@@ -2224,7 +2224,6 @@ Manteuffelstr./Burchardstr.: Mittelstreifendurchbruch geschlossen	3nocross 8739,
 # 
 ######################################################################
 #: note: Ostkreuz-Kiez (ab Frühjahr 2025) vvv
-Weserstr.	1 14550,11732 14622,11685 14651,11666
 # REMOVED (mittlerweile als NN getaggt) --- Niederbarnimstr.: für Kfz verboten	2 14073,11995 14055,11964
 # 
 #: note: Poller nördlich der Einmündung
@@ -2238,14 +2237,26 @@ Colbestr.	1 14523,12183 14468,11992
 # 
 Scharnweberstr.	1 14468,11992 14354,12012
 Scharnweberstr.	1 14589,11975 14468,11992
+Scharnweberstr.	1 14783,11949 14888,11934
 # 
 Colbestr./Scharnweberstr.	3 14354,12012 14468,11992 14589,11975
 Colbestr./Scharnweberstr.	3 14416,11815 14468,11992 14523,12183
+# 
+Finowstr.	1 14783,11949 14710,11824
+Finowstr.	1 14854,12137 14836,12045 14783,11949
+# 
+#: note: Pollerreihe; restliche Abbiegebeziehungen durch Einbahnstraßenregelungen abgedeckt
+Weichselstr. -> Scharnweberstr.	3 14926,12129 14888,11934 14965,11924
+Weichselstr.	3 14926,12129 14888,11934 14836,11842
+Scharnweberstr.	3 14965,11924 14888,11934 14783,11949
+Weichselstr. -> Scharnweberstr.	3 14836,11842 14888,11934 14783,11949
 # 
 Mainzer Str.	1 14354,12012 14306,11889
 Mainzer Str.	1 14354,12012 14427,12197
 # 
 Kinzigstr.	1 14589,11975 14475,11778
+# 
+Weichselstr.	1 14888,11934 14926,12129
 #: note ^^^
 ######################################################################
 # 

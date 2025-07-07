@@ -446,10 +446,8 @@ Kinzigstr./Frankfurter Allee	3nocross::ignrte 14523,12183 14582,12174 14621,1216
 Frankfurter Allee -> Kinzigstr.: Kinzigstr./Frankfurter Allee	3::igndisp 14709,12156 14621,12168 14589,11975
 Kinzigstr. -> Frankfurter Allee: Kinzigstr./Frankfurter Allee	3::igndisp 14589,11975 14621,12168 14582,12174
 Finowstr.+Weichselstr./Frankfurter Allee	3nocross::ignrte 14709,12156 14854,12137 14926,12129 14994,12121
-Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14926,12129 14854,12137 14836,12045
 Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14836,12045 14854,12137 14709,12156
 Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14994,12121 14926,12129 14888,11934
-Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14888,11934 14926,12129 14854,12137
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9244,13253 9246,13240 9254,13171 9262,13111
 Friedrichstr. -> Passage am Tacheles: Friedrichstr. (Straßenbahn)	3::igndisp 9225,13389 9244,13253 9353,13273
 Passage am Tacheles -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9353,13273 9244,13253 9246,13240
@@ -2673,7 +2671,6 @@ Burchardstr. -> Alt-Tempelhof: Mittelstreifendurchbruch geschlossen	3::igndisp 8
 Burchardstr. -> Manteuffelstr.: Mittelstreifendurchbruch geschlossen	3::igndisp 8553,6665 8722,6656 8739,6701
 Manteuffelstr. -> Alt-Tempelhof: Mittelstreifendurchbruch geschlossen	3::igndisp 8739,6701 8722,6656 8787,6660
 Manteuffelstr. -> Burchardstr.: Mittelstreifendurchbruch geschlossen	3::igndisp 8707,6537 8722,6656 8553,6665
-Weserstr.	1 14550,11732 14622,11685 14651,11666
 Jungstr./Oderstr.	3 14675,11964 14626,11869 14550,11732
 Jungstr./Oderstr.	3 14550,11732 14626,11869 14675,11964
 Jungstr. -> Oderstr.	3 14675,11964 14626,11869 14710,11824
@@ -2682,11 +2679,19 @@ Colbestr.	1 14468,11992 14416,11815
 Colbestr.	1 14523,12183 14468,11992
 Scharnweberstr.	1 14468,11992 14354,12012
 Scharnweberstr.	1 14589,11975 14468,11992
+Scharnweberstr.	1 14783,11949 14888,11934
 Colbestr./Scharnweberstr.	3 14354,12012 14468,11992 14589,11975
 Colbestr./Scharnweberstr.	3 14416,11815 14468,11992 14523,12183
+Finowstr.	1 14783,11949 14710,11824
+Finowstr.	1 14854,12137 14836,12045 14783,11949
+Weichselstr. -> Scharnweberstr.	3 14926,12129 14888,11934 14965,11924
+Weichselstr.	3 14926,12129 14888,11934 14836,11842
+Scharnweberstr.	3 14965,11924 14888,11934 14783,11949
+Weichselstr. -> Scharnweberstr.	3 14836,11842 14888,11934 14783,11949
 Mainzer Str.	1 14354,12012 14306,11889
 Mainzer Str.	1 14354,12012 14427,12197
 Kinzigstr.	1 14589,11975 14475,11778
+Weichselstr.	1 14888,11934 14926,12129
 Schwedter Str.	1 10506,14521 10468,14636
 Schwedter Str.	1 10402,14835 10440,14730 10448,14707 10468,14636
 Schwedter Str.	1 10379,14963 10367,14946 10377,14909

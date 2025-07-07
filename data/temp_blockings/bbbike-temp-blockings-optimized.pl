@@ -6879,7 +6879,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/222-C/23/138 (bis 30.05.2025) (bis 07.07.2025)
+         'data' => '#: source_id: LS/222-C/23/138 (bis 30.05.2025) (bis 07.07.2025) (inaktiv)
 #: source_id: LS/222-C/25/125 (bis 27.08.2025)
 	2::inwork 24027,-86688 23957,-86937 23869,-87065
 ',
@@ -6912,11 +6912,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1751580000,
+         'from' => 1753999200,
          'id' => 3955,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 5.7.2025 bis 6.7.2025',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 2.8.2025 bis 3.8.2025',
          'type' => 'handicap',
-         'until' => 1751839199
+         'until' => 1754258399
        },
        undef,
        undef,
@@ -7891,17 +7891,7 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025)
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
-	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
-',
-         'from' => 1729404000,
-         'id' => 4186,
-         'text' => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 07.07.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1751900400
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
@@ -8784,7 +8774,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-07-04 vvv
+#: last_checked: 2025-07-07 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-07-11 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -9382,14 +9372,16 @@ An den Eiswerken -> Hauptstr.	3::inwork 14994,10732 15004,10791 14927,10807
          'until' => 1756479600
        },
        {
-         'data' => '#: XXX Ist nur das Linksabbiegen nicht möglich (Fahrtrichtung Nord) oder auch das Rechtsabbiegeb (Fahrtrichtung Süd)?
-	1::inwork 23404,5325 23293,5289
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltdzi3chw227
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidzwcksbkmsr3hfcozkvrvb3a5s6kbpkezfvsnfxcuqb2ihl7wx4a@jpeg
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltf3zpknqs2c (auf 11.7.2025 verschoben)
+	q3::inwork; 23404,5325 23293,5289
 ',
-         'from' => 1751752800,
+         'from' => 1752098400,
          'id' => 4380,
-         'text' => 'Friedrichshagener Str./Salvador-Allende-Str.: für den Radverkehr ist das Abbiegen aus der Salvador-Allende-Str. in die Friedrichshagener Str. untersagt, vom 7.7.2025 bis Anfang August 2025',
+         'text' => 'Friedrichshagener Str.: Bauarbeiten an der Einmündung Salvador-Allende-Str., Umwege, ggfs. absteigen, voraussichtlich vom 11.7.2025 bis Anfang August 2025',
          'type' => 'gesperrt',
-         'until' => 1754085599
+         'until' => 1754409600
        }
      
 );

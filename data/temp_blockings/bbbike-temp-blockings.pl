@@ -42253,7 +42253,7 @@ EOF
        text  => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 27.08.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/222-C/23/138 (bis 30.05.2025) (bis 07.07.2025)
+#: source_id: LS/222-C/23/138 (bis 30.05.2025) (bis 07.07.2025) (inaktiv)
 #: source_id: LS/222-C/25/125 (bis 27.08.2025)
 	2::inwork 24027,-86688 23957,-86937 23869,-87065
 EOF
@@ -45987,7 +45987,7 @@ EOF
        text  => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 07.07.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025)
+#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
 	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
 EOF
@@ -47842,7 +47842,7 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-07-04 vvv
+#: last_checked: 2025-07-07 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-07-11 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -48751,13 +48751,15 @@ EOF
 	q4::inwork 14522,16260 14628,16249
 EOF
      },
-     { from  => 1751752800, # 2025-07-06 00:00
-       until => 1754085599, # 2025-08-01 23:59
-       text  => 'Friedrichshagener Str./Salvador-Allende-Str.: für den Radverkehr ist das Abbiegen aus der Salvador-Allende-Str. in die Friedrichshagener Str. untersagt, vom 7.7.2025 bis Anfang August 2025',
+     { from  => $isodate2epoch->("2025-07-10 00:00:00"), # 1751752800, # 2025-07-06 00:00
+       until => $isodate2epoch->("2025-08-05 18:00:00"), # 1754085599, # 2025-08-01 23:59
+       text  => 'Friedrichshagener Str.: Bauarbeiten an der Einmündung Salvador-Allende-Str., Umwege, ggfs. absteigen, voraussichtlich vom 11.7.2025 bis Anfang August 2025',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: XXX Ist nur das Linksabbiegen nicht möglich (Fahrtrichtung Nord) oder auch das Rechtsabbiegeb (Fahrtrichtung Süd)?
-	1::inwork 23404,5325 23293,5289
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltdzi3chw227
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidzwcksbkmsr3hfcozkvrvb3a5s6kbpkezfvsnfxcuqb2ihl7wx4a@jpeg
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltf3zpknqs2c (auf 11.7.2025 verschoben)
+	q3::inwork; 23404,5325 23293,5289
 EOF
      },
     );

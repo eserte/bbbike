@@ -1139,9 +1139,9 @@ Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870
 Lynarstr.: Asphalt	Q0 7259,14870 7409,14954
 # REMOVED --- #: next_check_id: LYNAR-2022 --- # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert --- #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet? --- #: osm_watch: way id="717490209" version="23" --- #: last_checked: 2024-11-21 --- #: check_frequency: 45d --- #: next_check: 2024-12-31 --- Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
 #: by: https://brunnenmagazin.de/kopfsteinpflaster-lynarstrasse/ (Pflaster wurde geschliffen)
-#: osm_watch: way id="220647519" version="32"
-#: XXX Ist das Kopfsteinpflaster nun besser befahrbar?
-Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
+#: osm_watch: way id="220647519" version="33"
+#: XXX Ist das Kopfsteinpflaster nun besser befahrbar? bei osm nun intermediate, hier erstmal von Q2 auf Q2+ hochgestuft
+Lynarstr.: Kopfsteinpflaster	Q2+ 7409,14954 7461,14986
 #: historical_note: früher Kopfsteinpflaster, Q2
 #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 Lynarstr.: Asphalt	Q0 7461,14986 7624,15083 7694,15125

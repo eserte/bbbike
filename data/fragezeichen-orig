@@ -2153,7 +2153,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10727 (kein konkreter Zeitraum)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1348463.php (Erwähnung)
 #: note: der erste infravelo-Eintrag bezieht sich anscheinend auf die gesamte Friedenstraße
-#: last_checked: 2025-06-28
+#: last_checked: 2025-07-07
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (infravelo-Eintrag)
 Friedenstr.: was wird hier genau gemacht?	?::projected 12325,13148 12382,13097 12416,13045
@@ -3612,7 +3612,7 @@ Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685
 #: by ^^^
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (Finanzierung unklar, vermutlich nicht 2023)
-#: last_checked: 2025-07-05
+#: last_checked: 2025-07-07
 #: check_frequency: 180d
 Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,12718 12347,12699
 # 
@@ -4040,10 +4040,10 @@ Grunewaldstr.: geschützter Radfahrstreifen von Kufsteiner Str./Bamberger Str. bi
 #: source_id: viz2021:13.35319,52.48988,24.03.2025,00:00 (bis 24.04.2025) (inaktiv)
 #: source_id: viz2021:13.356365,52.490201,14.05.2025,11:00 (bis 16.06.2025) (bis 08.07.2025)
 #: XXX zwischen Goltzstr. und Martin-Luther-Str. Richtung Westen in Bau --- laut osm note mittlerweile fertig (teilweise fehlen noch Leitboys)
-#: note: bei rbb bis 09.07.2025 verlängert, bei VIZ nicht
+#: note: bei rbb bis 09.07.2025 verlängert, bei VIZ nicht, nun bei rbb bis 16.07.2025 verlängert
 #: last_checked: 2025-04-27 vvv
-#: check_frequency: 61d vvv
-#: next_check: 2025-07-08 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: check_frequency: 60d vvv
+#: next_check: 2025-07-16 (rbb-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-09-30 (infravelo) vvv
 #: osm_watch: way id="4531624" version="32"
 #: osm_watch: way id="4531625" version="32"
@@ -4052,7 +4052,7 @@ Grunewaldstr.: geschützter Radfahrstreifen von Kufsteiner Str./Bamberger Str. bi
 Grunewaldstr.: geschützter Radfahrstreifen von Martin-Luther-Str. bis Goltzstr., Richtung Osten fehlt noch	?::inwork; 6440,9192 6568,9211 6709,9234 6847,9261 6921,9275 6994,9288
 Grunewaldstr.: geschützter Radfahrstreifen von Goltzstr. bis Kleistpark geplant, teilweise schon in Bau	?::inwork 6994,9288 7118,9315 7202,9329 7299,9346 7418,9366 7471,9360
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 # 
@@ -5420,7 +5420,7 @@ Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/schwedter-strasse-ist-fahrradstrasse_a423705
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12603 (Einwohneranfrage)
 #: by: https://www.infravelo.de/projekt/schwedter-strasse/ (4. Quartal 2024 - 2. Quartal 2025)
-#: osm_watch: note 3954748 9
+#: osm_watch[closed]: note 3954748 9
 #: osm_watch: note 4127416 1
 #: XXX Vorfahrtsregelung wird auch geändert, Einbahnstraßenregelungen für Kfz (Höhe Fürstenberger Str. nur Richtung N/S bis Griebenower)
 #: last_checked: 2025-07-03
@@ -5453,7 +5453,7 @@ Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str.	?::inwork 1046
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349062.php (Entsiegelungsmaßnahme ab 24.07.2023)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-in-fussgaengerzone_a388510
 #: osm_watch: way id="4685729" version="23"
-#: last_checked: 2025-06-05
+#: last_checked: 2025-07-07
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-07-24
 Waldeyerstr.: wird es hier zu weiteren Einschränkungen für den Radverkehr kommen?	? 15058,12329 15003,12241
@@ -6022,7 +6022,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="21"
-#: last_checked: 2025-07-03
+#: last_checked: 2025-07-07
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -6051,7 +6051,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="18"
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-08
+#: last_checked: 2025-07-07 (traffic)
 #: check_frequency: 30d (traffic checks)
 # REMOVED --- #: check_frequency: 60d (outdoor checks)
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -7382,7 +7382,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: XXX laut rbb und viz wird zwischen Koppenstr. und Straße der Pariser Kommune ein Radfahrstreifen eingerichtet (stimmt aber nicht)
 # REMOVED --- #: XXX in der Realität wird zurzeit zwischen Andreasstr. und der Koppenstr.; mittlerweile bis Straße der Pariser Kommune gearbeitet (Fahrspur abgesperrt, alter Radweg wird abgebrochen, provisorischer Radweg auf dem Gehweg)
 #: XXX zwischenzeitlich Bauarbeiten zwischen Strausberger Platz und Andreasstr. (Führung auf der Fahrbahn)
-#: last_checked: 2025-07-05 vvv
+#: last_checked: 2025-07-07 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-06-06 vvv
 Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,12540 12352,12509
@@ -7401,7 +7401,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-07
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7623,7 +7623,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-07
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8422,7 +8422,7 @@ Thyrow - Siethen (L795): neuer Radweg auf der Westseite geplant	?::projected -62
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=67330
 #: by: https://www.o-sp.de/download/lbvbrandenburg/339789
-#: source_id: LS/221-F/24/011 (bis 12.04.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (inaktiv) (bis 11.04.2025) (inaktiv) (bis 16.05.2025) (bis 13.06.2025) (bis 27.06.2025) (bis 07.07.2025)
+#: source_id: LS/221-F/24/011 (bis 12.04.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (inaktiv) (bis 11.04.2025) (inaktiv) (bis 16.05.2025) (bis 13.06.2025) (bis 27.06.2025) (bis 07.07.2025) (inaktiv)
 #: source_id: LS/221-F/24/065 (bis 29.11.2024) (inaktiv)
 #: osm_watch: note 4475108 1
 #: next_check: 2025-07-07 (VIZ-Verkehrsmeldung)
@@ -8886,23 +8886,21 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: note: erste Pfosten stehen bereits, mit meist zugehängten Schildern, einige Schilder schon (illegal?) nicht mehr zugehangen, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025) aktiv, ist aber offensichtlich verzögert
-#: last_checked: 2025-07-03 vvv
+#: last_checked: 2025-07-07 vvv
 #: check_frequency: 10d vvv
-#: osm_watch: way id="1145089826" version="5"
-Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14888,11934
-#: osm_watch: way id="127538487" version="21"
-Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14710,11824
-#: osm_watch: way id="1051639963" version="8"
-Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14854,12137 14836,12045 14783,11949
-#: osm_watch: way id="563341820" version="21"
+# REMOVED (realisiert) --- #: osm_watch: way id="1145089826" version="5" --- Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14888,11934
+# REMOVED (realisiert) --- #: osm_watch: way id="127538487" version="21" --- Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14710,11824
+# REMOVED (realisiert) --- #: osm_watch: way id="1051639963" version="8" --- Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14854,12137 14836,12045 14783,11949
+#: osm_watch: way id="563341820" version="22"
 Weserstr.: wird die Einbahnstraße umgedreht, dann für Radfahrer frei?	? 14416,11815 14475,11778
-#: osm_watch: way id="1145133916" version="6"
+#: osm_watch: way id="1145133916" version="7"
 Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14475,11778 14550,11732
+#: historical_note: die vorbereiteten Schilder waren für einige Zeit abgedeckt, nun wieder zugedeckt
+Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14550,11732 14622,11685 14651,11666
 #: osm_watch: way id="818875552" version="12"
 #: osm_watch: way id="1083736847" version="6"
 Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14710,11626 14764,11591 14830,11551 14849,11539
-#: osm_watch: way id="4685876" version="26"
-Weichselstr.: Einbahnstraße für Kfz in Vorbereitung	? 14926,12129 14888,11934
+# REMOVED (realisiert) --- #: osm_watch: way id="4685876" version="26" --- Weichselstr.: Einbahnstraße für Kfz in Vorbereitung	? 14926,12129 14888,11934
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
