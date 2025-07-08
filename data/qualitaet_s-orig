@@ -477,7 +477,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-07-04
+#: last_checked: 2025-07-08
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -2524,10 +2524,11 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/online-beteiligung-zur-elbestrasse-laeuft-bis-zum-27-november_a399343
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/elbestrasse/
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/161024_protokoll_mobilitaetsrat_3_pdf.pdf (Erwähnung einer Brücke zur Bouchéstr.)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1577828.php (Umbau ab 2026)
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
 #: last_checked: 2025-06-07
 #: check_frequency: 360d
-#: next_check: 2026-03-01 (kms website)
+#: next_check: 2026-03-15 (kms website, Pressemitteilung)
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13105,8720 12954,8840
 Laubestr.: Kopfsteinpflaster	Q2 12982,8564 12822,8675
@@ -12254,8 +12255,8 @@ Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-pepp-fuer-gruenanlage_a429121
 #: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ändert sich etwas an den Wegen?
 #: XXX Umbauarbeiten im östlichen Bereich, Weg wird neu gemacht, laut Aushang bis April 2025, wird aber vermutlich länger dauern
-#: osm_watch: note 4706090 5
-#: last_checked: 2025-07-05
+#: osm_watch: note 4706090 6
+#: last_checked: 2025-07-06 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-30
 (Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601 10431,10606 10492,10582

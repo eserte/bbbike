@@ -7362,7 +7362,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-05 vvv
+#: last_checked: 2025-07-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7621,7 +7621,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
 #: osm_watch: way id="27260309" version="20"
-#: osm_watch: way id="372791173" version="10"
+#: osm_watch: way id="372791173" version="11"
 #: osm_watch: way id="27260312" version="25"
 #: osm_watch: note 4673198 2
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
@@ -8176,18 +8176,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => 1803657600
        },
-       {
-         'data' => '#: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025) (inaktiv)
-#: source_id: viz2021:13.28749,52.50307,13.06.2025,07:00 (bis 30.06.2025) (inaktiv)
-#: source_id: viz2021:13.28749,52.50307,26.06.2025,17:24 (bis 08.07.2025)
-	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
-',
-         'from' => 1749765600,
-         'id' => 4242,
-         'text' => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, vom 13.06.2025 07:00 bis 08.07.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1751986800
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
@@ -8575,7 +8564,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
        {
          'data' => '#: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-06-25
+#: last_checked: 2025-07-06 (mapillary)
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 ',
@@ -8649,7 +8638,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Trafficmeldungen scheinen ungenau zu sein
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: nächste Sperrung: mehrere mit "Termin folgt"
-#: last_checked: 2025-07-02 (Flemingstr.) vvv
+#: last_checked: 2025-07-08 (website) vvv
 #: check_frequency: 7d (website checks) vvv
 #: next_check: 2025-07-18 (Radickestr., ADAC-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025)
@@ -8878,7 +8867,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
          'data' => '#: XXX Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann.
 #: also_indoor: traffic (G)
 #: osm_watch: way id="1376570531" version="3"
-#: last_checked: 2025-06-25
+#: last_checked: 2025-07-08 (traffic)
 #: check_frequency: 14d (traffic)
 	2::inwork 8404,3648 8461,3410
 ',
@@ -9097,17 +9086,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
          'type' => 'handicap',
          'until' => 1753974000
        },
-       {
-         'data' => '#: next_check_id: ALEXANDRINEN-2025
-#: last_checked: 2025-06-07
-	q4::inwork; 10066,10071 10029,9989 10006,9942
-',
-         'from' => undef,
-         'id' => 4360,
-         'text' => 'Brachvogelstr.: Einbahnstraßenregelung, Richtung Süden gesperrt, keine Ausnahme für den Radverkehr',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (none)
 #: last_checked: 2025-06-17
@@ -9186,7 +9165,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'until' => 1761951540
        },
        {
-         'accept_multi_feature_distance' => 1500,
+         'accept_multi_feature_distance' => 2000,
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/massive-sturmschaden-tegeler-forst-bis-auf-weiteres-gesperrt/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lskrsuh6es25
 #: by: https://www.tagesspiegel.de/berlin/unwetter-in-berlin-tausende-baume-beschadigt--tegeler-forst-vorerst-gesperrt-13925098.html
@@ -9201,9 +9180,12 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.tagesspiegel.de/berlin/aufraumarbeiten-nach-unwettern-in-berlin-tegeler-und-spandauer-forst-bleiben-wochenlang-gesperrt-13935625.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1576243.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/unwetter-hinterlasst-grosse-verwustung-im-berliner-norden-bezirk-reinickendorf-zahlt-750-schadensmeldungen-13951765.html
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
+#: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-06 (research) vvv
-#: check_frequency: 28d vvv
-#: note: nördlicher Abschnitt
+#: check_frequency: 10d (indoor check) vvv
+#: next_check: 2025-08-04 (Pressemitteilung) vvv
+#: note: nördlicher Abschnitt (Tegeler Forst - Hermsdorf)
 Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1061,21970 1069,21985 1135,22069
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1135,22069 1245,22058 1527,22298 1622,22383
@@ -9220,31 +9202,36 @@ Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22
 (Rote Chaussee - Beyschlagtunnel)	2::temp 904,23964 875,23836 776,23745 711,23612 664,23416 656,23373 697,23257 695,23002 652,22855 667,22755 636,22658
 #: source_id[inactive]: bvg2024:124#HIM_FREETEXT_290864
 # REMOVED (möglicherweise wieder offen?) --- #: note: Unklar, ob die Ruppiner Chausse betroffen ist --- Ruppiner Chaussee	2::temp 1445,21216 1427,21237 1347,21428 1254,21718 1146,21901 1061,21970 919,22068 488,22275 455,22285 355,22344
-#: note: südlicher Abschnitt --- unklar, ob dieser auch betroffen ist
-(Waldkauzstr., Verlängerung)	2::temp -884,19726 -671,19408 -547,19282 -538,19236 -595,19146 -646,19028 -629,18977
-(Schwarzer Weg - Waldkauzstr., Verbindung)	2::temp -519,19233 -538,19236
+#: note: südlicher Abschnitt (Tegeler Forst - Tegelsee)
+# REMOVED (hier nicht (mehr?)) --- (Waldkauzstr., Verlängerung)	2::temp -884,19726 -671,19408 -547,19282 -538,19236 -595,19146 -646,19028 -629,18977
+# REMOVED (hier nicht (mehr?)) --- (Schwarzer Weg - Waldkauzstr., Verbindung)	2::temp -519,19233 -538,19236
 # REMOVED (Zugang zum Segel-Club möglich?) --- Schwarzer Weg (Tegel)	2::temp 1119,21012 958,21006 892,20989 817,20953 625,20738 605,20714
-#: note: Unklar: offiziell wohl nicht abgesperrt, aber man kann von Forstarbeitern abgewiesen werden
-Schwarzer Weg (Tegel)	2::temp 605,20714 511,20600 436,20558 240,20457 195,20405 97,20103 6,19817 -13,19739 -51,19654 -134,19600 -305,19507 -519,19233 -585,19132 -620,19063 -629,18977 -629,18866 -639,18796 -754,18644 -847,18577 -869,18526 -885,18446 -930,18337 -968,18301 -1082,18165
-(Schwarzer Weg - Jörsstr.)	2::temp -847,18577 -932,18558 -1124,18480 -1307,18408
-(Zufahrt ehemaliges Restaurant Toulouse)	2::temp 6,19817 72,19790
-(Zufahrt Villa Borsig)	2::temp 436,20558 426,20420 443,20357 430,20338
-(Uferweg am Tegeler See)	2::temp -984,18136 -934,18284 -930,18337
-(Uferweg am Tegeler See)	2::temp -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
-(Mühlenweg)	2::temp -2043,20968 -1895,20953 -1760,20985 -1590,20948 -1082,20996 -889,20979 -750,20878 -329,20685 -105,20611 65,20594 462,20694 605,20714
-(Försterweg)	2::temp -2043,20968 -2101,20891 -1811,20818 -1292,20572 -1243,20471 -1050,20281 -871,20225 -842,20200 -716,20060 -516,19798 -303,19740
-(Waldweg im Tegeler Forst)	2::temp -1527,18645 -671,19408 -303,19740 -183,19831 97,20103
-(Försterweg - Schwarzer Weg)	2::temp -183,19831 -135,19832 6,19817
+# REMOVED (hier nicht (mehr?)) --- #: note: Unklar: offiziell wohl nicht abgesperrt, aber man kann von Forstarbeitern abgewiesen werden --- Schwarzer Weg (Tegel)	2::temp 605,20714 511,20600 436,20558 240,20457 195,20405 97,20103 6,19817 -13,19739 -51,19654 -134,19600 -305,19507 -519,19233 -585,19132 -620,19063 -629,18977 -629,18866 -639,18796 -754,18644 -847,18577 -869,18526 -885,18446 -930,18337 -968,18301 -1082,18165
+# REMOVED (hier nicht (mehr?)) --- (Schwarzer Weg - Jörsstr.)	2::temp -847,18577 -932,18558 -1124,18480 -1307,18408
+# REMOVED (hier nicht (mehr?)) --- (Zufahrt ehemaliges Restaurant Toulouse)	2::temp 6,19817 72,19790
+# REMOVED (hier nicht (mehr?)) --- (Zufahrt Villa Borsig)	2::temp 436,20558 426,20420 443,20357 430,20338
+# REMOVED (hier nicht (mehr?)) --- (Uferweg am Tegeler See)	2::temp -984,18136 -934,18284 -930,18337
+# REMOVED (hier nicht (mehr?)) --- (Uferweg am Tegeler See)	2::temp -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
+(Mühlenweg)	2::temp -2043,20968 -1895,20953 -1760,20985 -1590,20948 -1082,20996 -889,20979 -750,20878 -329,20685
+# REMOVED (hier nicht (mehr?)) --- (Mühlenweg)	2::temp -329,20685 -105,20611 65,20594 462,20694 605,20714
+(Försterweg)	2::temp -2043,20968 -2101,20891 -1811,20818 -1292,20572 -1243,20471 -1050,20281 -871,20225 -842,20200
+# REMOVED (hier nicht (mehr?)) --- (Försterweg)	2::temp -842,20200 -716,20060 -516,19798 -303,19740
+# REMOVED (hier nicht (mehr?)) --- (Waldweg im Tegeler Forst)	2::temp -1527,18645 -671,19408 -303,19740 -183,19831 97,20103
+# REMOVED (hier nicht (mehr?)) --- (Försterweg - Schwarzer Weg)	2::temp -183,19831 -135,19832 6,19817
+	2::temp 644,24394 442,24479 350,24485 219,24419 162,24407 -59,24361 -250,24376 -340,24455 -399,24464 -479,24444 -595,24441 -667,24463 -822,24540
+(Karolinenstr. - Waidmannsluster Damm)	2::temp 1712,20907 1819,21116 1851,21328 1810,21363
+(Waidmannsluster Damm - Karolinenstr.)	2::temp 1942,21564 1928,21595 1859,21541 1843,21440 1810,21363 1613,21173
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13499 (Einwohneranfrage)
 #: note: auch Wege am Tegeler Fließ möglicherweise gesperrt
 Tegeler Fließ	2::temp 4222,22854 4166,22752 4117,22715 4101,22727 4022,22691 3947,22622 3907,22606 3879,22574 3831,22479 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
 Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 2686,21720 2615,21640 2518,21565 2420,21553 2371,21524 2352,21559 2253,21527 2166,21468 2074,21469 2004,21502 1942,21564
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4371,
-         'text' => 'Tegeler Forst: wegen Sturmschäden gesperrt',
+         'text' => 'Tegeler Forst: wegen Sturmschäden gesperrt, voraussichtlich bis zum 4.8.2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9253,13 +9240,16 @@ Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 296
          'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsvzp4wvrk2n (Hauptstraßen wieder offen)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/so-schlimm-war-es-noch-nie-dieser-stadtrat-warnt-noch-immer-vor-dem-berliner-waldbesuch-13967756.html (Schönwalder Allee bis min. 11.07.2025 gesperrt)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
+#: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: also_indoor: traffic (T,H,G)
 #: last_checked: 2025-07-04 (Tsp) vvv
-#: check_frequency: 7d vvv
+#: check_frequency: 10d (indoor check) vvv
+#: next_check: 2025-08-04 vvv
 Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 # REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
 # REMOVED (wieder offen) --- Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
@@ -9270,7 +9260,8 @@ Oberjägerweg	2::temp -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113
 # REMOVED (bei Mapillary keine Sperrung zu sehen) --- (Niederneuendorfer Allee - Pappelweg)	2::temp -2821,18620 -2870,18553 -2919,18506 -2965,18488 -2987,18438
 # REMOVED (laut Mapillary offen) --- (Mauerweg Spandau)	2::temp -2908,19715 -2966,19746 -3012,19757 -3161,19627
 #: note: bei Mapillary (2025-06-28) sind viele umgestürzte Bäume zu sehen
-(Mauerweg Forst Spandau)	2::temp -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7069,19436 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -7965,19069
+(Mauerweg Forst Spandau)	2::temp -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431
+# REMOVED (hier nicht (mehr?)) --- (Mauerweg Forst Spandau)	2::temp -7032,19431 -7069,19436 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -7965,19069
 (Um den Laßzinssee)	2::temp -6482,20783 -6442,20864 -6465,21060
 (Um den Laßzinssee)	2::temp -6044,20971 -5795,20965
 # REMOVED (laut Mapillary offen) --- Eiskellerweg	2::temp -6782,20818 -7102,20371 -7586,20088 -7593,19872 -7943,19710 -7980,19689 -8016,19641 -8018,19562 -7964,19490
@@ -9280,18 +9271,20 @@ Griesingerstr.	2::temp -6608,17562 -6610,17503 -6612,17487 -6595,17456
 An der Havel	2::temp -2791,20571 -2776,20334 -2756,20138 -2749,20057 -2731,19988 -2756,19958 -2786,19799 -2850,19756 -2922,19788 -2966,19746
 # REMOVED (laut Mapillary hier offen) --- Spandau - Schönwalde	2::temp -6782,20818 -6788,20819 -7014,20840
 Oberjägerweg	2::temp -4485,20420 -4053,20594
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4372,
-         'text' => 'Spandauer Forst: wegen Sturmschäden gesperrt',
+         'text' => 'Spandauer Forst: wegen Sturmschäden gesperrt, voraussichtlich bis zum 4.8.2025',
          'type' => 'gesperrt',
          'until' => undef
        },
        {
          'data' => '#: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025)
+#: note: mittlerweile beim rbb bis zum 08.08.2025 verlängert
 Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
@@ -9299,9 +9292,9 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 ',
          'from' => undef,
          'id' => 4373,
-         'text' => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 18.07.2025',
+         'text' => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 08.08.2025',
          'type' => 'gesperrt',
-         'until' => 1752854400
+         'until' => 1754668800
        },
        {
          'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025)
