@@ -487,7 +487,7 @@
 (defun bbbike-set-date-for-last-checked-any ()
   (interactive)
   (let* ((command `("perl" "-nle"
-		    "BEGIN { binmode STDOUT, qq{:encoding(utf-8)} } /^#:\\s+last_checked:.*?\\((.*?)\\)/ and $by{$1}++; END { my $i = 0; for my $by (sort { $by{$b}<=>$by{$a} } keys %by) { last if $i++>30; print $by } }"
+		    "BEGIN { binmode STDOUT, qq{:encoding(utf-8)} } /^#:\\s+last_checked:\\s*\\S+\\s+\\((.*?)\\)/ and $by{$1}++; END { my $i = 0; for my $by (sort { $by{$b}<=>$by{$a} } keys %by) { last if $i++>60; print $by } }"
 		    ,(concat (bbbike-datadir) "/temp_blockings/bbbike-temp-blockings.pl")
 		    ,@(directory-files (bbbike-datadir) t ".*-orig$")
 		    ))
