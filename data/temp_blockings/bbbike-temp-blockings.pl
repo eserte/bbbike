@@ -22386,7 +22386,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-07-05
+#: last_checked: 2025-07-09 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -45441,10 +45441,10 @@ EOF
 #: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027)
 #: osm_watch: way id="1083535036" version="11"
-#: osm_watch: way id="1119255054" version="8"
+#: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-06-30 (osm)
+#: last_checked: 2025-07-08 (osm)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -45455,18 +45455,19 @@ EOF
        text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Mitte oder sogar Ende 2025',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: FINOWKANAL-2025
 #: by: https://www.finowkanal.info/de/bautagebuch?date=20250117 (Bauarbeiten ... Schleusenpaket 1 ... voraussichtlich bis April 2026)
 #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
 #: note: laut berlin-usedom-radweginfo bis Ende 2024, mittlerweile bis Mitte 2025
 #: note: auf finowkanal.info kein Endedatum
-#: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025) Eröffnung Ende 2025
+#: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025) Eröffnung Ende 2025
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-06-10 (research)
+#: last_checked: 2025-07-08 (research)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -46471,7 +46472,7 @@ EOF
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: note: Aber eigentlich kann man die Fußgängerampel benutzen...
-#: last_checked: 2025-07-05 vvv
+#: last_checked: 2025-07-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 vvv
 #	q4::inwork; 8453,13611 8572,13671
@@ -47783,7 +47784,7 @@ EOF
        data  => <<EOF,
 #: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-07-05 (traffic)
+#: last_checked: 2025-07-09 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
@@ -47842,12 +47843,12 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: last_checked: 2025-07-07 vvv
+#: last_checked: 2025-07-09 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2025-07-11 (ADAC-Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2025-07-11 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
 Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -48580,6 +48581,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1576243.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/unwetter-hinterlasst-grosse-verwustung-im-berliner-norden-bezirk-reinickendorf-zahlt-750-schadensmeldungen-13951765.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1578727.php
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-06 (research) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -48774,6 +48776,65 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidzwcksbkmsr3hfcozkvrvb3a5s6kbpkezfvsnfxcuqb2ihl7wx4a@jpeg
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltf3zpknqs2c (auf 11.7.2025 verschoben)
 	q3::inwork; 23404,5325 23293,5289
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schleuse Heegermühle: Sperrung des Fuß- und Radwegs Treidelweg nördlich der Schleuse sowie der Straße Am Finowkanal, voraussichtlich bis Ende 2025',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: next_check_id: FINOWKANAL-2025
+#: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
+#: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025
+#: osm_watch: way id="996266699" version="2"
+#: last_checked: 2025-07-08 (research)
+	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
+EOF
+     },
+     { from  => 1751954400, # 2025-07-08 08:00
+       until => $isodate2epoch->("2026-07-01 17:00:00"), # $isodate2epoch->("2026-05-12 18:00:00"),
+       text  => 'Schiffbauerdamm: Bauarbeiten zwischen Luisenstr. und Albrechtstr., Sperrung der Fahrbahn, Richtung Westen ist der Gehweg für Radfahrer frei, bis Mitte 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltixdnvkc327
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibr2s6zbouiqugi4bnwqkq2j6nrofbapxucvw5b6of5s47jagljc4@jpeg
+#: source_id: adac:66742626 (bis voraussichtlich 12.05.2026)
+#: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
+#: osm_watch: note 4846255 1
+#: osm_watch: way id="195104960" version="18"
+#: also_indoor: traffic (T,H,G)
+#: last_checked: 2025-07-09 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-07-01 (rbb) vvv
+# REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
+Schiffbauerdamm, Richtung Osten	q4::inwork; 8752,12647 8870,12647 9025,12727
+Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,12727 8870,12647 8752,12647
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1752060967, # 2025-07-09 13:36
+       until => undef, # 1756738800, # 2025-09-01 17:00
+       text  => 'Klosterstr.: Bauarbeiten, Fahrbahn zwischen Stralauer Str. und Parochialstr. gesperrt, voraussichtlich bis Anfang September 2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (G,T,B)
+#: last_checked: 2025-07-09
+#: check_frequency: 45d
+#: next_check: 2025-09-01 (Halteverbotsschilder)
+	q4::inwork 10951,12249 10957,12401
+EOF
+     },
+     { from  => 1752012000, # 2025-07-09 00:00
+       until => 1759420800, # 2025-10-02 18:00
+       text  => 'Schaperstr.: Bauarbeiten, von Nürnberger Str. Richtung Joachimsthaler Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 02.10.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: adac:879720956 (bis voraussichtlich 02.10.2025)
+#: note: bei rbb bis 02.10.2025
+#: also_indoor: traffic (T)
+	q4::inwork; 5700,10226 5597,10299 5450,10338
 EOF
      },
     );

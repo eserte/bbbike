@@ -1193,6 +1193,8 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 #: by: https://www.tagesspiegel.de/berlin/bezirke/einbahnstrasse-wird-umgedreht-kein-durchgangsverkehr-mehr-am-berliner-bahnhof-lichterfelde-west-12765722.html (Umsetzung in der ersten Jahreshälfte 2025)
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article407857496/so-sollen-autos-in-lichterfelde-west-vergrault-werden.html (hier: Anfang 2025 (Stand Dez 2024))
 #: XXX wird die Einbahnstraßenregelung umgedreht, dann offen von Bahnhof zur Drakestr.?
+#: osm_watch: way id="65369044" version="15"
+#: osm_watch: note 4846294 1
 #: last_checked: 2025-05-24 (mapillary)
 #: next_check: 2025-06-30 (Tsp)
 Hans-Sachs-Str.	1 3141,4023 3214,4066
@@ -2257,6 +2259,25 @@ Mainzer Str.	1 14354,12012 14427,12197
 Kinzigstr.	1 14589,11975 14475,11778
 # 
 Weichselstr.	1 14888,11934 14926,12129
+#: note ^^^
+######################################################################
+#: note: Brüsseler Kiez vvv
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_22_1377_1468_online.pdf (Teileinziehung)
+#: note: Modalfilter, Verkehrsfläche in Höhe der Grünfläche nicht mehr für Autos befahrbar
+# REMOVED --- #: last_checked: 2025-05-23 (Amtsblatt)
+Brüsseler Str.	3 6539,15548 6690,15671 6802,15790
+Brüsseler Str.	3 6802,15790 6690,15671 6539,15548
+Brüsseler Str. -> Antwerpener Str.	3 6539,15548 6690,15671 6555,15827
+Antwerpener Str. -> Brüsseler Str.	3 6555,15827 6690,15671 6802,15790
+Brüsseler Str. -> Antwerpener Str.	3 6802,15790 6690,15671 6794,15553
+Antwerpener Str. -> Brüsseler Str.	3 6794,15553 6690,15671 6539,15548
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_22_1377_1468_online.pdf (Teileinziehung)
+#: note: zwei Diagonalfilter, Verkehrsfläche in Höhe der Grünfläche nicht mehr für Autos befahrbar
+# REMOVED --- #: last_checked: 2025-05-23 (Amtsblatt)
+Ostender Str.	3 6649,15427 6794,15553 6862,15615
+Ostender Str.	3 6862,15615 6794,15553 6649,15427
+# 
 #: note ^^^
 ######################################################################
 # 

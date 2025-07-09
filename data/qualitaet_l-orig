@@ -8186,6 +8186,11 @@ Kantstr. (Neuenhagen): mäßiges Kopfsteinpflaster	Q2 31471,12224 31580,11886
 Kantstr. (Neuenhagen): Asphalt	Q0 31580,11886 31669,11678
 #: by: baustellen-doku
 Tunnelweg: Asphalt	Q0 11384,-7058 11510,-7030 11572,-7008
+#: by: anonymous
+Friedrich-Steinwachs-Weg (Teltow): Verbundsteinpflaster	Q1 2148,-962 2153,-940 2160,-805
+#: by: Martina Kettlitz:
+#: note: "einige Fußgänger q1" ignoriert
+Wiesenstr. (Teltow): gutes Verbundsteinpflaster	Q1 3637,-1579 3479,-1493 3248,-1364 3064,-1203 2924,-1081
 ######################################################################
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -8863,9 +8868,9 @@ Geschwister-Scholl-Allee: Asphalt	Q0 -632,-172 -568,-18 -508,126
 #: corrected_by: mapillary (schlechtes Kopfsteinpflaster -> ...)
 Geschwister-Scholl-Allee: Asphalt	Q0 -508,126 -399,364
 #: add_fragezeichen: liegt im nördlichen Abschnitt der Geschwister-Scholl-Allee tatsächlich Kopfsteinpflaster? Wie schlecht ist das Pflaster? vvv
-#: XXX hier laut osm nur "sett"
+#: XXX hier laut osm nur "sett"; bei Mapillary sieht man Kopfsteinpflaster, aber die Qualität kann man nicht erkennen 
 Geschwister-Scholl-Allee: schlechtes Kopfsteinpflaster	Q3 -399,364 -313,571
-#: XXX hier laut osm tatsächlich "cobblestone"
+#: XXX hier laut osm tatsächlich "cobblestone"; bei Mapillary sieht man Kopfsteinpflaster, aber die Qualität kann man nicht erkennen 
 Geschwister-Scholl-Allee: schlechtes Kopfsteinpflaster	Q3 -313,571 -184,722 -119,800 -189,890
 #: add_fragezeichen ^^^
 #: by: ^^^
@@ -9504,7 +9509,7 @@ Börnicke - Wessow: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg exis
 Catholystr. (Erkner): Asphalt	Q0 34205,1672 34194,1520 34187,1425
 Catholystr. (Erkner): schlechtes Kopfsteinpflaster	Q3 34187,1425 34181,1349 34182,1314
 Erlenweg (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3+ 11,549 12,640 -27,702
-Medonweg (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3+ -27,702 -87,637
+Medonstr. (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3+ -27,702 -87,637
 Elbestr. (Vogelsdorf): Asphalt	Q0 33985,11787 34067,11751 34821,11357
 Am Panke-Park (Bernau): Asphalt	Q0 23647,31351 23665,31331 23639,31282 23651,31262 23702,31227 23713,31202 23702,31176 23713,31155 23734,31137 23768,31091 23782,31065 23807,31005 23833,30901 23838,30841 23821,30714 23797,30636 23744,30547 23704,30517 23707,30485
 Platanenallee (Röntgental): Asphalt	Q0 17733,27410 17491,27600

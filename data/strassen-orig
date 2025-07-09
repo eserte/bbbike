@@ -270,8 +270,10 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fast-vier-jahre-nach-dem-beschluss-umbenennung-der-mohrenstrasse-in-berlin-mitte-verzogert-sich-weiter-11863142.html
 #: by: https://berliner-abendblatt.de/berlin-news/umbenennung-mohrenstrasse-weiter-offen-warten-aufs-gericht-id257025
 #: by: https://entwicklungsstadt.de/mohrenstrasse-aktivisten-tauschen-schilder-aus-umbenennung-noch-nicht-rechtskraeftig/
+#: by: https://www.rbb24.de/panorama/beitrag/2025/07/berlin-mohrenstrasse-umbenennung-bezirk-mitte-rechtskraeftig.html
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1579051.php
 #: osm_watch[closed]: note 4168370 2
-#: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
+#: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str."; außerdem wird der U-Bahnhof umbenannt vvv
 #: priority: #A vvv
 #: last_checked: 2025-07-05 vvv
 #: check_frequency: 60d vvv
@@ -1894,17 +1896,17 @@ Invalidenstr.	H 7759,13246 7714,13223 7573,13149 7563,13143 7512,13115 7433,1307
 Minna-Cauer-Str.	HH 7901,13324 7895,13415 7907,13532 7930,13578 8019,13650
 Heidestr. (Moabit)	NN 8098,13419 8092,13467
 Heidestr. (Moabit)	N 8092,13467 8071,13521 8059,13551 8048,13578 8019,13650
-Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
+Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7775,14062 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
 (Heidestr. - Europaplatz Nord)	N 8071,13521 8010,13450
 # REMOVED (nicht mehr) --- #: note: blaues Straßenschild vvv
-Otto-Weidt-Platz	NN 7923,14142 7850,14100
+Otto-Weidt-Platz	NN 7918,14148 7843,14103
 #: historical_note: früher osm.highway: service; Einfahrt verboten, Anlieger frei; cat=N
-Otto-Weidt-Platz	NN 7850,14100 7778,14059
+Otto-Weidt-Platz	NN 7843,14103 7775,14062
 # REMOVED (nicht mehr) --- #: note ^^^
 Otto-Weidt-Platz	NN 7739,14119 7784,14147 7875,14204
 (nördlicher Otto-Weidt-Platz - Golda-Meir-Steg)	NN 7784,14147 7827,14152 7861,14133
-(Golda-Meir-Steg - südlicher Otto-Weidt-Platz)	NN 7861,14133 7818,14117 7778,14059
-(Golda-Meir-Steg - südlicher Otto-Weidt-Platz)	NN 7861,14133 7846,14110 7850,14100
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz)	NN 7861,14133 7818,14117 7775,14062
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz)	NN 7861,14133 7843,14103
 Golda-Meir-Steg	NN 7861,14133 7899,14157 7962,14198 7973,14195
 Golda-Meir-Steg	NN 7962,14198 7968,14202
 Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
@@ -1914,7 +1916,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
 #: osm_watch: way id="74868383" version="27"
-#: last_checked: 2025-04-16
+#: last_checked: 2025-07-09
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -3460,6 +3462,8 @@ Lianenweg	N 19703,1566 19927,1501 19955,1502
 Lehmfeldsteig	N 19564,1871 19602,1989
 Rudower Str. (Altglienicke)	H 18396,1990 18491,2128 18580,2126 18630,2117 18881,2062 18938,2054 18985,2047 19054,2033 19162,2005 19178,1999 19266,1968 19564,1871 19743,1804 19766,1796
 Semmelweisstr.	N 18700,2282 18741,2275 18847,2237 18922,2238 18965,2237 19019,2217 19198,2163 19244,2141 19602,1989 19803,1911
+#: note: südlicher Abschnitt als Privatweg gekennzeichnet (Betriebsweg für die Autobahn?)
+(Rudower Str. - Semmelweisstr.)	NN 18630,2117 18642,2154 18632,2240 18649,2298 18700,2282
 Besenbinderstr.	N 19803,1911 19885,1882 20064,1777
 Werderstr. (Altglienicke)	N 20064,1777 20028,1673
 Iselersteig	N 18847,2237 18852,2328
@@ -16407,7 +16411,7 @@ Bleicheroder Str.	N 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 
 #: XXX Wird dieser Weg zurückgebaut? Evtl. als "Ersatz" den nördlich verlaufenden Weg aufnehmen?
 #: osm_watch: way id="59204281" version="9"
 #: osm_watch: way id="881307384" version="3"
-#: last_checked: 2024-03-08 (Luftbilder)
+#: last_checked: 2025-03-04 (Luftbilder)
 #: check_frequency: 360d
 (Pasewalker Str. - Vesaliusstr.)	NN 11884,19169 11841,19188 11763,19191
 (Pasewalker Str. - Prenzlauer Promenade)	NN 11913,19144 11928,19133 11947,19161 11958,19158
@@ -16604,6 +16608,7 @@ Apostel-Paulus-Str.	N 6442,9068 6366,9056 6276,9042 6214,9003
 #: by: https://taz.de/Robert-Roessle-Strasse-in-Pankow/!6010065/
 #: by: https://www.berliner-zeitung.de/politik-gesellschaft/streit-um-eine-strasse-robert-roessle-held-der-medizin-oder-naziverbrecher-li.188749
 #: by: https://www.tagesspiegel.de/wegbereiter-des-nationalsozialismus-wann-wird-die-rossle-strasse-in-berlin-endlich-umbenannt-13863103.html (weiterhin in Prüfung)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/wegbereiter-des-nationalsozialismus-stoppt-eine-firma-per-klage-die-umbenennung-der-rossle-strasse-in-berlin-13982222.html
 #: XXX mögliche Umbenennung der Straße (z.B. nach Cécile Vogt)
 #: also_indoor: search Robert-Rössle-Straße
 #: osm_watch: way id="10951433" version="27"
@@ -17171,9 +17176,9 @@ Am Hamburger Bahnhof	N 8025,13835 7997,13892
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7769,14364 7746,14401 7705,14383
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widmung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_04_0705_0832_online.pdf (Ergänzung der Widmung)
-(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 8295,13531 8290,13538 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923 8010,14014 7965,14081 7923,14142
+(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 8295,13531 8290,13538 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923 8010,14014 7965,14081 7918,14148
 #: by: osm
-(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7923,14142 7912,14160 7875,14204
+(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7918,14148 7909,14156 7875,14204
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7875,14204 7830,14268 7797,14317
 (Uferweg - Hedwig-Porschütz-Str.)	NN 7797,14317 7769,14300
 Promenade am Berlin-Spandauer Schiffahrtskanal	NN 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185 7973,14195 7968,14202 7804,14445 7787,14473 7753,14528 7733,14570

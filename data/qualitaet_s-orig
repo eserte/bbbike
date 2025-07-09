@@ -505,9 +505,9 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20241203-mobilitaetsrat-mitte-protokoll-barrierefrei-entwurf.pdf (Erwähnung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2025-06-11 (mapillary) vvv
+#: last_checked: 2025-07-09 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernen des Projekts) vvv
+#: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
 #: osm_watch: way id="169459736" version="17"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 #: osm_watch: way id="25278674" version="26"
@@ -1139,9 +1139,8 @@ Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870
 Lynarstr.: Asphalt	Q0 7259,14870 7409,14954
 # REMOVED --- #: next_check_id: LYNAR-2022 --- # REMOVED (noch nicht) --- #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert --- #: XXX Es wird noch immer längs geparkt, wann wird das Senkrechtparken angeordnet? --- #: osm_watch: way id="717490209" version="23" --- #: last_checked: 2024-11-21 --- #: check_frequency: 45d --- #: next_check: 2024-12-31 --- Lynarstr.: Kopfsteinpflaster	Q2+; 7409,14954 7259,14870
 #: by: https://brunnenmagazin.de/kopfsteinpflaster-lynarstrasse/ (Pflaster wurde geschliffen)
-#: osm_watch: way id="220647519" version="33"
-#: XXX Ist das Kopfsteinpflaster nun besser befahrbar? bei osm nun intermediate, hier erstmal von Q2 auf Q2+ hochgestuft
-Lynarstr.: Kopfsteinpflaster	Q2+ 7409,14954 7461,14986
+#: historical_note: vor dem Abschleifen im Juni/Juli 2025 Kopfsteinpflaster, Q2
+Lynarstr.: abgefrästes Kopfsteinpflaster	Q1- 7409,14954 7461,14986
 #: historical_note: früher Kopfsteinpflaster, Q2
 #: note: Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
 Lynarstr.: Asphalt	Q0 7461,14986 7624,15083 7694,15125
@@ -12785,8 +12784,8 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q2- 13953,9372 13923,9405
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8151,13697 8169,13705
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8025,13835 8086,13862
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 8295,13531 8290,13538 8224,13634
-(Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923 8010,14014 7965,14081 7923,14142
-(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 7923,14142 7912,14160 7875,14204
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923 8010,14014 7965,14081 7918,14148
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 7918,14148 7909,14156 7875,14204
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7875,14204 7830,14268 7797,14317
 (Uferweg - Hedwig-Porschütz-Str.): glatt gepflastert	Q2+ 7797,14317 7769,14300
 (Habichtshorst - Schmetterlingswiesen): Betonplatten	Q0 21592,10656 21674,10701
@@ -13406,8 +13405,8 @@ Bergiusstr. - Grenzallee: asphaltiert	Q0 14141,6623 14147,6652 14187,6704 14179,
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18965,11692 18984,11719
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7739,14119 7784,14147 7875,14204
 #: historical_note: bis Juni 2025 provisorisch asphaltiert (Asphalt, Q0)
-Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7778,14059 7850,14100
-Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7850,14100 7923,14142
+Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7775,14062 7843,14103
+Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7843,14103 7918,14148
 Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,12181 24554,12100
@@ -13554,8 +13553,8 @@ Golda-Meir-Steg: glatter Belag	Q0 7899,14157 7962,14198
 Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7973,14195
 Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7968,14202
 #: historical_note: früher (bis Ende 2024) war die Wegführung etwas anders und der Weg asphaltiert
-(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Kleinsteinpflaster	Q1 7861,14133 7818,14117 7778,14059
-(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Kleinsteinpflaster	Q1 7861,14133 7846,14110 7850,14100
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Kleinsteinpflaster	Q1 7861,14133 7818,14117 7775,14062
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Kleinsteinpflaster	Q1 7861,14133 7843,14103
 (Gewerbegebiet Glienicker Weg): Asphalt	Q0 20839,3163 20919,3082 21068,2926
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): wassergebundene Decke	Q1- 21440,300 21435,323
 Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
@@ -14204,6 +14203,9 @@ Gärtnereiring: schlechtes Kopfsteinpflaster	Q3 -7236,12896 -7345,12930
 (Gärtnereiring - Bergstr.): unbefestigt	Q2 -7317,13020 -7336,13023
 # 
 (Am Spektesee, Parkplatz): Asphalt	Q0 -6054,15399 -6116,15407
+# 
+(Rudower Str. - Semmelweisstr.): Verbundsteinpflaster	Q1 18630,2117 18642,2154 18632,2240
+(Rudower Str. - Semmelweisstr.): wassergebundene Decke	Q1 18632,2240 18649,2298 18700,2282
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 

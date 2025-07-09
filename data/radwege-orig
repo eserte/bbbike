@@ -1365,9 +1365,9 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17
 	RW2;RW1 12061,16091 12075,16144 12090,16199
 # REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8071,13521 8059,13551 8048,13578 8019,13650
 # REMOVED --- #: next_check_id: HEIDESTR-2016 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv --- #: source_id: IM_020408 vvv --- #: source_id: IM_021506 vvv --- #: source_id: 2147339530 vvv --- #: last_checked: 2016-07-11 vvv --- #: check_frequency: 7d vvv --- #: XXX nach dem Ende der Bauarbeiten vermutlich Radspuren:
-	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325
+	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7775,14062 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325
 Fahrradschleuse	RW3; 7612,14325 7566,14404
-	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7739,14119 7778,14059 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
+	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7739,14119 7775,14062 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
 	RW3;RW3 7733,14570 7711,14548 7609,14447 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7733,14570
 Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
@@ -1675,6 +1675,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: source_id: viz2021:13.450139,52.522818,16.09.2024,08:00 (bis 30.09.2027)
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
+#: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
 #: last_checked: 2025-06-14 vvv
 #: check_frequency: 30d vvv
@@ -1693,9 +1694,10 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
+#: osm_watch: way id="823635969" version="23"
 #: osm_watch: way id="4615746" version="49"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-06-14 vvv
+#: last_checked: 2025-07-04 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -2218,7 +2220,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-05-16 vvv
+#: last_checked: 2025-07-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2242,7 +2244,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur oder Busspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="26"
-#: last_checked: 2025-04-29
+#: last_checked: 2025-07-09
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 # REMOVED (bis etwa Herbst/Winter 2024) --- provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -6582,7 +6584,7 @@ asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,53
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/verkehrsloesung-schoeneweide (Einbahnstraße für MIV bis voraussichtlich März 2025) (mittlerweile bis Ende Mai 2025) (mittlerweile bis Ende Juli 2025)
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-sterndamm-bleibt-auf-unbestimmte-zeit-gesperrt-li.2293446 (könnte bis 2026 dauern)
 #: XXX wird vermutlich teilweise als asphaltierter Radweg ausgeführt werden
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-08 (krickstadt)
 #: check_frequency: 30d
 #: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
 provisorische Radspur	RW4; 17886,5587 17822,5524 17765,5469 17754,5460 17736,5441
@@ -6666,8 +6668,8 @@ Gehwegplatten	RW1; 620,12144 610,12100
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
-#: osm_watch: way id="153370345" version="21"
-#: osm_watch: way id="153373877" version="29"
+#: osm_watch: way id="153370345" version="22"
+#: osm_watch: way id="153373877" version="30"
 	RW3; 6826,11479 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: die Rechtsabbieger werden an der Ampel vorbei geführt
 Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigradweg	RW3; 6168,11042 6145,10975
@@ -6680,7 +6682,7 @@ Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigr
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
 #: osm_watch: way id="153370344" version="37"
-#: osm_watch: way id="153373879" version="28"
+#: osm_watch: way id="153373879" version="29"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6826,11479
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^

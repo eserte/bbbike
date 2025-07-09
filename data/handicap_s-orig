@@ -40,10 +40,13 @@ Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569
 #: last_checked: 2025-06-14 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
+#: osm_watch: way id="1083527067" version="6"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027)
+#: osm_watch: way id="182614432" version="20"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
+#: osm_watch: way id="114684413" version="23"
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
 #: next_check ^^^
 #: last_checked ^^^
@@ -55,9 +58,9 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="17"
-#: osm_watch: way id="1072662717" version="20"
-#: last_checked: 2025-07-08
+#: osm_watch: way id="1072662716" version="18"
+#: osm_watch: way id="1072662717" version="21"
+#: last_checked: 2025-07-09 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -357,14 +360,14 @@ Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="3"
-#: last_checked: 2025-06-08
+#: last_checked: 2025-07-09
 #: check_frequency: 150d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2025-03-04 (orthofotos)
+#: last_checked: 2025-07-09
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -497,7 +500,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: note: laut rbb Bauarbeiten bis 2028-03-31
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-07-04
+#: last_checked: 2025-07-09
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (rbb)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -577,7 +580,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn für die Straßensanierung 2026 (!))
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-06-13 vvv
+#: last_checked: 2025-07-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -803,7 +806,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: note 3913793 10
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2025-04-16
+#: last_checked: 2025-07-09
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (caimmo website)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -2997,6 +3000,7 @@ Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: by: https://www.die-hellersdorfer.berlin/2024/03/22/eigentumswohnungen-in-kaulsdorf-nord-vor-der-fertigstellung/ (Fertigstellung am 30.06.2024)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/vielfaeltige-probleme-beim-bauprojekt-lion_a411971
 #: by: https://portfolio.bestplace-immobilien.de/lion/ (Seite existiert nicht mehr, 500er)
+#: by: https://entwicklungsstadt.de/lion-feuchtwanger-61-so-sieht-der-neue-wohnkomplex-in-kaulsdorf-aus/
 #: note: gemeinsamer Geh- und Radweg
 #: XXX_prog BS am nördlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
@@ -3728,7 +3732,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-07-08
+#: last_checked: 2025-07-09
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-
@@ -4654,9 +4658,9 @@ Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,1172
 Otto-Weidt-Platz: einige Fußgänger	q1 7739,14119 7784,14147 7875,14204
 # REMOVED --- #: next_check_id: EUROPACITY-2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016 --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_14_1731_1830_online.pdf (Benennung) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.693755.php (geplante Fertigstellung Ende 2019/Anfang 2020) --- #: by: http://www.berliner-woche.de/moabit/bauen/der-otto-weidt-platz-ein-kleines-wunder-initiative-der-ns-zeitzeugin-inge-deutschkron-d157629.html --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628501&postcount=203 (erste Teile im Mai 2020 fertig) --- #: by: https://www.berliner-woche.de/moabit/c-bauen/hamburger-investor-baut-bueroturm-in-der-europacity_a247135 (Hochhaus wird im zweiten Halbjahr 2021 fertiggestellt) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_19_1681_1744_online.pdf (Straßenlandwidmung) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php (Bauarbeiten bis Ende 2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_27_1633_1692_online.pdf (Straßenlandwidmung) --- #: XXX Treppe zum Golda-Meir-Steg kann benutzt werden, wenn die Bauzäune weggeschoben sind --- #: XXX Einfahrt verboten, Anlieger frei -> als osm.highway: service taggen, wenn's fertig ist --- #: osm_watch: way id="642581102" version="5" --- #: last_checked: 2022-08-12 (architektur-urbanistik) --- #: check_frequency: 60d --- #: next_check: 2022-12-31
 #: note: Fußgängerzone, Radfahrer frei
-Otto-Weidt-Platz: einige Fußgänger	q1 7923,14142 7850,14100 7778,14059
+Otto-Weidt-Platz: einige Fußgänger	q1 7918,14148 7843,14103 7775,14062
 #: note: Fußgängerzone, Radfahrer frei
-(Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fußgänger	q1 7923,14142 7912,14160 7875,14204
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fußgänger	q1 7918,14148 7909,14156 7875,14204
 Teltowkanaluferweg: gemeinsamer Geh- und Radweg	q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225 9171,5263 9196,5272
 #: XXX_prog BS an der General-Woyna-Str., etwa 20m südlich ist eine Bordsteinabsenkung
 Humannstr. - General-Woyna-Str.: Fußgänger, Bordstein	q3 4324,18523 4340,18497
@@ -4791,8 +4795,8 @@ Hans-Baluschek-Park: enge Rampe, Fußgänger	q2 7252,6080 7278,6101
 #: note: Radfahrer sollen absteigen
 (nördlicher Otto-Weidt-Platz - Golda-Meir-Steg): Fußgänger	q2 7784,14147 7827,14152 7861,14133
 Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
-(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Fußgänger	q2 7861,14133 7818,14117 7778,14059
-(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Fußgänger	q2 7861,14133 7846,14110 7850,14100
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Fußgänger	q2 7861,14133 7818,14117 7775,14062
+(Golda-Meir-Steg - südlicher Otto-Weidt-Platz): Fußgänger	q2 7861,14133 7843,14103
 (Heidestr./Kieler Brücke - George-Stephenson-Str.): Fußgänger	q2 7612,14325 7529,14274
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): schmal, einige Fußgänger	q2 21440,300 21435,323
 #: note: Fußgängerzone, Radfahrer frei
@@ -5437,6 +5441,9 @@ Jaczostr.: Fußgänger	q2 -4751,11262 -4798,11231
 Gruberzeile - Weinmeisterhornweg: einige Fußgänger	q2 -5735,11793 -5584,11706 -5590,11651 -5623,11552
 # 
 (Gärtnereiring - Bergstr.): schmaler Trampelpfad, Bordstein	q3 -7317,13020 -7336,13023
+# 
+#: historical_note: früher Grünanlage, aber Radfahren erlaubt
+(Rudower Str. - Semmelweisstr.): Radfahren verboten	q4 18630,2117 18642,2154 18632,2240 18649,2298 18700,2282
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
