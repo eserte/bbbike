@@ -8,8 +8,7 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -35,7 +34,9 @@ use File::Spec qw();
 use Getopt::Long;
 use Tk;
 use Tk::Balloon;
+BEGIN { if ($] >= 5.041 && $Tk::VERSION < 804.037) { $^W = 0 }} # cease warning: Possible precedence problem between ! and numeric eq (==)
 use Tk::Pane;
+BEGIN { if ($] >= 5.041 && $Tk::VERSION < 804.036) { $^W = 1 }}
 
 BEGIN {
     eval q{ use BBBikeYAML qw(LoadFile); 1 } ||
