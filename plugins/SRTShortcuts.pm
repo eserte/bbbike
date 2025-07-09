@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.23;
+$VERSION = 2.24;
 
 use File::Glob qw(bsd_glob);
 
@@ -850,6 +850,16 @@ EOF
 		],
 		[Button => $do_compound->("openrouteservice"),
 		 -command => sub { current_search_in_openrouteservice_org() },
+		],
+		'-',
+		[Button => $do_compound->("GraphHopper (via osm)"),
+		 -command => sub { current_search_in_osm('graphhopper_bicycle') },
+		],
+		[Button => $do_compound->("OSRM (via osm)"),
+		 -command => sub { current_search_in_osm('fossgis_osrm_bicycle') },
+		],
+		[Button => $do_compound->("Valhalla (via osm)"),
+		 -command => sub { current_search_in_osm('fossgis_valhalla_bicycle') },
 		],
 	       ]
 	      ],
@@ -2104,6 +2114,42 @@ sub current_search_in_brouter {
 
     my $map_style = 'osm-mapnik-german_style,terrarium-hillshading';
     my $url = sprintf "https://brouter.de/brouter-web/#map=%s/%s&lonlats=%s", $map_pos, $map_style, join(';', @coords);
+
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_search_in_osm {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+    if (@main::search_route_points != 2) {
+	main::status_message("Note: OSM-based routing engine do not support via points. Using only start and goal.", "infodlg");
+    }
+
+    my $routing_engine = shift // die "Please specify routing engine";
+
+    my @coords;
+    my $map_pos;
+    {
+	require Karte::Polar;
+	my $o = $Karte::Polar::obj;
+	for my $c (@main::search_route_points[0, -1]) { # use only start and goal
+	    my($lon,$lat) = $o->trim_accuracy($o->standard2map(split /,/, $c->[0]));
+	    push @coords, "$lat,$lon";
+	    if (!$map_pos) {
+		$map_pos = sprintf "%d/%f/%f", 16, $lat, $lon; # XXX zoom hardcoded for now
+	    }
+	}
+    }
+
+    # Sample URLs
+    # https://www.openstreetmap.org/directions?engine=graphhopper_bicycle&route=52.4535%2C13.51833%3B52.45277%2C13.50855#map=17/52.454614/13.513436&layers=N
+    # https://www.openstreetmap.org/directions?engine=fossgis_osrm_bicycle&route=52.4535%2C13.51833%3B52.45277%2C13.50855#map=17/52.453881/13.513436&layers=N
+    # https://www.openstreetmap.org/directions?engine=fossgis_valhalla_bicycle&route=52.4535%2C13.51833%3B52.45277%2C13.50855#map=16/52.45664/13.50837&layers=N
+
+    my $url = sprintf "https://www.openstreetmap.org/directions?engine=%s&route=%s#map=%s&layers=YN", $routing_engine, join(';', @coords), $map_pos;
 
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
