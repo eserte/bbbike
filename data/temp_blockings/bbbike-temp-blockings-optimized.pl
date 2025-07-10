@@ -500,7 +500,42 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2023/07/rave-the-planet-parade/
+#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
+#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-300-000-menschen-laut-polizei-angemeldet-id260300
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1823248945088270542
+#: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-rave-the-planet-auf-der-strasse-des-17-juni-in-tiergarten/
+#: by: https://www.ravetheplanet.com/demoroute-2024/
+#: by: https://www.tagesspiegel.de/berlin/anreise-programm-line-up-die-wichtigsten-fragen-und-antworten-zu-rave-the-planet-in-berlin-13957109.html
+#: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
+#: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
+#: source_id: viz2021:13.349991,52.514511,17.08.2024,09:00 (bis 18.08.2024) (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,17.08.2024,21:00 (bis 18.08.2024) (inaktiv)
+#: source_id: viz2021:13.35107,52.51429,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
+#: source_id: viz2021:13.370518,52.51725,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
+#: note: Sperrung des Pariser Platzes auf Webcam gesehen (2023)
+#: note: am Samstag weitergehende Sperrungen: alle Straßen Richtung Großer Stern, John-Foster-Dulles-Allee/Scheidemannstraße, Ebertstraße, Behrenstr., Hannah-Ahrendt-Straße (nicht eingetragen)
+Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 8119,12414 8055,12186 8049,12140
+	3 8049,12140 8055,12186 8119,12414
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+	3 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+Großer Stern	2::temp 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031
+',
+         'from' => 1752184800,
+         'id' => 536,
+         'text' => 'Straße des 17. Juni: Veranstaltung (Rave the planet), Straße gesperrt, am 12.07.2025',
+         'type' => 'gesperrt',
+         'until' => 1752393600
+       },
        undef,
        undef,
        undef,
@@ -7362,7 +7397,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-08 vvv
+#: last_checked: 2025-07-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8317,6 +8352,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
        {
          'data' => '#: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (Gesamtdauer der Arbeiten bis Mitte 2027)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22951.pdf (SEV wird ab Dezember 2025 wieder über den Schloßplatz geführt)
 #: source_id: bvg2024:162#f0f63843-db69-4d37-8f71-963e4e85cebf (kein Endedatum)
 #: source_id: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
@@ -8647,7 +8683,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_290898
-#: source_id[inactive]: bvg2024:164#HIM_FREETEXT_290897
+#: source_id: bvg2024:164#HIM_FREETEXT_290897
 #: source_id: adac:210225916 (bis 18.07.2025)
 #: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n

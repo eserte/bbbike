@@ -853,10 +853,12 @@ Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 
 	RW1; 4016,17918 3930,17923
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2025-06-06 (okas) vvv
-#: check_frequency: 360d vvv
+#: last_checked: 2025-07-01 (luftbildsuche) vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: check_frequency: 360d vvv
 #: next_check: 2026-10-01 vvv
-	RW8; 3930,17923 3833,17929 3706,17931 3628,17935 3570,17938
+#: XXX zwischenzeitlich RW8;
+	RW; 3930,17923 3833,17929 3706,17931 3628,17935 3570,17938
 unebenes Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3570,17938 3429,17987 3319,18043
 teilweise unebene Gehwegplatten, überwiegend mit Bord gegen Gehweg	RW2; 3319,18043 3213,18115 3047,18398 3008,18464 2947,18570 2867,18736 2821,18831 2690,19099 2621,19241 2568,19345
 Verbundsteinpflaster	RW2; 2568,19345 2477,19520 2436,19606 2394,19697 2268,19919
@@ -883,7 +885,8 @@ Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3319,18043 3429,17987 3570,17938
 #: XXX früher: asphaltiert	RW2; 3570,17938 3628,17935
 	RW2; 3570,17938 3628,17935
 #: XXX früher: Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3628,17935 3706,17931 3833,17929 3930,17923
-	RW2; 3628,17935 3706,17931 3833,17929 3930,17923
+#: XXX zwischenzeitlich	RW2; 3628,17935 3706,17931 3833,17929 3930,17923
+provisorische Radspur	RW4; 3628,17935 3706,17931 3833,17929 3930,17923
 Verbundsteinpflaster	RW2; 3930,17923 4016,17918
 #: next_check ^^^
 #: check_frequency ^^^

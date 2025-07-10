@@ -4146,7 +4146,7 @@ Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 172
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-marzahn-hellersdorf.42/page-7#post-23307
 #: osm_watch: way id="1306238147" version="2"
 #: osm_watch: way id="25795669" version="13"
-#: last_checked: 2025-03-12
+#: last_checked: 2025-07-01 (luftbildsuche)
 #: check_frequency: 180d
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 # 
@@ -4235,7 +4235,7 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg; mittlerweile (2024-12-13) ist die Straße kaum noch erkennbar
 #: priority: #C
-#: last_checked: 2025-03-16
+#: last_checked: 2025-07-01 (luftbildsuche)
 #: check_frequency: 180d
 Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
@@ -4619,15 +4619,19 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #
 #: next_check_id: U6-2022
+#: XXX Ist hier noch immer gesperrt?
 #: last_checked: 2025-06-06 (okas)
 #: check_frequency: 120d
-#: next_check: 2026-10-01
+# REMOVED --- #: next_check: 2026-10-01
+#: next_check: 2025-07-01
 Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 # 
 #: next_check_id: U6-2022
+#: XXX Ist hier noch immer eine Einbahnstraße?
 #: last_checked: 2025-06-01
 #: check_frequency: 120d
-#: next_check: 2026-10-01
+# REMOVED --- #: next_check: 2026-10-01
+#: next_check: 2025-07-01
 Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 # 
 # 

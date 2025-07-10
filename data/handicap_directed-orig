@@ -471,17 +471,17 @@ Landsberger Allee	DH:t=60 19205,14980 19196,14976 19200,14963
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: U6-2022
-#: osm_watch: note 4394105 3
-#: note: Existenz eines Zweirichtungsradwegs am 18.3.2023 bestätigt; es wird noch zu einer Umstellung der Verkehrsführung kommen (Süd- statt Nordseite)? <- das ist passiert
-#: last_checked: 2025-06-06 (okas) vvv
-#: check_frequency: 120d vvv
-#: next_check: 2026-10-01 vvv
-Scharnweberstr.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 3930,17923 3833,17929
-Seidelstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 3628,17935 3570,17938 3429,17987
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: U6-2022
+# REMOVED --- #: osm_watch: note 4394105 3
+# REMOVED --- #: note: Existenz eines Zweirichtungsradwegs am 18.3.2023 bestätigt; es wird noch zu einer Umstellung der Verkehrsführung kommen (Süd- statt Nordseite)? <- das ist passiert
+# REMOVED --- #: last_checked: 2025-06-06 (okas) vvv
+# REMOVED --- #: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2026-10-01 vvv
+# REMOVED --- Scharnweberstr.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 3930,17923 3833,17929
+# REMOVED --- Seidelstr.: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=20 3628,17935 3570,17938 3429,17987
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED (vorfristig beendet?) --- #: by: https://nitter.cz/VIZ_Berlin/status/1642739953556918272#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqNEg1RVd3QUExeEI0LmpwZw== --- #: source_id: viz2021:13.517346,52.535399,03.04.2023,06:00 (bis 21.4.2023) (bis 28.4.2023) (inaktiv) vvv --- #: valid: -20230428 vvv --- Rhinstr.: Umwege wegen Gleisbauarbeiten	DH:len=220:h=q2,220 18141,14363 18057,14549 17991,14684 --- Landsberger Allee -> Rhinstr.: Umwege wegen Gleisbauarbeiten	DH:len=220:h=q2,220 17848,14523 18057,14549 17991,14684 --- Treffurter Str. -> Rhinstr./Landsberger Allee: Umwege wegen Gleisbauarbeiten	DH:len=110:h=q2,160 18119,14599 18057,14549 --- Rhinstr./Landsberger Allee -> Treffurter Str.: Umwege wegen Gleisbauarbeiten	DH:len=110:h=q2,160 18057,14549 18119,14599 --- #: valid ^^^ --- #: source_id ^^^
 # REMOVED --- #: next_check_id: TEMPELHOFERWEG-2023 --- #: by: https://viz.berlin.de/2023/01/gradestr-rohrbruch/ --- #: by: https://berliner-abendblatt.de/2023/01/17/verkehrschaos-in-britz-auffahrt-zur-a100-wochenlang-gesperrt/ --- #: by: https://berliner-abendblatt.de/2023/01/18/gradestrasse-so-geht-es-an-der-chaos-kreuzung-weiter/ --- #: by: https://nitter.cz/VIZ_Berlin/status/1615670148932816901#m --- #: by: https://nitter.cz/pic/orig/media%2FFmwDTsQX0AAX3cL.jpg --- #: by: https://nitter.cz/pic/orig/media%2FFmwDTrpX0AM16y_.jpg --- #: by: https://nitter.cz/pic/orig/media%2FFmwDTq6XoAAq6Gr.jpg --- #: by: https://nitter.it/pic/orig/media%2FFmwDINLWYAEJjDv.jpg --- #: by: https://berliner-abendblatt.de/kiez-news/neukolln/gradestrasse-vollsperrung-bis-ende-mai-id216562 --- #: by: https://nitter.net/VIZ_Berlin/status/1693887479609233881 (bis 25.8.2023) --- #: source_id: viz2021:13.418865,52.452027,14.02.2023,15:00 (damit verbundene Baustelle an der A100-Auffahrt) (bis 10.03.2023) (inaktiv) --- #: source_id: viz2021:13.43298,52.45242,16.01.2023,15:34 (bis 03.04.2023) (inaktiv) --- #: source_id: viz2021:13.416363,52.451543,16.01.2023,14:00 (damit verbundene Baustelle an der A100-Auffahrt) (inaktiv) (bis 24.2.2023) (inaktiv) --- #: source_id: viz2021:13.433049,52.452486,13.01.2023,02:50 (bis 14.4.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 29.2.2024) (bis 25.8.2023) vvv --- #: source_id[inactive]: bvg2021:170#BVG315316_0 vvv --- #: last_checked: 2023-08-23 (baldige Freigabe wahrscheinlich) vvv --- #: next_check: 2023-08-25 vvv --- #: valid: -20230825 vvv --- Tempelhofer Weg: Umweg, Bordsteine	DH:len=50:h=q3,50:kerb_down:kerb_up 12626,5057 12507,5228 12214,5554 --- Tempelhofer Weg -> Gradestr.: Umweg, Bordsteine	DH:len=50:h=q3,50:kerb_down:kerb_up 12626,5057 12507,5228 12336,5219 --- Gradestr.: vermuteter Umweg	DH:len=50:h=q3,50 12336,5219 12507,5228 12582,5232 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id[expired] ^^^ --- #: source_id ^^^
