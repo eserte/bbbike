@@ -64,14 +64,14 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 #: valid: -20250716
 Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
 # 
-#: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025) (bis 24.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lnmh7lfw4k2j
-#: next_check: 2025-07-11 vvv
-#: valid: -20250711 vvv
-Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
-Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 17037,4794
-#: valid ^^^
-#: next_check ^^^
+# REMOVED (bei rbb entfernt) --- #: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025) (bis 24.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lnmh7lfw4k2j
+# REMOVED --- #: next_check: 2025-07-11 vvv
+# REMOVED --- #: valid: -20250711 vvv
+# REMOVED --- Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
+# REMOVED --- Königsheideweg: Gegenverkehrsregelung	X::inwork::alternating 17037,4794
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
 # 
 #: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...) (bis 03.07.2025 + ...) (bis 16.08.2025 + ...)
 #: source_id: viz2021:13.26522,52.45642,15.05.2025,15:55 (bis 04.06.2025) (inaktiv)
@@ -87,8 +87,9 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 #: source_id: viz2021:13.499675,52.536712,18.03.2025,07:00 (bis 30.05.2025) (bis 06.06.2025) (bis 03.07.2025) (bis 11.07.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901876221358625089
 #: by: https://pbs.twimg.com/media/GmQgEbLXAAIO1_l?format=jpg&name=4096x4096 (außerdem Einbahnstraßenregelung in der Heiligenstadter Str.)
-#: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
-#: valid: -20250711
+#: note: bei rbb bis 31.07.2025 verlängert
+#: next_check: 2025-07-31 (rbb-Verkehrsmeldung)
+#: valid: -20250731
 Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alternating 16839,14676
 # 
 # REMOVED --- #: source_id: viz2021:13.407782,52.51266,27.01.2025,10:30 (bis 31.03.2025) (bis 22.04.2025) (bis 14.05.2025) (bis 20.05.2025) (bis 23.06.2025)
@@ -179,14 +180,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # 
 # REMOVED (-> permanent) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: last_checked: 2024-07-17 --- #: next_check: 2024-08-17 --- Sterndamm/Schöneweide: provisorische Ampel	F::inwork 17754,5460
 # REMOVED (nun abgebaut) --- #: by: https://www.bahninfo-forum.de/read.php?9,800762,801325#msg-801325 --- #: last_checked: 2024-08-27 --- Danziger Str./Hans-Otto-Str.: provisorische Ampel	X::inwork 12722,14232
-# 
-#: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2025-06-12
-#: check_frequency: 45d
-#: next_check: 2025-07-31 (VIZ-Verkehrsmeldung)
-# REMOVED (evtl. bleibt die Ampel bis zum Ende der Einbahnstraßenregelung in der Karl-Marx-Str. bestehen) --- #: valid: -20250430
-#: valid: -20250731
-Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
+# REMOVED (abgebaut) --- #: next_check_id: KARLMARXSTR-2018 --- #: last_checked: 2025-06-12 --- #: check_frequency: 45d --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) --- # REMOVED (evtl. bleibt die Ampel bis zum Ende der Einbahnstraßenregelung in der Karl-Marx-Str. bestehen) --- #: valid: -20250430 --- #: valid: -20250731 --- Anzengruberstr./Donaustr.: Bauampel	X::inwork 12856,8344
 # 
 # REMOVED (bei mapillary keine Gegenverkehrsregelung mit Ampel zu sehen) --- #: source_id: viz2021:13.353581,52.617702,28.05.2024,13:00 (bis 21.06.2024) (bis 19.07.2024)
 # REMOVED --- #: source_id[inactive]: bvg2024:222#HIM_FREETEXT_224258

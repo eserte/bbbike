@@ -40,7 +40,6 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 Reuterstr.: Bauarbeiten an der Karl-Marx-Str., einige Meter der Fahrbahn sind gesperrt	q1::inwork 12150,8764 12165,8566
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
-Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
@@ -378,7 +377,7 @@ enge Kurven	q2 33526,2771 33419,2765 33406,2738
 Kieler Str.: Fußgänger	q3 4998,5817 5030,5800
 Fontanepromenade: enger Gehweg	q3 10781,9697 10774,9681 10760,9646
 Südstern: Fußgänger	q3 10749,9342 10741,9344 10695,9315 10656,9333 10647,9337
-Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
+Görlitzer Ufer: Bordsteine mit schmalen Anrampungen	q3 13275,10055 13283,10069
 Ruhlsdorfer Str.: Bordstein, Fußgänger	q4 9350,10176 9368,10211
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Fußgänger	q3 4360,10320 4352,10260
 (Güntzelstr. - Pommersche Str.): Fußgänger	q3 4699,9505 4550,9539
@@ -3521,6 +3520,7 @@ Stiftsweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11001,1
 Treskowstr. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 24563,11980 24491,11972
 Rathausstr.:: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15651,12214 15628,12246 15576,12315 15537,12367
 Steilpfad: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 3375,21230 3280,21477
+Schönstedtstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 12545,8449 12643,8533
 Erkelenzdamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261
 Privatstr. 14: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13159,17196 13103,17280
 Bernkasteler Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 15208,16939 15015,16908 14923,16901

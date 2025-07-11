@@ -508,6 +508,8 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
 #: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-rave-the-planet-auf-der-strasse-des-17-juni-in-tiergarten/
 #: by: https://www.ravetheplanet.com/demoroute-2024/
 #: by: https://www.tagesspiegel.de/berlin/anreise-programm-line-up-die-wichtigsten-fragen-und-antworten-zu-rave-the-planet-in-berlin-13957109.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/am-samstag-rave-the-planet-auf-der-strasse-des-17-juni/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltorcurwrk2m
 #: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
 #: source_id: viz2021:13.349991,52.514511,17.08.2024,09:00 (bis 18.08.2024) (inaktiv)
@@ -1736,11 +1738,11 @@ Großer Stern	2::temp 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
 ',
-         'from' => 1752444000,
+         'from' => 1752271200,
          'id' => 1710,
          'periodic' => 1,
-         'postwarn_days' => 2,
-         'prewarn_days' => 3,
+         'postwarn_days' => 3,
+         'prewarn_days' => 5,
          'recurrences' => [
                             [
                               'yearly',
@@ -1754,7 +1756,7 @@ Großer Stern	2::temp 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656
                           ],
          'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (17.7.2025 - 21.7.2025; Sperrungen fangen schon früher an und dauern länger)',
          'type' => 'gesperrt',
-         'until' => 1753300800
+         'until' => 1753387200
        },
        undef,
        undef,
@@ -5356,7 +5358,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2025-07-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5422,7 +5424,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-11
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6615,43 +6617,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1344431.php
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/23-0699_kronprinzessinnenweg_rad_u_fussumleitung_-_ba_23_-_.pdf
-#: by: https://nitter.net/VIZ_Berlin/status/1679067110662721538#m
-#: by: https://www.berliner-woche.de/grunewald/c-bauen/kronprinzessinnenweg-gesperrt_a387754
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1351840.php (voraussichtlicher Beginn: zweite Augusthälfte (2023))
-#: by: https://nitter.net/ChBroome/status/1693319948246876425 (Sperrung hat wohl noch nicht begonnen (20.8.2023))
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1367360.php (neuer Zeitraum)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/umleitungsstrecke-radverkehr-kronprinzessinnenweg.pdf?ts=1695129056
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1707745207880478781#m (neuer Start: 5.10.2023)
-#: by: https://viz.berlin.de/2023/09/kronprinzessinnenweg/ (2024+2025 kann es auch zu Vollsperrungen abends + am Wochenende kommen)
-#: by: https://www.stadtrand-nachrichten.de/kronprinzessinnenweg-steglitz-zehlendorf-berlin/
-#: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/kronprinzessinnenweg-voll-gesperrt_a394925
-#: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/bauarbeiten-am-kronprinzessinnenweg-haben-begonnen_a398941
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1572015.php (Abschluss der Bauarbeiten)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/geholper-und-sperrung-rad-und-skatestrecke-neben-der-avus-erst-abgefrast-und-dann-geschlossen-13962944.html
-#: source_id: viz2021:13.229039,52.464057,05.10.2023,07:00 (bis 31.08.2025) (inaktiv)
-#: source_id: viz2021:13.228732,52.464169,05.10.2023,07:00 (bis 31.08.2025) (bis 30.06.2025 + weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.229865,52.464817,30.06.2025,06:00 (bis 11.07.2025)
-#: osm_watch: way id="50830991" version="27"
-# REMOVED --- #: add_fragezeichen: Wann beginnen die Bauarbeiten im Kronprinzessinnenweg?
-#: note: Stand Mitte Februar 2024 waren Bauarbeiten nur zwischen Fischerhüttenweg und Havelchaussee
-#: note: Anfang März 2024: freitags kann man anscheinend auch schon früher (um 17h) hier langfahren; Mai 2025: donnerstags bereits um 16:40 Uhr
-#: XXX laut osm nun offen
-#: last_checked: 2025-06-01
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2025-07-11 (BA-Pressemitteilung)
-	2::inwork -927,6888 -2218,5133 -3296,3686
-',
-         'dont_check_date' => 1,
-         'from' => 1695149689,
-         'id' => 3849,
-         'text' => 'Kronprinzessinnenweg: Sperrung wegen Asphaltierungsarbeiten zwischen Havelchaussee und Hüttenweg, vom 30.06.2025 bis 11.07.2025',
-         'type' => 'gesperrt',
-         'until' => 1752249600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6811,7 +6777,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-04-27 (osm)
+#: last_checked: 2025-07-11
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -6968,20 +6934,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: KARLMARXSTR-2018
-# REMOVED --- #: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024) (inaktiv) --- #: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024) (vorfristig inaktiv) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/voruebergehend-einbahnstrasse_a400832 --- #: also_indoor: traffic (ex-G,ex-B,ex-W)  --- #: priority: #A --- #: next_check: 2024-03-11 --- Karl-Marx-Str.	q4::inwork; 12330,8636 12494,8501 --- Weichselstr.	q3::inwork 12330,8636 12392,8724
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1914549978975854961
-#: by: https://pbs.twimg.com/media/GoupswNXgAAe4tk?format=jpg&name=medium (auch Radfahrer sind betroffen; Umleitungsstrecke via Donaustr.)
-#: source_id: viz2021:13.434693,52.481226,22.04.2025,11:00 (hier: Sperrung stadtauswärts nur für den Kfz-Verkehr, bis 31.07.2025)
-Karl-Marx-Str.: zwischen Flughafenstr. und Neckarstr.	q4::inwork; 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390 12639,8344
-',
-         'from' => 1745186400,
-         'id' => 3971,
-         'text' => 'Karl-Marx-Str.: zwischen Flughafenstr. und Neckarstr. Sperrung Richtung Südosten, vom 22.04.2025 bis 30.07.2025',
-         'type' => 'handicap',
-         'until' => 1753977600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7927,7 +7880,17 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.07.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
+	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
+',
+         'from' => 1729404000,
+         'id' => 4186,
+         'text' => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 31.07.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1753974000
+       },
        undef,
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
@@ -8701,7 +8664,7 @@ Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451
 # REMOVED --- #: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3 --- Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
 # REMOVED (abgeschlossen) --- #: note: voraussichtlich ab 09.04.2025 --- Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
 # REMOVED (vor Ort keine Bauarbeiten) --- #: note: voraussichtlich ab 09.04.2025 --- Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
-#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt.
+#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt; mittlerweile: Maßnahmen ab dem 10.06.2025 fortgesetzt.
 Wünschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
 #: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?)
 # REMOVED (hier nicht) --- Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275
@@ -8755,13 +8718,14 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
        undef,
        {
          'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...)
+#: note: bei rbb bis 26.09.2025 verlängert
 	q4::inwork 8365,5502 8365,5418
 ',
          'from' => 1744520400,
          'id' => 4313,
-         'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 11.07.2025 17:00',
+         'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 26.09.2025 17:00',
          'type' => 'handicap',
-         'until' => 1752246000
+         'until' => 1758898800
        },
        {
          'data' => '#: note: Halteverbotsschilder bis 14.06.2025
@@ -8800,6 +8764,7 @@ Flemmingstr.	q4::inwork 21848,4882 21856,4910
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
+#: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum
 #: last_checked: 2025-07-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-07-11 (ADAC-Verkehrsmeldung) vvv
@@ -9080,10 +9045,11 @@ Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::
 #: next_check_id: ROSEGGER-2024
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Frühjahr 2025 bis Ende 2025)
 #: note: Halteverbotsschilder ohne Enddatum
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-11
 #: check_frequency: 45d
 #: next_check: 2025-12-31
-	q4::inwork 13246,7961 13236,7970 13147,8056
+	q4::inwork 13236,7970 13147,8056
+# REMOVED (hier kann man gut vorbei) ---	q4::inwork 13246,7961 13236,7970
 ',
          'from' => undef,
          'id' => 4356,
@@ -9168,13 +9134,14 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        },
        {
          'data' => '#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025)
+#: note: bei rbb bis 31.07.2025 verlängert
 	q4::inwork; 16397,12397 16485,12384 16583,12371
 ',
          'from' => 1750654800,
          'id' => 4367,
-         'text' => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.06.2025 07:00 bis 15.07.2025 17:00',
+         'text' => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.06.2025 07:00 bis 31.07.2025 17:00',
          'type' => 'handicap',
-         'until' => 1752591600
+         'until' => 1753974000
        },
        undef,
        {
@@ -9219,6 +9186,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/unwetter-hinterlasst-grosse-verwustung-im-berliner-norden-bezirk-reinickendorf-zahlt-750-schadensmeldungen-13951765.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1578727.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-06 (research) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -9279,6 +9247,7 @@ Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 296
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsvzp4wvrk2n (Hauptstraßen wieder offen)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/so-schlimm-war-es-noch-nie-dieser-stadtrat-warnt-noch-immer-vor-dem-berliner-waldbesuch-13967756.html (Schönwalder Allee bis min. 11.07.2025 gesperrt)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
@@ -9476,6 +9445,25 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'text' => 'Schaperstr.: Bauarbeiten, von Nürnberger Str. Richtung Joachimsthaler Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 02.10.2025',
          'type' => 'handicap',
          'until' => 1759420800
+       },
+       {
+         'data' => '#: next_check_id: BELZIGER-2025
+	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
+',
+         'from' => 1752184800,
+         'id' => 4385,
+         'text' => 'Belziger Str.: Bauarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), vermutlich sind auch Radfahrer betroffen, voraussichtlich bis zum 25. Juli 2025',
+         'type' => 'handicap',
+         'until' => 1753480799
+       },
+       {
+         'data' => '	2::temp 10309,13601 10301,13701
+',
+         'from' => 1752184800,
+         'id' => 4386,
+         'text' => 'Kleine Rosenthaler Str.: Straßenfest zwischen Linienstr. und Auguststr., am 12.07.2025 von 10:00 bis 22:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1752350400
        }
      
 );

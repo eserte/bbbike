@@ -219,14 +219,7 @@ Detmolder Str. (Nord)	1 4280,8188 4349,8118
 # REMOVED (moved to temp blockings) --- currently XXX_outdoor --- : XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better) --- #: XXX aber zuerst handicap+qualitaet analysieren --- Gartenufer (in der Dunkelheit gesperrt)	2 6226,11405 6067,11479 5845,11615 5790,11643
 Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 # 
-#: next_check_id: AMTREPTOWERPARK-2020
-#: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025)
-#: source_id: viz2021:13.45427,52.4939,16.05.2025,14:26 (bis 19.09.2025) (inaktiv)
-#: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861
-#: last_checked: 2025-06-28
-#: check_frequency: 30d
-#: next_check: 2025-09-19 (VIZ-Verkehrsmeldung)
-Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
+# REMOVED (in beide Richtungen offen) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.455436,52.493133,28.01.2025,08:00 (bis 07.03.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 17.04.2025) (bis 17.05.2025) (bis 19.09.2025) --- #: source_id: viz2021:13.45427,52.4939,16.05.2025,14:26 (bis 19.09.2025) (inaktiv) --- #: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wird fertiggestellt oder die temporäre Verkehrsführung bleibt dauerhaft): Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1s:q4 14089,9610 14031,9673 13860,9861 --- #: last_checked: 2025-06-28 --- #: check_frequency: 30d --- #: next_check: 2025-09-19 (VIZ-Verkehrsmeldung) --- Am Treptower Park	1no 14089,9610 14031,9673 13860,9861
 Am Treptower Park	1 13860,9861 13795,9941
 # 
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928
@@ -725,7 +718,7 @@ Südwestkorso	1 4061,6753 4204,6826
 Südwestkorso	1 4204,6826 4125,6763 4103,6716
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
 Kleine Markusstr. - Krautstr.	1 11937,12127 11932,12111 11956,12071 11961,12025 12002,12008
-Schönstedtstr.	1 12545,8449 12643,8533
+Schönstedtstr.	1s:q4 12545,8449 12643,8533
 # REMOVED (verkürzt) --- Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8787,6660 8722,6656
@@ -1320,7 +1313,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="14"
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-08 (mapillary)
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -4312,7 +4305,7 @@ Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork
 #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 #: osm_watch: way id="1199465847" version="2"
-#: osm_watch: way id="801304797" version="4"
+#: osm_watch: way id="801304797" version="5"
 #: XXX außerdem: wird es eine Anbindung an die Sonnenallee geben?
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
 #: last_checked ^^^
@@ -5159,6 +5152,9 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_26_1645_1696_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/molkenmarkt/ (die Pläne hier beziehen sich auf die Hauptstraßenführung)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/molkenmarkt/ (alternative URL)
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1579557.php (Bebauungsplan 1-14-1)
+#: by: https://www.molkenmarkt.berlin.de/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Bebauungsplan 1-14-1)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
 #: last_checked: 2025-07-09
 #: check_frequency: 90d

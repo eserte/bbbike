@@ -4783,6 +4783,8 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-rave-the-planet-auf-der-strasse-des-17-juni-in-tiergarten/
 #: by: https://www.ravetheplanet.com/demoroute-2024/
 #: by: https://www.tagesspiegel.de/berlin/anreise-programm-line-up-die-wichtigsten-fragen-und-antworten-zu-rave-the-planet-in-berlin-13957109.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/am-samstag-rave-the-planet-auf-der-strasse-des-17-juni/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltorcurwrk2m
 #: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
 #: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
 #: source_id: viz2021:13.349991,52.514511,17.08.2024,09:00 (bis 18.08.2024) (inaktiv)
@@ -14938,10 +14940,10 @@ EOF
 	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2025-07-14 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei
-       until => $isodate2epoch->("2025-07-23 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
-       prewarn_days => 3,
-       postwarn_days => 2,
+     { from  => $isodate2epoch->("2025-07-12 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei (2025: erste Sperrungen am 2025-07-12 Sa, also fünf Tage vorher)
+       until => $isodate2epoch->("2025-07-24 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt; 2025: Ende der Sperrungen am 2025-07-24, also drei Tage länger
+       prewarn_days => 5,
+       postwarn_days => 3,
        text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (17.7.2025 - 21.7.2025; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 7, start => "2024-10-25T00:00:00"]], # note: Gendarmenmarkt wird saniert, nächste Veranstaltung 2025
@@ -24238,7 +24240,7 @@ EOF
        data  => <<EOF,
 #: source_id: IM_022405
 #: note: Gehweg ist hier relativ breit
-	q3::inwork; 14089,9610 14060,9574 13973,9465 13923,9405
+	q3::inwork; 14089,9610 14060,9574 14020,9524 13973,9465 13923,9405
 	q4::inwork; 13923,9405 13892,9365 13849,9310 13766,9200
 	q4::inwork; 13489,9456 13602,9581 13642,9624 13704,9691 13860,9861
 EOF
@@ -35978,7 +35980,7 @@ EOF
 #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="2"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2025-07-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -36278,7 +36280,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-11
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -41828,7 +41830,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-04-27 (osm)
+#: last_checked: 2025-07-11
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -42716,7 +42718,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-04-21 00:00:00"), # 1700478000, # 2023-11-20 12:00
-       until => $isodate2epoch->("2025-07-31 18:00:00"), # 1710332992, # undef, # $isodate2epoch->("2024-03-11 23:59:59"), # 1709308800, # 2024-03-01 17:00
+       until => 1752248207, # $isodate2epoch->("2025-07-31 18:00:00"), # 1710332992, # undef, # $isodate2epoch->("2024-03-11 23:59:59"), # 1709308800, # 2024-03-01 17:00
 #      text  => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrtrichtung gesperrt, Einmündungsbereich Weichselstr. gesperrt, auch Radfahrer sind betroffen, vom 21.11.2023 12:00 bis 11.03.2024, vermutlich bereits beendet',
        text  => 'Karl-Marx-Str.: zwischen Flughafenstr. und Neckarstr. Sperrung Richtung Südosten, vom 22.04.2025 bis 30.07.2025',
        type  => 'handicap',
@@ -42725,7 +42727,9 @@ EOF
 # REMOVED --- #: source_id: viz2021:13.432623,52.482575,21.11.2023,12:00 (bis 01.03.2024) (inaktiv) --- #: source_id: viz2021:13.43146,52.48305,21.11.2023,12:00 (bis 11.03.2024) (vorfristig inaktiv) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/voruebergehend-einbahnstrasse_a400832 --- #: also_indoor: traffic (ex-G,ex-B,ex-W)  --- #: priority: #A --- #: next_check: 2024-03-11 --- Karl-Marx-Str.	q4::inwork; 12330,8636 12494,8501 --- Weichselstr.	q3::inwork 12330,8636 12392,8724
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1914549978975854961
 #: by: https://pbs.twimg.com/media/GoupswNXgAAe4tk?format=jpg&name=medium (auch Radfahrer sind betroffen; Umleitungsstrecke via Donaustr.)
+#: by: https://www.kms-sonne.de/baustellennews?date=20250711 (10. Juli 2025: Sperrungen der Erkstr., Schönstedtstr. und Boddinstr. entfallen; 11. Juli 2025: Karl-Marx-Str. offen?)
 #: source_id: viz2021:13.434693,52.481226,22.04.2025,11:00 (hier: Sperrung stadtauswärts nur für den Kfz-Verkehr, bis 31.07.2025)
+# REMOVED (ja, vorzeitig beendet) --- #: next_check: 2025-07-11
 Karl-Marx-Str.: zwischen Flughafenstr. und Neckarstr.	q4::inwork; 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390 12639,8344
 EOF
      },
@@ -45987,11 +45991,11 @@ EOF
 EOF
      },
      { from  => 1729404000, # 2024-10-20 08:00
-       until => $isodate2epoch->("2025-07-07 17:00:00"), # 1751292000, # 2025-06-30 16:00
-       text  => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 07.07.2025 17:00 Uhr',
+       until => $isodate2epoch->("2025-07-31 17:00:00"), # $isodate2epoch->("2025-07-07 17:00:00"), # 1751292000, # 2025-06-30 16:00
+       text  => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 31.07.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv)
+#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.07.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
 	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
 EOF
@@ -47640,7 +47644,7 @@ Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451
 # REMOVED --- #: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3 --- Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
 # REMOVED (abgeschlossen) --- #: note: voraussichtlich ab 09.04.2025 --- Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
 # REMOVED (vor Ort keine Bauarbeiten) --- #: note: voraussichtlich ab 09.04.2025 --- Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
-#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt.
+#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt; mittlerweile: Maßnahmen ab dem 10.06.2025 fortgesetzt.
 Wünschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
 #: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?)
 # REMOVED (hier nicht) --- Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275
@@ -47773,11 +47777,12 @@ EOF
 EOF
      },
      { from  => 1744520400, # 2025-04-13 07:00
-       until => $isodate2epoch->("2025-07-11 17:00:00"), # 1749826800, # 2025-06-13 17:00
-       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 11.07.2025 17:00',
+       until => $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
+       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 26.09.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...)
+#: note: bei rbb bis 26.09.2025 verlängert
 	q4::inwork 8365,5502 8365,5418
 EOF
      },
@@ -47847,6 +47852,7 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
+#: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum
 #: last_checked: 2025-07-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-07-11 (ADAC-Verkehrsmeldung) vvv
@@ -48403,10 +48409,11 @@ EOF
 #: next_check_id: ROSEGGER-2024
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Frühjahr 2025 bis Ende 2025)
 #: note: Halteverbotsschilder ohne Enddatum
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-11
 #: check_frequency: 45d
 #: next_check: 2025-12-31
-	q4::inwork 13246,7961 13236,7970 13147,8056
+	q4::inwork 13236,7970 13147,8056
+# REMOVED (hier kann man gut vorbei) ---	q4::inwork 13246,7961 13236,7970
 EOF
      },
      { from  => 1748750400, # 2025-06-01 06:00
@@ -48516,11 +48523,12 @@ EOF
 EOF
      },
      { from  => 1750654800, # 2025-06-23 07:00
-       until => $isodate2epoch->("2025-07-15 17:00:00"), # 1752246000, # 2025-07-11 17:00
-       text  => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.06.2025 07:00 bis 15.07.2025 17:00',
+       until => $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
+       text  => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.06.2025 07:00 bis 31.07.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025)
+#: note: bei rbb bis 31.07.2025 verlängert
 	q4::inwork; 16397,12397 16485,12384 16583,12371
 EOF
      },
@@ -48586,6 +48594,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/unwetter-hinterlasst-grosse-verwustung-im-berliner-norden-bezirk-reinickendorf-zahlt-750-schadensmeldungen-13951765.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1578727.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-06 (research) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -48647,6 +48656,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsvzp4wvrk2n (Hauptstraßen wieder offen)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/so-schlimm-war-es-noch-nie-dieser-stadtrat-warnt-noch-immer-vor-dem-berliner-waldbesuch-13967756.html (Schönwalder Allee bis min. 11.07.2025 gesperrt)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
@@ -48839,6 +48849,23 @@ EOF
 #: note: bei rbb bis 02.10.2025
 #: also_indoor: traffic (T)
 	q4::inwork; 5700,10226 5597,10299 5450,10338
+EOF
+     },
+     { from  => 1752184800, # 2025-07-11 00:00
+       until => 1753480799, # 2025-07-25 23:59
+       text  => 'Belziger Str.: Bauarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), vermutlich sind auch Radfahrer betroffen, voraussichtlich bis zum 25. Juli 2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: BELZIGER-2025
+	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
+EOF
+     },
+     { from  => 1752184800, # 2025-07-11 00:00
+       until => 1752350400, # 2025-07-12 22:00
+       text  => 'Kleine Rosenthaler Str.: Straßenfest zwischen Linienstr. und Auguststr., am 12.07.2025 von 10:00 bis 22:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+	2::temp 10309,13601 10301,13701
 EOF
      },
     );

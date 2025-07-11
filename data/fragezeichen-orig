@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-11
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -1136,7 +1136,7 @@ Am Bahndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected; 22467,613
 Däumlingsweg - Waldesruher Str.: Verbesserung der Befahrbarkeit geplant	?::projected 23577,6504 23954,6721 24185,6880 24593,7455
 # 
 #: XXX Kö.10
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-08 (mapillary)
 #: check_frequency: 360d
 Köllnischer Platz/Grünauer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 21966,3827 21829,4212 21799,4319 21778,4440 21781,4470 21789,4520
 # 
@@ -1981,7 +1981,7 @@ Heerstr.: evtl. Sanierung des Radwegs? Beidseitig	?::projected -7294,12833 -7344
 # 
 #: XXX oder ist vielleicht auch der vorhandene Radweg gemeint?
 #: by: https://www.tagesspiegel.de/berlin/bezirke/zukunft-des-berliner-mauerwegs-zwei-neue-baustellen-etappen-an-der-alten-ddr-grenze-in-spandau-13615882.html (Lückenschluss bis 2027, allerdings 1km)
-#: osm_watch: way id="124081267" version="12"
+#: osm_watch: way id="124081267" version="13"
 #: last_checked: 2025-06-28 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-03-31
@@ -2106,9 +2106,9 @@ Marienpark: Straße (asphaltiert) in Bau	?::inwork 8163,3660 8124,3706 8106,3745 
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2025-06-28
+#: last_checked: 2025-07-11
 #: check_frequency: 60d
-Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 13973,9465 13923,9405 13892,9365 13849,9310
+Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 14020,9524 13973,9465 13923,9405 13892,9365 13849,9310
 # 
 #: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
@@ -2164,7 +2164,7 @@ Friedenstr.: was wird hier genau gemacht?	?::projected 12325,13148 12382,13097 1
 #: by: https://abendblatt-berlin.de/2020/05/08/berlin-reinickendorf-radwege/ (bis Ende Mai 2020)
 #: by: https://www.infravelo.de/projekt/friederikestrasse/ ("abgeschlossen", nur der Abschnitt durch den Wald)
 #: XXX oder ist der schon realisierte Radstreifen im nördlichen Abschnitt gemeint?
-#: osm_watch: way id="5046356" version="18"
+#: osm_watch: way id="5046356" version="19"
 #: last_checked: 2025-03-04 (orthofotos)
 #: check_frequency: 180d
 Friederikestr.: entsteht hier ein Radstreifen?	?::projected -1661,18749 -1654,18711 -1629,18417 -1616,18112
@@ -2950,7 +2950,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: osm_watch: way id="764003865" version="7"
 #: osm_watch: way id="764003862" version="23"
 #: priority: #D
-#: last_checked: 2025-07-06 (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
+#: last_checked: 2025-07-11 (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
 #: check_frequency: 60d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 12330,8636
@@ -2958,37 +2958,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?; 12150,8764 12318,8645 
 #: last_checked ^^^
 # 
 # REMOVED (realisiert) --- #: by: http://www.abendblatt-berlin.de/2019/04/14/sicher-radfahren-in-neukoelln/ (Beginn der Bauarbeiten 2019-04-15; hier normale Schutzstreifen, keine Grünbeschichtung) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.803054.php --- #: osm_watch: way id="602340632" version="1" --- #: last_checked: 2019-05-06 --- #: check_frequency: 3d ---  # REMOVED (hier schon realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork; 12330,8636 12318,8645 12150,8764 --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork; 11998,8872 11880,8955 11831,8989
-# 
-#: next_check_id: KARLMARXSTR-2018
-#: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.836029.php (spätestens 2024 abgeschlossen)
-#: by: https://www.kms-sonne.de/baustellennews/?date=20210630 (Bauarbeiten bis November 2021)
-#: by: https://www.berliner-woche.de/neukoelln/c-bauen/karl-marx-strasse-bauarbeiten-zwischen-erk-und-flughafenstrasse-gehen-los_a317172
-#: by: https://deine-laeden-brauchen-dich.de/einblicke/die-baustelle-rueckt-weiter-ins-zentrum-und-geht-in-die-winterpause/ (ab Februar 2022 weitere Bauarbeiten zwischen Fuldastr. und Weichselstr., zwischen Fuldastr. und Erkstr. noch bis Herbst 2022)
-#: by: https://berliner-abendblatt.de/2022/10/10/karl-marx-strasse-bauarbeiten-dauern-bis-2024/
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (evtl. Komplettsperrung in Höhe Weichselstr./Flughafenstr. ab 20.11.2023?)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1720012109302374413#m (noch keine Infos zur Umstellung am 20.11.2023)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/baustelle-auf-der-karl-marx-strasse-in-berlin-neukolln-nordlicher-abschnitt-wird-vorubergehend-einbahnstrasse-10717204.html (Mitte/Ende November 2023 bis Januar 2024: Einbahnstraße Richtung Hermannplatz, auch Radfahrer sind betroffen, genauer Bereich unklar)
-#: by: https://www.berliner-woche.de/neukoelln/c-bauen/noch-zwei-jahre-grossbaustelle_a403149 (Komplettfertigstellung bis Ende 2025?)
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8892 (Anfrage)
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/tMs40ZsJgUSohCRtaKtA9nECAaVdKy1NRp9BrMMK/btlSTFXb/99-Anlagen/02/813MA_1122_Dauerbaustelle_und__k_ein_Ende_in_S.pdf (Antwort, bis Ende 2025)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf (aktuelle Maßnahme bis voraussichtlich 2026)
-#: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv)
-#: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
-#: source_id: viz2021:13.43372,52.4819,14.07.2021,10:00 (bis 31.12.2024) (inaktiv) (bis 30.04.2025) (inaktiv)
-#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (inaktiv) (bis 6.10.2024) (bis 31.10.2023) (bis 17.11.2023) (bis 23.11.2023) (bis 21.11.2023) (inaktiv)
-#: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.03.2024) (inaktiv) (bis 01.07.2024) (bis 30.04.2025) (bis 22.04.2025 + weitere Arbeiten) (inaktiv)
-#: source_id[inactive]: bvg2021:n7#BVG334407_0 (Sperrung der Karl-Marx-Str. ab 20.11.2023)
-#: also_indoor: traffic
-#: priority: #A
-#: last_checked: 2025-07-06 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2025-07-31 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2025-12-31
-# REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390
-Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
-# REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12494,8501 12330,8636
-# 
+# REMOVED (komplettiert) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.836029.php (spätestens 2024 abgeschlossen) --- #: by: https://www.kms-sonne.de/baustellennews/?date=20210630 (Bauarbeiten bis November 2021) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/karl-marx-strasse-bauarbeiten-zwischen-erk-und-flughafenstrasse-gehen-los_a317172 --- #: by: https://deine-laeden-brauchen-dich.de/einblicke/die-baustelle-rueckt-weiter-ins-zentrum-und-geht-in-die-winterpause/ (ab Februar 2022 weitere Bauarbeiten zwischen Fuldastr. und Weichselstr., zwischen Fuldastr. und Erkstr. noch bis Herbst 2022) --- #: by: https://berliner-abendblatt.de/2022/10/10/karl-marx-strasse-bauarbeiten-dauern-bis-2024/ --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (evtl. Komplettsperrung in Höhe Weichselstr./Flughafenstr. ab 20.11.2023?) --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1720012109302374413#m (noch keine Infos zur Umstellung am 20.11.2023) --- #: by: https://www.tagesspiegel.de/berlin/bezirke/baustelle-auf-der-karl-marx-strasse-in-berlin-neukolln-nordlicher-abschnitt-wird-vorubergehend-einbahnstrasse-10717204.html (Mitte/Ende November 2023 bis Januar 2024: Einbahnstraße Richtung Hermannplatz, auch Radfahrer sind betroffen, genauer Bereich unklar) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/noch-zwei-jahre-grossbaustelle_a403149 (Komplettfertigstellung bis Ende 2025?) --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8892 (Anfrage) --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/tMs40ZsJgUSohCRtaKtA9nECAaVdKy1NRp9BrMMK/btlSTFXb/99-Anlagen/02/813MA_1122_Dauerbaustelle_und__k_ein_Ende_in_S.pdf (Antwort, bis Ende 2025) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf (aktuelle Maßnahme bis voraussichtlich 2026) --- #: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv) --- #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv) --- #: source_id: viz2021:13.43372,52.4819,14.07.2021,10:00 (bis 31.12.2024) (inaktiv) (bis 30.04.2025) (inaktiv) --- #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (inaktiv) (bis 6.10.2024) (bis 31.10.2023) (bis 17.11.2023) (bis 23.11.2023) (bis 21.11.2023) (inaktiv) --- #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.03.2024) (inaktiv) (bis 01.07.2024) (bis 30.04.2025) (bis 22.04.2025 + weitere Arbeiten) (inaktiv) --- #: source_id[inactive]: bvg2021:n7#BVG334407_0 (Sperrung der Karl-Marx-Str. ab 20.11.2023) --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2025-07-06 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) --- # REMOVED --- #: next_check: 2025-12-31 --- # REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 --- # REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12494,8501 12330,8636
 # REMOVED (weitgehend realisiert) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) --- #: by: http://www.berliner-woche.de/neukoelln/bauen/neues-von-der-baustelle-arbeiten-auf-der-karl-marx-strasse-ruhen-d143549.html (Bauarbeiten ab April 2018, Briesestr. bis Erkstr.) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.697573.php (Briese- bis Weichselstr., bis Ende 2021) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/durch-die-aktion-karl-marx-strasse-treffen-sich-alle-beteiligten-regelmaessig_a196585 (bis Jahresende 2019) --- #: by: https://fahrradfreundliches-neukoelln.de/blog/bericht-vom-7-fahrrat-21-februar-2019 (Baubeginn April/Mai 2019) --- #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (Asphaltierung zwischen Briese- und Werbellinstr. am 28. und 29. August 2019) --- #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/ (Gehwegarbeiten) --- #: by: https://www.kms-sonne.de/baustellennews/?date=20191023 --- #: osm_watch: way id="629657606" version="7" --- #: last_checked: 2020-09-25 --- #: check_frequency: 60d --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
 # REMOVED --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187
 # 
@@ -3237,7 +3207,7 @@ Ederstr.: Planung einer Fahrradstraße	?::projected 13946,7918 13919,7707
 #: by: https://mein.berlin.de/projekte/weichselstrasse/ (Vorstudie)
 #: by: https://www.kms-sonne.de/projekte/weichselstrasse/ (Planung wird 2026 fortgeführt)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/vorstudie-zum-umbau-der-weichselstrasse-liegt-vor_a400901
-#: last_checked: 2025-06-07
+#: last_checked: 2025-07-11
 #: check_frequency: 540d
 Weichselstr.: Umbau geplant	?::projected 12330,8636 12392,8724 12434,8776 12478,8829 12590,8977 12682,9089 12755,9188
 # 
@@ -3461,9 +3431,14 @@ Betriebsweg Kiefholzstr. - Görlitzer Bahn/Beermannstr.	?::inwork 14137,8983 1417
 #: next_check_id: BAB100-2022
 #: osm_watch: way id="693633082" version="7"
 #: XXX asphaltiert, Radwegmarkierungen existieren bereits an der Sonnenallee
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-11
 #: check_frequency: 90d
-Radweg neben der BAB100: genaue Lage?	?::inwork 14379,7372 14291,7033 14233,6923 14239,6875
+Radweg neben der BAB100: genaue Lage?	?::inwork 14379,7372 14291,7033
+#: osm_watch: way id="1413347151" version="1"
+#: XXX Hier fertig asphaltiert, aber auch noch Bauzäune.
+#: last_checked: 2025-07-11
+#: check_frequency: 90d
+Radweg neben der BAB100: genaue Lage?	?::inwork 14291,7033 14233,6923 14239,6875
 # 
 # REMOVED --- #: last_checked: 2014-05-10 --- #: check_frequency: 100d --- #: XXX laut osm existiert der Weg schon --- #: by: http://www.potsdam.de/sites/default/files/documents/16297_amtsblatt_27-7_dsjs_final.pdf --- Uferweg zum Türkstr. (Potsdam)	?::inwork -11913,-1032 -11906,-989 -11866,-993 -11851,-962 -11821,-923
 # REMOVED --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (enthält Bebauungsplan Schiffbauergasse)  --- existiert hier ein Uferweg für Radfahrer? Qualität?	? -11821,-923 -11816,-903 -11836,-879 -11790,-812 -11751,-822 -11686,-765 -11622,-709 -11676,-627 -11753,-515 -11790,-537
@@ -3964,7 +3939,7 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahre
 # 
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick ("Beginn voraussichtlich ab dem 21.05.2025") (mittlerweile gibt es einen Termin nur für die Flemmingstr.)
 #: priority: #A
-#: last_checked: 2025-07-02 vvv
+#: last_checked: 2025-07-08 (mapillary) vvv
 # REMOVED (mittlerweile kein Termin mehr) --- #: next_check: 2025-05-21 vvv
 Gutenbergstr.: geplante Leitungsarbeiten, wird es Einschränkungen für Radfahrer geben?	? 21789,4520 21903,4848 21848,4882
 # REMOVED (-> temp blockings) --- Flemmingstr.: geplante Leitungsarbeiten, wird es Einschränkungen für Radfahrer geben?	? 21726,4537 21848,4882 21856,4910
@@ -4395,7 +4370,7 @@ Waldsteg: Abschnitt soll für den MIV gesperrt werden	?::projected 7940,19521 784
 #: check_frequency: 180d
 Zossener Str. (Hellersdorf): Aufhebung der Benutzungspflicht?	?; 23868,15633 23617,15594 23568,15603 23411,15632 23388,15637 23218,15671 23080,15700 22883,15740 22811,15753 22698,15788 22771,16194
 #: priority: #C
-#: last_checked: 2025-05-07
+#: last_checked: 2025-07-08 (mapillary)
 #: check_frequency: 180d
 Hultschiner Damm: Aufhebung der Benutzungspflicht?	? 24639,10766 24644,10740 24649,10710 24660,10643 24666,10611 24653,10580 24558,10358 24501,10222 24479,10171 24464,10136 24455,10113 24435,10065 24420,10029 24402,9987 24385,9948 24337,9835 24299,9746 24291,9727 24250,9629 24227,9574 24205,9520 24190,9484 24143,9371 24085,9237 24051,9156 24032,9111 24001,9037 23982,8994 23946,8909 23933,8879 23927,8864 23891,8780 23875,8737 23873,8698 23867,8606 23866,8566 23860,8480 23856,8409 23855,8382 23848,8256 23845,8220 23833,8095 23810,7946 23803,7906 23792,7861
 #: by ^^^
@@ -4577,6 +4552,7 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 # REMOVED (nein, nur auf den paar Metern vor der Urbanstr.) --- Fichtestr.: ist hier auch eine Fahrradstraße?	? 11055,9539 11108,9187
 # REMOVED (realisiert) --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/ampel-als-ersatz-fuer-zebrastreifen_a278689 --- #: source_id: viz2021:13.539226,52.450889,22.11.2021,07:00 (Neubau einer Fußgängerampel, bis 22.12.2021) --- #: last_checked: 2021-10-10 --- # REMOVED --- #: check_frequency: 60d --- #: next_check: 2021-12-22 --- Oberspreestr./Bärenlauchstr.: Zebrastreifen soll durch eine Bedarfsampel ersetzt werden	?::projected 19761,5153 19733,5177 19767,5179
 # 
+#: next_check_id: BELZIGER-2025
 #: by: https://api.fixmyberlin.de/api/projects/391 (construction_completed: 2020) vvv
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/aktion-auf-der-langenscheidtbruecke-fuer-eine-familienfreundliche-fahrradstrasse_a283879 (in Planung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.986631.php (Verkehrszählungen)
@@ -4610,13 +4586,16 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-verkehrswende-zwei-neue-fahrradstrassen-fur-schoneberg-13559518.html
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9774 (Antrag)
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9805 (Antrag)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1579555.php (Baustart in der Belziger Straße, erster Bauabschnitt bis 25. Juli 2025)
 #: XXX außerdem: ein gegenläufiger Radweg auf der Südseite der Monumentenbrücke ist geplant
 #: XXX Langenscheidtbrücke wird für Kfz Einbahnstraße Richtung Osten
-#: last_checked: 2025-06-24 (mapillary) vvv
+#: last_checked: 2025-07-11 (BA-Pressemitteilung) vvv
 #: check_frequency: 90d vvv
 Freiherr-vom-Stein-Str.: Fahrradstraße geplant	?::projected 5913,8415 5995,8477 6129,8558 6230,8602 6313,8638 6454,8653
+#: next_check: 2025-07-25 (BA-Pressemitteilung)
+Belziger Str.: Fahrradstraße geplant	?::projected 6460,8688 6644,8780 6664,8787 6852,8880
 #: next_check: 2025-09-30 (infravelo)
-Belziger Str.: Fahrradstraße geplant	?::projected 6460,8688 6644,8780 6664,8787 6852,8880 6958,8941 7101,9027 7308,9163
+Belziger Str.: Fahrradstraße geplant	?::projected 6852,8880 6958,8941 7101,9027 7308,9163
 #: next_check: 2025-12-31 (infravelo)
 Langenscheidtstr.: Fahrradstraße geplant	?::projected 7647,9196 7596,9249 7509,9337
 #: next_check: 2025-12-31 (infravelo)
@@ -7829,10 +7808,11 @@ Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 1
 #: by: https://www.infravelo.de/projekt/am-treptower-park/ (2. Quartal 2025 - 3. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408769475/kein-geld-fuer-verkehrssicherheit-ost-bezirke-weisen-kritik-zurueck.html (Verzögerung, Umsetzung erst 2027-2028?)
 #: XXX mittlerweile wurde bereits im Zuge der Umgestaltung der Kreuzung Elsenstr./Am Treptower Park eine Radwegauffahrt gebaut; außerdem siehe provisorische Führung des Radverkehr Richtung Nordwesten
-#: last_checked: 2025-06-28
+#: last_checked: 2025-07-11
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (infravelo)
-Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 14031,9673 13860,9861
+# REMOVED (hier wurde ein Stummel bereits realisiert) --- Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 14031,9673
+Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14031,9673 13860,9861
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: note: Radfahrer werden hier in beiden Richtungen überqueren dürfen; Richtung Nordwesten geht es weiter als Zweirichtungsradweg, zusätzlich zum normalen Radweg
@@ -8983,7 +8963,7 @@ Annenstr. [Wohngebiet]: Einbahnstraße für Kfz geplant	?::projected 11259,11391 1
 #: osm_watch: way id="33057862" version="21"
 #: osm_watch: way id="1009116415" version="9"
 #: osm_watch: way id="155605364" version="20"
-#: last_checked: 2025-06-03
+#: last_checked: 2025-07-11
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-04-29 (VIZ-Verkehrsmeldung zur Roseggerstr.)
 Umspannwerk Richardstraße: Straßensperrungen geplant	?::projected 13081,7907 13121,7945 13150,7924 13187,7927 13236,7970
@@ -9005,7 +8985,7 @@ Donaustr.: modaler Filter geplant	?::projected 13147,8056 13236,7970 13246,7961
 #: next_check_id: ROSEGGER-2024
 #: XXX noch hängen keine Radfahrer-frei-Schilder, bleibt das so oder wird es noch vorbereitet?
 #: osm_watch: way id="155605363" version="23"
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-11
 #: check_frequency: 45d
 # REMOVED (vermutlich unabhängig davon) --- #: next_check: 2025-04-29 (VIZ-Verkehrsmeldung zur Roseggerstr.)
 Wilhelm-Busch-Str.: Einbahnstraße geplant	?::projected 13205,8126 13312,8026
@@ -9355,7 +9335,8 @@ Lehrter Str. - Döberitzer Grünzug: wie wird der endgültige Zustand aussehen, wir
 #: by: https://www.berliner-zeitung.de/mensch-metropole/strassennamen-in-berlin-wo-wieder-das-umbenennungschaos-droht-li.2257407
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_28_1797_1840_online.pdf (Umbenennung wird am 19.9.2025 wirksam)
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12015 (Vorlage zur Kenntnisnahme)
-#: last_checked: 2025-06-25
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1579641.php
+#: last_checked: 2025-07-11 (BA-Pressemitteilung)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-19
 Kohlfurter Str.: Umbenennung in Regina-Jones-Str.	?::sign 11512,10105 11464,10102 11274,10184 11094,10261
@@ -9373,7 +9354,7 @@ Kohlfurter Str.: Umbenennung in Regina-Jones-Str.	?::sign 11512,10105 11464,1010
 #: next_check_id: BAB100-2022
 #: osm_watch: way id="612109178" version="1"
 #: XXX asphaltiert
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-11
 #: check_frequency: 90d
 Betriebsweg Sonnenallee - Neuköllnische Allee: wird der Weg für Radfahrer befahrbar sein? Genaue Lage?	?::inwork 14247,7077 14321,7384
 # 
@@ -11924,6 +11905,7 @@ Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::project
 #: by: https://entwicklungsstadt.de/verlaengerung-der-u3-in-berlin-baubeginn-trotz-rechtlicher-unsicherheiten/
 #: by: https://www.tagesspiegel.de/berlin/verlangerung-der-berliner-u-bahn-linie-3-senat-schliesst-ein-scheitern-nicht-aus-13666486.html
 #: by: https://entwicklungsstadt.de/u-bahn-ausbau-und-wohnungsbau-krumme-lanke-wird-zur-grossbaustelle/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Planfeststellungsverfahren, Erörterungstermin)
 #: next_check: 2030-12-31 (Tsp)
 U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,3442 -1105,3303
 # 
@@ -12000,7 +11982,7 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.berliner-zeitung.de/news/spandau-4500-wohnungen-im-quartier-das-neue-gartenfeld-geplant-li.2313210
 #: by: https://entwicklungsstadt.de/grossprojekt-gartenfeld-bau-der-bruecke-ueber-den-schifffahrtskanal-startet-2025/
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12841 (Vorlage zur Kenntnisnahme)
-#: osm_watch: relation id="10290512" version="5"
+#: osm_watch: relation id="10290512" version="6"
 #: osm_watch: way id="1306187833" version="10"
 #: osm_watch: way id="1306187834" version="19"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
