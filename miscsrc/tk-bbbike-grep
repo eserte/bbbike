@@ -274,7 +274,7 @@ sub toggle_update_from_file {
 	    $selection_content = "";
 	    return;
 	}
-	if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED)\t.*\t([^\t]+)\t/) {
+	if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED|UNCHANGED, EXPIRED)\t.*\t([^\t]+)\t/) {
 	    $selection_content = $1; # VIZ source_id
 	} else {
 	    $selection_content =~ s/^\s+//; $selection_content =~ s/\s+$//; $selection_content =~ s/\s\s+/ /g; # trim
