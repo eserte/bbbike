@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-07-07
+#: last_checked: 2025-07-12
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -140,7 +140,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-06-18 (mapillary) vvv
+#: last_checked: 2025-07-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -385,6 +385,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12918 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12957 (Antrag: dauerhafte Sperrung der Straße)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1578057.php (Abriss beginnt am 10. Juli 2025 und wird ca. acht Wochen dauern)
+#: by: https://entwicklungsstadt.de/wedding-bezirk-mitte-beginnt-abriss-der-einsturzgefaehrdeten-burgsdorfstrasse-1/
 #: osm_watch: way id="549316654" version="39"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
@@ -1003,10 +1004,10 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich; mittlerweile (Mitte Mai 2025) ist ein Abschnitt der Archenholdstr. gesperrt, Halteverbotsschilder bis 27.5.2025
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-14
+#: last_checked: 2025-07-12
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-27 (Halteverbotsschilder)
-#: next_check: 2025-06-30 (Baustellenschild)
+# REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
 # REMOVED --- #: valid: -20250630
 # REMOVED --- Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 17155,11348
 Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
@@ -1029,8 +1030,8 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: osm_watch: way id="42701160" version="40"
 #: osm_watch: way id="1193560283" version="9"
 #: last_checked: 2025-06-14
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2025-08-31 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
@@ -1125,79 +1126,17 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 # 
 ### Marzahn ###
 # 
-#: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
-#: also_indoor: traffic (B,T,ex-H,ex-G)
-#: last_checked: 2025-07-01 (traffic)
-#: check_frequency: 14d (traffic)
-Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
+# REMOVED (bei allen Verkehrsdiensten entfernt) --- #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
+# REMOVED --- #: also_indoor: traffic (B,T,ex-H,ex-G)
+# REMOVED --- #: last_checked: 2025-07-01 (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
+# REMOVED --- Kröver Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18800,12838 18896,12831
 # 
 # REMOVED --- #: next_check_id: KNOTENMARZAHN-2022
 # REMOVED --- #: last_checked: 2024-06-02
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-06-18
 # REMOVED --- Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2::inwork 18831,14823 19013,14905 19175,14968 19196,14976 19200,14963 19214,14966
-# 
-#: next_check_id: EISENACHERGOTHAER-2023
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)
-#: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
-#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/die-riesaer-und-eisenacher-strasse-werden-erneuert_a358349
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10491 (Anfrage)
-#: by: https://berliner-abendblatt.de/2022/10/04/eisenacher-strasse-gesperrt-bauarbeiten-dauern-bis-2025/
-#: by: https://viz.berlin.de/2022/10/eisenacher-strasse/
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10530 (Antrag)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10584 (Antrag)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10804 (Anfrage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1293657.php (Baumfällungen)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1419174.php (Baumfällungen)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11496 (Anfrage)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1448969.php (zum Ersatzneubau der Hellersdorfer Brücken)
-#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/bauzeitliche-verkehrsfuehrung-fuss-radverkehr.png
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/ (Beginn Ende 2025, Bauzeitraum 1,5 Jahre, für den Fuß- und Radverkehr wird eine Behelfskonstruktion eingerichtet)
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/hellersdorfer-bruecken/ (alternative URL)
-#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-bauen/der-senat-stellt-planungen-fuer-ersatzbauwerk-ueber-die-wuhle-vor_a416776 (Sperrung 2025, Hilfsbrücke für Fußgänger+Radfahrer, Bauarbeiten bis Ende 2025)
-#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240724 (Umstellung der Verkehrsführung, weiterhin Sperrung bis Mitte 2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1816390896482398274
-#: by: https://pbs.twimg.com/media/GTUdyWiWUAEX0Jl?format=jpg&name=large
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1539302.php (ab 17.3.2025 Erneuerung der Asphaltdecke, teilweise unter Vollsperrung (der Fahrbahn?); ab Dezember 2025 Brückenbauarbeiten)
-#: by: https://viz.berlin.de/aktuelle-meldungen/asphaltdecke-der-eisenacher-strasse-wird-vollstandig-erneuert/
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1901501247993348324
-#: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022) (bis 29.11.2022) (bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024) (inaktiv)
-#: source_id: viz2021:13.575415,52.540241,04.07.2023,06:00 (hier nur Kfz-Verkehr, bis 13.11.2023) (bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.590289,52.539403,04.07.2023,06:00 (östlicher Abschnitt der Eisenacher; bis 31.03.2024) (bis 31.03.2025) (bis 31.07.2025) (bis 25.07.2024) (inaktiv)
-#: source_id: viz2021:13.588897,52.538931,04.07.2023,07:00 (nur Kfz-Verkehr, bis 31.07.2025) (bis 24.07.2024) (inaktiv)
-#: source_id: viz2021:13.584338,52.539646,25.07.2024,10:00 (Eisenacher, bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.588822,52.539542,25.07.2024,10:00 (Gothaer, bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.588853,52.539896,04.07.2023,06:00 (Gothaer, bis 25.07.2024) (inaktiv)
-#: source_id: viz2021:13.588897,52.538931,25.07.2024,10:00 (Gothaer, bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.588878,52.541211,25.07.2024,10:00 (Gothaer, nördlicher Abschnitt, bis 01.11.2024) (inaktiv)
-#: source_id: viz2021:13.588839,52.538041,25.07.2024,10:00 (Gothaer, südlicher Abschnitt, bis 01.11.2024) (bis 15.11.2024) (inaktiv)
-#: source_id: viz2021:13.588878,52.541211,01.11.2024,07:00 (Gothaer, nördlicher Abschnitt, bis 18.11.2024) (inaktiv)
-#: source_id: bvg2024:195#HIM_FREETEXT_271510 (bis 2025-07-31)
-#: source_id: viz2021:13.584338,52.539646,25.07.2024,07:00 (Eisenacher, bis 17.03.2025 + weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.584338,52.539646,17.03.2025,10:00 (Eisenacher, nur Kfz-Verkehr, bis 16.06.2025 + weitere Arbeiten) (bis 03.04.2025 + ...) (inaktiv)
-#: source_id: bvg2024:195#HIM_FREETEXT_271433 (ohne Endedatum)
-#: source_id: viz2021:13.582334,52.539807,03.04.2025,10:00 (nur Kfz-Verkehr, bis 07.04.2025) (inaktiv)
-#: source_id: viz2021:13.584338,52.539646,07.04.2025,10:00 (nur Kfz-Verkehr, bis 16.06.2025) (bis 17.06.2025 + weitere Arbeiten) (bis 30.06.2025 + ...) (inaktiv)
-#: source_id: viz2021:13.572984,52.540446,30.06.2025,10:00 (bis 02.08.2025)
-#: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
-#: note: Zusätzlich zu den Straßenbauarbeiten werden die Hellersdorfer Brücken neu gemacht (siehe SenUMVK-Seite), vermutlich Ende 2025 - Mitte 2027, mit Behelfsbrücke für den Fuß+Radverkehr
-#: osm_watch: note 3581028 14
-#: last_checked: 2025-06-09 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-08-02 (VIZ-Verkehrsmeldung) vvv
-# REMOVED --- #: next_check: 2025-07-31 vvv
-# REMOVED --- #: osm_watch: way id="175916583" version="11" --- Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
-# REMOVED --- #: osm_watch: way id="26692569" version="17" --- Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2+::inwork; 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
-#: osm_watch: way id="1278425789" version="6"
-Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig, Umwege	q2::inwork; 22899,15073 22726,15082 22599,15105 22577,15109
-Eisenacher Str.: Umweg über Nebenfahrbahn	q2::inwork; 22726,15082 22899,15073
-# REMOVED --- Eisenacher Str.: Fahrbahn gesperrt, Radfahrer können den Bürgersteig benutzen	q2::inwork 22899,15073 23113,15110
-# REMOVED (für Radfahrer frei) --- #: osm_watch: way id="26505949" version="26" --- Eisenacher Str.: Einbahnstraßenregelung, evtl. auch für Radfahrer gültig	q3::inwork; 23113,15110 22899,15073
-# REMOVED --- Gothaer Str.: Fahrbahn gesperrt, Umwege	q2::inwork 22897,15287 22899,15073
-# REMOVED (laut osm hier nicht mehr) --- #: osm_watch: way id="997498311" version="7" --- #: also_indoor: traffic (G,W) --- Gothaer Str.: Fahrbahn gesperrt, mögliche Umwege	q2::inwork 22899,15073 22905,14925
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 ### Schöneberg ###
 # 
@@ -3722,7 +3661,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-07-09
+#: last_checked: 2025-07-12
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-

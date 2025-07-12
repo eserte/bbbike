@@ -3303,7 +3303,7 @@ An der Bahn: Kopfsteinpflaster	Q2- 2126,31207 2132,31245 2120,31350
 An der Bahn: Asphalt	Q0 2120,31350 2082,31535
 Akazienweg: Verbundsteinpflaster	Q1+ 2082,31535 2070,31607 1988,31882 1972,31940
 #: corrected_by: mapillary (Kopfsteinpflaster, Q2- -> ..., neu gemacht?)
-Brieseallee: Asphalt	Q0 1787,31375 1807,31445 1820,31582 1887,31658 1925,31701 1945,31803 1963,31895 1972,31940 1960,31979 1931,32075 1965,32117
+Brieseallee: Asphalt	Q0 1800,31436 1820,31582 1887,31658 1925,31701 1945,31803 1963,31895 1972,31940 1960,31979 1931,32075 1965,32117
 Galileistr.: Beton	Q1+ -6953,-3680 -7094,-3679 -7351,-3685 -7820,-3701 -7918,-3704 -8032,-3710
 Ricarda-Huch-Str. (Potsdam): Asphalt	Q0 -7917,-4792 -7908,-4836 -7856,-4893 -7725,-4890 -7657,-4888 -7557,-4885 -7502,-4930 -7436,-4991 -7395,-5032 -7393,-5137 -7393,-5164 -7390,-5238 -7384,-5346 -7378,-5448 -7373,-5548 -7369,-5648
 Eleonore-Prochaska-Str. (Potsdam): Asphalt	Q0 -7856,-4893 -7874,-4969 -7871,-5055 -7867,-5129
@@ -5246,14 +5246,19 @@ Burghof: Pflasterung	Q1- -46303,3 -46298,88 -46302,103
 Sankt Petri: Kleinsteinpflaster	Q2+ -46304,-19 -46334,-150
 #: by: osm
 #: confirmed_by: mapillary
-# REMOVED (ja) --- #: add_fragezeichen: ist hier tatsächlich asphaltiert?
-Erich-Mühsam-Str.: Asphalt	Q0 1762,31318 1787,31375
-#: by: osm
-#: add_fragezeichen: liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?
-Erich-Mühsam-Str.: Kopfsteinpflaster	Q2 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
-#: by: osm
-#: add_fragezeichen: liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?
-Gartenallee: Kopfsteinpflaster	Q2 1887,31658 2027,31518
+Erich-Mühsam-Str.: Asphalt	Q0 1762,31318 1787,31375 1800,31436
+#: by:mapillary
+Erich-Mühsam-Str.: Asphalt	Q0 1800,31436 1830,31435
+#: by: osm, mapillary
+Erich-Mühsam-Str.: schlechtes Kopfsteinpflaster	Q3 1830,31435 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
+#: by: mapillary
+Ethel-u.-Julius-Rosenberg-Str.: Asphalt	Q0 1918,31279 1923,31292
+#: by: mapillary
+Ethel-u.-Julius-Rosenberg-Str.: schlechtes Kopfsteinpflaster	Q3 1923,31292 1989,31312 2058,31332 2120,31350
+#: by: public imagery
+Karlstr.: schlechtes Kopfsteinpflaster	Q3 1851,31451 1989,31312
+#: by: osm, mapillary
+Gartenallee: schlechtes Kopfsteinpflaster	Q3 1887,31658 2027,31518
 #: by: osm:
 Althüttendorf - Joachimsthal: Asphalt	Q0 33732,63567 33592,63860 33592,64079 33500,64073
 #: by: osm + aus dem Zug heraus gesehen
@@ -9404,6 +9409,7 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+Am Mönchberg (Birkenwerder): Verbundsteinpflaster	Q1 1887,31658 1837,31725
 Scharfschwerdtstr. (Hohen Neuendorf): Asphalt	Q0 1364,27953 1426,28065 1456,28125
 Scharfschwerdtstr. (Hohen Neuendorf): Kleinsteinpflaster	Q2 1456,28125 1453,28175 1448,28276 1432,28356
 Scharfschwerdtstr. (Hohen Neuendorf): schlechtes Kopfsteinpflaster	Q3 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808

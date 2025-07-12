@@ -3173,7 +3173,7 @@ provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beerman
 	RW6;RW6 14879,9961 14921,10047
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
-#: last_checked: 2025-06-30
+#: last_checked: 2025-07-12
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4368,7 +4368,8 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und bröckelnder Beton	RW1; 22599
 #: note: allerdings gibt es kein explizites Radfahrverbot auf der Fahrbahn
 Umleitung für Radfahrer über Nebenfahrbahn	RW10; 22726,15082 22899,15073
 	RW1; 22899,15073 22726,15082 22599,15105
-neu asphaltiert, relativ breit	RW8;RW2 22577,15109 22441,15118
+	RW; 22577,15109 22441,15118
+neu asphaltiert, relativ breit	RW; 22441,15118 22577,15109
 neu asphaltiert, relativ breit	RW2; 22441,15118 22323,15119
 Gehweg für Radfahrer frei	RW1; 22323,15119 22441,15118
 neu asphaltiert, relativ breit	RW2;RW8 22323,15119 22059,15153 21903,15174
@@ -8774,7 +8775,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-zeitung.de/mensch-metropole/pop-up-radweg-in-charlottenburg-so-sieht-der-zeitplan-fuer-den-abbau-in-der-kantstrasse-aus-li.2331378
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
-#: last_checked: 2025-07-03 (mapillary) vvv
+#: last_checked: 2025-07-12 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten

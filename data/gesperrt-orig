@@ -300,8 +300,8 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
 #: last_checked: 2025-06-14
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2025-08-31 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 # 
@@ -4010,7 +4010,7 @@ Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13736,14192
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
-#: last_checked: 2025-06-30
+#: last_checked: 2025-07-12
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
@@ -4092,7 +4092,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-06-29
+#: last_checked: 2025-07-12
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4121,9 +4121,10 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-04
-#: check_frequency: 45d
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder offen?
+#: last_checked: 2025-07-12 (Baugrube zu, bereits fertig asphaltiert --- wann wird eröffnet?)
+#: check_frequency: 7d
+# REMOVED --- #: check_frequency: 45d
 Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
 # 
 # REMOVED (laut osm wieder offen) --- #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898 --- #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant) --- #: osm_watch[closed]: note 4551219 3 --- #: osm_watch: way id="1009956629" version="14" --- #: last_checked: 2025-01-15 --- #: next_check: 2024-10-31 --- Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
@@ -4343,7 +4344,7 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nic
 #: next_check_id: PLANSTRASSE9-2023
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: osm_watch: way id="20420585" version="36"
-#: last_checked: 2025-05-07
+#: last_checked: 2025-07-12
 #: check_frequency: 60d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
@@ -4397,9 +4398,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="29"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-06-14
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
+#: last_checked: 2025-07-12
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2025-08-31 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
 # REMOVED (laut osm komplett offen)
@@ -4463,7 +4464,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-07-02 vvv
+#: last_checked: 2025-07-12 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4511,7 +4512,7 @@ Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
-#: last_checked: 2025-06-13 vvv
+#: last_checked: 2025-07-12 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="5"
@@ -4687,7 +4688,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-12
 #: check_frequency: 180d
 #: next_check: 2027-06-30
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
@@ -4764,7 +4765,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="16"
-#: last_checked: 2025-06-14
+#: last_checked: 2025-07-12
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
@@ -4774,7 +4775,7 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
 #: osm_watch: note 4522174 2
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-12
 #: check_frequency: 60d
 #: next_check: 2025-09-20 (entwicklungsstadt)
 Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700 17851,8662
@@ -4813,7 +4814,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-06-18 (mapillary)
+#: last_checked: 2025-07-12
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
