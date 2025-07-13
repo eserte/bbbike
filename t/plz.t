@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015,2020,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015,2020,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -322,10 +322,10 @@ for my $noextern (@extern_order) {
 	    or diag $dump->(\@res);
 
 	{
-	    local $TODO;
-	    if (!$noextern && $PLZ::AGREP_VARIANT eq 'agrep') { # tre-agrep not affected
-		$TODO = "Both agrep and String::Approx started to fail after addition of some streets to Berlin.coords.data; maybe problems with the iso-8859-1 data here?)";
-	    }
+	    #local $TODO;
+	    #if (!$noextern && $PLZ::AGREP_VARIANT eq 'agrep') { # tre-agrep not affected
+	    #	$TODO = "Both agrep and String::Approx started to fail after addition of some streets to Berlin.coords.data; maybe problems with the iso-8859-1 data here?)";
+	    #}
 	    @res = $plz->look_loop(PLZ::split_street("str.des 17.Juni"),
 				   @standard_look_loop_args);
 	    is(scalar @{$res[0]}, 4, "Hits for Straﬂe des 17. Juni (missing spaces)")
