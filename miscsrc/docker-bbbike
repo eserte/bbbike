@@ -524,7 +524,7 @@ EOF
 	die "Unsupported dist $real_dist";
     }
 
-    $dockerfile .= _dockerfile_fix_sources_list(\%opt);
+    $dockerfile .= _dockerfile_fix_sources_list({%opt, dist => $real_dist, distver => $real_distver});
 
     if ($real_distver eq 'precise') {
 	# http/1.1 pipelining used, but mydebs.bbbike.org cannot
