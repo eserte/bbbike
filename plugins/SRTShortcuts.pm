@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.24;
+$VERSION = 2.25;
 
 use File::Glob qw(bsd_glob);
 
@@ -850,6 +850,9 @@ EOF
 		],
 		[Button => $do_compound->("openrouteservice"),
 		 -command => sub { current_search_in_openrouteservice_org() },
+		],
+		[Button => $do_compound->("GraphHopper (direct)"),
+		 -command => sub { current_search_in_graphhopper() },
 		],
 		'-',
 		[Button => $do_compound->("GraphHopper (via osm)"),
@@ -2114,6 +2117,33 @@ sub current_search_in_brouter {
 
     my $map_style = 'osm-mapnik-german_style,terrarium-hillshading';
     my $url = sprintf "https://brouter.de/brouter-web/#map=%s/%s&lonlats=%s", $map_pos, $map_style, join(';', @coords);
+
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_search_in_graphhopper {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+
+    my @coord_params;
+    {
+	require Karte::Polar;
+	my $o = $Karte::Polar::obj;
+	for my $c (@main::search_route_points) {
+	    my($lon,$lat) = $o->trim_accuracy($o->standard2map(split /,/, $c->[0]));
+	    push @coord_params, "point=$lat,$lon";
+	}
+    }
+
+    # Sample URL
+    # https://graphhopper.com/maps/?point=52.393961%2C13.129012&point=52.382503%2C13.120914&point=52.375192%2C13.110709&point=52.366177%2C13.129581&point=52.360168%2C13.112277&point=52.355647%2C13.103222&point=52.389494%2C13.072743&point=52.386865%2C13.057947&point=52.329438%2C13.056724&point=52.313042%2C13.026586&point=52.278884%2C13.007331&point=52.262373%2C12.926919&point=52.23056%2C12.854855&profile=bike&layer=OpenStreetMap
+
+    my $profile = 'bike';
+    my $layer = 'OpenStreetMap';
+    my $url = sprintf "https://graphhopper.com/maps/?%s&profile=%s&layer=%s", join("&", @coord_params), $profile, $layer;
 
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
