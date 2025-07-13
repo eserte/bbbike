@@ -504,7 +504,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12855 (Antrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20241203-mobilitaetsrat-mitte-protokoll-barrierefrei-entwurf.pdf (Erwähnung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: osm_watch: note 3954718 5 (Fahrradstraße?)
+#: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
 #: last_checked: 2025-07-09 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
@@ -638,7 +638,7 @@ Fürstenberger Str.: Asphalt	Q0 10311,14613 10468,14636
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
 #: osm_watch: way id="4606258" version="31"
-#: osm_watch: way id="184077626" version="20"
+#: osm_watch: way id="184077626" version="21"
 #: osm_watch: way id="49180827" version="25"
 #: last_checked: 2025-07-04 (mapillary)
 #: check_frequency: 60d
@@ -1796,7 +1796,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/kiezblocks-in-pruefung-winsviertel-boetzowkiez-und-gruene-stadt_a423747
 #: osm_watch: way id="4615063" version="39"
-#: last_checked: 2025-06-14
+#: last_checked: 2025-07-13
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -11722,9 +11722,9 @@ Bäkepark: Asphalt	Q0 5131,4207 5097,4221 5063,4266
 (Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2+ 13558,10704 13531,10673
 (Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13919,10583 13902,10546
 (Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13835,10577 13805,10528
-(ehem. Osthafen): Kopfsteinpflaster	Q2 13338,10801 13558,10704 13585,10693 13835,10577 13902,10546 13981,10499 14204,10397 14226,10387 14388,10307 14528,10245
+(ehem. Osthafen): Kopfsteinpflaster	Q2 13338,10801 13433,10759 13558,10704 13585,10693 13835,10577 13902,10546 13981,10499 14204,10397 14226,10387 14388,10307 14528,10245
 #: note: Kleinpflasterstreifen in der Mitte, etwas uneben
-(am ehem. Osthafen): Großsteinpflaster/Kleinsteinpflaster	Q2+ 13326,10765 13531,10673
+(am ehem. Osthafen): Großsteinpflaster/Kleinsteinpflaster	Q2+ 13326,10765 13418,10724 13531,10673
 (am ehem. Osthafen): Beton	Q1+ 13531,10673 13527,10660 13679,10589
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13679,10589 13756,10554
 (am ehem. Osthafen): Beton	Q0- 13756,10554 13805,10528

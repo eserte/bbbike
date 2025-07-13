@@ -38833,7 +38833,7 @@ EOF
 #: by: https://www.weihnachten-an-der-spree.de/
 #: osm_watch: node id="11346915244" version="2"
 # REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
-	2::xmas 13531,10673 13326,10765
+	2::xmas 13531,10673 13418,10724 13326,10765
 EOF
      },
      { from  => 1669788000, # 2022-11-30 07:00
@@ -43396,7 +43396,7 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -47513,7 +47513,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-07-06 (mapillary)
+#: last_checked: 2025-07-11 (mapillary)
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 EOF
@@ -48384,7 +48384,8 @@ EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
        until => 1752875940, # 2025-07-18 23:59
-       text  => 'Homburger Str.: Bauarbeiten zwischen Laubacher Str. und Ahrweilerstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 18.07.2025 23:59',
+#      text  => 'Homburger Str.: Bauarbeiten zwischen Laubacher Str. und Ahrweilerstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 18.07.2025 23:59',
+       text  => 'Homburger Str.: Bauarbeiten zwischen Laubacher Str. und Ahrweilerstr., Sperrung der Fahrbahn, vom 02.06.2025 07:00 bis 18.07.2025 23:59',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.317914,52.473875,02.06.2025,07:00 (bis 18.07.2025)

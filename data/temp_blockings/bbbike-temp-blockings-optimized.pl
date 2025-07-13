@@ -500,44 +500,7 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2023/07/rave-the-planet-parade/
-#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
-#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-300-000-menschen-laut-polizei-angemeldet-id260300
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1823248945088270542
-#: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-rave-the-planet-auf-der-strasse-des-17-juni-in-tiergarten/
-#: by: https://www.ravetheplanet.com/demoroute-2024/
-#: by: https://www.tagesspiegel.de/berlin/anreise-programm-line-up-die-wichtigsten-fragen-und-antworten-zu-rave-the-planet-in-berlin-13957109.html
-#: by: https://viz.berlin.de/aktuelle-meldungen/am-samstag-rave-the-planet-auf-der-strasse-des-17-juni/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltorcurwrk2m
-#: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
-#: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
-#: source_id: viz2021:13.349991,52.514511,17.08.2024,09:00 (bis 18.08.2024) (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,17.08.2024,21:00 (bis 18.08.2024) (inaktiv)
-#: source_id: viz2021:13.35107,52.51429,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
-#: source_id: viz2021:13.370518,52.51725,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
-#: note: Sperrung des Pariser Platzes auf Webcam gesehen (2023)
-#: note: am Samstag weitergehende Sperrungen: alle Straßen Richtung Großer Stern, John-Foster-Dulles-Allee/Scheidemannstraße, Ebertstraße, Behrenstr., Hannah-Ahrendt-Straße (nicht eingetragen)
-Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 8119,12414 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8119,12414
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-	3 7822,12201 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7822,12201
-Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-Großer Stern	2::temp 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031
-',
-         'from' => 1752184800,
-         'id' => 536,
-         'text' => 'Straße des 17. Juni: Veranstaltung (Rave the planet), Straße gesperrt, am 12.07.2025',
-         'type' => 'gesperrt',
-         'until' => 1752393600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7118,7 +7081,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -8543,7 +8506,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
        {
          'data' => '#: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-07-06 (mapillary)
+#: last_checked: 2025-07-11 (mapillary)
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 ',
@@ -9004,7 +8967,7 @@ Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::
 ',
          'from' => 1748754000,
          'id' => 4354,
-         'text' => 'Homburger Str.: Bauarbeiten zwischen Laubacher Str. und Ahrweilerstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 18.07.2025 23:59',
+         'text' => 'Homburger Str.: Bauarbeiten zwischen Laubacher Str. und Ahrweilerstr., Sperrung der Fahrbahn, vom 02.06.2025 07:00 bis 18.07.2025 23:59',
          'type' => 'handicap',
          'until' => 1752875940
        },

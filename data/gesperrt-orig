@@ -4246,7 +4246,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-07-05 vvv
+#: last_checked: 2025-07-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="6"
@@ -4281,7 +4281,7 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="2"
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 #: valid: -20251030
@@ -4396,7 +4396,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: ONTARIOSEE-2023
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ontarioseestra%C3%9Fe-22.1332/#post-22779
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
-#: osm_watch: way id="25796640" version="29"
+#: osm_watch: way id="25796640" version="30"
 #: osm_watch: way id="176946641" version="12"
 #: last_checked: 2025-07-12
 # REMOVED --- #: check_frequency: 30d
@@ -4814,7 +4814,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-13
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4977,6 +4977,16 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt)
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
+# 
+#: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
+#: last_checked: 2025-07-13 vvv
+#: check_frequency: 180d vvv
+#: next_check: 2026-12-31 vvv
+Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
+Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: MOLECULES-2025
 #: by: wosch
@@ -5489,7 +5499,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2025-05-08 (daf)
+#: last_checked: 2025-07-13
 #: check_frequency: 120d
 #: next_check: 2027-12-31
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372

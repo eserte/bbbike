@@ -31,13 +31,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-07-07
+#: last_checked: 2025-07-13
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-06-14 vvv
+#: last_checked: 2025-07-13 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027)
 #: osm_watch: way id="1083527067" version="6"
@@ -48,6 +48,9 @@ Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänge
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="23"
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
+#: osm_watch: way id="1108260165" version="8"
+#: note: etwa 30m lang
+Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -60,7 +63,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="18"
 #: osm_watch: way id="1072662717" version="21"
-#: last_checked: 2025-07-09 (osm)
+#: last_checked: 2025-07-13
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -140,7 +143,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-07-12 vvv
+#: last_checked: 2025-07-13 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -1027,8 +1030,8 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 # REMOVED (nicht mehr) --- #: next_check_id: RUSCHEAMPEL-2024 --- #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert? --- #: last_checked: 2024-05-02 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-14 vvv --- #: valid: -20240614 vvv --- # REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886 --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: ONTARIOSEE-2023
-#: osm_watch: way id="42701160" version="40"
-#: osm_watch: way id="1193560283" version="9"
+#: osm_watch: way id="42701160" version="41"
+#: osm_watch: way id="1193560283" version="10"
 #: last_checked: 2025-06-14
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-08-31 (Halteverbotsschilder)
@@ -2300,7 +2303,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: note 4506575 2
 #: osm_watch: way id="529086013" version="3"
 #: osm_watch: way id="1377234658" version="1"
-#: last_checked: 2025-04-27
+#: last_checked: 2025-07-11 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-15 (Halteverbotsschilder)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
@@ -4696,7 +4699,7 @@ Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
 (Ludwig-Lesser-Park, westlicher Weg): einige Fußgänger	q1 2312,25673 2247,25796 2237,25837 2207,26090
 (Ludwig-Lesser-Park - Am Poloplatz): einige Fußgänger	q1 2207,26090 2204,26290 2199,26440 2199,26450
 #: note: rechtliche Lage unklar, teilweise werden die Wege auch von Autos befahren; Fußgängerfrequenz meist überschaubar vvv
-Osthafen: einige Fußgänger	q1 13326,10765 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
+Osthafen: einige Fußgänger	q1 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
 Osthafen: einige Fußgänger	q1 13531,10673 13558,10704
 #: XXX_prog BS: die Schiene könnte man wie einen Bordstein behandeln, ansonsten q1
 Osthafen: einige Fußgänger, Überquerung einer Schiene notwendig	q3 14207,10338 14226,10387
@@ -5704,10 +5707,10 @@ Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 # 
 #: next_check_id: KANZLERPARK-2024
 #: XXX nach den Bauarbeiten folgenden Eintrag reaktivieren: südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-13 (mapillary)
 #: check_frequency: 45d
 #: next_check: 2025-10-30
-südliches Spreeufer: Engstelle zwischen HDKDW und Bundeskanzleramt	q3::inwork 7745,12603 7782,12623
+südliches Spreeufer: Engstelle zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 #: by: Julia (jbrauch):
 #: note: wobei der südliche Bordstein mit etwas Umweg umfahren werden kann und am nördlichen Ende eine Bordsteinabsenkung existiert

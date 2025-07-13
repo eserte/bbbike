@@ -8,6 +8,7 @@ Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
+Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4::inwork 12558,11920 12617,11888
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -2343,7 +2344,7 @@ Elsenpfuhlstr.: Gehweg	q3 5405,20072 5399,20106
 Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
 (Ludwig-Lesser-Park, westlicher Weg): einige Fußgänger	q1 2312,25673 2247,25796 2237,25837 2207,26090
 (Ludwig-Lesser-Park - Am Poloplatz): einige Fußgänger	q1 2207,26090 2204,26290 2199,26440 2199,26450
-Osthafen: einige Fußgänger	q1 13326,10765 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
+Osthafen: einige Fußgänger	q1 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
 Osthafen: einige Fußgänger	q1 13531,10673 13558,10704
 Osthafen: einige Fußgänger, Überquerung einer Schiene notwendig	q3 14207,10338 14226,10387
 Osthafen: einige Fußgänger, Engstelle mit Kette	q2 13835,10577 13805,10528
@@ -2821,7 +2822,7 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 Retzdorffpromenade: Fußgänger	q2 4886,6819 4985,6818
 Albestr.: enge Straße	q0 5419,7464 5448,7436 5637,7435 5811,7433
 Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
-südliches Spreeufer: Engstelle zwischen HDKDW und Bundeskanzleramt	q3::inwork 7745,12603 7782,12623
+südliches Spreeufer: Engstelle zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
 Waldstr.: enge Straße	q0 9717,20501 9724,20291 9723,20269
