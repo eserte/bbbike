@@ -125,7 +125,7 @@ sub _dockerfile_fix_sources_list ($) {
     my $optref = shift;
     my $dockerfile = '';
 
-    if ($optref->{distver} =~ m{^(wheezy|jessie|stretch)$}) {
+    if ($optref->{distver} =~ m{^(wheezy|jessie|stretch|buster)$}) {
 	$dockerfile .= <<EOF;
 RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian $optref->{distver} main'                   >  /etc/apt/sources.list
 RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian-security/ $optref->{distver}/updates main' >> /etc/apt/sources.list
@@ -508,7 +508,7 @@ EOF
 
     # repository for agrep
     if ($real_dist eq 'debian') {
-	my $debhost = $real_distver =~ m{^(wheezy|jessie|stretch)$} ? 'archive.debian.org' : 'ftp.debian.org';
+	my $debhost = $real_distver =~ m{^(wheezy|jessie|stretch|buster)$} ? 'archive.debian.org' : 'ftp.debian.org';
 	$dockerfile .= <<EOF;
 RUN echo "deb [check-valid-until=no] http://$debhost/debian/ $real_distver non-free" > /etc/apt/sources.list.d/$real_distver-non-free.list
 EOF
