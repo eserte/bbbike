@@ -1688,6 +1688,7 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (Sanierung des Gendarmenmarkts ab 2022 bis 2024, dann gibt\'s hier keine Veranstaltungen)
 #: by: https://classicopenair.de/de/component/content/frontpage (2021 verschoben auf 7. bis 12. Juli 2022)
 #: by: https://www.classicopenair.de/ (2025: 17. bis 21. Juli 2025)
+#: source_id: adac:871932322 (bis 24.07.2025)
 	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
@@ -6746,7 +6747,22 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
          'type' => 'handicap',
          'until' => 1774886400
        },
-       undef,
+       {
+         'data' => '#: next_check_id: ZOSSENB246-2023
+#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024) (inaktiv)
+#: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/sperrung-des-bahnuebergangs-b246-stubenrauchstrasse-verlaengert/ (bis 14.10.2024, Umleitung über "An den Wulzen")
+#: note: laut osm "Straße wird letztmalig vom 14.10. bis 11.11.2024 geöffnet, danach final gesperrt"
+#: also_indoor: traffic (G,ex-W,T,H)
+# REMOVED --- #: last_checked: 2024-09-14 --- #: check_frequency: 10d --- #: next_check: 2024-10-14
+# REMOVED ---	2::inwork 13526,-20548 13412,-20513 13390,-20515
+	2::inwork 12836,-20360 12845,-20377 13095,-20435 13223,-20504 13271,-20531 13390,-20515 13412,-20513 13526,-20548
+',
+         'from' => 1752444000,
+         'id' => 3913,
+         'text' => 'alte B246, Zossen: Sperrung in Höhe des Bahnübergangs, vom 14.07.2025 bis 25.07.2025',
+         'type' => 'gesperrt',
+         'until' => 1753455600
+       },
        undef,
        undef,
        undef,
@@ -8574,13 +8590,13 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
        undef,
        {
          'accept_multi_feature_distance' => 2000,
-         'data' => '#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
-#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
+         'data' => '#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: note: Trafficmeldungen scheinen ungenau zu sein
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: nächste Sperrung: mehrere mit "Termin folgt"
-#: last_checked: 2025-07-08 (website) vvv
+#: last_checked: 2025-07-14 (website) vvv
 #: check_frequency: 7d (website checks) vvv
 #: next_check: 2025-07-18 (Radickestr., ADAC-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025)
@@ -8732,32 +8748,7 @@ Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
          'type' => 'handicap',
          'until' => 1761840000
        },
-       {
-         'data' => '#: source_id: viz2021:13.332624,52.455792,05.05.2025,08:25 (bis 14.05.2025 + weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.332647,52.456942,14.05.2025,09:00 (bis 14.07.2025 + weitere Arbeiten)
-#: note: Außerdem: Gehweg Richtung Süden für Radfahrer frei; gesamte Fahrbahn Richtung Süden ist gegen den Bürgersteig abgesperrt
-	q4::inwork 5588,5579 5675,5573
-	q4::inwork 5676,5664 5587,5655
-#	3nocross::ignrte 5672,5751 5676,5664 5675,5573 5671,5489
-Filandastr. -> Wuthenowstr.	3::inwork 5672,5751 5676,5664 5840,5679
-Filandastr. -> Althoffpl.	3::inwork 5675,5573 5676,5664 5587,5655
-Wuthenowstr. -> Filandastr.	3::inwork 5840,5679 5676,5664 5675,5573
-Wuthenowstr. -> Althoffpl.	3::inwork 5840,5679 5676,5664 5587,5655
-Althoffpl. -> Filandastr.	3::inwork 5587,5655 5676,5664 5672,5751
-Althoffpl. -> Wuthenowstr.	3::inwork 5587,5655 5676,5664 5840,5679
-Filandastr. -> Kantstr.	3::inwork 5676,5664 5675,5573 5838,5563
-Filandastr. -> Althoffpl.	3::inwork 5671,5489 5675,5573 5588,5579
-Althoffpl. -> Filandastr.	3::inwork 5588,5579 5675,5573 5676,5664
-Althoffpl. -> Kantstr.	3::inwork 5588,5579 5675,5573 5838,5563
-Kantstr. -> Filandastr.	3::inwork 5838,5563 5675,5573 5671,5489
-Kantstr. -> Althoffpl.	3::inwork 5838,5563 5675,5573 5588,5579
-',
-         'from' => 1746339900,
-         'id' => 4321,
-         'text' => 'Althoffplatz: Anbindung an die Filandastr. wegen Bauarbeiten gesperrt, Überquerung der Filandastr. nicht möglich, vom 05.05.2025 08:25 bis 14.07.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1752505200
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025)
@@ -8824,7 +8815,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
        undef,
        {
          'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten)
-#: last_checked: 2025-06-26
+#: last_checked: 2025-07-14
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -8870,15 +8861,15 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
 #: source_id: viz2021:13.29402,52.48994,01.07.2025,10:03 (Salzbrunner Str., bis 15.07.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
-#: also_indoor: traffic (T,G,ex-H)
+#: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-06-26 (mapillary) vvv
-# REMOVED --- #: check_frequency: 14d (traffic) vvv
-#: next_check: 2025-07-15 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2025-07-14 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-07-15 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
@@ -9020,17 +9011,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
          'type' => 'handicap',
          'until' => 1755788400
        },
-       {
-         'data' => '#: source_id: viz2021:13.485654,52.517757,02.06.2025,07:00 (hier nur Kfz-Verkehr, bis 04.07.2025) (mittlerweile auch Radverkehr)
-#: note: bei rbb wurde verlängert
-	q4::inwork; 15928,12483 15947,12626
-',
-         'from' => 1748754000,
-         'id' => 4359,
-         'text' => 'Ruschestr.: Bauarbeiten, Fahrbahn und Bürgersteig Richtung Vulkanstr. zwischen Kunzeweg und Gotlindstraße gesperrt, vom 02.06.2025 07:00 bis 31.07.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1753974000
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: traffic (none)
@@ -9077,11 +9058,12 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025)
 #: note: bei rbb bis 31.07.2025 verlängert
+#: note: durch die Umwege + Bordsteine ist q4 berechtigt
 	q4::inwork; 16397,12397 16485,12384 16583,12371
 ',
          'from' => 1750654800,
          'id' => 4367,
-         'text' => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.06.2025 07:00 bis 31.07.2025 17:00',
+         'text' => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Fahrbahn Richtung Osten gesperrt, gemeinsamer Geh- und Radweg (Umwege + Bordsteine), vom 24.06.2025 07:00 bis 31.07.2025 17:00',
          'type' => 'handicap',
          'until' => 1753974000
        },
@@ -9130,7 +9112,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1578727.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
-#: last_checked: 2025-07-06 (research) vvv
+#: last_checked: 2025-07-14 (research) vvv
 #: check_frequency: 10d (indoor check) vvv
 #: next_check: 2025-08-04 (Pressemitteilung) vvv
 #: note: nördlicher Abschnitt (Tegeler Forst - Hermsdorf)
@@ -9172,7 +9154,8 @@ Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13499 (Einwohneranfrage)
 #: note: auch Wege am Tegeler Fließ möglicherweise gesperrt
 Tegeler Fließ	2::temp 4222,22854 4166,22752 4117,22715 4101,22727 4022,22691 3947,22622 3907,22606 3879,22574 3831,22479 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
-Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 2686,21720 2615,21640 2518,21565 2420,21553 2371,21524 2352,21559 2253,21527 2166,21468 2074,21469 2004,21502 1942,21564
+# REMOVED (hier nicht (mehr?), siehe Mapillary) --- Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 2966,22084
+Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 2686,21720 2615,21640 2518,21565 2420,21553 2371,21524 2352,21559 2253,21527 2166,21468 2074,21469 2004,21502 1942,21564
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -9190,16 +9173,17 @@ Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 296
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/so-schlimm-war-es-noch-nie-dieser-stadtrat-warnt-noch-immer-vor-dem-berliner-waldbesuch-13967756.html (Schönwalder Allee bis min. 11.07.2025 gesperrt)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltvyv2f6yc2q (Schönwalder Allee ist offen)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-07-12 (traffic) vvv
+#: last_checked: 2025-07-14 (indoor check) vvv
 #: check_frequency: 7d (indoor/traffic check) vvv
 #: next_check: 2025-08-04 vvv
-Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
+# REMOVED (laut VIZ wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 # REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
 # REMOVED (wieder offen) --- Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
 # REMOVED (zur Bürgerablage vielleicht offen?) --- (Uferweg an der Havel)	2::temp -2723,19255 -2746,19418 -2763,19450 -2780,19530 -2870,19589 -2905,19636 -2908,19715
@@ -9250,14 +9234,15 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 #: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
 #: source_id: adac:119662672
 #: also_indoor: traffic (H,G,T,A,W)
+#: note: bei rbb bis 01.08.2025 verlängert, allerdings hier Kreuzung Kirschenallee
 	q3::inwork 919,11938 1078,11895 1188,11861
 	q3::inwork 1036,11761 1078,11895 1100,11974
 ',
          'from' => 1750861140,
          'id' => 4374,
-         'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, vom 26.06.2025 16:19 bis 14.07.2025 23:59',
+         'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis Anfang August 2025',
          'type' => 'gesperrt',
-         'until' => 1752530340
+         'until' => 1754064000
        },
        {
          'data' => '#: also_indoor: traffic (G,H,T)
@@ -9423,6 +9408,18 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'text' => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025',
          'type' => 'gesperrt',
          'until' => 1759428000
+       },
+       {
+         'data' => '#: source_id: adac:2024889976 (bis 17.10.2025)
+#: source_id: adac:482307388 (bis voraussichtlich 17.10.2025)
+#: also_indoor: traffic (H,B,T)
+	q4::inwork 4690,11369 4897,11354
+',
+         'from' => 1752514480,
+         'id' => 4389,
+         'text' => 'Goethestr.: Bauarbeiten zwischen Knesebeckstr. und Grolmanstr., evtl. sind auch Radfahrer von der Sperrung betroffen, bis 17.10.2025',
+         'type' => 'handicap',
+         'until' => 1760716800
        }
      
 );

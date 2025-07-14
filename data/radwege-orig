@@ -3182,7 +3182,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598 15153,11691 15202,11789 15256,11884
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
-#: last_checked: 2025-06-14
+#: last_checked: 2025-07-14
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -5357,9 +5357,10 @@ Verbundsteinpflaster	RW2; 16868,13611 16866,13532
 Grünbeschichtung	RW3; 16859,12752 16859,12683
 Grünbeschichtung, Leitboys	RW3; 16859,12683 16859,12613
 Grünbeschichtung, teilweise mit Leitboys	RW3; 16859,12613 16857,12600 16831,12419
-	RW3; 16831,12419 16820,12339
+	RW4; 16831,12419 16820,12339
 #: note: Siegfriedstr., Richtung Norden
-Bushaltestelle, Grünbeschichtung, teilweise mit Leitboys	RW3; 16820,12339 16831,12419 16857,12600 16859,12613
+Bushaltestelle	RW3; 16820,12339 16831,12419
+Grünbeschichtung, teilweise mit Leitboys	RW4; 16831,12419 16857,12600 16859,12613
 Grünbeschichtung	RW3; 16859,12613 16859,12683
 	RW0; 16859,12683 16859,12752
 	RW3; 16859,12752 16860,12861
@@ -8751,10 +8752,11 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://entwicklungsstadt.de/neues-verkehrskonzept-fuer-kantstrasse-stoesst-auf-widerstand-im-bezirk/
 #: by: https://www.tagesspiegel.de/berlin/senat-ordnet-ruckbau-an-pop-up-radweg-in-der-berliner-kantstrasse-muss-weg-13800580.html
 #: by: https://www.berliner-zeitung.de/mensch-metropole/pop-up-radweg-in-charlottenburg-so-sieht-der-zeitplan-fuer-den-abbau-in-der-kantstrasse-aus-li.2331378
+#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409490491/pop-up-radweg-in-der-kantstrasse-woran-der-rueckbau-noch-hakt.html
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
 #: last_checked: 2025-07-12 vvv
-#: check_frequency: 45d vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
 # REMOVED (nicht mehr) --- #: note: abschnittsweise mit Baken abgesichert
