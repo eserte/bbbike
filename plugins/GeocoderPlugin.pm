@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.16;
+$VERSION = 3.17;
 
 BEGIN {
     if (!eval '
@@ -223,6 +223,18 @@ sub geocoder_dialog {
 		     my $g = $location->{results}->[0]->{geometry};
 		     ($g->{lng}, $g->{lat});
 		 },
+		},
+
+		'GeocodeXYZ' => {
+		    include_multi => 1, # allow queries together with others
+		    devel_only    => 1,
+		    require       => sub { },
+		    new => sub { Geo::Coder::My_GeocodeXYZ->new },
+		    extract_addr => sub { shift->[0]->{display_name} },
+		    extract_loc  => sub {
+			my($loc) = @_;
+			($loc->[0]->{lon}, $loc->[0]->{lat});
+		    },
 		},
 
 		'LocalOSM' =>
@@ -457,6 +469,98 @@ sub geocoder_dialog {
     }
 }
 
+{
+    package Geo::Coder::My_GeocodeXYZ;
+
+    sub new {
+	my($class, %opt) = @_;
+
+	require LWP::UserAgent;
+	require JSON::XS;
+	require URI::Escape;
+
+	my $self = {
+	    ua      => LWP::UserAgent->new(
+		agent   => "BBBike GeocoderPlugin/$GeocoderPlugin::VERSION GeocodeXYZ",
+		timeout => $opt{timeout} || 10,
+	    ),
+	};
+	$self->{ua}->env_proxy;                  # honour http_proxy etc.
+	bless $self, $class;
+    }
+
+    sub geocode {
+	my($self, %opt) = @_;
+	my $query = $opt{location} or die "geocode(): location parameter missing";
+	my $limit = $opt{limit} || 10;
+
+	# Be polite - geocode.xyz free tier: 1 request / second
+	#sleep 1 unless $opt{_nosleep};
+
+	my $url = sprintf 'https://geocode.xyz/%s?json=1&limit=%d',
+	    URI::Escape::uri_escape_utf8($query), $limit;
+	warn "Send $url\n";
+
+	my $res = $self->{ua}->get($url);
+	warn $res->dump;
+	die "geocode.xyz request failed: " . $res->status_line
+	    unless $res->is_success;
+
+	my $data = eval { JSON::XS::decode_json($res->decoded_content) };
+	die "Invalid JSON from geocode.xyz: $@" if $@;
+
+	# API sometimes sends an error object
+	if (ref $data eq 'HASH' && $data->{error}) {
+	    die "geocode.xyz error: $data->{error}{description}";
+	}
+
+	my @matches =
+	    ref($data) eq 'ARRAY'                 ? @$data :
+	    ref($data) eq 'HASH' && $data->{matches} ? @{$data->{matches}} :
+	    ( $data );  # single match
+
+	my @out;
+	for my $m (@matches) {
+	    my $std = $data->{standard} || {};
+	    my $lat = $data->{latt};
+	    my $lon = $data->{longt};
+
+	    # why isn't the API sending a proper status code?
+	    if (defined $lat && $lat =~ /Throttled/i) {
+		die "Response was throttled:\n" . $res->dump;
+	    }
+
+	    if (defined $lat && defined $lon) {
+		# fix usage of {} instead of null/undef
+		for my $field (qw(statename)) {
+		    if (ref $std->{$field} eq 'HASH') {
+			# most likely an empty hash
+			$std->{$field} = undef;
+		    }
+		}
+
+		my $display = join ', ',
+		    grep { defined && length }
+		    $std->{addresst}, $std->{city}, $std->{statename}, $std->{countryname};
+
+		push @out, {
+		    lat          => $lat + 0,
+		    lon          => $lon + 0,
+		    display_name => $display,
+		    details      => {
+			street  => $std->{addresst},
+			hnr     => $std->{stnumber},
+			city    => $std->{city},
+			state   => $std->{statename},
+			country => $std->{countryname},
+		    },
+		};
+	    }
+	}
+	return wantarray ? @out : \@out;
+    }
+}
+
 1;
 
 __END__
@@ -497,6 +601,11 @@ C<osm2bbd> and C<osm2bbd-postprocess> conversion.
 
 through L<Geo::Coder::OpenCage>. Requires an API key which should be
 stored in F<~/.opencageapikey>.
+
+=item geocode.xyz
+
+through self-written code (not using L<Geo::Coder::XYZ>, as it deems
+to heavy). Does not require an API key, but may throttle requests.
 
 =back
 
