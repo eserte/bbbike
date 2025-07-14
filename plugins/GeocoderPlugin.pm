@@ -48,11 +48,6 @@ if (0) {
 
 my $can_choicescmd;
 
-# None of the available Google geocoders are usable without an API
-# key, and only Geo::Coder::Google is at all available to
-# theoretically use an API key.
-use constant ENABLE_GOOGLE_GEOCODERS => 0;
-
 sub register {
     my $pkg = __PACKAGE__;
     $BBBikePlugin::plugins{$pkg} = $pkg;
@@ -140,44 +135,6 @@ sub geocoder_dialog {
 					  )->pack(-fill => 'x', -expand => 1);
     my $geocoder_api = 'OSM';
     my %apis = (
-		(ENABLE_GOOGLE_GEOCODERS ? (
-		'My_Google_v3' =>
-		{
-		 'label' => 'Google v3',
-		 'short_label' => 'Google',
-		 'devel_only' => 1,
-
-		 'require' => sub { },
-		 'new' => sub { Geo::Coder::My_Google_v3->new },
-		 'extract_loc' => sub {
-		     my $location = shift;
-		     @{$location->{geometry}{location}}{qw(lng lat)};
-		 },
-		 'extract_addr' => sub { shift->{formatted_address} },
-		},
-
-		'Google_v3' =>
-		{
-		 'label' => 'Google v3 (using CPAN module)',
-		 'short_label' => 'Google (v3, CPAN)',
-		 'devel_only' => 1,
-
-		 'require' => sub { require Geo::Coder::Googlev3 },
-		 'new' => sub { Geo::Coder::Googlev3->new },
-		 # extract_loc/addr resused from My_Google_v3, see below
-		},
-
-		'Google' =>
-		{
-		 'label' => 'Google (using CPAN module)',
-		 'short_label' => 'Google (CPAN)',
-		 'devel_only' => 1,
-
-		 'new' => sub { Geo::Coder::Google->new },
-		 # extract_loc/addr resused from My_Google_v3, see below
-		},
-		) : ()),
-
 		'OSM' =>
 		{
 		 'include_multi' => 1,
@@ -283,13 +240,6 @@ sub geocoder_dialog {
 		 },
 		},
 	       );
-    if (exists $apis{My_Google_v3}) {
-	for my $google_api (qw(Google Google_v3)) { # resuse My_Google_v3 functions
-	    if (exists $apis{$google_api}) {
-		$apis{$google_api}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
-	    }
-	}
-    }
 
     my $do_geocoder_init = sub {
 	my $gc = shift;
@@ -438,38 +388,6 @@ sub geocoder_dialog {
 }
 
 {
-    package Geo::Coder::My_Google_v3;
-    sub new { bless {}, shift }
-    sub geocode {
-	my($self, %args) = @_;
-	my $loc = $args{location};
-	require LWP::UserAgent; # should be already loaded anyway
-	require JSON::XS;
-	require BBBikeUtil; # should be already loaded anyway
-	my $ua = LWP::UserAgent->new;
-	$ua->timeout(10);
-	my $url = BBBikeUtil::uri_with_query
-	    (
-	     'http://maps.google.com/maps/api/geocode/json',
-	     [address => $loc,
-	      sensor => 'false'],
-	    );
-	my $resp = $ua->get($url);
-	if ($resp->is_success) {
-	    my $content = $resp->decoded_content(charset => "none");
-	    my $res = JSON::XS->new->utf8->decode($content);
-	    if ($res->{status} eq 'OK') {
-		return $res->{results}->[0];
-	    } else {
-		main::status_message("Fetching $url did not return OK status, but '$res->{status}'", "error");
-	    }
-	} else {
-	    main::status_message("Fetching $url failed: " . $resp->status_line, "error");
-	}
-    }
-}
-
-{
     package Geo::Coder::My_GeocodeXYZ;
 
     sub new {
@@ -615,10 +533,9 @@ Unsupported geocoding services:
 
 =item Google v3
 
-through a built-in class (no CPAN modules other than L<LWP> and
-L<JSON::XS> required) and through L<Geo::Coder::Googlev3>. Currently
-deactived because an API key is required which cannot be supplied to
-the underlying geocoder module.
+was supported through a built-in class (no CPAN modules other than L<LWP> and
+L<JSON::XS> required) and through L<Geo::Coder::Googlev3>. Removed
+since non-free API keys were required.
 
 =item Mapquest
 
