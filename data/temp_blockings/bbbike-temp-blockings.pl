@@ -14954,7 +14954,9 @@ EOF
 #: by: https://classicopenair.de/de/component/content/frontpage (2021 verschoben auf 7. bis 12. Juli 2022)
 #: by: https://www.classicopenair.de/ (2025: 17. bis 21. Juli 2025)
 #: source_id: adac:871932322 (bis 24.07.2025)
-	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
+# REMOVED (hier nicht) ---	q4::temp 9679,11834 9666,11935
+	q4::temp 9666,11935 9656,12031
+# REMOVED (hier nicht) ---	q4::temp 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
 EOF
@@ -24407,14 +24409,15 @@ EOF
 	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2024-08-15 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
-       until => $isodate2epoch->("2024-08-18 23:59:59"),
+     { from  => $isodate2epoch->("2025-08-14 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
+       until => $isodate2epoch->("2025-08-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 8, start => "2020-10-25T00:00:00"]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 16.8.2024 bis 18.8.2024 möglich',
+#      text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 16.8.2024 bis 18.8.2024 möglich',
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 15.8.2025 bis 17.8.2025 möglich',
        type  => 'gesperrt',
-       source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
+#: by: http://www.winzerfest-köpenick.de/
 #: by: https://www.laubinger.de/event/koepenickerwinzersommer/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
 # REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
@@ -28998,7 +29001,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-07-04
+#: last_checked: 2025-07-15
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29143,13 +29146,15 @@ EOF
 	2::inwork 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936 14308,5627
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-27 07:00:00"), # 1535691600, # 2018-08-31 07:00
-       until => $isodate2epoch->("2019-05-28 12:30:00"), # 1535886000, # 2018-09-02 13:00
-       #text  => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
-       text  => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 28.05.2019 zwischen 07:00 und 12:30 Uhr',
+     { from  => $isodate2epoch->("2025-07-19 00:00:00"), # $isodate2epoch->("2019-05-27 07:00:00"), # 1535691600, # 2018-08-31 07:00
+       until => $isodate2epoch->("2025-07-20 10:00:00"), # $isodate2epoch->("2019-05-28 12:30:00"), # 1535886000, # 2018-09-02 13:00
+#      text  => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
+#      accept_multi_feature_distance => 4000,
+#      text  => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 28.05.2019 zwischen 07:00 und 12:30 Uhr',
+       text  => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 20.07.2025 vormittags',
        type  => 'gesperrt',
-       #accept_multi_feature_distance => 4000,
        data  => <<EOF,
+#: source_id: bvg2024:218#HIM_FREETEXT_292925 (bis 2025-07-20)
 	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
 	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
 #	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
@@ -35613,23 +35618,26 @@ EOF
 	q3::inwork; 12737,15154 12870,15342
 EOF
      },
-     { from  => 1640905200, # 2021-12-31 00:00
-       until => 1735998265, # undef, # $isodate2epoch->("2024-08-31 18:00:00"), # 1672527600, # 2023-01-01 00:00
-       text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt', # vom 01.01.2022 bis 31.08.2024',
+     { from  => 1752605472, # 1640905200, # 2021-12-31 00:00
+       until => $isodate2epoch->("2025-10-11 20:00:00"), # 1735998265, # undef, # $isodate2epoch->("2024-08-31 18:00:00"), # 1672527600, # 2023-01-01 00:00
+#      text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt', # vom 01.01.2022 bis 31.08.2024',
+       text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Mitte Oktober 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.306069,52.502061,01.01.2022,06:00 (mittlerweile inaktiv) (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
+#: source_id: adac:1917057020 (bis 11.10.2025)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
-#: note: vermutlich nur im Bereich Sybelstr. 14
-#: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
+# REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: osm_watch: way id="1300235970" version="2"
 #: osm_watch: way id="1039329567" version="6"
 # REMOVED (beendet) --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-04 (architektur-urbanistik)
 # REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
-	2::inwork 3731,10640 3764,10580
+#	2::inwork 3731,10640 3764,10580
 # REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
+#: note: laut rbb bis 11.10.2025
+	q4::inwork 3731,10640 3764,10580
 EOF
      },
      { from  => $isodate2epoch->("2023-11-13 00:00:00"), # undef, # 
@@ -37759,23 +37767,27 @@ EOF
      },
      { from  => 1663524336,
        until => undef, # XXX Einschränkungen werden länger dauern als bei der VIZ angegeben
-       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung; außerdem sind Löptener Str., Gerstnerweg und südliche Mellener Str. Einbahnstraßen; ab 19.9.2022',
+#      text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung; außerdem sind Löptener Str., Gerstnerweg und südliche Mellener Str. Einbahnstraßen; ab 19.9.2022',
+       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelungen; außerdem sind Goltzstr., Löptener Str., Gerstnerweg und südliche Mellener Str. Einbahnstraßen; voraussichtlich bis März 2026',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1242149.php',
        data  => <<EOF,
 #: next_check_id: BAHNHOF-2022
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1242149.php
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/220907_ba1_umleitung_karte_komprimiert.pdf
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
+#: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026
 #: last_checked: 2025-05-12 (mapillary) vvv
 #: next_check: 2025-08-29 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
+Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
 Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
 Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED (hier nicht mehr) --- Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
+Goltzstr.	q4::inwork; 10983,-2116 10763,-2276 10642,-2371 10563,-2432 10454,-2520
 #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -44595,6 +44607,7 @@ EOF
 #: by: https://entwicklungsstadt.de/baufortschritt-in-alt-wittenau-gesobau-quartier-nimmt-gestalt-an/ (Fertigstellung Sommer 2026)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1574495.php
 #: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
+#: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/
 #: last_checked: 2025-06-11 (mapillary)
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 5476,20372 5801,20339
@@ -44680,7 +44693,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-10 vvv
+#: last_checked: 2025-07-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -48211,12 +48224,12 @@ EOF
 #: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
 #: last_checked: 2025-07-14 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
-# REMOVED --- #: next_check: 2025-07-15 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: check_frequency: 14d (traffic) vvv
+#: next_check: 2025-08-05 (rbb-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 EOF
@@ -48464,7 +48477,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-15
 #: next_check: 2025-08-16 (Halteverbotsschilder)
 	q4::inwork; 12238,11931 12413,11901
 EOF
@@ -48478,7 +48491,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-03 (mapillary)
+#: last_checked: 2025-07-15
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -48531,6 +48544,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025)
+#: source_id: adac:2089388170 (bis 31.07.2025)
 #: note: bei rbb bis 31.07.2025 verlängert
 #: note: durch die Umwege + Bordsteine ist q4 berechtigt
 	q4::inwork; 16397,12397 16485,12384 16583,12371
@@ -48789,9 +48803,9 @@ EOF
 	q4::inwork 14522,16260 14628,16249
 EOF
      },
-     { from  => $isodate2epoch->("2025-07-10 00:00:00"), # 1751752800, # 2025-07-06 00:00
+     { from  => $isodate2epoch->("2025-07-15 00:00:00"), # 1751752800, # 2025-07-06 00:00
        until => $isodate2epoch->("2025-08-05 18:00:00"), # 1754085599, # 2025-08-01 23:59
-       text  => 'Friedrichshagener Str.: Bauarbeiten an der Einmündung Salvador-Allende-Str., Umwege, ggfs. absteigen, voraussichtlich vom 11.7.2025 bis Anfang August 2025',
+       text  => 'Friedrichshagener Str.: Bauarbeiten an der Einmündung Salvador-Allende-Str., Umwege, ggfs. absteigen, voraussichtlich vom 16.7.2025 16:00 Uhr bis Anfang August 2025',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltdzi3chw227
@@ -48908,6 +48922,18 @@ EOF
 #: source_id: adac:482307388 (bis voraussichtlich 17.10.2025)
 #: also_indoor: traffic (H,B,T)
 	q4::inwork 4690,11369 4897,11354
+EOF
+     },
+     { from  => 1752606169, # 2025-07-15 21:02
+       until => 1758319200, # 2025-09-20 00:00
+       text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, evtl. sind auch Radfahrer betroffen, bis 19.09.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: THOMAS-2025
+#: source_id: adac:850837566 (bis voraussichtlich 19.09.2025)
+#: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
+#: add_fragezeichen Sind Radfahrer tatsächlich von den Bauarbeiten betroffen?
+	q4::inwork; 12918,7600 12972,7602
 EOF
      },
     );

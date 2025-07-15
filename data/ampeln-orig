@@ -43,8 +43,8 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: last_checked: 2025-07-14 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: next_check: 2025-07-15 (VIZ-Verkehrsmeldung) 
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: next_check: 2025-08-05 (rbb-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20250619
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
@@ -3573,7 +3573,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-07-12 vvv
+#: last_checked: 2025-07-15 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
