@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.45;
+$VERSION = 2.46;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -189,7 +189,7 @@ sub register {
 	  callback => sub { showmap_herewego(@_) },
 	  callback_3_std => sub { showmap_url_herewego(@_) },
 	  ($images{HEREWeGo} ? (icon => $images{HEREWeGo}) : ()),
-	  # no traffic tag here, as "Map Compare (profile traffic)" shows the same data
+	  tags => [qw(traffic)], # actually the map defaults to not showing the traffic layer, but this can be just be configured using personal cookies
 	};
     $main::info_plugins{__PACKAGE__ . "_ADAC"} =
 	{ name => "ADAC",
