@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.46;
+$VERSION = 2.47;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -124,13 +124,6 @@ sub register {
 		  tags => [qw(aerial)],
 		};
 	}
-	$main::info_plugins{__PACKAGE__ . "_MapCompare_Traffic"} =
-	    { name => "Map Compare (profile traffic)",
-	      callback => sub { showmap_mapcompare(@_, profile => "traffic") },
-	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "traffic") },
-	      ($images{_MapCompare} ? (icon => $images{_MapCompare}) : ()),
-	      tags => [qw(traffic)],
-	    };
     }
     if ($is_berlin) {
      	$main::info_plugins{__PACKAGE__ . "_BvgStadtplan"} =

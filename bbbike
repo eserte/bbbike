@@ -15102,7 +15102,7 @@ sub show_info {
 		    Tk->break;
 		},		    
 		($google_photo ? (icon => $google_photo) : ()),
-		tags => [qw(aerial streetview pubtrans bicycle)],
+		tags => [qw(traffic aerial streetview pubtrans bicycle)],
 	    };
 	}
 
