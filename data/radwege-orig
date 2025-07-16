@@ -3413,9 +3413,9 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 	RW3; 8935,13844 8841,13800
 # 
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
-neu asphaltiert, relativ breit, für Radfahrer freigegeben Busspur gilt Mo-Fr 6-18 Uhr	RW1; 12640,13814 12701,13873 12766,13942
+neu asphaltiert, 2m breit, für Radfahrer freigegeben Busspur gilt Mo-Fr 6-18 Uhr	RW1; 12640,13814 12701,13873 12766,13942
 #: historical_note: früher (bis 2024/2025): Busspur gilt Mo-Fr 6-18 Uhr, RW5; außerdem hat hier noch ein alter enger Radweg existiert, der aber nicht weiter "beworben" wurde
-neu asphaltiert, relativ breit, für Radfahrer freigegeben Busspur gilt Mo-Fr 6-18 Uhr	RW1; 12766,13942 12856,14042 12901,14093
+neu asphaltiert, 2m breit, für Radfahrer freigegeben Busspur gilt Mo-Fr 6-18 Uhr	RW1; 12766,13942 12856,14042 12901,14093
 # 
 	RW3; 12901,14093 12856,14042 12766,13942 12701,13873 12640,13814
 	RW4;RW3 12640,13814 12578,13800
@@ -4377,7 +4377,9 @@ neu asphaltiert	RW1; 23021,13982 23049,14066 23118,14276 23049,14066 23021,13982
 	RW1; 23033,12367 23100,12269
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6665 (Befahren des Radwegs wieder möglich machen)
 vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
-	RW1;RW1 23038,12706 22967,12647 22817,12525 22603,12359
+	RW1; 23038,12706 22967,12647 22817,12525 22679,12418 22603,12359
+Verbundsteinpflaster	RW1; 22603,12359 22679,12418
+	RW1; 22679,12418 22817,12525 22967,12647 23038,12706
 	RW2;RW2 21108,11628 21124,11462 21130,11384 21133,11348 21134,11331 21137,11294 21138,11271
 	RW1; 21138,11271 21138,11254 21136,11134
 	RW1;RW1 20521,11494 20569,11492 20616,11490 20641,11488 20650,11488 20720,11484 20729,11483 20818,11480 20828,11480 20959,11472 21074,11465 21124,11462
@@ -4388,13 +4390,13 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 # 
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
-#: last_checked: 2025-07-05 (mapillary) vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2025-07-16 vvv
+# REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-09-30 (VIZ-Verkehrsmeldung) vvv
 provisorische Radspur	RW4; 21152,11945 21166,12023 21190,12193 21199,12258
-gemeinsamer Geh- und Radweg, Gehwegplatten, Asphalt	RW; 21199,12258 21190,12193 21166,12023 21152,11945
+gemeinsamer Geh- und Radweg, Gehwegplatten und Asphalt	RW2; 21199,12258 21190,12193 21166,12023 21152,11945
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -5010,7 +5012,8 @@ Gehweg für Radfahrer frei	RW1; 24563,11980 24556,12056 24554,12100 24556,12181
 	RW1;RW1 21549,8982 21508,8988 21430,9026 21383,9045
 	RW3;RW3 21383,9045 21363,9055 21354,9059
 	RW1;RW1 21354,9059 21312,9077 21205,9124 21088,9178
-sehr schmale prähistorische Radwege	RW1;RW1 21055,8374 21072,8742 21079,8931 21088,9178
+sehr schmale prähistorische Radwege	RW1; 21055,8374 21072,8742 21079,8931 21088,9178
+sehr schmale prähistorische Radwege	RW1; 21088,9178 21079,8931
 Verbundsteinpflaster	RW1;RW1 7115,3003 7049,3005 6914,3093 6788,3181
 Verbundsteinpflaster	RW2;RW2 6788,3181 6712,3237
 enger Radweg, kein Unterstreifen gegen parkende Autos	RW1;RW1 4061,7992 4067,7726 4066,7514 4064,7396 4063,7287

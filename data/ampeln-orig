@@ -55,14 +55,14 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # REMOVED --- #: valid: -20250627
 # REMOVED --- Roelckestr./Große Seestr.: provisorische Ampel	X::inwork 13754,17133
 # 
-#: next_check_id: GRUNEWALDSTR-2025
-#: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025) (inaktiv)
-#: source_id: viz2021:13.356365,52.490201,24.04.2025,12:00 (bis 15.05.2025 + weitere Bauabschnitte) (inaktiv)
-#: note: bei rbb bis 08.07.2025 verlängert, nun bis 16.07.2025
-#: last_checked: 2025-04-27
-#: next_check: 2025-07-16
-#: valid: -20250716
-Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
+# REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
+# REMOVED --- #: source_id: viz2021:13.35635,52.49021,25.04.2025,10:06 (bis 15.05.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.356365,52.490201,24.04.2025,12:00 (bis 15.05.2025 + weitere Bauabschnitte) (inaktiv)
+# REMOVED --- #: note: bei rbb bis 08.07.2025 verlängert, nun bis 16.07.2025
+# REMOVED --- #: last_checked: 2025-04-27
+# REMOVED --- #: next_check: 2025-07-16
+# REMOVED --- #: valid: -20250716
+# REMOVED --- Grunewaldstr./Elßholzstr.: provisorische Ampel	X::inwork::alternating 7202,9329
 # 
 # REMOVED (bei rbb entfernt) --- #: source_id: viz2021:13.483073,52.452066,25.04.2025,07:00 (bis 06.05.2025) (bis 14.05.2025) (bis 22.05.2025) (bis 24.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...)
 # REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lnmh7lfw4k2j
@@ -109,6 +109,7 @@ Liebenwalder Str./Heiligenstadter Str.: Gegenverkehrsregelung	X::inwork::alterna
 # REMOVED --- Wartenberger Weg: Gegenverkehrsregelung	X::inwork::alternating 15882,19165
 # 
 #: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025)
+#: last_checked: 2025-07-16
 #: next_check: 2025-07-31
 #: valid: -20250731
 Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
@@ -417,25 +418,25 @@ Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: check_frequency: 120d
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2025-03-08
+#: last_checked: 2025-07-16
 #: check_frequency: 120d
 Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2025-03-08
+#: last_checked: 2025-07-16
 #: check_frequency: 120d
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
 #: note: Anforderungsampel, man bekommt zügig grün
 #: source_id: viz2021:13.56016,52.48441,01.07.2025,18:32 (Ampelanlage außer Betrieb (also existiert sie noch)) (inaktiv)
-#: last_checked: 2025-07-01 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-07-16
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2025-03-08
+#: last_checked: 2025-07-16
 #: check_frequency: 120d
 Köpenicker Str./Hadubrandstr.	F::inwork 21055,8374
 #: note: anstelle des Zebrastreifens, also eigentlich südlich des eingetragenen Punktes
-#: last_checked: 2025-03-08
+#: last_checked: 2025-07-16
 #: check_frequency: 120d
 Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 

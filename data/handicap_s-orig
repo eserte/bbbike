@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-16
 #: check_frequency: 45d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -389,10 +389,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12957 (Antrag: dauerhafte Sperrung der Straße)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1578057.php (Abriss beginnt am 10. Juli 2025 und wird ca. acht Wochen dauern)
 #: by: https://entwicklungsstadt.de/wedding-bezirk-mitte-beginnt-abriss-der-einsturzgefaehrdeten-burgsdorfstrasse-1/
-#: osm_watch: way id="549316654" version="39"
+#: osm_watch: way id="549316654" version="40"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-06-09 (osm)
+#: last_checked: 2025-07-15 (osm)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
 #: next_check: 2025-09-10 (Pressemitteilung, Abrissarbeiten)
@@ -1040,7 +1040,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-06-29
+#: last_checked: 2025-07-16
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1262,7 +1262,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: note: Halteverbotsschilder bis 19.12.2025, laut Baustellenschild geplante Fertigstellung der Bahnbrücke 03/2026
 #: osm_watch: note 4721088 2
 #: also_indoor: traffic (T)
-#: last_checked: 2025-04-21
+#: last_checked: 2025-07-16
 #: check_frequency: 120d
 #: next_check: 2025-12-19 (Halteverbotsschilder)
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
@@ -2213,7 +2213,7 @@ Wuhlewanderweg: enge Unterführung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fußgänger	q1 22270,11210 22234,11198
 Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22027,6608 22050,6619 21976,6848 21896,6937 21590,7211 21569,7252 21567,7284 21611,7548 21609,7579 21620,7647 21596,7707 21565,7748 21616,7863 21629,7921
 Bismarcksfelder Str.: enge Brücke	q2 21629,7921 21599,7904
-Wuhlewanderweg: Fußgänger	q1 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21190,8467 21173,8576 21183,8738 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21354,9059
+Wuhlewanderweg: Fußgänger	q1 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21284,8364 21277,8379 21190,8467 21173,8576 21183,8738 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21354,9059
 Wuhlewanderweg: Fußgänger	q1 21383,9045 21467,9236 21517,9489 21587,9609 21633,9731 21675,9798 21691,9874
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21620,9979 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21727,10582 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fußgänger	q1 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22215,11137
@@ -2927,19 +2927,8 @@ Kurt-Weill-Gasse: Fußgängerzone	q4 23993,14797 23961,14841 23918,14876 23882,149
 Clara-Zetkin-Weg: Fußgänger	q1 22572,13025 22591,12959 22612,12966 22687,12986 22690,12979 22768,13004
 (Clara-Zetkin-Platz - Bansiner Str.): Fußgänger	q1 22612,12966 22623,12944
 Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
-#: by: https://www.euroboden.de/ (Insolvenzverfahren wurde eröffnet)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/lion-feuchtwanger-61-euroboden.1201/page-2#post-22689
-#: by: https://www.die-hellersdorfer.berlin/2024/03/22/eigentumswohnungen-in-kaulsdorf-nord-vor-der-fertigstellung/ (Fertigstellung am 30.06.2024)
-#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/vielfaeltige-probleme-beim-bauprojekt-lion_a411971
-#: by: https://portfolio.bestplace-immobilien.de/lion/ (Seite existiert nicht mehr, 500er)
-#: by: https://entwicklungsstadt.de/lion-feuchtwanger-61-so-sieht-der-neue-wohnkomplex-in-kaulsdorf-aus/
 #: note: gemeinsamer Geh- und Radweg
-#: XXX_prog BS am nördlichen Ende (ansonsten q1)
-#: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
-# REMOVED (ist jetzt was anderes) --- #: osm_watch: way id="733001657" version="5"
-#: last_checked: 2025-04-07 (daf)
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2024-06-30
+#: XXX_prog BS am nördlichen Ende, oder westlich/östlich gelegene Absenkung nutzen (weitere ca. 20m auf dem Hochbord) (ansonsten q1-)
 Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999
 (Erich-Kästner-Str. - Peter-Huchel-Str.): eng, Fußgänger	q2 23070,13711 23042,13657 23060,13624 23052,13586 23019,13551 23007,13509
 (Carola-Neher-Str. - U-Bhf. Cottbusser Platz): Fußgänger	q1 23438,14355 23476,14409 23458,14439
@@ -6805,7 +6794,7 @@ Kulmseestr.: einige Fußgänger	q1 20252,12262 20303,12230
 # REMOVED (hmmm, warum habe ich das confirmed? aber siehe auch die kurze Rampe oben) --- #: by: Andreas Wettig: --- #: confirmed_by: srt --- (Kniprodestr./Michelangelostr. - Puccinistr.): Fußweg mit Bordsteinkanten	q2- 13973,15259 13905,15306 13809,15370
 # REMOVED (existiert nicht mehr) --- #: by: Sebastian Koch: --- (Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21214,11331 21257,11323 21286,11319 21300,11369
 #: by: Elke Ortloff:
-Eisweg: enge Straße	q1+ 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
+Eisweg: enge Straße	q1+ 23565,10957 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
 #: by: Manuela Baumgärtel:
 Lauxweg: enge Straße	q1 8979,3347 8921,3208
 #: by: Esther Helmert:

@@ -183,7 +183,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-06-29 vvv
+#: last_checked: 2025-07-16 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4092,7 +4092,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-16
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4122,7 +4122,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: last_checked ^^^
 # 
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder offen?
-#: last_checked: 2025-07-12 (Baugrube zu, bereits fertig asphaltiert --- wann wird eröffnet?)
+#: last_checked: 2025-07-16 (Baugrube zu, bereits fertig asphaltiert --- wann wird eröffnet?)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 45d
 Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
@@ -4456,7 +4456,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-16
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4464,7 +4464,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-07-12 vvv
+#: last_checked: 2025-07-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4502,7 +4502,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-16
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4649,11 +4649,11 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11443 (Antrag)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-fehlen-personal-und-finanzmittel-fuer-die-auftragsvergabe_a431449 (Sperrung mindestens bis 2026 (Anfang oder Ende?))
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
-#: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
+# REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="21"
-#: last_checked: 2024-10-19
+#: last_checked: 2025-07-16
 #: check_frequency: 360d
-#: next_check: 2026-01-01
+# REMOVED (ein Baubeginn 2025 erscheint unwahrscheinlich) --- #: next_check: 2026-01-01
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 # 
 # REMOVED (laut osm nicht mehr existent) --- #: next_check_id: FAHLENBERGBRUECKE-2022 --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/ersatzneubau-der-neuen-fahlenbergbruecke-soll-nun-ende-2022-fertig-sein_a299399 (Ertüchtigung der Umfahrungsstrecke im 2. Quartal 2021; Ende 2022 wird der Neubau fertig) --- #: by: https://ausschreibungen-deutschland.de/798592_Ersatzneubau_der_Neuen_Fahlenbergbruecke_mit_BehelfsbrueckeReferenznummer_der_Bekanntmachung_2021_Berlin (Zuschlag am 2021-06-14) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4373 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/7kYPgKDTg39gIf6aWX7vbEWVjRJ836jvno5mmQnD/PGefGtq/50-Anlagen/05/B0274ZB2.pdf (2. Zwischenbericht) (Fertigstellungstermin: 06.04.2023) --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/neue-fahlenbergbruecke-wird-jetzt-fruehestens-im-sommer-2023-fertig_a336881 (unklarer Artikel; Fertigstellung Ende 2. Quartal 2023) --- #: by: https://leute.tagesspiegel.de/treptow-koepenick/macher/2022/08/08/233796/auch-der-naechste-brueckenbau-stagniert/ (Lieferung der Behelfsbrücke im Oktober 2022; Fertigstellung der neuen Brücke im 4. Quartal 2023) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-12659.pdf (Behelfsbrücke im 4. Quartal 2022 fertig) --- #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (Behelfsumfahrung für das IV. Quartal 2022 geplant) (Ende der Abbrucharbeiten der alten Brücke: I. Quartal 2025) --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/wieder-verzoegerung-bei-der-neuen-fahlenbergbruecke_a354938 (Fertigstellung Ende 2023) --- #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/?date=20221019 --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (alternative URL) --- #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/verkehrsfuehrung_bauphase_2_phase_3.pdf (Geh/Radweg auf der südlichen Seite, Gegenverkehrsregelung vermutlich nur für Kfz-Verkehr) --- #: by: https://berliner-abendblatt.de/2022/10/19/neue-fahlenbergbruecke-wird-gesperrt/ --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1393957.php (Inbetriebnahme voraussichtlich im 2. Quartal 2024) --- #: by: https://berliner-abendblatt.de/berlin-news/umfangreiche-baumassnahmen-an-neuer-fahlenbergbruecke-id239562 --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/grossmontage-der-fahlenbergbruecke_a402202 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1462365.php (Eröffnung) --- #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/brueckenneubau-freigegeben_a420245 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1517523.php (Abriss bis 13.01.2025) --- #: source_id: viz2021:13.703966,52.4026,16.08.2021,09:00 (bis 27.8.2021) (inaktiv) --- #: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv) --- #: source_id[inactive]: bvg2021:369#BVG310116_0 --- #: source_id[inactive]: bvg2021:369#BVG310521_0 --- #: source_id: viz2021:13.70381,52.40265,28.10.2022,06:00 (bis 01.03.2024) (inaktiv) (bis 30.06.2024) (inaktiv) (bis 31.07.2024) (inaktiv) --- #: source_id: viz2021:13.704581,52.402425,19.07.2023,17:30 (bis 20.07.2023) (inaktiv) --- #: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023) (bis 01.03.2024) (bis 30.06.2024) (bis 31.07.2024) (bis 03.07.2024) (inaktiv) --- #: note: laut rbb wird morgen die Neue Fahlenbergbrücke eingeweiht --- #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv --- # REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17" --- # REMOVED (gelöscht) --- #: osm_watch: way id="897616703" version="2" --- #: osm_watch: way id="1110732558" version="16" --- #: osm_watch: way id="325319592" version="15" --- #: osm_watch: note 4574641 4 --- #: priority: #A --- #: last_checked: 2024-07-14 (mapillary) --- # REMOVED --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2022-10-28 --- # REMOVED --- #: next_check: 2024-07-03 --- Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19 --- #: XXX Wird bis Ende 2024 zurückgebaut --- mittlerweile laut MVKU-Seite bis I. Quartal 2025 --- #: next_check: 2025-01-13 --- Neue Fahlenbergbrücke (Ersatzbrücke)	2::inwork 30926,-53 31103,-142
