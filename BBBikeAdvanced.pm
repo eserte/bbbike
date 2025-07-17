@@ -2941,6 +2941,8 @@ sub recall_some_subs {
     push @info, "Reset bindings";
     set_bindings();
     push @info, "Reload message catalog";
+    set_used_comments_types(); # for some reason the old values are lost, maybe due to a lexical?
+    push @info, 'Set used comments types';
     Msg::setup_file();
     if ($has_errors) {
 	status_message(join("\n",@info), "die");
