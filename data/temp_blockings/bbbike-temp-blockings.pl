@@ -720,12 +720,11 @@ EOF
 #: by: https://www.berlin.de/events/2094393-2229501-lesbischschwules-stadtfest.html (19. Juli 2025 - 20. Juli 2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1814521868080050462
 #: by: https://pbs.twimg.com/media/GSsvMEiWsAALOVt?format=jpg&name=large
-	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
-	2::temp 6729,10212 6941,10329 6971,10346
-	2::temp 6636,10492 6628,10318 6626,10155
-	2::temp 6487,10277 6628,10318 6719,10347
-	2::temp 6753,10446 6719,10347 6729,10212 6739,10120
-	2::temp 6941,10329 6978,10319 7036,10313
+Motzstr.	2::temp 6499,10086 6609,10147 6626,10155 6729,10212 6941,10329 6971,10346
+Kalckreuthstr.	2::temp 6636,10492 6628,10318 6626,10155
+Fuggerstr.	2::temp 6487,10277 6628,10318 6719,10347
+Eisenacher Str.	2::temp 6753,10446 6719,10347 6729,10212 6739,10120
+Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
 #: note: laut Karte nur eingeschränktes Halteverbot vvv
 Eisenacher Str. ab Nollendorfstr.	q4::temp 6739,10120 6741,10017
 Gossowstr.	q4::temp 6609,10147 6630,9990
@@ -8743,13 +8742,15 @@ EOF
 	q4::inwork 25543,-12403 25912,-11956
 EOF
      },
-     { from  => 1725552000, # 2024-09-05 18:00, # 1182031200, # 2007-06-17 00:00
-       until => 1725897600, # 2024-09-09 18:00, # 1182549600, # 2007-06-23 00:00
-#       text  => 'L 040 L 23 Storkow-L 39 Friedersdorf Bahnübergang bei Kummersdorf Gleisbauarbeiten Vollsperrung 18.06.2007-22.06.2007 ',
-       text  => 'Storkow-Friedersdorf: Bahnübergang bei Kummersdorf wegen Gleisbauarbeiten gesperrt, 06.09.2024 18:00 Uhr bis 09.09.2024 18:00 Uhr',
+     { from  => $isodate2epoch->("2025-07-17 00:00:00"), # 1725552000, # 2024-09-05 18:00, # 1182031200, # 2007-06-17 00:00
+       until => $isodate2epoch->("2025-07-18 16:00:00"), # 1725897600, # 2024-09-09 18:00, # 1182549600, # 2007-06-23 00:00
+#      text  => 'L 040 L 23 Storkow-L 39 Friedersdorf Bahnübergang bei Kummersdorf Gleisbauarbeiten Vollsperrung 18.06.2007-22.06.2007 ',
+#      text  => 'Storkow-Friedersdorf: Bahnübergang bei Kummersdorf wegen Gleisbauarbeiten gesperrt, 06.09.2024 18:00 Uhr bis 09.09.2024 18:00 Uhr',
+       text  => 'Storkow: Bahnübergang Kummersdorfer Hauptstraße auf der L40 voll gesperrt wegen Umbauarbeiten, 18.07.2025 06:00 Uhr bis 18.07.2025 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 246700600 (bis 09.09.2024) (inaktiv)
+#: source_id: 256700393 (bis 18.07.2025)
 	2::inwork 44229,-14131 43456,-14384 42430,-14398
 EOF
      },
@@ -14074,9 +14075,10 @@ EOF
 	2::inwork 28531,24375 28308,24301 28246,24272 27715,23859 27608,23776 27254,23502 26968,23160 26915,23116 26764,23083 25878,22894 25838,22885 25712,22856 25435,22733 25283,22666 24951,22681 24754,22552 24709,22522
 EOF
      },
-     { from  => 1239919200, # 2009-04-17 00:00
-       until => 1240092000, # 2009-04-19 00:00
-       text  => 'B 246 Lindenberg - Wendisch Rietz Bahnübergang OL Lindenberg Gleisbauarbeiten Vollsperrung 18.04.2009-18.04.2009 ',
+     { from  => $isodate2epoch->("2025-07-23 00:00:00"), # 1239919200, # 2009-04-17 00:00
+       until => $isodate2epoch->("2025-07-25 18:00:00"), # 1240092000, # 2009-04-19 00:00
+#      text  => 'B 246 Lindenberg - Wendisch Rietz Bahnübergang OL Lindenberg Gleisbauarbeiten Vollsperrung 18.04.2009-18.04.2009 ',
+       text  => 'Tauche-Lindenberg: Bahnübergang B246 wegen Gleiserneuerung voll gesperrt, 24.07.2025 10:00 Uhr bis 25.07.2025 18:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 59522,-22230 59349,-21581 59293,-21524
@@ -22213,11 +22215,11 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2025-07-23 00:00:00"), # $isodate2epoch->("2023-07-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-07-27 20:00:00"), # $isodate2epoch->("2023-07-16 23:59:59"),
+     { from  => $isodate2epoch->("2025-09-24 00:00:00"), # $isodate2epoch->("2025-07-23 00:00:00"), # $isodate2epoch->("2023-07-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-09-28 20:00:00"), # $isodate2epoch->("2025-07-23 00:00:00"), # $isodate2epoch->("2023-07-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 7, start => "2020-10-25T00:00:00"]],
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (24.07.2025 bis 27.07.2025)',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (24.09.2025 bis 28.09.2025)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk
@@ -22227,11 +22229,11 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1310556.php
 #: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/gruenes-licht-fuer-tegeler-hafenfest-id216068
 #: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/das-tegeler-hafenfest-ist-wieder-da-und-will-an-grosse-zeiten-anschliessen-id226835
-#: by[nocache]: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581206.php (404 page)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581206.php
 #: by: https://www.rbb24.de/panorama/beitrag/2025/07/berlin-tegeler-hafenfest-abgesagt-sturmschaeden.html
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581336.php (neuer Termin: 25. bis 28. September 2025)
 # REMOVED (was) : tempex: 20160714-20160717
 #: alias: Tegeler Hafenfest
-#: next_check: 2025-07-22 (wird es nun abgesagt oder nicht?)
 	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 EOF
      },
@@ -29151,16 +29153,20 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-07-19 00:00:00"), # $isodate2epoch->("2019-05-27 07:00:00"), # 1535691600, # 2018-08-31 07:00
-       until => $isodate2epoch->("2025-07-20 10:00:00"), # $isodate2epoch->("2019-05-28 12:30:00"), # 1535886000, # 2018-09-02 13:00
+       until => $isodate2epoch->("2025-07-20 12:00:00"), # $isodate2epoch->("2019-05-28 12:30:00"), # 1535886000, # 2018-09-02 13:00
 #      text  => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
 #      accept_multi_feature_distance => 4000,
 #      text  => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 28.05.2019 zwischen 07:00 und 12:30 Uhr',
-       text  => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 20.07.2025 vormittags',
+       text  => 'Havelchaussee, Kronprinzessinenweg und Fischerhüttenweg: wegen eines Triathlons Sperrungen am 20.07.2025 vormittags',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: bvg2024:218#HIM_FREETEXT_292925 (bis 2025-07-20)
-	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
-	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+# REMOVED --- #: source_id: bvg2024:218#HIM_FREETEXT_292925 (bis 2025-07-20)
+#: by: https://www.wj-tools.de/index.php/strecken (Berliner Volkstriathlon)
+# REMOVED (hier nicht) ---	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
+Kronprinzessinenweg	2::temp -3296,3686 -2218,5133 -927,6888
+Havelchaussee bis Grunewaldturm	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856
+Fischerhüttenweg	2::temp -2218,5133 -2112,5050 -2059,5011 -1654,4703 -1443,4542 -1366,4454 -1344,4436 -1297,4385
+# REMOVED (nur bis zum Grunewaldturm) ---	2::temp -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
 #	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
 #	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
 #	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 683,11270
@@ -35709,7 +35715,7 @@ EOF
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2025-06-22 (daf)
+#: last_checked: 2025-07-17
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
@@ -37663,7 +37669,7 @@ EOF
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 #: osm_watch: way id="147686211" version="10"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-06-25
+#: last_checked: 2025-07-17
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -37843,7 +37849,7 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
 # REMOVED --- #: osm_watch: way id="1124627670" version="6" ---	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
 #: XXX Wie lange dauern die Bauarbeiten? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2025-07-17 vvv
 	q3::inwork 8343,11133 8289,11205
 	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
 	q3::inwork 8253,11306 8232,11414
@@ -41867,17 +41873,17 @@ EOF
 #      text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 04.09.2023 08:00 Uhr bis 06.11.2023 17:00 Uhr',
 #      text  => 'B246, Zossen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 27.05.2024 08:00 Uhr bis 09.08.2024 16:00 Uhr',
 #      text  => 'B246, Zossen: Sperrung des Bahnübergangs, voraussichtlich bis 14.10.2024',
-       text  => 'alte B246, Zossen: Sperrung in Höhe des Bahnübergangs, vom 14.07.2025 bis 25.07.2025',
+       text  => 'alte B246, Zossen: Sperrung vor dem Bahnübergang, evtl. sind auch Radfahrer betroffen, vom 14.07.2025 bis 25.07.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZOSSENB246-2023
 #: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024) (inaktiv)
 #: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/sperrung-des-bahnuebergangs-b246-stubenrauchstrasse-verlaengert/ (bis 14.10.2024, Umleitung über "An den Wulzen")
-#: note: laut osm "Straße wird letztmalig vom 14.10. bis 11.11.2024 geöffnet, danach final gesperrt"
-#: also_indoor: traffic (G,ex-W,T,H)
+#: note: laut osm früher "Straße wird letztmalig vom 14.10. bis 11.11.2024 geöffnet, danach final gesperrt", jetzt "Soll nach Eröffnung der neuen B246 geschlossen werden, bleibt aber vorerst noch geöffnet"
+#: also_indoor: traffic (ex-G,ex-W,T,H)
 # REMOVED --- #: last_checked: 2024-09-14 --- #: check_frequency: 10d --- #: next_check: 2024-10-14
 # REMOVED ---	2::inwork 13526,-20548 13412,-20513 13390,-20515
-	2::inwork 12836,-20360 12845,-20377 13095,-20435 13223,-20504 13271,-20531 13390,-20515 13412,-20513 13526,-20548
+	2::inwork 12836,-20360 12845,-20377 13095,-20435 13223,-20504 13271,-20531 13390,-20515
 EOF
      },
      { from  => 1694901600, # 2023-09-17 00:00
@@ -43065,7 +43071,7 @@ EOF
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-06-03
+#: last_checked: 2025-07-17
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -44704,7 +44710,7 @@ EOF
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-15 vvv
+#: last_checked: 2025-07-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45565,7 +45571,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 246101061 (bis 11.09.2024) (inaktiv)
-#: source_id: 256100684 (bis 17.07.2025)
+#: source_id: 256100684 (bis 17.07.2025) (inaktiv)
 	2::inwork 37257,-12796 37241,-12587 37189,-12000
 EOF
      },
@@ -46203,12 +46209,13 @@ EOF
 	q4::inwork; 16764,11919 16794,12144
 EOF
      },
-     { from  => 1731826800, # 2024-11-17 08:00, # 1729705680, # 1730012400, # 2024-10-27 08:00
-       until => 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
-       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.11.2024 08:00 Uhr bis 12.05.2026 16:00 Uhr', # verschoben?
+     { from  => $isodate2epoch->("2025-07-20 00:00:00"), # 1731826800, # 2024-11-17 08:00, # 1729705680, # 1730012400, # 2024-10-27 08:00
+       until => $isodate2epoch->("2026-02-28 17:00:00"), # 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
+#      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.11.2024 08:00 Uhr bis 12.05.2026 16:00 Uhr', # verschoben?
+       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.07.2025 08:00 Uhr bis 28.02.2026 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv)
+#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 EOF
      },
@@ -47543,7 +47550,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-07-11 (mapillary)
+#: last_checked: 2025-07-17
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 EOF
@@ -47607,6 +47614,7 @@ EOF
        text  => 'Elßholzstr.: Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: ELSSHOLZ-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/grunewaldstra%C3%9Fe-8-neubau.1300/#post-24727
 #: osm_watch: way id="276210232" version="5"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
@@ -47649,10 +47657,11 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: note: Trafficmeldungen scheinen ungenau zu sein
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
-#: note: nächste Sperrung: mehrere mit "Termin folgt"
+#: note: nächste Sperrung: Oberspreestr. (wo genau?) "Suchschachtung" ab 30.07.2025
 #: last_checked: 2025-07-14 (website) vvv
 #: check_frequency: 7d (website checks) vvv
 #: next_check: 2025-07-18 (Radickestr., ADAC-Verkehrsmeldung) vvv
+# REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
@@ -47664,7 +47673,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 # REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
-#: note: Halteverbotsschilder bis 15.08.2025
+#: note: Halteverbotsschilder bis 15.08.2025, auch laut Website bis zum gleichen Datum
 Radickestraße: Einbahnstraße zwischen Friedenstr. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20366,3480 20451,3538 20499,3572
 Friedenstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20219,3661 20366,3480
 Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451,3538
@@ -47676,17 +47685,17 @@ Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451
 # REMOVED --- #: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3 --- Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
 # REMOVED (abgeschlossen) --- #: note: voraussichtlich ab 09.04.2025 --- Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
 # REMOVED (vor Ort keine Bauarbeiten) --- #: note: voraussichtlich ab 09.04.2025 --- Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
-#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt; mittlerweile: Maßnahmen ab dem 10.06.2025 fortgesetzt.
+#: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt; mittlerweile: Maßnahmen ab dem 10.06.2025 fortgesetzt; mittlerweile: Bauende voraussichtlich am 04.08.2025
 Wünschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
-#: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?)
+#: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?); verlängert bis 08.08.2025
 # REMOVED (hier nicht) --- Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275
 Freystadter Weg	q4::inwork 21008,4275 20981,4628 20981,4696 20994,4761
 # REMOVED (mittlerweile: abgeschlossen mit Freigabe) --- #: note: Beginn ab dem 19.05.2025 (aber wo genau?); mittlerweile ab 02.06.2025 --- Zinsgutstr.	q4::inwork 20679,3944 20862,3824
 # REMOVED (hier nicht) --- Zinsgutstr.	q4::inwork 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
-#: note: laut Haltestellenschilder vom 21.05.2025 07 Uhr bis 24.07.2025 17 Uhr
+#: note: laut Haltestellenschilder vom 21.05.2025 07 Uhr bis 24.07.2025 17 Uhr; laut Website Verkehrsfreigabe am 08.08.2025
 Flemmingstr.	q4::inwork 21848,4882 21726,4537
 #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt
-Flemmingstr.	q4::inwork 21848,4882 21856,4910
+Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -47819,15 +47828,13 @@ EOF
 EOF
      },
      { from  => 1745747126, # 2025-04-27 11:45
-       until => undef, # 1749938400, # 2025-06-15 00:00
+       until => 1752772379, # undef, # 1749938400, # 2025-06-15 00:00
        text  => 'Rosenheimer Str.: Fahrbahn zwischen Berchtesgadener Str. und Martin-Luther-Str. gesperrt, voraussichtlich bis 14.06.2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: note: Halteverbotsschilder bis 14.06.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2025-07-16 (traffic)
-#: check_frequency: 7d (traffic)
-# REMOVED --- #: next_check: 2025-06-14
+# REMOVED --- #: last_checked: 2025-07-16 (traffic) --- #: check_frequency: 7d (traffic) --- #: next_check: 2025-06-14
 	q4::inwork 6351,9335 6446,9328
 EOF
      },
@@ -48911,14 +48918,16 @@ EOF
 EOF
      },
      { from  => 1752184800, # 2025-07-11 00:00
-       until => 1759269600, # 2025-10-01 00:00
-       text  => 'Landjägerstr.: Leitungsarbeiten, Sperrung der Fahrbahn, voraussichtlich bis September 2025',
+       until => $isodate2epoch->("2025-09-19 18:00:00"),
+       text  => 'Landjägerstr.: Leitungsarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Mitte September 2025',
        type  => 'handicap',
        data  => <<'EOF',
+#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409465412/neuer-baustress-an-der-altstadt-koepenick-nur-noch-ein-albtraum.html
+#: note: laut Stromnetz-Website bis 19.09.2029
 #: also_indoor: traffic (G,T)
 #: last_checked: 2025-07-11 (MoPo)
-#: next_check: 2025-09-01
+#: next_check: 2025-09-19 (stromnetz website)
 	q4::inwork 22740,4415 22542,4485 22495,4523
 EOF
      },
@@ -48961,8 +48970,43 @@ EOF
        text  => 'Stechow - Rhinsmühlen (B188): Bauarbeiten, Sperrung, vom 17.07.2025 bis 06.09.2025',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~15-07-2025-b188-kreisverkehr-zwischen-stechow-und-rhinsmuehlen (Bauarbeiten für Kreisverkehr B188/Stechow - Nennhausen; Radwegbau Stechow - Rhinsmühlen (~5km) beginnt nach den Bauarbeiten im September 2025)
+#: source_id: LS/223-P/25/088 (bis 06.09.2025)
 #: next_check: 2025-09-06
 Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork -54051,23436 -53816,23532 -53633,23786 -53625,23953
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Ansbacher Str.: vor der Geisbergstr. Bauarbeiten, Fahrbahn und Radweg gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (T)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-07-17
+	q3::inwork 6118,10327 6065,10129
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Willmanndamm: Sperrung vor der Langenscheidtstr., Ende der Bauarbeiten unbekannt ',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: GRUNEWALDSTR-2025
+#: also_indoor: traffic (T)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
+#: last_checked: 2025-07-17
+	q4::inwork 7628,9365 7509,9337
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Carl-Herz-Ufer - Brachvogelstr.: Grünanlage, Radfahren nicht erlaubt',
+       permanent => 1,
+       type  => 'handicap',
+       data  => <<'EOF',
+Johanniterstr./Brachvogelstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 10066,10071 10168,10085
+Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 10069,10151 10158,10117 10168,10085
 EOF
      },
     );

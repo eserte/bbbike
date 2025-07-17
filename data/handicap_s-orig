@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-07-15
+#: last_checked: 2025-07-17
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -389,13 +389,14 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12957 (Antrag: dauerhafte Sperrung der Straße)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1578057.php (Abriss beginnt am 10. Juli 2025 und wird ca. acht Wochen dauern)
 #: by: https://entwicklungsstadt.de/wedding-bezirk-mitte-beginnt-abriss-der-einsturzgefaehrdeten-burgsdorfstrasse-1/
+#: by: https://weddingweiser.de/endlich-abriss-in-der-burgsdorfstrasse/ (Verzögerung des Abrisses, vielleicht bis 30. September 2025)
 #: osm_watch: way id="549316654" version="40"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: last_checked: 2025-07-15 (osm)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
-#: next_check: 2025-09-10 (Pressemitteilung, Abrissarbeiten)
+#: next_check: 2025-11-30 (weddingweiser, Abrissarbeiten)
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -842,7 +843,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="24"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-07-03 (mapillary)
+#: last_checked: 2025-07-17
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1847,7 +1848,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-17
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -2360,10 +2361,12 @@ Ida-Wolff-Platz: Fußgänger	q4+ 9215,10607 9192,10528
 Falkstr.: Fußgänger	q1 12179,7979 12186,7952 12195,7916 12216,7838 12220,7822
 (Falkstr. - Mittelweg): gemeinsamer Fuß- und Radweg	q1 12220,7822 12224,7799
 (Platanenweg - Willi-Sänger-Str.): Fußgänger	q1 15787,8073 15808,8099 15843,8125
-#: note: Ausschilderung nicht eindeutig: am östlichen Ende ein Schild "getrennter Geh- und Radweg", dann kommt einige Meter weiter ein Grünanlagen-Schild, am westlichen Ende ist nur ein Grünanlagen-Schild; mittlerweile existiert wohl kein Schild mehr am östlichen Ende
-Carl-Herz-Ufer: gemeinsamer Fuß- und Radweg	q0- 10066,10071 10168,10085
-#: note: Schild steht zumindest am westlichen Ende
-Am Landwehrkanal: gemeinsamer Fuß- und Radweg	q2 10069,10151 10158,10117 10168,10085
+#: historical_note: früher offiziell ein getrennter Geh- und Radweg, zumindest von Osten her, mit q0- getaggt
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer, siehe auch temp_blockings-Eintrag
+Carl-Herz-Ufer: Fußgänger	q1 10066,10071 10168,10085
+#: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer, siehe auch temp_blockings-Eintrag
+#: historical_note: früher offiziell ein gemeinsamer Geh- und Radweg
+Am Landwehrkanal: Fußgänger	q2 10069,10151 10158,10117 10168,10085
 Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 23225,11649 23032,11729
 #: note: nur ein Grünanlagenschild ohne Zusatzschild zur Radfahrerbenutzung, vom Charakter her ähnlich wie die beiden anderen Abschnitte
 Münsterberger Weg: Grünanlage, einige Fußgänger	q2+ 23032,11729 22886,11776
@@ -3653,7 +3656,7 @@ Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
 #: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
 #: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-17
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (adonum website)
 #: note: früher: breiter Geh- und Radweg	q0-
