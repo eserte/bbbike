@@ -11276,7 +11276,7 @@ sub activate_temp_blockings {
 
 	    if ($do_it) {
 		require POSIX;
-		my $datefmt = "%d.%m.%Y %H:%M:%S";
+		my $datefmt = "%d.%m.%Y %a %H:%M:%S";
 		my $date_spec;
 		{
 		    my $from_date_readable = defined $o->{from}  ? POSIX::strftime($datefmt, localtime($o->{from})) : "...";
