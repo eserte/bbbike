@@ -1783,9 +1783,9 @@ Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13383,13349 1
 An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13279,13323 13375,13367 13330,13468
 Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3::igndisp 13375,13367 13383,13349 13433,13371
 Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13433,13371 13383,13349 13434,13234
-Bahntrasse	3nocross::ignrte 16635,2796 16677,2856 16786,2989
+Bahntrasse	3nocross::ignrte 16635,2796 16677,2856 16703,2888
 Krokusstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16739,2736 16677,2856 16635,2796
-Stubenrauchstr. -> Krokusstr.: Bahntrasse	3::igndisp 16786,2989 16677,2856 16739,2736
+Stubenrauchstr. -> Krokusstr.: Bahntrasse	3::igndisp 16703,2888 16677,2856 16739,2736
 Bahntrasse	3nocross::ignrte 16182,2200 16242,2279 16306,2364
 Mohnweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16114,2377 16242,2279 16306,2364
 Stubenrauchstr. -> Mohnweg: Bahntrasse	3::igndisp 16182,2200 16242,2279 16114,2377
@@ -3540,6 +3540,14 @@ Schranke	BNP:1:0:trailer=3 16991,-89
 Schranke fast über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5:-232:trailer=15 9135,14317
 Drängelgitter	BNP:3:-131:trailer=10 14881,13144
 Schwingtor	BNP:5:-172:trailer=10 -7347,12797
+Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross::ignrte 16242,2279 16306,2364 16382,2464
+Stubenrauchstr. -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16382,2464 16306,2364 16342,2338
+Stubenrauchstr. -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16242,2279 16306,2364 16106,2514
+Windenweg -> Stubenrauchstr.: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16342,2338 16306,2364 16242,2279
+Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16342,2338 16306,2364 16106,2514
+Windenweg -> Stubenrauchstr.: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16382,2464
+Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16342,2338
+Glockenblumenweg: Einfahrt verboten	1s:inwork 16461,2569 16260,2717
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
 Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253

@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: STUBENRAUCH-2025
+#: note: am 18.7.2025 gab es keine Überfahrtmöglichkeit auf der Fahrbahn, nur auf dem Gehweg
+#: note: Anforderungsampel für Radfahrer in der Stubenrauchstr. Richtung NO
+#: last_checked: 2025-07-18
+#: next_check_id: 2026-10-31
+Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage	X::inwork 16461,2569
+# 
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025)
 #: note: Gegenverkehrsstrecke über 50m, gilt auch für Radfahrer (trotz Radwege); mittlerweile beim rbb bis zum 08.08.2025 verlängert
@@ -26,9 +33,10 @@ Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork
 # 
 #: source_id: viz2021:13.390889,52.525514,01.04.2025,08:00 (bis 19.07.2025)
 #: note: Richtung Südosten auch Radwegführung auf dem Bürgersteig, Richting Nordwesten sollen Radfahrer via Tucholskystr. und Auguststr. fahren (wegen Tramschienen?!)
-#: last_checked: 2025-07-05
+#: add_fragezeichen: Besteht die Gegenverkehrsregelung weiterhin?
+#: last_checked: 2025-07-15 (mapillary)
 #: next_check: 2025-07-19 (VIZ-Verkehrsmeldung)
-#: valid: -20250719
+# REMOVED --- #: valid: -20250719
 Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
@@ -358,7 +366,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check_id: IMBROMBEERWINKEL-2023
 #: next_check_id: STERNDAMM-2023
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2025-06-21
+#: last_checked: 2025-07-18
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
 #: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
@@ -367,7 +375,7 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 # 
 #: next_check_id: STERNDAMM-2023
 #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2025-06-21
+#: last_checked: 2025-07-18
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
 #: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
@@ -2869,7 +2877,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-06-20
+#: last_checked: 2025-07-18
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
@@ -3985,7 +3993,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2025-07-06
+#: last_checked: 2025-07-18
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381
@@ -4592,7 +4600,7 @@ Bahn kommt ca. halbstündlich	B 40222,103642
 #: osm_watch: way id="56672802" version="5"
 #: next_check: 2026-12-31
 	B 49226,-59451
-#: osm_watch: node id="1492003972" version="8"
+#: osm_watch: node id="1492003972" version="9"
 #: next_check: 2026-12-31
 	B 50161,-60073
 # 

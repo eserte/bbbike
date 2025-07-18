@@ -10,15 +10,17 @@ push @temp_blocking,
 #: by: https://www.berlin.de/events/2094393-2229501-lesbischschwules-stadtfest.html (19. Juli 2025 - 20. Juli 2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1814521868080050462
 #: by: https://pbs.twimg.com/media/GSsvMEiWsAALOVt?format=jpg&name=large
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu7nuz2q2527
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia3bn3222qjpj4ze4d5yplqplvhtt25eltlcusiccrbc75vuiyyiq@jpeg
 Motzstr.	2::temp 6499,10086 6609,10147 6626,10155 6729,10212 6941,10329 6971,10346
 Kalckreuthstr.	2::temp 6636,10492 6628,10318 6626,10155
 Fuggerstr.	2::temp 6487,10277 6628,10318 6719,10347
 Eisenacher Str.	2::temp 6753,10446 6719,10347 6729,10212 6739,10120
 Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
-#: note: laut Karte nur eingeschränktes Halteverbot vvv
-Eisenacher Str. ab Nollendorfstr.	q4::temp 6739,10120 6741,10017
-Gossowstr.	q4::temp 6609,10147 6630,9990
-#: note ^^^
+##: note: laut Karte nur eingeschränktes Halteverbot vvv
+#Eisenacher Str. ab Nollendorfstr.	q4::temp 6739,10120 6741,10017
+#Gossowstr.	q4::temp 6609,10147 6630,9990
+##: note ^^^
 ',
          'from' => 1752789600,
          'id' => 74,
@@ -958,17 +960,7 @@ Gossowstr.	q4::temp 6609,10147 6630,9990
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 246700600 (bis 09.09.2024) (inaktiv)
-#: source_id: 256700393 (bis 18.07.2025)
-	2::inwork 44229,-14131 43456,-14384 42430,-14398
-',
-         'from' => 1752703200,
-         'id' => 995,
-         'text' => 'Storkow: Bahnübergang Kummersdorfer Hauptstraße auf der L40 voll gesperrt wegen Umbauarbeiten, 18.07.2025 06:00 Uhr bis 18.07.2025 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1752847200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4515,9 +4507,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch: note 3210197 6
-#: last_checked: 2025-07-12 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 60d
+#: last_checked: 2025-07-18
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
@@ -5413,7 +5405,27 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php (2022er-Eintrag)
+#: source_id: viz2021:13.55864,52.562688,03.03.2022,14:00 (inaktiv)
+#: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819 (2022er-Eintrag)
+#: source_id: viz2021:13.559233,52.562465,04.11.2024,00:01 (bis 07.11.2024) (inaktiv)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1853120454648607073
+#: by: https://pbs.twimg.com/media/GbUIAkBW8AA3AGf?format=jpg&name=medium
+#: source_id: viz2021:13.559233,52.562465,18.11.2024,08:00 (keine Einschränkung auf Verkehrsarten erwähnt, bis 20.11.2024) (inaktiv)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1858396972723425477 (nur Kfz-Verkehr)
+#: source_id: viz2021:13.558515,52.562701,23.06.2025,08:00 (Vollsperrung, bis 25.06.2025) (inaktiv)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsasx6rq7z2r
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibtz5k5fgbp4x24som7y4liviz3qmq22wtzang6ilmm76knuyhz3m@jpeg (leider unscharf)
+	2::inwork 20895,17594 20769,17650
+	2::inwork 20769,17650 20891,17572
+',
+         'from' => 1752962400,
+         'id' => 3522,
+         'text' => 'Wuhletalstr. : Sperrung im Bereich der Unterführung Märkische Allee, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 21.07.2025 bis 23.07.2025 nachmittags',
+         'type' => 'gesperrt',
+         'until' => 1753282800
+       },
        undef,
        undef,
        undef,
@@ -5454,7 +5466,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-11
+#: last_checked: 2025-07-18
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6539,23 +6551,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/spielstrassen-988767.php (Haus Nr. 18-22)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php (2025)
-# REMOVED --- #: note: außerdem nach den Sommerferien: 1. bis 22. September 2023
-#: note: Länge des Spielstraßenbereichs etwas weniger als 100m; Bordsteine
-# REMOVED --- #: last_checked: 2023-07-02
-#: next_check: 2026-05-01
-	q4::temp::play 14208,12235 14073,11995 14055,11964
-',
-         'from' => 1750888800,
-         'id' => 3815,
-         'recurring' => 1,
-         'text' => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 27. Juni 2025 bis 18. Juli 2025',
-         'type' => 'handicap',
-         'until' => 1752856200
-       },
+       undef,
        undef,
        undef,
        {
@@ -6824,7 +6820,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-07-11
+#: last_checked: 2025-07-18
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -8337,7 +8333,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'until' => 1754665200
        },
        {
-         'data' => '#: source_id: 256401910 (bis 28.11.2025)
+         'data' => '#: source_id: 256401910 (bis 28.11.2025) (Gehwegsperrung bis 25.07.2025)
 	2::inwork 41356,16225 41672,16084
 ',
          'from' => 1742108400,
@@ -8608,7 +8604,34 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# erste Baumaßnahme (April 2025)
+#: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238 (2018)
+#: by: https://www.bahninfo-forum.de/read.php?9,825093,825257#msg-825257 (laut Aushang ab 7.4.2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/klingsorstrasse-in-berlin-steglitz-fur-drei-monate-vollgesperrt-wasserbetriebe-tauschen-regenwasserkanal-aus-13490011.html (zwischen Telramundweg und Amfortasweg, bis 23.06.2025; keine Erwähnung einer Sanierung der Fahrbahn)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250406 (vorerst keine Sperrung)
+#: by: https://stadtrand-nachrichten.de/klingsorstrasse-verwirrung-um-baustelle-der-wasserbetriebe/ (erst ab dem 10. oder 11.04.2025)
+#: by: http://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-klingsorstrasse-in-steglitz/ (ab 10.04.2025)
+#: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
+#: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
+#: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025) (inaktiv)
+# REMOVED --- Klingsorstr.	q4::inwork 5206,4432 5150,4345
+# REMOVED --- Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
+# zweite Baumaßnahme (Juli 2025)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581872.php (Sanierung, 1. BA 28.07.2025 - 24.08.2025)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/fahrbahnsanierung_klingsorstrasse.pdf
+#: priority: #A
+#: next_check: 2025-08-23 (danach 2. BA eintragen sowie qualitaet_s-Eintrag ändern)
+Klingsorstr.	q4::inwork 5271,4547 5214,4445 5206,4432 5150,4345 5120,4318 5090,4291 5063,4266 4932,4152
+# (2. BA) --- Klingsorstr.	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,4042
+',
+         'dont_check_date' => 1,
+         'from' => 1753567200,
+         'id' => 4291,
+         'text' => 'Klingsorstr.: Sanierungsarbeiten zwischen Birkbuschstr. und Brahmsstr., Fahrbahn gesperrt, vom 28.07.2025 bis 24.08.2025',
+         'type' => 'handicap',
+         'until' => 1758297600
+       },
        undef,
        {
          'data' => '#: next_check_id: GITSCHINER-2025
@@ -8689,8 +8712,8 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: nächste Sperrung: Oberspreestr. (wo genau?) "Suchschachtung" ab 30.07.2025
 #: last_checked: 2025-07-14 (website) vvv
-#: check_frequency: 7d (website checks) vvv
-#: next_check: 2025-07-18 (Radickestr., ADAC-Verkehrsmeldung) vvv
+#: check_frequency: 30d (website checks) vvv
+#: next_check: 2025-08-04 (Bauende Wünschelburger Gang) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
@@ -8698,12 +8721,12 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287343 (Umleitung ab 10.06.2025)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_290898
 #: source_id: bvg2024:164#HIM_FREETEXT_290897
-#: source_id: adac:210225916 (bis 18.07.2025)
-#: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025)
+#: source_id: adac:210225916 (bis 18.07.2025) (inaktiv)
+#: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025) (bis 15.08.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 # REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
-#: note: Halteverbotsschilder bis 15.08.2025, auch laut Website bis zum gleichen Datum
+#: note: Halteverbotsschilder bis 15.08.2025, auch laut Website bis zum gleichen Datum; bei rbb+adac nun ebenfalls bis zum 15.08.2025 verlängert
 Radickestraße: Einbahnstraße zwischen Friedenstr. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20366,3480 20451,3538 20499,3572
 Friedenstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20219,3661 20366,3480
 Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451,3538
@@ -8879,11 +8902,12 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
          'until' => 1761951600
        },
        {
-         'data' => '#: XXX Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann.
+         'data' => '#: XXX Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann (mittlerweile aber wohl nicht mehr)
 #: also_indoor: traffic (G)
 #: osm_watch: way id="1376570531" version="3"
-#: last_checked: 2025-07-08 (traffic)
-#: check_frequency: 14d (traffic)
+#: last_checked: 2025-07-18
+#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 14d (traffic)
 	2::inwork 8404,3648 8461,3410
 ',
          'from' => undef,
@@ -8981,17 +9005,7 @@ Privatstr. 2	q4::inwork 16905,17281 17028,17298
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.38869,52.50071,27.05.2025,13:00 (bis 18.07.2025)
-#: source_id: adac:2123001084 (bis 18.07.2025)
-	q4::inwork 9570,10566 9384,10536
-',
-         'from' => 1748257200,
-         'id' => 4350,
-         'text' => 'Franz-Klühs-Str.: Bauarbeiten an der Wilhelmstr., Sperrung, vom 27.05.2025 13:00 bis 18.07.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1752850800
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025)
@@ -8999,23 +9013,23 @@ Privatstr. 2	q4::inwork 16905,17281 17028,17298
 #: source_id: bvg2024:194#HIM_FREETEXT_286893
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025)
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2025-07-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
-Karl-Kunger-Str.: Einfahrt Richtung Westen gesperrt (wenige Meter)	q3::inwork; 13614,9333 13489,9456
+#: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
+Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 #: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (inaktiv)
 #: source_id: adac:90391862 (bis 20.06.2025) (inaktiv)
 #: also_indoor: traffic (T,H)
 # REMOVED --- #: XXX Wurde diese Sperrung mittlerweile aufgehoben? (Bei VIZ und rbb nicht mehr gelistet, vor Ort noch gesperrt)
-#: note: Halteverbotsschilder bis 28.11.2025
-Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::inwork 13614,9333 13715,9455
+# REMOVED (offen) --- #: note: Halteverbotsschilder bis 28.11.2025 --- Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::inwork 13614,9333 13715,9455
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1748754000,
          'id' => 4352,
-         'text' => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, voraussichtlich bis Ende September 2025, evtl. noch länger',
+         'text' => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende September 2025, evtl. noch länger',
          'type' => 'handicap',
          'until' => 1764345600
        },
@@ -9230,7 +9244,7 @@ Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22
 # REMOVED (hier nicht (mehr?)) --- (Försterweg)	2::temp -842,20200 -716,20060 -516,19798 -303,19740
 # REMOVED (hier nicht (mehr?)) --- (Waldweg im Tegeler Forst)	2::temp -1527,18645 -671,19408 -303,19740 -183,19831 97,20103
 # REMOVED (hier nicht (mehr?)) --- (Försterweg - Schwarzer Weg)	2::temp -183,19831 -135,19832 6,19817
-	2::temp 644,24394 442,24479 350,24485 219,24419 162,24407 -59,24361 -250,24376 -340,24455 -399,24464 -479,24444 -595,24441 -667,24463 -822,24540
+# REMOVED (hier nicht (mehr?), laut Karte) ---	2::temp 644,24394 442,24479 350,24485 219,24419 162,24407 -59,24361 -250,24376 -340,24455 -399,24464 -479,24444 -595,24441 -667,24463 -822,24540
 (Karolinenstr. - Waidmannsluster Damm)	2::temp 1712,20907 1819,21116 1851,21328 1810,21363
 (Waidmannsluster Damm - Karolinenstr.)	2::temp 1942,21564 1928,21595 1859,21541 1843,21440 1810,21363 1613,21173
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13499 (Einwohneranfrage)
@@ -9328,7 +9342,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        },
        {
          'data' => '#: also_indoor: traffic (G,H,T)
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-18
 #: next_check: 2025-07-24 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
 ',
@@ -9341,8 +9355,8 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (bis 20.07.2025)
-#: last_checked: 2025-07-16
-#: next_check: 2025-07-20 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-07-18
+# REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung)
 # REMOVED ---	q3::inwork 15004,10791 14994,10732
 ## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\\t3nocross 15081,10775 15004,10791 14927,10807\\n") | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\'
 #       3nocross::ignrte 15081,10775 15004,10791 14927,10807
@@ -9509,14 +9523,19 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: next_check_id: THOMAS-2025
-#: source_id: adac:850837566 (bis voraussichtlich 19.09.2025)
+#: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
-#: add_fragezeichen Sind Radfahrer tatsächlich von den Bauarbeiten betroffen?
-	q4::inwork; 12918,7600 12972,7602
+#: last_checked: 2025-07-18 vvv
+#: next_check: 2025-09-20 vvv
+Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
+#: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
+Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
+#: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1752606169,
          'id' => 4390,
-         'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, evtl. sind auch Radfahrer betroffen, bis 19.09.2025',
+         'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz sowie vor Hermannstr., voraussichtlich bis September 2025',
          'type' => 'handicap',
          'until' => 1758319200
        },
@@ -9567,6 +9586,35 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
          'text' => 'Carl-Herz-Ufer - Brachvogelstr.: Grünanlage, Radfahren nicht erlaubt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.484668,52.501156,28.04.2025,12:00 (bis 16.05.2025) (bis 13.06.2025) (inaktiv)
+#: source_id: viz2021:13.48532,52.501467,28.04.2025,12:00 (bis 20.06.2025) (bis 11.07.2025) (bis 27.06.2025) (bis 11.07.2025)
+#: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025)
+#: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
+#: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
+#: note: bei rbb bis 08.08.2025 verlängert
+#: last_checked: 2025-07-18
+# REMOVED --- #: check_frequency: 10d
+#: next_check: 2025-08-15 (rbb-Verkehrsmeldung)
+	q2::inwork; 15880,10680 15970,10755
+	1::inwork 15970,10755 16038,10818
+',
+         'from' => 1752789600,
+         'id' => 4395,
+         'text' => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 15.08.2025',
+         'type' => 'handicap',
+         'until' => 1755273600
+       },
+       {
+         'data' => '#: source_id: LS/221-E/25/086 (bis 01.08.2025)
+	2::inwork 23759,49971 24081,50440 24364,50554 24522,50570 25904,50276 26244,50372
+',
+         'from' => 1753596000,
+         'id' => 4396,
+         'text' => 'B167: Bauarbeiten zwischen Abzweig nach Eichhorst und Abzweig nach Marienwerder, Sperrung, vom 28.07.2025 08:00 Uhr bis 01.08.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1754060400
        }
      
 );

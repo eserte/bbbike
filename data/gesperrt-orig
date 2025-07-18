@@ -2347,7 +2347,7 @@ Petersburger Str.: Straßenbahntrasse	3nocross 13622,12806 13579,12904 13530,1301
 Petersburger Str.: Straßenbahntrasse	3nocross 13530,13014 13481,13128 13434,13234
 Petersburger Str.: Straßenbahntrasse	3nocross 13330,13468 13375,13367 13383,13349 13434,13234
 #: note: ^^^
-Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16786,2989
+Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16703,2888
 Stubenrauchstr.: Bahntrasse	3nocross 16182,2200 16242,2279 16306,2364
 Stubenrauchstr.: Bahntrasse	3nocross 16306,2364 16382,2464 16461,2569
 Stubenrauchstr.: Bahntrasse	3nocross 16461,2569 16475,2586 16547,2680
@@ -3965,6 +3965,15 @@ Schwingtor	BNP:5::trailer=10 -7347,12797
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: STUBENRAUCH-2025
+#: last_checked: 2025-07-18 vvv
+#: next_check: 2026-10-31 vvv
+Stubenrauchstr./Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross 16242,2279 16306,2364 16382,2464
+#: note: kurze unechte Einbahnstraße
+Glockenblumenweg: Einfahrt verboten	1s:q2:inwork 16461,2569 16260,2717
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1576769.php (Arbeiten ab 7.7.2025, bislang mit Bauzäunen gesichert)
 #: priority: #C
 #: last_checked: 2025-07-03 (BA-Pressemitteilung)
@@ -4316,7 +4325,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-77ve/180909_-2-_b-plan-7-77ve_britzer-strasse-a1_ohne-beschnittzeichen.pdf
 #: by: https://www.berliner-woche.de/mariendorf/c-bauen/areal-der-ehemaligen-gaertnerei-in-der-britzer-strasse-wird-bebaut_a193336 (Fertigstellung ... zweite Quartal 2021 anvisiert)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_42_5125_5208_online.pdf (Benennung einer Privatstraße)
-#: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos (Bezugsfertig: Juli 2026)
+#: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos (Bezugsfertig: Juli 2026) (mittlerweile: Oktober 2026)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=736121#post736121
 #: by: https://www.deutsches-architekturforum.de/thread/15360-quartier-hugos-mariendorf/?postID=731063#post731063 ("Quartier Hugos")
@@ -4327,9 +4336,9 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
 # REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
 #: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
-#: last_checked: 2025-03-16 (mapillary)
+#: last_checked: 2025-07-18
 #: check_frequency: 120d
-#: next_check: 2026-07-31 (bonova website)
+#: next_check: 2026-10-31 (bonova website)
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)
@@ -4456,7 +4465,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-18
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4464,7 +4473,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-07-16 vvv
+#: last_checked: 2025-07-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4502,7 +4511,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-18
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4650,7 +4659,7 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-fehlen-personal-und-finanzmittel-fuer-die-auftragsvergabe_a431449 (Sperrung mindestens bis 2026 (Anfang oder Ende?))
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
-#: osm_watch: way id="27944267" version="21"
+#: osm_watch: way id="27944267" version="22"
 #: last_checked: 2025-07-16
 #: check_frequency: 360d
 # REMOVED (ein Baubeginn 2025 erscheint unwahrscheinlich) --- #: next_check: 2026-01-01
@@ -4688,7 +4697,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-18
 #: check_frequency: 180d
 #: next_check: 2027-06-30
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
@@ -5111,6 +5120,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berliner-woche.de/mitte/c-bauen/neue-strassen-fast-fertig_a420862
 #: by: https://www.berliner-woche.de/mitte/c-bauen/grabungen-am-molkenmarkt-foerderten-zahlreiche-funde-zu-tage_a422590
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1580739.php
+#: by: https://entwicklungsstadt.de/fuer-ein-vielfaeltig-nutzbares-quartier-wettbewerb-fuer-molkenmarkt-berlin-gestartet/
 #: source_id: viz2021:13.41504,52.52091,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.40903,52.517,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.41347,52.51971,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)

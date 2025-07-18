@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-18
 #: check_frequency: 45d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -324,12 +324,13 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: by: https://entwicklungsstadt.de/marktplatz-adlershof-fertigstellung-und-einweihung-im-sommer-2025-geplant/
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-darum-verzoegern-sich-die-bauarbeiten-auf-dem-marktplatz-adlershof-li.2323549
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Teileinziehung von Straßenland, nördlicher Strang)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1581989.php (Eröffnung am 29. August 2025, schrittweise Freigabe ab 19. Juli 2025)
 #: XXX der nördliche Strang soll dauerhaft eingezogen werden (Fußgängerzone? für Radfahrer frei?)
 #: osm_watch: way id="20554168" version="29"
 #: osm_watch: way id="1155308749" version="1"
 #: last_checked: 2025-06-18 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2025-09-01 (BA-Pressemitteilung) vvv
+#: next_check: 2025-08-29 (BA-Pressemitteilung) vvv
 Marktplatz Adlershof: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 20290,3756 20336,3783
 # REMOVED (hier wieder offen) --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714
 Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
@@ -715,7 +716,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
 # REMOVED --- #: last_checked: 2025-07-02 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-# REMOVED --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17822,5524 17765,5469
+# REMOVED --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17845,5546 17765,5469
 # REMOVED --- # REMOVED Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17754,5460 17736,5441 17695,5394
 # REMOVED --- # REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17754,5460
 # REMOVED --- #: check_frequency ^^^
@@ -898,7 +899,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 ### Neukölln ###
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2025-06-12
+#: last_checked: 2025-07-18
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -995,6 +996,16 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # REMOVED --- #: next_check_id: PLATZHOF-2014 --- #: by: http://www.aktion-kms.de/projekte/#Platz-der-Stadt-Hof --- #: by: http://www.aktion-kms.de/files/p23.v_l01_120809.pdf --- #: by: http://www.aktion-kms.de/files/pl_d_std_hof_flyer_5.pdf --- #: XXX die Straße wird irgendwann für den Autoverkehr gesperrt werden --- #: XXX unter Umständen wird die Fertigstellung erst 2015 sein, siehe http://www.aktion-kms.de/files/120427_bauphasen_karl-marx-strasse_bau_2012-2020_kl.pdf --- #: XXX ... oder Ende 2013, siehe http://www.aktion-kms.de/projekte/umbau-platz-der-stadt-hof/ --- #: last_checked: 2014-04-11 vvv --- #: check_frequency: 15d vvv --- Richardstr.: Bauarbeiten, Ausweichen auf Gehweg	q2::inwork 12870,8087 12797,8168 12779,8188 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
+### Rudow ###
+#: next_check_id: STUBENRAUCH-2025
+#: last_checked: 2025-07-18 vvv
+#: next_check: 2026-10-31 vvv
+Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
+Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
+Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 16853,3078
+#: next_check ^^^
+#: last_checked ^^^
+# 
 ### Lichtenberg ###
 # 
 # REMOVED --- #: also_indoor: traffic (ex-H,G,ex-T)
@@ -1041,7 +1052,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-18
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1261,7 +1272,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: next_check_id: WEISSENHOEHER-2025
 #: note: Länge des gesperrten Bereichs geschätzt 50m, u.U. Umwege notwendig
 #: note: Halteverbotsschilder bis 19.12.2025, laut Baustellenschild geplante Fertigstellung der Bahnbrücke 03/2026
-#: osm_watch: note 4721088 2
+#: osm_watch: note 4721088 3
 #: also_indoor: traffic (T)
 #: last_checked: 2025-07-16
 #: check_frequency: 120d
