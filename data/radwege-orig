@@ -51,7 +51,7 @@
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
-#: last_checked: 2025-05-14
+#: last_checked: 2025-07-19
 #: check_frequency: 120d
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -3181,7 +3181,7 @@ provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beerman
 	RW6;RW6 14879,9961 14921,10047
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-19
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4275,11 +4275,16 @@ Verbundsteinpflaster	RW1; 23046,3905 23036,3929 22971,4077 22965,4124
 	RW1;RW2 21961,5228 21979,5208
 	RW1; 21303,5826 21364,5827 21467,5802 21519,5767 21567,5727
 # REMOVED --- #: next_check_id: PYRAMIDENBRUECKE-2022 --- #: XXX temporär während der Bauarbeiten an der Pyramidenbrücke --- #: last_checked: 2023-07-29 (mapillary) --- #: check_frequency: 180d --- # REMOVED --- #: next_check: 2023-07-15 --- abgetrennter gemeinsamer Geh- und Radweg auf der Fahrbahn	RW2; 21567,5727 21594,5691 21600,5683 21649,5617
-Gehweg für Radfahrer frei	RW1; 21569,5730 21522,5771
 	RW3; 21522,5771 21470,5809 21365,5832
 Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
 # REMOVED (hier nicht, siehe https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1124786.php ) --- Gehweg für Radfahrer frei	RW1; 21569,5730 21600,5694 21605,5687 21623,5661 21706,5541 21789,5427
-Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661 21605,5687 21600,5694 21569,5730
+Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661
+#: next_check_id: PYRAMIDENBRUECKE-2022
+#: last_checked: 2025-07-19
+#: check_frequency: 180d
+#: next_check: 2027-06-30 (VIZ-Verkehrsmeldung)
+#: XXX nach den Bauarbeiten wieder aktivieren: Gehweg für Radfahrer frei	RW1; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
+kein Radweg, Tempo 10	RW0; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
 die letzten 70 Meter sind benutzungspflichtig	RW1; 21789,5427 21961,5228
 	RW1; 21961,5228 21789,5427
 die letzten Meter sind benutzungspflichtig	RW3; 10755,13152 10923,13156
@@ -4493,7 +4498,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2025-07-02 vvv
+#: last_checked: 2025-07-19 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -7291,7 +7296,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2025-06-27 (mapillary) vvv
+#: last_checked: 2025-07-18 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -8127,7 +8132,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-07-11
+#: last_checked: 2025-07-19
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -9008,7 +9013,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.38458,52.45267,23.09.2024,17:00 (bis 01.11.2024) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
-#: last_checked: 2025-07-18 vvv
+#: last_checked: 2025-07-19 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20211007 vvv

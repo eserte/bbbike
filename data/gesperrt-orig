@@ -447,7 +447,7 @@ Kavalierstr.	1 10621,18837 10729,18584
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
 #: osm_watch: way id="4637773" version="27"
-#: last_checked: 2025-06-11 (mapillary)
+#: last_checked: 2025-07-18 (mapillary)
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
@@ -1009,15 +1009,14 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027) (bis 30.06.2027)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2025-05-20 vvv
+#: last_checked: 2025-07-19 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21623,5661 21605,5687 21600,5694
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
 Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767
-#: note: wobei hier die Sperrung der Fahrbahn für Radfahrer nicht so eindeutig ist
-Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
+# REMOVED (mittlerweile keine Benutzungspflicht mehr, dafür Tempo 10) --- #: note: wobei hier die Sperrung der Fahrbahn für Radfahrer nicht so eindeutig ist --- Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
 #: osm_watch: way id="25216398" version="36"
 # REMOVED (bis zur Hilfsbrücke offen) --- Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21651,5730 21618,5699
 Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21618,5699 21605,5687
@@ -4059,7 +4058,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
-#: last_checked: 2025-06-11 (mapillary) vvv
+#: last_checked: 2025-07-18 (mapillary) vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="5"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4131,7 +4130,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: last_checked ^^^
 # 
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder offen?
-#: last_checked: 2025-07-16 (Baugrube zu, bereits fertig asphaltiert --- wann wird eröffnet?)
+#: last_checked: 2025-07-19 (Baugrube zu, bereits fertig asphaltiert --- wann wird eröffnet?)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 45d
 Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
@@ -4431,7 +4430,7 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 # 
 #: next_check_id: MARIENUFER-2023
 #: osm_watch: way id="1272560911" version="2"
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-19
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 # REMOVED (hier nicht mehr) --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 22546,3115
@@ -4511,7 +4510,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-07-18
+#: last_checked: 2025-07-19
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4743,7 +4742,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: note: Dieser Eintrag existiert auch noch als aktiver bbbike-temp-blockings-Eintrag.
 #: osm_watch: way id="229990468" version="7"
-#: last_checked: 2025-05-14
+#: last_checked: 2025-07-19
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
@@ -4779,12 +4778,12 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="11"
-#: last_checked: 2025-06-14
+#: last_checked: 2025-07-19
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
 #: osm_watch: note 4522174 2
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-19
 #: check_frequency: 60d
 #: next_check: 2025-09-20 (entwicklungsstadt)
 Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700 17851,8662
@@ -5212,7 +5211,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: osm_watch: way id="588431071" version="8"
 #: osm_watch: way id="696227207" version="4"
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
-#: last_checked: 2025-05-14
+#: last_checked: 2025-07-19
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-08-05
 #: next_check: 2025-12-31

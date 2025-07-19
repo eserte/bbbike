@@ -302,7 +302,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-19
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -477,7 +477,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-07-11
+#: last_checked: 2025-07-19
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -3475,7 +3475,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
 #: osm_watch: way id="30893534" version="25"
 #: osm_watch: way id="1155399359" version="3"
-#: last_checked: 2025-05-14
+#: last_checked: 2025-07-19
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Am Teltowkanal: Asphalt	Q0 7874,4481 7866,4419 7769,4315
@@ -5680,7 +5680,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (vom 27. Februar 2022: Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-07-19
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -13701,8 +13701,8 @@ Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6634,8134 6648,8064 6669,7974 668
 (Treskowallee - Traberweg): fester Sandweg	Q1- 18442,7882 18356,7944 18260,8041 18222,8103
 (Treskowallee - Traberweg): fester Sandweg mit Schotter	Q2 18222,8103 18130,8386 18116,8424
 (Üderseestr - Weg an der KGA Stallwiese): fester Sandweg	Q1- 18135,8404 18130,8386
-#: add_fragezeichen: Ist der Asphalt mittlerweile besser geworden?
-Goltzstr.: Asphalt mit einigen Schäden	Q1; 11073,-2037 10983,-2116
+#: historical_note: früher (bis 2025): Asphalt mit einigen Schäden, Q1;
+Goltzstr.: Asphalt + betonierte Bushaltestelle	Q0 11073,-2037 10983,-2116
 (Falkstr. - Morusstr.): Kopfsteinpflaster	Q2+ 12186,7952 12219,7958
 #: note: einige kurze gepflasterte Abschnitte
 (Falkstr. - Morusstr.): Verbundsteinpflaster	Q1- 12219,7958 12407,8000 12439,8014 12450,8016
@@ -14087,7 +14087,7 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-07-18
+#: last_checked: 2025-07-19
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018
@@ -21111,7 +21111,7 @@ Hoppendorfer Str.: guter Beton	Q0 21810,7749 21816,7754 21914,7862 21994,7949
 # 
 #: by: Ilona Lange:
 #: historical_note: früher (bis zu den Bauarbeiten 2025) schlechtes Kopfsteinpflaster, Q3
-Helbigstr.: Kopfsteinpflaster	Q2 20362,3750 20336,3783
+Helbigstr.: geglättetes Kopfsteinpflaster	Q1- 20362,3750 20336,3783
 #: confirmed_by: srt
 #: note: der westliche Bürgersteig ist für die Gegend relativ breit und mit Verbundsteinpflaster versehen
 Helbigstr.: schlechtes Kopfsteinpflaster	Q3 20336,3783 20109,4087

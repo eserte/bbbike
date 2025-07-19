@@ -32023,7 +32023,7 @@ EOF
 #: osm_watch: note 4813149 1
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-19
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 	2::inwork 16539,10097 16353,10207 16148,10329 15758,10578
@@ -34929,7 +34929,7 @@ EOF
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: osm_watch: way id="229990468" version="7"
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2025-05-14
+#: last_checked: 2025-07-19
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 	2::inwork 7673,4223 7769,4315
@@ -36470,13 +36470,13 @@ EOF
 	q4::inwork; 12330,8636 12494,8501
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
-       until => undef, # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
+     { from  => $isodate2epoch->("2025-07-20 00:00:00"), # $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
+       until => $isodate2epoch->("2025-08-08 12:00:00"), # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
 #      dont_check_date => 1,
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, voraussichtlich bis 28.08.2023, eventuell etwas länger bis zum 30.08.2023',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
-#      text  => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
-       text  => 'Schubertstr.: Sperrung wegen Baustelle, auch für Fußgänger nicht passierbar, Ende der Bauarbeiten unbekannt',
+#      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, Hämmerlingstr. vom 21.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 21.07.2025 06:00 Uhr bis 08.08.2025 12:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
@@ -36510,19 +36510,16 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1836261367248228357
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html (21. Juli 2025 6 Uhr bis 8. August 2025 12 Uhr)
-#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (G,B,W)
 #: priority: #A
 #: last_checked: 2025-06-18 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-07-20 (DB website: nächste Sperrung der Hämmerlingstr.) vvv
+#: next_check: 2025-08-08 (geplantes Ende) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 # REMOVED --- #: osm_watch: way id="794278028" version="10"
 # REMOVED --- #: osm_watch: way id="1181902719" version="1"
 #: XXX nächste Sperrung der Hämmerlingstr.: Von Montag, 21. Juli (6 Uhr), bis Freitag, 8. August 2025 (vsl. 12 Uhr)
-# REMOVED --- Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
-#: osm_watch: way id="1163982841" version="3"
-Schubertstr.	2::inwork 21984,6317 21856,6390
+Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -37792,7 +37789,7 @@ EOF
 #: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2025-05-12 (mapillary) vvv
+#: last_checked: 2025-07-19 vvv
 #: next_check: 2025-08-29 vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung
@@ -37800,8 +37797,9 @@ Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
 # REMOVED (laut Umleitungsplan nicht mehr) --- Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
-# REMOVED (laut Umleitungsplan nicht mehr) --- Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
+# REMOVED (laut Umleitungsplan nicht mehr) (tatsächlich auch nicht; interessanterweise ist eine provisorische Radspur noch übrig geblieben) --- Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED (hier nicht mehr) --- Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
+#: note: an der Bahnhofstr. keine Freigabe für Radfahrer; weiter hinten in der Ferne (Rehagener Str.?) kann man Zusatzschilder erahnen --- hier vielleicht Radfahrer frei?
 Goltzstr.	q4::inwork; 10983,-2116 10763,-2276 10642,-2371 10563,-2432 10454,-2520
 #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
 Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156 10310,-2136
@@ -37920,7 +37918,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-19
 #: check_frequency: 30d
 #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40594,7 +40592,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (H,G,T,W)
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-19
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -45432,8 +45430,8 @@ EOF
 #: osm_watch: way id="27260312" version="25"
 #: osm_watch: note 4673198 2
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
-#: last_checked: 2025-06-16 (osm)
-#: check_frequency: 30d
+#: last_checked: 2025-07-19
+#: check_frequency: 60d
 #: next_check: 2025-12-31
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 EOF
@@ -47056,7 +47054,7 @@ EOF
 #: source_id: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
-#: last_checked: 2025-07-02 vvv
+#: last_checked: 2025-07-19 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
@@ -47204,7 +47202,7 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,H)
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-19
 #: check_frequency: 10d
 #: next_check: 2025-08-01 (Halteverbotsschilder)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
@@ -47687,9 +47685,11 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 # REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
 #: note: Halteverbotsschilder bis 15.08.2025, auch laut Website bis zum gleichen Datum; bei rbb+adac nun ebenfalls bis zum 15.08.2025 verlängert
-Radickestraße: Einbahnstraße zwischen Friedenstr. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20366,3480 20451,3538 20499,3572
+Radickestraße: Einbahnstraße zwischen Anna-Seghers-Str. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572
 Friedenstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20219,3661 20366,3480
 Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451,3538
+Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
+Gellertstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20148,3490 20237,3392
 # REMOVED --- Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
 # REMOVED --- #: note: Beginn ab 26.05.2025 --- Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15
@@ -48124,7 +48124,7 @@ EOF
        data  => <<EOF,
 #: XXX Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann (mittlerweile aber wohl nicht mehr)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="1376570531" version="3"
+#: osm_watch: way id="1376570531" version="4"
 #: last_checked: 2025-07-18
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 14d (traffic)
@@ -48447,12 +48447,12 @@ EOF
 EOF
      },
      { from  => 1748750400, # 2025-06-01 06:00
-       until => 1752962340, # 2025-07-19 23:59
+       until => 1752944297, # 1752962340, # 2025-07-19 23:59
        text  => 'Lentzeallee: Bauarbeiten zwischen Gregor-Mendel-Str. und Magnolienring, Sperrung Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 19.07.2025 23:59',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.3034,52.46818,02.06.2025,06:00 (bis 19.07.2025)
-#: source_id: adac:1702625886 (bis voraussichtlich 19.07.2025)
+#: source_id: adac:1702625886 (bis voraussichtlich 19.07.2025) (inaktiv)
 	q4::inwork; 3655,6811 3596,6828 3449,6863
 EOF
      },
@@ -48828,7 +48828,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: FUNKWERK-2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-02
+#: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich
+#: last_checked: 2025-07-19
 #: check_frequency: 60d
 #: next_check: 2025-10-31
 	q4::inwork 22456,3889 22666,3888
@@ -48951,7 +48952,7 @@ EOF
        text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-19
 #: check_frequency: 60d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 	2::inwork 17950,8974 17915,8945
@@ -49040,7 +49041,7 @@ EOF
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-07-18
+#: last_checked: 2025-07-19
 # REMOVED --- #: check_frequency: 10d
 #: next_check: 2025-08-15 (rbb-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -49054,6 +49055,25 @@ EOF
        data  => <<'EOF',
 #: source_id: LS/221-E/25/086 (bis 01.08.2025)
 	2::inwork 23759,49971 24081,50440 24364,50554 24522,50570 25904,50276 26244,50372
+EOF
+     },
+     { from  => $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
+       until => undef, # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
+#      dont_check_date => 1,
+#      text  => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
+       text  => 'Schubertstr.: Sperrung wegen Baustelle, auch für Fußgänger nicht passierbar, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
+#: also_indoor: traffic (none)
+#: last_checked: 2025-06-18 vvv
+#: check_frequency: 90d vvv
+#: osm_watch: way id="1163982841" version="3"
+Schubertstr.	2::inwork 21984,6317 21856,6390
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
     );

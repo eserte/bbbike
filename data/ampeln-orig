@@ -35,12 +35,12 @@ Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork
 #: note: Richtung Südosten auch Radwegführung auf dem Bürgersteig, Richting Nordwesten sollen Radfahrer via Tucholskystr. und Auguststr. fahren (wegen Tramschienen?!)
 #: add_fragezeichen: Besteht die Gegenverkehrsregelung weiterhin?
 #: last_checked: 2025-07-15 (mapillary)
-#: next_check: 2025-07-19 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20250719
+#: next_check: 2025-09-25
+#: valid: -20250925
 Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
-#: last_checked: 2025-07-02
+#: last_checked: 2025-07-19
 #: check_frequency: 180d
 #: next_check_id: 2027-05-09 (Ausschreibungsunterlagen)
 Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
@@ -155,10 +155,10 @@ Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 
 #: source_id: viz2021:13.36206,52.4473,24.07.2024,10:00 (bis 25.07.2025) (inaktiv)
 #: source_id: viz2021:13.363257,52.446918,24.07.2024,10:00 (bis 25.07.2025)
 #: also_indoor: traffic (T,B)
-#: last_checked: 2025-05-14
-#: check_frequency: 120d
+#: last_checked: 2025-07-19
+#: check_frequency: 90d
 #: next_check: 2025-07-25
-#: valid: -20250725
+# REMOVED --- #: valid: -20250725
 Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 # 
 #: next_check_id: PERLEBERGER-2024
@@ -173,8 +173,10 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 #: source_id: viz2021:13.584313,52.444031,30.04.2025,10:00 (bis 11.07.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040
 #: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium
-#: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
-#: valid: -20250711
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-wendenschlo%C3%9Fstra%C3%9Fe-47.1437/#post-25536
+#: last_checked: 2025-07-18 (architektur-urbanistik)
+# REMOVED --- #: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250711
 Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 # 
 # REMOVED (Ampelanlage steht noch, ist aber (dauerhaft?) ausgeschaltet) --- #: next_check_id: KOENIGSPLATZ-2024 --- #: last_checked: 2024-12-27 --- #: check_frequency: 30d --- #: next_check: 2024-12-12 --- #: valid: -20241212 --- Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
@@ -2142,6 +2144,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 2857,8487
 	X 2322,8857
 	X 1573,5152
+#: XXX_prog Ampel gilt nicht für auf dem Radweg fahrende Radfahrer Richtung Norden
 	X 23451,4877
 	F -7787,8517
 	X -8797,7638
@@ -4088,7 +4091,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-19
 #: check_frequency: 90d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

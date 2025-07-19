@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-19
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -63,7 +63,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="18"
 #: osm_watch: way id="1072662717" version="21"
-#: last_checked: 2025-07-13
+#: last_checked: 2025-07-19
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -305,39 +305,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 ### Adlershof ###
 # 
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023)
-#: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/
-#: by: https://www.berliner-woche.de/adlershof/c-bauen/umbau-des-marktplatzes-adlershof-hat-anfang-august-begonnen_a353228
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237306.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1391572.php (zweiter Bauabschnitt ab 4. Dezember 2023, Abschluss Mitte 2025)
-#: by: https://www.berliner-woche.de/adlershof/c-bauen/neue-bauarbeiten-am-marktplatz-adlershof_a401378
-#: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=763887#post763887 (bis Mitte 2025)
-#: by: https://www.aktives-adlershof.de/das-aktive-zentrum/projekte/historischer-marktplatz
-#: by: https://www.wista.de/aktuelles/news/marktplatz-doerpfeldstrasse-wird-zur-gruenen-mitte-von-adlershof (mit Karte)
-#: by: https://www.wista.de/fileadmin/_processed_/8/c/csm_marktplatz_Adlershof_f75006337a.webp
-#: by: https://www.tagesspiegel.de/berlin/bezirke/eroffnung-mit-burgerfest-geplant-endspurt-fur-den-neuen-marktplatz-in-adlershof-12604670.html (Eröffnung Mai 2025)
-#: by[nocache]: https://archive.is/tLaeV
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_55_4355_4442_online.pdf (Teileinziehung (wo genau?))
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_02_0117_0156_online.pdf (Teileinziehung: korrekte Planskizze; es ist der nördliche Strang)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1539372.php (Verschiebung: Fertigstellung im Sommer 2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/marktplatz-in-treptow-kopenick-eroffnung-nach-umbau-verschiebt-sich-13344481.html
-#: by: https://entwicklungsstadt.de/marktplatz-adlershof-fertigstellung-und-einweihung-im-sommer-2025-geplant/
-#: by: https://www.berliner-zeitung.de/news/treptow-koepenick-darum-verzoegern-sich-die-bauarbeiten-auf-dem-marktplatz-adlershof-li.2323549
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Teileinziehung von Straßenland, nördlicher Strang)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1581989.php (Eröffnung am 29. August 2025, schrittweise Freigabe ab 19. Juli 2025)
-#: XXX der nördliche Strang soll dauerhaft eingezogen werden (Fußgängerzone? für Radfahrer frei?)
-#: osm_watch: way id="20554168" version="29"
-#: osm_watch: way id="1155308749" version="1"
-#: last_checked: 2025-06-18 vvv
-#: check_frequency: 45d vvv
-#: next_check: 2025-08-29 (BA-Pressemitteilung) vvv
-Marktplatz Adlershof: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 20290,3756 20336,3783
-# REMOVED (hier wieder offen) --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714
-Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (keine Einschränkungen mehr) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023) --- #: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/ --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/umbau-des-marktplatzes-adlershof-hat-anfang-august-begonnen_a353228 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237306.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1391572.php (zweiter Bauabschnitt ab 4. Dezember 2023, Abschluss Mitte 2025) --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/neue-bauarbeiten-am-marktplatz-adlershof_a401378 --- #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=763887#post763887 (bis Mitte 2025) --- #: by: https://www.aktives-adlershof.de/das-aktive-zentrum/projekte/historischer-marktplatz --- #: by: https://www.wista.de/aktuelles/news/marktplatz-doerpfeldstrasse-wird-zur-gruenen-mitte-von-adlershof (mit Karte) --- #: by: https://www.wista.de/fileadmin/_processed_/8/c/csm_marktplatz_Adlershof_f75006337a.webp --- #: by: https://www.tagesspiegel.de/berlin/bezirke/eroffnung-mit-burgerfest-geplant-endspurt-fur-den-neuen-marktplatz-in-adlershof-12604670.html (Eröffnung Mai 2025) --- #: by[nocache]: https://archive.is/tLaeV --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_55_4355_4442_online.pdf (Teileinziehung (wo genau?)) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_02_0117_0156_online.pdf (Teileinziehung: korrekte Planskizze; es ist der nördliche Strang) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1539372.php (Verschiebung: Fertigstellung im Sommer 2025) --- #: by: https://www.tagesspiegel.de/berlin/bezirke/marktplatz-in-treptow-kopenick-eroffnung-nach-umbau-verschiebt-sich-13344481.html --- #: by: https://entwicklungsstadt.de/marktplatz-adlershof-fertigstellung-und-einweihung-im-sommer-2025-geplant/ --- #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-darum-verzoegern-sich-die-bauarbeiten-auf-dem-marktplatz-adlershof-li.2323549 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Teileinziehung von Straßenland, nördlicher Strang) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1581989.php (Eröffnung am 29. August 2025, schrittweise Freigabe ab 19. Juli 2025) --- #: XXX der nördliche Strang soll dauerhaft eingezogen werden (Fußgängerzone? für Radfahrer frei?) --- #: osm_watch: way id="20554168" version="29" --- #: osm_watch: way id="1155308749" version="1" --- #: last_checked: 2025-07-19 vvv --- #: check_frequency: 45d vvv --- #: next_check: 2025-08-29 (BA-Pressemitteilung) vvv --- Marktplatz Adlershof: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 20290,3756 20336,3783 --- # REMOVED (hier wieder offen) --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714 --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (keine großen Einschränkungen mehr) --- #: XXX_prog: BS --- #: last_checked: 2018-08-11 vvv --- Wagner-Régeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703 --- Igo-Etrich-Str. - Wagner-Régeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730 --- #: last_checked ^^^
 # 
 ### Altglienicke ###
@@ -1859,7 +1827,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-19
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374

@@ -278,7 +278,8 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_30_1961_2044_online.pdf
 #: by: https://www.t-online.de/region/berlin/id_100824980/berlin-mohrenstrasse-wird-am-23-august-offiziell-umbenannt.html (Umbenennung am 23.08.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/07/berlin-straen-umbenennung-mohrenstraein-anton-wilhelm-arno-strasse-23-august.html (U-Bahnhof wird auch umbenannt, noch kein Termin)
-#: osm_watch[closed]: note 4168370 2
+#: by: https://www.tagesspiegel.de/berlin/nach-gerichtsentscheidung-berliner-mohrenstrasse-wird-am-23-august-umbenannt-14044574.html
+#: osm_watch: note 4168370 4
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str."; außerdem wird der U-Bahnhof umbenannt (aber wann?) vvv
 #: priority: #A vvv
 #: last_checked: 2025-07-15 vvv
@@ -15232,9 +15233,9 @@ Gerda-und-Wolfgang-Szepansky-Promenade	NN 9196,5272 9171,5263 9080,5225 8881,514
 (Am Teltowkanal, südl. Ufer)	NN 8784,5095 8618,5019 8598,4985 8575,4980 8234,4660 7994,4430
 #: next_check_id: RING-2025
 #: XXX zurzeit provisorische Führung des Uferweges, wird später wieder verschwenkt
-#: last_checked: 2025-05-14
-#: check_frequency: 120d
-#: next_check: 2025-07-25
+#: last_checked: 2025-07-19
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2025-07-25
 (Am Teltowkanal, nördl. Ufer)	NN 7874,4481 7866,4419 7769,4315 7673,4223
 #: oldname: -20160914: <namenslos> vvv
 Mariendorfer-Hafen-Weg	N 8199,3338 8145,3380 8106,3410
@@ -15982,7 +15983,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-19
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16373,7 +16374,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-19
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -16776,7 +16777,9 @@ Steinbachstr.	N 19587,3801 19673,3888 19703,3979 19759,4160
 Husstr.	N 19633,3751 19736,3858 19763,3959 19815,4148
 Hollstr.	N 20035,4099 19974,4050 19947,4087 19917,4168
 Genossenschaftsstr.	N 19921,4256 19963,4198 20035,4099 20067,4054 20145,3954 20290,3756 20285,3739 20304,3714
-Marktplatz Adlershof	N 20290,3756 20336,3783
+#: historical_note: bis 2025 N
+#: note: gemeinsamer Rad- und Gehweg
+Marktplatz Adlershof	NN 20290,3756 20336,3783
 Zur Holzoper	N 19963,4198 20005,4235 20020,4218 20094,4271 20050,4320 19980,4269 20005,4235
 Pfingstberggasse	N 19959,3891 20075,3979 20112,3932 20145,3954
 Florian-Geyer-Str.	N 19869,4151 19884,4018 19888,3990 19924,3939 19959,3891 19996,3841 20066,3746 20159,3623
@@ -21025,15 +21028,15 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: osm_watch: way id="1277899794" version="1"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-07-19
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
 #: osm_watch: way id="1156287321" version="2"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-07-19
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
 #: osm_watch: way id="1138047106" version="4"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-07-19
 #: check_frequency: 90d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661
 # 

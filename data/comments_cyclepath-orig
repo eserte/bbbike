@@ -781,10 +781,12 @@ Verbundsteinpflaster	RW2;RW2 4801,63458 4948,63424 5014,63359
 Verbundsteinpflaster	RW2;RW2 5444,65780 5367,65584
 Verbundsteinpflaster	RW2;RW2 26844,15290 26951,15227 27054,15168 27163,15105 27176,15097 27202,15137 27272,15099 27250,15053 27265,15043 27375,14984 27482,14921 27534,14890 27594,14854
 #: note: wird üblicherweise in beiden Richtungen benutzt, aber eine entsprechende Ausschilderung existiert nicht
-gemeinsamer Rad- und Gehweg	RW2; 13300,-1252 13238,-1248 13131,-1273 12975,-1244 12647,-1187 12507,-1166 12407,-1152 12058,-1170
+#: historical_note: früher: gemeinsamer Rad- und Gehweg	RW2;
+Gehweg für Radfahrer frei	RW1; 13300,-1252 13238,-1248 13131,-1273 12975,-1244 12647,-1187 12507,-1166 12407,-1152 12058,-1170
 Gehweg für Radfahrer frei	RW1; 13363,-1252 13469,-1167 13750,-992
 # REMOVED (see elsewhere) --- gemeinsamer Rad- und Gehweg	RW2; 13300,-1252 13230,-712
-	RW2;RW2 13300,-1252 13363,-1252
+#: historical_note: früher RW2;RW2
+Gehweg für Radfahrer frei	RW1;RW1 13300,-1252 13363,-1252
 	RW7;RW7 14137,-651 14318,-632 14424,-705 14788,-849 14843,-859 15045,-941 15118,-970 15738,-1159 16074,-1240
 Gehweg für Radfahrer frei	RW1; -10267,-1759 -9930,-1687
 asphaltiert	RW8?;RW 55271,172339 55359,172397 55459,172528
@@ -822,8 +824,10 @@ asphaltiert	RW8;RW2 37400,188601 37064,189140 36607,189766 35988,190394
 Verbundsteinpflaster	RW;RW 37400,188601 37796,187862 37881,187596 38017,187425
 etwas breitere Seitenstreifen, ca. 0.5m	RW3;RW3 35470,191333 35198,191966 35230,192082 35653,192391 35684,192550 34993,193887 34411,193747 34151,193949
 	RW6;RW6 69085,73607 69061,73583
-Asphalt, Gehweg für Radfahrer frei	RW1;RW9 15395,409 15333,378 14915,153 14710,-25 14239,-492
-Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1;RW9 14239,-492 14091,-597
+#: note: nur Richtung Westen so ausgeschildert, aber es scheint üblich zu sein, den Gehweg auch Richtung Osten zu nutzen vvv
+Asphalt, Gehweg für Radfahrer frei	RW1; 15395,409 15333,378 14915,153 14710,-25 14239,-492
+Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 14239,-492 14091,-597
+#: note ^^^
 	RW2; 18595,-440 18561,-566 18555,-588 18533,-687
 Gehweg für Radfahrer frei	RW1; 18533,-687 18555,-588 18561,-566 18595,-440
 	RW2;RW2 18533,-687 18523,-735 18496,-784 18475,-800 18423,-843
