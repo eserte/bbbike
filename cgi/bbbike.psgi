@@ -160,6 +160,11 @@ builder {
 	}
     }
 
+    {
+	my $asch_app = do "$root/cgi/bbbike-asch.psgi";
+	$app = mount "$cgiurl/asch" => $asch_app;
+    }
+
     if (USE_NEW_DATA_DOWNLOAD) {
 	my $new_data_download_app = do "$root/cgi/bbbike-data-download.psgi";
 	$app = mount "$staticurl/data" => $new_data_download_app;
