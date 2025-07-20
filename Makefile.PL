@@ -300,6 +300,8 @@ my @req_table =
    'Für die CGI-Emulation mit PSGI'],
   [qw/Plack::Middleware::Rewrite	0	all	8	cgi/,
    'Für das Plack/PSGI-Routing benötigt'],
+  [qw/Plack::Middleware::Deflater	0	all	8	cgi/,
+   'Für das Komprimieren von data-Downloads benötigt'],
   [qw/Starman	0	all	8	cgi/,
    'Ein performanterer PSGI-Server als der Standard-Server bei Plack'],
 

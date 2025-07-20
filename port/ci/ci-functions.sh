@@ -422,7 +422,7 @@ install_webserver_dependencies() {
     else
 	if [ "$USE_SYSTEM_PERL" = "1" ]
 	then
-	    sudo apt-get install -y $apt_quiet --no-install-recommends starman libcgi-emulate-psgi-perl libcgi-compile-perl libplack-middleware-rewrite-perl
+	    sudo apt-get install -y $apt_quiet --no-install-recommends starman libcgi-emulate-psgi-perl libcgi-compile-perl libplack-middleware-rewrite-perl libplack-middleware-deflater-perl
 	# else: plack dependencies are already handled in Makefile.PL's PREREQ_PM
 	fi
     fi

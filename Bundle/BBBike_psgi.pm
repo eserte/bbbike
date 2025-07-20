@@ -83,6 +83,8 @@ CGI::Compile	- Für die CGI-Emulation mit PSGI
 
 Plack::Middleware::Rewrite	- Für das Plack/PSGI-Routing benötigt
 
+Plack::Middleware::Deflater	- Für das Komprimieren von data-Downloads benötigt
+
 Starman	- Ein performanterer PSGI-Server als der Standard-Server bei Plack
 
 HTTP::Date	- Für If-Modified-Since-Handling in BBBikeDataDownloadCompat (mod_perl)
