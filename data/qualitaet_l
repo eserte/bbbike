@@ -1539,6 +1539,7 @@ Eichenweg: Asphalt	Q0 3780,-1731 3783,-2079 3782,-2103
 Wodanstr. (Teltow): Asphalt	Q0 3921,-1170 3974,-1175
 Wodanstr. (Teltow): rauer Asphalt mit einigen Sch‰den	Q1 3974,-1175 4091,-1141 4245,-1097
 Wodanstr. (Teltow): Asphalt	Q0 4245,-1097 4367,-1059
+Gunterstr. (Teltow): rauer Asphalt	Q1 4245,-1097 4209,-959 4218,-808 4228,-696
 Friggastr. (Teltow): Asphalt	Q0 3912,-1265 3958,-1276 4115,-1250 4356,-1211
 (Hagenstr. - Friggastr.): unbefestigter Trampelpfad	Q2 4372,-1201 4356,-1211
 Berliner Str. (Woltersdorf): Verbundsteine	Q0 33207,5820 33098,5856 32978,5895 32863,5933 32823,5946 32728,5942 32601,5936 32479,5931 32376,5926 32252,5917 32192,5915
@@ -5354,7 +5355,8 @@ Business Park Berlin - Schˆnefeld: Asphalt	Q0 19192,-2124 19177,-2106 19162,-210
 (Service-Weg): Beton	Q1 19054,-1940 19160,-1897
 (zum Radweg): Asphalt	Q0 19262,-2151 19262,-2128
 (Mauerweg - Siegfriedstr.): unbefestigter Trampelpfad	Q3 4081,-425 4058,-437
-Hagenstr.: Asphalt	Q0 4209,-959 4329,-925
+Hagenstr.: Asphalt	Q0; 4209,-959 4329,-925
+Hagenstr.: schadhafter Beton	Q1; 4329,-925 4209,-959
 Hagenstr.: Schotterstraﬂe	Q2 4329,-925 4367,-1059
 Hagenstr.: unbefestigte Straﬂe	Q2 4367,-1059 4366,-1171 4372,-1201
 (Mauerweg - Hagenstr.): Schotterstraﬂe	Q2 4406,-910 4329,-925

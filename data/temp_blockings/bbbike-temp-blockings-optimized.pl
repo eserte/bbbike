@@ -4213,24 +4213,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
          'until' => undef
        },
        undef,
-       {
-         'data' => '# REMOVED --- #: source_id: bvg2024:218#HIM_FREETEXT_292925 (bis 2025-07-20)
-#: by: https://www.wj-tools.de/index.php/strecken (Berliner Volkstriathlon)
-# REMOVED (hier nicht) ---	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
-Kronprinzessinenweg	2::temp -3296,3686 -2218,5133 -927,6888
-Havelchaussee bis Grunewaldturm	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856
-Fischerhüttenweg	2::temp -2218,5133 -2112,5050 -2059,5011 -1654,4703 -1443,4542 -1366,4454 -1344,4436 -1297,4385
-# REMOVED (nur bis zum Grunewaldturm) ---	2::temp -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-#	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-#	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
-#	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 683,11270
-',
-         'from' => 1752876000,
-         'id' => 3009,
-         'text' => 'Havelchaussee, Kronprinzessinenweg und Fischerhüttenweg: wegen eines Triathlons Sperrungen am 20.07.2025 vormittags',
-         'type' => 'gesperrt',
-         'until' => 1753005600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8535,7 +8518,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: by: https://www.morgenpost.de/bezirke/pankow/article409300680/berlin-prenzlauer-berg-angriffe-auf-gesperrte-bruecke-schwedter-steg-oeffnet-trotzdem.html (Eröffnung am 18.7.2025)
 #: by: https://www.tagesspiegel.de/berlin/schwedter-steg-in-berlin-voll-gesperrt-sanierung-am-mauerpark-verzogert-sich-wegen-vandalismus-13882870.html
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025)
-#: osm_watch: note 4317053 7
+#: osm_watch: note 4317053 8
 #: osm_watch: way id="1149646787" version="5"
 #: last_checked: 2025-07-04 (mapillary)
 # REMOVED --- #: next_check: 2025-07-18 (VIZ-Verkehrsmeldung, MoPo, Tsp)
@@ -9266,7 +9249,7 @@ Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 268
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-07-14 (indoor check) vvv
+#: last_checked: 2025-07-20 (indoor check) vvv
 #: check_frequency: 7d (indoor/traffic check) vvv
 #: next_check: 2025-08-04 vvv
 # REMOVED (laut VIZ wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
@@ -9345,7 +9328,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: next_check_id: RUMMELSBURGERBUCHT-2021
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (bis 20.07.2025)
-#: last_checked: 2025-07-18
+#: last_checked: 2025-07-20
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung)
 # REMOVED ---	q3::inwork 15004,10791 14994,10732
 ## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\\t3nocross 15081,10775 15004,10791 14927,10807\\n") | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\'
@@ -9611,13 +9594,11 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-18 vvv
-#: check_frequency: 90d vvv
 #: osm_watch: way id="1163982841" version="3"
+#: last_checked: 2025-06-18
+#: check_frequency: 90d
+#: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 ',
          'from' => 1726524000,
          'id' => 4397,

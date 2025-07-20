@@ -34878,12 +34878,12 @@ EOF
        until => $isodate2epoch->("2023-02-28 18:00:00"), # 1672527599, # 2022-12-31 23:59
        text  => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Februar 2023', # ursprünglich: Ende 2022
        type  => 'handicap',
-       source_id => 'https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/',
        data  => <<EOF,
+#: by: https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
 #: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
 #: XXX nach den Bauarbeiten breiterer Radstreifen (1,5m)
 #: also_indoor: traffic (G,ex-H[falsch?],B,W)
-#: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
+# REMOVED (obsolete) --- #: also_indoor: url https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/
 #: osm_watch: way id="4441630" version="29" brb
 #: last_checked: 2023-02-26 (research)
 #: check_frequency: 3d
@@ -37378,7 +37378,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/08/29/vollsperrung-vier-bomben-legen-die-avus-lahm/
 #: by: https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/
 #: by: https://berliner-abendblatt.de/berlin-news/ursache-fuer-grossfeuer-auf-sprengplatz-weiter-unklar-id259085
-#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-09-04&until=&near=
+# REMOVED (obsolete) --- #: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-09-04&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
@@ -47347,7 +47347,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/pankow/article409300680/berlin-prenzlauer-berg-angriffe-auf-gesperrte-bruecke-schwedter-steg-oeffnet-trotzdem.html (Eröffnung am 18.7.2025)
 #: by: https://www.tagesspiegel.de/berlin/schwedter-steg-in-berlin-voll-gesperrt-sanierung-am-mauerpark-verzogert-sich-wegen-vandalismus-13882870.html
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025)
-#: osm_watch: note 4317053 7
+#: osm_watch: note 4317053 8
 #: osm_watch: way id="1149646787" version="5"
 #: last_checked: 2025-07-04 (mapillary)
 # REMOVED --- #: next_check: 2025-07-18 (VIZ-Verkehrsmeldung, MoPo, Tsp)
@@ -48723,7 +48723,7 @@ EOF
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-07-14 (indoor check) vvv
+#: last_checked: 2025-07-20 (indoor check) vvv
 #: check_frequency: 7d (indoor/traffic check) vvv
 #: next_check: 2025-08-04 vvv
 # REMOVED (laut VIZ wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
@@ -48800,7 +48800,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (bis 20.07.2025)
-#: last_checked: 2025-07-18
+#: last_checked: 2025-07-20
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung)
 # REMOVED ---	q3::inwork 15004,10791 14994,10732
 ## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 15081,10775 15004,10791 14927,10807\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
@@ -49067,13 +49067,11 @@ EOF
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-18 vvv
-#: check_frequency: 90d vvv
 #: osm_watch: way id="1163982841" version="3"
+#: last_checked: 2025-06-18
+#: check_frequency: 90d
+#: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 EOF
      },
     );

@@ -358,7 +358,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-07-18 vvv
+#: last_checked: 2025-07-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1348,7 +1348,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-07-18 vvv
+#: last_checked: 2025-07-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1680,7 +1680,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2025-07-13 vvv
+#: last_checked: 2025-07-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -1700,7 +1700,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="823635969" version="23"
 #: osm_watch: way id="4615746" version="49"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-07-13 vvv
+#: last_checked: 2025-07-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -3147,7 +3147,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-07-18
+#: last_checked: 2025-07-20
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -5137,7 +5137,7 @@ Grünbeschichtung "light" (Rauten)	RW4; 19924,11890 19934,11977
 Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll_fahrrat_26-02-2025.pdf
-#: last_checked: 2025-05-08 (mapillary) vvv
+#: last_checked: 2025-05-30 (kartaview) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: XXX früher: Verbundsteinpflaster	RW1;
@@ -5146,15 +5146,17 @@ Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: XXX früher: Asphalt	RW1;
 #: osm_watch: way id="1389241596" version="1"
 	RW0; 20325,16551 20230,16560 20150,16572
+#: XXX früher: am Anfang und Ende Leitboys	RW3;
+gemeinsamer Rad- und Gehweg	RW2; 20150,16572 20230,16560 20328,16546
+#: XXX früher: Verbundsteinpflaster	RW1;
+gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2; 20328,16546 20358,16560 20382,16582 20397,16621 20390,16663 20323,16706
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-Verbundsteinpflaster	RW1; 20328,16546 20358,16560 20382,16582 20397,16621 20390,16663 20323,16706
 Verbundsteinpflaster	RW1; 20150,16572 19896,16611
 	RW1; 19896,16611 19647,16633 19428,16692 18951,16847
 	RW1; 18875,16872 18951,16847 19428,16692 19647,16633 19896,16611
 	RW2; 19896,16611 20150,16572
-am Anfang und Ende Leitboys	RW3; 20150,16572 20230,16560 20328,16546
 neu asphaltiert	RW1; 18951,16847 18875,16872
 #: note: hier kann man auch Richtung Osten bis zur Klettwitzer Str. fahren; dort gibt es eine Mittelinsel als Überquerungshilfe
 neu asphaltiert	RW1; 18875,16872 18738,16957
@@ -7222,7 +7224,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17569,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023) (inaktiv)
 #: XXX Asphaltierung des Radwegs --- wird auch dieser Abschnitt asphaltiert? (noch keine Bauarbeiten) vvv
-#: last_checked: 2025-05-07 (mapillary) vvv
+#: last_checked: 2025-05-30 (kartaview) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-31 vvv
 Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16861,18009 16905,17949 16945,17900 16981,17855

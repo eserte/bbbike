@@ -1877,6 +1877,8 @@ Wodanstr. (Teltow): Asphalt	Q0 3921,-1170 3974,-1175
 #: confirmed_by: srt
 Wodanstr. (Teltow): rauer Asphalt mit einigen Schäden	Q1 3974,-1175 4091,-1141 4245,-1097
 Wodanstr. (Teltow): Asphalt	Q0 4245,-1097 4367,-1059
+#: note: nur im südlichen Bereich geprüft
+Gunterstr. (Teltow): rauer Asphalt	Q1 4245,-1097 4209,-959 4218,-808 4228,-696
 Friggastr. (Teltow): Asphalt	Q0 3912,-1265 3958,-1276 4115,-1250 4356,-1211
 (Hagenstr. - Friggastr.): unbefestigter Trampelpfad	Q2 4372,-1201 4356,-1211
 #: note: Fahrbahn und Radwege
@@ -6245,7 +6247,9 @@ Business Park Berlin - Schönefeld: Asphalt	Q0 19192,-2124 19177,-2106 19162,-210
 (Service-Weg): Beton	Q1- 19054,-1940 19160,-1897
 (zum Radweg): Asphalt	Q0 19262,-2151 19262,-2128
 (Mauerweg - Siegfriedstr.): unbefestigter Trampelpfad	Q3+ 4081,-425 4058,-437
-Hagenstr.: Asphalt	Q0 4209,-959 4329,-925
+Hagenstr.: Asphalt	Q0; 4209,-959 4329,-925
+#: note: aber normalerweise wenig Verkehr, und man kann dann wohl auf der besseren Hälfte fahren
+Hagenstr.: schadhafter Beton	Q1; 4329,-925 4209,-959
 Hagenstr.: Schotterstraße	Q2 4329,-925 4367,-1059
 Hagenstr.: unbefestigte Straße	Q2 4367,-1059 4366,-1171 4372,-1201
 #: historical_note: alter brüchiger Asphalt, Q2
@@ -9916,4 +9920,6 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 25970,-5906
 Kreuzungsbereich mit Verbundsteinpflaster	Q1+ 3404,211
 Kreuzungsbereich mit Verbundsteinpflaster	Q1+ 3485,102
 Kreuzungsbereich mit Verbundsteinpflaster	Q1+ 3556,-3
+Kreuzungsbereich mit Verbundsteinpflaster	Q1+ 3654,-144
+Kreuzungsbereich mit Kopfsteinpflaster	Q2- 4091,-1141
 #: ignore ^^^
