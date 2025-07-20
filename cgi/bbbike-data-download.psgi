@@ -21,7 +21,7 @@ use HTTP::Date qw(time2str str2time);
 use Plack::Request ();
 use Plack::Util ();
 
-use constant DEBUG => 0; # set manually if needed (and maybe restart apache/starman)
+use constant DEBUG => $ENV{BBBIKE_DEBUG};
 BEGIN { *debug = DEBUG ? sub ($) { warn "DEBUG: $_[0]\n" } : sub ($) {} }
 
 my $bbbike_rootdir  = dirname(dirname(__FILE__));
