@@ -22221,7 +22221,7 @@ EOF
        until => $isodate2epoch->("2025-09-28 20:00:00"), # $isodate2epoch->("2025-07-23 00:00:00"), # $isodate2epoch->("2023-07-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 7, start => "2020-10-25T00:00:00"]],
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (24.09.2025 bis 28.09.2025)',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (25.09.2025 bis 28.09.2025)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk
@@ -22948,9 +22948,9 @@ EOF
 	2::temp 10401,14963 10723,14772 10643,14639 10618,14598 10600,14568 10578,14531 10530,14452
 EOF
      },
-     { from  => $isodate2epoch->("2024-08-23 00:00:00"), # 1377324534, # 2013-08-24 08:08
-       until => $isodate2epoch->("2024-09-01 20:00:00"), # 1378072799, # 2013-09-01 23:59
-       text  => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, vom 24. August 2024 bis 1. September 2024',
+     { from  => $isodate2epoch->("2025-08-29 00:00:00"), # $isodate2epoch->("2024-08-23 00:00:00"), # 1377324534, # 2013-08-24 08:08
+       until => $isodate2epoch->("2025-09-07 20:00:00"), # $isodate2epoch->("2024-09-01 20:00:00"), # 1378072799, # 2013-09-01 23:59
+       text  => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, vom 30. August 2025 bis 7. September 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
@@ -36094,6 +36094,7 @@ EOF
 #: source_id: viz2021:13.558515,52.562701,23.06.2025,08:00 (Vollsperrung, bis 25.06.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsasx6rq7z2r
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibtz5k5fgbp4x24som7y4liviz3qmq22wtzang6ilmm76knuyhz3m@jpeg (leider unscharf)
+#: source_id: adac:639331230 (bis 23.07.2025)
 	2::inwork 20895,17594 20769,17650
 	2::inwork 20769,17650 20891,17572
 EOF
@@ -36491,6 +36492,7 @@ EOF
 #: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
+#: source_id: adac:89620388 (bis voraussichtlich 08.08.2025)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -42221,10 +42223,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
-#: osm_watch: way id="279580369" version="8"
+#: osm_watch: way id="279580369" version="9"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-21 (osm)
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 	q3::inwork 4335,17642 4392,17777
@@ -45428,7 +45430,7 @@ EOF
 #: osm_watch: way id="27260309" version="20"
 #: osm_watch: way id="372791173" version="11"
 #: osm_watch: way id="27260312" version="25"
-#: osm_watch: note 4673198 2
+#: osm_watch: note 4673198 3
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
 #: last_checked: 2025-07-19
 #: check_frequency: 60d
@@ -46106,7 +46108,7 @@ EOF
 EOF
      },
      { from  => undef, # $isodate2epoch->("2025-03-24 00:00:00"), # undef, #
-       until => undef, # 1748091761, # $isodate2epoch->("2025-05-28 17:00:00"), # 1732213854, # undef, #
+       until => 1753117034, # undef, # 1748091761, # $isodate2epoch->("2025-05-28 17:00:00"), # 1732213854, # undef, #
 #      text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Choriner Str., Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Schwedter Str.: Bauarbeiten zwischen Kastanienallee und Fürstenberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, vom 24.03.2025 bis 28.05.2025',
        text  => 'Schwedter Str.: Bauarbeiten zwischen Fürstenberger Str. und Oderberger Str., wegen Bauarbeiten kann die Fahrbahn gesperrt sein, Ende der Bauarbeiten unbekannt',
@@ -46117,9 +46119,7 @@ EOF
 # REMOVED --- #: last_checked: 2024-11-03 --- #: check_frequency: 14d ---	q4::inwork 10530,14452 10567,14337 10629,14299
 #: source_id: viz2021:13.40635,52.536511,24.03.2025,08:00 (bis 28.05.2025) (+ weitere Arbeiten) (inaktiv)
 # REMOVED --- #: note: am 29.03.2025 (Sa) waren die Barrieren weggeschoben und eine Durchfahrt war inoffiziell möglich ---	q4::inwork 10530,14452 10506,14521 10468,14636
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2025-07-03
-#: check_frequency: 21d
+# REMOVED (keine Einschränkungen mehr sichtbar) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2025-07-20 (mapillary) --- #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-06-30 (infravelo)
 	q4::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
 EOF
@@ -49072,6 +49072,49 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Heinrich-Heine-Str.: zwischen Annenstr. und Dresdener Str. Wasserrohrbruch, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check: HEINRICHHEINE-2025
+#: source_id: adac:971528950
+#: source_id: bvg2024:n8#HIM_FREETEXT_293620
+#: also_indoor: traffic (T,G,A)
+#: note: gesperrter Abschnitt etwa 50m, explizite Radfahren-verboten-Schilder
+#: last_checked: 2025-07-21
+Heinrich-Heine-Str.	q4::inwork 11094,11377 11039,11254
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Fußgängerbrücken Pulvermühle IV, VII und VIII: wegen Brückenschäden gesperrt, Termin für den Wiederaufbau unbekannt',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecken-pulvermuehle-iv-vii-und-viii/ (geplante Bauzeit: Juni 2025 bis August 2025)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1582442.php (Sperrung von IV und VIII ab Juli 2025)
+#: osm_watch: note 4841625 2
+#: note Pulvermühle VII bereits seit Sommer 2024 (oder Januar 2023?) gesperrt
+#: note: nicht besonders routingrelevant; keine der drei Brücken wurde in den letzten 12 Monaten bei BBBike-Websuchen vorgeschlagen
+#: last_checked: 2025-07-21 (Pressemitteilung) vvv
+#: check_frequency: 360d vvv
+Pulvermühle VII	2::inwork -1848,15535 -1903,15333
+Pulvermühle IV	2::inwork -1848,15317 -1762,15291
+Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1753119545, # 2025-07-21 19:39
+       until => $isodate2epoch->("2025-10-17 17:00:00"),
+       text  => 'Lyckallee: zwischen Teufelsseestr. und Ortelsburger Allee igesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17.10.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: adac:356158344 (bis 17.10.2025)
+	q4::inwork 368,11051 251,11039 37,11014
+Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
 EOF
      },
     );

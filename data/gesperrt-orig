@@ -1576,7 +1576,7 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2025-06-17 (daf) vvv
+#: last_checked: 2025-07-21 (daf) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
@@ -3963,6 +3963,26 @@ Schwingtor	BNP:5::trailer=10 -7347,12797
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: ZOSSENB246-2023
+#: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20240925 (Eröffnung, davor Sperrung der B96 für den Straßenverkehr)
+#: source_id: 257201567 (bis 31.10.2025)
+#: XXX Wenn der Bahnübergang aufgegeben wird, dann müsste man den Rest auf N degradieren
+#: XXX laut DB-Seite wird dieser Bahnübergang und der am Oertelufer vom 31.07.2025 bis 18.08.2025 wegen Bauarbeiten geschlossen -> in temp_blockings eintragen!
+#: osm_watch: way id="1322461292" version="9" brb
+#: osm_watch: way id="538382840" version="17" brb
+#: last_checked: 2025-07-21 (Verkehrsmeldung) vvv
+#: check_frequency: 180d vvv
+#: next_check: 2025-07-31 (Begin Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2025-10-31 (Ende Verkehrsmeldung; aber es soll wohl dauerhaft bleiben) vvv
+#: valid: 20250731- vvv
+ehemalige B246 (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13390,-20515 13412,-20513 13526,-20548
+Oertelufer (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13430,-21328 13467,-21298 13506,-21265
+#: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: STUBENRAUCH-2025
 #: last_checked: 2025-07-18 vvv

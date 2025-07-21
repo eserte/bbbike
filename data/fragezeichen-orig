@@ -2840,7 +2840,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9087,437
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7858 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1580927.php
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409490791/wird-uferweg-an-der-spree-frei-zugaenglich-so-sind-die-chancen.html
-#: osm_watch: way id="199532117" version="1"
+#: osm_watch: way id="199532117" version="2"
 #: last_checked: 2025-06-18
 #: check_frequency: 120d
 Uferweg: Verlängerung gewünscht	?::projected 18650,5707 18604,5898 18422,6013
@@ -5492,14 +5492,14 @@ Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907
 #: by: https://www.morgenpost.de/bezirke/pankow/article409511404/fahrradstrasse-in-berlin-neuer-50-meter-stummel-hier-zieht-pankow-mit-mitte-gleich.html (letztes Stück 2026?)
 #: osm_watch[closed]: note 3954748 9
 #: osm_watch: note 4127416 1
-#: XXX Vorfahrtsregelung wird auch geändert, Einbahnstraßenregelungen für Kfz (Höhe Fürstenberger Str. nur Richtung N/S bis Griebenower)
-#: last_checked: 2025-07-03
+# REMOVED --- #: XXX Vorfahrtsregelung wird auch geändert, Einbahnstraßenregelungen für Kfz (Höhe Fürstenberger Str. nur Richtung N/S bis Griebenower)
 # REMOVED --- #: next_check: 2025-05-28 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2025-06-30 (infravelo)
 # REMOVED (hier noch) nicht) --- Schwedter Str.: Fahrradstraße geplant, wo genau?	? 10933,14122 10822,14179 10739,14228 10629,14299
 # REMOVED (realisiert) --- Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str. geplant	?::projected 10629,14299 10567,14337 10530,14452
 # REMOVED (realisiert) --- Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str. geplant	?::projected 10530,14452 10506,14521 10468,14636
-Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str.	?::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
+# REMOVED (realisiert) --- Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str.	?::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
+#: last_checked: 2025-07-03
 #: next_check: 2026-12-31
 Schwedter Str.: Fahrradstraße zwischen Choriner Str. und Schönhauser Allee	?::projected 10629,14299 10739,14228 10822,14179 10933,14122
 # 
@@ -5702,7 +5702,7 @@ Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 1498
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-21
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
@@ -7704,7 +7704,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-07-20
+#: last_checked: 2025-07-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -7735,7 +7735,7 @@ Simplonstr.: Teileinziehung geplant	? 14181,11434 14254,11377
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12003 (Realisierung des Teilgebietes C: 2025)
-#: last_checked: 2025-06-28 vvv
+#: last_checked: 2025-07-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-12-31 (BVV-Drucksache) vvv
 Simplonstr.: Teileinziehung geplant	? 13996,11631 13992,11605 14031,11569
@@ -7987,6 +7987,7 @@ Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 110
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/naechste-fahrradstrasse_a432324
 #: by: https://www.infravelo.de/projekt/alexandrinenstrasse/ (2. Quartal 2025 - 3. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025)
 #: osm_watch: note 4559018 3
+#: source_id: adac:1022292676 (Sperrung Neuenburger Str., bis 04.08.2025)
 #: XXX erste Markierung an der Einmündung Brachvogelstr./Alexandrinenstr. gesehen
 #: XXX laut BA (siehe osm-note) soll es auch Einbahnstraßenregelungen (wo?) geben
 #: last_checked: 2025-07-17
@@ -8307,7 +8308,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-21
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8531,18 +8532,6 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 # REMOVED --- #: XXX Evtl. wird das die neue "Straße E", und die alte Straßenführung wird degradiert? Oder zumindest der Straßenname entfernt? --- #: osm_watch: way id="1082018403" version="2" --- #: osm_watch: way id="1082018401" version="2" --- #: last_checked: 2023-03-21 --- Innovationspark: neue asphaltierte Straße	?::inwork 21294,7189 21233,7246
 # REMOVED (fertig und fast komplett ausgeschildert) --- #: next_check_id: HAUPT-2024--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1310648.php (bis Ende 2023)--- #: by: https://www.infravelo.de/projekt/hauptstrasse-1/ (2. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (4. Quartal 2023 - 4. Quartal 2024) (1. Quartal 2024 - 4. Quartal 2024) (1. Quartal 2024 - 3. Quartal 2024) (abgeschlossen)--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/infos-ueber-neuen-fahrradstreifen_a377174--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_01.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_02.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_03.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_04.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_05.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_06.pdf--- #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-verkehrspolitik-fuer-berlin-jetzt-wird-erstmals-ein-radweg-abgebaut-verkehr-reinickendorf-li.360954 (Projekt gefährdet)--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8911 (Antrag) (abgelehnt)--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/projekte-an-zwei-hauptstrassen-samt-15-millionen-foerderungmittel-gefaehrdet_a386094--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1342575.php (Finanzierungsstopp)--- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1342555.php (wird voerst nicht gebaut)--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/baustopp-von-radwegen-offiziell_a386663--- #: by: https://berliner-abendblatt.de/berlin-news/pruefung-beendet-gruenes-licht-fuer-16-radwege-id227794--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/verkehrssenatorin-hebt-finanzierungssperre-fuer-radwege-an-haupt-und-grunewaldstrasse-wieder-auf_a388381--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8919 (Erwähnung)--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8949 (Erwähnung)--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1422200.php ("Umsetzung beginnt")--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/umgestaltung-der-schoeneberger-hauptstrasse-beginnt_a409648--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1435821.php (Abschluss im Sommer 2024)--- #: by: https://viz.berlin.de/aktuelle-meldungen/markierungsarbeiten-an-der-hauptstrasse-in-schoneberg/--- #: by: https://www.rad-ts.de/verkehrszeichenplaene-hauptstrasse-geaendert-sicherheitsrisiken-fuer-radfahrende-steigen/--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/magistrale-wird-neu-aufgeteilt_a412850--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1491356.php (Anradeln am 15.10.2024)--- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1494379.php--- #: source_id: viz2021:13.3526,52.484353,05.03.2024,07:00 (zwischen Akazienstr. und Dominicusstr. Richtung Südwesten, bis 04.04.2024) (bis 05.04.2024) (bis 08.04.2024) (bis 11.04.2024) (inaktiv)--- #: source_id: viz2021:13.35309,52.484712,25.03.2024,07:00 (bis 08.04.2024) (inaktiv)--- #: XXX laut Verkehrszeichenplan überwiegend Aufteilung MIV-Fahrspur - Busspur - Radspur; teilweise sind Bus- und Radspur zusammengelegt (Haltestellen, vor einigen Kreuzungen)--- #: note: Richtung Südwesten bis Kolonnenstr. bis auf die Ausschilderung weitgehend fertig, Radspur hinter parkenden Autos, teilweise Leitboys; mittlerweile (2024-09-07) fehlen nur wenige Schilder--- #: last_checked: 2024-09-07 vvv--- # REMOVED --- #: check_frequency: 21d vvv--- #: next_check: 2024-10-15 vvv--- # REMOVED (hier komplett ausgeschildert) --- Hauptstr.: Radfahrstreifen zwischen Kleistpark und Dominicusstr. wurden markiert, einige Schilder fehlen noch	?::inwork; 7471,9360 7430,9281 7388,9199 7382,9187--- Hauptstr.: Radfahrstreifen zwischen Kleistpark und Dominicusstr. wurden markiert, einige Schilder fehlen noch	?::inwork; 7382,9187 7363,9152 7354,9135 7326,9078 7308,9041 7299,9022 7268,8960 7239,8907 7201,8870 7105,8788 7051,8741 7005,8701 6986,8683 6912,8617 6765,8480 6733,8441 6687,8385--- # REMOVED (realisiert) --- Hauptstr.: ein paar Meter Radspur entstehen noch vor der Ampel	?::inwork; 7201,8870 7239,8907 7268,8960--- #: next_check ^^^--- # REMOVED --- #: check_frequency ^^^--- #: last_checked ^^^
 # REMOVED --- #: next_check_id: ZOSSENB246-2023 --- #: by: https://www.maz-online.de/lokales/teltow-flaeming/zossen-informationsabend-zum-bahnumbau-baustellen-bis-2028-5CJ2ESYUVNAU7PTYW45CNVZM3A.html (2022-2024) --- #: by: https://bauprojekte.deutschebahn.com/media/projects/7165/docs/PR_berlin-dresden_infoveranstaltung_zossen_20230330.pdf (neue Unterführung wird nördlich gebaut, Beginn etwa 450m nördlich von der jetzigen Einmündung; Bauzeit Q2/2023 - 06/2024) --- #: by: https://bauprojekte.deutschebahn.com/media/projects/7165/docs/HZ_berlin-dresden_freigabe_strassenbruecke_b246n_20241111.pdf --- #: osm_watch: way id="186897941" version="11" brb --- # REMOVED (wurde mit https://www.openstreetmap.org/changeset/155521904 entfernt) --- #: osm_watch: way id="1205904882" version="4" --- #: osm_watch: way id="1309121732" version="5" brb --- #: source_id: 247200149 (bis 11.11.2024) --- #: XXX Eröffnung am 11.11.2024 + neuer Kreisverkehr (fehlt noch in comments_misc). Alte Führung der B246 degradieren bzw. entfernen (inkl. Bahnübergang). --- #: last_checked: 2024-09-14 --- # REMOVED --- #: check_frequency: 60d --- #: next_check: 2024-11-11 --- B246: Bau einer neuen Eisenbahnüberführung	?::inwork 12779,-20362 12779,-20362 12861,-20344 13065,-20130 13211,-20038 13322,-20017 13445,-20018 13664,-20127
-# 
-#: next_check_id: ZOSSENB246-2023
-#: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20240925 (Eröffnung, davor Sperrung der B96 für den Straßenverkehr)
-#: XXX Wenn der Bahnübergang aufgegeben wird, dann müsste man den Rest auf N degradieren
-#: XXX laut DB-Seite wird dieser Bahnübergang und der am Oertelufer vom 31.07.2025 bis 18.08.2025 wegen Bauarbeiten geschlossen -> in temp_blockings eintragen!
-#: osm_watch: way id="1322461292" version="9" brb
-#: osm_watch: way id="538382840" version="17" brb
-#: last_checked: 2025-06-21
-#: check_frequency: 180d
-#: next_check: 2025-07-25 (kurze Sperrung des Bahnübergangs eintragen)
-ehemalige B246 (Zossen): wird der Bahnübergang aufgegeben?	? 13390,-20515 13412,-20513 13526,-20548
 # 
 #: next_check_id: ZOSSENB246-2023
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20241113 (bis Ende November 2024)
@@ -10101,10 +10090,10 @@ Parkanlage: wann wird der östliche/südöstliche Teil fertig? genaue Lage? Name?	?
 #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_275922 (ab 2025-06-30)
 #: source_id: adac:356610442 (bis 18.07.2025) (bis 22.07.2025)
 #: osm_watch: note 4715040 4
-#: note: mittlerweile wurde die Sperrung für den Kfz-Verkehr aufgehoben, vermutlich wegen der Sperrung der Hochbrücke --- was bedeutet das für den Ampelbau?; mittlerweile scheint es in einigen Tagen weiterzugehen, siehe BVG-Meldung; Fahrbahn Richtung Westen gesperrt, gemeinsamer Geh- und Radweg auf dem Hochbord
+#: note: mittlerweile wurde die Sperrung für den Kfz-Verkehr aufgehoben, vermutlich wegen der Sperrung der Hochbrücke --- was bedeutet das für den Ampelbau?; mittlerweile scheint es in einigen Tagen weiterzugehen, siehe BVG-Meldung; Fahrbahn Richtung Westen gesperrt, gemeinsamer Geh- und Radweg auf dem Hochbord; mittlerweile ist die Fahrbahn Richtung Osten gesperrt, bis Anfang September 2025
 #: last_checked: 2025-07-18
 #: check_frequency: 60d
-# REMOVED --- #: next_check: 2025-07-18 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-09-05 (VIZ)
 Blockdammweg/Hönower Wiesenweg: Neubau einer Ampel	?::inwork 17366,8824 17380,8858 17392,8891
 # 
 #: XXX Bebauungsplan 5-110
@@ -12116,10 +12105,10 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://entwicklungsstadt.de/grossprojekt-gartenfeld-bau-der-bruecke-ueber-den-schifffahrtskanal-startet-2025/
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12841 (Vorlage zur Kenntnisnahme)
 #: osm_watch: relation id="10290512" version="6"
-#: osm_watch: way id="1306187833" version="10"
-#: osm_watch: way id="1306187834" version="19"
+#: osm_watch: way id="1306187833" version="11"
+#: osm_watch: way id="1306187834" version="20"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
-#: last_checked: 2025-07-08 (osm)
+#: last_checked: 2025-07-20 (osm)
 #: check_frequency: 360d
 #: next_check: 2028-06-30
 Insel Gartenfeld: Stadtquartier entsteht, einige Planstraßen, Uferpromenade, Ufergrünzug, eine Brücke	?::inwork -871,16391 -995,15643 -358,15621 -301,16026 -871,16391
