@@ -388,6 +388,9 @@ for my $file (@files) {
 			 if ($extra && ($extra eq '(none)' || $extra =~ /\bW\b/)) { # construction information not available as tiles and thus handled by mc.bbbike.org, so create an extra link
 			     push @extra_url_defs, ['Waze', sprintf('https://www.waze.com/en/live-map/directions?to=ll.%s%%2C%s', $py, $px)];
 			 }
+			 if ($extra && ($extra eq '(none)' || $extra =~ /\bH\b/)) {
+			     push @extra_url_defs, ['Here', sprintf('https://wego.here.com/?map=%f,%f,%.2f', $py, $px, 17)];
+			 }
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
 			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
 			 if ($search_term) {
