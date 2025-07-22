@@ -46,11 +46,12 @@
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile inaktiv)
 #: source_id: viz2021:13.361171,52.446982,10.11.2023,17:30 (angrenzende Attilastr., Brückenarbeiten, bis 12.11.2023) (inaktiv)
-#: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023) (bis 04.09.2023) (bis 18.09.2023) (bis 31.10.2023) (bis 27.11.2023) (bis 05.08.2024) (bis 31.12.2024) (bis 30.04.2025) (bis 31.08.2025 + weitere Arbeiten)
+#: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023) (bis 04.09.2023) (bis 18.09.2023) (bis 31.10.2023) (bis 27.11.2023) (bis 05.08.2024) (bis 31.12.2024) (bis 30.04.2025) (bis 31.08.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.361226,52.446957,15.12.2023,20:00 (angrenzende Attilastr., bis 17.12.2023) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
+#: source_id: viz2021:13.36063,52.44674, (bis 31.08.2025)
 #: last_checked: 2025-07-19
 #: check_frequency: 120d
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung)
@@ -1337,13 +1338,14 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.462563,52.495479,06.08.2022,06:00 (Umbauarbeiten am 6.8.2022) (inaktiv)
 #: source_id: viz2021:13.462968,52.49578,28.10.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028) (inaktiv) (wieder aktiv) (inaktiv)
-#: source_id: viz2021:13.46294,52.495795,06.08.2022,20:00 (bis 2028) (bis 31.12.2028)
+#: source_id: viz2021:13.46294,52.495795,06.08.2022,20:00 (bis 2028) (bis 31.12.2028) (inaktiv)
 #: source_id: viz2021:13.462964,52.495756,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024) (inaktiv)
 #: source_id: viz2021:13.46341,52.496172,09.02.2024,06:00 (Wochenendsperrung für Kfz-Verkehr, bis 11.02.2024) (bis 14.02.2024) (inaktiv)
 #: source_id: viz2021:13.46469,52.49743,09.02.2024,06:00 (bis 11.02.2024) (inaktiv)
 #: source_id: viz2021:13.462768,52.495411,19.10.2024,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 20.10.2024) (inaktiv)
 #: source_id: viz2021:13.46264,52.49544,26.04.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 27.04.2025) (inaktiv)
 #: source_id: viz2021:13.462865,52.495856,26.04.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 27.04.2025) (inaktiv)
+#: source_id: viz2021:13.46264,52.49544, (bis 31.12.2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
@@ -1675,8 +1677,9 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/naechste-staufalle_a424890
 #: by: https://viz.berlin.de/aktuelle-meldungen/grundhafte-erneuerung-der-petersburger-strasse/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11651 (Anfrage)
-#: source_id: viz2021:13.450139,52.522818,16.09.2024,08:00 (bis 30.09.2027)
+#: source_id: viz2021:13.450139,52.522818,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
 #: source_id: viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
+#: source_id: viz2021:13.447594,52.526157, (bis 31.12.2025)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
@@ -2219,7 +2222,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.tagesspiegel.de/berlin/wegen-bauarbeiten-in-mitte-schifffahrt-unter-muhlendammbrucke-zwei-monate-unterbrochen-13036282.html (Fertigstellung 2028)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/spree-unter-muehlendammbruecke-zwei-monate-gesperrt_a434285
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/muehlendammbruecke/
-#: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029)
+#: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029) (inaktiv)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
@@ -2511,7 +2514,7 @@ eigentlich provisorische Radspuren per Gelbmarkierung, in der Praxis zugeparkt	R
 #: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: source_id: 2147345461 (bis 30.09.2021) (inaktiv)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
-#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025)
+#: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (ex-B[minor])
 #: last_checked: 2025-06-13
 #: check_frequency: 120d
@@ -3144,7 +3147,8 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id[inactive]: bvg2021:m43#BVG315176_0
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_222564
 #: source_id[inactive]: bvg2024:HIM_FREETEXT_247779
-#: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026)
+#: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026) (inaktiv)
+#: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
 #: last_checked: 2025-07-20
@@ -3181,6 +3185,7 @@ provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beerman
 	RW6;RW6 14879,9961 14921,10047
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
+#: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
 #: last_checked: 2025-07-19
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
@@ -4282,7 +4287,7 @@ Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: last_checked: 2025-07-19
 #: check_frequency: 180d
-#: next_check: 2027-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 #: XXX nach den Bauarbeiten wieder aktivieren: Gehweg für Radfahrer frei	RW1; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
 kein Radweg, Tempo 10	RW0; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
 die letzten 70 Meter sind benutzungspflichtig	RW1; 21789,5427 21961,5228
@@ -6578,7 +6583,7 @@ asphaltiert	RW1; 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
 asphaltiert	RW1; 18042,4667 17951,4785 17879,4910 17775,5083
 asphaltiert	RW2; 17775,5083 17763,5104 17726,5166 17705,5223 17700,5232 17648,5338
 #: next_check_id: STERNDAMM-2023
-#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 18.02.2025) (bis 31.03.2025) (bis 30.05.2025) (bis 30.06.2025) (bis 31.07.2025) (bis 07.08.2025)
+#: source_id: viz2021:13.51214,52.454886,08.11.2023,14:00 (nur für Kfz-Verkehr gesperrt, bis 30.06.2024) (bis 15.08.2024) (bis 11.10.2024) (bis 31.12.2024) (bis 31.03.2025) (bis 18.02.2025) (bis 31.03.2025) (bis 30.05.2025) (bis 30.06.2025) (bis 31.07.2025) (bis 07.08.2025) (inaktiv)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7609 (Antrag)
 #: by: https://nachgefragt.bvg.de/schoeneweide/?date=20240820 (bis Mitte Oktober für Kfz-Verkehr gesperrt)
 #: by[nocache]: https://www.facebook.com/larsduesterhoeft1981/posts/pfbid0jyCzp1ULBQ8ZkAaVbTgcaNAcQpqMpfY61ePJ3Bzuyvt3Dg3ctbA8Rjej8xo7C7p9l (Freigabe für Kfz-Verkehr bis Ende 2024?)
@@ -8055,11 +8060,11 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: next_check_id: STUBENRAUCH-2025
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_266466 (bis 2025-02-28) (bis 2025-03-30) (inaktiv)
 #: source_id: viz2021:13.49374,52.43038,17.02.2025,16:32 (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.495087,52.431449,17.02.2025,16:30 (bis 30.04.2025) (bis 30.05.2025) (bis 30.06.2025) (bis 04.07.2025) (bis 11.07.2025)
-#: source_id: viz2021:13.495493,52.431557,17.06.2025,16:30 (bis 30.06.2025) (bis 04.07.2025) (bis 30.06.2026!?)
-#: source_id: viz2021:13.495351,52.431801,17.06.2025,16:30 (bis 30.06.2025) (bis 04.07.2025) (bis 30.06.2026!?)
-#: source_id: viz2021:13.494948,52.431861,17.06.2025,15:00 (Seidelbastweg, bis 04.07.2025) (bis 11.07.2025)
-#: source_id: viz2021:13.49515,52.43173,25.06.2025,14:26 (Seidelbastweg, bis 04.07.2025)
+#: source_id: viz2021:13.495087,52.431449,17.02.2025,16:30 (bis 30.04.2025) (bis 30.05.2025) (bis 30.06.2025) (bis 04.07.2025) (bis 11.07.2025) (inaktiv)
+#: source_id: viz2021:13.495493,52.431557,17.06.2025,16:30 (bis 30.06.2025) (bis 04.07.2025) (bis 30.06.2026!?) (inaktiv)
+#: source_id: viz2021:13.495351,52.431801,17.06.2025,16:30 (bis 30.06.2025) (bis 04.07.2025) (bis 30.06.2026!?) (inaktiv)
+#: source_id: viz2021:13.494948,52.431861,17.06.2025,15:00 (Seidelbastweg, bis 04.07.2025) (bis 11.07.2025) (inaktiv)
+#: source_id: viz2021:13.49515,52.43173,25.06.2025,14:26 (Seidelbastweg, bis 04.07.2025) (inaktiv)
 #: source_id: viz2021:13.49537,52.43164,25.06.2025,14:25 (bis 04.07.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.49374,52.43038,25.06.2025,14:23 (bis 04.07.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.49515,52.43173,25.06.2025,14:30 (bis 04.07.2025) (vorfristig inaktiv)
@@ -8075,6 +8080,11 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: bvg2024:m11#HIM_FREETEXT_293424 (kein Endedatum)
 #: source_id: adac:875632473 (bis 30.06.2026) (!)
 #: source_id: adac:334221108 (bis 30.06.2026) (!)
+#: source_id: viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026)
+#: source_id: viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026)
+#: source_id: viz2021:13.49537,52.43164, (Ampelanlage außer Betrieb, kein Endedatum)
+#: source_id: viz2021:13.485714,52.424228, (bis 12.05.2026)
+#: source_id: viz2021:13.48561,52.42415, (bis 30.06.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892218755624718652 (nur Kfz-Verkehr erwähnt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/stubenrauchstrasse-in-rudow-nach-rohrbruch-gesperrt/ ("mehrere Monate", auf dem Bild scheint die Absperrung über die gesamte Fahrbahnbreite zu gehen, etwa 90m vor der Kanalstraße)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1894669757980254425 (bis 30.05.2025)
@@ -8306,6 +8316,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: next_check_id: GITSCHINER-2025
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025) (inaktiv)
 #: source_id: viz2021:13.410603,52.498491,30.01.2025,13:57 (bis 31.03.2025) (inaktiv)
+#: source_id: viz2021:13.410603,52.498491, (bis 29.08.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
@@ -8701,12 +8712,12 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.39961,52.49841,24.10.2023,18:10 (bis 29.12.2023) (am Folgetag inaktiv)
 #: source_id: viz2021:13.40304,52.49845,28.02.2024,07:00 (bis 15.04.2024) (inaktiv)
 #: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024) (bis 15.04.2024) (bis 28.02.2024) (inaktiv)
-#: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024) (bis 31.12.2024) (bis 24.04.2025) (bis 31.08.2025)
+#: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024) (bis 31.12.2024) (bis 24.04.2025) (bis 31.08.2025) (inaktiv)
 #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024) (bis 29.11.2024) (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.399611,52.49841,08.10.2024,15:06 (bis 01.11.2024) (inaktiv)
 #: source_id: viz2021:13.40304,52.49845,31.07.2024,14:54 (bis 31.08.2024) (inaktiv)
 #: source_id: viz2021:13.408209,52.498506,23.04.2025,15:47 (bis 31.08.2025) (inaktiv)
-#: source_id: viz2021:13.406638,52.498401,23.06.2025,12:00 (Fernwärmebauarbeiten, bis 12.09.2025)
+#: source_id: viz2021:13.406638,52.498401,23.06.2025,12:00 (Fernwärmebauarbeiten, bis 12.09.2025) (inaktiv)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="34"
@@ -8721,6 +8732,8 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;, danach provisorischer Radweg auf Hochbord --- Gehweg für Radfahrer frei	RW1; 10871,10322 10708,10312
 #: source_id: viz2021:13.408209,52.498506,29.11.2024,17:06 (bis 31.12.2024) (inaktiv)
 	RW0; 10871,10322 10708,10312
+#: source_id: viz2021:13.40656,52.49831,23.06.2025,12:00 (bis 12.09.2025)
+#: source_id: viz2021:13.408209,52.498506, (bis 31.08.2025)
 #: historical_note: zwischenzeitlich (bis 23.06.2025) provisorischer Radstreifen, RW4;
 	RW0; 10708,10312 10605,10312
 provisorischer Radstreifen, kurzes Stück über Hochbord	RW4; 10605,10312 10708,10312
@@ -9007,12 +9020,13 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385943,52.444677,23.08.2023,10:00 (bis 29.08.2023) (bis 31.08.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,31.08.2023,10:00 (bis 22.09.2023) (bis 18.09.2023) (inaktiv)
 #: source_id: viz2021:13.385943,52.444677,18.09.2023,07:00 (bis 13.10.2023) (inaktiv)
-#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024) (bis 09.09.2024) (inaktiv) (bis 01.11.2024, weitere Arbeiten im Anschluss) (bis 01.03.2025 + ...) (bis 31.12.2025 + ...) (bis 31.10.2025 + ...)
+#: source_id: viz2021:13.384504,52.452683,25.01.2022,21:00 (Stubenrauchbrücke Richtung Norden; bis 30.06.2024) (bis 31.05.2024, weitere Arbeiten im Anschluss) (bis 30.08.2024) (bis 09.09.2024) (inaktiv) (bis 01.11.2024, weitere Arbeiten im Anschluss) (bis 01.03.2025 + ...) (bis 31.12.2025 + ...) (bis 31.10.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.384655,52.451843,04.03.2024,07:00 (bis 17.05.2024) (bis 07.06.2024) (bis 17.06.2024) (inaktiv)
 #: source_id: viz2021:13.385286,52.448073,17.06.2024,07:00 (bis 27.06.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.385297,52.44832,17.06.2024,07:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.385351,52.448083,27.06.2024,10:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.38458,52.45267,23.09.2024,17:00 (bis 01.11.2024) (inaktiv)
+#: source_id: viz2021:13.38458,52.45267, (bis 31.12.2025)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
 #: last_checked: 2025-07-19 vvv

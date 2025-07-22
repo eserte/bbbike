@@ -1006,12 +1006,13 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.567832,52.454403,23.01.2023,08:00 (bis 30.1.2023) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv) (wieder aktiv, bis 15.7.2023) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535,13.07.2023,17:06 (bis 15.07.2023) (inaktiv)
-#: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027) (bis 30.06.2027)
+#: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027) (bis 30.06.2027) (inaktiv)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
+#: source_id: viz2021:13.56657,52.45535, (bis 31.12.2027)
 #: osm_watch: way id="428260957" version="8"
 #: last_checked: 2025-07-19 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21623,5661 21605,5687 21600,5694
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
@@ -4000,7 +4001,7 @@ Glockenblumenweg: Einfahrt verboten	1s:q2:inwork 16461,2569 16260,2717
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
 # 
 #: next_check_id: BITTERFELDERBRUECKE-2025
-#: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026)
+#: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026) (inaktiv)
 #: osm_watch: way id="1087144824" version="7"
 #: last_checked: 2025-05-24 (osm-Edit)
 #: check_frequency: 120d
@@ -4212,7 +4213,8 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: osm_watch: way id="26244466" version="25"
-#: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026)
+#: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
+#: source_id: viz2021:13.53642,52.53865, (bis 31.12.2026)
 #: last_checked: 2025-06-09
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
@@ -4291,8 +4293,8 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: next_check_id: VIRCHOW-2023
 #: XXX Nordufer (Wedding) in beiden Richtungen zwischen Eckernförder Platz und Föhrer Straße: wegen Baustelle gesperrt, vom 24.02.2024 00:00 bis 29.12.2028 23:59
 #: XXX Nordufer/Sylter Straße (Wedding) in beiden Richtungen zwischen Föhrer Straße und Westring: Baustelleneinrichtung, Vollsperrung für Kfz- und Rad- und Fußverkehr, vom 23.02.2024 07:00 bis 31.12.2028 17:00
-#: source_id: viz2021:13.33994,52.53982,24.02.2024,00:00 (bis 29.12.2028) (inaktiv)
-#: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028)
+#: source_id: viz2021:13.33994,52.53982,24.02.2024,00:00 (bis 29.12.2028) (inaktiv) (bis 29.12.2028)
+#: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
 #: osm_watch: way id="1106303945" version="9"
@@ -4827,7 +4829,7 @@ Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,
 #: by: https://www.deutsches-architekturforum.de/thread/10894-projekte-rund-um-das-bnd-areal/?postID=742860#post742860 (laut Baustellenschild der Wasserbetriebe bis September 2026)
 #: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
-#: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025) (bis 31.08.2026)
+#: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025) (bis 31.08.2026) (inaktiv)
 #: osm_watch: way id="129104626" version="22"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
@@ -4956,8 +4958,9 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/buckower-chaussee-bruecke/ (voraussichtliche Bauzeit: 2022 bis 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22059.pdf (voraussichtlich Eröffnung im Sommer 2025)
 #: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025) (inaktiv)
-#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023) (bis 31.05.2023) (bis 31.12.2025)
+#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023) (bis 31.05.2023) (bis 31.12.2025) (inaktiv)
 #: source_id: bvg2021:x11#BVG312077_0
+#: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 31.12.2025)
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: note: Eintrag existiert auch in temp blockings
 #: also_indoor: traffic (G,B(nur eine Richtung))
@@ -5256,9 +5259,10 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (inaktiv)
-#: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (bis 31.12.2025)
+#: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
 #: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025) (inaktiv)
+#: source_id: viz2021:13.55807,52.56199, (bis 31.12.2025)
 #: XXX Wann wird die Brücke wieder eröffnet?
 #: last_checked: 2025-06-09
 #: check_frequency: 360d
@@ -5582,7 +5586,8 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
-#: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026)
+#: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
+#: source_id: viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="43"
 #: also_indoor: traffic
 #: last_checked: 2025-07-09 vvv
