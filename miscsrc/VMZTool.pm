@@ -571,11 +571,11 @@ sub parse_vmz_2020 {
 	my $validity = eval {
 	    my $timeFrom = $record->{validities}->[0]->{timeFrom};
 	    my $timeTo   = $record->{validities}->[0]->{timeTo};
-	    $timeFrom = defined $timeFrom ? _iso2german_date($timeFrom) : undef;
-	    $timeTo   = defined $timeTo   ? _iso2german_date($timeTo)   : undef;
+	    $timeFrom = defined $timeFrom && $timeFrom ne '' ? _iso2german_date($timeFrom) : undef;
+	    $timeTo   = defined $timeTo   && $timeTo   ne '' ? _iso2german_date($timeTo)   : undef;
 	    join(" ",
-		 (defined $timeFrom ? "vom " . $timeFrom : ()),
-		 (defined $timeTo   ? "bis " . $timeTo   : ()),
+		 (defined $timeFrom && $timeFrom ne '' ? "vom " . $timeFrom : ()),
+		 (defined $timeTo   && $timeTo   ne '' ? "bis " . $timeTo   : ()),
 		);
 	};
 	if (!$validity) {
@@ -690,8 +690,8 @@ sub parse_vmz_2021 {
 	    my $timeFrom = $properties->{validity}->{from};
 	    my $timeTo   = $properties->{validity}->{to};
 	    join(" ",
-		 (defined $timeFrom ? "vom " . $timeFrom : ()),
-		 (defined $timeTo   ? "bis " . $timeTo   : ()),
+		 (defined $timeFrom && $timeFrom ne ''  ? "vom " . $timeFrom : ()),
+		 (defined $timeTo   && $timeTo   ne ''  ? "bis " . $timeTo   : ()),
 		);
 	};
 	if (!$validity_text) {
@@ -704,7 +704,7 @@ sub parse_vmz_2021 {
 	    ['to',   \$maxTimeTo],
 	) {
 	    my($field, $ref) = @$def;
-	    if (defined $properties->{validity}->{$field}) {
+	    if (defined $properties->{validity}->{$field} && $properties->{validity}->{$field} ne '') {
 		if (my($d,$m,$y,$H,$M) = $properties->{validity}->{$field} =~ /^(\d{2})\.(\d{2})\.(\d{4}) (\d{2}):(\d{2})$/) {
 		    $$ref = "$y-$m-$d"."T"."$H:$M:00"; # without timezone -> local time
 		} else {
