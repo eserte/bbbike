@@ -5087,7 +5087,7 @@ Nordostumfahrung von Malchow: wird hier die Qualität verbessert? Ist überhaupt d
 # REMOVED (für Radfahrer in beiden Richtungen offen) --- #: XXX CHANGED	Matthiasstraße (Friedrichshain) Anbindung Landsberger Allee (Berlin)  Gültig ab: 11.03.2019 13:35  Baustelle, Fahrtrichtung Landsberger Allee gesperrt (bis Ende 10/19)	2147343878	 --- #: XXX laut fritz bis 31.10.2019 --- #: next_check: 2019-04-15 --- Matthiasstr.: ist die Sperrung auch für Radfahrer relevant?	? 12786,13185 12842,13070
 # 
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/der-teltower-damm-gehoert-bald-wieder-allein-dem-motorisierten-verkehr_a209206 (BVV-Beschluss)
-#: last_checked: 2025-06-25 (mapillary)
+#: last_checked: 2025-07-19 (mapillary)
 #: check_frequency: 120d
 Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1322,352 1304,537 1286,704 1267,789 1248,871 1207,1051 1181,1169 1142,1350 1080,1637
 # 
@@ -6981,9 +6981,10 @@ B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,5167
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42752
 #: source_id: LS/221-E/22/017 (inaktiv)
 #: source_id: LS/221-E/25/018 (bis 18.07.2025) (inaktiv)
+#: source_id: LS/221-E/25/018 (Neubau Radweg, bis 29.08.2025)
 #: last_checked: 2025-04-11 (mapillary)
 #: check_frequency: 180d
-#: next_check: 2025-07-18 (Verkehrsmeldung)
+#: next_check: 2025-08-29 (Verkehrsmeldung)
 B2: straßenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 49872,67713 49907,67684 49908,67683 50386,68158 50632,68484 50863,68629
 # 
 # REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=33123 --- #: source_id: LS/723-P/20/210--- #: source_id: LS/723-P/21/238 --- #: next_check: 2022-04-30
@@ -9349,6 +9350,7 @@ Maxstr.: Teileinziehung geplant	? 7738,15838 7781,15804
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-05-2025-b103-gantikow-bis-vehlow (Juli 2025 - Dezember 2026)
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/Kartenausschnitt%20B103.png
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~14-07-2025-b103-gantikow-vehlow (bis Dez 2026)
+#: source_id: LS/223-K/25/140 (bis 18.12.2025)
 #: next_check: 2026-12-31
 Gantikow - Vehlow: Bau eines asphaltierten Radwegs (Westseite?)	? -61969,62314 -62264,62702 -62375,62930 -62549,63698 -62652,63877 -62911,64069 -63077,64306 -63485,65303 -63882,65722 -63957,66019 -64027,66282
 # 
@@ -10103,14 +10105,15 @@ Parkanlage: wann wird der östliche/südöstliche Teil fertig? genaue Lage? Name?	?
 #: source_id: viz2021:13.505797,52.484363,14.04.2025,09:00 (LSA-Neubau + Sperrung für Kfz-Verkehr Richtung Westen, bis 09.05.2025) (bis 30.06.2025 + weitere Bauphasen) (vorfristig inaktiv)
 #: source_id: viz2021:13.505797,52.484363,30.06.2025,08:00 (bis 18.07.2025 + weitere Bauphasen) (inaktiv)
 #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_275922 (ab 2025-06-30)
-#: source_id: adac:356610442 (bis 18.07.2025) (bis 22.07.2025)
+#: source_id: adac:356610442 (bis 18.07.2025) (bis 22.07.2025) (inaktiv)
 #: source_id: bvg2024:n40#HIM_FREETEXT_293623
-#: source_id: viz2021:13.50573,52.484383,30.06.2025,08:00 (bis 22.07.2025)
+#: source_id: viz2021:13.50573,52.484383,30.06.2025,08:00 (bis 22.07.2025) (inaktiv)
+#: source_id: viz2021:13.505734,52.484227,22.07.2025,10:00 (angeblich KGA-Anbindung gesperrt, falsch positioniert?, bis 05.09.2025)
 #: osm_watch: note 4715040 4
 #: note: mittlerweile wurde die Sperrung für den Kfz-Verkehr aufgehoben, vermutlich wegen der Sperrung der Hochbrücke --- was bedeutet das für den Ampelbau?; mittlerweile scheint es in einigen Tagen weiterzugehen, siehe BVG-Meldung; Fahrbahn Richtung Westen gesperrt, gemeinsamer Geh- und Radweg auf dem Hochbord; mittlerweile ist die Fahrbahn Richtung Osten gesperrt, bis Anfang September 2025
 #: last_checked: 2025-07-18
 #: check_frequency: 60d
-#: next_check: 2025-09-05 (VIZ)
+#: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 Blockdammweg/Hönower Wiesenweg: Neubau einer Ampel	?::inwork 17366,8824 17380,8858 17392,8891
 # 
 #: XXX Bebauungsplan 5-110

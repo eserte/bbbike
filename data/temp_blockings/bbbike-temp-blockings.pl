@@ -48699,6 +48699,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1578727.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1583148.php
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-14 (research) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -48763,6 +48764,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltvyv2f6yc2q (Schönwalder Allee ist offen)
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1583117.php
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
@@ -49006,7 +49008,8 @@ EOF
        data  => <<'EOF',
 #: last_checked: 2025-07-19
 #: check_frequency: 60d
-#: next_check: 2025-10-02 (Halteverbotsschilder)
+# REMOVED --- #: next_check: 2025-10-02 (Halteverbotsschilder)
+#: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	2::inwork 17950,8974 17915,8945
 EOF
      },

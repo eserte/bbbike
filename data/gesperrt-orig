@@ -4018,6 +4018,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: XXX mittlerweile (Mai 2025) sieht das Tor verschlossen aus, allerdings gibt es auch Bauarbeiten Richtung Straße 199
 # REMOVED --- #: XXX auf Luftbildern ist bereits eine Baustraße inklusive Verbindung zur Straße 199 zu erkennen; bei osm bereits eingetragen (zu früh!)
 #: osm_watch: way id="971973021" version="6"
+#: osm_watch: note 4598098 1
 # REMOVED (landuse -> building, keine Beobachtung mehr sinnvoll) --- #: osm_watch: way id="234861531" version="4"
 #: last_checked: 2025-05-24 (mapillary)
 #: check_frequency: 60d
@@ -4732,7 +4733,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
-#: source_id: 226110967 (hier: bis 27.6.2023) (inaktiv) (bis 27.06.2024) (inaktiv)
+#: source_id: 226110967 (hier: bis 27.6.2023) (inaktiv) (bis 27.06.2024) (inaktiv) (bis 30.09.2025)
 #: by: https://www.vbb.de/presse/deutsche-bahn-erneuert-bruecke-ueber-storkower-strasse-in-koenigs-wusterhausen/ (SEV bis 26.8.2022, danach gibt's Hilfsbrücken für die Bahn)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Brückenbauarbeiten)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/bahnbaustelle-koenigs-wusterhausen-zwei-wochen-gesperrt-was-treiben-die-da-S3EA4AFEMVCPRBGZHMRWCVO3QE.html
@@ -4746,7 +4747,8 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: osm_watch: way id="8043414" version="41"
 #: osm_watch: note 3248363 10
 #: last_checked: 2025-06-21
-#: next_check: 2025-11-30 (maz)
+# REMOVED --- #: next_check: 2025-11-30 (maz)
+#: next_check: 2025-11-30 (VIZ-Verkehrsmeldung)
 #: valid: -20251130
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26300,-11727 26327,-11708 26395,-11699 26399,-11735
 # REMOVED (bei osm entfernt) --- #: osm_watch: way id="787699937" version="9" --- #: osm_watch: way id="280217696" version="11" --- #: last_checked: 2025-02-04 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2025-01-31 --- #: valid: -20250131 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q3 26300,-11727 26301,-11824 26300,-11864
@@ -4761,6 +4763,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 #: by: https://berliner-abendblatt.de/berlin-news/neue-bruecke-ueber-dem-teltowkanal-in-richtiger-position-id231682
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/brueckeneinbau-fuer-die-dresdner-bahn-ueber-den-teltowkanal-vollzogen_a392915
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240410 (Restarbeiten mit Sperrung bis 2025)
+#: by: https://www.morgenpost.de/berlin/article409571286/eroeffnung-der-dresdner-bahn-an-diesem-tag-soll-es-so-weit-sein.html
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: note: Dieser Eintrag existiert auch noch als aktiver bbbike-temp-blockings-Eintrag.
 #: osm_watch: way id="229990468" version="7"
@@ -5257,8 +5260,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (voraussichtliche Bauzeit: 2022 bis 2025) (bis Ende des II. Quartals 2025) (kann vermutlich nicht gehalten werden) (mittlerweile bis III. Quartal 2025)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (alternative URL)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
-#: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.6.2024) (später am Tag wieder entfernt -> inaktiv)
-#: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (inaktiv)
+#: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
 #: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025) (inaktiv)
