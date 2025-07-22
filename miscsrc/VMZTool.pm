@@ -16,7 +16,7 @@ package VMZTool;
 use v5.10.0; # named captures, defined-or
 use strict;
 use warnings;
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -56,7 +56,8 @@ my $today = strftime "%F", localtime EPOCH_NOW; # may be overwritten using -test
 # Brandenburg
 use constant BIBER_URL => "https://biberweb.vmz.services/v3/incidents/biber?bbox=10.66,51.2,15.68,53.74&detail=HIGH&lang=de&timeFrom=" . uri_escape(ISO8601_NOW) . "&_=" . (EPOCH_NOW*1000);
 # Berlin
-use constant VMZ_2021_DATA_URL => 'https://api.viz.berlin.de/daten/baustellen_sperrungen.json';
+#use constant VMZ_2021_DATA_URL => 'https://api.viz.berlin.de/daten/baustellen_sperrungen.json';
+use constant VMZ_2021_DATA_URL => 'https://api.viz.berlin.de/tic3/baustellen_sperrungen_tic.json';
 
 use constant USE_VMZ_2021_WGET_HACK => 0;
 
