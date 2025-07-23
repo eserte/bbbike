@@ -324,10 +324,11 @@ EOF
 		output_apache_errorslogs if $is_local_server;
 	    };
 
-	my($content_type) = $resp->content_type; # list context!
+	my($display_content_type) = $resp->content_type; # list context!
+	$display_content_type = '<none>' if !defined $display_content_type || $display_content_type eq '';
 	my $content;
 	if ($resp->code != 304) {
-	    $compress_results{$do_accept_gzip}->{$content_type}->{$got_gzipped}++;
+	    $compress_results{$do_accept_gzip}->{$display_content_type}->{$got_gzipped}++;
 	    $content = $resp->decoded_content(charset => 'none');
 	    if (!$allow_empty_content) {
 		ok(length $content, "Non-empty content");
