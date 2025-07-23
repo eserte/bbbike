@@ -19,6 +19,7 @@ HTTPD_CONF?=		httpd.conf
 ifndef APACHE_VERSION
 APACHE_VERSION=	$(shell perl -e '$$apache = $$^O eq "freebsd" ? "httpd" : "apache2"; if (qx{$$apache -v} =~ m{Apache/(\d+\.\d+)}) { print $$1 } else { print "???" }')
 endif
+# May be set to 0 if the "HttpProtocolOptions Unsafe" setting is done in a different Apache config file.
 ALLOW_UNSAFE_HTTP?=	1
 
 all:	rights symlinks
@@ -71,6 +72,7 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define VIRTUAL_HOST="$(VIRTUAL_HOST)" \
 	      --define SERVER_ALIAS="$(SERVER_ALIAS)" \
 	      --define ALLOW_UNSAFE_HTTP=$(ALLOW_UNSAFE_HTTP) \
+	      --define SERVER_ADMIN=$(SERVER_ADMIN) \
 	      httpd.conf.tpl > $(HTTPD_CONF)~
 	chmod 644 $(HTTPD_CONF)~
 	mv $(HTTPD_CONF)~ $(HTTPD_CONF)

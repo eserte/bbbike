@@ -101,6 +101,9 @@ ServerAlias [% SERVER_ALIAS %]
     ScriptAlias [% CGI_ROOT_URL %]/browserinfo.cgi [% BBBIKE_ROOT_DIR %]/lib/BrowserInfo.pm
 
 [%  ELSIF LOCATION_STYLE == "vhost" -%]
+[%      IF SERVER_ADMIN -%]
+    ServerAdmin [% SERVER_ADMIN %]
+[%      END -%]
     DocumentRoot [% DOCUMENT_ROOT %]
 
     ErrorLog  [% ERROR_LOG %]

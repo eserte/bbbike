@@ -71,6 +71,7 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define VIRTUAL_HOST="$(VIRTUAL_HOST)" \
 	      --define SERVER_ALIAS="$(SERVER_ALIAS)" \
 	      --define ALLOW_UNSAFE_HTTP=$(ALLOW_UNSAFE_HTTP) \
+	      --define SERVER_ADMIN=$(SERVER_ADMIN) \
 	      httpd.conf.tpl > $(HTTPD_CONF)~
 	chmod 644 $(HTTPD_CONF)~
 	mv $(HTTPD_CONF)~ $(HTTPD_CONF)
