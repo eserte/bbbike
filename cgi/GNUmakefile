@@ -19,6 +19,7 @@ HTTPD_CONF?=		httpd.conf
 ifndef APACHE_VERSION
 APACHE_VERSION=	$(shell perl -e '$$apache = $$^O eq "freebsd" ? "httpd" : "apache2"; if (qx{$$apache -v} =~ m{Apache/(\d+\.\d+)}) { print $$1 } else { print "???" }')
 endif
+ALLOW_UNSAFE_HTTP?=	1
 
 all:	rights symlinks
 	@echo "You may run $(MAKE) httpd.conf to create a default apache configuration for inclusion"
@@ -69,7 +70,7 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define APACHE_VERSION="$(APACHE_VERSION)" \
 	      --define VIRTUAL_HOST="$(VIRTUAL_HOST)" \
 	      --define SERVER_ALIAS="$(SERVER_ALIAS)" \
-	      --define ALLOW_UNSAFE_HTTP=1 \
+	      --define ALLOW_UNSAFE_HTTP=$(ALLOW_UNSAFE_HTTP) \
 	      httpd.conf.tpl > $(HTTPD_CONF)~
 	chmod 644 $(HTTPD_CONF)~
 	mv $(HTTPD_CONF)~ $(HTTPD_CONF)
