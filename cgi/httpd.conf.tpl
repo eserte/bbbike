@@ -116,16 +116,20 @@ ServerAlias [% SERVER_ALIAS %]
     ScriptAlias [% CGI_ROOT_URL %]/ [% CGI_ROOT_DIR %]/
 [%  END -%]
 
+[% IF LOCATION_STYLE == "vhost" && APACHE_VERSION >= 2.4 -%]
+    <Location />
+       Require all granted
+    </Location>
+[% END -%]
+
     # HTML ... documents
     Alias [% ROOT_URL %] [% BBBIKE_ROOT_DIR %]
     <Location [% ROOT_URL %]>
         Options -Indexes
-    </Location>
-[% IF APACHE_VERSION >= 2.4 -%]
-    <Location [% ROOT_URL %]>
+[% IF LOCATION_STYLE != "vhost" && APACHE_VERSION >= 2.4 -%]
         Require all granted
-    </Location>
 [% END -%]
+    </Location>
 
 [% IF LOCATION_STYLE == "bbbike" -%]
     # Redirects for root URL
