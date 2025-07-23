@@ -26,10 +26,24 @@ BEGIN {
     }
 }
 
+my($script, $gpx2gpsman);
+BEGIN {
+    $script = bbbike_root . '/miscsrc/gpx2gpx';
+    $gpx2gpsman = bbbike_root . '/miscsrc/gpx2gpsman';
+}
+
+BEGIN {
+    if (!-e $script) {
+	plan skip_all => "$script not available";
+    } elsif (!-e $gpx2gpsman) {
+	plan skip_all => "$gpx2gpsman not available";
+    }
+}
+
 plan 'no_plan';
 
-my @script = ($^X, bbbike_root . '/miscsrc/gpx2gpx');
-my @gpx2gpsman = ($^X, bbbike_root . '/miscsrc/gpx2gpsman');
+my @script = ($^X, $script);
+my @gpx2gpsman = ($^X, $gpx2gpsman);
 
 my $src_gpx = <<'EOF';
 <?xml version="1.0" encoding="UTF-8"?>

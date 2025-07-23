@@ -11,11 +11,22 @@ use FindBin;
 use lib $FindBin::RealBin;
 
 use File::Temp 'tempdir';
-use Test::More 'no_plan';
+use Test::More;
 
 use BBBikeTest qw(eq_or_diff);
 
-my $org2bbd = "$FindBin::RealBin/../miscsrc/org2bbd";
+my $org2bbd;
+BEGIN {
+    $org2bbd = "$FindBin::RealBin/../miscsrc/org2bbd";
+}
+
+BEGIN {
+    if (!-e $org2bbd) {
+	plan skip_all => "$org2bbd not available";
+    }
+}
+
+plan 'no_plan';
 
 my $tmpdir = tempdir("org2bbd.t-XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
 
