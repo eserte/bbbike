@@ -16595,7 +16595,7 @@ EOF
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-06-07
+#: last_checked: 2025-07-22
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -36099,8 +36099,8 @@ EOF
 #: source_id: viz2021:13.558515,52.562701,23.06.2025,08:00 (Vollsperrung, bis 25.06.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsasx6rq7z2r
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibtz5k5fgbp4x24som7y4liviz3qmq22wtzang6ilmm76knuyhz3m@jpeg (leider unscharf)
-#: source_id: adac:639331230 (bis 23.07.2025)
-#: source_id: viz2021:13.55818,52.56275,21.07.2025,08:00 (bis 23.07.2025)
+#: source_id: adac:639331230 (bis 23.07.2025) (inaktiv)
+#: source_id: viz2021:13.55818,52.56275,21.07.2025,08:00 (bis 23.07.2025) (inaktiv)
 	2::inwork 20895,17594 20769,17650
 	2::inwork 20769,17650 20891,17572
 EOF
@@ -37794,12 +37794,14 @@ EOF
 #: by: https://az-lichtenrade.de/bauprojekte/umbau-der-bahnhofstrasse/planungsstand/
 #: by: https://az-lichtenrade.de/wp-content/uploads/2025/07/Screenshot-2025-07-07-095708-800x567.png
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu2kux6y6n27
+#: by: https://fahrinfo.vbb.de/him-uploads/1753173224127_Kartenausschnitt_Bahnhofstr.png
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
 #: source_id: adac:1081908618 (Bahnhofstr., bis voraussichtlich 01.03.2026)
 #: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026)
 #: source_id: viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026)
+#: source_id: bvg2024:m76#HIM_FREETEXT_292859
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: last_checked: 2025-07-19 vvv
@@ -44434,12 +44436,13 @@ EOF
 	q4::temp::play 3217,12239 3072,12222
 EOF
      },
-     { from  => $isodate2epoch->("2025-04-03 00:00:00"), # $isodate2epoch->("2024-09-05 00:00:00"), # 1717092000, # 2024-05-30 20:00 # ein Tag Vorlauf
-       until => $isodate2epoch->("2025-04-07 04:00:00"), # $isodate2epoch->("2024-09-08 22:00:00"), # 1717387200, # 2024-06-03 06:00
+     { from  => $isodate2epoch->("2025-07-23 00:00:00"), # $isodate2epoch->("2025-04-03 00:00:00"), # $isodate2epoch->("2024-09-05 00:00:00"), # 1717092000, # 2024-05-30 20:00 # ein Tag Vorlauf
+       until => $isodate2epoch->("2025-07-25 05:00:00"), # $isodate2epoch->("2025-04-07 04:00:00"), # $isodate2epoch->("2024-09-08 22:00:00"), # 1717387200, # 2024-06-03 06:00
 #      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 31.05.2024 20:00 bis 03.06.2024 06:00',
 #      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 30.08.2024 20:00 bis 01.09.2024 22:00',
 #      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 06.09.2024 20:00 bis 08.09.2024 22:00',
-       text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 04.04.2025 20:00 bis 07.04.2025 04:00',
+#      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 04.04.2025 20:00 bis 07.04.2025 04:00',
+       text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 24.07.2025 22:00 bis 25.07.2025 05:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
@@ -44734,7 +44737,7 @@ EOF
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-17 vvv
+#: last_checked: 2025-07-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -45703,7 +45706,7 @@ Uferweg am Paul-Löbe-Haus	2::temp 8473,12753 8495,12651 8596,12576
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1753217407, # undef, # XXX
        text  => 'entlang des Stadtbahnviadukts: kann wegen Hochbauarbeiten gesperrt sein, auch für Fußgänger',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -45711,19 +45714,16 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/9728-friedrichshain-west-westl-der-petersburger-und-warschauer-str/?postID=773638#post773638
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ehemalige-total-energies-tankstelle-ostbahnhof-holzmarktstra%C3%9Fe-36-42.1473/#post-24511
 #: by: https://entwicklungsstadt.de/nach-tankstellenabriss-erste-baumassnahmen-auf-herecon-grundstueck-in-friedrichshain/
-#: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen.
 # REMOVED --- #: osm_watch: way id="482690912" version="6"
 #: osm_watch: way id="189141737" version="7"
 #: osm_watch: way id="1225345724" version="1"
 #: osm_watch: way id="1356785471" version="2"
-#: last_checked: 2025-06-17 vvv
-#: check_frequency: 60d vvv
+# REMOVED (mittlerweile sieht es nicht so aus, als ob in nächster Zukunft gesperrt wird) --- #: XXX Gesehen am 2024-09-03: ein Fußgänger-verboten-Schild steht am Wendehammer, aber es gab keine Absperrung, Passage war möglich. Keine Engstellen mehr. Am 2024-10-07: weiterhin ein Fußgänger-verboten-Schild sowie eine weggedrehte Barriere. 2024-12-06: Fußgänger-verboten-Schild ist umgefallen. --- #: last_checked: 2025-06-17 vvv --- #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-12-31 (entwicklungsstadt: Abriss der ehem. Tankstelle) vvv
 	3 12207,11763 12132,11788 11966,11832
 	3 11966,11832 12132,11788 12207,11763
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -46500,9 +46500,10 @@ EOF
 	q3::inwork; 23251,12146 23017,12177
 EOF
      },
-     { from  => undef,
-       until => $isodate2epoch->("2025-07-23 15:30:00"), # undef,
-       text  => 'Schleiermacherstr.: temporäre Schulstraße an Schultagen zwischen 9:30 und 15:30 Uhr, zunächst bis 23.7.2025',
+     { from  => $isodate2epoch->("2025-09-07 00:00:00"), # undef,
+       until => undef, # $isodate2epoch->("2025-07-23 15:30:00"), # undef,
+#      text  => 'Schleiermacherstr.: temporäre Schulstraße an Schultagen zwischen 9:30 und 15:30 Uhr, zunächst bis 23.7.2025',
+       text  => 'Schleiermacherstr.: möglicherweise temporäre Schulstraße an Schultagen zwischen 9:30 und 15:30 Uhr',
        type  => 'handicap',
        recurring => 1,
        data  => <<EOF,
@@ -46512,8 +46513,10 @@ EOF
 #: osm_watch: node id="5969555198" version="5"
 #: osm_watch: node id="11107173199" version="2"
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
+#: note: am letzten Schultag vor den Sommerferien 2025 waren die entsprechenden Schilder verhüllt
 #: last_checked: 2025-06-07
-#: next_check: 2025-07-23
+# REMOVED --- #: next_check: 2025-07-23
+#: next_check: 2025-09-08 (Ende der Sommerferien)
 	q3::temp 10032,9456 10004,9268
 EOF
      },
@@ -46905,8 +46908,8 @@ EOF
 #: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-07-03 (traffic)
-#: check_frequency: 21d (traffic)
-#: next_check: 2025-08-19 (adac)
+# REMOVED --- #: check_frequency: 21d (traffic)
+#: next_check: 2025-08-19 (adac, viz)
 	q4::inwork 2396,9427 2467,9425 2592,9419
 EOF
      },
@@ -47595,7 +47598,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-23
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 EOF
@@ -47936,12 +47939,12 @@ EOF
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 1
+#: osm_watch: note 4734747 2
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum
-#: last_checked: 2025-07-22 (traffic) vvv
+#: last_checked: 2025-07-22 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-08-29 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -48378,9 +48381,9 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.501283,52.560123,21.05.2025,07:00 (hier nur Kfz-Verkehr, bis 23.07.2025 + weitere Bauphasen) (inaktiv)
-#: source_id: adac:1670787902 (bis voraussichtlich 23.07.2025)
-#: source_id: adac:193058608 (bis 23.07.2025)
-#: source_id: viz2021:13.50038,52.56143,21.05.2025,07:00 (bis 23.07.2025)
+#: source_id: adac:1670787902 (bis voraussichtlich 23.07.2025) (inaktiv)
+#: source_id: adac:193058608 (bis 23.07.2025) (inaktiv)
+#: source_id: viz2021:13.50038,52.56143,21.05.2025,07:00 (bis 23.07.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpnptl6lls2o
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiebwxdqzzfbx4fuikq5twvb2ibrbfh7mzstw4rj6hwp7ucy4km2zi@jpeg (laut Verkehrszeichenplan keine Ausnahmen für Radfahrer)
 Malchower Weg	q4::inwork; 16887,17349 16905,17281 16915,17231
@@ -48556,13 +48559,14 @@ EOF
 EOF
      },
      { from  => 1749297422, # 2025-06-07 13:57
-       until => 1755381600, # 2025-08-17 00:00
-       text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis 16.08.2025',
+       until => $isodate2epoch->("2025-08-30 18:00:00"), # 1755381600, # 2025-08-17 00:00
+       text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende August 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-15
-#: next_check: 2025-08-16 (Halteverbotsschilder)
+#: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025
+#: last_checked: 2025-07-22
+#: next_check: 2025-08-30 (Halteverbotsschilder)
 	q4::inwork; 12238,11931 12413,11901
 EOF
      },
@@ -48700,8 +48704,10 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1578727.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1583148.php
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/nach-heftigem-sturm-ziros-arbeiten-im-wald-im-berliner-norden-gehen-nur-langsam-voran-14068208.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/sturmschaden-im-berliner-norden-nicht-beseitigt-arger-um-gesperrte-parks-spielplatze-und-sportanlagen-14070377.html
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
-#: last_checked: 2025-07-14 (research) vvv
+#: last_checked: 2025-07-23 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
 #: next_check: 2025-08-04 (Pressemitteilung) vvv
 #: note: nördlicher Abschnitt (Tegeler Forst - Hermsdorf)
@@ -48836,7 +48842,7 @@ EOF
        text  => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Juli 2025',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,H,T)
+#: also_indoor: traffic (G,ex-H,T)
 #: last_checked: 2025-07-18
 #: next_check: 2025-07-24 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -49138,13 +49144,13 @@ EOF
        text  => 'Heinrich-Heine-Str.: zwischen Annenstr. und Dresdener Str. Wasserrohrbruch, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: next_check: HEINRICHHEINE-2025
+#: next_check_id: HEINRICHHEINE-2025
 #: source_id: adac:971528950
 #: source_id: bvg2024:n8#HIM_FREETEXT_293620
 #: source_id: viz2021:13.41414,52.50801,
 #: also_indoor: traffic (T,G,A)
 #: note: gesperrter Abschnitt etwa 50m, explizite Radfahren-verboten-Schilder
-#: last_checked: 2025-07-21
+#: last_checked: 2025-07-22
 Heinrich-Heine-Str.	q4::inwork 11094,11377 11039,11254
 EOF
      },
@@ -49189,6 +49195,31 @@ EOF
        data  => <<'EOF',
 #: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
 	2::inwork -6696,-3174 -6553,-3235 -6277,-3348 -5788,-3583 -5662,-3583 -5463,-3467
+EOF
+     },
+     { from  => 1753596000, # 2025-07-27 08:00
+       until => 1756306800, # 2025-08-27 17:00
+       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 27.08.2025',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/222-W/25/088 (bis 27.08.2025)
+	2::inwork 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
+EOF
+     },
+     { from  => 1753221600, # 2025-07-23 00:00
+       until => 1756677599, # 2025-08-31 23:59
+       text  => 'Boothstr.: Anbindung an den Ostpreußendamm gesperrt, bis Ende August 2025 ',
+       type  => 'handicap',
+       data  => <<'EOF',
+	q4::inwork 5125,3142 4967,3231
+EOF
+     },
+     { from  => 1753221600, # 2025-07-23 00:00
+       until => 1762037999, # 2025-11-01 23:59
+       text  => 'Am Großen Wannsee: Leitungsarbeiten zwischen Koblanckstr. und Zum Heckeshorn, Sperrung, vom 24.07.2025 bis Anfang November 2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+	q4::inwork -5893,1969 -5836,2119 -5719,2323 -5653,2481 -5663,2609 -5737,2746
 EOF
      },
     );

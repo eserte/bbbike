@@ -1421,12 +1421,8 @@ Spittelmarkt -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10240,11740 10299
 Spittelmarkt -> Kurstr.: unbequemes Überqueren	3::igndisp 10240,11740 10299,11786 10278,11802
 Kurstr. -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10278,11802 10299,11786 10314,11804
 unbequemes Überqueren	3nocross::ignrte 10243,12546 10300,12587 10359,12634 10431,12709
-Marx-Engels-Forum -> Vera-Brittain-Ufer: unbequemes Überqueren	3::igndisp 10363,12535 10300,12587 10291,12600
-Marx-Engels-Forum -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10363,12535 10300,12587 10243,12546
-Vera-Brittain-Ufer -> Marx-Engels-Forum: unbequemes Überqueren	3::igndisp 10291,12600 10300,12587 10363,12535
 Vera-Brittain-Ufer -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10291,12600 10300,12587 10359,12634
 Karl-Liebknecht-Str. -> Vera-Brittain-Ufer: unbequemes Überqueren	3::igndisp 10243,12546 10300,12587 10291,12600
-Karl-Liebknecht-Str. -> Marx-Engels-Forum: unbequemes Überqueren	3::igndisp 10359,12634 10300,12587 10363,12535
 Heiligegeistgasse -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10351,12646 10359,12634 10431,12709
 Karl-Liebknecht-Str. -> Heiligegeistgasse: unbequemes Überqueren	3::igndisp 10300,12587 10359,12634 10351,12646
 Mittelstreifen	3nocross::ignrte 19894,-835 19996,-740 20205,-548
@@ -3292,6 +3288,7 @@ Schwingtor	BNP:5:-256:trailer=10 -7803,12417
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-119:trailer=no 14659,7505
 Schranke, sehr enge Durchfahrt, ggfs. auf Gehweg ausweichen	BNP:5:-193:trailer=10 14766,7903
 Drängelgitter an der Straßenbahntrasse	BNP:6:-167 14989,13630
+Drängelgitter an der Straßenbahntrasse	BNP:6:-169 15107,13598
 Schranke	BNP:3:-90 -3646,15717
 Drängelgitter am Bahnübergang	BNP:3:-21 11612,5253
 Schranke	BNP:0:-81 9265,6361
@@ -3538,7 +3535,11 @@ Nalepastr.: Tor verschlossen	3 17059,8097 17059,8102 17056,8159
 Schranke	BNP:1:0:trailer=3 16991,-89
 Schranke fast über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5:-232:trailer=15 9135,14317
 Drängelgitter	BNP:3:-131:trailer=10 14881,13144
+Drängelgitter	BNP:3:-162:trailer=10 15101,13570
 Schwingtor	BNP:5:-172:trailer=10 -7347,12797
+Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
+Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590
+Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 10431,12709
 Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross::ignrte 16242,2279 16306,2364 16382,2464
 Stubenrauchstr. -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16382,2464 16306,2364 16342,2338
 Stubenrauchstr. -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16242,2279 16306,2364 16106,2514

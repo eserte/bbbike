@@ -287,7 +287,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: next_check: 2025-08-23 vvv
 #: osm_watch: way id="47755711" version="24"
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
-#: osm_watch: way id="1110751835" version="8"
+#: osm_watch: way id="1110751835" version="9"
 (Mohrenstr.)	N 9042,11839 9075,11756
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2835,13 +2835,16 @@ Naumburger Str.	N 13265,6972 13520,6583
 # 
 Storkower Str.	H 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673 13727,14207 13731,14200 13736,14192 13879,13967 13971,13818 14006,13761 14043,13667 14060,13622 14089,13509 14109,13449 14159,13384 14218,13358 14307,13318 14502,13264 14530,13256 14559,13248 14630,13230 14644,13223 14780,13160 14871,13135 15080,13117 15090,13116 15347,13124 15515,13134
 Storkower Str. [Gewerbegebiet]	N 13736,14192 13639,14133 13715,14018 13784,13908
-Paul-Junius-Str.	N 15098,12849 15096,12974 15090,13116 15084,13276 15082,13369 15220,13377 15225,13543 15040,13602
+Paul-Junius-Str.	N 15098,12849 15096,12974 15090,13116 15084,13276 15082,13369 15220,13377 15225,13543 15104,13581 15040,13602
 Paul-Junius-Str.	N 15225,13543 15370,13508 15374,13542 15425,13739 15436,13780
 Paul-Junius-Str.	N 15224,13269 15220,13377
+(Paul-Junius-Str. - Karl-Lade-Str.)	NN 15104,13581 15107,13598 15112,13617
 Alfred-Jung-Str.	N 15346,13298 15347,13268 15347,13124 15357,12813
 Alfred-Jung-Str.	N 15084,13276 15224,13269 15347,13268 15479,13273
 (Paul-Junius-Str. - Alfred-Jung-Str.)	NN 15370,13508 15346,13298
-(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.)	NN 14871,13135 14881,13144 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str./Alfred-Jung-Str.)	NN 14871,13135 14881,13144 14889,13150 14909,13223 14941,13283
+(Rudolf-Seiffert-Str./Storkower Str. - Alfred-Jung-Str.)	NN 14941,13283 14978,13289 15084,13276
+(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str./Straﬂenbahntrasse)	NN 14941,13283 15024,13387 15064,13452 15101,13570 15104,13581
 Am Stadtpark (Lichtenberg)	N 15357,12813 15395,12762
 Am Stadtpark (Lichtenberg)	NN 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stadtpark (Lichtenberg)	N 15454,12519 15457,12449
@@ -3204,7 +3207,7 @@ Josef-Orlopp-Str.	N 15515,13134 15715,13157 15912,13153 16429,13146 16863,13138
 Straﬂe 15 (Lichtenberg)	N 16429,13146 16429,13021
 (Bornitzstr. - Straﬂe 15)	NN 16439,12872 16440,12895 16439,12979
 Karl-Lade-Str.	N 14218,13834 14425,13780 14635,13725 14751,13693 14821,13674
-Karl-Lade-Str.	NN 14821,13674 14995,13645 15097,13621 15239,13580
+Karl-Lade-Str.	NN 14821,13674 14995,13645 15097,13621 15112,13617 15239,13580
 Karl-Lade-Str.	NN 14821,13674 14987,13621 15040,13602
 (Mˆllendorffstr. - Karl-Lade-Str.)	NN 15513,13539 15374,13542 15239,13580
 Buggenhagenstr.	N 14425,13780 14371,13619
@@ -4835,7 +4838,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: osm_watch: way id="31428032" version="18"
 #: osm_watch: way id="386544517" version="4"
 #: osm_watch: note 2048562 13
-#: last_checked: 2025-05-11 (mapillary)
+#: last_checked: 2025-07-18 (okas)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-05-01
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -19856,7 +19859,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straﬂe)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-07-21 vvv
+#: last_checked: 2025-07-22 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

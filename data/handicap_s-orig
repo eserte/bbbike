@@ -63,7 +63,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="18"
 #: osm_watch: way id="1072662717" version="21"
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-23
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -338,9 +338,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
+#: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 #: osm_watch: way id="885130938" version="5"
 #: last_checked: 2025-07-09
-#: check_frequency: 90d
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 # 
@@ -479,7 +480,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-07-09
+#: last_checked: 2025-07-22
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -1004,7 +1005,7 @@ Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-07-14
+#: last_checked: 2025-07-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
 # REMOVED --- #: next_check: 2025-06-30 (infravelo)
@@ -1834,7 +1835,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-23
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
@@ -3389,7 +3390,7 @@ Am Amtsgraben: einige Fußgänger, Bordstein	q2 22927,4400 22866,4352
 # REMOVED (Bauarbeiten weitgehend beendet) --- #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen --- #: last_checked: 2013-12-11 --- #: next_check: 2013-12-18
 #: note: an schönen Tagen und bei mehr Straßenbahnbetrieb eher q3
 (Möllendorffstr. - Karl-Lade-Str.): Fußgänger	q2 15513,13539 15374,13542
-(Möllendorffstr. - Karl-Lade-Str.): gemeinsamer Rad- und Gehweg	q1 15374,13542 15239,13580 15097,13621 14995,13645
+(Möllendorffstr. - Karl-Lade-Str.): gemeinsamer Rad- und Gehweg	q1 15374,13542 15239,13580 15112,13617 15097,13621 14995,13645
 #: note: hier sieht es so aus, als ob es eine Trennung gibt (Asphaltstreifen vs. Beton)
 (Möllendorffstr. - Karl-Lade-Str.): gemeinsamer Rad- und Gehweg	q1 14995,13645 14821,13674
 # REMOVED (aufgehoben) --- #: temporary: --- #: XXX wann wird die Umfahrung wieder aufgehoben? --- #: last_checked: 2013-09-12 --- #: check_frequency: 20d --- Paul-Junius-Str.: Umfahrung an der Straßenbahnüberquerung	q4::inwork 15374,13542 15370,13508
@@ -3575,8 +3576,10 @@ Lübbener Str.: Fußgänger	q3 12729,10515 12731,10547
 #: note: offizieller gemeinsamer Rad- und Gehweg
 (Spreeuferweg - Wintersteinstr.): Fußgänger, Bordstein	q3 3643,12671 3741,12607
 (Bornholmer Str. - Kolonnenweg): einige Fußgänger	q1 10134,16534 10118,16561 10108,16576 9954,16590
-#: note: gemeinsamer Rad- und Gehweg, mit Vorrang für Fußgänger
+#: note: gemeinsamer Rad- und Gehweg, mit Vorrang für Fußgänger vvv
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fußgänger	q2 14871,13135 14881,13144 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
+(Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str./Straßenbahntrasse): Fußgänger	q2 14941,13283 15024,13387 15064,13452 15101,13570 15104,13581
+#: note ^^^
 # REMOVED --- #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html --- #: XXX der handicap_s-Eintrag wird wohl bleiben, q2 oder q1? --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d
 Helsingforser Str.: einige Fußgänger	q1 13496,11384 13427,11431
 #: note: gemeinsamer Rad- und Gehweg

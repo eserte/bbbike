@@ -3584,8 +3584,10 @@ Schwingtor	BNP:5::trailer=10 -7803,12417
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14659,7505
 #: note: Fahrräder mit Anhänger können alternativ auch auf den parallelen Gehweg geführt werden
 Schranke, sehr enge Durchfahrt, ggfs. auf Gehweg ausweichen	BNP:5::trailer=10 14766,7903
-#: note: Luftbild
+#: note: Z-Gitter
 Drängelgitter an der Straßenbahntrasse	BNP:6 14989,13630
+#: note: Z-Gitter
+Drängelgitter an der Straßenbahntrasse	BNP:6 15107,13598
 # REMOVED (nicht bestätigt) --- #: by: Eckart Seher: --- Drängelgitter	BNP:3 25909,11844
 #: by: Sara Köhler:
 Schranke	BNP:3 -3646,15717
@@ -3957,6 +3959,7 @@ Nalepastr.: Tor verschlossen	3 * 17059,8102 *
 Schranke	BNP:1::trailer=3 16991,-89
 Schranke fast über die gesamte Fahrbahnbreite, ggfs. auf Gehweg umfahren	BNP:5::trailer=15 9135,14317
 Drängelgitter	BNP:3::trailer=10 14881,13144
+Drängelgitter	BNP:3::trailer=10 15101,13570
 Schwingtor	BNP:5::trailer=10 -7347,12797
 # 
 #: section ^^^
@@ -3964,6 +3967,33 @@ Schwingtor	BNP:5::trailer=10 -7347,12797
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: MARXENGELSFORUM-2025
+#: by: https://www.berliner-woche.de/mitte/c-bauen/plaene-fuer-rathaus-und-marx-engels-forum-werden-konkret_a385041 (Bauarbeiten ab Herbst 2024)
+#: by: https://media04.berliner-woche.de/article/2023/06/21/4/441084_XXL.jpg (vermutlich werden sich die Wegbeziehungen im Marx-Engels-Forum ändern)
+#: by: https://www.deutsches-architekturforum.de/thread/8329-zukunft-des-rathausforums-marx-engels-forums/?postID=763636#post763636
+#: by: https://i.postimg.cc/w6pbxRkV/Rathausforum5.png?dl=1
+#: by: https://gruen-berlin.de/pressemitteilung/informationsveranstaltung-zur-neugestaltung-des-rathaus-und-marx-engels-forums-in-berlin-mitte-2407 (erste bauvorbereitende Maßnahmen starten im Winter 2024/2025)
+#: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/kunftig-nasse-fusse-fur-marx-und-engels-baustart-fur-neugestaltung-der-grunanlage-an-der-spree-13162255.html
+#: by: https://www.berliner-woche.de/mitte/c-bauen/umgestaltung-vom-rathaus-und-marx-engels-forum-beginnt_a436646
+#: by: https://www.tagesspiegel.de/berlin/weitere-baustelle-in-mitte-marx-engels-forum-wird-bald-umgestaltet-13598920.html (ab Juni 2025)
+#: by: https://gruen-berlin.de/projekte/urbane-freiraeume/rathaus-und-marx-engels-forum/ueber-das-projekt
+#: by: https://www.tagesspiegel.de/berlin/baustart-in-berlin-mitte-das-marx-engels-forum-wird-umgestaltet-13899289.html (Marx-Engels-Forum wird ab Juli 2025 eingezäunt sein, 1. BA bis 2027)
+#: by: https://entwicklungsstadt.de/historische-mitte-im-wandel-bauarbeiten-am-rathausforum-angelaufen/
+#: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
+#: osm_watch: note 4795958 4
+#: osm_watch: way id="169067264" version="14"
+#: osm_watch: way id="202157026" version="9"
+#: osm_watch: way id="202157023" version="7"
+#: last_checked: 2025-07-22 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2027-12-31 vvv
+Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
+Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590
+Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 10431,12709
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: ZOSSENB246-2023
 #: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/
@@ -4104,13 +4134,13 @@ Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeite
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-06-18 (bahninfo-forum)
+#: last_checked: 2025-07-18 (okas)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
 #: osm_watch: way id="1149630679" version="5"
-#: last_checked: 2025-06-18 (bahninfo-forum)
+#: last_checked: 2025-07-18 (okas)
 #: check_frequency: 90d
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
@@ -5013,7 +5043,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-07-17 vvv
+#: last_checked: 2025-07-23 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5212,7 +5242,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-07-09
+#: last_checked: 2025-07-22
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
