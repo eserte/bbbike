@@ -328,10 +328,14 @@ EOF
 	$display_content_type = '<none>' if !defined $display_content_type || $display_content_type eq '';
 	my $content;
 	if ($resp->code != 304) {
-	    $compress_results{$do_accept_gzip}->{$display_content_type}->{$got_gzipped}++;
 	    $content = $resp->decoded_content(charset => 'none');
 	    if (!$allow_empty_content) {
 		ok(length $content, "Non-empty content");
+	    }
+
+	    # check compression only for non-empty content
+	    if (length $content) {
+		$compress_results{$do_accept_gzip}->{$display_content_type}->{$got_gzipped}++;
 	    }
 
 	    # Store digest for later comparisons
