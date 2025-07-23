@@ -166,19 +166,16 @@ ServerAlias [% SERVER_ALIAS %]
 	    # The following is standard in Debian/squeeze's
 	    # apache2/mods-enabled/deflate.conf, but may be missing in
 	    # other installations:
-	    AddOutputFilterByType DEFLATE text/html text/plain text/xml
+	    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/x-perl
 	    AddOutputFilterByType DEFLATE text/css
 	    AddOutputFilterByType DEFLATE application/x-javascript application/javascript application/ecmascript
 	    AddOutputFilterByType DEFLATE application/rss+xml
         </Location>
     </IfModule>
 
-    <IfModule mod_headers.c>
+    <IfModule mod_deflate.c>
         <LocationMatch "^\Q[% ROOT_URL %]\E/data/[^/]+$">
-            # This is needed to get the data files compressed.
-            # The Content-Type is also text/plain if this is not set,
-            # but somehow mod_deflate does not work otherwise...
-            Header Set Content-Type text/plain
+	    SetOutputFilter DEFLATE
         </LocationMatch>
     </IfModule>
 
