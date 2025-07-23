@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.47;
+$VERSION = 2.48;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -348,6 +348,16 @@ sub register {
 	  ($images{Travic} ? (icon => $images{Travic}) : ()),
 	  tags => [qw(pubtrans)],
 	};
+    if ($is_berlin) {
+	# note: original map is on https://map-oepnv.de/ but it's not possible to link by coordinate
+	$main::info_plugins{__PACKAGE__ . "_OePNVmap_Brandenburg"} =
+	    { name => "ÖPNVmap Brandenburg",
+	      callback => sub { showmap_mapcompare(@_, maps => "oepnv-brandenburg") },
+	      callback_3_std => sub { showmap_url_mapcompare(@_, maps => "oepnv-brandenburg") },
+	      ($images{OePNVmap_Brandenburg} ? (icon => $images{OePNVmap_Brandenburg}) : ()),
+	      tags => [qw(pubtrans)],
+	    };
+    }
     if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . '_HierBautBerlin'} =
 	    { name => 'Hier Baut Berlin',
@@ -1133,6 +1143,34 @@ r4wAhWsA0KYAzKMAaVQAvJYAUUEAh2wAPTEASTsAfGMAX0wAs48AeGAAalUAdl8ARzkAZVEA5bgA
 98YA8MAA/cwA7b4A8MAA6LkA67wA+cgA7b4A/MsA9MQA7r8A+McA5bcA9MQA/80A/8wA/80A/8wA
 /80A/80A/80A/80A/8wA/80A/8wA/80A/80A/8wA/80A/80A/8wA/8wAfqJ56AAAACFJREFUGJVj
 YWBEBSwC6ALfpNAENAlqIUeAARWwMAyIAADnWQJRRyIXPQAAAABJRU5ErkJggg==
+EOF
+    }
+
+    if (!defined $images{OePNVmap_Brandenburg}) {
+	# Created with:
+	#   wget 'https://map-oepnv.de/apple-touch-icon.png'
+	#   convert -resize 16x16 apple-touch-icon.png apple-touch-icon-16.png
+	#   pngcrush -brute -reduce -rem allb -m 0 apple-touch-icon-16.png apple-touch-icon-16-2.png 
+	#   base64 apple-touch-icon-16-2.png 
+	$images{OePNVmap_Brandenburg} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAC7lBMVEX/1AD/0wD/2gD/2QD/1QD/
+1QD/1wD/2AD/1QD/2QD/1gD/1QD/1gD/1QD/1AD/1AD+0wD/2ADgugHjvQH80wD60ADwyADjvQH9
+0wDivQHyygD91AD2zQD90gD/1AD/1AD80QD/3wCghQJ6ZQOdggKFbgOEbgOHcQOagQJ5ZQOGbwOR
+eAKKcwKxkwL/3QD80gD+1AD/1gDwxwDqwwDmwAHowgHpxQGoiwHDpQDwywDjvAHowgDRrwHPqwH/
+2gD90wD/1AD/1AD/1gD91QD81QD/4ACSegCMdAB1YQDKqgD/4AD81QD+2AD/2QD/0wD/1AD/1AD/
+0wD/2QD/4gD/4gDwyQB1ZAD//QDMvQCMcwD/7AD83gD+2AD90gD/1AD/1AD80gD/3gCvkgCBawDD
+ogD+0wBvXACJcgBfTwBQQwCSeQCwkgDnwgD/2gD/0wD/1AD70QD/4QCPdwCghQChhgCEbgBsWgAA
+AAA8MgDUsADLqQCukQBsWgCqjgD/3wD80QD70QD/4QCQdwDPtQD/7wDqxgDkwABCOACgiQDnwwDn
+xgD/8ADOswCOdQD/4gD70QD70QD/4QCOdgDMqgD/3gDnwADatwDWtgDvygDZtADpwgD/3gDMqgCP
+dwD/4QD70QD70QD/4QCOdgDOqwD/4QDrwwDVsAD/3QD/2gDWsQDqwwD/4QDOqwCOdgD70QD/4QCP
+dwDNqgD/3gDpwgDVsQD/1QD/1QDUsQDpwgD/3gDMqgD70QD70QD/4gCOdQDOswD/8ADqyQDVtAD/
+5gD/5ADZtADsyAD/7wDPtQCQdwD/4QD80QD/3wCrjgBrWQCsjwDMqQDIpgC9nQCHcQCAagB9aACh
+hgCehACPdwD70QD/1AD/0wD/2gDpwwC1lgCLdACFbwCjhwDXsgD91ADzywDHpgCEbgCylAD/3gD8
+0gD/1AD/1AD+0wD/2QD/4wD/3wD/2gD/5AD/3QD+1AD/1gD/4AD/5AD/2gD/0wD/1AC5Cre8AAAA
+K0lEQVQYV2NhYEQFLAJDQ+DLfxY+ZP6N/1qoAuaM21j4UbRcj0QTsMS0BQCz4AhbtS1HHQAAAABJ
+RU5ErkJggg==
 EOF
     }
 }
