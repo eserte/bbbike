@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2001,2007,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2001,2007,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -89,6 +89,7 @@ my $perlbat;
 my $os;
 my $Print_indent = 0;
 my $debug = 0;
+my $batch = 0;
 
 my $start_program;
 my @start_args;
@@ -164,6 +165,7 @@ my @options =
    'tk!' => \$use_tk,
    'auto!' => \$auto,
    "debug!" => \$debug,
+   "batch!" => \$batch,
   );
 
 if ($os eq 'win' && !$use_tk) { # DOS-Console benutzt noch cp-sonstwas :-(
@@ -368,7 +370,13 @@ sub ModuleCheck {
 	  M("Die folgenden perl-Module werden benötigt:")."\n",
 	  "  " . join(", ", @missing_mod) . "\n",
 	  M("Sollen sie aus dem Internet geholt und installiert werden? (j/n) ");
-	my $jn = <STDIN>;
+	my $jn;
+	if ($batch) {
+	    print STDERR "(batch mode, assume n)\n";
+	    $jn = 'n';
+	} else {
+	    $jn = <STDIN>;
+	}
 	my $yesrx = M"^j";
 	if ($jn =~ /$yesrx/i) {
 	    require CPAN;

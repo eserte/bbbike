@@ -30,7 +30,7 @@ if ($^O eq 'MSWin32') {
 } else {
     @cmd = ('./install.pl');
 }
-push @cmd, '-show', '-notk';
+push @cmd, '-show', '-notk', '-batch';
 
 my $stdout;
 my $stderr;
