@@ -16,9 +16,15 @@ ServerAlias [% SERVER_ALIAS %]
     HttpProtocolOptions Unsafe
 
 [%  END -%]
-[% IF USE_PLACK_MODPERL -%]
+[% IF USE_PLACK_PROXY -%]
+    Define BBBIKE_USE_PLACK_PROXY 1
+[% ELSIF USE_PLACK_MODPERL -%]
     Define BBBIKE_USE_PLACK_MODPERL 1
 [% END -%]
+[%  IF !PLACK_PORT;
+     SET PLACK_PORT = 5000;
+    END;
+-%]
 
 [%  IF    LOCATION_STYLE == "bbbike";
         SET CGI_ROOT_URL = ROOT_URL _ "/cgi";
@@ -194,6 +200,12 @@ ServerAlias [% SERVER_ALIAS %]
      </IfModule>
 [% END -%]
 
+    <IfDefine BBBIKE_USE_PLACK_PROXY>
+	ProxyPreserveHost On
+	ProxyPass        /BBBike/data http://localhost:[% PLACK_PORT %]/BBBike/data
+	ProxyPassReverse /BBBike/data http://localhost:[% PLACK_PORT %]/BBBike/data
+    </IfDefine>
+    <IfDefine !BBBIKE_USE_PLACK_PROXY>
     <IfModule perl_module>
         <Perl>
             use lib "[% BBBIKE_ROOT_DIR %]";
@@ -231,6 +243,7 @@ ServerAlias [% SERVER_ALIAS %]
             PerlResponseHandler BBBikeApacheSessionCountedHandler->handler
         </Location>
     </IfModule>
+    </IfDefine>
 
 [%
     IF CGI_TYPE == "ModPerl::Registry";
