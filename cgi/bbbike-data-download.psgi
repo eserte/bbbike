@@ -77,21 +77,28 @@ my $app = sub {
     $filename =~ s{.*/data/}{};
     my $path = "$use_data_dir/$filename";
 
+    my $std_new_response = sub {
+	my $status = shift;
+	my $headers = shift // {};
+	$headers->{'X-Tag'} = 'rm.data.download';
+	$req->new_response($status, $headers, @_)->finalize;
+    };
+
     if (_not_modified($h, $path)) {
-	return $req->new_response(304)->finalize;
+	return $std_new_response->(304);
     }
 
     if ($filename =~ m{^(label|multi_bez_str)$}) {
 	if ($h->header('If-modified-since')) {
 	    warn qq{Faking <$filename> for <$ua>...\n};
-	    return $req->new_response(304)->finalize;
+	    return $std_new_response->(304);
 	}
     }
     open my $fh, '<:raw', $path
 	or do {
 	    my $msg = "File $path cannot be read: $!";
 	    warn "$msg (for <$ua>)\n";
-	    return $req->new_response(404)->finalize;
+	    return $std_new_response->(404);
 	};
 
     my @stat = stat $path;
@@ -107,15 +114,15 @@ my $app = sub {
 	$extra_headers{'X-BBBike-Hacks'} = 'NH';
     }
 
-    return $req->new_response
+    return $std_new_response->
 	(
 	 200,
-	 [
+	 {
 	  'Content-Type'   => $content_type,
 	  'Content-Length' => $stat[7],
 	  'Last-Modified'  => HTTP::Date::time2str($stat[9]),
 	  %extra_headers,
-	 ],
+	 },
 	 $fh,
-	)->finalize;
+	);
 };
