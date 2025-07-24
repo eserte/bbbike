@@ -239,6 +239,7 @@ EOF
 	} elsif ($url =~ m{\.pkg$}) {
 	    is($content_type, "application/octet-stream", "Expected type (pkg)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{/\.modified$}) {
+	    local $TODO = "May return text/plain or nothing, depending of active backend for data files";
 	    like($content_type, qr{^text/plain}, "Expected type (plain text)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{wap}) {
 	    like($content_type, qr{^text/vnd.wap.wml}, "Expected type (wml)") or diag("For URL $url$redir_text");
