@@ -4970,7 +4970,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (H,G,T,W)
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-21 (Mapillary)
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -5561,7 +5561,7 @@ Gipsstr., etwa 30m	q2::inwork 10341,13376 10199,13446
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stendaler-str-1-neubau-statt-edeka-supermarkt.1036/page-2#post-25254 (zumindest Richtung Norden scheint man als Radfahrer durchzukommen)
 #: add_fragezeichen: Ist die Anbindung Rathenower Str./Stendaler Str. noch immer gesperrt? vvv
 #: priority: #B vvv
-#: last_checked: 2025-06-04 (architektur-urbanistik) vvv
+#: last_checked: 2025-07-19 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-30 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: note 4069677 11
@@ -5697,17 +5697,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
-	q4::temp::play 10685,10483 10857,10411
-',
-         'from' => 1751407200,
-         'id' => 4059,
-         'recurring' => 1,
-         'text' => 'Wassertorstr.: in Höhe Kastanienplatz donnerstags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 03. Juli 2025 bis 24. Juli 2025',
-         'type' => 'handicap',
-         'until' => 1753376400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5850,7 +5840,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-22 vvv
+#: last_checked: 2025-07-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7591,7 +7581,8 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-25
+#: last_checked: 2025-07-24 (traffic)
+#: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 ',
          'from' => undef,
@@ -8077,15 +8068,16 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'data' => '#: next_check_id: HEINRICHHEINE-2025
 #: source_id: adac:971528950
 #: source_id: bvg2024:n8#HIM_FREETEXT_293620
-#: source_id: viz2021:13.41414,52.50801,
+#: source_id: viz2021:13.41414,52.50801, (bis 22.08.2025)
 #: also_indoor: traffic (T,G,A)
 #: note: gesperrter Abschnitt etwa 50m, explizite Radfahren-verboten-Schilder
 #: last_checked: 2025-07-22
+#: next_check: 2025-08-22
 Heinrich-Heine-Str.	q4::inwork 11094,11377 11039,11254
 ',
          'from' => undef,
          'id' => 4398,
-         'text' => 'Heinrich-Heine-Str.: zwischen Annenstr. und Dresdener Str. Wasserrohrbruch, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'text' => 'Heinrich-Heine-Str.: zwischen Annenstr. und Dresdener Str. Wasserrohrbruch, Sperrung der Fahrbahn, voraussichtlich bis 22.08.2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8146,22 +8138,27 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'until' => 1756306800
        },
        {
-         'data' => '	q4::inwork 5125,3142 4967,3231
+         'data' => '#: source_id: viz2021:13.32158,52.4357,24.07.2025,09:30 (bis 29.08.2025)
+	q4::inwork 5125,3142 4967,3231
 ',
          'from' => 1753221600,
          'id' => 4403,
          'text' => 'Boothstr.: Anbindung an den Ostpreußendamm gesperrt, bis Ende August 2025 ',
          'type' => 'handicap',
-         'until' => 1756677599
+         'until' => 1756490400
        },
        {
-         'data' => '	q4::inwork -5893,1969 -5836,2119 -5719,2323 -5653,2481 -5663,2609 -5737,2746
+         'data' => '#: source_id: viz2021:13.16143,52.42614,24.07.2025,07:00 (bis 06.11.2025)
+#: source_id: adac:903932502 (Wanderbaustelle, bis voraussichtlich 06.11.2025)
+#: note: "abschnittsweise"
+# REMOVED (möglicherweise ein viel kürzerer Abschnitt) ---	q4::inwork -5893,1969 -5836,2119 -5719,2323 -5653,2481
+	q4::inwork -5653,2481 -5663,2609 -5737,2746
 ',
          'from' => 1753221600,
          'id' => 4404,
          'text' => 'Am Großen Wannsee: Leitungsarbeiten zwischen Koblanckstr. und Zum Heckeshorn, Sperrung, vom 24.07.2025 bis Anfang November 2025',
          'type' => 'handicap',
-         'until' => 1762037999
+         'until' => 1762455600
        }
      
 );

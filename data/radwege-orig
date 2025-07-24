@@ -5650,7 +5650,7 @@ gemeinsamer Geh- und Radweg	RW2; 17963,6313 17948,6248 17930,6175 17900,6072
 Gehweg für Radfahrer frei	RW1;RW1 27741,1394 27804,1337 27977,1187 28036,1136
 Gehweg für Radfahrer frei	RW1; 28036,1136 28094,1090 28188,962 28317,891 28331,877 28414,811 28512,704 28543,675 28570,649
 asphaltierter Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 28570,649 28617,591 28644,560 28660,542 28677,524 28718,487 28789,468 28809,462 29116,502 29406,540 29562,603 29632,594 30028,417 30551,276 30621,235 30820,117
-Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 30820,117 31009,19 31080,-19 31127,-45 31219,-87 31320,-129 31608,-476 31624,-496 31651,-530
+Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 30820,117 31009,19 31080,-19 31127,-45 31219,-87 31320,-129 31336,-147 31608,-476 31624,-496 31651,-530
 	RW6;RW6 5943,14049 5928,13922 5921,13866 5907,13746 5882,13548
 Verbundsteinpflaster	RW1;RW1 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228 22211,-324 22261,-464 22278,-570 22280,-663 22271,-717 22229,-897 22186,-1060 22146,-1183 22107,-1304 22068,-1422 22027,-1548
 Verbundsteinpflaster	RW1; 22027,-1548 22003,-1625
@@ -8144,7 +8144,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-07-23
+#: last_checked: 2025-07-24
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
