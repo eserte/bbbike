@@ -100,7 +100,7 @@ my $app = sub {
     my $content_type = (
 			$filename =~ m{\.gif$} ? 'image/gif' :
 			$filename =~ m{\.png$} ? 'image/png' :
-			'text/plain'
+			'text/plain' # XXX maybe be more specific: .modified is text/tab-separated-values, the bbd files application/x-bbbike-data
 		       );
     my %extra_headers;
     if ($use_data_dir =~ m{/3\.16$} && $filename =~ m{^(strassen|landstrassen|landstrassen2)$}) {
