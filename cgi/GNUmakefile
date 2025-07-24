@@ -65,6 +65,8 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define DEVEL_CGI_SCRIPTS="$(DEVEL_CGI_SCRIPTS)" \
 	      --define CGI_TYPE="$(CGI_TYPE)" \
 	      --define USE_PLACK_MODPERL="$(USE_PLACK_MODPERL)" \
+	      --define USE_PLACK_PROXY="$(USE_PLACK_PROXY)" \
+	      --define PLACK_PORT="$(PLACK_PORT)" \
 	      --define LOCATION_STYLE="$(LOCATION_STYLE)" \
 	      --define OS_STYLE="$(OS_STYLE)" \
 	      --define FS_STYLE="$(FS_STYLE)" \
