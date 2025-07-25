@@ -1,27 +1,6 @@
-$#temp_blocking = 1611;
+$#temp_blocking = 1624;
 push @temp_blocking,
 (
-       {
-         'data' => '	2::inwork 59522,-22230 59349,-21581 59293,-21524
-',
-         'from' => 1753221600,
-         'id' => 1612,
-         'text' => 'Tauche-Lindenberg: Bahnübergang B246 wegen Gleiserneuerung voll gesperrt, 24.07.2025 10:00 Uhr bis 25.07.2025 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1753459200
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: https://www.stadtrand-nachrichten.de/griebnitzsee-steglitz-zehlendorf-berlin/
 	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9116,-737 -9254,-656 -9358,-537 -9375,-502 -9445,-377 -9585,-277 -9795,-230
@@ -117,38 +96,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (Sanierung des Gendarmenmarkts ab 2022 bis 2024, dann gibt\'s hier keine Veranstaltungen)
-#: by: https://classicopenair.de/de/component/content/frontpage (2021 verschoben auf 7. bis 12. Juli 2022)
-#: by: https://www.classicopenair.de/ (2025: 17. bis 21. Juli 2025)
-#: source_id: adac:871932322 (bis 24.07.2025)
-#: source_id: viz2021:13.39333,52.51323,12.07.2025,06:00 (bis 24.07.2025)
-# REMOVED (hier nicht) ---	q4::temp 9679,11834 9666,11935
-	q4::temp 9666,11935 9656,12031
-# REMOVED (hier nicht) ---	q4::temp 9656,12031 9645,12133
-	2::temp 9523,12019 9656,12031
-	2::temp 9536,11922 9666,11935
-',
-         'from' => 1752271200,
-         'id' => 1710,
-         'periodic' => 1,
-         'postwarn_days' => 3,
-         'prewarn_days' => 5,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              7,
-                              'start',
-                              '2024-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (17.7.2025 - 21.7.2025; Sperrungen fangen schon früher an und dauern länger)',
-         'type' => 'gesperrt',
-         'until' => 1753387200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3865,7 +3813,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://entwicklungsstadt.de/neues-startup-zentrum-delta-campus-eroeffnet-im-kalle-neukoelln/
 #: by: https://entwicklungsstadt.de/delta-campus-in-neukoelln-eroeffnet-co-working-im-ehemaligen-parkhaus/
 #: osm_watch: way id="734271970" version="7"
-#: osm_watch: way id="975241319" version="7"
+#: osm_watch: way id="975241319" version="8"
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
@@ -4970,7 +4918,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (H,G,T,W)
-#: last_checked: 2025-07-21 (Mapillary)
+#: last_checked: 2025-07-21 (mapillary)
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -5246,22 +5194,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
          'type' => 'handicap',
          'until' => 1774886400
        },
-       {
-         'data' => '#: next_check_id: ZOSSENB246-2023
-#: source_id: 237201864 (bis 06.11.2023) (inaktiv) (nur noch Gegenverkehrsregelung, bis 02.10.2024) (bis 28.06.2024) (Sperrung bis 09.08.2024) (bis 30.08.2024) (bis 09.08.2024) (inaktiv)
-#: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/sperrung-des-bahnuebergangs-b246-stubenrauchstrasse-verlaengert/ (bis 14.10.2024, Umleitung über "An den Wulzen")
-#: note: laut osm früher "Straße wird letztmalig vom 14.10. bis 11.11.2024 geöffnet, danach final gesperrt", jetzt "Soll nach Eröffnung der neuen B246 geschlossen werden, bleibt aber vorerst noch geöffnet"
-#: also_indoor: traffic (ex-G,ex-W,T,H)
-# REMOVED --- #: last_checked: 2024-09-14 --- #: check_frequency: 10d --- #: next_check: 2024-10-14
-# REMOVED ---	2::inwork 13526,-20548 13412,-20513 13390,-20515
-	2::inwork 12836,-20360 12845,-20377 13095,-20435 13223,-20504 13271,-20531 13390,-20515
-',
-         'from' => 1752444000,
-         'id' => 3913,
-         'text' => 'alte B246, Zossen: Sperrung vor dem Bahnübergang, evtl. sind auch Radfahrer betroffen, vom 14.07.2025 bis 25.07.2025',
-         'type' => 'gesperrt',
-         'until' => 1753455600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5438,7 +5371,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-25
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -5733,28 +5666,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
          'until' => 1758297600
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
-#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
-#: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
-#: source_id: viz2021:13.361338,52.446986,04.04.2025,20:00 (bis 07.04.2025) (inaktiv)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
-#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
-#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1832086361215578310
-#: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
-	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
-',
-         'from' => 1753221600,
-         'id' => 4074,
-         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 24.07.2025 22:00 bis 25.07.2025 05:00',
-         'type' => 'handicap',
-         'until' => 1753412400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6949,6 +6861,8 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901517353940390368
 #: by: https://www.morgenpost.de/bezirke/pankow/article409300680/berlin-prenzlauer-berg-angriffe-auf-gesperrte-bruecke-schwedter-steg-oeffnet-trotzdem.html (Eröffnung am 18.7.2025)
 #: by: https://www.tagesspiegel.de/berlin/schwedter-steg-in-berlin-voll-gesperrt-sanierung-am-mauerpark-verzogert-sich-wegen-vandalismus-13882870.html
+#: by: https://www.morgenpost.de/bezirke/pankow/article409580036/berlin-prenzlauer-berg-bau-finale-am-schwedter-steg-wann-diese-bruecke-endlich-oeffnet.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/monatelange-verzogerung-am-mauerpark-neuer-termin-fur-freigabe-des-schwedter-stegs-in-berlin-steht-und-wirft-fragen-auf-14080070.html
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025) (inaktiv)
 #: osm_watch: note 4317053 8
 #: osm_watch: way id="1149646787" version="5"
@@ -7050,7 +6964,7 @@ Klingsorstr.	q4::inwork 5271,4547 5214,4445 5206,4432 5150,4345 5120,4318 5090,4
        {
          'data' => '#: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-07-23
+#: last_checked: 2025-07-25
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 ',
@@ -7182,20 +7096,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.28749,52.50307,22.04.2025,07:00 (bis 25.07.2025) (inaktiv) (bis 25.07.2025)
-#: source_id: viz2021:13.285979,52.505083,02.06.2025,07:00 (bis 13.06.2025) (inaktiv)
-#: source_id: adac:798121028 (bis voraussichtlich 13.06.2025) (inaktiv)
-#: note: an der Kantstr. steht ein Sackgassenschilder, Fußgänger/Radfahrer frei
-	q4::inwork 2493,10675 2468,10780
-# REMOVED (im nördlichen Abschnitt nicht) ---	q4::inwork 2468,10780 2361,10941 2340,11056
-',
-         'from' => 1745211600,
-         'id' => 4309,
-         'text' => 'Herbartstr.: Bauarbeiten zwischen Dernburgstr. und Neue Kantstr., evtl. sind auch Radfahrer betroffen, bis 25.07.2025',
-         'type' => 'handicap',
-         'until' => 1753459200
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: traffic (re-G[teilweise],T[teilweise],W[teilweise])
@@ -7257,7 +7158,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum
-#: last_checked: 2025-07-22 vvv
+#: last_checked: 2025-07-25 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-08-29 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -7352,7 +7253,8 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
        {
          'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025)
-#: last_checked: 2025-07-14
+#: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
+#: last_checked: 2025-07-25
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -7433,7 +7335,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
-#: last_checked: 2025-07-18 vvv
+#: last_checked: 2025-07-24 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -7552,17 +7454,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1571253.php
-#: note: Länge der Sperrung 100m
-	q4::temp::play 18627,8475 18528,8331
-',
-         'from' => 1751493600,
-         'id' => 4366,
-         'text' => 'Wildensteiner Straße: Spielstraße zwischen Wandlitzstraße und Ehrlichstraße, freitags zwischen 14:00 und 18:00, vom 4. Juli 2025bis 25. Juli 2025',
-         'type' => 'handicap',
-         'until' => 1753480799
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
 #: source_id: adac:2089388170 (bis 31.07.2025)
@@ -7626,6 +7518,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1583148.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/nach-heftigem-sturm-ziros-arbeiten-im-wald-im-berliner-norden-gehen-nur-langsam-voran-14068208.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/sturmschaden-im-berliner-norden-nicht-beseitigt-arger-um-gesperrte-parks-spielplatze-und-sportanlagen-14070377.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-23 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -7690,6 +7583,7 @@ Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 268
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltvyv2f6yc2q (Schönwalder Allee ist offen)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1583117.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
@@ -7898,16 +7792,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'type' => 'handicap',
          'until' => 1759420800
        },
-       {
-         'data' => '#: next_check_id: BELZIGER-2025
-	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
-',
-         'from' => 1752184800,
-         'id' => 4385,
-         'text' => 'Belziger Str.: Bauarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), vermutlich sind auch Radfahrer betroffen, voraussichtlich bis zum 25. Juli 2025',
-         'type' => 'handicap',
-         'until' => 1753480799
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick

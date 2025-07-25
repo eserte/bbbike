@@ -14957,8 +14957,8 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (Sanierung des Gendarmenmarkts ab 2022 bis 2024, dann gibt's hier keine Veranstaltungen)
 #: by: https://classicopenair.de/de/component/content/frontpage (2021 verschoben auf 7. bis 12. Juli 2022)
 #: by: https://www.classicopenair.de/ (2025: 17. bis 21. Juli 2025)
-#: source_id: adac:871932322 (bis 24.07.2025)
-#: source_id: viz2021:13.39333,52.51323,12.07.2025,06:00 (bis 24.07.2025)
+#: source_id: adac:871932322 (bis 24.07.2025) (inaktiv)
+#: source_id: viz2021:13.39333,52.51323,12.07.2025,06:00 (bis 24.07.2025) (inaktiv)
 # REMOVED (hier nicht) ---	q4::temp 9679,11834 9666,11935
 	q4::temp 9666,11935 9656,12031
 # REMOVED (hier nicht) ---	q4::temp 9656,12031 9645,12133
@@ -36300,7 +36300,7 @@ EOF
 #: by: https://entwicklungsstadt.de/neues-startup-zentrum-delta-campus-eroeffnet-im-kalle-neukoelln/
 #: by: https://entwicklungsstadt.de/delta-campus-in-neukoelln-eroeffnet-co-working-im-ehemaligen-parkhaus/
 #: osm_watch: way id="734271970" version="7"
-#: osm_watch: way id="975241319" version="7"
+#: osm_watch: way id="975241319" version="8"
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
@@ -41366,6 +41366,7 @@ EOF
        until => $isodate2epoch->("2024-08-31 22:00:00"), # 1693080000, # 2023-08-26 22:00
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 8]],
+       recurrence_prewarn_days => 21,
        text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 31. August 2024 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
@@ -43093,7 +43094,7 @@ EOF
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-25
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -47382,6 +47383,8 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901517353940390368
 #: by: https://www.morgenpost.de/bezirke/pankow/article409300680/berlin-prenzlauer-berg-angriffe-auf-gesperrte-bruecke-schwedter-steg-oeffnet-trotzdem.html (Eröffnung am 18.7.2025)
 #: by: https://www.tagesspiegel.de/berlin/schwedter-steg-in-berlin-voll-gesperrt-sanierung-am-mauerpark-verzogert-sich-wegen-vandalismus-13882870.html
+#: by: https://www.morgenpost.de/bezirke/pankow/article409580036/berlin-prenzlauer-berg-bau-finale-am-schwedter-steg-wann-diese-bruecke-endlich-oeffnet.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/monatelange-verzogerung-am-mauerpark-neuer-termin-fur-freigabe-des-schwedter-stegs-in-berlin-steht-und-wirft-fragen-auf-14080070.html
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025) (inaktiv)
 #: osm_watch: note 4317053 8
 #: osm_watch: way id="1149646787" version="5"
@@ -47598,7 +47601,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-07-23
+#: last_checked: 2025-07-25
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 EOF
@@ -47944,7 +47947,7 @@ EOF
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum
-#: last_checked: 2025-07-22 vvv
+#: last_checked: 2025-07-25 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-08-29 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -48192,7 +48195,8 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025)
-#: last_checked: 2025-07-14
+#: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
+#: last_checked: 2025-07-25
 #: check_frequency: 30d
 #: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -48453,7 +48457,7 @@ EOF
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
-#: last_checked: 2025-07-18 vvv
+#: last_checked: 2025-07-24 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -48707,6 +48711,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1583148.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/nach-heftigem-sturm-ziros-arbeiten-im-wald-im-berliner-norden-gehen-nur-langsam-voran-14068208.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/sturmschaden-im-berliner-norden-nicht-beseitigt-arger-um-gesperrte-parks-spielplatze-und-sportanlagen-14070377.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-23 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -48772,6 +48777,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltvyv2f6yc2q (Schönwalder Allee ist offen)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1583117.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)

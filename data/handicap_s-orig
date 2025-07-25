@@ -337,10 +337,11 @@ Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
+#: XXX außerdem: Radweg zwischen Tegeler Str. und Samoastr. wird neu gemacht, möglicherweise asphaltiert
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2025-07-09
+#: last_checked: 2025-07-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -782,11 +783,12 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: by: https://www.caimmo.com/de/presse/news/artikel/ca-immo-startet-bau-des-anna-lindh-haus-am-berliner-hauptbahnhof/ (Fertigstellung Ende 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/vorplatz-am-hbf-europacity-bebauungsplan-ii-201c.155/page-5#post-24166
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
+#: also_indoor: webcam https://1223a25j44.bautvplus.de/cam1/image.jpg
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 10
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2025-07-09
+#: last_checked: 2025-07-25 (webcam)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (caimmo website)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -1013,7 +1015,7 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 # 
 # REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022 --- #: source_id: viz2021:13.481458,52.502023,17.06.2024,07:00 (bis 22.06.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_227495 (hier bis 16.7.2024) --- #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_228154 (bis 31.08.2024) --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_228155 (bis 31.08.2024) --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 04.04.2025) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1802566845146477028 --- #: by: https://pbs.twimg.com/media/GQC4s0vWIAAC3AD?format=jpg&name=4096x4096 (keine Information zu Rad/Fußverkehr) --- #: also_indoor: traffic (H,G,W) --- #: priority: #A --- #: last_checked: 2024-06-17 --- #: next_check: 2024-06-22 --- #: valid: -20240622 --- #: valid: -20240831 --- Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, Fußgängertunnel	q3::inwork 15856,10821 15793,10814
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-315-341-343.837/page-2#post-22878 --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: osm_watch: way id="1135879798" version="2" --- #: also_indoor: traffic (ex-G) --- #: last_checked: 2024-07-22 --- #: check_frequency: 60d --- #: next_check: 2024-06-17 --- Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
-# REMOVED (beendet) --- #: note: nur etwa der halbe Abschnitt ist verengt, deshalb q3 statt q4 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-06-19 --- Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
+# REMOVED (beendet) --- by: #: by: https://entwicklungsstadt.de/173-neue-mietwohnungen-wbm-projekt-in-lichtenberg-abgeschlossen/ --- #: note: nur etwa der halbe Abschnitt ist verengt, deshalb q3 statt q4 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-06-19 --- Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
 # REMOVED (nicht mehr) --- #: next_check_id: RUSCHEAMPEL-2024 --- #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert? --- #: last_checked: 2024-05-02 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-14 vvv --- #: valid: -20240614 vvv --- # REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886 --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: ONTARIOSEE-2023
