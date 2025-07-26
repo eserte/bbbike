@@ -39,9 +39,9 @@ plan skip_all => "skip due to slow network" if $ENV{BBBIKE_TEST_SLOW_NETWORK};
 plan skip_all => "skip bbbike.de live tests" if $ENV{BBBIKE_TEST_SKIP_BBBIKE_DE};
 
 my $bbbike_url               = "http://bbbike.de";
-my $bbbike_data_url          = "http://bbbike.de/BBBike/data";
+my $bbbike_data_url          = "$bbbike_url/BBBike/data";
 my $bbbike_pps_url           = "http://bbbike-pps-jessie";
-my $bbbike_data_pps_url      = "http://bbbike-pps-jessie/BBBike/data";
+my $bbbike_data_pps_url      = "$bbbike_pps_url/BBBike/data";
 
 my @urls;
 if ($ENV{BBBIKE_TEST_HTMLDIR}) {
@@ -51,7 +51,7 @@ if ($ENV{BBBIKE_TEST_HTMLDIR}) {
     push @urls, $bbbike_data_pps_url;
 }
 
-my $tests_per_url = 23;
+my $tests_per_url = 35;
 plan tests => $tests_per_url * scalar(@urls);
 
 my $handicap_l_content_checks_tests = 4;
@@ -112,6 +112,33 @@ for my $url (@urls) {
 	SKIP: {
 		skip "Skip content tests because of failed response", $handicap_l_content_checks_tests if $res{'error'} != 200;
 		do_handicap_l_content_checks($res{'content'}, 'Http (SRT)');
+	    }
+	}
+
+	# simulate old/new Http.pm and compression handling
+	# see httpd.conf.tpl for en/disabling DEFLATE functionality
+	for my $def (
+	     # UA                                         compress
+	    ["bbbike/3.16 (Http/3.17)",                   0],
+	    ["bbbike/3.17 (Http/4.01) (darwin)",          0],
+	    ["bbbike/3.17 (Http/4.01) (linux)",           1],
+	    ["bbbike/3.18 (Http/4.08) (darwin)",          1],
+	    ["bbbike/3.18 (Http/4.08) (linux)",           1],
+	    ["bbbike/3.16 (LWP::UserAgent/6.15) (linux)", 1],
+	) {
+	    my($ua_prefix, $should_compress) = @$def;
+	    my $ua_string = "$ua_prefix BBBike-Test/1.0";
+	    my $ua = LWP::UserAgent->new(conn_cache => $conn_cache);
+	    $ua->agent($ua_string);
+	    $ua->env_proxy;
+	    $ua->default_headers->push_header('Accept-Encoding' => 'gzip');
+	    my $resp = $ua->get("$url/obst");
+	    ok $resp->is_success, "successful fetch with $ua_string"
+		or diag $resp->dump;
+	    if ($should_compress) {
+		isnt $resp->content_encoding, '', "Got non-empty content-encoding '" . $resp->content_encoding . "' for UA '$ua_string'";
+	    } else {
+		ok !$resp->content_encoding, "Got no or empty content-encoding for UA '$ua_string'";
 	    }
 	}
 
