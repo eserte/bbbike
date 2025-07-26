@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Http.pm,v 4.6 2017/09/24 21:30:35 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008,2014,2015,2016,2017,2018,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +24,7 @@ use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(get $user_agent $http_defaultheader
 		rfc850_date uuencode);
-$VERSION = sprintf("%d.%02d", q$Revision: 4.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '4.08';
 
 $tk_widget = 0 unless defined $tk_widget;
 $timeout = 10  unless defined $timeout;
@@ -34,7 +33,9 @@ $http_defaultheader = <<EOF;
 Accept: */*\r
 EOF
 
-if (is_in_path("zcat")) {
+my $zcat_path = $^O eq 'darwin' ? is_in_path("gzcat") : is_in_path('zcat');
+
+if (defined $zcat_path) {
     $http_defaultheader .= "Accept-encoding: deflate, gzip\015\012";
 }
 
@@ -397,7 +398,8 @@ sub get_plain {
 
     close($sock);
 
-    if (defined $header{'content-encoding'} and
+    if ($content ne '' &&
+	defined $header{'content-encoding'} &&
 	$header{'content-encoding'} =~ /^(?:gzip|deflate)$/) {
 	# gzip und compress dekomprimieren --- Holzhammermethode
 	my($tmpfh,$tmpfile);
@@ -419,7 +421,7 @@ sub get_plain {
 		or croak "While closing temporary file $tmpfile: $!";
 	}
 
-	open(IN, "zcat $tmpfile |") || croak "Can't uncompress: $!";
+	open(IN, "$zcat_path $tmpfile |") || croak "Can't uncompress: $!";
 	$content = '';
 	local($/) = \4096;
 	while(<IN>) {
@@ -567,12 +569,13 @@ sub parse_url {
     }
 
     # ansonsten: kein URI::URL installiert
-    if ($urlstring !~ /(http):\/\/([^:\/]+):?(\d+)?(\/.*)/) {
-        die "Bad URL. Must be http://hostname(:port)?/path. Error occured at";
+    if ($urlstring !~ /(http):\/\/([^:\/]+):?(\d+)?(\/.*)?/) {
+        die "Bad URL '$urlstring'. Must be http://hostname(:port)?(/path)?. Error occured at";
     }
     my $protocol;
     ($protocol, $host, $port, $path) = ($1, $2, $3, $4);
     $port = 80 if (!defined $port or $port eq ''); # standard www port
+    $path = '' if !defined $path;
 
     ($host, $path, $port, undef, undef);
 }
@@ -580,7 +583,7 @@ sub parse_url {
 sub is_in_path {
     my($prog) = @_;
     foreach (split(/:/, $ENV{PATH})) {
-	return $_ if -x "$_/$prog";
+	return "$_/$prog" if -x "$_/$prog";
     }
     undef;
 }
@@ -721,7 +724,7 @@ Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1995,1996,1998,2000,2001,2003,2005,2008,2015,2016 Slaven Rezic. All rights reserved.
+Copyright (c) 1995,1996,1998,2000,2001,2003,2005,2008,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
