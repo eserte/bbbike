@@ -156,7 +156,7 @@ Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2788,14364 2905,14754
 Kurt-Schumacher-Damm (Süd)	1 2956,14752 2846,14373 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
-Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
+Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3591,16260
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1337,14538 -1392,14527 -1484,14513 -1411,14585 -1350,14646 -1119,14659 -941,14637
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
@@ -1578,7 +1578,7 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2025-07-21 (daf) vvv
+#: last_checked: 2025-07-26 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
@@ -1589,7 +1589,7 @@ Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 # 
 #: XXX nach den Bauarbeiten die alte Einbahnstraßenregelung eintragen
 #: note: es gibt eine provisorische Verbindung zur Weststr. (mittlerweile bei bbbike eingezeichnet)
-#: last_checked: 2025-03-20 vvv
+#: last_checked: 2025-07-26 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="273858820" version="11"
 #: osm_watch: way id="1239079510" version="1"
@@ -4669,25 +4669,18 @@ Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q3:inwork 
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2025-06-06 (okas)
+#: last_checked: 2025-07-26
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2026-10-01
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #
-#: next_check_id: U6-2022
-#: XXX Ist hier noch immer gesperrt?
-#: last_checked: 2025-06-06 (okas)
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2026-10-01
-#: next_check: 2025-07-01
-Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
+# REMOVED (nicht mehr gesperrt) --- #: next_check_id: U6-2022 --- #: XXX Ist hier noch immer gesperrt? --- #: last_checked: 2025-06-06 (okas) --- #: check_frequency: 120d --- # REMOVED --- #: next_check: 2026-10-01 --- #: next_check: 2025-07-01 --- Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 # 
 #: next_check_id: U6-2022
 #: XXX Ist hier noch immer eine Einbahnstraße?
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-26
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2026-10-01
-#: next_check: 2025-07-01
+#: next_check: 2026-10-01
 Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 # 
 # 
@@ -5483,7 +5476,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2025-07-09 vvv
+#: last_checked: 2025-07-26 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"

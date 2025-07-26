@@ -1609,7 +1609,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-07-22 (traffic)
+#: last_checked: 2025-07-26
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -4692,14 +4692,15 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
        undef,
        undef,
        {
-         'data' => '#: tempex: summer T17:00-T05:00, winter T20:00-T05:00, sa, su, holiday vvv
+         'data' => '#: note: Sa-Öffnung gesehen: 2025-07-26 13:54
+#: tempex: summer T17:00-T05:00, winter T20:00-T05:00, sa, su, holiday vvv
 	2::temp 6470,14990 6504,14969
 #: tempex ^^^
 ',
          'from' => undef,
          'id' => 3743,
          'recurring' => 1,
-         'text' => 'Virchow-Klinikum, Eingang Oststraße: nur Mo-Fr offen, im Winter zwischen 05:00 und 17:00 Uhr, im Sommer bis 20:00 Uhr',
+         'text' => 'Virchow-Klinikum, Eingang Oststraße: offiziell nur Mo-Fr offen, im Winter zwischen 05:00 und 17:00 Uhr, im Sommer bis 20:00 Uhr; kann aber auch samstags offen sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5210,7 +5211,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: osm_watch: way id="23121446" version="36"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-07-04 (mapillary) vvv
+#: last_checked: 2025-07-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -5272,7 +5273,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: osm_watch: way id="279580369" version="9"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-07-21 (osm)
+#: last_checked: 2025-07-26
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 	q3::inwork 4335,17642 4392,17777
@@ -5888,12 +5889,13 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
          'until' => 1766163600
        },
        {
-         'data' => '	2::temp 5857,14985 5867,14993
+         'data' => '#: note: Sa-Öffnung gesehen (Tor zu, aber nicht verschlossen): 2025-07-26 13:57
+	2::temp 5857,14985 5867,14993
 ',
          'from' => undef,
          'id' => 4110,
          'recurring' => 1,
-         'text' => 'Virchow-Klinikum, Eingang Sylter Str: nur Mo-Fr tagsüber ab 5 Uhr offen',
+         'text' => 'Virchow-Klinikum, Eingang Sylter Str: offiziell nur Mo-Fr tagsüber ab 5 Uhr offen; kann aber auch samstags offen sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6378,28 +6380,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'type' => 'handicap',
          'until' => 1796079600
        },
-       {
-         'data' => '#: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025) (bis 31.08.2025) (inaktiv)
-#: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
-#: source_id: viz2021:13.37605,52.52846, (bis 31.08.2025)
-# REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
-#: note: Aber eigentlich kann man die Fußgängerampel benutzen...
-#: last_checked: 2025-07-09 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-08-31 vvv
-#	q4::inwork; 8453,13611 8572,13671
-	3::inwork 8358,13562 8453,13611 8408,13684
-	3::inwork 8408,13684 8453,13611 8572,13671
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1732172400,
-         'id' => 4220,
-         'text' => 'Invalidenstr.: Fassadensanierungsarbeiten Richtung Chausseestr. zwischen Scharnhorststr. und Schwarzer Weg, Linksabbiegen vom Radweg in die Scharnhorststr. sowie aus der Scharnhorststr. links in die Invalidenstr. für Radfahrer verboten, vom 22.11.2024 08:00 bis 31.08.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1756652400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7017,10 +6998,12 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
        {
          'data' => '#: next_check_id: ELSSHOLZ-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/grunewaldstra%C3%9Fe-8-neubau.1300/#post-24727
-#: osm_watch: way id="276210232" version="5"
+#: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
+#: osm_watch: way id="276210232" version="6"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
 #: last_checked: 2025-06-24 (architektur-urbanistik)
 #: check_frequency: 90d
+#: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
 ',
          'from' => undef,
@@ -7520,7 +7503,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/sturmschaden-im-berliner-norden-nicht-beseitigt-arger-um-gesperrte-parks-spielplatze-und-sportanlagen-14070377.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
-#: last_checked: 2025-07-23 (indoor check) vvv
+#: last_checked: 2025-07-26 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
 #: next_check: 2025-08-04 (Pressemitteilung) vvv
 #: note: nördlicher Abschnitt (Tegeler Forst - Hermsdorf)
@@ -7560,7 +7543,7 @@ Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22
 (Karolinenstr. - Waidmannsluster Damm)	2::temp 1712,20907 1819,21116 1851,21328 1810,21363
 (Waidmannsluster Damm - Karolinenstr.)	2::temp 1942,21564 1928,21595 1859,21541 1843,21440 1810,21363 1613,21173
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13499 (Einwohneranfrage)
-#: note: auch Wege am Tegeler Fließ möglicherweise gesperrt
+#: note: auch Wege am Tegeler Fließ möglicherweise gesperrt; diese Sperrungen sind aber nicht auf der Karte der Forstverwaltung eingezeichnet
 Tegeler Fließ	2::temp 4222,22854 4166,22752 4117,22715 4101,22727 4022,22691 3947,22622 3907,22606 3879,22574 3831,22479 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
 # REMOVED (hier nicht (mehr?), siehe Mapillary) --- Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 2966,22084
 Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 2686,21720 2615,21640 2518,21565 2420,21553 2371,21524 2352,21559 2253,21527 2166,21468 2074,21469 2004,21502 1942,21564
@@ -7590,7 +7573,7 @@ Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 268
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-07-20 (indoor check) vvv
+#: last_checked: 2025-07-26 (indoor check) vvv
 #: check_frequency: 7d (indoor/traffic check) vvv
 #: next_check: 2025-08-04 vvv
 # REMOVED (laut VIZ wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818

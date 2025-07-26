@@ -2381,7 +2381,7 @@ Spekteweg: Asphalt	Q0 -4053,15167 -4277,14981 -4303,14960 -4466,14817 -4671,1481
 Spekteweg: Verbundsteinpflaster	Q1 -5151,15059 -5374,15082 -5608,15105
 Spekteweg: Verbundsteinpflaster	Q0 -5608,15105 -5641,15109
 Spekteweg: Asphalt	Q0 -5641,15109 -5681,15113 -5686,15113 -5689,15114 -5694,15115
-Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4054,16035 4076,16017 4089,15978 4084,15859
+Allée du Stade: Asphalt	Q0 3591,16260 3709,16192 3781,16175 4035,16051 4054,16035 4076,16017 4089,15978 4084,15859
 (Am Hohenzollernkanal): Asphalt, einige teils größere Wurzelschäden	Q1 3775,15768 3371,15777
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
@@ -6202,7 +6202,7 @@ Foxweg: Beton	Q0 3731,18601 3758,18613 3848,18611
 Straße 443: Beton	Q0 4879,17246 4779,17252
 Straße 455: Beton	Q0 4879,17246 4902,17234 4916,17201 4931,17174
 (Zufahrt zur Julius-Leber-Kaserne): Asphalt	Q0 4952,17122 4929,17069 4897,17040
-Charles-Corcelle-Ring: Beton	Q0 3676,16497 3711,16481 3895,16381 4263,16166
+Charles-Corcelle-Ring: Beton	Q0 3676,16497 3711,16481 3895,16381 4023,16306 4263,16166
 Charles-Corcelle-Ring: Asphalt	Q0 4263,16166 4724,15925 4775,15929 4804,15966 4973,16847 4982,16984 4973,17042 4952,17122 4988,17172 5014,17212 4997,17241
 (Charles-Corcelle-Ring - Kurt-Schumacher-Damm): Verbundsteinpflaster	Q1 4952,17122 4931,17174
 (Dohnagestell - Plötzensee): Kleinsteinpflaster	Q1 5130,15692 5086,15664
@@ -10297,7 +10297,7 @@ Scharnweberstr. Radspur mit unebenen Beton	Q1; 15077,11910 14965,11924 14888,119
 (Einsteinufer - TU-Mathegebäude): Kopfsteinpflaster	Q2 5132,12136 5105,12118 5141,11816
 Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6118,10327 6073,10354 6029,10356
 Moldaustr.: Beton	Q1 17856,10508 17837,10425
-Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q0 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
+Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q1 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
 (Uferweg - Sömmeringstr.): wassergebundene Decke	Q1 3572,12866 3574,12916 3716,12925
 Bruno-Taut-Ring [Stichstraße]: Beton mit Schäden	Q1 13632,3875 13601,3895 13573,3885
 Biesheimring: Asphalt	Q0 2028,3008 2067,3031 2048,3062 1987,3166 1946,3142
@@ -13180,7 +13180,8 @@ Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11086,15772
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11214,16043 11253,16118 11295,16199 11337,16291 11397,16405
 Zermatter Str.: Betonplatten, gut	Q1 6375,17755 6495,17721 6594,17713
 Zermatter Str.: Kopfsteinpflaster besserer Qualität	Q1 6594,17713 6631,17721 6739,17749 6841,17781
-(Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627 7415,17696 7320,17718
+(Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627
+(Um den Schäfersee): Asphalt	Q0 7466,17627 7415,17696 7320,17718
 (Um den Schäfersee): Asphalt	Q0 7320,17718 7215,17689
 (Um den Schäfersee): Asphalt	Q0 7185,17681 7189,17666 7173,17591 7222,17471 7253,17467
 Baseler Str. (Reinickendorf): Kleinpflaster	Q2 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6987,17321
@@ -16791,7 +16792,10 @@ Taldorfer Weg: Beton	Q0 5506,20197 5259,20186 5170,20182 5093,20192 4950,20299 4
 Jathoweg: welliger Asphalt	Q1 5305,20431 5266,20299 5259,20186
 Breitkopfstr.: Gehwegplatten	Q1 7820,17549 7809,17708 7789,17853
 Breitkopfstr.: Asphalt	Q0 7789,17853 7772,17915
-Breitkopfstr.: Kleinsteinpflaster	Q1 7772,17915 7731,18012 7680,18106 7615,18204 7507,18372
+Breitkopfstr.: Kleinsteinpflaster	Q1 7772,17915 7731,18012
+Breitkopfstr.: Kleinsteinpflaster	Q1 7731,18012 7680,18106
+Breitkopfstr.: Asphalt	Q0 7680,18106 7615,18204
+Breitkopfstr.: Kleinsteinpflaster	Q1 7615,18204 7507,18372
 Breitkopfstr.: Asphalt	Q0 7507,18372 7460,18465 7419,18459 7391,18472 7377,18498 7372,18540 7399,18571 7445,18589 7434,18695
 Filandastr.: Kopfsteinpflaster	Q2 5666,5392 5637,5401 5527,5217
 Sarntaler Weg: guter Beton	Q0 5836,509 5742,671 5710,726 5781,770 5781,800
@@ -17826,7 +17830,7 @@ Am Zirkus: Asphalt	Q0 9090,13009 9137,13032 9167,13046 9212,12969 9239,12923
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8111,13029 8110,13042
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8114,12839 8115,12912 8116,12938
 (an der Notfallaufnahme Charité): Asphalt	Q0 8665,13353 8702,13362
-(an der Notfallaufnahme Charité): Steinplatten	Q0 8702,13362 8806,13384 8836,13396
+(an der Notfallaufnahme Charité): Steinplatten	Q0 8702,13362 8766,13381 8836,13396
 (an der Notfallaufnahme Charité): Kleinsteinpflaster	Q1 8836,13396 8833,13440
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8674,13593 8670,13633 8664,13688
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8670,13633 8633,13629 8594,13625

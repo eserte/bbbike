@@ -695,7 +695,9 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11233,11510 11174,11554
 (Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q3 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Fuﬂg‰nger, explizit f¸r Radfahrer verboten	q4 12845,9304 12862,9273 12909,9085 12902,9066
-(an der Notfallaufnahme CharitÈ): Notfallwagen, Fuﬂg‰nger	q2 8833,13440 8836,13396 8806,13384 8702,13362 8665,13353
+(an der Notfallaufnahme CharitÈ): Notfallwagen, Fuﬂg‰nger	q2 8833,13440 8836,13396
+(an der Notfallaufnahme CharitÈ): Notfallwagen, Fuﬂg‰nger	q2 8836,13396 8766,13381
+(an der Notfallaufnahme CharitÈ): Notfallwagen, Fuﬂg‰nger	q2 8766,13381 8702,13362 8665,13353
 (Lasdehner Str. - Gubener Str.): Fuﬂg‰nger, Bordsteine	q4 13375,12062 13339,12029
 Perleberger - Kieler: unterhalb der Br¸cke sehr eng	q3 7636,14414 7612,14449
 Ida-Wolff-Platz: Fuﬂg‰nger	q4 9215,10607 9192,10528
@@ -773,7 +775,7 @@ s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7
 (Fontanestr. - Kopenhagener Str.): Fuﬂg‰nger	q2 7522,19804 7518,19762 7578,19753 7617,19748
 Oleanderstr.: Fuﬂg‰nger, Bordsteine	q4 14271,14024 14298,14015
 Pankgrafenstr. (Pankow): Fuﬂg‰nger, ggfs. schieben	q2 10470,18402 10502,18338
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3273,15578 3280,15543 3242,15523 3221,15498 3169,15396 3162,15314 3091,15182 2956,14752
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3591,16260 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3273,15578 3280,15543 3242,15523 3221,15498 3169,15396 3162,15314 3091,15182 2956,14752
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
@@ -1734,7 +1736,7 @@ B¸rgerstr. - Bendastr.: einige Fuﬂg‰nger	q1 12830,6254 12813,6334 12812,6343 128
 Brienzer Str.: einige Fuﬂg‰nger	q2 7282,17318 7289,17277
 (Weg um den Sch‰fersee): einige Fuﬂg‰nger	q1 7320,17718 7215,17689
 (Weg um den Sch‰fersee): einige Fuﬂg‰nger	q1 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627
-nˆrdlicher Weg am Sch‰fersee: Umgestaltung, Umwege und Engstellen	q4::inwork 7466,17627 7415,17696 7320,17718
+nˆrdlicher Weg am Sch‰fersee: Umgestaltung, einige Engstellen	q2::inwork 7466,17627 7415,17696 7320,17718
 (Sch‰fersee - Baseler Str.): einige Fuﬂg‰nger	q1 7215,17689 7185,17681 7166,17677 6897,17616
 (Genfer Str. - Sch‰fersee): einige Fuﬂg‰nger	q1 7076,18026 7089,17990 7116,17989 7123,17892 7127,17857 7162,17737
 (Genfer Str. - Sch‰fersee): einige Fuﬂg‰nger	q1 7162,17737 7185,17681 7189,17666

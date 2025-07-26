@@ -317,7 +317,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: next_check_id: PEKINGERPLATZ-2025
 #: note: laut Baustellenschild bis 01/2026
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-05-24 vvv
+#: last_checked: 2025-07-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 vvv
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
@@ -559,6 +559,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn für die Straßensanierung 2026 (!))
+#: by: https://entwicklungsstadt.de/charlottenstrasse-in-berlin-mitte-20-jahre-bauzaun-mitten-im-zentrum/
 #: also_indoor: traffic
 #: priority: #B vvv
 #: last_checked: 2025-07-24 vvv
@@ -2339,7 +2340,10 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q3 11966,11832 12132,11788
 #: note: früher "q2"
 (Maybachufer - Weigandufer): Fußgänger, explizit für Radfahrer verboten	q4+ 12845,9304 12862,9273 12909,9085 12902,9066
-(an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8702,13362 8665,13353
+(an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396
+#: note: in diesem Abschnitt explizit als Einbahnstraße, offen Richtung Osten, ausgeschildert, aber die Durchfahrt hat einen "shared space"-artigen Charakter
+(an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8836,13396 8766,13381
+(an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8766,13381 8702,13362 8665,13353
 #: XXX_prog BS am westlichen Ende, am östlichen existiert eine Bordsteinabsenkung; ansonsten (früher) q2
 #: note: theoretisch q3 möglich
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q4+ 13375,12062 13339,12029
@@ -2462,7 +2466,7 @@ Oleanderstr.: Fußgänger, Bordsteine	q4+ 14271,14024 14298,14015
 #: by: Sylke Sallmon:
 Pankgrafenstr. (Pankow): Fußgänger, ggfs. schieben	q2 10470,18402 10502,18338
 #: by: Susanne Grittner (sort-of) vvv
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3273,15578 3280,15543 3242,15523 3221,15498 3169,15396 3162,15314 3091,15182 2956,14752
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3591,16260 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3273,15578 3280,15543 3242,15523 3221,15498 3169,15396 3162,15314 3091,15182 2956,14752
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852
 # REMOVED (hier breit genug) --- Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2934,14852 3000,15048 3106,15384 3105,15487
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790
@@ -3802,9 +3806,9 @@ Brienzer Str.: einige Fußgänger	q2 7282,17318 7289,17277
 (Weg um den Schäfersee): einige Fußgänger	q1 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627
 #: next_check_id: SCHAEFERSEE-2022
 #: XXX nach den Bauarbeiten folgenden Eintrag wiederherstellen: (Weg um den Schäfersee): einige Fußgänger	q1 7466,17627 7415,17696 7320,17718
-#: last_checked: 2025-01-15
-#: next_check: 2025-05-31
-nördlicher Weg am Schäfersee: Umgestaltung, Umwege und Engstellen	q4::inwork 7466,17627 7415,17696 7320,17718
+#: last_checked: 2025-07-26
+# REMOVED --- #: next_check: 2025-05-31
+nördlicher Weg am Schäfersee: Umgestaltung, einige Engstellen	q2::inwork 7466,17627 7415,17696 7320,17718
 (Schäfersee - Baseler Str.): einige Fußgänger	q1 7215,17689 7185,17681 7166,17677 6897,17616
 (Genfer Str. - Schäfersee): einige Fußgänger	q1 7076,18026 7089,17990 7116,17989 7123,17892 7127,17857 7162,17737
 (Genfer Str. - Schäfersee): einige Fußgänger	q1 7162,17737 7185,17681 7189,17666
@@ -4387,7 +4391,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="3"
 #: osm_watch: way id="1168244288" version="3"
-#: last_checked: 2025-04-14 (webcam)
+#: last_checked: 2025-07-26
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 (Südstr., Virchow-Klinikum): Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6231,14952 6209,14948 6160,14927 6104,14937

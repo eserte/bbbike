@@ -627,7 +627,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10226,14568 10311,14391
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2025-07-04 (mapillary)
+#: last_checked: 2025-07-26
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (infravelo)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -641,7 +641,7 @@ Fürstenberger Str.: Asphalt	Q0 10311,14613 10468,14636
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="21"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2025-07-04 (mapillary)
+#: last_checked: 2025-07-26
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -3360,7 +3360,7 @@ Spekteweg: Verbundsteinpflaster	Q1 -5151,15059 -5374,15082 -5608,15105
 Spekteweg: Verbundsteinpflaster	Q0- -5608,15105 -5641,15109
 #: confirmed_by: srt
 Spekteweg: Asphalt	Q0 -5641,15109 -5681,15113 -5686,15113 -5689,15114 -5694,15115
-Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4054,16035 4076,16017 4089,15978 4084,15859
+Allée du Stade: Asphalt	Q0 3591,16260 3709,16192 3781,16175 4035,16051 4054,16035 4076,16017 4089,15978 4084,15859
 #: by: ^^^
 # 
 #: by: Igor Smikalla vvv
@@ -7778,7 +7778,7 @@ Foxweg: Beton	Q0 3731,18601 3758,18613 3848,18611
 Straße 443: Beton	Q0 4879,17246 4779,17252
 Straße 455: Beton	Q0 4879,17246 4902,17234 4916,17201 4931,17174
 (Zufahrt zur Julius-Leber-Kaserne): Asphalt	Q0 4952,17122 4929,17069 4897,17040
-Charles-Corcelle-Ring: Beton	Q0 3676,16497 3711,16481 3895,16381 4263,16166
+Charles-Corcelle-Ring: Beton	Q0 3676,16497 3711,16481 3895,16381 4023,16306 4263,16166
 Charles-Corcelle-Ring: Asphalt	Q0 4263,16166 4724,15925 4775,15929 4804,15966 4973,16847 4982,16984 4973,17042 4952,17122 4988,17172 5014,17212 4997,17241
 (Charles-Corcelle-Ring - Kurt-Schumacher-Damm): Verbundsteinpflaster	Q1 4952,17122 4931,17174
 (Dohnagestell - Plötzensee): Kleinsteinpflaster	Q1- 5130,15692 5086,15664
@@ -9632,7 +9632,7 @@ Ferdinand-Buisson-Str.: Asphalt	Q0 12332,20962 12458,21013 12562,21055 12619,210
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-2.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-3.pdf
 #: osm_watch: way id="23121641" version="17"
-#: last_checked: 2024-10-30 (website)
+#: last_checked: 2025-07-26 (website)
 #: check_frequency: 270d
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
 # 
@@ -12294,7 +12294,8 @@ Scharnweberstr. Radspur mit unebenen Beton	Q1+; 15077,11910 14965,11924 14888,11
 (Einsteinufer - TU-Mathegebäude): Kopfsteinpflaster	Q2 5132,12136 5105,12118 5141,11816
 Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6118,10327 6073,10354 6029,10356
 Moldaustr.: Beton	Q1+ 17856,10508 17837,10425
-Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q0- 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
+#: historical_note: früher Q0-, mittlerweile (2025) sind viel zu viele Einzelschäden
+Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q1+ 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
 (Uferweg - Sömmeringstr.): wassergebundene Decke	Q1 3572,12866 3574,12916 3716,12925
 Bruno-Taut-Ring [Stichstraße]: Beton mit Schäden	Q1- 13632,3875 13601,3895 13573,3885
 Biesheimring: Asphalt	Q0 2028,3008 2067,3031 2048,3062 1987,3166 1946,3142
@@ -13622,7 +13623,7 @@ Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
 #: XXX Wird dieser Abschnitt auch asphaltiert? Vielleicht nach den Bauarbeiten an der Seidelstraßenbrücke?
 #: XXX_osm laut osm Verbundsteinpflaster -> prüfen! -> zurzeit Komplettsperrung
 #: osm_watch: way id="5059946" version="8"
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-26
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 (Weg am Kienhorstgraben): unbefestigter Weg, Schotter	Q2 3723,17979 3706,17931
@@ -17236,7 +17237,9 @@ Zermatter Str.: Betonplatten, gut	Q1 6375,17755 6495,17721 6594,17713
 #: confirmed_by: srt
 Zermatter Str.: Kopfsteinpflaster besserer Qualität	Q1- 6594,17713 6631,17721 6739,17749 6841,17781
 #: confirmed_by: srt
-(Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627 7415,17696 7320,17718
+(Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627
+#: historical_note: früher (bis etwa 2025): guter fester Sandweg, Q1
+(Um den Schäfersee): Asphalt	Q0 7466,17627 7415,17696 7320,17718
 #: corrected_by: srt (guter fester Sandweg, Q1 -> ..., neu gemacht)
 (Um den Schäfersee): Asphalt	Q0 7320,17718 7215,17689
 #: corrected_by: Pressemitteilung (guter fester Sandweg, Q1 -> ..., neu gemacht)
@@ -25188,6 +25191,7 @@ Stavenhagener Str.: Asphalt	Q0 13632,5126 13534,5111 13444,5097 13359,5086
 #: note: pwegner1 meint: mäßiger Asphalt, Bordsteinkanten, Radstreifen???
 #: note: Robert: "schlechte Qualität 1-60"
 #: corrected_by: srt (Q3 -> Q3+)
+#: note: unebenes Großsteinpflaster
 Raschdorffstr.: schlechtes Kopfsteinpflaster	Q3+ 7426,17981 7680,18106 7872,18204 7882,18209 7954,18251
 #: note: Robert: "der Rest ist besser", "asphaltiert"
 #: corrected_by: srt (Asphalt, Q1 -> ...)
@@ -28323,7 +28327,13 @@ Jathoweg: welliger Asphalt	Q1+ 5305,20431 5266,20299 5259,20186
 Breitkopfstr.: Gehwegplatten	Q1- 7820,17549 7809,17708 7789,17853
 #: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 ->) vvv
 Breitkopfstr.: Asphalt	Q0 7789,17853 7772,17915
-Breitkopfstr.: Kleinsteinpflaster	Q1- 7772,17915 7731,18012 7680,18106 7615,18204 7507,18372
+Breitkopfstr.: Kleinsteinpflaster	Q1- 7772,17915 7731,18012
+#: confirmed_by: srt
+Breitkopfstr.: Kleinsteinpflaster	Q1- 7731,18012 7680,18106
+#: corrected_by: srt (Kleinsteinpflaster, Q1- -> ..., neu gemacht)
+Breitkopfstr.: Asphalt	Q0 7680,18106 7615,18204
+#: confirmed_by: mapillary
+Breitkopfstr.: Kleinsteinpflaster	Q1- 7615,18204 7507,18372
 Breitkopfstr.: Asphalt	Q0 7507,18372 7460,18465 7419,18459 7391,18472 7377,18498 7372,18540 7399,18571 7445,18589 7434,18695
 #: corrected_by ^^^
 #: by: ^^^^
@@ -30658,7 +30668,7 @@ Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8111,13029 8110,1304
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8114,12839 8115,12912 8116,12938
 # REMOVED (erstmal komplett entfernt; nach den Bauarbeiten wird es vermutlich ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: XXX wie wird die Situation nach den Bauarbeiten aussehen? --- #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013) --- #: by: http://infocenter.charite.de/ --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8836,13396 8835,13376 8818,13365 8808,13377
 (an der Notfallaufnahme Charité): Asphalt	Q0 8665,13353 8702,13362
-(an der Notfallaufnahme Charité): Steinplatten	Q0 8702,13362 8806,13384 8836,13396
+(an der Notfallaufnahme Charité): Steinplatten	Q0 8702,13362 8766,13381 8836,13396
 (an der Notfallaufnahme Charité): Kleinsteinpflaster	Q1 8836,13396 8833,13440
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8674,13593 8670,13633 8664,13688
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8670,13633 8633,13629 8594,13625
@@ -34124,7 +34134,9 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2+ 7032,4635
 Kreuzungsbereich mit Verbundsteinpflaster	Q1 7177,15984
 Einmündungsbereich asphaltiert	Q0 6629,16538
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6879,18743
-Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 7882,18209
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 7882,18209
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 7872,18204
+Kreuzungsbereich mit schlechten Kopfsteinpflaster	Q3+ 7680,18106
 Kreuzungsbereich asphaltiert	Q0 7731,18012
 Rondell mit Kleinsteinpflaster	Q1- 12097,15223
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11700,17629
