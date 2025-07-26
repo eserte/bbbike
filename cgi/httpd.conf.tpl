@@ -159,6 +159,7 @@ ServerAlias [% SERVER_ALIAS %]
         AddType "application/geo+json" .geojson
     </Location>
 
+    # note: compression is disabled for old Http.pm versions (<= 4.07) on darwin because of zcat/gzcat problems
     <IfModule mod_deflate.c>
 [% IF LOCATION_STYLE == "bbbike" -%]
         <Location [% ROOT_URL %]>
@@ -176,29 +177,17 @@ ServerAlias [% SERVER_ALIAS %]
 	    AddOutputFilterByType DEFLATE text/css
 	    AddOutputFilterByType DEFLATE application/x-javascript application/javascript application/ecmascript
 	    AddOutputFilterByType DEFLATE application/rss+xml
-        </Location>
-    </IfModule>
 
-    <IfModule mod_deflate.c>
+	    SetEnvIf User-Agent "bbbike/.*\(Http/[1-3]\.[0-9]+\)" no-gzip
+	    SetEnvIf User-Agent "bbbike/.*\(Http/4\.0[1-7]\) \(darwin\)" no-gzip
+        </Location>
+
         <LocationMatch "^\Q[% ROOT_URL %]\E/data/[^/]+$">
 	    SetOutputFilter DEFLATE
+	    SetEnvIf User-Agent "bbbike/.*\(Http/[1-3]\.[0-9]+\)" no-gzip
+	    SetEnvIf User-Agent "bbbike/.*\(Http/4\.0[1-7]\) \(darwin\)" no-gzip
         </LocationMatch>
     </IfModule>
-
-[% IF 0 -%]
-[%# compression by AddOutputFilterByType is smarter ... -%]
-    <IfModule deflate_module>
-        <LocationMatch "^\Q[% ROOT_URL %]\E/(data|mapserver/brb)">
-            SetOutputFilter DEFLATE
-	    # old browsers with problems
-	    BrowserMatch ^Mozilla/4 gzip-only-text/html
-	    BrowserMatch ^Mozilla/4\.0[678] no-gzip
-	    BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
-	    # don't compress images (i.e. sehenswuerdigkeit...)
-	    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
-        </LocationMatch>
-     </IfModule>
-[% END -%]
 
     <IfDefine BBBIKE_USE_PLACK_PROXY>
 	ProxyPreserveHost On
