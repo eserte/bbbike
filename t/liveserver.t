@@ -31,7 +31,7 @@ use URI;
 use Http;
 use Strassen::Core;
 
-use BBBikeTest qw(check_network_testing image_ok);
+use BBBikeTest qw(check_network_testing image_ok like_long_data);
 
 check_network_testing;
 
@@ -54,7 +54,7 @@ if ($ENV{BBBIKE_TEST_HTMLDIR}) {
 my $tests_per_url = 23;
 plan tests => $tests_per_url * scalar(@urls);
 
-my $content_checks_tests = 4;
+my $handicap_l_content_checks_tests = 4;
 
 my $ua_string = 'BBBike-Test/1.0';
 
@@ -91,8 +91,8 @@ for my $url (@urls) {
 	    ok($resp->is_success, "normal bbd file")
 		or diag $resp->dump;
 	SKIP: {
-		skip "Skip content tests because of failed response", $content_checks_tests if !$resp->is_success;
-		do_content_checks($resp->decoded_content, "LWP");
+		skip "Skip content tests because of failed response", $handicap_l_content_checks_tests if !$resp->is_success;
+		do_handicap_l_content_checks($resp->decoded_content, "LWP");
 	    }
 	}
 
@@ -101,8 +101,8 @@ for my $url (@urls) {
 	    ok($resp->is_success, "normal bbd file")
 		or diag $resp->dump;
 	SKIP: {
-		skip "Skip content tests because of failed response", $content_checks_tests if !$resp->is_success;
-		do_content_checks($resp->decoded_content, "LWP (gzip)");
+		skip "Skip content tests because of failed response", $handicap_l_content_checks_tests if !$resp->is_success;
+		do_handicap_l_content_checks($resp->decoded_content, "LWP (gzip)");
 	    }
 	}
 
@@ -110,8 +110,8 @@ for my $url (@urls) {
 	    my %res = Http::get(url => "$url/handicap_l");
 	    is($res{'error'}, 200, "Got $url/handicap_l with Http.pm");
 	SKIP: {
-		skip "Skip content tests because of failed response", $content_checks_tests if $res{'error'} != 200;
-		do_content_checks($res{'content'}, 'Http (SRT)');
+		skip "Skip content tests because of failed response", $handicap_l_content_checks_tests if $res{'error'} != 200;
+		do_handicap_l_content_checks($res{'content'}, 'Http (SRT)');
 	    }
 	}
 
@@ -139,10 +139,12 @@ for my $url (@urls) {
     }
 }
 
-sub do_content_checks {
+sub do_handicap_l_content_checks {
     my($content, $wwwmod) = @_;
 
-    ok($content =~ m{sonstige behinderungen}i, "Content check with $wwwmod");
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+
+    like_long_data($content, qr{sonstige behinderungen}i, "Content check with $wwwmod");
     my $s = Strassen->new_from_data_string($content);
     isa_ok($s, "Strassen");
     cmp_ok($s->count, ">=", 50, "reasonable number of data lines");
