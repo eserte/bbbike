@@ -76,7 +76,7 @@ Flughafen Tegel	1 2809,16143 2757,16194 2696,16271 2720,16353 2800,16368 2839,16
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2788,14364 2905,14754
 Kurt-Schumacher-Damm (Süd)	1 2956,14752 2846,14373 2857,14222
-Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
+Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3591,16260
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1337,14538 -1392,14527 -1484,14513 -1411,14585 -1350,14646 -1119,14659 -941,14637
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
@@ -3549,6 +3549,7 @@ Windenweg -> Stubenrauchstr.: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::i
 Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16342,2338
 Glockenblumenweg: Einfahrt verboten	1s:inwork 16461,2569 16260,2717
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
+neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 16775,6813 16747,6813
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
 Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253
 Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13736,14192 13639,14133 13715,14018
@@ -3570,7 +3571,6 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 Am Wiesenrain: Einbahnstraßenregelung	1s:inwork 23931,5992 24122,6007
 Mittelheide - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::inwork 24089,6144 24060,6059 23951,6063
 Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::inwork 24120,6090 24060,6059
-Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 Zum Feldrain (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22927,-4974 22942,-4983 22922,-5098 22869,-5132 22860,-5130
 Milanstr. (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22854,-5002 22814,-5119

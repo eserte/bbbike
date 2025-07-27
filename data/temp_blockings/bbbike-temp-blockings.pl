@@ -1036,14 +1036,15 @@ EOF
 	2 2624,1704 2824,1273
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-06 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-09-08 23:59:59"),
+     { from  => $isodate2epoch->("2025-09-05 00:00:00"), # $isodate2epoch->("2024-09-06 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-09-07 23:59:59"), # $isodate2epoch->("2024-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2021-10-25T00:00:00"]],
-       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2024 bis 08.09.2024)',
+       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (06.09.2025 bis 07.09.2025)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.hier-in-rudow.de/meilenfeste.html
+#: by: https://ag-rudow.berlin/veranstaltung/rudower-septembermeile-2/
 #: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
 #: source_id: viz2021:13.49573,52.4177,06.09.2024,19:00 (bis 08.09.2024) (inaktiv)
 Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
@@ -24578,11 +24579,11 @@ EOF
 	q4::inwork; 5317,12242 5518,12159 5417,11949
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-13 00:00:00"),
-       until => $isodate2epoch->("2024-09-14 21:00:00"),
+     { from  => $isodate2epoch->("2025-09-19 00:00:00"), # $isodate2epoch->("2024-09-13 00:00:00"),
+       until => $isodate2epoch->("2025-09-20 21:00:00"), # $isodate2epoch->("2024-09-14 21:00:00"),
        periodic => 1,
        recurrences => [["yearly", days => 31, months => 8, start => "2021-10-25T00:00:00"]], # 2021 scheint nichts stattzufinden
-       text  => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2029, voraussichtlich 12 bis 21 Uhr',
+       text  => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 20. September 2025, voraussichtlich 12 bis 21 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.turmstrasse.de/aktuelles
@@ -29465,7 +29466,8 @@ EOF
      { from  => undef, # 
        until => undef, # 1663265122, # undef, # 1573754401, # undef, # XXX
 #      text  => 'Treptower Park, Weg zwischen Karpfenteich und Sowjetisches Ehrenmal: Bauarbeiten, Weg gesperrt',
-       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
+#      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
+       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: alte Bauarbeiten von 2018 - 2022
@@ -29484,11 +29486,12 @@ EOF
 #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/weitere-arbeiten-im-treptower-park_a337841
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1243634.php (fertig)
+#: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/ueber-den-bezirk/treptower-park/artikel.1181979.php
 # REMOVED ---	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-07-06 vvv
+#: last_checked: 2025-07-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -29497,6 +29500,11 @@ Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
 Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,9542 14384,9565 14478,9545
 #: XXX hier wird vermutlich eine wassergebundene Decke entstehen
 Treptower Park - Am Treptower Park	2::inwork 14316,9542 14242,9448
+#: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger
+#: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
+#: last_checked: 2025-07-27
+#: check_frequency: 7d
+Puschkinallee - Am Treptower Park	2::inwork 14318,9688 14316,9542 14347,9452 14398,9373
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -32027,7 +32035,7 @@ EOF
 #: osm_watch: note 4813149 1
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 	2::inwork 16539,10097 16353,10207 16148,10329 15758,10578
@@ -37926,7 +37934,7 @@ EOF
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id[inactive]: bvg2021:396#BVG307357_0
 #: source_id[inactive]: bvg2021:396#BVG323890_0
-#: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024)
+#: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024) (bis auf weiteres)
 #: osm_watch[closed]: note 4052359 1
 #: osm_watch: way id="1117348911" version="16"
 #: also_indoor: traffic (G,ex-B[zu viel])
@@ -37936,7 +37944,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 #: check_frequency: 30d
 #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40613,7 +40621,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (H,G,T,W)
-#: last_checked: 2025-07-21 (mapillary)
+#: last_checked: 2025-07-27
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -41368,7 +41376,7 @@ EOF
        until => $isodate2epoch->("2024-08-31 22:00:00"), # 1693080000, # 2023-08-26 22:00
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 8]],
-       recurrence_prewarn_days => 21,
+       recurrence_prewarn_days => 14,
        text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 31. August 2024 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
@@ -43450,7 +43458,7 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-07-13 (mapillary)
+#: last_checked: 2025-07-27 (osm)
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -43962,16 +43970,18 @@ EOF
 	q4::temp::play 9570,10566 9556,10666
 EOF
      },
-     { from  => 1731474000, # 2024-11-13 06:00, # 1713736800, # 2024-04-22 00:00
-       until => 1731690000, # 2024-11-15 18:00, # $isodate2epoch->("2024-04-25 20:00:00"), # 1714082400, # 2024-04-26 00:00
-#       text  => 'Markgrafendamm: Sperrung der Fahrbahn vom 23.04.2024 05:00 Uhr bis 25.04.2024 20:00 Uhr',
-       text  => 'Markgrafendamm: Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 14.11.2024 06:00 bis 15.11.2024 18:00',
+     { from  => $isodate2epoch->("2025-07-27 00:00:00"), # 1731474000, # 2024-11-13 06:00, # 1713736800, # 2024-04-22 00:00
+       until => $isodate2epoch->("2025-08-01 20:00:00"), # 1731690000, # 2024-11-15 18:00, # $isodate2epoch->("2024-04-25 20:00:00"), # 1714082400, # 2024-04-26 00:00
+#      text  => 'Markgrafendamm: Sperrung der Fahrbahn vom 23.04.2024 05:00 Uhr bis 25.04.2024 20:00 Uhr',
+#      text  => 'Markgrafendamm: Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 14.11.2024 06:00 bis 15.11.2024 18:00',
+       text  => 'Markgrafendamm: Sperrung der Fahrbahn, vom 28.07.2025 05:00 bis 01.08.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.465597,52.498805,23.04.2024,05:00 (nur Kfz-Verkehr, bis 25.04.2024) (inaktiv)
 # REMOVED (alter Eintrag) --- #: note: Umleitungsstrecke für Radfahrer via Corinthstr., Bödikerstr., Persiusstr. existiert
 #: source_id: viz2021:13.464968,52.497948,14.11.2024,06:00 (bis 15.11.2024) (inaktiv)
 #: note: für Nov 2024 bleibt unklar, ob Radfahrer betroffen waren
+#: note: für Jul/Aug 2025 wurde für Radfahrer eine Umleitungsstrecke via Persiusstr. - Bödikerstr. - Corinthstr. ausgeschildert, für den MIV weitläufig über Modersohnstr.
 	q4::inwork 14641,10552 14608,10409
 EOF
      },
@@ -46942,9 +46952,9 @@ EOF
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
-Markgrafendamm südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
+Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
-Markgrafendamm nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
+Markgrafenstr. nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
 EOF
      },
      { from  => 1738476000, # 2025-02-02 07:00
@@ -47227,7 +47237,8 @@ EOF
 #      text  => 'Hönower Weg: Abschnitt der Fahrbahn gesperrt, voraussichtlich bis 19.03.2025',
 #      text  => 'Friedenshorster Str.: Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Ontarioseestr.: Straße gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang August 2025',
+#      text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang August 2025',
+       text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang September 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: also_indoor: traffic (ex-H,G[falsch],re-B,re-T)
@@ -47237,11 +47248,12 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,H)
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 #: check_frequency: 10d
-#: next_check: 2025-08-01 (Halteverbotsschilder)
+#: next_check: 2025-09-05 (Halteverbotsschilder)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
 	2::inwork 17587,9655 17668,9632 17777,9649
+# REMOVED (nach hinten gewandert) ---	2::inwork 17777,9649 17920,9698
 EOF
      },
      { from  => undef,
@@ -47570,6 +47582,8 @@ EOF
 # zweite Baumaßnahme (Juli 2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581872.php (Sanierung, 1. BA 28.07.2025 - 24.08.2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/fahrbahnsanierung_klingsorstrasse.pdf
+#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/uber-nebenstrassen-zur-rettungsstelle-des-benjamin-franklin-klingsorstrasse-wird-saniert--und-voll-gesperrt-14084096.html (2. BA bis 19. September 2025)
+#: note: laut rbb nur für den Kfz-Verkehr gesperrt
 #: priority: #A
 #: next_check: 2025-08-23 (danach 2. BA eintragen sowie qualitaet_s-Eintrag ändern)
 Klingsorstr.	q4::inwork 5271,4547 5214,4445 5206,4432 5150,4345 5120,4318 5090,4291 5063,4266 4932,4152
@@ -48713,6 +48727,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/nach-heftigem-sturm-ziros-arbeiten-im-wald-im-berliner-norden-gehen-nur-langsam-voran-14068208.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/sturmschaden-im-berliner-norden-nicht-beseitigt-arger-um-gesperrte-parks-spielplatze-und-sportanlagen-14070377.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
+#: by: https://www.tagesspiegel.de/berlin/schadensbilanz-nach-unwettern-in-berlin-bezirke-zahlen-millionensummen-fur-sturmschaden-14093090.html
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-26 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -48850,21 +48865,21 @@ EOF
        text  => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Juli 2025',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,ex-H,T)
+#: also_indoor: traffic (G,re-H,T)
 #: last_checked: 2025-07-18
 #: next_check: 2025-07-24 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
 EOF
      },
      { from  => 1751183917, # 2025-06-29 09:58
-       until => undef, # 1753048800, # 2025-07-21 00:00
+       until => 1753622757, # undef, # 1753048800, # 2025-07-21 00:00
 #      text  => 'An den Eiswerken: Bau einer Ampel, Fahrbahn gesperrt, Engstellen, geplant bis 20.07.2025',
        text  => 'Haupstr./An den Eiswerken: Überfahrt gesperrt, mindestens bis 20.07.2025, vermutlich wird verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (bis 20.07.2025) (inaktiv)
-#: last_checked: 2025-07-20
+# REMOVED (nicht mehr) --- #: last_checked: 2025-07-20
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung)
 # REMOVED ---	q3::inwork 15004,10791 14994,10732
 ## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 15081,10775 15004,10791 14927,10807\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
@@ -49020,7 +49035,7 @@ EOF
        text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-10-02 (Halteverbotsschilder)
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
@@ -49114,7 +49129,7 @@ EOF
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 # REMOVED --- #: check_frequency: 10d
 #: next_check: 2025-08-15 (rbb-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755

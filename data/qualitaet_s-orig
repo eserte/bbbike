@@ -302,7 +302,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -4766,11 +4766,11 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 (Eichbuschallee - Plänterwald): Waldweg/Schotter	Q2+ 16144,7882 16534,8182
 #: next_check_id: LAKEGRUND-2024
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1496551.php (Bauarbeiten ab 28.10.2024, Gesamtbaumaßnahme bis Ende 2026)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
 #: by: https://www.berliner-woche.de/baumschulenweg/c-umwelt/arbeiten-zur-aufwertung-der-gruenanlage-lakegrund-sind-gestartet_a428593
 #: by: https://entwicklungsstadt.de/lakegrund-in-berlin-treptow-gruenanlage-wird-klimaresilient-umgestaltet/ (Abschluss 2025)
+#: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
 #: XXX "Teilentsiegelung" geplant
-#: last_checked: 2025-04-26
+#: last_checked: 2025-07-27
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (entwicklungsstadt)
 Lakegrund: Beton	Q0- 16406,7430 16368,7425 16195,7398
@@ -11441,8 +11441,12 @@ Am Rodelberg: Asphalt	Q0 7082,22414 7287,22403 7292,22505
 (Rondell vor dem Sowjetischen Ehrenmal): Kopfsteinpflaster	Q2 8338,19262 8351,19274 8357,19284 8348,19304 8333,19305 8319,19299 8314,19288 8320,19270 8338,19262
 Wilhelm-Kuhr-Str.: Asphalt	Q0 9236,17907 9193,17763 9160,17656
 Hönower Weg: Asphalt	Q0 17383,9719 17471,9688
-#: historical_note: bis Anfang 2025: Beton mit einigen Hebungen, Q0-; mittlerweile ist noch ein unebener Asphaltstreifen durch Leitungsarbeiten entstanden, deshalb Degradierung
-Hönower Weg: Beton mit einigen Hebungen	Q1+ 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770
+#: historical_note: bis Anfang 2025: Beton mit einigen Hebungen, Q0-; mittlerweile ist noch ein unebener Asphaltstreifen durch Leitungsarbeiten entstanden, deshalb Degradierung vvv
+Hönower Weg: Beton mit einigen Hebungen	Q1+; 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770
+Hönower Weg: Beton mit einigen Hebungen	Q1+; 18066,9770 17920,9698 17777,9649
+#: historical_note: Juli 2025: Beton wieder neu gemacht, davor zeitweise Beton mit einigen Hebungen, Q1+;
+Hönower Weg: Beton	Q0-; 17777,9649 17668,9632 17587,9655 17471,9688
+#: historical_note ^^^
 # REMOVED --- #: next_check_id: HOENOWERWEG-2023 --- #: XXX werden diese Schäden demnächst behoben? --- #: last_checked: 2023-08-28
 #: historical_note: bis September 2023: Asphalt mit einigen Schäden, Q1+
 #: note: Asphalt wurde nur geflickt
@@ -13858,7 +13862,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-07-20 vvv
+#: last_checked: 2025-07-27 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^
@@ -14089,7 +14093,7 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018

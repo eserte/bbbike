@@ -155,7 +155,7 @@ Flughafen Tegel	1 2809,16143 2757,16194 2696,16271 2720,16353 2800,16368 2839,16
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2788,14364 2905,14754
 Kurt-Schumacher-Damm (Süd)	1 2956,14752 2846,14373 2857,14222
-Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
+Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3591,16260
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1337,14538 -1392,14527 -1484,14513 -1411,14585 -1350,14646 -1119,14659 -941,14637
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
@@ -183,7 +183,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-07-16 vvv
+#: last_checked: 2025-07-27 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4026,10 +4026,15 @@ Glockenblumenweg: Einfahrt verboten	1s:q2:inwork 16461,2569 16260,2717
 #: last_checked ^^^
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1576769.php (Arbeiten ab 7.7.2025, bislang mit Bauzäunen gesichert)
-#: priority: #C
-#: last_checked: 2025-07-03 (BA-Pressemitteilung)
-#: check_frequency: 180d
+#: priority: #C vvv
+#: last_checked: 2025-07-27 vvv
+#: check_frequency: 180d vvv
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
+#: XXX könnte mit den Bauarbeiten am neuen BVG-Betriebshof zu tun haben
+neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 16775,6813 16747,6813
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
 # 
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026) (inaktiv)
@@ -4182,12 +4187,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder offen?
-#: last_checked: 2025-07-19 (Baugrube zu, bereits fertig asphaltiert --- wann wird eröffnet?)
-#: check_frequency: 7d
-# REMOVED --- #: check_frequency: 45d
-Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
-# 
+# REMOVED (offen) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder offen? --- #: last_checked: 2025-07-27 --- #: check_frequency: 7d --- Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
 # REMOVED (laut osm wieder offen) --- #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898 --- #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant) --- #: osm_watch[closed]: note 4551219 3 --- #: osm_watch: way id="1009956629" version="14" --- #: last_checked: 2025-01-15 --- #: next_check: 2024-10-31 --- Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
 # REMOVED (weiterhin Bauarbeiten, aber diese Zufahrt ist wieder offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2025-04-01 --- Otto-Weidt-Platz: Zuwegung zum Golda-Meir-Steg wegen Bauarbeiten gesperrt	2::inwork 7775,14062 7818,14117 7861,14133
 # 
@@ -4342,8 +4342,8 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 # 
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
-#: osm_watch: way id="1263834183" version="2"
-#: last_checked: 2025-07-13 (mapillary)
+#: osm_watch: way id="1263834183" version="3"
+#: last_checked: 2025-07-27 (osm)
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 #: valid: -20251030
@@ -4518,7 +4518,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-07-20
+#: last_checked: 2025-07-27
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4564,7 +4564,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4827,12 +4827,12 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="11"
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
 #: osm_watch: note 4522174 2
-#: last_checked: 2025-07-19
+#: last_checked: 2025-07-27
 #: check_frequency: 60d
 #: next_check: 2025-09-20 (entwicklungsstadt)
 Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700 17851,8662
@@ -5031,7 +5031,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
 #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können
-#: last_checked: 2025-07-20
+#: last_checked: 2025-07-27
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt)
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -5071,7 +5071,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: osm_watch: way id="54630384" version="13"
 #: osm_watch: way id="1339306638" version="2"
 #: XXX beide Wege gesperrt, nördlicher komplett und südlicher teilweise
-#: last_checked: 2025-04-26
+#: last_checked: 2025-07-27
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (entwicklungsstadt)
 Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
