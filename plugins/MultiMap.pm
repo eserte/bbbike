@@ -7,8 +7,7 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # Description (en): Link to OpenStreetMap, WikiMapia, Bing and other maps
@@ -20,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.48;
+$VERSION = 2.49;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1978,7 +1977,7 @@ sub showmap_url_gdi_berlin {
 	oepnv              => 'hintergrund_k5_grau,oepnv_ungestoert:d_tramlinien,oepnv_ungestoert:c_buslinien,oepnv_ungestoert:b_tramstopp,oepnv_ungestoert:a_busstopp',
 	fnp2015            => 'hintergrund_k5_grau,fnp_2015:0,fnp_2015:1',
 	fnpaktuell         => 'hintergrund_k5_grau,fnp_ak:fnp_ak',
-	bplaene            => 'hintergrund_k5_grau,bplan:2,bplan:3,bplan:6,bplan:7',
+	bplaene            => 'hintergrund_k5_grau,bplan:c_bp_ak,bplan:b_bp_fs,bplan:a_bp_iv',
 	fluralkis          => 'hintergrund_k5_farbe,alkis_flurstuecke:flurstuecke',
 	flurinspire        => 'hintergrund_k5_farbe,cp_alkis:CP.CadastralZoning,cp_alkis:CP.CadastralParcel',
 	gruenanlagen       => 'hintergrund_k5_grau,gruenanlagen:spielplaetze,gruenanlagen:gruenanlagen',
