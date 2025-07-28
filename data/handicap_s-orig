@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-07-20
+#: last_checked: 2025-07-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -310,6 +310,13 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 ### Altglienicke ###
 # 
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luytvlnxp22k (Baustelle geht bis bis Anfang September 2025)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidtu6b42iz4qag5uudnhhmbskliv54gctrdsjneoetidmre7aqdai@jpeg (Sackgasse Fußgänger frei, keine Verkehrsregelung für Radfahrer, recht kurzer Abschnitt (20m?))
+#: source_id: viz2021:13.53808,52.41511,28.07.2025,07:00 (bis 05.09.2025)
+#: next_check: 2025-09-05 (viz-bsky, VIZ-Verkehrsmeldung)
+#: valid: -20250905
+Ortolfstr.: kurzes Stück der Fahrbahn zwischen Peenestr. und Bernulfstr gesperrt	q3::inwork 19737,1204 19694,1074
+# 
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
 # 
 ### Wedding/Gesundbrunnen ###
@@ -560,10 +567,11 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5LtzlX5KtAu8WD6maa4oZ (geplanter Baubeginn für die Straßensanierung 2026 (!))
 #: by: https://entwicklungsstadt.de/charlottenstrasse-in-berlin-mitte-20-jahre-bauzaun-mitten-im-zentrum/
+#: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
 #: last_checked: 2025-07-24 vvv
-#: check_frequency: 30d vvv
+#: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
@@ -818,10 +826,10 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="33"
-#: osm_watch: way id="707100249" version="24"
+#: osm_watch: way id="707100249" version="25"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-27 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -2295,7 +2303,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: note 4506575 2
 #: osm_watch: way id="529086013" version="3"
 #: osm_watch: way id="1377234658" version="1"
-#: last_checked: 2025-07-11 (mapillary)
+#: last_checked: 2025-07-27 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-12-15 (Halteverbotsschilder)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329

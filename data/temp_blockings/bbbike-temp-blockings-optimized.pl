@@ -2932,7 +2932,24 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'until' => 1759082400
        },
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation) --- #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein --- #: source_id: 2147339529 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-03-01
+#: source_id: IM_019747 (inaktiv)
+#: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72 (inaktiv)
+#: source_id: viz2021:13.32822,52.50806, (bis 14.12.2027)
+#: source_id: adac:1980813020 (Drehung der Einbahnstraßenregelung, bis voraussichtlich 13.12.2027)
+#: XXX laut rbb nur Richtung Süden gesperrt (oder eine Ungenauigkeit wegen der Einbahnstraßenregelung für Kfz?)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luzcvt55nc2k (Einbahnstraßenregelung gedreht?)
+# REMOVED --- #: also_indoor: traffic (H) --- # REMOVED --- #: next_check: 2019-06-13
+#	q2::inwork 5258,11285 5254,11237 5240,11047 5236,10994
+	q4::inwork 5258,11285 5254,11237 5240,11047 5236,10994
+',
+         'from' => 1753723455,
+         'id' => 2422,
+         'text' => 'Fasanenstr.: zwischen Hardenbergstr. und Kantstr. Bauarbeiten, evtl. sind auch Radfahrer betroffen, bis 13.12.2027',
+         'type' => 'handicap',
+         'until' => 1828738800
+       },
        undef,
        undef,
        undef,
@@ -4011,7 +4028,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-07-27 vvv
+#: last_checked: 2025-07-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4022,7 +4039,7 @@ Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,954
 Treptower Park - Am Treptower Park	2::inwork 14316,9542 14242,9448
 #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger
 #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-#: last_checked: 2025-07-27
+#: last_checked: 2025-07-28
 #: check_frequency: 7d
 Puschkinallee - Am Treptower Park	2::inwork 14318,9688 14316,9542 14347,9452 14398,9373
 #: check_frequency ^^^
@@ -6320,7 +6337,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-06-07 (mapillary)
+#: last_checked: 2025-07-27 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -7000,6 +7017,8 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
          'data' => '#: source_id: viz2021:13.465597,52.498805,23.04.2024,05:00 (nur Kfz-Verkehr, bis 25.04.2024) (inaktiv)
 # REMOVED (alter Eintrag) --- #: note: Umleitungsstrecke für Radfahrer via Corinthstr., Bödikerstr., Persiusstr. existiert
 #: source_id: viz2021:13.464968,52.497948,14.11.2024,06:00 (bis 15.11.2024) (inaktiv)
+#: source_id: viz2021:13.46469,52.49743,28.07.2025,05:00 (bis 01.08.2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luys2l4pgs2r
 #: note: für Nov 2024 bleibt unklar, ob Radfahrer betroffen waren
 #: note: für Jul/Aug 2025 wurde für Radfahrer eine Umleitungsstrecke via Persiusstr. - Bödikerstr. - Corinthstr. ausgeschildert, für den MIV weitläufig über Modersohnstr.
 	q4::inwork 14641,10552 14608,10409
@@ -7469,7 +7488,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-07-16 (tempelhoferfeld website) vvv
+#: last_checked: 2025-07-28 (tempelhoferfeld website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7858,17 +7877,17 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        {
          'data' => '#: also_indoor: traffic (G,T,B,A)
-#: last_checked: 2025-05-14
-#: check_frequency: 120d
+#: last_checked: 2025-07-28 (traffic)
+#: check_frequency: 7d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545
 # REMOVED ---	q4::inwork; 8380,8545 8334,8655 8306,8722
 ',
          'from' => 1736343075,
          'id' => 4236,
-         'text' => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und Bayernring, Fahrbahn gesperrt, vermutlich bis 31.07.2025',
+         'text' => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und Bayernring, Fahrbahn gesperrt, vermutlich bis 31.07.2025, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1753999200
+         'until' => undef
        },
        undef,
        undef,
@@ -8316,12 +8335,15 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
 #: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
 #: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025) (inaktiv)
+#: source_id: viz2021:13.32634,52.44753,28.07.2025,07:00 (bis 25.08.2025)
 # REMOVED --- Klingsorstr.	q4::inwork 5206,4432 5150,4345
 # REMOVED --- Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
 # zweite Baumaßnahme (Juli 2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581872.php (Sanierung, 1. BA 28.07.2025 - 24.08.2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/fahrbahnsanierung_klingsorstrasse.pdf
 #: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/uber-nebenstrassen-zur-rettungsstelle-des-benjamin-franklin-klingsorstrasse-wird-saniert--und-voll-gesperrt-14084096.html (2. BA bis 19. September 2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luyurbwujk2r
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiam7srkrx5mkrztfp4zwiajqkeczhsw4pleyguhs4i7ziypoqtxou@jpeg
 #: note: laut rbb nur für den Kfz-Verkehr gesperrt
 #: priority: #A
 #: next_check: 2025-08-23 (danach 2. BA eintragen sowie qualitaet_s-Eintrag ändern)
@@ -8629,18 +8651,20 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
        undef,
        {
          'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025)
+#: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025) (inaktiv)
+#: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
+#: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-07-25
-#: check_frequency: 30d
-#: next_check: 2025-07-28 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-07-28
+#: check_frequency: 10d
+#: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
 ',
          'from' => 1746939600,
          'id' => 4338,
-         'text' => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, vom 12.05.2025 07:00 bis 28.07.2025 17:00',
+         'text' => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, voraussichtlich bis 14.11.2025',
          'type' => 'handicap',
-         'until' => 1753714800
+         'until' => undef
        },
        {
          'data' => '#: source_id: viz2021:13.32289,52.499283,15.05.2025,07:00 (bis 24.06.2025) (inaktiv)
@@ -9205,14 +9229,14 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: last_checked: 2025-07-18 vvv
 #: next_check: 2025-09-20 vvv
 Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
-#: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
-Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
+# REMOVED (nicht mehr?) --- #: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
+# REMOVED --- Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
 #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => 1752606169,
          'id' => 4390,
-         'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz sowie vor Hermannstr., voraussichtlich bis September 2025',
+         'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis September 2025',
          'type' => 'handicap',
          'until' => 1758319200
        },
@@ -9287,6 +9311,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
        },
        {
          'data' => '#: source_id: LS/221-E/25/086 (bis 01.08.2025)
+#: source_id: LS/221-E/25/105-1 (Gegenverkehrsregelung, 11.08.2025 bis 15.08.2025)
 	2::inwork 23759,49971 24081,50440 24364,50554 24522,50570 25904,50276 26244,50372
 ',
          'from' => 1753596000,
@@ -9366,11 +9391,12 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
        },
        {
          'data' => '#: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
+#: source_id: 256900960 (25.07.2025 bis 22.08.2025)
 	2::inwork -6696,-3174 -6553,-3235 -6277,-3348 -5788,-3583 -5662,-3583 -5463,-3467
 ',
-         'from' => 1753567200,
+         'from' => 1753394400,
          'id' => 4401,
-         'text' => 'Stahnsdorf - Potsdam: Sanierung, Fahrbahn und Radweg gesperrt, 28. Juli 2025 bis 22. August 2025',
+         'text' => 'Stahnsdorf - Potsdam: Sanierung, Fahrbahn und Radweg gesperrt, bis 22. August 2025',
          'type' => 'gesperrt',
          'until' => 1755899999
        },
