@@ -355,8 +355,10 @@ Verbundsteinpflasterradweg	RW2; 346,-454 240,-519 -395,-920
 	RW3; -395,-920 240,-519 346,-454
 Verbundsteinpflasterradweg	RW2;RW2 -395,-920 -650,-1077
 Verbundsteinpflasterradweg	RW1;RW1 -650,-1077 -861,-1207 -882,-1220
-	RW; -1395,-830 -1345,-1016 -1331,-1092 -1503,-1328 -1573,-1477 -1656,-1702 -1664,-1720
-Verbundsteinpflasterradweg	RW2; -1664,-1720 -1656,-1702 -1573,-1477 -1503,-1328 -1331,-1092 -1345,-1016 -1395,-830
+Gehweg für Radfahrer frei	RW1; -1395,-830 -1345,-1016 -1331,-1092
+Gehweg für Radfahrer frei	RW1; -1331,-1092 -1503,-1328 -1573,-1477 -1656,-1702 -1664,-1720
+#: historical_note: früher RW2
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -1664,-1720 -1656,-1702 -1573,-1477 -1503,-1328 -1331,-1092 -1345,-1016 -1395,-830
 Radweg auf Gehweg	RW2;RW2 -14919,-1817 -14733,-1812
 Radweg auf Gehweg	RW2; -14612,-1809 -14733,-1812
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -850,-203 -781,-309 -645,-524 -601,-589 -549,-678
@@ -526,9 +528,10 @@ Radweg auf Gehweg	RW2;RW 53289,-90355 53147,-90403 53144,-90435
 Radweg auf Gehweg	RW;RW 53510,-90531 53144,-90435
 Radweg auf Gehweg	RW2;RW2 53144,-90435 53039,-90432 52714,-90551
 Verbundsteinpflaster	RW8;RW2 52714,-90551 52580,-90602 52531,-90608 51535,-90752 51083,-90805 50891,-90838 50434,-90824 50146,-90787
-Verbundsteinpflaster	RW2;RW2 -4,1133 -26,1080 -106,985 -189,890 -272,795 -351,708 -451,581 -625,189 -705,5 -746,-74 -753,-86 -850,-203
-Verbundsteinpflaster	RW2;RW2 -850,-203 -958,-309 -1027,-374
-Verbundsteinpflaster	RW;RW2 -1027,-374 -1224,-570 -1358,-729 -1395,-830
+#: historical_note: früher RW2
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -4,1133 -26,1080 -106,985 -189,890 -272,795 -351,708 -451,581 -625,189 -705,5 -746,-74 -753,-86 -850,-203 -958,-309 -1027,-374 -1224,-570 -1358,-729 -1395,-830
+#: historical_note: früher RW2
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -1395,-830 -1358,-729 -1224,-570 -1027,-374 -958,-309 -850,-203 -753,-86 -746,-74 -705,5 -625,189 -451,581 -351,708 -272,795 -189,890 -106,985 -26,1080 -4,1133
 zusätzlich zu den Suggestivstreifen noch ein Radweg auf dem Gehweg	RW4; -351,708 -426,773 -492,795 -531,807 -641,806 -818,789 -1196,724 -1427,684 -1646,659 -1709,653
 Radweg auf Gehweg	RW; -1709,653 -1646,659 -1427,684 -1196,724 -818,789 -641,806 -531,807 -492,795 -426,773 -351,708
 Gehweg für Radfahrer frei	RW1; -2968,-712 -3032,-646 -3082,-599 -3226,-453 -3412,-291 -3589,-150 -3663,-91 -3856,60

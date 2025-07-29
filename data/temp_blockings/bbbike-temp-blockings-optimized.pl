@@ -4115,7 +4115,7 @@ Puschkinallee - Am Treptower Park	2::inwork 14318,9688 14316,9542 14347,9452 143
 #: also_indoor: traffic (T,G,H,W)
 #: note: H: falsche Einbahnstraßenrichtung; W: falsche Komplettsperrung
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2025-05-31 (traffic)
+#: last_checked: 2025-07-29 (traffic)
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 60d (traffic)
 #: next_check: 2027-03-31
@@ -7163,7 +7163,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-24 vvv
+#: last_checked: 2025-07-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8115,8 +8115,7 @@ Scottweg	q3::inwork -1317,11300 -966,11382
        {
          'data' => '#: next_check_id: PLATANEN-2025
 #: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025) (inaktiv)
-#: source_id: viz2021:13.39809,52.58487, (bis 31.07.2025)
-#: note: bei rbb wurde verlängert (bis 31.07.2025)
+#: source_id: viz2021:13.39809,52.58487, (bis 31.07.2025) (bis 30.10.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1891725331691864443
 #: by: https://pbs.twimg.com/media/Gj_K-ydXgAAYbfS?format=jpg&name=large (etwa 170m der Fahrbahn und des nördlichen Bürgersteigs ab Waldstr. sind betroffen)
 	q4::inwork 9824,19910 9498,19817
@@ -9432,6 +9431,16 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'text' => 'Am Großen Wannsee: Leitungsarbeiten zwischen Koblanckstr. und Zum Heckeshorn, Sperrung, vom 24.07.2025 bis Anfang November 2025',
          'type' => 'handicap',
          'until' => 1762455600
+       },
+       {
+         'data' => '#: source_id: LS/223-P/25/092 (bis 05.09.2025)
+	2::inwork -43355,-29316 -42946,-28772
+',
+         'from' => 1754200800,
+         'id' => 4405,
+         'text' => 'Bad Belzig, B246: Sperrung zwischen B102 und Am Kurpark, vom 04.08.2025 bis 05.09.2025',
+         'type' => 'gesperrt',
+         'until' => 1757084400
        }
      
 );
