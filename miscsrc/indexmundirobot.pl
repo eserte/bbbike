@@ -7,13 +7,17 @@ use strict;
 use HTML::LinkExtor;
 use LWP::Simple;
 use CGI;
+use Getopt::Long;
 
 use FindBin;
 use lib "$FindBin::RealBin/..";
 use Karte;
 Karte::preload(":all");
 
-my $url = "http://www.indexmundi.com/zl/gm/"; # german lakes
+GetOptions("debug!" => \my $debug)
+    or die "usage?";
+
+my $url = "https://www.indexmundi.com/zl/gm/"; # german lakes
 
 my $index_page = get($url);
 my $p = HTML::LinkExtor->new(undef, $url);
@@ -30,6 +34,7 @@ for my $def ($p->links) {
 
 my @geoobjs;
 for my $l (@links) {
+    warn "DEBUG: fetch $l...\n" if $debug;
     my $page = get($l);
     my $p = HTML::LinkExtor->new(undef, $l);
     $p->parse($page);
