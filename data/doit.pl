@@ -415,7 +415,9 @@ sub action_fragezeichen_nextcheck_org {
 sub _build_fragezeichen_nextcheck_variant {
     my($d, $dest) = @_;
     my $variant = ($dest =~ m{fragezeichen-nextcheck.org$} ? 'exact-dist' :
-		   $dest =~ m{(home-home|without-osm-watch)} ? $1 : die "Cannot recognize variant from destination file '$dest'");
+		   $dest =~ m{(home-home|without-osm-watch)} ? $1 :
+		   $dest =~ m{(sort-by-lastchecked)} ? $1
+		   : die "Cannot recognize variant from destination file '$dest'");
     my $self_target = ($variant eq 'exact-dist' ? 'fragezeichen-nextcheck.org-exact-dist' :
 		       basename($dest));
     my $expired_statistics_logfile_base = ($variant eq 'exact-dist' ? 'expired-fragezeichen.log' : "expired-fragezeichen-${variant}.log");
@@ -441,6 +443,7 @@ sub _build_fragezeichen_nextcheck_variant {
 		 "--dist-dbfile=$persistenttmpdir/dist.db",
 		 ($variant eq 'home-home' ? ($centerc ? ("-centerc", $centerc, "-center2c", $centerc) : ()) : ()),
 		 ($variant eq 'without-osm-watch' ? ('--filter', 'without-osm-watch') : ()),
+		 ($variant eq 'sort-by-lastchecked' ? ('--with-sort-by-lastchecked') : ()),
 		 "--compile-command", "cd @{[ cwd ]} && $^X " . __FILE__ . " " . $self_target,
 		 @srcs], ">", "$dest~");
 	    _empty_file_error "$dest~";
@@ -464,6 +467,12 @@ sub action_fragezeichen_nextcheck_home_home_org {
 sub action_fragezeichen_nextcheck_without_osm_watch_org {
     my $d = shift;
     my $dest = "$persistenttmpdir/fragezeichen-nextcheck-without-osm-watch.org";
+    _build_fragezeichen_nextcheck_variant($d, $dest);
+}
+
+sub action_fragezeichen_nextcheck_sort_by_lastchecked {
+    my $d = shift;
+    my $dest = "/tmp/fragezeichen-nextcheck-sort-by-lastchecked.org";
     _build_fragezeichen_nextcheck_variant($d, $dest);
 }
 
