@@ -3275,6 +3275,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: http://www.winzerfest-köpenick.de/
 #: by: https://www.laubinger.de/event/koepenickerwinzersommer/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1585924.php
 # REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
 # REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22111,4562 22093,4499
 # REMOVED (hier wohl nicht) ---	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
@@ -3970,11 +3971,11 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: last_checked: 2025-07-12
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="40"
+#: osm_watch: way id="31525573" version="41"
 #: osm_watch: way id="580507889" version="35"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-29 (osm)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -4028,7 +4029,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-07-28 vvv
+#: last_checked: 2025-07-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4039,7 +4040,7 @@ Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,954
 Treptower Park - Am Treptower Park	2::inwork 14316,9542 14242,9448
 #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger
 #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-#: last_checked: 2025-07-28
+#: last_checked: 2025-07-30
 #: check_frequency: 7d
 Puschkinallee - Am Treptower Park	2::inwork 14318,9688 14316,9542 14347,9452 14398,9373
 #: check_frequency ^^^
@@ -5143,17 +5144,21 @@ Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 #: source_id: viz2021:13.452222,52.471093,13.05.2024,07:00 (bis 11.12.2025) (inaktiv)
 #: source_id: viz2021:13.45047,52.47074,13.05.2024,07:00 (bis 11.12.2025)
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: osm_watch: way id="1047544509" version="3"
-#: osm_watch: way id="1047544510" version="2"
+# REMOVED --- #: osm_watch: way id="1047544509" version="3"
+#: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 14
 #: last_checked: 2025-07-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
+#: osm_watch: way id="31824547" version="28"
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
+#: osm_watch: way id="824500931" version="10"
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
+#: osm_watch: way id="970153788" version="10"
+#: osm_watch: way id="971064429" version="10"
 Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
 # REMOVED (frei) ---	2::inwork 13693,7228 13575,7200
 # REMOVED (mittlerweile frei) --- #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs ---	q4::inwork; 13575,7200 13627,7047
@@ -5681,7 +5686,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024) (bis auf weiteres)
 #: osm_watch[closed]: note 4052359 1
 #: osm_watch: way id="1117348911" version="16"
-#: also_indoor: traffic (G,ex-B[zu viel])
+#: also_indoor: traffic (G[zu viel],re-B[zu viel],T[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
@@ -6066,7 +6071,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 #: osm_watch: way id="37861386" version="27"
 #: osm_watch: way id="1231148375" version="5"
 #: priority: #B
-#: last_checked: 2025-06-18
+#: last_checked: 2025-07-22 (okas)
 #: check_frequency: 120d
 #: next_check: 2025-08-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -6606,7 +6611,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: osm_watch: way id="23121446" version="36"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-07-26 vvv
+#: last_checked: 2025-07-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -7435,7 +7440,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-07-08 (osm)
+#: last_checked: 2025-07-30
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -8463,6 +8468,8 @@ Gellertstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20148,3490 20237
 # REMOVED --- #: note: Beginn ab 26.05.2025 --- Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
+#: note: ab 28.07.2025, genauer Abschnitt unklar
+Wassermannstr.	q4::inwork 20637,3919 20776,3753
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
 # REMOVED --- #: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3 --- Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
 # REMOVED (abgeschlossen) --- #: note: voraussichtlich ab 09.04.2025 --- Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
@@ -8484,7 +8491,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 ',
          'from' => undef,
          'id' => 4302,
-         'text' => 'Radickestr., Zinsgutstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+         'text' => 'Radickestr., Wassermannstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9086,17 +9093,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
          'type' => 'handicap',
          'until' => 1761930000
        },
-       {
-         'data' => '#: source_id: viz2021:13.466152,52.551312,05.05.2025,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: viz2021:13.46626,52.55123, (bis 29.08.2025)
-	q4::inwork 14522,16260 14628,16249
-',
-         'from' => 1746334800,
-         'id' => 4379,
-         'text' => 'Gartenstr.: Anbindung Indira-Gandhi-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 29.08.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1756479600
-       },
+       undef,
        {
          'data' => '#: source_id: adac:871993976 (bis voraussichtlich 08.08.2025)
 #: source_id: viz2021:13.59316,52.45162,16.07.2025,16:00 (bis 08.08.2025)
@@ -9400,8 +9397,9 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'until' => 1755899999
        },
        {
-         'data' => '#: source_id: LS/222-W/25/088 (bis 27.08.2025)
-	2::inwork 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
+#: source_id: LS/222-W/25/088 (bis 27.08.2025)
+	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 ',
          'from' => 1753596000,
          'id' => 4402,
@@ -9441,6 +9439,17 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'text' => 'Bad Belzig, B246: Sperrung zwischen B102 und Am Kurpark, vom 04.08.2025 bis 05.09.2025',
          'type' => 'gesperrt',
          'until' => 1757084400
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1585940.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/umleitungsplan.pdf
+	q4::inwork; 6360,4504 6283,4565 6203,4630
+',
+         'from' => 1755381600,
+         'id' => 4406,
+         'text' => 'Albrechtstr.: Fahrbahnsanierungsarbeiten, Einbahnstraßenregelung zwischen Presselstr. und Siemensstr., offen Richtung Südosten, vom 18.08.2025 bis 21.11.2025',
+         'type' => 'gesperrt',
+         'until' => 1763751600
        }
      
 );

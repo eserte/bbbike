@@ -24436,6 +24436,7 @@ EOF
 #: by: http://www.winzerfest-köpenick.de/
 #: by: https://www.laubinger.de/event/koepenickerwinzersommer/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1585924.php
 # REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
 # REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22111,4562 22093,4499
 # REMOVED (hier wohl nicht) ---	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
@@ -29143,11 +29144,11 @@ EOF
 #: last_checked: 2025-07-12
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="40"
+#: osm_watch: way id="31525573" version="41"
 #: osm_watch: way id="580507889" version="35"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-07-12
+#: last_checked: 2025-07-29 (osm)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -29496,7 +29497,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-07-28 vvv
+#: last_checked: 2025-07-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -29507,7 +29508,7 @@ Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,954
 Treptower Park - Am Treptower Park	2::inwork 14316,9542 14242,9448
 #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger
 #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-#: last_checked: 2025-07-28
+#: last_checked: 2025-07-30
 #: check_frequency: 7d
 Puschkinallee - Am Treptower Park	2::inwork 14318,9688 14316,9542 14347,9452 14398,9373
 #: check_frequency ^^^
@@ -36012,17 +36013,21 @@ EOF
 #: source_id: viz2021:13.452222,52.471093,13.05.2024,07:00 (bis 11.12.2025) (inaktiv)
 #: source_id: viz2021:13.45047,52.47074,13.05.2024,07:00 (bis 11.12.2025)
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: osm_watch: way id="1047544509" version="3"
-#: osm_watch: way id="1047544510" version="2"
+# REMOVED --- #: osm_watch: way id="1047544509" version="3"
+#: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 14
 #: last_checked: 2025-07-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
+#: osm_watch: way id="31824547" version="28"
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
+#: osm_watch: way id="824500931" version="10"
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
+#: osm_watch: way id="970153788" version="10"
+#: osm_watch: way id="971064429" version="10"
 Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
 # REMOVED (frei) ---	2::inwork 13693,7228 13575,7200
 # REMOVED (mittlerweile frei) --- #: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs ---	q4::inwork; 13575,7200 13627,7047
@@ -36434,7 +36439,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 #: confirmed_by: srt (am 2022-05-03 gesehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1445054.php (2024)
-#: note: 2025 waren Termine im Juni geplant, wurden aber Mitte Juni bereits gestrichen
+#: note: 2025 waren Termine im Juni geplant, wurden aber Mitte Juni bereits gestrichen; zwischen 1. und 22. Juli waren weitere Termine, die ich zu spät mitbekommen habe
 	q4::temp::play 14946,11697 14986,11760
 EOF
      },
@@ -37942,7 +37947,7 @@ EOF
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024) (bis auf weiteres)
 #: osm_watch[closed]: note 4052359 1
 #: osm_watch: way id="1117348911" version="16"
-#: also_indoor: traffic (G,ex-B[zu viel])
+#: also_indoor: traffic (G[zu viel],re-B[zu viel],T[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
@@ -39471,7 +39476,7 @@ EOF
 #: osm_watch: way id="37861386" version="27"
 #: osm_watch: way id="1231148375" version="5"
 #: priority: #B
-#: last_checked: 2025-06-18
+#: last_checked: 2025-07-22 (okas)
 #: check_frequency: 120d
 #: next_check: 2025-08-18 (nächste mögliche Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -42005,7 +42010,7 @@ EOF
 #: osm_watch: way id="23121446" version="36"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-07-26 vvv
+#: last_checked: 2025-07-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -42533,8 +42538,8 @@ EOF
 	        #["2024-11-02", "2024-11-03"],
 	        #["2025-04-05", "2025-04-06"],
 	        #["2025-05-03", "2025-05-04"],
-	        ["2025-06-07", "2025-06-09"],
-	        ["2025-07-05", "2025-07-06"],
+	        #["2025-06-07", "2025-06-09"],
+	        #["2025-07-05", "2025-07-06"],
 	        ["2025-08-02", "2025-08-03"],
 	        ["2025-09-13", "2025-09-14"],
 	        ["2025-10-03", "2025-10-05"],
@@ -45536,7 +45541,7 @@ EOF
 #: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-07-08 (osm)
+#: last_checked: 2025-07-30
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -47723,7 +47728,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Radickestr., Zinsgutstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+       text  => 'Radickestr., Wassermannstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
        type  => 'handicap',
        accept_multi_feature_distance => 2000,
        data  => <<'EOF',
@@ -47759,6 +47764,8 @@ Gellertstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20148,3490 20237
 # REMOVED --- #: note: Beginn ab 26.05.2025 --- Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
+#: note: ab 28.07.2025, genauer Abschnitt unklar
+Wassermannstr.	q4::inwork 20637,3919 20776,3753
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
 # REMOVED --- #: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3 --- Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
 # REMOVED (abgeschlossen) --- #: note: voraussichtlich ab 09.04.2025 --- Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
@@ -48649,7 +48656,7 @@ EOF
      },
      { from  => 1751493600, # 2025-07-03 00:00
        until => 1753480799, # 2025-07-25 23:59
-       text  => 'Wildensteiner Straße: Spielstraße zwischen Wandlitzstraße und Ehrlichstraße, freitags zwischen 14:00 und 18:00, vom 4. Juli 2025bis 25. Juli 2025',
+       text  => 'Wildensteiner Straße: Spielstraße zwischen Wandlitzstraße und Ehrlichstraße, freitags zwischen 14:00 und 18:00, vom 4. Juli 2025 bis 25. Juli 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1571253.php
@@ -48927,12 +48934,12 @@ EOF
 EOF
      },
      { from  => 1746334800, # 2025-05-04 07:00
-       until => 1756479600, # 2025-08-29 17:00
+       until => 1753911604, # 1756479600, # 2025-08-29 17:00
        text  => 'Gartenstr.: Anbindung Indira-Gandhi-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 29.08.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.466152,52.551312,05.05.2025,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: viz2021:13.46626,52.55123, (bis 29.08.2025)
+#: source_id: viz2021:13.466152,52.551312,05.05.2025,07:00 (bis 29.08.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.46626,52.55123, (bis 29.08.2025) (vorfristig inaktiv)
 	q4::inwork 14522,16260 14628,16249
 EOF
      },
@@ -49242,8 +49249,9 @@ EOF
        text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 27.08.2025',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
 #: source_id: LS/222-W/25/088 (bis 27.08.2025)
-	2::inwork 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
+	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 EOF
      },
      { from  => 1753221600, # 2025-07-23 00:00
@@ -49274,6 +49282,16 @@ EOF
        data  => <<'EOF',
 #: source_id: LS/223-P/25/092 (bis 05.09.2025)
 	2::inwork -43355,-29316 -42946,-28772
+EOF
+     },
+     { from  => $isodate2epoch->("2025-08-17 00:00:00"),
+       until => $isodate2epoch->("2025-11-21 20:00:00"),
+       text  => 'Albrechtstr.: Fahrbahnsanierungsarbeiten, Einbahnstraßenregelung zwischen Presselstr. und Siemensstr., offen Richtung Südosten, vom 18.08.2025 bis 21.11.2025',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1585940.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/umleitungsplan.pdf
+	q4::inwork; 6360,4504 6283,4565 6203,4630
 EOF
      },
     );

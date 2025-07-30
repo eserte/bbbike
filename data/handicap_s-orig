@@ -31,13 +31,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-07-27
+#: last_checked: 2025-07-30
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-07-13 vvv
+#: last_checked: 2025-07-30 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="6"
@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-07-27
+#: last_checked: 2025-07-30
 #: check_frequency: 45d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -765,7 +765,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: note 3949358 3
 #: osm_watch: way id="24695200" version="19"
-#: last_checked: 2025-05-20
+#: last_checked: 2025-07-22 (okas)
 #: check_frequency: 120d
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
@@ -1843,6 +1843,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: by: https://www.berlinerbaeder.de/baeder/detail/wellenbad-am-spreewaldplatz/ (Bauarbeiten ab Ende Juni 2023 für 3½ Jahre)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/wellenbad-am-spreewaldplatz-schliesst-ende-juni_a374657 (bis Januar 2027)
 #: by: https://entwicklungsstadt.de/goerlitzer-park-neues-konzept-fuer-schwimmbad-am-spreewaldplatz/
+#: by: https://entwicklungsstadt.de/wellenbad-am-spreewaldplatz-veraenderungen-beim-umfang-der-umbauarbeiten/
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
@@ -5372,6 +5373,14 @@ Gruberzeile - Weinmeisterhornweg: einige Fußgänger	q2 -5735,11793 -5584,11706 -5
 # 
 #: historical_note: früher Grünanlage, aber Radfahren erlaubt
 (Rudower Str. - Semmelweisstr.): Radfahren verboten	q4 18630,2117 18642,2154 18632,2240 18649,2298 18700,2282
+# 
+#: historical_note: wurde zwischen 2018 und 2019 renaturiert, vorher kein handicap_s-Eintrag
+(Späth'sche Baumschulen - Straße 17): schmaler Trampelpfad, kleiner "Hügel"	q3 14445,5851 14537,5852
+(Späth'sche Baumschulen - Straße 17): schmaler Fahrweg	q1 14537,5852 14669,5847
+# 
+#: XXX_prog: für Anhänger q1
+#: note: im südlichen Abschnitt sind zwei weitere umfahrbare Bodenschwellen, aber hier existiert zusätzlich noch ein Radweg zur Umfahrung
+Straße am Flugplatz: zwei Bodenschwellen, umfahrbar	q0- 17522,3653 17762,3243
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

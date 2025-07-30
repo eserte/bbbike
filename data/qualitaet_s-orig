@@ -641,7 +641,7 @@ F¸rstenberger Str.: Asphalt	Q0 10311,14613 10468,14636
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="21"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2025-07-26
+#: last_checked: 2025-07-30
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -5509,15 +5509,20 @@ Heidekampweg [Bodelschwinghstr. - H‰nselstr.]: Asphalt, einige Unebenheiten	Q1+ 
 (Spielplatzweg (KGA Baumfreunde)): unbefestigter Weg	Q2+ 15246,5812 15288,5816 15330,5821
 (Lilienweg (KGA Baumfreunde)): wassergebundene Decke	Q1- 15337,5730 15296,5725 15252,5719 15209,5713 15154,5706 15143,5705
 Fliederstr.: Asphalt	Q0 15141,5774 15129,5792 15125,5869 15125,5913
-Kirschallee: Beton	Q0 14833,5829 14911,5827 14995,5855 15125,5869
+Kirschallee: Beton, einige leichte Hebungen	Q1+ 14833,5829 14919,5834 14959,5850 15125,5869
 Straﬂe 21 (Baumschulenweg): unbefestigte Straﬂe	Q2 14830,5564 14830,5594 14830,5687 14833,5829
 Straﬂe 20 (Baumschulenweg): unbefestigte Straﬂe	Q2 14669,5573 14830,5564
-Straﬂe 19 (Baumschulenweg): unebenes Kopfsteinpflaster, teilweise Sandbanketten	Q3+ 14690,5507 14669,5573 14668,5834
-Straﬂe 17 (Baumschulenweg): Beton	Q0 14668,5834 14833,5829
-Straﬂe 16 (Baumschulenweg): Beton	Q0 14668,5834 14669,5847
-Straﬂe 16 (Baumschulenweg): Kopfsteinpflaster	Q2 14669,5847 14668,5923
-(Sp‰th'sche Baumschulen): Asphalt	Q0- 14507,5499 14463,5621 14418,5662 14366,5805
-(Sp‰th'sche Baumschulen - Straﬂe 17): Beton	Q0 14366,5805 14455,5814 14453,5851 14529,5851 14669,5847
+Straﬂe 19 (Baumschulenweg): unebenes Kopfsteinpflaster, teilweise Sandbanketten	Q3+ 14690,5507 14669,5573 14668,5838
+Straﬂe 17 (Baumschulenweg): Beton, einige leichte Hebungen	Q1+ 14668,5838 14833,5829
+Straﬂe 16 (Baumschulenweg): Beton, einige leichte Hebungen	Q1+ 14668,5838 14669,5847
+Straﬂe 16 (Baumschulenweg): schlechtes Kopfsteinpflaster	Q3 14669,5847 14668,5923
+(Sp‰th'sche Baumschulen): Asphalt	Q0 14507,5499 14492,5540
+(Sp‰th'sche Baumschulen): unebener, rauer und teilweise schadhafter Asphalt	Q1- 14492,5540 14463,5621 14418,5662 14360,5806
+#: historical_note: fr¸her (vor der Renaturierung 2018/2019?) Beton, Q0
+(Sp‰th'sche Baumschulen - Straﬂe 17): der Natur ¸berlassener Beton	Q2+ 14360,5806 14455,5814 14445,5851
+#: historical_note: wurde zwischen 2018 und 2019 renaturiert, vorher Beton, Q0
+(Sp‰th'sche Baumschulen - Straﬂe 17): unbefestigter Pfad	Q2- 14445,5851 14537,5852
+(Sp‰th'sche Baumschulen - Straﬂe 17): Beton, einige leichte Hebungen	Q1+ 14537,5852 14669,5847
 Friedrich-Jacobs-Promenade: Kleinsteinpflaster/Gehwegplatten	Q1 16117,10120 16068,10051 16007,9968 15995,9966 15948,9902
 Friedrich-Jacobs-Promenade: Kleinsteinpflaster	Q1 15948,9902 15920,9866 15916,9868 15910,9860
 Friedrich-Jacobs-Promenade: Kleinsteinpflaster/Gehwegplatten	Q1 16090,10141 16041,10072 15980,9986 15981,9975 15936,9911
@@ -6087,7 +6092,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1266800.php
 #: XXX bleibt es hier beim Asphalt?
 #: priority: #C
-#: last_checked: 2025-06-11
+#: last_checked: 2025-07-30
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
@@ -12274,7 +12279,7 @@ Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-pepp-fuer-gruenanlage_a429121
 #: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ‰ndert sich etwas an den Wegen?
 #: XXX Umbauarbeiten im ˆstlichen Bereich, Weg wird neu gemacht, laut Aushang bis April 2025, wird aber vermutlich l‰nger dauern
-#: osm_watch: note 4706090 6
+#: osm_watch: note 4706090 7
 #: last_checked: 2025-07-06 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-30
