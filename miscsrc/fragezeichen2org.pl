@@ -60,6 +60,7 @@ my $center2c;
 my $plan_dir;
 my $with_searches_weight;
 my $with_nextcheckless_records = 1;
+my $with_sort_by_lastchecked = 0;
 my $expired_statistics_logfile;
 my %url_defs = (infravelo => qr{\Qwww.infravelo.de/projekt});
 my %with_urls = map { ($_ => $url_defs{$_}) } qw(infravelo); # XXX temporary; maybe in future this could be turned on by option
@@ -78,6 +79,7 @@ GetOptions(
 	   "plan-dir=s" => \$plan_dir,
 	   "with-searches-weight!" => \$with_searches_weight,
 	   "with-nextcheckless-records!" => \$with_nextcheckless_records,
+	   "with-sort-by-lastchecked!" => \$with_sort_by_lastchecked,
 	   'expired-statistics-logfile=s' => \$expired_statistics_logfile,
 	   'filter=s@' => \@filters,
 	   "compile-command=s" => \$compile_command,
@@ -85,7 +87,7 @@ GetOptions(
 	  )
     or die "usage: $0 [--nowith-dist] [--max-dist km] [--dist-dbfile dist.db]
     [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight]
-    [--nowith-nextcheckless-records] [--filter without-osm-watch] [--debug] [--compile-command ...] bbdfile ...\n";
+    [--nowith-nextcheckless-records] [--with-sort-by-lastchecked] [--filter without-osm-watch] [--debug] [--compile-command ...] bbdfile ...\n";
 
 for my $filter (@filters) {
     if (!$filter_callback{$filter}) {
@@ -625,11 +627,17 @@ EOF
 		 }
 	     }
 
+	     my $last_checked;
+	     if ($dir->{last_checked} && $dir->{last_checked}[0]) {
+		 ($last_checked = $dir->{last_checked}[0]) =~ s{^(\S+).*}{$1};
+	     }
+
 	     push @records, {
 			     body => $body,
 			     dist => $any_dist,
 			     (defined $nextcheck_date || defined $begincheck_date ? (date => $nextcheck_date || $begincheck_date) : ()),
 			     (defined $searches       ? (searches => $searches)       : ()),
+			     ($with_sort_by_lastchecked && $last_checked ? (last_checked => $last_checked) : ()),
 			    };
 	 }, passthru_without_nextcheck => 1);
 }
@@ -677,6 +685,11 @@ if ($centerc) {
 	    return 0;
 	}
     } @expired_sort_by_dist_records;
+}
+
+my @sort_by_lastchecked_records;
+if ($with_sort_by_lastchecked) {
+    @sort_by_lastchecked_records = sort { $b->{last_checked} cmp $a->{last_checked} } grep { defined $_->{last_checked} } @records;
 }
 
 my @expired_searches_weight_records;
@@ -785,6 +798,15 @@ if (@expired_sort_by_dist_records) {
     }
     if ($cropped_count_because_of_max_dist) {
 	print "** ...cropped $cropped_count_because_of_max_dist record(s) because of --max-dist=$max_dist_km...\n";
+    }
+}
+
+if (@sort_by_lastchecked_records) {
+    print "* sort by last_checked date\n";
+    print_org_visibility('children');
+    for my $record (@sort_by_lastchecked_records) {
+	(my $body_with_last_checked = $record->{body}) =~ s{<\d{4}-\d{2}-\d{2} \S+?>}{<$record->{last_checked}>};
+	print $body_with_last_checked;
     }
 }
 
@@ -1215,6 +1237,16 @@ Create a statistical logfile with one line per day, containing:
 =item * the total count of expired fragezeichen entries, including also records outside of the maximum distance
 
 =back
+
+=item C<--with-sort-by-lastchecked>
+
+Create another section "sort by last_checked date". Useful when
+C<--plan-dir> is used as well, to ensure that all visited question
+marks on a tour have received an update to their C<last_checked>
+value.
+
+(Used in the action C<fragezeichen_nextcheck_sort_by_lastchecked> in
+F<data/doit.pl>)
 
 =back
 
