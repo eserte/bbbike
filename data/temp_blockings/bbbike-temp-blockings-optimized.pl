@@ -5472,12 +5472,12 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025) (inaktiv)
-#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025)
+#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2025-05-10 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-08-16 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -5486,7 +5486,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
 #: osm_watch: way id="42990078" version="30"
-#: osm_watch: note 4444205 1
+#: osm_watch: note 4444205 2
 Schönstr. zwischen Amalienstr. und Paul-Oestreich-Str.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
 # REMOVED (hier nicht mehr) --- Amalienstr.	q4::inwork 13722,16843 13794,16773
@@ -5686,9 +5686,10 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024) (bis auf weiteres)
 #: osm_watch[closed]: note 4052359 1
 #: osm_watch: way id="1117348911" version="16"
+#: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 #: also_indoor: traffic (G[zu viel],re-B[zu viel],T[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
-# REMOVED --- #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin? --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
+# REMOVED --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
@@ -7653,17 +7654,7 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.07.2025)
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
-	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
-',
-         'from' => 1729404000,
-         'id' => 4186,
-         'text' => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 31.07.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1753974000
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
@@ -7882,6 +7873,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        {
          'data' => '#: also_indoor: traffic (G,T,B,A)
+#: add_fragezeichen: Wurden die Bauarbeiten beendet?
 #: last_checked: 2025-07-28 (traffic)
 #: check_frequency: 7d
 #: next_check: 2025-07-31 (Halteverbotsschilder)
@@ -8117,20 +8109,7 @@ Scottweg	q3::inwork -1317,11300 -966,11382
          'type' => 'handicap',
          'until' => 1755270000
        },
-       {
-         'data' => '#: next_check_id: PLATANEN-2025
-#: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025) (inaktiv)
-#: source_id: viz2021:13.39809,52.58487, (bis 31.07.2025) (bis 30.10.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1891725331691864443
-#: by: https://pbs.twimg.com/media/Gj_K-ydXgAAYbfS?format=jpg&name=large (etwa 170m der Fahrbahn und des nördlichen Bürgersteigs ab Waldstr. sind betroffen)
-	q4::inwork 9824,19910 9498,19817
-',
-         'from' => 1739772000,
-         'id' => 4264,
-         'text' => 'Platanenstr.: Bauarbeiten zwischen Waldstr. und Treskowstr., Sperrung, vom 18.02.2025 07:00 bis 31.07.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1753974000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8259,20 +8238,21 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: by: https://www.tagesspiegel.de/berlin/schwedter-steg-in-berlin-voll-gesperrt-sanierung-am-mauerpark-verzogert-sich-wegen-vandalismus-13882870.html
 #: by: https://www.morgenpost.de/bezirke/pankow/article409580036/berlin-prenzlauer-berg-bau-finale-am-schwedter-steg-wann-diese-bruecke-endlich-oeffnet.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/monatelange-verzogerung-am-mauerpark-neuer-termin-fur-freigabe-des-schwedter-stegs-in-berlin-steht-und-wirft-fragen-auf-14080070.html
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586455.php (Freigabe am 1.8.2025)
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025) (inaktiv)
 #: osm_watch: note 4317053 8
 #: osm_watch: way id="1149646787" version="5"
 #: last_checked: 2025-07-04 (mapillary)
 # REMOVED --- #: next_check: 2025-07-18 (VIZ-Verkehrsmeldung, MoPo, Tsp)
-#: next_check: 2025-08-15 (SenUMVK-Seite)
+#: next_check: 2025-08-01 (SenMVKU-Pressemitteilung)
 Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
 ',
          'from' => 1741993200,
          'id' => 4278,
          'prewarn_days' => 2,
-         'text' => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Mitte August 2025',
+         'text' => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, voraussichtlich bis 1. August 2025',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1754071200
        },
        undef,
        undef,
@@ -8593,6 +8573,7 @@ Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
        undef,
        {
          'data' => '#: source_id: viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025)
+#: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=782027#post782027
 Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 ',
          'from' => 1746334800,
@@ -8862,20 +8843,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
-#: source_id: adac:2089388170 (bis 31.07.2025)
-#: source_id: viz2021:13.492511,52.516292,24.06.2025,07:00 (bis 31.07.2025)
-#: note: bei rbb bis 31.07.2025 verlängert
-#: note: durch die Umwege + Bordsteine ist q4 berechtigt
-	q4::inwork; 16397,12397 16485,12384 16583,12371
-',
-         'from' => 1750654800,
-         'id' => 4367,
-         'text' => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Fahrbahn Richtung Osten gesperrt, gemeinsamer Geh- und Radweg (Umwege + Bordsteine), vom 24.06.2025 07:00 bis 31.07.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1753974000
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: traffic (G)
@@ -8927,10 +8895,12 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/sturmschaden-im-berliner-norden-nicht-beseitigt-arger-um-gesperrte-parks-spielplatze-und-sportanlagen-14070377.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
 #: by: https://www.tagesspiegel.de/berlin/schadensbilanz-nach-unwettern-in-berlin-bezirke-zahlen-millionensummen-fur-sturmschaden-14093090.html
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1586329.php (u.a. Erwähnung des Tegeler Fließes)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
-#: last_checked: 2025-07-26 (indoor check) vvv
+#: last_checked: 2025-07-31 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
-#: next_check: 2025-08-04 (Pressemitteilung) vvv
+#: next_check: 2025-08-18 (Pressemitteilung) vvv
 #: note: nördlicher Abschnitt (Tegeler Forst - Hermsdorf)
 Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 (Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1061,21970 1069,21985 1135,22069
@@ -8978,7 +8948,7 @@ Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 268
 ',
          'from' => undef,
          'id' => 4371,
-         'text' => 'Tegeler Forst: wegen Sturmschäden gesperrt, voraussichtlich bis zum 4.8.2025',
+         'text' => 'Tegeler Forst: wegen Sturmschäden gesperrt, voraussichtlich bis zum 18.08.2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8992,15 +8962,16 @@ Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 268
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltvyv2f6yc2q (Schönwalder Allee ist offen)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1583117.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-07-26 (indoor check) vvv
-#: check_frequency: 7d (indoor/traffic check) vvv
-#: next_check: 2025-08-04 vvv
+#: last_checked: 2025-07-31 (indoor check) vvv
+#: check_frequency: 10d (indoor/traffic check) vvv
+#: next_check: 2025-08-18 vvv
 # REMOVED (laut VIZ wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
 # REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
 # REMOVED (wieder offen) --- Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
@@ -9443,6 +9414,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1585940.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/umleitungsplan.pdf
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.1585917.php
 	q4::inwork; 6360,4504 6283,4565 6203,4630
 ',
          'from' => 1755381600,

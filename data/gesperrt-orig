@@ -3999,17 +3999,21 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 #: next_check_id: ZOSSENB246-2023
 #: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20240925 (Eröffnung, davor Sperrung der B96 für den Straßenverkehr)
+#: by: https://www.zossen.de/buerger/meldungen/dauerhafte-schliessung-der-bahnuebergaenge-am-oertelufer-und-an-der-b246-alt/
 #: source_id: 257201567 (bis 31.10.2025)
 #: XXX Wenn der Bahnübergang aufgegeben wird, dann müsste man den Rest auf N degradieren
 #: XXX laut DB-Seite wird dieser Bahnübergang und der am Oertelufer vom 31.07.2025 bis 18.08.2025 wegen Bauarbeiten geschlossen -> in temp_blockings eintragen!
 #: osm_watch: way id="1322461292" version="9" brb
 #: osm_watch: way id="538382840" version="17" brb
+#: osm_watch: note 4885859 1
 #: last_checked: 2025-07-21 (Verkehrsmeldung) vvv
 #: check_frequency: 180d vvv
-#: next_check: 2025-07-31 (Beginn Verkehrsmeldung) vvv
+#: next_check: 2025-07-31 (Beginn Verkehrsmeldung, Zossen-Meldung) vvv
 # REMOVED --- #: next_check: 2025-10-31 (Ende Verkehrsmeldung; aber es soll wohl dauerhaft bleiben) vvv
 #: valid: 20250731- vvv
+#: osm_watch: node id="12237332772" version="3" brb
 ehemalige B246 (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13390,-20515 13412,-20513 13526,-20548
+#: osm_watch: node id="4081207273" version="4" brb
 Oertelufer (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13430,-21328 13467,-21298 13506,-21265
 #: valid ^^^
 #: next_check ^^^

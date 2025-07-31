@@ -119,10 +119,11 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # REMOVED --- Wartenberger Weg: Gegenverkehrsregelung	X::inwork::alternating 15882,19165
 # 
 #: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025)
+#: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
+#: source_id: viz2021:13.5975,52.50236, (bis 29.08.2025)
 #: last_checked: 2025-07-16
-#: next_check: 2025-07-31
-#: valid: -20250731
+#: next_check: 2025-08-29
+#: valid: -20250829
 Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 # 
 # REMOVED --- #: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025) (bis 16.06.2025) (bis 30.06.2025) (bis 24.06.2025) (inaktiv)
@@ -3934,6 +3935,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 3951,9836
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: XXX Ausgeschaltet, weil die Zufahrt zum Tunnel gesperrt ist.
+#: osm_watch: note 4573131 1
+#: osm_watch: node id="6225847741" version="1"
 #: last_checked: 2025-01-02
 #: check_frequency: 210d
 #: next_check: 2028-01-01
