@@ -59,6 +59,7 @@ my @search_file_defs = (
 			),
 			(grep { -f $_ } "$bbbike_miscdir/webcams.bbd"),
 		       );
+my @search_org_files;
 
 my $searchterm_type = 'fixed';
 my $case_insens     = 1;
@@ -92,6 +93,7 @@ GetOptions(
 		   die "Unexpected format for --add-file-with-encoding value '$_[1]', should be 'filename:encoding'.\n";
 	       }
 	   },
+	   'add-org-file=s@'       => \@search_org_files,
 	   'reldir=s'              => \my $reldir,
 	   'debug'                 => \$debug,
 	  )
@@ -125,6 +127,30 @@ my $file_hits = 0;
 my @removed_lines;
 
 sub do_search {
+    my($fh, $outfile);
+    my $format_output = sub {
+	my $line = shift;
+	my $prefix = shift;
+
+	my $out;
+	if ($with_filename) {
+	    $out .= "$outfile:";
+	}
+	if ($with_line_number) {
+	    $out .= "$.:";
+	}
+	if ($with_byte_offset) {
+	    $out .= tell($fh) - bytes::length($line) - 1 + $-[0]; # - 1 because of chomp
+	    $out .= ':';
+	}
+	if (defined $prefix) {
+	    $out .= $prefix;
+	}
+	$out .= "$line\n";
+
+	$out;
+    };
+
     for my $search_file_def (@search_file_defs) {
 	my($filename, $encoding);
 	if (ref $search_file_def) {
@@ -138,29 +164,18 @@ sub do_search {
 	    $encoding = $dir->{encoding}->[0] || 'iso-8859-1';
 	}
 	my $local_hits = 0;
-	open my $fh, $filename
+	open $fh, $filename
 	    or do {
 		warn "ERROR: Can't open $filename ($!), skipping...\n";
 		$errors++;
 		next;
 	    };
 	binmode $fh, ":encoding($encoding)";
-	my $outfile = defined $reldir ? File::Spec->abs2rel($filename, $reldir) : $filename;
+	$outfile = defined $reldir ? File::Spec->abs2rel($filename, $reldir) : $filename;
 	while(<$fh>) {
 	    if ($_ =~ $search_rx) {
 		chomp;
-		my $out;
-		if ($with_filename) {
-		    $out .= "$outfile:";
-		}
-		if ($with_line_number) {
-		    $out .= "$.:";
-		}
-		if ($with_byte_offset) {
-		    $out .= tell($fh) - bytes::length($_) - 1 + $-[0]; # - 1 because of chomp
-		    $out .= ':';
-		}		    
-		$out .= "$_\n";
+		my $out = $format_output->($_);
 		if (/^#\s*REMOVED/) {
 		    push @removed_lines, $out;
 		} else {
@@ -170,6 +185,52 @@ sub do_search {
 		last if defined $limit && $local_hits + $hits >= $limit; # limit this file
 	    }
 	}
+	close $fh;
+
+	if ($local_hits) {
+	    $file_hits++;
+	    $hits += $local_hits;
+	    last if defined $limit && $hits >= $limit; # limit all files
+	}
+    }
+
+    for my $org_filename (@search_org_files) {
+	debug "  $org_filename...";
+	my $local_hits = 0;
+	open $fh, $org_filename
+	    or do {
+		warn "ERROR: Can't open $org_filename ($!), skipping...\n";
+		$errors++;
+		next;
+	    };
+	binmode $fh, ':utf8'; # unconditional utf8
+	$outfile = defined $reldir ? File::Spec->abs2rel($org_filename, $reldir) : $org_filename;
+	my $current_title = '<no title>';
+	my $state = '';
+	while(<$fh>) {
+	    if ($state eq 'skip_to_title') {
+		if (/^\*/) {
+		    $state = '';
+		} else {
+		    next;
+		}
+	    }
+
+	    if (/^\*+\s+\S+\s+(.*)/) {
+		$current_title = $1;
+	    };
+	    if ($_ =~ $search_rx) {
+		my $out = $format_output->($_, "$current_title: ");
+		if (/^#\s*REMOVED/) {
+		    push @removed_lines, $out;
+		} else {
+		    print $out;
+		}
+		$local_hits++;
+		last if defined $limit && $local_hits + $hits >= $limit; # limit this file
+	    }
+	}
+	close $fh;
 
 	if ($local_hits) {
 	    $file_hits++;
@@ -208,7 +269,7 @@ bbbike-grep - specialized grep for bbbike data
 
 =head1 SYNOPSIS
 
-    bbbike-grep [--rx|--fixed] [--case-sensitive] [-n] [--add-file file] [--add-file-with-encoding file:encoding] [--debug] searchterm
+    bbbike-grep [--rx|--fixed] [--case-sensitive] [-n] [--add-file file] [--add-file-with-encoding file:encoding] [--add-org-file file] [--debug] searchterm
 
 =head1 DESCRIPTION
 
@@ -279,6 +340,11 @@ of files.
 Specify another possibly non-bbd file to search, together with an
 encoding like C<utf-8> or C<iso-8859-1>, additionally to the standard
 set of files.
+
+=item C<--add-org-file I<filename>>
+
+Specify an org-mode file to search, additionally to the standard set
+of files.
 
 =item C<--debug>
 
