@@ -4002,10 +4002,11 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 #: by: https://www.zossen.de/buerger/meldungen/dauerhafte-schliessung-der-bahnuebergaenge-am-oertelufer-und-an-der-b246-alt/
 #: source_id: 257201567 (bis 31.10.2025)
 #: XXX Wenn der Bahnübergang aufgegeben wird, dann müsste man den Rest auf N degradieren
-#: XXX laut DB-Seite wird dieser Bahnübergang und der am Oertelufer vom 31.07.2025 bis 18.08.2025 wegen Bauarbeiten geschlossen -> in temp_blockings eintragen!
+#: XXX möglicherweise ist der Bahnübergang am Oertelufer noch offen (Stand Anfang August 2025), aber hier gibt es sowieso die Unterführung für Radfahrer/Fußgänger
 #: osm_watch: way id="1322461292" version="9" brb
 #: osm_watch: way id="538382840" version="17" brb
 #: osm_watch: note 4885859 1
+#: also_indoor: traffic (G[nur ex-B246],T[nur ex-B246])
 #: last_checked: 2025-07-21 (Verkehrsmeldung) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-07-31 (Beginn Verkehrsmeldung, Zossen-Meldung) vvv
@@ -4600,7 +4601,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-07-15
+#: last_checked: 2025-07-31 (traffic)
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 

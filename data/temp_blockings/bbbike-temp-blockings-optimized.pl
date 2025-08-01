@@ -2405,7 +2405,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2889,7 +2889,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Juli 8.00 - 20.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: August 8.00 - 20.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -5460,6 +5460,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
        {
          'data' => '#: next_check_id: SCHOEN-2022
 #: also_indoor: traffic (H[unvollständig],ex-G[unvollständig],B)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1311341.php (ab 5. April 2023 Straßenbau; Verkehrsfreigabe Ende Mai 2023)
@@ -5500,8 +5501,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 ',
          'from' => 1656799200,
          'id' => 3579,
-         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis August 2025',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Oktober 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6156,10 +6156,10 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 4
-#: also_indoor: traffic (B,T,ex-H,re-G,ex-W,ex-A)
+#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-07-04 (traffic)
+#: last_checked: 2025-07-31 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -6970,7 +6970,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
        {
          'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025) (bis 01.08.2025) (inaktiv)
 #: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
-#: source_id: viz2021:13.5264,52.53348, (bis 01.08.2025)
+#: source_id: viz2021:13.5264,52.53348, (bis 01.08.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
@@ -6980,6 +6980,8 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
 #: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
+#: XXX Möglicherweise schon wieder offen?
+#: next_check: 2025-08-01 (VIZ-Verkehrsmeldung)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 ',
          'from' => 1711947600,
@@ -7019,22 +7021,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
          'type' => 'gesperrt',
          'until' => 1760459400
        },
-       {
-         'data' => '#: source_id: viz2021:13.465597,52.498805,23.04.2024,05:00 (nur Kfz-Verkehr, bis 25.04.2024) (inaktiv)
-# REMOVED (alter Eintrag) --- #: note: Umleitungsstrecke für Radfahrer via Corinthstr., Bödikerstr., Persiusstr. existiert
-#: source_id: viz2021:13.464968,52.497948,14.11.2024,06:00 (bis 15.11.2024) (inaktiv)
-#: source_id: viz2021:13.46469,52.49743,28.07.2025,05:00 (bis 01.08.2025)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luys2l4pgs2r
-#: note: für Nov 2024 bleibt unklar, ob Radfahrer betroffen waren
-#: note: für Jul/Aug 2025 wurde für Radfahrer eine Umleitungsstrecke via Persiusstr. - Bödikerstr. - Corinthstr. ausgeschildert, für den MIV weitläufig über Modersohnstr.
-	q4::inwork 14641,10552 14608,10409
-',
-         'from' => 1753567200,
-         'id' => 4046,
-         'text' => 'Markgrafendamm: Sperrung der Fahrbahn, vom 28.07.2025 05:00 bis 01.08.2025',
-         'type' => 'gesperrt',
-         'until' => 1754071200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7636,16 +7623,7 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1489715.php
-	2::inwork 24229,10843 24113,10462 24265,10421
-',
-         'from' => 1727474400,
-         'id' => 4177,
-         'text' => 'Am Barnim und Großmannstr.: Bauarbeiten, abschnittsweise gesperrt, vom 29. September 2024 bis zum 31. Juli 2025',
-         'type' => 'gesperrt',
-         'until' => 1753999199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8197,14 +8175,17 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
        undef,
        {
          'data' => '#: source_id: viz2021:13.418488,52.553809,03.03.2025,07:00 (hier nur Kfz-Verkehr, bis 02.08.2025) (inaktiv)
-#: source_id: viz2021:13.41845,52.55424,03.03.2025,07:00 (bis 02.08.2025)
-	q4::inwork; 11284,16527 11289,16423
+#: source_id: viz2021:13.41845,52.55424,03.03.2025,07:00 (bis 02.08.2025) (inaktiv)
+#: source_id: viz2021:13.41845,52.55424, (nun gesperrt, bis 07.08.2025)
+#: note: bei rbb weiterhin nur Einbahnstraßenregelung, aber auch verlängert, hier bis zum 08.08.2025
+# REMOVED ---	q4::inwork; 11284,16527 11289,16423
+	q4::inwork 11284,16527 11289,16423
 ',
          'from' => 1740895200,
          'id' => 4274,
-         'text' => 'Trelleborger Str.: zwischen Schonensche Str. und Wisbyer Str. Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 03.03.2025 07:00 bis 02.08.2025 17:00',
+         'text' => 'Trelleborger Str.: zwischen Schonensche Str. und Wisbyer Str. Sperrung, evtl. sind auch Radfahrer betroffen, bis 07.08.2025',
          'type' => 'handicap',
-         'until' => 1754146800
+         'until' => 1754603999
        },
        undef,
        {
@@ -8222,38 +8203,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'until' => 1757343600
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin-live.de/berlin/verkehr/berlin-schwedter-steg-baustelle-prenzlauer-berg-id222297.html (Bauarbeiten sollen im August 2024 beginnen und 16 Wochen dauern)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/vollsperrung-fur-ein-vierteljahr-senat-verschiebt-wichtige-bruckensanierung-in-prenzlauer-berg-12299603.html (Beginn nun ab "Ende 1. Quartal, Anfang 2. Quartal 2025")
-#: by: https://www.morgenpost.de/bezirke/pankow/article407082498/berlin-verschiebt-gefuerchtete-bruecken-baustelle-in-prenzlauer-berg.html (voraussichtlich ab Ende März oder im April 2025)
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schwedter-steg/ (voraussichtliche Bauzeit: April 2025 bis Juli 2025) (mittlerweile ab März 2025) (mittlerweile bis Mitte August 2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1898977367680553472
-#: by: https://pbs.twimg.com/media/Glc8_8GWEAE-ex7?format=jpg&name=large (Umleitungsstrecken)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1539107.php
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1899074460012941443 (Verschiebung, Beginn 17.03.2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/fussgangerbrucke-schwedter-steg-wird-fur-sanierung-gesperrt/
-#: by: https://www.tagesspiegel.de/berlin/fussgangerbrucke-in-pankow-wird-saniert-schwedter-steg-ab-17-marz-knappe-vier-monate-gesperrt-13343986.html
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1901517353940390368
-#: by: https://www.morgenpost.de/bezirke/pankow/article409300680/berlin-prenzlauer-berg-angriffe-auf-gesperrte-bruecke-schwedter-steg-oeffnet-trotzdem.html (Eröffnung am 18.7.2025)
-#: by: https://www.tagesspiegel.de/berlin/schwedter-steg-in-berlin-voll-gesperrt-sanierung-am-mauerpark-verzogert-sich-wegen-vandalismus-13882870.html
-#: by: https://www.morgenpost.de/bezirke/pankow/article409580036/berlin-prenzlauer-berg-bau-finale-am-schwedter-steg-wann-diese-bruecke-endlich-oeffnet.html
-#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/monatelange-verzogerung-am-mauerpark-neuer-termin-fur-freigabe-des-schwedter-stegs-in-berlin-steht-und-wirft-fragen-auf-14080070.html
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586455.php (Freigabe am 1.8.2025)
-#: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025) (inaktiv)
-#: osm_watch: note 4317053 8
-#: osm_watch: way id="1149646787" version="5"
-#: last_checked: 2025-07-04 (mapillary)
-# REMOVED --- #: next_check: 2025-07-18 (VIZ-Verkehrsmeldung, MoPo, Tsp)
-#: next_check: 2025-08-01 (SenMVKU-Pressemitteilung)
-Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
-',
-         'from' => 1741993200,
-         'id' => 4278,
-         'prewarn_days' => 2,
-         'text' => 'Schwedter Steg: Baustelle, für Rad- und Fußverkehr gesperrt, voraussichtlich bis 1. August 2025',
-         'type' => 'gesperrt',
-         'until' => 1754071200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8273,7 +8223,7 @@ Schwedter Steg: wegen Bauarbeiten gesperrt	2::inwork 10062,15927 10005,16150
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/223-P/25/019 (bis 07.04.2025)
+         'data' => '#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
@@ -8542,7 +8492,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum
+#: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
 #: last_checked: 2025-07-25 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-08-29 (ADAC-Verkehrsmeldung) vvv
@@ -8897,6 +8847,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.tagesspiegel.de/berlin/schadensbilanz-nach-unwettern-in-berlin-bezirke-zahlen-millionensummen-fur-sturmschaden-14093090.html
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1586329.php (u.a. Erwähnung des Tegeler Fließes)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-31 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -8963,6 +8914,7 @@ Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 268
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1583117.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
@@ -9022,8 +8974,8 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
 #: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
-#: source_id: adac:119662672 (bis 01.08.2025)
-#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025)
+#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025)
+#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025)
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: bei rbb bis 01.08.2025 verlängert, allerdings hier Kreuzung Kirschenallee
 	q3::inwork 919,11938 1078,11895 1188,11861
@@ -9031,9 +8983,9 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 ',
          'from' => 1750861140,
          'id' => 4374,
-         'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis Anfang August 2025',
+         'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis 20. August 2025',
          'type' => 'gesperrt',
-         'until' => 1754064000
+         'until' => 1755705600
        },
        {
          'data' => '#: also_indoor: traffic (G,re-H,T)
@@ -9276,17 +9228,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
          'type' => 'handicap',
          'until' => 1755273600
        },
-       {
-         'data' => '#: source_id: LS/221-E/25/086 (bis 01.08.2025)
-#: source_id: LS/221-E/25/105-1 (Gegenverkehrsregelung, 11.08.2025 bis 15.08.2025)
-	2::inwork 23759,49971 24081,50440 24364,50554 24522,50570 25904,50276 26244,50372
-',
-         'from' => 1753596000,
-         'id' => 4396,
-         'text' => 'B167: Bauarbeiten zwischen Abzweig nach Eichhorst und Abzweig nach Marienwerder, Sperrung, vom 28.07.2025 08:00 Uhr bis 01.08.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1754060400
-       },
+       undef,
        {
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)

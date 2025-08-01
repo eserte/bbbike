@@ -1040,7 +1040,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 #: source_id: viz2021:13.51205,52.45485,25.06.2025,17:54 (bis 31.07.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.51205,52.45485, (bis 07.08.2025)
 #: XXX außerdem wird es für Rechtsabbieger Michael-Brückner-Str. -> Sterndamm einen asphaltierten Radweg geben
-#: last_checked: 2025-07-30
+#: last_checked: 2025-07-31 (krickstadt)
 #: check_frequency: 30d
 #: next_check: 2025-08-07 (VIZ-Verkehrsmeldung, rbb)
 # REMOVED (hier realisiert) --- Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17695,5394 17736,5441
@@ -1489,7 +1489,7 @@ Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordsei
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: beidseitig)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/endversion-protokoll-18-06-20.pdf
 #: by: https://api.fixmyberlin.de/api/plannings/126 (Verbreiterung auf 2m)
-#: last_checked: 2025-04-05 (mapilio)
+#: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 120d
 Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Südseite?	?::projected -6722,16112 -6575,16071 -6313,15996 -6144,15946 -6073,15925 -5911,15877
 # 
@@ -2528,7 +2528,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 # REMOVED (-> temp blockings) --- #: last_checked: 2018-06-19 (noch keine Sperrung) --- #: check_frequency: 2d --- Schönstr.: Neubau geplant, Vollsperrung während der Bauarbeiten	?::projected 13391,16436 13630,16629
 #: last_checked: 2025-05-10
 #: check_frequency: 240d
-#: next_check: 2025-08-16 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
 Schönstr.: Neubau	?::inwork 13630,16629 13794,16773
 # REMOVED (hier fertig) --- Schönstr.: Neubau geplant	?::inwork 13794,16773 13870,16837
 # REMOVED (hier fertig) --- Schönstr.: Neubau geplant	?::projected 13870,16837 13974,16924 13996,16959
@@ -4538,7 +4538,7 @@ Wundtstr./Horstweg: "Qualifizierung" des Stadtplatzes; wird sich etwas für Radfa
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_03_0117_0164_online.pdf (Teileinziehung)
-#: last_checked: 2025-07-15 vvv
+#: last_checked: 2025-07-29 (mapillary) vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 #: osm_watch: way id="202156991" version="20"
 #: osm_watch: way id="339201177" version="19"
@@ -4668,7 +4668,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 #: osm_watch: node id="34104628" version="15"
 #: last_checked: 2025-06-09
 #: check_frequency: 120d
-#: next_check: 2025-08-02 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-08-18 (VIZ-Verkehrsmeldung)
 Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 22916,15054
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
@@ -4713,13 +4713,13 @@ Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 
 #: source_id: viz2021:13.582334,52.539807,03.04.2025,10:00 (nur Kfz-Verkehr, bis 07.04.2025) (inaktiv)
 #: source_id: viz2021:13.584338,52.539646,07.04.2025,10:00 (nur Kfz-Verkehr, bis 16.06.2025) (bis 17.06.2025 + weitere Arbeiten) (bis 30.06.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.572984,52.540446,30.06.2025,10:00 (bis 02.08.2025) (inaktiv)
-#: source_id: viz2021:13.57417,52.54036, (bis 02.08.2025)
+#: source_id: viz2021:13.57417,52.54036, (bis 02.08.2025) (bis 18.08.2025)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: note: Zusätzlich zu den Straßenbauarbeiten werden die Hellersdorfer Brücken neu gemacht (siehe SenUMVK-Seite), vermutlich Ende 2025 - Mitte 2027, mit Behelfsbrücke für den Fuß+Radverkehr
 #: osm_watch: note 3581028 14
 #: last_checked: 2025-06-09 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-08-02 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-08-18 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
 Eisenacher Str./Hellersdorfer Brücke: Bauarbeiten	?::inwork 21599,15213 21718,15198 21809,15186 21903,15174 22059,15153 22323,15119 22441,15118 22577,15109 22599,15105 22726,15082 22899,15073
 # REMOVED --- #: osm_watch: way id="175916583" version="11" --- Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
@@ -4846,7 +4846,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.rbb24.de/panorama/beitrag/2025/06/poller-pendler-autofahrer-hermsdorf-glienicke-waldseeviertel-B96.html
 #: priority: #C vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2025-07-16 (indoor research) vvv
+#: last_checked: 2025-07-31 (indoor research) vvv
 # REMOVED (outdoor) --- #: check_frequency: 60d vvv
 #: check_frequency: 30d (indoor research) vvv
 #: also_indoor: search Schildower_Straße
@@ -8049,6 +8049,7 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173
 #: by: https://entwicklungsstadt.de/fortschritt-in-der-parkstadt-karlshorst-gruenflaeche-mit-100-neuen-baeumen-eroeffnet-im-april/ (Erwähnung)
 #: by: https://www.nd-aktuell.de/artikel/1190546.oepnv-bvg-keine-tram-von-friedrichshain-bis-karlshorst.html (Inbetriebnahme nicht vor dem 2. Quartal 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23105.pdf (geplante Bauarbeiten von März 2026 bis Herbst 2026; während der Bauarbeiten Sperrung, auch für den Fußverkehr)
+#: by: https://www.nd-aktuell.de/artikel/1193002.bvg-berlins-kuerzeste-tram-kann-kommen.html
 #: XXX mittlerweile wegen Hochbauarbeiten nebenan ein paar Meter gemeinsamer Geh- und Radweg am Ende der Ehrlichstr. (ist mittlerweile vorbei; war aber vermutlich nur für den Hochbau nebenan)
 #: last_checked: 2025-07-27
 #: check_frequency: 180d
@@ -9119,13 +9120,13 @@ Friedenauer Höhe: Erschließungsstraße, evtl. mit Anschluss an die Straße am Güte
 # 
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026)
 #: osm_watch: way id="23926070" version="4"
-#: last_checked: 2025-07-05
+#: last_checked: 2025-07-31 (website)
 #: check_frequency: 30d (indoor checks)
 #: next_check: 2025-12-31 (SenMVKU website)
 Spektegrabensteg: Neubau geplant	?::projected -7228,15933 -7243,15943
 # 
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026)
-#: last_checked: 2025-07-16 (website)
+#: last_checked: 2025-07-31 (website)
 #: check_frequency: 30d (indoor checks)
 #: next_check: 2025-12-31 (SenMVKU website)
 Südparkbrücke: Neubau geplant	?::projected -4048,12107 -4033,12108
@@ -9478,7 +9479,9 @@ Melchiorstr.: Fahrradstraße mit Vorfahrtsregelung geplant	?::projected 11917,111
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1581835.php (28.07.2025 - 25.08.2025)
 #: source_id: viz2021:13.457669,52.491729, (bis 19.09.2025)
 #: source_id: viz2021:13.45801,52.49182,28.07.2025,07:00 (bis 04.08.2025)
-#: source_id: bvg2024:166#HIM_FREETEXT_294666 (BVG-Umleitung ab 4.8.2025)
+#: source_id[inactive]: bvg2024:166#HIM_FREETEXT_294666 (BVG-Umleitung ab 4.8.2025)
+#: source_id: bvg2024:166#HIM_FREETEXT_294832 (BVG-Umleitung ab 4.8.2025)
+#: XXX laut https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/ ab 4.8.2025 bis Ende August 2025 Fahrbahnsanierungsarbeiten auf der Elsenstr. Höhe Am Treptower Park, mit Rechtsabbiegeverbot. Wie wird die Radverkehrsführung aussehen?
 #: priority: #A
 #: last_checked: 2025-07-30 (noch keine radverkehrsrelevanten Änderungen; vorbereitete Umleitung (nur für Kfz?) über Puderstr. zu Am Treptower Park)
 # REMOVED --- #: check_frequency: 7d
@@ -9496,6 +9499,9 @@ Prinzregentenstr./Waghäuseler Str.: Umbauarbeiten, danach Vorfahrt für Prinzrege
 #: osm_watch: note 4801950 2
 #: osm_watch: way id="53168806" version="7"
 Nordhafen/Panke: gibt es hier eine neue Wegverbindung? Genaue Lage? Qualität? Beleuchtet? Auch legal für Radfahrer befahrbar?	? 7753,14528 7863,14559 7889,14519
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf
+Zingergraben: Widmung einer Grünanlage - gibt es Auswirkungen auf den Radverkehr?	? 8993,19595 9039,19486
 # 
 #: section ^^^
 #: ignore ^^^
@@ -13564,6 +13570,7 @@ Bahnhofsweg (Fürstenwerder): Qualität?	? 21276,109794 21007,109931
 #: source_id: 257305125 (Straßenbau bis 01.06.2025) (inaktiv)
 Dedelow - Falkenhagen: Qualität (zumindest am östlichen Ende asphaltiert)?	? 34932,107157 34533,107210 33475,107198 33038,107047 32910,106940
 #: XXX laut osm gemischt: cobblestone, concrete, asphalt
+#: source_id: 257300193 (Sperrung bis 30.10.2025)
 Berkholz - Naugarten: Qualität?	? 26331,98209 26306,98528 26421,98685 26454,98805 26599,99011 26642,99291 26928,99735 27082,100173 27152,100819 27088,100955
 Naugarten: Qualität?	? 26581,100861 27088,100955
 Naugarten - Schönermark: Qualität?	? 27088,100955 27266,101048 27743,101148 28118,101408 28193,101622 28386,101842 28734,102531 28798,102810

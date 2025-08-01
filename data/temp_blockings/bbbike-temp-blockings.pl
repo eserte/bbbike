@@ -37088,12 +37088,12 @@ EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
        until => undef, # $isodate2epoch->("2024-04-30 17:00:00"), # undef, # 1667861999, # 2022-11-07 23:59
-       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis August 2025', # früher: nur bis Amalienstr.
+       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Oktober 2025', # früher: nur bis Amalienstr.
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
 #: next_check_id: SCHOEN-2022
 #: also_indoor: traffic (H[unvollständig],ex-G[unvollständig],B)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1311341.php (ab 5. April 2023 Straßenbau; Verkehrsfreigabe Ende Mai 2023)
@@ -39884,10 +39884,10 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 6
 #: osm_watch: note 3834144 4
-#: also_indoor: traffic (B,T,ex-H,re-G,ex-W,ex-A)
+#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
-#: last_checked: 2025-07-04 (traffic)
+#: last_checked: 2025-07-31 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2024-05-24
@@ -43798,7 +43798,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025) (bis 01.08.2025) (inaktiv)
 #: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
-#: source_id: viz2021:13.5264,52.53348, (bis 01.08.2025)
+#: source_id: viz2021:13.5264,52.53348, (bis 01.08.2025) (inaktiv)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
@@ -43808,6 +43808,8 @@ EOF
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
 #: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
+#: XXX Möglicherweise schon wieder offen?
+#: next_check: 2025-08-01 (VIZ-Verkehrsmeldung)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 EOF
      },
@@ -43995,6 +43997,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luys2l4pgs2r
 #: note: für Nov 2024 bleibt unklar, ob Radfahrer betroffen waren
 #: note: für Jul/Aug 2025 wurde für Radfahrer eine Umleitungsstrecke via Persiusstr. - Bödikerstr. - Corinthstr. ausgeschildert, für den MIV weitläufig über Modersohnstr.
+#: note: Jul/Aug 2025: offiziell für Radfahrer gesperrt (am südlichen Ende explizites Radfahren-verboten-Schild an der Corinthstr., am nördlichen Ende Verbot-für-alle-Schild an der Persiusstr., praktisch konnte man durchfahren und wurde auch von den Streckenposten nicht daran gehindert)
 	q4::inwork 14641,10552 14608,10409
 EOF
      },
@@ -46085,7 +46088,7 @@ EOF
        text  => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 31.07.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.07.2025) (inaktiv)
+#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.07.2025) (inaktiv) (nur noch Einschränkungen, bis 15.08.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
 	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
 EOF
@@ -47335,13 +47338,17 @@ Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18852,13269
 EOF
      },
      { from  => 1740895200, # 2025-03-02 07:00
-       until => 1754146800, # 2025-08-02 17:00
-       text  => 'Trelleborger Str.: zwischen Schonensche Str. und Wisbyer Str. Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 03.03.2025 07:00 bis 02.08.2025 17:00',
+       until => $isodate2epoch->("2025-08-07 23:59:59"), # 1754146800, # 2025-08-02 17:00
+#      text  => 'Trelleborger Str.: zwischen Schonensche Str. und Wisbyer Str. Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 03.03.2025 07:00 bis 02.08.2025 17:00',
+       text  => 'Trelleborger Str.: zwischen Schonensche Str. und Wisbyer Str. Sperrung, evtl. sind auch Radfahrer betroffen, bis 07.08.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.418488,52.553809,03.03.2025,07:00 (hier nur Kfz-Verkehr, bis 02.08.2025) (inaktiv)
-#: source_id: viz2021:13.41845,52.55424,03.03.2025,07:00 (bis 02.08.2025)
-	q4::inwork; 11284,16527 11289,16423
+#: source_id: viz2021:13.41845,52.55424,03.03.2025,07:00 (bis 02.08.2025) (inaktiv)
+#: source_id: viz2021:13.41845,52.55424, (nun gesperrt, bis 07.08.2025)
+#: note: bei rbb weiterhin nur Einbahnstraßenregelung, aber auch verlängert, hier bis zum 08.08.2025
+# REMOVED ---	q4::inwork; 11284,16527 11289,16423
+	q4::inwork 11284,16527 11289,16423
 EOF
      },
      { from  => 1742079600, # 2025-03-16 00:00
@@ -47534,7 +47541,7 @@ EOF
        text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 8.8.2025 22:00 Uhr bis zum 11.8.2025 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/25/019 (bis 07.04.2025)
+#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
@@ -47981,7 +47988,7 @@ EOF
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum
+#: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
 #: last_checked: 2025-07-25 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-08-29 (ADAC-Verkehrsmeldung) vvv
@@ -48754,6 +48761,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/schadensbilanz-nach-unwettern-in-berlin-bezirke-zahlen-millionensummen-fur-sturmschaden-14093090.html
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1586329.php (u.a. Erwähnung des Tegeler Fließes)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-31 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
@@ -48821,6 +48829,7 @@ EOF
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1583117.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
 #: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
 #: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
 #: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
@@ -48872,15 +48881,15 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 EOF
      },
      { from  => 1750861140, # 2025-06-25 16:19
-       until => $isodate2epoch->("2025-08-01 18:00:00"), # 1752530340, # 2025-07-14 23:59
+       until => $isodate2epoch->("2025-08-20 18:00:00"), # 1752530340, # 2025-07-14 23:59
 #      text  => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, vom 26.06.2025 16:19 bis 14.07.2025 23:59',
-       text  => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis Anfang August 2025',
+       text  => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis 20. August 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
 #: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
-#: source_id: adac:119662672 (bis 01.08.2025)
-#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025)
+#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025)
+#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025)
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: bei rbb bis 01.08.2025 verlängert, allerdings hier Kreuzung Kirschenallee
 	q3::inwork 919,11938 1078,11895 1188,11861
@@ -49169,7 +49178,7 @@ EOF
        text  => 'B167: Bauarbeiten zwischen Abzweig nach Eichhorst und Abzweig nach Marienwerder, Sperrung, vom 28.07.2025 08:00 Uhr bis 01.08.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LS/221-E/25/086 (bis 01.08.2025)
+#: source_id: LS/221-E/25/086 (bis 01.08.2025) (inaktiv)
 #: source_id: LS/221-E/25/105-1 (Gegenverkehrsregelung, 11.08.2025 bis 15.08.2025)
 	2::inwork 23759,49971 24081,50440 24364,50554 24522,50570 25904,50276 26244,50372
 EOF
