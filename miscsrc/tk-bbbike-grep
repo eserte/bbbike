@@ -27,6 +27,14 @@ my $current_url_filename;
 my $stay_on_top = 1;
 my $debug;
 
+my @add_bbbike_grep;
+# XXX maybe make the following conditional?
+for my $add_org_file ("$ENV{HOME}/src/bbbike-aux/tmp/bplan.org") {
+    if (-r $add_org_file) {
+	push @add_bbbike_grep, '--add-org-file', $add_org_file;
+    }
+}
+
 # XXX actually it would be good if we could determine which emacs is available,
 # and switch on/off the bug handling
 my $WORKAROUND_EMACS_24_BUG = 1;
@@ -132,7 +140,7 @@ sub run_grep {
     }
 	
     # XXX -limit 100 may be too small: /bahnhofstr/ has currently 317 matches
-    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "--byte-offset", "--", $grep_word or die $!;
+    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "--byte-offset", @add_bbbike_grep, "--", $grep_word or die $!;
     binmode $fh, ':utf8';
     my @output = <$fh>;
     $rotext->delete('1.0', 'end');
@@ -210,18 +218,30 @@ sub call_emacsclient {
 
 sub call_emacsclient_with_byte_offset {
     my($filename, $byte_offset) = @_;
+    my $is_org_mode_file = $filename =~ /\.org$/;
     my $emacs_position = $byte_offset + 1;
+    my $unfold_code = $is_org_mode_file ? ' (org-show-entry)' : '';
     my $eval_code;
     if ($WORKAROUND_EMACS_24_BUG) {
-	if (open my $fh, $filename) {
-	    my $first_line = <$fh>;
-	    if ($first_line !~ /utf-?8/i) { # just a heuristic to detect single byte encoding
-		$eval_code = qq{(progn (find-file "$filename") (goto-char $emacs_position) (x-focus-frame nil))}; # XXX do not use byte-to-position, see https://debbugs.gnu.org/cgi/bugreport.cgi?bug=20783
+	my $is_single_byte_encoding;
+	if ($is_org_mode_file) { # org-mode files usually utf-8
+	    $is_single_byte_encoding = 0;
+	} else {
+	    if (open my $fh, $filename) {
+		my $first_line = <$fh>;
+		if ($first_line !~ /utf-?8/i) { # just a heuristic to detect single byte encoding
+		    $is_single_byte_encoding = 1;
+		} else {
+		    $is_single_byte_encoding = 0;
+		}
 	    }
+	}
+	if ($is_single_byte_encoding) {
+	    $eval_code = qq{(progn (find-file "$filename") (goto-char $emacs_position) (x-focus-frame nil)$unfold_code)}; # XXX do not use byte-to-position, see https://debbugs.gnu.org/cgi/bugreport.cgi?bug=20783
 	}
     }
     if (!$eval_code) {
-	$eval_code = qq{(progn (find-file "$filename") (goto-char (byte-to-position $emacs_position)) (x-focus-frame nil))};
+	$eval_code = qq{(progn (find-file "$filename") (goto-char (byte-to-position $emacs_position)) (x-focus-frame nil)$unfold_code)};
     }
     my @cmd = ('emacsclient', '-n', '-e', $eval_code);
     warn "Run: @cmd" if $debug;
