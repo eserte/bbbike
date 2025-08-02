@@ -294,8 +294,21 @@ sub toggle_update_from_file {
 	    $selection_content = "";
 	    return;
 	}
-	if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED|UNCHANGED, EXPIRED)\t.*\t([^\t]+)\t/) {
+	if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED|UNCHANGED|UNCHANGED, EXPIRED)\t.*\t([^\t]+)\t/) {
 	    $selection_content = $1; # VIZ source_id
+	    if ($selection_content =~ / /) { # new multiple ids
+		# heuristic to use the viz2021 (backward compat)
+		my @ids = split / /, $selection_content;
+	    FIND_VIZ_2021_ID: {
+		    for my $id (@ids) {
+			if ($id =~ /^viz2021:/) {
+			    $selection_content = $id;
+			    last FIND_VIZ_2021_ID;
+			}
+		    }
+		    $selection_content = $ids[0];
+		}
+	    }
 	} else {
 	    $selection_content =~ s/^\s+//; $selection_content =~ s/\s+$//; $selection_content =~ s/\s\s+/ /g; # trim
 	    $selection_content =~ s/\n.*$//;  # Crop after the first line
