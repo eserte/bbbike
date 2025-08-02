@@ -134,13 +134,19 @@ MainLoop;
 # Function to run grep command
 sub run_grep {
     my $grep_word = $grep_entry->get;
-    if (length $grep_word > MAX_GREP_WORD_LENGTH) {
-	warn "WARNING: word to search for is too long (" . length($grep_word) . " characters), snipped to " . MAX_GREP_WORD_LENGTH . "\n";
-	$grep_word = substr($grep_word, 0, MAX_GREP_WORD_LENGTH);
+    my $term_type_opt = '--fixed';
+    if ($grep_word =~ m{^\(.+\|.+\)$}) { # heuristic: looks like a regexp with multiple alternatives
+	$term_type_opt = '--rx';
+	# no length check & snipping done for regexps
+    } else {
+	if (length $grep_word > MAX_GREP_WORD_LENGTH) {
+	    warn "WARNING: word to search for is too long (" . length($grep_word) . " characters), snipped to " . MAX_GREP_WORD_LENGTH . "\n";
+	    $grep_word = substr($grep_word, 0, MAX_GREP_WORD_LENGTH);
+	}
     }
 	
     # XXX -limit 100 may be too small: /bahnhofstr/ has currently 317 matches
-    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", "-limit", 100, "-reldir", cwd(), "--byte-offset", @add_bbbike_grep, "--", $grep_word or die $!;
+    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", $term_type_opt, "-limit", 100, "-reldir", cwd(), "--byte-offset", @add_bbbike_grep, "--", $grep_word or die $!;
     binmode $fh, ':utf8';
     my @output = <$fh>;
     $rotext->delete('1.0', 'end');
@@ -297,25 +303,19 @@ sub toggle_update_from_file {
 	if ($selection_content =~ /^(?:CHANGED|NEW|REMOVED|UNCHANGED|UNCHANGED, EXPIRED)\t.*\t([^\t]+)\t/) {
 	    $selection_content = $1; # VIZ source_id
 	    if ($selection_content =~ / /) { # new multiple ids
-		# heuristic to use the viz2021 (backward compat)
-		my @ids = split / /, $selection_content;
-	    FIND_VIZ_2021_ID: {
-		    for my $id (@ids) {
-			if ($id =~ /^viz2021:/) {
-			    $selection_content = $id;
-			    last FIND_VIZ_2021_ID;
-			}
-		    }
-		    $selection_content = $ids[0];
-		}
+		$selection_content = [ split / /, $selection_content ];
 	    }
 	} else {
 	    $selection_content =~ s/^\s+//; $selection_content =~ s/\s+$//; $selection_content =~ s/\s\s+/ /g; # trim
 	    $selection_content =~ s/\n.*$//;  # Crop after the first line
 	}
-	return if $selection_content eq '';
-	$selection_content = url_normalizations($selection_content);
-	$selection_content = expand_short_link($selection_content);
+	if (ref $selection_content eq 'ARRAY') { # array of regexp terms
+	    $selection_content = '(' . join('|', map { quotemeta } @$selection_content) . ')';
+	} else {
+	    return if $selection_content eq '';
+	    $selection_content = url_normalizations($selection_content);
+	    $selection_content = expand_short_link($selection_content);
+	}
 	if ($old_selection_content ne $selection_content) {
 	    $last_update_change = time;
 	    $old_selection_content = $selection_content;
