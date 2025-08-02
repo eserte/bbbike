@@ -13,6 +13,8 @@
 
 (defvar bbbike-view-url-prefer-cached nil "If set to t then prefer showing the cached version in bbbike-view-url. Use bbbike-toggle-view-url to toggle the value.")
 
+(defvar bbbike-org-files '() "Set to a list of org-mode files which may contain supplemental bbbike data information.")
+
 (defvar bbbike-font-lock-trailing-whitespace-face 'bbbike-font-lock-trailing-whitespace-face
   "Face name to use for highlightning trailing whitespace.")
 (defface bbbike-font-lock-trailing-whitespace-face
@@ -742,11 +744,10 @@
 	 (bbbike-grep-cmd (concat bbbike-rootdir "/miscsrc/bbbike-grep -n"
 				  " --add-file-with-encoding " bbbike-rootdir "/t/cgi-mechanize.t:iso-8859-1"
 				  " --add-file-with-encoding " bbbike-rootdir "/t/old_comments.t:iso-8859-1"
-				  ; XXX experimental: search also in org files (e.g. for Bebauungsplaene)
-				  (if (org-agenda-files)
+				  (if bbbike-org-files
 				      (concat " "
-					      (mapconcat (lambda (file) (concat "--add-file-with-encoding " file ":utf-8")) ; assume that org-mode files are encoded using utf-8
-							 (org-agenda-files)
+					      (mapconcat (lambda (file) (concat "--add-org-file " file))
+							 bbbike-org-files
 							 " ")))
 				  " --reldir " bbbike-datadir
 				  (if is-regexp " --rx" " --")
