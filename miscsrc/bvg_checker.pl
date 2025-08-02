@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -137,7 +137,7 @@ if ($errors) {
 	exit 0;
     } else {
 	if ($errors > 5) { # arbitrary number, or maybe work with percentages?
-	    if ($ignore_broken_marker) {
+	    if (BVG_SITE_IS_BROKEN && $ignore_broken_marker) {
 		printerr "BVG site is known to be broken (BVG_SITE_IS_BROKEN is defined)", "red on_black";
 		printerr "\n";
 	    } else {
