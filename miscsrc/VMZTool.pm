@@ -16,7 +16,7 @@ package VMZTool;
 use v5.10.0; # named captures, defined-or
 use strict;
 use warnings;
-our $VERSION = '0.16';
+our $VERSION = '0.17';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -660,7 +660,7 @@ sub parse_vmz_2021 {
     };
 
     my @records = @{ $data->{features} };
-    my %seen_id;
+    my %seen_viz2021_id;
     for my $record (@records) {
 	my $properties = $record->{properties};
 	my $geometry   = $record->{geometry};
@@ -675,16 +675,26 @@ sub parse_vmz_2021 {
 	}
 	my($lon, $lat) = @$first_coordinate;
 
-	# no id, we need to make something up (based on coordinates of point
-	my $coord_for_id = join ",", $Karte::Polar::obj->trim_accuracy($lon, $lat);
-	my $validity_from_for_id = join ",", split /\s+/, $properties->{validity}->{from};
-	my $id = "viz2021:$coord_for_id,$validity_from_for_id";
-	while ($seen_id{$id}) {
-	    if (!($id =~ s{-(\d+)$}{"-".($1+1)}e)) {
-		$id .= "-1";
+	my $viz2025_id;
+	if ($properties->{id}) {
+	    if      ($properties->{id} =~ m{^LMS-BR[_/]r_LMS-BR[_/](\d+)_LMS-BR[_/](\d+)$}) {
+		$viz2025_id = "LMS-BR:$1/$2";
+	    } elsif ($properties->{id} =~ m{^AdbNO[_/]r_AdbNO[_/](\d+)_AdB-NO$}) {
+		$viz2025_id = "AdbNO:$1";
+	    } else {
+		$viz2025_id = "viz2025:$properties->{id}";
 	    }
 	}
-	$seen_id{$id} = 1;
+
+	my $coord_for_viz2021_id = join ",", $Karte::Polar::obj->trim_accuracy($lon, $lat);
+	my $validity_from_for_viz2021_id = join ",", split /\s+/, $properties->{validity}->{from};
+	my $viz2021_id = "viz2021:$coord_for_viz2021_id,$validity_from_for_viz2021_id";
+	while ($seen_viz2021_id{$viz2021_id}) {
+	    if (!($viz2021_id =~ s{-(\d+)$}{"-".($1+1)}e)) {
+		$viz2021_id .= "-1";
+	    }
+	}
+	$seen_viz2021_id{$viz2021_id} = 1;
 
 	my $validity_text = do {
 	    my $timeFrom = $properties->{validity}->{from};
@@ -695,7 +705,7 @@ sub parse_vmz_2021 {
 		);
 	};
 	if (!$validity_text) {
-	    warn "Cannot parse validity for id $id: $@";
+	    warn "Cannot parse validity for viz2021 id $viz2021_id: $@";
 	}
 
 	my($minTimeFrom, $maxTimeTo);
@@ -734,8 +744,9 @@ sub parse_vmz_2021 {
 
 	my $out_record =
 	    { place    => $place,
-	      id       => $id,
+	      id       => $viz2021_id,
 	      (defined $properties->{id} ? (orig_id => $properties->{id}) : ()),
+	      viz2025_id => $viz2025_id,
 	      points   => [ {lon => $lon, lat => $lat} ],
 	      type     => $type,
 	      text     => $text,
@@ -745,7 +756,7 @@ sub parse_vmz_2021 {
 	    };
 
 	push @{ $place2rec{$place} }, $out_record;
-	$id2rec{$id} = $out_record;
+	$id2rec{$viz2021_id} = $out_record;
     }
 
     (place2rec => \%place2rec,
@@ -861,9 +872,15 @@ EOF
 	    my($sx,$sy) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($rec->{lon},$rec->{lat}));
 	    @coords = "$sx,$sy";
 	}
+	my @ids;
+	for my $id_field (qw(viz2025_id id)) {
+	    if (defined $rec->{$id_field}) {
+		push @ids, $rec->{$id_field};
+	    }
+	}
 	$s .= join(", ", @attribs) . "¦" .
 	    ($rec->{place} ne 'Berlin' ? $rec->{place} . ": " : '') .
-		$text . "¦" . $id . "¦" . ($rec->{map_url} || '') . "¦" . ($self->{existsid_current}->{$id} ? 'INUSE' : $self->{existsid_old}->{$id} ? 'WAS_INUSE' : '') .
+		$text . "¦" . join(" ", @ids) . "¦" . ($rec->{map_url} || '') . "¦" . ($self->{existsid_current}->{$id} ? 'INUSE' : $self->{existsid_old}->{$id} ? 'WAS_INUSE' : '') .
 		    "\tX @coords\n";
     };
     my %seen_id;
@@ -1012,6 +1029,7 @@ if ($do_test) {
 		undef $vmz_2021_file;
 	    } else {
 		$vmz_2021_file = $vmz_2021_files[0];
+		warn "INFO: use $vmz_2021_file\n";
 	    }
 	}
     }
