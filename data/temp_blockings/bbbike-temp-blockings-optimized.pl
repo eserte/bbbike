@@ -5694,9 +5694,9 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-02
 #: check_frequency: 30d
-#: next_check: 2025-07-31
+# REMOVED --- #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
 ',
          'from' => undef,
@@ -6280,7 +6280,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: note: Hauffstr.: Stand Mitte Mai 2025: Durchfahrt an einem Samstag (außerhalb der Arbeitszeiten?) problemlos möglich, aber offiziell nur der Durchgang zum Sport/Spielplatz möglich
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-07-16
+#: last_checked: 2025-08-02
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
@@ -7353,8 +7353,8 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        {
          'data' => '#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13021 (Antrag)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13066 (Anfrage)
-#: osm_watch: way id="27457006" version="25"
-#: last_checked: 2025-04-18 (osm)
+#: osm_watch: way id="27457006" version="26"
+#: last_checked: 2025-07-31 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -7934,6 +7934,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
 #: source_id: adac:935330908 (bis 19.08.2025)
+#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres"
 #: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
@@ -7944,7 +7945,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 ',
          'from' => 1737970440,
          'id' => 4246,
-         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 19.08.2025',
+         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 19.08.2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8351,7 +8352,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
 #: osm_watch: way id="276210232" version="6"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2025-06-24 (architektur-urbanistik)
+#: last_checked: 2025-07-26 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -8592,8 +8593,8 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-07-28
-#: check_frequency: 10d
+#: last_checked: 2025-08-02
+#: check_frequency: 30d
 #: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
 ',
@@ -8798,7 +8799,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-07-24 (traffic)
+#: last_checked: 2025-08-02 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 ',
@@ -8848,6 +8849,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1586329.php (u.a. Erwähnung des Tegeler Fließes)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
+#: by: https://www.tagesspiegel.de/berlin/raumungsarbeiten-dauern-langer-als-geplant-spandauer-und-tegeler-forst-bleiben-bis-zum-18-august-gesperrt-14112452.html
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: last_checked: 2025-07-31 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv

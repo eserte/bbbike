@@ -3186,7 +3186,7 @@ provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beerman
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-07-28
+#: last_checked: 2025-08-02
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -3195,7 +3195,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598 15153,11691 15202,11789 15256,11884
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
-#: last_checked: 2025-07-28
+#: last_checked: 2025-08-02
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -8087,7 +8087,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: adac:334221108 (bis 30.06.2026) (!)
 #: source_id: viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026)
 #: source_id: viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026)
-#: source_id: viz2021:13.49537,52.43164, (Ampelanlage außer Betrieb, kein Endedatum)
+#: source_id: viz2021:13.49537,52.43164, (Ampelanlage außer Betrieb, kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.485714,52.424228, (bis 12.05.2026)
 #: source_id: viz2021:13.48561,52.42415, (bis 30.06.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892218755624718652 (nur Kfz-Verkehr erwähnt)
@@ -8841,6 +8841,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/dauerstreit-um-radweg-in-der-berliner-kantstrasse-ist-der-geplante-ruckbau-rechtswidrig-14065343.html
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1584432.php (dauerhafte Markierung zwischen Dernburgstr. und Wilmersdorfer Str., 28. Juli 2025 - 17. August 2025)
 #: by: https://entwicklungsstadt.de/bezirk-setzt-zeichen-fester-radweg-auf-der-kantstrasse-wird-eingerichtet/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/pop-up-radweg-in-berlin-charlottenburg-warum-in-der-kantstrasse-jetzt-gebaut-wird-14119145.html
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
 #: last_checked: 2025-07-25 (BA-Pressemitteilung) vvv

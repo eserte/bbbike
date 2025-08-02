@@ -793,8 +793,8 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 # REMOVED (bereits asphaltierter Kreuzungsbereich) --- #: osm_watch: way id="4480580" version="21"
 # REMOVED (bereits asphaltierter Kreuzungsbereich) --- #: osm_watch: way id="4436949" version="20"
 #: osm_watch: way id="1101189359" version="6"
-#: osm_watch: way id="1101189360" version="5"
-#: osm_watch: note 4529248 5
+#: osm_watch: way id="1101189360" version="6"
+#: osm_watch[closed]: note 4529248 5
 #: last_checked: 2025-06-25
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 90d
@@ -13869,7 +13869,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-07-27 vvv
+#: last_checked: 2025-08-02 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^

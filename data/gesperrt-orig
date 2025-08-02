@@ -183,7 +183,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-07-27 vvv
+#: last_checked: 2025-08-02 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -271,7 +271,7 @@ Hardenbergplatz	1 5542,11075 5560,11124 5600,11143 5627,11210 5618,11255 5666,11
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8340,3242 8327,2987
 Dederingstr.	1 8455,2979 8476,3367
-Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
+# REMOVED (seit Sommer 2025 ist die Einbahnstraßenregelung aufgehoben) --- Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
 Quickborner Str.	1s:q4 8016,21499 8078,21415 8162,21302
 #: by: Jessaï Arakelian
 #: confirmed_by: srt
@@ -4387,6 +4387,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzaun nicht 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=736121#post736121
 #: by: https://www.deutsches-architekturforum.de/thread/15360-quartier-hugos-mariendorf/?postID=731063#post731063 ("Quartier Hugos")
+#: by: https://entwicklungsstadt.de/zwischen-baustelle-und-nachbarschaft-wie-sich-das-quartier-hugos-entwickelt/ (bis Herbst 2026)
 #: osm_watch: way id="287142081" version="14"
 #: osm_watch: way id="255588538" version="14"
 #: osm_watch: way id="1022315542" version="10"
@@ -4531,7 +4532,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-07-20 vvv
+#: last_checked: 2025-08-02 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4569,7 +4570,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-02
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4653,7 +4654,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2025-05-21 (Baustraße existiert noch)
+#: last_checked: 2025-08-01 (architektur-urbanistik) (Baustraße existiert noch)
 #: check_frequency: 180d
 #: next_check: 2028-12-23 (Amtsblatt)
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -4931,6 +4932,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/howoge-baut-quartier-mit-gruener-energie_a428074
 #: by: https://entwicklungsstadt.de/friedrichsfelde-hier-entstehen-148-wohnungen-der-howoge/ (Fertigstellung Sommer 2026)
 #: by: https://entwicklungsstadt.de/lichtenberg-so-sehen-die-nur-strom-haeuser-in-der-lueckstrasse-aus/
+#: by: https://entwicklungsstadt.de/315-neue-wohnungen-zwei-quartiere-der-howoge-gehen-in-die-vermietung/ (Einzug ab Oktober 2025)
 # REMOVED (deleted) --- #: osm_watch: way id="830757933" version="2"
 # REMOVED (deleted) --- #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="5"

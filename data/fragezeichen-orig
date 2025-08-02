@@ -197,9 +197,9 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: source_id: viz2021:13.179975,52.421904,07.02.2023,07:00 (Leitungsarbeiten bis 21.2.2023) (bis 02.05.2023) (bis 30.05.2023) (bis 25.08.2023) (bis 11.10.2023) (bis 13.10.2023) (bis 13.11.2023) (weitere Arbeiten im Anschluss) (inaktiv)
 #: source_id: viz2021:13.18669,52.43221,17.09.2024,07:00 (bis 07.10.2024) (inaktiv)
 #: source_id: viz2021:13.188156,52.433161,17.09.2024,07:00 (Fahrbahnsanierung, bis 30.10.2024) (inaktiv)
-#: osm_watch: way id="4323788" version="25"
-#: osm_watch: way id="23109081" version="21"
-#: osm_watch: way id="41108858" version="18"
+#: osm_watch: way id="4323788" version="26"
+#: osm_watch: way id="23109081" version="22"
+#: osm_watch: way id="41108858" version="20"
 #: last_checked: 2025-06-25 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-11
@@ -1253,6 +1253,7 @@ Wilhelminenhofbr¸cke: geplant, mit Radverkehrsanlage nˆrdlich der Br¸cke	?::proj
 #: by: https://berliner-abendblatt.de/berlin-news/spatenstich-fuer-gewerbestadtquartier-am-behrensufer-erfolgt-id235777
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/das-behrens-ufer-wird-eines-der-weltweit-modernsten-stadtquartiere_a397723
 #: by: http://www.deal-magazin.com/news/3/141612/DIEAG-uebergibt-Anteile-des-BE-U--Behrens-Ufer-planmaessig-an-Investor
+#: by: https://entwicklungsstadt.de/projekt-be-u-in-oberschoeneweide-gestaltung-fuer-drei-neue-hochhaeuser/
 #: osm_watch: way id="1196323869" version="3"
 #: XXX Bebauungsplan 9-59
 #: last_checked: 2025-04-26
@@ -2811,6 +2812,7 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straﬂe entstehen, Straﬂenname, Qualit‰
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-wohngebiet-mehrfamilienhaussiedlung-hassoweg-nelkenweg-anne-frank-strasse-berlin-deutschland-637960.html
 #: by: https://entwicklungsstadt.de/altglienicke-richtfest-fuer-583-neue-howoge-mietwohnungen/
 #: by: https://entwicklungsstadt.de/frueher-als-geplant-211-wohnungen-in-treptow-koepenick-bezugsfertig/ (zweiter Bauabschnitt im Oktober 2025 fertig)
+#: by: https://entwicklungsstadt.de/315-neue-wohnungen-zwei-quartiere-der-howoge-gehen-in-die-vermietung/ (Gesamtfertigstellung September 2026)
 #: osm_watch: way id="439663104" version="12"
 #: source_id: viz2021:13.534518,52.409337,28.04.2025,09:00 (Bau einer Tiefgaragenzufahrt, bis 09.05.2025) (bis 13.05.2025) (bis 23.05.2025) (inaktiv)
 #: XXX mˆglicherweise entsteht hier ein Geh/Radweg in N-S-Richtung
@@ -3431,6 +3433,7 @@ Buschwindrˆschenweg: wird diese Straﬂe verkehrsberuhigt sein? wird es wie im ben
 #: by: https://www.morgenpost.de/berlin/article409323489/a100-verkehrschaos-noch-keine-ampelplanung-fuer-die-ersten-monate.html
 #: by: https://entwicklungsstadt.de/a100-bis-treptower-park-kritik-an-fehlender-ampelplanung-waechst/
 #: by: https://www.tagesspiegel.de/berlin/am-neuen-ende-der-berliner-stadtautobahn-fussganger-und-radfahrer-mussen-lange-warten-13911514.html
+#: by: https://entwicklungsstadt.de/kritik-an-senatsverwaltung-buendnis-fordert-mehr-transparenz-bei-a100-verlaengerung/
 #: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024) (bis 18.10.2024) (bis 29.11.2024) (bis 20.12.2024) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.460292,52.47175,05.06.2025,07:00 (Installation einer Ampelanlage in der Sonnenallee, bis 13.06.2025) (inaktiv)
 #: XXX -> strassen_bab-orig, wenn fertig
@@ -4744,7 +4747,7 @@ Eisenacher Str./Hellersdorfer Br¸cke: Bauarbeiten	?::inwork 21599,15213 21718,15
 #: XXX hier auch f¸r Radfahrer frei?
 #: note: laut rbbtext bis 31.3.2021
 #: source_id: 2147344451 (bis 28.2.2021) (inaktiv)
-#: osm_watch: way id="373625581" version="21"
+#: osm_watch: way id="373625581" version="22"
 #: last_checked: 2025-06-21 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-06-30
@@ -5650,7 +5653,7 @@ Werneuchener Str./K¸striner Str.: entsteht hier ein neuer Zebrastreifen?	? 16301
 #: check_frequency: 60d (outdoor)
 # REMOVED --- #: next_check: 2025-07-23 (Halteverbotschilder)
 Franz-Jacob-Str./Max-Brunnow-Str.: entsteht hier ein neuer Zebrastreifen?	? 14519,13404 14529,13384 14545,13363
-#: last_checked: 2025-06-30
+#: last_checked: 2025-08-02
 Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15487,11398 15497,11381 15507,11357
 #: check_frequency ^^^
 #: priority ^^^
@@ -5672,7 +5675,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fuﬂg‰nger¸berweg (Zebrastreifen?) geplant	?
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516792.php (in Umsetzung bzw. kurz davor)
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (hier: Hˆhe Ingrid-Reschke-Str., aber tats‰chlich Hˆhe An den Eiswerken, bis 20.07.2025) (inaktiv)
-#: last_checked: 2025-07-30 vvv
+#: last_checked: 2025-08-02 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel oder Fuﬂg‰ngerampel entsteht	?::projected 14988,10778 15004,10791 15019,10803
@@ -6395,7 +6398,7 @@ Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,1091
 # REMOVED --- (Hauptstr./Rummelsburger Ufer - Gustav-Tempel-Str.): ein asphaltierter Zweirichtungsradweg entsteht	?::inwork 15298,10682 15245,10719
 #: osm_watch: way id="176050265" version="12"
 #: osm_watch: way id="1099807542" version="8"
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-02
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (infravelo)
 Hauptstr. [Nebenfahrbahn]: wird hier eine Fahrradstraﬂe eingerichtet (wo genau?)? was passiert mit der Einbahnstraﬂenregelung?	? 15298,10682 15332,10657 15392,10615
@@ -6424,7 +6427,7 @@ An der Bucht: mˆgliche Einrichtung einer Fahrradstraﬂe an der Rummelsburger Buch
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-02
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -7412,6 +7415,7 @@ Gerlinger Str.: geplanter Radstreifen	?::projected 11791,834 11997,874 12107,898
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.infravelo.de/projekt/hohenzollerndamm/ (3. Quartal 2022 - 4. Quartal 2022) (mittlerweile in der API verschwunden, Web ist noch da) (und wieder da) (1. Quartal 2023 - 2. Quartal 2023) (3. Quartal 2023 - 2. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1585963.php (Start 6. August 2025, Abschluss im ersten Halbjahr 2026)
+#: by: https://entwicklungsstadt.de/neue-infrastruktur-am-hohenzollerndamm-arbeiten-bis-2026-geplant/
 #: XXX beide Fahrtrichtungen?
 #: last_checked: 2025-06-26 (mapillary)
 #: check_frequency: 180d
@@ -7556,9 +7560,9 @@ Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu ƒnderungen (z.B. Asphaltier
 #: osm_watch: way id="1168938182" version="8"
 #: osm_watch: way id="837927791" version="12"
 #: also_indoor: search Wolziger_Zeile
-#: last_checked: 2025-07-21 (DB website)
+#: last_checked: 2025-08-01 (DB website)
 # REMOVED --- #: check_frequency: 14d (indoor research)
-#: check_frequency: 180d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung (muss aber vermutlich verl‰ngert werden))
 # REMOVED --- #: next_check: 2025-09-20 (pardok, bahninfo)
 Wolziger Zeile: Unterf¸hrung wird gebaut	?::inwork 10307,-2633 10389,-2632 10382,-2598
@@ -8003,7 +8007,7 @@ Brachvogelstr., Alexandrinenstr.: Fahrradstraﬂe entsteht	?::inwork 10006,9942 10
 #: osm_watch: way id="71089567" version="25"
 #: XXX Fahrradstraﬂe entsteht (auf 420m L‰nge; ist der Anschluss zum S¸dstern dabei?) (danach Degradierung NH -> N, evtl. auch den nordwestlichen Abschnitt); Sanierung der besch‰digten Fahrbahn; drei Fahrbahnkissen (werden sie den Radverkehr stˆren?)
 #: add_fragezeichen: Haben die Fahrbahnsanierungsarbeiten begonnen? Haben die Arbeiten f¸r die neue Fahrradstraﬂe begonnen?
-#: last_checked: 2025-07-31 (traffic)
+#: last_checked: 2025-08-02 (traffic)
 #: check_frequency: 3d
 # REMOVED --- #: next_check: 2025-07-28 (Einschr‰nkungen durch die Bauarbeiten?)
 Bl¸cherstr.: Fahrradstraﬂe entsteht	?::projected 10306,9640 10429,9514 10580,9361
@@ -8021,6 +8025,7 @@ Bl¸cherstr.: Fahrradstraﬂe entsteht	?::projected 10306,9640 10429,9514 10580,936
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_01_0001_0064_online.pdf (Grundst¸cksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_04_0165_0236_online.pdf (Klage)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_52_3843_3918_online.pdf (Grundst¸cksnummerierungen)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/90-gestrichene-parkplatze-in-kreuzberg-wann-wird-das-parken-im-ganzen-bezirk-kostenpflichtig-14101760.html
 #: XXX Bleibt dieses St¸ck noch ˆffentlich befahrbar? (vermutlich ja)
 #: XXX Privatstraﬂe
 #: osm_watch: way id="156418480" version="16"
@@ -8974,7 +8979,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine ‹berquerungsmˆglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: note: erste Pfosten stehen bereits, mit meist zugeh‰ngten Schildern, einige Schilder schon (illegal?) nicht mehr zugehangen, auﬂerdem erste Markierungen (Radspuren gegen die Einbahnstraﬂenrichtung); laut Aush‰ngen im Februar (2025) aktiv, ist aber offensichtlich verzˆgert
-#: last_checked: 2025-07-31 vvv
+#: last_checked: 2025-08-02 vvv
 #: check_frequency: 14d vvv
 # REMOVED (realisiert) --- #: osm_watch: way id="1145089826" version="5" --- Scharnweberstr.: Einbahnstraﬂe f¸r Kfz in Vorbereitung	? 14783,11949 14888,11934
 # REMOVED (realisiert) --- #: osm_watch: way id="127538487" version="21" --- Finowstr.: Einbahnstraﬂe f¸r Kfz in Vorbereitung	? 14783,11949 14710,11824
@@ -10615,7 +10620,7 @@ Krampnitz: neue Planstraﬂen	?::inwork -14183,5214 -13771,5077
 # REMOVED (-> strassen-orig) --- Gustav-Tempel-Str.: zuk¸nftiger Fahrbahnbelag unklar, noch nicht offiziell offen, vermutlich wird noch in Richtung Westen verl‰ngert	? 15220,10682 15205,10616 15200,10600
 # REMOVED (-> strassen-orig) --- An den Eiswerken	? 15004,10791 14994,10732 14984,10677
 # REMOVED (-> strassen-orig) --- Paul-und-Paula-Promenade	? 14886,10748 14909,10732 14984,10677
-#: last_checked: 2025-07-27 vvv
+#: last_checked: 2025-08-02 vvv
 #: check_frequency: 90d vvv
 #: XXX beim DPAG-Mitteilungsblatt 6/2023 als "Paul-und Paula-Promenade" bezeichnet (ein Bindestrich weniger); PLZ=10317
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
@@ -13675,6 +13680,7 @@ Straﬂen in Dˆberitz: genaue Straﬂennamen, Qualit‰t?	? -12956,13814 -13017,13815 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_16_1065_1112_online.pdf (Straﬂenlandwidmung: Begradigung der Waldstraﬂe am nˆrdlichen Ende? Vrkehrs¸bergabe folgt noch)
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12292 (Vorlage zur Beschlussfassung)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/FjXh77WYUTIyEUow0SIdktFJNOsCfsaqZqsca7NQ/uYgVtHrx/40-Anlagen/02/vzb1117_VI_B-Plan_10-15_Festsetzung.pdf
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2025/vzb1205_vi-konstitutiver_beschluss_b-plan_10-15.pdf (Festsetzung)
 #: XXX laut Bebauungsplan 10-15 soll die Verbindung zwischen Chemnitzer Str. und Heerstr. gebaut werden (hier nur als "Fuﬂweg" gekennzeichnet), auﬂerdem soll die Waldstr. begradigt werden
 #: XXX am Sackgassenende Fichtestr. geht es noch ein paar Meter weiter zum Fahrradparkplatz der Kita; auﬂerdem ist die "Trassenfreihaltung" sichtbar, aber es ist noch nichts passiert
 #: osm_watch: way id="285893839" version="6"
