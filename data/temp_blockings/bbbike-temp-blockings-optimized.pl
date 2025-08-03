@@ -2970,7 +2970,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-07-26
+#: last_checked: 2025-08-03 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -6319,8 +6319,8 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        undef,
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
-#: also_indoor: traffic (H,G,T,W)
-#: last_checked: 2025-07-27
+#: also_indoor: traffic (ex-H,ex-G,T,ex-W)
+#: last_checked: 2025-08-03 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -6980,8 +6980,10 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
 #: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
-#: XXX Möglicherweise schon wieder offen?
-#: next_check: 2025-08-01 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-08-03
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-08-01 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-31 (Baustellenschild)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 ',
          'from' => 1711947600,
@@ -7453,7 +7455,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-07-08 (research)
+#: last_checked: 2025-08-03 (research)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -7481,7 +7483,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-07-28 (tempelhoferfeld website) vvv
+#: last_checked: 2025-08-03 (tempelhoferfeld website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7676,7 +7678,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        },
        {
          'data' => '#: by: rbb, wurde da aber mittlerweile entfernt
-#: also_indoor: traffic (ex-G,ex-W,B,T)
+#: also_indoor: traffic (re-G,ex-W,B,T)
 #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
 #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
@@ -7832,7 +7834,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
 #: by: https://entwicklungsstadt.de/baustart-in-tempelhof-neues-klinikgebaeude-fuer-das-st-joseph-krankenhaus/ (bis Ende 2028, Verzögerungen möglich)
 #: note: Gesperrter Bereich ca. 80m. Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
-#: also_indoor: traffic (B,T,G[falsch])
+#: also_indoor: traffic (ex-B,ex-T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
 #: last_checked: 2025-07-12 (traffic)
@@ -7850,7 +7852,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (G,T,B,A)
+         'data' => '#: also_indoor: traffic (ex-G,T,B,A)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
 #: last_checked: 2025-07-28 (traffic)
 #: check_frequency: 7d
@@ -8494,7 +8496,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-07-25 vvv
+#: last_checked: 2025-08-03 (traffic) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-08-29 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -8799,7 +8801,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-08-02 (traffic)
+#: last_checked: 2025-08-03 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 ',
@@ -9039,7 +9041,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-07-08 (research)
+#: last_checked: 2025-08-03 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 ',
          'from' => undef,
@@ -9173,9 +9175,10 @@ Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork 
          'until' => 1757170800
        },
        {
-         'data' => '#: also_indoor: traffic (T)
+         'data' => '#: also_indoor: traffic (ex-T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-07-17
+#: check_frequency: 14d
 	q3::inwork 6118,10327 6065,10129
 ',
          'from' => undef,
@@ -9186,10 +9189,11 @@ Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork 
        },
        {
          'data' => '#: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (T)
+#: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-17 (traffic)
+#: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 ',
          'from' => undef,
@@ -9366,6 +9370,19 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'text' => 'Albrechtstr.: Fahrbahnsanierungsarbeiten, Einbahnstraßenregelung zwischen Presselstr. und Siemensstr., offen Richtung Südosten, vom 18.08.2025 bis 21.11.2025',
          'type' => 'gesperrt',
          'until' => 1763751600
+       },
+       {
+         'data' => '#: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
+#: add_fragezeichen: Ist der Weg noch immer gesperrt?
+#: last_checked: 2025-08-03
+#: check_frequency: 21d
+	2::inwork 17498,13015 17507,12781
+',
+         'from' => undef,
+         'id' => 4407,
+         'text' => 'Landschaftspark Herzberge: N-S-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

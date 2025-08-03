@@ -1086,32 +1086,6 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # 
 ### Alt-Hohenschönhausen ###
 # 
-#: XXX Bebauungsplan 11-94 VE (Ferdinands Garden)
-#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.743836.php
-#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8385 (Festsetzung)
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Straßenneubau, ohne Termin)
-#: by: http://www.deal-magazin.com/news/3/107874/Lakeward-startet-Neubauprojekt-Ferdinands-Garden-in-Berlin (ist das erwähnte Neubaugebiet hier?)
-#: by: https://nitter.cz/VIZ_Berlin/status/1610159019406016513#m (evtl. im Zusammenhang mit den Bauarbeiten?)
-#: by: https://nitter.net/pic/orig/media%2FFldqbjBXgAEBF0s.png
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ferdinands-garden.363/page-2#post-20646
-#: by: https://www.be.de/project/ferdinand-schulze-strasse/
-#: by: https://www.ferdinands-garden.de/
-#: by: https://www.smv.com/de/projekte-berlin/ferdinands-garden
-#: by: https://www.morgenpost.de/bezirke/lichtenberg/article408677225/streit-um-baustelle-wann-wird-die-plauener-strasse-freigegeben.html (Straßenfreigabe für Anfang Juni 2025 geplant)
-#: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10833 (Antrag)
-#: source_id: viz2021:13.511463,52.539021,30.10.2023,09:00 (Straßenbauarbeiten bis 27.11.2023) (inaktiv)
-#: source_id: viz2021:13.511442,52.539,30.10.2023,09:00 (Straßenbauarbeiten bis 21.12.2023) (inaktiv)
-#: note: laut osm eröffnet -> wurde wieder rückgängig gemacht
-# REMOVED (existiert nicht mehr, 404) --- #: also_indoor: webcam https://portal1917.webcam-profi.de/
-#: osm_watch: way id="914159830" version="8"
-#: osm_watch: way id="435611568" version="14"
-#: osm_watch: note 3969997 16
-#: last_checked: 2025-07-14 (osm note)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-06-02
-Plauener Str.: Fahrbahn noch nicht freigegeben	q3::inwork 17531,14923 17610,14935 17638,14945
-# 
 #: note: Halteverbotsschilder gelten bis zum 30.04.2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
@@ -1204,6 +1178,18 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # REMOVED (hier nicht mehr bzw. integriert in die Moltkestraßenbrückensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
 ### Prenzlauer Berg ###
+# 
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/scale-b%C3%BCroneubau-storkower-stra%C3%9Fe-142-146.864/page-4#post-24657
+# REMOVED (ja) --- #: XXX wird sich auch die Qualität der Fahrbahn verbessern?
+#: osm_watch: way id="1184177622" version="3"
+#: osm_watch: way id="804682311" version="4"
+#: osm_watch: note 4734732 4
+#: priority: #C
+#: last_checked: 2025-08-03
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 60d
+Storkower Str. [Gewerbegebiet]: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg passierbar	q4::inwork 13736,14192 13636,14130
+# REMOVED (hier offen) --- Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13636,14130 13707,14021
 # 
 # REMOVED (Hochbauarbeiten dauern noch an, aber die Sperrung wurde aufgehoben; Nachtrag: 2025-07-03: wieder Sperrung, aber auf eine Reaktivierung erstmal verzichtet) --- #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
 # REMOVED --- #: by: https://entwicklungsstadt.de/prenzlauer-berg-neubau-fuer-gefluechtete-an-der-froebelstrasse/
@@ -5314,7 +5300,7 @@ Ulsterstr.: enge Straße	q0- 13575,8378 13641,8470
 #: XXX_prog: sobald handicap_directed überall verfügbar ist, sollte dieser Eintrag teilweise ersetzt werden
 (Vorfahrt Apostel-Paulus-Kirche): einige Fußgänger, unbequemes Überqueren der Grunewaldstr.	q4; 6935,9248 6921,9275
 # 
-(Zufahrt zum Kaufland): Parkplatz- und Lieferverkehr	q2 13727,14207 13757,14224 13846,14286 13873,14304 13913,14237 14007,14285
+(Zufahrt zum Kaufland): Parkplatz- und Lieferverkehr	q2 13727,14207 13757,14224 13846,14286 13866,14298 13905,14232 14007,14285
 # 
 #: note: Grünanlagenschild ohne weitere Zusatzschilder
 (Minsker Str. - Grabensprung): einige Fußgänger, Grünanlage	q2 20820,11333 20723,11338 20630,11342 20518,11346

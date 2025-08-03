@@ -2113,6 +2113,7 @@ Altes Gaswerk Mariendorf	N 8295,4303 8266,4221 8347,3886 8404,3648 8461,3410
 Im Marienpark	N 8404,3648 8346,3633 8178,3591 8070,3563
 Im Marienpark	N 8178,3591 8167,3641 8163,3660 8173,3672 8327,3706 8346,3633
 #: note ^^^
+(Marienpark)	N 8163,3660 8124,3706 8106,3745 8094,3819 8347,3886
 #: by: ANDK & osm
 #: confirmed_by: srt
 (Mariendorfer-Hafen-Weg - Im Marienpark)	NN 8016,3651 8035,3657 8046,3626 8070,3563
@@ -2837,7 +2838,7 @@ Naumburger Str.	N 13265,6972 13520,6583
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 Storkower Str.	H 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673 13727,14207 13731,14200 13736,14192 13879,13967 13971,13818 14006,13761 14043,13667 14060,13622 14089,13509 14109,13449 14159,13384 14218,13358 14307,13318 14502,13264 14530,13256 14559,13248 14630,13230 14644,13223 14780,13160 14871,13135 15080,13117 15090,13116 15347,13124 15515,13134
-Storkower Str. [Gewerbegebiet]	N 13736,14192 13639,14133 13715,14018 13784,13908
+Storkower Str. [Gewerbegebiet]	N 13736,14192 13636,14130 13707,14021 13780,13907
 Paul-Junius-Str.	N 15098,12849 15096,12974 15090,13116 15084,13276 15082,13369 15220,13377 15225,13543 15104,13581 15040,13602
 Paul-Junius-Str.	N 15225,13543 15370,13508 15374,13542 15425,13739 15436,13780
 Paul-Junius-Str.	N 15224,13269 15220,13377
@@ -3129,7 +3130,7 @@ Hohenschönhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,1
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/bebauungsplanverfahren/2024-12-19_b-plan-11-168_planzeichnung1.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_05_0353_0392_online.pdf (Bebauungsplan)
 #: XXX Werden die bestehenden Wege/Straße im Zuge der neuen Bebauung geändert? Zumindest wird es eine direkte Verbindung zum Weißenseer Weg geben, schon weitgehend fertig, noch nicht freigegeben vvv
-#: last_checked: 2025-06-05 vvv
+#: last_checked: 2025-08-03 vvv
 #: check_frequency: 60d vvv
 #: osm.highway: service
 (Hohenschönhauser Str., Verbindungsweg)	N 14871,14601 14839,14586
@@ -9309,7 +9310,7 @@ Cottbusser Platz	N 23405,14758 23417,14687 23466,14583
 (Cottbusser Platz - Hellersdorfer Str.)	NN 23366,14537 23399,14520
 Spremberger Str. (Hellersdorf)	N 23088,14579 23154,14577 23180,14583 23298,14685
 Gülzower Str.	N 23355,12732 23173,12769 23122,12770 23038,12706 22967,12647
-Gülzower Str.	H 22967,12647 22817,12525 22679,12418 22603,12359 22388,12190 22304,12157
+Gülzower Str.	H 22967,12647 22885,12580 22817,12525 22679,12418 22603,12359 22388,12190 22304,12157
 Gülzower Str. [Nebenstraße]	N 22400,12171 22344,12130
 Rügenwalder Weg	NN 22388,12190 22400,12171
 Rügenwalder Weg	N 22400,12171 22421,12181 22450,12170 22720,12163 22752,12195
@@ -14053,6 +14054,7 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9438 (Antrag, wurde zurückgezogen, siehe nächster Antrag)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9546 (Antrag)
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9546 (neue URL)
 #: osm_watch: way id="1325894268" version="3"
 #: historical_note: früher als "(Eisnerstr. - S-Bhf Buckower Chaussee)" bezeichnet
 #: last_checked: 2025-06-02 (mapillary)
@@ -15333,7 +15335,7 @@ Am Weingarten	NN 13867,14507 13765,14665
 #: osm.highway: service
 Am Weingarten	N 13867,14507 13837,14563
 #: osm.highway: service
-(Zufahrt zum Kaufland)	N 13727,14207 13757,14224 13846,14286 13873,14304 13913,14237 14007,14285
+(Zufahrt zum Kaufland)	N 13727,14207 13757,14224 13846,14286 13866,14298 13905,14232 14007,14285
 (KGA Neu Berlin)	NN 13636,14900 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
 (Steengravenweg - KGA Neu Berlin)	NN 13733,14813 13704,14780
 Sigridstr.	N 13867,14507 13947,14513 14025,14519 14159,14495 14284,14469
@@ -20838,7 +20840,7 @@ Wohlgemuthstr.	N 15696,6507 15765,6512 15904,6410
 Einsteinstr.	N 13598,14936 13537,14835 13507,14822 13235,14888 13185,14912
 (Storkower Str. - Einsteinstr.)	N 13148,14850 13185,14912
 (Einsteinstr. - Storkower Str.)	N 13185,14912 13163,14924 13143,14935 13107,14873
-(Storkower Str. - S-Bhf. Landsberger Allee)	N 13879,13967 13784,13908
+(Storkower Str. - S-Bhf. Landsberger Allee)	N 13879,13967 13780,13907
 Hanns-Eisler-Str.	N 12987,15262 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462 13226,15410 13365,15325 13504,15235 13476,15178 13614,15095 13548,14980 13598,14936 13636,14900
 Hanns-Eisler-Str.	N 13548,14980 13453,14997
 #: note: nicht ausgeschildert

@@ -3705,8 +3705,8 @@ Arendsweg: Beton	Q0 17254,14451 17261,14406 17182,14394 17183,14358 17198,14269
 Alte Rhinstr.: Asphalt	Q0 18247,14241 18225,14398 18183,14573
 Rhinstr. [134-130]: Asphalt	Q0 18477,14042 18181,14039
 Rhinstr. [Wohngebiet]: Beton	Q1 18050,13835 18056,13853 18047,13905
-Rhinstr. [Wohngebiet]: Asphalt mit Sch‰den	Q1 18047,13905 18027,14016 18021,14081
-Rhinstr. [Wohngebiet]: Asphalt	Q1; 18021,14081 18176,14108
+Rhinstr. [Wohngebiet]: Asphalt	Q0 18047,13905 18027,14016 18021,14081
+Rhinstr. [Wohngebiet]: Asphalt	Q0; 18021,14081 18176,14108
 Rhinstr. [Wohngebiet]: Asphalt und Beton mit Sch‰den	Q1; 18176,14108 18021,14081
 Meeraner Str.: Asphalt	Q0 18382,13492 18407,13548 18462,13560 18489,13593 18486,13819 18477,14042
 Meeraner Str.: Asphalt	Q0 18626,13820 18486,13819 18198,13816
@@ -9716,8 +9716,9 @@ Woldegker Str.: Beton	Q0 17511,18636 17566,18680 17589,18709 17611,18858 17596,1
 Neustrelitzer Str.: Asphalt	Q0 16750,14747 16668,14765 16524,14749
 Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 Feuerbachstr.: Asphalt	Q0 5823,6413 6083,6451
-Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13736,14192 13639,14133
-Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13639,14133 13715,14018 13784,13908
+Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13736,14192 13636,14130
+Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13636,14130 13707,14021
+Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13707,14021 13780,13907
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 17742,11636 17887,11625 17931,11656 18137,11645 18160,11635
 Am Tierpark [Wohngebiet]: Beton	Q1 18160,11635 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
 Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0 18200,11269 18202,11253
@@ -10280,6 +10281,7 @@ Altes Gaswerk Mariendorf: Asphalt	Q0 8295,4303 8266,4221 8347,3886 8404,3648 846
 Im Marienpark: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 8404,3648 8346,3633 8178,3591 8070,3563
 Im Marienpark: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 8178,3591 8167,3641
 Im Marienpark: Asphalt	Q0 8167,3641 8163,3660 8173,3672 8327,3706 8346,3633
+(Marienpark): Asphalt	Q0 8163,3660 8124,3706 8106,3745 8094,3819 8347,3886
 (Mariendorfer-Hafen-Weg - Im Marienpark): Kopfsteinpflaster	Q2 8046,3626 8074,3635
 (Mariendorfer-Hafen-Weg - Im Marienpark): Verbundsteinpflaster	Q1 8074,3635 8163,3660
 (Dieselstr. - Kiefholzstr.): Asphalt	Q0 14642,8022 14771,8142 14832,8199
@@ -11826,7 +11828,7 @@ Thomas-Mann-Str. [ˆstlicher Strang]: Asphalt	Q0 13365,15325 13278,15172 13387,15
 (Vorfahrt Apostel-Paulus-Kirche): Kopfsteinpflaster	Q2 6921,9275 6935,9248 7001,9253
 (Zufahrt zum Kaufland): glattes Pflaster	Q2 13727,14207 13757,14224
 (Zufahrt zum Kaufland): Kopfsteinpflaster	Q2 13757,14224 13846,14286
-(Zufahrt zum Kaufland): Asphalt	Q0 13846,14286 13873,14304 13913,14237 14007,14285
+(Zufahrt zum Kaufland): Asphalt	Q0 13846,14286 13866,14298 13905,14232 14007,14285
 (Zingster Str. - Barther Str.): Beton	Q0 16861,18009 16808,17970
 (Zingster Str. - Barther Str.): Beton mit Sch‰den	Q1 16808,17970 16900,17841
 (Landsberger Allee - Groﬂe-Leege-Str.): Verbundsteinpflaster/Mosaikpflaster	Q1 15976,14472 15963,14470 15902,14498

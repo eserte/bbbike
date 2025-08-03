@@ -22410,7 +22410,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-07-26
+#: last_checked: 2025-08-03 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -40631,8 +40631,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
-#: also_indoor: traffic (H,G,T,W)
-#: last_checked: 2025-07-27
+#: also_indoor: traffic (ex-H,ex-G,T,ex-W)
+#: last_checked: 2025-08-03 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -43808,8 +43808,10 @@ EOF
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
 #: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
-#: XXX Möglicherweise schon wieder offen?
-#: next_check: 2025-08-01 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-08-03
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-08-01 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-31 (Baustellenschild)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 EOF
      },
@@ -45568,7 +45570,7 @@ EOF
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-07-08 (research)
+#: last_checked: 2025-08-03 (research)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-04-01
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -45668,7 +45670,7 @@ EOF
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-07-28 (tempelhoferfeld website) vvv
+#: last_checked: 2025-08-03 (tempelhoferfeld website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -46280,7 +46282,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: rbb, wurde da aber mittlerweile entfernt
-#: also_indoor: traffic (ex-G,ex-W,B,T)
+#: also_indoor: traffic (re-G,ex-W,B,T)
 #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
 #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
@@ -46759,7 +46761,7 @@ EOF
 #: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
 #: by: https://entwicklungsstadt.de/baustart-in-tempelhof-neues-klinikgebaeude-fuer-das-st-joseph-krankenhaus/ (bis Ende 2028, Verzögerungen möglich)
 #: note: Gesperrter Bereich ca. 80m. Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
-#: also_indoor: traffic (B,T,G[falsch])
+#: also_indoor: traffic (ex-B,ex-T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
 #: last_checked: 2025-07-12 (traffic)
@@ -46802,7 +46804,7 @@ EOF
        text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und Bayernring, Fahrbahn gesperrt, vermutlich bis 31.07.2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,T,B,A)
+#: also_indoor: traffic (ex-G,T,B,A)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
 #: last_checked: 2025-07-28 (traffic)
 #: check_frequency: 7d
@@ -47990,7 +47992,7 @@ EOF
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-07-25 vvv
+#: last_checked: 2025-08-03 (traffic) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-08-29 (ADAC-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -48711,7 +48713,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-08-02 (traffic)
+#: last_checked: 2025-08-03 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 EOF
@@ -48985,7 +48987,7 @@ EOF
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-07-08 (research)
+#: last_checked: 2025-08-03 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -49126,9 +49128,10 @@ EOF
        text  => 'Ansbacher Str.: vor der Geisbergstr. Bauarbeiten, Fahrbahn und Radweg gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (T)
+#: also_indoor: traffic (ex-T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-07-17
+#: check_frequency: 14d
 	q3::inwork 6118,10327 6065,10129
 EOF
      },
@@ -49138,10 +49141,11 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (T)
+#: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-07-17
+#: last_checked: 2025-07-17 (traffic)
+#: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 EOF
      },
@@ -49312,6 +49316,18 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/umleitungsplan.pdf
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.1585917.php
 	q4::inwork; 6360,4504 6283,4565 6203,4630
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Landschaftspark Herzberge: N-S-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
+#: add_fragezeichen: Ist der Weg noch immer gesperrt?
+#: last_checked: 2025-08-03
+#: check_frequency: 21d
+	2::inwork 17498,13015 17507,12781
 EOF
      },
     );

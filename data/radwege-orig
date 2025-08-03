@@ -998,7 +998,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-07-22
+#: last_checked: 2025-08-03
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3238,7 +3238,7 @@ Grünbeschichtung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,1244
 #: historical_note: Verbundsteinpflaster, einige Wurzelhebungen; vermutlich 2022 oder 2023 ausgebessert
 asphaltiert, leicht uneben	RW1; 14836,12826 14830,12932 14795,13022
 #: historical_note: früher "einige Wurzelhebungen", aber mittlerweile (2025) scheint es nicht mehr schlimm zu sein
-Verbundsteinpflaster	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
+Verbundsteinpflaster, einige leichte Wurzelhebungen	RW1; 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 # REMOVED (keine Verbesserung) --- #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen; mittlerweile keine Einbahnstraße mehr, Radweg wird wiederhergestellt --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 # REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021) --- #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; der Radweg wurde mittlerweile neu erstellt, vermutlich dann ohne Wurzelhebungen --- #: XXX --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt --- #: last_checked: 2023-04-18 --- #: check_frequency: 14d --- #: next_check: 2021-12-31
@@ -3459,7 +3459,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="16"
 #: osm_watch: way id="966685279" version="8"
-#: last_checked: 2025-07-13 vvv
+#: last_checked: 2025-08-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -4396,9 +4396,13 @@ neu asphaltiert	RW1; 23021,13982 23049,14066 23118,14276 23049,14066 23021,13982
 	RW1; 23033,12367 23100,12269
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6665 (Befahren des Radwegs wieder möglich machen)
 vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
-	RW1; 23038,12706 22967,12647 22817,12525 22679,12418 22603,12359
+	RW1; 23038,12706 22967,12647 22885,12580 22817,12525 22679,12418 22603,12359
 Verbundsteinpflaster	RW1; 22603,12359 22679,12418
-	RW1; 22679,12418 22817,12525 22967,12647 23038,12706
+#: historical_note: früher (bis Sommer 2025) alter Betonradweg, RW1;
+Leitboys	RW4; 22679,12418 22817,12525 22885,12580
+#: historical_note: früher (bis Sommer 2025) alter Betonradweg, RW1;
+neu asphaltiert	RW1; 22885,12580 22967,12647
+	RW1; 22967,12647 23038,12706
 	RW2;RW2 21108,11628 21124,11462 21130,11384 21133,11348 21134,11331 21137,11294 21138,11271
 	RW1; 21138,11271 21138,11254 21136,11134
 	RW1;RW1 20521,11494 20569,11492 20616,11490 20641,11488 20650,11488 20720,11484 20729,11483 20818,11480 20828,11480 20959,11472 21074,11465 21124,11462
@@ -5745,11 +5749,12 @@ neues Verbundsteinpflaster	RW2; 22739,16203 22696,16208 22631,16215 22495,16165 
 Gehweg für Radfahrer frei, eng	RW1; 19512,15092 19364,15045 19309,15023 19254,15000 19205,14980 19196,14976 19175,14968
 # REMOVED (temporär nicht verfügbar?) --- Gehweg für Radfahrer frei, eng	RW1; 19175,14968 19013,14905
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2025-04-06 vvv
+#: last_checked: 2025-08-03 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Gehweg für Radfahrer frei	RW9; 19200,14963 19156,14953 19013,14905 18831,14823
 # REMOVED (wegen Bauarbeiten ist der nördliche Hochboard nicht nutzbar) --- Gehweg für Radfahrer frei	RW1; 18831,14823 18553,14678 18410,14614 18365,14607
+#: note: die Zweirichtungsregelung gilt sogar bis zur Rhinstr.
 Gehweg für Radfahrer frei	RW9; 18831,14823 18553,14678 18410,14614 18365,14607
 Gehweg für Radfahrer frei, eng	RW9; 19175,14968 19196,14976 19205,14980 19254,15000 19309,15023 19364,15045 19512,15092
 #: note: zwar nicht explizit als benutzungspflichtig ausgeschildert, aber die danebenliegende Fahrbahn ist eine Einbahnstraße
@@ -8326,12 +8331,12 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
 #: last_checked: 2025-07-23 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2025-06-23 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: check_frequency: 14d vvv
+#: next_check: 2025-08-29 (VIZ-Verkehrsmeldung) vvv
 #XXX	RW4; 10871,10322 10975,10334
 	RW0; 10871,10322 10975,10334
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 	RW4; 10975,10334 11117,10326

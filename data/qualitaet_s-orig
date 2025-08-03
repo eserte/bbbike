@@ -128,7 +128,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="20"
-#: last_checked: 2025-06-12
+#: last_checked: 2025-07-18 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -1982,8 +1982,8 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/250513-lageplan-schoenholzer-weg-komprimiert.pdf (keine Radspuren; direkte Radwegverbindung zur Kreuzung Hauptstr./Kastanienallee; Unterbindung des Durchgangsverkehrs zur Kastanienallee)
 #: osm_watch: way id="34428911" version="16" vvv
 #: XXX wird hier asphaltiert? vvv
-#: last_checked: 2025-03-15 (mapillary) vvv
-#: check_frequency: 150d vvv
+#: last_checked: 2025-06-27 (mapillary) vvv
+#: check_frequency: 90d vvv
 #: next_check: 2025-12-31 (infravelo) vvv
 #: by: mapillary
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
@@ -4991,8 +4991,10 @@ Arendsweg: Beton	Q0- 17254,14451 17261,14406 17182,14394 17183,14358 17198,14269
 Alte Rhinstr.: Asphalt	Q0 18247,14241 18225,14398 18183,14573
 Rhinstr. [134-130]: Asphalt	Q0 18477,14042 18181,14039
 Rhinstr. [Wohngebiet]: Beton	Q1+ 18050,13835 18056,13853 18047,13905
-Rhinstr. [Wohngebiet]: Asphalt mit Schäden	Q1 18047,13905 18027,14016 18021,14081
-Rhinstr. [Wohngebiet]: Asphalt	Q1+; 18021,14081 18176,14108
+#: historical_note: früher (bis 2024 oder 2025): Asphalt mit Schäden, Q1
+Rhinstr. [Wohngebiet]: Asphalt	Q0 18047,13905 18027,14016 18021,14081
+#: historical_note: früher (bis 2024 oder 2025) Q1+;
+Rhinstr. [Wohngebiet]: Asphalt	Q0; 18021,14081 18176,14108
 Rhinstr. [Wohngebiet]: Asphalt und Beton mit Schäden	Q1; 18176,14108 18021,14081
 Meeraner Str.: Asphalt	Q0 18382,13492 18407,13548 18462,13560 18489,13593 18486,13819 18477,14042
 Meeraner Str.: Asphalt	Q0 18626,13820 18486,13819 18198,13816
@@ -11638,8 +11640,11 @@ Neustrelitzer Str.: Asphalt	Q0 16750,14747 16668,14765 16524,14749
 Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 # REMOVED (realisiert) --- #: next_check_id: FEUERBACH-2018 --- #: XXX Fahrbahn wird neu gebaut --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php?date=20170522 --- #: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6572 --- #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600 (Baubeginn Juli 2018) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.708083.php (während der Bauarbeiten Einbahnstraße Richtung Osten, Bauarbeiten bis Jahresende) --- #: by: https://www.berliner-woche.de/steglitz/c-bauen/die-feuerbachstrasse-wird-endlich-saniert_a168947 --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php --- #: last_checked: 2018-10-07 --- #: next_check: 2019-06-30 --- #: priority: #A
 Feuerbachstr.: Asphalt	Q0 5823,6413 6083,6451
-Storkower Str. [Gewerbegebiet]: Asphalt	Q0- 13736,14192 13639,14133
-Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13639,14133 13715,14018 13784,13908
+#: historical_note: früher (bis 2025) Q0-
+Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13736,14192 13636,14130
+#: historical_note: früher (bis 2025) Q1
+Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13636,14130 13707,14021
+Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13707,14021 13780,13907
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 17742,11636 17887,11625 17931,11656 18137,11645 18160,11635
 Am Tierpark [Wohngebiet]: Beton	Q1+ 18160,11635 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
 Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
@@ -11647,7 +11652,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2025-06-05 vvv
+#: last_checked: 2025-08-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -12270,6 +12275,7 @@ Altes Gaswerk Mariendorf: Asphalt	Q0 8295,4303 8266,4221 8347,3886 8404,3648 846
 Im Marienpark: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 8404,3648 8346,3633 8178,3591 8070,3563
 Im Marienpark: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 8178,3591 8167,3641
 Im Marienpark: Asphalt	Q0 8167,3641 8163,3660 8173,3672 8327,3706 8346,3633
+(Marienpark): Asphalt	Q0 8163,3660 8124,3706 8106,3745 8094,3819 8347,3886
 (Mariendorfer-Hafen-Weg - Im Marienpark): Kopfsteinpflaster	Q2 8046,3626 8074,3635
 (Mariendorfer-Hafen-Weg - Im Marienpark): Verbundsteinpflaster	Q1 8074,3635 8163,3660
 (Dieselstr. - Kiefholzstr.): Asphalt	Q0 14642,8022 14771,8142 14832,8199
@@ -14192,7 +14198,7 @@ Thomas-Mann-Str. [östlicher Strang]: Asphalt	Q0- 13365,15325 13278,15172 13387,1
 # 
 (Zufahrt zum Kaufland): glattes Pflaster	Q2+ 13727,14207 13757,14224
 (Zufahrt zum Kaufland): Kopfsteinpflaster	Q2 13757,14224 13846,14286
-(Zufahrt zum Kaufland): Asphalt	Q0 13846,14286 13873,14304 13913,14237 14007,14285
+(Zufahrt zum Kaufland): Asphalt	Q0 13846,14286 13866,14298 13905,14232 14007,14285
 # 
 (Zingster Str. - Barther Str.): Beton	Q0 16861,18009 16808,17970
 (Zingster Str. - Barther Str.): Beton mit Schäden	Q1- 16808,17970 16900,17841
@@ -17306,7 +17312,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="11"
 #: osm_watch: way id="1033468087" version="2"
-#: last_checked: 2025-06-05
+#: last_checked: 2025-08-03
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14906,15859 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -26246,7 +26252,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="8"
-#: last_checked: 2025-05-07 (mapillary)
+#: last_checked: 2025-08-03
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
