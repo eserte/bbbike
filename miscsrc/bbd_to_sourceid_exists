@@ -4,17 +4,18 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
 use warnings;
 use Getopt::Long;
+
+use constant HANDLE_MULTIPLE_IDS => 1;
 
 sub usage (;$) {
     my $msg = shift;
@@ -51,9 +52,18 @@ sub bbd_to_sourceid_exists {
 		     if ($inactive) {
 			 next if $source_id !~ m{\binaktiv\)\s*$};
 		     }
-		     # Use only first token from source id
-		     $source_id =~ s{^(\S+).*}{$1};
-		     $existsid{$source_id} = 1;
+		     if (HANDLE_MULTIPLE_IDS) {
+			 my @id_candidates = split /\s+/, $source_id;
+			 for my $id_candidate (@id_candidates) {
+			     last if $id_candidate =~ /^\(/; # looks like a comment, stop at this point
+			     $existsid{$id_candidate} = 1;
+			 }
+		     } else {
+			 # traditional
+			 # Use only first token from source id
+			 $source_id =~ s{^(\S+).*}{$1};
+			 $existsid{$source_id} = 1;
+		     }
 		 }
 	     });
     }
