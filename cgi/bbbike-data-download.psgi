@@ -15,7 +15,7 @@ use strict;
 use warnings;
 
 use Cwd qw(realpath);
-use File::Basename qw(dirname);
+use File::Basename qw(dirname basename);
 use File::Glob qw(bsd_glob);
 use HTTP::Date qw(time2str str2time);
 use Plack::Request ();
@@ -49,6 +49,7 @@ my $app = sub {
     my $old_data_dir    = "$bbbike_rootdir/tmp/old-bbbike-data";
     my $normal_data_dir = "$bbbike_rootdir/data";
 
+    my $bbbike_data_version;
     my $use_data_dir;
     if (my($bbbike_ver) = $ua =~ m{bbbike/([\d.]+)}i) {
 	if (-d "$old_data_dir/$bbbike_ver") {
@@ -69,8 +70,11 @@ my $app = sub {
 	    }
 	}
     }
-    if (!$use_data_dir) {
+    if ($use_data_dir) {
+	$bbbike_data_version = basename($use_data_dir);
+    } else {
 	$use_data_dir = $normal_data_dir;
+	$bbbike_data_version = 'newest';
     }
     debug "use_data_dir=$use_data_dir for ua=$ua";
 
@@ -81,6 +85,9 @@ my $app = sub {
 	my $status = shift;
 	my $headers = shift // {};
 	$headers->{'X-Tag'} = 'rm.data.download';
+	if (defined $bbbike_data_version) {
+	    $headers->{'X-BBBike-Data-Version'} = $bbbike_data_version;
+	}
 	$req->new_response($status, $headers, @_)->finalize;
     };
 
