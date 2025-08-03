@@ -23,6 +23,7 @@ use HTML::FormatText 2;
 use HTML::TreeBuilder;
 use HTML::Tree;
 use JSON::XS qw(decode_json);
+use List::Util qw(any);
 use LWP::UserAgent ();
 use POSIX qw(strftime);
 use Tie::IxHash ();
@@ -837,7 +838,20 @@ EOF
 		}
 	    }
 	}
-	if ($do_ignore && $self->{existsid_current}->{$id}) {
+
+
+	my @ids;
+	for my $id_field (qw(viz2025_id id)) {
+	    if (defined $rec->{$id_field}) {
+		push @ids, $rec->{$id_field};
+	    }
+	}
+
+	my $is_existsid_current = any { $self->{existsid_current}->{$_} } @ids;
+	my $is_existsid_old     = any { $self->{existsid_old}->{$_}     } @ids;
+
+
+	if ($do_ignore && $is_existsid_current) {
 	    $do_ignore = 0; # because it's "INUSE"
 	}
 
@@ -872,15 +886,9 @@ EOF
 	    my($sx,$sy) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($rec->{lon},$rec->{lat}));
 	    @coords = "$sx,$sy";
 	}
-	my @ids;
-	for my $id_field (qw(viz2025_id id)) {
-	    if (defined $rec->{$id_field}) {
-		push @ids, $rec->{$id_field};
-	    }
-	}
 	$s .= join(", ", @attribs) . "¦" .
 	    ($rec->{place} ne 'Berlin' ? $rec->{place} . ": " : '') .
-		$text . "¦" . join(" ", @ids) . "¦" . ($rec->{map_url} || '') . "¦" . ($self->{existsid_current}->{$id} ? 'INUSE' : $self->{existsid_old}->{$id} ? 'WAS_INUSE' : '') .
+		$text . "¦" . join(" ", @ids) . "¦" . ($rec->{map_url} || '') . "¦" . ($is_existsid_current ? 'INUSE' : $is_existsid_old ? 'WAS_INUSE' : '') .
 		    "\tX @coords\n";
     };
     my %seen_id;
@@ -1191,7 +1199,7 @@ files. This needs some pre-fetched files stored in
 F<~/src/bbbike-aux/samples/>.
 
     echo "---" > /tmp/oldvmz.yaml
-    perl miscsrc/VMZTool.pm -test -oldstore /tmp/oldvmz.yaml -newstore /tmp/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
+    perl miscsrc/VMZTool.pm -test -oldstore /tmp/oldvmz.yaml -newstore /tmp/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd -existsid-all tmp/sourceid-all.yml -existsid-current tmp/sourceid-current.yml
 
 =head3 TEST BBD CREATION
 
