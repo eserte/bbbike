@@ -1492,12 +1492,12 @@ sub newvmz_process {
     # I have usually an endless build loop running... so invent some
     # kind of locking maybe?
     if (-e "$bbbike_rootdir/tmp/sourceid-all.yml") {
-	push @vmztool_args, "-existsid-current", "$bbbike_rootdir/tmp/sourceid-all.yml";
+	push @vmztool_args, "-existsid-all", "$bbbike_rootdir/tmp/sourceid-all.yml";
     } else {
 	main::status_message("'$bbbike_rootdir/tmp/sourceid-all.yml' is not built!", "die");
     }
     if (-e "$bbbike_rootdir/tmp/sourceid-current.yml") {
-	push @vmztool_args, "-existsid-all", "$bbbike_rootdir/tmp/sourceid-current.yml";
+	push @vmztool_args, "-existsid-current", "$bbbike_rootdir/tmp/sourceid-current.yml";
     } else {
 	main::status_message("'$bbbike_rootdir/tmp/sourceid-current.yml' is not built!", "die");
     }
