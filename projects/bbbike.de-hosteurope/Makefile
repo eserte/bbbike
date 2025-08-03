@@ -352,7 +352,9 @@ post-rsync-bbbike:
 	   	${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/miscsrc/update-modperl-reload-touchfile.pl --touch; \
 		if [ ! -L ${BBBIKE_HOSTEUROPE_APACHE_DIR}/cgi-bin/mapserv ] ; then \
 		    ln -s /usr/lib/cgi-bin/mapserv ${BBBIKE_HOSTEUROPE_APACHE_DIR}/cgi-bin/mapserv; \
-		fi \
+		fi; \
+		sudo systemctl reload bbbike-starman.service; \
+		echo \"bbbike-starman is \$$(systemctl is-active bbbike-starman.service)\"; \
 	   "
 
 post-rsync-bbbike-data:
