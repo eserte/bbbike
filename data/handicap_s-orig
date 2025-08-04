@@ -143,7 +143,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-07-13 vvv
+#: last_checked: 2025-08-04 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -571,7 +571,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-07-24 vvv
+#: last_checked: 2025-08-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -3309,8 +3309,13 @@ Selkestr.: Fußgänger, Bordsteine	q3 12722,7261 12741,7224
 (Schildhornstr. - Treitschkestr./Hackerstr.): einige Fußgänger	q1 4937,6205 4997,6331 5015,6363 4999,6397
 #: XXX_prog BS auf beiden Seiten
 Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
+# 
+#: historical_note: früher (bis Sommer 2025) Fußgänger, Kurven, q1- vvv
 #: note: getrennter Rad- und Gehweg
-(Alexandrinenstr. - Wassertorstr.): Fußgänger, Kurven	q1- 10293,10645 10401,10601 10431,10606 10492,10582
+(Alexandrinenstr. - Wassertorstr.): einige Fußgänger	q1 10293,10645 10401,10601
+(Alexandrinenstr. - Wassertorstr.): einige Fußgänger	q1 10401,10601 10489,10575
+#: historical_note ^^^
+# 
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
 (Weg an der Südpanke): einige Fußgänger	q1 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8271,14222 8273,14269 8266,14346 8267,14395 8293,14453 8302,14517
 (Weg an der Südpanke): einige Fußgänger, schmal	q2 8302,14517 8301,14576 8323,14599

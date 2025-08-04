@@ -4176,7 +4176,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/downloads/protokoll-des-fahrrat_231123.pdf (Erwähnung)
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert?
 #: osm_watch: way id="100280204" version="11"
-#: last_checked: 2025-07-16
+#: last_checked: 2025-08-03 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23363,11600 23225,11649
@@ -7742,7 +7742,7 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: priority: #C
 #: source_id: 2147344935 (inaktiv)
 #: source_id: 2147347061 (Leitungsbau, bis 7.5.2021) (inaktiv)
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-28 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-05-07
 Veitstr.: Fahrbahn Beton	Q0- 1886,19835 1606,19775 1557,19765
@@ -12281,17 +12281,9 @@ Im Marienpark: Asphalt	Q0 8167,3641 8163,3660 8173,3672 8327,3706 8346,3633
 (Dieselstr. - Kiefholzstr.): Asphalt	Q0 14642,8022 14771,8142 14832,8199
 (Unterführung Seehofstr.): Verbundsteinpflaster	Q1 1145,2898 1126,2879 1093,2866
 Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
-#: next_check_id: LOBECKSPORTPLATZ-2025
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1500791.php
-#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/neuer-pepp-fuer-gruenanlage_a429121
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1586149.php (Neugestaltung wurde im Juli 2025 abgeschlossen)
-#: XXX Umgestaltung (und Entsiegelung) bis April 2025 --- ändert sich etwas an den Wegen?
-#: XXX Umbauarbeiten im östlichen Bereich, Weg wird neu gemacht, laut Aushang bis April 2025, wird aber vermutlich länger dauern
-#: osm_watch: note 4706090 7
-#: last_checked: 2025-07-06 (mapillary)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-04-30
-(Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601 10431,10606 10492,10582
+(Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601
+#: historical_note: früher (bis Sommer 2025): Asphalt mit einigen Schäden, Q1
+(Alexandrinenstr. - Wassertorstr.): Asphalt	Q0 10401,10601 10489,10575
 (Ossastr. - Rütlistr.): Asphalt	Q0 12623,9134 12554,9178
 (Bautzener Str. - Kolonnenstr.): Asphalt	Q0 8180,9099 8185,9083 8184,8902 8145,8773
 (zum Bahnhof Südkreuz): Asphalt	Q0 7837,7899 7838,7848
@@ -12842,7 +12834,7 @@ Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14676,11572 14714,11549 14723,11532
 Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14830,11551 14808,11520 14779,11505 14745,11487 14684,11456
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1515855.php (Sanierung 2024)
 #: historical_note: früher (bis 2024): Asphalt mit einigen Schäden und Schlaglöchern, Q0-
-Lobeckstr.: Asphalt	Q0 10585,10766 10492,10582 10484,10567 10433,10456 10363,10303
+Lobeckstr.: Asphalt	Q0 10585,10766 10489,10575 10484,10567 10433,10456 10363,10303
 (Wohngebietsstraße): Betonsteinpflaster	Q0- 21596,132 21589,131 21503,114 21435,99 21367,84
 Weidenkätzchenweg: Betonsteinpflaster	Q0- 21465,-15 21450,38 21435,99 21421,158
 # REMOVED (fertiggestellt) --- #: next_check_id: BUSCHWINDROESCHENWEG-2019 --- #: by: mapillary --- #: XXX wie wird die Qualität nach der Fertigstellung sein? --- #: last_checked: 2019-02-10 (mapillary) --- #: check_frequency: 90d
@@ -13840,7 +13832,7 @@ St. Wolfgang-Str.: Gehwegplatten und glatte Pflasterung	Q0- 10216,12706 10287,12
 (Jenbacher Weg - Mauerweg): Asphalt	Q0+ 6411,533 6413,520 6401,464 6427,395 6424,346 6388,241 6357,215
 Stindestr.: Kopfsteinpflaster	Q2 6272,4716 6203,4630
 Großbeerenstr.: Asphalt mit einigen Schäden	Q1+; 8602,2377 8655,2556 8674,2627
-Blücherstr.: Asphalt mit einigen Schäden	Q1+ 10429,9514 10306,9640
+Blücherstr.: Asphalt mit einigen Schäden	Q1 10429,9514 10306,9640
 Agricolastr.: Asphalt	Q0 5376,12781 5543,12664 5673,12581 5797,12494
 Götelstr. [Parallelstraße]: Asphalt	Q0 -3293,12304 -3284,12304 -3255,12338 -3252,12405 -3260,12540
 Hölderlinstr.: Asphalt mit einigen leichten Schäden	Q0- 1787,11509 1586,11483 1429,11528

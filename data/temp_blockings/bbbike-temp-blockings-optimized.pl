@@ -331,7 +331,33 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1245294.php
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1586971.php
+	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1764370800,
+         'id' => 417,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2025 von 13 bis 19 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1764529200
+       },
        undef,
        undef,
        undef,
@@ -3904,8 +3930,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: XXX kaum noch Bauarbeiten (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-07-15
+#: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
+#: last_checked: 2025-08-04
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5685,7 +5711,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024) (bis auf weiteres)
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="16"
+#: osm_watch: way id="1117348911" version="17"
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 #: also_indoor: traffic (G[zu viel],re-B[zu viel],T[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
@@ -6722,11 +6748,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1753999200,
+         'from' => 1757628000,
          'id' => 3955,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 2.8.2025 bis 3.8.2025',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 13.9.2025 bis 14.9.2025',
          'type' => 'handicap',
-         'until' => 1754258399
+         'until' => 1757887199
        },
        undef,
        undef,
@@ -6836,10 +6862,11 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025) (bis 31.08.2025) (inaktiv)
+#: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025)
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-06-08 (mapillary) vvv
+#: last_checked: 2025-07-31 (bahninfo-forum) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
@@ -6971,10 +6998,11 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
          'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025) (bis 01.08.2025) (inaktiv)
 #: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
 #: source_id: viz2021:13.5264,52.53348, (bis 01.08.2025) (inaktiv)
+#: source_id: viz2021:13.52004,52.5326, (bis 12.08.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 9
+#: osm_watch: note 4185183 10
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -6982,8 +7010,8 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
 #: last_checked: 2025-08-03
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-08-01 (VIZ-Verkehrsmeldung)
-#: next_check: 2026-10-31 (Baustellenschild)
+#: next_check: 2025-08-12 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-10-31 (Baustellenschild)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 ',
          'from' => 1711947600,
@@ -7158,7 +7186,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-07-29 vvv
+#: last_checked: 2025-08-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7634,7 +7662,17 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.07.2025) (inaktiv) (nur noch Einschränkungen, bis 15.08.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
+	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
+',
+         'from' => 1729404000,
+         'id' => 4186,
+         'text' => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 15.08.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1755270000
+       },
        undef,
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
@@ -8090,7 +8128,20 @@ Scottweg	q3::inwork -1317,11300 -966,11382
          'type' => 'handicap',
          'until' => 1755270000
        },
-       undef,
+       {
+         'data' => '#: next_check_id: PLATANEN-2025
+#: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025) (inaktiv)
+#: source_id: viz2021:13.39809,52.58487, (bis 31.07.2025) (bis 30.10.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1891725331691864443
+#: by: https://pbs.twimg.com/media/Gj_K-ydXgAAYbfS?format=jpg&name=large (etwa 170m der Fahrbahn und des nördlichen Bürgersteigs ab Waldstr. sind betroffen)
+	q4::inwork 9824,19910 9498,19817
+',
+         'from' => 1739772000,
+         'id' => 4264,
+         'text' => 'Platanenstr.: Bauarbeiten zwischen Waldstr. und Treskowstr., Sperrung, vom 18.02.2025 07:00 bis 30.10.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1761926400
+       },
        undef,
        undef,
        undef,
@@ -8375,9 +8426,9 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Trafficmeldungen scheinen ungenau zu sein
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: nächste Sperrung: Oberspreestr. (wo genau?) "Suchschachtung" ab 30.07.2025
-#: last_checked: 2025-07-14 (website) vvv
+#: last_checked: 2025-08-04 (website) vvv
 #: check_frequency: 30d (website checks) vvv
-#: next_check: 2025-08-04 (Bauende Wünschelburger Gang) vvv
+# REMOVED --- #: next_check: 2025-08-04 (Bauende Wünschelburger Gang) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025) (inaktiv)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
@@ -8418,7 +8469,7 @@ Freystadter Weg	q4::inwork 21008,4275 20981,4628 20981,4696 20994,4761
 Flemmingstr.	q4::inwork 21848,4882 21726,4537
 #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt
 Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -8676,7 +8727,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
-#: last_checked: 2025-07-24 (mapillary) vvv
+#: last_checked: 2025-08-04 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8766,7 +8817,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
        {
          'data' => '#: also_indoor: traffic (none)
 #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025
-#: last_checked: 2025-07-22
+#: last_checked: 2025-08-04
 #: next_check: 2025-08-30 (Halteverbotsschilder)
 	q4::inwork; 12238,11931 12413,11901
 ',
@@ -9258,7 +9309,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.41414,52.50801, (bis 22.08.2025)
 #: also_indoor: traffic (T,G,A)
 #: note: gesperrter Abschnitt etwa 50m, explizite Radfahren-verboten-Schilder
-#: last_checked: 2025-07-22
+#: last_checked: 2025-08-04
 #: next_check: 2025-08-22
 Heinrich-Heine-Str.	q4::inwork 11094,11377 11039,11254
 ',
@@ -9382,6 +9433,38 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'id' => 4407,
          'text' => 'Landschaftspark Herzberge: N-S-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX Hat es was mit den Fernwärmearbeiten im Barbarossakiez zu tun?
+#: also_indoor: traffic (G,T)
+#: last_checked: 2025-08-04 (traffic)
+#: check_frequency: 14d
+	q4::inwork 6860,9529 7002,9526
+',
+         'from' => undef,
+         'id' => 4408,
+         'text' => 'Barbarossastr.: Bauarbeiten zwischen Karl-Schrader-Str. und Goltzstr., evtl. sind auch Radfahrer betroffen',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: BARBAROSSAPLATZ-2025
+#: by: https://www.bew.berlin/aktuelles-und-presse/2025/fernwaerme-ausbau-am-barbarossaplatz-beginnt/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1587005.php
+#: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
+#: also_indoor: traffic (none)
+#: next_check: 2025-08-05
+Eisenacher Str.: Bauarbeiten 2025/2026	q4::inwork 6743,9678 6731,9559
+# später: #: next_check: 2026-03-15
+# später: Friesinger Str.: Bauarbeiten 2026/2027	? 6445,9432 6723,9433
+# später: #: next_check: 2028-03-15
+# später: Rosenheimer Str.: Bauarbeiten 2028/2029	? 6446,9328 6717,9339 6851,9365
+',
+         'from' => 1754329180,
+         'id' => 4409,
+         'text' => 'Eisenacher Str.: mögliche Bauarbeiten zwischen Lindauer Str. und Barbarossaplatz, evtl. sind auch Radfahrer betroffen, ab 5.8.2025',
+         'type' => 'handicap',
          'until' => undef
        }
      
