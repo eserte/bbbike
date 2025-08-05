@@ -47,12 +47,12 @@ Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
 Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 # 
 #: next_check_id: PAULSBORNER-2025
-#: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025)
+#: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: last_checked: 2025-07-14 (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
-#: next_check: 2025-08-05 (rbb-Verkehrsmeldung) 
+#: next_check: 2025-09-08 (rbb/VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20250619
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
@@ -150,7 +150,8 @@ Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
 #: by: https://entwicklungsstadt.de/gefaehrliche-kreuzung-in-kreuzung-rudi-dutschke-strasse-soll-sicherer-werden/
-#: last_checked: 2025-04-10
+#: note: außerdem Anforderungsampel für querende Fußgänger
+#: last_checked: 2025-08-05
 #: next_check: 2025-08-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250521
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243

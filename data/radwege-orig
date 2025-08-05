@@ -983,7 +983,7 @@ Leitboys und sehr niedrige Barriere	RW4; 14582,12174 14523,12183 14488,12188 144
 asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: note: Frankfurter Allee, Richtung Osten bis Möllendorffstr.
 	RW1; 13785,12292 13885,12279 14020,12261 14208,12235
-#: note: alter Bürgersteigradweg existiert noch, ist aber abgesperrt vvv
+#: note: alter Bürgersteigradweg existiert noch teilweise, ist aber abgesperrt vvv
 teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,12197 14488,12188
 	RW2; 14488,12188 14523,12183
 teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,12156 14854,12137 14926,12129
@@ -2610,7 +2610,8 @@ Gehwegplatten	RW1; 5442,12852 5350,12906
 	RW3;RW4 5871,12595 5905,12573 5944,12548
 	RW2;RW1 5944,12548 6025,12494
 	RW4; 7193,7950 7306,7822 7315,7814 7480,7683
-vorhandener Radweg ist abgesperrt	RW5; 7480,7683 7315,7814 7306,7822 7193,7950
+#: historical_note: früher "vorhandener Radweg ist abgesperrt", mittlerweile wurde der Radweg vollständig zurückgebaut
+	RW5; 7480,7683 7315,7814 7306,7822 7193,7950
 	RW4; 7480,7683 7545,7641
 	RW2; 7545,7641 7600,7605
 	RW2; 7600,7605 7545,7641 7480,7683
@@ -2979,7 +2980,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-08-04 vvv
+#: last_checked: 2025-08-05 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197

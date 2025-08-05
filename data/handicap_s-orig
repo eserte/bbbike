@@ -31,7 +31,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
 #: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-07-30
+#: last_checked: 2025-08-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
@@ -380,10 +380,11 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-# REMOVED (Engstelle wird gerade abgebaut, zumindest für Radfahrer) --- #: next_check_id: HEINRICHHEINE-2025
-# REMOVED --- #: last_checked: 2025-07-29
-# REMOVED --- #: source_id: viz2021:13.41769,52.51364, (bis 31.12.2025)
-# REMOVED --- Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord geführt	q2::inwork; 11325,12021 11291,11876
+#: next_check_id: HEINRICHHEINE-2025
+#: source_id: viz2021:13.41769,52.51364, (bis 31.12.2025)
+#: last_checked: 2025-08-05
+#: check_frequency: 14d
+Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord geführt	q2::inwork; 11325,12021 11291,11876
 # 
 # REMOVED --- #: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025) (vorfristig inaktiv) --- #: note: Halteverbotsschilder bis 30.05.2025; ist weiterhin aktiv, auch wenn die VIZ-Verkehrsmeldung entfernt wurde --- #: last_checked: 2025-05-21 --- #: next_check: 2025-05-30 (Halteverbotsschilder) --- #: valid: -20250530 --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
@@ -3649,16 +3650,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fußgänger haben Vorrang	q1 4651,11368 4648,11445 4636,11469 4616,11507 4592,11553 4574,11587
 (Verlängerung Hiddenseestr.): Fußgänger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
-Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/holzmarktstra%C3%9Fe-66.1104/page-2#post-24646
-#: by: https://www.adomum.de/#aktuelles (Fertigstellung September 2025)
-#: osm_watch: way id="1076571010" version="1"
-#: last_checked: 2025-07-29
-#: check_frequency: 30d
-#: next_check: 2025-09-30 (adonum website)
-#: note: früher: breiter Geh- und Radweg	q0-
-Schillingstr.: Engstelle wegen Baustelle	q1- 11435,12282 11417,12243
-Schillingstr.: breiter Geh- und Radweg	q0- 11417,12243 11388,12202
+Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11435,12282 11417,12243 11388,12202
 (Jannowitzbrücke - Schillingstr.): einige Fußgänger	q2+ 11347,12223 11417,12243
 #: XXX_prog BS an der Schillingstr., ansonsten q1
 #: note: früher "q2", rechtliche Lage unklar

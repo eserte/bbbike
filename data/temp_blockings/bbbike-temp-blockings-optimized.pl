@@ -4297,7 +4297,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (neue Baustellenampel in der Daimlerstr., bis Ende April 2025)
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
-#: osm_watch: note 3210197 6
+#: osm_watch[closed]: note 3210197 6
+#: osm_watch: way id="4792216" version="17"
+#: osm_watch: way id="1148659680" version="4"
 #: last_checked: 2025-07-18
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 60d
@@ -5488,7 +5490,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 #: also_indoor: traffic (H[unvollständig],ex-G[unvollständig],B)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php?date=20221231 (geplante Fertigstellung Ende 12/2022) (bis Ende Oktober 2025)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1311341.php (ab 5. April 2023 Straßenbau; Verkehrsfreigabe Ende Mai 2023)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/schoenstrasse-ende-mai-soll-der-4-bauabschnitt-fertig-sein_a378280 (bis Ende Mai 2023)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1346375.php
@@ -5504,7 +5506,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2025-05-10 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -7186,7 +7188,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-08-04 vvv
+#: last_checked: 2025-08-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7716,12 +7718,13 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        },
        {
          'data' => '#: by: rbb, wurde da aber mittlerweile entfernt
-#: also_indoor: traffic (re-G,ex-W,B,T)
+#: also_indoor: traffic (re-G,ex-W,ex-B,ex-T)
 #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
 #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-05-24
-#: check_frequency: 75d
+#: last_checked: 2025-08-05 (traffic)
+# REMOVED --- #: check_frequency: 75d
+#: check_frequency: 7d
 #: next_check: 2025-08-31
 	q3::inwork 4690,11369 4775,11203
 ',
@@ -7973,19 +7976,20 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
-#: source_id: adac:935330908 (bis 19.08.2025)
+#: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025)
+#: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
-#: note: bei rbb mittlerweile "Bis auf weiteres"
+#: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
 #: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-07-03 (traffic)
 # REMOVED --- #: check_frequency: 21d (traffic)
-#: next_check: 2025-08-19 (adac, viz)
+#: next_check: 2025-09-08 (VIZ-Verkehrsmeldung)
 	q4::inwork 2396,9427 2467,9425 2592,9419
 ',
          'from' => 1737970440,
          'id' => 4246,
-         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 19.08.2025',
+         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 08.09.2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8171,7 +8175,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (T,H)
+#: also_indoor: traffic (ex-T,H)
 #: last_checked: 2025-07-27
 #: check_frequency: 10d
 #: next_check: 2025-09-05 (Halteverbotsschilder)
@@ -8690,15 +8694,15 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
          'data' => '#: next_check_id: PAULSBORNER-2025
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025) (inaktiv)
 #: source_id: viz2021:13.29402,52.48994,01.07.2025,10:03 (Salzbrunner Str., bis 15.07.2025) (inaktiv)
-#: source_id: viz2021:13.293829,52.491259, (bis 05.08.2025)
-#: source_id: viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025)
+#: source_id: viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025)
+#: source_id: viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025) (bis 08.09.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
 #: last_checked: 2025-07-14 (traffic) vvv
 # REMOVED --- #: check_frequency: 14d (traffic) vvv
-#: next_check: 2025-08-05 (rbb/VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-09-08 (rbb/VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
 #: next_check ^^^
@@ -8709,7 +8713,7 @@ Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
          'dont_check_date' => 1,
          'from' => 1747562400,
          'id' => 4344,
-         'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, Ende der Bauarbeiten unbekannt',
+         'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Mitte September 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8817,7 +8821,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
        {
          'data' => '#: also_indoor: traffic (none)
 #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025
-#: last_checked: 2025-08-04
+#: last_checked: 2025-08-05
 #: next_check: 2025-08-30 (Halteverbotsschilder)
 	q4::inwork; 12238,11931 12413,11901
 ',
@@ -9309,7 +9313,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: viz2021:13.41414,52.50801, (bis 22.08.2025)
 #: also_indoor: traffic (T,G,A)
 #: note: gesperrter Abschnitt etwa 50m, explizite Radfahren-verboten-Schilder
-#: last_checked: 2025-08-04
+#: last_checked: 2025-08-05
 #: next_check: 2025-08-22
 Heinrich-Heine-Str.	q4::inwork 11094,11377 11039,11254
 ',

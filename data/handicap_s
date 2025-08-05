@@ -24,6 +24,7 @@ Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord geführt	q2::inwork; 11325,12021 11291,11876
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
@@ -1626,9 +1627,7 @@ Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 147
 (Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fußgänger haben Vorrang	q1 4651,11368 4648,11445 4636,11469 4616,11507 4592,11553 4574,11587
 (Verlängerung Hiddenseestr.): Fußgänger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
-Schillingstr.: breiter Geh- und Radweg	q0 11472,12406 11485,12391 11435,12282
-Schillingstr.: Engstelle wegen Baustelle	q1 11435,12282 11417,12243
-Schillingstr.: breiter Geh- und Radweg	q0 11417,12243 11388,12202
+Schillingstr.: breiter Geh- und Radweg	q0 11472,12406 11485,12391 11435,12282 11417,12243 11388,12202
 (Jannowitzbrücke - Schillingstr.): einige Fußgänger	q2 11347,12223 11417,12243
 (Schillingstr. - Neue Blumenstr.): Bordstein, einige Fußgänger	q3 11596,12668 11712,12614
 (Wutzkyallee - Zwickauer Damm): einige Fußgänger	q1 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474
