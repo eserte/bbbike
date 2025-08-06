@@ -17146,7 +17146,7 @@ sub get_symbol_scale {
 	    $photo = load_photo($top, $filename, -persistent => 1);
 	}
 	return $photo;
-    } elsif ($tag eq 'r' || $tag eq 'r-R0') {
+    } elsif ($tag eq 'r' || $tag =~ m{^r-(R0|RBau)$}) {
 	my $filename;
 	if ($myscale > 2*$mod) {
 	    $filename = 'eisenbahn'
@@ -17157,7 +17157,7 @@ sub get_symbol_scale {
 	}
 	my $photo;
 	if ($filename) {
-	    if ($tag eq 'r-R0') {
+	    if ($tag =~ m{^r-(R0|RBau)$}) {
 		$filename =~ s{(eisenbahn)}{$1_stillg};
 	    }
 	    $photo = load_photo($top, $filename, -persistent => 1);
