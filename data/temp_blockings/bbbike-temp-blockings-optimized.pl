@@ -6432,17 +6432,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 237120046 (inaktiv)
-#: source_id: 257120055 (02.08.2025 bis 06.08.2025)
-	2::inwork 99825,-46697 99765,-46542 99770,-46280
-',
-         'from' => 1754056800,
-         'id' => 3780,
-         'text' => 'Guben, Bahnübergang Kupferhammerstr.: Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.08.2025 16:00 Uhr bis 06.08.2025 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1754499600
-       },
+       undef,
        undef,
        undef,
        undef,
