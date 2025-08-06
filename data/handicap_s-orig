@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-07-30
+#: last_checked: 2025-08-06
 #: check_frequency: 45d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -143,7 +143,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-08-04 vvv
+#: last_checked: 2025-08-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -238,10 +238,11 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Tempelhof ###
 # 
 #: note: laut Baustellenschild bis Sommer (2025)
+#: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/ (bis September 2025)
 #: last_checked: 2025-06-21
 #: check_frequency: 45d
-#: next_check: 2025-09-20 (Baustellenschild)
-#: valid: -20250920
+#: next_check: 2025-09-20 (Baustellenschild, entwicklungsstadt)
+#: valid: -20250930
 Südkreuz: Bauarbeiten, Engstellen	q2::inwork 7838,7848 7837,7899
 # 
 # REMOVED --- #: next_check_id: BOELCKE-2025
@@ -887,7 +888,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 ### Neukölln ###
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2025-07-18
+#: last_checked: 2025-08-06
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1156,7 +1157,7 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2025-05-14 vvv
+#: last_checked: 2025-08-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899

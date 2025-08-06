@@ -128,7 +128,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="20"
-#: last_checked: 2025-07-18 (mapillary)
+#: last_checked: 2025-08-06
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -4501,7 +4501,10 @@ Freiastr.: Kopfsteinpflaster	Q2 16831,12419 16696,12437
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0+ 16865,13000 17048,13000 17113,13025 17170,13070 17227,13075 17257,13117 17219,13430 17201,13510 17201,13519
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0+ 17219,13430 17300,13459
 Herzbergstr.: betoniert/Verbundsteinpflaster	Q0- 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
-Rumeyplan: Asphalt mit Schäden	Q1 8690,7704 8812,7730 8907,7773 8959,7824
+#: historical_note: früher: Asphalt mit Schäden, Q1
+Rumeyplan: Asphalt	Q0  8690,7704 8812,7730
+#: historical_note: früher: Asphalt mit Schäden	Q1
+Rumeyplan: etwas welliger Asphalt	Q0- 8812,7730 8907,7773 8959,7824
 #: note: laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet - nicht bestätigt
 #: note: von der S-Bahn aus geseheb:
 #: confirmed_by: MichaelM (Kopfsteinpflaster, sogar Q2 -> Q2-)
@@ -10802,8 +10805,8 @@ Am Tierpark [Nebenfahrbahn]: Beton	Q0- 18245,11233 18276,11146
 Am Tierpark [Nebenfahrbahn]: Asphalt	Q0 18276,11146 18301,11033 18368,10763
 (Planufer - Böckhstr.): Kleinsteinpflaster	Q1 11160,9932 11170,9919 11197,9894
 Grimmstr. (Kreuzberg): Verbundsteinpflaster	Q0- 11164,9885 11164,9904 11170,9919 11177,9935
-#: note: mittlerweile sind einige Asphaltstücke richtig rausgebrochen
-Peter-Strasser-Weg: Asphalt mit einigen Schäden	Q1+ 9240,7811 9130,7810
+#: historical_note: früher: Asphalt mit einigen Schäden, Q1+, mit note: mittlerweile sind einige Asphaltstücke richtig rausgebrochen
+Peter-Strasser-Weg: Asphalt	Q0 9240,7811 9130,7810
 (Straße unter dem U-Bahnhof Gleisdreieck): Kopfsteinpflaster	Q2- 8333,10167 8384,10507
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
@@ -14148,16 +14151,18 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 # 
 (Buswendestelle Gensweg): Beton	Q0 12588,1103 12609,1088 12673,1140
 Gensweg: Beton	Q0 12657,1154 12673,1140
-Gensweg: Asphalt	Q0 12673,1140 12704,1102
+Gensweg: Asphalt	Q0 12673,1140 12704,1102 12716,1088 12727,1074
 Am Mühlanger: Betonpflaster	Q0- 12673,1140 12738,1213
 Am Mühlanger: Betonpflaster	Q0- 12738,1213 12802,1285
 Am Mühlanger: Betonpflaster	Q0- 12802,1285 12868,1315 12902,1321
-Dyrekeweg: Betonpflaster	Q0- 12790,1302 12802,1285 12832,1192 12838,1174 12854,1121
+Dyrekeweg: Betonpflaster	Q0- 12790,1302 12802,1285 12832,1192 12838,1174 12854,1121 12860,1082
 An den Buckower Feldern: Betonpflaster	Q0- 12914,1215 12860,1200
 An den Buckower Feldern: Kleinsteinpflaster	Q1 12860,1200 12832,1192
-An den Buckower Feldern: Betonpflaster	Q0- 12832,1192 12745,1116
+An den Buckower Feldern: Betonpflaster	Q0- 12832,1192 12745,1116 12716,1088
 An den Buckower Feldern: Betonpflaster	Q0- 12838,1174 12917,1197
-Knyphausenweg: Betonpflaster	Q0- 12902,1321 12904,1299 12914,1215 12917,1197 12928,1126
+#: XXX Pflaster prüfen!
+An den Buckower Feldern: Betonpflaster	Q0- 12727,1074 12656,1019
+Knyphausenweg: Betonpflaster	Q0- 12902,1321 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101
 # 
 Döberitzer Grünzug: Beton	Q0 7861,13465 7819,13559
 Döberitzer Grünzug: Asphalt	Q0 7819,13559 7825,13569 7805,13594 7782,13600
@@ -15940,7 +15945,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
 #: osm_watch: way id="13863115" version="22"
-#: last_checked: 2025-02-05
+#: last_checked: 2025-08-06
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
@@ -34234,5 +34239,7 @@ Einmündungsbereich asphaltiert	Q0 -5151,15059
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- -3534,15219
 Wendehammerbereich mit Kopfsteinpflaster	Q2 -1353,15502
 Wendehammerbereich mit Kopfsteinpflaster	Q2 5130,15692
+#: note: insbesondere im Bereich der Überfahrt Rumeyplan
+Kreuzungsbereich mit schadhaftem Asphalt	Q1- 8812,7730
 #: ignore ^^^
 #: section ^^^

@@ -3280,7 +3280,8 @@ Freiastr.: Kopfsteinpflaster	Q2 16831,12419 16696,12437
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0 16865,13000 17048,13000 17113,13025 17170,13070 17227,13075 17257,13117 17219,13430 17201,13510 17201,13519
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0 17219,13430 17300,13459
 Herzbergstr.: betoniert/Verbundsteinpflaster	Q0 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
-Rumeyplan: Asphalt mit Schäden	Q1 8690,7704 8812,7730 8907,7773 8959,7824
+Rumeyplan: Asphalt	Q0 8690,7704 8812,7730
+Rumeyplan: etwas welliger Asphalt	Q0 8812,7730 8907,7773 8959,7824
 Bülowstr. (Zehlendorf): mäßiges Kopfsteinpflaster, viele Wellen und Reparaturstellen	Q2 -662,2998 -872,3133 -1052,3276 -1054,3328
 Mäckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,14609
 (Neue Grünstr. - Alte Jakobstr.): Kleinpflaster	Q1 10624,11548 10526,11612
@@ -8979,7 +8980,7 @@ Am Tierpark [Nebenfahrbahn]: Beton	Q0 18245,11233 18276,11146
 Am Tierpark [Nebenfahrbahn]: Asphalt	Q0 18276,11146 18301,11033 18368,10763
 (Planufer - Böckhstr.): Kleinsteinpflaster	Q1 11160,9932 11170,9919 11197,9894
 Grimmstr. (Kreuzberg): Verbundsteinpflaster	Q0 11164,9885 11164,9904 11170,9919 11177,9935
-Peter-Strasser-Weg: Asphalt mit einigen Schäden	Q1 9240,7811 9130,7810
+Peter-Strasser-Weg: Asphalt	Q0 9240,7811 9130,7810
 (Straße unter dem U-Bahnhof Gleisdreieck): Kopfsteinpflaster	Q2 8333,10167 8384,10507
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
@@ -11796,16 +11797,17 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 (Parkplatz vor dem Stade Napoleon): Verbundsteinpflaster	Q1 4111,15999 4075,16030 4054,16035
 (Buswendestelle Gensweg): Beton	Q0 12588,1103 12609,1088 12673,1140
 Gensweg: Beton	Q0 12657,1154 12673,1140
-Gensweg: Asphalt	Q0 12673,1140 12704,1102
+Gensweg: Asphalt	Q0 12673,1140 12704,1102 12716,1088 12727,1074
 Am Mühlanger: Betonpflaster	Q0 12673,1140 12738,1213
 Am Mühlanger: Betonpflaster	Q0 12738,1213 12802,1285
 Am Mühlanger: Betonpflaster	Q0 12802,1285 12868,1315 12902,1321
-Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192 12838,1174 12854,1121
+Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192 12838,1174 12854,1121 12860,1082
 An den Buckower Feldern: Betonpflaster	Q0 12914,1215 12860,1200
 An den Buckower Feldern: Kleinsteinpflaster	Q1 12860,1200 12832,1192
-An den Buckower Feldern: Betonpflaster	Q0 12832,1192 12745,1116
+An den Buckower Feldern: Betonpflaster	Q0 12832,1192 12745,1116 12716,1088
 An den Buckower Feldern: Betonpflaster	Q0 12838,1174 12917,1197
-Knyphausenweg: Betonpflaster	Q0 12902,1321 12904,1299 12914,1215 12917,1197 12928,1126
+An den Buckower Feldern: Betonpflaster	Q0 12727,1074 12656,1019
+Knyphausenweg: Betonpflaster	Q0 12902,1321 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101
 Döberitzer Grünzug: Beton	Q0 7861,13465 7819,13559
 Döberitzer Grünzug: Asphalt	Q0 7819,13559 7825,13569 7805,13594 7782,13600
 Döberitzer Grünzug: Beton	Q0 7782,13600 7756,13634

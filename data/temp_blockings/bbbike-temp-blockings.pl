@@ -361,19 +361,20 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2024-09-05 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-09-08 21:00:00"),
+     { from  => $isodate2epoch->("2025-09-11 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-09-14 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 06.09.2024 14:00 Uhr bis 08.09.2024 20:00 Uhr',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 12.09.2025 14:00 Uhr bis 14.09.2025 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
+#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html (mittlerweile 404)
 #: by: https://www.family-and-friends-ev.de/?date=20210418 (10.-12. September 2021)
 #: by: https://www.vinoflix.com/blog/wein-und-winzerfest-lichtenrade
 #: by: https://www.visitberlin.de/en/event/wine-festival-lichtenrade
 #: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/35-wein-und-winzerfest-29d68374-a7db-402e-9595-697a7fb58cc1/
 #: by: https://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-lichtenrade.html
+#: by: https://www.family-and-friends-ev.de/12-14-september-wein-und-winzerfest-650-jahre-lichtenrade
 	2::temp 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -17914,6 +17915,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_10_0665_0712_online.pdf (Teileinziehung von öffentlichem Straßenland - in den regulären Sitzungswochen des Deutschen Bundestages)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_19_1189_1244_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_23_1469_1520_online.pdf (Termine 2025)
+#: by: https://www.morgenpost.de/bezirke/mitte/article409680344/sperrungen-am-bundestag-rechtens-gericht-faellt-urteil.html
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 EOF
@@ -20662,11 +20664,11 @@ EOF
 	2::inwork -13658,-4896 -13712,-6415
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-13 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-09-15 23:59:59"),
+     { from  => $isodate2epoch->("2025-09-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-09-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 9, start => "2023-10-25T00:00:00"]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (14.09.2024-15.09.2024)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (13.09.2025-14.09.2025)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
@@ -20676,6 +20678,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6806 (Anfrage)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/hinweise/artikel.1226093.php
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1484601.php
+#: by: https://www.visitberlin.de/de/event/fest-der-panke
 	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
 EOF
@@ -21764,11 +21767,11 @@ EOF
 EOF
      },
      { do {
-           my $from1  = $isodate2epoch->("2024-09-19 06:00:00"); # So vor dem Marathon; ein Tag Vorlauf; 2024 am Fr vor dem Marathon
-           my $until1 = $isodate2epoch->("2024-09-23 06:00:00"); # Mi vor dem Marathon; 2024 am Mo vor dem Marathon
+           my $from1  = $isodate2epoch->("2025-09-12 06:00:00"); # So vor dem Marathon; ein Tag Vorlauf; 2024 am Fr anderthalb Wochen vor dem Marathon
+           my $until1 = $isodate2epoch->("2025-09-15 06:00:00"); # Mi vor dem Marathon; 2024 am Mo vor dem Marathon
            # in der Zwischenzeit ist die erweiterte Sperrung aktiv, siehe unten
-           my $from2  = $isodate2epoch->("2024-09-30 06:00:00"); # Mo nach dem Marathon
-           my $until2 = $isodate2epoch->("2024-10-02 23:30:00"); # Di nach dem Marathon; 2024 erst am Mi
+           my $from2  = $isodate2epoch->("2024-09-22 06:00:00"); # Mo nach dem Marathon
+           my $until2 = $isodate2epoch->("2024-09-24 23:30:00"); # Di nach dem Marathon; 2024 erst am Mi
            if (time <= $until1) {
                (from => $from1, until => $until1);
            } else {
@@ -21779,7 +21782,7 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 19.10.2024 bis 03.10.2024',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich vom 12.09.2025 bis 24.09.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -21801,12 +21804,12 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-23 06:00:00"), # Mi vor dem Marathon
-       until => $isodate2epoch->("2024-09-30 06:00:00"), # Mo nach dem Marathon
+     { from  => $isodate2epoch->("2025-09-15 06:00:00"), # Mi vor dem Marathon
+       until => $isodate2epoch->("2025-09-22 06:00:00"), # Mo nach dem Marathon
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 23.09.2024 bis 30.09.2024',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 15.09.2025 bis 22.09.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -29475,7 +29478,8 @@ EOF
        until => undef, # 1663265122, # undef, # 1573754401, # undef, # XXX
 #      text  => 'Treptower Park, Weg zwischen Karpfenteich und Sowjetisches Ehrenmal: Bauarbeiten, Weg gesperrt',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
-       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
+#      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
+       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: alte Bauarbeiten von 2018 - 2022
@@ -29499,7 +29503,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-07-30 vvv
+#: last_checked: 2025-08-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -29508,11 +29512,9 @@ Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
 Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,9542 14384,9565 14478,9545
 #: XXX hier wird vermutlich eine wassergebundene Decke entstehen
 Treptower Park - Am Treptower Park	2::inwork 14316,9542 14242,9448
-#: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger
-#: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-#: last_checked: 2025-07-30
-#: check_frequency: 7d
-Puschkinallee - Am Treptower Park	2::inwork 14318,9688 14316,9542 14347,9452 14398,9373
+# REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
+Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14347,9452
+# REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -36327,7 +36329,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-18
+#: last_checked: 2025-08-06
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36350,8 +36352,10 @@ EOF
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check: 2023-07-31
 # REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
+#: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
+#: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-06-20 vvv
+#: last_checked: 2025-08-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege
@@ -37516,10 +37520,10 @@ Mauerstr.	2::temp 9171,11777 9138,11872
 EOF
      },
      { from  => 1736839577, # 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2025-08-06 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       until => $isodate2epoch->("2025-10-08 17:00:00"), # 1706817784, # undef, # $isodate2epoch->("2024-01-15 17:00:00"), # 1672527600, # 2023-01-01 00:00
 #      text  => 'Hüttenweg: zwischen Taylorstr. und Clayallee Richtung Osten gesperrt, voraussichtlich bis 08.03.2024',
 #      text  => 'Hüttenweg: zwischen Clayallee und Marshallstr. Richtung Westen gesperrt, voraussichtlich bis 04.06.2025',
-       text  => 'Hüttenweg: zwischen Marshallstr. und Am Waldfriedhof Richtung Westen gesperrt, voraussichtlich bis 06.08.2025',
+       text  => 'Hüttenweg: zwischen Marshallstr. und Am Waldfriedhof Richtung Westen gesperrt, voraussichtlich bis 08.10.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
@@ -37528,7 +37532,7 @@ EOF
 #: source_id: viz2021:13.271209,52.45377,14.01.2025,07:00 (bis 01.04.2025) (bis 22.05.2025) (bis 10.05.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.269327,52.45421,02.04.2025,07:00 (bis 15.05.2025) (bis 04.06.2025) (inaktiv)
 #: source_id: viz2021:13.269411,52.454149,02.04.2025,07:00 (bis 03.07.2025) (bis 16.08.2025) (inaktiv)
-#: source_id: viz2021:13.26946,52.45416, (bis 06.08.2025)
+#: source_id: viz2021:13.26946,52.45416, (bis 06.08.2025) (bis 08.10.2025)
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (bis 2023)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -38537,7 +38541,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1754476821, # undef, # XXX
        text  => 'Speyerer Str.: Hochbaustelle, Abschnitte der Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
@@ -38555,12 +38559,10 @@ EOF
 #: by: https://entwicklungsstadt.de/12-etagen-wohn-und-gewerbeprojekt-schoeneberger-eck-soll-2025-fertig-sein/ (bis Mitte 2025)
 #: note: Halteverbotsschilder bis 31.12.2023, mittlerweile bis Juli 2024
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr. (mittlerweile (Juni 2023) sind diese entfallen)
-#: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt?
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="1055654058" version="3"
 #: osm_watch: way id="1182385049" version="1"
-#: last_checked: 2025-07-08 (architektur-urbanistik)
-#: check_frequency: 30d
+# REMOVED --- #: add_fragezeichen: Ist die Fahrbahn der Speyerer Str. weiterhin gesperrt? --- #: last_checked: 2025-07-08 (architektur-urbanistik) --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-07-01 (bw, entwicklungsstadt)
 	q3::inwork 6447,9661 6341,9546
 EOF
@@ -41391,7 +41393,7 @@ EOF
        until => $isodate2epoch->("2024-08-31 22:00:00"), # 1693080000, # 2023-08-26 22:00
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 8]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 31. August 2024 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
@@ -43240,7 +43242,7 @@ EOF
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-07-31 (bahninfo-forum) vvv
+#: last_checked: 2025-08-05 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
@@ -45663,7 +45665,7 @@ EOF
 #      text  => 'Eingang Kienitzer Str.: wegen Bauarbeiten gesperrt',
 #      text  => 'Tempelhofer Feld, Eingänge Herrfurthstr. und Leinestr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
 #      text  => 'Tempelhofer Feld, Eingang Herrfurthstr.: wegen Bauarbeiten gesperrt, ab 25.11.2024',
-       text  => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten Sperrung geplant (Stand Anfang Juni 2025: Crashgate ist gesperrt)',
+       text  => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten gesperrt, außerdem Sperrungen des Wegs parallel zur Oderstr. (Stand Anfang August 2025: Crashgate ist gesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
@@ -45676,7 +45678,7 @@ EOF
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-08-03 (tempelhoferfeld website) vvv
+#: last_checked: 2025-08-06 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -45686,6 +45688,7 @@ EOF
 # REMOVED --- Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
 # REMOVED --- Eingangsbereich Herrfurthstr.	2::inwork 11418,8015 11439,7894 11460,7802
 Eingangsbereich Herrfurthstr., Restarbeiten	2::inwork 11458,7897 11490,7735
+Weg parallel zur Oderstr.	2::inwork 11547,7432 11527,7530 11509,7636
 Crashgate Richtung Rundkurs Südwest	2::inwork 11407,7198 11598,7264 11608,7267
 Crashgate	2::inwork 11598,7264 11596,7280 11593,7317 11589,7353
 Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
@@ -46771,7 +46774,7 @@ EOF
 #: also_indoor: traffic (ex-B,ex-T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-07-12 (traffic)
+#: last_checked: 2025-08-06
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -46808,16 +46811,16 @@ EOF
      },
      { from  => 1736343075, # 2025-01-08 14:31
        until => undef, # 1753999200, # 2025-08-01 00:00
-       text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und Bayernring, Fahrbahn gesperrt, vermutlich bis 31.07.2025, evtl. wird verlängert',
+#      text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und Bayernring, Fahrbahn gesperrt, vermutlich bis 31.07.2025, evtl. wird verlängert',
+       text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und General-Pape-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-G,T,B,A)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-07-28 (traffic)
-#: check_frequency: 7d
-#: next_check: 2025-07-31 (Halteverbotsschilder)
-	q4::inwork; 8482,8364 8380,8545
-# REMOVED ---	q4::inwork; 8380,8545 8334,8655 8306,8722
+#: last_checked: 2025-08-06
+# REMOVED --- #: check_frequency: 7d
+# REMOVED --- #: next_check: 2025-07-31 (Halteverbotsschilder)
+	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
 EOF
      },
      { from  => undef, # 
@@ -47275,7 +47278,7 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,H)
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-06 (traffic)
 #: check_frequency: 10d
 #: next_check: 2025-09-05 (Halteverbotsschilder)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
@@ -47429,6 +47432,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/pankow/article409580036/berlin-prenzlauer-berg-bau-finale-am-schwedter-steg-wann-diese-bruecke-endlich-oeffnet.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/monatelange-verzogerung-am-mauerpark-neuer-termin-fur-freigabe-des-schwedter-stegs-in-berlin-steht-und-wirft-fragen-auf-14080070.html
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586455.php (Freigabe am 1.8.2025)
+#: by: https://www.morgenpost.de/bezirke/pankow/article409663556/schwedter-steg-in-prenzlauer-berg-in-137-tagen-saniert-so-rollt-es-sich-auf-der-bruecke.html
 #: source_id: viz2021:13.399992,52.549907,10.03.2025,06:00 (bis 03.07.2025) (bis 18.07.2025) (inaktiv)
 #: osm_watch: note 4317053 8
 #: osm_watch: way id="1149646787" version="5"
@@ -47650,7 +47654,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: last_checked: 2025-07-25
+#: last_checked: 2025-08-06
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 EOF
@@ -47719,7 +47723,7 @@ EOF
 #: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
 #: osm_watch: way id="276210232" version="6"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2025-07-26 (architektur-urbanistik)
+#: last_checked: 2025-08-06
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -48722,7 +48726,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-08-03 (traffic)
+#: last_checked: 2025-08-06 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 EOF
@@ -48776,7 +48780,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
 #: by: https://www.tagesspiegel.de/berlin/raumungsarbeiten-dauern-langer-als-geplant-spandauer-und-tegeler-forst-bleiben-bis-zum-18-august-gesperrt-14112452.html
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
-#: last_checked: 2025-07-31 (indoor check) vvv
+#: last_checked: 2025-08-06 (indoor check) vvv
 #: check_frequency: 10d (indoor check) vvv
 #: next_check: 2025-08-18 (Pressemitteilung) vvv
 #: note: nördlicher Abschnitt (Tegeler Forst - Hermsdorf)
@@ -48849,7 +48853,7 @@ EOF
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-07-31 (indoor check) vvv
+#: last_checked: 2025-08-06 (indoor check) vvv
 #: check_frequency: 10d (indoor/traffic check) vvv
 #: next_check: 2025-08-18 vvv
 # REMOVED (laut VIZ wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
@@ -49049,11 +49053,12 @@ EOF
 EOF
      },
      { from  => 1752184800, # 2025-07-11 00:00
-       until => 1753480799, # 2025-07-25 23:59
-       text  => 'Belziger Str.: Bauarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), vermutlich sind auch Radfahrer betroffen, voraussichtlich bis zum 25. Juli 2025',
+       until => $isodate2epoch->("2025-08-21 18:00:00"), # 1753480799, # 2025-07-25 23:59
+       text  => 'Belziger Str.: Bau- und Markierungsarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), Fahrbahn noch nicht offiziell für Radfahrer geöffnet, voraussichtlich bis zum 21. August 2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BELZIGER-2025
+#: osm_watch: note 4877718 2
 	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
 EOF
      },
@@ -49113,7 +49118,8 @@ EOF
 #: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025)
 #: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
-#: last_checked: 2025-07-18 vvv
+#: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
+#: last_checked: 2025-08-06 vvv
 #: next_check: 2025-09-20 vvv
 Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 # REMOVED (nicht mehr?) --- #: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
@@ -49133,14 +49139,12 @@ Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork 
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1754476868, # undef, # XXX
        text  => 'Ansbacher Str.: vor der Geisbergstr. Bauarbeiten, Fahrbahn und Radweg gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (ex-T)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-07-17
-#: check_frequency: 14d
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2025-08-06 --- #: check_frequency: 14d
 	q3::inwork 6118,10327 6065,10129
 EOF
      },
@@ -49153,7 +49157,7 @@ EOF
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-07-17 (traffic)
+#: last_checked: 2025-08-06
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 EOF
@@ -49169,8 +49173,8 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 EOF
      },
      { from  => 1752789600, # 2025-07-18 00:00
-       until => 1755273600, # 2025-08-15 18:00
-       text  => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 15.08.2025',
+       until => undef, # 1755273600, # 2025-08-15 18:00
+       text  => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 15.08.2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.484668,52.501156,28.04.2025,12:00 (bis 16.05.2025) (bis 13.06.2025) (inaktiv)
@@ -49183,7 +49187,7 @@ EOF
 #: note: bei rbb bis 08.08.2025 verlängert
 #: last_checked: 2025-07-27
 # REMOVED --- #: check_frequency: 10d
-#: next_check: 2025-08-15 (rbb-Verkehrsmeldung)
+#: next_check: 2025-08-15 (rbb/VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
 	1::inwork 15970,10755 16038,10818
 EOF
@@ -49341,32 +49345,53 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Barbarossastr.: Bauarbeiten zwischen Karl-Schrader-Str. und Goltzstr., evtl. sind auch Radfahrer betroffen',
+       text  => 'Barbarossastr.: Bauarbeiten zwischen Karl-Schrader-Str. und Goltzstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: XXX Hat es was mit den Fernwärmearbeiten im Barbarossakiez zu tun?
+# REMOVED --- #: XXX Hat es was mit den Fernwärmearbeiten im Barbarossakiez zu tun?
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-08-04 (traffic)
+#: note: Länge der Sperrung ca. 60m
+#: last_checked: 2025-08-06
 #: check_frequency: 14d
 	q4::inwork 6860,9529 7002,9526
 EOF
      },
      { from  => 1754329180,
        until => undef,
-       text  => 'Eisenacher Str.: mögliche Bauarbeiten zwischen Lindauer Str. und Barbarossaplatz, evtl. sind auch Radfahrer betroffen, ab 5.8.2025',
+#      text  => 'Eisenacher Str.: mögliche Bauarbeiten zwischen Lindauer Str. und Barbarossaplatz, evtl. sind auch Radfahrer betroffen, ab 5.8.2025',
+       text  => 'Barbarossaplatz: östlicher Platzbereich gesperrt, voraussichtlich bis Mitte Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BARBAROSSAPLATZ-2025
 #: by: https://www.bew.berlin/aktuelles-und-presse/2025/fernwaerme-ausbau-am-barbarossaplatz-beginnt/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1587005.php
-#: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
+# REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
-#: next_check: 2025-08-05
-Eisenacher Str.: Bauarbeiten 2025/2026	q4::inwork 6743,9678 6731,9559
+#: last_checked: 2025-08-06 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-05-15 vvv
+#: note: Halteverbotsschilder bis 15.05.2026
+Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
+Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# REMOVED (hier entgegen der Meldung nicht) --- Eisenacher Str.: Bauarbeiten 2025/2026	q4::inwork 6743,9678 6731,9559
 # später: #: next_check: 2026-03-15
 # später: Friesinger Str.: Bauarbeiten 2026/2027	? 6445,9432 6723,9433
 # später: #: next_check: 2028-03-15
 # später: Rosenheimer Str.: Bauarbeiten 2028/2029	? 6446,9328 6717,9339 6851,9365
+EOF
+     },
+     { from  => 1754431200, # 2025-08-06 00:00
+       until => 1767222000, # 2026-01-01 00:00
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
+#: add_fragezeichen: Sind die Wege bereits gesperrt?
+#: XXX Nach den Bauarbeiten bessere Qualität?
+	2::inwork 13711,10022 13657,9983 13418,9944
 EOF
      },
     );
