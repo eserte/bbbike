@@ -20712,12 +20712,12 @@ EOF
 	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 160,24390 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-19 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
-       until => $isodate2epoch->("2024-09-22 23:59:59"),
+     { from  => $isodate2epoch->("2025-09-18 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
+       until => $isodate2epoch->("2025-09-21 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 9, start => "2020-10-25T00:00:00"]],
 #      text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße gesperrt zwischen An der Vogelweide und Mönchmühler Str., 20.09.2024 bis 22.09.2024',
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße gesperrt zwischen Schönhauser Str. und An der Vogelweide, 20.09.2024 bis 22.09.2024',
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße gesperrt zwischen Schönhauser Str. und An der Vogelweide, 19.09.2025 bis 21.09.2025',
        type  => 'handicap',
        source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019',
        data  => <<EOF,
@@ -22265,11 +22265,11 @@ EOF
 # REMOVED --- #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation) --- #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein --- #: source_id: 2147339529 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-03-01
 #: source_id: IM_019747 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72 (inaktiv)
-#: source_id: viz2021:13.32822,52.50806, (bis 14.12.2027)
+#: source_id: viz2021:13.32822,52.50806, (bis 14.12.2027) (inaktiv)
 #: source_id: adac:1980813020 (Drehung der Einbahnstraßenregelung, bis voraussichtlich 13.12.2027)
 #: XXX laut rbb nur Richtung Süden gesperrt (oder eine Ungenauigkeit wegen der Einbahnstraßenregelung für Kfz?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luzcvt55nc2k (Einbahnstraßenregelung gedreht?)
-# REMOVED --- #: also_indoor: traffic (H) --- # REMOVED --- #: next_check: 2019-06-13
+#: also_indoor: traffic (T)
 #	q2::inwork 5258,11285 5254,11237 5240,11047 5236,10994
 	q4::inwork 5258,11285 5254,11237 5240,11047 5236,10994
 EOF
@@ -32047,7 +32047,7 @@ EOF
 #: osm_watch: note 4813149 1
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-15
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 	2::inwork 16539,10097 16353,10207 16148,10329 15758,10578
@@ -36526,7 +36526,7 @@ EOF
 #: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
 #: source_id: adac:89620388 (bis voraussichtlich 08.08.2025)
-#: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025)
+#: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -36547,18 +36547,13 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1836261367248228357
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html (21. Juli 2025 6 Uhr bis 8. August 2025 12 Uhr)
 #: also_indoor: traffic (G,B,W)
-#: priority: #A
-#: last_checked: 2025-06-18 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-08-08 (geplantes Ende) vvv
+# REMOVED --- #: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
 # REMOVED --- #: osm_watch: way id="794278028" version="10"
 # REMOVED --- #: osm_watch: way id="1181902719" version="1"
 #: XXX nächste Sperrung der Hämmerlingstr.: Von Montag, 21. Juli (6 Uhr), bis Freitag, 8. August 2025 (vsl. 12 Uhr)
 Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245 22033,6144
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2022-05-02 00:00:00"),
@@ -39842,16 +39837,20 @@ Zugang zum Uferweg	2::inwork 5800,12361 5796,12372
 # REMOVED --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
-     { from  => 1677452400, # 2023-02-27 00:00
-       until => 1688234742, # $isodate2epoch->("2023-11-30 18:00:00"), # 1685743200, # 2023-06-03 00:00
-       text  => 'Passow: Bahnübergang komplett gesperrt, bis zum 1.7.2023 (Umfahrungsmöglichkeit über Ortsumfahrung Passow, Kraftfahrzeugstr. wurde hier aufgehoben, Routing in BBBike nicht möglich), evtl. auch länger',
+     { from  => $isodate2epoch->("2025-08-20 00:00:00"), # 1677452400, # 2023-02-27 00:00
+       until => $isodate2epoch->("2025-08-23 17:00:00"), # 1688234742, # $isodate2epoch->("2023-11-30 18:00:00"), # 1685743200, # 2023-06-03 00:00
+#      text  => 'Passow: Bahnübergang komplett gesperrt, bis zum 1.7.2023 (Umfahrungsmöglichkeit über Ortsumfahrung Passow, Kraftfahrzeugstr. wurde hier aufgehoben, Routing in BBBike nicht möglich), evtl. auch länger',
+       text  => 'Passow: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.08.2025 08:00 bis 23.08.2025 17:00',
        type  => 'gesperrt',
        data  => <<EOF,
+#: note: alte Sperrung (2023)
 #: by: https://www.moz.de/lokales/schwedt/strassensperrung-passow-bahnhof-in-passow-kaum-noch-erreichbar-_-anwohner-ohne-auto-haben-das-nachsehen-69248727.html
 #: by: https://www.nordkurier.de/regional/uckermark/kilometerlanger-umweg-in-passow-1437197
 #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//ausbau-der-bahnstrecke-angermuende-%E2%80%93-grenze/31541
 #: by: https://www.schwedt.eu/de/31978 (Verlängerung bis 1.7.2023, allerdings nicht täglich)
 #: by: https://www.schwedt.eu/de/31541
+#: note: neue Sperrung (2025)
+#: source_id: 257310151 (bis 23.08.2025)
 # REMOVED --- #: also_indoor: traffic (ex-G,ex-W) --- #: last_checked: 2023-06-02 (traffic) --- #: check_frequency: 14d --- #: next_check: 2023-07-01
 	2::inwork 56280,83440 56301,83419 56317,83407
 EOF
@@ -40109,7 +40108,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 237120046 (inaktiv)
-#: source_id: 257120055 (02.08.2025 bis 06.08.2025)
+#: source_id: 257120055 (02.08.2025 bis 06.08.2025) (inaktiv)
 	2::inwork 99825,-46697 99765,-46542 99770,-46280
 EOF
      },
@@ -41261,16 +41260,22 @@ EOF
 	2::inwork 65854,-2562 65816,-2687 65638,-2821 64980,-3141 64470,-3222 63787,-3692 63523,-3781 62692,-4215 62507,-4444
 EOF
      },
-     { from  => 1690196400, # 2023-07-24 13:00
-       until => 1696768574, # $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
-       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
+     { from  => 1755295119, # 1690196400, # 2023-07-24 13:00
+       until => undef, # 1696768574, # $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
+#      text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
+       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, evtl. sind auch Radfahrer betroffen',
        type  => 'handicap',
        data  => <<EOF,
+#: note: alte Meldung von 2023
 #: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
 #: by: https://www.bahninfo-forum.de/read.php?9,774482,776967#msg-776967 (frei ab 31.8.2023?)
 #: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023) (bis 20.10.2023) (inaktiv)
 #: source_id: bvg2021:m1#BVG327081_0
+#: note: neue Meldung von 2025
+#: source_id: viz2021:13.4017,52.59009,
 # REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
+#: last_checked: 2025-08-15 (VIZ-Verkehrsmeldung)
+#: check_frequency: 14d
 	q4::inwork 10178,20525 10066,20494
 EOF
      },
@@ -43242,11 +43247,12 @@ EOF
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-08-05 (daf) vvv
+#: last_checked: 2025-08-06 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
-Gipsstr., etwa 30m	q2::inwork 10341,13376 10199,13446
+#: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
+Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -43806,7 +43812,7 @@ EOF
 #: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025) (bis 01.08.2025) (inaktiv)
 #: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
 #: source_id: viz2021:13.5264,52.53348, (bis 01.08.2025) (inaktiv)
-#: source_id: viz2021:13.52004,52.5326, (bis 12.08.2025)
+#: source_id: viz2021:13.52004,52.5326, (bis 12.08.2025) (bis 12.09.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
@@ -43817,8 +43823,8 @@ EOF
 #: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
 #: last_checked: 2025-08-03
-#: check_frequency: 30d
-#: next_check: 2025-08-12 (VIZ-Verkehrsmeldung)
+#: check_frequency: 60d
+#: next_check: 2025-09-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-10-31 (Baustellenschild)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 EOF
@@ -44595,16 +44601,19 @@ EOF
 EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
-       until => $isodate2epoch->("2025-08-29 17:00:00"), # 1722265200, # 2024-07-29 17:00
-       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.08.2025 17:00',
+       until => $isodate2epoch->("2025-12-31 18:00:00"), # $isodate2epoch->("2025-08-29 17:00:00"), # 1722265200, # 2024-07-29 17:00
+#      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.08.2025 17:00',
+       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
 #: source_id: viz2021:13.408237,52.563626, (bis 29.08.2025)
 #: osm_watch: way id="1303423090" version="4"
-#: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025
-	q3::inwork 10573,17566 10466,17464
+#: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
+#: last_checked: 2025-08-09 (mapillary)
+#: next_check: 2025-12-31 (Baustellenschild)
+Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
 EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
@@ -46099,7 +46108,7 @@ EOF
        text  => 'Radweg Elstal - Rohrbeck (entlang der B5): Radwegsanierung, mögliche Sperrung, vom 21.10.2024 08:00 Uhr bis 15.08.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.07.2025) (inaktiv) (nur noch Einschränkungen, bis 15.08.2025)
+#: source_id: LS/223-P/24/161 (bis 30.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.07.2025) (inaktiv) (nur noch Einschränkungen, bis 15.08.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-b5-zw-elstal-und-rohrbeck_vf (Verbreiterung, Schutzfolie)
 	2::inwork -14074,13865 -14188,13866 -15348,13791 -15958,13734
 EOF
@@ -47071,7 +47080,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.312019,52.487816,10.02.2025,07:00 (bis 03.03.2025) (inaktiv)
-#: source_id: viz2021:13.31203,52.48784,16.06.2025,07:00 (bis 08.08.2025)
+#: source_id: viz2021:13.31203,52.48784,16.06.2025,07:00 (bis 08.08.2025) (inaktiv)
 #: source_id: adac:966260874 (bis 08.08.2025)
 #: note: bei rbb wieder da
 	q4::inwork 4181,8933 4198,9015
@@ -47169,15 +47178,15 @@ EOF
 EOF
      },
      { from  => 1739720880, # 2025-02-16 16:48
-       until => $isodate2epoch->("2025-08-15 17:00:00"), # $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
+       until => $isodate2epoch->("2025-09-30 17:00:00"), # $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
 #      text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 bis 13.06.2025',
-       text  => 'Scottweg: Fahrbahn gesperrt, Bürgersteig für Radfahrer frei, bis 15.08.2025',
+       text  => 'Scottweg: Fahrbahn gesperrt, Bürgersteig für Radfahrer frei, bis 30.09.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
 #: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
 #: source_id: adac:1389146504 (bis 31.07.2025) (bis 15.08.2025)
-#: source_id: viz2021:13.23143,52.50934, (bis 15.08.2025)
+#: source_id: viz2021:13.23143,52.50934, (bis 15.08.2025) (bis 30.09.2025)
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt, mittlerweile bis 15.08.2025
 # REMOVED --- #: next_check: 2025-04-30
@@ -47359,7 +47368,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.418488,52.553809,03.03.2025,07:00 (hier nur Kfz-Verkehr, bis 02.08.2025) (inaktiv)
 #: source_id: viz2021:13.41845,52.55424,03.03.2025,07:00 (bis 02.08.2025) (inaktiv)
-#: source_id: viz2021:13.41845,52.55424, (nun gesperrt, bis 07.08.2025)
+#: source_id: viz2021:13.41845,52.55424, (nun gesperrt, bis 07.08.2025) (inaktiv)
 #: note: bei rbb weiterhin nur Einbahnstraßenregelung, aber auch verlängert, hier bis zum 08.08.2025
 # REMOVED ---	q4::inwork; 11284,16527 11289,16423
 	q4::inwork 11284,16527 11289,16423
@@ -47754,7 +47763,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Radickestr., Wassermannstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+       text  => 'Wassermannstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
        type  => 'handicap',
        accept_multi_feature_distance => 2000,
        data  => <<'EOF',
@@ -47776,16 +47785,16 @@ EOF
 #: source_id: bvg2024:164#HIM_FREETEXT_290897
 #: source_id: adac:210225916 (bis 18.07.2025) (inaktiv)
 #: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025) (bis 15.08.2025)
-#: source_id: viz2021:13.54611,52.43478,10.06.2025,07:00 (hier: Radickestr. bis Friedenstr., bis 15.08.2025)
+#: source_id: viz2021:13.54611,52.43478,10.06.2025,07:00 (hier: Radickestr. bis Friedenstr., bis 15.08.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 # REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
-#: note: Halteverbotsschilder bis 15.08.2025, auch laut Website bis zum gleichen Datum; bei rbb+adac nun ebenfalls bis zum 15.08.2025 verlängert
-Radickestraße: Einbahnstraße zwischen Anna-Seghers-Str. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572
-Friedenstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20219,3661 20366,3480
-Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451,3538
-Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
-Gellertstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20148,3490 20237,3392
+# REMOVED (hier nicht mehr?) --- #: note: Halteverbotsschilder bis 15.08.2025, auch laut Website bis zum gleichen Datum; bei rbb+adac nun ebenfalls bis zum 15.08.2025 verlängert
+# REMOVED --- Radickestraße: Einbahnstraße zwischen Anna-Seghers-Str. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572
+# REMOVED --- Friedenstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20219,3661 20366,3480
+# REMOVED --- Sußer Grund: Anbindung an die Radickestraße gesperrt	q3::inwork 20304,3714 20451,3538
+# REMOVED --- Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
+# REMOVED --- Gellertstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20148,3490 20237,3392
 # REMOVED --- Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
 # REMOVED --- #: note: Beginn ab 26.05.2025 --- Radickestraße: Einbahnstraße zwischen Arndtstraße und Nipkowstraße, offen Richtung Adlergestell	q4::inwork; 20499,3572 20592,3633
 # REMOVED --- #: next_check: 2025-07-15
@@ -48203,16 +48212,18 @@ EOF
      },
      { from  => 1747223796, # 2025-05-14 13:56
        until => 1761951600, # 2025-11-01 00:00
-       text  => 'Brandenburgische Str., Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
+#      text  => 'Brandenburgische Str., Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
+       text  => 'Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2
 #: also_indoor: traffic (G,T[zu wenig])
-#: last_checked: 2025-06-25 (mapillary) vvv
+#: last_checked: 2025-08-06 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-10-31 (Baustellenschild) vvv
-Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
-Borstellstr.: Sperrung erst kurz vor der Kreuzung	q3::inwork 6532,4422 6491,4391
+# REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
+#: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3
+Borstellstr.	q4::inwork 6532,4422 6491,4391
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -48264,14 +48275,14 @@ EOF
 EOF
      },
      { from  => undef, # 1747198800, # 2025-05-14 07:00
-       until => $isodate2epoch->("2025-08-15 18:00:00"), # 1750785392, # 1750802340, # 2025-06-24 23:59
+       until => $isodate2epoch->("2025-09-19 18:00:00"), # 1750785392, # 1750802340, # 2025-06-24 23:59
 #      text  => 'Pfalzburger Str. (Wilmersdorf): Bauarbeiten zwischen Lietzenburger Str. und Ludwigkirchplatz, evtl. sind auch Radfahrer betroffen, vom 15.05.2025 07:00 bis 24.06.2025 23:59',
-       text  => 'Pfalzburger Str. (Wilmersdorf): Bauarbeiten zwischen Lietzenburger Str. und Ludwigkirchplatz, Einbahnstraße, offen Richtung Norden, evtl. sind auch Radfahrer betroffen, bis 15.08.2025',
+       text  => 'Pfalzburger Str. (Wilmersdorf): Bauarbeiten zwischen Lietzenburger Str. und Ludwigkirchplatz, Einbahnstraße, offen Richtung Norden, evtl. sind auch Radfahrer betroffen, bis 19.09.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.32289,52.499283,15.05.2025,07:00 (bis 24.06.2025) (inaktiv)
 #: source_id: viz2021:13.322619,52.497886,30.06.2025,06:00 (unkonkret, bis 08.08.2025) (inaktiv)
-#: source_id: viz2021:13.322619,52.497886, (bis 15.08.2025)
+#: source_id: viz2021:13.322619,52.497886, (bis 15.08.2025) (bis 19.09.2025)
 #: note: bei rbb konkreter, zunächst bis 08.08.2025, verlängert bis 15.08.2025
 	q4::inwork; 4930,10368 4910,10135
 EOF
@@ -48780,7 +48791,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
 #: by: https://www.tagesspiegel.de/berlin/raumungsarbeiten-dauern-langer-als-geplant-spandauer-und-tegeler-forst-bleiben-bis-zum-18-august-gesperrt-14112452.html
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
-#: last_checked: 2025-08-06 (indoor check) vvv
+#: last_checked: 2025-08-13 (website map) vvv
 #: check_frequency: 10d (indoor check) vvv
 #: next_check: 2025-08-18 (Pressemitteilung) vvv
 #: note: nördlicher Abschnitt (Tegeler Forst - Hermsdorf)
@@ -48853,7 +48864,7 @@ EOF
 #: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
 #: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-08-06 (indoor check) vvv
+#: last_checked: 2025-08-13 (website map) vvv
 #: check_frequency: 10d (indoor/traffic check) vvv
 #: next_check: 2025-08-18 vvv
 # REMOVED (laut VIZ wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
@@ -48883,13 +48894,13 @@ Oberjägerweg	2::temp -4485,20420 -4053,20594
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2025-08-08 18:00:00"),
-       text  => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 08.08.2025',
+       until => $isodate2epoch->("2025-08-25 18:00:00"),
+       text  => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 25.08.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
-#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025)
+#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025)
 #: note: mittlerweile beim rbb bis zum 08.08.2025 verlängert
 Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
@@ -48983,7 +48994,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: adac:871993976 (bis voraussichtlich 08.08.2025)
-#: source_id: viz2021:13.59316,52.45162,16.07.2025,16:00 (bis 08.08.2025)
+#: source_id: viz2021:13.59316,52.45162,16.07.2025,16:00 (bis 08.08.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltdzi3chw227
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidzwcksbkmsr3hfcozkvrvb3a5s6kbpkezfvsnfxcuqb2ihl7wx4a@jpeg
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltf3zpknqs2c (auf 11.7.2025 verschoben)
@@ -49174,20 +49185,21 @@ EOF
      },
      { from  => 1752789600, # 2025-07-18 00:00
        until => undef, # 1755273600, # 2025-08-15 18:00
-       text  => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 15.08.2025, evtl. wird verlängert',
+       text  => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 17.10.2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.484668,52.501156,28.04.2025,12:00 (bis 16.05.2025) (bis 13.06.2025) (inaktiv)
 #: source_id: viz2021:13.48532,52.501467,28.04.2025,12:00 (bis 20.06.2025) (bis 11.07.2025) (bis 27.06.2025) (bis 11.07.2025) (inaktiv)
 #: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025)
-#: source_id: viz2021:13.48067,52.49917,17.07.2025,07:00 (bis 15.08.2025)
-#: source_id: viz2021:13.484668,52.501156, (bis 08.08.2025)
+#: source_id: viz2021:13.48067,52.49917,17.07.2025,07:00 (bis 15.08.2025) (inaktiv)
+#: source_id: viz2021:13.484668,52.501156, (bis 08.08.2025) (inaktiv)
+#: source_id: viz2021:13.48067,52.49917, (bis 17.10.2025)
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
 #: last_checked: 2025-07-27
-# REMOVED --- #: check_frequency: 10d
-#: next_check: 2025-08-15 (rbb/VIZ-Verkehrsmeldung)
+#: check_frequency: 30d
+#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
 	1::inwork 15970,10755 16038,10818
 EOF
@@ -49198,7 +49210,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: LS/221-E/25/086 (bis 01.08.2025) (inaktiv)
-#: source_id: LS/221-E/25/105-1 (Gegenverkehrsregelung (wird ignoriert), 11.08.2025 bis 15.08.2025)
+#: source_id: LS/221-E/25/105-1 (Gegenverkehrsregelung (wird ignoriert), 11.08.2025 bis 15.08.2025) (inaktiv)
 	2::inwork 23759,49971 24081,50440 24364,50554 24522,50570 25904,50276 26244,50372
 EOF
      },
@@ -49392,6 +49404,15 @@ EOF
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: XXX Nach den Bauarbeiten bessere Qualität?
 	2::inwork 13711,10022 13657,9983 13418,9944
+EOF
+     },
+     { from  => 1754456400, # 2025-08-06 07:00
+       until => 1757023140, # 2025-09-04 23:59
+       text  => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., Sperrung, evtl. sind auch Radfahrer betroffen, Baustelle, vom 07.08.2025 bis 04.09.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025)
+	q4::inwork 10066,10071 9837,10117
 EOF
      },
     );

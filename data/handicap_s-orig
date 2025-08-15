@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-07-31
+#: last_checked: 2025-08-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -30,11 +30,11 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # 
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
-#: note: Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-08-05
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
-Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
+# REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025
+# REMOVED --- #: last_checked: 2025-08-05
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
+# REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
 #: last_checked: 2025-07-30 vvv
@@ -325,7 +325,7 @@ Ortolfstr.: kurzes Stück der Fahrbahn zwischen Peenestr. und Bernulfstr gesperrt
 #: next_check_id: PEKINGERPLATZ-2025
 #: note: laut Baustellenschild bis 01/2026
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-07-26 vvv
+#: last_checked: 2025-08-08 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 vvv
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
@@ -349,7 +349,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2025-07-25
+#: last_checked: 2025-08-06 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -451,7 +451,7 @@ Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord 
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-07-31 (traffic) vvv
+#: last_checked: 2025-08-07 (mapillary) vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="43"
@@ -4179,7 +4179,7 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://entwicklungsstadt.de/so-soll-die-neue-fahrradbruecke-am-rathaus-spandau-aussehen/
 #: by: https://www.morgenpost.de/bezirke/spandau/article408813542/verkehrswende-die-plaene-fuer-die-radbruecke-am-rathaus-spandau.html
 # REMOVED (wieder benutzungspflichtig) --- #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
-#: last_checked: 2025-07-03 (mapillary) vvv
+#: last_checked: 2025-08-08 (mapillary) vvv
 #: check_frequency: 360d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3511,14260 -3517,14218 -3552,14082
