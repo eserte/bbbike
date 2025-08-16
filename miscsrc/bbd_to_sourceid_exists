@@ -47,11 +47,24 @@ sub bbd_to_sourceid_exists {
 	Strassen->new_stream($infile)->read_stream
 	    (sub {
 		 my(undef, $dir) = @_;
+
+		 my %sourceid_active;
+		 my %sourceid_inactive;
 		 for my $source_id (@{ $dir->{source_id} || [] }) {
-		     my $is_inactive;
-		     if ($inactive) {
-			 next if $source_id !~ m{\binaktiv\)\s*$};
+		     if ($source_id =~ m{\binaktiv\)\s*$}) {
+			 $sourceid_inactive{$source_id} = 1;
+		     } else {
+			 $sourceid_active{$source_id} = 1;
 		     }
+		 }
+		 for my $source_id (@{ $dir->{'source_id[inactive]'} || [] }) {
+		     $sourceid_inactive{$source_id} = 1;
+		 }
+
+		 for my $source_id (
+		     ($inactive ? () : (sort keys %sourceid_active)),
+		     (sort keys %sourceid_inactive),
+		 ) {
 		     if (HANDLE_MULTIPLE_IDS) {
 			 my @id_candidates = split /\s+/, $source_id;
 			 for my $id_candidate (@id_candidates) {
