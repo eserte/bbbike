@@ -76,7 +76,7 @@ if ($show_reldate || !defined $show_reldate) {
     }
 }
 
-my $sourceids = load_sourceids();
+my($sourceids, $inactive_sourceids) = load_sourceids();
 
 if (!defined $new_version) {
     if ($old_version eq 'empty') {
@@ -226,7 +226,7 @@ sub print_basic_info {
     if ($record->{_date} =~ m{ - (\d{4}-\d{2}-\d{2})}) {
 	$enddate = $1;
     }
-    print "#: source_id: $ext_id" . ($enddate ? " (bis $enddate)" : "") . ($sourceids->{$id} ? " (INUSE)" : "") . "\n";
+    print "#: source_id: $ext_id" . ($enddate ? " (bis $enddate)" : "") . ($inactive_sourceids->{$id} ? " (WAS_INUSE)" : ($sourceids->{$id} ? " (INUSE)" : "")) . "\n";
 
 }
 
@@ -366,7 +366,16 @@ sub load_sourceids {
 	    $bvg_sourceids{$1} = 1;
 	}
     }
-    \%bvg_sourceids;
+
+    my $inactive_sourceids = LoadFile(bbbike_root . "/tmp/sourceid-inactive.yml");
+    my %bvg_inactive_sourceids;
+    while(my($id, undef) = each %$inactive_sourceids) {
+	if ($id =~ m{^bvg2024:.*#(.*)}) {
+	    $bvg_inactive_sourceids{$1} = 1;
+	}
+    }
+
+    (\%bvg_sourceids, \%bvg_inactive_sourceids);
 }
 
 sub append_relative_date {
