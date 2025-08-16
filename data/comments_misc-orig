@@ -539,6 +539,8 @@ nordöstlicher Vorplatz des S-Bahnhofs Wartenberg	CS 17077,18744 17109,18772
 # 
 entlang der ehemaligen Kindl-Brauerei	CS 12284,8195 12340,8208 12397,8221 12386,8274 12382,8292
 # 
+Hausdurchfahrt	CP2; 17601,5374 17538,5301
+# 
 #: section ^^^
 # 
 ######################################################################
@@ -1653,7 +1655,7 @@ Waldpromenade: nicht ausgeschildert	CS 23473,8114 23376,8186 23261,8274 23149,83
 # 
 (Friedrichstr. - Enckestr.): ausgeschildert Friedrichstrasse 23 23A 23B; entlang taz-Gebäude und Besselpark	CP2; 9537,10837 9666,10848
 # 
-#: last_checked: 2025-07-30
+#: last_checked: 2025-08-16
 #: check_frequency: 90d
 Mergenthalerring: Straße nicht ausgeschildert, Richtung "Elbekies" fahren	CP2; 14261,8851 14252,8829
 # 
@@ -1718,7 +1720,7 @@ ausgeschildert als "Zufahrt zur Frankfurter Allee 286-266"	CP2; 17020,11748 1703
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (hier: Stichstraße Invalidenstraße)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_28_2981_3084_online.pdf (Widmungsänderung; auf der westlichen Seite entsteht noch ein Gebäude mit Tiefgarage)
 #: XXX Wird die Straße noch ausgeschildert?
-#: last_checked: 2025-07-09
+#: last_checked: 2025-08-12 (mapillary)
 #: check_frequency: 60d
 Hilda-Geiringer-Weg: westliche Einfahrt nicht ausgeschildert	CP2; 8167,13457 8174,13397
 # 

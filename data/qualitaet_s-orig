@@ -302,7 +302,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-16
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -747,6 +747,7 @@ Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2+ 11108,9187 11055,9539
 Alt-Kladow: Asphalt	Q0 -7170,4962 -7080,4896
 #: XXX ändert sich die Fahrbahnbeschaffenheit nach den Bauarbeiten? vvv
 #: source_id: viz2021:13.145424,52.452549,26.05.2025,08:00 (bis 20.06.2025) (inaktiv)
+#: osm_watch: way id="25377474" version="14"
 #: next_check: 2025-06-20 vvv
 Alt-Kladow: Kleinsteinpflaster	Q1- -7080,4896 -7038,4885 -6947,4861
 Alt-Kladow: schlechtes Kopfsteinpflaster	Q3+ -6947,4861 -6811,4893
@@ -795,7 +796,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: osm_watch: way id="1101189359" version="6"
 #: osm_watch: way id="1101189360" version="6"
 #: osm_watch[closed]: note 4529248 5
-#: last_checked: 2025-06-25
+#: last_checked: 2025-08-14 (mapillary)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (infravelo)
@@ -3473,8 +3474,8 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
-#: osm_watch: way id="30893534" version="25"
-#: osm_watch: way id="1155399359" version="3"
+#: osm_watch: way id="30893534" version="26"
+#: osm_watch: way id="1155399359" version="4"
 #: last_checked: 2025-07-19
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
@@ -3912,7 +3913,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="5"
 #: priority: #C
-#: last_checked: 2025-04-12
+#: last_checked: 2025-08-16
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -4786,7 +4787,7 @@ Heidemühler Weg: sehr guter Beton	Q0 16304,6374 16195,6506
 Heidemühler Weg: Beton	Q0 16195,6506 16147,6545
 Dornbrunner Str.: Asphalt	Q0 16147,6545 16043,6414 15954,6297
 (Uferweg am Kanal): wassergebundene Decke, teilweise mit etwas Schotter	Q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
-(Breiter Weg - Südostallee/Sterndamm): Asphalt	Q1 17538,5301 17601,5374
+(Breiter Weg - Südostallee/Sterndamm): rauer Asphalt	Q1- 17538,5301 17601,5374
 Breiter Weg: Asphalt	Q0 17538,5301 17469,5289 17365,5271
 Breiter Weg: Asphalt mit einigen Schäden	Q1 17365,5271 17297,5260
 Am Haselbusch: unbefestigte Straße	Q2 17463,4964 17411,4979
@@ -10815,7 +10816,8 @@ Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, vereinzelt leichte Wurzelhebungen	Q0- 17906,13141 17978,13328 18054,13477 18104,13510
 Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1+ 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
-(Königsheideweg - Weststr.): wassergebundene Decke	Q1+ 17115,4757 17129,4837 17173,4902
+#: historical_note: früher ohne "etwas Schotter", Q1+
+(Königsheideweg - Weststr.): wassergebundene Decke, etwas Schotter	Q1- 17115,4757 17129,4837 17173,4902
 Fennstr.: Asphalt	Q0 18080,5376 18236,5548
 Fennstr.: Beton	Q0-; 18236,5548 18257,5743
 Fennstr.: Asphalt	Q0; 18257,5743 18236,5548
@@ -14101,7 +14103,7 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-16
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018

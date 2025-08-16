@@ -176,7 +176,7 @@ Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 
 Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 # 
 #: next_check_id: PERLEBERGER-2024
-#: last_checked: 2025-04-25
+#: last_checked: 2025-08-12 (mapillary)
 #: next_check: 2025-09-23
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
@@ -328,7 +328,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-07-05
+#: last_checked: 2025-08-14 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -364,6 +364,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv
 # REMOVED (ausgeschaltet, weil der nördliche Hochbord durchgängig nicht nutzbar ist) --- #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig --- #: note: manchmal kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30, 2024-12-08 So gegen 14:15) --- #: note: Anforderungsampel ---	F::inwork 18831,14823
+#: osm_watch: node id="10573986817" version="3"
 #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
 #: note: Anforderungsampel
 	F::inwork 19196,14976
@@ -381,23 +382,24 @@ Gürtelstr.	F::inwork 15153,11691
 # REMOVED (abgebaut) --- #: next_check_id: HAENSEL-2022 --- #: last_checked: 2022-10-24 --- #: XXX Ampel befindet sich südöstlich der Einmündung --- Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 # REMOVED (wurde durch einen temporären Zebrastreifen ersetzt) --- #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten) --- #: by: https://officehome.de/ostkreuz-campus-a --- #: osm_watch: way id="936801541" version="3" --- #: XXX Ampel befindet sich östlich der Einmündung --- #: note: manchmal ausgeschaltet? gesehen: 2023-02-05 (So) gegen 15:45, 2023-05-08 (Mo) gegen 12:30 und 13:20, 2023-05-11 (Do) gegen 22:30, 2023-05-14 (So) um 13:30 --- #: note: Anforderungsampel --- #: last_checked: 2023-05-14 --- Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
-#: next_check_id: IMBROMBEERWINKEL-2023
-#: next_check_id: STERNDAMM-2023
-#: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
-#: last_checked: 2025-07-30
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
-#: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
-#: note: Anforderungsampel
-Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
-# 
-#: next_check_id: STERNDAMM-2023
-#: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
-#: last_checked: 2025-07-30
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
-#: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
-Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
+# REMOVED (Ampeln stehen noch, sind aber ausgeschaltet)
+# REMOVED --- #: next_check_id: IMBROMBEERWINKEL-2023
+# REMOVED --- #: next_check_id: STERNDAMM-2023
+# REMOVED --- #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
+# REMOVED --- #: last_checked: 2025-07-30
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- # REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: note: Anforderungsampel
+# REMOVED --- Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
+# REMOVED --- # 
+# REMOVED --- #: next_check_id: STERNDAMM-2023
+# REMOVED --- #: XXX evtl. wegen der halbseitigen Sperrung des Sterndamms?
+# REMOVED --- #: last_checked: 2025-07-30
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- # REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
+# REMOVED --- Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
 #: osm_watch: node id="9882573114" version="3"
@@ -524,7 +526,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2025-06-09 vvv
+#: last_checked: 2025-08-12 (mapillary) vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2025-06-30 (SenMVKU website) vvv
 # REMOVED --- #: valid: 20190603-20250630 vvv
@@ -550,7 +552,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: XXX außerdem wurde der Zebrastreifen nördlich der Kreuzung deaktiviert
 #: XXX Ampel wird vermutlich permanent gemacht
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
-#: osm_watch: node id="7978101859" version="1"
+#: osm_watch: node id="7978101859" version="2"
 #: last_checked: 2025-06-11
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-28
@@ -1437,6 +1439,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 18013,5627
 	X 17960,5511
 	X 17728,5756
+#: XXX_prog: gilt nicht für Rechtsabbieger Michael-Brückner-Str. -> Sterndamm
 	X 17886,5587
 	X 21332,4655
 	X 21789,4520
@@ -2897,7 +2900,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-08-04
+#: last_checked: 2025-08-16
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
@@ -3602,7 +3605,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-08-07 (mapillary) vvv
+#: last_checked: 2025-08-14 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -4112,7 +4115,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2025-07-27
+#: last_checked: 2025-08-16
 #: check_frequency: 90d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

@@ -37,10 +37,10 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-07-30 vvv
+#: last_checked: 2025-08-08 (osm) vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083527067" version="6"
+#: osm_watch: way id="1083527067" version="7"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="182614432" version="20"
@@ -61,9 +61,9 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="19"
-#: osm_watch: way id="1072662717" version="22"
-#: last_checked: 2025-07-30 (osm)
+#: osm_watch: way id="1072662716" version="20"
+#: osm_watch: way id="1072662717" version="23"
+#: last_checked: 2025-08-13 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -270,7 +270,7 @@ Südkreuz: Bauarbeiten, Engstellen	q2::inwork 7838,7848 7837,7899
 ### Treptow ###
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-07-27 vvv
+#: last_checked: 2025-08-12 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 (rbb-Verkehrsmeldung, VIZ-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -451,7 +451,7 @@ Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord 
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-08-07 (mapillary) vvv
+#: last_checked: 2025-08-12 (mapillary) vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="43"
@@ -573,7 +573,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-08-04 vvv
+#: last_checked: 2025-08-14 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -832,7 +832,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="25"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-07-27 (osm)
+#: last_checked: 2025-08-14 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -864,7 +864,7 @@ Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 79
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
 #: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
 #: by: https://entwicklungsstadt.de/charlottenburg-ein-verborgenes-wissenschaftsquartier-wird-neu-erfunden/ (zu Bauarbeiten auf dem PTB-Gelände, keine explizite Erwähnung dieser Stelle)
-#: osm_watch: way id="152832871" version="23"
+#: osm_watch: way id="152832871" version="24"
 #: osm_watch: way id="1132383957" version="1"
 #: note: mittlerweile eine Art "Drängelgitter" aus dem Bauzaun gemacht
 #: last_checked: 2025-07-05
@@ -1043,7 +1043,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-08-02
+#: last_checked: 2025-08-16
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1185,7 +1185,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # REMOVED (ja) --- #: XXX wird sich auch die Qualität der Fahrbahn verbessern?
 #: osm_watch: way id="1184177622" version="3"
 #: osm_watch: way id="804682311" version="4"
-#: osm_watch: note 4734732 4
+#: osm_watch: note 4734732 6
 #: priority: #C
 #: last_checked: 2025-08-03
 #: check_frequency: 30d

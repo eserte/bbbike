@@ -463,6 +463,8 @@ Mentelinstr. -> Rummelsburger Str.: Borstein	DH:kerb_up 17833,7351 17847,7356 17
 # REMOVED --- #: XXX vermutlich ab Mitte Juni 2024 für die andere Richtung gültig, falls man nicht den Bürgersteig nutzt
 #: note: mittlerweile (Herbst 2024) wird beim Fahren Richtung Osten auf ein Radweg-Ende hingewiesen und eine mögliche Umleitung über Marzahner Promenade
 #: note: man bekommt nach genau 60s grün
+#: osm_watch: way id="1136164744" version="2"
+#: osm_watch: way id="868066954" version="9"
 #: last_checked: 2025-04-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
@@ -513,7 +515,7 @@ Landsberger Allee	DH:t=60 19205,14980 19196,14976 19200,14963
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-07-27 vvv
+#: last_checked: 2025-08-12 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-08-31 (rbb-Verkehrsmeldung, VIZ-Verkehrsmeldung) vvv
 # REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845
