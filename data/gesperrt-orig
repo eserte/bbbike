@@ -2742,7 +2742,7 @@ tragen	0:45 18661,4655
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: last_checked: 2024-07-03 vvv
 # REMOVED --- #: check_frequency: 360d vvv
-#: next_check: 2025-09-20 (pardok) vvv
+#: next_check: 2025-10-08 (pardok) vvv
 tragen (2x15 Stufen) oder Aufzug	0:35 9209,417
 tragen (3x12 Stufen) oder Aufzug	0:35 9249,421
 #: next_check ^^^
@@ -4979,6 +4979,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 #: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/buckower-chaussee-bruecke/ (voraussichtliche Bauzeit: 2022 bis 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22059.pdf (voraussichtlich Eröffnung im Sommer 2025)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23305.pdf (voraussichtlich Verkehrsfreigabe am 8.10.2025)
 #: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025) (inaktiv)
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023) (bis 31.05.2023) (bis 31.12.2025) (inaktiv)
 #: source_id: bvg2021:x11#BVG312077_0
@@ -4992,7 +4993,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 #: priority: #A
 #: last_checked: 2025-08-05 (bahninfo-forum)
 #: check_frequency: 360d
-#: next_check: 2025-09-20 (pardok)
+#: next_check: 2025-10-08 (pardok)
 Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
 # 
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
@@ -5026,7 +5027,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
 #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können
-#: last_checked: 2025-08-04
+#: last_checked: 2025-08-17
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt)
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
@@ -5537,7 +5538,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.konii.de/news/immobilienprojekt-upside-berlin-wird-weitergebaut/ (Fertigstellung stufenweise bis 2027)
 #: by: https://www.konii.de/news/vermarktung-der-beiden-hoechsten-berliner-wohntuerme-startet/ (Vermarktung ab Mai 2025)
 #: by: https://brooksoneast.de/en/
-#: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
+#: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data, PLZ=10243 laut LOR)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1

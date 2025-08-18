@@ -710,6 +710,7 @@ Wuhlheide: Waldweg	Q2+ 21561,5955 21653,6037 21737,6068
 Wuhlheide: Waldweg, Feinschotter	Q1- 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
 (Verlängerte Köpenicker Str./Straße E - Waldweg an der S-Bahn): Waldweg	Q2 21219,7111 21213,7103 21219,7034 21216,6980 21194,6891
 (An der Alten Försterei - Rudolf-Rühl-Allee): Asphalt	Q0 21406,5864 21374,5886 21243,6046
+#: alias: Kastanienallee (Wuhlheide)
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19045,6959 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2+ 19463,7117 19223,7189
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19080,6986 19069,6928 19052,6823 18948,6578
@@ -1798,7 +1799,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/kiezblocks-in-pruefung-winsviertel-boetzowkiez-und-gruene-stadt_a423747
 #: osm_watch: way id="4615063" version="39"
-#: last_checked: 2025-07-25
+#: last_checked: 2025-08-17
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -4904,8 +4905,9 @@ Waldowstr.: Asphalt	Q0 16080,15830 16297,15737 16469,15659 16497,15636
 Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 (Oberseestr. - Gertrudstr.): glattes Kopfsteinpflaster	Q2+ 15894,16096 15869,16078
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058 (letzter Stand 16.09.2021: Zwischenbericht)
 #: XXX wird hier saniert?
+#: osm_watch: way id="22047751" version="25"
 #: last_checked: 2025-05-10
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
@@ -4915,13 +4917,12 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/elsastrasse-sanieren_a277966
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469&date=20200814 (Investitionsplanung 2021-2025)
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058 (letzter Stand 16.09.2021: Zwischenbericht)
 #: XXX wann wird hier saniert?
-#: XXX möglicherweise gibt es aktuelle Bauarbeiten im Mittelteil, prüfen!
 #: osm_watch: way id="22046245" version="24"
-#: last_checked: 2024-08-21
+#: last_checked: 2025-08-17
 #: check_frequency: 360d
-#: next_check: 2025-12-31
+# REMOVED (keine Anzeichen für eine baldige Sanierung) --- #: next_check: 2025-12-31
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15956,16299 15927,16344
 (Elfriedestr. - Klarastr.): Beton	Q0- 16211,16131 16293,16109
@@ -8794,8 +8795,8 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: next_check_id: HELLWEG-2014 vvv
 #: by: https://beteiligung.bund.de/DE/VorhabenFindenUndBeteiligen/Details/Vorhaben.html?id=V-E100461 (Neubau S-Bahn Berlin S21, GUw Yorckstraße: "der angrenzende Geh- und Radweg umverlegt" -> ist dieser Weg gemeint?)
 #: by: https://beteiligung.bund.de/DE/VorhabenFindenUndBeteiligen/Details/Beteiligung.html?id=V-E100461&idb=B-E100461-01 (laut Planunterlagen/03_Lagepl/03-1_Lagepl.pdf wird der Weg begradigt und asphaltiert; außerdem könnte es noch einen weiteren Weg auf der westlichen Seite von Hellweg zur Yorckstraße geben)
-#: last_checked: 2025-04-27 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2025-06-16 (mapillary) vvv
+#: check_frequency: 180d vvv
 #: osm_watch: way id="531908445" version="13"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
@@ -12774,7 +12775,9 @@ Händelplatz: Beton	Q0- 4568,4789 4543,4820
 # REMOVED --- (provisorische Zufahrt zum Benjamin Franklin): Feinschotter	Q1 4947,3672 4944,3695 4926,3749
 # REMOVED --- (provisorische Zufahrt zum Benjamin Franklin): Feinschotter	Q1 5110,4179 5130,4195 5131,4207
 Klingsorstr.: schadhafter Asphalt	Q1+ 4760,4075 4634,4053 4551,4042
-Klingsorstr.: schadhafter Asphalt	Q1 4834,4102 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
+Klingsorstr.: schadhafter Asphalt	Q1 4834,4102 4932,4152
+# REMOVED (noch nicht fertig?) --- #: add_fragezeichen: Ist der Asphalt nach den Bauarbeiten besser geworden? --- #: next_check: 2025-08-18
+Klingsorstr.: schadhafter Asphalt	Q1 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
 # REMOVED (confirmed) --- #: next_check_id: KLINGSOR-2023 --- #: add_fragezeichen: Sind die Bauarbeiten in der Klingsorstr. beendet? Wurde die Fahrbahndecke vollständig saniert? --- #: XXX bei osm von intermediate auf good verbessert, trotzdem mal nachschauen! --- #: osm_watch: way id="149994023" version="20" --- #: osm_watch[closed]: note 3989114 2 --- #: last_checked: 2023-09-14 --- #: next_check: 2023-11-15
 #: historical_note: früher (bis Herbst 2023): schadhafter Asphalt, Q1+
 Klingsorstr.: Asphalt	Q0 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
@@ -19456,6 +19459,7 @@ Am Schloßpark: Asphalt mit einigen Rissen	Q0- 10775,19054 10695,18937
 #: confirmed_by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3327
 #: confirmed_by: srt
 #: by: https://www.morgenpost.de/bezirke/pankow/article409633240/schlosspark-ueberlastet-pankow-baut-diese-neue-fahrrad-route.html (Asphaltierung nach den Sommerferien 2025?)
+#: by: https://www.tagesspiegel.de/berlin/immer-magerere-bilanz-diese-28-berliner-radwege-sollen-trotzdem-2025-noch-eroffnen-14138993.html (Projekt soll 2025 fertig werden)
 #: last_checked: 2024-10-16 (mapillary)
 #: next_check: 2025-09-30 (MoPo)
 Am Schloßpark: schlechtes Kopfsteinpflaster	Q3 10695,18937 10621,18837
@@ -19796,7 +19800,9 @@ Buchholzweg: guter Asphalt	Q0 4535,15530 4466,15350 4389,15336
 # 
 #: by: Joern Schulze: vvv
 #: confirmed_by: srt
-Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12842,16032 13086,15907
+Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12842,16032
+#: corrected_by: srt (Q0 -> Q0-)
+Lehderstr.: asphaltiert	Q0- 12842,16032 13086,15907
 #: corrected_by: srt (asphaltiert, Q0 -> ...)
 Lehderstr.: Asphalt mit Schäden	Q1 13086,15907 13214,15830
 #: confirmed_by: srt

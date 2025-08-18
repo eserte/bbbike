@@ -134,6 +134,11 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 #: valid: -20250829
 Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 # 
+#: source_id: LMS-BR:379742/72 viz2021:13.589646,52.502679,13.08.2025,09:15 (bis 17.10.2025)
+#: next_check: -2025-10-17
+#: valud: -20251017
+Am Niederfeld/Lassaner Str./Rosenhagener Str.: Gegenverkehrsregelung	X::inwork::alternating 22947,10998
+# 
 # REMOVED --- #: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025) (bis 16.06.2025) (bis 30.06.2025) (bis 24.06.2025) (inaktiv)
 # REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1894643566640861298
 # REMOVED --- #: by: https://pbs.twimg.com/media/GknmW6oW8AADYN1?format=jpg&name=medium
@@ -345,14 +350,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-08-02
+#: last_checked: 2025-08-17
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-08-02
+#: last_checked: 2025-08-17
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -405,7 +410,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: osm_watch: node id="9882573114" version="3"
 #: osm_watch: node id="7023223791" version="3"
 #: last_checked: 2025-04-21 (mapillary)
-#: check_frequency: 120d
+#: check_frequency: 150d
 # REMOVED --- #: next_check: 2023-06-27
 # REMOVED --- #: valid: -20230627
 B179/Fichtestr.	X::inwork 26138,-12596

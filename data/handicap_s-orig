@@ -62,8 +62,8 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="20"
-#: osm_watch: way id="1072662717" version="23"
-#: last_checked: 2025-08-13 (osm)
+#: osm_watch: way id="1072662717" version="24"
+#: last_checked: 2025-08-18 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -118,7 +118,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-08-06
+#: last_checked: 2025-08-18
 #: check_frequency: 45d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2025-09-01
@@ -383,6 +383,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: next_check_id: HEINRICHHEINE-2025
 #: source_id: viz2021:13.41769,52.51364, (bis 31.12.2025)
+#: also_indoor: traffic (G,H[unklar])
 #: last_checked: 2025-08-05
 #: check_frequency: 14d
 Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord geführt	q2::inwork; 11325,12021 11291,11876
@@ -1020,7 +1021,7 @@ Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-07-22
+#: last_checked: 2025-08-17
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
 # REMOVED --- #: next_check: 2025-06-30 (infravelo)
@@ -1096,7 +1097,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 #: osm_watch: note 4126168 3
 #: osm_watch[closed]: note 4126169 1
 #: priority: #C
-#: last_checked: 2025-04-20
+#: last_checked: 2025-08-17
 #: check_frequency: 120d
 #: next_check: 2026-04-30 (Halteverbotsschilder)
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069

@@ -360,7 +360,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-08-16 vvv
+#: last_checked: 2025-08-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -998,7 +998,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-08-03
+#: last_checked: 2025-08-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1325,6 +1325,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/elsenbruecke/vzp_bv-elsenbruecke_bereich_friedrichshain_vollsperrung-wartung.pdf
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/elsenbruecke/vzp_bv-elsenbruecke_bereich_treptow_vollsperrung-wartung.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1589552.php (Sperrung am 16/17.8.2025, nur Autoverkehr)
+#: by: https://www.tagesspiegel.de/berlin/autos-werden-umgeleitet-diese-berliner-brucke-ist-am-wochenende-fur-den-verkehr-gesperrt-14172230.html
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -1346,13 +1347,13 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.462768,52.495411,19.10.2024,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 20.10.2024) (inaktiv)
 #: source_id: viz2021:13.46264,52.49544,26.04.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 27.04.2025) (inaktiv)
 #: source_id: viz2021:13.462865,52.495856,26.04.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 27.04.2025) (inaktiv)
-#: source_id: viz2021:13.46264,52.49544,16.08.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 17.08.2025)
+#: source_id: viz2021:13.46264,52.49544,16.08.2025,08:00 (Wochenendsperrung für Kfz-Verkehr, bis 17.08.2025) (inaktiv)
 #: source_id: viz2021:13.46264,52.49544, (bis 31.12.2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-08-16 vvv
+#: last_checked: 2025-08-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3154,7 +3155,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-18
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3186,28 +3187,48 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
+# 
+#: note: Gürtelstr./Neue Bahnhofstr., Richtung Süden
+Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
+relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
+#: last_checked: 2025-08-17
+#: next_check: 2025-12-31
+#: valid: -20251231
+Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
+#: valid: !-20251231
+relativ schmale Radspuren	RW3; 15153,11691 15106,11598
+relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-08-02
-#: next_check: 2027-03-31
-#: valid: !20250611-20270331
-relativ schmale Radspuren	RW3; 14945,11300 15016,11431
-#: valid: 20250611-20270331
-Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
-relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598 15153,11691 15202,11789 15256,11884
-relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691 15106,11598 15055,11505 15016,11431
-#: next_check_id: NEUEBAHNHOF-2025
-#: last_checked: 2025-08-02
+#: last_checked: 2025-08-17
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note ^^^
-	RW2; 15361,12071 15300,11965 15256,11884
-# REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: 20190125-
-	RW2; 15256,11884 15300,11965 15361,12071
+#: note: Gürtelstr./Neue Bahnhofstr., Richtung Norden
+#: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
+#: next_check_id: NEUEBAHNHOF-2025
+#: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
+#: last_checked: 2025-08-17
+#: next_check: 2027-03-31
+#: valid: !20250611-20270331
+relativ schmale Radspuren	RW3; 14945,11300 15016,11431
+#: valid: 20250611-20270331
+Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
+relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
+#: last_checked: 2025-08-17
+#: next_check: 2025-12-31
+#: valid: -20251231
+Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
+#: valid: !-20251231
+relativ schmale Radspuren	RW3; 15106,11598 15153,11691
+relativ schmale Radspuren	RW3; 15153,11691 15202,11789 15256,11884
+#: note ^^^
+Gehwegplatten	RW2; 15256,11884 15300,11965 15361,12071
+# 
 asphaltiert	RW2; 15066,14579 15120,14481 15168,14395
 	RW4; 15168,14395 15256,14237
 die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15168,14395 15120,14481 15066,14579
@@ -3429,8 +3450,10 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 	RW3; 8935,13844 8841,13800
 # 
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
+#: note: Busspur ist nicht für Radfahrer freigegeben (obwohl es keine Radwegbenutzungspflicht gibt)
 neu asphaltiert, 2m breit, für Radfahrer freigegeben Busspur gilt Mo-Fr 6-18 Uhr	RW1; 12640,13814 12701,13873 12766,13942
 #: historical_note: früher (bis 2024/2025): Busspur gilt Mo-Fr 6-18 Uhr, RW5; außerdem hat hier noch ein alter enger Radweg existiert, der aber nicht weiter "beworben" wurde
+#: note: Busspur ist nicht für Radfahrer freigegeben (obwohl es keine Radwegbenutzungspflicht gibt)
 neu asphaltiert, 2m breit, für Radfahrer freigegeben Busspur gilt Mo-Fr 6-18 Uhr	RW1; 12766,13942 12856,14042 12901,14093
 # 
 	RW3; 12901,14093 12856,14042 12766,13942 12701,13873 12640,13814
@@ -3462,7 +3485,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="16"
 #: osm_watch: way id="966685279" version="8"
-#: last_checked: 2025-08-12 (mapillary) vvv
+#: last_checked: 2025-08-17 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -5248,7 +5271,8 @@ betoniert, außerdem existiert eine asphaltierte Nebenfahrbahn	RW1; 22388,12190 2
 # REMOVED (gibt es nicht mehr) --- Busspur gilt 6-18 Uhr	RW5; 18555,12101 18411,12100
 	RW3;RW3 18215,12123 18296,12115
 	RW4;RW4 18296,12115 18411,12100 18555,12101
-	RW1;RW1 12901,14093 12972,14173 12992,14196 13026,14234
+alter Asphalt	RW1; 12901,14093 12972,14173 12992,14196 13026,14234
+	RW1; 13026,14234 12992,14196 12972,14173 12901,14093
 	RW1;RW3 13026,14234 13057,14267
 	RW4;RW4 16122,6084 16169,6064 16510,5917 16868,5938
 	RW2; 16868,5938 17056,6133 17160,6239
@@ -9213,7 +9237,7 @@ Grünbeschichtung	RW4; 12259,7164 12244,7205
 Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 #: XXX wann wird hier die Radspur komplettiert?
-#: last_checked: 2025-07-18
+#: last_checked: 2025-08-06
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
 	RW3; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696
