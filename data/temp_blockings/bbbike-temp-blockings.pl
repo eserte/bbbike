@@ -37802,7 +37802,7 @@ EOF
      { from  => 1663524336,
        until => undef, # XXX Einschränkungen werden länger dauern als bei der VIZ angegeben
 #      text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung; außerdem sind Löptener Str., Gerstnerweg und südliche Mellener Str. Einbahnstraßen; ab 19.9.2022',
-       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelungen; außerdem sind Goltzstr. und Briesingstr. Einbahnstraßen; voraussichtlich bis März 2026',
+       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis März 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BAHNHOF-2022
@@ -37813,6 +37813,7 @@ EOF
 #: by: https://az-lichtenrade.de/wp-content/uploads/2025/07/Screenshot-2025-07-07-095708-800x567.png
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu2kux6y6n27
 #: by: https://fahrinfo.vbb.de/him-uploads/1753173224127_Kartenausschnitt_Bahnhofstr.png
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/ (für Radfahrer keine Einbahnstraßenregelung in der Goltzstr.)
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
@@ -37835,7 +37836,8 @@ Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 #: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025)
 #: source_id: viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026)
 #: note: an der Bahnhofstr. keine Freigabe für Radfahrer; weiter hinten in der Ferne (Rehagener Str.?) kann man Zusatzschilder erahnen --- hier vielleicht Radfahrer frei?
-Goltzstr.	q4::inwork; 10983,-2116 10763,-2276 10642,-2371 10563,-2432 10454,-2520
+Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
+# REMOVED (hier vermutlich nicht) --- Goltzstr.	q4::inwork; 10763,-2276 10642,-2371 10563,-2432 10454,-2520
 #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
 Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156 10310,-2136
 Zescher Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10509,-2128 10513,-2397
@@ -37887,7 +37889,7 @@ EOF
 #: XXX Wie lange dauern die Bauarbeiten? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
 #: osm_watch: note 4806178 2
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-07-17 vvv
+#: last_checked: 2025-08-19 (daf) vvv
 	q3::inwork 8343,11133 8289,11205
 	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
 	q3::inwork 8253,11306 8232,11414
@@ -40721,7 +40723,7 @@ EOF
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-08-16 (bahninfo-forum)
+#: last_checked: 2025-08-18 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -41260,9 +41262,9 @@ EOF
 EOF
      },
      { from  => 1755295119, # 1690196400, # 2023-07-24 13:00
-       until => undef, # 1696768574, # $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
+       until => $isodate2epoch->("2025-09-09 10:00:00"), # undef, # 1696768574, # $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
 #      text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
-       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt',
+       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 09.09.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: note: --- alte Meldung von 2023 ---
@@ -41272,10 +41274,11 @@ EOF
 #: source_id: bvg2021:m1#BVG327081_0
 #: note: --- neue Meldung von 2025 ---
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,836205#msg-836205 (es sieht so aus, als ob man als Radfahrer an der Schadensstelle vorbeifahren könnte)
-#: source_id: viz2021:13.4017,52.59009,
+#: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025)
 # REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
 #: last_checked: 2025-08-15 (VIZ-Verkehrsmeldung)
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2025-09-09 (VIZ-Verkehrsmeldung)
 	q4::inwork 10178,20525 10066,20494
 EOF
      },
@@ -43246,13 +43249,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: XXX Außerdem wird eine Fußgängerampel etwa am Anfang der Baustelle entstehen (siehe bahninfo-forum)
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025) (bis 31.08.2025) (inaktiv)
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025)
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-08-06 (mapillary) vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2025-08-19 (bahninfo-forum) vvv
+#: check_frequency: 30d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -44617,7 +44621,7 @@ EOF
 #: source_id: viz2021:13.408237,52.563626, (bis 29.08.2025)
 #: osm_watch: way id="1303423090" version="4"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
-#: last_checked: 2025-08-09 (mapillary)
+#: last_checked: 2025-08-18 (mapillary)
 #: next_check: 2025-12-31 (Baustellenschild)
 Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
 EOF
@@ -48938,15 +48942,15 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 EOF
      },
      { from  => 1750861140, # 2025-06-25 16:19
-       until => $isodate2epoch->("2025-08-20 18:00:00"), # 1752530340, # 2025-07-14 23:59
+       until => $isodate2epoch->("2025-09-12 18:00:00"), # 1752530340, # 2025-07-14 23:59
 #      text  => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, vom 26.06.2025 16:19 bis 14.07.2025 23:59',
-       text  => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis 20. August 2025',
+       text  => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis 12. September 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
 #: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
-#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025)
-#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025)
+#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025)
+#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025)
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: bei rbb bis 01.08.2025 verlängert, allerdings hier Kreuzung Kirschenallee
 	q3::inwork 919,11938 1078,11895 1188,11861
@@ -49268,7 +49272,7 @@ EOF
 #: next_check_id: HEINRICHHEINE-2025
 #: source_id: adac:971528950
 #: source_id[inactive]: bvg2024:n8#HIM_FREETEXT_293620
-#: source_id: viz2021:13.41414,52.50801, (bis 22.08.2025)
+#: source_id: viz2021:13.41414,52.50801, (bis 22.08.2025) (bis 01.09.2025)
 #: also_indoor: traffic (T,G,A)
 #: note: gesperrter Abschnitt etwa 50m, explizite Radfahren-verboten-Schilder; mittlerweile Radfahrer frei, Richtung Süden verschwenkte Führung auf der Fahrbahn
 # REMOVED --- #: last_checked: 2025-08-15 (mapillary) --- #: next_check: 2025-08-22
@@ -49460,6 +49464,20 @@ EOF
 #: source_id: viz2021:13.4151,52.53846,18.08.2025,07:00 (westlich Husemannstr., bis 28.02.2026)
 #: also_indoor: traffic (T)
 	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
+EOF
+     },
+     { from  => 1755627458,
+       until => $isodate2epoch->("2026-09-20 18:00:00"),
+       text  => 'Mauerweg, Karolinenhöhe - Hahneberg: Sanierung, mögliche Sperrung, bis Sommer 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.tagesspiegel.de/berlin/bezirke/zukunft-des-berliner-mauerwegs-zwei-neue-baustellen-etappen-an-der-alten-ddr-grenze-in-spandau-13615882.html (Baustart Ende 2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neuer-berliner-mauerweg-mobel-trasse-termine-die-ausbauplane-fur-spandau-13768012.html (Baustart August 2025, Ende Mai 2026; neue Zufahrt vom Semmelländerweg ("alter Deponieweg"))
+#: by: https://entwicklungsstadt.de/berliner-mauerweg-sanierung-am-hahneberg-in-spandau-startet/ (Fertigstellung Sommer 2026)
+#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-start-der-bauarbeiten-am-hahneberg
+#: XXX nach den Bauarbeiten vermutlich bessere Qualität
+#: next_check: 2026-09-01
+Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,11458 -6081,11508 -6174,11571 -6397,11664 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
 EOF
      },
     );

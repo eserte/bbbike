@@ -1873,11 +1873,15 @@ Tollerstr.: Asphaltierung geplant	?::projected 7751,19696 7769,19736 7807,19811 
 #: osm_watch: way id="272532028" version="13"
 #: osm_watch: way id="73682384" version="15"
 #: osm_watch: way id="272532027" version="10"
-#: last_checked: 2025-03-15 (mapillary)
-# REMOVED --- #: check_frequency: 30d
-#: check_frequency: 90d
+#: last_checked: 2025-08-18 (mapillary) vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: check_frequency: 90d vvv
 # REMOVED (realisiert) --- Hielscherstr.: Asphaltierung geplant	?::projected 7558,19886 7604,19988
-Hielscherstr.: Asphaltierung geplant	?::projected 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460
+Hielscherstr.: Asphaltierung geplant	?::projected 7604,19988 7695,20175
+# REMOVED (realisiert) --- Hielscherstr.: Asphaltierung geplant	?::projected 7695,20175 7735,20262
+Hielscherstr.: Asphaltierung geplant	?::projected 7735,20262 7809,20420 7826,20460
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf ("keine Entscheidung") --- #: XXX vielleicht passiert erst etwas im Zuge des Bebauungsplans 3-72 (Pankow)? --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Aufstellung des Bebauungsplans) --- #: note: laut osm mittlerweile asphaltiert -> geändert, aber eine weitere Bestätigung wäre gut --- #: osm_watch: way id="4684852" version="13" --- #: priority: #B --- #: last_checked: 2023-03-20 (mapillary) --- #: check_frequency: 360d --- #: next_check: 2023-06-28 --- Neukirchstr.: Asphaltierung geplant	?::projected 12751,18401 12885,18329
 # REMOVED (realisiert, neue Fragezeichen existieren) --- #: osm_watch: way id="25799814" version="12" --- #: last_checked: 2018-10-13 --- #: check_frequency: 60d --- Oraniendamm - Dianastr.: Befestigung (evtl. Asphaltierung?)	?::projected 4222,22854 4176,22764 4155,22707
@@ -2084,7 +2088,7 @@ Marienpark: ist diese Straße ausgeschildert? Beleuchtung?	? 8163,3660 8124,3706 
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2025-08-18
+#: last_checked: 2025-08-19
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 14020,9524 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2112,7 +2116,7 @@ Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angeleg
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/mobilitaetsgesetz-soll-bei-sanierung-der-strasse-vor-schoenholz-beruecksichtigt-werden_a275842
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsentwurf_strasse-vor-schoenholz_stand-okt-2019.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.625926.php
-#: last_checked: 2025-07-17 (mapillary) vvv
+#: last_checked: 2025-08-18 (mapillary) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 #: osm_watch: way id="102532387" version="22"
@@ -5599,7 +5603,7 @@ Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15
 Robert-Siewert-Str./Römerweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 19431,9872 19459,9842 19485,9812
 #: by: https://www.berliner-zeitung.de/news/fussgaengerueberweg-vor-grundschule-fehlt-cdu-lichtenberg-hakt-beim-senat-nach-li.2300061
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/fussgaengerueberweg-fuer-grundschueler-gefordert_a437446 (hier: Höhe 77C)
-#: last_checked: 2025-02-23
+#: last_checked: 2025-03-04 (orthofotos)
 Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 17353,15006 17406,14986 17356,14966
 #: last_checked: 2025-06-30
 Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 16239,12245 16255,12224 16278,12193
@@ -7042,7 +7046,7 @@ Bahnhof Köpenick: neuer Ostzugang	?::inwork 22700,6138 22700,6045 22624,6044
 #: osm_watch: way id="119201840" version="27"
 #: osm_watch: way id="190701274" version="14"
 #: osm_watch: way id="949605667" version="9"
-#: last_checked: 2025-08-09 (mapillary)
+#: last_checked: 2025-08-18 (mapillary)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2025-12-31 (infravelo)
 Mühlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751 10495,17658 10573,17566 10647,17501 10670,17458 10679,17441 10690,17420 10706,17391 10758,17288 10807,17193 10846,17121 10862,17087 10927,17022
@@ -8165,9 +8169,10 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://entwicklungsstadt.de/nach-sieben-jahren-bvg-erneuert-berliner-waisentunnel/ (Fertigstellung 2028?)
 #: by: https://www.tagesspiegel.de/berlin/macht-keinen-sinn-uber-weitere-strecken-zu-reden-bvg-chef-erteilt-u-bahn-traumen-des-senats-eine-absage-13955360.html (Baustart: Dezember 2025, Bauzeit: rund vier Jahre)
 #: by: https://www.nd-aktuell.de/artikel/1192535.muehlendammwehr-neuer-wanderweg-fuer-spreewelse-in-berlin-mitte.html
+#: by: https://entwicklungsstadt.de/waisentunnel-berlin-ersatzneubau-sichert-stabilitaet-des-u-bahnnetzes/
 #: last_checked: 2025-07-29 vvv
 #: check_frequency: 360d vvv
-#: next_check: 2025-12-31 (Tsp: Baustart) vvv
+#: next_check: 2025-12-31 (Tsp, entwicklungsstadt: Baustart) vvv
 Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. Gehweg frei)	? 11139,12243 11155,12184 11278,12185
 #: next_check ^^^
 #: check_frequency ^^^
@@ -9146,21 +9151,25 @@ Arthur-Weisbrodt-Str./Max-Brunnow-Str.: direkte Anbindung zur Thaerstraßenbrücke
 Sellheimbrücke: Neubau geplant, danach mit Radwegen	?::projected 14509,21337 14580,21474 14617,21581 14623,21607 14658,21715 14690,21764 14742,21843
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414188.php (Umsetzung 2025)
+#: osm_watch: note 3954723 2
 #: last_checked: 2025-07-25
 #: next_check: 2025-12-31 (BA-Seite)
 Genthiner Str.: Fahrradstraße geplant	? 7415,10883 7393,10809 7354,10671 7330,10590 7315,10537
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1501715.php (Umsetzung 2025)
-#: last_checked: 2025-07-25
+#: osm_watch: note 3954730 3
+#: last_checked: 2025-08-01 (osm note)
 #: next_check: 2025-12-31 (BA-Seite)
 Kluckstr.: Fahrradstraße geplant	? 7579,11032 7534,10850
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1501722.php (Umsetzung 2025)
-#: last_checked: 2025-07-25
+#: osm_watch: note 3954730 3
+#: last_checked: 2025-08-01 (osm note)
 #: next_check: 2025-12-31 (BA-Seite)
 Stauffenbergstr.: Fahrradstraße geplant	? 7717,11540 7665,11353 7595,11086 7579,11032
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414244.php (Umsetzung 2025)
+#: osm_watch: note 3954732 1
 #: XXX dann natürlich Abstufung H -> N
 #: last_checked: 2025-07-25
 #: next_check: 2025-12-31 (BA-Seite)
@@ -9214,6 +9223,7 @@ Am Ried: Umbau der Fahrbahn, in Zukunft versickerungsfähiges Pflaster	? 4622,233
 #: by: https://www.infravelo.de/projekt/uferstrasse/ (3. Quartal 2025 - 4. Quartal 2025)
 #: osm_watch: way id="1352120015" version="4"
 #: osm_watch: way id="4603200" version="30"
+#: osm_watch: note 3954759 3
 #: last_checked: 2025-07-26
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (entwicklungsstadt website, infravelo)
@@ -9326,6 +9336,7 @@ Steinstr. (Neuruppin): Erstellung eines Schutzstreifens	? -30936,57385 -30806,57
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1567660.php (Umsetzung in der zweiten Jahreshälfte 2025)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414263.php
+#: osm_watch: note 3954738 9
 #: last_checked: 2025-08-08 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-12-31
@@ -9447,7 +9458,7 @@ Melchiorstr.: Fahrradstraße mit Vorfahrtsregelung geplant	?::projected 11917,111
 #: source_id: bvg2024:265#HIM_FREETEXT_295296
 #: XXX laut https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/ ab 4.8.2025 bis Ende August 2025 Fahrbahnsanierungsarbeiten auf der Elsenstr. Höhe Am Treptower Park, mit Rechtsabbiegeverbot. Wie wird die Radverkehrsführung aussehen?
 #: priority: #A
-#: last_checked: 2025-08-18 (an der Kreuzung Am Treptower Park/Elsenstr. stadteinwärts muss man nun drei Fahrbahnen queren oder die Umleitungsempfehlung über Puschkinallee nehmen)
+#: last_checked: 2025-08-19 (an der Kreuzung Am Treptower Park/Elsenstr. stadteinwärts muss man nun drei Fahrbahnen queren oder die Umleitungsempfehlung über Puschkinallee nehmen)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-08-19
 # REMOVED --- #: next_check: 2025-08-08 (mögliche nächste Bauzustandsänderung laut BVG-Verkehrsmeldungen)
@@ -9476,15 +9487,11 @@ Zingergraben: Widmung einer Grünanlage - gibt es Auswirkungen auf den Radverkehr
 #: next_check: 2026-09-30
 Hammelspring - Vogelsang: Bau eines Radwegs	? 10218,73220 10148,73146 9760,72696 9647,72570 9586,72496
 # 
-#: by: https://www.tagesspiegel.de/berlin/bezirke/zukunft-des-berliner-mauerwegs-zwei-neue-baustellen-etappen-an-der-alten-ddr-grenze-in-spandau-13615882.html (Baustart Ende 2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neuer-berliner-mauerweg-mobel-trasse-termine-die-ausbauplane-fur-spandau-13768012.html (Baustart August 2025, Ende Mai 2026; neue Zufahrt vom Semmelländerweg ("alter Deponieweg"))
-#: by: https://entwicklungsstadt.de/berliner-mauerweg-sanierung-am-hahneberg-in-spandau-startet/ (Fertigstellung Sommer 2026)
-#: next_check: 2025-08-31
-Mauerweg, Karolinenhöhe - Hahneberg: Sanierung geplant	? -5564,11209 -5742,11314 -6012,11458 -6081,11508 -6174,11571 -6397,11664 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
-# 
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6147 (Zwischenbericht: verkehrsberuhigter Bereich 2025)
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6639 (verkehrsberuhigter Bereich 2025)
 #: priority: #C
+#: last_checked: 2025-08-18 (mapillary)
+#: check_frequency: 120d
 #: next_check: 2025-12-31
 Hauptstr. (Nebenarm): soll als verkehrsberuhigter Bereich ausgewiesen werden	?::projected 8389,21468 8419,21446 8474,21524 8498,21578
 # 
@@ -11917,6 +11924,7 @@ Süßdoldenweg: früher Planstraße H, vermutlich entsteht hier die neue Straße, gen
 #: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/ (Baustart 2027, erste Wohnungen Mitte 2028 (?) fertig)
 #: by: https://entwicklungsstadt.de/zukunftsort-txl-grosses-potenzial-trifft-auf-schleppende-umsetzung/
 #: by: https://entwicklungsstadt.de/neubauoffensive-in-berlin-diese-fuenf-quartiere-praegen-die-kommenden-jahre/ (Baustart 2026 (?))
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1590908.php ("Bebauungsplan für Bildungscampus Schumacher Quartier beschlossen")
 #: osm_watch: way id="1004141226" version="5"
 #: XXX neue Straßen; aus dem Autobahnzubringer wird vermutlich eine Stadtstraße werden
 #: alias: Kurt-Schumacher-Quartier

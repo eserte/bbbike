@@ -5808,6 +5808,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: by: https://az-lichtenrade.de/wp-content/uploads/2025/07/Screenshot-2025-07-07-095708-800x567.png
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu2kux6y6n27
 #: by: https://fahrinfo.vbb.de/him-uploads/1753173224127_Kartenausschnitt_Bahnhofstr.png
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/ (für Radfahrer keine Einbahnstraßenregelung in der Goltzstr.)
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
@@ -5830,7 +5831,8 @@ Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 #: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025)
 #: source_id: viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026)
 #: note: an der Bahnhofstr. keine Freigabe für Radfahrer; weiter hinten in der Ferne (Rehagener Str.?) kann man Zusatzschilder erahnen --- hier vielleicht Radfahrer frei?
-Goltzstr.	q4::inwork; 10983,-2116 10763,-2276 10642,-2371 10563,-2432 10454,-2520
+Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
+# REMOVED (hier vermutlich nicht) --- Goltzstr.	q4::inwork; 10763,-2276 10642,-2371 10563,-2432 10454,-2520
 #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
 Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156 10310,-2136
 Zescher Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10509,-2128 10513,-2397
@@ -5841,7 +5843,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 ',
          'from' => 1663524336,
          'id' => 3623,
-         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelungen; außerdem sind Goltzstr. und Briesingstr. Einbahnstraßen; voraussichtlich bis März 2026',
+         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis März 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5863,7 +5865,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: XXX Wie lange dauern die Bauarbeiten? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
 #: osm_watch: note 4806178 2
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-07-17 vvv
+#: last_checked: 2025-08-19 (daf) vvv
 	q3::inwork 8343,11133 8289,11205
 	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
 	q3::inwork 8253,11306 8232,11414
@@ -6521,7 +6523,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-08-16 (bahninfo-forum)
+#: last_checked: 2025-08-18 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -6625,17 +6627,18 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
 #: source_id: bvg2021:m1#BVG327081_0
 #: note: --- neue Meldung von 2025 ---
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,836205#msg-836205 (es sieht so aus, als ob man als Radfahrer an der Schadensstelle vorbeifahren könnte)
-#: source_id: viz2021:13.4017,52.59009,
+#: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025)
 # REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
 #: last_checked: 2025-08-15 (VIZ-Verkehrsmeldung)
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2025-09-09 (VIZ-Verkehrsmeldung)
 	q4::inwork 10178,20525 10066,20494
 ',
          'from' => 1755295119,
          'id' => 3865,
-         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt',
+         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 09.09.2025',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1757404800
        },
        undef,
        undef,
@@ -7036,13 +7039,14 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        },
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: XXX Außerdem wird eine Fußgängerampel etwa am Anfang der Baustelle entstehen (siehe bahninfo-forum)
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025) (bis 31.08.2025) (inaktiv)
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025)
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-08-06 (mapillary) vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2025-08-19 (bahninfo-forum) vvv
+#: check_frequency: 30d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -7323,7 +7327,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.408237,52.563626, (bis 29.08.2025)
 #: osm_watch: way id="1303423090" version="4"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
-#: last_checked: 2025-08-09 (mapillary)
+#: last_checked: 2025-08-18 (mapillary)
 #: next_check: 2025-12-31 (Baustellenschild)
 Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
 ',
@@ -9074,135 +9078,8 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'type' => 'handicap',
          'until' => 1761951540
        },
-       {
-         'accept_multi_feature_distance' => 2000,
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/massive-sturmschaden-tegeler-forst-bis-auf-weiteres-gesperrt/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lskrsuh6es25
-#: by: https://www.tagesspiegel.de/berlin/unwetter-in-berlin-tausende-baume-beschadigt--tegeler-forst-vorerst-gesperrt-13925098.html
-#: by: https://www.t-online.de/region/berlin/id_100793476/berlin-schweres-unwetter-tegeler-forst-gesperrt.html (Aufräumarbeiten können Wochen dauern)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574553.php
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
-#: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-in-parks-droht-am-freitag-lebensgefahr-feuerwehr-zahlt-mehr-als-860-einsatze-13921543.html
-#: by: https://www.tagesspiegel.de/berlin/die-baume-sind-umgefallen-wie-mikadostabchen-heftige-unwetterschaden-im-berliner-norden--reinickendorf-sperrt-alle-parks-und-spielplatze-13925935.html
-#: by: https://www.tagesspiegel.de/berlin/schweres-unwetter-uber-berlin-einschrankungen-bei-der-s-bahn-aufgehoben--tegeler-forst-bleibt-gesperrt-13921543.html
-#: by: https://taz.de/Sturmfolgen-im-Berliner-Nordwesten/!6096928/
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1575315.php (ab Mitte KW 27/2025 beginnen die Aufräumarbeiten im Waldbereich)
-#: by: https://www.tagesspiegel.de/berlin/aufraumarbeiten-nach-unwettern-in-berlin-tegeler-und-spandauer-forst-bleiben-wochenlang-gesperrt-13935625.html
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1576243.php
-#: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/unwetter-hinterlasst-grosse-verwustung-im-berliner-norden-bezirk-reinickendorf-zahlt-750-schadensmeldungen-13951765.html
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1578727.php
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1583148.php
-#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/nach-heftigem-sturm-ziros-arbeiten-im-wald-im-berliner-norden-gehen-nur-langsam-voran-14068208.html
-#: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/sturmschaden-im-berliner-norden-nicht-beseitigt-arger-um-gesperrte-parks-spielplatze-und-sportanlagen-14070377.html
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
-#: by: https://www.tagesspiegel.de/berlin/schadensbilanz-nach-unwettern-in-berlin-bezirke-zahlen-millionensummen-fur-sturmschaden-14093090.html
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1586329.php (u.a. Erwähnung des Tegeler Fließes)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
-#: by: https://www.tagesspiegel.de/berlin/raumungsarbeiten-dauern-langer-als-geplant-spandauer-und-tegeler-forst-bleiben-bis-zum-18-august-gesperrt-14112452.html
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1590305.php (Öffnung am 19.8.2025)
-#: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
-# REMOVED --- #: last_checked: 2025-08-13 (website map) vvv --- #: check_frequency: 10d (indoor check) vvv --- #: next_check: 2025-08-18 (Pressemitteilung) vvv
-#: note: nördlicher Abschnitt (Tegeler Forst - Hermsdorf)
-Verlängerte Schulzendorfer Str.	2::temp 2015,22435 1834,22421 1622,22383 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
-(Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1061,21970 1069,21985 1135,22069
-(Forstamt Tegel - Verlängerte Schulzendorfer Str.)	2::temp 1135,22069 1245,22058 1527,22298 1622,22383
-(Hermsdorfer Damm - Karolinenstr.)	2::temp 1928,21595 1859,21541
-(Waldweg über den Beyschlagtunnel)	2::temp 393,22408 421,22528 636,22658
-(Hermsdorfer Damm - Rote Chaussee)	2::temp 1859,21541 1610,21721 1566,21898 1556,22050 1579,22101 1595,22172 1588,22209 1569,22250 1527,22298 1499,22378 1415,22552 1435,22771 1460,22874 1476,22938 1567,23054 1566,23179 1534,23277 1479,23355 1394,23482 1003,23752 875,23836
-(Hermsdorfer Damm - Tegeler Forst)	2::temp 2072,21691 2046,21753 1977,21808 1882,21904 1855,21964 1726,22163 1627,22205 1569,22250
-(Schulzendorfer Str. - Am Buchenberg)	2::temp -429,23030 -423,23103 -190,23187 -108,23306 -38,23355 233,23442 558,23359 664,23416 737,23442 894,23477 1050,23447 1479,23355 1794,23255 2480,23264
-(Waldweg im Tegeler Forst)	2::temp 875,23836 728,23885
-(Waldweg im Tegeler Forst)	2::temp 1003,23752 1157,23752 1304,23736 1363,23746 1433,23738 1571,23786 1602,23775 1622,23726 1688,23698 1848,23679 1980,23711 2054,23741 2111,23703 2137,23626 2272,23574
-(Tegeler Forst)	2::temp 2088,22798 2047,22829
-(Tegeler Forst)	2::temp 1571,23786 1592,23808
-(Tegeler Forst - Ehrenpfortensteig)	2::temp 1567,23054 1581,22959 1661,22851 1760,22839 1897,22781 2088,22798
-(Rote Chaussee - Beyschlagtunnel)	2::temp 904,23964 875,23836 776,23745 711,23612 664,23416 656,23373 697,23257 695,23002 652,22855 667,22755 636,22658
-#: source_id[inactive]: bvg2024:124#HIM_FREETEXT_290864
-# REMOVED (möglicherweise wieder offen?) --- #: note: Unklar, ob die Ruppiner Chausse betroffen ist --- Ruppiner Chaussee	2::temp 1445,21216 1427,21237 1347,21428 1254,21718 1146,21901 1061,21970 919,22068 488,22275 455,22285 355,22344
-#: note: südlicher Abschnitt (Tegeler Forst - Tegelsee)
-# REMOVED (hier nicht (mehr?)) --- (Waldkauzstr., Verlängerung)	2::temp -884,19726 -671,19408 -547,19282 -538,19236 -595,19146 -646,19028 -629,18977
-# REMOVED (hier nicht (mehr?)) --- (Schwarzer Weg - Waldkauzstr., Verbindung)	2::temp -519,19233 -538,19236
-# REMOVED (Zugang zum Segel-Club möglich?) --- Schwarzer Weg (Tegel)	2::temp 1119,21012 958,21006 892,20989 817,20953 625,20738 605,20714
-# REMOVED (hier nicht (mehr?)) --- #: note: Unklar: offiziell wohl nicht abgesperrt, aber man kann von Forstarbeitern abgewiesen werden --- Schwarzer Weg (Tegel)	2::temp 605,20714 511,20600 436,20558 240,20457 195,20405 97,20103 6,19817 -13,19739 -51,19654 -134,19600 -305,19507 -519,19233 -585,19132 -620,19063 -629,18977 -629,18866 -639,18796 -754,18644 -847,18577 -869,18526 -885,18446 -930,18337 -968,18301 -1082,18165
-# REMOVED (hier nicht (mehr?)) --- (Schwarzer Weg - Jörsstr.)	2::temp -847,18577 -932,18558 -1124,18480 -1307,18408
-# REMOVED (hier nicht (mehr?)) --- (Zufahrt ehemaliges Restaurant Toulouse)	2::temp 6,19817 72,19790
-# REMOVED (hier nicht (mehr?)) --- (Zufahrt Villa Borsig)	2::temp 436,20558 426,20420 443,20357 430,20338
-# REMOVED (hier nicht (mehr?)) --- (Uferweg am Tegeler See)	2::temp -984,18136 -934,18284 -930,18337
-# REMOVED (hier nicht (mehr?)) --- (Uferweg am Tegeler See)	2::temp -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
-(Mühlenweg)	2::temp -2043,20968 -1895,20953 -1760,20985 -1590,20948 -1082,20996 -889,20979 -750,20878 -329,20685
-# REMOVED (hier nicht (mehr?)) --- (Mühlenweg)	2::temp -329,20685 -105,20611 65,20594 462,20694 605,20714
-(Försterweg)	2::temp -2043,20968 -2101,20891 -1811,20818 -1292,20572 -1243,20471 -1050,20281 -871,20225 -842,20200
-# REMOVED (hier nicht (mehr?)) --- (Försterweg)	2::temp -842,20200 -716,20060 -516,19798 -303,19740
-# REMOVED (hier nicht (mehr?)) --- (Waldweg im Tegeler Forst)	2::temp -1527,18645 -671,19408 -303,19740 -183,19831 97,20103
-# REMOVED (hier nicht (mehr?)) --- (Försterweg - Schwarzer Weg)	2::temp -183,19831 -135,19832 6,19817
-# REMOVED (hier nicht (mehr?), laut Karte) ---	2::temp 644,24394 442,24479 350,24485 219,24419 162,24407 -59,24361 -250,24376 -340,24455 -399,24464 -479,24444 -595,24441 -667,24463 -822,24540
-(Karolinenstr. - Waidmannsluster Damm)	2::temp 1712,20907 1819,21116 1851,21328 1810,21363
-(Waidmannsluster Damm - Karolinenstr.)	2::temp 1942,21564 1928,21595 1859,21541 1843,21440 1810,21363 1613,21173
-#: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13499 (Einwohneranfrage)
-#: note: auch Wege am Tegeler Fließ möglicherweise gesperrt; diese Sperrungen sind aber nicht auf der Karte der Forstverwaltung eingezeichnet
-Tegeler Fließ	2::temp 4222,22854 4166,22752 4117,22715 4101,22727 4022,22691 3947,22622 3907,22606 3879,22574 3831,22479 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
-# REMOVED (hier nicht (mehr?), siehe Mapillary) --- Tegeler Fließ	2::temp 3118,22294 3094,22233 3094,22216 3134,22153 3066,22117 2966,22084
-Tegeler Fließ	2::temp 2966,22084 2772,21963 2743,21924 2722,21854 2727,21802 2686,21720 2615,21640 2518,21565 2420,21553 2371,21524 2352,21559 2253,21527 2166,21468 2074,21469 2004,21502 1942,21564
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4371,
-         'text' => 'Tegeler Forst: wegen Sturmschäden gesperrt, voraussichtlich bis zum 18.08.2025',
-         'type' => 'gesperrt',
-         'until' => 1755554400
-       },
-       {
-         'accept_multi_feature_distance' => 2000,
-         'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1574770.php
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsvzp4wvrk2n (Hauptstraßen wieder offen)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/so-schlimm-war-es-noch-nie-dieser-stadtrat-warnt-noch-immer-vor-dem-berliner-waldbesuch-13967756.html (Schönwalder Allee bis min. 11.07.2025 gesperrt)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1578174.php (Sperrungen bis zum 4. August 2025)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_29_1841_1960_online.pdf (Allgemeinverfügung)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltvyv2f6yc2q (Schönwalder Allee ist offen)
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1583117.php
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_31_2045_2088_online.pdf (gesperrt bis 4.8.2025)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1586194.php (Verlängerung bis 18.08.2025)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Verlängerung bis 18.08.2025)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1590305.php (Öffnung am 19.8.2025)
-#: source_id: viz2021:13.15415,52.59575,27.06.2025,01:24 (Schönwalder Allee) (inaktiv)
-#: source_id: viz2021:13.21002,52.57887,27.06.2025,15:12 (Niederneuendorfer Allee) (inaktiv)
-#: source_id: adac:584917438 (Niederneuendorfer Allee) (inaktiv)
-#: source_id[inactive]: bvg2024:x36#HIM_FREETEXT_290574
-#: also_indoor: url https://www.berlin.de/forsten/service/waldsperrungen/
-#: also_indoor: traffic (T,H,G)
-# REMOVED --- #: last_checked: 2025-08-13 (website map) vvv --- #: check_frequency: 10d (indoor/traffic check) vvv --- #: next_check: 2025-08-18 vvv
-# REMOVED (laut VIZ wieder offen) --- Schönwalder Allee	2::temp -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746 -6482,20783 -6540,20790 -6782,20818
-# REMOVED (laut Verkehrskarten hier wieder offen) --- Niederneuendorfer Allee	2::temp -2821,18620 -2827,18639 -2900,18887 -2937,19008
-# REMOVED (wieder offen) --- Niederneuendorfer Allee	2::temp -2937,19008 -3161,19627 -3371,19864 -3497,20003 -3495,20025
-# REMOVED (zur Bürgerablage vielleicht offen?) --- (Uferweg an der Havel)	2::temp -2723,19255 -2746,19418 -2763,19450 -2780,19530 -2870,19589 -2905,19636 -2908,19715
-Radelandstr.	2::temp -6518,17539 -6608,17562
-(Radelandstr. - Mauerweg)	2::temp -6608,17562 -6910,17684 -6954,17688
-Oberjägerweg	2::temp -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4485,20420
-# REMOVED (bei Mapillary keine Sperrung zu sehen) --- (Niederneuendorfer Allee - Pappelweg)	2::temp -2821,18620 -2870,18553 -2919,18506 -2965,18488 -2987,18438
-# REMOVED (laut Mapillary offen) --- (Mauerweg Spandau)	2::temp -2908,19715 -2966,19746 -3012,19757 -3161,19627
-#: note: bei Mapillary (2025-06-28) sind viele umgestürzte Bäume zu sehen
-(Mauerweg Forst Spandau)	2::temp -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431
-# REMOVED (hier nicht (mehr?)) --- (Mauerweg Forst Spandau)	2::temp -7032,19431 -7069,19436 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -7965,19069
-(Um den Laßzinssee)	2::temp -6482,20783 -6442,20864 -6465,21060
-(Um den Laßzinssee)	2::temp -6044,20971 -5795,20965
-# REMOVED (laut Mapillary offen) --- Eiskellerweg	2::temp -6782,20818 -7102,20371 -7586,20088 -7593,19872 -7943,19710 -7980,19689 -8016,19641 -8018,19562 -7964,19490
-(Eiskeller)	2::temp -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
-(Mauerweg Forst Spandau)	2::temp -3497,20003 -3652,20100 -4219,20240 -4485,20420 -4622,20496 -4724,20596 -5118,20749 -5393,20774 -5464,20802 -5609,20929 -5795,20965
-Griesingerstr.	2::temp -6608,17562 -6610,17503 -6612,17487 -6595,17456
-An der Havel	2::temp -2791,20571 -2776,20334 -2756,20138 -2749,20057 -2731,19988 -2756,19958 -2786,19799 -2850,19756 -2922,19788 -2966,19746
-# REMOVED (laut Mapillary hier offen) --- Spandau - Schönwalde	2::temp -6782,20818 -6788,20819 -7014,20840
-Oberjägerweg	2::temp -4485,20420 -4053,20594
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4372,
-         'text' => 'Spandauer Forst: wegen Sturmschäden gesperrt, voraussichtlich bis zum 4.8.2025',
-         'type' => 'gesperrt',
-         'until' => 1755554400
-       },
+       undef,
+       undef,
        {
          'data' => '#: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
@@ -9222,8 +9099,8 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
 #: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
-#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025)
-#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025)
+#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025)
+#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025)
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: bei rbb bis 01.08.2025 verlängert, allerdings hier Kreuzung Kirschenallee
 	q3::inwork 919,11938 1078,11895 1188,11861
@@ -9231,9 +9108,9 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 ',
          'from' => 1750861140,
          'id' => 4374,
-         'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis 20. August 2025',
+         'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis 12. September 2025',
          'type' => 'gesperrt',
-         'until' => 1755705600
+         'until' => 1757692800
        },
        {
          'data' => '#: also_indoor: traffic (G,re-H,T)
@@ -9680,6 +9557,21 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'text' => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
          'type' => 'handicap',
          'until' => 1772298000
+       },
+       {
+         'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/zukunft-des-berliner-mauerwegs-zwei-neue-baustellen-etappen-an-der-alten-ddr-grenze-in-spandau-13615882.html (Baustart Ende 2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neuer-berliner-mauerweg-mobel-trasse-termine-die-ausbauplane-fur-spandau-13768012.html (Baustart August 2025, Ende Mai 2026; neue Zufahrt vom Semmelländerweg ("alter Deponieweg"))
+#: by: https://entwicklungsstadt.de/berliner-mauerweg-sanierung-am-hahneberg-in-spandau-startet/ (Fertigstellung Sommer 2026)
+#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-start-der-bauarbeiten-am-hahneberg
+#: XXX nach den Bauarbeiten vermutlich bessere Qualität
+#: next_check: 2026-09-01
+Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,11458 -6081,11508 -6174,11571 -6397,11664 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
+',
+         'from' => 1755627458,
+         'id' => 4413,
+         'text' => 'Mauerweg, Karolinenhöhe - Hahneberg: Sanierung, mögliche Sperrung, bis Sommer 2026',
+         'type' => 'gesperrt',
+         'until' => 1789920000
        }
      
 );
