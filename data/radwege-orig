@@ -373,8 +373,8 @@ asphaltiert	RW1; 14218,10430 14405,10340 14558,10264
 #: XXX ^^^
 # 
 #: note: Stralauer Allee stadteinwärts
-#: historical_note: früher war hier ein provisorisches Radwegschild, dann zwischenzeitlich nichts, ab Frühjahr 2024 wieder ein provisorisches Radwegschild
-	RW2; 14558,10264 14405,10340
+#: historical_note: früher war hier ein provisorisches Radwegschild, dann zwischenzeitlich nichts, ab Frühjahr 2024 wieder ein provisorisches Radwegschild, 2025 kein Schild
+	RW1; 14558,10264 14405,10340
 	RW1; 14405,10340 14218,10430
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2022-11-07 --- #: check_frequency: 90d
 #: historical_note: früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.
@@ -1353,7 +1353,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-08-19 vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1951,7 +1951,7 @@ Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6029,10356
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (Fahrbahnsanierung bis 30.11.2023) (bis 01.12.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="27"
 #: osm_watch: way id="458915639" version="8"
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
@@ -3155,7 +3155,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-08-19
+#: last_checked: 2025-08-20
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3183,7 +3183,7 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
 #: historical_note: ganz früher sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
-#: last_checked: 2025-08-19
+#: last_checked: 2025-08-20
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
@@ -6705,7 +6705,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2025-08-14 (mapillary) vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
@@ -8178,7 +8178,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-07-29
+#: last_checked: 2025-08-20
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -8873,7 +8873,9 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/pop-up-radweg-in-berlin-charlottenburg-warum-in-der-kantstrasse-jetzt-gebaut-wird-14119145.html
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
-#: last_checked: 2025-08-14 (mapillary) vvv
+#: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
+#: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
@@ -9205,7 +9207,7 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025) (bis 28.02.2025) (bis 17.03.2025) (bis 26.03.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,11.03.2025,14:27 (bis 26.03.2025) (inaktiv)
-#: last_checked: 2025-07-18 vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung) vvv
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
@@ -9546,14 +9548,14 @@ asphaltiert	RW1;RW9 7308,9163 7363,9152
 # 
 	RW6;RW6 7998,15068 8015,15047 8037,14958 8091,14895
 # 
-	RW6;RW6 12673,1140 12704,1102 12716,1088 12727,1074
+	RW6;RW6 12673,1140 12692,1117 12704,1102 12716,1088 12727,1074
 	RW6;RW6 12673,1140 12738,1213 12802,1285 12868,1315
-	RW6;RW6 12802,1285 12832,1192 12838,1174 12854,1121 12860,1082
-	RW6;RW6 12716,1088 12745,1116 12832,1192 12860,1200 12914,1215
+	RW6;RW6 12802,1285 12832,1192 12838,1174 12861,1102 12868,1085
+	RW6;RW6 12716,1088 12742,1113 12832,1192 12860,1200 12914,1215
 	RW6;RW6 12727,1074 12656,1019
 	RW6;RW6 12838,1174 12917,1197
 	RW6;RW6 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101
-	RW6;RW6 12860,1082 12933,1101
+	RW6;RW6 12868,1085 12891,1091 12933,1101
 # 
 #: by: osm
 	RW7;RW7 -298,2577 -197,2634 -155,2658

@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-08-15
+#: last_checked: 2025-08-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -369,6 +369,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1578057.php (Abriss beginnt am 10. Juli 2025 und wird ca. acht Wochen dauern)
 #: by: https://entwicklungsstadt.de/wedding-bezirk-mitte-beginnt-abriss-der-einsturzgefaehrdeten-burgsdorfstrasse-1/
 #: by: https://weddingweiser.de/endlich-abriss-in-der-burgsdorfstrasse/ (Verzögerung des Abrisses, vielleicht bis 30. September 2025)
+#: by: https://www.morgenpost.de/bezirke/mitte/article409774113/das-baum-haus-tiere-verhindern-abriss-der-beruehmten-ruine-in-wedding.html
 #: osm_watch: way id="549316654" version="41"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
@@ -381,12 +382,13 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-#: next_check_id: HEINRICHHEINE-2025
-#: source_id: viz2021:13.41769,52.51364, (bis 31.12.2025)
-#: also_indoor: traffic (G,H[unklar])
-#: last_checked: 2025-08-05
-#: check_frequency: 14d
-Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord geführt	q2::inwork; 11325,12021 11291,11876
+# REMOVED (keine Bauarbeiten mehr)
+# REMOVED --- #: next_check_id: HEINRICHHEINE-2025
+# REMOVED --- #: source_id: viz2021:13.41769,52.51364, (bis 31.12.2025)
+# REMOVED --- #: also_indoor: traffic (G,H[unklar])
+# REMOVED --- #: last_checked: 2025-08-05
+# REMOVED --- #: check_frequency: 14d
+# REMOVED --- Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord geführt	q2::inwork; 11325,12021 11291,11876
 # 
 # REMOVED --- #: source_id: viz2021:13.385212,52.520098,15.04.2025,07:00 (hier nur Kfz-Verkehr, bis 14.05.2025) (vorfristig inaktiv) --- #: note: Halteverbotsschilder bis 30.05.2025; ist weiterhin aktiv, auch wenn die VIZ-Verkehrsmeldung entfernt wurde --- #: last_checked: 2025-05-21 --- #: next_check: 2025-05-30 (Halteverbotsschilder) --- #: valid: -20250530 --- Neustädtische Kirchstraße: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 9108,12635 9098,12687
 # 
@@ -452,7 +454,7 @@ Brückenstr.: Wasserrohrbruch, Radfahrer werden ein paar Meter über den Hochbord 
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-08-12 (mapillary) vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="43"
@@ -574,7 +576,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-08-14 (mapillary) vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1093,7 +1095,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
 #: osm_watch: way id="1275438996" version="3"
-#: osm_watch: way id="1262014804" version="1"
+# REMOVED --- #: osm_watch: way id="1262014804" version="1"
 #: osm_watch: note 4126168 3
 #: osm_watch[closed]: note 4126169 1
 #: priority: #C
@@ -2140,7 +2142,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/ (1. Quartal 2026: Einreichung der Planfeststellungsunterlagen) (2. Quartal 2029 - 3. Quartal 2031) (3. Quartal 2030 - 4. Quartal 2032)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
-#: osm_watch: way id="77098244" version="19"
+#: osm_watch: way id="77098244" version="20"
 #: last_checked: 2025-06-25 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2026-03-31
@@ -5368,6 +5370,8 @@ Gruberzeile - Weinmeisterhornweg: einige Fußgänger	q2 -5735,11793 -5584,11706 -5
 #: note: im südlichen Abschnitt sind zwei weitere umfahrbare Bodenschwellen, aber hier existiert zusätzlich noch ein Radweg zur Umfahrung
 Straße am Flugplatz: zwei Bodenschwellen, umfahrbar	q0- 17522,3653 17762,3243
 # 
+(Buckower Felder - Buckower Damm/Gerlinger Str.): flache Rampe	q2 12902,1321 12926,1330 12938,1348
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -6075,9 +6079,9 @@ Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fußgänger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
-#: osm_watch: way id="114381362" version="14"
-#: osm_watch: way id="1100622078" version="7"
-#: osm_watch: way id="1100622082" version="7"
+#: osm_watch: way id="114381362" version="15"
+#: osm_watch: way id="1100622078" version="8"
+#: osm_watch: way id="1100622082" version="8"
 #: last_checked: 2025-05-12 (mapillary)
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719

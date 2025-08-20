@@ -333,7 +333,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-08-14 (mapillary)
+#: last_checked: 2025-08-20
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -2689,7 +2689,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8775,12457
 #: off: Sunday (seen 2018-10-07 afternoon)
 	X 8695,11015
-#: note: im Zuge Nikolsburger/Fasanenstr. hat man an der Mittelstreifenampel noch einmal Rot (gesehen: Sa nachmittags)
+#: note: im Zuge Nikolsburger/Fasanenstr. hat man an der Mittelstreifenampel noch einmal Rot (gesehen: Sa nachmittags, 2025-08-20 (Mi) gegen 13:00)
 	X 5219,9808
 	X 3927,9935
 # REMOVED (aufgehoben) ---	F 3974,9774
@@ -2905,7 +2905,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-20
 #: check_frequency: 120d
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
@@ -3610,7 +3610,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-08-14 (mapillary) vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -4594,8 +4594,8 @@ geschlossen bei Bedarf	Zbr 27649,-11766
 # REMOVED ---	B 11875,-8728
 	B 13280,-18317
 	B 13295,-18620
-	B 13412,-20513
-	B 13467,-21298
+# REMOVED (2025 außer Betrieb genommen) ---	B 13412,-20513
+# REMOVED (2025 außer Betrieb genommen) ---	B 13467,-21298
 #: next_check_id: ZOSSENMELLENSEE-2025
 #: XXX Bahnübergang wird durch eine Über/Unterführung ersetzt
 #: osm_watch: node id="31353169" version="10"

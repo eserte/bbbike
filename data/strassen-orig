@@ -11213,19 +11213,20 @@ Pfarrer-Wenke-Weg	N 11777,927 11940,937
 Gerlinger Str.	H 11791,834 11997,874 12107,898 12307,964 12403,1011 12538,1075 12588,1103 12657,1154 12790,1302 12938,1348
 # 
 #: note: Buckower Felder vvv
-Gensweg	N 12657,1154 12673,1140 12704,1102 12716,1088 12727,1074 12772,1019 12809,969
+Gensweg	N 12657,1154 12673,1140 12692,1117 12704,1102 12716,1088 12727,1074 12772,1019 12809,969
 #: osm.highway: service
 (Buswendestelle Gensweg)	N 12588,1103 12609,1088 12673,1140
 #: note: Privatstraﬂe
 Am M¸hlanger	N 12673,1140 12738,1213 12802,1285 12868,1315
 Am M¸hlanger	NN 12868,1315 12902,1321
-Dyrekeweg	N 12790,1302 12802,1285 12832,1192 12838,1174 12854,1121 12860,1082 12879,1000
+Dyrekeweg	N 12790,1302 12802,1285 12832,1192 12838,1174 12861,1102 12868,1085 12879,1000
 #: note: Privatstraﬂe
 Knyphausenweg	N 12902,1321 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101 12946,1027
-An den Buckower Feldern	N 12914,1215 12860,1200 12832,1192 12745,1116 12716,1088
+An den Buckower Feldern	N 12914,1215 12860,1200 12832,1192 12742,1113 12716,1088
 An den Buckower Feldern	N 12838,1174 12917,1197
 An den Buckower Feldern	N 12727,1074 12656,1019
-In den Bauerng‰rten	N 12860,1082 12933,1101
+In den Bauerng‰rten	N 12868,1085 12891,1091 12933,1101
+(Buckower Felder - Buckower Damm/Gerlinger Str.)	NN 12902,1321 12926,1330 12938,1348
 #: note ^^^
 # 
 Christian-Henkel-Str.	N 12054,1044 12175,1101 12256,1111 12350,1088 12403,1011
@@ -11627,7 +11628,7 @@ Lauterplatz	NN 5799,7880 5707,7878
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article409541775/innsbrucker-platz-neues-quartier-baut-friedenau-zu-ende.html
 #: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024) (bis 23.04.2024, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.342764,52.477504,02.06.2025,10:00 (Leitungsbau in der Hauptstr., bis 21.07.2025) (inaktiv)
-#: source_id: viz2021:13.34245,52.47724, (Hauptstr., bis 30.07.2025) (bis 31.08.2025)
+#: source_id: viz2021:13.34245,52.47724, (Hauptstr., bis 30.07.2025) (bis 31.08.2025) (bis 21.08.2025)
 # REMOVED (eingetragen) --- #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
 # REMOVED (eingetragen) --- #: XXX Friedenauer Hˆhe (Privatstraﬂe) -> im Amtsblatt, PLZ=12159, laut LOR PLZ=10827+12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
@@ -19873,7 +19874,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straﬂe)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-08-05 vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

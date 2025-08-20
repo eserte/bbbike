@@ -437,7 +437,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
 #: osm_watch: way id="27491366" version="18"
-#: last_checked: 2025-06-25
+#: last_checked: 2025-08-20
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
@@ -465,7 +465,7 @@ Dorotheenstr.	1 18653,8922 18770,8898
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/neukoellner-verordnete-fordern-vorfahrt-fuer-radler-auf-der-krokusstrasse-und-linksabbiegespur-auf-der-massantebruecke_a300891
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/161024_protokoll_mobilitaetsrat_3_pdf.pdf (Erwähnung)
 #: XXX könnte im Zuge der Realisierung "Y-Trasse" wieder in Betrieb genommen werden (Bauphase für den Radschnellweg: mindestens 18 Monate)
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-20
 #: next_check: 2032-06-30
 Alte Späthbrücke	2 14466,5087 14544,5123
 # 
@@ -3987,7 +3987,7 @@ Schwingtor	BNP:5::trailer=10 -7347,12797
 #: osm_watch: way id="169067264" version="14"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2025-08-14 (mapillary) vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -3997,31 +3997,10 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: ZOSSENB246-2023
-#: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20240925 (Eröffnung, davor Sperrung der B96 für den Straßenverkehr)
-#: by: https://www.zossen.de/buerger/meldungen/dauerhafte-schliessung-der-bahnuebergaenge-am-oertelufer-und-an-der-b246-alt/
-#: source_id: 257201567 (bis 31.10.2025)
-#: XXX Wenn der Bahnübergang aufgegeben wird, dann müsste man den Rest auf N degradieren
-#: XXX möglicherweise ist der Bahnübergang am Oertelufer noch offen (Stand Anfang August 2025), aber hier gibt es sowieso die Unterführung für Radfahrer/Fußgänger
-#: osm_watch: way id="1322461292" version="10" brb
-#: osm_watch: way id="538382840" version="17" brb
-#: osm_watch: note 4885859 2
-#: also_indoor: traffic (G[beide],T[nur ex-B246])
-#: last_checked: 2025-08-15 (traffic) vvv
-#: check_frequency: 90d (Rückbau?) vvv
-# REMOVED --- #: next_check: 2025-07-31 (Beginn Verkehrsmeldung, Zossen-Meldung) vvv
-# REMOVED --- #: next_check: 2025-10-31 (Ende Verkehrsmeldung; aber es soll wohl dauerhaft bleiben) vvv
-#: valid: 20250731- vvv
-#: osm_watch: node id="12237332772" version="3" brb
-ehemalige B246 (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13390,-20515 13412,-20513 13526,-20548
-#: osm_watch: node id="4081207273" version="4" brb
-#: osm_watch: way id="756201879" version="5"
-Oertelufer (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13430,-21328 13467,-21298 13506,-21265
-#: valid ^^^
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: ZOSSENB246-2023 --- #: by: https://www.zossen.de/buerger/zossen-und-die-deutsche-bahn/ --- #: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20240925 (Eröffnung, davor Sperrung der B96 für den Straßenverkehr) --- #: by: https://www.zossen.de/buerger/meldungen/dauerhafte-schliessung-der-bahnuebergaenge-am-oertelufer-und-an-der-b246-alt/ --- #: source_id: 257201567 (bis 31.10.2025) --- #: XXX Wenn der Bahnübergang aufgegeben wird, dann müsste man den Rest auf N degradieren --- #: XXX möglicherweise ist der Bahnübergang am Oertelufer noch offen (Stand Anfang August 2025), aber hier gibt es sowieso die Unterführung für Radfahrer/Fußgänger --- #: osm_watch: way id="1322461292" version="10" brb --- #: osm_watch: way id="538382840" version="18" brb --- #: osm_watch: note 4885859 2 --- #: also_indoor: traffic (G[beide],T[nur ex-B246]) --- #: last_checked: 2025-08-15 (traffic) vvv --- #: check_frequency: 90d (Rückbau?) vvv --- # REMOVED --- #: next_check: 2025-07-31 (Beginn Verkehrsmeldung, Zossen-Meldung) vvv --- # REMOVED --- #: next_check: 2025-10-31 (Ende Verkehrsmeldung; aber es soll wohl dauerhaft bleiben) vvv --- #: valid: 20250731- vvv
+# REMOVED (Straße "aufgetrennt") --- #: osm_watch: node id="12237332772" version="3" brb --- ehemalige B246 (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13390,-20515 13428,-20514 13526,-20548
+# REMOVED (Straße "aufgetrennt") --- #: osm_watch: node id="4081207273" version="4" brb --- #: osm_watch: way id="756201879" version="5" --- Oertelufer (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13430,-21328 13454,-21309 --- Oertelufer (Zossen): dauerhafte Sperrung und Rückbau des Bahnübergangs	2::inwork 13485,-21283 13506,-21265
+# REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: STUBENRAUCH-2025
 #: last_checked: 2025-07-18 vvv
@@ -4081,7 +4060,7 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwo
 # REMOVED --- #: by: http://www.berliner-woche.de/johannisthal/bauen/neues-stadtquartier-geplant-d160577.html (geplanter Abschluss 2022, Baubeginn 2019) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_55_6227_6354_online.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/index.shtml --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/vorhabenbezogener_Bebauungsplan9-17VE.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/14_Verkehrsanlagenplanung.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/15_Erlaeuterung-Verkehrsanlagenplanung.pdf --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1065149.php (FNP-Anpassung) --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1114398.php (Vorlage zur Beschlussfassung) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/baubeginn-fuer-583-wohnungen-und-eine-kita-am-eisenhutweg-anfang-2022_a331385 (westlicher Teil: Bauarbeiten 2022 - 2027) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (FNP-Anpassung) --- #: by: https://entwicklungsstadt.de/am-eisenhutweg-in-johannisthal-entsteht-ein-neues-wohnquartier/ --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/grundsteinlegung-fuer-knapp-600-wohnungen-und-eine-kita-im-eisenhutweg_a348008 --- #: by: https://www.deutsches-architekturforum.de/thread/14936-wohnquartier-am-eisenhutweg-degewo-johannisthal-treptow-k%C3%B6penick/?postID=720354#post720354 --- #: by: https://abload.de/img/eisenhut_lageplan_skaaqkk9.jpg --- #: note: für den westlichen Teil (bis zum "Knick" des Eisenhutwegs) wird ein Bebauungsplan 9-17VE aufgestellt; für den östlichen Teil bis Höhe Straße am Flugplatz gibt es noch keine Planungen, also wurde dieser erst einmal rausgenommen --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/index.shtml (östlicher Teil, Bebauungsplan XV-58bb-1) --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/download/XV-58bb-1_Bebauungsplanentwurf.pdf (hier: keine Wege/Straßen) --- #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlg4S2Y4NVh3QUE3OXdVLmpwZw== --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_08_0725_0852_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_28_2981_3084_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/richtfest-gefeiert-am-eisenhutweg_a393890 (bezugsfertig ab 2026) --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1387435.php (Bebauungsplan für den östlichen Teil) --- #: by: https://kw-development.com/bauvorhaben-berlin/eisenhutweg-54-76/ (Fertigstellung 2026) --- #: by: https://www.degewo.de/wachstum/neubau/treptow-koepenick/eisenhutweg-54-76 --- #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-mehrfamilienhaus-wohnanlage-eisenhutweg-berlin-deutschland-637647.html --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/eisenhutweg-adlershof.1012/#post-23644 --- #: source_id: viz2021:13.508467,52.430571,19.07.2022,13:00 (Leitungsarbeiten bis 2.10.2022, Gegenverkehrsregelung) (bis 4.11.2022) (inaktiv) --- #: source_id: viz2021:13.50906,52.430203,22.11.2023,05:00 (Kranabbau bis 23.11.2023) (inaktiv) --- #: source_id: viz2021:13.509368,52.430018,11.09.2024,10:00 (bis 04.10.2024) (bis 18.10.2024) (bis 01.11.2024) (inaktiv) --- # REMOVED (nein) --- #: XXX betreffen die Leitungsarbeiten auch den Radverkehr (z.B. durch die Einrichtung eines Zweirichtungsradwegs?) --- #: osm_watch: way id="1154764619" version="2" --- #: XXX hier wird vermutlich eine Einbahnstraße im Uhrzeigersinn sein --- #: last_checked: 2024-12-27 --- #: check_frequency: 60d --- #: next_check: 2026-01-01 --- Eisenhutweg [Wohngebiet]: wegen Hochbauarbeiten noch gesperrt	2::inwork 17741,2824 17688,2744 17471,2872 17569,2987
 # 
 #: next_check_id: BUCKOWERFELDER-2024
-#: last_checked: 2025-07-05 (mapillary) vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 vvv
 # REMOVED (laut osm hier offen) --- #: osm_watch: way id="946008571" version="9" --- An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
@@ -4092,8 +4071,8 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwo
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019 12809,969
 #: XXX außerdem Anbindung zum Mauerweg geplant
 #: osm_watch: way id="946008579" version="7"
-# REMOVED (laut osm hier offen) --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12854,1121 12860,1082
-Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12860,1082 12879,1000
+# REMOVED (laut osm hier offen) --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12861,1102 12868,1085
+Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12868,1085 12879,1000
 #: XXX außerdem Anbindung zum Mauerweg geplant
 #: osm_watch: way id="1341530667" version="1"
 # REMOVED (laut osm hier offen) --- Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101
@@ -4101,16 +4080,6 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12933,1101 12946,1027
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-# 
-#: next_check_id: MUEHLENDAMMBRUECKE-2024
-#: by: https://www.deutsches-architekturforum.de/thread/14486-neubau-m%C3%BChlendammbr%C3%BCcke-in-bau/?postID=773634#post773634
-#: osm_watch: note 4545425 2
-#: osm_watch: way id="345088393" version="7"
-#: osm_watch: way id="125513277" version="8"
-#: last_checked: 2025-07-09
-#: check_frequency: 120d
-#: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
-Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
 # 
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
@@ -4275,7 +4244,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://entwicklungsstadt.de/marinehaus-berlin-mitte-sanierung-hat-begonnen/ (Hauptbaumaßnahmen bis 2027)
 #: by: https://www.stadtmuseum.de/museum/marinehaus
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
-#: osm_watch: note 4211143 3
+#: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
 #: last_checked: 2025-08-05
@@ -4356,7 +4325,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-08-16 vvv
+#: last_checked: 2025-08-20 vvv
 #: osm_watch: way id="1199463691" version="5"
 # REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4527,7 +4496,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-08-02 vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677

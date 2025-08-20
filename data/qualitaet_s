@@ -5067,7 +5067,9 @@ Köpenicker Str.: Asphalt mit einigen Schäden	Q0 17100,1650 17241,1750 17347,1823
 Köpenicker Str.: Asphalt	Q0 17764,2032 17860,2061 17901,2075 18111,2135
 Köpenicker Str.: Asphalt mit Schäden	Q1 18111,2135 18209,2164 18320,2195
 Niederschlemaer Weg: grobes Verbundsteinpflaster	Q1 18447,1727 18444,1782 18425,1831
-entlang der Teltowkanalautobahn: Asphalt	Q0 18484,2471 18452,2502 18388,2503 18347,2530 18388,2509 18496,2409 18518,2370 18567,2218 18580,2126
+entlang der Teltowkanalautobahn: Asphalt	Q0 18484,2471 18452,2502 18388,2503 18347,2530 18388,2509
+entlang der Teltowkanalautobahn: etwas welliger Beton oder Asphalt	Q0 18388,2509 18496,2409
+entlang der Teltowkanalautobahn: Asphalt	Q0 18496,2409 18518,2370 18567,2218 18580,2126
 Hornkleepfad: unbefestigte Straße, Schotter	Q2 18750,1522 18786,1510 18830,1497
 Künnekeweg: Kopfsteinpflaster	Q2 18112,1235 18220,1278 18300,1306 18383,1334 18432,1352
 Ziehrerweg: Kopfsteinpflaster	Q2 18448,1159 18383,1334
@@ -9583,7 +9585,7 @@ Tunnelstr.: Verbundsteinpflaster	Q1 15728,9415 15752,9385
 Regatta-Ufer: Parkweg	Q1 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Tivoliplatz: Verbundsteinpflaster	Q1 8986,8999 8917,8988
 Am Weinhang: Verbundsteinpflaster	Q1 8918,8965 8917,8988 8916,9023
-(Postenweg - Mauerweg): Sand	Q2 17013,-745 16997,-663
+(Postenweg - Mauerweg): fester Sand	Q2 17013,-745 16997,-663
 (Edeka-Parkplatz): Asphalt, einige Verbundsteinpflaster-Aufpflasterungen	Q0 16058,6629 16138,6548
 (Siemensstr./Deulstr. - Wilhelminenhofstr.): Asphalt	Q0 17842,6639 17852,6589 17826,6495
 Kolonnenweg: einige Unebenheiten	Q1 9955,16578 9954,16590 9945,16738 9949,16866 9980,16973
@@ -10716,8 +10718,8 @@ Händelplatz: Beton	Q0 4568,4789 4543,4820
 (Charité-Campus Benjamin Franklin): Beton	Q0 4884,3822 4884,3840 4811,3959
 (Charité-Campus Benjamin Franklin): Asphalt	Q0 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 Klingsorstr.: schadhafter Asphalt	Q1 4760,4075 4634,4053 4551,4042
-Klingsorstr.: schadhafter Asphalt	Q1 4834,4102 4932,4152
-Klingsorstr.: schadhafter Asphalt	Q1 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
+Klingsorstr.: Asphalt	Q0 4834,4102 4932,4152
+Klingsorstr.: Asphalt	Q0 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
 Klingsorstr.: Asphalt	Q0 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
 Klingsorstr.: Asphalt	Q0 5535,5068 5583,5179
 (Görlitzer Park, zur Forster Str.): wassergebundene Decke	Q1 12670,10160 12592,10112 12564,10121
@@ -11479,8 +11481,8 @@ Max-und Herta-Naujocks-Weg: wassergebundene Decke	Q1 16036,18604 16077,18674 161
 Geiserichstr.: Asphalt mit einigen Schäden	Q0 8130,4932 8198,4861 8255,4791
 Distelfinkweg: Beton	Q0 15672,2864 15537,3026 15460,3118 15410,3179 15367,3215 15273,3269
 Distelfinkweg [Stichstraße]: Beton	Q0 15460,3118 15512,3157
-Belßstr.: Asphalt mit einigen Schäden	Q1; 7602,2522 7667,2501 7704,2482 7777,2447 7899,2391
-Belßstr.: Beton mit einigen Schäden	Q1; 7667,2501 7602,2522 7555,2540 7517,2574
+Belßstr.: Asphalt mit einigen Schäden	Q1 7667,2501 7704,2482 7777,2447 7899,2391
+Belßstr.: Beton mit einigen Schäden	Q1 7667,2501 7602,2522 7555,2540 7517,2574
 (Am Buckersberg - Volkerweg): unbefestigte Straße	Q2 16090,4021 16039,4062
 Samoastr.: Gehwegplatten	Q0 6886,15156 6833,15215
 Lugierring: Verbundsteinpflaster	Q1 20207,789 20142,824
@@ -11798,17 +11800,24 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 (Parkplatz vor dem Stade Napoleon): Verbundsteinpflaster	Q1 4111,15999 4075,16030 4054,16035
 (Buswendestelle Gensweg): Beton	Q0 12588,1103 12609,1088 12673,1140
 Gensweg: Beton	Q0 12657,1154 12673,1140
-Gensweg: Asphalt	Q0 12673,1140 12704,1102 12716,1088 12727,1074
+Gensweg: Asphalt	Q0 12673,1140 12692,1117
+Gensweg: Betonpflaster	Q0 12692,1117 12704,1102
+Gensweg: Kleinsteinpflaster	Q1 12704,1102 12716,1088 12727,1074
 Am Mühlanger: Betonpflaster	Q0 12673,1140 12738,1213
 Am Mühlanger: Betonpflaster	Q0 12738,1213 12802,1285
 Am Mühlanger: Betonpflaster	Q0 12802,1285 12868,1315 12902,1321
-Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192 12838,1174 12854,1121 12860,1082
+Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192 12838,1174 12861,1102
+Dyrekeweg: Kleinsteinpflaster	Q1 12861,1102 12868,1085
 An den Buckower Feldern: Betonpflaster	Q0 12914,1215 12860,1200
 An den Buckower Feldern: Kleinsteinpflaster	Q1 12860,1200 12832,1192
-An den Buckower Feldern: Betonpflaster	Q0 12832,1192 12745,1116 12716,1088
+An den Buckower Feldern: Betonpflaster	Q0 12832,1192 12742,1113
+An den Buckower Feldern: Kleinsteinpflaster	Q1 12742,1113 12716,1088
 An den Buckower Feldern: Betonpflaster	Q0 12838,1174 12917,1197
 An den Buckower Feldern: Betonpflaster	Q0 12727,1074 12656,1019
 Knyphausenweg: Betonpflaster	Q0 12902,1321 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101
+(Buckower Felder - Buckower Damm/Gerlinger Str.): Betonpflaster	Q0 12902,1321 12926,1330 12938,1348
+In den Bauerngärten: Kleinsteinpflaster	Q1 12868,1085 12891,1091
+In den Bauerngärten: Betonpflaster	Q0 12891,1091 12933,1101
 Döberitzer Grünzug: Beton	Q0 7861,13465 7819,13559
 Döberitzer Grünzug: Asphalt	Q0 7819,13559 7825,13569 7805,13594 7782,13600
 Döberitzer Grünzug: Beton	Q0 7782,13600 7756,13634
@@ -12446,7 +12455,10 @@ Schliemannstr.: Kopfsteinpflaster	Q2 11154,14985 11334,15248
 Schliemannstr.: grobes Kopfsteinpflaster	Q2 11368,15301 11502,15527
 Rykestr.: Kopfsteinpflaster	Q2 11331,14350 11374,14363 11446,14508 11535,14688 11609,14881
 Fritz-Kirsch-Zeile: schlechtes Kopfsteinpflaster	Q3 17644,7219 17684,7233 17845,6986
-Dillgesstr.: Asphalt	Q0 6225,3300 6308,3204 6401,3113 6456,3038 6482,3004 6514,2961 6592,2827
+Dillgesstr.: Asphalt	Q0 6225,3300 6308,3204
+Dillgesstr.: Asphalt	Q0; 6308,3204 6401,3113
+Dillgesstr.: Asphalt, einige Schäden	Q1; 6401,3113 6308,3204
+Dillgesstr.: Asphalt	Q0 6401,3113 6456,3038 6482,3004 6514,2961 6592,2827
 (Wernsdorfer Str. - ehemaliger Schmöckwitzwerdersteg): unbefestigt	Q2 30531,-3115 30508,-3189 30511,-3202
 Fuß- und Radverkehrsbrücke Schmöckwitzwerder: Asphalt	Q0 30526,-3168 30535,-3148 30558,-3053 30588,-3000
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3528,4118 3766,4058

@@ -6097,7 +6097,8 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in der OL Zossen Gleisbauarbeiten Vollsperrung 23.09.2006-26.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13526,-20548 13412,-20513 13390,-20515
+	2::inwork 13526,-20548 13428,-20514
+# REMOVED ---	2::inwork 13428,-20514 13390,-20515
 EOF
      },
      { from  => 1159999200, # 2006-10-05 00:00
@@ -7169,7 +7170,8 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee OD Zossen, Bahnübergang Kanalarbeiten Vollsperrung 11.12.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13526,-20548 13412,-20513 13390,-20515
+	2::inwork 13526,-20548 13428,-20514
+# REMOVED ---	2::inwork 13428,-20514 13390,-20515
 EOF
      },
      { from  => 1166050800, # 2006-12-14 00:00
@@ -8331,7 +8333,9 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in OL Zossen Bauarbeiten am Bahnübergang Vollsperrung 07.05.2007-08.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13271,-20531 13390,-20515 13412,-20513 13526,-20548
+	2::inwork 13271,-20531 13390,-20515
+# REMOVED ---	2::inwork 13390,-20515 13428,-20514
+	2::inwork 13428,-20514 13526,-20548
 EOF
      },
      { from  => 1115157600, # 2005-05-04 00:00
@@ -9786,7 +9790,7 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-19.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1::inwork 13412,-20513 13526,-20548
+	1::inwork 13428,-20514 13526,-20548
 EOF
      },
      { from  => 1186610400, # 2007-08-09 00:00
@@ -10367,7 +10371,7 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee OL Zossen, zw. Bahnhofstr. und OA Kanalarbeiten halbseitig gesperrt; Einbahnstraße 09.08.2007-16.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1::inwork 13412,-20513 13526,-20548
+	1::inwork 13428,-20514 13526,-20548
 EOF
      },
      { from  => 1191103200, # 2007-09-30 00:00
@@ -31100,9 +31104,9 @@ EOF
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch[closed]: note 3210197 6
-#: osm_watch: way id="4792216" version="17"
-#: osm_watch: way id="1148659680" version="4"
-#: last_checked: 2025-07-18
+#: osm_watch: way id="4792216" version="18"
+#: osm_watch: way id="1148659680" version="5"
+#: last_checked: 2025-08-20
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -33464,10 +33468,10 @@ EOF
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="13"
+#: osm_watch: way id="362719487" version="14"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-08-14 (mapillary)
+#: last_checked: 2025-08-19 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -35728,7 +35732,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1755694923, # undef, # XXX
        text  => 'Keithstr.: Einbahnstraßenregelung zwischen Wichmannstr. und Lützowufer, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -35738,9 +35742,7 @@ EOF
 # REMOVED (no webcam found) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
 #: by: https://www.berlinhyp.de/de/%C3%BCber-uns/neubauvorhaben (Fertigstellung voraussichtlich 2024) (mittlerweile: voraussichtlich Mitte 2025)
 #: by: https://www.berliner-feuerwehr.de/aktuelles/einsaetze/brandbekaempfung-in-tiergarten-4585/
-#: last_checked: 2025-07-17
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-06-30
+# REMOVED (zwar noch offiziell Einfahrt verboten, aber die ehemalige Baustellenfläche ist leer und gut befahrbar) --- #: last_checked: 2025-08-20 --- #: check_frequency: 30d --- #: next_check: 2025-06-30
 	q3::inwork; 6626,11178 6549,11015
 EOF
      },
@@ -39347,10 +39349,10 @@ EOF
 #: last_checked: 2025-06-25 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-31 vvv
-#: osm_watch: way id="46907541" version="17"
+#: osm_watch: way id="46907541" version="18"
 #: osm_watch: way id="1116849053" version="4"
 	2::inwork 3980,2102 4064,2293 4209,2641 4220,2664
-#: osm_watch: way id="77098244" version="19"
+#: osm_watch: way id="77098244" version="20"
 	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
 #: next_check ^^^
 #: check_frequency ^^^
@@ -39934,7 +39936,8 @@ EOF
        type  => 'gesperrt',
        source_id => '237200773', # inaktiv
        data  => <<EOF,
-	2::inwork 13390,-20515 13412,-20513 13526,-20548
+# REMOVED ---	2::inwork 13390,-20515 13428,-20514
+	2::inwork 13428,-20514 13526,-20548
 EOF
      },
      { from  => undef, # 
@@ -41943,7 +41946,7 @@ EOF
 #: note: laut osm früher "Straße wird letztmalig vom 14.10. bis 11.11.2024 geöffnet, danach final gesperrt", jetzt "Soll nach Eröffnung der neuen B246 geschlossen werden, bleibt aber vorerst noch geöffnet"
 #: also_indoor: traffic (ex-G,ex-W,T,H)
 # REMOVED --- #: last_checked: 2024-09-14 --- #: check_frequency: 10d --- #: next_check: 2024-10-14
-# REMOVED ---	2::inwork 13526,-20548 13412,-20513 13390,-20515
+# REMOVED ---	2::inwork 13526,-20548 13428,-20514 13390,-20515
 	2::inwork 12836,-20360 12845,-20377 13095,-20435 13223,-20504 13271,-20531 13390,-20515
 EOF
      },
@@ -42143,7 +42146,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
-#: last_checked: 2025-07-03 (mapillary)
+#: last_checked: 2025-08-20
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 EOF
@@ -44996,9 +44999,9 @@ EOF
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-06-25 (mapillary) vvv
+#: last_checked: 2025-08-20 vvv
 #: check_frequency: 30d vvv
-#: osm_watch: way id="26158804" version="25"
+#: osm_watch: way id="26158804" version="26"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 # REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
 # REMOVED (hier mittlerweile offen) --- Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
@@ -45069,7 +45072,7 @@ EOF
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
-#: osm_watch: way id="5363433" version="27"
+#: osm_watch: way id="5363433" version="28"
 #: osm_watch[closed]: note 4442541 4
 # REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
 #: note: laut BA-Pressemitteilung auch für den Radverkehr frei
@@ -45077,7 +45080,7 @@ EOF
 Bäkestr.: Fahrbahn zwischen Zebrastreifen und Promenade gesperrt, nördlicher Bürgersteig frei	q2::inwork 4659,3065 4587,3097
 # REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
 # REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4618,3135 4692,3225
-#: osm_watch: way id="121176503" version="11"
+#: osm_watch: way id="121176503" version="12"
 #: note: laut BA-Pressemitteilung Umleitung via Eduard-Spranger-Promenade, aber diese ist für Radfahrer eigentlich nicht erlaubt?
 Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4274,2717
 # REMOVED (hier offen) --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4274,2717 4236,2678
@@ -46306,7 +46309,7 @@ EOF
 EOF
      },
      { from  => 1729461600, # 2024-10-21 00:00
-       until => undef, # 1740765216, # $isodate2epoch->("2025-02-28 23:59:59"), # 1735340400, # 2024-12-28 00:00
+       until => 1755694539, # undef, # 1740765216, # $isodate2epoch->("2025-02-28 23:59:59"), # 1735340400, # 2024-12-28 00:00
        text  => 'Grolmanstr.: Bauarbeiten zwischen Goethestr. und Pestalozzistr., Sperrung der Fahrbahn, voraussichtlich bis August 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
@@ -46314,11 +46317,7 @@ EOF
 #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T)
 #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
 #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025
-#: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-08-05 (traffic)
-# REMOVED --- #: check_frequency: 75d
-#: check_frequency: 7d
-#: next_check: 2025-08-31
+# REMOVED --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31
 	q3::inwork 4690,11369 4775,11203
 EOF
      },
@@ -46968,19 +46967,19 @@ EOF
      { from  => 1737970440, # 2025-01-27 10:34
        until => undef, # 1746568740, # 2025-05-06 23:59
 #      text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 10:34 bis 06.05.2025 23:59',
-       text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 08.09.2025',
+       text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 05.12.2025', # wird verlängert?
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
-#: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025)
-#: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025)
+#: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025)
+#: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
 #: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-07-03 (traffic)
 # REMOVED --- #: check_frequency: 21d (traffic)
-#: next_check: 2025-09-08 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-05 (VIZ-Verkehrsmeldung)
 	q4::inwork 2396,9427 2467,9425 2592,9419
 EOF
      },
@@ -47641,8 +47640,8 @@ EOF
        dont_check_date => 1,
 #      text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 10.04.2025 bis 23.06.2025',
 #      text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Birkbuschstr. und Brahmsstr., Fahrbahn gesperrt, vom 28.07.2025 bis 24.08.2025',
-       text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Birkbuschstr. und Hindenburgdamm, Fahrbahn gesperrt, evtl. ist der östliche Abschnitt bereits fertig, bis Anfang September 2025',
-#      text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Brahmsstr. und Hindenburgdamm, Fahrbahn gesperrt, vom 18.08.2025 bis Anfang September 2025',
+#      text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Birkbuschstr. und Hindenburgdamm, Fahrbahn gesperrt, evtl. ist der östliche Abschnitt bereits fertig, bis Anfang September 2025',
+       text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Brahmsstr. und Hindenburgdamm, Fahrbahn gesperrt, vom 18.08.2025 bis Anfang September 2025',
        type  => 'handicap',
        data  => <<'EOF',
 # erste Baumaßnahme (April 2025)
@@ -47671,7 +47670,7 @@ EOF
 #: note: unklar, ob der 1. BA bereits fertig geworden ist, die Verkehrsdienste sind da uneinheitlich
 #: priority: #A
 #: next_check: 2025-09-05 (sind die Bauarbeiten beendet? qualitaet_s-Eintrag für den 2. BA ändern?)
-Klingsorstr. (1. BA)	q4::inwork 5271,4547 5214,4445 5206,4432 5150,4345 5120,4318 5090,4291 5063,4266 4932,4152
+# REMOVED --- Klingsorstr. (1. BA)	q4::inwork 5271,4547 5214,4445 5206,4432 5150,4345 5120,4318 5090,4291 5063,4266 4932,4152
 Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,4042
 EOF
      },
@@ -48049,7 +48048,7 @@ EOF
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 2
+#: osm_watch: note 4734747 3
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
@@ -49142,14 +49141,14 @@ EOF
      },
      { from  => 1752514480, # 2025-07-14 19:34
        until => 1760716800, # 2025-10-17 18:00
-       text  => 'Goethestr.: Bauarbeiten zwischen Knesebeckstr. und Grolmanstr., evtl. sind auch Radfahrer von der Sperrung betroffen, bis 17.10.2025',
+       text  => 'Goethestr.: Bauarbeiten zwischen Knesebeckstr. und Grolmanstr., Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei, bis 17.10.2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: adac:2024889976 (bis 17.10.2025)
 #: source_id: adac:482307388 (bis voraussichtlich 17.10.2025)
 #: source_id: viz2021:13.32285,52.50879,14.07.2025,07:00 (bis 17.10.2025)
 #: also_indoor: traffic (H,B,T)
-	q4::inwork 4690,11369 4897,11354
+	q3::inwork 4690,11369 4897,11354
 EOF
      },
      { from  => 1752606169, # 2025-07-15 21:02
