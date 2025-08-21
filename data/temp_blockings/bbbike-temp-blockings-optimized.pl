@@ -3559,6 +3559,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: IM_022700 (inaktiv)
 #: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023) (inaktiv)
 #: source_id: viz2021:13.37565,52.53115,18.08.2025,06:00 (bis 27.08.2025)
+#: source_id: viz2021:13.37565,52.53115,21.08.2025,12:00 (bis 25.08.2025)
 	2::temp 8426,13909 8572,13671
 ',
          'from' => 1755468000,
@@ -5293,7 +5294,8 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        {
          'data' => '#: source_id: viz2021:13.306069,52.502061,01.01.2022,06:00 (mittlerweile inaktiv) (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
-#: source_id: adac:1917057020 (bis 11.10.2025)
+#: source_id: viz2021:13.30605,52.50146,15.07.2025,07:00 (bis 11.10.2025)
+#: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
 # REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
@@ -5795,8 +5797,8 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
-#: source_id: adac:1081908618 (Bahnhofstr., bis voraussichtlich 01.03.2026)
-#: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026)
+#: source_id: adac:1081908618 (Bahnhofstr., bis voraussichtlich 01.03.2026) (neue ID -> inaktiv)
+#: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026) (neue ID -> inaktiv)
 #: source_id: viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026)
 #: source_id: bvg2024:m76#HIM_FREETEXT_292859
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
@@ -6420,7 +6422,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
 #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025) (inaktiv)
-#: source_id: adac:1795606390 (bis voraussichtlich 06.10.2025)
+#: source_id: adac:1795606390 (bis voraussichtlich 06.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.499947,52.640906, (bis 06.10.2025)
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
 #	q3::inwork; 17101,26701 16532,26174
@@ -6538,7 +6540,7 @@ Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15
        {
          'data' => '#: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
-#: source_id: adac:1512175170 (bis 31.12.2025)
+#: source_id: adac:1512175170 (bis 31.12.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.302054,52.571778, (bis 31.12.2025)
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
@@ -6717,7 +6719,16 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.38639,52.5137,18.08.2023,05:00 (inaktiv)
+	2::temp 9207,11880 9195,11972
+',
+         'from' => 1755727200,
+         'id' => 3892,
+         'text' => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, evtl. sind auch Radfahrer betroffen vom 22.08.2025 05:00 bis 24.08.2025 22:00',
+         'type' => 'gesperrt',
+         'until' => 1756069200
+       },
        undef,
        undef,
        undef,
@@ -7370,10 +7381,11 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-08-05 vvv
+#: last_checked: 2025-08-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
+Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 9725,11445 9711,11543
 # REMOVED (mittlerweile geradlinigere Führung, nur etwas enger) --- Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
@@ -7472,8 +7484,8 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 # REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025) (inaktiv)
-#: source_id: adac:969740805 (bis 12.12.2025)
-#: source_id: adac:794067672 (bis 12.12.2025)
+#: source_id: adac:969740805 (bis 12.12.2025) (neue ID -> inaktiv)
+#: source_id: adac:794067672 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.31662,52.4344,17.06.2025,07:00 (bis 12.12.2025)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
@@ -7818,8 +7830,8 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
 #: source_id: viz2021:13.39343,52.564563,31.03.2025,11:00 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.39427,52.56503,01.04.2025,08:23 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025) (inaktiv)
-#: source_id: adac:310982460 (bis 01.12.2025)
-#: source_id: adac:555605122 (bis voraussichtlich 01.12.2025)
+#: source_id: adac:310982460 (bis 01.12.2025) (neue ID -> inaktiv)
+#: source_id: adac:555605122 (bis voraussichtlich 01.12.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.39427,52.56503,06.06.2025,09:00 (bis 01.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: note: existiert nun auch in gesperrt-orig bis Anfang Dez 2025
@@ -8170,7 +8182,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
-#: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025)
+#: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
@@ -8302,7 +8314,7 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
        {
          'data' => '#: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
 #: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
-#: source_id: adac:1389146504 (bis 31.07.2025) (bis 15.08.2025) (bis 30.09.2025)
+#: source_id: adac:1389146504 (bis 31.07.2025) (bis 15.08.2025) (bis 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.23143,52.50934, (bis 15.08.2025) (bis 30.09.2025)
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt, mittlerweile bis 15.08.2025
@@ -8722,7 +8734,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
        },
        {
          'data' => '#: source_id: viz2021:13.427246,52.523159,30.04.2025,04:30 (bis 04.07.2025) (inaktiv)
-#: source_id: adac:1977697072 (Erwähnung des Gehwegs, bis 11.07.2025) (bis 29.08.2025)
+#: source_id: adac:1977697072 (Erwähnung des Gehwegs, bis 11.07.2025) (bis 29.08.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
@@ -8829,7 +8841,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
          'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
-#: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025)
+#: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
 #: last_checked: 2025-08-17
 #: check_frequency: 30d
@@ -8910,7 +8922,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
 # REMOVED (Einbahnstraße offen für Radfahrer) --- Bouchéstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
 #: source_id: bvg2024:194#HIM_FREETEXT_286893
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
-#: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025)
+#: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
 #: last_checked: 2025-08-18 vvv
 #: check_frequency: 30d vvv
@@ -8934,7 +8946,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
        },
        {
          'data' => '#: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027)
-#: source_id: adac:68273372 (bis voraussichtlich 03.12.2027)
+#: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
 #: note: die textuelle Beschreibung (zwischen Mecklenburgische Straße und Paretzer Straße) und Kartendarstellung (nur ein paar Meter im Kurvenbereich) passen nicht zusammen
 	q4::inwork 4581,8048 4461,8105 4457,8270
 ',
@@ -8946,7 +8958,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
        },
        {
          'data' => '#: source_id: viz2021:13.317914,52.473875,02.06.2025,07:00 (bis 18.07.2025) (inaktiv)
-#: source_id: adac:820239518 (bis voraussichtlich 18.07.2025) (bis 24.10.2025)
+#: source_id: adac:820239518 (bis voraussichtlich 18.07.2025) (bis 24.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.317914,52.473875, (bis 24.10.2025)
 #: note: laut rbb bis 24.10.2025 verlängert
 	q4::inwork 4785,7438 4599,7474
@@ -8970,17 +8982,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
          'type' => 'handicap',
          'until' => 1757800740
        },
-       {
-         'data' => '#: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025)
-#: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025)
-	q4::inwork; 5053,8979 5189,8983
-',
-         'from' => 1748926800,
-         'id' => 4358,
-         'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, vom 04.06.2025 07:00 bis 21.08.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1755788400
-       },
+       undef,
        undef,
        undef,
        {
@@ -9034,7 +9036,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
-#: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025)
+#: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025)
 	q4::inwork 12627,19317 12457,19248
 ',
@@ -9065,7 +9067,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
 #: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
-#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025)
+#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025)
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: bei rbb bis 01.08.2025 verlängert, allerdings hier Kreuzung Kirschenallee
@@ -9126,7 +9128,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltixdnvkc327
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibr2s6zbouiqugi4bnwqkq2j6nrofbapxucvw5b6of5s47jagljc4@jpeg
-#: source_id: adac:66742626 (bis voraussichtlich 12.05.2026)
+#: source_id: adac:66742626 (bis voraussichtlich 12.05.2026) (neue ID -> inaktiv)
 #: source_id: viz2021:13.38017,52.51979,09.07.2025,07:00 (bis 12.05.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 1
@@ -9150,7 +9152,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-08-16 (traffic)
+#: last_checked: 2025-08-21
 #: check_frequency: 30d
 #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9162,7 +9164,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'until' => undef
        },
        {
-         'data' => '#: source_id: adac:879720956 (bis voraussichtlich 02.10.2025)
+         'data' => '#: source_id: adac:879720956 (bis voraussichtlich 02.10.2025) (neue ID -> inaktiv)
 #: note: bei rbb bis 02.10.2025
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025)
 #: also_indoor: traffic (T)
@@ -9174,17 +9176,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'type' => 'handicap',
          'until' => 1759420800
        },
-       {
-         'data' => '#: next_check_id: BELZIGER-2025
-#: osm_watch[closed]: note 4877718 4
-	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
-',
-         'from' => 1752184800,
-         'id' => 4385,
-         'text' => 'Belziger Str.: Bau- und Markierungsarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), Fahrbahn noch nicht offiziell für Radfahrer geöffnet, voraussichtlich bis zum 21. August 2025',
-         'type' => 'handicap',
-         'until' => 1755792000
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
@@ -9215,8 +9207,8 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'until' => 1759428000
        },
        {
-         'data' => '#: source_id: adac:2024889976 (bis 17.10.2025)
-#: source_id: adac:482307388 (bis voraussichtlich 17.10.2025)
+         'data' => '#: source_id: adac:2024889976 (bis 17.10.2025) (neue ID -> inaktiv)
+#: source_id: adac:482307388 (bis voraussichtlich 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.32285,52.50879,14.07.2025,07:00 (bis 17.10.2025)
 #: also_indoor: traffic (H,B,T)
 	q3::inwork 4690,11369 4897,11354
@@ -9229,7 +9221,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: next_check_id: THOMAS-2025
-#: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025)
+#: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
 #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
@@ -9288,7 +9280,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
        {
          'data' => '#: source_id: viz2021:13.484668,52.501156,28.04.2025,12:00 (bis 16.05.2025) (bis 13.06.2025) (inaktiv)
 #: source_id: viz2021:13.48532,52.501467,28.04.2025,12:00 (bis 20.06.2025) (bis 11.07.2025) (bis 27.06.2025) (bis 11.07.2025) (inaktiv)
-#: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025) (bis 17.10.2025)
+#: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025) (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.48067,52.49917,17.07.2025,07:00 (bis 15.08.2025) (inaktiv)
 #: source_id: viz2021:13.484668,52.501156, (bis 08.08.2025) (inaktiv)
 #: source_id: viz2021:13.48067,52.49917, (bis 17.10.2025)
@@ -9350,7 +9342,7 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
          'until' => undef
        },
        {
-         'data' => '#: source_id: adac:356158344 (bis 17.10.2025)
+         'data' => '#: source_id: adac:356158344 (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.254503,52.506746,21.07.2025,07:00 (bis 17.10.2025)
 	q4::inwork 368,11051 251,11039 37,11014
 Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
@@ -9395,7 +9387,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
        },
        {
          'data' => '#: source_id: viz2021:13.16143,52.42614,24.07.2025,07:00 (bis 06.11.2025)
-#: source_id: adac:903932502 (Wanderbaustelle, bis voraussichtlich 06.11.2025)
+#: source_id: adac:903932502 (Wanderbaustelle, bis voraussichtlich 06.11.2025) (neue ID -> inaktiv)
 #: note: "abschnittsweise"
 # REMOVED (möglicherweise ein viel kürzerer Abschnitt) ---	q4::inwork -5893,1969 -5836,2119 -5719,2323 -5653,2481
 	q4::inwork -5653,2481 -5663,2609 -5737,2746
@@ -9491,7 +9483,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: XXX Nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-20 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -9538,6 +9530,16 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'text' => 'Mauerweg, Karolinenhöhe - Hahneberg: Sanierung, mögliche Sperrung, bis Sommer 2026',
          'type' => 'gesperrt',
          'until' => 1789920000
+       },
+       {
+         'data' => '#: source_id: 257300196 (bis 19.09.2025)
+	2::inwork 45751,72662 45701,72652 45683,72646
+',
+         'from' => 1757224800,
+         'id' => 4414,
+         'text' => 'Görlsdorf: Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, vom 08.09.2025 08:00 Uhr bis 19.09.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1758294000
        }
      
 );

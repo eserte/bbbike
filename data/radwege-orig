@@ -2253,7 +2253,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur oder Busspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="26"
-#: last_checked: 2025-07-09
+#: last_checked: 2025-08-21
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 # REMOVED (bis etwa Herbst/Winter 2024) --- provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -8102,7 +8102,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: viz2021:13.49537,52.43164,25.06.2025,14:25 (bis 04.07.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.49374,52.43038,25.06.2025,14:23 (bis 04.07.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.49515,52.43173,25.06.2025,14:30 (bis 04.07.2025) (vorfristig inaktiv)
-#: source_id: adac:1539112752 (bis voraussichtlich 30.06.2026)
+#: source_id: adac:1539112752 (bis voraussichtlich 30.06.2026) (neue ID -> inaktiv)
 #: source_id: adac:1733244580 (inaktiv)
 #: source_id: adac:256162332 (inaktiv)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_289064 (kein Endedatum)
@@ -8112,8 +8112,8 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: bvg2024:m11#HIM_FREETEXT_293415 (Haltestellenverlegung, kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293425 (kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293424 (kein Endedatum)
-#: source_id: adac:875632473 (bis 30.06.2026) (!)
-#: source_id: adac:334221108 (bis 30.06.2026) (!)
+#: source_id: adac:875632473 (bis 30.06.2026) (!) (neue ID -> inaktiv)
+#: source_id: adac:334221108 (bis 30.06.2026) (!) (neue ID -> inaktiv)
 #: source_id: viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026)
 #: source_id: viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026)
 #: source_id: viz2021:13.49537,52.43164, (Ampelanlage außer Betrieb, kein Endedatum) (inaktiv)
@@ -8178,7 +8178,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-08-20
+#: last_checked: 2025-08-21
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490

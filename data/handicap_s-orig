@@ -22,7 +22,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-08-20
+#: last_checked: 2025-08-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -80,6 +80,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_20_1183_1234_online.pdf (Einziehung einer Grünanlage (nördlich dieser Stelle))
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/howoge-legt-grundstein-fuer-modernes-heinrich-hertz-gymnasium_a420359 (Eröffnung im Herbst 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-heinrich-hertz-gymnasium-am-ostbahnhof.1438/#post-25032
+#: by: https://entwicklungsstadt.de/neue-sechsfeld-sporthalle-entsteht-an-der-fredersdorfer-strasse/
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
@@ -494,7 +495,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-07-22
+#: last_checked: 2025-08-21
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979

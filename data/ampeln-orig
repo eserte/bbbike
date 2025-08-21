@@ -2903,10 +2903,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
-#: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
+#: next_check_id: BAB100-2022
+#: XXX wird vermutlich zur Eröffnung der A100 eingeschaltet
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
 #: last_checked: 2025-08-20
 #: check_frequency: 120d
+#: next_check: 2025-08-27 (rbb)
 	X0 14185,9509
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
 # 

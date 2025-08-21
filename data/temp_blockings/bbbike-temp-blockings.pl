@@ -22719,8 +22719,8 @@ EOF
        source_id => 'INKO_119210',
        data  => <<EOF,
 	2::inwork 14187,6555 14141,6623
-# REMOVED ---	2::inwork 14141,6623 14106,6663
-# REMOVED ---	2::inwork 14106,6663 14057,6734
+# REMOVED ---	2::inwork 14141,6623 14101,6640
+# REMOVED ---	2::inwork 14101,6640 14057,6734
 EOF
      },
      { from  => undef, # 
@@ -24568,6 +24568,7 @@ EOF
 #: source_id: IM_022700 (inaktiv)
 #: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023) (inaktiv)
 #: source_id: viz2021:13.37565,52.53115,18.08.2025,06:00 (bis 27.08.2025)
+#: source_id: viz2021:13.37565,52.53115,21.08.2025,12:00 (bis 25.08.2025)
 	2::temp 8426,13909 8572,13671
 EOF
      },
@@ -35656,7 +35657,8 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.306069,52.502061,01.01.2022,06:00 (mittlerweile inaktiv) (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
-#: source_id: adac:1917057020 (bis 11.10.2025)
+#: source_id: viz2021:13.30605,52.50146,15.07.2025,07:00 (bis 11.10.2025)
+#: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
 # REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
@@ -37819,8 +37821,8 @@ EOF
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
-#: source_id: adac:1081908618 (Bahnhofstr., bis voraussichtlich 01.03.2026)
-#: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026)
+#: source_id: adac:1081908618 (Bahnhofstr., bis voraussichtlich 01.03.2026) (neue ID -> inaktiv)
+#: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026) (neue ID -> inaktiv)
 #: source_id: viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026)
 #: source_id: bvg2024:m76#HIM_FREETEXT_292859
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
@@ -40378,7 +40380,7 @@ EOF
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
 #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025) (inaktiv)
-#: source_id: adac:1795606390 (bis voraussichtlich 06.10.2025)
+#: source_id: adac:1795606390 (bis voraussichtlich 06.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.499947,52.640906, (bis 06.10.2025)
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
 #	q3::inwork; 17101,26701 16532,26174
@@ -40808,7 +40810,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: U6-2022
 #: source_id: viz2021:13.301971,52.571657,21.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
-#: source_id: adac:1512175170 (bis 31.12.2025)
+#: source_id: adac:1512175170 (bis 31.12.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.302054,52.571778, (bis 31.12.2025)
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
@@ -41665,9 +41667,10 @@ EOF
 # REMOVED --- #: add_fragezeichen ^^^
 EOF
      },
-     { from  => 1692241200, # 2023-08-17 05:00
-       until => 1692561600, # 2023-08-20 22:00
-       text  => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, vom 18.08.2023 05:00 bis 20.08.2023 22:00',
+     { from  => $isodate2epoch->("2025-08-21 00:00:00"), # 1692241200, # 2023-08-17 05:00
+       until => $isodate2epoch->("2025-08-24 23:00:00"), # 1692561600, # 2023-08-20 22:00
+#      text  => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, vom 18.08.2023 05:00 bis 20.08.2023 22:00',
+       text  => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, evtl. sind auch Radfahrer betroffen vom 22.08.2025 05:00 bis 24.08.2025 22:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.38639,52.5137,18.08.2023,05:00 (inaktiv)
@@ -44798,10 +44801,11 @@ EOF
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-08-05 vvv
+#: last_checked: 2025-08-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
+Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 9725,11445 9711,11543
 # REMOVED (mittlerweile geradlinigere Führung, nur etwas enger) --- Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
@@ -45061,8 +45065,8 @@ EOF
 # REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025) (inaktiv)
-#: source_id: adac:969740805 (bis 12.12.2025)
-#: source_id: adac:794067672 (bis 12.12.2025)
+#: source_id: adac:969740805 (bis 12.12.2025) (neue ID -> inaktiv)
+#: source_id: adac:794067672 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.31662,52.4344,17.06.2025,07:00 (bis 12.12.2025)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
@@ -45430,12 +45434,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.altlandsberg.de/wirtschaft-stadtentwicklung/stadtentwicklung/aktuelle-massnahmen/baumassnahme-ortsverbindung-wegendorf-bucholz-alte-k6427/ (zunächst Ende November 2024) ("verlängert sich bis in das Frühjahr 2025")
-#: osm_watch: note 4383533 4
+#: osm_watch: note 4383533 6
 #: osm_watch: way id="37948631" version="9"
 #: also_indoor: traffic (ex-H,G,B,T,A,re-W)
-#: last_checked: 2025-06-19 (traffic)
-#: check_frequency: 10d (traffic + altlandsberg website)
-# REMOVED --- #: next_check: 2025-06-20
+# REMOVED (laut osm note offen) --- #: last_checked: 2025-06-19 (traffic) --- #: check_frequency: 10d (traffic + altlandsberg website) --- # REMOVED --- #: next_check: 2025-06-20
 	2::inwork 34460,22169 34901,21638 36198,20464
 EOF
      },
@@ -45946,8 +45948,8 @@ EOF
 #: source_id: viz2021:13.39343,52.564563,31.03.2025,11:00 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.39427,52.56503,01.04.2025,08:23 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025) (inaktiv)
-#: source_id: adac:310982460 (bis 01.12.2025)
-#: source_id: adac:555605122 (bis voraussichtlich 01.12.2025)
+#: source_id: adac:310982460 (bis 01.12.2025) (neue ID -> inaktiv)
+#: source_id: adac:555605122 (bis voraussichtlich 01.12.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.39427,52.56503,06.06.2025,09:00 (bis 01.12.2025)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: note: existiert nun auch in gesperrt-orig bis Anfang Dez 2025
@@ -46971,7 +46973,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
-#: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025)
+#: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
@@ -47206,7 +47208,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
 #: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
-#: source_id: adac:1389146504 (bis 31.07.2025) (bis 15.08.2025) (bis 30.09.2025)
+#: source_id: adac:1389146504 (bis 31.07.2025) (bis 15.08.2025) (bis 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.23143,52.50934, (bis 15.08.2025) (bis 30.09.2025)
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt, mittlerweile bis 15.08.2025
@@ -48044,7 +48046,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.427246,52.523159,30.04.2025,04:30 (bis 04.07.2025) (inaktiv)
-#: source_id: adac:1977697072 (Erwähnung des Gehwegs, bis 11.07.2025) (bis 29.08.2025)
+#: source_id: adac:1977697072 (Erwähnung des Gehwegs, bis 11.07.2025) (bis 29.08.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
@@ -48306,7 +48308,7 @@ EOF
 #: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
-#: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025)
+#: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
 #: last_checked: 2025-08-17
 #: check_frequency: 30d
@@ -48568,7 +48570,7 @@ EOF
 # REMOVED (Einbahnstraße offen für Radfahrer) --- Bouchéstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
 #: source_id: bvg2024:194#HIM_FREETEXT_286893
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
-#: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025)
+#: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
 #: last_checked: 2025-08-18 vvv
 #: check_frequency: 30d vvv
@@ -48591,7 +48593,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027)
-#: source_id: adac:68273372 (bis voraussichtlich 03.12.2027)
+#: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
 #: note: die textuelle Beschreibung (zwischen Mecklenburgische Straße und Paretzer Straße) und Kartendarstellung (nur ein paar Meter im Kurvenbereich) passen nicht zusammen
 	q4::inwork 4581,8048 4461,8105 4457,8270
 EOF
@@ -48603,7 +48605,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.317914,52.473875,02.06.2025,07:00 (bis 18.07.2025) (inaktiv)
-#: source_id: adac:820239518 (bis voraussichtlich 18.07.2025) (bis 24.10.2025)
+#: source_id: adac:820239518 (bis voraussichtlich 18.07.2025) (bis 24.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.317914,52.473875, (bis 24.10.2025)
 #: note: laut rbb bis 24.10.2025 verlängert
 	q4::inwork 4785,7438 4599,7474
@@ -48648,8 +48650,8 @@ EOF
        text  => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, vom 04.06.2025 07:00 bis 21.08.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025)
-#: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025)
+#: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
+#: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
 	q4::inwork; 5053,8979 5189,8983
 EOF
      },
@@ -48787,7 +48789,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
-#: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025)
+#: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025)
 	q4::inwork 12627,19317 12457,19248
 EOF
@@ -48948,7 +48950,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
 #: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
-#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025)
+#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025)
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: bei rbb bis 01.08.2025 verlängert, allerdings hier Kreuzung Kirschenallee
@@ -49054,7 +49056,7 @@ EOF
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltixdnvkc327
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibr2s6zbouiqugi4bnwqkq2j6nrofbapxucvw5b6of5s47jagljc4@jpeg
-#: source_id: adac:66742626 (bis voraussichtlich 12.05.2026)
+#: source_id: adac:66742626 (bis voraussichtlich 12.05.2026) (neue ID -> inaktiv)
 #: source_id: viz2021:13.38017,52.51979,09.07.2025,07:00 (bis 12.05.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 1
@@ -49077,7 +49079,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-08-16 (traffic)
+#: last_checked: 2025-08-21
 #: check_frequency: 30d
 #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -49088,7 +49090,7 @@ EOF
        text  => 'Schaperstr.: Bauarbeiten, von Nürnberger Str. Richtung Joachimsthaler Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 02.10.2025',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: adac:879720956 (bis voraussichtlich 02.10.2025)
+#: source_id: adac:879720956 (bis voraussichtlich 02.10.2025) (neue ID -> inaktiv)
 #: note: bei rbb bis 02.10.2025
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025)
 #: also_indoor: traffic (T)
@@ -49144,8 +49146,8 @@ EOF
        text  => 'Goethestr.: Bauarbeiten zwischen Knesebeckstr. und Grolmanstr., Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei, bis 17.10.2025',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: adac:2024889976 (bis 17.10.2025)
-#: source_id: adac:482307388 (bis voraussichtlich 17.10.2025)
+#: source_id: adac:2024889976 (bis 17.10.2025) (neue ID -> inaktiv)
+#: source_id: adac:482307388 (bis voraussichtlich 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.32285,52.50879,14.07.2025,07:00 (bis 17.10.2025)
 #: also_indoor: traffic (H,B,T)
 	q3::inwork 4690,11369 4897,11354
@@ -49158,7 +49160,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: THOMAS-2025
-#: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025)
+#: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
 #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
@@ -49222,7 +49224,7 @@ EOF
        data  => <<'EOF',
 #: source_id: viz2021:13.484668,52.501156,28.04.2025,12:00 (bis 16.05.2025) (bis 13.06.2025) (inaktiv)
 #: source_id: viz2021:13.48532,52.501467,28.04.2025,12:00 (bis 20.06.2025) (bis 11.07.2025) (bis 27.06.2025) (bis 11.07.2025) (inaktiv)
-#: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025) (bis 17.10.2025)
+#: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025) (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.48067,52.49917,17.07.2025,07:00 (bis 15.08.2025) (inaktiv)
 #: source_id: viz2021:13.484668,52.501156, (bis 08.08.2025) (inaktiv)
 #: source_id: viz2021:13.48067,52.49917, (bis 17.10.2025)
@@ -49269,7 +49271,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: HEINRICHHEINE-2025
-#: source_id: adac:971528950
+#: source_id: adac:971528950 (neue ID -> inaktiv)
 #: source_id[inactive]: bvg2024:n8#HIM_FREETEXT_293620
 #: source_id: viz2021:13.41414,52.50801, (bis 22.08.2025) (bis 01.09.2025)
 #: also_indoor: traffic (T,G,A)
@@ -49306,7 +49308,7 @@ EOF
        text  => 'Lyckallee: zwischen Teufelsseestr. und Ortelsburger Allee igesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17.10.2025',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: adac:356158344 (bis 17.10.2025)
+#: source_id: adac:356158344 (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.254503,52.506746,21.07.2025,07:00 (bis 17.10.2025)
 	q4::inwork 368,11051 251,11039 37,11014
 Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
@@ -49348,7 +49350,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.16143,52.42614,24.07.2025,07:00 (bis 06.11.2025)
-#: source_id: adac:903932502 (Wanderbaustelle, bis voraussichtlich 06.11.2025)
+#: source_id: adac:903932502 (Wanderbaustelle, bis voraussichtlich 06.11.2025) (neue ID -> inaktiv)
 #: note: "abschnittsweise"
 # REMOVED (möglicherweise ein viel kürzerer Abschnitt) ---	q4::inwork -5893,1969 -5836,2119 -5719,2323 -5653,2481
 	q4::inwork -5653,2481 -5663,2609 -5737,2746
@@ -49439,7 +49441,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: XXX Nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-20 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -49477,6 +49479,15 @@ EOF
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
 #: next_check: 2026-09-01
 Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,11458 -6081,11508 -6174,11571 -6397,11664 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
+EOF
+     },
+     { from  => 1757224800, # 2025-09-07 08:00
+       until => 1758294000, # 2025-09-19 17:00
+       text  => 'Görlsdorf: Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, vom 08.09.2025 08:00 Uhr bis 19.09.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: 257300196 (bis 19.09.2025)
+	2::inwork 45751,72662 45701,72652 45683,72646
 EOF
      },
     );
