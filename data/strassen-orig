@@ -259,45 +259,14 @@ Gertrud-Kolmar-Str.	N 8837,11676 8825,11773 8813,11825 8783,11959
 Cora-Berliner-Str.	N 8783,11959 8737,12098
 An der Kolonnade	N 8825,11773 8969,11814
 (Wilhelmstr.)	N 8969,11814 9042,11839
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_20_1745_1804_online.pdf (Wirksamkeit zum 1.10.2021)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10717 (Frage)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-28464.pdf (Widersprüche)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11012 (Frage)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11193 (Gebühren für Widerspruchsbescheide)
-#: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
-#: by: https://berliner-abendblatt.de/berlin-news/gericht-urteilt-ueber-umbenennung-der-mohrenstrasse-id226365
-#: by: https://berliner-abendblatt.de/berlin-news/geplante-umbenennung-der-mohrenstrasse-zieht-sich-weiter-hin-id231791
-#: by: https://www.tagesspiegel.de/berlin/bezirke/fast-vier-jahre-nach-dem-beschluss-umbenennung-der-mohrenstrasse-in-berlin-mitte-verzogert-sich-weiter-11863142.html
-#: by: https://berliner-abendblatt.de/berlin-news/umbenennung-mohrenstrasse-weiter-offen-warten-aufs-gericht-id257025
-#: by: https://entwicklungsstadt.de/mohrenstrasse-aktivisten-tauschen-schilder-aus-umbenennung-noch-nicht-rechtskraeftig/
-#: by: https://www.rbb24.de/panorama/beitrag/2025/07/berlin-mohrenstrasse-umbenennung-bezirk-mitte-rechtskraeftig.html
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1579051.php
-#: by: https://www.tagesspiegel.de/berlin/nach-langjahrigem-rechtsstreit-berliner-mohrenstrasse-kann-umbenannt-werden-13994030.html
-#: by: https://entwicklungsstadt.de/berlin-mitte-mohrenstrasse-wird-rechtskraeftig-zur-anton-wilhelm-amo-strasse/
-#: by: https://www.morgenpost.de/bezirke/mitte/article409468898/mohrenstrasse-streit-um-umbenennung-gericht-entscheidet.html
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_30_1961_2044_online.pdf
-#: by: https://www.t-online.de/region/berlin/id_100824980/berlin-mohrenstrasse-wird-am-23-august-offiziell-umbenannt.html (Umbenennung am 23.08.2025)
-#: by: https://www.rbb24.de/panorama/beitrag/2025/07/berlin-straen-umbenennung-mohrenstraein-anton-wilhelm-arno-strasse-23-august.html (U-Bahnhof wird auch umbenannt, noch kein Termin)
-#: by: https://www.tagesspiegel.de/berlin/nach-gerichtsentscheidung-berliner-mohrenstrasse-wird-am-23-august-umbenannt-14044574.html
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1585975.php
-#: by: https://entwicklungsstadt.de/mohrenstrasse-umbenennung-nach-rechtsstreit-final-beschlossen/
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_32_2089_2152_online.pdf (Umbenennung)
-#: by: https://entwicklungsstadt.de/neue-strassenschilder-mohrenstrasse-wird-offiziell-zur-anton-wilhelm-amo-strasse/
-#: osm_watch: note 4168370 5
-#: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str."; außerdem wird der U-Bahnhof umbenannt (aber wann? -> provisorisch auch am 23.8.2025, komplett zum Fahrplanwechsel) vvv
-#: priority: #A vvv
-#: last_checked: 2025-08-04 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2025-08-23 vvv
-#: osm_watch: way id="47755711" version="27"
-Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
-#: osm_watch: way id="1110751835" version="12"
-(Mohrenstr.)	N 9042,11839 9075,11756
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: XXX ^^^
+# 
+#: historical_note: im Amtsblatt 20/2021 bekanntgegeben mit Wirksamkeit zum 01.10.2021, Verzögerung wegen Widersprüchen/Klagen, Schilder hingen bereits am 22.08.2025 (spätestens), offizielle Umbenennung am 23.08.2025
+#: oldname: -20250823: Mohrenstr.
+Anton-Wilhelm-Amo-Str.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
+#: oldname: -20250823: (Mohrenstr.)
+#: ignore_oldname_file: yes
+(Anton-Wilhelm-Amo-Str.)	N 9042,11839 9075,11756
+# 
 Hausvogteiplatz	N 9820,11951 9863,11938 9878,11857
 Hausvogteiplatz	N 9878,11857 9925,11947
 Hausvogteiplatz [Taubenstr. - Niederwallstr.]	N 9863,11938 9925,11947

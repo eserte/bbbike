@@ -321,6 +321,10 @@ Rudolfplatz	F:P 14011,10812 13896,10851 13856,10864 13886,10939 14026,10869
 Traveplatz	F:P 14946,11697 14858,11744 14798,11777 14802,11784 14836,11842 14901,11808 14986,11760
 Kurt-Ritter-Sportplatz	F:Sport 14935,11597 14890,11512 15016,11431 15059,11514
 Wismarplatz	F:P 14513,11657 14550,11732 14475,11778 14416,11815 14395,11753 14461,11738
+#: alias: Grünanlage Wolffring
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_35_2273_2316_online.pdf (Benennung)
+#: XXX Benennung in Elisabeth-Schumacher-Park
+#: next_check: 2025-09-18
 Parkring Tempelhofer Feld	F:P 8969,8278 8807,8353 8720,8373 8670,8370 8590,8344 8527,8293 8561,8252 8666,8305 8776,8285 8861,8242 8941,8186
 Parkring Tempelhofer Feld	F:P 8527,8293 8482,8227 8461,8084 8519,8088 8536,8192 8561,8252
 Parkring Tempelhofer Feld	F:P 8464,7938 8466,7918 8512,7757 8553,7795 8527,7939
@@ -1594,6 +1598,10 @@ Grünanlage Innsbrucker Platz	F:P 6293,7875 6306,7864 6431,7883 6487,7916 6465,7
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_23_1469_1520_online.pdf ("VVN-Denkmal")
 #: note: bei GoogleMaps "Wilhelmsruher Schmuckplatz"
 	F:P 7790,20132 7747,20151 7787,20239 7832,20219 7790,20132
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_35_2273_2316_online.pdf (Benennung)
+#: XXX neuer Name: Elfriede-Hengstenberg-Platz
+#: last_checked: 2025-08-22 (Amtsblatt)
+	F:P -548,3467 -506,3434 -478,3509 -548,3467
 #############################################################################
 # Plätze (experimentell)
 # XXX_prog: es sollte unterschieden werden zwischen Flächen, die einfach

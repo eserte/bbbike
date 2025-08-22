@@ -551,7 +551,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-08-04 vvv
+#: last_checked: 2025-08-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -2301,7 +2301,7 @@ asphaltierter Radweg	RW1; 11226,12945 11141,12806
 # REMOVED #: last_checked: 2016-08-30 --- #: next_check: 2016-09-02 --- #: XXX provisorischer Radstreifen, aber mittlerweile Richtung Westen (früher vor den Bauarbeiten war es Richtung Osten), evtl. wird später der alte Zustand wieder hergestellt: RW3;RW0 --- #: XXX mittlerweile wird frisch markiert, Gegenrichtung ist noch unklar --- #: source_id: 2147340369
 	RW3;RW3 8740,11524 8747,11525 8834,11536 9058,11564
 	RW3; 9058,11564 9268,11590
-#: note: kein Radweg, allerdings kann man die parallel führende Parkplatzstraße benutzen
+#: note: man kann die parallel führende Parkplatzstraße benutzen; außerdem gibt es einen versteckten Verbundsteinpflasterradweg ohne Anschluss am Anfang und Ende
 	RW0; 9268,11590 9058,11564
 Verbundsteinpflaster	RW1;RW1 9935,11067 10103,10989
 Gehweg für Radfahrer frei	RW1; 15261,10738 15307,10701 15372,10655 15404,10633 15639,10469
@@ -8178,7 +8178,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-08-21
+#: last_checked: 2025-08-22
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490

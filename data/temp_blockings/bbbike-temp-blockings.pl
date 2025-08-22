@@ -24560,14 +24560,17 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-08-18 00:00:00"), # $isodate2epoch->("2023-08-16 14:00:00"), # 1534967761, # 1409202000, # 2014-08-28 07:00
-       until => $isodate2epoch->("2025-08-27 12:00:00"), # $isodate2epoch->("2023-08-21 12:00:00"), # $isodate2epoch->("2018-08-27 12:00:00"), # 1409569200, # 2014-09-01 13:00
-       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 18. August 2025 06 Uhr bis 27. August 2025 12 Uhr',
+       until => $isodate2epoch->("2025-08-25 12:00:00"), # $isodate2epoch->("2023-08-21 12:00:00"), # $isodate2epoch->("2018-08-27 12:00:00"), # 1409569200, # 2014-09-01 13:00
+       periodic => 1,
+       recurrences => [['yearly', days => 17, months => 8]],
+       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 18. August 2025 06 Uhr bis 25. August 2025 12 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: TAGDEROFFENENTUER-BUNDESREGIERUNG-RECURRING
 #: by: https://viz.berlin.de/2023/08/verkehrsvorschau-170823/
 #: source_id: IM_022700 (inaktiv)
 #: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023) (inaktiv)
-#: source_id: viz2021:13.37565,52.53115,18.08.2025,06:00 (bis 27.08.2025)
+#: source_id: viz2021:13.37565,52.53115,18.08.2025,06:00 (bis 27.08.2025) (inaktiv)
 #: source_id: viz2021:13.37565,52.53115,21.08.2025,12:00 (bis 25.08.2025)
 	2::temp 8426,13909 8572,13671
 EOF
@@ -29025,7 +29028,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-08-04
+#: last_checked: 2025-08-22
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -41669,11 +41672,16 @@ EOF
      },
      { from  => $isodate2epoch->("2025-08-21 00:00:00"), # 1692241200, # 2023-08-17 05:00
        until => $isodate2epoch->("2025-08-24 23:00:00"), # 1692561600, # 2023-08-20 22:00
+       periodic => 1,
+       recurrences => [['yearly', days => 18, months => 8]],
 #      text  => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, vom 18.08.2023 05:00 bis 20.08.2023 22:00',
-       text  => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, evtl. sind auch Radfahrer betroffen vom 22.08.2025 05:00 bis 24.08.2025 22:00',
+       text  => 'Glinkastr.: Veranstaltung, Fahrbahn zwischen Jägerstr. und Taubenstr. gesperrt, vom 22.08.2025 05:00 bis 24.08.2025 22:00',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: TAGDEROFFENENTUER-BUNDESREGIERUNG-RECURRING
 #: source_id: viz2021:13.38639,52.5137,18.08.2023,05:00 (inaktiv)
+#: source_id: viz2021:13.38651,52.51281,22.08.2025,05:00 (bis 24.08.2025)
+#: note: 2025 gab's eine Umleitung für Radfahrer via Taubenstr. - Mauerstr.
 	2::temp 9207,11880 9195,11972
 EOF
      },
@@ -43139,7 +43147,7 @@ EOF
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-07-25
+#: last_checked: 2025-08-18 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -44801,7 +44809,7 @@ EOF
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-08-21 vvv
+#: last_checked: 2025-08-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -49315,13 +49323,13 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 EOF
      },
      { from  => $isodate2epoch->("2025-07-25 00:00:00"), # 1753567200, # 2025-07-27 00:00
-       until => 1755899999, # 2025-08-22 23:59
+       until => 1755887747, # 1755899999, # 2025-08-22 23:59
 #      text  => 'Stahnsdorf - Potsdam: Sanierung, Fahrbahn und Radweg gesperrt, 28. Juli 2025 bis 22. August 2025',
        text  => 'Stahnsdorf - Potsdam: Sanierung, Fahrbahn und Radweg gesperrt, bis 22. August 2025',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
-#: source_id: 256900960 (25.07.2025 bis 22.08.2025)
+#: source_id: 256900960 (25.07.2025 bis 22.08.2025) (inaktiv)
 	2::inwork -6696,-3174 -6553,-3235 -6277,-3348 -5788,-3583 -5662,-3583 -5463,-3467
 EOF
      },
@@ -49449,11 +49457,12 @@ EOF
      },
      { from  => 1754456400, # 2025-08-06 07:00
        until => 1757023140, # 2025-09-04 23:59
-       text  => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., Sperrung, evtl. sind auch Radfahrer betroffen, Baustelle, vom 07.08.2025 bis 04.09.2025',
+       text  => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., ein kurzes Stück der Fahrbahn ist gesperrt, vom 07.08.2025 bis 04.09.2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025)
-	q4::inwork 10066,10071 9837,10117
+#: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
+	q3::inwork 10066,10071 9837,10117
 EOF
      },
      { from  => 1755406800, # 2025-08-17 07:00
@@ -49488,6 +49497,70 @@ EOF
        data  => <<'EOF',
 #: source_id: 257300196 (bis 19.09.2025)
 	2::inwork 45751,72662 45701,72652 45683,72646
+EOF
+     },
+     { from  => 1755727200, # 2025-08-21 00:00
+       until => 1756072800, # 2025-08-25 00:00
+       periodic => 1,
+       recurrences => [['yearly', days => 18, months => 8]],
+       text  => 'Anton-Wilhelm-Amo-Str. - Wilhelmstr.: Veranstaltung, Fahrbahn gesperrt, voraussichtlich bis zum 24.08.2025 abends',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: next_check_id: TAGDEROFFENENTUER-BUNDESREGIERUNG-RECURRING
+	2::temp 8969,11814 9042,11839 9075,11756
+EOF
+     },
+     { from  => 1755666000, # 2025-08-20 07:00
+       until => 1757973540, # 2025-09-15 23:59
+       text  => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, Bauarbeiten, vom 21.08.2025 07:00 bis 15.09.2025 23:59',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: BLUECHER-2025
+#: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025)
+#: last_checked: 2025-08-22 vvv
+Blücherstr. Richtung Baerwaldstr.: Gehweg für Radfahrer frei	q3::inwork; 10429,9514 10306,9640
+Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,9640 10429,9514
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1755881434, # 2025-08-22 18:50
+       until => 1777586400, # 2026-05-01 00:00
+       text  => 'Rotherstr., Lehmbruckstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis April 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G[zuviel],T[zuwenig])
+#: last_checked: 2025-08-22
+#: check_frequency: 60d
+#: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
+	q4::inwork 13856,10864 13755,10896 13795,10995
+EOF
+     },
+     { from  => 1755406800, # 2025-08-17 07:00
+       until => 1756479600, # 2025-08-29 17:00
+       text  => 'Helen-Ernst-Str.: Bauarbeiten zwischen Tamara-Danz-Str. und Hedwig-Wachenheim-Str., Sperrung, vom 18.08.2025 07:00 bis 29.08.2025 17:00',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LMS-BR:380362/72 viz2021:13.449642,52.506012,18.08.2025,07:00 (bis 29.08.2025)
+	2::inwork 13537,11186 13422,11236
+EOF
+     },
+     { from  => 1756015200, # 2025-08-24 08:00
+       until => 1757948400, # 2025-09-15 17:00
+       text  => 'Waltersdorf - Berlin: Deckenerneuerung des Rad- und Gehwegs, Sperrung, vom 25.08.2025 08:00 Uhr bis 15.09.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/222-W/25/094 (bis 15.09.2025)
+	2::inwork 22001,-1632 21861,-2154 21696,-2925 21722,-3421 21687,-3601 21607,-3739
+EOF
+     },
+     { from  => 1756677600, # 2025-09-01 00:00
+       until => 1757023200, # 2025-09-05 00:00
+       text  => 'Personentunnel am S-Bahnhof Wollankstraße: zeitweise Sperrung vom 2.9.2025 bis 4.9.2025 ',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250822
+	2::inwork 9383,17757 9434,17823
 EOF
      },
     );
