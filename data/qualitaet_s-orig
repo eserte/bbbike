@@ -2889,7 +2889,14 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): feiner Kies, relativ glatt	Q1 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
 (Am Städtischen Zentralfriedhof): asphaltiert	Q0 17790,12255 17764,12238 17540,12222
 # REMOVED (weitgehend fertiggestellt, nur ein paar Meter an den Anschlüssen fehlen noch) --- #: XXX wird hier auch asphaltiert werden? --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php ("Vorplatz Zentralfriedhof, Asphaltierung Fahrradspur", "Planung") --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.842152.php ("bis Mitte November 2019") --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bezirksamt-laesst-am-vorplatz-des-zentralfriedhofs-spuren-fuer-radler-bauen_a236194 (bis Mitte November 2019) --- #: osm_watch: way id="70668204" version="9" --- #: last_checked: 2019-11-16 (fast fertig) --- #: check_frequency: 7d
-(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240 17471,12243
+#: by: https://www.nachhaltige-erneuerung.berlin.de/frankfurter-allee-nord/umgestaltung-vorplatz-zentralfriedhof-friedrichsfelde (Realisierung bis 2025/2026)
+#: osm_watch: note 4294376 4
+#: osm_watch: way id="1025072174" version="3"
+#: last_checked: 2025-08-23
+#: check_frequency: 60d
+#: next_check: 2025-12-19 (Halteverbotschilder)
+#: XXX wiederherstellen: (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240 17471,12243
+(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster (Asphaltstreifen wegen Bauarbeiten nicht befahrbar)	Q2 17540,12222 17485,12240 17471,12243
 Gudrunstr.: Asphalt	Q0 17471,12243 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
 # REMOVED (neu asphaltiert) --- #: XXX eventuell wurde hier neu asphaltiert, prüfen! --- Marzahner Chaussee (bis zur Kurve): mäßiger Asphalt	Q1; 19173,13478 19194,13272
 (Eichhörnchensteig - Wildpfad): enger Waldpfad	Q2 1449,7519 1485,7651 1509,7700
@@ -6695,7 +6702,7 @@ Woglindestr.: Beton	Q1 8476,19603 8516,19535
 Straße 90: unbefestigte Straße	Q2 8573,19766 8642,19808
 Frickastr.: unbefestigte Straße	Q2 8642,19808 8560,19942
 #: add_fragezeichen: Ist hier auch asphaltiert?
-#: osm_watch: way id="879921851" version="6"
+#: osm_watch: way id="879921851" version="7"
 #: last_checked: 2024-07-13
 #: check_frequency: 180d
 Neuer Steg: unbefestigter Weg	Q2 8277,19210 8209,19107
@@ -11659,7 +11666,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2025-08-03 vvv
+#: last_checked: 2025-08-23 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -13062,7 +13069,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
 #: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2025-04-13
+#: last_checked: 2025-08-23
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860

@@ -29507,7 +29507,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-08-17 vvv
+#: last_checked: 2025-08-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -32048,6 +32048,7 @@ EOF
 #: note: laut Bauarbeiter dauern die Bauarbeiten 6 (!) Monate (ab Juni 2025)
 #: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
 #: osm_watch: note 4813149 1
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
@@ -37965,7 +37966,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-08-02
+#: last_checked: 2025-08-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -39857,7 +39858,7 @@ EOF
 #: by: https://www.schwedt.eu/de/31978 (Verlängerung bis 1.7.2023, allerdings nicht täglich)
 #: by: https://www.schwedt.eu/de/31541
 #: note: neue Sperrung (2025)
-#: source_id: 257310151 (bis 23.08.2025)
+#: source_id: 257310151 (bis 23.08.2025) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (ex-G,ex-W) --- #: last_checked: 2023-06-02 (traffic) --- #: check_frequency: 14d --- #: next_check: 2023-07-01
 	2::inwork 56280,83440 56301,83419 56317,83407
 EOF
@@ -40441,7 +40442,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1755944559, # undef, # XXX
 #      text  => 'Am Alten Lokschuppen: Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, auch für Fußgänger und Radfahrer, Ende der Sperrung unbekannt',
 #      text  => 'Hauffstr.: Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, auch für Fußgänger und Radfahrer, geplant bis Juni 2025',
        text  => 'Hauffstr.: offiziell Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, praktisch kann man problemlos durchfahren; Bauarbeiten waren bis Juni 2025 geplant',
@@ -40451,9 +40452,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
 #: note: Hauffstr.: Stand Mitte Mai 2025: Durchfahrt an einem Samstag (außerhalb der Arbeitszeiten?) problemlos möglich, aber offiziell nur der Durchgang zum Sport/Spielplatz möglich
 #: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
-#: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-08-02
-#: check_frequency: 21d
+# REMOVED --- #: add_fragezeichen: Ist der Weg noch immer gesperrt? --- #: last_checked: 2025-08-23 (keine Verbotsschilder mehr am südlichen Ende) --- #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-06-30 (DB-Mail)
 # REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
 #: osm_watch: way id="1025826786" version="15"
@@ -43269,7 +43268,7 @@ EOF
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-08-19 (bahninfo-forum) vvv
+#: last_checked: 2025-08-21 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
@@ -43504,7 +43503,7 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-07-27 (osm)
+#: last_checked: 2025-07-29 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -45588,7 +45587,7 @@ EOF
 #: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-07-30
+#: last_checked: 2025-08-23
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -47317,7 +47316,7 @@ EOF
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-T,H)
+#: also_indoor: traffic (ex-T,ex-H)
 #: last_checked: 2025-08-16
 #: check_frequency: 10d
 #: next_check: 2025-09-05 (Halteverbotsschilder)
@@ -48343,7 +48342,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (none)
-#: last_checked: 2025-06-14
+#: last_checked: 2025-08-23
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 	q4::inwork 16915,11634 16957,11726
@@ -48785,7 +48784,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-08-16 (traffic)
+#: last_checked: 2025-08-23 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 EOF
@@ -49339,6 +49338,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
 #: source_id: LS/222-W/25/088 (bis 27.08.2025)
 	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 EOF
@@ -49390,12 +49390,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Landschaftspark Herzberge: N-S-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
+       text  => 'Landschaftspark Herzberge: Nord-Süd-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-08-03
+#: last_checked: 2025-08-23
 #: check_frequency: 21d
 	2::inwork 17498,13015 17507,12781
 EOF
@@ -49529,6 +49529,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
 #: last_checked: 2025-08-22
 #: check_frequency: 60d
@@ -49550,6 +49551,7 @@ EOF
        text  => 'Waltersdorf - Berlin: Deckenerneuerung des Rad- und Gehwegs, Sperrung, vom 25.08.2025 08:00 Uhr bis 15.09.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~19-08-2025-rw-an-l400-waltersdorf-berlin
 #: source_id: LS/222-W/25/094 (bis 15.09.2025)
 	2::inwork 22001,-1632 21861,-2154 21696,-2925 21722,-3421 21687,-3601 21607,-3739
 EOF
@@ -49561,6 +49563,18 @@ EOF
        data  => <<'EOF',
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250822
 	2::inwork 9383,17757 9434,17823
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Dietlindestr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (T[ungenau])
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: gesperrter Bereich etwa 150m lang
+#: last_checked: 2025-08-23
+	q4::inwork 17088,12506 17056,12304
 EOF
      },
     );

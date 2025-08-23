@@ -37,7 +37,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-08-08 (osm) vvv
+#: last_checked: 2025-08-23 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="7"
@@ -1013,7 +1013,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich; mittlerweile (Mitte Mai 2025) ist ein Abschnitt der Archenholdstr. gesperrt, Halteverbotsschilder bis 27.5.2025
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-07-12
+#: last_checked: 2025-08-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-27 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-06-30 (Baustellenschild)
@@ -1024,8 +1024,8 @@ Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-08-17
-#: check_frequency: 30d
+#: last_checked: 2025-08-23
+#: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
 # REMOVED --- #: next_check: 2025-06-30 (infravelo)
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
@@ -1047,7 +1047,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-23
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1191,7 +1191,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: osm_watch: way id="804682311" version="4"
 #: osm_watch: note 4734732 6
 #: priority: #C
-#: last_checked: 2025-08-03
+#: last_checked: 2025-08-21 (architektur-urbanistik)
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 60d
 Storkower Str. [Gewerbegebiet]: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg passierbar	q4::inwork 13736,14192 13636,14130

@@ -4289,7 +4289,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-08-17 vvv
+#: last_checked: 2025-08-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4622,6 +4622,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: laut Bauarbeiter dauern die Bauarbeiten 6 (!) Monate (ab Juni 2025)
 #: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
 #: osm_watch: note 4813149 1
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
@@ -5891,7 +5892,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-08-02
+#: last_checked: 2025-08-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6311,24 +6312,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: alte Sperrung (2023)
-#: by: https://www.moz.de/lokales/schwedt/strassensperrung-passow-bahnhof-in-passow-kaum-noch-erreichbar-_-anwohner-ohne-auto-haben-das-nachsehen-69248727.html
-#: by: https://www.nordkurier.de/regional/uckermark/kilometerlanger-umweg-in-passow-1437197
-#: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//ausbau-der-bahnstrecke-angermuende-%E2%80%93-grenze/31541
-#: by: https://www.schwedt.eu/de/31978 (Verlängerung bis 1.7.2023, allerdings nicht täglich)
-#: by: https://www.schwedt.eu/de/31541
-#: note: neue Sperrung (2025)
-#: source_id: 257310151 (bis 23.08.2025)
-# REMOVED --- #: also_indoor: traffic (ex-G,ex-W) --- #: last_checked: 2023-06-02 (traffic) --- #: check_frequency: 14d --- #: next_check: 2023-07-01
-	2::inwork 56280,83440 56301,83419 56317,83407
-',
-         'from' => 1755640800,
-         'id' => 3760,
-         'text' => 'Passow: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 21.08.2025 08:00 bis 23.08.2025 17:00',
-         'type' => 'gesperrt',
-         'until' => 1755961200
-       },
+       undef,
        undef,
        undef,
        {
@@ -6450,25 +6434,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue (hier: bis September 2024) (mittlerweile bis Juni 2025)
-#: note: Hauffstr.: Stand Mitte Mai 2025: Durchfahrt an einem Samstag (außerhalb der Arbeitszeiten?) problemlos möglich, aber offiziell nur der Durchgang zum Sport/Spielplatz möglich
-#: note: laut Mail von der DB dauern die Bauarbeiten und damit die Sperrung in der Hauffstr. bis Juni 2025 an
-#: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-08-02
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-06-30 (DB-Mail)
-# REMOVED (hier nicht mehr) --- #: osm_watch: way id="58182828" version="28" --- Am Alten Lokschuppen	2::inwork 15730,11279 15708,11193 15752,11115 15805,10949
-#: osm_watch: way id="1025826786" version="15"
-Hauffstr.: nur Anlieger zum Spielplatz frei	2::inwork 15578,11241 15620,11210 15700,11128 15747,11030 15763,10963
-',
-         'from' => undef,
-         'id' => 3804,
-         'text' => 'Hauffstr.: offiziell Sperrung wegen Bauarbeiten an den Lichtenberger Bahnbrücken, praktisch kann man problemlos durchfahren; Bauarbeiten waren bis Juni 2025 geplant',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7063,7 +7029,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: note: eigentlich q4+::inwork;
 #: note: laut Baustellenschild bis 15.9.2025
 #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-08-19 (bahninfo-forum) vvv
+#: last_checked: 2025-08-21 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
 Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
@@ -7158,7 +7124,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-07-27 (osm)
+#: last_checked: 2025-07-29 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -7679,7 +7645,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-07-30
+#: last_checked: 2025-08-23
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -8394,7 +8360,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-T,H)
+#: also_indoor: traffic (ex-T,ex-H)
 #: last_checked: 2025-08-16
 #: check_frequency: 10d
 #: next_check: 2025-09-05 (Halteverbotsschilder)
@@ -8893,7 +8859,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
        },
        {
          'data' => '#: also_indoor: traffic (none)
-#: last_checked: 2025-06-14
+#: last_checked: 2025-08-23
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 	q4::inwork 16915,11634 16957,11726
@@ -9047,7 +9013,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-08-16 (traffic)
+#: last_checked: 2025-08-23 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 ',
@@ -9380,6 +9346,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
        undef,
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
 #: source_id: LS/222-W/25/088 (bis 27.08.2025)
 	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 ',
@@ -9441,13 +9408,13 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
        {
          'data' => '#: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-08-03
+#: last_checked: 2025-08-23
 #: check_frequency: 21d
 	2::inwork 17498,13015 17507,12781
 ',
          'from' => undef,
          'id' => 4407,
-         'text' => 'Landschaftspark Herzberge: N-S-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
+         'text' => 'Landschaftspark Herzberge: Nord-Süd-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9592,6 +9559,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
 #: last_checked: 2025-08-22
 #: check_frequency: 60d
@@ -9615,7 +9583,8 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'until' => 1756479600
        },
        {
-         'data' => '#: source_id: LS/222-W/25/094 (bis 15.09.2025)
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~19-08-2025-rw-an-l400-waltersdorf-berlin
+#: source_id: LS/222-W/25/094 (bis 15.09.2025)
 	2::inwork 22001,-1632 21861,-2154 21696,-2925 21722,-3421 21687,-3601 21607,-3739
 ',
          'from' => 1756015200,
@@ -9633,6 +9602,19 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'text' => 'Personentunnel am S-Bahnhof Wollankstraße: zeitweise Sperrung vom 2.9.2025 bis 4.9.2025 ',
          'type' => 'gesperrt',
          'until' => 1757023200
+       },
+       {
+         'data' => '#: also_indoor: traffic (T[ungenau])
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: note: gesperrter Bereich etwa 150m lang
+#: last_checked: 2025-08-23
+	q4::inwork 17088,12506 17056,12304
+',
+         'from' => undef,
+         'id' => 4421,
+         'text' => 'Dietlindestr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
