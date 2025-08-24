@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -20,6 +19,8 @@ use IPC::Run qw(run);
 use Storable qw(lock_retrieve lock_nstore);
 use Tie::IxHash ();
 
+my $has_v = grep { $_ eq '-v' } @ARGV;
+
 my $track_stats_script = "$FindBin::RealBin/track_stats.pl";
 
 my(undef,$state1_file) = tempfile(UNLINK => 1, SUFFIX => "_state1", EXLOCK => 0) or die $!;
@@ -27,18 +28,18 @@ my(undef,$state2_file) = tempfile(UNLINK => 1, SUFFIX => "_state2", EXLOCK => 0)
 my(undef,$state_res_file) = tempfile(UNLINK => 1, SUFFIX => "_res_state", EXLOCK => 0) or die $!;
 unlink $_ for ($state1_file, $state2_file, $state_res_file);
 
-my @args_1 = ('-stage', 'begin', '-state' => $state1_file, @ARGV);
-my @args_2 = ('-stage', 'begin', '-state' => $state2_file, '-reverse', @ARGV);
+my @args_1   = ('-stage', 'begin', '-state' => $state1_file, @ARGV);
+my @args_2   = ('-stage', 'begin', '-state' => $state2_file, '-reverse', @ARGV);
 my @args_res = ('-stage', 'statistics', '-state' => $state_res_file, @ARGV);
 
 my($stdout, $stderr);
 
 warn "forth...\n";
-run [$track_stats_script, @args_1], ">", \$stdout, "2>", \$stderr
+run [$track_stats_script, @args_1], ">", \$stdout, ($has_v ? () : ("2>", \$stderr))
     or die "Command <$track_stats_script @args_1> failed ($stderr)";
 
 warn "back...\n";
-run [$track_stats_script, @args_2], ">", \$stdout, "2>", \$stderr
+run [$track_stats_script, @args_2], ">", \$stdout, ($has_v ? () : ("2>", \$stderr))
     or die "Command <$track_stats_script @args_2> failed ($stderr)";
 
 warn "merge...\n";
