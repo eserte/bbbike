@@ -1635,7 +1635,9 @@ Landsberger Allee: asphaltierter Radweg	Q1; 17055,14432 17254,14451 17533,14484
 Landsberger Allee: neu asphaltiert	Q0; 17533,14484 17848,14523 18057,14549
 Landsberger Allee: asphaltierter Radweg	Q0; 18057,14549 17848,14523 17533,14484 17254,14451
 Landsberger Allee: Betonradweg	Q1 18183,14573 18365,14607
-Landsberger Allee: Asphaltradweg nur mit m‰ﬂiger Qualit‰t	Q1 18365,14607 18410,14614 18553,14678 18831,14823
+Landsberger Allee: Asphaltradweg nur mit m‰ﬂiger Qualit‰t	Q1; 18365,14607 18410,14614 18553,14678
+Landsberger Allee: neu asphaltierter Radweg	Q0; 18553,14678 18410,14614 18365,14607
+Landsberger Allee: Asphaltradweg nur mit m‰ﬂiger Qualit‰t	Q1 18553,14678 18831,14823
 Landsberger Allee: Beton-Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den	Q0; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
@@ -3702,7 +3704,7 @@ Cheruskerpark: Asphalt	Q0 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282
 (Torgauer Str. - Cheruskerpark): asphalt‰hnlicher Belag	Q0 7374,8211 7372,8222 7351,8258 7353,8293
 Rhinstr. [Wohngebiet]: Beton	Q0 18008,13507 17995,13675 17994,13750 18024,13843 18050,13835 18134,13811 18198,13816
 Arendsweg: Beton	Q0 17254,14451 17261,14406 17182,14394 17183,14358 17198,14269
-(Zufahrt IKEA): Asphalt	Q0 18166,14277 18058,14269 17979,14247 17808,14226 17668,14208 17330,14163 17264,14176 17229,14183 17208,14209 17198,14269
+(Zufahrt IKEA): Asphalt	Q0 18166,14277 18058,14269 17979,14247 17960,14245 17808,14226 17668,14208 17330,14163 17264,14176 17229,14183 17208,14209 17198,14269
 Alte Rhinstr.: Asphalt	Q0 18247,14241 18225,14398 18183,14573
 Rhinstr. [134-130]: Asphalt	Q0 18477,14042 18181,14039
 Rhinstr. [Wohngebiet]: Beton	Q1 18050,13835 18056,13853 18047,13905
@@ -11869,6 +11871,8 @@ G‰rtnereiring: schlechtes Kopfsteinpflaster	Q3 -7236,12896 -7345,12930
 (Am Spektesee, Parkplatz): Asphalt	Q0 -6054,15399 -6116,15407
 (Rudower Str. - Semmelweisstr.): Verbundsteinpflaster	Q1 18630,2117 18642,2154 18632,2240
 (Rudower Str. - Semmelweisstr.): wassergebundene Decke	Q1 18632,2240 18649,2298 18700,2282
+(Landsberger Allee - Frank-Schweitzer-Str.): Gehwegplatten	Q0 19162,14931 19121,14916 19173,14932
+(Landsberger Allee/Georg-Knorr-Str. - Frank-Schweitzer-Str.): Beton	Q0 19173,14932 19195,14931
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

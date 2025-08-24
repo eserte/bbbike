@@ -1024,7 +1024,7 @@ Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-08-23
+#: last_checked: 2025-08-24
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
 # REMOVED --- #: next_check: 2025-06-30 (infravelo)
@@ -1100,7 +1100,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 #: osm_watch: note 4126168 3
 #: osm_watch[closed]: note 4126169 1
 #: priority: #C
-#: last_checked: 2025-08-17
+#: last_checked: 2025-08-24
 #: check_frequency: 120d
 #: next_check: 2026-04-30 (Halteverbotsschilder)
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
@@ -2566,7 +2566,13 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
 (Georg-Knorr-Str. - Landsberger Allee): Rampe	q3 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19157,14979 19171,14938 19173,14931 19176,14921
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19157,14979 19171,14938 19173,14932
+# REMOVED (dieser Abschnitt wird aufgegeben) --- (Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19173,14932 19178,14924
+(Landsberger Allee - Frank-Schweitzer-Str.): Rampe	q2- 19157,14948 19162,14931 19121,14916 19173,14932
+(Landsberger Allee/Georg-Knorr-Str. - Frank-Schweitzer-Str.): einige Fußgänger	q2 19173,14932 19195,14931
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): einige Fußgänger	q2 19178,14924 19182,14918 19227,14914
+#: XXX_prog BS (ansonsten q2)
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): einige Fußgänger, Bordstein	q3 19227,14914 19243,14903
 # REMOVED --- (Rudolfplatz, Park): Fußgänger, Bordsteine, Radfahren verboten, ggfs. schieben	q3 14026,10869 13896,10851
 (Hoeppnerstr. - Hessenring): eng, Fußgänger	q3 8376,7440 8446,7524 8549,7622
 (Kolonie Zähringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622

@@ -32050,6 +32050,7 @@ EOF
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
 #: osm_watch: note 4813149 1
+#: osm_watch: way id="198581621" version="19"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
 #: last_checked: 2025-08-16
@@ -43843,7 +43844,7 @@ EOF
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
 #: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
-#: last_checked: 2025-08-03
+#: last_checked: 2025-08-24
 #: check_frequency: 60d
 #: next_check: 2025-09-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-10-31 (Baustellenschild)
@@ -49562,6 +49563,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250822
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_sperrung_pu_20250822n.pdf
 	2::inwork 9383,17757 9434,17823
 EOF
      },

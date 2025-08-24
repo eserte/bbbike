@@ -1373,7 +1373,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id: viz2021:13.48997,52.55798,29.12.2022,09:38 (bis 25.1.2023) (später am Tag wieder entfernt, inaktiv)
 #: source_id: viz2021:13.487447,52.556905,05.10.2022,07:00 (Kabelarbeiten, bis 9.12.2022) (bis 13.1.2023) (bis 15.2.2023) (inaktiv)
 #: source_id: viz2021:13.48576,52.555908,24.04.2025,07:00 (Straßenarbeiten, bis 16.05.2025) (inaktiv)
-#: last_checked: 2025-08-17
+#: last_checked: 2025-08-24
 #: check_frequency: 360d
 #: next_check: 2026-12-31 (infravelo)
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017 16296,17114 16318,17128
@@ -1393,7 +1393,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649
 #: osm_watch: way id="40520565" version="50"
 #: osm_watch: way id="51317007" version="35"
 #: osm_watch: way id="624116238" version="15"
-#: last_checked: 2025-06-13 (mapillary)
+#: last_checked: 2025-08-24
 #: check_frequency: 270d
 #: next_check: 2026-12-31 (infravelo)
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16525,17253 16460,17214 16352,17150 16318,17128
@@ -3940,7 +3940,7 @@ Bebauungsplan 3-69: ehem. Industriebahntrasse wird zum Rad/Gehweg	?::projected 1
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/stadtplanung/bebauungsplaene/b-plan-xxi-23_blatt-1_barrierefrei.pdf (eher nicht: "... sind mit einem 5 m breiten Fahrrecht zugunsten der Wasser- und Umweltbehörden zu belasten.")
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/stadtplanung/bebauungsplaene/b-plan-xxi-23_blatt-2_barrierefrei.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_48_4373_4436_online.pdf (Wiederholung der Veröffentlichung)
-#: last_checked: 2025-04-06
+#: last_checked: 2025-08-24
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-04-01
 Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens gebaut?	? 18397,14190 18421,14240 18388,14533 18415,14598
@@ -5619,7 +5619,8 @@ Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15
 Robert-Siewert-Str./Römerweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 19431,9872 19459,9842 19485,9812
 #: by: https://www.berliner-zeitung.de/news/fussgaengerueberweg-vor-grundschule-fehlt-cdu-lichtenberg-hakt-beim-senat-nach-li.2300061
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/fussgaengerueberweg-fuer-grundschueler-gefordert_a437446 (hier: Höhe 77C)
-#: last_checked: 2025-03-04 (orthofotos)
+#: note: etwas weiter westlich (vor 73C) existiert bereits ein provisorischer Zebrastreifen
+#: last_checked: 2025-08-24
 Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 17353,15006 17406,14986 17356,14966
 #: last_checked: 2025-06-30
 Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected 16239,12245 16255,12224 16278,12193
@@ -6212,7 +6213,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2025-07-14
+#: last_checked: 2025-08-24
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6238,7 +6239,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: XXX Außerdem: Grünbeschichtung
 #: XXX mittlerweile (2025-01-06) ist die südliche Seite bis auf die Grünbeschichtung und Ausschilderung weitgehend fertig
 #: XXX mittlerweile (2025-04-10) wird Richtung Westen gearbeitet; Radspur zurzeit (teilweise?) gesperrt
-#: last_checked: 2025-08-23
+#: last_checked: 2025-08-24
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
 #: next_check: 2025-09-30 (infravelo)
@@ -7044,6 +7045,7 @@ Bahnhof Köpenick: neuer Ostzugang	?::inwork 22700,6138 22700,6045 22624,6044
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1478054.php
 #: by: https://www.bahninfo-forum.de/read.php?9,515613,818835#msg-818835 (Bahnhof Hirschgarten ist bis 30. März 2025 stillgelegt --- was ist mit der Unterführung?) (Antwort vor Ort: noch offen, mittlerweile bis Ende April 2025 stillgelegt)
 #: by: https://sbahn.berlin/aktuelles/artikel/spatenstich-fuer-umbau-des-s-bahnhofs-hirschgarten/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/panne-am-s-bahnhof-hirschgarten-fahrgaste-bekommen-heftige-auswirkungen-zu-spuren-14214005.html
 #: XXX wird es während der Bauarbeiten Einschränkungen (Sperrungen?) geben?
 #: also_indoor: url https://sbahn.berlin/fahren/bahnhofsuebersicht/hirschgarten/
 #: add_fragezeichen: Ist die Unterführung zurzeit gesperrt?
@@ -8962,7 +8964,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: note: erste Pfosten stehen bereits, mit meist zugehängten Schildern, einige Schilder schon (illegal?) nicht mehr zugehangen, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025) aktiv, ist aber offensichtlich verzögert
-#: last_checked: 2025-08-21 vvv
+#: last_checked: 2025-08-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED (realisiert) --- #: osm_watch: way id="1145089826" version="5" --- Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14888,11934
 # REMOVED (realisiert) --- #: osm_watch: way id="127538487" version="21" --- Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14710,11824
@@ -9352,7 +9354,8 @@ Römerweg - Cäsarstraße - Hentigstraße: Fahrradstraße wird eingerichtet	?::projec
 #: note: Teil des Anton-Kiezblocks
 #: XXX weitere Modalfilter: (Antonstraße/Ruheplatzstraße) + Stadtplatz Prinz-Eugen-Straße
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-25
+#: last_checked: 2025-08-24 (traffic)
+#: check_frequency: 14d (traffic)
 Maxstr.: Teileinziehung geplant	? 7738,15838 7781,15804
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-05-2025-b103-gantikow-bis-vehlow (Juli 2025 - Dezember 2026)
@@ -9381,7 +9384,7 @@ Nordufer: neue Fahrradstraße geplant	?::projected 6334,14756 6513,14725 6596,147
 B103 bis Meyenburg: Radweg geplant	? -71558,93501 -71361,94170 -71170,96717 -71130,96866 -71051,97421 -70910,98104 -70552,98832
 # 
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10623
-#: last_checked: 2025-05-25 (BVV)
+#: last_checked: 2025-08-24
 #: check_frequency: 90d
 Kyllburger Weg/Bitburger Straße: entsteht hier ein Drängelgitter?	? 16653,17482 16645,17449 16688,17416
 # 
@@ -9481,6 +9484,7 @@ Melchiorstr.: Fahrradstraße mit Vorfahrtsregelung geplant	?::projected 11917,111
 #: next_check_id: BAB100-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1554729.php ("Radfahrende werden teilweise über die Kreuzung Elsenstraße / Puschkinallee geführt" -> was bedeutet das?; 14. Mai 2025 - 24. Juni 2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1581835.php (28.07.2025 - 25.08.2025)
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250824 (letzter Umbau der Baustelle am 25.08.2025)
 #: source_id: viz2021:13.457669,52.491729, (bis 19.09.2025)
 #: source_id: viz2021:13.45801,52.49182,28.07.2025,07:00 (bis 04.08.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:166#HIM_FREETEXT_294666 (BVG-Umleitung ab 4.8.2025)
@@ -11558,7 +11562,7 @@ unter der Salvador-Allende-Brücke: hier existiert ein asphaltierter und beleucht
 #: by: https://entwicklungsstadt.de/lichtenberg-waechst-diese-fuenf-neubauprojekte-praegen-den-bezirk/
 #: XXX vermutlich wird es am westlichen Rand im Zuge der Hofheimer Str. einen Weg geben; unklar, ob es eine Verlängerung der Heldburger Str. geben wird
 #: osm_watch: way id="89803856" version="23"
-#: last_checked: 2025-08-03
+#: last_checked: 2025-08-24
 #: check_frequency: 360d
 #: next_check: 2026-09-30 (Gewobag)
 Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen oder Wege entstehen?	?::inwork 17636,14837 17633,14707 17763,14588
@@ -11573,7 +11577,7 @@ Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen od
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/entwurf-liegt-bis-zum-26-juli-an-drei-orten-aus_a386217
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10553 (Vorlage zur Kenntnisnahme)
 #: XXX evtl. wird es hier eine Hausdurchfahrt geben (während der Bauarbeiten vermutlich gesperrt) sowie der südliche Teil der Treffurter Str. teileingezogen
-#: last_checked: 2025-08-03
+#: last_checked: 2025-08-24
 #: check_frequency: 1000d
 Treffurter Str.: Bebauungsplanverfahren wird gestartet	?::projected 18067,14700 18119,14599
 # 
@@ -11585,7 +11589,7 @@ Treffurter Str.: Bebauungsplanverfahren wird gestartet	?::projected 18067,14700 
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/bebauungsplan-liegt-aus_a389089
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-357-lar-nord.1310/#post-24429
 #: by: https://livos-gruppe.de/projektentwicklung/landsberger-allee-357-lar-nord/
-#: last_checked: 2025-08-03
+#: last_checked: 2025-08-24
 #: check_frequency: 1000d
 Bebauungsplan 11-188 VE: ein Quartiersplatz soll entstehen, ggfs. mit Durchfahrtmöglichkeit zur Landsberger Allee	?::projected 17945,14648 17966,14578
 # 
@@ -11772,7 +11776,7 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: alias: Marzahner Knoten
 #: alias: Großbaustelle Marzahner Brücken
 #: priority: #A
-#: last_checked: 2025-06-09
+#: last_checked: 2025-08-24
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (Ex-VIZ-Verkehrsmeldung)
 Knoten Marzahn: Neubau	?::inwork 19467,15045 19633,15098

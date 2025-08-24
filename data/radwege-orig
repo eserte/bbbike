@@ -475,7 +475,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 2770,10024 2702,10006 2
 	RW2;RW2 2061,11191 2037,11122 2011,11046 1928,10728
 Gehwegplatten	RW1; 2011,11046 1865,11082 1850,11091 1775,11135
 Gehwegplatten; für Radfahrer freigegebene Busspur gilt Mo-Sa 6-20 Uhr	RW1; 1775,11135 1619,11226
-Gehwegplatten	RW2; 1619,11226 1541,11271 1532,11280
+Gehwegplatten	RW2; 1619,11226 1532,11280
 	RW2; 1532,11280 1541,11271 1619,11226 1775,11135 1850,11091 1865,11082 2011,11046
 Busspur gilt Mo-Fr 7-19 Uhr	RW2;RW5 2233,11049 2011,11046
 	RW2; 1381,11335 1450,11309 1532,11280 1574,11379
@@ -998,7 +998,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-08-17
+#: last_checked: 2025-08-24
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -5380,7 +5380,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2025-08-12 (mapillary) vvv
+#: last_checked: 2025-08-24 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str., Richtung Westen
@@ -5761,8 +5761,9 @@ neu asphaltiert	RW2; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386
 Gehwegplatten	RW2; 16852,14412 17055,14432
 asphaltiert	RW2; 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 Gehwegplatten	RW1; 18057,14549 18183,14573
-meist alter Asphalt mit einigen Schäden	RW2; 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823
-neu asphaltiert, breit, Gehweg für Radfahrer frei	RW1; 18831,14823 19013,14905 19156,14953 19200,14963
+#: historical_note: früher RW2;
+meist alter Asphalt mit einigen Schäden	RW1; 18183,14573 18365,14607 18410,14614 18553,14678 18831,14823
+neu asphaltiert, breit, Gehweg für Radfahrer frei	RW1; 18831,14823 19015,14901 19157,14948 19200,14963
 Gehweg für Radfahrer frei	RW1; 19200,14963 19214,14966 19350,14997
 	RW3; 19852,15201 19987,15280 20135,15364
 Fahrradschleuse	RW3; 20135,15364 20260,15434
@@ -5777,23 +5778,26 @@ neues Verbundsteinpflaster	RW2; 22739,16203 22696,16208 22631,16215 22495,16165 
 	RW2; 21709,15808 21584,15753 21475,15705 21398,15671 21239,15633
 	RW3; 21239,15633 21119,15635 21068,15646 21009,15658 20866,15673 20733,15657 20580,15586 20532,15564 20260,15434 20135,15364 19987,15280 19852,15201
 Gehweg für Radfahrer frei, eng	RW1; 19512,15092 19364,15045 19309,15023 19254,15000 19205,14980 19196,14976 19175,14968
-# REMOVED (temporär nicht verfügbar?) --- Gehweg für Radfahrer frei, eng	RW1; 19175,14968 19013,14905
+# REMOVED (temporär nicht verfügbar?) --- Gehweg für Radfahrer frei, eng	RW1; 19175,14968 19015,14901
 #: next_check_id: KNOTENMARZAHN-2022
-#: last_checked: 2025-08-03 vvv
+#: last_checked: 2025-08-24 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
-Gehweg für Radfahrer frei	RW9; 19200,14963 19156,14953 19013,14905 18831,14823
+Gehweg für Radfahrer frei	RW9; 19200,14963 19157,14948 19015,14901 18831,14823
 # REMOVED (wegen Bauarbeiten ist der nördliche Hochboard nicht nutzbar) --- Gehweg für Radfahrer frei	RW1; 18831,14823 18553,14678 18410,14614 18365,14607
 #: note: die Zweirichtungsregelung gilt sogar bis zur Rhinstr.
-Gehweg für Radfahrer frei	RW9; 18831,14823 18553,14678 18410,14614 18365,14607
+Gehweg für Radfahrer frei	RW9; 18831,14823 18553,14678
 Gehweg für Radfahrer frei, eng	RW9; 19175,14968 19196,14976 19205,14980 19254,15000 19309,15023 19364,15045 19512,15092
 #: note: zwar nicht explizit als benutzungspflichtig ausgeschildert, aber die danebenliegende Fahrbahn ist eine Einbahnstraße
 Radfahrer müssen Gehweg benutzen, eng	RW8; 19512,15092 19644,15320
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-Gehweg für Radfahrer frei	RW1; 18365,14607 18183,14573
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 18183,14573 18057,14549
+neu asphaltiert, breit	RW2; 18553,14678 18410,14614 18365,14607
+#: historical_note: früher (bis 2025?): Gehweg für Radfahrer frei, RW1;
+gemeinsamer Rad- und Gehweg, Verbundsteinpflaster/Beton	RW2; 18365,14607 18183,14573
+#: historical_note: früher (bis 2025?): Gehweg für Radfahrer frei, RW1;
+Verbundsteinpflaster	RW2; 18183,14573 18057,14549
 neu asphaltiert, mit einigen Verbundsteinpflaster-/Gehwegplattenabschnitten	RW2; 18057,14549 17848,14523 17533,14484 17254,14451
 neu asphaltiert, aber etwas wellig	RW2; 17254,14451 17055,14432 16852,14412
 neu asphaltiert, teilweise etwas wellig	RW2; 16852,14412 16632,14390 16590,14386
@@ -5961,7 +5965,9 @@ asphaltierter Bordsteinradweg	RW1; 18884,3752 18856,3783 18826,3816 18779,3866 1
 #: historical_note: früher (bis 2023?) RW2;
 asphaltierter Bordsteinradweg	RW1; 18042,4667 18239,4453 18374,4307 18541,4125 18739,3909 18779,3866 18826,3816 18856,3783 18884,3752
 #: by ^^^
-	RW2;RW1 17848,14523 17791,14639
+#: historical_note: ganz früher (vor 2015?) RW2;
+Verbundsteinpflasterradweg	RW1; 17848,14523 17791,14639
+	RW1; 17791,14639 17848,14523
 Verbundsteinpflasterradweg	RW1; 17791,14639 17745,14734 17693,14840 17684,14858 17638,14945 17609,15006 17432,15378 17424,15400 17405,15454 17377,15588 17370,15670 17378,15760
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15588 17405,15454 17424,15400 17432,15378 17609,15006 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639
 	RW4; 17488,15766 17429,15930

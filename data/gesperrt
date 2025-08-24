@@ -59,13 +59,15 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten Märkische/Landsberger Allee	2::inwork 19013,14905 19175,14968
+Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
 Knoten Märkische/Landsberger Allee	1 19254,15000 19200,14963
 Knoten Märkische/Landsberger Allee	2::inwork 19408,15007 19350,14997 19214,14966 19200,14963
 Knoten Märkische/Landsberger Allee	2::inwork 19452,14807 19464,14971 19408,15007
 Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061 19408,15007
 Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee: nur Rechtsabbiegen erlaubt	3 19644,15320 19512,15092 19565,15106
+Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
+Frank-Schweitzer-Str.	2::inwork 19178,14924 19111,14894 19117,14875
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
 Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13712,20919 13909,20928
 Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
@@ -504,6 +506,9 @@ Von-der-Gablentz-Str.	1 4946,17701 4872,17703 4816,17712
 Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3811,14299
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
+Masurenallee (Mittelstreifen)	3nocross::ignrte 1532,11280 1619,11226
+Masurenallee (Richtungsfahrbahn)	1::igndisp 1532,11280 1619,11226
+Masurenallee (Richtungsfahrbahn)	1::igndisp 1619,11226 1541,11271 1532,11280
 Berliner Str. (Straßenbahntrasse)	3nocross::ignrte 10858,17721 10853,17802 10849,17848
 Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10853,17788 10849,17848
 Berliner Str. (Richtungsfahrbahn)	1::igndisp 10849,17848 10853,17802 10858,17721
@@ -2912,7 +2917,6 @@ tragen (Treppe, 9 Stufen)	0:15:-149 14331,17016
 Rampe und flache Treppe (8 Stufen)	0:25:76 16065,6126
 tragen (Treppe, 12 Stufen)	0:15:-23 5475,7906
 tragen (Treppe, 11+13 Stufen)	0:30:-108 19163,14981
-tragen (Treppe, 11+10+4 Stufen)	0:30:-12 19160,14935
 tragen (Treppe)	0:30:70 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (6 Stufen)	0:15:-90 4608,63927
@@ -3571,10 +3575,9 @@ Zum Feldrain (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22927,-497
 Milanstr. (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22854,-5002 22814,-5119
 Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119 22860,-5130 22848,-5176
 Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
-(Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19156,14953 19160,14935 19171,14938
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung gesperrt	2::inwork 19157,14979 19171,14938 19173,14931 19176,14921
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung gesperrt	2::inwork 19157,14979 19171,14938 19173,14932
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
