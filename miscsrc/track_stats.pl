@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2012,2015,2018,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2012,2015,2018,2021,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,6 +21,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 
+use File::Glob qw(bsd_glob);
 use Getopt::Long;
 use POSIX qw(strftime);
 use Text::Table;
@@ -40,8 +41,8 @@ my %stages = map {($_,1)} @stages;
 my @cols_sorted = qw(file fromtime vehicles device diffalt mount velocity length difftime);
 my %is_alpha_col = map{($_=>1)} qw(file vehicles device);
 
-#my $tracks_file = "$FindBin::RealBin/../tmp/streets-accurate-categorized-split.bbd";
-my $tracks_file = "$FindBin::RealBin/../tmp/streets-polar.bbd";
+my $default_tracks_file = "$FindBin::RealBin/../tmp/streets-polar.bbd";
+my @tracks_files;
 my $gpsman_dir  = "$ENV{HOME}/src/bbbike/misc/gps_data",
 my $ignore_rx;
 my $start_stage;
@@ -59,7 +60,7 @@ my $max_difftime;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
 
-	   "tracks=s" => \$tracks_file,
+	   'tracks=s@' => \@tracks_files,
 	   "ignorerx=s" => \$ignore_rx,
 
 	   "gpsmandir=s" => \$gpsman_dir,
@@ -81,6 +82,10 @@ GetOptions("stage=s" => \$start_stage,
 	   "tsv" => \$tsv,
 	   "v+" => \$v,
 	  ) or die "usage?";
+
+if (!@tracks_files) {
+    @tracks_files = $default_tracks_file;
+}
 
 if ($v) {
     Strassen::set_verbose($v);
@@ -131,7 +136,13 @@ sub stage_filtertracks {
     my(@from, @vias, @to);
     parse_intersection_lines(\@from, \@vias, \@to);
 
-    my $trks = Strassen->new($tracks_file);
+    my $trks;
+    if (@tracks_files == 1) {
+	$trks = Strassen->new($tracks_files[0]);
+    } else {
+	require Strassen::MultiStrassen;
+	$trks = MultiStrassen->new(@tracks_files);
+    }
     $trks->make_grid(#Exact => 1, # XXX Eats a lot of memory, so better not use it yet...
 		     UseCache => 1);
 
@@ -213,6 +224,7 @@ sub stage_filtertracks {
 
 # Find basic data for matched tracks (velocity, diffalt etc.)
 sub stage_trackdata {
+    my @track_dirs = ($gpsman_dir, (grep { !m{/(\.git|\.thumbnails.*|trkstats.*)$} } grep { -d $_ } bsd_glob("$gpsman_dir/*")));
     my $included = $state->{included};
     my @results;
     my @outbbd_records;
@@ -223,17 +235,25 @@ sub stage_trackdata {
 	my($to1,  $to2)   = @{ $todef->[1] };
 	my($from_fence1,$from_fence2) = @{ $fromdef->[2] };
 	my($to_fence1,  $to_fence2)   = @{ $todef->[2] };
-	my $abs_path = "$gpsman_dir/$file";
-	my $gps = eval { GPS::GpsmanData::Any->load($abs_path) };
-	if ($@) {
-	    my $save_err = $@; # first error is best
-	    $abs_path = "$gpsman_dir/generated/$file";
-	    $gps = eval { GPS::GpsmanData::Any->load($abs_path) };
-	    if (!$gps) {
-		warn "$save_err, skipping...\n";
-		next;
+
+	my $first_error;
+	my($abs_path, $gps);
+	for my $path_candidate (map { "$_/$file" } @track_dirs) {
+	    $gps = eval { GPS::GpsmanData::Any->load($path_candidate) };
+	    if ($@) {
+		if (!$first_error) {
+		    $first_error = $@; # first error is best
+		}
+	    } else {
+		$abs_path = $path_candidate;
+		last;
 	    }
 	}
+	if (!$gps) {
+	    warn "$first_error (and can't found $file in any of @track_dirs), skipping...\n";
+	    next;
+	}
+
 	my @outbbd_coords;
 	my $stage = 'from';
 	my $result;
@@ -546,7 +566,7 @@ sub save_state {
 # (except the srt:device part)
 sub guess_device {
     my $result = shift;
-    my($year, $month, $day) = $result->{file} =~ m{^(2\d{3})(\d{2})(\d{2})};
+    my($year, $month, $day) = $result->{file} =~ m{^(2\d{3})-?(\d{2})-?(\d{2})};
     if (defined $year) {
 	# First the exact check
 	my $srt_device = _parse_srt_device_quickly($result->{abs_path});
