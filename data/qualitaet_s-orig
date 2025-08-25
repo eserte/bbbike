@@ -174,7 +174,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1551519.php
 #: by: https://entwicklungsstadt.de/mehr-komfort-fuer-radverkehr-kopfsteinpflaster-am-priesterweg-geglaettet/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/billiger-und-umweltschonender-als-asphaltieren-berliner-kopfsteinpflaster-abgefrast-furs-huckelfreie-radfahren-13554001.html
-#: osm_watch: way id="102486250" version="29"
+#: osm_watch: way id="102486250" version="30"
 #: osm_watch[closed]: note 4659483 8
 # REMOVED (confirmed) --- --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
 #: last_checked: 2025-06-24 (mapillary)
@@ -506,7 +506,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/20250121-mobilitaetsrat-mitte-tagesordnung.pdf (Fahrradstraße in der Gerichtstr. ist in Planung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2025-08-06 (mapillary) vvv
+#: last_checked: 2025-08-24 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
 #: osm_watch: way id="169459736" version="17"
@@ -1070,7 +1070,7 @@ Görlitzer Park: Kleinsteinpflaster	Q1- 12960,9955 12932,9900
 Görlitzer Park: fester sandiger Weg	Q1 12509,10189 12502,10244
 Zur Eisenbahnbrücke: gutes Kopfsteinpflaster	Q1- 13302,9894 13259,9870 13207,9868
 Bahndamm: fester Sandweg, teilweise mit Schotter, Unebenheiten	Q2+ 13141,9911 13146,9903 13207,9868 13282,9828
-Bahndamm: fester Sandweg, teilweise mit Schotter	Q1- 13282,9828 13476,9720 13934,9365 13966,9340
+Bahndamm: fester Sandweg, teilweise mit Schotter	Q1- 13282,9828 13476,9720 13940,9376 13970,9349
 Tiergartenufer: Parkweg	Q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2+ 6289,11440 6186,11466
 Rosa-Luxemburg-Steg: Holzbohlen	Q1- 6289,11440 6247,11390
@@ -2518,8 +2518,8 @@ Jansastr.: Kopfsteinpflaster	Q2 12429,8856 12524,9012
 Ossastr.: Kopfsteinpflaster	Q2 12623,9134 12682,9089
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13279,8947 13455,8800
-Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
-# REMOVED --- Beermannstr.: Kopfsteinpflaster	Q2 14119,9368 14157,9345
+Beermannstr.: Kopfsteinpflaster	Q2 13981,9474 14126,9362
+# REMOVED --- Beermannstr.: Kopfsteinpflaster	Q2 14126,9362 14157,9345
 # REMOVED --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
 # REMOVED --- Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/elbestrasse-soll-spaetestens-ab-2024-fuer-fussgaenger-und-radfahrer-attraktiver-werden_a324155
@@ -12824,7 +12824,8 @@ Oppelner Str.: stellenweise Kleinpflastersteine	Q1+ 12897,10439 12968,10564 1297
 Oppelner Str.: Asphalt	Q0; 12767,10216 12897,10439
 Oppelner Str.: Asphalt	Q0; 12897,10439 12767,10216
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
-Bahndamm - Elsenstr.: unbefestigter Weg	Q2- 13953,9372 13923,9405
+#: historical_note: früher Q2-, mittlerweile wohl schlechter geworden
+Bahndamm - Elsenstr.: unbefestigter Weg	Q3+ 13953,9372 13923,9405
 # REMOVED (nicht mehr) --- #: note: Asphalt oder asphaltähnlich; bunt bemalt
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8103,13675 8151,13697
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8151,13697 8169,13705

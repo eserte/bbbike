@@ -4327,7 +4327,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-08-20 vvv
+#: last_checked: 2025-08-25 vvv
 #: next_check: 2025-08-27 (rbb) vvv
 #: osm_watch: way id="1199463691" version="5"
 # REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
@@ -4598,7 +4598,7 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2025-06-07
+#: last_checked: 2025-08-25
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -5006,7 +5006,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-08-22 vvv
+#: last_checked: 2025-08-25 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5239,6 +5239,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (voraussichtliche Bauzeit: 2022 bis 2025) (bis Ende des II. Quartals 2025) (kann vermutlich nicht gehalten werden) (mittlerweile bis III. Quartal 2025)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (alternative URL)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (Verkehrsfreigabe am 4.9.2025)
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
@@ -5247,10 +5248,10 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: XXX Wann wird die Brücke wieder eröffnet?
 #: last_checked: 2025-08-12 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2025-09-30 (SenMVKU website)
+#: next_check: 2025-09-04 (SenMVKU website)
 # REMOVED --- #: valid: 20190603-20250630
 # REMOVED --- #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
-#: valid: 20190603-20251231
+#: valid: 20190603-20250904
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 # 
 # REMOVED (Bauzäune sind nur stellenweise vorhanden (z.B. Seidenschwanzstr., westliche Einfahrt) und können leicht umfahren werden --- siehe mapillary) --- #: next_check_id: SEIDENSCHWANZSTR-2019 --- #: last_checked: 2020-04-26 vvv --- #: check_frequency: 360d vvv --- #: next_check: 2021-01-09 vvv --- #: XXX wann werden die Straßen eröffnet? vvv --- #: XXX laut osm (via StreetComplete) nicht mehr highway=construction vvv --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf --- #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen) --- #: by; https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-soll-an-der-bisamstrasse-den-bau-von-mehrfamilienhaeusern-pruefen_a228628 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-plant-mehrgeschosser-im-siedlungsgebiet-zwischen-bisamstrasse-und-landesgrenze_a278290 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.959124.php --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/die-degewo-will-ab-2023-an-der-stadtgrenze-200-mietwohnungen-bauen_a300659 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/buergerinitiative-lehnt-mietwohnungsbau-ab_a301920 --- #: osm_watch: way id="515337708" version="8" --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801 --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708 --- #: osm_watch: way id="515337706" version="6" --- Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854 --- #: osm_watch: way id="515337707" version="6" --- Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 26379,12909 --- #: osm_watch: way id="515337709" version="6" --- Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959 --- #: XXX ^^^ --- #: XXX ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^

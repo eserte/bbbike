@@ -3554,31 +3554,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: TAGDEROFFENENTUER-BUNDESREGIERUNG-RECURRING
-#: by: https://viz.berlin.de/2023/08/verkehrsvorschau-170823/
-#: source_id: IM_022700 (inaktiv)
-#: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023) (inaktiv)
-#: source_id: viz2021:13.37565,52.53115,18.08.2025,06:00 (bis 27.08.2025) (inaktiv)
-#: source_id: viz2021:13.37565,52.53115,21.08.2025,12:00 (bis 25.08.2025)
-	2::temp 8426,13909 8572,13671
-',
-         'from' => 1755468000,
-         'id' => 2622,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 18. August 2025 06 Uhr bis 25. August 2025 12 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1756116000
-       },
+       undef,
        undef,
        undef,
        {
@@ -4089,6 +4065,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
+       {
+         'data' => '# REMOVED --- #: source_id: 2147342574 (inaktiv) --- #: note: laut fritz bis 14.09.2018, laut googlemaps sogar bis Anfang November 2018 --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschränkungen) --- #: XXX_prog: eigentlich q3+ --- #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)? --- #: priority: #A --- #: next_check: 2018-09-16 ---	q3::inwork; 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
+# REMOVED --- #: next_check_id: SCHEFFEL-2024 --- Scheffelstr.	q2::inwork; 15357,12813 15233,12829 15169,12839
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lx75y4lls32e
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihrarrgbwuacjokfjvkhjtl7jrcte5bofv2ah3hbyedqyjckbhpoq@jpeg (keine Ausnahmen für Radfahrer)
+#: source_id: viz2021:13.4773,52.52026,25.08.2025,07:30 (bis 29.08.2025)
+Alfred-Jung-Str.: Einbahnstraße	q4::inwork; 15347,13124 15357,12813
+Scheffelstr.: gesperrte Einfahrt	q4::inwork; 15347,13124 15357,12813 15367,12815 15417,12823 15469,12831 15516,12838
+',
+         'from' => 1756072800,
+         'id' => 2954,
+         'text' => 'Scheffelstr./Alfred-Jung-Str.: Bauarbeiten, Sperrung bzw. Einbahnstraßenregelung, 25.08.2025 bis 29.08.2025',
+         'type' => 'handicap',
+         'until' => 1756483200
+       },
        undef,
        undef,
        undef,
@@ -4118,7 +4109,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier nicht) ---	q3::inwork 4071,12720 4124,12721
 ',
          'from' => 1687804758,
-         'id' => 2961,
+         'id' => 2962,
          'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer sollen absteigen, Bordsteine, voraussichtlich bis Mitte 2026',
          'type' => 'handicap',
          'until' => 1782856799
@@ -4170,7 +4161,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
          'from' => undef,
-         'id' => 3000,
+         'id' => 3001,
          'text' => 'Privatstraße hinter der Leipziger Str.: für Radfahrer explizit gesperrt',
          'type' => 'handicap',
          'until' => undef
@@ -4243,7 +4234,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: check_frequency ^^^
 ',
          'from' => undef,
-         'id' => 3007,
+         'id' => 3008,
          'text' => 'Treskowallee: Richtung Norden Gehweg mit Verschwenkungen und Bordsteinen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; Bauarbeiten bis Ende 2025',
          'type' => 'handicap',
          'until' => undef
@@ -4289,7 +4280,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-08-23 vvv
+#: last_checked: 2025-08-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4305,7 +4296,7 @@ Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 1
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 3027,
+         'id' => 3028,
          'text' => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
          'type' => 'gesperrt',
          'until' => undef
@@ -4318,7 +4309,7 @@ Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 1
 	2::night 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 ',
          'from' => undef,
-         'id' => 3031,
+         'id' => 3032,
          'recurring' => 1,
          'text' => 'Charité-Campus Benjamin Franklin: keine Durchfahrt zwischen 22:00 und 5:00 Uhr, Hundeverbot',
          'type' => 'gesperrt',
@@ -4381,7 +4372,7 @@ Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 1
 Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
 ',
          'from' => 1729526400,
-         'id' => 3070,
+         'id' => 3071,
          'text' => 'Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
          'until' => 1806508800
        },
@@ -4420,7 +4411,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 	2::temp -11686,-765 -11622,-709
 ',
          'from' => undef,
-         'id' => 3101,
+         'id' => 3102,
          'text' => 'Uferweg am Hans-Otto-Theater: im Sommer wegen des Sommertheaters komplett gesperrt',
          'type' => 'gesperrt',
          'until' => undef
@@ -4437,7 +4428,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 	2 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544
 ',
          'from' => undef,
-         'id' => 3109,
+         'id' => 3110,
          'permanent' => 1,
          'text' => 'EUREF-Campus: Privatgelände, Betreten für Unbefugte verboten',
          'type' => 'gesperrt',
@@ -4487,7 +4478,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 	q4::temp::play 11175,9882 11197,9894 11411,9810
 ',
          'from' => 1743372000,
-         'id' => 3145,
+         'id' => 3146,
          'recurring' => 1,
          'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
          'type' => 'handicap',
@@ -4503,7 +4494,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: tempex ^^^
 ',
          'from' => undef,
-         'id' => 3147,
+         'id' => 3148,
          'recurring' => 1,
          'text' => 'Schlosspark Sacrow: Wege sind nur zwischen 8 Uhr bis zum Einbruch der Dunkelheit geöffnet',
          'type' => 'gesperrt',
@@ -4542,7 +4533,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 # REMOVED ---	2::inwork 8588,2176 8639,2212
 ',
          'from' => undef,
-         'id' => 3151,
+         'id' => 3152,
          'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Ende März 2025, evtl. wird verlängert',
          'type' => 'gesperrt',
          'until' => undef
@@ -4623,7 +4614,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
-#: osm_watch: note 4813149 1
+#: osm_watch: note 4813149 2
 #: osm_watch: way id="198581621" version="19"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
@@ -4636,7 +4627,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 # REMOVED ---	2::inwork 16353,10207 16539,10097
 ',
          'from' => undef,
-         'id' => 3222,
+         'id' => 3223,
          'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 06.02.2026',
          'type' => 'gesperrt',
          'until' => 1770397200
@@ -4648,7 +4639,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 	q4::temp 7118,9870 7080,10098
 ',
          'from' => 1646348400,
-         'id' => 3223,
+         'id' => 3224,
          'recurring' => 1,
          'text' => 'Gleditschstr. am Winterfeldplatz: samstags Sperrung wegen des Wochenmarkts, 6 bis 19 Uhr',
          'type' => 'handicap',
@@ -4663,7 +4654,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
          'from' => 1587621600,
-         'id' => 3224,
+         'id' => 3225,
          'recurring' => 1,
          'text' => 'Boxhagener Platz: samstags 6 bis 20 Uhr Sperrung der umliegenden Straßen wegen des Wochenmarkts',
          'type' => 'gesperrt',
@@ -4706,7 +4697,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 	q4::temp::play 10670,14116 10716,14195 10739,14228
 ',
          'from' => 1746050400,
-         'id' => 3253,
+         'id' => 3254,
          'recurring' => 1,
          'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.5. bis 30.9. (außer Schulferien)',
          'type' => 'handicap',
@@ -4749,7 +4740,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: tempex ^^^
 ',
          'from' => undef,
-         'id' => 3269,
+         'id' => 3270,
          'recurring' => 1,
          'text' => 'Altstadt Spandau: Fußgängerzone, Radfahren nur Montag bis Samstag nachts (19:00 bis 09:00 Uhr) sowie Sonntag ganztägig zugelassen',
          'type' => 'handicap',
@@ -4783,7 +4774,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 	q4::temp:clock 16801,1791 16992,1566
 ',
          'from' => undef,
-         'id' => 3293,
+         'id' => 3294,
          'recurring' => 1,
          'text' => 'Prierosser Str.: Mo und Sa 08.00-13.00 wegen Wochenmarkt Rudow gesperrt, Radfahrer müssen schieben',
          'type' => 'handicap',
@@ -4808,7 +4799,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 	q4::inwork 12162,8053 12147,8117
 ',
          'from' => undef,
-         'id' => 3297,
+         'id' => 3298,
          'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, geplant bis Ende Dezember 2025',
          'type' => 'handicap',
          'until' => 1767196800
@@ -4844,7 +4835,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 ',
          'from' => 1720994400,
-         'id' => 3312,
+         'id' => 3313,
          'text' => 'Lemkestr.: zwischen Sudermannstr. und Lenbachstr. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Sudermannstr., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => 1785513600
@@ -4887,7 +4878,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
-         'id' => 3320,
+         'id' => 3321,
          'text' => 'Passauer Str.: Fahrbahn gesperrt (Stand Mai 2025), Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -4909,7 +4900,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4::temp:clock 18478,10406 18418,10365
 ',
          'from' => undef,
-         'id' => 3332,
+         'id' => 3333,
          'recurring' => 1,
          'text' => 'Heinrich-Dathe-Platz.: Wochenmarkt Mo, Do und Fr 08.00-17.00',
          'type' => 'handicap',
@@ -4953,7 +4944,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 ',
          'from' => undef,
-         'id' => 3349,
+         'id' => 3350,
          'text' => 'Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt, voraussichtliche Freigabe 2024',
          'type' => 'gesperrt',
          'until' => undef
@@ -4963,7 +4954,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	2::night 22279,4220 22224,4226
 ',
          'from' => undef,
-         'id' => 3350,
+         'id' => 3351,
          'recurring' => 1,
          'text' => 'Judisgasse: nur tagsüber geöffnet',
          'type' => 'gesperrt',
@@ -4990,7 +4981,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: tempex ^^^
 ',
          'from' => undef,
-         'id' => 3356,
+         'id' => 3357,
          'recurring' => 1,
          'text' => 'Campus AF 60: am Wochenende und nachts geschlossen',
          'type' => 'gesperrt',
@@ -5005,7 +4996,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
          'data' => '	2::temp -1846,8129 -1798,7949 -1640,7832 -1328,7597
 ',
          'from' => undef,
-         'id' => 3362,
+         'id' => 3363,
          'permanent' => 1,
          'text' => 'Dahlemer Feld: kann wegen Beweidung gesperrt sein',
          'type' => 'gesperrt',
@@ -5027,7 +5018,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4::temp::play 14798,12502 15005,12443
 ',
          'from' => 1748642400,
-         'id' => 3367,
+         'id' => 3368,
          'recurring' => 1,
          'text' => 'Bänschstr.: zwischen Voigtstr. und Pettenkoferstr. sonntags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 31.08., außer in den Sommerferien',
          'type' => 'handicap',
@@ -5040,7 +5031,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4::temp::play 13273,12902 13371,12694
 ',
          'from' => 1745964000,
-         'id' => 3368,
+         'id' => 3369,
          'recurring' => 1,
          'text' => 'Richard-Sorge-Str.: zwischen Mühsamstr. und Straßmannstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
          'type' => 'handicap',
@@ -5053,7 +5044,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4::temp::play 14468,11203 14531,11142
 ',
          'from' => 1745964000,
-         'id' => 3369,
+         'id' => 3370,
          'recurring' => 1,
          'text' => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
          'type' => 'handicap',
@@ -5067,7 +5058,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4::temp::play 12286,9739 12398,9938
 ',
          'from' => 1748642400,
-         'id' => 3371,
+         'id' => 3372,
          'recurring' => 1,
          'text' => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
          'type' => 'handicap',
@@ -5085,7 +5076,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4::temp::play 11917,9663 12074,9689
 ',
          'from' => 1747260000,
-         'id' => 3376,
+         'id' => 3377,
          'recurring' => 1,
          'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
          'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
@@ -5100,7 +5091,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4::temp::play 13038,8394 12856,8344
 ',
          'from' => 1747260000,
-         'id' => 3377,
+         'id' => 3378,
          'recurring' => 1,
          'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
          'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
@@ -5154,7 +5145,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
          'data' => '	q4::temp:clock 9880,9233 9892,9286
 ',
          'from' => undef,
-         'id' => 3421,
+         'id' => 3422,
          'recurring' => 1,
          'source_id' => 'https://www.berlin.de/special/shopping/flohmaerkte/2222392-1724959-flohmarkt-am-marheinekeplatz-in-der-berg.html',
          'text' => 'Marheinekeplatz (Richtung Mittenwalder Str.): Trödelmarkt samstags 10 bis 16 Uhr, sonntags 11 bis 17 Uhr (Sommerhalbjahr) bzw. 16 Uhr (Winterhalbjahr)',
@@ -5184,7 +5175,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	2::night:weekend -2245,21544 -2242,21927
 ',
          'from' => undef,
-         'id' => 3440,
+         'id' => 3441,
          'text' => 'Kolonie am See: Weg kann sonntags, feiertags und nachts ab 20h gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
@@ -5202,7 +5193,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	2::inwork 7673,4223 7769,4315
 ',
          'from' => 1630965600,
-         'id' => 3442,
+         'id' => 3443,
          'text' => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, bis 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -5235,7 +5226,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 ',
          'from' => undef,
-         'id' => 3461,
+         'id' => 3462,
          'source_id' => 'https://oekomarkt-chamissoplatz.de/',
          'text' => 'Ökomarkt Chamissoplatz: zu Marktzeiten Sperrung des östlichen Teil des Chamissoplatzes, samstags von 6 bis 19 Uhr',
          'type' => 'gesperrt',
@@ -5255,7 +5246,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	2 -7663,15304 -7636,15309 -7408,15219
 ',
          'from' => undef,
-         'id' => 3466,
+         'id' => 3467,
          'text' => 'Zeestower Weg - Finkenkruger Weg: Privatweg, Betreten auf eigene Gefahr',
          'type' => 'gesperrt',
          'until' => undef
@@ -5292,7 +5283,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 	q4 16038,9837 16026,9821 16002,9787
 ',
          'from' => undef,
-         'id' => 3488,
+         'id' => 3489,
          'permanent' => 1,
          'text' => 'Bolleufer: Grünanlage, Radfahren offiziell verboten',
          'type' => 'handicap',
@@ -5323,7 +5314,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 ',
          'from' => 1752605472,
-         'id' => 3495,
+         'id' => 3496,
          'text' => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, voraussichtlich bis Mitte Oktober 2025',
          'type' => 'gesperrt',
          'until' => 1760205600
@@ -5338,7 +5329,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 	q4::temp:clock 13508,15912 13511,15964
 ',
          'from' => undef,
-         'id' => 3501,
+         'id' => 3502,
          'recurring' => 1,
          'source_id' => 'https://www.berlin.de/sen/web/service/maerkte-feste/wochen-troedelmaerkte/index.php/detail/205',
          'text' => 'Antonplatz: Wochenmarkt Mo bis Fr 09:00-18:00',
@@ -5368,7 +5359,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 #: osm_watch ^^^
 ',
          'from' => undef,
-         'id' => 3513,
+         'id' => 3514,
          'text' => 'Wintgensstr./Gontermannstr. - General-Pape-Str.: Tor kann verschlossen sein; wenn es offen ist, dann üblicherweise nur eine lichte Breite von 100cm (könnte für Anhänger oder Lastenräder knapp sein)',
          'type' => 'gesperrt',
          'until' => undef
@@ -5413,7 +5404,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: last_checked ^^^
 ',
          'from' => 1645336800,
-         'id' => 3517,
+         'id' => 3518,
          'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn; außerdem sind die Fahrbahnen von Saalestr. und Mittelbuschweg gesperrt, vom 13.05.2024 07:00 bis Dezember 2025',
          'type' => 'handicap',
          'until' => 1765468800
@@ -5436,7 +5427,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: note ^^^
 ',
          'from' => undef,
-         'id' => 3529,
+         'id' => 3530,
          'permanent' => 1,
          'text' => 'Neuköllnische Wiesen: Tor kann möglicherweise verschlossen sein',
          'type' => 'gesperrt',
@@ -5470,7 +5461,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 ',
          'from' => undef,
-         'id' => 3537,
+         'id' => 3538,
          'text' => 'Ganghoferstr.: Einbahnstraße wegen Bauarbeiten, Gültigkeit für Radfahrer unklar',
          'type' => 'handicap',
          'until' => undef
@@ -5504,7 +5495,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: last_checked ^^^
 ',
          'from' => 1748556000,
-         'id' => 3538,
+         'id' => 3539,
          'text' => 'Weserstr.: Bauarbeiten zwischen Innstr. und Treptower Str. sowie in der Treptower Str. zwischen Weserstr. und Stuttgarter Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -5567,7 +5558,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: next_check ^^^
 ',
          'from' => 1744581600,
-         'id' => 3550,
+         'id' => 3551,
          'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags zunächst bis Mitte September 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -5580,7 +5571,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 	q4::temp::play 12822,10487 12897,10439
 ',
          'from' => 1747864800,
-         'id' => 3551,
+         'id' => 3552,
          'recurring' => 1,
          'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
          'type' => 'handicap',
@@ -5611,7 +5602,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
 ',
          'from' => 1750456800,
-         'id' => 3569,
+         'id' => 3570,
          'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis Mitte September',
          'type' => 'gesperrt',
          'until' => 1757865600
@@ -5621,7 +5612,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 	2::temp -8489,-2220 -8574,-2204 -8653,-2195
 ',
          'from' => undef,
-         'id' => 3570,
+         'id' => 3571,
          'permanent' => 1,
          'text' => 'Joe-May-Str.: RBB-Gelände, eventuell nicht zugänglich',
          'type' => 'gesperrt',
@@ -5643,7 +5634,7 @@ Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::
 # REMOVED --- #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin --- #: last_checked: 2025-02-04 (mapillary) --- #: next_check: 2025-11-30 (maz) --- #: note: eigentlich 1s:q3 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
 ',
          'from' => 1656194400,
-         'id' => 3574,
+         'id' => 3575,
          'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung bis voraussichtlich Herbst 2025',
          'type' => 'gesperrt',
          'until' => 1759334400
@@ -5695,7 +5686,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: last_checked ^^^
 ',
          'from' => 1656799200,
-         'id' => 3579,
+         'id' => 3580,
          'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Oktober 2025',
          'type' => 'handicap',
          'until' => undef
@@ -5749,7 +5740,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 	q4::inwork; 1385,5214 1333,5246 1212,5353
 ',
          'from' => 1736839577,
-         'id' => 3605,
+         'id' => 3606,
          'text' => 'Hüttenweg: zwischen Marshallstr. und Am Waldfriedhof Richtung Westen gesperrt, voraussichtlich bis 08.10.2025',
          'type' => 'handicap',
          'until' => 1759935600
@@ -5786,7 +5777,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
          'from' => undef,
-         'id' => 3616,
+         'id' => 3617,
          'text' => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg gesperrt',
          'type' => 'gesperrt',
          'until' => undef
@@ -5840,7 +5831,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: add_fragezeichen ^^^
 ',
          'from' => 1663524336,
-         'id' => 3623,
+         'id' => 3624,
          'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis März 2026',
          'type' => 'handicap',
          'until' => undef
@@ -5870,7 +5861,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 3626,
+         'id' => 3627,
          'text' => 'Marlene-Dietrich-Platz: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -5884,7 +5875,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024) (bis auf weiteres)
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="17"
+#: osm_watch: way id="1117348911" version="18"
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 #: also_indoor: traffic (G[zu viel],re-B[zu viel],T[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
@@ -5893,13 +5884,13 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-08-23
+#: last_checked: 2025-08-24 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
 ',
          'from' => undef,
-         'id' => 3630,
+         'id' => 3631,
          'text' => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
@@ -5916,7 +5907,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 	q4 11153,4306 11125,4331
 ',
          'from' => undef,
-         'id' => 3638,
+         'id' => 3639,
          'permanent' => 1,
          'text' => 'Am Britzer Garten - Straße 229/Koppelweg: Grünanlage, Radfahren offiziell verboten',
          'type' => 'handicap',
@@ -5927,7 +5918,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 	q4; 9021,3878 9073,3892 9117,3898
 ',
          'from' => undef,
-         'id' => 3639,
+         'id' => 3640,
          'permanent' => 1,
          'text' => 'Rathausstr. - Richterstr.: Grünanlage, Radfahren offiziell verboten',
          'type' => 'handicap',
@@ -5944,7 +5935,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 	q4::temp:clock 12412,9610 12250,9691
 ',
          'from' => 1742598000,
-         'id' => 3640,
+         'id' => 3641,
          'recurring' => 1,
          'text' => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
          'type' => 'gesperrt',
@@ -5978,7 +5969,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: XXX ^^^
 ',
          'from' => undef,
-         'id' => 3641,
+         'id' => 3642,
          'text' => 'Flughafen Tegel: Privatgelände, für den öffentlichen Verkehr gesperrt, teilweise auch Sperrungen wegen Bauarbeiten',
          'type' => 'gesperrt',
          'until' => undef
@@ -5991,7 +5982,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 	2::temp:clock -107,12220 -76,12236 -10,12256
 ',
          'from' => undef,
-         'id' => 3644,
+         'id' => 3645,
          'recurring' => 1,
          'text' => 'Rossitter Platz - Machandelweg: Durchgang ist nur Mo-Fr (außer feiertags) 5:00-19:30 Uhr offen',
          'type' => 'gesperrt',
@@ -6019,7 +6010,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 	q4::temp:clock 12594,14065 12486,14143
 ',
          'from' => undef,
-         'id' => 3662,
+         'id' => 3663,
          'recurring' => 1,
          'source_id' => 'http://www.boetzowmarkt.de/',
          'text' => 'Pasteurstr.: samstags 9-15 Uhr Wochenmarkt Arnswalder Platz, Fahrbahn zwischen Bötzowstr. und Hans-Otto-Str. gesperrt',
@@ -6069,7 +6060,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
 ',
          'from' => undef,
-         'id' => 3683,
+         'id' => 3684,
          'text' => 'Sennheimer Str.: mögliche Sperrungen wegen Bauarbeiten',
          'type' => 'handicap',
          'until' => undef
@@ -6087,7 +6078,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 	2::inwork 9123,533 9178,556
 ',
          'from' => undef,
-         'id' => 3689,
+         'id' => 3690,
          'text' => 'Buckower Chaussee: der Bahnübergang wird demnächst (voraussichtlich ab 1.12.2022) wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
          'type' => 'gesperrt',
          'until' => 1767221999
@@ -6102,7 +6093,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 	q4::inwork; 5497,10719 5471,10719
 ',
          'from' => undef,
-         'id' => 3692,
+         'id' => 3693,
          'text' => 'Augsburger Str.: Hochbauarbeiten an der Joachimsthaler Str., Einbahnstraße, offen Richtung Osten, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -6125,7 +6116,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 	2::temp 7422,13487 7338,13649 7343,13679 7431,13740 7445,13792 7417,13880 7452,13904
 ',
          'from' => undef,
-         'id' => 3706,
+         'id' => 3707,
          'recurring' => 1,
          'text' => 'zum Poststadion: Tore, Weg kann gesperrt sein (vielleicht nachts?)',
          'type' => 'gesperrt',
@@ -6147,7 +6138,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 	2::night 7416,10492 7432,10546 7337,10587
 ',
          'from' => undef,
-         'id' => 3718,
+         'id' => 3719,
          'recurring' => 1,
          'text' => 'Kurfürstenstr. - Pohlstr.: Durchgang nachts zwischen 22:00 und 7:00 geschlossen',
          'type' => 'gesperrt',
@@ -6191,7 +6182,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 #: last_checked ^^^
 ',
          'from' => 1697320800,
-         'id' => 3727,
+         'id' => 3728,
          'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Engadiner Weg Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt',
          'type' => 'gesperrt',
          'until' => 1761843600
@@ -6249,7 +6240,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 	q4::inwork; 22431,6068 22467,6135
 ',
          'from' => 1762642800,
-         'id' => 3734,
+         'id' => 3735,
          'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Radfahrer Richtung Norden sollen durch den Bahnhof Köpenick schieben',
          'type' => 'gesperrt',
          'until' => undef
@@ -6269,7 +6260,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 #: tempex ^^^
 ',
          'from' => undef,
-         'id' => 3743,
+         'id' => 3744,
          'recurring' => 1,
          'text' => 'Virchow-Klinikum, Eingang Oststraße: offiziell nur Mo-Fr offen, im Winter zwischen 05:00 und 17:00 Uhr, im Sommer bis 20:00 Uhr; kann aber auch samstags offen sein',
          'type' => 'gesperrt',
@@ -6281,7 +6272,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 	2::temp 6331,15408 6348,15423
 ',
          'from' => undef,
-         'id' => 3744,
+         'id' => 3745,
          'recurring' => 1,
          'text' => 'Virchow-Klinikum, Eingang Ost-West-Straße: vermutlich nur Mo-Fr tagsüber offen',
          'type' => 'gesperrt',
@@ -6300,7 +6291,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 	2::temp 12582,8651 12434,8776
 ',
          'from' => undef,
-         'id' => 3752,
+         'id' => 3753,
          'recurring' => 1,
          'text' => 'Idealpassage: Durchfahrt kann gesperrt sein',
          'type' => 'gesperrt',
@@ -6338,7 +6329,7 @@ Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,2566
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 ',
          'from' => 1681189200,
-         'id' => 3763,
+         'id' => 3764,
          'text' => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -6352,7 +6343,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q4 10083,10192 10226,10145 10362,10120 10521,10126
 ',
          'from' => undef,
-         'id' => 3768,
+         'id' => 3769,
          'permanent' => 1,
          'text' => 'Am Landwehrkanal: Grünanlage, Radfahren nicht erlaubt',
          'type' => 'handicap',
@@ -6400,7 +6391,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q3::inwork; 7872,13022 7873,12927
 ',
          'from' => 1683010800,
-         'id' => 3799,
+         'id' => 3800,
          'text' => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, vom 03.05.2023 09:00 bis 05.09.2025 17:00',
          'type' => 'handicap',
          'until' => 1757084400
@@ -6427,7 +6418,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 3800,
+         'id' => 3801,
          'text' => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, voraussichtlich bis 31.08.2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -6447,7 +6438,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q4::temp:clock 10739,16146 10729,16042
 ',
          'from' => undef,
-         'id' => 3811,
+         'id' => 3812,
          'recurring' => 1,
          'source_id' => 'https://bbm-maerkte.de/bauernmarkt-seelower-strasse/',
          'text' => 'Seelower Str.: samstags 10-16 Uhr Wochenmarkt, Fahrbahn zwischen Schivelbeiner Str. und Dänenstr. gesperrt',
@@ -6468,7 +6459,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
          'from' => undef,
-         'id' => 3818,
+         'id' => 3819,
          'text' => 'Dolgenseestr.: Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -6492,7 +6483,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 ',
          'from' => undef,
-         'id' => 3826,
+         'id' => 3827,
          'text' => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt, evtl. ist ein Umweg über das Stadler-Gelände möglich',
          'type' => 'gesperrt',
          'until' => undef
@@ -6507,7 +6498,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q4::temp::play 5956,7686 5812,7685
 ',
          'from' => 1743631200,
-         'id' => 3830,
+         'id' => 3831,
          'recurring' => 1,
          'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2025',
          'type' => 'handicap',
@@ -6529,7 +6520,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q3::inwork 3213,18115 3420,18470
 ',
          'from' => 1687609413,
-         'id' => 3833,
+         'id' => 3834,
          'text' => 'Otisstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, Bordstein, voraussichtlich bis 31.12.2025',
          'type' => 'handicap',
          'until' => 1767196800
@@ -6547,7 +6538,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q2::inwork 3267,18767 3008,18464
 ',
          'from' => 1687609413,
-         'id' => 3834,
+         'id' => 3835,
          'text' => 'Flohrstr..: Baustelle unter der U-Bahnbrücke, Gehweg für Radfahrer frei, voraussichtlich bis 31.12.2025',
          'type' => 'handicap',
          'until' => 1767196800
@@ -6598,7 +6589,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q4::inwork 10178,20525 10066,20494
 ',
          'from' => 1755295119,
-         'id' => 3865,
+         'id' => 3866,
          'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 09.09.2025',
          'type' => 'handicap',
          'until' => 1757404800
@@ -6618,7 +6609,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	2::inwork 11162,22939 11150,22898
 ',
          'from' => undef,
-         'id' => 3872,
+         'id' => 3873,
          'text' => 'Steg am Krugpfuhl gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
@@ -6631,7 +6622,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 	q4::temp:clock 12987,7560 13100,7626
 ',
          'from' => undef,
-         'id' => 3874,
+         'id' => 3875,
          'recurring' => 1,
          'text' => 'Karl-Marx-Platz: Mi 11 bis 18 Uhr und Sa 8 bis 15 Uhr Einschränkungen wegen des Wochenmarkts möglich',
          'type' => 'handicap',
@@ -6682,7 +6673,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 ',
          'from' => 1755381600,
-         'id' => 3881,
+         'id' => 3882,
          'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 18.08.2025 6:00 Uhr bis 10.11.2025',
          'type' => 'gesperrt',
          'until' => 1762815599
@@ -6697,29 +6688,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: TAGDEROFFENENTUER-BUNDESREGIERUNG-RECURRING
-#: source_id: viz2021:13.38639,52.5137,18.08.2023,05:00 (inaktiv)
-#: source_id: viz2021:13.38651,52.51281,22.08.2025,05:00 (bis 24.08.2025)
-#: note: 2025 gab\'s eine Umleitung für Radfahrer via Taubenstr. - Mauerstr.
-	2::temp 9207,11880 9195,11972
-',
-         'from' => 1755727200,
-         'id' => 3892,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Glinkastr.: Veranstaltung, Fahrbahn zwischen Jägerstr. und Taubenstr. gesperrt, vom 22.08.2025 05:00 bis 24.08.2025 22:00',
-         'type' => 'gesperrt',
-         'until' => 1756069200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6747,7 +6716,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 ',
          'from' => 1746680400,
-         'id' => 3898,
+         'id' => 3899,
          'text' => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, voraussichtlich bis Juni 2026',
          'type' => 'handicap',
          'until' => 1780585200
@@ -6780,7 +6749,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 ',
          'dont_check_date' => 1,
          'from' => 1693458000,
-         'id' => 3912,
+         'id' => 3913,
          'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis voraussichtlich Ende März 2026',
          'type' => 'handicap',
          'until' => 1774886400
@@ -6813,7 +6782,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: next_check ^^^
 ',
          'from' => undef,
-         'id' => 3919,
+         'id' => 3920,
          'text' => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis Ende 2025',
          'type' => 'handicap',
          'until' => 1766160000
@@ -6842,7 +6811,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 ',
          'dont_check_date' => 1,
          'from' => 1740817421,
-         'id' => 3926,
+         'id' => 3927,
          'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -6869,7 +6838,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::inwork 4335,17642 4392,17777
 ',
          'from' => undef,
-         'id' => 3937,
+         'id' => 3938,
          'text' => 'Uranusweg: Fahrbahn unter der U-Bahnbrücke gesperrt, Engstelle',
          'type' => 'handicap',
          'until' => undef
@@ -6883,7 +6852,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	2::inwork 24027,-86688 23957,-86937 23869,-87065
 ',
          'from' => 1698566400,
-         'id' => 3941,
+         'id' => 3942,
          'text' => 'Doberlug-Kirchhain: Sperrung der Brücke, 30.10.2023 09:00 Uhr bis 27.08.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1756306800
@@ -6912,7 +6881,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: next_check ^^^
 ',
          'from' => 1757628000,
-         'id' => 3955,
+         'id' => 3956,
          'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 13.9.2025 bis 14.9.2025',
          'type' => 'handicap',
          'until' => 1757887199
@@ -6968,7 +6937,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q4::inwork; 6681,10959 6607,10801
 ',
          'from' => undef,
-         'id' => 3990,
+         'id' => 3991,
          'text' => 'Landgrafenstr.: Hochbauarbeiten, Einbahnstraßenregelung zwischen Kurfürstenstr. und Wissmannstr., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -6989,7 +6958,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: tempex ^^^
 ',
          'from' => undef,
-         'id' => 3997,
+         'id' => 3998,
          'recurring' => 1,
          'text' => 'Neuer Markt am Südstern: samstags von 10-16 Uhr Wochenmarkt, Sperrung der Blücherstr. Richtung Norden sowie einiger Straßen am nördlichen Südstern',
          'type' => 'handicap',
@@ -7017,7 +6986,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 # REMOVED (nur der südliche Abschnitt ist laut osm+mapillary gesperrt) ---	2::inwork 9461,17795 9434,17823 9396,17863 9363,17868 9348,17885 9341,17917 9314,17943 9303,17965
 ',
          'from' => undef,
-         'id' => 3998,
+         'id' => 3999,
          'text' => 'Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten, voraussichtlich bis 2028',
          'type' => 'gesperrt',
          'until' => undef
@@ -7041,7 +7010,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 3999,
+         'id' => 4000,
          'text' => 'Weinmeisterstr. und Gipsstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, vermutlich bis Mitte September 2025',
          'type' => 'handicap',
          'until' => undef
@@ -7068,7 +7037,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 ',
          'dont_check_date' => 1,
          'from' => 1707087600,
-         'id' => 4005,
+         'id' => 4006,
          'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Ende 2025',
          'type' => 'handicap',
          'until' => 1767200400
@@ -7108,7 +7077,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 #: add_fragezeichen ^^^
 ',
          'from' => 1707890400,
-         'id' => 4008,
+         'id' => 4009,
          'text' => 'Rathenower Str./Stendaler Str.: direkte Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, evtl. Umwege notwendig, voraussichtlich bis 23.09.2025 17:00',
          'type' => 'handicap',
          'until' => 1758639600
@@ -7132,7 +7101,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 	2::inwork 7772,12694 7521,12581
 ',
          'from' => 1708236000,
-         'id' => 4010,
+         'id' => 4011,
          'text' => 'Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende Oktober 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -7180,7 +7149,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 ',
          'from' => 1711947600,
-         'id' => 4033,
+         'id' => 4034,
          'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
          'type' => 'gesperrt',
          'until' => 1793466000
@@ -7203,7 +7172,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 ',
          'from' => 1755468000,
-         'id' => 4037,
+         'id' => 4038,
          'text' => 'Gierkeplatz: Bauarbeiten zwischen Gierkezeile und Schustehrusstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 28.02.2026',
          'type' => 'handicap',
          'until' => 1772298000
@@ -7217,7 +7186,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 	2::inwork 11448,28068 12126,27740
 ',
          'from' => undef,
-         'id' => 4042,
+         'id' => 4043,
          'text' => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betreoffen, bis 31.12.2025',
          'type' => 'gesperrt',
          'until' => 1767196800
@@ -7229,7 +7198,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 	q4::temp::play 9570,10566 9556,10666
 ',
          'from' => 1746396000,
-         'id' => 4045,
+         'id' => 4046,
          'recurring' => 1,
          'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 6. Mai bis zum 14. Oktober (außer Sommerferien) ',
          'type' => 'gesperrt',
@@ -7265,7 +7234,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
 ',
          'from' => 1717279200,
-         'id' => 4068,
+         'id' => 4069,
          'text' => 'Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle gesperrt, voraussichtlich bis Ende 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -7277,7 +7246,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
          'data' => '	q4::temp::play 7177,16715 7150,16760 7144,16781 7147,16800
 ',
          'from' => 1749074400,
-         'id' => 4072,
+         'id' => 4073,
          'recurring' => 1,
          'text' => 'Armenische Str.: zwischen Ungarnstr. und Sackgassenende am 1. und 3. Freitag im Monat zwischen 15:00 und 18:00 Uhr temporäre Spielstraße, Juni bis September',
          'type' => 'handicap',
@@ -7300,7 +7269,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 	q4::inwork; 5984,14819 5848,14977
 ',
          'from' => 1708581600,
-         'id' => 4080,
+         'id' => 4081,
          'text' => 'Sylter Str.: Fahrbahn zwischen Westring und Nordufer gesperrt, nur ein schmaler Gehweg ist übrig, vom 23.02.2024 07:00 bis 31.12.2028 17:00',
          'type' => 'handicap',
          'until' => 1861891200
@@ -7317,7 +7286,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
 ',
          'from' => 1717909200,
-         'id' => 4082,
+         'id' => 4083,
          'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
          'type' => 'handicap',
          'until' => 1767200400
@@ -7343,7 +7312,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 	q3::inwork; 5476,20372 5801,20339
 ',
          'from' => 1718254800,
-         'id' => 4088,
+         'id' => 4089,
          'text' => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, möglicherweise bis zum Sommer 2026',
          'type' => 'handicap',
          'until' => 1788274800
@@ -7385,7 +7354,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 #: last_checked ^^^
 ',
          'from' => 1719266400,
-         'id' => 4094,
+         'id' => 4095,
          'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Markgrafenstr., voraussichtlich bis 2027',
          'type' => 'handicap',
          'until' => 1814457600
@@ -7415,7 +7384,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 	2::inwork 4151,13961 4156,13914 4186,13710
 ',
          'from' => 1719941867,
-         'id' => 4104,
+         'id' => 4105,
          'text' => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Sperrung, voraussichtlich bis Oktober 2025',
          'type' => 'gesperrt',
          'until' => 1761930000
@@ -7445,7 +7414,7 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 #: add_fragezeichen ^^^
 ',
          'from' => undef,
-         'id' => 4107,
+         'id' => 4108,
          'text' => 'Weverpromenade: Bauarbeiten, mögliche Umwege, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
@@ -7504,7 +7473,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 #: add_fragezeichen ^^^
 ',
          'from' => 1750024800,
-         'id' => 4109,
+         'id' => 4110,
          'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., vom 17.06.2025 bis voraussichtlich 19.12.2025',
          'type' => 'gesperrt',
          'until' => 1766163600
@@ -7514,7 +7483,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 	2::temp 5857,14985 5867,14993
 ',
          'from' => undef,
-         'id' => 4110,
+         'id' => 4111,
          'recurring' => 1,
          'text' => 'Virchow-Klinikum, Eingang Sylter Str: offiziell nur Mo-Fr tagsüber ab 5 Uhr offen; kann aber auch samstags offen sein',
          'type' => 'gesperrt',
@@ -7552,7 +7521,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: next_check ^^^
 ',
          'from' => 1721512800,
-         'id' => 4116,
+         'id' => 4117,
          'text' => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024',
          'type' => 'handicap',
          'until' => undef
@@ -7577,7 +7546,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 	2::inwork 9017,17290 8982,17299
 ',
          'from' => undef,
-         'id' => 4128,
+         'id' => 4129,
          'text' => 'Heubuder Brücke: wegen Bauschäden gesperrt',
          'type' => 'gesperrt',
          'until' => undef
@@ -7598,7 +7567,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 	q4::temp:clock 23028,13062 23022,13133 22977,13148
 ',
          'from' => undef,
-         'id' => 4139,
+         'id' => 4140,
          'recurring' => 1,
          'text' => 'Cecilienplatz: Wochenmarkt, Mo, Mi, Fr 09:00-18:00',
          'type' => 'handicap',
@@ -7631,7 +7600,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 ',
          'from' => 1727647200,
-         'id' => 4144,
+         'id' => 4145,
          'text' => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -7653,7 +7622,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 ',
          'dont_check_date' => 1,
          'from' => 1724796000,
-         'id' => 4148,
+         'id' => 4149,
          'text' => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung der Fahrbahn, bis Ende September 2027',
          'type' => 'handicap',
          'until' => 1822316400
@@ -7677,7 +7646,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 	2::inwork 24769,48739 24781,48768 24766,48828
 ',
          'from' => 1724611975,
-         'id' => 4149,
+         'id' => 4150,
          'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Mitte oder sogar Ende 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -7719,7 +7688,7 @@ Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 4156,
+         'id' => 4157,
          'text' => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten gesperrt, außerdem Sperrungen des Wegs parallel zur Oderstr. (Stand Anfang August 2025: Crashgate ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
@@ -7737,7 +7706,7 @@ Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
 Marburger Str.	q3::inwork 5802,10621 5907,10821
 ',
          'from' => undef,
-         'id' => 4158,
+         'id' => 4159,
          'text' => 'Marburger Str.: Sperrung der Fahrbahn vor der Tauentzienstr., Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -7753,7 +7722,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 ',
          'from' => undef,
-         'id' => 4163,
+         'id' => 4164,
          'text' => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicherweise mit Bauzäunen versperrt sein (Stand Juni 2025: nicht passierbar)',
          'type' => 'gesperrt',
          'until' => undef
@@ -7775,7 +7744,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
 ',
          'from' => 1758837600,
-         'id' => 4168,
+         'id' => 4169,
          'periodic' => 1,
          'recurrences' => [
                             [
@@ -7832,7 +7801,7 @@ sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
 	2::inwork 9544,17629 9586,17665
 ',
          'from' => 1749074400,
-         'id' => 4171,
+         'id' => 4172,
          'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 06.06.2025 bis 01.12.2025',
          'type' => 'gesperrt',
          'until' => 1764608400
@@ -7869,7 +7838,7 @@ Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 ',
          'from' => 1742079600,
-         'id' => 4188,
+         'id' => 4189,
          'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, bis voraussichtlich Oktober 2026',
          'type' => 'gesperrt',
          'until' => 1793466000
@@ -7888,7 +7857,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 ',
          'from' => 1752962400,
-         'id' => 4198,
+         'id' => 4199,
          'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.07.2025 08:00 Uhr bis 28.02.2026 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1772294400
@@ -7909,7 +7878,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 	q4::inwork 2453,9156 2337,9178
 ',
          'from' => 1755381600,
-         'id' => 4200,
+         'id' => 4201,
          'text' => 'Lynarstr.: Anbindung Hubertusallee gesperrt, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 bis Mitte September 2025',
          'type' => 'handicap',
          'until' => 1757692800
@@ -7943,7 +7912,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 # REMOVED (hier mittlerweile keine Bauarbeiten mehr) ---	q4::inwork 13277,8211 13331,8283
 ',
          'from' => 1755535790,
-         'id' => 4215,
+         'id' => 4216,
          'text' => 'Roseggerstr.: Bauarbeiten zwischen Donaustr. und Sonnenallee, Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -7964,7 +7933,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 	q3::inwork; 23251,12146 23017,12177
 ',
          'from' => undef,
-         'id' => 4217,
+         'id' => 4218,
          'text' => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -7983,7 +7952,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 	q3::temp 10032,9456 10004,9268
 ',
          'from' => 1757196000,
-         'id' => 4218,
+         'id' => 4219,
          'recurring' => 1,
          'text' => 'Schleiermacherstr.: möglicherweise temporäre Schulstraße an Schultagen zwischen 9:30 und 15:30 Uhr',
          'type' => 'handicap',
@@ -8000,7 +7969,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
 ',
          'from' => 1731970800,
-         'id' => 4219,
+         'id' => 4220,
          'text' => 'Ella-Barowsky-Str.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis November 2026',
          'type' => 'handicap',
          'until' => 1796079600
@@ -8032,7 +8001,7 @@ Caroline-Tübbecke-Ufer: Fußgänger, Grünanlage	q4 15000,9820 15043,9790 15367,969
 Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 ',
          'from' => undef,
-         'id' => 4224,
+         'id' => 4225,
          'permanent' => 1,
          'text' => 'Uferwege auf Stralau: Grünanlage, Radfahren nicht erlaubt',
          'type' => 'handicap',
@@ -8057,7 +8026,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 	2::inwork -7182,15524 -7228,15504
 ',
          'from' => 1733007600,
-         'id' => 4225,
+         'id' => 4226,
          'text' => 'Steg über die Spektelake: wegen Brückenschäden Sperrung ab 2.12.2024',
          'type' => 'gesperrt',
          'until' => undef
@@ -8083,7 +8052,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 	q4::inwork 8384,7915 8260,7911
 ',
          'from' => undef,
-         'id' => 4233,
+         'id' => 4234,
          'text' => 'Wintgensstr.: Fahrbahn zwischen Gontermannstr. und Hessenring gesperrt, Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -8099,7 +8068,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
 ',
          'from' => 1736343075,
-         'id' => 4236,
+         'id' => 4237,
          'text' => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und General-Pape-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -8112,7 +8081,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 	q4::inwork 59707,90000 59702,89892 59722,89735
 ',
          'from' => 1737270000,
-         'id' => 4240,
+         'id' => 4241,
          'text' => 'Blumberg: Bauarbeiten, evtl. sind auch Radfahrer betroffen, 20.01.2025 08:00 Uhr bis 31.08.2025 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1756652400
@@ -8127,7 +8096,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 	q4::inwork 3355,5655 3346,5629
 ',
          'from' => 1737500400,
-         'id' => 4241,
+         'id' => 4242,
          'text' => 'Arnimallee: Fahrbahn an der Königin-Luise-Str. gesperrt, bis voraussichtlich Februar 2027',
          'type' => 'handicap',
          'until' => 1803657600
@@ -8140,7 +8109,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
 ',
          'from' => 1749765600,
-         'id' => 4242,
+         'id' => 4243,
          'text' => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 15.10.2025',
          'type' => 'handicap',
          'until' => 1760544000
@@ -8165,7 +8134,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: last_checked ^^^
 ',
          'from' => 1738450800,
-         'id' => 4244,
+         'id' => 4245,
          'text' => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung der Fahrbahn, vom 03.02.2025 bis voraussichtlich 30.11.2025',
          'type' => 'handicap',
          'until' => 1764543600
@@ -8185,7 +8154,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 	q4::inwork 2396,9427 2467,9425 2592,9419
 ',
          'from' => 1737970440,
-         'id' => 4246,
+         'id' => 4247,
          'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 05.12.2025',
          'type' => 'handicap',
          'until' => undef
@@ -8198,7 +8167,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 	q4::inwork 4692,10829 4704,10951 4709,11036
 ',
          'from' => 1738018800,
-         'id' => 4248,
+         'id' => 4249,
          'text' => 'Bleibtreustr.: Baustelle zwischen Niebuhrstr. und Kantstr., Sperrung der Fahrbahn, bis voraussichtlich 25.05.2026',
          'type' => 'handicap',
          'until' => 1779746400
@@ -8206,17 +8175,17 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025)
+#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
 Markgrafenstr. nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
 ',
          'from' => 1738350510,
-         'id' => 4249,
-         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 26.08.2025',
+         'id' => 4250,
+         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 09.09.2025',
          'type' => 'handicap',
-         'until' => 1756220400
+         'until' => 1757430000
        },
        undef,
        undef,
@@ -8227,7 +8196,7 @@ Markgrafenstr. nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
 	2::inwork -7632,34421 -8939,34942
 ',
          'from' => 1739088000,
-         'id' => 4254,
+         'id' => 4255,
          'text' => 'Bärenklau - Vehlefanz: Bauarbeiten, Sperrung, vom 10.02.2025 09:00 Uhr bis 30.08.2025 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1756562400
@@ -8243,7 +8212,7 @@ Seeweg (Weißensee): Grünanlage	q4 14485,16362 14480,16449
 Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 ',
          'from' => undef,
-         'id' => 4255,
+         'id' => 4256,
          'permanent' => 1,
          'text' => 'Park am Weißen See: Radfahren im Treptower Park offiziell nicht erlaubt',
          'type' => 'handicap',
@@ -8255,7 +8224,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 	2::inwork 41356,16225 41672,16084
 ',
          'from' => 1742108400,
-         'id' => 4257,
+         'id' => 4258,
          'text' => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 28.11.2025',
          'type' => 'gesperrt',
          'until' => 1764345600
@@ -8268,38 +8237,13 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 	2::inwork -30699,57370 -30570,57254 -30550,57216
 ',
          'from' => 1740265200,
-         'id' => 4258,
+         'id' => 4259,
          'text' => 'Ernst-Toller-Str., Neuruppin: Bauarbeiten, Sperrung (Fahrbahn & Gehweg), vom 24.02.2025 bis 30.04.2026',
          'type' => 'gesperrt',
          'until' => 1777586400
        },
        undef,
-       {
-         'data' => '#: next_check_id: ALTSTADTKOEPENICK-2024
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (Gesamtdauer der Arbeiten bis Mitte 2027)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22951.pdf (SEV wird ab Dezember 2025 wieder über den Schloßplatz geführt)
-#: source_id: bvg2024:162#f0f63843-db69-4d37-8f71-963e4e85cebf (kein Endedatum)
-#: source_id[inactive]: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
-#: source_id: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
-#: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
-#: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
-#: last_checked: 2025-07-19 vvv
-#: check_frequency: 45d vvv
-# REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
-#: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
-# REMOVED (hier mittlerweile offen)	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660
-	q4::inwork 22144,4660 22138,4642 22111,4562
-Platzfläche	q3::inwork 22111,4562 22093,4499
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1739702908,
-         'id' => 4260,
-         'text' => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Rosenstr. und Müggelheimer Str. gesperrt, geplant bis November 2025',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -8313,7 +8257,7 @@ Platzfläche	q3::inwork 22111,4562 22093,4499
 Scottweg	q3::inwork -1317,11300 -966,11382
 ',
          'from' => 1739720880,
-         'id' => 4263,
+         'id' => 4264,
          'text' => 'Scottweg: Fahrbahn gesperrt, Bürgersteig für Radfahrer frei, bis 30.09.2025',
          'type' => 'handicap',
          'until' => 1759244400
@@ -8327,7 +8271,7 @@ Scottweg	q3::inwork -1317,11300 -966,11382
 	q4::inwork 9824,19910 9498,19817
 ',
          'from' => 1739772000,
-         'id' => 4264,
+         'id' => 4265,
          'text' => 'Platanenstr.: Bauarbeiten zwischen Waldstr. und Treskowstr., Sperrung, vom 18.02.2025 07:00 bis 30.10.2025 17:00',
          'type' => 'handicap',
          'until' => 1761926400
@@ -8349,7 +8293,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 4269,
+         'id' => 4270,
          'text' => 'Auguste-Viktoria-Str./Reinerzstr.: Fahrbahn und Radwege vor der israelischen Botschaft gesperrt, Radfahrer sollen absteigen',
          'type' => 'handicap',
          'until' => undef
@@ -8361,7 +8305,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-T,ex-H)
+#: also_indoor: traffic (ex-T,re-H)
 #: last_checked: 2025-08-16
 #: check_frequency: 10d
 #: next_check: 2025-09-05 (Halteverbotsschilder)
@@ -8370,7 +8314,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (nach hinten gewandert) ---	2::inwork 17777,9649 17920,9698
 ',
          'from' => undef,
-         'id' => 4270,
+         'id' => 4271,
          'text' => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang September 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -8400,7 +8344,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 4271,
+         'id' => 4272,
          'permanent' => 1,
          'text' => 'Nalepastr.: Tore am Funkhaus können verschlossen sein',
          'type' => 'gesperrt',
@@ -8411,7 +8355,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 ',
          'from' => 1741503600,
-         'id' => 4272,
+         'id' => 4273,
          'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 10.09.2025',
          'type' => 'gesperrt',
          'until' => 1757516400
@@ -8428,7 +8372,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 	q4::inwork; 2092,7810 2099,7904 2112,8088 2121,8351
 ',
          'from' => 1741240800,
-         'id' => 4276,
+         'id' => 4277,
          'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 08.09.2025 17:00',
          'type' => 'handicap',
          'until' => 1757343600
@@ -8458,7 +8402,7 @@ Weißenhöher Weg: unter der Bahnbrücke	2::inwork 20354,11500 20150,11512
 Gladauer Str.: Zugang auch für Fußgänger gesperrt	2::inwork 20354,11500 20346,11337
 ',
          'from' => 1755381600,
-         'id' => 4281,
+         'id' => 4282,
          'text' => 'Weißenhöher Str.: komplette Sperrung der Straße (vermutlich wegen Brückenarbeiten), auch für den Rad- und Fußverkehr, auch die Anbindung Gladauer Str. ist gesperrt, vom 18.08.2025 bis 08.09.2025',
          'type' => 'gesperrt',
          'until' => 1757368799
@@ -8485,7 +8429,7 @@ Gladauer Str.: Zugang auch für Fußgänger gesperrt	2::inwork 20354,11500 20346,11
 Merler Weg	q4::inwork 18852,13269 19180,13219
 ',
          'from' => undef,
-         'id' => 4290,
+         'id' => 4291,
          'text' => 'Merler Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt, nur ein sehr enger Bürgersteig vorhanden, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -8501,7 +8445,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
 #: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
 #: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025) (inaktiv)
-#: source_id: viz2021:13.32634,52.44753,28.07.2025,07:00 (bis 25.08.2025)
+#: source_id: viz2021:13.32634,52.44753,28.07.2025,07:00 (bis 25.08.2025) (inaktiv)
 #: source_id: viz2021:13.31578,52.44314,18.08.2025,07:00 (hier nur Kfz-Verkehr, bis 10.09.2025)
 # REMOVED --- Klingsorstr.	q4::inwork 5206,4432 5150,4345
 # REMOVED --- Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
@@ -8522,7 +8466,7 @@ Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,404
 ',
          'dont_check_date' => 1,
          'from' => 1753567200,
-         'id' => 4291,
+         'id' => 4292,
          'text' => 'Klingsorstr.: Sanierungsarbeiten zwischen Brahmsstr. und Hindenburgdamm, Fahrbahn gesperrt, vom 18.08.2025 bis Anfang September 2025',
          'type' => 'handicap',
          'until' => 1758297600
@@ -8531,12 +8475,15 @@ Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,404
        {
          'data' => '#: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
+#: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
+#: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
 #: last_checked: 2025-08-14 (mapillary)
+#: next_check: 2025-08-25 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 ',
          'from' => undef,
-         'id' => 4293,
+         'id' => 4294,
          'text' => 'Erkelenzdamm: in Höhe Wassertorplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -8551,7 +8498,7 @@ Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,404
 	q4::inwork; 5518,12159 5317,12242
 ',
          'from' => undef,
-         'id' => 4294,
+         'id' => 4295,
          'text' => 'Gutenbergstr.: Einbahnstraßenregelung zwischen Englische Str. und Hannah-Karminski-Str., offen Richtung Westen, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -8561,7 +8508,7 @@ Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,404
 	q4 4360,10320 4352,10260
 ',
          'from' => undef,
-         'id' => 4295,
+         'id' => 4296,
          'permanent' => 1,
          'text' => 'Olivaer Platz: Radfahren in der Grünanlage verboten',
          'type' => 'handicap',
@@ -8573,7 +8520,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5228
 Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219,8635 5212,8602
 ',
          'from' => undef,
-         'id' => 4296,
+         'id' => 4297,
          'permanent' => 1,
          'text' => 'Schoelerpark: Radfahren verboten',
          'type' => 'handicap',
@@ -8593,7 +8540,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 	q3::inwork; 7202,9329 7209,9507
 ',
          'from' => undef,
-         'id' => 4299,
+         'id' => 4300,
          'text' => 'Elßholzstr.: Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -8656,7 +8603,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 4302,
+         'id' => 4303,
          'text' => 'Wassermannstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
          'type' => 'handicap',
          'until' => undef
@@ -8691,7 +8638,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 #: add_fragezeichen ^^^
 ',
          'from' => undef,
-         'id' => 4311,
+         'id' => 4312,
          'text' => 'Heesestr./Südendstr.: Sperrung der Fahrbahn zwischen Althoffstr. und Südendstr. sowie im Kreuzungsbereich Südendstr., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -8703,7 +8650,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 	q4::inwork 8365,5502 8365,5418
 ',
          'from' => 1744520400,
-         'id' => 4313,
+         'id' => 4314,
          'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 26.09.2025 17:00',
          'type' => 'handicap',
          'until' => 1758898800
@@ -8718,7 +8665,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 	2::inwork 33752,12593 33657,12479
 ',
          'from' => 1746338400,
-         'id' => 4318,
+         'id' => 4319,
          'text' => 'Fredersdorf-Vogelsdorf, Ernst-Thälmann-Str. und Fließstraße: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 05.05.2025 08:00 Uhr bis 31.10.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1761926400
@@ -8744,7 +8691,7 @@ Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
 #: last_checked ^^^
 ',
          'from' => undef,
-         'id' => 4319,
+         'id' => 4320,
          'text' => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, voraussichtlich bis 29.8.2025, evtl. wird verlängert',
          'type' => 'gesperrt',
          'until' => undef
@@ -8755,7 +8702,7 @@ Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
 	q4::inwork 14154,2923 14212,2865
 ',
          'from' => 1746334800,
-         'id' => 4320,
+         'id' => 4321,
          'text' => 'Imbuschweg: Anbindung Johannisthaler Chaussee gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis 30.10.2025 17:00',
          'type' => 'handicap',
          'until' => 1761840000
@@ -8768,7 +8715,7 @@ Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
 Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 ',
          'from' => 1746334800,
-         'id' => 4323,
+         'id' => 4324,
          'text' => 'Wernigeroder Str.: Hochbauarbeiten, Einbahnstraßenregelung zwischen Nordhauser Str. und Quedlinburger Str., Richtung Süden gesperrt, vom 05.05.2025 bis 30.11.2025',
          'type' => 'handicap',
          'until' => 1764543540
@@ -8780,7 +8727,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 	q4::inwork 5535,6521 5424,6584
 ',
          'from' => 1746687600,
-         'id' => 4326,
+         'id' => 4327,
          'text' => 'Peschkestr.: Anbindung an die Rheinstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 09:00 bis 17.10.2025 17:00',
          'type' => 'handicap',
          'until' => 1760713200
@@ -8807,7 +8754,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
 #: last_checked ^^^
 ',
          'from' => 1747223796,
-         'id' => 4335,
+         'id' => 4336,
          'text' => 'Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
          'type' => 'handicap',
          'until' => 1761951600
@@ -8822,7 +8769,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
 	2::inwork 8404,3648 8461,3410
 ',
          'from' => undef,
-         'id' => 4336,
+         'id' => 4337,
          'text' => 'Altes Gaswerk Mariendorf: Bauarbeiten, Straße gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
@@ -8840,7 +8787,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
 	q4::inwork; 15016,11431 14949,11474 14849,11539
 ',
          'from' => 1746939600,
-         'id' => 4338,
+         'id' => 4339,
          'text' => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, voraussichtlich bis 14.11.2025',
          'type' => 'handicap',
          'until' => undef
@@ -8853,7 +8800,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
 	q4::inwork; 4930,10368 4910,10135
 ',
          'from' => undef,
-         'id' => 4339,
+         'id' => 4340,
          'text' => 'Pfalzburger Str. (Wilmersdorf): Bauarbeiten zwischen Lietzenburger Str. und Ludwigkirchplatz, Einbahnstraße, offen Richtung Norden, evtl. sind auch Radfahrer betroffen, bis 19.09.2025',
          'type' => 'handicap',
          'until' => 1758297600
@@ -8866,7 +8813,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
 	q4::inwork 16915,11634 16957,11726
 ',
          'from' => undef,
-         'id' => 4340,
+         'id' => 4341,
          'text' => 'Wönnichstr.: Fahrbahn zwischen Einbecker Str. und Irenenstr. gesperrt, voraussichtlich bis Frühjahr 2026',
          'type' => 'handicap',
          'until' => undef
@@ -8896,7 +8843,7 @@ Borstellstr.	q4::inwork 6532,4422 6491,4391
 ',
          'dont_check_date' => 1,
          'from' => 1747562400,
-         'id' => 4344,
+         'id' => 4345,
          'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Mitte September 2025',
          'type' => 'handicap',
          'until' => undef
@@ -8930,7 +8877,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 #: last_checked ^^^
 ',
          'from' => 1748754000,
-         'id' => 4352,
+         'id' => 4353,
          'text' => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende September 2025, evtl. noch länger',
          'type' => 'handicap',
          'until' => 1764345600
@@ -8942,7 +8889,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 	q4::inwork 4581,8048 4461,8105 4457,8270
 ',
          'from' => 1748754000,
-         'id' => 4353,
+         'id' => 4354,
          'text' => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 03.12.2027 23:59',
          'type' => 'handicap',
          'until' => 1827874740
@@ -8955,7 +8902,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 	q4::inwork 4785,7438 4599,7474
 ',
          'from' => 1748754000,
-         'id' => 4354,
+         'id' => 4355,
          'text' => 'Homburger Str.: Bauarbeiten zwischen Laubacher Str. und Ahrweilerstr., Sperrung der Fahrbahn, vom 02.06.2025 bis 24.10.2025',
          'type' => 'handicap',
          'until' => 1761321600
@@ -8968,7 +8915,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
 ',
          'from' => 1748750400,
-         'id' => 4357,
+         'id' => 4358,
          'text' => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Leibnizstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
          'type' => 'handicap',
          'until' => 1757800740
@@ -8977,15 +8924,19 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (none)
+         'data' => '#: source_id: viz2021:13.43364,52.51255,25.08.2025,07:00 (bis 15.09.2025)
+#: also_indoor: traffic (none)
 #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025
+#: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt?
 #: last_checked: 2025-08-05
-#: next_check: 2025-08-30 (Halteverbotsschilder)
-	q4::inwork; 12238,11931 12413,11901
+# REMOVED --- #: next_check: 2025-08-30 (Halteverbotsschilder)
+#: next_check: 2025-08-25 (VIZ-Verkehrsmeldung)
+# REMOVED ---	q4::inwork; 12238,11931 12413,11901
+	q4::inwork 12238,11931 12413,11901
 ',
          'from' => 1749297422,
-         'id' => 4361,
-         'text' => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende August 2025',
+         'id' => 4362,
+         'text' => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Sperrung, voraussichtlich bis Mitte September 2025',
          'type' => 'handicap',
          'until' => 1756569600
        },
@@ -9000,7 +8951,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
 ',
          'from' => undef,
-         'id' => 4362,
+         'id' => 4363,
          'text' => 'Lange Str.: zwischen Krautstr. und Andreasstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, möglicherweise bis Ende 2026',
          'type' => 'handicap',
          'until' => undef
@@ -9019,7 +8970,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 	q4::inwork 4500,6612 4630,6534 4846,6417
 ',
          'from' => undef,
-         'id' => 4369,
+         'id' => 4370,
          'text' => 'Treitschkestr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -9029,11 +8980,12 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025)
-	q4::inwork 12627,19317 12457,19248
+#: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
+	q3::inwork 12627,19317 12457,19248
 ',
          'from' => 1750748520,
-         'id' => 4370,
-         'text' => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.06.2025 09:02 bis 31.10.2025',
+         'id' => 4371,
+         'text' => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, vom 25.06.2025 09:02 bis 31.10.2025',
          'type' => 'handicap',
          'until' => 1761951540
        },
@@ -9042,18 +8994,19 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
-#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025)
-#: note: mittlerweile beim rbb bis zum 08.08.2025 verlängert
+#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025)
+#: next_check: 2025-09-02 vvv
 Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
+#: next_check ^^^
 ',
          'from' => undef,
-         'id' => 4373,
-         'text' => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 25.08.2025',
+         'id' => 4374,
+         'text' => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 02.09.2025',
          'type' => 'gesperrt',
-         'until' => 1756137600
+         'until' => undef
        },
        {
          'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
@@ -9066,7 +9019,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 	q3::inwork 1036,11761 1078,11895 1100,11974
 ',
          'from' => 1750861140,
-         'id' => 4374,
+         'id' => 4375,
          'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, voraussichtlich bis 12. September 2025',
          'type' => 'gesperrt',
          'until' => 1757692800
@@ -9078,7 +9031,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 	q4::inwork; 17747,7322 17647,7280
 ',
          'from' => 1751183543,
-         'id' => 4375,
+         'id' => 4376,
          'text' => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende August 2025',
          'type' => 'handicap',
          'until' => undef
@@ -9095,7 +9048,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 	q4::inwork 22456,3889 22666,3888
 ',
          'from' => 1750888800,
-         'id' => 4378,
+         'id' => 4379,
          'text' => 'Charlottenstr.: Fahrbahn zwischen Karlstr. und Wendenschloßstr. gesperrt, voraussichtlich bis Ende Oktober 2025',
          'type' => 'handicap',
          'until' => 1761930000
@@ -9111,7 +9064,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 ',
          'from' => undef,
-         'id' => 4381,
+         'id' => 4382,
          'text' => 'Schleuse Heegermühle: Sperrung des Fuß- und Radwegs Treidelweg nördlich der Schleuse sowie der Straße Am Finowkanal, voraussichtlich bis Ende 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -9136,7 +9089,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: last_checked ^^^
 ',
          'from' => 1751954400,
-         'id' => 4382,
+         'id' => 4383,
          'text' => 'Schiffbauerdamm: Bauarbeiten zwischen Luisenstr. und Albrechtstr., Sperrung der Fahrbahn, Richtung Westen ist der Gehweg für Radfahrer frei, bis Mitte 2026',
          'type' => 'handicap',
          'until' => 1782918000
@@ -9149,7 +9102,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 	q4::inwork 10951,12249 10957,12401
 ',
          'from' => 1752060967,
-         'id' => 4383,
+         'id' => 4384,
          'text' => 'Klosterstr.: Bauarbeiten, Fahrbahn zwischen Stralauer Str. und Parochialstr. gesperrt, voraussichtlich bis Anfang September 2025',
          'type' => 'handicap',
          'until' => undef
@@ -9162,7 +9115,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 	q4::inwork; 5700,10226 5597,10299 5450,10338
 ',
          'from' => 1752012000,
-         'id' => 4384,
+         'id' => 4385,
          'text' => 'Schaperstr.: Bauarbeiten, von Nürnberger Str. Richtung Joachimsthaler Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 02.10.2025',
          'type' => 'handicap',
          'until' => 1759420800
@@ -9179,7 +9132,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 	q4::inwork 22740,4415 22542,4485 22495,4523
 ',
          'from' => 1752184800,
-         'id' => 4387,
+         'id' => 4388,
          'text' => 'Landjägerstr.: Leitungsarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Mitte September 2025',
          'type' => 'handicap',
          'until' => 1758297600
@@ -9192,7 +9145,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 	2::inwork 17950,8974 17915,8945
 ',
          'from' => 1752319411,
-         'id' => 4388,
+         'id' => 4389,
          'text' => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025',
          'type' => 'gesperrt',
          'until' => 1759428000
@@ -9205,7 +9158,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 	q3::inwork 4690,11369 4897,11354
 ',
          'from' => 1752514480,
-         'id' => 4389,
+         'id' => 4390,
          'text' => 'Goethestr.: Bauarbeiten zwischen Knesebeckstr. und Grolmanstr., Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei, bis 17.10.2025',
          'type' => 'handicap',
          'until' => 1760716800
@@ -9225,7 +9178,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 #: last_checked ^^^
 ',
          'from' => 1752606169,
-         'id' => 4390,
+         'id' => 4391,
          'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis September 2025',
          'type' => 'handicap',
          'until' => 1758319200
@@ -9237,7 +9190,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork -54051,23436 -53816,23532 -53633,23786 -53625,23953
 ',
          'from' => 1752616800,
-         'id' => 4391,
+         'id' => 4392,
          'text' => 'Stechow - Rhinsmühlen (B188): Bauarbeiten, Sperrung, vom 17.07.2025 bis 06.09.2025',
          'until' => 1757170800
        },
@@ -9252,7 +9205,7 @@ Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork 
 	q4::inwork 7628,9365 7509,9337
 ',
          'from' => undef,
-         'id' => 4393,
+         'id' => 4394,
          'text' => 'Willmanndamm: Sperrung vor der Langenscheidtstr., Ende der Bauarbeiten unbekannt ',
          'type' => 'handicap',
          'until' => undef
@@ -9262,7 +9215,7 @@ Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork 
 Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 10069,10151 10158,10117 10168,10085
 ',
          'from' => undef,
-         'id' => 4394,
+         'id' => 4395,
          'permanent' => 1,
          'text' => 'Carl-Herz-Ufer - Brachvogelstr.: Grünanlage, Radfahren nicht erlaubt',
          'type' => 'handicap',
@@ -9285,7 +9238,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 	1::inwork 15970,10755 16038,10818
 ',
          'from' => 1752789600,
-         'id' => 4395,
+         'id' => 4396,
          'text' => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 17.10.2025, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
@@ -9302,7 +9255,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
          'from' => 1726524000,
-         'id' => 4397,
+         'id' => 4398,
          'text' => 'Schubertstr.: Sperrung wegen Baustelle, auch für Fußgänger nicht passierbar, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
@@ -9327,7 +9280,7 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
 #: add_fragezeichen ^^^
 ',
          'from' => undef,
-         'id' => 4399,
+         'id' => 4400,
          'text' => 'Fußgängerbrücken Pulvermühle IV, VII und VIII: wegen Brückenschäden gesperrt, voraussichtlich bis Mitte Dezember 2025',
          'type' => 'gesperrt',
          'until' => undef
@@ -9339,7 +9292,7 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
 Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
 ',
          'from' => 1753119545,
-         'id' => 4400,
+         'id' => 4401,
          'text' => 'Lyckallee: zwischen Teufelsseestr. und Ortelsburger Allee igesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17.10.2025',
          'type' => 'handicap',
          'until' => 1760713200
@@ -9352,7 +9305,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 ',
          'from' => 1753596000,
-         'id' => 4402,
+         'id' => 4403,
          'text' => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 27.08.2025',
          'type' => 'gesperrt',
          'until' => 1756306800
@@ -9362,7 +9315,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 	q4::inwork 5125,3142 4967,3231
 ',
          'from' => 1753221600,
-         'id' => 4403,
+         'id' => 4404,
          'text' => 'Boothstr.: Anbindung an den Ostpreußendamm gesperrt, bis Ende August 2025 ',
          'type' => 'handicap',
          'until' => 1756490400
@@ -9375,7 +9328,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 	q4::inwork -5653,2481 -5663,2609 -5737,2746
 ',
          'from' => 1753221600,
-         'id' => 4404,
+         'id' => 4405,
          'text' => 'Am Großen Wannsee: Leitungsarbeiten zwischen Koblanckstr. und Zum Heckeshorn, Sperrung, vom 24.07.2025 bis Anfang November 2025',
          'type' => 'handicap',
          'until' => 1762455600
@@ -9385,7 +9338,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 	2::inwork -43355,-29316 -42946,-28772
 ',
          'from' => 1754200800,
-         'id' => 4405,
+         'id' => 4406,
          'text' => 'Bad Belzig, B246: Sperrung zwischen B102 und Am Kurpark, vom 04.08.2025 bis 05.09.2025',
          'type' => 'gesperrt',
          'until' => 1757084400
@@ -9401,7 +9354,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 	q4::inwork; 6360,4504 6283,4565 6203,4630
 ',
          'from' => 1755381600,
-         'id' => 4406,
+         'id' => 4407,
          'text' => 'Albrechtstr.: Fahrbahnsanierungsarbeiten, Einbahnstraßenregelung zwischen Presselstr. und Siemensstr., offen Richtung Südosten, vom 18.08.2025 bis 21.11.2025',
          'type' => 'gesperrt',
          'until' => 1763751600
@@ -9414,7 +9367,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 	2::inwork 17498,13015 17507,12781
 ',
          'from' => undef,
-         'id' => 4407,
+         'id' => 4408,
          'text' => 'Landschaftspark Herzberge: Nord-Süd-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
@@ -9428,7 +9381,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 	q4::inwork 6860,9529 7002,9526
 ',
          'from' => undef,
-         'id' => 4408,
+         'id' => 4409,
          'text' => 'Barbarossastr.: Bauarbeiten zwischen Karl-Schrader-Str. und Goltzstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
@@ -9455,7 +9408,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
 # später: Rosenheimer Str.: Bauarbeiten 2028/2029	? 6446,9328 6717,9339 6851,9365
 ',
          'from' => 1754329180,
-         'id' => 4409,
+         'id' => 4410,
          'text' => 'Barbarossaplatz: östlicher Platzbereich gesperrt, voraussichtlich bis Mitte Mai 2026',
          'type' => 'handicap',
          'until' => undef
@@ -9465,14 +9418,14 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: XXX Nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2025-08-20 (mapillary)
+#: last_checked: 2025-08-25
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 ',
          'from' => 1754431200,
-         'id' => 4410,
-         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Mitte August 2025: keine Sperrung des Diagonalwegs)',
+         'id' => 4411,
+         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Ende August 2025: keine Sperrung des Diagonalwegs)',
          'type' => 'gesperrt',
          'until' => 1767222000
        },
@@ -9482,7 +9435,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
 	q3::inwork 10066,10071 9837,10117
 ',
          'from' => 1754456400,
-         'id' => 4411,
+         'id' => 4412,
          'text' => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., ein kurzes Stück der Fahrbahn ist gesperrt, vom 07.08.2025 bis 04.09.2025',
          'type' => 'handicap',
          'until' => 1757023140
@@ -9494,7 +9447,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
 	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 ',
          'from' => 1755406800,
-         'id' => 4412,
+         'id' => 4413,
          'text' => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
          'type' => 'handicap',
          'until' => 1772298000
@@ -9509,7 +9462,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
 Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,11458 -6081,11508 -6174,11571 -6397,11664 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
 ',
          'from' => 1755627458,
-         'id' => 4413,
+         'id' => 4414,
          'text' => 'Mauerweg, Karolinenhöhe - Hahneberg: Sanierung, mögliche Sperrung, bis Sommer 2026',
          'type' => 'gesperrt',
          'until' => 1789920000
@@ -9519,31 +9472,12 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
 	2::inwork 45751,72662 45701,72652 45683,72646
 ',
          'from' => 1757224800,
-         'id' => 4414,
+         'id' => 4415,
          'text' => 'Görlsdorf: Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, vom 08.09.2025 08:00 Uhr bis 19.09.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1758294000
        },
-       {
-         'data' => '#: next_check_id: TAGDEROFFENENTUER-BUNDESREGIERUNG-RECURRING
-	2::temp 8969,11814 9042,11839 9075,11756
-',
-         'from' => 1755727200,
-         'id' => 4415,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Anton-Wilhelm-Amo-Str. - Wilhelmstr.: Veranstaltung, Fahrbahn gesperrt, voraussichtlich bis zum 24.08.2025 abends',
-         'type' => 'gesperrt',
-         'until' => 1756072800
-       },
+       undef,
        {
          'data' => '#: next_check_id: BLUECHER-2025
 #: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025)
@@ -9553,7 +9487,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
 #: last_checked ^^^
 ',
          'from' => 1755666000,
-         'id' => 4416,
+         'id' => 4417,
          'text' => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, Bauarbeiten, vom 21.08.2025 07:00 bis 15.09.2025 23:59',
          'type' => 'handicap',
          'until' => 1757973540
@@ -9562,13 +9496,13 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-08-22
+#: last_checked: 2025-08-25
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
 ',
          'from' => 1755881434,
-         'id' => 4417,
+         'id' => 4418,
          'text' => 'Rotherstr., Lehmbruckstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis April 2026',
          'type' => 'handicap',
          'until' => 1777586400
@@ -9578,7 +9512,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
 	2::inwork 13537,11186 13422,11236
 ',
          'from' => 1755406800,
-         'id' => 4418,
+         'id' => 4419,
          'text' => 'Helen-Ernst-Str.: Bauarbeiten zwischen Tamara-Danz-Str. und Hedwig-Wachenheim-Str., Sperrung, vom 18.08.2025 07:00 bis 29.08.2025 17:00',
          'type' => 'gesperrt',
          'until' => 1756479600
@@ -9589,7 +9523,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
 	2::inwork 22001,-1632 21861,-2154 21696,-2925 21722,-3421 21687,-3601 21607,-3739
 ',
          'from' => 1756015200,
-         'id' => 4419,
+         'id' => 4420,
          'text' => 'Waltersdorf - Berlin: Deckenerneuerung des Rad- und Gehwegs, Sperrung, vom 25.08.2025 08:00 Uhr bis 15.09.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1757948400
@@ -9600,7 +9534,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
 	2::inwork 9383,17757 9434,17823
 ',
          'from' => 1756677600,
-         'id' => 4420,
+         'id' => 4421,
          'text' => 'Personentunnel am S-Bahnhof Wollankstraße: zeitweise Sperrung vom 2.9.2025 bis 4.9.2025 ',
          'type' => 'gesperrt',
          'until' => 1757023200
@@ -9613,7 +9547,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
 	q4::inwork 17088,12506 17056,12304
 ',
          'from' => undef,
-         'id' => 4421,
+         'id' => 4422,
          'text' => 'Dietlindestr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef

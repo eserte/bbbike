@@ -24263,7 +24263,7 @@ EOF
        data  => <<EOF,
 #: source_id: IM_022405
 #: note: Gehweg ist hier relativ breit
-	q3::inwork; 14089,9610 14060,9574 14020,9524 13973,9465 13923,9405
+	q3::inwork; 14089,9610 14060,9574 14020,9524 13981,9474 13923,9405
 	q4::inwork; 13923,9405 13892,9365 13849,9310 13766,9200
 	q4::inwork; 13489,9456 13602,9581 13642,9624 13704,9691 13860,9861
 EOF
@@ -24571,7 +24571,7 @@ EOF
 #: source_id: IM_022700 (inaktiv)
 #: source_id: viz2021:13.37773,52.52895,17.08.2023,14:00 (bis 21.08.2023) (inaktiv)
 #: source_id: viz2021:13.37565,52.53115,18.08.2025,06:00 (bis 27.08.2025) (inaktiv)
-#: source_id: viz2021:13.37565,52.53115,21.08.2025,12:00 (bis 25.08.2025)
+#: source_id: viz2021:13.37565,52.53115,21.08.2025,12:00 (bis 25.08.2025) (inaktiv)
 	2::temp 8426,13909 8572,13671
 EOF
      },
@@ -28465,16 +28465,31 @@ EOF
 	q4 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
 EOF
      },
-     { from  => 1745163713, # 1526323594, # 2018-05-14 20:46
-       until => $isodate2epoch->("2025-05-31 18:00:00"), # $isodate2epoch->("2018-09-17 18:00:00"), # 1537048799, # 2018-09-15 23:59
+     { from  => $isodate2epoch->("2025-08-25 00:00:00"), # 1745163713, # 1526323594, # 2018-05-14 20:46
+       until => $isodate2epoch->("2025-08-29 18:00:00"), # $isodate2epoch->("2025-05-31 18:00:00"), # $isodate2epoch->("2018-09-17 18:00:00"), # 1537048799, # 2018-09-15 23:59
 #      text  => 'Scheffelstr. und Eldenaer Str.: Bauarbeiten Richtung Ebertystr. zwischen Möllendorffstr. und Liebigstr., Ausweichen auf engen Gehweg erlaubt, einige Bordsteine, bis Mitte September 2018',
 #      text  => 'Scheffelstr.: Bauarbeiten, Radwegführung auf engem Gehweg, voraussichtlich bis Ende Mai 2025',
-       text  => 'Scheffelstr.: Bauarbeiten, getrennte Rad- und Gehwegführung (aber eng), voraussichtlich bis Ende Mai 2025, evtl. wird verlängert',
+#      text  => 'Scheffelstr.: Bauarbeiten, getrennte Rad- und Gehwegführung (aber eng), voraussichtlich bis Ende Mai 2025, evtl. wird verlängert',
+       text  => 'Scheffelstr./Alfred-Jung-Str.: Bauarbeiten, Sperrung bzw. Einbahnstraßenregelung, 25.08.2025 bis 29.08.2025',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
 # REMOVED --- #: source_id: 2147342574 (inaktiv) --- #: note: laut fritz bis 14.09.2018, laut googlemaps sogar bis Anfang November 2018 --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschränkungen) --- #: XXX_prog: eigentlich q3+ --- #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)? --- #: priority: #A --- #: next_check: 2018-09-16 ---	q3::inwork; 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
-#: next_check_id: SCHEFFEL-2024
-Scheffelstr.	q2::inwork; 15357,12813 15233,12829 15169,12839
+# REMOVED --- #: next_check_id: SCHEFFEL-2024 --- Scheffelstr.	q2::inwork; 15357,12813 15233,12829 15169,12839
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lx75y4lls32e
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihrarrgbwuacjokfjvkhjtl7jrcte5bofv2ah3hbyedqyjckbhpoq@jpeg (keine Ausnahmen für Radfahrer)
+#: source_id: viz2021:13.4773,52.52026,25.08.2025,07:30 (bis 29.08.2025)
+Alfred-Jung-Str.: Einbahnstraße	q4::inwork; 15347,13124 15357,12813
+Scheffelstr.: gesperrte Einfahrt	q4::inwork; 15347,13124 15357,12813 15367,12815 15417,12823 15469,12831 15516,12838
+EOF
+     },
+     { from  => 1526407304, # 2018-05-15 20:01
+       until => $isodate2epoch->("2018-07-07 20:00:00"), # 1530395999, # 2018-06-30 23:59
+       text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 7. Juli 2018',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',
+       data  => <<EOF,
+#: source_id: 2147342627
+	q4::inwork; 15357,12813 15367,12815 15417,12823 15469,12831 15516,12838
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
@@ -29507,7 +29522,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-08-23 vvv
+#: last_checked: 2025-08-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -32049,7 +32064,7 @@ EOF
 #: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
-#: osm_watch: note 4813149 1
+#: osm_watch: note 4813149 2
 #: osm_watch: way id="198581621" version="19"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
@@ -37958,7 +37973,7 @@ EOF
 #: source_id[inactive]: bvg2021:396#BVG323890_0
 #: source_id: bvg2021:396#BVG339330_0 (bis 31.08.2024) (bis auf weiteres)
 #: osm_watch[closed]: note 4052359 1
-#: osm_watch: way id="1117348911" version="17"
+#: osm_watch: way id="1117348911" version="18"
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 #: also_indoor: traffic (G[zu viel],re-B[zu viel],T[zu viel])
 # REMOVED --- #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren --- #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag), 2022-11-05 (Samstag) gegen 10:00 --- #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00 --- 
@@ -37967,7 +37982,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-08-23
+#: last_checked: 2025-08-24 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -41680,7 +41695,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: TAGDEROFFENENTUER-BUNDESREGIERUNG-RECURRING
 #: source_id: viz2021:13.38639,52.5137,18.08.2023,05:00 (inaktiv)
-#: source_id: viz2021:13.38651,52.51281,22.08.2025,05:00 (bis 24.08.2025)
+#: source_id: viz2021:13.38651,52.51281,22.08.2025,05:00 (bis 24.08.2025) (inaktiv)
 #: note: 2025 gab's eine Umleitung für Radfahrer via Taubenstr. - Mauerstr.
 	2::temp 9207,11880 9195,11972
 EOF
@@ -47014,13 +47029,13 @@ EOF
 EOF
      },
      { from  => 1738350510, # 2025-01-31 20:08
-       until => $isodate2epoch->("2025-08-26 17:00:00"), # 1745445600, # 2025-04-24 00:00
-       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 26.08.2025',
+       until => $isodate2epoch->("2025-09-09 17:00:00"), # 1745445600, # 2025-04-24 00:00
+       text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 09.09.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025)
+#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -47154,7 +47169,7 @@ EOF
 EOF
      },
      { from  => 1739702908, # 2025-02-16 11:48
-       until => undef, # 1764543600, # 2025-12-01 00:00
+       until => 1756102684, # undef, # 1764543600, # 2025-12-01 00:00
 #      text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Freiheit und Müggelheimer Str. gesperrt, 17.02.2025 bis 30.11.2025',
 #      text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Freiheit und Müggelheimer Str. gesperrt, voraussichtlich bis November 2025',
        text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Rosenstr. und Müggelheimer Str. gesperrt, geplant bis November 2025',
@@ -47168,16 +47183,13 @@ EOF
 #: source_id: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
-#: last_checked: 2025-07-19 vvv
-#: check_frequency: 45d vvv
+# REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
-#: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
+# REMOVED --- #: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
 # REMOVED (hier mittlerweile offen)	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660
 	q4::inwork 22144,4660 22138,4642 22111,4562
 Platzfläche	q3::inwork 22111,4562 22093,4499
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1739634060, # 2025-02-15 16:41
@@ -47317,7 +47329,7 @@ EOF
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-T,ex-H)
+#: also_indoor: traffic (ex-T,re-H)
 #: last_checked: 2025-08-16
 #: check_frequency: 10d
 #: next_check: 2025-09-05 (Halteverbotsschilder)
@@ -47664,7 +47676,7 @@ EOF
 #: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
 #: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
 #: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025) (inaktiv)
-#: source_id: viz2021:13.32634,52.44753,28.07.2025,07:00 (bis 25.08.2025)
+#: source_id: viz2021:13.32634,52.44753,28.07.2025,07:00 (bis 25.08.2025) (inaktiv)
 #: source_id: viz2021:13.31578,52.44314,18.08.2025,07:00 (hier nur Kfz-Verkehr, bis 10.09.2025)
 # REMOVED --- Klingsorstr.	q4::inwork 5206,4432 5150,4345
 # REMOVED --- Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
@@ -47708,7 +47720,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
+#: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
+#: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
 #: last_checked: 2025-08-14 (mapillary)
+#: next_check: 2025-08-25 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 	q4::inwork 11117,10326 11094,10261
 EOF
@@ -48685,14 +48700,19 @@ EOF
      },
      { from  => 1749297422, # 2025-06-07 13:57
        until => $isodate2epoch->("2025-08-30 18:00:00"), # 1755381600, # 2025-08-17 00:00
-       text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende August 2025',
+#      text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende August 2025',
+       text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Sperrung, voraussichtlich bis Mitte September 2025',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: viz2021:13.43364,52.51255,25.08.2025,07:00 (bis 15.09.2025)
 #: also_indoor: traffic (none)
 #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025
+#: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt?
 #: last_checked: 2025-08-05
-#: next_check: 2025-08-30 (Halteverbotsschilder)
-	q4::inwork; 12238,11931 12413,11901
+# REMOVED --- #: next_check: 2025-08-30 (Halteverbotsschilder)
+#: next_check: 2025-08-25 (VIZ-Verkehrsmeldung)
+# REMOVED ---	q4::inwork; 12238,11931 12413,11901
+	q4::inwork 12238,11931 12413,11901
 EOF
      },
      { from  => undef,
@@ -48792,14 +48812,15 @@ EOF
      },
      { from  => 1750748520, # 2025-06-24 09:02
        until => 1761951540, # 2025-10-31 23:59
-       text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.06.2025 09:02 bis 31.10.2025',
+       text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, vom 25.06.2025 09:02 bis 31.10.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025)
-	q4::inwork 12627,19317 12457,19248
+#: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
+	q3::inwork 12627,19317 12457,19248
 EOF
      },
      { from  => undef,
@@ -48936,18 +48957,19 @@ Oberjägerweg	2::temp -4485,20420 -4053,20594
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2025-08-25 18:00:00"),
-       text  => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 25.08.2025',
+       until => undef, # $isodate2epoch->("2025-09-02 18:00:00"),
+       text  => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 02.09.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
-#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025)
-#: note: mittlerweile beim rbb bis zum 08.08.2025 verlängert
+#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025)
+#: next_check: 2025-09-02 vvv
 Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
+#: next_check ^^^
 EOF
      },
      { from  => 1750861140, # 2025-06-25 16:19
@@ -49443,14 +49465,14 @@ EOF
      },
      { from  => 1754431200, # 2025-08-06 00:00
        until => 1767222000, # 2026-01-01 00:00
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Mitte August 2025: keine Sperrung des Diagonalwegs)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Ende August 2025: keine Sperrung des Diagonalwegs)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: XXX Nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2025-08-20 (mapillary)
+#: last_checked: 2025-08-25
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -49532,7 +49554,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-08-22
+#: last_checked: 2025-08-25
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995

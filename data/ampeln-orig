@@ -23,9 +23,9 @@ Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage	X::inwork 16461,2569
 # 
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
-#: note: Gegenverkehrsstrecke über 50m, gilt auch für Radfahrer (trotz Radwege); mittlerweile beim rbb bis zum 08.08.2025 verlängert
-#: next_check: 2025-08-25 (VIZ-Verkehrsmeldung)
-#: valid: -20250825
+#: note: Gegenverkehrsstrecke über 50m, gilt auch für Radfahrer (trotz Radwege)
+#: next_check: 2025-09-02 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250902
 Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork::alternating 2708,9144
 # 
 # REMOVED --- #: note VIZ: Auf der Schnellerstraße und Oberspreestraße beginnen am Morgen Leitungsarbeiten. Bis Ende Juni ist die Oberspreestraße stadteinwärts zwischen Eisblumensteig und Bruno-Bürgel-Weg für den Kfz-Verkehr gesperrt (srt: für Radfahrer explizit offen). Eine Umleitung ist ausgeschildert. Zusätzlich regelt auf der Schnellerstraße in Höhe Bruno-Bürgel-Weg eine Baustellenampel wechselseitig den Verkehr.
@@ -159,13 +159,13 @@ Am Niederfeld/Lassaner Str./Rosenhagener Str.: Gegenverkehrsregelung	X::inwork::
 # 
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv) (bis 26.08.2025)
+#: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
 #: by: https://entwicklungsstadt.de/gefaehrliche-kreuzung-in-kreuzung-rudi-dutschke-strasse-soll-sicherer-werden/
 #: note: außerdem Anforderungsampel für querende Fußgänger
 #: last_checked: 2025-08-05
-#: next_check: 2025-08-26 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-09-09 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250521
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
 # 
@@ -535,7 +535,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2025-06-30 (SenMVKU website) vvv
 # REMOVED --- #: valid: 20190603-20250630 vvv
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-09-04 (SenMVKU website) vvv
 #: valid: 20190603-20251231 vvv
 #: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage
 	X::inwork 20891,17572
@@ -2177,7 +2177,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 16975,1262
 	X 15382,5687
 	X 15723,6151
-	X 13973,9465
+	X 13981,9474
 # REMOVED (war hier mal was?) --- X 17208,11658
 	X 17169,11677
 	X 23162,16095
@@ -2906,7 +2906,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: BAB100-2022
 #: XXX wird vermutlich zur Eröffnung der A100 eingeschaltet
 #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-08-20
+#: last_checked: 2025-08-25
 #: check_frequency: 120d
 #: next_check: 2025-08-27 (rbb)
 	X0 14185,9509
