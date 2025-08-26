@@ -2224,7 +2224,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-07-22
+#: last_checked: 2025-08-26
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -5552,14 +5552,14 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
 #: next_check: 2025-09-11 (VIZ-Verkehrsmeldung --- danach vielleicht ein neuer Bauzustand?) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
-# REMOVED --- Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
-# REMOVED --- Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
-	2::inwork 16166,25767 16121,25818
+Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
+Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
+# REMOVED ---	2::inwork 16166,25767 16121,25818
 #: next_check ^^^
 ',
          'from' => 1744581600,
          'id' => 3551,
-         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags zunächst bis Mitte September 2025',
+         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ene der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6054,14 +6054,15 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #	q4::inwork 2402,26121 2490,26126 2560,26139
 #	q4::inwork 2484,25984 2490,26126 2531,26251
 #: also_indoor: traffic (none)
-#: add_fragezeichen: Ist die Straße noch immer gesperrt?
+# REMOVED (#: add_fragezeichen: Ist die Straße noch immer gesperrt?
 #: last_checked: 2025-06-11 (mapillary)
 #: next_check: 2025-06-30 (BA-Seite)
-Sennheimer Str.	q4::inwork 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
+Sennheimer Str., 1. BA bis Huttenstr.	q3::inwork 2490,26126 2484,25984 2496,25915
+# REMOVED --- Sennheimer Str.	q4::inwork 2496,25915 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
 ',
-         'from' => undef,
+         'from' => 1756677600,
          'id' => 3684,
-         'text' => 'Sennheimer Str.: mögliche Sperrungen wegen Bauarbeiten',
+         'text' => 'Sennheimer Str.: mögliche Engstellen wegen Bauarbeiten, ab September 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7341,7 +7342,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-08-22 vvv
+#: last_checked: 2025-08-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8351,14 +8352,14 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'until' => undef
        },
        {
-         'data' => '#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025)
+         'data' => '#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 ',
          'from' => 1741503600,
          'id' => 4273,
-         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 10.09.2025',
+         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 07.09.2025',
          'type' => 'gesperrt',
-         'until' => 1757516400
+         'until' => 1757257200
        },
        undef,
        undef,
@@ -8617,7 +8618,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (re-G[teilweise],T[teilweise],W[teilweise])
+         'data' => '#: also_indoor: traffic (re-G[Südenedstr],T[Südenedstr],W[Südenedstr],A[Heesestr])
 #: osm_watch: way id="1237862681" version="6"
 #: osm_watch: way id="1237862680" version="3"
 #: osm_watch: way id="1237862682" version="3"
@@ -8628,7 +8629,7 @@ Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-08-13 (osm) vvv
+#: last_checked: 2025-08-26 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -8923,23 +8924,7 @@ Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.43364,52.51255,25.08.2025,07:00 (bis 15.09.2025)
-#: also_indoor: traffic (none)
-#: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025
-#: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt?
-#: last_checked: 2025-08-05
-# REMOVED --- #: next_check: 2025-08-30 (Halteverbotsschilder)
-#: next_check: 2025-08-25 (VIZ-Verkehrsmeldung)
-# REMOVED ---	q4::inwork; 12238,11931 12413,11901
-	q4::inwork 12238,11931 12413,11901
-',
-         'from' => 1749297422,
-         'id' => 4362,
-         'text' => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Sperrung, voraussichtlich bis Mitte September 2025',
-         'type' => 'handicap',
-         'until' => 1756569600
-       },
+       undef,
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
@@ -9096,14 +9081,14 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-08-21
+#: last_checked: 2025-08-26
 #: check_frequency: 30d
-#: next_check: 2025-09-01 (Halteverbotsschilder)
+# REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
 ',
          'from' => 1752060967,
          'id' => 4384,
-         'text' => 'Klosterstr.: Bauarbeiten, Fahrbahn zwischen Stralauer Str. und Parochialstr. gesperrt, voraussichtlich bis Anfang September 2025',
+         'text' => 'Klosterstr.: Bauarbeiten, Fahrbahn zwischen Stralauer Str. und Parochialstr. gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9551,6 +9536,43 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'text' => 'Dietlindestr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: HIRSCHGARTEN-2024
+#: by: https://sbahn.berlin/fahren/bahnhofsuebersicht/hirschgarten/ (kein Halt vom 05.08. (Di) 4 Uhr bis 06.09.2025 (Sa) 5 Uhr)
+#: osm_watch: note 4890807 2
+#: osm_watch: way id="37523779" version="6"
+#: next_check: 2025-08-03
+	2::inwork 23951,6063 23948,6054 23947,6014 23930,6013
+',
+         'from' => 1756139889,
+         'id' => 4423,
+         'text' => 'S-Bahnhof Hirschgarten: Unterführung kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/ginalien.bsky.social/post/3lxc3zodkrk2q
+#: also_indoor: traffic (T,H)
+	q4::inwork 3738,2821 3737,2671 3732,2461
+',
+         'from' => 1756230759,
+         'id' => 4424,
+         'text' => 'Theklastr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis zum 2.10.2025',
+         'type' => 'handicap',
+         'until' => 1759442400
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxbxsipifc2t
+#: source_id: viz2021:13.21262,52.54738, (kein Endedatum)
+#: also_indoor: traffic (T,G,H,W,A)
+	2::inwork -2453,15476 -2675,15513
+',
+         'from' => 1756072800,
+         'id' => 4425,
+         'text' => 'Eiswerderbrücke: Wasserrohrbruch, Sperrung, evtl. sind auch Radfahrer betroffen',
+         'type' => 'gesperrt',
+         'until' => 1757692800
        }
      
 );

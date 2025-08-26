@@ -63,7 +63,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="20"
 #: osm_watch: way id="1072662717" version="24"
-#: last_checked: 2025-08-18 (osm)
+#: last_checked: 2025-08-26
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -84,7 +84,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-06-17
+#: last_checked: 2025-08-26
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -143,7 +143,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-08-06 vvv
+#: last_checked: 2025-08-26 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -311,12 +311,12 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 ### Altglienicke ###
 # 
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luytvlnxp22k (Baustelle geht bis bis Anfang September 2025)
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidtu6b42iz4qag5uudnhhmbskliv54gctrdsjneoetidmre7aqdai@jpeg (Sackgasse Fußgänger frei, keine Verkehrsregelung für Radfahrer, recht kurzer Abschnitt (20m?))
-#: source_id: viz2021:13.53808,52.41511,28.07.2025,07:00 (bis 05.09.2025)
-#: next_check: 2025-09-05 (viz-bsky, VIZ-Verkehrsmeldung)
-#: valid: -20250905
-Ortolfstr.: kurzes Stück der Fahrbahn zwischen Peenestr. und Bernulfstr gesperrt	q3::inwork 19737,1204 19694,1074
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luytvlnxp22k (Baustelle geht bis bis Anfang September 2025)
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidtu6b42iz4qag5uudnhhmbskliv54gctrdsjneoetidmre7aqdai@jpeg (Sackgasse Fußgänger frei, keine Verkehrsregelung für Radfahrer, recht kurzer Abschnitt (20m?))
+# REMOVED --- #: source_id: viz2021:13.53808,52.41511,28.07.2025,07:00 (bis 05.09.2025) (vorfristig inaktiv)
+# REMOVED --- #: next_check: 2025-09-05 (viz-bsky, VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250905
+# REMOVED --- Ortolfstr.: kurzes Stück der Fahrbahn zwischen Peenestr. und Bernulfstr gesperrt	q3::inwork 19737,1204 19694,1074
 # 
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
 # 
@@ -494,7 +494,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-08-21
+#: last_checked: 2025-08-26
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
