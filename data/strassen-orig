@@ -9247,7 +9247,7 @@ Hönower Str. (Mahlsdorf)	H 24654,11265 24624,11374 24583,11537 24591,11587 24614
 Am Lupinenfeld	N 24159,13507 24347,13465 24539,13427 24752,13390 24802,13381 24879,13338 25031,13242 25138,13183 25181,13157
 Alt-Kaulsdorf	HH 22326,11266 22483,11261 22756,11261 22937,11265 22996,11264 23113,11262 23362,11263 23447,11264 23648,11265
 Alt-Kaulsdorf [Nebenfahrbahn]	N 23654,11285 23449,11281 23382,11279 23362,11263
-Mädewalder Weg	H 22937,11265 22956,11318 22945,11402 22920,11552 22888,11763 22886,11776 22858,11937
+Mädewalder Weg	H 22937,11265 22956,11318 22945,11402 22920,11552 22888,11763 22886,11776 22864,11905 22858,11937
 Wallstr. (Kaulsdorf)	N 22544,12001 22666,11998 22784,11995 22813,11968
 (Wallstr. - Kaulsdorfer Brücke)	NN 22666,11998 22670,12004 22674,12016
 Georgstr.	N 22886,11776 22734,11662
@@ -12846,7 +12846,7 @@ Eisensteiner Str.	N 19727,9672 19722,9483
 #: XXX wird hier noch ein verkehrsberuhigter Bereich ausgewiesen?
 #: osm_watch: way id="338124008" version="16"
 #: priority: #C
-#: last_checked: 2025-02-08
+#: last_checked: 2025-08-27
 #: check_frequency: 180d
 Zachenberger Str.	N 19889,9400 19824,9405 19780,9409
 Teisnacher Str.	N 19871,9680 19859,9473
@@ -13938,7 +13938,7 @@ Mergenthalerring	N 14229,8278 14256,8501 14262,8564 14276,8729 14252,8829 14261,
 (Dieselstr. - Kiefholzstr.)	NN 14832,8199 14841,8207
 # 
 #: note: eigentlich eine Service-Straße, aber vermutlich werden hier nur sehr selten Fahrzeuge langfahren
-(Weg entlang der A100, östliche Seite)	NN 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
+(Weg entlang der A100, östliche Seite)	NN 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 (Weg an der A100 - Mergenthalerring)	NN 14409,8102 14419,8112
 #: note: hier tatsächlich nur eine Hochbord-Anbindung
 (Weg entlang der A100, westliche Seite)	NN 14261,8851 14264,8829
@@ -14900,7 +14900,7 @@ Auerstr.	N 13025,12523 13067,12583 13202,12790 13273,12902
 Straßmannstr.	N 13273,12902 13368,12943 13435,12973 13470,12990 13530,13014 13741,13107 13835,13149
 Ludwigsfelder Str. (Hellersdorf)	N 22883,15740 22888,15768 22909,15877 22991,15864 23001,15898 23011,15947 22940,15964 22961,16077 22974,16139
 Michendorfer Str. (Hellersdorf)	N 22811,15753 22787,15639 22764,15515
-Zossener Str. (Hellersdorf)	H 22771,16194 22698,15788 22811,15753 22883,15740 23080,15700 23218,15671 23388,15637 23411,15632 23568,15603 23617,15594 23868,15633
+Zossener Str. (Hellersdorf)	H 22771,16194 22698,15788 22811,15753 22883,15740 23080,15700 23218,15671 23272,15660 23388,15637 23411,15632 23568,15603 23617,15594 23868,15633
 Zossener Str. (Hellersdorf)	N 22698,15788 22636,15752
 Mittenwalder Str. (Hellersdorf)	N 23411,15632 23441,15780 23466,15892 23469,15907 23562,15882
 Mittenwalder Str. (Hellersdorf)	N 23562,15882 23570,15854 23548,15753 23441,15780
@@ -15975,7 +15975,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-27
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16366,7 +16366,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="19"
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-27
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

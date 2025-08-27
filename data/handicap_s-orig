@@ -10,6 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
+#: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025)
+#: last_checked: 2025-08-27
+#: next_check: 2025-09-12
+#: valid: -20250912
+Wühlischstr.: Bauarbeiten, Einfahrt verboten	q4::inwork; 14771,11345 14759,11339
+# 
 # REMOVED (vorfristig fertig geworden) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php (Bauende: voraussichtlich Anfang Juni 2025) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1549441.php (Querungshilfen im Bezirk, auch diese hier) --- #: also_indoor: traffic (ex-G,ex-W,B,T) --- #: osm_watch: note 3677862 12 --- #: note: Arbeiten für eine neue Gehwegvorstreckung --- #: last_checked: 2025-04-09 --- #: check_frequency: 45d --- #: next_check: 2025-06-01 (BA-Artikel) --- Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgersteige	q4::inwork 14651,11666 14710,11626
 # REMOVED (vorfristig fertig geworden) --- #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025) (bis 18.04.2025) (zu spät inaktiv) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10) --- #: osm_watch: way id="1145213536" version="7" --- #: osm_watch: way id="1363264660" version="3" --- #: note: Halteverbotsschilder bis 18.04.2025 --- #: also_indoor: traffic (G,T) --- #: last_checked: 2025-03-28 (fast fertig) --- #: check_frequency: 3d --- #: next_check: 2025-04-18 (Halteverbotsschilder, VIZ-Verkehrsmeldung) --- #: valid: -20250418 --- Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
 # 
@@ -63,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="20"
 #: osm_watch: way id="1072662717" version="24"
-#: last_checked: 2025-08-26
+#: last_checked: 2025-08-27
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -119,8 +125,8 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-08-25
-#: check_frequency: 30d
+#: last_checked: 2025-08-27 (Wohncontainer wurden abgebaut)
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
@@ -239,7 +245,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: note: laut Baustellenschild bis Sommer (2025)
 #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/ (bis September 2025)
-#: last_checked: 2025-06-21
+#: last_checked: 2025-08-27
 #: check_frequency: 45d
 #: next_check: 2025-09-20 (Baustellenschild, entwicklungsstadt)
 #: valid: -20250930
@@ -370,6 +376,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://entwicklungsstadt.de/wedding-bezirk-mitte-beginnt-abriss-der-einsturzgefaehrdeten-burgsdorfstrasse-1/
 #: by: https://weddingweiser.de/endlich-abriss-in-der-burgsdorfstrasse/ (Verzögerung des Abrisses, vielleicht bis 30. September 2025)
 #: by: https://www.morgenpost.de/bezirke/mitte/article409774113/das-baum-haus-tiere-verhindern-abriss-der-beruehmten-ruine-in-wedding.html
+#: by: https://entwicklungsstadt.de/wedding-geplanter-abriss-der-ruine-in-der-burgsdorfstrasse-gestoppt/
 #: osm_watch: way id="549316654" version="41"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
@@ -1023,8 +1030,8 @@ Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # 
 #: next_check_id: SCHEFFEL-2024
-#: last_checked: 2025-08-24
-#: check_frequency: 21d
+#: last_checked: 2025-08-27
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-05-31 (BA Lichtenberg)
 # REMOVED --- #: next_check: 2025-06-30 (infravelo)
 Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
@@ -1037,16 +1044,16 @@ Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="41"
 #: osm_watch: way id="1193560283" version="10"
-#: last_checked: 2025-06-14
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-08-31 (Halteverbotsschilder)
+#: last_checked: 2025-08-27
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-08-31 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-08-23
+#: last_checked: 2025-08-27
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1534,8 +1541,12 @@ vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
 #: note: siehe Kommentar, wie man den Bordstein am Nordende vermeiden kann
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
 Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15424,12732 15433,12686 15454,12519
-Am Stichkanal: Fußgänger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
-Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
+# 
+#: note: Grünanlagenschilder ohne Zusatzschilder vvv
+Am Stichkanal: Fußgänger, Grünanlage	q3 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
+Am Stichkanal: Fußgänger, Grünanlage	q3 22759,4430 22797,4518
+#: note ^^^
+# 
 # REMOVED --- #: next_check_id: MAUERPARK-2019 --- #: XXX nach den Bauarbeiten: handicap_s-orig-Eintrag unten wiederherstellen --- #: last_checked: 2020-03-15 --- Mauerpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 10210,15407 10188,15474
 Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 (Mauerpark - Schwedter Str.): einige Fußgänger	q2 10071,15684 10110,15678 10123,15681
@@ -1840,7 +1851,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-08-22
+#: last_checked: 2025-08-27
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374

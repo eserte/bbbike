@@ -14,7 +14,6 @@ Am Niederfeld/Lassaner Str./Rosenhagener Str.: Gegenverkehrsregelung	X::inwork 2
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork 9751,11243
 Ringstr.: Gegenverkehrsregelung	X::inwork 7874,4481
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
-Wendenschloßstr.: Gegenverkehrsregelung	X::inwork 22791,4457
 Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 Möckernstr./nördlich Wartenburgstr.: Gegenverkehrsregelung	X::inwork 8784,9972
 Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
@@ -1810,6 +1809,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F -4663,11574
 	X 10815,11662
 	F 8867,4506
+	X 14185,9509
+	X 14242,9448
 Industriebahn	B0 -2410,13746
 	X 16786,2989
 	F 6937,10363
@@ -2410,6 +2411,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 provisorische Fußgängerampel	F::inwork 17720,8854
 	X 18199,1811
 	F 22902,2681
+	X 14379,7372
+	X 14334,7395
 	X -17127,-554
 	F -12868,-502
 	X -12940,-1625

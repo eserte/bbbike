@@ -477,7 +477,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-08-26
+#: last_checked: 2025-08-27
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1213,7 +1213,7 @@ Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905
 Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX nach den Bauarbeiten wird vermutlich der provisorische Asphalt entfernt; dann wieder "Kopfsteinpflaster, Q2" vvv
-#: last_checked: 2025-03-08 vvv
+#: last_checked: 2025-08-27 vvv
 #: next_check: 2027-03-31 vvv
 Alter Markt: Asphalt	Q0 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Asphalt	Q0 22390,4702 22388,4737 22377,4836
@@ -4188,7 +4188,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/downloads/protokoll-des-fahrrat_231123.pdf (Erwähnung)
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert?
 #: osm_watch: way id="100280204" version="11"
-#: last_checked: 2025-08-03 (mapillary)
+#: last_checked: 2025-08-27
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23363,11600 23225,11649
@@ -4201,7 +4201,7 @@ Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776
 #: XXX wird hier wieder der alte Zustand hergestellt?
 #: osm_watch: note 4661800 2
 #: osm_watch: way id="24205371" version="22"
-#: last_checked: 2025-05-07
+#: last_checked: 2025-08-27
 #: check_frequency: 90d
 Münsterberger Weg: wassergebundene Decke, Unebenheiten	Q1- 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
@@ -5395,7 +5395,8 @@ Mieltschiner Str.: Asphalt	Q0 22604,9988 22535,10023 22408,10102 22308,10149 221
 Mieltschiner Str.: Beton	Q0 22189,10183 22051,10218
 (Fortsetzung der Mieltschiner Str.): unbefestigte Straße	Q2- 22047,10202 22001,10216
 Lassallestr. (Kaulsdorf): Asphalt	Q0 22308,10149 22343,10289 22365,10386 22403,10523 22440,10658
-Striegauer Str.: Asphalt	Q0 22169,10018 22218,10013 22293,10038 22408,10102
+#: historical_note: früher nur Asphalt, Q0
+Striegauer Str.: rauer Asphalt, einige Unebenheiten	Q1+ 22169,10018 22218,10013 22293,10038 22408,10102
 Striegauer Str.: Beton, Straßenschäden	Q1; 22408,10102 22498,10201
 Striegauer Str.: Asphalt	Q0; 22498,10201 22408,10102
 Striegauer Str.: Beton, Straßenschäden	Q1 22498,10201 22574,10300 22652,10392 22732,10492 22783,10548
@@ -5703,7 +5704,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (vom 27. Februar 2022: Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="15"
-#: last_checked: 2025-07-19
+#: last_checked: 2025-08-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -6376,8 +6377,7 @@ Zum Wuhleblick: Asphalt	Q0 21958,6944 21918,6939 21911,6938 21896,6937
 Hoernlestr.: etwas rauer Beton	Q0- 22301,6683 22351,6756
 Schönecker Weg: Beton	Q0 22330,6973 22358,7093
 Wolfsgartenstr.: Asphalt	Q0 23011,6181 22994,6296 23002,6428
-Uhlenhorster Str.: Asphalt	Q0 23353,6384 23299,6541
-Uhlenhorster Str.: Betonpflaster	Q0- 23299,6541 23283,6601
+Uhlenhorster Str.: Betonpflaster	Q0- 23353,6384 23299,6541 23283,6601
 Uhlenhorster Str.: schlechtes Kopfsteinpflaster	Q3+ 23283,6601 23261,6683
 Uhlenhorster Str.: Kopfsteinpflaster	Q2- 23261,6683 23217,6779
 Frau-Holle-Str.: Kopfsteinpflaster	Q2 23471,6776 23412,6753 23261,6683
@@ -11669,7 +11669,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2025-08-23 vvv
+#: last_checked: 2025-08-27 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -12364,7 +12364,8 @@ Sternbergpromenade: Asphalt	Q0 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -
 (Am Kiesteich - Spektewiesen): Asphalt	Q0 -6256,15169 -6264,15181 -6252,15228
 Am Bullengraben: sehr guter Asphalt	Q0 -6272,13472 -6265,13475 -6209,13499 -6076,13583 -6020,13598 -5963,13593
 Kerrweg: unbefestigte Straße	Q2 -6269,13464 -6189,13497 -6125,13540 -6010,13586 -5962,13584 -5917,13582
-Straße zum Müggelturm: Asphalt/Beton	Q0- 25008,2889 25010,2794 24978,2634 24981,2565 24982,2519 24963,2495 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24883,1740 24973,1690 25269,1598 25399,1629 25438,1638 25573,1609 25701,1587 25725,1561 25711,1481
+#: historical_note: früher mit q0- getaggt, aber die Fugen sind schon relativ nervig
+Straße zum Müggelturm: Beton, Fugen, stellenweise mit dünnem Asphaltüberzug	Q1+ 25008,2889 25010,2794 24978,2634 24981,2565 24982,2519 24963,2495 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24883,1740 24973,1690 25269,1598 25399,1629 25438,1638 25573,1609 25701,1587 25725,1561 25711,1481
 Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3416,12473
 # REMOVED --- #: next_check_id: OLYMPIAVIERTEL-2016 vvv --- #: add_fragezeichen: Wann werden die Straßen im Olympiaviertel ausgebaut? vvv --- #: XXX wird hier auch verkehrsberuhigt, zumindest teilweise? vvv --- #: last_checked: 2017-02-25 vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="354078625" version="8" --- #: osm_watch: way id="354078421" version="6" --- #: osm_watch: way id="354078419" version="4"
 Jutta-Langenau-Str.: Verbundsteinpflaster	Q1+ 17610,16307 17643,16322 17821,16395 17863,16416 17877,16423
@@ -13890,7 +13891,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2025-08-02 vvv
+#: last_checked: 2025-08-27 vvv
 #: check_frequency: 60d vvv
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 #: check_frequency ^^^
@@ -14027,7 +14028,7 @@ Brabanter Platz: Asphalt	Q0 4531,8319 4530,8364 4521,8379
 Wallenbergstr.: leicht welliger Asphalt	Q0- 4319,8493 4453,8490
 Wallenbergstr.: Kopfsteinpflaster	Q2- 4453,8490 4457,8383 4473,8351
 # 
-(Weg entlang der A100): Asphalt	Q0 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
+(Weg entlang der A100): Asphalt	Q0 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 (Weg an der A100 - Mergenthalerring): Asphalt	Q0 14409,8102 14419,8112
 (Weg entlang der A100, westliche Seite): Betonpflaster mit Fugen	Q2+ 14264,8829 14274,8816 14278,8796 14287,8688
 (Weg entlang der A100, westliche Seite): Asphalt	Q0 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
@@ -14121,7 +14122,7 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-27
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018
@@ -14274,6 +14275,8 @@ Gärtnereiring: schlechtes Kopfsteinpflaster	Q3 -7236,12896 -7345,12930
 # 
 (Landsberger Allee - Frank-Schweitzer-Str.): Gehwegplatten	Q0- 19162,14931 19121,14916 19173,14932
 (Landsberger Allee/Georg-Knorr-Str. - Frank-Schweitzer-Str.): Beton	Q0 19173,14932 19195,14931
+# 
+Mädewalder Weg: Kopfsteinpflaster	Q2 22858,11937 22864,11905
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -15648,7 +15651,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/mehrheit-der-lokalpolitiker-fuer-netzausbau-cdu-abgeordneter-fuerchtet-wegfall-von-parkplaetzen_a406794 (Erwähnung)
 #: last_checked: 2025-06-11
 #: check_frequency: 360d
-#: osm_watch: way id="152177244" version="14"
+#: osm_watch: way id="152177244" version="15"
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10510,-2642 10573,-2891 10606,-3017 10655,-3135 10735,-3142
 #: by: ^^^
 # 

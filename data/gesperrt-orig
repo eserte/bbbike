@@ -188,7 +188,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-08-16 vvv
+#: last_checked: 2025-08-27 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -304,9 +304,9 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-06-14
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-08-31 (Halteverbotsschilder)
+#: last_checked: 2025-08-27
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-08-31 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 # 
@@ -2342,7 +2342,7 @@ Streitstr.: Mittelstreifen	3nocross -3009,17090 -3006,17128 -2959,17507
 Marienfelder Chaussee: Mittelstreifen	3nocross 10769,1111 10829,1135 11012,1210
 #: by: rjoop/srt
 Bahntrasse	3nocross 15875,1796 15835,1747 15799,1690 15729,1573
-Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23388,15637 23411,15632 23568,15603 23617,15594
+Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23272,15660 23388,15637 23411,15632 23568,15603 23617,15594
 Schloßstr.: Mittelstreifen	3nocross 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21532,14916
@@ -4146,12 +4146,12 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information
 #: also_indoor: traffic (G)
-#: last_checked: 2025-06-18
+#: last_checked: 2025-08-27
 #: check_frequency: 120d
 #: next_check: 2026-10-29
 Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
 #: XXX evtl. muss mudways hier nach den Bauarbeiten neu evaluiert werden?
-#: last_checked: 2025-08-26 (bahninfo-forum) vvv
+#: last_checked: 2025-08-27 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="37452317" version="6"
@@ -4177,7 +4177,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-marzahn-hellersdorf.42/page-7#post-23307
 #: osm_watch: way id="1306238147" version="2"
 #: osm_watch: way id="25795669" version="13"
-#: last_checked: 2025-07-01 (luftbildsuche)
+#: last_checked: 2025-08-27
 #: check_frequency: 180d
 (Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
 # 
@@ -4261,7 +4261,7 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg; mittlerweile (2024-12-13) ist die Straße kaum noch erkennbar
 #: priority: #C
-#: last_checked: 2025-07-01 (luftbildsuche)
+#: last_checked: 2025-08-27
 #: check_frequency: 180d
 Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
@@ -4327,15 +4327,16 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-08-25 vvv
-#: next_check: 2025-08-27 (rbb) vvv
+#: last_checked: 2025-08-27 vvv
+# REMOVED --- #: next_check: 2025-08-27 (rbb) vvv
 #: osm_watch: way id="1199463691" version="5"
 # REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
 # REMOVED (offiziell offen) --- #: osm_watch: way id="1199463690" version="2" --- Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
 #: osm_watch: way id="693633081" version="10"
-Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
+#: osm_watch: way id="693633082" version="7"
+Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 # REMOVED --- #: osm_watch: way id="1199463688" version="3"
 #: osm_watch: way id="1199465845" version="5"
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
@@ -4343,7 +4344,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht
 #: osm_watch: way id="801304797" version="6"
 #: XXX außerdem: wird es eine Anbindung an die Sonnenallee geben?
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: ANDERGAERTNEREI-2022
@@ -4434,9 +4435,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="30"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-07-12
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-08-31 (Halteverbotsschilder)
+#: last_checked: 2025-08-27
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-08-31 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
 # REMOVED (laut osm komplett offen)
@@ -4492,7 +4493,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-08-15
+#: last_checked: 2025-08-27
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4538,7 +4539,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-08-16
+#: last_checked: 2025-08-27
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4598,7 +4599,7 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2025-08-25
+#: last_checked: 2025-08-27
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -5241,6 +5242,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (alternative URL)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (Verkehrsfreigabe am 4.9.2025)
+#: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article409838993/neue-wuhletalbruecke-wird-fuer-den-verkehr-freigegeben.html
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)

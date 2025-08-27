@@ -135,8 +135,9 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 # 
 #: source_id: LMS-BR:379742/72 viz2021:13.589646,52.502679,13.08.2025,09:15 (bis 17.10.2025)
-#: next_check: -2025-10-17
-#: valud: -20251017
+#: last_checked: 2025-08-27
+#: next_check: 2025-10-17
+#: valid: -20251017
 Am Niederfeld/Lassaner Str./Rosenhagener Str.: Gegenverkehrsregelung	X::inwork::alternating 22947,10998
 # 
 # REMOVED --- #: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025) (bis 16.06.2025) (bis 30.06.2025) (bis 24.06.2025) (inaktiv)
@@ -186,18 +187,7 @@ Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
 # REMOVED (stehen noch, sind aber ausgeschaltet, wohl dauerhaft) --- #: next_check_id: OSTEND-2024 --- #: last_checked: 2024-11-06 vvv --- #: next_check: 2024-11-03 vvv --- #: valid: -20241103 vvv --- An der Wuhlheide/Rathenaustr.: Baustellenampel	X::inwork 19245,6379 --- An der Wuhlheide/Steffelbauerstr.: Baustellenampel östlich der Einmündung	F::inwork 19594,6155 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
-# 
-#: source_id: viz2021:13.58402,52.443878,20.08.2024,09:00 (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.584031,52.443916,30.04.2025,10:00 (bis 11.07.2025) (inaktiv)
-#: source_id: viz2021:13.584313,52.444031,30.04.2025,10:00 (bis 11.07.2025) (inaktiv)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040
-#: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-wendenschlo%C3%9Fstra%C3%9Fe-47.1437/#post-25536
-#: last_checked: 2025-07-18 (architektur-urbanistik)
-# REMOVED --- #: next_check: 2025-07-11 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20250711
-Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
-# 
+# REMOVED --- #: source_id: viz2021:13.58402,52.443878,20.08.2024,09:00 (bis 31.03.2025) (inaktiv) --- #: source_id: viz2021:13.584031,52.443916,30.04.2025,10:00 (bis 11.07.2025) (inaktiv) --- #: source_id: viz2021:13.584313,52.444031,30.04.2025,10:00 (bis 11.07.2025) (inaktiv) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040 --- #: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-wendenschlo%C3%9Fstra%C3%9Fe-47.1437/#post-25536 --- #: last_checked: 2025-07-18 (architektur-urbanistik) --- # REMOVED --- #: next_check: 2025-07-11 (VIZ-Verkehrsmeldung) --- # REMOVED --- #: valid: -20250711 --- Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
 # REMOVED (Ampelanlage steht noch, ist aber (dauerhaft?) ausgeschaltet) --- #: next_check_id: KOENIGSPLATZ-2024 --- #: last_checked: 2024-12-27 --- #: check_frequency: 30d --- #: next_check: 2024-12-12 --- #: valid: -20241212 --- Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
 # 
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
@@ -320,6 +310,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: source_id: viz2021:13.36722,52.52237, (bis 05.09.2025)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
+#: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: last_checked: 2025-08-01 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
@@ -350,14 +341,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-08-24
+#: last_checked: 2025-08-27
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-08-24
+#: last_checked: 2025-08-27
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -428,7 +419,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten) (inaktiv)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2025-06-18 vvv
+#: last_checked: 2025-08-27 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: valid: -20251231 vvv
@@ -443,19 +434,19 @@ Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating 
 # 
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7596 (Antrag auf Verstetigung)
-#: last_checked: 2025-04-02
+#: last_checked: 2025-08-27
 #: check_frequency: 120d
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2025-04-02
+#: last_checked: 2025-08-27
 #: check_frequency: 120d
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2025-07-16
+#: last_checked: 2025-08-27
 #: check_frequency: 120d
 Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2025-07-16
+#: last_checked: 2025-08-27
 #: check_frequency: 120d
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
@@ -1904,9 +1895,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5477,9621
 	X 9701,11656
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:50) vvv
-#: off: night (seen 2015-06-25, 2023-08-26 00:15, 2024-01-06 23:40, 2024-08-09 23:45)
+#: off: night (seen 2015-06-25, 2023-08-26 00:15, 2024-01-06 23:40, 2024-08-09 23:45, 2025-08-27 23:39)
 	X 14011,10812
-#: off: night (seen 2015-06-25, 2024-01-06 23:40, 2024-08-09 23:45)
+#: off: night (seen 2015-06-25, 2024-01-06 23:40, 2024-08-09 23:45, 2025-08-27 23:39)
 	F 14024,10861
 #: note ^^^
 	X 6445,9538
@@ -1976,7 +1967,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel beim Überqueren der Möllendorffstr.
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
-#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15; 2023-11-30 00:30; 2024-01-06 23:45; 2024-08-09 23:46)
+#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15; 2023-11-30 00:30; 2024-01-06 23:45; 2024-08-09 23:46; 2025-08-27 23:41)
 	X 14134,11272
 	X 11785,13625
 	X 10904,17288
@@ -2804,7 +2795,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog gilt nicht für Radfahrer auf der Karlshorster Str. Richtung Süden
 	X 15272,10790
 	F 11270,13412
-#: off: night (seen Th 2021-09-09 22:20, Th 2023-05-11 22:30)
+#: off: night (seen Thu 2021-09-09 22:20, Thu 2023-05-11 22:30, Wed 2025-08-27 23:39)
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020
@@ -2902,14 +2893,10 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 10815,11662
 	F 8867,4506
 # 
-#: next_check_id: AMTREPTOWERPARK-2020
-#: next_check_id: BAB100-2022
-#: XXX wird vermutlich zur Eröffnung der A100 eingeschaltet
-#: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
-#: last_checked: 2025-08-25
-#: check_frequency: 120d
-#: next_check: 2025-08-27 (rbb)
-	X0 14185,9509
+# REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: next_check_id: BAB100-2022 --- #: XXX wird vermutlich zur Eröffnung der A100 eingeschaltet --- #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind --- #: last_checked: 2025-08-25 --- #: check_frequency: 120d --- #: next_check: 2025-08-27 (rbb)
+	X 14185,9509
+#: note: gilt nicht für Radfahrer Richtung Nordwesten
+	X 14242,9448
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
 # 
 Industriebahn	B0 -2410,13746
@@ -3803,7 +3790,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2025-08-25
+#: last_checked: 2025-08-27
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -4132,6 +4119,9 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: note: Anforderungsampel
 #: XXX_prog gilt nicht für Radfahrer Richtung Norden
 	F 22902,2681
+# 
+	X 14379,7372
+	X 14334,7395
 # 
 #: section ^^^
 ################################################################################

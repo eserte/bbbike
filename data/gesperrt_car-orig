@@ -98,7 +98,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-08-25
+#: last_checked: 2025-08-27
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -331,7 +331,7 @@ Mimosenweg	2 17668,2187 17657,2213
 Falkenberger/B2: Straßenbahntrasse	3nocross 14619,16551 14624,16659 14622,16674 14608,16772 14558,16907
 # REMOVED (http://taxi-weblog.de/980: seit 2013-09 keine Einbahnstraße mehr) --- #: by: Andreas Mühlhausen (Einbahnstraße nur für Autofahrer) --- Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 * 20624,12133 *
-Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23388,15637 23411,15632 23568,15603 23617,15594
+Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23272,15660 23388,15637 23411,15632 23568,15603 23617,15594
 #: note: nur temporär gültig
 Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 283,-35 354,-13 665,85 934,130 970,135 1168,161 1345,184
 #: by: Omi2006@... [AM]
@@ -1197,11 +1197,13 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 # REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4183&options=4 --- #: XXX: Wird die Einbahnstraßenregelung in der Hans-Sachs-Str. für Radfahrer aufgehoben? --- #: last_checked: 2012-09-05 (by Kay Leonhardt) --- #: next_check: 2012-12-15
 #: by: https://www.tagesspiegel.de/berlin/bezirke/einbahnstrasse-wird-umgedreht-kein-durchgangsverkehr-mehr-am-berliner-bahnhof-lichterfelde-west-12765722.html (Umsetzung in der ersten Jahreshälfte 2025)
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article407857496/so-sollen-autos-in-lichterfelde-west-vergrault-werden.html (hier: Anfang 2025 (Stand Dez 2024))
+#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article409828528/neues-verkehrskonzept-in-lichterfelde-west-so-startet-die-umsetzung.html (Arbeiten sind ausgeschrieben)
 #: XXX wird die Einbahnstraßenregelung umgedreht, dann offen von Bahnhof zur Drakestr.?
 #: osm_watch: way id="65369044" version="16"
 #: osm_watch: note 4846294 1
-#: last_checked: 2025-05-24 (mapillary)
-#: next_check: 2025-06-30 (Tsp)
+#: last_checked: 2025-08-25 (MoPo)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2025-06-30 (Tsp)
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 Anhaltinerstr.	1 682,2660 720,2718
 Askanischer Platz -> Stresemannstr.	3 8865,10974 8901,11011 8747,11194

@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Wühlischstr.: Bauarbeiten, Einfahrt verboten	q4::inwork; 14771,11345 14759,11339
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
@@ -204,8 +205,8 @@ Böcklerpark: Fußgänger	q2 10690,10247 10769,10249
 Am Landwehrkanal: Fußgänger	q2 10521,10126 10362,10120 10226,10145 10083,10192
 vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15424,12732 15433,12686 15454,12519
-Am Stichkanal: Fußgänger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
-Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
+Am Stichkanal: Fußgänger, Grünanlage	q3 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
+Am Stichkanal: Fußgänger, Grünanlage	q3 22759,4430 22797,4518
 Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 (Mauerpark - Schwedter Str.): einige Fußgänger	q2 10071,15684 10110,15678 10123,15681
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21935,12153 21930,12185 21816,12233 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484

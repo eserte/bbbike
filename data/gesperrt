@@ -1724,10 +1724,10 @@ Wingerter Str. -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 10845,1026 10
 Bahntrasse	3nocross::ignrte 15875,1796 15835,1747 15799,1690 15729,1573
 Zwickauer Damm -> Feuchtwangerweg: Bahntrasse	3::igndisp 15799,1690 15835,1747 15788,1747
 Feuchtwangerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15788,1747 15835,1747 15875,1796
-Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23388,15637 23411,15632 23568,15603 23617,15594
+Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23272,15660 23388,15637 23411,15632 23568,15603 23617,15594
 Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 23218,15671 23243,15820
-Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23388,15637
-Brigitte-Reimann-Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23363,15517 23388,15637 23218,15671
+Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23272,15660
+Brigitte-Reimann-Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23363,15517 23388,15637 23272,15660
 Zossener Str. -> Brigitte-Reimann-Str.: Straßenbahntrasse	3::igndisp 23411,15632 23388,15637 23363,15517
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
@@ -3586,7 +3586,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:inwork 12959,11631 12728,11850
 Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581 7447,12520
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
-Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
+Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
