@@ -360,7 +360,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-08-25 vvv
+#: last_checked: 2025-08-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1353,7 +1353,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-08-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1890,20 +1890,20 @@ betoniert, unebene und schadhafte Stellen	RW8;RW2 21242,2048 21388,1895
 Verbundsteinpflaster	RW1; 15166,8489 15378,8668 15558,8820 15591,8848
 die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,8668
 # 
-#: historical_note: während der Bauarbeiten: Asphalt, provisorische Wegführung	RW8; 14089,9610 14149,9546 14185,9509 14242,9448
+#: historical_note: während der Bauarbeiten: Asphalt, provisorische Wegführung	RW8; 14089,9610 14149,9546 14169,9525 14242,9448
 #: historical_note: früher: Verbundsteinpflaster
 Asphalt, relativ breit	RW2; 14089,9610 14149,9546
 #: historical_note: früher: Verbundsteinpflaster
 #: note: Zweirichtungsradweg
-Asphalt, relativ breit	RW2; 14149,9546 14185,9509
+Asphalt, relativ breit	RW2; 14149,9546 14169,9525
 #: historical_note: früher: alter, schadhafter Asphalt
 #: note: Zweirichtungsradweg
-Asphalt, relativ breit	RW2; 14185,9509 14242,9448
-Asphalt, relativ breit	RW2; 14185,9509 14149,9546 14089,9610
+Asphalt, relativ breit	RW2; 14169,9525 14242,9448
+Asphalt, relativ breit	RW2; 14169,9525 14149,9546 14089,9610
 # 
 alter, schadhafter Asphalt	RW1; 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
 Verbundsteinpflaster	RW1; 15002,8651 15070,8584 15079,8575 15166,8489
-	RW2; 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14242,9448 14185,9509
+	RW2; 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14242,9448 14169,9525
 	RW1;RW1 13535,10184 13579,10146 13711,10022 13782,9954 13795,9941
 asphaltiert	RW1; -7309,-1387 -7415,-1470 -7821,-1890
 altes Verbundsteinpflaster	RW1; -7821,-1890 -7916,-2015
@@ -3161,7 +3161,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-08-27
+#: last_checked: 2025-08-28
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3189,7 +3189,7 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
 #: historical_note: ganz früher sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
-#: last_checked: 2025-08-25
+#: last_checked: 2025-08-28
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
@@ -4393,20 +4393,14 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX Radwege werden neu gemacht vvv
-#: last_checked: 2025-06-09 vvv
+#: last_checked: 2025-08-27 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-08-18 (VIZ-Verkehrsmeldung) vvv
-Gehweg für Radfahrer frei, Verbundsteinpflaster und bröckelnder Beton	RW1; 22577,15109 22599,15105 22726,15082
-#: note: allerdings gibt es kein explizites Radfahrverbot auf der Fahrbahn
-Umleitung für Radfahrer über Nebenfahrbahn	RW10; 22726,15082 22899,15073
-	RW1; 22899,15073 22726,15082 22599,15105
-	RW; 22599,15105 22577,15109 22441,15118
-neu asphaltiert, relativ breit	RW; 22441,15118 22577,15109
-neu asphaltiert, relativ breit	RW2; 22441,15118 22323,15119
-Gehweg für Radfahrer frei	RW1; 22323,15119 22441,15118
+# REMOVED --- #: next_check: 2025-08-18 (VIZ-Verkehrsmeldung) vvv
+#: historical_note: früher (bis 2025): Verbundsteinpflaster und bröckelnder Beton
+neu asphaltiert, relativ breit	RW2;RW8 22899,15073 22726,15082 22599,15105 22577,15109 22441,15118 22323,15119
 neu asphaltiert, relativ breit	RW2;RW8 22323,15119 22059,15153 21903,15174
 letzte Deckschicht fehlt, relativ breit	RW2;RW8 21903,15174 21809,15186 21718,15198 21599,15213
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -7701,7 +7695,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2025-08-06 vvv
+#: last_checked: 2025-08-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7747,7 +7741,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-08-06 vvv
+#: last_checked: 2025-08-28 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344

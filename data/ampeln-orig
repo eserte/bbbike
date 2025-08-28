@@ -364,7 +364,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
 #: note: Anforderungsampel
 	F::inwork 19196,14976
-#: osm_watch: node id="12382185864" version="2"
+#: osm_watch: node id="12382185864" version="3"
 #: XXX_prog gilt nicht für auf dem Bürgersteig fahrende Radfahrer
 	X::inwork 19309,15023
 # REMOVED --- #: valid ^^^
@@ -2894,8 +2894,11 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 # 
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: next_check_id: BAB100-2022 --- #: XXX wird vermutlich zur Eröffnung der A100 eingeschaltet --- #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind --- #: last_checked: 2025-08-25 --- #: check_frequency: 120d --- #: next_check: 2025-08-27 (rbb)
-	X 14185,9509
+#: note: Richtung Südosten zwei Ampeln, gegenläufig geschaltet
+#: note: eine Anforderung für Radfahrer Richtung Südosten
+	X 14169,9525
 #: note: gilt nicht für Radfahrer Richtung Nordwesten
+#: note: Anforderung für querende Radfah
 	X 14242,9448
 # REMOVED (abgebaut) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren. --- #: note: selten ausgeschaltet (gesehen 2022-08-24 Wed 13:10, 2024-05-12 Sun 16:40, 2024-05-16 Thu 18:50) --- #: last_checked: 2024-12-18 --- #: check_frequency: 120d ---	X::inwork 14382,9299
 # 

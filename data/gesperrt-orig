@@ -98,7 +98,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_21_1285_1376_online.pdf (Straßenlandwidmung, kleine Fläche)
 #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: osm_watch: way id="152264786" version="23"
+#: osm_watch: way id="152264786" version="24"
 #: last_checked: 2025-06-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
@@ -132,7 +132,7 @@ Knoten Märkische/Landsberger Allee	1 19254,15000 19200,14963
 Knoten Märkische/Landsberger Allee	2::inwork 19408,15007 19350,14997 19214,14966 19200,14963
 #: osm_watch: way id="30884033" version="23"
 Knoten Märkische/Landsberger Allee	2::inwork 19452,14807 19464,14971 19408,15007
-#: osm_watch: way id="4696050" version="23"
+#: osm_watch: way id="4696050" version="24"
 Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061 19408,15007
 #: osm_watch: way id="30884034" version="24"
 Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
@@ -579,7 +579,7 @@ Riensbergstr.	1 -740,15316 -763,15487
 Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Bahngelände	2 17300,9135 17284,9198
 #: note: 2023-08 waren keine Absperrungen oder Hinweisschilder vorhanden, kommt aber vermutlich noch
-(verlängerte Wandlitzstr.): Bahngelände	2 17837,9086 17743,9116
+(verlängerte Wandlitzstr.): Bahngelände	2 17837,9086 17743,9116 17570,9103
 Triniusstr.	1 18339,6660 18273,6606
 # REMOVED (hier nicht) --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
 #: note: Einbahnstraßenschild an der Drosselbartstr., aber kein "Einfahrt verboten"-Schild an der Wegastr., so dass man von Osten aus kommend nichts über die Einbahnstraße erfährt
@@ -4855,7 +4855,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED (möglicherweise wieder offen; -> temp blockings) --- #: source_id: AdB/21-11-00135 (bis 11.03.2022) --- #: by: https://hohen-neuendorf.de/de/stadt-leben/aktuelles/bruecken-bei-birkenwerder-inbetriebnahme-noch-2021 --- #: also_indoor: traffic (H) --- #: osm_watch: way id="175828136" version="8" --- #: priority: #B --- #: last_checked: 2021-09-12 (wosch) --- #: next_check: 2022-03-11 --- Schönfließ - Summt: Brücke über die A10 wird neu gebaut	2::inwork 5752,30817 5787,30867
 # REMOVED (Hilfsbrücke existiert) --- #: osm_watch: way id="976563363" version="1" --- #: source_id: AdB/21-11-00134 (bis 17.12.2021) --- #: next_check: 2021-12-17 --- Fichteallee: Brücke über die A10 wird neu gebaut	2::inwork 2233,32334 2334,32485
 # REMOVED (möglicherweise wieder offen) --- #: source_id: AdB/21-11-00133 (bis 15.11.2021) (inaktiv) --- #: source_id: AdB/21-11-00133 (bis 21.12.2021) (inaktiv) --- #: by: https://viz.berlin.de/2021/12/a10-a24/ (Öffnung vor Weihnachten 2021) --- #: by: https://hohen-neuendorf.de/de/stadt-leben/aktuelles/bruecken-bei-birkenwerder-inbetriebnahme-noch-2021 --- #: add_fragezeichen: Ist die Brücke mittlerweile wieder geöffnet? --- #: also_indoor: traffic (G) --- #: osm_watch: way id="926868384" version="1" --- #: osm_watch: way id="926868383" version="2" --- #: priority: #B --- #: next_check: 2021-12-21 --- Stolper Weg: Brücke über die A10 wird neu gebaut	2::inwork 514,32607 525,32437
-# REMOVED (entfernt) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX vermutlich wird die Straße dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen --- #: last_checked: 2022-09-25 --- #: check_frequency: 180d --- #: next_check: 2024-12-31 --- Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14185,9509 14172,9457
+# REMOVED (entfernt) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX vermutlich wird die Straße dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen --- #: last_checked: 2022-09-25 --- #: check_frequency: 180d --- #: next_check: 2024-12-31 --- Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14169,9525 14172,9457
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-5-87B --- #: last_checked: 2021-09-04 vvv --- #: check_frequency: 180d vvv --- Pembabogen: durch Bauzäune abgesperrt	2::inwork -2750,19013 -2747,19074 --- #: XXX wobei auf der westlichen Seite keine Absperrung ist und die östliche Absperrung umfahrbar ist --- Tasmanienweg: durch Bauzäune abgesperrt	2::inwork -2747,19074 -2647,19070 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (offen) --- #: next_check_id: HEBAMMENSTEIGBRUECKE-2021 --- #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf?start&ts=1355910105&file=11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf --- #: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 ("voraussichtlich ab 2019 neu gebaut") --- #: by: https://viz.berlin.de/2021/06/a114-vollsperrung/ (gesperrt seit 14.6.2021) (kein Fertigstellungdatum) --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1707775993488855468#m (Brücke wird eingehoben) --- #: by: https://my.greenprofi.de/bauprojekte/1323594 (alte Ausschreibung, Bauausführung: 12 Monate) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1790700693709279405 (Einschränkung auf der A114 nur bis 21.05.2024) --- #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=765099#post765099 --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1825419928171675942 (Einschränkung auf der A114 diese Woche) --- # REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9" --- #: osm_watch: way id="43205335" version="3" --- #: osm_watch: way id="298416172" version="15" --- #: osm_watch[closed]: note 4100166 2 --- #: osm_watch: note 4382991 2 --- #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv) --- #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv) --- #: XXX Rampen auf Westseite mit Verbundsteinpflaster, auf Ostseite mit welligen Asphalt, parallel zur Autobahn --- #: XXX mittlerweile (Nov 2024) noch nicht offiziell freigegeben, aber u.U. befahrbar --- #: last_checked: 2025-03-09 (mapillary) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-06-30 --- Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
 # REMOVED (wieder offen) --- Radweg an der Panke	2::inwork 13031,21538 13075,21740 13078,21754
@@ -5007,7 +5007,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-08-25 vvv
+#: last_checked: 2025-08-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

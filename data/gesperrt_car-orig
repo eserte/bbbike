@@ -98,7 +98,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-08-27
+#: last_checked: 2025-08-28
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -1043,9 +1043,9 @@ Europaplatz	1 8015,13303 7938,13302
 #: note: die Regelung für Radfahrer ist nicht ganz eindeutig --- teilweise gibt es explizit "Radfahrer frei"-Schilder, z.B. beim Abbiegen, teilweise fehlen sie
 Am Kupfergraben	1 9754,12775 9815,12705 9870,12657
 #: note: Radfahrer benutzen den asphaltierten Parkstreifen, der entgegen der Einbahnstraßenrichtung freigegeben ist
-Am Treptower Park	1 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14242,9448 14185,9509
+Am Treptower Park	1 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14242,9448 14169,9525
 Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912
-# REMOVED (spätestens seit 2025 ist das Linksabbiegen wieder erlaubt) --- Am Treptower Park - Elsenstr.	3 14185,9509 14149,9546 14089,9610 14060,9574 14020,9524 13973,9465
+# REMOVED (spätestens seit 2025 ist das Linksabbiegen wieder erlaubt) --- Am Treptower Park - Elsenstr.	3 14169,9525 14149,9546 14089,9610 14060,9574 14020,9524 13973,9465
 Czeminskistr.	1 7600,8921 7563,8871
 Berlinickestr.	1 5080,5498 5016,5401
 Sembritzkistr.: nur für Radfahrer	3 * 7199,5479 *
@@ -1198,6 +1198,7 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 #: by: https://www.tagesspiegel.de/berlin/bezirke/einbahnstrasse-wird-umgedreht-kein-durchgangsverkehr-mehr-am-berliner-bahnhof-lichterfelde-west-12765722.html (Umsetzung in der ersten Jahreshälfte 2025)
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article407857496/so-sollen-autos-in-lichterfelde-west-vergrault-werden.html (hier: Anfang 2025 (Stand Dez 2024))
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article409828528/neues-verkehrskonzept-in-lichterfelde-west-so-startet-die-umsetzung.html (Arbeiten sind ausgeschrieben)
+#: by: https://entwicklungsstadt.de/umgestaltung-des-bahnhofsvorplatzes-in-lichterfelde-west-starten-die-ersten-bauarbeiten/
 #: XXX wird die Einbahnstraßenregelung umgedreht, dann offen von Bahnhof zur Drakestr.?
 #: osm_watch: way id="65369044" version="16"
 #: osm_watch: note 4846294 1

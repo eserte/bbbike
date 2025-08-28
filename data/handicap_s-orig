@@ -125,7 +125,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-08-27 (Wohncontainer wurden abgebaut)
+#: last_checked: 2025-08-28 (Wohncontainer wurden abgebaut)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -297,7 +297,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 # REMOVED (hier gar kein Durchgang) --- (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14116,10149 14126,10176
 # 
-# REMOVED (passierbar) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023) --- #: osm_watch: way id="44807035" version="12" --- #: osm_watch: way id="26285705" version="8" --- #: osm_watch: way id="69166216" version="10" --- #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023) --- #: last_checked: 2021-08-19 (osm) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-12-31 vvv --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448 --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED (passierbar) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023) --- #: osm_watch: way id="44807035" version="12" --- #: osm_watch: way id="26285705" version="8" --- #: osm_watch: way id="69166216" version="10" --- #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023) --- #: last_checked: 2021-08-19 (osm) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-12-31 vvv --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448 --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14169,9525 14089,9610 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (weitgehend offen) --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/in-der-jordanstrasse-fallen-monatelang-parkplaetze-weg_a206134 --- # REMOVED --- #: last_checked: 2019-03-06 (indirekt, Sackgassenschild an der Jordanstr.) --- #: last_checked: 2019-03-20 --- #: check_frequency: 14d --- Lohmühlenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13251,9829 13302,9894 13311,9905
 # REMOVED (existiert nicht mehr) --- #: XXX_prog: BS (ansonsten entfernen) --- #: next_check_id: DIESEL-2019 --- #: last_checked: 2025-01-27 --- #: check_frequency: 60d --- (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # REMOVED (offen) --- #: next_check_id: WASSERSTADTSPINDLERSFELD-2019 --- #: XXX Fahrbahn ist nur im westlichen Abschnitt freigegeben (Stand April 2021) --- #: osm_watch: way id="719023968" version="6" --- #: last_checked: 2021-04-24 --- #: check_frequency: 60d --- Henriette-Lustig-Str.: nur der sehr enge Gehweg sowie 50m der Fahrbahn sind freigegeben	q4::inwork 21476,5048 21611,5119
@@ -804,6 +804,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
 #: by: https://www.caimmo.com/de/presse/news/artikel/ca-immo-startet-bau-des-anna-lindh-haus-am-berliner-hauptbahnhof/ (Fertigstellung Ende 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/vorplatz-am-hbf-europacity-bebauungsplan-ii-201c.155/page-5#post-24166
+#: by: https://entwicklungsstadt.de/europacity-berlin-bauarbeiten-am-anna-lindh-haus-in-vollem-gange/
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://1223a25j44.bautvplus.de/cam1/image.jpg
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
@@ -838,11 +839,11 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: osm_watch: way id="16096289" version="33"
-#: osm_watch: way id="707100249" version="25"
+#: osm_watch: way id="16096289" version="34"
+#: osm_watch: way id="707100249" version="26"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-08-14 (architektur-urbanistik)
+#: last_checked: 2025-08-27 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1851,7 +1852,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-08-27
+#: last_checked: 2025-08-28
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374

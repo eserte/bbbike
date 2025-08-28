@@ -128,7 +128,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="20"
-#: last_checked: 2025-08-06
+#: last_checked: 2025-08-28
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -2521,7 +2521,7 @@ Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13279,8947 13455,8800
 Beermannstr.: Kopfsteinpflaster	Q2 13981,9474 14121,9366
 # REMOVED --- Beermannstr.: Kopfsteinpflaster	Q2 14121,9366 14157,9345
 # REMOVED --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
-# REMOVED --- Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
+# REMOVED --- Matthesstr.: Asphalt	Q0 14172,9457 14169,9525
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/elbestrasse-soll-spaetestens-ab-2024-fuer-fussgaenger-und-radfahrer-attraktiver-werden_a324155
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/senatsverwaltung-startet-machbarkeitsstudie-mit-fuenf-varianten_a382462
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-zum-umbau-der-elbestrasse_a397300 (Machbarkeitsstudie)
@@ -9243,6 +9243,9 @@ Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
 (Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1- 8895,7797 8839,7904
 Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q0- 8482,8364 8394,8313 8333,8303 8276,8295
 Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8265,8092 8260,7911 8260,7803 8263,7611
+#: next_check_id: MUSSEHL-2025
+#: add_fragezeichen: Ist die Qualität nach den Bauarbeiten besser geworden?
+#: next_check: 2025-10-31
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8982,8781 8926,8682 8842,8561
 Mussehlstr.: Gehwegplatten	Q0- 8842,8561 8759,8458
 Mussehlstr.: Verbundsteinpflaster	Q1+ 8759,8458 8720,8373
