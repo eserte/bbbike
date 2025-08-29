@@ -51,10 +51,10 @@
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
-#: source_id: viz2021:13.36063,52.44674, (bis 31.08.2025)
+#: source_id: viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025)
 #: last_checked: 2025-07-19
 #: check_frequency: 120d
-#: next_check: 2025-08-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
 # 
 #: temporary ^^^
@@ -1036,7 +1036,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2025-06-01
+#: last_checked: 2025-07-26
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -1053,7 +1053,7 @@ Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/gefahrlicher-zickzack-kurs-statt-sicherheit-wird-der-millionenteure-radstreifen-auf-der-schonhauser-allee-jetzt-wieder-demontiert-13841635.html
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2025-07-30
+#: last_checked: 2025-08-06 (mapillary)
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -2048,8 +2048,8 @@ Busspur ist immer gültig	RW5; 7563,8871 7548,8879 7497,8916 7360,8918
 geschützter Radstreifen, mit "Leitboys"	RW4; 7360,8918 7315,8941 7307,8945 7268,8960
 # 
 #: note: Kolonnenstr., Richtung Osten
-#: historical_note: früher (bis etwa Sommer 2024) RW3, ohne Leitboys
-geschützter Radstreifen, mit "Leitboys"	RW4; 7268,8960 7307,8945
+#: historical_note: früher (bis etwa Sommer 2024) bis Crellestr. RW3, ohne Leitboys; Sommer 2025: Weiterführung bis Herbertstr.
+geschützter Radstreifen, mit "Leitboys"	RW4; 7268,8960 7307,8945 7315,8941 7360,8918
 # REMOVED (hier keine Busspur --- wegen Bauarbeiten?) --- Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7307,8945 7315,8941 7360,8918
 # REMOVED (ja, früher: gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr) --- #: XXX hat sich die Gültigkeitsdauer geändert?
 Busspur ist immer gültig	RW5; 7360,8918 7497,8916 7548,8879 7563,8871
@@ -4193,10 +4193,9 @@ Gehwegplatten	RW1; 8595,8827 8594,8777
 Grünbeschichtung	RW3; 8598,9074 8598,9269
 Grünbeschichtung, Fahrradschleuse, asphaltierter Radweg auf dem Hochboard für rechtsabbiegende Radfahrer	RW3; 8598,9269 8595,9495
 Grünbeschichtung	RW3; 8595,9495 8598,9269 8598,9074
-	RW3; 3711,13210 3710,13290
+teilweise mit Pollern, teilweise Grünbeschichtung	RW4; 3711,13210 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
+teilweise mit Pollern, teilweise Grünbeschichtung	RW4; 3739,13563 3741,13495 3737,13429 3719,13346 3710,13290
 Busspur ist immer gültig	RW5; 3710,13290 3711,13210
-	RW3;RW3 3710,13290 3719,13346
-	RW4;RW3 3719,13346 3737,13429 3741,13495 3739,13563
 	RW4;RW4 3739,13563 3713,13787 3702,13865 3695,13902
 #: by: anonymous
 	RW6;RW6 -6660,9953 -6603,9918 -6370,9802 -6324,9778
@@ -6124,12 +6123,12 @@ Grünbeschichtung, teilweise mit niedrigen Pollern	RW4; 3741,12607 3747,12495
 Grünbeschichtung, relativ breit	RW4; 3761,12298 3767,12217 3778,12104 3786,12014 3801,11858 3837,11760 3843,11659
 #: note: Richard-Wagner-Str., Wintersteinstr., Sömmeringstr., Richtung Norden
 Grünbeschichtung, relativ breit	RW4; 3843,11659 3837,11760 3801,11858 3786,12014
-Grünbeschichtung, relativ breit	RW3; 3786,12014 3778,12104 3767,12217 3761,12298
+Grünbeschichtung, relativ breit	RW4; 3786,12014 3778,12104 3767,12217 3761,12298
 Grünbeschichtung	RW4; 3761,12298 3757,12372 3747,12495
 Grünbeschichtung, teilweise mit niedrigen Pollern	RW4; 3747,12495 3741,12607
 	RW4; 3741,12607 3738,12639 3734,12715
 Grün/Rotbeschichtung	RW4; 3734,12715 3716,12925 3714,12949 3711,13098
-Rotbeschichtung	RW3; 3711,13098 3711,13210
+Rotbeschichtung, Fahrradschleuse	RW3; 3711,13098 3711,13210
 # 
 	RW7;RW7 3801,11858 3976,11869 3969,11675
 # 
@@ -8780,7 +8779,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;, danach provisorischer Radweg auf Hochbord --- Gehweg für Radfahrer frei	RW1; 10871,10322 10708,10312
 #: source_id: viz2021:13.408209,52.498506,29.11.2024,17:06 (bis 31.12.2024) (inaktiv)
 #: source_id: viz2021:13.40656,52.49831,23.06.2025,12:00 (bis 12.09.2025)
-#: source_id: viz2021:13.408209,52.498506, (bis 31.08.2025)
+#: source_id: viz2021:13.408209,52.498506, (bis 31.08.2025) (inaktiv)
 #: historical_note: zwischenzeitlich (bis 23.06.2025) provisorischer Radstreifen, RW4;
 	RW0; 10708,10312 10605,10312
 provisorischer Radstreifen, kurzes Stück über Hochbord	RW4; 10605,10312 10708,10312
@@ -9060,6 +9059,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1487446.php (keine Erwähnung des fehlenden Abschnitts)
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/radweg-jetzt-sicherer_a425316
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/mehr-sicherheit-auf-der-viel-befahrenen-magistrale_a426095
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-stitzung-vom-17072025.pdf (Stubenrauchbrücke bis Ende 2025 fertig?)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022) (inaktiv)
@@ -9089,7 +9089,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: priority: #B vvv
 #: last_checked: 2025-07-19 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung, Fahrrat-Protokoll) vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 # REMOVED --- #: osm_watch: way id="111048866" version="19" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
@@ -9167,6 +9167,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-17-06-2021.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8683 (Antrag)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strassenzug-mit-neuen-radwegen_a371366
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-stitzung-vom-17072025.pdf (Baubeginn im August (2025?) + Lichtsignalanlage)
 #: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße)
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
@@ -9175,8 +9176,8 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: osm_watch: way id="354645907" version="19"
 #: osm_watch: way id="354645904" version="13"
 #: last_checked: 2025-07-24 (mapillary) vvv
-#: check_frequency: 180d vvv
-#: next_check: 2026-12-31 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-12-31 (infravelo) vvv
 	RW3; 8739,6701 8653,6781
 #: note: wieder aufgehoben: provisorische Radspur	RW3;
 	RW0; 8653,6781 8496,6919

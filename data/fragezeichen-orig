@@ -2054,6 +2054,7 @@ Brauerstr.: evtl. wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben	
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8440
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8441
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-sitzung-vom-28112024.pdf (Erwähnung: "Herstellung eines breiten Geh- und Radwegs im Grünzug entlang der Dresdner Bahn", allerdings Frage der Finanzierung)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-stitzung-vom-17072025.pdf (in Planung, Finanzierung problematisch)
 #: XXX außerdem: gibt es mittlerweile eine (provisorische) Beleuchtung?
 #: osm_watch: way id="150301193" version="18"
 #: last_checked: 2025-07-19
@@ -3438,6 +3439,8 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: by: https://entwicklungsstadt.de/720-millionen-euro-fuer-32-kilometer-so-laeuft-die-eroeffnung-der-neuen-a100-ab/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/eroeffnung-der-a100-nach-treptow-ex-chefplaner-des-senats-erklaert-was-falsch-gelaufen-ist-li.2352017
 #: by: https://entwicklungsstadt.de/verkehr-laeuft-zwischen-neukoelln-und-treptow-berlins-neues-a100-teilstueck-eroeffnet/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_36_2317_2356_online.pdf (Freigabe der A100)
+#: by: https://www.fba.bund.de/DE/Bekanntmachungen/Widmung/Dokumente/20250829_A100.html?nn=988076
 #: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024) (bis 18.10.2024) (bis 29.11.2024) (bis 20.12.2024) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.460292,52.47175,05.06.2025,07:00 (Installation einer Ampelanlage in der Sonnenallee, bis 13.06.2025) (inaktiv)
 # REMOVED (eingetragen) --- #: XXX -> strassen_bab-orig, wenn fertig --- #: XXX vermutlich wird es weitere begleitende Wege geben, die hoffentlich für Radfahrer befahrbar sein werden (bis zur Grenzallee? zwischen Kiefholzstr. und Görlitzer Damm auf der westlichen Seite der Autobahn?) (bis Am Treptower Park allerdings nicht, da ist kein Platz mehr übrig) --- #: next_check: 2025-08-27 (rbb) vvv --- BAB100	?::inwork 14169,9525 14147,9383 14167,9099 --- BAB100 (Tunnelabschnitt)	?::inwork 14167,9099 14270,8885 --- BAB100	?::inwork 14270,8885 14307,8729 14281,8444 14288,8341 14326,8240 14421,8032 14447,7901 14459,7763 14436,7611 14346,7377 14278,7090 --- BAB100 (Tunnelabschnitt)	?::inwork 14278,7090 14219,6838 14161,6729 --- BAB100	?::inwork 14161,6729 14101,6640 --- #: next_check ^^^
@@ -4027,8 +4030,8 @@ Gutenbergstr.: geplante Leitungsarbeiten, wird es Einschränkungen für Radfahrer 
 #: last_checked: 2025-07-17 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-09-30 (infravelo) vvv
-#: next_check: 2025-08-29 (VIZ-Verkehrsmeldung) vvv
-#: source_id: viz2021:13.340034,52.48849, (bis 29.08.2025)
+#: next_check: 2025-09-08 (VIZ-Verkehrsmeldung) vvv
+#: source_id: viz2021:13.340034,52.48849, (bis 29.08.2025) (bis 08.09.2025)
 #: osm_watch: way id="37280436" version="22"
 #: osm_watch: way id="32879631" version="24"
 #: osm_watch: note 4478963 5
@@ -4209,60 +4212,7 @@ Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,
 #: priority ^^^
 # 
 # REMOVED (realisiert) --- #: by[removed]: https://www.infravelo.de/projekt/hardenbergstrasse-1/ (bis 4. Quartal 2022) (gelöscht) --- #: by: https://www.infravelo.de/projekt/hardenbergstrasse-2/ (Status "abgeschlossen", aber "zukünftig ... mit Pollern ... getrennt werden") --- #: osm_watch: way id="1251327057" version="2" --- #: osm_watch: way id="335393887" version="24" --- #: last_checked: 2024-08-30 --- #: check_frequency: 90d --- (noch nichts passiert) --- #: next_check: 2022-12-31 --- Hardenbergstr.: Poller geplant	?::projected; 5459,11135 5542,11075
-# 
-#: by: https://www.infravelo.de/projekt/opernroute-nord/ (4. Quartal 2021 - 2. Quartal 2022) (mittlerweile bis 4. Quartal 2022) (mittlerweile Start 2. Quartal 2022) (mittlerweile Start 3. Quartal 2022) (mittlerweile bis 2. Quartal 2023) (bis 3. Quartal 2023) (3. Quartal 2022 - 4. Quartal 2023) (3. Quartal 2022 - 3. Quartal 2024) (3. Quartal 2022 - 4. Quartal 2024) (3. Quartal 2022 - 3. Quartal 2025) (abgeschlossen)
-#: by: https://berliner-abendblatt.de/2022/02/01/neuer-radweg-opernroute-nord-soll-in-diesem-jahr-kommen/
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/radeln-auf-der-opernroute_a335423
-#: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html (ab 2. Quartal 2022)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1228956.php (Start der Bauarbeiten)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1228955.php (Start der Bauarbeiten, Bismarckstr. - Otto-Suhr-Allee bis Ende September 2022 fertig, bis Nordhauser Straße Ende 2022 und bis Olbersstr. im Frühjahr 2023)
-#: by: https://berliner-abendblatt.de/2022/07/25/radfahren-arbeiten-an-der-opernroute-nord-starten-heute/
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-4-sitzung-am-16122022.pdf (zur Opernroute Nord: keine protected bike lane)
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/baustart-fuer-opernroute-nord_a353243
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1342555.php
-#: by: https://berliner-abendblatt.de/berlin-news/erste-ergebnisse-zu-radverkehrsprojekten-liegen-vor-id226345 (und weitere)
-#: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-verkehr/zweiter-bauabschnitt-laeuft-noch_a394439 (zweiter Bauabschnitt zwischen Otto-Suhr-Allee und Nordhauser Straße, dritter Bauabschnitt folgt)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462896.php (Bauarbeiten in der Sömmeringstr. bis zum 12. Juli 2024)
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/opernroute-naechste-bauphase_a420392
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1471751.php (Grünbeschichtung in der Sömmeringstr., eine oder beide Richtungen?)
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/radweg-gruen-markiert_a421852
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1835533569730503154
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1845688483236438113
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1846073520448553182
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1500091.php
-#: by: https://www.berlin.de/imgscaler/qEwkW76nu-A0rLDOmk2HIdBJQYvEBVLrB5TzpLz4pPc/rbig2zu1/L3N5czExLXByb2QvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI0L3dpbnRlcnN0ZWluc3Ryc3BlcnJ1bmcuanBn.jpg
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/strassensperre-wegen-radweg_a429301
-#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bekommt-eine-neue-autobahn-und-was-sich-sonst-2025-im-verkehr-aendert-li.2283130 (2025)
-#: by: https://www.infravelo.de/meldung/opernroute-nord-zweiter-bauabschnitt-abgeschlossen/ (nördlich Mierendorffplatz wird im Frühjahr 2025 abgeschlossen)
-#: by: https://www.tagesspiegel.de/berlin/infravelo-chef-michael-fugel-uber-berlins-radweg-plane-parallel-zur-avus-bauen-wir-die-ravus-13125058.html
-#: by: https://entwicklungsstadt.de/opernroute-nord-in-charlottenburg-baustart-des-letzten-bauabschnitts/ (Lise-Meitner-Straße)
-#: by: https://entwicklungsstadt.de/opernroute-nord-charlottenburg-schliesst-bauarbeiten-fuer-radverkehr-ab/ (fertig; Anradeln am 26. August 2025)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1592875.php
-#: by: https://www.infravelo.de/meldung/bauabschluss-opernroute-nord/
-#: source_id: viz2021:13.306024,52.524038,03.07.2024,07:00 (bis 08.07.2024) (inaktiv)
-#: source_id: viz2021:13.306097,52.525724,18.06.2024,07:00 (bis 30.09.2024) (bis 04.10.2024) (bis 10.10.2024) (bis 22.11.2024) (inaktiv)
-#: source_id: viz2021:13.30664,52.51752,16.09.2024,06:00 (bis 14.10.2024) (inaktiv)
-#: source_id: viz2021:13.306536,52.518008,16.09.2024,06:00 (Markierungsarbeiten bis 14.10.2024) (inaktiv)
-#: source_id: viz2021:13.306536,52.518008,14.10.2024,07:00 (bis 22.10.2024) (inaktiv)
-#: source_id: viz2021:13.306077,52.523947,15.10.2024,09:00 (bis 22.10.2024) (bis 23.10.2024) (inaktiv)
-#: source_id: viz2021:13.30625,52.52024,23.10.2024,07:00 (Markierungsarbeiten bis 04.11.2024) (inaktiv)
-#: source_id: viz2021:13.306536,52.518008,23.10.2024,07:00 (Markierungsarbeiten bis 04.11.2024) (inaktiv)
-#: source_id: viz2021:13.30649,52.518359,05.11.2024,07:00 (Markierungsarbeiten bis 15.11.2024) (bis 22.11.2024) (inaktiv)
-#: source_id: viz2021:13.306321,52.519591,23.10.2024,07:00 (Markierungsarbeiten bis 05.11.2024) (inaktiv)
-#: source_id: viz2021:13.306064,52.524542,31.01.2025,07:00 (Sperrung für Kfz-Verkehr, bis 14.03.2025) (bis 21.03.2025) (bis 21.03.2025 + weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.306132,52.523359,21.02.2025,11:09 (bis 14.03.2025) (inaktiv)
-#: osm_watch: way id="4410427" version="41"
-#: osm_watch: way id="1052921140" version="8"
-#: osm_watch: way id="31621016" version="37"
-#: osm_watch: note 4693716 2
-#: note: mittlerweile (2024-11-28) existiert zwischen Richard-Wagner-Platz und Brücke eine Grünbeschichtung, vor der Brücke (wo der Unfall war?) beidseitig ein paar Meter Poller; mittlerweile (Januar 2025) bis Mierendorffplatz weitgehend fertig
-#: note: Lise-Meitner-Straße mit Grünbeschichtung, zumindest teilweise, evtl. nun RW4, evtl. wurde auch asphaltiert
-#: last_checked: 2025-06-01
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2025-09-30 (infravelo)
-#: next_check: 2025-08-26 ("Anradeln")
-"Opernroute": Grünbeschichtung geplant, außerdem Umwandlung von Schutzstreifen in Radfahrstreifen sowie abschnittsweise Protektion	?::inwork 3843,11659 3837,11760 3801,11858 3786,12014 3778,12104 3767,12217 3761,12298 3757,12372 3747,12495 3741,12607 3738,12639 3734,12715 3716,12925 3714,12949 3711,13098 3711,13210 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
-# 
+# REMOVED (realisert, Mapillary-Aufnahmen existieren) --- #: by: https://www.infravelo.de/projekt/opernroute-nord/ (4. Quartal 2021 - 2. Quartal 2022) (mittlerweile bis 4. Quartal 2022) (mittlerweile Start 2. Quartal 2022) (mittlerweile Start 3. Quartal 2022) (mittlerweile bis 2. Quartal 2023) (bis 3. Quartal 2023) (3. Quartal 2022 - 4. Quartal 2023) (3. Quartal 2022 - 3. Quartal 2024) (3. Quartal 2022 - 4. Quartal 2024) (3. Quartal 2022 - 3. Quartal 2025) (abgeschlossen) --- #: by: https://berliner-abendblatt.de/2022/02/01/neuer-radweg-opernroute-nord-soll-in-diesem-jahr-kommen/ --- #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/radeln-auf-der-opernroute_a335423 --- #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html (ab 2. Quartal 2022) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1228956.php (Start der Bauarbeiten) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1228955.php (Start der Bauarbeiten, Bismarckstr. - Otto-Suhr-Allee bis Ende September 2022 fertig, bis Nordhauser Straße Ende 2022 und bis Olbersstr. im Frühjahr 2023) --- #: by: https://berliner-abendblatt.de/2022/07/25/radfahren-arbeiten-an-der-opernroute-nord-starten-heute/ --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-4-sitzung-am-16122022.pdf (zur Opernroute Nord: keine protected bike lane) --- #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/baustart-fuer-opernroute-nord_a353243 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1342555.php --- #: by: https://berliner-abendblatt.de/berlin-news/erste-ergebnisse-zu-radverkehrsprojekten-liegen-vor-id226345 (und weitere) --- #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-verkehr/zweiter-bauabschnitt-laeuft-noch_a394439 (zweiter Bauabschnitt zwischen Otto-Suhr-Allee und Nordhauser Straße, dritter Bauabschnitt folgt) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462896.php (Bauarbeiten in der Sömmeringstr. bis zum 12. Juli 2024) --- #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/opernroute-naechste-bauphase_a420392 --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1471751.php (Grünbeschichtung in der Sömmeringstr., eine oder beide Richtungen?) --- #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/radweg-gruen-markiert_a421852 --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1835533569730503154 --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1845688483236438113 --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1846073520448553182 --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1500091.php --- #: by: https://www.berlin.de/imgscaler/qEwkW76nu-A0rLDOmk2HIdBJQYvEBVLrB5TzpLz4pPc/rbig2zu1/L3N5czExLXByb2QvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI0L3dpbnRlcnN0ZWluc3Ryc3BlcnJ1bmcuanBn.jpg --- #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/strassensperre-wegen-radweg_a429301 --- #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bekommt-eine-neue-autobahn-und-was-sich-sonst-2025-im-verkehr-aendert-li.2283130 (2025) --- #: by: https://www.infravelo.de/meldung/opernroute-nord-zweiter-bauabschnitt-abgeschlossen/ (nördlich Mierendorffplatz wird im Frühjahr 2025 abgeschlossen) --- #: by: https://www.tagesspiegel.de/berlin/infravelo-chef-michael-fugel-uber-berlins-radweg-plane-parallel-zur-avus-bauen-wir-die-ravus-13125058.html --- #: by: https://entwicklungsstadt.de/opernroute-nord-in-charlottenburg-baustart-des-letzten-bauabschnitts/ (Lise-Meitner-Straße) --- #: by: https://entwicklungsstadt.de/opernroute-nord-charlottenburg-schliesst-bauarbeiten-fuer-radverkehr-ab/ (fertig; Anradeln am 26. August 2025) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1592875.php --- #: by: https://www.infravelo.de/meldung/bauabschluss-opernroute-nord/ --- #: source_id: viz2021:13.306024,52.524038,03.07.2024,07:00 (bis 08.07.2024) (inaktiv) --- #: source_id: viz2021:13.306097,52.525724,18.06.2024,07:00 (bis 30.09.2024) (bis 04.10.2024) (bis 10.10.2024) (bis 22.11.2024) (inaktiv) --- #: source_id: viz2021:13.30664,52.51752,16.09.2024,06:00 (bis 14.10.2024) (inaktiv) --- #: source_id: viz2021:13.306536,52.518008,16.09.2024,06:00 (Markierungsarbeiten bis 14.10.2024) (inaktiv) --- #: source_id: viz2021:13.306536,52.518008,14.10.2024,07:00 (bis 22.10.2024) (inaktiv) --- #: source_id: viz2021:13.306077,52.523947,15.10.2024,09:00 (bis 22.10.2024) (bis 23.10.2024) (inaktiv) --- #: source_id: viz2021:13.30625,52.52024,23.10.2024,07:00 (Markierungsarbeiten bis 04.11.2024) (inaktiv) --- #: source_id: viz2021:13.306536,52.518008,23.10.2024,07:00 (Markierungsarbeiten bis 04.11.2024) (inaktiv) --- #: source_id: viz2021:13.30649,52.518359,05.11.2024,07:00 (Markierungsarbeiten bis 15.11.2024) (bis 22.11.2024) (inaktiv) --- #: source_id: viz2021:13.306321,52.519591,23.10.2024,07:00 (Markierungsarbeiten bis 05.11.2024) (inaktiv) --- #: source_id: viz2021:13.306064,52.524542,31.01.2025,07:00 (Sperrung für Kfz-Verkehr, bis 14.03.2025) (bis 21.03.2025) (bis 21.03.2025 + weitere Arbeiten) (inaktiv) --- #: source_id: viz2021:13.306132,52.523359,21.02.2025,11:09 (bis 14.03.2025) (inaktiv) --- #: osm_watch: way id="4410427" version="41" --- #: osm_watch: way id="1052921140" version="8" --- #: osm_watch: way id="31621016" version="37" --- #: osm_watch: note 4693716 2 --- #: note: mittlerweile (2024-11-28) existiert zwischen Richard-Wagner-Platz und Brücke eine Grünbeschichtung, vor der Brücke (wo der Unfall war?) beidseitig ein paar Meter Poller; mittlerweile (Januar 2025) bis Mierendorffplatz weitgehend fertig --- #: note: Lise-Meitner-Straße mit Grünbeschichtung, zumindest teilweise, evtl. nun RW4, evtl. wurde auch asphaltiert --- #: last_checked: 2025-06-01 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2025-09-30 (infravelo) --- #: next_check: 2025-08-26 ("Anradeln") --- "Opernroute": Grünbeschichtung geplant, außerdem Umwandlung von Schutzstreifen in Radfahrstreifen sowie abschnittsweise Protektion	?::inwork 3843,11659 3837,11760 3801,11858 3786,12014 3778,12104 3767,12217 3761,12298 3757,12372 3747,12495 3741,12607 3738,12639 3734,12715 3716,12925 3714,12949 3711,13098 3711,13210 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 # REMOVED (realisiert, außer im südlichen Abschnitt) --- #: by: https://www.infravelo.de/projekt/opernroute-nord/ (siehe oben) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8019 (Erwähnung) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1228956.php (Start der Bauarbeiten, bis Ende September 2022) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1228955.php (Start der Bauarbeiten) --- #: by: https://www.bz-berlin.de/berlin/charlottenburg-wilmersdorf/sorry-autofahrer-aber-das-wird-jetzt-ein-radweg --- #: osm_watch: way id="480240233" version="8" --- #: osm_watch: way id="87687993" version="15" --- #: XXX zwischen Bismarckstr. und Richard-Wagner-Str. bereits markiert, Schilder fehlen noch. Wird es eine abknickende Vorfahrt geben? Was ist mit dem Abschnitt südlich der Bismarckstr.? --- #: last_checked: 2022-10-17 (mapillary) --- # REMOVED --- #: next_check: 2022-09-30 --- Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,11858 3976,11869 3969,11675 3988,11502
 # REMOVED (-> radwege-orig) --- #: note: Richtung Osten bis etwa Universitätsstr. weitgehend markiert, meist separate Radspur, teilweise mit kombinierter Bushaltestelle, noch keine Schilder --- #: last_checked: 2022-12-11 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2022-09-30 --- Unter den Linden: temporäre Umgestaltung, eine besondere Fahrspur für Radfahrer entsteht	?; 8804,12280 9028,12307 9141,12320 9303,12343 9358,12351 9429,12359 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
 # 
@@ -4563,6 +4513,7 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/artikel.1540534.php (Monumentenstraße)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/artikel.1540298.php (Belziger Straße)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-1-fahrrat-2025.pdf (Erwähnung von weiteren Modalfiltern)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-stitzung-vom-17072025.pdf (Monumenten/Langenscheidtstr.: Mitte September 2025 bis Ende Oktober 2025)
 #: XXX außerdem: ein gegenläufiger Radweg auf der Südseite der Monumentenbrücke ist geplant
 #: XXX Langenscheidtbrücke wird für Kfz Einbahnstraße Richtung Osten
 #: last_checked: 2025-08-06 vvv
@@ -4571,9 +4522,9 @@ Freiherr-vom-Stein-Str.: Fahrradstraße geplant	?::projected 5913,8415 5995,8477 
 # REMOVED (Schilder hängen schon) --- #: last_checked: 2025-08-06 --- Belziger Str.: Fahrradstraße geplant	?::projected 6460,8688 6644,8780 6664,8787 6852,8880
 #: next_check: 2025-09-30 (infravelo)
 Belziger Str.: Fahrradstraße geplant	?::projected 6852,8880 6958,8941 7101,9027 7308,9163
-#: next_check: 2025-12-31 (infravelo)
+#: next_check: 2025-10-31 (Fahrrat-Protokoll)
 Langenscheidtstr.: Fahrradstraße geplant	?::projected 7647,9196 7596,9249 7509,9337
-#: next_check: 2025-12-31 (infravelo)
+#: next_check: 2025-10-31 (Fahrrat-Protokoll)
 Monumentenstr.: Fahrradstraße geplant	?::projected 7647,9196 7735,9121 7790,9126 8014,9126 8053,9123 8081,9120 8180,9099 8389,9087 8480,9080 8598,9074
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4819,7 +4770,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.rbb24.de/panorama/beitrag/2025/06/poller-pendler-autofahrer-hermsdorf-glienicke-waldseeviertel-B96.html
 #: priority: #C vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2025-07-31 (indoor research) vvv
+#: last_checked: 2025-08-29 (indoor research) vvv
 # REMOVED (outdoor) --- #: check_frequency: 60d vvv
 #: check_frequency: 30d (indoor research) vvv
 #: also_indoor: search Schildower_Straße
@@ -6916,8 +6867,7 @@ B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,5167
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42751
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42752
 #: source_id: LS/221-E/22/017 (inaktiv)
-#: source_id: LS/221-E/25/018 (bis 18.07.2025) (inaktiv)
-#: source_id: LS/221-E/25/018 (Neubau Radweg, bis 29.08.2025)
+#: source_id: LS/221-E/25/018 (bis 18.07.2025) (inaktiv) (Neubau Radweg, bis 29.08.2025) (inaktiv)
 #: last_checked: 2025-04-11 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-08-29 (Verkehrsmeldung)
@@ -8041,12 +7991,13 @@ Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Ramp
 #: source_id[inactive]: bvg2021:165#BVG316743_0
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_222562
 #: source_id: viz2021:13.495187,52.466445,18.10.2024,09:00 (bis 18.10.2024) (inaktiv)
-#: source_id: viz2021:13.49476,52.46667,24.06.2024,12:00 (bis 31.08.2025)
+#: source_id: viz2021:13.49476,52.46667,24.06.2024,12:00 (bis 31.08.2025) (inaktiv)
+#: source_id: viz2021:13.49476,52.46667, (bis 11.09.2025)
 #: XXX Zurzeit (Ende Februar 2023) kaum Einschränkungen für Radfahrer, nur stadtauswärts ist es auf dem Bürgersteig ein bisschen enger; mittlerweile (Mitte März 2023) existiert diese Einschränkung nicht mehr; Juli 2023: siehe handicap_directed
 #: XXX geplante Änderungen laut infravelo: auf der Brücke "gemeinsamer Geh- und Radweg" (war doch bislang auch so?), außerdem wird es mit der neuen Brückenkonstruktion möglich sein, an beiden Ufern Wege entlangzuführen
 #: last_checked: 2025-08-12 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2025-08-31 (rbb-Verkehrsmeldung, VIZ-Verkehrsmeldung)
+#: next_check: 2025-09-11 (VIZ-Verkehrsmeldung)
 Marggraffbrücke: Abriss und Neubau	?::inwork 16677,6892 16720,6845
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=35938
@@ -9095,13 +9046,13 @@ Friedenauer Höhe: Erschließungsstraße, evtl. mit Anschluss an die Straße am Güte
 # 
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026)
 #: osm_watch: way id="23926070" version="4"
-#: last_checked: 2025-07-31 (website)
+#: last_checked: 2025-08-29 (website)
 #: check_frequency: 30d (indoor checks)
 #: next_check: 2025-12-31 (SenMVKU website)
 Spektegrabensteg: Neubau geplant	?::projected -7228,15933 -7243,15943
 # 
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026)
-#: last_checked: 2025-07-31 (website)
+#: last_checked: 2025-08-29 (website)
 #: check_frequency: 30d (indoor checks)
 #: next_check: 2025-12-31 (SenMVKU website)
 Südparkbrücke: Neubau geplant	?::projected -4048,12107 -4033,12108
@@ -9392,7 +9343,7 @@ Bad Belzig: Straßennamen? Qualität? Einbahnstraßen auch für Radfahrer gültig?	? 
 #: osm_watch: note 3954448 13
 #: osm_watch: note 3954746 4
 #: osm_watch: way id="195397561" version="20"
-#: last_checked: 2025-08-19 (mapillary)
+#: last_checked: 2025-08-27 (mapillary)
 #: check_frequency: 14d
 Planckstr.: wird hier eine Fahrradstraße entstehen?	? 9376,12911 9375,12911 9386,12833 9402,12792 9429,12728 9435,12698 9441,12670
 # 
@@ -9531,6 +9482,8 @@ Rolandufer: wird unter der Mühlendammbrücke wieder gesperrt werden?	? 10821,1215
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1503507.php (vor der Nelson-Mandela-Schule)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1592341.php (Bauarbeiten bis 29.8.2025)
+#: osm_watch: note 4935336 1
+#: osm_watch: way id="4395632" version="26"
 #: priority: #D
 #: last_checked: 2025-06-13
 # REMOVED --- #: check_frequency: 60d

@@ -22414,8 +22414,8 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (B,T,G)
-#: last_checked: 2025-08-16 (traffic)
+#: also_indoor: traffic (ex-B,T,G)
+#: last_checked: 2025-08-29 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -24523,11 +24523,14 @@ EOF
      { from  => 1750914000, # 2025-06-26 07:00, 1408694400, # 2014-08-22 10:00
        until => 1751259600, # 2025-06-30 07:00, 1408899600, # 2014-08-24 19:00
 #      text  => 'Regattastr.: Einbahnstraßenregelung wegen des 21. Internationalen Motorbootrennens in Grünau, offen Richtung Karolinenhof, 23. und 24. August 2014',
-       text  => 'Regattastr.: Veranstaltung, Sperrung zwischen Rabindranath-Tagore-Str. und Wassersportallee, evtl. sind auch Radfahrer betroffen, vom 27.06.2025 07:00 bis 30.06.2025 07:00',
+       text  => 'Regattastr.: Veranstaltung, Sperrung zwischen Rabindranath-Tagore-Str. und Wassersportallee, evtl. sind auch Radfahrer betroffen, vom 29.08.2025 12:00 bis 01.09.2025 07:00',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.159608.php
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxji45ndck2k
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihk6lrdqk4p6u6cxw5p6o5l622ogmc5fd3k66wie6iv64en46cn4e@jpeg (Radfahrer frei-Schilder zu sehen)
 #: source_id: viz2021:13.58988,52.41088,27.06.2025,07:00 (bis 30.06.2025) (inaktiv)
+#: source_id: viz2021:13.58988,52.41088,29.08.2025,12:00 (bis 01.09.2025)
 	q4::temp 23252,792 23085,898 23079,901 22854,1023 22821,1086 22766,1226 22655,1450
 EOF
      },
@@ -33822,7 +33825,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe im Herbst 2023)
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20231117 (voraussichtliche Freigabe Anfang 2024)
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240608 (voraussichtliche Freigabe Sommer 2024)
-#: by: https://www.blankenfelde-mahlow.de/planen-bauen/bauen/dresdner-bahn/ (Sperrzeit: Ende 2025)
+#: by: https://www.blankenfelde-mahlow.de/planen-bauen/bauen/dresdner-bahn/ (Sperrzeit+Bauzeit Bauwerk: Ende 2025)
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 #: XXX Wird nach der Wiedereröffnung der Kfz-Verkehr möglich sein? Dann: NN -> N!
@@ -33831,8 +33834,8 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="3"
 #: osm_watch: note 3914565 19
-#: last_checked: 2025-05-01 (osm note)
-#: check_frequency: 120d
+#: last_checked: 2025-08-29 (research)
+#: check_frequency: 90d
 #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 EOF
@@ -37853,7 +37856,7 @@ EOF
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: last_checked: 2025-07-19 vvv
-#: next_check: 2025-08-29 vvv
+#: next_check: 2026-03-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung
 Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
@@ -37862,7 +37865,7 @@ Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 # REMOVED (laut Umleitungsplan nicht mehr) --- Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
 # REMOVED (laut Umleitungsplan nicht mehr) (tatsächlich auch nicht; interessanterweise ist eine provisorische Radspur noch übrig geblieben) --- Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED (hier nicht mehr) --- Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
-#: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025)
+#: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026)
 #: source_id: viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026)
 #: note: an der Bahnhofstr. keine Freigabe für Radfahrer; weiter hinten in der Ferne (Rehagener Str.?) kann man Zusatzschilder erahnen --- hier vielleicht Radfahrer frei?
 Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
@@ -43281,24 +43284,25 @@ EOF
        until => undef, # $isodate2epoch->("2025-03-31 18:00:00"), # undef, # XXX
 #      text  => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis Ende März 2025, evtl. wird verlängert',
 #      text  => 'Weinmeisterstr. und Gipsstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, geplant bis Ende August 2025',
-       text  => 'Weinmeisterstr. und Gipsstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, vermutlich bis Mitte September 2025',
+#      text  => 'Weinmeisterstr. und Gipsstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, vermutlich bis Mitte September 2025',
+       text  => 'Gipsstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WEINMEISTER-2025
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: XXX Außerdem wird eine Fußgängerampel etwa am Anfang der Baustelle entstehen (siehe bahninfo-forum)
+# REMOVED (fragezeichen-Eintrag existiert) --- #: XXX Außerdem wird eine Fußgängerampel etwa am Anfang der Baustelle entstehen (siehe bahninfo-forum)
+#: by: https://www.bvg.de/de/unternehmen/medienportal/pressemitteilungen/2025-08-29-aufzug-weinmeisterstrasse
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025) (bis 31.08.2025) (inaktiv)
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025)
-#: note: eigentlich q4+::inwork;
-#: note: laut Baustellenschild bis 15.9.2025
-#: also_indoor: traffic (G,T,B,H,W,A)
+# REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
+# REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
 #: last_checked: 2025-08-27 (bahninfo-forum) vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv
-Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
+# REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
+#: also_indoor: traffic (G,W)
 Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -44282,10 +44286,10 @@ EOF
 EOF
      },
      { from  => undef, # 1715058000, # 2024-05-07 07:00
-       until => undef, # 1723898534, # $isodate2epoch->("2024-08-20 17:00:00"), # 1723129200, # 2024-08-08 17:00
+       until => $isodate2epoch->("2025-10-31 23:59:59"), # undef, # 1723898534, # $isodate2epoch->("2024-08-20 17:00:00"), # 1723129200, # 2024-08-08 17:00
 #      text  => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis voraussichtlich 20.08.2024 17:00',
 #      text  => 'Winckelmannstr.: einige Abschnitte wegen Gleisarbeiten gesperrt, bis voraussichtlich 20.08.2024 17:00',
-       text  => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, voraussichtlich bis 31.10.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2024
@@ -44310,11 +44314,13 @@ EOF
 # REMOVED --- #: by: krickstadt --- Haeckelstr.	q4::inwork 17379,3932 17468,3979
 #: note: neue Havarie 2025
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
-#: source_id: viz2021:13.50621,52.44257, (kein Enddatum)
+#: source_id: viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025)
+#: note: bei rbb sogar bis 31.10.2026
 #: also_indoor: traffic (T)
 #: last_checked: 2025-08-27 (bahninfo-forum)
-#: check_frequency: 14d
-Winckelmannstr.: Havarie, sind Radfahrer auch betroffen?	? 17503,4148 17507,4216
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2025-10-31
+Winckelmannstr.: Havarie, evtl. sind auch Radfahrer betroffen	q4::inwork 17503,4148 17507,4216
 EOF
      },
      { from  => 1714550400, # 2024-05-01 10:00
@@ -45741,7 +45747,7 @@ EOF
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-08-16 (website) vvv
+#: last_checked: 2025-08-29 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -46653,7 +46659,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.376899,52.52871,22.11.2024,08:00 (bis 10.03.2025) (bis 31.08.2025) (inaktiv)
 #: source_id: viz2021:13.37605,52.52846,22.11.2024,17:04 (bis 10.03.2025) (inaktiv)
-#: source_id: viz2021:13.37605,52.52846, (bis 31.08.2025)
+#: source_id: viz2021:13.37605,52.52846, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: note: Aber eigentlich kann man die Fußgängerampel benutzen...
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-07-09 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-31 vvv
@@ -48982,11 +48988,13 @@ EOF
        data  => <<EOF,
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
-#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025)
+#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
 #: next_check: 2025-09-02 vvv
+#: also_indoor: traffic (G)
 Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
+#: also_indoor: traffic (G,T,H)
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
 #: next_check ^^^
 EOF
@@ -49009,12 +49017,13 @@ EOF
      },
      { from  => 1751183543, # 2025-06-29 09:52
        until => undef,
-       text  => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende August 2025',
+       text  => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende August 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,re-H,T)
-#: last_checked: 2025-08-16
-#: next_check: 2025-08-29 (Halteverbotsschilder)
+#: also_indoor: traffic (G,ex-H,T)
+#: last_checked: 2025-08-29 (traffic)
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2025-08-29 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
 EOF
      },
@@ -49224,12 +49233,12 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 EOF
      },
      { from  => $isodate2epoch->("2025-07-16 00:00:00"),
-       until => $isodate2epoch->("2025-09-06 17:00:00"),
-       text  => 'Stechow - Rhinsmühlen (B188): Bauarbeiten, Sperrung, vom 17.07.2025 bis 06.09.2025',
+       until => $isodate2epoch->("2025-09-13 17:00:00"),
+       text  => 'Stechow - Rhinsmühlen (B188): Bauarbeiten, Sperrung, vom 17.07.2025 bis 13.09.2025',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~15-07-2025-b188-kreisverkehr-zwischen-stechow-und-rhinsmuehlen (Bauarbeiten für Kreisverkehr B188/Stechow - Nennhausen; Radwegbau Stechow - Rhinsmühlen (~5km) beginnt nach den Bauarbeiten im September 2025)
-#: source_id: LS/223-P/25/088 (bis 06.09.2025)
-#: next_check: 2025-09-06
+#: source_id: LS/223-P/25/088 (bis 06.09.2025) (bis 13.09.2025)
+#: next_check: 2025-09-13
 Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork -54051,23436 -53816,23532 -53633,23786 -53625,23953
 EOF
      },
@@ -49376,23 +49385,23 @@ EOF
 EOF
      },
      { from  => 1753596000, # 2025-07-27 08:00
-       until => $isodate2epoch->("2025-09-06 17:00:00"), # 1756306800, # 2025-08-27 17:00
+       until => $isodate2epoch->("2025-09-03 17:00:00"), # 1756306800, # 2025-08-27 17:00
 #      text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 27.08.2025',
-       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 06.09.2025',
+       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 03.09.2025',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025)
+#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025)
 	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 EOF
      },
      { from  => 1753221600, # 2025-07-23 00:00
-       until => $isodate2epoch->("2025-08-29 20:00:00"),
+       until => 1756484486, # $isodate2epoch->("2025-08-29 20:00:00"),
        text  => 'Boothstr.: Anbindung an den Ostpreußendamm gesperrt, bis Ende August 2025 ',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: viz2021:13.32158,52.4357,24.07.2025,09:30 (bis 29.08.2025)
+#: source_id: viz2021:13.32158,52.4357,24.07.2025,09:30 (bis 29.08.2025) (inaktiv)
 	q4::inwork 5125,3142 4967,3231
 EOF
      },
@@ -49452,7 +49461,7 @@ EOF
 # REMOVED --- #: XXX Hat es was mit den Fernwärmearbeiten im Barbarossakiez zu tun?
 #: also_indoor: traffic (G,T)
 #: note: Länge der Sperrung ca. 60m
-#: last_checked: 2025-08-16 (traffic)
+#: last_checked: 2025-08-29 (traffic)
 #: check_frequency: 14d
 	q4::inwork 6860,9529 7002,9526
 EOF
@@ -49586,7 +49595,7 @@ EOF
        text  => 'Helen-Ernst-Str.: Bauarbeiten zwischen Tamara-Danz-Str. und Hedwig-Wachenheim-Str., Sperrung, vom 18.08.2025 07:00 bis 29.08.2025 17:00',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LMS-BR:380362/72 viz2021:13.449642,52.506012,18.08.2025,07:00 (bis 29.08.2025)
+#: source_id: LMS-BR:380362/72 viz2021:13.449642,52.506012,18.08.2025,07:00 (bis 29.08.2025) (inaktiv)
 	2::inwork 13537,11186 13422,11236
 EOF
      },
@@ -49703,6 +49712,8 @@ EOF
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxh7miufrk2p
 #: source_id: viz2021:13.38759,52.52388,
+#: source_id: bvg2024:147#HIM_FREETEXT_297783
+#: source_id: bvg2024:245#HIM_FREETEXT_297784
 #: also_indoor: traffic (T)
 #: last_checked: 2025-08-28 (VIZ-Verkehrsmeldung)
 #: check_frequency: 3d
@@ -49710,11 +49721,26 @@ EOF
 EOF
      },
      { from  => 1756417862, # 2025-08-28 23:51
-       until => 1769900399, # 2026-01-31 23:59
-       text  => 'Schillerstr.: Bauarbeiten, Sperrung zwischen Giesensdorfer Str. und Goethestr., bis Ende Januar 2026 ',
+       until => $isodate2epoch->("2026-01-30 23:59:59"),
+       text  => 'Schillerstr., Goethestr. und Giesensdorfer Str.: Bauarbeiten, Sperrungen, bis Ende Januar 2026 ',
        type  => 'handicap',
        data  => <<'EOF',
-	q4::inwork 4429,2396 4568,2424
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiasgxyh4yi2yyv2ipifgm5ybdhxw3cbimwdzuqkhqo6rzca5axq3a@jpeg
+#: source_id: viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026)
+Schillerstr.	q4::inwork 4429,2396 4568,2424
+#: note: nicht komplett gesperrt
+Goethestr.	q3::inwork 4568,2424 4526,2648
+Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 4454,2221
+EOF
+     },
+     { from  => 1756706400, # 2025-09-01 08:00
+       until => 1756998000, # 2025-09-04 17:00
+       text  => 'unter der Baumgartenbrücke: Sperrung, evtl. sind auch Radfahrer betroffen, 02.09.2025 08:00 Uhr bis 04.09.2025 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/223-P/25/116 (bis 04.09.2025)
+	2::inwork -19197,-5745 -19225,-5729
 EOF
      },
     );
