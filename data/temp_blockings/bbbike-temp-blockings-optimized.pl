@@ -4267,7 +4267,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-08-28 vvv
+#: last_checked: 2025-08-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -6078,7 +6078,7 @@ Sennheimer Str., 1. BA bis Huttenstr.	q3::inwork 2490,26126 2484,25984 2496,2591
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2025-06-25 (mapillary)
+#: last_checked: 2025-08-29
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -6159,11 +6159,12 @@ Sennheimer Str., 1. BA bis Huttenstr.	q3::inwork 2490,26126 2484,25984 2496,2591
 #: osm_watch: note 4556342 4
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: priority: #A
-#: last_checked: 2025-06-25 (mapillary) vvv
+#: last_checked: 2025-08-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-31 vvv
+ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: osm_watch: way id="46907541" version="18"
-#: osm_watch: way id="1116849053" version="4"
+#: osm_watch: way id="1116849053" version="5"
 	2::inwork 3980,2102 4064,2293 4209,2641 4220,2664
 #: osm_watch: way id="77098244" version="20"
 	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
@@ -6173,7 +6174,7 @@ Sennheimer Str., 1. BA bis Huttenstr.	q3::inwork 2490,26126 2484,25984 2496,2591
 ',
          'from' => 1697320800,
          'id' => 3728,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Engadiner Weg Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt',
          'type' => 'gesperrt',
          'until' => 1761843600
        },
@@ -7117,7 +7118,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 12
+#: osm_watch: note 4185183 13
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -7414,7 +7415,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-08-20 vvv
+#: last_checked: 2025-08-30 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="26158804" version="26"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -7468,7 +7469,7 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2025-08-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
@@ -7477,7 +7478,7 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 # REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
 #: note: laut BA-Pressemitteilung auch für den Radverkehr frei
 #: note: nur etwa 50m, deshalb nur q2
-Bäkestr.: Fahrbahn zwischen Zebrastreifen und Promenade gesperrt, nördlicher Bürgersteig frei	q2::inwork 4659,3065 4587,3097
+Bäkestr.: Fahrbahn zwischen Zebrastreifen und Promenade gesperrt, nördlicher Bürgersteig frei	q2::inwork 4411,3180 4587,3097
 # REMOVED --- #: osm_watch: way id="1332159946" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4659,3065 4832,2975
 # REMOVED --- Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4618,3135 4692,3225
 #: osm_watch: way id="121176503" version="12"
@@ -8208,16 +8209,7 @@ Markgrafenstr. nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 256501098 (bis 30.08.2025)
-	2::inwork -7632,34421 -8939,34942
-',
-         'from' => 1739088000,
-         'id' => 4255,
-         'text' => 'Bärenklau - Vehlefanz: Bauarbeiten, Sperrung, vom 10.02.2025 09:00 Uhr bis 30.08.2025 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1756562400
-       },
+       undef,
        {
          'data' => '#: note: Grünanlagenschilder mit expliziten Radfahrverbot
 (Amalienstr. - Uferweg): Grünanlage	q4 14124,16552 14142,16559 14159,16593
@@ -8393,7 +8385,8 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'until' => undef
        },
        {
-         'data' => '#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025)
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
+#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 ',
          'from' => 1741503600,
@@ -8600,7 +8593,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: last_checked: 2025-08-28 (website) vvv
 #: check_frequency: 30d (website checks) vvv
-#: next_check: 2025-08-31 (Wassermannstr.) vvv
+#: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025) (inaktiv)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
@@ -8785,19 +8778,20 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2
 #: also_indoor: traffic (G,T[zu wenig])
-#: last_checked: 2025-08-06 (mapillary) vvv
+#: last_checked: 2025-08-30 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2025-10-31 (Baustellenschild) vvv
 # REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
 #: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3
 Borstellstr.	q4::inwork 6532,4422 6491,4391
+Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1747223796,
          'id' => 4336,
-         'text' => 'Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
+         'text' => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vermutlich bis Oktober 2025',
          'type' => 'handicap',
          'until' => 1761951600
        },
@@ -9107,7 +9101,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 #: osm_watch: note 4846255 1
 #: osm_watch: way id="195104960" version="18"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-08-12 (mapillary) vvv
+#: last_checked: 2025-08-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-01 (rbb) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -9229,7 +9223,7 @@ Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork 
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-08-17 (traffic)
+#: last_checked: 2025-08-30 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 ',
@@ -9516,7 +9510,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-08-28
+#: last_checked: 2025-08-29
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9566,7 +9560,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
        {
          'data' => '#: next_check_id: HIRSCHGARTEN-2024
 #: by: https://sbahn.berlin/fahren/bahnhofsuebersicht/hirschgarten/ (kein Halt vom 05.08. (Di) 4 Uhr bis 06.09.2025 (Sa) 5 Uhr)
-#: osm_watch: note 4890807 2
+#: osm_watch: note 4890807 3
 #: osm_watch: way id="37523779" version="6"
 #: note: 2025-08-27: An der Nordseite nicht richtig gesperrt gewesen, an der Südseite nur halbherzig.
 #: last_checked: 2025-08-27
@@ -9629,22 +9623,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxh7miufrk2p
-#: source_id: viz2021:13.38759,52.52388,
-#: source_id: bvg2024:147#HIM_FREETEXT_297783
-#: source_id: bvg2024:245#HIM_FREETEXT_297784
-#: also_indoor: traffic (T)
-#: last_checked: 2025-08-28 (VIZ-Verkehrsmeldung)
-#: check_frequency: 3d
-	2::inwork 9262,13111 9118,13070
-',
-         'from' => undef,
-         'id' => 4429,
-         'text' => 'Reinhardtstr.: Gefahrenstelle, Sperrung der Straße, Ende der Sperrung unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiasgxyh4yi2yyv2ipifgm5ybdhxw3cbimwdzuqkhqo6rzca5axq3a@jpeg

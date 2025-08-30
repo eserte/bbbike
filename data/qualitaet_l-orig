@@ -2599,7 +2599,8 @@ Postenweg Parforceheide: feiner Schotter	Q2 -7800,-1956 -7821,-1890
 #: corrected_by: srt (Q0 -> Q0-)
 Mauerweg: Asphalt	Q0- 3232,803 3045,707
 #: confirmed_by: srt
-Mauerweg: sehr guter Asphalt	Q0 3045,707 2795,471 2275,-13 2158,-119 1993,-275 1929,-308 1659,-401 1510,-423 1473,-420
+#: historical_note: fr¸her: sehr guter Asphalt, Q0
+Mauerweg: guter Asphalt, einige Wurzelhebungen	Q0- 3045,707 2795,471 2275,-13 2158,-119 1993,-275 1929,-308 1659,-401 1510,-423 1473,-420
 #: by: ^^^
 Berliner Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 1460,-714 1388,-685 1273,-626
 Breite Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 1279,-608 1249,-592 1121,-557 1101,-553
@@ -4959,7 +4960,16 @@ Reiherweg: Asphalt	Q0 -4478,-3510 -4498,-3428
 Reiherweg: Asphalt	Q0 -4498,-3428 -4539,-3269
 # REMOVED --- #: XXX Bauarbeiten, vermutlich wird die Straﬂe asphaltiert --- #: osm_watch: way id="28525045" version="4" brb --- #: last_checked: 2019-03-24
 Reiherweg: Asphalt	Q0 -4478,-3510 -4396,-3565 -4344,-3587 -4261,-3576 -4232,-3572
-Falkenstr. (Stahnsdorf): Asphalt	Q0 -3577,-3058 -3389,-3090 -3025,-3155 -2785,-3164
+Falkenstr. (Stahnsdorf): Asphalt	Q0 -3577,-3058 -3492,-3071 -3389,-3090 -3181,-3126 -3025,-3155 -2785,-3164
+#: by: mapillary
+Fasanenstr. (Stahnsdorf): unbefestigte Straﬂe	Q2 -3523,-3320 -3519,-3274
+Fasanenstr. (Stahnsdorf): Betonpflaster	Q0- -3519,-3274 -3492,-3071 -3474,-2899
+Fasanenstr. (Stahnsdorf): Asphalt	Q0 -3474,-2899 -3472,-2880
+(Fasanenstr. - Bahnhofstr.): Asphalt	Q0 -3474,-2899 -3451,-2901
+#: by: mapillary
+Drosselweg (Stahnsdorf): Verbundsteinpflaster	Q1 -3204,-3314 -3181,-3126
+Drosselweg (Stahnsdorf): Asphalt	Q0 -3181,-3126 -3159,-2968
+Finkenweg (Stahnsdorf): Asphalt	Q0 -3061,-3416 -3052,-3335 -3025,-3155 -3004,-3000
 Spechtstr. (Stahnsdorf): Verbundsteinpflaster	Q1 -3389,-3090 -3407,-3189 -3424,-3291
 # REMOVED (existiert nicht mehr) --- Alte Feldmark: unbefestigte Straﬂe, sandig	Q2- -4394,-3652 -4396,-3565
 Alte Feldmark: Asphalt	Q0 -4396,-3565 -4377,-3519 -4400,-3403 -4437,-3247
@@ -5397,7 +5407,15 @@ Schenkendorfer Weg (Teltow): Asphalt mit Sch‰den	Q1- 88,-3070 161,-2953
 Schenkendorfer Weg (Teltow): Asphalt	Q0 161,-2953 166,-2946 377,-2672 545,-2493 748,-2298 1186,-1973
 Gonfrevillestr. (Teltow): Fahrbahn asphaltiert	Q0 1368,-1307 1401,-1310 1437,-1298 1477,-1282 1865,-1139 1916,-1090
 Heinrich-Zille-Str.: Kleinsteinpflaster	Q2 -3484,-2531 -3846,-1821
-Friedrich-Naumann-Str.: Asphalt	Q0 -3484,-2531 -3410,-2654
+Friedrich-Naumann-Str. (Stahnsdorf): Asphalt	Q0 -3484,-2531 -3410,-2654
+#: by: osm
+Friedrich-Naumann-Str. (Stahnsdorf): Asphalt	Q0 -3410,-2654 -3317,-2742 -3209,-2797 -3008,-2767
+Friedrich-Naumann-Str. (Stahnsdorf): Asphalt	Q0 -3008,-2767 -2903,-2753 -2861,-2741
+Friedrich-Naumann-Str. (Stahnsdorf): grobes Verbundsteinpflaster	Q1- -2861,-2741 -2835,-2726 -2766,-2683 -2701,-2647
+Friedrich-Naumann-Str. (Stahnsdorf): Asphalt	Q0 -2701,-2647 -2629,-2593 -2590,-2557 -2416,-2394 -2394,-2378
+Friedrich-Naumann-Str. (Stahnsdorf): Asphalt mit Sch‰den	Q1 -2394,-2378 -2275,-2314 -2162,-2256 -2113,-2215
+Am Upstall (Stahnsdorf): Asphalt	Q0- -2101,-2061 -2113,-2215 -2111,-2315
+Kirchstr. (Stahnsdorf): Asphalt	Q0 -2242,-1933 -2230,-1967 -2101,-2061 -2023,-2143
 #: note: sehr unregelm‰ﬂige, kleine Steine
 Heidestr.: unebenes Kleinsteinpflaster	Q2- -3908,-2723 -3725,-3032
 Heidestr.: Asphalt	Q0 -3725,-3032 -3687,-3099
@@ -7682,8 +7700,8 @@ Goethestr. (Neu-Buch): Asphalt	Q0 17317,24689 17345,24704 17581,24815 17699,2487
 Dreilindener Weg: Asphalt	Q0 -3589,-150 -3808,-329 -3910,-473 -3996,-711
 # 
 #: by: Ricarda Mache
-#: confirmed_by: srt (nur das nordwestliche Ende)
-Bahnhofstr. (Stahnsdorf): Asphalt	Q0 -2878,-3004 -2918,-3010 -3004,-3000 -3159,-2968 -3235,-2953 -3356,-2926 -3451,-2906 -3475,-2884 -3528,-2810 -3650,-2609
+#: confirmed_by: srt
+Bahnhofstr. (Stahnsdorf): Asphalt	Q0 -2878,-3004 -2918,-3010 -3004,-3000 -3159,-2968 -3235,-2953 -3356,-2926 -3451,-2901 -3472,-2880 -3528,-2810 -3650,-2609
 # 
 #: by: rjoop photos: vvvv
 Fˆrsterei Zedlitz - Straﬂe nach Krampnitz: wassergebundene Decke	Q1 -10955,3723 -11011,3721 -11156,3523 -11247,3503 -11299,3471 -11334,3365 -11395,3270 -11528,3111
@@ -9841,6 +9859,7 @@ Osdorfer Str. (Teltow): Asphalt	Q0 2847,-431 2944,-467 3101,-427
 Wilhelm-Busch-Str. (Teltow): Verbundsteinpflaster	Q1+ 3623,-384 3626,-346 3741,-313 3786,-300
 Gradnauerstr. (Kleinmachnow): Kopfsteinpflaster	Q2 -184,722 -87,637 11,549
 Bergstr. (Stahnsdorf): Asphalt	Q0 -3168,-2498 -3097,-2616 -3045,-2705 -3008,-2767 -2878,-3004
+Bahnhofstr. (Stahnsdorf): Kleinsteinpflaster	Q2 -2878,-3004 -2817,-2967 -2720,-2937 -2657,-2907
 Welsow - Kerkow: Asphalt	Q0 49734,74527 49777,74463 49811,74177 49853,74158 49969,74149 50100,74058 50121,73960 50176,73842 50213,73705 50191,73574 50131,73439 50027,73351 49966,73257 49945,73025 50000,72647 49975,72419 49265,71609 49011,71344
 Welsow - Bruchhagen: Kopfsteinpflaster	Q3 48296,74641 48229,74776 48213,75201 47887,75782 47769,75729
 B198 - Strauﬂenhof: Asphalt	Q0 48469,65641 48368,65696 48272,65796 48130,65861
