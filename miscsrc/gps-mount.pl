@@ -93,6 +93,7 @@ if ($do_gpx_copy) {
 	    require Doit;
 	    my $doit = Doit->init;
 	    for my $file (@files) {
+		warn "DEBUG: cp '$file' to '$dest' (if non-existent or different)\n" if $debug;
 		$doit->copy($file, $dest);
 	    }
 	} else {
