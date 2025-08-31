@@ -11873,7 +11873,7 @@ Odinstr.	N 18006,9335 17898,9564 17890,9580 17866,9639
 Rienzistr.	N 17898,9564 18121,9488
 Marksburgstr.	N 18070,9292 18172,9250 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133 18900,9119 18961,9109 19048,9146 19131,9187 19195,9249
 Lisztstr. (Karlshorst)	N 18319,9218 18332,9356 18377,9366
-#: REMOVED (hier passiert bestimmt nichts mehr) --- XXX: keine Fahrradstraße, trotz http://andreas-geisel.de/bilanz-meiner-arbeit/ , aber vielleicht passiert hier und in der Cäsarstr. noch was? --- #: osm_watch: way id="145586616" version="3" --- #: last_checked: 2014-03-29 --- #: check_frequency: 180d --- #: priority: #C
+# REMOVED (hier passiert bestimmt nichts mehr) --- XXX: keine Fahrradstraße, trotz http://andreas-geisel.de/bilanz-meiner-arbeit/ , aber vielleicht passiert hier und in der Cäsarstr. noch was? --- #: osm_watch: way id="145586616" version="3" --- #: last_checked: 2014-03-29 --- #: check_frequency: 180d --- #: priority: #C
 Hentigstr.	N 18518,8778 18548,8942 18586,9172 18626,9406
 Junker-Jörg-Str.	N 18451,8823 18471,8957 18511,9185 18545,9395
 Karl-Egon-Str.	N 18375,8874 18406,9052 18430,9199 18459,9354
@@ -14253,7 +14253,7 @@ Margaretenstr. (Rummelsburg)	N 16649,11497 16730,11480 16856,11438 16948,11409 1
 Metastr.	N 17006,11391 17056,11497 17096,11585
 Friedastr.	N 17056,11497 16887,11545
 (Wohnanlage Friedastr.)	NN 16887,11545 16753,11559
-#: comment: Alias laut http://www.berlin.de/ba-lichtenberg/presse/archiv/20071119.1550.89206.html
+#: note: Alias laut http://www.berlin.de/ba-lichtenberg/presse/archiv/20071119.1550.89206.html
 #: alias: Schwarzer Weg
 #: note: Benennung am 20100325
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__18_vom_7__Mai_2010f.pdf
@@ -14793,10 +14793,10 @@ Am Brodersengarten	N 21982,10874 21953,10936 21930,10996 21902,11055 21878,11112
 (Alt-Biesdorf - Wuhlewanderweg)	NN 22242,11269 22244,11311
 (Wuhlewanderweg)	NN 22244,11311 22268,11285 22279,11272 22270,11210 22234,11198
 (Wuhlewanderweg)	NN 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
-#: old_name: -2019: Möwenweg (Biesdorf)
+#: oldname: -2019: Möwenweg (Biesdorf)
 #: ignore_oldname_file: yes
 (Wuhlewanderweg)	NN 22215,11137 22207,11069 22195,10993 22194,10940 22199,10877 22166,10839
-#: old_name: -2019: Möwenweg (Biesdorf)
+#: oldname: -2019: Möwenweg (Biesdorf)
 #: ignore_oldname_file: yes
 (Klompenweg - Mosbacher Weg)	NN 22172,10996 22195,10993
 Möwenweg (Biesdorf)	N 22242,11269 22238,11223 22234,11198 22223,11139 22215,11137 22191,11130 22142,11116 22110,11107 22054,11091
@@ -15003,7 +15003,7 @@ Lengeder Str.	N 7481,19400 7184,19663 7105,19677 7038,19689 6792,19733 6516,1977
 # 
 #: by: DPAG 06/2019: Umbenennung Siedlung Roedernau -> Roedernau (auch in LOR erwähnt)
 #: alias: Siedlung Roedernau
-#: old_name: -2019: Siedlung Roedernau
+#: oldname: -2019: Siedlung Roedernau
 Roedernau	N 6460,19734 6453,19737 6198,19818
 # 
 Interessentenweg	N 6453,19737 6501,19956 6565,20026 6627,20045 6659,20135

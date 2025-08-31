@@ -4251,9 +4251,9 @@ Braunsdorfstr.: Asphalt	Q0 20368,11937 20387,11913 20384,11841 20375,11694
 Braunsdorfstr.: Asphalt	Q0- 20404,12055 20396,11983
 Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20170,11859 20173,11971 20176,12071
 Waldbacher Weg: Asphalt	Q0 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080
-#: historical note: früher: unbefestigte Straße, Q2+
+#: historical_note: früher: unbefestigte Straße, Q2+
 Waldbacher Weg: Asphalt	Q0 20078,12080 20176,12071
-#: historical note: früher: teilweise unbefestigte Straße, teilweise Asphalt, Q2+
+#: historical_note: früher: teilweise unbefestigte Straße, teilweise Asphalt, Q2+
 Waldbacher Weg: Asphalt	Q0 20176,12071 20284,12064
 Waldbacher Weg: Asphalt	Q0 20404,12055 20610,12050
 Haydnstr. (Biesdorf): Asphalt	Q0 19995,11795 20005,11872 20016,11980 20026,12088
@@ -15559,7 +15559,7 @@ Wittekindstr.: Asphalt mit einigen Schäden	Q1+ 8385,6034 8388,6322
 #: by ^^^
 # 
 #: by: a.grund vvv
-#: corrected: srt (Kopfsteinpflaster Q2 -> ...)
+#: corrected_by: srt (Kopfsteinpflaster Q2 -> ...)
 Kneippstr.: Waldweg	Q2 2566,23584 2621,23609
 #: corrected_by: srt (Asphalt -> Beton) (zumindest im westlichen Abschnitt)
 Kneippstr.: Beton	Q0 2621,23609 2711,23694 2752,23735
@@ -21289,7 +21289,7 @@ Lange Enden: guter Asphalt	Q0 4660,21250 4708,21235 4719,21232
 #: by: ^^^
 # 
 #: by: Jennifer (jhofmeister): vvv
-#: confiremd_by: srt
+#: confirmed_by: srt
 Salbeiweg: Asphalt	Q0 17531,2460 17471,2403 17387,2322 17289,2224
 Braunschweiger Ufer: gepflastert, angenehm zu fahren	Q0 12136,5628 12150,5640 12568,5794 12722,5831
 #: corrected_by: srt ("mäßiger" gestrichen)
@@ -25926,7 +25926,7 @@ Burgunder Str. (Wilmersdorf): guter Asphalt	Q0 4784,7686 4638,7733
 #: note: "Privatstraße, aber kann man durchfahren"
 #: note: "Schrittgeschwindigkeit" ignoriert
 #: note: ein anonymer Eintrag war nicht ganz klar: mäßiges Kopfsteinpflaster, enge Straße
-#: correced_by: srt (Beton -> Asphalt)
+#: corrected_by: srt (Beton -> Asphalt)
 Kreuzgraben: Asphalt	Q0 10309,20032 10282,20137 10267,20193 10264,20209
 # 
 #: by: Reinert:
@@ -25948,7 +25948,7 @@ Eiserfelder Ring: guter Beton	Q0- -4720,15087 -4856,15089 -4881,15111 -4883,1517
 Ederkopfweg: guter Asphalt	Q0- -4729,14958 -4761,14961 -4807,14990 -4879,15008
 An der Kappe: guter Asphalt	Q0 -4203,14515 -4341,14580
 An der Kappe: mäßiges Kopfsteinpflaster	Q2 -4341,14580 -4412,14610 -4512,14626 -4670,14637
-#: correced_by: srt (mäßiges Kopfsteinpflaster -> ...)
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 An der Kappe: Asphalt	Q0 -4670,14637 -4977,14761
 #: corrected_by: srt (by: http://www.flickr.com/photos/30482855@N04/5174220754/in/pool-39413187@N00/)
 An der Kappe: Asphalt	Q0 -4977,14761 -5199,14835 -5314,14869
@@ -29957,7 +29957,7 @@ Egelpfuhlwiesen: Betonsteinpflaster	Q0 -5556,12927 -5533,12970 -5504,13000 -5451
 (Seeburger Weg - Lutoner Str.): neuer Asphalt	Q0+ -5457,12890 -5556,12927
 #: confirmed_by: srt
 (Seeburger Weg - Lutoner Str.): Asphalt	Q0 -5556,12927 -5599,12947 -5707,13014 -5745,13060 -5764,13103
-#: REMOVED --- #: XXX Qualität nach den Bauarbeiten? --- #: last_checked: 2013-07-13 --- #: check_frequency: 100d
+# REMOVED --- #: XXX Qualität nach den Bauarbeiten? --- #: last_checked: 2013-07-13 --- #: check_frequency: 100d
 #: by: Stefan Klinkusch
 (Schiffahrtsufer - Spandauer Burgwall): Asphalt	Q0 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 #: confirmed_by: srt
@@ -30234,9 +30234,9 @@ Leichhardtstr.: Kleinsteinpflaster	Q2+ 1500,4356 1543,4341 1608,4313 1659,4297
 (Ihnestr. - Clayallee): wassergebundene Decke	Q1- 1870,4732 1981,4741 2033,4757
 (Lützelsteiner Weg - Reichshofer Str.): wassergebundene Decke	Q1 1667,4664 1674,4661 1698,4653 1712,4648
 (Clayallee - Ripleystr.): fester Sand	Q1 1482,4628 1411,4654
-#: corrected_by; srt (Verbundsteine, Q1 -> ...)
+#: corrected_by: srt (Verbundsteine, Q1 -> ...)
 (Garystr. - Saargemünder): Asphalt	Q0 1722,4701 1730,4743
-#: confirmed_by; srt
+#: confirmed_by: srt
 (Garystr. - Saargemünder): Verbundsteine	Q1 1730,4743 1736,4774
 #: confirmed_by: srt
 Lützelsteiner Weg: Beton	Q0 1385,4138 1478,4206 1500,4356
@@ -30455,12 +30455,12 @@ Barsekowstr.: Asphalt	Q0 5190,4755 5125,4811
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
 Barsekowstr.: schlechtes Kopfsteinpflaster	Q3 5125,4811 5087,4853
 Vereinsweg (Steglitz): Kleinpflaster	Q1 5334,4857 5356,4892 5377,4901 5436,4983
-#: confirmed: mapillary
+#: confirmed_by: mapillary
 Rugestr.: Kopfsteinpflaster	Q2 4829,5173 4938,5096
 Adolfstr.: Kopfsteinpflaster	Q2 5003,5183 5145,5095
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
 Adolfstr.: etwas glatteres Kopfsteinpflaster	Q2+ 5145,5095 5216,5047
-#: confirmed: mapillary
+#: confirmed_by: mapillary
 Kurze Str. (Steglitz): Kopfsteinpflaster	Q2 5145,5095 5102,5031 5050,4959 4985,4884
 Elcknerplatz: Asphalt	Q0 22431,6068 22478,6048 22538,6046
 Elcknerplatz: Kopfsteinpflaster	Q2 22538,6046 22624,6044
@@ -30850,7 +30850,7 @@ Bugenhagenstr.: Asphalt	Q0 5964,13535 5882,13548
 Waldenserstr.: Kopfsteinpflaster mit Moabiter Kissen	Q2 5882,13548 5725,13566 5580,13587 5390,13616
 #: confirmed_by: srt
 Jonasstr.: Asphalt	Q0 5956,13338 5956,13433
-#: correced_by: srt (Kopfsteinpflaster, Q2 -> ... (vielleicht neu gemacht?))
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> ... (vielleicht neu gemacht?))
 Jonasstr.: Asphalt	Q0 5956,13433 5964,13535
 #: corrected_by: srt (Asphalt -> ..., neu gemacht)
 Arminusstr.: Kopfsteinpflaster	Q2+ 5956,13433 5868,13441
@@ -30989,9 +30989,9 @@ Johannisburger Allee: Kleinsteinpflaster	Q2+ -466,10860 -434,10964
 Tapiauer Allee: Kleinsteinpflaster	Q2+ -651,10781 -648,10820 -573,10903 -532,10994
 (Parkweg Ortelsburger Allee): fester Waldweg	Q1 48,10922 37,11014 23,11137 16,11190
 (Parkweg Kranzallee): Asphalt	Q2 -532,10994 -511,11127
-#: confirmed: srt (nur den Asphalt, nicht die Qualität)
+#: confirmed_by: srt (nur den Asphalt, nicht die Qualität)
 Miltonweg: Asphalt	Q1 -865,10906 -918,10785
-#: confirmed: srt
+#: confirmed_by: srt
 Grethe-Weiser-Weg: Beton	Q0 -760,10921 -760,10888 -847,10754
 Ragniter Allee: Kopfsteinpflaster	Q2 -1028,10889 -1039,10990 -1050,11061
 Kiplingweg: Asphalt	Q1 -1167,10873 -1175,10940 -1326,10923 -1318,10854

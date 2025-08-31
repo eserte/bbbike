@@ -1358,10 +1358,10 @@ Berghausen - Bietikow: asphaltiert	Q0 44194,94962 44778,96200 44800,96264 44793,
 Bietikow: schlechtes Kopfsteinpflaster, Sandbanketten	Q3 44793,96400 44857,96478 45051,96712
 Bietikow - Grünow: Asphalt	Q0 45051,96712 45317,96946 45351,96982 45410,97095 45515,97197 45653,97331 45893,97754 45923,97874 45979,98129 45976,98395 45947,98545 46021,98931 46095,99157 46083,99281 46093,99430 46106,99631 46026,99726 45868,99912 45868,100193
 # REMOVED --- #: XXX wird die Qualität nach den Instandsetzungsarbeiten besser sein? vvv --- #: add_fragezeichen: Wurden die Betonplattenabschnitte durch asphaltierte Abschnitte ersetzt? vvv --- #: source_id: 217300506 vvv --- #: next_check: 2022-03-31 vvv
-#: früher: mäßige Betonplatten, Q2
+#: historical_note: früher: mäßige Betonplatten, Q2
 Bietikow - Grünow: Asphalt	Q0 45868,100193 45847,100277
 Bietikow - Grünow: Asphalt	Q0 45847,100277 45806,100487 45648,100789
-#: früher: mäßige Betonplatten, Q2
+#: historical_note: früher: mäßige Betonplatten, Q2
 Bietikow - Grünow: Asphalt	Q0 45648,100789 45543,101043
 # REMOVED --- #: next_check ^^^ --- #: source_id ^^^ --- #: add_fragezeichen ^^^ --- #: XXX ^^^
 Bietikow - Grünow: Asphalt	Q0 45543,101043 45367,101277
@@ -7455,7 +7455,7 @@ Börnicke - Birkenhöhe: sehr guter Asphalt	Q0+ 25487,28611 25313,28555 23551,2786
 Spreehagen - Langendamm: überwiegend sehr guter Asphalt	Q0 43695,-6701 43738,-6684 46923,-6310 46940,-6333 46958,-6465 47037,-6719 47169,-6762 47337,-6694
 #: corrected_by: srt (vermutlich neu gemacht)
 Neu-Zittau - Burig: Asphalt	Q0 33638,-1495 34179,-1778 34831,-1856 35164,-1870
-#: confirmed: srt
+#: confirmed_by: srt
 Hartmannsdorf - Burig: sehr guter Asphalt	Q0 39787,-5750 39821,-5426 39796,-5296 39647,-5172 38132,-5076 37868,-4904 37741,-4906 37549,-4802 37308,-4574 36972,-4428 36858,-4277 36821,-4092 36888,-3528 36837,-3355 36879,-3107 36723,-3169 36120,-2902 36030,-2860 35944,-2807 35828,-2672 35701,-2508 35521,-2368 35495,-2349 35559,-2077 35438,-2044 35164,-1870
 Hartmannsdorf - Spreehagen: sehr guter Asphalt	Q0 39787,-5750 40287,-6292 41097,-6384 41341,-6064 41836,-5523
 Langendamm - Braunsdorf: unebener Asphalt	Q1 47337,-6694 47357,-6663 47354,-6584 47514,-6402 47692,-6364 47767,-6214 47794,-6060 47885,-5561 48136,-5051 48131,-4175
