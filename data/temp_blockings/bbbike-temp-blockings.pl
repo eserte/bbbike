@@ -46942,7 +46942,7 @@ EOF
        text  => 'Blumberg: Bauarbeiten, evtl. sind auch Radfahrer betroffen, 20.01.2025 08:00 Uhr bis 31.08.2025 17:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 247302255 (bis 31.08.2025)
+#: source_id: 247302255 (bis 31.08.2025) (inaktiv)
 	q4::inwork 59707,90000 59702,89892 59722,89735
 EOF
      },
