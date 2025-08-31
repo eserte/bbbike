@@ -21939,7 +21939,8 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
 #: XXX_prog: tempex-Ausdruck?
-	2::temp::igndisp 10807,12451
+#: note: used to be "2::temp::igndisp", but "igndisp" seems to be ignored here; change to make check-categories happy
+	2::temp 10807,12451
 # REMOVED --- 10807,12451
 EOF
      },
@@ -25611,14 +25612,13 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => $isodate2epoch->("2025-03-29 00:00:00"), # undef,
        text  => 'enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls das Tor gesperrt ist, Anhänger können gar nicht passieren',
        type  => 'gesperrt',
        recurring => 1,
        data => <<EOF,
-#: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt
-#: tempex: volatile
-	BNP:20::trailer=no 10583,15208
+#: note: entsprechender gesperrt-orig-Eintrag wurde auch entfernt
+# REMOVED (check-categories meckert) --- #: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt --- #: tempex: volatile ---	BNP:20::trailer=no 10583,15208
 EOF
      },
      { from  => 1437289200, # 2015-07-19 09:00
@@ -29745,7 +29745,8 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/biergaerten-am-schiffbauerdamm-werden-planmaessig-eroeffnet_a253363 (bis Ende Juni 2020)
 # REMOVED (beendet) --- #: XXX wann werden die Bauarbeiten beendet? vvv --- #: note: laut fritz bis 31.03.2020 --- #: osm_watch: way id="705182550" version="1" --- #: osm_watch: way id="705182551" version="1"--- #: also_indoor: traffic (G,H) vvv --- #: last_checked: 2020-08-13 vvv --- #: check_frequency: 21d vvv --- #: source_id: 2147344480 (mittlerweile ausgelaufen)
 	q3::inwork 9102,12790 9193,12875
-	q4+::inwork 9193,12875 9239,12923
+#: XXX_prog: eigentlich q4+::inwork;
+	q4::inwork 9193,12875 9239,12923
 # REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9153,12928 9193,12875
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^^ --- #: also_indoor ^^^ --- #: XXX ^^^
 EOF
@@ -45429,7 +45430,8 @@ EOF
 #: note: kein Verbot für Radfahrer, Gehweg für Radfahrer frei, also ist die Fahrbahn erlaubt, Umleitung über Hessische Str. und Chausseestr. ausgeschildert
 #: note: in diesem Abschnitt etwa 40m betroffen, hier noch nicht ganz so eng, davor verlegte Straßenbahnhaltestelle
 	q2::inwork; 8685,13728 8841,13800
-	q4+::inwork; 8841,13800 8935,13844
+#: XXX_prog: eigentlich q4+::inwork;
+	q4::inwork; 8841,13800 8935,13844
 EOF
      },
      { from  => 1723352400, # 2024-08-11 07:00
@@ -45669,7 +45671,8 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1827912099877544007
 #: by: https://pbs.twimg.com/media/GVrGzy4WwAA0TF7?format=jpg&name=large
 #: note: q4+, weil nicht der gesamte Abschnitt betroffen ist (Am Tempelhofer Berg - Zebrastreifen)
-	q4+::inwork 9489,9309 9309,9347
+#: XXX_prog: eigentlich q4+::inwork;
+	q4::inwork 9489,9309 9309,9347
 EOF
      },
      { from  => 1724562000, # 2024-08-25 07:00

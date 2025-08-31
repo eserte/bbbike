@@ -3740,18 +3740,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt
-#: tempex: volatile
-	BNP:20::trailer=no 10583,15208
-',
-         'from' => undef,
-         'id' => 2722,
-         'recurring' => 1,
-         'text' => 'enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls das Tor gesperrt ist, Anhänger können gar nicht passieren',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
