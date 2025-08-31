@@ -550,6 +550,21 @@ This is useful if for example only a part of the street was renamed.
 <dt class="POD_ITEM"><a name="ignore_check_net_yes"><code>ignore_check_net: yes</code></a>
 <dd>
 Ignore this entry for &quot;within network&quot; checks.
+<dt class="POD_ITEM"><a name="carriageway_width_wi"><code>carriageway_width: <i>width</i></code></a>
+<dd>
+Width of the carriageway, that is, kerb to kerb. Usually a length like
+<i>numbers</i>m, but may also be informal (e.g. &quot;6 lanes&quot;). Used only in
+<code>strassen</code> or <code>landstrassen</code>.
+<dt class="POD_ITEM"><a name="street_width_width"><code>street_width: <i>width</i></code></a>
+<dd>
+Width of the street, that is, including sidewalks and cyclepaths,
+house to house. Usually a length like <i>numbers</i>m. Used only in
+<code>strassen</code> or <code>landstrassen</code>.
+<dt class="POD_ITEM"><a name="related"><code>related</code></a>
+<dd>
+Group related items. Currently used to group related traffic lights in
+<code>ampeln</code>. Can be used without an value, or with the value
+<code>antidromic</code>.
 <dt class="POD_ITEM"><a name="section_section_name"><code>section: <i>section name</i></code></a>
 <dd>
 The next block is part of a named section. Sections may be nested.
@@ -577,13 +592,14 @@ data.
 A free text note, which refers to more information. This should be
 typically a URL.
 <dt class="POD_ITEM"><a name="last_checked_date"><code>last_checked: <i>date</i></code></a>
-<dt><a name="last_checked_date_by"><code>last_checked: <i>date</i> (by: <i>name</i>)</code></a>
+<dt><a name="last_checked_date_so"><code>last_checked: <i>date</i> (<i>source</i>)</code></a>
 <dd>
 Date (and optionally surveyor) of the last check for a feature. This
 is useful in conjunction with <code>XXX</code> or <code>add_fragezeichen</code>
 directives, to generate automatic list of streets to be surveyed
 again.
 <dt class="POD_ITEM"><a name="next_check_date"><code>next_check: <i>date</i></code></a>
+<dt><a name="next_check_date_sour"><code>next_check: <i>date</i> (<i>source</i>)</code></a>
 <dd>
 Recommended date for a next survey for a feature. This could be for
 instance the intended finish date of road construction.
@@ -647,6 +663,10 @@ for ferry timetable and fare information.
 An (official) URL referring to more information useful for end users,
 like opening or operating hours or fees. For other kind information
 use the <code>by:</code> directive.
+<dt class="POD_ITEM"><a name="url_gpx_string"><code>url[gpx]: <i>string</i></code></a>
+<dd>
+Link to a URL which contains a related GPX file. Usually used in
+<code>comments_route</code>.
 <dt class="POD_ITEM"><a name="add_fragezeichen_str"><code>add_fragezeichen: <i>string</i></code></a>
 <dd>
 Some postprocessing code may add the following line with the
@@ -699,6 +719,22 @@ An identifier string.
 <dd>
 The value of an <a class="POD_LINK" href="https://wiki.openstreetmap.org/wiki/Key:highway">OSM highway key</a>. May be used when
 converting bbd data to osm data, e.g. by <a class="POD_LINK" href="https://metacpan.org/pod/bbd2osm">bbd2osm</a>.
+<dt class="POD_ITEM"><a name="map_tube_other_link_"><code>map_tube_other_link: <i>type</i>:<i>other_station</i></code></a>
+<dd>
+Used when generating data for <a class="POD_LINK" href="https://metacpan.org/pod/Map::Tube">Map::Tube</a> (e.g. <a class="POD_LINK" href="https://metacpan.org/pod/Map::Tube::Berlin">Map::Tube::Berlin</a>)
+for generating links between stations with a different name.
+<p class="POD_TEXT">
+Example usage:
+</p>
+<pre class="POD_VERBATIM">
+    #: map_tube_other_link: Street:Rathaus Spandau
+</pre>
+<p class="POD_TEXT">
+The type (in this case &quot;Street&quot;) denotes the kind of the link.
+</p>
+<p class="POD_TEXT">
+This directive is currently used in <code>ubahnhof</code> and <code>sbahnhof</code>.
+</p>
 </dl>
 <h4 class="POD_HEAD3"><a name="Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a></h4>
 <dl class="POD_LIST">
@@ -717,6 +753,10 @@ Currently the following labels are used in the <i>when</i> part: <code>night</co
 <code>weekend</code>, <code>holiday</code>, week day names, <code>except_schooltime</code>,
 <code>except_event</code>, <i>HH:MM-HH:MM</i>.
 </p>
+<dt class="POD_ITEM"><a name="on_when_comment"><code>on: <i>when</i> <i>comment</i></code></a>
+<dd>
+Used in <code>ampeln-orig</code> if a traffic light is unexpectedly on (e.g.
+because it&#39;s usually off on Sundays or so).
 <dt class="POD_ITEM"><a name="internal_note_string"><code>internal_note: <i>string</i></code></a>
 <dd>
 A free text note, which must not appear in the processed data. It is
@@ -751,6 +791,17 @@ infrastructure (supporting scripts etc.) have better support for this.
 <dd>
 Deprecated. Usually this is the same as <code>XXX</code>, and scripts don&#39;t
 support this type anymore.
+<dt class="POD_ITEM"><a name="tempex_tempex_expres"><code>tempex: <i>tempex_expression</i></code></a>
+<dd>
+Experimental temporal expression, usually used in periodic
+<code>bbbike-temp-blockings</code> entries. The tempex syntax is not fully
+defined, and there&#39;s no code yet using these expressions.
+<dt class="POD_ITEM"><a name="begin_check_date"><code>begin_check: <i>date</i></code></a>
+<dd>
+Belonging to the group of directives like <code>last_checked</code> and
+<code>next_check</code>. May be used to define some filters differently. Rarely
+used, but filter code already exist (see
+<code>miscsrc/StrassenNextCheck.pm</code>).
 </dl>
 <h3 class="POD_HEAD2"><a name="Comment_lines">Comment lines</a></h3>
 <p class="POD_TEXT">

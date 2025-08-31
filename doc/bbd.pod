@@ -524,6 +524,24 @@ This is useful if for example only a part of the street was renamed.
 
 Ignore this entry for "within network" checks.
 
+=item C<carriageway_width: I<width>>
+
+Width of the carriageway, that is, kerb to kerb. Usually a length like
+I<numbers>m, but may also be informal (e.g. "6 lanes"). Used only in
+F<strassen> or F<landstrassen>.
+
+=item C<street_width: I<width>>
+
+Width of the street, that is, including sidewalks and cyclepaths,
+house to house. Usually a length like I<numbers>m. Used only in
+F<strassen> or F<landstrassen>.
+
+=item C<related>
+
+Group related items. Currently used to group related traffic lights in
+F<ampeln>. Can be used without an value, or with the value
+C<antidromic>.
+
 =item C<section: I<section name>>
 
 The next block is part of a named section. Sections may be nested.
@@ -559,7 +577,7 @@ typically a URL.
 
 =item C<last_checked: I<date>>
 
-=item C<last_checked: I<date> (by: I<name>)>
+=item C<last_checked: I<date> (I<source>)>
 
 Date (and optionally surveyor) of the last check for a feature. This
 is useful in conjunction with C<XXX> or C<add_fragezeichen>
@@ -567,6 +585,8 @@ directives, to generate automatic list of streets to be surveyed
 again.
 
 =item C<next_check: I<date>>
+
+=item C<next_check: I<date> (I<source>)>
 
 Recommended date for a next survey for a feature. This could be for
 instance the intended finish date of road construction.
@@ -637,6 +657,11 @@ An (official) URL referring to more information useful for end users,
 like opening or operating hours or fees. For other kind information
 use the C<by:> directive.
 
+=item C<url[gpx]: I<string>>
+
+Link to a URL which contains a related GPX file. Usually used in
+F<comments_route>.
+
 =item C<add_fragezeichen: I<string>>
 
 Some postprocessing code may add the following line with the
@@ -700,6 +725,19 @@ The value of an L<OSM highway
 key|https://wiki.openstreetmap.org/wiki/Key:highway>. May be used when
 converting bbd data to osm data, e.g. by L<bbd2osm>.
 
+=item C<map_tube_other_link: I<type>:I<other_station>>
+
+Used when generating data for L<Map::Tube> (e.g. L<Map::Tube::Berlin>)
+for generating links between stations with a different name.
+
+Example usage:
+
+    #: map_tube_other_link: Street:Rathaus Spandau
+
+The type (in this case "Street") denotes the kind of the link.
+
+This directive is currently used in F<ubahnhof> and F<sbahnhof>.
+
 =back
 
 =head3 Obsolete and to-be-decided directives
@@ -718,6 +756,11 @@ The I<comment> part may be completely missing.
 Currently the following labels are used in the I<when> part: C<night>,
 C<weekend>, C<holiday>, week day names, C<except_schooltime>,
 C<except_event>, I<HH:MM-HH:MM>.
+
+=item C<on: I<when> I<comment>>
+
+Used in F<ampeln-orig> if a traffic light is unexpectedly on (e.g.
+because it's usually off on Sundays or so).
 
 =item C<internal_note: I<string>>
 
@@ -755,6 +798,19 @@ infrastructure (supporting scripts etc.) have better support for this.
 
 Deprecated. Usually this is the same as C<XXX>, and scripts don't
 support this type anymore.
+
+=item C<tempex: I<tempex_expression>>
+
+Experimental temporal expression, usually used in periodic
+F<bbbike-temp-blockings> entries. The tempex syntax is not fully
+defined, and there's no code yet using these expressions.
+
+=item C<begin_check: I<date>>
+
+Belonging to the group of directives like C<last_checked> and
+C<next_check>. May be used to define some filters differently. Rarely
+used, but filter code already exist (see
+F<miscsrc/StrassenNextCheck.pm>).
 
 =back
 
