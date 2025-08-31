@@ -469,7 +469,7 @@ Dorotheenstr.	1 18653,8922 18770,8898
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/neukoellner-verordnete-fordern-vorfahrt-fuer-radler-auf-der-krokusstrasse-und-linksabbiegespur-auf-der-massantebruecke_a300891
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/161024_protokoll_mobilitaetsrat_3_pdf.pdf (Erwähnung)
 #: XXX könnte im Zuge der Realisierung "Y-Trasse" wieder in Betrieb genommen werden (Bauphase für den Radschnellweg: mindestens 18 Monate)
-#: last_checked: 2025-08-20
+#: last_checked: 2025-08-31
 #: next_check: 2032-06-30
 Alte Späthbrücke	2 14466,5087 14544,5123
 # 
@@ -2741,9 +2741,10 @@ tragen (3x13 Stufen)	0:45 18739,4728
 # REMOVED (alte Treppe wurde demontiert) --- tragen (3x13 Stufen)	0:45 18636,4660
 # REMOVED (nicht mehr in Benutzung) --- #: note: provisorische Treppe --- tragen (36 Stufen)	0:45 18687,4649
 #: by: https://www.bahninfo-forum.de/read.php?9,677830,795049#msg-795049 (Aufzug wird frühestens Mitte 2025 fertig) (mittlerweile 4. Quartal 2025)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409854635/licht-am-ende-des-tunnels-s-bahnhof-erhaelt-endlich-seinen-aufzug.html (1. Quartal 2026)
 #: XXX hier wird es in Zukunft einen Aufzug geben
 #: last_checked: 2025-01-29
-#: next_check: 2025-10-01 (bahninfo-forum)
+#: next_check: 2026-03-31 (MoPo)
 tragen	0:45 18661,4655
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
@@ -4327,7 +4328,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-08-31 vvv
 # REMOVED --- #: next_check: 2025-08-27 (rbb) vvv
 #: osm_watch: way id="1199463691" version="6"
 # REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
@@ -4599,7 +4600,7 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2025-08-27
+#: last_checked: 2025-08-31
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -5244,6 +5245,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (Verkehrsfreigabe am 4.9.2025)
 #: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article409838993/neue-wuhletalbruecke-wird-fuer-den-verkehr-freigegeben.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/marzahn-hellersdorf/ab-donnerstag-rollt-der-verkehr-wieder-neubau-der-wuhletalbrucke-in-berlin-ist-fertig-14244794.html
 #: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (später am Tag wieder entfernt -> inaktiv)
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
@@ -5252,7 +5254,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: XXX Wann wird die Brücke wieder eröffnet?
 #: last_checked: 2025-08-12 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2025-09-04 (SenMVKU website)
+#: next_check: 2025-09-04 (SenMVKU website, Tsp)
 # REMOVED --- #: valid: 20190603-20250630
 # REMOVED --- #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 #: valid: 20190603-20250904

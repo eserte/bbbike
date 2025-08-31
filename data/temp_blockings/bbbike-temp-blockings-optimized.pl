@@ -779,7 +779,33 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
+#: by: https://twitter.com/VIZ_Berlin/status/1312229648558850048
+#: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
+#: by: https://www.berlin.de/events/4531106-2229501-schoeneberger-kuerbisfest.html (geplant für 2.+3.10.2021)
+#: by: https://www.eventbrite.com/e/22-schoneberger-kurbisfest-tickets-165249199805
+	2::temp 6994,9288 7001,9253 7007,9220 7029,9156 7101,9027 7201,8870
+	2::temp 6936,9138 7029,9156
+	2::temp 6958,8941 7101,9027 7308,9163
+	2::temp 7007,9220 7124,9226
+',
+         'from' => 1759482000,
+         'id' => 731,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 04.10.2025 bis 05.10.2025',
+         'type' => 'gesperrt',
+         'until' => 1759701599
+       },
        undef,
        undef,
        undef,
@@ -6157,7 +6183,9 @@ Sennheimer Str., 1. BA bis Huttenstr.	q3::inwork 2490,26126 2484,25984 2496,2591
 #: osm_watch[closed]: note 3631207 6
 #: osm_watch[closed]: note 3631209 6
 #: osm_watch: note 4556342 4
+#: osm_watch: note 4741254 2
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
+#: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
 #: last_checked: 2025-08-30 vvv
 #: check_frequency: 90d vvv
@@ -6174,9 +6202,9 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 ',
          'from' => 1697320800,
          'id' => 3728,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt, evtl. auch bis Dezember 2025',
          'type' => 'gesperrt',
-         'until' => 1761843600
+         'until' => 1767221999
        },
        undef,
        undef,
@@ -6620,7 +6648,28 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: http://dunckerstrassenfest.de/ (zwischen Stargarder Str. und Ahlbecker Str., laut Videobildern auch bis zur S-Bahnbrücke)
+#: by: https://www.berlin.de/events/4978409-2229501-dunckerstrassenfest.html
+#: by: https://www.berlinstadtservice.de/xinh/Strassenfest.html?date=20250831
+	2::temp 11595,15460 11632,15530 11654,15572 11689,15639
+',
+         'from' => 1758664800,
+         'id' => 3877,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 25. September 2025 von 14 bis 22 Uhr',
+         'type' => 'handicap',
+         'until' => 1758830400
+       },
        undef,
        undef,
        undef,
@@ -9510,7 +9559,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-08-29
+#: last_checked: 2025-08-31
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995

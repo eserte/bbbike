@@ -6486,11 +6486,11 @@ EOF
 	2::inwork 17736,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2024-10-04 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-10-06 23:59:59"),
+     { from  => $isodate2epoch->("2025-10-03 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-10-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 9]],
-       text  => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 05.10.2024 bis 06.10.2024',
+       text  => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 04.10.2025 bis 05.10.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
@@ -39357,10 +39357,10 @@ Semmelweisstr.: Fahrbahn gesperrt	q4::inwork 19198,2163 19019,2217
 EOF
      },
      { from  => $isodate2epoch->("2023-10-15 00:00:00"), # 1677452400, # 2023-02-27 00:00
-       until => $isodate2epoch->("2025-10-30 18:00:00"), # 1735685999, # 2024-12-31 23:59
+       until => $isodate2epoch->("2025-12-31 23:59:59"), # $isodate2epoch->("2025-10-30 18:00:00"), # 1735685999, # 2024-12-31 23:59
 #      text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Kleingartenanlage Zukunft Leitungsarbeiten, Weg kann bis Spätsommer 2025 gesperrt sein (Stand Anfang Januar 2025: Weg ist noch offen)',
 #      text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Engadiner Weg Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt',
-       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt',
+       text  => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt, evtl. auch bis Dezember 2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: TELTOWKANALUFERWEG-2023
@@ -39377,7 +39377,9 @@ EOF
 #: osm_watch[closed]: note 3631207 6
 #: osm_watch[closed]: note 3631209 6
 #: osm_watch: note 4556342 4
+#: osm_watch: note 4741254 2
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
+#: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
 #: last_checked: 2025-08-30 vvv
 #: check_frequency: 90d vvv
@@ -41432,16 +41434,17 @@ EOF
 	q3::inwork 23573,10975 23648,11265
 EOF
      },
-     { from  => $isodate2epoch->("2024-08-30 00:00:00"), # 1692964800, # 2023-08-25 14:00
-       until => $isodate2epoch->("2024-08-31 22:00:00"), # 1693080000, # 2023-08-26 22:00
+     { from  => $isodate2epoch->("2025-09-24 00:00:00"), # 1692964800, # 2023-08-25 14:00
+       until => $isodate2epoch->("2025-09-25 22:00:00"), # 1693080000, # 2023-08-26 22:00
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 8]],
-       recurrence_prewarn_days => -7,
-       text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 31. August 2024 von 14 bis 22 Uhr',
+#      recurrence_prewarn_days => -7,
+       text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 25. September 2025 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://dunckerstrassenfest.de/ (zwischen Stargarder Str. und Ahlbecker Str., laut Videobildern auch bis zur S-Bahnbrücke)
 #: by: https://www.berlin.de/events/4978409-2229501-dunckerstrassenfest.html
+#: by: https://www.berlinstadtservice.de/xinh/Strassenfest.html?date=20250831
 	2::temp 11595,15460 11632,15530 11654,15572 11689,15639
 EOF
      },
@@ -49589,7 +49592,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-08-29
+#: last_checked: 2025-08-31
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -49716,6 +49719,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxh7miufrk2p
+#: by: https://www.morgenpost.de/bezirke/mitte/article409864900/dachschaden-nahe-friedrichstadt-palast-jetzt-kommt-ein-tunnel.html
 #: source_id: viz2021:13.38759,52.52388,
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_297783
 #: source_id[inactive]: bvg2024:245#HIM_FREETEXT_297784

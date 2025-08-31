@@ -341,7 +341,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-08-27
+#: last_checked: 2025-08-31
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -2894,7 +2894,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 # 
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: next_check_id: BAB100-2022 --- #: XXX wird vermutlich zur Eröffnung der A100 eingeschaltet --- #: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind --- #: last_checked: 2025-08-25 --- #: check_frequency: 120d --- #: next_check: 2025-08-27 (rbb)
-#: note: Richtung Südosten zwei Ampeln, gegenläufig geschaltet
+#: note: Richtung Südosten zwei Ampeln, nicht synchron geschaltet
 #: note: eine Anforderung für Radfahrer Richtung Südosten
 	X 14169,9525
 #: note: gilt nicht für Radfahrer Richtung Nordwesten
