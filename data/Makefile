@@ -1753,7 +1753,7 @@ check-crossings-less-important:	${PERSISTENTTMPDIR}/crossings_gewaesser.bbd \
 				${PERSISTENTTMPDIR}/crossings_bahn.bbd \
 				${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd
 
-check-categories:	${BBD_TARGETS:S/^/.check_categories_/:S/\//_/g}
+check-categories:	${BBD_TARGETS:S/^/.check_categories_/:S/\//_/g} .check_categories_bbbike-temp-blockings.bbd
 
 .for target in ${BBD_TARGETS}
 .check_categories_${target:S/\//_/g}:	${target}
@@ -1762,6 +1762,12 @@ check-categories:	${BBD_TARGETS:S/^/.check_categories_/:S/\//_/g}
 	' ${target}
 	touch $@
 .endfor
+
+.check_categories_bbbike-temp-blockings.bbd: ${PERSISTENTTMPDIR}/bbbike-temp-blockings.bbd
+	$(PERL_UTF8) -I../lib -I.. -MStrassen::Cat -e '\
+	    exit !Strassen::Cat::check_file($$ARGV[0], BBBikeVersion => "data-update");\
+	' ${PERSISTENTTMPDIR}/bbbike-temp-blockings.bbd
+	touch $@
 
 check-names:	.check_names
 
