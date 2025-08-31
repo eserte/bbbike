@@ -54,7 +54,7 @@ my %versioned_file_to_cat;
 			);
     my @gesperrt_3_19_add = (
 			     sub { /^2s(:q\d)?(:(?:inwork|temp))?$/ },
- 			     sub { /^2::xmas$/ }, # handled in older BBBike, but normally rendered without christmas tree
+ 			     sub { /^[123]::(?:xmas|bomb|night|night::?weekend|temp|temp::?clock|temp::play|temp::mask)$/ }, # handled in older BBBike, but normally rendered without christmas tree
 			    );
 
     my @handicap_3_16     = (
@@ -62,6 +62,9 @@ my %versioned_file_to_cat;
 			    );
     my @handicap_3_17_add = (
 			     sub { /^q[01234](?:::?(?:inwork|igndisp))*$/ }
+			    );
+    my @handicap_3_19_add = ( # following mainly used in bbbike-temp-blockings
+			     sub { /^q[01234](?:::?(?:xmas|bomb|night|night::?weekend|temp|temp::?clock|temp::play|temp::mask))*$/ }
 			    );
 
     my @sbahn_categories = qw(SA SB SC S0 SBau);
@@ -123,8 +126,15 @@ my %versioned_file_to_cat;
      "handicap_s" => {
 		      '3.16'        => [@handicap_3_16],
 		      '3.17'        => [@handicap_3_16, @handicap_3_17_add],
-		      'data-update' => [@handicap_3_16, @handicap_3_17_add],
+		      '3.19'        => [@handicap_3_16, @handicap_3_17_add, @handicap_3_19_add],
+		      'data-update' => [@handicap_3_16, @handicap_3_17_add, @handicap_3_19_add],
 		     },
+     "bbbike-temp-blockings.bbd" => {
+				     '3.16'        => [@handicap_3_16, 		                               @gesperrt_3_16],
+		      		     '3.17'        => [@handicap_3_16, @handicap_3_17_add,                     @gesperrt_3_16],
+				     '3.19'        => [@handicap_3_16, @handicap_3_17_add, @handicap_3_19_add, @gesperrt_3_16, @gesperrt_3_19_add],
+				     'data-update' => [@handicap_3_16, @handicap_3_17_add, @handicap_3_19_add, @gesperrt_3_16, @gesperrt_3_19_add],
+                                    },
     );
     $versioned_file_to_cat{'strassen-cooked'} = $versioned_file_to_cat{'strassen'};
     for my $v (keys %{ $versioned_file_to_cat{'gesperrt'} }) {
