@@ -1,17 +1,17 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
-
 use FindBin;
-use Cwd qw(realpath getcwd cwd);
-
-my $bbbike_root; BEGIN { $bbbike_root = realpath "$FindBin::RealBin/.." }
-
-use lib $bbbike_root, "$bbbike_root/lib";
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use File::Glob qw(bsd_glob);
+
+use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
 use Strassen::Core ();   # load Strassen::Core
 use Strassen ();         # Strassen->new_stream is in Strassen, not Strassen::Core
+
+my $bbbike_root = bbbike_root;
+my $bbbike_aux_datadir = defined bbbike_aux_dir() ? bbbike_aux_dir() . '/bbd' : undef;
 
 # 1. Parse documented directives
 my %documented;
@@ -35,7 +35,12 @@ close $pod;
 
 # 2. Collect .bbd files
 my @files = bsd_glob("$bbbike_root/data/*-orig");
-push @files, @ARGV if @ARGV;
+for my $candidate (
+    "$bbbike_root/tmp/bbbike-temp-blockings.bbd",
+    (defined $bbbike_aux_datadir ? "$bbbike_aux_datadir/fragezeichen_lowprio.bbd" : ()),
+) {
+    push @files, $candidate if -f $candidate;
+}
 
 # 3. Scan files
 my %undoc;
