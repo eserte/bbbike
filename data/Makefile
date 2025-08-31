@@ -176,6 +176,7 @@ fix-permissions:
 # XXX merge with sort-Berlin.coords.data rule below?
 slow-checks:	check-categories \
 		check-names \
+		check-directives \
 		.check_targets \
 		inaccessible_strassen inaccessible_landstrassen ${PERSISTENTTMPDIR}/inaccessible_landstrassen+fragezeichen \
 		check-coords.data \
@@ -1774,6 +1775,12 @@ check-names:	.check_names
 		    if $$_[0]->[Strassen::NAME] =~ m{(^\s|\s$$)} \
 	    })' ${target}
 .endfor
+	touch $@
+
+check-directives:	.check_directives
+
+.check_directives:	${BBD_TARGETS}
+	${PERL} ${MISCSRCDIR}/check_directives
 	touch $@
 
 .check_mudways:    mudways strassen landstrassen landstrassen2
