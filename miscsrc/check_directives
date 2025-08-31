@@ -56,8 +56,11 @@ for my $file (@files) {
 }
 
 # 4. Report
-for my $dir (sort { $undoc{$b}{count} <=> $undoc{$a}{count} } keys %undoc) {
-    my $count = $undoc{$dir}{count};
-    my @files = sort keys %{ $undoc{$dir}{files} };
-    print "$dir — $count occurrences in files: @files\n";
+if (scalar keys %undoc) {
+    for my $dir (sort { $undoc{$b}{count} <=> $undoc{$a}{count} } keys %undoc) {
+	my $count = $undoc{$dir}{count};
+	my @files = sort keys %{ $undoc{$dir}{files} };
+	print "$dir — $count occurrences in files: @files\n";
+    }
+    exit 1;
 }
