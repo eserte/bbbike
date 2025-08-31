@@ -3,16 +3,15 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
-use vars qw($lang $bbbike_url $bbbike_images $bbbike_script $bbbike_html $can_mapserver $mapserver_init_url $is_beta $fake_time);
+use vars qw($lang $bbbike_url $bbbike_images $bbbike_script $bbbike_html $can_mapserver $mapserver_init_url $is_beta $fake_time $use_cgi_bin_layout);
 
 sub _teaser_beta_html (;$);
 sub _teaser_new_html (;$);
@@ -106,12 +105,13 @@ EOF
 }
 
 sub teaser_kreisfahrt_adfc {
-    my $out_of_date = $today lt "20240907" || $today gt "20240921";
+    my $out_of_date = $today lt "20250831" || $today gt "20250913";
     if (!$out_of_date) {
-	my $adfc_url    = "https://touren-termine.adfc.de/radveranstaltung/134855-adfc-kreisfahrt-2024";
-	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
+	my $adfc_url    = "https://berlin.adfc.de/artikel/kreisfahrt-2025";
+	my $misc_dir = $use_cgi_bin_layout ? '/BBBike/misc' : '/bbbike/misc';
+	my $kreisfahrt_img = "$misc_dir/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0" style="position: relative; top: 3px;" /></a> am 21. September $year</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0" style="position: relative; top: 3px;" /></a> am 13. September $year</div>
 EOF
     } else {
 	();
