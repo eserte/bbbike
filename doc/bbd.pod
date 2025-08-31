@@ -812,6 +812,15 @@ C<next_check>. May be used to define some filters differently. Rarely
 used, but filter code already exist (see
 F<miscsrc/StrassenNextCheck.pm>).
 
+=item C<x-from: I<unixepoch>>
+
+=item C<x-until: I<unixepoch>>
+
+=item C<x-recurring: C<1|0>>
+
+Directives generated when converting C<from>, C<until>, and
+C<recurring> from F<bbbike-temp-blockings.pl> to a C<bbd> file.
+
 =back
 
 =head2 Comment lines
