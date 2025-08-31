@@ -1,0 +1,63 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+use FindBin;
+use Cwd qw(realpath getcwd cwd);
+
+my $bbbike_root; BEGIN { $bbbike_root = realpath "$FindBin::RealBin/.." }
+
+use lib $bbbike_root, "$bbbike_root/lib";
+
+use File::Glob qw(bsd_glob);
+use Strassen::Core ();   # load Strassen::Core
+use Strassen ();         # Strassen->new_stream is in Strassen, not Strassen::Core
+
+# 1. Parse documented directives
+my %documented;
+
+open my $pod, "<:encoding(iso-8859-1)", "$bbbike_root/doc/bbd.pod"
+    or die "Cannot open $bbbike_root/doc/bbd.pod: $!";
+my $stage = 'search_for_section';
+while (<$pod>) {
+    if ($stage eq 'search_for_section' && m{^=head3\s+Line/block directives}) {
+	$stage = 'in_section';
+    } elsif ($stage eq 'in_section' && /^=head[12]/) {
+	last;
+    } elsif (/^=item\s+C<([^>]+)>/) {
+        my $entry = $1;
+        $entry =~ s/:.*$//;      # strip after colon if params like "by: I<source>"
+        $entry =~ s/\s.*$//;     # strip after whitespace
+        $documented{$entry} = 1;
+    }
+}
+close $pod;
+
+# 2. Collect .bbd files
+my @files = bsd_glob("$bbbike_root/data/*-orig");
+push @files, @ARGV if @ARGV;
+
+# 3. Scan files
+my %undoc;
+
+for my $file (@files) {
+    my $stream = Strassen->new_stream($file)
+      or die "Cannot create stream for $file";
+
+    $stream->read_stream(sub {
+        my ($record, $directives) = @_;
+        for my $dir (keys %$directives) {
+            unless ($documented{$dir}) {
+                $undoc{$dir}{count}++;
+                $undoc{$dir}{files}{$file}++;
+            }
+        }
+    });
+}
+
+# 4. Report
+for my $dir (sort { $undoc{$b}{count} <=> $undoc{$a}{count} } keys %undoc) {
+    my $count = $undoc{$dir}{count};
+    my @files = sort keys %{ $undoc{$dir}{files} };
+    print "$dir — $count occurrences in files: @files\n";
+}
