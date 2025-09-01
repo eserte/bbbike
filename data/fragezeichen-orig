@@ -585,7 +585,7 @@ Munsterdamm: bei der geplanten Fahrbahnsanierung entstehen Radspuren	?::projecte
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/entwuerfe-fuer-den-barbarossaplatz_a434237
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1587005.php (Fernwärmebauarbeiten bis 2028/29)
 #: XXX entfällt auch die Einbahnstraßenregelung?
-#: osm_watch: way id="4597427" version="21"
+#: osm_watch: way id="4597427" version="22"
 #: also_indoor: traffic
 #: last_checked: 2025-02-05
 # REMOVED --- #: check_frequency: 120d
@@ -1602,7 +1602,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10778 (Antrag: Abfräsen des Kopfsteinpflasters)
 #: osm_watch: way id="51872061" version="48"
 #: osm_watch: way id="31525575" version="32"
-#: last_checked: 2025-08-16
+#: last_checked: 2025-09-01
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 # REMOVED (zusammengelegt) --- #: next_check_id: WALLENSTEIN-2020 --- #: osm_watch: way id="31525575" version="20" --- #: XXX zurzeit laufen Bauarbeiten; Parkverbot bis 31.10.2020 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/unterfuehrung-voll-gesperrt_a285283 (bis 16.11.2020; nur Arbeiten an der Gasleitung?) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8603 (Frage) --- #: last_checked: 2020-11-28 --- #: check_frequency: 120d --- #: next_check: 2020-11-16 --- Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
@@ -5103,6 +5103,7 @@ Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22431,6068 2
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11946 (Einwohneranfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/downloads/protokoll-des-fahrrat_231123.pdf (Erwähnung)
 #: by: https://pascalgrothe.de/allee-der-kosmonauten-warum-der-radweg-bau-stockt/ (wegen des Umleitungsverkehrs am Marzahner Knoten auf Eis gelegt)
+#: by: https://pascalgrothe.de/bis-ende-des-jahrzehnts-kein-neuer-radweg-an-der-allee-der-kosmonauten/ (Verzögerung bis 2030?)
 #: source_id: viz2021:13.550276,52.533321,31.10.2022,07:00 (Fahrbahninstandsetzung, bis 11.11.2022) (inaktiv)
 #: source_id: viz2021:13.547127,52.526139,31.10.2022,07:00 (Fahrbahninstandsetzung, bis 11.11.2022) (inaktiv)
 #: last_checked: 2025-08-27
@@ -6080,7 +6081,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23105.pdf (weitere Planungsschritte notwendig)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243332 (2024-11-11 - 2024-12-12)
-#: last_checked: 2025-08-16
+#: last_checked: 2025-09-01
 #: check_frequency: 120d
 #: next_check: 2026-03-15 (bahninfo-forum, nd)
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17736,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
@@ -6292,7 +6293,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-08-31
+#: last_checked: 2025-09-01
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6306,7 +6307,7 @@ Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,1091
 # REMOVED --- (Hauptstr./Rummelsburger Ufer - Gustav-Tempel-Str.): ein asphaltierter Zweirichtungsradweg entsteht	?::inwork 15298,10682 15245,10719
 #: osm_watch: way id="176050265" version="12"
 #: osm_watch: way id="1099807542" version="8"
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-01
 #: check_frequency: 45d
 #: next_check: 2025-09-30 (infravelo)
 Hauptstr. [Nebenfahrbahn]: wird hier eine Fahrradstraße eingerichtet (wo genau?)? was passiert mit der Einbahnstraßenregelung?	? 15298,10682 15332,10657 15392,10615
@@ -6315,7 +6316,7 @@ Hauptstr. [Nebenfahrbahn]: wird hier eine Fahrradstraße eingerichtet (wo genau?)
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/geschaeftsleute-beruecksichtigen_a428689
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10342 (Antrag)
 #: XXX Evtl. mit Anschluss an den vorbereiteten Radweg an der Gustav-Tempel-Str.
-#: last_checked: 2025-07-12
+#: last_checked: 2025-09-01
 #: check_frequency: 90d
 An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Bucht	? 15358,10562 15430,10508 15499,10455 15566,10411 15583,10399 15652,10348 15716,10303 15788,10252 15858,10202 15952,10134 16041,10072 16068,10051 16155,9992
 # 
@@ -6335,7 +6336,7 @@ An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Buch
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-01
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -7971,7 +7972,7 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23105.pdf (geplante Bauarbeiten von März 2026 bis Herbst 2026; während der Bauarbeiten Sperrung, auch für den Fußverkehr)
 #: by: https://www.nd-aktuell.de/artikel/1193002.bvg-berlins-kuerzeste-tram-kann-kommen.html
 #: XXX mittlerweile wegen Hochbauarbeiten nebenan ein paar Meter gemeinsamer Geh- und Radweg am Ende der Ehrlichstr. (ist mittlerweile vorbei; war aber vermutlich nur für den Hochbau nebenan)
-#: last_checked: 2025-08-16
+#: last_checked: 2025-09-01
 #: check_frequency: 180d
 #: next_check: 2026-03-01 (pardok, geplanter Beginn der Bauarbeiten)
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten)
@@ -8521,8 +8522,11 @@ Dabendorf (Brandenburger Str.): Bahnübergang wird ersetzt	? 13170,-18567 13295,-
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/prenzlauer-promenade-soll-saniert-werden_a376985 (Baubeginn frühestens 2026)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fahrgastverband-fordert-strassenbahn-auf-der-prenzlauer-promenade_a378988
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/prenzlauer-promenade/ (voraussichtliche Bauzeit: noch in Planung)
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/prenzlauer-promenade/250805_pp_ep-ul5_blatt_1.pdf
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/prenzlauer-promenade/250805_pp_ep-ul5_blatt_9.pdf
 #: last_checked: 2025-01-18
-#: next_check: 2026-06-01 (bw)
+#: check_frequency: 540d
+# REMOVED --- #: next_check: 2026-06-01 (bw)
 Prenzlauer Promenade: Sanierung geplant, Richtung Norden wird es dann eine Radverkehrsanlage geben	? 12010,16774 11993,16862 11924,17224 11920,17245 11893,17397 11872,17522 11849,17655 11839,17738 11884,18063 11894,18146 11907,18246 11914,18303 11936,18440 11950,18529
 # 
 # REMOVED --- #: next_check_id: MAUERPARK-2022 --- #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/2022/pressemitteilung.1270894.php --- #: by: https://gruen-berlin.de/pressemitteilung/mauerpark-start-der-behutsamen-sanierung-und-weiterentwicklung (Bauarbeiten im nördlichen Teil bis Ende 2024) --- #: by: https://gruen-berlin.de/fileadmin/user_upload/Downloads/mauerpark/gruenberlin_projekte_parks_mauerpark_plangrafik_c_gruenberlin_springbrandideas.png --- #: by: https://berliner-abendblatt.de/2022/12/01/mauerpark-soll-saniert-und-weiterentwickelt-werden/ --- #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=741384#post741384 --- #: by: https://gruen-berlin.de/projekte/parks/mauerpark/projekt-ticker --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-umwelt/herzstueck-des-mauerparks-saniert_a419831 --- #: by: https://entwicklungsstadt.de/pankow-noerdlicher-umbau-des-mauerparks-vorzeitig-abgeschlossen/ --- #: XXX Wie wird das Wegenetz nach den Bauarbeiten aussehen? -> neuer Zugang zum Lichtburgring mit Drängelgitter --- #: osm_watch: note 4002731 6 --- #: last_checked: 2024-08-21 --- #: check_frequency: 60d --- #: next_check: 2024-08-16 --- #: next_check: 2024-12-31 --- Mauerpark: Bauarbeiten sind beendet, neue Wege aufnehmen	? 10081,15853 10046,15844 10050,15824 10061,15775 10045,15754 10071,15684 --- (hier wohl fertig) --- Mauerpark: Bauarbeiten im 1. Bauabschnitt, Wege können gesperrt sein	?::inwork 10071,15684 10079,15661 10091,15630
@@ -9209,10 +9213,11 @@ L77 Saarmund: Bau eines Radwegs	?::inwork -8988,-10047 -8759,-9987 -8645,-9915 -
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1547236.php (formaler Umbenennungsprozess beginnt, dauert 4 bis 6 Monate)
 #: by: https://www.tagesspiegel.de/berlin/er-sitzt-auf-einer-wolke-und-freut-sich-harald-juhnke-platz-kommt--aber-nicht-so-schnell-13465513.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_22_1377_1468_online.pdf (Umbenennung einer Straßenteilfläche am 1. September 2025)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1593831.php ("Eröffnung" am 29.9.2025)
 #: osm_watch: note 4673473 3
 #: last_checked: 2025-08-29
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2025-09-01 (Amtsblatt)
+#: next_check: 2025-09-29 (BA-Pressemitteilung)
 Harald-Juhnke-Platz: geplante Benennung	? 5048,10636 5069,10662 5095,10690
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1536230.php (B-Plan 9-100 VE: Fürstenwalder Allee 356/Fahlenbergstraße 1-11)
@@ -9450,7 +9455,8 @@ Prinzregentenstr./Waghäuseler Str.: Umbauarbeiten, danach Vorfahrt für Prinzrege
 # 
 #: XXX außerdem gibt es eine Zufahrt zum Erika-Heß-Eisstadion (Asphalt/Kopfsteinpflaster)
 #: XXX Drängelgitter
-#: osm_watch: note 4801950 2
+#: XXX laut osm note wieder wegen Bauarbeiten gesperrt
+#: osm_watch: note 4801950 3
 #: osm_watch: way id="53168806" version="7"
 Nordhafen/Panke: gibt es hier eine neue Wegverbindung? Genaue Lage? Qualität? Beleuchtet? Auch legal für Radfahrer befahrbar?	? 7753,14528 7863,14559 7889,14519
 # 
@@ -10119,7 +10125,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-lichtenberg-in-bau/?postID=763705#post763705 (Fußgängerbereich bereits fertig? Benennung des Vorplatzes nach Malala Yousafzai)
 #: by: https://entwicklungsstadt.de/fortschritt-in-der-parkstadt-karlshorst-gruenflaeche-mit-100-neuen-baeumen-eroeffnet-im-april/ (Eröffnung des Spielplatzes am 17.04.2025, Fertigstellung des Parks im Sommer 2025)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_26_1645_1696_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2025-08-16 vvv
+#: last_checked: 2025-09-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-09-20 (entwicklungsstadt) vvv
 #: osm_watch: way id="1328997654" version="3"
@@ -10151,7 +10157,7 @@ Parkanlage: wann wird der östliche/südöstliche Teil fertig? genaue Lage? Name?	?
 #: source_id: viz2021:13.505734,52.484227,22.07.2025,10:00 (angeblich KGA-Anbindung gesperrt, falsch positioniert?, bis 05.09.2025)
 #: osm_watch: note 4715040 4
 #: note: mittlerweile wurde die Sperrung für den Kfz-Verkehr aufgehoben, vermutlich wegen der Sperrung der Hochbrücke --- was bedeutet das für den Ampelbau?; mittlerweile scheint es in einigen Tagen weiterzugehen, siehe BVG-Meldung; Fahrbahn Richtung Westen gesperrt, gemeinsamer Geh- und Radweg auf dem Hochbord; mittlerweile ist die Fahrbahn Richtung Osten gesperrt, bis Anfang September 2025
-#: last_checked: 2025-07-18
+#: last_checked: 2025-09-01
 #: check_frequency: 60d
 #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 Blockdammweg/Hönower Wiesenweg: Neubau einer Ampel	?::inwork 17366,8824 17380,8858 17392,8891
@@ -10750,7 +10756,7 @@ A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21861,-2154 2166
 #: by: https://entwicklungsstadt.de/richtfest-fuer-greenfields-buckow-106-neue-wohnungen-am-stadtrand-von-neukoelln/ (geplante Fertigstellung bis 2026)
 #: by: https://entwicklungsstadt.de/buckower-felder-treffpunkt-fuer-austausch-unterstuetzung-und-beteiligung/
 # REMOVED --- #: XXX mögliche Straßennamen (laut bw) (mittlerweile im Amtsblatt bestätigt) (fehlen alle in Berlin.coords.data): --- #: XXX * An den Buckower Feldern (PLZ=12349) --- #: XXX * Gensweg (PLZ=12349) --- #: XXX * An den Weiden (PLZ=12349) --- #: XXX * Dyrekeweg (PLZ=12349) --- #: XXX * In den Bauerngärten (PLZ=12349) --- #: XXX sowie die Privatstraßen: --- #: XXX * Am Mühlanger (PLZ=12349) --- #: XXX * Knyphausenweg (PLZ=12349)
-#: osm_watch: way id="28319563" version="25"
+#: osm_watch: way id="28319563" version="26"
 #: source_id: viz2021:13.436,52.41714,30.05.2024,06:00 (Wanderbaustelle, bis 31.08.2024) (inaktiv)
 #: last_checked: 2025-08-20 vvv
 #: check_frequency: 90d vvv

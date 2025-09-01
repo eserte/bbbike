@@ -473,12 +473,12 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 2770,10024 2702,10006 2
 	RW2; 1928,10728 1900,10617 1901,10566 1939,10446 1988,10328 2030,10253 2110,10101 2163,10024 2297,9827 2360,9754 2394,9714
 	RW1;RW2 2095,11440 2102,11307 2061,11191
 	RW2;RW2 2061,11191 2037,11122 2011,11046 1928,10728
-Gehwegplatten	RW1; 2011,11046 1865,11082 1850,11091 1775,11135
-Gehwegplatten; für Radfahrer freigegebene Busspur gilt Mo-Sa 6-20 Uhr	RW1; 1775,11135 1619,11226
-Gehwegplatten	RW2; 1619,11226 1532,11280
-	RW2; 1532,11280 1541,11271 1619,11226 1775,11135 1850,11091 1865,11082 2011,11046
+Gehwegplatten	RW1; 2011,11046 1859,11083 1849,11088 1772,11126
+Gehwegplatten; für Radfahrer freigegebene Busspur gilt Mo-Sa 6-20 Uhr	RW1; 1772,11126 1613,11217
+Gehwegplatten	RW2; 1613,11217 1544,11307
+	RW2; 1499,11281 1532,11264 1613,11217 1772,11126 1849,11088 1859,11083 2011,11046
 Busspur gilt Mo-Fr 7-19 Uhr	RW2;RW5 2233,11049 2011,11046
-	RW2; 1381,11335 1450,11309 1532,11280 1574,11379
+	RW2; 1381,11335 1447,11301 1499,11281 1544,11307 1574,11379
 einige Meter asphaltiert, Rest Gehwegplatten	RW2; 1574,11379 1403,11428
 #: note: Richtung Heerstr. die Nebenfahrbahn benutzen
 	RW2; 1403,11428 1381,11335
@@ -2346,7 +2346,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-08-16 vvv
+#: last_checked: 2025-09-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 asphaltiert	RW2; 17681,7589 17611,7690
@@ -3218,7 +3218,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-08-31
+#: last_checked: 2025-09-01
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -5950,8 +5950,9 @@ Verbundsteinpflaster	RW1; 18929,2454 19091,2443 19592,2403 19968,2381 20100,2373
 	RW1;RW1 17377,3571 17431,3599 17490,3630 17522,3653 17552,3675 17585,3745
 	RW7;RW7 10081,15853 10105,15752 10123,15681 10130,15653
 	RW2;RW2 683,11270 571,11255 504,11243 438,11236
-	RW10;RW2 1381,11335 1206,11324
-	RW10;RW10 1206,11324 1051,11311 1028,11309 943,11302 683,11270
+	RW10; 1381,11335 1206,11324 1051,11311 1028,11309 943,11302 683,11270
+	RW10; 683,11270 947,11299 1028,11309 1206,11319
+	RW2; 1206,11319 1381,11335
 	RW10;RW10 438,11236 229,11213 16,11190 -82,11178 -360,11145 -406,11141 -511,11127 -593,11119 -733,11098 -779,11093 -848,11086 -1050,11061 -1288,11037 -1448,11020
 # REMOVED (Nebenstraßen nun separat gezeichnet) ---	RW10;RW10 -1448,11020 -1523,11012 -1581,11030
 	RW10;RW10 -1581,11030 -2125,11196
@@ -6036,7 +6037,7 @@ Bushaltestelle	RW5; 5463,9961 5460,10055
 #: by: ^^^
 #: by: Annette (buehring):
 	RW6;RW6 -1737,1904 -1796,2054 -1717,2084 -1654,1954
-# REMOVED (stimmt nicht?) --- #: by: Thorsten Schulz: ---	RW6;RW6 943,11302 1070,11226 1184,11143
+# REMOVED (stimmt nicht?) --- #: by: Thorsten Schulz: ---	RW6;RW6 947,11299 960,11291 1070,11226 1184,11143
 	RW2; 14693,7168 14617,7243
 Verbundsteinpflaster	RW1; 14617,7243 14693,7168
 #: historical_note: früher (bis Herbst/Winter 2024): nur noch aufgemalt	RW1; 14693,7168 14752,7108 14803,7056
@@ -8363,13 +8364,13 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: next_check_id: GITSCHINER-2025
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025) (inaktiv)
 #: source_id: viz2021:13.410603,52.498491,30.01.2025,13:57 (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.410603,52.498491, (bis 29.08.2025) (inaktiv)
+#: source_id: viz2021:13.410603,52.498491, (bis 29.08.2025) (inaktiv) (bis 12.09.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
 #: last_checked: 2025-08-27 vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-08-29 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-09-12 (VIZ-Verkehrsmeldung) vvv
 #XXX	RW4; 10871,10322 10975,10334
 	RW0; 10871,10322 10975,10334
 #: next_check ^^^

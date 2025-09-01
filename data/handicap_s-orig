@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025)
-#: last_checked: 2025-08-31
+#: last_checked: 2025-09-01
 #: next_check: 2025-09-12
 #: valid: -20250912
 Wühlischstr.: Bauarbeiten, Einfahrt verboten	q4::inwork; 14771,11345 14759,11339
@@ -666,6 +666,11 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Karlshorst ###
 # 
+#: next_check_id: PARKSTADTKARLSHORST-2021
+#: last_checked: 2025-09-01
+#: check_frequency: 30d
+Hönower Wiesenweg: Bauarbeiten, Fahrbahn gesperrt, Engstelle	q3-::inwork 17380,8858 17416,8767
+# 
 # REMOVED --- #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00 --- #: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024) (bis 22.11.2024) (bis 30.11.2024) (bis 13.12.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_232184 (bis auf weiteres) (inaktiv, aber Sperrung dürfte weiterhin bestehen) (wieder aktiv) --- #: last_checked: 2024-12-13 --- #: next_check: 2024-12-13 --- # REMOVED --- #: valid: -20241122 --- Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
 # 
 # REMOVED (weitgehend freigegeben; Überquerung der Treskowallee über Fußgängerfurt)
@@ -1055,7 +1060,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-01
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 

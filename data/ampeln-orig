@@ -24,8 +24,8 @@ Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage	X::inwork 16461,2569
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: note: Gegenverkehrsstrecke über 50m, gilt auch für Radfahrer (trotz Radwege)
-#: next_check: 2025-09-02 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20250902
+#: next_check: 2025-09-02 (alte VIZ-Verkehrsmeldung)
+#: valid: -20250902
 Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork::alternating 2708,9144
 # 
 # REMOVED --- #: note VIZ: Auf der Schnellerstraße und Oberspreestraße beginnen am Morgen Leitungsarbeiten. Bis Ende Juni ist die Oberspreestraße stadteinwärts zwischen Eisblumensteig und Bruno-Bürgel-Weg für den Kfz-Verkehr gesperrt (srt: für Radfahrer explizit offen). Eine Umleitung ist ausgeschildert. Zusätzlich regelt auf der Schnellerstraße in Höhe Bruno-Bürgel-Weg eine Baustellenampel wechselseitig den Verkehr.
@@ -126,13 +126,13 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # REMOVED --- #: valid: -20250214
 # REMOVED --- Wartenberger Weg: Gegenverkehrsregelung	X::inwork::alternating 15882,19165
 # 
-# REMOVED --- #: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
-# REMOVED --- #: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
-# REMOVED --- #: source_id: viz2021:13.5975,52.50236, (bis 29.08.2025) (inaktiv)
-# REMOVED --- #: last_checked: 2025-07-16
-# REMOVED --- #: next_check: 2025-08-29
-# REMOVED --- #: valid: -20250829
-# REMOVED --- Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
+#: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
+#: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
+#: source_id: viz2021:13.5975,52.50236, (bis 29.08.2025) (inaktiv) (bis 10.10.2025)
+#: last_checked: 2025-07-16
+#: next_check: 2025-10-10
+#: valid: -20251010
+Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 # 
 #: source_id: LMS-BR:379742/72 viz2021:13.589646,52.502679,13.08.2025,09:15 (bis 17.10.2025)
 #: last_checked: 2025-08-27
@@ -341,7 +341,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-08-31
+#: last_checked: 2025-09-01
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -1111,7 +1111,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog: für Radfahrer zwei Ampeln Richtung Osten und Süden, Richtung Osten gegeneinander geschaltet, Richtung Süden evtl. zusammen geschaltet
 	X 2011,11046
 	F 2037,11122
-	X 1532,11280
+	X 1499,11281
+	X 1544,11307
 	X 3006,11093
 	X 3501,11096
 	X 3835,10352
@@ -2504,9 +2505,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 404,12414
 #: note: Anforderungsampel
 	F 1264,11840
-	F 1775,11135
+	F 1772,11126
 #: note: Anforderungsampel
-	F 1850,11091
+	F 1849,11088
 	X 3355,12258
 	X 10465,-2129
 	X 10756,-2128
@@ -2840,7 +2841,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog nicht relevant für Nebenfahrbahn, nur für querende Radfahrer
 	F 1028,11309
 #: note: nicht relevant für den (benutzungsplichtigen) Radweg
-	F0 1450,11309
+	F0 1447,11301
 #: XXX_prog in Nordostrichtung nur eine Fußgängerampel
 	X 13151,13367
 #: section Parkeisenbahn Wuhlheide vvv
@@ -3257,9 +3258,12 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	F 1398,10201
 #: note: Anforderungsampel
 	F 7110,10613
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxqt6w56sc2n
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiaabfty7ylfpgmcw5ag7b77wju75h6pncaxihwtb3fp2azsb5p2ti@jpeg
+#: source_id: viz2021:13.43277,52.47837,01.09.2025,07:00 (bis 14.12.2025)
 #: XXX laut Verkehrsmeldung nun Neubau einer Ampel, bis Mitte Dezember 2025
 #: priority: #D
-#: next_check: 2025-12-15
+#: next_check: 2025-12-14
 provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583
 #: note: Anforderungsampel
@@ -3974,13 +3978,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: source_id: viz2021:13.37326,52.53807,06.11.2023,09:00 (bis 15.02.2024) (inaktiv)
 #: source_id: viz2021:13.373268,52.538065,06.11.2023,09:00 (provisorische Ampelanlage bis 15.02.2024) (inaktiv)
 #: source_id: viz2021:13.373342,52.538077,26.06.2025,09:00 (Einmündungsumbau, bis 15.08.2025) (inaktiv)
-#: source_id: viz2021:13.373259,52.538069,26.06.2025,09:00 (bis 15.08.2025) (bis 01.09.2025)
+#: source_id: viz2021:13.373259,52.538069,26.06.2025,09:00 (bis 15.08.2025) (bis 01.09.2025) (bis 26.12.2025)
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
 #: last_checked: 2025-08-13 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2025-09-01 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-26 (VIZ-Verkehrsmeldung)
 	X::inwork 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 
@@ -4054,7 +4058,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 2
-#: last_checked: 2025-07-04 (mapillary) vvv
+#: last_checked: 2025-07-17 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -4115,7 +4119,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2025-08-16
+#: last_checked: 2025-09-01
 #: check_frequency: 90d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

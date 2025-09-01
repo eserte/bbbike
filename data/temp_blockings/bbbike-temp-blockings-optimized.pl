@@ -2566,7 +2566,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3204,7 +3204,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: August 8.00 - 20.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: September 8.00 - 19.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -4620,7 +4620,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: way id="198581621" version="19"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-01
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5871,7 +5871,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-08-24 (osm)
+#: last_checked: 2025-09-01
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6029,6 +6029,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
 #: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250901 (zwischen Ariadnestr. und Huttenstr., bis Anfang Januar 2025)
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
@@ -6042,9 +6043,10 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #	q4::inwork 2484,25984 2490,26126 2531,26251
 #: also_indoor: traffic (none)
 # REMOVED (#: add_fragezeichen: Ist die Straße noch immer gesperrt?
-#: last_checked: 2025-06-11 (mapillary)
-#: next_check: 2025-06-30 (BA-Seite)
-Sennheimer Str., 1. BA bis Huttenstr.	q3::inwork 2490,26126 2484,25984 2496,25915
+#: last_checked: 2025-09-01 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-01 (VIZ-Verkehrsmeldung)
+# REMOVED --- Sennheimer Str., 1. BA bis Huttenstr.	q3::inwork 2490,26126 2484,25984 2496,25915
+Sennheimer Str., Ariadnestr. bis Huttenstr.	q3::inwork 2502,25544 2515,25666 2519,25772 2496,25915
 # REMOVED --- Sennheimer Str.	q4::inwork 2496,25915 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
 ',
          'from' => 1756677600,
@@ -6445,7 +6447,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-01
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -6999,7 +7001,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 # REMOVED (fragezeichen-Eintrag existiert) --- #: XXX Außerdem wird eine Fußgängerampel etwa am Anfang der Baustelle entstehen (siehe bahninfo-forum)
 #: by: https://www.bvg.de/de/unternehmen/medienportal/pressemitteilungen/2025-08-29-aufzug-weinmeisterstrasse
 #: source_id: viz2021:13.404099,52.525926,12.01.2024,07:00 (bis 31.03.2025) (bis 31.08.2025) (inaktiv)
-#: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025)
+#: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
 #: last_checked: 2025-08-27 (bahninfo-forum) vvv
@@ -7672,21 +7674,21 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
-#: note: laut berlin-usedom-radweginfo bis Ende 2024, mittlerweile bis Mitte 2025
+#: note: laut berlin-usedom-radweginfo bis Ende 2024, mittlerweile bis Mitte 2025, mittlerweile bis Ende 2025
 #: note: auf finowkanal.info kein Endedatum
 #: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025) Eröffnung Ende 2025
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-08-03 (research)
-# REMOVED --- #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-04-01
+#: last_checked: 2025-09-01 (research)
+#: check_frequency: 30d
+#: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
 ',
          'from' => 1724611975,
          'id' => 4150,
-         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Mitte oder sogar Ende 2025',
+         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8352,16 +8354,19 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,re-H)
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-01
 #: check_frequency: 10d
-# REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder)
+#: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
 # REMOVED (nach hinten gewandert) ---	2::inwork 17587,9655 17668,9632 17777,9649
+#: note: Halteverbotsschilder bis 5.9.2025
 	2::inwork 17777,9649 17920,9698
+#: note: Halteverbotsschilder 2.9.2025 bis 2.10.2025
+	2::inwork 17920,9698 18066,9770
 ',
          'from' => undef,
          'id' => 4271,
-         'text' => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang September 2025',
+         'text' => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang Oktober 2025',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8380,7 +8385,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: osm_watch: way id="275795707" version="4"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-06-04 vvv
+#: last_checked: 2025-09-01 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: note: kann offen sein, aber nicht immer
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
@@ -8931,16 +8936,16 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
          'until' => 1764345600
        },
        {
-         'data' => '#: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027)
+         'data' => '#: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026)
 #: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
 #: note: die textuelle Beschreibung (zwischen Mecklenburgische Straße und Paretzer Straße) und Kartendarstellung (nur ein paar Meter im Kurvenbereich) passen nicht zusammen
 	q4::inwork 4581,8048 4461,8105 4457,8270
 ',
          'from' => 1748754000,
          'id' => 4354,
-         'text' => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 03.12.2027 23:59',
+         'text' => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 30.04.2026 23:59',
          'type' => 'handicap',
-         'until' => 1827874740
+         'until' => 1777586399
        },
        {
          'data' => '#: source_id: viz2021:13.317914,52.473875,02.06.2025,07:00 (bis 18.07.2025) (inaktiv)
@@ -8997,7 +9002,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-08-23 (traffic)
+#: last_checked: 2025-09-01 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 ',
@@ -9032,7 +9037,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
-#: also_indoor: traffic (G,T,H)
+#: also_indoor: traffic (G,ex-T,H)
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
 #: next_check ^^^
 ',
@@ -9040,7 +9045,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
          'id' => 4374,
          'text' => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, teilweise sind Fahrbahnen gesperrt, bis 02.09.2025',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1756828800
        },
        {
          'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
@@ -9093,9 +9098,9 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: next_check_id: FINOWKANAL-2025
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
-#: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025
+#: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-08-03 (research)
+#: last_checked: 2025-09-01 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 ',
          'from' => undef,
@@ -9173,10 +9178,10 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'until' => 1758297600
        },
        {
-         'data' => '#: last_checked: 2025-08-16
+         'data' => '#: last_checked: 2025-09-01
 #: check_frequency: 60d
-# REMOVED --- #: next_check: 2025-10-02 (Halteverbotsschilder)
-#: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-02 (Halteverbotsschilder)
+# REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	2::inwork 17950,8974 17915,8945
 ',
          'from' => 1752319411,
@@ -9266,7 +9271,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-01
 #: check_frequency: 30d
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -9623,7 +9628,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
        },
        {
          'data' => '#: next_check_id: ROSEGGER-2024
-#: osm_watch: note 4082669 3
+#: osm_watch: note 4082669 4
 #: osm_watch: way id="33057862" version="21"
 #: note: die Barrieren können außerhalb der Arbeitszeiten weggeschoben sein, gesehen 2025-08-28 (Thu) 22:45
 #: last_checked: 2025-08-28

@@ -29,7 +29,9 @@ Erkelenzdamm etc.	1 11258,10682 11244,10653 11210,10668 11192,10629 11145,10510 
 Erkelenzdamm etc.	1 11094,10261 11038,10247 10967,10092
 Überführung Daimlerstr.	1 8639,2212 8588,2176 8559,2203 8552,2243 8602,2377
 Ernst-Reuter-Platz	1 4763,11834 4854,11843 4905,11785 4885,11735 4838,11697 4781,11708 4737,11768 4763,11834
-Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
+Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1544,11307
+Theodor-Heuss-Platz	1s 1544,11307 1499,11281
+Theodor-Heuss-Platz	1 1499,11281 1447,11301 1381,11335
 Halenseestr.	1 2218,10067 2268,9976 2300,9883 2369,9779 2415,9765
 Halenseestr.	1 2394,9714 2360,9754 2297,9827 2163,10024
 Halenseestr.	1 1939,10446 1901,10566 1900,10617 1928,10728
@@ -506,9 +508,8 @@ Von-der-Gablentz-Str.	1 4946,17701 4872,17703 4816,17712
 Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3811,14299
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
-Masurenallee (Mittelstreifen)	3nocross::ignrte 1532,11280 1619,11226
-Masurenallee (Richtungsfahrbahn)	1::igndisp 1532,11280 1619,11226
-Masurenallee (Richtungsfahrbahn)	1::igndisp 1619,11226 1541,11271 1532,11280
+Masurenallee (Richtungsfahrbahn)	1 1544,11307 1613,11217
+Masurenallee (Richtungsfahrbahn)	1 1613,11217 1532,11264 1499,11281
 Berliner Str. (Straßenbahntrasse)	3nocross::ignrte 10858,17721 10853,17802 10849,17848
 Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10853,17788 10849,17848
 Berliner Str. (Richtungsfahrbahn)	1::igndisp 10849,17848 10853,17802 10858,17721
@@ -1529,13 +1530,12 @@ Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13758,15009 13744,15018
 Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
-nicht überquerbar	3nocross::ignrte 1051,11311 1206,11324 1381,11335
-Bayernallee -> Heerstr.: nicht überquerbar	3::igndisp 1177,11382 1206,11324 1381,11335
-Bayernallee -> Frankenallee: nicht überquerbar	3::igndisp 1177,11382 1206,11324 1203,11221
-Heerstr. -> Frankenallee: nicht überquerbar	3::igndisp 1381,11335 1206,11324 1203,11221
-Heerstr. -> Bayernallee: nicht überquerbar	3::igndisp 1051,11311 1206,11324 1177,11382
-Frankenallee -> Bayernallee: nicht überquerbar	3::igndisp 1203,11221 1206,11324 1177,11382
-Frankenallee -> Heerstr.: nicht überquerbar	3::igndisp 1203,11221 1206,11324 1051,11311
+Heerstr.: nicht überquerbar	3nocross::ignrte 1028,11309 1051,11311 1206,11324 1381,11335
+Heerstr.: nicht überquerbar	1::igndisp 1028,11309 1051,11311 1206,11324 1381,11335
+Heerstr.: nicht überquerbar	1::igndisp 1381,11335 1206,11319 1028,11309
+Heerstr.: nicht überquerbar	3nocross::ignrte 683,11270 943,11302 1028,11309
+Heerstr.: nicht überquerbar	1::igndisp 683,11270 943,11302 1028,11309
+Heerstr.: nicht überquerbar	1::igndisp 1028,11309 947,11299 683,11270
 nicht überquerbar	3nocross::ignrte 504,11243 571,11255 683,11270
 Mittelstreifen	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
 Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4030,11794 -4033,11786 -3820,11721
@@ -4247,3 +4247,6 @@ Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	1::igndisp 8583,301 8736,
 Nahmitzer Damm: linker Gehweg bis Ampel	1::igndisp 8382,347 8470,310 8583,301
 Minna-Cauer-Str.: linker Gehweg	1::igndisp 7873,13448 7901,13324
 Eduard-Spranger-Promenade - Königsberger Str./Giesensdorfer Str.: linker Gehweg	1::igndisp 4348,2627 4328,2652
+Heerstr.: linker Gehweg	1::igndisp 1028,11309 929,11313
+Heerstr.: linker Gehweg	1::igndisp 960,11291 1028,11309
+Thüringerallee -> Theodor-Heuss-Platz: linker Gehweg	1::igndisp 1499,11281 1522,11254
