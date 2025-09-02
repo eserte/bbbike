@@ -21,12 +21,12 @@ Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::in
 #: next_check_id: 2026-10-31
 Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage	X::inwork 16461,2569
 # 
-#: next_check_id: LYNAR-2025
-#: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
-#: note: Gegenverkehrsstrecke über 50m, gilt auch für Radfahrer (trotz Radwege)
-#: next_check: 2025-09-02 (alte VIZ-Verkehrsmeldung)
-#: valid: -20250902
-Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork::alternating 2708,9144
+# REMOVED --- #: next_check_id: LYNAR-2025
+# REMOVED --- #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
+# REMOVED --- #: note: Gegenverkehrsstrecke über 50m, gilt auch für Radfahrer (trotz Radwege)
+# REMOVED --- #: next_check: 2025-09-02 (alte VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20250902
+# REMOVED --- Paulsborner Str./Auguste-Viktoria-Str./Lynarstr.: Gegenverkehrsstrecke	X::inwork::alternating 2708,9144
 # 
 # REMOVED --- #: note VIZ: Auf der Schnellerstraße und Oberspreestraße beginnen am Morgen Leitungsarbeiten. Bis Ende Juni ist die Oberspreestraße stadteinwärts zwischen Eisblumensteig und Bruno-Bürgel-Weg für den Kfz-Verkehr gesperrt (srt: für Radfahrer explizit offen). Eine Umleitung ist ausgeschildert. Zusätzlich regelt auf der Schnellerstraße in Höhe Bruno-Bürgel-Weg eine Baustellenampel wechselseitig den Verkehr.
 # REMOVED --- #: note: Gegenverkehrsstrecke etwa 85m
@@ -341,14 +341,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-02
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-02
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
