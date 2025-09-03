@@ -20,6 +20,7 @@ G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
 Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q3::inwork 7000,14832 7007,14911
+Torfstr.: Bauarbeiten: Abschnitt der Fahrbahn gesperrt	q3::inwork 6849,14831 6837,14848 6739,14969
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -1366,7 +1367,7 @@ Park am Nordbahnhof: Fuﬂg‰nger	q1 9147,14151 9070,14058
 Park am Nordbahnhof: Fuﬂg‰nger	q1 8913,14485 8868,14442 8825,14401
 Park am Nordbahnhof: Fuﬂg‰nger	q1 9175,14193 9144,14169 9081,14232 8868,14442
 Park am Nordbahnhof: Fuﬂg‰nger	q1 9119,14255 9081,14232 8992,14176
-(an der Panke - Mauerweg): einige Fuﬂg‰nger	q1 7872,14510 7889,14519 7940,14447
+(an der Panke - Mauerweg): einige Fuﬂg‰nger	q1 7872,14510 7884,14517 7940,14447
 (an der Panke - Mauerweg): einige Fuﬂg‰nger	q1 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573
 (an der Panke - Mauerweg): einige Fuﬂg‰nger	q1 8097,14573 8234,14686
 (Boyenstr. - Mauerweg): einige Fuﬂg‰nger	q3 8005,14476 7996,14487
@@ -1771,7 +1772,7 @@ Am Landwehrkanal: Fuﬂg‰nger	q2 12897,9365 12889,9426 12905,9470 13109,9743 13225
 Knobelsdorffstr.: einige Moabiter Kissen	q0 3117,11852 2953,11830 2728,11805 2547,11788
 Wegenerstr.: ein Moabiter Kissen	q0 4495,9184 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0 4700,9179 4713,8997
-(Wittenauer Str. - Zabel-Kr¸ger-Damm): einige Fuﬂg‰nger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
+(Wittenauer Str. - Zabel-Kr¸ger-Damm): einige Fuﬂg‰nger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6218,22827 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fuﬂg‰nger	q1 15249,10564 15298,10682 15307,10701
 Lepsiusstr.: Bordsteine, Fuﬂg‰nger	q4 4913,6538 4894,6509
 (Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
@@ -2019,7 +2020,7 @@ Hermann-Schmidt-Weg: Fuﬂg‰nger	q3 -5325,15896 -5261,15900 -5061,15847
 Mauerweg: schmaler Weg	q1 -1953,24435 -1940,24464 -1655,24428 -972,24498 -822,24540
 (Wittenauer Str. - Klˆtzgraben): Bordstein, einige Fuﬂg‰nger	q2 6155,22394 6057,22513
 (Wittenauer Str. - Klˆtzgraben): einige Fuﬂg‰nger	q1 6057,22513 6024,22583
-(Finsterwalder Str. - Wittenauer Str.): einige Fuﬂg‰nger, eng	q2 6363,22419 6359,22452 6341,22496
+(Finsterwalder Str. - Wittenauer Str.): einige Fuﬂg‰nger, eng	q2 6363,22419 6365,22442 6341,22496
 (Am Lokdepot - Dudenstr.): Fuﬂg‰nger	q3 8383,8862 8376,8813 8370,8775
 Wangenheimsteg: Bordstein, einige Fuﬂg‰nger	q2 2585,9653 2628,9702
 Melli-Besse-Anlage: einige Fuﬂg‰nger	q1 2628,9702 2664,9744
@@ -2705,6 +2706,8 @@ Gruberzeile - Weinmeisterhornweg: einige Fuﬂg‰nger	q2 -5735,11793 -5584,11706 -5
 (Sp‰th'sche Baumschulen - Straﬂe 17): schmaler Fahrweg	q1 14537,5852 14669,5847
 Straﬂe am Flugplatz: zwei Bodenschwellen, umfahrbar	q0 17522,3653 17762,3243
 (Buckower Felder - Buckower Damm/Gerlinger Str.): flache Rampe	q2 12902,1321 12926,1330 12938,1348
+Alt-Heiligensee [Parkweg]: Fuﬂg‰nger, Radfahren verboten	q4 -2687,22501 -2730,22401 -2784,22317 -2917,22150 -2989,22021 -3023,21930
+(Sellerpark): schmal, einige Fuﬂg‰nger	q2 7866,14541 7862,14546 7845,14554 7753,14528
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

@@ -332,11 +332,13 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: next_check_id: PEKINGERPLATZ-2025
 #: note: laut Baustellenschild bis 01/2026
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-08-08 (mapillary) vvv
+#: last_checked: 2025-09-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 vvv
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782
 Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 7000,14832 7007,14911
+#: note: hier keine expliziten Gehweg-für-Radfahrer-frei-Schilder
+Torfstr.: Bauarbeiten: Abschnitt der Fahrbahn gesperrt	q3::inwork 6849,14831 6837,14848 6739,14969
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3299,7 +3301,7 @@ Park am Nordbahnhof: Fußgänger	q1 9175,14193 9144,14169 9081,14232 8868,14442
 Park am Nordbahnhof: Fußgänger	q1 9119,14255 9081,14232 8992,14176
 #: note ^^^
 # 
-(an der Panke - Mauerweg): einige Fußgänger	q1+ 7872,14510 7889,14519 7940,14447
+(an der Panke - Mauerweg): einige Fußgänger	q1+ 7872,14510 7884,14517 7940,14447
 (an der Panke - Mauerweg): einige Fußgänger	q1+ 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573
 #: note: hier Schulbereich
 (an der Panke - Mauerweg): einige Fußgänger	q1- 8097,14573 8234,14686
@@ -3828,7 +3830,7 @@ Brienzer Str.: einige Fußgänger	q2 7282,17318 7289,17277
 (Weg um den Schäfersee): einige Fußgänger	q1 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627
 #: next_check_id: SCHAEFERSEE-2022
 #: XXX nach den Bauarbeiten folgenden Eintrag wiederherstellen: (Weg um den Schäfersee): einige Fußgänger	q1 7466,17627 7415,17696 7320,17718
-#: last_checked: 2025-07-26
+#: last_checked: 2025-09-03
 # REMOVED --- #: next_check: 2025-05-31
 nördlicher Weg am Schäfersee: Umgestaltung, einige Engstellen	q2::inwork 7466,17627 7415,17696 7320,17718
 (Schäfersee - Baseler Str.): einige Fußgänger	q1 7215,17689 7185,17681 7166,17677 6897,17616
@@ -3873,7 +3875,7 @@ Knobelsdorffstr.: einige Moabiter Kissen	q0- 3117,11852 2953,11830 2728,11805 25
 Wegenerstr.: ein Moabiter Kissen	q0- 4495,9184 4619,9200
 #: XXX_prog: für Anhänger größere Behinderung (q1?)
 Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4713,8997
-(Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
+(Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6218,22827 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1+ 15249,10564 15298,10682 15307,10701
 #: XXX_prog BS 2x Bordsteine, ansonsten q3 für Fußgänger
 Lepsiusstr.: Bordsteine, Fußgänger	q4 4913,6538 4894,6509
@@ -4224,7 +4226,7 @@ Mauerweg: schmaler Weg	q1 -1953,24435 -1940,24464 -1655,24428 -972,24498 -822,24
 #: XXX_prog BS: an der Wittenauer Str., ansonsten q1 
 (Wittenauer Str. - Klötzgraben): Bordstein, einige Fußgänger	q2 6155,22394 6057,22513
 (Wittenauer Str. - Klötzgraben): einige Fußgänger	q1 6057,22513 6024,22583
-(Finsterwalder Str. - Wittenauer Str.): einige Fußgänger, eng	q2 6363,22419 6359,22452 6341,22496
+(Finsterwalder Str. - Wittenauer Str.): einige Fußgänger, eng	q2 6363,22419 6365,22442 6341,22496
 (Am Lokdepot - Dudenstr.): Fußgänger	q3 8383,8862 8376,8813 8370,8775
 #: XXX_prog BS: an der Wangenheimstr., ansonsten q1
 Wangenheimsteg: Bordstein, einige Fußgänger	q2 2585,9653 2628,9702
@@ -5395,6 +5397,12 @@ Gruberzeile - Weinmeisterhornweg: einige Fußgänger	q2 -5735,11793 -5584,11706 -5
 Straße am Flugplatz: zwei Bodenschwellen, umfahrbar	q0- 17522,3653 17762,3243
 # 
 (Buckower Felder - Buckower Damm/Gerlinger Str.): flache Rampe	q2 12902,1321 12926,1330 12938,1348
+# 
+#: historical_note: früher ging der Radweg explizit (oder implizitß) über diesen Weg, nun explizites Radfahrverboten
+#: note: Grünanlage, Radfahren per Zusatzschild verboten
+Alt-Heiligensee [Parkweg]: Fußgänger, Radfahren verboten	q4 -2687,22501 -2730,22401 -2784,22317 -2917,22150 -2989,22021 -3023,21930
+# 
+(Sellerpark): schmal, einige Fußgänger	q2+ 7866,14541 7862,14546 7845,14554 7753,14528
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

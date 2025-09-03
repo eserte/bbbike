@@ -4581,7 +4581,7 @@ EOF
        text  => 'Schulzendorfer Straße - Am Dachsbau (zwischen Ruppiner Chaussee und Blisenkrautstr.) in beiden Richtungen gesperrt, Baustelle bis 06.11.2006 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -919,22943 -1104,22898 -1246,22864 -1309,22848
+	2::inwork -925,22941 -1104,22898 -1246,22864 -1309,22848
 EOF
      },
      { from  => 1146701434, # 2006-05-04 02:10
@@ -4598,7 +4598,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002733',
        data  => <<EOF,
-	1::inwork 10341,13376 10385,13348 10527,13257
+	1::inwork 10341,13376 10391,13344 10527,13257
 EOF
      },
      { from  => 1147557600, # 2006-05-14 00:00
@@ -5093,7 +5093,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82301_COPY_1',
        data  => <<EOF,
-	2::inwork -919,22943 -774,22977 -728,22990 -700,22998 -656,23011
+	2::inwork -925,22941 -774,22977 -728,22990 -700,22998 -656,23011
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -7274,7 +7274,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004491',
        data  => <<EOF,
-	1::inwork 10341,13376 10385,13348 10527,13257
+	1::inwork 10341,13376 10391,13344 10527,13257
 EOF
      },
      { from  => 1169074800, # 2007-01-18 00:00
@@ -9369,7 +9369,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006015',
        data  => <<EOF,
-	2::temp 6434,22244 6484,22098 6480,22053 6473,21969 6436,21897 6373,21810 6320,21777 6269,21748 6093,21648 5926,21525
+	2::temp 6434,22244 6473,22130 6480,22053 6473,21969 6436,21897 6373,21810 6320,21777 6269,21748 6093,21648 5926,21525
 EOF
      },
      { from  => 1184018400, # 2007-07-10 00:00
@@ -13021,7 +13021,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009483',
        data  => <<EOF,
-	1::inwork 10341,13376 10385,13348 10527,13257
+	1::inwork 10341,13376 10391,13344 10527,13257
 EOF
      },
      { from  => 1221686258, # 2008-09-17 23:17
@@ -13714,7 +13714,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011184',
        data  => <<EOF,
-	q4::inwork; 10341,13376 10385,13348 10527,13257
+	q4::inwork; 10341,13376 10391,13344 10527,13257
 EOF
      },
      { from  => 1238347304, # 2009-03-29 19:21
@@ -22416,7 +22416,7 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-B,T,G)
-#: last_checked: 2025-08-29 (traffic)
+#: last_checked: 2025-09-03
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -40760,7 +40760,7 @@ EOF
        until => undef, # 1691089485, # undef, # XXX
 #      text  => 'Bhf. Wilhelmsruh - Hertzstr.: Weg kann wegen Bauarbeiten gesperrt sein (Stand Mitte Juni 2023: Absperrung mit Bauzäunen)',
 #      text  => 'Bhf. Wilhelmsruh - Hertzstr.: möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt, evtl. ist ein Umweg über das Stadler-Gelände möglich',
+       text  => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten offiziell gesperrt, Ende der Bauarbeiten unbekannt, evtl. ist ein Umweg über das Stadler-Gelände möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HEIDEKRAUTBAHN-2021
@@ -40768,7 +40768,7 @@ EOF
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-08-18 (mapillary)
+#: last_checked: 2025-09-03
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -40855,7 +40855,8 @@ EOF
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
-#: last_checked: 2025-06-06 (okas)
+#: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
+#: last_checked: 2025-09-03
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -40872,7 +40873,7 @@ EOF
 #: source_id: viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv) (bis 31.12.2025)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2025-06-01
+#: last_checked: 2025-09-03
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
@@ -42081,7 +42082,7 @@ EOF
 #: osm_watch: way id="23121446" version="36"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-07-30 vvv
+#: last_checked: 2025-09-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -42337,7 +42338,7 @@ EOF
 #: osm_watch: way id="279580369" version="9"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-07-26
+#: last_checked: 2025-09-03
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 	q3::inwork 4335,17642 4392,17777
@@ -43310,10 +43311,12 @@ EOF
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-08-27 (bahninfo-forum) vvv
+#: last_checked: 2025-09-03 vvv
 #: check_frequency: 30d vvv
-# REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
+# REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
+#: osm_watch: way id="755340907" version="12"
+#: osm_watch: note 4917519 1
 #: also_indoor: traffic (G,W)
 Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 # REMOVED --- #: next_check ^^^
@@ -43879,7 +43882,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 14
+#: osm_watch: note 4185183 15
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -44329,7 +44332,7 @@ EOF
 #: note: neue Havarie 2025
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
 #: source_id: viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025)
-#: note: bei rbb sogar bis 31.10.2026
+#: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T)
 #: last_checked: 2025-08-27 (bahninfo-forum)
 # REMOVED --- #: check_frequency: 14d
@@ -47413,12 +47416,13 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 EOF
      },
      { from  => 1741503600, # 2025-03-09 08:00
-       until => $isodate2epoch->("2025-09-07 17:00:00"), # 1748617200, # 2025-05-30 17:00
-       text  => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 07.09.2025',
+       until => $isodate2epoch->("2025-09-12 17:00:00"), # 1748617200, # 2025-05-30 17:00
+       text  => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 12.09.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
 #: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025)
+#: source_id: LS/222-W/25/089 (bis 12.09.2025)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 EOF
      },
@@ -48120,12 +48124,12 @@ EOF
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 3
+#: osm_watch: note 4734747 4
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-08-17 vvv
+#: last_checked: 2025-09-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -49041,8 +49045,9 @@ EOF
        text  => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende August 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,ex-H,T)
-#: last_checked: 2025-08-29 (traffic)
+#: also_indoor: traffic (G,re-H,T)
+#: add_fragezeichen: Wurden die Bauarbeiten beendet?
+#: last_checked: 2025-09-03 (traffic)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-08-29 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -49774,6 +49779,53 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic5lycfbu4ygtwangqqvtwdmgujojeqx4yzlmlyzox3qcirs66hxy@jpeg
 #: source_id: viz2021:13.34231,52.52413,02.09.2025,06:00 (bis 27.02.2026)
 	q4::inwork 6183,13083 6114,13095 5993,13064
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Almazeile: wegen Bauarbeiten komplett gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_18_1093_1148_online.pdf (Einziehungsabsicht von öffentlich gewidmetem Straßenland)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_08_0417_0480_online.pdf (Einziehung von Straßenland)
+#: osm_watch: way id="5046358" version="12"
+#: osm_watch: note 4945213 1
+#: XXX wie wird die Situation nach den Hoch+Tiefbauarbeiten aussehen?
+#: last_checked: 2025-09-03
+#: check_frequency: 120d
+	2::inwork -1616,18112 -1660,18114
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Arkonaplatz: Hochbauarbeiten, Fahrbahn zwischen Swinemünder Str. und Wolliner Str. gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (G,H[zu viel])
+#: last_checked: 2025-09-03
+#: check_frequency: 45d
+	q4::inwork 10189,14649 10273,14689
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Griebenowstr./Wolliner Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (H[zu wenig])
+#: last_checked: 2025-09-03
+#: check_frequency: 14d
+	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schulweg: Durchgang wegen Bauarbeiten versperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
+#: last_checked: 2025-09-03
+	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
     );

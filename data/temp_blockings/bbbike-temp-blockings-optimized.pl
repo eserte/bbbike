@@ -3268,7 +3268,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-B,T,G)
-#: last_checked: 2025-08-29 (traffic)
+#: last_checked: 2025-09-03
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -6474,14 +6474,14 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-08-18 (mapillary)
+#: last_checked: 2025-09-03
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 ',
          'from' => undef,
          'id' => 3827,
-         'text' => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt, evtl. ist ein Umweg über das Stadler-Gelände möglich',
+         'text' => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten offiziell gesperrt, Ende der Bauarbeiten unbekannt, evtl. ist ein Umweg über das Stadler-Gelände möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6511,7 +6511,8 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: osm_watch: note 4444225 2
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
-#: last_checked: 2025-06-06 (okas)
+#: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
+#: last_checked: 2025-09-03
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -6529,7 +6530,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: source_id: viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv) (bis 31.12.2025)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2025-06-01
+#: last_checked: 2025-09-03
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
@@ -6788,7 +6789,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: osm_watch: way id="23121446" version="36"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-07-30 vvv
+#: last_checked: 2025-09-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -6850,7 +6851,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: osm_watch: way id="279580369" version="9"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-07-26
+#: last_checked: 2025-09-03
 #: check_frequency: 120d
 #: next_check: 2026-10-01
 	q3::inwork 4335,17642 4392,17777
@@ -7008,10 +7009,12 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-08-27 (bahninfo-forum) vvv
+#: last_checked: 2025-09-03 vvv
 #: check_frequency: 30d vvv
-# REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10385,13348 10341,13376
+# REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
+#: osm_watch: way id="755340907" version="12"
+#: osm_watch: note 4917519 1
 #: also_indoor: traffic (G,W)
 Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 # REMOVED --- #: next_check ^^^
@@ -7145,7 +7148,7 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
 #: osm_watch: way id="43796416" version="22"
-#: osm_watch: note 4185183 14
+#: osm_watch: note 4185183 15
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
@@ -7248,7 +7251,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 #: note: neue Havarie 2025
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
 #: source_id: viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025)
-#: note: bei rbb sogar bis 31.10.2026
+#: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T)
 #: last_checked: 2025-08-27 (bahninfo-forum)
 # REMOVED --- #: check_frequency: 14d
@@ -8408,13 +8411,14 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
 #: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025)
+#: source_id: LS/222-W/25/089 (bis 12.09.2025)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 ',
          'from' => 1741503600,
          'id' => 4273,
-         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 07.09.2025',
+         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 12.09.2025',
          'type' => 'gesperrt',
-         'until' => 1757257200
+         'until' => 1757689200
        },
        undef,
        undef,
@@ -8732,12 +8736,12 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 3
+#: osm_watch: note 4734747 4
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-08-17 vvv
+#: last_checked: 2025-09-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -9050,8 +9054,9 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'until' => 1757692800
        },
        {
-         'data' => '#: also_indoor: traffic (G,ex-H,T)
-#: last_checked: 2025-08-29 (traffic)
+         'data' => '#: also_indoor: traffic (G,re-H,T)
+#: add_fragezeichen: Wurden die Bauarbeiten beendet?
+#: last_checked: 2025-09-03 (traffic)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-08-29 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -9324,18 +9329,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'until' => 1760713200
        },
        undef,
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025)
-	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
-',
-         'from' => 1753596000,
-         'id' => 4403,
-         'text' => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 03.09.2025',
-         'type' => 'gesperrt',
-         'until' => 1756911600
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.16143,52.42614,24.07.2025,07:00 (bis 06.11.2025)
@@ -9664,6 +9658,57 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
          'text' => 'Essener Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Stromstr. und Krefelder Str., bis zum 27.02.2026',
          'type' => 'handicap',
          'until' => 1772233200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_18_1093_1148_online.pdf (Einziehungsabsicht von öffentlich gewidmetem Straßenland)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_08_0417_0480_online.pdf (Einziehung von Straßenland)
+#: osm_watch: way id="5046358" version="12"
+#: osm_watch: note 4945213 1
+#: XXX wie wird die Situation nach den Hoch+Tiefbauarbeiten aussehen?
+#: last_checked: 2025-09-03
+#: check_frequency: 120d
+	2::inwork -1616,18112 -1660,18114
+',
+         'from' => undef,
+         'id' => 4433,
+         'text' => 'Almazeile: wegen Bauarbeiten komplett gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (G,H[zu viel])
+#: last_checked: 2025-09-03
+#: check_frequency: 45d
+	q4::inwork 10189,14649 10273,14689
+',
+         'from' => undef,
+         'id' => 4434,
+         'text' => 'Arkonaplatz: Hochbauarbeiten, Fahrbahn zwischen Swinemünder Str. und Wolliner Str. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (H[zu wenig])
+#: last_checked: 2025-09-03
+#: check_frequency: 14d
+	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
+',
+         'from' => undef,
+         'id' => 4435,
+         'text' => 'Griebenowstr./Wolliner Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
+#: last_checked: 2025-09-03
+	2::inwork 12600,12860 12551,12785 12483,12682
+',
+         'from' => undef,
+         'id' => 4436,
+         'text' => 'Schulweg: Durchgang wegen Bauarbeiten versperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
