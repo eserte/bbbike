@@ -17401,23 +17401,24 @@ EOF
 	2::inwork 48237,70892 48162,70928 48093,70968
 EOF
      },
-     { from  => 1258066800, # 2009-11-13 00:00
-       until => 1258326000, # 2009-11-16 00:00
-       text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 14.11.2009-15.11.2009 ',
-       ## nur für Kfz-Verkehr, siehe unten
-       #do {
-       #	    my $ret = $next_interval->([
-       #	        ["2024-10-07", "2024-10-10"],
-       #	        ["2024-10-28", "2024-11-01"],
-       #	        ["2024-11-25", "2024-12-13"],
-       #	        ["2025-01-17", "2025-01-24"],
-       #	        ["2025-02-22", "2025-02-28"],
-       #	        ["2025-05-14", "2025-06-13"],
-       #	        ["2025-07-04", "2025-07-06"],
-       #	    ]);
-       #	    my $text = "Kerkow - Görlsdorf: Sperrung des Bahnübergangs, nächster Termin " . $epoch2dedate->($ret->{from}) . " bis " . $epoch2dedate->($ret->{until});
-       #	    (from => $ret->{from}-7*86400, prewarn_days => 7, until => $ret->{until}, text => $text);
-       #},
+     { #from  => 1258066800, # 2009-11-13 00:00
+       #until => 1258326000, # 2009-11-16 00:00
+       #text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 14.11.2009-15.11.2009 ',
+       # nur für Kfz-Verkehr, siehe unten; für die Sperrung im September 2025 gibt es keine Aussage dazu
+       do {
+	    my $ret = $next_interval->([
+       #	["2024-10-07", "2024-10-10"],
+       #	["2024-10-28", "2024-11-01"],
+       #	["2024-11-25", "2024-12-13"],
+       #	["2025-01-17", "2025-01-24"],
+       #	["2025-02-22", "2025-02-28"],
+       #	["2025-05-14", "2025-06-13"],
+       #	["2025-07-04", "2025-07-06"],
+		["2025-09-08", "2025-09-19"],
+	    ]);
+	    my $text = "Kerkow - Görlsdorf: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, nächster Termin " . $epoch2dedate->($ret->{from}) . " bis " . $epoch2dedate->($ret->{until});
+	    (from => $ret->{from}-7*86400, prewarn_days => 7, until => $ret->{until}, text => $text);
+       },
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin?date=20241009
@@ -23042,12 +23043,16 @@ EOF
 	q3::inwork 6805,23554 6801,23474 6764,23396
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-04 00:00:00"), # 1377665400, # 2013-08-28 06:50
-       until => $isodate2epoch->("2024-09-13 16:00:00"), # 1378407600, # 2013-09-05 21:00
+     { from  => $isodate2epoch->("2025-09-03 00:00:00"), # $isodate2epoch->("2024-09-04 00:00:00"), # 1377665400, # 2013-08-28 06:50
+       until => $isodate2epoch->("2025-09-12 18:00:00"), # $isodate2epoch->("2024-09-13 16:00:00"), # 1378407600, # 2013-09-05 21:00
+       periodic => 1,
+       recurrences => [['yearly', days => 4, months => 9]],
 #      text  => 'Mauerstr. (Mitte): Veranstaltung, Fahrbahn zwischen Taubenstr. und Jägerstr. gesperrt (ggfs. auf Gehweg ausweichen), Einbiegen in die Jägerstr. nicht möglich, bis zum 05.09.2013',
-       text  => 'Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 05.09.2024 06:00 Uhr bis 13.09.2024 16:00 Uhr',
+#      text  => 'Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 05.09.2024 06:00 Uhr bis 13.09.2024 16:00 Uhr',
+       text  => 'Glinkastr./Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 04.09.2025 06:00 bis 12.09.2025 18:00',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: LANDHAMBURGFEST-RECURRING
 #: source_id: IM_020213 (alt, von 2013) (inaktiv)
 #	q2::temp 9108,11961 9138,11872
 #	3::temp 9195,11972 9108,11961 9076,12054
@@ -23057,9 +23062,14 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240904 (jährliches Fest der Landesvertretung Hamburg)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831534468970246416
 #: source_id: viz2021:13.38476,52.51445,05.09.2024,06:00 (bis 13.09.2024) (inaktiv)
+#: source_id: viz2021:13.38651,52.51281,04.09.2025,06:00 (bis 12.09.2025)
+#: source_id: viz2021:13.38508,52.5136,04.09.2025,06:00 (bis 12.09.2025)
+#: source_id: viz2021:13.38476,52.51446,04.09.2025,06:00 (bis 12.09.2025)
 Mauerstr.	2::temp 9076,12054 9108,11961 9138,11872
 Jägerstr.	2::temp 9108,11961 9195,11972
 Taubenstr.	2::temp 9138,11872 9207,11880
+#: note: unklar, ob die Glinkastr. gesperrt ist
+Glinkastr.	2::temp 9195,11972 9207,11880 9218,11793
 EOF
      },
      { from  => 1377986400, # 2013-09-01 00:00
@@ -39521,7 +39531,7 @@ EOF
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: osm_watch: way id="37861386" version="28"
+#: osm_watch: way id="37861386" version="29"
 #: osm_watch: way id="1231148375" version="6"
 #: priority: #B
 #: last_checked: 2025-08-26 (osm)
@@ -40308,15 +40318,22 @@ Richtung Norden	q2::inwork; 14076,11057 14096,11134 14134,11272
 EOF
      },
      { from  => undef, # 
-       until => 1694796882, # XXX
-       text  => 'Virchowstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       until => undef, # 1694796882, # XXX
+#      text  => 'Virchowstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Margarete-Sommer-Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: note: alte Sperrung von 2023
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1327771.php (zu neuen, teilweise provisorischen Gehwegen an der Werneuchener Wiese; Erwähnung von Bauarbeiten der Wasserbetriebe)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/provisorischer-parkweg_a382807
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
-# REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24
-	q3::inwork 12707,13706 12640,13814
+# REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
+#: note: neue Sperrung von 2025
+#: also_indoor: traffic (T)
+#: XXX Die Sperrung ragt noch in die Virchowstr. rein, evtl. sind Radfahrer doch etwas betroffen
+#: last_checked: 2025-09-04
+#: check_frequency: 14d
+Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 EOF
      },
      { from  => undef, # 
@@ -44618,9 +44635,10 @@ EOF
 	q4::inwork 20717,3310 20808,3374
 EOF
      },
-     { from  => 1717394400, # 2024-06-03 08:00
-       until => 1717783200, # 2024-06-07 20:00
-       text  => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mögliche Sperrung, vom 04.06.2024 08:00 bis 07.06.2024 20:00',
+     { from  => $isodate2epoch->("2025-09-03 00:00:00"), # 1717394400, # 2024-06-03 08:00
+       until => $isodate2epoch->("2025-09-14 00:00:00"), # 1717783200, # 2024-06-07 20:00
+#      text  => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mögliche Sperrung, vom 04.06.2024 08:00 bis 07.06.2024 20:00',
+       text  => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mögliche Sperrung, vom 04.09.2025 09:00 bis 14.09.2025 20:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Sperrung der südlichen Fahrbahn UdL erwähnt; bis 07.06.2024) (inaktiv)
@@ -44862,7 +44880,7 @@ EOF
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-08-26 vvv
+#: last_checked: 2025-09-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -46999,7 +47017,8 @@ EOF
      },
      { from  => 1738450800, # 2025-02-02 00:00
        until => 1764543600, # 2025-12-01 00:00
-       text  => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung der Fahrbahn, vom 03.02.2025 bis voraussichtlich 30.11.2025',
+#      text  => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung der Fahrbahn, vom 03.02.2025 bis voraussichtlich 30.11.2025',
+       text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich 30.11.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
@@ -47010,11 +47029,13 @@ EOF
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
 #: source_id: viz2021:13.46101,52.5454,05.02.2025,07:00 (bis 30.11.2025)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-#: last_checked: 2025-04-30 vvv
+#: last_checked: 2025-09-04 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
-	q3::inwork; 14195,15604 14133,15773
-	q2::inwork; 14133,15773 14195,15604
+#: next_check: 2025-10-21 (Halteverbotsschilder) vvv
+# REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
+# REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
+# REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
+Chopinstr.	q4::inwork 14195,15604 14321,15636
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -49411,15 +49432,16 @@ EOF
 EOF
      },
      { from  => 1753596000, # 2025-07-27 08:00
-       until => $isodate2epoch->("2025-09-03 17:00:00"), # 1756306800, # 2025-08-27 17:00
+       until => $isodate2epoch->("2025-09-08 17:00:00"), # 1756306800, # 2025-08-27 17:00
 #      text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 27.08.2025',
-       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 03.09.2025',
+       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 08.09.2025',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025)
-	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
+#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025)
+# REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
+	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
 EOF
      },
      { from  => 1753221600, # 2025-07-23 00:00
@@ -49535,25 +49557,28 @@ EOF
 EOF
      },
      { from  => 1754456400, # 2025-08-06 07:00
-       until => 1757023140, # 2025-09-04 23:59
+       until => 1757008795, # 1757023140, # 2025-09-04 23:59
        text  => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., ein kurzes Stück der Fahrbahn ist gesperrt, vom 07.08.2025 bis 04.09.2025',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025)
+#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
 #: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
 	q3::inwork 10066,10071 9837,10117
 EOF
      },
      { from  => 1755406800, # 2025-08-17 07:00
        until => 1772298000, # 2026-02-28 18:00
-       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
+       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, außerdem Baustelleneinrichtungsfläche in der Kolmarer Str., evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 (östlich Husemannstr., bis 28.02.2026)
 #: source_id: viz2021:13.4151,52.53846,18.08.2025,07:00 (westlich Husemannstr., bis 28.02.2026)
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5Xo8NcrLYvz2MxS7AThUxo
+#: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig)
 #: also_indoor: traffic (T)
-	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
+#: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
+Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
+Kolmarer Str.	q4::inwork 11354,14187 11418,14290
 EOF
      },
      { from  => 1755627458,
@@ -49766,7 +49791,7 @@ EOF
        text  => 'unter der Baumgartenbrücke: Sperrung, evtl. sind auch Radfahrer betroffen, 02.09.2025 08:00 Uhr bis 04.09.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LS/223-P/25/116 (bis 04.09.2025)
+#: source_id: LS/223-P/25/116 (bis 04.09.2025) (inaktiv)
 	2::inwork -19197,-5745 -19225,-5729
 EOF
      },

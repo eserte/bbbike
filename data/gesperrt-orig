@@ -1031,7 +1031,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21623,5661 21605,5687
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
 Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767
 # REMOVED (mittlerweile keine Benutzungspflicht mehr, dafür Tempo 10) --- #: note: wobei hier die Sperrung der Fahrbahn für Radfahrer nicht so eindeutig ist --- Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
-#: osm_watch: way id="25216398" version="36"
+#: osm_watch: way id="25216398" version="37"
 # REMOVED (bis zur Hilfsbrücke offen) --- Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21651,5730 21618,5699
 Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21618,5699 21605,5687
 # REMOVED (offen) --- Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21581,5670 21507,5620
@@ -4262,7 +4262,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-08-21
+#: last_checked: 2025-09-04
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4347,8 +4347,8 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
 # REMOVED (offiziell offen) --- #: osm_watch: way id="1199463690" version="2" --- Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
-#: osm_watch: way id="693633081" version="11"
-#: osm_watch: way id="693633082" version="7"
+#: osm_watch: way id="693633081" version="12"
+#: osm_watch: way id="693633082" version="8"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 # REMOVED --- #: osm_watch: way id="1199463688" version="3"
 #: osm_watch: way id="1199465845" version="5"
@@ -5200,7 +5200,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://be.beteiligung.diplanung.de/verfahren/molkenmarkt/public/detail
 #: by: https://entwicklungsstadt.de/altstadt-oder-zukunftsquartier-meinungen-zum-molkenmarkt-gehen-auseinander/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-08-26
+#: last_checked: 2025-09-04
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5208,7 +5208,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-08-29
+#: last_checked: 2025-09-04
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5238,40 +5238,6 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # REMOVED --- #: next_check: 2024-08-05
 #: next_check: 2025-12-31
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
-# 
-#: next_check_id: WUHLETALBRUECKE-2019
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
-#: by: https://www.berliner-woche.de/marzahn/c-verkehr/vollsperrung-der-wuhletalbruecke_a216145 (bis 2023)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815795.php
-#: by: https://www.berliner-woche.de/marzahn/c-verkehr/erneuerung-der-wuhletalbruecke_a262480 (Abriss und Neubau ab 2022)
-#: by: https://abendblatt-berlin.de/2020/04/25/berlin-marzahn-bazubeginn-fuer-wuhletalbruecke-erst-ab-2022/
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9099 (Empfehlung für vorzeitigen Abriss)
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/abriss-der-wuhletalbruecke-startet-ende-2021_a299255 (Abschluss der Baumaßnahme 2026/2027)
-#: by: https://berliner-abendblatt.de/2022/01/03/abbruch-der-wuhletalbruecke-startet/ (bis 2025)
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/abriss-der-wuhletalbruecke-erfolgt-im-fruehjahr-2022_a332741
-#: by: https://berliner-abendblatt.de/2022/02/21/moltkebruecke/ (bis Mitte 2025)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1181845.php
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/der-abriss-der-wuhletalbruecke-hat-begonnen_a338111
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11321 (Antrag)
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (voraussichtliche Bauzeit: 2022 bis 2025) (bis Ende des II. Quartals 2025) (kann vermutlich nicht gehalten werden) (mittlerweile bis III. Quartal 2025)
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (alternative URL)
-#: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-sanierung-instandsetzung-autobahn-brckenbauwerk-wuhletalbrcke-ortsteil-marzahn-berlin-deutschland-656406.html
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/wuhletalbruecke/ (Verkehrsfreigabe am 4.9.2025)
-#: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article409838993/neue-wuhletalbruecke-wird-fuer-den-verkehr-freigegeben.html
-#: by: https://www.tagesspiegel.de/berlin/bezirke/marzahn-hellersdorf/ab-donnerstag-rollt-der-verkehr-wieder-neubau-der-wuhletalbrucke-in-berlin-ist-fertig-14244794.html
-#: source_id: viz2021:13.55807,52.56199,29.12.2022,09:42 (bis 30.06.2024) (später am Tag wieder entfernt -> inaktiv)
-#: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (bis 31.12.2025) (inaktiv)
-#: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022) (bis 30.6.2024) (bis 31.3.2025) (inaktiv)
-#: source_id: viz2021:13.55807,52.56199,27.06.2024,15:13 (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.55807,52.56199, (bis 31.12.2025) (bis 04.09.2025)
-#: XXX Wann wird die Brücke wieder eröffnet?
-#: last_checked: 2025-08-12 (mapillary)
-#: check_frequency: 360d
-#: next_check: 2025-09-04 (SenMVKU website, Tsp, VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: 20190603-20250630
-# REMOVED --- #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
-#: valid: 20190603-20250904
-Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 # 
 # REMOVED (Bauzäune sind nur stellenweise vorhanden (z.B. Seidenschwanzstr., westliche Einfahrt) und können leicht umfahren werden --- siehe mapillary) --- #: next_check_id: SEIDENSCHWANZSTR-2019 --- #: last_checked: 2020-04-26 vvv --- #: check_frequency: 360d vvv --- #: next_check: 2021-01-09 vvv --- #: XXX wann werden die Straßen eröffnet? vvv --- #: XXX laut osm (via StreetComplete) nicht mehr highway=construction vvv --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf --- #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen) --- #: by; https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-soll-an-der-bisamstrasse-den-bau-von-mehrfamilienhaeusern-pruefen_a228628 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-plant-mehrgeschosser-im-siedlungsgebiet-zwischen-bisamstrasse-und-landesgrenze_a278290 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.959124.php --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/die-degewo-will-ab-2023-an-der-stadtgrenze-200-mietwohnungen-bauen_a300659 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/buergerinitiative-lehnt-mietwohnungsbau-ab_a301920 --- #: osm_watch: way id="515337708" version="8" --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801 --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708 --- #: osm_watch: way id="515337706" version="6" --- Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854 --- #: osm_watch: way id="515337707" version="6" --- Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 26379,12909 --- #: osm_watch: way id="515337709" version="6" --- Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959 --- #: XXX ^^^ --- #: XXX ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX neue Straßen/Wege im Zuge des Bebauungsplans XV-29b, Ortsteil Altglienicke vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/beteiligungxv-29bve.html vvv --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/st__dtebauliche_untersuchung.pdf?start&ts=1381739816&file=st__dtebauliche_untersuchung.pdf vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.509968.php --- #: by: www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-29-b-ve-504844.php --- #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1_entwurf-vorhabenbezogener-b-plan-xv-29-b-ve.pdf --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5601 (anscheinend gibt es Bauarbeiten) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5849 (Straßennamen) --- #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/ba-beschluesse/wp-viii/151-17-strassenbenennung-privatstr-ortolfstrasse-50.pdf --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_09_1157_1272_online.pdf (Straßenbenennung) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_21_2611_2726_online.pdf (Grundstücksnummerierungen)

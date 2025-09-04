@@ -2408,7 +2408,18 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin?date=20241009
+#: by: https://www.angermuende.de/sperrungen-bahnuebergang/ (Sperrung 2024/2025: Bahnübergang bleibt für Radfahrer passierbar)
+	2::inwork 48237,70892 48162,70928 48093,70968
+',
+         'from' => 1756677600,
+         'id' => 1977,
+         'prewarn_days' => 7,
+         'text' => 'Kerkow - Görlsdorf: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, nächster Termin 8.9.2025 bis 19.9.2025',
+         'type' => 'gesperrt',
+         'until' => 1758319199
+       },
        undef,
        undef,
        undef,
@@ -3420,7 +3431,42 @@ Kleistpark	2::night 7310,9622 7307,9528
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: LANDHAMBURGFEST-RECURRING
+#: source_id: IM_020213 (alt, von 2013) (inaktiv)
+#	q2::temp 9108,11961 9138,11872
+#	3::temp 9195,11972 9108,11961 9076,12054
+#	3::temp 9076,12054 9108,11961 9195,11972
+#	3::temp 9195,11972 9108,11961 9138,11872
+#	3::temp 9138,11872 9108,11961 9195,11972
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240904 (jährliches Fest der Landesvertretung Hamburg)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1831534468970246416
+#: source_id: viz2021:13.38476,52.51445,05.09.2024,06:00 (bis 13.09.2024) (inaktiv)
+#: source_id: viz2021:13.38651,52.51281,04.09.2025,06:00 (bis 12.09.2025)
+#: source_id: viz2021:13.38508,52.5136,04.09.2025,06:00 (bis 12.09.2025)
+#: source_id: viz2021:13.38476,52.51446,04.09.2025,06:00 (bis 12.09.2025)
+Mauerstr.	2::temp 9076,12054 9108,11961 9138,11872
+Jägerstr.	2::temp 9108,11961 9195,11972
+Taubenstr.	2::temp 9138,11872 9207,11880
+#: note: unklar, ob die Glinkastr. gesperrt ist
+Glinkastr.	2::temp 9195,11972 9207,11880 9218,11793
+',
+         'from' => 1756850400,
+         'id' => 2481,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Glinkastr./Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 04.09.2025 06:00 bis 12.09.2025 18:00',
+         'type' => 'gesperrt',
+         'until' => 1757692800
+       },
        undef,
        undef,
        undef,
@@ -6227,7 +6273,7 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: osm_watch: way id="37861386" version="28"
+#: osm_watch: way id="37861386" version="29"
 #: osm_watch: way id="1231148375" version="6"
 #: priority: #B
 #: last_checked: 2025-08-26 (osm)
@@ -6368,7 +6414,25 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: alte Sperrung von 2023
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1327771.php (zu neuen, teilweise provisorischen Gehwegen an der Werneuchener Wiese; Erwähnung von Bauarbeiten der Wasserbetriebe)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/provisorischer-parkweg_a382807
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
+# REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
+#: note: neue Sperrung von 2025
+#: also_indoor: traffic (T)
+#: XXX Die Sperrung ragt noch in die Virchowstr. rein, evtl. sind Radfahrer doch etwas betroffen
+#: last_checked: 2025-09-04
+#: check_frequency: 14d
+Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
+',
+         'from' => undef,
+         'id' => 3792,
+         'text' => 'Margarete-Sommer-Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -7305,7 +7369,21 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Sperrung der südlichen Fahrbahn UdL erwähnt; bis 07.06.2024) (inaktiv)
+#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erwähnt; bis 07.06.2024) (inaktiv)
+#: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
+#: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zusätzlich einen 1x70m oder 2x70m langen Umweg nehmen
+Schinkelplatz	2::temp 9990,12404 9996,12372
+Niederlagstr.	q4::temp 9934,12420 9943,12364
+An der Kommandantur	q4::temp 9996,12372 9943,12364
+',
+         'from' => 1756850400,
+         'id' => 4079,
+         'text' => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mögliche Sperrung, vom 04.09.2025 09:00 bis 14.09.2025 20:00',
+         'type' => 'gesperrt',
+         'until' => 1757800800
+       },
        undef,
        {
          'data' => '#: next_check_id: VIRCHOW-2023
@@ -7389,7 +7467,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-08-26 vvv
+#: last_checked: 2025-09-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8163,18 +8241,20 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
 #: source_id: viz2021:13.46101,52.5454,05.02.2025,07:00 (bis 30.11.2025)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-#: last_checked: 2025-04-30 vvv
+#: last_checked: 2025-09-04 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
-	q3::inwork; 14195,15604 14133,15773
-	q2::inwork; 14133,15773 14195,15604
+#: next_check: 2025-10-21 (Halteverbotsschilder) vvv
+# REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
+# REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
+# REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
+Chopinstr.	q4::inwork 14195,15604 14321,15636
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1738450800,
          'id' => 4245,
-         'text' => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung der Fahrbahn, vom 03.02.2025 bis voraussichtlich 30.11.2025',
+         'text' => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich 30.11.2025',
          'type' => 'handicap',
          'until' => 1764543600
        },
@@ -9329,7 +9409,19 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'until' => 1760713200
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
+#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025)
+# REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
+	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
+',
+         'from' => 1753596000,
+         'id' => 4403,
+         'text' => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 08.09.2025',
+         'type' => 'gesperrt',
+         'until' => 1757343600
+       },
        undef,
        {
          'data' => '#: source_id: viz2021:13.16143,52.42614,24.07.2025,07:00 (bis 06.11.2025)
@@ -9440,27 +9532,20 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'type' => 'gesperrt',
          'until' => 1767222000
        },
-       {
-         'data' => '#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025)
-#: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
-	q3::inwork 10066,10071 9837,10117
-',
-         'from' => 1754456400,
-         'id' => 4412,
-         'text' => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., ein kurzes Stück der Fahrbahn ist gesperrt, vom 07.08.2025 bis 04.09.2025',
-         'type' => 'handicap',
-         'until' => 1757023140
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 (östlich Husemannstr., bis 28.02.2026)
 #: source_id: viz2021:13.4151,52.53846,18.08.2025,07:00 (westlich Husemannstr., bis 28.02.2026)
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5Xo8NcrLYvz2MxS7AThUxo
+#: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig)
 #: also_indoor: traffic (T)
-	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
+#: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
+Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
+Kolmarer Str.	q4::inwork 11354,14187 11418,14290
 ',
          'from' => 1755406800,
          'id' => 4413,
-         'text' => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
+         'text' => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, außerdem Baustelleneinrichtungsfläche in der Kolmarer Str., evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
          'type' => 'handicap',
          'until' => 1772298000
        },
@@ -9637,16 +9722,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
          'type' => 'handicap',
          'until' => 1769813999
        },
-       {
-         'data' => '#: source_id: LS/223-P/25/116 (bis 04.09.2025)
-	2::inwork -19197,-5745 -19225,-5729
-',
-         'from' => 1756706400,
-         'id' => 4431,
-         'text' => 'unter der Baumgartenbrücke: Sperrung, evtl. sind auch Radfahrer betroffen, 02.09.2025 08:00 Uhr bis 04.09.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1756998000
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxtebnjz3s2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic5lycfbu4ygtwangqqvtwdmgujojeqx4yzlmlyzox3qcirs66hxy@jpeg

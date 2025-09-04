@@ -999,7 +999,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-04
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1327,6 +1327,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/elsenbruecke/vzp_bv-elsenbruecke_bereich_treptow_vollsperrung-wartung.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1589552.php (Sperrung am 16/17.8.2025, nur Autoverkehr)
 #: by: https://www.tagesspiegel.de/berlin/autos-werden-umgeleitet-diese-berliner-brucke-ist-am-wochenende-fur-den-verkehr-gesperrt-14172230.html
+#: by: https://www.tagesspiegel.de/interaktiv/erste-datenanalyse-zur-a100-wie-schlimm-ist-der-stau-an-berlins-neuer-autobahn-abfahrt-wirklich-14266448.html (Eröffnung des Ersatzneubaus im Dez. 2025)
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -1356,7 +1357,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: priority: #A
 #: last_checked: 2025-08-31 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-12-31 (Tsp zum Ersatzneubau) vvv
+# REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
 #: next_check ^^^
@@ -2236,7 +2238,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-07-22 vvv
+#: last_checked: 2025-09-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -3492,7 +3494,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="13"
 #: osm_watch: way id="420112509" version="16"
 #: osm_watch: way id="966685279" version="8"
-#: last_checked: 2025-08-17 vvv
+#: last_checked: 2025-09-04 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
