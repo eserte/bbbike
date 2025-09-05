@@ -126,7 +126,7 @@ M¸ncheberger Str.: schmaler Gehweg, Fuﬂg‰nger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-08-31
+#: last_checked: 2025-09-05
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bˆdikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -292,7 +292,7 @@ G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbr¸cke"; kˆnnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-07-11
+#: last_checked: 2025-09-05
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -912,13 +912,16 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 H¸ttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 # 
-#: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026) (inaktiv)
-#: source_id: viz2021:13.42886,52.48436,28.04.2025,07:00 (bis 28.02.2026)
-#: last_checked: 2025-06-20
-#: check_frequency: 120d
-#: next_check: 2026-02-28
-#: valid: -20260228
-Reuterstr.: Bauarbeiten an der Karl-Marx-Str., einige Meter der Fahrbahn sind gesperrt	q1-::inwork 12150,8764 12165,8566
+# REMOVED (nur noch Fahrstreifenreduzierung) --- #: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.42886,52.48436,28.04.2025,07:00 (bis 28.02.2026)
+# REMOVED --- #: also_indoor: traffic (none)
+# REMOVED --- #: XXX Besteht die Baustelle weiterhin?
+# REMOVED --- #: last_checked: 2025-07-18 (mapillary)
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-09-05
+# REMOVED --- # REMOVED --- #: next_check: 2026-02-28
+# REMOVED --- #: valid: -20260228
+# REMOVED --- Reuterstr.: Bauarbeiten an der Karl-Marx-Str., einige Meter der Fahrbahn sind gesperrt	q1-::inwork 12150,8764 12165,8566
 # 
 # REMOVED --- #: osm_watch: way id="1009116415" version="9"
 # REMOVED --- # REMOVED --- #: osm_watch: way id="1317391078" version="2"
@@ -2111,7 +2114,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3094,22216 3134,22153
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
 (Tegeler Flieﬂ - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3740,22520 3758,22511 3772,22482
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4222,22854 4166,22752 4117,22715 4101,22727 4022,22691
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5621,23966 5409,23816 5350,23717 5312,23653 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5621,23966 5409,23816 5350,23717 5310,23647 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4596,22955 4543,22964 4459,22931 4407,22897 4332,22916 4309,22922 4158,22896
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng, Radfahren nicht erlaubt	q3 5867,24056 5818,24058 5690,24031 5647,24006 5628,23977 5621,23966
 Naturlehrpfad: Fuﬂg‰nger	q1 5676,23971 5621,23966 5545,23993

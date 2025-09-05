@@ -1048,6 +1048,7 @@ EOF
 #: by: https://ag-rudow.berlin/veranstaltung/rudower-septembermeile-2/
 #: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
 #: source_id: viz2021:13.49573,52.4177,06.09.2024,19:00 (bis 08.09.2024) (inaktiv)
+#: source_id: viz2021:13.49469,52.42125,05.09.2025,19:00 (bis 07.09.2025)
 Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 Krokusstr.	2::temp 16610,1715 16767,1831
 EOF
@@ -3901,7 +3902,7 @@ EOF
        text  => 'Berlin-Lübars: Am Freibad in beiden Richtungen Wasser auf der Fahrbahn, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 5727,23485 5312,23653
+	2 5685,23507 5398,23619 5310,23647
 EOF
      },
      { from  => undef, # 
@@ -33507,10 +33508,10 @@ EOF
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="14"
+#: osm_watch: way id="362719487" version="15"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-08-19 (osm)
+#: last_checked: 2025-09-05 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -36362,6 +36363,8 @@ EOF
 #: by: https://entwicklungsstadt.de/neuer-veranstaltungsort-an-der-karl-marx-strasse-smartvillage-startet-im-kalle-neukoelln/
 #: by: https://entwicklungsstadt.de/neues-startup-zentrum-delta-campus-eroeffnet-im-kalle-neukoelln/
 #: by: https://entwicklungsstadt.de/delta-campus-in-neukoelln-eroeffnet-co-working-im-ehemaligen-parkhaus/
+#: by: https://entwicklungsstadt.de/kai-wegner-besucht-zur-neueroeffnung-das-kalle-neukoelln/
+#: by: https://www.morgenpost.de/bezirke/neukoelln/article409917943/kalle-neukoelln-ist-fertig-da-schwingt-das-berlinerische-mit.html
 #: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="8"
 #: osm_watch: way id="970452276" version="8"
@@ -39944,15 +39947,16 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/mommsenstrasse-in-berlin-bei-jahrelangen-arbeiten-am-fernwarmenetz-ist-kein-ende-in-sicht-14131187.html ("keine konkreten Termine")
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
-#: osm_watch: note 3834145 6
-#: osm_watch: note 3834144 4
-#: also_indoor: traffic (B,T,ex-H,ex-G,ex-W,ex-A)
+#: osm_watch: note 3834145 7
+#: osm_watch: note 3834144 5
+#: also_indoor: traffic (B,T,ex-H,re-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
+#: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
 #: last_checked: 2025-08-14 (mapillary)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
-# REMOVED --- #: next_check: 2024-05-24
+#: next_check: 2025-09-04 (laut osm note offen)
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 EOF
@@ -40405,19 +40409,20 @@ EOF
 EOF
      },
      { from  => 1683010800, # 2023-05-02 09:00
-       until => 1757084400, # 2025-09-05 17:00
+       until => $isodate2epoch->("2025-12-31 23:59:59"), # 1757084400, # 2025-09-05 17:00
 #      text  => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, evtl. dürfen Radfahrer den Gehweg benutzen, vom 03.05.2023 09:00 bis 05.09.2025 17:00',
-       text  => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, vom 03.05.2023 09:00 bis 05.09.2025 17:00',
+       text  => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, vom 03.05.2023 09:00 bis 31.12.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025) (inaktiv)
+#: source_id: viz2021:13.36722,52.52237, (bis 31.12.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
 #: last_checked: 2025-07-03
 #: check_frequency: 180d
-#: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
 EOF
      },
@@ -47395,13 +47400,13 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,re-H)
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-05 (traffic)
 #: check_frequency: 10d
-#: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
+#: next_check: 2025-10-02 (Halteverbotsschilder)
+# REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
 # REMOVED (nach hinten gewandert) ---	2::inwork 17587,9655 17668,9632 17777,9649
-#: note: Halteverbotsschilder bis 5.9.2025
-	2::inwork 17777,9649 17920,9698
+# REMOVED (nach hinten gewandert) --- #: note: Halteverbotsschilder bis 5.9.2025 ---	2::inwork 17777,9649 17920,9698
 #: note: Halteverbotsschilder 2.9.2025 bis 2.10.2025
 	2::inwork 17920,9698 18066,9770
 EOF
@@ -48668,7 +48673,7 @@ EOF
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
-#: last_checked: 2025-08-18 vvv
+#: last_checked: 2025-09-05 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -49379,7 +49384,7 @@ EOF
 #: next_check_id: HEINRICHHEINE-2025
 #: source_id: adac:971528950 (neue ID -> inaktiv)
 #: source_id[inactive]: bvg2024:n8#HIM_FREETEXT_293620
-#: source_id: viz2021:13.41414,52.50801, (bis 22.08.2025) (bis 01.09.2025) (bis 05.09.2025)
+#: source_id: viz2021:13.41414,52.50801, (bis 22.08.2025) (bis 01.09.2025) (bis 05.09.2025) (inaktiv)
 #: also_indoor: traffic (T,G,A)
 #: note: gesperrter Abschnitt etwa 50m, explizite Radfahren-verboten-Schilder; mittlerweile Radfahrer frei, Richtung Süden verschwenkte Führung auf der Fahrbahn
 # REMOVED --- #: last_checked: 2025-08-15 (mapillary) --- #: next_check: 2025-08-22
@@ -49470,7 +49475,7 @@ EOF
        text  => 'Bad Belzig, B246: Sperrung zwischen B102 und Am Kurpark, vom 04.08.2025 bis 05.09.2025',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LS/223-P/25/092 (bis 05.09.2025)
+#: source_id: LS/223-P/25/092 (bis 05.09.2025) (inaktiv)
 	2::inwork -43355,-29316 -42946,-28772
 EOF
      },
@@ -49568,17 +49573,19 @@ EOF
      },
      { from  => 1755406800, # 2025-08-17 07:00
        until => 1772298000, # 2026-02-28 18:00
-       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, außerdem Baustelleneinrichtungsfläche in der Kolmarer Str., evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
+#      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, außerdem Baustelleneinrichtungsfläche in der Kolmarer Str., evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
+       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 (östlich Husemannstr., bis 28.02.2026)
 #: source_id: viz2021:13.4151,52.53846,18.08.2025,07:00 (westlich Husemannstr., bis 28.02.2026)
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5Xo8NcrLYvz2MxS7AThUxo
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig)
+#: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: also_indoor: traffic (T)
 #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
-Kolmarer Str.	q4::inwork 11354,14187 11418,14290
+# REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
 EOF
      },
      { from  => 1755627458,
@@ -49764,7 +49771,7 @@ EOF
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxh7miufrk2p
 #: by: https://www.morgenpost.de/bezirke/mitte/article409864900/dachschaden-nahe-friedrichstadt-palast-jetzt-kommt-ein-tunnel.html
-#: source_id: viz2021:13.38759,52.52388,
+#: source_id: viz2021:13.38759,52.52388, (inaktiv)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_297783
 #: source_id[inactive]: bvg2024:245#HIM_FREETEXT_297784
 #: also_indoor: traffic (ex-T)
