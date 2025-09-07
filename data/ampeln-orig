@@ -58,7 +58,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
-#: last_checked: 2025-07-14 (traffic)
+#: last_checked: 2025-09-06
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: next_check: 2025-09-08 (rbb/VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20250619
@@ -522,18 +522,18 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2025-08-12 (mapillary) vvv
-#: check_frequency: 360d vvv
+#: last_checked: 2025-09-07 (osm note) vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-06-30 (SenMVKU website) vvv
 # REMOVED --- #: valid: 20190603-20250630 vvv
-#: next_check: 2025-09-04 (SenMVKU website) vvv
+# REMOVED --- #: next_check: 2025-09-04 (SenMVKU website) vvv
 # REMOVED --- #: valid: 20190603-20251231 vvv
 #: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage
 	X::inwork 20891,17572
 	X::inwork 20895,17594
 	X::inwork 20769,17650
 # REMOVED --- #: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -3731,7 +3731,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13199,23657
 	X 10591,16159
 	X 16964,3210
-	X 4779,8317
+	X 4780,8309
 	X 4778,8354
 	X 11214,16043
 	X -3891,13968

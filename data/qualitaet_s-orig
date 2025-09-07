@@ -197,7 +197,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2025-07-23
+#: last_checked: 2025-09-06
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -209,7 +209,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2025-07-25 vvv
+#: last_checked: 2025-09-06 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -477,7 +477,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-06
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1278,9 +1278,12 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/verordnete-fordern-moderne-planung-fuer-friedrich-engels-strasse_a303957
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/zweigleisiger-ausbau-der-m1-ist-von-der-bvg-geplant_a318012 (Straßenbahn ab 2026 zweigleisig)
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/durchgangsverkehr-weicht-auf-anwohnerstrassen-aus_a372317
+#: by: https://www.morgenpost.de/bezirke/pankow/article409924681/gefahrenabwehr-jetzt-wird-pankows-kaputteste-strasse-asphaltiert.html
+#: by: https://www.facebook.com/larsbocianmda/photos/marode-friedrich-engels-stra%C3%9Fe-noch-diesen-monat-starten-die-bauarbeiten-seit-ja/1103641778576381/?_rdr (zwischen Hauptstr. und Kastanienallee, bis Ende November 2025?)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
 #: last_checked: 2025-07-17 (mapillary) vvv
-#: check_frequency: 540d vvv
+#: check_frequency: 120d vvv
+# REMOVED --- #: check_frequency: 540d vvv
 #: next_check: 2026-12-31 vvv
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
@@ -14290,6 +14293,8 @@ Gärtnereiring: schlechtes Kopfsteinpflaster	Q3 -7236,12896 -7345,12930
 # 
 Mädewalder Weg: Kopfsteinpflaster	Q2 22858,11937 22864,11905
 # 
+Emser Str.: Asphalt mit Schäden	Q1+ 4699,9505 4692,9537 4733,9931
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -17705,7 +17710,7 @@ Kuckhoffstr.: Kopfsteinpflaster	Q2 10004,19765 9962,19757 9878,19741 9717,19692
 #: confirmed_by: mapillary
 Kuckhoffstr.: guter Asphalt	Q0 9717,19692 9646,19670 9468,19599
 #: corrected_by: Christian Hahn (guter Asphalt -> Kopfsteinpflaster)
-#: confirmed_by: Wolfhard Schleese: Richtung Friedrich-Engelsstr. geht es mit Kopfsteinen weiter, weiß aber nicht wie weit. (auf jeden Fall kein Q0!) & mapillary
+#: confirmed_by: Wolfhard Schleese: Richtung Friedrich-Engels-Str. geht es mit Kopfsteinen weiter, weiß aber nicht wie weit. (auf jeden Fall kein Q0!) & mapillary
 Kuckhoffstr.: Kopfsteinpflaster	Q2 9468,19599 9213,19538 9169,19528
 #: corrected_by: mapillary
 Kuckhoffstr.: guter Beton	Q0- 9169,19528 9054,19496
@@ -31765,10 +31770,10 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: check_frequency: 360d vvv
 #: next_check: 2026-12-31 vvv
 #: corrected_by: srt (teilweise holpriger Asphalt, Q2 -> ...)
-#: osm_watch: way id="11644300" version="22"
+#: osm_watch: way id="11644300" version="23"
 Detlevstr.: rauer Asphalt	Q1- 18471,16765 18487,16741 18439,16483
 #: confirmed_by: srt (changed wording: teilweise holpriger Asphalt -> ...)
-#: osm_watch: way id="1093572875" version="1"
+#: osm_watch: way id="1093572875" version="2"
 Detlevstr.: Asphalt mit erhebliche Hebungen	Q2- 18439,16483 18412,16334 18406,16295
 #: next_check ^^^
 #: check_frequency ^^^

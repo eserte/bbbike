@@ -397,7 +397,7 @@ Große Präsidentenstr.	1 10105,13004 10219,13102
 #: by: https://pbs.twimg.com/media/GTqgmAvWEAMTCD_?format=jpg&name=medium
 #: source_id: viz2021:13.312025,52.498061,30.07.2024,07:00 (Sackgasse, bis 28.02.2025) (keine Erwähnung der Sackgasse mehr, bis 30.04.2025) (bis 16.06.2025) (inaktiv)
 #: osm_watch: way id="4437134" version="17"
-#: last_checked: 2025-05-30 (mapillary)
+#: last_checked: 2025-09-06
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-02-28
 Duisburger Str.	1 4183,10144 3880,10154
@@ -1758,6 +1758,9 @@ Filandastr.: Mittelstreifen	3nocross 5643,5301 5610,5227 5583,5179
 # 
 #: note: Bordstein nur auf der südlichen Fahrbahnseite
 Rudower Str./Neudecker Weg: Bordstein, Grünstreifen	3nocross 18491,2128 18396,1990 18361,1926
+# 
+#: note: hinter dem Wendehammer Einfahrt verboten
+Emser Str.	1s:q4 4762,10332 4764,10350
 # 
 #: section ^^^
 ######################################################################
@@ -4334,7 +4337,7 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581 7447,12520
 # 
 #: next_check_id: BAB100-2022
-#: XXX Radweg auf der östlichen Seite führt mindestens bis zur Sonnenallee, wahrscheinlich irgendwann mal zur Neuköllnischen Allee oder sogar Grenzallee; auf der westlichen Seite existiert auch ein Weg; Richtung Treptower Park wird es wohl zumindest einen Weg (auf der westlichen Seite?) geben
+#: by: https://checkpoint.tagesspiegel.de/langmeldung/u0Q2caSUXqlMpEwIClbJq (Eröffnung im Frühjahr 2026?)
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
 #: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.), 2025-04-12 (Sa) 10:18 (Kiefholzstr. NO)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
@@ -4342,7 +4345,8 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
 #: last_checked: 2025-09-05 vvv
-# REMOVED --- #: next_check: 2025-08-27 (rbb) vvv
+#: check_frequency: 45d vvv
+#: next_check: 2026-04-15 (Tsp) vvv
 #: osm_watch: way id="1199463691" version="6"
 # REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4358,7 +4362,8 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht
 #: osm_watch: way id="801304797" version="6"
 #: XXX außerdem: wird es eine Anbindung an die Sonnenallee geben?
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: ANDERGAERTNEREI-2022
@@ -5023,7 +5028,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-08-30 vvv
+#: last_checked: 2025-09-06 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

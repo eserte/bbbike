@@ -360,7 +360,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-09-05 vvv
+#: last_checked: 2025-09-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1329,6 +1329,10 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.tagesspiegel.de/berlin/autos-werden-umgeleitet-diese-berliner-brucke-ist-am-wochenende-fur-den-verkehr-gesperrt-14172230.html
 #: by: https://www.tagesspiegel.de/interaktiv/erste-datenanalyse-zur-a100-wie-schlimm-ist-der-stau-an-berlins-neuer-autobahn-abfahrt-wirklich-14266448.html (Eröffnung des Ersatzneubaus im Dez. 2025)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/a100-nach-treptow-das-ist-der-zeitplan-fuer-die-neue-elsenbruecke-li.2354510
+#: by: https://entwicklungsstadt.de/neue-a100-abfahrt-woher-der-stau-in-friedrichshain-und-treptow-ruehrt/
+#: by: https://www.tagesspiegel.de/berlin/verzogerung-auf-der-baustelle-bleibt-die-elsenbrucke-an-der-berliner-a100-noch-langer-ein-nadelohr-14281952.html
+#: by: https://checkpoint.tagesspiegel.de/langmeldung/2YOgP5xtuoh1HPZnnsgrOy (mögliche Verzögerung)
+#: by: https://entwicklungsstadt.de/neue-elsenbruecke-bis-2028-wie-die-a100-den-zeitplan-ins-wanken-bringt/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -1427,7 +1431,7 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 #: by: https://api.fixmyberlin.de/api/plannings/216
 #: by: https://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026)
 #: osm_watch: way id="963841938" version="6"
-#: last_checked: 2025-06-25
+#: last_checked: 2025-09-06
 #: check_frequency: 360d
 #: next_check: 2026-12-31
 	RW2; 4349,8118 4280,8188
@@ -1530,7 +1534,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
-#: osm_watch: way id="357558840" version="22"
+#: osm_watch: way id="357558840" version="23"
 #: last_checked: 2025-08-30
 #: check_frequency: 120d
 	RW3; 7236,5685 7497,5610
@@ -1707,7 +1711,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="823635969" version="24"
+#: osm_watch: way id="823635969" version="25"
 #: osm_watch: way id="4615746" version="51"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
 #: last_checked: 2025-09-05 (osm) vvv
@@ -5086,7 +5090,7 @@ sehr schmale prähistorische Radwege	RW1; 21088,9178 21079,8931
 Verbundsteinpflaster	RW1;RW1 7115,3003 7049,3005 6914,3093 6788,3181
 Verbundsteinpflaster	RW2;RW2 6788,3181 6712,3237
 enger Radweg, kein Unterstreifen gegen parkende Autos	RW1;RW1 4061,7992 4067,7726 4066,7514 4064,7396 4063,7287
-	RW1;RW1 4787,7788 4789,7859 4786,8007 4779,8317 4778,8354 4772,8513
+	RW1;RW1 4787,7788 4789,7859 4786,8007 4780,8309 4778,8354 4772,8513
 	RW1;RW1 4415,9343 4374,9409 4381,9620 4398,9723 4422,9869 4439,9983 4456,10092 4478,10218 4485,10307
 	RW1;RW1 4957,9437 4842,9458 4752,9474 4699,9505
 	RW7;RW7 20948,9847 20943,9543 20938,9293 20937,9229 20936,9156 20932,8956 20967,8716 21010,8379
@@ -5728,7 +5732,7 @@ Verbundsteinpflaster	RW1; 17732,11374 17734,11408
 	RW1;RW3 17848,11204 17861,11210 17876,11217
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 18061,11240 18202,11253
 	RW4; 18280,11266 18229,11256 18200,11269 18179,11278 18059,11256 18027,11244
-	RW1;RW1 4473,8351 4505,8321 4531,8319 4687,8306 4779,8317
+	RW1;RW1 4473,8351 4505,8321 4531,8319 4687,8306 4780,8309
 Verbundsteinpflaster	RW2;RW8 21108,4725 21065,4957 21060,5043 21056,5108 21025,5437 21024,5601 21002,5755
 	RW1;RW1 5900,9737 5831,9730 5648,9642
 	RW1;RW1 5578,9629 5477,9621
@@ -7727,7 +7731,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-08-28 vvv
+#: last_checked: 2025-09-06 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8178,7 +8182,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-06
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -8341,7 +8345,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-06
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -8354,7 +8358,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-09-06 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2025-09-12 (VIZ-Verkehrsmeldung) vvv
 #XXX	RW4; 10871,10322 10975,10334
@@ -8757,7 +8761,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="34"
 #: osm_watch: way id="335487059" version="29"
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-09-06 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-04-24 (VIZ-Verkehrsmeldung aufgehoben) vvv
 # REMOVED --- #: next_check: 2025-06-30 (infravelo) vvv
@@ -8877,7 +8881,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
-#: last_checked: 2025-08-29 vvv
+#: last_checked: 2025-09-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
@@ -9243,7 +9247,7 @@ Grünbeschichtung	RW4; 12259,7164 12244,7205
 Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 #: XXX wann wird hier die Radspur komplettiert?
-#: last_checked: 2025-08-06
+#: last_checked: 2025-09-06
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
 	RW3; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696
@@ -9521,13 +9525,15 @@ Tempo 10	RW6;RW6 -7523,14969 -7387,14951
 #: note: Grunewaldstr., Richtung Osten
 Radspur hinter parkenden Autos	RW4; 5895,9083 5974,9100 6059,9118
 Leitboys	RW4; 6059,9118 6142,9134
-	RW4?; 6440,9192 6568,9211 6709,9234 6847,9261 6921,9275 6994,9288
+Leitboys bzw. Radspur hinter parkenden Autos	RW4; 6440,9192 6568,9211 6709,9234 6847,9261 6921,9275
+Nachtbushaltestelle, Leitboys	RW4; 6921,9275 6994,9288
 Leitboys bzw. Radspur hinter parkenden Autos	RW4; 6994,9288 7118,9315
 #: next_check_id: GRUNEWALDSTR-2025
 #: next_check_id: ELSSHOLZ-2025
 #: osm_watch[closed]: note 4803321 2
 #: XXX Wann wird die Radspur freigegeben?
 #: last_checked: 2025-08-06
+#: check_frequency: 90d
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7118,9315 7202,9329 7299,9346
 Leitboys	RW4; 7299,9346 7418,9366 7471,9360
 #: note: Grunewaldstr., Richtung Westen
@@ -9536,7 +9542,8 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 7418,9366 7299,9346
 #: next_check_id: GRUNEWALDSTR-2025
 #: next_check_id: ELSSHOLZ-2025
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2025-08-06
+#: last_checked: 2025-09-06
+#: check_frequency: 90d
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7299,9346 7202,9329 7118,9315
 Leitboys	RW4; 7118,9315 6994,9288
 Nachtbushaltestelle	RW3; 6994,9288 6921,9275

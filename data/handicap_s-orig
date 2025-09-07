@@ -69,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="21"
 #: osm_watch: way id="1072662717" version="25"
-#: last_checked: 2025-09-02 (osm)
+#: last_checked: 2025-09-06
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -380,10 +380,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://weddingweiser.de/endlich-abriss-in-der-burgsdorfstrasse/ (Verzögerung des Abrisses, vielleicht bis 30. September 2025)
 #: by: https://www.morgenpost.de/bezirke/mitte/article409774113/das-baum-haus-tiere-verhindern-abriss-der-beruehmten-ruine-in-wedding.html
 #: by: https://entwicklungsstadt.de/wedding-geplanter-abriss-der-ruine-in-der-burgsdorfstrasse-gestoppt/
-#: osm_watch: way id="549316654" version="41"
+#: osm_watch: way id="549316654" version="42"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-07-31 (osm)
+#: last_checked: 2025-09-05 (osm)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
 #: next_check: 2025-11-30 (weddingweiser, Abrissarbeiten)
@@ -851,7 +851,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="26"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-08-27 (osm)
+#: last_checked: 2025-09-02 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -5356,6 +5356,8 @@ Lindenallee (Friedrichshagen): zwei Bodenschwellen	q1 25294,5761 25479,5753
 (Am Sudhaus - Isarstr.): einige Fußgänger	q2 12284,8195 12340,8208 12397,8221 12386,8274 12382,8292
 # 
 Flughafen Tempelhof, Eingang Herrfurthstr.: zahlreiche Bodenschwellen	q2 11418,8015 11439,7894 11460,7802
+#: note: im Bereich von allen Eingängen wurden mehrere Bodenschwellenreihen verlegt
+Flughafen Tempelhof, Weg parallel zur Oderstr.: zahlreiche Bodenschwellen	q2 11458,7897 11490,7735 11509,7636 11527,7530 11547,7432 11552,7396 11589,7353
 # 
 #: XXX_prog: BS (ansonsten entfernen) vvv
 Loerkesteig: Bordstein	q2 2873,24313 2925,24350

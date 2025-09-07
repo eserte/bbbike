@@ -4844,7 +4844,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-08-28
+#: last_checked: 2025-09-06
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -5802,6 +5802,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: by: https://www.bauhaus.de/de/bauhaus-archiv/7994_the_bauhaus_view/ (Eröffnung voraussichtlich 2025)
 #: by: https://stories.bauhaus.de/neubau/ (Wiedereröffnung 2025) (mittlerweile Wiedereröffnung 2027)
 #: by: https://entwicklungsstadt.de/tiergarten-wird-die-erweiterung-des-bauhaus-archivs-bis-herbst-2025-fertig/
+#: by: https://entwicklungsstadt.de/kulturbauten-in-der-krise-warum-berlins-grossprojekte-aus-dem-takt-geraten/
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -6363,15 +6364,14 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 7
-#: osm_watch: note 3834144 5
+#: osm_watch: note 3834144 7
 #: also_indoor: traffic (B,T,ex-H,re-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2025-08-14 (mapillary)
+#: last_checked: 2025-09-06
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
-#: next_check: 2025-09-04 (laut osm note offen)
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 ',
@@ -7799,7 +7799,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-08-29 (website) vvv
+#: last_checked: 2025-09-06 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7808,8 +7808,8 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 # REMOVED --- #: osm_watch: note 4425036 1
 # REMOVED --- Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
 # REMOVED --- Eingangsbereich Herrfurthstr.	2::inwork 11418,8015 11439,7894 11460,7802
-Eingangsbereich Herrfurthstr., Restarbeiten	2::inwork 11458,7897 11490,7735
-Weg parallel zur Oderstr.	2::inwork 11547,7432 11527,7530 11509,7636
+# REMOVED (hier nicht mehr) --- Eingangsbereich Herrfurthstr., Restarbeiten	2::inwork 11458,7897 11490,7735
+# REMOVED (hier nicht mehr) --- Weg parallel zur Oderstr.	2::inwork 11547,7432 11527,7530 11509,7636
 Crashgate Richtung Rundkurs Südwest	2::inwork 11407,7198 11598,7264 11608,7267
 Crashgate	2::inwork 11598,7264 11596,7280 11593,7317 11589,7353
 Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
@@ -7820,7 +7820,7 @@ Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
 ',
          'from' => undef,
          'id' => 4157,
-         'text' => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten gesperrt, außerdem Sperrungen des Wegs parallel zur Oderstr. (Stand Anfang August 2025: Crashgate ist gesperrt)',
+         'text' => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten gesperrt (Stand Anfang September 2025: Crashgate ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8035,8 +8035,8 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: osm_watch: note 4524886 3
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
-#: also_indoor: traffic (G[zu lang],T,H,W[zu kurz])
-#: last_checked: 2025-08-28
+#: also_indoor: traffic (G[zu lang],T,ex-H,ex-W[zu kurz])
+#: last_checked: 2025-09-06 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -8077,6 +8077,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: osm_watch: node id="11107173199" version="2"
 #: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
 #: note: am letzten Schultag vor den Sommerferien 2025 waren die entsprechenden Schilder verhüllt
+#: add_fragezeichen: Wird die temporäre Schulzone in der Schleiermacherstraße auch nach den Sommerferien 2025 fortgesetzt?
 #: last_checked: 2025-06-07
 # REMOVED --- #: next_check: 2025-07-23
 #: next_check: 2025-09-08 (Ende der Sommerferien)
@@ -8495,7 +8496,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
-#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025)
+#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv)
 #: source_id: LS/222-W/25/089 (bis 12.09.2025)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 ',
@@ -8622,7 +8623,7 @@ Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,404
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-06
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -8680,7 +8681,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
 #: osm_watch: way id="276210232" version="6"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2025-08-06
+#: last_checked: 2025-09-06
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -8977,7 +8978,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-07-14 (traffic) vvv
+#: last_checked: 2025-09-06 vvv
 # REMOVED --- #: check_frequency: 14d (traffic) vvv
 #: next_check: 2025-09-08 (rbb/VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -9032,7 +9033,8 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
          'data' => '#: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026)
 #: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
 #: note: die textuelle Beschreibung (zwischen Mecklenburgische Straße und Paretzer Straße) und Kartendarstellung (nur ein paar Meter im Kurvenbereich) passen nicht zusammen
-	q4::inwork 4581,8048 4461,8105 4457,8270
+	q4::inwork 4581,8048 4461,8105
+Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8105 4457,8270
 ',
          'from' => 1748754000,
          'id' => 4354,
@@ -9058,11 +9060,14 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
        {
          'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025)
 #: note: bei rbb "Einbahnstraßenregelung"
-Pestalozzistr.	q4::inwork; 4302,11232 4434,11227 4546,11217
+# REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
+Pestalozzistr.	q4::inwork; 4434,11227 4546,11217
+#: note: zwar ist an der Kantstr. ausgeschildert "Sackgasse, offen für Fußgänger und Radfahrer", allerdings gibt es keine Gehwegfreigabe im Baustellenbereich, es gibt auch keine Anrampungen oder Bordsteinabsenkungen
+Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
 ',
          'from' => 1748750400,
          'id' => 4358,
-         'text' => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Leibnizstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
+         'text' => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
          'type' => 'handicap',
          'until' => 1757800740
        },
@@ -9121,7 +9126,28 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: LYNAR-2025
+#: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
+#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
+#: last_checked: 2025-09-06 vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-09-02 vvv
+# REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
+Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
+Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
+#: also_indoor: traffic (G,re-T,H)
+Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 4374,
+         'text' => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, Engstellen und gesperrte Fahrbahnen, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
 #: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
@@ -9301,6 +9327,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~15-07-2025-b188-kreisverkehr-zwischen-stechow-und-rhinsmuehlen (Bauarbeiten für Kreisverkehr B188/Stechow - Nennhausen; Radwegbau Stechow - Rhinsmühlen (~5km) beginnt nach den Bauarbeiten im September 2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~05-09-2025-b188-arbeiten-kreisverkehr-stechow
 #: source_id: LS/223-P/25/088 (bis 06.09.2025) (bis 13.09.2025)
 #: next_check: 2025-09-13
 Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork -54051,23436 -53816,23532 -53633,23786 -53625,23953
@@ -9316,7 +9343,7 @@ Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork 
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-08-30 (traffic)
+#: last_checked: 2025-09-06
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 ',
@@ -9491,7 +9518,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1587005.php
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
-#: last_checked: 2025-08-06 vvv
+#: last_checked: 2025-09-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-15 vvv
 #: note: Halteverbotsschilder bis 15.05.2026
@@ -9528,7 +9555,20 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'type' => 'gesperrt',
          'until' => 1767222000
        },
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
+#: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
+#: also_indoor: traffic (G,T,H)
+#: last_checked: 2025-09-06
+#: check_frequency: 14d (traffic)
+	q3::inwork 10066,10071 9837,10117
+',
+         'from' => 1754456400,
+         'id' => 4412,
+         'text' => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., ein kurzes Stück der Fahrbahn ist gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 (östlich Husemannstr., bis 28.02.2026)
 #: source_id: viz2021:13.4151,52.53846,18.08.2025,07:00 (westlich Husemannstr., bis 28.02.2026)
@@ -9627,22 +9667,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: HIRSCHGARTEN-2024
-#: by: https://sbahn.berlin/fahren/bahnhofsuebersicht/hirschgarten/ (kein Halt vom 05.08. (Di) 4 Uhr bis 06.09.2025 (Sa) 5 Uhr)
-#: osm_watch: note 4890807 3
-#: osm_watch: way id="37523779" version="6"
-#: note: 2025-08-27: An der Nordseite nicht richtig gesperrt gewesen, an der Südseite nur halbherzig.
-#: last_checked: 2025-08-27
-#: next_check: 2025-09-06
-	2::inwork 23951,6063 23948,6054 23947,6014 23930,6013
-',
-         'from' => 1756139889,
-         'id' => 4423,
-         'text' => 'S-Bahnhof Hirschgarten: Unterführung kann gesperrt sein, voraussichtlich bis zum 6.9.2025',
-         'type' => 'gesperrt',
-         'until' => 1757127600
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/ginalien.bsky.social/post/3lxc3zodkrk2q
 #: also_indoor: traffic (T,H)
@@ -9657,10 +9682,17 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
        undef,
        {
          'data' => '#: next_check_id: MUSSEHL-2025
+#: also_indoor: traffic (G,T)
+#: last_checked: 2025-09-06 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2025-10-31 vvv
 #: note: Halteverbotsschilder bis 31.10.2025
 	q4::inwork 8982,8781 8926,8682
 #: note: hier auf etwa 50m Länge gesperrt
 	q4::inwork 8926,8682 8842,8561
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1756245600,
          'id' => 4426,

@@ -62,7 +62,7 @@ Bhf. Blankenfelde: neue Unterf¸hrung ist noch nicht f¸r den Kfz-Verkehr fertig	2
 #: check_frequency: 180d vvv
 #: next_check: 2028-01-01 vvv
 #: osm_watch: way id="47973246" version="13"
-#: last_checked: 2025-03-04 (orthofotos)
+#: last_checked: 2025-09-06
 Mecklenburgische Str./Rudolf-Mosse-Str.: ‹berfahrt gesperrt, f¸r Radfahrer ist ein bisschen Platz frei gelassen	3nocross 3619,7587 3631,7598 3839,7787
 #: osm_watch: way id="223384912" version="11"
 #: last_checked: 2025-06-26 (mapillary)
@@ -98,7 +98,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Grˆben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen f¸r Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-08-29
+#: last_checked: 2025-09-06
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbr¸cke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -971,7 +971,7 @@ Kirchplatz: gesperrt f¸r Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11971 (Einwohneranfrage -> "keine konkreten Planungen")
 #: osm_watch: way id="155071540" version="24"
 #: XXX wird hier in eine "echte Einbahnstraﬂe" umgewandelt?
-#: last_checked: 2025-06-07
+#: last_checked: 2025-09-06
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d (weil es keine konkreten Planungen gibt)
 # REMOVED --- #: next_check: 2024-04-24
@@ -2331,4 +2331,11 @@ Charles-Corcelle-Ring	1 4263,16166 4724,15925 4775,15929 4804,15966 4973,16847 4
 J‰gerstr.	1 22027,9131 21951,9157
 # 
 Ecksteinweg	1 17762,5408 17736,5441
+# 
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1503507.php (vor der Nelson-Mandela-Schule)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1592341.php (Bauarbeiten bis 29.8.2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/sicherer-schulweg-neue-einbahnstrasse-in-berlin-wilmersdorf-soll-kinder-schutzen-14247473.html
+#: osm_watch: note 4935336 2
+#: osm_watch: way id="4395632" version="26"
+Pfalzburger Str.	1 4858,9594 4875,9891
 # 
