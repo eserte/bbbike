@@ -109,33 +109,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.hier-in-rudow.de/meilenfeste.html
-#: by: https://ag-rudow.berlin/veranstaltung/rudower-septembermeile-2/
-#: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
-#: source_id: viz2021:13.49573,52.4177,06.09.2024,19:00 (bis 08.09.2024) (inaktiv)
-#: source_id: viz2021:13.49469,52.42125,05.09.2025,19:00 (bis 07.09.2025)
-Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
-Krokusstr.	2::temp 16610,1715 16767,1831
-',
-         'from' => 1757023200,
-         'id' => 112,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              8,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (06.09.2025 bis 07.09.2025)',
-         'type' => 'gesperrt',
-         'until' => 1757282399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3388,18 +3362,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
-#: by: https://www.berlin.de/events/5983059-2229501-radioeins-parkfest.html
-#: by: https://www.radioeins.de/themen/_/parkfest/
-	q3::temp 8652,9870 8571,9896
-',
-         'from' => 1756418400,
-         'id' => 2473,
-         'text' => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, vom 30. August 2025 bis 7. September 2025',
-         'type' => 'handicap',
-         'until' => 1757268000
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
@@ -4570,9 +4533,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch[closed]: note 3210197 6
-#: osm_watch: way id="4792216" version="18"
-#: osm_watch: way id="1148659680" version="5"
-#: last_checked: 2025-08-20
+#: osm_watch: way id="4792216" version="19"
+#: osm_watch: way id="1148659680" version="6"
+#: last_checked: 2025-09-07 (osm)
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -7796,12 +7759,13 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
 #: by: https://entwicklungsstadt.de/tempelhofer-feld-arbeiten-am-eingang-crash-gate-starten/ (ab 20.05.2025)
 #: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025) (mittlerweile ab 22.05.2025)
+#: by: https://entwicklungsstadt.de/tempelhofer-feld-neue-bewegungsflaechen-schaffen-raum-fuer-sport-und-begegnung/
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
 #: last_checked: 2025-09-06 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2025-12-31 (tempelhoferfeld website) vvv
+#: next_check: 2025-12-31 (tempelhoferfeld website, entwicklungsstadt) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
@@ -8247,7 +8211,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
 #: source_id: viz2021:13.46101,52.5454,05.02.2025,07:00 (bis 30.11.2025)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-#: last_checked: 2025-09-04 vvv
+#: last_checked: 2025-09-08 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-10-21 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
@@ -8509,50 +8473,12 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
-#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
-#: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
-#: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
-	q4::inwork; 2092,7810 2099,7904 2112,8088 2121,8351
-',
-         'from' => 1741240800,
-         'id' => 4277,
-         'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 08.09.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1757343600
-       },
        undef,
        undef,
        undef,
        undef,
-       {
-         'data' => '# 
-#: next_check_id: WEISSENHOEHER-2025
-#: by: https://pascalgrothe.de/bahnbruecke-in-der-weissenhoeher-strasse-wird-abgerissen/ (von Februar bis Oktober 2025 zur Einbahnstraße in Richtung Westen, Abriss vom 14. März bis 14. November 2025, Ersatzneubau)
-#: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article408186475/monatelange-baustelle-abriss-der-eisenbahn-bruecke-in-biesdorf.html (Abschluss der Arbeiten Ende März 2026)
-#: by: https://christian-graeff.de/2025/01/21/abriss-der-bruecke-ueber-der-weissenhoeher-strasse/
-#: by: https://christian-graeff.de/wp-content/uploads/2025/02/Anwohnerinfo_DB_EUEWeissenh_TeilII.pdf
-#: by: https://pascalgrothe.de/neue-bahnbruecke-ueber-die-weissenhoeher-strasse-soll-in-diesem-jahr-befahren-werden/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lwnmezex6225
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiehgzilfxsm6lw3fw6qmzw6ifyzeflqouzu4an4b2m66n32pr7kuy@jpeg
-#: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025) (inaktiv)
-#: source_id: viz2021:13.55274,52.50751,18.08.2025,07:00 (bis 08.09.2025)
-#: also_indoor: traffic (T,H,A)
-# REMOVED (siehe Verkehrszeichenplan) --- #: XXX laut VIZ-Meldung schon ab Grabensprung gesperrt: stimmt das?
-# REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-08-18 (check: bereits ab Grabensprung gesperrt?)
-# REMOVED --- #: next_check: 2025-09-15 (mögliches Ende der Sperrung laut VIZ)
-Weißenhöher Weg: unter der Bahnbrücke	2::inwork 20354,11500 20150,11512
-Gladauer Str.: Zugang auch für Fußgänger gesperrt	2::inwork 20354,11500 20346,11337
-',
-         'from' => 1755381600,
-         'id' => 4282,
-         'text' => 'Weißenhöher Str.: komplette Sperrung der Straße (vermutlich wegen Brückenarbeiten), auch für den Rad- und Fußverkehr, auch die Anbindung Gladauer Str. ist gesperrt, vom 18.08.2025 bis 08.09.2025',
-         'type' => 'gesperrt',
-         'until' => 1757368799
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -8972,15 +8898,15 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
          'data' => '#: next_check_id: PAULSBORNER-2025
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025) (inaktiv)
 #: source_id: viz2021:13.29402,52.48994,01.07.2025,10:03 (Salzbrunner Str., bis 15.07.2025) (inaktiv)
-#: source_id: viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025)
-#: source_id: viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025) (bis 08.09.2025)
+#: source_id: viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025)
+#: source_id: viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
 #: last_checked: 2025-09-06 vvv
 # REMOVED --- #: check_frequency: 14d (traffic) vvv
-#: next_check: 2025-09-08 (rbb/VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-12-31 (rbb/VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
 #: next_check ^^^
@@ -8991,7 +8917,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
          'dont_check_date' => 1,
          'from' => 1747562400,
          'id' => 4345,
-         'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Mitte September 2025',
+         'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Ende 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9080,7 +9006,7 @@ Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-07-15
+#: last_checked: 2025-09-07 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -9441,19 +9367,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'until' => 1760713200
        },
        undef,
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025)
-# REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
-	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
-',
-         'from' => 1753596000,
-         'id' => 4403,
-         'text' => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 08.09.2025',
-         'type' => 'gesperrt',
-         'until' => 1757343600
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.16143,52.42614,24.07.2025,07:00 (bis 06.11.2025)

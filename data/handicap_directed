@@ -225,5 +225,7 @@ Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 Königsberger Str.: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4392,2628 4348,2627 4317,2638
 Königsberger Str. -> Drakestr.: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4233,2675 4170,2727 4011,2942
 Königsberger Str. -> Hindenburgdamm: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4233,2675 4170,2727 4411,3180
-Bornitzstr. - Scheffelstr.: Radverkehr muss die Fahrbahnseite wechseln	DH:len=15:tl 15643,12875 15563,12870 15516,12838
-Bornitzstr. - Scheffelstr.: Radverkehr muss die Fahrbahnseite wechseln	DH:len=15:tl 15563,12870 15516,12838 15469,12831
+Bornitzstr. - Scheffelstr.: Radverkehr muss die Fahrbahnseite wechseln	DH:len=15:tl:h=q3,50 15643,12875 15563,12870 15516,12838
+Bornitzstr. - Scheffelstr.: Radverkehr muss die Fahrbahnseite wechseln	DH:len=15:tl:h=q3,50 15563,12870 15516,12838 15469,12831
+Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17186,17593 17264,17489
+Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17264,17489 17186,17593
