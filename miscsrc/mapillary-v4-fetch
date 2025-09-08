@@ -67,7 +67,7 @@ GetOptions(
 	   "start-date=s" => \$start_date,
 	   "end-date=s"   => \$end_date,
 	   "bbox=s"       => \$bbox,
-	   "debug!"       => \$debug,
+	   "debug+"       => \$debug,
 	   "stat|statistics!" => \$statistics,
 	   "cache!"       => \$do_cache,
 	  )
@@ -288,6 +288,16 @@ sub fetch_images {
     my $data;
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url, "Authorization" => "OAuth $client_token");
+	if ($debug && $debug >= 2) { # enable only if there are bigger problems with API
+	    my $dump_req = $resp->request->clone;
+	    for my $header (qw(Authorization)) {
+		if ($dump_req->header($header)) {
+		    $dump_req->header($header => '...');
+		}
+	    }
+	    warn "Request:\n" . $dump_req->dump;
+	    warn "Response:\n" . $resp->dump;
+	}
 	if (!$resp->is_success || $resp->header('X-Died')) {
 	    $reqs_error++;
 	    my $msg = "Try $try/$max_try:\n";
@@ -295,15 +305,6 @@ sub fetch_images {
 		$msg .= "Response: X-Died=" . $resp->header('X-Died');
 	    } else {
 		my $error_data = eval { decode_json $resp->decoded_content };
-		if (0) { # enable only if there are bigger problems with API
-		    my $dump_req = $resp = $resp->request->clone;
-		    for my $header (qw(Authorization)) {
-			if ($dump_req->header($header)) {
-			    $dump_req->header($header => '...');
-			}
-		    }
-		    $msg .= "Request: " . $dump_req->dump;
-		}
 		if ($error_data && ref $error_data eq 'HASH' && ($error_data->{error}->{error_user_title}//"") =~ m{^(Query Timeout|Zeit.*berschreitung bei Anfrage)$}) {
 		    my $e = $error_data->{error};
 		    $msg .= "$e->{error_user_title}: $e->{error_user_msg}";
