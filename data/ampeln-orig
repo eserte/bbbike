@@ -616,10 +616,15 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 	X 8982,8781
 	X 8594,8777
 	X 8298,8774
-#: off: night (2023-09-14 (Th) 23:00)
+# 
+#: off: 2023-09-14 Thu 23:00
+#: off_rule: night
 	X 8598,9074
-#: off: night (2023-09-14 (Th) 23:00)
+# 
+#: off: 2023-09-14 Thu 23:00
+#: off_rule: night
 	X 8389,9087
+# 
 	X 8598,9269
 #: note: Anforderung für Radfahrer, die von Yorckstr. links in die Katzbachstr. abbiegen
 #: note: Ampel gilt nicht für rechtsabbiegende Radfahrer aus der Katzbachstr. in die Yorckstr.
@@ -680,12 +685,19 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/rundum-gruen-ampel-am-checkpoint-wird-nach-23-jahren-eingestellt_a388066
 	X 9492,11209
 	X 9388,10393
-#: off: night (seen 2015-06-25)
+# 
+#: off: 2015-06-25 Thu 00:01
+#: off_rule: night
 	X 9770,10590
-#: off: night (seen 2015-06-25)
+# 
+#: off: 2015-06-24 Wed 23:59
+#: off_rule: night
 	X 9323,10791
-#: off: night (seen 2015-06-25)
+# 
+#: off: 2015-06-24 Wed 23:58
+#: off_rule: night
 	X 9275,10932
+# 
 	X 9873,10285
 	X 10020,11262
 	X 10122,10294
@@ -753,8 +765,11 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 #: XXX_prog: Ampel gilt nicht für Radfahrer
 #: note: Anforderungsampel
 	F 12545,10496
-#: off: night (seen 2015-06-25)
+# 
+#: off: 2015-06-25 Thu 00:06
+#: off_rule: night
 	F 11130,10326
+# 
 	X 12341,10218
 	X 12229,10014
 	X 11543,10015
@@ -1139,8 +1154,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12649,6833
 	X 13236,6489
 	X 13566,5792
-#: off: night (seen 2013-08-25 23:10)
+# 
+#: off: 2013-08-25 Sun 23:10
+#: off_rule: night
 	X 13430,6086
+# 
 #: note: linksabbiegende Radfahrer (Neuköllnische Allee -> Grenzallee Richtung Osten) sollten die Fußgängeranforderung betätigen! (während der Sperrung der Grenzallee)
 	X 14344,7003
 	X 13762,7321
@@ -1159,8 +1177,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: linksabbiegen Radfahrer An der Wuhlheide -> Weiskopffstr. müssen an zwei Ampeln warten oder frühzeitig auf die Linksabbiegespur wechseln
 	X 19957,5941
 	X 22467,6135
-#: off: night (seen 2023-09-14 (Th) 23:00)
+# 
+#: off: 2023-09-14 Thu 23:00
+#: off_rule: night
 	X 7389,8837
+# 
 	X 6142,9134
 	X 6059,9118
 	X 5492,8982
@@ -1200,8 +1221,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8119,12414
 #: note: Anforderungsampel
 	F 10152,12491
-#: off: night (seen 2015-06-25, 2022-04-29 23:40)
+# 
+#: off: 2015-06-25 Thu 00:04
+#: off: 2022-04-29 Fri 23:40
+#: off_rule: night
 	F 10689,10491
+# 
 	F 7631,9770
 	X 15110,12107
 	X 14208,12235
@@ -1404,14 +1429,30 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4478,10218
 	X 9581,12588
 	X 10951,12249
-#: off: night (seen 2018-02-01 00:20, 2022-06-30 23:15, 2023-11-30 00:25, 2024-01-31 23:15, 2024-04-12 22:35)
+# 
+#: off: 2018-02-01 Thu 00:20
+#: off: 2022-06-30 Thu 23:15
+#: off: 2023-11-30 Thu 00:25
+#: off: 2024-01-31 Wed 23:15
+#: off: 2024-04-12 Fri 22:35
+#: off_rule: night
 	X 12295,12197
-#: off: night (seen 2015-01-29 00:45, 2018-02-01 00:20, 2022-04-29 23:55, 2022-06-30 23:15, 2023-11-30 00:25)
+# 
+#: off: 2015-01-29 Thu 00:45
+#: off: 2018-02-01 Thu 00:20
+#: off: 2022-04-29 Fri 23:55
+#: off: 2022-06-30 Thu 23:15
+#: off: 2023-11-30 Thu 00:25
+#: off_rule: night
+# 
 	X 12822,12067
 	X 12180,11657
 	X 14639,11512
 	X 14575,11407
-#: off: night (seen 2023-09-14 (Th) 22:55)
+# 
+#: off: 2023-09-14 Thu 22:55
+#: off_rule: night
+# 
 	X 7086,8579
 #: note: Kontaktschleifen in der Nebenstraßenrelation
 	X 6144,7677
@@ -1422,11 +1463,24 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4987,9850
 	X 4152,10033
 	X 13277,8211
-#: off: except_schooltime (seen 2013-08-25 23:20 (off), 2013-09-27 11:30 (on), 2018-10-03 16:00 (holiday) (off), 2022-01-23 13:00 (Sunday) (off))
+# 
+#: off: 2013-08-25 Sun 23:20
+#: on:  2013-09-27 Tue 11:30
+#: off: 2018-10-03 holiday 16:00
+#: off: 2022-01-23 Sun 13:00
+#: off_rule: outside_schooltime
 	X 14758,7373
+# 
 	X 15221,7778
-#: off: Sunday (seen 2015-11-01 16:00, 2018-07-29 12:30, 2020-10-04 13:00, 2020-12-20 13:00, 2023-09-23 13:45)
+# 
+#: off: 2015-11-01 Sun 16:00
+#: off: 2018-07-29 Sun 12:30
+#: off: 2020-10-04 Sun 13:00
+#: off: 2020-12-20 Sun 13:00
+#: off: 2023-09-23 Sun 13:45
+#: off_rule: Sun
 	F 15553,7408
+# 
 	X 15725,6235
 	X 15058,6784
 #: XXX_prog für Radfahrer auf dem Radweg in Richtung Südwesten eigentlich nicht relevant (keine Haltelinie, keine Extra-Ampel)
@@ -1511,10 +1565,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7790,672
 	X 5870,4992
 	X 6007,5785
+# 
 #: note: Ampel kann auf dem Platz südlich u.U. umfahren werden
 #: note: Kontaktschleifen in der Körnerstr. und Lauenburger Str.
-#: off: night (seen 2024-08-09 (Fri) 23:03)
+#: off: 2024-08-09 Fri 23:03
+#: off_rule: night
 	X 5823,6413
+# 
 #: XXX_prog: an der Beckerstr. ist auch eine Ampel nur für die nördliche Richtung, evtl. zusammen mit dieser Ampel geschaltet
 	X 6019,6710
 	X 8200,5510
@@ -1538,8 +1595,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6012,8809
 	X 161,3062
 	X -2280,2177
-#: off: night (seen 2024-08-09 (Fri) 22:13)
+# 
+#: off: 2024-08-09 Fri 22:13
+#: off_rule: night
 	X -4003,1234
+# 
 	X 2348,9388
 	X 3127,9522
 	X 15303,8343
@@ -1591,10 +1651,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: check_frequency: 360d
 	X0 2446,11776
 	X 2330,11762
-#: off: except_event
+# 
 #: note: Ampel wahrscheinlich nur bei Waldbühnen-Veranstaltungen eingeschaltet
 #: note: ansonsten sowieso irrelevant, da nur die Hauptfahrbahn betreffend
+#: on_rule: event
 	X0 -1288,11037
+# 
 	X -1523,11012
 	X -593,11119
 	X 504,11243
@@ -1656,8 +1718,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12077,14186
 	X 10197,16528
 	X 12704,15105
-#: off: Sunday (seen 2019-03-17 12:00)
+# 
+#: off: 2019-03-17 Sun 12:00
+#: off_rule: Sun
 	X 3820,10987
+# 
 	X 2192,12402
 	X 2151,12397
 #: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
@@ -1744,8 +1809,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	B 20624,12133
 	B 1583,9713
 	X 1049,10568
-#: off: Sunday (seen 2023-08-20 14:30)
+# 
+#: off: 2023-08-20 Sun 14:30
+#: off_rule: Sun
 	X 1344,10012
+# 
 	X 4063,7287
 #: note: Anforderung für Radfahrer Richtung Norden (offene Einbahnstraße!)
 	X 4393,7266
@@ -1884,8 +1952,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8486,16425
 	X 8449,17196
 	X 9642,15038
-#: off: night (seen 2019-01-09 23:50)
+# 
+#: off: 2019-01-09 Wed 23:50
+#: off_rule: night
 	X 4897,11354
+# 
 	X 4558,11366
 	X 4312,11354
 	X 3054,11240
@@ -1896,12 +1967,24 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3380,10373
 	X 5477,9621
 	X 9701,11656
-#: note: kann nachts ausgeschaltet sein (gesehen 2014-12, Fr gegen 23:50) vvv
-#: off: night (seen 2015-06-25, 2023-08-26 00:15, 2024-01-06 23:40, 2024-08-09 23:45, 2025-08-27 23:39)
+# 
+#: off: 2014-12-12 Fri 23:50
+#: off: 2015-06-25 Thu 00:19
+#: off: 2023-08-26 Sat 00:15
+#: off: 2024-01-06 Sat 23:40
+#: off: 2024-08-09 Fri 23:45
+#: off: 2025-08-27 Wed 23:39
+#: off_rule: night
 	X 14011,10812
-#: off: night (seen 2015-06-25, 2024-01-06 23:40, 2024-08-09 23:45, 2025-08-27 23:39)
+# 
+#: off: 2014-12-12 Fri 23:50
+#: off: 2015-06-25 Thu 00:19
+#: off: 2024-01-06 Sat 23:40
+#: off: 2024-08-09 Fri 23:45
+#: off: 2025-08-27 Wed 23:39
+#: off_rule: night
 	F 14024,10861
-#: note ^^^
+# 
 	X 6445,9538
 	X 6499,10086
 	X 5313,10420
@@ -1946,8 +2029,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7970,17087
 	X 8899,15147
 	X 6065,10129
-#: off: Sunday (seen 2023-10-29 12:43)
+# 
+#: off: 2023-10-29 Sun 12:43
+#: off_rule: Sun
 	X 6206,10102
+# 
 	X 10308,12859
 	X 11139,13008
 #: note: nur in südwestlicher Richtung bzw. zur Wadzeckstr.
@@ -1959,18 +2045,35 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 14203,2859
 	X 13057,14267
-#: off: night (seen 2023-03-06 Mo 22:40, 2024-01-03 Mi 22:48)
+# 
+#: off: 2023-03-06 Mon 22:40
+#: off: 2024-01-03 Wed 22:48
+#: off_rule: night
 	X 13292,13931
+# 
 	X 13100,13803
-#: off: Sunday (seen 2013-11-17 15:30)
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6605
-#: note: neue Betriebszeiten: montags bis sonntags, jeweils von 6:00 bis 22:00 Uhr
+# 
+# REMOVED (old) --- #: off: Sunday (seen 2013-11-17 15:30)
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6605 (neue Betriebszeiten: montags bis sonntags, jeweils von 6:00 bis 22:00 Uhr)
+#: off_rule: night=22:00..06:00	note=siehe BVV-Drucksache
 	F 15080,13117
+# 
 #: note: Anforderungsampel beim Überqueren der Möllendorffstr.
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
-#: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55; 2015-06-25; 2018-02-01 00:25; 2023-08-26 00:15; 2023-11-30 00:30; 2024-01-06 23:45; 2024-08-09 23:46; 2025-08-27 23:41)
+# 
+#: off: 2014-12-12 Fri 23:50
+#: off: 2015-01-29 Thu 00:55
+#: off: 2015-06-25 Thu 00:20
+#: off: 2018-02-01 Thu 00:25
+#: off: 2023-08-26 Sat 00:15
+#: off: 2023-11-30 Thu 00:30
+#: off: 2024-01-06 Sat 23:45
+#: off: 2024-08-09 Fri 23:46
+#: off: 2025-08-27 Wed 23:41
+#: off_rule: night
 	X 14134,11272
+# 
 	X 11785,13625
 	X 10904,17288
 	X 10448,17751
@@ -1998,8 +2101,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8683,6326
 	X 11308,-2535
 	F 10617,452
-#: off: Sunday? (seen 2022-05-01 13:30)
+# 
+#: off: 2022-05-01 Sun 13:30
+#: off_rule: Sun?
 	X 10226,1515
+# 
 #: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel, auch Richtung Osthafengelände
 	X 14218,10430
 	X 13596,10722
@@ -2059,8 +2165,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2905,14754
 	X 3395,13605
 	X 3739,13563
-#: off: Sunday (seen 2019-11-03 14:50)
+# 
+#: off: 2019-11-03 Sun 14:50
+#: off_rule: Sun
 	X 4265,13742
+# 
 	X 6817,13862
 	X 6935,13645
 	X 7069,13381
@@ -2190,8 +2299,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13104,16522
 # REMOVED (Ampel wurde ca. 2008-05-20 außer Betrieb genommen und abgebaut, by: Gordon Charles; http://www.berlin.de/ba-pankow/presse/archiv/20080508.0705.100069.html) --- X 12693,16700
 	X 10620,16497
-#: off: night (seen Mon 2023-03-06 23:15, Wed 2024-01-03 22:56)
+# 
+#: off: 2023-03-06 Mon 23:15
+#: off: 2024-01-03 Wed 22:56
+#: off_rule: night
 	X 14266,12446
+# 
 	X 5271,4547
 	X 5671,3987
 # REMOVED --- #: by: http://www.tagesspiegel.de/berlin/verkehr-in-berlin-drei-unfallschwerpunkte-sollen-kurzfristig-entschaerft-werden/19800156.html --- #: XXX hier wird umgestaltet, dann vermutlich eine normale Kreuzung; die Einträge in gesperrt-orig sowie diese XXX_prog-Direktive können dann entfallen --- #: source_id: 2147341195 --- #: next_check: 2017-07-31 --- #: XXX_prog: keine Ampel aus Richtung Birkbuschstr.
@@ -2300,8 +2413,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10257,19542
 	X 10014,19421
 	X 9859,19283
-#: off: Sunday (seen 2020-03-15 12:00)
+# 
+#: off: 2020-03-15 Sun 12:00
+#: off_rule: Sun
 	X 11555,20051
+# 
 	F 12821,20646
 	X 15620,19809
 	X 15642,19179
@@ -2351,10 +2467,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel für Radfahrer aus der Florastr.
 	X 9721,17806
 	X 11630,16623
+# 
 # REMOVED (wurde verlegt) ---	F 11548,16079
 #: note: Anforderungsampel
-#: off: night? (seen 2022-08-12 Fri 23:40)
+#: off: 2022-08-12 Fri 23:40
+#: off_rule: night?
 	F 11531,16053
+# 
 # REMOVED (keine Ampel (mehr?)) ---	X 12097,16263
 	X 12399,16479
 	X 12721,15807
@@ -2407,8 +2526,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4759,13992
 	X -4748,14237
 	X -4724,14482
-#: off: night (seen 2010-02-15 23:30)
+# 
+#: off: 2010-02-15 Mon 23:30
+#: off_rule: night
 	X -4220,14311
+# 
 	X -4378,14388
 	X -3842,14171
 	X -3638,14995
@@ -2423,8 +2545,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -2343,14446
 	X -834,15053
 	X -990,13502
-#: off: night (laut osm, siehe https://www.openstreetmap.org/note/2867081)
+# 
+#: off_rule: night	note=laut osm, siehe https://www.openstreetmap.org/note/2867081
 	X 1465,14963
+# 
 	X 1133,14387
 	X 4542,13244
 	X 5705,13359
@@ -2441,8 +2565,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8456,15235
 	X 9443,15430
 	X 9907,15618
-#: off: Sunday (seen 2023-05-21 13:45)
+# 
+#: off: 2023-05-21 Sun 13:45
+#: off_rule: Sun
 	X 10629,14299
+# 
 	X 11535,14900
 #: note: Anforderungsampel für Fußgänger und Radfahrer in der Relation Fröbelstr. - Raumerstr.
 	X 11776,15060
@@ -2457,14 +2584,34 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 13647,14912
 	X 12870,15342
-#: off: night (seen 2013-05-30 00:30)
+# 
+#: off: 2013-05-30 Thu 00:30
+#: off_rule: night
 	X 13273,12902
-#: off: night (seen Thu 2022-06-03 00:15, Mon 2023-03-06 23:00, Wed 2023-07-26 22:40, Wed 2024-01-03 22:51)
+# 
+#: off: 2022-06-03 Thu 00:15
+#: off: 2023-03-06 Mon 23:00
+#: off: 2023-07-26 Wed 22:40
+#: off: 2024-01-03 Wed 22:51
+#: off_rule: night
 	X 13644,13332
-#: off: night (seen Thu 2022-06-03 00:15, Fri 2022-08-12 23:55, Mon 2023-03-06 23:05, Wed 2023-07-26 22:40, Wed 2024-01-03 22:52)
+# 
+#: off: 2022-06-03 Thu 00:15
+#: off: 2022-08-12 Fri 23:55
+#: off: 2023-03-06 Mon 23:05
+#: off: 2023-07-26 Wed 22:40
+#: off: 2024-01-03 Wed 22:52
+#: off_rule: night
 	X 13741,13107
-#: off: night (seen Thu 2022-06-03 00:15, Fri 2022-08-12 23:55, Mon 2023-03-06 23:05, Wed 2023-07-26 22:40, Wed 2024-01-03 22:52)
+# 
+#: off: 2022-06-03 Thu 00:15
+#: off: 2022-08-12 Fri 23:55
+#: off: 2023-03-06 Mon 23:05
+#: off: 2023-07-26 Wed 22:40
+#: off: 2024-01-03 Wed 22:52
+#: off_rule: night
 	X 13844,12900
+# 
 	X 13073,13329
 	X 14771,14048
 	X 15912,13153
@@ -2500,10 +2647,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Kontaktschleife zumindest am Graetschelsteig
 	X -4412,12179
 	X -4351,12460
+# 
 #: note: nachts zwischen 22 Uhr und 5 Uhr ausgeschaltet; Anforderungsampel, Wartezeit für Fußgänger zwischen 5 Sekunden und 1 Minute
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4408&options=4 (Zeiten)
-#: off: 22:00-05:00
+#: off_rule: night=22:00..05:00	note=laut BVV-Drucksache
 	F 404,12414
+# 
 #: note: Anforderungsampel
 	F 1264,11840
 	F 1772,11126
@@ -2516,10 +2665,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderung für Radfahrer aus der Neuhofer Str. (beide Seiten)
 	X 17384,775
 	X 17518,564
+# 
 #: note: am Wochenende manchmal ausgeschaltet
-#: off: weekend
+#: off_rule: weekend?
 #: note: Anforderungsampel
 	F 16096,803
+# 
 	X 11791,834
 #: note: Anforderungsampel
 	F 11453,208
@@ -2546,9 +2697,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13501,2413
 	X 13010,2085
 	F 12547,1852
+# 
 #: note: am Wochenende ausgeschaltet (immer?)
-#: off: weekend
+#: off_rule: weekend?
 	X 12643,1706
+# 
 	X 12207,1704
 	X 11483,1401
 #: note: Anforderungsampel
@@ -2650,9 +2803,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel für Radfahrer im Zuge der Delbrückstr.; für Autos gibt es Kontaktschleifen
 	X 2190,8528
 	X 2121,8351
-#: off: weekend/holiday (seen 2013-05-01, seen 2022-08-28 14:00)
+# 
+#: off: 2013-05-01 holiday 12:49
+#: off: 2022-08-28 Sun 14:00
+#: off_rule: weekend holiday
 #: note: Anforderungsampel
 	F 1773,8859
+# 
 	X -5454,6896
 	X -5097,7361
 	X -4590,8666
@@ -2666,9 +2823,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23100,12269
 	X 23017,12177
 	X 20375,11694
-#: off: Sunday (seen 2014-01-04 afternoon)
+# 
+#: off: 2014-01-04 Sun 14:48
+#: off_rule: Sun
 #: note: Anforderungsampel
 	F 16650,11243
+# 
 	X 16786,11668
 	X 16958,11778
 	X 15904,12340
@@ -2680,8 +2840,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9569,11631
 	X 9568,12688
 	X 8775,12457
-#: off: Sunday (seen 2018-10-07 afternoon)
+# 
+#: off: 2018-10-07 Sun 17:05
+#: off_rule: Sun
 	X 8695,11015
+# 
 #: note: im Zuge Nikolsburger/Fasanenstr. hat man an der Mittelstreifenampel noch einmal Rot (gesehen: Sa nachmittags, 2025-08-20 (Mi) gegen 13:00)
 	X 5219,9808
 	X 3927,9935
@@ -2697,8 +2860,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15077,11910
 #: note: Rechtsabbiegeampel für Radfahrer von Norden, ist (immer? manchmal?) mit der Ampel an der Belziger Str. gekoppelt
 	X 6454,8653
-#: off: night (seen 2013-08-25 23:30)
+# 
+#: off: 2013-08-25 Sun 23:30
+#: off_rule: night?
 	X 14652,10201
+# 
 # REMOVED --- #: note: temporäre Baustellenampel, ist immer bei einer Sperrung der Karlshorster Str. eingeschaltet --- #: last_checked: 2012-11-02 --- #: next_check: 2012-11-05 --- X::inwork 14832,10512
 	F 13030,7346
 # REMOVED (keine Ampel (mehr?), evtl. wegen BAB) ---	X 12510,6508
@@ -2708,14 +2874,18 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13294,6386
 	X 13275,6382
 	X 8715,12956
+# 
 #: note: Anforderungsampel vvv
-#: off: Sunday (seen 2014-07-06 afternoon) vvv
 #: XXX_prog: nur auf der südlichen Fahrbahn relevant vvv
+#: off: 2014-07-06 Sun 15:06
+#: off_rule: Sun?
 	X 19985,11727
+#: off: 2014-07-06 Sun 15:07
+#: off_rule: Sun?
 	X 20114,11719
 #: XXX_prog ^^^
-#: off ^^^
 #: note ^^^
+# 
 	X 10849,17848
 	F 5605,14988
 	F 17810,5736
@@ -2740,8 +2910,17 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED (wieder komplette Ampel) --- #: XXX zurzeit nur eine Fußgängerampel, nach den Bauarbeiten evtl. wieder eine volle Autoampel (X) --- #: last_checked: 2013-05-24 --- #: next_check: 2013-12-31 (Invalidenstr.)
 	X 8685,13728
 	X 11629,9086
-#: off: night (seen 2014-10-29 23:30), Sunday (seen 2015-11-01 15:00, 2018-12-09 14:00, 2020-12-20 11:30, 2022-08-14 12:15, 2023-11-19 12:05, 2025-04-13 12:40)
+# 
+#: off: 2014-10-29 Wed 23:30
+#: off: 2015-11-01 Sun 15:00
+#: off: 2018-12-09 Sun 14:00
+#: off: 2020-12-20 Sun 11:30
+#: off: 2022-08-14 Sun 12:15
+#: off: 2023-11-19 Sun 12:05
+#: off: 2025-04-13 Sun 12:40
+#: off_rule: night Sun
 	X 15681,10801
+# 
 # REMOVED (seit 1.7.2004 gesperrt) ---	B 801,13323
 	X 21108,4725
 #: note: Anforderungsampel für linksabbiegende Radfahrer An der Wuhlheide -> Spindlersfelder Str.
@@ -2776,9 +2955,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: note: Anforderungsampel
 	F 10426,15705
 # REMOVED (aufgehoben, by: Kaja Kruse) --- X 10713,15753
-#: off: weekend (seen 2014-10-12)
+# 
+#: off: 2014-10-12 Sun 15:12
+#: off_rule: weekend?
 #: note: Anforderungsampel
 	X 1053,13790
+# 
 #: XXX_prog Ampel ist nach Osten versetzt, aber hier eingetragen, damit auch das Nord-Süd-Routing diese Ampel erfährt
 #: XXX_prog in Nord->Süd-Richtung gilt eigentlich nur die Ampel über die Straßenbahntrasse
 	F 10459,13760
@@ -2787,8 +2969,14 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 8571,11846
 	X 21829,4212
 	X 16868,5938
-#: off: weekend/night (seen Su 2015-07-19 16:40, Su 2019-09-22 ca. 10:00, Su 2020-03-15 13:00, Sa 2022-02-26 15:45)
+# 
+#: off: 2015-07-19 Sun 16:40
+#: off: 2019-09-22 Sun 09:56
+#: off: 2020-03-15 Sun 13:00
+#: off: 2022-02-26 Sat 15:45
+#: off_rule: weekend night
 	X 12520,12938
+# 
 	X 9454,12558
 	F 7702,10146
 	X 8430,10710
@@ -2797,7 +2985,11 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog gilt nicht für Radfahrer auf der Karlshorster Str. Richtung Süden
 	X 15272,10790
 	F 11270,13412
-#: off: night (seen Thu 2021-09-09 22:20, Thu 2023-05-11 22:30, Wed 2025-08-27 23:39)
+# 
+#: off: 2021-09-09 Thu 22:20
+#: off: 2023-05-11 Thu 22:30
+#: off: 2025-08-27 Wed 23:39
+#: off_rule: night
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020
@@ -2874,9 +3066,14 @@ S-Bahn und Regionalbahn	B 21562,12088
 	B0 8344,9085
 	B0 13928,7106
 	F 6276,10401
-#: off: Sunday (seen 2019-12-22 14:00, seen 2022-07-17 13:00)
-#: off: night (seen 2023-09-27 Wed 23:12, 2023-11-30 Thu 00:05)
+# 
+#: off: 2019-12-22 Sun 14:00
+#: off: 2022-07-17 Sun 13:00
+#: off: 2023-09-27 Wed 23:12
+#: off: 2023-11-30 Thu 00:05
+#: off_rule: night Sun
 	F 8985,13034
+# 
 #: note: Anforderungsampel
 	F -6512,12581
 	F -6275,12498
@@ -2886,9 +3083,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X -82,11178
 	F 3376,12086
 	F 6936,15888
+# 
 #: note: Anforderungsampel
-#: off: weekend (seen 2014-05-03)
+#: off: 2014-05-03 Sat 12:40
+#: off: 2014-05-03 Sat 16:12
+#: off_rule: weekend
 	F 1205,10114
+# 
 #: XXX_prog Ampel westlich versetzt, beim Rechtsabbiegen aus der südlichen Rognitzstr. und östlichen Kaiserdamm nicht relevant
 	F 2282,11463
 	F -4663,11574
@@ -2925,8 +3126,11 @@ Industriebahn	B0 -2410,13746
 	X 19777,12949
 	F 18197,18557
 	X 19896,16611
-#: off: weekend (seen 2015-12-26 12:00)
+# 
+#: off: 2015-12-26 holiday 12:00
+#: off_rule: weekend? holiday?
 	X 19428,16692
+# 
 #: note: Anforderung (2x) bei Querung der Landsberger Allee
 #: note: Anforderung für Radfahrer beim Rechtsabbiegen aus der Hauptfahrbahn der Landsberger Allee
 	F 16010,14326
@@ -2968,10 +3172,13 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 12597,6293
 #: note: Anforderungsampel
 	F 12694,2544
+# 
 # REMOVED --- #: note: Anforderungsampel --- #: off: weekend (seen Sat 2016-05-21 17:00) ---	F 17834,11192
 #: note: Anforderungsampel
-#: off: Sunday (seen Sun 2017-11-05 11:00)
+#: off: 2017-11-05 Sun 11:00
+#: off_rule: Sun
 	F 17861,11210
+# 
 	X 22724,6608
 	X 20283,2461
 	X 20196,2392
@@ -3041,17 +3248,23 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 4982,5789
 #: note: keine Anforderungsampel, wahrscheinlich gleichgeschaltet mit der Ampel an der Grunewaldstr.
 	F 4900,5648
+# 
 #: note: Anforderungsampel
-#: off: night (seen 2023-09-14 (Th) 22:50)
+#: off: 2023-09-14 Thu 22:50
+#: off_rule: night
 	F 6333,7708
+# 
 #: note: am Wochenende nicht eingeschaltet
 	X 8868,2061
 #: note: am Wochenende nicht eingeschaltet
 #: note: Anforderungsampel
 	F 9034,1953
-#: off: Sunday (seen 2020-09-06 13:30)
+# 
 #: note: Kontaktschleife und Anforderung für Radfahrer aus der Degnerstr.
+#: off: 2020-09-06 Sun 13:30
+#: off_rule: Sun
 	X 17014,16724
+# 
 #: note: Kontaktschleife (und Anforderung für Fußgänger) aus der Voltairestr.
 	X 11329,12497
 	X 18929,2454
@@ -3094,9 +3307,13 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 13890,9894
 	X 16485,12384
 	X 1945,2127
+# 
 #: note: Anforderungsampel
-#: off: weekend (seen 2014-04-27, 2020-06-21)
+#: off: 2014-04-27 Sun 15:15
+#: off: 2020-06-21 Sun 13:35
+#: off_rule: weekend?
 	F 4924,3148
+# 
 	X -3923,13060
 	B -5242,17405
 #: XXX_prog: Ampel gilt nicht auf dem Radweg
@@ -3164,10 +3381,15 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 9391,3651
 #: note: Anforderungsampel
 	F 16590,14386
-#: off: night? (seen Fri 2022-08-12 23:50)
+# 
+#: off: 2022-08-12 Fri 23:50
+#: off_rule: night?
 	X 14052,13389
-#: off: night? (seen Fri 2022-08-12 23:50)
+# 
+#: off: 2022-08-12 Fri 23:50
+#: off_rule: night?
 	X 14109,13449
+# 
 #: XXX_prog Radfahrer Richtung Heinz-Galinski-Str. müssen auch die Fußgängerampel benutzen; insgesamt drei Ampeln, unabhängig voneinander geschaltet
 #: XXX_prog Richtung Osten für Radfahrer auf dem Radweg nicht relevant (keine Haltelinie)
 #: note: Anforderungsampel
@@ -3226,8 +3448,11 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	X 13919,10583
 	X 21115,271
 	X 17483,6024
-#: off: night? (seen 2022-08-12 Fri 23:50)
+# 
+#: off: 2022-08-12 Fri 23:50
+#: off_rule: night?
 	F 13731,14200
+# 
 	X 9509,12117
 #: note: Anforderungsampel, ist aber manchmal (tagsüber? oder immer?) automatisch aktiviert
 	F 13142,10530
@@ -3239,17 +3464,28 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX_prog versetzt geschaltet (gesehen: Fr 2015-03-13 nachmittags)
 #: XXX_prog eigentlich sollen Radfahrer aus der Türken- in die Kongostr. diese Ampel benutzen, aber man könnte theoretisch auch die andere Radfahrerfurt nehmen
 	F 6429,16337
-#: off: Sunday (seen 2020-06-21 15:00, 2021-09-12 13:00)
+# 
+#: off: 2020-06-21 Sun 15:00
+#: off: 2021-09-12 Sun 13:00
+#: off_rule: Sun
 	X 11871,5195
-#: off: Sunday (seen 2020-06-21 15:00, 2021-09-12 13:00)
+# 
+#: off: 2020-06-21 Sun 15:00
+#: off: 2021-09-12 Sun 13:00
+#: off_rule: Sun
 	X 12060,5204
+# 
 	F 2580,24028
 	X 13398,15826
 	F 6440,6707
+# 
 # REMOVED (nö, in beiden Richtungen nur Fußgängerampel) --- #: XXX_prog: Richtung Osten reguläre Ampel, Richtung Westen nur Fußgängerampel
-#: off: Sunday (seen 2019-10-13 14:30, 2022-09-04 12:15)
+#: off: 2019-10-13 Sun 14:30
+#: off: 2022-09-04 Sun 12:15
+#: off_rule: Sun
 #: note: Anforderungsampel
 	F 7315,7814
+# 
 # REMOVED (temporäre Ampel existiert nicht mehr und wird auch nicht mehr eingerichtet) --- #: XXX existiert diese Ampel noch? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5227&options=4 ---	F 18413,7774
 # REMOVED (existiert nicht mehr) ---	X 16187,10033
 #: by: Wolfhard Schleese vvv
@@ -3274,8 +3510,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX_prog: beide Ampeln sind getrennt geschaltet, man muss auf dem Mittelstreifen neu anfordern; 2024-12-11: stimmt das noch? heute war das nicht der Fall (W->O)
 	F 7713,16557
-#: off: Sunday (seen 2025-06-01 13:48)
+# 
+#: off: 2025-06-01 Sun 13:48
+#: off_rule: Sun
 	X 5000,12781
+# 
 #: XXX_prog: gilt nicht in Fahrtrichtung Südwest
 	F 5754,13170
 	X 20150,13562
@@ -3296,17 +3535,25 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer in der Relation Breitscheidplatz (NO) - Schildhornstr. (SO)
 	X 4074,6681
 	X 4103,6716
+# 
 #: note: Anforderungsampel
-#: off: Sunday (seen 2019-10-13 13:00, 2020-03-15 12:00, 2023-05-21 12:40)
+#: off: 2019-10-13 Sun 13:00
+#: off: 2020-03-15 Sun 12:00
+#: off: 2023-05-21 Sun 12:40
+#: off_rule: Sun
 	F 11148,19838
+# 
 	F 14633,2145
 	X 9267,15790
 	X 8079,16953
 	F 9461,17554
 #: note: Anforderungsampel
 	F 9170,17161
-#: off: night (seen 2022-06-30 23:00)
+# 
+#: off: 2022-06-30 Thu 23:00
+#: off_rule: night?
 	F 9218,11793
+# 
 	X 9183,12076
 #: by: rjoop
 #: note: Anforderungsampel
@@ -3326,8 +3573,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog: nur relevant für Radfahrer Richtung Norden
 	X 21308,3644
 	X -7484,13770
-#: off: Sunday (seen 2015-04-26 12:00)
+# 
+#: off: 2015-04-26 Sun 12:00
+#: off_rule: Sun
 	F 17997,8695
+# 
 #: note: Anforderungsampel
 #: XXX_prog für Radfahrer auf der Invalidenstr. in Richtung Osten keine Haltelinie, also nur bzgl. StVO §1 relevant
 	F 8332,13548
@@ -3373,8 +3623,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 18445,2642
 #: note: Kontaktschleife für Linksabbieger Sterndamm -> Stubenrauchstr., außerdem eine Anforderung für Radfahrer auf dem Radweg
 	X 17364,3565
-#: off: night (seen 2023-09-14 (Th) 23:00)
+# 
+#: off: 2023-09-14 Thu 23:00
+#: off_rule: night
 	F 8053,9123
+# 
 	F 6445,8949
 	X 5360,6642
 #: note: Anforderungsampel
@@ -3388,17 +3641,34 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 8901,12008
 #: XXX_prog: Kontaktschleifen/Anforderungsampeln in Zuge Meeraner Str. - Rhinstr./Wohngebiet
 	X 18198,13816
-#: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (Sa 2014-09-27 15:30 eingeschaltet; Sa 2015-09-12 17:30 eingeschaltet; Sa 2016-02-13 14 und 16 Uhr eingeschaltet, Sa 2016-06-04 gegen 17 Uhr eingeschaltet)
+# 
 #: note: Anforderungsampel
-#: off: night
-#: off: Sunday & holiday (seen 2014-09-21 afternoon, 2015-03-15 afternoon, 2015-05-10 afternoon, 2015-08-09 afternoon, 2016-05-29 afternoon, 2016-06-16 noon, 2017-12-03 noon, 2019-12-26 noon, 2022-03-20 noon, 2024-09-08 Sun 08:14)
+#: off: 2014-09-21 Sun 16:17
+#: on:  2014-09-27 Sat 15:30
+#: off: 2015-03-15 Sun 16:01
+#: off: 2015-05-10 Sun 16:07
+#: off: 2015-08-09 Sun 17:08
+#: on:  2015-09-12 Sat 17:30
+#: on:  2016-02-13 Sat ~14:00
+#: on:  2016-02-13 Sat ~16:00
+#: off: 2016-05-29 Sun 14:54
+#: on:  2016-06-04 Sat ~17:00
+#: off: 2017-12-03 Sun 13:37
+#: off: 2019-12-26 holiday 12:38
+#: off: 2022-03-20 Sun 11:15
+#: off: 2024-09-08 Sun 08:14
+#: off_rule: night Sun holiday
 	F 14802,11784
+# 
 	X -1810,16391
 #: note: Anforderung für geradeaus fahrende Radfahrer Richtung Osten
 	X -1675,16813
-#: note: Bedarfsampeln, am Wochenende abgeschaltet (by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4302&options=4)
-#: off: weekend
+# 
+#: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=4302 (Bedarfsampeln, am Wochenende abgeschaltet)
+#: note: Anforderungsampel
+#: off_rule: weekend	note=laut BVV-Drucksache
 	F -2088,13413
+# 
 #: note: Anforderungsampel
 	F 417,12115
 #: note: Anforderungsampel
@@ -3433,11 +3703,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100805.1445.305319.html
 #: confirmed_by: srt
 	X -7365,15306
+# 
 # REMOVED (Verlegung wurde nicht genehmigt) --- #: XXX Ampel wird vielleicht zur Roedernstr. verlegt --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4836&options=4 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7323 --- #: osm_watch: node id="3894817812" version="1" --- #: last_checked: 2016-08-20 --- #: check_frequency: 360d
-#: off: weekend
+#: off_rule: weekend?
 	F 23933,8879
-#: off: weekend
+# 
+#: off_rule: weekend?
 	F 24435,10065
+# 
 	F 25546,5359
 #: by: Germar Molter
 #: note: keine reine Fußgängerampel: Radfahrer zwischen Knaackstr. und Lychener Str. müssen sie auch benutzen (mit Anforderung)
@@ -3476,9 +3749,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog gilt auch für das Linksabbiegen in die Wadzeckstr.
 #: note: Anforderungsampel
 	F 11070,13357
+# 
 #: note: Anforderungsampel, auf der Mittelinsel "gegenläufig" geschaltet
-#: off: night (seen Mon 2023-03-06 22:20)
+#: off: 2023-03-06 Mon 22:20
+#: off_rule: night
 	F 13560,15318
+# 
 	X 9544,17629
 	F 6347,17381
 	F 11913,19144
@@ -3501,8 +3777,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F -8603,6973
 #: XXX_prog: Ampel gilt nicht für Radfahrer
 	F 15468,13700
-#: off: außerhalb der Geschäftszeiten (seen Su 2015-07-19 15:30)
+# 
+#: off: 2015-07-19 Sun 15:30
+#: off_rule: outside_businesstime
 	F 13125,17758
+# 
 	F 7602,305
 #: XXX_prog: nicht relevant für Radfahrer (wegen der Radwegbenutzungspflicht)
 	F 7404,-110
@@ -3537,8 +3816,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 23617,15594
 #: XXX_prog für Radfahrer auf dem freigegebenen Gehweg nicht relevant
 	F 24556,12056
-#: off: Sunday
+# 
+#: off_rule: Sun?
 	F 24936,4838
+# 
 #: note: Anforderungsampel für Radfahrer aus Richtung Südosten
 	X 23942,5338
 	F 11033,13086
@@ -3664,13 +3945,21 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: wosch
 #: note: Anforderungsampel
 	F 9659,14043
+# 
 #: XXX_prog Ampel existiert nur in Richtung Norden
-#: off: Sunday (seen 2019-11-03 14:50, 2022-10-03 10:50)
+#: off: 2019-11-03 Sun 14:50
+#: off: 2022-10-03 Sun 10:50
+#: off_rule: Sun
 	X 5086,14504
-#: off: Sunday? (seen 2022-10-03 (holiday) 10:50)
+# 
+#: off: 2022-10-03 holiday 10:50
+#: off_rule: Sun? holiday?
 	X 5205,14253
-#: off: weekend/holiday (seen 2022-10-03 (holiday) 11:20)
+# 
+#: off: 2022-10-03 holiday 11:20
+#: off_rule: weekend? holiday?
 	X 1932,14146
+# 
 	F -2866,17760
 	X -2728,17038
 	F 8772,10814
@@ -3708,8 +3997,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F0 -3693,13012
 	X 9934,2307
 	F 16487,17785
-#: off: Sunday (seen 2019-11-03 15:00)
+# 
+#: off: 2019-11-03 Sun 15:00
+#: off_rule: Sun
 	F 3517,13067
+# 
 #: note: Anforderungsampel
 	F 8348,5184
 	X 12628,6166
@@ -3745,8 +4037,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX_prog gilt nicht für Radfahrer auf dem Radweg
 	F 18198,7425
-#: off: night (seen 2013-08-25 22:30)
+# 
+#: off: 2013-08-25 Sun 22:30
+#: off_rule: night
 	F 11579,-3093
+# 
 #: note: Anforderungsampel
 	F 9447,5641
 #: note: Anforderungsampel
@@ -3848,8 +4143,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: next_check_id: ZIMMERMANNSTRBR-2015 vvv --- #: XXX temporäre Ampeln vvv --- #: last_checked: 2016-06-19 vvv --- #: next_check: 2016-09-15 vvv ---	X::inwork 21164,9960 ---	X::inwork 22129,9702
 #: note: Anforderung für Radfahrer & Kontaktschleife; Anforderung auch für Linksabbieger aus Alt-Mahlsdorf
 	X 24806,11261
-#: off: weekend (gesehen: Sa 2015-09-12 nachmittags)
+# 
+#: off: 2015-09-12 Sat 17:16
+#: off_rule: weekend?
 	F 9274,13963
+# 
 	X 9148,13944
 #: note: Anforderungsampel
 	F 10462,3765
@@ -3880,10 +4178,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (bei osm wieder eingezeichnet) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: XXX wird diese Ampel jemals wieder in Betrieb genommen? zumindest gibt es noch die Haltelinien, aber alle Masten wurden zurückgebaut --- #: osm_watch: node id="28321258" version="11" --- #: last_checked: 2023-11-25 (mapillary) --- #: check_frequency: 180d --- #: next_check: 2024-04-30
 #: note: Anforderungsampel
 	F -215,16088
+# 
 #: note: Anforderungsampel
-#: off: Sunday (gesehen 2016-10-03 gegen 15:45)
-#: on: Samstag (gesehen 2016-10-08 gegen 15:00)
+#: off: 2016-10-03 Sun ~15:45
+#: on:  2016-10-08 Sat ~15:00
+#: off_rule: Sun
 	F 3273,14738
+# 
 	F 14810,10832
 # 
 #: note: Anforderungsampel für Radfahrer aus/in Richtung Priesterweg
@@ -3895,9 +4196,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 7533,14702
 	X 25312,11186
-#: note: vermutlich nur an Werktagen angeschaltet
-#: off: weekend (seen 2017-07-15 11:45 (Sat))
+# 
+#: note: vermutlich nur Mo-Fr angeschaltet
+#: off: 2017-07-15 Sat 11:45
+#: off_rule: weekend?
 	X -1947,14394
+# 
 #: note: Anforderungsampel
 #: XXX_prog Ampel gilt nicht für Radfahrer auf dem Radweg, zumindest Richtung Westen
 	F 546,12720
@@ -4285,8 +4589,11 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 # 
-#: off: Pfingstmontag 2016-05-16 gegen 13 Uhr
+# 
+#: off: 2016-05-16 holiday ~13:00	note=Pfingstmontag
+#: off_rule: holiday?
 	F -7554,13514
+# 
 #: note: Anforderungsampel
 	F 980,1893
 #: note: Anforderungsampel
@@ -4345,8 +4652,12 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 	X 226,-11083
 	X -74,-10823
 	X 13960,-21244
-#: off: 2023-06-04 (Sun) gegen 10 Uhr, 2025-06-21 (Sat) gegen 14:30 Uhr
+# 
+#: off: 2023-06-04 Sun ~10:00
+#: off: 2025-06-21 Sat ~14:30
+#: off_rule: weekend?
 	F 26589,-9108
+# 
 	X -8647,-41731
 	F -10116,-46120
 #: note: Anforderungsampel
@@ -4369,8 +4680,11 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: XXX_prog ^^^
 	F -3495,23770
 	F -3666,22384
-#: off: 2022-06-12 (Sun) gegen 10 Uhr
+# 
+#: off: 2022-06-12 Sun ~10:00
+#: off_rule: Sun?
 	F -3136,25693
+# 
 	X -3049,25593
 	X -10032,-45258
 #: note: Anforderungsampel
@@ -4874,8 +5188,11 @@ unbeschrankter Bahnübergang	B0 -19229,62430
 	X 18777,-1298
 #: note: vier einzelne Ampeln
 	X 18475,-800
-#: off: weekend (?) (seen 2019-03-30)
+# 
+#: off: 2019-03-30 Sat 16:47
+#: off_rule: weekend?
 	F 18561,-566
+# 
 nur Museumsbetrieb der Heidekrautbahn	B0 7975,25642
 nur Museumsbetrieb der Heidekrautbahn	B0 8075,26125
 nur Museumsbetrieb der Heidekrautbahn	B0 8209,26804
