@@ -735,28 +735,66 @@ The type (in this case &quot;Street&quot;) denotes the kind of the link.
 <p class="POD_TEXT">
 This directive is currently used in <code>ubahnhof</code> and <code>sbahnhof</code>.
 </p>
+<dt class="POD_ITEM"><a name="off_YYYY_MM_DD_WWW_H"><code>off: <i>YYYY-MM-DD WWW HH:MM</i> <i>rest</i></code></a>
+<dd>
+Mark feature as being off at the specified time. Usually used for
+traffic lights which are usually on, so it&#39;s found in <code>ampeln-orig</code>.
+<i>WWW</i> is the weekday, or the string <code>holiday</code>. <i>HH:MM</i> may be
+preceded by a <code>~</code> if the time is not exact. The <i>rest</i> part is
+optional and if used, must follow after a tab character and consist of
+one or more key=value pairs (e.g. <code>by=...</code>, <code>note=...</code>, also
+separated by tab characters.
+<p class="POD_TEXT">
+Example entries:
+</p>
+<pre class="POD_VERBATIM">
+    #: off: 2001-12-25 holiday ~20:00	
+    #: off: 2025-09-08 Mon 06:45 &lt;tab&gt; by=me &lt;tab&gt; note=something
+</pre>
+<dt class="POD_ITEM"><a name="off_rule_rule_rule_r"><code>off_rule: <i>rule</i> <i>rule</i> ... <i>rest</i></code></a>
+<dd>
+One or more rule labels (separated by spaces) for off times. Currently
+the following rule labels may be used:
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="holiday">holiday</a>
+<dd>
+State holidays valid for this area.
+<dt class="POD_ITEM"><a name="weekend">weekend</a>
+<dd>
+Sat+Sun
+<dt class="POD_ITEM"><a name="Sat">Sat</a>
+<dt><a name="Sun">Sun</a>
+<dd>
+Other weekday names may also be used, if needed
+<dt class="POD_ITEM"><a name="night">night</a>
+<dt><a name="night_22_00_">night=22:00..</a>
+<dt><a name="night_22_00_05_00">night=22:00..05:00</a>
+<dd>
+The start and end time may be specified if known.
+<dt class="POD_ITEM"><a name="schooltime">schooltime</a>
+<dt><a name="outside_schooltime">outside_schooltime</a>
+<dt><a name="businesstime">businesstime</a>
+<dt><a name="outside_businesstime">outside_businesstime</a>
+<dt><a name="event">event</a>
+<dd>
+This one is usually used with <code>on_rule</code> directives.
+</dl>
+<p class="POD_TEXT">
+Each rule label may have a <code>?</code> attached if the rule is not certain.
+</p>
+<dt class="POD_ITEM"><a name="on_YYYY_MM_DD_WWW_HH"><code>on: <i>YYYY-MM-DD WWW HH:MM</i> <i>rest</i></code></a>
+<dd>
+Used in <code>ampeln-orig</code> if a traffic light is (unexpectedly) on. Can
+also be used as a data point for specifying exact on/off rules.
+<dt class="POD_ITEM"><a name="on_rule_rule_rule_re"><code>on_rule: <i>rule</i> <i>rule</i> ... <i>rest</i></code></a>
+<dd>
+Use for traffic lights which are most of the time off. Notable
+examples could be traffic lights which are only on during events (in
+Berlin there are examples found around Olympiastadion). Usually such
+traffic lights have the category <code>X0</code> or <code>F0</code>.
 </dl>
 <h4 class="POD_HEAD3"><a name="Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a></h4>
 <dl class="POD_LIST">
-<dt class="POD_ITEM"><a name="off_when_comment"><code>off: <i>when</i> <i>comment</i></code></a>
-<dd>
-Currently used in <code>ampeln-orig</code>, needs to be decided on the exact
-format and even on the directive name. Example entry:
-<pre class="POD_VERBATIM">
-    #: off: night (seen 2001-12-25)
-</pre>
-<p class="POD_TEXT">
-The <i>comment</i> part may be completely missing.
-</p>
-<p class="POD_TEXT">
-Currently the following labels are used in the <i>when</i> part: <code>night</code>,
-<code>weekend</code>, <code>holiday</code>, week day names, <code>except_schooltime</code>,
-<code>except_event</code>, <i>HH:MM-HH:MM</i>.
-</p>
-<dt class="POD_ITEM"><a name="on_when_comment"><code>on: <i>when</i> <i>comment</i></code></a>
-<dd>
-Used in <code>ampeln-orig</code> if a traffic light is unexpectedly on (e.g.
-because it&#39;s usually off on Sundays or so).
 <dt class="POD_ITEM"><a name="internal_note_string"><code>internal_note: <i>string</i></code></a>
 <dd>
 A free text note, which must not appear in the processed data. It is
@@ -1329,11 +1367,11 @@ for other purposes (i.e. display). See <a class="POD_LINK" href="#igndisp">igndi
 <dd>
 Mark a &quot;temporary&quot; entry, which is non-recurring. Used in temp
 blockings. Currently rendered with a &quot;calendar&quot; sign.
-<dt class="POD_ITEM"><a name="night">night</a>
+<dt class="POD_ITEM"><a name="night1">night</a>
 <dd>
 Mark a temporary blocking which is active only at night. Currently
 rendered with a &quot;moon&quot; sign.
-<dt class="POD_ITEM"><a name="weekend">weekend</a>
+<dt class="POD_ITEM"><a name="weekend1">weekend</a>
 <dd>
 Mark a temporary blocking which is active at weekend. Currently not
 rendered.

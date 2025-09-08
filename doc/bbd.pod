@@ -738,29 +738,83 @@ The type (in this case "Street") denotes the kind of the link.
 
 This directive is currently used in F<ubahnhof> and F<sbahnhof>.
 
+=item C<off: I<YYYY-MM-DD WWW HH:MM> I<rest>>
+
+Mark feature as being off at the specified time. Usually used for
+traffic lights which are usually on, so it's found in F<ampeln-orig>.
+I<WWW> is the weekday, or the string C<holiday>. I<HH:MM> may be
+preceded by a C<~> if the time is not exact. The I<rest> part is
+optional and if used, must follow after a tab character and consist of
+one or more key=value pairs (e.g. C<by=...>, C<note=...>, also
+separated by tab characters.
+
+Example entries:
+
+    #: off: 2001-12-25 holiday ~20:00	
+    #: off: 2025-09-08 Mon 06:45 <tab> by=me <tab> note=something
+
+=item C<off_rule: I<rule> I<rule> ... I<rest>>
+
+One or more rule labels (separated by spaces) for off times. Currently
+the following rule labels may be used:
+
+=over
+
+=item holiday
+
+State holidays valid for this area.
+
+=item weekend
+
+Sat+Sun
+
+=item Sat
+
+=item Sun
+
+Other weekday names may also be used, if needed
+
+=item night
+
+=item night=22:00..
+
+=item night=22:00..05:00
+
+The start and end time may be specified if known.
+
+=item schooltime
+
+=item outside_schooltime
+
+=item businesstime
+
+=item outside_businesstime
+
+=item event
+
+This one is usually used with C<on_rule> directives.
+
+=back
+
+Each rule label may have a C<?> attached if the rule is not certain.
+
+=item C<on: I<YYYY-MM-DD WWW HH:MM> I<rest>>
+
+Used in F<ampeln-orig> if a traffic light is (unexpectedly) on. Can
+also be used as a data point for specifying exact on/off rules.
+
+=item C<on_rule: I<rule> I<rule> ... I<rest>>
+
+Use for traffic lights which are most of the time off. Notable
+examples could be traffic lights which are only on during events (in
+Berlin there are examples found around Olympiastadion). Usually such
+traffic lights have the category C<X0> or C<F0>.
+
 =back
 
 =head3 Obsolete and to-be-decided directives
 
 =over
-
-=item C<off: I<when> I<comment>>
-
-Currently used in F<ampeln-orig>, needs to be decided on the exact
-format and even on the directive name. Example entry:
-
-    #: off: night (seen 2001-12-25)
-
-The I<comment> part may be completely missing.
-
-Currently the following labels are used in the I<when> part: C<night>,
-C<weekend>, C<holiday>, week day names, C<except_schooltime>,
-C<except_event>, I<HH:MM-HH:MM>.
-
-=item C<on: I<when> I<comment>>
-
-Used in F<ampeln-orig> if a traffic light is unexpectedly on (e.g.
-because it's usually off on Sundays or so).
 
 =item C<internal_note: I<string>>
 
