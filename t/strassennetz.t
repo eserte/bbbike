@@ -237,11 +237,24 @@ if ($do_xxx) {
 {
     pass("-- Bug reported by Dominik --");
 
-    my $path = [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]];
+    # Idea of this test case:
+    # The first two coordinates are on the street net,
+    # the 3rd one is near the 2nd one, but not on the street net,
+    # the 4th is the same as th 2nd,
+    # and finally the 5th is again on the street net.
+    # Even despite of the "off coordinate" there should be no undefined angles.
+    my $path = [[-3025,10116],[-2774,10345],[-2766,10325],[-2774,10345],[-2568,10271]];
     my(@route) = $s_net->route_to_name($path);
-    my $got_undef = 0;
-    for (@route[0..$#route-1]) { $got_undef++ if !defined $_->[StrassenNetz::ROUTE_ANGLE] }
-    is($got_undef, 0);
+    if ($route[0]->[StrassenNetz::ROUTE_NAME] !~ /Havelchaussee/ ||
+	$route[-1]->[StrassenNetz::ROUTE_NAME] !~ /Am Postfenn/) {
+	diag "Unexpected route found; maybe street names or coordinates in the data (near Havelchaussee/Am Postfenn) changed?";
+	diag explain(\@route);
+	fail("Unexpected route");
+    } else {
+	my $got_undef = 0;
+	for (@route[0..$#route-1]) { $got_undef++ if !defined $_->[StrassenNetz::ROUTE_ANGLE] }
+	is($got_undef, 0);
+    }
 
 }
 
