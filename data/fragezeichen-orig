@@ -2581,6 +2581,7 @@ Tietzenweg: geplante Fahrradstraße	?::projected 3425,4541 3501,4435 3557,4355 35
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414111.php (zwischen Transvaalstraße und Afrikanische Straße)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/25-04-30_togostrvzp.pdf
 #: by: https://entwicklungsstadt.de/neue-fahrradstrasse-in-der-togostrasse-bezirk-mitte-setzt-radverkehrsoffensive-fort/
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1596479.php (Beginn (Baustart?) ab der zweiten Septemberwoche 2025)
 #: osm_watch: way id="597289462" version="10"
 #: osm_watch: way id="4605293" version="30"
 #: osm_watch: note 3954758 5
@@ -2589,7 +2590,7 @@ Tietzenweg: geplante Fahrradstraße	?::projected 3425,4541 3501,4435 3557,4355 35
 #: XXX Vorfahrt für Togostraße
 # REMOVED (hier bereits realisiert) --- #: osm_watch: way id="281071129" version="8"
 #: last_checked: 2025-09-03
-#: check_frequency: 120d
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
 # REMOVED (hier realisiert) --- Togostr.: Ausweisung als Fahrradstraße?	? 6530,15849 6383,15972 6244,16096
 # REMOVED (hier sowieso nur Radweg) --- Togostr.: Ausweisung als Fahrradstraße?	? 6244,16096 6104,16223
@@ -5615,7 +5616,7 @@ Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 1498
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2025-09-04
+#: last_checked: 2025-09-09
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -7622,7 +7623,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-09-07
+#: last_checked: 2025-09-09
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8256,7 +8257,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2025-09-04
+#: last_checked: 2025-09-09
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -9204,11 +9205,12 @@ Neues Ufer: verkehrsberuhigter Bereich geplant	? 4283,13660 4363,13336
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1542341.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1541398.php
 #: by: https://www.infravelo.de/projekt/uferstrasse/ (3. Quartal 2025 - 4. Quartal 2025)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1596479.php (Baustart voraussichtlich ab Monatsende September 2025)
 #: osm_watch: way id="1352120015" version="4"
 #: osm_watch: way id="4603200" version="30"
 #: osm_watch: note 3954759 4
-#: last_checked: 2025-09-03
-#: check_frequency: 90d
+#: last_checked: 2025-09-09 (BA-Pressemitteilung)
+#: check_frequency: 45d
 #: next_check: 2025-12-31 (entwicklungsstadt website, infravelo)
 Uferstr.: Fahrradstraße geplant	? 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
 # 
@@ -9310,9 +9312,10 @@ Steinstr. (Neuruppin): Erstellung eines Schutzstreifens	? -30936,57385 -30806,57
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1567660.php (Umsetzung in der zweiten Jahreshälfte 2025)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414263.php
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1596479.php (Baustart Anfang September 2025)
 #: osm_watch: note 3954738 9
 #: last_checked: 2025-09-03
-#: check_frequency: 90d
+#: check_frequency: 30d
 #: next_check: 2025-12-31
 Nordufer: neue Fahrradstraße geplant	?::projected 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831 6929,14845 7000,14832 7129,14787
 # 
@@ -9411,8 +9414,8 @@ Kohlfurter Str.: Umbenennung in Regina-Jones-Str.	?::sign 11512,10105 11464,1010
 #: by: https://www.morgenpost.de/bezirke/mitte/article409628185/bauarbeiten-starten-melchiorstrasse-wird-zur-fahrradstrasse.html
 #: XXX Wird es während der Bauarbeiten zu Einschränkungen kommen?
 #: osm_watch: note 3954739 5
-#: last_checked: 2025-08-29 (keine Anzeichen für Bauarbeiten)
-#: check_frequency: 21d
+#: last_checked: 2025-09-09 (Markierungsarbeiten)
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-08-04 (BA, Beginn der Bauarbeiten)
 # REMOVED --- #: next_check: 2025-09-30 (BA)
 Melchiorstr.: Fahrradstraße mit Vorfahrtsregelung geplant	?::projected 11917,11186 11726,11265 11542,11342
@@ -9466,6 +9469,7 @@ Sellerpark - Erika-Heß-Eisstadion: neue Wegverbindung wird entstehen	? 7866,1454
 Zingergraben: Widmung einer Grünanlage - gibt es Auswirkungen auf den Radverkehr?	? 8993,19595 9039,19486
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~31-07-2025-b-109-vogelsang-und-hammelspring-bruecke-u-radweg (Länge etwa 800m letzter Bauabschnitt ab Frühjahr/Sommer 2026)
+#: source_id: LS/221-E/25/114 (bis 30.09.2025)
 #: next_check: 2026-09-30
 Hammelspring - Vogelsang: Bau eines Radwegs	? 10218,73220 10148,73146 9760,72696 9647,72570 9586,72496
 # 
@@ -9483,7 +9487,7 @@ Hauptstr. (Nebenarm): soll als verkehrsberuhigter Bereich ausgewiesen werden	?::
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2025-09-04
+#: last_checked: 2025-09-09
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)

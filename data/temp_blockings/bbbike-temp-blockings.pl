@@ -29188,7 +29188,7 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inw
 #: osm_watch: way id="580507889" version="35"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-07-29 (osm)
+#: last_checked: 2025-09-02 (mapillary)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -41330,9 +41330,9 @@ EOF
 EOF
      },
      { from  => 1755295119, # 1690196400, # 2023-07-24 13:00
-       until => $isodate2epoch->("2025-09-09 10:00:00"), # undef, # 1696768574, # $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
+       until => $isodate2epoch->("2025-10-17 23:59:59"), # $isodate2epoch->("2025-09-09 10:00:00"), # undef, # 1696768574, # $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
 #      text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
-       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 09.09.2025',
+       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 17.10.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: note: --- alte Meldung von 2023 ---
@@ -41342,11 +41342,11 @@ EOF
 #: source_id: bvg2021:m1#BVG327081_0
 #: note: --- neue Meldung von 2025 ---
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,836205#msg-836205 (es sieht so aus, als ob man als Radfahrer an der Schadensstelle vorbeifahren könnte)
-#: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025)
+#: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025) (bis 17.10.2025)
 # REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
-#: last_checked: 2025-08-15 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-09-09 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-09-09 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q4::inwork 10178,20525 10066,20494
 EOF
      },
@@ -44885,7 +44885,7 @@ EOF
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-09-04 vvv
+#: last_checked: 2025-09-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -47445,12 +47445,12 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 EOF
      },
      { from  => 1741503600, # 2025-03-09 08:00
-       until => $isodate2epoch->("2025-09-12 17:00:00"), # 1748617200, # 2025-05-30 17:00
-       text  => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 12.09.2025',
+       until => $isodate2epoch->("2025-09-26 17:00:00"), # 1748617200, # 2025-05-30 17:00
+       text  => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 26.09.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
-#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv)
+#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025)
 #: source_id: LS/222-W/25/089 (bis 12.09.2025)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 EOF
@@ -47512,12 +47512,12 @@ EOF
 EOF
      },
      { from  => 1741240800, # 2025-03-06 07:00
-       until => 1757343600, # 2025-09-08 17:00
-       text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 08.09.2025 17:00',
+       until => $isodate2epoch->("2025-09-19 23:59:59"), # 1757343600, # 2025-09-08 17:00
+       text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 19.09.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
-#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025)
+#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
@@ -48158,7 +48158,7 @@ EOF
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-09-03 vvv
+#: last_checked: 2025-09-09 (osm) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -49085,7 +49085,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,re-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-03 (traffic)
+#: last_checked: 2025-09-09 (traffic)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-08-29 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -49202,7 +49202,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-08-26
+#: last_checked: 2025-09-09
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401

@@ -162,12 +162,13 @@ Am Niederfeld/Lassaner Str./Rosenhagener Str.: Gegenverkehrsregelung	X::inwork::
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025)
+#: source_id: viz2021:13.39434,52.50697,09.09.2025,12:00 (bis 30.10.2025)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
 #: by: https://entwicklungsstadt.de/gefaehrliche-kreuzung-in-kreuzung-rudi-dutschke-strasse-soll-sicherer-werden/
 #: note: außerdem Anforderungsampel für querende Fußgänger
 #: last_checked: 2025-08-05
-#: next_check: 2025-09-09 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250521
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
 # 
@@ -564,7 +565,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2025-08-29
+#: last_checked: 2025-09-09
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521

@@ -4238,7 +4238,7 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inw
 #: osm_watch: way id="580507889" version="35"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-07-29 (osm)
+#: last_checked: 2025-09-02 (mapillary)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -6611,18 +6611,18 @@ Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 #: source_id: bvg2021:m1#BVG327081_0
 #: note: --- neue Meldung von 2025 ---
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,836205#msg-836205 (es sieht so aus, als ob man als Radfahrer an der Schadensstelle vorbeifahren könnte)
-#: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025)
+#: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025) (bis 17.10.2025)
 # REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
-#: last_checked: 2025-08-15 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-09-09 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-09-09 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q4::inwork 10178,20525 10066,20494
 ',
          'from' => 1755295119,
          'id' => 3866,
-         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 09.09.2025',
+         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 17.10.2025',
          'type' => 'handicap',
-         'until' => 1757404800
+         'until' => 1760738399
        },
        undef,
        undef,
@@ -7435,7 +7435,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-09-04 vvv
+#: last_checked: 2025-09-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8261,21 +8261,7 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
          'type' => 'handicap',
          'until' => 1779746400
        },
-       {
-         'data' => '#: next_check_id: MARKGRAFEN-2025
-#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025)
-#: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
-Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
-#: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
-Markgrafenstr. nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
-',
-         'from' => 1738350510,
-         'id' => 4250,
-         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 09.09.2025',
-         'type' => 'handicap',
-         'until' => 1757430000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8460,20 +8446,33 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
-#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv)
+#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025)
 #: source_id: LS/222-W/25/089 (bis 12.09.2025)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 ',
          'from' => 1741503600,
          'id' => 4273,
-         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 12.09.2025',
+         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 26.09.2025',
          'type' => 'gesperrt',
-         'until' => 1757689200
+         'until' => 1758898800
        },
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
+#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
+#: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
+#: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
+	q4::inwork; 2092,7810 2099,7904 2112,8088 2121,8351
+',
+         'from' => 1741240800,
+         'id' => 4277,
+         'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 19.09.2025',
+         'type' => 'handicap',
+         'until' => 1758319199
+       },
        undef,
        undef,
        undef,
@@ -8753,7 +8752,7 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-09-03 vvv
+#: last_checked: 2025-09-09 (osm) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -9093,7 +9092,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: also_indoor: traffic (G,re-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-03 (traffic)
+#: last_checked: 2025-09-09 (traffic)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-08-29 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -9164,7 +9163,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-08-26
+#: last_checked: 2025-09-09
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401

@@ -538,24 +538,25 @@ Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,69
 # REMOVED --- #: next_check_id: RUSCHEAMPEL-2024 --- #: next_check: 2024-05-02 vvv --- #: valid: -20240502 vvv --- Bornitzstr.: Umweg über Netto-Parkplatz	DH:len=100 15747,12880 15950,12886 16073,12883 --- Bornitzstr.: Umweg über Gehweg/Parkplatz	DH:len=60:h=q3,60 16073,12883 15950,12886 15747,12880 --- Ruschestr. -> Bornitzstr.: über Parkplatz/Gehweg	DH:h=q3,60 15912,13153 15950,12886 16073,12883 --- Bornitzstr. -> Ruschestr.: über Gehweg/Parkplatz	DH:h=q3,60 16073,12883 15950,12886 15912,13153 --- #: valid ^^^ --- #: next_check ^^^
 # REMOVED (mittlerweile kann man direkt an der Kreuzung abbiegen) --- #: next_check_id: FRIEDENAUERHOEHE-2024 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782634252464541935 --- #: by: https://pbs.twimg.com/media/GLx3xtUW4AAMd5N?format=jpg&name=large --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1898970824146825513 (Umbauarbeiten am 10.03.2025) --- #: source_id: viz2021:13.34261,52.477362,23.04.2024,07:00 (bis 28.06.2024) (bis 02.08.2024, im Anschluss weitere Arbeiten) (bis 04.10.2024, im Anschluss weitere Arbeiten) (bis 15.11.2024) (bis 06.12.2024) (bis 17.01.2025) (bis 14.02.2025) (bis 30.04.2025) --- #: source_id: viz2021:13.34245,52.47724,27.06.2024,14:25 (bis 02.07.2024) (inaktiv) --- #: source_id: viz2021:13.34245,52.47724,02.07.2024,09:00 (bis 02.08.2024) (inaktiv) --- #: source_id: viz2021:13.34245,52.47724,29.04.2025,13:38 (bis 02.06.2025) --- #: last_checked: 2025-03-26 --- #: next_check: 2025-04-30 --- #: valid: -20250430 --- Hauptstr. -> Rubensstr.: Umweg über Baustellenampel	DH:len=80 6333,7927 6293,7875 6306,7864
 # 
-#: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/instandsetzung-der-noerdlichen-seestrassenbruecke_a364760 (ab Ende November 2022 bis Dezember 2023)
-#: by: https://www.berliner-woche.de/wedding/c-bauen/sanierung-der-seestrassenbruecke-fort_a365234 (bauzeitliche Verlegung des Radverkehrs auf den Mittelstreifen + Ampel)
-#: by: https://nitter.cz/VIZ_Berlin/status/1623187366683762689#m
-#: by: https://nitter.it/pic/orig/media%2FFoXZ_fbWIAA0OWk.jpg
-#: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/SharedDocs/Pressemitteilungen/PM_verkehrsfreigabe_seestrassenbruecke.html (bis Dezember 2024)
-#: source_id: viz2021:13.335505,52.541771,08.02.2023,07:00 (Brückenarbeiten bis 20.2.2023) (bis 11.04.2024) (inaktiv) (bis 15.11.2024) (bis 31.03.2025) (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.33547,52.54196, (bis 31.07.2025) (bis 11.08.2025) (bis 09.09.2025)
-#: osm_watch: note 4404889 4
-#: last_checked: 2025-07-26 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2025-09-09 (VIZ-Verkehrsmeldung) vvv
-#: note: Grün kam relativ schnell nach der Anforderung (2024-09-18, 2024-11-28 im Feierabendverkehr), ist das immer so?
-Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet, Baustellenampel mit Anforderung	DH:tl 5437,14844 5512,14907 5584,14969
-Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet	DH:tl 5584,14969 5605,14988 5687,15057
-Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet	DH:tl 5584,14969 5605,14988 5627,14963
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/instandsetzung-der-noerdlichen-seestrassenbruecke_a364760 (ab Ende November 2022 bis Dezember 2023)
+# REMOVED --- #: by: https://www.berliner-woche.de/wedding/c-bauen/sanierung-der-seestrassenbruecke-fort_a365234 (bauzeitliche Verlegung des Radverkehrs auf den Mittelstreifen + Ampel)
+# REMOVED --- #: by: https://nitter.cz/VIZ_Berlin/status/1623187366683762689#m
+# REMOVED --- #: by: https://nitter.it/pic/orig/media%2FFoXZ_fbWIAA0OWk.jpg
+# REMOVED --- #: by: https://www.wsa-spree-havel.wsv.de/Webs/WSA/Spree-Havel/DE/SharedDocs/Pressemitteilungen/PM_verkehrsfreigabe_seestrassenbruecke.html (bis Dezember 2024)
+# REMOVED --- #: by: https://bsky.app/profile/wanningerx.bsky.social/post/3lyf2dmarjc2l (alter Radweg wieder offen)
+# REMOVED --- #: source_id: viz2021:13.335505,52.541771,08.02.2023,07:00 (Brückenarbeiten bis 20.2.2023) (bis 11.04.2024) (inaktiv) (bis 15.11.2024) (bis 31.03.2025) (bis 31.07.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.33547,52.54196, (bis 31.07.2025) (bis 11.08.2025) (bis 09.09.2025) (bis 18.09.2025)
+# REMOVED --- #: osm_watch: note 4404889 4
+# REMOVED --- #: last_checked: 2025-07-26 vvv
+# REMOVED --- #: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2025-09-09 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: note: Grün kam relativ schnell nach der Anforderung (2024-09-18, 2024-11-28 im Feierabendverkehr), ist das immer so?
+# REMOVED --- Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet, Baustellenampel mit Anforderung	DH:tl 5437,14844 5512,14907 5584,14969
+# REMOVED --- Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet	DH:tl 5584,14969 5605,14988 5687,15057
+# REMOVED --- Nördliche Seestraßenbrücke: Bauarbeiten, Radverkehr wird über den Mittelstreifen umgeleitet	DH:tl 5584,14969 5605,14988 5627,14963
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
 #: last_checked: 2025-08-23 vvv
