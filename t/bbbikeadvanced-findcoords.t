@@ -29,10 +29,7 @@ eq_or_diff [_find_coords('https://www.qwant.com/maps#map=15.38/52.51627/13.37770
 eq_or_diff [_find_coords('https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike&route=52.44074%2C13.58726%3B52.44275%2C13.58220')], [[23018,4108],[22669,4325]];
 
 # geo URI
-{
-  local $TODO = "two coords, should probably shortcut";
-  eq_or_diff [_find_coords('geo:52.51627,13.37770')], [[8600,12254]];
-}
+eq_or_diff [_find_coords('geo:52.51627,13.37770')], [[8600,12254]];
 
 # googlemaps
 eq_or_diff [_find_coords('https://www.google.com/maps/@52.5156235,13.3768881,15.29z')],   [[8546,12181]];

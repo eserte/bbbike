@@ -1333,7 +1333,7 @@ sub _find_coords {
 	}
 
 	# Geo URI
-	while ($s =~ /geo:([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
+	while ($s =~ s{geo:([-+]?[0-9\.]+),([-+]?[0-9\.]+)}{}g) { # consume/shortcut
 	    my($y,$x) = ($1,$2);
 	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 	    push @coords, [$x,$y];
