@@ -39,6 +39,8 @@ eq_or_diff [_find_coords('https://www.google.com/maps/@52.5156235,13.3768881,15.
 eq_or_diff [_find_coords('https://www.google.com/maps/@52.5156235,13.3768881,14z')],      [[8546,12181]];
 eq_or_diff [_find_coords('https://www.google.com/maps/@52.5156235,13.3768881,14m/rest')], [[8546,12181]];
 eq_or_diff [_find_coords('https://www.google.com/maps/place/Brandenburger+Tor/@52.5156235,13.3768881,14z/data=!4m5!3m4!1s0x47a851c655f20989:0x26bbfb4e84674c63!8m2!3d52.5162746!4d13.3777041')], [[8546,12181]];
+eq_or_diff [_find_coords('https://www.google.com/maps/dir/52.4682944,13.4419137/52.5103345,13.4598365/@52.4865149,13.4194311,13z/data=!3m1!4b1!4m2!4m1!3e0!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D')], [[11504,8995]];
+eq_or_diff [_find_coords('https://www.google.com/maps/search/?api=1&query=52.49894785064768,13.459751290533127')], [[14217,10427]];
 
 # kartaview
 eq_or_diff [_find_coords('https://kartaview.org/map/@52.51625735865977,13.37810327600232,17z')], [[8627,12253]];

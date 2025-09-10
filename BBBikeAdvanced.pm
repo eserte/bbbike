@@ -1355,7 +1355,13 @@ sub _find_coords {
 	}
 
 	# Google Maps
-	while ($s =~ s{maps/(?:place/.*/)?\@([-+]?[0-9\.]+),([-+]?[0-9\.]+),\d+(?:\.\d+)?[zma](?:$|[,/])}{}g) { # consume, because this kind of coordinates may be misinterpreted as BBBike coords otherwise
+	while ($s =~ s{maps/(?:place/.*/|dir/.*/)?\@([-+]?[0-9\.]+),([-+]?[0-9\.]+)(?:,\d+(?:\.\d+)?)?[zma](?:$|[,/])}{}g) { # consume, because this kind of coordinates may be misinterpreted as BBBike coords otherwise
+	    my($y,$x) = ($1,$2);
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x, $y];
+	}
+	# Google Maps: https://www.google.com/maps/search/?api=1&query=52.49894785064768,13.459751290533127
+	while ($s =~ s{/maps/search/.*query=([-+]?[0-9\.]+),([-+]?[0-9\.]+)}{}g) { # also consume
 	    my($y,$x) = ($1,$2);
 	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 	    push @coords, [$x, $y];
