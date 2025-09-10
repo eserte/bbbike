@@ -2381,9 +2381,9 @@ Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross::ignrte 15899,14598 
 Große-Leege-Str. -> Verdener Gasse: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15899,14598 15968,14684 15946,14702
 Verdener Gasse -> Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15946,14702 15968,14684 16033,14756
 Mittelstreifen mit Bordsteienen	3nocross::ignrte 16259,7328 16195,7398 15920,7697
-Straßenbahntrasse	3nocross::ignrte 19053,2890 19021,2946 18946,3077
+Straßenbahntrasse	3nocross::ignrte 19053,2890 19021,2946 18949,3073
 Zum Trudelturm -> Max-Born-Str.: Straßenbahntrasse	3::igndisp 19101,3028 19021,2946 19053,2890
-Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18946,3077 19021,2946 19101,3028
+Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18949,3073 19021,2946 19101,3028
 Mittelstreifen	3nocross::ignrte 12216,16120 12254,16097 12347,16039
 Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12254,16097 12216,16120
 Ostseestr. -> Prenzlauer Allee: Mittelstreifen	3::igndisp 12347,16039 12254,16097 12198,15999
@@ -3553,7 +3553,7 @@ Windenweg -> Stubenrauchstr.: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::i
 Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16342,2338 16306,2364 16106,2514
 Windenweg -> Stubenrauchstr.: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16382,2464
 Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16342,2338
-Glockenblumenweg: Einfahrt verboten	1s:inwork 16461,2569 16260,2717
+Glockenblumenweg: Einbahnstraße	1s:inwork 16461,2569 16260,2717
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
 neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 16775,6813 16747,6813
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
@@ -3634,7 +3634,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
-Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
+Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,10227
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
 Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046

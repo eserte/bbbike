@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025)
-#: last_checked: 2025-09-02
+#: last_checked: 2025-09-10
 #: next_check: 2025-09-12
 #: valid: -20250912
 Wühlischstr.: Bauarbeiten, Einfahrt verboten	q4::inwork; 14771,11345 14759,11339
@@ -279,7 +279,7 @@ Südkreuz: Bauarbeiten, Engstellen	q2::inwork 7838,7848 7837,7899
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: last_checked: 2025-08-26 (luftbildsuche) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-09-11 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
 #: also_indoor: traffic (B,T)
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
@@ -464,7 +464,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-08-29 vvv
+#: last_checked: 2025-09-09 (osm note) vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="43"
@@ -478,7 +478,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,124
 #: osm_watch: way id="1241756428" version="1"
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lux-berlin-neust%C3%A4dtischer-kirchplatz.903/page-2#post-23516
-#: osm_watch: note 3469300 7
+#: osm_watch: note 3469300 8
 #: osm_watch: way id="111833186" version="15"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: osm_watch: way id="153698413" version="19"
@@ -813,6 +813,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: by: https://www.caimmo.com/de/presse/news/artikel/ca-immo-startet-bau-des-anna-lindh-haus-am-berliner-hauptbahnhof/ (Fertigstellung Ende 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/vorplatz-am-hbf-europacity-bebauungsplan-ii-201c.155/page-5#post-24166
 #: by: https://entwicklungsstadt.de/europacity-berlin-bauarbeiten-am-anna-lindh-haus-in-vollem-gange/
+#: by: https://entwicklungsstadt.de/berlin-europacity-diese-5-bauprojekte-praegen-das-neue-stadtquartier/ (Rohbau bis März 2026)
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://1223a25j44.bautvplus.de/cam1/image.jpg
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
@@ -1049,9 +1050,9 @@ Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="41"
 #: osm_watch: way id="1193560283" version="10"
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-10
 #: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-08-31 (Halteverbotsschilder)
+#: next_check: 2025-09-30 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
@@ -3704,7 +3705,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2025-06-18 vvv
+#: last_checked: 2025-09-10 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -4299,7 +4300,7 @@ Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 #: note ^^^
 Europaplatz: sehr viele Fußgänger	q4 7938,13302 8015,13303 8102,13304
 Europaplatz [Nord]: einige Fußgänger	q2 8057,13400 8010,13450 7963,13489
-Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
+Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1- 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
 Böhmische Str.: Fußgängerzone, Radfahrer frei	q2 13553,7594 13566,7649
 Böhmischer Platz: Fußgängerzone	q3 13571,7588 13583,7642
@@ -4354,9 +4355,9 @@ Oberdorfer Steig: schmaler Weg	q2 -8213,14837 -8270,14782
 (Rudower Chaussee - Ernst-Augustin-Str./südlicher Zugang zum S-Bhf. Adlershof): Fußgänger	q2 19840,3423 19938,3294
 (Weg am Waldrain): einige Fußgänger	q1 23523,-937 23512,-854 23512,-766 23490,-715 23421,-686 23293,-657
 #: XXX_prog BS, ansonsten q2
-(Margueritenring - Köpenicker Str.): einige Fußgänger, Bordstein	q3 17193,2062 17173,2003
+(Margueritenring - Köpenicker Str.): einige Fußgänger, Bordstein	q3 17190,2052 17173,2003
 (Margueritenring - Köpenicker Str.): einige Fußgänger	q2 17173,2003 17083,1776 17051,1743 17046,1708 17100,1650
-(Grünstreifen 1929): Radfahren verboten	q4 17102,2420 17039,2358 17179,2186 17194,2131 17193,2062
+(Grünstreifen 1929): Radfahren verboten	q4 17102,2420 17039,2358 17179,2186 17194,2131 17190,2052
 (Am Plänterwald - Spreepark): einige Fußgänger	q1 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833 16086,8860
 (Uferweg am Nordhafen - Havelschanze): Fußgänger, Spielplatz	q2 -2980,16401 -2994,16364 -2973,16354 -3009,16269 -3040,16246
 Frieda-Arnheim-Promenade: einige Fußgänger	q1 -2779,15358 -2769,15389 -2751,15383
@@ -4706,13 +4707,13 @@ Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
 (Ludwig-Lesser-Park, westlicher Weg): einige Fußgänger	q1 2312,25673 2247,25796 2237,25837 2207,26090
 (Ludwig-Lesser-Park - Am Poloplatz): einige Fußgänger	q1 2207,26090 2204,26290 2199,26440 2199,26450
 #: note: rechtliche Lage unklar, teilweise werden die Wege auch von Autos befahren; Fußgängerfrequenz meist überschaubar vvv
-Osthafen: einige Fußgänger	q1 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
+Osthafen: einige Fußgänger	q1 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14424,10227 14462,10206 14480,10157
 Osthafen: einige Fußgänger	q1 13531,10673 13558,10704
 #: XXX_prog BS: die Schiene könnte man wie einen Bordstein behandeln, ansonsten q1
 Osthafen: einige Fußgänger, Überquerung einer Schiene notwendig	q3 14207,10338 14226,10387
 Osthafen: einige Fußgänger, Engstelle mit Kette	q2 13835,10577 13805,10528
 #: note ^^^
-(ehem. Osthafen - Stralauer Allee/Elsenbrücke): schmale Rampe	q4+ 14528,10245 14558,10264
+(ehem. Osthafen - Stralauer Allee/Elsenbrücke): schmale Rampe	q4+ 14517,10249 14518,10264 14558,10264
 #: note: rechtliche Lage unklar, asphaltierter Verkehrsbereich, außerhalb des ausgeschilderten Grünanlagen-Bereichs
 Wismarplatz: einige Fußgänger	q1 14475,11778 14461,11738
 Bahndamm: einige Fußgänger	q1 13970,9349 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903 13141,9911
@@ -5401,6 +5402,9 @@ Straße am Flugplatz: zwei Bodenschwellen, umfahrbar	q0- 17522,3653 17762,3243
 Alt-Heiligensee [Parkweg]: Fußgänger, Radfahren verboten	q4 -2687,22501 -2730,22401 -2784,22317 -2917,22150 -2989,22021 -3023,21930
 # 
 (Sellerpark): schmal, einige Fußgänger	q2+ 7866,14541 7862,14546 7845,14554 7753,14528
+# 
+#: note: Bordstein an der Stubenrauchstr., nächste Bordsteinabsenkung am Ehrenpreisweg
+Wegerichstr.: Fußgänger	q2 16475,2586 16538,2543
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
@@ -6345,7 +6349,8 @@ Senheimer Str.: enge Straße	q1 2510,25350 2506,25398 2502,25544 2515,25666 2519,
 Romanshorner Weg: enge Straße	q1 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
 # 
 #: by: Reyk Bederke:
-Wegerichstr.: enge Straße	q1 16678,2330 16666,2437 16663,2450 16538,2543
+#: corrected_by: srt/policy (q1 -> q0-)
+Wegerichstr.: enge Straße	q0- 16678,2330 16666,2437 16663,2450 16538,2543
 # 
 #: by: steffen (stache-bln):
 #: note: Radweg markiert

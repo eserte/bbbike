@@ -21799,6 +21799,7 @@ EOF
 #: by: https://viz.berlin.de/2022/09/marathon/
 #: by: https://viz.berlin.de/2023/09/marathon/
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehr-zum-berlin-marathon-am-wochenende-28-29.09.2024/
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-zum-berlin-marathon-am-wochenende-20-21.09.2025/
 #: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.369855,52.515768,18.09.2023,06:00 (bis 26.09.2023) (inaktiv)
 #: source_id: viz2021:13.360266,52.515154,24.09.2023,22:00 (bis 06.10.2023) (inaktiv)
@@ -29180,8 +29181,8 @@ EOF
 #: check_frequency: 60d vvv
 #: next_check: 2025-12-31 vvv
 #: priority: #B
-#: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20) existiert das Radfahrer-verboten-Schild nicht mehr
-#: last_checked: 2025-07-12
+#: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20, 2025-09-10) existiert das Radfahrer-verboten-Schild nicht mehr
+#: last_checked: 2025-09-10
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="41"
@@ -32085,7 +32086,7 @@ EOF
 #: osm_watch: way id="198581621" version="19"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-10
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -34818,9 +34819,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (laut osm beendet) --- #: next_check_id: STERNDAMM-2020 --- #: last_checked: 2021-10-10 --- #: check_frequency: 60d --- #: next_check: 2021-10-31
-	q3::inwork 18766,3260 18828,3196 18946,3077
+	q3::inwork 18766,3260 18828,3196 18949,3073
 	3 18892,3256 18828,3196 18822,3188
-	3 18892,3256 18828,3196 18946,3077
+	3 18892,3256 18828,3196 18949,3073
 	3 18822,3188 18828,3196 18892,3256
 EOF
      },
@@ -36061,7 +36062,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-09-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -38005,7 +38006,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
 #: priority: #B
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-10
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-07-31
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40705,7 +40706,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-10
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -47403,7 +47404,7 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,re-H)
-#: last_checked: 2025-09-05 (traffic)
+#: last_checked: 2025-09-10
 #: check_frequency: 10d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
@@ -48052,7 +48053,7 @@ EOF
        text  => 'Heesestr./Südendstr.: Sperrung der Fahrbahn zwischen Althoffstr. und Südendstr. sowie im Kreuzungsbereich Südendstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (re-G[Südenedstr],T[Südenedstr],W[Südenedstr],A[Heesestr])
+#: also_indoor: traffic (re-G[Südenedstr+Heesestr],T[Südenedstr],W[Südenedstr],A[Heesestr])
 #: osm_watch: way id="1237862681" version="6"
 #: osm_watch: way id="1237862680" version="3"
 #: osm_watch: way id="1237862682" version="3"
@@ -48063,7 +48064,7 @@ EOF
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-08-26 (traffic) vvv
+#: last_checked: 2025-09-10 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -48153,12 +48154,12 @@ EOF
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 4
+#: osm_watch: note 4734747 5
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-09-09 (osm) vvv
+#: last_checked: 2025-09-09 (osm note) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -48472,7 +48473,7 @@ EOF
 #: source_id: viz2021:13.514371,52.468805,06.06.2025,20:00 (Linksabbiegen nicht möglich, bis 27.06.2025) (inaktiv)
 #: osm_watch: note 4767216 14
 #: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-wuhlheide-bruecke-sofortige-sperrung-verkehr-einsturzgefahr.html
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-brucke-an-der-wuhlheide-oberschoeneweide/
 #: by: http://bvg.de/dam/jcr:2d8c755f-2c9c-44b8-b819-11bc2e3a1fda/TramMetro_Bauausschnitt%20Wuhlheide_2fassung.png
 #: by: https://www.tagesspiegel.de/berlin/brucke-an-der-berliner-wuhlheide-einsturzgefahrdet-bvg-und-autoverkehr-unter-bauwerk-gestoppt-13716016.html
 #: by: https://www.tagesspiegel.de/berlin/marode-brucke-stau-rund-um-gesperrte-brucke-an-der-wuhlheide-13720807.html
@@ -49355,7 +49356,7 @@ EOF
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-10
 #: check_frequency: 30d
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -49882,6 +49883,18 @@ EOF
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: last_checked: 2025-09-03
 	2::inwork 12600,12860 12551,12785 12483,12682
+EOF
+     },
+     { from  => 1757503087, # 2025-09-10 13:18
+       until => 1759269599, # 2025-09-30 23:59
+       text  => 'Johann-Hittorf-Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende September 2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (T,G)
+#: last_checked: 2025-09-10
+#: check_frequency: 14d (traffic)
+#: next_check: 2025-09-30 (Halteverbotsschilder)
+	q4::inwork 18804,2991 18949,3073
 EOF
      },
     );

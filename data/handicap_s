@@ -2115,9 +2115,9 @@ Oberdorfer Steig: schmaler Weg	q2 -8213,14837 -8270,14782
 (Weg am Westhafenkanal - Tegeler Weg): einige Fuﬂg‰nger	q1 2895,13869 2913,13919 2935,13927
 (Rudower Chaussee - Ernst-Augustin-Str./s¸dlicher Zugang zum S-Bhf. Adlershof): Fuﬂg‰nger	q2 19840,3423 19938,3294
 (Weg am Waldrain): einige Fuﬂg‰nger	q1 23523,-937 23512,-854 23512,-766 23490,-715 23421,-686 23293,-657
-(Margueritenring - Kˆpenicker Str.): einige Fuﬂg‰nger, Bordstein	q3 17193,2062 17173,2003
+(Margueritenring - Kˆpenicker Str.): einige Fuﬂg‰nger, Bordstein	q3 17190,2052 17173,2003
 (Margueritenring - Kˆpenicker Str.): einige Fuﬂg‰nger	q2 17173,2003 17083,1776 17051,1743 17046,1708 17100,1650
-(Gr¸nstreifen 1929): Radfahren verboten	q4 17102,2420 17039,2358 17179,2186 17194,2131 17193,2062
+(Gr¸nstreifen 1929): Radfahren verboten	q4 17102,2420 17039,2358 17179,2186 17194,2131 17190,2052
 (Am Pl‰nterwald - Spreepark): einige Fuﬂg‰nger	q1 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833 16086,8860
 (Uferweg am Nordhafen - Havelschanze): Fuﬂg‰nger, Spielplatz	q2 -2980,16401 -2994,16364 -2973,16354 -3009,16269 -3040,16246
 Frieda-Arnheim-Promenade: einige Fuﬂg‰nger	q1 -2779,15358 -2769,15389 -2751,15383
@@ -2351,11 +2351,11 @@ Elsenpfuhlstr.: Gehweg	q3 5405,20072 5399,20106
 Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
 (Ludwig-Lesser-Park, westlicher Weg): einige Fuﬂg‰nger	q1 2312,25673 2247,25796 2237,25837 2207,26090
 (Ludwig-Lesser-Park - Am Poloplatz): einige Fuﬂg‰nger	q1 2207,26090 2204,26290 2199,26440 2199,26450
-Osthafen: einige Fuﬂg‰nger	q1 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
+Osthafen: einige Fuﬂg‰nger	q1 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14424,10227 14462,10206 14480,10157
 Osthafen: einige Fuﬂg‰nger	q1 13531,10673 13558,10704
 Osthafen: einige Fuﬂg‰nger, ‹berquerung einer Schiene notwendig	q3 14207,10338 14226,10387
 Osthafen: einige Fuﬂg‰nger, Engstelle mit Kette	q2 13835,10577 13805,10528
-(ehem. Osthafen - Stralauer Allee/Elsenbr¸cke): schmale Rampe	q4 14528,10245 14558,10264
+(ehem. Osthafen - Stralauer Allee/Elsenbr¸cke): schmale Rampe	q4 14517,10249 14518,10264 14558,10264
 Wismarplatz: einige Fuﬂg‰nger	q1 14475,11778 14461,11738
 Bahndamm: einige Fuﬂg‰nger	q1 13970,9349 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903 13141,9911
 zur Eisenbahnbr¸cke: einige Fuﬂg‰nger	q2 13207,9868 13259,9870 13302,9894
@@ -2707,6 +2707,7 @@ Straﬂe am Flugplatz: zwei Bodenschwellen, umfahrbar	q0 17522,3653 17762,3243
 (Buckower Felder - Buckower Damm/Gerlinger Str.): flache Rampe	q2 12902,1321 12926,1330 12938,1348
 Alt-Heiligensee [Parkweg]: Fuﬂg‰nger, Radfahren verboten	q4 -2687,22501 -2730,22401 -2784,22317 -2917,22150 -2989,22021 -3023,21930
 (Sellerpark): schmal, einige Fuﬂg‰nger	q2 7866,14541 7862,14546 7845,14554 7753,14528
+Wegerichstr.: Fuﬂg‰nger	q2 16475,2586 16538,2543
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3144,7 +3145,7 @@ Hallichpromenade: Fuﬂweg	q2 5388,20606 5441,20613
 Allmendeweg: enge Hausdurchfahrt	q1 3071,21801 3155,21572
 Senheimer Str.: enge Straﬂe	q1 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2540,26280 2552,26327 2562,26379 2560,26475
 Romanshorner Weg: enge Straﬂe	q1 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
-Wegerichstr.: enge Straﬂe	q1 16678,2330 16666,2437 16663,2450 16538,2543
+Wegerichstr.: enge Straﬂe	q0 16678,2330 16666,2437 16663,2450 16538,2543
 (Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fuﬂg‰nger	q0 13548,14980 13369,15083 13324,15109 13328,15127 13289,15149 13123,15244
 Siegfried-Baruch-Weg: einige Fuﬂg‰nger, recht eng	q2 7857,19693 7871,19698 7974,19739 8030,19762
 Fehrbelliner Str. (Spandau): Gehweg mit Bordsteinen am Anfang und am Ende	q2 -3778,15520 -3761,15604 -3727,15695
@@ -3659,7 +3660,7 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::ig
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Dolgenseestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
-Glockenblumenweg: Einfahrt verboten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 16461,2569 16260,2717
+Glockenblumenweg: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 16461,2569 16260,2717
 Am Wiesenrain: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 23931,5992 24122,6007
 Am Wriezener Bahnhof: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631

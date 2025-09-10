@@ -360,7 +360,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-09-06 vvv
+#: last_checked: 2025-09-10 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1244,7 +1244,8 @@ Verbundsteinpflaster	RW1; 14023,3276 14056,3374 14141,3614 14189,3732 14233,3840
 	RW2;RW1 13756,5388 13809,5257
 neues Verbundsteinpflaster, trotzdem bereits mit leichten Unebenheiten	RW1;RW1 13809,5257 13824,5204 13892,4955 13914,4877 13939,4778 14023,4475 14048,4363 14108,4175 14119,4153
 alte Gehwegplatten, Unebenheiten	RW1; 14119,4153 14290,3908
-	RW1; 14290,3908 14347,3836 14391,3786 14550,3625 14788,3441 14822,3409 14994,3245 15176,3136 15301,3038
+	RW1; 14290,3908 14347,3836 14391,3786 14550,3625 14788,3441 14822,3409 14994,3245
+Verbundsteinpflaster, einige Schäden, einige Abschnitte erneuert	RW1; 14994,3245 15176,3136 15301,3038
 Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15301,3038 15459,2921 15572,2785 15599,2752 15613,2739 15736,2593 15804,2512 15980,2318
 #: historical_note: früher benutzungspflichtig
 Verbundsteinpflaster	RW1; 15980,2318 16028,2261 16135,2135
@@ -1333,6 +1334,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.tagesspiegel.de/berlin/verzogerung-auf-der-baustelle-bleibt-die-elsenbrucke-an-der-berliner-a100-noch-langer-ein-nadelohr-14281952.html
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/2YOgP5xtuoh1HPZnnsgrOy (mögliche Verzögerung)
 #: by: https://entwicklungsstadt.de/neue-elsenbruecke-bis-2028-wie-die-a100-den-zeitplan-ins-wanken-bringt/
+#: by: https://www.berliner-zeitung.de/mensch-metropole/stau-vor-der-elsenbruecke-in-treptow-so-will-der-senat-das-chaos-an-der-a100-lindern-li.2355775
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -1360,7 +1362,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-09-05 vvv
+#: last_checked: 2025-09-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-31 (Tsp zum Ersatzneubau) vvv
 # REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
@@ -1872,7 +1874,9 @@ alte Gehwegplatten, asphaltierte Nebenfahrbahn existiert	RW1; -4515,11935 -4438,
 mäßige Radwege	RW1;RW1 1344,10012 1318,10031 1274,10063 1212,10109 1205,10114 1159,10149 1047,10225 967,10285
 mäßige Radwege	RW9;RW1 967,10285 863,10363 775,10426
 neues Verbundsteinpflaster, etwas breiter	RW1; 14392,2979 14541,3060 14605,3087
-alte Gehwegplatten, kürzere Abschnitte mit neuem Verbundsteinpflaster	RW1; 14605,3087 14675,3117 14816,3162 14930,3194 14994,3245
+#: historical_note: früher: alte Gehwegplatten, kürzere Abschnitte mit neuem Verbundsteinpflaster
+#: note: trotz des relativ neuen Verbundsteinpflasters mit einigen Unebenheiten
+neuem Verbundsteinpflaster, etwas breiter	RW1; 14605,3087 14675,3117 14816,3162 14930,3194 14994,3245
 Verbundsteinpflasterradweg, OK	RW1; 14994,3245 14930,3194 14816,3162 14675,3117 14605,3087 14541,3060
 alte Gehwegplatten	RW1; 14541,3060 14392,2979
 Verbundsteinpflaster	RW8;RW2 21998,1239 22096,1136 22162,1067
@@ -3197,7 +3201,7 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
 #: historical_note: ganz früher sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
-#: last_checked: 2025-09-05
+#: last_checked: 2025-09-10
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
@@ -3215,7 +3219,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-09-02
+#: last_checked: 2025-09-10
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3226,7 +3230,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-09-02
+#: last_checked: 2025-09-10
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -8132,7 +8136,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
-#: last_checked: 2025-07-18 vvv
+#: last_checked: 2025-09-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-31 (Baustellenschild) vvv
 #: note: Stubenrauchstr. Richtung Nordosten

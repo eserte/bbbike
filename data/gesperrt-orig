@@ -191,7 +191,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-09-01 vvv
+#: last_checked: 2025-09-10 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -307,9 +307,9 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 #: next_check_id: ONTARIOSEE-2023
 #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
 #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-10
 #: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-08-31 (Halteverbotsschilder)
+#: next_check: 2025-09-30 (Halteverbotsschilder)
 Ontarioseestr.	1no 18585,10024 18411,10037
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 # 
@@ -2594,7 +2594,7 @@ Gertraudenstr.: Mittelstreifen	3nocross 10349,11847 10376,11879 10391,11898 1042
 Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross 6181,8181 6246,8222 6313,8254
 Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15899,14598 15968,14684 16033,14756
 Köpenicker Landstraße: Mittelstreifen mit Bordsteienen	3nocross 16259,7328 16195,7398 15920,7697
-Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18946,3077
+Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18949,3073
 #: note: etwa 30m weiter westlich existiert eine Überfahrt
 Ostseestr.: Mittelstreifen	3nocross 12216,16120 12254,16097 12347,16039
 # REMOVED (Fahrbahnen getrennt) --- Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4338,6528 4423,6477
@@ -4030,8 +4030,8 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 #: last_checked: 2025-07-18 vvv
 #: next_check: 2026-10-31 vvv
 Stubenrauchstr./Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross 16242,2279 16306,2364 16382,2464
-#: note: kurze unechte Einbahnstraße
-Glockenblumenweg: Einfahrt verboten	1s:q2:inwork 16461,2569 16260,2717
+#: historical_note: am Anfang kurze unechte Einbahnstraße und Einfahrt verboten
+Glockenblumenweg: Einbahnstraße	1s:q2:inwork 16461,2569 16260,2717
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -4076,7 +4076,7 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwo
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-10
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
@@ -4402,8 +4402,8 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nic
 #: next_check_id: PLANSTRASSE9-2023
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: osm_watch: way id="20420585" version="36"
-#: last_checked: 2025-07-12
-#: check_frequency: 60d
+#: last_checked: 2025-09-10
+#: check_frequency: 90d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
 # 
@@ -4456,9 +4456,9 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="30"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-10
 #: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-08-31 (Halteverbotsschilder)
+#: next_check: 2025-09-30 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
 # REMOVED (laut osm komplett offen)
@@ -4560,7 +4560,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-10
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4692,10 +4692,11 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10953 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11443 (Antrag)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-fehlen-personal-und-finanzmittel-fuer-die-auftragsvergabe_a431449 (Sperrung mindestens bis 2026 (Anfang oder Ende?))
+#: by: https://marzahn-hellersdorf.com/brueckenneubau-entenbruecke-am-stadion-wuhletal-verzoegert-sich-vergabeverfahren-noch-nicht-abgeschlossen/ (kein Zeitplan)
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="22"
-#: last_checked: 2025-07-16
+#: last_checked: 2025-07-27 (Marzahn-Hellersdorf Live)
 #: check_frequency: 360d
 # REMOVED (ein Baubeginn 2025 erscheint unwahrscheinlich) --- #: next_check: 2026-01-01
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
@@ -5024,10 +5025,11 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
 #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können
-#: last_checked: 2025-08-23
+#: last_checked: 2025-09-10
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt)
-Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14361,10259
+Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,10227
+# REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14361,10259
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
 #: last_checked: 2025-09-06 vvv
@@ -5525,7 +5527,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 # REMOVED --- #: osm_watch: way id="193373957" version="5" --- Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9473
 # REMOVED (existiert nicht mehr, kein Ersatz) --- #: osm_watch: way id="269294892" version="2"
 # REMOVED (dauerhaft?) --- #: osm_watch: way id="269294894" version="2" --- #: last_checked: 2018-05-06 --- #: check_frequency: 360d --- BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
-# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17# --- #: last_checked: 2017-11-19 --- #: next_check: 2017-12-18 --- am Osthafen: Bauarbeiten, gesperrt	2::inwork 14361,10259 14462,10206 14480,10157
+# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17# --- #: last_checked: 2017-11-19 --- #: next_check: 2017-12-18 --- am Osthafen: Bauarbeiten, gesperrt	2::inwork 14361,10259 14424,10227 14462,10206 14480,10157
 # REMOVED --- #: next_check_id: BND-2014 --- #: osm_watch: way id="129104626" version="5" --- #: osm_watch: node id="1975210030" version="4" --- # REMOVED (schon gemacht) --- : XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist --- #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf --- #: last_checked: 2017-09-04 --- Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverlässig offen	2::inwork 8251,14337 8442,14456
 # REMOVED --- #: next_check_id: SCHINKELPLATZ-2014 vvv --- #: osm_watch: way id="305153174" version="1" --- #: last_checked: 2016-11-30 vvv --- #: check_frequency: 14d vvv
 # REMOVED Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9990,12404 9996,12372 9943,12364

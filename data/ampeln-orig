@@ -15,11 +15,13 @@
 Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::inwork 8461,3410
 # 
 #: next_check_id: STUBENRAUCH-2025
-#: note: am 18.7.2025 gab es keine Überfahrtmöglichkeit auf der Fahrbahn, nur auf dem Gehweg
+#: note: an dieser Stelle gibt es keine Überfahrtmöglichkeit auf der Fahrbahn, nur auf dem Gehweg (gesehen: 2025-07-18, 2025-09-10)
 #: note: Anforderungsampel für Radfahrer in der Stubenrauchstr. Richtung NO
-#: last_checked: 2025-07-18
-#: next_check_id: 2026-10-31
-Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage	X::inwork 16461,2569
+#: off: 2024-09-10 Wed 11:25
+#: last_checked: 2025-09-10
+#: check_frequency: 90d
+#: next_check: 2026-10-31
+Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage, kann ausgeschaltet sein	X::inwork 16461,2569
 # 
 # REMOVED --- #: next_check_id: LYNAR-2025
 # REMOVED --- #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
@@ -343,7 +345,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-09-08
+#: last_checked: 2025-09-10
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
