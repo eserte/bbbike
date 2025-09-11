@@ -477,7 +477,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-09-06
+#: last_checked: 2025-09-11
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -10894,6 +10894,7 @@ Am Tierpark [Wohngebiet]: Asphalt	Q0 18484,10326 18538,10189 18552,10135
 (Ebersstr. - Park GASAG Nordspitze): Asphalt	Q0 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
 #: note: "gelber Asphalt"
 (Ebersstr. - Cheruskerstr.): Asphalt	Q0 7353,8633 7371,8660 7382,8658
+(Park GASAG Nordspitze - EUREF-Campus): Asphalt	Q0 7365,8595 7360,8594 7358,8569 7319,8515 7317,8511
 Eyke-von-Repkow-Platz: Gehwegplatten	Q0- 5556,12536 5531,12501
 #: note: 2018 neu gemacht
 Rathausstr.: Asphalt	Q0 10599,12526 10580,12513 10475,12438
@@ -14298,6 +14299,8 @@ Emser Str.: Asphalt mit Schäden	Q1+ 4699,9505 4692,9537 4733,9931
 # 
 Wegerichstr.: Gehwegplatten	Q1+ 16475,2586 16538,2543
 # 
+(Kleinbeerenstr. - Großbeerenstr.): Betonpflaster	Q0- 8970,10506 8982,10510 9165,10530 9192,10528
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -16005,7 +16008,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
 #: osm_watch: way id="13863115" version="22"
-#: last_checked: 2025-08-06
+#: last_checked: 2025-09-11
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^

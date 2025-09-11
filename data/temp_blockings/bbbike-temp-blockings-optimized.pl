@@ -4438,7 +4438,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
        undef,
        {
          'data' => '#: note: ggfs. beim Pförtner anmelden
-	2 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544
+	2 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544 7317,8511 7172,8295
 ',
          'from' => undef,
          'id' => 3110,
@@ -7343,6 +7343,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erwähnt; bis 07.06.2024) (inaktiv)
 #: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
 #: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zusätzlich einen 1x70m oder 2x70m langen Umweg nehmen
+Schinkelplatz	2::temp 9984,12426 9990,12404
 Schinkelplatz	2::temp 9990,12404 9996,12372
 Niederlagstr.	q4::temp 9934,12420 9943,12364
 An der Kommandantur	q4::temp 9996,12372 9943,12364
@@ -8034,27 +8035,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1503828.php (zunächst bis Ende Mai 2025)
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/temporaere-schulstrasse_a429945
-#: by: https://www.tagesspiegel.de/berlin/bezirke/platzmangel-an-schule-in-kreuzberg-strasse-wird-zum-pausenhof-12747659.html (laut Foto nur Verbot für Kfz? trotzdem kann es vielleicht zu Einschränkungen kommen: q4 -> q3)
-#: osm_watch: node id="5969555198" version="5"
-#: osm_watch: node id="11107173199" version="2"
-#: note: Schranken sind gut umfahrbar, Sackgasse nicht für Fußgänger/Radfahrer, kein Verbot für Radfahrer
-#: note: am letzten Schultag vor den Sommerferien 2025 waren die entsprechenden Schilder verhüllt
-#: add_fragezeichen: Wird die temporäre Schulzone in der Schleiermacherstraße auch nach den Sommerferien 2025 fortgesetzt?
-#: last_checked: 2025-06-07
-# REMOVED --- #: next_check: 2025-07-23
-#: next_check: 2025-09-08 (Ende der Sommerferien)
-	q3::temp 10032,9456 10004,9268
-',
-         'from' => 1757196000,
-         'id' => 4219,
-         'recurring' => 1,
-         'text' => 'Schleiermacherstr.: möglicherweise temporäre Schulstraße an Schultagen zwischen 9:30 und 15:30 Uhr',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: ELLABAROWSKY-2024
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
@@ -8159,7 +8140,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: also_indoor: traffic (ex-G,T,B,A)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-11
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
@@ -8935,7 +8916,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
-#: last_checked: 2025-09-05 vvv
+#: last_checked: 2025-09-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9529,22 +9510,25 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
        {
          'data' => '#: next_check_id: BLUECHER-2025
 #: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025)
-#: last_checked: 2025-08-28 vvv
+#: last_checked: 2025-09-11 vvv
+#: next_check: 2025-09-15 vvv
 Blücherstr. Richtung Baerwaldstr.: Gehweg für Radfahrer frei	q3::inwork; 10429,9514 10306,9640
 Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,9640 10429,9514
+#: next_check ^^^
 #: last_checked ^^^
 ',
+         'dont_check_date' => 1,
          'from' => 1755666000,
          'id' => 4417,
-         'text' => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, Bauarbeiten, vom 21.08.2025 07:00 bis 15.09.2025 23:59',
+         'text' => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, vom 21.08.2025 07:00 bis 15.09.2025, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1757973540
+         'until' => undef
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-08-31
+#: last_checked: 2025-09-11
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9597,7 +9581,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
        {
          'data' => '#: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-09-06 vvv
+#: last_checked: 2025-09-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-31 vvv
 #: note: Halteverbotsschilder bis 31.10.2025
@@ -9731,6 +9715,73 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
          'text' => 'Johann-Hittorf-Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende September 2025',
          'type' => 'handicap',
          'until' => 1759269599
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist die Fahrbahn wieder offen?
+#: last_checked: 2025-09-11
+#: check_frequency: 7d
+	q4::inwork 11917,11186 11726,11265
+',
+         'from' => undef,
+         'id' => 4438,
+         'text' => 'Melchiorstr.: Markierungsarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: BELZIGER-2025
+#: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
+#: last_checked: 2025-09-11
+#: check_frequency: 14d
+#: next_check: 2025-10-31 (Fahrrat-Protokoll)
+	q4::inwork 7790,9126 8014,9126 8053,9123 8081,9120 8180,9099
+',
+         'from' => undef,
+         'id' => 4439,
+         'text' => 'Monumentenstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lyhtc24jas2b
+#: note: man kann nur auf die andere Straßenseite wechseln
+#: source_id[inactive]: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum)
+#: source_id: viz2021:13.37918,52.48055, (kein Endedatum)
+#: also_indoor: traffic (T)
+#: last_checked: 2025-09-11
+#: check_frequency: 14d
+Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
+',
+         'from' => undef,
+         'id' => 4440,
+         'text' => 'Manfred-von-Richthofen-Str.: Wasserrohrbruch hinter Schreiberring, Gehweg und Fahrbahn Richtung Süden gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (T)
+#: note: laut Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
+#: last_checked: 2025-09-11
+#: check_frequency: 30d
+#: next_check: 2025-11-06
+	q4::inwork 8941,8186 8861,8242 8776,8285
+',
+         'from' => 1757626351,
+         'id' => 4441,
+         'text' => 'Schreiberring: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 6.11.2025',
+         'type' => 'handicap',
+         'until' => 1762470000
+       },
+       {
+         'data' => '#: source_id: viz2021:13.28295,52.44204, (bis 27.11.2025)
+#: next_check_id: THIELALLEE-2025
+	q4::inwork; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
+',
+         'from' => 1757626813,
+         'id' => 4442,
+         'text' => 'Thielallee: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, bis voraussichtlich 27.11.2025',
+         'type' => 'handicap',
+         'until' => 1764284400
        }
      
 );

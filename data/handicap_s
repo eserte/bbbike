@@ -33,7 +33,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 Hˆnower Wiesenweg: Bauarbeiten, Fahrbahn gesperrt, Engstelle	q3::inwork 17380,8858 17416,8767
 H‰mmerlingstr. - Alte Fˆrsterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
-Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen B¸rgersteig	q1::inwork; 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
+Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen B¸rgersteig	q1::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Matth‰ikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 7952,11336 7934,11275
@@ -833,6 +833,7 @@ Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 (Ebersstr. - Park GASAG Nordspitze): Fuﬂg‰nger	q1 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
 (Ebersstr. - Cheruskerstr.): Fuﬂg‰nger	q3 7353,8633 7371,8660 7382,8658
 (Cheruskerpark): Fuﬂg‰nger	q3 7353,8633 7291,8553
+(Park GASAG Nordspitze - EUREF-Campus): Fuﬂg‰nger	q3 7365,8595 7360,8594 7358,8569 7319,8515 7317,8511
 (Cheruskerpark - Cheruskerstr.): Fuﬂg‰nger	q2 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
 (Torgauer Str. - Cheruskerstr.): Fuﬂg‰nger	q2 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
 (Torgauer Str. - Cheruskerpark): Fuﬂg‰nger	q2 7374,8211 7372,8222 7351,8258 7353,8293
@@ -2708,6 +2709,7 @@ Straﬂe am Flugplatz: zwei Bodenschwellen, umfahrbar	q0 17522,3653 17762,3243
 Alt-Heiligensee [Parkweg]: Fuﬂg‰nger, Radfahren verboten	q4 -2687,22501 -2730,22401 -2784,22317 -2917,22150 -2989,22021 -3023,21930
 (Sellerpark): schmal, einige Fuﬂg‰nger	q2 7866,14541 7862,14546 7845,14554 7753,14528
 Wegerichstr.: Fuﬂg‰nger	q2 16475,2586 16538,2543
+(Kleinbeerenstr. - Groﬂbeerenstr.): Fuﬂg‰nger	q2 8970,10506 8982,10510 9165,10530 9192,10528
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

@@ -69,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="22"
 #: osm_watch: way id="1072662717" version="26"
-#: last_checked: 2025-09-06
+#: last_checked: 2025-09-11
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -126,7 +126,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-09-05
+#: last_checked: 2025-09-11
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -803,9 +803,9 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 ### Moabit ###
 # 
 #: next_check_id: PERLEBERGER-2024
-#: last_checked: 2025-07-19 (mapillary)
+#: last_checked: 2025-09-04 (mapillary)
 #: next_check: 2025-09-23
-Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
+Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
 #: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834
@@ -2575,6 +2575,7 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 (Ebersstr. - Cheruskerstr.): Fußgänger	q3 7353,8633 7371,8660 7382,8658
 #: note: per Piktogramm nicht für Radfahrer
 (Cheruskerpark): Fußgänger	q3 7353,8633 7291,8553
+(Park GASAG Nordspitze - EUREF-Campus): Fußgänger	q3 7365,8595 7360,8594 7358,8569 7319,8515 7317,8511
 (Cheruskerpark - Cheruskerstr.): Fußgänger	q2 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
 (Torgauer Str. - Cheruskerstr.): Fußgänger	q2 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
 (Torgauer Str. - Cheruskerpark): Fußgänger	q2 7374,8211 7372,8222 7351,8258 7353,8293
@@ -5405,6 +5406,8 @@ Alt-Heiligensee [Parkweg]: Fußgänger, Radfahren verboten	q4 -2687,22501 -2730,22
 # 
 #: note: Bordstein an der Stubenrauchstr., nächste Bordsteinabsenkung am Ehrenpreisweg
 Wegerichstr.: Fußgänger	q2 16475,2586 16538,2543
+# 
+(Kleinbeerenstr. - Großbeerenstr.): Fußgänger	q2 8970,10506 8982,10510 9165,10530 9192,10528
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

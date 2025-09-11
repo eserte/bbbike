@@ -1023,7 +1023,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535, (bis 31.12.2027)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2025-07-19 vvv
+#: last_checked: 2025-09-02 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -2725,6 +2725,8 @@ abgeschlossenes Tor	3 * 14701,0 *
 # 
 abgeschlossenes Tor	3 * 20561,17 *
 #
+abgeschlossenes Tor	3 * 7319,8515 *
+# 
 #: next_check_id: TEGELERBRUECKE-2021
 #: note: Die Sperrung der Straße R bleibt wohl dauerhaft.
 #: osm_watch: node id="10202117536" version="9"
@@ -3987,6 +3989,8 @@ Drängelgitter	BNP:3::trailer=10 14881,13144
 Drängelgitter	BNP:3::trailer=10 15101,13570
 Schwingtor	BNP:5::trailer=10 -7347,12797
 Drängelgitter	BNP:3::trailer=10 7862,14546
+Drängelgitter	BNP:3::trailer=10 8982,10510
+Drängelgitter	BNP:3::trailer=10 9165,10530
 # 
 #: section ^^^
 ############################################################################
@@ -4924,7 +4928,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="5"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2025-08-20 (mapillary)
+#: last_checked: 2025-09-02 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (howoge website)
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16601,10650 16587,10613
@@ -5009,7 +5013,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-08-23 vvv
+#: last_checked: 2025-09-11 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
