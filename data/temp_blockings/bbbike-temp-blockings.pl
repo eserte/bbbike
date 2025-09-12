@@ -20685,6 +20685,8 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/hinweise/artikel.1226093.php
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1484601.php
 #: by: https://www.visitberlin.de/de/event/fest-der-panke
+#: source_id: viz2021:13.40899,52.57098,12.09.2025,08:00 (bis 14.09.2025)
+#: source_id: viz2021:13.40899,52.57098,12.09.2025,08:00 (bis 14.09.2025)
 	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
 EOF
@@ -23064,9 +23066,9 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240904 (jährliches Fest der Landesvertretung Hamburg)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831534468970246416
 #: source_id: viz2021:13.38476,52.51445,05.09.2024,06:00 (bis 13.09.2024) (inaktiv)
-#: source_id: viz2021:13.38651,52.51281,04.09.2025,06:00 (bis 12.09.2025)
-#: source_id: viz2021:13.38508,52.5136,04.09.2025,06:00 (bis 12.09.2025)
-#: source_id: viz2021:13.38476,52.51446,04.09.2025,06:00 (bis 12.09.2025)
+#: source_id: viz2021:13.38651,52.51281,04.09.2025,06:00 (bis 12.09.2025) (inaktiv)
+#: source_id: viz2021:13.38508,52.5136,04.09.2025,06:00 (bis 12.09.2025) (inaktiv)
+#: source_id: viz2021:13.38476,52.51446,04.09.2025,06:00 (bis 12.09.2025) (inaktiv)
 Mauerstr.	2::temp 9076,12054 9108,11961 9138,11872
 Jägerstr.	2::temp 9108,11961 9195,11972
 Taubenstr.	2::temp 9138,11872 9207,11880
@@ -36615,7 +36617,7 @@ EOF
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.03.2025',
 #      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis 10.04.2025',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags zunächst bis Mitte September 2025',
-       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ene der Bauarbeiten unbekannt',
+       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36652,11 +36654,11 @@ EOF
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: source_id: viz2021:13.492668,52.636706,15.04.2025,12:00 (bis 12.09.2025 + weitere Bauphasen) (inaktiv)
-#: source_id: viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025)
+#: source_id: viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
-#: next_check: 2025-09-11 (VIZ-Verkehrsmeldung --- danach vielleicht ein neuer Bauzustand?) vvv
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
 Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
@@ -37745,7 +37747,7 @@ EOF
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
-#: osm_watch: way id="147686211" version="10"
+# REMOVED (dieser Wegteil wurde laut osm wieder geöffnet) --- #: osm_watch: way id="147686211" version="11"
 #: osm_watch: way id="481651814" version="6"
 #: last_checked: 2025-07-17
 #: check_frequency: 120d
@@ -39539,7 +39541,7 @@ EOF
 #: osm_watch: way id="37861386" version="29"
 #: osm_watch: way id="1231148375" version="6"
 #: priority: #B
-#: last_checked: 2025-08-26 (osm)
+#: last_checked: 2025-09-12 (osm)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-18 (nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -40440,6 +40442,7 @@ EOF
 #: source_id: viz2021:13.498511,52.640138,30.05.2023,11:30 (bis 02.06.2023) (inaktiv)
 #	2::inwork 16222,25829 16532,26174 17101,26701
 #: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
+#: add_fragezeichen: Ist der Röntgentaler Weg wieder offen?
 #: last_checked: 2025-03-23 vvv
 #: next_check: 2025-08-31 (DB website) vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
@@ -44354,6 +44357,7 @@ EOF
 # REMOVED --- #: by: krickstadt --- Haeckelstr.	q4::inwork 17379,3932 17468,3979
 #: note: neue Havarie 2025
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
 #: source_id: viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T)
@@ -46414,18 +46418,18 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-08-17 00:00:00"), # 1729533901, # 2024-10-21 20:05
-       until => $isodate2epoch->("2025-09-12 18:00:00"), # 1746876864, # undef, # $isodate2epoch->("2025-01-23 13:00:00"), # 1737154800, # 2025-01-18 00:00
+       until => $isodate2epoch->("2025-09-30 18:00:00"), # 1746876864, # undef, # $isodate2epoch->("2025-01-23 13:00:00"), # 1737154800, # 2025-01-18 00:00
 #      text  => 'Lynarstr.: Sperrung zwischen Humboldtstr. und Wangenheimstr., evtl. sind auch Radfahrer betroffen, bis 17.01.2025',
 #      text  => 'Lynarstr.: Sperrung zwischen Hubertusallee und Humboldtstr., evtl. sind auch Radfahrer betroffen, bis 23.01.2025',
 #      text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., evtl. auch bis Paulsborner Str., Ende der Bauarbeiten unbekannt',
 #      text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Wangenheimstr. und Paulsborner Str., Ende der Bauarbeiten unbekannt',
-       text  => 'Lynarstr.: Anbindung Hubertusallee gesperrt, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 bis Mitte September 2025',
+       text  => 'Lynarstr.: Anbindung Hubertusallee gesperrt, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 bis Ende September 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
 #: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
-#: source_id: viz2021:13.28469,52.48961,18.08.2025,11:00 (nur die Hubertusallee erwähnt, bis 12.09.2025)
+#: source_id: viz2021:13.28469,52.48961,18.08.2025,11:00 (nur die Hubertusallee erwähnt, bis 12.09.2025) (bis 30.09.2025)
 # REMOVED --- #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus; mittlerweile haben sich alle auf Wangenheimstr. - Paulsborner Str. geeinigt
 # REMOVED --- #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W)
 # REMOVED --- #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
@@ -47450,7 +47454,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
 #: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025)
-#: source_id: LS/222-W/25/089 (bis 12.09.2025)
+#: source_id: LS/222-W/25/089 (bis 12.09.2025) (inaktiv)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 EOF
      },
@@ -48888,7 +48892,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-09-01 (traffic)
+#: last_checked: 2025-09-12 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 EOF
@@ -49449,16 +49453,18 @@ EOF
 EOF
      },
      { from  => 1753596000, # 2025-07-27 08:00
-       until => $isodate2epoch->("2025-09-08 17:00:00"), # 1756306800, # 2025-08-27 17:00
+       until => $isodate2epoch->("2025-09-26 17:00:00"), # 1756306800, # 2025-08-27 17:00
 #      text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 27.08.2025',
-       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 08.09.2025',
+#      text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 08.09.2025',
+       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 26.09.2025',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
 #: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv)
 # REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
-	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
+# REMOVED ---	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
+	2::inwork 18540,-38360 18433,-38781 18272,-39512 18138,-39957
 EOF
      },
      { from  => 1753221600, # 2025-07-23 00:00
@@ -49524,9 +49530,9 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 # REMOVED --- #: XXX Hat es was mit den Fernwärmearbeiten im Barbarossakiez zu tun?
-#: also_indoor: traffic (G,T)
+#: also_indoor: traffic (G[zu viel?],T)
 #: note: Länge der Sperrung ca. 60m
-#: last_checked: 2025-08-29 (traffic)
+#: last_checked: 2025-09-12 (traffic)
 #: check_frequency: 14d
 	q4::inwork 6860,9529 7002,9526
 EOF
@@ -49662,7 +49668,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-09-11
+#: last_checked: 2025-09-12
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -49678,12 +49684,12 @@ EOF
 EOF
      },
      { from  => 1756015200, # 2025-08-24 08:00
-       until => 1757948400, # 2025-09-15 17:00
-       text  => 'Waltersdorf - Berlin: Deckenerneuerung des Rad- und Gehwegs, Sperrung, vom 25.08.2025 08:00 Uhr bis 15.09.2025 17:00 Uhr',
+       until => $isodate2epoch->("2025-09-17 17:00:00"), # 1757948400, # 2025-09-15 17:00
+       text  => 'Waltersdorf - Berlin: Deckenerneuerung des Rad- und Gehwegs, Sperrung, vom 25.08.2025 08:00 Uhr bis 17.09.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~19-08-2025-rw-an-l400-waltersdorf-berlin
-#: source_id: LS/222-W/25/094 (bis 15.09.2025)
+#: source_id: LS/222-W/25/094 (bis 15.09.2025) (bis 17.09.2025)
 	2::inwork 22001,-1632 21861,-2154 21696,-2925 21722,-3421 21687,-3601 21607,-3739
 EOF
      },
@@ -49915,6 +49921,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BELZIGER-2025
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597306.php (Maßnahme bis Ende Oktober 2025)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: last_checked: 2025-09-11
 #: check_frequency: 14d
@@ -49929,7 +49936,7 @@ EOF
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lyhtc24jas2b
 #: note: man kann nur auf die andere Straßenseite wechseln
-#: source_id[inactive]: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum)
+#: source_id: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum)
 #: source_id: viz2021:13.37918,52.48055, (kein Endedatum)
 #: also_indoor: traffic (T)
 #: last_checked: 2025-09-11
@@ -49956,7 +49963,10 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.28295,52.44204, (bis 27.11.2025)
+#: also_indoor: traffic (T)
 #: next_check_id: THIELALLEE-2025
+#: last_checked: 2025-09-12 (traffic)
+#: check_frequency: 30d (traffic)
 	q4::inwork; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
 EOF
      },

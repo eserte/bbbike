@@ -10,11 +10,11 @@
 # 
 ### Friedrichshain ###
 # 
-#: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025)
-#: last_checked: 2025-09-10
-#: next_check: 2025-09-12
-#: valid: -20250912
-Wühlischstr.: Bauarbeiten, Einfahrt verboten	q4::inwork; 14771,11345 14759,11339
+# REMOVED --- #: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025) (inaktiv)
+# REMOVED --- #: last_checked: 2025-09-10
+# REMOVED --- #: next_check: 2025-09-12
+# REMOVED --- #: valid: -20250912
+# REMOVED --- Wühlischstr.: Bauarbeiten, Einfahrt verboten	q4::inwork; 14771,11345 14759,11339
 # 
 # REMOVED (vorfristig fertig geworden) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php (Bauende: voraussichtlich Anfang Juni 2025) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1549441.php (Querungshilfen im Bezirk, auch diese hier) --- #: also_indoor: traffic (ex-G,ex-W,B,T) --- #: osm_watch: note 3677862 12 --- #: note: Arbeiten für eine neue Gehwegvorstreckung --- #: last_checked: 2025-04-09 --- #: check_frequency: 45d --- #: next_check: 2025-06-01 (BA-Artikel) --- Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgersteige	q4::inwork 14651,11666 14710,11626
 # REMOVED (vorfristig fertig geworden) --- #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025) (bis 18.04.2025) (zu spät inaktiv) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10) --- #: osm_watch: way id="1145213536" version="7" --- #: osm_watch: way id="1363264660" version="3" --- #: note: Halteverbotsschilder bis 18.04.2025 --- #: also_indoor: traffic (G,T) --- #: last_checked: 2025-03-28 (fast fertig) --- #: check_frequency: 3d --- #: next_check: 2025-04-18 (Halteverbotsschilder, VIZ-Verkehrsmeldung) --- #: valid: -20250418 --- Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
@@ -126,7 +126,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-09-11
+#: last_checked: 2025-09-12
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -4205,6 +4205,7 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.tagesspiegel.de/die-losung-an-berlins-grossem-bvg-knoten-stadtrat-zeigt-erstmals-neue-fahrradbrucke-am-rathaus-spandau-13504444.html (kein Bautermin)
 #: by: https://entwicklungsstadt.de/so-soll-die-neue-fahrradbruecke-am-rathaus-spandau-aussehen/
 #: by: https://www.morgenpost.de/bezirke/spandau/article408813542/verkehrswende-die-plaene-fuer-die-radbruecke-am-rathaus-spandau.html
+#: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13024 (Anfrage)
 # REMOVED (wieder benutzungspflichtig) --- #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
 #: last_checked: 2025-08-08 (mapillary) vvv
 #: check_frequency: 360d vvv
