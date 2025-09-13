@@ -15228,12 +15228,8 @@ Wulfila-Ufer	NN 8750,5173 9118,5328 9145,5323 9188,5333
 # REMOVED (ja) --- #: add_fragezeichen: Hat der Weg bereits den Namen "Gerda-und-Wolfgang-Szepansky-Promenade" bekommen? Stehen schon entsprechende Schilder? --- #: osm_watch: way id="28048692" version="16" --- #: last_checked: 2021-05-30 --- #: next_check: 2021-03-26
 Gerda-und-Wolfgang-Szepansky-Promenade	NN 9196,5272 9171,5263 9080,5225 8881,5143 8784,5095
 (Am Teltowkanal, südl. Ufer)	NN 8784,5095 8618,5019 8598,4985 8575,4980 8234,4660 7994,4430
-#: next_check_id: RING-2025
-#: XXX zurzeit provisorische Führung des Uferweges, wird später wieder verschwenkt
-#: last_checked: 2025-07-19
-#: check_frequency: 90d
-#: next_check: 2025-08-29
-(Am Teltowkanal, nördl. Ufer)	NN 7874,4481 7866,4419 7769,4315 7673,4223
+# REMOVED --- #: next_check_id: RING-2025 --- #: XXX zurzeit provisorische Führung des Uferweges, wird später wieder verschwenkt --- #: last_checked: 2025-09-13 --- #: check_frequency: 90d --- #: next_check: 2025-08-29
+(Am Teltowkanal, nördl. Ufer)	NN 7911,4465 7866,4419 7769,4315 7673,4223
 #: oldname: -20160914: <namenslos> vvv
 Mariendorfer-Hafen-Weg	N 8199,3338 8145,3380 8106,3410
 Mariendorfer-Hafen-Weg	NN 8106,3410 8055,3547 8016,3651 7795,4242
@@ -17377,6 +17373,7 @@ Alfred-Balen-Weg	NN -4169,12371 -4365,12358
 (Heerstr. - Dorfstr./Tiefwerder)	NN -3217,11570 -3179,11763 -3116,12012 -3102,12061 -3024,12342 -2929,12452 -2912,12459 -2825,12427
 Brandensteinweg	N -2871,11423 -2845,11487 -2768,11599 -2643,11701 -2480,11712 -2464,11596
 Siemenswerderweg	N -2871,11423 -2951,11231 -3078,11157 -2934,11078 -2894,11025 -2970,10748
+Siemenswerderweg	N -3078,11157 -3147,11132 -3261,10950
 (Mühlenweg)	NN -2043,20968 -1895,20953 -1760,20985 -1590,20948 -1082,20996 -889,20979 -750,20878 -329,20685 -105,20611 65,20594 462,20694 605,20714
 (Försterweg)	NN -2043,20968 -2101,20891 -1811,20818 -1292,20572 -1243,20471 -1050,20281 -871,20225 -842,20200 -716,20060 -516,19798 -303,19740
 (Waldweg im Tegeler Forst)	NN -1543,18632 -1527,18645 -671,19408 -303,19740 -183,19831 97,20103
@@ -19856,7 +19853,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-09-04 vvv
+#: last_checked: 2025-09-13 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

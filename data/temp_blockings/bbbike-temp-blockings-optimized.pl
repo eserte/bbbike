@@ -2449,12 +2449,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tats‰chlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1757282400,
+         'from' => 1757887200,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, n‰chster Zeitraum 9.9.2025 bis 12.9.2025',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, n‰chster Zeitraum 16.9.2025 bis 18.9.2025',
          'type' => 'gesperrt',
-         'until' => 1757714399
+         'until' => 1758232799
        },
        undef,
        undef,
@@ -3027,6 +3027,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: source_id: viz2021:13.360266,52.515154,24.09.2023,22:00 (bis 06.10.2023) (inaktiv)
 #: source_id: viz2021:13.36968,52.51571,20.09.2024,16:58 (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.375084,52.516116,01.10.2024,18:00 (bis 02.10.2024) (inaktiv)
+#: source_id: viz2021:13.369749,52.515716,13.09.2025,06:00 (bis 24.09.2025)
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -5421,7 +5422,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-08-28
+#: last_checked: 2025-09-13
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5850,11 +5851,11 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht mˆglich	q3::inwork 10631,-2130 106
 # REMOVED --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
-#: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "f¸r etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025
+#: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "f¸r etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"
 #: priority: #B
 #: last_checked: 2025-09-10
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-07-31
+#: next_check: 2025-09-30 (DB-Mail)
 	2::inwork 15777,10897 15820,10916 15870,10938
 ',
          'from' => undef,
@@ -6045,19 +6046,7 @@ Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BUCKOWERCHAUSSEE-2022
-#: next_check_id: DRESDNERBAHN-2021
-#: note: existiert auch in gesperrt-orig
-# REMOVED --- #: add_fragezeichen: Ist der Bahn¸bergang Buckower Chaussee noch f¸r Radfahrer passierbar?
-	2::inwork 9123,533 9178,556
-',
-         'from' => undef,
-         'id' => 3690,
-         'text' => 'Buckower Chaussee: der Bahn¸bergang wird demn‰chst (voraussichtlich ab 1.12.2022) wegen Bauarbeiten f¸r eine neue Br¸cke komplett gesperrt',
-         'type' => 'gesperrt',
-         'until' => 1767221999
-       },
+       undef,
        undef,
        undef,
        {
@@ -6762,7 +6751,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende M‰rz 2026
 #: note: L‰nge der Einbahnstraﬂenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-07-18
+#: last_checked: 2025-09-13
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -7312,6 +7301,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erw‰hnt; bis 07.06.2024) (inaktiv)
 #: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
 #: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zus‰tzlich einen 1x70m oder 2x70m langen Umweg nehmen
+#: note: zu Ende der Sperrung (Samstag davor) war die Einengung an UdL bereits abgebaut
 Schinkelplatz	2::temp 9984,12426 9990,12404
 Schinkelplatz	2::temp 9990,12404 9996,12372
 Niederlagstr.	q4::temp 9934,12420 9943,12364
@@ -8703,7 +8693,7 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 #: note: linker B¸rgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur auﬂerhalb der Arbeitszeiten?) gehen einige Fuﬂg‰nger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage k¸rzer als bei VIZ)
-#: last_checked: 2025-09-09 (osm note) vvv
+#: last_checked: 2025-09-13 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -8885,7 +8875,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
-#: last_checked: 2025-09-11 vvv
+#: last_checked: 2025-09-13 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9024,7 +9014,25 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung S¸den gesperrt	q4::inwork; 2
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
+#: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
+#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025) (neue ID -> inaktiv)
+#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025) (inaktiv)
+#: also_indoor: traffic (ex-H[nur noch Eschenallee],G[nur noch Eschenallee],T,ex-A,ex-W)
+#: note: bei rbb bis 01.08.2025 verl‰ngert, allerdings hier Kreuzung Kirschenallee
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2025-09-13 (traffic)
+#: check_frequency: 7d (traffic)
+	q3::inwork 919,11938 1078,11895 1188,11861
+	q3::inwork 1036,11761 1078,11895 1100,11974
+',
+         'from' => 1750861140,
+         'id' => 4375,
+         'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: also_indoor: traffic (G,re-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
@@ -9172,7 +9180,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg f¸r Radfahrer frei	q3::inwork; 9025,127
 #: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
 #: note: f¸r Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
-#: last_checked: 2025-08-06 vvv
+#: last_checked: 2025-09-13 vvv
 #: next_check: 2025-09-20 vvv
 Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 # REMOVED (nicht mehr?) --- #: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
@@ -9186,18 +9194,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
          'type' => 'handicap',
          'until' => 1758319200
        },
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~15-07-2025-b188-kreisverkehr-zwischen-stechow-und-rhinsmuehlen (Bauarbeiten f¸r Kreisverkehr B188/Stechow - Nennhausen; Radwegbau Stechow - Rhinsm¸hlen (~5km) beginnt nach den Bauarbeiten im September 2025)
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~05-09-2025-b188-arbeiten-kreisverkehr-stechow
-#: source_id: LS/223-P/25/088 (bis 06.09.2025) (bis 13.09.2025)
-#: next_check: 2025-09-13
-Stechow - Rhinsm¸hlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork -54051,23436 -53816,23532 -53633,23786 -53625,23953
-',
-         'from' => 1752616800,
-         'id' => 4392,
-         'text' => 'Stechow - Rhinsm¸hlen (B188): Bauarbeiten, Sperrung, vom 17.07.2025 bis 13.09.2025',
-         'until' => 1757775600
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: GRUNEWALDSTR-2025
@@ -9586,7 +9583,7 @@ Bl¸cherstr. Richtung S¸dstern: keine Freigabe f¸r Radfahrer	q4::inwork; 10306,96
 ',
          'from' => undef,
          'id' => 4428,
-         'text' => 'Gerlacher Weg: Bauarbeiten, offiziell ist der Weg gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Gerlachsheimer Weg: Bauarbeiten, offiziell ist der Weg gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9602,7 +9599,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
 ',
          'from' => 1756417862,
          'id' => 4430,
-         'text' => 'Schillerstr., Goethestr. und Giesensdorfer Str.: Bauarbeiten, Sperrungen, bis Ende Januar 2026 ',
+         'text' => 'Schillerstr., Goethestr. und Giesensdorfer Str.: Bauarbeiten, Sperrungen, bis Ende Januar 2026',
          'type' => 'handicap',
          'until' => 1769813999
        },
@@ -9685,21 +9682,22 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        },
        {
          'data' => '#: add_fragezeichen: Ist die Fahrbahn wieder offen?
-#: last_checked: 2025-09-11
+#: last_checked: 2025-09-13
 #: check_frequency: 7d
 	q4::inwork 11917,11186 11726,11265
 ',
          'from' => undef,
          'id' => 4438,
-         'text' => 'Melchiorstr.: Markierungsarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Melchiorstr.: Markierungsarbeiten f¸r Fahrradstraﬂe, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
        {
-         'data' => '#: next_check_id: BELZIGER-2025
+         'data' => '#: next_check_id: MONUMENTEN-2025
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597306.php (Maﬂnahme bis Ende Oktober 2025)
+#: osm_watch: note 4959079 1
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2025-09-11
+#: last_checked: 2025-09-13
 #: check_frequency: 14d
 #: next_check: 2025-10-31 (Fahrrat-Protokoll)
 	q4::inwork 7790,9126 8014,9126 8053,9123 8081,9120 8180,9099

@@ -370,7 +370,7 @@ Reichenberger Str.: Kopfsteinpflaster	Q2 12229,10014 12398,9938 12556,9862 12714
 Reichenberger Str.: Fahrbahn Kopfsteinpflaster, Verbundsteinpflasterradwege	Q1- 12714,9792 12834,9738
 Reichenberger Str.: Kopfsteinpflaster	Q2 12834,9738 12935,9689
 Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
-Aachener Str.: Kopfsteinpflaster	Q2 4672,8031 4687,8306 4629,8461
+Aachener Str.: Kopfsteinpflaster	Q2- 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
 #: last_checked: 2025-07-11
@@ -955,7 +955,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2025-07-18
+#: last_checked: 2025-09-13
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -3485,13 +3485,13 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: next_check_id: DRESDNERBAHN-2021
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
-#: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
+# REMOVED --- #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
 #: osm_watch: way id="30893534" version="27"
 #: osm_watch: way id="1155399359" version="4"
-#: last_checked: 2025-07-19
+#: last_checked: 2025-09-13
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
-Am Teltowkanal: Asphalt	Q0 7874,4481 7866,4419 7769,4315
+Am Teltowkanal: Asphalt	Q0 7911,4465 7866,4419 7769,4315
 # 
 Am Teltowkanal: fester Sandweg	Q1 7769,4315 7673,4223
 Edenkobener Steg: Holzbohlen	Q1 6618,4191 6633,4272
@@ -16006,6 +16006,7 @@ Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351 7412,8273
 Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: corrected_by: srt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/protokoll-fahrrat-am-08102024.pdf (Entwurfsplanung, außerdem Fahrradstraße inklusive Stille Str. und Waldstr.)
 #: XXX wann wird hier asphaltiert?
 #: osm_watch: way id="13863115" version="22"
 #: last_checked: 2025-09-11
@@ -20497,6 +20498,8 @@ Jostweg: Kleinsteinpflaster	Q2 3415,25731 3356,25725 3216,25778
 # 
 #: by: Hausberger (benno):
 Siemenswerderweg: sehr schlechtes Kopfsteinpflaster	Q3 -2871,11423 -2951,11231 -3078,11157 -2934,11078 -2894,11025 -2970,10748
+#: by: mapillary (partial):
+Siemenswerderweg: unbefestigte Straße	Q2 -3078,11157 -3147,11132 -3261,10950
 # 
 #: by: ronald (rwarsow):
 #: corrected_by: srt (guter Asphalt -> ...)
