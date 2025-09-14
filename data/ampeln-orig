@@ -345,7 +345,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 120d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -438,7 +438,7 @@ Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating 
 # 
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7596 (Antrag auf Verstetigung)
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-02 (mapillary)
 #: check_frequency: 120d
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
@@ -2921,6 +2921,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off: 2022-08-14 Sun 12:15
 #: off: 2023-11-19 Sun 12:05
 #: off: 2025-04-13 Sun 12:40
+#: off: 2025-09-14 Sun 12:58
 #: off_rule: night Sun
 	X 15681,10801
 # 
@@ -4290,7 +4291,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2025-08-13 (mapillary)
+#: last_checked: 2025-09-04 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-26 (VIZ-Verkehrsmeldung)
 	X::inwork 8250,14672
@@ -4427,7 +4428,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: XXX noch provisorisch, soll verstetigt werden
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-14
 #: check_frequency: 90d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

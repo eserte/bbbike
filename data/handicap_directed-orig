@@ -515,19 +515,16 @@ Landsberger Allee	DH:t=60 19205,14980 19196,14976 19200,14963
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-08-26 (luftbildsuche) vvv
+#: last_checked: 2025-09-14 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-09-11 (Umstellung der Verkehrsführung (auf die andere Brückenhälfte)) vvv
-# REMOVED --- #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
-# REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 16747,6813 16720,6845
-# REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:t=20 16720,6845 16677,6892
+# REMOVED --- #: next_check: 2025-09-11 (Umstellung der Verkehrsführung (auf die andere Brückenhälfte)) vvv
+#: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
+Marggraffbrücke: Radfahrer Richtung Nordwesten müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20:len=30 16747,6813 16720,6845
 #: note: eine Anforderungsampel, die aber recht flott grün wird
-Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20:len=30 16563,7012 16627,6945 16677,6892
-#: note: zwei Ampeln müssen genommen werden
-Marggraffbrücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=40:len=30 16720,6845 16747,6813 16805,6747
-#: note: nach dem Umweg gleicher Weg wie oben
-Güldenhofer Ufer - Köpenicker Landstr.: Umweg zurück zur Ampel	DH:t=20:len=175:h=q3,75 16630,6800 16677,6892 16720,6845
-Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,6910 16747,6813 16805,6747
+Marggraffbrücke: Radfahrer Richtung Nordwesten müssen den gegenüberliegenden Radweg verlassen	DH:t=20:len=30 16677,6892 16627,6945 16563,7012
+# REMOVED --- Marggraffbrücke: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:t=20 16720,6845 16677,6892
+# REMOVED --- #: note: zwei Ampeln müssen genommen werden --- Marggraffbrücke: Radfahrer müssen den gegenüberliegenden Radweg verlassen	DH:t=40:len=30 16720,6845 16747,6813 16805,6747
+# REMOVED --- #: note: nach dem Umweg gleicher Weg wie oben --- Güldenhofer Ufer - Köpenicker Landstr.: Umweg zurück zur Ampel	DH:t=20:len=175:h=q3,75 16630,6800 16677,6892 16720,6845 --- Minna-Todenhagen-Brücke - Köpenicker Landstr: zusätzliche Ampel	DH:t=20 16834,6910 16747,6813 16805,6747
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -637,14 +634,15 @@ Bornitzstr. - Scheffelstr.: Radverkehr muss die Fahrbahnseite wechseln	DH:len=15
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: also_indoor: traffic (G)
-#: last_checked: 2025-09-08 vvv
+#: also_indoor: traffic (G) vvv
+#: last_checked: 2025-09-14 (traffic) vvv
 #: next_check: 2025-09-15 (Halteverbotsschilder) vvv
-#: valid: -20250915 vvv
+# REMOVED --- #: valid: -20250915 vvv
 Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17186,17593 17264,17489
 Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17264,17489 17186,17593
-#: valid ^^^
+# REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 # 
 #: temporary ^^^

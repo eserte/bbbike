@@ -4261,7 +4261,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-08-29 vvv
+#: last_checked: 2025-09-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4599,7 +4599,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: way id="198581621" version="19"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5562,19 +5562,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
        undef,
        undef,
        undef,
-       {
-         'data' => '#: url: https://www.wuhlheide.de/programm
-#: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03, 2024-06-09
-#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023; Nachtrag: am 17. September 2023 gab es wohl auch eins
-#: note: 2024 gibt es Konzerttermine zwischen dem 22. Juni 2024 und 14. September 2024
-	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
-',
-         'from' => 1750456800,
-         'id' => 3570,
-         'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis Mitte September',
-         'type' => 'gesperrt',
-         'until' => 1757865600
-       },
+       undef,
        {
          'data' => '#: by: Gonsolo & osm
 	2::temp -8489,-2220 -8574,-2204 -8653,-2195
@@ -6198,7 +6186,7 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="29"
-#: osm_watch: way id="1231148375" version="6"
+#: osm_watch: way id="1231148375" version="7"
 #: priority: #B
 #: last_checked: 2025-09-12 (osm)
 #: check_frequency: 120d
@@ -6391,8 +6379,8 @@ Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 #	2::inwork 16222,25829 16532,26174 17101,26701
 #: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
 #: add_fragezeichen: Ist der Röntgentaler Weg wieder offen?
-#: last_checked: 2025-03-23 vvv
-#: next_check: 2025-08-31 (DB website) vvv
+#: last_checked: 2025-09-01 (mapillary) vvv
+# REMOVED --- #: next_check: 2025-08-31 (DB website) vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
 #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025) (inaktiv)
@@ -6400,13 +6388,13 @@ Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 #: source_id: viz2021:13.499947,52.640906, (bis 06.10.2025)
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
 #	q3::inwork; 17101,26701 16532,26174
-	q3::inwork 17101,26701 16532,26174
-#: next_check ^^^
+# REMOVED (nicht mehr?)	q3::inwork 17101,26701 16532,26174
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3801,
-         'text' => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, voraussichtlich bis 31.08.2025',
+         'text' => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6441,7 +6429,7 @@ Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -6756,7 +6744,6 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
 ',
-         'dont_check_date' => 1,
          'from' => 1693458000,
          'id' => 3913,
          'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis voraussichtlich Ende März 2026',
@@ -6818,7 +6805,6 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 ',
-         'dont_check_date' => 1,
          'from' => 1740817421,
          'id' => 3927,
          'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
@@ -7037,7 +7023,6 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
-         'dont_check_date' => 1,
          'from' => 1707087600,
          'id' => 4006,
          'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Ende 2025',
@@ -7296,23 +7281,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Sperrung der südlichen Fahrbahn UdL erwähnt; bis 07.06.2024) (inaktiv)
-#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erwähnt; bis 07.06.2024) (inaktiv)
-#: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
-#: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zusätzlich einen 1x70m oder 2x70m langen Umweg nehmen
-#: note: zu Ende der Sperrung (Samstag davor) war die Einengung an UdL bereits abgebaut
-Schinkelplatz	2::temp 9984,12426 9990,12404
-Schinkelplatz	2::temp 9990,12404 9996,12372
-Niederlagstr.	q4::temp 9934,12420 9943,12364
-An der Kommandantur	q4::temp 9996,12372 9943,12364
-',
-         'from' => 1756850400,
-         'id' => 4079,
-         'text' => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mögliche Sperrung, vom 04.09.2025 09:00 bis 14.09.2025 20:00',
-         'type' => 'gesperrt',
-         'until' => 1757800800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: VIRCHOW-2023
@@ -7675,7 +7644,6 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
 ',
-         'dont_check_date' => 1,
          'from' => 1724796000,
          'id' => 4149,
          'text' => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung der Fahrbahn, bis Ende September 2027',
@@ -8338,7 +8306,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,re-H)
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 10d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
@@ -8476,10 +8444,9 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 # REMOVED --- Klingsorstr. (1. BA)	q4::inwork 5271,4547 5214,4445 5206,4432 5150,4345 5120,4318 5090,4291 5063,4266 4932,4152
 Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,4042
 ',
-         'dont_check_date' => 1,
          'from' => 1753567200,
          'id' => 4292,
-         'text' => 'Klingsorstr.: Sanierungsarbeiten zwischen Brahmsstr. und Hindenburgdamm, Fahrbahn gesperrt, vom 18.08.2025 bis Anfang September 2025',
+         'text' => 'Klingsorstr.: Sanierungsarbeiten zwischen Brahmsstr. und Hindenburgdamm, Fahrbahn gesperrt, vom 18.08.2025 bis Mitte September 2025',
          'type' => 'handicap',
          'until' => 1758297600
        },
@@ -8924,18 +8891,23 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025)
+         'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
+#: also_indoor: traffic (T)
+#: last_checked: 2025-09-14 (traffic) vvv
+#: check_frequency: 7d vvv
 #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
 Pestalozzistr.	q4::inwork; 4434,11227 4546,11217
 #: note: zwar ist an der Kantstr. ausgeschildert "Sackgasse, offen für Fußgänger und Radfahrer", allerdings gibt es keine Gehwegfreigabe im Baustellenbereich, es gibt auch keine Anrampungen oder Bordsteinabsenkungen
 Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1748750400,
          'id' => 4358,
-         'text' => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
+         'text' => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025, evtl. wird die Sperrung verlängert',
          'type' => 'handicap',
-         'until' => 1757800740
+         'until' => undef
        },
        undef,
        undef,
@@ -9036,14 +9008,14 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: also_indoor: traffic (G,re-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-09 (traffic)
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2025-08-29 (Halteverbotsschilder)
+#: last_checked: 2025-09-14
+#: check_frequency: 10d (traffic)
+#: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
 ',
          'from' => 1751183543,
          'id' => 4376,
-         'text' => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende August 2025, evtl. wird verlängert',
+         'text' => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende September 2025, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9149,7 +9121,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'until' => 1758297600
        },
        {
-         'data' => '#: last_checked: 2025-09-01
+         'data' => '#: last_checked: 2025-09-14
 #: check_frequency: 60d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
@@ -9232,7 +9204,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 30d
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -9418,7 +9390,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'data' => '#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
 #: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
 #: also_indoor: traffic (G,T,H)
-#: last_checked: 2025-09-06
+#: last_checked: 2025-09-14 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 10066,10071 9837,10117
 ',
@@ -9474,17 +9446,17 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
        {
          'data' => '#: next_check_id: BLUECHER-2025
 #: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025)
+#: also_indoor: traffic (T,G,W,H,)
 #: last_checked: 2025-09-11 vvv
-#: next_check: 2025-09-15 vvv
+#: next_check: 2025-09-15 (VIZ-Verkehrsmeldung) vvv
 Blücherstr. Richtung Baerwaldstr.: Gehweg für Radfahrer frei	q3::inwork; 10429,9514 10306,9640
 Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,9640 10429,9514
 #: next_check ^^^
 #: last_checked ^^^
 ',
-         'dont_check_date' => 1,
          'from' => 1755666000,
          'id' => 4417,
-         'text' => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, vom 21.08.2025 07:00 bis 15.09.2025, evtl. wird verlängert',
+         'text' => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, vom 21.08.2025 07:00 bis 15.09.2025, evtl. wird die Sperrung verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9751,6 +9723,35 @@ Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
          'text' => 'Thielallee: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, bis voraussichtlich 27.11.2025',
          'type' => 'handicap',
          'until' => 1764284400
+       },
+       {
+         'data' => '#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026)
+#: osm_watch: way id="23926070" version="5"
+#: last_checked: 2025-09-12 (osm)
+#: check_frequency: 30d (indoor checks)
+#: next_check: 2026-05-01 (Ausschilderung vor Ort)
+Spektegrabensteg	2::inwork -7228,15933 -7243,15943
+',
+         'from' => undef,
+         'id' => 4443,
+         'text' => 'Spektegrabensteg: Sperrung, voraussichtlich bis April 2026',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
+#: osm_watch: note 4801950 4
+#: osm_watch: way id="53168806" version="7"
+#: add_fragezeichen: Sind alle Bauarbeiten beendet?
+#: last_checked: 2025-09-06 (Mapillary) (noch abgesperrt)
+#: check_frequency: 14d
+(Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
+',
+         'from' => undef,
+         'id' => 4444,
+         'text' => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

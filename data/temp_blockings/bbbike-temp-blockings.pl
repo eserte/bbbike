@@ -29542,7 +29542,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-08-29 vvv
+#: last_checked: 2025-09-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -32089,7 +32089,7 @@ EOF
 #: osm_watch: way id="198581621" version="19"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -39540,7 +39540,7 @@ EOF
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: osm_watch: way id="37861386" version="29"
-#: osm_watch: way id="1231148375" version="6"
+#: osm_watch: way id="1231148375" version="7"
 #: priority: #B
 #: last_checked: 2025-09-12 (osm)
 #: check_frequency: 120d
@@ -40433,7 +40433,8 @@ EOF
      { from  => undef, # 1685381243, # 2023-05-29 19:27
        until => undef, # 1685646667, # 1685743200, # 2023-06-03 00:00
 #      text  => 'Röntgentaler Weg: Sperrung in Höhe Pöllnitzweg, 30.5.2023 bis 2.6.2023',
-       text  => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, voraussichtlich bis 31.08.2025',
+#      text  => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., außerdem Einbahnstraßenregelung nordöstlich des Pöllnitzwegs, voraussichtlich bis 31.08.2025',
+       text  => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -40444,8 +40445,8 @@ EOF
 #	2::inwork 16222,25829 16532,26174 17101,26701
 #: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
 #: add_fragezeichen: Ist der Röntgentaler Weg wieder offen?
-#: last_checked: 2025-03-23 vvv
-#: next_check: 2025-08-31 (DB website) vvv
+#: last_checked: 2025-09-01 (mapillary) vvv
+# REMOVED --- #: next_check: 2025-08-31 (DB website) vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
 #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025) (inaktiv)
@@ -40453,8 +40454,8 @@ EOF
 #: source_id: viz2021:13.499947,52.640906, (bis 06.10.2025)
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
 #	q3::inwork; 17101,26701 16532,26174
-	q3::inwork 17101,26701 16532,26174
-#: next_check ^^^
+# REMOVED (nicht mehr?)	q3::inwork 17101,26701 16532,26174
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 EOF
      },
@@ -40710,7 +40711,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -41992,7 +41993,6 @@ EOF
      },
      { from  => 1693458000, # 2023-08-31 07:00
        until => $isodate2epoch->("2026-03-30 18:00:00"), # 1734649140, # 2024-12-19 23:59
-       dont_check_date => 1,
        text  => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis voraussichtlich Ende März 2026',
        type  => 'handicap',
        data  => <<EOF,
@@ -42207,7 +42207,6 @@ EOF
      },
      { from  => 1740817421, # 1695746966, # 2023-09-26 18:49
        until => undef, # 1722877242, # undef, # 1711922399, # 2024-03-31 23:59
-       dont_check_date => 1,
 #      text  => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Juli 2024, evtl. länger',
        text  => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
@@ -43418,7 +43417,6 @@ EOF
      },
      { from  => 1707087600, # 2024-02-05 00:00
        until => $isodate2epoch->("2025-12-31 18:00:00"), # $isodate2epoch->("2024-08-02 18:00:00"), # 1722635940, # 2024-08-02 23:59
-       dont_check_date => 1,
        text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Ende 2025',
        type  => 'handicap',
        data  => <<EOF,
@@ -45662,8 +45660,7 @@ EOF
      },
      { from  => $isodate2epoch->("2024-08-28 00:00:00"), # 1724302800, # 2024-08-22 07:00
        until => $isodate2epoch->("2027-09-30 17:00:00"), # undef, # 1726498800, # 2024-09-16 17:00
-       dont_check_date => 1,
-#       text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 29.08.2024 09:00 bis 16.09.2024 17:00, evtl. wird verlängert',
+#      text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 29.08.2024 09:00 bis 16.09.2024 17:00, evtl. wird verlängert',
        text  => 'Straßmannstr.: Baustelle zwischen Petersburger Str. und Petersburger Platz, Sperrung der Fahrbahn, bis Ende September 2027',
        type  => 'handicap',
        data  => <<EOF,
@@ -47408,7 +47405,7 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,re-H)
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 10d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
@@ -47742,11 +47739,10 @@ EOF
      },
      { from  => $isodate2epoch->("2025-07-27 00:00:00"), # $isodate2epoch->("2025-04-09 00:00:00"), # 1743953696, # 1743890400, # 2025-04-06 00:00
        until => $isodate2epoch->("2025-09-19 18:00:00"), # 1750702259, # 1750716000, # 2025-06-24 00:00
-       dont_check_date => 1,
 #      text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 10.04.2025 bis 23.06.2025',
 #      text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Birkbuschstr. und Brahmsstr., Fahrbahn gesperrt, vom 28.07.2025 bis 24.08.2025',
 #      text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Birkbuschstr. und Hindenburgdamm, Fahrbahn gesperrt, evtl. ist der östliche Abschnitt bereits fertig, bis Anfang September 2025',
-       text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Brahmsstr. und Hindenburgdamm, Fahrbahn gesperrt, vom 18.08.2025 bis Anfang September 2025',
+       text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Brahmsstr. und Hindenburgdamm, Fahrbahn gesperrt, vom 18.08.2025 bis Mitte September 2025',
        type  => 'handicap',
        data  => <<'EOF',
 # erste Baumaßnahme (April 2025)
@@ -48746,17 +48742,23 @@ EOF
 EOF
      },
      { from  => 1748750400, # 2025-06-01 06:00
-       until => 1757800740, # 2025-09-13 23:59
+       until => undef, # 1757800740, # 2025-09-13 23:59
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Leibnizstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
-       text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
+#      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
+       text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025)
+#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
+#: also_indoor: traffic (T)
+#: last_checked: 2025-09-14 (traffic) vvv
+#: check_frequency: 7d vvv
 #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
 Pestalozzistr.	q4::inwork; 4434,11227 4546,11217
 #: note: zwar ist an der Kantstr. ausgeschildert "Sackgasse, offen für Fußgänger und Radfahrer", allerdings gibt es keine Gehwegfreigabe im Baustellenbereich, es gibt auch keine Anrampungen oder Bordsteinabsenkungen
 Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1748926800, # 2025-06-03 07:00
@@ -49090,14 +49092,14 @@ EOF
      },
      { from  => 1751183543, # 2025-06-29 09:52
        until => undef,
-       text  => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende August 2025, evtl. wird verlängert',
+       text  => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende September 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G,re-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-09 (traffic)
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2025-08-29 (Halteverbotsschilder)
+#: last_checked: 2025-09-14
+#: check_frequency: 10d (traffic)
+#: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
 EOF
      },
@@ -49267,7 +49269,7 @@ EOF
        text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-14
 #: check_frequency: 60d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
@@ -49365,7 +49367,7 @@ EOF
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-14
 #: check_frequency: 30d
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -49384,7 +49386,6 @@ EOF
      },
      { from  => $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
        until => undef, # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
-#      dont_check_date => 1,
 #      text  => 'Schubertstr.: etwa 80m der Straße westlich der Hämmerlingstr. gesperrt, u.U. außerhalb der Arbeitszeiten passierbar, Ende der Bauarbeiten unbekannt',
        text  => 'Schubertstr.: Sperrung wegen Baustelle, auch für Fußgänger nicht passierbar, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
@@ -49595,7 +49596,7 @@ EOF
 #: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
 #: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
 #: also_indoor: traffic (G,T,H)
-#: last_checked: 2025-09-06
+#: last_checked: 2025-09-14 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 10066,10071 9837,10117
 EOF
@@ -49653,14 +49654,14 @@ EOF
      },
      { from  => 1755666000, # 2025-08-20 07:00
        until => undef, # 1757973540, # 2025-09-15 23:59
-       dont_check_date => 1,
-       text  => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, vom 21.08.2025 07:00 bis 15.09.2025, evtl. wird verlängert',
+       text  => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, vom 21.08.2025 07:00 bis 15.09.2025, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BLUECHER-2025
 #: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025)
+#: also_indoor: traffic (T,G,W,H,)
 #: last_checked: 2025-09-11 vvv
-#: next_check: 2025-09-15 vvv
+#: next_check: 2025-09-15 (VIZ-Verkehrsmeldung) vvv
 Blücherstr. Richtung Baerwaldstr.: Gehweg für Radfahrer frei	q3::inwork; 10429,9514 10306,9640
 Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,9640 10429,9514
 #: next_check ^^^
@@ -49976,6 +49977,33 @@ EOF
 #: last_checked: 2025-09-12 (traffic)
 #: check_frequency: 30d (traffic)
 	q4::inwork; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
+EOF
+     },
+     { from  => undef,
+       until => undef, # XXX
+       text  => 'Spektegrabensteg: Sperrung, voraussichtlich bis April 2026',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026)
+#: osm_watch: way id="23926070" version="5"
+#: last_checked: 2025-09-12 (osm)
+#: check_frequency: 30d (indoor checks)
+#: next_check: 2026-05-01 (Ausschilderung vor Ort)
+Spektegrabensteg	2::inwork -7228,15933 -7243,15943
+EOF
+     },
+     { from  => undef,
+       until => undef, # XXX
+       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
+#: osm_watch: note 4801950 4
+#: osm_watch: way id="53168806" version="7"
+#: add_fragezeichen: Sind alle Bauarbeiten beendet?
+#: last_checked: 2025-09-06 (Mapillary) (noch abgesperrt)
+#: check_frequency: 14d
+(Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
      },
     );
