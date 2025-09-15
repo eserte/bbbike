@@ -23,7 +23,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
-Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
+Schadowstr.: Fahrbahn gesperrt, Umleitung	q4::inwork 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
@@ -140,7 +140,7 @@ Große Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11
 Am S-Bhf. Bellevue: einige Fußgänger	q1 6689,12632 6516,12650
 Holsteiner Ufer: einige Fußgänger	q1 6689,12632 6639,12701
 Bellevue-Ufer: einige Fußgänger	q1 7031,12320 6689,12632
-Bellevueallee: einige Fußgänger	q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
+Bellevueallee: einige Fußgänger	q1 7031,12320 7288,12156 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 (Luiseninsel - Tiergartenstr.): Parkweg	q1 7664,11597 7621,11541 7600,11513
 Tiergarten: Parkweg	q1 8167,11865 8132,11910
@@ -161,6 +161,9 @@ Tiergarten: Parkweg, Bordstein	q3 7603,12353 7627,12380
 Tiergarten: einige Fußgänger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
 Tiergarten: einige Fußgänger	q1 8172,11679 8189,11722 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
+(Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229
+(Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger, Engstelle an der Nordwegbrücke	q3 7661,12229 7653,12227
+(Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 7653,12227 7449,12216 7288,12156 7215,12129 6812,12057
 (Parkweg entlang der Tiergartenstr.): einige Fußgänger, einige Bäume auf dem Weg	q1 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553 7621,11541 7463,11538 7359,11538 7220,11542 7111,11524 7080,11508 6966,11490
 (Parkweg entlang der Tiergartenstr.): einige Fußgänger, einige Bäume auf dem Weg	q2 6966,11490 6844,11496 6826,11479
 (Bremer Weg - Fasanerieallee): einige Fußgänger	q1 6337,11887 6379,11843 6395,11806 6417,11796
@@ -646,7 +649,7 @@ Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloßstr.): Fußgänger	q2 5234,6086 5165,6119
 Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13291,22422 13290,22399 13388,22386 13404,22384
 (Bremer Weg): Fußgänger	q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
-(Bremer Weg): Fußgänger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239 8538,12245
+(Bremer Weg): Fußgänger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226 8538,12245
 Oberlandgarten: Fußgänger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fußgänger	q1 12052,6660 12059,6642 12092,6616 12155,6526
@@ -2708,6 +2711,7 @@ Alt-Heiligensee [Parkweg]: Fußgänger, Radfahren verboten	q4 -2687,22501 -2730,22
 (Sellerpark): schmal, einige Fußgänger	q2 7866,14541 7862,14546 7845,14554 7753,14528
 Wegerichstr.: Fußgänger	q2 16475,2586 16538,2543
 (Kleinbeerenstr. - Großbeerenstr.): Fußgänger	q2 8970,10506 8982,10510 9165,10530 9192,10528
+Storkwinkel: einige Fußgänger	q3 2424,9786 2431,9784 2450,9778
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3469,7 +3473,7 @@ Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
 Lee-Parry-Weg: schwieriges Befahren durch Steigung, in beiden Richtungen	q3 -5097,8448 -4998,8477
 (Strittweg - Straße 270): teilweise durch hereinragende Pflanzen wie Brennnesseln eingeengt	q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: schmaler Rad- und Gehweg (1,5m-2m)	q1 -7009,5211 -7174,5307
-Scharfe Lanke: enge Straße	q0 -4265,11109 -4266,11008 -4292,10888 -4284,10834 -4223,10714 -4223,10671 -4302,10584 -4387,10496 -4413,10447 -4445,10379
+Scharfe Lanke: enge Straße	q0 -4265,11109 -4266,11008 -4292,10888 -4284,10834 -4218,10709 -4218,10678 -4302,10584 -4387,10496 -4413,10447 -4445,10379
 (Schiffahrtsufer - Betckestr.): einige Fußgänger	q1 -3441,13270 -3352,13135 -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
 (Schiffahrtsufer - Betckestr.): einige Fußgänger	q1 -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 (zum Räcknitzer Steig): einige Fußgänger	q1 -5535,12631 -5559,12557
@@ -3761,3 +3765,4 @@ Eduard-Spranger-Promenade - Königsberger Str./Giesensdorfer Str.: linker Gehweg	
 Heerstr.: linker Gehweg	q4::igndisp; 929,11313 1028,11309
 Heerstr.: linker Gehweg	q4::igndisp; 1028,11309 960,11291
 Thüringerallee -> Theodor-Heuss-Platz: linker Gehweg	q4::igndisp; 1522,11254 1499,11281
+Storkwinkel -> Rathenauplatz: linke Gehweg	q4::igndisp; 2431,9784 2415,9765

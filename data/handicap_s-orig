@@ -464,7 +464,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-09-15 vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="43"
@@ -472,8 +472,9 @@ Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,1
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/schadowstra%C3%9Fe-4-dorotheenstra%C3%9Fe-verwaltungsgeb%C3%A4ude-bundestag.757/page-2#post-23517
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
 #: osm_watch: way id="930343902" version="4"
-#: note: Fahrbahn offen, beide B¸rgersteige gesperrt, Umleitung f¸r Fuﬂg‰nger
-Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
+# REMOVED --- #: note: Fahrbahn offen, beide B¸rgersteige gesperrt, Umleitung f¸r Fuﬂg‰nger --- Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
+#: note: (wieder) komplett gesperrt, auch die B¸rgersteige
+Schadowstr.: Fahrbahn gesperrt, Umleitung	q4::inwork 8999,12498 9011,12423
 #: osm_watch: way id="4402037" version="26"
 #: osm_watch: way id="1241756428" version="1"
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 9011,12423 9028,12307
@@ -586,7 +587,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-09-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1456,7 +1457,7 @@ Am S-Bhf. Bellevue: einige Fuﬂg‰nger	q1 6689,12632 6516,12650
 #: note: Gehweg, Radfahrer frei
 Holsteiner Ufer: einige Fuﬂg‰nger	q1 6689,12632 6639,12701
 Bellevue-Ufer: einige Fuﬂg‰nger	q1 7031,12320 6689,12632
-Bellevueallee: einige Fuﬂg‰nger	q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
+Bellevueallee: einige Fuﬂg‰nger	q1 7031,12320 7288,12156 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 (Luiseninsel - Tiergartenstr.): Parkweg	q1 7664,11597 7621,11541 7600,11513
 Tiergarten: Parkweg	q1 8167,11865 8132,11910
@@ -1480,6 +1481,12 @@ Tiergarten: Parkweg, Bordstein	q3 7603,12353 7627,12380
 Tiergarten: einige Fuﬂg‰nger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
 Tiergarten: einige Fuﬂg‰nger	q1 8172,11679 8189,11722 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 Tiergarten: einige Fuﬂg‰nger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
+(Tiergarten, nˆrdlich der Straﬂe des 17. Juni): einige Fuﬂg‰nger	q1 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/nordwegbruecke/ (noch keine geplante Bauzeit)
+#: last_checked: 2025-09-15
+#: check_frequency: 120d
+(Tiergarten, nˆrdlich der Straﬂe des 17. Juni): einige Fuﬂg‰nger, Engstelle an der Nordwegbr¸cke	q3 7661,12229 7653,12227
+(Tiergarten, nˆrdlich der Straﬂe des 17. Juni): einige Fuﬂg‰nger	q1 7653,12227 7449,12216 7288,12156 7215,12129 6812,12057
 (Parkweg entlang der Tiergartenstr.): einige Fuﬂg‰nger, einige B‰ume auf dem Weg	q1- 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553 7621,11541 7463,11538 7359,11538 7220,11542 7111,11524 7080,11508 6966,11490
 #: note: in diesem Abschnitt ist der Weg deutlich enger
 (Parkweg entlang der Tiergartenstr.): einige Fuﬂg‰nger, einige B‰ume auf dem Weg	q2 6966,11490 6844,11496 6826,11479
@@ -1857,7 +1864,7 @@ Hebbelstr.: Fuﬂg‰nger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fuﬂg‰nger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-08-30
+#: last_checked: 2025-09-15
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fuﬂg‰nger, Engstellen	q2 12341,10218 12292,10374
@@ -2274,7 +2281,7 @@ Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloﬂstr.): Fuﬂg‰nger	q2 5234,6086 5165,6119
 Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13291,22422 13290,22399 13388,22386 13404,22384
 (Bremer Weg): Fuﬂg‰nger	q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
-(Bremer Weg): Fuﬂg‰nger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239 8538,12245
+(Bremer Weg): Fuﬂg‰nger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226 8538,12245
 Oberlandgarten: Fuﬂg‰nger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fuﬂg‰nger	q1 12052,6660 12059,6642 12092,6616 12155,6526
@@ -5411,6 +5418,8 @@ Wegerichstr.: Fuﬂg‰nger	q2 16475,2586 16538,2543
 # 
 (Kleinbeerenstr. - Groﬂbeerenstr.): Fuﬂg‰nger	q2 8970,10506 8982,10510 9165,10530 9192,10528
 # 
+Storkwinkel: einige Fuﬂg‰nger	q3 2424,9786 2431,9784 2450,9778
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -7307,7 +7316,7 @@ Lee-Parry-Weg: schwieriges Befahren durch Steigung, in beiden Richtungen	q3 -509
 #: note: "... ist aber dennoch benutzbar"
 (Strittweg - Straﬂe 270): teilweise durch hereinragende Pflanzen wie Brennnesseln eingeengt	q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: schmaler Rad- und Gehweg (1,5m-2m)	q1 -7009,5211 -7174,5307
-Scharfe Lanke: enge Straﬂe	q0- -4265,11109 -4266,11008 -4292,10888 -4284,10834 -4223,10714 -4223,10671 -4302,10584 -4387,10496 -4413,10447 -4445,10379
+Scharfe Lanke: enge Straﬂe	q0- -4265,11109 -4266,11008 -4292,10888 -4284,10834 -4218,10709 -4218,10678 -4302,10584 -4387,10496 -4413,10447 -4445,10379
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3441,13270 -3352,13135 -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 (zum R‰cknitzer Steig): einige Fuﬂg‰nger	q1 -5535,12631 -5559,12557

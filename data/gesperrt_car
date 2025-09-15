@@ -1015,12 +1015,12 @@ Neue Schönholzer Str. - Wollankstr.	3 10141,18030 10089,18180 10027,18165
 Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10644,13497 10703,13467 10767,13443
 Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12655,-2202 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
-Mittelstreifen	3nocross::ignrte 6142,9134 6264,9156 6361,9175
+Mittelstreifen	3nocross::ignrte 6142,9134 6200,9145 6264,9156 6361,9175
 Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6361,9175 6264,9156 6276,9042
-Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6142,9134 6264,9156 6255,9194
+Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6200,9145 6264,9156 6255,9194
 Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6361,9175
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6276,9042
-Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6142,9134
+Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6200,9145
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6255,9194
 Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6206,9972
 Viktoria-Luise-Platz: Poller	3 6206,9972 6275,9962 6278,9925
@@ -1433,7 +1433,7 @@ Rochlitzer Weg: Schranke	3 15999,880 16117,927 16083,1013
 Rochlitzer Weg: Schranke	3 15999,880 16117,927 16131,889
 Rochlitzer Weg: Schranke	3 16083,1013 16117,927 15999,880
 Rochlitzer Weg: Schranke	3 16131,889 16117,927 15999,880
-Großer Stern	1 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113
+Großer Stern	1 6725,12113 6754,12108 6787,12099 6812,12057 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113
 Markelstr.	1 5269,6305 5020,6434
 Geschwister-Scholl-Str. (Potsdam)	1 -14919,-1817 -14733,-1812
 Feuerbachstr. (Potsdam)	1 -14140,-1390 -13879,-1445

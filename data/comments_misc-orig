@@ -48,6 +48,7 @@
 #: by: Gertschie:
 (Erbendorfer Weg - Lichterfelder Ring): markierter Radweg	CS 7131,694 7117,725 7019,694 6941,690
 Wall am Kiez: Hausdurchfahrt	CP2; -13331,-1802 -13394,-1771
+Storkwinkel: Hausdurchfahrt	CS 2431,9784 2450,9778
 #: by: rjoop
 Tegeler Weg: Alternativ kann der Spreeuferweg genutzt werden	CS 3152,13119 3140,13174 3112,13296 3066,13514 3038,13612
 Hintersee - Rieth: ehemalige Bahnstrecke	CS 66282,136950 66202,137084 66069,137327 65959,137807 65703,138610 65662,138670 65539,138759 65158,138985 65012,139133 64954,139218 64942,139340 64853,139518 64530,140051 63831,141136 63825,141282 63941,141456 64137,141564 64424,141639 64605,141761 64847,142064 65056,142373 65262,142830 65493,143395 65540,143487 65592,143522
@@ -184,7 +185,7 @@ Bordsteine beim Überqueren der Wuhletalstr.	CS 20801,17821 20728,17670 20657,17
 #: XXX Realisierung einer Querung geplant
 #: note: Der osm_watch-Way enthält zurzeit wheelchair=limited
 #: osm_watch: way id="523802314" version="4"
-#: last_checked: 2025-09-06
+#: last_checked: 2025-09-15
 #: check_frequency: 120d
 Bordsteine beim Überqueren der Grunewaldstr.	CP; 6851,9365 6921,9275 6994,9288
 # 
@@ -270,10 +271,10 @@ Kolonie Golfplatz	CP2; 795,12652 969,13290
 Weg ist schwierig zu erkennen	CP2; 18445,9887 18436,9842
 # REMOVED (-> temp blockings) --- # REMOVED --- #: url: http://www.wuhlheide.de/de/programm/ --- #: url: http://www.wuhlheide.de/programm --- #: note: Zeitverlust ca. 2 Minuten --- An einigen Tagen im Sommer ist das Eichgestell vor der Freilichtbühne wegen Veranstaltungen gesperrt, in diesem Fall die Freilichtbühne nördlich umfahren	CS 19995,6406 20081,6368 20106,6357 20199,6318
 # 
-#: XXX_prog evtl. für Anhänger sperren, falls das programmatisch möglich wird vvv
-Kaiserdamm: Überquerung des Mittelstreifens wegen parkender Autos u.U. schwierig	CP; 3287,11846 3320,11583 3339,11433
-Kaiserdamm: Überquerung des Mittelstreifens wegen parkender Autos u.U. schwierig	CP; 3339,11433 3320,11583 3287,11846
-#: XXX_prog ^^^
+#: note: siehe auch temp_blockings-Eintrag vvv
+Kaiserdamm/Fritschestr.: Überquerung des Mittelstreifens wegen parkender Autos u.U. schwierig	CP; 3287,11846 3320,11583 3339,11433
+Kaiserdamm/Fritschestr.: Überquerung des Mittelstreifens wegen parkender Autos u.U. schwierig	CP; 3339,11433 3320,11583 3287,11846
+#: note ^^^
 # 
 Konrad-Wolf-Str. - Große-Leege-Str.: Radweg auf der linken Seite der Konrad-Wolf-Str. benutzen	CP2; 16961,16042 16919,15978
 Dahmeweg: zur Unterführung S-Bhf. Poelchaustr.	CP2; 19395,14477 19290,14503
@@ -908,7 +909,7 @@ Kreisverkehr	Roundabout 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2
 Kreisverkehr	Roundabout 19414,15132
 Kreisverkehr	Roundabout 10839,10907 10856,10856 10906,10874 10887,10922 10839,10907
 #: note: Radfahrer dürfen auch in Gegenrichtung fahren
-Kreisverkehr	Roundabout 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936
+Kreisverkehr	Roundabout 6744,11936 6809,11979 6828,12031 6812,12057 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936
 Kreisverkehr	Roundabout 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 Kreisverkehr	Roundabout 8663,14960 8656,14947 8660,14929 8671,14919 8692,14923 8701,14932 8700,14956 8685,14966 8663,14960
 Kreisverkehr	Roundabout 23382,1429 23360,1390 23325,1418 23343,1454 23382,1429
@@ -977,6 +978,21 @@ Kreisverkehr	Roundabout -14546,5584
 #: ignore ^^^
 #: section ^^^
 #
+######################################################################
+# VeloFlow
+# 
+#: by: https://entwicklungsstadt.de/veloflow-neue-anzeigen-sollen-radverkehr-in-berlin-erleichtern/ (ab 9.9.2025 in der Kreuzbergstr. (wo genau?), weitere Installationen folgen)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1596320.php
+#: by: https://www.berlin.de/weniger-dicke-luft/projekte-und-massnahmen/veloflow/ (Langenscheidtstraße (? gemeint ist wohl die Monumentenstraße?)/Kreuzbergstraße)
+# 
+# Editierhinweis: erster Punkt ist der Standort des VeloFlow-Displays, letzter Punkt die referenzierte Ampel
+# 
+#: section: VeloFlow vvv
+#: ignore: vvv
+Kreuzbergstr. Richtung Westen vor Großbeerenstr.	CS; 9082,9338 8970,9323
+#: ignore ^^^
+#: section ^^^
+# 
 ######################################################################
 # overtaking:motorcar:conditional=no @ singletrack (Radfahrer dürfen nicht überholt werden)
 # 
@@ -1314,7 +1330,7 @@ Bus 358	busroute_N 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 1
 #: XXX Wann ziehen die Gaslaternen um?
 #: osm_watch: note 2969085 7
 #: priority: #C
-#: last_checked: 2025-08-29
+#: last_checked: 2025-09-15
 #: check_frequency: 90d
 Gaslaternen-Freilichtmuseum Berlin	CS 5895,11692 5835,11768 5858,11863 5900,11913
 #: ignore ^^^
@@ -2212,6 +2228,7 @@ Straße 36: nicht ausgeschildert	CP2; 30090,2923 30124,3011
 ausgeschildert: 6,4,2	CP2; -5437,12440 -5421,12491
 ausgeschildert: Hahnebergweg 50	CP2; -7344,12854 -7347,12797
 ausgeschildert: zu 81 ABC	CP2; 17415,14906 17406,14986
+ausgeschildert zum Zeltenplatz	CP2; 8068,12237 7836,12247
 # 
 #: section ^^^
 # DO NOT ADD ANYTHING AFTE THIS POINT!

@@ -50,7 +50,8 @@ Hauptstr. (Rummelsburg) [Nebenfahrbahn]: Asphalt	Q0 15298,10682 15332,10657 1539
 (Hauptstr. - Gustav-Tempel-Str.): Asphalt	Q0 15298,10682 15245,10719
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
-Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
+#: historical_note: früher: mäßiges Kopfsteinpflaster, Q2- -> ist es schlechter geworden, oder war es immer zu gut kategorisiert?
+Werkstättenweg: schlechtes Kopfsteinpflaster	Q3 2110,10101 1843,9867
 Werkstättenweg: Asphalt	Q0 1843,9867 1724,9772 1615,9675
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20061108.1455.50011.html
 Schönwalder Allee: asphaltiert	Q0 -3782,17125 -3811,17218 -3842,17280 -3980,17486 -4043,17582 -4147,17735
@@ -1079,7 +1080,7 @@ Großer Weg: asphaltiert	Q0 7606,11629 7623,11624 7664,11597 7711,11558 7713,1155
 Große Sternallee: Parkweg, Feinschotter	Q1 6809,11979 6984,11859 7058,11809 7163,11738
 Große Sternallee: Parkweg, etwas gröberer Schotter	Q1- 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7359,11538 7362,11561 7373,11594
-Bellevueallee: Mosaikpflaster	Q1- 7031,12320 7383,12095
+Bellevueallee: Mosaikpflaster	Q1- 7031,12320 7288,12156 7383,12095
 Bellevueallee: Mosaikpflaster	Q1 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	Q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753
 (Luiseninsel - Tiergartenstr.): Parkweg	Q1 7664,11597 7621,11541 7600,11513
@@ -2076,7 +2077,7 @@ Treptower Park: wassergebundene Decke	Q1 14705,9034 14855,9046 14947,8993 14980,
 Am Rosengarten: Parkweg	Q1 14909,9649 14867,9573 14837,9517 14809,9466
 Lichtensteinallee: Kleinsteinpflaster	Q1 6378,11553 6337,11501
 Lichtensteinallee: wassergebundene Decke, Schotter	Q1- 6337,11501 6289,11440
-Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2473,9861
+Storkwinkel: Kopfsteinpflaster	Q2 2490,9774 2473,9861
 Witzlebenplatz: Kopfsteinpflaster, OK	Q1- 2764,11519 2764,11500 2850,11386
 Witzlebenplatz: Asphalt	Q0 2850,11386 2921,11311
 Friedbergstr.: Kopfsteinpflaster, OK	Q1- 2766,10750 2793,10752 3012,10812 3204,10895
@@ -2552,11 +2553,13 @@ Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12671,8077 12788,8101
 Geygerstr.: Asphalt	Q0 13070,8138 13194,8276
 Bellevue-Ufer: Mosaikpflaster	Q1- 6689,12632 7031,12320
 Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
-Große Querallee: Asphalt mit einigen leichten Schäden	Q0- 7875,12363 7822,12201 7816,12150
+Große Querallee: Asphalt mit einigen leichten Schäden	Q0- 7875,12363 7836,12247 7822,12201 7816,12150
 Große Querallee: Kleinsteinpflaster	Q1 7875,12363 7945,12592
 Paul-Löbe-Allee: Asphalt	Q0 7851,12590 7945,12592 8122,12603
 (Große Querallee - Tiergartenstr.): Asphalt	Q0 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878
 (Große Querallee - Tiergartenstr.): Parkweg	Q1 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7813,11589 7816,11571
+(Tiergarten, nördlich der Straße des 17. Juni): Parkweg, Schotter	Q2 8068,12237 7836,12247
+(Tiergarten, nördlich der Straße des 17. Juni): Parkweg	Q1 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156 7215,12129 6812,12057
 (Parkweg entlang der Tiergartenstr.): Parkweg	Q1- 8172,11679 8141,11685 8006,11648 7890,11610 7838,11603 7813,11589 7783,11573 7713,11553 7621,11541 7463,11538 7359,11538 7220,11542 7111,11524 7080,11508 6966,11490 6844,11496 6826,11479
 (Tiergarten, entlang des Sees): Parkweg, etwas Schotter	Q1- 7765,11737 7733,11713 7682,11703 7648,11708
 (Tiergarten, entlang des Sees): Parkweg	Q1 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
@@ -3753,7 +3756,8 @@ Homeyerstr.: Asphalt mit Schäden	Q1- 9458,18859 9529,18815 9613,18758
 #: note: neu gemacht
 Homeyerstr.: Asphalt	Q0 9613,18758 9801,18686 9920,18636
 (Bremer Weg): Parkweg	Q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
-(Bremer Weg): Asphalt	Q0 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239 8538,12245
+(Bremer Weg): Asphalt	Q0 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226
+(Bremer Weg): Parkweg	Q1 8502,12226 8538,12245
 (Bremer Weg - Fasanerieallee): Parkweg, mittelfeiner Schotter	Q1 6337,11887 6379,11843 6395,11806 6417,11796
 (Löwenbrücke): Holzbohlen	Q1 6417,11796 6438,11784
 (Bremer Weg - Fasanerieallee): Parkweg, mittelfeiner Schotter	Q1 6438,11784 6540,11754
@@ -4621,7 +4625,8 @@ Heylstr: Asphalt	Q0 6181,8181 6246,8222 6313,8254 6385,8274 6459,8281 6552,8281
 Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3569,11473 3554,11617
 Goethepark: Asphalt	Q1 3467,11373 3594,11372
 #: corrected_by: http://berlinerbaustellen.blogspot.de/2013/09/neubau-bauhaus-fachzentrum-halensee.html (Kopfsteinpflaster -> Asphalt)
-Am Güterbahnhof Halensee: Asphalt	Q0 2559,9879 2585,9875 2767,9670 3040,9420
+Am Güterbahnhof Halensee: Asphalt	Q0 2559,9879 2585,9875 2767,9670 2874,9572
+Am Güterbahnhof Halensee: Kopfsteinpflaster	Q2 2874,9572 3040,9420
 (entlang der Stadtautobahn): Gehwegplatten	Q1+ 3379,8969 3490,8840 3521,8814
 #: historical_note: früher Q1+
 (entlang der Autobahn, zum hohen Bogen): teilweise unebener Asphalt	Q1 3521,8814 3570,8760 3650,8666 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
@@ -7163,7 +7168,7 @@ Bocksfeldstr.: Verbundsteinpflaster	Q1 -3939,11651 -3872,11619 -3851,11608
 Bocksfeldstr.: Kopfsteinpflaster	Q2 -3851,11608 -3821,11592
 Bocksfeldstr.: Asphalt	Q0 -3821,11592 -3709,11535 -3658,11534 -3606,11532
 Schwimmerweg: Kopfsteinpflaster	Q2 -3584,11177 -3642,11216 -3673,11216
-Rudererweg: Kopfsteinpflaster	Q2 -3534,11277 -3570,11289 -3689,11291
+Rudererweg: Kopfsteinpflaster	Q2 -3525,11274 -3570,11289 -3689,11291
 #: note: extrapoliert
 Lankestrand: Kopfsteinpflaster	Q2 -3689,11291 -3679,11248 -3673,11216
 Heilsberger Allee: Asphalt	Q0 -611,11193 -559,11209 -402,11328 -332,11426 -309,11526 -278,11843
@@ -16052,9 +16057,9 @@ Wolliner Str.: Asphalt	Q0 10399,14429 10311,14613 10273,14689 10238,14758 10205,
 # 
 #: by: Floris Akkerman: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Am Pichelssee: Asphalt	Q0 -3429,11474 -3500,11328
-#: confirmed_by: srt
-Am Pichelssee: Kopfsteinpflaster	Q2 -3500,11328 -3534,11277 -3554,11232 -3584,11177 -3605,11138 -3592,10910
+Am Pichelssee: Asphalt	Q0 -3429,11474 -3493,11326
+#: corrected_by: srt (Kopfsteinpflaster -> Kleinsteinpflaster)
+Am Pichelssee: Kleinsteinpflaster	Q2 -3493,11326 -3525,11274 -3554,11232 -3584,11177 -3605,11138 -3592,10910
 #: by: ^^^
 # 
 #: by: Oliver Schnuerer: vvv
@@ -29613,7 +29618,7 @@ Scharfe Lanke: Asphalt	Q0 -4245,11400 -4259,11267 -4265,11109 -4266,11008 -4292,
 #: corrected_by: srt (genauer)
 Scharfe Lanke: rauer Asphalt	Q0- -4292,10888 -4284,10834
 #: confirmed_by: srt
-Scharfe Lanke: Asphalt	Q0 -4284,10834 -4223,10714 -4223,10671 -4302,10584
+Scharfe Lanke: Asphalt	Q0 -4284,10834 -4218,10709 -4218,10678 -4302,10584
 #: corrected_by: srt
 Scharfe Lanke: Verbundsteinpflaster	Q1 -4302,10584 -4387,10496 -4413,10447
 #: confirmed_by: srt
@@ -31329,8 +31334,10 @@ Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 255
 #: confirmed_by: srt
 Humboldtstr. (Grunewald): Asphalt	Q0 2449,8902 2453,9156 2467,9425 2477,9551 2484,9671
 Gillweg: Gehwegplatten	Q0 2585,9653 2484,9671 2394,9714
+#: confirmed_by: mapillary
 Wangenheimsteg: Asphalt	Q0 2585,9653 2628,9702
-Melli-Besse-Anlage: Asphalt	Q0 2628,9702 2664,9744
+#: corrected_by: mapillary (Asphalt, Q0 -> ...)
+Melli-Besse-Anlage: Gehwegplatten	Q0- 2628,9702 2664,9744
 Kudowastr.: Asphalt mit Fugen	Q1 2831,8590 2832,8805 2829,9076 2829,9259
 Reinerzstr.: Kopfsteinpflaster	Q2 2670,8563 2566,8578 2361,8608
 Flinsberger Platz: Kopfsteinpflaster	Q2 2919,8582 2831,8590 2672,8611

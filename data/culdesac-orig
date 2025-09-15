@@ -817,7 +817,15 @@ Sackgassenende, Kleingartenkolonie	culdesac_pseudo 2361,2156
 #: note: anscheinend führen hier Waldwege weiter
 	culdesac_pseudo -2345,10609
 #: note: anscheinend führen hier Waldwege weiter
-	culdesac_pseudo -2970,10748
+Sackgassenende, südöstlicher Strang	culdesac_pseudo -2970,10748
+#: note: anscheinend führen hier Waldwege weiter
+Sackgassenende, südwestlicher Strang	culdesac_pseudo -3261,10950
+	culdesac -3592,10910
+	culdesac -2464,11596
+nördliches Sackgassenende	culdesac_pseudo -4346,10762
+südwestliches Sackgassenende	culdesac -4555,10488
+	culdesac -4534,10588
+	culdesac 3040,9420
 	culdesac 18172,16664
 	culdesac 22752,20427
 	culdesac_pseudo 22886,20514
@@ -1677,6 +1685,7 @@ westliches Sackgassenende	culdesac 18711,2338
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 2450,9778
 	culdesac_pseudo 16538,2543
 	culdesac_pseudo 16603,2641
 	culdesac_pseudo 1640,5876
