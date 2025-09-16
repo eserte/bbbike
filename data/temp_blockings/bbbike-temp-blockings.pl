@@ -22420,8 +22420,8 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-B,T,G)
-#: last_checked: 2025-09-03
+#: also_indoor: traffic (T,G)
+#: last_checked: 2025-09-16 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -37746,6 +37746,7 @@ EOF
 #: by: https://stories.bauhaus.de/neubau/ (Wiedereröffnung 2025) (mittlerweile Wiedereröffnung 2027)
 #: by: https://entwicklungsstadt.de/tiergarten-wird-die-erweiterung-des-bauhaus-archivs-bis-herbst-2025-fertig/
 #: by: https://entwicklungsstadt.de/kulturbauten-in-der-krise-warum-berlins-grossprojekte-aus-dem-takt-geraten/
+#: by: https://entwicklungsstadt.de/festival-auf-der-baustelle-das-bauhaus-archiv-oeffnet-seine-tueren/
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -47448,12 +47449,12 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 EOF
      },
      { from  => 1741503600, # 2025-03-09 08:00
-       until => $isodate2epoch->("2025-09-26 17:00:00"), # 1748617200, # 2025-05-30 17:00
+       until => 1758042893, # $isodate2epoch->("2025-09-26 17:00:00"), # 1748617200, # 2025-05-30 17:00
        text  => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 26.09.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
-#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025)
+#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025) (inaktiv)
 #: source_id: LS/222-W/25/089 (bis 12.09.2025) (inaktiv)
 	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 EOF
@@ -47739,7 +47740,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 EOF
      },
      { from  => $isodate2epoch->("2025-07-27 00:00:00"), # $isodate2epoch->("2025-04-09 00:00:00"), # 1743953696, # 1743890400, # 2025-04-06 00:00
-       until => $isodate2epoch->("2025-09-19 18:00:00"), # 1750702259, # 1750716000, # 2025-06-24 00:00
+       until => 1758038724, # $isodate2epoch->("2025-09-19 18:00:00"), # 1750702259, # 1750716000, # 2025-06-24 00:00
 #      text  => 'Klingsorstr.: Bauarbeiten zwischen Telramundweg und Amfortasweg, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung im Dalandweg, vom 10.04.2025 bis 23.06.2025',
 #      text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Birkbuschstr. und Brahmsstr., Fahrbahn gesperrt, vom 28.07.2025 bis 24.08.2025',
 #      text  => 'Klingsorstr.: Sanierungsarbeiten zwischen Birkbuschstr. und Hindenburgdamm, Fahrbahn gesperrt, evtl. ist der östliche Abschnitt bereits fertig, bis Anfang September 2025',
@@ -47770,8 +47771,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihx5qkdtxdcqv6hh7ffztvzs3q5tutoycjneulpmgikhozjzcbtzm@jpeg (keine gesonderte Regelung für Radfahrer)
 #: also_indoor: traffic (G[alles],T[nur westlicher Abschnitt],W[alles],A[alles],H[unklar])
 #: note: unklar, ob der 1. BA bereits fertig geworden ist, die Verkehrsdienste sind da uneinheitlich
-#: priority: #A
-#: next_check: 2025-09-15 (sind die Bauarbeiten beendet? qualitaet_s-Eintrag für den 2. BA ändern?)
+# REMOVED (vermutlich beendet) --- #: priority: #A --- #: next_check: 2025-09-15 (sind die Bauarbeiten beendet? qualitaet_s-Eintrag für den 2. BA ändern?)
 # REMOVED --- Klingsorstr. (1. BA)	q4::inwork 5271,4547 5214,4445 5206,4432 5150,4345 5120,4318 5090,4291 5063,4266 4932,4152
 Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,4042
 EOF
@@ -48416,7 +48416,7 @@ EOF
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-09-02
+#: last_checked: 2025-09-16
 #: check_frequency: 30d
 #: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -48746,16 +48746,17 @@ EOF
        until => undef, # 1757800740, # 2025-09-13 23:59
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Leibnizstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
-       text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025, evtl. wird die Sperrung verlängert',
+#      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025, evtl. wird die Sperrung verlängert',
+       text  => 'Wielandstr./Pestalozzistr.: Einmündungsbereich gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-14 (traffic) vvv
+#: last_checked: 2025-09-16 (traffic) vvv
 #: check_frequency: 7d vvv
-#: note: bei rbb "Einbahnstraßenregelung"
+# REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
-Pestalozzistr.	q4::inwork; 4434,11227 4546,11217
+# REMOVED (nicht mehr?) --- Pestalozzistr.	q4::inwork; 4434,11227 4546,11217
 #: note: zwar ist an der Kantstr. ausgeschildert "Sackgasse, offen für Fußgänger und Radfahrer", allerdings gibt es keine Gehwegfreigabe im Baustellenbereich, es gibt auch keine Anrampungen oder Bordsteinabsenkungen
 Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
 #: check_frequency ^^^
@@ -49885,8 +49886,8 @@ EOF
        text  => 'Griebenowstr./Wolliner Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (H[zu wenig])
-#: last_checked: 2025-09-03
+#: also_indoor: traffic (H[zu wenig],G[zu wenig])
+#: last_checked: 2025-09-16
 #: check_frequency: 14d
 	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
 EOF

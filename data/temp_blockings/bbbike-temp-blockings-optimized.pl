@@ -2814,8 +2814,8 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-B,T,G)
-#: last_checked: 2025-09-03
+#: also_indoor: traffic (T,G)
+#: last_checked: 2025-09-16 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -5252,6 +5252,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: by: https://stories.bauhaus.de/neubau/ (Wiedereröffnung 2025) (mittlerweile Wiedereröffnung 2027)
 #: by: https://entwicklungsstadt.de/tiergarten-wird-die-erweiterung-des-bauhaus-archivs-bis-herbst-2025-fertig/
 #: by: https://entwicklungsstadt.de/kulturbauten-in-der-krise-warum-berlins-grossprojekte-aus-dem-takt-geraten/
+#: by: https://entwicklungsstadt.de/festival-auf-der-baustelle-das-bauhaus-archiv-oeffnet-seine-tueren/
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -7882,18 +7883,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
-#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025)
-#: source_id: LS/222-W/25/089 (bis 12.09.2025) (inaktiv)
-	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
-',
-         'from' => 1741503600,
-         'id' => 4273,
-         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, vom 10.03.2025 bis 26.09.2025',
-         'type' => 'gesperrt',
-         'until' => 1758898800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7943,42 +7933,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '# erste Baumaßnahme (April 2025)
-#: by: https://www.berliner-woche.de/steglitz/c-verkehr/die-klingsorstrasse-muss-dringend-saniert-werden_a189238 (2018)
-#: by: https://www.bahninfo-forum.de/read.php?9,825093,825257#msg-825257 (laut Aushang ab 7.4.2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/klingsorstrasse-in-berlin-steglitz-fur-drei-monate-vollgesperrt-wasserbetriebe-tauschen-regenwasserkanal-aus-13490011.html (zwischen Telramundweg und Amfortasweg, bis 23.06.2025; keine Erwähnung einer Sanierung der Fahrbahn)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250406 (vorerst keine Sperrung)
-#: by: https://stadtrand-nachrichten.de/klingsorstrasse-verwirrung-um-baustelle-der-wasserbetriebe/ (erst ab dem 10. oder 11.04.2025)
-#: by: http://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-klingsorstrasse-in-steglitz/ (ab 10.04.2025)
-#: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
-#: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum)
-#: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025) (inaktiv)
-#: source_id: viz2021:13.32634,52.44753,28.07.2025,07:00 (bis 25.08.2025) (inaktiv)
-#: source_id: viz2021:13.31578,52.44314,18.08.2025,07:00 (hier nur Kfz-Verkehr, bis 10.09.2025) (bis 15.09.2025) (bis 26.09.2025)
-# REMOVED --- Klingsorstr.	q4::inwork 5206,4432 5150,4345
-# REMOVED --- Dalandweg: Einbahnstraßenregelung, nicht für Radfahrer freigegeben	q4::inwork; 5541,4305 5385,4236 5356,4249 5311,4270 5250,4298 5226,4259 5120,4318
-# zweite Baumaßnahme (Juli 2025)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581872.php (Sanierung, 1. BA 28.07.2025 - 24.08.2025)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/fahrbahnsanierung_klingsorstrasse.pdf
-#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/uber-nebenstrassen-zur-rettungsstelle-des-benjamin-franklin-klingsorstrasse-wird-saniert--und-voll-gesperrt-14084096.html (2. BA bis 19. September 2025)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luyurbwujk2r
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiam7srkrx5mkrztfp4zwiajqkeczhsw4pleyguhs4i7ziypoqtxou@jpeg
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lwnmn6wv2k25 (ab dem 18.8.2025 für ca. 3 Wochen gesperrt)
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihx5qkdtxdcqv6hh7ffztvzs3q5tutoycjneulpmgikhozjzcbtzm@jpeg (keine gesonderte Regelung für Radfahrer)
-#: also_indoor: traffic (G[alles],T[nur westlicher Abschnitt],W[alles],A[alles],H[unklar])
-#: note: unklar, ob der 1. BA bereits fertig geworden ist, die Verkehrsdienste sind da uneinheitlich
-#: priority: #A
-#: next_check: 2025-09-15 (sind die Bauarbeiten beendet? qualitaet_s-Eintrag für den 2. BA ändern?)
-# REMOVED --- Klingsorstr. (1. BA)	q4::inwork 5271,4547 5214,4445 5206,4432 5150,4345 5120,4318 5090,4291 5063,4266 4932,4152
-Klingsorstr. (2. BA)	q4::inwork 4932,4152 4834,4102 4760,4075 4634,4053 4551,4042
-',
-         'from' => 1753567200,
-         'id' => 4292,
-         'text' => 'Klingsorstr.: Sanierungsarbeiten zwischen Brahmsstr. und Hindenburgdamm, Fahrbahn gesperrt, vom 18.08.2025 bis Mitte September 2025',
-         'type' => 'handicap',
-         'until' => 1758297600
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: GITSCHINER-2025
@@ -8290,7 +8245,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-09-02
+#: last_checked: 2025-09-16
 #: check_frequency: 30d
 #: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -8422,11 +8377,11 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-14 (traffic) vvv
+#: last_checked: 2025-09-16 (traffic) vvv
 #: check_frequency: 7d vvv
-#: note: bei rbb "Einbahnstraßenregelung"
+# REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
-Pestalozzistr.	q4::inwork; 4434,11227 4546,11217
+# REMOVED (nicht mehr?) --- Pestalozzistr.	q4::inwork; 4434,11227 4546,11217
 #: note: zwar ist an der Kantstr. ausgeschildert "Sackgasse, offen für Fußgänger und Radfahrer", allerdings gibt es keine Gehwegfreigabe im Baustellenbereich, es gibt auch keine Anrampungen oder Bordsteinabsenkungen
 Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
 #: check_frequency ^^^
@@ -8434,7 +8389,7 @@ Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
 ',
          'from' => 1748750400,
          'id' => 4358,
-         'text' => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025, evtl. wird die Sperrung verlängert',
+         'text' => 'Wielandstr./Pestalozzistr.: Einmündungsbereich gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9146,8 +9101,8 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
          'until' => undef
        },
        {
-         'data' => '#: also_indoor: traffic (H[zu wenig])
-#: last_checked: 2025-09-03
+         'data' => '#: also_indoor: traffic (H[zu wenig],G[zu wenig])
+#: last_checked: 2025-09-16
 #: check_frequency: 14d
 	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
 ',

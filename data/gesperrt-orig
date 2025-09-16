@@ -1381,7 +1381,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9029 (Antrag, mehrere Straßen im Bezirk, u.a. diese hier)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/einbahnstrassenregelung-nicht-fuer-radler_a400589 (siehe Antrag oben)
 #: XXX evtl wird die Straße für Radfahrer geöffnet
-#: osm_watch: way id="31540773" version="20"
+#: osm_watch: way id="31540773" version="22"
 #: last_checked: 2025-05-14
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
@@ -3999,6 +3999,12 @@ Drängelgitter	BNP:3::trailer=10 9165,10530
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.reo.berlin/
+#: last_checked: 2025-09-16
+#: check_frequency: 180d
+#: next_check: 2026-08-28 (Halteverbotsschilder in der Straße "Am Bremsenwerk")
+(an den Gebäuden der Deutschen Rentenversicherung): wegen Hochbauarbeiten gesperrt	2::inwork 15322,11335 15273,11350 15168,11327 15058,11250
+# 
 #: next_check_id: MARXENGELSFORUM-2025
 #: by: https://www.berliner-woche.de/mitte/c-bauen/plaene-fuer-rathaus-und-marx-engels-forum-werden-konkret_a385041 (Bauarbeiten ab Herbst 2024)
 #: by: https://media04.berliner-woche.de/article/2023/06/21/4/441084_XXL.jpg (vermutlich werden sich die Wegbeziehungen im Marx-Engels-Forum ändern)
@@ -4829,7 +4835,7 @@ An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
 #: osm_watch: note 4522174 2
 #: last_checked: 2025-09-14
-#: check_frequency: 60d
+#: check_frequency: 30d
 #: next_check: 2025-09-20 (entwicklungsstadt)
 Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700 17851,8662
 # REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
@@ -4983,6 +4989,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/buckower-chaussee-bruecke/ (voraussichtliche Bauzeit: 2022 bis 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22059.pdf (voraussichtlich Eröffnung im Sommer 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23305.pdf (voraussichtlich Verkehrsfreigabe am 8.10.2025)
+#: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html
 #: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025) (inaktiv)
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023) (bis 31.05.2023) (bis 31.12.2025) (inaktiv)
 #: source_id: bvg2021:x11#BVG312077_0

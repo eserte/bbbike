@@ -663,7 +663,8 @@ Lintruper Str.: Erhöhung des Fahrkomforts geplant	?::projected 10613,108 10665,-
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf (Überarbeitung BPU)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (weiterhin Überarbeitung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (voraussichtlich keine Umsetzung 2021)
-#: osm_watch: way id="30958680" version="38"
+#: osm_watch: way id="30958680" version="39"
+#: osm_watch: way id="1429944747" version="1"
 #: last_checked: 2025-09-13
 #: check_frequency: 360d
 Ringstr.: Fortführung der Radspuren geplant	?::projected 8394,4261 8615,4151 8780,4054 8855,3997 9021,3878
@@ -1078,15 +1079,15 @@ Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected  21020
 Am Wuhleufer: TR7 soll hier geführt werden --- wird die Sperrung am Wochenende dann aufgehoben?	?::projected 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
 # 
 #: XXX Kö.4
-#: osm_watch: way id="77386772" version="13"
-#: osm_watch: way id="370590101" version="10"
+#: osm_watch: way id="77386772" version="14"
+#: osm_watch: way id="370590101" version="11"
 #: XXX außerdem die Zebrastreifen anschauen: wurden alle von (temporären?) Ampeln ersetzt? (siehe https://www.bahninfo-forum.de/read.php?9,756407,762664#msg-762664 )
 #: last_checked: 2025-08-27
 #: check_frequency: 120d
 Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 21713,7952 21759,7856 21810,7749 21901,7548 21956,7428 21988,7367 22009,7327 22021,7245 22035,7146 22049,7085 22075,6967
 # 
 #: XXX Kö.5
-#: osm_watch: way id="77518547" version="13"
+#: osm_watch: way id="77518547" version="14"
 #: last_checked: 2025-09-02 (mapillary)
 #: check_frequency: 120d
 Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 22075,6967 22189,6668 22193,6659 22305,6404 22325,6385
@@ -1540,7 +1541,7 @@ Gemeindepark Lankwitz: Wird hier ein Radweg angelegt? Qualität, Beleuchtung?	?::
 #: source_id: viz2021:13.381888,52.438085,24.01.2022,07:00 (Bauarbeiten bis 11.2.2022, haben diese etwas mit dem Vorhaben zu tun?) (-> nein) (inaktiv)
 #: XXX oder wird hier ein Radweg in der Gegenrichtung gebaut? (unwahrscheinlich, zu eng)
 #: XXX oder sind die Leitboys gemeint, die im Kreuzungsbereich Großbeerenstraße/Friedenstraße errichtet wurden?
-#: osm_watch: way id="156579468" version="22"
+#: osm_watch: way id="156579468" version="23"
 #: last_checked: 2025-07-18
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-02-11
@@ -2589,6 +2590,7 @@ Tietzenweg: geplante Fahrradstraße	?::projected 3425,4541 3501,4435 3557,4355 35
 #: by: https://entwicklungsstadt.de/neue-fahrradstrasse-in-der-togostrasse-bezirk-mitte-setzt-radverkehrsoffensive-fort/
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1596479.php (Beginn (Baustart?) ab der zweiten Septemberwoche 2025)
 #: by: https://entwicklungsstadt.de/drei-neue-fahrradstrassen-wedding-startet-naechste-ausbauphase/
+#: by: https://www.morgenpost.de/bezirke/mitte/article410005636/fahrradfreundlicher-wedding-hier-entstehen-neue-routen.html
 #: osm_watch: way id="597289462" version="10"
 #: osm_watch: way id="4605293" version="30"
 #: osm_watch: note 3954758 5
@@ -3717,6 +3719,7 @@ Hannoversche Straße/Hessische Straße: Zebrastreifen geplant	?::projected 8770,13
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/neue-stadtquartiere/blankenburger-suden/05_struktur-und-nutzungskonzept-2025.pdf
 #: by: https://entwicklungsstadt.de/stadt-der-zukunft-oder-plan-mit-luecken-pankows-wohnprojekt-blankenburger-sueden/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_33_2153_2200_online.pdf (zu vorbereitenden Untersuchungen)
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1598362.php
 #: XXX gehört nun zum Planungsgebiet "Blankenburger Süden"
 #: last_checked: 2025-01-04 (mapillary) vvv
 #: check_frequency: 720d vvv
@@ -5553,7 +5556,7 @@ Werneuchener Str./Küstriner Str.: entsteht hier ein neuer Zebrastreifen?	? 16301
 #: check_frequency: 60d (outdoor)
 # REMOVED --- #: next_check: 2025-07-23 (Halteverbotschilder)
 Franz-Jacob-Str./Max-Brunnow-Str.: entsteht hier ein neuer Zebrastreifen?	? 14519,13404 14529,13384 14545,13363
-#: last_checked: 2025-08-02
+#: last_checked: 2025-09-16
 Buchberger Str./Schulze-Boysen-Str.: entsteht hier ein neuer Zebrastreifen?	? 15487,11398 15497,11381 15507,11357
 #: check_frequency ^^^
 #: priority ^^^
@@ -5576,7 +5579,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516792.php (in Umsetzung bzw. kurz davor)
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (hier: Höhe Ingrid-Reschke-Str., aber tatsächlich Höhe An den Eiswerken, bis 20.07.2025) (inaktiv)
-#: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025)
+#: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: last_checked: 2025-08-31 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
@@ -6289,7 +6292,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-16
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -7350,7 +7353,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1340688.php ("zukünftig")
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/radwege-am-stralauer-platz_a386408 (Erwähnung)
 #: source_id: viz2021:13.43651,52.51765,19.04.2024,06:00 (bis 07.05.2024) (inaktiv)
-#: osm_watch: way id="1273991435" version="3"
+#: osm_watch: way id="1273991435" version="4"
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
@@ -7435,6 +7438,7 @@ Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltier
 #: by: https://az-lichtenrade.de/neuigkeiten/neuigkeit-zur-sperrung-wolziger-zeile/
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/zeitplan?date=20250721 (kein Termin mehr)
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article409807736/dresdner-bahn-neue-ber-strecke-mit-schallschutz-teilt-berlin.html
+#: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html (Hoffnung auf eine Eröffnung im Winter 2025/2026)
 #: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025) (inaktiv)
 #: XXX laut Schild Fertigstellung 2024
@@ -8882,15 +8886,15 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
 #: note: erste Pfosten stehen bereits, mit meist zugehängten Schildern, einige Schilder schon (illegal?) nicht mehr zugehangen, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025) aktiv, ist aber offensichtlich verzögert
-#: last_checked: 2025-09-08 vvv
+#: last_checked: 2025-09-16 vvv
 #: check_frequency: 14d vvv
 # REMOVED (realisiert) --- #: osm_watch: way id="1145089826" version="5" --- Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14888,11934
 # REMOVED (realisiert) --- #: osm_watch: way id="127538487" version="21" --- Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14710,11824
 # REMOVED (realisiert) --- #: osm_watch: way id="1051639963" version="8" --- Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14854,12137 14836,12045 14783,11949
-#: osm_watch: way id="563341820" version="23"
+#: osm_watch: way id="563341820" version="24"
 #: note: zwischenzeitlich gar keine Einbahnstraßenregelung
 Weserstr.: wird die Einbahnstraße umgedreht, dann für Radfahrer frei?	? 14416,11815 14475,11778
-#: osm_watch: way id="1145133916" version="8"
+#: osm_watch: way id="1145133916" version="9"
 Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14475,11778 14550,11732
 # REMOVED (nun endgültig (?) realisiert) --- #: historical_note: die vorbereiteten Schilder waren für einige Zeit abgedeckt, nun wieder zugedeckt --- Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14550,11732 14622,11685 14651,11666
 # REMOVED (realisiert) --- Weserstr.: Einbahnstraße für Kfz in Vorbereitung (welche Richtung?)	? 14710,11626 14651,11666
@@ -9162,6 +9166,7 @@ Neues Ufer: verkehrsberuhigter Bereich geplant	? 4283,13660 4363,13336
 #: by: https://www.infravelo.de/projekt/uferstrasse/ (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1596479.php (Baustart voraussichtlich ab Monatsende September 2025)
 #: by: https://entwicklungsstadt.de/drei-neue-fahrradstrassen-wedding-startet-naechste-ausbauphase/
+#: by: https://www.morgenpost.de/bezirke/mitte/article410005636/fahrradfreundlicher-wedding-hier-entstehen-neue-routen.html
 #: osm_watch: way id="1352120015" version="4"
 #: osm_watch: way id="4603200" version="30"
 #: osm_watch: note 3954759 4
@@ -9272,6 +9277,7 @@ Steinstr. (Neuruppin): Erstellung eines Schutzstreifens	? -30936,57385 -30806,57
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414263.php
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1596479.php (Baustart Anfang September 2025)
 #: by: https://entwicklungsstadt.de/drei-neue-fahrradstrassen-wedding-startet-naechste-ausbauphase/
+#: by: https://www.morgenpost.de/bezirke/mitte/article410005636/fahrradfreundlicher-wedding-hier-entstehen-neue-routen.html
 #: osm_watch: note 3954738 9
 #: last_checked: 2025-09-03
 #: check_frequency: 30d
@@ -9289,8 +9295,11 @@ Kyllburger Weg/Bitburger Straße: entsteht hier ein Drängelgitter?	? 16653,17482 
 # 
 #: next_check_id: HEGEMEISTERBRUECKE-2025
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/hegemeisterbruecke/ (voraussichtliche Bauzeit: IV. Quartal 2024 bis III. Quartal 2025 (Stand Juni 2024))
+#: osm_watch: way id="41523366" version="11"
+#: osm_watch: way id="636625917" version="5"
+#: osm_watch: way id="1342599575" version="1"
 #: add_fragezeichen: Ist die Hegemeisterbrücke schon wegen Bauarbeiten gesperrt?
-#: last_checked: 2025-06-18
+#: last_checked: 2025-09-16
 #: check_frequency: 90d (indoor frequency)
 Hegemeisterbrücke: Neubau geplant	? 30081,5231 30081,5220
 # 
@@ -10124,9 +10133,10 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/parkstadt-karlshorst.257/page-2#post-22530
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-lichtenberg-in-bau/?postID=763705#post763705 (Fußgängerbereich bereits fertig? Benennung des Vorplatzes nach Malala Yousafzai)
 #: by: https://entwicklungsstadt.de/fortschritt-in-der-parkstadt-karlshorst-gruenflaeche-mit-100-neuen-baeumen-eroeffnet-im-april/ (Eröffnung des Spielplatzes am 17.04.2025, Fertigstellung des Parks im Sommer 2025)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1548487.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_26_1645_1696_online.pdf (Widmung als Grünanlage)
 #: last_checked: 2025-09-14 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 30d vvv
 #: next_check: 2025-09-20 (entwicklungsstadt) vvv
 #: osm_watch: way id="1328997654" version="3"
 Parkanlage: wann wird der östliche/südöstliche Teil fertig? genaue Lage? Name?	?::inwork 17655,8719 17800,8689 17779,8603 17798,8598 17779,8509 17804,8503 17853,8731 17667,8766 17655,8719
@@ -12012,9 +12022,10 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: by: https://entwicklungsstadt.de/ehemaliger-flughafen-tegel-kampfmittelraeumung-vorzeitig-abgeschlossen/
 #: by: https://entwicklungsstadt.de/zukunftsort-txl-grosses-potenzial-trifft-auf-schleppende-umsetzung/
 #: by: https://entwicklungsstadt.de/umbau-ab-2026-gefluechtetenunterkunft-in-tegel-wird-ankunftszentrum/
+#: by: https://entwicklungsstadt.de/flughafen-tegel-umbau-zum-bht-hochschulcampus-verzoegert-sich-massiv/
 #: XXX werden die alten Zufahrtstraßen während der Bauarbeiten noch benutzbar sein?
 #: last_checked: 2025-04-16
-#: check_frequency: 360d
+#: check_frequency: 720d
 # REMOVED --- #: next_check: 2026-12-31
 Urban Tech Republic: neue Bebauung	?::projected 2074,16367 3258,16711 3342,16123 2515,15917 2074,16367
 # 
