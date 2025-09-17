@@ -780,11 +780,6 @@ Schloßstr. (Einbahnstraße?)	? -14821,106013 -15004,105813 -15070,105705
 Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -14288,105530 -14242,105542
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
-# added from flaechen
-(Hängen bereits Schilder für den Susanne-und-Kurt-Crohn-Platz?)	? 11447,16507 11535,16498 11542,16384 11470,16394 11448,16398 11447,16507
-# added from qualitaet_s
-Neuer Steg: unbefestigter Weg (Ist hier auch asphaltiert?)	? 8277,19210 8209,19107
-Klingsorstr.: schadhafter Asphalt (Ist die Qualität in der Klingsorstr. zwischen Klingsorplatz und Hindenburgdamm besser geworden?)	? 4760,4075 4634,4053 4551,4042
 # added from qualitaet_l
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK (ist hier mittlerweile asphaltiert?)	? 5633,-2011 5292,-2221 5132,-2299
 Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21131,-2004 -20954,-1991 -20933,-1960 -20719,-1956 -20528,-1962
@@ -840,10 +835,12 @@ Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,
 Verbundsteinpflaster, teilweise schadhaft (Wurzelschäden) (Wird die Qualität des Radwegs nach den Bauarbeiten besser sein?)	? 43162,14428 42996,14793
 (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
 (andere Straßenseite auch?)	? 37628,-150734 37756,-150359
+asphaltiert, einige Wurzelschäden (Wurden die Wurzelschäden bei der Sanierung des Radwegs behoben?)	? 22003,-1625 22001,-1632 21861,-2154 21696,-2925 21722,-3421 21687,-3601 21607,-3739
 asphaltiert (geht der Radweg in Richtung Südwesten weiter?)	? 10744,-25036 9478,-26014 9223,-26361 8647,-26861
 # added from comments_misc
 Tor (Sperrung möglich?) (Ist das Tor permanent geöffnet?)	? 58041,164268 58324,164202 59544,164184
 Ausschilderung nach Luisenthal (?) folgen (Heißt es tatsächlich "Luisenthal"?)	? 41134,76881 41143,76365
+Clara-Müller-Jahnke-Str.: nicht ausgeschildert (Hängen mittlerweile Straßenschilder?)	? 31971,3170 31799,3192 31800,3091 31810,3009 31965,2999
 # added from comments_route
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -26785,5851 -26783,5891 -26689,6111 -26525,6519 -26170,6459 -25898,6447 -25719,6581 -25537,6616 -25318,6593 -25213,6477
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -18701,4578 -19392,4605 -19316,4365
@@ -856,3 +853,5 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from bbbike-temp-blockings-optimized
 Lemkestr.: zwischen Sudermannstr. und Lenbachstr. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Sudermannstr., Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? 25534,12763 25363,12553
 Steg am Krugpfuhl gesperrt, Ende der Sperrung unbekannt (Wann ist der Steg wieder offen?)	? 11162,22939 11150,22898
+Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025 (Ist der Mauerweg noch immer gesperrt?)	? 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
+Landschaftspark Herzberge: Nord-Süd-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt (Ist der Weg noch immer gesperrt?)	? 17498,13015 17507,12781

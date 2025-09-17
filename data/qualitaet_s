@@ -1247,7 +1247,7 @@ Beerenstr.: Fahrbahn Kopfsteinpflaster, Radwege asphaltiert	Q0 -1026,3321 -1054,
 Jupiterstr.: Kopfsteinpflaster	Q2 14843,6558 15058,6784
 Grumbkowstr.: Asphalt	Q0 11269,20667 11419,20327 11537,20087 11555,20051
 Grumbkowstr.: Asphalt	Q0 11555,20051 11627,19907 11695,19760 11730,19684
-Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8484,19401
+Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8492,19421 8484,19401
 Platanenstr.: Asphalt	Q0 9498,19817 9349,19782 9177,19745 8977,19694 8956,19688 8779,19589 8710,19550
 Platanenstr.: Asphalt mit einigen Schäden	Q0; 9498,19817 9824,19910
 Platanenstr.: Asphalt	Q0; 9824,19910 9498,19817
@@ -1997,6 +1997,8 @@ Soldiner Str.: Asphalt, leichte Schäden	Q0 8677,17154 8860,17077 8870,17073 8904
 Soldiner Str.: neu gemachter Asphalt	Q0 8904,17059 9082,16982
 Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9442,16830 9579,16770 9611,16741
 Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,16973 10013,16972
+(Nasses Dreieck): asphaltiert, einige Wurzelhebungen	Q1 9880,16994 9933,17092
+(Nasses Dreieck): unbefestigt, teilweise fester Schotter	Q2 9933,17092 9937,17134 9895,17221 9888,17260 9835,17303 9810,17322 9852,17358
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 Erich-Weinert-Str.: Asphalt, Parkstreifen gepflastert	Q0 10997,16280 11295,16199 11404,16140 11542,16070
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
@@ -5222,7 +5224,7 @@ Pankower Str.: Beton	Q0 11627,19907 11798,19989 11839,19982 11910,19968 11931,19
 Hans-Jürgen-Str.: unebenes Kleinsteinpflaster	Q2 11799,20224 11839,20176 11870,20154 11939,20140
 Margaretenaue: Kleinsteinpflaster	Q2 11984,20246 12071,20232 12087,20312 12000,20327
 Straße 42 (Französisch Buchholz): Asphalt	Q0 12087,20312 12211,20486 12274,20570 12217,20643
-Straße 199 (Französisch Buchholz, Niederschönhausen): Asphalt	Q0 11628,20092 11553,20253 11684,20377 11840,20528
+Straße 199 (Französisch Buchholz, Niederschönhausen): Asphalt	Q0 11636,20095 11553,20253 11684,20377 11840,20528
 Straße 182: unbefestigte Straße	Q2 11684,20377 11630,20476
 Straße 182 (Niederschönhausen,Französisch Buchholz): unbefestigte Straße mit Asphaltstreifen	Q2 11630,20476 11576,20565
 Straße 182 (Niederschönhausen,Französisch Buchholz): Schotterstraße	Q2 11576,20565 11521,20641 11435,20709
@@ -5267,7 +5269,7 @@ Kreuzsteg: Asphalt	Q0 8056,19216 8025,19157
 Feldsteg: Asphalt	Q0 8136,19159 8106,19110
 Vereinssteg: Asphalt	Q0 8412,19074 8340,18984
 Vereinssteg: Asphalt	Q0 8340,18984 8320,18955
-Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8644,19079
+Tuchmacherweg: Asphalt, teilweise etwas uneben	Q0 8482,18986 8644,19079
 Frühlingstr.: Kopfsteinpflaster	Q2 8583,18668 8660,18679
 Straße 201: Asphalt	Q1 9529,18815 9511,18785 9366,18669
 Kleine Homeyerstr.: mäßiger Beton	Q1 9801,18686 9828,18742 9735,18798 9643,18808 9613,18758
@@ -5716,11 +5718,11 @@ Straße 2 (Heinersdorf): Asphalt	Q0 13021,19466 12890,19478
 Straße 3 (Heinersdorf): Asphalt	Q0 12889,19471 12741,19474 12725,19459
 Straße 4 (Heinersdorf): unbefestigte Straße	Q2 13014,19218 12956,19218 12945,19239 12799,19242
 Straße 4 (Heinersdorf): unbefestigte Straße	Q2 12814,19202 12937,19194 12956,19218
-Emblastr.: unbefestigte Straße, Schotter	Q2 12674,19188 12631,19169
+Emblastr.: Asphalt	Q0 12674,19188 12631,19169
 Midgardstr.: Asphalt	Q0 12861,19072 12814,19202 12799,19242 12760,19344
 Midgardstr.: Asphalt	Q0 12760,19344 12725,19459 12692,19552 12664,19631
 Frithjofstr.: Beton mit einigen leichten Schäden	Q1 12457,19248 12627,19317 12696,19334 12760,19344 12886,19341 13017,19329
-Sigurdstr.: unbefestigte Straße, Schotter	Q2 12627,19317 12674,19188 12706,19107
+Sigurdstr.: Asphalt	Q0 12627,19317 12674,19188 12706,19107
 Ingeborgstr.: Asphalt	Q0 13011,19111 12861,19072 12809,19050
 Mimestr.: Asphalt	Q0 12969,18548 12952,18598
 Mimestr.: glattes Kopfsteinpflaster	Q1 12952,18598 12921,18691
@@ -10737,7 +10739,7 @@ Händelplatz: Beton	Q0 4568,4789 4543,4820
 (Charité-Campus Benjamin Franklin): gepflastert	Q2 4926,3749 4884,3822
 (Charité-Campus Benjamin Franklin): Beton	Q0 4884,3822 4884,3840 4811,3959
 (Charité-Campus Benjamin Franklin): Asphalt	Q0 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
-Klingsorstr.: schadhafter Asphalt	Q1 4760,4075 4634,4053 4551,4042
+Klingsorstr.: Asphalt	Q0 4760,4075 4634,4053 4551,4042
 Klingsorstr.: Asphalt	Q0 4834,4102 4932,4152
 Klingsorstr.: Asphalt	Q0 4932,4152 5063,4266 5090,4291 5120,4318 5150,4345 5206,4432 5214,4445 5271,4547
 Klingsorstr.: Asphalt	Q0 5316,4637 5336,4676 5407,4815 5411,4825 5478,4957 5482,4965 5499,4999 5535,5068
@@ -11111,7 +11113,7 @@ Abendseglersteig: Asphalt	Q0 33406,2852 33383,2792 33267,2810 33139,2835 33167,2
 Beate-Hahn-Str.: Asphalt	Q0 12257,18649 12381,18897
 Marianne-Foerster-Str.: Verbundsteinpflaster	Q1 12363,18596 12375,18622 12470,18816 12481,18838
 Rubinweg: Betonsteinpflaster	Q0 11495,20364 11543,20272
-Rubinweg: unbefestigt	Q2 11543,20272 11553,20253
+Rubinweg: unbefestigt/Betonsteinpflaster	Q2 11543,20272 11553,20253
 (Schulzestr. - S-Bhf. Wollankstr.): Verbundsteinpflaster	Q1 9494,17824 9461,17795
 (Personentunnel S-Bhf. Wollankstr.): Gehwegplatten/Verbundsteinpflaster	Q1 9434,17823 9383,17757
 An der Streuobstwiese: Betonsteinpflaster	Q0 12657,22751 12616,22697 12628,22604
@@ -12736,7 +12738,9 @@ Julierstr.: Beton	Q1 6370,17696 6248,17732
 Septimerstr.: Beton	Q0 5828,17538 5896,17626 6215,17630 6255,17606 6258,17408
 Winterthurstr.: Beton	Q0 6215,17630 6248,17732 6256,17755 6273,17831
 Am Iderfenngraben: Beton	Q1 8641,19339 8671,19410 8768,19470
-Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8768,19470 8993,19595 9015,19606 9195,19644 9404,19691 9565,19751
+Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8768,19470 8993,19595
+Am Iderfenngraben: Beton	Q1 8993,19595 9015,19606
+Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 9015,19606 9195,19644 9404,19691 9565,19751
 Brehmstr.: löchriger Beton	Q1 19398,9833 19413,10056
 Brehmstr.: löchriger Beton	Q1 19413,10056 19479,10053 19549,10049 19684,10037
 Zinzendorfstr.: Kopfsteinpflaster	Q2 5442,12852 5468,13067
@@ -18890,7 +18894,7 @@ Romain-Rolland-Str.: neu gemachter Asphalt	Q0 12457,19248 12387,19454
 Heimdallstr.: Asphalt	Q0 11984,18771 12002,18768 12014,18771 12028,18810 12190,19009
 Heimdallstr.: Asphalt mit einigen Schäden	Q1 12190,19009 12231,19061
 Heimdallstr.: Verbundsteine	Q1 12231,19061 12261,19099
-Sleipnerstr.: Asphalt	Q1 12261,19099 12510,18954
+Sleipnerstr.: Asphalt mit einigen Schäden	Q1 12261,19099 12510,18954
 Neukirchstr.: Asphalt	Q0 12548,18503 12363,18596 12257,18649 12014,18771
 (Paul-Löbe-Allee - südliches Spreeufer): kleinteiliges Kopfsteinpflaster	Q1 7851,12590 7776,12586 7745,12603
 Aalemannufer: Asphalt	Q0 -1989,18378 -2053,18375 -2096,18376 -2535,18391 -2605,18393 -2678,18396 -2759,18400

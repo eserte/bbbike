@@ -43,7 +43,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-08-23 vvv
+#: last_checked: 2025-09-17 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="7"
@@ -5641,6 +5641,10 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 # REMOVED (naja) --- #: by: André Käding --- #: confirmed_by: srt --- Neustrelitzer Str.: kurvenreich	q1 16346,14750 16256,14828
 #: by: Sven Krüger-G.:
 (Esplanade - Grüntaler Str.): Zickzack-Kurs	q2 9980,16973 9880,16994 9846,16981
+# 
+(Nasses Dreieck): einige Fußgänger	q1 9880,16994 9933,17092 9937,17134 9895,17221 9888,17260 9835,17303 9810,17322
+#: XXX_prog BS, ansonsten q1 oder q2
+(Nasses Dreieck): einige Fußgänger, Bordstein	q3 9810,17322 9852,17358
 # 
 #: by: anonymous, korrigiert [AM] vvv
 #: corrected_by: srt (q1 -> q2)

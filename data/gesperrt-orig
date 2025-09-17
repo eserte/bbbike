@@ -101,7 +101,8 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_21_1285_1376_online.pdf (Straßenlandwidmung, kleine Fläche)
 #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: osm_watch: way id="152264786" version="24"
+#: osm_watch: way id="152264786" version="25"
+#: osm_watch: way id="1430487470" version="1"
 #: last_checked: 2025-06-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
@@ -2735,6 +2736,9 @@ Zaun, Durchfahrt für Radfahrer nicht möglich	3 * -761,16641 *
 # 
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 * 19881,16561 *
 # 
+#: historical_note: früher: mehrere Poller, BNP:1::trailer=6
+abgeschlossenes Tor	3 * 12299,19143 *
+# 
 #: section ^^^
 ####################################################################
 #: section: Stellen, an denen getragen werden muss vvvvvvvvvvvvvvvvv
@@ -3287,7 +3291,6 @@ Drängelgitter	BNP:3::trailer=10 5715,4672
 Schranke	BNP:2::trailer=4 16541,12071
 Schranke (lichte Breite ca. 120cm)	BNP:2::trailer=4 11973,21385
 Baumstamm als Barriere	BNP:0::trailer=5 -1527,18645
-mehrere Poller	BNP:1::trailer=6 12299,19143
 Poller	BNP:1::trailer=6 8350,10662
 Drängelgitter	BNP:3::trailer=10 10062,15927
 # REMOVED (weitgehend abmontiert) --- #: next_check_id: MAUERPARKERWEITERUNG-2019 --- #: osm_watch: node id="2456723872" version="2" --- #: osm_watch: node id="2456723871" version="3" --- #: XXX vermutlich temporär wegen Umgestaltung des Mauerparks vvv --- #: last_checked: 2019-01-23 vvv --- #: check_frequency: 60d vvv --- Drängelgitter	BNP:3::trailer=10 10046,15430 --- Drängelgitter	BNP:3::trailer=10 10120,15484 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
@@ -3992,6 +3995,7 @@ Schwingtor	BNP:5::trailer=10 -7347,12797
 Drängelgitter	BNP:3::trailer=10 7862,14546
 Drängelgitter	BNP:3::trailer=10 8982,10510
 Drängelgitter	BNP:3::trailer=10 9165,10530
+Schwingtor	BNP:5::trailer=10 11543,20272
 # 
 #: section ^^^
 ############################################################################
@@ -4065,24 +4069,6 @@ neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 1677
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
-# 
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6808 (Vorlage zur Kenntnisnahme: Benennungsabsicht)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6885 (Vorlage zur Kenntnisnahme)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_26_1735_1790_online.pdf (Benennung von Straßenland)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_43_3215_3294_online.pdf (Grundstücksnummerierungen)
-# REMOVED --- #: XXX fehlt noch bei Berlin.coords.data, laut DPAG-Mitteilungsblatt PLZ=13156
-#: XXX Einzug der Mieter vorgesehen im September 2024
-#: XXX vermutlich keine Verbindung zur Straße 199 (laut Karte) -> allerdings könnte es eine Gehwegverbindung geben
-#: XXX mittlerweile (Mai 2025) sieht das Tor verschlossen aus, allerdings gibt es auch Bauarbeiten Richtung Straße 199
-# REMOVED --- #: XXX auf Luftbildern ist bereits eine Baustraße inklusive Verbindung zur Straße 199 zu erkennen; bei osm bereits eingetragen (zu früh!)
-#: osm_watch: way id="971973021" version="8"
-#: osm_watch: note 4598098 1
-# REMOVED (landuse -> building, keine Beobachtung mehr sinnvoll) --- #: osm_watch: way id="234861531" version="4"
-#: last_checked: 2025-05-24 (mapillary)
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2024-09-15
-# REMOVED (realisiert) --- Rubinweg: neue Privatstraße entsteht	?::inwork 11495,20364 11543,20272
-Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253
 # 
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
@@ -4558,7 +4544,7 @@ Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,1067
 #: by: https://entwicklungsstadt.de/mauerpark-sanierung-erste-teilflaeche-in-pankow-vorzeitig-fertiggestellt/
 #: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
 #: priority: #C
-#: last_checked: 2025-07-03
+#: last_checked: 2025-09-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
 #: next_check: 2026-06-30 (BA, entwicklungsstadt)

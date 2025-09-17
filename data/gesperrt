@@ -2690,6 +2690,8 @@ Zaun, Durchfahrt für Radfahrer nicht möglich	3 -719,16608 -761,16641 -784,16658
 Zaun, Durchfahrt für Radfahrer nicht möglich	3 -784,16658 -761,16641 -719,16608
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 19872,16563 19881,16561 19890,16559
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 19890,16559 19881,16561 19872,16563
+abgeschlossenes Tor	3 12261,19099 12299,19143 12372,19203
+abgeschlossenes Tor	3 12372,19203 12299,19143 12261,19099
 tragen (ca. 33 Stufen)	0:30:-86 20661,12140
 tragen	0:30:5 20657,12101
 tragen (16 Stufen)	0:25:-233 20330,12025
@@ -3056,7 +3058,6 @@ Drängelgitter	BNP:3:-71:trailer=10 5715,4672
 Schranke	BNP:2:-170:trailer=4 16541,12071
 Schranke (lichte Breite ca. 120cm)	BNP:2:-127:trailer=4 11973,21385
 Baumstamm als Barriere	BNP:0:-129:trailer=5 -1527,18645
-mehrere Poller	BNP:1:-139:trailer=6 12299,19143
 Poller	BNP:1:11:trailer=6 8350,10662
 Drängelgitter	BNP:3:-195:trailer=10 10062,15927
 Schranke	BNP:3:-93 -7969,-1659
@@ -3547,6 +3548,7 @@ Schwingtor	BNP:5:-172:trailer=10 -7347,12797
 Drängelgitter	BNP:3:-218:trailer=10 7862,14546
 Drängelgitter	BNP:3:-108:trailer=10 8982,10510
 Drängelgitter	BNP:3:-96:trailer=10 9165,10530
+Schwingtor	BNP:5:-27:trailer=10 11543,20272
 (an den Gebäuden der Deutschen Rentenversicherung): wegen Hochbauarbeiten gesperrt	2::inwork 15322,11335 15273,11350 15168,11327 15058,11250
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590
@@ -3562,7 +3564,6 @@ Glockenblumenweg: Einbahnstraße	1s:inwork 16461,2569 16260,2717
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
 neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 16775,6813 16747,6813
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
-Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor offen sein?	2::inwork 11543,20272 11553,20253
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019 12809,969
 Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12868,1085 12879,1000

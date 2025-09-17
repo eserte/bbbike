@@ -2622,6 +2622,8 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: source_id: viz2021:13.371607,52.515899,25.09.2024,06:00 (bis 01.10.2024) (inaktiv)
 #: source_id: viz2021:13.36973,52.517661,26.09.2024,18:00 (bis 30.09.2024) (inaktiv)
 #: source_id: viz2021:13.354724,52.517098,26.09.2024,18:00 (bis 30.09.2024) (inaktiv)
+#: source_id: viz2021:13.36975,52.51584, (bis 23.09.2025)
+#: source_id: viz2021:13.37081,52.51779, (bis 22.09.2025)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -5340,7 +5342,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 # REMOVED --- #: osm_watch: way id="1124627670" version="6" ---	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
 #: XXX Wie lange dauern die Bauarbeiten? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
 #: osm_watch: note 4806178 2
-#: also_indoor: traffic (G,T)
+#: also_indoor: traffic (G,ex-T)
 #: last_checked: 2025-08-19 (daf) vvv
 	q3::inwork 8343,11133 8289,11205
 	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
@@ -5864,14 +5866,18 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
 #: also_indoor: traffic (T)
-#: XXX Die Sperrung ragt noch in die Virchowstr. rein, evtl. sind Radfahrer doch etwas betroffen
-#: last_checked: 2025-09-04
-#: check_frequency: 14d
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2025-09-17 vvv
+#: check_frequency: 14d (traffic) vvv
 Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
+Virchowstr.	q2::inwork 12707,13706 12640,13814
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 3792,
-         'text' => 'Margarete-Sommer-Str.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'text' => 'Margarete-Sommer-Str.: Bauarbeiten, Sperrung der Fahrbahn, außerdem ein Abschnitt der Virchowstr. gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6296,7 +6302,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: osm_watch: way id="23121446" version="36"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-09-03 vvv
+#: last_checked: 2025-09-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -6494,7 +6500,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2025-08-05 (mapillary)
+#: last_checked: 2025-09-17
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -7094,6 +7100,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        {
          'data' => '#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13021 (Antrag)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13066 (Anfrage)
+#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13178 (Antrag)
 #: osm_watch: way id="27457006" version="27"
 #: last_checked: 2025-08-27 (osm)
 #: check_frequency: 180d
@@ -7142,7 +7149,6 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: by: https://www.stadtblatt-online.de/verkehr/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins/ (Bauarbeiten ab 11.04.2025)
 #: by: https://entwicklungsstadt.de/4-abschnitt-des-berliner-mauerwegs-wird-erneuert/
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
-#: note: 2024-12-12: an der Einmündung Ostpreußendamm keine Sperrung zu sehen
 #: osm_watch: way id="27260309" version="20"
 #: osm_watch: way id="372791173" version="11"
 #: osm_watch: way id="27260312" version="25"
@@ -7169,7 +7175,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-08-23
+#: last_checked: 2025-09-17
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -7497,8 +7503,8 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'data' => '#: next_check_id: ELLABAROWSKY-2024
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
-#: also_indoor: traffic (B,T)
-#: last_checked: 2025-06-21
+#: also_indoor: traffic (B,T,G)
+#: last_checked: 2025-09-17 (traffic)
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -7889,7 +7895,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
        undef,
        {
          'data' => '#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
-#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025)
+#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025) (bis 25.09.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
@@ -7897,9 +7903,9 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 ',
          'from' => 1741240800,
          'id' => 4277,
-         'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 19.09.2025',
+         'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 25.09.2025',
          'type' => 'handicap',
-         'until' => 1758319199
+         'until' => 1758765600
        },
        undef,
        undef,
@@ -8144,7 +8150,7 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-09-17 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -8758,7 +8764,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv)
+#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv) (bis 26.09.2025)
 # REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 # REMOVED ---	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
 	2::inwork 18540,-38360 18433,-38781 18272,-39512 18138,-39957
@@ -8960,17 +8966,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'until' => 1777586400
        },
        undef,
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~19-08-2025-rw-an-l400-waltersdorf-berlin
-#: source_id: LS/222-W/25/094 (bis 15.09.2025) (bis 17.09.2025)
-	2::inwork 22001,-1632 21861,-2154 21696,-2925 21722,-3421 21687,-3601 21607,-3739
-',
-         'from' => 1756015200,
-         'id' => 4420,
-         'text' => 'Waltersdorf - Berlin: Deckenerneuerung des Rad- und Gehwegs, Sperrung, vom 25.08.2025 08:00 Uhr bis 17.09.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1758121200
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: traffic (T[ungenau])
@@ -9102,7 +9098,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        },
        {
          'data' => '#: also_indoor: traffic (H[zu wenig],G[zu wenig])
-#: last_checked: 2025-09-16
+#: last_checked: 2025-09-17
 #: check_frequency: 14d
 	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
 ',
@@ -9114,7 +9110,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        },
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
-#: last_checked: 2025-09-03
+#: last_checked: 2025-09-17
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
@@ -9137,8 +9133,9 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
          'until' => 1759269599
        },
        {
-         'data' => '#: add_fragezeichen: Ist die Fahrbahn wieder offen?
-#: last_checked: 2025-09-13
+         'data' => '#: next_check_id: MELCHIOR-2025
+#: add_fragezeichen: Ist die Fahrbahn wieder offen?
+#: last_checked: 2025-09-16 (mapillary)
 #: check_frequency: 7d
 	q4::inwork 11917,11186 11726,11265
 ',
