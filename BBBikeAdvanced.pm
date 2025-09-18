@@ -1494,7 +1494,7 @@ sub _find_coords {
 	}
 
 	# DMS coordinates with trailing NESW
-	while ($s =~ m{(\d+)°(\d+)'(\d+(?:\.\d+)?)"([NS]).*?(\d+)°(\d+)'(\d+(?:\.\d+)?)"([EW])}g) {
+	while ($s =~ m{(\d+)(?:\s*deg\s*|°)(\d+)'\s*(\d+(?:\.\d+)?)"\s*([NS]).*?(\d+)(?:\s*deg\s*|°)(\d+)'\s*(\d+(?:\.\d+)?)"\s*([EW])}g) {
 	    # sigh, it seems that I have to use the ugly $1...$8 list :-(
 	    my($lat_deg,$lat_min,$lat_sec,$lat_sgn,
 	       $lon_deg,$lon_min,$lon_sec,$lon_sgn) = ($1,$2,$3,$4,$5,$6,$7,$8);
