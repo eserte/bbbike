@@ -2624,6 +2624,8 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: source_id: viz2021:13.354724,52.517098,26.09.2024,18:00 (bis 30.09.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584, (bis 23.09.2025)
 #: source_id: viz2021:13.37081,52.51779, (bis 22.09.2025)
+#: source_id: viz2021:13.38045,52.51808,18.09.2025,18:00 (bis 22.09.2025)
+#: source_id: viz2021:13.37737,52.51457,18.09.2025,18:00 (bis 22.09.2025)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -3641,7 +3643,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.31363,52.52105,26.06.2023,06:00 (bis 30.06.2025) (bis 01.12.2025)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024, nun bis 30.06.2025
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2025-06-25
+#: last_checked: 2025-09-18 (daf)
 #: check_frequency: 120d
 #: next_check: 2026-06-30
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -3696,7 +3698,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-08-22
+#: last_checked: 2025-09-18
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6901,7 +6903,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-09-09 vvv
+#: last_checked: 2025-09-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7175,7 +7177,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-09-17
+#: last_checked: 2025-09-18
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -7889,7 +7891,18 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
+#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025) (inaktiv)
+#: source_id: LS/222-W/25/089 (bis 12.09.2025) (inaktiv) (bis 30.05.2026)
+	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
+',
+         'from' => 1741503600,
+         'id' => 4273,
+         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, möglicherweise bis Mai 2026',
+         'type' => 'gesperrt',
+         'until' => 1780153200
+       },
        undef,
        undef,
        undef,
@@ -8619,9 +8632,9 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 ',
          'from' => 1752319411,
          'id' => 4389,
-         'text' => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025',
+         'text' => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025, evtl. wird die Sperrung verlängert',
          'type' => 'gesperrt',
-         'until' => 1759428000
+         'until' => undef
        },
        {
          'data' => '#: source_id: adac:2024889976 (bis 17.10.2025) (neue ID -> inaktiv)
@@ -9249,6 +9262,39 @@ Kaiserdamm -> Fritschestr.: Richtung Osten/Norden	3 3159,11562 3320,11583 3287,1
          'text' => 'Fritschestr.: das Überqueren des Kaiserdamms kann wegen eng parkender Autos schwierig oder für breite Fahrräder (mit Anhänger, Lastenräder) unmöglich sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/entscharfung-einer-weltkriegsbombe-in-spandau-am-19.09.2025/
+#: by: https://viz.berlin.de/site/assets/files/1976/sperrbereich.jpg
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lz4aa2icy223
+Neuendorfer Str.	2::bomb -2908,15498 -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
+Askanierring	2::bomb -3040,16246 -3631,16224
+Schäferstr. (Hakenfelde)	2::bomb -2915,15994 -2673,16021 -2656,16010
+Schützenstr. (Hakenfelde)	2::bomb -2869,15782 -2859,15785 -2813,15871 -2656,16010 -2624,16049
+Brauereihof	2::bomb -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383
+Brauereihof	2::bomb -2856,15383 -2801,15365
+Brauereihof	2::bomb -2801,15365 -2789,15399
+Brauereihof	2::bomb -2789,15399 -2775,15446 -2809,15459
+Frieda-Arnheim-Promenade	2::bomb -2779,15358 -2801,15365
+Frieda-Arnheim-Promenade	2::bomb -2779,15358 -2769,15389 -2751,15383 -2733,15377 -2707,15456 -2699,15478 -2722,15486
+(Frieda-Arnheim-Promenade - Eiswerderstr.)	2::bomb -2722,15486 -2712,15520
+Eiswerderstr.	2::bomb -2883,15571 -2783,15538 -2712,15520 -2702,15517 -2675,15513
+(Uferweg am Nordhafen - Havelschanze)	2::bomb -3009,16269 -3040,16246
+Havelschanze	2::bomb -3040,16246 -3004,16252
+(Uferweg Eiswerderstr. - Nordhafen)	2::bomb -2702,15517 -2674,15574 -2673,15620 -2663,15639 -2641,15646 -2637,15653 -2620,15680 -2588,15739 -2523,15959
+Lynarstr. (Spandau)	2::bomb -3190,15655 -2980,15675 -2856,15687
+Parkstr. (Hakenfelde)	2::bomb -2856,15687 -2758,15690 -2744,15690 -2699,15738 -2627,15979 -2656,16010
+(Parkstr. - Uferweg)	2::bomb -2758,15690 -2637,15653
+Lutherplatz	2::bomb -3179,15574 -3190,15655
+Neue Bergstr.	2::bomb -3044,15837 -2886,15867
+Kurstr. (Spandau)	2::bomb -3041,15434 -3006,15534 -2980,15675
+Lutherstr. (Spandau)	2::bomb -3234,15567 -3179,15574 -3134,15578 -3006,15534 -2908,15498
+',
+         'from' => 1758146400,
+         'id' => 4446,
+         'text' => 'Bombenentschärfung in Hakenfelde: 500 m großer Sperrkreis wird errichtet, voraussichtlich am 19. September 2025 ab 7:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1758297600
        }
      
 );
