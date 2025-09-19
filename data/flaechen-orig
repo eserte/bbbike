@@ -907,7 +907,9 @@ Lutherplatz	F:P -3300,15644 -3293,15645 -3190,15655 -3179,15574 -3234,15567 -324
 Bundesplatz	F:P 5330,8202 5304,8144 5304,8088 5325,8023 5363,8024 5376,8104 5363,8170 5356,8205 5354,8062 5332,8063
 Stuttgarter Platz	F:P 3291,10853 3340,10888 3546,10962 3820,10987 3824,10966 3724,10956 3571,10911 3557,10939 3478,10910 3487,10882 3299,10816 3295,10831 3291,10853
 Zionskirchplatz	F:P 10391,14280 10365,14372 10311,14391 10277,14350 10304,14254 10391,14280
-	F:Sport 16344,10367 16261,10481 16220,10555 16209,10570 16262,10600 16301,10624 16375,10545 16447,10440 16344,10367
+#: alias: Sportanlage Fischerstraße
+#: alias: Sportplatz SV Sparta Lichtenberg 1911
+Paul-Kalkbrenner-Sportfeld	F:Sport 16344,10367 16261,10481 16220,10555 16209,10570 16262,10600 16301,10624 16375,10545 16447,10440 16344,10367
 Kolonie Gartenfreunde	F:Orchard 3213,18115 3420,18470 3484,18580 3530,18460 3551,18181 3570,17938 3429,17987 3319,18043 3213,18115
 Kolonie Am Waldessaum	F:Orchard 3213,18115 3047,18398 3008,18464 3089,18559 3323,18305 3213,18115
 Lankegrabenpark	F:P 7442,3458 7346,3204 7365,3199 7387,3194 7476,3440
@@ -1377,7 +1379,7 @@ Jacob-Teitel-Park	F:P 10318,13528 10324,13459 10341,13376 10358,13381 10390,1349
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9997 (Erledigungsfrist: 10.08.2020)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_05_0281_0364_online.pdf (Benennung; wird am 4. Juni 2021 wirksam)
 #: XXX Werden hier Schilder aufgestellt?
-#: osm_watch: way id="28251523" version="16"
+#: osm_watch: way id="28251523" version="17"
 #: priority: #C
 #: last_checked: 2025-09-04 (mapillary)
 #: check_frequency: 45d
@@ -1503,7 +1505,7 @@ Franz-Mehring-Platz	F:P 12822,12067 12758,11915 12788,11898 12891,12008 12822,12
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6708 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/CzHsN2pWsTqjjeO7iTnVu4jkKhVitreZfimJHhfT/kVHIQfhL/33-Anlagen/02/attach_6D91.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_52_4789_4920_online.pdf (Benennung einer öffentlichen Grünanlage, tatsächlich ohne Bindestrich?)
-#: osm_watch: way id="759545001" version="5"
+#: osm_watch: way id="759545001" version="6"
 #: XXX neuer Name: "Riwne Platz" (tatsächlich ohne Bindestrich?); bei osm schon eingetragen mit start_date:name=2023-11-24, hier mit Bindestrich
 #: last_checked: 2025-08-17
 #: check_frequency: 60d
@@ -2173,7 +2175,7 @@ KGA Bornholm I	F:Orchard 10197,16528 10209,16674 10200,16850 9945,16865 9921,167
 #: XXX Teile der KGA sollen bebaut werden
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-umwelt/pankower-bezirksverordnete-geben-pruefauftrag-fuer-idee-der-kleingaertner_a262150
 #: osm_watch: way id="25841750" version="11"
-#: last_checked: 2025-05-11 (mapillary)
+#: last_checked: 2025-09-18 (mapillary)
 #: check_frequency: 180d
 KGA Bornholm II	F:Orchard 10209,16674 10197,16528 10282,16522 10295,16667 10474,16655 10490,16914 10229,16927 10190,16930 10209,16674
 KGA Sandwüste	F:Orchard 10200,16850 10190,16930 10013,16972 9970,16970 9945,16865 10200,16850

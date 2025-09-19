@@ -5467,8 +5467,7 @@ asphaltiert	RW2; -532,15184 -453,15219 -344,15200
 	RW3; -453,15219 -532,15184
 	RW1;RW2 -1350,14646 -1336,14786
 	RW1; -1339,14910 -1336,14786
-	RW1;RW -3857,15205 -3863,15163 -3853,15097
-	RW1;RW1 -3853,15097 -3769,14894 -3734,14879
+	RW1;RW1 -3857,15205 -3863,15163 -3853,15097 -3769,14894 -3734,14879
 # 
 #: note: Hohenzollernring, Richtung Süden
 	RW1; -3935,16225 -4135,15894 -4155,15763
@@ -6476,9 +6475,7 @@ asphaltiert	RW1;RW1 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
 #: corrected_by: srt (betoniert -> Verbundsteinpflaster)
 Verbundsteinpflaster	RW1;RW1 16227,22963 16271,23030 16304,23077 16315,23094 16383,23197 16440,23283 16444,23298
 	RW2;RW2 -3110,15000 -3080,15091
-	RW3;RW3 -3080,15091 -3043,15207 -3034,15217 -2992,15271
-	RW3;RW4? -2992,15271 -2968,15333
-	RW4?;RW3 -2968,15333 -2949,15385
+	RW3;RW3 -3080,15091 -3043,15207 -3034,15217 -2992,15271 -2968,15333 -2949,15385
 	RW3; -2949,15385 -2908,15498 -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246 -3050,16429 -3046,16548 -3043,16601 -3042,16609 -3034,16719 -3033,16757 -3031,16807 -3029,16823 -3023,16925 -3018,16974 -3017,16984 -3013,17024 -3009,17090
 Radspur mit Bushaltestelle	RW3; -3009,17090 -3013,17024
 	RW3; -3013,17024 -3017,16984 -3018,16974 -3023,16925 -3029,16823 -3031,16807 -3033,16757 -3034,16719 -3042,16609 -3043,16601
@@ -8370,13 +8367,13 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 #: next_check_id: GITSCHINER-2025
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025) (inaktiv)
 #: source_id: viz2021:13.410603,52.498491,30.01.2025,13:57 (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.410603,52.498491, (bis 29.08.2025) (inaktiv) (bis 12.09.2025) (bis 19.09.2025)
+#: source_id: viz2021:13.410603,52.498491, (bis 29.08.2025) (inaktiv) (bis 12.09.2025) (bis 19.09.2025) (bis 03.11.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
 #: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
 #: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
 #: last_checked: 2025-09-06 vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-09-19 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-11-03 (VIZ-Verkehrsmeldung) vvv
 #XXX	RW4; 10871,10322 10975,10334
 	RW0; 10871,10322 10975,10334
 #: next_check ^^^
@@ -8781,12 +8778,12 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-04-24 (VIZ-Verkehrsmeldung aufgehoben) vvv
 # REMOVED --- #: next_check: 2025-06-30 (infravelo) vvv
-#: next_check: 2025-09-19 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-11-03 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025) (inaktiv)
 # REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
 # REMOVED --- #: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;, danach provisorischer Radweg auf Hochbord --- Gehweg für Radfahrer frei	RW1; 10871,10322 10708,10312
 #: source_id: viz2021:13.408209,52.498506,29.11.2024,17:06 (bis 31.12.2024) (inaktiv)
-#: source_id: viz2021:13.40656,52.49831,23.06.2025,12:00 (bis 12.09.2025) (bis 19.09.2025)
+#: source_id: LMS-BR:373479/72 viz2021:13.40656,52.49831,23.06.2025,12:00 viz2021:13.40656,52.49831, (bis 12.09.2025) (bis 19.09.2025) (bis 03.11.2025)
 #: source_id: viz2021:13.408209,52.498506, (bis 31.08.2025) (inaktiv)
 #: historical_note: zwischenzeitlich (bis 23.06.2025) provisorischer Radstreifen, RW4;
 	RW0; 10708,10312 10605,10312

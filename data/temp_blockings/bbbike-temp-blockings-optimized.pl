@@ -2407,6 +2407,8 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
 #: by: https://dorf-rosenthal.de/programmheft
 #: by: https://www.laubinger.de/event/47-rosenthaler-herbst/?date=20240814
 #: source_id: viz2021:13.379396,52.601479,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
+#: source_id: viz2021:13.377712,52.599818,19.09.2025,06:00 (bis 21.09.2025)
+#: source_id: viz2021:13.37865,52.60065,19.09.2025,06:00 (bis 21.09.2025)
 	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 # REMOVED --- Hauptstr. 155 - 171	q4::temp 8568,21863 8556,21918 8400,22010
 ',
@@ -2626,6 +2628,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: source_id: viz2021:13.37081,52.51779, (bis 22.09.2025)
 #: source_id: viz2021:13.38045,52.51808,18.09.2025,18:00 (bis 22.09.2025)
 #: source_id: viz2021:13.37737,52.51457,18.09.2025,18:00 (bis 22.09.2025)
+#: source_id: viz2021:13.36343,52.5176,19.09.2025,06:00 (bis 22.09.2025)
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -6804,16 +6807,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::temp::play 7177,16715 7150,16760 7144,16781 7147,16800
-',
-         'from' => 1749074400,
-         'id' => 4073,
-         'recurring' => 1,
-         'text' => 'Armenische Str.: zwischen Ungarnstr. und Sackgassenende am 1. und 3. Freitag im Monat zwischen 15:00 und 18:00 Uhr temporäre Spielstraße, Juni bis September',
-         'type' => 'handicap',
-         'until' => 1758297600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7230,7 +7224,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-09-06 vvv
+#: last_checked: 2025-09-19 (tempelhoferfeld website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website, entwicklungsstadt) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7467,7 +7461,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
 #: also_indoor: traffic (G[zu lang],T,ex-H,ex-W[zu kurz])
-#: last_checked: 2025-09-06 (traffic)
+#: last_checked: 2025-09-19 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -7506,6 +7500,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
+#: osm_watch: note 4847574 1
 #: last_checked: 2025-09-17 (traffic)
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
@@ -7552,7 +7547,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        {
          'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1508313.php
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (voraussichtliche Bauzeit: 2024 bis 2025 für diese und weitere Brücken: Spektegrabensteg und Südparkbrücke) (mittlerweile: 2025 bis 2026)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (voraussichtliche Bauzeit: 2024 bis 2025 für diese und weitere Brücken: Spektegrabensteg und Südparkbrücke) (mittlerweile: 2025 bis 2026) (mittlerweile: Fertigstellung 2. Quartal 2026)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (alternative URL)
 #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/spektebruecke-gesperrt_a431036
 #: by: https://www.tagesspiegel.de/berlin/verkehrsbaustellen-in-spandau-von-morschen-holzbrucken-und-wilden-u-bahntraumen-12824615.html (neun Monate Bauzeit, voraussichtlich bis Ende 2025)
@@ -7565,12 +7560,12 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: add_fragezeichen: Ist der Steg weiterhin gesperrt?
 #: last_checked: 2025-07-05
 #: check_frequency: 270d
-#: next_check: 2026-12-31
+#: next_check: 2026-06-30
 	2::inwork -7182,15524 -7228,15504
 ',
          'from' => 1733007600,
          'id' => 4226,
-         'text' => 'Steg über die Spektelake: wegen Brückenschäden Sperrung ab 2.12.2024',
+         'text' => 'Steg über die Spektelake: wegen Brückenschäden Sperrung ab 2.12.2024, voraussichtlich bis Mitte 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7974,6 +7969,7 @@ Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
        {
          'data' => '#: next_check_id: GUTENBERG-2025
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: XXX Möglicherweise im Zusammenhang mit der angrenzenden Hochbaustelle
 #: last_checked: 2025-06-25
 #: check_frequency: 90d
@@ -8275,19 +8271,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.32289,52.499283,15.05.2025,07:00 (bis 24.06.2025) (inaktiv)
-#: source_id: viz2021:13.322619,52.497886,30.06.2025,06:00 (unkonkret, bis 08.08.2025) (inaktiv)
-#: source_id: viz2021:13.322619,52.497886, (bis 15.08.2025) (bis 19.09.2025)
-#: note: bei rbb konkreter, zunächst bis 08.08.2025, verlängert bis 15.08.2025
-	q4::inwork; 4930,10368 4910,10135
-',
-         'from' => undef,
-         'id' => 4340,
-         'text' => 'Pfalzburger Str. (Wilmersdorf): Bauarbeiten zwischen Lietzenburger Str. und Ludwigkirchplatz, Einbahnstraße, offen Richtung Norden, evtl. sind auch Radfahrer betroffen, bis 19.09.2025',
-         'type' => 'handicap',
-         'until' => 1758297600
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (none)
 #: last_checked: 2025-08-23
@@ -8471,13 +8455,13 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-09-06 vvv
+#: last_checked: 2025-09-19 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-09-02 vvv
 # REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
-#: also_indoor: traffic (G,re-T,H)
+#: also_indoor: traffic (G,re-T,ex-H)
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -8489,25 +8473,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.266985,52.514264,20.05.2025,07:00 (bis 14.07.2025) (inaktiv)
-#: source_id: viz2021:13.26697,52.51427,26.06.2025,16:19 (bis 14.07.2025) (vorfristig inaktiv)
-#: source_id: adac:119662672 (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.26697,52.51427, (bis 01.08.2025) (bis 20.08.2025) (bis 12.09.2025) (inaktiv)
-#: also_indoor: traffic (ex-H[nur noch Eschenallee],G[nur noch Eschenallee],T,ex-A,ex-W)
-#: note: bei rbb bis 01.08.2025 verlängert, allerdings hier Kreuzung Kirschenallee
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-09-13 (traffic)
-#: check_frequency: 7d (traffic)
-	q3::inwork 919,11938 1078,11895 1188,11861
-	q3::inwork 1036,11761 1078,11895 1100,11974
-',
-         'from' => 1750861140,
-         'id' => 4375,
-         'text' => 'Platanenallee/Eschenallee: Bauarbeiten im Kreuzungsbereich, Umwege, Engstellen, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (G,re-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
@@ -8608,21 +8574,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409465412/neuer-baustress-an-der-altstadt-koepenick-nur-noch-ein-albtraum.html
-#: note: laut Stromnetz-Website bis 19.09.2029
-#: also_indoor: traffic (G,T)
-#: last_checked: 2025-08-27
-#: next_check: 2025-09-19 (stromnetz website)
-	q4::inwork 22740,4415 22542,4485 22495,4523
-',
-         'from' => 1752184800,
-         'id' => 4388,
-         'text' => 'Landjägerstr.: Leitungsarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Mitte September 2025',
-         'type' => 'handicap',
-         'until' => 1758297600
-       },
+       undef,
        {
          'data' => '#: last_checked: 2025-09-14
 #: check_frequency: 60d
@@ -8652,11 +8604,11 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: next_check_id: THOMAS-2025
 #: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025)
+#: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
 #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
 #: last_checked: 2025-09-13 vvv
-#: next_check: 2025-09-20 vvv
+#: next_check: 2025-10-20 (VIZ-Verkehrsmeldung) vvv
 Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 # REMOVED (nicht mehr?) --- #: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
 # REMOVED --- Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
@@ -8665,9 +8617,9 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 ',
          'from' => 1752606169,
          'id' => 4391,
-         'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis September 2025',
+         'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis Oktober 2025',
          'type' => 'handicap',
-         'until' => 1758319200
+         'until' => 1760911200
        },
        undef,
        undef,
@@ -8738,26 +8690,26 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        },
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecken-pulvermuehle-iv-vii-und-viii/ (geplante Bauzeit: Juni 2025 bis August 2025) (mittlerweile: Mitte August bis Mitte Dezember 2025)
+         'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecken-pulvermuehle-iv-vii-und-viii/ (geplante Bauzeit: Juni 2025 bis August 2025) (mittlerweile: Mitte August bis Mitte Dezember 2025) (mittlerweile: Oktober 2025 bis April 2026)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1582442.php (Sperrung von IV und VIII ab Juli 2025)
-#: osm_watch: note 4841625 3
+#: osm_watch: note 4841625 4
 #: note: Pulvermühle VII bereits seit Sommer 2024 (oder Januar 2023?) gesperrt
 #: note: nicht besonders routingrelevant; keine der drei Brücken wurde in den letzten 12 Monaten bei BBBike-Websuchen vorgeschlagen
 #: add_fragezeichen: Sind die Brücken noch immer gesperrt? vvv
 #: last_checked: 2025-08-26 (osm note) vvv
-#: check_frequency: 180d vvv
-#: next_check: 2025-12-15 (SenMVKU-Seite) vvv
+# REMOVED --- #: check_frequency: 180d vvv
+#: next_check: 2026-04-30 (SenMVKU-Seite) vvv
 Pulvermühle VII	2::inwork -1848,15535 -1903,15333
 Pulvermühle IV	2::inwork -1848,15317 -1762,15291
 Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 4400,
-         'text' => 'Fußgängerbrücken Pulvermühle IV, VII und VIII: wegen Brückenschäden gesperrt, voraussichtlich bis Mitte Dezember 2025',
+         'text' => 'Fußgängerbrücken Pulvermühle IV, VII und VIII: wegen Brückenschäden gesperrt, voraussichtlich bis April 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8777,16 +8729,16 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv) (bis 26.09.2025)
+#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv) (bis 26.09.2025) (bis 06.10.2025)
 # REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 # REMOVED ---	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
 	2::inwork 18540,-38360 18433,-38781 18272,-39512 18138,-39957
 ',
          'from' => 1753596000,
          'id' => 4403,
-         'text' => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 26.09.2025',
+         'text' => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 06.10.2025',
          'type' => 'gesperrt',
-         'until' => 1758898800
+         'until' => 1759762800
        },
        undef,
        {
@@ -8935,16 +8887,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'type' => 'gesperrt',
          'until' => 1789920000
        },
-       {
-         'data' => '#: source_id: 257300196 (bis 19.09.2025)
-	2::inwork 45751,72662 45701,72652 45683,72646
-',
-         'from' => 1757224800,
-         'id' => 4415,
-         'text' => 'Görlsdorf: Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, vom 08.09.2025 08:00 Uhr bis 19.09.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1758294000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: BLUECHER-2025
@@ -9219,16 +9162,18 @@ Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
          'until' => 1764284400
        },
        {
-         'data' => '#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026)
+         'data' => '#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026) (Sperrung am 22.09.2025; ab 13.10.2025 für Rückbauarbeiten gesperrt; neues Brückenbauwerk fertig: 2. Quartal 2026)
 #: osm_watch: way id="23926070" version="5"
-#: last_checked: 2025-09-12 (osm)
-#: check_frequency: 30d (indoor checks)
-#: next_check: 2026-05-01 (Ausschilderung vor Ort)
+#: last_checked: 2025-09-19 (SenMVKU-Seite)
+# REMOVED --- #: check_frequency: 30d (indoor checks)
+#: next_check: 2025-09-22 (Ein-Tages-Sperrung entfernen)
+# REMOVED --- #: next_check: 2026-05-01 (Ausschilderung vor Ort)
 Spektegrabensteg	2::inwork -7228,15933 -7243,15943
 ',
-         'from' => undef,
+         'dont_check_date' => 1,
+         'from' => 1758405600,
          'id' => 4443,
-         'text' => 'Spektegrabensteg: Sperrung, voraussichtlich bis April 2026',
+         'text' => 'Spektegrabensteg: Sperrung, am 22.09.2025 für einen Tag, dann voraussichtlich vom 13.10.2025 bis April 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9263,38 +9208,20 @@ Kaiserdamm -> Fritschestr.: Richtung Osten/Norden	3 3159,11562 3320,11583 3287,1
          'type' => 'gesperrt',
          'until' => undef
        },
+       undef,
+       undef,
        {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/entscharfung-einer-weltkriegsbombe-in-spandau-am-19.09.2025/
-#: by: https://viz.berlin.de/site/assets/files/1976/sperrbereich.jpg
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lz4aa2icy223
-Neuendorfer Str.	2::bomb -2908,15498 -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
-Askanierring	2::bomb -3040,16246 -3631,16224
-Schäferstr. (Hakenfelde)	2::bomb -2915,15994 -2673,16021 -2656,16010
-Schützenstr. (Hakenfelde)	2::bomb -2869,15782 -2859,15785 -2813,15871 -2656,16010 -2624,16049
-Brauereihof	2::bomb -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383
-Brauereihof	2::bomb -2856,15383 -2801,15365
-Brauereihof	2::bomb -2801,15365 -2789,15399
-Brauereihof	2::bomb -2789,15399 -2775,15446 -2809,15459
-Frieda-Arnheim-Promenade	2::bomb -2779,15358 -2801,15365
-Frieda-Arnheim-Promenade	2::bomb -2779,15358 -2769,15389 -2751,15383 -2733,15377 -2707,15456 -2699,15478 -2722,15486
-(Frieda-Arnheim-Promenade - Eiswerderstr.)	2::bomb -2722,15486 -2712,15520
-Eiswerderstr.	2::bomb -2883,15571 -2783,15538 -2712,15520 -2702,15517 -2675,15513
-(Uferweg am Nordhafen - Havelschanze)	2::bomb -3009,16269 -3040,16246
-Havelschanze	2::bomb -3040,16246 -3004,16252
-(Uferweg Eiswerderstr. - Nordhafen)	2::bomb -2702,15517 -2674,15574 -2673,15620 -2663,15639 -2641,15646 -2637,15653 -2620,15680 -2588,15739 -2523,15959
-Lynarstr. (Spandau)	2::bomb -3190,15655 -2980,15675 -2856,15687
-Parkstr. (Hakenfelde)	2::bomb -2856,15687 -2758,15690 -2744,15690 -2699,15738 -2627,15979 -2656,16010
-(Parkstr. - Uferweg)	2::bomb -2758,15690 -2637,15653
-Lutherplatz	2::bomb -3179,15574 -3190,15655
-Neue Bergstr.	2::bomb -3044,15837 -2886,15867
-Kurstr. (Spandau)	2::bomb -3041,15434 -3006,15534 -2980,15675
-Lutherstr. (Spandau)	2::bomb -3234,15567 -3179,15574 -3134,15578 -3006,15534 -2908,15498
+         'data' => '#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026) (mittlerweile: Sperrung ab Mitte Januar 2026 bis 2. Quartal 2026)
+#: last_checked: 2025-09-19 (SenMVKU website)
+#: check_frequency: 270d
+#: next_check: 2026-06-30 (SenMVKU website)
+Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
 ',
-         'from' => 1758146400,
-         'id' => 4446,
-         'text' => 'Bombenentschärfung in Hakenfelde: 500 m großer Sperrkreis wird errichtet, voraussichtlich am 19. September 2025 ab 7:00 Uhr',
+         'from' => 1767999600,
+         'id' => 4448,
+         'text' => 'Südparkbrücke: Sperrung und Neubau, voraussichtlich von Mitte Januar 2026 bis Mitte 2026',
          'type' => 'gesperrt',
-         'until' => 1758297600
+         'until' => undef
        }
      
 );

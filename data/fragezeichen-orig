@@ -120,7 +120,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt für Radfahrer	?::inwork 9047,9750
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: osm_watch: way id="667331289" version="7"
-#: last_checked: 2025-08-31
+#: last_checked: 2025-09-19
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -478,7 +478,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/trotz-ruckschlags-nach-anwohner-einspruch-berliner-behorden-halten-an-ausbauplanen-fur-die-kastanienallee-fest-14096267.html
 #: source_id: 2147346774 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
 #: source_id: viz2021:13.388829,52.59131,05.01.2021,07:00 (Leitungsarbeiten, bis 29.10.2021) (inaktiv)
-#: osm_watch: way id="36954368" version="19"
+#: osm_watch: way id="36954368" version="20"
 #: last_checked: 2025-07-17 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2026-04-15 (entwicklungsstadt)
@@ -2973,6 +2973,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1579993.php (ab 2027 Tunnelsanierung zwischen Weichselstr. und Hermannplatz)
 #: by: https://www.tagesspiegel.de/berlin/nach-15-jahren-bauzeit-karl-marx-strasse-in-neukolln-wieder-vollstandig-freigegeben-14019368.html
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1599737.php
 #: osm_watch: way id="764003876" version="8"
 #: osm_watch: way id="764003865" version="8"
 #: osm_watch: way id="764003862" version="24"
@@ -3164,6 +3165,7 @@ Herrfurthplatz: ein Abschnitt wird "eingezogen"; eventuell wird hier auch asphal
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrradinfrastruktur-hermannstrasse-weiterbau-bis-zur-werbellinstrasse/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fahrradweg-in-der-neukollner-hermannstrasse-ab-mitte-april-wird-am-nachsten-abschnitt-gebaut-13511791.html
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1584417.php (Anradeln am 30. Juli 2025)
+#: by: https://www.morgenpost.de/bezirke/neukoelln/article410019098/radwege-in-neukoelln-das-tut-sich-im-bezirk-ein-ueberblick.html
 #: source_id: viz2021:13.426977,52.475675,14.04.2025,07:00 (Bauarbeiten zwischen Werbellinstr. und Leinestr., bis 27.06.2025) (inaktiv)
 #: source_id: viz2021:13.4289,52.4719,14.04.2025,07:00 (bis 27.06.2025) (inaktiv)
 #: osm_watch: way id="410242419" version="17"
@@ -3470,6 +3472,7 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8110 (Antrag (u.a. Busspur Elsenstr.))
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8111 (Antrag (Radspur Elsenstr. zur Busspur machen))
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8112 (Antrag (Radspur Elsenstr. zur Busspur machen))
+#: by: https://www.tagesspiegel.de/berlin/kein-baustart-mehr-in-diesem-jahrzehnt-bund-stuft-prioritat-fur-a100-verlangerung-herunter-14352350.html
 #: source_id: viz2021:13.460605,52.471641,09.08.2024,07:00 (Bauarbeiten in der Sonnenallee, bis 27.09.2024) (bis 18.10.2024) (bis 29.11.2024) (bis 20.12.2024) (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.460292,52.47175,05.06.2025,07:00 (Installation einer Ampelanlage in der Sonnenallee, bis 13.06.2025) (inaktiv)
 # REMOVED (eingetragen) --- #: XXX -> strassen_bab-orig, wenn fertig --- #: XXX vermutlich wird es weitere begleitende Wege geben, die hoffentlich für Radfahrer befahrbar sein werden (bis zur Grenzallee? zwischen Kiefholzstr. und Görlitzer Damm auf der westlichen Seite der Autobahn?) (bis Am Treptower Park allerdings nicht, da ist kein Platz mehr übrig) --- #: next_check: 2025-08-27 (rbb) vvv --- BAB100	?::inwork 14169,9525 14147,9383 14167,9099 --- BAB100 (Tunnelabschnitt)	?::inwork 14167,9099 14270,8885 --- BAB100	?::inwork 14270,8885 14307,8729 14281,8444 14288,8341 14326,8240 14421,8032 14447,7901 14459,7763 14436,7611 14346,7377 14278,7090 --- BAB100 (Tunnelabschnitt)	?::inwork 14278,7090 14219,6838 14161,6729 --- BAB100	?::inwork 14161,6729 14101,6640 --- #: next_check ^^^
@@ -5590,8 +5593,8 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516792.php (in Umsetzung bzw. kurz davor)
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (hier: Höhe Ingrid-Reschke-Str., aber tatsächlich Höhe An den Eiswerken, bis 20.07.2025) (inaktiv)
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
-#: last_checked: 2025-08-31 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2025-09-19 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel oder Fußgängerampel entsteht	?::projected 14988,10778 15004,10791 15019,10803
 # REMOVED --- #: next_check ^^^
@@ -5615,7 +5618,7 @@ Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 1
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: XXX zurzeit (Jan 2025) sind Bauarbeiten im nördlichen Kreuzungsbereich
 #: priority: #D
-#: last_checked: 2025-08-24 (mapillary)
+#: last_checked: 2025-09-18 (mapillary)
 #: check_frequency: 90d
 Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,15380
 # 
@@ -5663,7 +5666,7 @@ Wiltbergstraße/Ludwig-Hoffmann-Quartier: Zebrastreifen geplant	?::projected 1566
 #: next_check_id: SWINEMUENDER-2023
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: priority: #D
-#: last_checked: 2025-09-03
+#: last_checked: 2025-09-18 (mapillary)
 #: check_frequency: 120d
 Swinemünder Str./Ramlerstr.: Zebrastreifen geplant	?::projected 9606,15753 9646,15737 9694,15718
 # 
@@ -8250,7 +8253,7 @@ Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezo
 #: last_checked: 2025-09-04 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-31 (Tsp, howoge) vvv
-#: osm_watch: way id="367781611" version="13"
+#: osm_watch: way id="367781611" version="14"
 Marius-Carpentier-Str.: genaue Lage? Qualität (vermutlich asphaltiert?)? Wird man die Streitstr. überqueren können (sieht noch nicht so aus)?	? -3034,16719 -2904,16703 -2629,16653
 #: osm_watch: way id="367813140" version="8"
 Meta-London-Str.: genaue Lage? Qualität?	? -2939,16495 -2904,16703
@@ -8787,7 +8790,7 @@ Waldsassener Str./Tirschenreuther Ring: Zebrastreifen in Planung	? 6990,228 7014
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1519205.php
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24557
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bsr-zentrale-und-co-sch%C3%B6neberger-linse.1481/#post-24618
-#: last_checked: 2025-06-21
+#: last_checked: 2025-07-24 (mapillary)
 #: check_frequency: 90d
 Ella-Barowsky-Str.: Umbauarbeiten, dabei entsteht ein Radweg	?::inwork 7499,7880 7537,7859 7551,7851 7621,7813 7632,7807 7696,7771
 # 
@@ -9046,12 +9049,6 @@ Marion-Seelig-Platz: Benennung	? 12161,13711 12189,13750 12204,13719 12161,13711
 #: last_checked: 2025-08-06
 #: next_check: 2027-06-30
 Friedenauer Höhe: Erschließungsstraße, evtl. mit Anschluss an die Straße am Güterbahnhof Wilmersdorf	?::inwork 5800,7826 6147,7840
-# 
-#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026)
-#: last_checked: 2025-08-29 (website)
-#: check_frequency: 30d (indoor checks)
-#: next_check: 2025-12-31 (SenMVKU website)
-Südparkbrücke: Neubau geplant	?::projected -4048,12107 -4033,12108
 # 
 #: by: https://www.tagesspiegel.de/berlin/bezirke/risiko-stahl-wie-bei-dresdner-carolabrucke-neue-senats-zahlen-zwolf-brucken-in-berlin-pankow-mussen-abgerissen-werden-13182349.html (2026)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/oestliche-bucher-strassen-bruecke/ (2025) (mittlerweile ist die Umsetzung für 2026 vorgesehen) (mittlerweile keine konkrete Bauzeit mehr)
@@ -10685,7 +10682,7 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 # REMOVED (-> strassen-orig) --- Gustav-Tempel-Str.: zukünftiger Fahrbahnbelag unklar, noch nicht offiziell offen, vermutlich wird noch in Richtung Westen verlängert	? 15220,10682 15205,10616 15200,10600
 # REMOVED (-> strassen-orig) --- An den Eiswerken	? 15004,10791 14994,10732 14984,10677
 # REMOVED (-> strassen-orig) --- Paul-und-Paula-Promenade	? 14886,10748 14909,10732 14984,10677
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-09-19 vvv
 #: check_frequency: 90d vvv
 #: XXX beim DPAG-Mitteilungsblatt 6/2023 als "Paul-und Paula-Promenade" bezeichnet (ein Bindestrich weniger); PLZ=10317
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
