@@ -9295,31 +9295,6 @@ Lutherstr. (Spandau)	2::bomb -3234,15567 -3179,15574 -3134,15578 -3006,15534 -29
          'text' => 'Bombenentschärfung in Hakenfelde: 500 m großer Sperrkreis wird errichtet, voraussichtlich am 19. September 2025 ab 7:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1758297600
-       },
-       {
-         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lz62q57he22e
-#: by: https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifhfkyfzpwkif7x7rgvw4n3ix7qcnnrqllrxmrbbcjzacvtzlzeg4@jpeg
-	2::bomb 10299,11786 10314,11804 10349,11847 10376,11879
-	2::bomb 10374,11734 10528,11729 10526,11612
-	2::bomb 10644,11569 10721,11639 10815,11662 10902,11659 10963,11695 11060,11753 11155,11750 11185,11883
-	2::bomb 10815,11662 10722,11816
-	2::bomb 11185,11883 11034,11895
-	2::bomb 11160,12071 11111,12027
-	2::bomb 11221,12250 11139,12243 11094,12243 10951,12249 10957,12401 10831,12371
-	2::bomb 11278,12185 11155,12184 10945,12150
-	2::bomb 10383,12191 10285,12306 10357,12356 10416,12394 10475,12438 10580,12513 10599,12526 10696,12601 10783,12502 10849,12557 10873,12577
-	2::bomb 10599,12526 10646,12470 10687,12421
-	2::bomb 11155,11750 11073,11774 11024,11789 10955,11849 10908,11908
-	2::bomb 10207,12055 10227,12013 10301,11899
-	2::bomb 10308,11833 10374,11734
-	2::bomb 10295,11856 10317,11875
-	2::bomb 10207,12055 10289,12106
-',
-         'from' => 1758232800,
-         'id' => 4447,
-         'text' => 'Bombenentschärfung in Mitte: 500 m großer Sperrkreis im Bereich der Mühlendammschleuse wird errichtet, voraussichtlich am 19. September 2025',
-         'type' => 'gesperrt',
-         'until' => 1758297600
        }
      
 );

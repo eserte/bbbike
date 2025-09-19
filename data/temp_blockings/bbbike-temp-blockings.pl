@@ -50071,12 +50071,13 @@ Lutherstr. (Spandau)	2::bomb -3234,15567 -3179,15574 -3134,15578 -3006,15534 -29
 EOF
      },
      { from  => $isodate2epoch->("2025-09-19 00:00:00"),
-       until => $isodate2epoch->("2025-09-19 18:00:00"),
+       until => 1758260219, # $isodate2epoch->("2025-09-19 18:00:00"),
        text  => 'Bombenentschärfung in Mitte: 500 m großer Sperrkreis im Bereich der Mühlendammschleuse wird errichtet, voraussichtlich am 19. September 2025',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lz62q57he22e
 #: by: https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifhfkyfzpwkif7x7rgvw4n3ix7qcnnrqllrxmrbbcjzacvtzlzeg4@jpeg
+#: by: https://viz.berlin.de/aktuelle-meldungen/weltkriegsbombe-in-mitte-gefunden-sperrkreis-ist-eingerichtet/
 	2::bomb 10299,11786 10314,11804 10349,11847 10376,11879
 	2::bomb 10374,11734 10528,11729 10526,11612
 	2::bomb 10644,11569 10721,11639 10815,11662 10902,11659 10963,11695 11060,11753 11155,11750 11185,11883
