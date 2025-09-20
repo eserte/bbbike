@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2014,2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2014,2015,2017,2025 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -609,18 +609,6 @@ sub build_penalty_code {
 		    }
 ';
     }
-    if ($sc->HasAmpeln && $sc->Algorithm ne 'srt') {
-	# XXX not yet for srt_algo
-	# XXX Penalty anpassen, falls nach links/rechts abgebogen wird.
-	# Keine Penalty bei Besonderheiten (nur eine Richtung ist relevant,
-	# Fußgängerampel...) XXX
-	# XXX next_node oder last_node verwenden?
-	$penalty_code .= '
-		    if (exists $ampel_net->{$next_node}) {
-			$pen += ' . $sc->AmpelPenalty . ';
-		    }
-';
-    }
     if ($sc->HasQualitaet) {
 	# A not existing penalty may happen if searching with fragezeichen streets
 	# is turned on.
@@ -646,6 +634,10 @@ sub build_penalty_code {
 		    }
 ';
     }
+    # penalties which should be *add*ed later
+    $penalty_code .= '
+		    my $pen_add;
+';
     if ($sc->HasDirectedHandicap) {
 	$penalty_code .= '
 		    if ($directed_handicap_net &&
@@ -674,12 +666,12 @@ sub build_penalty_code {
 	if ($sc->HasAmpeln) {
 	    $penalty_code .= '
 				    if (exists $directed_handicap->{tl_pen}) {
-					$pen += $directed_handicap->{tl_pen};
+					$pen_add += $directed_handicap->{tl_pen};
 				    } else {
 ';
 	}
 	$penalty_code .= '
-				    $pen += $directed_handicap->{pen};
+				    $pen_add += $directed_handicap->{pen};
 ';
 	if ($sc->HasAmpeln) {
 	    $penalty_code .= '
@@ -781,7 +773,24 @@ sub build_penalty_code {
                     $pen = $user_def_penalty_sub->($pen, $next_node, $last_node);
 ';
     }
-    # should be last, because of addition
+    # the following should be last, because of addition
+    if ($sc->HasAmpeln && $sc->Algorithm ne 'srt') {
+	# XXX not yet for srt_algo
+	# XXX Penalty anpassen, falls nach links/rechts abgebogen wird.
+	# Keine Penalty bei Besonderheiten (nur eine Richtung ist relevant,
+	# Fußgängerampel...) XXX
+	# XXX next_node oder last_node verwenden?
+	$penalty_code .= '
+		    if (exists $ampel_net->{$next_node}) {
+			$pen += ' . $sc->AmpelPenalty . ';
+		    }
+';
+    }
+    $penalty_code .= '
+		    if (defined $pen_add) {
+		        $pen += $pen_add;
+		    }
+';
     if ($sc->HasTragen) { # XXX häh?
 	if ($sc->HasGreen) {
 	    # Adjust penalty according to penalty for "normal" (non-green)
