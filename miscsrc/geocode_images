@@ -1081,6 +1081,8 @@ sub manipulate {
 
 __END__
 
+=encoding iso-8859-1
+
 =head1 NAME
 
 geocode_images - geocode images against a gps track data base
@@ -1207,18 +1209,19 @@ To display geocoded thumbnails in bbbike:
 
 =item * Start bbbike
 
-=item * Load the BBBikeViewImages plugin through "Plugin laden". The
-plugin is located in the F<miscsrc> subdirectory of bbbike.
+=item * Load the C<BBBikeViewImages> plugin using B<Plugins> E<gt>
+B<Alle Plugins zeigen>.
 
 =item * Create a bbd file like explained in L</EXAMPLES>.
 
-=item * Load the bbd file in bbbike: Zus‰tzlich zeichnen > Straﬂen-Layer zeichnen
+=item * Load the bbd file in bbbike: B<Kartenebenen> E<gt>
+B<Zus‰tzlich zeichnen> E<gt> B<Straﬂen-Layer zeichnen>
 
 =item * If necessary, then adjust the scrollregion (in the same menu)
 
 =item * If the plugin was loaded and activated ("View Images mode"),
-then it is possible to click on the thumbnails to get the larger
-version
+then it is possible to click on the thumbnails to get additional
+information about the image (EXIF data) or the larger version
 
 =back
 
