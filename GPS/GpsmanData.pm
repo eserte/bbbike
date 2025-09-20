@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2005,2007,2010,2014,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2005,2007,2010,2014,2016,2018,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # read gpsman files
@@ -592,6 +591,14 @@ sub parse_group_line {
     # nothing..., return empty list
 }
 
+sub _warnings_accumulator {
+    my $self = shift;
+    sub {
+        my $msg = shift;
+        $self->{_Warnings}{$msg}++;
+    };
+}
+
 my $current_track_name; # to be used in track segments
 sub parse {
     my($self, $buf, %args) = @_;
@@ -600,6 +607,7 @@ sub parse {
     if (keys %args) {
 	die "Unhandled arguments: " . join " ", %args;
     }
+
     my $lineinfo = $self->LineInfo;
     my $type = TYPE_UNKNOWN;
     my $parse_method;
@@ -614,6 +622,10 @@ sub parse {
 	);
 
     my @data;
+
+    $self->{_Warnings} = {};
+    { # begin warnings accumulator
+    local $SIG{__WARN__} = $self->_warnings_accumulator;
 
     while($i <= $#lines) {
 	local $_ = $lines[$i];
@@ -712,6 +724,16 @@ sub parse {
 	}
     } continue {
 	$i++;
+    }
+    } # end warnings accumulator
+
+    if (%{ $self->{_Warnings} }) {
+	my $warnings = $self->{_Warnings};
+	my $warn_msg = "Following warnings were seen:\n";
+        for my $msg (sort keys %$warnings) {
+            $warn_msg .= $warnings->{$msg} . "x $msg\n";
+        }
+	warn $warn_msg;
     }
 
     if ($type == TYPE_WAYPOINT) {
