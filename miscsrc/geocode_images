@@ -13,6 +13,7 @@ our $VERSION = 1.43;
 use Cwd qw(realpath);
 use File::Spec;
 use File::Basename;
+use JSON::PP qw(decode_json);
 use Getopt::Long;
 use Image::ExifTool qw(ImageInfo);
 eval 'use Digest::MD5 qw(md5_hex);';
@@ -195,6 +196,16 @@ if ($date_index_file) {
     
 }
 
+sub _get_utc_iso_date {
+    my($y,$m,$d,$H,$M,$S, $offset) = @_;
+    require DateTime;
+    my $dt = DateTime->new(year => $y, month => $m, day => $d,
+			   hour => $H, minute => $M, second => $S,
+			   time_zone => 'UTC');
+    $dt->set_time_zone($offset);
+    $dt->strftime("%Y:%m:%d %H:%M:%S");
+}
+
 sub get_image_location {
     my($file, %opts) = @_;
     my $do_interpolate = delete $opts{interpolate};
@@ -263,12 +274,7 @@ sub get_image_location {
 		    eval {
 			if (my($y,$m,$d) = $exif->{GPSDateStamp} =~ m{^(\d{4}):(\d{2}):(\d{2})$}) {
 			    if (my($H,$M,$S) = $exif->{GPSDateTime} =~ m{^(\d{2}):(\d{2}):(\d{2})}) {
-				require DateTime;
-				my $dt = DateTime->new(year => $y, month => $m, day => $d,
-						       hour => $H, minute => $M, second => $S,
-						       time_zone => 'UTC');
-				$dt->set_time_zone($exif->{OffsetTime});
-				$iso_date = $dt->strftime("%Y:%m:%d %H:%M:%S");
+				$iso_date = _get_utc_iso_date($y,$m,$d,$H,$M,$S,$exif->{OffsetTime});
 			    } else {
 				die "Cannot parse GPSDateTime '$exif->{GPSDateTime}'";
 			    }
@@ -295,7 +301,30 @@ sub get_image_location {
 		return $ret;
 	    }
 
-	    my $date = $exif->{DateTimeOriginal} || $exif->{CreateDate};
+	    my $date;
+	    {
+		# Special handling for images taken with Mapillary
+		# App: unlike the normal iPhone camera App,
+		# DateTimeOriginal is in UTC, not local time.
+		# Therefore check the ImageDescription json structure
+		# for fields MAPGpsTime and MAPLocalTimeZone to get
+		# the real local time.
+		my $image_struct_desc = eval {
+		    decode_json $exif->{ImageDescription}
+		};
+		if ($image_struct_desc && $image_struct_desc->{MAPGpsTime} && $image_struct_desc->{MAPGpsTime} =~ m{^(\d{4})_(\d{2})_(\d{2})_(\d{2})_(\d{2})_(\d{2})}) {
+		    my($y,$m,$d,$H,$M,$S) = ($1,$2,$3,$4,$5,$6);
+		    if ($image_struct_desc->{MAPLocalTimeZone} =~ /\boffset\s+(-?\d+)\b/) {
+			my $offset_hm = sprintf "%+03d:%02d", $1 / 3600, abs($1) % 3600;
+			$date = _get_utc_iso_date($y,$m,$d,$H,$M,$S,$offset_hm);
+		    } else {
+			warn "WARN: $file: Got MAPGpsTime, but cannot parse MAPLocalTimeZone (" . ($image_struct_desc->{MAPLocalTimeZone} || "<undef>") . "), fallback to normal DateTimeOriginal etc. parsing\n";
+		    }
+		}
+	    }
+	    if (!$date) {
+		$date = $exif->{DateTimeOriginal} || $exif->{CreateDate};
+	    }
 	    if (defined $date && $date =~ /^(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})/) {
 		($y,$m,$d,$H,$M,$S) = ($1,$2,$3,$4,$5,$6);
 	    }
