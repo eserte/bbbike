@@ -2206,9 +2206,9 @@ Naglerstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13575,10963 13496,
 unbequemes Abbiegen	3nocross::ignrte 13596,10722 13633,10705 13678,10685 13700,10676 13779,10642
 Stralauer Allee -> Lehmbruckstr.: unbequemes Abbiegen	3::igndisp 13633,10705 13678,10685 13690,10715
 Lehmbruckstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13690,10715 13678,10685 13700,10676
-unbequem passierbare Straße	3nocross::ignrte 14218,10430 14405,10340 14558,10264
-Stralauer Allee -> Bödikerstr.: unbequem passierbare Straße	3::igndisp 14218,10430 14405,10340 14447,10491
-Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3::igndisp 14447,10491 14405,10340 14558,10264
+Stralauer Allee: unbequem passierbare Straße	3nocross::ignrte 14218,10430 14405,10340 14558,10264
+Stralauer Allee	1::igndisp 14218,10430 14405,10340 14558,10264
+Stralauer Allee	1::igndisp 14558,10264 14404,10336 14218,10430
 Mittelstreifen	3nocross::ignrte 11221,12250 11300,12241 11347,12223
 Stralauer Str. -> Dircksenstr.: Mittelstreifen	3::igndisp 11221,12250 11300,12241 11273,12301
 Dircksenstr. -> Stralauer Str.: Mittelstreifen	3::igndisp 11273,12301 11300,12241 11347,12223
@@ -3549,6 +3549,8 @@ Drängelgitter	BNP:3:-218:trailer=10 7862,14546
 Drängelgitter	BNP:3:-108:trailer=10 8982,10510
 Drängelgitter	BNP:3:-96:trailer=10 9165,10530
 Schwingtor	BNP:5:-27:trailer=10 11543,20272
+Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:inwork 7697,14187 7781,14238 7802,14250
+Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:inwork 7757,14318 7735,14305 7652,14257
 (an den Gebäuden der Deutschen Rentenversicherung): wegen Hochbauarbeiten gesperrt	2::inwork 15322,11335 15273,11350 15168,11327 15058,11250
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590

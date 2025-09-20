@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-09-16
+#: last_checked: 2025-09-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -126,7 +126,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-09-13
+#: last_checked: 2025-09-20
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -298,7 +298,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 # REMOVED (hier gar kein Durchgang) --- (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14116,10149 14126,10176
 # 
-# REMOVED (passierbar) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023) --- #: osm_watch: way id="44807035" version="12" --- #: osm_watch: way id="26285705" version="8" --- #: osm_watch: way id="69166216" version="10" --- #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023) --- #: last_checked: 2021-08-19 (osm) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-12-31 vvv --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448 --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14169,9525 14089,9610 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED (passierbar) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023) --- #: osm_watch: way id="44807035" version="12" --- #: osm_watch: way id="26285705" version="8" --- #: osm_watch: way id="69166216" version="10" --- #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023) --- #: last_checked: 2021-08-19 (osm) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-12-31 vvv --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14257,9432 14242,9448 --- Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14169,9525 14089,9610 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (weitgehend offen) --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/in-der-jordanstrasse-fallen-monatelang-parkplaetze-weg_a206134 --- # REMOVED --- #: last_checked: 2019-03-06 (indirekt, Sackgassenschild an der Jordanstr.) --- #: last_checked: 2019-03-20 --- #: check_frequency: 14d --- Lohmühlenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13251,9829 13302,9894 13311,9905
 # REMOVED (existiert nicht mehr) --- #: XXX_prog: BS (ansonsten entfernen) --- #: next_check_id: DIESEL-2019 --- #: last_checked: 2025-01-27 --- #: check_frequency: 60d --- (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # REMOVED (offen) --- #: next_check_id: WASSERSTADTSPINDLERSFELD-2019 --- #: XXX Fahrbahn ist nur im westlichen Abschnitt freigegeben (Stand April 2021) --- #: osm_watch: way id="719023968" version="6" --- #: last_checked: 2021-04-24 --- #: check_frequency: 60d --- Henriette-Lustig-Str.: nur der sehr enge Gehweg sowie 50m der Fahrbahn sind freigegeben	q4::inwork 21476,5048 21611,5119
@@ -980,8 +980,8 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2025-06-26 (architektur-urbanistik)
-#: check_frequency: 90d
+#: last_checked: 2025-09-01 (daf)
+#: check_frequency: 45d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
 # REMOVED (Baustelle aufgehoben, Einfahrt-verboten-Schilder sind noch provisorisch) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews?date=20220830 --- #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf --- #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?) --- #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025) (bis 22.04.2025 + weitere Arbeiten) (inaktiv) --- #: osm_watch: way id="640465875" version="15" --- #: XXX Die Einfahrt-verboten-Schilder sind temporär, b --- #: last_checked: 2025-07-11 --- #: check_frequency: 30d --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) --- # REMOVED --- #: next_check: 2025-04-22 (VIZ-Verkehrsmeldung) --- Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -1060,7 +1060,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-20
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1198,16 +1198,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Prenzlauer Berg ###
 # 
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/scale-b%C3%BCroneubau-storkower-stra%C3%9Fe-142-146.864/page-4#post-24657
-# REMOVED (ja) --- #: XXX wird sich auch die Qualität der Fahrbahn verbessern?
-#: osm_watch: way id="1184177622" version="3"
-#: osm_watch: way id="804682311" version="4"
-#: osm_watch: note 4734732 6
-#: priority: #C
-#: last_checked: 2025-08-21 (architektur-urbanistik)
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 60d
-Storkower Str. [Gewerbegebiet]: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg passierbar	q4::inwork 13736,14192 13636,14130
+# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/scale-b%C3%BCroneubau-storkower-stra%C3%9Fe-142-146.864/page-4#post-24657 --- # REMOVED (ja) --- #: XXX wird sich auch die Qualität der Fahrbahn verbessern? --- #: osm_watch: way id="1184177622" version="3" --- #: osm_watch: way id="804682311" version="4" --- #: osm_watch: note 4734732 6 --- #: priority: #C --- #: last_checked: 2025-08-21 (architektur-urbanistik) --- #: check_frequency: 30d --- # REMOVED --- #: check_frequency: 60d --- Storkower Str. [Gewerbegebiet]: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg passierbar	q4::inwork 13736,14192 13636,14130
 # REMOVED (hier offen) --- Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13636,14130 13707,14021
 # 
 # REMOVED (Hochbauarbeiten dauern noch an, aber die Sperrung wurde aufgehoben; Nachtrag: 2025-07-03: wieder Sperrung, aber auf eine Reaktivierung erstmal verzichtet) --- #: by: https://www.deutsches-architekturforum.de/thread/11177-entwicklungsgebiet-ernst-th%C3%A4lmann-park-prenzlauer-berg/?postID=762233#post762233
@@ -1417,7 +1408,10 @@ Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14488,9848 1
 (Uferweg - Puschkinallee): Fußgänger	q2 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fußgänger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fußgänger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
-Treptower Park: einige Fußgänger	q1+ 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
+Treptower Park: einige Fußgänger	q1+ 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916 15223,8893
+Treptower Park: einige Fußgänger	q1+ 15505,8829 15468,8806 15413,8785 15343,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
+Treptower Park: einige Fußgänger	q1+ 14918,8813 14883,8823 14852,8799
+Treptower Park: einige Fußgänger	q1+ 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15214,9090 15183,9186
 Treptower Park: einige Fußgänger	q1 14588,9473 14556,9581
 Treptower Park: einige Fußgänger	q1 14719,9419 14774,9437 14809,9466
 Treptower Park: einige Fußgänger, enger Weg	q2+ 14889,9381 14824,9390
@@ -1433,6 +1427,8 @@ Treptower Park: einige Fußgänger	q1 14719,9419 14635,9441
 Treptower Park: einige Fußgänger	q1 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
 Treptower Park: einige Fußgänger	q1 14398,9373 14485,9271 14531,9244
 Treptower Park: einige Fußgänger	q1 14705,9034 14855,9046 14947,8993 14980,8940
+Treptower Park: einige Fußgänger	q1+ 15297,8921 15213,8977 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
+Treptower Park: einige Fußgänger	q1+ 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
 Görlitzer Park: Fußgänger	q2 12671,10042 12681,10047 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Fußgänger	q2 13141,9911 12983,10000 12866,10064 12802,10097
@@ -2081,7 +2077,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: by: https://www.nd-aktuell.de/artikel/1187963.bvg-oepnv-in-berlin-tram-in-der-investitionsfalle.html (2028/2029?)
 #: osm_watch: way id="223184082" version="8"
-#: last_checked: 2025-06-09
+#: last_checked: 2025-09-20
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -2315,6 +2311,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: by: https://entwicklungsstadt.de/neugestaltung-am-nollendorfplatz-buerogebaeude-entsteht-neben-metropol-theater/ (bis Mitte 2027)
 #: by: https://www.no6.berlin/
 #: by: https://www.no6.berlin/nolle-6 (Fertigstellung Q2/2027)
+#: by: https://entwicklungsstadt.de/neugestaltung-am-nollendorfplatz-bauarbeiten-am-metropol-theater-laufen/
 #: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; mittlerweile bis Halteverbotsschilder bis 15.12.2025; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch: note 4506575 2
@@ -2385,7 +2382,7 @@ Falkstr.: Fußgänger	q1 12179,7979 12186,7952 12195,7916 12216,7838 12220,7822
 Carl-Herz-Ufer: Fußgänger	q1 10066,10071 10168,10085
 #: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer, siehe auch temp_blockings-Eintrag
 #: historical_note: früher offiziell ein gemeinsamer Geh- und Radweg
-Am Landwehrkanal: Fußgänger	q2 10069,10151 10158,10117 10168,10085
+Am Landwehrkanal: Fußgänger	q2 10069,10151 10196,10111 10218,10085
 Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 23225,11649 23032,11729
 #: note: nur ein Grünanlagenschild ohne Zusatzschild zur Radfahrerbenutzung, vom Charakter her ähnlich wie die beiden anderen Abschnitte
 Münsterberger Weg: Grünanlage, einige Fußgänger	q2+ 23032,11729 22886,11776
@@ -3628,7 +3625,7 @@ Lübbener Str.: Fußgänger	q3 12729,10515 12731,10547
 Helsingforser Str.: einige Fußgänger	q1 13496,11384 13427,11431
 #: note: gemeinsamer Rad- und Gehweg
 Karl-Lade-Str.: Fußgänger	q1 14821,13674 14987,13621
-#: note: offiziell nur für Fußgänger
+#: note: Richtung Osten existiert ein Gehweg-Schild, Richtung Westen keine Ausschilderung
 Karl-Lade-Str.: Fußgänger	q2 14987,13621 15040,13602
 #: XXX_prog BS zu beiden Seiten, ansonsten q1 oder q2 wegen Fußgänger
 #: note: mittlerweile wurden auf der östlichen Seite mit etwas Asphalt provisorische Auffahrten gemacht

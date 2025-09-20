@@ -2530,7 +2530,11 @@ Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 199
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13633,10705 13678,10685 13700,10676 13779,10642
-Stralauer Allee: unbequem passierbare Straße	3nocross 14218,10430 14405,10340 14558,10264
+# 
+Stralauer Allee: unbequem passierbare Straße	3nocross::ignrte 14218,10430 14405,10340 14558,10264
+Stralauer Allee	1::igndisp 14218,10430 14405,10340 14558,10264
+Stralauer Allee	1::igndisp 14558,10264 14404,10336 14218,10430
+# 
 Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11347,12223
 Sonnenallee: Mittelstreifen	3nocross 14379,7372 14430,7348 14530,7301
 Sonnenallee: Mittelstreifen	3nocross 12152,9015 12078,9055 12012,9092
@@ -4003,6 +4007,20 @@ Schwingtor	BNP:5::trailer=10 11543,20272
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=784716#post784716
+#: osm_watch[closed]: note 4940349 2
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
+#: last_checked: 2025-09-20 (daf) vvv
+#: check_frequency: 90d vvv
+#: osm_watch: way id="752856111" version="14"
+Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7697,14187 7781,14238 7802,14250
+#: osm_watch: way id="237716438" version="26"
+#: note: eigentlich durchgängig, aber Radfahrer können wohl auf der Uferpromenade weiterhin nach Norden fahren
+Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305 7652,14257
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+# 
 #: by: https://www.reo.berlin/
 #: last_checked: 2025-09-16
 #: check_frequency: 180d
@@ -4065,7 +4083,7 @@ neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 1677
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026) (inaktiv)
 #: osm_watch: way id="1087144824" version="7"
-#: last_checked: 2025-05-24 (osm-Edit)
+#: last_checked: 2025-05-30 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
@@ -4073,7 +4091,9 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
-#: last_checked: 2025-09-19
+#: osm_watch: way id="394677970" version="9"
+#: osm_watch: way id="656149821" version="4"
+#: last_checked: 2025-09-20
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4519,7 +4539,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-09-19 vvv
+#: last_checked: 2025-09-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5007,7 +5027,7 @@ Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-09-14 vvv
+#: last_checked: 2025-09-20 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5209,7 +5229,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://be.beteiligung.diplanung.de/verfahren/molkenmarkt/public/detail
 #: by: https://entwicklungsstadt.de/altstadt-oder-zukunftsquartier-meinungen-zum-molkenmarkt-gehen-auseinander/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2025-09-18
+#: last_checked: 2025-09-20
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5217,7 +5237,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-09-18
+#: last_checked: 2025-09-20
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

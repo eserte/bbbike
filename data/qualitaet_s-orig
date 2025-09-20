@@ -198,7 +198,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2025-09-06
+#: last_checked: 2025-09-20
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -210,7 +210,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2025-09-06 vvv
+#: last_checked: 2025-09-20 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -353,7 +353,7 @@ Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15660,11695 15639,11653 15572,11533 1
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15476,11341 15497,11381
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0- 15639,11653 15489,11735 15413,11690
 #: note: einige Gullydeckel deutlich abgesenkt, können aber umfahren werden
-Buchberger Str.: Beton	Q0- 15497,11381 15555,11351 15668,11299 15730,11279 15829,11282 15936,11314 16119,11435 16242,11533 16368,11912
+Buchberger Str.: Beton, abgesackte Gullydeckel	Q0- 15497,11381 15555,11351 15668,11299 15730,11279 15829,11282 15936,11314 16119,11435 16242,11533 16368,11912
 # REMOVED (nach den Bauarbeiten Richtung Süden besser) --- #: XXX Bauarbeiten in Gange, danach vielleicht Q0? --- #: last_checked: 2013-07-14 --- #: next_check: 2013-08-05
 # REMOVED (ist vermutlich besser) --- Buchberger Str.: teilweise kleinere Schäden an den Betonplatten	Q1+; 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
@@ -1112,11 +1112,11 @@ Carl-Herz-Ufer: Kopfsteinpflaster	Q2 10627,9912 10602,9957 10500,10081
 #: note: Kategorisierung ist ein Kompromiss zwischen dem Kopfsteinpflaster (Q2 bis Q2+) und der Sitte, auf dem Uferweg zu fahren (Q0-)
 # REMOVED --- #: XXX Uferweg wird gerade neu gemacht und ist gesperrt; laut Aushang bis August 2023, danach eine Oberfläche ähnlich wie in der Grimmpromenade --- #: last_checked: 2023-07-17 --- #: check_frequency: 30d --- #: next_check: 2023-08-31
 #: note: Uferweg: kein Asphalt
-Carl-Herz-Ufer: Fahrbahn Kopfsteinpflaster, Uferweg mit relativ glatter Oberfläche	Q1 10168,10085 10313,10084 10430,10081 10500,10081
+Carl-Herz-Ufer: Fahrbahn Kopfsteinpflaster, Uferweg mit relativ glatter Oberfläche	Q1 10168,10085 10218,10085 10313,10084 10430,10081 10500,10081
 #: note: kein Asphalt
 Johanniterstr. - Carl-Herz-Ufer: Weg mit relativ glatter Oberfläche	Q0- 10066,10071 10168,10085
 #: note: kein Asphalt
-Brachvogelstr. - Carl-Herz-Ufer: Weg mit relativ glatter Oberfläche	Q0- 10069,10151 10158,10117 10168,10085
+Brachvogelstr. - Carl-Herz-Ufer: Weg mit relativ glatter Oberfläche	Q0- 10069,10151 10196,10111 10218,10085
 Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4745&options=4 --- #: XXX Ist eine Verbesserung in Zukunft in Sicht? --- #: last_checked: 2013-06-27 --- #: next_check: 2013-08-01
 Zillestr.: Asphalt	Q0 3268,11847 3117,11852
@@ -1802,7 +1802,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblöcken, u.a. Bötzow-Kiez)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/kiezblocks-in-pruefung-winsviertel-boetzowkiez-und-gruene-stadt_a423747
 #: osm_watch: way id="4615063" version="39"
-#: last_checked: 2025-09-18
+#: last_checked: 2025-09-20
 #: check_frequency: 120d
 # REMOVED (Eintrag wurde entfernt) --- #: next_check: 2025-12-31 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -2070,13 +2070,15 @@ Treptower Park: Asphalt	Q0 15527,9096 15623,9028
 Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934
 Treptower Park: wassergebundene Decke	Q1 14588,9473 14556,9581
-Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
+#: historical_note: früher (bis Sommer 2025): Schotterweg, Q2
+Treptower Park: wassergebundene Decke	Q1 14257,9432 14286,9457 14322,9526
 Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674
 Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14577,9641
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
 Treptower Park: Verbundsteinpflaster	Q1 14448,9922 14455,9892 14467,9887
 # REMOVED --- #: osm_watch: way id="29547073" version="11" --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1243634.php (wassergebundene Decke)--- #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/erneuerte-wege-im-treptower-park_a357791 --- #: XXX Qualität prüfen! --- #: last_checked: 2022-08-24 --- #: next_check: 2022-09-12
 Treptower Park: wassergebundene Decke	Q1 14705,9034 14855,9046 14947,8993 14980,8940
+Treptower Park: wassergebundene Decke	Q1 15297,8921 15213,8977 15190,9027
 Am Rosengarten: Parkweg	Q1 14909,9649 14867,9573 14837,9517 14809,9466
 Lichtensteinallee: Kleinsteinpflaster	Q1 6378,11553 6337,11501
 Lichtensteinallee: wassergebundene Decke, Schotter	Q1- 6337,11501 6289,11440
@@ -2902,13 +2904,14 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 (Am Städtischen Zentralfriedhof): asphaltiert	Q0 17790,12255 17764,12238 17540,12222
 # REMOVED (weitgehend fertiggestellt, nur ein paar Meter an den Anschlüssen fehlen noch) --- #: XXX wird hier auch asphaltiert werden? --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php ("Vorplatz Zentralfriedhof, Asphaltierung Fahrradspur", "Planung") --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.842152.php ("bis Mitte November 2019") --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bezirksamt-laesst-am-vorplatz-des-zentralfriedhofs-spuren-fuer-radler-bauen_a236194 (bis Mitte November 2019) --- #: osm_watch: way id="70668204" version="9" --- #: last_checked: 2019-11-16 (fast fertig) --- #: check_frequency: 7d
 #: by: https://www.nachhaltige-erneuerung.berlin.de/frankfurter-allee-nord/umgestaltung-vorplatz-zentralfriedhof-friedrichsfelde (Realisierung bis 2025/2026)
-#: osm_watch: note 4294376 4
+#: osm_watch: note 4294376 5
 #: osm_watch: way id="1025072174" version="3"
-#: last_checked: 2025-08-23
-#: check_frequency: 60d
-#: next_check: 2025-12-19 (Halteverbotschilder)
-#: XXX wiederherstellen: (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240 17471,12243
-(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster (Asphaltstreifen wegen Bauarbeiten nicht befahrbar)	Q2 17540,12222 17485,12240 17471,12243
+#: last_checked: 2025-09-20
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2025-09-20 (Halteverbotschilder)
+#: XXX wiederherstellen: (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240
+(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster, Schotter (Asphaltstreifen wegen Bauarbeiten nicht befahrbar)	Q2 17540,12222 17485,12240
+(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphalt	Q0 17485,12240 17471,12243
 Gudrunstr.: Asphalt	Q0 17471,12243 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
 # REMOVED (neu asphaltiert) --- #: XXX eventuell wurde hier neu asphaltiert, prüfen! --- Marzahner Chaussee (bis zur Kurve): mäßiger Asphalt	Q1; 19173,13478 19194,13272
 (Eichhörnchensteig - Wildpfad): enger Waldpfad	Q2 1449,7519 1485,7651 1509,7700
@@ -4610,7 +4613,7 @@ Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27863,943 27810,987 27775,1016 27568,1188
 Plutoweg: Asphalt	Q0 31082,3366 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
 #: historical_note: früher (vor den Bauarbeiten 2025): Asphalt, Q0
-Treptower Park: Asphalt mit zahlreichen fehlenden Stellen	Q1 14318,9688 14316,9542 14347,9452 14398,9373 14382,9299
+Treptower Park: Asphalt mit zahlreichen fehlenden Stellen	Q1 14318,9688 14316,9542 14322,9526 14347,9452 14398,9373 14382,9299
 Treptower Park: wassergebundene Decke	Q1 14398,9373 14485,9271 14531,9244
 #: historical_note: bis Frühjahr 2025: Asphalt, einige Wurzelschäden, Q1+
 Treptower Park: wassergebundene Decke	Q1 14316,9542 14384,9565 14478,9545
@@ -4624,7 +4627,8 @@ Treptower Park: Asphalt	Q0 15190,9027 15214,9090 15183,9186
 Treptower Park: wassergebundene Decke	Q1+ 14889,9381 15003,9337 15163,9200
 Treptower Park: Kleinsteinpflaster	Q1- 15163,9200 15183,9186 15213,9166
 Treptower Park: wassergebundene Decke	Q1+ 15213,9166 15275,9140 15359,9131 15407,9151
-(Neue Krugallee/Bulgarische Str. - Karpfenteich): Schotterweg	Q2+ 15558,8820 15439,8839 15297,8921 15245,8916
+#: historical_note: bis 2025: Schotterweg, Q2+
+(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916
 (Neue Krugallee/Bulgarische Str. - Karpfenteich): Asphalt	Q0 15245,8916 15223,8893
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6313,8254 6385,8274 6459,8281 6552,8281
 Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3569,11473 3554,11617
@@ -10061,12 +10065,13 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307
 (Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8011,10085 8023,10106 8074,10292 8058,10306
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
 (Treptower Park): Asphalt	Q0 15190,9027 15181,8967 15159,8934
-(Treptower Park): wassergebundene Decke	Q1- 15190,9027 15154,9106 15025,9171 14955,9294
+#: historical_note: früher (bis Mitte 2025): Q1-
+(Treptower Park): wassergebundene Decke	Q1 15190,9027 15154,9106 15025,9171 14955,9294
 #: historical_note: früher (bis Anfang 2025) Asphalt, Q0
 (Treptower Park): wassergebundene Decke	Q1 14955,9294 14898,9364 14889,9381 14879,9433
-(Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15335,8714 15378,8668
+(Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15343,8714 15378,8668
 # REMOVED --- #: next_check_id: TREPTOWERPARK-2018 --- #: last_checked: 2019-10-19 vvv --- früher Asphalt Q0-
-(Treptower Park): wassergebundene Decke	Q1 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
+(Treptower Park): wassergebundene Decke	Q1 15505,8829 15468,8806 15413,8785 15343,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park - Karpfenteichstr.): wassergebundene Decke	Q1 14918,8813 14883,8823 14852,8799
 (Treptower Park): Asphalt	Q0 15181,8967 15245,8916
 Florentinestr.: Asphalt	Q0 16633,20174 16728,20189
@@ -11693,7 +11698,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2025-09-04 vvv
+#: last_checked: 2025-09-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -13992,6 +13997,9 @@ Prenzlauer Promenade [Nebenfahrbahn]: mäßiger Beton	Q1- 11891,17240 11951,16914
 Prenzlauer Promenade [Nebenfahrbahn]: Asphalt	Q0 11951,16914 11993,16862
 # 
 Alte Potsdamer Str.: Betonpflaster	Q0- 8280,11296 8318,11324 8375,11368 8389,11378 8481,11447 8479,11493
+# 
+Marlene-Dietrich-Platz: Kleinsteinpflaster	Q1- 8253,11306 8280,11296
+# 
 # REMOVED (ersetzte) --- Alte Potsdamer Str.: Kleinsteinpflaster	Q1 8389,11378 8375,11368
 # 
 #: by: https://www.infravelo.de/projekt/ollenhauerstrasse/ (1. Quartal 2025 - 4. Quartal 2028) (1. Quartal 2027 - 4. Quartal 2031)
@@ -14147,7 +14155,7 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-20
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018

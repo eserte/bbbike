@@ -1970,18 +1970,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin?date=20241009
-#: by: https://www.angermuende.de/sperrungen-bahnuebergang/ (Sperrung 2024/2025: Bahnübergang bleibt für Radfahrer passierbar)
-	2::inwork 48237,70892 48162,70928 48093,70968
-',
-         'from' => 1756677600,
-         'id' => 1977,
-         'prewarn_days' => 7,
-         'text' => 'Kerkow - Görlsdorf: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, nächster Termin 8.9.2025 bis 19.9.2025',
-         'type' => 'gesperrt',
-         'until' => 1758319199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3607,15 +3596,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q4 14531,9244 14485,9271 14398,9373
 	q4 14531,9244 14612,9190 14628,9158 14644,9130 14705,9034
 #: note: im südwestlichen Teil des Parks wurden die letzten Radfahren-verboten-Zusatzschilder 2023/2024 montiert
-	q4 15378,8668 15335,8714 15298,8781 15235,8841 15223,8893 15159,8934
-	q4 15558,8820 15439,8839 15297,8921 15245,8916 15181,8967
+	q4 15378,8668 15343,8714 15298,8781 15235,8841 15223,8893 15159,8934
+	q4 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916 15181,8967
 	q4 15245,8916 15223,8893
 	q4 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
 	q4 15183,9186 15214,9090 15190,9027
 	q4 14852,8799 14883,8823 14918,8813
 	q4 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
 	q4 14705,9034 14855,9046 14947,8993 14980,8940
-	q4 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+	q4 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15343,8714 15413,8785 15468,8806 15505,8829
+	q4 15297,8921 15213,8977 15190,9027
 ',
          'from' => undef,
          'id' => 2953,
@@ -3701,7 +3691,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-09-18
+#: last_checked: 2025-09-20
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3808,7 +3798,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 # REMOVED (fertig) --- #: next_check_id: TREPTOWERPARK-2018 --- #: XXX wann sind die Bauarbeiten fertig? --- #: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen --- #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet --- #: osm_watch: way id="26608603" version="9" --- #: last_checked: 2019-11-02 vvv --- #: check_frequency: 7d vvv
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14980,8940
-# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15343,8714 15413,8785 15468,8806 15505,8829
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14918,8813 14883,8823 14852,8799
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14980,8940 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
@@ -3825,17 +3815,18 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-09-14 vvv
+#: last_checked: 2025-09-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
-entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
+# REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
 # REMOVED (hier mittlerweile wieder offen) --- Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
-Bulgarische Str. - Karpfenteich	2::inwork 15439,8839 15297,8921 15245,8916
+Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916
 Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,9542 14384,9565 14478,9545
-#: XXX hier wird vermutlich eine wassergebundene Decke entstehen
-Treptower Park - Am Treptower Park	2::inwork 14316,9542 14242,9448
+# REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14322,9526 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14347,9452
+Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14322,9526 14347,9452
+	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
+	2::inwork 15181,8967 15245,8916
 # REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5348,7 +5339,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: XXX Wie lange dauern die Bauarbeiten? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
 #: osm_watch: note 4806178 2
 #: also_indoor: traffic (G,ex-T)
-#: last_checked: 2025-08-19 (daf) vvv
+#: last_checked: 2025-09-20 vvv
 	q3::inwork 8343,11133 8289,11205
 	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
 	q3::inwork 8253,11306 8232,11414
@@ -5378,7 +5369,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"
 #: priority: #B
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-20
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (DB-Mail)
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -5722,10 +5713,10 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: osm_watch: way id="37861386" version="29"
+#: osm_watch: way id="37861386" version="30"
 #: osm_watch: way id="1231148375" version="7"
 #: priority: #B
-#: last_checked: 2025-09-12 (osm)
+#: last_checked: 2025-09-19 (osm)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-18 (nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -5872,7 +5863,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: note: neue Sperrung von 2025
 #: also_indoor: traffic (T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-09-17 vvv
+#: last_checked: 2025-09-20 vvv
 #: check_frequency: 14d (traffic) vvv
 Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 Virchowstr.	q2::inwork 12707,13706 12640,13814
@@ -7065,7 +7056,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=13055 (Einwohneranfrage zur Einbahnstraßenregelung)
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
 #: next_check: 2025-11-29 (VIZ-Verkehrsmeldung) vvv
-#: osm_watch: way id="82451158" version="14"
+#: osm_watch: way id="82451158" version="15"
 #: osm_watch: note 4444217 1
 Schildower Str. zwischen Elsestr. und Stadtgrenze	q4::inwork 4683,24275 4705,24284 4779,24321 4849,24335 4898,24351
 # REMOVED --- Schildower Str. zwischen Elsestr. und Gertrudstr.: nur die letzten 15-20m sind gesperrt	q3::inwork 4683,24275 4614,24233
@@ -7890,11 +7881,12 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
 #: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025) (inaktiv)
 #: source_id: LS/222-W/25/089 (bis 12.09.2025) (inaktiv) (bis 30.05.2026)
-	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
+# REMOVED (Storkow- Kolberg) ---	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
+Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
 ',
          'from' => 1741503600,
          'id' => 4273,
-         'text' => 'Storkow - Kolberg: Bauarbeiten, Sperrung, möglicherweise bis Mai 2026',
+         'text' => 'Kolberger Dorfstraße: Bauarbeiten, Sperrung, möglicherweise bis Mai 2026',
          'type' => 'gesperrt',
          'until' => 1780153200
        },
@@ -7954,7 +7946,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-09-06
+#: last_checked: 2025-09-20
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -8190,6 +8182,7 @@ Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
        {
          'data' => '#: source_id: viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025)
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=782027#post782027
+#: by: https://entwicklungsstadt.de/mierendorffinsel-neuer-bauabschnitt-im-wohnquartier-hey-charlottenburg/ (Bauprojekt bis Mitte 2027)
 Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 ',
          'from' => 1746334800,
@@ -8405,7 +8398,7 @@ Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-09-07 (daf)
+#: last_checked: 2025-09-19 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -8640,7 +8633,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
        },
        {
          'data' => 'Johanniterstr./Brachvogelstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 10066,10071 10168,10085
-Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 10069,10151 10158,10117 10168,10085
+Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 10069,10151 10196,10111 10218,10085
 ',
          'from' => undef,
          'id' => 4395,
@@ -8774,7 +8767,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
        {
          'data' => '#: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-20
 #: check_frequency: 21d
 	2::inwork 17498,13015 17507,12781
 ',
@@ -8830,7 +8823,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: XXX Nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2025-08-25
+#: last_checked: 2025-09-20
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -8845,7 +8838,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'data' => '#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
 #: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
 #: also_indoor: traffic (G,T,H)
-#: last_checked: 2025-09-14 (traffic)
+#: last_checked: 2025-09-20
 #: check_frequency: 14d (traffic)
 	q3::inwork 10066,10071 9837,10117
 ',
@@ -8924,19 +8917,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (T[ungenau])
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: gesperrter Bereich etwa 150m lang
-#: last_checked: 2025-08-23
-	q4::inwork 17088,12506 17056,12304
-',
-         'from' => undef,
-         'id' => 4422,
-         'text' => 'Dietlindestr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/ginalien.bsky.social/post/3lxc3zodkrk2q
@@ -9220,6 +9201,17 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'from' => 1767999600,
          'id' => 4448,
          'text' => 'Südparkbrücke: Sperrung und Neubau, voraussichtlich von Mitte Januar 2026 bis Mitte 2026',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: BAB100-2022
+#: last_checked: 2025-09-20
+	q4::inwork 14641,10552 14608,10409 14558,10264
+',
+         'from' => undef,
+         'id' => 4449,
+         'text' => 'Markgrafendamm: zwischen Stralauer Allee/Alt-Stralau und Persiusstr. offiziell für Radfahrer verboten',
          'type' => 'gesperrt',
          'until' => undef
        }

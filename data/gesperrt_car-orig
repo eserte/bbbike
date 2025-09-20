@@ -3,6 +3,21 @@
 #:
 #: temporary vvv
 # 
+#: next_check_id: BAB100-2022
+#: by: https://www.berliner-zeitung.de/mensch-metropole/stau-vor-der-elsenbruecke-in-treptow-so-will-der-senat-das-chaos-an-der-a100-lindern-li.2355775
+#: by: https://www.tagesspiegel.de/berlin/a100-chaos-in-berlin-treptow-senat-ordnet-neue-verkehrsfuhrung-an-der-elsenbrucke-an-14306087.html
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1596919.php (kurzfristige Umsetzung)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lyk4bsgssc25
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597396.php
+#: by: https://entwicklungsstadt.de/staus-nach-a100-eroeffnung-neue-massnahmen-fuer-die-elsenstrasse/
+#: by: https://www.tagesspiegel.de/berlin/verkehrschaos-am-a100-abschnitt-neue-verkehrsfuhrung-an-der-berliner-elsenstrasse-wird-umgesetzt--busspur-bekommt-schutz-14318111.html
+#: by: https://www.morgenpost.de/berlin/article409965464/wie-der-senat-das-a100-chaos-in-den-griff-bekommen-will.html
+#: by: https://entwicklungsstadt.de/verkehrsdaten-elsenbruecke-durchschnittsgeschwindigkeit-sinkt-nach-a100-eroeffnung/
+#: priority: #D
+#: last_checked: 2025-09-20
+#: check_frequency: 90d
+Markgrafendamm -> Alt-Stralau: Sperrung der Linksabbiegespur	3 14608,10409 14558,10264 14619,10223
+# 
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9197 (Beschlussempfehlung)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1548659.php (zunächst bis Ende 2025)
@@ -48,8 +63,8 @@ Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (Beginn der Bauarbeiten)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20230703/
 #: also_indoor: traffic (G,B,W)
-#: osm_watch: way id="1223345278" version="7"
-#: osm_watch: way id="1262225305" version="4"
+#: osm_watch: way id="1223345278" version="8"
+#: osm_watch: way id="1262225305" version="5"
 #: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
 #: XXX Unterführung wird voraussichtlich im Sommer 2025 fertig sein
 #: XXX Eröffnung des Fußgängertunnels am 4.2.2025
@@ -98,7 +113,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-09-15
+#: last_checked: 2025-09-20
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -1043,7 +1058,7 @@ Europaplatz	1 8015,13303 7938,13302
 #: note: die Regelung für Radfahrer ist nicht ganz eindeutig --- teilweise gibt es explizit "Radfahrer frei"-Schilder, z.B. beim Abbiegen, teilweise fehlen sie
 Am Kupfergraben	1 9754,12775 9815,12705 9870,12657
 #: note: Radfahrer benutzen den asphaltierten Parkstreifen, der entgegen der Einbahnstraßenrichtung freigegeben ist
-Am Treptower Park	1 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14242,9448 14169,9525
+Am Treptower Park	1 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14257,9432 14169,9525
 Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912
 # REMOVED (spätestens seit 2025 ist das Linksabbiegen wieder erlaubt) --- Am Treptower Park - Elsenstr.	3 14169,9525 14149,9546 14089,9610 14060,9574 14020,9524 13973,9465
 Czeminskistr.	1 7600,8921 7563,8871
@@ -2335,7 +2350,7 @@ Ecksteinweg	1 17762,5408 17736,5441
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1503507.php (vor der Nelson-Mandela-Schule)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1592341.php (Bauarbeiten bis 29.8.2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/sicherer-schulweg-neue-einbahnstrasse-in-berlin-wilmersdorf-soll-kinder-schutzen-14247473.html
-#: osm_watch: note 4935336 2
-#: osm_watch: way id="4395632" version="26"
+#: osm_watch: note 4935336 3
+#: osm_watch: way id="4395632" version="27"
 Pfalzburger Str.	1 4858,9594 4875,9891
 # 
