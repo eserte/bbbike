@@ -28,7 +28,7 @@ use lib (
 use BBBikeTest qw(gpxlint_string eq_or_diff);
 use File::Temp qw(tempfile);
 
-plan tests => 72;
+plan tests => 74;
 
 use GPS::GpsmanData;
 
@@ -453,6 +453,25 @@ EOF
     $gps->parse($gpsman_sample_file);
     my @track = $gps->flat_track;
     is scalar @track, 2, 'Found two waypoints in track (waypoints ignored)';
+}
+
+{
+    # missing altitude
+    my $trk_sample_file = <<'EOF';
+!Format: DDD 1 WGS 84
+!Creation: yes
+
+!T:	TRACK
+	31-Dec-1989 01:00:00	N53.0945536138593	E12.8748931621168
+	31-Dec-1989 01:00:00	N53.0943054383567	E12.8761002946735
+EOF
+    my $gps = GPS::GpsmanMultiData->new;
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+    local $^W = 1;
+    $gps->parse($trk_sample_file);
+    like $warnings[0], qr{\Q2x Use of uninitialized value \E\$\Qf[4] in pattern match (m//) at \E}, 'expected accumulated warning';
+    is scalar(@warnings), 1, 'no other warnings';
 }
 
 sub wpts_to_string {
