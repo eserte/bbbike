@@ -192,7 +192,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-09-14 vvv
+#: last_checked: 2025-09-21 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4093,7 +4093,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="9"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-21
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4168,7 +4168,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-08-20 (mapillary)
+#: last_checked: 2025-09-21
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4363,7 +4363,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-09-05 vvv
+#: last_checked: 2025-09-20 (mapillary) vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-04-15 (Tsp) vvv
 #: osm_watch: way id="1199463691" version="6"
@@ -4531,7 +4531,7 @@ Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-09-19
+#: last_checked: 2025-09-21
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4577,7 +4577,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-21
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4750,7 +4750,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: last_checked: 2025-09-01
+#: last_checked: 2025-09-21
 #: check_frequency: 180d
 #: next_check: 2027-06-30
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
@@ -4829,20 +4829,20 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="16"
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-21
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="11"
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-21
 #: check_frequency: 90d
 An der Waldsiedlung: noch nicht fertig gebaut	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
 #: osm_watch: note 4522174 2
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-21
 #: check_frequency: 30d
-#: next_check: 2025-09-20 (entwicklungsstadt)
+# REMOVED --- #: next_check: 2025-09-20 (entwicklungsstadt)
 Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17810,8700 17851,8662
 # REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17668,8696 17648,8626 17628,8556
@@ -4941,7 +4941,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="5"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2025-09-02 (mapillary)
+#: last_checked: 2025-09-21
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (howoge website)
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16601,10650 16587,10613
@@ -5605,15 +5605,15 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: by: https://corporate.berlin-airport.de/de/real-estate/quartier-sxf-2-0/_jcr_content/root/responsivegrid/galleryteaser_copy_5/imagecarousel/galleryteasercarouse_1107974693.coreimg.jpeg/1748441611304/cobe-1.jpeg
 #: by: https://www.airliners.de/ber-entwickelt-gewerbegebiet-ehemaligem-terminal-5-gelaende/81314
 #: XXX möglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die Jürgen-Schumann-Allee durchgängig ist
-#: last_checked: 2025-06-22 (mapillary)
+#: last_checked: 2025-09-20 (mapillary)
 # REMOVED --- #: next_check: 2020-10-31
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 210d
 # REMOVED (entfernt) --- #: osm_watch: way id="127091100" version="14" brb
 # REMOVED (entfernt) --- #: osm_watch: way id="733975361" version="3" brb
-#: osm_watch: way id="161686079" version="9" brb
-#: osm_watch: way id="1202953901" version="2" brb
-#: osm_watch: way id="1202953902" version="2" brb
+#: osm_watch: way id="161686079" version="10" brb
+#: osm_watch: way id="1202953901" version="3" brb
+#: osm_watch: way id="1202953902" version="3" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
 # 
 # REMOVED (offen) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden") --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/muehlenbruecke-im-sommer-wieder-nutzbar_a197932 (im Sommer 2019 wieder offen) --- #: by: http://www.abendblatt-berlin.de/2019/01/25/bruecke-an-tegeler-muehle-bald-wieder-offen/ --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/humboldtbruecke-wird-saniert_a216268 (bis zum Sommer (2019) wieder passierbar) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-weiter-gesperrt_a219670 (Verzögerungen; Öffnung erst 2020?) --- #: by: https://www.morgenpost.de/bezirke/reinickendorf/article226296951/Bruecke-an-der-Muehle-in-Tegel-bleibt-gesperrt.html (Öffnung Frühjahr 2020?) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7692 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7684 --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-bleibt-weiter-gesperrt_a251584 (Sperrung mindestens bis Sommer 2020) --- #: by: https://leute.tagesspiegel.de/reinickendorf/macher/2020/07/15/131974/die-gesperrte-bruecke-zur-humboldt-insel/ (Neubau bis Dezember 2020) --- #: by: https://abendblatt-berlin.de/2020/12/08/berlin-tegel-baustart-fuer-fussgaengerbruecke-an-der-muehle/ (Baubeginn Ende November 2020, Fertigstellung "hoffentlich" im Frühjahr 2021) --- #: by: https://www.berliner-woche.de/tegel/c-bauen/endlich-bauarbeiten_a295949 (voraussichtlich bis Frühjahr 2021) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaenger-koennen-die-muehlenbruecke-wieder-passieren_a332261 --- # REMOVED (Alexandersteg, nicht gesperrt) --- #: osm_watch: way id="27178371" version="11" --- #: osm_watch: way id="23099023" version="13" --- #: osm_watch: way id="23099024" version="8" --- #: osm_watch: way id="103531998" version="9" --- #: last_checked: 2021-11-13 (osm) --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2021-03-15 --- # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 --- Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603

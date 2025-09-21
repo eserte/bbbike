@@ -22414,11 +22414,13 @@ EOF
 #      text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
 #      text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis voraussichtlich 15.11.2024 17:00',
 #      text  => 'Kiautschoustr.: Bauarbeiten an der Tegeler Str., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Kiautschoustr.: Bauarbeiten zwischen Tegeler Str. und Samoastr., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Kiautschoustr.: Bauarbeiten zwischen Tegeler Str. und Samoastr., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Tegeler Str.: Leitungsarbeiten zwischen Triftstr. und Sprengelstr., Fahrbahn gesperrt, außerdem Bauarbeiten in der Kiautschoustr. zwischen Tegeler Str. und Samoastr., voraussichtlich bis Anfang 2026',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
 # REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921 (neue Bauarbeiten 2025 in der Tegeler Str.)
 #: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
@@ -22427,6 +22429,8 @@ EOF
 # REMOVED --- Tegeler Str.	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
+#: next_check: 2025-09-22 (neue Bauarbeiten)
+Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-09-16 (traffic)
@@ -36385,7 +36389,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-09-13
+#: last_checked: 2025-09-20 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -40728,7 +40732,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-21
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -46648,7 +46652,7 @@ EOF
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
 #: also_indoor: traffic (G[zu lang],T,ex-H,ex-W[zu kurz])
-#: last_checked: 2025-09-19 (traffic)
+#: last_checked: 2025-09-20 (mapillary)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -47423,7 +47427,7 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,re-H)
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-21
 #: check_frequency: 10d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
@@ -47432,6 +47436,7 @@ EOF
 # REMOVED (nach hinten gewandert) --- #: note: Halteverbotsschilder bis 5.9.2025 ---	2::inwork 17777,9649 17920,9698
 #: note: Halteverbotsschilder 2.9.2025 bis 2.10.2025
 	2::inwork 17920,9698 18066,9770
+# (kann von bbbike nicht verarbeitet werden) --- Mellenseestr. [Wohngebiet]: Einbahnstraße temporär aufgehoben	1no 17838,9956 17868,9823 17920,9698
 EOF
      },
      { from  => undef,
@@ -47446,7 +47451,7 @@ EOF
 #: by: https://www.nalepaland.de/
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
-#: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17), aber nicht immer (gesehen 2024-11-16 Sat); das südliche Tor ist immer zu
+#: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17, 2025-09-01 Mon 12:13), aber nicht immer (gesehen 2024-11-16 Sat, 2025-09-21 Sun 10:05); das südliche Tor ist immer zu
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
 #: note: nördliches Tor offen, südliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25, 2025-03-24 17:32)
 #: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30)
@@ -47454,9 +47459,8 @@ EOF
 #: osm_watch: way id="275795707" version="4"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-09-01 vvv
+#: last_checked: 2025-09-21 vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: note: kann offen sein, aber nicht immer
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
 #: note: wieder dauerhaft (?) gesperrt -> siehe auch neuen gesperrt-orig-Eintrag
 Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
@@ -48920,7 +48924,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-09-12 (traffic)
+#: last_checked: 2025-09-21 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 EOF
@@ -49118,7 +49122,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,re-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-21
 #: check_frequency: 10d (traffic)
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -49290,7 +49294,8 @@ EOF
        text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025, evtl. wird die Sperrung verlängert',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: last_checked: 2025-09-14
+#: add_fragezeichen: Besteht die Sperrung noch immer?
+#: last_checked: 2025-09-21
 #: check_frequency: 60d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
@@ -49388,7 +49393,7 @@ EOF
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-21
 #: check_frequency: 30d
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -50123,8 +50128,27 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-21
 	q4::inwork 14641,10552 14608,10409 14558,10264
+EOF
+     },
+     { from  => 1758405600, # 2025-09-21 00:00
+       until => 1765839599, # 2025-12-15 23:59
+       text  => 'Herbertstr.: Anbindung Kolonnenstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.09.2025 bis Mitte Dezember 2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: HERBERT-2025
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
+	q4::inwork 7389,8837 7360,8918
+EOF
+     },
+     { from  => 1758405600, # 2025-09-21 00:00
+       until => 1760738400, # 2025-10-18 00:00
+       text  => 'Laehrstr.: Anbindung Teltower Damm wegen Bauarbeiten gesperrt, vom 22.09.2025 bis voraussichtlich 17.10.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
+	q4::inwork 1142,1350 1274,1376
 EOF
      },
     );
