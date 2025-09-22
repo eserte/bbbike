@@ -2390,36 +2390,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/ (geplant: 18.09.2021 - 19.09.2021)
-#: by: https://www.berliner-woche.de/rosenthal/c-kultur/feiern-mit-abstand-und-einschraenkungen_a321188
-#: by: https://dorf-rosenthal.de/programmheft
-#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/?date=20240814
-#: source_id: viz2021:13.379396,52.601479,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
-#: source_id: viz2021:13.377712,52.599818,19.09.2025,06:00 (bis 21.09.2025)
-#: source_id: viz2021:13.37865,52.60065,19.09.2025,06:00 (bis 21.09.2025)
-	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
-# REMOVED --- Hauptstr. 155 - 171	q4::temp 8568,21863 8556,21918 8400,22010
-',
-         'from' => 1758146400,
-         'id' => 2285,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019',
-         'text' => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße gesperrt zwischen Schönhauser Str. und An der Vogelweide, 19.09.2025 bis 21.09.2025',
-         'type' => 'handicap',
-         'until' => 1758491999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2600,73 +2571,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'type' => 'gesperrt',
          'until' => 1758749400
        },
-       {
-         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
-#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00 (inaktiv)
-#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30 (inaktiv)
-#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00 (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00 (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,20.09.2023,06:00 (bis 26.09.2023) (inaktiv)
-#: source_id: viz2021:13.372619,52.520149,22.09.2023,18:00 (bis 25.09.2023) (inaktiv)
-#: source_id: viz2021:13.375855,52.516152,23.09.2024,06:00 (bis 25.09.2024) (inaktiv)
-#: source_id: viz2021:13.371607,52.515899,25.09.2024,06:00 (bis 01.10.2024) (inaktiv)
-#: source_id: viz2021:13.36973,52.517661,26.09.2024,18:00 (bis 30.09.2024) (inaktiv)
-#: source_id: viz2021:13.354724,52.517098,26.09.2024,18:00 (bis 30.09.2024) (inaktiv)
-#: source_id: viz2021:13.36975,52.51584, (bis 23.09.2025)
-#: source_id: viz2021:13.37081,52.51779, (bis 22.09.2025)
-#: source_id: viz2021:13.38045,52.51808,18.09.2025,18:00 (bis 22.09.2025)
-#: source_id: viz2021:13.37737,52.51457,18.09.2025,18:00 (bis 22.09.2025)
-#: source_id: viz2021:13.36343,52.5176,19.09.2025,06:00 (bis 22.09.2025)
-# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
-	2::temp 8573,12325 8540,12420
-	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8119,12414 8068,12237 8055,12186
-	2::temp 8538,12245 8502,12226 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
-	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
-	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-	3 7429,12070 7383,12095 7288,12156
-	3 7288,12156 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201
-	3 7822,12201 7816,12150 7823,12120
-	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
-	2::temp 8207,12606 8206,12734 8206,12757
-	3 7945,12592 8122,12603 8120,12756
-	3 8120,12756 8122,12603 7945,12592
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
-	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775
-	2::temp 8189,11722 8221,11690
-	2::temp 8327,12174 8244,11878 8210,11775 8189,11722 8172,11679
-	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
-	2::temp 7823,12120 7832,12036 7822,11952 7793,11878
-	2::temp 7775,12114 7772,12040 7717,11918
-Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1757908800,
-         'id' => 2388,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              12,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich vom 15.09.2025 bis 22.09.2025',
-         'type' => 'gesperrt',
-         'until' => 1758513600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2802,6 +2707,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
          'data' => '# REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
 # REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921 (neue Bauarbeiten 2025 in der Tegeler Str.)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzflkiq3b224
 #: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
@@ -2810,17 +2716,21 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 # REMOVED --- Tegeler Str.	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
-#: next_check: 2025-09-22 (neue Bauarbeiten)
+#: also_indoor: traffic (G,H,A,W)
+#: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
+#: last_checked: 2025-09-22 (traffic)
+#: check_frequency: 30d
+#: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-16 (traffic)
+#: last_checked: 2025-09-22 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
          'id' => 2430,
-         'text' => 'Tegeler Str.: Leitungsarbeiten zwischen Triftstr. und Sprengelstr., Fahrbahn gesperrt, außerdem Bauarbeiten in der Kiautschoustr. zwischen Tegeler Str. und Samoastr., voraussichtlich bis Anfang 2026',
+         'text' => 'Tegeler Str.: Leitungsarbeiten zwischen Triftstr. und Sprengelstr., Fahrbahn gesperrt, außerdem Bauarbeiten in der Kiautschoustr. zwischen Tegeler Str. und Samoastr., voraussichtlich bis Mitte Januar 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3666,7 +3576,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-22
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4818,7 +4728,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
        {
          'data' => '#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mo, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert), 2024-04-23 (Di) 17:35 (Spalt, Mofa passt durch), 2024-08-18 (So) 13:20 (weiterhin 100cm breiter Spalt)
 #: osm_watch: node id="575826622" version="4" vvv
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-09-22 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -4852,7 +4762,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-09-10 vvv
+#: last_checked: 2025-09-21 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -6553,7 +6463,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: priority: #B vvv
 #: last_checked: 2025-07-19 (mapillary) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-09-29 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: note 4069677 11
 #: osm_watch[closed]: note 4115004 5
 #: osm_watch: note 4681980 2
@@ -6572,9 +6482,9 @@ nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719
 ',
          'from' => 1707890400,
          'id' => 4009,
-         'text' => 'Rathenower Str./Stendaler Str.: direkte Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, evtl. Umwege notwendig, voraussichtlich bis 23.09.2025 17:00',
+         'text' => 'Rathenower Str./Stendaler Str.: direkte Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, evtl. Umwege notwendig, voraussichtlich bis 29.09.2025 17:00',
          'type' => 'handicap',
-         'until' => 1758639600
+         'until' => 1759158000
        },
        undef,
        {
@@ -6863,7 +6773,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-09-18 vvv
+#: last_checked: 2025-09-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7427,7 +7337,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
 #: also_indoor: traffic (G[zu lang],T,ex-H,ex-W[zu kurz])
-#: last_checked: 2025-09-20 (mapillary)
+#: last_checked: 2025-09-21 (mapillary)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -7545,15 +7455,15 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
 #: by: https://entwicklungsstadt.de/baustart-in-tempelhof-neues-klinikgebaeude-fuer-das-st-joseph-krankenhaus/ (bis Ende 2028, Verzögerungen möglich)
-#: note: Gesperrter Bereich ca. 80m. Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
+#: note: Gesperrter Bereich ca. 80m, deshalb nur q3. Kann auch offen sein (vielleicht während der Arbeitszeiten; gesehen am 2025-09-22 Mon 17:48). Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
 #: also_indoor: traffic (ex-B,ex-T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-22
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
-	q4::inwork 8384,7915 8260,7911
+	q3::inwork 8384,7915 8260,7911
 ',
          'from' => undef,
          'id' => 4234,
@@ -7566,7 +7476,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: also_indoor: traffic (ex-G,T,B,A)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-11
+#: last_checked: 2025-09-22
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
@@ -8348,7 +8258,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-16 (traffic) vvv
+#: last_checked: 2025-09-22 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
@@ -8879,7 +8789,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-09-15
+#: last_checked: 2025-09-22
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -8928,20 +8838,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'until' => 1761951599
        },
        undef,
-       {
-         'data' => '#: next_check_id: ROSEGGER-2024
-#: osm_watch: note 4082669 4
-#: osm_watch: way id="33057862" version="21"
-#: note: die Barrieren können außerhalb der Arbeitszeiten weggeschoben sein, gesehen 2025-08-28 (Thu) 22:45
-#: last_checked: 2025-08-28
-	2::inwork 13150,7924 13187,7927 13236,7970
-',
-         'from' => undef,
-         'id' => 4428,
-         'text' => 'Gerlachsheimer Weg: Bauarbeiten, offiziell ist der Weg gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
@@ -9038,7 +8935,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        {
          'data' => '#: next_check_id: MELCHIOR-2025
 #: add_fragezeichen: Ist die Fahrbahn wieder offen?
-#: last_checked: 2025-09-16 (mapillary)
+#: last_checked: 2025-09-22
 #: check_frequency: 7d
 	q4::inwork 11917,11186 11726,11265
 ',
@@ -9053,7 +8950,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597306.php (Maßnahme bis Ende Oktober 2025)
 #: osm_watch: note 4959079 1
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2025-09-13
+#: last_checked: 2025-09-22
 #: check_frequency: 14d
 #: next_check: 2025-10-31 (Fahrrat-Protokoll)
 	q4::inwork 7790,9126 8014,9126 8053,9123 8081,9120 8180,9099
@@ -9070,7 +8967,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
 #: source_id: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum)
 #: source_id: viz2021:13.37918,52.48055, (kein Endedatum)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-11
+#: last_checked: 2025-09-22
 #: check_frequency: 14d
 Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
 ',
@@ -9083,7 +8980,7 @@ Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
        {
          'data' => '#: also_indoor: traffic (T)
 #: note: laut Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
-#: last_checked: 2025-09-11
+#: last_checked: 2025-09-22
 #: check_frequency: 30d
 #: next_check: 2025-11-06
 	q4::inwork 8941,8186 8861,8242 8776,8285
@@ -9113,14 +9010,14 @@ Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
 #: osm_watch: way id="23926070" version="5"
 #: last_checked: 2025-09-19 (SenMVKU-Seite)
 # REMOVED --- #: check_frequency: 30d (indoor checks)
-#: next_check: 2025-09-22 (Ein-Tages-Sperrung entfernen)
-# REMOVED --- #: next_check: 2026-05-01 (Ausschilderung vor Ort)
+# REMOVED --- #: next_check: 2025-09-22 (Ein-Tages-Sperrung entfernen)
+#: next_check: 2026-05-01 (Ausschilderung vor Ort)
 Spektegrabensteg	2::inwork -7228,15933 -7243,15943
 ',
          'dont_check_date' => 1,
          'from' => 1758405600,
          'id' => 4443,
-         'text' => 'Spektegrabensteg: Sperrung, am 22.09.2025 für einen Tag, dann voraussichtlich vom 13.10.2025 bis April 2026',
+         'text' => 'Spektegrabensteg: Sperrung voraussichtlich vom 13.10.2025 bis April 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9184,23 +9081,27 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: HERBERT-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzfkwh3xw224
+#: source_id: viz2021:13.35762,52.48668,22.09.2025,07:00 (bis 01.12.2025)
+#: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
 	q4::inwork 7389,8837 7360,8918
 ',
          'from' => 1758405600,
          'id' => 4450,
-         'text' => 'Herbertstr.: Anbindung Kolonnenstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.09.2025 bis Mitte Dezember 2025',
+         'text' => 'Herbertstr.: Anbindung Kolonnenstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.09.2025 bis Dezember 2025',
          'type' => 'handicap',
          'until' => 1765839599
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
+#: source_id: viz2021:13.26475,52.41945,22.09.2025,07:00 (bis 30.04.2026)
 	q4::inwork 1142,1350 1274,1376
 ',
          'from' => 1758405600,
          'id' => 4451,
-         'text' => 'Laehrstr.: Anbindung Teltower Damm wegen Bauarbeiten gesperrt, vom 22.09.2025 bis voraussichtlich 17.10.2025',
+         'text' => 'Laehrstr.: Anbindung Teltower Damm wegen Bauarbeiten gesperrt, vom 22.09.2025 bis voraussichtlich Ende April 2026',
          'type' => 'handicap',
-         'until' => 1760738400
+         'until' => 1777586399
        }
      
 );

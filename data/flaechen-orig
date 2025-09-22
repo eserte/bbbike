@@ -321,15 +321,14 @@ Rudolfplatz	F:P 14011,10812 13896,10851 13856,10864 13886,10939 14026,10869
 Traveplatz	F:P 14946,11697 14858,11744 14798,11777 14802,11784 14836,11842 14901,11808 14986,11760
 Kurt-Ritter-Sportplatz	F:Sport 14935,11597 14890,11512 15016,11431 15059,11514
 Wismarplatz	F:P 14513,11657 14550,11732 14475,11778 14416,11815 14395,11753 14461,11738
-#: alias: Grünanlage Wolffring
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_35_2273_2316_online.pdf (Benennung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1592400.php (feierliche Benennung)
-#: XXX Benennung in Elisabeth-Schumacher-Park
-#: osm_watch: note 4967932 1
-#: osm_watch: way id="172233475" version="10"
-#: last_checked: 2025-08-27
-#: next_check: 2025-09-18 (Amtsblatt, BA-Pressemitteilung)
-Parkring Tempelhofer Feld	F:P 8969,8278 8807,8353 8720,8373 8670,8370 8590,8344 8527,8293 8561,8252 8666,8305 8776,8285 8861,8242 8941,8186
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1600046.php
+# REMOVED --- #: osm_watch: note 4967932 1 --- #: osm_watch: way id="172233475" version="10" --- #: last_checked: 2025-08-27 --- #: next_check: 2025-09-18 (Amtsblatt, BA-Pressemitteilung)
+#: note: Benennung am 18.09.2025
+#: alias: Grünanlage Wolffring
+Elisabeth-Schumacher-Park	F:P 8776,8285 8861,8242 8941,8186 8969,8278 8807,8353 8776,8285
+Parkring Tempelhofer Feld	F:P 8776,8285 8807,8353 8720,8373 8670,8370 8590,8344 8527,8293 8561,8252 8666,8305 8776,8285
 Parkring Tempelhofer Feld	F:P 8527,8293 8482,8227 8461,8084 8519,8088 8536,8192 8561,8252
 Parkring Tempelhofer Feld	F:P 8464,7938 8466,7918 8512,7757 8553,7795 8527,7939
 Parkring Tempelhofer Feld	F:P 8686,7726 8796,7751 8895,7797 8940,7835 8959,7824 8907,7773 8812,7730 8690,7704

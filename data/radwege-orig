@@ -77,7 +77,7 @@ Gehwegplatten	RW1; 9229,8785 9272,8781 9395,8726
 Gehwegplatten, ordentlich verlegt	RW1; 9395,8726 9570,8715
 Gehwegplatten	RW1; 9570,8715 9807,8682
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt 5-19 Uhr	RW1; 9807,8682 9570,8715 9395,8726 9272,8781 9229,8785
-#: note: außerdem kann man den parallel verlaufenden asphaltierten Weg auf dem Ex-Flughafen-Gelände nutzen
+#: note: außerdem kann man ab der Fußgängerampel Columbiatheater den parallel verlaufenden breiten asphaltierten Weg auf dem Ex-Flughafen-Gelände nutzen
 	RW3; 9807,8682 10209,8661
 Verbundsteinpflaster	RW2; 10209,8661 9807,8682
 	RW4;RW4 8389,9087 8471,9244 8499,9253 8598,9269 8769,9295 8970,9323
@@ -361,7 +361,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-09-15 vvv
+#: last_checked: 2025-09-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -2388,7 +2388,8 @@ alter Asphalt, kein Unterstreifen gegen parkende Autos	RW1; 18010,7137 18225,700
 	RW3; 19957,5941 19759,6049 19594,6155 19578,6165 19405,6276 19276,6359 19245,6379 18948,6578 18771,6699 18492,6893 18404,6946 18225,7004
 #: note: Radspur wird auf der Nebenfahrbahn geführt
 die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,7137
-Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
+#: historical_note: früher: Asphalt mit einigen Brüchen
+neuer Asphalt	RW1; 9321,8607 9364,8640 9395,8726
 	RW3;RW3 13821,9340 13849,9310
 	RW4;RW4 13849,9310 14018,9118 14137,8983 14151,8967
 # 
@@ -2576,7 +2577,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: XXX Anfang 2025: der benutzungspflichtige Radweg Richtung Süden fängt wegen Hochbauarbeiten etwa 50m später an
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="23"
-#: last_checked: 2025-08-27
+#: last_checked: 2025-09-22
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -3012,7 +3013,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-09-22 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3068,7 +3069,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-09-09
+#: last_checked: 2025-09-22
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 	RW2; 12543,11521 12645,11673
@@ -4427,7 +4428,7 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX Radwege werden neu gemacht vvv
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-09-21 (mapillary) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-08-18 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher (bis 2025): Verbundsteinpflaster und bröckelnder Beton
@@ -5198,6 +5199,7 @@ Grünbeschichtung "light" (Rauten)	RW4; 19924,11890 19934,11977
 Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll_fahrrat_26-02-2025.pdf
+#: source_id: viz2021:13.55154,52.55437,22.09.2025,18:00 (Nachtsperrung, bis 23.09.2025)
 #: last_checked: 2025-05-30 (kartaview) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv

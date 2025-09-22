@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -150,7 +150,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-09-09 vvv
+#: last_checked: 2025-09-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -244,13 +244,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 ### Tempelhof ###
 # 
-#: note: laut Baustellenschild bis Sommer (2025)
-#: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/ (bis September 2025)
-#: last_checked: 2025-08-30
-#: check_frequency: 45d
-#: next_check: 2025-09-20 (Baustellenschild, entwicklungsstadt)
-#: valid: -20250930
-Südkreuz: Bauarbeiten, Engstellen	q2::inwork 7838,7848 7837,7899
+# REMOVED (beendet) --- #: note: laut Baustellenschild bis Sommer (2025) --- #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/ (bis September 2025) --- #: last_checked: 2025-08-30 --- #: check_frequency: 45d --- #: next_check: 2025-09-20 (Baustellenschild, entwicklungsstadt) --- #: valid: -20250930 --- Südkreuz: Bauarbeiten, Engstellen	q2::inwork 7838,7848 7837,7899
 # 
 # REMOVED --- #: next_check_id: BOELCKE-2025
 # REMOVED --- #: also_indoor: traffic (ex-B,ex-T,ex-G) vvv
@@ -587,7 +581,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-09-15 vvv
+#: last_checked: 2025-09-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -805,7 +799,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: next_check_id: PERLEBERGER-2024
 #: last_checked: 2025-09-04 (mapillary)
-#: next_check: 2025-09-23
+#: next_check: 2025-09-29 (VIZ-Verkehrsmeldung)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150

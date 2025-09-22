@@ -7,16 +7,16 @@
 #: temporary vvv
 # 
 #: next_check_id: HERBERT-2025
-#: next_check: 2025-12-15
-#: valid: -20251215
+#: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
+#: valid: -20251201
 Kolonnenstr./Herbertstr.: Gegenverkehrsregelung	X::inwork::alternating 7360,8918
 # 
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347
-#: source_id: viz2021:13.37128,52.4366,13.08.2025,07:00 (provisorische Ampelanlage, bis 22.09.2025)
+#: source_id: viz2021:13.37128,52.4366,13.08.2025,07:00 (provisorische Ampelanlage, bis 22.09.2025) (bis 13.03.2026)
 #: XXX permanente Ampel in Planung
 #: last_checked: 2025-07-18
-#: check_frequency: 90d
-#: next_check: 2025-09-22
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2026-03-13
 Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::inwork 8461,3410
 # 
 #: next_check_id: STUBENRAUCH-2025
@@ -191,8 +191,8 @@ Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 
 # REMOVED --- Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 # 
 #: next_check_id: PERLEBERGER-2024
-#: last_checked: 2025-08-12 (mapillary)
-#: next_check: 2025-09-23
+#: last_checked: 2025-08-13 (mapillary)
+#: next_check: 2025-09-29 (VIZ-Verkehrsmeldung)
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
 # REMOVED (stehen noch, sind aber ausgeschaltet, wohl dauerhaft) --- #: next_check_id: OSTEND-2024 --- #: last_checked: 2024-11-06 vvv --- #: next_check: 2024-11-03 vvv --- #: valid: -20241103 vvv --- An der Wuhlheide/Rathenaustr.: Baustellenampel	X::inwork 19245,6379 --- An der Wuhlheide/Steffelbauerstr.: Baustellenampel östlich der Einmündung	F::inwork 19594,6155 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
@@ -572,7 +572,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2025-09-09
+#: last_checked: 2025-09-22
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -3900,7 +3900,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-09-15 vvv
+#: last_checked: 2025-09-22 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
