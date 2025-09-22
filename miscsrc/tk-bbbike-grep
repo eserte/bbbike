@@ -34,6 +34,11 @@ for my $add_org_file ("$ENV{HOME}/src/bbbike-aux/tmp/bplan.org") {
 	push @add_bbbike_grep, '--add-org-file', $add_org_file;
     }
 }
+for my $add_plain_file ("$ENV{HOME}/backup/changedetection.io/url-watches.json") {
+    if (-r $add_plain_file) {
+	push @add_bbbike_grep, '--add-file-with-encoding', $add_plain_file.':utf-8';
+    }
+}
 
 # XXX actually it would be good if we could determine which emacs is available,
 # and switch on/off the bug handling
@@ -146,7 +151,9 @@ sub run_grep {
     }
 	
     # XXX -limit 100 may be too small: /bahnhofstr/ has currently 317 matches
-    open my $fh, '-|', "$bbbike_root/miscsrc/bbbike-grep", $term_type_opt, "-limit", 100, "-reldir", cwd(), "--byte-offset", @add_bbbike_grep, "--", $grep_word or die $!;
+    my @cmd = ("$bbbike_root/miscsrc/bbbike-grep", $term_type_opt, "-limit", 100, "-reldir", cwd(), "--byte-offset", @add_bbbike_grep, "--", $grep_word);
+    #warn "@cmd";
+    open my $fh, '-|', @cmd or die $!;
     binmode $fh, ':utf8';
     my @output = <$fh>;
     $rotext->delete('1.0', 'end');
