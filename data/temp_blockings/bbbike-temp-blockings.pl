@@ -21835,7 +21835,7 @@ EOF
 #: source_id: viz2021:13.371607,52.515899,25.09.2024,06:00 (bis 01.10.2024) (inaktiv)
 #: source_id: viz2021:13.36973,52.517661,26.09.2024,18:00 (bis 30.09.2024) (inaktiv)
 #: source_id: viz2021:13.354724,52.517098,26.09.2024,18:00 (bis 30.09.2024) (inaktiv)
-#: source_id: viz2021:13.36975,52.51584, (bis 23.09.2025)
+#: source_id: viz2021:13.36975,52.51584, (bis 23.09.2025) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779, (bis 22.09.2025) (inaktiv)
 #: source_id: viz2021:13.38045,52.51808,18.09.2025,18:00 (bis 22.09.2025) (inaktiv)
 #: source_id: viz2021:13.37737,52.51457,18.09.2025,18:00 (bis 22.09.2025) (inaktiv)
@@ -33531,10 +33531,10 @@ EOF
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="15"
+#: osm_watch: way id="362719487" version="16"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-09-05 (osm)
+#: last_checked: 2025-09-21 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -42209,26 +42209,32 @@ EOF
 	q4::inwork 11963,8074 12147,8117
 EOF
      },
-     { from  => $isodate2epoch->("2024-07-29 00:00:00"), # 1695531600, # 2023-09-24 07:00
-       until => 1734466847, # $isodate2epoch->("2024-12-20 17:00:00"), # 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
+     { from  => $isodate2epoch->("2025-09-23 00:00:00"), # $isodate2epoch->("2024-07-29 00:00:00"), # 1695531600, # 2023-09-24 07:00
+       until => $isodate2epoch->("2025-10-17 23:59:59"), # 1734466847, # $isodate2epoch->("2024-12-20 17:00:00"), # 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
 #      text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00, evtl. wird verlängert',
 #      text  => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, bis 01.09.2024',
 #      text  => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Fischerinsel zwischen Alte/Neue Jakobstr. und Wallstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024',
-       text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024 17:00',
+#      text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024 17:00',
+       text  => 'Alte Jakobstr.: Bauarbeiten, Richtung Sebastianstr. ab Annenstr. gesperrt, geplant bis 17.10.2025',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
 #: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024) (inaktiv)
 #: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
 #: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024) (vorfristig inaktiv)
+#: source_id: viz2021:13.40755,52.5098,23.09.2025,07:00 (bis 17.10.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
 #: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250922 (Alte Jakobstr.)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzi4vs5s2c2x
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib4wevol7jpq3crq4petup2lszpaog3xbddbb5wuds7ad5v4e2s5y@jpeg (Fahrgasse für Radfahrer Richtung NO)
 # REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tatsächlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
 # REMOVED (bei mapillary nicht mehr gesehen) --- #: last_checked: 2023-11-07 --- #: check_frequency: 14d
 # REMOVED (wurde umgedreht) --- #: note: relativ kurzer Abschnitt (~75m) ist betroffen, deshalb q4 -> q3 ---	q3::inwork; 10815,11662 10722,11816
-	q3::inwork; 10722,11816 10815,11662
+# Neue Roßstr.	q3::inwork; 10722,11816 10815,11662
+Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
 EOF
      },
      { from  => 1740817421, # 1695746966, # 2023-09-26 18:49
@@ -43483,7 +43489,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-14 07:00:00"),
-       until => $isodate2epoch->("2025-09-29 17:00:00"),
+       until => 1758649785, # $isodate2epoch->("2025-09-29 17:00:00"),
 #      text  => 'Perleberger Str.: Bauarbeiten Richtung Fennstr. zwischen Birkenstr. und Ellen-Epstein-Str., evtl. sind auch Radfahrer betroffen, vom 14.02.2024 07:00 bis 23.09.2025 17:00',
 #      text  => 'Wilsnacker Str. und Rathenower Str.: Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, vom 14.02.2024 07:00 bis 23.09.2025 17:00',
 #      text  => 'Rathenower Str./Stendaler Str.: Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, voraussichtlich bis 23.09.2025 17:00',
@@ -43495,16 +43501,12 @@ EOF
 #: source_id: bvg2021:m27#BVG342288_0
 #: source_id: bvg2021:123#BVG342289_0
 #: source_id[inactive]: bvg2024:123#HIM_FREETEXT_222657
-#: source_id: viz2021:13.34718,52.53079,14.02.2024,07:00 (bis 29.09.2025) (inaktiv) (bis 29.09.2025)
+#: source_id: viz2021:13.34718,52.53079,14.02.2024,07:00 (bis 29.09.2025) (inaktiv) (bis 29.09.2025) (inaktiv)
 #: source_id: viz2021:13.35116,52.531839,07.08.2024,07:00 (bis 30.08.2024) (bis 17.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/erneuerung-abwasserdruckleitung-unter-der-perleberger-strasse/
 #: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stendaler-str-1-neubau-statt-edeka-supermarkt.1036/page-2#post-25254 (zumindest Richtung Norden scheint man als Radfahrer durchzukommen)
-#: add_fragezeichen: Ist die Anbindung Rathenower Str./Stendaler Str. noch immer gesperrt? vvv
-#: priority: #B vvv
-#: last_checked: 2025-07-19 (mapillary) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-09-29 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: add_fragezeichen: Ist die Anbindung Rathenower Str./Stendaler Str. noch immer gesperrt? vvv --- #: priority: #B vvv --- #: last_checked: 2025-07-19 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-09-29 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: note 4069677 11
 #: osm_watch[closed]: note 4115004 5
 #: osm_watch: note 4681980 2
@@ -43515,11 +43517,7 @@ EOF
 # REMOVED (hier nicht mehr) --- #: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt's dafür eine Fußgängerampel etwa 50m weiter nordöstlich --- #: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen (stimmt aber nicht) --- #: osm_watch: way id="417687029" version="17" --- #: osm_watch: way id="1143843161" version="6" --- Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
 #: note: Ampel ist ausgeschaltet, dafür eine provisorische Fußgängerampel südwestlich der Einmündung Wilsnacker Str.
 nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719,14047
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1712166104, # 1708457810,
@@ -44917,7 +44915,7 @@ EOF
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-09-22 vvv
+#: last_checked: 2025-09-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -48094,7 +48092,7 @@ EOF
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-09-10 (traffic) vvv
+#: last_checked: 2025-09-23 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -49564,15 +49562,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1758648982, # undef, # XXX
        text  => 'Barbarossastr.: Bauarbeiten zwischen Karl-Schrader-Str. und Goltzstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 # REMOVED --- #: XXX Hat es was mit den Fernwärmearbeiten im Barbarossakiez zu tun?
-#: also_indoor: traffic (G[zu viel?],T)
+#: also_indoor: traffic (G[zu viel?],ex-T)
 #: note: Länge der Sperrung ca. 60m
-#: last_checked: 2025-09-12 (traffic)
-#: check_frequency: 14d
+# REMOVED --- #: last_checked: 2025-09-12 (traffic) --- #: check_frequency: 14d
 	q4::inwork 6860,9529 7002,9526
 EOF
      },
@@ -49936,7 +49933,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-23 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork 18804,2991 18949,3073

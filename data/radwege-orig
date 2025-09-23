@@ -5199,7 +5199,7 @@ Grünbeschichtung "light" (Rauten)	RW4; 19924,11890 19934,11977
 Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll_fahrrat_26-02-2025.pdf
-#: source_id: viz2021:13.55154,52.55437,22.09.2025,18:00 (Nachtsperrung, bis 23.09.2025)
+#: source_id: viz2021:13.55154,52.55437,22.09.2025,18:00 (Nachtsperrung, bis 23.09.2025) (inaktiv)
 #: last_checked: 2025-05-30 (kartaview) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
@@ -5803,7 +5803,10 @@ Gehweg für Radfahrer frei, eng	RW1; 19512,15092 19364,15045 19309,15023 19254,15
 #: next_check: 2026-12-31 vvv
 Gehweg für Radfahrer frei	RW9; 19200,14963 19157,14948 19015,14901 18831,14823
 # REMOVED (wegen Bauarbeiten ist der nördliche Hochboard nicht nutzbar) --- Gehweg für Radfahrer frei	RW1; 18831,14823 18553,14678 18410,14614 18365,14607
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1600542.php (Fertigstellgung des Radwegs ab Brücke --- ggfs. wieder mit Ampelanlage?)
+#: osm_watch: note 4926971 3
 #: note: die Zweirichtungsregelung gilt sogar bis zur Rhinstr.
+#: next_check: 2025-09-23
 Gehweg für Radfahrer frei	RW9; 18831,14823 18553,14678
 Gehweg für Radfahrer frei, eng	RW9; 19175,14968 19196,14976 19205,14980 19254,15000 19309,15023 19364,15045 19512,15092
 #: note: zwar nicht explizit als benutzungspflichtig ausgeschildert, aber die danebenliegende Fahrbahn ist eine Einbahnstraße
@@ -8216,7 +8219,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-09-18
+#: last_checked: 2025-09-23
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490

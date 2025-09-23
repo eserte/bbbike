@@ -175,7 +175,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1551519.php
 #: by: https://entwicklungsstadt.de/mehr-komfort-fuer-radverkehr-kopfsteinpflaster-am-priesterweg-geglaettet/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/billiger-und-umweltschonender-als-asphaltieren-berliner-kopfsteinpflaster-abgefrast-furs-huckelfreie-radfahren-13554001.html
-#: osm_watch: way id="102486250" version="30"
+#: osm_watch: way id="102486250" version="31"
 #: osm_watch[closed]: note 4659483 8
 # REMOVED (confirmed) --- --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
 #: last_checked: 2025-08-30
@@ -478,7 +478,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-09-18
+#: last_checked: 2025-09-23
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1280,6 +1280,9 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lyzjwhdbkc2c
 #: by: https://viz.berlin.de/aktuelle-meldungen/sanierungsarbeiten-in-der-friedrich-engels-strasse-ab-23-september/ (provisorische Asphaltierung ab 23.9.2025, Bauzeit 8-10 Wochen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1599774.php
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzi546ev3s2i
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibnuhe3q7e6ci3bfdidr4z4qohhxubhsqa5vauzvf46ku3afbr6vu@jpeg (Sackgasse gilt nicht für Radfahrer)
+#: source_id: viz2021:13.37541,52.59714,23.09.2025,07:00 (bis 10.10.2025)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
 #: last_checked: 2025-07-17 (mapillary) vvv
 #: check_frequency: 120d vvv
@@ -1312,7 +1315,8 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: by: https://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025) (mittlerweile: 1. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2028 - 4. Quartal 2028) (gelöscht)
 #: by: https://www.stadtrand-nachrichten.de/radwegeausbau-steglitz-zehlendorf-berlin/ (Erwähnung)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
-#: osm_watch: way id="4810830" version="45"
+#: osm_watch: way id="4810830" version="46"
+#: osm_watch: way id="1431956179" version="1"
 #: last_checked: 2025-08-30
 #: check_frequency: 720d
 #: next_check: 2028-12-31
@@ -2574,7 +2578,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021)
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2025-07-21
+#: last_checked: 2025-09-23
 #: check_frequency: 90d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -14019,6 +14023,7 @@ Marlene-Dietrich-Platz: Kleinsteinpflaster	Q1- 8253,11306 8280,11296
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/lp_ollenhauer_lph03_p05-05.pdf
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13320 (Einwohneranfrage)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13629 (Einwohneranfrage)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/grossprojekt-ollenhauerstrasse-in-reinickendorf-bezirksamt-plant-umfassenden-umbau-ab-2027-li.2357568
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5243,18162 5301,18447 5324,18560 5345,18675

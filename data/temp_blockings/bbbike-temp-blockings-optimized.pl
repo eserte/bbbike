@@ -4292,10 +4292,10 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="15"
+#: osm_watch: way id="362719487" version="16"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-09-05 (osm)
+#: last_checked: 2025-09-21 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -6205,7 +6205,31 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.408994,52.511691,25.09.2023,07:00 (bis 30.10.2023, hier fälschlicherweise nur für den Kfz-Verkehr) (inaktiv)
+#: source_id: viz2021:13.408894,52.511858,29.07.2024,08:00 (bis 23.08.2024) (bis 01.09.2024) (inaktiv)
+#: source_id: viz2021:13.410127,52.510579,29.07.2024,08:00 (bis 01.09.2024) (bis 31.10.2024) (bis 18.11.2024) (bis 20.12.2024) (inaktiv)
+#: source_id[inactive]: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
+#: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
+#: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024) (vorfristig inaktiv)
+#: source_id: viz2021:13.40755,52.5098,23.09.2025,07:00 (bis 17.10.2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
+#: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250922 (Alte Jakobstr.)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzi4vs5s2c2x
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib4wevol7jpq3crq4petup2lszpaog3xbddbb5wuds7ad5v4e2s5y@jpeg (Fahrgasse für Radfahrer Richtung NO)
+# REMOVED (alte Notizen) --- #: note: bei VIZ inaktiv, tatsächlich noch aktiv --- #: note: etwa 1/3 der Strecke sind gesperrt, deshalb q3
+# REMOVED (bei mapillary nicht mehr gesehen) --- #: last_checked: 2023-11-07 --- #: check_frequency: 14d
+# REMOVED (wurde umgedreht) --- #: note: relativ kurzer Abschnitt (~75m) ist betroffen, deshalb q4 -> q3 ---	q3::inwork; 10815,11662 10722,11816
+# Neue Roßstr.	q3::inwork; 10722,11816 10815,11662
+Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
+',
+         'from' => 1758578400,
+         'id' => 3926,
+         'text' => 'Alte Jakobstr.: Bauarbeiten, Richtung Sebastianstr. ab Annenstr. gesperrt, geplant bis 17.10.2025',
+         'type' => 'handicap',
+         'until' => 1760738399
+       },
        {
          'data' => '# älteres Bauvorhaben (Botschaft von Indonesien)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-der-indonesischen-botschaft-tiergartenstra%C3%9Fe.1096/
@@ -6448,44 +6472,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: PERLEBERGER-2024
-#: source_id: viz2021:13.350567,52.532479,14.02.2024,07:00 (bis 23.09.2025) (bis 30.10.2025 + weitere Arbeiten) (inaktiv)
-#: source_id: bvg2021:m27#BVG342288_0
-#: source_id: bvg2021:123#BVG342289_0
-#: source_id[inactive]: bvg2024:123#HIM_FREETEXT_222657
-#: source_id: viz2021:13.34718,52.53079,14.02.2024,07:00 (bis 29.09.2025) (inaktiv) (bis 29.09.2025)
-#: source_id: viz2021:13.35116,52.531839,07.08.2024,07:00 (bis 30.08.2024) (bis 17.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
-#: by: https://viz.berlin.de/aktuelle-meldungen/erneuerung-abwasserdruckleitung-unter-der-perleberger-strasse/
-#: by: https://www.berlin-live.de/berlin/verkehr/berlin-zwei-jahre-grossbaustelle-autofahrer-perleberger-strasse-moabit-sperrung-i-id107848.html
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/stendaler-str-1-neubau-statt-edeka-supermarkt.1036/page-2#post-25254 (zumindest Richtung Norden scheint man als Radfahrer durchzukommen)
-#: add_fragezeichen: Ist die Anbindung Rathenower Str./Stendaler Str. noch immer gesperrt? vvv
-#: priority: #B vvv
-#: last_checked: 2025-07-19 (mapillary) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-09-29 (VIZ-Verkehrsmeldung) vvv
-#: osm_watch: note 4069677 11
-#: osm_watch[closed]: note 4115004 5
-#: osm_watch: note 4681980 2
-#: osm_watch: way id="375991056" version="18"
-#: osm_watch: way id="375958863" version="12"
-# REMOVED (hier existiert eine durchgängige Verbindung für Radfahrer, im Baustellenbereich meist als Radspur, kurzer Abschnitt als getrennter Rad/Gehweg) --- Perleberger Str.	q4::inwork; 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
-# REMOVED (hier nicht mehr) --- #: osm_watch: way id="1250738798" version="3" --- Wilsnacker Str.: Anbindung gesperrt	q4::inwork 6646,13951 6746,13826
-# REMOVED (hier nicht mehr) --- #: note: Ampel ist zumindest Richtung Nordosten ausgeschaltet, allerdings gibt\'s dafür eine Fußgängerampel etwa 50m weiter nordöstlich --- #: note: mittlerweile Änderung laut VMZ, evtl. nur noch eine Fahrtrichtung betroffen (stimmt aber nicht) --- #: osm_watch: way id="417687029" version="17" --- #: osm_watch: way id="1143843161" version="6" --- Rathenower Str.: Anbindung gesperrt	q4::inwork 6730,14021 6817,13862
-#: note: Ampel ist ausgeschaltet, dafür eine provisorische Fußgängerampel südwestlich der Einmündung Wilsnacker Str.
-nördliche Rathenower Str.: direkte Überfahrt gesperrt	q3::inwork 6730,14021 6719,14047
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => 1707890400,
-         'id' => 4009,
-         'text' => 'Rathenower Str./Stendaler Str.: direkte Anbindung zur Perleberger Str. wegen Bauarbeiten gesperrt, evtl. Umwege notwendig, voraussichtlich bis 29.09.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1759158000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: KANZLERPARK-2024
@@ -6773,7 +6760,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-09-22 vvv
+#: last_checked: 2025-09-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7983,7 +7970,7 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-09-10 (traffic) vvv
+#: last_checked: 2025-09-23 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -8663,20 +8650,7 @@ Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,110
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '# REMOVED --- #: XXX Hat es was mit den Fernwärmearbeiten im Barbarossakiez zu tun?
-#: also_indoor: traffic (G[zu viel?],T)
-#: note: Länge der Sperrung ca. 60m
-#: last_checked: 2025-09-12 (traffic)
-#: check_frequency: 14d
-	q4::inwork 6860,9529 7002,9526
-',
-         'from' => undef,
-         'id' => 4409,
-         'text' => 'Barbarossastr.: Bauarbeiten zwischen Karl-Schrader-Str. und Goltzstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: BARBAROSSAPLATZ-2025
 #: by: https://www.bew.berlin/aktuelles-und-presse/2025/fernwaerme-ausbau-am-barbarossaplatz-beginnt/
@@ -8921,7 +8895,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        },
        {
          'data' => '#: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-23 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork 18804,2991 18949,3073
