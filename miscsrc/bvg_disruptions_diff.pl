@@ -8,8 +8,7 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike/
 #
 
 use strict;
@@ -25,6 +24,7 @@ use JSON::XS qw(decode_json);
 use IPC::Run qw(run);
 use List::MoreUtils qw(uniq);
 use Storable qw(dclone);
+use Term::ANSIColor qw(colored);
 
 use BBBikeUtil qw(bbbike_root save_pwd2);
 use BBBikeYAML qw(LoadFile Dump);
@@ -143,12 +143,12 @@ $| = 1;
 my($stats_new, $stats_deleted, $stats_changed, $stats_changes_before_normalization) = (0, 0, 0, 0);
 for my $id (@all_ids) {
     if (!$old_records{$id}) {
-	print "="x70, "\n", "NEW RECORD $id\n";
+	print "="x70, "\n", _green("NEW RECORD") . " $id\n";
 	print_basic_info($new_records{$id}, mode => 'new');
 	print_raw_serialized($new_records{$id});
 	$stats_new++;
     } elsif (!$new_records{$id}) {
-	print "="x70, "\n", "DELETED RECORD $id\n";
+	print "="x70, "\n", _red("DELETED RECORD") . " $id\n";
 	print_basic_info($old_records{$id}, mode => 'deleted');
 	print_raw_serialized($old_records{$id});
 	$stats_deleted++;
@@ -168,7 +168,7 @@ for my $id (@all_ids) {
 		}
 	    }
 	    if (JSON::XS->new->canonical->encode($old_record_normalized) ne JSON::XS->new->canonical->encode($new_record_normalized)) {
-		print "="x70, "\n", "CHANGED RECORD $id\n";
+		print "="x70, "\n", _yellow("CHANGED RECORD") . " $id\n";
 		$stats_changed++;
 
 		my $old = File::Temp->new(TMPDIR => 1, TEMPLATE => "bvg-old-XXXXXXXX");
@@ -207,6 +207,10 @@ print "Deleted records:               $stats_deleted\n";
 print "Changed records:               $stats_changed\n";
 print "Uninteresting changed records: $stats_changes_before_normalization\n";
 
+sub _green  { colored(["green on_black"],  @_) }
+sub _red    { colored(["red on_black"],    @_) }
+sub _yellow { colored(["yellow on_black"], @_) }
+
 sub print_basic_info {
     my($record, %opts) = @_;
     my $mode = delete $opts{mode};
@@ -226,7 +230,7 @@ sub print_basic_info {
     if ($record->{_date} =~ m{ - (\d{4}-\d{2}-\d{2})}) {
 	$enddate = $1;
     }
-    print "#: source_id: $ext_id" . ($enddate ? " (bis $enddate)" : "") . ($inactive_sourceids->{$id} ? " (WAS_INUSE)" : ($sourceids->{$id} ? " (INUSE)" : "")) . "\n";
+    print "#: source_id: $ext_id" . ($enddate ? " (bis $enddate)" : "") . ($inactive_sourceids->{$id} ? " " . _yellow("(WAS_INUSE)") : ($sourceids->{$id} ? " " . _red("(INUSE)") : "")) . "\n";
 
 }
 
