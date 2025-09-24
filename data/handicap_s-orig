@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-09-21
+#: last_checked: 2025-09-24
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -67,14 +67,14 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="22"
-#: osm_watch: way id="1072662717" version="26"
-#: last_checked: 2025-09-23
+#: osm_watch: way id="1072662716" version="23"
+#: osm_watch: way id="1072662717" version="27"
+#: last_checked: 2025-09-24
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
-#: last_checked: 2025-09-23
+#: last_checked: 2025-09-24
 #: check_frequency: 14d
 #: next_check: 2025-10-10
 #: valid: -20251010
@@ -349,16 +349,16 @@ Torfstr.: Bauarbeiten: Abschnitt der Fahrbahn gesperrt	q3::inwork 6849,14831 683
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="3"
-#: last_checked: 2025-07-09
+#: last_checked: 2025-09-24
 #: check_frequency: 150d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
+#: next_check_id: WEDDINGADVANCEDLABS-2025
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
-#: XXX außerdem: Radweg zwischen Tegeler Str. und Samoastr. wird neu gemacht, möglicherweise asphaltiert
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 #: osm_watch: way id="885130938" version="5"
-#: last_checked: 2025-08-22 (daf)
+#: last_checked: 2025-09-24
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -464,7 +464,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-09-15 vvv
+#: last_checked: 2025-09-24 vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="43"
@@ -587,7 +587,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-09-22 vvv
+#: last_checked: 2025-09-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1795,7 +1795,7 @@ Fürther Str.: Gehweg	q2 5764,10322 5817,10279
 (Zossener Brücke - Mehringplatz): Gehweg	q3 9873,10285 9668,10306
 #: note: nach Einwand von britta tr. (Message-ID: <43BA64D8.5030001@charite.de>) von q2 auf q3 heruntergestuft
 (Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3761,12298 3726,12273 3699,12290
-Goerdelersteg: enge wendelförmige Rampen	q3 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
+Goerdelersteg: enge wendelförmige Rampen	q3 3656,14150 3634,14187 3625,14230 3615,14276 3607,14279 3596,14276 3595,14267
 Goerdelersteg: enge wendelförmige Rampen	q3 3655,14237 3610,14219 3625,14230
 # REMOVED (by Monika W-J: "gut ausgebauter Radweg seit Sommer 2011") --- Goerdelerdamm: enger Zweirichtungsradweg	q1 3595,14267 3707,14303 4676,14534
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
@@ -2307,6 +2307,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: note 4506575 2
 #: osm_watch: way id="529086013" version="3"
 #: osm_watch: way id="1377234658" version="2"
+#: osm_watch: way id="11636138" version="14"
 #: last_checked: 2025-08-24 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2025-12-15 (Halteverbotsschilder)
@@ -5408,6 +5409,8 @@ Wegerichstr.: Fußgänger	q2 16475,2586 16538,2543
 # 
 Storkwinkel: einige Fußgänger	q3 2424,9786 2431,9784 2450,9778
 # 
+(Goerdelersteg - Reichweindamm): eng, kurvig, einige Fußgänger	q3 3596,14276 3576,14273 3540,14289 3521,14360 3472,14366
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -5742,10 +5745,10 @@ Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 # 
 #: next_check_id: KANZLERPARK-2024
 #: XXX nach den Bauarbeiten folgenden Eintrag reaktivieren: südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623
-#: last_checked: 2025-07-13 (mapillary)
+#: last_checked: 2025-09-24
 #: check_frequency: 45d
 #: next_check: 2025-10-30
-südliches Spreeufer: Engstelle zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
+südliches Spreeufer: Engstelle und Umwege zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 #: by: Julia (jbrauch):
 #: note: wobei der südliche Bordstein mit etwas Umweg umfahren werden kann und am nördlichen Ende eine Bordsteinabsenkung existiert
@@ -6119,9 +6122,9 @@ Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fußgänger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
-#: osm_watch: way id="114381362" version="15"
-#: osm_watch: way id="1100622078" version="8"
-#: osm_watch: way id="1100622082" version="8"
+#: osm_watch: way id="114381362" version="16"
+#: osm_watch: way id="1100622078" version="9"
+#: osm_watch: way id="1100622082" version="9"
 #: last_checked: 2025-05-12 (mapillary)
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719

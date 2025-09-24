@@ -1916,12 +1916,14 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: note: ggfs. qualitaet/handicap-Einträge anpassen
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2025-07-27 (mapillary)
+#: last_checked: 2025-09-24
 #: check_frequency: 90d
 (Heidestr./Kieler Brücke - George-Stephenson-Str.)	NN 7612,14325 7529,14274
 Lisa-Fittko-Str.	N 7820,13994 7734,13944
 Lisa-Fittko-Str.	NN 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 George-Stephenson-Str.	N 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
+#: osm.highway: service
+(Erschließungsstraße hinter der George-Stephenson-Str.)	N 7446,14403 7386,14436 7378,14420 7658,13994 7679,14030
 # REMOVED --- #: next_check_id: HANSPETERSPLATZ-2022 --- #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug... laut osm mittlerweile nur highway=footway --- #: osm_watch: way id="977556359" version="17" --- #: last_checked: 2024-08-29 --- #: check_frequency: 90d --- #: next_check: 2024-09-06 --- #: osm.highway: service
 #: note: an der Heidestraße Poller sowie ein Einfahrt-verboten- + Privatgrundstück-Schild
 #: historical_note: früher N (osm.highway: service)
@@ -4456,12 +4458,14 @@ Mierendorffplatz [Mierendorffstr.]	H 3534,13098 3556,13200
 Mierendorffplatz [Mierendorffstr.]	N 3534,13098 3645,13206
 Lise-Meitner-Str.	H 3710,13290 3719,13346 3737,13429 3741,13495 3739,13563
 Lise-Meitner-Str.	NH 3739,13563 3713,13787 3702,13865 3695,13902
-Lise-Meitner-Str.	N 3695,13902 3656,14150
-Goerdelersteg	NN 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
+Lise-Meitner-Str.	N 3695,13902 3671,14074 3656,14150
+Lise-Meitner-Str.	N 3671,14074 3672,14115 3684,14145 3674,14156 3656,14150
+Goerdelersteg	NN 3656,14150 3634,14187 3625,14230 3615,14276 3607,14279 3596,14276 3595,14267
 #: note: auf der Ostseite ist die Einfahrt verboten ("Baustelle"), aber auf der Westseite existieren entsprechende Schilder nicht
 (Goerdelersteg - Beusselstr.)	NN 3625,14230 3610,14219 3655,14237 4618,14475 5051,14606
 (Nonnendamm  - Goerdelersteg)	NN 2708,13944 2736,13938 3165,14103 3655,14237
 (Goerdelersteg - Goerdelerdamm/Tegeler Weg)	NN 3165,14103 3129,14112 3025,14099
+(Goerdelersteg - Reichweindamm)	NN 3596,14276 3576,14273 3540,14289 3521,14360 3472,14366
 Gaußstr. (Charlottenburg)	H 3739,13563 3833,13590 4098,13664 4186,13710
 Sickingenbrücke	H 4186,13710 4265,13742
 Sickingenstr.	H 4265,13742 4421,13793 4583,13845 4963,13969 5089,14010 5220,14043
@@ -19606,7 +19610,7 @@ Am Bahnhof Jungfernheide	N 3702,13865 4151,13961
 (Olbestr. - Lamberstr.)	NN 3280,13625 3304,13685 3365,13695
 (Goslarer Ufer - Am Bahnhof Jungfernheide)	NN 4186,13710 4156,13914 4151,13961 4076,14203 4011,14245
 (Lise-Meitner-Str. - Goslarer Ufer)	NN 4011,14245 3957,14229
-(Lise-Meitner-Str. - Goslarer Ufer)	N 3957,14229 3822,14195 3712,14168 3656,14150
+(Lise-Meitner-Str. - Goslarer Ufer)	N 3957,14229 3822,14195 3712,14168 3674,14156
 (Unterführung Schloßbrücke)	NN 3332,12742 3231,12749
 (Bonhoefferufer - Tegeler Weg)	NN 3133,13021 3112,13296
 Pulsstr.	N 2516,13060 2455,13058 2362,13046 2285,13023
@@ -19864,7 +19868,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-09-18 vvv
+#: last_checked: 2025-09-24 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
@@ -21032,7 +21036,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025) (bis 31.08.2026) (inaktiv)
 #: source_id: viz2021:13.33801,52.51361,09.01.2025,11:20 (bis 31.08.2026) (inaktiv)
 #: source_id: viz2021:13.33801,52.51361, (bis 31.08.2026)
-#: last_checked: 2025-09-15
+#: last_checked: 2025-09-24
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

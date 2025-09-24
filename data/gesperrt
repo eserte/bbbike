@@ -1054,6 +1054,9 @@ Bordstein, Grünstreifen	3nocross::ignrte 18491,2128 18396,1990 18361,1926
 Rudower Str. -> Mauerweg: Bordstein, Grünstreifen	3::igndisp 18491,2128 18396,1990 18470,1920
 Mauerweg -> Neudecker Weg: Bordstein, Grünstreifen	3::igndisp 18470,1920 18396,1990 18361,1926
 Emser Str.	1s 4762,10332 4764,10350
+(Erschließungsstraße hinter der George-Stephenson-Str.)	1s 7679,14030 7658,13994 7378,14420 7386,14436 7446,14403
+Lise-Meitner-Str., Wendeschleife	1 3671,14074 3656,14150
+Lise-Meitner-Str., Wendeschleife	1 3674,14156 3684,14145 3672,14115 3671,14074
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3609,7 +3612,6 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22546,3115 22477,3109
-Vor dem Reichstag: Bauarbeiten, gesperrt	2::inwork 8373,12416 8369,12609
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
 Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,10677
@@ -3648,7 +3650,8 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
 Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
-George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403 7529,14274
+George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
+George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgersteig frei	2s:inwork 7446,14403 7529,14274
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,12496 10849,12557
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371

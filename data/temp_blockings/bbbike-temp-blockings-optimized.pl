@@ -2545,7 +2545,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: source_id: viz2021:13.360266,52.515154,24.09.2023,22:00 (bis 06.10.2023) (inaktiv)
 #: source_id: viz2021:13.36968,52.51571,20.09.2024,16:58 (bis 02.10.2024) (inaktiv)
 #: source_id: viz2021:13.375084,52.516116,01.10.2024,18:00 (bis 02.10.2024) (inaktiv)
-#: source_id: viz2021:13.369749,52.515716,13.09.2025,06:00 (bis 24.09.2025)
+#: source_id: viz2021:13.369749,52.515716,13.09.2025,06:00 (bis 24.09.2025) (inaktiv)
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -2718,19 +2718,19 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-09-22 (traffic)
-#: check_frequency: 30d
+#: last_checked: 2025-09-24
+#: check_frequency: 7d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
-Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
+# (noch nicht!) --- Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-22 (traffic)
+#: last_checked: 2025-09-24
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
          'id' => 2430,
-         'text' => 'Tegeler Str.: Leitungsarbeiten zwischen Triftstr. und Sprengelstr., Fahrbahn gesperrt, außerdem Bauarbeiten in der Kiautschoustr. zwischen Tegeler Str. und Samoastr., voraussichtlich bis Mitte Januar 2026',
+         'text' => 'Kiautschoustr.: Bauarbeiten zwischen Tegeler Str. und Samoastr., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6426,7 +6426,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-09-03 vvv
+#: last_checked: 2025-09-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -6485,7 +6485,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-07-29 (mapillary)
+#: last_checked: 2025-09-24
 #: check_frequency: 120d
 #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -6793,11 +6793,11 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 #: by: https://mierendorffinsel.org/2024/07/umgestaltung-eines-teilbereiches-der-mierendorff-insel-inselrundweg-teilweise-gesperrt/
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=772392#post772392 (bis Oktober 2025)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1545301.php (Eröffnung des Skate-Parks am 5.4.2025, der Zugang von der Gaußstr. ist aber weiterhin gesperrt)
-#: note: 2024-09-18: Bauzäune sind weggeschoben
+#: note: 2024-09-18: Bauzäune sind weggeschoben; 2025-09-24: Arbeiten im südlichen Bereiche, Bauzäune
 # REMOVED --- #: osm_watch: way id="746470210" version="3"
 #: osm_watch: way id="1382537913" version="2"
-#: osm_watch: note 4916457 1
-#: last_checked: 2025-08-18 (daf, so gut wie fertig)
+#: osm_watch: note 4916457 2
+#: last_checked: 2025-09-24
 #: check_frequency: 30d
 #: next_check: 2025-10-31
 	2::inwork 4151,13961 4156,13914 4186,13710
@@ -7154,6 +7154,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'data' => '#: by: https://stadtundland.de/unternehmen/presse/2014/mehr-als-50-000-besucher-erwartet-stadt-und-land-festival-der-riesendrachen-auf-dem-tempelhofer-feld-am-13-09-2014
 #: by: https://stadtundland.de/unternehmen/veranstaltungen/stadt-und-land-festival-der-riesendrachen
 #: by: https://www.berlin.de/events/2722189-2229501-festival-der-riesendrachen-tempelhofer-f.html (27. September 2025)
+#: by: https://www.morgenpost.de/berlin/article410073994/drachenfestival-bahnhof-tempelhof-und-autobahnabfahrten-dicht.html
 #: source_id: viz2021:13.385777,52.474404,21.09.2024,10:00 (bis 21.09.2024) (inaktiv)
 	2::temp 9471,7703 9522,7624 9562,7796
 	2::temp 9474,7182 9545,7426 9592,7330
@@ -7628,6 +7629,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
 #: last_checked: 2025-08-27
+#: next_check: 2025-10-13 (VIZ-Verkehrsmeldung)
 	q4::inwork 22196,4847 22198,4800 22175,4730
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22175,4730 22144,4660
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22144,4660 22138,4642 22111,4562
@@ -7636,7 +7638,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 ',
          'from' => 1739702908,
          'id' => 4261,
-         'text' => 'Alt-Köpenick: Bauarbeiten, Anbindung in Höhe Freiheit gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Alt-Köpenick: Bauarbeiten, Anbindung in Höhe Freiheit gesperrt, voraussichtlich bis zum 13.10.2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7767,17 +7769,21 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
        undef,
        {
          'data' => '#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
-#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025) (bis 25.09.2025)
+#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025) (bis 25.09.2025) (inaktiv)
+#: source_id: viz2021:13.28104,52.47985,07.03.2025,07:00 (bis 26.11.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
-	q4::inwork; 2092,7810 2099,7904 2112,8088 2121,8351
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250924 (Umbau)
+# Teplitzer Str. ab Hagenstr.	q4::inwork; 2092,7810 2099,7904 2112,8088
+Teplitzer Str. zwischen Egerstr. und Berkaer Str.: Sperrung	q4::inwork; 2112,8088 2121,8351
+Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
 ',
          'from' => 1741240800,
          'id' => 4277,
-         'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwische Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 25.09.2025',
+         'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Egerstr. und Berkaer Str., Sperrung, außerdem ist die Egerstr. Sackgasse an der Teplitzer Str., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, bis Ende November 2025',
          'type' => 'handicap',
-         'until' => 1758765600
+         'until' => 1764176400
        },
        undef,
        undef,
@@ -7834,11 +7840,15 @@ Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
          'data' => '#: next_check_id: GUTENBERG-2025
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
-#: XXX Möglicherweise im Zusammenhang mit der angrenzenden Hochbaustelle
-#: last_checked: 2025-06-25
-#: check_frequency: 90d
-#: next_check: 2027-12-31 (entwicklungsstadt)
-	q4::inwork; 5518,12159 5317,12242
+#: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
+#: last_checked: 2025-09-24 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2027-12-31 (entwicklungsstadt) vvv
+Gutenbergstr.	q4::inwork; 5518,12159 5317,12242
+Hannah-Karminski-Str.	2::inwork 5317,12242 5360,12331
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4295,
@@ -8387,7 +8397,8 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
          'until' => undef
        },
        {
-         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltixdnvkc327
+         'data' => '#: next_check_id: SCHIFFBAUERDAMM-2025
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltixdnvkc327
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibr2s6zbouiqugi4bnwqkq2j6nrofbapxucvw5b6of5s47jagljc4@jpeg
 #: source_id: adac:66742626 (bis voraussichtlich 12.05.2026) (neue ID -> inaktiv)
 #: source_id: viz2021:13.38017,52.51979,09.07.2025,07:00 (bis 12.05.2026)
@@ -8395,9 +8406,9 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="1"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-08-30 vvv
+#: last_checked: 2025-09-24 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-07-01 (rbb) vvv
+#: next_check: 2026-07-01 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
 Schiffbauerdamm, Richtung Osten	q4::inwork; 8752,12647 8870,12647 9025,12727
 Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,12727 8870,12647 8752,12647
@@ -8413,7 +8424,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-09-15
+#: last_checked: 2025-09-24
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -8494,7 +8505,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-09-15
+#: last_checked: 2025-09-24 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 ',

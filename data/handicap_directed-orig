@@ -470,7 +470,8 @@ Mentelinstr. -> Rummelsburger Str.: Borstein	DH:kerb_up 17833,7351 17847,7356 17
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv
 Landsberger Allee	DH:t=60 19205,14980 19196,14976 19200,14963
-# REMOVED (Ampel wurde entfernt) --- Landsberger Allee	DH:t=60 19013,14905 18831,14823 18553,14678
+#: osm_watch: node id="11992227603" version="1"
+Landsberger Allee	DH:t=60 19015,14901 18831,14823 18553,14678
 # REMOVED --- #: valid: ^^^
 #: next_check ^^^
 #: check_frequency ^^^

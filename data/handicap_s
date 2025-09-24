@@ -370,7 +370,7 @@ Garnisonkirchplatz: Straßenbahn	q2 10308,12859 10255,12959
 Fürther Str.: Gehweg	q2 5764,10322 5817,10279
 (Zossener Brücke - Mehringplatz): Gehweg	q3 9873,10285 9668,10306
 (Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3761,12298 3726,12273 3699,12290
-Goerdelersteg: enge wendelförmige Rampen	q3 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
+Goerdelersteg: enge wendelförmige Rampen	q3 3656,14150 3634,14187 3625,14230 3615,14276 3607,14279 3596,14276 3595,14267
 Goerdelersteg: enge wendelförmige Rampen	q3 3655,14237 3610,14219 3625,14230
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
 Radweg eng und bewachsen	q1 5051,14606 5264,14671 5293,14699 5331,14735 5437,14844
@@ -2715,6 +2715,7 @@ Alt-Heiligensee [Parkweg]: Fußgänger, Radfahren verboten	q4 -2687,22501 -2730,22
 Wegerichstr.: Fußgänger	q2 16475,2586 16538,2543
 (Kleinbeerenstr. - Großbeerenstr.): Fußgänger	q2 8970,10506 8982,10510 9165,10530 9192,10528
 Storkwinkel: einige Fußgänger	q3 2424,9786 2431,9784 2450,9778
+(Goerdelersteg - Reichweindamm): eng, kurvig, einige Fußgänger	q3 3596,14276 3576,14273 3540,14289 3521,14360 3472,14366
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2846,7 +2847,7 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 Retzdorffpromenade: Fußgänger	q2 4886,6819 4985,6818
 Albestr.: enge Straße	q0 5419,7464 5448,7436 5637,7435 5811,7433
 Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
-südliches Spreeufer: Engstelle zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
+südliches Spreeufer: Engstelle und Umwege zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
 Waldstr.: enge Straße	q0 9717,20501 9724,20291 9723,20269
@@ -3637,6 +3638,7 @@ Puschkinstr. [Nebenstraße]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:
 Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 2706,9108 2674,9111
 Daumstr. [Radweg]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -1315,14912 -1336,14786
 Emser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 4762,10332 4764,10350
+(Erschließungsstraße hinter der George-Stephenson-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 7679,14030 7658,13994 7378,14420 7386,14436 7446,14403
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
@@ -3685,6 +3687,7 @@ Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
 Buswendestelle Gensweg: gesperrt, ggfs. schieben	q4::igndisp 12673,1140 12609,1088 12588,1103
+George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgersteig frei: gesperrt, ggfs. schieben	q4:inwork::igndisp 7446,14403 7529,14274
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Radweg	q0::igndisp; 18715,10003 18748,9922

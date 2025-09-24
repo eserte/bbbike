@@ -478,7 +478,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-09-23
+#: last_checked: 2025-09-24
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1284,7 +1284,7 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibnuhe3q7e6ci3bfdidr4z4qohhxubhsqa5vauzvf46ku3afbr6vu@jpeg (Sackgasse gilt nicht für Radfahrer)
 #: source_id: viz2021:13.37541,52.59714,23.09.2025,07:00 (bis 10.10.2025)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
-#: last_checked: 2025-07-17 (mapillary) vvv
+#: last_checked: 2025-08-30 (mapillary) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: check_frequency: 540d vvv
 #: next_check: 2026-12-31 vvv
@@ -1989,7 +1989,8 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.1571503.php
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/250513-lageplan-schoenholzer-weg-komprimiert.pdf (keine Radspuren; direkte Radwegverbindung zur Kreuzung Hauptstr./Kastanienallee; Unterbindung des Durchgangsverkehrs zur Kastanienallee)
-#: osm_watch: way id="34428911" version="16" vvv
+#: osm_watch: way id="34428911" version="18"
+#: osm_watch: note 4459967 1
 #: XXX wird hier asphaltiert? vvv
 #: last_checked: 2025-06-27 (mapillary) vvv
 #: check_frequency: 90d vvv
@@ -2001,7 +2002,6 @@ Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
-#: osm_watch ^^^
 # 
 #: historical_note: früher (bis 2022/2023?) Kopfsteinpflaster, Q2
 #: note: einer der beiden Parkstreifen ist noch gepflastert (südlich Schönstedtstr. der westliche, nördlich der östliche)
@@ -2155,7 +2155,8 @@ Lise-Meitner-Str.: Beton, Radstreifen asphaltiert	Q0; 3710,13290 3719,13346 3737
 Lise-Meitner-Str.: Beton	Q0; 3739,13563 3741,13495 3737,13429 3719,13346 3710,13290
 # REMOVED (von der Bahn aus gesehen) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php --- #: XXX nach den Bauarbeiten asphaltiert ("bituminöser Fahrbahnoberbau") --- prüfen, ob das tatsächlich stimmt --- #: next_check: 2018-07-07
 Lise-Meitner-Str.: Asphalt	Q0 3739,13563 3713,13787
-Lise-Meitner-Str.: Beton	Q0 3713,13787 3702,13865 3695,13902 3656,14150
+Lise-Meitner-Str.: Beton	Q0 3713,13787 3702,13865 3695,13902 3671,14074 3656,14150
+Lise-Meitner-Str.: Beton	Q0 3671,14074 3672,14115 3684,14145 3674,14156 3656,14150
 Georg-Wilhelm-Str.: Kopfsteinpflaster, OK	Q1 2702,10006 2687,10053
 Holtzendorffstr.: mäßiges Kopfsteinpflaster	Q2 3049,11015 3082,11090
 Goslarer Ufer: Kopfsteinpflaster	Q2 4421,12727 4372,12946
@@ -2382,7 +2383,9 @@ Landsberger Allee: Betonradweg	Q1 18183,14573 18365,14607
 Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1; 18365,14607 18410,14614 18553,14678
 #: historical_note: früher (bis Mitte 2025): Asphaltradweg nur mit mäßiger Qualität, Q1
 Landsberger Allee: neu asphaltierter Radweg	Q0; 18553,14678 18410,14614 18365,14607
-Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18553,14678 18831,14823
+Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1; 18553,14678 18831,14823
+#: historical_note: früher (bis Ende September 2025): Asphaltradweg nur mit mäßiger Qualität, Q1
+Landsberger Allee: neu asphaltierter Radweg	Q0; 18831,14823 18553,14678
 #: note ^^^
 # 
 #: XXX werden auch die restlichen Radwege demnächst instandgesetzt oder zu Radspuren umgewandelt? vvv
@@ -13443,6 +13446,7 @@ Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
 Lisa-Fittko-Str.: Verbundsteinpflaster	Q1+ 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
 Clara-Mleinek-Str.: Asphalt	Q0 7569,14209 7652,14257
 George-Stephenson-Str.: Asphalt	Q0 7487,14472 7446,14403 7529,14274 7569,14209 7614,14136 7679,14030 7734,13944
+(Erschließungsstraße hinter der George-Stephenson-Str.): Asphalt, einige leichte Unebenheiten	Q0- 7446,14403 7386,14436 7378,14420 7658,13994 7679,14030
 (Straße A, Innovationspark Wuhlheide): Asphalt	Q0 21484,7326 21346,7321 21284,7289 21233,7246
 (Straße B, Innovationspark Wuhlheide): Asphalt	Q0 21346,7321 21341,7487
 (Straße E, Innovationspark Wuhlheide): Asphalt	Q0 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
@@ -14323,6 +14327,8 @@ Emser Str.: Asphalt mit Schäden	Q1+ 4699,9505 4692,9537 4733,9931
 Wegerichstr.: Gehwegplatten	Q1+ 16475,2586 16538,2543
 # 
 (Kleinbeerenstr. - Großbeerenstr.): Betonpflaster	Q0- 8970,10506 8982,10510 9165,10530 9192,10528
+# 
+(Goerdelersteg - Reichweindamm): Gehwegplatten	Q1+ 3596,14276 3576,14273 3540,14289 3521,14360 3472,14366
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -24371,7 +24377,9 @@ Dihlmannstr.: neu asphaltierter Radweg	Q0; 651,15091 755,15123 851,15155 971,151
 #: by: https://www.tagesspiegel.de/berlin/bezirke/baume-oder-radweg-beides-hilft-diese-idee-aus-niedersachsen-der-berliner-problembaustelle-12542495.html (Sommer 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html (irgendwann 2025)
 #: XXX möglicherweise Sanierung (Asphaltierung?)
-#: next_check: 2025-09-01
+#: last_checked: 2025-09-24
+#: check_frequency: 150d
+# REMOVED --- #: next_check: 2025-09-01
 (Dihlmannstr. - Jungfernheideweg): wassergebundene Decke, Rillen	Q1- 1065,15229 1192,15257
 #: corrected_by: mapillary (neu gemacht), srt
 (Dihlmannstr. - Jungfernheideweg): Asphalt	Q0 1192,15257 1374,15314
@@ -26349,7 +26357,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: next_check_id: KUESTRINER-2023
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
-#: osm_watch: way id="593504821" version="8"
+#: osm_watch: way id="593504821" version="9"
 #: last_checked: 2025-08-03
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
@@ -31173,7 +31181,7 @@ Am Bahnhof Jungfernheide: fester Sandweg teilweise mit Schlaglöchern	Q2 3702,138
 (Goslarer Ufer - Am Bahnhof Jungfernheide): Parkweg (oder Kopfsteinpflasterstraße)	Q1- 4186,13710 4156,13914
 (Goslarer Ufer - Am Bahnhof Jungfernheide): Kopfsteinpflaster	Q2 4156,13914 4151,13961
 (Lise-Meitner-Str. - Goslarer Ufer): Parkweg, teilweise etwas viel Schotter	Q1 4011,14245 3957,14229
-(Lise-Meitner-Str. - Goslarer Ufer): Asphalt	Q0 3957,14229 3822,14195 3712,14168 3656,14150
+(Lise-Meitner-Str. - Goslarer Ufer): Asphalt	Q0 3957,14229 3822,14195 3712,14168 3674,14156
 #: corrected_by: srt (Q2 -> Q2-)
 (Schwarzer Weg): Unterschiedlicher Belag (Pflaster, Sand, Wiese, Platten)	Q2- 4237,13231 4167,13375 4093,13429 3969,13487 3823,13540
 (Dahlienweg): Gehwegplatten	Q0 3823,13540 3829,13572 3833,13590
@@ -31986,7 +31994,7 @@ Dottistr.: Asphalt	Q0 15685,12154 15879,12131
 #: by: ^^^
 # 
 #: corrected_by: srt (Q1 -> )
-Goerdelersteg: Beton	Q0 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
+Goerdelersteg: Beton	Q0 3656,14150 3634,14187 3625,14230 3615,14276 3607,14279 3596,14276 3595,14267
 # 
 #: by: Hubertus Fürther [AM] vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)

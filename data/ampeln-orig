@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: SCHIFFBAUERDAMM-2025
+#: last_checked: 2025-09-24
+#: check_frequency: 30d
+#: next_check: 2026-07-01 (Halteverbotsschilder)
+#: valid: -20260701
+Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12647
+# 
 #: next_check_id: HERBERT-2025
 #: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
 #: valid: -20251201
@@ -347,12 +354,13 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.471417,52.507338,11.06.2025,07:00 (bis 31.03.2027) (inaktiv)
+#: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: last_checked: 2025-09-20
 #: check_frequency: 120d
-#: next_check: 2025-09-30 (Halteverbotsschilder)
+#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
@@ -368,7 +376,11 @@ Gürtelstr.	F::inwork 15153,11691
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv
-# REMOVED (ausgeschaltet, weil der nördliche Hochbord durchgängig nicht nutzbar ist) --- #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig --- #: note: manchmal kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30, 2024-12-08 So gegen 14:15) --- #: note: Anforderungsampel ---	F::inwork 18831,14823
+#: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
+#: osm_watch: node id="11992227603" version="1"
+#: note: manchmal kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30, 2024-12-08 So gegen 14:15, ein Tag in September 2025 gegen 05:00)
+#: note: Anforderungsampel
+	F::inwork 18831,14823
 #: osm_watch: node id="10573986817" version="3"
 #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
 #: note: Anforderungsampel
@@ -998,6 +1010,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9611,13245
 	X 10270,13101
 	X 10341,13376
+#: historical_note: seit etwa 21.-24. September 2025
+#: note: keine Anforderungsampel, synchronisiert mit 10341,13376
+	F 10391,13344
 	X 10177,13766
 #: note: Grüner Pfeil für Radfahrer (Schönhauser Allee -> Torstr., N->W)
 #: note: Grüner Pfeil für Radfahrer (Torstr. -> Rosa-Luxemburg-Str., W->S)
@@ -3900,7 +3915,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-09-22 vvv
+#: last_checked: 2025-09-24 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
