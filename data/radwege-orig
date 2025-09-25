@@ -361,7 +361,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-09-22 vvv
+#: last_checked: 2025-09-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1340,6 +1340,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://entwicklungsstadt.de/neue-elsenbruecke-bis-2028-wie-die-a100-den-zeitplan-ins-wanken-bringt/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/stau-vor-der-elsenbruecke-in-treptow-so-will-der-senat-das-chaos-an-der-a100-lindern-li.2355775
 #: by: https://www.tagesschau.de/inland/regional/berlin/rbb-berlin-neue-plaene-gegen-a100-chaos-senat-will-weiteren-kfz-streifen-100.html (Zweirichtungsverkehr geplant, auf der östlichen Seite)
+#: by: https://entwicklungsstadt.de/elsenbruecke-in-treptow-fahrradweg-wird-in-zusaetzliche-autospur-umgewandelt/
+#: by: https://www.tagesspiegel.de/berlin/verkehrschaos-an-der-a100-berliner-senat-will-radspur-auf-der-elsenbrucke-in-autospur-umwandeln-14380334.html
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -1367,7 +1369,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-09-20 vvv
+#: last_checked: 2025-09-25 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2025-12-31 (Tsp zum Ersatzneubau) vvv
@@ -2837,8 +2839,10 @@ neues Verbundsteinpflaster	RW1; 10427,968 10324,925 10276,906
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und Sa 9-18 Uhr	RW1; 9858,744 10047,813 10187,872 10276,906 10324,925
 	RW1; 9858,744 9250,576
 Radweg nur aufgemalt	RW1; 9250,576 9858,744
-	RW1;RW4 9250,576 9200,562 9178,556
-	RW1;RW4 9178,556 9123,533 9069,506
+#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: XXX Wie wird die Radwegsituation aussehen?
+#: next_check: 2025-10-08
+	RW1;RW4 9250,576 9200,562 9178,556 9123,533 9069,506
 	RW1; 9069,506 9002,471 8906,392 8736,337
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8736,337 8906,392 9002,471 9069,506
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8736,337 8584,320 8470,329 8382,347 8250,392 8075,499 7937,583 7847,638
@@ -3175,7 +3179,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-25
 	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -7762,6 +7766,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 #: by[removed]: https://www.infravelo.de/projekt/karl-marx-strasse-1-und-2-ba/ (1. Halbjahr 2019)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.823256.php (zw. Uthmannstr. und Kienitzer Str., zwei Wochen ab 26.6.2019; später kommen noch weitere Bereiche hinzu)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-an-der-karl-marx-strasse-laufen_a221353
+#: by: https://entwicklungsstadt.de/nach-15-jahren-bauzeit-neukoelln-feiert-fertigstellung-der-neuen-karl-marx-strasse/
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv

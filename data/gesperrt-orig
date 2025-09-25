@@ -5015,9 +5015,10 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 # REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
 #: osm_watch: way id="4713304" version="50"
 #: priority: #A
-#: last_checked: 2025-08-05 (bahninfo-forum)
-#: check_frequency: 360d
-#: next_check: 2025-10-08 (pardok)
+#: last_checked: 2025-09-25 (DB)
+# REMOVED, #: check_frequency: 360d
+#: next_check: 2025-10-08 (pardok, DB website)
+#: valid: -20251008
 Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
 # 
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
@@ -5051,7 +5052,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
 #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können
-#: last_checked: 2025-09-12
+#: last_checked: 2025-09-25
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt)
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,10227

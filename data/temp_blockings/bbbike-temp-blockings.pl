@@ -38895,8 +38895,9 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1757706122, # 1767221999, # 2025-12-31 23:59
-       text  => 'Buckower Chaussee: der Bahnübergang wird demnächst (voraussichtlich ab 1.12.2022) wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
+       until => $isodate2epoch->("2025-10-08 11:00:00"), # 1757706122, # 1767221999, # 2025-12-31 23:59
+#      text  => 'Buckower Chaussee: der Bahnübergang wird demnächst (voraussichtlich ab 1.12.2022) wegen Bauarbeiten für eine neue Brücke komplett gesperrt',
+       text  => 'Buckower Chaussee: Brückenbau, Brücke wird am 8.10.2025 eröffnet',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -44738,7 +44739,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025)
+#: source_id: viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr)
 #: osm_watch: way id="1303423090" version="4"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: last_checked: 2025-08-18 (mapillary)
@@ -47944,7 +47945,8 @@ EOF
      { from  => undef, # 
        until => undef, # XXX
 #      text  => 'Wassermannstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
-       text  => 'Wassermannstr., Freystadter Weg, Lohnauer Steig und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+#      text  => 'Wassermannstr., Freystadter Weg, Lohnauer Steig und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+       text  => 'Lohnauer Steig, Selchowstr. und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
        type  => 'handicap',
        accept_multi_feature_distance => 2000,
        data  => <<'EOF',
@@ -47954,8 +47956,8 @@ EOF
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
-#: last_checked: 2025-09-02 (traffic) vvv
-#: check_frequency: 30d (website checks) vvv
+#: last_checked: 2025-09-25 (website check) vvv
+#: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025) (inaktiv)
@@ -47981,22 +47983,21 @@ EOF
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
 # REMOVED --- #: note: ab 28.07.2025, genauer Abschnitt unklar --- Wassermannstr.	q4::inwork 20637,3919 20776,3753
-#: note: 2. Abschnitt hinter der Dörpfeldstraße ab 01.09.2025
-Wassermannstr. (nördlich der Dörpfeldstraße)	q4::inwork 20637,3919 20583,3983
+# REMOVED --- #: note: 2. Abschnitt hinter der Dörpfeldstraße ab 01.09.2025 --- Wassermannstr. (nördlich der Dörpfeldstraße)	q4::inwork 20637,3919 20583,3983
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
 # REMOVED --- #: note: nur der Kreuzungsbereich betroffen, deshalb q4 -> q3 --- Wassermannstr.: Kreuzungsbereich Radickestr. gesperrt	q3::inwork 20776,3753 20637,3919
 # REMOVED (abgeschlossen) --- #: note: voraussichtlich ab 09.04.2025 --- Gellertstr.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20237,3392 20148,3490
 # REMOVED (vor Ort keine Bauarbeiten) --- #: note: voraussichtlich ab 09.04.2025 --- Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
 # REMOVED (Abgeschlossen) --- #: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt; mittlerweile: Maßnahmen ab dem 10.06.2025 fortgesetzt; mittlerweile: Bauende voraussichtlich am 04.08.2025 --- Wünschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
-#: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?); verlängert bis 08.08.2025; verlängert bis 19.09.2025
-# REMOVED (hier nicht) --- Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275
-Freystadter Weg	q4::inwork 21008,4275 20981,4628 20981,4696 20994,4761
-#: note: Temporäre Baustelleneinrichtungsfläche bis 26.09.2025
+# REMOVED (abgeschlossen) --- #: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?); verlängert bis 08.08.2025; verlängert bis 19.09.2025 --- # REMOVED (hier nicht) --- Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275 --- Freystadter Weg	q4::inwork 21008,4275 20981,4628 20981,4696 20994,4761
+#: note: Temporäre Baustelleneinrichtungsfläche bis 26.09.2025, nun bis Ende Oktober 2025
 Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 # REMOVED (mittlerweile: abgeschlossen mit Freigabe) --- #: note: Beginn ab dem 19.05.2025 (aber wo genau?); mittlerweile ab 02.06.2025 --- Zinsgutstr.	q4::inwork 20679,3944 20862,3824
 # REMOVED (hier nicht) --- Zinsgutstr.	q4::inwork 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
 # REMOVED ("Kabeltiefbau abgeschlossen") --- #: note: laut Haltestellenschilder vom 21.05.2025 07 Uhr bis 24.07.2025 17 Uhr; laut Website Verkehrsfreigabe am 08.08.2025 --- Flemmingstr.	q4::inwork 21848,4882 21726,4537 --- #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt --- Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 # REMOVED --- #: next_check ^^^
+#: note: wo genau?
+Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -48123,12 +48124,13 @@ EOF
 EOF
      },
      { from  => 1744520400, # 2025-04-13 07:00
-       until => $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
-       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 26.09.2025 17:00',
+       until => $isodate2epoch->("2025-10-31 23:59:59"), # $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
+#      text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 26.09.2025 17:00',
+       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Ende Oktober 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...) (inaktiv)
-#: note: bei rbb bis 26.09.2025 verlängert
+#: source_id: viz2021:13.37222,52.4556, (bis 31.10.2025)
 	q4::inwork 8365,5502 8365,5418
 EOF
      },
@@ -49291,16 +49293,16 @@ EOF
 EOF
      },
      { from  => 1752184800, # 2025-07-11 00:00
-       until => $isodate2epoch->("2025-09-19 18:00:00"),
-       text  => 'Landjägerstr.: Leitungsarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Mitte September 2025',
+       until => $isodate2epoch->("2025-10-10 18:00:00"), # $isodate2epoch->("2025-09-19 18:00:00"),
+       text  => 'Landjägerstr.: Leitungsarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Anfang Oktober 2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409465412/neuer-baustress-an-der-altstadt-koepenick-nur-noch-ein-albtraum.html
-#: note: laut Stromnetz-Website bis 19.09.2029
+#: note: laut Stromnetz-Website bis 19.09.2029, mittlerweile bis Anfang Oktober 2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-08-27
-#: next_check: 2025-09-19 (stromnetz website)
+#: last_checked: 2025-09-25 (stromnetz website)
+#: next_check: 2025-10-01 (stromnetz website)
 	q4::inwork 22740,4415 22542,4485 22495,4523
 EOF
      },
@@ -49502,15 +49504,15 @@ EOF
 EOF
      },
      { from  => 1753596000, # 2025-07-27 08:00
-       until => $isodate2epoch->("2025-10-06 17:00:00"), # 1756306800, # 2025-08-27 17:00
+       until => $isodate2epoch->("2025-11-01 17:00:00"), # 1756306800, # 2025-08-27 17:00
 #      text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 27.08.2025',
 #      text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 08.09.2025',
-       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung, vom 28.07.2025 bis 06.10.2025',
+       text  => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung voraussichtlich bis 01.11.2025',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv) (bis 26.09.2025) (bis 06.10.2025)
+#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv) (bis 26.09.2025) (bis 06.10.2025) (bis 01.11.2025)
 # REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 # REMOVED ---	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
 	2::inwork 18540,-38360 18433,-38781 18272,-39512 18138,-39957
@@ -50143,7 +50145,8 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
-#: last_checked: 2025-09-21
+#: next_check_id: MARKGRAFENDAMM-2022
+#: last_checked: 2025-09-25
 	q4::inwork 14641,10552 14608,10409 14558,10264
 EOF
      },

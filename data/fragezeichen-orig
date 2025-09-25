@@ -2556,8 +2556,11 @@ Königsweg: geplante Asphaltierung, geplante Fahrradstraße	?::projected -1082,214
 #: by: https://www.infravelo.de/projekt/koenigsweg-tietzenweg/ (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1598817.php (Königsweg: Sanierung, Markierung und Beschilderung vom 17. bis 26. September 2025)
 #: by: https://entwicklungsstadt.de/koenigsweg-in-steglitz-zehlendorf-wird-zur-fahrradstrasse-ausgebaut/
+#: osm_watch: note 4968979 1
+#: osm_watch: way id="4871595" version="30"
 #: next_check: 2025-09-26 (BA-Pressemitteilung)
 Königsweg: geplante Fahrradstraße	?::projected -878,2265 -844,2268 -790,2300 -745,2320 -670,2361 -505,2456 -409,2510
+#: osm_watch: way id="4864927" version="24"
 #: next_check: 2025-09-26 (BA-Pressemitteilung)
 Königsweg: Fahrradstraße geplant	?::projected -3096,1026 -3024,1069 -2813,1188 -2669,1266 -2605,1302
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1598817.php (Tietzenweg: Sanierung ab 20.10.2025)
@@ -4013,13 +4016,13 @@ Isenburger Weg: Neubau der Straße geplant	?::projected -7819,15342 -7867,15185 -
 #: check_frequency: 360d
 Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahrerbereich geplant	?::projected 13372,19707 13171,19837
 # 
-#: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick ("Beginn voraussichtlich ab dem 21.05.2025") (mittlerweile gibt es einen Termin nur für die Flemmingstr., für Gutenbergstr. "Termin folgt")
+#: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick ("Beginn voraussichtlich ab dem 21.05.2025") (mittlerweile gibt es einen Termin nur für die Flemmingstr., für Gutenbergstr. "Termin folgt") (mittlerweile "Spülbohrung" im Oktober 2025)
 #: priority: #A
-#: last_checked: 2025-09-14 (website) vvv
-# REMOVED (mittlerweile kein Termin mehr) --- #: next_check: 2025-05-21 vvv
+#: last_checked: 2025-09-25 (website) vvv
+#: next_check: 2025-10-01 (website) vvv
 Gutenbergstr.: geplante Leitungsarbeiten, wird es Einschränkungen für Radfahrer geben?	? 21789,4520 21903,4848 21848,4882
-# REMOVED (-> temp blockings) --- Flemmingstr.: geplante Leitungsarbeiten, wird es Einschränkungen für Radfahrer geben?	? 21726,4537 21848,4882 21856,4910
-# REMOVED --- #: next_check ^^^
+Flemmingstr.: geplante Leitungsarbeiten, wird es Einschränkungen für Radfahrer geben?	? 21726,4537 21848,4882 21856,4910
+#: next_check ^^^
 #: last_checked ^^^
 # 
 #: section ^^^
@@ -5610,7 +5613,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (hier: Höhe Ingrid-Reschke-Str., aber tatsächlich Höhe An den Eiswerken, bis 20.07.2025) (inaktiv)
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: XXX Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
-#: last_checked: 2025-09-21 vvv
+#: last_checked: 2025-09-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 15019,10803
@@ -6845,10 +6848,10 @@ B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,5167
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42751
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42752
 #: source_id: LS/221-E/22/017 (inaktiv)
-#: source_id: LS/221-E/25/018 (bis 18.07.2025) (inaktiv) (Neubau Radweg, bis 29.08.2025) (inaktiv)
+#: source_id: LS/221-E/25/018 (bis 18.07.2025) (inaktiv) (Neubau Radweg, bis 29.08.2025) (inaktiv) (bis 31.10.2025)
 #: last_checked: 2025-04-11 (mapillary)
-#: check_frequency: 180d
-#: next_check: 2025-08-29 (Verkehrsmeldung)
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2025-10-31 (Verkehrsmeldung)
 B2: straßenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 49872,67713 49907,67684 49908,67683 50386,68158 50632,68484 50863,68629
 # 
 # REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=33123 --- #: source_id: LS/723-P/20/210--- #: source_id: LS/723-P/21/238 --- #: next_check: 2022-04-30
@@ -7155,6 +7158,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://www.morgenpost.de/berlin/article409023035/u6-sanierung-in-tegel-fahrgaeste-brauchen-weiter-geduld.html (Fertigstellung der Brücke im Sommer 2025?)
 #: by: https://www.nd-aktuell.de/artikel/1191677.bvg-sperrung-der-u-bahnlinie-in-berlin-koennte-noch-laenger-dauern.html (bis 1. Mai 2027?)
 #: by: https://www.morgenpost.de/bezirke/reinickendorf/article409192394/sorgenkind-tegel-so-geht-es-voran-bei-der-sanierung-der-u6.html
+#: by: https://www.tagesspiegel.de/hinterher-ist-man-immer-schlauer-was-lief-schief-bei-der-u6-sanierung-im-berliner-norden-14377247.html (bis Ende 2026?)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022) (inaktiv)
 #: source_id: viz2021:13.307035,52.568102,23.02.2023,07:00 (Verschwenkung, bis 13.10.2023) (bis 31.03.2024) (bis 28.03.2024) (bis 31.03.2025) (bis 30.05.2025) (bis 12.06.2025) (bis 31.12.2025) (inaktiv)
 #: source_id[inactive]: bvg2021:u6#BVG311138_0
@@ -10986,6 +10990,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/streit-um-berliner-eisenbahn-flachen-ist-der-wohnungsbau-am-pankower-tor-gefahrdet-13801450.html
 #: by: https://www.morgenpost.de/bezirke/pankow/article409930390/pankower-tor-in-berlin-quartier-mit-2000-wohnungen-nicht-zu-verwirklichen-nabu-warnt.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/baustart-fur-milliardenprojekt-fruhestens-2027-naturschutz-konnte-pankower-tor-aushebeln--jahrelange-verzogerung-durch-klagen-droht-14373596.html
+#: by: https://entwicklungsstadt.de/wohnprojekt-pankower-tor-im-stillstand-2027-als-fruehester-termin-realistisch/ (Baustart frühestens 2027)
 #: osm_watch: way id="97369501" version="15"
 # REMOVED (404) --- #: also_indoor: webcam https://portal1761.webcam-profi.de/ (vom Lokschuppen)
 #: last_checked: 2025-09-17
@@ -12547,6 +12552,7 @@ Bebauungsplan 6-8: evtl. wird es einen Weg zwischen Hochstr. (Höhe Hasselfelder 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1428819.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/hohenstaufenplatz-plan.pdf (Verkehrszeichenplan)
 #: by: https://entwicklungsstadt.de/poller-und-entsiegelung-verkehrsberuhigung-im-graefekiez-schreitet-voran/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/strasse-soll-autofrei-werden-oldtimer-parkt-seit-fast-50-jahren-aus-protest-in-kreuzberg--nun-muss-er-weg-14384684.html (Erwähnung)
 #: osm_watch: way id="1122284350" version="4"
 #: osm_watch: note 4880568 3
 #: also_indoor: traffic (none)
