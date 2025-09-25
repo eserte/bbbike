@@ -55,10 +55,11 @@ my $ipc_run_tests = 3;
 my $json_xs_0_tests = 3;
 my $json_xs_tests = 5;
 my $json_xs_2_tests = 6;
+my $json_xs_3_tests = 4;
 my $yaml_tests = 7;
 my $xml_libxml_tests = 30;
 #plan 'no_plan';
-plan tests => 245 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_tests + $xml_libxml_tests;
+plan tests => 249 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips", "debug"),
 	       )) {
@@ -373,6 +374,33 @@ SKIP: {
     validate_bbbikecgires_data $data, 'Mehringdamm Richtung Norden';
     is $data->{Trafficlights}, 1, 'one traffic light seen';
     is $data->{Route}->[0]->{DirectionString}, 'nach Norden', 'direction string seen';
+}
+
+{
+    my %route_endpoints = (startc => '8861,12125', # Wilhelmstr. von N nach S
+			   zielc  => '9058,11564',
+			  );
+
+    { # 4 tests
+	my $resp = bbbike_cgi_search +{
+	    %route_endpoints
+	}, 'route with lots of traffic lights';
+	my $content = $resp->decoded_content;
+	expected_tag $resp, 'rm.route.html';
+	like_html $content, qr{0:03h\s+\(<b>bei 20 km/h</b>\)}, 'expected time'; # without the traffic lights, it should be 0:02h
+	like_html $content, qr{\Q5 Ampeln auf der Strecke (in die Fahrzeit einbezogen)}, 'five traffic lights in description';
+    }
+
+ SKIP: {
+	skip "need JSON::XS", $json_xs_3_tests
+	    if !eval { require JSON::XS; 1 };
+
+	my $resp = bbbike_cgi_search +{ %route_endpoints, output_as => 'json'}, 'json output';
+	expected_tag $resp, 'rm.route.json';
+	my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
+	validate_bbbikecgires_data $data, 'Wilhelmstr Richtung Süden';
+	is $data->{Trafficlights}, 5, 'five traffic lights seen';
+    }
 }
 
 SKIP: {
