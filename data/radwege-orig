@@ -361,7 +361,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-09-25 vvv
+#: last_checked: 2025-09-26 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -552,7 +552,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-09-26 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1003,7 +1003,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-09-08
+#: last_checked: 2025-09-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1041,7 +1041,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2025-07-26
+#: last_checked: 2025-09-26
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -1058,7 +1058,7 @@ Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/gefahrlicher-zickzack-kurs-statt-sicherheit-wird-der-millionenteure-radstreifen-auf-der-schonhauser-allee-jetzt-wieder-demontiert-13841635.html
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2025-09-17
+#: last_checked: 2025-09-26
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -1079,8 +1079,8 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,1552
 #: next_check_id: SCHOENHAUSERALLEE-2024
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2025-09-17
-noch nicht komplett markiert	RW3; 10917,15525 10902,15422
+#: last_checked: 2025-09-26
+provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
 neu asphaltiert	RW1; 10883,15251 10883,15129
@@ -1369,7 +1369,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-09-25 vvv
+#: last_checked: 2025-09-26 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2025-12-31 (Tsp zum Ersatzneubau) vvv
@@ -3020,7 +3020,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-09-22 vvv
+#: last_checked: 2025-09-26 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3228,7 +3228,7 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
 #: historical_note: ganz früher sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-26
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
@@ -3237,7 +3237,7 @@ provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beerman
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2025-09-16
+#: last_checked: 2025-09-26
 #: next_check: 2025-12-31
 #: valid: -20251231
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
@@ -3246,7 +3246,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-26
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3257,14 +3257,14 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-26
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2025-09-16
+#: last_checked: 2025-09-26
 #: next_check: 2025-12-31
 #: valid: -20251231
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
@@ -5823,6 +5823,7 @@ Radfahrer müssen Gehweg benutzen, eng	RW8; 19512,15092 19644,15320
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1600542.php (Fertigstellgung des Radwegs ab Brücke)
+#: by: https://marzahn-hellersdorf.com/fertigstellung-am-marzahner-knoten-neuer-geh-und-radweg-auf-der-landsberger-allee-eroeffnet/
 neu asphaltiert, breit	RW2; 18831,14823 18553,14678
 neu asphaltiert, breit	RW2; 18553,14678 18410,14614 18365,14607
 #: historical_note: früher (bis 2025?): Gehweg für Radfahrer frei, RW1;
@@ -7723,7 +7724,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-09-26 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7784,7 +7785,7 @@ Fahrradschleuse	RW3; 12639,8344 12598,8390
 	RW1; 11880,8955 11831,8989
 # note: Ende Karl-Marx-Str.
 # 
-vor der Ampel ein paar Meter zugeparkte Radspur, mit Schild	RW0; 12551,8612 12494,8501
+	RW4; 12517,8546 12494,8501
 # 
 	RW7;RW7 -2135,17633 -2048,17654
 	RW6;RW6 -3168,18051 -3226,18109 -3263,18151
@@ -7927,7 +7928,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2025-09-17 vvv
+#: last_checked: 2025-09-26 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -9668,5 +9669,5 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 	RW6;RW6 4204,21705 4198,21615
 #: by ^^^
 # 
-	RW7;RW7 11917,11186 11726,11265
+	RW7;RW7 11917,11186 11726,11265 11542,11342 11507,11355
 # 

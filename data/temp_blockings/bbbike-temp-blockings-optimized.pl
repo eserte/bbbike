@@ -1812,7 +1812,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-08-26
+#: last_checked: 2025-09-26
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -2025,12 +2025,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1758492000,
+         'from' => 1759701600,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 23.9.2025 bis 26.9.2025',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 7.10.2025 bis 10.10.2025',
          'type' => 'gesperrt',
-         'until' => 1758923999
+         'until' => 1760133599
        },
        undef,
        undef,
@@ -4904,20 +4904,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-#: by: http://spielstraßen.de/uebersicht.php#kreu
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php (2025)
-# REMOVED --- #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05. --- #: last_checked: 2024-03-17 --- #: next_check: 2024-05-01
-	q4::temp::play 12822,10487 12897,10439
-',
-         'from' => 1747864800,
-         'id' => 3552,
-         'recurring' => 1,
-         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
-         'type' => 'handicap',
-         'until' => 1758904200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5102,7 +5089,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 # REMOVED (dieser Wegteil wurde laut osm wieder geöffnet) --- #: osm_watch: way id="147686211" version="11"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-07-17
+#: last_checked: 2025-09-26
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -5995,28 +5982,7 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: http://dunckerstrassenfest.de/ (zwischen Stargarder Str. und Ahlbecker Str., laut Videobildern auch bis zur S-Bahnbrücke)
-#: by: https://www.berlin.de/events/4978409-2229501-dunckerstrassenfest.html
-#: by: https://www.berlinstadtservice.de/xinh/Strassenfest.html?date=20250831
-	2::temp 11595,15460 11632,15530 11654,15572 11689,15639
-',
-         'from' => 1758664800,
-         'id' => 3877,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 25. September 2025 von 14 bis 22 Uhr',
-         'type' => 'handicap',
-         'until' => 1758830400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6156,7 +6122,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: osm_watch: way id="23121446" version="36"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-09-17 vvv
+#: last_checked: 2025-09-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -6215,7 +6181,7 @@ Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
-#: last_checked: 2025-08-20
+#: last_checked: 2025-09-26
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 ',
@@ -6733,7 +6699,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-09-23 vvv
+#: last_checked: 2025-09-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -6833,6 +6799,7 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1569509.php (neue Sperrung: 17.06. bis zum 19.12.2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/vz-plan-promenade-12207-berlin_umleitung_stand-040625.pdf
 #: by: https://stadtrand-nachrichten.de/teilsperrung-der-baekestrasse/
+#: by: https://stadtrand-nachrichten.de/baekestrasse-bleibt-laenger-gesperrt/ (Sperrung bis 31. Januar 2026, danach Sanierung der Brücke)
 # REMOVED --- #: XXX möglicherweise Neubau ab 2022 --- mittlerweile ab 2023?
 #: source_id: viz2021:13.316447,52.434463,18.06.2024,14:48 (ohne Endedatum) (bis 30.08.2024) (inaktiv) (bis 31.10.2024) (bis 16.12.2024) (inaktiv)
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025) (inaktiv)
@@ -6845,7 +6812,7 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
 #: last_checked: 2025-08-30 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-12-19 vvv
+#: next_check: 2026-01-31 (stadtrand-nachrichten) vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
 #: osm_watch: way id="5363433" version="28"
 #: osm_watch[closed]: note 4442541 4
@@ -6866,9 +6833,9 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 ',
          'from' => 1750024800,
          'id' => 4110,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., vom 17.06.2025 bis voraussichtlich 19.12.2025',
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., vom 17.06.2025 bis voraussichtlich Ende Januar 2026',
          'type' => 'gesperrt',
-         'until' => 1766163600
+         'until' => 1769878800
        },
        {
          'data' => '#: note: Sa-Öffnung gesehen (Tor zu, aber nicht verschlossen): 2025-07-26 13:57
@@ -6921,7 +6888,29 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/8521846-2229501-koepenicker-herbstspektakel.html
+	2::temp 22071,4501 22057,4531
+	2::temp 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
+	2::temp 22074,4664 22138,4642
+	2::temp 22153,4840 22153,4861
+',
+         'from' => 1760565600,
+         'id' => 4121,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              16,
+                              'months',
+                              10
+                            ]
+                          ],
+         'text' => 'Köpenicker Herbstspektakel: Luisenhain kann vom 17. Oktober 2025 bis 19. Oktober 2025 gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => 1792432800
+       },
        undef,
        undef,
        undef,
@@ -8107,7 +8096,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-09-16
+#: last_checked: 2025-09-26
 #: check_frequency: 30d
 #: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -8176,7 +8165,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-09-26 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8760,7 +8749,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-09-22
+#: last_checked: 2025-09-26
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -8906,9 +8895,10 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        {
          'data' => '#: next_check_id: MELCHIOR-2025
 #: add_fragezeichen: Ist die Fahrbahn wieder offen?
-#: last_checked: 2025-09-22
+#: last_checked: 2025-09-26
 #: check_frequency: 7d
-	q4::inwork 11917,11186 11726,11265
+# REMOVED ---	q4::inwork 11917,11186 11726,11265
+	q4::inwork 11726,11265 11542,11342 11507,11355
 ',
          'from' => undef,
          'id' => 4438,
@@ -9041,7 +9031,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-09-25
+#: last_checked: 2025-09-26
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9074,6 +9064,29 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'text' => 'Laehrstr.: Anbindung Teltower Damm wegen Bauarbeiten gesperrt, vom 22.09.2025 bis voraussichtlich Ende April 2026',
          'type' => 'handicap',
          'until' => 1777586399
+       },
+       {
+         'data' => '#: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
+#: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: last_checked: 2025-09-26
+#: check_frequency: 14d
+	q4::inwork 14490,10610 14312,10657
+',
+         'from' => undef,
+         'id' => 4452,
+         'text' => 'Persiusstr.: unklare Sperrung zwischen Bödikerstr. und Bossestr., Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: LS/221-E/25/115 (bis 17.10.2025)
+	2::inwork 49812,67593 49633,67431
+',
+         'from' => 1759644000,
+         'id' => 4453,
+         'text' => 'Angermünde: Sperrung der Bahnbrücke, 06.10.2025 08:00 Uhr bis 17.10.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1760713200
        }
      
 );
