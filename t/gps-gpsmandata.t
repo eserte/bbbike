@@ -470,7 +470,7 @@ EOF
     local $SIG{__WARN__} = sub { push @warnings, @_ };
     local $^W = 1;
     $gps->parse($trk_sample_file);
-    like $warnings[0], qr{\Q2x Use of uninitialized value \E\$\Qf[4] in pattern match (m//) at \E}, 'expected accumulated warning';
+    like $warnings[0], qr{\Q2x Use of uninitialized value \E(\$f\[4\] )?\Qin pattern match (m//) at \E}, 'expected accumulated warning';
     is scalar(@warnings), 1, 'no other warnings';
 }
 
