@@ -335,16 +335,21 @@ install_old_perl_dependencies() {
 	esac
 	# Next phase
         case "$PERLBREW_PERL" in
+	    5.8|5.10|5.12|5.14|5.16|5.18)
+		# Object::Iterate 1.143 runs only with perl 5.20+
+		cpanm --quiet --notest Object::Iterate~"<1.143"
+		;;
+	esac
+        case "$PERLBREW_PERL" in
+	    5.8|5.10|5.12|5.14)
+		cpanm --quiet --notest MIME::Types~"<2.29"
+		;;
+	esac
+        case "$PERLBREW_PERL" in
 	    5.8|5.10|5.12|5.14|5.16)
 		# ExtUtils::ParseXS 3.59 causes Pango build failures
 		# with old perls
 		cpanm --quiet --notest ExtUtils::ParseXS~"<3.59"
-		;;
-	esac
-        case "$PERLBREW_PERL" in
-	    5.8|5.10|5.12|5.14|5.16|5.18)
-		# Object::Iterate 1.143 runs only with perl 5.20+
-		cpanm --quiet --notest Object::Iterate~"<1.143"
 		;;
 	esac
 	case "$PERLBREW_PERL" in
