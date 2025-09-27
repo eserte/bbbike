@@ -3435,7 +3435,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q4 15623,9028 15633,9007 15630,8979 15623,8949 15617,8924 15608,8882 15591,8848
 	q4 15678,8911 15617,8924
 	q4 15630,8979 15658,9007
-	q4 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
+	q4 14321,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 	q4 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 	q4 14719,9419 14774,9437 14809,9466
 	q4 14588,9473 14556,9581
@@ -3667,10 +3667,10 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
 # REMOVED (hier mittlerweile wieder offen) --- Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
 Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916
-Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14316,9542 14384,9565 14478,9545
-# REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14322,9526 14286,9457 14257,9432
+# REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14321,9530 14332,9543 14384,9565 14478,9545
+# REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14322,9526 14347,9452
+Puschkinallee - Am Treptower Park: Engstellen, Umwege	q3::inwork 14318,9688 14316,9542 14321,9530 14347,9452
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15181,8967 15245,8916
 # REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
@@ -3679,7 +3679,7 @@ Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 1
 ',
          'from' => undef,
          'id' => 3028,
-         'text' => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
+         'text' => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3997,7 +3997,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
 #: osm_watch: note 4813149 2
-#: osm_watch: way id="198581621" version="19"
+#: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
 #: last_checked: 2025-09-14
@@ -4177,7 +4177,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-09-06
+#: last_checked: 2025-09-27
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -4795,7 +4795,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-09-20 (mapillary)
+#: last_checked: 2025-09-27
 #: check_frequency: 30d
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -4820,10 +4820,10 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-08-28 vvv
+#: last_checked: 2025-09-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
-#: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege
+#: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
 Weserstr. zwischen Innstr. und Treptower Str.	q4::inwork 13217,8493 13384,8354 13566,8212
 #: source_id: bvg2024:171#HIM_FREETEXT_286260
 #: by: https://fahrinfo.vbb.de/him-uploads/1748254774225_Kartenausschnitt_Treptower_Str.png
@@ -5756,8 +5756,8 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
 #	2::inwork 16222,25829 16532,26174 17101,26701
 #: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
 #: add_fragezeichen: Ist der Röntgentaler Weg wieder offen?
-#: last_checked: 2025-09-01 (mapillary) vvv
-# REMOVED --- #: next_check: 2025-08-31 (DB website) vvv
+#: last_checked: 2025-09-27 (DB website) vvv
+#: next_check: 2028-03-15 (DB website) vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
 #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
 #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025) (inaktiv)
@@ -5766,12 +5766,12 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
 #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
 #	q3::inwork; 17101,26701 16532,26174
 # REMOVED (nicht mehr?)	q3::inwork 17101,26701 16532,26174
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3801,
-         'text' => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., Ende der Bauarbeiten unbekannt',
+         'text' => 'Röntgentaler Weg: Sperrung zwischen Pöllnitzweg und Wiltbergstr., voraussichtlich bis Anfang 2028',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7049,7 +7049,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-09-19 (tempelhoferfeld website) vvv
+#: last_checked: 2025-09-27 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website, entwicklungsstadt) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -7113,6 +7113,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
        undef,
        undef,
        {
+         'accept_multi_feature_distance' => 2000,
          'data' => '#: by: https://stadtundland.de/unternehmen/presse/2014/mehr-als-50-000-besucher-erwartet-stadt-und-land-festival-der-riesendrachen-auf-dem-tempelhofer-feld-am-13-09-2014
 #: by: https://stadtundland.de/unternehmen/veranstaltungen/stadt-und-land-festival-der-riesendrachen
 #: by: https://www.berlin.de/events/2722189-2229501-festival-der-riesendrachen-tempelhofer-f.html (27. September 2025)
@@ -7124,6 +7125,9 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 	2::temp 9653,7635 9522,7624 9525,7558 9431,7425 9386,7326
 	2::temp 9545,7426 9525,7558
 sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
+sehr langsames Passieren am Eingang Herrfurthstr.	q4::temp 11472,7899 11458,7897 11439,7894
+langsames Passieren im Bereich Herrfurthstr.	q3::temp 11439,7894 11460,7802
+langsames Passieren im Bereich Herrfurthstr.	q3::temp 11458,7897 11490,7735
 ',
          'from' => 1758837600,
          'id' => 4169,
@@ -8096,7 +8100,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-27
 #: check_frequency: 30d
 #: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -8165,7 +8169,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
-#: last_checked: 2025-09-26 vvv
+#: last_checked: 2025-09-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8311,9 +8315,9 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        },
        undef,
        {
-         'data' => '#: also_indoor: traffic (G,re-H,T)
+         'data' => '#: also_indoor: traffic (G,ex-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-21
+#: last_checked: 2025-09-27
 #: check_frequency: 10d (traffic)
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -8895,6 +8899,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        {
          'data' => '#: next_check_id: MELCHIOR-2025
 #: add_fragezeichen: Ist die Fahrbahn wieder offen?
+#: osm_watch: note 3954739 11
 #: last_checked: 2025-09-26
 #: check_frequency: 7d
 # REMOVED ---	q4::inwork 11917,11186 11726,11265
@@ -9031,7 +9036,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-27
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9068,7 +9073,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-27
 #: check_frequency: 14d
 	q4::inwork 14490,10610 14312,10657
 ',
@@ -9087,6 +9092,16 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'text' => 'Angermünde: Sperrung der Bahnbrücke, 06.10.2025 08:00 Uhr bis 17.10.2025 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1760713200
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
+	q4::inwork; 17916,5675 18013,5627
+',
+         'from' => 1759010400,
+         'id' => 4454,
+         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 29.09.2025 bis 31.10.2025',
+         'type' => 'handicap',
+         'until' => 1761951600
        }
      
 );

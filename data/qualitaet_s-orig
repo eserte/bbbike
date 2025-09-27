@@ -11,7 +11,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9818,9239 9801,9241
 # REMOVED (existiert nicht mehr) --- #: next_check_id: DIESEL-2019 --- #: XXX und außerdem auch schauen, ob es wieder zum Mergenthalerring wieder ein Tor gibt und dieses ein Schloss hat --- # REMOVED --- #: osm_watch: way id="524560334" version="5" --- #: osm_watch: way id="524560332" version="7" --- #: last_checked: 2025-01-27 vvv --- #: check_frequency: 60d vvv --- (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074 --- #: osm_watch: way id="680579631" version="8" --- #: osm_watch: way id="1187544110" version="1" --- (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1- 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998 14287,10892
-# REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14305,7415 14334,7395 14369,7376 14379,7372 14430,7348 14530,7301
+# REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14305,7415 14323,7403 14334,7395 14369,7376 14379,7372 14430,7348 14530,7301
 # REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -129,7 +129,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="20"
-#: last_checked: 2025-09-20 (mapillary)
+#: last_checked: 2025-09-27
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -149,7 +149,7 @@ Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9170,9206 915
 Methfesselstr.: mäßiges Kopfsteinpflaster	Q2 9115,9046 9105,9018 9063,8935 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
 Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,6436 7227,6102
-#: XXX wird dieses Teilstück asphaltiert?
+#: XXX wird dieses Teilstück asphaltiert? (vermutlich nicht mehr)
 #: XXX Baumaßnahme GL7.6, GL7.7 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf (erwähnt)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf
@@ -168,7 +168,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: by[removed]: http://www.infravelo.de/projekt/63b594ddc779a1470cd4bf4a65fe7aaf/ (1. Quartal 2023 - 3. Quartal 2023) (umbenannt)
-#: by: https://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung) (3. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2025 - 3. Quartal 2025) (kein Status mehr) (gelöscht)
+#: by: https://www.infravelo.de/projekt/priesterweg-hans-baluschek-park/ (1. Quartal 2024 - 3. Quartal 2024) (Status: Vorgesehen -> in Planung) (3. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2025 - 3. Quartal 2025) (kein Status mehr) (gelöscht) (Redirect auf andere pilotprojekt-URL)
 #: by: https://www.infravelo.de/projekt/pilotprojekt-priesterweg-hans-baluschek-park/ (1. Quartal 2025 - 1. Quartal 2025) (abgeschlossen)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strecke-am-s-bahnhof-soll-bald-asphaltiert-werden_a375032 (Fertigstellung bis Ende 2023 möglich)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-sitzung-vom-04072024-.pdf (4m breiter Asphaltstreifen, Bau für 2025 geplant)
@@ -177,9 +177,9 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.tagesspiegel.de/berlin/bezirke/billiger-und-umweltschonender-als-asphaltieren-berliner-kopfsteinpflaster-abgefrast-furs-huckelfreie-radfahren-13554001.html
 #: osm_watch: way id="102486250" version="31"
 #: osm_watch[closed]: note 4659483 8
-# REMOVED (confirmed) --- --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
+# REMOVED (confirmed) --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
 #: last_checked: 2025-08-30
-#: check_frequency: 120d
+#: check_frequency: 180d
 # REMOVED (ehemaliger infravelo-Eintrag) --- #: next_check: 2025-09-30 (infravelo)
 #: historical_note: früher (bis April 2025): mäßiges bis schlechtes Kopfsteinpflaster, Q2-
 Priesterweg: abgefrästes Kopfsteinpflaster	Q2+ 7227,6102 7227,6080 7227,6058 7223,5890
@@ -564,7 +564,7 @@ Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 1156
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866 (Antrag zum Radverkehr auf der Oderbrücke)
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023) (inaktiv)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2025-07-18
+#: last_checked: 2025-09-27
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
@@ -2075,7 +2075,7 @@ Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934
 Treptower Park: wassergebundene Decke	Q1 14588,9473 14556,9581
 #: historical_note: früher (bis Sommer 2025): Schotterweg, Q2
-Treptower Park: wassergebundene Decke	Q1 14257,9432 14286,9457 14322,9526
+Treptower Park: wassergebundene Decke	Q1 14257,9432 14286,9457 14321,9530
 Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674
 Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14577,9641
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
@@ -4620,10 +4620,12 @@ Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27863,943 27810,987 27775,1016 27568,1188
 Plutoweg: Asphalt	Q0 31082,3366 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
 #: historical_note: früher (vor den Bauarbeiten 2025): Asphalt, Q0
-Treptower Park: Asphalt mit zahlreichen fehlenden Stellen	Q1 14318,9688 14316,9542 14322,9526 14347,9452 14398,9373 14382,9299
+Treptower Park: wassergebunde Decke und Kleinsteinpflaster	Q1 14318,9688 14316,9542 14321,9530
+#: historical_note: früher (vor den Bauarbeiten 2025): Asphalt, Q0
+Treptower Park: Asphalt mit zahlreichen fehlenden Stellen	Q1 14321,9530 14347,9452 14398,9373 14382,9299
 Treptower Park: wassergebundene Decke	Q1 14398,9373 14485,9271 14531,9244
 #: historical_note: bis Frühjahr 2025: Asphalt, einige Wurzelschäden, Q1+
-Treptower Park: wassergebundene Decke	Q1 14316,9542 14384,9565 14478,9545
+Treptower Park: wassergebundene Decke	Q1 14321,9530 14332,9543 14384,9565 14478,9545
 Treptower Park: wassergebundene Decke	Q1 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 Treptower Park: wassergebundene Decke	Q1 14705,9034 14644,9130 14628,9158 14612,9190 14531,9244
 Treptower Park: wassergebundene Decke	Q1 14475,9199 14531,9244
@@ -13525,10 +13527,11 @@ Märkische Allee [Wohngebiet]: Beton	Q0- 21377,18663 21299,18508
 Bruno-Baum-Str.: Beton	Q0- 20260,15434 20286,15382 20123,15293 19997,15122
 Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 19768,14674 19719,14566 19687,14469
 #: historical_note: früher (bis 2025?): Asphalt mit Schäden, Q1
+#: historical_note: dann (bis Herbst 2025?): unbefestigte Baustraße, Q2
 #: XXX die Straße wird neu gemacht
-#: last_checked: 2025-07-18
+#: last_checked: 2025-09-27
 #: check_frequency: 45d
-(Verlängerung der Siegfriedstr.): unbefestigte Baustraße	Q2 11664,6796 11488,6781
+(Verlängerung der Siegfriedstr.): Asphalt ohne letzte Deckschicht	Q1+ 11664,6796 11488,6781
 Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 (Gorgasring - Nonnendammallee): Verbundsteinpflaster	Q1 -695,14819 -676,14773 -679,14743 -941,14637
 # REMOVED --- #: next_check_id: TEGELERBRUECKE-2021 --- (provisorische Umleitung): Asphalt	Q0 -192,16054 -174,16084
@@ -13661,7 +13664,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2025-07-02
+#: last_checked: 2025-09-21
 #: check_frequency: 90d
 An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
@@ -19556,8 +19559,9 @@ Am Schloßpark: Asphalt mit einigen Rissen	Q0- 10775,19054 10695,18937
 #: confirmed_by: srt
 #: by: https://www.morgenpost.de/bezirke/pankow/article409633240/schlosspark-ueberlastet-pankow-baut-diese-neue-fahrrad-route.html (Asphaltierung nach den Sommerferien 2025?)
 #: by: https://www.tagesspiegel.de/berlin/immer-magerere-bilanz-diese-28-berliner-radwege-sollen-trotzdem-2025-noch-eroffnen-14138993.html (Projekt soll 2025 fertig werden)
+#: by: https://www.infravelo.de/projekt/am-schlosspark/ (3. Quartal 2025 - 4. Quartal 2025)
 #: last_checked: 2024-10-16 (mapillary)
-#: next_check: 2025-09-30 (MoPo)
+#: next_check: 2025-12-31 (infravelo)
 Am Schloßpark: schlechtes Kopfsteinpflaster	Q3 10695,18937 10621,18837
 #: corrected_by: srt (Asphalt, Q0 -> ...)
 Am Schloßpark: Asphalt mit einigen Rissen	Q0- 10621,18837 10542,18749 10527,18718 10496,18704

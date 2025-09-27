@@ -208,6 +208,12 @@ Brunnenstr. -> Humboldthain: Mittelstreifen, zunächst den linken Gehweg benutzen
 Humboldthain - Brunnenstr.: Mittelstreifen, Ampel zur rechten Hand benutzen	DH:tl:len=60 9092,15789 9255,15816 9242,15843
 Rummelsburger Str. -> Mentelinstr.: Bordstein	DH:kerb_down 18010,7137 17847,7356 17833,7351
 Mentelinstr. -> Rummelsburger Str.: Borstein	DH:kerb_up 17833,7351 17847,7356 17769,7465
+Siegfriedstr./Hermannstr.: Umweg über Fußgängerampel rechts	DH:len=26:tl 12122,6886 12342,6936 12479,6969
+Siegfriedstr./Hermannstr.: Umweg über Fußgängerampel links	DH:len=26:h=q3-,26:tl 12479,6969 12342,6936 12122,6886
+Hermannstr. -> Siegfriedstr.: Umweg über Fußgängerampel	DH:len=26:tl 12317,7007 12342,6936 12479,6969
+Siegfriedstr. -> Hermannstr.: links zur Fußgängerampel	DH:h=q3-,26 12479,6969 12342,6936 12347,6923
+Hermannstr. -> Siegfriedstr.: bereits an der Fußgängerampel die Straßenseite wechseln	DH:h=q3-,26 12347,6923 12342,6936 12122,6886
+Siegfriedstr. -> Hermannstr.: Umweg über Fußgängerampel rechts	DH:len=26:tl 12122,6886 12342,6936 12317,7007
 Landsberger Allee	DH:t=60 19205,14980 19196,14976 19200,14963
 Landsberger Allee	DH:t=60 19015,14901 18831,14823 18553,14678
 Marggraffbrücke: Radfahrer Richtung Nordwesten müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20:len=30 16747,6813 16720,6845

@@ -859,7 +859,7 @@ Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,
 # REMOVED (hier nicht) --- Faucherweg	1 -1299,14797 -1282,14789 -1251,14772 -1207,14781
 Faucherweg	1 -1207,14781 -1145,14819 -898,14894
 Römerweg	1s:q2 19236,9710 19450,9728 19459,9842
-Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
+Michaelkirchplatz	1 11451,11378 11458,11394 11491,11396 11514,11372 11507,11355
 #: by: Ulrike Orlowski vvv
 Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
@@ -4012,6 +4012,11 @@ Schwingtor	BNP:5::trailer=10 11543,20272
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~22-09-2025-b1-spatenstich-altsaedtischer-bahnhof (Freigabe 2028?)
+#: source_id: LS/223-P/25/102 (bis 21.11.2025)
+#: next_check: 2028-06-30
+Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
+# 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=784716#post784716
 #: osm_watch[closed]: note 4940349 2
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
@@ -4370,7 +4375,7 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-09-21 (mapillary) vvv
+#: last_checked: 2025-09-27 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-04-15 (Tsp) vvv
 #: osm_watch: way id="1199463691" version="6"

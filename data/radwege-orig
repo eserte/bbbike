@@ -361,7 +361,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-09-26 vvv
+#: last_checked: 2025-09-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1003,7 +1003,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1342,6 +1342,10 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.tagesschau.de/inland/regional/berlin/rbb-berlin-neue-plaene-gegen-a100-chaos-senat-will-weiteren-kfz-streifen-100.html (Zweirichtungsverkehr geplant, auf der östlichen Seite)
 #: by: https://entwicklungsstadt.de/elsenbruecke-in-treptow-fahrradweg-wird-in-zusaetzliche-autospur-umgewandelt/
 #: by: https://www.tagesspiegel.de/berlin/verkehrschaos-an-der-a100-berliner-senat-will-radspur-auf-der-elsenbrucke-in-autospur-umwandeln-14380334.html
+#: by: https://changing-cities.org/wieder-ein-radweg-weniger-in-berlin/
+#: by: https://www.morgenpost.de/berlin/article410077159/a100-in-berlin-verkehrssenatorin-kuendigt-neuerung-fuer-elsenbruecke-an.html
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410084587/neue-wege-ueber-die-elsenbruecke-zu-gefaehrlich-fuer-radfahrer.html
+#: by: https://www.morgenpost.de/berlin/article410094838/neuer-a100-abschnitt-das-sind-die-folgen-fuer-die-elsenstrasse.html
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -1369,7 +1373,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-09-26 vvv
+#: last_checked: 2025-09-27 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2025-12-31 (Tsp zum Ersatzneubau) vvv
@@ -1837,14 +1841,14 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
 # REMOVED --- #: next_check_id: SONNENALLEE-2014 --- #: XXX laut fritz & vmz bis Ende Dezember 2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111 --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: last_checked: 2018-06-06 --- #: next_check: 2018-08-17 --- #: check_frequency: 30d
-	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14305,7415 14174,7505
+	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14323,7403 14305,7415 14174,7505
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: by: https://portal1828.webcam-profi.de/
-#: last_checked: 2025-09-13 (webcam)
+#: last_checked: 2025-09-27 (webcam)
 #: check_frequency: 21d
 	RW0; 14174,7505 14305,7415
-überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14305,7415 14334,7395 14369,7376
+überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14305,7415 14323,7403 14334,7395 14369,7376
 	RW1; 14369,7376 14379,7372 14430,7348 14530,7301
 	RW2; 14530,7301 14617,7243
 	RW1; 14015,7631 13919,7707
@@ -3228,7 +3232,7 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
 #: historical_note: ganz früher sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-27
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
@@ -5380,7 +5384,7 @@ Grünbeschichtung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 	RW1;RW1 14011,7103 14069,7100
 # REMOVED (nur noch ein kleines Stück ohne Radweg) --- #: XXX Radweg wegen Bauarbeiten aufgehoben --- #: source_id: LMS-BR_r_LMS-BR_62750 --- #: source_id: 2147339827 --- #: XXX laut VMZ und fritz bis Ende 2017 --- #: last_checked: 2017-11-15 --- #: next_check: 2017-12-20
 	RW1;RW1 14069,7100 14196,7086
-neues, aber trotzdem etwas welliges Verbundsteinpflaster	RW1;RW1 14196,7086 14291,7033 14344,7003
+neues, aber trotzdem etwas welliges Verbundsteinpflaster	RW1;RW1 14196,7086 14245,7059 14291,7033 14344,7003
 	RW1; 14344,7003 14567,6810
 bestehender Radweg abgesperrt	RW0; 14567,6810 14344,7003
 Verbundsteinpflaster	RW1; 14567,6810 14724,6668 14843,6558 15026,6391 15135,6291 15187,6245 15300,6148 15332,6138
@@ -7724,7 +7728,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2025-09-26 vvv
+#: last_checked: 2025-09-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7771,7 +7775,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-09-27 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
