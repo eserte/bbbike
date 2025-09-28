@@ -3670,7 +3670,7 @@ Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829 15439,8839 15297
 # REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14321,9530 14332,9543 14384,9565 14478,9545
 # REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-Puschkinallee - Am Treptower Park: Engstellen, Umwege	q3::inwork 14318,9688 14316,9542 14321,9530 14347,9452
+Puschkinallee - Am Treptower Park: Engstellen, Umwege	q3::inwork 14318,9688 14316,9542 14321,9530 14347,9452 14398,9373
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15181,8967 15245,8916
 # REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
@@ -7112,39 +7112,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
        undef,
        undef,
        undef,
-       {
-         'accept_multi_feature_distance' => 2000,
-         'data' => '#: by: https://stadtundland.de/unternehmen/presse/2014/mehr-als-50-000-besucher-erwartet-stadt-und-land-festival-der-riesendrachen-auf-dem-tempelhofer-feld-am-13-09-2014
-#: by: https://stadtundland.de/unternehmen/veranstaltungen/stadt-und-land-festival-der-riesendrachen
-#: by: https://www.berlin.de/events/2722189-2229501-festival-der-riesendrachen-tempelhofer-f.html (27. September 2025)
-#: by: https://www.morgenpost.de/berlin/article410073994/drachenfestival-bahnhof-tempelhof-und-autobahnabfahrten-dicht.html
-#: source_id: viz2021:13.385777,52.474404,21.09.2024,10:00 (bis 21.09.2024) (inaktiv)
-	2::temp 9471,7703 9522,7624 9562,7796
-	2::temp 9474,7182 9545,7426 9592,7330
-	2::temp 9522,7624 9362,7616
-	2::temp 9653,7635 9522,7624 9525,7558 9431,7425 9386,7326
-	2::temp 9545,7426 9525,7558
-sehr langsames Passieren am südlichen Ausgang	q4::temp 9242,7286 9302,7294
-sehr langsames Passieren am Eingang Herrfurthstr.	q4::temp 11472,7899 11458,7897 11439,7894
-langsames Passieren im Bereich Herrfurthstr.	q3::temp 11439,7894 11460,7802
-langsames Passieren im Bereich Herrfurthstr.	q3::temp 11458,7897 11490,7735
-',
-         'from' => 1758837600,
-         'id' => 4169,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Tempelhofer Feld: Fest der Riesendrachen, Durchfahrt nicht oder nur sehr langsam möglich, am 27.9.2025 von 11:00 Uhr bis 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1758996000
-       },
+       undef,
        undef,
        undef,
        {
@@ -7413,7 +7381,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: also_indoor: traffic (ex-B,ex-T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-09-22
+#: last_checked: 2025-09-28
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -7790,7 +7758,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-28
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -8220,7 +8188,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-22 (traffic) vvv
+#: last_checked: 2025-09-28 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
@@ -8688,8 +8656,9 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'data' => '#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
 #: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
 #: also_indoor: traffic (G,T,H)
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-28 (traffic)
 #: check_frequency: 14d (traffic)
+#: next_check: 2025-10-10
 	q3::inwork 10066,10071 9837,10117
 ',
          'from' => 1754456400,

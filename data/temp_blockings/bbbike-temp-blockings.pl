@@ -29572,7 +29572,7 @@ Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829 15439,8839 15297
 # REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14321,9530 14332,9543 14384,9565 14478,9545
 # REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-Puschkinallee - Am Treptower Park: Engstellen, Umwege	q3::inwork 14318,9688 14316,9542 14321,9530 14347,9452
+Puschkinallee - Am Treptower Park: Engstellen, Umwege	q3::inwork 14318,9688 14316,9542 14321,9530 14347,9452 14398,9373
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15181,8967 15245,8916
 # REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
@@ -46934,7 +46934,7 @@ EOF
 #: also_indoor: traffic (ex-B,ex-T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-09-22
+#: last_checked: 2025-09-28
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -47848,7 +47848,7 @@ EOF
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-28
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -48804,7 +48804,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-22 (traffic) vvv
+#: last_checked: 2025-09-28 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
@@ -49649,8 +49649,9 @@ EOF
 #: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
 #: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
 #: also_indoor: traffic (G,T,H)
-#: last_checked: 2025-09-20
+#: last_checked: 2025-09-28 (traffic)
 #: check_frequency: 14d (traffic)
+#: next_check: 2025-10-10
 	q3::inwork 10066,10071 9837,10117
 EOF
      },
