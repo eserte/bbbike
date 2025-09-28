@@ -3,18 +3,17 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015,2016,2017,2019,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016,2017,2019,2023,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.09';
+$VERSION = '1.10';
 
 use FindBin;
 
@@ -97,6 +96,18 @@ sub gps_data_viewer {
     my $prev_or_next_file = sub ($) {
 	my $inc = shift;
 	return if !defined $gps_data_viewer_file;
+
+	if (-d $gps_data_viewer_file) {
+	    # special handling for directories: "<" shows first file, ">" last file in directory
+	    my $use_inx = $inc < 0 ? 0 : -1;
+	    my $file = (bsd_glob "$gps_data_viewer_file/*.trk")[$use_inx];
+	    if (defined $file) {
+		$gps_data_viewer_file = $file;
+		$show_and_plot_file->();
+	    }
+	    return;
+	}
+
 	my $dir = dirname $gps_data_viewer_file;
 	my @files = grep { /\.trk$/ } bsd_glob "$dir/*"; # XXX what about .gpx files?
 	return if !@files;
