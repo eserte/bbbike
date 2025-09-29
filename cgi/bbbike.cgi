@@ -4072,7 +4072,7 @@ sub display_route {
 	    my $def = {};
 	    $def->{Pref} = ($q->param('pref_speed') && $speed == $q->param('pref_speed')) ? "1" : "";
 	    my $time;
-	    if ($handicap_net) {
+	    if ($handicap_net || $qualitaet_net) {
 		$time = 0;
 		my @realcoords = @{ $r->path };
 		for(my $ii=0; $ii<$#realcoords; $ii++) {
