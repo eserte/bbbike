@@ -59,7 +59,7 @@ my $json_xs_3_tests = 4;
 my $yaml_tests = 7;
 my $xml_libxml_tests = 30;
 #plan 'no_plan';
-plan tests => 249 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
+plan tests => 264 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips", "debug"),
 	       )) {
@@ -784,6 +784,39 @@ SKIP: {
 	my $content = $resp->decoded_content;
 	like_html($content, qr{after 0.03 km.*turn around.*Hohenstaufenstr..*0.0 km}, 'Found "turn around" (English)');
 	like_html($content, qr{after 0.03 km.*arrived!.*Hohenstaufenstr.}, 'Found "arrived" (English)');
+    }
+}
+
+# quality preferences and calculations
+{
+    my %route_endpoints = (startc => '8543,22413', # Mönchmühler Str.
+			   zielc  => '8904,23365',
+			  );
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'Mönchmühler Str. with cobblestone and without pref_quality';
+	expected_tag $resp, 'rm.route.html';
+	my $content = $resp->decoded_content;
+	like_html $content, qr{Mönchmühler Str..*schlechtes Kopfsteinpflaster}, 'cobblestone in comments field';
+	like_html $content, qr{0:03h\s+\(<b>bei 20 km/h</b>\)}, 'expected time at 20km/h (no pref_quality)';
+	like_html $content, qr{0:02h\s+\(bei 25 km/h\)},        'expected time at 25km/h (no pref_quality)';
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{ pref_quality => 'Q2', %route_endpoints }, 'Mönchmühler Str. with cobblestone and pref_quality=Q2';
+	expected_tag $resp, 'rm.route.html';
+	my $content = $resp->decoded_content;
+	like_html $content, qr{Mönchmühler Str..*schlechtes Kopfsteinpflaster}, 'cobblestone in comments field';
+	like_html $content, qr{0:04h\s+\(<b>bei 20 km/h</b>\)}, 'expected time at 20km/h (with time loss because of pref_quality=Q2)';
+	like_html $content, qr{0:04h\s+\(bei 25 km/h\)},        'expected time at 25km/h (with time loss because of pref_quality=Q2)';
+    }
+
+    {
+	my $resp = bbbike_cgi_search +{ pref_quality => 'Q0', %route_endpoints }, 'Mönchmühler Str. with cobblestone and pref_quality=Q0';
+	expected_tag $resp, 'rm.route.html';
+	my $content = $resp->decoded_content;
+	like_html $content, qr{Mönchmühler Str..*schlechtes Kopfsteinpflaster}, 'cobblestone in comments field';
+	like_html $content, qr{0:06h\s+\(<b>bei 20 km/h</b>\)}, 'expected time at 20km/h (with time loss because of pref_quality=Q0)';
+	like_html $content, qr{0:06h\s+\(bei 25 km/h\)},        'expected time at 25km/h (with time loss because of pref_quality=Q0)';
     }
 }
 

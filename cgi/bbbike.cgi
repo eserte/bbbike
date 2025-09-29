@@ -876,6 +876,7 @@ use vars qw(%handicap_speed);
 		   "q1" => 25,
 		   'Q'  => 8, # XXX this is for ferries, and should probably be finer granulated
 		  );
+my %quality_speed; # this is set later, because of different speeds if pref_quality=Q0 is set
 
 @pref_keys = qw/speed cat quality ampel green specialvehicle unlit ferry winter fragezeichen/;
 
@@ -3609,17 +3610,23 @@ sub search_coord {
 			 "Q1" => 1.2,
 			 "Q2" => 1.6,
 			 "Q3" => 2 );
-	    %max_limit = ( Q1 => $velocity_kmh / 25,
-			   Q2 => $velocity_kmh / 16,
-			   Q3 => $velocity_kmh / 10 );
+	    %quality_speed = ("Q1" => 25,
+			      "Q2" => 16,
+			      "Q3" => 10,
+			     );
 	} else {
 	    %penalty = ( "Q0" => 1,
 			 "Q1" => 1,
 			 "Q2" => 1.5,
 			 "Q3" => 1.8 );
-	    %max_limit = ( Q1 => $velocity_kmh / 25,
-			   Q2 => $velocity_kmh / 18,
-			   Q3 => $velocity_kmh / 13 );
+	    %quality_speed = ("Q1" => 25,
+			      "Q2" => 18,
+			      "Q3" => 13,
+			     );
+	}
+	# cap velocity
+	for my $quality_cat (qw(Q1 Q2 Q3)) {
+	    $max_limit{$quality_cat} = $velocity_kmh / $quality_speed{$quality_cat};
 	}
 	require Strassen::CatUtil;
 	Strassen::CatUtil::apply_tendencies_in_penalty(\%penalty);
@@ -4054,6 +4061,10 @@ sub display_route {
 	    @strnames = $net->route_to_name($r->path);
 	}
 
+	if ($qualitaet_net && !scalar keys %quality_speed) {
+	    warn "WARNING: qualitaet_net defined, but no quality_speed definitions available, cannot determine time losses.\n";
+	}
+
 	foreach my $speed (@speeds) {
 	    if ($speed == 0) {
 		$speed = $speed_default; # sane default
@@ -4067,13 +4078,10 @@ sub display_route {
 		for(my $ii=0; $ii<$#realcoords; $ii++) {
 		    my $s = Strassen::Util::strecke($realcoords[$ii],$realcoords[$ii+1]);
 		    my @etappe_speeds = $speed;
-## XXX warum ist das hier nicht aktiviert, sieht mir sinnvoll aus?
-## XXX Aus dem RCS log: das hier war nie aktiv, kein Kommentar.
-## XXX Antwort: weil qualitaet_s_speed nicht definiert ist
-#		    if ($qualitaet_net && (my $cat = $qualitaet_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
-#		    push @etappe_speeds, $qualitaet_s_speed{$cat}
-#			if defined $qualitaet_s_speed{$cat};
-#		}
+		    if ($qualitaet_net && (my $cat = $qualitaet_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
+			push @etappe_speeds, $quality_speed{$cat}
+			    if defined $quality_speed{$cat};
+		    }
 		    if ($handicap_net && (my $cat = $handicap_net->{Net}{join(",",@{$realcoords[$ii]})}{join(",",@{$realcoords[$ii+1]})})) {
 			push @etappe_speeds, $handicap_speed{$cat}
 			    if defined $handicap_speed{$cat};
