@@ -21172,7 +21172,7 @@ EOF
        until => $isodate2epoch->("2025-12-31 18:00:00"), # undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #      text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #      text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., bis Anfang Oktober 2025, voraussichtlich wird bis Dezember 2025 verlängert',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., bis Anfang November 2025, voraussichtlich wird bis Dezember 2025 verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
@@ -21183,14 +21183,14 @@ EOF
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025)
+#: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025)
 #: osm_watch: way id="152466403" version="22"
 #: osm_watch: way id="1424980083" version="1"
 #: osm_watch: note 4444162 5
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
-#: next_check: 2025-10-02 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-11-07 (VIZ-Verkehrsmeldung)
 #: historical_note: früher q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
 	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
@@ -22432,13 +22432,13 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-09-24
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 7d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 # (noch nicht!) --- Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-24
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -36192,8 +36192,8 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibtz5k5fgbp4x24som7y4liviz3qmq22wtzang6ilmm76knuyhz3m@jpeg (leider unscharf)
 #: source_id: adac:639331230 (bis 23.07.2025) (inaktiv)
 #: source_id: viz2021:13.55818,52.56275,21.07.2025,08:00 (bis 23.07.2025) (inaktiv)
-	2::inwork 20895,17594 20769,17650
-	2::inwork 20769,17650 20891,17572
+	2::inwork 20915,17584 20769,17650
+	2::inwork 20769,17650 20905,17567
 EOF
      },
      { from  => undef, # 
@@ -36398,8 +36398,8 @@ EOF
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
 #: last_checked: 2025-09-27
-#: check_frequency: 30d
-#: next_check: 2025-09-30 (Halteverbotsschilder)
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 EOF
@@ -38017,7 +38017,8 @@ EOF
        until => undef, # $isodate2epoch->("2023-07-24 17:00:00"), # 1668255773, # offen --- undef, # XXX
 #      text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024, vielleicht wird verlängert',
 #      text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, vermutlich bis Ende August 2024, vielleicht wird verlängert',
-       text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
+#      text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
+       text  => 'Archibaldweg: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -38032,11 +38033,11 @@ EOF
 # REMOVED --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
-#: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"
+#: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"; mittlerweile Halteverbotsschilder bis 30.09.2025, Bauzäune weggeschoben, so dass Radfahrer passieren können, Baustellenbereich neu asphaltiert
 #: priority: #B
-#: last_checked: 2025-09-20
-#: check_frequency: 30d
-#: next_check: 2025-09-30 (DB-Mail)
+#: last_checked: 2025-09-29
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2025-09-30 (DB-Mail, Halteverbotsschilder)
 	2::inwork 15777,10897 15820,10916 15870,10938
 EOF
      },
@@ -40363,10 +40364,10 @@ EOF
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
-#: also_indoor: traffic (T)
+#: also_indoor: traffic (ex-T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: last_checked: 2025-09-20 vvv
-#: check_frequency: 14d (traffic) vvv
+#: check_frequency: 10d (traffic) vvv
 Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 Virchowstr.	q2::inwork 12707,13706 12640,13814
 #: check_frequency ^^^
@@ -41231,16 +41232,16 @@ Greizer Str. (Marzahn)	2::bomb 20818,18075 20646,18129 20616,18126
 (Wuhletalstr. - Eichenallee)	2::bomb 20728,17670 20801,17821 20804,17848
 Wolfener Str.	2::bomb 20443,17698 20488,17793
 (Weg entlang der S-Bahn)	2::bomb 20582,17392 20657,17543
-Wuhletalstr.	2::bomb 20769,17650 20891,17572
-Wuhletalstr.	2::bomb 20895,17594 20769,17650
+Wuhletalstr.	2::bomb 20769,17650 20905,17567
+Wuhletalstr.	2::bomb 20915,17584 20769,17650
 Wuhletalstr.	2::bomb 20769,17650 20728,17670 20488,17793
 Wuhletalstr. - zur Märkischen Allee	2::bomb 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 An der Kohlbeke	2::bomb 20728,17670 20657,17543
-Märkische Allee	2::bomb 21309,18626 21251,18508 21163,18347 21011,18061 20912,17872 20889,17838 20843,17745 20798,17664 20768,17609 20717,17516 20691,17463
+Märkische Allee	2::bomb 21309,18626 21251,18508 21163,18347 21011,18061 20912,17872 20889,17838 20853,17762 20798,17664 20768,17609 20717,17516 20691,17463
 Märkische Allee	2::bomb 20996,17865 21078,18032 21150,18179 21220,18323 21281,18451
-Märkische Allee - Wuhletalstr.	2::bomb 20717,17516 20853,17528 20891,17572
-Märkische Allee - Wuhletalstr.	2::bomb 20891,17572 20895,17594
-Wuhletalstr. - Märkische Allee	2::bomb 20895,17594 20912,17678 20843,17745
+Märkische Allee - Wuhletalstr.	2::bomb 20717,17516 20855,17515 20905,17567
+Märkische Allee - Wuhletalstr.	2::bomb 20905,17567 20915,17584
+Wuhletalstr. - Märkische Allee	2::bomb 20915,17584 20929,17685 20853,17762
 Havemannstr.	2::bomb 21251,18508 21446,18405
 Havemannstr.	2::bomb 21281,18451 21432,18376
 Wittenberger Str.	2::bomb 21011,18061 21078,18032 21220,17958
@@ -45725,7 +45726,7 @@ EOF
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-09-01 (research)
+#: last_checked: 2025-09-29 (research)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -46667,8 +46668,8 @@ EOF
 #: osm_watch: note 4524886 3
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
-#: also_indoor: traffic (G[zu lang],T,ex-H,ex-W[zu kurz])
-#: last_checked: 2025-09-21 (mapillary)
+#: also_indoor: traffic (G[zu lang],T,re-H[zu kurz],ex-W[zu kurz])
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -47290,7 +47291,8 @@ EOF
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22951.pdf (SEV wird ab Dezember 2025 wieder über den Schloßplatz geführt)
 #: source_id: bvg2024:162#f0f63843-db69-4d37-8f71-963e4e85cebf (kein Endedatum)
 #: source_id[inactive]: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
-#: source_id: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
+#: source_id[inactive]: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
+#: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
 #: source_id: viz2021:13.574491,52.448686,04.08.2025,07:00 (eigentlich eine andere Baustelle, hängt aber vielleicht damit zusammen; bis 13.10.2025)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
@@ -48726,7 +48728,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025) (inaktiv)
 # REMOVED (Einbahnstraße offen für Radfahrer) --- Bouchéstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
-#: source_id: bvg2024:194#HIM_FREETEXT_286893
+#: source_id: bvg2024:194#HIM_FREETEXT_286893 (ohne Endedatum)
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
@@ -48804,7 +48806,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-28 (traffic) vvv
+#: last_checked: 2025-09-29 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
@@ -48951,7 +48953,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-09-21 (traffic)
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 EOF
@@ -49111,13 +49113,13 @@ EOF
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-09-19 (traffic) vvv
+#: last_checked: 2025-09-29 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-09-02 vvv
 # REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
-#: also_indoor: traffic (G,re-T,ex-H)
+#: also_indoor: traffic (G,re-T,re-H)
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -49149,7 +49151,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,ex-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-27
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 10d (traffic)
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -49312,7 +49314,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409465412/neuer-baustress-an-der-altstadt-koepenick-nur-noch-ein-albtraum.html
 #: note: laut Stromnetz-Website bis 19.09.2029, mittlerweile bis Anfang Oktober 2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-09-25 (stromnetz website)
+#: last_checked: 2025-09-29 (traffic)
 #: next_check: 2025-10-01 (stromnetz website)
 	q4::inwork 22740,4415 22542,4485 22495,4523
 EOF
@@ -49809,7 +49811,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxbxsipifc2t
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxhez3l7lk2k
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihbgfsps52xqwgi4ub3tjt354frjl5pw7avjvfwqomlxq5ov5nw74@jpeg
-#: source_id: viz2021:13.21262,52.54738, (kein Endedatum) (bis 30.09.2025)
+#: source_id: viz2021:13.21262,52.54738, (kein Endedatum) (bis 30.09.2025) (bis 17.10.2025)
 #: also_indoor: traffic (T,G,H,W,A)
 #: note: laut VIZ ist nur der Kfz-Verkehr betroffen
 	2::inwork -2453,15476 -2675,15513
@@ -49938,7 +49940,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (H[zu wenig],G[zu wenig])
-#: last_checked: 2025-09-17
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 14d
 	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
 EOF
@@ -49959,7 +49961,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-23 (traffic)
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork 18804,2991 18949,3073
@@ -50160,7 +50162,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-09-27
+#: last_checked: 2025-09-29
 	q4::inwork 14641,10552 14608,10409 14558,10264
 EOF
      },
@@ -50195,7 +50197,7 @@ EOF
        data  => <<'EOF',
 #: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2025-09-27
+#: last_checked: 2025-09-29
 #: check_frequency: 14d
 	q4::inwork 14490,10610 14312,10657
 EOF
@@ -50215,6 +50217,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
+#: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025)
 	q4::inwork; 17916,5675 18013,5627
 EOF
      },

@@ -630,7 +630,7 @@ Königsberger Str. -> Hindenburgdamm: ggfs. Straßenseite wechseln, oder zugestaut
 #: next_check ^^^
 #: last_checked ^^^
 # 
-# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxqsovewds2n (bis Ende September 2025)
+# REMOVED (Bauarbeiten sind zwar noch nicht beendet, aber die Einschränkungen halten sich in Grenzen) --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxqsovewds2n (bis Ende September 2025)
 # REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib6rhkaec34idp3vuf337gqj2h6dtu6qz4a3ulmghvqrcok3ehr6i@jpeg
 # REMOVED --- #: source_id: viz2021:13.47956,52.52046,01.09.2025,07:00 (bis 29.09.2025) (inaktiv)
 # REMOVED --- #: source_id: viz2021:13.47956,52.52046, (Abbiegen verboten, bis 02.10.2025)
@@ -644,13 +644,15 @@ Königsberger Str. -> Hindenburgdamm: ggfs. Straßenseite wechseln, oder zugestaut
 # REMOVED --- #: last_checked ^^^
 # 
 #: also_indoor: traffic (G) vvv
-#: last_checked: 2025-09-16 (traffic) vvv
-#: next_check: 2025-09-15 (Halteverbotsschilder) vvv
+#: last_checked: 2025-09-29 vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-09-15 (Halteverbotsschilder) vvv
 # REMOVED --- #: valid: -20250915 vvv
 Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17186,17593 17264,17489
 Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17264,17489 17186,17593
 # REMOVED --- #: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 # 

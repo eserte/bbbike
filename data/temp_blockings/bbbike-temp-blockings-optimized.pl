@@ -2455,21 +2455,21 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025)
+#: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025)
 #: osm_watch: way id="152466403" version="22"
 #: osm_watch: way id="1424980083" version="1"
 #: osm_watch: note 4444162 5
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
-#: next_check: 2025-10-02 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-11-07 (VIZ-Verkehrsmeldung)
 #: historical_note: früher q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
 	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 ',
          'from' => 1707001200,
          'id' => 2328,
-         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., bis Anfang Oktober 2025, voraussichtlich wird bis Dezember 2025 verlängert',
+         'text' => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., bis Anfang November 2025, voraussichtlich wird bis Dezember 2025 verlängert',
          'type' => 'handicap',
          'until' => 1767200400
        },
@@ -2622,39 +2622,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk
-#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
-#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021) (24. Juli 2025 - 27. Juli 2025)
-#: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1310556.php
-#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/gruenes-licht-fuer-tegeler-hafenfest-id216068
-#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/das-tegeler-hafenfest-ist-wieder-da-und-will-an-grosse-zeiten-anschliessen-id226835
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581206.php
-#: by: https://www.rbb24.de/panorama/beitrag/2025/07/berlin-tegeler-hafenfest-abgesagt-sturmschaeden.html
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581336.php (neuer Termin: 25. bis 28. September 2025)
-# REMOVED (was) : tempex: 20160714-20160717
-#: alias: Tegeler Hafenfest
-	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
-',
-         'from' => 1758664800,
-         'id' => 2420,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              7,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (25.09.2025 bis 28.09.2025)',
-         'type' => 'gesperrt',
-         'until' => 1759082400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2679,13 +2647,13 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-09-24
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 7d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 # (noch nicht!) --- Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-24
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -4796,8 +4764,8 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
 #: last_checked: 2025-09-27
-#: check_frequency: 30d
-#: next_check: 2025-09-30 (Halteverbotsschilder)
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 ',
@@ -5200,16 +5168,16 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 # REMOVED --- #: also_indoor: traffic (G) --- #: note: Halteverbot bis 24.7.2023 17h --- #: last_checked: 2023-07-24 --- #: check_frequency: 14d --- #: next_check: 2023-07-25
 # REMOVED (hier nicht) ---	q3::inwork 15674,10851 15777,10897
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
-#: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"
+#: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"; mittlerweile Halteverbotsschilder bis 30.09.2025, Bauzäune weggeschoben, so dass Radfahrer passieren können, Baustellenbereich neu asphaltiert
 #: priority: #B
-#: last_checked: 2025-09-20
-#: check_frequency: 30d
-#: next_check: 2025-09-30 (DB-Mail)
+#: last_checked: 2025-09-29
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2025-09-30 (DB-Mail, Halteverbotsschilder)
 	2::inwork 15777,10897 15820,10916 15870,10938
 ',
          'from' => undef,
          'id' => 3631,
-         'text' => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
+         'text' => 'Archibaldweg: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5706,10 +5674,10 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
-#: also_indoor: traffic (T)
+#: also_indoor: traffic (ex-T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: last_checked: 2025-09-20 vvv
-#: check_frequency: 14d (traffic) vvv
+#: check_frequency: 10d (traffic) vvv
 Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 Virchowstr.	q2::inwork 12707,13706 12640,13814
 #: check_frequency ^^^
@@ -7020,7 +6988,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-09-01 (research)
+#: last_checked: 2025-09-29 (research)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -7258,8 +7226,8 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: osm_watch: note 4524886 3
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
-#: also_indoor: traffic (G[zu lang],T,ex-H,ex-W[zu kurz])
-#: last_checked: 2025-09-21 (mapillary)
+#: also_indoor: traffic (G[zu lang],T,re-H[zu kurz],ex-W[zu kurz])
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -7555,7 +7523,8 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22951.pdf (SEV wird ab Dezember 2025 wieder über den Schloßplatz geführt)
 #: source_id: bvg2024:162#f0f63843-db69-4d37-8f71-963e4e85cebf (kein Endedatum)
 #: source_id[inactive]: bvg2024:27#19e55418-9577-48b9-8b67-f894e67f4455 (kein Endedatum)
-#: source_id: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
+#: source_id[inactive]: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
+#: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
 #: source_id: viz2021:13.574491,52.448686,04.08.2025,07:00 (eigentlich eine andere Baustelle, hängt aber vielleicht damit zusammen; bis 13.10.2025)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
@@ -8133,7 +8102,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
        {
          'data' => '#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025) (inaktiv)
 # REMOVED (Einbahnstraße offen für Radfahrer) --- Bouchéstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
-#: source_id: bvg2024:194#HIM_FREETEXT_286893
+#: source_id: bvg2024:194#HIM_FREETEXT_286893 (ohne Endedatum)
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
@@ -8188,7 +8157,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-28 (traffic) vvv
+#: last_checked: 2025-09-29 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
@@ -8233,7 +8202,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-09-21 (traffic)
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 ',
@@ -8263,13 +8232,13 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-09-19 (traffic) vvv
+#: last_checked: 2025-09-29 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-09-02 vvv
 # REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
-#: also_indoor: traffic (G,re-T,ex-H)
+#: also_indoor: traffic (G,re-T,re-H)
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -8285,7 +8254,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        {
          'data' => '#: also_indoor: traffic (G,ex-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-27
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 10d (traffic)
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
@@ -8388,7 +8357,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409465412/neuer-baustress-an-der-altstadt-koepenick-nur-noch-ein-albtraum.html
 #: note: laut Stromnetz-Website bis 19.09.2029, mittlerweile bis Anfang Oktober 2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-09-25 (stromnetz website)
+#: last_checked: 2025-09-29 (traffic)
 #: next_check: 2025-10-01 (stromnetz website)
 	q4::inwork 22740,4415 22542,4485 22495,4523
 ',
@@ -8831,7 +8800,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        },
        {
          'data' => '#: also_indoor: traffic (H[zu wenig],G[zu wenig])
-#: last_checked: 2025-09-17
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 14d
 	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
 ',
@@ -8854,7 +8823,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        },
        {
          'data' => '#: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-23 (traffic)
+#: last_checked: 2025-09-29 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork 18804,2991 18949,3073
@@ -9005,7 +8974,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-09-27
+#: last_checked: 2025-09-29
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9042,7 +9011,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2025-09-27
+#: last_checked: 2025-09-29
 #: check_frequency: 14d
 	q4::inwork 14490,10610 14312,10657
 ',
@@ -9064,6 +9033,8 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
+#: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025)
 	q4::inwork; 17916,5675 18013,5627
 ',
          'from' => 1759010400,

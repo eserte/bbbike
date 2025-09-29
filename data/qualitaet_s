@@ -5443,11 +5443,12 @@ Leunaer Str.: Asphalt	Q0 20193,17196 20352,17118
 Premnitzer Str.: Asphalt	Q0 20137,17087 20363,16976
 Premnitzer Str.: Gras	Q3 20363,16976 20376,16970
 (Leunaer Str. - S-Bahnhof Mehrower Allee): Verbundsteinpflaster	Q1 20352,17118 20410,17093 20420,17110 20439,17103
+(Premnitzer Str. - S-Bahnhof Mehrower Allee): Verbundsteinpflaster	Q1 20363,16976 20410,17093
 (Weg entlang der S-Bahn): Asphalt	Q0 20036,16299 20158,16519
 (Weg entlang der S-Bahn): Asphalt, einige Wurzelhebungen	Q0 20158,16519 20376,16970
 (Weg entlang der S-Bahn): Asphalt	Q0 20376,16970 20417,17060
 (Weg entlang der S-Bahn): Verbundsteinpflaster	Q1 20417,17060 20426,17078 20439,17103 20467,17151
-(Weg entlang der S-Bahn): Asphalt	Q0 20467,17151 20582,17392
+(Weg entlang der S-Bahn): Asphalt, einige Wurzelhebungen	Q0 20467,17151 20582,17392
 (Weg entlang der S-Bahn): wassergebundene Decke	Q1 20582,17392 20657,17543
 (Wiesenburger Weg - Wolfener Str.): wassergebundene Decke	Q1 19480,15628 19473,15834 19510,16188 19522,16225 19525,16234
 (Wiesenburger Weg - Wolfener Str.): Beton (zweispurig)	Q0 19525,16234 19543,16372 19561,16414
@@ -9694,6 +9695,9 @@ An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1 8704,21858 8725,21910 8
 An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1 8725,21910 8615,21955 8590,21894 8597,21879
 (Brockenweg - Blankenburger Pflasterweg): unbefestigter Weg	Q2 15102,20723 15119,20655 15226,20587
 (Brockenweg - Blankenburger Pflasterweg): wassergebundene Decke	Q1 15226,20587 15269,20508 15276,20231 15310,20176 15354,19879
+Große-Leege-Str.: Asphalt mit einigen Schäden	Q0 16884,15833 16811,15611 16767,15549 16686,15448
+Große-Leege-Str.: Asphalt	Q0 16686,15448 16618,15356
+Große-Leege-Str.: Asphalt mit einigen Schäden	Q0 16618,15356 16522,15258 16430,15168
 Große-Leege-Str.: Beton mit einigen Hebungen	Q1; 16033,14756 15968,14684 15899,14598
 Große-Leege-Str.: Asphalt	Q0; 15899,14598 15968,14684 16033,14756
 (Rüdigerstr. - Nibelungenring): Verbundsteinpflaster	Q1 17441,12247 17444,12286 17442,12292
@@ -17003,7 +17007,7 @@ Privatstr. 8: Asphalt	Q0 16992,16840 17120,16849 17237,16825
 Privatstr. 9: Asphalt	Q0 17004,16778 17117,16785
 Privatstr. 9: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1 17117,16785 17212,16760
 Privatstr. 12: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 17182,17375 17418,17277
-Falkenberger Chaussee - Pablo-Picasso-Str.: sehr guter Asphalt	Q0 17721,18001 17737,17987 17741,17946 17762,17928 17796,17892 17906,17746 17955,17783
+Falkenberger Chaussee - Pablo-Picasso-Str.: Asphalt mit einigen Wurzelhebungen	Q0 17721,18001 17737,17987 17741,17946 17762,17928 17796,17892 17906,17746 17955,17783
 Heusingerstr.: guter Beton	Q0 8584,3133 8792,3082
 Porschestr.: Asphalt	Q0 8584,3133 8599,3441
 Porschestr.: Beton, teilweise mit Asphalt geflickt	Q0 8572,2962 8584,3133

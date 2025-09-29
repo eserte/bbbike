@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-09-27
+#: last_checked: 2025-09-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -132,7 +132,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-29
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -669,7 +669,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Karlshorst ###
 # 
-#: next_check_id: PARKSTADTKARLSHORST-2021
+#: next_check_id: BLOCKDAMMWEGAMPEL-2025
 #: last_checked: 2025-09-01
 #: check_frequency: 30d
 Hönower Wiesenweg: Bauarbeiten, Fahrbahn gesperrt, Engstelle	q3-::inwork 17380,8858 17416,8767
@@ -1050,7 +1050,7 @@ Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,1
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-09-21
+#: last_checked: 2025-09-29
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -5266,6 +5266,7 @@ Suttnerstr.: einige Fußgänger	q2+ 7728,5866 7733,5893 7735,5960
 # 
 Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf (Widmung von öffentlichem Straßenland ... für Fußgänger und Radfahrverkehr)
 (Reinhardtstr. - Am Zirkus): schmal, einige Fußgänger	q4+ 9058,13054 9090,13009
 (Am Zirkus - Bertolt-Brecht-Platz): einige Fußgänger	q3- 9090,13009 9153,12928
 # 

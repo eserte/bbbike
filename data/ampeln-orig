@@ -364,14 +364,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-29
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-29
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -545,26 +545,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # REMOVED (keine Baustellenampel mehr) --- #: next_check_id: TRESKOWALLEE-2022 --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8851 (2. Halbjahr 2022) --- #: by: https://www.bahninfo-forum.de/read.php?9,721782,727530#msg-727530 (Gleisarbeiten 01.08-10.12.2022) --- #: by: https://www.bahninfo-forum.de/read.php?9,727655,737635#msg-737635 (Baubeginn 1.8.2022, Inbetriebnahme zum Jahresende 2022) --- #: XXX Ampel wird wohl permanent gemacht --- #: last_checked: 2023-01-10 ---	X::inwork 18406,7760
 # REMOVED --- #: next_check_id: FRANZOESISCHE-2018 --- #: next_check: 2023-02-28 vvv --- #: check_frequency: 90d vvv --- # REMOVED --- #: valid: -20230228 vvv --- # REMOVED (abgebaut) --- #: last_checked: 2022-09-30 --- #: osm_watch: node id="6380038401" version="1"---	X::inwork 9195,11972 --- #: note: Ampel befindet sich westlich der Kreuzung --- #: last_checked: 2022-12-27 ---	F::inwork 9076,12054 --- # REMOVED --- #: valid ^^^ --- #: check_frequency ^^^ --- #: next_check ^^^
 # REMOVED (abgeschaltet, vermutlich dauerhaft) --- #: next_check_id: TAUBEN-2019 --- #: note: Ampel ist eigentlich 20m weiter südlich gelegen --- #: last_checked: 2024-02-04 --- #: check_frequency: 60d ---	F::inwork 9207,11880
-# 
-#: next_check_id: WUHLETALBRUECKE-2019
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
-#: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2025-09-07 (osm note) vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2025-06-30 (SenMVKU website) vvv
-# REMOVED --- #: valid: 20190603-20250630 vvv
-# REMOVED --- #: next_check: 2025-09-04 (SenMVKU website) vvv
-# REMOVED --- #: valid: 20190603-20251231 vvv
-#: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage
-	X::inwork 20891,17572
-	X::inwork 20895,17594
-	X::inwork 20769,17650
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-# 
+# REMOVED (abgebaut) --- #: next_check_id: WUHLETALBRUECKE-2019 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php --- #: XXX Wann werden die Ampeln wieder abgebaut? vvv --- #: last_checked: 2025-09-07 (osm note) vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2025-06-30 (SenMVKU website) vvv --- # REMOVED --- #: valid: 20190603-20250630 vvv --- # REMOVED --- #: next_check: 2025-09-04 (SenMVKU website) vvv --- # REMOVED --- #: valid: 20190603-20251231 vvv --- #: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage ---	X::inwork 20891,17572 ---	X::inwork 20895,17594 ---	X::inwork 20769,17650 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED (entfernt) --- #: next_check_id: OBERBAUMBRUECKE-2019 --- #: last_checked: 2019-10-21 --- #: next_check: 2019-10-22 --- #: valid: -20191101 ---	F::inwork 13178,10623
 # REMOVED (vermutlich beendet) --- #: next_check_id: HAUPTSTRFRZBUCHHOLZ-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.821009.php --- #: valid: 20190620-20190802 vvv ---	X::inwork 12067,23241 ---	X::inwork 12027,23057 --- #: valid ^^^
 # REMOVED (mittlerweile aus) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: XXX Gegenverkehrsregelung --- #: source_id: 2147343772 --- #: last_checked: 2019-03-17 --- #: next_check: 2019-03-29 --- #: valid: -20190329 --- # REMOVED (gewandert) ---	X::inwork 10687,11853 ---	X::inwork 10672,11870

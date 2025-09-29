@@ -192,7 +192,7 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-09-21 vvv
+#: last_checked: 2025-09-29 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -1168,8 +1168,8 @@ Kokoschkastr.	1 24071,14961 24063,15035
 Peter-Weiss-Gasse	1 24151,14982 24120,14949 24107,14947
 Quedlinburger Str.: nur die Durchfahrt ist verboten	1s:q2 24051,15099 24009,15094
 Fritz-Lang-Platz	1 23871,14914 23882,14904 23856,14868 23820,14896 23846,14931 23871,14914
-Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 20769,17650 20895,17594 21066,17503
-Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20891,17572 20769,17650
+Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 20769,17650 20915,17584 21066,17503
+Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20905,17567 20769,17650
 #: note: Richtungsfahrbahnen vvv
 B2: Eberswalde - Angermünde	1::igndisp 49908,67683 49839,67618 49812,67593
 B2: Angermünde - Eberswalde	1::igndisp 49812,67593 49838,67618 49907,67684
@@ -2529,7 +2529,7 @@ Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12846,7981 
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,12933 6150,12875 6124,12694
 Märkische Allee: Mittelstreifen	3nocross 20120,16297 20232,16522 20242,16543 20323,16706
-Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20654,17384 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21011,18061
+Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20654,17384 20691,17463 20717,17516 20768,17609 20798,17664 20853,17762 20889,17838 20912,17872 21011,18061
 Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17579,17908 17675,17971 17744,18016 17843,18078
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
@@ -4094,7 +4094,7 @@ neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 1677
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026) (inaktiv)
 #: osm_watch: way id="1087144824" version="7"
-#: last_checked: 2025-05-30 (mapillary)
+#: last_checked: 2025-09-29
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
@@ -4104,7 +4104,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="9"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-09-21
+#: last_checked: 2025-09-29
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4281,8 +4281,8 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://entwicklungsstadt.de/lichtenberg-richtfest-fuer-neue-holz-compartmentschule-am-roemerweg/
 #: osm_watch: way id="25796737" version="19"
 #: osm_watch: way id="1272701939" version="5"
-#: XXX Nebau: Integrierte Sekundarschule (ISS) in Karlshorst
-#: XXX laut osm opening_date 2026-08-24 (ohne Quelle)
+#: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
+#: XXX laut osm opening_date 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
 #: last_checked: 2025-04-07
 #: check_frequency: 180d
 #: next_check: 2026-06-30 (BA-Pressemitteilung)
@@ -4589,7 +4589,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-09-21
+#: last_checked: 2025-09-29
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -5701,10 +5701,11 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: by: https://www.deutsches-architekturforum.de/thread/15410-dresden-carolabr%C3%BCcke-st-petersburger-stra%C3%9Fe-carolaplatz/?postID=771348#post771348
 #: by: https://www.dnn.de/lokales/dresden/carolabruecke-dresden-abriss-oder-erhalt-entscheidung-steht-STJQBOHKEJBS3CV72CDHOFCSCY.html (vermutlich Komplettabriss)
 #: by: https://www.n-tv.de/panorama/Dresdner-Carolabruecke-soll-bis-zum-Sommer-verschwinden-article25605881.html (Neubau ab 2027)
+#: by: https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/09/Pm_020.php (Ausschreibung)
 #: osm_watch: way id="4214231" version="45"
 #: osm_watch: way id="10368500" version="50"
 #: also_indoor: search Carolabrücke
-#: last_checked: 2025-04-06 (research)
+#: last_checked: 2025-09-05 (dresden.de)
 #: check_frequency: 180d
 # REMOVED -- #: next_check: 2024-12-31
 Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::inwork 36969,-149635 37090,-149991

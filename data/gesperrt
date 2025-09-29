@@ -674,8 +674,8 @@ Kokoschkastr.	1 24071,14961 24063,15035
 Peter-Weiss-Gasse	1 24151,14982 24120,14949 24107,14947
 Quedlinburger Str.: nur die Durchfahrt ist verboten	1s 24051,15099 24009,15094
 Fritz-Lang-Platz	1 23871,14914 23882,14904 23856,14868 23820,14896 23846,14931 23871,14914
-Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 20769,17650 20895,17594 21066,17503
-Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20891,17572 20769,17650
+Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 20769,17650 20915,17584 21066,17503
+Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20905,17567 20769,17650
 B2: Eberswalde - Angermünde	1::igndisp 49908,67683 49839,67618 49812,67593
 B2: Angermünde - Eberswalde	1::igndisp 49812,67593 49838,67618 49907,67684
 B2: Angermünde - Schwedt	1::igndisp 50386,68158 49908,67683
@@ -2184,14 +2184,14 @@ Alfred-Döblin-Str. -> Märkische Allee: Mittelstreifen	3::igndisp 20286,16494 202
 Märkische Allee -> Alfred-Döblin-Str.: Mittelstreifen	3::igndisp 20242,16543 20232,16522 20286,16494
 Rampe Bitterfelder Brücke -> Märkische Allee: Mittelstreifen	3::igndisp 20267,16539 20242,16543 20232,16522
 Märkische Allee -> Rampe Bitterfelder Brücke: Mittelstreifen	3::igndisp 20323,16706 20242,16543 20267,16539
-Linksabbiegen verboten	3nocross::ignrte 20516,17088 20654,17384 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21011,18061
-zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20727,17558 20691,17463 20717,17516
-Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20768,17609 20717,17516 20853,17528
-Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20853,17528 20717,17516 20691,17463
-Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20843,17745 20912,17678
-Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20912,17678 20843,17745 20798,17664
+Linksabbiegen verboten	3nocross::ignrte 20516,17088 20654,17384 20691,17463 20717,17516 20768,17609 20798,17664 20853,17762 20889,17838 20912,17872 21011,18061
+Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20727,17558 20691,17463 20717,17516
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20768,17609 20717,17516 20855,17515
+Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20855,17515 20717,17516 20691,17463
+Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20853,17762 20929,17685
+Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20929,17685 20853,17762 20798,17664
 Märkische Allee -> Parkweg an der Neuen Wuhle: Linksabbiegen verboten	3::igndisp 20912,17872 20889,17838 20983,17846
-Parkweg an der Neuen Wuhle -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20983,17846 20889,17838 20843,17745
+Parkweg an der Neuen Wuhle -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20983,17846 20889,17838 20853,17762
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20912,17872 20855,17807
 Mittelstreifen	3nocross::ignrte 19900,11697 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
 Märkische Allee -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19900,11697 19924,11890 19890,11830
