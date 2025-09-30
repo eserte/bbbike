@@ -903,9 +903,9 @@ Groß-Köris - Motzen: Verbundsteinpflaster	Q1 23775,-22788 23482,-22742
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-08-2025-l-401-fertigstellung-der-ortsdurchfahrt-eichwalde (Ende der Bauarbeiten am 08.08.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587846.php
 #: source_id: LS/222-W/24/007 (Baufeldfreimachung, bis 23.02.2024) (bis 29.02.2024) (inaktiv)
-#: source_id: LS/222-W/24/100 (07.10.2024 bis 30.04.2025) (bis 30.09.2025)
-#: osm_watch: way id="4068154" version="40"
-#: osm_watch: way id="355736431" version="8"
+#: source_id: LS/222-W/24/100 (07.10.2024 bis 30.04.2025) (bis 30.09.2025) (inaktiv)
+#: osm_watch: way id="4068154" version="41"
+#: osm_watch: way id="355736431" version="9"
 #: also_indoor: traffic (none)
 # REMOVED --- #: note: Gehweg für Radfahrer frei; ab Höhe Friedenstr. noch keine Bauarbeiten (Stand Juni 2025)
 #: last_checked: 2025-09-02 (mapillary) vvv
@@ -1542,8 +1542,9 @@ schlechtes Kopfsteinpflaster	Q3 35483,7122 35482,7099 35479,7051 35478,7036
 Fahrbahn asphaltiert	Q0 41987,5693 41275,5229 41051,4427 40463,4020 39968,3795 39729,3433 39645,3307 39534,3037 39243,2759 39044,2686
 #: note: Radweg wäre Q1
 Fahrbahn asphaltiert, Radweg Verbundsteinpflaster	Q0 39044,2686 38636,2578 38512,2600
+#: historical_note: früher (bis 2023) Verbundsteinpflasterradweg
 #: note: Fahrbahn wäre Q0
-Fahrbahn asphaltiert, benutzungspflichtiger Radweg Verbundsteinpflaster	Q1 38512,2600 38308,2636 38023,2687 37712,2659 37084,2693 36771,2581 36719,2420 36402,2471 36334,2466 35453,2207 35088,2160 34990,2148 34742,2111 34620,2046 34421,1950
+Fahrbahn asphaltiert, benutzungspflichtiger Radweg asphaltiert	Q0 38512,2600 38308,2636 38023,2687 37712,2659 37084,2693 36771,2581 36719,2420 36402,2471 36334,2466 35453,2207 35088,2160 34990,2148 34742,2111 34620,2046 34421,1950
 	Q0 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687,-38100 41731,-37743
 	Q0 41731,-37743 41512,-37406 41006,-37256 40118,-36709 39478,-36702 39284,-36826 39087,-36914 38650,-36450 38648,-36241 38775,-36150 38864,-35989
 	Q0 35518,-32837 35641,-32578

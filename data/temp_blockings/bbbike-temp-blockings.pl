@@ -60,12 +60,12 @@ my $next_interval = sub {
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => $isodate2epoch->("2025-06-04 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-06-10 06:00:00"),
+     { from  => $isodate2epoch->("2026-05-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-05-26 06:00:00"), # 1 Tag später
        prewarn_days => 2,
        periodic => 1,
        recurrences => [['easter', 47, start => "2022-10-25T00:00:00"]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 06.06.2025 bis 09.06.2025, Sperrungen fangen schon einen Tag vorher an',
+       text  => 'Straßenfest rund um den Blücherplatz, 22.05.2026 bis 25.05.2026, Sperrungen fangen schon einen Tag vorher an',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
@@ -113,12 +113,12 @@ Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,99
 Brachvogelstr.	2::temp 9858,10199 9884,10192 10069,10151
 EOF
      },
-     { from  => $isodate2epoch->("2025-06-07 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-06-08 23:59:59"),
+     { from  => $isodate2epoch->("2026-05-23 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-05-24 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49, start => "2022-10-25T00:00:00"]], # Pfingstsonntag
 #      text  => 'Karneval der Kulturen, 19.05.2024',
-       text  => 'Karneval der Kulturen, Sperrung der Frankfurter Allee und Karl-Marx-Allee zwischen Proskauer Str. und Berolinastr., am 08.06.2025',
+       text  => 'Karneval der Kulturen, Sperrung der Frankfurter Allee und Karl-Marx-Allee zwischen Proskauer Str. und Berolinastr., am 24.05.2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.karneval.berlin/ (früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite) (findet möglicherweise am 15. August 2021 statt)
@@ -18803,11 +18803,11 @@ EOF
 	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2025-06-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-06-29 23:59:59"),
+     { from  => $isodate2epoch->("2026-06-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-06-28 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6, start => "2021-10-25T00:00:00"]],
-       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (27.06.2025 bis 29.06.2025)',
+       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzberg-Festival), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (26.06.2026 bis 28.06.2026)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest
@@ -32111,7 +32111,7 @@ EOF
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-09-14
+#: last_checked: 2025-09-30
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -35019,7 +35019,7 @@ EOF
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: osm_watch: way id="229990468" version="8"
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2025-07-19
+#: last_checked: 2025-09-22 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-31
 	2::inwork 7673,4223 7769,4315
@@ -38035,7 +38035,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"; mittlerweile Halteverbotsschilder bis 30.09.2025, Bauzäune weggeschoben, so dass Radfahrer passieren können, Baustellenbereich neu asphaltiert
 #: priority: #B
-#: last_checked: 2025-09-29
+#: last_checked: 2025-09-30
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (DB-Mail, Halteverbotsschilder)
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40364,7 +40364,7 @@ EOF
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
-#: also_indoor: traffic (ex-T)
+#: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: last_checked: 2025-09-20 vvv
 #: check_frequency: 10d (traffic) vvv
@@ -40743,7 +40743,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-09-21
+#: last_checked: 2025-09-30
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -42138,10 +42138,10 @@ EOF
 #: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: source_id: viz2021:13.41245,52.53267, (bis 19.12.2025)
-#: osm_watch: way id="23121446" version="36"
+#: osm_watch: way id="23121446" version="37"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-09-26 vvv
+#: last_checked: 2025-09-29 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -46455,18 +46455,18 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-08-17 00:00:00"), # 1729533901, # 2024-10-21 20:05
-       until => $isodate2epoch->("2025-09-30 18:00:00"), # 1746876864, # undef, # $isodate2epoch->("2025-01-23 13:00:00"), # 1737154800, # 2025-01-18 00:00
+       until => $isodate2epoch->("2025-10-30 23:59:59"), # 1746876864, # undef, # $isodate2epoch->("2025-01-23 13:00:00"), # 1737154800, # 2025-01-18 00:00
 #      text  => 'Lynarstr.: Sperrung zwischen Humboldtstr. und Wangenheimstr., evtl. sind auch Radfahrer betroffen, bis 17.01.2025',
 #      text  => 'Lynarstr.: Sperrung zwischen Hubertusallee und Humboldtstr., evtl. sind auch Radfahrer betroffen, bis 23.01.2025',
 #      text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Humboldtstr. und Wangenheimstr., evtl. auch bis Paulsborner Str., Ende der Bauarbeiten unbekannt',
 #      text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Wangenheimstr. und Paulsborner Str., Ende der Bauarbeiten unbekannt',
-       text  => 'Lynarstr.: Anbindung Hubertusallee gesperrt, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 bis Ende September 2025',
+       text  => 'Lynarstr.: Anbindung Hubertusallee gesperrt, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 bis voraussichtlich Ende Oktober 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
 #: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
-#: source_id: viz2021:13.28469,52.48961,18.08.2025,11:00 (nur die Hubertusallee erwähnt, bis 12.09.2025) (bis 30.09.2025)
+#: source_id: viz2021:13.28469,52.48961,18.08.2025,11:00 (nur die Hubertusallee erwähnt, bis 12.09.2025) (bis 30.09.2025) (bis 30.10.2025)
 # REMOVED --- #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus; mittlerweile haben sich alle auf Wangenheimstr. - Paulsborner Str. geeinigt
 # REMOVED --- #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W)
 # REMOVED --- #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
@@ -47345,7 +47345,7 @@ EOF
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
 #: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
 #: source_id: adac:1389146504 (bis 31.07.2025) (bis 15.08.2025) (bis 30.09.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.23143,52.50934, (bis 15.08.2025) (bis 30.09.2025)
+#: source_id: viz2021:13.23143,52.50934, (bis 15.08.2025) (bis 30.09.2025) (inaktiv)
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt, mittlerweile bis 15.08.2025
 # REMOVED --- #: next_check: 2025-04-30
@@ -47446,7 +47446,7 @@ EOF
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,re-H)
-#: last_checked: 2025-09-21
+#: last_checked: 2025-09-30
 #: check_frequency: 10d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
@@ -48200,12 +48200,12 @@ EOF
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2025-08-29 17:00:00"), # undef, # XXX
 #      text  => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, voraussichtlich bis 6.10.2025, evtl. wird verlängert',
+       text  => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, voraussichtlich bis 17.10.2025, evtl. wird verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.427246,52.523159,30.04.2025,04:30 (bis 04.07.2025) (inaktiv)
 #: source_id: adac:1977697072 (Erwähnung des Gehwegs, bis 11.07.2025) (bis 29.08.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025)
+#: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025) (bis 17.10.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
 #: osm_watch: note 4734747 5
@@ -48213,9 +48213,9 @@ EOF
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-09-17 vvv
+#: last_checked: 2025-09-22 (mapillary) vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
 Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
 #: next_check ^^^
@@ -48720,10 +48720,10 @@ EOF
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
-       until => $isodate2epoch->("2025-11-28 17:00:00"), # 1750431600, # 2025-06-20 17:00
+       until => $isodate2epoch->("2025-11-28 23:59:59"), # 1750431600, # 2025-06-20 17:00
 #      text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, vom 02.06.2025 07:00 bis 24.06.2025 17:00',
 #      text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, voraussichtlich bis Ende September 2025, evtl. noch länger',
-       text  => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende September 2025, evtl. noch länger',
+       text  => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende November 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025) (inaktiv)
@@ -48731,10 +48731,10 @@ EOF
 #: source_id: bvg2024:194#HIM_FREETEXT_286893 (ohne Endedatum)
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025)
+#: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025)
 #: last_checked: 2025-09-27 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2025-09-30 (VIZ+adac-Verkehrsmeldung) vvv
+#: next_check: 2025-11-28 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
 Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 #: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (inaktiv)
@@ -49151,9 +49151,9 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,ex-H,T)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-29 (traffic)
+#: last_checked: 2025-09-30 (traffic)
 #: check_frequency: 10d (traffic)
-#: next_check: 2025-09-30 (Halteverbotsschilder)
+# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
 EOF
      },
@@ -49233,7 +49233,7 @@ EOF
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-09-01 (research)
+#: last_checked: 2025-09-30 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -49314,7 +49314,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409465412/neuer-baustress-an-der-altstadt-koepenick-nur-noch-ein-albtraum.html
 #: note: laut Stromnetz-Website bis 19.09.2029, mittlerweile bis Anfang Oktober 2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-09-29 (traffic)
+#: last_checked: 2025-09-30 (traffic)
 #: next_check: 2025-10-01 (stromnetz website)
 	q4::inwork 22740,4415 22542,4485 22495,4523
 EOF
@@ -49325,9 +49325,9 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-09-21
-#: check_frequency: 60d
-#: next_check: 2025-10-02 (Halteverbotsschilder)
+#: last_checked: 2025-09-30
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
 	2::inwork 17950,8974 17915,8945
 EOF
@@ -49423,7 +49423,7 @@ EOF
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-09-21
+#: last_checked: 2025-09-30
 #: check_frequency: 30d
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -49956,14 +49956,14 @@ EOF
 EOF
      },
      { from  => 1757503087, # 2025-09-10 13:18
-       until => 1759269599, # 2025-09-30 23:59
-       text  => 'Johann-Hittorf-Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende September 2025',
+       until => undef, # 1759269599, # 2025-09-30 23:59
+       text  => 'Johann-Hittorf-Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende September 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-29 (traffic)
-#: check_frequency: 14d (traffic)
-#: next_check: 2025-09-30 (Halteverbotsschilder)
+#: last_checked: 2025-09-30 (traffic)
+#: check_frequency: 10d (traffic)
+# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork 18804,2991 18949,3073
 EOF
      },
@@ -50006,7 +50006,7 @@ EOF
 #: source_id: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum)
 #: source_id: viz2021:13.37918,52.48055, (kein Endedatum)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-22
+#: last_checked: 2025-09-30 (traffic)
 #: check_frequency: 14d
 Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
 EOF
@@ -50162,7 +50162,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-09-29
+#: last_checked: 2025-09-30
 	q4::inwork 14641,10552 14608,10409 14558,10264
 EOF
      },
@@ -50197,7 +50197,7 @@ EOF
        data  => <<'EOF',
 #: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2025-09-29
+#: last_checked: 2025-09-30
 #: check_frequency: 14d
 	q4::inwork 14490,10610 14312,10657
 EOF

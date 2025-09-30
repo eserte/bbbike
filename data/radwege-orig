@@ -52,7 +52,7 @@
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025)
-#: last_checked: 2025-09-13
+#: last_checked: 2025-09-22 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -361,7 +361,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-09-29 vvv
+#: last_checked: 2025-09-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1347,6 +1347,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410084587/neue-wege-ueber-die-elsenbruecke-zu-gefaehrlich-fuer-radfahrer.html
 #: by: https://www.morgenpost.de/berlin/article410094838/neuer-a100-abschnitt-das-sind-die-folgen-fuer-die-elsenstrasse.html
 #: by: https://entwicklungsstadt.de/a100-knotenpunkt-berlin-fertigstellung-der-elsenbruecke-verschiebt-sich-auf-2026/ (Freigabe des neuen Brückenteils frühestens Januar 2026, vielleicht später)
+#: by: https://www.tagesspiegel.de/berlin/verkehrschaos-im-a100-kiez-geht-weiter-neubau-der-berliner-elsenbrucke-dauert-langer-als-geplant-14409248.html
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -1374,7 +1375,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-09-29 vvv
+#: last_checked: 2025-09-30 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt zum Ersatzneubau) vvv
@@ -2374,7 +2375,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-09-21 vvv
+#: last_checked: 2025-09-30 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 asphaltiert	RW2; 17681,7589 17611,7690
@@ -8177,7 +8178,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: adac:1733244580 (inaktiv)
 #: source_id: adac:256162332 (inaktiv)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_289064 (kein Endedatum)
-#: source_id[inactive]: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum)
+#: source_id: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv)
 #: source_id: bvg2024:172#HIM_FREETEXT_289063 (kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293426 (Haltestellenverlegung, kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293415 (Haltestellenverlegung, kein Endedatum)
@@ -8699,8 +8700,9 @@ die letzten Meter mit benutzungspflichtigen Radweg	RW0; 10347,17959 10228,18196
 #: by: mapillary
 #: confirmed_by: srt
 	RW7;RW7 17522,8220 17202,8391
-#: by: mapillary
-gemeinsamer Geh- und Radweg, alter Beton	RW2; 20717,17516 20855,17515 20905,17567 20915,17584 20929,17685 20853,17762
+#: historical_note: früher (während der Bauarbeiten zur neuen Wuhletalbrücke) mit Benutzungspflicht
+alter Beton	RW1; 20717,17516 20855,17515 20905,17567 20915,17584
+gemeinsamer Geh- und Radweg, alter Beton	RW2; 20915,17584 20929,17685 20853,17762
 	RW6;RW6 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
 	RW6;RW6 22101,10985 22146,10995 22172,10996
 	RW6;RW6 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116

@@ -670,9 +670,10 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Karlshorst ###
 # 
 #: next_check_id: BLOCKDAMMWEGAMPEL-2025
-#: last_checked: 2025-09-01
+#: historical_note: zeitweise q3-
+#: last_checked: 2025-09-30
 #: check_frequency: 30d
-Hönower Wiesenweg: Bauarbeiten, Fahrbahn gesperrt, Engstelle	q3-::inwork 17380,8858 17416,8767
+Hönower Wiesenweg: Bauarbeiten, Fahrbahn gesperrt, Engstelle	q2::inwork 17380,8858 17416,8767
 # 
 # REMOVED --- #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00 --- #: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024) (bis 22.11.2024) (bis 30.11.2024) (bis 13.12.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_232184 (bis auf weiteres) (inaktiv, aber Sperrung dürfte weiterhin bestehen) (wieder aktiv) --- #: last_checked: 2024-12-13 --- #: next_check: 2024-12-13 --- # REMOVED --- #: valid: -20241122 --- Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
 # 
@@ -1041,9 +1042,9 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: next_check_id: ONTARIOSEE-2023
 #: osm_watch: way id="42701160" version="41"
 #: osm_watch: way id="1193560283" version="10"
-#: last_checked: 2025-09-10
+#: last_checked: 2025-09-30
 #: check_frequency: 21d
-#: next_check: 2025-09-30 (Halteverbotsschilder)
+# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
@@ -6126,7 +6127,7 @@ Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 #: osm_watch: way id="114381362" version="16"
 #: osm_watch: way id="1100622078" version="9"
 #: osm_watch: way id="1100622082" version="9"
-#: last_checked: 2025-05-12 (mapillary)
+#: last_checked: 2025-09-22 (mapillary)
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
 #: XXX ^^^
