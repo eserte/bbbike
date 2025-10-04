@@ -1003,7 +1003,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-09-29
+#: last_checked: 2025-10-04
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1695,7 +1695,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1432299752406888449 (Grundsanierung ab 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11059 (Anfrage)
-#: by: https://www.infravelo.de/projekt/petersburger-strasse-1/ (2. Quartal 2024 - 1. Quartal 2027) (3. Quartal 2024 - 1. Quartal 2027)
+#: by: https://www.infravelo.de/projekt/petersburger-strasse-1/ (2. Quartal 2024 - 1. Quartal 2027) (3. Quartal 2024 - 1. Quartal 2027) (3. Quartal 2024 - 4. Quartal 2027)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1482741.php (grundhafte Erneuerung: 2,50 m breite Radwege; neue Ampel am Bersarinplatz; Abschluss im III. Quartal 2027)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (neue Verkehrsführung ab 16.9.2024)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/petersburger-strasse/lageplan_blatt1.pdf
@@ -3082,7 +3082,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-09-22
+#: last_checked: 2025-10-04
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 	RW2; 12543,11521 12645,11673
@@ -5928,7 +5928,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/dorfstrasse-malchow-b2/lageplan_6.pdf
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
-#: osm_watch: way id="176753739" version="23"
+#: osm_watch: way id="176753739" version="24"
 #: last_checked: 2025-09-08
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 180d
@@ -8792,9 +8792,9 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944818.php (Bauarbeiten werden fortgesetzt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (südliche Fahrbahn wird erst 2021 fertiggestellt (Stand Mai 2020))
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-wird-weiter-gebaut_a276997
-#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021) (mittlerweile 1. Quartal 2020 - 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025)
-#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025)
-#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021) (mittlerweile gelöscht) (und wieder da, nun bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021) (mittlerweile 1. Quartal 2020 - 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025) (1. Quartal 2020 - 4. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025) (1. Quartal 2020 - 4. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021) (mittlerweile gelöscht) (und wieder da, nun bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025) (1. Quartal 2020 - 2. Quartal 2026)
 #: by: https://www.tagesspiegel.de/berlin/sanierung-der-bvg-hochbahn-sperrung-auf-u1-und-u3-in-berlin-kreuzberg-wird-ab-freitag-ausgeweitet/27039930.html (Verstetigung ab 12.4.2021)
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung erst 2023)
@@ -9227,7 +9227,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (Markierung nach Leitungsbauarbeiten)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (bis Ende 2021; hier: "900m" --- ist vielleicht auch ein Teil von Alt-Tempelhof gemeint?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
-#: by: https://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...)) (mittlerweile: 3. Quartal 2021 - 4. Quartal 2022) (3. Quartal 2021 - 2. Quartal 2023) (mittlerweile ab 1. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (1. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...)) (mittlerweile: 3. Quartal 2021 - 4. Quartal 2022) (3. Quartal 2021 - 2. Quartal 2023) (mittlerweile ab 1. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (1. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2026) (4. Quartal 2025 - 4. Quartal 2026)
 #: by[removed]: http://www.infravelo.de/projekt/schoeneberger-strasse-2/ (wurde wieder entfernt)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-dauerhaften-radweg-an-der-schoeneberger-strasse_a317109

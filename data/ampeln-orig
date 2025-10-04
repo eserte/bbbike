@@ -6,6 +6,12 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m272aka72s2t (bis Mitte November 2025)
+#: source_id: viz2021:13.14647,52.4557, (bis 12.11.2025)
+#: next_check: 2025-11-12
+#: valid: -20251112
+Kladower Damm/Runebergweg/Topeliusweg: Gegenverkehrsregelung	X::inwork::alternating -6982,5237
+# 
 #: source_id: viz2021:13.44834,52.4684,26.09.2025,07:00 (bis 21.11.2025)
 #: last_checked: 2025-09-27
 #: next_check: 2025-11-21
@@ -3903,7 +3909,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-09-26 vvv
+#: last_checked: 2025-10-04 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -5268,6 +5274,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	F 22125,30631
 	X 68839,75050
 	X 67962,74347
+	X 67460,74596
 	X 68240,74219
 	X 68682,74325
 	X 68933,74089

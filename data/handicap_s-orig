@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-09-29
+#: last_checked: 2025-10-04
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -132,7 +132,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-09-29
+#: last_checked: 2025-10-03 (daf)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -156,7 +156,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbaua
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-09-22 vvv
+#: last_checked: 2025-10-04 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -383,7 +383,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="42"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-09-07 (architektur-urbanistik)
+#: last_checked: 2025-10-03 (daf)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
 #: next_check: 2025-11-30 (weddingweiser, Abrissarbeiten)
@@ -587,7 +587,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-09-26 vvv
+#: last_checked: 2025-10-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -851,11 +851,11 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: osm_watch: way id="16096289" version="34"
-#: osm_watch: way id="707100249" version="26"
+#: osm_watch: way id="16096289" version="35"
+#: osm_watch: way id="707100249" version="27"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-09-02 (architektur-urbanistik)
+#: last_checked: 2025-10-03 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249

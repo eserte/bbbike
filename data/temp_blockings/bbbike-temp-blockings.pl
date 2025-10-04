@@ -22432,13 +22432,13 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-09-29 (traffic)
+#: last_checked: 2025-10-04 (traffic)
 #: check_frequency: 7d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 # (noch nicht!) --- Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-29 (traffic)
+#: last_checked: 2025-10-04 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -39967,7 +39967,6 @@ EOF
      },
      { from  => 1681189200, # 2023-04-11 07:00
        until => undef, # $isodate2epoch->("2024-05-24 23:59:59"), # 1693447200, # 2023-08-31 04:00
-       #dont_check_date => 1,
        text  => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt', # voraussichtlich bis 24.05.2024', # war: ... zwischen Hindemithplatz und Wielandstr. ...
        type  => 'handicap',
        data  => <<EOF,
@@ -39985,7 +39984,7 @@ EOF
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2025-09-06
+#: last_checked: 2025-10-04
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -40364,7 +40363,7 @@ EOF
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
-#: also_indoor: traffic (ex-T,G)
+#: also_indoor: traffic (ex-T,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: last_checked: 2025-09-20 vvv
 #: check_frequency: 10d (traffic) vvv
@@ -40480,12 +40479,7 @@ EOF
 #: last_checked: 2025-09-27 (DB website) vvv
 #: next_check: 2028-03-15 (DB website) vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
-#: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m
-#: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025) (inaktiv)
-#: source_id: adac:1795606390 (bis voraussichtlich 06.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.499947,52.640906, (bis 06.10.2025)
-#: next_check: 2025-10-06 (VIZ-Verkehrsmeldung)
-#	q3::inwork; 17101,26701 16532,26174
+# REMOVED --- #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m --- #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025) (inaktiv) --- #: source_id: adac:1795606390 (bis voraussichtlich 06.10.2025) (neue ID -> inaktiv) --- #: source_id: viz2021:13.499947,52.640906, (bis 06.10.2025) --- #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) ---	q3::inwork; 17101,26701 16532,26174
 # REMOVED (nicht mehr?)	q3::inwork 17101,26701 16532,26174
 #: next_check ^^^
 #: last_checked ^^^
@@ -40633,8 +40627,8 @@ EOF
        text  => 'Seelower Str.: samstags 10-16 Uhr Wochenmarkt, Fahrbahn zwischen Schivelbeiner Str. und Dänenstr. gesperrt',
        type  => 'handicap',
        recurring => 1,
-       source_id => 'https://bbm-maerkte.de/bauernmarkt-seelower-strasse/',
        data  => <<EOF,
+#: by: https://bbm-maerkte.de/bauernmarkt-seelower-strasse/
 #: tempex: (sa) T10-T16
 	q4::temp:clock 10739,16146 10729,16042
 EOF
@@ -43936,7 +43930,7 @@ EOF
 #: source_id: viz2021:13.52004,52.5326, (bis 12.08.2025) (bis 12.09.2025) (bis 31.10.2025)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
 #: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
-#: osm_watch: way id="43796416" version="22"
+#: osm_watch: way id="43796416" version="23"
 #: osm_watch: note 4185183 15
 #: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
@@ -47445,7 +47439,7 @@ EOF
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-T,re-H)
+#: also_indoor: traffic (ex-T,ex-H)
 #: last_checked: 2025-09-30
 #: check_frequency: 10d
 #: next_check: 2025-10-02 (Halteverbotsschilder)
@@ -47776,9 +47770,9 @@ EOF
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
-#: osm_watch: way id="1089784248" version="3"
+#: osm_watch: way id="1089784248" version="4"
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
-#: osm_watch: way id="1374232475" version="3"
+#: osm_watch: way id="1374232475" version="4"
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (H)
 #: last_checked: 2025-08-27
@@ -48806,7 +48800,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-29 (traffic) vvv
+#: last_checked: 2025-10-04 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
@@ -48872,7 +48866,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-09-19 (daf)
+#: last_checked: 2025-10-04
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -48948,12 +48942,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Treitschkestr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Betty-Katz-Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-09-29 (traffic)
+#: last_checked: 2025-10-04 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 EOF
@@ -49282,7 +49276,7 @@ EOF
        data  => <<'EOF',
 #: source_id: adac:879720956 (bis voraussichtlich 02.10.2025) (neue ID -> inaktiv)
 #: note: bei rbb bis 02.10.2025
-#: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025)
+#: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
 #: also_indoor: traffic (T)
 	q4::inwork; 5700,10226 5597,10299 5450,10338
 EOF
@@ -49314,8 +49308,9 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409465412/neuer-baustress-an-der-altstadt-koepenick-nur-noch-ein-albtraum.html
 #: note: laut Stromnetz-Website bis 19.09.2029, mittlerweile bis Anfang Oktober 2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-09-30 (traffic)
-#: next_check: 2025-10-01 (stromnetz website)
+#: last_checked: 2025-10-04 (traffic)
+#: check_frequency: 7d (traffic)
+# REMOVED --- #: next_check: 2025-10-01 (stromnetz website)
 	q4::inwork 22740,4415 22542,4485 22495,4523
 EOF
      },
@@ -49975,7 +49970,7 @@ EOF
 #: next_check_id: MELCHIOR-2025
 #: add_fragezeichen: Ist die Fahrbahn wieder offen?
 #: osm_watch: note 3954739 11
-#: last_checked: 2025-09-26
+#: last_checked: 2025-10-01 (mapillary)
 #: check_frequency: 7d
 # REMOVED ---	q4::inwork 11917,11186 11726,11265
 	q4::inwork 11726,11265 11542,11342 11507,11355
@@ -50197,7 +50192,7 @@ EOF
        data  => <<'EOF',
 #: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-03 (daf)
 #: check_frequency: 14d
 	q4::inwork 14490,10610 14312,10657
 EOF
@@ -50220,6 +50215,42 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
 #: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025)
 	q4::inwork; 17916,5675 18013,5627
+EOF
+     },
+     { from  => 1759010400, # 2025-09-28 00:00
+       until => 1777586399, # 2026-04-30 23:59
+       text  => 'Am Kupfergraben: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis März/April 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
+#: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
+#: also_indoor: traffic (G,T,H[nur Georgenstr])
+#: last_checked: 2025-10-04
+#: check_frequency: 30d
+#: next_check: 2026-04-30
+	q4::inwork 9870,12657 9815,12705 9754,12775
+EOF
+     },
+     { from  => 1759615200, # 2025-10-05 00:00
+       until => 1762556400, # 2025-11-08 00:00
+       text  => 'Paulsenstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 06.10.2025 bis 07.11.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603529.php
+	q4::inwork 4339,6315 4379,6390 4407,6445
+EOF
+     },
+     { from  => 1759615200, # 2025-10-05 00:00
+       until => 1767222000, # 2026-01-01 00:00
+       text  => 'Auf dem Oktogon/Hermann-Dorner-Allee: mögliche Einschränkungen und Sperrungen wegen Bauarbeiten, vom 6.10.2025 bis Dezember 2025',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: next_check_id: HERMANNDORNERALLEE-2025
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1603361.php (Bauarbeiten 6. Oktober 2025 - Dezember 2025)
+#: next_check: 2025-12-01 (BA-Seite) vvv
+Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
+Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::inwork; 18445,2642 18374,2971
+#: next_check ^^^
 EOF
      },
     );

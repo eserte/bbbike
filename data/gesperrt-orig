@@ -2114,6 +2114,8 @@ Märkischer Platz (Dallgow-Döberitz)	1 -13237,14962 -13235,14987 -13213,15000 -13
 Märkischer Platz (Dallgow-Döberitz)	1 -13196,15067 -13188,15060 -13188,14999 -13169,14983 -13168,14956
 #: by ^^^
 # 
+PCK-Parkplatz	1 64952,76990 65078,76848
+# 
 #: section ^^^
 ######################################################################
 #: section: Sperrungen außerhalb Brandenburgs vvvvvvvvvvvvvvvvvvvvvvvv
@@ -4172,8 +4174,8 @@ Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2:
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
-#: osm_watch: way id="1332697425" version="3"
-#: last_checked: 2025-08-04 (osm)
+#: osm_watch: way id="1332697425" version="4"
+#: last_checked: 2025-10-03 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
@@ -4383,8 +4385,9 @@ Magnus-von-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
 # REMOVED (offiziell offen) --- #: osm_watch: way id="1199463690" version="2" --- Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
-#: osm_watch: way id="693633081" version="12"
-#: osm_watch: way id="693633082" version="8"
+#: osm_watch: way id="1425622570" version="1"
+#: osm_watch: way id="693633081" version="14"
+#: osm_watch: way id="693633082" version="12"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 # REMOVED --- #: osm_watch: way id="1199463688" version="3"
 #: osm_watch: way id="1199465845" version="5"
@@ -4893,7 +4896,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-09-22
+#: last_checked: 2025-10-04
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5629,9 +5632,9 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: check_frequency: 210d
 # REMOVED (entfernt) --- #: osm_watch: way id="127091100" version="14" brb
 # REMOVED (entfernt) --- #: osm_watch: way id="733975361" version="3" brb
-#: osm_watch: way id="161686079" version="10" brb
-#: osm_watch: way id="1202953901" version="3" brb
-#: osm_watch: way id="1202953902" version="3" brb
+#: osm_watch: way id="161686079" version="11" brb
+#: osm_watch: way id="1202953901" version="4" brb
+#: osm_watch: way id="1202953902" version="4" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
 # 
 # REMOVED (offen) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden") --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/muehlenbruecke-im-sommer-wieder-nutzbar_a197932 (im Sommer 2019 wieder offen) --- #: by: http://www.abendblatt-berlin.de/2019/01/25/bruecke-an-tegeler-muehle-bald-wieder-offen/ --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/humboldtbruecke-wird-saniert_a216268 (bis zum Sommer (2019) wieder passierbar) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-weiter-gesperrt_a219670 (Verzögerungen; Öffnung erst 2020?) --- #: by: https://www.morgenpost.de/bezirke/reinickendorf/article226296951/Bruecke-an-der-Muehle-in-Tegel-bleibt-gesperrt.html (Öffnung Frühjahr 2020?) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7692 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7684 --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-bleibt-weiter-gesperrt_a251584 (Sperrung mindestens bis Sommer 2020) --- #: by: https://leute.tagesspiegel.de/reinickendorf/macher/2020/07/15/131974/die-gesperrte-bruecke-zur-humboldt-insel/ (Neubau bis Dezember 2020) --- #: by: https://abendblatt-berlin.de/2020/12/08/berlin-tegel-baustart-fuer-fussgaengerbruecke-an-der-muehle/ (Baubeginn Ende November 2020, Fertigstellung "hoffentlich" im Frühjahr 2021) --- #: by: https://www.berliner-woche.de/tegel/c-bauen/endlich-bauarbeiten_a295949 (voraussichtlich bis Frühjahr 2021) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaenger-koennen-die-muehlenbruecke-wieder-passieren_a332261 --- # REMOVED (Alexandersteg, nicht gesperrt) --- #: osm_watch: way id="27178371" version="11" --- #: osm_watch: way id="23099023" version="13" --- #: osm_watch: way id="23099024" version="8" --- #: osm_watch: way id="103531998" version="9" --- #: last_checked: 2021-11-13 (osm) --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2021-03-15 --- # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 --- Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
