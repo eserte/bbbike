@@ -370,7 +370,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-09-29
+#: last_checked: 2025-10-05
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -4010,8 +4010,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: by: mapillary
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/endlich-eine-neue-ampel-dieser-provisorische-zebrastreifen-im-berliner-westen-soll-im-sommer-verschwinden-13794124.html (zurzeit nur Zebrastreifen, neue Ampel wird im Sommer 2025 errichtet werden, leicht versetzt)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neuer-platz-neue-termine-neue-brucke-wie-es-zwischen-pichelsdorfer-strasse-und-havel-weitergeht-14449979.html (Arbeiten ruhen; außerdem Erwähnung einer Fußgängerverbindung zur Krowelstr.; in Zukunft wird es auch eine neue Brücke über den Burgwallgraben geben)
 #: note: Anforderungsampel
-#: next_check: 2025-09-01 (Tsp)
+#: last_checked: 2025-10-05 (Tsp)
+# REMOVED --- #: next_check: 2025-09-01 (Tsp)
 	F0 -3693,13012
 	X 9934,2307
 	F 16487,17785

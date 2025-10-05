@@ -132,7 +132,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-10-03 (daf)
+#: last_checked: 2025-10-05
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -1038,14 +1038,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/landsberger-allee-315-341-343.837/page-2#post-22878 --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: osm_watch: way id="1135879798" version="2" --- #: also_indoor: traffic (ex-G) --- #: last_checked: 2024-07-22 --- #: check_frequency: 60d --- #: next_check: 2024-06-17 --- Heldburger Str.: Tief- und Hochbauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 17249,14575 17392,14591
 # REMOVED (beendet) --- by: #: by: https://entwicklungsstadt.de/173-neue-mietwohnungen-wbm-projekt-in-lichtenberg-abgeschlossen/ --- #: note: nur etwa der halbe Abschnitt ist verengt, deshalb q3 statt q4 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-06-19 --- Arendsweg: Bauarbeiten, Fahrtrichtung gesperrt	q3::inwork; 17249,14575 17254,14451
 # REMOVED (nicht mehr) --- #: next_check_id: RUSCHEAMPEL-2024 --- #: XXX siehe auch vorbereiteten Eintrag in handicap_directed, vielleicht wird diese Verkehrsführung in einer späteren Phase realisiert? --- #: last_checked: 2024-05-02 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-14 vvv --- #: valid: -20240614 vvv --- # REMOVED (hier nicht mehr) --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15747,12880 15950,12886 --- Bornitzstr.: Sperrung der Fahrbahn an der Ruschestr., Umweg über Gehwege	q3::inwork 15950,12886 16073,12883 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: ONTARIOSEE-2023
-#: osm_watch: way id="42701160" version="41"
-#: osm_watch: way id="1193560283" version="10"
-#: last_checked: 2025-09-30
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
-Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
+# REMOVED --- #: next_check_id: ONTARIOSEE-2023 --- #: osm_watch: way id="42701160" version="41" --- #: osm_watch: way id="1193560283" version="10" --- #: last_checked: 2025-09-30 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder) --- Ontarioseestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine	q3::inwork 18552,10135 18585,10024 18411,10037
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?

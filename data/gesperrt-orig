@@ -304,14 +304,8 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kietzer Str.	1s:q3 22372,4496 22383,4470
 # 
-# REMOVED (hier keine Einbahnstraße, nur eine Sackgasse) --- Ontarioseestr.	1 18552,10135 18585,10024
-#: next_check_id: ONTARIOSEE-2023
-#: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037
-#: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025)
-#: last_checked: 2025-09-30
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
-Ontarioseestr.	1no 18585,10024 18411,10037
+# REMOVED --- #: next_check_id: ONTARIOSEE-2023 --- #: XXX nach den Bauarbeiten die Einbahnstraßenregelung wiederherstellen: Ontarioseestr.	1 18585,10024 18411,10037 --- #: note: Ende laut Halteverbotsschilder (früher Oktober 2024, nun Juni 2025) --- #: last_checked: 2025-09-30 --- #: check_frequency: 21d --- #: next_check: 2025-09-30 (Halteverbotsschilder)
+Ontarioseestr.	1 18585,10024 18411,10037
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18411,10037 18339,10048
 # 
 Degnerstr. (außer Tram)	1 16445,15590 16449,15604
@@ -1590,12 +1584,13 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/herzzentrum-wedding.533/#post-23580
 #: by: https://www.deutsches-architekturforum.de/thread/15535-dhzc-neubau-auf-dem-gel%C3%A4nde-des-virchow-klinikums/?postID=777024#post777024
 #: by: https://entwicklungsstadt.de/charite-baut-fuer-die-zukunft-so-wird-der-campus-virchow-transformiert/
+#: by: https://entwicklungsstadt.de/campus-virchow-klinikum-tiefbauarbeiten-fuer-das-neue-herzzentrum-laufen/ (Fertigstellung 2028, Inbetriebnahme 2029)
 #: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
 #: last_checked: 2025-07-26 vvv
 #: check_frequency: 360d vvv
-#: next_check: 2028-12-31 vvv
+#: next_check: 2028-12-31 (entwicklungsstadt) vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
 Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 #: next_check ^^^
@@ -4163,13 +4158,13 @@ Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeite
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-09-03
+#: last_checked: 2025-09-29 (mapillary)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
 #: osm_watch: way id="1149630679" version="5"
-#: last_checked: 2025-09-03
+#: last_checked: 2025-09-29 (mapillary)
 #: check_frequency: 90d
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
@@ -4488,8 +4483,8 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="30"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-09-30
-#: check_frequency: 21d
+#: last_checked: 2025-10-05
+#: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
@@ -4554,7 +4549,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-09-26 vvv
+#: last_checked: 2025-10-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4592,7 +4587,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-05
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 

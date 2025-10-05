@@ -4174,7 +4174,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: next_check: 2025-12-31 vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20, 2025-09-10) existiert das Radfahrer-verboten-Schild nicht mehr
-#: last_checked: 2025-09-10
+#: last_checked: 2025-10-03 (mapillary)
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="41"
@@ -4560,7 +4560,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-05
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5695,7 +5695,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"; mittlerweile Halteverbotsschilder bis 30.09.2025, Bauzäune weggeschoben, so dass Radfahrer passieren können, Baustellenbereich neu asphaltiert
 #: priority: #B
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-05
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (DB-Mail, Halteverbotsschilder)
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6294,7 +6294,7 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-05
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -6317,7 +6317,7 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-09-03
+#: last_checked: 2025-09-29 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -7886,7 +7886,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: also_indoor: traffic (ex-G,T,B,A)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-22
+#: last_checked: 2025-09-28
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
@@ -8112,9 +8112,9 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-T,ex-H)
-#: last_checked: 2025-09-30
-#: check_frequency: 10d
-#: next_check: 2025-10-02 (Halteverbotsschilder)
+#: last_checked: 2025-10-05
+#: check_frequency: 7d
+# REMOVED (keine Verlängerung der Halteverbotsschilder) --- #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
 # REMOVED (nach hinten gewandert) ---	2::inwork 17587,9655 17668,9632 17777,9649
@@ -8435,7 +8435,7 @@ Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025) (bis 17.10.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 5
+#: osm_watch: note 4734747 6
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
@@ -8946,7 +8946,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-05
 #: check_frequency: 30d
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -9185,7 +9185,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-09-26
+#: last_checked: 2025-10-05
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9458,7 +9458,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-05
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9495,7 +9495,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2025-10-03 (daf)
+#: last_checked: 2025-10-05
 #: check_frequency: 14d
 	q4::inwork 14490,10610 14312,10657
 ',
@@ -9534,7 +9534,8 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
 #: last_checked: 2025-10-04
 #: check_frequency: 30d
 #: next_check: 2026-04-30
-	q4::inwork 9870,12657 9815,12705 9754,12775
+# REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
+	q4::inwork 9815,12705 9754,12775
 ',
          'from' => 1759010400,
          'id' => 4455,

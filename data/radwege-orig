@@ -1058,7 +1058,7 @@ Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/gefahrlicher-zickzack-kurs-statt-sicherheit-wird-der-millionenteure-radstreifen-auf-der-schonhauser-allee-jetzt-wieder-demontiert-13841635.html
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2025-09-26
+#: last_checked: 2025-09-28 (mapillary)
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -1348,6 +1348,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.morgenpost.de/berlin/article410094838/neuer-a100-abschnitt-das-sind-die-folgen-fuer-die-elsenstrasse.html
 #: by: https://entwicklungsstadt.de/a100-knotenpunkt-berlin-fertigstellung-der-elsenbruecke-verschiebt-sich-auf-2026/ (Freigabe des neuen Brückenteils frühestens Januar 2026, vielleicht später)
 #: by: https://www.tagesspiegel.de/berlin/verkehrschaos-im-a100-kiez-geht-weiter-neubau-der-berliner-elsenbrucke-dauert-langer-als-geplant-14409248.html
+#: by: https://www.morgenpost.de/berlin/article410113825/neubau-der-elsenbruecke-dauert-laenger-was-die-gruende-sind.html
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
 #: source_id: 2147346063 (inaktiv)
@@ -1375,7 +1376,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-09-30 vvv
+#: last_checked: 2025-10-05 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt zum Ersatzneubau) vvv
@@ -3263,7 +3264,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-09-29
+#: last_checked: 2025-10-05
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -8596,7 +8597,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17963,6313
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 # REMOVED (deleted) #: osm_watch: way id="26708088" version="38"
 #: osm_watch: way id="671329663" version="17"
-#: last_checked: 2025-08-16 vvv
+#: last_checked: 2025-10-03 (mapillary) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
 #: historical_note: früher (bis 2024/2025): provisorische Radspur
@@ -8955,7 +8956,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
-#: last_checked: 2025-09-06 vvv
+#: last_checked: 2025-09-16 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
