@@ -37805,12 +37805,13 @@ EOF
 	q4::inwork 12081,12236 12059,12172
 EOF
      },
-     { from  => 1662012000, # 2022-09-01 08:00
-       until => 1662325200, # 2022-09-04 23:00
-       text  => 'Paul-Löbe-Allee: Veranstaltung, zwischen Annemarie-Renger-Str. und Konrad-Adenauer-Str. gesperrt, vom 02.09.2022 08:00 bis 04.09.2022 23:00',
+     { from  => $isodate2epoch->("2025-10-05 00:00:00"), # 1662012000, # 2022-09-01 08:00
+       until => $isodate2epoch->("2025-10-08 08:00:00"), # 1662325200, # 2022-09-04 23:00
+#      text  => 'Paul-Löbe-Allee: Veranstaltung, zwischen Annemarie-Renger-Str. und Konrad-Adenauer-Str. gesperrt, vom 02.09.2022 08:00 bis 04.09.2022 23:00',
+       text  => 'Paul-Löbe-Allee: Veranstaltung, Sperrung zwischen Annemarie-Renger-Str. und Konrad-Adenauer-Str., evtl. sind auch Radfahrer betroffen, vom 06.10.2025 bis 08.10.2025 08:00',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.37203,52.51939,02.09.2022,08:00',
        data  => <<EOF,
+#: source_id: viz2021:13.37203,52.51939,02.09.2022,08:00 (inaktiv)
 	2::temp 8306,12609 8207,12606
 EOF
      },
@@ -43459,11 +43460,12 @@ EOF
 #: source_id: viz2021:13.30625,52.52024,06.01.2025,06:46 (bis 30.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.30212,52.52129,10.03.2025,09:14 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.30212,52.52129,26.06.2025,17:27 (bis 31.12.2025) (vorfristig inaktiv)
+#: source_id: viz2021:13.2998,52.52136,06.10.2025,07:30 (bis 31.12.2025)
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
 #: last_checked: 2025-07-01 (traffic)
-#: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
      },
@@ -47953,7 +47955,8 @@ EOF
        until => undef, # XXX
 #      text  => 'Wassermannstr., Freystadter Weg und Umgebung, Flemmingstr.: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
 #      text  => 'Wassermannstr., Freystadter Weg, Lohnauer Steig und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
-       text  => 'Lohnauer Steig, Selchowstr. und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+#      text  => 'Lohnauer Steig, Selchowstr. und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+       text  => 'Wassermannstr., Lohnauer Steig, Selchowstr. und Umgebung: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
        type  => 'handicap',
        accept_multi_feature_distance => 2000,
        data  => <<'EOF',
@@ -48005,6 +48008,14 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 # REMOVED --- #: next_check ^^^
 #: note: wo genau?
 Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
+# 
+#: note: hier Arbeiten an Gasleitungen, aber in der gleichen Gegend
+#: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025)
+#: next_check: 2025-11-14
+Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
+#: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025)
+#: next_check: 2025-11-14
+Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -48100,7 +48111,7 @@ EOF
        text  => 'Heesestr./Südendstr.: Sperrung der Fahrbahn zwischen Althoffstr. und Südendstr. sowie im Kreuzungsbereich Südendstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (re-G[Südenedstr+Heesestr],T[Südenedstr],W[Südenedstr],A[Heesestr])
+#: also_indoor: traffic (re-G[Südenedstr+Heesestr],T[Südenedstr],ex-W[Südenedstr],A[Heesestr+Südendstr])
 #: osm_watch: way id="1237862681" version="6"
 #: osm_watch: way id="1237862680" version="3"
 #: osm_watch: way id="1237862682" version="3"
@@ -48111,7 +48122,7 @@ EOF
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-09-23 (traffic) vvv
+#: last_checked: 2025-10-06 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -49282,13 +49293,15 @@ EOF
 EOF
      },
      { from  => 1752184800, # 2025-07-11 00:00
-       until => $isodate2epoch->("2025-08-21 18:00:00"), # 1753480799, # 2025-07-25 23:59
-       text  => 'Belziger Str.: Bau- und Markierungsarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), Fahrbahn noch nicht offiziell für Radfahrer geöffnet, voraussichtlich bis zum 21. August 2025',
+       until => undef, # $isodate2epoch->("2025-08-21 18:00:00"), # 1753480799, # 2025-07-25 23:59
+#      text  => 'Belziger Str.: Bau- und Markierungsarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), Fahrbahn noch nicht offiziell für Radfahrer geöffnet, voraussichtlich bis zum 21. August 2025',
+       text  => 'Belziger Str.: Bau- und Markierungsarbeiten, Fahrbahn kann gesperrt sein',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BELZIGER-2025
-#: osm_watch[closed]: note 4877718 4
-	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
+# REMOVED (hier wohl fertig) --- #: osm_watch[closed]: note 4877718 4 ---	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
+#: last_checked: 2025-10-05 (mapillary)
+	q4::inwork 7101,9027 7308,9163
 EOF
      },
      { from  => 1752184800, # 2025-07-11 00:00
@@ -49985,7 +49998,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597306.php (Maßnahme bis Ende Oktober 2025)
 #: osm_watch: note 4959079 1
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2025-09-22
+#: last_checked: 2025-10-05 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2025-10-31 (Fahrrat-Protokoll)
 	q4::inwork 7790,9126 8014,9126 8053,9123 8081,9120 8180,9099
@@ -50252,6 +50265,27 @@ EOF
 Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
 Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::inwork; 18445,2642 18374,2971
 #: next_check ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Am Weingarten: Wasserrohrbruch, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: viz2021:13.45588,52.53572,
+#: also_indoor: traffic (T)
+#: note: Länge des abgesperrten Bereichs plus weiterer Gehwegabschnitt wegen Absperrgittern ca. 90m
+#: last_checked: 2025-10-06
+	q3::inwork 14007,14285 13867,14507
+EOF
+     },
+     { from  => 1759640400, # 2025-10-05 07:00
+       until => 1761926400, # 2025-10-31 17:00
+       text  => 'Krumme Str.: Bauarbeiten zwischen Zillestr. und Otto-Suhr-Allee, Sperrung, evtl. sind auch Radfahrer von der Sperrung betroffen, vom 06.10.2025 07:00 bis 31.10.2025 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:385805/72 viz2021:13.30956,52.514,06.10.2025,07:00 (bis 31.10.2025)
+	q4::inwork 3976,11869 3992,12063 4032,12167
 EOF
      },
     );

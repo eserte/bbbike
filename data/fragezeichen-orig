@@ -305,7 +305,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2
 #: osm_watch: way id="182782708" version="14"
 #: osm_watch: way id="168307255" version="14"
 #: osm_watch: way id="4687243" version="32"
-#: last_checked: 2025-09-08
+#: last_checked: 2025-10-06
 #: check_frequency: 360d
 #: next_check: 2026-03-15
 Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projected 14989,14539 14919,14503 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14243,13890 14218,13834
@@ -671,7 +671,7 @@ Lintruper Str.: Erhöhung des Fahrkomforts geplant	?::projected 10613,108 10665,-
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (weiterhin Überarbeitung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (voraussichtlich keine Umsetzung 2021)
 #: osm_watch: way id="30958680" version="40"
-#: osm_watch: way id="1429944747" version="1"
+#: osm_watch: way id="1429944747" version="2"
 #: last_checked: 2025-09-13
 #: check_frequency: 360d
 Ringstr.: Fortführung der Radspuren geplant	?::projected 8394,4261 8615,4151 8780,4054 8855,3997 9021,3878
@@ -1256,8 +1256,8 @@ Behrens-Ufer: öffentlicher Uferweg geplant	?::projected 19184,5554 19265,5611 19
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/wege-werden-umgebaut_a277030
 #: source_id: 2147342920 (möglicherweise inaktiv)
 #: XXX Vielleicht wurde bei der Fahrbahnsanierung auch die Radverkehrsanlage gebaut? (nein, wurde nicht)
-#: osm_watch: way id="43167459" version="15"
-#: osm_watch: way id="43167430" version="15"
+#: osm_watch: way id="43167459" version="16"
+#: osm_watch: way id="43167430" version="16"
 #: last_checked: 2025-09-02 (mapillary)
 #: check_frequency: 270d
 Ingeborg-Hunzinger-Str./Straße nach Fichtenau: Einrichten einer Radverkehrsanlage (Zweirichtungsradweg, West- oder Ostseite)	?::projected 29714,4461 29712,4548 29705,4987 29832,5065 29898,5149 30038,5338 30074,5402 30090,5446 30331,5410 30410,5450 30737,5800 30760,5824
@@ -2148,11 +2148,11 @@ Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angeleg
 #: last_checked: 2025-09-17 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
-#: osm_watch: way id="102532387" version="22"
-Straße vor Schönholz: Bau von Radspuren geplant	?::projected 8412,19074 8482,18986 8634,18787
+#: osm_watch: way id="102532387" version="23"
+Straße vor Schönholz: Bau von Radspuren geplant	?::projected 8412,19074 8422,19062 8459,19015 8482,18986 8634,18787
 #: osm_watch: way id="23984498" version="21"
 Straße vor Schönholz: Bau von Radspuren geplant	?::projected 8668,18744 8791,18605
-#: osm_watch: way id="42816235" version="18"
+#: osm_watch: way id="42816235" version="19"
 Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18545
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -3392,7 +3392,7 @@ Ackerhummelweg: geplante Straße, genaue Lage, Qualität?	?::projected 20852,18629
 #: by ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-#: osm_watch: way id="506201934" version="20"
+#: osm_watch: way id="506201934" version="21"
 #: last_checked: 2025-09-27 (osm)
 #: check_frequency: 120d
 Karl-Philipp-Moritz-Weg: (früherer Vorschlag Markus-Herz-Weg) Wann wird die restliche Straße fertig gestellt? Qualität (vermutlich Betonstraße)? Wird hier eine Spielstraße sein? (zurzeit Tempo 20)	?::inwork 20701,18634 20736,18647 20781,18666 20829,18686 20874,18704 20910,18719 20910,18719
@@ -4555,19 +4555,19 @@ Freiherr-vom-Stein-Str.: Fahrradstraße geplant	?::projected 5913,8415 5995,8477 
 #: osm_watch: way id="142161211" version="21"
 #: osm_watch: way id="142161211" version="21"
 #: osm_watch: way id="24666391" version="25"
-#: last_checked: 2025-09-13
-#: next_check: 2025-09-30 (infravelo)
+#: last_checked: 2025-10-05 (mapillary)
+# REMOVED --- #: next_check: 2025-09-30 (infravelo)
 Belziger Str.: Fahrradstraße in Realisierung	?::inwork 6852,8880 6958,8941 7101,9027 7308,9163
-#: osm_watch: way id="23109088" version="23"
+#: osm_watch: way id="23109088" version="24"
 #: osm_watch: way id="4531630" version="25"
-#: last_checked: 2025-09-15
+#: last_checked: 2025-10-05 (mapillary)
 #: next_check: 2025-10-31 (Fahrrat-Protokoll)
 Langenscheidtstr.: Fahrradstraße geplant	?::projected 7647,9196 7596,9249 7509,9337
-#: osm_watch: way id="182692251" version="14"
+#: osm_watch: way id="182692251" version="15"
 #: osm_watch: way id="188591697" version="15"
 #: osm_watch: way id="4525869" version="27"
 #: osm_watch: way id="1137942395" version="5"
-#: last_checked: 2025-09-22
+#: last_checked: 2025-10-05 (mapillary)
 #: next_check: 2025-10-31 (Fahrrat-Protokoll)
 Monumentenstr.: Fahrradstraße geplant	?::projected 7647,9196 7735,9121 7790,9126 8014,9126 8053,9123 8081,9120 8180,9099 8389,9087 8480,9080 8598,9074
 #: by ^^^
@@ -5268,7 +5268,7 @@ Müggelseedamm: Planung einer Fußgängerampel	?::projected 25817,4802 25803,4823 2
 #: source_id: 2147343407 (möglicherweise inaktiv)
 # REMOVED --- #: also_indoor: traffic (G,H)
 #: osm_watch: way id="24680768" version="32"
-#: osm_watch: way id="478039700" version="21"
+#: osm_watch: way id="478039700" version="22"
 #: last_checked: 2025-05-24 (mapillary)
 #: check_frequency: 180d
 Hermann-Hesse-Str.: wird es hier Radverkehrsanlagen (z.B. neue Radspuren) geben?	? 9487,18887 9681,19179 9811,19302
@@ -6020,7 +6020,7 @@ Dunckerbrücke: Ersatzneubau geplant	?::projected 11654,15572 11689,15639
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/urbane-spreestadt-entsteht_a302229
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklung/vermessung/bebauungsplaene/artikel.1178660.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklung/vermessung/bebauungsplaene/bebauungsplan_4-62.pdf
-#: osm_watch: way id="31525765" version="24"
+#: osm_watch: way id="31525765" version="25"
 #: last_checked: 2025-09-24
 #: check_frequency: 360d
 Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperrt	? 5243,12303 5299,12420
@@ -6221,7 +6221,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2025-10-04
+#: last_checked: 2025-10-06
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -7603,7 +7603,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-06
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -8139,6 +8139,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.tagesspiegel.de/berlin/macht-keinen-sinn-uber-weitere-strecken-zu-reden-bvg-chef-erteilt-u-bahn-traumen-des-senats-eine-absage-13955360.html (Baustart: Dezember 2025, Bauzeit: rund vier Jahre)
 #: by: https://www.nd-aktuell.de/artikel/1192535.muehlendammwehr-neuer-wanderweg-fuer-spreewelse-in-berlin-mitte.html
 #: by: https://entwicklungsstadt.de/waisentunnel-berlin-ersatzneubau-sichert-stabilitaet-des-u-bahnnetzes/
+#: by: https://www.nd-aktuell.de/artikel/1194529.u-bahn-u-mexikoplatz-baustart-in-elf-monaten.html (Planfeststellungsbeschluss noch im Oktober 2026?)
 #: last_checked: 2025-09-24 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-12-31 (Tsp, entwicklungsstadt: Baustart) vvv
@@ -8931,7 +8932,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
 #: note: erste Pfosten stehen bereits, mit meist zugehängten Schildern, einige Schilder schon (illegal?) nicht mehr zugehangen, außerdem erste Markierungen (Radspuren gegen die Einbahnstraßenrichtung); laut Aushängen im Februar (2025) aktiv, ist aber offensichtlich verzögert
-#: last_checked: 2025-09-29 vvv
+#: last_checked: 2025-10-06 vvv
 #: check_frequency: 14d vvv
 # REMOVED (realisiert) --- #: osm_watch: way id="1145089826" version="5" --- Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14888,11934
 # REMOVED (realisiert) --- #: osm_watch: way id="127538487" version="21" --- Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14710,11824
@@ -9121,7 +9122,7 @@ Anna-Zielenziger-Str.: ist die Straße gepflastert oder asphaltiert?	? -12719,-15
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10678 (Bebauungsplan 11-192)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Y8IWNCkTxPRb3qEGD9B2FDhWv3rLvvvQ4hITiaRp/rESlfSVA/13-Anlagen/04/attach_A9AF.pdf
 #: XXX außerdem: Straßenflächen der Max-Brunnow-Str. in diesem Bereich entfallen; bleibt der Rad- und Gehweg oder wird es zu einem reinen Fußgängerweg?
-#: last_checked: 2025-08-03
+#: last_checked: 2025-10-06
 #: check_frequency: 1000d
 Arthur-Weisbrodt-Str./Max-Brunnow-Str.: direkte Anbindung zur Thaerstraßenbrücke?	?::projected 14170,13496 14109,13449
 # 
@@ -9258,7 +9259,7 @@ Bahnhof Fangschleuse: Verlegung des Bahnhofs, Bahnübergang wird durch eine Überf
 Kunow - Neue Mühle (Radrundweg): Anbindung geplant	? 66896,81995 66945,81927 66910,81769 66862,81536 66848,81455 66868,81334 66863,81254 66920,81111 66911,81083
 # 
 #: note: laut Aushang ab Sommer (Juni?) 2025 bis Frühjahr 2027
-#: last_checked: 2025-09-04
+#: last_checked: 2025-10-06
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-01
 Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrungen geben?	? 13724,15309 13700,15375 13687,15387 13597,15443
@@ -9537,6 +9538,13 @@ Hermann-Dorner-Allee: Zebrastreifen vor der Gemeinschaftsschule Adlersdorf (Haus
 #: XXX außerdem: wo ist der Weg "Auf dem Oktogon"? ist das der Weg 18850,3597 - 18828,3196 - 18601,2971 - 18229,2973 (und evtl. weiter?)
 Hermann-Dorner-Allee: Zebrastreifen vor der Gemeinschaftsschule Adlersdorf (Höhe "Auf dem Oktogon")	? 18368,2938 18374,2971 18393,2942
 #: next_check ^^^
+# 
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1604036.php
+#: by: https://be.beteiligung.diplanung.de/verfahren/3-85/public/detail
+#: by: https://be.beteiligung.diplanung.de/file/3-85/db20dac1-a209-46c4-80b6-632637307045
+#: last_checked: 2025-10-06 (research)
+#: check_frequency: 1000d
+Bebauungsplan 3-85: Friedhof wird verkleinert	? 10145,21017 10142,20925 10269,20960 10224,21280 10129,21251 10135,21171 10140,21107 10145,21017
 # 
 #: section ^^^
 #: ignore ^^^
@@ -12176,6 +12184,7 @@ Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::project
 #: by: https://www.morgenpost.de/berlin/article409910240/u3-zum-mexikoplatz-wird-teurer-senat-keine-kostensteigerung.html
 #: by: https://www.tagesspiegel.de/berlin/u-bahn-zum-berliner-mexikoplatz-u3-verlangerung-wird-60-millionen-euro-teurer--und-dabei-wird-es-nicht-bleiben-14356481.html
 #: by: https://entwicklungsstadt.de/u3-verlaengerung-berlin-kosten-steigen-auf-160-millionen-euro/
+#: by: https://www.nd-aktuell.de/artikel/1194529.u-bahn-u-mexikoplatz-baustart-in-elf-monaten.html (Baustart am 1.9.2026)
 #: next_check: 2030-12-31 (Tsp)
 U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,3442 -1105,3303
 # 

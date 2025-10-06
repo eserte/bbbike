@@ -565,7 +565,7 @@ Marggraffbrücke: Radfahrer Richtung Nordwesten müssen den gegenüberliegenden Rad
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-09-18 vvv
+#: last_checked: 2025-10-06 vvv
 #: next_check: 2027-09-30 vvv
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13481,13128 13434,13234 13383,13349
@@ -655,5 +655,18 @@ Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fu
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
+# 
+#: by: https://viz.berlin.de/aktuelle-meldungen/verschwenkung-des-verkehrs-auf-der-landsberger-allee/ (neue Bauphase vom 19.9.2025 bis Mitte 2028)
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article410025129/bauarbeiten-auf-der-landsberger-allee-verkehr-wird-verlagert.html
+#: last_checked: 2025-10-06 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2028-06-30 vvv
+Judith-Auer-Str. -> Franz-Jacob-Str.: Umweg zur Ampel	DH:len=60 14717,14188 14771,14048 14803,13966
+Judith-Auer-Str. -> Landsberger Allee: Umweg zur Ampel	DH:len=60:tl 14717,14188 14771,14048 14871,14087
+Franz-Jacob-Str. -> Judith-Auer-Str.: Umweg zur Ampel	DH:len=60:tl 14803,13966 14771,14048 14717,14188
+Landsberger Allee -> Franz-Jacob-Str.: Umweg zur Ampel	DH:len=60 14871,14087 14771,14048 14803,13966
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: temporary ^^^

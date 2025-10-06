@@ -1909,7 +1909,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
 #: osm_watch: way id="74868383" version="27"
-#: last_checked: 2025-07-09
+#: last_checked: 2025-07-27 (mapillary)
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -4785,10 +4785,13 @@ Deutsche Str.	N 7159,17997 7227,18010 7322,18030 7405,18047
 Thaterstr.	N 7432,17964 7183,17906
 Tuchmacherweg	N 8482,18986 8644,19079
 Frühlingstr.	N 8583,18668 8660,18679
-Straße vor Schönholz	H 8412,19074 8482,18986 8634,18787 8668,18744 8791,18605 8891,18545
+# XXX_prog: richtig wäre, siehe auch unten: Straße vor Schönholz	H; 8422,19062 8459,19015
+Straße vor Schönholz	H 8422,19062 8459,19015
+Straße vor Schönholz	H 8459,19015 8482,18986 8634,18787 8668,18744 8791,18605 8891,18545
 Vereinssteg	N 8412,19074 8340,18984 8320,18955
 (Vereinssteg - Mauerweg)	NN 8320,18955 8311,18941
-Germanenstr. (Niederschönhausen, Rosenthal, Wilhelmsruh)	H 8412,19074 8364,19166 8338,19262 8333,19305 8311,19458 8304,19475 8268,19558 8244,19624 8232,19695 8227,19725 8231,19806 8242,19869
+# XXX_prog: außerdem müsste man noch hinzufügen, siehe auch oben: Germanenstr. (Niederschönhausen, Rosenthal, Wilhelmsruh)	H; 8422,19062 8459,19015
+Germanenstr. (Niederschönhausen, Rosenthal, Wilhelmsruh)	H 8422,19062 8412,19074 8364,19166 8338,19262 8333,19305 8311,19458 8304,19475 8268,19558 8244,19624 8232,19695 8227,19725 8231,19806 8242,19869
 Edelweißstr.	H 7748,20040 7885,19975 7935,19954 7993,19949 8234,19936
 Tollerstr.	N 7749,19693 7769,19736 7807,19811 7838,19884 7885,19975
 Schillerstr. (Wilhelmsruh)	N 7137,20270 7231,20266 7533,20275 7640,20304 7735,20262 7832,20219
@@ -16083,6 +16086,7 @@ Rheinsberger Str.	N 9855,14598 9679,14511
 Wolliner Str.	N 10399,14429 10311,14613 10273,14689 10238,14758 10205,14826 10168,14903 10111,15018 10071,15096 10018,15211
 Tuchollaplatz	NN 15626,10915 15616,10920
 Tuchollaplatz	N 15616,10920 15560,10946
+#: note: Privatstraße
 Splanemannstr.	N 18411,10037 18397,9928 18305,9951
 Wriezener Str. (Gesundbrunnen)	N 9210,16638 9245,16758 9299,16889 9361,17039
 Biesentaler Str.	N 9030,16853 9245,16758
