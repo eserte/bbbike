@@ -2357,7 +2357,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-09-26
+#: last_checked: 2025-10-07
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -4085,7 +4085,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-09-22
+#: last_checked: 2025-10-07
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5349,7 +5349,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: by: https://nitter.net/pic/orig/media%2FF1fgjuGXsAAx82o.jpg
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782997647063699803
 #: by: https://pbs.twimg.com/media/GL21lA-XwAASF5a?format=jpg&name=medium (Umleitungsstrecke für Radfahrer)
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20241218 (Inbetriebnahme 2027)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20241218 (Inbetriebnahme 2027) (mittlerweile Sperrung der Wiltbergstr. bis Ende Februar 2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1876878754120925633
 #: by: https://pbs.twimg.com/media/Ggsmd-aWMAAlsTV?format=jpg&name=medium
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/PL_berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_sperrungen_20250326.pdf
@@ -5375,7 +5375,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-02-28 (DB) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
 Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
@@ -5384,7 +5384,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 ',
          'from' => 1744581600,
          'id' => 3551,
-         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ende der Bauarbeiten unbekannt',
+         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis Ende Februar 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5617,6 +5617,7 @@ Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
 # REMOVED (hier vermutlich nicht) --- Goltzstr.	q4::inwork; 10763,-2276 10642,-2371 10563,-2432 10454,-2520
 #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Antrag: Freigabe für Radverkehr)
 Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156 10310,-2136
 Zescher Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10509,-2128 10513,-2397
 Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 10642,-2371
@@ -5648,7 +5649,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: XXX Wie lange dauern die Bauarbeiten? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
 #: osm_watch: note 4806178 2
 #: also_indoor: traffic (G,ex-T)
-#: last_checked: 2025-09-20 vvv
+#: last_checked: 2025-10-07 vvv
 	q3::inwork 8343,11133 8289,11205
 	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
 	q3::inwork 8253,11306 8232,11414
@@ -6530,18 +6531,21 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 #: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.403167,52.524701,09.05.2025,07:00 (hier nur Kfz-Verkehr, bis 04.06.2025) (bis 04.06.2026) (inaktiv)
 #: source_id: viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025) (inaktiv) (bis 04.06.2025)
+#: source_id: viz2021:13.40319,52.52474, (Gleisbauarbeiten, bis 07.11.2025)
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
-Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
+#: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten)
+Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
+# XXX nach den Gleisbauarbeiten wiederherstellen: Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 # REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 ',
          'from' => 1746680400,
          'id' => 3899,
-         'text' => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, voraussichtlich bis Juni 2026',
+         'text' => 'Rosenthaler Str.: Gleisbauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, bis 07.11.2025',
          'type' => 'handicap',
          'until' => 1780585200
        },
@@ -6871,7 +6875,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
-#: last_checked: 2025-07-01 (traffic)
+#: last_checked: 2025-10-06 (mapillary)
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
@@ -7167,12 +7171,17 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1459217.php (Bauarbeiten ab 26. Juni 2024 bis III. Quartal 2027, Sperrung auch für Radfahrer)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805830095908532353
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1604375.php (weitere Planungen der Sperrungen)
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027) (inaktiv)
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
+#: XXX Sperrung zwischen Jerusalemer Str. (West) und Markgrafenstr. ab 15. Oktober 2025
+#: XXX Sperrung im 1. BA bis Ende Oktober 2025
+#: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
+#: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-09-26 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2025-10-07 (Asphaltierungsarbeiten im 1. BA haben begonnen) vvv
+#: check_frequency: 7d (neue Sperrung eintragen) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
 Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
@@ -7208,7 +7217,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 # REMOVED --- #: osm_watch: way id="746470210" version="3"
 #: osm_watch: way id="1382537913" version="2"
 #: osm_watch: note 4916457 2
-#: last_checked: 2025-09-24
+#: last_checked: 2025-10-06 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-10-31
 	2::inwork 4151,13961 4156,13914 4186,13710
@@ -8673,7 +8682,23 @@ Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.43364,52.51255,25.08.2025,07:00 (bis 15.09.2025) (inaktiv)
+#: also_indoor: traffic (none)
+# MOVED --- #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025 --- #: note: mittlerweile (Mitte September 2025) eine kurze Sperrung an der Koppenstr., aber zumindest am Sa weggeschobene Barrieren
+# REMOVED (nur noch Vorfahrt vor dem Gegenverkehr?) --- #: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt? ---
+# REMOVED ---	q4::inwork; 12238,11931 12413,11901
+#: last_checked: 2025-10-07
+#: check_frequency: 45d
+#: next_check: 2025-12-19 (Halteverbotsschilder)
+	q3::inwork 12238,11931 12413,11901
+',
+         'from' => 1749297422,
+         'id' => 4362,
+         'text' => 'Lange Str.: Bauarbeiten an der Einmündung Koppenstr., Sperrung der Fahrbahn, voraussichtlich bis Mitte Dezember 2025',
+         'type' => 'handicap',
+         'until' => 1766163600
+       },
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
@@ -8918,7 +8943,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-09-24 (traffic)
+#: last_checked: 2025-10-07 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 ',
@@ -9287,7 +9312,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        },
        {
          'data' => '#: also_indoor: traffic (H[zu wenig],G[zu wenig])
-#: last_checked: 2025-09-29 (traffic)
+#: last_checked: 2025-10-06 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
 ',
@@ -9325,7 +9350,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
          'data' => '#: next_check_id: MELCHIOR-2025
 #: add_fragezeichen: Ist die Fahrbahn wieder offen?
 #: osm_watch: note 3954739 11
-#: last_checked: 2025-10-01 (mapillary)
+#: last_checked: 2025-10-07
 #: check_frequency: 7d
 # REMOVED ---	q4::inwork 11917,11186 11726,11265
 	q4::inwork 11726,11265 11542,11342 11507,11355
@@ -9496,15 +9521,17 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'until' => 1777586399
        },
        {
-         'data' => '#: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
+         'data' => '#: source_id: viz2021:13.46389,52.50054, (bis 30.10.2025)
+#: note: Einfahrt bzw. Durchfahrt verboten, Linienverkehr frei, keine Freigabe für Radverkehr trotz offizieller Umleitungsausschilderung für den Markgrafendamm
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2025-10-05
 #: check_frequency: 14d
+#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 14490,10610 14312,10657
 ',
          'from' => undef,
          'id' => 4452,
-         'text' => 'Persiusstr.: unklare Sperrung zwischen Bödikerstr. und Bossestr., Ende der Bauarbeiten unbekannt',
+         'text' => 'Persiusstr.: unklare Sperrung zwischen Bödikerstr. und Bossestr., voraussichtlich bis Ende Oktober 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9592,6 +9619,16 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'text' => 'Krumme Str.: Bauarbeiten zwischen Zillestr. und Otto-Suhr-Allee, Sperrung, evtl. sind auch Radfahrer von der Sperrung betroffen, vom 06.10.2025 07:00 bis 31.10.2025 17:00',
          'type' => 'handicap',
          'until' => 1761926400
+       },
+       {
+         'data' => '#: source_id: LMS-BR:385922/72 viz2021:13.32687,52.49824,07.10.2025,07:00 (bis 07.11.2025)
+	q4::inwork; 5191,10190 5017,10150
+',
+         'from' => 1759726800,
+         'id' => 4460,
+         'text' => 'Ludwigkirchstraße: Baustelle, von Fasanenplatz Richtung Uhlandstr. gesperrt, evtl. sind Radfahrer betroffen, vom 07.10.2025 07:00 bis 07.11.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1762531200
        }
      
 );

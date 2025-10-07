@@ -69,16 +69,12 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="23"
 #: osm_watch: way id="1072662717" version="27"
-#: last_checked: 2025-09-24
+#: last_checked: 2025-10-07
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
-#: last_checked: 2025-09-26
-#: check_frequency: 14d
-#: next_check: 2025-10-10
-#: valid: -20251010
-Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
+# REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11088 (zum Neubau des Heinrich-Hertz-Gymnasiums)
@@ -96,7 +92,7 @@ Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-08-26
+#: last_checked: 2025-10-07
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -1014,7 +1010,7 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
 ### Rudow ###
 #: next_check_id: STUBENRAUCH-2025
-#: last_checked: 2025-07-18 vvv
+#: last_checked: 2025-10-06 (mapillary) vvv
 #: next_check: 2026-10-31 vvv
 Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
