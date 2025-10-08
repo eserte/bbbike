@@ -51,7 +51,7 @@ sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver bullseye|...] [--src local|github|github-fixed|github-archive|bbbike...deb] [--bbbike-prog ...] [--bbbike-args "..."] [--branch ...]
 	 [--no-feature-pdf] [--no-feature-svg] [-no-feature-remote]
-	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt] [--docker-image owner/name:tag] [--share-data-osm] [--hack-writable-data]
+	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt] [--docker-image owner/name:tag] [--share-data-osm] [--copy-bikepowerrc] [--hack-writable-data]
 
 Note that --install-suggests would install quite a lot...
 EOF
@@ -331,6 +331,7 @@ RUN chown -R $username /usr/lib/BBBike/data
 EOF
 	    }
 	}
+
 	$docker_cmd = "$opt{'bbbike-prog'} $opt{'bbbike-args'}";
     } else {
 	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
@@ -338,6 +339,21 @@ EOF
 
     if ($opt{'hack-writable-data'}) {
 	error "--hack-writable-data works only with --src *.deb";
+    }
+
+    my $do_copy_bikepowerrc;
+    if ($opt{'copy-bikepowerrc'}) {
+	my $bikepowerrc = "$ENV{HOME}/.bikepowerrc";
+	if (!-r $bikepowerrc) {
+	    warning "No local $bikepowerrc available, cannot copy to docker image.";
+	    $do_copy_bikepowerrc = 0;
+	} else {
+	    $dockerfile .= <<EOF;
+COPY .bikepowerrc /home/$username/.bikepowerrc
+RUN chown $username:$username /home/$username/.bikepowerrc
+EOF
+	    $do_copy_bikepowerrc = 1;
+	}
     }
 
     $dockerfile .= <<'EOF';
@@ -375,6 +391,10 @@ EOF
 			 ) {
 	    _copy_p($doit, @$copy_def);
 	}
+    }
+
+    if ($do_copy_bikepowerrc) {
+	_copy_p($doit, "$ENV{HOME}/.bikepowerrc", $docker_context_dir);
     }
 
     my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
@@ -1157,6 +1177,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'docker-image' => undef,
 	       'share-data-osm' => 0,
 	       'hack-writable-data' => 0,
+	       'copy-bikepowerrc' => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -1176,6 +1197,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'docker-image=s',
 	       'share-data-osm!',
 	       'hack-writable-data!',
+	       'copy-bikepowerrc!',
 	      )
 	or usage_gui;
     gui($doit, %opt);
