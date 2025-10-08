@@ -201,16 +201,22 @@ EOF
     if ($^O ne 'MSWin32') {
 	my $uid = $<;
 	$username = (getpwuid($uid))[0];
-	if ($opt{distver} =~  m{^(noble|24\.04|wheezy)$}) { # no adduser installed in default ubuntu:24.04 and debian:wheezy image
-	    $dockerfile .= <<"EOF";
-RUN useradd --non-unique --shell /bin/bash --uid $uid --comment '' --create-home $username
-RUN passwd -d $username
+	$dockerfile .= <<"EOF";
+RUN uid=$uid; username=$username; \\
 EOF
-	} else {
-	    $dockerfile .= <<"EOF";
-RUN adduser --disabled-password --force-badname -u $uid --gecos '' $username
+	$dockerfile .= <<'EOF';
+    set -eux; \
+    existing_user=$(getent passwd "$uid" | cut -d: -f1) || true; \
+    if [ -n "$existing_user" ]; then \
+        echo "UID $uid is taken by '$existing_user', renaming user to '$username'..."; \
+        usermod -l "$username" "$existing_user"; \
+        usermod -d "/home/$username" -m "$username"; \
+        groupmod -n "$username" "$existing_user"; \
+    else \
+        useradd --non-unique --shell /bin/bash --uid "$uid" --comment '' --create-home "$username"; \
+        passwd -d $username; \
+    fi
 EOF
-	}
     }
 
     # Gather required apt packages
