@@ -2,8 +2,8 @@
 #: title: Qualität der Straßen in Berlin
 #: note: XXX_* categorization done 2008-01-26
 #:
-(Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9200,562
-(Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9123,533
+(Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9215,506 9206,553 9347,595 9365,615
+(Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9124,522 9004,481
 Mozartstr.: Kopfsteinpflaster	Q3 10259,-2660 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10474,-3186 10467,-3201
 Eiswerder (Brücken, Straßen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2023,15683 -1978,15684 -1923,15684 -1849,15683 -1833,15689 -1700,15762
@@ -609,7 +609,7 @@ Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11763,7687 11785,7
 Säntisstr.: Asphalt mit einigen Schlaglöchern	Q0 8892,802 8741,685 8652,617
 Säntisstr.: schlechtes Kopfsteinpflaster	Q3 8652,617 8533,525
 Alt-Marienfelde/Buckower Chaussee: Kopfsteinpflaster	Q2 8742,475 8533,525 8482,536 8250,655 8114,722 8000,729 7909,775
-Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0 9002,471 8972,498 8742,475
+Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0 9004,481 8977,505 8742,475
 Alt-Marienfelde: Asphalt	Q0 7909,775 7857,802
 Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8194,617 8250,655
 Ratiborstr.: Kopfsteinpflaster	Q2 12718,9529 12739,9576 12834,9738
@@ -3146,7 +3146,9 @@ Grünsteinweg: Asphalt	Q0 10859,2033 10868,2120 10886,2167
 Birnhornweg: Beton mit einigen Hebungen	Q1 9281,1790 9342,1818 9470,1863 9585,1899 9731,1956 9876,2007 10024,2059
 Rätikonweg: Beton	Q0 9669,2151 9731,1956 9805,1711 9821,1692
 Hollabergweg (Mariendorf): Beton	Q0 9342,1818 9336,2009
-Benzstr.: Kopfsteinpflaster mit Asphaltflicken	Q2 9145,1527 9182,1577 9281,1790
+Titlisweg: Beton mit einigen leichten Hebungen	Q0 9155,1894 9176,1926 9336,2009 9431,2059 9539,2105 9669,2151 9802,2199 9935,2245 9954,2252
+Benzstr.: unebenes Kleinsteinpflaster, einige Asphaltflicken	Q2; 9145,1527 9182,1577 9281,1790
+Benzstr.: abschnittsweise unebener Asphalt	Q1; 9281,1790 9182,1577 9145,1527
 Benzstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 8914,1418 8987,1466 9084,1484 9145,1527
 Bruno-Möhring-Str.: Beton	Q0 8281,1998 8359,2169
 Sonnenscheinpfad: Asphalt	Q0 8063,2092 8143,2273
@@ -5798,7 +5800,8 @@ Forddamm: Asphalt mit einigen Löchern und Unebenheiten	Q0 9098,3328 8996,3150
 Forddamm: Beton	Q0 8996,3150 8969,3074 8906,2822
 Pohligstr.: Beton	Q0 8969,3074 9000,3065
 Fritz-Werner-Str.: Asphalt	Q0 9052,2357 8955,2004
-Martiusweg: Beton	Q0 9411,1406 9314,1451 9236,1484 9155,1519 9145,1527
+Martiusweg: Beton	Q0 9411,1406 9314,1451 9236,1484 9155,1519
+Martiusweg: Kleinsteinpflaster	Q2 9155,1519 9145,1527
 Hossauerweg: Asphalt	Q0 9129,986 9083,1017 9022,1220 9056,1288 9155,1519
 Hollabergweg (Marienfelde): Beton	Q0 9140,1255 9236,1484 9351,1745
 Fleschweg: Beton	Q0 9218,1226 9140,1255 9056,1288
@@ -11612,6 +11615,7 @@ Vulkanstr./Landsberger Allee - Altenhofer Str.: unbefestigter Pfad	Q2 15796,1431
 Malteserstr.: Verbundsteinpflaster	Q1 7829,882 7867,831
 Marienfelder Allee: Verbundsteinpflaster	Q1 7857,802 7867,831
 Marienfelder Allee: Verbundsteinpflaster	Q1 7774,647 7790,672
+Marienfelder Allee: Verbundsteinpflaster	Q1 7668,471 7706,541
 Barbarossastr.: Gehwegpflasterung	Q0 5821,9502 5795,9483
 Jenaer Str.: Gehwegpflasterung	Q0 5795,9483 5790,9460
 Schmidstr.: Beton	Q0 11415,11392 11480,11526 11281,11612
@@ -11909,6 +11913,7 @@ Emser Str.: Asphalt mit Schäden	Q1 4699,9505 4692,9537 4733,9931
 Wegerichstr.: Gehwegplatten	Q1 16475,2586 16538,2543
 (Kleinbeerenstr. - Großbeerenstr.): Betonpflaster	Q0 8970,10506 8982,10510 9165,10530 9192,10528
 (Goerdelersteg - Reichweindamm): Gehwegplatten	Q1 3596,14276 3576,14273 3540,14289 3521,14360 3472,14366
+(Britzer Str. - Rixdorfer Str.): Verbundsteinpflaster	Q1 10048,3806 10010,3824 9999,3852 10012,3895
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -16165,7 +16170,7 @@ Iselbergstr.: Asphalt mit Unebenheiten	Q1 23903,13361 23786,13385 23668,13408 23
 Telemannweg: Asphalt mit Unebenheiten	Q1 23754,13165 23747,13178 23786,13385 23823,13611
 Telemannweg: Asphaltdecke	Q0 23823,13611 23869,13830
 Auerbacher Ring: Asphalt	Q0 23826,14292 23825,14323 23776,14416 23744,14482 23725,14485 23669,14461 23646,14392 23713,14247
-Hochfeilerweg: guter Asphalt	Q0 10170,2158 10108,2174 10043,2351 9975,2536 9993,2551 10015,2651
+Hochfeilerweg: Beton	Q0 10170,2158 10108,2174 10043,2351 9975,2536 9993,2551 10015,2651
 Kaiserallee: Kopfsteinpflaster	Q2 7981,1505 8064,1460 8152,1425
 Caseler Str.: guter Asphalt	Q0 14608,16772 14700,16790 14732,16770
 Goldbeckweg: sehr guter Asphalt	Q0 -1480,14922 -1489,15027 -1511,15127 -1532,15225 -1556,15319 -1547,15377

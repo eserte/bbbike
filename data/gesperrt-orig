@@ -187,7 +187,14 @@ Eichborndamm	1 4223,18982 4211,18882 4163,18676 4094,18307 4053,18108 4016,17918
 # REMOVED --- #: next_check: 2024-08-16
 Spreestr.	1 17900,6072 17939,5968 17935,5961 17877,5860
 Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
-Buckower Chaussee	1 8742,475 8972,498 9002,471
+# 
+#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: osm_watch: note 4996305 1
+#: osm_watch: way id="1025420899" version="8"
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung wieder?
+#: last_checked: 2025-10-08
+Buckower Chaussee	1no 8742,475 8977,505 9004,481
+# 
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
@@ -199,6 +206,7 @@ Nöldnerplatz	1 15903,10906 16049,10844
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
+# 
 Adlergestell (extra Radweg)	2 22096,1136 21837,1340 21812,1366 21506,1768 21388,1895
 Adlergestell (extra Radweg)	2 21998,1239 21937,1343 21878,1500 21862,1532
 # REMOVED (aufgeboben) Richterstr.	1s:q3 22092,999 22092,977 22100,941 22120,886
@@ -1118,14 +1126,11 @@ Haakonweg	1 14397,18018 14282,18041
 (Buszufahrt an der Darßer Str.)	1 14367,17965 14397,18018 14438,18059
 Straße 4	1 12799,19242 12945,19239 12956,19218 12937,19194 12814,19202
 Fritz-Werner-Str.: Werksgelände, Durchfahrt nicht möglich	2 9052,2357 8955,2004
-#: note: keine Gehwege, unübersichtliche Kurven
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9796 (Antrag auf Beibehaltung)
-#: osm_watch: note 4794596 1
-#: osm_watch: way id="154838407" version="16"
-#: XXX früher: 1s:q3, zurzeit ist die Einbahnstraße temporär (oder sogar permanent?) aufgehoben
-#: last_checked: 2025-05-24 (mapillary)
-#: check_frequency: 120d
-Hossauerweg	1no 9056,1288 9022,1220 9083,1017 9129,986
+# REMOVED --- #: osm_watch: note 4794596 1 --- #: osm_watch: way id="154838407" version="16" --- #: XXX früher: 1s:q3, zurzeit ist die Einbahnstraße temporär (oder sogar permanent?) aufgehoben --- #: last_checked: 2025-05-24 (mapillary) --- #: check_frequency: 120d
+#: historical_note: zwischenzeitlich war die Einbahnstraße aufgehoben
+#: note: keine Gehwege, unübersichtliche Kurven (deshalb nur q4)
+Hossauerweg	1s:q4 9056,1288 9022,1220 9083,1017 9129,986
 Manntzstr.: durch Tore gesperrt	2 8064,1460 8147,1663
 Bernecker Weg	1 7886,3801 7839,3714 7778,3644
 #: by: Juliane (alberts...) vvv
@@ -1763,6 +1768,9 @@ Emser Str.	1s:q4 4762,10332 4764,10350
 # 
 Lise-Meitner-Str., Wendeschleife	1 3671,14074 3656,14150
 Lise-Meitner-Str., Wendeschleife	1 3674,14156 3684,14145 3672,14115 3671,14074
+# 
+Marienfelder Allee: Radweg nur in eine Richtung	1 7706,541 7668,471
+(Britzer Str. - Rixdorfer Str.): Radweg nur in eine Richtung	1 10012,3895 9999,3852 10010,3824 10048,3806
 # 
 #: section ^^^
 ######################################################################
@@ -2653,6 +2661,7 @@ Fürstenwalder Damm: Straßenbahntrasse	3nocross 23402,5483 23492,5488 23519,5490
 Fürstenwalder Damm: Straßenbahntrasse	3nocross 23657,5467 23724,5437 23818,5394 23849,5380
 Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
 Mariendorfer Damm: Mittelstreifen	3nocross 10226,1515 10239,1481 10276,1383
+Mariendorfer Damm: Mittelstreifen	3nocross 9934,2307 9954,2252 10024,2059
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11449,9125 11136,9183
 Hasenheide: Mittelstreifen	3nocross 11500,9116 11507,9114 11550,9104 11629,9086
 Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
@@ -2776,14 +2785,16 @@ tragen	0:45 18661,4655
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: last_checked: 2024-07-03 vvv
+#: add_fragezeichen: Bleiben die Aufzüge und der Übergang erhalten? vvv
+#: last_checked: 2025-10-08 vvv
 # REMOVED --- #: check_frequency: 360d vvv
-#: next_check: 2025-10-08 (pardok) vvv
+# REMOVED --- #: next_check: 2025-10-08 (pardok) vvv
 tragen (2x15 Stufen) oder Aufzug	0:35 9209,417
 tragen (3x12 Stufen) oder Aufzug	0:35 9249,421
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 # 
 tragen (28 Stufen)	0:30 6138,12877
 Schranke	BNP:3::trailer=10 20480,5445
@@ -4980,50 +4991,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2021) --- #: last_checked: 2021-01-02 --- #: check_frequency: 30d --- #: next_check: 2021-06-01 --- (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # REMOVE (Weg offen) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php --- #: by: https://www.kms-sonne.de/projekte/blueberry-inn/ --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/in-anderthalb-jahren-soll-das-neue-blueberry-inn-an-der-reuterstrasse-fuer-kinder-und-jugendliche-oeffnen_a327431 (neuer Weg ist fast fertig, Eröffnung Anfang 2022) --- #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen --- #: last_checked: 2022-02-01 --- #: check_frequency: 120d --- #: next_check: 2023-01-01 --- #: valid: -20231231 --- Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12165,8566 12276,8590 12274,8607
-# REMOVED (sowieso keine Verbindung zum S-Bhf.) --- #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020 --- #: next_check_id: BUCKOWERCHAUSSEE-2022 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/p+r-parkplatz-wird-geschlossen_a277741 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7724 (Antrag) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,681913#msg-681913 (gesperrter Bahnhofsausgang) --- #: confirmed_by: srt (am S-Bhf.) --- #: osm_watch: way id="24557771" version="10" vvv --- #: XXX bis wann sind die Wege gesperrt? vvv --- #: note: wobei die Absperrungen weggeschoben sein können --- #: last_checked: 2025-06-02 (mapillary) vvv --- #: check_frequency: 180d vvv --- # REMOVED (Sperrung erst weiter hinten) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9473,-92 --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9310,245 --- # REMOVED (hier wird es keinen Weg mehr geben) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9310,245 9253,370 9178,556 --- # REMOVED (hier wird die bauzeitliche Umleitung für Fußgänger/Radfahrer sein) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9178,556 9218,458 9178,556 --- # REMOVED --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9310,245 9296,335 9249,434 9218,458 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: osm_watch ^^^
-# 
-#: next_check_id: BUCKOWERCHAUSSEE-2022
-#: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/ende-2022-wird-die-buckower-chaussee-gesperrt_a316425 (ab Herbst 2022 für vier Jahre)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ_dresdner_bahn_faq_20210604.pdf (IV. Quartal 2022 bis 2026)
-#: by: https://bieterportal.noncd.db.de/evergabe.bieter/eva/supplierportal/portal/subproject/277ce8e7-649d-414b-b64e-463fcf45ed05/details (Auftragsdauer: 28.02.2022 - 31.12.2025)
-#: by: https://twitter.com/VIZ_Berlin/status/1462760545208131584
-#: by: https://www.deutschebahn.com/pr-berlin-de/aktuell/presseinformationen/Meilenstein-beim-Ausbau-der-Dresdner-Bahn-Erster-von-neun-Bahnuebergaengen-beseitigt-6959472 (Ende 2021 für den Autoverkehr gesperrt, ab Ende 2022 auch für den Rad/Fuß/Busverkehr)
-#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/unterfuehrung-an-der-dresdner-bahn-trasse-fertig-sperrung-der-buckower-chaussee-steht-bevor_a329177
-#: by: https://www.berliner-woche.de/marienfelde/c-bauen/in-wenigen-wochen-wird-die-buckower-chaussee-fuer-den-autoverkehr-gesperrt_a329360 (bis Ende 2025)
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (für Radfahrer bis Dez 2022 passierbar, danach Überführung mit Aufzügen, Sperrung bis 2025)
-#: by: https://viz.berlin.de/2022/01/sperrung-bahnuebergang-buckower-chaussee/
-#: by: https://viz.berlin.de/wp-content/uploads/Buckower-Chaussee.png
-#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/lange-wege-zur-bushaltestelle_a350831
-#: by: https://www.berliner-zeitung.de/mensch-metropole/planungspanne-schon-wieder-wurde-eine-strassenbahnstrecke-vergessen-li.250623 (Bauzeit weiterhin Dezember 2022 bis 2025)
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_1122_barrierefrei.pdf (Busumleitung ab 2022-11-21)
-#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/busse-fahren-umleitungsstrecke_a363470 (für Fußgänger noch bis zum 2.12.2022 offen; Treppenanlage+Aufzüge am südlichen Eingang des Bahnhofs)
-#: by: https://nitter.net/BVG_Bus/status/1594314619081850880#m
-#: by: https://nitter.net/pic/orig/media%2FFiAksnEWAAMBNIF.jpg
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,750256#msg-750256 (asphaltierte Rampe auf der Westseite)
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,751023#msg-751023
-#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-anschluss-der-neuen-gleislage/
-#: by: https://berliner-abendblatt.de/2022/12/07/bauarbeiten-beendet-s2-faehrt-wieder-bis-mahlow/
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/buckower-chaussee-bruecke/ (voraussichtliche Bauzeit: 2022 bis 2025)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22059.pdf (voraussichtlich Eröffnung im Sommer 2025)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23305.pdf (voraussichtlich Verkehrsfreigabe am 8.10.2025)
-#: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html
-#: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 04.01.2025) (inaktiv)
-#: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert)) (bis 4.3.2023) (bis 28.04.2023) (bis 31.05.2023) (bis 31.12.2025) (inaktiv)
-#: source_id: bvg2021:x11#BVG312077_0
-#: source_id: viz2021:13.38249,52.41105,24.01.2022,06:00 (bis 31.12.2025)
-#: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
-#: note: Eintrag existiert auch in temp blockings
-#: also_indoor: traffic (G,B(nur eine Richtung))
-#: also_indoor: search Buckower_Chaussee
-# REMOVED (deleted) --- #: osm_watch: way id="1116309150" version="2"
-#: osm_watch: way id="4713304" version="50"
-#: priority: #A
-#: last_checked: 2025-09-25 (DB)
-# REMOVED, #: check_frequency: 360d
-#: next_check: 2025-10-08 (pardok, DB website)
-#: valid: -20251008
-Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
-# 
+# REMOVED (sowieso keine Verbindung zum S-Bhf.) --- #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020 --- #: next_check_id: BUCKOWERCHAUSSEE-2022 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/p+r-parkplatz-wird-geschlossen_a277741 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7724 (Antrag) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,681913#msg-681913 (gesperrter Bahnhofsausgang) --- #: confirmed_by: srt (am S-Bhf.) --- #: osm_watch: way id="24557771" version="10" vvv --- #: XXX bis wann sind die Wege gesperrt? vvv --- #: note: wobei die Absperrungen weggeschoben sein können --- #: last_checked: 2025-06-02 (mapillary) vvv --- #: check_frequency: 180d vvv --- # REMOVED (Sperrung erst weiter hinten) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9473,-92 --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9310,245 --- # REMOVED (hier wird es keinen Weg mehr geben) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9310,245 9253,370 9196,570 --- # REMOVED (hier wird die bauzeitliche Umleitung für Fußgänger/Radfahrer sein) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9196,570 9218,458 9196,570 --- # REMOVED --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9310,245 9296,335 9249,434 9218,458 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: osm_watch ^^^
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
 # REMOVED (-> permanenter Eintrag) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Parkplatzfläche wird eingezogen) --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/noch-im-fruehjahr-beginnen-bauarbeiten-fuer-neue-grundschule-an-der-conrad-blenkle-strasse_a256156 (Bauarbeiten fangen im Frühjahr 2020 an) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schulweg-zur-grundschule-im-blumenviertel-soll-sicherer-werden_a265732 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.952347.php (Baustart am 29. Juni 2020, Bauzeit zwei Jahre) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neue-grundschule-entsteht_a279808 --- #: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=677089#post677089 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (Einziehung einer Grünanlage, Einziehung von Straßenland) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/spatenstich-fuer-schule_a323396 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1194420.php (Wiedereröffnung eines Spielplatzes) --- #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2206/nachricht7294.html (Richtfest) --- #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben --- #: XXX laut osm ist die Schule 2023-02 fertig --- # REMOVED (es gibt nun einen besseren Watch) --- #: osm_watch: way id="860287005" version="6" --- # REMOVED (wurde für etwas anderes wiederverwendet) --- #: osm_watch: way id="1095306828" version="7" --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-25 --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2023-02-28 --- Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: XXX Wie wird die Qualität der Straße sein?--- #: osm_watch: way id="567597390" version="5" --- #: last_checked: 2021-05-09 --- #: check_frequency: 120d --- Abendseglersteig: noch in Bau	2::inwork 33167,2940 33139,2835 33267,2810 33383,2792

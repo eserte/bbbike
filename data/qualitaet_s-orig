@@ -15,13 +15,13 @@
 # REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: last_checked: 2025-04-02 (okas) vvv
-#: check_frequency: 360d vvv
-#: next_check: 2025-10-08 vvv
-(Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9200,562
-(Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9123,533
-#: next_check ^^^
-#: check_frequency ^^^
+#: last_checked: 2025-10-08 vvv
+# REMOVED --- #: check_frequency: 360d vvv
+# REMOVED --- #: next_check: 2025-10-08 vvv
+(Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9215,506 9206,553 9347,595 9365,615
+(Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9124,522 9004,481
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: temporary ^^^
@@ -129,7 +129,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="20"
-#: last_checked: 2025-09-27
+#: last_checked: 2025-10-08
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -478,7 +478,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-07
+#: last_checked: 2025-10-08
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -564,7 +564,7 @@ Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 1156
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866 (Antrag zum Radverkehr auf der Oderbrücke)
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023) (inaktiv)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2025-09-27
+#: last_checked: 2025-10-08
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
@@ -969,7 +969,7 @@ Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11763,7687 11785,7
 Säntisstr.: Asphalt mit einigen Schlaglöchern	Q0- 8892,802 8741,685 8652,617
 Säntisstr.: schlechtes Kopfsteinpflaster	Q3 8652,617 8533,525
 Alt-Marienfelde/Buckower Chaussee: Kopfsteinpflaster	Q2 8742,475 8533,525 8482,536 8250,655 8114,722 8000,729 7909,775
-Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0- 9002,471 8972,498 8742,475
+Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0- 9004,481 8977,505 8742,475
 Alt-Marienfelde: Asphalt	Q0 7909,775 7857,802
 Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8194,617 8250,655
 Ratiborstr.: Kopfsteinpflaster	Q2 12718,9529 12739,9576 12834,9738
@@ -1282,7 +1282,8 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1599774.php
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzi546ev3s2i
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibnuhe3q7e6ci3bfdidr4z4qohhxubhsqa5vauzvf46ku3afbr6vu@jpeg (Sackgasse gilt nicht für Radfahrer)
-#: source_id: viz2021:13.37541,52.59714,23.09.2025,07:00 (bis 10.10.2025)
+#: source_id: viz2021:13.37541,52.59714,23.09.2025,07:00 (bis 10.10.2025) (inaktiv)
+#: source_id: viz2021:13.38052,52.59488, (bis 29.10.2025)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
 #: last_checked: 2025-08-30 (mapillary) vvv
 #: check_frequency: 120d vvv
@@ -1796,7 +1797,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4680 (Planung ab 2021) (BPU 2025, Haushaltsmittel 2026)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Prüfung einer Glättung des Kopfsteinpflasters)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsprojekte-im-boetzowviertel_a319036 (Erwähnung der Hufelandstraße)
-#: by: https://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2024) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2024 - 3. Quartal 2025) (3. Quartal 2025 - 3. Quartal 2026) (4. Quartal 2026 - 3. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2025) (Eintrag wurde entfernt)
+#: by: https://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2024) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2024 - 3. Quartal 2025) (3. Quartal 2025 - 3. Quartal 2026) (4. Quartal 2026 - 3. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2025) (Eintrag wurde entfernt) (4. Quartal 2025 - 2. Quartal 2026)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-fahrradstrasse_a373544 (Entwurfsplanung 2023)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6636 (Antrag) (Erwähnung)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-bald-zur-fahrradstrasse_a396418 (für 2025 geplant)
@@ -1808,7 +1809,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: osm_watch: way id="4615063" version="39"
 #: last_checked: 2025-09-20
 #: check_frequency: 120d
-# REMOVED (Eintrag wurde entfernt) --- #: next_check: 2025-12-31 (infravelo)
+#: next_check: 2026-06-30 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
 Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178
 Limonenstr.: Kleinsteinpflaster	Q1- 3357,5178 3328,5218
@@ -4369,7 +4370,9 @@ Grünsteinweg: Asphalt	Q0 10859,2033 10868,2120 10886,2167
 Birnhornweg: Beton mit einigen Hebungen	Q1+ 9281,1790 9342,1818 9470,1863 9585,1899 9731,1956 9876,2007 10024,2059
 Rätikonweg: Beton	Q0 9669,2151 9731,1956 9805,1711 9821,1692
 Hollabergweg (Mariendorf): Beton	Q0 9342,1818 9336,2009
-Benzstr.: Kopfsteinpflaster mit Asphaltflicken	Q2 9145,1527 9182,1577 9281,1790
+Titlisweg: Beton mit einigen leichten Hebungen	Q0- 9155,1894 9176,1926 9336,2009 9431,2059 9539,2105 9669,2151 9802,2199 9935,2245 9954,2252
+Benzstr.: unebenes Kleinsteinpflaster, einige Asphaltflicken	Q2; 9145,1527 9182,1577 9281,1790
+Benzstr.: abschnittsweise unebener Asphalt	Q1-; 9281,1790 9182,1577 9145,1527
 Benzstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 8914,1418 8987,1466 9084,1484 9145,1527
 Bruno-Möhring-Str.: Beton	Q0 8281,1998 8359,2169
 Sonnenscheinpfad: Asphalt	Q0 8063,2092 8143,2273
@@ -7349,7 +7352,8 @@ Forddamm: Asphalt mit einigen Löchern und Unebenheiten	Q0- 9098,3328 8996,3150
 Forddamm: Beton	Q0 8996,3150 8969,3074 8906,2822
 Pohligstr.: Beton	Q0 8969,3074 9000,3065
 Fritz-Werner-Str.: Asphalt	Q0 9052,2357 8955,2004
-Martiusweg: Beton	Q0 9411,1406 9314,1451 9236,1484 9155,1519 9145,1527
+Martiusweg: Beton	Q0 9411,1406 9314,1451 9236,1484 9155,1519
+Martiusweg: Kleinsteinpflaster	Q2 9155,1519 9145,1527
 Hossauerweg: Asphalt	Q0 9129,986 9083,1017 9022,1220 9056,1288 9155,1519
 Hollabergweg (Marienfelde): Beton	Q0 9140,1255 9236,1484 9351,1745
 Fleschweg: Beton	Q0 9218,1226 9140,1255 9056,1288
@@ -13534,7 +13538,7 @@ Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 1976
 #: historical_note: früher (bis 2025?): Asphalt mit Schäden, Q1
 #: historical_note: dann (bis Herbst 2025?): unbefestigte Baustraße, Q2
 #: XXX die Straße wird neu gemacht
-#: last_checked: 2025-09-27
+#: last_checked: 2025-10-08
 #: check_frequency: 45d
 (Verlängerung der Siegfriedstr.): Asphalt ohne letzte Deckschicht	Q1+ 11664,6796 11488,6781
 Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
@@ -13859,6 +13863,7 @@ Vulkanstr./Landsberger Allee - Altenhofer Str.: unbefestigter Pfad	Q2+ 15796,143
 Malteserstr.: Verbundsteinpflaster	Q1 7829,882 7867,831
 Marienfelder Allee: Verbundsteinpflaster	Q1 7857,802 7867,831
 Marienfelder Allee: Verbundsteinpflaster	Q1 7774,647 7790,672
+Marienfelder Allee: Verbundsteinpflaster	Q1 7668,471 7706,541
 Barbarossastr.: Gehwegpflasterung	Q0- 5821,9502 5795,9483
 Jenaer Str.: Gehwegpflasterung	Q0- 5795,9483 5790,9460
 Schmidstr.: Beton	Q0- 11415,11392 11480,11526 11281,11612
@@ -14337,6 +14342,8 @@ Wegerichstr.: Gehwegplatten	Q1+ 16475,2586 16538,2543
 (Kleinbeerenstr. - Großbeerenstr.): Betonpflaster	Q0- 8970,10506 8982,10510 9165,10530 9192,10528
 # 
 (Goerdelersteg - Reichweindamm): Gehwegplatten	Q1+ 3596,14276 3576,14273 3540,14289 3521,14360 3472,14366
+# 
+(Britzer Str. - Rixdorfer Str.): Verbundsteinpflaster	Q1 10048,3806 10010,3824 9999,3852 10012,3895
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -17824,7 +17831,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: also_indoor: search Lemkestraße vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-30 vvv
-#: osm_watch: way id="593503609" version="11"
+#: osm_watch: way id="593503609" version="12"
 #: osm_watch: way id="40267304" version="18"
 #: last_checked: 2025-06-09
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25620,12872
@@ -26163,8 +26170,8 @@ Telemannweg: Asphaltdecke	Q0 23823,13611 23869,13830
 Auerbacher Ring: Asphalt	Q0 23826,14292 23825,14323 23776,14416 23744,14482 23725,14485 23669,14461 23646,14392 23713,14247
 # 
 #: by: Axel Kokol:
-#: confirmed_by: anonymous
-Hochfeilerweg: guter Asphalt	Q0 10170,2158 10108,2174 10043,2351 9975,2536 9993,2551 10015,2651
+#: corrected_by: srt (guter Asphalt, Q0 -> ...)
+Hochfeilerweg: Beton	Q0- 10170,2158 10108,2174 10043,2351 9975,2536 9993,2551 10015,2651
 # 
 #: by: Juliane Seffner:
 #: confirmed_by: srt
@@ -28836,8 +28843,9 @@ Privatstr. 12: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 171
 #: historical_note: früher: sehr guter Asphalt, Q0
 Falkenberger Chaussee - Pablo-Picasso-Str.: Asphalt mit einigen Wurzelhebungen	Q0- 17721,18001 17737,17987 17741,17946 17762,17928 17796,17892 17906,17746 17955,17783
 Heusingerstr.: guter Beton	Q0- 8584,3133 8792,3082
+#: confirmed_by: srt
 Porschestr.: Asphalt	Q0 8584,3133 8599,3441
-#: note: "gut zu befahren"
+#: confirmed_by: srt
 Porschestr.: Beton, teilweise mit Asphalt geflickt	Q0- 8572,2962 8584,3133
 #: note: "gesamte Straße gut zu befahren"
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
@@ -34384,5 +34392,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2- 9054,19496
 Kreuzungsbereich asphaltiert	Q0 8956,19688
 Kreuzungsbereich asphaltiert	Q0 8977,19694
 Kreuzungsbereich asphaltiert	Q0 8710,19550
+Einmündungsbereich mit Kopfsteinpflaster	Q2 9056,1288
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 10015,2651
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 10145,2622
 #: ignore ^^^
 #: section ^^^

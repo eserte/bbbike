@@ -33,7 +33,7 @@ Kolonnenstr./Herbertstr.: Gegenverkehrsregelung	X::inwork::alternating 7360,8918
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347
 #: source_id: viz2021:13.37128,52.4366,13.08.2025,07:00 (provisorische Ampelanlage, bis 22.09.2025) (bis 13.03.2026)
 #: XXX permanente Ampel in Planung
-#: last_checked: 2025-07-18
+#: last_checked: 2025-10-08
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2026-03-13
 Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::inwork 8461,3410
@@ -119,8 +119,8 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # 
 #: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...) (bis 03.07.2025 + ...) (bis 16.08.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.26522,52.45642,15.05.2025,15:55 (bis 04.06.2025) (inaktiv)
-#: source_id: viz2021:13.26522,52.45642, (bis 06.08.2025) (bis 08.10.2025)
-#: next_check: 2025-10-08
+#: source_id: viz2021:13.26522,52.45642, (bis 06.08.2025) (bis 08.10.2025) (bis 14.11.2025)
+#: next_check: 2025-11-14
 Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # 
 # REMOVED --- #: source_id: viz2021:13.202454,52.523618,18.03.2025,10:00 (bis 11.04.2025) (inaktiv)
@@ -592,7 +592,7 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 
 #: note: Anforderung für Radfahrer in Richtung Nord -> Süd, Richtung Süd -> Nord keine Ampel
 #: osm_watch: node id="1646650915" version="4"
-#: last_checked: 2025-04-12
+#: last_checked: 2025-06-22 (mapillary)
 #: check_frequency: 180d
 Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
@@ -3518,7 +3518,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: source_id: viz2021:13.43277,52.47837,01.09.2025,07:00 (bis 14.12.2025)
 #: XXX laut Verkehrsmeldung nun Neubau einer Ampel, bis Mitte Dezember 2025
 #: priority: #D
-#: last_checked: 2025-09-27
+#: last_checked: 2025-10-08
 #: next_check: 2025-12-14
 provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583
@@ -4350,7 +4350,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2025-08-06
+#: last_checked: 2025-10-08
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381

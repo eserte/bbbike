@@ -97,7 +97,6 @@ Eichborndamm	1s 4228,19024 4223,18982
 Eichborndamm	1 4223,18982 4211,18882 4163,18676 4094,18307 4053,18108 4016,17918
 Spreestr.	1 17900,6072 17939,5968 17935,5961 17877,5860
 Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
-Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s 15674,10851 15777,10897 15820,10916 15870,10938
 Nöldnerplatz	1s 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -647,6 +646,7 @@ Haakonweg	1 14397,18018 14282,18041
 (Buszufahrt an der Darßer Str.)	1 14367,17965 14397,18018 14438,18059
 Straße 4	1 12799,19242 12945,19239 12956,19218 12937,19194 12814,19202
 Fritz-Werner-Str.: Werksgelände, Durchfahrt nicht möglich	2 9052,2357 8955,2004
+Hossauerweg	1s 9056,1288 9022,1220 9083,1017 9129,986
 Manntzstr.: durch Tore gesperrt	2 8064,1460 8147,1663
 Bernecker Weg	1 7886,3801 7839,3714 7778,3644
 Viktoria-Ufer	1 -3393,14470 -3369,14532 -3282,14626 -3262,14636 -3243,14633
@@ -1058,6 +1058,8 @@ Emser Str.	1s 4762,10332 4764,10350
 (Erschließungsstraße hinter der George-Stephenson-Str.)	1s 7679,14030 7658,13994 7378,14420 7386,14436 7446,14403
 Lise-Meitner-Str., Wendeschleife	1 3671,14074 3656,14150
 Lise-Meitner-Str., Wendeschleife	1 3674,14156 3684,14145 3672,14115 3671,14074
+Marienfelder Allee: Radweg nur in eine Richtung	1 7706,541 7668,471
+(Britzer Str. - Rixdorfer Str.): Radweg nur in eine Richtung	1 10012,3895 9999,3852 10010,3824 10048,3806
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2533,6 +2535,9 @@ Mittelstreifen	3nocross::ignrte 10349,2188 10431,2258 10504,2321
 Tauernallee -> Lienzer Pfad: Mittelstreifen	3::igndisp 10504,2321 10431,2258 10444,2234
 Lienzer Pfad -> Tauernallee: Mittelstreifen	3::igndisp 10444,2234 10431,2258 10349,2188
 Mittelstreifen	3nocross::ignrte 10226,1515 10239,1481 10276,1383
+Mittelstreifen	3nocross::ignrte 9934,2307 9954,2252 10024,2059
+Mariendorfer Damm -> Titlisweg: Mittelstreifen	3::igndisp 10024,2059 9954,2252 9935,2245
+Titlisweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9935,2245 9954,2252 9934,2307
 Mittelstreifen	3nocross::ignrte 11500,9116 11449,9125 11136,9183
 Hasenheide, zwischen Jahnstr. und Columbiadamm -> Hasenheide: Mittelstreifen	3::igndisp 11439,9049 11449,9125 11136,9183
 Mittelstreifen	3nocross::ignrte 11500,9116 11507,9114 11550,9104 11629,9086
@@ -3644,7 +3649,6 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16601,10650 16587,10613
-Buckower Chaussee: Bahnübergang gesperrt, Brückenneubau	2::inwork 9123,533 9178,556 9200,562
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,10227
@@ -4268,4 +4272,5 @@ Eduard-Spranger-Promenade - Königsberger Str./Giesensdorfer Str.: linker Gehweg	
 Heerstr.: linker Gehweg	1::igndisp 1028,11309 929,11313
 Heerstr.: linker Gehweg	1::igndisp 960,11291 1028,11309
 Thüringerallee -> Theodor-Heuss-Platz: linker Gehweg	1::igndisp 1499,11281 1522,11254
-Storkwinkel -> Rathenauplatz: linke Gehweg	1::igndisp 2415,9765 2431,9784
+Storkwinkel -> Rathenauplatz: linker Gehweg	1::igndisp 2415,9765 2431,9784
+Titlisweg -> Mariendorfer Damm: linker Geh- oder Radweg	1::igndisp 9934,2307 9935,2245

@@ -69,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="23"
 #: osm_watch: way id="1072662717" version="27"
-#: last_checked: 2025-10-07
+#: last_checked: 2025-10-08
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -128,8 +128,8 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-10-05
-#: check_frequency: 14d
+#: last_checked: 2025-10-08
+#: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
 # 
@@ -1257,14 +1257,14 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11
 # 
 ### Marienfelde ###
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: last_checked: 2025-04-02 (okas) vvv
-#: check_frequency: 360d vvv
-#: next_check: 2025-10-08 vvv
-(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
+#: last_checked: 2025-10-08 vvv
+# REMOVED --- #: check_frequency: 360d vvv
+# REMOVED --- #: next_check: 2025-10-08 vvv
+(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9365,615 9347,595 9206,553 9215,506 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
-(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9123,533 9160,460 9200,450
-#: next_check ^^^
-#: check_frequency ^^^
+(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9004,481 9124,522 9160,460 9200,450
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 vvv --- #: last_checked: 2021-10-29 (bahninfo-forum) vvv --- #: next_check: 2021-11-22 vvv --- (provisorische Fußgängerbrücke Säntisstr.): Fußgänger	q3 9014,898 9005,912 9002,919 9047,948 9058,932 --- #: XXX_prog BS an der Kreuzung, ansonsten q2 --- Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898 --- Säntisstr.: Bauarbeiten	q3 9058,932 9129,986 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
@@ -1840,7 +1840,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-09-15
+#: last_checked: 2025-10-08
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374

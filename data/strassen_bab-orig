@@ -51,7 +51,7 @@ BAB100	BAB 2225,12227 2372,11762 2338,11515 2170,11101 2021,10599 2009,10517
 #: by: https://www.rbb24.de/panorama/beitrag/2025/08/berlin-ringbahnbruecke-bauarbeiten-sommer-fertigstellung-ersatzneubau.html (Fertigstellung bis Sommer 2027)
 #: by: https://entwicklungsstadt.de/neubau-der-ringbahnbruecke-fertigstellung-bis-sommer-2027-geplant/
 #: by: https://www.morgenpost.de/berlin/article409829635/a100-neue-ringbahnbruecke-soll-bis-sommer-2027-fertig-sein-sonst-wird-es-teuer.html
-#: osm_watch: way id="227985279" version="16"
+#: osm_watch: way id="227985279" version="17"
 #: also_indoor: webcam https://www.youtube.com/watch?v=_IavCsnv6_o
 #: XXX Neubau der Ringbahnbrücke
 #: last_checked: 2025-09-04 (osm)
@@ -65,7 +65,7 @@ BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,
 #: by: https://www.tagesspiegel.de/berlin/ausschreibung-lauft-westendbrucke-soll-am-selben-standort-neu-gebaut-werden-14064518.html (nun doch die gleiche Stelle)
 #: by: https://entwicklungsstadt.de/ersatz-fuer-westendbruecke-neubau-an-alter-stelle-geplant/
 #: XXX Neubau der Westendbrücke (mit Verlagerung)
-#: osm_watch: way id="4495210" version="19"
+#: osm_watch: way id="4495210" version="21"
 #: osm_watch[closed]: note 4671906 7
 #: also_indoor: webcam https://stream.netco.de/LiveApp/play.html?name=iTJR0GlIYNRMVUYJ607204630991365&playOrder=hls (mittlerweile (2025-05-18) nicht mehr aktiv)
 #: last_checked: 2025-07-05
@@ -207,7 +207,7 @@ Kleeblatt Zehlendorf	BAB;  -3526,1344 -3553,1260 -3602,1224 -3651,1251 -3636,132
 BAB115	BAB 2009,10517 1937,10569 1855,10569 1762,10531 1507,10183 480,8779 -865,6887 -3689,3059 -3786,2861 -3861,2355 -3861,2063 -3806,1934 -3636,1742 -3602,1699 -3571,1606 -3544,1450 -3526,1344 -3480,1049 -3442,806 -3404,501 -3480,273 -4381,-1135 -4712,-1453 -6021,-2039 -6224,-2266 -6502,-2976 -6562,-3181 -6548,-3936 -6538,-4260 -6594,-4456 -6698,-4654 -7019,-5006 -7107,-5182 -7145,-5357 -7141,-5756 -7104,-6868 -7162,-7534 -7314,-7813 -7568,-8042 -9155,-8816 -9345,-8943 -9472,-9172 -10094,-10162 -10285,-10556 -10653,-11444 -10730,-12017
 AD Funkturm	BAB; 1507,10183 1664,10263 1889,10283 2016,10348 2046,10391
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
-#: osm_watch: way id="4446472" version="20"
+#: osm_watch: way id="4446472" version="21"
 AD Funkturm	BAB::inwork; 2046,10391 2040,10526 2058,10612
 #: note: Ausfahrt A115 - Halenseestraße/Messedamm
 #: osm.highway: motorway_link

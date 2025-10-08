@@ -46,9 +46,9 @@ Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
-(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9200,562 9239,461 9254,413
+(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9365,615 9347,595 9206,553 9215,506 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
-(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9123,533 9160,460 9200,450
+(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9004,481 9124,522 9160,460 9200,450
 (Wuhlewanderweg - Parchimer Str.): einige Fußgänger	q1 22031,12208 22080,12218
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
@@ -3573,6 +3573,7 @@ Wilhelm-von-Siemens-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::i
 Saaleckplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5162,1110 5178,1123
 Steubenplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 668,12190 689,12152
 Am Flugplatz Gatow: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8582,6987 -8606,6978
+Hossauerweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 9056,1288 9022,1220 9083,1017 9129,986
 Pestalozzistr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 24648,11802 24697,11838 24769,11819
 Finsterberger Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 23131,12509 23233,12406
 Boraweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 6763,2879 6710,2909 6658,2907
@@ -3773,4 +3774,5 @@ Eduard-Spranger-Promenade - Königsberger Str./Giesensdorfer Str.: linker Gehweg	
 Heerstr.: linker Gehweg	q4::igndisp; 929,11313 1028,11309
 Heerstr.: linker Gehweg	q4::igndisp; 1028,11309 960,11291
 Thüringerallee -> Theodor-Heuss-Platz: linker Gehweg	q4::igndisp; 1522,11254 1499,11281
-Storkwinkel -> Rathenauplatz: linke Gehweg	q4::igndisp; 2431,9784 2415,9765
+Storkwinkel -> Rathenauplatz: linker Gehweg	q4::igndisp; 2431,9784 2415,9765
+Titlisweg -> Mariendorfer Damm: linker Geh- oder Radweg	q4::igndisp; 9935,2245 9934,2307
