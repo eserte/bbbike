@@ -33537,7 +33537,7 @@ EOF
 #: osm_watch: way id="362719487" version="16"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-09-21 (osm)
+#: last_checked: 2025-10-09
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -38943,7 +38943,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2025-08-29
+#: last_checked: 2025-10-09
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -43254,7 +43254,7 @@ EOF
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-08-18 (daf)
+#: last_checked: 2025-10-09
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -45878,7 +45878,7 @@ EOF
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-08-14 (mapillary)
+#: last_checked: 2025-10-09
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -47866,7 +47866,7 @@ EOF
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-09-28
+#: last_checked: 2025-10-09
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -49173,14 +49173,12 @@ EOF
 EOF
      },
      { from  => 1751183543, # 2025-06-29 09:52
-       until => undef,
+       until => 1760042264, # undef,
        text  => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende September 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,ex-H,T)
-#: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-30 (traffic)
-#: check_frequency: 10d (traffic)
+#: also_indoor: traffic (G,ex-H,ex-T)
+# REMOVED --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-09-30 (traffic) --- #: check_frequency: 10d (traffic)
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork; 17747,7322 17647,7280
 EOF
@@ -49763,7 +49761,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-09
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -49987,13 +49985,12 @@ EOF
 EOF
      },
      { from  => 1757503087, # 2025-09-10 13:18
-       until => undef, # 1759269599, # 2025-09-30 23:59
+       until => 1760042324, # undef, # 1759269599, # 2025-09-30 23:59
        text  => 'Johann-Hittorf-Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende September 2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-30 (traffic)
-#: check_frequency: 10d (traffic)
+#: also_indoor: traffic (ex-T,G)
+# REMOVED --- #: last_checked: 2025-09-30 (traffic) --- #: check_frequency: 10d (traffic)
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q4::inwork 18804,2991 18949,3073
 EOF
@@ -50327,7 +50324,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: GOERLITZERPARK-2025
 #: add_fragezeichen: Ist der Eingang noch immer gesperrt?
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-09
 #: check_frequency: 7d
 	2::inwork 12331,10409 12328,10442
 EOF
@@ -50340,6 +50337,26 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251008
 #: source_id: viz2021:13.398,52.53495,08.10.2025,17:15 (bis 04.12.2025)
 	q4::inwork 9800,14306 9938,14356
+EOF
+     },
+     { from  => 1761771600, # 2025-10-29 22:00
+       until => 1762142400, # 2025-11-03 05:00
+       text  => 'Halenseestr.: Abriss der Brücke Halenseestr. Ost geplant, Sperrung, vermutlich sind auch Radfahrer betroffen, vom 30.10.2025 22:00 bis 03.11.2025 05:00',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.morgenpost.de/berlin/article410184104/dreieck-funkturm-grosse-sperrungen-fuer-ende-oktober-angekuendigt.html
+	2::inwork 2104,10494 2086,10552 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
+	2::inwork 2033,10613 2090,10576 2117,10495
+EOF
+     },
+     { from  => 1760042654, # 2025-10-09 22:44
+       until => 1761865200, # 2025-10-31 00:00
+       text  => 'Chausseestr.: Gleisbauarbeiten zwischen Tieckstr. und Invalidenstr., Sperrung Richtung Nordwesten, bis 30.10.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:386176/72 viz2021:13.38535,52.52873, (bis 31.10.2025)
+#: note: laut rbb auch für Radverkehr; Umleitung ist eingerichtet
+	q4::inwork; 9094,13648 9044,13711 8992,13774 8935,13844
 EOF
      },
     );

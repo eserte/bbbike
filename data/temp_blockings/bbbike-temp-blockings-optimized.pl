@@ -4776,7 +4776,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: osm_watch: way id="362719487" version="16"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-09-21 (osm)
+#: last_checked: 2025-10-09
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -5841,7 +5841,7 @@ Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2025-08-29
+#: last_checked: 2025-10-09
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -6725,7 +6725,7 @@ Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-08-18 (daf)
+#: last_checked: 2025-10-09
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -7515,7 +7515,7 @@ Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-08-14 (mapillary)
+#: last_checked: 2025-10-09
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -8184,7 +8184,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-09-28
+#: last_checked: 2025-10-09
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -8732,20 +8732,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: also_indoor: traffic (G,ex-H,T)
-#: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-30 (traffic)
-#: check_frequency: 10d (traffic)
-# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
-	q4::inwork; 17747,7322 17647,7280
-',
-         'from' => 1751183543,
-         'id' => 4376,
-         'text' => 'Mentelinstr.: Bauarbeiten, Einbahnstraßenregelung zwischen Wattstr. und Fuststr., offen Richtung Osten, voraussichtlich bis Ende September 2025, evtl. wird verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -9172,7 +9159,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-09
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9292,19 +9279,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (T,G)
-#: last_checked: 2025-09-30 (traffic)
-#: check_frequency: 10d (traffic)
-# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
-	q4::inwork 18804,2991 18949,3073
-',
-         'from' => 1757503087,
-         'id' => 4437,
-         'text' => 'Johann-Hittorf-Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende September 2025, evtl. wird verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: MELCHIOR-2025
 #: add_fragezeichen: Ist die Fahrbahn wieder offen?
@@ -9578,7 +9553,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        {
          'data' => '#: next_check_id: GOERLITZERPARK-2025
 #: add_fragezeichen: Ist der Eingang noch immer gesperrt?
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-09
 #: check_frequency: 7d
 	2::inwork 12331,10409 12328,10442
 ',
@@ -9598,6 +9573,28 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'text' => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, bis Anfang Dezember 2025',
          'type' => 'handicap',
          'until' => 1764889199
+       },
+       {
+         'data' => '#: by: https://www.morgenpost.de/berlin/article410184104/dreieck-funkturm-grosse-sperrungen-fuer-ende-oktober-angekuendigt.html
+	2::inwork 2104,10494 2086,10552 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
+	2::inwork 2033,10613 2090,10576 2117,10495
+',
+         'from' => 1761771600,
+         'id' => 4463,
+         'text' => 'Halenseestr.: Abriss der Brücke Halenseestr. Ost geplant, Sperrung, vermutlich sind auch Radfahrer betroffen, vom 30.10.2025 22:00 bis 03.11.2025 05:00',
+         'type' => 'gesperrt',
+         'until' => 1762142400
+       },
+       {
+         'data' => '#: source_id: LMS-BR:386176/72 viz2021:13.38535,52.52873, (bis 31.10.2025)
+#: note: laut rbb auch für Radverkehr; Umleitung ist eingerichtet
+	q4::inwork; 9094,13648 9044,13711 8992,13774 8935,13844
+',
+         'from' => 1760042654,
+         'id' => 4464,
+         'text' => 'Chausseestr.: Gleisbauarbeiten zwischen Tieckstr. und Invalidenstr., Sperrung Richtung Nordwesten, bis 30.10.2025',
+         'type' => 'handicap',
+         'until' => 1761865200
        }
      
 );
