@@ -3227,13 +3227,13 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-10-04 (traffic)
+#: last_checked: 2025-10-10 (traffic)
 #: check_frequency: 7d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 # (noch nicht!) --- Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-10-04 (traffic)
+#: last_checked: 2025-10-10 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -5707,9 +5707,9 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: last_checked: 2025-03-04 (orthofotos) vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
-#: osm_watch: way id="272993611" version="7"
+#: osm_watch: way id="272993611" version="8"
 	2 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337
-#: osm_watch: way id="139880221" version="9"
+#: osm_watch: way id="139880221" version="10"
 	2 2809,16143 2853,16293 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
 # REMOVED (hier keine Einschränkungen) ---	2::temp 2226,16096 2290,16022 2580,15939 2595,15922 2604,15875 2638,15842 2701,15853 2787,15870
 # REMOVED (hier nicht mehr) ---	2 2787,15870 2828,15903 2880,15884 2787,15870
@@ -5717,9 +5717,11 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 # REMOVED ---	2 2960,15847 2944,15880 2913,15944
 # REMOVED ---	2 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2892,15983
 # REMOVED ---	2 2880,15884 2960,15847
-#: osm_watch: way id="8039689" version="18"
+#: osm_watch: way id="8039689" version="19"
+#: osm_watch: node id="28205966" version="14"
+#: osm_watch: node id="28205968" version="11"
 Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
-#: osm_watch: way id="100690609" version="4"
+#: osm_watch: way id="100690609" version="6"
 	2 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -7885,7 +7887,8 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: by: https://pbs.twimg.com/media/Gi7-nVQXEAAnVV2?format=jpg&name=large (Richtung Süden Gehweg Radfahrer frei, Richtung Norden nicht)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
-#: source_id: viz2021:13.46101,52.5454,05.02.2025,07:00 (bis 30.11.2025)
+#: source_id: viz2021:13.46101,52.5454,05.02.2025,07:00 (bis 30.11.2025) (inaktiv)
+#: source_id: viz2021:13.46101,52.5454, (noch immer Smetanastr.?, bis 05.12.2025)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
 #: last_checked: 2025-09-08 vvv
 #: check_frequency: 120d vvv
@@ -7900,9 +7903,9 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
 ',
          'from' => 1738450800,
          'id' => 4245,
-         'text' => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich 30.11.2025',
+         'text' => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich Anfang Dezember 2025',
          'type' => 'handicap',
-         'until' => 1764543600
+         'until' => 1764975599
        },
        undef,
        {
@@ -8184,7 +8187,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-10-09
+#: last_checked: 2025-10-10
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -8622,7 +8625,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-10-04 (traffic) vvv
+#: last_checked: 2025-10-10 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
@@ -8819,22 +8822,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409465412/neuer-baustress-an-der-altstadt-koepenick-nur-noch-ein-albtraum.html
-#: note: laut Stromnetz-Website bis 19.09.2029, mittlerweile bis Anfang Oktober 2025
-#: also_indoor: traffic (G,T)
-#: last_checked: 2025-10-04 (traffic)
-#: check_frequency: 7d (traffic)
-# REMOVED --- #: next_check: 2025-10-01 (stromnetz website)
-	q4::inwork 22740,4415 22542,4485 22495,4523
-',
-         'from' => 1752184800,
-         'id' => 4388,
-         'text' => 'Landjägerstr.: Leitungsarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Anfang Oktober 2025',
-         'type' => 'handicap',
-         'until' => 1760112000
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung noch immer?
 #: last_checked: 2025-09-30
@@ -9093,14 +9081,14 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'data' => '#: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
 #: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
 #: also_indoor: traffic (G,T,H)
-#: last_checked: 2025-09-28 (traffic)
+#: last_checked: 2025-10-10
 #: check_frequency: 14d (traffic)
-#: next_check: 2025-10-10
+# REMOVED --- #: next_check: 2025-10-10
 	q3::inwork 10066,10071 9837,10117
 ',
          'from' => 1754456400,
          'id' => 4412,
-         'text' => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., ein kurzes Stück der Fahrbahn ist gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Johanniterstr.: Bauarbeiten zwischen Brachvogelstr. und Zossener Str., ein kurzes Stück der Fahrbahn ist gesperrt, Ende der Bauarbeiten unbekannt (Stand Oktober 2025: noch immer Bauarbeiten)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9180,7 +9168,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
        {
          'data' => '#: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-09-11 vvv
+#: last_checked: 2025-10-10 (traffic) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-31 vvv
 #: note: Halteverbotsschilder bis 31.10.2025
@@ -9553,7 +9541,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        {
          'data' => '#: next_check_id: GOERLITZERPARK-2025
 #: add_fragezeichen: Ist der Eingang noch immer gesperrt?
-#: last_checked: 2025-10-09
+#: last_checked: 2025-10-10
 #: check_frequency: 7d
 	2::inwork 12331,10409 12328,10442
 ',
@@ -9595,6 +9583,33 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'text' => 'Chausseestr.: Gleisbauarbeiten zwischen Tieckstr. und Invalidenstr., Sperrung Richtung Nordwesten, bis 30.10.2025',
          'type' => 'handicap',
          'until' => 1761865200
+       },
+       {
+         'data' => '#: next_check_id: HUFELAND-2025
+#: next_check: 2025-10-21 (nächster Bauabschnitt)
+	q4::inwork 12361,13985 12228,14083 12077,14186
+',
+         'from' => 1760220000,
+         'id' => 4465,
+         'text' => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 13. Oktober 2025 bis 21. Oktober 2025',
+         'type' => 'handicap',
+         'until' => 1761083999
+       },
+       {
+         'data' => '#: by: https://www.tagesspiegel.de/berlin/brandanschlag-von-linksextremisten-im-sudosten-berlins-reparaturen-nach-langstem-stromausfall-der-nachkriegszeit-konnten-bis-2026-dauern-14310101.html
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2tnjk27qs22
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib6xakrcudbjnss6lcxcjqe6l7riqscbfw7jqibwzw2vtetkhm7kq@jpeg
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifikftud5lbc4zhtz5kjrx4fyvomsalwvil26zy5ff6mpmqnqf7tm@jpeg
+#: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205)
+#: also_indoor: traffic (T)
+	q4::inwork 15807,5286 15870,5251 15828,5156
+	q4::inwork 16062,5242 15870,5251
+',
+         'from' => 1760131031,
+         'id' => 4466,
+         'text' => 'Königsheideweg: Sperrung in Höhe Späthsfelder Weg, voraussichtlich bis Ende Oktober 2025',
+         'type' => 'handicap',
+         'until' => 1761951599
        }
      
 );
