@@ -67,6 +67,14 @@ for my $mem (@members) {
     push @ordered_nodes, @w_nodes;
 }
 
+# Extract relation name if available
+my $relation_name = "OSM Relation $relation_id";
+my ($rel_node) = $doc->findnodes('//relation[@id="'.$relation_id.'"]');
+if ($rel_node) {
+    my ($name_node) = $rel_node->findnodes('./tag[@k="name"]');
+    $relation_name = $name_node->getAttribute('v') if $name_node;
+}
+
 # Optionally crop to start/end coordinates
 sub haversine {
     my ($lat1,$lon1,$lat2,$lon2) = map { $_ * 3.14159265358979 / 180 } @_;
@@ -111,7 +119,7 @@ my $gpx = <<EOH;
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="rel2gpx.pl" xmlns="http://www.topografix.com/GPX/1/1">
 <trk>
-  <name>OSM Relation $relation_id</name>
+  <name>$relation_name</name>
   <trkseg>
 EOH
 
