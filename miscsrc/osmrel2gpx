@@ -8,14 +8,16 @@ use List::Util qw(min);
 use POSIX qw(strftime);
 
 # Command line args
-my ($relation_id, $start_coord, $end_coord, $output, $forward);
+my ($relation_id, $start_coord, $end_coord, $output, $forward, $debug, $in_xml);
 GetOptions(
     'id=i'     => \$relation_id,
     'start=s'  => \$start_coord,
     'end=s'    => \$end_coord,
     'out=s'    => \$output,
     'forward!' => \$forward,
-) or die "Usage: $0 --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--forward]\n";
+    'debug!'   => \$debug,
+    'in-xml=s' => \$in_xml,
+) or die "Usage: $0 --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--forward] [--debug] [--in-xml /path/to/overpassresult.xml]\n";
 die "OSM relation ID required" unless $relation_id;
 
 # API query (default: Overpass)
@@ -27,10 +29,21 @@ relation($relation_id);
 out meta;
 EOF
 
-my $ua = LWP::UserAgent->new();
-my $res = $ua->post($overpass_url, Content => $query);
-die "Error fetching data: " . $res->status_line unless $res->is_success;
-my $xml = $res->decoded_content;
+my $xml;
+if (defined $in_xml) {
+    $xml = do { open my $fh, $in_xml or die $!; local $/; <$fh> };
+} else {
+    my $ua = LWP::UserAgent->new(keep_alive => 1);
+
+    my $res = $ua->post($overpass_url, Content => $query);
+    die "Error fetching data: " . $res->status_line unless $res->is_success;
+    $xml = $res->decoded_content;
+    if ($debug) {
+	open my $ofh, ">", "/tmp/osmrel2gpx_response.xml" or die $!;
+	print $ofh $xml;
+	close $ofh or die $!;
+    }
+}
 
 # Parse XML
 my $parser = XML::LibXML->new();
