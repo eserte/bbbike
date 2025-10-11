@@ -46,6 +46,7 @@ plan 'no_plan';
 
 my $osmrel2gpx = bbbike_root . '/miscsrc/osmrel2gpx';
 
+no warnings 'qw';
 for my $test_case (
     [   9030, undef, 'Berliner Mauerweg', '13.3114700,52.6275917', undef], # XXX incomplete track, relation member problems around Oberbaumbrücke
     [ 335268, undef, 'Spreeradweg [Beeskow-Berlin]', '14.2486957,52.1753471', undef], # XXX incomplete track, relation member problems around Oberbaumbrücke
@@ -54,6 +55,11 @@ for my $test_case (
     [2262515, undef, 'Oder-Neiße-Radweg [BRB]', '14.2619276,53.2766402', '14.7317531,51.5873829'],
     [1069748, undef, 'Uckermärkischer Radrundweg', '13.9994783,53.0150285', '13.9994783,53.0150285'], # start/end in Angermünde
     [4784783, undef, 'Elberadweg [Tangermünde-Magdeburg]', '11.973961,52.542651', '11.642163,52.129183'],
+    [  27727, [qw(--start 13.593313,52.677276)], 'Berlin-Usedom (start in Bernau)', '13.593313,52.677276', '13.772893,54.135781'],
+    [  27727, [qw(--end 13.861763,53.313792)], 'Berlin-Usedom (end in Prenzlau)', '13.400738,52.516311', '13.861763,53.313792'],
+    [  27727, [qw(--start 13.593313,52.677276 --end 13.861763,53.313792)], 'Berlin-Usedom (Bernau-Prenzlau)', '13.593313,52.677276', '13.861763,53.313792'],
+    [  27727, [qw(--backward)], 'Usedom-Berlin', '13.772893,54.135781', '13.400738,52.516311'],
+    [  27727, [qw(--backward --start 13.861763,53.313792 --end 13.593313,52.677276)], 'Usedom-Berlin (Prenzlau-Bernau)', '13.861763,53.313792', '13.593313,52.677276'],
 ) {
     my($rel_id, $extra_args, $name, $exp_start_coord, $exp_end_coord) = @$test_case;
     my $cache_file = "/tmp/osmrel2gpx_response_${rel_id}.xml";
