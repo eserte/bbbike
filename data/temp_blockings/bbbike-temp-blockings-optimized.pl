@@ -4697,7 +4697,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-09-27
+#: last_checked: 2025-10-10 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -5118,30 +5118,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.306069,52.502061,01.01.2022,06:00 (mittlerweile inaktiv) (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
-#: source_id: viz2021:13.30605,52.50146,15.07.2025,07:00 (bis 11.10.2025)
-#: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
-#: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
-# REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
-#: osm_watch: way id="1300235970" version="3"
-# REMOVED --- #: osm_watch: way id="1039329567" version="6"
-# REMOVED (beendet) --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-04 (architektur-urbanistik)
-# REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
-#	2::inwork 3731,10640 3764,10580
-# REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
-#: note: laut rbb bis 11.10.2025
-# REMOVED (frühere Baustelle) ---	q4::inwork 3731,10640 3764,10580
-Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
-',
-         'from' => 1752605472,
-         'id' => 3496,
-         'text' => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, voraussichtlich bis Mitte Oktober 2025',
-         'type' => 'gesperrt',
-         'until' => 1760205600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5279,7 +5256,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-10 (mapillary)
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6138,8 +6115,8 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: note: neue Sperrung von 2025
 #: also_indoor: traffic (ex-T,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-09-20 vvv
-#: check_frequency: 10d (traffic) vvv
+#: last_checked: 2025-10-11 vvv
+#: check_frequency: 14d vvv
 Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 Virchowstr.	q2::inwork 12707,13706 12640,13814
 #: check_frequency ^^^
@@ -7136,7 +7113,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-10-07 (Asphaltierungsarbeiten im 1. BA haben begonnen) vvv
+#: last_checked: 2025-10-11 (Asphaltierungsarbeiten im 1. BA haben begonnen) vvv
 #: check_frequency: 7d (neue Sperrung eintragen) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8402,7 +8379,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-09-22 (mapillary) vvv
+#: last_checked: 2025-10-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -9130,7 +9107,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: next_check_id: BLUECHER-2025
 #: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025) (bis 31.10.2025)
 #: also_indoor: traffic (T,G,W,H,)
-#: last_checked: 2025-09-15 vvv
+#: last_checked: 2025-10-11 vvv
 #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung) vvv
 Blücherstr. Richtung Baerwaldstr.: Gehweg für Radfahrer frei	q3::inwork; 10429,9514 10306,9640
 Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,9640 10429,9514
@@ -9139,7 +9116,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
 ',
          'from' => 1755666000,
          'id' => 4417,
-         'text' => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, vom 21.08.2025 07:00 bis 31.10.2025, evtl. wird die Sperrung verlängert',
+         'text' => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn offiziell gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, vom 21.08.2025 07:00 bis 31.10.2025, evtl. wird die Sperrung verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9147,7 +9124,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-09
+#: last_checked: 2025-10-11
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9258,7 +9235,7 @@ Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 445
        },
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
-#: last_checked: 2025-09-17
+#: last_checked: 2025-10-11
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
@@ -9333,7 +9310,7 @@ Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
          'data' => '#: source_id: viz2021:13.28295,52.44204, (bis 27.11.2025)
 #: also_indoor: traffic (T)
 #: next_check_id: THIELALLEE-2025
-#: last_checked: 2025-09-12 (traffic)
+#: last_checked: 2025-09-21 (mapillary)
 #: check_frequency: 30d (traffic)
 	q4::inwork; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
 ',

@@ -129,7 +129,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="20"
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-10 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -1811,7 +1811,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1605623.php (Sanierungsarbeiten: Abschleifen des Kopfsteinpflasters, ab 13. Oktober 2025, 1. Abschnitt ab Greifswalder Str.)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1605546.php
 #: osm_watch: way id="4615063" version="39"
-#: last_checked: 2025-09-20
+#: last_checked: 2025-10-11
 #: check_frequency: 120d
 #: next_check_id: 2025-10-21 (1. BA)
 # REMOVED --- #: next_check: 2026-06-30 (infravelo)
@@ -13913,7 +13913,8 @@ St. Wolfgang-Str.: Gehwegplatten und glatte Pflasterung	Q0- 10216,12706 10287,12
 (Jenbacher Weg - Mauerweg): Asphalt	Q0+ 6411,533 6413,520 6401,464 6427,395 6424,346 6388,241 6357,215
 Stindestr.: Kopfsteinpflaster	Q2 6272,4716 6203,4630
 Großbeerenstr.: Asphalt mit einigen Schäden	Q1+; 8602,2377 8655,2556 8674,2627
-Blücherstr.: Asphalt mit einigen Schäden	Q1 10429,9514 10306,9640
+#: historical_note: bis Herbst 2025: Asphalt mit einigen Schäden, Q1
+Blücherstr.: Asphalt	Q0 10429,9514 10306,9640
 Agricolastr.: Asphalt	Q0 5376,12781 5543,12664 5673,12581 5797,12494
 Götelstr. [Parallelstraße]: Asphalt	Q0 -3293,12304 -3284,12304 -3255,12338 -3252,12405 -3260,12540
 Hölderlinstr.: Asphalt mit einigen leichten Schäden	Q0- 1787,11509 1586,11483 1429,11528
