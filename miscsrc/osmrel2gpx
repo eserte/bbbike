@@ -59,25 +59,101 @@ for my $node ($doc->findnodes('//node')) {
 }
 
 # Extract ways and build ordered node list
-my @ways;
+my %ways;
 for my $way ($doc->findnodes('//way')) {
     my $id = $way->getAttribute('id');
     my @nds = map { $_->getAttribute('ref') } $way->findnodes('./nd');
-    push @ways, { way_id => $id, nodes => \@nds };
+    $ways{$id} = \@nds;
 }
 
 # Build way order based on relation's member sequence (forward, backward)
 my @members = $doc->findnodes('//relation/member[@type="way"]');
+
 my @ordered_nodes;
-for my $mem (@members) {
+my $last_node;
+my $last_way;
+
+my $get_w_nodes = sub {
+    my($mem_i, $last_node) = @_;
+
+    my $mem = $members[$mem_i];
     my $role = $mem->getAttribute('role') || '';
     my $rid  = $mem->getAttribute('ref');
-    my ($way) = grep { $_->{way_id} eq $rid } @ways or next;
-    my @w_nodes = @{ $way->{nodes} };
-    if ($role eq 'backward') {
-        @w_nodes = reverse @w_nodes;
+    my @w_nodes = @{ $ways{$rid} };
+
+    # note: handling of role=backward used to be here, but often the
+    # role is missing so in the end check manully if the way needs to
+    # be reversed
+    if (defined $last_node && $last_node == $w_nodes[-1]) {
+	@w_nodes = reverse @w_nodes;
     }
-    push @ordered_nodes, @w_nodes;
+
+    return ($rid, \@w_nodes);
+};
+
+WAY_LOOP:
+for(my $mem_i=0; $mem_i <= $#members; $mem_i++) {
+    my($rid, $w_nodes) = $get_w_nodes->($mem_i, $last_node);
+    my @w_nodes = @$w_nodes;
+
+    # First way: initialize list
+    if (!defined $last_node) {
+        @ordered_nodes = @w_nodes;
+        $last_node = $ordered_nodes[-1];
+        $last_way = $rid;
+        next;
+    }
+
+    if (defined $last_node && $w_nodes[0] ne $last_node && $w_nodes[0] eq $w_nodes[-1]) {
+    SEARCH_START_NODE: {
+	    for(my $i=1; $i<=$#w_nodes; $i++) {
+		if ($last_node eq $w_nodes[$i]) {
+		    @w_nodes = (@w_nodes[$i..$#w_nodes], @w_nodes[1..$i-1]);
+		    warn "Roundabout hack (1): reorder way $rid nodes after with new start index $i (nodes now: @w_nodes)\n";
+		    if ($mem_i < $#members) {
+			my($next_rid, $next_w_nodes) = $get_w_nodes->($mem_i+1);
+		    SEARCH_END_NODE: {
+			    for(my $j=1; $j<=$#w_nodes; $j++) {
+				if ($next_w_nodes->[0] eq $w_nodes[$j] || $next_w_nodes->[-1] eq $w_nodes[$j]) {
+				    @w_nodes = @w_nodes[0..$j];
+				    warn "Roundabout hack (2): quit roundabout at (reordered) index $i (nodes now: @w_nodes)\n";
+				    last SEARCH_END_NODE;
+				}
+			    }
+			    warn "Roundabout hack (2): did not find roundabout quit node, expect problems (expected $next_w_nodes->[0] or $next_w_nodes-[-1], not found in @$w_nodes)\n";
+			}
+		    }
+		    last SEARCH_START_NODE;
+		}
+	    }
+	    warn "Roundabout hack (1): cannot find node in roundabout, expect problems\n";
+	}
+    }
+
+    # Decide if we use this or the next member
+    # (splitted route merged again)
+
+    # If next way's start node == last_node, append (avoid duplicate node)
+    if ($w_nodes[0] eq $last_node) {
+	if ($mem_i < $#members) {
+	    my($next_rid, $next_w_nodes) = $get_w_nodes->($mem_i+1, $last_node);
+	    if ($next_w_nodes->[0] eq $last_node) {
+		warn "Do not choose way $rid/node $w_nodes[0] (probably wrong direction), choose $next_rid/$next_w_nodes->[0]\n";
+		@w_nodes = @$next_w_nodes;
+		$rid = $next_rid;
+		$mem_i++;
+	    }
+	}
+        shift @w_nodes; # remove duplicate node
+        push @ordered_nodes, @w_nodes;
+        $last_node = $ordered_nodes[-1];
+        $last_way = $rid;
+        next;
+    }
+
+    # Otherwise skip this way (no connection)
+    warn "Skipping way $rid (after last way $last_way); does not connect to last node $last_node\n";
+    # Do not update last_node or last_way, continue with next member
 }
 
 # Extract relation name if available
