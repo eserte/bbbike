@@ -11,17 +11,17 @@ use List::Util qw(min);
 use POSIX qw(strftime);
 
 # Command line args
-my ($relation_id, $start_coord, $end_coord, $output, $backward, $debug, $in_xml);
+my ($relation_id, $start_coord, $end_coord, $output, $backward, $cache, $in_xml);
 GetOptions(
     'id=i'     => \$relation_id,
     'start=s'  => \$start_coord,
     'end=s'    => \$end_coord,
     'out=s'    => \$output,
     'backward!'=> \$backward,
-    'debug!'   => \$debug,
+    'cache!'   => \$cache,
     'in-xml=s' => \$in_xml,
     'simplify=i' => \my $simplify,
-) or die "Usage: $0 --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--backward] [--debug] [--in-xml /path/to/overpassresult.xml] [--simplify number]\n";
+) or die "Usage: $0 --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--backward] [--cache] [--in-xml /path/to/overpassresult.xml] [--simplify number]\n";
 die "OSM relation ID required" unless $relation_id;
 
 # API query (default: Overpass)
@@ -41,9 +41,9 @@ if (defined $in_xml) {
 
     my $res = $ua->post($overpass_url, Content => $query);
     die "Error fetching data: " . $res->status_line unless $res->is_success;
-    $xml = $res->decoded_content;
-    if ($debug) {
-	open my $ofh, ">", "/tmp/osmrel2gpx_response.xml" or die $!;
+    $xml = $res->decoded_content(charset => 'none');
+    if ($cache) {
+	open my $ofh, ">", "/tmp/osmrel2gpx_response_${relation_id}.xml" or die $!;
 	print $ofh $xml;
 	close $ofh or die $!;
     }
@@ -262,7 +262,7 @@ osmrel2gpx - create a GPX track file from a OSM relation
 
 =head1 SYNOPSIS
 
-    osmrel2gpx --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--backward] [--debug] [--in-xml /path/to/overpassresult.xml] [--simplify number]
+    osmrel2gpx --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--backward] [--cache] [--in-xml /path/to/overpassresult.xml] [--simplify number]
 
 =head1 DESCRIPTION
 
