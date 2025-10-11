@@ -203,21 +203,20 @@ sub find_nearest_node {
     return $best_id;
 }
 
-my @crop_nodes = @ordered_nodes;
 if ($start_coord) {
     my $start_id = find_nearest_node($start_coord, \@ordered_nodes);
     # Crop before start node
     my ($start_idx) = grep {$ordered_nodes[$_] eq $start_id} 0..$#ordered_nodes;
-    @crop_nodes = @ordered_nodes[$start_idx .. $#ordered_nodes] if defined $start_idx;
+    @ordered_nodes = @ordered_nodes[$start_idx .. $#ordered_nodes] if defined $start_idx;
 }
 if ($end_coord) {
     my $end_id = find_nearest_node($end_coord, \@ordered_nodes);
     # Crop after end node
     my ($end_idx) = grep {$ordered_nodes[$_] eq $end_id} 0..$#ordered_nodes;
-    @crop_nodes = @crop_nodes[0 .. $end_idx] if defined $end_idx;
+    @ordered_nodes = @ordered_nodes[0 .. $end_idx] if defined $end_idx;
 }
 
-my @lonlats = map { +{x => $nodes{$_}->[1], y => $nodes{$_}->[0]} } grep { $nodes{$_} } @crop_nodes;
+my @lonlats = map { +{x => $nodes{$_}->[1], y => $nodes{$_}->[0]} } grep { $nodes{$_} } @ordered_nodes;
 if (defined $simplify && @lonlats > $simplify) {
     require Route::LineSimplification;
     warn "Points before line simplification: " . scalar(@lonlats) . "\n";
