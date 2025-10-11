@@ -247,9 +247,11 @@ EOF
 
 if ($output) {
     open my $fh, ">", $output or die "Cannot write $output: $!\n";
+    binmode $fh, ':utf8';
     print $fh $gpx;
     close $fh;
 } else {
+    binmode STDOUT, ':utf8';
     print $gpx;
 }
 
