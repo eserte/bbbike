@@ -11,17 +11,17 @@ use List::Util qw(min);
 use POSIX qw(strftime);
 
 # Command line args
-my ($relation_id, $start_coord, $end_coord, $output, $forward, $debug, $in_xml);
+my ($relation_id, $start_coord, $end_coord, $output, $backward, $debug, $in_xml);
 GetOptions(
     'id=i'     => \$relation_id,
     'start=s'  => \$start_coord,
     'end=s'    => \$end_coord,
     'out=s'    => \$output,
-    'forward!' => \$forward,
+    'backward!'=> \$backward,
     'debug!'   => \$debug,
     'in-xml=s' => \$in_xml,
     'simplify=i' => \my $simplify,
-) or die "Usage: $0 --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--forward] [--debug] [--in-xml /path/to/overpassresult.xml] [--simplify number]\n";
+) or die "Usage: $0 --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--backward] [--debug] [--in-xml /path/to/overpassresult.xml] [--simplify number]\n";
 die "OSM relation ID required" unless $relation_id;
 
 # API query (default: Overpass)
@@ -73,6 +73,10 @@ for my $way ($doc->findnodes('//way')) {
 # Build way order based on relation's member sequence (forward, backward)
 my @members = $doc->findnodes('//relation/member[@type="way"]');
 
+if ($backward) {
+    @members = reverse @members;
+}
+
 my @ordered_nodes;
 my $last_node;
 my $last_way;
@@ -100,17 +104,23 @@ for(my $mem_i=0; $mem_i <= $#members; $mem_i++) {
     my($rid, $w_nodes) = $get_w_nodes->($mem_i, $last_node);
     my @w_nodes = @$w_nodes;
 
-    # First way: initialize list
+    # First way: initialize list, but we need to decide the right direction first
     if (!defined $last_node) {
-        @ordered_nodes = @w_nodes;
+	my($next_rid, $next_w_nodes) = $get_w_nodes->($mem_i+1);
+	if ($w_nodes[-1] eq $next_w_nodes->[0] || $w_nodes->[-1] eq $next_w_nodes->[-1]) {
+	    # ok, starts in right direction
+	    @ordered_nodes = @w_nodes;
+	} else {
+	    @ordered_nodes = reverse @w_nodes;
+	}
         $last_node = $ordered_nodes[-1];
         $last_way = $rid;
         next;
     }
 
-    if (defined $last_node && $w_nodes[0] ne $last_node && $w_nodes[0] eq $w_nodes[-1]) {
+    if (defined $last_node && $w_nodes[0] eq $w_nodes[-1]) {
     SEARCH_START_NODE: {
-	    for(my $i=1; $i<=$#w_nodes; $i++) {
+	    for(my $i=0; $i<=$#w_nodes; $i++) {
 		if ($last_node eq $w_nodes[$i]) {
 		    @w_nodes = (@w_nodes[$i..$#w_nodes], @w_nodes[1..$i-1]);
 		    warn "Roundabout hack (1): reorder way $rid nodes after with new start index $i (nodes now: @w_nodes)\n";
