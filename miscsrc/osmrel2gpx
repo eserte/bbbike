@@ -252,3 +252,49 @@ if ($output) {
 } else {
     print $gpx;
 }
+
+=head1 NAME
+
+osmrel2gpx - create a GPX track file from a OSM relation
+
+=head1 SYNOPSIS
+
+    osmrel2gpx --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--backward] [--debug] [--in-xml /path/to/overpassresult.xml] [--simplify number]
+
+=head1 DESCRIPTION
+
+Take a OpenStreetMap relation id, download the necessary data and
+create a GPX track file out of it.
+
+=head1 EXAMPLES
+
+Generate a GPX file for Berlin-Usedom Radweg, starting in Berlin:
+
+    osmrel2gpx --id 27727 --out berlin_usedom.gpx
+
+Generate a GPX file for this relation, starting on Usedom:
+
+    osmrel2gpx --id 27727 --backward --out usedom_berlin.gpx
+
+Generate a shortened track using the given coordinates (here: start is
+Bernau, goal is Prenzlau):
+
+    osmrel2gpx --id 27727 --start 13.592188,52.676209 --end 13.861777,53.313756 --out bernau_prenzlau.gpx
+
+Simplify the generated track to the given number of track points:
+
+    osmrel2gpx --id 27727 --simplify 1024 --out berlin_usedom_simplified.gpx
+
+=head1 BUGS AND LIMITATIONS
+
+Theoretically it would be possible to determine the route direction
+automatically if C<--start> and C<--end> are both specified. This is
+not implemented, so it's necessary to manually specify C<--backward>
+if needed.
+
+Success is highly dependent on the quality of the relation. It is
+likely that a generated track will be incomplete if
+L<https://ra.osmsurround.org/analyzeRelation> detects problems for a
+given relation.
+
+=cut
