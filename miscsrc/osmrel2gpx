@@ -1,0 +1,136 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use LWP::UserAgent;
+use XML::LibXML;
+use Getopt::Long;
+use List::Util qw(min);
+use POSIX qw(strftime);
+
+# Command line args
+my ($relation_id, $start_coord, $end_coord, $output, $forward);
+GetOptions(
+    'id=i'     => \$relation_id,
+    'start=s'  => \$start_coord,
+    'end=s'    => \$end_coord,
+    'out=s'    => \$output,
+    'forward!' => \$forward,
+) or die "Usage: $0 --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--forward]\n";
+die "OSM relation ID required" unless $relation_id;
+
+# API query (default: Overpass)
+my $overpass_url = "https://overpass-api.de/api/interpreter";
+my $query = <<EOF;
+[out:xml][timeout:60];
+relation($relation_id);
+(._;>;);
+out meta;
+EOF
+
+my $ua = LWP::UserAgent->new();
+my $res = $ua->post($overpass_url, Content => $query);
+die "Error fetching data: " . $res->status_line unless $res->is_success;
+my $xml = $res->decoded_content;
+
+# Parse XML
+my $parser = XML::LibXML->new();
+my $doc    = $parser->parse_string($xml);
+
+# Extract nodes
+my %nodes;
+for my $node ($doc->findnodes('//node')) {
+    my $id = $node->getAttribute('id');
+    my $lat = $node->getAttribute('lat');
+    my $lon = $node->getAttribute('lon');
+    $nodes{$id} = [$lat, $lon];
+}
+
+# Extract ways and build ordered node list
+my @ways;
+for my $way ($doc->findnodes('//way')) {
+    my $id = $way->getAttribute('id');
+    my @nds = map { $_->getAttribute('ref') } $way->findnodes('./nd');
+    push @ways, { way_id => $id, nodes => \@nds };
+}
+
+# Build way order based on relation's member sequence (forward, backward)
+my @members = $doc->findnodes('//relation/member[@type="way"]');
+my @ordered_nodes;
+for my $mem (@members) {
+    my $role = $mem->getAttribute('role') || '';
+    my $rid  = $mem->getAttribute('ref');
+    my ($way) = grep { $_->{way_id} eq $rid } @ways or next;
+    my @w_nodes = @{ $way->{nodes} };
+    if ($role eq 'backward') {
+        @w_nodes = reverse @w_nodes;
+    }
+    push @ordered_nodes, @w_nodes;
+}
+
+# Optionally crop to start/end coordinates
+sub haversine {
+    my ($lat1,$lon1,$lat2,$lon2) = map { $_ * 3.14159265358979 / 180 } @_;
+    my $R = 6371000; # Earth radius (m)
+    my $dlat = $lat2-$lat1;
+    my $dlon = $lon2-$lon1;
+    my $a = sin($dlat/2)**2 + cos($lat1) * cos($lat2) * sin($dlon/2)**2;
+    my $c = 2 * atan2(sqrt($a), sqrt(1-$a));
+    return $R * $c;
+}
+sub find_nearest_node {
+    my ($coord, $nodeids) = @_;
+    my ($lon0, $lat0) = split /,/, $coord;
+    my $min_dist = 1e38; my $best_id;
+    for my $nid (@$nodeids) {
+        my ($lat, $lon) = @{ $nodes{$nid} || [] };
+        next unless defined $lat && defined $lon;
+        my $dist = haversine($lat0, $lon0, $lat, $lon);
+        if ($dist < $min_dist) {
+            $min_dist = $dist; $best_id = $nid;
+        }
+    }
+    return $best_id;
+}
+
+my @crop_nodes = @ordered_nodes;
+if ($start_coord) {
+    my $start_id = find_nearest_node($start_coord, \@ordered_nodes);
+    # Crop before start node
+    my ($start_idx) = grep {$ordered_nodes[$_] eq $start_id} 0..$#ordered_nodes;
+    @crop_nodes = @ordered_nodes[$start_idx .. $#ordered_nodes] if defined $start_idx;
+}
+if ($end_coord) {
+    my $end_id = find_nearest_node($end_coord, \@ordered_nodes);
+    # Crop after end node
+    my ($end_idx) = grep {$ordered_nodes[$_] eq $end_id} 0..$#ordered_nodes;
+    @crop_nodes = @crop_nodes[0 .. $end_idx] if defined $end_idx;
+}
+
+# Generate GPX
+my $gpx = <<EOH;
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="rel2gpx.pl" xmlns="http://www.topografix.com/GPX/1/1">
+<trk>
+  <name>OSM Relation $relation_id</name>
+  <trkseg>
+EOH
+
+for my $nid (@crop_nodes) {
+    next unless $nodes{$nid};
+    my ($lat, $lon) = @{ $nodes{$nid} };
+    $gpx .= qq{    <trkpt lat="$lat" lon="$lon" />\n};
+}
+
+$gpx .= <<EOF;
+  </trkseg>
+</trk>
+</gpx>
+EOF
+
+if ($output) {
+    open my $fh, ">", $output or die "Cannot write $output: $!\n";
+    print $fh $gpx;
+    close $fh;
+} else {
+    print $gpx;
+}
