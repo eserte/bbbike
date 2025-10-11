@@ -9253,7 +9253,8 @@ Güstow - Prenzlau: Bau eines Radwegs	? 37047,101103 37211,101028 37577,100778
 #: by: https://www.bahninfo-forum.de/read.php?9,648905,825340#msg-825340
 #: by: https://www.schiene.de/news-9529/Bahnhof-Fangschleuse-soll-im-August-2026-in-Betrieb-gehen.html
 #: by: https://www.tagesspiegel.de/potsdam/brandenburg/einsteigen-bitte-bahnhof-fangschleuse-soll-im-august-2026-in-betrieb-gehen-14076101.html
-#: next_check: 2026-08-31 (schiene.de website)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-10-2025-umgestaltung-der-l-23-am-bahnhof-fangschleuse (Sperrung der L23 ab Ende Juli 2026, Verkehrsfreigabe Dezember 2026)
+#: next_check: 2026-07-31 (ls brb website)
 Bahnhof Fangschleuse: Verlegung des Bahnhofs, Bahnübergang wird durch eine Überführung ersetzt	?::inwork 39233,678 39153,615 39239,557
 # 
 #: by: https://www.schwedt.eu/de/189908 (957m, Realisierung 2026-2027)
@@ -9301,7 +9302,7 @@ Römerweg - Cäsarstraße - Hentigstraße: Fahrradstraße wird eingerichtet	?::projec
 #: note: Teil des Anton-Kiezblocks
 #: XXX weitere Modalfilter: (Antonstraße/Ruheplatzstraße) + Stadtplatz Prinz-Eugen-Straße
 #: also_indoor: traffic (none)
-#: last_checked: 2025-09-29 (traffic)
+#: last_checked: 2025-10-10 (BA-Seite zum Antonkiez: in Anhörung)
 #: check_frequency: 14d (traffic)
 Maxstr.: Teileinziehung geplant	? 7738,15838 7781,15804
 # 
@@ -9558,6 +9559,11 @@ Bebauungsplan 3-85: Friedhof wird verkleinert	? 10145,21017 10142,20925 10269,20
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1605007.php (geplant für 2026)
 #: next_check: 2026-12-31
 Odernheimer Str.: Zebrastreifen geplant	? 28518,1365 28545,1373 28540,1350
+# 
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8567 (Mitteilung zur Kenntnisnahme)
+#: last_checked: 2025-10-08 (BVV-Drucksache)
+#: check_frequency: 120d
+Crellestr.: Benennung in Lucie-Leydicke-Platz geplant	? 7770,9336 7836,9413 7882,9490
 # 
 #: section ^^^
 #: ignore ^^^

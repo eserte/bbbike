@@ -2570,12 +2570,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1759701600,
+         'from' => 1760306400,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 7.10.2025 bis 10.10.2025',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 14.10.2025 bis 17.10.2025',
          'type' => 'gesperrt',
-         'until' => 1760133599
+         'until' => 1760738399
        },
        undef,
        undef,
