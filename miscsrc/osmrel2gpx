@@ -107,11 +107,12 @@ for(my $mem_i=0; $mem_i <= $#members; $mem_i++) {
     # First way: initialize list, but we need to decide the right direction first
     if (!defined $last_node) {
 	my($next_rid, $next_w_nodes) = $get_w_nodes->($mem_i+1);
-	if ($w_nodes[-1] eq $next_w_nodes->[0] || $w_nodes->[-1] eq $next_w_nodes->[-1]) {
-	    # ok, starts in right direction
-	    @ordered_nodes = @w_nodes;
-	} else {
+	if ($w_nodes[0] eq $next_w_nodes->[0] || $w_nodes->[0] eq $next_w_nodes->[-1]) {
+	    # obviously need to reverse
 	    @ordered_nodes = reverse @w_nodes;
+	} else {
+	    # probably starts in right direction (but may be wrong)
+	    @ordered_nodes = @w_nodes;
 	}
         $last_node = $ordered_nodes[-1];
         $last_way = $rid;
