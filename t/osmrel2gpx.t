@@ -11,6 +11,7 @@ use FindBin;
 use lib $FindBin::RealBin, "$FindBin::RealBin/..";
 use utf8;
 
+use Encode qw(decode);
 use Getopt::Long;
 use Test::More;
 
@@ -49,17 +50,17 @@ my $osmrel2gpx = bbbike_root . '/miscsrc/osmrel2gpx';
 no warnings 'qw';
 for my $test_case (
     [   9030, undef, 'Berliner Mauerweg', '13.3114700,52.6275917', undef], # XXX incomplete track, relation member problems around Oberbaumbrücke
-    [ 335268, undef, 'Spreeradweg [Beeskow-Berlin]', '14.2486957,52.1753471', undef], # XXX incomplete track, relation member problems around Oberbaumbrücke
-    [  27727, undef, 'Berlin-Usedom', '13.400738,52.516311', '13.772893,54.135781'],
-    [2262839, undef, 'Oder-Neiße-Radweg [MV]', '14.1912112,53.9332517', '14.2619276,53.2766402'],
-    [2262515, undef, 'Oder-Neiße-Radweg [BRB]', '14.2619276,53.2766402', '14.7317531,51.5873829'],
+    [ 335268, undef, 'Spreeradweg [Beeskow↔Berlin]', '14.2486957,52.1753471', undef], # XXX incomplete track, relation member problems around Oberbaumbrücke
+    [  27727, undef, 'Berlin-Usedom Radweg', '13.400738,52.516311', '13.772893,54.135781'],
+    [2262839, undef, '[D12] Oder-Neiße-Radweg MVP', '14.1912112,53.9332517', '14.2619276,53.2766402'],
+    [2262515, undef, '[D12] Oder-Neiße-Radweg Brandenburg', '14.2619276,53.2766402', '14.7317531,51.5873829'],
     [1069748, undef, 'Uckermärkischer Radrundweg', '13.9994783,53.0150285', '13.9994783,53.0150285'], # start/end in Angermünde
-    [4784783, undef, 'Elberadweg [Tangermünde-Magdeburg]', '11.973961,52.542651', '11.642163,52.129183'],
-    [  27727, [qw(--start 13.593313,52.677276)], 'Berlin-Usedom (start in Bernau)', '13.593313,52.677276', '13.772893,54.135781'],
-    [  27727, [qw(--end 13.861763,53.313792)], 'Berlin-Usedom (end in Prenzlau)', '13.400738,52.516311', '13.861763,53.313792'],
-    [  27727, [qw(--start 13.593313,52.677276 --end 13.861763,53.313792)], 'Berlin-Usedom (Bernau-Prenzlau)', '13.593313,52.677276', '13.861763,53.313792'],
-    [  27727, [qw(--backward)], 'Usedom-Berlin', '13.772893,54.135781', '13.400738,52.516311'],
-    [  27727, [qw(--backward --start 13.861763,53.313792 --end 13.593313,52.677276)], 'Usedom-Berlin (Prenzlau-Bernau)', '13.861763,53.313792', '13.593313,52.677276'],
+    [4784783, undef, '[D10] Elberadweg linkselbisch überwiegend [Abschnitt I]', '11.973961,52.542651', '11.642163,52.129183'],
+    [  27727, [qw(--start 13.593313,52.677276 --title), 'Berlin-Usedom (start in Bernau)'], 'Berlin-Usedom (start in Bernau)', '13.593313,52.677276', '13.772893,54.135781'],
+    [  27727, [qw(--end 13.861763,53.313792 --title), 'Berlin-Usedom (end in Prenzlau)'], 'Berlin-Usedom (end in Prenzlau)', '13.400738,52.516311', '13.861763,53.313792'],
+    [  27727, [qw(--start 13.593313,52.677276 --end 13.861763,53.313792 --title), 'Berlin-Usedom (Bernau-Prenzlau)'], 'Berlin-Usedom (Bernau-Prenzlau)', '13.593313,52.677276', '13.861763,53.313792'],
+    [  27727, [qw(--backward --title), 'Usedom-Berlin'], 'Usedom-Berlin', '13.772893,54.135781', '13.400738,52.516311'],
+    [  27727, [qw(--backward --start 13.861763,53.313792 --end 13.593313,52.677276 --title), 'Usedom-Berlin (Prenzlau-Bernau)'], 'Usedom-Berlin (Prenzlau-Bernau)', '13.861763,53.313792', '13.593313,52.677276'],
 ) {
     my($rel_id, $extra_args, $name, $exp_start_coord, $exp_end_coord) = @$test_case;
     my $cache_file = "/tmp/osmrel2gpx_response_${rel_id}.xml";
@@ -74,6 +75,7 @@ for my $test_case (
 	print $ofh $out;
 	close $ofh or die $!;
     }
+    $out = decode("utf-8", $out);
     my($first_lat, $first_lon) = $out =~   m{<trkpt lat="([^"]+)" lon="([^"]+)"};
     my($last_lat,  $last_lon)  = $out =~ m{.*<trkpt lat="([^"]+)" lon="([^"]+)"}s;
     if (defined $exp_start_coord) {
@@ -84,6 +86,8 @@ for my $test_case (
 	my $end_dist =  Strassen::Util::strecke_s_polar($exp_end_coord,   "$last_lon,$last_lat");
 	cmp_ok $end_dist,   "<=", 1000, "expected end coord within 1000m from $exp_end_coord, got $last_lon,$last_lat (dist is $end_dist)";
     }
+    my($trkname) = $out =~ m{<name>(.*?)</name>};
+    is $trkname, $name, "expected trkname";
 }
 
 __END__

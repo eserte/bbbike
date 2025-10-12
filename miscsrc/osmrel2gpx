@@ -4,14 +4,20 @@ use warnings;
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
+use Encode qw(decode);
+use I18N::Langinfo qw(langinfo CODESET);
 use LWP::UserAgent;
 use XML::LibXML;
 use Getopt::Long;
 use List::Util qw(min);
 use POSIX qw(strftime);
 
+my $codeset = langinfo(CODESET());
+$codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
+binmode STDERR, ":encoding($codeset)";
+
 # Command line args
-my ($relation_id, $start_coord, $end_coord, $output, $backward, $cache, $in_xml);
+my ($relation_id, $start_coord, $end_coord, $output, $backward, $cache, $in_xml, $title);
 GetOptions(
     'id=i'     => \$relation_id,
     'start=s'  => \$start_coord,
@@ -21,8 +27,15 @@ GetOptions(
     'cache!'   => \$cache,
     'in-xml=s' => \$in_xml,
     'simplify=i' => \my $simplify,
+    'title=s'  => \$title,
 ) or die "Usage: $0 --id RELATION_ID [--start lon,lat] [--end lon,lat] [--out file.gpx] [--backward] [--cache] [--in-xml /path/to/overpassresult.xml] [--simplify number]\n";
 die "OSM relation ID required" unless $relation_id;
+
+for ($title) {
+    if (defined $_) {
+	$_ = decode($codeset, $_);
+    }
+}
 
 # API query (default: Overpass)
 my $overpass_url = "https://overpass-api.de/api/interpreter";
@@ -226,12 +239,14 @@ if (defined $simplify && @lonlats > $simplify) {
 }
 @lonlats = map { [$_->{x}, $_->{y}] } @lonlats;
 
+$title = $relation_name if !defined $title;
+
 # Generate GPX
 my $gpx = <<EOH;
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="rel2gpx.pl" xmlns="http://www.topografix.com/GPX/1/1">
 <trk>
-  <name>@{[ XML::LibXML::Text->new($relation_name)->toString ]}</name>
+  <name>@{[ XML::LibXML::Text->new($title)->toString ]}</name>
   <trkseg>
 EOH
 
