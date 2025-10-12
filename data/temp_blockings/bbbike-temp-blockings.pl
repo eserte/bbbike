@@ -22432,13 +22432,13 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-10-10 (traffic)
+#: last_checked: 2025-10-12
 #: check_frequency: 7d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 # (noch nicht!) --- Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-10-10 (traffic)
+#: last_checked: 2025-10-12
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -42146,7 +42146,7 @@ EOF
 #: osm_watch: way id="23121446" version="37"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-09-29 (osm) vvv
+#: last_checked: 2025-10-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -44925,6 +44925,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1805830095908532353
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1604375.php (weitere Planungen der Sperrungen)
+#: by: https://entwicklungsstadt.de/grossbaustelle-in-mitte-sanierung-der-krausenstrasse-geht-in-naechste-phase/
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027) (inaktiv)
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="20"
@@ -46991,7 +46992,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (ex-G,T,B,A)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-09-28
+#: last_checked: 2025-10-12
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-07-31 (Halteverbotsschilder)
 	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
@@ -48242,7 +48243,7 @@ EOF
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
 #: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-10-11 vvv
+#: last_checked: 2025-10-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-10-17 (VIZ-Verkehrsmeldung) vvv
 Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
@@ -49145,13 +49146,13 @@ EOF
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-09-29 (traffic) vvv
+#: last_checked: 2025-10-12 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-09-02 vvv
 # REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
-#: also_indoor: traffic (G,re-T,re-H)
+#: also_indoor: traffic (G,ex-T,re-H)
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -49281,7 +49282,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="1"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-09-24 vvv
+#: last_checked: 2025-10-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -49318,14 +49319,14 @@ EOF
 EOF
      },
      { from  => 1752184800, # 2025-07-11 00:00
-       until => undef, # $isodate2epoch->("2025-08-21 18:00:00"), # 1753480799, # 2025-07-25 23:59
+       until => 1760289596, # undef, # $isodate2epoch->("2025-08-21 18:00:00"), # 1753480799, # 2025-07-25 23:59
 #      text  => 'Belziger Str.: Bau- und Markierungsarbeiten zwischen Martin-Luther-Str. bis Eisenacher Str.), Fahrbahn noch nicht offiziell für Radfahrer geöffnet, voraussichtlich bis zum 21. August 2025',
        text  => 'Belziger Str.: Bau- und Markierungsarbeiten, Fahrbahn kann gesperrt sein',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BELZIGER-2025
 # REMOVED (hier wohl fertig) --- #: osm_watch[closed]: note 4877718 4 ---	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
-#: last_checked: 2025-10-05 (mapillary)
+# REMOVED (wieder offen) --- #: last_checked: 2025-10-12
 	q4::inwork 7101,9027 7308,9163
 EOF
      },
@@ -49427,7 +49428,7 @@ EOF
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-10-07 (traffic)
+#: last_checked: 2025-10-12
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 EOF
@@ -49857,13 +49858,13 @@ EOF
        data  => <<'EOF',
 #: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-10-10 (traffic) vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2025-10-12 vvv
+#: check_frequency: 14d vvv
 #: next_check: 2025-10-31 vvv
 #: note: Halteverbotsschilder bis 31.10.2025
 	q4::inwork 8982,8781 8926,8682
 #: note: hier auf etwa 50m Länge gesperrt
-	q4::inwork 8926,8682 8842,8561
+	q3::inwork 8926,8682 8842,8561
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -49962,8 +49963,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,H[zu viel])
-#: last_checked: 2025-09-03
-#: check_frequency: 45d
+#: last_checked: 2025-10-12
+#: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 EOF
      },
@@ -49973,9 +49974,12 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (H[zu wenig],G[zu wenig])
-#: last_checked: 2025-10-06 (mapillary)
-#: check_frequency: 14d
-	q4::inwork 10506,14521 10441,14497 10399,14429 10311,14613
+#: last_checked: 2025-10-12 vvv
+#: check_frequency: 14d vvv
+Wolliner Str.: Fahrbahn offiziell gesperrt	q4::inwork 10506,14521 10441,14497 10399,14429
+Griebenowstr.: Einschränkungen nur im Einmündungsbereich	q2::inwork 10399,14429 10311,14613
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -49984,7 +49988,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
-#: last_checked: 2025-10-11
+#: last_checked: 2025-10-12
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -50022,7 +50026,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597306.php (Maßnahme bis Ende Oktober 2025)
 #: osm_watch: note 4959079 1
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2025-10-05 (mapillary)
+#: last_checked: 2025-10-12
 #: check_frequency: 14d
 #: next_check: 2025-10-31 (Fahrrat-Protokoll)
 	q4::inwork 7790,9126 8014,9126 8053,9123 8081,9120 8180,9099
@@ -50030,7 +50034,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Manfred-von-Richthofen-Str.: Wasserrohrbruch hinter Schreiberring, Gehweg und Fahrbahn Richtung Süden gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Manfred-von-Richthofen-Str.: Wasserrohrbruch hinter Schreiberring, Gehweg und Fahrbahn Richtung Süden gesperrt, Ende der Bauarbeiten unbekannt (Stand Oktober 2025: Fahrbahn weiterhin gesperrt)',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lyhtc24jas2b
@@ -50038,19 +50042,19 @@ EOF
 #: source_id: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum)
 #: source_id: viz2021:13.37918,52.48055, (kein Endedatum)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-09-30 (traffic)
+#: last_checked: 2025-10-12
 #: check_frequency: 14d
 Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
 EOF
      },
      { from  => 1757626351, # 2025-09-11 23:32
-       until => 1762470000, # 2025-11-07 00:00
-       text  => 'Schreiberring: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 6.11.2025',
+       until => undef, # 1762470000, # 2025-11-07 00:00
+       text  => 'Schreiberring: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 6.11.2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (T)
 #: note: laut Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
-#: last_checked: 2025-09-22
+#: last_checked: 2025-10-12
 #: check_frequency: 30d
 #: next_check: 2025-11-06
 	q4::inwork 8941,8186 8861,8242 8776,8285
@@ -50087,14 +50091,14 @@ EOF
      },
      { from  => undef,
        until => undef, # XXX
-       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein',
+       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Oktober 2025: Absperrungen existieren)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
 #: osm_watch: note 4801950 4
 #: osm_watch: way id="53168806" version="7"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2025-09-06 (Mapillary) (noch abgesperrt)
+#: last_checked: 2025-10-12 (noch abgesperrt)
 #: check_frequency: 14d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
@@ -50207,6 +50211,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzfkwh3xw224
 #: source_id: viz2021:13.35762,52.48668,22.09.2025,07:00 (bis 01.12.2025)
+#: last_checked: 2025-10-12
 #: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
 	q4::inwork 7389,8837 7360,8918
 EOF
@@ -50322,14 +50327,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1760289907, # undef, # XXX
        text  => 'Görlitzer Park: Eingang Lausitzer Platz wegen Bauarbeiten gesperrt, Dauer der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: GOERLITZERPARK-2025
-#: add_fragezeichen: Ist der Eingang noch immer gesperrt?
-#: last_checked: 2025-10-10
-#: check_frequency: 7d
+# REMOVED --- #: add_fragezeichen: Ist der Eingang noch immer gesperrt? --- #: last_checked: 2025-10-12 (Bauzäune weggeschoben oder legal entfernt) --- #: check_frequency: 7d
 	2::inwork 12331,10409 12328,10442
 EOF
      },
@@ -50351,6 +50354,7 @@ EOF
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
 #: by: https://www.morgenpost.de/berlin/article410184104/dreieck-funkturm-grosse-sperrungen-fuer-ende-oktober-angekuendigt.html
 #: by: https://www.tagesspiegel.de/berlin/autobahnbrucke-in-berlin-wird-abgerissen-grosssperrung-und-massive-verkehrseinschrankungen-am-dreieck-funkturm-ab-ende-oktober-14511032.html
+#: by: https://entwicklungsstadt.de/ringbahnbruecke-sperrungen-rund-um-die-a100-und-a115-angekuendigt/
 	2::inwork 2104,10494 2086,10552 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 	2::inwork 2033,10613 2090,10576 2117,10495
 EOF

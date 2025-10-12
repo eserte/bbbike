@@ -19,13 +19,14 @@ Kladower Damm/Runebergweg/Topeliusweg: Gegenverkehrsregelung	X::inwork::alternat
 Lahnstr./Mittelbuschweg: Gegenverkehrsregelung	X::inwork::alternating 13500,7018
 # 
 #: next_check_id: SCHIFFBAUERDAMM-2025
-#: last_checked: 2025-09-24
+#: last_checked: 2025-10-12
 #: check_frequency: 30d
 #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: valid: -20260701
 Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12647
 # 
 #: next_check_id: HERBERT-2025
+#: last_checked: 2025-10-12
 #: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
 #: valid: -20251201
 Kolonnenstr./Herbertstr.: Gegenverkehrsregelung	X::inwork::alternating 7360,8918
@@ -312,7 +313,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2025-09-26
+#: last_checked: 2025-10-12
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -364,6 +365,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: next_check_id: NEUEBAHNHOF-2025
 #: by: https://viz.berlin.de/2023/01/verkehrsvorschau-240123/ (Bedarfsampeln für Fußgänger, bis 2024)
 #: by: https://berliner-abendblatt.de/2023/01/24/bauarbeiten-staugefahr-in-der-guertelstrasse/
+#: by: https://entwicklungsstadt.de/3yards-revitalisierung-des-knorr-bremse-werks-in-friedrichshain-startet/
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.471417,52.507338,11.06.2025,07:00 (bis 31.03.2027) (inaktiv)
@@ -3580,6 +3582,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5356,11512
 	F 13800,7801
 #: note: Anforderungsampel
+#: off: 2025-10-12 Sun 09:47
+#: off_rule: Sun?
 	F 7178,14996
 #: XXX_prog: nicht relevant für Radweg Richtung Westen
 #: note: Anforderungsampel

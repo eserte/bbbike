@@ -628,7 +628,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10226,14568 10311,14391
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2025-09-18 (mapillary)
+#: last_checked: 2025-10-12
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (infravelo)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -642,7 +642,7 @@ Fürstenberger Str.: Asphalt	Q0 10311,14613 10468,14636
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="21"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2025-09-17
+#: last_checked: 2025-10-12
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1811,6 +1811,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1605623.php (Sanierungsarbeiten: Abschleifen des Kopfsteinpflasters, ab 13. Oktober 2025, 1. Abschnitt ab Greifswalder Str.)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1605546.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/berlins-neueste-fahrradstrasse-bekannte-kopfstein-piste-in-prenzlauer-berg-wird-endlich-glatt-14529680.html
+#: by: https://entwicklungsstadt.de/verkehrswende-in-pankow-umbau-der-hufelandstrasse-offiziell-gestartet/
 #: osm_watch: way id="4615063" version="39"
 #: last_checked: 2025-10-11
 #: check_frequency: 120d
@@ -30899,7 +30900,8 @@ Graunstr.: Asphalt	Q0 9844,15755 9907,15618 9996,15400 10018,15211
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
 (Arkonaplatz): Gehwegplatten und Kopfsteinpflaster	Q1- 10189,14649 10226,14568
 Lortzingstr.: Kopfsteinpflaster	Q2 10037,15421 9996,15400 9898,15354
-Lortzingstr.: Gehwegplatten	Q0 9898,15354 9853,15333 9814,15312
+#: corrected_by: srt (Q0 -> Q1)
+Lortzingstr.: Gehwegplatten	Q1 9898,15354 9853,15333 9814,15312
 Lortzingstr.: Kopfsteinpflaster	Q2 9814,15312 9702,15251 9566,15188
 #: confirmed_by: srt
 Putbusser Str.: Asphalt	Q0 9474,15714 9574,15507 9702,15251 9773,15099
@@ -30907,7 +30909,8 @@ Strahlsunder Str.: Gehwegplatten	Q0 9918,14986 9843,14949 9718,14888
 #: corrected_by: srt (Q3 -> Q3+; rein vom Sehen sah es nicht sooo schlecht aus)
 Strahlsunder Str.: schlechtes Kopfsteinpflaster	Q3+ 9718,14888 9517,14785 9341,14701 9250,14658
 Vinetaplatz: Gehwegplatten	Q0 9942,14936 10029,14974 10111,15018
-Vinetaplatz: Gehwegplatten	Q0 9904,15014 9988,15057 10071,15096
+#: corrected_by: srt (Q0 -> Q1)
+Vinetaplatz: Gehwegplatten	Q1 9904,15014 9988,15057 10071,15096
 #: confirmed_by: srt
 Ruppiner Str.: Asphalt	Q0 9847,15134 9904,15014
 #: corrected_by: srt (Q0 -> Q1)

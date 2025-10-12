@@ -61,7 +61,8 @@ provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
 # 
 ################################################################################
 # 
-	RW1; 9229,8785 9227,8890
+#: historical_note: früher (bis 2025) Verbundsteinpflaster
+neu asphaltiert	RW1; 9229,8785 9227,8890
 neu asphaltiert	RW1; 9227,8890 9226,8967
 geschützter Radstreifen, Grünbeschichtung	RW3; 9226,8967 9225,9038 9224,9053
 neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
@@ -361,7 +362,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-10-11 vvv
+#: last_checked: 2025-10-12 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -3656,11 +3657,9 @@ Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 5172,
 Gehwegplatten	RW1; 5121,17559 5109,17507
 # 
 	RW1; 7277,15586 7138,15437 6996,15319
-#: next_check_id: WEDDINGADVANCEDLABS-2025
-#: osm_watch: note 3417116 11
-#: XXX Radweg wird neu asphaltiert
-#: last_checked: 2025-09-24
-	RW1; 6996,15319 6833,15215
+# REMOVED (2025-10-12: die provisorische Radspur ist noch da, aber der neue Radweg kann schon befahren werden) --- #: next_check_id: WEDDINGADVANCEDLABS-2025 --- #: osm_watch: note 3417116 11 --- #: XXX Radweg wird neu asphaltiert --- #: last_checked: 2025-09-24
+#: historical_note: früher (bis 2025): alte Gehwegplatten
+neu asphaltiert	RW1; 6996,15319 6833,15215
 	RW1; 6833,15215 6715,15152 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 Verbundsteinpflaster	RW1; 6334,14756 6445,14893 6504,14969 6528,15000 6561,15041 6626,15104
 alte Gehwegplatten	RW1; 6626,15104 6715,15152 6833,15215 6996,15319 7138,15437 7277,15586
@@ -7408,7 +7407,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2025-09-03 vvv
+#: last_checked: 2025-10-12 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
