@@ -50,7 +50,7 @@ my $osmrel2gpx = bbbike_root . '/miscsrc/osmrel2gpx';
 no warnings 'qw';
 for my $test_case (
     [   9030, undef, 'Berliner Mauerweg', '13.3114700,52.6275917', undef], # XXX incomplete track, relation member problems around Oberbaumbrücke
-    [ 335268, undef, 'Spreeradweg [Beeskow↔Berlin]', '14.2486957,52.1753471', undef], # XXX incomplete track, relation member problems around Oberbaumbrücke
+    [ 335268, undef, 'Spreeradweg [Beeskow↔Berlin]', '14.2486957,52.1753471', '13.399885,52.515889'],
     [  27727, undef, 'Berlin-Usedom Radweg', '13.400738,52.516311', '13.772893,54.135781'],
     [2262839, undef, '[D12] Oder-Neiße-Radweg MVP', '14.1912112,53.9332517', '14.2619276,53.2766402'],
     [2262515, undef, '[D12] Oder-Neiße-Radweg Brandenburg', '14.2619276,53.2766402', '14.7317531,51.5873829'],
