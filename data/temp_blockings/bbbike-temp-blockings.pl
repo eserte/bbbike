@@ -3509,11 +3509,11 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1797,-1804 -1896,-1924 -1958,-2007 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2024-11-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-01-12 22:00:00"), # 1357513199, # 2013-0
+     { from  => $isodate2epoch->("2025-11-23 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-01-04 22:00:00"), # 1357513199, # 2013-0
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 25. November 2024 bis voraussichtlich 12. Januar 2025',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 24. November 2025 bis voraussichtlich 04. Januar 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
@@ -6987,7 +6987,7 @@ EOF
      { from  => $isodate2epoch->("2017-11-28 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => $isodate2epoch->("2017-12-30 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11, start => "2025-01-01T00:00:00"]],
+       recurrences => [['yearly', days => 18, months => 11, start => "2026-01-01T00:00:00"]],
        text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -17524,13 +17524,13 @@ EOF
 	1::xmas 11202,12426 11240,12368 11273,12301
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-12 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
-       until => $isodate2epoch->("2022-01-06 23:59:59"), # mehrere Tage für den Abbau
+     { from  => $isodate2epoch->("2025-11-14 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
+       until => $isodate2epoch->("2026-01-07 23:59:59"), # mehrere Tage für den Abbau
        periodic => 1,
        prewarn_days => 10,
        postwarn_days => 7,
        recurrences => [['yearly', days => 20, months => 11, start => "2025-01-01T00:00:00"]], # Weihnachtsmarkt 2023 und 2024 auf dem Gendarmenmarkt wird wegen Bauarbeiten zum Bebelplatz verlegt
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 22.11.2021 bis 31.12.2021, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 24.11.2025 bis 31.12.2025, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BEBELPLATZXMAS-2022
@@ -21184,8 +21184,9 @@ EOF
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025)
-#: osm_watch: way id="152466403" version="22"
-#: osm_watch: way id="1424980083" version="1"
+#: osm_watch: way id="152466403" version="23"
+#: osm_watch: way id="1424980083" version="2"
+#: osm_watch: way id="1082710233" version="5"
 #: osm_watch: note 4444162 5
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
@@ -33870,7 +33871,9 @@ EOF
 #: also_indoor: traffic (none)
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
-#: osm_watch: way id="1060570985" version="3"
+#: osm_watch: way id="1060570985" version="4"
+#: osm_watch: way id="1384307412" version="1"
+#: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 19
 #: last_checked: 2025-08-29 (research)
 #: check_frequency: 90d
@@ -35426,13 +35429,15 @@ EOF
 	q4::inwork; 16892,10731 16961,10893
 EOF
      },
-     { from  => undef, # 
-       until => 1640626005, # undef, # XXX
-       text  => 'Schwiebusser Str.: wegen Bauarbeiten Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+     { from  => 1760281200, # 2025-10-12 17:00, # undef, # 
+       until => 1761580800, # 2025-10-27 17:00, # 1640626005, # undef, # XXX
+#      text  => 'Schwiebusser Str.: wegen Bauarbeiten Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+       text  => 'Schwiebusser Str.: Sperrung zwischen Mehringdamm und Friesenstr., evtl. sind auch Radfahrer betroffen, vom 13.10.2025 17:00 bis 27.10.2025 17:00',
        type  => 'handicap',
        data  => <<EOF,
-# REMOVED (Einbahnstraße nur noch im Mittelteil, sehr vermutlich "Radfahrer frei") ---  #: also_indoor: traffic --- #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2021-11-28 --- #: check_frequency: 60d
-	q4::inwork; 9227,8890 9417,8890
+# REMOVED (Einbahnstraße nur noch im Mittelteil, sehr vermutlich "Radfahrer frei") ---  #: also_indoor: traffic --- #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2021-11-28 --- #: check_frequency: 60d ---	q4::inwork; 9227,8890 9417,8890
+#: source_id: LMS-BR:386617/72 viz2021:13.387589,52.48589,13.10.2025,17:00 (bis 27.10.2025)
+	q4::inwork 9227,8890 9417,8890 9803,8890
 EOF
      },
      { from  => $isodate2epoch->("2022-09-13 00:00:00"), # 1637599882, # 2021-11-22 17:51
@@ -41369,7 +41374,8 @@ EOF
      { from  => 1755295119, # 1690196400, # 2023-07-24 13:00
        until => $isodate2epoch->("2025-10-17 23:59:59"), # $isodate2epoch->("2025-09-09 10:00:00"), # undef, # 1696768574, # $isodate2epoch->("2023-10-20 17:00:00"), # 1693494000, # 2023-08-31 17:00
 #      text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. gesperrt, vom 25.07.2023 13:00 bis voraussichtlich 20.10.2023 17:00',
-       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 17.10.2025',
+#      text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 17.10.2025',
+       text  => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Waldowstr. offiziell gesperrt, voraussichtlich bis 17.10.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: note: --- alte Meldung von 2023 ---
@@ -41380,11 +41386,15 @@ EOF
 #: note: --- neue Meldung von 2025 ---
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,836205#msg-836205 (es sieht so aus, als ob man als Radfahrer an der Schadensstelle vorbeifahren könnte)
 #: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025) (bis 17.10.2025)
+#: source_id: viz2021:13.40344,52.59031,13.10.2025,07:00 (zusätzlich zwischen Heinrich-Böll-Str. und Waldowstr., bis 17.10.2025)
 # REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
-#: last_checked: 2025-09-09 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-09-09 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
-	q4::inwork 10178,20525 10066,20494
+#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung) vvv
+	q4::inwork 10066,20494 10178,20525
+	q4::inwork 10178,20525 10226,20539 10309,20562
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1687039200, # 2023-06-18 00:00
@@ -42439,7 +42449,7 @@ EOF
        periodic => 1,
        prewarn_days => 9,
        postwarn_days => 7,
-       recurrences => [['yearly', days => 19, months => 11]],
+#      recurrences => [['yearly', days => 19, months => 11]], # Weihnachtsmarkt zieht zurück an den Gendarmenmarkt
        text  => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen Weg am Rand möglich', # note: früher (2023) "eng"
        type  => 'gesperrt',
        data  => <<EOF,
@@ -48986,7 +48996,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-10-04 (traffic)
+#: last_checked: 2025-10-12 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 EOF
@@ -49663,15 +49673,14 @@ EOF
      },
      { from  => 1754431200, # 2025-08-06 00:00
        until => 1767222000, # 2026-01-01 00:00
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Ende August 2025: keine Sperrung des Diagonalwegs)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Mitte Oktober 2025: Diagonalweg ist gesperrt)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: XXX Nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2025-09-20
-#: check_frequency: 30d
+#: last_checked: 2025-10-13
+#: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 EOF
@@ -50198,7 +50207,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-13
 	q4::inwork 14641,10552 14608,10409 14558,10264
 EOF
      },
@@ -50375,6 +50384,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: HUFELAND-2025
+#: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025)
 #: next_check: 2025-10-21 (nächster Bauabschnitt)
 	q4::inwork 12361,13985 12228,14083 12077,14186
 EOF
@@ -50392,6 +50402,26 @@ EOF
 #: also_indoor: traffic (T)
 	q4::inwork 15807,5286 15870,5251 15828,5156
 	q4::inwork 16062,5242 15870,5251
+EOF
+     },
+     { from  => 1760220000, # 2025-10-12 00:00
+       until => 1768517999, # 2026-01-15 23:59
+       text  => 'Müggelheimer Damm: Bauarbeiten zwischen Pablo-Neruda-Str. und Salvador-Allende-Str., Sperrung des Rad- und Gehwegs, voraussichtlich bis Mitte Januar 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251012
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m32dodcvmk2r
+#: note: vielleicht gibt es eine Umleitung durch den Volkspark Köpenick, ist allerdings nicht in der BBBike-Datenbasis enthalten
+	2::inwork 22965,4124 23368,3894
+EOF
+     },
+     { from  => 1760378957, # 2025-10-13 20:09
+       until => 1760738400, # 2025-10-18 00:00
+       text  => 'Warschauer Platz: Baustelle, Sperrung der Fahrbahn Richtung Norden, voraussichtlich bis 17.10.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
+	q4::inwork 13408,10837 13436,10903
 EOF
      },
     );

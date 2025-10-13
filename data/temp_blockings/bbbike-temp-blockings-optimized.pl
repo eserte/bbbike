@@ -549,7 +549,48 @@ Auflösebereich bis zum Alexanderplatz	2::temp 11589,12768 11289,12908 11226,1294
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
+#: source_id: viz2021:13.33407,52.5054,07.11.2024,07:00 (Verengung Breitscheidplatz, bis 12.01.2025) (inaktiv)
+# REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
+# sowieso schon mit q4 markiert, deshalb -> 2
+	2::xmas 5829,10964 5782,10884
+	2::xmas 5656,10876 5652,11004
+#: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
+#: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
+#: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
+#: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
+#: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
+# REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
+#: source_id: 2147345089 (inaktiv)
+#: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
+#: source_id: viz2021:13.331602,52.505283,07.11.2024,07:00 (bis 12.01.2025) (inaktiv)
+#: source_id: viz2021:13.33567,52.50437,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Rankestr., bis 12.01.2025) (inaktiv)
+#: source_id: viz2021:13.33931,52.50323,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Tauentzienstr., bis 12.01.2025) (inaktiv)
+#: note: 2022+2023 ist die Farbahn auch gesperrt
+Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
+',
+         'from' => 1763852400,
+         'id' => 394,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 24. November 2025 bis voraussichtlich 04. Januar 2026',
+         'type' => 'gesperrt',
+         'until' => 1767560400
+       },
        undef,
        undef,
        undef,
@@ -2527,7 +2568,37 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BEBELPLATZXMAS-2022
+#: by: https://www.weihnachtsmarkt-berlin.de/
+#: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (2022 und 2023 vorübergehend am Bebelplatz, evtl. auch schon 2021)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971676-955635-weihnachtszauber-gendarmenmarkt.html (2021 schon am Bebelplatz, wegen Bauarbeiten bis 2023)
+#: by: https://www.weihnachtsmarkt-berlin.de/?date=20211019 (2021 noch immer am Gendarmenmarkt?)
+#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt.html
+#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
+	2::xmas 9536,11922 9666,11935
+	2::xmas 9523,12019 9656,12031
+',
+         'from' => 1763074800,
+         'id' => 1989,
+         'periodic' => 1,
+         'postwarn_days' => 7,
+         'prewarn_days' => 10,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2025-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 24.11.2025 bis 31.12.2025, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
+         'type' => 'gesperrt',
+         'until' => 1767826799
+       },
        undef,
        undef,
        undef,
@@ -3036,8 +3107,9 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025)
-#: osm_watch: way id="152466403" version="22"
-#: osm_watch: way id="1424980083" version="1"
+#: osm_watch: way id="152466403" version="23"
+#: osm_watch: way id="1424980083" version="2"
+#: osm_watch: way id="1082710233" version="5"
 #: osm_watch: note 4444162 5
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
@@ -4840,7 +4912,9 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: also_indoor: traffic (none)
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
-#: osm_watch: way id="1060570985" version="3"
+#: osm_watch: way id="1060570985" version="4"
+#: osm_watch: way id="1384307412" version="1"
+#: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 19
 #: last_checked: 2025-08-29 (research)
 #: check_frequency: 90d
@@ -5085,7 +5159,17 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (Einbahnstraße nur noch im Mittelteil, sehr vermutlich "Radfahrer frei") ---  #: also_indoor: traffic --- #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2021-11-28 --- #: check_frequency: 60d ---	q4::inwork; 9227,8890 9417,8890
+#: source_id: LMS-BR:386617/72 viz2021:13.387589,52.48589,13.10.2025,17:00 (bis 27.10.2025)
+	q4::inwork 9227,8890 9417,8890 9803,8890
+',
+         'from' => 1760281200,
+         'id' => 3479,
+         'text' => 'Schwiebusser Str.: Sperrung zwischen Mehringdamm und Friesenstr., evtl. sind auch Radfahrer betroffen, vom 13.10.2025 17:00 bis 27.10.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1761580800
+       },
        undef,
        undef,
        undef,
@@ -6337,15 +6421,19 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
 #: note: --- neue Meldung von 2025 ---
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,836205#msg-836205 (es sieht so aus, als ob man als Radfahrer an der Schadensstelle vorbeifahren könnte)
 #: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025) (bis 17.10.2025)
+#: source_id: viz2021:13.40344,52.59031,13.10.2025,07:00 (zusätzlich zwischen Heinrich-Böll-Str. und Waldowstr., bis 17.10.2025)
 # REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
-#: last_checked: 2025-09-09 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-09-09 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
-	q4::inwork 10178,20525 10066,20494
+#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung) vvv
+	q4::inwork 10066,20494 10178,20525
+	q4::inwork 10178,20525 10226,20539 10309,20562
+#: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1755295119,
          'id' => 3866,
-         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Heinrich-Böll-Str. offiziell gesperrt, voraussichtlich bis 17.10.2025',
+         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Waldowstr. offiziell gesperrt, voraussichtlich bis 17.10.2025',
          'type' => 'handicap',
          'until' => 1760738399
        },
@@ -8664,7 +8752,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-10-04 (traffic)
+#: last_checked: 2025-10-12 (traffic)
 #: check_frequency: 10d (traffic)
 	q4::inwork 4500,6612 4630,6534 4846,6417
 ',
@@ -9032,15 +9120,14 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: XXX Nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2025-09-20
-#: check_frequency: 30d
+#: last_checked: 2025-10-13
+#: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 ',
          'from' => 1754431200,
          'id' => 4411,
-         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Ende August 2025: keine Sperrung des Diagonalwegs)',
+         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Mitte Oktober 2025: Diagonalweg ist gesperrt)',
          'type' => 'gesperrt',
          'until' => 1767222000
        },
@@ -9378,7 +9465,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-13
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9548,6 +9635,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        },
        {
          'data' => '#: next_check_id: HUFELAND-2025
+#: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025)
 #: next_check: 2025-10-21 (nächster Bauabschnitt)
 	q4::inwork 12361,13985 12228,14083 12077,14186
 ',
@@ -9572,6 +9660,28 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'text' => 'Königsheideweg: Sperrung in Höhe Späthsfelder Weg, voraussichtlich bis Ende Oktober 2025',
          'type' => 'handicap',
          'until' => 1761951599
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251012
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m32dodcvmk2r
+#: note: vielleicht gibt es eine Umleitung durch den Volkspark Köpenick, ist allerdings nicht in der BBBike-Datenbasis enthalten
+	2::inwork 22965,4124 23368,3894
+',
+         'from' => 1760220000,
+         'id' => 4467,
+         'text' => 'Müggelheimer Damm: Bauarbeiten zwischen Pablo-Neruda-Str. und Salvador-Allende-Str., Sperrung des Rad- und Gehwegs, voraussichtlich bis Mitte Januar 2026',
+         'type' => 'gesperrt',
+         'until' => 1768517999
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
+	q4::inwork 13408,10837 13436,10903
+',
+         'from' => 1760378957,
+         'id' => 4468,
+         'text' => 'Warschauer Platz: Baustelle, Sperrung der Fahrbahn Richtung Norden, voraussichtlich bis 17.10.2025',
+         'type' => 'handicap',
+         'until' => 1760738400
        }
      
 );

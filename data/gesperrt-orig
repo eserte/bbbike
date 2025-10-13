@@ -4021,6 +4021,14 @@ Schwingtor	BNP:5::trailer=10 11543,20272
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
+#: osm_watch: way id="179005464" version="11"
+#: osm_watch: way id="1339060325" version="1"
+#: last_checked: 2025-10-13
+#: check_frequency: 60d
+#: next_check: 2028-12-31
+Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
+# 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~22-09-2025-b1-spatenstich-altsaedtischer-bahnhof (Freigabe 2028?)
 #: source_id: LS/223-P/25/102 (bis 21.11.2025)
 #: next_check: 2028-06-30
@@ -4553,7 +4561,7 @@ An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22546,3115 22477,3109
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-09-21
+#: last_checked: 2025-10-13
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4561,7 +4569,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-10-05 vvv
+#: last_checked: 2025-10-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5008,7 +5016,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-09-20 vvv
+#: last_checked: 2025-10-13 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5244,7 +5252,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: next_check_id: DRESDNERBAHN-2021
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: XXX laut Baustellenschild Erneuerung der EÜ Attilastr. bis 2023
-#: osm_watch: way id="588431071" version="8"
+# REMOVED --- #: osm_watch: way id="588431071" version="8"
 #: osm_watch: way id="696227207" version="5"
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: last_checked: 2025-09-22 (mapillary)

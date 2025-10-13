@@ -69,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="23"
 #: osm_watch: way id="1072662717" version="27"
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-13
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -128,7 +128,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-13
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-01
 Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -353,8 +353,8 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
-#: osm_watch: way id="885130938" version="5"
-#: last_checked: 2025-09-24
+#: osm_watch: way id="885130938" version="7"
+#: last_checked: 2025-10-13 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -472,7 +472,7 @@ Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,1
 #: note: (wieder) komplett gesperrt, auch die Bürgersteige
 Schadowstr.: Fahrbahn gesperrt, Umleitung	q4::inwork 8999,12498 9011,12423
 #: osm_watch: way id="4402037" version="26"
-#: osm_watch: way id="1241756428" version="1"
+#: osm_watch: way id="1241756428" version="2"
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lux-berlin-neust%C3%A4dtischer-kirchplatz.903/page-2#post-23516
 #: osm_watch: note 3469300 8
@@ -1838,12 +1838,13 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: by: https://entwicklungsstadt.de/wellenbad-am-spreewaldplatz-veraenderungen-beim-umfang-der-umbauarbeiten/
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
+#: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-10-10
+#: last_checked: 2025-10-13
 #: check_frequency: 180d
 #: next_check: 2027-01-31
-Spreewaldplatz: Fußgänger, Engstellen	q2 12341,10218 12292,10374
+Spreewaldplatz: Fußgänger, Engstellen	q3+ 12341,10218 12292,10374
 # 
 #: XXX_prog BS auf beiden Seiten, ansonsten q2 oder q2+ (GPS-Tracks anschauen)
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8373
@@ -2298,7 +2299,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="529086013" version="4"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="14"
-#: last_checked: 2025-10-09
+#: last_checked: 2025-10-12 (daf)
 #: check_frequency: 120d
 #: next_check: 2025-12-15 (Halteverbotsschilder)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329

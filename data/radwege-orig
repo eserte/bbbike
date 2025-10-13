@@ -1378,7 +1378,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-10-08 vvv
+#: last_checked: 2025-10-13 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt zum Ersatzneubau) vvv
@@ -2598,6 +2598,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 Verbundsteinpflaster	RW2; 4324,8899 4327,8991 4325,9082 4325,9159 4339,9224 4377,9258
 	RW6;RW6 12767,10216 12897,10439 12968,10564 12978,10581
 	RW6;RW6 12731,10547 12822,10487 12897,10439 13032,10355 13151,10276 13271,10193
+#: note: Busspur ist nicht für Radfahrer freigegeben
 asphaltiert	RW1; 13795,9941 13860,9861
 #: historical_note: früher (bis 2025, vermutlich bis zur Eröffnung der A100): RW1;
 asphaltiert	RW2; 13860,9861 14031,9673 14089,9610
@@ -6789,7 +6790,7 @@ Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigr
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
-#: osm_watch: way id="153370344" version="37"
+#: osm_watch: way id="153370344" version="38"
 #: osm_watch: way id="153373879" version="30"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6826,11479
 #: check_frequency ^^^
@@ -8260,7 +8261,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-13
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
