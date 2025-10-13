@@ -414,6 +414,7 @@ sub url_normalizations {
     $url =~ s{(https://www.architektur-urbanistik.berlin/index.php\?threads/.*?/).*}{$1};
     $url =~ s{(https://www.bahninfo-forum.de/read.php\?\d+,\d+,).*}{$1};
     $url =~ s{(https://www.nd-aktuell.de/artikel/\d+\.).*}{$1};
+    $url =~ s{(https://www.tagesspiegel.de/.*)\?.*}{$1};
     $url;
 }
 
