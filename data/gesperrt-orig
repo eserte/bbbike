@@ -199,7 +199,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-09-30 vvv
+#: last_checked: 2025-10-14 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -2746,7 +2746,7 @@ abgeschlossenes Tor	3 * 7319,8515 *
 # 
 #: next_check_id: TEGELERBRUECKE-2021
 #: note: Die Sperrung der Straße R bleibt wohl dauerhaft.
-#: osm_watch: node id="10202117536" version="9"
+#: osm_watch: node id="10202117536" version="10"
 Zaun, Durchfahrt für Radfahrer nicht möglich	3 * -761,16641 *
 # 
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 * 19881,16561 *
@@ -4035,15 +4035,18 @@ Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,
 Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=784716#post784716
+#: by: https://entwicklungsstadt.de/europacity-neues-schulz-hotel-entsteht-an-der-heidestrasse-18/ (Eröffnung Anfang 2027)
 #: osm_watch[closed]: note 4940349 2
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
 #: last_checked: 2025-09-20 (daf) vvv
 #: check_frequency: 90d vvv
+#: next_check: 2027-03-15 vvv
 #: osm_watch: way id="752856111" version="14"
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7697,14187 7781,14238 7802,14250
 #: osm_watch: way id="237716438" version="26"
 #: note: eigentlich durchgängig, aber Radfahrer können wohl auf der Uferpromenade weiterhin nach Norden fahren
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305 7652,14257
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -4121,7 +4124,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="9"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-09-29
+#: last_checked: 2025-10-14
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4503,7 +4506,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
 #: osm_watch: way id="25796640" version="30"
 #: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
@@ -4561,7 +4564,7 @@ An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22546,3115 22477,3109
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-10-13
+#: last_checked: 2025-10-14
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4569,7 +4572,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-10-13 vvv
+#: last_checked: 2025-10-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4607,7 +4610,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4795,7 +4798,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 # 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
-#: source_id: 226110967 (hier: bis 27.6.2023) (inaktiv) (bis 27.06.2024) (inaktiv) (bis 30.09.2025) (inaktiv)
+#: source_id: 226110967 (hier: bis 27.6.2023) (inaktiv) (bis 27.06.2024) (inaktiv) (bis 30.09.2025) (inaktiv) (bis 30.11.2025)
 #: by: https://www.vbb.de/presse/deutsche-bahn-erneuert-bruecke-ueber-storkower-strasse-in-koenigs-wusterhausen/ (SEV bis 26.8.2022, danach gibt's Hilfsbrücken für die Bahn)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/ (Brückenbauarbeiten)
 #: by: https://www.maz-online.de/lokales/dahme-spreewald/bahnbaustelle-koenigs-wusterhausen-zwei-wochen-gesperrt-was-treiben-die-da-S3EA4AFEMVCPRBGZHMRWCVO3QE.html
@@ -4972,8 +4975,8 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: osm_watch: way id="1171090939" version="5"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
-#: last_checked: 2025-09-21
-#: check_frequency: 120d
+#: last_checked: 2025-10-14
+#: check_frequency: 60d
 #: next_check: 2025-12-31 (howoge website)
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16601,10650 16587,10613
 # 
@@ -5162,6 +5165,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berliner-woche.de/mitte/c-bauen/grabungen-am-molkenmarkt-foerderten-zahlreiche-funde-zu-tage_a422590
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1580739.php
 #: by: https://entwicklungsstadt.de/fuer-ein-vielfaeltig-nutzbares-quartier-wettbewerb-fuer-molkenmarkt-berlin-gestartet/
+#: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verzogerungen-beim-berliner-molkenmarkt-das-kostet-die-langere-arbeit-an-der-quartiersgestaltung-bisher-14557556.html
 #: source_id: viz2021:13.41504,52.52091,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.40903,52.517,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.41347,52.51971,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
@@ -5254,7 +5258,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: XXX laut Baustellenschild Erneuerung der EÜ Attilastr. bis 2023
 # REMOVED --- #: osm_watch: way id="588431071" version="8"
 #: osm_watch: way id="696227207" version="5"
-#: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
+#: add_fragezeichen: Ist der Weg weiterhin gesperrt?
 #: last_checked: 2025-09-22 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-08-05

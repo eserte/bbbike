@@ -1178,7 +1178,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2025-09-21
+#: last_checked: 2025-10-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -11520,9 +11520,9 @@ Am Rodelberg: Asphalt	Q0 7082,22414 7287,22403 7292,22505
 (Rondell vor dem Sowjetischen Ehrenmal): Kopfsteinpflaster	Q2 8338,19262 8351,19274 8357,19284 8348,19304 8333,19305 8319,19299 8314,19288 8320,19270 8338,19262
 Wilhelm-Kuhr-Str.: Asphalt	Q0 9236,17907 9193,17763 9160,17656
 Hönower Weg: Asphalt	Q0 17383,9719 17471,9688
-#: historical_note: bis Anfang 2025: Beton mit einigen Hebungen, Q0-; mittlerweile ist noch ein unebener Asphaltstreifen durch Leitungsarbeiten entstanden, deshalb Degradierung vvv
-Hönower Weg: Beton mit einigen Hebungen	Q1+; 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770
-Hönower Weg: Beton mit einigen Hebungen	Q1+; 18066,9770 17920,9698 17777,9649
+#: historical_note: bis Anfang 2025: Beton mit einigen Hebungen, Q0-; mittlerweile ist noch ein unebener Asphaltstreifen durch Leitungsarbeiten entstanden, deshalb Degradierung auf Q1+, Herbst 2025: wieder etwas besser vvv
+Hönower Weg: Beton mit einigen Hebungen	Q0+; 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770
+Hönower Weg: Beton mit einigen Hebungen	Q0+; 18066,9770 17920,9698 17777,9649
 #: historical_note: Juli 2025: Beton wieder neu gemacht, davor zeitweise Beton mit einigen Hebungen, Q1+;
 Hönower Weg: Beton	Q0-; 17777,9649 17668,9632 17587,9655 17471,9688
 #: historical_note ^^^
@@ -12478,7 +12478,7 @@ Am S-Bhf. Bellevue: Gehwegplatten	Q1 6689,12632 6516,12650
 Gerichtstr.: Verbundsteinpflaster	Q1 7808,15417 7765,15417
 #: note: im Wendehammer
 Gerichtstr.: Kleinsteinpflaster	Q1 7765,15417 7723,15417
-Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
+Martha-Ndumbe-Platz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 (Götelstr. - Tharsanderweg): wassergebundene Decke	Q1 -3416,12165 -3524,11980
 (Uferweg - Bocksfeldstr.): wassergebundene Decke	Q1 -3928,11526 -3909,11596 -3872,11619
 # REMOVED --- #: next_check_id: SCHARFELANKE-2021 --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.715459.php (Umgestaltung) --- #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.806805.php (baulichen Umsetzung ab Anfang 2020) --- #: by: https://nitter.cz/ulid000/status/1563899145861177345#m (Umlaufschranken, halbhohe Bordsteine, Asphalt) --- #: by: https://spandau-bewegt.de/scharfe-lanke/ (BA1: Fertigstellung der Maßnahmen: Ende 2022) (BA2 ist die Anbindung zur Bocksfeldstr.) --- #: XXX was wird sich nach der Umgestaltung ändern? Wird sich die Qualität verbessern? --- #: add_fragezeichen: Ist der Uferweg mittlerweile asphaltiert? --- #: last_checked: 2022-08-28 (twitter) --- #: next_check: 2022-09-16 --- #: next_check: 2022-12-31
@@ -13336,7 +13336,7 @@ Auguste-Viktoria-Str.: Asphalt	Q0 2608,7798 2627,7821 2630,7859
 Auguste-Viktoria-Str.: Kopfsteinpflaster	Q2 2630,7859 2640,8014
 Auguste-Viktoria-Str.: Gehwegplatten, Mosaikpflaster	Q0- 2640,8014 2642,8040
 Auguste-Viktoria-Str.: Kopfsteinpflaster	Q2 2642,8040 2661,8307
-Nettelbeckplatz: Asphalt	Q0 7975,15500 7975,15484 7974,15418
+Martha-Ndumbe-Platz: Asphalt	Q0 7975,15500 7975,15484 7974,15418
 Berkaer Platz: Kleinsteinpflaster	Q1- 2587,7823 2627,7821
 (Königsheide - Südostallee): Waldweg	Q2+ 16673,5488 16740,5549
 (Königsheide - Südostallee): Waldweg, loser Feinschotter	Q2- 16740,5549 16927,5725
@@ -14189,7 +14189,7 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018

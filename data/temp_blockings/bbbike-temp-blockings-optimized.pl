@@ -4606,7 +4606,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5109,7 +5109,21 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00 (inaktiv)
+# REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
+# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen) ---	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
+#: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m356f5qmh22g
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiclu2wwbebvt4nr5kzd7jmiv7uapqel7bdnwucpnxltglngf3icw4@jpeg
+	q4::inwork 10069,10151 10083,10192 10122,10294
+',
+         'from' => 1760392800,
+         'id' => 3458,
+         'text' => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 28.10.2025',
+         'type' => 'handicap',
+         'until' => 1761692399
+       },
        undef,
        undef,
        undef,
@@ -5703,7 +5717,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"; mittlerweile Halteverbotsschilder bis 30.09.2025, Bauzäune weggeschoben, so dass Radfahrer passieren können, Baustellenbereich neu asphaltiert
 #: priority: #B
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (DB-Mail, Halteverbotsschilder)
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -6292,7 +6306,7 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -7020,17 +7034,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php
-	q4::temp::play 9570,10566 9556,10666
-',
-         'from' => 1746396000,
-         'id' => 4046,
-         'recurring' => 1,
-         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 6. Mai bis zum 14. Oktober (außer Sommerferien) ',
-         'type' => 'gesperrt',
-         'until' => 1760459400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8129,22 +8133,27 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # REMOVED --- #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert --- q2::inwork 18266,9853 18066,9770 17920,9698
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-T,ex-H)
-#: last_checked: 2025-10-05
-#: check_frequency: 7d
+# REMOVED --- #: also_indoor: traffic (ex-T,ex-H) --- #: last_checked: 2025-10-14 --- #: check_frequency: 7d
 # REMOVED (keine Verlängerung der Halteverbotsschilder) --- #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
 # REMOVED (nach hinten gewandert) ---	2::inwork 17587,9655 17668,9632 17777,9649
 # REMOVED (nach hinten gewandert) --- #: note: Halteverbotsschilder bis 5.9.2025 ---	2::inwork 17777,9649 17920,9698
-#: note: Halteverbotsschilder 2.9.2025 bis 2.10.2025
-	2::inwork 17920,9698 18066,9770
+# REMOVED --- #: note: Halteverbotsschilder 2.9.2025 bis 2.10.2025 ---	2::inwork 17920,9698 18066,9770
 # (kann von bbbike nicht verarbeitet werden) --- Mellenseestr. [Wohngebiet]: Einbahnstraße temporär aufgehoben	1no 17838,9956 17868,9823 17920,9698
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: also_indoor: traffic (none)
+#: last_checked: 2025-10-14 vvv
+#: check_frequency: 14d vvv
+Friedenshorster Str./Splanemannstr.	q4::inwork 18280,9868 18305,9951 18312,9985
+Splanemannstr./Friedenshorster Str.	q4::inwork 18305,9951 18397,9928
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 4271,
-         'text' => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang Oktober 2025',
+         'text' => 'Friedenshorster Str./Splanemannstr.: Kreuzungsbereich wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8463,7 +8472,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025) (bis 17.10.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 6
+#: osm_watch: note 4734747 7
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
@@ -8959,19 +8968,19 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 #: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025) (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.48067,52.49917,17.07.2025,07:00 (bis 15.08.2025) (inaktiv)
 #: source_id: viz2021:13.484668,52.501156, (bis 08.08.2025) (inaktiv)
-#: source_id: viz2021:13.48067,52.49917, (bis 17.10.2025)
+#: source_id: viz2021:13.48067,52.49917, (bis 17.10.2025) (bis 30.10.2025)
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 30d
-#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
 	1::inwork 15970,10755 16038,10818
 ',
          'from' => 1752789600,
          'id' => 4396,
-         'text' => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 17.10.2025, evtl. wird verlängert',
+         'text' => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 30.10.2025, evtl. wird verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9563,19 +9572,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'type' => 'gesperrt',
          'until' => 1767222000
        },
-       {
-         'data' => '#: source_id: viz2021:13.45588,52.53572,
-#: also_indoor: traffic (T)
-#: note: Länge des abgesperrten Bereichs plus weiterer Gehwegabschnitt wegen Absperrgittern ca. 90m
-#: last_checked: 2025-10-06
-	q3::inwork 14007,14285 13867,14507
-',
-         'from' => undef,
-         'id' => 4458,
-         'text' => 'Am Weingarten: Wasserrohrbruch, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:385805/72 viz2021:13.30956,52.514,06.10.2025,07:00 (bis 31.10.2025)
 	q4::inwork 3976,11869 3992,12063 4032,12167
@@ -9675,13 +9672,14 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
+#: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025)
 	q4::inwork 13408,10837 13436,10903
 ',
          'from' => 1760378957,
          'id' => 4468,
          'text' => 'Warschauer Platz: Baustelle, Sperrung der Fahrbahn Richtung Norden, voraussichtlich bis 17.10.2025',
          'type' => 'handicap',
-         'until' => 1760738400
+         'until' => 1760716800
        }
      
 );

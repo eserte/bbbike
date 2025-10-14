@@ -32112,7 +32112,7 @@ EOF
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -35180,15 +35180,19 @@ EOF
 	q4::inwork 13510,8138 13554,8101 13633,8036 13663,8011
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
-       until => 1638803714, # $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
-       text  => 'Brachvogelstr./Alexandrinenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021', # -> "Radfahrer frei"
+     { from  => $isodate2epoch->("2025-10-14 00:00:00"), # $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
+       until => $isodate2epoch->("2025-10-28 23:59:59"), # 1638803714, # $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
+#      text  => 'Brachvogelstr./Alexandrinenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021', # -> "Radfahrer frei"
+       text  => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 28.10.2025',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
+#: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00 (inaktiv)
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
-#: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00
-#: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen)
-	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
+# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen) ---	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
+#: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m356f5qmh22g
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiclu2wwbebvt4nr5kzd7jmiv7uapqel7bdnwucpnxltglngf3icw4@jpeg
+	q4::inwork 10069,10151 10083,10192 10122,10294
 EOF
      },
      { from  => 1615158000, # 2021-03-08 00:00
@@ -38043,7 +38047,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"; mittlerweile Halteverbotsschilder bis 30.09.2025, Bauzäune weggeschoben, so dass Radfahrer passieren können, Baustellenbereich neu asphaltiert
 #: priority: #B
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (DB-Mail, Halteverbotsschilder)
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40747,7 +40751,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -47459,13 +47463,14 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 EOF
      },
      { from  => undef, # 1740415750, # 2025-02-24 17:49
-       until => undef, # $isodate2epoch->("2025-03-19 18:00:00"), # 1743202800, # 2025-03-29 00:00
+       until => undef, # 1760457630, # undef, # $isodate2epoch->("2025-03-19 18:00:00"), # 1743202800, # 2025-03-29 00:00
 #      text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis 28.03.2025',
 #      text  => 'Hönower Weg: Abschnitt der Fahrbahn gesperrt, voraussichtlich bis 19.03.2025',
 #      text  => 'Friedenshorster Str.: Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Ontarioseestr.: Straße gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang August 2025',
        text  => 'Hönower Weg: Abschnitt der Straße gesperrt, voraussichtlich bis Anfang Oktober 2025',
+       text  => 'Friedenshorster Str./Splanemannstr.: Kreuzungsbereich wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: also_indoor: traffic (ex-H,G[falsch],re-B,re-T)
@@ -47473,18 +47478,23 @@ EOF
 # REMOVED --- #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert --- q2::inwork 18266,9853 18066,9770 17920,9698
 # REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
 # REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-T,ex-H)
-#: last_checked: 2025-10-05
-#: check_frequency: 7d
+# REMOVED --- #: also_indoor: traffic (ex-T,ex-H) --- #: last_checked: 2025-10-14 --- #: check_frequency: 7d
 # REMOVED (keine Verlängerung der Halteverbotsschilder) --- #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
 # REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
 # REMOVED (nach hinten gewandert) ---	2::inwork 17587,9655 17668,9632 17777,9649
 # REMOVED (nach hinten gewandert) --- #: note: Halteverbotsschilder bis 5.9.2025 ---	2::inwork 17777,9649 17920,9698
-#: note: Halteverbotsschilder 2.9.2025 bis 2.10.2025
-	2::inwork 17920,9698 18066,9770
+# REMOVED --- #: note: Halteverbotsschilder 2.9.2025 bis 2.10.2025 ---	2::inwork 17920,9698 18066,9770
 # (kann von bbbike nicht verarbeitet werden) --- Mellenseestr. [Wohngebiet]: Einbahnstraße temporär aufgehoben	1no 17838,9956 17868,9823 17920,9698
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: also_indoor: traffic (none)
+#: last_checked: 2025-10-14 vvv
+#: check_frequency: 14d vvv
+Friedenshorster Str./Splanemannstr.	q4::inwork 18280,9868 18305,9951 18312,9985
+Splanemannstr./Friedenshorster Str.	q4::inwork 18305,9951 18397,9928
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef,
@@ -48248,7 +48258,7 @@ EOF
 #: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025) (bis 17.10.2025)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
 #: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 6
+#: osm_watch: note 4734747 7
 #: also_indoor: traffic (H,G,T,A,W)
 #: note: linker Bürgersteig weiterhin nutzbar
 #: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
@@ -49455,7 +49465,7 @@ EOF
      },
      { from  => 1752789600, # 2025-07-18 00:00
        until => undef, # 1755273600, # 2025-08-15 18:00
-       text  => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 17.10.2025, evtl. wird verlängert',
+       text  => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 30.10.2025, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.484668,52.501156,28.04.2025,12:00 (bis 16.05.2025) (bis 13.06.2025) (inaktiv)
@@ -49463,13 +49473,13 @@ EOF
 #: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025) (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.48067,52.49917,17.07.2025,07:00 (bis 15.08.2025) (inaktiv)
 #: source_id: viz2021:13.484668,52.501156, (bis 08.08.2025) (inaktiv)
-#: source_id: viz2021:13.48067,52.49917, (bis 17.10.2025)
+#: source_id: viz2021:13.48067,52.49917, (bis 17.10.2025) (bis 30.10.2025)
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-14
 #: check_frequency: 30d
-#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
 	1::inwork 15970,10755 16038,10818
 EOF
@@ -50306,14 +50316,14 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1760466153, # undef, # XXX
        text  => 'Am Weingarten: Wasserrohrbruch, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: viz2021:13.45588,52.53572,
-#: also_indoor: traffic (T)
+#: source_id: viz2021:13.45588,52.53572, (mittlerweile nur noch Fahrbahnverengung)
+#: also_indoor: traffic (ex-T)
 #: note: Länge des abgesperrten Bereichs plus weiterer Gehwegabschnitt wegen Absperrgittern ca. 90m
-#: last_checked: 2025-10-06
+# REMOVED --- #: last_checked: 2025-10-06
 	q3::inwork 14007,14285 13867,14507
 EOF
      },
@@ -50416,11 +50426,12 @@ EOF
 EOF
      },
      { from  => 1760378957, # 2025-10-13 20:09
-       until => 1760738400, # 2025-10-18 00:00
+       until => $isodate2epoch->("2025-10-17 18:00:00"), # 1760738400, # 2025-10-18 00:00
        text  => 'Warschauer Platz: Baustelle, Sperrung der Fahrbahn Richtung Norden, voraussichtlich bis 17.10.2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
+#: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025)
 	q4::inwork 13408,10837 13436,10903
 EOF
      },
