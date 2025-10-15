@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2012,2013,2014,2015,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -153,6 +152,9 @@ my $max_count = 0;
 # (with -coordssession-data): build name from the most common prop values
 while(my($k,$v) = each %net) {
     my $count = $v;
+    if ($do_last_12_months) {
+	$v /= 12; # normalize to one month
+    }
     if (defined $logarithmic) {
 	$v = int(log($v)/log($logarithmic));
 	$v = 1 if ($v < 1);
@@ -271,6 +273,7 @@ streets on the map.
   -o outfile: bbd file for output
   -[no]scalewidths: scale widths (default: true)
   -[no]distinguish-dir: distinguish between both directions (default: false)
+  -last12months: create a plot of last 12 months (instead of 1 month)
 
 =head1 BBD OUTPUT
 
