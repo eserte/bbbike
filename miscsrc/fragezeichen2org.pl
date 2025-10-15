@@ -426,7 +426,7 @@ for my $file (@files) {
 	     }
 	     if (@urls) {
 		 for my $url (@urls) {
-		     if ($url =~ m{(https?://\S+).*\bWebcam\b}i) {
+		     if ($url =~ m{(https?://\S+)\s.*\bWebcam\b}i) {
 			 push @extra_url_defs, ['Webcam', $1];
 		     }
 		     for my $url_key (sort keys %with_urls) {
