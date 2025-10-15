@@ -198,7 +198,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2025-10-09
+#: last_checked: 2025-10-15
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -210,7 +210,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2025-09-20 vvv
+#: last_checked: 2025-10-15 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -3534,7 +3534,7 @@ Hamerlingweg: glattes Kopfsteinpflaster	Q1- 1873,1772 1790,1783 1588,1697
 Heinrich-Laehr-Park: Parkweg	Q1 1525,581 1372,1208 1328,1387 1249,1672
 (Mauerweg Schönow): sehr guter Asphalt	Q0 276,22 123,3
 #: historical_note: früher (bis Sommer 2025): Asphalt mit Unebenheiten, Q1
-(Mauerweg Schönow): Asphalt	Q0 123,3 118,407 75,715 51,752 31,830 16,950 25,1018 -4,1133
+(Mauerweg Schönow): Asphalt	Q0 123,3 110,120 117,200 118,407 103,582 75,715 51,752 31,830 16,950 25,1018 -4,1133
 Sachtlebenstr.: mäßige Verbundsteinpflasterradwege, Fahrbahn mit Kopfsteinpflaster	Q1 255,152 276,22
 Sachtlebenstr.: Fahrbahn Kopfsteinpflaster, Ausweichen auf fest-sandigen Gehweg möglich	Q2 276,22 283,-35 297,-100
 #: by: Sylke (oberwoehrmann), confirmed: vvv
@@ -3647,7 +3647,8 @@ Zufahrt zur Brücke: Kopfsteinpflaster	Q2 2195,42 2175,71 2126,53
 Brücke+Zufahrt: Holzbohlen	Q1 2126,53 2078,41 2079,-12
 Teltowkanalpromenade: teilweise nur Trampelpfad, Wurzeln, sandige Stellen	Q3 2079,-12 1924,-188 1593,-317 1471,-311
 #: note: ^^^
-(Am Teltowkanal): welliger Asphalt	Q0- 1453,-306 1357,-306 1159,-249 949,-103 822,-74 639,-82 507,-100
+#: historical_note: früher Q0-, vielleicht schlechter geworden?
+(Am Teltowkanal): welliger Asphalt	Q1- 1453,-306 1357,-306 1159,-249 949,-103 822,-74 639,-82 507,-100
 (Am Teltowkanal): sehr guter Asphalt	Q0 507,-100 353,-127 297,-100
 #: note: von der Straßenbahn aus gesehen:
 Schönfließer Str.: Asphalt	Q0 10579,16036 10591,16159
@@ -5356,7 +5357,7 @@ Willstätterstr.: Asphalt	Q0 14187,6555 14306,6651
 (südliche Landebahn - nördlicher Rundkurs): Asphalt	Q0 11555,7316 11589,7353
 (Nördliche Landebahn): Beton	Q0 9362,7616 9522,7624 9653,7635
 (Nördliche Landebahn): Asphalt	Q0 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781
-(Herrfurthstr. - Rundkurs): unbefestigt	Q2+ 11439,7894 11355,7871
+(Herrfurthstr. - Rundkurs): unbefestigt	Q2+ 11421,7888 11355,7871
 (zur nördlichen Landebahn): unbefestigt	Q2+ 11430,7781 11460,7802
 (zur nördlichen Landebahn): Asphalt	Q0 11470,7744 11430,7781
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.): Asphalt	Q0 11460,7802 11439,7894
@@ -8455,12 +8456,11 @@ Hirtschulzstr.: schlechtes Kopfsteinpflaster	Q3 24316,12566 24195,12558 24077,12
 #: by: https://www.bahninfo-forum.de/read.php?9,728116
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf (Planfeststellung)
 #: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/A52708EE-CE1B-417C-AD65-05C9975C940D/UL03_Lageplan_Blatt1_gesiegelt.pdf
-#: by: https://www.tagesspiegel.de/berlin/pendler-sollen-sicherer-zur-s-bahn-kommen-umbau-von-gefahrlichem-tram-anschluss-im-berliner-sudosten-dauert-noch-jahre-11218738.html (Baubeginn 4. Quartal 2026)
-#: by[nocache]: https://archive.ph/Itttn
+#: by: https://www.tagesspiegel.de/berlin/pendler-sollen-sicherer-zur-s-bahn-kommen-umbau-von-gefahrlichem-tram-anschluss-im-berliner-sudosten-dauert-noch-jahre-11218738.html (Baubeginn 4. Quartal 2026, Bauzeit 6 Monate)
 #: XXX Straßenbahnhaltestelle soll auf die Westseite verlegt werden; gemeinsamer Rad- und Gehweg bis zur Schöneicher Str. (Kaphaltestelle?); Kopfsteinpflaster wird durch Asphalt ersetzt; Fußgängerampel vor der Schöneicher Str.
-#: last_checked: 2025-06-18
+#: last_checked: 2025-07-08 (mapillary)
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2028-01-01
+#: next_check: 2028-01-01 (Tsp)
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
 Biesterfelder Str.: Asphalt	Q0 16942,16174 17010,16349 17102,16464
 Klettwitzer Str.: Asphalt	Q0 18875,16872 18782,16597
@@ -8980,7 +8980,7 @@ Leo-Baeck-Str.: Beton	Q0 1080,1637 941,1603 794,1572 710,1558 644,1539 530,1511 
 Leo-Baeck-Str.: Asphalt	Q0 515,1507 407,1481 374,1472 339,1484 145,1537
 Bismarckstr. (Zehlendorf): Kleinsteinpflaster	Q1- 146,2073 177,2031
 Bismarckstr. (Zehlendorf): Asphalt	Q0 177,2031 243,1820
-Rotherstieg: Kleinsteinpflaster	Q1- 244,2165 163,2091
+Rotherstieg: Kleinsteinpflaster	Q1- 244,2165 181,2112 160,2105
 Grenzpfad: Beton	Q0 446,2297 271,2129
 Ripleystr.: Asphalt	Q0 1569,4600 1482,4628
 Lützelsteiner Weg: Asphalt	Q0 1500,4356 1511,4422 1569,4600 1603,4637 1667,4664 1690,4708
@@ -9579,8 +9579,8 @@ Werderstr. (Zehlendorf): Asphalt	Q0 -434,3236 -309,3016
 (Königsweg - Berlepschstr.): Asphalt mit Wurzelschäden	Q1- -74,2529 -22,2484 57,2404 115,2340 120,2334
 (Königsweg - Berlepschstr.): Verbundsteinpflaster	Q1 120,2334 169,2264
 Am Weißen Steg: Kopfsteinpflaster	Q2 290,2328 329,2246
-Radtkestr.: Kopfsteinpflaster	Q2 18,1928 -38,2152
-Radtkestr.: Kleinsteinpflaster	Q1- 29,1877 18,1928
+Radtkestr.: Kopfsteinpflaster	Q2 22,1909 -38,2152
+Radtkestr.: Kleinsteinpflaster	Q1- 29,1877 22,1909
 Seibtweg: Asphalt	Q0 -185,1815 -168,1821 -117,1836 -73,1847 -44,1856 29,1877
 Seibtweg - Idsteiner: Verbundsteinpflaster	Q1 -185,1815 -227,1805
 Uhldinger Str.: Beton	Q0 -351,1829 -468,1919
@@ -14938,8 +14938,10 @@ Meller Bogen: guter Beton	Q0 4461,18475 4670,18434 4658,18375 4641,18348 4609,18
 #: confirmed_by: srt
 Regenwalder Weg: guter Beton	Q0 -969,24358 -923,24323 -833,24244 -758,24172 -684,24095 -514,23905
 Schneppenhorstweg: Asphalt	Q0 2009,14567 2022,14454 2000,14449
+#: corrected_by: srt (grobes Kopfsteinpflaster, Q3 -> ...)
+Albertinenstr. (Zehlendorf): Kopfsteinpflaster	Q2 29,1877 78,1699
 #: confirmed_by: srt
-Albertinenstr. (Zehlendorf): grobes Kopfsteinpflaster	Q3 29,1877 107,1592
+Albertinenstr. (Zehlendorf): grobes Kopfsteinpflaster	Q3 78,1699 107,1592
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Albertinenstr. (Zehlendorf): Beton	Q0 107,1592 120,1543
 Waldläuferweg: schlechter Asphalt	Q2 6006,22867 6118,22947
@@ -17086,8 +17088,10 @@ Viktoriapark/Zimmermannstr. (Steglitz): kleinteiliges Pflaster	Q1 4954,5888 4981
 Herrfurthstr. (Steglitz): Kopfsteinpflaster	Q2+ 4558,5863 4724,5782
 #: confirmed_by: srt
 Wulffstr.: Beton	Q0 4477,5250 4599,5341 4640,5411
-#: corrected_by: srt (was "Kopfsteinpflaster", Q2)
-Schmidt-Ott-Str.: Asphalt mit einigen leichten Schäden	Q0- 4408,5622 4558,5525
+#: corrected_by: srt (was "Kopfsteinpflaster", Q2) vvv
+Schmidt-Ott-Str.: Asphalt mit einigen leichten Schäden	Q0-; 4408,5622 4558,5525
+Schmidt-Ott-Str.: Asphalt mit einigen Schäden	Q1+; 4558,5525 4408,5622
+#: corrected_by ^^^
 Arno-Holz-Str.: Asphalt	Q1 4115,5804 3978,5600
 Zeunepromenade: neues Kopfsteinpflaster	Q1 4437,5335 4402,5322 4340,5317 4259,5390
 Zeunepromenade: neues Kopfsteinpflaster	Q1 4103,5468 4077,5450 4061,5418 4077,5377 4154,5392 4185,5349
@@ -17868,7 +17872,7 @@ Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2750,7444 2719,7415 2637
 # 
 #: by: Jens Wesendrup:
 #: confirmed_by: srt
-Hackerstr.: guter Asphalt	Q0 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
+Hackerstr.: guter Asphalt	Q0 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 # 
 #: by: Samuel Koenig: vvv
 #: corrected_by: srt (diesen Abschnitt korrigiert)
@@ -29455,15 +29459,15 @@ Birkenstr. (Köpenick): Kopfsteinpflaster	Q2 23947,4673 23869,4733
 # 
 #: by: ruth heinrich:
 #: note: "kurvenreich", q0 ignoriert
-#: corrected_by: srt (mäßiges Kopfsteinpflaster -> Kleinsteinpflaster)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1492778.php (Sanierung bis 24.01.2025)
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/wegen-sanierung-gesperrt_a427384
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1516193.php (Verlängerung bis 30.04.2025)
-#: osm_watch: way id="4706337" version="16"
-#: note: zu wenig BBBike-Traffic für einen temp-blockings-Eintrag (<1/Monat)
-#: XXX Bleibt es nach der Sanierung beim Kleinsteinpflaster?
-#: next_check: 2025-04-30
-Dallwitzstr.: Kleinsteinpflaster	Q1- 96,2225 163,2091 146,2073 93,2014 80,1998 18,1928
+# REMOVED --- #: osm_watch: way id="4706337" version="16" --- #: note: zu wenig BBBike-Traffic für einen temp-blockings-Eintrag (<1/Monat)--- #: XXX Bleibt es nach der Sanierung beim Kleinsteinpflaster? --- #: next_check: 2025-04-30
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> Kleinsteinpflaster)
+#: historical_note: bis Ende April 2025 altes Kleinsteinpflaster, seitdem neues Kleinsteinpflaster
+Dallwitzstr.: neues Kleinsteinpflaster	Q1- 96,2225 160,2105 159,2088
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> Kleinsteinpflaster)
+Dallwitzstr.: Kleinsteinpflaster	Q1- 159,2088 146,2073 93,2014 80,1998 33,1938 22,1909
 #
 #: by: oliver (icebear...)
 Haackzeile: guter Beton	Q0- -5875,15994 -5710,15950
@@ -34407,5 +34411,12 @@ Kreuzungsbereich asphaltiert	Q0 8710,19550
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9056,1288
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 10015,2651
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 10145,2622
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 29,1877
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 22,1909
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 80,1998
+Einmündungsbereich asphaltiert	Q0 96,2225
+Einmündungsbereich asphaltiert	Q0 23,2185
+Einmündungsbereich asphaltiert	Q0 -38,2152
+Einmündungsbereich asphaltiert	Q0 -134,2098
 #: ignore ^^^
 #: section ^^^

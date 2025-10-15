@@ -620,7 +620,7 @@ Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Sind das eigenständige Leitungsarbeiten, oder sind sie mit den Bauarbeiten an der Bäkebrücke verknüpft?
 #: source_id: viz2021:13.310358,52.430965,02.09.2024,07:00 (Leitungsarbeiten, bis 11.11.2025) (inaktiv)
-#: last_checked: 2025-08-30 vvv
+#: last_checked: 2025-10-15 vvv
 #: next_check: 2025-11-11 vvv
 #: valid: -20251111 vvv
 Königsberger Str.: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4392,2628 4348,2627 4317,2638
@@ -678,5 +678,17 @@ Landsberger Allee -> Franz-Jacob-Str.: Umweg zur Ampel	DH:len=60 14871,14087 147
 #: next_check: 2025-11-13
 #: valid: -20251113
 Alexanderstr.: Radfahrer Richtung Osten müssen auf die gegenüberliegende Straßenseite wechseln	DH:len=80 11033,13086 11139,13008 11226,12945
+# 
+#: next_check_id: HINDENBURGDAMM-2022
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzkxnth4rk2u (bis Ende 2026)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie2ilwinzwlsxznlomklgduivprbf4alncbqpm2mpz6gqbnknqknm@jpeg
+#: source_id: viz2021:13.3134,52.43536, (bis 26.11.2026)
+#: XXX Fußgängerampel an der östlichen Fahrbahn
+#: last_checked: 2025-10-15 vvv
+#: next_check: 2026-11-26 (VIZ-Verkehrsmeldung) vvv
+Stockweg - Krahmerstr.: Verbindung gesperrt, Umweg über 100m südlich gelegene Überquerungsmöglichkeit	DH:len=200:tl 4523,3482 4566,3461
+Krahmerstr. - Stockweg: Verbindung gesperrt, Umweg über 100m südlich gelegene Überquerungsmöglichkeit	DH:len=200:tl:h=q3,200 4566,3461 4523,3482
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: temporary ^^^

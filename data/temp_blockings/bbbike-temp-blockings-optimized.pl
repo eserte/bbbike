@@ -2720,7 +2720,7 @@ Ein/Ausgang Tempelhofer Damm mit Drehtor	1::night 9242,7286 9302,7294
 (südliche Landebahn - nördlicher Rundkurs)	2::night 11555,7316 11589,7353
 (Nördliche Landebahn)	2::night 9362,7616 9522,7624 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781 11460,7802
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::night 11460,7802 11439,7894
-(Herrfurthstr. - Rundkurs)	2::night 11439,7894 11355,7871
+(Herrfurthstr. - Rundkurs)	2::night 11421,7888 11355,7871
 Ein/Ausgang Oderstraße/Herrfurthstraße mit Drehtor	1::night 11472,7899 11458,7897
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::night 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung - Rundkurs)	2::night 11000,8067 10902,8012
@@ -3349,7 +3349,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -5114,15 +5114,16 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen) ---	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
 #: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025)
+#: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m356f5qmh22g
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiclu2wwbebvt4nr5kzd7jmiv7uapqel7bdnwucpnxltglngf3icw4@jpeg
 	q4::inwork 10069,10151 10083,10192 10122,10294
 ',
          'from' => 1760392800,
          'id' => 3458,
-         'text' => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 28.10.2025',
+         'text' => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., Sperrung der Fahrbahn, bis Ende Oktober 2025',
          'type' => 'handicap',
-         'until' => 1761692399
+         'until' => 1761951599
        },
        undef,
        undef,
@@ -6001,7 +6002,7 @@ Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
-#: last_checked: 2025-08-30 vvv
+#: last_checked: 2025-10-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-31 vvv
 ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
@@ -7262,7 +7263,7 @@ Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 97
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-08-30 vvv
+#: last_checked: 2025-10-15 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="26158804" version="26"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -7317,7 +7318,7 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2025-08-30 vvv
+#: last_checked: 2025-10-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (stadtrand-nachrichten) vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
@@ -7480,9 +7481,9 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="27260309" version="20"
 #: osm_watch: way id="372791173" version="11"
 #: osm_watch: way id="27260312" version="25"
-#: osm_watch: note 4673198 3
+#: osm_watch: note 4673198 4
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
-#: last_checked: 2025-07-19
+#: last_checked: 2025-10-15
 #: check_frequency: 60d
 #: next_check: 2025-12-31
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
@@ -7563,7 +7564,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 # REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
 # REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
 # REMOVED --- #: osm_watch: note 4425036 1
-# REMOVED --- Herrfurthstr.	2::inwork 11472,7899 11458,7897 11439,7894 11355,7871
+# REMOVED --- Herrfurthstr.	2::inwork 11472,7899 11458,7897 11421,7888 11355,7871
 # REMOVED --- Eingangsbereich Herrfurthstr.	2::inwork 11418,8015 11439,7894 11460,7802
 # REMOVED (hier nicht mehr) --- Eingangsbereich Herrfurthstr., Restarbeiten	2::inwork 11458,7897 11490,7735
 # REMOVED (hier nicht mehr) --- Weg parallel zur Oderstr.	2::inwork 11547,7432 11527,7530 11509,7636
@@ -7919,7 +7920,17 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 256700007 (bis 23.01.2025) (inaktiv)
+#: source_id: 256700564 (bis 22.10.2025)
+	2::inwork 62507,-4444 62486,-4480 62471,-4512
+',
+         'from' => 1760824800,
+         'id' => 4240,
+         'text' => 'Berkenbrück: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 20.10.2025 18:00 Uhr bis 22.10.2025 12:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1761127200
+       },
        undef,
        {
          'data' => '#: source_id: viz2021:13.298658,52.457781,22.01.2025,07:00 (bis 01.10.2025 + weitere Bauarbeiten bis 09/2025) (inaktiv)
@@ -7940,14 +7951,15 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025) (inaktiv)
 #: source_id: viz2021:13.28749,52.50307,13.06.2025,07:00 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.28749,52.50307,26.06.2025,17:24 (bis 08.07.2025) (inaktiv)
-#: source_id: viz2021:13.28749,52.50307,14.07.2025,07:00 (bis 15.10.2025)
+#: source_id: viz2021:13.28749,52.50307,14.07.2025,07:00 (bis 15.10.2025) (inaktiv)
+#: source_id: viz2021:13.289985,52.50298,15.10.2025,05:00 (bis 27.11.2025)
 	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
 ',
          'from' => 1749765600,
          'id' => 4243,
-         'text' => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 15.10.2025',
+         'text' => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 27.11.2025',
          'type' => 'handicap',
-         'until' => 1760544000
+         'until' => 1764262800
        },
        undef,
        {
@@ -8262,7 +8274,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-10-10
+#: last_checked: 2025-10-15
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -8466,32 +8478,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
          'type' => 'gesperrt',
          'until' => 1761926400
        },
-       {
-         'data' => '#: source_id: viz2021:13.427246,52.523159,30.04.2025,04:30 (bis 04.07.2025) (inaktiv)
-#: source_id: adac:1977697072 (Erwähnung des Gehwegs, bis 11.07.2025) (bis 29.08.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.4296,52.52327, (bis 29.08.2025) (bis 06.10.2025) (bis 17.10.2025)
-#: by: https://www.rbb24.de/panorama/beitrag/2025/04/berlin-rohrbruch-trinkwasser-haushalte-ueberschwemmung-wasser.html
-#: by: https://www.tagesspiegel.de/berlin/uber-100-jahre-altes-rohr-im-berliner-zentrum-gebrochen-strasse-nach-uberschwemmung-fur-mehrere-monate-gesperrt-13615399.html
-#: osm_watch: note 4734747 7
-#: also_indoor: traffic (H,G,T,A,W)
-#: note: linker Bürgersteig weiterhin nutzbar
-#: note: mittleweile (vielleicht nur außerhalb der Arbeitszeiten?) gehen einige Fußgänger und Radfahrer einfach durch die Absperrungen und Baustelle
-#: note: bei rbb ist die Verkehrsmeldung nun ohne Enddatum, nun bis 26.08.2025 (drei Tage kürzer als bei VIZ)
-#: last_checked: 2025-10-12 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung) vvv
-Platz der Vereinten Nationen: Komplettsperrung	q4::inwork; 12126,13088 11984,13081 11958,13079 11913,13077
-Mollstr.: Fahrbahn gesperrt	q3::inwork; 11913,13077 11841,13087
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4320,
-         'text' => 'Platz der Vereinten Nationen/Mollstr.: Wasserrohrbruch, Fahrbahn und Bürgersteig Richtung Westen bis Büschingstr. gesperrt, voraussichtlich bis 17.10.2025, evtl. wird verlängert',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.457594,52.43103,05.05.2025,07:00 (bis 30.10.2025) (inaktiv)
 #: source_id: viz2021:13.45996,52.43191,05.05.2025,07:00 (bis 30.10.2025)
@@ -8521,11 +8508,12 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        undef,
        {
          'data' => '#: source_id: viz2021:13.328715,52.465213,09.05.2025,09:00 (bis 17.10.2025) (inaktiv)
+#: source_id: viz2021:13.32856,52.46482,09.05.2025,09:00 (bis 17.10.2025)
 	q4::inwork 5535,6521 5424,6584
 ',
          'from' => 1746687600,
          'id' => 4327,
-         'text' => 'Peschkestr.: Anbindung an die Rheinstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 09.05.2025 09:00 bis 17.10.2025 17:00',
+         'text' => 'Peschkestr.: Anbindung an die Rheinstr. gesperrt, vom 09.05.2025 09:00 bis 17.10.2025 17:00',
          'type' => 'handicap',
          'until' => 1760713200
        },
@@ -8540,12 +8528,13 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2
 #: also_indoor: traffic (G,T[zu wenig])
-#: last_checked: 2025-08-30 vvv
+#: last_checked: 2025-10-15 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2025-10-31 (Baustellenschild) vvv
+#: next_check: 2025-11-04 (Halteverbotsschilder) vvv
 # REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
 #: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3
 Borstellstr.	q4::inwork 6532,4422 6491,4391
+#: note: hier Halteverbotsschilder bis 4.11.2025
 Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: next_check ^^^
 #: check_frequency ^^^
@@ -8553,7 +8542,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 ',
          'from' => 1747223796,
          'id' => 4336,
-         'text' => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vermutlich bis Oktober 2025',
+         'text' => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vermutlich bis Anfang November 2025',
          'type' => 'handicap',
          'until' => 1761951600
        },
@@ -8700,7 +8689,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-10-10 (traffic) vvv
+#: last_checked: 2025-10-14 (traffic) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
@@ -8760,10 +8749,14 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        undef,
        {
          'data' => '#: also_indoor: traffic (G)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-10-12 (traffic)
-#: check_frequency: 10d (traffic)
-	q4::inwork 4500,6612 4630,6534 4846,6417
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2025-10-15 vvv
+#: check_frequency: 10d (traffic) vvv
+	q4::inwork 4500,6612 4630,6534
+	q3::inwork 4630,6534 4846,6417
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 4370,
@@ -8941,7 +8934,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-10-12
+#: last_checked: 2025-10-15
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 ',
@@ -9029,14 +9022,16 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
        {
          'data' => '#: source_id: adac:356158344 (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.254503,52.506746,21.07.2025,07:00 (bis 17.10.2025)
-	q4::inwork 368,11051 251,11039 37,11014
-Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
+#: source_id: viz2021:13.25418,52.50807,15.10.2025,06:00 (bis 19.12.2025)
+# REMOVED ---	q4::inwork 368,11051 251,11039 37,11014
+# REMOVED --- Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
+Insterburgallee	q4::inwork 229,11213 251,11039
 ',
          'from' => 1753119545,
          'id' => 4401,
-         'text' => 'Lyckallee: zwischen Teufelsseestr. und Ortelsburger Allee igesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17.10.2025',
+         'text' => 'Insterburgallee: zwischen Lyckallee und Heerstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 19.12.2025',
          'type' => 'handicap',
-         'until' => 1760713200
+         'until' => 1766163600
        },
        undef,
        {
@@ -9210,7 +9205,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-11
+#: last_checked: 2025-10-15
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9255,14 +9250,14 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiasgxyh4yi2yyv2ipifgm5ybdhxw3cbimwdzuqkhqo6rzca5axq3a@jpeg
 #: source_id: viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026)
-Schillerstr.	q4::inwork 4429,2396 4568,2424
+Schillerstr.	q3::inwork 4429,2396 4568,2424
 #: note: nicht komplett gesperrt
 Goethestr.	q3::inwork 4568,2424 4526,2648
-Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 4454,2221
+# REMOVED (stimmt nicht) --- Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 4454,2221
 ',
          'from' => 1756417862,
          'id' => 4430,
-         'text' => 'Schillerstr., Goethestr. und Giesensdorfer Str.: Bauarbeiten, Sperrungen, bis Ende Januar 2026',
+         'text' => 'Schillerstr. und Goethestr.: Bauarbeiten, Sperrungen, bis Ende Januar 2026',
          'type' => 'handicap',
          'until' => 1769813999
        },
@@ -9399,7 +9394,7 @@ Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
          'data' => '#: source_id: viz2021:13.28295,52.44204, (bis 27.11.2025)
 #: also_indoor: traffic (T)
 #: next_check_id: THIELALLEE-2025
-#: last_checked: 2025-09-21 (mapillary)
+#: last_checked: 2025-10-15
 #: check_frequency: 30d (traffic)
 	q4::inwork; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
 ',
@@ -9488,7 +9483,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzfkwh3xw224
 #: source_id: viz2021:13.35762,52.48668,22.09.2025,07:00 (bis 01.12.2025)
-#: last_checked: 2025-10-12
+#: last_checked: 2025-10-15
 #: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
 	q4::inwork 7389,8837 7360,8918
 ',
@@ -9680,6 +9675,16 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'text' => 'Warschauer Platz: Baustelle, Sperrung der Fahrbahn Richtung Norden, voraussichtlich bis 17.10.2025',
          'type' => 'handicap',
          'until' => 1760716800
+       },
+       {
+         'data' => '#: source_id: LMS-BR:386774/72 viz2021:13.2335,52.50543,15.10.2025,06:00 (bis 25.02.2026)
+	q4::inwork -1167,10873 -1318,10854 -1501,10833
+',
+         'from' => 1760414400,
+         'id' => 4469,
+         'text' => 'Kranzallee: Bauarbeiten zwischen Kiplingweg und Am Postfenn, Sperrung, evtl. sind auch Radfahrer betroffen, vom 15.10.2025 06:00 bis 25.02.2026 18:00',
+         'type' => 'handicap',
+         'until' => 1772038800
        }
      
 );

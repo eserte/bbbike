@@ -1639,7 +1639,7 @@ Fahrbahn und Radweg asphaltiert	Q0 -20710,-7872 -20725,-8059 -20936,-8343 -21251
 	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12713,-2279 -12708,-2257 -12697,-2235 -12655,-2202 -12620,-2174 -12534,-2125 -12431,-2096
 	Q0 -17643,-7028 -17660,-7125 -17755,-7282 -17911,-7436 -18009,-7492
 	Q0 -5662,-3583 -5463,-3467 -5327,-3317 -5156,-3192 -4963,-3121 -4885,-3087 -4456,-2968 -3965,-2749 -3933,-2734 -3908,-2723 -3885,-2712 -3650,-2609 -3484,-2531 -3252,-2368 -3105,-2267 -3020,-2208 -2989,-2177 -2946,-2130 -2842,-1976 -2789,-1919 -2662,-1841 -2498,-1741 -2267,-1612 -2184,-1575 -2115,-1551 -2056,-1544 -1973,-1560 -1781,-1676 -1664,-1720 -1457,-1722 -1291,-1770 -1196,-1771 -866,-1615 -713,-1542 -671,-1507 -624,-1468 -556,-1402 -248,-1160 -90,-1056 -68,-1041 -36,-1017 154,-876 212,-834 351,-738 465,-662 590,-618 685,-591 731,-585 757,-587 791,-598 948,-684 1067,-699 1212,-706 1235,-714 1329,-753 1390,-759 1453,-746
-	Q0 3465,563 3412,534 3255,428 3177,374 2958,229 2754,101 2556,-28 2457,-100 2338,-210 2215,-328 2120,-371 1974,-440 1744,-543 1672,-577 1621,-610 1492,-697 1460,-714 1453,-746
+	Q0 3465,563 3412,534 3255,428 3177,374 2958,229 2754,101 2556,-28 2457,-100 2333,-204 2208,-315 2114,-359 1932,-437 1744,-543 1672,-577 1621,-610 1492,-697 1460,-714 1453,-746
 	Q0 -5201,-35443 -5621,-35171 -5722,-34792
 	Q0 -5722,-34792 -6145,-34688 -6467,-34622 -7769,-33957 -8779,-33414
 	Q0 -8779,-33414 -8622,-32920 -9156,-32411 -9943,-31926 -10517,-31803 -10943,-31376 -11218,-31357
@@ -1883,7 +1883,7 @@ Eggersdorf - Altlandsberg: teilweise etwas unebener Asphalt	Q0 38171,15125 36539
 vor Erkner: Asphalt	Q0 34438,1662 34374,1414 34232,888
 Buchhorster Str.: Kopfsteinpflaster	Q2 34374,1414 34310,1418
 Osdorfer Str. (Teltow): glatter unbefestigter Feldweg	Q1- 2477,-548 2250,-570 2078,-640 1861,-754 1852,-770
-Breitscheidstr. (Teltow): mäßiger Asphalt	Q1 2338,-210 2532,-457 2557,-510
+Breitscheidstr. (Teltow): mäßiger Asphalt	Q1 2333,-204 2532,-457 2557,-510
 Bruno-H.-Bürgel-Str. (Teltow): Kopfsteinpflaster	Q2- 2607,-105 2657,-72 2705,-40 2754,-8 2805,24
 Bruno-H.-Bürgel-Str. (Teltow): Beton	Q0- 2805,24 2856,59 2904,92 2953,124 3004,159
 Bruno-H.-Bürgel-Str. (Teltow): Asphalt	Q0 3004,159 3059,195 3110,229 3167,264 3225,304 3304,356
@@ -2621,7 +2621,7 @@ Postenweg Parforceheide: feiner Schotter	Q2 -7800,-1956 -7821,-1890
 Mauerweg: Asphalt	Q0- 3232,803 3045,707
 #: confirmed_by: srt
 #: historical_note: früher: sehr guter Asphalt, Q0
-Mauerweg: guter Asphalt, einige Wurzelhebungen	Q0- 3045,707 2795,471 2275,-13 2158,-119 1993,-275 1929,-308 1659,-401 1510,-423 1473,-420
+Mauerweg: guter Asphalt, einige Wurzelhebungen	Q0- 3045,707 2795,471 2275,-13 2158,-119 1993,-275 1925,-309 1667,-390 1507,-410 1472,-409
 #: by: ^^^
 Berliner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 1460,-714 1388,-685 1273,-626
 Breite Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 1279,-608 1249,-592 1121,-557 1101,-553
@@ -5394,7 +5394,7 @@ Lindenbahn (Kleinmachnow): Asphalt	Q0 -4709,-731 -4888,-344
 Bäkehang (Kleinmachnow): Asphalt	Q0 -4738,-748 -4653,-909
 Förster-Funke-Allee (Kleinmachnow): Fahrbahn asphaltiert	Q0 -2218,-256 -2141,-307 -2046,-345 -1945,-354 -1921,-354 -1805,-339 -1724,-329 -1582,-312 -1494,-303 -1376,-296 -1268,-294 -1179,-298 -981,-290 -958,-309
 (Augustinum-Gelände): Verbundsteinpflaster	Q1 -62,-37 13,-39 15,-27
-(Augustinum-Gelände): Asphalt	Q0 15,-27 82,6 123,3
+(Augustinum-Gelände): Asphalt	Q0 15,-27 82,6 113,7 123,3
 Tannenweg: Asphalt	Q0- -3020,-2208 -3130,-2017 -3212,-1857 -3257,-1772 -3264,-1671
 #: by: osm (nördlicher Abschnitt)
 Kastanienweg: Kopfsteinpflaster	Q2 -2946,-2130 -2981,-2065 -2989,-1916 -3000,-1811
@@ -5534,6 +5534,8 @@ Bodelschwinghstr.: Kopfsteinpflaster	Q2- 11302,-4489 11635,-4514 11653,-4529
 Bodelschwinghstr.: welliger Asphalt	Q1 11653,-4529 11712,-4589
 Grenzweg: welliger Asphalt	Q1 11712,-4589 11769,-4554 11854,-4574 12184,-4605 12233,-4608
 Anselm-Feuerbach-Str.: Asphalt	Q0 11854,-4574 12040,-4778
+#: by: mapillary
+Anselm-Feuerbach-Str. (Mahlow): Asphalt mit einigen leichten Schäden	Q0- 12040,-4778 12212,-4968
 B96 (Radweg) - Grenzweg (Mahlow): Asphalt	Q0 12216,-4536 12180,-4554 12184,-4605
 Radweg an der B96: Asphalt	Q0 12184,-4462 12216,-4536 12318,-4781 12340,-4833
 Radweg an der B96a: Asphalt	Q0 13288,-4644 13302,-4639 13318,-4651 13513,-4708
@@ -6110,7 +6112,7 @@ Neue Plantage: Kleinsteinpflaster	Q2+ -13092,-1344 -13116,-1525
 (Uferweg am Tiefen See - Humboldtbrücke): Asphalt	Q0 -11823,-903 -11881,-870
 Heinrich-Mann-Allee [Nebenfahrbahn]: Asphalt	Q0 -10748,-4065 -10795,-3996 -10899,-3866 -10963,-3762 -11036,-3654 -11097,-3570 -11162,-3502 -11322,-3332 -11672,-2958
 (Heinrich-Mann-Allee [Nebenfahrbahn] - An der Alten Zauche): Asphalt	Q0 -10795,-3996 -10752,-3979
-(am Teltowkanal): alter Asphalt	Q1- 1473,-420 1445,-414 1219,-376 1144,-351 1134,-370
+(am Teltowkanal): alter Asphalt	Q1- 1472,-409 1445,-406 1219,-376 1144,-351 1134,-370
 Schwarzer Weg (Kleinmachnow): Kleinsteinpflaster	Q2+ -866,-1615 -879,-1588 -1036,-1315
 Waldstr. (Schönefeld): Verbundsteinpflaster	Q1 19054,-903 19131,-1039 19190,-1158
 Jägerstr. (Schönefeld): Verbundsteinpflaster	Q1 18819,-1163 19031,-1042
@@ -7159,6 +7161,7 @@ Stegemannshof: Beton	Q0- 43733,104260 43780,104190 43760,104055
 Neue Mühle: Asphalt	Q0 68050,80398 68047,80375 68066,80280 68060,80236 67997,80164
 Fichtestr. (Potsdam): Kopfsteinpflaster	Q2 -14782,-1963 -14765,-2081
 Maybachstr. (Potsdam): Kopfsteinpflaster	Q2 -14903,-1970 -14782,-1963 -14707,-1953
+(Lichterfelder Allee - Mauerweg): Asphalt mit Unebenheiten und Schäden	Q1- 1932,-437 1938,-368 1925,-309
 ######################### User Contributions #################################
 #: by: osm vvv
 Kaltenhausen (Lehnin): Asphalt	Q0 -34556,-11168 -34623,-10955 -34593,-10886 -34512,-10818 -34512,-10534 -34492,-10500
@@ -9498,6 +9501,7 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+Radweg Saarmund: Asphalt	Q0 -8554,-9807 -8513,-9792 -8424,-9812 -8368,-9843 -8356,-9837
 Am Mönchberg (Birkenwerder): Verbundsteinpflaster	Q1 1887,31658 1837,31725
 Scharfschwerdtstr. (Hohen Neuendorf): Asphalt	Q0 1364,27953 1426,28065 1456,28125
 Scharfschwerdtstr. (Hohen Neuendorf): Kleinsteinpflaster	Q2 1456,28125 1453,28175 1448,28276 1432,28356

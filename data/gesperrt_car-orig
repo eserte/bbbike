@@ -115,7 +115,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-10-13
+#: last_checked: 2025-10-15
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -2374,4 +2374,11 @@ Pfalzburger Str.	1 4858,9594 4875,9891
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-08-04 (ungefährer Start der Baumaßnahmen)
 Schönleinstr.: Durchfahrt verboten, Radfahrer frei	2 11541,9576 11594,9604
+# 
+#: note: Freigabe für Radfahrer
+Hannemannstr. (Teltow)	1 2902,329 2958,229
+Hauffstr. (Teltow)	1 2754,101 2696,189
+Fritz-Reuter-Str. (Teltow)	1 2545,92 2556,-28
+#: by: osm (Freigabe für Radfahrer, teilweise)
+Max-Sabersky-Allee (Teltow)	1 2696,189 2902,329
 # 

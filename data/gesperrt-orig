@@ -1220,7 +1220,7 @@ Hardangerstr.	1 11725,16630 11720,16752
 Caseler Str.	1s:q3 14732,16770 14700,16790 14608,16772
 Ottmachauer Steig	1 -519,4737 -496,4718 -435,4687 -369,4631 -354,4603 -319,4550 -283,4495 -274,4474 -277,4442
 Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441,4354
-Radtkestr.	1 18,1928 -38,2152
+Radtkestr.	1 22,1909 -38,2152
 Thürstr.	1 23,2185 93,2014
 Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11655,18018
 Karlstadter Str.	1 11621,18011 11586,18126
@@ -1889,6 +1889,8 @@ Drewitzer Str.	1:igndisp -10811,-3857 -10793,-3868
 ###################################################################### 
 #: section: Sperrungen anderswo in Brandenburg vvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: note: straßenbegleitender Radweg ist benutzungspflichtig, biegt aber von der L77 ab, ohne dass man auf die Landstraße gelangen kann; in der Gegenrichtung wohl keine Radfahrverbote
+L77 Saarmund	1::igndisp -8554,-9807 -8514,-9709 -8507,-9605
 Bahnhofsplatz (Zossen)	1 13523,-20785 13491,-20796 13467,-20785 13460,-20681 13507,-20664
 Marienwerder, Kirche	1 22907,48770 22935,48771 22944,48746 22933,48718 22903,48724 22894,48744 22907,48770
 Heinrich-Dorrenbach-Str.	1s:q4 39533,14774 39578,14967
@@ -1976,11 +1978,8 @@ Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
 B166	1 63418,78608 63579,78548 63634,78433
 B166	1 63559,78397 63464,78555
 Bäckerstr. (Teltow)	1 1101,-553 1067,-699
+Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2696,189
 Wachtelweg (Ahrensfelde)	1 22212,19404 22239,19349
-Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2696,189 2902,329
-Hauffstr. (Teltow)	1 2754,101 2696,189
-Fritz-Reuter-Str. (Teltow)	1 2545,92 2556,-28
-Hannemannstr. (Teltow)	1 2902,329 2958,229
 Umfahrung Dahlwitz	2 26596,10921 26900,10665 27209,10666 27499,10859
 Krumme Str.	1 25490,14601 25444,14665 25418,14835
 Margaretenstr.	1 25418,14835 25503,14842
@@ -3003,7 +3002,7 @@ tragen (28 Stufen)	0:30 18180,12262
 # REMOVED --- tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19636,15417
 tragen (Treppe S-Bhf. Marzahn)	0:35 19694,15529
 tragen (13 Stufen)	0:30 7924,12872
-tragen (2 x 5 Stufen)	0:30 4985,6370
+# REMOVED (früher vielleicht?) --- tragen (2 x 5 Stufen)	0:30 4985,6370
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2292,4927
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2175,4845
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15537,-4535
@@ -4014,6 +4013,7 @@ Drängelgitter	BNP:3::trailer=10 7862,14546
 Drängelgitter	BNP:3::trailer=10 8982,10510
 Drängelgitter	BNP:3::trailer=10 9165,10530
 Schwingtor	BNP:5::trailer=10 11543,20272
+Drängelgitter	BNP:3::trailer=10 113,7
 # 
 #: section ^^^
 ############################################################################
@@ -4030,7 +4030,7 @@ Schwingtor	BNP:5::trailer=10 11543,20272
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~22-09-2025-b1-spatenstich-altsaedtischer-bahnhof (Freigabe 2028?)
-#: source_id: LS/223-P/25/102 (bis 21.11.2025)
+#: source_id: LS/223-P/25/102 (bis 21.11.2025) (bis 14.01.2026)
 #: next_check: 2028-06-30
 Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 # 
@@ -5042,7 +5042,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,1022
 # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14361,10259
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-10-12 vvv
+#: last_checked: 2025-10-15 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
