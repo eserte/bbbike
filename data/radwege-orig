@@ -362,7 +362,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2025-10-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1378,7 +1378,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-10-13 vvv
+#: last_checked: 2025-10-16 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt zum Ersatzneubau) vvv
@@ -1450,7 +1450,7 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 #: by: https://api.fixmyberlin.de/api/plannings/216
 #: by: https://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (nach den Bauarbeiten der Wasserbetriebe 2026)
-#: osm_watch: way id="963841938" version="7"
+#: osm_watch: way id="963841938" version="9"
 #: last_checked: 2025-09-06
 #: check_frequency: 360d
 #: next_check: 2026-12-31
@@ -5244,11 +5244,11 @@ Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: XXX früher: Verbundsteinpflaster	RW1;
-#: osm_watch: way id="870445662" version="17"
+#: osm_watch: way id="870445662" version="18"
 provisorische Radspur	RW4; 20390,16663 20392,16621 20379,16585
 kein Radweg, Radfahrüberholverbot	RW0; 20379,16585 20354,16563 20325,16551
 #: XXX früher: Asphalt	RW1;
-#: osm_watch: way id="1389241596" version="2"
+#: osm_watch: way id="1389241596" version="3"
 	RW0; 20325,16551 20230,16560 20150,16572
 #: XXX vor der Teilsperrung der Brücke keine Benutzungspflicht
 Verbundsteinpflaster	RW2; 20150,16572 19896,16611

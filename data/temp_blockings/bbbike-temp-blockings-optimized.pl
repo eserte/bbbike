@@ -2575,6 +2575,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971676-955635-weihnachtszauber-gendarmenmarkt.html (2021 schon am Bebelplatz, wegen Bauarbeiten bis 2023)
 #: by: https://www.weihnachtsmarkt-berlin.de/?date=20211019 (2021 noch immer am Gendarmenmarkt?)
 #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt.html
+#: by: https://www.morgenpost.de/bezirke/mitte/article410233534/weihnachtszauber-kehrt-auf-den-gendarmenmarkt-in-mitte-zurueck.html
 #: note "WeihnachtsZauber auf dem Gendarmenmarkt"
 	2::xmas 9536,11922 9666,11935
 	2::xmas 9523,12019 9656,12031
@@ -7056,6 +7057,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1788060004194341063
 #: by: https://pbs.twimg.com/media/GM-T_ItXAAEbotS?format=jpg&name=large (Sterndamm)
 #: by: https://pbs.twimg.com/media/GM-UPCQXoAAPE8L?format=jpg&name=large (Winckelmannstr.)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251016 (bis 31.12.2025)
 #: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
 #: note: laut rbb bis 15.8.2024 (go with it)
 #: note: bei VIZ seit dem 8.8.2024 inaktiv (zu früh?)
@@ -7076,14 +7078,14 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 #: also_indoor: traffic (T)
 #: last_checked: 2025-08-27 (bahninfo-forum)
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-10-31
+#: next_check: 2025-12-31 (BA-Seite)
 Winckelmannstr.: Havarie, evtl. sind auch Radfahrer betroffen	q4::inwork 17503,4148 17507,4216
 ',
          'from' => undef,
          'id' => 4058,
-         'text' => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, voraussichtlich bis 31.10.2025',
+         'text' => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, voraussichtlich bis 31.12.2025',
          'type' => 'handicap',
-         'until' => 1761951599
+         'until' => 1767221999
        },
        undef,
        undef,
@@ -9205,7 +9207,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-15
+#: last_checked: 2025-10-16
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9250,6 +9252,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiasgxyh4yi2yyv2ipifgm5ybdhxw3cbimwdzuqkhqo6rzca5axq3a@jpeg
 #: source_id: viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026)
+#: source_id: viz2021:13.31541,52.42855, (bis 31.01.2026)
 Schillerstr.	q3::inwork 4429,2396 4568,2424
 #: note: nicht komplett gesperrt
 Goethestr.	q3::inwork 4568,2424 4526,2648
@@ -9331,6 +9334,7 @@ Griebenowstr.: Einschränkungen nur im Einmündungsbereich	q2::inwork 10399,14429 
        undef,
        {
          'data' => '#: next_check_id: MELCHIOR-2025
+#: by: https://www.infravelo.de/projekt/melchiorstrasse/ (3. Quartal 2025 - 4. Quartal 2025)
 #: add_fragezeichen: Ist die Fahrbahn wieder offen?
 #: osm_watch: note 3954739 13
 #: last_checked: 2025-10-07
@@ -9469,7 +9473,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-13
+#: last_checked: 2025-10-16
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9685,6 +9689,30 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'text' => 'Kranzallee: Bauarbeiten zwischen Kiplingweg und Am Postfenn, Sperrung, evtl. sind auch Radfahrer betroffen, vom 15.10.2025 06:00 bis 25.02.2026 18:00',
          'type' => 'handicap',
          'until' => 1772038800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1606938.php
+#: by: https://marzahn-hellersdorf.com/teilsperrung-der-bruno-baum-strasse-in-marzahn-fahrbahnsanierung-vom-20-bis-24-oktober/
+Bruno-Baum-Str.	q4::inwork 20286,15382 20123,15293 19997,15122
+Kreuzungsbereich Bruno-Baum-Str./Pekrunstr. gesperrt	q3::inwork 19997,15122 19893,14947
+',
+         'from' => 1760824800,
+         'id' => 4470,
+         'text' => 'Bruno-Baum-Str.: Bauarbeiten zwischen Kiebitzgrund und Pekrunstr., Sperrung der Fahrbahn, vom 20. Oktober 2025 bis voraussichtlich 24. Oktober 2025',
+         'type' => 'handicap',
+         'until' => 1761343199
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3c254ju4s2z (für zwei Wochen)
+#: source_id: viz2021:13.44469,52.48514, (bis 31.10.2025)
+#: source_id: LMS-BR:386838/72 viz2021:13.44469,52.48514, (bis 01.11.2025)
+Wildenbruchstr.	q4::inwork; 13227,8877 13193,8832 13138,8762 13105,8720 13033,8628
+',
+         'from' => 1760637564,
+         'id' => 4471,
+         'text' => 'Wildenbruchstr.: Wasserrohrbruch, Sperrung zwischen Wildenbruchbrücke und Weserstr., evtl. sind auch Radfahrer betroffen, bis 31.10.2025',
+         'type' => 'handicap',
+         'until' => 1761951600
        }
      
 );
