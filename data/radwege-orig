@@ -275,6 +275,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: by: https://www.preussischer-kulturbesitz.de/standorte/bauvorhaben/nationalgalerie-am-kulturforum/museum-des-20-jahrhunderts.html
 #: by: https://entwicklungsstadt.de/berlin-modern-das-naechste-grossmuseum-nimmt-form-an/ (Fertigstellung 2027)
 #: by: https://entwicklungsstadt.de/berliner-kulturforum-grossprojekt-berlin-modern-wird-spaeter-fertig/ (Fertigstellung frühestens 2028)
+#: by: https://entwicklungsstadt.de/trotz-verzoegerungen-berlin-modern-am-kulturforum-oeffnet-rohbau-fuer-besucher/ (Fertigstellung 2029)
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
 #: by: srt
 #: XXX: temporäre Radspur
@@ -283,7 +284,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2025-09-20
 #: check_frequency: 180d
-#: next_check: 2028-12-31 (entwicklungsstadt)
+#: next_check: 2029-12-31 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8031,11249 8000,11137
 	RW1; 8000,11137 7980,11070
@@ -1731,10 +1732,10 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="823635969" version="25"
-#: osm_watch: way id="4615746" version="51"
+#: osm_watch: way id="823635969" version="26"
+#: osm_watch: way id="4615746" version="52"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-10-06 vvv
+#: last_checked: 2025-10-15 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -1816,13 +1817,13 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2025-09-12 (osm) vvv
+#: last_checked: 2025-10-17 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
-#: osm_watch: way id="910439501" version="17"
+#: osm_watch: way id="910439501" version="18"
 #: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
@@ -3276,7 +3277,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-17
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -5244,7 +5245,7 @@ Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: XXX früher: Verbundsteinpflaster	RW1;
-#: osm_watch: way id="870445662" version="18"
+#: osm_watch: way id="870445662" version="19"
 provisorische Radspur	RW4; 20390,16663 20392,16621 20379,16585
 kein Radweg, Radfahrüberholverbot	RW0; 20379,16585 20354,16563 20325,16551
 #: XXX früher: Asphalt	RW1;
@@ -5301,7 +5302,7 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
-#: osm_watch: note 4530704 4
+#: osm_watch: note 4530704 5
 #: osm_watch: way id="631069428" version="12"
 #: osm_watch: way id="151370228" version="18"
 #: osm_watch: way id="631069429" version="11"
@@ -7868,7 +7869,8 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 Grünbeschichtung	RW4; 15010,12855 15098,12849
 #: next_check_id: SCHEFFEL-2024
 #: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2025-09-20
+#: last_checked: 2025-10-17
+#: check_frequency: 14d
 asphaltiertes Straßenbahnkap	RW1; 15098,12849 15117,12846 15169,12839
 relativ breit, Grünbeschichtung	RW3; 15169,12839 15233,12829 15357,12813
 relativ breit, Grünbeschichtung	RW4; 15357,12813 15367,12815 15417,12823
@@ -7878,13 +7880,11 @@ Grünbeschichtung	RW4; 15469,12831 15516,12838
 Grünbeschichtung	RW3; 15516,12838 15469,12831
 asphaltiertes Straßenbahnkap	RW2; 15469,12831 15417,12823
 Grünbeschichtung	RW4; 15417,12823 15367,12815 15357,12813
-#: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2025-09-20
-Grünbeschichtung	RW3; 15357,12813 15233,12829
-Grünbeschichtung	RW4; 15233,12829 15169,12839
+Grünbeschichtung	RW4; 15357,12813 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
 #: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2025-09-20
+#: last_checked: 2025-10-17
+#: check_frequency: 14d
 Grünbeschichtung, Poller	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar
 Grünbeschichtung	RW3; 15010,12855 14940,12843
@@ -8208,6 +8208,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: by: https://pbs.twimg.com/media/Gks4DQSW0AAAmtk?format=png&name=900x900 (Radfahrer zumindest ab Neuköllner Straße frei)
 #: by: https://fahrinfo.vbb.de/him-uploads/1740562608841_Kartenausschnitt_Stubenrauchstr.png
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lrsnlsyt4s2e
+#: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9872 (Anfrage)
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv

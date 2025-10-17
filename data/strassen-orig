@@ -3122,6 +3122,7 @@ Hohenschönhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,1
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1606371.php
 #: by: https://www.berlin.de/sen/bauen/neubau/weitere-wohnungsbaustandorte/hohenschoenhauser-strasse-weissenseer-weg/
 #: by: https://entwicklungsstadt.de/neues-quartier-am-fennpfuhl-580-wohnungen-auf-ehemaligem-busparkplatz/
+#: by: https://entwicklungsstadt.de/lichtenberg-mehr-als-1-600-neue-wohnungen-rund-um-das-sportforum/
 #: XXX Werden die bestehenden Wege/Straße im Zuge der neuen Bebauung geändert? Zumindest wird es eine direkte Verbindung zum Weißenseer Weg geben, schon weitgehend fertig, noch nicht freigegeben vvv
 #: last_checked: 2025-09-08 vvv
 #: check_frequency: 60d vvv
@@ -3165,7 +3166,7 @@ Herzbergstr. [Wohngebiet]	N 15700,13597 15833,13596 15896,13594
 (Krankenhaus Herzberge)	NN 17438,13525 17247,13519 17232,13518
 (Krankenhaus Herzberge Rondell - Herzbergstr.)	NN 17479,13490 17479,13434
 (Krankenhaus Herzberge - Landschaftspark Herzberge)	N 17479,13434 17485,13316 17488,13257
-(Krankenhaus Herzberge - Landschaftspark Herzberge)	NN 17488,13257 17491,13190 17490,13133 17491,13125 17498,13015 17507,12781
+(Krankenhaus Herzberge - Landschaftspark Herzberge)	NN 17488,13257 17491,13190 17490,13133 17491,13125 17498,13015 17499,12998 17507,12781
 #: note: im Landschaftspark Herzberge vvv
 (Radweg Landschaftspark Herzberge)	NN 17201,13519 17200,13530 17187,13609 17167,13655 17111,13792 17098,13969 17117,14036 17152,14084 17196,14120 17236,14140 17267,14146
 #: note: möglicher Name: "Rohrdammweg" (by: http://www.landschaftspark-herzberge.de/uploads/tx_userbildgalerie/Luftbild.jpg)
@@ -3183,6 +3184,7 @@ Herzbergstr. [Wohngebiet]	N 15700,13597 15833,13596 15896,13594
 (Landschaftspark Herzberge)	NN 17267,13067 17300,13061 17331,13010 17498,13015 17674,13022
 (Landschaftspark Herzberge)	NN 17507,12781 17637,12785 17638,12813 17659,12823 17662,12918 17679,12933 17674,13022 17671,13132
 (Landschaftspark Herzberge)	NN 17300,13061 17300,13118 17491,13125 17671,13132 17684,13133 17698,13134
+(Landschaftspark Herzberge)	NN 17499,12998 17314,12990
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.)	NN 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18104,13510
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6766 --- #: XXX hier sind Bauarbeiten zugange, teilweise existieren schon neue Verbundsteinpflasterwege --- #: osm_watch: way id="485690626" version="1" --- #: last_checked: 2018-01-06
 (Landschaftspark Herzberge - Arendsweg/Zufahrt IKEA)	NN 17267,14146 17264,14176
@@ -13354,8 +13356,8 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_05_0237_0304_online.pdf (Verkauf eines Flurstücks)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Einziehung von Straßenland)
 #: XXX ändert sich durch die (teilweise?) Straßenlandwidmung etwas?
-#: osm_watch: way id="156346093" version="9"
-#: osm_watch: way id="23106203" version="15"
+#: osm_watch: way id="156346093" version="11"
+#: osm_watch: way id="23106203" version="16"
 #: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
@@ -21020,7 +21022,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: osm_watch: way id="1277899794" version="1"
+#: osm_watch: way id="1277899794" version="2"
 #: last_checked: 2025-09-02 (mapillary)
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
@@ -21028,7 +21030,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: last_checked: 2025-09-02 (mapillary)
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
-#: osm_watch: way id="1138047106" version="4"
+#: osm_watch: way id="1138047106" version="5"
 #: last_checked: 2025-09-02 (mapillary)
 #: check_frequency: 90d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661

@@ -1375,7 +1375,16 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 257300272 (bis 24.10.2025)
+	2::inwork 48296,74641 48437,74675 49075,74662
+',
+         'from' => 1760853600,
+         'id' => 1153,
+         'text' => 'Bruchhagen und Welsow: Sperrung der Bahnunterführung, 20.10.2025 08:00 Uhr bis 24.10.2025 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1761318000
+       },
        undef,
        undef,
        undef,
@@ -6065,10 +6074,10 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: osm_watch: way id="37861386" version="30"
-#: osm_watch: way id="1231148375" version="7"
+#: osm_watch: way id="37861386" version="31"
+#: osm_watch: way id="1231148375" version="8"
 #: priority: #B
-#: last_checked: 2025-09-19 (osm)
+#: last_checked: 2025-10-17 (osm)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-18 (nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -6428,31 +6437,7 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: --- alte Meldung von 2023 ---
-#: by: https://nitter.net/VIZ_Berlin/status/1683787104650682368#m (für vsl. vier Wochen)
-#: by: https://www.bahninfo-forum.de/read.php?9,774482,776967#msg-776967 (frei ab 31.8.2023?)
-#: source_id: viz2021:13.402041,52.5901,25.07.2023,13:00 (bis 31.08.2023) (bis 20.10.2023) (inaktiv)
-#: source_id: bvg2021:m1#BVG327081_0
-#: note: --- neue Meldung von 2025 ---
-#: by: https://www.bahninfo-forum.de/read.php?9,835148,836205#msg-836205 (es sieht so aus, als ob man als Radfahrer an der Schadensstelle vorbeifahren könnte)
-#: source_id: viz2021:13.4017,52.59009, (kein Endedatum) (bis 09.09.2025) (bis 17.10.2025)
-#: source_id: viz2021:13.40344,52.59031,13.10.2025,07:00 (zusätzlich zwischen Heinrich-Böll-Str. und Waldowstr., bis 17.10.2025)
-# REMOVED (keine Einschränlkungen mehr) --- #: XXX evtl. kann schon ab dem 31.8.2023 die Straßenbahn wieder fahren, evtl. ist die Straße dann offen --- #: next_check: 2023-08-31
-#: last_checked: 2025-09-09 (VIZ-Verkehrsmeldung) vvv
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-10-17 (VIZ-Verkehrsmeldung) vvv
-	q4::inwork 10066,20494 10178,20525
-	q4::inwork 10178,20525 10226,20539 10309,20562
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1755295119,
-         'id' => 3866,
-         'text' => 'Schillerstr.: Wasserrohrbruch, Fahrbahn zwischen B96A/Dietzgenstr. und Waldowstr. offiziell gesperrt, voraussichtlich bis 17.10.2025',
-         'type' => 'handicap',
-         'until' => 1760738399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6663,7 +6648,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
 #: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024) (vorfristig inaktiv)
-#: source_id: viz2021:13.40755,52.5098,23.09.2025,07:00 (bis 17.10.2025)
+#: source_id: viz2021:13.40755,52.5098,23.09.2025,07:00 (bis 17.10.2025) (bis 04.11.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
 #: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250922 (Alte Jakobstr.)
@@ -6677,9 +6662,9 @@ Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
 ',
          'from' => 1758578400,
          'id' => 3926,
-         'text' => 'Alte Jakobstr.: Bauarbeiten, Richtung Sebastianstr. ab Annenstr. gesperrt, geplant bis 17.10.2025',
+         'text' => 'Alte Jakobstr.: Bauarbeiten, Richtung Sebastianstr. ab Annenstr. gesperrt, geplant bis 04.11.2025',
          'type' => 'handicap',
-         'until' => 1760738399
+         'until' => 1762297199
        },
        {
          'data' => '# älteres Bauvorhaben (Botschaft von Indonesien)
@@ -8510,14 +8495,14 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        undef,
        {
          'data' => '#: source_id: viz2021:13.328715,52.465213,09.05.2025,09:00 (bis 17.10.2025) (inaktiv)
-#: source_id: viz2021:13.32856,52.46482,09.05.2025,09:00 (bis 17.10.2025)
+#: source_id: viz2021:13.32856,52.46482,09.05.2025,09:00 (bis 17.10.2025) (bis 06.11.2025)
 	q4::inwork 5535,6521 5424,6584
 ',
          'from' => 1746687600,
          'id' => 4327,
-         'text' => 'Peschkestr.: Anbindung an die Rheinstr. gesperrt, vom 09.05.2025 09:00 bis 17.10.2025 17:00',
+         'text' => 'Peschkestr.: Anbindung an die Rheinstr. gesperrt, voraussichtlich bis 06.11.2025',
          'type' => 'handicap',
-         'until' => 1760713200
+         'until' => 1762469999
        },
        undef,
        undef,
@@ -8896,27 +8881,15 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: adac:2024889976 (bis 17.10.2025) (neue ID -> inaktiv)
-#: source_id: adac:482307388 (bis voraussichtlich 17.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.32285,52.50879,14.07.2025,07:00 (bis 17.10.2025)
-#: also_indoor: traffic (H,B,T)
-	q3::inwork 4690,11369 4897,11354
-',
-         'from' => 1752514480,
-         'id' => 4390,
-         'text' => 'Goethestr.: Bauarbeiten zwischen Knesebeckstr. und Grolmanstr., Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei, bis 17.10.2025',
-         'type' => 'handicap',
-         'until' => 1760716800
-       },
+       undef,
        {
          'data' => '#: next_check_id: THOMAS-2025
 #: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025)
+#: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
 #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
 #: last_checked: 2025-09-13 vvv
-#: next_check: 2025-10-20 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-12-22 (VIZ-Verkehrsmeldung) vvv
 Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 # REMOVED (nicht mehr?) --- #: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
 # REMOVED --- Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
@@ -8925,9 +8898,9 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 ',
          'from' => 1752606169,
          'id' => 4391,
-         'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis Oktober 2025',
+         'text' => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis Dezember 2025',
          'type' => 'handicap',
-         'until' => 1760911200
+         'until' => 1766444399
        },
        undef,
        undef,
@@ -9023,7 +8996,7 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
        },
        {
          'data' => '#: source_id: adac:356158344 (bis 17.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.254503,52.506746,21.07.2025,07:00 (bis 17.10.2025)
+#: source_id: viz2021:13.254503,52.506746,21.07.2025,07:00 (bis 17.10.2025) (inaktiv)
 #: source_id: viz2021:13.25418,52.50807,15.10.2025,06:00 (bis 19.12.2025)
 # REMOVED ---	q4::inwork 368,11051 251,11039 37,11014
 # REMOVED --- Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
@@ -9083,10 +9056,11 @@ Insterburgallee	q4::inwork 229,11213 251,11039
        },
        {
          'data' => '#: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
+#: note: außerdem existiert parallel (nur 40-50m Umweg) ein etwas engerer Betonweg
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-09-20
+#: last_checked: 2025-10-17
 #: check_frequency: 21d
-	2::inwork 17498,13015 17507,12781
+	2::inwork 17499,12998 17507,12781
 ',
          'from' => undef,
          'id' => 4408,
@@ -9351,7 +9325,7 @@ Griebenowstr.: Einschränkungen nur im Einmündungsbereich	q2::inwork 10399,14429 
        {
          'data' => '#: next_check_id: MONUMENTEN-2025
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597306.php (Maßnahme bis Ende Oktober 2025)
-#: osm_watch: note 4959079 1
+#: osm_watch: note 4959079 3
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: last_checked: 2025-10-12
 #: check_frequency: 14d
@@ -9509,16 +9483,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'until' => 1777586399
        },
        undef,
-       {
-         'data' => '#: source_id: LS/221-E/25/115 (bis 17.10.2025)
-	2::inwork 49812,67593 49633,67431
-',
-         'from' => 1759644000,
-         'id' => 4453,
-         'text' => 'Angermünde: Sperrung der Bahnbrücke, 06.10.2025 08:00 Uhr bis 17.10.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1760713200
-       },
+       undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
@@ -9533,9 +9498,10 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        },
        {
          'data' => '#: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
+#: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2025-10-04
+#: last_checked: 2025-10-16 (bahninfo-forum)
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -9646,6 +9612,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2tnjk27qs22
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib6xakrcudbjnss6lcxcjqe6l7riqscbfw7jqibwzw2vtetkhm7kq@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifikftud5lbc4zhtz5kjrx4fyvomsalwvil26zy5ff6mpmqnqf7tm@jpeg
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
 #: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205)
 #: also_indoor: traffic (T)
 	q4::inwork 15807,5286 15870,5251 15828,5156
@@ -9669,17 +9636,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'type' => 'gesperrt',
          'until' => 1768517999
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
-#: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025)
-	q4::inwork 13408,10837 13436,10903
-',
-         'from' => 1760378957,
-         'id' => 4468,
-         'text' => 'Warschauer Platz: Baustelle, Sperrung der Fahrbahn Richtung Norden, voraussichtlich bis 17.10.2025',
-         'type' => 'handicap',
-         'until' => 1760716800
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:386774/72 viz2021:13.2335,52.50543,15.10.2025,06:00 (bis 25.02.2026)
 	q4::inwork -1167,10873 -1318,10854 -1501,10833
@@ -9713,6 +9670,32 @@ Wildenbruchstr.	q4::inwork; 13227,8877 13193,8832 13138,8762 13105,8720 13033,86
          'text' => 'Wildenbruchstr.: Wasserrohrbruch, Sperrung zwischen Wildenbruchbrücke und Weserstr., evtl. sind auch Radfahrer betroffen, bis 31.10.2025',
          'type' => 'handicap',
          'until' => 1761951600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
+#: next_check: 2025-10-27 (Beginn der Arbeiten)
+	q4::inwork 13357,9313 13489,9456
+',
+         'from' => 1761433200,
+         'id' => 4472,
+         'text' => 'Bouchéstr.: Sanierungsarbeiten zwischen Karl-Kunger-Str. und Heidelberger Str., Sperrung der Fahrbahn, vom 27. Oktober 2025 bis 14. November 2025',
+         'type' => 'handicap',
+         'until' => 1763161199
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3f6iflglc27
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreievxmc4lkl4ix3jyzpen2xpvr2xl7frexucixqom4qs6ca4xy4jdq@jpeg (Sperrung des Kreuzungsbereichs?)
+#: source_id: viz2021:13.32047,52.49975, (kein Endedatum) (inaktiv)
+#: source_id: viz2021:13.31913,52.49968, (kein Endedatum) (inaktiv)
+#: source_id: viz2021:13.32149,52.49982, (bis 30.11.2025)
+Lietzenburger Str.	q3::inwork 4764,10350 4659,10335 4485,10307
+Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
+',
+         'from' => 1760725052,
+         'id' => 4473,
+         'text' => 'Lietzenburger Str./Bleibtreustr.: Wasserrohrbruch, evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich bis Ende November 2025',
+         'type' => 'handicap',
+         'until' => 1764543599
        }
      
 );

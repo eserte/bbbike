@@ -526,7 +526,7 @@ Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 1346
 Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
 #: by: Juliane Bölker:
 #: confirmed_by: srt
-Harnackstr.	1 15837,11529 15881,11621 15875,11692 15917,11782 15984,11827 16020,11814 16099,11786 16134,11774
+Harnackstr.	1 15837,11529 15881,11621 15875,11692 15917,11782 15984,11827 16020,11814 16099,11786
 Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13399,16398 13377,16378 13348,16387 13331,16424
 Treskowstr. (Mahlsdorf)	1s:q4 24563,11980 24491,11972
 Knoten am Flughafen Tegel	1 2996,15930 2960,15847
@@ -1035,7 +1035,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21623,5661 21605,5687
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
 Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767
 # REMOVED (mittlerweile keine Benutzungspflicht mehr, dafür Tempo 10) --- #: note: wobei hier die Sperrung der Fahrbahn für Radfahrer nicht so eindeutig ist --- Lindenstr./Pyramidenbrücke/An der Wuhlheide: Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
-#: osm_watch: way id="25216398" version="37"
+#: osm_watch: way id="25216398" version="38"
 # REMOVED (bis zur Hilfsbrücke offen) --- Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21651,5730 21618,5699
 Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21618,5699 21605,5687
 # REMOVED (offen) --- Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21581,5670 21507,5620
@@ -4053,7 +4053,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 # 
 #: by: https://www.reo.berlin/
 #: by: https://entwicklungsstadt.de/hotelentwicklung-in-friedrichshain-premier-inn-plant-282-zimmer-am-ostkreuz/
-#: last_checked: 2025-09-16
+#: last_checked: 2025-10-17
 #: check_frequency: 180d
 #: next_check: 2026-08-28 (Halteverbotsschilder in der Straße "Am Bremsenwerk")
 (an den Gebäuden der Deutschen Rentenversicherung): wegen Hochbauarbeiten gesperrt	2::inwork 15322,11335 15273,11350 15168,11327 15058,11250
@@ -4113,7 +4113,7 @@ neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 1677
 # 
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026) (inaktiv)
-#: osm_watch: way id="1087144824" version="8"
+#: osm_watch: way id="1087144824" version="9"
 #: last_checked: 2025-09-29
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
@@ -4299,11 +4299,11 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-schulgeb%C3%A4ude-in-modulbauweise-r%C3%B6merweg-39.1498/#post-25322
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1596137.php (Richtfest; Start zum Schuljahr 2026/2027)
 #: by: https://entwicklungsstadt.de/lichtenberg-richtfest-fuer-neue-holz-compartmentschule-am-roemerweg/
-#: osm_watch: way id="25796737" version="19"
+#: osm_watch: way id="25796737" version="20"
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-16 (osm)
 #: check_frequency: 180d
 #: next_check: 2026-06-30 (BA-Pressemitteilung)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -5581,9 +5581,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.3707,52.52584, (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="46"
+#: osm_watch: way id="186329816" version="47"
 #: also_indoor: traffic
-#: last_checked: 2025-09-28 (osm) vvv
+#: last_checked: 2025-10-16 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230

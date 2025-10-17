@@ -177,11 +177,11 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # REMOVED --- #: valid: -20251014
 # REMOVED --- Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 23792,10926
 # 
-#: source_id: LMS-BR:379742/72 viz2021:13.589646,52.502679,13.08.2025,09:15 (bis 17.10.2025)
-#: last_checked: 2025-08-27
-#: next_check: 2025-10-17
-#: valid: -20251017
-Am Niederfeld/Lassaner Str./Rosenhagener Str.: Gegenverkehrsregelung	X::inwork::alternating 22947,10998
+# REMOVED --- #: source_id: LMS-BR:379742/72 viz2021:13.589646,52.502679,13.08.2025,09:15 (bis 17.10.2025) (inaktiv)
+# REMOVED --- #: last_checked: 2025-08-27
+# REMOVED --- #: next_check: 2025-10-17
+# REMOVED --- #: valid: -20251017
+# REMOVED --- Am Niederfeld/Lassaner Str./Rosenhagener Str.: Gegenverkehrsregelung	X::inwork::alternating 22947,10998
 # 
 # REMOVED --- #: source_id: viz2021:13.544318,52.567969,26.02.2025,10:00 (bis 30.04.2025) (bis 16.06.2025) (bis 30.06.2025) (bis 24.06.2025) (inaktiv)
 # REMOVED --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1894643566640861298
@@ -387,14 +387,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-10-05
+#: last_checked: 2025-10-17
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-10-06
+#: last_checked: 2025-10-17
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
