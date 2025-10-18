@@ -168,7 +168,7 @@ if ($with_searches_weight) {
 	$base_glob = "20??-??_weighted*.bbd";
     } else {
 	# last 12 months
-	$base_glob = "20??-12_last12months*.bbd";
+	$base_glob = "20??-??_last12months*.bbd";
     }
     ($latest_weighted_bbd) = reverse File::Glob::bsd_glob(bbbike_root . "/tmp/weighted/" . $base_glob);
     my $s = Strassen->new($latest_weighted_bbd);
