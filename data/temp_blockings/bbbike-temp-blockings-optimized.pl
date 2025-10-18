@@ -2651,12 +2651,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1760306400,
+         'from' => 1762124400,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 14.10.2025 bis 17.10.2025',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 4.11.2025 bis 7.11.2025',
          'type' => 'gesperrt',
-         'until' => 1760738399
+         'until' => 1762556399
        },
        undef,
        undef,
@@ -4291,7 +4291,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-09-20 vvv
+#: last_checked: 2025-10-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4302,6 +4302,7 @@ Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829 15439,8839 15297
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 Puschkinallee - Am Treptower Park: Engstellen, Umwege	q3::inwork 14318,9688 14316,9542 14321,9530 14347,9452 14398,9373
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
+	2::inwork 15298,8781 15343,8714 15378,8668
 	2::inwork 15181,8967 15245,8916
 # REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
 #: check_frequency ^^^
@@ -8231,7 +8232,23 @@ Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~03-07-2025-sperrung-am-horstweg-in-potsdam (08.08.2025 ab 22 Uhr bis 11.08.2025 um 6 Uhr, auch Radfahrer sind betroffen)
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/fur-bruckenneubau-der-nuthestrasse-horstweg-in-potsdam-wird-komplett-gesperrt-13963847.html
+#: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
+#: by: https://www.potsdam.de/de/486-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-herbstferien
+	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
+',
+         'from' => 1762988400,
+         'id' => 4289,
+         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 14.11.2025 22:00 Uhr bis zum 17.11.2025 05:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1763352000
+       },
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
@@ -9181,7 +9198,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-16
+#: last_checked: 2025-10-18
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9447,7 +9464,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-16
+#: last_checked: 2025-10-18
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9661,6 +9678,7 @@ Kreuzungsbereich Bruno-Baum-Str./Pekrunstr. gesperrt	q3::inwork 19997,15122 1989
        },
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3c254ju4s2z (für zwei Wochen)
+#: also_indoor: traffic (G)
 #: source_id: viz2021:13.44469,52.48514, (bis 31.10.2025)
 #: source_id: LMS-BR:386838/72 viz2021:13.44469,52.48514, (bis 01.11.2025)
 Wildenbruchstr.	q4::inwork; 13227,8877 13193,8832 13138,8762 13105,8720 13033,8628

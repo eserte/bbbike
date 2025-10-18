@@ -1055,6 +1055,9 @@ asphaltiert	RW2;RW8 -7276,16753 -7279,16904 -7254,16954 -7243,17008 -7267,17073
 asphaltiert	RW8;RW2 -6782,20818 -6788,20819 -7014,20840
 	RW3; 64611,77283 64542,77237 64205,77132 64034,77011
 Verbundsteinpflaster	RW1; 63283,76647 63409,76650 63580,76754 63905,76943 64034,77011
+#: by: https://www.schwedt.eu/de/bauen-und-wohnen/baumassnahmen/aktuelle-baumassnahmen/modernisierung-leverkusener-strasse-2-ba/54835 (bis Herbst 2026)
+#: XXX nach den Bauarbeiten möglicherweise asphaltierte Radwege
+#: next_check: 2026-11-30
 Verbundsteinpflaster	RW2;RW2 67175,74764 67106,74630 67049,74502 66961,74312 66890,74152 66810,73963
 Verbundsteinpflaster	RW2;RW2 66890,74152 66975,74119 67068,74080 67201,74018
 Verbundsteinpflaster	RW2; 67201,74018 67277,74164 67328,74278 67369,74369
@@ -1484,11 +1487,9 @@ Verbundsteinpflaster	RW2; 69000,75533 68816,75600
 	RW4;RW4 -67172,-64776 -67248,-64599
 	RW2;RW2 -67248,-64599 -67323,-64428
 Gehweg für Radfahrer freigegeben, alte Gehwegplatten	RW1; 13630,-20238 13526,-20548
-#: next_check_id: ZOSSENB246-2023
-#: XXX existierender Zweirichtungsradweg auf der südlichen Seite ist noch nicht freigegeben
-#: last_checked: 2025-06-21
-#: check_frequency: 180d
-Asphalt	RW0;RW0 12861,-20344 13065,-20130 13211,-20038 13322,-20017
+# REMOVED --- #: next_check_id: ZOSSENB246-2023 --- #: XXX existierender Zweirichtungsradweg auf der südlichen Seite ist noch nicht freigegeben --- #: last_checked: 2025-06-21 --- #: check_frequency: 180d
+gemeinsamer Geh- und Radweg, Asphalt	RW2;RW8 12861,-20344 13065,-20130 13211,-20038 13322,-20017 13445,-20018
+gemeinsamer Geh- und Radweg, Asphalt	RW2;RW8 13475,-20029 13668,-20111
 	RW6;RW6 -2903,-2753 -2861,-2741 -2835,-2726 -2766,-2683 -2701,-2647
 Verbundsteinpflaster	RW2; 64952,76990 64653,77310
 Verbundsteinpflaster	RW1; 64653,77310 64505,77470

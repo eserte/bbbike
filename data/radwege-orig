@@ -363,7 +363,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-10-16 vvv
+#: last_checked: 2025-10-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1379,7 +1379,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-10-16 vvv
+#: last_checked: 2025-10-18 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt zum Ersatzneubau) vvv
@@ -3199,7 +3199,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2025-09-25
+#: last_checked: 2025-10-18
 	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3220,7 +3220,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-09-20
+#: last_checked: 2025-10-18
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3248,7 +3248,7 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
 #: historical_note: ganz früher sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-18
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
@@ -7868,9 +7868,11 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 	RW4; 14906,12837 14940,12843 15010,12855
 Grünbeschichtung	RW4; 15010,12855 15098,12849
 #: next_check_id: SCHEFFEL-2024
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article410247971/meilenstein-nach-acht-jahren-planung-lichtenberg-eroeffnet-radwege.html (Eröffnung am 4.11.2025)
 #: XXX kommt hier noch ein Radwegschild hin?
 #: last_checked: 2025-10-17
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2025-11-04 (MoPo)
 asphaltiertes Straßenbahnkap	RW1; 15098,12849 15117,12846 15169,12839
 relativ breit, Grünbeschichtung	RW3; 15169,12839 15233,12829 15357,12813
 relativ breit, Grünbeschichtung	RW4; 15357,12813 15367,12815 15417,12823
@@ -7884,7 +7886,8 @@ Grünbeschichtung	RW4; 15357,12813 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
 #: XXX kommt hier noch ein Radwegschild hin?
 #: last_checked: 2025-10-17
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2025-11-04 (MoPo)
 Grünbeschichtung, Poller	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar
 Grünbeschichtung	RW3; 15010,12855 14940,12843
@@ -8963,6 +8966,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://entwicklungsstadt.de/bezirk-setzt-zeichen-fester-radweg-auf-der-kantstrasse-wird-eingerichtet/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/pop-up-radweg-in-berlin-charlottenburg-warum-in-der-kantstrasse-jetzt-gebaut-wird-14119145.html
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/verkehrsplanung/radverkehr/akteure-und-gremien/20250605_fahrrat_protokoll.pdf
+#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410250811/radweg-in-kantstrasse-wieso-der-umbau-auf-sich-warten-laesst.html
 #: source_id: viz2021:13.30931,52.50658,11.08.2025,07:00 (Bauarbeiten Höhe Krumme Str., bis 17.11.2025)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen

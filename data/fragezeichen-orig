@@ -430,7 +430,7 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4963,7566
 #: source_id: 2147339938 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_91391 (möglicherweise inaktiv)
 #: source_id: viz2021:13.47342,52.481225,12.06.2023,09:00 (Kanalsanierung, bis 23.06.2023) (inaktiv)
-#: last_checked: 2025-08-29
+#: last_checked: 2025-10-18
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
@@ -1107,7 +1107,7 @@ Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 22075
 #: XXX Kö.6
 #: XXX In den Planfeststellungsunterlagen zur Westumfahrung Bahnhofstr. ist hier keine RVA eingezeichnet
 #: osm_watch: way id="12621137" version="25"
-#: last_checked: 2025-09-02 (mapillary)
+#: last_checked: 2025-10-16 (architektur-urbanistik)
 #: check_frequency: 120d
 Alte Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 22325,6385 22365,6149
 # 
@@ -1416,7 +1416,7 @@ Hansastr.: Radspuren geplant (2,5m breit) + Sanierung der Fahrbahn	?::inwork 154
 #: source_id: viz2021:13.50019,52.56161,24.01.2023,15:30 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.497383,52.560544,25.11.2022,10:00 (Kanalarbeiten bis 25.1.2023) (bis 21.4.2023) (inaktiv) (bis 4.9.2023) (bis 15.9.2023) (bis 29.9.2023) (bis 20.10.2023) (inaktiv)
 #: source_id: viz2021:13.495712,52.559878,04.09.2023,07:00 (Leitungsarbeiten bis 06.10.2023) (bis 09.10.2023) (inaktiv)
-#: osm_watch: way id="40520565" version="51"
+#: osm_watch: way id="40520565" version="52"
 #: osm_watch: way id="51317007" version="35"
 #: osm_watch: way id="624116238" version="17"
 #: last_checked: 2025-09-29
@@ -1773,6 +1773,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: by: https://pbs.twimg.com/media/GUwoF0zX0AAXdOp?format=jpg&name=large
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9545 (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-der-sitzung-vom-21052024.pdf (zur "Abpollerung")
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article410247971/meilenstein-nach-acht-jahren-planung-lichtenberg-eroeffnet-radwege.html (Eröffnung am 4. November 2025)
 #: source_id: 2147343976 (bis Mitte Januar 2020; Leitungsarbeiten) (inaktiv)
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_234329 (ab 2024-08-12, ohne Enddatum)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_234330 (ab 2024-08-12, ohne Enddatum)
@@ -1786,8 +1787,8 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: osm_watch: note 4347252 8
 # REMOVED --- #: also_indoor: traffic (G,B,T,W) [alle ungenau/falsch]
 #: last_checked: 2025-10-17
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-09-30 (infravelo)
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2025-11-04 (MoPo)
 Siegfriedstr.: Radstreifen mit Protektionselementen entsteht	?::inwork 16860,12861 16859,12752 16859,12683 16859,12613 16857,12600 16831,12419 16820,12339
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
@@ -2122,7 +2123,7 @@ Marienpark: Planstraße 1 geplant	?::projected 8178,3591 8200,3479 8263,3496 8235
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-18
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 14020,9524 13981,9474 13923,9405 13892,9365 13849,9310
 # 
@@ -2573,7 +2574,7 @@ Königsweg: Fahrradstraße in Entstehung	?::inwork -1082,2140 -1078,2154 -987,2205
 #: by: https://www.infravelo.de/projekt/koenigsweg-tietzenweg/ (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1598817.php (Königsweg: Sanierung, Markierung und Beschilderung vom 17. bis 26. September 2025)
 #: by: https://entwicklungsstadt.de/koenigsweg-in-steglitz-zehlendorf-wird-zur-fahrradstrasse-ausgebaut/
-#: osm_watch: note 4968979 4
+#: osm_watch: note 4968979 5
 #: osm_watch: way id="4871595" version="33"
 #: XXX vermutlich wird es auch eine Vorfahrtsregelung geben
 #: last_checked: 2025-10-15
@@ -2584,7 +2585,7 @@ Königsweg: Fahrradstraße in Entstehung	?::inwork -878,2265 -844,2268 -790,2300 -
 #: last_checked: 2025-10-15
 # REMOVED --- #: next_check: 2025-09-26 (BA-Pressemitteilung)
 Königsweg: Fahrradstraße in Entstehung	?::inwork -3096,1026 -3024,1069 -2813,1188 -2669,1266 -2605,1302
-#: osm_watch: note 4968980 4
+#: osm_watch: note 4968980 5
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1598817.php (Tietzenweg: Sanierung ab 20.10.2025)
 #: note: während der Leitungsarbeiten Gehweg für Radfahrer frei
 #: last_checked: 2025-10-15 (sah nach Leitungsarbeiten aus)
@@ -2633,6 +2634,7 @@ Tietzenweg: geplante Fahrradstraße	?::projected 3425,4541 3501,4435 3557,4355 35
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250922 (Umbauarbeiten bis Mitte Oktober 2025, Sperrung für den Kfz-Verkehr)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzi5gejmok2i
 #: by: https://www.infravelo.de/projekt/togostrasse/ (3. Quartal 2025 - 4. Quartal 2025)
+#: by: https://entwicklungsstadt.de/wedding-arbeiten-an-neuer-fahrradstrasse-in-der-togostrasse-haben-begonnen/
 #: source_id: viz2021:13.33499,52.55607,23.09.2025,07:00 (zwischen Otawistr. und Transvaalstr. (?), bis 30.11.2025)
 #: osm_watch: way id="597289462" version="11"
 #: osm_watch: way id="4605293" version="31"
@@ -3527,7 +3529,7 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: osm_watch: way id="1409203288" version="1"
 #: XXX offene Fragen: wird es irgendwann eine Anbindung zum Bahndamm Richtung Görlitzer Park geben (angedacht ist es, aber Realisierung hat nicht begonnen)? wird es eine Anbindung zur Beermannstr. geben? wird es eine Anbindung zu Am Treptower Park geben?
 #: XXX außerdem wird es auch einen Betriebsweg auf der östlichen Seite geben, aber das wird wohl eine Sackgasse sein
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-18
 #: check_frequency: 45d
 #: next_check: 2026-04-15 (Tsp)
 # REMOVED (keine baldige Eröffnung zu erwarten) --- #: next_check: 2025-08-27 (rbb)
@@ -4585,7 +4587,7 @@ Belziger Str.: Fahrradstraße in Realisierung	?::inwork 6852,8880 6958,8941 7101,
 #: next_check: 2025-10-31 (Fahrrat-Protokoll)
 Langenscheidtstr.: Fahrradstraße geplant	?::projected 7647,9196 7596,9249 7509,9337
 #: osm_watch: way id="182692251" version="15"
-#: osm_watch: way id="188591697" version="15"
+#: osm_watch: way id="188591697" version="16"
 #: osm_watch: way id="4525869" version="27"
 #: osm_watch: way id="1137942395" version="5"
 #: last_checked: 2025-10-12
@@ -8525,14 +8527,6 @@ Wublitz: alte Brücke wird zum Radweg	?::projected -19987,2459 -20268,2533 -20616
 # REMOVED (fertig und fast komplett ausgeschildert) --- #: next_check_id: HAUPT-2024--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1310648.php (bis Ende 2023)--- #: by: https://www.infravelo.de/projekt/hauptstrasse-1/ (2. Quartal 2023 - 4. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (4. Quartal 2023 - 4. Quartal 2024) (1. Quartal 2024 - 4. Quartal 2024) (1. Quartal 2024 - 3. Quartal 2024) (abgeschlossen)--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/infos-ueber-neuen-fahrradstreifen_a377174--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_01.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_02.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_03.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_04.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_05.pdf--- #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230421_PE-RW_VZPL_Hauptstrasse_06.pdf--- #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-verkehrspolitik-fuer-berlin-jetzt-wird-erstmals-ein-radweg-abgebaut-verkehr-reinickendorf-li.360954 (Projekt gefährdet)--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8911 (Antrag) (abgelehnt)--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/projekte-an-zwei-hauptstrassen-samt-15-millionen-foerderungmittel-gefaehrdet_a386094--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1342575.php (Finanzierungsstopp)--- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1342555.php (wird voerst nicht gebaut)--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/baustopp-von-radwegen-offiziell_a386663--- #: by: https://berliner-abendblatt.de/berlin-news/pruefung-beendet-gruenes-licht-fuer-16-radwege-id227794--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/verkehrssenatorin-hebt-finanzierungssperre-fuer-radwege-an-haupt-und-grunewaldstrasse-wieder-auf_a388381--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8919 (Erwähnung)--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8949 (Erwähnung)--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1422200.php ("Umsetzung beginnt")--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/umgestaltung-der-schoeneberger-hauptstrasse-beginnt_a409648--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1435821.php (Abschluss im Sommer 2024)--- #: by: https://viz.berlin.de/aktuelle-meldungen/markierungsarbeiten-an-der-hauptstrasse-in-schoneberg/--- #: by: https://www.rad-ts.de/verkehrszeichenplaene-hauptstrasse-geaendert-sicherheitsrisiken-fuer-radfahrende-steigen/--- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/magistrale-wird-neu-aufgeteilt_a412850--- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1491356.php (Anradeln am 15.10.2024)--- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1494379.php--- #: source_id: viz2021:13.3526,52.484353,05.03.2024,07:00 (zwischen Akazienstr. und Dominicusstr. Richtung Südwesten, bis 04.04.2024) (bis 05.04.2024) (bis 08.04.2024) (bis 11.04.2024) (inaktiv)--- #: source_id: viz2021:13.35309,52.484712,25.03.2024,07:00 (bis 08.04.2024) (inaktiv)--- #: XXX laut Verkehrszeichenplan überwiegend Aufteilung MIV-Fahrspur - Busspur - Radspur; teilweise sind Bus- und Radspur zusammengelegt (Haltestellen, vor einigen Kreuzungen)--- #: note: Richtung Südwesten bis Kolonnenstr. bis auf die Ausschilderung weitgehend fertig, Radspur hinter parkenden Autos, teilweise Leitboys; mittlerweile (2024-09-07) fehlen nur wenige Schilder--- #: last_checked: 2024-09-07 vvv--- # REMOVED --- #: check_frequency: 21d vvv--- #: next_check: 2024-10-15 vvv--- # REMOVED (hier komplett ausgeschildert) --- Hauptstr.: Radfahrstreifen zwischen Kleistpark und Dominicusstr. wurden markiert, einige Schilder fehlen noch	?::inwork; 7471,9360 7430,9281 7388,9199 7382,9187--- Hauptstr.: Radfahrstreifen zwischen Kleistpark und Dominicusstr. wurden markiert, einige Schilder fehlen noch	?::inwork; 7382,9187 7363,9152 7354,9135 7326,9078 7308,9041 7299,9022 7268,8960 7239,8907 7201,8870 7105,8788 7051,8741 7005,8701 6986,8683 6912,8617 6765,8480 6733,8441 6687,8385--- # REMOVED (realisiert) --- Hauptstr.: ein paar Meter Radspur entstehen noch vor der Ampel	?::inwork; 7201,8870 7239,8907 7268,8960--- #: next_check ^^^--- # REMOVED --- #: check_frequency ^^^--- #: last_checked ^^^
 # REMOVED --- #: next_check_id: ZOSSENB246-2023 --- #: by: https://www.maz-online.de/lokales/teltow-flaeming/zossen-informationsabend-zum-bahnumbau-baustellen-bis-2028-5CJ2ESYUVNAU7PTYW45CNVZM3A.html (2022-2024) --- #: by: https://bauprojekte.deutschebahn.com/media/projects/7165/docs/PR_berlin-dresden_infoveranstaltung_zossen_20230330.pdf (neue Unterführung wird nördlich gebaut, Beginn etwa 450m nördlich von der jetzigen Einmündung; Bauzeit Q2/2023 - 06/2024) --- #: by: https://bauprojekte.deutschebahn.com/media/projects/7165/docs/HZ_berlin-dresden_freigabe_strassenbruecke_b246n_20241111.pdf --- #: osm_watch: way id="186897941" version="11" brb --- # REMOVED (wurde mit https://www.openstreetmap.org/changeset/155521904 entfernt) --- #: osm_watch: way id="1205904882" version="4" --- #: osm_watch: way id="1309121732" version="5" brb --- #: source_id: 247200149 (bis 11.11.2024) --- #: XXX Eröffnung am 11.11.2024 + neuer Kreisverkehr (fehlt noch in comments_misc). Alte Führung der B246 degradieren bzw. entfernen (inkl. Bahnübergang). --- #: last_checked: 2024-09-14 --- # REMOVED --- #: check_frequency: 60d --- #: next_check: 2024-11-11 --- B246: Bau einer neuen Eisenbahnüberführung	?::inwork 12779,-20362 12779,-20362 12861,-20344 13065,-20130 13211,-20038 13322,-20017 13445,-20018 13664,-20127
 # 
-#: next_check_id: ZOSSENB246-2023
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden?date=20241113 (bis Ende November 2024)
-#: osm_watch: way id="1331116060" version="5" brb
-#: last_checked: 2025-06-21
-#: check_frequency: 180d
-# REMOVED --- #: next_check: 2024-11-30
-B246: Radweg mit Rampe in Bau	?::inwork 13322,-20017 13445,-20018 13392,-20024 13489,-20052 13500,-20066
-# 
 #: by: https://www.maz-online.de/lokales/teltow-flaeming/zossen/bauarbeiten-bahnhof-zossen-teil-fuer-tunnel-fehlt-3-millionen-euro-mehrkosten-66TWUKVA4BA4PL6MZ7SRFIOU2M.html
 #: by[nocache]: https://archive.is/AEOVv
 #: by: https://www.zossen.de/fileadmin/user_upload/Sitzungsdienst/Berichte_2025/TOP_9_Baumassnahmen_in_Zossen.pdf ("Die Gesamtinbetriebnahme des Bahnhofs Zossen inkl. Personentunnel ist im September 2027 vorgesehen")
@@ -9387,6 +9381,7 @@ Steinstr. (Neuruppin): Erstellung eines Schutzstreifens	? -30936,57385 -30806,57
 Nordufer: neue Fahrradstraße geplant	?::projected 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831 6929,14845 7000,14832 7129,14787
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~05-06-2025-b103-knotenpunkt-l-155-bis-meyenburg (bis 30.10.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~14-10-2025-b103-zwischen-knotenpunkt-l-155-bis-meyenburg
 #: next_check: 2026-10-30
 B103 bis Meyenburg: Radweg geplant	? -71558,93501 -71361,94170 -71170,96717 -71130,96866 -71051,97421 -70910,98104 -70552,98832
 # 
@@ -9624,6 +9619,12 @@ Odernheimer Str.: Zebrastreifen geplant	? 28518,1365 28545,1373 28540,1350
 #: last_checked: 2025-10-08 (BVV-Drucksache)
 #: check_frequency: 120d
 Crellestr.: Benennung in Lucie-Leydicke-Platz geplant	? 7770,9336 7836,9413 7882,9490
+# 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2025/vzbbvv1299_vi_tempo_30_und_zebrastreifen_cecilienstr.pdf
+#: priority: #D
+#: last_checked: 2025-10-14 (BA-Beschluss)
+#: check_frequency: 360d (nach Abarbeitung anderer FGÜs)
+Cecilienstr.: wird hier ein Zebrastreifen angelegt?	? 21956,13665 21918,13720 21977,13709
 # 
 #: section ^^^
 #: ignore ^^^
