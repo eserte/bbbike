@@ -15,6 +15,7 @@ use strict;
 use warnings;
 use FindBin;
 
+use Getopt::Long;
 use LWP::UserAgent;
 use JSON::PP;
 use lib "$FindBin::RealBin/..";
@@ -48,6 +49,21 @@ my $min_lon = 13.051179;
 my $max_lon = 13.764158;
 my $min_lat = 52.337621;
 my $max_lat = 52.689878;
+
+my $mvt_impl = 'pl';
+
+GetOptions(
+    "cache!" => \$do_cache,
+    "bbox=s" => \my $bbox,
+    "mvt-impl=s" => \$mvt_impl,
+)
+    or die "usage: $0 [--[no]cache]] [--mvt-impl pl|py] [--bbox minlon,minlat,maxlon,maxlat] YYYYMMDD-[YYYYMMDD]\n";
+
+if ($bbox) {
+    my @fields = split /,/, $bbox;
+    die "--bbox must have four fields\n" if @fields != 4;
+    ($min_lon,$min_lat,$max_lon,$max_lat) = @fields;
+}
 
 my $date_range = shift;
 my $date_from = "";
@@ -151,9 +167,13 @@ for my $tile (@tiles) {
 	}
     }
 
-    # Call Python script
-#    my $json = `python3 $FindBin::RealBin/parse_mvt_sequences.py $file "$date_from" "$date_to"`;
-    my $json = `$^X $FindBin::RealBin/parse_mvt_sequences.pl $file "$date_from" "$date_to"`;
+    # Call Python or Perl script for mvt/protobuf decoding
+    my $json;
+    if ($mvt_impl eq 'py') {
+	$json = `python3 $FindBin::RealBin/parse_mvt_sequences.py $file "$date_from" "$date_to"`;
+    } else {
+	$json = `$^X $FindBin::RealBin/parse_mvt_sequences.pl $file "$date_from" "$date_to"`;
+    }
     my $results = eval { decode_json($json) };
     if ($results && ref $results eq 'ARRAY') {
 	for my $seq (@$results) {
