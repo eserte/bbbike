@@ -2032,13 +2032,13 @@ Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur i
 #: check_frequency: 180d
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected 1139,3876 1159,3915 1191,3997 1221,4071 1240,4126 1254,4170 1283,4260 1297,4311 1304,4334 1370,4547 1411,4654 1441,4741 1447,4757 1450,4766 1462,4802 1479,4853 1511,4955
 # REMOVED (realisiert) --- Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 1511,4955 1573,5152
-#: last_checked: 2025-04-23
+#: last_checked: 2025-09-19 (mapillary)
 #: check_frequency: 180d
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1573,5152 1607,5259 1640,5383 1652,5426 1714,5722 1736,5850 1746,5922 1757,5976
 #: by: https://www.infravelo.de/projekt/clayallee-1/ (zwischen Im Dol und Finkenstr., Asphaltierung + Verbreiterung auf 2m) (3. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (abgeschlossen)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1376641.php (Verbreiterung auf 2,30m; planmäßig bis zum 30.11.2023)
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/radweg-clayallee-wird-saniert_a396988
-#: last_checked: 2025-04-23 vvv
+#: last_checked: 2025-09-19 (mapillary) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2023-11-30
 # REMOVED (hier realisiert) --- Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1757,5976 1862,6297
@@ -9328,33 +9328,16 @@ Römerweg - Cäsarstraße - Hentigstraße: Fahrradstraße wird eingerichtet	?::projec
 # 
 # REMOVED (ja) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1557500.php (12. bis 23. Mai 2025, Sperrung auch für Radverkehr (allerdings sehr wenige Routings)) --- #: next_check: 2025-05-23 --- Maratstr.: Instandsetzung, danach bessere Qualität?	? 20361,14118 20371,14204
 # 
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11900 (Forderung: bis Ende 2024)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/kiezblock-antonkiez-1426658.php (Realisierung im Laufe des Jahres 2025)
-#: by: https://www.kiezblocks.de/anton/
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1606331.php (ab 13.10.2025, Abschluss der Arbeiten bis Ende 2025)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20251013_antonkiez_maxstr_vzp_web.pdf
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1607548.php (neuer Stadtplatz)
-#: by: https://maxstrasse.platzgruppe.org/
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_43_2705_2760_online.pdf (Teileinziehung)
-#: osm_watch: way id="4555099" version="26"
-#: osm_watch: note 5006164 1
-#: note: Anton-Kiezblock
-#: also_indoor: traffic (none)
-#: last_checked: 2025-10-10 (BA-Seite zum Antonkiez: in Anhörung) vvv
-#: check_frequency: 14d (traffic)
-#: next_check: 2025-12-31
-Maxstr.: Fußgängerzone (Radfahrer frei)	?::projected 7738,15838 7781,15804
+#: next_check_id: ANTONKIEZBLOCK-2025
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20250707_antonkiez_anton_ruhepl_vzk_sk_web.pdf
 #: priority: #D
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-12-31
 Antonstr./Ruheplatzstr.: Modalfilter geplant	?::projected 7488,15612 7518,15605 7549,15599
-#: priority: #D
+# REMOVED --- #: priority: #D
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 Prinz-Eugen-Str./Adolfstr./Plantagenstr.: Modalfilter geplant	?::projected 7783,15569 7796,15590 7813,15615
-#: last_checked ^^^
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-05-2025-b103-gantikow-bis-vehlow (Juli 2025 - Dezember 2026)
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/Kartenausschnitt%20B103.png
@@ -11613,6 +11596,7 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=772611#post772611
 #: by: http://www.studio-wessendorf.de/wessendorf/Kabelwerk_Koepenick
 #: by: https://entwicklungsstadt.de/tesla-dieses-gelaende-in-koepenick-soll-standort-fuer-entwicklungszentrum-werden/
+#: by: https://www.buwog.de/wohnbauprojekte/berlin-friedrichshagener-strasse (noch kein Fertigstellungsdatum)
 #: osm_watch: way id="37588146" version="17"
 #: XXX auch interessant: möglicher Uferweg unter der Salvador-Allende-Brücke bis zum Katzengrabensteg
 #: last_checked: 2025-08-27
