@@ -32117,7 +32117,7 @@ EOF
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-10-14
+#: last_checked: 2025-10-19
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -38036,7 +38036,8 @@ EOF
 #      text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, voraussichtlich bis Ende Juni 2024, vielleicht wird verlängert',
 #      text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, vermutlich bis Ende August 2024, vielleicht wird verlängert',
 #      text  => 'Archibaldweg: Straße gesperrt, auch für Fußgänger, Ende der Bauarbeiten unbekannt',
-       text  => 'Archibaldweg: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
+#      text  => 'Archibaldweg: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
+       text  => 'Archibaldweg: Durchfahrt und Durchgang offiziell noch verboten (Stand Mitte Oktober 2025)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
@@ -38053,7 +38054,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13075/docs/HZ_berlin-lichtenberg_eue_20230630ne.pdf (alte Sperrung, bis 24.07.2023 17:00)
 #: note: Halteverbotsschilder gelten bis zum 30.06.2024; am Haltestellenaushang steht "für etwa 6 Monate" (ab Anfang Januar 2024); mittlerweile Halteverbote bis 31.07.2025; laut DB-Mail bis 30. September (2025) "angedacht"; mittlerweile Halteverbotsschilder bis 30.09.2025, Bauzäune weggeschoben, so dass Radfahrer passieren können, Baustellenbereich neu asphaltiert
 #: priority: #B
-#: last_checked: 2025-10-14
+#: last_checked: 2025-10-19
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (DB-Mail, Halteverbotsschilder)
 	2::inwork 15777,10897 15820,10916 15870,10938
@@ -40757,7 +40758,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-10-14
+#: last_checked: 2025-10-19
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -49392,11 +49393,13 @@ EOF
      },
      { from  => 1752319411, # 2025-07-12 13:23
        until => undef, # $isodate2epoch->("2025-10-02 20:00:00"), # 1759355999, # 2025-10-01 23:59
-       text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025, evtl. wird die Sperrung verlängert',
+#      text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025, evtl. wird die Sperrung verlängert',
+       text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Mitte Oktober 2025)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-09-30
+#: XXX Mittlerweile kann die Durchfahrt möglich sein (gesehen 2025-10-19 Sun 11:53)
+#: last_checked: 2025-10-19
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
@@ -49494,7 +49497,7 @@ EOF
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-10-14
+#: last_checked: 2025-10-19
 #: check_frequency: 30d
 #: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -49710,7 +49713,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: last_checked: 2025-10-13
+#: last_checked: 2025-10-19
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50046,16 +50049,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1760872740, # undef, # XXX
        text  => 'Melchiorstr.: Markierungsarbeiten für Fahrradstraße, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: MELCHIOR-2025
 #: by: https://www.infravelo.de/projekt/melchiorstrasse/ (3. Quartal 2025 - 4. Quartal 2025)
-#: add_fragezeichen: Ist die Fahrbahn wieder offen?
-#: osm_watch: note 3954739 13
-#: last_checked: 2025-10-07
-#: check_frequency: 7d
+# REMOVED (offen) --- #: add_fragezeichen: Ist die Fahrbahn wieder offen? --- #: osm_watch: note 3954739 13 --- #: last_checked: 2025-10-07 --- #: check_frequency: 7d
 # REMOVED ---	q4::inwork 11917,11186 11726,11265
 	q4::inwork 11726,11265 11542,11342 11507,11355
 EOF
@@ -50241,7 +50241,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-18
+#: last_checked: 2025-10-19
 	q4::inwork 14641,10552 14608,10409 14558,10264
 EOF
      },

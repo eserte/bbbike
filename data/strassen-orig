@@ -1377,7 +1377,7 @@ Naunynstr.	N 11329,10787 11301,10783
 Michaelkirchstr.	N 11491,11396 11569,11587
 Michaelkirchstr.	NH 11569,11587 11676,11839
 An der Michaelbrücke	NH 11676,11839 11716,11914 11764,12001
-Melchiorstr.	N 11917,11186 11726,11265 11542,11342 11507,11355 11451,11378 11415,11392
+Melchiorstr.	N 11917,11186 11726,11265 11542,11342
 Lichtenberger Str.	H 11764,12001 11809,12078 11872,12185 11920,12266 12006,12464 12028,12519
 Lichtenberger Str.	H 12050,12616 12064,12673 12112,12861 12122,13029 12126,13088 12139,13162 12163,13295
 Lichtenberger Str. [Wohngebiet]	N 11867,12284 11947,12494
@@ -1427,6 +1427,8 @@ Michaelkirchplatz	NH 11349,11227 11473,11180
 Michaelkirchplatz	N 11473,11180 11542,11342
 #: note: Tempo-20-Zone
 Michaelkirchplatz	N 11507,11355 11514,11372 11491,11396
+#: note: Tempo-20-Zone außerhalb der Fahrradstraße
+Michaelkirchplatz	N 11542,11342 11507,11355 11451,11378 11415,11392
 Mariannenplatz	NN 11893,11074 11854,10972 11819,10942 11805,10899 11805,10858 11804,10846 11772,10764
 Mariannenplatz	N 11772,10764 11760,10732 11781,10696 11824,10708 11839,10736 11899,10886 11961,11041 11986,11118 11944,11152 11917,11186
 (Mariannenplatz - Bethaniendamm)	N 11986,11118 12010,11224
@@ -15997,7 +15999,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-10-14
+#: last_checked: 2025-10-19
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16391,7 +16393,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="19"
-#: last_checked: 2025-10-14
+#: last_checked: 2025-10-19
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

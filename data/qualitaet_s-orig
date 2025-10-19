@@ -303,7 +303,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-09-30
+#: last_checked: 2025-10-19
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -2438,7 +2438,7 @@ Selkestr.: Asphalt	Q0 12685,7497 12703,7370
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0- 15253,10171 15199,10211 15134,10243 15101,10263
 Flaschenkai: Parkweg bzw. Betonpflaster	Q0- 15101,10263 15044,10297 14977,10348 14892,10411
-Flaschenkai: Beton	Q0 14892,10411 14864,10451
+Flaschenkai: Beton	Q0- 14892,10411 14864,10451
 Flaschenkai: Beton mit Unebenheiten	Q1- 14864,10451 14861,10467 14884,10497
 Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15138,10638 15200,10600
 Uferweg: Parkweg	Q1- 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048
@@ -2464,7 +2464,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: XXX möglicherweise Änderung des Wegbelags
 #: osm_watch: way id="176112031" version="17"
 #: osm_watch: way id="640883366" version="6"
-#: last_checked: 2025-07-02
+#: last_checked: 2025-10-19
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15448,10397 15457,10342 15496,10277 15518,10234 15599,10206 15606,10179 15645,10147 15713,10035 15786,9957 15781,9933 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -13685,10 +13685,9 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17659,8698 17639,8627
 Adolf-Wermuth-Allee: Asphalt	Q0 17639,8627 17619,8558 17599,8485 17581,8422
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2023-12-07 --- #: check_frequency: 14d
 Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 17588,8413
-#: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2025-09-21
-#: check_frequency: 90d
-An der Waldsiedlung: Baustraße	Q2- 17682,8464 17652,8349
+# REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2025-09-21 --- #: check_frequency: 90d
+#: historical_note: bis Herbst 2025: Baustraße, Q2-
+An der Waldsiedlung: Asphalt	Q0 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17674,8738 17668,8696
 (Weg in der Parkstadt Karlshorst): Asphalt	Q0 17449,8720 17460,8735 17631,8743 17674,8738 17810,8700 17851,8662
@@ -14193,7 +14192,7 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-10-14
+#: last_checked: 2025-10-19
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018
