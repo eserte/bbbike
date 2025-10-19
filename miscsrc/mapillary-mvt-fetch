@@ -1,0 +1,167 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2025 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# WWW:  https://github.com/eserte/bbbike
+#
+
+use strict;
+use warnings;
+use FindBin;
+
+use LWP::UserAgent;
+use JSON::PP;
+use lib "$FindBin::RealBin/..";
+use BBBikeYAML qw(LoadFile);
+
+use POSIX qw(floor strftime);
+use Math::Trig;
+
+sub latlon_to_tile {
+    my ($lat, $lon, $zoom) = @_;
+    my $lat_rad = deg2rad($lat);
+    my $n = 2 ** $zoom;
+    my $x_tile = floor(( $lon + 180.0 ) / 360.0 * $n);
+    my $y_tile = floor((1 - (log(tan($lat_rad) + 1 / cos($lat_rad)) / pi())) / 2 * $n);
+    return ($x_tile, $y_tile);
+}
+
+# like in mapillary-v4-fetch
+my $do_cache = 1;
+my $cache_time = 8 * 3600; # seconds
+
+my $conf_file = "$ENV{HOME}/.mapillary";
+my $conf = LoadFile $conf_file;
+my $client_token = $conf->{client_token} || die "Can't get client_token from $conf_file";
+
+my @tiles = ();
+my $z = 12;
+
+# XXX get from Geography::Berlin_DE or provide by option
+my $min_lon = 13.051179;
+my $max_lon = 13.764158;
+my $min_lat = 52.337621;
+my $max_lat = 52.689878;
+
+my $date_range = shift;
+my $date_from = "";
+my $date_to   = "";
+if ($date_range) {
+    if ($date_range =~ /^(\d{8})(?:-|\.\.)(\d{8})?$/) {
+	$date_from = $1;
+	$date_to   = $2 if defined $2;
+    } else {
+	die "Wrong date range syntax, must be: YYYYMMDD- or YYYYMMDD-YYYYMMDD.\n";
+    }
+}
+if (!$date_from) {
+    $date_from = strftime "%Y%m%d", localtime(time-86400);
+    warn "INFO: date range not given, default to $date_from-$date_to\n";
+}
+die "Too many arguments" if @ARGV;
+
+my ($min_x, $min_y) = latlon_to_tile($min_lat, $min_lon, $z);
+my ($max_x, $max_y) = latlon_to_tile($max_lat, $max_lon, $z);
+
+($min_x,$max_x) = ($max_x,$min_x) if $max_x < $min_x;
+($min_y,$max_y) = ($max_y,$min_y) if $max_y < $min_y;
+
+for my $x ($min_x .. $max_x) {
+    for my $y ($min_y .. $max_y) {
+	push @tiles, [$z,$x,$y];
+    }
+}
+
+warn "INFO: we need to fetch and process " . scalar(@tiles) . " tile(s)...\n";
+
+my $ua;
+if ($do_cache) {
+    if (!eval { require LWP::UserAgent::WithCache; require HTTP::Date; 1 }) {
+	die "Module missing, please install. Error: $@";
+    }
+    # need to patch set_cache method
+    my $orig_set_cache = \&LWP::UserAgent::WithCache::set_cache;
+    {
+	no warnings 'redefine';
+	*LWP::UserAgent::WithCache::set_cache = sub {
+	    my($self, $uri, $res) = @_;
+
+	    if ($res->header('X-Died')) {
+		warn "X-Died header encountered, do not write to cache...\n";
+		return;
+	    }
+	    if ($res->header('Client-Aborted')) {
+		warn "Client-Aborted header encountered, do not write to cache...\n";
+		return;
+	    }
+
+	    my $expires = time + $cache_time;
+	    my $expires_formatted = HTTP::Date::time2str($expires);
+	    $res->header('Expires', $expires_formatted);
+
+	    $orig_set_cache->($self, $uri, $res);
+	};
+    }
+    my %cache_opt = (
+        'namespace'          => 'lwp-cache',
+	'cache_root'         => "$ENV{HOME}/.cache",
+        'default_expires_in' => $cache_time,
+    );
+    $ua = LWP::UserAgent::WithCache->new(\%cache_opt);
+} else {
+    $ua = LWP::UserAgent->new(keep_alive => 1);
+}
+
+$ua->agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0");
+
+print <<'EOF';
+#: map: polar
+#: line_arrow: last
+#: 
+EOF
+
+for my $tile (@tiles) {
+    my ($z, $x, $y) = @$tile;
+    my $file = "/tmp/tile_${z}_${x}_${y}.mvt";
+    warn "INFO: fetch and process $file...\n";
+    #if (!-s $file) { # always use cached version
+    {
+	my $url = "https://tiles.mapillary.com/maps/vtp/mly1_public/2/$z/$x/$y?access_token=$client_token";
+	my $response = $ua->get($url);
+	if ($response->is_success) {
+	    my $content = $response->content;
+	    # XXX workaround for HTTP::Response bug https://github.com/libwww-perl/HTTP-Message/issues/48
+	    if ($do_cache && $HTTP::Response::VERSION <= 7.00) {
+		$content =~ s{\n$}{};
+	    }
+	    open my $fh, '>', "$file~" or die $!;
+	    binmode $fh;
+	    print $fh $content;
+	    close $fh;
+	    rename "$file~", $file or die $!;
+	} else {
+	    warn "ERROR: Failed for $url:\n" . $response->dump . "\n";
+	    next;
+	}
+    }
+
+    # Call Python script
+#    my $json = `python3 $FindBin::RealBin/parse_mvt_sequences.py $file "$date_from" "$date_to"`;
+    my $json = `$^X $FindBin::RealBin/parse_mvt_sequences.pl $file "$date_from" "$date_to"`;
+    my $results = eval { decode_json($json) };
+    if ($results && ref $results eq 'ARRAY') {
+	for my $seq (@$results) {
+	    print "#: url: $seq->{url}\n";
+	    print "start_captured_at=$seq->{start_captured_at} creator=$seq->{creator} make=$seq->{make} end_captured_at=$seq->{end_captured_at} start_id=$seq->{start_id} sequence=$seq->{sequence}\tX " . join(" ", map { "$_->[1],$_->[0]" } @{ $seq->{coordinates} }) . "\n";
+	}
+    }
+    # keep cached file!        unlink $file; # Optional: cleanup
+}
+
+__END__
