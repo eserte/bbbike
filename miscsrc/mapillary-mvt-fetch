@@ -125,7 +125,7 @@ if ($do_cache) {
 	};
     }
     my %cache_opt = (
-        'namespace'          => 'lwp-cache',
+        'namespace'          => 'mapillary-mvt-fetch',
 	'cache_root'         => "$ENV{HOME}/.cache",
         'default_expires_in' => $cache_time,
     );
@@ -152,7 +152,7 @@ for my $tile (@tiles) {
 	my $response = $ua->get($url);
 	if ($response->is_success) {
 	    my $content = $response->content;
-	    # XXX workaround for HTTP::Response bug https://github.com/libwww-perl/HTTP-Message/issues/48
+	    # workaround for HTTP::Response bug https://github.com/libwww-perl/HTTP-Message/issues/48, fixed in 7.01
 	    if ($do_cache && $HTTP::Response::VERSION <= 7.00) {
 		$content =~ s{\n$}{};
 	    }
