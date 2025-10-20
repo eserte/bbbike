@@ -878,7 +878,15 @@ Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 79
 # 
 ### Charlottenburg ###
 # 
-# REMOVED --- #: next_check_id: RANKE-2023 --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
+#: next_check_id: RANKE-2023
+# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
+#: note: Länge des gesperrten Bereichs etwa 50m
+#: next_check: 2025-11-08
+#: valid: -20251108
+Rankestr.: Einmündungsbereich Breitscheidplatz wegen Kraneinsatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
 # 
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
@@ -1011,6 +1019,8 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
 ### Rudow ###
 #: next_check_id: STUBENRAUCH-2025
+#: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9872 (Anfrage)
+#: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
 #: last_checked: 2025-10-07 (krickstadt) vvv
 #: next_check: 2026-10-31 vvv
 Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
@@ -1020,6 +1030,14 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: last_checked ^^^
 # 
 ### Lichtenberg ###
+# 
+#: next_check_id: ALFREDKOWALKE-2025
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Mitte November 2025, hier nur Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lxnh2hsj23
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifwz3wmzuknwwd4xdfam555j65uqwce66iixldjvwr6lamkmawiwi@jpeg
+#: next_check: 2025-11-15
+#: valid: -20251120
+Alfred-Kowalke-Str.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Mitte November 2025	q2::inwork; 18061,11240 18202,11253 18229,11256 18280,11266
 # 
 # REMOVED --- #: also_indoor: traffic (ex-H,G,ex-T)
 # REMOVED --- #: source_id: viz2021:13.518258,52.528778,01.04.2025,09:44 (hier nur Kfz-Verkehr, bis 30.04.2025) (inaktiv)

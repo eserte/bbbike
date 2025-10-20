@@ -4022,6 +4022,14 @@ Drängelgitter	BNP:3::trailer=10 113,7
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: ALFREDKOWALKE-2025
+#: next_check: 2025-11-15 vvv
+#: valid: -20251120 vvv
+Alfred-Kowalke-Str. [Mittelstreifen]: Bauarbeiten, Übergang gesperrt, voraussichtlich bis Mitte November 2025	2::inwork; 18202,11253 18200,11269
+Alfred-Kowalke-Str. [Mittelstreifen]: Bauarbeiten, Übergang gesperrt, voraussichtlich bis Mitte November 2025	3 18202,11253 18229,11256 18200,11269
+#: valid ^^^
+#: next_check ^^^
+# 
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="1"
@@ -4864,18 +4872,18 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
-#: osm_watch: way id="1084269868" version="16"
+#: osm_watch: way id="1084269868" version="17"
 #: last_checked: 2025-10-19
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
-#: osm_watch: way id="1061057025" version="11"
+#: osm_watch: way id="1061057025" version="12"
 #: last_checked: 2025-10-19
 #: check_frequency: 30d
 An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die Gehwege gebaut werden	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
-#: osm_watch: note 4522174 2
+#: osm_watch: note 4522174 3
 #: last_checked: 2025-10-19
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-09-20 (entwicklungsstadt)

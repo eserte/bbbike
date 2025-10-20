@@ -6766,7 +6766,21 @@ Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: GROSSBEEREN-2023
+# REMOVED (nun wieder alte Einbahnstraßenregelung, offen für Radfahrer) --- #: also_indoor: traffic (B) --- #: last_checked: 2024-01-25 --- #: source_id: viz2021:13.385636,52.499818,31.01.2024,06:00 (nur Kfz-Verkehr, bis 06.02.2024) (inaktiv) (bis 05.03.2024) (inaktiv) ---	q3::inwork 9178,10451 9192,10528
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Ende Oktober 2025, hier nur Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lxweohcv2c
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie3mmwogk6b3mmhte2wkcdkk2ukjvcohy3cradu2z2lv2kviqhbtm@jpeg (keine Ausnahme zu sehen)
+#: next_check: 2025-10-20
+	q4::inwork 9192,10528 9178,10451 9158,10342
+',
+         'from' => 1760824800,
+         'id' => 3974,
+         'text' => 'Großbeerenstr.: Fahrbahnsanierung, Fahrbahn zwischen Ida-Wolff-Platz und Hallesches Ufer gesperrt, bis Ende Oktober 2025',
+         'type' => 'handicap',
+         'until' => 1761951599
+       },
        undef,
        undef,
        undef,
@@ -7060,6 +7074,8 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
 #: source_id: viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025)
+#: source_id: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum)
+#: source_id: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T)
 #: last_checked: 2025-08-27 (bahninfo-forum)
@@ -7418,8 +7434,8 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
          'data' => '#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13021 (Antrag)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13066 (Anfrage)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13178 (Antrag)
-#: osm_watch: way id="27457006" version="27"
-#: last_checked: 2025-08-27 (osm)
+#: osm_watch: way id="27457006" version="28"
+#: last_checked: 2025-10-16 (osm)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',

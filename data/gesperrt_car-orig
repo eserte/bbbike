@@ -41,15 +41,15 @@ Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 #: by: https://viz.berlin.de/aktuelle-meldungen/temporare-einbahnstrassen-in-der-lindenallee-und-ahornallee/
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9197 (Vorlage zur Kenntnisnahme, kein Endedatum)
 #: priority: #D vvv
-#: check_frequency: 270d vvv
+#: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2025-04-30 vvv
 # REMOVED --- #: valid: -20250430 vvv
 #: osm_watch: way id="38763874" version="14"
 #: source_id: viz2021:13.275802,52.518347,11.04.2025,17:48 (bis 30.04.2025) (inaktiv)
-#: last_checked: 2025-09-24
+#: last_checked: 2025-10-18 (mapillary)
 Lindenallee: temporäre Einbahnstraßenregelung für Kfz	1 1664,12332 1690,12407
 #: osm_watch: way id="1092670182" version="9"
-#: last_checked: 2025-09-24 vvv
+#: last_checked: 2025-10-18 (mapillary) vvv
 Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1768,12174 1788,12252 1799,12291 1822,12372
 #: osm_watch: way id="4515884" version="17"
 Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224 1788,12252

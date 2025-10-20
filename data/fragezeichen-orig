@@ -1784,7 +1784,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 # REMOVED --- #: XXX Während der Bauarbeiten geplant: Einbahnstraßenregelung (nur für Kfz?), außerdem Einbahnstraßenregelung in der Rüdigerstr. bis zur Dietlindestr., Radverkehrsführung via Hochbord)
 #: XXX Markierungen existieren, überwiegend mit Grünbeschichtung (außer Bushaltestellen), teilweise mit Leitboys, noch keine Ausschilderung
 #: osm_watch: way id="93221335" version="27"
-#: osm_watch: note 4347252 8
+#: osm_watch: note 4347252 9
 # REMOVED --- #: also_indoor: traffic (G,B,T,W) [alle ungenau/falsch]
 #: last_checked: 2025-10-17
 # REMOVED --- #: check_frequency: 21d
@@ -4009,7 +4009,7 @@ Zwieseler Hof: neue Straße geplant	?::inwork 19790,10298 19789,10403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/bebauungsplan.839347.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/b110070191b_mit_namen_pl.pdf
 #: osm_watch: way id="855615663" version="5"
-#: last_checked: 2025-06-26 (mapillary)
+#: last_checked: 2025-10-18 (mapillary)
 #: check_frequency: 360d
 Bebauungsplan 4-67: wird der geschlossene Teil der Nußbaumallee geöffnet?	? 1113,12392 1206,12364
 # 
@@ -7215,6 +7215,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://www.nd-aktuell.de/artikel/1191677.bvg-sperrung-der-u-bahnlinie-in-berlin-koennte-noch-laenger-dauern.html (bis 1. Mai 2027?)
 #: by: https://www.morgenpost.de/bezirke/reinickendorf/article409192394/sorgenkind-tegel-so-geht-es-voran-bei-der-sanierung-der-u6.html
 #: by: https://www.tagesspiegel.de/hinterher-ist-man-immer-schlauer-was-lief-schief-bei-der-u6-sanierung-im-berliner-norden-14377247.html (bis Ende 2026?)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/u6-nordstreckensanierung (Wiederinbetriebnahme bis 2026, Fertigstellung der Brücke im Sommer 2025)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022) (inaktiv)
 #: source_id: viz2021:13.307035,52.568102,23.02.2023,07:00 (Verschwenkung, bis 13.10.2023) (bis 31.03.2024) (bis 28.03.2024) (bis 31.03.2025) (bis 30.05.2025) (bis 12.06.2025) (bis 31.12.2025) (inaktiv)
 #: source_id[inactive]: bvg2021:u6#BVG311138_0
@@ -7683,10 +7684,10 @@ Simplonstr.: Teileinziehung geplant	? 14181,11434 14254,11377
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12003 (Realisierung des Teilgebietes C: 2025)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_34_2201_2272_online.pdf (Teileinziehung)
-#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12133 (Vorlage zur Kenntnisnahme)
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12133 (Vorlage zur Kenntnisnahme) (Beschluss Überweisung)
 #: osm_watch: note 4919919 3
 #: last_checked: 2025-09-30 vvv
-#: check_frequency: 30d vvv
+#: check_frequency: 60d vvv
 #: next_check: 2025-12-31 (BVV-Drucksache) vvv
 Simplonstr.: Teileinziehung geplant	? 13996,11631 13992,11605 14031,11569
 Gabriel-Max-Str.: Teileinziehung geplant	? 14065,11605 14049,11553
@@ -8027,9 +8028,9 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173
 #: XXX mittlerweile wegen Hochbauarbeiten nebenan ein paar Meter gemeinsamer Geh- und Radweg am Ende der Ehrlichstr. (ist mittlerweile vorbei; war aber vermutlich nur für den Hochbau nebenan)
 #: last_checked: 2025-10-19
 #: check_frequency: 180d
-#: next_check: 2026-03-01 (pardok, geplanter Beginn der Bauarbeiten)
+#: next_check: 2026-03-01 (pardok+bahninfo, geplanter Beginn der Bauarbeiten)
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten)
-Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird enger, neue Ampel am Kreuzungspunkt Ehrlichstr.	?::projected 17736,8850 17762,8855 17904,8924
+Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird enger	?::projected 17736,8850 17762,8855 17904,8924
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/marggraffbruecke-erhaelt-ab-herbst-einen-ersatzneubau_a335078 (ab 3. Quartal 2022, Bauzeit drei Jahre)
@@ -8184,6 +8185,8 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://entwicklungsstadt.de/waisentunnel-berlin-ersatzneubau-sichert-stabilitaet-des-u-bahnnetzes/
 #: by: https://www.nd-aktuell.de/artikel/1194529.u-bahn-u-mexikoplatz-baustart-in-elf-monaten.html (Planfeststellungsbeschluss noch im Oktober 2026?)
 #: by: https://www.bahninfo-forum.de/read.php?9,818927,840301#msg-840301 (Baustart ab Dez 2025 für vier Jahre)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/waisentunnel
+#: by: http://bvg-projekt.de/projekte/ersatzneubau-waisentunnel-spreeunterquerung-berlin-mitte-bim-pilot-1-0/
 #: last_checked: 2025-10-07 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-12-31 (Tsp, entwicklungsstadt: Baustart) vvv
@@ -10259,7 +10262,7 @@ Parkanlage: wann wird der östliche/südöstliche Teil fertig? genaue Lage? Name?	?
 #: source_id: viz2021:13.50573,52.484383,30.06.2025,08:00 (bis 22.07.2025) (inaktiv)
 #: source_id: viz2021:13.505734,52.484227,22.07.2025,10:00 (angeblich KGA-Anbindung gesperrt, falsch positioniert?, bis 05.09.2025) (inaktiv)
 #: source_id: viz2021:13.505734,52.484227, (angeblich KGA-Anbindung gesperrt, falsch positioniert?, bis 02.10.2025) (bis 17.10.2025) (bis 31.10.2025)
-#: osm_watch: note 4715040 4
+#: osm_watch: note 4715040 5
 #: note: mittlerweile wurde die Sperrung für den Kfz-Verkehr aufgehoben, vermutlich wegen der Sperrung der Hochbrücke --- was bedeutet das für den Ampelbau?; mittlerweile scheint es in einigen Tagen weiterzugehen, siehe BVG-Meldung; Fahrbahn Richtung Westen gesperrt, gemeinsamer Geh- und Radweg auf dem Hochbord; mittlerweile ist die Fahrbahn Richtung Osten gesperrt, bis Anfang September 2025
 #: last_checked: 2025-10-19
 #: check_frequency: 30d
@@ -12259,6 +12262,7 @@ Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::project
 #: by: https://www.tagesspiegel.de/berlin/u-bahn-zum-berliner-mexikoplatz-u3-verlangerung-wird-60-millionen-euro-teurer--und-dabei-wird-es-nicht-bleiben-14356481.html
 #: by: https://entwicklungsstadt.de/u3-verlaengerung-berlin-kosten-steigen-auf-160-millionen-euro/
 #: by: https://www.nd-aktuell.de/artikel/1194529.u-bahn-u-mexikoplatz-baustart-in-elf-monaten.html (Baustart am 1.9.2026)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/u3-verlaengerung
 #: next_check: 2030-12-31 (Tsp)
 U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,3442 -1105,3303
 # 
@@ -13431,6 +13435,10 @@ Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
 Stützkow - Alt-Gatow: Qualität?	? 61576,66208 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
 #: XXX als B1 kennzeichnen!
 Ortsumgehung Küstrin-Kietz: für Radfahrer befahrbar? Qualität?	? 90278,18738 90572,19032 91116,19713 91940,20028 92606,20056 93050,20293 93286,20636 93405,20640
+#: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=86652
+#: last_checked: 2025-10-20 (Planfeststellungsverfahren)
+#: check_frequency: 1000d
+Küstrin: neue Brücke geplant	? 93286,20636 93589,21001
 Basdorfer Hauptstr. (Basdorf): Qualität? Ist ein Radweg vorhanden?	? 13568,34935 14455,35459
 #: XXX Name? laut osm asphaltierter Radweg:
 Qualität?	? 14961,34974 16934,35474 17208,35436 17492,35450
