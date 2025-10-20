@@ -363,7 +363,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bˆdikerstr. verl‰ngert --- #: XXX hier wird ein asphaltierter B¸rgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-10-18 vvv
+#: last_checked: 2025-10-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: fr¸her: Gehweg f¸r Radfahrer frei, einige Sch‰den im Asphalt, RW1;
@@ -1379,7 +1379,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg gef¸hrt	RW4; 14196,
 #: XXX wann kommt die n‰chste Verkehrsumstellung?
 #: note: w‰hrend der Sperrung vom 9.-11.2.2024 war zumindest am Sa die ˆstliche Radspur f¸r Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-10-19 vvv
+#: last_checked: 2025-10-20 vvv
 #: check_frequency: 10d (neue Radverkehrsf¸hrung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt zum Ersatzneubau) vvv
@@ -3248,7 +3248,7 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am n‰chsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: historical_note: fr¸her, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
 #: historical_note: ganz fr¸her sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
-#: last_checked: 2025-10-18
+#: last_checked: 2025-10-20
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
@@ -4507,10 +4507,12 @@ neu asphaltiert	RW1; 22885,12580 22967,12647
 	RW4; 21139,11830 21135,11799 21108,11628
 # 
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Freigabe am 28. Oktober 2025 um 10:00 Uhr)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: last_checked: 2025-08-12 (mapillary) vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-11-30 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-10-28 (SenUVK-Seite) vvv
 provisorische Radspur	RW4; 21152,11945 21166,12023 21190,12193 21199,12258
 gemeinsamer Geh- und Radweg, Gehwegplatten und Asphalt	RW2; 21199,12258 21190,12193 21166,12023 21152,11945
 #: next_check ^^^
@@ -8200,7 +8202,6 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: bvg2024:m11#HIM_FREETEXT_293424 (kein Endedatum)
 #: source_id: adac:875632473 (bis 30.06.2026) (!) (neue ID -> inaktiv)
 #: source_id: adac:334221108 (bis 30.06.2026) (!) (neue ID -> inaktiv)
-#: source_id: viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026)
 #: source_id: viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026)
 #: source_id: viz2021:13.49537,52.43164, (Ampelanlage auﬂer Betrieb, kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.485714,52.424228, (bis 12.05.2026)

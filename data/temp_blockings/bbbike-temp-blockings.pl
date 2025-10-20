@@ -29568,8 +29568,8 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-10-18 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2025-10-20 vvv
+#: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
 # REMOVED (hier mittlerweile wieder offen) --- Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
@@ -29577,7 +29577,8 @@ Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829 15439,8839 15297
 # REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14321,9530 14332,9543 14384,9565 14478,9545
 # REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-Puschkinallee - Am Treptower Park: Engstellen, Umwege	q3::inwork 14318,9688 14316,9542 14321,9530 14347,9452 14398,9373
+Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14321,9530
+Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 14398,9373
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15298,8781 15343,8714 15378,8668
 	2::inwork 15181,8967 15245,8916
@@ -36412,7 +36413,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-10-10 (mapillary)
+#: last_checked: 2025-10-20
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36438,7 +36439,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-10-08 vvv
+#: last_checked: 2025-10-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -37177,7 +37178,7 @@ EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
        until => undef, # $isodate2epoch->("2024-04-30 17:00:00"), # undef, # 1667861999, # 2022-11-07 23:59
-       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Oktober 2025', # früher: nur bis Amalienstr.
+       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Ende November 2025', # früher: nur bis Amalienstr.
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOEN-2022
@@ -37200,7 +37201,8 @@ EOF
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2025-08-17 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
+# REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
+#: next_check: 2025-11-30 (BA-Seite) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -42995,7 +42997,9 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Ende Oktober 2025, hier nur Kfz-Verkehr)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lxweohcv2c
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie3mmwogk6b3mmhte2wkcdkk2ukjvcohy3cradu2z2lv2kviqhbtm@jpeg (keine Ausnahme zu sehen)
-#: next_check: 2025-10-20
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20251020 ("voraussichtlich noch diese Woche abgeschlossen sein", also bis 2025-10-24?)
+#: source_id: viz2021:13.38587,52.50069,20.10.2025,07:00 (bis 30.10.2025)
+#: next_check: 2025-10-24 (bereits am Fr fertig?)
 	q4::inwork 9192,10528 9178,10451 9158,10342
 EOF
      },
@@ -45870,7 +45874,7 @@ EOF
 #: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
 # REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
 #: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-10-08 vvv
+#: last_checked: 2025-10-20 (website) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-12-31 (tempelhoferfeld website, entwicklungsstadt) vvv
 # REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
@@ -46711,7 +46715,7 @@ EOF
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
 #: also_indoor: traffic (G[zu lang],T,re-H[zu kurz],ex-W[zu kurz])
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-20
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -46774,7 +46778,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2025-09-17 (traffic)
+#: last_checked: 2025-09-24 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -48032,7 +48036,7 @@ EOF
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
-#: last_checked: 2025-10-08 (website check) vvv
+#: last_checked: 2025-10-20 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -48803,7 +48807,7 @@ EOF
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025)
-#: last_checked: 2025-10-08 vvv
+#: last_checked: 2025-10-20 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-11-28 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -48868,7 +48872,7 @@ EOF
 EOF
      },
      { from  => 1748750400, # 2025-06-01 06:00
-       until => undef, # 1757800740, # 2025-09-13 23:59
+       until => 1760977816, # undef, # 1757800740, # 2025-09-13 23:59
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Leibnizstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025, evtl. wird die Sperrung verlängert',
@@ -48876,16 +48880,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.31773,52.5076,02.06.2025,06:00 (hier keine Erwähnung einer Einbahnstraße, bis 13.09.2025) (inaktiv)
-#: also_indoor: traffic (T)
-#: last_checked: 2025-10-14 (traffic) vvv
-#: check_frequency: 7d vvv
+#: also_indoor: traffic (ex-T)
+# REMOVED --- #: last_checked: 2025-10-20 (traffic) vvv --- #: check_frequency: 7d vvv
 # REMOVED --- #: note: bei rbb "Einbahnstraßenregelung"
 # REMOVED (hier nicht) --- Pestalozzistr.	q4::inwork; 4302,11232 4434,11227
 # REMOVED (nicht mehr?) --- Pestalozzistr.	q4::inwork; 4434,11227 4546,11217
 #: note: zwar ist an der Kantstr. ausgeschildert "Sackgasse, offen für Fußgänger und Radfahrer", allerdings gibt es keine Gehwegfreigabe im Baustellenbereich, es gibt auch keine Anrampungen oder Bordsteinabsenkungen
 Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1748926800, # 2025-06-03 07:00
@@ -50014,7 +50016,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,H[zu viel])
-#: last_checked: 2025-10-12
+#: last_checked: 2025-10-20 (daf)
 #: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 EOF
@@ -50247,7 +50249,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-19
+#: last_checked: 2025-10-20
 	q4::inwork 14641,10552 14608,10409 14558,10264
 EOF
      },
@@ -50484,19 +50486,19 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1606938.php
 #: by: https://marzahn-hellersdorf.com/teilsperrung-der-bruno-baum-strasse-in-marzahn-fahrbahnsanierung-vom-20-bis-24-oktober/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (hier nur Kfz-Verkehr)
+#: source_id: viz2021:13.55047,52.54247,20.10.2025,07:00 (bis 24.10.2025)
 Bruno-Baum-Str.	q4::inwork 20286,15382 20123,15293 19997,15122
 Kreuzungsbereich Bruno-Baum-Str./Pekrunstr. gesperrt	q3::inwork 19997,15122 19893,14947
 EOF
      },
      { from  => 1760637564, # 2025-10-16 19:59
-       until => 1761951600, # 2025-11-01 00:00
+       until => 1760975987, # keine Sperrung (mehr) # 1761951600, # 2025-11-01 00:00
        text  => 'Wildenbruchstr.: Wasserrohrbruch, Sperrung zwischen Wildenbruchbrücke und Weserstr., evtl. sind auch Radfahrer betroffen, bis 31.10.2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3c254ju4s2z (für zwei Wochen)
 #: also_indoor: traffic (G)
-#: source_id: viz2021:13.44469,52.48514, (bis 31.10.2025)
-#: source_id: LMS-BR:386838/72 viz2021:13.44469,52.48514, (bis 01.11.2025)
+#: source_id: LMS-BR:386838/72 viz2021:13.44469,52.48514, (bis 31.10.2025) (bis 01.11.2025) (inaktiv)
 Wildenbruchstr.	q4::inwork; 13227,8877 13193,8832 13138,8762 13105,8720 13033,8628
 EOF
      },
