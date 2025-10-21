@@ -43,7 +43,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-09-18 vvv
+#: last_checked: 2025-10-21 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="7"
@@ -69,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="23"
 #: osm_watch: way id="1072662717" version="27"
-#: last_checked: 2025-10-13
+#: last_checked: 2025-10-21
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -92,7 +92,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-10-07
+#: last_checked: 2025-10-21
 #: check_frequency: 90d
 #: next_check: 2026-08-22
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -512,7 +512,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-10-11
+#: last_checked: 2025-10-21
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -594,7 +594,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-10-04 vvv
+#: last_checked: 2025-10-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="16"
@@ -1163,7 +1163,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: osm_watch: note 4610083 1
 #: note: Länge der Engstelle nur etwa 40m-50m, deshalb q2 statt q3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-25 (mapillary)
+#: last_checked: 2025-06-26 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
@@ -5147,7 +5147,18 @@ Straßenbahnübergang	q3 17790,17126 17799,17145
 Straßenbahnübergang	q3 17861,17099 17866,17116
 Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
+#: next_check_id: FRANKFURTERALLEE-2025
+#: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025)
+#: last_checked: 2025-10-21 vvv
+#: check_frequency: 21d vvv
+#: next_check: 2025-12-05 vvv
+#: valid: -20251205
+Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
+#: valid: 20251205-
 Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
+#: last_checked ^^^
+#: check_frequency ^^^
+#: next_check ^^^
 Colbestr.: eng	q0- 14468,11992 14416,11815
 # 
 #: note: Ausschilderung: Gehweg, Radfahrer frei

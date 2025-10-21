@@ -565,7 +565,7 @@ Marggraffbrücke: Radfahrer Richtung Nordwesten müssen den gegenüberliegenden Rad
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-10-06 vvv
+#: last_checked: 2025-10-21 vvv
 #: next_check: 2027-09-30 vvv
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13481,13128 13434,13234 13383,13349
@@ -674,7 +674,8 @@ Landsberger Allee -> Franz-Jacob-Str.: Umweg zur Ampel	DH:len=60 14871,14087 147
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifnrtf62id4e4fytff3arjspi3xrerbr7joyhchtfste5fcesj5em@jpeg
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neuer-dauerstaus-am-alex-wegen-bauarbeiten-ist-eine-wichtige-strasse-ueber-wochen-gesperrt-li.2361493
 #: source_id: viz2021:13.416548,52.522138,09.10.2025,08:00 (bis 13.11.2025)
-#: last_checked: 2025-10-11
+#: note: wobei man beim Linksabbiegen in die Otto-Braun-Str. diese Meter sparen könnte...
+#: last_checked: 2025-10-21
 #: next_check: 2025-11-13
 #: valid: -20251113
 Alexanderstr.: Radfahrer Richtung Osten müssen auf die gegenüberliegende Straßenseite wechseln	DH:len=80 11033,13086 11139,13008 11226,12945
@@ -690,5 +691,15 @@ Stockweg - Krahmerstr.: Verbindung gesperrt, Umweg über 100m südlich gelegene Üb
 Krahmerstr. - Stockweg: Verbindung gesperrt, Umweg über 100m südlich gelegene Überquerungsmöglichkeit	DH:len=200:tl:h=q3,200 4566,3461 4523,3482
 #: next_check ^^^
 #: last_checked ^^^
+# 
+#: next_check_id: FRANKFURTERALLEE-2025
+#: last_checked: 2025-10-21 vvv
+#: check_frequency: 21d vvv
+#: next_check: 2025-12-05 vvv
+Frankfurter Allee -> Samariterstr.: Umwege wegen Bauarbeiten	DH:len=70:h=q3,70 14427,12197 14488,12188 14538,12371
+Samariterstr. -> Frankfurter Allee: Engstellen wegen Bauarbeiten	DH:h=q3,35 14538,12371 14488,12188 14523,12183
+#: last_checked ^^^
+#: check_frequency ^^^
+#: next_check ^^^
 # 
 #: temporary ^^^

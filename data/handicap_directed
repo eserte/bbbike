@@ -236,3 +236,5 @@ Landsberger Allee -> Franz-Jacob-Str.: Umweg zur Ampel	DH:len=60 14871,14087 147
 Alexanderstr.: Radfahrer Richtung Osten müssen auf die gegenüberliegende Straßenseite wechseln	DH:len=80 11033,13086 11139,13008 11226,12945
 Stockweg - Krahmerstr.: Verbindung gesperrt, Umweg über 100m südlich gelegene Überquerungsmöglichkeit	DH:len=200:tl 4523,3482 4566,3461
 Krahmerstr. - Stockweg: Verbindung gesperrt, Umweg über 100m südlich gelegene Überquerungsmöglichkeit	DH:len=200:tl:h=q3,200 4566,3461 4523,3482
+Frankfurter Allee -> Samariterstr.: Umwege wegen Bauarbeiten	DH:len=70:h=q3,70 14427,12197 14488,12188 14538,12371
+Samariterstr. -> Frankfurter Allee: Engstellen wegen Bauarbeiten	DH:h=q3,35 14538,12371 14488,12188 14523,12183

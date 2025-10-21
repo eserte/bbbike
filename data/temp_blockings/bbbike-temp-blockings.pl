@@ -408,11 +408,11 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => $isodate2epoch->("2024-11-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-12-22 23:59:59"),
+     { from  => $isodate2epoch->("2025-11-23 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-12-23 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2022-01-01T00:00:00"]], # 2020 wird der Weihnachtsmarkt nur in der Zitadelle stattfinden, 2021 auch
-       text  => 'Spandauer Weihnachtsmarkt, vom 25.11.2024 bis 22.12.2024',
+       text  => 'Spandauer Weihnachtsmarkt, vom 24.11.2025 bis 23.12.2025',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html
@@ -16819,8 +16819,8 @@ EOF
      { from  => $isodate2epoch->("2022-09-16 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 9, start => "2024-10-15T00:00:00"]], # findet 2023 nicht statt # 2024 wohl auch nicht
-       recurrence_prewarn_days => -37,
+       recurrences => [['yearly', days => 14, months => 9, start => "2025-10-15T00:00:00"]], # findet 2023 nicht statt # 2024 wohl auch nicht # 2025 wohl auch nicht
+#      recurrence_prewarn_days => -37,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -23576,6 +23576,7 @@ EOF
        until => $isodate2epoch->("2024-12-29 00:00:00"), # $isodate2epoch->("2021-12-29 23:59:59"), #
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]],
+       recurrence_prewarn_days => 14,
        text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 25.11.2024 - 29.12.2024',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26060,11 +26061,11 @@ EOF
 	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14919,14503 14989,14539 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2024-11-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-12-26 23:59:59"),
+     { from  => $isodate2epoch->("2025-11-23 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]], # findet 2020 nicht statt
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 25. November 2024 bis 26. Dezember 2024',
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 24. November 2025 bis 26. Dezember 2025',
        type  => 'handicap',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
        data  => <<EOF,
@@ -32150,7 +32151,7 @@ EOF
 # REMOVED --- #: next_check_id: CORONA-2020
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 ("Corona bedingte Erweiterungen ... fallen weg")
-#: note: Halteverbotschilder von 6 bis 20 Uhr
+#: note: Halteverbotsschilder von 6 bis 20 Uhr
 # REMOVED (Halteverbotsschilder sind nun permanent) --- #: XXX bis wann wird hier gesperrt sein? --- #: last_checked: 2023-08-19 --- #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32995,7 +32996,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
-# REMOVED (Bauarbeiten noch nicht ganz fertig, eine kurze Engstelle existiert, aber alle "frei"-Zusatzschilder sind wieder aktiv) --- #: also_indoor: traffic --- #: XXX von Norden her außerdem: Verboten für Fahrzeuge aller Art außer Anlieger --- #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022 --- #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer? --- #: osm_watch: way id="759405498" version="3" --- #: last_checked: 2022-10-09 (architektur-urbanistik) --- #: check_frequency: 90d --- #: next_check: 2022-12-28
+# REMOVED (Bauarbeiten noch nicht ganz fertig, eine kurze Engstelle existiert, aber alle "frei"-Zusatzschilder sind wieder aktiv) --- #: also_indoor: traffic --- #: XXX von Norden her außerdem: Verboten für Fahrzeuge aller Art außer Anlieger --- #: XXX Es gibt nun eine weitere Baustelle, Halteverbotsschilder bis Ende Dezember 2022 --- #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer? --- #: osm_watch: way id="759405498" version="3" --- #: last_checked: 2022-10-09 (architektur-urbanistik) --- #: check_frequency: 90d --- #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
 EOF
      },
@@ -37199,7 +37200,7 @@ EOF
 #: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2025-08-17 vvv
+#: last_checked: 2025-10-20 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
 #: next_check: 2025-11-30 (BA-Seite) vvv
@@ -37210,8 +37211,8 @@ EOF
 #: osm_watch: way id="1316908799" version="3"
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
-#: osm_watch: way id="42990078" version="30"
-#: osm_watch: note 4444205 2
+#: osm_watch: way id="42990078" version="31"
+#: osm_watch: note 4444205 3
 Schönstr. zwischen Amalienstr. und Paul-Oestreich-Str.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
 # REMOVED (hier nicht mehr) --- Amalienstr.	q4::inwork 13722,16843 13794,16773
@@ -38999,11 +39000,11 @@ EOF
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 EOF
      },
-     { from  => $isodate2epoch->("2024-11-14 00:00:00"), # einen Tag Vorlauf (reicht das?) --- 1669158000, # 2022-11-23 00:00
-       until => $isodate2epoch->("2025-01-06 18:00:00"), # ein paar Tage für den Abbau einplanen
+     { from  => $isodate2epoch->("2025-11-13 00:00:00"), # vier Tage Vorlauf (reicht das?) --- einen Tag Vorlauf (reicht das?) --- 1669158000, # 2022-11-23 00:00
+       until => $isodate2epoch->("2026-01-06 18:00:00"), # ein paar Tage für den Abbau einplanen
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 18.11. - 30.12.2024, sowie während der Aufbau- und Abbauarbeiten gesperrt',
+       text  => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 17.11. - 30.12.2025, sowie während der Aufbau- und Abbauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen, und die Bauzäune waren noch am 2024-01-05 (!) da
@@ -39011,7 +39012,8 @@ EOF
 #: by: https://www.weihnachten-an-der-spree.de/
 #: osm_watch: node id="11346915244" version="2"
 # REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
-	2::xmas 13531,10673 13418,10724 13326,10765
+	2::xmas 13531,10673 13418,10724
+# REMOVED (seit 2025 Bauarbeiten) ---	2::xmas 13418,10724 13326,10765
 EOF
      },
      { from  => 1669788000, # 2022-11-30 07:00
@@ -40388,7 +40390,7 @@ EOF
 #: note: neue Sperrung von 2025
 #: also_indoor: traffic (ex-T,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-10-11 vvv
+#: last_checked: 2025-10-21 vvv
 #: check_frequency: 14d vvv
 Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
 Virchowstr.	q2::inwork 12707,13706 12640,13814
@@ -41880,7 +41882,8 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
-#: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten)
+#: last_checked: 2025-10-21
+#: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen)
 Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 # XXX nach den Gleisbauarbeiten wiederherstellen: Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 # REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
@@ -43409,7 +43412,7 @@ EOF
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-09-24 vvv
+#: last_checked: 2025-10-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -44966,13 +44969,16 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-10-11 (Asphaltierungsarbeiten im 1. BA haben begonnen) vvv
-#: check_frequency: 7d (neue Sperrung eintragen) vvv
+#: last_checked: 2025-10-21 vvv
+#: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
-Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
-Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
+# REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
+# Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
+Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9925,11568 9737,11546 9711,11543
+Jerusalemer Str. (Nord): Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9992,11682
+Jerusalemer Str. (Süd): Baustelleneinrichtungsfläche	q3::inwork 9925,11568 9936,11469
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
-Markgrafenstr. (Baustelleneinrichtungsfläche für die Krausenstr.?)	q3::inwork 9725,11445 9711,11543
+Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 # REMOVED (mittlerweile geradlinigere Führung, nur etwas enger) --- Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: next_check ^^^
 #: check_frequency ^^^
@@ -45748,7 +45754,7 @@ EOF
 #: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-09-18
+#: last_checked: 2025-10-21
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -48932,7 +48938,7 @@ EOF
 # MOVED --- #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025 --- #: note: mittlerweile (Mitte September 2025) eine kurze Sperrung an der Koppenstr., aber zumindest am Sa weggeschobene Barrieren
 # REMOVED (nur noch Vorfahrt vor dem Gegenverkehr?) --- #: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt? ---
 # REMOVED ---	q4::inwork; 12238,11931 12413,11901
-#: last_checked: 2025-10-07
+#: last_checked: 2025-10-21
 #: check_frequency: 45d
 #: next_check: 2025-12-19 (Halteverbotsschilder)
 	q3::inwork 12238,11931 12413,11901
@@ -48947,7 +48953,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2025-10-04
+#: last_checked: 2025-10-21
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -49346,7 +49352,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-09-24
+#: last_checked: 2025-10-21
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50422,14 +50428,20 @@ EOF
 EOF
      },
      { from  => 1760220000, # 2025-10-12 00:00
-       until => 1761083999, # 2025-10-21 23:59
-       text  => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 13. Oktober 2025 bis 21. Oktober 2025',
+       until => undef, # 1761083999, # 2025-10-21 23:59
+#      text  => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 13. Oktober 2025 bis 21. Oktober 2025',
+       text  => 'Hufelandstr./Bötzowstr.: Sanierungsarbeiten, Sperrung der Fahrbahn',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: HUFELAND-2025
-#: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025)
-#: next_check: 2025-10-21 (nächster Bauabschnitt)
-	q4::inwork 12361,13985 12228,14083 12077,14186
+#: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025) (inaktiv)
+#: last_checked: 2025-10-21 vvv
+# REMOVED --- #: next_check: 2025-10-21 (nächster Bauabschnitt) vvv
+Hufelandstr.	q3::inwork 12228,14083 12361,13985 12478,13903
+Bötzowstr.	q3::inwork 12280,13880 12361,13985 12423,14066
+# REMOVED --- #: next_check ^^^
+#: last_checked ^^^
+# REMOVED (fertig) ---	q4::inwork 12361,13985 12228,14083 12077,14186
 EOF
      },
      { from  => 1760131031, # 2025-10-10 23:17
@@ -50524,6 +50536,25 @@ EOF
 #: source_id: viz2021:13.32149,52.49982, (bis 30.11.2025)
 Lietzenburger Str.	q3::inwork 4764,10350 4659,10335 4485,10307
 Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
+EOF
+     },
+     { from  => 1761068918, # 2025-10-21 19:48
+       until => 1762037999, # 2025-11-01 23:59
+       text  => 'Krampnitzer Weg: Bauarbeiten, Sperrung zwischen Gößweinsteiner Gang und Selbitzer Straße, voraussichtlich bis 1. November 2025 ',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2025/pressemitteilung.1608794.php
+	q4::inwork -8634,4921 -8450,4919 -8415,4918 -8293,4915 -8098,4899
+EOF
+     },
+     { from  => 1760824800, # 2025-10-19 00:00
+       until => 1781992799, # 2026-06-20 23:59
+       text  => 'Mauerweg Ruppiner Chaussee - Frohnau: Bauarbeiten, evtl. Sperrungen, bis zum Frühjahr 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-start-der-bauarbeiten-an-der-ruppiner-chaussee
+#: by: https://gruen-berlin.de/fileadmin/user_upload/Bilder/03_Projekte/31_Infrastruktur/313_Mauerweg/gruenberlin_projekte_infrastruktur_berlinermauerweg_plangrafik_ruppinerchaussee.png
+	2::inwork -972,24498 -1655,24428 -1940,24464 -1953,24435
 EOF
      },
     );
