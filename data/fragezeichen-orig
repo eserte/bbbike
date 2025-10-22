@@ -1391,7 +1391,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/gruenes-licht-fuer-zwei-radprojekte_a387901
 #: by: https://viz.berlin.de/aktuelle-meldungen/neue-radverkehrsanlage-zwischen-weissensee-und-alt-hohenschonhausen/ (Vorbereitungen ab 11. September 2025, Bauarbeiten ab September 2025)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1596814.php
-#: osm_watch: way id="111283481" version="26"
+#: osm_watch: way id="111283481" version="27"
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
 #: source_id: viz2021:13.48997,52.55798,29.12.2022,09:38 (bis 25.1.2023) (später am Tag wieder entfernt, inaktiv)
 #: source_id: viz2021:13.487447,52.556905,05.10.2022,07:00 (Kabelarbeiten, bis 9.12.2022) (bis 13.1.2023) (bis 15.2.2023) (inaktiv)
@@ -5764,7 +5764,7 @@ Sickingenstr./Rostocker Str.: Zebrastreifen geplant	?::projected 5131,14046 5089
 #: XXX angeordnet, aber noch keine Mittelzusage, weitere Mittelzusagen evtl. im Sommer 2022 vvv
 #: priority: #D vvv
 #: check_frequency: 120d vvv
-#: last_checked: 2025-08-30
+#: last_checked: 2025-10-21
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
 # REMOVED (zumindest auf der nördlichen Seite fertig) --- #: next_check_id: FRIEDENKOPPEN-2023 --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (2023) --- #: source_id: viz2021:13.43786,52.52023,31.01.2024,12:46 (bis 29.02.2024) (am nächsten Tag entfernt, inaktiv) --- #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 31.08.2023, Gesamtbaumaßnahme bis 11/2023) (bis 15.10.2023) (inaktiv) (bis 31.01.2024) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024) (inaktiv) --- #: source_id: viz2021:13.438124,52.520164,18.04.2024,06:00 (bis 30.06.2024) (bis 26.07.2024) (inaktiv) --- #: source_id: viz2021:13.43794,52.52035,18.04.2024,06:00 (bis 30.06.2024) (inaktiv) --- #: source_id: viz2021:13.43786,52.52023,27.06.2024,15:16 (bis 26.07.2024) (inaktiv) --- #: osm_watch: note 4161500 6 --- #: note: (weggedrehte) Masten steht schon --- #: last_checked: 2024-09-25 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2024-07-26 --- Friedenstr./Koppenstr.: Zebrastreifen in Bau	?::inwork 12694,12798 12690,12769 12653,12762
 #: XXX hier waren Asphaltierungsarbeiten, vielleicht im Zusammenhang mit dem Zebrastreifen?
@@ -6416,21 +6416,21 @@ Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 1
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036535836846/535836846/00103374/74-Anlagen/02/MitberatungBuVfuerHPRDS1454.pdf (ab 2018)
 #: last_checked: 2025-07-05 vvv
 #: check_frequency: 180d vvv
-#: osm_watch: way id="23966428" version="16"
+#: osm_watch: way id="23966428" version="19"
 #: last_checked: 2025-07-05
 Am Fort: wird hier asphaltiert?	? -7976,12217 -7967,12333 -7959,12439 -7948,12634 -7939,12877 -7961,12894 -8056,12916
-#: osm_watch: way id="23966430" version="10"
+#: osm_watch: way id="23966430" version="12"
 #: last_checked: 2025-07-05
 Talweg: wird hier asphaltiert?	? -8374,12648 -8324,12644 -8205,12644 -8078,12647 -7948,12634
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit 2022 bis 2024)
-#: osm_watch: way id="8048602" version="11"
+#: osm_watch: way id="8048602" version="12"
 #: last_checked: 2025-07-05
 # REMOVED (keine Bauarbeiten zu sehen) --- #: next_check: 2024-12-31
 Querweg: wird hier asphaltiert?	? -8098,12340 -7967,12333 -7819,12321
-#: osm_watch: way id="52523006" version="7"
+#: osm_watch: way id="52523006" version="8"
 #: last_checked: 2025-07-05
 Siedlungsweg: wird hier asphaltiert?	? -7810,12418 -7819,12321 -7824,12249
-#: osm_watch: way id="52523007" version="6"
+#: osm_watch: way id="52523007" version="7"
 #: last_checked: 2025-07-05
 Siedlungsweg: wird hier asphaltiert?	? -7819,12321 -7670,12310
 #: check_frequency ^^^
@@ -6756,7 +6756,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=4375 (Zwischenbericht)
 #: last_checked: 2024-11-05 (Zwischenbericht) vvv
 #: check_frequency: 720d vvv
-#: osm_watch: way id="73669134" version="9"
+#: osm_watch: way id="73669134" version="10"
 Planstraße A (anstelle der jetzigen Stichstraße)	?::projected 7603,19713 7675,19677 7729,19649
 Verlängerung Tollerstr.	?::projected 7749,19693 7729,19649
 Planstraße B	?::projected 7729,19649 7744,19622 7797,19580
@@ -7069,8 +7069,8 @@ Mühlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.5.2023) (bis 3.7.2023) (bis 30.11.2023) (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) (inaktiv)
 #: source_id: viz2021:13.373927,52.586809,27.11.2023,09:00 (bis 02.02.2024) (bis 29.03.2024) (bis 28.02.2024) (inaktiv)
 #: source_id: viz2021:13.374214,52.586802,27.11.2023,09:00 (bis 02.02.2024) (bis 22.12.2023) (bis 05.01.2024) (bis 02.02.204) (inaktiv)
-#: osm_watch: way id="175631760" version="19"
-#: osm_watch: way id="1432534379" version="1"
+#: osm_watch: way id="175631760" version="20"
+#: osm_watch: way id="1432534379" version="2"
 #: last_checked: 2025-06-27 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-28
@@ -7569,8 +7569,8 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs, vielleicht auch Asphaltierun
 #: source_id: viz2021:13.29383,52.519215,06.10.2021,14:00 (bis 14.2.2022, Gesamtbaumaßnahme bis Ende 2022) (inaktiv)
 #: source_id: viz2021:13.298076,52.519552,15.02.2022,10:00 (bis 25.4.2022) (mittlerweile inaktiv)
 #: osm_watch: note 4434294 7
-#: osm_watch: way id="1101200759" version="11"
-#: osm_watch: way id="428720064" version="21"
+#: osm_watch: way id="1101200759" version="12"
+#: osm_watch: way id="428720064" version="23"
 #: last_checked: 2025-10-06 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-06-30 (infravelo) vvv
@@ -7765,7 +7765,7 @@ Uferweg an der Spree: soll hier entstehen	?::projected 5550,12238 5493,12244 541
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/f10-gebauer-h%C3%B6fe.644/page-2#post-25565
 #: by: https://entwicklungsstadt.de/gebauer-hoefe-in-charlottenburg-sanierung-und-neubauten-an-der-spree/ (Gebauer Höfe)
 #: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=782178#post782178
-#: osm_watch: way id="1026941524" version="1"
+#: osm_watch: way id="1026941524" version="2"
 #: last_checked: 2025-07-13 (architektur-urbanistik)
 #: check_frequency: 720d
 geplante Verlängerung des Uferwegs an der Spree	?::inwork 5287,12465 5282,12538 5306,12661
@@ -8658,7 +8658,7 @@ Brodowiner Ring - Hohensaatener Str.: Stadtplatz in Planung	? 22192,16165 22063,
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13027 (Antrag) (Sanierung der Spree-Uferwände in diesem Bereich?)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/20250121-mobilitaetsrat-mitte-tagesordnung.pdf (auch hier ein Hinweis auf die Sanierung der Uferwände)
 #: note: laut Mobilitätsrat Mitte wird die Maßnahme 2024 umgesetzt (siehe osm note)
-#: osm_watch: way id="4376904" version="23"
+#: osm_watch: way id="4376904" version="24"
 #: osm_watch: note 3769887 11
 #: last_checked: 2025-08-30
 #: check_frequency: 60d
@@ -9063,10 +9063,11 @@ Jahnsportpark: wird es während der Bauarbeiten Einschränkungen geben? Werden sic
 #: by: https://www.morgenpost.de/bezirke/pankow/article409432778/berlin-pankow-auto-chaos-enttaeuschende-ansage-fuer-poller-in-gefaehrlicher-fahrradstrasse.html (noch 2025?)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/die-nachsten-poller-fur-berlin-sperre-soll-autos-aus-fahrradstrasse-in-prenzlauer-berg-vertreiben-14367359.html (Oktober 2025?)
 #: by: https://www.morgenpost.de/berlin/article410067577/bezirksamt-sperrt-fahrradstrasse-in-prenzlauer-berg-fuer-autofahrer.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/auto-sperre-kommt-in-wenigen-tagen-jetzt-steht-der-termin-fur-den-poller-bau-in-berlin-prenzlauer-berg-14617844.html (Baubeginn am 10.11.2025)
 #: priority: #C
 #: last_checked: 2025-09-26
-#: check_frequency: 60d
-#: next_check: 2025-10-31 (Tsp)
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2025-11-10 (Tsp: Baubeginn)
 Stargarder Str.: Modalfilter geplant	?::projected 11202,15748 11158,15739 11187,15700
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
@@ -11533,6 +11534,8 @@ Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12484 (Änderung des räumlichen Geltungsbereichs)
 #: by: https://www.berlin.de/sen/stadtentwicklung/neue-stadtquartiere/georg-knorr-park-teilgebiet-ost/
 #: by: https://www.howoge.de/immobiliensuche/neubauprojekte/konnekt.html
+#: by: https://entwicklungsstadt.de/baustart-fuer-konnekt-berlin-1-600-wohnungen-und-gewerbe-im-georg-knorr-park/
+#: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/1600-neue-wohnungen-baustart-fur-neues-stadtquartier-in-berlin-marzahn-14618813.html
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2025-06-09
 #: check_frequency: 720d

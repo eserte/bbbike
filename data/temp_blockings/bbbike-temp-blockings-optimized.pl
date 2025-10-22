@@ -9811,6 +9811,19 @@ Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
          'text' => 'Mauerweg Ruppiner Chaussee - Frohnau: Bauarbeiten, evtl. Sperrungen, bis zum Frühjahr 2026',
          'type' => 'gesperrt',
          'until' => 1781992799
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
+Gustav-Adolf-Str.	q4::inwork; 13037,16957 13129,17024 13342,17180
+Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
+Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
+',
+         'from' => 1761110409,
+         'id' => 4476,
+         'text' => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
+         'type' => 'handicap',
+         'until' => 1780264800
        }
      
 );

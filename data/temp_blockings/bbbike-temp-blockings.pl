@@ -50557,4 +50557,16 @@ EOF
 	2::inwork -972,24498 -1655,24428 -1940,24464 -1953,24435
 EOF
      },
+     { from  => 1761110409, # 2025-10-22 07:20
+       until => 1780264800, # 2026-06-01 00:00
+       text  => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
+Gustav-Adolf-Str.	q4::inwork; 13037,16957 13129,17024 13342,17180
+Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
+Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
+EOF
+     },
     );
