@@ -18787,12 +18787,14 @@ sub show_route_strname {
 		my @comments;
 		for my $i ($index_arr->[0] .. $index_arr->[1]) {
 		    my($etappe_comment_obj) = $comments_net->get_point_comment([@realcoords], $i, \%seen_comments, AsObj => 1);
-		    if (defined $etappe_comment_obj &&
-			# Ignore data from comments_kfzverkehr:
-			$etappe_comment_obj->[Strassen::CAT()] !~ m{^[+-][12]$}
-		       ) {
-			my $name = $etappe_comment_obj->[Strassen::NAME()];
-			$name =~ s{.*:\s+}{}; # strip street part
+		    if (defined $etappe_comment_obj) {
+			my $cat = $etappe_comment_obj->[Strassen::CAT()];
+			if ($cat !~ m{^[+-][12]$}) { # Ignore data from comments_kfzverkehr
+			    my $name = $etappe_comment_obj->[Strassen::NAME()];
+			    if ($cat =~ m{^Jam\b} && $name !~ /:\s/) { # comments without further explanation
+				$name .= ": " .M("Staugefahr");
+			    }
+			    $name =~ s{.*:\s+}{}; # strip street part
 ## The following is not needed if the comments are specific enough, i.e.
 ## "An der Ampel Voltairestr. die Gehwegseite wechseln" instead of
 ## "An der Ampel die Gehwegseite wechseln". As most comments are in this
@@ -18811,7 +18813,8 @@ sub show_route_strname {
 #				$name .= " (Kreuzung $cr_name)";
 #			    }
 #			}
-			push @comments, $name;
+			    push @comments, $name;
+			}
 		    }
 		}
 		$etappe_comment = join("; ", @comments) if @comments;
