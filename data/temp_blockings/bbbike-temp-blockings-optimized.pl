@@ -6651,7 +6651,7 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
-#: last_checked: 2025-10-21
+#: last_checked: 2025-10-22
 #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen)
 Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 # XXX nach den Gleisbauarbeiten wiederherstellen: Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -6827,8 +6827,8 @@ Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
        undef,
        {
          'data' => '#: by: https://oldthing.de/riesenflohmarkt
-#: XXX Termine 2026 eintragen
-#: next_check: 2025-11-02 vvv
+#: XXX Termine 2027 eintragen
+#: next_check: 2026-10-04 vvv
 	q4::temp:clock 18741,8125 18676,8096 18702,8160
 	q4::temp:clock 18676,8096 18650,8111 18626,8114
 	q4::temp:clock 18702,8160 18741,8220 18751,8291 18746,8357 18728,8371
@@ -7991,7 +7991,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: also_indoor: traffic (ex-B,ex-T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-09-28
+#: last_checked: 2025-10-22 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -8021,17 +8021,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: 256700007 (bis 23.01.2025) (inaktiv)
-#: source_id: 256700564 (bis 22.10.2025)
-	2::inwork 62507,-4444 62486,-4480 62471,-4512
-',
-         'from' => 1760824800,
-         'id' => 4240,
-         'text' => 'Berkenbrück: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 20.10.2025 18:00 Uhr bis 22.10.2025 12:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1761127200
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.298658,52.457781,22.01.2025,07:00 (bis 01.10.2025 + weitere Bauarbeiten bis 09/2025) (inaktiv)
@@ -8112,7 +8102,8 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.319804,52.504158, (bis 25.05.2026)
+         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/3951-rund-um-den-kudamm-westl-der-fasanenstra%C3%9Fe/?postID=786496#post786496 (BV Bleibtreustraße 48a)
+#: source_id: viz2021:13.319804,52.504158, (bis 25.05.2026)
 #: also_indoor: traffic (G,B,T,A)
 #: note: by rbb
 	q4::inwork 4692,10829 4704,10951 4709,11036
@@ -8408,7 +8399,7 @@ Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
-#: last_checked: 2025-09-24 vvv
+#: last_checked: 2025-10-22 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 Gutenbergstr.	q4::inwork; 5518,12159 5317,12242
@@ -8946,7 +8937,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="1"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-10-12 vvv
+#: last_checked: 2025-10-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -9442,7 +9433,7 @@ Griebenowstr.: Einschränkungen nur im Einmündungsbereich	q2::inwork 10399,14429 
 #: source_id: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum)
 #: source_id: viz2021:13.37918,52.48055, (kein Endedatum)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-10-12
+#: last_checked: 2025-10-22 (traffic)
 #: check_frequency: 14d
 Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
 ',
@@ -9599,7 +9590,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2025-10-16 (bahninfo-forum)
+#: last_checked: 2025-10-22
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -9815,15 +9806,17 @@ Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
-Gustav-Adolf-Str.	q4::inwork; 13037,16957 13129,17024 13342,17180
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
+#: source_id: viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026)
+# REMOVED --- Gustav-Adolf-Str.	q4::inwork; 13037,16957 13129,17024 13342,17180
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
 ',
          'from' => 1761110409,
          'id' => 4476,
-         'text' => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
+         'text' => 'Amalienstr.: Einbahnstraßenregelung, außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., bis 13. Mai 2026',
          'type' => 'handicap',
-         'until' => 1780264800
+         'until' => 1778709599
        }
      
 );

@@ -1156,7 +1156,7 @@ EOF
        text  => 'K 6907; (B 2-AS Ferch); OD Neuseddin Straßenbauarbeiten Vollsperrung 04.10.2004-24.12.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -18153,-12489 -17341,-13386
+	q4 -18153,-12489 -17708,-12979 -17341,-13386
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -1823,7 +1823,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4 -16479,-14389 -17341,-13386
-	q4 -18153,-12489 -17341,-13386
+	q4 -18153,-12489 -17708,-12979 -17341,-13386
 EOF
      },
      { from  => 1111437775, # 2005-03-21 21:42
@@ -10085,7 +10085,7 @@ EOF
        text  => 'K 6907 BAB A10, AS-Ferch bis Ferch Bahnübergang am Bhf Lienewitz Gleisbau am Bahnübergang Vollsperrung 31.08.2007-14.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
+	2::inwork -18579,-11858 -19043,-11944 -19150,-11976
 EOF
      },
      { from  => 1188588424, # 2007-08-31 21:27
@@ -11043,7 +11043,7 @@ EOF
        text  => 'K 6907 Bahnübergang Ferch-Lienewitz Gleisbauarbeiten Vollsperrung 14.12.2007-19.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -18640,-11826 -19043,-11944 -19150,-11976
+	2::inwork -18579,-11858 -19043,-11944 -19150,-11976
 EOF
      },
      { from  => 1197154800, # 2007-12-09 00:00
@@ -28345,7 +28345,7 @@ EOF
        type  => 'gesperrt',
        source_id => '186900417',
        data  => <<EOF,
-	2::inwork -19150,-11976 -19043,-11944 -18640,-11826
+	2::inwork -19150,-11976 -19043,-11944 -18579,-11858
 EOF
      },
      { from  => $isodate2epoch->("2019-01-16 08:00:00"), # 1 Tag Vorlauf
@@ -29263,7 +29263,7 @@ EOF
        source_id => 'https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html',
        data  => <<EOF,
 # REMOVED --- #: by: http://www.maz-online.de/Lokales/Potsdam/Potsdam-am-Montag-Das-ist-heute-wichtig113 --- #: by: http://www.maz-online.de/Lokales/Potsdam/Bruecke-am-Templiner-See-oeffnet-im-September --- #: by: https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html (kein Eröffnungsdatum für den Steg) --- #: osm_watch: way id="43483713" version="11" brb --- #: osm_watch: way id="611197607" version="2" brb --- #: add_fragezeichen: wann wird die Brücke wieder eröffnet? --- #: also_indoor: search Templiner Brücke --- #: last_checked: 2018-09-01 --- #: next_check: 2018-12-17
-	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
+	2::inwork -15839,-4311 -15664,-4450 -15652,-4441 -15537,-4535 -15539,-4543 -14854,-5095 -14822,-5146 -14824,-5199
 EOF
      },
      { from  => undef, # 
@@ -41882,7 +41882,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
-#: last_checked: 2025-10-21
+#: last_checked: 2025-10-22
 #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen)
 Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 # XXX nach den Gleisbauarbeiten wiederherstellen: Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -42709,9 +42709,16 @@ EOF
 	        #["2025-06-07", "2025-06-09"],
 	        #["2025-07-05", "2025-07-06"],
 	        #["2025-08-02", "2025-08-03"],
-	        ["2025-09-13", "2025-09-14"],
-	        ["2025-10-03", "2025-10-05"],
+	        #["2025-09-13", "2025-09-14"],
+	        #["2025-10-03", "2025-10-05"],
 	        ["2025-11-01", "2025-11-02"],
+	        ["2026-04-04", "2026-04-06"],
+	        ["2026-05-02", "2026-05-03"],
+	        ["2026-05-23", "2026-05-25"],
+	        ["2026-07-04", "2026-07-05"],
+	        ["2026-08-01", "2026-08-02"],
+	        ["2026-09-12", "2026-09-13"],
+	        ["2026-10-02", "2026-10-04"],
 	    ], $text);
 	    $text .= ": nächster Termin " . $epoch2dedate->($ret->{from}) . " bis " . $epoch2dedate->($ret->{until});
 	    (from => $ret->{from}-86400, until => $ret->{until}, text => $text);
@@ -42722,8 +42729,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://oldthing.de/riesenflohmarkt
-#: XXX Termine 2026 eintragen
-#: next_check: 2025-11-02 vvv
+#: XXX Termine 2027 eintragen
+#: next_check: 2026-10-04 vvv
 	q4::temp:clock 18741,8125 18676,8096 18702,8160
 	q4::temp:clock 18676,8096 18650,8111 18626,8114
 	q4::temp:clock 18702,8160 18741,8220 18751,8291 18746,8357 18728,8371
@@ -46987,7 +46994,7 @@ EOF
 #: also_indoor: traffic (ex-B,ex-T,G[falsch])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-09-28
+#: last_checked: 2025-10-22 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -47067,7 +47074,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 256700007 (bis 23.01.2025) (inaktiv)
-#: source_id: 256700564 (bis 22.10.2025)
+#: source_id: 256700564 (bis 22.10.2025) (inaktiv)
 	2::inwork 62507,-4444 62486,-4480 62471,-4512
 EOF
      },
@@ -47190,6 +47197,7 @@ EOF
        text  => 'Bleibtreustr.: Baustelle zwischen Niebuhrstr. und Kantstr., Sperrung der Fahrbahn, bis voraussichtlich 25.05.2026',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.deutsches-architekturforum.de/thread/3951-rund-um-den-kudamm-westl-der-fasanenstra%C3%9Fe/?postID=786496#post786496 (BV Bleibtreustraße 48a)
 #: source_id: viz2021:13.319804,52.504158, (bis 25.05.2026)
 #: also_indoor: traffic (G,B,T,A)
 #: note: by rbb
@@ -47937,7 +47945,7 @@ EOF
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
-#: last_checked: 2025-09-24 vvv
+#: last_checked: 2025-10-22 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 Gutenbergstr.	q4::inwork; 5518,12159 5317,12242
@@ -48878,7 +48886,7 @@ EOF
 EOF
      },
      { from  => 1748750400, # 2025-06-01 06:00
-       until => 1760977816, # undef, # 1757800740, # 2025-09-13 23:59
+       until => 1760977816, # (bestätigt am 2025-10-22) # undef, # 1757800740, # 2025-09-13 23:59
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Leibnizstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025 23:59',
 #      text  => 'Pestalozzistr.: Bauarbeiten zwischen Schlüterstr. und Wielandstr., Einbahnstraße offen Richtung Westen, evtl. sind auch Radfahrer betroffen, außerdem ist der Einmündungsbereich Wielandstr. gesperrt, vom 02.06.2025 06:00 bis 13.09.2025, evtl. wird die Sperrung verlängert',
@@ -49334,7 +49342,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="1"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-10-12 vvv
+#: last_checked: 2025-10-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -50099,7 +50107,7 @@ EOF
 #: source_id: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum)
 #: source_id: viz2021:13.37918,52.48055, (kein Endedatum)
 #: also_indoor: traffic (T)
-#: last_checked: 2025-10-12
+#: last_checked: 2025-10-22 (traffic)
 #: check_frequency: 14d
 Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
 EOF
@@ -50325,7 +50333,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2025-10-16 (bahninfo-forum)
+#: last_checked: 2025-10-22
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -50558,13 +50566,16 @@ EOF
 EOF
      },
      { from  => 1761110409, # 2025-10-22 07:20
-       until => 1780264800, # 2026-06-01 00:00
-       text  => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
+       until => $isodate2epoch->("2026-05-13 23:59:59"),
+#      text  => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
+       text  => 'Amalienstr.: Einbahnstraßenregelung, außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., bis 13. Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
-Gustav-Adolf-Str.	q4::inwork; 13037,16957 13129,17024 13342,17180
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
+#: source_id: viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026)
+# REMOVED --- Gustav-Adolf-Str.	q4::inwork; 13037,16957 13129,17024 13342,17180
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
 EOF
