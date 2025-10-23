@@ -43989,7 +43989,7 @@ EOF
 #: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
 #: last_checked: 2025-08-24
-#: check_frequency: 60d
+#: check_frequency: 90d
 #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-10-31 (Baustellenschild)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
@@ -44406,7 +44406,7 @@ EOF
        until => $isodate2epoch->("2025-12-31 23:59:59"), # undef, # 1723898534, # $isodate2epoch->("2024-08-20 17:00:00"), # 1723129200, # 2024-08-08 17:00
 #      text  => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis voraussichtlich 20.08.2024 17:00',
 #      text  => 'Winckelmannstr.: einige Abschnitte wegen Gleisarbeiten gesperrt, bis voraussichtlich 20.08.2024 17:00',
-       text  => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, voraussichtlich bis 31.12.2025',
+       text  => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, außerdem Sperrung in der Vereinsstr., voraussichtlich bis 31.12.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2024
@@ -44433,15 +44433,18 @@ EOF
 #: note: neue Havarie 2025
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
 #: source_id: viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025)
 #: source_id: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum)
 #: source_id: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
-#: also_indoor: traffic (T)
-#: last_checked: 2025-08-27 (bahninfo-forum)
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-12-31 (BA-Seite)
+#: also_indoor: traffic (T,G)
+#: last_checked: 2025-10-09 (BVV/BA) vvv
+#: next_check: 2025-12-31 (BA-Seite, evtl. für die Vereinsstr. fortsetzen?) vvv
 Winckelmannstr.: Havarie, evtl. sind auch Radfahrer betroffen	q4::inwork 17503,4148 17507,4216
+Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4159 17405,4151
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1714550400, # 2024-05-01 10:00
@@ -47143,9 +47146,9 @@ EOF
 #: source_id: viz2021:13.46101,52.5454,05.02.2025,07:00 (bis 30.11.2025) (inaktiv)
 #: source_id: viz2021:13.46101,52.5454, (noch immer Smetanastr.?, bis 05.12.2025)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-#: last_checked: 2025-09-08 vvv
+#: last_checked: 2025-10-23 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-10-21 (Halteverbotsschilder) vvv
+#: next_check: 2025-12-05 (Halteverbotsschilder + VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 # REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
 # REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
@@ -47488,9 +47491,10 @@ EOF
        data  => <<EOF,
 #: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
 #: osm_watch: note 4188310 4
-#: also_indoor: traffic (G,B,T,A,W)
-#: last_checked: 2025-06-26 (mapillary) vvv
-#: check_frequency: 120d vvv
+#: also_indoor: traffic (G,T,ex-A,W)
+#: last_checked: 2025-10-23 (traffic) vvv
+# REMOVED --- #: check_frequency: 120d vvv
+#: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (traffic) vvv
 Auguste-Viktoria-Str.	q4::temp 2664,8458 2670,8563
 Reinerzstr.	q4::temp 2670,8563 2566,8578
@@ -48559,7 +48563,7 @@ EOF
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-09-27
+#: last_checked: 2025-10-23
 #: check_frequency: 30d
 #: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -49749,8 +49753,8 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:379033/72 viz2021:13.39866,52.4964,07.08.2025,07:00 (bis 04.09.2025) (inaktiv)
 #: note: nur sehr kurze Sperrung, ca. 10m, allerdings müssen ggfs. Bordsteine überwunden werden, deshalb noch immer q3
-#: also_indoor: traffic (G,T,H)
-#: last_checked: 2025-10-10
+#: also_indoor: traffic (G,T,ex-H)
+#: last_checked: 2025-10-23 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2025-10-10
 	q3::inwork 10066,10071 9837,10117
@@ -50562,6 +50566,9 @@ EOF
        data  => <<'EOF',
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-start-der-bauarbeiten-an-der-ruppiner-chaussee
 #: by: https://gruen-berlin.de/fileadmin/user_upload/Bilder/03_Projekte/31_Infrastruktur/313_Mauerweg/gruenberlin_projekte_infrastruktur_berlinermauerweg_plangrafik_ruppinerchaussee.png
+#: by: https://www.morgenpost.de/bezirke/reinickendorf/article410272260/eine-eichenholzbank-fuer-den-mauerweg-in-heiligensee.html
+#: osm_watch: note 5018594 1
+#: osm_watch: way id="397531408" version="6"
 	2::inwork -972,24498 -1655,24428 -1940,24464 -1953,24435
 EOF
      },
@@ -50575,9 +50582,29 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
 #: source_id: viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026)
+#: source_id: bvg2024:156#HIM_FREETEXT_303396
 # REMOVED --- Gustav-Adolf-Str.	q4::inwork; 13037,16957 13129,17024 13342,17180
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
+EOF
+     },
+     { from  => 1761159637, # 2025-10-22 21:00
+       until => 1766444399, # 2025-12-22 23:59
+       text  => 'am Grunewaldsee: Wasserrohrbruch, Sperrung des Wegs, voraussichtlich bis Ende November 2025',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/machtige-wasser-pipeline-am-berliner-grunewaldsee-geborsten-spazierganger-storen-die-bauarbeiten-massiv-14628494.html (für noch mindestens vier Wochen gesperrt)
+	2::inwork 546,6583 663,6575 698,6592 775,6615
+EOF
+     },
+     { from  => 1761241355, # 2025-10-23 19:42
+       until => 1765753200, # 2025-12-15 00:00
+       text  => 'Morusstr.: Bauarbeiten zwischen Werbellinstr. und Briesestr., Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 14.12.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: WERBELLINAMPEL-2025
+#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025)
+	q4::inwork 12427,8109 12446,8032
 EOF
      },
     );
