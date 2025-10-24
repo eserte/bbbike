@@ -10129,7 +10129,7 @@ EOF
        text  => 'Bruchhagen und Welsow: Sperrung der Bahnunterführung, 20.10.2025 08:00 Uhr bis 24.10.2025 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 257300272 (bis 24.10.2025)
+#: source_id: 257300272 (bis 24.10.2025) (inaktiv)
 	2::inwork 48296,74641 48437,74675 49075,74662
 EOF
      },
@@ -43972,7 +43972,8 @@ EOF
      { from  => 1711947600, # 2024-04-01 07:00
        until => $isodate2epoch->("2026-10-31 18:00:00"), # 1740585600, # 2025-02-26 17:00
 #      text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
-       text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
+#      text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
+       text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, möglicherweise mittlerweile geöffnet',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025) (bis 01.08.2025) (inaktiv)
@@ -43990,7 +43991,8 @@ EOF
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
 #: last_checked: 2025-08-24
 #: check_frequency: 90d
-#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-23 (laut osm offen)
+# REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-10-31 (Baustellenschild)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 EOF
@@ -47785,7 +47787,7 @@ EOF
        text  => 'Lehnin, Bahnhofstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 31.03.2025 08:00 Uhr bis 15.08.2025 12:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/25/034 (bis 24.10.2025)
+#: source_id: LS/223-P/25/034 (bis 24.10.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~13-08-2025-l88-lehninbahnhofstrasse (vorfristig freigegeben)
 	2::inwork -34492,-10500 -34429,-10543 -34112,-10516 -34009,-10453 -33993,-10461
 EOF
@@ -48860,7 +48862,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.317914,52.473875,02.06.2025,07:00 (bis 18.07.2025) (inaktiv)
 #: source_id: adac:820239518 (bis voraussichtlich 18.07.2025) (bis 24.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.317914,52.473875, (bis 24.10.2025)
+#: source_id: viz2021:13.317914,52.473875, (bis 24.10.2025) (inaktiv)
 #: note: laut rbb bis 24.10.2025 verlängert
 	q4::inwork 4785,7438 4599,7474
 EOF
@@ -49046,7 +49048,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2025-10-24 (traffic) vvv
 #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
@@ -49739,7 +49741,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: last_checked: 2025-10-19
+#: last_checked: 2025-10-24
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50267,7 +50269,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-20
+#: last_checked: 2025-10-24
 	q4::inwork 14641,10552 14608,10409 14558,10264
 EOF
      },
@@ -50335,6 +50337,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
+#: by: https://bvg.de/dam/jcr:d7121a77-8148-45ab-a019-8e2e57fa9e29/Karte_Map_M1_12.png (Ersatzverkehr)
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
 #: last_checked: 2025-10-22
@@ -50371,7 +50374,8 @@ EOF
        text  => 'Am Weingarten: Wasserrohrbruch, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: viz2021:13.45588,52.53572, (mittlerweile nur noch Fahrbahnverengung)
+#: source_id: viz2021:13.45588,52.53572, (mittlerweile nur noch Fahrbahnverengung) (inaktiv)
+#: source_id: viz2021:13.455932,52.535655, (Fahrbahnverengung, bis 14.11.2025)
 #: also_indoor: traffic (ex-T)
 #: note: Länge des abgesperrten Bereichs plus weiterer Gehwegabschnitt wegen Absperrgittern ca. 90m
 # REMOVED --- #: last_checked: 2025-10-06
@@ -50503,14 +50507,14 @@ EOF
 EOF
      },
      { from  => 1760824800, # 2025-10-19 00:00
-       until => 1761343199, # 2025-10-24 23:59
+       until => 1761329264, # 1761343199, # 2025-10-24 23:59
        text  => 'Bruno-Baum-Str.: Bauarbeiten zwischen Kiebitzgrund und Pekrunstr., Sperrung der Fahrbahn, vom 20. Oktober 2025 bis voraussichtlich 24. Oktober 2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1606938.php
 #: by: https://marzahn-hellersdorf.com/teilsperrung-der-bruno-baum-strasse-in-marzahn-fahrbahnsanierung-vom-20-bis-24-oktober/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (hier nur Kfz-Verkehr)
-#: source_id: viz2021:13.55047,52.54247,20.10.2025,07:00 (bis 24.10.2025)
+#: source_id: viz2021:13.55047,52.54247,20.10.2025,07:00 (bis 24.10.2025) (inaktiv)
 Bruno-Baum-Str.	q4::inwork 20286,15382 20123,15293 19997,15122
 Kreuzungsbereich Bruno-Baum-Str./Pekrunstr. gesperrt	q3::inwork 19997,15122 19893,14947
 EOF
@@ -50605,6 +50609,27 @@ EOF
 #: next_check_id: WERBELLINAMPEL-2025
 #: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025)
 	q4::inwork 12427,8109 12446,8032
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Hohenstaufenplatz: Wochenmarkt, Di 12.00-18:30, Sa 09:00-14:00',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: by: https://www.berlin.de/special/shopping/biomarkt/3368882-1925662-oekomarkt-am-hohenstaufenplatz.html
+#: by: https://www.wochenmarkt-deutschland.de/maerkte/berlin/hohenstaufenplatz-schoenleinstrasse/
+#: note: im Winter dienstags nur bis 18:00
+	2::temp:clock 11594,9604 11560,9524
+EOF
+     },
+     { from  => 1761458400, # 2025-10-26 07:00
+       until => 1763247599, # 2025-11-15 23:59
+       text  => 'Greifswalder Str. (Mahlsdorf): Bauarbeiten zwischen An den Siedlergärten und Am Schlehdorn, Sperrung, vom 27.10.2025 07:00 Uhr bis Mitte November 2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251024
+	q4::inwork 25923,14081 25778,14058
 EOF
      },
     );

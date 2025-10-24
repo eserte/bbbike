@@ -14,7 +14,7 @@
 #: by: https://www.morgenpost.de/berlin/article409965464/wie-der-senat-das-a100-chaos-in-den-griff-bekommen-will.html
 #: by: https://entwicklungsstadt.de/verkehrsdaten-elsenbruecke-durchschnittsgeschwindigkeit-sinkt-nach-a100-eroeffnung/
 #: priority: #D
-#: last_checked: 2025-10-20
+#: last_checked: 2025-10-24
 #: check_frequency: 90d
 Markgrafendamm -> Alt-Stralau: Sperrung der Linksabbiegespur	3 14608,10409 14558,10264 14619,10223
 # 
@@ -2356,24 +2356,10 @@ Ecksteinweg	1 17762,5408 17736,5441
 #: osm_watch: way id="4395632" version="27"
 Pfalzburger Str.	1 4858,9594 4875,9891
 # 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_35_2547_2610_online.pdf
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11607
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_04_0245_0352_online.pdf (Teileinziehung)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1584856.php (Baumaßnahmen ab Anfang August 2025)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1428819.php
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/hohenstaufenplatz-plan.pdf (Verkehrszeichenplan)
-#: by: https://entwicklungsstadt.de/poller-und-entsiegelung-verkehrsberuhigung-im-graefekiez-schreitet-voran/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/strasse-soll-autofrei-werden-oldtimer-parkt-seit-fast-50-jahren-aus-protest-in-kreuzberg--nun-muss-er-weg-14384684.html (Erwähnung)
-#: osm_watch: way id="1122284350" version="5"
-#: osm_watch: note 4880568 5
-#: also_indoor: traffic (none)
-#: XXX Gibt es während der Bauarbeiten Einschränkungen?
-#: XXX Evtl. wird das geradlinige Befahren im Zuge der Schönleinstr. für den Radverkehr leichter möglich sein? (einige Poller werden abgebaut)
-#: XXX Stand 2025-08-22: Bauarbeiten haben begonnen
-#: last_checked: 2025-10-11 (aber noch Bauarbeiten, vielleicht kommen noch Poller)
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2025-08-04 (ungefährer Start der Baumaßnahmen)
+#: historical_note: bis Oktober 2025 war die Durchfahrt für Kfz noch möglich
 Schönleinstr.: Durchfahrt verboten, Radfahrer frei	2 11541,9576 11594,9604
+#: historical_note: sehr alte Sperrung, vermutlich aus den 1980ern oder 1990ern
+Schönleinstr.: Durchfahrt verboten	2 11594,9604 11560,9524
 # 
 #: note: Freigabe für Radfahrer
 Hannemannstr. (Teltow)	1 2902,329 2958,229

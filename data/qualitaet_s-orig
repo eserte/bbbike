@@ -374,7 +374,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2- 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2025-10-13
+#: last_checked: 2025-10-24
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -478,7 +478,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-13
+#: last_checked: 2025-10-24
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1816,12 +1816,14 @@ Hufelandstr.: abgefrästes Kopfsteinpflaster	Q1- 12077,14186 12228,14083
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/berlins-neueste-fahrradstrasse-bekannte-kopfstein-piste-in-prenzlauer-berg-wird-endlich-glatt-14529680.html
 #: by: https://entwicklungsstadt.de/verkehrswende-in-pankow-umbau-der-hufelandstrasse-offiziell-gestartet/
 #: by: https://www.infravelo.de/meldung/baustart-hufelandstr/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/berlins-neueste-fahrradstrasse-bekommt-schliff-in-prenzlauer-berg-larmt-eine-baumaschine--damit-das-pflaster-leise-wird-14641217.html (bis 29.10.2025?)
 #: osm_watch: way id="4615063" version="39"
 #: osm_watch: note 5010352 1
 #: last_checked: 2025-10-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check_id: 2025-10-21 (1. BA)
-#: next_check: 2026-06-30 (infravelo)
+#: next_check: 2025-10-29 (Tsp)
+# REMOVED --- #: next_check: 2026-06-30 (infravelo)
 Hufelandstr.: Kopfsteinpflaster	Q2 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
 # 
 Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178
@@ -2330,7 +2332,8 @@ Forster Str.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 12286,9739 12398
 Liegnitzer Str.: Kopfsteinpflaster	Q2 12441,9663 12556,9862
 Dirschauer Str.: Kopfsteinpflaster	Q2 14031,11569 13970,11366
 Laskerstr.: mäßiger Beton	Q1- 14675,10693 14541,10735
-Bödikerstr.: Kopfsteinpflaster mit Asphaltflicken	Q2 14541,10735 14490,10610
+#: historical_note: früher (bis Oktober 2025): Kopfsteinpflaster mit Asphaltflicken, Q2
+Bödikerstr.: Asphalt	Q0 14541,10735 14490,10610
 Bödikerstr.: Kopfsteinpflaster	Q2 14490,10610 14447,10491 14405,10340
 Rudolfstr.: Kopfsteinpflaster	Q2- 13527,11110 13716,11032 13795,10995 13886,10939 14026,10869
 Danneckerstr.: Kopfsteinpflaster	Q2 13779,10642 13856,10864 13886,10939
@@ -4829,6 +4832,7 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 #: by: https://www.berliner-woche.de/baumschulenweg/c-umwelt/arbeiten-zur-aufwertung-der-gruenanlage-lakegrund-sind-gestartet_a428593
 #: by: https://entwicklungsstadt.de/lakegrund-in-berlin-treptow-gruenanlage-wird-klimaresilient-umgestaltet/ (Abschluss 2025)
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
+#: osm_watch: note 4526759 1
 #: XXX "Teilentsiegelung" geplant
 #: last_checked: 2025-07-27
 #: check_frequency: 90d
@@ -13100,7 +13104,7 @@ Wladimir-Gall-Weg: wassergebundene Decke	Q1 -2668,14635 -2618,14654 -2570,14661 
 #: next_check_id: METROPOLITANPARK-2019
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12383 (Antrag)
 #: XXX welche Fahrbahnbeschaffenheit wird die Straße nach den Bauarbeiten haben? "Privater verkehrsberuhigter Bereich" --- werden hier Kfz fahren dürfen?
-#: osm_watch: way id="1147342797" version="2"
+#: osm_watch: way id="1147342797" version="3"
 #: last_checked: 2025-07-05
 #: check_frequency: 180d
 Metropolitan Park: unbefestigte Baustraße, Schotter	Q2- -8064,13534 -8088,13594
@@ -16297,8 +16301,8 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10373,18887 10358,18882
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20220724 (BPU 2022 anvisiert, außerdem Erwähnung der Planung in der Hermann-Hesse-Str.)
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409226405/berlin-pankow-aerger-um-holperpiste-fahrradprojekt-nach-zehn-jahren-gestoppt.html (aus finanziellen Gründen gestoppt)
-#: osm_watch: way id="4764684" version="32"
-#: osm_watch: way id="26790073" version="20"
+#: osm_watch: way id="4764684" version="33"
+#: osm_watch: way id="26790073" version="21"
 #: last_checked: 2025-09-17
 #: check_frequency: 360d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421

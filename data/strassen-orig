@@ -2262,6 +2262,7 @@ Graefestr.	N 11136,9183 11208,9345 11274,9492 11311,9576 11346,9655 11411,9810 1
 (Werner-Düttmann-Platz - Graefestr.)	NN 11378,9305 11208,9345
 #: osm.highway ^^^
 Schönleinstr.	N 11509,9392 11560,9524 11541,9576 11594,9604 11640,9710
+Schönleinstr. [Hohenstaufenplatz]	N 11594,9604 11560,9524
 Böckhstr.	N 11175,9882 11197,9894 11411,9810 11640,9710 11673,9720
 Planufer	N 11543,10015 11507,10004 11485,10029 11400,10022 11295,9958 11177,9935 11160,9932 10929,9897 10914,9887
 (Planufer - Uferweg)	NN 10929,9897 10914,9925
@@ -4837,7 +4838,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: osm_watch: way id="31428032" version="18"
 #: osm_watch: way id="386544517" version="4"
 #: osm_watch: note 2048562 13
-#: last_checked: 2025-09-29 (mapillary)
+#: last_checked: 2025-10-23 (bahninfo)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-05-01
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -16726,7 +16727,7 @@ Juchaczweg	N 14126,3225 14180,3334
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8363 (Vorlage zur Beschlussfassung)
 #: XXX Bebauungsplan XIV-132-1: ggfs. wird dieser Abschnitt öffentlich befahrbar werden, inklusive Verlegung der Schranke?
 #: osm_watch: way id="721901188" version="1"
-#: osm_watch: way id="138144497" version="9"
+#: osm_watch: way id="138144497" version="10"
 #: priority: #C
 #: last_checked: 2025-09-10
 #: check_frequency: 180d
@@ -18283,11 +18284,11 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6844 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7007 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7090 (Vorlage zur Beschlussfassung)
-#: osm_watch: way id="59573616" version="4"
+#: osm_watch: way id="59573616" version="5"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
-#: last_checked: 2025-06-27 (mapillary)
+#: last_checked: 2025-10-06 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2025-12-31 (alte BA-Pressemitteilung, Baubeginn 2025)
+# REMOVED --- #: next_check: 2025-12-31 (alte BA-Pressemitteilung, Baubeginn 2025)
 (Rhönstr. - Harzburger Str.)	NN 13598,21360 13709,21334
 Eifelstr.	N 13580,21286 13351,21239 13280,21225
 Vogesenstr.	N 13351,21239 13368,21142
@@ -19852,7 +19853,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-10-24 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

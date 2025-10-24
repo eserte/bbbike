@@ -4033,7 +4033,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Bauarbeiten, Übergang gesperrt, voraussich
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="1"
-#: last_checked: 2025-10-13
+#: last_checked: 2025-10-24
 #: check_frequency: 60d
 #: next_check: 2028-12-31
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4190,13 +4190,13 @@ Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeite
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-09-29 (mapillary)
+#: last_checked: 2025-10-23 (bahninfo)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
 #: osm_watch: way id="1149630679" version="5"
-#: last_checked: 2025-09-29 (mapillary)
+#: last_checked: 2025-10-23 (bahninfo)
 #: check_frequency: 90d
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
@@ -4355,7 +4355,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-10-19 vvv
+#: last_checked: 2025-10-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4377,12 +4377,12 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
 #: osm_watch: way id="1106303945" version="10"
-#: osm_watch: way id="4543436" version="42"
+#: osm_watch: way id="4543436" version="43"
 #: osm_watch: way id="176338611" version="20"
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2025-09-21 (osm)
+#: last_checked: 2025-10-23 (osm)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4415,7 +4415,7 @@ Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwor
 # REMOVED (offiziell offen) --- #: osm_watch: way id="1199463690" version="2" --- Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
 #: osm_watch: way id="1425622570" version="1"
 #: osm_watch: way id="693633081" version="14"
-#: osm_watch: way id="693633082" version="12"
+#: osm_watch: way id="693633082" version="13"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 # REMOVED --- #: osm_watch: way id="1199463688" version="3"
 #: osm_watch: way id="1199465845" version="5"
@@ -4883,7 +4883,7 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 #: check_frequency: 30d
 An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die Gehwege gebaut werden	2::inwork 17682,8464 17652,8349
 #: XXX Es wird einen Anschluss an den Traberweg geben.
-#: osm_watch: note 4522174 3
+#: osm_watch: note 4522174 4
 #: last_checked: 2025-10-19
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-11-06 (BA-Pressemitteilung)
@@ -4924,7 +4924,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-10-19
+#: last_checked: 2025-10-24
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4982,7 +4982,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://entwicklungsstadt.de/315-neue-wohnungen-zwei-quartiere-der-howoge-gehen-in-die-vermietung/ (Einzug ab Oktober 2025)
 # REMOVED (deleted) --- #: osm_watch: way id="830757933" version="2"
 # REMOVED (deleted) --- #: osm_watch: way id="610818155" version="5"
-#: osm_watch: way id="1171090939" version="5"
+#: osm_watch: way id="1171090939" version="6"
 #: source_id: viz2021:13.49479,52.50059,14.05.2024,07:00 (Stromnetzarbeiten in der angrenzenden Lückstr., bis 05.09.2024) (inaktiv)
 #: source_id: viz2021:13.496223,52.500189,14.05.2024,07:00 (bis 05.09.2024) (inaktiv)
 #: last_checked: 2025-10-14
@@ -5533,12 +5533,13 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.konii.de/news/immobilienprojekt-upside-berlin-wird-weitergebaut/ (Fertigstellung stufenweise bis 2027)
 #: by: https://www.konii.de/news/vermarktung-der-beiden-hoechsten-berliner-wohntuerme-startet/ (Vermarktung ab Mai 2025)
 #: by: https://brooksoneast.de/en/
+#: by: https://entwicklungsstadt.de/mediaspree-hochhaus-brooks-on-east-endlich-fallen-die-gerueste/
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data, PLZ=10243 laut LOR)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2025-08-14 (daf)
-#: check_frequency: 120d
+#: last_checked: 2025-10-24
+#: check_frequency: 90d
 #: next_check: 2027-12-31
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372
 # 

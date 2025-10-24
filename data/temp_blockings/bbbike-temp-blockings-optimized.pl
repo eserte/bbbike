@@ -1411,16 +1411,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 257300272 (bis 24.10.2025)
-	2::inwork 48296,74641 48437,74675 49075,74662
-',
-         'from' => 1760853600,
-         'id' => 1153,
-         'text' => 'Bruchhagen und Welsow: Sperrung der Bahnunterführung, 20.10.2025 08:00 Uhr bis 24.10.2025 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1761318000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7081,13 +7072,14 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 # REMOVED (offiziell ja) --- #: add_fragezeichen: Ist die Straße tatsächlich für Radfahrer und Fußgänger gesperrt?
 #: last_checked: 2025-08-24
 #: check_frequency: 90d
-#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-10-23 (laut osm offen)
+# REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-10-31 (Baustellenschild)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
 ',
          'from' => 1711947600,
          'id' => 4034,
-         'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
+         'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, möglicherweise mittlerweile geöffnet',
          'type' => 'gesperrt',
          'until' => 1793466000
        },
@@ -8783,19 +8775,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
          'type' => 'handicap',
          'until' => 1777586399
        },
-       {
-         'data' => '#: source_id: viz2021:13.317914,52.473875,02.06.2025,07:00 (bis 18.07.2025) (inaktiv)
-#: source_id: adac:820239518 (bis voraussichtlich 18.07.2025) (bis 24.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.317914,52.473875, (bis 24.10.2025)
-#: note: laut rbb bis 24.10.2025 verlängert
-	q4::inwork 4785,7438 4599,7474
-',
-         'from' => 1748754000,
-         'id' => 4355,
-         'text' => 'Homburger Str.: Bauarbeiten zwischen Laubacher Str. und Ahrweilerstr., Sperrung der Fahrbahn, vom 02.06.2025 bis 24.10.2025',
-         'type' => 'handicap',
-         'until' => 1761321600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8844,7 +8824,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2025-10-24 (traffic) vvv
 #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
@@ -9208,7 +9188,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: last_checked: 2025-10-19
+#: last_checked: 2025-10-24
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -9540,7 +9520,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-20
+#: last_checked: 2025-10-24
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9592,6 +9572,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
+#: by: https://bvg.de/dam/jcr:d7121a77-8148-45ab-a019-8e2e57fa9e29/Karte_Map_M1_12.png (Ersatzverkehr)
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
 #: last_checked: 2025-10-22
@@ -9745,20 +9726,7 @@ Bötzowstr.	q3::inwork 12280,13880 12361,13985 12423,14066
          'type' => 'handicap',
          'until' => 1772038800
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1606938.php
-#: by: https://marzahn-hellersdorf.com/teilsperrung-der-bruno-baum-strasse-in-marzahn-fahrbahnsanierung-vom-20-bis-24-oktober/
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (hier nur Kfz-Verkehr)
-#: source_id: viz2021:13.55047,52.54247,20.10.2025,07:00 (bis 24.10.2025)
-Bruno-Baum-Str.	q4::inwork 20286,15382 20123,15293 19997,15122
-Kreuzungsbereich Bruno-Baum-Str./Pekrunstr. gesperrt	q3::inwork 19997,15122 19893,14947
-',
-         'from' => 1760824800,
-         'id' => 4470,
-         'text' => 'Bruno-Baum-Str.: Bauarbeiten zwischen Kiebitzgrund und Pekrunstr., Sperrung der Fahrbahn, vom 20. Oktober 2025 bis voraussichtlich 24. Oktober 2025',
-         'type' => 'handicap',
-         'until' => 1761343199
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
@@ -9846,6 +9814,29 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
          'text' => 'Morusstr.: Bauarbeiten zwischen Werbellinstr. und Briesestr., Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 14.12.2025',
          'type' => 'handicap',
          'until' => 1765753200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/special/shopping/biomarkt/3368882-1925662-oekomarkt-am-hohenstaufenplatz.html
+#: by: https://www.wochenmarkt-deutschland.de/maerkte/berlin/hohenstaufenplatz-schoenleinstrasse/
+#: note: im Winter dienstags nur bis 18:00
+	2::temp:clock 11594,9604 11560,9524
+',
+         'from' => undef,
+         'id' => 4479,
+         'recurring' => 1,
+         'text' => 'Hohenstaufenplatz: Wochenmarkt, Di 12.00-18:30, Sa 09:00-14:00',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251024
+	q4::inwork 25923,14081 25778,14058
+',
+         'from' => 1761458400,
+         'id' => 4480,
+         'text' => 'Greifswalder Str. (Mahlsdorf): Bauarbeiten zwischen An den Siedlergärten und Am Schlehdorn, Sperrung, vom 27.10.2025 07:00 Uhr bis Mitte November 2025',
+         'type' => 'handicap',
+         'until' => 1763247599
        }
      
 );
