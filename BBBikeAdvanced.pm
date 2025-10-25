@@ -1537,8 +1537,8 @@ sub _find_coords {
 	# www.mapillary.com
 	# www.openstreetmap.org alternative with mlat/mlon
 	while ($s =~ m{(?:
-			   \bm?lat=([^&]+).*\bm?(?:lon|lng)=([^&]+)
-		       |   \bm?(?:lon|lng)=([^&]+).*\bm?lat=([^&]+)
+			   \bm?lat=(?:%20)*([^&]+).*\bm?(?:lon|lng)=(?:%20)*([^&]+)
+		       |   \bm?(?:lon|lng)=(?:%20)*([^&]+).*\bm?lat=(?:%20)*([^&]+)
 		       )}xg) {
 	    my($x,$y);
 	    if (defined $1) { # lat-lon detected

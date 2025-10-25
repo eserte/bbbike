@@ -25,6 +25,8 @@ eq_or_diff [_find_coords("Mittlerer Stern\tHH 1111,2222 3333,4444")], [[1111,222
 eq_or_diff [_find_coords('https://www.openstreetmap.org/#map=19/52.51627/13.37770&layers=N')], [[8600,12254]];
 eq_or_diff [_find_coords('https://opentopomap.org/#marker=16/52.51627/13.37770')], [[8600,12254]];
 eq_or_diff [_find_coords('https://www.qwant.com/maps#map=15.38/52.51627/13.37770')], [[8600,12254]];
+eq_or_diff [_find_coords(q{https://www.openstreetmap.org/?mlat=52.5235156&mlon=13.4048710&zoom=17#map=17/52.523516/13.404871&layers=N})], [[10430,13093],[10430,13093]];
+eq_or_diff [_find_coords(q{https://www.openstreetmap.org/?mlat=%2052.5235156&mlon=%2013.4048710&zoom=17})], [[10430,13093]]; # ignore spaces in param
 
 # openstreetmap route
 eq_or_diff [_find_coords('https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike&route=52.44074%2C13.58726%3B52.44275%2C13.58220')], [[23018,4108],[22669,4325]];
