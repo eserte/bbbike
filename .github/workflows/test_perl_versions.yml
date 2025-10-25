@@ -51,4 +51,6 @@ jobs:
             --env BBBIKE_TEST_SKIP_BBBIKE_DE=${BBBIKE_TEST_SKIP_BBBIKE_DE:-0} \
             --env BBBIKE_TEST_SKIP_BBBIKE_ORG=${BBBIKE_TEST_SKIP_BBBIKE_ORG:-0} \
             --build-env TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT=${{ env.TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT }} \
-            --docker-build-max-retry 1
+            --docker-build-max-retry 1 \
+            --env PERL_CPANM_OPT="--mirror http://cpan.cpantesters.org --mirror https://cpan.metacpan.org" \
+            --env CPAN_INSTALLER="cpanm"
