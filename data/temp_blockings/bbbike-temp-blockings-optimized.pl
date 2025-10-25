@@ -3334,21 +3334,21 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Tegeler Str.	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
-#: also_indoor: traffic (G,H,A,W)
+#: also_indoor: traffic (G,H,A,W,T)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-10-19 (traffic)
-#: check_frequency: 7d (traffic)
+#: last_checked: 2025-10-25 (traffic)
+#: check_frequency: 14d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
-# (noch nicht!) --- Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
+Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
+#: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-10-19 (traffic)
+#: last_checked: 2025-10-25 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
          'id' => 2430,
-         'text' => 'Kiautschoustr.: Bauarbeiten zwischen Tegeler Str. und Samoastr., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Tegeler Str.: Leitungsarbeiten zwischen Triftstr. und Sprengelstr., Fahrbahn gesperrt, außerdem Bauarbeiten in der Kiautschoustr. zwischen Tegeler Str. und Samoastr., voraussichtlich bis Mitte Januar 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4435,7 +4435,7 @@ Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 1439
 #: also_indoor: traffic (T,G,H,W)
 #: note: H: falsche Einbahnstraßenrichtung; W: falsche Komplettsperrung
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2025-08-27
+#: last_checked: 2025-10-25 (traffic)
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 60d (traffic)
 #: next_check: 2027-03-31
@@ -4674,7 +4674,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-10-19
+#: last_checked: 2025-10-25
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -4870,7 +4870,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
 #: XXX zurzeit (2025-03) Asphaltierungsarbeiten
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-09
+#: last_checked: 2025-10-25
 #: check_frequency: 90d
 #: next_check: 2026-07-30
 # REMOVED (hier war noch nichts) ---	q4::inwork 25363,12553 25534,12763
@@ -5013,8 +5013,9 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        undef,
        {
          'data' => '#: note: keine genauen Zeiten verfügbar
-#: note: am 2024-11-09 (Sa) gegen 10:50 war das westliche Tor halb offen, das östliche Tor geschlossen
-#: note: am 2025-02-08 (Sa) gegen 11:40 war das westliche Tor offen, das östliche Tor geschlossen
+#: note: am 2024-11-09 (Sat) gegen 10:50 war das westliche Tor halb offen, das östliche Tor geschlossen
+#: note: am 2025-02-08 (Sat) gegen 11:40 war das westliche Tor offen, das östliche Tor geschlossen
+#: note: am 2025-10-25 (Sat) 12:21 waren beide Tore offen
 #: by: https://abendblatt-berlin.de/2021/04/03/neue-feuerwehrwache-und-verwaltungsbueros-fuer-friedrichsfelde/
 #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/senat-lobt-demnaechst-einen-realisierungswettbewerb-aus_a306651
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
@@ -6400,7 +6401,7 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (ex-H,ex-G,T,ex-W)
-#: last_checked: 2025-10-19
+#: last_checked: 2025-10-25
 #: check_frequency: 14d (traffic)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
@@ -8243,9 +8244,9 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 # (kann von bbbike nicht verarbeitet werden) --- Mellenseestr. [Wohngebiet]: Einbahnstraße temporär aufgehoben	1no 17838,9956 17868,9823 17920,9698
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (none)
-#: last_checked: 2025-10-14 vvv
+#: last_checked: 2025-10-25 vvv
 #: check_frequency: 14d vvv
-Friedenshorster Str./Splanemannstr.	q4::inwork 18280,9868 18305,9951 18312,9985
+# REMOVED (hier offiziell noch Durchfahrt verboten, allerdings ist die Fahrbahn offen) --- Friedenshorster Str./Splanemannstr.	q4::inwork 18280,9868 18305,9951 18312,9985
 Splanemannstr./Friedenshorster Str.	q4::inwork 18305,9951 18397,9928
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -8253,7 +8254,7 @@ Splanemannstr./Friedenshorster Str.	q4::inwork 18305,9951 18397,9928
 ',
          'from' => undef,
          'id' => 4271,
-         'text' => 'Friedenshorster Str./Splanemannstr.: Kreuzungsbereich wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Splanemannstr.: vor der Friedenshorster Str. wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8858,7 +8859,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-10-12 (traffic) vvv
+#: last_checked: 2025-10-25 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-09-02 vvv
 # REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
@@ -8882,18 +8883,20 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        undef,
        {
          'data' => '#: next_check_id: FUNKWERK-2025
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G)
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch
-#: last_checked: 2025-08-27
-#: check_frequency: 60d
+#: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
+#: last_checked: 2025-10-25 (traffic)
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 14d (traffic)
 #: next_check: 2025-10-31
 	q4::inwork 22456,3889 22666,3888
 ',
          'from' => 1750888800,
          'id' => 4379,
-         'text' => 'Charlottenstr.: Fahrbahn zwischen Karlstr. und Wendenschloßstr. offiziell gesperrt, voraussichtlich bis Ende Oktober 2025',
+         'text' => 'Charlottenstr.: Fahrbahn zwischen Karlstr. und Wendenschloßstr. offiziell gesperrt, voraussichtlich bis Ende Oktober 2025, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1761930000
+         'until' => undef
        },
        undef,
        undef,
@@ -9028,7 +9031,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 #: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
 #: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
 #: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-10-19
+#: last_checked: 2025-10-25 (könnte Ende Oktober 2025 tatsächlich fertig werden)
 #: check_frequency: 30d
 #: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
 	q2::inwork; 15880,10680 15970,10755
@@ -9269,7 +9272,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-18
+#: last_checked: 2025-10-25
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9289,8 +9292,8 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
        undef,
        {
          'data' => '#: next_check_id: MUSSEHL-2025
-#: also_indoor: traffic (G,T)
-#: last_checked: 2025-10-12 vvv
+#: also_indoor: traffic (G,T[nur noch Schulenburgring])
+#: last_checked: 2025-10-25 (traffic) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-10-31 vvv
 #: note: Halteverbotsschilder bis 31.10.2025
@@ -9368,8 +9371,8 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'until' => undef
        },
        {
-         'data' => '#: also_indoor: traffic (H[zu wenig],G[zu wenig])
-#: last_checked: 2025-10-12 vvv
+         'data' => '#: also_indoor: traffic (ex-H[zu wenig],G[zu wenig])
+#: last_checked: 2025-10-25 (traffic) vvv
 #: check_frequency: 14d vvv
 Wolliner Str.: Fahrbahn offiziell gesperrt	q4::inwork 10506,14521 10441,14497 10399,14429
 Griebenowstr.: Einschränkungen nur im Einmündungsbereich	q2::inwork 10399,14429 10311,14613
@@ -9837,6 +9840,17 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
          'text' => 'Greifswalder Str. (Mahlsdorf): Bauarbeiten zwischen An den Siedlergärten und Am Schlehdorn, Sperrung, vom 27.10.2025 07:00 Uhr bis Mitte November 2025',
          'type' => 'handicap',
          'until' => 1763247599
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Wege weiterhin gesperrt?
+#: last_checked: 2025-10-25
+	2::inwork 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
+',
+         'from' => undef,
+         'id' => 4481,
+         'text' => 'Lauinger Str., Gartenstr.: einige Wege sind gesperrt, Umwege erforderlich, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

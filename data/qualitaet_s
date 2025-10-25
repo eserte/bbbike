@@ -1304,8 +1304,8 @@ Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 723,4572
 Ihnestr.: mäßiges Kopfsteinpflaster	Q2 1866,4572 1817,4462 1761,4255 1740,4176 1691,3990 1664,3907
 Spilstr.: Kopfsteinpflaster, OK	Q1 3836,6550 3826,6656 3865,6758
 (zur Weißenhöher Str.): Asphalt	Q0 19726,11743 19735,11721 19830,11677 19881,11591
-Biesdorfer Friedhofsweg: Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 21311,11528 21514,11796
-(an der U-Bahn): Schotterweg, meist OK	Q2 21514,11796 21645,11912 21751,11973
+Biesdorfer Friedhofsweg: schlechtes Kopfsteinpflaster	Q3 21311,11528 21514,11796
+(an der U-Bahn): Schotterweg	Q2 21514,11796 21645,11912 21751,11973
 (an der U-Bahn): wassergebundene Decke	Q1 21751,11973 21778,11955 21815,11953 21829,11975 21829,11994 21873,12016 21907,12018
 Walsheimer Str.: Kopfsteinpflaster, teils mäßig, teils OK	Q2 21352,11701 21397,11754
 Walsheimer Str.: Asphalt	Q0 21397,11754 21430,11794
@@ -6271,7 +6271,7 @@ Gielsdorfer Str.: Beton	Q1 24019,11264 24019,11286 24018,11320 24029,11363 24089
 Gielsdorfer Str.: Asphalt	Q0 24121,11795 24132,11859 24137,11930
 Dirschauer Str. (Mahlsdorf): Beton	Q0 24223,11470 24179,11494 24089,11522
 Blumberger Str.: Beton	Q1 24229,11639 24179,11494
-Wilhelmsmühlenweg: Asphalt	Q0 22883,11956 23153,11947 23432,11948 23540,11943 23648,11940 23789,11907 23896,11862 24003,11821 24121,11795
+Wilhelmsmühlenweg: Asphalt, zahlreiche Querrillen	Q0 22883,11956 23153,11947 23432,11948 23540,11943 23648,11940 23789,11907 23896,11862 24003,11821 24121,11795
 Wilhelmsmühlenweg: Beton	Q0 24121,11795 24205,11777
 Wilhelmsmühlenweg: Asphalt	Q0 24205,11777 24317,11754
 Wilhelmsmühlenweg: Beton	Q0 24317,11754 24444,11725 24623,11684
@@ -9272,7 +9272,7 @@ Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 (Park des Gründerzeitmuseums): Kopfsteinpflaster	Q3 24658,11013 24726,11037
 Lauinger Str.: Asphalt	Q0 21221,11398 21171,11336 21137,11294
 (Gartenstr. - Lauinger Str.): Asphalt	Q0 21168,11303 21171,11336
-(Lauinger Str. - Köpenicker Str.): Asphalt	Q0 21171,11336 21133,11348
+(Lauinger Str. - Köpenicker Str.): Asphalt	Q0 21171,11336 21137,11346
 Am Römersgrün: Verbundsteinpflaster	Q1 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
 Am Römersgrün: Verbundsteinpflaster	Q1 11725,3835 11742,3770 11703,3730
 (Siegfriedstr. - Landsberger Allee): Asphalt	Q0 16873,14236 16762,14237
@@ -11566,7 +11566,7 @@ Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
 Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17252,14495 17400,14511
-Klaus-Selmke-Str.: Asphalt	Q0 21130,11384 21275,11547
+Klaus-Selmke-Str.: Asphalt	Q0 21133,11387 21275,11547
 Kurfürstendamm: Asphaltschäden	Q0; 5475,10808 5656,10876
 Bruno-Bauer-Str.: Gehwegplatten	Q0 12893,6527 12904,6488 12921,6424
 Priesterweg: Asphalt mit einigen Schäden, Gehwegplatten	Q1 7224,7553 7220,7445 7227,7352

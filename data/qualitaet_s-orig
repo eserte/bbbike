@@ -1976,9 +1976,10 @@ Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 723,4572
 Ihnestr.: mäßiges Kopfsteinpflaster	Q2 1866,4572 1817,4462 1761,4255 1740,4176 1691,3990 1664,3907
 Spilstr.: Kopfsteinpflaster, OK	Q1 3836,6550 3826,6656 3865,6758
 (zur Weißenhöher Str.): Asphalt	Q0 19726,11743 19735,11721 19830,11677 19881,11591
-Biesdorfer Friedhofsweg: Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2- 21311,11528 21514,11796
+#: note: das Ausweichen auf den teilweise betonierten östlichen Gehweg scheint üblich zu sein
+Biesdorfer Friedhofsweg: schlechtes Kopfsteinpflaster	Q3+ 21311,11528 21514,11796
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2025/vzbbvv1296_vi_biesd_friedhofsweg_barrierefrei.pdf ("Schlaglöcher ... regelmäßig ... mit Schotter aufgefüllt")
-(an der U-Bahn): Schotterweg, meist OK	Q2 21514,11796 21645,11912 21751,11973
+(an der U-Bahn): Schotterweg	Q2 21514,11796 21645,11912 21751,11973
 #: corrected_by: MG (Schotterweg -> ...)
 (an der U-Bahn): wassergebundene Decke	Q1 21751,11973 21778,11955 21815,11953 21829,11975 21829,11994 21873,12016 21907,12018
 Walsheimer Str.: Kopfsteinpflaster, teils mäßig, teils OK	Q2+ 21352,11701 21397,11754
@@ -3583,7 +3584,7 @@ Wuhlewanderweg: guter Beton (zweispurig)	Q0 22717,16142 22670,16063 22623,15959 
 #: historical_note: früher Q1+, mittlerweile hat die Qualität nachgelassen
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11953 (Anfrage zur Sanierung: Mittel im Zeitraum 2025-2028 sind berücksichtigt)
 #: XXX wird die Qualität hier verbessert (siehe auch mudways)?
-#: last_checked: 2024-10-19
+#: last_checked: 2025-10-25
 #: check_frequency: 360d
 Wuhlewanderweg: guter Parkweg	Q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
 Wuhlewanderweg: Kleinsteinpflaster	Q1- 22244,11311 22268,11285
@@ -4243,7 +4244,7 @@ Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776
 #: XXX wird hier wieder der alte Zustand hergestellt?
 #: osm_watch: note 4661800 2
 #: osm_watch: way id="24205371" version="22"
-#: last_checked: 2025-08-27
+#: last_checked: 2025-10-25
 #: check_frequency: 90d
 Münsterberger Weg: wassergebundene Decke, Unebenheiten	Q1- 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
@@ -6998,7 +6999,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="33"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2025-06-14
+#: last_checked: 2025-10-25
 #: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -7893,7 +7894,7 @@ Gielsdorfer Str.: Beton	Q1- 24019,11264 24019,11286 24018,11320 24029,11363 2408
 Gielsdorfer Str.: Asphalt	Q0 24121,11795 24132,11859 24137,11930
 Dirschauer Str. (Mahlsdorf): Beton	Q0- 24223,11470 24179,11494 24089,11522
 Blumberger Str.: Beton	Q1 24229,11639 24179,11494
-Wilhelmsmühlenweg: Asphalt	Q0 22883,11956 23153,11947 23432,11948 23540,11943 23648,11940 23789,11907 23896,11862 24003,11821 24121,11795
+Wilhelmsmühlenweg: Asphalt, zahlreiche Querrillen	Q0- 22883,11956 23153,11947 23432,11948 23540,11943 23648,11940 23789,11907 23896,11862 24003,11821 24121,11795
 Wilhelmsmühlenweg: Beton	Q0- 24121,11795 24205,11777
 Wilhelmsmühlenweg: Asphalt	Q0 24205,11777 24317,11754
 Wilhelmsmühlenweg: Beton	Q0- 24317,11754 24444,11725 24623,11684
@@ -11191,7 +11192,7 @@ Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_04_0213_0280_online.pdf (Verkehrsübergabe (etwas verspätet...))
 Lauinger Str.: Asphalt	Q0 21221,11398 21171,11336 21137,11294
 (Gartenstr. - Lauinger Str.): Asphalt	Q0 21168,11303 21171,11336
-(Lauinger Str. - Köpenicker Str.): Asphalt	Q0 21171,11336 21133,11348
+(Lauinger Str. - Köpenicker Str.): Asphalt	Q0 21171,11336 21137,11346
 Am Römersgrün: Verbundsteinpflaster	Q1+ 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
 Am Römersgrün: Verbundsteinpflaster	Q1+ 11725,3835 11742,3770 11703,3730
 #: note: es gibt noch eine Diagonalverbindung von der der Siegfriedstraße, welches aber nur ein enger, bewachsener Pfad ist
@@ -13832,7 +13833,7 @@ Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0- 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
 Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17252,14495 17400,14511
-Klaus-Selmke-Str.: Asphalt	Q0 21130,11384 21275,11547
+Klaus-Selmke-Str.: Asphalt	Q0 21133,11387 21275,11547
 Kurfürstendamm: Asphaltschäden	Q0-; 5475,10808 5656,10876
 Bruno-Bauer-Str.: Gehwegplatten	Q0- 12893,6527 12904,6488 12921,6424
 Priesterweg: Asphalt mit einigen Schäden, Gehwegplatten	Q1 7224,7553 7220,7445 7227,7352
@@ -14201,7 +14202,7 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-10-19
+#: last_checked: 2025-10-25
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018
@@ -17861,11 +17862,13 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: next_check: 2026-07-30 vvv
 #: osm_watch: way id="593503609" version="12"
 #: osm_watch: way id="40267304" version="18"
-#: last_checked: 2025-06-09
+#: last_checked: 2025-10-25
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25620,12872
+#: osm_watch: way id="24204822" version="30"
+#: last_checked: 2025-10-25
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25534,12763 25363,12553
 #: osm_watch: way id="24204822" version="30"
-#: last_checked: 2025-06-09
+#: last_checked: 2025-10-25
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 #: next_check ^^^
 #: check_frequency ^^^
