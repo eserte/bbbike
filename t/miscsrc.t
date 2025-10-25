@@ -109,6 +109,7 @@ for my $f (@files) {
 	    if $f =~ m{/( bvg_disruptions_format.pl
 		       |  cvsdiffbbd
 		       |  docker-bbbike
+		       |  parse_mvt_sequences\.pl
 		       |  fragezeichen2org\.pl
 		       |  mudways-enriched-to-handicap\.pl
 		       |  temp_blockings_tasks

@@ -14,6 +14,7 @@
 use strict;
 use warnings;
 use FindBin;
+use v5.10.0; # defined-or
 
 use JSON::PP;
 use Math::Trig 'pi', 'sinh', 'atan';
