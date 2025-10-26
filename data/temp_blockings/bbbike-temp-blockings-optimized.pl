@@ -357,7 +357,32 @@ Auflösebereich bis zum Alexanderplatz	2::temp 11589,12768 11289,12908 11226,1294
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001302-955635-weihnachts-und-umweltmarkt-in-der-sophie.html
+#: by: https://www.weihnachtsmarkt-sophienstrasse.de/ (Absage 2021)
+#: tempex: before(1st_advent,1d) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1764284400,
+         'id' => 166,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (29.11.2025 - 30.11.2025)',
+         'type' => 'gesperrt',
+         'until' => 1764543599
+       },
        undef,
        undef,
        undef,
@@ -3517,9 +3542,76 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: tempex: before(2nd_advent,sa) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1764889200,
+         'id' => 2515,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (06.12.2025 - 07.12.2025)',
+         'type' => 'gesperrt',
+         'until' => 1765148399
+       },
+       {
+         'data' => '#: tempex: before(3rd_advent,sa) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1765494000,
+         'id' => 2516,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (13.12.2025 - 14.12.2025)',
+         'type' => 'gesperrt',
+         'until' => 1765753199
+       },
+       {
+         'data' => '#: tempex: before(4th_advent,sa) - +1d
+#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1766098800,
+         'id' => 2517,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              16,
+                              'months',
+                              12,
+                              'start',
+                              '2024-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (20.12.2025 - 21.12.2025)',
+         'type' => 'gesperrt',
+         'until' => 1766357999
+       },
        undef,
        undef,
        undef,
@@ -7975,7 +8067,29 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
+#: by: https://wintermarkt-schlossplatz.de/
+#: note: im Internet teilweise als "Weihnachtsmarkt", teilweise als "Wintermarkt" zu finden, letzteres scheint aber korrekt zu sein
+	2::xmas 10152,12491 10168,12444
+	2::xmas 10095,12392 10168,12444 10263,12508
+',
+         'from' => 1763420400,
+         'id' => 4229,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Wintermarkt am Humboldt-Forum: gesperrt vom 19. November 2025 bis 04. Januar 2026',
+         'type' => 'gesperrt',
+         'until' => 1767653999
+       },
        undef,
        undef,
        undef,
@@ -9272,7 +9386,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-25
+#: last_checked: 2025-10-26
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9387,7 +9501,8 @@ Griebenowstr.: Einschränkungen nur im Einmündungsbereich	q2::inwork 10399,14429 
        },
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
-#: last_checked: 2025-10-12
+#: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
+#: last_checked: 2025-10-26
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
@@ -9523,7 +9638,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-24
+#: last_checked: 2025-10-26
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,

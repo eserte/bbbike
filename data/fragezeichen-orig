@@ -522,6 +522,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Erwähnung)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095 (südlich der Binzstraße: Bauarbeiten beginnen 2021; nördlich der Binzstraße: konkrete Planungen nicht vor 2022)
 #: by: http://www.infravelo.de/projekt/neumannstrasse/ (2. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 4. Quartal 2021 - 4. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (2. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2025 - 3. Quartal 2026) (3. Quartal 2025 - 3. Quartal 2026) (4. Quartal 2025 - 4. Quartal 2027)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/fahrrad-projekt-kommt-nach-15-jahren-planung-berliner-bezirk-baut-drei-meter-breiten-radweg--diesmal-ohne-beton-blocke-14654240.html (Beginn der Bauarbeiten Anfang 2026)
 #: osm_watch: way id="35573588" version="29"
 #: osm_watch: way id="4632077" version="35"
 #: osm_watch: note 4459974 3
@@ -1942,9 +1943,9 @@ Seegefelder Str.: Umbau/Sanierung des Radwegs	?::projected -5257,14668 -5097,145
 # 
 #: by: https://api.fixmyberlin.de/api/projects/207
 #: XXX unklar: auf der fixmyberlin-Karte ist der Fischerhüttenweg (Waldweg im Grunewald!) markiert, vermutlich fälschlicherweise
-#: osm_watch: way id="718428128" version="8"
-#: osm_watch: way id="4740663" version="44"
-#: osm_watch: way id="718428121" version="10"
+#: osm_watch: way id="718428128" version="9"
+#: osm_watch: way id="4740663" version="45"
+#: osm_watch: way id="718428121" version="11"
 #: last_checked: 2025-06-25 (mapillary)
 #: check_frequency: 150d
 Fischerhüttenstr.: vielleicht Radstreifen?	?::projected 534,3149 251,3325 137,3396 17,3471 -135,3567 -216,3623 -267,3657 -329,3702 -432,3788 -580,3912 -762,4054 -843,4116 -968,4184 -1096,4267 -1204,4328 -1245,4351 -1297,4385
@@ -2128,7 +2129,7 @@ Marienpark: Planstraße 1 geplant	?::projected 8178,3591 8200,3479 8263,3496 8235
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2025-10-20
+#: last_checked: 2025-10-26
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 14020,9524 13981,9474 13923,9405 13892,9365 13849,9310
 # 
@@ -2187,7 +2188,7 @@ Friedenstr.: was wird hier genau gemacht?	?::projected 12325,13148 12382,13097 1
 #: by: https://abendblatt-berlin.de/2020/05/08/berlin-reinickendorf-radwege/ (bis Ende Mai 2020)
 #: by: https://www.infravelo.de/projekt/friederikestrasse/ ("abgeschlossen", nur der Abschnitt durch den Wald)
 #: XXX oder ist der schon realisierte Radstreifen im nördlichen Abschnitt gemeint?
-#: osm_watch: way id="5046356" version="19"
+#: osm_watch: way id="5046356" version="20"
 #: last_checked: 2025-09-03
 #: check_frequency: 180d
 Friederikestr.: entsteht hier ein Radstreifen?	?::projected -1661,18749 -1654,18711 -1629,18417 -1616,18112
@@ -3704,7 +3705,7 @@ Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685
 #: by ^^^
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (Finanzierung unklar, vermutlich nicht 2023)
-#: last_checked: 2025-10-11
+#: last_checked: 2025-10-26
 #: check_frequency: 180d
 Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,12718 12347,12699
 # 
@@ -7447,7 +7448,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-10-21
+#: last_checked: 2025-10-26
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7658,7 +7659,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2025-10-12
+#: last_checked: 2025-10-26
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7666,7 +7667,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-10-21
+#: last_checked: 2025-10-26
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8574,8 +8575,8 @@ Bhf. Zossen: neue Bahnunterführung	?::inwork 13391,-20703 13391,-20703 13460,-20
 #: by: https://www.dbinfrago.com/web/aktuelles/kund-inneninformationen/kund-inneninformationen/2024-KW51-Bahnhof-Zossen-13199722
 #: by: https://www.maz-online.de/lokales/teltow-flaeming/ludwigsfelde/zossen-landesstrasse-und-bahnuebergang-thomas-muentzer-strasse-vorerst-nicht-gesperrt-GY5TKYDJSNDS7CY6DZHJIDL2D4.html
 #: by: https://www.gemeinde-am-mellensee.de/news/1/1055328/nachrichten/neue-informationen-zum-umbau-des-bahnhofs-zossen-und-zu-den-arbeiten-an-der-thomas-m%C3%BCntzer-stra%C3%9Fe.html (vom 11.04.2025: Beginn der bauarbeiten voraussichtlich 2029)
-#: osm_watch: way id="26142828" version="24" brb
-#: osm_watch: way id="800533068" version="5" brb
+#: osm_watch: way id="26142828" version="25" brb
+#: osm_watch: way id="800533068" version="6" brb
 #: XXX Falls hier während der Bauarbeiten komplett gesperrt wird, könnte man eine mögliche Umleitungsstrecke via Nottekanal Südufer - Johneweg eintragen
 #: last_checked: 2025-06-21
 # REMOVED --- #: check_frequency: 240d
@@ -8762,7 +8763,7 @@ Kaulsdorfer Galgen: wird der Gehweg für Radfahrer freigegeben?	? 22842,12070 226
 # 
 #: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/fussgaengerueberweg-auf-der-brodauer-strasse-soll-mehr-sicherheit-bringen_a428089 (noch 2024)
 #: by: https://marzahn-hellersdorf.com/aktuelles-zum-fussgaengerueberweg-in-der-brodauer-strasse-erste-sichtbare-fortschritte-in-kaulsdorf/ (Fertigstellung bis Herbst 2025)
-#: osm_watch: note 4991241 1
+#: osm_watch: note 4991241 2
 #: last_checked: 2025-10-25 (noch nicht freigegeben)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31 (bw)
@@ -9481,10 +9482,11 @@ Lehrter Str. - Döberitzer Grünzug: wie wird der endgültige Zustand aussehen, wir
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1579641.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_38_2429_2468_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597763.php (Verschiebung der Umbenennung)
+#: by: https://www.tagesspiegel.de/berlin/leicht-verspatete-strassenumbenennung-regina-jonas-strasse-in-berlin-kreuzberg-kommt-14656991.html (im Dezember 2025?)
 #: osm_watch: note 4963705 1
 #: last_checked: 2025-10-24
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2025-09-19
+#: check_frequency: 45d
+#: next_check: 2025-12-31 (Tsp)
 Kohlfurter Str.: Umbenennung in Regina-Jonas-Str.	?::sign 11512,10105 11464,10102 11274,10184 11094,10261
 # 
 # REMOVED (weitgehend fertig, siehe temp_blockings) --- #: next_check_id: MELCHIOR-2025 --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1546159.php --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414261.php (bis 09/2025) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/melchiorstrasse_vzp.pdf --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1585373.php (Bauarbeiten August 2025 bis IV. Quartal 2025) --- #: by: https://entwicklungsstadt.de/fahrradstrasse-fuer-mitte-umbau-der-melchiorstrasse-startet-2025/ --- #: by: https://www.morgenpost.de/bezirke/mitte/article409628185/bauarbeiten-starten-melchiorstrasse-wird-zur-fahrradstrasse.html --- #: XXX Wird es während der Bauarbeiten zu Einschränkungen kommen? --- #: osm_watch: note 3954739 9 --- #: last_checked: 2025-09-22 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2025-08-04 (BA, Beginn der Bauarbeiten) --- # REMOVED --- #: next_check: 2025-09-30 (BA) --- Melchiorstr.: Fahrradstraße mit Vorfahrtsregelung geplant	?::projected 11917,11186 11726,11265 11542,11342
@@ -12388,7 +12390,7 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamtes/2-beschluss-16092025.pdf (Benennung der öffentlichen Straßen, Wirksamkeit zum 15.11.2025)
 #: osm_watch: relation id="10290512" version="6"
 #: osm_watch: way id="1306187833" version="16"
-#: osm_watch: way id="1306187834" version="23"
+#: osm_watch: way id="1306187834" version="24"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
 #: XXX neue Straßennamen:
 #: XXX erste Gruppe (öffentliche Straßen):
@@ -12406,7 +12408,7 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: XXX 4) Karauschestraße
 #: XXX 5) Belgienstraße
 #: XXX 6) Bachsaiblingstraße
-#: last_checked: 2025-10-02 (osm) vvv
+#: last_checked: 2025-10-25 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2028-06-30 vvv
 Insel Gartenfeld: Stadtquartier entsteht, einige Planstraßen, Uferpromenade, Ufergrünzug, eine Brücke	?::inwork -910,16549 -1038,15673 -852,15528 -358,15621 -245,16027 -910,16549

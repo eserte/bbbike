@@ -1522,9 +1522,9 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2024-11-29 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2024-12-01 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2024 - 01.12.2024)',
+     { from  => $isodate2epoch->("2025-11-28 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2025-11-30 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (29.11.2025 - 30.11.2025)',
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11, start => "2022-01-01T00:00:00"]], # note: keine Weihnachtsmärkte vor dem 30.11.2020!
        type  => 'gesperrt',
@@ -23443,9 +23443,9 @@ EOF
 	2::inwork 12624,25570 12697,25704
 EOF
      },
-     { from  => $isodate2epoch->("2024-12-06 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2024-12-08 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (07.12.2024 - 08.12.2024)',
+     { from  => $isodate2epoch->("2025-12-05 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2025-12-07 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (06.12.2025 - 07.12.2025)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -23455,9 +23455,9 @@ EOF
 	2::xmas 9986,13412 10321,13259
 EOF
      },
-     { from  => $isodate2epoch->("2024-12-13 00:00:00"),
-       until => $isodate2epoch->("2024-12-15 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.2024 - 15.12.2024)',
+     { from  => $isodate2epoch->("2025-12-12 00:00:00"),
+       until => $isodate2epoch->("2025-12-14 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (13.12.2025 - 14.12.2025)',
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -23467,9 +23467,9 @@ EOF
 	2::xmas 9986,13412 10321,13259
 EOF
      },
-     { from  => $isodate2epoch->("2024-12-20 00:00:00"),
-       until => $isodate2epoch->("2024-12-22 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.2024 - 22.12.2024)',
+     { from  => $isodate2epoch->("2025-12-19 00:00:00"),
+       until => $isodate2epoch->("2025-12-21 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (20.12.2025 - 21.12.2025)',
        periodic => 1,
        recurrences => [['yearly', days => 16, months => 12, start => "2024-01-01T00:00:00"]], # 2023 nur an drei Adventswochenenden
        type  => 'gesperrt',
@@ -46933,18 +46933,18 @@ EOF
 	q4::xmas 15710,12365 15537,12367 15508,12367
 EOF
      },
-     { from  => 1732402800, # 2024-11-24 00:00
-       until => 1735772399, # 2025-01-01 23:59
+     { from  => $isodate2epoch->("2025-11-18 00:00:00"), # 1732402800, # 2024-11-24 00:00
+       until => $isodate2epoch->("2026-01-05 23:59:59"), # 1735772399, # 2025-01-01 23:59
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11]],
-       text  => 'Wintermarkt am Humboldt-Forum: gesperrt vom 25. November 2024 bis 01. Januar 2025',
+       text  => 'Wintermarkt am Humboldt-Forum: gesperrt vom 19. November 2025 bis 04. Januar 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
 #: by: https://wintermarkt-schlossplatz.de/
 #: note: im Internet teilweise als "Weihnachtsmarkt", teilweise als "Wintermarkt" zu finden, letzteres scheint aber korrekt zu sein
-	2::xmas 10152,12491 10168,12444 10263,12508
-	2::xmas 10168,12444 10095,12392
+	2::xmas 10152,12491 10168,12444
+	2::xmas 10095,12392 10168,12444 10263,12508
 EOF
      },
      { from  => undef, # 
@@ -49841,7 +49841,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-10-25
+#: last_checked: 2025-10-26
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50065,7 +50065,8 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
-#: last_checked: 2025-10-12
+#: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
+#: last_checked: 2025-10-26
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -50273,7 +50274,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-10-24
+#: last_checked: 2025-10-26
 	q4::inwork 14641,10552 14608,10409 14558,10264
 EOF
      },
