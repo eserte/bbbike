@@ -192,8 +192,8 @@ Auflösebereich bis zum Alexanderplatz	2::temp 11589,12768 11289,12908 11226,1294
        undef,
        undef,
        {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html
-#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20211026
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1483109.php
@@ -2669,12 +2669,76 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1147421.php (2021 abgesagt)
+#: by: https://berliner-abendblatt.de/2021/11/17/berliner-weihnachtsmaerkte-werden-abgesagt/
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
+#: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
+# REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
+#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
+	2::xmas 13416,7712 13424,7680
+	2::xmas 13416,7712 13378,7695 13288,7653
+	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
+	2::xmas 12972,7602 13100,7626 13130,7633 13174,7644
+	2::xmas 13179,7613 13174,7644
+	2::xmas 13179,7613 13295,7627
+	2::xmas 13288,7653 13295,7627
+	2::xmas 13288,7653 13174,7644
+	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
+',
+         'from' => 1764802800,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (05.12.2025 - 07.12.2025)',
+         'type' => 'gesperrt',
+         'until' => 1765148399
+       },
        undef,
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html
+#: by: https://berliner-abendblatt.de/2021/12/10/dieses-wochenende-weihnachtsmarkt-in-der-altstadt/
+	2::xmas 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1765458000,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 7,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 12.12.2025 bis zum 14.12.2025',
+         'type' => 'gesperrt',
+         'until' => 1765753199
+       },
        undef,
        undef,
        undef,
@@ -3612,10 +3676,104 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => 1766357999
        },
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html (Termin 2022 nicht bekannt)
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/?date=20221103
+#: tempex: 1st_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1764414000,
+         'id' => 2518,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 14,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 30.11.2025, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1764525600
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 2nd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1765018800,
+         'id' => 2519,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 07.12.2025, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1765130400
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 3rd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1765623600,
+         'id' => 2520,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 14.12.2025, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1765735200
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 4th_advent & T12-T19
+#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1766221200,
+         'id' => 2521,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              12,
+                              'start',
+                              '2024-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 21.12.2025, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1766332800
+       },
        undef,
        undef,
        undef,
@@ -3633,7 +3791,33 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
+#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
+#: source_id: IM_020883 (inaktiv)
+#: source_id: 2147345257 (inaktiv)
+Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
+Krokusstr.	2::xmas 16610,1715 16767,1831
+',
+         'from' => 1766142000,
+         'id' => 2529,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 20.12.2025 und 21.12.2025',
+         'type' => 'gesperrt',
+         'until' => 1766347200
+       },
        undef,
        undef,
        undef,
@@ -3909,8 +4093,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
-#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
 #: also_indoor: webcam https://portal1391.webcam-profi.de/
 #: osm_watch: node id="3204993764" version="7"
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
@@ -4439,7 +4623,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-10-20 vvv
+#: last_checked: 2025-10-27 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -5335,17 +5519,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (Einbahnstraße nur noch im Mittelteil, sehr vermutlich "Radfahrer frei") ---  #: also_indoor: traffic --- #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2021-11-28 --- #: check_frequency: 60d ---	q4::inwork; 9227,8890 9417,8890
-#: source_id: LMS-BR:386617/72 viz2021:13.387589,52.48589,13.10.2025,17:00 (bis 27.10.2025)
-	q4::inwork 9227,8890 9417,8890 9803,8890
-',
-         'from' => 1760281200,
-         'id' => 3479,
-         'text' => 'Schwiebusser Str.: Sperrung zwischen Mehringdamm und Friesenstr., evtl. sind auch Radfahrer betroffen, vom 13.10.2025 17:00 bis 27.10.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1761580800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5372,7 +5546,30 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
+#: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
+#: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024) (inaktiv)
+	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'from' => 1766116800,
+         'id' => 3490,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Preußenallee: voraussichtlich Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 20.12.2025 05:00 bis 21.12.2025 23:00 ',
+         'type' => 'gesperrt',
+         'until' => 1766354400
+       },
        undef,
        undef,
        undef,
@@ -6183,8 +6380,8 @@ Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch[closed]: note 3631207 6
 #: osm_watch[closed]: note 3631209 6
-#: osm_watch: note 4556342 4
-#: osm_watch: note 4741254 2
+#: osm_watch: note 4556342 6
+#: osm_watch: note 4741254 4
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
@@ -6250,7 +6447,7 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: osm_watch: way id="37861386" version="31"
+#: osm_watch: way id="37861386" version="32"
 #: osm_watch: way id="1231148375" version="8"
 #: priority: #B
 #: last_checked: 2025-10-17 (osm)
@@ -7189,13 +7386,15 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 # REMOVED (hier nicht mehr) --- #: note: bei rbb wieder aktiv
 # REMOVED Gierkezeile, nördlicher Abschnitt	q4::inwork 3493,12228 3495,12185 3507,12076
 # REMOVED (alt) --- Gierkezeile, südlicher Abschnitt	q4::inwork 3507,12076 3514,11988 3528,11852
-# REMOVED (hier nicht mehr) --- Behaimstr.	q4::inwork 3495,12185 3630,12201
 # REMOVED (hier nicht mehr) --- Schustehrusstr.	q4::inwork 3528,12276 3623,12284
 Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
+#: source_id: viz2021:13.302719,52.516502,27.10.2025,07:00 (bis 28.11.2025)
+#: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
+Behaimstr.	q4::inwork 3495,12185 3630,12201
 ',
          'from' => 1755468000,
          'id' => 4038,
-         'text' => 'Gierkeplatz: Bauarbeiten zwischen Gierkezeile und Schustehrusstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 28.02.2026',
+         'text' => 'Gierkeplatz: Bauarbeiten zwischen Gierkezeile und Schustehrusstr., Sperrung, evtl. sind auch Radfahrer betroffen, außerdem Sperrung in der Behaimstr., bis 28.02.2026',
          'type' => 'handicap',
          'until' => 1772298000
        },
@@ -7670,7 +7869,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="27260309" version="20"
 #: osm_watch: way id="372791173" version="11"
 #: osm_watch: way id="27260312" version="25"
-#: osm_watch: note 4673198 4
+#: osm_watch: note 4673198 6
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
 #: last_checked: 2025-10-15
 #: check_frequency: 60d
@@ -8066,7 +8265,27 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5692582-3496862-lichtermarkt-am-rathaus-lichtenberg.html
+#: tempex: first_advent & T13:00-18:00
+	q4::xmas 15710,12365 15537,12367 15508,12367
+',
+         'from' => 1764370800,
+         'id' => 4228,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              27,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Normannenstr.: Lichtermarkt am Rathaus Lichtenberg, 30.11.2025 von 13 bis 18 Uhr',
+         'type' => 'handicap',
+         'until' => 1764529200
+       },
        {
          'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
 #: by: https://wintermarkt-schlossplatz.de/
@@ -8857,7 +9076,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025)
-#: last_checked: 2025-10-20 vvv
+#: last_checked: 2025-10-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-11-28 (VIZ+adac-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9135,28 +9354,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.484668,52.501156,28.04.2025,12:00 (bis 16.05.2025) (bis 13.06.2025) (inaktiv)
-#: source_id: viz2021:13.48532,52.501467,28.04.2025,12:00 (bis 20.06.2025) (bis 11.07.2025) (bis 27.06.2025) (bis 11.07.2025) (inaktiv)
-#: source_id: adac:1513950500 (bis voraussichtlich 15.08.2025) (bis 17.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.48067,52.49917,17.07.2025,07:00 (bis 15.08.2025) (inaktiv)
-#: source_id: viz2021:13.484668,52.501156, (bis 08.08.2025) (inaktiv)
-#: source_id: viz2021:13.48067,52.49917, (bis 17.10.2025) (bis 30.10.2025)
-#: XXX wurde am 16.05.2025 aktualisiert, vielleicht haben ja doch nun die Bauarbeiten begonnen? Mittlerweile (20.05.2025) gibt es ein Baustelle auf der Radspur Richtung NO, provisorischer Radweg auf dem Bürgersteig
-#: XXX ab 17.07.2025 bis Mitte August 2025 für den Kfz-Verkehr Richtung Lückstr. gesperrt (laut rbb)
-#: note: bei rbb bis 08.08.2025 verlängert
-#: last_checked: 2025-10-25 (könnte Ende Oktober 2025 tatsächlich fertig werden)
-#: check_frequency: 30d
-#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
-	q2::inwork; 15880,10680 15970,10755
-	1::inwork 15970,10755 16038,10818
-',
-         'from' => 1752789600,
-         'id' => 4396,
-         'text' => 'Schlichtallee: Richtung Lückstr./Fischerstr. Bauarbeiten, Radverkehr wird über den Hochbord geführt, Umwege, bis voraussichtlich 30.10.2025, evtl. wird verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -9305,7 +9503,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: last_checked: 2025-10-24
+#: last_checked: 2025-10-27
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -9484,21 +9682,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (ex-H[zu wenig],G[zu wenig])
-#: last_checked: 2025-10-25 (traffic) vvv
-#: check_frequency: 14d vvv
-Wolliner Str.: Fahrbahn offiziell gesperrt	q4::inwork 10506,14521 10441,14497 10399,14429
-Griebenowstr.: Einschränkungen nur im Einmündungsbereich	q2::inwork 10399,14429 10311,14613
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4435,
-         'text' => 'Griebenowstr./Wolliner Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
@@ -9754,6 +9938,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251008
 #: source_id: viz2021:13.398,52.53495,08.10.2025,17:15 (bis 04.12.2025)
+#: note: etwa 50m gesperrt, Umwege
 	q4::inwork 9800,14306 9938,14356
 ',
          'from' => 1759935291,
@@ -9848,12 +10033,17 @@ Bötzowstr.	q3::inwork 12280,13880 12361,13985 12423,14066
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
-#: next_check: 2025-10-27 (Beginn der Arbeiten)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027 (Beginn einen Tag später)
+#: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh])
+#: note: laut rbb & VIZ Beginn einen Tag später
+#: last_checked: 2025-10-27
+#: check_frequency: 1d
+# REMOVED --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
 	q4::inwork 13357,9313 13489,9456
 ',
-         'from' => 1761433200,
+         'from' => 1761519600,
          'id' => 4472,
-         'text' => 'Bouchéstr.: Sanierungsarbeiten zwischen Karl-Kunger-Str. und Heidelberger Str., Sperrung der Fahrbahn, vom 27. Oktober 2025 bis 14. November 2025',
+         'text' => 'Bouchéstr.: Sanierungsarbeiten zwischen Karl-Kunger-Str. und Heidelberger Str., Sperrung der Fahrbahn, vom 28.10.2025 bis 14.11.2025',
          'type' => 'handicap',
          'until' => 1763161199
        },
@@ -9948,13 +10138,16 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251024
-	q4::inwork 25923,14081 25778,14058
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m45q5j435s2s
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicxp3eazniroezqofyicnijh4hb3nud6niynhbf3gmq3xsqahqwdi@jpeg (gesperrter Bereich 20m, deshalb q4 -> q3)
+#: source_id: viz2021:13.63083,52.52976,27.10.2025,07:00 (bis 14.11.2025)
+	q3::inwork 25923,14081 25778,14058
 ',
          'from' => 1761458400,
          'id' => 4480,
-         'text' => 'Greifswalder Str. (Mahlsdorf): Bauarbeiten zwischen An den Siedlergärten und Am Schlehdorn, Sperrung, vom 27.10.2025 07:00 Uhr bis Mitte November 2025',
+         'text' => 'Greifswalder Str. (Mahlsdorf): Bauarbeiten zwischen An den Siedlergärten und Am Schlehdorn, 20m der Fahrbahn sind gesperrt, vom 27.10.2025 07:00 Uhr bis Mitte November 2025',
          'type' => 'handicap',
-         'until' => 1763247599
+         'until' => 1763161199
        },
        {
          'data' => '#: add_fragezeichen: Sind die Wege weiterhin gesperrt?
@@ -9966,6 +10159,53 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
          'text' => 'Lauinger Str., Gartenstr.: einige Wege sind gesperrt, Umwege erforderlich, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: UFER-2025
+#: last_checked: 2025-10-26 (mapillary)
+#: check_frequency: 14d
+#: next_check: 2025-12-31 (entwicklungsstadt website, infravelo)
+	q4::inwork 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
+',
+         'from' => undef,
+         'id' => 4482,
+         'text' => 'Uferstr.: Markierungsarbeiten, Sperrungen der Fahrbahn möglich',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: LMS-BR:388052/72 viz2021:13.281815,52.53128,27.10.2025,07:00 (bis 21.11.2025)
+	2::inwork 2149,13775 2025,13815
+',
+         'from' => 1761458400,
+         'id' => 4483,
+         'text' => 'Nonnendamm: Bauarbeiten zwischen Nikolaus-Groß-Weg und Kleingartenanlage Bleibtreu II, Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.10.2025 07:00 bis 21.11.2025 17:00',
+         'type' => 'gesperrt',
+         'until' => 1763740800
+       },
+       {
+         'data' => '#: source_id: LMS-BR:388034/72 viz2021:13.276434,52.512155,27.10.2025,06:00 (bis 19.12.2025)
+#: note: laut rbb nur Richtung Norden
+	q4::inwork; 1787,11509 1732,11667 1747,11719
+',
+         'from' => 1761454800,
+         'id' => 4484,
+         'text' => 'Soorstr.: Bauarbeiten zwischen Fredericiastr. und Knobelsdorffstr., Sperrung Richtung Spandauer Damm, evtl. sind auch Radfahrer betroffen, vom 27.10.2025 06:00 bis 19.12.2025 20:00',
+         'type' => 'handicap',
+         'until' => 1766170800
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
+#: next_check: 2025-12-01 (Ende laut rbb & VIZ: Anfang Dez 2025) vvv
+Georgenstr.	q4::inwork 9441,12670 9568,12688
+Planckstr.	q4::inwork 9441,12670 9454,12558
+#: next_check ^^^
+',
+         'from' => 1761519600,
+         'id' => 4485,
+         'text' => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Anfang Dezember 2025',
+         'type' => 'handicap',
+         'until' => 1765407599
        }
      
 );

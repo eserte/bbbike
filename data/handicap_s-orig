@@ -69,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="23"
 #: osm_watch: way id="1072662717" version="27"
-#: last_checked: 2025-10-24
+#: last_checked: 2025-10-27
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -129,7 +129,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-10-26
+#: last_checked: 2025-10-27
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-01
 # REMOVED --- Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -274,15 +274,15 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 ### Treptow ###
 # 
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Ende Oktober 2025, hier nur Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lx3m26mh2p
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigoqdr5shxj5dtqes5qxwd57wjgqbgkq26lw5ab4qxdiuvxdg5mg4@jpeg (laut Plan Gehweg mit Radfahrer frei ausgeschildert)
-#: source_id: viz2021:13.45398,52.48894,20.10.2025,07:00 (bis 30.11.2025)
-#: note: tatsächlich sowohl Gehweg, Radfahrer frei als auch Einfahrt verboten, Radfahrer frei, obwohl die Fahrbahnbreite auf der Fahrbahn gar nicht ausreicht?!
-#: last_checked: 2025-10-20
-#: next_check: 2025-11-30
-#: valid: -20251130
-Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
+# REMOVED (vorfristig vorbei) --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Ende Oktober 2025, hier nur Kfz-Verkehr)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lx3m26mh2p
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigoqdr5shxj5dtqes5qxwd57wjgqbgkq26lw5ab4qxdiuvxdg5mg4@jpeg (laut Plan Gehweg mit Radfahrer frei ausgeschildert)
+# REMOVED --- #: source_id: viz2021:13.45398,52.48894,20.10.2025,07:00 (bis 30.11.2025)
+# REMOVED --- #: note: tatsächlich sowohl Gehweg, Radfahrer frei als auch Einfahrt verboten, Radfahrer frei, obwohl die Fahrbahnbreite auf der Fahrbahn gar nicht ausreicht?!
+# REMOVED --- #: last_checked: 2025-10-20
+# REMOVED --- #: next_check: 2025-11-30
+# REMOVED --- #: valid: -20251130
+# REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
 #: last_checked: 2025-09-14 vvv

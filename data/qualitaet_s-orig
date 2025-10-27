@@ -384,7 +384,7 @@ Lohm¸hlenbr¸cke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaﬂnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2025-09-05
+#: last_checked: 2025-10-27
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -478,7 +478,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg grˆﬂtenteils nicht nutzbar, fr¸her: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-24
+#: last_checked: 2025-10-27
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straﬂenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -2933,7 +2933,7 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 # REMOVED (weitgehend fertiggestellt, nur ein paar Meter an den Anschl¸ssen fehlen noch) --- #: XXX wird hier auch asphaltiert werden? --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php ("Vorplatz Zentralfriedhof, Asphaltierung Fahrradspur", "Planung") --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.842152.php ("bis Mitte November 2019") --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bezirksamt-laesst-am-vorplatz-des-zentralfriedhofs-spuren-fuer-radler-bauen_a236194 (bis Mitte November 2019) --- #: osm_watch: way id="70668204" version="9" --- #: last_checked: 2019-11-16 (fast fertig) --- #: check_frequency: 7d
 #: by: https://www.nachhaltige-erneuerung.berlin.de/frankfurter-allee-nord/umgestaltung-vorplatz-zentralfriedhof-friedrichsfelde (Realisierung bis 2025/2026)
 #: osm_watch: note 4294376 5
-#: osm_watch: way id="1025072174" version="3"
+#: osm_watch: way id="1025072174" version="4"
 #: last_checked: 2025-10-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-09-20 (Halteverbotschilder)
@@ -5753,7 +5753,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 # 
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (vom 27. Februar 2022: Bauarbeiten 2023 und 2024)
 #: XXX ƒndert sind bei den Bauarbeiten etwas am Belag? Wird es w‰hrend der Bauarbeiten zu Sperrungen kommen?
-#: osm_watch: way id="45478588" version="16"
+#: osm_watch: way id="45478588" version="17"
 #: last_checked: 2025-08-27
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
@@ -25583,6 +25583,9 @@ Kˆllnische Str.: sehr guter Asphalt	Q0 18659,5330 18307,5440
 # 
 #: by: Ruth Berendes-... vvv
 #: corrected_by: srt (Asphalt -> Beton)
+#: source_id: viz2021:13.42378,52.41824,27.10.2025,07:00 (Fahrbahnerneuerung zwischen Trimbacher Str. und Salmbacher Str., bis 28.11.2025)
+#: XXX nach den Bauarbeiten bessere Qualit‰t?
+#: next_check: 2025-11-28
 Delmer Steig: Beton	Q0- 12011,1361 11954,1407 11922,1445 11895,1489
 Prinzenstr. (Lichterfelde): m‰ﬂiges Verbundsteinpflaster	Q2+ 4931,2235 4995,2090
 #: by: ^^^
