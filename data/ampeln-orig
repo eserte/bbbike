@@ -205,14 +205,15 @@ Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
 # 
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025)
-#: source_id: viz2021:13.39434,52.50697,09.09.2025,12:00 (bis 30.10.2025)
+#: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
+#: source_id: viz2021:13.39434,52.50697,09.09.2025,12:00 (bis 30.10.2025) (inaktiv)
+#: source_id: viz2021:13.39434,52.50697, (bis 21.11.2025)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
 #: by: https://entwicklungsstadt.de/gefaehrliche-kreuzung-in-kreuzung-rudi-dutschke-strasse-soll-sicherer-werden/
 #: note: außerdem Anforderungsampel für querende Fußgänger
 #: last_checked: 2025-09-11
-#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-11-21 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250521
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
 # 
@@ -3561,6 +3562,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9887 (Antrag zur Ampel)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1610685.php (bleibt die Ampel?)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1610630.php
+#: next_check: 2025-10-28
 	X::inwork 21152,11945
 # REMOVED (mittlerweile die gesamte Kreuzung) ---	F 21150,11925
 # 

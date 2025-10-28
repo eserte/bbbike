@@ -4541,7 +4541,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.52703,52.486973,16.10.2024,08:00 (östliche Fahrbahn, bis 31.10.2025) (inaktiv)
 #: source_id: bvg2024:396#HIM_FREETEXT_242591
-#: source_id: viz2021:13.52634,52.48451, (bis 31.10.2025)
+#: source_id: viz2021:13.52634,52.48451, (bis 31.10.2025) (bis 31.01.2026)
 # REMOVED --- #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 # REMOVED --- #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
 # REMOVED --- #: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht; mittlerweile (2024-09-28) vermutlich komplett mit Deckschicht asphaltiert
@@ -4559,7 +4559,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: osm_watch: way id="192487145" version="34"
 #: osm_watch: note 4481312 6
 #: check_frequency: 60d vvv
-#: next_check: 2025-12-31 vvv
+#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20, 2025-09-10) existiert das Radfahrer-verboten-Schild nicht mehr
 #: last_checked: 2025-10-03 (mapillary)
@@ -4578,7 +4578,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 ',
          'from' => undef,
          'id' => 3008,
-         'text' => 'Treskowallee: Richtung Norden Gehweg mit Verschwenkungen und Bordsteinen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; Bauarbeiten bis Ende 2025',
+         'text' => 'Treskowallee: Richtung Norden Gehweg mit Verschwenkungen und Bordsteinen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; Bauarbeiten voraussichtlich bis Ende Januar 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5458,7 +5458,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
          'data' => '#: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00 (inaktiv)
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen) ---	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
-#: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025)
+#: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025) (inaktiv)
 #: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m356f5qmh22g
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiclu2wwbebvt4nr5kzd7jmiv7uapqel7bdnwucpnxltglngf3icw4@jpeg
@@ -6000,7 +6000,8 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: last_checked: 2025-07-19 vvv
-#: next_check: 2026-03-01 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-11-15 (az-lichtenrade) vvv
+# REMOVED --- #: next_check: 2026-03-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung
 Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
@@ -6124,7 +6125,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: note: "Unsere Winterpause 2024 beginnt nach dem letzten Termin am 01. Dezember 2024. Danach sind wir wieder ab März 2025 am Start."
 #: note: "... ersten Flowmarkt am 23. März 2025 ..."
 #: XXX Wann ist Saisonbeginn und -ende?
-#: next_check: 2025-11-01
+#: next_check: 2025-11-30
 	q4::temp:clock 12412,9610 12250,9691
 ',
          'from' => 1742598000,
@@ -7147,14 +7148,15 @@ Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie3mmwogk6b3mmhte2wkcdkk2ukjvcohy3cradu2z2lv2kviqhbtm@jpeg (keine Ausnahme zu sehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20251020 ("voraussichtlich noch diese Woche abgeschlossen sein", also bis 2025-10-24?)
 #: source_id: viz2021:13.38587,52.50069,20.10.2025,07:00 (bis 30.10.2025)
-#: next_check: 2025-10-24 (bereits am Fr fertig?)
+#: last_checked: 2025-10-28
+#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 9192,10528 9178,10451 9158,10342
 ',
          'from' => 1760824800,
          'id' => 3974,
-         'text' => 'Großbeerenstr.: Fahrbahnsanierung, Fahrbahn zwischen Ida-Wolff-Platz und Hallesches Ufer gesperrt, bis Ende Oktober 2025',
+         'text' => 'Großbeerenstr.: Sanierung der Fahrbahn zwischen Ida-Wolff-Platz und Hallesches Ufer, offiziell ist die Durchfahrt noch gesperrt, voraussichtlich bis Ende Oktober 2025',
          'type' => 'handicap',
-         'until' => 1761951599
+         'until' => 1761865199
        },
        undef,
        undef,
@@ -7592,7 +7594,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-10-28 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7916,7 +7918,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-09-29 (research)
+#: last_checked: 2025-10-28 (research)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -8443,7 +8445,22 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
          'type' => 'handicap',
          'until' => 1779746400
        },
-       undef,
+       {
+         'data' => '#: next_check_id: MARKGRAFEN-2025
+#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
+#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
+#: source_id: viz2021:13.39434,52.50697, (bis 21.11.2025)
+#: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
+Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
+#: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
+Markgrafenstr. nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
+',
+         'from' => 1738350510,
+         'id' => 4250,
+         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis Ende November 2025',
+         'type' => 'handicap',
+         'until' => 1763765999
+       },
        undef,
        undef,
        undef,
@@ -8712,7 +8729,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-10-15
+#: last_checked: 2025-10-28
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -9238,7 +9255,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-09-30 (research)
+#: last_checked: 2025-10-28 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 ',
          'from' => undef,
@@ -9333,7 +9350,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-10-15
+#: last_checked: 2025-10-28 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 ',
@@ -9862,14 +9879,15 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
-#: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025)
+#: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
+#: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025)
 	q4::inwork; 17916,5675 18013,5627
 ',
          'from' => 1759010400,
          'id' => 4454,
-         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 29.09.2025 bis 31.10.2025',
+         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 29.09.2025 bis 03.11.2025',
          'type' => 'handicap',
-         'until' => 1761951600
+         'until' => 1762210799
        },
        {
          'data' => '#: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
@@ -9962,15 +9980,15 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'until' => 1762142400
        },
        {
-         'data' => '#: source_id: LMS-BR:386176/72 viz2021:13.38535,52.52873, (bis 31.10.2025)
+         'data' => '#: source_id: LMS-BR:386176/72 viz2021:13.38535,52.52873, (bis 31.10.2025) (bis 14.11.2025)
 #: note: laut rbb auch für Radverkehr; Umleitung ist eingerichtet
 	q4::inwork; 9094,13648 9044,13711 8992,13774 8935,13844
 ',
          'from' => 1760042654,
          'id' => 4464,
-         'text' => 'Chausseestr.: Gleisbauarbeiten zwischen Tieckstr. und Invalidenstr., Sperrung Richtung Nordwesten, bis 30.10.2025',
+         'text' => 'Chausseestr.: Gleisbauarbeiten zwischen Tieckstr. und Invalidenstr., Sperrung Richtung Nordwesten, bis 14.11.2025',
          'type' => 'handicap',
-         'until' => 1761865200
+         'until' => 1763161199
        },
        {
          'data' => '#: next_check_id: HUFELAND-2025
@@ -10034,11 +10052,13 @@ Bötzowstr.	q3::inwork 12280,13880 12361,13985 12423,14066
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027 (Beginn einen Tag später)
-#: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh])
+#: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025)
+#: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
 #: note: laut rbb & VIZ Beginn einen Tag später
 #: last_checked: 2025-10-27
 #: check_frequency: 1d
 # REMOVED --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
+#: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
 	q4::inwork 13357,9313 13489,9456
 ',
          'from' => 1761519600,
@@ -10196,16 +10216,30 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
-#: next_check: 2025-12-01 (Ende laut rbb & VIZ: Anfang Dez 2025) vvv
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
+#: source_id: viz2021:13.39202,52.52009,28.10.2025,07:00 (bis 02.12.2025)
+#: next_check: 2025-12-02 (VIZ-Verkehrsmeldung) vvv
 Georgenstr.	q4::inwork 9441,12670 9568,12688
-Planckstr.	q4::inwork 9441,12670 9454,12558
+Planckstr.	q4::inwork 9435,12698 9441,12670
+Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
 #: next_check ^^^
 ',
          'from' => 1761519600,
          'id' => 4485,
          'text' => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Anfang Dezember 2025',
          'type' => 'handicap',
-         'until' => 1765407599
+         'until' => 1764716399
+       },
+       {
+         'data' => '#: source_id: LMS-BR:381146/72 viz2021:13.30594,52.52464, (bis 03.12.2025)
+	q4::inwork 3534,13098 3711,13098
+',
+         'from' => 1761675773,
+         'id' => 4486,
+         'text' => 'Nordhauser Str.: Bauarbeiten zwischen Sömmeringstr. und Mierendorffplatz, Sperrung, evtl. sind auch Radfahrer betroffen, bis 02.12.2025 18:00',
+         'type' => 'handicap',
+         'until' => 1764716400
        }
      
 );
