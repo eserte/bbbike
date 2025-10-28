@@ -5407,7 +5407,18 @@ dazu verwendet wird",
 	  label => M"GPS-Transfer",
 	  longhelp => M"Methode für das Übertragen von GPS-Routen/Tracks auf ein GPS-Gerät.",
 	  var => \$gps_transfer,
-	 ],  
+	 ],
+	 ['gpsgarmindisktype','=s',undef,
+	  strict => 1,
+	  choices => [
+	              [M('Voreinstellung'),    undef],
+		      [M('interner Speicher'), 'flash'],
+		      [M('SD-Karte'),          'card'],
+		     ],
+	  label => M"GPS-Disktyp",
+	  longhelp => M"Disktyp des GPS-Geräts für Routen-Uploads",
+	  var => \$gps_garmin_disk_type,
+	 ],
 	 ['gpsdevice','=s',($os eq 'win'   ? "USB" :
 			    $os_bsd        ? '/dev/cuaa0' :
 			    $^O eq 'linux' ? '/dev/ttyUSB0' 

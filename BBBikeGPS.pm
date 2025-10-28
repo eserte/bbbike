@@ -115,7 +115,9 @@ sub BBBikeGPS::gps_interface {
 	$modobj->transfer(-file => $file,
 			  -res => $res,
 			  -test => $extra_args{-test},
-			  -top => $top);
+			  -top => $top,
+			  -gpsgarmindisktype => $gps_garmin_disk_type
+		         );
 	if ($do_gps_upload_hist) {
 	    BBBikeGPS::gps_upload_history($route_obj, -gpsrouteinfo => $gps_route_info);
 	}

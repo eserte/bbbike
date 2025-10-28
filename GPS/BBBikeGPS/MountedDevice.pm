@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2016,2017,2018,2020,2021,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2016,2017,2018,2020,2021,2023,2024,2025 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 {
@@ -68,6 +67,7 @@
 	my $res = $args{-res};
 	my $ofile = $res->{file} || _status_message("FATAL ERROR: -res.file is missing", "die");
 	my $route = $res->{route};
+	my $gps_garmin_disk_type = $args{-gpsgarmindisktype};
 
 	local $ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE} = $ENV{BBBIKE_DEBUG_BBBIKEGPS_MOUNTEDDEVICE};
 	if ($args{-test}) {
@@ -121,6 +121,7 @@
 		 +{ files => [$dest] };
 	     },
 	     with_tty => 0, # assume we're called always in a Tk-like environment
+	     garmin_disk_type => $gps_garmin_disk_type,
 	    );
 
     }

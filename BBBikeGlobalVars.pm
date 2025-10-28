@@ -147,6 +147,7 @@ use vars qw(
      $run_under_kde $kde
      $use_xwd_if_possible $str_history $nearest_orte
      $standard_menubar $auto_install_cpan $ask_quit $gps_device
+     $gps_garmin_disk_type
      $do_gps_upload_hist $gps_upload_dir
      $outline_i
      $without_zoom_factor $coord_output_int
