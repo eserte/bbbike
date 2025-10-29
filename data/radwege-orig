@@ -52,8 +52,8 @@
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025)
-#: last_checked: 2025-09-22 (mapillary)
-#: check_frequency: 120d
+#: last_checked: 2025-10-29
+#: check_frequency: 45d
 #: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
 # 
@@ -196,8 +196,11 @@ alte Gehwegplatten	RW1; 7986,4808 8014,4832
 	RW2;RW2 9242,7145 9242,7044 9242,6962
 	RW1;RW1 9242,6962 9245,6791 9247,6687
 	RW4;RW4 9247,6687 9249,6642
-	RW3; 7735,9121 7790,9126
-	RW1;RW1 7735,9121 7647,9196 7596,9249 7509,9337
+	RW7;RW7 7790,9126 8014,9126 8053,9123 8081,9120 8180,9099
+#: historical_note: früher zwischen Czeminskistr. und Hohenfriedbergstr. Radspur Richtung Osten, RW3
+	RW7;RW7 7735,9121 7790,9126
+#: note: Hochbordradwege existieren weiterhin
+	RW7;RW7 7735,9121 7647,9196 7596,9249 7509,9337
 Poller	RW4; 7471,9360 7509,9337
 	RW3; 7509,9337 7471,9360
 	RW1; 7829,9723 7725,9748 7631,9770 7625,9771
@@ -363,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-10-28 vvv
+#: last_checked: 2025-10-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -710,7 +713,7 @@ Gehwegplatten mit Unebenheiten	RW1; 7480,7683 7422,7607 7338,7498 7307,7457 7296
 	RW1; 3925,6604 3836,6550
 Verbundsteinpflaster	RW1; 3836,6550 3925,6604
 Verbundsteinpflaster	RW2; 3925,6604 3983,6599 4034,6642 4074,6681
-	RW3;RW3 5310,7839 5211,7783 5091,7676 5073,7660 5051,7631 5045,7623 4978,7530 4909,7436 4874,7382 4836,7327
+	RW3;RW3 5310,7839 5198,7772 5091,7676 5073,7660 5051,7631 5045,7623 4978,7530 4909,7436 4874,7382 4836,7327
 	RW4;RW3 4836,7327 4788,7257 4743,7212
 	RW3; 4743,7212 4675,7145
 Busspur ist immer gültig	RW5; 4675,7145 4743,7212
@@ -1452,7 +1455,8 @@ Verbundsteinpflaster	RW1; 4021,6729 4074,6681 4111,6651 4218,6583
 Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 	RW2; 4423,6477 4347,6551 4248,6620 4141,6688
 	RW1; 4141,6688 4103,6716 4061,6753
-	RW2; 4061,6753 3981,6850 3944,6901 3910,6949 3784,6985 3688,7093
+	RW2; 4061,6753 3981,6850 3944,6901 3910,6949
+Verbundsteinpflaster mit deutlichen Unebenheiten	RW2; 3910,6949 3784,6985 3688,7093
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
@@ -2566,8 +2570,8 @@ eigentlich provisorische Radspuren per Gelbmarkierung, in der Praxis zugeparkt	R
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (ex-B[minor])
-#: last_checked: 2025-06-13
-#: check_frequency: 120d
+#: last_checked: 2025-10-29
+#: check_frequency: 45d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
@@ -3705,9 +3709,9 @@ Verbundsteinpflaster	RW1; 3766,1389 3795,1365
 Verbundsteinpflaster	RW1; 3795,1365 3857,1235 3895,1219
 # 
 #: note: Wismarer Str., Richtung Nordwesten
-	RW1; 3895,1219 3857,1235 3795,1365 3766,1389
+Verbundsteinpflaster	RW1; 3895,1219 3857,1235 3795,1365 3766,1389
 	RW4; 3766,1389 3698,1450
-	RW1; 3698,1450 3585,1541 3580,1545 3511,1601 3432,1667
+Verbundsteinpflaster	RW1; 3698,1450 3585,1541 3580,1545 3511,1601 3432,1667
 # 
 #: note: Osdorfer Str., stadtauswärts
 Gehwegplatten, teilweise recht schmal	RW1; 4261,1601 4370,1445 4399,1403 4450,1326
@@ -3718,7 +3722,7 @@ Gehwegplatten, abschnittsweise Bord gegen Gehweg, teilweise recht schmal	RW1; 47
 # 
 	RW3;RW1 6613,3320 6535,3243
 #: note: eigentlich gut, wären da nicht die zahlreichen Kleinsteinpflasterabschnitte an Ausfahrten und Auffahrten
-etwas älterer Asphalt	RW1; 6535,3243 6401,3113 6313,3028 6222,2940 6105,2826 6002,2723 5971,2691 5930,2671 5831,2624 5824,2621 5789,2604 5731,2581 5669,2556 5539,2497 5471,2470
+etwas älterer Asphalt, kein Unterstreifen gegen parkende Autos	RW1; 6535,3243 6401,3113 6313,3028 6222,2940 6105,2826 6002,2723 5971,2691 5930,2671 5831,2624 5824,2621 5789,2604 5731,2581 5669,2556 5539,2497 5471,2470
 	RW3; 5471,2470 5413,2436 5398,2422
 asphaltiert, schmal	RW2; 5413,2436 5471,2470 5539,2497
 etwas älterer Asphalt, schmal, kaum Platz zu parkenden Autos	RW1; 5539,2497 5669,2556 5731,2581 5789,2604 5824,2621 5831,2624 5930,2671 5971,2691
@@ -4525,10 +4529,11 @@ neu asphaltiert	RW1; 22885,12580 22967,12647
 #: last_checked: 2025-08-12 (mapillary) vvv
 # REMOVED --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung) vvv
-#: next_check: 2025-10-28 (SenUVK-Seite) vvv
-Radspur	RW4?; 21152,11945 21166,12023 21190,12193 21199,12258
+#: last_checked: 2025-10-28 (Tsp)
+#: check_frequency: 14d
+Radspur	RW3; 21152,11945 21166,12023 21190,12193 21199,12258
+#: next_check: 2025-10-28 (SenUVK-Seite)
 gemeinsamer Geh- und Radweg, Gehwegplatten und Asphalt	RW2; 21199,12258 21190,12193 21166,12023 21152,11945
-#: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -7816,7 +7821,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2025-10-29 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -7884,6 +7889,7 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 Grünbeschichtung	RW4; 15010,12855 15098,12849
 #: next_check_id: SCHEFFEL-2024
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article410247971/meilenstein-nach-acht-jahren-planung-lichtenberg-eroeffnet-radwege.html (Eröffnung am 4.11.2025)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1611323.php (Anradeln am 4.11.2025)
 #: XXX kommt hier noch ein Radwegschild hin?
 #: last_checked: 2025-10-17
 # REMOVED --- #: check_frequency: 14d
@@ -8278,7 +8284,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-27
+#: last_checked: 2025-10-29
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -9187,7 +9193,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.38458,52.45267, (bis 31.12.2025)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
-#: last_checked: 2025-07-19 vvv
+#: last_checked: 2025-10-29 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung, Fahrrat-Protokoll) vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -9358,7 +9364,7 @@ Grünbeschichtung	RW4; 12259,7164 12244,7205
 Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 #: XXX wann wird hier die Radspur komplettiert?
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-29
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
 	RW3; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696
@@ -9718,7 +9724,7 @@ die nördliche Fahrbahnseite hat einen Streifen mit einem anderen Rot mit Radfahr
 Tempo 10	RW6;RW6 15141,5774 15129,5792 15125,5869 15125,5913
 Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
-	RW7;RW7 6460,8688 6644,8780 6664,8787 6852,8880
+	RW7;RW7 6460,8688 6644,8780 6664,8787 6852,8880 6958,8941 7101,9027 7308,9163
 # 
 #: by: osm vvv
 	RW6;RW6 4098,21809 4153,21742 4204,21705
@@ -9726,4 +9732,6 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 #: by ^^^
 # 
 	RW7;RW7 11917,11186 11726,11265 11542,11342 11507,11355
+# 
+	RW1; 2624,1704 2824,1273
 # 

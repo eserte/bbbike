@@ -495,7 +495,7 @@ Kleingartenanlage Erbkaveln	F:Orchard 3607,982 3662,878 3399,716 3320,823 3426,9
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/oeffentlichkeits-beteiligungen/2021/02-planentwurf_6-41ve.pdf
 #: XXX wird im Zuge des Bebauungsplans 6-41VE verkleinert, und zwar soll der Teil an der Wismarerstr./am Ostpreußendamm zugunsten von Bebauung aufgegeben werden
 #: priority: #D
-#: last_checked: 2025-10-15
+#: last_checked: 2025-10-29
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-06-01
 KGA Eugen-Kleine-Brücke	F:Orchard 3766,1389 3710,1317 3635,1215 3750,1164 3787,1196 3841,1083 3866,1134 3869,1144 3839,1197 3860,1207 3857,1235 3795,1365 3766,1389
@@ -1619,6 +1619,8 @@ Alter Friedhof Wannsee	F:Cemetery -7233,495 -7184,535 -7228,575 -7157,622 -7257,
 #: alias: Friedhof Wannsee II
 #: alias: Friedhof Wannsee, Lindenstraße
 Neuer Friedhof Wannsee	F:Cemetery -6477,1764 -6517,1988 -6496,1976 -6422,1932 -6291,1851 -6282,1828 -6368,1809 -6467,1785 -6477,1764
+#: historical_note: früher (bis 2025) Teil der übergroßen Parkplatz- und Fahrschulübungsfläche
+Platz des 4. Juli	F:P 2679,1585 2716,1599 2826,1361 2837,1338 2801,1321 2679,1585
 #############################################################################
 # Plätze (experimentell)
 # XXX_prog: es sollte unterschieden werden zwischen Flächen, die einfach
@@ -1663,19 +1665,10 @@ Dennewitzplatz	F:Square 7813,10112 7862,9918 7866,9902 7906,10098 7906,10098 781
 Winterfeldtplatz	F:Square 7038,10088 7049,9833 7126,9825 7118,9870 7080,10098
 #: note: hauptsächlich U-Bahn-Gebäude, nicht frei befahrbar
 Nollendorfplatz	F:Square 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 6937,10407 7033,10396 7131,10331
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/platz-des-4-juli-wird-entsiegelt_a411413 (Abschluss im zweiten Quartal 2025, 12000m² werden entsiegelt)
-#: by: https://entwicklungsstadt.de/vom-betonplatz-zur-parkflaeche-baubeginn-am-platz-des-4-juli-in-lichterfelde/
-#: by: https://stadtrand-nachrichten.de/platz-des-4-juli-anwohner-kritisieren-reduzierung-von-parkplaetzen/
-#: by: https://bvv-steglitz-zehlendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9487 (Anfrage)
-#: by: https://www.tagesspiegel.de/berlin/ausgleich-fur-bau-der-dresdner-bahn-zwei-berliner-bezirke-bekommen-deutlich-mehr-grun-14111081.html
-#: osm_watch: note 4787877 1
-#: osm_watch: way id="321674794" version="11"
-#: XXX Parkfläche entsteht
-#: last_checked: 2025-07-19 (mapillary)
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2025-06-30 (bw)
-#: note: Parkplatz, Fahrschulübungsfläche, teilweise frei befahrbar
-Platz des 4. Juli	F:Square 2624,1704 2659,1720 2860,1289 2824,1273 2624,1704
+#: note: Parkplatz
+Platz des 4. Juli	F:Square 2837,1338 2801,1321 2824,1273 2860,1289 2837,1338
+#: note: Fahrschulübungsfläche, teilweise frei befahrbar
+Platz des 4. Juli	F:Square 2624,1704 2679,1585 2716,1599 2659,1720 2624,1704
 #: note: Parkplatz, Fahrschulübungsfläche, teilweise frei befahrbar
 Olympischer Platz	F:Square -514,11991 -505,11882 -157,11943 -110,12019 -193,12051 -272,12039 -514,11991
 #: note: gepflastert, frei befahrbar

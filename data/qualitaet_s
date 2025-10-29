@@ -1196,6 +1196,7 @@ Genter Str.: mäßiges Kopfsteinpflaster	Q2 7012,15571 6919,15666 6802,15790 6661,
 Am Walde: Asphalt	Q0 17771,7880 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kleinsteinpflaster	Q1 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 Prager Platz: Verbundsteinpflasterradweg	Q1 5648,9642 5630,9656 5598,9654 5578,9629
+Prager Str.: Kleinsteinpflaster	Q1 5630,9656 5649,9689
 Roedeliusplatz: Asphalt	Q0 16166,12292 16227,12281 16276,12273
 Rüdigerstr. (Lichtenberg): Asphalt	Q0 17471,12243 17441,12247 17314,12265 17218,12281 17184,12286 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
 Barbarossastr.: Kopfsteinpflaster	Q2 7122,9517 7002,9526
@@ -1302,7 +1303,7 @@ Wilskistr.: Kopfsteinpflaster, OK	Q1 -219,4149 -158,4236 27,4447 195,4588 301,46
 Wilskistr.: Asphalt	Q0 -219,4149 -303,4086 -343,4056 -402,4012
 Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 723,4572
 Ihnestr.: mäßiges Kopfsteinpflaster	Q2 1866,4572 1817,4462 1761,4255 1740,4176 1691,3990 1664,3907
-Spilstr.: Kopfsteinpflaster, OK	Q1 3836,6550 3826,6656 3865,6758
+Spilstr.: Kleinsteinpflaster, etwas uneben	Q1 3836,6550 3826,6656 3865,6758
 (zur Weißenhöher Str.): Asphalt	Q0 19726,11743 19735,11721 19830,11677 19881,11591
 Biesdorfer Friedhofsweg: schlechtes Kopfsteinpflaster	Q3 21311,11528 21514,11796
 (an der U-Bahn): Schotterweg	Q2 21514,11796 21645,11912 21751,11973
@@ -11917,6 +11918,7 @@ Wegerichstr.: Gehwegplatten	Q1 16475,2586 16538,2543
 (Goerdelersteg - Reichweindamm): Gehwegplatten	Q1 3596,14276 3576,14273 3540,14289 3521,14360 3472,14366
 (Britzer Str. - Rixdorfer Str.): Verbundsteinpflaster	Q1 10048,3806 10010,3824 9999,3852 10012,3895
 Bulgarische Str.: Verbundsteinpflaster	Q1; 15591,8848 15558,8820 15378,8668 15166,8489
+Konradinstr.: Asphalt, einige leichte Schäden	Q0 8872,5484 8674,5357
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12894,9 +12896,9 @@ Friedrichstr. (Lichterfelde): Verbundsteinpflaster	Q1 2890,3561 2717,3600
 Pfleidererstr. (Lichterfelde): Asphalt	Q0 3011,3303 2998,3324 2832,3372
 Kadettenweg: schlechtes Kopfsteinpflaster	Q3 2965,3823 3045,3718 3063,3693 3186,3515 3228,3455
 Kadettenweg: Asphalt	Q0 3228,3455 3328,3313 3348,3278 3450,3142 3462,3113 3462,3042 3459,2944 3456,2835
-Baseler Str.: Asphalt	Q0 3148,1888 3150,2113 3151,2224
-Baseler Str.: Asphalt	Q0 3151,2224 3161,2482
-Baseler Str.: Asphalt mit leichten Schäden	Q0 3161,2482 3163,2598 3171,2848
+Baseler Str.: Asphalt/Beton mit einigen Schäden	Q1 3148,1888 3150,2113 3151,2224
+Baseler Str.: Asphalt/Beton mit einigen Schäden	Q1 3151,2224 3161,2482
+Baseler Str.: Asphalt mit einigen Schäden	Q1 3161,2482 3163,2598 3171,2848
 Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3171,2848 3174,3052 3184,3427
 Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3184,3427 3185,3476 3186,3515 3195,3783 3194,3817 3197,3934
 Baseler Str.: Asphalt	Q0 3197,3934 3185,3958

@@ -70,7 +70,7 @@ Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224
 #: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
 #: XXX Unterführung wird voraussichtlich im Sommer 2025 fertig sein
 #: XXX Eröffnung des Fußgängertunnels am 4.2.2025
-#: last_checked: 2025-09-13 (YouTube)
+#: last_checked: 2025-10-28 (daf)
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2025-12-31
 Bhf. Blankenfelde: neue Unterführung ist noch nicht für den Kfz-Verkehr fertig	2::inwork 11667,-7536 11601,-7560 11551,-7599
@@ -82,10 +82,10 @@ Bhf. Blankenfelde: neue Unterführung ist noch nicht für den Kfz-Verkehr fertig	2
 #: last_checked: 2025-09-06
 Mecklenburgische Str./Rudolf-Mosse-Str.: Überfahrt gesperrt, für Radfahrer ist ein bisschen Platz frei gelassen	3nocross 3619,7587 3631,7598 3839,7787
 #: osm_watch: way id="223384912" version="12"
-#: last_checked: 2025-06-26 (mapillary)
+#: last_checked: 2025-10-29
 Sodener Str.: Einbahnstraßenregelung, Radfahrer frei	1 3688,7093 3703,7324
 #: osm_watch: way id="4395528" version="35"
-#: last_checked: 2025-06-26 (mapillary)
+#: last_checked: 2025-10-29
 Schlangenbader Str.: Einbahnstraßenregelung, mit entgegengesetzter provisorischer Radspur	1 3981,6850 3958,7040 3965,7297
 #: next_check ^^^
 #: check_frequency ^^^
@@ -115,7 +115,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-10-28
+#: last_checked: 2025-10-29
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -264,10 +264,14 @@ Heylstr.	1 6459,8281 6385,8274 6313,8254
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
 Gutzkowstr.	1 6785,8194 6634,8134
 Gleditschstr.	1 7124,9226 7118,9315
+#: XXX Gibt es diese Diagonalsperre noch?
+#: priority: #C
 Hohenfriedbergstr.	3 7791,8882 7790,8918 7790,9126
 Hohenfriedbergstr.	3 7790,9126 7790,8918 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8918 7707,8919
 Hohenfriedbergstr. - Brunhildstr.	3 7707,8919 7790,8918 7790,9126
+Hohenfriedbergstr. - Monumentenstr.	3 7790,8918 7790,9126 *
+Monumentenstr. - Hohenfriedbergstr.	3 * 7790,9126 7790,8918
 Olga-Benario-Prestes-Str.	1 12628,14650 12473,14763
 Filandastr.	3nocross 5671,5489 5675,5573 5676,5664 5672,5751
 Gelnitzstr.	1 22885,5835 22900,5740
@@ -1219,7 +1223,7 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 #: XXX wird die Einbahnstraßenregelung umgedreht, dann offen von Bahnhof zur Drakestr.?
 #: osm_watch: way id="65369044" version="16"
 #: osm_watch: note 4846294 3
-#: last_checked: 2025-10-07 (osm note)
+#: last_checked: 2025-10-29
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-06-30 (Tsp)
 Hans-Sachs-Str.	1 3141,4023 3214,4066
@@ -1367,7 +1371,7 @@ Wadzeckstr.	1 11295,13224 11315,13210 11354,13184 11369,13174
 Zimmerstr.	1 -13637,-1164 -13876,-1226
 Alte Köpenicker Allee: Schranke bei der Einfahrt	2 20316,7637 20348,7634 20459,7445 20501,7472 20540,7532
 Bauhüttenweg: Anlieger frei	2:Anlieger 12703,2454 12774,2463 12835,2470 12948,2484 13064,2499 13180,2514 13238,2521 13302,2554 13348,2588
-Südwestkorso: Mittelstreifen	3nocross 5211,7783 5310,7839 5346,7860
+Südwestkorso: Mittelstreifen	3nocross 5198,7772 5310,7839 5346,7860
 August-Bebel-Str. (Schulzendorf)	1 24342,-3378 24314,-3438 24256,-3568
 Karl-Marx-Str. (Schulzendorf)	1 24185,-3434 24296,-3400 24342,-3378
 Bornitzstr. [Wohngebiet]	1 16484,12825 16431,12825 16385,12825 16384,12874
@@ -2369,4 +2373,6 @@ Fritz-Reuter-Str. (Teltow)	1 2545,92 2556,-28
 Max-Sabersky-Allee (Teltow)	1 2696,189 2902,329
 # 
 Melchiorstr.: Fahrradstraße ohne Freigabe für Anleiger	2 11507,11355 11542,11342
+# 
+Langenscheidtbrücke	1 7647,9196 7735,9121
 # 

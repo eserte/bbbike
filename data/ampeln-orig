@@ -240,7 +240,7 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: osm_watch: note 4289251 1
 #: source_id: adac:1602492862 (inaktiv)
-#: last_checked: 2025-06-26 (mapillary)
+#: last_checked: 2025-10-29
 #: check_frequency: 120d
 #: next_check: 2028-01-01
 Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
@@ -4056,6 +4056,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 14754,17673
 	X 10908,17142
 	X 6992,14251
+#: note: Anforderung für Radfahrer aus der Hildburghauser Str.
 	X 4399,1403
 	X 8075,499
 	X 12221,7271
@@ -4305,7 +4306,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX Ausgeschaltet, weil die Zufahrt zum Tunnel gesperrt ist.
 #: osm_watch: note 4573131 1
 #: osm_watch: node id="6225847741" version="1"
-#: last_checked: 2025-01-02
+#: last_checked: 2025-10-29
 #: check_frequency: 210d
 #: next_check: 2028-01-01
 	F0 3944,6901
@@ -4375,7 +4376,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-29
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381

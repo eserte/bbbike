@@ -478,7 +478,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-27
+#: last_checked: 2025-10-29
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -564,7 +564,7 @@ Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 1156
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866 (Antrag zum Radverkehr auf der Oderbrücke)
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023) (inaktiv)
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-29
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
@@ -622,7 +622,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10226,14568 10311,14391
 #: by: https://www.berliner-woche.de/mitte/c-bauen/drei-bauvorhaben-beginnen-jetzt_a335114
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/brunnenviertel-ev-will-baumfaellungen-stoppen_a336818
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf (bis Oktober 2023)
-#: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2024 - 3. Quartal 2025) (2. Quartal 2025 - 1. Quartal 2026) (3. Quartal 2025 - 1. Quartal 2027)
+#: by: https://www.infravelo.de/projekt/swinemuender-strasse/ (2. Quartal 2023 - 4. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2023 - 3. Quartal 2025) (4. Quartal 2024 - 3. Quartal 2025) (2. Quartal 2025 - 1. Quartal 2026) (3. Quartal 2025 - 1. Quartal 2027) (4. Quartal 2025 - 1. Quartal 2027)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11695 (Antrag zur Swinemünder Brücke)
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749723#post749723 (Umbau hat begonnen)
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
@@ -1282,13 +1282,16 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1599774.php
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzi546ev3s2i
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibnuhe3q7e6ci3bfdidr4z4qohhxubhsqa5vauzvf46ku3afbr6vu@jpeg (Sackgasse gilt nicht für Radfahrer)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4d36rcic22f (Abschnitt 3 bis 21.11.2025)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidoya7f5k5nzfpsodhx76d475ab4fsankrsvmznmq4lbyat47dps4@jpeg (Sackgasse gilt nicht für Radfahrer)
 #: source_id: viz2021:13.37541,52.59714,23.09.2025,07:00 (bis 10.10.2025) (inaktiv)
-#: source_id: viz2021:13.38052,52.59488, (bis 29.10.2025)
+#: source_id: viz2021:13.38052,52.59488, (bis 29.10.2025) (bis 21.11.2025)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
 #: last_checked: 2025-08-30 (mapillary) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: check_frequency: 540d vvv
-#: next_check: 2026-12-31 vvv
+#: next_check: 2025-11-21 vvv
+# REMOVED --- #: next_check: 2026-12-31 vvv
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
 Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, betonierter Gehweg für Radfahrer frei	Q1+ 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
@@ -1783,6 +1786,7 @@ Genter Str.: mäßiges Kopfsteinpflaster	Q2 7012,15571 6919,15666 6802,15790 6661,
 Am Walde: Asphalt	Q0 17771,7880 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kleinsteinpflaster	Q1 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 Prager Platz: Verbundsteinpflasterradweg	Q1 5648,9642 5630,9656 5598,9654 5578,9629
+Prager Str.: Kleinsteinpflaster	Q1 5630,9656 5649,9689
 #: historical_note: früher teilweise Kopfsteinpflaster
 #: note: mit gepflasterten Parkstreifen, sowie Pflasterungen an/vor den Kreuzungen/Einmündungen
 Roedeliusplatz: Asphalt	Q0 16166,12292 16227,12281 16276,12273
@@ -1974,7 +1978,7 @@ Wilskistr.: Kopfsteinpflaster, OK	Q1 -219,4149 -158,4236 27,4447 195,4588 301,46
 Wilskistr.: Asphalt	Q0 -219,4149 -303,4086 -343,4056 -402,4012
 Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 723,4572
 Ihnestr.: mäßiges Kopfsteinpflaster	Q2 1866,4572 1817,4462 1761,4255 1740,4176 1691,3990 1664,3907
-Spilstr.: Kopfsteinpflaster, OK	Q1 3836,6550 3826,6656 3865,6758
+Spilstr.: Kleinsteinpflaster, etwas uneben	Q1- 3836,6550 3826,6656 3865,6758
 (zur Weißenhöher Str.): Asphalt	Q0 19726,11743 19735,11721 19830,11677 19881,11591
 #: note: das Ausweichen auf den teilweise betonierten östlichen Gehweg scheint üblich zu sein
 Biesdorfer Friedhofsweg: schlechtes Kopfsteinpflaster	Q3+ 21311,11528 21514,11796
@@ -13561,7 +13565,7 @@ Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 1976
 #: historical_note: früher (bis 2025?): Asphalt mit Schäden, Q1
 #: historical_note: dann (bis Herbst 2025?): unbefestigte Baustraße, Q2
 #: XXX die Straße wird neu gemacht
-#: last_checked: 2025-10-08
+#: last_checked: 2025-10-29
 #: check_frequency: 45d
 (Verlängerung der Siegfriedstr.): Asphalt ohne letzte Deckschicht	Q1+ 11664,6796 11488,6781
 Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
@@ -14370,6 +14374,8 @@ Wegerichstr.: Gehwegplatten	Q1+ 16475,2586 16538,2543
 # 
 Bulgarische Str.: Verbundsteinpflaster	Q1; 15591,8848 15558,8820 15378,8668 15166,8489
 #
+Konradinstr.: Asphalt, einige leichte Schäden	Q0- 8872,5484 8674,5357
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -16600,11 +16606,12 @@ Kadettenweg: Asphalt	Q0 3228,3455 3328,3313 3348,3278 3450,3142 3462,3113 3462,3
 #: by: Beate Wolter: früher "Kopfsteinpflaster, Q2", mittlerweile aber: "repariertes Kopfsteinpflaster, Q1" vvv
 #: note: fabio weiss meint Kopfsteinpflaster, Q3, enge Straße, q1
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt) vvv
-Baseler Str.: Asphalt	Q0- 3148,1888 3150,2113 3151,2224
-#: note: teilweise mit etwas Beton
-Baseler Str.: Asphalt	Q0 3151,2224 3161,2482
-#: corrected_by: srt (Asphalt, Q0 -> ...)
-Baseler Str.: Asphalt mit leichten Schäden	Q0- 3161,2482 3163,2598 3171,2848
+#: historical_note: früher Asphalt, Q0-, nun schlechter
+Baseler Str.: Asphalt/Beton mit einigen Schäden	Q1+ 3148,1888 3150,2113 3151,2224
+#: historical_note: früher Q0, nun schlechter
+Baseler Str.: Asphalt/Beton mit einigen Schäden	Q1+ 3151,2224 3161,2482
+#: historical_note: früher Asphalt mit leichten Schäden, Q0-, nun schlechter
+Baseler Str.: Asphalt mit einigen Schäden	Q1+ 3161,2482 3163,2598 3171,2848
 #: corrected_by ^^^
 #: note: an der Finckensteinallee einige Meter Asphalt
 Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3171,2848 3174,3052 3184,3427
@@ -16910,7 +16917,7 @@ Rheingaustr.: Asphalt	Q0 4886,6697 4886,6711 4886,6819 4885,6908 4883,7061 4880,
 Brennerstr.: Asphalt	Q0 10927,17022 10656,17018
 # 
 #: by: Lothar Wiesweg:
-#: note: Ich erinnere mich auch an Kopfsteinpflaster:
+#: confirmed_by: srt
 Viktoriastr.: Kopfsteinpflaster	Q2 9176,5413 8947,5434
 # 
 #: by: Sissy (Rabefranziska) vvv
@@ -34443,5 +34450,8 @@ Einmündungsbereich asphaltiert	Q0 23,2185
 Einmündungsbereich asphaltiert	Q0 -38,2152
 Einmündungsbereich asphaltiert	Q0 -134,2098
 Kreuzungsbereich mit abgefrästem Kopfsteinpflaster	Q1- 12228,14083
+Kreuzungsbereich asphaltiert	Q0 8947,5434
+Einmündungsbereich asphaltiert	Q0 8872,5484
+Einmündungsbereich asphaltiert	Q0 3865,6758
 #: ignore ^^^
 #: section ^^^

@@ -67,12 +67,14 @@ BAB100	BAB::inwork; 2009,10517 2058,10612 2117,10698 2165,10785 2175,10864 2183,
 #: by: https://www.berliner-woche.de/westend/c-bauen/einwendungen-moeglich_a418011
 #: by: https://www.tagesspiegel.de/berlin/ausschreibung-lauft-westendbrucke-soll-am-selben-standort-neu-gebaut-werden-14064518.html (nun doch die gleiche Stelle)
 #: by: https://entwicklungsstadt.de/ersatz-fuer-westendbruecke-neubau-an-alter-stelle-geplant/
+#: by: https://www.tagesspiegel.de/berlin/baustart-fur-die-ringbahnbrucke-zeitplan-umleitungen-s-bahn-sperrung--was-berliner-jetzt-wissen-mussen-14581964.html (bis Sommer 2027)
 #: XXX Neubau der Westendbrücke (mit Verlagerung)
 #: osm_watch: way id="4495210" version="22"
 #: osm_watch[closed]: note 4671906 7
 #: also_indoor: webcam https://stream.netco.de/LiveApp/play.html?name=iTJR0GlIYNRMVUYJ607204630991365&playOrder=hls (mittlerweile (2025-05-18) nicht mehr aktiv)
 #: last_checked: 2025-10-26 (osm)
 #: check_frequency: 360d
+#: next_check: 2027-09-20
 BAB100 (Westendbrücke)	BAB::Br::inwork; 2388,11997 2332,12106 2248,12201
 # 
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
@@ -193,7 +195,7 @@ BAB100 (Tunnel Schlangenbader Str.)	BAB::Tu::inwork 3854,7614 3853,7068
 #: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/die-pfeiler-bleiben-noch-ein-weilchen-bruckenabriss-am-berliner-breitenbachplatz-neu-ausgeschrieben-14618159.html
 #: osm_watch: way id="184791525" version="14"
 #: osm_watch: way id="157574268" version="22"
-#: last_checked: 2025-06-25
+#: last_checked: 2025-10-29
 #: check_frequency: 360d
 #: next_check: 2027-03-31 (Abriss laut entwicklungsstadt)
 BAB100 (Konstanzer Str. - Schildhornstr.)	BAB::inwork 3853,7068 3948,6842 4097,6689 4291,6571 4423,6477

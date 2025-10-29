@@ -188,6 +188,10 @@ Hohenfriedbergstr.	3 7791,8882 7790,8918 7790,9126
 Hohenfriedbergstr.	3 7790,9126 7790,8918 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8918 7707,8919
 Hohenfriedbergstr. - Brunhildstr.	3 7707,8919 7790,8918 7790,9126
+Hohenfriedbergstr. - Monumentenstr.	3 7790,8918 7790,9126 7735,9121
+Hohenfriedbergstr. - Monumentenstr.	3 7790,8918 7790,9126 8014,9126
+Monumentenstr. - Hohenfriedbergstr.	3 7735,9121 7790,9126 7790,8918
+Monumentenstr. - Hohenfriedbergstr.	3 8014,9126 7790,9126 7790,8918
 Olga-Benario-Prestes-Str.	1 12628,14650 12473,14763
 Filandastr.	3nocross::ignrte 5671,5489 5675,5573 5676,5664 5672,5751
 Filandastr. -> Kantstr.: Filandastr.	3::igndisp 5676,5664 5675,5573 5838,5563
@@ -2025,9 +2029,9 @@ Wadzeckstr.	1 11295,13224 11315,13210 11354,13184 11369,13174
 Zimmerstr.	1 -13637,-1164 -13876,-1226
 Alte Köpenicker Allee: Schranke bei der Einfahrt	2 20316,7637 20348,7634 20459,7445 20501,7472 20540,7532
 Bauhüttenweg: Anlieger frei	2:Anlieger 12703,2454 12774,2463 12835,2470 12948,2484 13064,2499 13180,2514 13238,2521 13302,2554 13348,2588
-Mittelstreifen	3nocross::ignrte 5211,7783 5310,7839 5346,7860
+Mittelstreifen	3nocross::ignrte 5198,7772 5310,7839 5346,7860
 Varziner Str. -> Südwestkorso: Mittelstreifen	3::igndisp 5297,7861 5310,7839 5346,7860
-Südwestkorso -> Varziner Str.: Mittelstreifen	3::igndisp 5211,7783 5310,7839 5297,7861
+Südwestkorso -> Varziner Str.: Mittelstreifen	3::igndisp 5198,7772 5310,7839 5297,7861
 August-Bebel-Str. (Schulzendorf)	1 24342,-3378 24314,-3438 24256,-3568
 Karl-Marx-Str. (Schulzendorf)	1 24185,-3434 24296,-3400 24342,-3378
 Bornitzstr. [Wohngebiet]	1 16484,12825 16431,12825 16385,12825 16384,12874
@@ -2738,3 +2742,4 @@ Hauffstr. (Teltow)	1 2754,101 2696,189
 Fritz-Reuter-Str. (Teltow)	1 2545,92 2556,-28
 Max-Sabersky-Allee (Teltow)	1 2696,189 2902,329
 Melchiorstr.: Fahrradstraße ohne Freigabe für Anleiger	2 11507,11355 11542,11342
+Langenscheidtbrücke	1 7647,9196 7735,9121

@@ -677,7 +677,7 @@ Landsberger Allee -> Franz-Jacob-Str.: Umweg zur Ampel	DH:len=60 14871,14087 147
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neuer-dauerstaus-am-alex-wegen-bauarbeiten-ist-eine-wichtige-strasse-ueber-wochen-gesperrt-li.2361493
 #: source_id: viz2021:13.416548,52.522138,09.10.2025,08:00 (bis 13.11.2025)
 #: note: wobei man beim Linksabbiegen in die Otto-Braun-Str. diese Meter sparen könnte...
-#: last_checked: 2025-10-21
+#: last_checked: 2025-10-29
 #: next_check: 2025-11-13
 #: valid: -20251113
 Alexanderstr.: Radfahrer Richtung Osten müssen auf die gegenüberliegende Straßenseite wechseln	DH:len=80 11033,13086 11139,13008 11226,12945
@@ -703,5 +703,19 @@ Samariterstr. -> Frankfurter Allee: Engstellen wegen Bauarbeiten	DH:h=q3,35 1453
 #: last_checked ^^^
 #: check_frequency ^^^
 #: next_check ^^^
+# 
+#: note: laut VIZ-Verkehrsmeldung ist nur der Kfz-Verkehr betroffen; bis zur Baseler Str. gibt's auch einen Hochbordradweg
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
+#: source_id: viz2021:13.29708,52.43252,08.09.2025,07:00 (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026)
+#: last_checked: 2025-10-29 vvv
+#: next_check: 2026-01-09 vvv
+#: valid: -20260109 vvv
+Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	DH:h=q2,294 3313,2842 3171,2848 3025,2858 3019,2858
+Baseler Str.: Anbindung Finckensteinallee gesperrt, Umwege	DH:h=q3,90:len=50 3174,3052 3171,2848 3163,2598
+Baseler Str.: Anbindung Finckensteinallee gesperrt, Umwege	DH:h=q3,90:len=50 3174,3052 3171,2848 3313,2842
+Baseler Str.: Anbindung Finckensteinallee gesperrt, Umwege	DH:h=q4,90:len=50 3163,2598 3171,2848 3174,3052
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: temporary ^^^
