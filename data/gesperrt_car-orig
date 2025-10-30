@@ -264,13 +264,12 @@ Heylstr.	1 6459,8281 6385,8274 6313,8254
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
 Gutzkowstr.	1 6785,8194 6634,8134
 Gleditschstr.	1 7124,9226 7118,9315
-#: XXX Gibt es diese Diagonalsperre noch?
-#: priority: #C
-Hohenfriedbergstr.	3 7791,8882 7790,8918 7790,9126
-Hohenfriedbergstr.	3 7790,9126 7790,8918 7791,8882
-Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8918 7707,8919
-Hohenfriedbergstr. - Brunhildstr.	3 7707,8919 7790,8918 7790,9126
-Hohenfriedbergstr. - Monumentenstr.	3 7790,8918 7790,9126 *
+#: historical_note: Poller wurden von der Brunhildstr. zur Monumentenstr. versetzt:
+#Hohenfriedbergstr.	3 7791,8882 7790,8918 7790,9126
+#Hohenfriedbergstr.	3 7790,9126 7790,8918 7791,8882
+#Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8918 7707,8919
+#Hohenfriedbergstr. - Brunhildstr.	3 7707,8919 7790,8918 7790,9126
+#Hohenfriedbergstr. - Monumentenstr.	3 7790,8918 7790,9126 *
 Monumentenstr. - Hohenfriedbergstr.	3 * 7790,9126 7790,8918
 Olga-Benario-Prestes-Str.	1 12628,14650 12473,14763
 Filandastr.	3nocross 5671,5489 5675,5573 5676,5664 5672,5751
@@ -1222,7 +1221,7 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 #: by: https://entwicklungsstadt.de/umgestaltung-des-bahnhofsvorplatzes-in-lichterfelde-west-starten-die-ersten-bauarbeiten/
 #: XXX wird die Einbahnstraßenregelung umgedreht, dann offen von Bahnhof zur Drakestr.?
 #: osm_watch: way id="65369044" version="16"
-#: osm_watch: note 4846294 3
+#: osm_watch: note 4846294 4
 #: last_checked: 2025-10-29
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-06-30 (Tsp)

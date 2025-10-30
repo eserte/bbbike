@@ -238,7 +238,7 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # REMOVED (Ampelanlage steht noch, ist aber (dauerhaft?) ausgeschaltet) --- #: next_check_id: KOENIGSPLATZ-2024 --- #: last_checked: 2024-12-27 --- #: check_frequency: 30d --- #: next_check: 2024-12-12 --- #: valid: -20241212 --- Wilhelminenhofstr./Schillerpromenade	X::inwork 18191,6363
 # 
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
-#: osm_watch: note 4289251 1
+#: osm_watch: note 4289251 2
 #: source_id: adac:1602492862 (inaktiv)
 #: last_checked: 2025-10-29
 #: check_frequency: 120d
@@ -4304,7 +4304,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 3951,9836
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: XXX Ausgeschaltet, weil die Zufahrt zum Tunnel gesperrt ist.
-#: osm_watch: note 4573131 1
+#: osm_watch: note 4573131 2
 #: osm_watch: node id="6225847741" version="1"
 #: last_checked: 2025-10-29
 #: check_frequency: 210d
@@ -4658,6 +4658,9 @@ provisorische Fuﬂg‰ngerampel	F::inwork 17720,8854
 #: section ^^^
 ################################################################################
 #: section: Ampeln elsewhere vvv
+#: historical_note: bis 2024/2025 Kreisverkehr, jetzt normale Kreuzung
+#: by: osm
+	X 39341,-1057
 #: by: mapillary
 #: note: Anforderungsampel
 	F 26643,-3574

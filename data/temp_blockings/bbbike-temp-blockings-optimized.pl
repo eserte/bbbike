@@ -5459,16 +5459,16 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen) ---	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
 #: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025) (inaktiv)
-#: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025)
+#: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025) (bis 07.11.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m356f5qmh22g
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiclu2wwbebvt4nr5kzd7jmiv7uapqel7bdnwucpnxltglngf3icw4@jpeg
 	q4::inwork 10069,10151 10083,10192 10122,10294
 ',
          'from' => 1760392800,
          'id' => 3458,
-         'text' => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., Sperrung der Fahrbahn, bis Ende Oktober 2025',
+         'text' => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., Sperrung der Fahrbahn, voraussichtlich bis 07.11.2025',
          'type' => 'handicap',
-         'until' => 1761951599
+         'until' => 1762556399
        },
        undef,
        undef,
@@ -5876,13 +5876,13 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025) (inaktiv)
-#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025)
+#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2025-10-20 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
-#: next_check: 2025-11-30 (BA-Seite) vvv
+#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -5905,7 +5905,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 ',
          'from' => 1656799200,
          'id' => 3580,
-         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Ende November 2025',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Mitte Dezember 2025',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6391,10 +6391,11 @@ Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
 #: osm_watch[closed]: note 3631207 6
 #: osm_watch[closed]: note 3631209 6
 #: osm_watch: note 4556342 6
-#: osm_watch: note 4741254 4
+#: osm_watch: note 4741254 7
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
+#: add_fragezeichen: Besteht die Sperrung des Uferwegs weiterhin? vvv
 #: last_checked: 2025-10-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-10-31 vvv
@@ -6407,10 +6408,11 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1697320800,
          'id' => 3728,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt, evtl. auch bis Dezember 2025',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Weg ist vom 13.01.2025 bis Ende Oktober 2025 gesperrt, evtl. wird bis Dezember 2025 verlängert',
          'type' => 'gesperrt',
          'until' => 1767221999
        },
@@ -6604,6 +6606,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/provisorischer-parkweg_a382807
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/fuer-provisorischen-gehweg-wird-viel-geld-ausgegeben_a383912
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1611295.php (Margarete-Sommer-Str.: Neubau eines Gehwegs unter Vollsperrung vom 3.11.2025 bis Dezember 2026)
+#: by: https://entwicklungsstadt.de/prenzlauer-berg-gehwegneubau-in-der-margarete-sommer-strasse-fuer-schuldrehscheibe/
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
 #: also_indoor: traffic (ex-T,ex-G)
@@ -7164,24 +7167,7 @@ Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: GROSSBEEREN-2023
-# REMOVED (nun wieder alte Einbahnstraßenregelung, offen für Radfahrer) --- #: also_indoor: traffic (B) --- #: last_checked: 2024-01-25 --- #: source_id: viz2021:13.385636,52.499818,31.01.2024,06:00 (nur Kfz-Verkehr, bis 06.02.2024) (inaktiv) (bis 05.03.2024) (inaktiv) ---	q3::inwork 9178,10451 9192,10528
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Ende Oktober 2025, hier nur Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lxweohcv2c
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie3mmwogk6b3mmhte2wkcdkk2ukjvcohy3cradu2z2lv2kviqhbtm@jpeg (keine Ausnahme zu sehen)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20251020 ("voraussichtlich noch diese Woche abgeschlossen sein", also bis 2025-10-24?)
-#: source_id: viz2021:13.38587,52.50069,20.10.2025,07:00 (bis 30.10.2025)
-#: last_checked: 2025-10-28
-#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
-	q4::inwork 9192,10528 9178,10451 9158,10342
-',
-         'from' => 1760824800,
-         'id' => 3974,
-         'text' => 'Großbeerenstr.: Sanierung der Fahrbahn zwischen Ida-Wolff-Platz und Hallesches Ufer, offiziell ist die Durchfahrt noch gesperrt, voraussichtlich bis Ende Oktober 2025',
-         'type' => 'handicap',
-         'until' => 1761865199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7658,6 +7644,7 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 # REMOVED --- #: osm_watch: way id="746470210" version="3"
 #: osm_watch: way id="1382537913" version="2"
 #: osm_watch: note 4916457 2
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Uferweg weiterhin gesperrt?
 #: last_checked: 2025-10-06 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2025-10-31
@@ -7665,9 +7652,9 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 ',
          'from' => 1719941867,
          'id' => 4105,
-         'text' => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Sperrung, voraussichtlich bis Oktober 2025',
+         'text' => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Sperrung, voraussichtlich bis Oktober 2025, evtl. wird die Sperrung verlängert',
          'type' => 'gesperrt',
-         'until' => 1761930000
+         'until' => undef
        },
        undef,
        undef,
@@ -8139,27 +8126,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'until' => 1772294400
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.28644,52.48937,21.10.2024,07:00 (bis 17.01.2025) (inaktiv)
-#: source_id: viz2021:13.28469,52.48961,09.12.2024,15:21 (bis 31.01.2025) (inaktiv)
-#: source_id: viz2021:13.285509,52.489496,09.12.2024,07:00 (hier nur Kfz-Verkehr, bis 31.01.2025) (bis 23.01.2025) (inaktiv)
-#: source_id: viz2021:13.28469,52.48961,18.08.2025,11:00 (nur die Hubertusallee erwähnt, bis 12.09.2025) (bis 30.09.2025) (bis 30.10.2025)
-#: source_id: viz2021:13.28469,52.48961, (bis 30.10.2025)
-# REMOVED --- #: note: allerdings sieht die Lage der Sperrung bei fast allen Verkehrdiensten etwas anders aus; mittlerweile haben sich alle auf Wangenheimstr. - Paulsborner Str. geeinigt
-# REMOVED --- #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W)
-# REMOVED --- #: note: bei rbb gibt es nun (17.03.2025) eine Sperrung zwischen Wangenheimstr. und Paulsborner Str., bis 07.05.2025)
-# REMOVED (bei den meisten Verkehrsquellen beendet) --- #: last_checked: 2025-05-10 --- #: check_frequency: 14d (traffic)
-# REMOVED ---	q4::inwork 2576,9132 2674,9111
-# REMOVED (gewandert?) ---	q3::inwork 2453,9156 2576,9132
-#: note: außerdem gibt\'s eine Baustellenampel an der Hubertusallee
-	q4::inwork 2453,9156 2337,9178
-',
-         'from' => 1755381600,
-         'id' => 4201,
-         'text' => 'Lynarstr.: Anbindung Hubertusallee gesperrt, evtl. sind auch Radfahrer betroffen, vom 18.08.2025 bis voraussichtlich Ende Oktober 2025',
-         'type' => 'handicap',
-         'until' => 1761865199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8565,20 +8532,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: PLATANEN-2025
-#: source_id: viz2021:13.397377,52.584759,18.02.2025,07:00 (auch Radverkehr betroffen, bis 04.07.2025) (inaktiv)
-#: source_id: viz2021:13.39809,52.58487, (bis 31.07.2025) (bis 30.10.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1891725331691864443
-#: by: https://pbs.twimg.com/media/Gj_K-ydXgAAYbfS?format=jpg&name=large (etwa 170m der Fahrbahn und des nördlichen Bürgersteigs ab Waldstr. sind betroffen)
-	q4::inwork 9824,19910 9498,19817
-',
-         'from' => 1739772000,
-         'id' => 4265,
-         'text' => 'Platanenstr.: Bauarbeiten zwischen Waldstr. und Treskowstr., Sperrung, vom 18.02.2025 07:00 bis 30.10.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1761926400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8933,14 +8887,14 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
        undef,
        {
          'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...) (inaktiv)
-#: source_id: viz2021:13.37222,52.4556, (bis 31.10.2025)
+#: source_id: viz2021:13.37222,52.4556, (bis 31.10.2025) (bis 28.11.2025)
 	q4::inwork 8365,5502 8365,5418
 ',
          'from' => 1744520400,
          'id' => 4314,
-         'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Ende Oktober 2025',
+         'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Ende November 2025',
          'type' => 'handicap',
-         'until' => 1761951599
+         'until' => 1764370799
        },
        undef,
        undef,
@@ -8976,13 +8930,15 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
          'data' => '#: source_id: viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025)
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=782027#post782027
 #: by: https://entwicklungsstadt.de/mierendorffinsel-neuer-bauabschnitt-im-wohnquartier-hey-charlottenburg/ (Bauprojekt bis Mitte 2027)
+#: by: https://heycharlottenburg.de/ (Fertigstellung: Q3/2027)
+#: next_check: 2025-11-30 (VIZ-Verkehrsmeldung)
 Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 ',
          'from' => 1746334800,
          'id' => 4324,
-         'text' => 'Wernigeroder Str.: Hochbauarbeiten, Einbahnstraßenregelung zwischen Nordhauser Str. und Quedlinburger Str., Richtung Süden gesperrt, vom 05.05.2025 bis 30.11.2025',
+         'text' => 'Wernigeroder Str.: Hochbauarbeiten, Einbahnstraßenregelung zwischen Nordhauser Str. und Quedlinburger Str., Richtung Süden gesperrt, vom 05.05.2025 bis 30.11.2025, evtl. wird die Einbahnstraßenregelung verlängert',
          'type' => 'handicap',
-         'until' => 1764543540
+         'until' => undef
        },
        undef,
        undef,
@@ -9481,20 +9437,7 @@ Insterburgallee	q4::inwork 229,11213 251,11039
          'until' => 1766163600
        },
        undef,
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv) (bis 26.09.2025) (bis 06.10.2025) (bis 01.11.2025)
-# REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
-# REMOVED ---	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
-	2::inwork 18540,-38360 18433,-38781 18272,-39512 18138,-39957
-',
-         'from' => 1753596000,
-         'id' => 4403,
-         'text' => 'B96, Neuhof - Baruth: Deckenerneuerung, Sperrung voraussichtlich bis 01.11.2025',
-         'type' => 'gesperrt',
-         'until' => 1762012800
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.16143,52.42614,24.07.2025,07:00 (bis 06.11.2025)

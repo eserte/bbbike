@@ -1172,7 +1172,7 @@ Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20905,17567 20769,17650
 #: note: Richtungsfahrbahnen vvv
 B2: Eberswalde - Angermünde	1::igndisp 49908,67683 49839,67618 49812,67593
 B2: Angermünde - Eberswalde	1::igndisp 49812,67593 49838,67618 49907,67684
-B2: Angermünde - Schwedt	1::igndisp 50386,68158 49908,67683
+B2: Angermünde - Schwedt	1::igndisp 50386,68158 50013,67788 49908,67683
 B2: Schwedt - Angermünde	1::igndisp 49907,67684 50386,68158
 #: note ^^^
 #: note: Ausweichen auf Gehweg
@@ -4765,6 +4765,7 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-fehlen-personal-und-finanzmittel-fuer-die-auftragsvergabe_a431449 (Sperrung mindestens bis 2026 (Anfang oder Ende?))
 #: by: https://marzahn-hellersdorf.com/brueckenneubau-entenbruecke-am-stadion-wuhletal-verzoegert-sich-vergabeverfahren-noch-nicht-abgeschlossen/ (kein Zeitplan)
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12578
+#: by: https://marzahn-hellersdorf.com/entenbruecke-in-kaulsdorf-nord-neubau-verzoegert-sich-weiter/
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="22"

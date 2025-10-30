@@ -1821,6 +1821,7 @@ Hufelandstr.: abgefrästes Kopfsteinpflaster	Q1- 12077,14186 12228,14083
 #: by: https://entwicklungsstadt.de/verkehrswende-in-pankow-umbau-der-hufelandstrasse-offiziell-gestartet/
 #: by: https://www.infravelo.de/meldung/baustart-hufelandstr/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/berlins-neueste-fahrradstrasse-bekommt-schliff-in-prenzlauer-berg-larmt-eine-baumaschine--damit-das-pflaster-leise-wird-14641217.html (bis 29.10.2025?)
+#: by: https://entwicklungsstadt.de/hufelandstrasse-in-prenzlauer-berg-umbau-zur-fahrradstrasse-schreitet-voran/ (Arbeiten bis Sommer 2026)
 #: osm_watch: way id="4615063" version="40"
 #: osm_watch: note 5010352 3
 #: last_checked: 2025-10-21
@@ -2865,9 +2866,10 @@ Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731 1518,20615 1407,20563
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10362
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11387 (Ersuchen)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12250 (Beginn der Baumaßnahme: Herbst 2025)
+#: osm_watch: way id="517170155" version="12"
 #: last_checked: 2025-09-23 (mapillary)
 # REMOVED --- #: check_frequency: 720d
-#: next_check: 2025-10-31 (BVV-Drucksache (Herbst))
+#: next_check: 2025-12-15 (BVV-Drucksache: Beginn Herbst 2025)
 Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 1031,20394
 An der Malche: fester Waldweg	Q1- 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Avenue Jean Mermoz: asphaltiert	Q0 3319,18043 3248,17921 3213,17858 3159,17780 3080,17634
@@ -14205,8 +14207,12 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 # 
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
+#: source_id: bvg2024:194#HIM_FREETEXT_304347 (Verlegung der Haltestelle ab 3.11.2025, evtl. wegen möglicher Bauarbeiten in der Nöldnerstr.?)
+#: source_id: bvg2024:194#HIM_FREETEXT_304348 (s.o.)
+#: source_id: bvg2024:396#HIM_FREETEXT_304350 (s.o.)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
 #: last_checked: 2025-10-25
+#: next_check: 2025-11-03 (BVG-Verkehrsmeldung)
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018

@@ -441,6 +441,7 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #### END Tsp-Liste
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1610701.php (Bauarbeiten: zwischen 9. Oktober und 8. Dezember 2025)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410328717/auf-dieser-strasse-in-treptow-koepenick-baut-der-bezirk-einen-radstreifen.html
 #: source_id: viz2021:13.469909,52.483432,29.10.2025,07:00 (bis 08.12.2025)
 #: next_check: 2025-12-08
 Am Treptower Park und Köpenicker Landstraße: Bau eines Radfahrstreifens	?::inwork; 15007,8646 15070,8584 15079,8575 15166,8489 15303,8343
@@ -2566,7 +2567,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: last_checked: 2025-08-17
 #: check_frequency: 240d
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
-#: next_check: 2025-11-30 (BA-Seite)
+#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
 Schönstr.: Neubau	?::inwork 13630,16629 13794,16773
 # REMOVED (hier fertig) --- Schönstr.: Neubau geplant	?::inwork 13794,16773 13870,16837
 # REMOVED (hier fertig) --- Schönstr.: Neubau geplant	?::projected 13870,16837 13974,16924 13996,16959
@@ -2575,7 +2576,7 @@ Schönstr.: Neubau	?::inwork 13630,16629 13794,16773
 #: next_check_id: SCHOEN-2022
 #: osm_watch: note 4518167 7
 #: last_checked: 2025-08-17
-#: check_frequency: 90d
+#: check_frequency: 120d
 Schönstr.: Zebrastreifen in Bau	?::inwork 13815,16773 13794,16773 13798,16794
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf
@@ -2594,6 +2595,7 @@ Königsweg: Fahrradstraße in Entstehung	?::inwork -1082,2140 -1078,2154 -987,2205
 #: by: https://www.infravelo.de/projekt/koenigsweg-tietzenweg/ (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1598817.php (Königsweg: Sanierung, Markierung und Beschilderung vom 17. bis 26. September 2025)
 #: by: https://entwicklungsstadt.de/koenigsweg-in-steglitz-zehlendorf-wird-zur-fahrradstrasse-ausgebaut/
+#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article410331195/neue-radwege-fahrradstrassen-an-diesen-orten-wird-im-suedwesten-gebaut.html
 #: osm_watch: note 4968979 5
 #: osm_watch: way id="4871595" version="33"
 #: XXX vermutlich wird es auch eine Vorfahrtsregelung geben
@@ -2605,7 +2607,7 @@ Königsweg: Fahrradstraße in Entstehung	?::inwork -878,2265 -844,2268 -790,2300 -
 #: last_checked: 2025-10-15
 # REMOVED --- #: next_check: 2025-09-26 (BA-Pressemitteilung)
 Königsweg: Fahrradstraße in Entstehung	?::inwork -3096,1026 -3024,1069 -2813,1188 -2669,1266 -2605,1302
-#: osm_watch: note 4968980 5
+#: osm_watch: note 4968980 6
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1598817.php (Tietzenweg: Sanierung ab 20.10.2025)
 #: note: während der Leitungsarbeiten Gehweg für Radfahrer frei
 #: last_checked: 2025-10-15 (sah nach Leitungsarbeiten aus)
@@ -4301,6 +4303,7 @@ Storkower Str.: Radspur wird mit Grünbeschichtung ausgeführt	?::projected 12704,
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1608552.php
 #: by: https://entwicklungsstadt.de/erneuerung-der-torstrasse-baubeginn-fuer-2026-geplant/ (1. Bauabschnitt: III. Quartal 2026, Dauer 2,5 Jahre; 2. Bauabschnitt: Anfang 2029, Dauer 2,5 Jahre)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/die-planung-ist-absurd-berliner-bezirk-protestiert-gegen-umbau-der-torstrasse--baumfallung-droht-14635925.html
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1611603.php (Bürgerinformationsveranstaltung am 19. November 2025)
 #: last_checked: 2025-09-26
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2026-09-30 (entwicklungsstadt: Beginn 1. Bauabschnitt)
@@ -4771,7 +4774,7 @@ Britzer Damm (von Fulhamer Allee bis Hermannstraße): Busspur geplant, evtl. in b
 #: by: https://api.fixmyberlin.de/api/projects/325
 #: osm_watch: way id="18830950" version="31"
 #: osm_watch: way id="57685001" version="23"
-#: last_checked: 2025-07-03 (mapillary)
+#: last_checked: 2025-08-08 (mapillary)
 #: check_frequency: 120d
 Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -3006,17128 -2958,17509
 # 
@@ -5154,8 +5157,8 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer? Wird eine Radspu
 #: by: https://www.morgenpost.de/berlin/article408491954/platz-der-luftbruecke-wird-zur-naechsten-berliner-gross-baustelle.html (Erwähnung, Baustart (wo genau?) im Herbst 2025)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1592352.php (Informationsveranstaltung)
 #: last_checked: 2025-10-12
-#: check_frequency: 360d
-#: next_check: 2025-10-31
+#: check_frequency: 90d
+#: next_check: 2025-12-15 (MoPo: Baustart Herbst 2025)
 Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9093,8665
 # 
 # REMOVED (fertig) --- #: source_id: 2147344618 --- #: last_checked: 2020-01-05 --- #: next_check: 2020-01-30 --- Tempelhofer Damm: Asphaltierung des Radwegs	?::inwork; 9229,8718 9229,8785
@@ -5270,7 +5273,7 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	? 24895,13039 2489
 # 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksamt/protokolle/2018/vorlagen-zur-sitzung-vom-16-oktober-2018.pdf (abseits des Hauptwegs nicht mehr instandgesetzt) vvv
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8760 (Antrag (defekte Beleuchtung))
-#: osm_watch: note 1990603 5
+#: osm_watch: note 1990603 7
 #: last_checked: 2025-06-26 (mapillary) (zumindest stehen die Masten noch) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- Stadtpark Steglitz: bleibt die Beleuchtung?	? 5890,4674 5836,4654 5736,4686
@@ -5377,7 +5380,7 @@ Kurfürstenstr.: Umbau/Erneuerung der Radverkehrsanlagen	? 6740,10755 6607,10801 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/221115-mobilitaetsrat-mitte-protokoll.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erneuerung-der-radverkehrsanlage-in-der-stromstrasse-1077115.php (bis 2023) (mittlerweile bis 2024)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136/eh17PjKBLbokwKTYOVZeDxg4rc6rihHNF1lnXhGs/pdeGjLkp/73-Anlagen/02/MA_1750_VI.pdf ("Projekt wurde gestoppt")
-#: osm_watch: way id="1157683648" version="6"
+#: osm_watch: way id="1157683648" version="7"
 #: last_checked: 2025-08-12 (mapillary)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2024-12-31
@@ -6924,10 +6927,11 @@ B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,5167
 #: by: https://www.o-sp.de/download/lbvbrandenburg/42752
 #: source_id: LS/221-E/22/017 (inaktiv)
 #: source_id: LS/221-E/25/018 (bis 18.07.2025) (inaktiv) (Neubau Radweg, bis 29.08.2025) (inaktiv) (bis 31.10.2025)
-#: last_checked: 2025-04-11 (mapillary)
-# REMOVED --- #: check_frequency: 180d
-#: next_check: 2025-10-31 (Verkehrsmeldung)
-B2: straßenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 49872,67713 49907,67684 49908,67683 50386,68158 50632,68484 50863,68629
+#: last_checked: 2025-10-25 (mapillary)
+#: check_frequency: 90d
+# REMVOED --- #: next_check: 2025-10-31 (Verkehrsmeldung)
+# REMOVED (realisiert) --- B2: straßenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 49872,67713 49907,67684 49908,67683 50013,67788 50386,68158 50632,68484
+B2: straßenbegleitender Radweg geplant (wird auch das letzte Stück realisiert?)	?::projected 50632,68484 50863,68629
 # 
 # REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=33123 --- #: source_id: LS/723-P/20/210--- #: source_id: LS/723-P/21/238 --- #: next_check: 2022-04-30
 # REMOVED (aufgenommen) --- L962: straßenbegleitender Radweg geplant	?::projected -55301,-467 -55311,-415 -55216,63 -55304,482 -55228,951 -55292,1560 -55647,1763 -55837,2017 -55855,2426
@@ -8518,13 +8522,7 @@ Lindenhagen - Schmachtenhagen (B109): neuer Radweg	?::projected 32422,94523 3335
 #: check_frequency: 90d (indoor research)
 Thyrow - Siethen (L795): neuer Radweg auf der Westseite geplant	?::projected -624,-16610 -903,-16246 -1256,-15611 -1618,-15008 -2029,-14437 -2130,-14216 -2185,-14016 -2187,-14004
 # 
-#: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=67330
-#: by: https://www.o-sp.de/download/lbvbrandenburg/339789
-#: source_id: LS/221-F/24/011 (bis 12.04.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (inaktiv) (bis 11.04.2025) (inaktiv) (bis 16.05.2025) (bis 13.06.2025) (bis 27.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.10.2025)
-#: source_id: LS/221-F/24/065 (bis 29.11.2024) (inaktiv)
-#: osm_watch: note 4475108 1
-#: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
-Knotenpunkt L23/L38: Kreisverkehr wird zu einer normalen Ampelkreuzung umgebaut	?::projected 39239,-987 39341,-1057 39441,-1117
+# REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=67330 --- #: by: https://www.o-sp.de/download/lbvbrandenburg/339789 --- #: source_id: LS/221-F/24/011 (bis 12.04.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (inaktiv) (bis 11.04.2025) (inaktiv) (bis 16.05.2025) (bis 13.06.2025) (bis 27.06.2025) (bis 07.07.2025) (inaktiv) (bis 31.10.2025) --- #: source_id: LS/221-F/24/065 (bis 29.11.2024) (inaktiv) --- #: osm_watch: note 4475108 1 --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung) --- Knotenpunkt L23/L38: Kreisverkehr wird zu einer normalen Ampelkreuzung umgebaut	?::projected 39239,-987 39341,-1057 39441,-1117
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=53660
 #: by: https://www.o-sp.de/download/lbvbrandenburg/273627
@@ -9456,7 +9454,7 @@ Planckstr.: wird hier eine Fahrradstraße entstehen?	? 9376,12911 9375,12911 9386
 #: osm_watch: way id="157669323" version="14"
 # REMOVED --- #: osm_watch: way id="53178115" version="7"
 #: XXX laut osm mittlerweile offen; außerdem wurde in der Grün-Berlin-Pressemitteilung die Eröffnung des ersten Bauabschnitts verkündet vvv
-#: last_checked: 2025-07-03 vvv
+#: last_checked: 2025-10-30 (webcam) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-03-30 vvv
 Lehrter Str. - Döberitzer Grünzug: wie wird der endgültige Zustand aussehen, wird es eine teilasphaltierte Fahrbahnfläche geben?	? 7630,13584 7739,13627
@@ -9523,7 +9521,7 @@ Kohlfurter Str.: Umbenennung in Regina-Jonas-Str.	?::sign 11512,10105 11464,1010
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf
 #: source_id: viz2021:13.33276,52.4798,28.07.2025,07:00 (Prinzregentenstr., bis 17.10.2025) (inaktiv)
 #: source_id: viz2021:13.33525,52.48398,28.07.2025,07:00 (Waghäuseler Str., bis 17.10.2025) (inaktiv)
-#: osm_watch: note 4921165 2
+#: osm_watch: note 4921165 4
 #: XXX im ersten Bauabschnitt ist Radverkehr noch möglich ("gegenseitige Rücksichtnahme"), im zweiten Bauabschnitt muss der Radverkehr schieben --- 2. BA hat wohl angefangen, nun Gehweg, Radfahrer absteigen, aber faktisch ist noch genau so viel Platz vorhanden wie im 1. BA
 #: last_checked: 2025-10-29
 #: check_frequency: 21d
@@ -10293,7 +10291,7 @@ Parkanlage: wann wird der östliche/südöstliche Teil fertig? genaue Lage? Name?	?
 #: source_id: viz2021:13.505797,52.484363,30.06.2025,08:00 (bis 18.07.2025 + weitere Bauphasen) (inaktiv)
 #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_275922 (ab 2025-06-30)
 #: source_id: adac:356610442 (bis 18.07.2025) (bis 22.07.2025) (inaktiv)
-#: source_id: bvg2024:n40#HIM_FREETEXT_293623 (zwischenzeitlich inaktiv)
+#: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_293623 (zwischenzeitlich inaktiv)
 #: source_id: viz2021:13.50573,52.484383,30.06.2025,08:00 (bis 22.07.2025) (inaktiv)
 #: source_id: viz2021:13.505734,52.484227,22.07.2025,10:00 (angeblich KGA-Anbindung gesperrt, falsch positioniert?, bis 05.09.2025) (inaktiv)
 #: source_id: viz2021:13.505734,52.484227, (angeblich KGA-Anbindung gesperrt, falsch positioniert?, bis 02.10.2025) (bis 17.10.2025) (bis 31.10.2025)
@@ -10905,6 +10903,7 @@ A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21861,-2154 2166
 #: by: https://entwicklungsstadt.de/richtfest-fuer-greenfields-buckow-106-neue-wohnungen-am-stadtrand-von-neukoelln/ (geplante Fertigstellung bis 2026)
 #: by: https://entwicklungsstadt.de/buckower-felder-treffpunkt-fuer-austausch-unterstuetzung-und-beteiligung/
 #: by: https://entwicklungsstadt.de/alt-buckow-stadt-und-land-eroeffnet-nachbarschaftstreff-am-gensweg/
+#: by: https://entwicklungsstadt.de/neue-wohnungen-in-den-buckower-feldern-stadt-und-land-startet-vermietung/
 # REMOVED --- #: XXX mögliche Straßennamen (laut bw) (mittlerweile im Amtsblatt bestätigt) (fehlen alle in Berlin.coords.data): --- #: XXX * An den Buckower Feldern (PLZ=12349) --- #: XXX * Gensweg (PLZ=12349) --- #: XXX * An den Weiden (PLZ=12349) --- #: XXX * Dyrekeweg (PLZ=12349) --- #: XXX * In den Bauerngärten (PLZ=12349) --- #: XXX sowie die Privatstraßen: --- #: XXX * Am Mühlanger (PLZ=12349) --- #: XXX * Knyphausenweg (PLZ=12349)
 #: osm_watch: way id="28319563" version="26"
 #: source_id: viz2021:13.436,52.41714,30.05.2024,06:00 (Wanderbaustelle, bis 31.08.2024) (inaktiv)
@@ -11565,6 +11564,7 @@ Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: by: https://entwicklungsstadt.de/baustart-fuer-konnekt-berlin-1-600-wohnungen-und-gewerbe-im-georg-knorr-park/
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/1600-neue-wohnungen-baustart-fur-neues-stadtquartier-in-berlin-marzahn-14618813.html
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/1600-wohnungen-geplant-baustart-fur-neues-stadtquartier-in-berlin-marzahn-14618813.html
+#: by: https://www.deutsches-architekturforum.de/thread/15608-konnekt-berlin-ehem-knorr-bremse-areal/?postID=786408#post786408
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2025-06-09
 #: check_frequency: 720d
@@ -11580,6 +11580,7 @@ Bebauungsplan XXI-22-2 (Georg-Knorr-Park Teilgebiet Ost): Planung eines Geh- und
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1247362.php
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-und-bv-aera-charlottenburg/?postID=732673#post732673
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/bauwens-feiert-fertigstellung-von-aera-buerohaus_a424980
+#: by: https://www.bauwens.de/de/projekte/am-spreebord
 #: osm_watch: way id="1029334947" version="7"
 #: last_checked: 2025-06-25
 #: check_frequency: 180d
@@ -12114,6 +12115,7 @@ Süßdoldenweg: früher Planstraße H, vermutlich entsteht hier die neue Straße, gen
 #: by: https://entwicklungsstadt.de/neubauoffensive-in-berlin-diese-fuenf-quartiere-praegen-die-kommenden-jahre/ (Baustart 2026 (?))
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1590908.php ("Bebauungsplan für Bildungscampus Schumacher Quartier beschlossen")
 #: by: https://entwicklungsstadt.de/schumacher-quartier-senat-beschliesst-bildungscampus-fuer-10-000-anwohner/
+#: by: https://www.morgenpost.de/berlin/article410325989/das-bedeuten-die-neuen-bundeswehr-plaene-fuer-das-schumacher-quartier.html (-> nichts)
 #: osm_watch: way id="1004141226" version="5"
 #: XXX neue Straßen; aus dem Autobahnzubringer wird vermutlich eine Stadtstraße werden
 #: alias: Kurt-Schumacher-Quartier
@@ -12751,8 +12753,8 @@ Bebauungsplan 12-49c (Lübars): Erschließungsstraße geplant	?::projected 7233,230
 Bebauungsplan 12-49a (Lübars): ändert sich etwas an den bestehenden Straßen?	? 6967,23278 7076,23343 7027,23459
 # 
 #: by: https://entwicklungsstadt.de/richtfest-nach-10-monaten-ist-greenpark-das-neue-vorbild-fuer-berlins-wohnungsbau/ (Fertigstellung 2026)
-#: osm_watch: way id="868042603" version="5"
-#: last_checked: 2025-09-13
+#: osm_watch: way id="868042603" version="6"
+#: last_checked: 2025-10-30 (osm)
 #: check_frequency: 270d
 #: next_check: 2026-12-31
 Greenpark: wird es hier öffentlich nutzbare Wege geben?	? 13155,5871 13187,5751 13463,5817 13470,5944 13155,5871
@@ -13849,7 +13851,7 @@ Bahnhofsweg (Fürstenwerder): Qualität?	? 21276,109794 21007,109931
 #: source_id: 257305125 (Straßenbau bis 01.06.2025) (inaktiv)
 Dedelow - Falkenhagen: Qualität (zumindest am östlichen Ende asphaltiert)?	? 34932,107157 34533,107210 33475,107198 33038,107047 32910,106940
 #: XXX laut osm gemischt: cobblestone, concrete, asphalt
-#: source_id: 257300193 (Sperrung bis 30.10.2025)
+#: source_id: 257300193 (Sperrung bis 30.10.2025) (inaktiv)
 Berkholz - Naugarten: Qualität?	? 26331,98209 26306,98528 26421,98685 26454,98805 26599,99011 26642,99291 26928,99735 27082,100173 27152,100819 27088,100955
 Naugarten: Qualität?	? 26581,100861 27088,100955
 Naugarten - Schönermark: Qualität?	? 27088,100955 27266,101048 27743,101148 28118,101408 28193,101622 28386,101842 28734,102531 28798,102810
