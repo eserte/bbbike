@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.25;
+$VERSION = 2.26;
 
 use File::Glob qw(bsd_glob);
 
@@ -855,6 +855,9 @@ EOF
 		],
 		[Button => $do_compound->("GraphHopper (direct)"),
 		 -command => sub { current_search_in_graphhopper() },
+		],
+		[Button => $do_compound->("Valhalla (direct)"),
+		 -command => sub { current_search_in_valhalla() },
 		],
 		'-',
 		[Button => $do_compound->("GraphHopper (via osm)"),
@@ -2146,6 +2149,35 @@ sub current_search_in_graphhopper {
     my $profile = 'bike';
     my $layer = 'OpenStreetMap';
     my $url = sprintf "https://graphhopper.com/maps/?%s&profile=%s&layer=%s", join("&", @coord_params), $profile, $layer;
+
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+# Problem: start and goal points are correctly rendered, but
+# no route automatically shown. To do so, just click on another route mode and
+# then back to bicycle.
+sub current_search_in_valhalla {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+
+    my @coord_params;
+    {
+	require Karte::Polar;
+	my $o = $Karte::Polar::obj;
+	for my $c (@main::search_route_points) {
+	    my($lon,$lat) = $o->trim_accuracy($o->standard2map(split /,/, $c->[0]));
+	    push @coord_params, "$lon,$lat";
+	}
+    }
+
+    # Sample URL
+    # https://valhalla.openstreetmap.de/directions?profile=bicycle&wps=13.330042362213135%2C52.51345252670237%2C13.323127627372743%2C52.51292038529335
+
+    my $profile = 'bicycle';
+    my $url = sprintf "https://valhalla.openstreetmap.de/directions?profile=%s&wps=%s", $profile, join(",", @coord_params);
 
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
