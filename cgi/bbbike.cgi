@@ -45,10 +45,18 @@ BEGIN {
 	     "$FindBin::RealBin/BBBike", # weitere Alternative
 	     "$FindBin::RealBin/BBBike/lib",
 	     "$FindBin::RealBin",
+	     ($ENV{BOTCHECKER_JS_ENABLED} && $ENV{SERVER_NAME} =~ m{^bbbike-timesink\.} ? "$FindBin::RealBin/../../../../../botchecker" : ()),
 	    );
     }
 }
 use lib (@extra_libs);
+
+BEGIN {
+    if ($ENV{BOTCHECKER_JS_ENABLED}) {
+	require Botchecker_js;
+	Botchecker_js::antibot("BBBike");
+    }
+}
 
 use Strassen; # XXX => Core etc.?
 use Strassen::Dataset;
