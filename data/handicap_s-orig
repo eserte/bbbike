@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-10-29
+#: last_checked: 2025-10-30
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -69,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="23"
 #: osm_watch: way id="1072662717" version="27"
-#: last_checked: 2025-10-29
+#: last_checked: 2025-10-31
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -129,7 +129,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-10-27
+#: last_checked: 2025-10-31
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-01
 # REMOVED --- Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -285,7 +285,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-09-14 vvv
+#: last_checked: 2025-11-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -388,7 +388,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://weddingweiser.de/endlich-abriss-in-der-burgsdorfstrasse/ (Verzögerung des Abrisses, vielleicht bis 30. September 2025)
 #: by: https://www.morgenpost.de/bezirke/mitte/article409774113/das-baum-haus-tiere-verhindern-abriss-der-beruehmten-ruine-in-wedding.html
 #: by: https://entwicklungsstadt.de/wedding-geplanter-abriss-der-ruine-in-der-burgsdorfstrasse-gestoppt/
-#: osm_watch: way id="549316654" version="43"
+#: osm_watch: way id="549316654" version="44"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: last_checked: 2025-10-29 (osm)
@@ -472,7 +472,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-10-12 vvv
+#: last_checked: 2025-10-31 vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="43"
@@ -480,9 +480,9 @@ Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,1
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/schadowstra%C3%9Fe-4-dorotheenstra%C3%9Fe-verwaltungsgeb%C3%A4ude-bundestag.757/page-2#post-23517
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
 #: osm_watch: way id="930343902" version="4"
-# REMOVED --- #: note: Fahrbahn offen, beide Bürgersteige gesperrt, Umleitung für Fußgänger --- Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
-#: note: (wieder) komplett gesperrt, auch die Bürgersteige
-Schadowstr.: Fahrbahn gesperrt, Umleitung	q4::inwork 8999,12498 9011,12423
+# REMOVED --- #: note: Fahrbahn offen, beide Bürgersteige gesperrt, Umleitung für Fußgänger --- 
+# REMOVED --- #: note: (wieder) komplett gesperrt, auch die Bürgersteige --- Schadowstr.: Fahrbahn gesperrt, Umleitung	q4::inwork 8999,12498 9011,12423
+Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 #: osm_watch: way id="4402037" version="26"
 #: osm_watch: way id="1241756428" version="2"
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
@@ -595,10 +595,10 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-10-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
-#: osm_watch: way id="153698394" version="16"
+#: osm_watch: way id="153698394" version="17"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # REMOVED (offen) --- #: also_indoor: traffic (ex-H,ex-G) --- #: osm_watch: way id="114667396" version="13" --- Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 #: next_check ^^^
@@ -677,12 +677,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Karlshorst ###
 # 
-#: next_check_id: BLOCKDAMMWEGAMPEL-2025
-#: historical_note: zeitweise q3-, dann q2, dann wegen der Umwege wieder q3-
-#: last_checked: 2025-10-19
-#: check_frequency: 30d
-Hönower Wiesenweg: Bauarbeiten, Fahrbahn gesperrt, Engstelle, Umwege	q3-::inwork 17380,8858 17416,8767
-# 
+# REMOVED (fertig asphaltiert) --- #: next_check_id: BLOCKDAMMWEGAMPEL-2025 --- #: historical_note: zeitweise q3-, dann q2, dann wegen der Umwege wieder q3- --- #: last_checked: 2025-10-19--- #: check_frequency: 30d --- Hönower Wiesenweg: Bauarbeiten, Fahrbahn gesperrt, Engstelle, Umwege	q3-::inwork 17380,8858 17416,8767
 # REMOVED --- #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00 --- #: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024) (bis 22.11.2024) (bis 30.11.2024) (bis 13.12.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_232184 (bis auf weiteres) (inaktiv, aber Sperrung dürfte weiterhin bestehen) (wieder aktiv) --- #: last_checked: 2024-12-13 --- #: next_check: 2024-12-13 --- # REMOVED --- #: valid: -20241122 --- Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
 # 
 # REMOVED (weitgehend freigegeben; Überquerung der Treskowallee über Fußgängerfurt)
@@ -831,7 +826,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: note 3913793 10
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2025-08-30
+#: last_checked: 2025-10-31 (webcam)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (caimmo website)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
@@ -896,6 +891,7 @@ Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 79
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
 #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025)
 #: note: Länge des gesperrten Bereichs etwa 50m
+#: last_checked: 2025-10-31
 #: next_check: 2025-11-08
 #: valid: -20251108
 Rankestr.: Einmündungsbereich Breitscheidplatz wegen Kraneinsatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
@@ -2333,7 +2329,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="529086013" version="4"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="14"
-#: last_checked: 2025-10-12 (daf)
+#: last_checked: 2025-10-31
 #: check_frequency: 120d
 #: next_check: 2025-12-15 (Halteverbotsschilder)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
@@ -2459,8 +2455,7 @@ Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14996,12462 14801,12517
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14798,12502 15005,12443
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13642,9624 13704,9691 13860,9861
-#: XXX_prog: für Anhänger relevant (q1 oder so)
-Bouchéstr.: zwei Bodenschwellen	q0- 13489,9456 13357,9313
+# REMOVED (Bodenschwellen wurden bei den Bauarbeiten im Oktober 2025 abgebaut) --- #: XXX_prog: für Anhänger relevant (q1 oder so) --- Bouchéstr.: zwei Bodenschwellen	q0- 13489,9456 13357,9313
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 #: XXX_prog: für Anhänger relevant (q2 oder so)
@@ -5267,7 +5262,7 @@ Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,1
 (Blockdammweg - Adolf-Wermuth-Allee): einige Fußgänger, kein direkter Zugang zur Georg-Klingenberg-Str.	q3 17674,8738 17668,8696
 #: note: Grünanlagenschild ohne Zusatzschilder
 (Weg in der Parkstadt Karlshorst): einige Fußgänger, Spielplatz in der Nachbarschaft	q2 17449,8720 17460,8735 17631,8743 17674,8738
-(Weg in der Parkstadt Karlshorst): einige Fußgänger	q1 17674,8738 17810,8700 17851,8662
+(Weg in der Parkstadt Karlshorst): einige Fußgänger	q1 17674,8738 17821,8694 17851,8662
 # 
 (Uferweg): einige Fußgänger	q2 11821,11733 11863,11670 11962,11596
 # 
@@ -5787,9 +5782,9 @@ Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
 # 
 #: next_check_id: KANZLERPARK-2024
 #: XXX nach den Bauarbeiten folgenden Eintrag reaktivieren: südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623
-#: last_checked: 2025-09-24
+#: last_checked: 2025-10-31 (daf)
 #: check_frequency: 45d
-#: next_check: 2025-10-30
+# REMOVED --- #: next_check: 2025-10-30
 südliches Spreeufer: Engstelle und Umwege zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 #: by: Julia (jbrauch):

@@ -1517,7 +1517,8 @@ Magazinstr. (Mitte)	N 11562,12597 11329,12497
 Voltairestr.	N 11329,12497 11202,12426 11088,12382
 Stralauer Str.	HH 10697,12303 10772,12288 10830,12279 10951,12249 11094,12243 11139,12243 11221,12250 11300,12241 11347,12223
 # REMOVED (existiert nicht mehr) --- Grunerstr.	HH 10697,12303 10746,12364
-(ehemalige Grunerstr.)	HH 10746,12364 10807,12451 10838,12496 10849,12557
+(ehemalige Grunerstr.)	N 10746,12364 10807,12451 10838,12496
+# REMOVED (existiert nicht mehr) --- (ehemalige Grunerstr.)	HH 10838,12496 10849,12557
 Grunerstr.	HH 10873,12577 10951,12637 11057,12715 11105,12764
 Grunerstr.	HH 11105,12764 11055,12717 11013,12684 10950,12640 10873,12577 10849,12557
 # REMOVED --- Grunerstr.	HH 10849,12557 10838,12496 10807,12451
@@ -6843,7 +6844,7 @@ Rosenfelder Str.	H 17130,11599 17169,11677 17251,11789 17306,11866 17358,11943 1
 Rosenfelder Str.	N 17358,11943 17384,11976 17429,12030
 Egmontstr.	N 17306,11866 17151,11912
 Skandinavische Str.	H 16958,11778 17013,11849 17082,11909 17166,11944 17210,11950 17338,11969
-Blumberger Damm	H 21108,11628 21135,11799 21139,11830 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258 21206,12351 21221,12484 21251,12767 21298,13154 21337,13470 21345,13550 21367,13757 21358,13909 21342,14096 21378,14490 21408,14591 21532,14916 21599,15213 21623,15357 21647,15496 21675,15636 21682,15673 21709,15808 21724,15955 21782,16253 21785,16273 21824,16506 21869,16719 21889,16817 21925,16981 21962,17152 21970,17284 21913,17376
+Blumberger Damm	H 21108,11628 21135,11799 21139,11830 21150,11925 21151,11934 21152,11945 21166,12023 21190,12193 21199,12258 21206,12351 21221,12484 21251,12767 21298,13154 21337,13470 21345,13550 21367,13757 21358,13909 21342,14096 21378,14490 21408,14591 21532,14916 21599,15213 21623,15357 21647,15496 21675,15636 21682,15673 21709,15808 21724,15955 21782,16253 21785,16273 21824,16506 21869,16719 21889,16817 21925,16981 21962,17152 21970,17284 21913,17376
 Blumberger Damm [Nebenfahrbahn]	NN 21599,15213 21631,15223
 Blumberger Damm [Nebenfahrbahn]	N 21631,15223 21657,15352 21680,15489 21706,15626
 Blumberger Damm [Nebenfahrbahn]	N 21719,15666 21733,15755
@@ -7133,7 +7134,7 @@ Irmtraud-Morgner-Str.	N 17521,8549 17619,8558 17628,8556 17755,8519
 Samuel-Lewin-Str.	N 17792,8660 17773,8588 17755,8519 17738,8450
 (Blockdammweg - Adolf-Wermuth-Allee)	NN 17702,8855 17699,8843 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee)	NN 17674,8738 17668,8696
-(Weg in der Parkstadt Karlshorst)	NN 17449,8720 17460,8735 17631,8743 17674,8738 17810,8700 17851,8662
+(Weg in der Parkstadt Karlshorst)	NN 17449,8720 17460,8735 17631,8743 17674,8738 17821,8694 17851,8662
 #: note ^^^
 # 
 Sangeallee	NN 18070,9022 18088,9049 18134,9080
@@ -14073,7 +14074,7 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/GR_dresdner_bahn_wegefuehrung_buckower_chaussee_ab_20231010n.pdf (westl. Bahnsteig gesperrt, keine Änderung zur bisherigen Wegführung zu erkennen)
 #: XXX bauzeitliche Umleitung, vermutlich bis 2025; wie wird der endgültige Zustand aussehen? vvv
-#: last_checked: 2025-10-11 (krickstadt) vvv
+#: last_checked: 2025-10-30 (mapillary) vvv
 # REMOVED --- #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="1121227933" version="5"
@@ -16007,7 +16008,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2025-10-25
+#: last_checked: 2025-11-01
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16401,7 +16402,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="19"
-#: last_checked: 2025-10-25
+#: last_checked: 2025-11-01
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

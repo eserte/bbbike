@@ -777,6 +777,8 @@ Schloßstr. (Einbahnstraße?)	? -14821,106013 -15004,105813 -15070,105705
 Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -14288,105530 -14242,105542
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
+# added from qualitaet_s
+Mussehlstr.: Asphalt über Beton, einige Schäden (Ist die Qualität nach den Bauarbeiten besser geworden?)	? 8982,8781 8926,8682 8842,8561
 # added from qualitaet_l
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK (ist hier mittlerweile asphaltiert?)	? 5633,-2011 5292,-2221 5132,-2299
 Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21131,-2004 -20954,-1991 -20933,-1960 -20719,-1956 -20528,-1962
@@ -846,9 +848,10 @@ F3.3 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
+# added from fragezeichen
+Marion-Seelig-Platz: Benennung (Wurde der Marion-Seelig-Platz benannt und ausgeschildert?)	? 12161,13711 12189,13750 12204,13719 12161,13711
 # added from bbbike-temp-blockings-optimized
-Archibaldweg: Durchfahrt und Durchgang offiziell noch verboten (Stand Mitte Oktober 2025) (Besteht die Sperrung im Archibaldweg weiterhin?)	? 15777,10897 15820,10916 15870,10938
 Steg am Krugpfuhl gesperrt, Ende der Sperrung unbekannt (Wann ist der Steg wieder offen?)	? 11162,22939 11150,22898
-Magnus-von-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende Oktober 2025 (Ist der Uferweg weiterhin gesperrt?)	? 7772,12694 7521,12581
 Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, möglicherweise mittlerweile geöffnet (Ist die Straße wieder für Radfahrer und Fußgänger geöffnet?)	? 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
+Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Sperrung, voraussichtlich bis Oktober 2025, evtl. wird die Sperrung verlängert (Sind die Bauarbeiten beendet? Ist der Uferweg weiterhin gesperrt?)	? 4151,13961 4156,13914 4186,13710
 Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Oktober 2025: Absperrungen existieren) [(Sellerpark - Erika-Heß-Eisstadion)] (Sind alle Bauarbeiten beendet?)	? 7866,14541 7897,14565 7899,14577 7966,14622

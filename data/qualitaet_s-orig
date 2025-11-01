@@ -198,7 +198,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2025-10-15
+#: last_checked: 2025-10-31
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -210,7 +210,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2025-10-31 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -303,7 +303,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-10-19
+#: last_checked: 2025-11-01
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -478,7 +478,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-29
+#: last_checked: 2025-10-31
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -4841,10 +4841,10 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
 #: osm_watch: note 4526759 1
 #: XXX "Teilentsiegelung" geplant
-#: last_checked: 2025-07-27
+#: last_checked: 2025-11-01 (Bauzaun nur am westlichen Ende)
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (entwicklungsstadt)
-Lakegrund: Beton	Q0- 16406,7430 16368,7425 16195,7398
+Lakegrund: Beton	Q1+ 16406,7430 16368,7425 16195,7398
 Eschenbachstr.: Kopfsteinpflaster	Q2 16290,7160 16375,7070
 Stormstr. (Baumschulenweg): Kopfsteinpflaster	Q2 16328,7005 16234,7100
 Schöntaler Weg: Asphalt	Q0 16089,7041 15988,7129
@@ -13706,7 +13706,7 @@ Adolf-Wermuth-Allee: Asphalt	Q0 17668,8696 17648,8626 17628,8556 17608,8483 1758
 An der Waldsiedlung: Asphalt	Q0 17682,8464 17652,8349
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17702,8855 17699,8843 17674,8738 17659,8698
 (Blockdammweg - Adolf-Wermuth-Allee): Betonpflastersteine	Q0- 17674,8738 17668,8696
-(Weg in der Parkstadt Karlshorst): Asphalt	Q0 17449,8720 17460,8735 17631,8743 17674,8738 17810,8700 17851,8662
+(Weg in der Parkstadt Karlshorst): Asphalt	Q0 17449,8720 17460,8735 17631,8743 17674,8738 17821,8694 17851,8662
 # REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2024-03-09 (architektur-urbanistik) --- #: check_frequency: 30d
 Irmtraud-Morgner-Str.: Asphalt	Q0 17521,8549 17619,8558 17628,8556
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17639,8627
@@ -14206,12 +14206,13 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 (Uferweg - Siemenssteg/Am Spreebord): Kleinsteinpflaster	Q2+ 4038,12693 4039,12706 4124,12713
 # 
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251101 (Erneuerung der Fahrbahn vom 3.11.2025 für ca. drei Wochen, Sperrung nur für Kfz-Verkehr?)
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (bis 31.07.2025) (inaktiv)
 #: source_id: bvg2024:194#HIM_FREETEXT_304347 (Verlegung der Haltestelle ab 3.11.2025, evtl. wegen möglicher Bauarbeiten in der Nöldnerstr.?)
 #: source_id: bvg2024:194#HIM_FREETEXT_304348 (s.o.)
-#: source_id: bvg2024:396#HIM_FREETEXT_304350 (s.o.)
+#: source_id[inactive]: bvg2024:396#HIM_FREETEXT_304350 (s.o.) (vor Anfang inaktiv)
 #: XXX wird vermutlich noch ausgebessert --- mittlerweile ist die Baustelle aufgehoben und die Fahrbahn in voller Breite befahrbar, aber der Asphalt ist noch immer schadhaft
-#: last_checked: 2025-10-25
+#: last_checked: 2025-11-01
 #: next_check: 2025-11-03 (BVG-Verkehrsmeldung)
 Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
 # 
@@ -19054,11 +19055,12 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.tagesspiegel.de/berlin/bezirke/baustelle-im-berliner-paradies-wie-stehts-um-den-havelradweg-im-gutspark-neukladow-12499511.html (Asphaltierung 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html (irgendwann 2025, 3,50m breiter Weg, Rampe vom Gutshaus zum Ufer)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/galerie-gemalde-und-abrissbagger-hier-sind-die-neuen-plane-fur-den-gutspark-neukladow-13440736.html (Bau wird 2025 gestartet)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/es-geht-langsamer-voran-als-geplant-wieder-verzogerungen-im-berliner-ausflugsparadies-14639003.html (Baustart 2026?)
 #: XXX wird hier asphaltiert?
 #: osm_watch: way id="205746338" version="9"
-#: last_checked: 2025-03-27 (Tsp)
-#: check_frequency: 120d
-#: next_check: 2025-12-31 (Tsp)
+#: last_checked: 2025-11-01 (Tsp)
+#: check_frequency: 150d
+#: next_check: 2026-12-31 (Tsp)
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt
 Ernst-Liesegang-Ufer: wassergebundene Decke	Q1 -5924,5602 -5911,5619 -5853,5674
