@@ -510,9 +510,9 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: last_checked: 2025-08-24 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
-#: osm_watch: way id="169459736" version="17"
+#: osm_watch: way id="169459736" version="18"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
-#: osm_watch: way id="25278674" version="26"
+#: osm_watch: way id="25278674" version="27"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
 #: next_check ^^^
 #: check_frequency ^^^
@@ -642,7 +642,7 @@ F¸rstenberger Str.: Asphalt	Q0 10311,14613 10468,14636
 #: osm_watch: way id="4606258" version="31"
 #: osm_watch: way id="184077626" version="21"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2025-10-12
+#: last_checked: 2025-11-02
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1455,9 +1455,9 @@ Wuhlewanderweg: Asphalt, einige Wurzelsch‰den	Q0- 22027,6608 22097,6414 22146,63
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12098 (Einwohneranfrage)
 #: last_checked: 2025-09-02 (mapillary) vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="317233618" version="11"
+#: osm_watch: way id="317233618" version="12"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
-#: osm_watch: way id="25216398" version="38"
+#: osm_watch: way id="25216398" version="39"
 Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21938,5866 21862,5857 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1596,7 +1596,7 @@ Saubuchtweg: guter Waldweg	Q1 -3073,9061 -2983,8841 -2965,8705 -2962,8493 -2981,
 Schwarzer Weg: Waldweg, OK (teilweise sandig)	Q1 -2668,6862 -2632,6789 -2638,6641 -2686,6489 -2705,6355 -2986,5996 -3156,5926 -3226,5870 -3275,5847 -3603,5748 -3794,5604 -3845,5575 -3877,5570
 Schwarzer Weg: Schotter, absch¸ssige Strecke	Q2 -3877,5570 -4003,5621
 Fischerh¸ttenweg: Waldweg, m‰ﬂig (Wurzeln, eng) bis OK	Q2 -2218,5133 -2528,5366 -2825,5588 -3129,5798 -3226,5870
-Fischerh¸ttenweg: Waldweg, sandig	Q3 -3723,6254 -3443,6036
+# REMOVED --- Fischerh¸ttenweg: Waldweg, sandig	Q3 -3723,6254 -3443,6036
 Curtiusstr.: Asphalt	Q0 2198,3169 2256,3172 2289,3331 2328,3482 2457,3547 2758,3702 2965,3823
 Curtiusstr.: Kopfsteinpflaster	Q2 2965,3823 3026,3860 3185,3958 3259,4002
 #: by: Thomas Martens ("bergab erreicht man rollend ohne treten locker 30km/h")
@@ -1800,36 +1800,14 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 # 
 #: historical_note: fr¸her (bis Oktober 2025): Kopfsteinpflaster, Q2
 Hufelandstr.: abgefr‰stes Kopfsteinpflaster	Q1- 12077,14186 12228,14083
-#: next_check_id: HUFELAND-2025
-#: XXX Asphaltierung & Fahrradstraﬂe geplant --- mittlerweile ist nur das Abschleifen des Pflasters geplant
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4680 (Planung ab 2021) (BPU 2025, Haushaltsmittel 2026)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Pr¸fung einer Gl‰ttung des Kopfsteinpflasters)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsprojekte-im-boetzowviertel_a319036 (Erw‰hnung der Hufelandstraﬂe)
-#: by: https://www.infravelo.de/projekt/hufelandstrasse/ ("ersch¸tterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2024) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2024 - 3. Quartal 2025) (3. Quartal 2025 - 3. Quartal 2026) (4. Quartal 2026 - 3. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2025) (Eintrag wurde entfernt) (4. Quartal 2025 - 2. Quartal 2026)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-fahrradstrasse_a373544 (Entwurfsplanung 2023)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6636 (Antrag) (Erw‰hnung)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-bald-zur-fahrradstrasse_a396418 (f¸r 2025 geplant)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6711 (Einwohnerantrag)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/hufelandstrasse-wird-umgestaltet_a408782 (2025 Fahrradstraﬂe; Umgestaltung des Dreiecksplatzes)
-#: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/anwohner-gegen-durchgangsverkehr_a409202
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1478174.php (zu Kiezblˆcken, u.a. Bˆtzow-Kiez)
-#: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/kiezblocks-in-pruefung-winsviertel-boetzowkiez-und-gruene-stadt_a423747
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1605404.php
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1605623.php (Sanierungsarbeiten: Abschleifen des Kopfsteinpflasters, ab 13. Oktober 2025, 1. Abschnitt ab Greifswalder Str.)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1605546.php
-#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/berlins-neueste-fahrradstrasse-bekannte-kopfstein-piste-in-prenzlauer-berg-wird-endlich-glatt-14529680.html
-#: by: https://entwicklungsstadt.de/verkehrswende-in-pankow-umbau-der-hufelandstrasse-offiziell-gestartet/
-#: by: https://www.infravelo.de/meldung/baustart-hufelandstr/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/berlins-neueste-fahrradstrasse-bekommt-schliff-in-prenzlauer-berg-larmt-eine-baumaschine--damit-das-pflaster-leise-wird-14641217.html (bis 29.10.2025?)
-#: by: https://entwicklungsstadt.de/hufelandstrasse-in-prenzlauer-berg-umbau-zur-fahrradstrasse-schreitet-voran/ (Arbeiten bis Sommer 2026)
-#: osm_watch: way id="4615063" version="40"
-#: osm_watch: note 5010352 3
-#: last_checked: 2025-10-21
-#: check_frequency: 30d
-# REMOVED --- #: next_check_id: 2025-10-21 (1. BA)
-#: next_check: 2025-10-29 (Tsp)
-# REMOVED --- #: next_check: 2026-06-30 (infravelo)
-Hufelandstr.: Kopfsteinpflaster	Q2 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
+#: historical_note: fr¸her (bis Ende Oktober 2025): Kopfsteinpflaster, Q2
+#: XXX wegen Hochbauarbeiten ist ein Abschnitt in der Mitte mit dem alten Kopfsteinpflaster ¸brig geblieben, wird vermutlich noch nachgeholt
+#: last_checked: 2025-11-02
+#: check_frequency: 90d
+Hufelandstr.: abschnittsweise abgefr‰stes Kopfsteinpflaster	Q2+ 12228,14083 12361,13985
+#: historical_note: fr¸her (bis Ende Oktober 2025): Kopfsteinpflaster, Q2
+Hufelandstr.: abgefr‰stes Kopfsteinpflaster	Q1- 12361,13985 12478,13903 12582,13834 12578,13800
+Hufelandstr.: Kopfsteinpflaster	Q2 12582,13834 12605,13818
 # 
 Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178
 Limonenstr.: Kleinsteinpflaster	Q1- 3357,5178 3328,5218
@@ -2772,7 +2750,7 @@ Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6277,11397 6337,11365 6346,11326
 (s¸dliches Spreeufer): wassergebundene Decke	Q1+ 5550,12238 5573,12242
 (s¸dliches Spreeufer): asphalt‰hnlicher Belag	Q0 5573,12242 5604,12244 5643,12253
 #: next_check_id: SPREEUFER-2022
-#: osm_watch: way id="1187825948" version="4"
+#: osm_watch: way id="1187825948" version="5"
 #: XXX evtl. wird der Weg nach der Sanierung der Uferwand auch neu gemacht
 #: last_checked: 2025-06-25
 #: check_frequency: 180d
@@ -3097,7 +3075,7 @@ M¸hlenfeldstr.: Kopfsteinpflaster	Q2+ 3046,22292 2757,22310 2587,22332
 #: XXX wird hier asphaltiert? --- 
 #: XXX Baumaﬂnahme 12.2 (Realisierung bis 2010) (nicht ganz sicher, ob es wirklich hier ist)
 # REMOVED (closed) --- #: osm_watch: note 3223149 2
-#: osm_watch: way id="4804585" version="22"
+#: osm_watch: way id="4804585" version="23"
 #: last_checked: 2025-09-03
 #: check_frequency: 360d
 Gˆtzestr.: gutes Kopfsteinpflaster	Q1- 3896,22718 3738,22652
@@ -3531,7 +3509,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraﬂe auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 # REMOVED --- #: XXX siehe auch RING-2015 f¸r die aktuelle Verschwenkung
-#: osm_watch: way id="30893534" version="27"
+#: osm_watch: way id="30893534" version="29"
 #: osm_watch: way id="1155399359" version="4"
 #: last_checked: 2025-09-22 (mapillary)
 #: check_frequency: 120d
@@ -4249,7 +4227,7 @@ M¸nsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12176 (Anfrage)
 #: XXX wird hier wieder der alte Zustand hergestellt?
 #: osm_watch: note 4661800 2
-#: osm_watch: way id="24205371" version="22"
+#: osm_watch: way id="24205371" version="23"
 #: last_checked: 2025-10-25
 #: check_frequency: 90d
 M¸nsterberger Weg: wassergebundene Decke, Unebenheiten	Q1- 22886,11776 22701,11843
@@ -8868,7 +8846,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: osm_watch: way id="531908445" version="14"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
-#: osm_watch: way id="273174490" version="12"
+#: osm_watch: way id="273174490" version="13"
 # REMOVED --- #: osm_watch: way id="356357906" version="8"
 #: XXX wird hier noch verbessert werden?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Betonplattenweg	Q2- 8289,9988 8206,9867
@@ -25600,6 +25578,7 @@ Kˆllnische Str.: sehr guter Asphalt	Q0 18659,5330 18307,5440
 #: corrected_by: srt (Asphalt -> Beton)
 #: source_id: viz2021:13.42378,52.41824,27.10.2025,07:00 (Fahrbahnerneuerung zwischen Trimbacher Str. und Salmbacher Str., bis 28.11.2025)
 #: XXX nach den Bauarbeiten bessere Qualit‰t?
+#: last_checked: 2025-10-31 (mapillary)
 #: next_check: 2025-11-28
 Delmer Steig: Beton	Q0- 12011,1361 11954,1407 11922,1445 11895,1489
 Prinzenstr. (Lichterfelde): m‰ﬂiges Verbundsteinpflaster	Q2+ 4931,2235 4995,2090

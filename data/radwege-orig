@@ -282,7 +282,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
 #: by: srt
 #: XXX: temporäre Radspur
-#: osm_watch: way id="305483806" version="12"
+#: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2025-10-31
@@ -1243,7 +1243,7 @@ Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 1
 #: note: Waltersdorfer Chaussee/Neuköllner Str., Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
 #: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2025-06-11
+#: last_checked: 2025-10-31 (mapillary)
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
@@ -1462,7 +1462,7 @@ Verbundsteinpflaster mit deutlichen Unebenheiten	RW2; 3910,6949 3784,6985 3688,7
 #: by: https://api.fixmyberlin.de/api/plannings/216
 #: by: https://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (nach den Bauarbeiten der Wasserbetriebe 2026)
-#: osm_watch: way id="963841938" version="9"
+#: osm_watch: way id="963841938" version="10"
 #: last_checked: 2025-09-06
 #: check_frequency: 360d
 #: next_check: 2026-12-31
@@ -1566,7 +1566,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
-#: osm_watch: way id="357558840" version="23"
+#: osm_watch: way id="357558840" version="24"
 #: last_checked: 2025-10-15
 #: check_frequency: 120d
 	RW3; 7236,5685 7497,5610
@@ -1744,7 +1744,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="823635969" version="26"
-#: osm_watch: way id="4615746" version="52"
+#: osm_watch: way id="4615746" version="53"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
 #: last_checked: 2025-10-21 vvv
 #: check_frequency: 30d vvv
@@ -1834,7 +1834,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
-#: osm_watch: way id="910439501" version="18"
+#: osm_watch: way id="910439501" version="19"
 #: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
@@ -1862,7 +1862,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2025-10-14 (webcam)
+#: last_checked: 2025-11-02 (webcam)
 #: check_frequency: 21d
 	RW0; 14174,7505 14305,7415
 überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14305,7415 14323,7403 14334,7395 14369,7376
@@ -2603,7 +2603,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: XXX Anfang 2025: der benutzungspflichtige Radweg Richtung Süden fängt wegen Hochbauarbeiten etwa 50m später an
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
-#: osm_watch: way id="142161214" version="23"
+#: osm_watch: way id="142161214" version="24"
 #: last_checked: 2025-09-22
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -4892,7 +4892,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-11-02 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -7817,7 +7817,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-10-29 vvv
+#: last_checked: 2025-10-31 (mapillary) vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8230,7 +8230,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
-#: last_checked: 2025-09-10 vvv
+#: last_checked: 2025-10-31 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-31 (Baustellenschild) vvv
 #: note: Stubenrauchstr. Richtung Nordosten
@@ -8247,10 +8247,7 @@ Gehweg für Radfahrer freigegeben	RW1; 16635,2796 16573,2715
 Gehweg für Radfahrer freigegeben	RW1; 16573,2715 16547,2680 16475,2586 16461,2569
 #: XXX: Freigabe des Gehwegs vergessen?
 	RW0; 16461,2569 16382,2464
-Gehweg für Radfahrer freigegeben	RW1; 16382,2464 16306,2364
-#: XXX: Freigabe des Gehwegs vergessen?
-	RW0; 16306,2364 16242,2279
-Gehweg für Radfahrer freigegeben	RW1; 16242,2279 16182,2200
+Gehweg für Radfahrer freigegeben	RW1; 16382,2464 16306,2364 16242,2279 16182,2200
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -9201,7 +9198,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 # REMOVED (hier realisiert) --- #: osm_watch: way id="30958674" version="23"
 # REMOVED (hier realisiert) --- #: osm_watch: way id="28680189" version="22"
 # REMOVED (hier realisiert) --- #: osm_watch: way id="1214584012" version="2" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs) --- # provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9275,4672 9259,4815 9247,4915 9239,4980 9206,5193 --- provisorischer gemeinsamer Rad/Gehweg	RW2; 9275,4672 9259,4815 9247,4915 9239,4980 9206,5193
-#: osm_watch: way id="4526218" version="31"
+#: osm_watch: way id="4526218" version="32"
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^
@@ -9274,7 +9271,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: source_id: viz2021:13.377485,52.466729,13.11.2023,06:00 (Leitungsarbeiten bis 01.12.2023) (inaktiv)
-#: osm_watch: way id="4357826" version="24"
+#: osm_watch: way id="4357826" version="25"
 #: osm_watch: way id="354645907" version="20"
 #: osm_watch: way id="354645904" version="13"
 #: last_checked: 2025-10-15 vvv

@@ -1912,8 +1912,8 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
-#: osm_watch: way id="74868383" version="27"
-#: last_checked: 2025-07-27 (mapillary)
+#: osm_watch: way id="74868383" version="28"
+#: last_checked: 2025-11-02
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -5283,7 +5283,7 @@ Fischerhüttenstr.	H 534,3149 251,3325 137,3396 17,3471 -135,3567 -216,3623 -267,
 Fischerhüttenstr.	N -580,3912 -762,4054 -843,4116 -968,4184 -1096,4267 -1204,4328 -1245,4351 -1297,4385
 Fischerhüttenweg	N -1297,4385 -1344,4436 -1366,4454
 Fischerhüttenweg	NN -1366,4454 -1443,4542 -1654,4703 -2059,5011 -2112,5050 -2218,5133 -2528,5366 -2825,5588 -3129,5798 -3226,5870
-Fischerhüttenweg	NN -3443,6036 -3723,6254
+# REMOVED (existiert nicht (mehr?)) --- Fischerhüttenweg	NN -3443,6036 -3723,6254
 Schönower Str.	H 561,2395 790,2434
 Mühlenstr. (Zehlendorf)	H 790,2434 900,2469 960,2534 1008,2568 1121,2583 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1703,2620 1750,2636 1885,2697 2000,2748 2123,2803
 Echtermeyerstr.	N 1524,2611 1561,2761 1567,2786
@@ -13264,7 +13264,8 @@ Hessische Str.	H 8775,13606 8685,13728
 Knaackstr.	N 11045,15012 11038,14972 11094,14769 11155,14554 11229,14422 11316,14360 11331,14350 11358,14331 11380,14316 11418,14290 11498,14234
 Immanuelkirchstr.	N 11498,14234 11713,14118 11946,13993
 Marienburger Str.	N 11572,14452 11821,14317 12077,14186
-Hufelandstr.	N 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
+Hufelandstr.	N 12077,14186 12228,14083 12361,13985 12478,13903 12582,13834 12578,13800
+Hufelandstr.	N 12582,13834 12605,13818
 Metzer Str. (Prenzlauer Berg)	N 11378,13891 11156,14012 11006,14087 10933,14122
 Kollwitzstr.	NN 10908,13978 10937,14006
 Kollwitzstr.	N 10937,14006 11006,14087 11109,14235 11229,14422 11285,14515 11317,14564 11436,14741 11535,14900
@@ -16007,7 +16008,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
-#: osm_watch: way id="38776757" version="16"
+#: osm_watch: way id="38776757" version="17"
 #: last_checked: 2025-11-01
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
@@ -16401,7 +16402,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: XXX Benennung zu "Am Kraatz-Tränke-Graben" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
-#: osm_watch: way id="51230057" version="19"
+#: osm_watch: way id="51230057" version="20"
 #: last_checked: 2025-11-01
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 

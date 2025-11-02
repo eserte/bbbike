@@ -43,13 +43,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-11-02 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="7"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="182614432" version="20"
+#: osm_watch: way id="182614432" version="21"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="23"
@@ -388,6 +388,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://weddingweiser.de/endlich-abriss-in-der-burgsdorfstrasse/ (Verzögerung des Abrisses, vielleicht bis 30. September 2025)
 #: by: https://www.morgenpost.de/bezirke/mitte/article409774113/das-baum-haus-tiere-verhindern-abriss-der-beruehmten-ruine-in-wedding.html
 #: by: https://entwicklungsstadt.de/wedding-geplanter-abriss-der-ruine-in-der-burgsdorfstrasse-gestoppt/
+#: by: https://entwicklungsstadt.de/abriss-der-ruine-in-der-burgsdorfstrasse-in-mitte-hat-begonnen/
 #: osm_watch: way id="549316654" version="44"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
@@ -475,7 +476,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: last_checked: 2025-10-31 vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
-#: osm_watch: way id="24242892" version="43"
+#: osm_watch: way id="24242892" version="44"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/schadowstra%C3%9Fe-4-dorotheenstra%C3%9Fe-verwaltungsgeb%C3%A4ude-bundestag.757/page-2#post-23517
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
@@ -791,7 +792,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: note 3949358 3
 #: osm_watch: way id="24695200" version="19"
-#: last_checked: 2025-07-22 (okas)
+#: last_checked: 2025-10-31 (okas)
 #: check_frequency: 120d
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
@@ -995,7 +996,7 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2025-10-13 (architektur-urbanistik)
+#: last_checked: 2025-10-31 (mapillary)
 #: check_frequency: 45d
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 

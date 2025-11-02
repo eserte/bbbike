@@ -11,7 +11,7 @@
 #: source_id: viz2021:13.45883,52.51144,16.10.2025,07:00 (bis 02.12.2025)
 #: osm_watch: note 4669838 3
 #: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
-#: last_checked: 2025-10-30
+#: last_checked: 2025-11-02
 #: next_check: 2025-12-02
 #: valid: -20251203
 Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::inwork::alternating 14127,11811
@@ -330,7 +330,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2025-10-12
+#: last_checked: 2025-11-02
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -472,7 +472,7 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten) (inaktiv)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-10-31 (okas) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
 #: valid: -20251231 vvv
@@ -4330,6 +4330,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: source_id: viz2021:13.373259,52.538069,26.06.2025,09:00 (bis 15.08.2025) (bis 01.09.2025) (bis 26.12.2025)
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
+#: osm_watch: note 4938354 1
 #: note: Anforderungsampel
 #: last_checked: 2025-09-04 (mapillary)
 #: check_frequency: 120d
@@ -4373,7 +4374,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2025-10-29
+#: last_checked: 2025-10-31 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Tsp)
 	X::inwork 12185,7381

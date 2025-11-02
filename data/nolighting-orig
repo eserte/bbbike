@@ -113,7 +113,7 @@ Verl. Pücklerstr.	NL 1553,6741 1338,6708 1154,6672 956,6631 902,6642 878,6651 81
 # REMOVED (Beleuchtung existiert) --- Jagdschloss - Hüttenweg	NL 698,6592 640,6576 546,6583 369,6594 340,6598 218,6571
 (Im Jagen, Verlängerung)	NL 1375,6138 1057,6461 909,6584 902,6642
 Fischerhüttenweg	NL -1297,4385 -1344,4436 -1366,4454 -1443,4542 -1654,4703 -2059,5011 -2112,5050 -2218,5133 -2528,5366 -2825,5588 -3129,5798 -3226,5870
-Fischerhüttenweg	NL -3443,6036 -3723,6254
+# REMOVED --- Fischerhüttenweg	NL -3443,6036 -3723,6254
 Pfaueninselchaussee	NL -8542,2216 -8468,2152 -8422,2155 -8284,2156 -8106,2034 -7866,1862 -7640,1837 -7443,1915 -7304,1970 -7165,1978 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -6577,1395 -6492,1204 -6442,1150
 Uferpromenade	NL -6430,3445 -6487,3444 -6673,3343 -6766,3250 -6801,3224 -6978,3049 -7029,2952 -7133,2817 -7164,2727 -7190,2670 -7296,2597 -7428,2583 -7557,2446 -7838,2291 -8069,2274 -8159,2220 -8265,2186 -8340,2188 -8422,2155
 Haveleck	NL -5737,2746 -5680,2831 -5712,2946 -5749,3010 -5810,3054 -5933,3125 -6201,3391 -6244,3424 -6362,3428 -6430,3445
@@ -157,7 +157,7 @@ Wuhletal-Wanderweg	NL 22124,13606 22082,13542 22060,13446 22058,13366 22067,1333
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4350&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4507 (Antrag auf Umwidmung als Straßenland, aber seit Mai 2013 keine Bewegung bei der Drucksache)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5749 (neue Drucksache)
-#: osm_watch: way id="317233618" version="11"
+#: osm_watch: way id="317233618" version="12"
 #: last_checked: 2025-07-04 (mapillary)
 #: check_frequency: 150d
 (Wuhlewanderweg, östliches Ufer)	NL 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -324,8 +324,8 @@ Wanderweg Erkner - Hessenwinkel	NL 33526,2771 33419,2765 33406,2738 33255,2762 3
 #: by: https://fahrradfreundliches-neukoelln.de/blog/ausschusssitzung-strassen-gruenflaechen-und-ordnung-am-9-januar-2019
 #: by: https://api.fixmyberlin.de/api/projects/75 (Asphaltierung)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/240605_protokoll-mobilitatsrat_2.pdf ("Widmung in öffentliches Straßenland ist geplant")
-#: osm_watch: way id="13853634" version="42"
-#: last_checked: 2025-10-29
+#: osm_watch: way id="13853634" version="43"
+#: last_checked: 2025-10-31 (mapillary)
 #: check_frequency: 60d
 Kirchhofweg	NL 11608,7267 11687,7284 12185,7381
 # 

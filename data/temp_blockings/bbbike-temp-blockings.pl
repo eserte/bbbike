@@ -33220,7 +33220,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-10-29
+#: last_checked: 2025-10-31 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -40023,7 +40023,7 @@ EOF
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2025-10-04
+#: last_checked: 2025-11-02 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -40408,7 +40408,7 @@ EOF
 #: note: neue Sperrung von 2025
 #: also_indoor: traffic (ex-T,ex-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-11-02 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-11-03 (BA-Pressemitteilung zur Margarete-Sommer-Str.) vvv
 Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
@@ -42192,7 +42192,7 @@ EOF
 #: osm_watch: way id="23121446" version="37"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-10-12 vvv
+#: last_checked: 2025-11-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -43667,8 +43667,8 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025) (inaktiv) (bis 30.04.2025) (inaktiv)
 #: osm_watch[closed]: note 4125418 5
-#: osm_watch: way id="1258660768" version="2"
-#: osm_watch: way id="1259755317" version="3"
+#: osm_watch: way id="1258660768" version="3"
+#: osm_watch: way id="1259755317" version="4"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
@@ -45736,7 +45736,7 @@ EOF
 #: by: https://entwicklungsstadt.de/4-abschnitt-des-berliner-mauerwegs-wird-erneuert/
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
 #: osm_watch: way id="27260309" version="20"
-#: osm_watch: way id="372791173" version="11"
+#: osm_watch: way id="372791173" version="12"
 #: osm_watch: way id="27260312" version="25"
 #: osm_watch: note 4673198 6
 #: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
@@ -45796,7 +45796,7 @@ EOF
 #: osm_watch: way id="1119255054" version="9"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-10-21
+#: last_checked: 2025-11-02
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -46763,7 +46763,7 @@ EOF
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
 #: also_indoor: traffic (G[zu lang],T,re-H[zu kurz],ex-W[zu kurz])
-#: last_checked: 2025-10-20
+#: last_checked: 2025-11-02 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -48089,7 +48089,7 @@ EOF
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
-#: last_checked: 2025-10-20 (website check) vvv
+#: last_checked: 2025-11-02 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -49084,7 +49084,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-10-24 (traffic) vvv
+#: last_checked: 2025-11-02 (traffic) vvv
 #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
@@ -50192,14 +50192,14 @@ EOF
      },
      { from  => undef,
        until => undef, # XXX
-       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Oktober 2025: Absperrungen existieren)',
+       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Anfang November 2025: Absperrungen existieren)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 4
+#: osm_watch: note 4801950 5
 #: osm_watch: way id="53168806" version="7"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2025-10-12 (noch abgesperrt)
+#: last_checked: 2025-11-02 (noch abgesperrt)
 #: check_frequency: 14d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
@@ -50479,19 +50479,19 @@ EOF
 EOF
      },
      { from  => 1760220000, # 2025-10-12 00:00
-       until => undef, # 1761083999, # 2025-10-21 23:59
+       until => 1762089890, # undef, # 1761083999, # 2025-10-21 23:59
 #      text  => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 13. Oktober 2025 bis 21. Oktober 2025',
        text  => 'Hufelandstr./Bötzowstr.: Sanierungsarbeiten, Sperrung der Fahrbahn',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: HUFELAND-2025
 #: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025) (inaktiv)
-#: last_checked: 2025-10-21 vvv
+# REMOVED --- #: last_checked: 2025-10-21 vvv
 # REMOVED --- #: next_check: 2025-10-21 (nächster Bauabschnitt) vvv
 Hufelandstr.	q3::inwork 12228,14083 12361,13985 12478,13903
 Bötzowstr.	q3::inwork 12280,13880 12361,13985 12423,14066
 # REMOVED --- #: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: last_checked ^^^
 # REMOVED (fertig) ---	q4::inwork 12361,13985 12228,14083 12077,14186
 EOF
      },
@@ -50774,11 +50774,45 @@ EOF
      },
      { from  => 1761890400, # 2025-10-31 07:00
        until => 1798736400, # 2026-12-31 18:00
-       text  => 'Knaackstr.: Bauarbeiten zwischen Diedenhofer Str. und Prenzlauer Allee Berlin, Sperrung, evtl. sind auch Radfahrer betroffen, vom 01.11.2025 07:00 bis Ende 2026',
+       dont_check_date => 1, # XXX check script cannot cope with "Stand DD.MM.YYYY"
+       text  => 'Knaackstr.: Bauarbeiten zwischen Diedenhofer Str. und Prenzlauer Allee Berlin, Sperrung geplant (Stand 2.11.2025: noch keine Sperrung), außerdem Sperrung der Kolmarer Str., vom 01.11.2025 07:00 bis Ende 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
-	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
+#: next_check: 2026-12-31 vvv
+#: also_indoor: traffic (G[falsch],H[falsch],W[falsch],A[falsch])
+#: last_checked: 2025-11-02
+#: check_frequency: 7d
+Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
+#: also_indoor: traffic (G)
+#: last_checked: 2025-11-02
+#: check_frequency: 120d
+Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
+#: next_check ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => 1764370800, # 2025-11-29 00:00
+       text  => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis 28.11.2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: osm_watch: note 4953648 2
+#: also_indoor: traffic (none)
+#: last_checked: 2025-11-02
+#: check_frequency: 30d
+#: next_check: 2025-11-28
+	q4::inwork; 10308,12859 10260,12831 10166,12777
+EOF
+     },
+     { from  => 1762090492, # 2025-11-02 14:34
+       until => 1788213600, # 2026-09-01 00:00
+       text  => 'Mauerweg an der Boyenstr.: Leitungsarbeiten, Sperrung, voraussichtlich bis August 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: last_checked: 2025-11-02
+#: check_frequency: 30d
+#: next_check: 2026-08-08 (Baustellenschild, Haltestellenschilder)
+	2::inwork 8050,14556 7996,14487 7940,14447
 EOF
      },
     );
