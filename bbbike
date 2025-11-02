@@ -15166,6 +15166,14 @@ sub show_info {
 		next;
 	    }
 
+	    my $name = $plugin->{name};
+	    if (ref $name eq 'CODE') {
+		$name = $name->(@args);
+	    }
+	    if (!defined $name) { # can be used for hacks together with $current_tag_filter
+		next;
+	    }
+
 	    my $need_indentation;
 	    if ($plugin->{icon}) {
 		eval {
@@ -15177,10 +15185,6 @@ sub show_info {
 		$need_indentation = 1;
 	    }
 
-	    my $name = $plugin->{name};
-	    if (ref $name eq 'CODE') {
-		$name = $name->(@args);
-	    }
 	    $info_text->insert("end", $name,
 			       ["link$linkcount", $need_indentation ? 'iconindent' : ()]);
 	    if ($plugin->{using_current_region}) {
