@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.49;
+$VERSION = 2.50;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -199,27 +199,12 @@ sub register {
 	};
     if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . "_FIS_Broker"} =
-	    { name => sub {
-		  my %args = @_;
-		  my $current_tag_filter = $args{current_tag_filter}||'';
-		  if ($current_tag_filter eq 'bicycle') {
-		      'FIS-Broker (Radverkehrsnetz)';
-		  } else {
-		      "FIS-Broker (1:5000)";
-		  }
-	      },
+	    { name => "FIS-Broker (1:5000)",
 	      callback => sub {
-		  my %args = @_;
-		  my $current_tag_filter = $args{current_tag_filter}||'';
-		  if ($current_tag_filter eq 'bicycle') {
-		      showmap_fis_broker(mapId => 'k_radverkehrsnetz@senstadt', @_);
-		  } else {
-		      showmap_fis_broker(@_);
-		  }
+		  showmap_fis_broker(@_);
 	      },
 	      callback_3 => sub { show_fis_broker_menu(@_) },
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
-	      tags => [qw(bicycle)],
 	    };
 	$main::info_plugins{__PACKAGE__ . '_GeoPortalBerlin'} =
 	    { name => sub {
@@ -247,6 +232,29 @@ sub register {
 	      callback_3 => sub { show_gdi_berlin_menu(@_) },
 	      ($images{Berlin} ? (icon => $images{Berlin}) : ()),
 	      tags => [qw(bicycle pubtrans)],
+	    };
+	# note: the following is not shown in the complete list, just in the "bicycle" group
+	$main::info_plugins{__PACKAGE__ . '_GeoPortalBerlin_Bicycle'} =
+	    { name => sub {
+		  my %args = @_;
+		  my $current_tag_filter = $args{current_tag_filter}||'';
+		  if ($current_tag_filter eq 'bicycle') {
+		      'Geoportal Berlin (Radverkehrsnetz)';
+		  } else {
+		      undef; # do not show in complete list
+		  }
+	      },
+	      callback => sub {
+		  my %args = @_;
+		  my $current_tag_filter = $args{current_tag_filter}||'';
+		  if ($current_tag_filter eq 'bicycle') {
+		      showmap_gdi_berlin(layers => 'radverkehrsnetz', @_);
+		  } else {
+		      undef; # should never happen
+		  }
+	      },
+	      ($images{Berlin} ? (icon => $images{Berlin}) : ()),
+	      tags => [qw(bicycle)],
 	    };
 	$main::info_plugins{__PACKAGE__ . '_VIZ'} =
 	    { name => sub {
