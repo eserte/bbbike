@@ -6617,19 +6617,23 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: by: https://entwicklungsstadt.de/prenzlauer-berg-gehwegneubau-in-der-margarete-sommer-strasse-fuer-schuldrehscheibe/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/sicherheits-plus-fur-berliner-schuler-dieses-gymnasium-in-prenzlauer-berg-erhalt-einen-asphaltweg-im-grunen-14696351.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251101 (Sperrung der Margarete-Sommer-Str. für den Kfz-Verkehr vom 3.11.2025 für ca. ein Jahr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4pc2hy2222m (nur Kfz-Verkehr)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihxae6yc7tkdnwkpk3p6kcldi2cou2vfz2rxfea5l2corukhfwnxm (Einmündungsbereich Virchowstr. ist auch betroffen; Sperrung der Fahrbahn bis Tankstelle; Sackgassenschild mit Radfahrer frei, allerdings keine weitere Ausschilderung für Radfahrer)
+#: source_id: viz2021:13.43856,52.52885,03.11.2025,06:00 (bis 23.10.2026)
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
+#: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: last_checked: 2025-11-02 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2025-11-03 (BA-Pressemitteilung zur Margarete-Sommer-Str.) vvv
-Margarete-Sommer-Str.	q4::inwork 12802,13813 12707,13706
+Margarete-Sommer-Str.	q4::inwork 12970,13996 12874,13893 12802,13813 12707,13706
 Virchowstr.	q2::inwork 12707,13706 12640,13814
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 3792,
@@ -6873,7 +6877,18 @@ Virchowstr.	q2::inwork 12707,13706 12640,13814
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023) (inaktiv)
+#: note: 2025er-Sperrung laut rbb
+# REMOVED ---	q4::inwork 9417,6063 9339,6076 9321,6079
+	q4::inwork 9321,6079 9212,6096
+',
+         'from' => 1762124400,
+         'id' => 3878,
+         'text' => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Theodorstr., Sperrung, vom 04.11.2025 bis 24.11.2025',
+         'type' => 'handicap',
+         'until' => 1764025199
+       },
        undef,
        undef,
        undef,
@@ -6924,7 +6939,44 @@ Bahnbrücke	q4::inwork 22431,6068 22467,6135
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
+#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
+#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
+#: source_id[inactive]: bvg2021:240#BVG326189_0
+#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
+#: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
+#: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
+#: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
+#: source_id: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
+#: source_id: viz2021:13.483638,52.502149,04.04.2025,09:00 (Sperrung auch für den Radverkehr, aber nicht für den Fußverkehr, bis 14.04.2025) (inaktiv)
+#: source_id: viz2021:13.483638,52.502149,04.04.2025,07:00 (bis 14.04.2025) (inaktiv)
+#: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (Gegenverkehrsregelung, bis 31.05.2025) (bis 31.07.2025) (inaktiv)
+#: source_id: viz2021:13.48146,52.50203,15.04.2025,14:15 (Gegenverkehrsregelung, bis 31.05.2025) (inaktiv)
+#: source_id: viz2021:13.48146,52.50203,03.11.2025,06:00 (bis 22.11.2025)
+#: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1858351927509365099 (nur Kfz-Verkehr)
+#: osm_watch: way id="198589911" version="23"
+# REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
+# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
+# REMOVED --- #: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden; am 2025-04-04 ebenfalls zwei Schutztunnel, deshalb q4 -> q3
+#: note: keine offizielle Führung für Radfahrer; nur der nördliche Gehweg ist passierbar, aber dieser scheint relativ breit und wenig benutzt zu sein; ggfs. Bordstein am westlichen Ende
+#: last_checked: 2025-11-03
+#: next_check: 2025-11-22 (VIZ-Verkehrsmeldung)
+	q3::inwork 15793,10814 15856,10821 15932,10830
+',
+         'from' => 1762124400,
+         'id' => 3886,
+         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 03.11.2025 bis 22.11.2025',
+         'type' => 'handicap',
+         'until' => 1763852399
+       },
        undef,
        undef,
        undef,
@@ -7142,11 +7194,11 @@ Alte Jakobstr.	q4::inwork; 10815,11662 10721,11639
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1761865200,
+         'from' => 1775167200,
          'id' => 3956,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 1.11.2025 bis 2.11.2025',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 4.4.2026 bis 6.4.2026',
          'type' => 'handicap',
-         'until' => 1762124399
+         'until' => 1775512799
        },
        undef,
        undef,
@@ -8692,7 +8744,8 @@ Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
-#: source_id: viz2021:13.53352,52.52323,08.10.2025,06:00 (Gegenverkehrsregelung, bis 30.11.2025)
+#: source_id: viz2021:13.53352,52.52323,08.10.2025,06:00 (Gegenverkehrsregelung, bis 30.11.2025) (inaktiv)
+#: source_id: viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 31.12.2025)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -8986,7 +9039,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-10-23
+#: last_checked: 2025-11-03
 #: check_frequency: 30d
 #: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -9151,7 +9204,21 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
+#: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
+#: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
+#: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum)
+#: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
+#: last_checked: 2025-11-03 (VIZ-Verkehrsmeldung)
+	q3::inwork 12627,19317 12457,19248
+',
+         'from' => 1750748520,
+         'id' => 4371,
+         'text' => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        {
@@ -9548,7 +9615,7 @@ Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,96
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-03
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9756,7 +9823,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-03
 	q4::inwork 14641,10552 14608,10409 14558,10264
 ',
          'from' => undef,
@@ -9794,19 +9861,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
-#: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
-#: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025)
-	q4::inwork; 17916,5675 18013,5627
-',
-         'from' => 1759010400,
-         'id' => 4454,
-         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 29.09.2025 bis 03.11.2025',
-         'type' => 'handicap',
-         'until' => 1762210799
-       },
+       undef,
        {
          'data' => '#: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
@@ -9874,22 +9929,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
          'type' => 'handicap',
          'until' => 1764889199
        },
-       {
-         'data' => '#: next_check_id: A100-RINGBAHNBRUECKE-2025
-#: by: https://www.morgenpost.de/berlin/article410184104/dreieck-funkturm-grosse-sperrungen-fuer-ende-oktober-angekuendigt.html
-#: by: https://www.tagesspiegel.de/berlin/autobahnbrucke-in-berlin-wird-abgerissen-grosssperrung-und-massive-verkehrseinschrankungen-am-dreieck-funkturm-ab-ende-oktober-14511032.html
-#: by: https://entwicklungsstadt.de/ringbahnbruecke-sperrungen-rund-um-die-a100-und-a115-angekuendigt/
-#: by: https://viz.berlin.de/aktuelle-meldungen/umfangreiche-sperrungen-am-autobahndreieck-funkturm/
-#: by: https://www.tagesspiegel.de/berlin/79-stunden-sperrungen-umleitungen-am-dreieck-funkturm-wegen-bruckenarbeiten-14690588.html
-	2::inwork 2104,10494 2086,10552 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
-	2::inwork 2033,10613 2090,10576 2117,10495
-',
-         'from' => 1761771600,
-         'id' => 4463,
-         'text' => 'Halenseestr.: Abriss der Brücke Halenseestr. Ost, Sperrung, vermutlich sind auch Radfahrer betroffen, vom 30.10.2025 22:00 bis 03.11.2025 05:00',
-         'type' => 'gesperrt',
-         'until' => 1762142400
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:386176/72 viz2021:13.38535,52.52873, (bis 31.10.2025) (bis 14.11.2025)
 #: note: laut rbb auch für Radverkehr; Umleitung ist eingerichtet
@@ -9908,7 +9948,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib6xakrcudbjnss6lcxcjqe6l7riqscbfw7jqibwzw2vtetkhm7kq@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifikftud5lbc4zhtz5kjrx4fyvomsalwvil26zy5ff6mpmqnqf7tm@jpeg
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
-#: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv)
+#: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025)
 #: also_indoor: traffic (T,G,H,W)
 #: last_checked: 2025-11-01 (traffic) vvv
 #: check_frequency: 14d vvv
@@ -10107,17 +10147,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
          'type' => 'gesperrt',
          'until' => 1763740800
        },
-       {
-         'data' => '#: source_id: LMS-BR:388034/72 viz2021:13.276434,52.512155,27.10.2025,06:00 (bis 19.12.2025)
-#: note: laut rbb nur Richtung Norden
-	q4::inwork; 1787,11509 1732,11667 1747,11719
-',
-         'from' => 1761454800,
-         'id' => 4484,
-         'text' => 'Soorstr.: Bauarbeiten zwischen Fredericiastr. und Knobelsdorffstr., Sperrung Richtung Spandauer Damm, evtl. sind auch Radfahrer betroffen, vom 27.10.2025 06:00 bis 19.12.2025 20:00',
-         'type' => 'handicap',
-         'until' => 1766170800
-       },
+       undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
@@ -10137,13 +10167,14 @@ Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
        },
        {
          'data' => '#: source_id: LMS-BR:381146/72 viz2021:13.30594,52.52464, (bis 03.12.2025)
+#: source_id: viz2021:13.306215,52.524639,03.11.2025,07:00 (bis 19.12.2025)
 	q4::inwork 3534,13098 3711,13098
 ',
          'from' => 1761675773,
          'id' => 4486,
-         'text' => 'Nordhauser Str.: Bauarbeiten zwischen Sömmeringstr. und Mierendorffplatz, Sperrung, evtl. sind auch Radfahrer betroffen, bis 02.12.2025 18:00',
+         'text' => 'Nordhauser Str.: Bauarbeiten zwischen Sömmeringstr. und Mierendorffplatz, Sperrung, evtl. sind auch Radfahrer betroffen, bis 19.12.2025',
          'type' => 'handicap',
-         'until' => 1764716400
+         'until' => 1766160000
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1610900.php
@@ -10157,13 +10188,14 @@ Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251101
+#: source_id: viz2021:13.47869,52.47755,03.11.2025,06:00 (bis 14.11.2025)
 	q4::inwork 15869,8355 15761,8257 15708,8212 15692,8198 15557,8077
 ',
          'from' => 1762038000,
          'id' => 4488,
          'text' => 'Dammweg: Sanierung der Fahrbahn zwischen Köpenicker Landstraße und Neue Krugallee, Sperrung, vom 3.11.2025 bis Mitte November 2025 ',
          'type' => 'handicap',
-         'until' => 1763247599
+         'until' => 1763161199
        },
        {
          'data' => '#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
@@ -10210,6 +10242,16 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'text' => 'Mauerweg an der Boyenstr.: Leitungsarbeiten, Sperrung, voraussichtlich bis August 2026',
          'type' => 'gesperrt',
          'until' => 1788213600
+       },
+       {
+         'data' => '#: source_id: LMS-BR:388778/72 viz2021:13.316323,52.489331,03.11.2025,07:00 (bis 05.12.2025)
+	q4::inwork 4495,9184 4517,9401
+',
+         'from' => 1762063200,
+         'id' => 4492,
+         'text' => 'Sächsische Str.; Bauarbeiten zwischen Wegenerstr. und Hohenzollerndamm, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.11.2025 07:00 bis 05.12.2025 17:00',
+         'type' => 'handicap',
+         'until' => 1764950400
        }
      
 );

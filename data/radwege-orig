@@ -1651,12 +1651,15 @@ Radweg stellenweise noch sichtbar, aber durch Baumscheiben unterbrochen	RW0; 111
 asphaltiert	RW1; 19181,13485 19192,13350
 # 
 #: by: https://entwicklungsstadt.de/lehrter-campus-weiteres-grundstueck-am-berliner-hauptbahnhof-wird-bebaut/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4pf4wjedk2m (bis 2027)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia5nvrd3wxnnwwbw6stlnxi4vh4oagqnwu7bwn3f7hkaqmtykoas4@jpeg
 #: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025; mittlerweile bis 31.12.2024
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
-#: last_checked: 2025-08-12 (mapillary)
+#: source_id: viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
+#: last_checked: 2025-11-03 (VIZ-Verkehrsmeldung)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-01-31 (ex-VIZ-Verkehrsmeldung)
+#: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
 provisorische Radspur	RW4; 7759,13246 7816,13276 7842,13292 7901,13324
 # 
@@ -3269,7 +3272,7 @@ provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beerman
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2025-10-23
+#: last_checked: 2025-11-03
 #: next_check: 2025-12-31
 #: valid: -20251231
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
@@ -3278,7 +3281,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-03
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3289,14 +3292,14 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-03
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2025-10-23
+#: last_checked: 2025-11-03
 #: next_check: 2025-12-31
 #: valid: -20251231
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
@@ -3834,10 +3837,12 @@ neu asphaltiert	RW2;RW2 16720,6845 16747,6813 16805,6747
 	RW2;RW2 16805,6747 16838,6708
 	RW1;RW1 16507,7254 16406,7430 16144,7882 16003,8119 15869,8355 15714,8633 15591,8848
 holpriges und teilweise enges Verbundsteinpflaster, teilweise zugewachsen, Q2+	RW1;RW1 7368,14573 7314,14599 7167,14666 6940,14750 6847,14735 6572,14639 6288,14661
-vorhandener Radweg ist abgesperrt	RW0; 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831
-#: note: hier ist kein Radweg mehr
-	RW0; 6849,14831 6929,14845 7000,14832
+# REMOVED (Rückbau des Radwegs im Oktober/November 2025) --- vorhandener Radweg ist abgesperrt	RW0; 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831
+# REMOVED (hier ist kein Radweg mehr) ---	RW0; 6849,14831 6929,14845 7000,14832
+#: next_check_id: NORDUFER-2025
+#: XXX wird auch dieser Abschnitt des alten Radwegs vollständig zurückgebaut?
 #: note: leider wurde die Absperrung an der Samoastr. vergessen --- in der Mitte des Radwegabschnitts fährt man in eine Sandgrube
+#: next_check: 2026-06-20
 	RW0; 7000,14832 7129,14787
 	RW1; 7156,14763 7236,14729
 Verbundsteinpflaster	RW1; 5736,15098 5848,14977 5984,14819
