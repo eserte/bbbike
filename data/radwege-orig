@@ -1729,7 +1729,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-11-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -1749,7 +1749,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="823635969" version="26"
 #: osm_watch: way id="4615746" version="53"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-11-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -1865,12 +1865,15 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2025-11-02 (webcam)
+#: last_checked: 2025-11-01 (mapillary)
 #: check_frequency: 21d
 	RW0; 14174,7505 14305,7415
-überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 14305,7415 14323,7403 14334,7395 14369,7376
-	RW1; 14369,7376 14379,7372 14430,7348 14530,7301
-	RW2; 14530,7301 14617,7243
+#: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) war eine Busspur für Radfahrer freigegeben
+neues Verbundsteinpflaster	RW2; 14305,7415 14323,7403 14334,7395 14369,7376
+#: historical_note: früher (vor der A100-Eröffnung) keine Benutzungspflicht, vor dem A100-Bau schlechteres Pflaster
+neues Verbundsteinpflaster	RW2; 14369,7376 14379,7372 14430,7348
+alte Gehwegplatten, Bord gegen Gehweg	RW2; 14430,7348 14530,7301
+Verbundsteinpflaster	RW2; 14530,7301 14617,7243
 	RW1; 14015,7631 13919,7707
 	RW1; 14617,7243 14530,7301
 	RW1;RW2 14617,7243 14507,7146 14344,7003
@@ -3566,7 +3569,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="9"
-#: last_checked: 2025-10-23 vvv
+#: last_checked: 2025-11-04 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -7891,12 +7894,8 @@ Grünbeschichtung	RW4; 15010,12855 15098,12849
 #: next_check_id: SCHEFFEL-2024
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article410247971/meilenstein-nach-acht-jahren-planung-lichtenberg-eroeffnet-radwege.html (Eröffnung am 4.11.2025)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1611323.php (Anradeln am 4.11.2025)
-#: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2025-10-17
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-11-04 (MoPo)
-asphaltiertes Straßenbahnkap	RW1; 15098,12849 15117,12846 15169,12839
-relativ breit, Grünbeschichtung	RW3; 15169,12839 15233,12829 15357,12813
+asphaltiertes Straßenbahnkap	RW2; 15098,12849 15117,12846 15169,12839
+relativ breit, Grünbeschichtung	RW4; 15169,12839 15233,12829 15357,12813
 relativ breit, Grünbeschichtung	RW4; 15357,12813 15367,12815 15417,12823
 asphaltiertes Straßenbahnkap	RW2; 15417,12823 15469,12831
 Grünbeschichtung	RW4; 15469,12831 15516,12838
@@ -7907,9 +7906,8 @@ Grünbeschichtung	RW4; 15417,12823 15367,12815 15357,12813
 Grünbeschichtung	RW4; 15357,12813 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
 #: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2025-10-17
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2025-11-04 (MoPo)
+#: last_checked: 2025-11-04 (fehlt noch!)
+# REMOVED --- #: check_frequency: 14d --- #: next_check: 2025-11-04 (MoPo)
 Grünbeschichtung, Poller	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar
 Grünbeschichtung	RW3; 15010,12855 14940,12843
@@ -8628,7 +8626,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17963,6313
 #: XXX wird es (teilweise?) eine Grünbeschichtung geben? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 # REMOVED (deleted) #: osm_watch: way id="26708088" version="38"
-#: osm_watch: way id="671329663" version="18"
+#: osm_watch: way id="671329663" version="19"
 #: last_checked: 2025-10-03 (mapillary) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2023-12-04 vvv
@@ -8639,7 +8637,7 @@ Radspur	RW4; 17945,6788 17962,6674
 # REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17985,6480 17991,6431
 # REMOVED --- provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17985,6480 17991,6431
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="17"
+#: osm_watch: way id="671329664" version="18"
 # REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17991,6431 17985,6480 17962,6674
 # REMOVED (mittlerweile komplett Radspur und war an einem So frei) --- #: note: erste Meter Gehweg für Radfahrer frei, dann Radspur mit Gelbmarkierung, wird aber durchgängig von parkenden Autos ignoriert
 	RW4; 17991,6431 17985,6480 17962,6674

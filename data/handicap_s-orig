@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-04
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -43,7 +43,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-11-02 vvv
+#: last_checked: 2025-11-04 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="7"
@@ -1646,8 +1646,8 @@ Volkspark Friedrichshain: kurze Rampe an der Friedenstr.	q3 12244,13240 12236,13
 Volkspark Friedrichshain: Fuﬂg‰nger	q3 12369,13209 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
 #: note: offizieller Radweg
 Volkspark Friedrichshain: Fuﬂg‰nger	q2 12141,13609 12012,13599 12038,13685
-#: note: offizieller Radweg
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12970,13996
+#: note: kein offizieller Radweg; sieht aus wie ein Parkweg, liegt aber auﬂerhalb der Einfriedung des Parks
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12970,13996
 #: note: offizieller Radweg
 Volkspark Friedrichshain: Fuﬂg‰nger, flache enge Rampe	q4 12058,13403 12040,13429 12060,13422
 # REMOVED (-> Treppe + Rampe) --- #: XXX ist hier tats‰chlich eine Rampe oder nur eine Treppe? --- (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12382,13097 12380,13120

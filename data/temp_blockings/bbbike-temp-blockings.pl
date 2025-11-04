@@ -9540,9 +9540,10 @@ EOF
 	2::inwork 14641,10552 14490,10610
 EOF
      },
-     { from  => 1186696800, # 2007-08-10 00:00
-       until => 1187042400, # 2007-08-14 00:00
-       text  => 'K 6153 AS Friedersdorf-Königs Wusterhausen Bahnübergang in der OL Kablow Gleisbauarbeiten Vollsperrung 11.08.2007-13.08.2007 ',
+     { from  => 1762923600, # 2025-11-12 06:00, # 1186696800, # 2007-08-10 00:00
+       until => 1763233200, # 2025-11-15 20:00, # 1187042400, # 2007-08-14 00:00
+#      text  => 'K 6153 AS Friedersdorf-Königs Wusterhausen Bahnübergang in der OL Kablow Gleisbauarbeiten Vollsperrung 11.08.2007-13.08.2007 ',
+       text  => 'Kablow: Bauarbeiten am Bahnübergang, Sperrung, evtl. sind auch Radfahrer betroffen, 13.11.2025 06:00 Uhr bis 15.11.2025 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 33120,-10967 32827,-11406 32725,-11546
@@ -21174,10 +21175,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-04 00:00:00"), # 1336255200, # 2012-05-06 00:00
-       until => $isodate2epoch->("2025-12-31 18:00:00"), # undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
+       until => $isodate2epoch->("2025-12-20 23:59:59"), # undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #      text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #      text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., bis Anfang November 2025, voraussichtlich wird bis Dezember 2025 verlängert',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Dezember 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
@@ -21188,7 +21189,7 @@ EOF
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025)
+#: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025)
 #: osm_watch: way id="152466403" version="23"
 #: osm_watch: way id="1424980083" version="2"
 #: osm_watch: way id="1082710233" version="5"
@@ -40391,9 +40392,10 @@ Richtung Norden	q2::inwork; 14076,11057 14096,11134 14134,11272
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1694796882, # XXX
+       until => $isodate2epoch->("2026-10-31 23:59:59"), # undef, # 1694796882, # XXX
 #      text  => 'Virchowstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Margarete-Sommer-Str.: Bauarbeiten, Sperrung der Fahrbahn, außerdem ein Abschnitt der Virchowstr. gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Margarete-Sommer-Str.: Bauarbeiten, Sperrung der Fahrbahn, außerdem ein Abschnitt der Virchowstr. gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Margarete-Sommer-Str./Virchowstr.: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis Oktober 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: note: alte Sperrung von 2023
@@ -40412,11 +40414,13 @@ EOF
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-02 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2025-11-03 (BA-Pressemitteilung zur Margarete-Sommer-Str.) vvv
-Margarete-Sommer-Str.	q4::inwork 12970,13996 12874,13893 12802,13813 12707,13706
-Virchowstr.	q2::inwork 12707,13706 12640,13814
+#: last_checked: 2025-11-04 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2026-10-23 (Halteverbotsschilder) vvv
+#: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
+Margarete-Sommer-Str.	2::inwork 12970,13996 12874,13893 12802,13813 12707,13706
+#: note: bis zur Kniprodestr. gesperrt, allerdings könnte die Benutzung des Hochbords geduldet sein
+Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -41571,8 +41575,11 @@ EOF
        text  => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Theodorstr., Sperrung, vom 04.11.2025 bis 24.11.2025',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251103 (2025er-Sperrung)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4rsvjcrn22c
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4gbzwoqfzfhov3n3x3wfcpwsvgivjxw2idqdjtbrnto6ta7fy5q@jpeg (gesperrter Bereich etwa 45m lang)
 #: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023) (inaktiv)
-#: note: 2025er-Sperrung laut rbb
+#: source_id: viz2021:13.38474,52.46081,04.11.2025,05:00 (bis 24.11.2025)
 # REMOVED ---	q4::inwork 9417,6063 9339,6076 9321,6079
 	q4::inwork 9321,6079 9212,6096
 EOF
@@ -41728,17 +41735,21 @@ EOF
 #: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
 #: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
 #: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
-#: source_id: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
 #: source_id: viz2021:13.483638,52.502149,04.04.2025,09:00 (Sperrung auch für den Radverkehr, aber nicht für den Fußverkehr, bis 14.04.2025) (inaktiv)
 #: source_id: viz2021:13.483638,52.502149,04.04.2025,07:00 (bis 14.04.2025) (inaktiv)
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (Gegenverkehrsregelung, bis 31.05.2025) (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.48146,52.50203,15.04.2025,14:15 (Gegenverkehrsregelung, bis 31.05.2025) (inaktiv)
 #: source_id: viz2021:13.48146,52.50203,03.11.2025,06:00 (bis 22.11.2025)
+#: source_id: bvg2024:194#HIM_FREETEXT_304347 (Verlegung der Haltestelle ab 3.11.2025, evtl. wegen möglicher Bauarbeiten in der Nöldnerstr.?)
+#: source_id: bvg2024:194#HIM_FREETEXT_304348 (s.o.)
+#: source_id[inactive]: bvg2024:396#HIM_FREETEXT_304350 (s.o.) (vor Anfang inaktiv)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1858351927509365099 (nur Kfz-Verkehr)
-#: osm_watch: way id="198589911" version="23"
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251101 (Erneuerung der Fahrbahn vom 3.11.2025 für ca. drei Wochen, Sperrung nur für Kfz-Verkehr?)
+#: osm_watch: way id="198589911" version="25"
 # REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
 # REMOVED --- #: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden; am 2025-04-04 ebenfalls zwei Schutztunnel, deshalb q4 -> q3
@@ -42279,7 +42290,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-09-23 00:00:00"), # $isodate2epoch->("2024-07-29 00:00:00"), # 1695531600, # 2023-09-24 07:00
-       until => $isodate2epoch->("2025-11-04 23:59:59"), # 1734466847, # $isodate2epoch->("2024-12-20 17:00:00"), # 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
+       until => 1762284959, # $isodate2epoch->("2025-11-04 23:59:59"), # 1734466847, # $isodate2epoch->("2024-12-20 17:00:00"), # 1699476063, # undef, # 1698681600, # 2023-10-30 17:00
 #      text  => 'Neue Roßstr.: Bauarbeiten, Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, vom 25.09.2023 07:00 bis 30.10.2023 17:00, evtl. wird verlängert',
 #      text  => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Annenstr. zwischen Wallstr. und Alte/Neue Jakobstr. gesperrt, auch Radfahrer sind betroffen, bis 01.09.2024',
 #      text  => 'Neue Roßstr.: Bauarbeiten, kurzer Abschnitt Richtung Fischerinsel zwischen Alte/Neue Jakobstr. und Wallstr. gesperrt, auch Radfahrer sind betroffen, geplant bis 20.12.2024',
@@ -42293,7 +42304,7 @@ EOF
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_235145 (kein Endedatum)
 #: source_id[inactive]: bvg2024:147#HIM_FREETEXT_235146 (kein Endedatum)
 #: source_id: viz2021:13.408777,52.511999,29.07.2024,08:00 (bis 20.12.2024) (vorfristig inaktiv)
-#: source_id: viz2021:13.40755,52.5098,23.09.2025,07:00 (bis 17.10.2025) (bis 04.11.2025)
+#: source_id: viz2021:13.40755,52.5098,23.09.2025,07:00 (bis 17.10.2025) (bis 04.11.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1817777068144468443
 #: by: https://pbs.twimg.com/media/GTaZL-gWwAEJYDd?format=jpg&name=large
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250922 (Alte Jakobstr.)
@@ -45450,10 +45461,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-10-16 00:00:00"), # 1729720800, # 2024-10-24 00:00
-       until => $isodate2epoch->("2026-10-19 20:00:00"), # 1730069999, # 2024-10-27 23:59
+       until => $isodate2epoch->("2025-10-19 20:00:00"), # 1730069999, # 2024-10-27 23:59
        periodic => 1,
        recurrences => [["yearly", days => 16, months => 10]],
-       text  => 'Köpenicker Herbstspektakel: Luisenhain kann vom 17. Oktober 2025 bis 19. Oktober 2025 gesperrt sein',
+       text  => 'Köpenicker Herbstspektakel: Luisenhain kann vom 17.10.2025 bis 19.10.2025 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/8521846-2229501-koepenicker-herbstspektakel.html
@@ -46804,7 +46815,7 @@ EOF
 #: osm_watch: way id="1309204624" version="1"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-08-27
+#: last_checked: 2025-10-18 (luftbildsuche)
 #: check_frequency: 90d (traffic check)
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 	q3::inwork; 23251,12146 23017,12177
@@ -50479,6 +50490,7 @@ EOF
 #: by: https://entwicklungsstadt.de/ringbahnbruecke-sperrungen-rund-um-die-a100-und-a115-angekuendigt/
 #: by: https://viz.berlin.de/aktuelle-meldungen/umfangreiche-sperrungen-am-autobahndreieck-funkturm/
 #: by: https://www.tagesspiegel.de/berlin/79-stunden-sperrungen-umleitungen-am-dreieck-funkturm-wegen-bruckenarbeiten-14690588.html
+#: by: https://www.tagesspiegel.de/berlin/abrissarbeiten-an-autobahnbrucke-beendet-79-stunden-sperrung-am-dreieck-funkturm-ist-aufgehoben-14727629.html
 	2::inwork 2104,10494 2086,10552 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 	2::inwork 2033,10613 2090,10576 2117,10495
 EOF
@@ -50776,6 +50788,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1610900.php
+#: source_id: viz2021:13.343271,52.41181,04.11.2025,07:00 (bis 19.12.2025)
 	q4::inwork 6446,584 6582,600
 EOF
      },
