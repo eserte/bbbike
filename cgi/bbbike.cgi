@@ -45,7 +45,7 @@ BEGIN {
 	     "$FindBin::RealBin/BBBike", # weitere Alternative
 	     "$FindBin::RealBin/BBBike/lib",
 	     "$FindBin::RealBin",
-	     ($ENV{BOTCHECKER_JS_ENABLED} && $ENV{SERVER_NAME} =~ m{^bbbike-timesink\.} ? "$FindBin::RealBin/../../../../../botchecker" : ()),
+	     ($ENV{BOTCHECKER_JS_ENABLED} && $ENV{SERVER_NAME} =~ m{^(bbbike\.v\.|bbbike-timesink\.)} ? "$FindBin::RealBin/../../../../../botchecker" : ()),
 	    );
     }
 }
