@@ -397,7 +397,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-05
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -472,10 +472,10 @@ B179/Fichtestr.	X::inwork 26138,-12596
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten) (inaktiv)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2025-10-31 (okas) vvv
+#: last_checked: 2025-11-05 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
-#: valid: -20251231 vvv
+#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung; laut DB bis 2027 (für valid genommen)) vvv
+#: valid: -20271231 vvv
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork::alternating 21984,6317
 Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating  22000,6245
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
@@ -3942,7 +3942,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="9962290101" version="3"
 	X::inwork 9286,12886
 #: note: war am 2023-12-23 und 2023-12-29 ausgeschaltet, am 2024-01-03 und danach wieder an
-#: osm_watch: node id="6583929470" version="1"
+#: osm_watch: node id="6583929470" version="3"
 	X::inwork 9475,12365
 # REMOVED (nicht mehr gesehen) --- X::inwork 9343,12464
 #: check_frequency ^^^
@@ -4140,7 +4140,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2025-11-01 (mapillary)
+#: last_checked: 2025-11-05
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 

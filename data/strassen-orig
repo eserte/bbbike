@@ -3365,7 +3365,7 @@ Königsheideweg	NH 17516,4657 17676,4540 17794,4443
 (Königsheide - Johannisthaler Chaussee)	NN 16497,5323 16305,5152
 (Königsheide - Südostallee)	NN 16673,5488 16740,5549 16927,5725 17024,5816
 Eibenweg	N 17364,5094 17378,5195 17365,5271 17355,5322
-(Königsheideweg - Weststr.)	NN 17115,4757 17129,4837 17173,4902
+(Königsheideweg - Weststr.)	NN 17115,4757 17132,4852 17173,4902
 Ellernweg	N 17173,4902 17303,4824 17428,4792 17542,4772
 Weststr. (Johannisthal)	N 17173,4902 17291,5045 17315,5109
 #: note: der nördliche Abschnitt heißt bei Google "Im Brombeerwinkel", aber laut http://www.luise-berlin.de/strassen/bez15h/i38.htm existiert dieser Straßenname seit ca. 1980 nicht mehr
@@ -6336,7 +6336,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="8"
-#: last_checked: 2025-07-02
+#: last_checked: 2025-11-05
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18441,4600 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -11148,7 +11148,7 @@ Schattenweg	NN 19928,319 19897,292 19865,263 19806,206 19691,107
 Renettenweg	N 19691,107 19593,141 19512,169 19471,184
 Pfirsichweg (Altglienicke)	N 19663,222 19544,259
 Apfelweg (Altglienicke)	N 19512,169 19544,259 19591,394
-Mohnweg (Altglienicke)	N 19470,453 19591,394 19624,377 19652,366 19728,362 19785,360 19821,358 19843,357 19895,355 19921,355 20035,348 20098,359 20214,375 20267,375
+Mohnweg (Altglienicke)	N 19470,453 19537,420 19591,394 19624,377 19652,366 19728,362 19785,360 19821,358 19843,357 19895,355 19921,355 20035,348 20098,359 20214,375 20267,375
 Nelkenweg (Altglienicke)	N 19821,358 19852,437 19899,507 19933,597 19966,683
 Tulpenweg	N 19921,355 19971,434 20051,646
 Narzissenweg (Altglienicke)	N 20246,553 20206,464 20214,375
@@ -12622,7 +12622,7 @@ Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20783,-528 20781,-580 20829,-773 20814,-935
 #: XXX wird diese Straße einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verlängert?
 # REMOVED --- #: osm_watch: way id="27564863" version="23"
-#: last_checked: 2025-04-12
+#: last_checked: 2025-11-05
 #: check_frequency: 360d
 (Hufenweg Verlängerung)	N 20814,-935 20813,-941 20779,-1195
 # REMOVED (hier nun die Trasse der Rita-Maiburg-Str.) --- (Hufenweg Verlängerung)	N 20779,-1195 20775,-1224 20799,-1272 20807,-1305
@@ -16467,7 +16467,8 @@ Georgenkirchstr.	N 11842,13576 11784,13513 11703,13426 11652,13372
 #: by: http://www.berlin.de/imperia/md/images/bafriedrichshain-kreuzberg/aktuelles/pressemitteilungen/dsc_0625_200x132.nef.jpg
 Pauline-Staegemann-Str.	N 11652,13372 11589,13305
 Pauline-Staegemann-Str.	NN 11578,13310 11526,13252
-Anne-Frank-Str.	N 19507,556 19595,526 19677,498 19741,476 19852,437
+Anne-Frank-Str.	N 19507,556 19576,533 19595,526 19677,498 19741,476 19852,437
+(Anne-Frank-Carée, westlicher Weg)	NN 19576,533 19537,420
 Kunibertstr.	N 19595,526 19648,656 19660,696 19694,811
 Hassoweg	N 19677,498 19726,628 19741,671 19781,767
 Strelitzer Str.	N 9856,14204 9800,14306 9679,14511 9621,14624 9517,14785

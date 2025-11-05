@@ -792,7 +792,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: note 3949358 3
 #: osm_watch: way id="24695200" version="19"
-#: last_checked: 2025-10-31 (okas)
+#: last_checked: 2025-11-05
 #: check_frequency: 120d
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
@@ -809,9 +809,11 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 ### Moabit ###
 # 
 #: next_check_id: PERLEBERGER-2024
-#: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025)
-#: last_checked: 2025-09-04 (mapillary)
-#: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
+#: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
+#: also_indoor: traffic (T,G,H,W)
+#: last_checked: 2025-11-05 (traffic)
+#: check_frequency: 10d (traffic)
+# REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
@@ -2329,7 +2331,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch[closed]: note 4506575 2
 #: osm_watch: way id="529086013" version="4"
 #: osm_watch: way id="1377234658" version="2"
-#: osm_watch: way id="11636138" version="14"
+#: osm_watch: way id="11636138" version="15"
 #: last_checked: 2025-10-31
 #: check_frequency: 120d
 #: next_check: 2025-12-15 (Halteverbotsschilder)
@@ -5449,6 +5451,9 @@ Storkwinkel: einige Fußgänger	q3 2424,9786 2431,9784 2450,9778
 # 
 Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos	q3 11594,9604 11560,9524
 # 
+#: XXX_prog: BS (an beiden Enden)
+(Anne-Frank-Carée, westlicher Weg): gemeinsamer Geh- und Radweg, Bordsteine	q3 19576,533 19537,420
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -5629,7 +5634,7 @@ Erich-Kuttner-Str.: enge Straße	q1 14590,13560 14551,13571 14439,13600 14371,136
 #: by: Patryk (bigoudi): vvv
 #: corrected_by: srt (added "Bordstein")
 #: XXX_prog: BS an der südlichen Seite, allerdings existiert am Zebrastreifen eine Fahrbahnabsenkung
-(Königsheideweg - Weststr.): Weg durch den Park, Bordstein	q1 17115,4757 17129,4837 17173,4902
+(Königsheideweg - Weststr.): Weg durch den Park, Bordstein	q1 17115,4757 17132,4852 17173,4902
 #: confirmed_by: srt
 (Breiter Weg - Südostallee/Sterndamm): Fußgänger	q1 17601,5374 17538,5301
 #: by: ^^^

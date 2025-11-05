@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-11-01 vvv
+#: last_checked: 2025-11-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1008,7 +1008,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-10-23
+#: last_checked: 2025-11-05
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1388,7 +1388,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-11-01 vvv
+#: last_checked: 2025-11-05 vvv
 #: check_frequency: 10d (neue Radverkehrsführung?) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt+Tsp zum Ersatzneubau) vvv
@@ -1865,10 +1865,10 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2025-11-01 (mapillary)
+#: last_checked: 2025-11-05
 #: check_frequency: 21d
 	RW0; 14174,7505 14305,7415
-#: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) war eine Busspur für Radfahrer freigegeben
+#: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
 neues Verbundsteinpflaster	RW2; 14305,7415 14323,7403 14334,7395 14369,7376
 #: historical_note: früher (vor der A100-Eröffnung) keine Benutzungspflicht, vor dem A100-Bau schlechteres Pflaster
 neues Verbundsteinpflaster	RW2; 14369,7376 14379,7372 14430,7348
@@ -2110,10 +2110,10 @@ Busspur ist immer gültig	RW5; 7795,8765 8008,8771
 geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,8773 8209,8773 8298,8774
 # 
 #: note: Detmolder Str.
-#: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen)
+#: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen) (wieder in Planung) (3. Quartal 2028 - 4. Quartal 2028)
 #: XXX Sanierung der Radwege vvv
 #: last_checked: 2025-09-13 vvv
-#: next_check: 2026-12-31 (infravelo) vvv
+#: next_check: 2028-12-31 (infravelo) vvv
 	RW1;RW1 5363,8024 5325,8023 5058,8012 5048,8012
 # REMOVED (hängt nicht mehr) --- #: note: ein vergessenes Radwegschild?
 	RW1;RW1 5048,8012 4873,8007
@@ -2609,7 +2609,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: XXX Anfang 2025: der benutzungspflichtige Radweg Richtung Süden fängt wegen Hochbauarbeiten etwa 50m später an
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
-#: osm_watch: way id="142161214" version="24"
+#: osm_watch: way id="142161214" version="25"
 #: last_checked: 2025-09-22
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -3266,7 +3266,7 @@ asphaltiert, relativ breit	RW2; 14060,9574 14089,9610
 # REMOVED --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: source_id: viz2021:13.45767,52.49173,17.12.2024,19:21 (bis 20.01.2025) (am nächsten Tag bereits inaktiv) --- #: source_id: viz2021:13.45767,52.49173,28.03.2025,13:00 (bis 10.04.2025)
 #: historical_note: früher, zwischenzeitlicher Eintrag bis Mitte Mai 2025: provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt, RW2;
 #: historical_note: ganz früher sowie bis Mitte Juni 2025: Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr, RW0;
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-05
 provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beermannstr., Baken vor der Abfahrt	RW2; 14089,9610 14060,9574 14020,9524
 	RW6;RW6 15142,9931 15210,10080
 	RW6;RW6 14879,9961 14921,10047
@@ -5505,7 +5505,7 @@ Verbundsteinpflaster	RW2; 16868,13611 16866,13532
 	RW3; 16860,12861 16859,12752
 Grünbeschichtung	RW3; 16859,12752 16859,12683
 Grünbeschichtung, Leitboys	RW3; 16859,12683 16859,12613
-Grünbeschichtung, teilweise mit Leitboys	RW3; 16859,12613 16857,12600 16831,12419
+Grünbeschichtung, teilweise mit niedrigen Borden und Leitboys	RW3; 16859,12613 16857,12600 16831,12419
 	RW4; 16831,12419 16820,12339
 #: note: Siegfriedstr., Richtung Norden
 Bushaltestelle	RW3; 16820,12339 16831,12419
@@ -7851,7 +7851,7 @@ Asphalt mit Schäden	RW1; -763,15487 -692,15491 -622,15502
 # laut https://www.berliner-woche.de/treptow-koepenick/c-verkehr/rechtswidrige-verkehrsschilder-wurde-bereits-ausgetauscht_a247570 nicht mehr --- Tempo 10	RW6;RW6 15869,8355 16388,8821
 #: note: Benutzungspflicht Richtung NW erst nach 80 Metern
 	RW4;RW4 16868,5938 16485,6377 16425,6445
-Gehweg für Radfahrer frei	RW1; 16279,5170 16305,5152 16362,5112 16549,5015 16781,4910 16959,4831 17037,4794 17115,4757
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 16279,5170 16305,5152 16362,5112 16549,5015 16781,4910 16959,4831 17037,4794 17115,4757
 	RW6;RW6 18846,8616 18778,8663
 	RW4;RW4 8901,12008 8844,11984
 	RW4;RW3 8844,11984 8783,11959
@@ -9690,7 +9690,7 @@ asphaltiert	RW1;RW9 7308,9163 7363,9152
 # 
 Tempo 10	RW6;RW6 8482,18986 8644,19079
 # 
-Verbundsteinpflaster	RW2; 21171,222 21115,271
+Gehwegplatten	RW1; 21171,222 21115,271
 # 
 	RW6;RW6 21126,-273 21045,-330 21089,-378 21138,-428
 # 
