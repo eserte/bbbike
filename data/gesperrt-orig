@@ -1478,8 +1478,6 @@ Grüne Aue	1s:q3 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 (Wochenendsiedlung Kaniswall): abgesperrt	2 32902,196 32918,231 33019,292
 Bernhard-Bästlein-Str. [Wohngebiet]	1 15700,13597 15698,13765
 Weißenseer Weg [Wohngebiet]	1 15593,13768 15493,13795 15433,13957
-Weißenseer Weg [Wohngebiet]	1 15412,14014 15359,14157 15357,14213
-Landsberger Allee [Wohngebiet]	1 15357,14213 15596,14247 15666,14212 15701,14148 15710,14086
 Herzbergstr. [Wohngebiet]	1 15896,13594 15833,13596 15700,13597
 Am Gartenstadtweg	1 21592,547 21613,667
 Hermann-Dorner-Allee: Bordstein, Grünstreifen	3nocross 18374,2971 18347,3129 18395,3176
@@ -4197,13 +4195,13 @@ Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeite
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-10-23 (bahninfo)
+#: last_checked: 2025-11-03 (okas)
 #: check_frequency: 90d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
 #: osm_watch: way id="1149630679" version="6"
-#: last_checked: 2025-10-23 (bahninfo)
+#: last_checked: 2025-11-03 (okas)
 #: check_frequency: 90d
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
@@ -4990,6 +4988,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://entwicklungsstadt.de/friedrichsfelde-hier-entstehen-148-wohnungen-der-howoge/ (Fertigstellung Sommer 2026)
 #: by: https://entwicklungsstadt.de/lichtenberg-so-sehen-die-nur-strom-haeuser-in-der-lueckstrasse-aus/
 #: by: https://entwicklungsstadt.de/315-neue-wohnungen-zwei-quartiere-der-howoge-gehen-in-die-vermietung/ (Einzug ab Oktober 2025)
+#: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10244 (Durchwegung wird nicht realisiert)
 # REMOVED (deleted) --- #: osm_watch: way id="830757933" version="2"
 # REMOVED (deleted) --- #: osm_watch: way id="610818155" version="5"
 #: osm_watch: way id="1171090939" version="6"

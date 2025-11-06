@@ -3798,7 +3798,37 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/tourismus/brandenburg/veranstaltungen/7769364-3479097-weihanchtsmarkt-blauer-lichterglanz.html
+#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
+#: by: https://www.rbb24.de/panorama/beitrag/2020/10/potsdam-weihnachtsmarkt-brandenburger-strasse-abgesagt-corona.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/brandenburg/3404397-1329503-der-traditionelle-potsdamer-weihnachtsma.html
+#: by: https://berliner-abendblatt.de/berlin-news/umfrage-zu-potsdamer-weihnachtsmarkt-debatte-ueber-standort-id263078
+#: by: https://www.potsdam.de/de/veranstaltung/blauer-lichterglanz-3
+#: by: https://www.deutsche-weihnachtsmaerkte.de/weihnachtsmarkt/in/brandenburg/blauer-lichterglanz-historischer-weihnachtsmarkt-potsdam-2744.html
+#: osm_watch: node id="4474692205" version="5"
+#: tempex: before(first_advent,mo) - YYYY1230
+	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
+',
+         'from' => 1763852400,
+         'id' => 2526,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 14,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 24.11.2025 - 28.12.2025',
+         'type' => 'gesperrt',
+         'until' => 1766876400
+       },
        undef,
        undef,
        {
@@ -3863,7 +3893,46 @@ Krokusstr.	2::xmas 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html
+#: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
+#: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20240421 (vor dem Roten Rathaus)
+#: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
+#: source_id: viz2021:13.37688,52.51775,30.04.2022,12:00
+#: source_id: viz2021:13.36968,52.51571,30.04.2022,12:00
+#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
+# REMOVED (Pariser Platz) ---	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+# REMOVED (Pariser Platz) ---	2::temp 8573,12325 8540,12420
+# REMOVED (Pariser Platz) ---	2::temp 8303,12216 8344,12221 8538,12245 8592,12252
+# REMOVED (Pariser Platz) ---	2::temp 8089,12190 8214,12205
+# REMOVED (Pariser Platz) ---	3::temp 8391,12389 8344,12221 8327,12174
+# REMOVED (Pariser Platz) ---	3::temp 8327,12174 8344,12221 8391,12389
+Rathausstr.	2::temp 10599,12526 10696,12601
+Jüdenstr.	2::temp 10696,12601 10783,12502
+#: tempex ^^^
+',
+         'from' => 1777500000,
+         'id' => 2565,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 7,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              4,
+                              'start',
+                              '2021-05-03T00:00:00'
+                            ]
+                          ],
+         'text' => 'Rotes Rathaus: Veranstaltung (Kundgebung des DGB), Rathausstr. und Jüdenstr. könnten unpassierbar sein, am 1. Mai 2026',
+         'type' => 'gesperrt',
+         'until' => 1777658400
+       },
        undef,
        undef,
        undef,
@@ -5712,7 +5781,18 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 227300117 (von 2022, inaktiv)
+#: source_id: 257309325 (bis 12.04.2025) (inaktiv)
+#: source_id: 257300609 (bis 20.11.2025)
+	2::inwork 49004,64047 48516,64085 48151,64245
+',
+         'from' => 1763334000,
+         'id' => 3527,
+         'text' => 'Herzsprung: Gleisbauarbeiten am Bahnübergang, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.11.2025 06:00 bis 20.11.2025 20:00',
+         'type' => 'gesperrt',
+         'until' => 1763665200
+       },
        undef,
        undef,
        {
@@ -6626,7 +6706,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/sicherheits-plus-fur-berliner-schuler-dieses-gymnasium-in-prenzlauer-berg-erhalt-einen-asphaltweg-im-grunen-14696351.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251101 (Sperrung der Margarete-Sommer-Str. für den Kfz-Verkehr vom 3.11.2025 für ca. ein Jahr)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4pc2hy2222m (nur Kfz-Verkehr)
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihxae6yc7tkdnwkpk3p6kcldi2cou2vfz2rxfea5l2corukhfwnxm (Einmündungsbereich Virchowstr. ist auch betroffen; Sperrung der Fahrbahn bis Tankstelle; Sackgassenschild mit Radfahrer frei, allerdings keine weitere Ausschilderung für Radfahrer)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihxae6yc7tkdnwkpk3p6kcldi2cou2vfz2rxfea5l2corukhfwnxm@jpeg (Einmündungsbereich Virchowstr. ist auch betroffen; Sperrung der Fahrbahn bis Tankstelle; Sackgassenschild mit Radfahrer frei, allerdings keine weitere Ausschilderung für Radfahrer)
 #: source_id: viz2021:13.43856,52.52885,03.11.2025,06:00 (bis 23.10.2026)
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
@@ -6752,15 +6832,16 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 # REMOVED --- #: add_fragezeichen: Ist der Weg noch immer gesperrt? --- #: XXX Es scheinen Fassadenarbeiten stattzufinden; noch hat es anscheinend nichts mit der Heidekrautbahn zu tun --- #: last_checked: 2023-06-24
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
+#: note: mittlerweile laufen Rückbauarbeiten
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-09-29 (mapillary)
+#: last_checked: 2025-11-03 (okas)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 ',
          'from' => undef,
          'id' => 3827,
-         'text' => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten offiziell gesperrt, Ende der Bauarbeiten unbekannt, evtl. ist ein Umweg über das Stadler-Gelände möglich',
+         'text' => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten gesperrt, vielleicht dauerhaft, evtl. ist ein Umweg über das Stadler-Gelände möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6890,7 +6971,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251103 (2025er-Sperrung)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4rsvjcrn22c
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4gbzwoqfzfhov3n3x3wfcpwsvgivjxw2idqdjtbrnto6ta7fy5q (gesperrter Bereich etwa 45m lang)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4gbzwoqfzfhov3n3x3wfcpwsvgivjxw2idqdjtbrnto6ta7fy5q@jpeg (gesperrter Bereich etwa 45m lang)
 #: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023) (inaktiv)
 #: source_id: viz2021:13.38474,52.46081,04.11.2025,05:00 (bis 24.11.2025)
 # REMOVED ---	q4::inwork 9417,6063 9339,6076 9321,6079
@@ -7980,43 +8061,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/neukoelln/c-bauen/eingaenge-an-der-oderstrasse-werden-breiter-und-ein-neues-drehkreuz-an-der-kienitzer-entsteht_a423438
-#: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breitere-eingaenge-und-bessere-ausstattung-im-eingangsbereich-herrfurthstrasse-starten/ (bis Frühjahr 2025)
-#: by: https://www.berliner-zeitung.de/news/bauarbeiten-am-tempelhofer-feld-diese-eingangsbereiche-werden-erneuert-li.2274683
-#: by: https://www.berliner-woche.de/neukoelln/c-bauen/sperrungen-entlang-der-oderstrasse-wegen-bauarbeiten_a430388
-#: by: https://www.morgenpost.de/bezirke/neukoelln/article408742981/baustelle-am-tempelhofer-feld-das-sagen-die-neukoellner.html (bis Herbst 2025)
-#: by: https://entwicklungsstadt.de/tempelhofer-feld-arbeiten-am-eingang-crash-gate-starten/ (ab 20.05.2025)
-#: by: https://www.tempelhoferfeld.de/service-infos/presse-news/detail/arbeiten-fuer-breiteren-eingang-und-bessere-ausstattung-am-crash-gate-starten/ (ab 20.05.2025 bis Ende 2025) (mittlerweile ab 22.05.2025)
-#: by: https://entwicklungsstadt.de/tempelhofer-feld-neue-bewegungsflaechen-schaffen-raum-fuer-sport-und-begegnung/
-#: also_indoor: url https://www.tempelhoferfeld.de/eingangssituation-teilbereich-oderstrasse/
-# REMOVED --- #: XXX an anderen Eingängen an der Oderstr. werden auch noch Bauarbeiten folgen --- 
-#: add_fragezeichen: Ist der Eingangsbereich Oderstraße/Crashgate mittlerweile gesperrt?
-#: last_checked: 2025-10-29 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2025-12-31 (tempelhoferfeld website, entwicklungsstadt) vvv
-# REMOVED --- Allerstr.	2::inwork 11521,7638 11509,7636
-# REMOVED --- Okerstr.	2::inwork 11527,7530 11540,7534
-# REMOVED --- Kienitzer Str.	2::inwork 11490,7735 11504,7738
-# REMOVED --- #: osm_watch: note 4425036 1
-# REMOVED --- Herrfurthstr.	2::inwork 11472,7899 11458,7897 11421,7888 11355,7871
-# REMOVED --- Eingangsbereich Herrfurthstr.	2::inwork 11418,8015 11439,7894 11460,7802
-# REMOVED (hier nicht mehr) --- Eingangsbereich Herrfurthstr., Restarbeiten	2::inwork 11458,7897 11490,7735
-# REMOVED (hier nicht mehr) --- Weg parallel zur Oderstr.	2::inwork 11547,7432 11527,7530 11509,7636
-Crashgate Richtung Rundkurs Südwest	2::inwork 11407,7198 11598,7264 11608,7267
-Crashgate	2::inwork 11598,7264 11596,7280 11593,7317 11589,7353
-Crashgate	2::inwork 11608,7267 11596,7280 11555,7316
-# REMOVED (nicht mehr als gesperrt gelistet) --- Leinestr.	2::inwork 11558,7438 11547,7432
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4157,
-         'text' => 'Tempelhofer Feld, Eingang Oderstraße/Crashgate: wegen Bauarbeiten gesperrt (Stand Ende September 2025: Crashgate ist gesperrt)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: note: laut rbb bis 19.01.2025 (nun inaktiv)
@@ -8183,7 +8228,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
 #: also_indoor: traffic (G[zu lang],T,re-H[zu kurz],ex-W[zu kurz])
-#: last_checked: 2025-11-02 (traffic)
+#: last_checked: 2025-11-04 (mapillary)
 #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
@@ -8972,17 +9017,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.328715,52.465213,09.05.2025,09:00 (bis 17.10.2025) (inaktiv)
-#: source_id: viz2021:13.32856,52.46482,09.05.2025,09:00 (bis 17.10.2025) (bis 06.11.2025)
-	q4::inwork 5535,6521 5424,6584
-',
-         'from' => 1746687600,
-         'id' => 4327,
-         'text' => 'Peschkestr.: Anbindung an die Rheinstr. gesperrt, voraussichtlich bis 06.11.2025',
-         'type' => 'handicap',
-         'until' => 1762469999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9145,6 +9180,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
+#: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: also_indoor: traffic (none)
 #: last_checked: 2025-10-21
 #: check_frequency: 90d
@@ -9436,19 +9472,7 @@ Insterburgallee	q4::inwork 229,11213 251,11039
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.16143,52.42614,24.07.2025,07:00 (bis 06.11.2025)
-#: source_id: adac:903932502 (Wanderbaustelle, bis voraussichtlich 06.11.2025) (neue ID -> inaktiv)
-#: note: "abschnittsweise"
-# REMOVED (möglicherweise ein viel kürzerer Abschnitt) ---	q4::inwork -5893,1969 -5836,2119 -5719,2323 -5653,2481
-	q4::inwork -5653,2481 -5663,2609 -5737,2746
-',
-         'from' => 1753221600,
-         'id' => 4405,
-         'text' => 'Am Großen Wannsee: Leitungsarbeiten zwischen Koblanckstr. und Zum Heckeshorn, Sperrung, vom 24.07.2025 bis Anfang November 2025',
-         'type' => 'handicap',
-         'until' => 1762455600
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1585940.php
@@ -9812,18 +9836,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'type' => 'handicap',
          'until' => 1765839599
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
-#: source_id: viz2021:13.26475,52.41945,22.09.2025,07:00 (bis 30.04.2026) (inaktiv)
-#: source_id: viz2021:13.26475,52.41945, (bis 05.11.2025)
-	q4::inwork 1142,1350 1274,1376
-',
-         'from' => 1758405600,
-         'id' => 4451,
-         'text' => 'Laehrstr.: Anbindung Teltower Damm wegen Bauarbeiten gesperrt, vom 22.09.2025 bis voraussichtlich 05.11.2025',
-         'type' => 'handicap',
-         'until' => 1762383599
-       },
+       undef,
        undef,
        undef,
        undef,

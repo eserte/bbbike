@@ -43,7 +43,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-11-04 vvv
+#: last_checked: 2025-11-06 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="7"
@@ -392,7 +392,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="44"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-10-29 (osm)
+#: last_checked: 2025-11-06 (daf)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
 #: next_check: 2025-11-30 (weddingweiser, Abrissarbeiten)
@@ -4596,7 +4596,17 @@ Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fußgänger	q1 16894,10003 1
 Uber-Platz: Fußgängerzone	q4 13150,11101 13067,11145 12984,11194
 Uber-Platz: Fußgängerzone	q4 12990,11006 13067,11145
 (Abbestr. - Otto-Suhr-Allee): einige Fußgänger	q1 4674,12076 4608,11935 4596,11912
-(Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
+# 
+#: next_check_id: MICHELANGELO-2025
+#: note: laut Aushang 2027/2028
+#: note: evtl. ist das bereits die angekündigte Erneuerung der Fußwegeverbindung
+#: last_checked: 2025-11-06
+#: check_frequency: 60d
+#: next_check: 2027-04-01
+# XXX später: wieder aktivieren: (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
+# REMOVED (hier (noch) nicht) --- Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrungen geben?	? 13973,15259 13905,15306
+Michelangelostr. - Gürtelstr.: Bauarbeiten, Engstelle	q3::inwork 13905,15306 13809,15370 13716,15437
+# 
 #: note: früher (bis ca. 2020) für Radfahrer explizit frei, mittlerweile hängt hier ein explizites Radfahren-verboten-Schild
 An der Kieler Brücke: Fußgängerzone, Radfahren verboten	q4 7877,14504 7804,14445
 # REMOVED (zurzeit keine größeren Einschränkungen feststellbar) --- (Straße E, Innovationspark Wuhlheide): Gewerbebetriebe	q2 21233,7246 21181,7199 21243,7135
