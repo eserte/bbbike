@@ -46,7 +46,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 #: last_checked: 2025-11-06 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083527067" version="7"
+#: osm_watch: way id="1083527067" version="8"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="182614432" version="21"
@@ -129,7 +129,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="17"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-07
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-01
 # REMOVED --- Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -596,7 +596,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-10-31 vvv
+#: last_checked: 2025-11-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="17"
@@ -927,7 +927,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 ### Neukölln ###
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2025-10-20
+#: last_checked: 2025-11-07
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1043,15 +1043,15 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 # 
 ### Lichtenberg ###
 # 
-#: next_check_id: ALFREDKOWALKE-2025
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Mitte November 2025, hier nur Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lxnh2hsj23
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifwz3wmzuknwwd4xdfam555j65uqwce66iixldjvwr6lamkmawiwi@jpeg
-#: source_id: viz2021:13.51339,52.50534,20.10.2025,07:00 (bis 07.11.2025)
-#: last_checked: 2025-10-25
-#: next_check: 2025-11-15
-#: valid: -20251120
-Alfred-Kowalke-Str.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Mitte November 2025	q2-::inwork; 18061,11240 18202,11253 18229,11256 18280,11266
+# REMOVED --- #: next_check_id: ALFREDKOWALKE-2025
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Mitte November 2025, hier nur Kfz-Verkehr)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lxnh2hsj23
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifwz3wmzuknwwd4xdfam555j65uqwce66iixldjvwr6lamkmawiwi@jpeg
+# REMOVED --- #: source_id: viz2021:13.51339,52.50534,20.10.2025,07:00 (bis 07.11.2025) (inaktiv)
+# REMOVED --- #: last_checked: 2025-10-25
+# REMOVED --- #: next_check: 2025-11-15
+# REMOVED --- #: valid: -20251120
+# REMOVED --- Alfred-Kowalke-Str.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Mitte November 2025	q2-::inwork; 18061,11240 18202,11253 18229,11256 18280,11266
 # 
 # REMOVED --- #: also_indoor: traffic (ex-H,G,ex-T)
 # REMOVED --- #: source_id: viz2021:13.518258,52.528778,01.04.2025,09:44 (hier nur Kfz-Verkehr, bis 30.04.2025) (inaktiv)
@@ -3310,11 +3310,11 @@ Tigerfinkweg: Bordstein	q3 12963,19971 12952,19947
 (Weg im Acker-Park): Radfahren verboten, Bordstein an der Bergstr.	q4 9873,13872 9816,13857 9810,13866 9741,13850
 # 
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang vvv
-Park am Nordbahnhof: Fußgänger	q1 9224,14169 9147,14151 9181,14186 9175,14193 9119,14255 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
-Park am Nordbahnhof: Fußgänger	q1 9147,14151 9070,14058
-Park am Nordbahnhof: Fußgänger	q1 8913,14485 8868,14442 8825,14401
-Park am Nordbahnhof: Fußgänger	q1 9175,14193 9144,14169 9081,14232 8868,14442
-Park am Nordbahnhof: Fußgänger	q1 9119,14255 9081,14232 8992,14176
+Park auf dem Nordbahnhof: Fußgänger	q1 9224,14169 9147,14151 9181,14186 9175,14193 9119,14255 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
+Park auf dem Nordbahnhof: Fußgänger	q1 9147,14151 9070,14058
+Park auf dem Nordbahnhof: Fußgänger	q1 8913,14485 8868,14442 8825,14401
+Park auf dem Nordbahnhof: Fußgänger	q1 9175,14193 9144,14169 9081,14232 8868,14442
+Park auf dem Nordbahnhof: Fußgänger	q1 9119,14255 9081,14232 8992,14176
 #: note ^^^
 # 
 (an der Panke - Mauerweg): einige Fußgänger	q1+ 7872,14510 7884,14517 7940,14447
@@ -6176,7 +6176,7 @@ Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fußgänger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
 #: osm_watch: way id="114381362" version="16"
-#: osm_watch: way id="1100622078" version="9"
+#: osm_watch: way id="1100622078" version="10"
 #: osm_watch: way id="1100622082" version="9"
 #: last_checked: 2025-09-22 (mapillary)
 #: check_frequency: 360d

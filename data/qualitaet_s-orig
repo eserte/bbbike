@@ -129,7 +129,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="20"
-#: last_checked: 2025-10-20
+#: last_checked: 2025-11-07
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -956,7 +956,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2025-09-13
+#: last_checked: 2025-11-07
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -9279,8 +9279,9 @@ Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
 Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q0- 8482,8364 8394,8313 8333,8303 8276,8295
 Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8265,8092 8260,7911 8260,7803 8263,7611
 #: next_check_id: MUSSEHL-2025
-#: add_fragezeichen: Ist die Qualität nach den Bauarbeiten besser geworden?
-#: next_check: 2025-10-31
+#: note: kein "add_fragezeichen", unklares Ende der Bauarbeiten
+#: XXX: Ist die Qualität nach den Bauarbeiten besser geworden?
+#: next_check: 2026-02-20
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8982,8781 8926,8682 8842,8561
 Mussehlstr.: Gehwegplatten	Q0- 8842,8561 8759,8458
 Mussehlstr.: Verbundsteinpflaster	Q1+ 8759,8458 8720,8373
@@ -9694,7 +9695,7 @@ Ferdinand-Buisson-Str.: Asphalt	Q0 12332,20962 12458,21013 12562,21055 12619,210
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-1.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-2.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ferdinand-buisson-strasse_gp_2021-03-19-blatt-3.pdf
-#: osm_watch: way id="23121641" version="18"
+#: osm_watch: way id="23121641" version="19"
 #: last_checked: 2025-07-26 (website)
 #: check_frequency: 270d
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
@@ -10745,9 +10746,9 @@ Schneeammerweg: unbefestigte Straße	Q2 13085,20459 13209,20385 13334,20308
 Schneeammerweg: unbefestigte Straße	Q2 13329,20299 13420,20236
 #: note: in der Mitte kurzer Abschnitt mit wassergebundener Decke
 (Weg im Acker-Park): überwiegend asphaltiert	Q0- 9873,13872 9816,13857 9810,13866 9741,13850
-(Park am Nordbahnhof): Asphalt	Q0 8868,14442 9081,14232 9144,14169
-(Park am Nordbahnhof): wassergebundene Decke	Q1- 9144,14169 9175,14193
-(Park am Nordbahnhof - Caroline-Michaelis-Str./Mount Mitte): Beton	Q0 9119,14255 9081,14232 8992,14176
+(Park auf dem Nordbahnhof): Asphalt	Q0 8868,14442 9081,14232 9144,14169
+(Park auf dem Nordbahnhof): wassergebundene Decke	Q1- 9144,14169 9175,14193
+(Park auf dem Nordbahnhof - Caroline-Michaelis-Str./Mount Mitte): Beton	Q0 9119,14255 9081,14232 8992,14176
 (an der Panke - Mauerweg): Asphalt	Q0 7872,14510 7884,14517 7940,14447
 (an der Panke - Mauerweg): Asphalt	Q0 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573 8234,14686
 (Boyenstr. - Mauerweg): Kleinsteinpflaster	Q1 8005,14476 7996,14487
@@ -18881,10 +18882,10 @@ Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 (Schwartzkopffstr. - Gartenstr.): Kopfsteinpflaster	Q2 8839,14635 8848,14638 8938,14521 8953,14528
 #: corrected_by: srt (fester Sand -> )
 #: note: teilweise ist der Weg halb Beton, halb wassergebundene Decke
-(Park am Nordbahnhof): Beton	Q0 8913,14485 9119,14255 9175,14193 9181,14186
+(Park auf dem Nordbahnhof): Beton	Q0 8913,14485 9119,14255 9175,14193 9181,14186
 #: confirmed_by: srt
-(Park am Nordbahnhof): betonierte Rampe	Q0 9181,14186 9147,14151 9224,14169
-(Park am Nordbahnhof): betonierte Rampe	Q0 9147,14151 9070,14058
+(Park auf dem Nordbahnhof): betonierte Rampe	Q0 9181,14186 9147,14151 9224,14169
+(Park auf dem Nordbahnhof): betonierte Rampe	Q0 9147,14151 9070,14058
 #: by: ^^^
 # 
 #: by: Birgit Graffunder vvv

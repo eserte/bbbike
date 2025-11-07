@@ -4024,15 +4024,15 @@ Drängelgitter	BNP:3::trailer=10 113,7
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: next_check_id: ALFREDKOWALKE-2025
-#: last_checked: 2025-10-25 vvv
-#: next_check: 2025-11-15 vvv
-#: valid: -20251120 vvv
-Alfred-Kowalke-Str. [Mittelstreifen]: Bauarbeiten, Übergang gesperrt, voraussichtlich bis Mitte November 2025	2::inwork; 18202,11253 18200,11269
-Alfred-Kowalke-Str. [Mittelstreifen]: Bauarbeiten, Übergang gesperrt, voraussichtlich bis Mitte November 2025	3 18202,11253 18229,11256 18200,11269
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: ALFREDKOWALKE-2025
+# REMOVED --- #: last_checked: 2025-10-25 vvv
+# REMOVED --- #: next_check: 2025-11-15 vvv
+# REMOVED --- #: valid: -20251120 vvv
+# REMOVED --- Alfred-Kowalke-Str. [Mittelstreifen]: Bauarbeiten, Übergang gesperrt, voraussichtlich bis Mitte November 2025	2::inwork; 18202,11253 18200,11269
+# REMOVED --- Alfred-Kowalke-Str. [Mittelstreifen]: Bauarbeiten, Übergang gesperrt, voraussichtlich bis Mitte November 2025	3 18202,11253 18229,11256 18200,11269
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
 #: osm_watch: way id="179005464" version="11"
@@ -4334,7 +4334,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-10-28
+#: last_checked: 2025-11-07
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4493,8 +4493,8 @@ Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,90
 #: XXX gehört das hier auch zu "Kokoni One"?
 #: XXX wird vermutlich Betonpflaster sein
 #: XXX nördlicher Abschnitt vermutlich schon fertig (siehe Luftbild 2024) -> ja
-#: osm_watch: way id="1119861689" version="12"
-#: osm_watch: way id="1311919738" version="2"
+#: osm_watch: way id="1119861689" version="13"
+#: osm_watch: way id="1311919738" version="3"
 #: last_checked: 2025-08-18 (mapillary)
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 90d
@@ -4663,7 +4663,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
-#: last_checked: 2025-10-21
+#: last_checked: 2025-11-07
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4870,7 +4870,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-wird-nach-sanierung-wieder-eroeffnet-id270349 (Bernhard-Lichtenberg-Haus frühestens Ende 2025 fertig)
 #: by: https://entwicklungsstadt.de/bauprojekt-am-bebelplatz-fortschritte-beim-bernhard-lichtenberg-haus/ (geplante Fertigstellung Ende 2025)
 #: osm_watch: way id="28120501" version="13"
-#: last_checked: 2025-11-03 (daf)
+#: last_checked: 2025-11-07
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (berliner-abendblatt, entwicklungsstadt)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144

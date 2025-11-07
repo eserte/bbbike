@@ -12457,9 +12457,10 @@ EOF
 	2::inwork 23402,5483 23384,5541 23379,5559 23370,5589 23333,5710
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-11 00:00:00"), # $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00 # $isodate2epoch->("2021-08-31 00:00:00"), # 
-       until => $isodate2epoch->("2021-11-12 20:00:00"), # $isodate2epoch->("2019-11-12 14:00:00"), # 1216584000, # 2008-07-20 22:00 # $isodate2epoch->("2021-08-31 23:00:00"), # 
-       text  => 'Straße des 17. Juni und Straßen im Regierungsviertel am 12. November 2021 von 10 bis 20 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)', # kann auch sein: Großer Zapfenstreich
+     { from  => $isodate2epoch->("2025-11-11 00:00:00"), # $isodate2epoch->("2021-11-11 00:00:00"), # $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00 # $isodate2epoch->("2021-08-31 00:00:00"), # 
+       until => $isodate2epoch->("2025-11-12 18:00:00"), # $isodate2epoch->("2021-11-12 20:00:00"), # $isodate2epoch->("2019-11-12 14:00:00"), # 1216584000, # 2008-07-20 22:00 # $isodate2epoch->("2021-08-31 23:00:00"), # 
+#      text  => 'Straße des 17. Juni und Straßen im Regierungsviertel am 12. November 2021 von 10 bis 20 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)', # kann auch sein: Großer Zapfenstreich
+       text  => 'Straßen im Regierungsviertel am 12. November 2025 von 10 bis 18 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf
@@ -12467,23 +12468,31 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_48_4333_4456_online.pdf
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großen Zapfenstreichs)
-	2::temp 8424,12853 8503,12895
-	2::temp 7930,12912 8021,12832
-östl. John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-östl. Straße des 17. Juni	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
-	2::temp 8595,12066 8600,12165 8538,12245
-Große Querallee	2::temp 7816,12150 7822,12201 7836,12247 7875,12363 7945,12592
-südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_46_2869_2964_online.pdf
+## manchmal ohne Straße des 17. Juni
+#östl. Straße des 17. Juni	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
+#Yitzhak-Rabin-Str.	2::temp 8119,12414 8068,12237 8055,12186
+#östl. John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+#Große Querallee	2::temp 7816,12150 7822,12201 7836,12247 7875,12363
+#östlicher Tiergarten	2::temp 8344,12221 8391,12389 8400,12417
+#östlicher Tiergarten	2::temp 8546,12279 8391,12389 8354,12416
+#südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734
+#Ebertstr.	2::temp 8595,12066 8600,12165 8538,12245
+#Platz des 18. März	2::temp 8538,12245 8592,12252
+#nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
+Kronprinzenbrücke	2::temp 8424,12853 8503,12895
+Moltkebrücke	2::temp 7930,12912 8021,12832
+Große Querallee	2::temp 7875,12363 7945,12592
+südl. Spreeuferweg	2::temp 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
 Paul-Löbe-Allee und Verlängerungen	2::temp 7745,12603 7776,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
-Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8068,12237 8055,12186 8068,12237 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8111,13029 8110,13042
-nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
+Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8111,13029 8110,13042
 Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853
-Platz des 18. März	2::temp 8538,12245 8592,12252
-	2::temp 8252,12757 8115,12912
-	2::temp 8344,12221 8391,12389 8400,12417
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
-	2::temp 8309,12758 8433,12753 8442,12741 8593,12742
+Konrad-Adenauer-Str. und Verlängerung	2::temp 8306,12609 8309,12758 8304,12938
+Panoramaweg	2::temp 8424,12853 8370,12902 8304,12938 8235,12945 8168,12945 8116,12938 8050,12893 8030,12857 8021,12832
+Friedrich-Ebert-Platz	2::temp 8554,12593 8540,12420
+Spreebogenpark	2::temp 8252,12757 8115,12912
+Scheidemannstr.	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
+Marie-Elisabeth-Lüders-Steg - Otto-von-Bismarck-Allee	2::temp 8309,12758 8433,12753 8442,12741 8593,12742
 # REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8735,12780 8589,12772 8544,12772
 # REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
 # REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8544,12772
@@ -16069,7 +16078,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Park am Nordbahnhof: im Sommerhalbjahr zwischen 6.30 und 22.00 Uhr geöffnet, im Winterhalbjahr zwischen 7.30 und 19.00 Uhr',
+       text  => 'Park auf dem Nordbahnhof: im Sommerhalbjahr zwischen 6.30 und 22.00 Uhr geöffnet, im Winterhalbjahr zwischen 7.30 und 19.00 Uhr',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -20325,18 +20334,20 @@ EOF
 	2::temp 9656,12031 9666,11935
 EOF
      },
-     { from  => $isodate2epoch->("2014-07-07 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-07-10 19:00:00"),
-       text  => 'Platz der Luftbrücke (Tempelhof): Straße vollständig zwischen Tempelhofer Damm und Columbiadamm wegen einer Veranstaltung (Bread & Butter) gesperrt (8. bis 10. Juli 2014)',
-       periodic => 1,
-       recurrences => [#['yearly', days => 14, months => 1], # XXX January 2015 is cancelled
-                       #['yearly', days => 1, months => 7], # XXX Juli 2015 findet zwar statt, aber geändertes Konzept
-	              ],
+     { from  => $isodate2epoch->("2025-11-06 00:00:00"), # $isodate2epoch->("2014-07-07 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-11-16 23:59:59"), # $isodate2epoch->("2014-07-10 19:00:00"),
+#      text  => 'Platz der Luftbrücke (Tempelhof): Straße vollständig zwischen Tempelhofer Damm und Columbiadamm wegen einer Veranstaltung (Bread & Butter) gesperrt (8. bis 10. Juli 2014)',
+       text  => 'Platz der Luftbrücke: Zufahrt zum Empfangsgebäude wegen einer Veranstaltung (Nova Music Festival Exhibition) gesperrt, voraussichtlich 6.11.2025 bis 16.11.2025',
+#      periodic => 1,
+#      recurrences => [#['yearly', days => 14, months => 1], # XXX January 2015 is cancelled
+#                      #['yearly', days => 1, months => 7], # XXX Juli 2015 findet zwar statt, aber geändertes Konzept
+#              ],
        type  => 'gesperrt',
-       source_id => 'http://www.breadandbutter.com/winter2014/de/home/',
        data  => <<EOF,
-	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
-	q4::temp 9321,8607 9401,8510 9451,8548 9364,8640
+##: source_id: http://www.breadandbutter.com/winter2014/de/home/
+#Platz der Luftbrücke: Hauptfahrbahn	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
+#: by: https://www.berlin.de/tickets/ausstellungen/the-nova-music-festival-exhibition-5f3918a8-c61b-419a-b129-85996a764e18/
+Platz der Luftbrücke: Zufahrt zum Empfangsgebäude	2::temp 9321,8607 9401,8510 9451,8548 9364,8640
 EOF
      },
      { from  => undef, # 
@@ -22439,13 +22450,13 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W,T)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-10-25 (traffic)
+#: last_checked: 2025-11-07 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet?
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-10-25 (traffic)
+#: last_checked: 2025-11-07 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
@@ -29094,7 +29105,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-10-07
+#: last_checked: 2025-11-07
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -33222,7 +33233,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-10-31 (mapillary)
+#: last_checked: 2025-11-07
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -35194,16 +35205,16 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-10-14 00:00:00"), # $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2025-11-07 23:59:59"), # 1638803714, # $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
+       until => $isodate2epoch->("2025-11-10 23:59:59"), # 1638803714, # $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
 #      text  => 'Brachvogelstr./Alexandrinenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021', # -> "Radfahrer frei"
-       text  => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., offiziel ist die Fahrbahn gesperrt, voraussichtlich bis 07.11.2025',
+       text  => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., offiziell ist die Fahrbahn gesperrt, voraussichtlich bis 10.11.2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00 (inaktiv)
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen) ---	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
 #: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025) (inaktiv)
-#: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025) (bis 07.11.2025)
+#: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025) (bis 07.11.2025) (bis 10.11.2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m356f5qmh22g
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiclu2wwbebvt4nr5kzd7jmiv7uapqel7bdnwucpnxltglngf3icw4@jpeg
 #: note: Durchfahrt kann manchmal (außerhalb der Arbeitszeiten?) möglich sein, gesehen am 2025-10-31 Fri abends)
@@ -36427,7 +36438,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-10-20
+#: last_checked: 2025-11-07
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36453,7 +36464,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-10-20 vvv
+#: last_checked: 2025-11-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -37221,7 +37232,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
 # REMOVED (offen) --- #: XXX teilweise Freigabe am 3.6.2024 (voraussichtlich!) --- #: next_check: 2024-06-03 ---	q4::inwork 13996,16959 13974,16924 13870,16837
-#: osm_watch: way id="1316908799" version="3"
+#: osm_watch: way id="1316908799" version="4"
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
 #: osm_watch: way id="42990078" version="31"
@@ -41906,8 +41917,8 @@ EOF
 #      text  => 'Rosenthaler Str.: Gleisarbeiten zwischen Weinmeisterstr. und Neue Schönhauser Str., keine Freigabe für Radfahrer, außerdem Sperrung des Einmündungsbereichs Gipsstr., vom 22.11.2023 07:00 bis 09.01.2024 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten hinter der Einmündungs Neue Schönhauser Str., auch Radfahrer sind betroffen, vom 26.09.2023 06:00 bis 16.10.2023 17:00',
 # alt: text  => 'Rosenthaler Str.: Bauarbeiten zwischen Hackescher Markt und Neue Schönhauser Str., Sperrung der Fahrbahn, vom 22.08.2023 07:00 bis 15.09.2023 17:00',
-       text  => 'Rosenthaler Str.: Gleisbauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, bis 07.11.2025',
-#      text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, voraussichtlich bis Juni 2026', # diesmal Hochbauarbeiten
+#      text  => 'Rosenthaler Str.: Gleisbauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, bis 07.11.2025',
+       text  => 'Rosenthaler Str.: Bauarbeiten zwischen Neue Schönhauser Str. und Hackescher Markt, voraussichtlich bis Juni 2026', # diesmal Hochbauarbeiten
        type  => 'handicap',
        data  => <<'EOF',
 # REMOVED --- #: source_id: viz2021:13.402799,52.524086,22.08.2023,07:00 (nur Kfz-Verkehr betroffen, bis 15.09.2023) (inaktiv)
@@ -41920,8 +41931,8 @@ EOF
 #: source_id[inactive]: bvg2021:m1#BVG335286_0 (bis 10.01.2024 früh)
 #: source_id: viz2021:13.403167,52.524701,17.03.2025,07:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.403167,52.524701,09.05.2025,07:00 (hier nur Kfz-Verkehr, bis 04.06.2025) (bis 04.06.2026) (inaktiv)
-#: source_id: viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025) (inaktiv) (bis 04.06.2025)
-#: source_id: viz2021:13.40319,52.52474, (Gleisbauarbeiten, bis 07.11.2025)
+#: source_id: viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025) (inaktiv) (bis 04.06.2026)
+#: source_id: viz2021:13.40319,52.52474, (Gleisbauarbeiten, bis 07.11.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2o2qvma2k2q (Gleisbauarbeiten Oct - Nov 2025)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidm6w7deqbesf4p45eknbfejknsw6ev4dyvgqks6z4w7o6ax4gx6q@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicknnpabrsd464573rxm4pcrbhtjkynzhsbh65cwpnqkz5ukeed2i@jpeg (Umleitung für Radfahrer)
@@ -41931,9 +41942,9 @@ EOF
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
 #: last_checked: 2025-10-22
-#: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen)
-Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
-# XXX nach den Gleisbauarbeiten wiederherstellen: Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
+# REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
+#: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
+Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 # REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
@@ -42114,7 +42125,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: note: Halteverbotsschilder sogar bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-09-13
+#: last_checked: 2025-11-07
 #: check_frequency: 120d
 #: next_check: 2026-03-30
 	q4::inwork 12407,8177 12545,8209
@@ -45038,7 +45049,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-10-28 vvv
+#: last_checked: 2025-11-07 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -47091,15 +47102,18 @@ EOF
      { from  => 1736343075, # 2025-01-08 14:31
        until => undef, # 1753999200, # 2025-08-01 00:00
 #      text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und Bayernring, Fahrbahn gesperrt, vermutlich bis 31.07.2025, evtl. wird verlängert',
-       text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und General-Pape-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und General-Pape-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Loewenhardtdamm: vermutlich Bauarbeiten in Höhe Bayernring mit Sperrung, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (ex-G,T,B,A)
+#: also_indoor: traffic (re-G,W,ex-T,A)
+#: note: mittlerweile (Anfang Nov. 2025) vielleicht nur hinter dem Bayernring gesperrt
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-10-12
+#: last_checked: 2025-11-07
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-07-31 (Halteverbotsschilder)
-	q4::inwork; 8482,8364 8380,8545 8334,8655 8306,8722
+# REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
+	q4::inwork; 8380,8545 8334,8655 8306,8722
 EOF
      },
      { from  => undef, # 
@@ -49281,13 +49295,13 @@ EOF
 #: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-10-25 (traffic) vvv
+#: last_checked: 2025-11-07 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-09-02 vvv
 # REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
 Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
 Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
-#: also_indoor: traffic (G,ex-T,re-H)
+#: also_indoor: traffic (G,ex-T,ex-H)
 Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -49700,7 +49714,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-07-2025-b-96-zw-baruthmark-und-neuhof
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-08-2025-b96-baruthmark
-#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv) (bis 26.09.2025) (bis 06.10.2025) (bis 01.11.2025) (Einschränkungen des Verkehrsraums, bis 07.11.2025)
+#: source_id: LS/222-W/25/088 (bis 27.08.2025) (3. BA, bis 06.09.2025) (bis 03.09.2025) (bis 08.09.2025) (inaktiv) (bis 26.09.2025) (bis 06.10.2025) (bis 01.11.2025) (Einschränkungen des Verkehrsraums, bis 07.11.2025) (inaktiv)
 # REMOVED ---	2::inwork 16296,-30030 16267,-30111 16224,-30383 16480,-30962 16709,-31492 17625,-34981 18001,-35985 18400,-37684 18531,-38193 18540,-38360
 # REMOVED ---	2::inwork 18138,-39957 18272,-39512 18433,-38781 18540,-38360
 	2::inwork 18540,-38360 18433,-38781 18272,-39512 18138,-39957
@@ -49994,19 +50008,20 @@ EOF
      { from  => 1756245600, # 2025-08-27 00:00
        until => undef, # 1761951599, # 2025-10-31 23:59
 #      text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Oktober 2025',
-       text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Februar 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,re-T)
-#: last_checked: 2025-11-01 (traffic) vvv
-#: check_frequency: 10d vvv
-# REMOVED --- #: next_check: 2025-10-31 vvv
-#: note: Halteverbotsschilder bis 31.10.2025
+#: last_checked: 2025-11-07 vvv
+#: check_frequency: 45d vvv
+#: next_check: 2026-02-20 (Halteverbotsschilder) vvv
+#: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
 	q4::inwork 8982,8781 8926,8682
 #: note: hier auf etwa 50m Länge gesperrt
 	q3::inwork 8926,8682 8842,8561
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -50185,16 +50200,22 @@ EOF
      },
      { from  => 1757626351, # 2025-09-11 23:32
        until => undef, # 1762470000, # 2025-11-07 00:00
-       text  => 'Schreiberring: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 6.11.2025, evtl. wird verlängert',
+#      text  => 'Schreiberring: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 6.11.2025, evtl. wird verlängert',
+       text  => 'Schreiberring und Wolffring: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (ex-T,G)
 #: note: laut Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
-#: add_fragezeichen: Besteht die Sperrung des Schreiberrings noch immer?
-#: last_checked: 2025-11-05 (traffic)
-#: check_frequency: 30d
-#: next_check: 2025-11-06
-	q4::inwork 8941,8186 8861,8242 8776,8285
+#: add_fragezeichen: Besteht die Sperrung noch immer?
+#: last_checked: 2025-11-07 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2025-12-05 (Halteverbotsschilder am Wolffring) vvv
+Schreiberring	q4::inwork 8941,8186 8861,8242 8776,8285
+#: note: hier vermutlich nur Baustelleneinrichtungsfläche für die eigentlich Baustelle am Schreiberring
+Wolffring, südliche Fahrbahn	q4::inwork; 8969,8278 9032,8254
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1757626813, # 2025-09-11 23:40
@@ -50330,13 +50351,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Markgrafendamm: zwischen Stralauer Allee/Alt-Stralau und Persiusstr. offiziell für Radfahrer verboten',
+#      text  => 'Markgrafendamm: zwischen Stralauer Allee/Alt-Stralau und Persiusstr. offiziell für Radfahrer verboten',
+       text  => 'Corinthstr.: Anbindung zum Markgrafendamm gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: next_check_id: BAB100-2022
+# REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-11-05
-	q4::inwork 14641,10552 14608,10409 14558,10264
+#: last_checked: 2025-11-07
+# REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
+Corinthstr.	q4::inwork 14447,10491 14608,10409
 EOF
      },
      { from  => 1758405600, # 2025-09-21 00:00
@@ -50460,11 +50483,11 @@ EOF
 EOF
      },
      { from  => 1759726800, # 2025-10-06 07:00
-       until => 1762531200, # 2025-11-07 17:00
-       text  => 'Ludwigkirchstraße: Baustelle, von Fasanenplatz Richtung Uhlandstr. gesperrt, evtl. sind Radfahrer betroffen, vom 07.10.2025 07:00 bis 07.11.2025 17:00',
+       until => $isodate2epoch->("2025-12-19 23:59:59"), # 1762531200, # 2025-11-07 17:00
+       text  => 'Ludwigkirchstraße: Baustelle, von Fasanenplatz Richtung Uhlandstr. gesperrt, evtl. sind Radfahrer betroffen, vom 07.10.2025 bis 19.12..2025',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:385922/72 viz2021:13.32687,52.49824,07.10.2025,07:00 (bis 07.11.2025)
+#: source_id: LMS-BR:385922/72 viz2021:13.32687,52.49824,07.10.2025,07:00 (bis 07.11.2025) (bis 19.12.2025)
 	q4::inwork; 5191,10190 5017,10150
 EOF
      },
@@ -50543,12 +50566,16 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib6xakrcudbjnss6lcxcjqe6l7riqscbfw7jqibwzw2vtetkhm7kq@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifikftud5lbc4zhtz5kjrx4fyvomsalwvil26zy5ff6mpmqnqf7tm@jpeg
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
-#: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
+#: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
+#: source_id: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: also_indoor: traffic (T,G,H,W)
 #: last_checked: 2025-11-05 vvv
 #: check_frequency: 14d vvv
+#: next_check: 2025-11-10 vvv
 	q4::inwork 15807,5286 15870,5251 15828,5156
 	q4::inwork 16062,5242 15870,5251
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -50693,7 +50720,7 @@ EOF
      },
      { from  => 1761241355, # 2025-10-23 19:42
        until => 1765753200, # 2025-12-15 00:00
-       text  => 'Morusstr.: Bauarbeiten zwischen Werbellinstr. und Briesestr., Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 14.12.2025',
+       text  => 'Morusstr.: Bauarbeiten an der Einmündung Werbellinstr., Sperrung der Fahrbahn, voraussichtlich bis 14.12.2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: WERBELLINAMPEL-2025
@@ -50775,11 +50802,13 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
 #: source_id: viz2021:13.39202,52.52009,28.10.2025,07:00 (bis 02.12.2025)
+#: last_checked: 2025-11-07 vvv
 #: next_check: 2025-12-02 (VIZ-Verkehrsmeldung) vvv
 Georgenstr.	q4::inwork 9441,12670 9568,12688
 Planckstr.	q4::inwork 9435,12698 9441,12670
 Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
 #: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1761675773, # 2025-10-28 19:22
@@ -50824,8 +50853,8 @@ EOF
 #: last_checked: 2025-11-02
 #: check_frequency: 7d
 Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
-#: also_indoor: traffic (G)
-#: last_checked: 2025-11-02
+#: also_indoor: traffic (G,T)
+#: last_checked: 2025-11-07 (traffic)
 #: check_frequency: 120d
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: next_check ^^^
@@ -50871,6 +50900,25 @@ EOF
        data  => <<'EOF',
 #: by: https://marzahn-hellersdorf.com/update-vollsperrung-nach-wasserrohrbruch-in-der-lily-braun-strasse/
 	q4::inwork 23213,13003 23173,12769
+EOF
+     },
+     { from  => 1762538105, # 2025-11-07 18:55
+       until => $isodate2epoch->("2025-12-15 18:00:00"),
+       text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte Dezember 2025',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: last_checked: 2025-11-07
+#: next_check: 2025-12-15 (Halteverbotsschilder)
+	q4::inwork 8265,8092 8259,8265 8276,8295
+EOF
+     },
+     { from  => $isodate2epoch->("2025-11-09 00:00:00"),
+       until => $isodate2epoch->("2025-11-28 23:59:59"),
+       text  => 'Hentigstr.: Bauarbeiten zwischen Dönhoffstr. und Marksburgstr., zeitweise Sperrung, 10.11.2025 bis 28.11.2025',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php
+Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten	q4::inwork 18586,9172 18548,8942 18518,8778
 EOF
      },
     );
