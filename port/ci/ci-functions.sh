@@ -342,7 +342,7 @@ install_old_perl_dependencies() {
 	esac
         case "$PERLBREW_PERL" in
 	    5.8|5.10|5.12|5.14)
-		cpanm --quiet --notest MIME::Types~"<2.29"
+		cpanm --quiet --notest MIME::Types~"<2.29" Object::Realize::Later~"<0.22"
 		;;
 	esac
         case "$PERLBREW_PERL" in
