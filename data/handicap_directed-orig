@@ -646,18 +646,18 @@ Königsberger Str. -> Hindenburgdamm: ggfs. Straßenseite wechseln, oder zugestaut
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: last_checked ^^^
 # 
-#: also_indoor: traffic (ex-G) vvv
-#: last_checked: 2025-10-25 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
-# REMOVED --- #: next_check: 2025-09-15 (Halteverbotsschilder) vvv
-# REMOVED --- #: valid: -20250915 vvv
-Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17186,17593 17264,17489
-Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17264,17489 17186,17593
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
+# REMOVED --- #: also_indoor: traffic (ex-G) vvv
+# REMOVED --- #: last_checked: 2025-10-25 (traffic) vvv
+# REMOVED --- #: check_frequency: 14d (traffic) vvv
+# REMOVED --- # REMOVED --- #: next_check: 2025-09-15 (Halteverbotsschilder) vvv
+# REMOVED --- # REMOVED --- #: valid: -20250915 vvv
+# REMOVED --- Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17186,17593 17264,17489
+# REMOVED --- Rüdickenstr.: Bauarbeiten, Sperrung der Fahrbahn, Teil der Fahrbahnfläche für Fußgänger frei	DH:h=q3,50 17264,17489 17186,17593
+# REMOVED --- # REMOVED --- #: valid ^^^
+# REMOVED --- # REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED --- #: also_indoor ^^^
 # 
 #: by: https://viz.berlin.de/aktuelle-meldungen/verschwenkung-des-verkehrs-auf-der-landsberger-allee/ (neue Bauphase vom 19.9.2025 bis Mitte 2028)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article410025129/bauarbeiten-auf-der-landsberger-allee-verkehr-wird-verlagert.html
@@ -696,7 +696,7 @@ Krahmerstr. - Stockweg: Verbindung gesperrt, Umweg über 100m südlich gelegene Üb
 #: last_checked ^^^
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
-#: last_checked: 2025-11-03 vvv
+#: last_checked: 2025-11-08 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-12-05 vvv
 Frankfurter Allee -> Samariterstr.: Umwege wegen Bauarbeiten	DH:len=70:h=q3,70 14427,12197 14488,12188 14538,12371

@@ -399,7 +399,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-11-05
+#: last_checked: 2025-11-08
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -1732,6 +1732,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20516,17088
 	X 20323,16706
 	X 20120,16297
+#: XXX_prog: für rechtsabbiegende Radfahrer (Falkenberger Chaussee -> Rüdickenstr.) nicht relevant
 	X 17159,17631
 	X 17418,16014
 	X 15896,13547

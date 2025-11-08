@@ -29595,6 +29595,7 @@ Bulgarische Str. - Karpfenteich	2::inwork 15505,8829 15439,8839 15297,8921 15245
 # REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14321,9530
+#: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
 Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 14398,9373
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15298,8781 15343,8714 15378,8668
@@ -35761,7 +35762,8 @@ EOF
 #: source_id: viz2021:13.30605,52.50146,15.07.2025,07:00 (bis 11.10.2025) (inaktiv)
 #: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084 (altes Bauvorhaben von ~2021)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-lewishamstra%C3%9Fe-4-ehem-hotel-panorama-adenauer-platz.1193/page-3#post-26359
 # REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: osm_watch: way id="1300235970" version="3"
 # REMOVED --- #: osm_watch: way id="1039329567" version="6"
@@ -35773,7 +35775,7 @@ EOF
 # REMOVED (frühere Baustelle) ---	q4::inwork 3731,10640 3764,10580
 # REMOVED (hier nicht, explizit als Sackgasse offen) --- Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 #: also_indoor: traffic (none)
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-04 (architektur-urbanistik)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 EOF
      },
@@ -42228,10 +42230,10 @@ EOF
 #: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: source_id: viz2021:13.41245,52.53267, (bis 19.12.2025)
-#: osm_watch: way id="23121446" version="37"
+#: osm_watch: way id="23121446" version="38"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-11-02 vvv
+#: last_checked: 2025-11-07 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -44035,7 +44037,7 @@ Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 EOF
      },
      { from  => 1711947600, # 2024-04-01 07:00
-       until => $isodate2epoch->("2026-10-31 18:00:00"), # 1740585600, # 2025-02-26 17:00
+       until => 1762600714, # $isodate2epoch->("2026-10-31 18:00:00"), # 1740585600, # 2025-02-26 17:00
 #      text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, vom 02.04.2024 07:00 bis 26.02.2025 17:00',
 #      text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, voraussichtlich bis Oktober 2026',
        text  => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, möglicherweise mittlerweile geöffnet',
@@ -44053,10 +44055,7 @@ EOF
 #: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
 #: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
 #: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
-#: add_fragezeichen: Ist die Straße wieder für Radfahrer und Fußgänger geöffnet?
-#: last_checked: 2025-08-24
-#: check_frequency: 90d
-#: next_check: 2025-10-23 (laut osm offen)
+# REMOVED --- #: add_fragezeichen: Ist die Straße wieder für Radfahrer und Fußgänger geöffnet? --- #: last_checked: 2025-11-08 (offen) --- #: check_frequency: 90d --- #: next_check: 2025-10-23 (laut osm offen)
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-10-31 (Baustellenschild)
 	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
@@ -49773,7 +49772,7 @@ EOF
 #: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
 #: note: außerdem existiert parallel (nur 40-50m Umweg) ein etwas engerer Betonweg
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-10-17
+#: last_checked: 2025-11-08
 #: check_frequency: 21d
 	2::inwork 17499,12998 17507,12781
 EOF
@@ -50865,7 +50864,7 @@ EOF
        text  => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis 28.11.2025',
        type  => 'handicap',
        data  => <<'EOF',
-#: osm_watch: note 4953648 2
+#: osm_watch[closed]: note 4953648 2
 #: also_indoor: traffic (none)
 #: last_checked: 2025-11-02
 #: check_frequency: 30d
@@ -50919,6 +50918,18 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php
 Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten	q4::inwork 18586,9172 18548,8942 18518,8778
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hansastr.: Gleisbauarbeiten und Fahrbahnsanierung, ggfs. kann die Straße nicht überquert werden',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: last_checked: 2025-11-08
+## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 15986,16922 15929,16870 15875,16816\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
+#       3nocross::ignrte 15986,16922 15929,16870 15875,16816
+Falkenberger Str. -> Hansastr.	3::inwork 15888,16865 15929,16870 15986,16922
+Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 EOF
      },
     );

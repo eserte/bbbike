@@ -2818,12 +2818,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: next_check: 2025-12-31 (wann sind die Sitzungswochen 2026?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1762124400,
+         'from' => 1762729200,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 4.11.2025 bis 7.11.2025',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 11.11.2025 bis 14.11.2025',
          'type' => 'gesperrt',
-         'until' => 1762556399
+         'until' => 1763161199
        },
        undef,
        undef,
@@ -4765,6 +4765,7 @@ Bulgarische Str. - Karpfenteich	2::inwork 15505,8829 15439,8839 15297,8921 15245
 # REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14321,9530
+#: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
 Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 14398,9373
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15298,8781 15343,8714 15378,8668
@@ -5714,7 +5715,8 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: source_id: viz2021:13.30605,52.50146,15.07.2025,07:00 (bis 11.10.2025) (inaktiv)
 #: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084 (altes Bauvorhaben von ~2021)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-lewishamstra%C3%9Fe-4-ehem-hotel-panorama-adenauer-platz.1193/page-3#post-26359
 # REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: osm_watch: way id="1300235970" version="3"
 # REMOVED --- #: osm_watch: way id="1039329567" version="6"
@@ -5726,7 +5728,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 # REMOVED (frühere Baustelle) ---	q4::inwork 3731,10640 3764,10580
 # REMOVED (hier nicht, explizit als Sackgasse offen) --- Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 #: also_indoor: traffic (none)
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-04 (architektur-urbanistik)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 ',
          'from' => 1752605472,
@@ -6900,19 +6902,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
-#: by: http://spielstraßen.de/uebersicht.php?date=20230620
-#: by: http://spielstraßen.de/uebersicht.php?date=20240401
-	q4::temp::play 5956,7686 5812,7685
-',
-         'from' => 1743631200,
-         'id' => 3831,
-         'recurring' => 1,
-         'text' => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2025',
-         'type' => 'handicap',
-         'until' => 1762556400
-       },
+       undef,
        undef,
        undef,
        {
@@ -7218,10 +7208,10 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025)
 #: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
 #: source_id: viz2021:13.41245,52.53267, (bis 19.12.2025)
-#: osm_watch: way id="23121446" version="37"
+#: osm_watch: way id="23121446" version="38"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-11-02 vvv
+#: last_checked: 2025-11-07 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -7547,33 +7537,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.526473,52.53201,02.04.2024,07:00 (bis 26.02.2025) (bis 03.04.2025) (bis 02.06.2025) (bis 06.06.2025) (bis 01.08.2025) (inaktiv)
-#: source_id: viz2021:13.52004,52.5326,25.02.2025,15:23 (bis 03.04.2025) (inaktiv)
-#: source_id: viz2021:13.5264,52.53348, (bis 01.08.2025) (inaktiv)
-#: source_id: viz2021:13.52004,52.5326, (bis 12.08.2025) (bis 12.09.2025) (bis 31.10.2025) (inaktiv)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1775024107286876266
-#: by: https://pbs.twimg.com/media/GJxLkcFXoAAeNee?format=jpg&name=large (auch für Fußgänger gesperrt?)
-#: osm_watch: way id="43796416" version="23"
-#: osm_watch: note 4185183 15
-#: note: laut rbb: "Für den Rad- und Fußverkehr bleibt die Straße offen." -> stimmt nicht
-#: note: am 2024-04-06 waren die Absperrungen halbseitig weggeschoben, auch Autos konnten passieren, noch keine Bauarbeiten zu sehen
-#: note: laut Schild vor Ort gilt die Sperrung bis Oktober 2026 (siehe note sowie mapillary (Baustellenschild))
-#: note: laut VIZ-Kommunikation geht die Gesamtbaumaßnahme bis Ende 2026
-#: add_fragezeichen: Ist die Straße wieder für Radfahrer und Fußgänger geöffnet?
-#: last_checked: 2025-08-24
-#: check_frequency: 90d
-#: next_check: 2025-10-23 (laut osm offen)
-# REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2026-10-31 (Baustellenschild)
-	2::inwork 18247,14241 18354,14195 18382,14183 18483,14139 18685,14184 18710,14212 18666,14350
-',
-         'from' => 1711947600,
-         'id' => 4034,
-         'text' => 'Pyramidenring: Bauarbeiten, Sperrung der Straße, auch für Fußgänger und Radfahrer, möglicherweise mittlerweile geöffnet',
-         'type' => 'gesperrt',
-         'until' => 1793466000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9548,7 +9512,7 @@ Insterburgallee	q4::inwork 229,11213 251,11039
          'data' => '#: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
 #: note: außerdem existiert parallel (nur 40-50m Umweg) ein etwas engerer Betonweg
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-10-17
+#: last_checked: 2025-11-08
 #: check_frequency: 21d
 	2::inwork 17499,12998 17507,12781
 ',
@@ -9918,16 +9882,7 @@ Corinthstr.	q4::inwork 14447,10491 14608,10409
          'type' => 'handicap',
          'until' => 1777586399
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603529.php
-	q4::inwork 4339,6315 4379,6390 4407,6445
-',
-         'from' => 1759615200,
-         'id' => 4456,
-         'text' => 'Paulsenstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 06.10.2025 bis 07.11.2025',
-         'type' => 'handicap',
-         'until' => 1762556400
-       },
+       undef,
        {
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1603361.php (Bauarbeiten 6. Oktober 2025 - Dezember 2025)
@@ -10263,7 +10218,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'until' => 1798736400
        },
        {
-         'data' => '#: osm_watch: note 4953648 2
+         'data' => '#: osm_watch[closed]: note 4953648 2
 #: also_indoor: traffic (none)
 #: last_checked: 2025-11-02
 #: check_frequency: 30d
@@ -10328,6 +10283,19 @@ Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten	q4::inwork 18586,9172 18
          'text' => 'Hentigstr.: Bauarbeiten zwischen Dönhoffstr. und Marksburgstr., zeitweise Sperrung, 10.11.2025 bis 28.11.2025',
          'type' => 'gesperrt',
          'until' => 1764370799
+       },
+       {
+         'data' => '#: last_checked: 2025-11-08
+## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\\t3nocross 15986,16922 15929,16870 15875,16816\\n") | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\'
+#       3nocross::ignrte 15986,16922 15929,16870 15875,16816
+Falkenberger Str. -> Hansastr.	3::inwork 15888,16865 15929,16870 15986,16922
+Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
+',
+         'from' => undef,
+         'id' => 4496,
+         'text' => 'Hansastr.: Gleisbauarbeiten und Fahrbahnsanierung, ggfs. kann die Straße nicht überquert werden',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

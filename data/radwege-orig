@@ -1008,7 +1008,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-11-05
+#: last_checked: 2025-11-08
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -5189,11 +5189,18 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Hochbord gefüh
 #: note: Hansastr. Richtung NO
 die ersten Meter werden auf dem Hochbord geführt	RW3; 14653,15738 14808,15788
 	RW3; 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
-Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922
+Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 #: next_check_id: HANSA-2025
+#: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
+#: last_checked: 2025-11-08
+provisorischer gemeinsamer Geh- und Radweg	RW2; 15875,16816 15929,16870 15986,16922
 #: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;
-#: last_checked: 2025-09-29
-provisorischer gemeinsamer Geh- und Radweg	RW2; 15986,16922 16139,17017 16296,17114 16318,17128 16352,17150 16460,17214
+#: last_checked: 2025-11-08
+provisorischer gemeinsamer Geh- und Radweg	RW2; 15986,16922 16139,17017
+#: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
+	RW3; 16139,17017 16296,17114 16318,17128 16352,17150
+#: last_checked: 2025-11-08
+provisorischer gemeinsamer Geh- und Radweg	RW2; 16352,17150 16460,17214
 neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 	RW2; 16578,17285 16837,17440
 # 
@@ -5467,7 +5474,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2025-08-24 vvv
+#: last_checked: 2025-11-08 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str., Richtung Westen
@@ -6054,11 +6061,21 @@ asphaltierter Bordsteinradweg	RW1; 18884,3752 18856,3783 18826,3816 18779,3866 1
 #: historical_note: früher (bis 2023?) RW2;
 asphaltierter Bordsteinradweg	RW1; 18042,4667 18239,4453 18374,4307 18541,4125 18739,3909 18779,3866 18826,3816 18856,3783 18884,3752
 #: by ^^^
+# 
+#: note: Ferdinand-Schultze-Str., Richtung Norden
 #: historical_note: ganz früher (vor 2015?) RW2;
 Verbundsteinpflasterradweg	RW1; 17848,14523 17791,14639
 	RW1; 17791,14639 17848,14523
 Verbundsteinpflasterradweg	RW1; 17791,14639 17745,14734 17693,14840 17684,14858 17638,14945 17609,15006 17432,15378 17424,15400 17405,15454 17377,15588 17370,15670 17378,15760
-Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15588 17405,15454 17424,15400 17432,15378 17609,15006 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639
+#: note: Ferdinand-Schultze-Str., Richtung Süden
+Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15588 17405,15454 17424,15400 17432,15378 17609,15006 17638,14945
+#: next_check_id: WEISSETAUBE-2025
+#: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
+#: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734
+#: last_checked: 2025-11-08
+	RW0; 17638,14945 17684,14858 17693,14840 17745,14734
+Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17745,14734 17791,14639
+# 
 	RW4; 17488,15766 17429,15930
 # REMOVED (nein) --- #: XXX zurzeit gibt es hier Bauarbeiten, werden die letzten Meter vielleicht auch noch zur Radspur gemacht? --- #: last_checked: 2018-01-14 --- #: check_frequency: 60d
 die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW4; 17429,15930 17488,15766

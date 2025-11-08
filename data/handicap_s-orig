@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-11-04
+#: last_checked: 2025-11-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -473,7 +473,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-11-03 (daf) vvv
+#: last_checked: 2025-11-07 (architektur-urbanistik) vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="44"
@@ -5159,7 +5159,7 @@ Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025)
-#: last_checked: 2025-11-03 vvv
+#: last_checked: 2025-11-08 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-12-05 vvv
 #: valid: -20251205
@@ -7198,7 +7198,7 @@ Hottengrundweg: enge Straﬂe	q1 -8637,4741 -8086,4504
 #: confirmed_by: srt
 Privatstr. 2: enge Straﬂe	q1 16905,17281 17028,17298 17162,17294 17286,17277 17404,17238
 Privatstr. 3: enge Straﬂe	q1 16920,17204 17027,17219 17153,17221 17258,17209 17377,17171
-Privatstr. 4: enge Straﬂe	q1 16934,17132 17125,17147 17146,17147 17167,17145 17346,17100
+Privatstr. 4: enge Straﬂe	q1 16933,17138 17031,17151 17125,17150 17146,17147 17167,17145 17346,17100
 Privatstr. 8: enge Straﬂe	q1 16992,16840 17120,16849 17237,16825
 #: by: ^^^
 # 

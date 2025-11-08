@@ -128,7 +128,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: osm_watch: way id="65707583" version="20"
+#: osm_watch: way id="65707583" version="21"
 #: last_checked: 2025-11-07
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -505,16 +505,17 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12855 (Antrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20241203-mobilitaetsrat-mitte-protokoll-barrierefrei-entwurf.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/20250121-mobilitaetsrat-mitte-tagesordnung.pdf (Fahrradstraße in der Gerichtstr. ist in Planung)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1040.pdf (keine Priorisierung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2025-08-24 (mapillary) vvv
-#: check_frequency: 120d vvv
-#: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
+#: last_checked: 2025-09-09 (BA-Beschluss) vvv
+#: check_frequency: 180d vvv
+# REMOVED --- #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
 #: osm_watch: way id="169459736" version="18"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 #: osm_watch: way id="25278674" version="27"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2396,10 +2397,11 @@ Landsberger Allee: neu asphaltierter Radweg	Q0; 18831,14823 18553,14678
 #: XXX werden auch die restlichen Radwege demnächst instandgesetzt oder zu Radspuren umgewandelt? vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html vvv
 #: by: https://marzahn-hellersdorf.com/neubau-der-landsberger-allee-zwischen-allee-der-kosmonauten-und-kiebitzgrund-startet-2026/ (vermutlich Bauarbeiten an der stadteinwärts führenden Fahrbahn, Beton -> Asphalt, keine Angabe zu den Radwegen)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll-des-fahrrat_2025-10-09_1.pdf (Erwähnung einer Verbreiterung, Planung bis Ostern 2026, keine Termine für eine Umsetzung)
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (Radwegarbeiten) (inaktiv)
-#: check_frequency: 150d vvv
-#: last_checked: 2025-06-09 vvv
+#: check_frequency: 240d vvv
+#: last_checked: 2025-10-09 (Fahrrat-Protokoll) vvv
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
@@ -4953,7 +4955,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058 (letzter Stand 16.09.2021: Zwischenbericht)
 #: XXX wird hier saniert?
 #: osm_watch: way id="22047751" version="26"
-#: last_checked: 2025-08-24
+#: last_checked: 2025-11-08
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -8641,7 +8643,9 @@ Am Stichkanal: Parkweg	Q1 22759,4430 22797,4518
 Straßenbahntrasse zum Alexanderplatz: Radwege auf Gehweg/Betonplatten	Q0- 11139,13008 11191,13080
 (Siegfriedstr. - Gotlindestr.): Asphalt	Q0 17227,13075 17267,13067
 (Landschaftspark Herzberge): Asphalt	Q0 17267,13067 17300,13061
-(Landschaftspark Herzberge): Beton	Q1 17300,13061 17331,13010 17498,13015 17674,13022 17671,13132
+(Landschaftspark Herzberge): Beton	Q1 17300,13061 17331,13010
+(Landschaftspark Herzberge): Beton	Q1- 17331,13010 17498,13015
+(Landschaftspark Herzberge): Beton	Q1 17498,13015 17674,13022 17671,13132
 (Landschaftspark Herzberge): Beton	Q1 17300,13061 17300,13118 17491,13125 17671,13132 17684,13133 17698,13134
 (Landschaftspark Herzberge): Beton	Q1 17507,12781 17637,12785 17638,12813 17659,12823 17662,12918 17679,12933 17674,13022
 (Landschaftspark Herzberge): Beton	Q1 17491,13125 17498,13015 17499,12998 17507,12781
@@ -12647,7 +12651,7 @@ Parkrosenweg: Asphalt	Q0 -6530,6699 -6381,6587
 (Neukladower Allee - Gutspark Neukladow): Kopfsteinpflaster/Schotter	Q2 -6125,5447 -6112,5406
 (Spektegrünzug - Ramin-Park): wassergebundene Decke	Q1 -4160,14690 -4118,14736 -4108,14769 -4090,14780 -4026,14765
 (Spektegrünzug - Hohenzollernring): wassergebundene Decke	Q1 -4090,14780 -4056,14799 -3926,14879
-Malchower Weg: Asphalt, einige Schlaglöcher	Q0-; 17014,16724 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16950,17061 16934,17132 16920,17204 16915,17231 16905,17281 16887,17349
+Malchower Weg: Asphalt, einige Schlaglöcher	Q0-; 17014,16724 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16950,17061 16933,17138 16920,17204 16915,17231 16905,17281 16887,17349
 Teichmummelring: Betonpflaster	Q1+ 22246,2272 22418,2390 22454,2342 22271,2214
 Am Ruderverein: Betonpflaster	Q1+ 22153,2482 22221,2520 22270,2549
 Relingstr.: Betonpflaster	Q1+ 22195,2390 22287,2431 22358,2460
@@ -17443,7 +17447,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="12"
 #: osm_watch: way id="1033468087" version="3"
-#: last_checked: 2025-09-29
+#: last_checked: 2025-11-08
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14906,15859 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -26402,7 +26406,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="9"
-#: last_checked: 2025-08-03
+#: last_checked: 2025-11-08
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
@@ -27892,7 +27896,7 @@ Kyllburger Weg: guter Asphalt	Q0- 16785,17524 16670,17454 16645,17449
 #: note: "q3" ignoriert
 #: corrected_by: srt (guter Asphalt -> ...) vvv
 Privatstr. 10: Asphalt mit Schäden	Q1- 17182,17375 17167,17331 17162,17294 17153,17221 17146,17147
-Privatstr. 10: Asphalt mit Schäden	Q1- 17125,17147 17119,17071
+Privatstr. 10: Asphalt mit Schäden	Q1- 17125,17150 17119,17071
 Privatstr. 10: Asphalt mit Schäden	Q1- 17167,17145 17160,17068
 Privatstr. 10: Asphalt mit Schäden	Q1- 17141,17070 17134,16988 17129,16922 17120,16849 17117,16785
 #: corrected_by ^^^
@@ -28861,7 +28865,7 @@ Privatstr. 2: Asphalt	Q0 17162,17294 17286,17277 17404,17238
 #: corrected_by: srt (mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher -> ..., neu gemacht)
 Privatstr. 3: Asphalt	Q0 16920,17204 17027,17219 17153,17221 17258,17209 17377,17171
 #: corrected_by: srt (mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher -> ..., neu gemacht)
-Privatstr. 4: Asphalt	Q0 16934,17132 17125,17147 17146,17147 17167,17145 17346,17100
+Privatstr. 4: Asphalt	Q0 16933,17138 17031,17151 17125,17150 17146,17147 17167,17145 17346,17100
 Privatstr. 6: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 16966,16978 17134,16988 17290,16957
 #: corrected_by: srt (mäßiger Asphalt -> ..., neu gemacht?)
 Privatstr. 8: Asphalt	Q0 16992,16840 17120,16849 17237,16825
