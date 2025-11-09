@@ -14561,6 +14561,7 @@ sub show_info {
 	$info_text->delete("1.0", "end");
 	my $linkcount = 1;
 
+	my $need_newline;
 	if (defined $name && $name !~ m{^\s*$}) {
 	    $info_text->insert("end", M("Name")."\n", "bold");
 
@@ -14607,6 +14608,32 @@ sub show_info {
 		$linkcount++;
 		$info_text->insert("end", "\n");
 	    }
+	    $need_newline++;
+	}
+	if ((grep { $_ eq 'b-fg' } @tags) && defined $name && $name !~ m{^\s*$} && defined $city && $city eq 'Berlin') {
+	    (my $bhf_name = $name) =~ s{[ ]}{-}g;
+	    $bhf_name =~ s{[()]}{}g;
+	    $bhf_name = lc BBBikeUtil::umlauts_to_german($bhf_name);
+	    $bhf_name =~ s{str\.}{strasse}g;
+	    $bhf_name =~ s{bhf\.}{bf}g;
+	    $bhf_name =~ s{bei-berlin}{b-bln};
+	    $bhf_name =~ s{^schoenefeld$}{flughafen-ber-terminal-5}; # really
+	    my $url = "https://sbahn.berlin/fahren/bahnhofsuebersicht/$bhf_name/";
+
+	    $info_text->insert("end", "Bahnhofsübersicht", "link$linkcount"); # XXX Msg
+	    my $link_menu = $info_text->Menu(-title => M"Linkmenü",
+					     -tearoff => 0);
+	    $link_menu->command
+		(-label => M"Link kopieren",
+		 -command => sub { $copy_link->($url) },
+	     );
+	    $show_url->($linkcount, $url, $link_menu);
+	    $linkcount++;
+	    $info_text->insert("end", "\n");
+	    $need_newline = 1;
+	}
+
+	if ($need_newline) {
 	    $info_text->insert("end", "\n");
 	}
 
