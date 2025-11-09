@@ -22,6 +22,7 @@ use lib "$FindBin::RealBin/..";
 use BBBikeYAML qw(LoadFile);
 
 use POSIX qw(floor strftime);
+use Time::Local qw(timegm);
 use Math::Trig;
 
 sub latlon_to_tile {
@@ -52,12 +53,16 @@ my $max_lat = 52.689878;
 
 my $mvt_impl = 'pl';
 
+# NOTE: if using the YYYYMMDD-YYYYMMDD variant, then the 2nd date is
+# usually the next day. So if just 2025-01-02 is wanted, the
+# specification would be 20250102-20250103.
+
 GetOptions(
     "cache!" => \$do_cache,
     "bbox=s" => \my $bbox,
     "mvt-impl=s" => \$mvt_impl,
 )
-    or die "usage: $0 [--[no]cache]] [--mvt-impl pl|py] [--bbox minlon,minlat,maxlon,maxlat] YYYYMMDD-[YYYYMMDD]\n";
+    or die "usage: $0 [--[no]cache]] [--mvt-impl pl|py] [--bbox minlon,minlat,maxlon,maxlat] YYYYMMDD|YYYYMMDD-|YYYYMMDD-YYYYMMDD\n";
 
 if ($bbox) {
     my @fields = split /,/, $bbox;
@@ -69,11 +74,15 @@ my $date_range = shift;
 my $date_from = "";
 my $date_to   = "";
 if ($date_range) {
-    if ($date_range =~ /^(\d{8})(?:-|\.\.)(\d{8})?$/) {
+    if ($date_range =~ /^(\d{4})(\d{2})(\d{2})$/) {
+	my($y,$m,$d) = ($1,$2,$3);
+	$date_from = $date_range;
+	$date_to   = strftime '%Y%m%d', gmtime(timegm(0,0,0,$d,$m-1,$y) + 86400);
+    } elsif ($date_range =~ /^(\d{8})(?:-|\.\.)(\d{8})?$/) {
 	$date_from = $1;
 	$date_to   = $2 if defined $2;
     } else {
-	die "Wrong date range syntax, must be: YYYYMMDD- or YYYYMMDD-YYYYMMDD.\n";
+	die "Wrong date range syntax, must be: YYYYMMDD, YYYYMMDD- or YYYYMMDD-YYYYMMDD.\n";
     }
 }
 if (!$date_from) {
