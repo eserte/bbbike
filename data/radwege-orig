@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-11-05 vvv
+#: last_checked: 2025-11-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -585,7 +585,7 @@ altes Verbundsteinpflaster	RW1;RW1 10834,10806 10856,10856
 	RW2;RW1 10580,10256 10605,10312
 altes Verbundsteinpflaster	RW1; 10500,10081 10467,10051 10424,9958 10357,9807 10361,9755
 altes Verbundsteinpflaster	RW1; 10361,9755 10405,9795 10480,9949 10513,10038 10500,10081
-altes Verbundsteinpflaster	RW1;RW1 10198,9405 10306,9640 10361,9755
+altes Verbundsteinpflaster	RW1;RW1 10198,9405 10290,9604 10306,9640 10361,9755
 # 
 #: note: Nachodstr./Hohenstaufenstr., Richtung Osten
 	RW1; 5467,9866 5487,9864 5725,9846 5905,9795
@@ -706,7 +706,7 @@ neuer Asphalt, relativ breit	RW1; 6762,7109 6817,7101 6894,7102 6991,7126 7101,7
 Asphalt	RW1; 7338,7498 7422,7607
 Gehwegplatten mit Unebenheiten	RW1; 7422,7607 7480,7683
 #: note: Vorarlberger Damm, Richtung Westen
-Gehwegplatten mit Unebenheiten	RW1; 7480,7683 7422,7607 7338,7498 7307,7457 7296,7443 7227,7352 7101,7198 6991,7126 6894,7102 6817,7101 6762,7109 6640,7138 6500,7172 6389,7196
+Gehwegplatten mit Unebenheiten, teilweise Bord zum Gehweg	RW1; 7480,7683 7422,7607 7338,7498 7307,7457 7296,7443 7227,7352 7101,7198 6991,7126 6894,7102 6817,7101 6762,7109 6640,7138 6500,7172 6389,7196
 	RW1; 4061,6753 4021,6729
 	RW1; 4074,6681 4103,6716
 	RW1; 4021,6729 3938,6651 3925,6604
@@ -5890,7 +5890,6 @@ neu asphaltiert, breit	RW2; 18553,14678 18410,14614 18365,14607
 #: historical_note: früher (bis 2025?): Gehweg für Radfahrer frei, RW1;
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster/Beton	RW2; 18365,14607 18183,14573
 #: historical_note: früher (bis 2025?): Gehweg für Radfahrer frei, RW1;
-#: osm_watch: note 4976941 1
 Verbundsteinpflaster	RW2; 18183,14573 18057,14549
 neu asphaltiert, mit einigen Verbundsteinpflaster-/Gehwegplattenabschnitten	RW2; 18057,14549 17848,14523 17533,14484 17254,14451
 neu asphaltiert, aber etwas wellig	RW2; 17254,14451 17055,14432 16852,14412
@@ -7842,7 +7841,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-09 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8298,7 +8297,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-09
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490

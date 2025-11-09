@@ -69,7 +69,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="23"
 #: osm_watch: way id="1072662717" version="27"
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-09
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -887,17 +887,17 @@ Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 79
 # 
 ### Charlottenburg ###
 # 
-#: next_check_id: RANKE-2023
-# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
-#: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025)
-#: note: Länge des gesperrten Bereichs etwa 50m
-#: last_checked: 2025-10-31
-#: next_check: 2025-11-08
-#: valid: -20251108
-Rankestr.: Einmündungsbereich Breitscheidplatz wegen Kraneinsatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
+# REMOVED --- #: next_check_id: RANKE-2023
+# REMOVED --- # REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
+# REMOVED --- #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
+# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 50m
+# REMOVED --- #: last_checked: 2025-10-31
+# REMOVED --- #: next_check: 2025-11-08
+# REMOVED --- #: valid: -20251108
+# REMOVED --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Kraneinsatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
 # 
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
@@ -1161,10 +1161,10 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/microappartments-rembrandtstra%C3%9Fe-20%E2%80%9321-neubau-rubensstra%C3%9Fe.1261/#post-19867
 # REMOVED --- #: osm_watch: way id="1146544138" version="6"
 #: osm_watch: way id="1145470730" version="5"
-#: osm_watch: note 4610083 1
+#: osm_watch: note 4610083 2
 #: note: Länge der Engstelle nur etwa 40m-50m, deshalb q2 statt q3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2025-06-26 (mapillary)
+#: last_checked: 2025-11-09
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
@@ -1871,13 +1871,13 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: by: https://entwicklungsstadt.de/wellenbad-am-spreewaldplatz-veraenderungen-beim-umfang-der-umbauarbeiten/
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
-#: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+
+#: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-10-29
+#: last_checked: 2025-11-09
 #: check_frequency: 180d
 #: next_check: 2027-01-31
-Spreewaldplatz: Fußgänger, Engstellen	q3+ 12341,10218 12292,10374
+Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
 # 
 #: XXX_prog BS auf beiden Seiten, ansonsten q2 oder q2+ (GPS-Tracks anschauen)
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8373
@@ -5463,6 +5463,9 @@ Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos
 # 
 #: XXX_prog: BS (an beiden Enden)
 (Anne-Frank-Carée, westlicher Weg): gemeinsamer Geh- und Radweg, Bordsteine	q3 19576,533 19537,420
+# 
+#: note: Grünanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol
+(Fürbringerstr. - Baerwaldstr.): Grünanlage, Fußgänger	q4 10067,9674 10290,9604
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

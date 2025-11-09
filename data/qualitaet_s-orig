@@ -478,7 +478,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-09
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -1172,7 +1172,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/artikel.1496371.php (voraussichtlich ab 2025)
 #: osm_watch[closed]: note 4669610 3
-#: osm_watch: note 4719579 1
+#: osm_watch[closed]: note 4719579 1
 #: osm_watch: way id="934995901" version="14"
 #: osm_watch: way id="934995899" version="16"
 #: osm_watch: way id="22820618" version="24"
@@ -2636,7 +2636,7 @@ Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11033,12439 11040,12420 11053,12387 
 Propststr.: Kopfsteinpflaster	Q2 10492,12289 10553,12333 10611,12378 10639,12394
 (Crellestr. - Julius-Leber-Brücke): Verbundsteinpflaster	Q1 7524,9093 7555,8978
 (Crellestr. - Julius-Leber-Brücke): Holzbohlen	Q1 7555,8978 7509,8929
-Naumannstr.: Asphalt	Q0 7707,8919 7709,8777
+Naumannstr.: Asphalt, einige Unebenheiten	Q0- 7707,8919 7709,8777
 Inselstr.: Kopfsteinpflaster	Q2 10869,11949 10824,11992
 Neue Grünstr.: Kopfsteinpflaster	Q2 10515,11785 10528,11729
 Parkaue: Asphalt	Q0 15535,12420 15457,12449 15406,12444
@@ -4549,6 +4549,7 @@ Herzbergstr.: betoniert/Verbundsteinpflaster	Q0- 17232,13518 17300,13459 17330,1
 Rumeyplan: Asphalt	Q0  8690,7704 8812,7730
 #: historical_note: früher: Asphalt mit Schäden	Q1
 Rumeyplan: etwas welliger Asphalt	Q0- 8812,7730 8907,7773 8959,7824
+Rumeyplan: Asphalt mit einigen Schäden	Q0- 8940,7835 8895,7797 8796,7751
 #: note: laut ADFC-Karte bis auf einen kleinen Abschnitt am Mexikoplatz gut geeignet - nicht bestätigt
 #: note: von der S-Bahn aus geseheb:
 #: confirmed_by: MichaelM (Kopfsteinpflaster, sogar Q2 -> Q2-)
@@ -14366,6 +14367,8 @@ Konradinstr.: Asphalt, einige leichte Schäden	Q0- 8872,5484 8674,5357
 # 
 (Anne-Frank-Carée, westlicher Weg): Betonpflaster	Q0- 19576,533 19537,420
 # 
+(Fürbringerstr. - Baerwaldstr.): Verbundsteinpflaster	Q1 10067,9674 10290,9604
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -16076,7 +16079,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/protokoll-fahrrat-am-08102024.pdf (Entwurfsplanung, außerdem Fahrradstraße inklusive Stille Str. und Waldstr.)
 #: XXX wann wird hier asphaltiert?
 #: osm_watch: way id="13863115" version="23"
-#: last_checked: 2025-09-11
+#: last_checked: 2025-11-09
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
@@ -32111,7 +32114,8 @@ Dinnendahlstr.: Kopfsteinpflaster	Q2 9139,-1350 9282,-1442 9445,-1460
 Karl-Stieler-Str.: Asphalt	Q0 6029,4902 6097,4858 6204,4835 6267,4825 6312,4806 6342,4783 6414,4723
 #: confirmed_by: srt
 Michael-Bohnen-Ring: Asphalt	Q0 15229,6602 15251,6635 15251,6745 15284,6783 15350,6781 15453,6784 15453,6434 15429,6403
-Otzenstr.: Asphalt	Q1 6410,7722 6429,7532 6352,7523
+#: corrected_by: srt (Q1 -> Q0-)
+Otzenstr.: Asphalt	Q0- 6410,7722 6429,7532 6352,7523
 #: corrected_by: srt (Asphalt, Q1 -> ...)
 Garzauer Str.: Beton	Q0- 21737,13844 21731,13789 21722,13708 21830,13688 21895,13684 21920,13680
 #: corrected_by: srt (Asphalt, Q1 -> ...)
@@ -33702,6 +33706,7 @@ Kreuzungsbereich asphaltiert	Q0 14675,11964
 Einmündungsbereich asphaltiert	Q0 12556,14230
 Kreuzungsbereich asphaltiert	Q0 12486,14143
 Kreuzungsbereich asphaltiert	Q0 9957,9692
+Einmündungsbereich mit Kopfsteinpflaster	Q2 10067,9674
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 6095,13724
 Einmündungsbereich asphaltiert	Q0 7000,14832
 Einmündungsbereich asphaltiert	Q0 6849,14831

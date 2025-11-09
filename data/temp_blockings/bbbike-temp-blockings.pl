@@ -152,8 +152,8 @@ EOF
 # REMOVED ---	3 9957,9692 9927,9487 9892,9286
 # REMOVED ---	3 10004,9268 10032,9456 10067,9674
 # REMOVED ---	3 10067,9674 10032,9456 10004,9268
-# REMOVED ---	3 10123,9233 10198,9405 10306,9640
-# REMOVED ---	3 10306,9640 10198,9405 10123,9233
+# REMOVED ---	3 10123,9233 10198,9405 10290,9604 10306,9640
+# REMOVED ---	3 10306,9640 10290,9604 10198,9405 10123,9233
 # REMOVED ---	3 10547,9233 10564,9292 10580,9361
 # REMOVED ---	3 10580,9361 10564,9292 10547,9233
 # REMOVED ---	3 10705,9234 10713,9260 10749,9342
@@ -421,7 +421,7 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1483109.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berlins-grosste-fussgangerzone-kunftiger-betreiber-fur-den-spandauer-weihnachtsmarkt-gefunden-13354381.html
-#: osm_watch: node id="9278469937" version="5"
+#: osm_watch: node id="9278469937" version="7"
 	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
 	2::xmas -3275,14407 -3338,14333
 	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
@@ -33234,7 +33234,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-11-07
+#: last_checked: 2025-11-09
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -39026,7 +39026,7 @@ EOF
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-13 00:00:00"), # vier Tage Vorlauf (reicht das?) --- einen Tag Vorlauf (reicht das?) --- 1669158000, # 2022-11-23 00:00
+     { from  => $isodate2epoch->("2025-11-08 00:00:00"), # vier Tage Vorlauf (reicht das?) --- einen Tag Vorlauf (reicht das?) --- 1669158000, # 2022-11-23 00:00
        until => $isodate2epoch->("2026-01-06 18:00:00"), # ein paar Tage für den Abbau einplanen
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
@@ -39034,11 +39034,13 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen, und die Bauzäune waren noch am 2024-01-05 (!) da
-#: note: 2024 hat die Sperrung vor dem 2023-11-15 angefangen ...
+#: note: 2024 hat die Sperrung vor dem 2024-11-15 angefangen ...
+#: note: 2025 hat die Sperrung vor dem 2025-11-09 angefangen ...
 #: by: https://www.weihnachten-an-der-spree.de/
 #: osm_watch: node id="11346915244" version="2"
 # REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
 	2::xmas 13531,10673 13418,10724
+sehr enge Engstelle	q4::xmas 13558,10704 13531,10673 13527,10660
 # REMOVED (seit 2025 Bauarbeiten) ---	2::xmas 13418,10724 13326,10765
 EOF
      },
@@ -39611,12 +39613,13 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1671189918050304000#m
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-mobilitaet-verkehr-bahnhofstrasse-bvg-gelbe-folie-gegen-stau-in-koepenick-kommt-die-bvg-jetzt-besser-durch-li.361499
 #: by: https://www.nd-aktuell.de/artikel/1180183.strassenbahn-bvg-streicht-jeden-dritten-zug-der-m.html (neuer Stau in der Bahnhofstr.)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251108 (bis Mitte August 2026)
 #: source_id: viz2021:13.57926,52.458574,06.03.2023,11:00 (Vorbereitung, bis 20.03.2023) (inaktiv)
 #: source_id[inactive]: bvg2021:x69#BVG317810_0
 #: source_id: viz2021:13.579251,52.458484,21.03.2023,12:00 (bis 25.03.2023) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023) (bis 09.06.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023) (inaktiv)
-#: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028) (bis 30.06.2028) (bis 28.02.2028) (bis 28.02.2026) (inaktiv9
+#: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028) (bis 30.06.2028) (bis 28.02.2028) (bis 28.02.2026) (inaktiv)
 #: source_id: viz2021:13.57935,52.45857, (bis 29.02.2028)
 # REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
@@ -39628,7 +39631,8 @@ EOF
 #: last_checked: 2025-10-17 (osm)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-18 (nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
-#: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-15 (VIZ-Verkehrsmeldung)
 	q4::inwork; 22431,6068 22467,6135
 EOF
      },
@@ -41643,7 +41647,7 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 EOF
      },
      { from  => $isodate2epoch->("2025-08-17 00:00:00"), # $isodate2epoch->("2024-10-22 00:00:00"), # $isodate2epoch->("2023-08-27 00:00:00"),
-       until => $isodate2epoch->("2025-11-10 23:59:59"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
+       until => $isodate2epoch->("2025-11-10 04:00:00"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick, Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
@@ -41677,16 +41681,14 @@ EOF
 #: source_id[inactive]: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
 #: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
 #: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025)
-# REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv
-#: next_check: 2025-11-10 vvv
+# REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-11-10 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
 # REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
 # REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
 # REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
 # REMOVED (nicht mehr) --- Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
 # REMOVED --- #: osm_watch: way id="25663270" version="21" --- Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1691557200, # 2023-08-09 07:00
@@ -46860,7 +46862,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2025-09-24 (mapillary)
+#: last_checked: 2025-11-09
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -49479,9 +49481,10 @@ EOF
 #: next_check_id: BELZIGER-2025
 # REMOVED (hier wohl fertig) --- #: osm_watch[closed]: note 4877718 4 ---	q4::inwork 6460,8688 6644,8780 6664,8787 6852,8880
 # REMOVED (wieder offen) --- #: last_checked: 2025-10-12 ---	q4::inwork 7101,9027 7308,9163
-#: last_checked: 2025-10-29
+# REMOVED (hier offen) ---	q4::inwork 6852,8880 6958,8941 7101,9027
+#: last_checked: 2025-11-09
 #: check_frequency: 14d
-	q4::inwork 6852,8880 6958,8941 7101,9027
+	q4::inwork 7101,9027 7308,9163
 EOF
      },
      { from  => 1752184800, # 2025-07-11 00:00
@@ -49896,19 +49899,17 @@ EOF
 EOF
      },
      { from  => 1755666000, # 2025-08-20 07:00
-       until => undef, # 1757973540, # 2025-09-15 23:59
+       until => 1762695286, # undef, # 1757973540, # 2025-09-15 23:59
        text  => 'Blücherstr. Bauarbeiten zwischen Baerwaldstr. und Südstern, Fahrbahn offiziell gesperrt, Radfahrer dürfen den Bürgersteig Richtung Nordwesten benutzen, vom 21.08.2025 07:00 bis 22.11.2025, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BLUECHER-2025
 #: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025) (bis 31.10.2025) (bis 22.11.2025)
-#: also_indoor: traffic (T,G,W,H,)
-#: last_checked: 2025-10-29 vvv
-#: next_check: 2025-11-22 (VIZ-Verkehrsmeldung) vvv
+#: also_indoor: traffic (T,G,W,H)
+# REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-10-29 vvv --- #: next_check: 2025-11-22 (VIZ-Verkehrsmeldung) vvv
 Blücherstr. Richtung Baerwaldstr.: Gehweg für Radfahrer frei	q3::inwork; 10429,9514 10306,9640
 Blücherstr. Richtung Südstern: keine Freigabe für Radfahrer	q4::inwork; 10306,9640 10429,9514
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1755881434, # 2025-08-22 18:50
@@ -49919,7 +49920,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-05
+#: last_checked: 2025-11-09
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50370,7 +50371,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzfkwh3xw224
 #: source_id: viz2021:13.35762,52.48668,22.09.2025,07:00 (bis 01.12.2025)
-#: last_checked: 2025-10-15
+#: last_checked: 2025-11-09
 #: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
 	q4::inwork 7389,8837 7360,8918
 EOF
@@ -50600,7 +50601,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-09
 #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
 EOF
@@ -50688,7 +50689,7 @@ EOF
 #: by: https://gruen-berlin.de/fileadmin/user_upload/Bilder/03_Projekte/31_Infrastruktur/313_Mauerweg/gruenberlin_projekte_infrastruktur_berlinermauerweg_plangrafik_ruppinerchaussee.png
 #: by: https://www.morgenpost.de/bezirke/reinickendorf/article410272260/eine-eichenholzbank-fuer-den-mauerweg-in-heiligensee.html
 #: osm_watch: note 5018594 1
-#: osm_watch: way id="397531408" version="6"
+#: osm_watch: way id="397531408" version="7"
 	2::inwork -972,24498 -1655,24428 -1940,24464 -1953,24435
 EOF
      },
@@ -50848,8 +50849,8 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
 #: next_check: 2026-12-31 vvv
-#: also_indoor: traffic (G[falsch],H[falsch],W[falsch],A[falsch])
-#: last_checked: 2025-11-02
+#: also_indoor: traffic (G[falsch],H[falsch],W[falsch],A[falsch],no-T)
+#: last_checked: 2025-11-09 (traffic)
 #: check_frequency: 7d
 Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
 #: also_indoor: traffic (G,T)
@@ -50930,6 +50931,31 @@ EOF
 #       3nocross::ignrte 15986,16922 15929,16870 15875,16816
 Falkenberger Str. -> Hansastr.	3::inwork 15888,16865 15929,16870 15986,16922
 Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
+EOF
+     },
+     { from  => 1762694374, # 2025-11-09 14:19
+       until => 1766358000, # 2025-12-22 00:00
+       text  => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., voraussichtlich bis Dezember 2025',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: also_indoor: traffic (none)
+#: osm_watch: note 4847575 2
+#: last_checked: 2025-11-09
+#: next_check: 2025-12-21
+	2::inwork 7497,7761 7499,7880
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Eisenacher Str.: Bauarbeiten vor der Wartburgstr., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: note: am 2025-11-09 keine Baugrube mehr, mögliche baldige Aufhebung der Sperrung
+#: also_indoor: traffic (G,T)
+#: also_indoor: Besteht die Sperrung weiterhin?
+#: last_checked: 2025-11-09
+#: check_frequency: 7d
+	q4::inwork 6852,8880 6762,8999
 EOF
      },
     );

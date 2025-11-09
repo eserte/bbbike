@@ -4427,7 +4427,7 @@ Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwor
 # REMOVED (offiziell offen) --- #: osm_watch: way id="1199463690" version="2" --- Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
 #: osm_watch: way id="1425622570" version="1"
 #: osm_watch: way id="693633081" version="14"
-#: osm_watch: way id="693633082" version="14"
+#: osm_watch: way id="693633082" version="15"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 # REMOVED --- #: osm_watch: way id="1199463688" version="3"
 #: osm_watch: way id="1199465845" version="5"
@@ -5062,7 +5062,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,1022
 # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14361,10259
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-10-31 vvv
+#: last_checked: 2025-11-09 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5094,12 +5094,13 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: next_check_id: LAKEGRUND-2024
 #: by: https://entwicklungsstadt.de/fortschritte-am-lakegrund-modernisierung-der-gruenanlage-in-treptow/ (vollständige Fertigstellung bis Herbst 2026)
 #: osm_watch: note 4526759 1
-#: osm_watch: way id="54630384" version="13"
-#: osm_watch: way id="1339306638" version="2"
-#: XXX beide Wege gesperrt, nördlicher komplett und südlicher teilweise
+#: osm_watch: way id="54630384" version="14"
+#: osm_watch: way id="1339306638" version="3"
+#: XXX beide Wege gesperrt, nördlicher komplett und südlicher teilweise; mittlerweile bei osm als wieder zugänglich getaggt
 #: last_checked: 2025-09-14
 #: check_frequency: 90d
-#: next_check: 2026-11-30 (entwicklungsstadt)
+#: next_check: 2025-11-09 (osm)
+# REMOVED --- #: next_check: 2026-11-30 (entwicklungsstadt)
 Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 # 
 # REMOVED (offener Bauzaun heute, nur noch wenige Bauarbeiten) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-04-19 --- #: check_frequency: 30d --- Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892 8025,13835
@@ -5619,7 +5620,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.3707,52.52584, (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="47"
+#: osm_watch: way id="186329816" version="48"
 #: also_indoor: traffic
 #: last_checked: 2025-10-22 vvv
 #: check_frequency: 180d vvv
