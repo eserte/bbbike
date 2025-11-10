@@ -622,10 +622,10 @@ Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Sind das eigenständige Leitungsarbeiten, oder sind sie mit den Bauarbeiten an der Bäkebrücke verknüpft?
 #: source_id: viz2021:13.310358,52.430965,02.09.2024,07:00 (Leitungsarbeiten, bis 11.11.2025) (inaktiv)
-#: source_id: viz2021:13.3097,52.43127, (bis 11.11.2025) (bis 27.03.2026)
+#: source_id: viz2021:13.3097,52.43127, (bis 11.11.2025) (bis 27.03.2026) (bis 31.01.2027)
 #: last_checked: 2025-10-15 vvv
-#: next_check: 2026-03-27 vvv
-#: valid: -20260327 vvv
+#: next_check: 2027-01-31 (VIZ-Verkehrsmeldung) vvv
+#: valid: -20270131 vvv
 Königsberger Str.: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4392,2628 4348,2627 4317,2638
 Königsberger Str. -> Drakestr.: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4233,2675 4170,2727 4011,2942
 Königsberger Str. -> Hindenburgdamm: ggfs. Straßenseite wechseln, oder zugestaute Fahrbahn benutzen	DH:t=20:len=30 4233,2675 4170,2727 4411,3180
@@ -694,6 +694,12 @@ Stockweg - Krahmerstr.: Verbindung gesperrt, Umweg über 100m südlich gelegene Üb
 Krahmerstr. - Stockweg: Verbindung gesperrt, Umweg über 100m südlich gelegene Überquerungsmöglichkeit	DH:len=200:tl:h=q3,200 4566,3461 4523,3482
 #: next_check ^^^
 #: last_checked ^^^
+# 
+#: next_check_id: HINDENBURGDAMM-2022
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1614884.php (17.11.2025 bis September 2026)
+#: next_check: 2026-09-30 (BA-Pressemitteilung)
+#: valid: 20251117-20260930
+Dürerstr. - Hindenburgdamm: voraussichtlich keine Abbiegemöglichkeit, linken Bürgersteig benutzen	DH:h=q4,160 4476,3820 4570,3884 4551,4042
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: last_checked: 2025-11-08 vvv

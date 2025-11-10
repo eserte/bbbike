@@ -36,7 +36,7 @@ Lahnstr./Mittelbuschweg: Gegenverkehrsregelung	X::inwork::alternating 13500,7018
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: viz2021:13.38017,52.51979, (bis 12.05.2026)
 #: last_checked: 2025-10-12
-#: check_frequency: 30d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-05-12 (VIZ-Verkehrsmeldung, valid geht aber länger)
 #: valid: -20260701
@@ -137,8 +137,8 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # 
 #: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...) (bis 03.07.2025 + ...) (bis 16.08.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.26522,52.45642,15.05.2025,15:55 (bis 04.06.2025) (inaktiv)
-#: source_id: viz2021:13.26522,52.45642, (bis 06.08.2025) (bis 08.10.2025) (bis 14.11.2025)
-#: next_check: 2025-11-14
+#: source_id: viz2021:13.26522,52.45642, (bis 06.08.2025) (bis 08.10.2025) (bis 14.11.2025) (bis 17.12.2025)
+#: next_check: 2025-12-17
 Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # 
 # REMOVED --- #: source_id: viz2021:13.202454,52.523618,18.03.2025,10:00 (bis 11.04.2025) (inaktiv)
@@ -392,14 +392,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-10
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-11-08
+#: last_checked: 2025-11-10
 #: check_frequency: 120d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691

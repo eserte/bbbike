@@ -4754,7 +4754,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-11-01 vvv
+#: last_checked: 2025-11-10 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -5587,23 +5587,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00 (inaktiv)
-# REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
-# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen) ---	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
-#: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025) (inaktiv)
-#: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025) (bis 07.11.2025) (bis 10.11.2025)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m356f5qmh22g
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiclu2wwbebvt4nr5kzd7jmiv7uapqel7bdnwucpnxltglngf3icw4@jpeg
-#: note: Durchfahrt kann manchmal (außerhalb der Arbeitszeiten?) möglich sein, gesehen am 2025-10-31 Fri abends)
-	q4::inwork 10069,10151 10083,10192 10122,10294
-',
-         'from' => 1760392800,
-         'id' => 3458,
-         'text' => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., offiziell ist die Fahrbahn gesperrt, voraussichtlich bis 10.11.2025',
-         'type' => 'handicap',
-         'until' => 1762815599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7032,48 +7016,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
-#: next_check_id: BAHNHOFSTRKOEPENICK-2022
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
-#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
-#: by: https://viz.berlin.de/2023/08/bahnhofstr/
-#: by: https://www.youtube.com/watch?v=Y73X25IYfTM
-#: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (nächste Sperrungen: 23.10.2024-04.11.2024 + 18.6.2025-7.7.2025)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1495775.php
-#: by: https://forum-koepenick.de/sperrung-bahnhofstrasse-koepenick-bauarbeiten-umleitungen (nächste Sperrungen: 19.06.-07.07.2025 und 29.07.-08.08.2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/kiezkamera-treptow-kopenick-brunnensaison-mullproblem-kasernenabriss-und-mehr-13591522.html
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409203271/bahnhofstrasse-koepenick-angekuendigte-sperrung-verschoben.html (von 18.7.2025 (!) auf 18.8.2025 verschoben, Dauer unklar)
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html
-#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/bahnhofstrasse-bahnhof-kopenick/ (vom 18. August 2025, ca. 06:00 Uhr bis zum 10. November 2025)
-#: by[nocache]: https://archive.ph/VXh5h
-#: by: https://www.tagesspiegel.de/berlin/gilt-fur-autos-fussganger-und-fahrrader-kopenicker-bahnhofstrasse-fur-fast-drei-monate-voll-gesperrt-14181980.html
-# REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
-#: source_id[inactive]: bvg2021:269#BVG326513_0
-#: source_id[inactive]: bvg2021:63#BVG326792_0
-#: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
-#: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
-#: source_id[inactive]: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
-#: source_id[inactive]: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
-#: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
-#: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025)
-# REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-11-10 vvv
-Bahnbrücke	q4::inwork 22431,6068 22467,6135
-# REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
-# REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
-# REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
-# REMOVED (nicht mehr) --- Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
-# REMOVED --- #: osm_watch: way id="25663270" version="21" --- Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-',
-         'from' => 1755381600,
-         'id' => 3882,
-         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 18.08.2025 6:00 Uhr bis 10.11.2025',
-         'type' => 'gesperrt',
-         'until' => 1762743600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9139,7 +9082,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
-#: last_checked: 2025-10-31 vvv
+#: last_checked: 2025-11-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9240,16 +9183,17 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum)
+#: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026)
 #: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
-#: last_checked: 2025-11-03 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-11-10 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-02 (VIZ-Verkehrsmeldung)
 	q3::inwork 12627,19317 12457,19248
 ',
          'from' => 1750748520,
          'id' => 4371,
-         'text' => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, Ende der Sperrung unbekannt',
+         'text' => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis 02.03.2026',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1772492399
        },
        undef,
        undef,
@@ -9409,7 +9353,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
        undef,
        {
          'data' => '#: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (T,G)
+#: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
 #: last_checked: 2025-10-29
@@ -9557,14 +9501,14 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: last_checked: 2025-10-27
+#: last_checked: 2025-11-10
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 ',
          'from' => 1754431200,
          'id' => 4411,
-         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Mitte Oktober 2025: Diagonalweg ist gesperrt)',
+         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand November 2025: Diagonalweg ist gesperrt)',
          'type' => 'gesperrt',
          'until' => 1767222000
        },
@@ -9930,7 +9874,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
 #: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
-#: source_id: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
+#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: also_indoor: traffic (T,G,H,W)
 #: last_checked: 2025-11-05 vvv
 #: check_frequency: 14d vvv
@@ -9993,7 +9937,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
 #: note: laut rbb & VIZ Beginn einen Tag später
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-10
 # REMOVED --- #: check_frequency: 1d --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
 #: next_check: 2025-11-14 (erste VIZ-Verkehrsmeldung)
 	q4::inwork 13357,9313 13489,9456

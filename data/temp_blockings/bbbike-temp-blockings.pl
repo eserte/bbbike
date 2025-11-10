@@ -29584,7 +29584,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-11-01 vvv
+#: last_checked: 2025-11-10 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -35206,7 +35206,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-10-14 00:00:00"), # $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2025-11-10 23:59:59"), # 1638803714, # $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
+       until => 1762801680, # $isodate2epoch->("2025-11-10 23:59:59"), # 1638803714, # $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
 #      text  => 'Brachvogelstr./Alexandrinenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021', # -> "Radfahrer frei"
        text  => 'Alexandrinenstr.: Bauarbeiten zwischen Gitschiner Str. und Brachvogelstr., offiziell ist die Fahrbahn gesperrt, voraussichtlich bis 10.11.2025',
        type  => 'handicap',
@@ -35215,7 +35215,7 @@ EOF
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen) ---	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
 #: source_id: viz2021:13.39952,52.49828,14.10.2025,12:00 (Sperrung zwischen Gitschniner und Brachvogelstr. (laut rbb auch für Radverkehr), bis 28.10.2025) (inaktiv)
-#: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025) (bis 07.11.2025) (bis 10.11.2025)
+#: source_id: viz2021:13.39952,52.49828,15.10.2025,07:00 (bis 31.10.2025) (bis 07.11.2025) (bis 10.11.2025) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m356f5qmh22g
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiclu2wwbebvt4nr5kzd7jmiv7uapqel7bdnwucpnxltglngf3icw4@jpeg
 #: note: Durchfahrt kann manchmal (außerhalb der Arbeitszeiten?) möglich sein, gesehen am 2025-10-31 Fri abends)
@@ -41680,7 +41680,7 @@ EOF
 #: source_id[inactive]: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
 #: source_id[inactive]: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
 #: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
-#: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025)
+#: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025) (inaktiv)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-11-10 vvv
 Bahnbrücke	q4::inwork 22431,6068 22467,6135
 # REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
@@ -48908,7 +48908,7 @@ EOF
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
-#: last_checked: 2025-10-31 vvv
+#: last_checked: 2025-11-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -49140,17 +49140,18 @@ EOF
 EOF
      },
      { from  => 1750748520, # 2025-06-24 09:02
-       until => undef, # 1761951540, # 2025-10-31 23:59
+       until => $isodate2epoch->("2026-03-02 23:59:59"), # undef, # 1761951540, # 2025-10-31 23:59
 #      text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, vom 25.06.2025 09:02 bis 31.10.2025',
-       text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, Ende der Sperrung unbekannt',
+       text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis 02.03.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum)
+#: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026)
 #: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
-#: last_checked: 2025-11-03 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-11-10 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-02 (VIZ-Verkehrsmeldung)
 	q3::inwork 12627,19317 12457,19248
 EOF
      },
@@ -49584,7 +49585,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (T,G)
+#: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
 #: last_checked: 2025-10-29
@@ -49821,13 +49822,13 @@ EOF
      },
      { from  => 1754431200, # 2025-08-06 00:00
        until => 1767222000, # 2026-01-01 00:00
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Mitte Oktober 2025: Diagonalweg ist gesperrt)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand November 2025: Diagonalweg ist gesperrt)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: last_checked: 2025-10-27
+#: last_checked: 2025-11-10
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50568,7 +50569,7 @@ EOF
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
 #: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
-#: source_id: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
+#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: also_indoor: traffic (T,G,H,W)
 #: last_checked: 2025-11-05 vvv
 #: check_frequency: 14d vvv
@@ -50651,7 +50652,7 @@ EOF
 #: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
 #: note: laut rbb & VIZ Beginn einen Tag später
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-10
 # REMOVED --- #: check_frequency: 1d --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
 #: next_check: 2025-11-14 (erste VIZ-Verkehrsmeldung)
 	q4::inwork 13357,9313 13489,9456
