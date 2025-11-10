@@ -145,12 +145,7 @@ if ($do_cache) {
 
 $ua->agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0");
 
-print <<'EOF';
-#: map: polar
-#: line_arrow: last
-#: 
-EOF
-
+my @total_results;
 for my $tile (@tiles) {
     my ($z, $x, $y) = @$tile;
     my $file = "/tmp/tile_${z}_${x}_${y}.mvt";
@@ -185,12 +180,25 @@ for my $tile (@tiles) {
     }
     my $results = eval { decode_json($json) };
     if ($results && ref $results eq 'ARRAY') {
-	for my $seq (@$results) {
-	    print "#: url: $seq->{url}\n";
-	    print "start_captured_at=$seq->{start_captured_at} creator=$seq->{creator} make=$seq->{make} end_captured_at=$seq->{end_captured_at} start_id=$seq->{start_id} sequence=$seq->{sequence}\tX " . join(" ", map { "$_->[1],$_->[0]" } @{ $seq->{coordinates} }) . "\n";
-	}
+	push @total_results, @$results;
     }
     # keep cached file!        unlink $file; # Optional: cleanup
+}
+
+print <<'EOF';
+#: map: polar
+#: line_arrow: last
+#: 
+EOF
+
+for my $seq (sort {
+       ($a->{start_captured_at} cmp $b->{start_captured_at})
+    || ($a->{coordinates}[0][1] <=> $b->{coordinates}[0][1])
+    || ($a->{coordinates}[0][0] <=> $b->{coordinates}[0][0])
+    || ($a->{sequence}          cmp $b->{sequence})
+} @total_results) {
+    print "#: url: $seq->{url}\n";
+    print "start_captured_at=$seq->{start_captured_at} creator=$seq->{creator} make=$seq->{make} end_captured_at=$seq->{end_captured_at} start_id=$seq->{start_id} sequence=$seq->{sequence}\tX " . join(" ", map { "$_->[1],$_->[0]" } @{ $seq->{coordinates} }) . "\n";
 }
 
 __END__
