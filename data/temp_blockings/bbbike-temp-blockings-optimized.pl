@@ -3295,8 +3295,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059,12.08.2024,07:00 (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.5384,52.42059, (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025)
-#: osm_watch: way id="152466403" version="23"
-#: osm_watch: way id="1424980083" version="2"
+#: osm_watch: way id="152466403" version="24"
+#: osm_watch: way id="1424980083" version="3"
 #: osm_watch: way id="1082710233" version="5"
 #: osm_watch: note 4444162 5
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
@@ -4687,7 +4687,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18871,9565 18876,9512
 #: osm_watch[closed]: note 3658253 6
-#: osm_watch: way id="192487145" version="34"
+#: osm_watch: way id="192487145" version="35"
 #: osm_watch: note 4481312 6
 #: check_frequency: 60d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
@@ -4696,8 +4696,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: last_checked: 2025-10-03 (mapillary)
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="41"
-#: osm_watch: way id="580507889" version="35"
+#: osm_watch: way id="31525573" version="43"
+#: osm_watch: way id="580507889" version="37"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
 #: last_checked: 2025-11-05
@@ -7095,7 +7095,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
-#: last_checked: 2025-10-22
+#: last_checked: 2025-11-11
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -9082,6 +9082,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
+#: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
 #: last_checked: 2025-11-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
@@ -9165,7 +9166,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-02 (traffic) vvv
+#: last_checked: 2025-11-11 (traffic) vvv
 #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
@@ -9268,7 +9269,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-10-21
+#: last_checked: 2025-11-11
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9353,10 +9354,10 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
        undef,
        {
          'data' => '#: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (ex-T,G)
+#: also_indoor: traffic (re-T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-10-29
+#: last_checked: 2025-11-11 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 7628,9365 7509,9337
 ',
@@ -9500,6 +9501,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
+#: osm_watch: note 5038218 2
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: last_checked: 2025-11-10
 #: check_frequency: 14d
@@ -9520,6 +9522,7 @@ Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: also_indoor: traffic (T)
+#: last_checked: 2025-11-11
 #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 # REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
@@ -9654,7 +9657,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2025-10-26
+#: last_checked: 2025-11-11
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
@@ -9873,6 +9876,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifikftud5lbc4zhtz5kjrx4fyvomsalwvil26zy5ff6mpmqnqf7tm@jpeg
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
+#: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
 #: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: also_indoor: traffic (T,G,H,W)
@@ -9933,18 +9937,18 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027 (Beginn einen Tag später)
-#: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025)
-#: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026)
+#: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+#: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
 #: note: laut rbb & VIZ Beginn einen Tag später
 #: last_checked: 2025-11-10
 # REMOVED --- #: check_frequency: 1d --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
-#: next_check: 2025-11-14 (erste VIZ-Verkehrsmeldung)
+#: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 	q4::inwork 13357,9313 13489,9456
 ',
          'from' => 1761519600,
          'id' => 4472,
-         'text' => 'Bouchéstr.: Sanierungsarbeiten zwischen Karl-Kunger-Str. und Heidelberger Str., Sperrung der Fahrbahn, vom 28.10.2025 bis 14.11.2025, evtl. wird die Sperrung verlängert',
+         'text' => 'Bouchéstr.: Sanierungsarbeiten zwischen Karl-Kunger-Str. und Heidelberger Str., Sperrung der Fahrbahn, vom 28.10.2025 bis 28.11.2025, evtl. wird die Sperrung verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -10132,11 +10136,14 @@ Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
          'data' => '#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
 #: next_check: 2026-12-31 vvv
 #: also_indoor: traffic (G[falsch],H[falsch],W[falsch],A[falsch],no-T)
-#: last_checked: 2025-11-09 (traffic)
+#: note: Halteverbotsschilder von 17.11.2025 bis März 2026
+#: last_checked: 2025-11-11
 #: check_frequency: 7d
-Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
+#: next_check: 2025-11-16
+#: XXX activate bbd record and change text!
+#Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-11-07 (traffic)
+#: last_checked: 2025-11-11
 #: check_frequency: 120d
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: next_check ^^^
@@ -10144,14 +10151,14 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'dont_check_date' => 1,
          'from' => 1761890400,
          'id' => 4489,
-         'text' => 'Knaackstr.: Bauarbeiten zwischen Diedenhofer Str. und Prenzlauer Allee Berlin, Sperrung geplant (Stand 2.11.2025: noch keine Sperrung), außerdem Sperrung der Kolmarer Str., vom 01.11.2025 07:00 bis Ende 2026',
+         'text' => 'Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
          'type' => 'handicap',
          'until' => 1798736400
        },
        {
          'data' => '#: osm_watch[closed]: note 4953648 2
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-02
+#: last_checked: 2025-11-11
 #: check_frequency: 30d
 #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
