@@ -745,6 +745,13 @@ sub action_old_bbbike_data {
 		    }
 		    $changes += $d->copy($file, $destfile);
 		    copy_stat $file, $destfile;
+		} else {
+		    my @stat_file = stat($file);
+		    my @stat_destfile = stat($destfile);
+		    if ($stat_file[9] != $stat_destfile[9]) {
+			copy_stat $file, $destfile;
+			$changes++;
+		    }
 		}
 	    }
 	    my $relpath = "data/$file";
