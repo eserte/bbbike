@@ -643,7 +643,7 @@ Fürstenberger Str.: Asphalt	Q0 10311,14613 10468,14636
 #: osm_watch: way id="4606258" version="32"
 #: osm_watch: way id="184077626" version="21"
 #: osm_watch: way id="49180827" version="25"
-#: last_checked: 2025-11-02
+#: last_checked: 2025-11-12
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1285,6 +1285,7 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibnuhe3q7e6ci3bfdidr4z4qohhxubhsqa5vauzvf46ku3afbr6vu@jpeg (Sackgasse gilt nicht für Radfahrer)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4d36rcic22f (Abschnitt 3 bis 21.11.2025)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidoya7f5k5nzfpsodhx76d475ab4fsankrsvmznmq4lbyat47dps4@jpeg (Sackgasse gilt nicht für Radfahrer)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251112 (Sperrung des Kreuzungsbereichs Kastanienallee für den Kfz-Verkehr)
 #: source_id: viz2021:13.37541,52.59714,23.09.2025,07:00 (bis 10.10.2025) (inaktiv)
 #: source_id: viz2021:13.38052,52.59488, (bis 29.10.2025) (bis 21.11.2025)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
@@ -18875,7 +18876,7 @@ Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3452,19392
 Maximilianstr. (Rummelsburg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16420,11189 16465,11313
 # 
 #: by: Felix Beutler: vvv
-Unterbaumstr.: Kopfsteinpflaster	Q2 8488,12920 8502,12935 8525,12958 8553,12991
+Unterbaumstr.: Kopfsteinpflaster	Q2 8492,12914 8506,12932 8525,12958 8553,12991
 #: corrected_by: srt (nur dieser Abschnitt)
 Unterbaumstr.: Asphalt	Q0 8553,12991 8578,13020
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: confirmed_by: srt --- Nordufer: Verbundsteinpflaster	Q1 7212,14738 7427,14648 7458,14643
@@ -34450,5 +34451,8 @@ Kreuzungsbereich mit abgefrästem Kopfsteinpflaster	Q1- 12228,14083
 Kreuzungsbereich asphaltiert	Q0 8947,5434
 Einmündungsbereich asphaltiert	Q0 8872,5484
 Einmündungsbereich asphaltiert	Q0 3865,6758
+Kreuzungsbereich asphaltiert	Q0 7648,15741
+Einmündungsbereich mit Kopfsteinpflaster	Q2 9474,15714
+Einmündungsbereich mit Kopfsteinpflaster	Q2 10105,14608
 #: ignore ^^^
 #: section ^^^

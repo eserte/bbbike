@@ -11,7 +11,7 @@
 #: source_id: viz2021:13.45883,52.51144,16.10.2025,07:00 (bis 02.12.2025)
 #: osm_watch: note 4669838 3
 #: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
-#: last_checked: 2025-11-06
+#: last_checked: 2025-11-12
 #: next_check: 2025-12-02
 #: valid: -20251203
 Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::inwork::alternating 14127,11811
@@ -21,11 +21,11 @@ Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::in
 #: valid: -20261231
 B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # 
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m272aka72s2t (bis Mitte November 2025)
-#: source_id: viz2021:13.14647,52.4557, (bis 12.11.2025)
-#: next_check: 2025-11-12
-#: valid: -20251112
-Kladower Damm/Runebergweg/Topeliusweg: Gegenverkehrsregelung	X::inwork::alternating -6982,5237
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m272aka72s2t (bis Mitte November 2025)
+# REMOVED --- #: source_id: viz2021:13.14647,52.4557, (bis 12.11.2025) (inaktiv)
+# REMOVED --- #: next_check: 2025-11-12
+# REMOVED --- #: valid: -20251112
+# REMOVED --- Kladower Damm/Runebergweg/Topeliusweg: Gegenverkehrsregelung	X::inwork::alternating -6982,5237
 # 
 #: source_id: viz2021:13.44834,52.4684,26.09.2025,07:00 (bis 21.11.2025)
 #: last_checked: 2025-09-27
@@ -332,7 +332,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2025-11-02
+#: last_checked: 2025-11-12
 #: check_frequency: 90d
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -3935,7 +3935,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-12 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 	X::inwork 9121,12514
@@ -4335,7 +4335,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="7041133991" version="2"
 #: osm_watch: note 4938354 1
 #: note: Anforderungsampel
-#: last_checked: 2025-09-04 (mapillary)
+#: last_checked: 2025-11-12
 #: check_frequency: 120d
 #: next_check: 2025-12-26 (VIZ-Verkehrsmeldung)
 	X::inwork 8250,14672
