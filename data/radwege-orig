@@ -882,7 +882,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: note: Scharnweberstraße/Seidelstr./Berliner Str., Richtung Wedding
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
-#: last_checked: 2025-09-03 vvv
+#: last_checked: 2025-11-10 (okas) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2026-10-01 vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
@@ -896,8 +896,8 @@ Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3319,18043 3429,17987 3570,17938
 #: XXX früher: asphaltiert	RW2; 3570,17938 3628,17935
 	RW2; 3570,17938 3628,17935
 #: XXX früher: Verbundsteinpflaster, Bord gegen Gehweg	RW2; 3628,17935 3706,17931 3833,17929 3930,17923
-#: XXX zwischenzeitlich	RW2; 3628,17935 3706,17931 3833,17929 3930,17923
-provisorische Radspur	RW4; 3628,17935 3706,17931 3833,17929 3930,17923
+#: XXX zwischenzeitlich: provisorische Radspur	RW4; 3628,17935 3706,17931 3833,17929 3930,17923
+	RW2; 3628,17935 3706,17931 3833,17929 3930,17923
 Verbundsteinpflaster	RW2; 3930,17923 4016,17918
 #: next_check ^^^
 #: check_frequency ^^^
@@ -3059,7 +3059,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-13 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197

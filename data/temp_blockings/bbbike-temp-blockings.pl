@@ -29106,7 +29106,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-11-07
+#: last_checked: 2025-11-13
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -40986,7 +40986,7 @@ EOF
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
 #: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
-#: last_checked: 2025-09-03
+#: last_checked: 2025-11-10 (okas)
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -41003,7 +41003,7 @@ EOF
 #: source_id: viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv) (bis 31.12.2025)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2025-09-03
+#: last_checked: 2025-11-10 (okas)
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
@@ -43487,7 +43487,7 @@ EOF
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-11-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -45060,7 +45060,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-13 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -48190,10 +48190,10 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # 
 #: note: hier Arbeiten an Gasleitungen, aber in der gleichen Gegend
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025)
-#: next_check: 2025-11-14
+#: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025)
-#: next_check: 2025-11-14
+#: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -48650,17 +48650,17 @@ EOF
      { from  => 1746939600, # 2025-05-11 07:00
        until => undef, # 1753714800, # 2025-07-28 17:00
 #      text  => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, vom 12.05.2025 07:00 bis 28.07.2025 17:00',
-       text  => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, voraussichtlich bis 14.11.2025',
+       text  => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, voraussichtlich bis 28.04.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025) (inaktiv)
-#: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
+#: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025) (bis 28.04.2026)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
 #: last_checked: 2025-11-03
 #: check_frequency: 30d
-#: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
 EOF
      },
@@ -50450,7 +50450,7 @@ EOF
 #: by: https://bvg.de/dam/jcr:d7121a77-8148-45ab-a019-8e2e57fa9e29/Karte_Map_M1_12.png (Ersatzverkehr)
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2025-10-22
+#: last_checked: 2025-11-10 (okas)
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -50667,6 +50667,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027 (Beginn einen Tag später)
+#: by: #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251213
 #: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
@@ -50761,14 +50762,14 @@ EOF
 EOF
      },
      { from  => 1761458400, # 2025-10-26 07:00
-       until => $isodate2epoch->("2025-11-14 23:59:59"), # 1763247599, # 2025-11-15 23:59
+       until => 1763070224, # $isodate2epoch->("2025-11-14 23:59:59"), # 1763247599, # 2025-11-15 23:59
        text  => 'Greifswalder Str. (Mahlsdorf): Bauarbeiten zwischen An den Siedlergärten und Am Schlehdorn, 20m der Fahrbahn sind gesperrt, vom 27.10.2025 07:00 Uhr bis Mitte November 2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251024
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m45q5j435s2s
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicxp3eazniroezqofyicnijh4hb3nud6niynhbf3gmq3xsqahqwdi@jpeg (gesperrter Bereich 20m, deshalb q4 -> q3)
-#: source_id: viz2021:13.63083,52.52976,27.10.2025,07:00 (bis 14.11.2025)
+#: source_id: viz2021:13.63083,52.52976,27.10.2025,07:00 (bis 14.11.2025) (vorfristig inaktiv)
 	q3::inwork 25923,14081 25778,14058
 EOF
      },
@@ -50822,7 +50823,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
 #: source_id: viz2021:13.39202,52.52009,28.10.2025,07:00 (bis 02.12.2025)
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-10 (okas) vvv
 #: next_check: 2025-12-02 (VIZ-Verkehrsmeldung) vvv
 Georgenstr.	q4::inwork 9441,12670 9568,12688
 Planckstr.	q4::inwork 9435,12698 9441,12670
@@ -50852,12 +50853,12 @@ EOF
 EOF
      },
      { from  => 1762038000, # 2025-11-02 00:00
-       until => $isodate2epoch->("2025-11-14 23:59:59"), # 1763247599, # 2025-11-15 23:59
+       until => 1763070196, # $isodate2epoch->("2025-11-14 23:59:59"), # 1763247599, # 2025-11-15 23:59
        text  => 'Dammweg: Sanierung der Fahrbahn zwischen Köpenicker Landstraße und Neue Krugallee, Sperrung, vom 3.11.2025 bis Mitte November 2025 ',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251101
-#: source_id: viz2021:13.47869,52.47755,03.11.2025,06:00 (bis 14.11.2025)
+#: source_id: viz2021:13.47869,52.47755,03.11.2025,06:00 (bis 14.11.2025) (vorfristig inaktiv)
 	q4::inwork 15869,8355 15761,8257 15708,8212 15692,8198 15557,8077
 EOF
      },
@@ -50891,7 +50892,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch[closed]: note 4953648 2
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-11
+#: last_checked: 2025-11-13
 #: check_frequency: 30d
 #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777

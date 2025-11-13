@@ -4589,7 +4589,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-11-07
+#: last_checked: 2025-11-13
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6852,7 +6852,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
 #: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
-#: last_checked: 2025-09-03
+#: last_checked: 2025-11-10 (okas)
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -6870,7 +6870,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv) (bis 31.12.2025)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2025-09-03
+#: last_checked: 2025-11-10 (okas)
 #: check_frequency: 360d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
@@ -7337,7 +7337,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-11-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -7680,7 +7680,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-13 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8862,10 +8862,10 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # 
 #: note: hier Arbeiten an Gasleitungen, aber in der gleichen Gegend
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025)
-#: next_check: 2025-11-14
+#: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025)
-#: next_check: 2025-11-14
+#: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -8989,17 +8989,17 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        {
          'data' => '#: source_id: viz2021:13.469695,52.508725,12.05.2025,07:00 (bis 28.07.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025) (inaktiv)
-#: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025)
+#: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025) (bis 28.04.2026)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
 #: last_checked: 2025-11-03
 #: check_frequency: 30d
-#: next_check: 2025-11-14 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
 ',
          'from' => 1746939600,
          'id' => 4339,
-         'text' => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, voraussichtlich bis 14.11.2025',
+         'text' => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, voraussichtlich bis 28.04.2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9786,7 +9786,7 @@ Corinthstr.	q4::inwork 14447,10491 14608,10409
 #: by: https://bvg.de/dam/jcr:d7121a77-8148-45ab-a019-8e2e57fa9e29/Karte_Map_M1_12.png (Ersatzverkehr)
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2025-10-22
+#: last_checked: 2025-11-10 (okas)
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -9919,6 +9919,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027 (Beginn einen Tag später)
+#: by: #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251213
 #: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
@@ -10014,19 +10015,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251024
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m45q5j435s2s
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicxp3eazniroezqofyicnijh4hb3nud6niynhbf3gmq3xsqahqwdi@jpeg (gesperrter Bereich 20m, deshalb q4 -> q3)
-#: source_id: viz2021:13.63083,52.52976,27.10.2025,07:00 (bis 14.11.2025)
-	q3::inwork 25923,14081 25778,14058
-',
-         'from' => 1761458400,
-         'id' => 4480,
-         'text' => 'Greifswalder Str. (Mahlsdorf): Bauarbeiten zwischen An den Siedlergärten und Am Schlehdorn, 20m der Fahrbahn sind gesperrt, vom 27.10.2025 07:00 Uhr bis Mitte November 2025',
-         'type' => 'handicap',
-         'until' => 1763161199
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Sind die Wege weiterhin gesperrt?
 #: last_checked: 2025-10-25
@@ -10067,7 +10056,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
 #: source_id: viz2021:13.39202,52.52009,28.10.2025,07:00 (bis 02.12.2025)
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-10 (okas) vvv
 #: next_check: 2025-12-02 (VIZ-Verkehrsmeldung) vvv
 Georgenstr.	q4::inwork 9441,12670 9568,12688
 Planckstr.	q4::inwork 9435,12698 9441,12670
@@ -10103,17 +10092,7 @@ Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
          'type' => 'handicap',
          'until' => 1766185200
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251101
-#: source_id: viz2021:13.47869,52.47755,03.11.2025,06:00 (bis 14.11.2025)
-	q4::inwork 15869,8355 15761,8257 15708,8212 15692,8198 15557,8077
-',
-         'from' => 1762038000,
-         'id' => 4488,
-         'text' => 'Dammweg: Sanierung der Fahrbahn zwischen Köpenicker Landstraße und Neue Krugallee, Sperrung, vom 3.11.2025 bis Mitte November 2025 ',
-         'type' => 'handicap',
-         'until' => 1763161199
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
 #: next_check: 2026-12-31 vvv
@@ -10140,7 +10119,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch[closed]: note 4953648 2
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-11
+#: last_checked: 2025-11-13
 #: check_frequency: 30d
 #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
