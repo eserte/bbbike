@@ -8691,13 +8691,14 @@ Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/fur-bruckenneubau-der-nuthestrasse-horstweg-in-potsdam-wird-komplett-gesperrt-13963847.html
 #: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
 #: by: https://www.potsdam.de/de/486-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-herbstferien
+#: by: https://www.mobil-potsdam.de/de/baustellen/geplant/?c=5367
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 ',
-         'from' => 1762988400,
+         'from' => 1764198000,
          'id' => 4289,
-         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 14.11.2025 22:00 Uhr bis zum 17.11.2025 05:00 Uhr',
+         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 28.11.2025 22:00 Uhr bis zum 01.12.2025 06:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1763352000
+         'until' => 1764565200
        },
        undef,
        {

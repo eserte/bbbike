@@ -47904,11 +47904,11 @@ EOF
 	2::inwork 34802,45368 34613,45287 34518,45231 34093,44866 32572,43561 32518,43468 32401,42954 32348,42876 30754,42070
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-13 00:00:00"), # $isodate2epoch->("2025-08-07 00:00:00"), # $isodate2epoch->("2025-04-03 00:00:00"),
-       until => $isodate2epoch->("2025-11-17 05:00:00"), # $isodate2epoch->("2025-08-11 06:00:00"), # $isodate2epoch->("2025-04-07 06:00:00"),
+     { from  => $isodate2epoch->("2025-11-27 00:00:00"), # $isodate2epoch->("2025-08-07 00:00:00"), # $isodate2epoch->("2025-04-03 00:00:00"),
+       until => $isodate2epoch->("2025-12-01 06:00:00"), # $isodate2epoch->("2025-08-11 06:00:00"), # $isodate2epoch->("2025-04-07 06:00:00"),
 #      text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 7.4.2025 06:00 Uhr',
 #      text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 8.8.2025 22:00 Uhr bis zum 11.8.2025 06:00 Uhr',
-       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 14.11.2025 22:00 Uhr bis zum 17.11.2025 05:00 Uhr',
+       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 28.11.2025 22:00 Uhr bis zum 01.12.2025 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025)
@@ -47919,6 +47919,7 @@ EOF
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/fur-bruckenneubau-der-nuthestrasse-horstweg-in-potsdam-wird-komplett-gesperrt-13963847.html
 #: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
 #: by: https://www.potsdam.de/de/486-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-herbstferien
+#: by: https://www.mobil-potsdam.de/de/baustellen/geplant/?c=5367
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 EOF
      },
