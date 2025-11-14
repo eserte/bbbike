@@ -7,7 +7,15 @@ on:
 
 jobs:
   test_mac:
-    runs-on: macos-13
+    name: Built BBBike on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          #- os: macos-13
+          - os: macos-14
+          - os: macos-15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,10 +45,19 @@ jobs:
           (sleep 10; twm) &
           echo "DISPLAY=:123" >> $GITHUB_ENV
         
-      - name: Install prerequisites (cpan)
+      - name: Install cpanminus
+        run: |
+          brew install cpanminus
+      - name: Install Tk
+        # special treatment necessary: env vars need to be set so JPEG/Makefile.PL works
+        env:
+          CPATH: /opt/homebrew/include
+          LIBRARY_PATH: /opt/homebrew/lib
+        run: |
+          cpanm --quiet --notest Tk
+      - name: Install CPAN dependencies
         run: |
           set -ex
-          brew install cpanminus
           PATH="/usr/local/opt/libxml2/bin:$PATH" LDFLAGS="-L/usr/local/opt/libxml2/lib" CPPFLAGS="-I/usr/local/opt/libxml2/include" PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig" cpanm --quiet --notest XML::LibXML || ( cat ~/.cpanm/work/*/build.log; false )
           # https://rt.cpan.org/Ticket/Display.html?id=153923
           cpanm --quiet 'GD~<=2.78'
@@ -66,7 +83,6 @@ jobs:
               Template \
               Text::Unidecode \
               Tie::IxHash \
-              Tk \
               YAML::XS \
               XML::Twig \
             || ( cat ~/.cpanm/work/*/build.log; false )
