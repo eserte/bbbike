@@ -884,7 +884,7 @@ Ortolfstr.: Komplettierung der Radverkehrsanlage geplant	?::projected; 19477,472
 # 
 #: XXX Ag.8
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf
-#: osm_watch: way id="4920787" version="36"
+#: osm_watch: way id="4920787" version="37"
 #: last_checked: 2025-11-05
 #: check_frequency: 120d
 Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 19769,-495 19787,-494 19912,-496 20048,-499 20127,-502
@@ -1414,7 +1414,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/gruenes-licht-fuer-zwei-radprojekte_a387901
 #: by: https://viz.berlin.de/aktuelle-meldungen/neue-radverkehrsanlage-zwischen-weissensee-und-alt-hohenschonhausen/ (Vorbereitungen ab 11. September 2025, Bauarbeiten ab September 2025)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1596814.php
-#: osm_watch: way id="111283481" version="29"
+#: osm_watch: way id="111283481" version="30"
 #: osm_watch: note 5043311 1
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
 #: source_id: viz2021:13.48997,52.55798,29.12.2022,09:38 (bis 25.1.2023) (später am Tag wieder entfernt, inaktiv)
@@ -2615,8 +2615,8 @@ Tietzenweg: geplante Fahrradstraße, evtl. Abfräsung des Kopfsteinpflasters	?::pr
 #: by: https://www.infravelo.de/projekt/togostrasse/ (3. Quartal 2025 - 4. Quartal 2025)
 #: by: https://entwicklungsstadt.de/wedding-arbeiten-an-neuer-fahrradstrasse-in-der-togostrasse-haben-begonnen/
 #: source_id: viz2021:13.33499,52.55607,23.09.2025,07:00 (zwischen Otawistr. und Transvaalstr. (?), bis 30.11.2025)
-#: osm_watch: way id="597289462" version="14"
-#: osm_watch: way id="4605293" version="35"
+#: osm_watch: way id="597289462" version="15"
+#: osm_watch: way id="4605293" version="37"
 #: osm_watch: note 3954758 10
 #: XXX laut osm note: "Togostraße wird 2024 Fahrradstraße zwischen Transvaalstraße und Afrikanische Str."; mittlerweile Korrektur auf 2025 oder noch später
 #: XXX Einbahnstraßenregelung im Manga-Bell-Platz wird anscheinend umgedreht, allerdings mit Radfahrer frei
@@ -3656,8 +3656,9 @@ Wiesbadener Str./Johannisberger Str.: Zebrastreifen geplant (2020)	?::projected 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5602 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/VBQIZ07zSqRn0PJiuzww66shTLHEpcb57SIcpe1l/tgGNuYgV/44-Anlagen/04/B0090ZB1.pdf (kein konkreter Termin)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7459 (neuer Antrag zu einer Straßenquerung in der Gegend)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410438041/berlin-suedostallee-johannisthal-ohne-ampel-risiko-fuer-menschen.html
 #: next_check_id: IMBROMBEERWINKEL-2023
-#: XXX siehe auch provisorische Fußgängerampel an dieser Stelle
+#: XXX siehe auch provisorische Fußgängerampel an dieser Stelle (nach den Bauarbeiten am Sterndamm wieder abgebaut)
 #: note: nicht in der sen/uvk-Liste aufgeführt
 #: last_checked: 2025-09-10
 # REMOVED --- #: check_frequency: 120d
@@ -8718,7 +8719,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 # REMOVED --- #: note: bei rbb gilt die Sperrung in beiden Richtungen, keine Einschränkung auf den Kfz-Verkehr
 #: osm_watch: way id="1428277419" version="3"
 #: osm_watch: way id="1428277415" version="3"
-#: osm_watch: way id="718428138" version="12"
+#: osm_watch: way id="718428138" version="13"
 #: osm_watch: way id="881597739" version="7"
 #: osm_watch: way id="148671114" version="27"
 #: osm_watch: way id="1428277424" version="1"
@@ -9263,7 +9264,7 @@ Neues Ufer: verkehrsberuhigter Bereich geplant	? 4283,13660 4363,13336
 #: by: https://www.morgenpost.de/bezirke/mitte/article410005636/fahrradfreundlicher-wedding-hier-entstehen-neue-routen.html
 #: osm_watch: way id="1352120015" version="4"
 #: osm_watch: way id="4603200" version="32"
-#: osm_watch: note 3954759 4
+#: osm_watch: note 3954759 5
 #: last_checked: 2025-11-12
 # REMOVED --- #: check_frequency: 21d
 #: next_check: 2025-12-31 (entwicklungsstadt website, infravelo)
@@ -9661,6 +9662,11 @@ Alte Jakobstr./Kommandantenstr.: modaler Filter geplant	?::projected 10436,11386
 #: osm_watch: way id="25309641" version="10"
 #: note: bei osm bicycle=no
 Fehrbelliner Str.: ist hier zeitweise oder dauerhaft gesperrt?	? -3761,15604 -3727,15695
+# 
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24095.pdf (angeordnet, Finanzierung nicht gesichert)
+#: last_checked: 2025-11-05
+#: check_frequency: 180d
+Königsheideweg/Johannisthaler Chaussee: entsteht hier eine Ampel?	?::projected 16269,5206 16279,5170 16285,5129
 # 
 #: section ^^^
 #: ignore ^^^
@@ -10339,6 +10345,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen, Sackgasse	?::projected -
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/ungenutzter-teil-des-georgen-parochial-iii-friedhofs-wird-bebaut_a379912
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6547 (Vorlage zur Kenntnisnahme)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/streit-um-geplantes-friedhofs-viertel-an-diesen-baumen-scheitert-ein-schul-neubau-in-berlin-14812133.html (wird nicht realisiert?)
+#: by: https://entwicklungsstadt.de/pankow-stoppt-wohnquartier-und-schulneubau-auf-friedhofsflaeche-in-weissensee/
 #: last_checked: 2025-08-17
 #: check_frequency: 720d
 Friedhof Georgen-Parochial III: Wohngebiet entsteht, evtl. mit einem Weg zwischen Roelckestr. und Gustav-Adolf-Str.	?::projected 12969,16908 13129,17024 13272,16672 13184,16595 13128,16654 13162,16685 12969,16908
@@ -12217,6 +12224,7 @@ Regionalbahnhof Köpenick	?::inwork 22530,6100
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/zukunft-planen/aktuelle-projekte/artikel.1441344.php
 #: by: https://entwicklungsstadt.de/bauvorhaben-marienhoefe-neues-quartier-fuer-tempelhof-schoeneberg/ (Stand Nov 2024: Startzeitpunkt unsicher)
 #: by: https://entwicklungsstadt.de/neues-stadtquartier-in-tempelhof-baubeginn-fuer-die-marienhoefe/ (erste Gebäude 2027 fertig, nördlicher Bauabschnitt bis August 2028)
+#: by: https://entwicklungsstadt.de/marienhoefe-in-tempelhof-grundstein-fuer-neues-stadtquartier-gelegt/
 #: XXX überwiegend Fuß- und Radwege sowie verkehrsberuhigte Bereiche geplant
 #: last_checked: 2025-10-29
 #: check_frequency: 540d

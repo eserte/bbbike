@@ -67,9 +67,9 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="23"
-#: osm_watch: way id="1072662717" version="27"
-#: last_checked: 2025-11-11
+#: osm_watch: way id="1072662716" version="24"
+#: osm_watch: way id="1072662717" version="28"
+#: last_checked: 2025-11-12 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -811,13 +811,13 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 ### Moabit ###
 # 
-#: next_check_id: PERLEBERGER-2024
-#: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
-#: also_indoor: traffic (T,G,H,W)
-#: last_checked: 2025-11-05 (traffic)
-#: check_frequency: 10d (traffic)
+# REMOVED (möglicherweise beendet) --- #: next_check_id: PERLEBERGER-2024
+# REMOVED --- #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (T,ex-G,H,ex-W)
+# REMOVED --- #: last_checked: 2025-11-05 (traffic)
+# REMOVED --- #: check_frequency: 10d (traffic)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
-Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
+# REMOVED --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
 #: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834

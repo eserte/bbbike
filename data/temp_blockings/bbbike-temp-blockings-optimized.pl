@@ -4186,7 +4186,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
 #: also_indoor: webcam https://portal1391.webcam-profi.de/
-#: osm_watch: node id="3204993764" version="7"
+#: osm_watch: node id="3204993764" version="8"
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
 #: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
 	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
@@ -6115,7 +6115,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: last_checked: 2025-10-30 (mapillary) vvv
-#: next_check: 2025-11-15 (az-lichtenrade) vvv
+#: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
 # REMOVED --- #: next_check: 2026-03-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung
@@ -7355,7 +7355,24 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
+#: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
+#: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
+#: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
+# REMOVED (frühere Sperrung) ---	q4::inwork 15055,11505 15016,11431
+# REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
+#: next_check: 2025-11-16
+	q4::inwork 15016,11431 14945,11300
+',
+         'from' => 1763247600,
+         'id' => 4001,
+         'text' => 'Gürtelstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 21.11.2025',
+         'type' => 'handicap',
+         'until' => 1763765999
+       },
        undef,
        undef,
        undef,
@@ -8862,11 +8879,14 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: last_checked ^^^
 # 
 #: note: hier Arbeiten an Gasleitungen, aber in der gleichen Gegend
-#: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025)
-#: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
-Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
-#: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025)
-#: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+# REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
+# REMOVED --- Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
+#: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+#: also_indoor: traffic (T,G)
+#: last_checked: 2025-11-14 (traffic)
+#: check_frequency: 3d (traffic)
+# REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -8897,7 +8917,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-01 (traffic) vvv
+#: last_checked: 2025-11-14 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -8992,6 +9012,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025) (bis 28.04.2026)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
+#: source_id: viz2021:13.47181,52.50783, (bis 28.04.2026)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
 #: last_checked: 2025-11-03
 #: check_frequency: 30d
@@ -10248,6 +10269,48 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
          'text' => 'Nordhafenpark: Hochbauarbeiten, Wege gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_47_2965_3048_online.pdf
+Werderscher Markt	2::temp 9898,12161 9939,12174 9972,12184 10029,12208 10091,12232
+Am Zeughaus	2::temp 9919,12613 9953,12533 9984,12426
+Schinkelplatz	2::temp 9984,12426 9990,12404 9996,12372 10006,12306 10010,12275 10012,12259 10029,12208
+Schinkelplatz	2::temp 10058,12290 10010,12275
+Schinkelplatz	2::temp 9990,12404 10058,12290 10091,12232
+Prinzengasse	2::temp 9955,12300 10006,12306
+An der Kommandantur	2::temp 9996,12372 9943,12364
+Niederlagstr.	2::temp 9972,12184 9959,12281 9955,12300 9943,12364 9934,12420
+Falkoniergasse	2::temp 9939,12174 9909,12261
+Werdersche Rosenstr.	2::temp 9883,12251 9909,12261 9959,12281
+Französische Str.	2::temp 9898,12161 9812,12150 9755,12144 9645,12133
+Unter den Linden	2::temp 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
+Hinter der Katholischen Kirche	2::temp 9812,12150 9808,12182 9798,12267
+(entlang der Hedwigskathedrale)	2::temp 9808,12182 9775,12178 9771,12190 9747,12205
+Dorotheenstr. (Mitte)	2::temp 9581,12588 9681,12601 9742,12609 9870,12657
+Am Kupfergraben	2::temp 9870,12657 9900,12643 9919,12613
+Hinter dem Gießhaus	2::temp 9858,12410 9846,12516 9842,12565 9892,12596 9919,12613
+Hinter dem Zeughaus	2::temp 9846,12516 9953,12533
+Behrenstr.	2::temp 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
+Markgrafenstr. (Kreuzberg, Mitte)	2::temp 9631,12227 9645,12133
+Universitätsstr.	2::temp 9581,12588 9613,12381
+Oberwallstr.	2::temp 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
+Am Festungsgraben	2::temp 9742,12609 9747,12584
+Am Festungsgraben	2::temp 9747,12584 9761,12509 9771,12400
+Am Festungsgraben	2::temp 9846,12516 9761,12509
+Hedwigskirchgasse	2::temp 9737,12238 9747,12205 9755,12144
+Bebelplatz	2::temp 9713,12392 9730,12238
+Bebelplatz	2::temp 9680,12232 9664,12387
+Bebelplatz	2::temp 9796,12284 9877,12293
+Bebelplatz	2::temp 9798,12267 9796,12284 9780,12401
+Mollergasse	2::temp 9892,12596 9894,12564
+Bebelplatz, diagonal über den Platz	2::temp 9737,12238 9702,12307 9664,12387
+Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
+',
+         'from' => 1763161200,
+         'id' => 4500,
+         'text' => 'Neue Wache: umgebende Straßen (Unter den Linden, Dorotheenstr., Französische Str., Oberwallstr. und weitere) können wegen einer Veranstaltung gesperrt sein, am 16.11.2025 von 06:00 bis 14:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1763298000
        }
      
 );
