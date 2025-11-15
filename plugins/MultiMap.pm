@@ -1664,18 +1664,18 @@ sub showmap_geocaching {
 ######################################################################
 # Bing
 
-sub showmap_url_bing_birdseye {
+sub showmap_url_bing_3d {
     my(%args) = @_;
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.bing.com/maps/default.aspx?v=2&cp=%s~%s&style=o&lvl=%s&sp=Point.%s_%s____",
+    sprintf "https://www.bing.com/maps/default.aspx?v=2&cp=%s~%s&style=3d&lvl=%s&sp=Point.%s_%s____",
 	$py, $px, $scale, $py, $px;
 }
 
-sub showmap_bing_birdseye {
+sub showmap_bing_3d {
     my(%args) = @_;
-    my $url = showmap_url_bing_birdseye(%args);
+    my $url = showmap_url_bing_3d(%args);
     start_browser($url);
 }
 
@@ -1684,7 +1684,7 @@ sub showmap_url_bing_street {
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.bing.com/maps/?cp=%s~%s&lvl=%.1f&trfc=1",
+    sprintf "https://www.bing.com/maps/?cp=%s~%s&lvl=%.1f&trfc=1",
 	$py, $px, $scale;
 }
 
@@ -1705,16 +1705,16 @@ sub show_bing_menu {
     my $link_menu = $w->Menu(-title => 'Bing',
 			     -tearoff => 0);
     $link_menu->command
-	(-label => "Bird's eye",
-	 -command => sub { showmap_bing_birdseye(%args) },
+	(-label => "3D",
+	 -command => sub { showmap_bing_3d(%args) },
 	);
     $link_menu->command
 	(-label => "Street-Link kopieren",
 	 -command => sub { _copy_link(showmap_url_bing_street(%args)) },
 	);
     $link_menu->command
-	(-label => "Bird's eye-Link kopieren",
-	 -command => sub { _copy_link(showmap_url_bing_birdseye(%args)) },
+	(-label => "3D-Link kopieren",
+	 -command => sub { _copy_link(showmap_url_bing_3d(%args)) },
 	);
 
     $w->{$menu_name} = $link_menu;
