@@ -52,6 +52,8 @@ my %filter_callback =
      },
     );
 
+my $today;
+my $today_is_set;
 my $with_dist = 1;
 my $max_dist_km;
 my $dist_dbfile;
@@ -71,6 +73,7 @@ my $compile_command = do {
 my @filters;
 my $debug;
 GetOptions(
+	   "today=s" => \$today,
 	   "with-dist!" => \$with_dist,
 	   'max-dist=f' => \$max_dist_km,
 	   "dist-dbfile=s" => \$dist_dbfile,
@@ -85,7 +88,7 @@ GetOptions(
 	   "compile-command=s" => \$compile_command,
 	   "debug" => \$debug,
 	  )
-    or die "usage: $0 [--nowith-dist] [--max-dist km] [--dist-dbfile dist.db]
+    or die "usage: $0 [--today YYYY-MM-DD] [--nowith-dist] [--max-dist km] [--dist-dbfile dist.db]
     [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight]
     [--nowith-nextcheckless-records] [--with-sort-by-lastchecked] [--filter without-osm-watch] [--debug] [--compile-command ...] bbdfile ...\n";
 
@@ -93,6 +96,15 @@ for my $filter (@filters) {
     if (!$filter_callback{$filter}) {
 	die "Filter '$filter' is unknown.\n";
     }
+}
+
+if ($today) {
+    if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
+	die "Invalid date format for --today, must be YYYY-MM-DD.\n";
+    }
+    $today_is_set = 1;
+} else {
+    $today = strftime "%Y-%m-%d", localtime;
 }
 
 # --with-dist requires one or two reference positions. Use from
@@ -203,8 +215,6 @@ my @records;
 $SIG{INT} = sub { exit };
 
 my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln', 'vorfahrt');
-
-my $today = strftime "%Y-%m-%d", localtime;
 
 for my $file (@files) {
     debug("$file...\n");
@@ -701,8 +711,7 @@ if ($with_searches_weight) {
 
 my %monthly_stats;
 {
-    my $today = strftime '%F', localtime;
-    my $this_month = strftime '%Y-%m', localtime;
+    (my $this_month = $today) =~ s{-\d{2}$}{}; # strip day part
     # initialize, otherwise monthly stats output is wrong on 1st of this month
     $monthly_stats{"$this_month-AA"} = 0;
     $monthly_stats{"$this_month-ZZ"} = 0;
@@ -745,6 +754,11 @@ print "fragezeichen/nextcheck\t\t\t-*- mode:org; coding:utf-8 -*-\n\n";
 
     if ($latest_weighted_bbd && $searches_weight_net) {
 	print "Route search numbers from $latest_weighted_bbd\n";
+	$has_header_explanation_lines = 1;
+    }
+
+    if ($today_is_set) {
+	print "Today is set to $today\n";
 	$has_header_explanation_lines = 1;
     }
 
@@ -858,7 +872,6 @@ if ($expired_statistics_logfile) {
     require Tie::File;
     tie my @lines, 'Tie::File', $expired_statistics_logfile
 	or die "Error while opening $expired_statistics_logfile: $!";
-    my $today = strftime '%F', localtime;
     my $expired_uncropped_count = scalar(@expired_sort_by_dist_records);
     my $new_log_line = "$today\t" . $expired_uncropped_count . "\t" . ($expired_uncropped_count + $cropped_count_because_of_max_dist);
     if (!@lines) {
@@ -1163,6 +1176,10 @@ set.
 
 =over
 
+=item C<--today I<YYYY-MM-DD>>
+
+Set another date (defaults to today) for past/future sections.
+
 =item C<--with-dist> (set by default)
 
 Add distance tags to every fragezeichen record. Distance is the
@@ -1249,6 +1266,12 @@ value.
 F<data/doit.pl>)
 
 =back
+
+=head2 EXAMPLES
+
+Generate a C<fragezeichen-nextcheck.org> file with a date in the future:
+
+    (TODAY=$(date +%F --date "+ 3 days"); HOME_COORD=$(perl -MSafe -E 'say Safe->new->rdo(shift)->{centerc}' ~/.bbbike/config); ./miscsrc/fragezeichen2org.pl --today $TODAY --plan-dir=$HOME/.bbbike/gps_uploads --with-searches-weight --max-dist=50 --dist-dbfile=tmp/dist.db --centerc $HOME_COORD --center2c $HOME_COORD >| /tmp/fragezeichen-nextcheck-$TODAY.org data/*-orig tmp/bbbike-temp-blockings-optimized.bbd)
 
 =head1 AUTHOR
 
