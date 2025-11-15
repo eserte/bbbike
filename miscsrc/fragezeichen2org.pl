@@ -387,7 +387,7 @@ for my $file (@files) {
 			 my($extra) = $also_indoor_dir =~ m{(\(.*?\))}; # $extra contains map specifiers
 			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=15&profile=traffic", $extra];
 			 if ($extra && ($extra eq '(none)' || $extra =~ /\bB\b/)) { # not handled by mc.bbbike.org, so create an extra link
-			     push @extra_url_defs, ['Bing', sprintf('http://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1', $py, $px, 17)];
+			     push @extra_url_defs, ['Bing', sprintf('https://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1', $py, $px, 17)];
 			 }
 			 if ($extra && ($extra eq '(none)' || $extra =~ /\bT\b/)) { # not handled by mc.bbbike.org, so create an extra link
 			     push @extra_url_defs, ['TomTom', sprintf('https://plan.tomtom.com/de/?p=%s,%s,%.2fz', $py, $px, 17)];
