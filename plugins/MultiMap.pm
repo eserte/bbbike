@@ -10,8 +10,8 @@
 # WWW:  https://github.com/eserte/bbbike
 #
 
-# Description (en): Link to OpenStreetMap, WikiMapia, Bing and other maps
-# Description (de): Links zu OpenStreetMap, WikiMapia, Bing und anderen Karten
+# Description (en): Link to OpenStreetMap, WikiMapia, MapCompare and other maps
+# Description (de): Links zu OpenStreetMap, WikiMapia, MapCompare und anderen Karten
 package MultiMap;
 
 use BBBikePlugin;
@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.50;
+$VERSION = 2.51;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -168,6 +168,7 @@ sub register {
 	  callback_3 => sub { show_bing_menu(@_) },
 	  ($images{Bing} ? (icon => $images{Bing}) : ()),
 	  tags => [qw(traffic)],
+	  order => 5000, # low priority: Bing Maps is partially deprecated (API, SDK), and traffic data is same as TomTom
 	};
     $main::info_plugins{__PACKAGE__ . "_TomTom"} =
 	{ name => "tomtom",
