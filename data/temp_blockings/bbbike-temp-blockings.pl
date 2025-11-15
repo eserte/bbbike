@@ -39626,7 +39626,7 @@ EOF
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: osm_watch: way id="37861386" version="32"
+#: osm_watch: way id="37861386" version="33"
 #: osm_watch: way id="1231148375" version="8"
 #: priority: #B
 #: last_checked: 2025-10-17 (osm)
@@ -43504,7 +43504,7 @@ EOF
        until => $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
 #      text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
 #      text  => 'Gürtelstr.: Kranabbau zwischen Weserstr. und Wiesenweg, Sperrung der Fahrbahn, vom 06.11.2024 06:00 bis 07.11.2024 18:00',
-       text  => 'Gürtelstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 21.11.2025',
+       text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 21.11.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
@@ -43512,10 +43512,12 @@ EOF
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
 #: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
+#: source_id: viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025)
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
+#: note: zurzeit (2025-11-15) in Höhe Weserstr. Straßenschäden, Straße ist für den Durchgangsverkehr gesperrt
 # REMOVED (frühere Sperrung) ---	q4::inwork 15055,11505 15016,11431
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
-#: next_check: 2025-11-16
+#: next_check: 2025-11-17
 	q4::inwork 15016,11431 14945,11300
 EOF
      },
@@ -43715,7 +43717,7 @@ EOF
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1760327024214675525 (Arbeitsfläche für einen Brückenbau)
 #: source_id: viz2021:13.363047,52.519729,19.02.2024,07:00 (bis 24.01.2025) (inaktiv) (bis 30.04.2025) (inaktiv)
 #: osm_watch[closed]: note 4125418 5
-#: osm_watch: way id="1258660768" version="4"
+#: osm_watch: way id="1258660768" version="5"
 #: osm_watch: way id="1259755317" version="4"
 #: note: ein Eintrag in gesperrt-orig existiert ebenfalls
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
@@ -48656,7 +48658,7 @@ Hermann-Stöhr-Platz: Diagonalverbindung komplett gesperrt	2::inwork 12413,11901 
 EOF
      },
      { from  => 1746939600, # 2025-05-11 07:00
-       until => undef, # 1753714800, # 2025-07-28 17:00
+       until => 1763219658, # undef, # 1753714800, # 2025-07-28 17:00
 #      text  => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, vom 12.05.2025 07:00 bis 28.07.2025 17:00',
        text  => 'Weserstr.: zwischen Gürtelstr./Neue Bahnhofstr. und Jessnerstr. Einbahnstraßenregelung, offen Richtung Osten, keine Freigabe für Radfahrer, voraussichtlich bis 28.04.2026',
        type  => 'handicap',
@@ -48665,9 +48667,8 @@ EOF
 #: source_id: viz2021:13.47181,52.50783,12.05.2025,07:00 (bis 28.07.2025) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783, (bis 14.11.2025) (bis 28.04.2026)
 #: source_id: adac:1113891126 (bis voraussichtlich 14.11.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.47181,52.50783, (bis 28.04.2026)
 #: note: mittlerweile gibt es neue Halteverbotsschilder, im östlichen Abschnitt bis zum 14.11.2025
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-15
 #: check_frequency: 30d
 #: next_check: 2026-04-28 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15016,11431 14949,11474 14849,11539
@@ -50884,7 +50885,7 @@ EOF
 #: note: Halteverbotsschilder von 17.11.2025 bis März 2026
 #: last_checked: 2025-11-11
 #: check_frequency: 7d
-#: next_check: 2025-11-16
+#: next_check: 2025-11-17
 #: XXX activate bbd record and change text!
 #Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
 #: also_indoor: traffic (G,T)
@@ -50989,8 +50990,8 @@ EOF
 #: note: am 2025-11-09 keine Baugrube mehr, mögliche baldige Aufhebung der Sperrung
 #: also_indoor: traffic (G,T)
 #: also_indoor: Besteht die Sperrung weiterhin?
-#: last_checked: 2025-11-09
-#: check_frequency: 7d
+#: last_checked: 2025-11-15 (traffic)
+#: check_frequency: 7d (traffic)
 	q4::inwork 6852,8880 6762,8999
 EOF
      },
@@ -51003,8 +51004,8 @@ EOF
 #: by: https://www.henn.com/de/projekt/iq-space-berlin-center-gene-and-cell-therapies
 #: by: https://www.bayer.com/media/aufbau-von-translationszentrum-fuer-gentherapien-und-zelltherapien-in-berlin-beginnt/
 #: by: https://iq-spaces.com/de/berlin-mitte
-#: osm_watch: way id="1080985512" version="10"
-#: osm_watch: way id="1409889274" version="6"
+#: osm_watch: way id="1080985512" version="11"
+#: osm_watch: way id="1409889274" version="7"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
 #: last_checked: 2025-11-12 vvv

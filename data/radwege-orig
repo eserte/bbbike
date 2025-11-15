@@ -4639,7 +4639,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 	RW3; 22666,3888 22694,3693
 	RW3; 22701,3643 22714,3558 22734,3433
 	RW3; 22743,3377 22790,3135
-	RW3; 22802,3081 22811,3037 22831,2915 22849,2856 22878,2758
+	RW3; 22802,3081 22811,3037 22823,2962 22831,2915 22849,2856 22878,2758
 	RW3; 22920,2622 22982,2418 22991,2387
 	RW3; 23008,2331 23019,2296 23064,2147 23099,2031
 # REMOVED --- #: next_check ^^^
@@ -4657,7 +4657,7 @@ asphaltiertes Straßenbahnkap	RW1; 22991,2387 23008,2331
 #: note: in den Haltestellenbereichen teilweise mit Verbundsteinpflaster/Asphalt vvv
 Gehwegplatten	RW1; 23099,2031 23064,2147
 Gehwegplatten	RW2; 23064,2147 23019,2296 23008,2331 22991,2387 22982,2418
-Gehwegplatten	RW1; 22982,2418 22920,2622 22904,2675 22902,2681 22878,2758 22849,2856 22831,2915 22811,3037 22802,3081 22790,3135 22743,3377 22734,3433 22714,3558 22701,3643 22694,3693 22666,3888
+Gehwegplatten	RW1; 22982,2418 22920,2622 22904,2675 22902,2681 22878,2758 22849,2856 22831,2915 22823,2962 22811,3037 22802,3081 22790,3135 22743,3377 22734,3433 22714,3558 22701,3643 22694,3693 22666,3888
 #: note ^^^
 Gehweg für Radfahrer frei	RW1; 23099,2031 23185,1649 23214,1522
 Gehweg für Radfahrer frei	RW1; 23243,1398 23214,1522 23185,1649 23099,2031
@@ -8584,7 +8584,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss voraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
-#: by: https://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (mittlerweile bis 4. Quartal 2023) (bis 4. Quartal 2024) (4. Quartal 2020 - 3. Quartal 2025)
+#: by: https://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (mittlerweile bis 4. Quartal 2023) (bis 4. Quartal 2024) (4. Quartal 2020 - 3. Quartal 2025) (4. Quartal 2020 - 3. Quartal 2026)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
@@ -8599,14 +8599,14 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
 #: last_checked: 2025-10-21 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2025-09-30 (infravelo) vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-09-30 (infravelo) vvv
 #: osm_watch: way id="335479077" version="24"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 teilweise Poller, Grünbeschichtung	RW4; 12317,14535 12407,14470
@@ -8629,42 +8629,14 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17963,6313
 # 
 	RW4; 17934,7029 17919,6978 17919,6968
 # 
-#: next_check_id: EDISON-2022
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26300.pdf (Markierung wird im Zuge der Gleisbauarbeiten dauerhaft gemacht)
-#: by: https://berliner-abendblatt.de/2022/08/18/edisonstrasse-fuer-tram-und-autos-gesperrt/ ("Radfahrer kommen durch")
-#: by: https://nitter.cz/pic/media%2FFadNMbfXgAAEZ9s.jpg%3Fname%3Dorig
-#: by: https://nitter.net/StefanB94551270/status/1561744762650116100
-#: source_id: viz2021:13.513592,52.464917,18.08.2022,07:00 (18.8.2022 - 23.12.2023) (inaktiv)
-#: source_id: viz2021:13.51407,52.46244,18.08.2022,07:00 (bis 28.08.2023) (inaktiv)
-#: source_id: viz2021:13.513289,52.46651,31.08.2023,09:31 (bis 11.04.2024) (inaktiv)
-#: source_id: viz2021:13.514401,52.468693,31.08.2023,09:31 (bis 11.04.2024) (bis 04.12.2023) (inaktiv)
-# REMOVED (vermutlich ja) --- #: XXX Bleiben die Radwege so, oder
-#: XXX wird es (teilweise?) eine Grünbeschichtung geben? vvv
-# REMOVED --- #: osm_watch: way id="4566067" version="26"
-# REMOVED (deleted) #: osm_watch: way id="26708088" version="38"
-#: osm_watch: way id="671329663" version="19"
-#: last_checked: 2025-10-03 (mapillary) vvv
-#: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2023-12-04 vvv
 #: historical_note: früher (bis 2024/2025): provisorische Radspur
 Radspur	RW4; 17919,6968 17945,6788
 #: historical_note: früher (bis 2024/2025): provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern
 Radspur	RW4; 17945,6788 17962,6674
-# REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17985,6480 17991,6431
-# REMOVED --- provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17985,6480 17991,6431
-# REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="18"
-# REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17991,6431 17985,6480 17962,6674
-# REMOVED (mittlerweile komplett Radspur und war an einem So frei) --- #: note: erste Meter Gehweg für Radfahrer frei, dann Radspur mit Gelbmarkierung, wird aber durchgängig von parkenden Autos ignoriert
 	RW4; 17991,6431 17985,6480 17962,6674
 #: historical_note: früher (bis 2024/2025): provisorische Radspur
 Radspur	RW4; 17962,6674 17945,6788 17919,6968
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# 
 asphaltierter Radweg	RW2; 17985,6480 17991,6431
 asphaltierter Radweg auf den letzten Metern zur Ampel	RW0; 7439,9154 7382,9187
 	RW3;RW3 -6507,15007 -6861,15129

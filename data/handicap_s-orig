@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-11-12
+#: last_checked: 2025-11-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -392,6 +392,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.morgenpost.de/bezirke/mitte/article409774113/das-baum-haus-tiere-verhindern-abriss-der-beruehmten-ruine-in-wedding.html
 #: by: https://entwicklungsstadt.de/wedding-geplanter-abriss-der-ruine-in-der-burgsdorfstrasse-gestoppt/
 #: by: https://entwicklungsstadt.de/abriss-der-ruine-in-der-burgsdorfstrasse-in-mitte-hat-begonnen/
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1077_ds_2020_vi_eine-dauerhafte-sperrung-der-burgsdorfstrasse.pdf
 #: osm_watch: way id="549316654" version="44"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
@@ -811,13 +812,13 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 ### Moabit ###
 # 
-# REMOVED (möglicherweise beendet) --- #: next_check_id: PERLEBERGER-2024
-# REMOVED --- #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
-# REMOVED --- #: also_indoor: traffic (T,ex-G,H,ex-W)
-# REMOVED --- #: last_checked: 2025-11-05 (traffic)
-# REMOVED --- #: check_frequency: 10d (traffic)
+#: next_check_id: PERLEBERGER-2024
+#: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
+#: also_indoor: traffic (T,ex-G,H,re-W)
+#: last_checked: 2025-11-15 (osm, traffic)
+#: check_frequency: 10d (traffic)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
-# REMOVED --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
+Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
 #: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834
@@ -1294,7 +1295,7 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11
 # 
 ### Marienfelde ###
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: last_checked: 2025-10-11 (krickstadt) vvv
+#: last_checked: 2025-11-15 (osm) vvv
 # REMOVED --- #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2025-10-08 vvv
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9365,615 9347,595 9206,553 9215,506 9239,461 9254,413
@@ -2336,7 +2337,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="529086013" version="4"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="15"
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-08 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2025-12-15 (Halteverbotsschilder)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329

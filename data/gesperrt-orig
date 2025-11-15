@@ -2788,12 +2788,15 @@ tragen	0:45 18661,4655
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24176.pdf (nein?)
-#: add_fragezeichen: Bleiben die Aufzüge und der Übergang erhalten? vvv
-#: last_checked: 2025-10-11 (krickstadt) vvv
+#: note: bei osm wurden die Aufzüge entfernt
+#: add_fragezeichen: Bleibt der Übergang erhalten? vvv
+#: last_checked: 2025-11-15 (osm) vvv
 # REMOVED --- #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2025-10-08 (pardok) vvv
-tragen (2x15 Stufen) oder Aufzug	0:35 9209,417
-tragen (3x12 Stufen) oder Aufzug	0:35 9249,421
+#: historical_note: früher (bis etwa Herbst 2025) gab es hier Aufzüge vvv
+tragen (2x15 Stufen)	0:35 9209,417
+tragen (3x12 Stufen)	0:35 9249,421
+#: historical_note ^^^
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
@@ -4556,7 +4559,7 @@ zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 186
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 # REMOVED (hier nicht mehr) --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 22546,3115
-An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22546,3115 22477,3109
+An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22546,3115 22470,3109
 # 
 # REMOVED (mittlerweile wieder offen) --- #: next_check_id: BEHRENSUFER-2023 --- #: osm_watch: way id="41340056" version="26" --- #: last_checked: 2023-08-21 --- #: check_frequency: 240d --- #: next_check: 2028-12-31 --- Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5627 19184,5554
 # REMOVED --- #: next_check_id: YORCKSTRBR5-2023 --- #: last_checked: 2023-09-20 --- #: check_frequency: 90d --- #: next_check: 2023-09-30 --- Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gesperrt	2::inwork 8242,9699 8243,9766
