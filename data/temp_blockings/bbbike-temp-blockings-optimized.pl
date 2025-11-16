@@ -1368,15 +1368,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 33120,-10967 32827,-11406 32725,-11546
-',
-         'from' => 1762923600,
-         'id' => 1085,
-         'text' => 'Kablow: Bauarbeiten am Bahnübergang, Sperrung, evtl. sind auch Radfahrer betroffen, 13.11.2025 06:00 Uhr bis 15.11.2025 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1763233200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3817,9 +3809,12 @@ Kleistpark	2::night 7310,9622 7307,9528
 #: by: https://berliner-abendblatt.de/berlin-news/umfrage-zu-potsdamer-weihnachtsmarkt-debatte-ueber-standort-id263078
 #: by: https://www.potsdam.de/de/veranstaltung/blauer-lichterglanz-3
 #: by: https://www.deutsche-weihnachtsmaerkte.de/weihnachtsmarkt/in/brandenburg/blauer-lichterglanz-historischer-weihnachtsmarkt-potsdam-2744.html
-#: osm_watch: node id="4474692205" version="5"
+#: by: https://potsdamer-weihnachtszauber.com/
+#: by: https://potsdamer-weihnachtszauber.com/wp-content/uploads/2025/11/1-Potsdamer-weihnachtszauber-Lagekarte.jpg
+#: osm_watch: node id="4474692205" version="6"
 #: tempex: before(first_advent,mo) - YYYY1230
-	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
+# REMOVED (keine Bestätigung mehr für Einschränkungen hier) --- Zeppelinstr./Luisenplatz	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
+Brandenburger Str.	2::xmas -13556,-1140 -13525,-1131 -13410,-1101 -13289,-1071 -13173,-1039 -12999,-1000 -12883,-976 -12801,-960
 ',
          'from' => 1763852400,
          'id' => 2526,
@@ -3836,7 +3831,7 @@ Kleistpark	2::night 7310,9622 7307,9528
                               '2021-01-01T00:00:00'
                             ]
                           ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 24.11.2025 - 28.12.2025',
+         'text' => 'Weihnachtsmarkt in der Brandenburger Straße, 24.11.2025 - 28.12.2025',
          'type' => 'gesperrt',
          'until' => 1766876400
        },
@@ -5042,7 +5037,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-16
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -6802,13 +6797,15 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        {
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (re-H,re-G,T,ex-W)
+#: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026
 #: last_checked: 2025-11-12 (traffic)
-#: check_frequency: 14d (traffic)
+#: check_frequency: 30d
+#: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 ',
          'from' => undef,
          'id' => 3819,
-         'text' => 'Dolgenseestr.: Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Dolgenseestr.: Fahrbahn gesperrt, möglicherweise bis Juli 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7002,7 +6999,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
 # REMOVED --- #: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden; am 2025-04-04 ebenfalls zwei Schutztunnel, deshalb q4 -> q3
 #: note: keine offizielle Führung für Radfahrer; nur der nördliche Gehweg ist passierbar, aber dieser scheint relativ breit und wenig benutzt zu sein; ggfs. Bordstein am westlichen Ende
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-16
 #: next_check: 2025-11-22 (VIZ-Verkehrsmeldung)
 	q3::inwork 15793,10814 15856,10821 15932,10830
 ',
@@ -8584,36 +8581,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '# REMOVED --- #: also_indoor: traffic (ex-H,G[falsch],re-B,re-T)
-# REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-02-28 --- #: check_frequency: 10d --- #: next_check: 2025-03-28 (Halteverbotsschilder) ---	2::inwork 17587,9655 17668,9632 17777,9649
-# REMOVED --- #: note: Länge etwa 150m, Bürgersteig existiert; mittlerweile um einen Block weiter verlängert --- q2::inwork 18266,9853 18066,9770 17920,9698
-# REMOVED (fertig) --- #: also_indoor: traffic (none) --- Friedenshorster Str.	q4::inwork 18305,9951 18312,9985 18296,10027
-# REMOVED (weitgehend passierbar) --- #: note: Auch der Gehwegbereich ist gesperrt --- #: last_checked: 2025-06-04 --- #: check_frequency: 14d --- Ontarioseestr.	2::inwork 18339,10048 18411,10037
-# REMOVED --- #: also_indoor: traffic (ex-T,ex-H) --- #: last_checked: 2025-10-14 --- #: check_frequency: 7d
-# REMOVED (keine Verlängerung der Halteverbotsschilder) --- #: next_check: 2025-10-02 (Halteverbotsschilder)
-# REMOVED --- #: next_check: 2025-09-05 (Halteverbotsschilder für den mittleren Abschnitt, danach nur den östlichen Abschnitt belassen)
-# REMOVED (nach hinten gewandert) ---	2::inwork 17471,9688 17587,9655
-# REMOVED (nach hinten gewandert) ---	2::inwork 17587,9655 17668,9632 17777,9649
-# REMOVED (nach hinten gewandert) --- #: note: Halteverbotsschilder bis 5.9.2025 ---	2::inwork 17777,9649 17920,9698
-# REMOVED --- #: note: Halteverbotsschilder 2.9.2025 bis 2.10.2025 ---	2::inwork 17920,9698 18066,9770
-# (kann von bbbike nicht verarbeitet werden) --- Mellenseestr. [Wohngebiet]: Einbahnstraße temporär aufgehoben	1no 17838,9956 17868,9823 17920,9698
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: also_indoor: traffic (none)
-#: last_checked: 2025-11-05 vvv
-#: check_frequency: 10d vvv
-# REMOVED (hier offiziell noch Durchfahrt verboten, allerdings ist die Fahrbahn offen) --- Friedenshorster Str./Splanemannstr.	q4::inwork 18280,9868 18305,9951 18312,9985
-Splanemannstr./Friedenshorster Str.	q4::inwork 18305,9951 18397,9928
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 4271,
-         'text' => 'Splanemannstr.: vor der Friedenshorster Str. wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: SPREEKUESTE-2025
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
@@ -8874,7 +8842,7 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # REMOVED --- Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-11-14 (traffic)
+#: last_checked: 2025-11-16 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
@@ -9529,7 +9497,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-09
+#: last_checked: 2025-11-16
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9746,7 +9714,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-11-07
+#: last_checked: 2025-11-16
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 Corinthstr.	q4::inwork 14447,10491 14608,10409
 ',
@@ -9846,14 +9814,16 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
 #: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
+#: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
+#: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
 #: also_indoor: traffic (T,G,H,W)
-#: last_checked: 2025-11-05 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2025-11-10 vvv
+#: last_checked: 2025-11-16 vvv
+# REMOVED --- #: check_frequency: 14d vvv
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork 15807,5286 15870,5251 15828,5156
 	q4::inwork 16062,5242 15870,5251
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1760131031,
@@ -10162,6 +10132,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php
+#: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2025-11-16 Sun 11:11)
 Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten	q4::inwork 18586,9172 18548,8942 18518,8778
 ',
          'from' => 1762642800,
@@ -10199,7 +10170,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
        {
          'data' => '#: note: am 2025-11-09 keine Baugrube mehr, mögliche baldige Aufhebung der Sperrung
 #: also_indoor: traffic (G,T)
-#: also_indoor: Besteht die Sperrung weiterhin?
+#: XXX: Besteht die Sperrung weiterhin?
 #: last_checked: 2025-11-15 (traffic)
 #: check_frequency: 7d (traffic)
 	q4::inwork 6852,8880 6762,8999
@@ -10233,47 +10204,18 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
          'type' => 'gesperrt',
          'until' => undef
        },
+       undef,
        {
-         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_47_2965_3048_online.pdf
-Werderscher Markt	2::temp 9898,12161 9939,12174 9972,12184 10029,12208 10091,12232
-Am Zeughaus	2::temp 9919,12613 9953,12533 9984,12426
-Schinkelplatz	2::temp 9984,12426 9990,12404 9996,12372 10006,12306 10010,12275 10012,12259 10029,12208
-Schinkelplatz	2::temp 10058,12290 10010,12275
-Schinkelplatz	2::temp 9990,12404 10058,12290 10091,12232
-Prinzengasse	2::temp 9955,12300 10006,12306
-An der Kommandantur	2::temp 9996,12372 9943,12364
-Niederlagstr.	2::temp 9972,12184 9959,12281 9955,12300 9943,12364 9934,12420
-Falkoniergasse	2::temp 9939,12174 9909,12261
-Werdersche Rosenstr.	2::temp 9883,12251 9909,12261 9959,12281
-Französische Str.	2::temp 9898,12161 9812,12150 9755,12144 9645,12133
-Unter den Linden	2::temp 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
-Hinter der Katholischen Kirche	2::temp 9812,12150 9808,12182 9798,12267
-(entlang der Hedwigskathedrale)	2::temp 9808,12182 9775,12178 9771,12190 9747,12205
-Dorotheenstr. (Mitte)	2::temp 9581,12588 9681,12601 9742,12609 9870,12657
-Am Kupfergraben	2::temp 9870,12657 9900,12643 9919,12613
-Hinter dem Gießhaus	2::temp 9858,12410 9846,12516 9842,12565 9892,12596 9919,12613
-Hinter dem Zeughaus	2::temp 9846,12516 9953,12533
-Behrenstr.	2::temp 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
-Markgrafenstr. (Kreuzberg, Mitte)	2::temp 9631,12227 9645,12133
-Universitätsstr.	2::temp 9581,12588 9613,12381
-Oberwallstr.	2::temp 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
-Am Festungsgraben	2::temp 9742,12609 9747,12584
-Am Festungsgraben	2::temp 9747,12584 9761,12509 9771,12400
-Am Festungsgraben	2::temp 9846,12516 9761,12509
-Hedwigskirchgasse	2::temp 9737,12238 9747,12205 9755,12144
-Bebelplatz	2::temp 9713,12392 9730,12238
-Bebelplatz	2::temp 9680,12232 9664,12387
-Bebelplatz	2::temp 9796,12284 9877,12293
-Bebelplatz	2::temp 9798,12267 9796,12284 9780,12401
-Mollergasse	2::temp 9892,12596 9894,12564
-Bebelplatz, diagonal über den Platz	2::temp 9737,12238 9702,12307 9664,12387
-Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
+         'data' => '#: last_checked: 2025-11-16
+#: check_frequency: 45d
+#: next_check: 2026-01-31
+	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565
 ',
-         'from' => 1763161200,
-         'id' => 4500,
-         'text' => 'Neue Wache: umgebende Straßen (Unter den Linden, Dorotheenstr., Französische Str., Oberwallstr. und weitere) können wegen einer Veranstaltung gesperrt sein, am 16.11.2025 von 06:00 bis 14:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1763298000
+         'from' => 1763294725,
+         'id' => 4501,
+         'text' => 'Hönower Str.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Ende Januar 2026',
+         'type' => 'handicap',
+         'until' => 1769900399
        }
      
 );

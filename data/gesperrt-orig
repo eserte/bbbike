@@ -199,7 +199,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-11-03 vvv
+#: last_checked: 2025-11-16 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -279,7 +279,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="5"
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-16
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -4141,7 +4141,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="9"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-11-10
+#: last_checked: 2025-11-16
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4526,15 +4526,15 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 # 
 # REMOVED (keine Absperrung mehr) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11239 --- #: note: Außerdem baustellenbedingte Einbahnstraßenregelung in der Krautstr., offen Richtung Süden sowie offen für Radfahrer --- #: last_checked: 2024-04-03 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2024-03-31 --- Mehlbeerenweg: Bauarbeiten, gesperrt	2::inwork 11993,11978 11940,11982 11909,11985
 # 
-#: next_check_id: ONTARIOSEE-2023
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ontarioseestra%C3%9Fe-22.1332/#post-22779
-#: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
-#: osm_watch: way id="25796640" version="30"
-#: osm_watch: way id="176946641" version="12"
-#: last_checked: 2025-11-05
-#: check_frequency: 10d
-# REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
-zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
+# REMOVED (noch nicht komplett fertig, aber man kann passieren) --- #: next_check_id: ONTARIOSEE-2023
+# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ontarioseestra%C3%9Fe-22.1332/#post-22779
+# REMOVED --- #: by: https://www.studentkompanie.com/projekte/ (Fertigstellung 2024)
+# REMOVED --- #: osm_watch: way id="25796640" version="30"
+# REMOVED --- #: osm_watch: way id="176946641" version="12"
+# REMOVED --- #: last_checked: 2025-11-05
+# REMOVED --- #: check_frequency: 10d
+# REMOVED --- # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
+# REMOVED --- zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 # 
 # REMOVED (laut osm komplett offen)
 # REMOVED --- #: next_check_id: SAATWINKLER-2023
@@ -4635,7 +4635,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-16
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -5042,7 +5042,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-10-27 vvv
+#: last_checked: 2025-11-16 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5084,7 +5084,7 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/drei-neue-hochhauser-an-der-spree-langzeit-projekt-molecules-mit-neuem-konzept-13684222.html
 #: confirmed_by: srt
 # REMOVED (mehr als zwei Jahre kaputt) --- #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
-#: last_checked: 2025-08-23 vvv
+#: last_checked: 2025-11-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-06-30 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5094,17 +5094,17 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: last_checked ^^^
 # REMOVED --- #: also_indoor ^^^
 # 
-#: next_check_id: LAKEGRUND-2024
-#: by: https://entwicklungsstadt.de/fortschritte-am-lakegrund-modernisierung-der-gruenanlage-in-treptow/ (vollständige Fertigstellung bis Herbst 2026)
-#: osm_watch: note 4526759 1
-#: osm_watch: way id="54630384" version="14"
-#: osm_watch: way id="1339306638" version="3"
-#: XXX beide Wege gesperrt, nördlicher komplett und südlicher teilweise; mittlerweile bei osm als wieder zugänglich getaggt
-#: last_checked: 2025-09-14
-#: check_frequency: 90d
-#: next_check: 2025-11-09 (osm)
-# REMOVED --- #: next_check: 2026-11-30 (entwicklungsstadt)
-Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
+# REMOVED (beide Stränge offen, der nördliche nun mit wassergebundener Decke, der südliche unverändert, Bauarbeiten in der Grünanlage sind noch nicht fertig) --- #: next_check_id: LAKEGRUND-2024
+# REMOVED --- #: by: https://entwicklungsstadt.de/fortschritte-am-lakegrund-modernisierung-der-gruenanlage-in-treptow/ (vollständige Fertigstellung bis Herbst 2026)
+# REMOVED --- #: osm_watch: note 4526759 1
+# REMOVED --- #: osm_watch: way id="54630384" version="14"
+# REMOVED --- #: osm_watch: way id="1339306638" version="3"
+# REMOVED --- #: XXX beide Wege gesperrt, nördlicher komplett und südlicher teilweise; mittlerweile bei osm als wieder zugänglich getaggt
+# REMOVED --- #: last_checked: 2025-11-16
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2025-11-09 (osm)
+# REMOVED --- # REMOVED --- #: next_check: 2026-11-30 (entwicklungsstadt)
+# REMOVED --- Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 # 
 # REMOVED (offener Bauzaun heute, nur noch wenige Bauarbeiten) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-04-19 --- #: check_frequency: 30d --- Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892 8025,13835
 # REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994

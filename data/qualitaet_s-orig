@@ -1356,10 +1356,9 @@ Magazinstr.: Kopfsteinpflaster, OK	Q1- 11562,12597 11329,12497
 #: confirmed_by: srt
 Saarbrücker Str.: Asphalt, etwas brüchig	Q0- 10895,13961 11052,13870 11116,13830 11251,13667
 Heinrich-Roller-Str.: Kopfsteinpflaster	Q2 11435,14023 11607,13928
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1616028.php (Kopfsteinpflaster wird abgeschliffen, kein Termin)
-#: by: https://entwicklungsstadt.de/friedrichshain-kopfsteinpflaster-in-der-corinthstrasse-wird-fuer-radverkehr-geglaettet/
-#: last_checked: 2025-11-13 (BA-Pressemitteilung)
-Corinthstr.: Kopfsteinpflaster	Q2+ 14608,10409 14447,10491
+# REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1616028.php (Kopfsteinpflaster wird abgeschliffen, kein Termin) --- #: by: https://entwicklungsstadt.de/friedrichshain-kopfsteinpflaster-in-der-corinthstrasse-wird-fuer-radverkehr-geglaettet/ --- #: last_checked: 2025-11-13 (BA-Pressemitteilung)
+#: historical_note: früher (bis November 2025): Kopfsteinpflaster, Q2+
+Corinthstr.: abgefrästes Kopfsteinpflaster	Q1- 14608,10409 14447,10491
 (zum Mergenthalerring): holpriger Sandweg	Q2 14700,8368 14688,8355
 (zum Mergenthalerring): Verbundsteinpflaster	Q1 14688,8355 14563,8243
 (zum Mergenthalerring): Asphalt	Q0 14419,8112 14425,8116 14563,8243 14422,8407 14469,8455 14560,8528
@@ -4828,11 +4827,11 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 #: by: https://www.berliner-woche.de/baumschulenweg/c-umwelt/arbeiten-zur-aufwertung-der-gruenanlage-lakegrund-sind-gestartet_a428593
 #: by: https://entwicklungsstadt.de/lakegrund-in-berlin-treptow-gruenanlage-wird-klimaresilient-umgestaltet/ (Abschluss 2025)
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
-#: osm_watch: note 4526759 1
+#: osm_watch: note 4526759 2
 #: XXX "Teilentsiegelung" geplant
-#: last_checked: 2025-11-01 (Bauzaun nur am westlichen Ende)
+#: last_checked: 2025-11-16
 #: check_frequency: 90d
-#: next_check: 2025-12-31 (entwicklungsstadt)
+#: next_check: 2026-12-31 (BA-Pressemitteilung)
 Lakegrund: Beton	Q1+ 16406,7430 16368,7425 16195,7398
 Eschenbachstr.: Kopfsteinpflaster	Q2 16290,7160 16375,7070
 Stormstr. (Baumschulenweg): Kopfsteinpflaster	Q2 16328,7005 16234,7100
@@ -14199,11 +14198,9 @@ Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4
 # 
 (Uferweg - Siemenssteg/Am Spreebord): Kleinsteinpflaster	Q2+ 4038,12693 4039,12706 4124,12713
 # 
-#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: XXX wird ausgebessert
-#: last_checked: 2025-11-03
-#: next_check: 2025-11-22 (VIZ-Verkehrsmeldung)
-Nöldnerstr.: schadhafter Asphalt	Q1 15856,10821 15793,10814
+# REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022 --- #: XXX wird ausgebessert --- #: last_checked: 2025-11-03 --- #: next_check: 2025-11-22 (VIZ-Verkehrsmeldung)
+#: historical_note: früher (bis November 2022): schadhafter Asphalt, Q1
+Nöldnerstr.: Asphalt	Q0 15856,10821 15793,10814
 # 
 (zur Hilde-Archenhold-Brücke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018
 Hilde-Archenhold-Brücke: Asphalt	Q0 19300,4018 19358,4077

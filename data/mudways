@@ -98,6 +98,7 @@ Uferweg - Kiehnwerderallee: Waldweg	X 16657,8443 16490,8432
 #: mud: 2025-02-28: einige Pfützen	h=q1,wet
 #: mud: 2025-03-08: keine Beeinträchtigungen	h=q0
 #: mud: 2025-09-01: keine Beeinträchtigungen	h=q0
+#: mud: 2025-11-16: einige Pfützen	h=q1,wet
 Hönower Weg: asphaltiert, aber mit einigen Wellen	X 17383,9719 16984,9857 16925,9852 16900,9861
 # 
 # REMOVED (Weg wurde neu gemacht und ist nun asphaltiert) --- #: mud: 2020-03-06: eine "Seenlandschaft" --- Rüdersdorfer Str. - Am Wriezener Bahnhof: unbefestigt, mit vielen großen Kuhlen	X 13173,11788 13089,11708
@@ -551,6 +552,18 @@ Rosestr.: unbefestigter Weg, holprig	X 20663,599 20751,566
 #: mud: 2021-02-24: etwas feuchtere Oberfläche, im Waldbereich leicht matschig
 #: mud: 2023-04-22: weitgehend trocken	h=q0-,wet
 Am Alten Fenn: Feinschotterweg	X 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17295,5387
+# 
+#: mud: 2025-11-16: einige Pfützen	h=q2-,wet
+(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	X 16868,5938 16845,5875 16816,5831
+# 
+#: mud: 2025-11-16: meist trocken, nur vereinzelte Pfützen	h=q0-,wet
+(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	X 16816,5831 16673,5488 16611,5333 16591,5284
+# 
+#: mud: 2025-11-16: einige Pfützen und matschige Stellen	h=q2-,wet
+(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	X 16673,5488 16564,5381 16497,5323
+# 
+#: mud: 2025-11-16: einige Pfützen und matschige Stellen	h=q3+,wet
+(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	X 16497,5323 16305,5152
 # 
 #: mud: 2025-11-05: einige matschige Stellen und Pfützen	h=q2-,wet
 (Königsheideweg - Weststr.): wassergebundene Decke, etwas Schotter	X 17115,4757 17132,4852 17173,4902

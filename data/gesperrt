@@ -2382,6 +2382,8 @@ Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross::ignrte 15899,14598 
 Große-Leege-Str. -> Verdener Gasse: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15899,14598 15968,14684 15946,14702
 Verdener Gasse -> Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15946,14702 15968,14684 16033,14756
 Mittelstreifen mit Bordsteienen	3nocross::ignrte 16259,7328 16195,7398 15920,7697
+Köpenicker Landstr. -> Lakegrund: Mittelstreifen mit Bordsteienen	3::igndisp 15920,7697 16195,7398 16368,7425
+Lakegrund -> Köpenicker Landstr.: Mittelstreifen mit Bordsteienen	3::igndisp 16368,7425 16195,7398 16259,7328
 Straßenbahntrasse	3nocross::ignrte 19053,2890 19021,2946 18949,3073
 Zum Trudelturm -> Max-Born-Str.: Straßenbahntrasse	3::igndisp 19101,3028 19021,2946 19053,2890
 Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18949,3073 19021,2946 19101,3028
@@ -3611,7 +3613,6 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nic
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,22604 12668,22537
 Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
-zur Ontarioseestr.: Hochbauarbeiten, komplett gesperrt	2::inwork 18585,10024 18694,10018
 An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22546,3115 22470,3109
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -3648,7 +3649,6 @@ Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inw
 Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
-Lakegrund: wegen Bauarbeiten gesperrt	2::inwork 16368,7425 16195,7398
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
 George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgersteig frei	2s:inwork 7446,14403 7529,14274
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3964,6 +3964,8 @@ Walter-Friedrich-Str.	1s 16172,25217 16171,25254
 Walter-Friedrich-Str.	1 16171,25254 16264,25418
 Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 Straßenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18740,9907
+Treskowallee -> Zur Ontarioseestr.: Straßenbahntrasse	3::igndisp 18703,9997 18694,10018 18585,10024
+Zur Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18585,10024 18694,10018 18631,10167
 Treskowallee -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18740,9907 18703,9997 18445,9887
 Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18694,10018 18703,9997 18708,10000
 Weg entlang der Bahnstrecke -> Treskowallee: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018
