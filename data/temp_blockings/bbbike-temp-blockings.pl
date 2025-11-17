@@ -706,11 +706,11 @@ EOF
        source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
-     { from  => $isodate2epoch->("2025-07-18 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-07-20 23:59:59"),
+     { from  => $isodate2epoch->("2026-07-17 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-07-19 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2021-10-25T00:00:00"]],
-       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (19.7.2025 und 20.7.2025)',
+       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (18.7.2026 und 19.7.2026)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: http://www.stadtfest.berlin/de/index.html
@@ -17656,6 +17656,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
 #: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1617272.php
 # REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 	2::xmas 13416,7712 13424,7680
@@ -33239,7 +33240,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-11-09
+#: last_checked: 2025-11-17
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -36445,8 +36446,8 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-07
-#: check_frequency: 21d
+#: last_checked: 2025-11-17 (Kran wurde abgebaut)
+#: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -36471,7 +36472,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -43515,6 +43516,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
+#: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
@@ -46811,7 +46813,7 @@ EOF
 EOF
      },
      { from  => 1755535790, # 1731304800, # 2024-11-11 07:00
-       until => undef, # $isodate2epoch->("2025-04-29 23:59:59"), # 1734994740, # 2024-12-23 23:59
+       until => 1763403120, # undef, # $isodate2epoch->("2025-04-29 23:59:59"), # 1734994740, # 2024-12-23 23:59
 #      text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Wilhelm-Busch-Str., Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
 #      text  => 'Roseggerstr.: Bauarbeiten zwischen Stuttgarter Str. und Sonnenallee, Sperrung, auch Radfahrer sind betroffen, vom 12.11.2024 bis 29.04.2025',
        text  => 'Roseggerstr.: Bauarbeiten zwischen Donaustr. und Sonnenallee, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
@@ -46823,10 +46825,8 @@ EOF
 #: osm_watch: note 4524886 3
 #: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
-#: also_indoor: traffic (G[zu lang],T,re-H[zu kurz],ex-W[zu kurz])
-#: last_checked: 2025-11-04 (mapillary)
-#: check_frequency: 14d (traffic)
-#: next_check: 2025-12-31
+#: also_indoor: traffic (G[zu lang],ex-T,ex-H[zu kurz],ex-W[zu kurz])
+# REMOVED --- #: last_checked: 2025-11-04 (mapillary) --- #: check_frequency: 14d (traffic) --- #: next_check: 2025-12-31
 	q4::inwork 13147,8056 13205,8126 13277,8211
 # REMOVED (hier mittlerweile keine Bauarbeiten mehr) ---	q4::inwork 13277,8211 13331,8283
 EOF
@@ -48934,7 +48934,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-11-10 vvv
+#: last_checked: 2025-11-17 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -49949,7 +49949,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-16
+#: last_checked: 2025-11-17
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50886,11 +50886,12 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
 #: next_check: 2026-12-31 vvv
-#: also_indoor: traffic (G[falsch],H[falsch],W[falsch],A[falsch],no-T)
+#: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],no-T)
 #: note: Halteverbotsschilder von 17.11.2025 bis März 2026
-#: last_checked: 2025-11-11
-#: check_frequency: 7d
-#: next_check: 2025-11-17
+#: last_checked: 2025-11-17 (traffic)
+#: check_frequency: 3d
+# REMOVED --- #: check_frequency: 7d
+# REMOVED --- #: next_check: 2025-11-17
 #: XXX activate bbd record and change text!
 #Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
 #: also_indoor: traffic (G,T)
@@ -51076,6 +51077,36 @@ EOF
 #: check_frequency: 45d
 #: next_check: 2026-01-31
 	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565
+EOF
+     },
+     { from  => 1763272800, # 2025-11-16 07:00
+       until => 1777564800, # 2026-04-30 18:00
+       text  => 'Loschmidtstr.: Baustelle, Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 17.11.2025 07:00 bis 30.04.2026 18:00',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf
+#: source_id: LMS-BR:390327/72 viz2021:13.31374,52.51816,17.11.2025,07:00 (bis 30.04.2026)
+#: also_indoor: traffic (G,no-T)
+#: osm_watch: note 4547482 1
+#: osm_watch: way id="4586182" version="17"
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer?
+#: last_checked: 2025-09-24
+#: check_frequency: 90d
+#: next_check: 2025-11-17 (VIZ-Verkehrsmeldung: Beginn)
+Alt-Lietzow, Loschmidtstr.	q4::inwork; 4250,12390 4219,12324 4215,12307 4276,12153 4238,12067
+EOF
+     },
+     { from  => 1763272800, # 2025-11-16 07:00
+       until => 1777564800, # 2026-04-30 18:00
+       text  => 'Iburger Ufer: Baustelle, Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 17.11.2025 07:00 bis 30.04.2026 18:00',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LMS-BR:390326/72 viz2021:13.308606,52.520026,17.11.2025,07:00 (bis 30.04.2026)
+#: also_indoor: traffic (G,T)
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer?
+#: XXX: Stimmt die Einbahnstraßenrichtung? Und warum steht in der VIZ-Verkehrsmeldung "ab Alt-Lietzow", müsste es nicht "ab Arcostr." heißen?
+#: next_check: 2025-11-17 (VIZ-Verkehrsmeldung)
+Iburger Ufer	q4::inwork; 3889,12591 4085,12614 4129,12619 4160,12612 4289,12576
 EOF
      },
     );

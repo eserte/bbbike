@@ -265,7 +265,45 @@ Auflösebereich bis zum Alexanderplatz	2::temp 11589,12768 11289,12908 11226,1294
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.stadtfest.berlin/de/index.html
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
+#: by: https://www.stadtfest.berlin/de/index.html (2.+3. Oktober 2021)
+#: by: https://www.siegessaeule.de/magazin/lesbisch-schwules-stadtfest-2021-auf-der-kippe/ (Absage)
+#: by: https://www.stadtfest.berlin/de/index.html?date=20220515
+#: by: https://www.berlin.de/events/2094393-2229501-lesbischschwules-stadtfest.html (19. Juli 2025 - 20. Juli 2025)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1814521868080050462
+#: by: https://pbs.twimg.com/media/GSsvMEiWsAALOVt?format=jpg&name=large
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu7nuz2q2527
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia3bn3222qjpj4ze4d5yplqplvhtt25eltlcusiccrbc75vuiyyiq@jpeg
+Motzstr.	2::temp 6499,10086 6609,10147 6626,10155 6729,10212 6941,10329 6971,10346
+Kalckreuthstr.	2::temp 6636,10492 6628,10318 6626,10155
+Fuggerstr.	2::temp 6487,10277 6628,10318 6719,10347
+Eisenacher Str.	2::temp 6753,10446 6719,10347 6729,10212 6739,10120
+Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
+##: note: laut Karte nur eingeschränktes Halteverbot vvv
+#Eisenacher Str. ab Nollendorfstr.	q4::temp 6739,10120 6741,10017
+#Gossowstr.	q4::temp 6609,10147 6630,9990
+##: note ^^^
+',
+         'from' => 1784239200,
+         'id' => 74,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (18.7.2026 und 19.7.2026)',
+         'type' => 'gesperrt',
+         'until' => 1784498399
+       },
        undef,
        undef,
        undef,
@@ -2679,6 +2717,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
 #: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1617272.php
 # REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 	2::xmas 13416,7712 13424,7680
@@ -3129,18 +3168,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '##: source_id: http://www.breadandbutter.com/winter2014/de/home/
-#Platz der Luftbrücke: Hauptfahrbahn	q4::temp 9233,8597 9321,8607 9364,8640 9395,8726
-#: by: https://www.berlin.de/tickets/ausstellungen/the-nova-music-festival-exhibition-5f3918a8-c61b-419a-b129-85996a764e18/
-Platz der Luftbrücke: Zufahrt zum Empfangsgebäude	2::temp 9321,8607 9401,8510 9451,8548 9364,8640
-',
-         'from' => 1762383600,
-         'id' => 2245,
-         'text' => 'Platz der Luftbrücke: Zufahrt zum Empfangsgebäude wegen einer Veranstaltung (Nova Music Festival Exhibition) gesperrt, voraussichtlich 6.11.2025 bis 16.11.2025',
-         'type' => 'gesperrt',
-         'until' => 1763333999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5200,7 +5228,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-11-09
+#: last_checked: 2025-11-17
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -5823,8 +5851,8 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-07
-#: check_frequency: 21d
+#: last_checked: 2025-11-17 (Kran wurde abgebaut)
+#: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -5848,7 +5876,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -7342,6 +7370,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
        },
        {
          'data' => '#: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
+#: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
@@ -8164,26 +8193,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: ROSEGGER-2024
-#: source_id: viz2021:13.44612,52.47982,12.11.2024,07:00 (bis 23.12.2024) (inaktiv)
-#: source_id: viz2021:13.44612,52.47982,03.12.2024,07:23 (bis 29.04.2025) (inaktiv)
-#: osm_watch: note 4524886 3
-#: note: auf dem Baustellenschild von Stromnetz steht Juni 2025 als Endedatum, aber das ist schon längst vorbei
-#: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-richardstr/ (Sperrung bis Ende 2025)
-#: also_indoor: traffic (G[zu lang],T,re-H[zu kurz],ex-W[zu kurz])
-#: last_checked: 2025-11-04 (mapillary)
-#: check_frequency: 14d (traffic)
-#: next_check: 2025-12-31
-	q4::inwork 13147,8056 13205,8126 13277,8211
-# REMOVED (hier mittlerweile keine Bauarbeiten mehr) ---	q4::inwork 13277,8211 13331,8283
-',
-         'from' => 1755535790,
-         'id' => 4216,
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Donaustr. und Sonnenallee, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
@@ -9025,7 +9035,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-11-10 vvv
+#: last_checked: 2025-11-17 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9497,7 +9507,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-16
+#: last_checked: 2025-11-17
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -10051,11 +10061,12 @@ Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
        {
          'data' => '#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
 #: next_check: 2026-12-31 vvv
-#: also_indoor: traffic (G[falsch],H[falsch],W[falsch],A[falsch],no-T)
+#: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],no-T)
 #: note: Halteverbotsschilder von 17.11.2025 bis März 2026
-#: last_checked: 2025-11-11
-#: check_frequency: 7d
-#: next_check: 2025-11-17
+#: last_checked: 2025-11-17 (traffic)
+#: check_frequency: 3d
+# REMOVED --- #: check_frequency: 7d
+# REMOVED --- #: next_check: 2025-11-17
 #: XXX activate bbd record and change text!
 #Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350 11316,14360
 #: also_indoor: traffic (G,T)
@@ -10216,6 +10227,38 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
          'text' => 'Hönower Str.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Ende Januar 2026',
          'type' => 'handicap',
          'until' => 1769900399
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf
+#: source_id: LMS-BR:390327/72 viz2021:13.31374,52.51816,17.11.2025,07:00 (bis 30.04.2026)
+#: also_indoor: traffic (G,no-T)
+#: osm_watch: note 4547482 1
+#: osm_watch: way id="4586182" version="17"
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer?
+#: last_checked: 2025-09-24
+#: check_frequency: 90d
+#: next_check: 2025-11-17 (VIZ-Verkehrsmeldung: Beginn)
+Alt-Lietzow, Loschmidtstr.	q4::inwork; 4250,12390 4219,12324 4215,12307 4276,12153 4238,12067
+',
+         'from' => 1763272800,
+         'id' => 4502,
+         'text' => 'Loschmidtstr.: Baustelle, Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 17.11.2025 07:00 bis 30.04.2026 18:00',
+         'type' => 'gesperrt',
+         'until' => 1777564800
+       },
+       {
+         'data' => '#: source_id: LMS-BR:390326/72 viz2021:13.308606,52.520026,17.11.2025,07:00 (bis 30.04.2026)
+#: also_indoor: traffic (G,T)
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer?
+#: XXX: Stimmt die Einbahnstraßenrichtung? Und warum steht in der VIZ-Verkehrsmeldung "ab Alt-Lietzow", müsste es nicht "ab Arcostr." heißen?
+#: next_check: 2025-11-17 (VIZ-Verkehrsmeldung)
+Iburger Ufer	q4::inwork; 3889,12591 4085,12614 4129,12619 4160,12612 4289,12576
+',
+         'from' => 1763272800,
+         'id' => 4503,
+         'text' => 'Iburger Ufer: Baustelle, Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 17.11.2025 07:00 bis 30.04.2026 18:00',
+         'type' => 'gesperrt',
+         'until' => 1777564800
        }
      
 );
