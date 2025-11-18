@@ -44893,7 +44893,7 @@ EOF
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
 #: source_id: viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr)
-#: osm_watch: way id="1303423090" version="5"
+#: osm_watch: way id="1303423090" version="6"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: last_checked: 2025-08-18 (mapillary)
 #: next_check: 2025-12-31 (Baustellenschild)
@@ -47982,7 +47982,7 @@ EOF
 #: by: https://stadtrand-nachrichten.de/klingsorstrasse-verwirrung-um-baustelle-der-wasserbetriebe/ (erst ab dem 10. oder 11.04.2025)
 #: by: http://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-klingsorstrasse-in-steglitz/ (ab 10.04.2025)
 #: by: http://viz.berlin.de/site/assets/files/1841/screenshot_2025-04-08_132327.542x0-is.png
-#: source_id: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum) (bis 2025-11-18)
+#: source_id[inactive]: bvg2024:283#HIM_FREETEXT_273178 (ab 2025-04-07, kein Endedatum) (bis 2025-11-18)
 #: source_id: viz2021:13.324893,52.446087,10.04.2025,07:00 (bis 23.06.2025) (inaktiv)
 #: source_id: viz2021:13.32634,52.44753,28.07.2025,07:00 (bis 25.08.2025) (inaktiv)
 #: source_id: viz2021:13.31578,52.44314,18.08.2025,07:00 (hier nur Kfz-Verkehr, bis 10.09.2025) (bis 15.09.2025) (bis 26.09.2025) (bis 31.10.2025) (inaktiv)
@@ -48200,14 +48200,18 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # 
 #: note: hier Arbeiten an Gasleitungen, aber in der gleichen Gegend
 # REMOVED --- #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-# REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
-# REMOVED --- Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
-#: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-11-16 (traffic)
+#: last_checked: 2025-11-17 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
+Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
+#: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+#: also_indoor: traffic (T,G)
+# REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-11-17 (traffic)
+#: check_frequency: 3d (traffic)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
+# 
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -50498,7 +50502,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.45588,52.53572, (mittlerweile nur noch Fahrbahnverengung) (inaktiv)
-#: source_id: viz2021:13.455932,52.535655, (Fahrbahnverengung, bis 14.11.2025)
+#: source_id: viz2021:13.455932,52.535655, (Fahrbahnverengung, bis 14.11.2025) (bis 21.11.2025)
 #: also_indoor: traffic (ex-T)
 #: note: Länge des abgesperrten Bereichs plus weiterer Gehwegabschnitt wegen Absperrgittern ca. 90m
 # REMOVED --- #: last_checked: 2025-10-06
@@ -51087,8 +51091,8 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf
 #: source_id: LMS-BR:390327/72 viz2021:13.31374,52.51816,17.11.2025,07:00 (bis 30.04.2026)
 #: also_indoor: traffic (G,no-T)
-#: osm_watch: note 4547482 1
-#: osm_watch: way id="4586182" version="17"
+#: osm_watch: note 4547482 4
+#: osm_watch: way id="4586182" version="20"
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer?
 #: last_checked: 2025-09-24
 #: check_frequency: 90d

@@ -1747,9 +1747,9 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="823635969" version="27"
-#: osm_watch: way id="4615746" version="53"
+#: osm_watch: way id="4615746" version="54"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-11-06 vvv
+#: last_checked: 2025-11-16 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -1837,7 +1837,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
-#: osm_watch: way id="910439501" version="19"
+#: osm_watch: way id="910439501" version="20"
 #: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
@@ -8826,6 +8826,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-teils-verstetigt_a434211
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsapuz63e22u
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieo4f3jjnnylvgwommgakk7f4vyjutoxawpng7ortxeuxreu5pneu@jpeg (provisorische Radspur Richtung Westen vor der Prinzenstr. ist wieder aufgehoben)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251118 (Umbau der Fernwärmebaustelle, nächster Bauzustand bis Anfang Dez 2025)
 #: source_id: 2147340884 (inaktiv)
 #: source_id: 2147340970 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_90638 (inaktiv)

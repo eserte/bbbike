@@ -7645,7 +7645,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
 #: source_id: viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr)
-#: osm_watch: way id="1303423090" version="5"
+#: osm_watch: way id="1303423090" version="6"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: last_checked: 2025-08-18 (mapillary)
 #: next_check: 2025-12-31 (Baustellenschild)
@@ -8848,14 +8848,18 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # 
 #: note: hier Arbeiten an Gasleitungen, aber in der gleichen Gegend
 # REMOVED --- #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-# REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
-# REMOVED --- Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
-#: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-11-16 (traffic)
+#: last_checked: 2025-11-17 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
+Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
+#: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+#: also_indoor: traffic (T,G)
+# REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-11-17 (traffic)
+#: check_frequency: 3d (traffic)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
+# 
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -10232,8 +10236,8 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf
 #: source_id: LMS-BR:390327/72 viz2021:13.31374,52.51816,17.11.2025,07:00 (bis 30.04.2026)
 #: also_indoor: traffic (G,no-T)
-#: osm_watch: note 4547482 1
-#: osm_watch: way id="4586182" version="17"
+#: osm_watch: note 4547482 4
+#: osm_watch: way id="4586182" version="20"
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer?
 #: last_checked: 2025-09-24
 #: check_frequency: 90d
