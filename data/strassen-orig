@@ -189,8 +189,9 @@ Freiligrathstr.	NN 10735,9542 10706,9554
 Brachvogelstr.	N 10006,9942 10029,9989 10066,10071 10069,10151 9884,10192
 Brachvogelstr.	NN 9884,10192 9858,10199
 Am Johannistisch	N 10029,9989 10111,9942
-#: note: südöstlich der Baerwaldstr. 30er-Zone
-Blücherstr. (Kreuzberg)	NH 10564,9292 10580,9361 10429,9514 10306,9640 10147,9804 10144,9856
+#: note: südöstlich der Schleiermacherstr. 30er-Zone
+#: historical_note: früher (bis 2025) als NH kategorisiert, wegen der neuen Fahrradstraße degradiert
+Blücherstr. (Kreuzberg)	N 10564,9292 10580,9361 10429,9514 10306,9640 10147,9804 10144,9856
 Blücherstr. (Kreuzberg)	H 10144,9856 10006,9942 9950,9987 9922,10010 9827,10051 9521,10010 9448,10014
 Blücherplatz	N 9521,10010 9536,10064 9579,10122 9631,10142 9702,10129
 Blücherplatz	NN 9579,10122 9599,10175
@@ -1412,7 +1413,7 @@ Alexanderstr.	HH 11141,12806 11226,12945
 #: note: "Planstraße 1"
 #: by: http://www.stadtentwicklung.berlin.de/planen/staedtebau-projekte/alexanderplatz/de/planungen/verkehrsplanung/planstr_1_alexanderstr/index.shtml ("Planstraße 1")
 #: street_width: 58m
-Alexanderstr.	HH 11226,12945 11139,13008 11033,13086 10923,13156
+Alexanderstr.	HH 11226,12945 11139,13008 11033,13086 10987,13115 10923,13156
 Leuschnerdamm	N 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
 Leuschnerdamm	NH 11458,11136 11473,11180
 Legiendamm	N 11159,10769 11189,10831 11227,10821 11290,10972 11329,11065 11307,11125 11337,11197 11349,11227
@@ -10701,8 +10702,8 @@ Am Damm	N 25967,6125 25992,6060 26179,6041 26282,6033 26351,6028
 Am Damm	NN 25992,6060 25965,6017
 Müllroser Str.	N 26179,6041 26177,6081 26139,6188
 Brösener Str.	N 26282,6033 26284,6130 26247,6228
-Schöneicher Str. (Friedrichshagen)	H 25584,6029 25776,6054 25967,6125 26139,6188 26247,6228
-Schöneicher Landstr. (Friedrichshagen)	H 26247,6228 28586,7139 29168,7350 29192,7368
+Schöneicher Str. (Friedrichshagen)	H 25584,6029 25743,6044 25792,6060 25858,6084 25967,6125 26139,6188 26247,6228
+Schöneicher Landstr. (Friedrichshagen)	H 26247,6228 26405,6289 28586,7139 29168,7350 29192,7368
 Bölschestr.	NH 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
 Bölschestr. [Marktplatz]	N 25491,5240 25497,5327 25544,5326
 Bölschestr. [Kirchplatz]	N 25544,5326 25592,5322 25588,5235
@@ -11625,6 +11626,7 @@ Lauterplatz	NN 5799,7880 5707,7878
 #: by: https://entwicklungsstadt.de/gewerbeprojekt-bau-des-the-friedenauer-am-innsbrucker-platz-laeuft/
 #: by: https://entwicklungsstadt.de/friedenauer-hoehe-grundsteinlegung-fuer-gewerbekomplex-the-friedenauer/ (bis Mitte 2027)
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article409541775/innsbrucker-platz-neues-quartier-baut-friedenau-zu-ende.html
+#: by: https://www.entwicklungsstadt.de/vom-gueterbahnhof-zum-gewerbestandort-das-projekt-the-friedenauer-in-berlin/
 #: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024) (bis 23.04.2024, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.342764,52.477504,02.06.2025,10:00 (Leitungsbau in der Hauptstr., bis 21.07.2025) (inaktiv)
 #: source_id: viz2021:13.34245,52.47724, (Hauptstr., bis 30.07.2025) (bis 31.08.2025) (bis 21.08.2025) (inaktiv)
@@ -19672,7 +19674,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
 #: osm_watch: way id="26590565" version="23"
-#: last_checked: 2025-07-12
+#: last_checked: 2025-11-19
 #: check_frequency: 120d
 (Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.)	NN 5982,12291 6030,12363 6067,12381 6098,12446
@@ -21030,9 +21032,9 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025) (bis 31.08.2026) (inaktiv)
 #: source_id: viz2021:13.33801,52.51361,09.01.2025,11:20 (bis 31.08.2026) (inaktiv)
 #: source_id: viz2021:13.33801,52.51361, (bis 31.08.2026)
-#: last_checked: 2025-10-22
+#: last_checked: 2025-11-19
 #: check_frequency: 180d
-#: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022

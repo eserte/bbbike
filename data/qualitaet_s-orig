@@ -795,10 +795,10 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: osm_watch: way id="1101189359" version="6"
 #: osm_watch: way id="1101189360" version="6"
 #: osm_watch[closed]: note 4529248 5
-#: last_checked: 2025-08-14 (mapillary)
+#: last_checked: 2025-11-19
 # REMOVED --- #: check_frequency: 60d
-#: check_frequency: 90d
-#: next_check: 2025-12-31 (ex-infravelo)
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2025-12-31 (ex-infravelo)
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732
 #: historical_note: bis Frühjahr/Sommer 2025: Kopfsteinpflaster, Q2+
 Rönnestr.: Asphalt	Q0 3041,10732 3295,10831
@@ -1034,7 +1034,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: osm_watch: way id="266580485" version="26"
+#: osm_watch: way id="266580485" version="28"
 #: last_checked: 2025-09-29 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
@@ -1464,7 +1464,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="13"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
-#: osm_watch: way id="25216398" version="40"
+#: osm_watch: way id="25216398" version="41"
 Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21938,5866 21862,5857 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3518,8 +3518,8 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 # REMOVED --- #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
-#: osm_watch: way id="30893534" version="29"
-#: osm_watch: way id="1155399359" version="4"
+#: osm_watch: way id="30893534" version="30"
+#: osm_watch: way id="1155399359" version="5"
 #: last_checked: 2025-09-22 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
@@ -9000,7 +9000,7 @@ Lorcher Str.: unbefestigter Weg	Q1- 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Asphalt	Q0 4160,7043 4068,7040
 (General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8100,8288 8210,8291 8234,8303 8265,8305 8276,8295
 (Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7792,8357 7886,8335 7899,8332
-(Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1 6354,12278 6280,12222
+(Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1- 6354,12278 6280,12222
 Joseph-Haydn-Str.: Kopfsteinpflaster	Q2 5825,12023 5790,12026
 (S-Bhf. Südkreuz - IKEA): Asphalt	Q0 7927,7285 7929,7225
 (S-Bhf. Südkreuz - IKEA): Verbundsteinpflaster	Q0- 7929,7225 7932,7178
@@ -10991,7 +10991,7 @@ Gäßnerweg: Asphalt	Q0- 8551,6552 8553,6665
 (Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8199,3338 8145,3380
 (Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8145,3380 8106,3410
 #: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
-#: osm_watch: way id="25514283" version="16"
+#: osm_watch: way id="25514283" version="17"
 #: last_checked: 2025-09-22 (mapillary)
 #: check_frequency: 300d
 Waltershauser Str.: Mosaikpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
@@ -31016,7 +31016,8 @@ Ingeborg-Drewitz-Allee: Asphalt	Q0 7542,12736 7541,12754
 Spenerstr.: Kopfsteinpflaster	Q2 6876,12610 6907,12777 6966,13075
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): Gehwegplatten	Q0 7418,12601 7377,12729
 #: by: srt
-(Alice-Berend-Str. - Joachim-Karnatz-Allee): Gehwegplatten	Q0- 7362,12731 7368,12601 7368,12583
+#: historical_note: früher Q0-
+(Alice-Berend-Str. - Joachim-Karnatz-Allee): Gehwegplatten mit einigen Hebungen	Q1+ 7362,12731 7368,12601 7368,12583
 (Joachim-Karnatz-Allee - Spreeuferweg): Parkweg	Q1 7435,12584 7447,12520
 Spreeuferweg am Hauptbahnhof: Kopfsteinpflaster	Q2 7945,12878 7966,12913
 #: note: etwas grobe Pflasterung:
@@ -33972,6 +33973,7 @@ Einmündungsbereich asphaltiert	Q0 18159,6642
 Einmündungsbereich mit Kopfsteinpflaster	Q2+ 13392,7648
 Einmündungsbereich asphaltiert	Q0 12805,6248
 Kreuzungsbereich asphaltiert	Q0 6735,9103
+Einmündungsbereich mit Kopfsteinpflaster	Q2 6946,9032
 Kreuzungsbereich asphaltiert	Q0 13019,12316
 Kreuzungsbereich asphaltiert	Q0 18735,9421
 Einmündungsbereich asphaltiert	Q0 18859,6198
