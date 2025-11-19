@@ -140,7 +140,7 @@ MainLoop;
 sub run_grep {
     my $grep_word = $grep_entry->get;
     my $term_type_opt = '--fixed';
-    if ($grep_word =~ m{^\(.+\|.+\)$}) { # heuristic: looks like a regexp with multiple alternatives
+    if ($grep_word =~ m{^\(.+\|.+\)$} && eval { qr{$grep_word} }) { # heuristic: looks like a regexp with multiple alternatives, and it is a valid regexp
 	$term_type_opt = '--rx';
 	# no length check & snipping done for regexps
     } else {
