@@ -6505,16 +6505,18 @@ Nöldnerplatz [Nöldnerstr. - Schlichtallee]	NN 15932,10830 15970,10755
 Nöldnerplatz [am Skatepark]	NN 15820,10916 15844,10894 15856,10821
 #: note: kein Straßenschild auf der östlichen Seite, in der Mitte steht "Nöldnerplatz", auf der westlichen Seite "Lückstraße"
 Lückstr.	N 15870,10938 15903,10906 16049,10844
-Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
+Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16635,10636
 #: oldname: -201411: Sewanstr.
 #: ignore_oldname_file: yes
-Lückstr.	H 16647,10632 16699,10611
+Lückstr.	H 16635,10636 16699,10611
+#: osm.highway: service
+Lückstr. [Wohngebiet]	N 16635,10636 16547,10435
 #: note: Privatstraße vvv
 Im Lichtenhain	N 16497,10685 16491,10655 16484,10615 16474,10591 16461,10560
 Im Lichtenhain	N 16433,10576 16461,10560 16503,10532
 #: note ^^^
 # 
-# REMOVED (durch Bauzaun abgesperrt) --- #: next_check_id: IMLICHTENHAIN-2018 --- #: XXX Wann wird die Zufahrt wieder zurückgebaut? --- #: XXX laut osm mittlerweile schon access=no --- #: osm_watch: way id="609943360" version="5" --- #: last_checked: 2019-08-05 --- #: next_check: 2019-08-18 --- (temporäre Zufahrt zur Straße Im Lichtenhain)	N 16647,10632 16533,10566 16474,10591
+# REMOVED (durch Bauzaun abgesperrt) --- #: next_check_id: IMLICHTENHAIN-2018 --- #: XXX Wann wird die Zufahrt wieder zurückgebaut? --- #: XXX laut osm mittlerweile schon access=no --- #: osm_watch: way id="609943360" version="5" --- #: last_checked: 2019-08-05 --- #: next_check: 2019-08-18 --- (temporäre Zufahrt zur Straße Im Lichtenhain)	N 16635,10636 16533,10566 16474,10591
 # 
 #: note: offiziell nur Lieferverkehr
 #: osm.highway: service
@@ -11893,8 +11895,9 @@ Fischerstr. (Rummelsburg)	NN 15970,10755 16080,10743
 Zobtener Str.	N 15758,10578 16148,10329 16353,10207 16539,10097 16734,9990 16811,9937 16878,9875
 Zobtener Str.	NN 16878,9875 16900,9861
 (Zobtener Str. - Fischerstr.)	NN 16353,10207 16404,10286
-(Fischerstr. - Lückstr.)	NN 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
-(Fischerstr. - Lückstr.)	N 16587,10613 16601,10650
+(Fischerstr. - Lückstr.)	NN 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16562,10617
+#: historical_note: früher (bis etwa Ende 2020) war die Durchfahrt weiter östlich, wurde aber durch ein Howoge-Wohngebiet zugebaut
+(Fischerstr. - Lückstr.)	N 16562,10617 16576,10658
 Wallensteinstr.	N 18134,9080 18092,9141 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 (Weg entlang der Bahnstrecke)	NN 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
 (Weg entlang der Bahnstrecke)	N 17866,9639 18224,9795 18278,9818 18445,9887 18703,9997
@@ -13372,7 +13375,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Einziehung von Straßenland)
 #: XXX ändert sich durch die (teilweise?) Straßenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="11"
-#: osm_watch: way id="23106203" version="16"
+#: osm_watch: way id="23106203" version="17"
 #: last_checked: 2025-07-03 (mapillary)
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113

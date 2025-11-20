@@ -3466,13 +3466,13 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W,T)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-11-07 (traffic)
+#: last_checked: 2025-11-20 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet?
-#: also_indoor: traffic (T,G)
-#: last_checked: 2025-11-12
+#: also_indoor: traffic (ex-T,G)
+#: last_checked: 2025-11-20 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -5801,18 +5801,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 227300117 (von 2022, inaktiv)
-#: source_id: 257309325 (bis 12.04.2025) (inaktiv)
-#: source_id: 257300609 (bis 20.11.2025)
-	2::inwork 49004,64047 48516,64085 48151,64245
-',
-         'from' => 1763334000,
-         'id' => 3527,
-         'text' => 'Herzsprung: Gleisbauarbeiten am Bahnübergang, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.11.2025 06:00 bis 20.11.2025 20:00',
-         'type' => 'gesperrt',
-         'until' => 1763665200
-       },
+       undef,
        undef,
        undef,
        {
@@ -5846,6 +5835,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://entwicklungsstadt.de/delta-campus-in-neukoelln-eroeffnet-co-working-im-ehemaligen-parkhaus/
 #: by: https://entwicklungsstadt.de/kai-wegner-besucht-zur-neueroeffnung-das-kalle-neukoelln/
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409917943/kalle-neukoelln-ist-fertig-da-schwingt-das-berlinerische-mit.html
+#: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
 #: osm_watch: way id="734271970" version="7"
 #: osm_watch: way id="975241319" version="8"
 #: osm_watch: way id="970452276" version="8"
@@ -6494,6 +6484,7 @@ Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1518885.php (Arbeiten ab 13.01.2025 bis voraussichtlich Ende Oktober 2025)
 #: by: https://www.bew.berlin/aktuelles-und-presse/bauvorhaben-hindenburgdamm/ (mittlerweile bis Ende Dezember 2025)
 #: by: https://www.bew.berlin/binaries/content/assets/website/newsroom/illustration---netzverstarkung-hindenburgdamm.pdf/ (bis 4. Quartal 2025)
+#: by: https://www.bew.berlin/binaries/content/assets/website/newsroom/illustration---netzverstarkung-hindenburgdamm.pdf?date=20251120 (nun bis 1. Quartal 2026?)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/start-fuer-weitere-bauabschnitte-am-hindenburgdamm_a433899
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
@@ -6521,9 +6512,9 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 ',
          'from' => 1697320800,
          'id' => 3728,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Sperrung bis voraussichtlich Ende Dezember 2025',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Sperrung möglicherweise bis Ende März 2026',
          'type' => 'gesperrt',
-         'until' => 1767221999
+         'until' => 1774994399
        },
        undef,
        undef,
@@ -6569,8 +6560,8 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
-#: osm_watch: way id="37861386" version="33"
-#: osm_watch: way id="1231148375" version="8"
+#: osm_watch: way id="37861386" version="34"
+#: osm_watch: way id="1231148375" version="9"
 #: priority: #B
 #: last_checked: 2025-10-17 (osm)
 #: check_frequency: 120d
@@ -7013,7 +7004,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: viz2021:13.483638,52.502149,04.04.2025,07:00 (bis 14.04.2025) (inaktiv)
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (Gegenverkehrsregelung, bis 31.05.2025) (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.48146,52.50203,15.04.2025,14:15 (Gegenverkehrsregelung, bis 31.05.2025) (inaktiv)
-#: source_id: viz2021:13.48146,52.50203,03.11.2025,06:00 (bis 22.11.2025)
+#: source_id: viz2021:13.48146,52.50203,03.11.2025,06:00 (bis 22.11.2025) (vorfristig inaktiv)
 #: source_id: bvg2024:194#HIM_FREETEXT_304347 (Verlegung der Haltestelle ab 3.11.2025, evtl. wegen möglicher Bauarbeiten in der Nöldnerstr.?)
 #: source_id: bvg2024:194#HIM_FREETEXT_304348 (s.o.)
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_304350 (s.o.) (vor Anfang inaktiv)
@@ -7027,13 +7018,13 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
 # REMOVED --- #: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden; am 2025-04-04 ebenfalls zwei Schutztunnel, deshalb q4 -> q3
 #: note: keine offizielle Führung für Radfahrer; nur der nördliche Gehweg ist passierbar, aber dieser scheint relativ breit und wenig benutzt zu sein; ggfs. Bordstein am westlichen Ende
-#: last_checked: 2025-11-16
+#: last_checked: 2025-11-20
 #: next_check: 2025-11-22 (VIZ-Verkehrsmeldung)
 	q3::inwork 15793,10814 15856,10821 15932,10830
 ',
          'from' => 1762124400,
          'id' => 3886,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 03.11.2025 bis 22.11.2025',
+         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 03.11.2025 bis voraussichtlich 22.11.2025',
          'type' => 'handicap',
          'until' => 1763852399
        },
@@ -7102,11 +7093,12 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: osm_watch: way id="1207706195" version="4"
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
-#: note: Halteverbotsschilder sogar bis Ende März 2026
+#: by: https://www.entwicklungsstadt.de/bund-baut-neue-bundesgeschaeftsstelle-auf-dem-vollgut-areal-in-neukoelln/ (Bezug im zweiten Quartal 2026)
+#: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: last_checked: 2025-11-07
 #: check_frequency: 120d
-#: next_check: 2026-03-30
+#: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 12407,8177 12545,8209
 ',
          'from' => 1693458000,
@@ -7377,10 +7369,11 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
 #: source_id: viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025)
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
-#: note: zurzeit (2025-11-15) in Höhe Weserstr. Straßenschäden, Straße ist für den Durchgangsverkehr gesperrt
+#: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
+#: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Regelung für Radfahrer
 # REMOVED (frühere Sperrung) ---	q4::inwork 15055,11505 15016,11431
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
-#: next_check: 2025-11-17
+# REMOVED --- #: next_check: 2025-11-17
 	q4::inwork 15016,11431 14945,11300
 ',
          'from' => 1763247600,
@@ -7477,7 +7470,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 # REMOVED --- Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 # REMOVED --- # REMOVED --- #: add_fragezeichen ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: https://www.gesobau.de/wohnungsbau/wiesenstrasse-reinickendorfer-strasse/ (bis Herbst 2026)
-#: osm_watch: way id="120633718" version="34"
+#: osm_watch: way id="120633718" version="35"
 #: osm_watch: way id="1273476153" version="2"
 #: also_indoor: traffic (G,no-T,no-H,W) vvv
 #: note: eigentlich 1s:q3
@@ -7749,12 +7742,13 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 #: by: https://mierendorffinsel.org/2024/07/umgestaltung-eines-teilbereiches-der-mierendorff-insel-inselrundweg-teilweise-gesperrt/
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=772392#post772392 (bis Oktober 2025)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1545301.php (Eröffnung des Skate-Parks am 5.4.2025, der Zugang von der Gaußstr. ist aber weiterhin gesperrt)
+#: by: https://www.deutsches-architektur-forum.de/pics/backstein/daf/2025/11/goslarer_ufer03.jpg (am südlichen Ende ist anscheinend ein Schwingtor entstanden)
 #: note: 2024-09-18: Bauzäune sind weggeschoben; 2025-09-24: Arbeiten im südlichen Bereiche, Bauzäune
 # REMOVED --- #: osm_watch: way id="746470210" version="3"
 #: osm_watch: way id="1382537913" version="3"
 #: osm_watch: note 4916457 3
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Uferweg weiterhin gesperrt?
-#: last_checked: 2025-11-12 (osm note: "inoffiziell zugänglich")
+#: last_checked: 2025-11-20 (daf)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-10-31
 	2::inwork 4151,13961 4156,13914 4186,13710
@@ -8345,10 +8339,10 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
 #: by: https://entwicklungsstadt.de/baustart-in-tempelhof-neues-klinikgebaeude-fuer-das-st-joseph-krankenhaus/ (bis Ende 2028, Verzögerungen möglich)
 #: note: Gesperrter Bereich ca. 80m, deshalb nur q3. Kann auch offen sein (vielleicht während der Arbeitszeiten; gesehen am 2025-09-22 Mon 17:48). Im Zuge der Hochbauarbeiten am St.-Josef-Krankenhaus gibt es auch Einbahnstraßenregelungen in der Gontermannstr. (offen Richtung Norden) und in der Wintgensstr. zwischen Hessenring und Bäumerplan (offen Richtung Osten), allerdings beide für Radfahrer frei
-#: also_indoor: traffic (ex-B,ex-T,G[falsch])
+#: also_indoor: traffic (ex-T,G[zu lang])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-10-22 (traffic)
+#: last_checked: 2025-11-20 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -8850,17 +8844,19 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: last_checked ^^^
 # 
 #: note: hier Arbeiten an Gasleitungen, aber in der gleichen Gegend
-# REMOVED --- #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+#: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+#: source_id: viz2021:13.55418,52.43793, (bis 12.12.2025)
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-11-19 (traffic)
-#: check_frequency: 3d (traffic)
-# REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: check_frequency: 3d (traffic)
+#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+#: source_id: viz2021:13.55146,52.44, (bis 12.12.2025)
 #: also_indoor: traffic (T,G)
-# REMOVED --- #: next_check: 2025-11-14 (VIZ-Verkehrsmeldung)
 #: last_checked: 2025-11-19 (traffic)
-#: check_frequency: 3d (traffic)
+# REMOVED --- #: check_frequency: 3d (traffic)
+#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 # 
 #: check_frequency ^^^
@@ -9125,7 +9121,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-11 (traffic) vvv
+#: last_checked: 2025-11-20 (traffic) vvv
 #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
@@ -9161,7 +9157,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-11-07 (traffic) vvv
+#: last_checked: 2025-11-20 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-09-02 vvv
 # REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
@@ -9820,7 +9816,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
 #: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
-#: source_id: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
+#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
 #: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
 #: also_indoor: traffic (T,G,H,W)
@@ -9879,7 +9875,8 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
+         'data' => '#: next_check_id: BOUCHE-2025
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027 (Beginn einen Tag später)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251213
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1617856.php (bis 28. November 2025)
@@ -10180,8 +10177,8 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 #: by: https://www.henn.com/de/projekt/iq-space-berlin-center-gene-and-cell-therapies
 #: by: https://www.bayer.com/media/aufbau-von-translationszentrum-fuer-gentherapien-und-zelltherapien-in-berlin-beginnt/
 #: by: https://iq-spaces.com/de/berlin-mitte
-#: osm_watch: way id="1080985512" version="11"
-#: osm_watch: way id="1409889274" version="7"
+#: osm_watch: way id="1080985512" version="12"
+#: osm_watch: way id="1409889274" version="8"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
 #: last_checked: 2025-11-12 vvv

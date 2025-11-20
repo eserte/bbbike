@@ -250,7 +250,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 ### Tempelhof ###
 # 
-# REMOVED (beendet) --- #: note: laut Baustellenschild bis Sommer (2025) --- #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/ (bis September 2025) --- #: last_checked: 2025-08-30 --- #: check_frequency: 45d --- #: next_check: 2025-09-20 (Baustellenschild, entwicklungsstadt) --- #: valid: -20250930 --- Südkreuz: Bauarbeiten, Engstellen	q2::inwork 7838,7848 7837,7899
+# REMOVED (beendet) --- #: note: laut Baustellenschild bis Sommer (2025) --- #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/ (bis September 2025) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1618321.php --- #: last_checked: 2025-08-30 --- #: check_frequency: 45d --- #: next_check: 2025-09-20 (Baustellenschild, entwicklungsstadt) --- #: valid: -20250930 --- Südkreuz: Bauarbeiten, Engstellen	q2::inwork 7838,7848 7837,7899
 # 
 # REMOVED --- #: next_check_id: BOELCKE-2025
 # REMOVED --- #: also_indoor: traffic (ex-B,ex-T,ex-G) vvv
@@ -1078,7 +1078,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-11-10
+#: last_checked: 2025-11-20
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2096,7 +2096,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: by: https://www.nd-aktuell.de/artikel/1187963.bvg-oepnv-in-berlin-tram-in-der-investitionsfalle.html (2028/2029?)
-#: osm_watch: way id="223184082" version="9"
+#: osm_watch: way id="223184082" version="10"
 #: last_checked: 2025-10-17
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
@@ -3104,7 +3104,7 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q4+ 14280,12223 14274,12190
 Müggelstr.: einige Fußgänger	q3 14994,12121 14994,12064
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286
-(Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
+(Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16562,10617
 # REMOVED (BS existiert nicht mehr) --- #: XXX_prog BS Bordstein am Monimbóplatz, ansonsten entfernen --- (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Bordstein	q2 17023,11908 17026,11888
 #: note: abgesenkter Bordstein zur Wallstr.
 #: note: früher "q2", Grünanlagen mit Radfahren-verboten-Zusatzschild
@@ -4128,6 +4128,7 @@ Nöldnerplatz [Lückstr. - Nöldnerstr.]: einige Fußgänger	q1 15903,10906 15932,108
 Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 15970,10755
 #: note: Grünanlage, keine Zusatzschilder
 Nöldnerplatz [am Skatepark]: einige Fußgänger	q3 15820,10916 15844,10894 15856,10821
+Lückstr. [Wohngebiet]: Wohngebiet, einige Fußgänger	q3 16635,10636 16547,10435
 (Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953 16963,9960
 #: note: hier etwas breiterer Weg
 (Weg im Grünzug): einige Fußgänger	q1 16963,9960 16886,9982 16841,9997

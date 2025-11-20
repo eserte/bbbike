@@ -1008,7 +1008,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-11-08
+#: last_checked: 2025-11-20
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1401,8 +1401,8 @@ geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,1026
 	RW4; 14323,9913 14289,9870 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17466,10941 17257,10875 17226,10865 17141,10838 17083,10814 16892,10731 16751,10674 16725,10662 16699,10611
-	RW3; 16597,10651 16601,10650 16647,10632
-	RW1;RW1 16647,10632 16699,10611 16808,10554 16941,10487 17081,10415 17163,10374 17202,10355 17210,10350 17427,10259
+	RW3; 16597,10651 16601,10650 16635,10636
+	RW1;RW1 16635,10636 16699,10611 16808,10554 16941,10487 17081,10415 17163,10374 17202,10355 17210,10350 17427,10259
 	RW1;RW1 11251,13667 11329,13785 11378,13891 11435,14023 11465,14122 11471,14143 11498,14234 11572,14452 11633,14631 11655,14697 11682,14777
 	RW2;RW1 11682,14777 11709,14856
 	RW1;RW2 11709,14856 11740,14950 11776,15060
@@ -1837,7 +1837,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
-#: osm_watch: way id="910439501" version="20"
+#: osm_watch: way id="910439501" version="21"
 #: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
@@ -3276,7 +3276,7 @@ provisorischer Radweg auf dem Hochbord, endet einige Meter vor der Ampel Beerman
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-20
 #: next_check: 2025-12-31
 #: valid: -20251231
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
@@ -3303,7 +3303,7 @@ relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2025-11-03
+#: last_checked: 2025-11-20
 #: next_check: 2025-12-31
 #: valid: -20251231
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691

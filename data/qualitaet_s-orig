@@ -9332,8 +9332,8 @@ Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2+ 12453,11790 12413,11901
 Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 (Zobtener Str. - Fischerstr.): unbefestigter Weg, etwas Schotter	Q2+ 16353,10207 16404,10286
 (Fischerstr. - Lückstr.): unbefestigter Weg, etwas Schotter	Q2+ 16404,10286 16488,10381 16516,10448
-(Fischerstr. - Lückstr.): Beton mit Schäden	Q2+ 16516,10448 16501,10460 16572,10613 16587,10613
-(Fischerstr. - Lückstr.): Beton mit Schäden	Q1- 16587,10613 16601,10650
+(Fischerstr. - Lückstr.): Beton mit Schäden	Q2+ 16516,10448 16501,10460 16572,10613 16562,10617
+(Fischerstr. - Lückstr.): Beton mit Schäden	Q1- 16562,10617 16576,10658
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED --- #: XXX wird hier saniert werden? --- # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1 --- #: osm_watch: way id="35873435" version="13" --- #: last_checked: 2025-04-02 --- #: check_frequency: 120d
@@ -13665,7 +13665,8 @@ Bergmannstr.: Asphalt	Q0 10366,9233 10547,9233
 Südstern: Asphalt	Q0 10547,9233 10705,9234
 #: historical_note: bis August 2023 in Richtung Osten: Asphalt, einige Schäden, Q0-;
 Lückstr.: Asphalt	Q0+; 16153,10818 16300,10753 16313,10747 16468,10695
-Lückstr.: Asphalt mit einigen Schäden	Q0-; 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
+Lückstr.: Asphalt mit einigen Schäden	Q0-; 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16635,10636
+Lückstr. [Wohngebiet]: Betonpflaster	Q0- 16635,10636 16547,10435
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12174,14739 12128,14764
 (Greifswalder Str. - Ella-Kay-Str.): Beton	Q1+ 12128,14764 12050,14808
 Aschaffenburger Str. (Schöneberg, Wilmersdorf): Kleinsteinpflaster	Q1 5668,9590 5642,9613
@@ -22867,7 +22868,7 @@ Bertramstr.: schlechtes Kopfsteinpflaster	Q3 4201,23397 4293,23459 4355,23554
 Bertramstr.: Beton	Q0 4355,23554 4373,23590 4382,23635 4380,23709 4383,23732 4396,23775 4430,23848 4453,23918 4472,23953 4486,23979
 #: corrected_by: srt (neu gemacht)
 Bertramstr.: Asphalt	Q0 4486,23979 4510,23992 4613,24032 4737,24064 4829,24067
-#: source_id: viz2021:13.328289,52.622617,20.10.2025,07:00 (bis 20.11.2025)
+#: source_id: viz2021:13.328289,52.622617,20.10.2025,07:00 (bis 20.11.2025) (inaktiv)
 #: XXX Tiefbauarbeiten, danach vielleicht besserer Asphalt?
 #: next_check: 2025-11-20
 Bertramstr.: Asphalt mit einigen Schäden	Q1 4829,24067 4942,24046 5013,24019 5046,24000
