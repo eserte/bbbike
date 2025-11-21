@@ -1058,7 +1058,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 16699,10611 16635,10636 16601,10650 16597,10651 16576,10658 16497,10685 16468,10695 16313,10747 16300,10753 16153,10818 16085,10844 16049,10844
+	1 16699,10611 16635,10636 16597,10651 16576,10658 16497,10685 16468,10695 16313,10747 16300,10753 16153,10818 16085,10844 16049,10844
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -3530,6 +3530,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
 #: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
+#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410506383/weihnachtsmarkt-city-west-wichtige-strassen-bleiben-drei-jahre-zu.html
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
@@ -17554,6 +17555,7 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt.html
 #: by: https://www.morgenpost.de/bezirke/mitte/article410233534/weihnachtszauber-kehrt-auf-den-gendarmenmarkt-in-mitte-zurueck.html
 #: note "WeihnachtsZauber auf dem Gendarmenmarkt"
+#: note: schmale Durchgänge am Rand des Weihnachtsmarkts existieren
 	2::xmas 9536,11922 9666,11935
 	2::xmas 9523,12019 9656,12031
 EOF
@@ -29112,7 +29114,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-11-13
+#: last_checked: 2025-11-21
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -39495,8 +39497,8 @@ EOF
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch[closed]: note 3631207 6
 #: osm_watch[closed]: note 3631209 6
-#: osm_watch: note 4556342 6
-#: osm_watch: note 4741254 7
+#: osm_watch: note 4556342 7
+#: osm_watch: note 4741254 8
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
@@ -41774,8 +41776,8 @@ EOF
 #: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (Gegenverkehrsregelung, bis 31.05.2025) (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.48146,52.50203,15.04.2025,14:15 (Gegenverkehrsregelung, bis 31.05.2025) (inaktiv)
 #: source_id: viz2021:13.48146,52.50203,03.11.2025,06:00 (bis 22.11.2025) (vorfristig inaktiv)
-#: source_id: bvg2024:194#HIM_FREETEXT_304347 (Verlegung der Haltestelle ab 3.11.2025, evtl. wegen möglicher Bauarbeiten in der Nöldnerstr.?)
-#: source_id: bvg2024:194#HIM_FREETEXT_304348 (s.o.)
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_304347 (Verlegung der Haltestelle ab 3.11.2025, evtl. wegen möglicher Bauarbeiten in der Nöldnerstr.?)
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_304348 (s.o.)
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_304350 (s.o.) (vor Anfang inaktiv)
 #: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
@@ -43515,19 +43517,22 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 EOF
      },
      { from  => $isodate2epoch->("2025-11-16 00:00:00"), # 1730782800, # 2024-11-05 06:00, # 1705899600, # 2024-01-22 06:00
-       until => $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
+       until => $isodate2epoch->("2025-12-02 23:59:59"), # $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
 #      text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
 #      text  => 'Gürtelstr.: Kranabbau zwischen Weserstr. und Wiesenweg, Sperrung der Fahrbahn, vom 06.11.2024 06:00 bis 07.11.2024 18:00',
-       text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 21.11.2025',
+       text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 02.12.2025',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
-#: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025)
+#: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
+#: source_id: viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025)
+#: source_id: viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
-#: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
-#: source_id: viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025)
+#: osm_watch: way id="490912373" version="17"
+#: osm_watch: way id="1113567086" version="8"
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
 #: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Regelung für Radfahrer
@@ -45082,7 +45087,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-11-13 vvv
+#: last_checked: 2025-11-21 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -47315,7 +47320,7 @@ EOF
 EOF
      },
      { from  => 1738350510, # 2025-01-31 20:08
-       until => $isodate2epoch->("2025-11-21 23:59:59"), # $isodate2epoch->("2025-09-09 17:00:00"), # 1745445600, # 2025-04-24 00:00
+       until => $isodate2epoch->("2025-11-27 23:59:59"), # $isodate2epoch->("2025-09-09 17:00:00"), # 1745445600, # 2025-04-24 00:00
 #      text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis 09.09.2025',
        text  => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis Ende November 2025',
        type  => 'handicap',
@@ -47323,7 +47328,7 @@ EOF
 #: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697, (bis 21.11.2025)
+#: source_id: viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025)
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -48041,7 +48046,7 @@ EOF
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-21
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (none)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -49092,7 +49097,7 @@ EOF
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: also_indoor: traffic (none)
-#: last_checked: 2025-10-21
+#: last_checked: 2025-11-21 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -49952,7 +49957,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BLUECHER-2025
-#: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025) (bis 31.10.2025) (bis 22.11.2025)
+#: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025) (bis 31.10.2025) (bis 22.11.2025) (bis 29.11.2025)
 #: also_indoor: traffic (T,G,W,H)
 # REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-10-29 vvv --- #: next_check: 2025-11-22 (VIZ-Verkehrsmeldung) vvv
 Blücherstr. Richtung Baerwaldstr.: Gehweg für Radfahrer frei	q3::inwork; 10429,9514 10306,9640
@@ -49968,7 +49973,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-19
+#: last_checked: 2025-11-21
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50193,7 +50198,7 @@ EOF
        data  => <<'EOF',
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2025-11-12
+#: last_checked: 2025-11-21
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -50267,15 +50272,16 @@ Wolffring, südliche Fahrbahn	q4::inwork; 8969,8278 9032,8254
 EOF
      },
      { from  => 1757626813, # 2025-09-11 23:40
-       until => 1764284400, # 2025-11-28 00:00
-       text  => 'Thielallee: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, bis voraussichtlich 27.11.2025',
+       until => undef, # 1764284400, # 2025-11-28 00:00
+       text  => 'Thielallee: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, bis voraussichtlich 27.11.2025, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.28295,52.44204, (bis 27.11.2025)
 #: also_indoor: traffic (T,G)
 #: next_check_id: THIELALLEE-2025
-#: last_checked: 2025-11-11 (traffic)
+#: last_checked: 2025-11-19 (mapillary)
 #: check_frequency: 30d (traffic)
+#: next_check: 2025-11-27 (VIZ-Verkehrsmeldung)
 	q4::inwork; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
 EOF
      },
@@ -50414,16 +50420,16 @@ Corinthstr.	q4::inwork 14447,10491 14608,10409
 EOF
      },
      { from  => 1758405600, # 2025-09-21 00:00
-       until => 1765839599, # 2025-12-15 23:59
+       until => $isodate2epoch->("2025-12-19 23:59:59"), # 1765839599, # 2025-12-15 23:59
        text  => 'Herbertstr.: Anbindung Kolonnenstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 22.09.2025 bis Dezember 2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: HERBERT-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzfkwh3xw224
-#: source_id: viz2021:13.35762,52.48668,22.09.2025,07:00 (bis 01.12.2025)
+#: source_id: viz2021:13.35762,52.48668,22.09.2025,07:00 (bis 01.12.2025) (bis 19.12.2025)
 #: last_checked: 2025-11-09
-#: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	q4::inwork 7389,8837 7360,8918
 EOF
      },
@@ -50480,6 +50486,7 @@ EOF
 #: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
 #: by: https://bvg.de/dam/jcr:d7121a77-8148-45ab-a019-8e2e57fa9e29/Karte_Map_M1_12.png (Ersatzverkehr)
+#: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
 #: last_checked: 2025-11-10 (okas)
@@ -50657,7 +50664,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2025-11-19
+#: last_checked: 2025-11-21
 #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
 EOF
@@ -50838,7 +50845,7 @@ EOF
        text  => 'Nonnendamm: Bauarbeiten zwischen Nikolaus-Groß-Weg und Kleingartenanlage Bleibtreu II, Sperrung, evtl. sind auch Radfahrer betroffen, vom 27.10.2025 07:00 bis 21.11.2025 17:00',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LMS-BR:388052/72 viz2021:13.281815,52.53128,27.10.2025,07:00 (bis 21.11.2025)
+#: source_id: LMS-BR:388052/72 viz2021:13.281815,52.53128,27.10.2025,07:00 (bis 21.11.2025) (inaktiv)
 	2::inwork 2149,13775 2025,13815
 EOF
      },
@@ -50861,7 +50868,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
 #: source_id: viz2021:13.39202,52.52009,28.10.2025,07:00 (bis 02.12.2025)
-#: last_checked: 2025-11-10 (okas) vvv
+#: last_checked: 2025-11-21 vvv
 #: next_check: 2025-12-02 (VIZ-Verkehrsmeldung) vvv
 Georgenstr.	q4::inwork 9441,12670 9568,12688
 Planckstr.	q4::inwork 9435,12698 9441,12670
@@ -50904,23 +50911,17 @@ EOF
        until => 1798736400, # 2026-12-31 18:00
        dont_check_date => 1, # XXX check script cannot cope with "Stand DD.MM.YYYY"
 #      text  => 'Knaackstr.: Bauarbeiten zwischen Diedenhofer Str. und Prenzlauer Allee, Sperrung geplant (Stand 2.11.2025: noch keine Sperrung), außerdem Sperrung der Kolmarer Str., vom 01.11.2025 07:00 bis voraussichtlich Ende 2026',
-#      text  => 'Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
-       text  => 'Knaackstr.: Bauarbeiten zwischen Wasserturmplatz und Prenzlauer Allee, mögliche Sperrung, außerdem Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
+#      text  => 'Knaackstr.: Bauarbeiten zwischen Wasserturmplatz und Prenzlauer Allee, mögliche Sperrung, außerdem Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
+       text  => 'Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
-#: next_check: 2026-12-31 vvv
-#: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T)
-#: note: Halteverbotsschilder von 17.11.2025 bis März 2026
-#: last_checked: 2025-11-19 (traffic)
-#: next_check: 2025-11-19 (do one outdoor check)
-Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316 11358,14331 11331,14350
-# REMOVED (hier vermutlich nicht?) --- Knaackstr.	q4::inwork 11331,14350 11316,14360
+# REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-11-19 (traffic)
+#: last_checked: 2025-11-21
 #: check_frequency: 120d
+#: next_check: 2025-12-31
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
-#: next_check ^^^
 EOF
      },
      { from  => undef, # 
@@ -51147,6 +51148,17 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
 #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Kommandantenstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (T,no-G)
+#: last_checked: 2025-11-21
+#: check_frequency: 14d
+	q4::inwork 10437,11352 10593,11120
 EOF
      },
     );

@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-11-19 vvv
+#: last_checked: 2025-11-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -557,7 +557,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-10-28 vvv
+#: last_checked: 2025-11-21 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1401,7 +1401,7 @@ geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,1026
 	RW4; 14323,9913 14289,9870 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17466,10941 17257,10875 17226,10865 17141,10838 17083,10814 16892,10731 16751,10674 16725,10662 16699,10611
-	RW3; 16597,10651 16601,10650 16635,10636
+	RW3; 16597,10651 16635,10636
 	RW1;RW1 16635,10636 16699,10611 16808,10554 16941,10487 17081,10415 17163,10374 17202,10355 17210,10350 17427,10259
 	RW1;RW1 11251,13667 11329,13785 11378,13891 11435,14023 11465,14122 11471,14143 11498,14234 11572,14452 11633,14631 11655,14697 11682,14777
 	RW2;RW1 11682,14777 11709,14856
@@ -2286,7 +2286,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-11-11 vvv
+#: last_checked: 2025-11-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -4910,7 +4910,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2025-11-10 (mapillary) vvv
+#: last_checked: 2025-11-21 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -8475,30 +8475,22 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
+#: note: Wassertorplatz
 	RW4; 11117,10326 10975,10334
-	RW4; 10975,10334 10871,10322
-#: next_check_id: GITSCHINER-2025
-#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025) (inaktiv)
-#: source_id: viz2021:13.410603,52.498491,30.01.2025,13:57 (bis 31.03.2025) (inaktiv)
-#: source_id: viz2021:13.410603,52.498491, (bis 29.08.2025) (inaktiv) (bis 12.09.2025) (bis 19.09.2025) (bis 03.11.2025) (bis 17.11.2025) (bis 19.11.2025) (inaktiv)
-#: source_id: LMS-BR:373479/72 viz2021:13.40656,52.49831,23.06.2025,12:00 viz2021:13.40656,52.49831, (bis 12.09.2025) (bis 19.09.2025) (bis 03.11.2025) (bis 17.11.2025) (bis 19.11.2025) (bis 05.12.2025)
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784803546669756574
-#: by: https://pbs.twimg.com/media/GMAs1K9WYAED8d_?format=jpg&name=large
-#: XXX nach den Bauarbeiten wieder zu RW4; machen vvv
-#: last_checked: 2025-10-31 vvv
-# REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-12-05 (VIZ-Verkehrsmeldung) vvv
-#XXX	RW4; 10871,10322 10975,10334
-	RW0; 10871,10322 10975,10334
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
 	RW4; 10975,10334 11117,10326
+# 
+#: note: Gitschiner Str., Richtung Westen
+	RW4; 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303
+	RW3; 10363,10303 10122,10294
+	RW4; 10122,10294 9948,10280 9873,10285
+#: note: Gitschiner Str., Richtung Osten
+	RW4; 9865,10227 9948,10280 10122,10294 10363,10303 10605,10312
+	RW3; 10605,10312 10708,10312 10871,10322 10975,10334
+# 
 	RW6;RW6 11715,11522 11767,11662 11821,11733
 neu asphaltiert	RW2;RW2 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813
 # 
@@ -8581,7 +8573,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2025-10-21
+#: last_checked: 2025-11-21
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8607,7 +8599,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2025-10-21 vvv
+#: last_checked: 2025-11-21 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-09-30 (infravelo) vvv
@@ -8799,101 +8791,6 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: note: Spielstraßenschild am südlichen Ende
 	RW6;RW6 13392,9225 13421,9260
 # 
-#: next_check_id: POPUPRADWEGE-2020
-#: next_check_id: GITSCHINER-2025
-#: XXX Baumaßnahme 2.8, 2.16 (Realisierung 2011 und nach 2011)
-#: XXX Fahrbahnsanierungsarbeiten bis 2019-12-20
-#: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2014 (Widmung von Straßenland für einen Radfahrstreifen, Gitschiner/Alexandrinen)
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaßnahme August 2018)
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.532371.php (Fertigstellung des Teilabschnittes am 17.01.2017)
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.654744.php
-#: by: http://www.berliner-woche.de/kreuzberg/verkehr/erster-abschnitt-ist-fertig-d138572.html
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.733671.php (Fertigstellung Frühjahr 2019; Abschnitt zwischen Böcklerstraße und Alexandrinenstraße)
-#: by: https://api.fixmyberlin.de/api/plannings/6 (zwischen Zossener Str. u. Alexandrinenstr. im Herbst 2019, der Rest im Jahr 2020 abgeschlossen)
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-dauert-laenger_a178562
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php
-#: by: https://api.fixmyberlin.de/api/projects/343 (Gitschiner Str.: temporäre Radspur)
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
-#: by: https://stadtteilausschuss-kreuzberg.de/projekt2020_2.html
-#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-02d_VAO.PDF
-#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-03d_VAO.PDF
-#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-04d_VAO.PDF
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944818.php (Bauarbeiten werden fortgesetzt)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (südliche Fahrbahn wird erst 2021 fertiggestellt (Stand Mai 2020))
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-wird-weiter-gebaut_a276997
-#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021) (mittlerweile 1. Quartal 2020 - 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025) (1. Quartal 2020 - 4. Quartal 2025)
-#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025) (1. Quartal 2020 - 4. Quartal 2025)
-#: by: https://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021) (mittlerweile gelöscht) (und wieder da, nun bis 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (bis 4. Quartal 2024) (gelöscht) (wieder da) (1. Quartal 2020 - 2. Quartal 2025) (1. Quartal 2020 - 2. Quartal 2026)
-#: by: https://www.tagesspiegel.de/berlin/sanierung-der-bvg-hochbahn-sperrung-auf-u1-und-u3-in-berlin-kreuzberg-wird-ab-freitag-ausgeweitet/27039930.html (Verstetigung ab 12.4.2021)
-#: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung erst 2023)
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/pop-up-radwege-werden-dauerhaft_a332363 (2022 nur teilweise Verstetigung, fertig erst 2023)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/220824_mobilitaetswenderat_final.pdf (Fertigstellung Mitte 2023)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1521316.php (Abschluss im Frühjahr 2025)
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-teils-verstetigt_a434211
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsapuz63e22u
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieo4f3jjnnylvgwommgakk7f4vyjutoxawpng7ortxeuxreu5pneu@jpeg (provisorische Radspur Richtung Westen vor der Prinzenstr. ist wieder aufgehoben)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251118 (Umbau der Fernwärmebaustelle, nächster Bauzustand bis Anfang Dez 2025)
-#: source_id: 2147340884 (inaktiv)
-#: source_id: 2147340970 (inaktiv)
-#: source_id: LMS-BR_r_LMS-BR_90638 (inaktiv)
-#: source_id: 2147341904 (inaktiv)
-#: source_id: 2147343820 (bis Mitte 2019) (inaktiv)
-#: source_id: 2147344403 (bis Ende August 2019) (inaktiv)
-#: source_id: 2147345226 (Fahrbahnausbesserungen bis Ende Dezember 2019, laut fritz bis 20.12.2019) (inaktiv)
-#: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
-#: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
-#: source_id: 2147345931 (bis 31.3.2021) (inaktiv)
-#: source_id: 2147345931 (bis 5.5.2021) (inaktiv)
-#: source_id: viz2021:13.402789,52.498471,01.09.2021,07:00 (bis 24.9.2021) (inaktiv)
-#: source_id: viz2021:13.402789,52.498471,28.09.2021,07:00 (bis 12.10.2021) (inaktiv)
-#: source_id: viz2021:13.398158,52.498346,07.02.2022,07:00 (bis 25.02.2022) (mittlerweile bis 18.03.2022) (inaktiv)
-#: source_id: viz2021:13.39961,52.49841,29.09.2022,18:34 (bis 31.10.2022) (inaktiv)
-#: source_id: viz2021:13.39961,52.49841,11.01.2023,11:39 (bis 26.05.2023) (inaktiv)
-#: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022) (bis 11.01.2023) (bis 26.05.2023) (bis 21.7.2023) (bis 01.09.2023) (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022) (bis 28.4.2023) (bis 31.5.2023) (bis 01.09.2023) (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.39961,52.49841,24.10.2023,18:10 (bis 29.12.2023) (am Folgetag inaktiv)
-#: source_id: viz2021:13.40304,52.49845,28.02.2024,07:00 (bis 15.04.2024) (inaktiv)
-#: source_id: viz2021:13.401157,52.498364,06.10.2021,08:00 (bis 29.03.2024) (bis 15.04.2024) (bis 28.02.2024) (inaktiv)
-#: source_id: viz2021:13.407111,52.498475,28.03.2022,07:00 (bis 29.03.2024) (bis 31.12.2024) (bis 24.04.2025) (bis 31.08.2025) (inaktiv)
-#: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (Gitschiner/Alexandrinenstr., bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024) (bis 29.11.2024) (bis 31.01.2025) (inaktiv)
-#: source_id: viz2021:13.399611,52.49841,08.10.2024,15:06 (bis 01.11.2024) (inaktiv)
-#: source_id: viz2021:13.40304,52.49845,31.07.2024,14:54 (bis 31.08.2024) (inaktiv)
-#: source_id: viz2021:13.408209,52.498506,23.04.2025,15:47 (bis 31.08.2025) (inaktiv)
-#: source_id: viz2021:13.406638,52.498401,23.06.2025,12:00 (Fernwärmebauarbeiten, bis 12.09.2025) (inaktiv)
-#: XXX eine permanente Radverkehrsanlage ist geplant vvv
-# REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
-#: osm_watch: way id="169738742" version="34"
-#: osm_watch: way id="335487059" version="29"
-#: last_checked: 2025-10-31 vvv
-#: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2025-06-30 (infravelo) vvv
-#: next_check: 2025-12-05 (VIZ-Verkehrsmeldung) vvv
-#: source_id: viz2021:13.411299,52.498589,29.04.2024,07:00 (bis 09.06.2024) (inaktiv) (bis 20.12.2024) (bis 31.01.2025) (bis 31.03.2025) (bis 31.05.2025) (bis 29.08.2025) (bis 23.06.2025) (inaktiv)
-# REMOVED ((noch?) nicht) --- #: historical_note: früher provisorischer Radstreifen, mittlerweile Engstelle
-# REMOVED --- #: historical_note: früher (bis Herbst 2024): provisorischer Radstreifen, RW4;, danach provisorischer Radweg auf Hochbord --- Gehweg für Radfahrer frei	RW1; 10871,10322 10708,10312
-#: source_id: viz2021:13.408209,52.498506,29.11.2024,17:06 (bis 31.12.2024) (inaktiv)
-#: source_id: LMS-BR:373479/72 viz2021:13.40656,52.49831,23.06.2025,12:00 viz2021:13.40656,52.49831, (bis 12.09.2025) (bis 19.09.2025) (bis 03.11.2025) (bis 17.11.2025) (bis 19.11.2025) (bis 05.12.2025)
-#: source_id: viz2021:13.408209,52.498506, (bis 31.08.2025) (inaktiv)
-#: historical_note: zwischenzeitlich (bis 23.06.2025) provisorischer Radstreifen, RW4;
-#: next_check: 2025-11-19 (hier keine VIZ-Verkehrsmeldung mehr)
-	RW0; 10708,10312 10605,10312
-provisorischer Radstreifen, kurzes Stück über Hochbord	RW4; 10605,10312 10708,10312
-teilweise provisorischer Radstreifen, teilweise eine Spur für Auto- und Radverkehr (mit Überholverbot)	RW0; 10708,10312 10871,10322
-#: historical_note: früher provisorisch geschützter Radstreifen, mittlerweile Engstelle (etwa 120m), Radfahrer überholen verboten, nun wieder teilweise provisorisch, teilweise schon mit Weißstrich markiert; dann wieder: provisorisch geschützter Radstreifen
-	RW3; 10363,10303 10122,10294
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-	RW4; 10871,10322 10708,10312
-	RW4; 9865,10227 9948,10280 10122,10294 10363,10303 10605,10312
-	RW4; 10605,10312 10363,10303
-	RW4; 10122,10294 9948,10280 9873,10285
-# 
 Tempo 10	RW6;RW6 15691,5239 15656,5271
 Tempo 10	RW6;RW6 15731,5369 15656,5271 15539,5088
 	RW6;RW6 15539,5088 15498,5040 15402,4956
@@ -8991,7 +8888,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
-#: last_checked: 2025-10-31 vvv
+#: last_checked: 2025-11-19 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten

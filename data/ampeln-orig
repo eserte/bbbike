@@ -27,10 +27,11 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # REMOVED --- #: valid: -20251112
 # REMOVED --- Kladower Damm/Runebergweg/Topeliusweg: Gegenverkehrsregelung	X::inwork::alternating -6982,5237
 # 
-#: source_id: viz2021:13.44834,52.4684,26.09.2025,07:00 (bis 21.11.2025)
+#: source_id: viz2021:13.44834,52.4684,26.09.2025,07:00 (bis 21.11.2025) (inaktiv)
+#: source_id: LMS-BR:384838/72 viz2021:13.44834,52.4684, (bis 19.12.2025)
 #: last_checked: 2025-09-27
-#: next_check: 2025-11-21
-#: valid: -20251121
+#: next_check: 2025-12-19
+#: valid: -20251219
 Lahnstr./Mittelbuschweg: Gegenverkehrsregelung	X::inwork::alternating 13500,7018
 # 
 #: next_check_id: SCHIFFBAUERDAMM-2025
@@ -44,8 +45,8 @@ Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12
 # 
 #: next_check_id: HERBERT-2025
 #: last_checked: 2025-11-09
-#: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
-#: valid: -20251201
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
+#: valid: -20251219
 Kolonnenstr./Herbertstr.: Gegenverkehrsregelung	X::inwork::alternating 7360,8918
 # 
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347
@@ -209,13 +210,13 @@ Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,09.09.2025,12:00 (bis 30.10.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697, (bis 21.11.2025)
+#: source_id: viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
 #: by: https://entwicklungsstadt.de/gefaehrliche-kreuzung-in-kreuzung-rudi-dutschke-strasse-soll-sicherer-werden/
 #: note: außerdem Anforderungsampel für querende Fußgänger
-#: last_checked: 2025-09-11
-#: next_check: 2025-11-21 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-11-21
+#: next_check: 2025-11-27 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20250521
 Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
 # 
@@ -531,7 +532,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # REMOVED (wurde entfernt) --- #: next_check_id: TRAMTURM-2021 --- #: last_checked: 2022-12-10 (bahninfo-forum) --- #: check_frequency: 120d --- #: next_check: 2023-07-07 --- Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # REMOVED --- #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021 --- #: note: am 2024-12-04 ausgeschaltet oder kaputt gewesen; am 2024-12-13 hat die LSA wieder funktioniert --- #: last_checked: 2025-05-07 --- #: check_frequency: 60d --- Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork::alternating 16355,9622
-# REMOVED --- #: next_check_id: LUECK-2021 --- #: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00 (bis 10.12.2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464 --- #: note: Gegenverkehrsregelung beginnt östlich der Einmündung Wönnichstr. und endet östlich der Kreuzung Rummelsburger Str. --- #: last_checked: 2021-11-21 --- #: next_check: 2021-12-10 --- #: valid: -20211210 --- Lückstr.: Gegenverkehrsregelung	X::inwork::alternating 16601,10650
+# REMOVED --- #: next_check_id: LUECK-2021 --- #: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00 (bis 10.12.2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464 --- #: note: Gegenverkehrsregelung beginnt östlich der Einmündung Wönnichstr. und endet östlich der Kreuzung Rummelsburger Str. --- #: last_checked: 2021-11-21 --- #: next_check: 2021-12-10 --- #: valid: -20211210 --- Lückstr.: Gegenverkehrsregelung	X::inwork::alternating
 # REMOVED --- #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022) (mittlerweile bis 31.7.2022) (bis 1.8.2022) (inaktiv) --- #: source_id: viz2021:13.3751,52.58195,02.08.2022,11:32 (bis 3.8.2022) --- #: note laut rbb bis 9.2.2022 --- #: last_checked: 2022-03-19 (mapillary) vvv --- #: next_check: 2022-08-03 vvv --- #: valid: -20220803 vvv --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8227,19725 --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 8268,19558 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: SCHOENHOLZER-2022
@@ -3935,7 +3936,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-11-12 vvv
+#: last_checked: 2025-11-21 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 	X::inwork 9121,12514
