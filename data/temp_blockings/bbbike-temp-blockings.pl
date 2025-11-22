@@ -3531,6 +3531,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
 #: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410506383/weihnachtsmarkt-city-west-wichtige-strassen-bleiben-drei-jahre-zu.html
+#: by: https://www.entwicklungsstadt.de/umbau-des-breitscheidplatzes-sicherungskonzept-fuer-den-platz-ab-2026/
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
@@ -32145,7 +32146,7 @@ EOF
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-11-16
+#: last_checked: 2025-11-22
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -39654,7 +39655,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SCHOENBURG-2023
-#: by: https://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse-1/ (Zeitraum Bau: 1. Quartal 2021 - 2. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (existiert nicht mehr) (wieder da) (2. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2023 - 1. Quartal 2024) (2. Quartal 2023 - 4. Quartal 2024) (abgeschlossen)
+#: by: https://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse/ (Zeitraum Bau: 1. Quartal 2021 - 2. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (existiert nicht mehr) (wieder da) (2. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2023 - 1. Quartal 2024) (2. Quartal 2023 - 4. Quartal 2024) (abgeschlossen)
+#: note: früher das infravelo-Projekt "parkstrasse-und-blumenthalstrasse-1"
 # REMOVED --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? vvv
 # REMOVED (nein) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/3730985 wieder offen --- ist auch schon asphaltiert?
 # REMOVED --- #: also_indoor: traffic (ex-G,ex-W) vvv --- #: osm_watch: way id="151353924" version="14" --- #: last_checked: 2024-08-18 vvv --- #: check_frequency: 30d vvv
@@ -40824,7 +40826,7 @@ EOF
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (re-H,re-G,T,ex-W)
 #: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026
-#: last_checked: 2025-11-12 (traffic)
+#: last_checked: 2025-11-22
 #: check_frequency: 30d
 #: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 17383,9719 17391,9746 17404,9794
@@ -41748,7 +41750,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-11-03 00:00:00"), # $isodate2epoch->("2025-04-03 00:00:00"), # 1743347400, # 2025-03-30 17:10, # $isodate2epoch->("2024-11-17 00:00:00"), # $isodate2epoch->("2024-09-13 00:00:00"), # 1691906400, # 2023-08-13 08:00
-       until => $isodate2epoch->("2025-11-22 23:59:59"), # $isodate2epoch->("2025-04-14 12:00:00"), # 1743596434, # 1743803940, # 2025-04-04 23:59, # 1732913137, # $isodate2epoch->("2024-11-29 23:59:59"), # $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
+       until => 1763811928, # $isodate2epoch->("2025-11-22 23:59:59"), # $isodate2epoch->("2025-04-14 12:00:00"), # 1743596434, # 1743803940, # 2025-04-04 23:59, # 1732913137, # $isodate2epoch->("2024-11-29 23:59:59"), # $isodate2epoch->("2024-09-20 20:00:00"), # $isodate2epoch->("2023-11-30 16:00:00"), # 1701360000, # 2023-11-30 17:00
 #      text  => 'Nöldnerstr. : Leitungsbauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Fahrbahn gesperrt, vom 14.08.2023 08:00 bis 30.11.2023 16:00',
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., evtl. sind Radfahrer betroffen, bis 22.06.2024 17:00', # -> handicap_s-orig
 #      text  => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., schmale Schutztunnel existieren, bis 20.09.2024 20:00 Uhr',
@@ -41789,8 +41791,7 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
 # REMOVED --- #: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden; am 2025-04-04 ebenfalls zwei Schutztunnel, deshalb q4 -> q3
 #: note: keine offizielle Führung für Radfahrer; nur der nördliche Gehweg ist passierbar, aber dieser scheint relativ breit und wenig benutzt zu sein; ggfs. Bordstein am westlichen Ende
-#: last_checked: 2025-11-20
-#: next_check: 2025-11-22 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: last_checked: 2025-11-20 --- #: next_check: 2025-11-22 (VIZ-Verkehrsmeldung)
 	q3::inwork 15793,10814 15856,10821 15932,10830
 EOF
      },
@@ -46900,7 +46901,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2025-11-09
+#: last_checked: 2025-11-18 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -47945,6 +47946,7 @@ EOF
 #: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
 #: by: https://www.potsdam.de/de/486-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-herbstferien
 #: by: https://www.mobil-potsdam.de/de/baustellen/geplant/?c=5367
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2025-brueckenbau-an-der-l-40-neuer-termin-fuer-vollsperrung-des-horstwegs
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 EOF
      },
@@ -49561,12 +49563,12 @@ EOF
      { from  => 1752319411, # 2025-07-12 13:23
        until => undef, # $isodate2epoch->("2025-10-02 20:00:00"), # 1759355999, # 2025-10-01 23:59
 #      text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025, evtl. wird die Sperrung verlängert',
-       text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Anfang November 2025)',
+       text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Mitte November 2025)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: XXX Mittlerweile kann die Durchfahrt möglich sein (gesehen 2025-10-19 Sun 11:53, 2025-11-01 Sat 14:37)
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
@@ -49973,7 +49975,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-21
+#: last_checked: 2025-11-22
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50524,7 +50526,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.45588,52.53572, (mittlerweile nur noch Fahrbahnverengung) (inaktiv)
-#: source_id: viz2021:13.455932,52.535655, (Fahrbahnverengung, bis 14.11.2025) (bis 21.11.2025)
+#: source_id: viz2021:13.455932,52.535655, (Fahrbahnverengung, bis 14.11.2025) (bis 21.11.2025) (inaktiv)
 #: also_indoor: traffic (ex-T)
 #: note: Länge des abgesperrten Bereichs plus weiterer Gehwegabschnitt wegen Absperrgittern ca. 90m
 # REMOVED --- #: last_checked: 2025-10-06
@@ -51007,7 +51009,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (none)
 #: osm_watch: note 4847575 2
-#: last_checked: 2025-11-09
+#: last_checked: 2025-11-18 (architektur-urbanistik)
 #: next_check: 2025-12-21
 	2::inwork 7497,7761 7499,7880
 EOF
@@ -51033,10 +51035,10 @@ EOF
 #: by: https://www.bayer.com/media/aufbau-von-translationszentrum-fuer-gentherapien-und-zelltherapien-in-berlin-beginnt/
 #: by: https://iq-spaces.com/de/berlin-mitte
 #: osm_watch: way id="1080985512" version="12"
-#: osm_watch: way id="1409889274" version="8"
+#: osm_watch: way id="1409889274" version="9"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2025-11-12 vvv
+#: last_checked: 2025-11-21 (osm) vvv
 #: check_frequency: 120d vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
 	2::inwork 7696,14577 7635,14628
@@ -51159,6 +51161,15 @@ EOF
 #: last_checked: 2025-11-21
 #: check_frequency: 14d
 	q4::inwork 10437,11352 10593,11120
+EOF
+     },
+     { from  => 1766077200, # 2025-12-18 18:00
+       until => 1766372400, # 2025-12-22 04:00
+       text  => 'Brandenburg, Potsdamer Str.: Sperrung der Bahnbrücke, vom 19.12.2025 18:00 bis voraussichtlich 22.12.2025 04:00',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2025-b1-bruecke-potsdamer-strasse
+	2::inwork -44861,-1252 -45229,-992
 EOF
      },
     );

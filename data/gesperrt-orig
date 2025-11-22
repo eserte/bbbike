@@ -199,7 +199,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-11-20 vvv
+#: last_checked: 2025-11-22 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -3178,6 +3178,7 @@ tragen (verwinkelte Treppe, 5 Stufen)	0:15 18257,18947
 tragen (Treppe, 10+9 Stufen)	0:25 22110,2643
 tragen (Treppe, ca. 50 Stufen)	0:70 12386,8274
 tragen (Treppe, 18 Stufen)	0:25 -5558,12918
+tragen (Treppe)	0:30 -46087,-1491
 #
 #: section ^^^
 ###################################################################
@@ -4141,7 +4142,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="9"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-11-20
+#: last_checked: 2025-11-22
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4589,7 +4590,7 @@ An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22546,3115 22470,3109
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-11-10
+#: last_checked: 2025-11-22
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4597,7 +4598,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-11-10 vvv
+#: last_checked: 2025-11-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4635,7 +4636,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-11-20
+#: last_checked: 2025-11-22
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4890,13 +4891,13 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="17"
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-22
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
 #: osm_watch: way id="1061057025" version="12"
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-22
 #: check_frequency: 30d
 An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die Gehwege gebaut werden	2::inwork 17682,8464 17652,8349
 # REMOVED (bereits vor der Eröffnungsfeier freigegeben) --- #: XXX Es wird einen Anschluss an den Traberweg geben. --- #: osm_watch: note 4522174 4 --- #: last_checked: 2025-10-19 --- #: check_frequency: 30d --- #: next_check: 2025-11-06 (BA-Pressemitteilung) --- Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17821,8694 17851,8662

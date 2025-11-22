@@ -664,6 +664,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
 #: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410506383/weihnachtsmarkt-city-west-wichtige-strassen-bleiben-drei-jahre-zu.html
+#: by: https://www.entwicklungsstadt.de/umbau-des-breitscheidplatzes-sicherungskonzept-fuer-den-platz-ab-2026/
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
@@ -5067,7 +5068,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-11-16
+#: last_checked: 2025-11-22
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -6819,7 +6820,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (re-H,re-G,T,ex-W)
 #: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026
-#: last_checked: 2025-11-12 (traffic)
+#: last_checked: 2025-11-22
 #: check_frequency: 30d
 #: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 17383,9719 17391,9746 17404,9794
@@ -6988,48 +6989,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: source_id: viz2021:13.483448,52.502169,14.08.2023,08:00 (bis 30.11.2023) (inaktiv)
-#: source_id: viz2021:13.48146,52.50203,30.11.2023,18:38 (Gegenverkehrsregelung, bis 31.08.2024) (inaktiv)
-#: source_id[inactive]: bvg2021:240#BVG326189_0
-#: source_id: viz2021:13.483448,52.502169,30.11.2023,16:00 (Gegenverkehrsregelung, bis 31.08.2024) (bis 17.06.2024) (inaktiv)
-#: source_id: viz2021:13.481458,52.502023,13.09.2024,07:00 (Sperrung für Kfz-Verkehr, bis 20.09.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_238442
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_247293 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_247294 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:n94#HIM_FREETEXT_247298 (ab 18.11.2024, kein Endedatum) (wurde ersetzt) (wieder aktiv)
-#: source_id[inactive]: bvg2024:194#8f843fbc-d477-4ed6-b212-5873df257607 (18.11.2024 - 25.11.2024)
-#: source_id: viz2021:13.483637,52.502146,18.11.2024,05:00 (hier nur Kfz-Verkehr, bis 29.11.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_274938 (ab 4.4.2024, kein Endedatum)
-#: source_id: viz2021:13.483638,52.502149,04.04.2025,09:00 (Sperrung auch für den Radverkehr, aber nicht für den Fußverkehr, bis 14.04.2025) (inaktiv)
-#: source_id: viz2021:13.483638,52.502149,04.04.2025,07:00 (bis 14.04.2025) (inaktiv)
-#: source_id: viz2021:13.483448,52.502169,14.04.2025,12:00 (Gegenverkehrsregelung, bis 31.05.2025) (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.48146,52.50203,15.04.2025,14:15 (Gegenverkehrsregelung, bis 31.05.2025) (inaktiv)
-#: source_id: viz2021:13.48146,52.50203,03.11.2025,06:00 (bis 22.11.2025) (vorfristig inaktiv)
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_304347 (Verlegung der Haltestelle ab 3.11.2025, evtl. wegen möglicher Bauarbeiten in der Nöldnerstr.?)
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_304348 (s.o.)
-#: source_id[inactive]: bvg2024:396#HIM_FREETEXT_304350 (s.o.) (vor Anfang inaktiv)
-#: by[nocache]: https://berlin.social/@viz_bot/113128287756327462
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-lichtenberg-eue?date=20241113 ("vollständige" Sperrung vom 18.-29.11.2024 sowie an drei nicht näher aufgeführten Tagen im April 2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241115 (hier nur Kfz-Verkehr)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1858351927509365099 (nur Kfz-Verkehr)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251101 (Erneuerung der Fahrbahn vom 3.11.2025 für ca. drei Wochen, Sperrung nur für Kfz-Verkehr?)
-#: osm_watch: way id="198589911" version="25"
-# REMOVED --- #: note: gesperrter Bereich ist etwa 90m lang
-# REMOVED (hier nicht) ---	q4::inwork 16049,10844 15960,10833 15932,10830 15856,10821 --- #: note: eigentlich q3-::inwork
-# REMOVED --- #: note: am 2024-11-18 existierte nur ein Fußgängerschutztunnel; am 2024-11-23 waren es zwei Schutztunnel, nicht explizit ausgeschildert, aber der nördliche scheint exklusiv von Radfahrern genutzt zu werden; am 2025-04-04 ebenfalls zwei Schutztunnel, deshalb q4 -> q3
-#: note: keine offizielle Führung für Radfahrer; nur der nördliche Gehweg ist passierbar, aber dieser scheint relativ breit und wenig benutzt zu sein; ggfs. Bordstein am westlichen Ende
-#: last_checked: 2025-11-20
-#: next_check: 2025-11-22 (VIZ-Verkehrsmeldung)
-	q3::inwork 15793,10814 15856,10821 15932,10830
-',
-         'from' => 1762124400,
-         'id' => 3886,
-         'text' => 'Nöldnerstr. : Bauarbeiten unter der Bahnbrücke zwischen Stadthausstr. und Lückstr., Sperrung der Fahrbahn, vom 03.11.2025 bis voraussichtlich 22.11.2025',
-         'type' => 'handicap',
-         'until' => 1763852399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8221,7 +8181,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2025-11-09
+#: last_checked: 2025-11-18 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -8679,6 +8639,7 @@ Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
 #: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
 #: by: https://www.potsdam.de/de/486-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-herbstferien
 #: by: https://www.mobil-potsdam.de/de/baustellen/geplant/?c=5367
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2025-brueckenbau-an-der-l-40-neuer-termin-fuer-vollsperrung-des-horstwegs
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 ',
          'from' => 1764198000,
@@ -9263,7 +9224,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung noch immer?
 #: XXX Mittlerweile kann die Durchfahrt möglich sein (gesehen 2025-10-19 Sun 11:53, 2025-11-01 Sat 14:37)
-#: last_checked: 2025-11-01
+#: last_checked: 2025-11-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-10-02 (Halteverbotsschilder)
 # REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
@@ -9271,7 +9232,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 ',
          'from' => 1752319411,
          'id' => 4389,
-         'text' => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Anfang November 2025)',
+         'text' => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Mitte November 2025)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9503,7 +9464,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-21
+#: last_checked: 2025-11-22
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -10153,7 +10114,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
        {
          'data' => '#: also_indoor: traffic (none)
 #: osm_watch: note 4847575 2
-#: last_checked: 2025-11-09
+#: last_checked: 2025-11-18 (architektur-urbanistik)
 #: next_check: 2025-12-21
 	2::inwork 7497,7761 7499,7880
 ',
@@ -10170,10 +10131,10 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 #: by: https://www.bayer.com/media/aufbau-von-translationszentrum-fuer-gentherapien-und-zelltherapien-in-berlin-beginnt/
 #: by: https://iq-spaces.com/de/berlin-mitte
 #: osm_watch: way id="1080985512" version="12"
-#: osm_watch: way id="1409889274" version="8"
+#: osm_watch: way id="1409889274" version="9"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2025-11-12 vvv
+#: last_checked: 2025-11-21 (osm) vvv
 #: check_frequency: 120d vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
 	2::inwork 7696,14577 7635,14628
@@ -10248,6 +10209,16 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
          'text' => 'Kommandantenstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2025-b1-bruecke-potsdamer-strasse
+	2::inwork -44861,-1252 -45229,-992
+',
+         'from' => 1766077200,
+         'id' => 4506,
+         'text' => 'Brandenburg, Potsdamer Str.: Sperrung der Bahnbrücke, vom 19.12.2025 18:00 bis voraussichtlich 22.12.2025 04:00',
+         'type' => 'gesperrt',
+         'until' => 1766372400
        }
      
 );
