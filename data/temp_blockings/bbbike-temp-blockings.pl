@@ -17775,6 +17775,7 @@ EOF
        until => $isodate2epoch->("2025-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 12, start => "2023-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten, 2022/2023 ebenso
+       recurrence_prewarn_days => 14,
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr. sowie einige Wege im östlichen Tiergarten, ab 26.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26141,6 +26142,7 @@ EOF
        until => $isodate2epoch->("2025-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12, start => "2023-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty; 2021/2022 ebenso, nur eine kleine, 2022/2023 ebenso
+       recurrence_prewarn_days => 14,
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -35785,7 +35787,7 @@ EOF
 # REMOVED (frühere Baustelle) ---	q4::inwork 3731,10640 3764,10580
 # REMOVED (hier nicht, explizit als Sackgasse offen) --- Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-04 (architektur-urbanistik)
+#: last_checked: 2025-11-22 (daf)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 EOF
      },
@@ -50715,6 +50717,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027 (Beginn einen Tag später)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251213
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1617856.php (bis 28. November 2025)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410503791/zwei-wichtige-strassenbaustellen-in-treptow-koepenick-verzoegern-sich.html
 #: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
