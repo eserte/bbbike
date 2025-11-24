@@ -145,6 +145,11 @@ Knoten Märkische/Landsberger Allee: nur Rechtsabbiegen erlaubt	3 19644,15320 195
 Knoten Märkische/Landsberger Allee	1no 19512,15092 19644,15320
 #: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
 Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251124 (Sperrung ab 25.11.2025 bis voraussichtlich Ende März 2026)
+#: XXX nach den Bauarbeiten vielleicht wieder zur Einbahnstraße machen?
+#: historical_note: früher (bis Nov. 2025) Einbahnstraße
+#: next_check: 2026-03-31
+Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219 19577,15166
 #: XXX evtl. wird dieser Abschnitt der Frank-Schweitzer-Str. komplett aufgegeben?
 Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
 Frank-Schweitzer-Str.	1no 19195,14931 19178,14924
@@ -154,7 +159,6 @@ Frank-Schweitzer-Str.	1no 19117,14875 19243,14903 19256,14906
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
 Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13712,20919 13909,20928
 Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
 Seestr.	1 5043,14671 5255,14757 5311,14786 5437,14844
@@ -4890,13 +4894,13 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
-#: osm_watch: way id="1084269868" version="17"
+#: osm_watch: way id="1084269868" version="18"
 #: last_checked: 2025-11-22
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
-#: osm_watch: way id="1061057025" version="12"
+#: osm_watch: way id="1061057025" version="13"
 #: last_checked: 2025-11-22
 #: check_frequency: 30d
 An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die Gehwege gebaut werden	2::inwork 17682,8464 17652,8349
@@ -4923,6 +4927,7 @@ An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die 
 #: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
 #: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025) (bis 31.08.2026) (inaktiv)
+#: source_id: LMS-BR:391216/72 viz2021:13.37613,52.53612, (bis 01.09.2026)
 #: osm_watch: way id="129104626" version="25"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])
@@ -5040,7 +5045,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
 #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
 #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können
-#: last_checked: 2025-11-10
+#: last_checked: 2025-11-24
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt)
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,10227
@@ -5066,7 +5071,7 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/drei-neue-hochhauser-an-der-spree-langzeit-projekt-molecules-mit-neuem-konzept-13684222.html
 #: confirmed_by: srt
 # REMOVED (mehr als zwei Jahre kaputt) --- #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
-#: last_checked: 2025-11-16 vvv
+#: last_checked: 2025-11-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-06-30 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
@@ -5190,6 +5195,8 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1580739.php
 #: by: https://entwicklungsstadt.de/fuer-ein-vielfaeltig-nutzbares-quartier-wettbewerb-fuer-molkenmarkt-berlin-gestartet/
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/verzogerungen-beim-berliner-molkenmarkt-das-kostet-die-langere-arbeit-an-der-quartiersgestaltung-bisher-14557556.html
+#: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1619116.php
+#: by: https://www.entwicklungsstadt.de/molkenmarkt-quartier-senat-stellt-zweiten-teil-der-bebauungsleitlinien-vor/
 #: source_id: viz2021:13.41504,52.52091,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.40903,52.517,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.41347,52.51971,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
@@ -5609,7 +5616,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.3707,52.52584,03.01.2023,13:38 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.3707,52.52584, (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="48"
+#: osm_watch: way id="186329816" version="49"
 #: also_indoor: traffic
 #: last_checked: 2025-11-19 vvv
 #: check_frequency: 180d vvv

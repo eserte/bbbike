@@ -55,13 +55,13 @@ Glatzer Str.: Baustelleneinrichtungsfläche auf der Fahrbahn	q4::inwork 14570,115
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-11-06 vvv
+#: last_checked: 2025-11-23 (osm) vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083527067" version="8"
+#: osm_watch: way id="1083527067" version="9"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="182614432" version="21"
+#: osm_watch: way id="182614432" version="22"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="23"
@@ -142,7 +142,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: osm_watch: way id="936801541" version="6"
 #: osm_watch: way id="36987812" version="18"
 #: also_indoor: traffic (W,G)
-#: last_checked: 2025-11-22
+#: last_checked: 2025-11-24
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-01
 # REMOVED --- Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
@@ -314,7 +314,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-10-19
+#: last_checked: 2025-11-24
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -404,7 +404,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://weddingweiser.de/endlich-abriss-in-der-burgsdorfstrasse/ (Verzögerung des Abrisses, vielleicht bis 30. September 2025)
 #: by: https://www.morgenpost.de/bezirke/mitte/article409774113/das-baum-haus-tiere-verhindern-abriss-der-beruehmten-ruine-in-wedding.html
 #: by: https://entwicklungsstadt.de/wedding-geplanter-abriss-der-ruine-in-der-burgsdorfstrasse-gestoppt/
-#: by: https://entwicklungsstadt.de/abriss-der-ruine-in-der-burgsdorfstrasse-in-mitte-hat-begonnen/
+#: by: https://entwicklungsstadt.de/abriss-der-ruine-in-der-burgsdorfstrasse-in-mitte-hat-begonnen/ (Abriss bis Jahresende 2025)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1077_ds_2020_vi_eine-dauerhafte-sperrung-der-burgsdorfstrasse.pdf
 #: osm_watch: way id="549316654" version="44"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
@@ -412,7 +412,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: last_checked: 2025-11-06 (daf)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
-#: next_check: 2025-11-30 (weddingweiser, Abrissarbeiten)
+#: next_check: 2025-12-31 (entwicklungsstadt)
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -827,6 +827,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: next_check_id: PERLEBERGER-2024
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
+#: source_id: bvg2024:m27#HIM_FREETEXT_302033
 #: also_indoor: traffic (T,ex-G,H,re-W)
 #: last_checked: 2025-11-15 (osm, traffic)
 #: check_frequency: 10d (traffic)
@@ -1016,7 +1017,7 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2025-10-31 (mapillary)
+#: last_checked: 2025-11-22 (mapillary)
 #: check_frequency: 45d
 #: next_check: 2026-01-01 (entwicklungsstadt)
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290

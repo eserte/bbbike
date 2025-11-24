@@ -3517,6 +3517,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
+#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410506383/weihnachtsmarkt-city-west-wichtige-strassen-bleiben-drei-jahre-zu.html
+#: by: https://www.entwicklungsstadt.de/umbau-des-breitscheidplatzes-sicherungskonzept-fuer-den-platz-ab-2026/
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1619006.php
 #: source_id: viz2021:13.33407,52.5054,07.11.2024,07:00 (Verengung Breitscheidplatz, bis 12.01.2025) (inaktiv)
 # REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
 # sowieso schon mit q4 markiert, deshalb -> 2
@@ -3530,8 +3533,6 @@ EOF
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
 #: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
-#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410506383/weihnachtsmarkt-city-west-wichtige-strassen-bleiben-drei-jahre-zu.html
-#: by: https://www.entwicklungsstadt.de/umbau-des-breitscheidplatzes-sicherungskonzept-fuer-den-platz-ab-2026/
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
@@ -41611,16 +41612,16 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-11-03 00:00:00"), # 1691384400, # 2023-08-07 07:00
-       until => $isodate2epoch->("2025-11-24 23:59:59"), # 1692802800, # 2023-08-23 17:00
+       until => $isodate2epoch->("2025-11-28 23:59:59"), # 1692802800, # 2023-08-23 17:00
 #      text  => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Wenckebachstr., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, vom 08.08.2023 07:00 bis 23.08.2023 17:00',
-       text  => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Theodorstr., Sperrung, vom 04.11.2025 bis 24.11.2025',
+       text  => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Theodorstr., Sperrung, vom 04.11.2025 bis 28.11.2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251103 (2025er-Sperrung)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4rsvjcrn22c
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4gbzwoqfzfhov3n3x3wfcpwsvgivjxw2idqdjtbrnto6ta7fy5q@jpeg (gesperrter Bereich etwa 45m lang)
 #: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023) (inaktiv)
-#: source_id: viz2021:13.38474,52.46081,04.11.2025,05:00 (bis 24.11.2025)
+#: source_id: LMS-BR:388883/72 viz2021:13.38474,52.46081,04.11.2025,05:00 viz2021:13.38474,52.46081, (bis 24.11.2025) (bis 28.11.2025)
 # REMOVED ---	q4::inwork 9417,6063 9339,6076 9321,6079
 	q4::inwork 9321,6079 9212,6096
 EOF
@@ -45300,7 +45301,7 @@ EOF
 #: priority: #A vvv
 #: last_checked: 2025-10-15 vvv
 #: check_frequency: 30d vvv
-#: osm_watch: way id="26158804" version="26"
+#: osm_watch: way id="26158804" version="27"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 # REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
 # REMOVED (hier mittlerweile offen) --- Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
@@ -45874,7 +45875,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083535036" version="12"
+#: osm_watch: way id="1083535036" version="13"
 #: osm_watch: way id="1119255054" version="10"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
@@ -47285,19 +47286,19 @@ EOF
      { from  => 1737970440, # 2025-01-27 10:34
        until => undef, # 1746568740, # 2025-05-06 23:59
 #      text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 28.01.2025 10:34 bis 06.05.2025 23:59',
-       text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 05.12.2025', # wird verlängert?
+       text  => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 23.01.2026', # wird verlängert?
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
 #: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025)
+#: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
 #: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2025-07-03 (traffic)
 # REMOVED --- #: check_frequency: 21d (traffic)
-#: next_check: 2025-12-05 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-23 (VIZ-Verkehrsmeldung)
 	q4::inwork 2396,9427 2467,9425 2592,9419
 EOF
      },
@@ -47980,8 +47981,8 @@ EOF
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
 #: osm_watch: way id="1374232475" version="4"
 #: osm_watch[closed]: note 4693093 1
-#: also_indoor: traffic (H)
-#: last_checked: 2025-08-27
+#: also_indoor: traffic (ex-H,G)
+#: last_checked: 2025-11-24 (traffic)
 #: check_frequency: 90d
 Merler Weg	q4::inwork 18852,13269 19180,13219
 EOF
@@ -48806,6 +48807,7 @@ EOF
 #: source_id: viz2021:13.29402,52.48994,01.07.2025,10:03 (Salzbrunner Str., bis 15.07.2025) (inaktiv)
 #: source_id: viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025)
 #: source_id: viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025)
+#: source_id: bvg2024:110#HIM_FREETEXT_284868
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,re-H)
@@ -49977,7 +49979,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-22
+#: last_checked: 2025-11-24
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50418,7 +50420,7 @@ EOF
        data  => <<'EOF',
 # REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-11-16
+#: last_checked: 2025-11-24
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 Corinthstr.	q4::inwork 14447,10491 14608,10409
 EOF

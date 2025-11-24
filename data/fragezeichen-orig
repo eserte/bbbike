@@ -1417,7 +1417,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/gruenes-licht-fuer-zwei-radprojekte_a387901
 #: by: https://viz.berlin.de/aktuelle-meldungen/neue-radverkehrsanlage-zwischen-weissensee-und-alt-hohenschonhausen/ (Vorbereitungen ab 11. September 2025, Bauarbeiten ab September 2025)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1596814.php
-#: osm_watch: way id="111283481" version="30"
+#: osm_watch: way id="111283481" version="31"
 #: osm_watch: note 5043311 1
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
 #: source_id: viz2021:13.48997,52.55798,29.12.2022,09:38 (bis 25.1.2023) (später am Tag wieder entfernt, inaktiv)
@@ -7985,6 +7985,7 @@ Oranienstr.: Verkehrsberuhigung (war) geplant	?::projected 10906,10874 10965,108
 #: by: https://www.morgenpost.de/berlin/article409768268/mehr-fahrradstrassen-fuer-berlin-bezirke-mit-ehrgeizigen-plaenen.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1613331.php (Fertigstellung noch 2025)
 #: by: https://entwicklungsstadt.de/alexandrinenstrasse-kreuzberg-setzt-auf-sichere-fahrradstrasse-und-neue-lieferzonen/
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251124 (Sanierungsarbeiten zwischen Gitschiner Str. und Neuenburger Str., ab 25.11.2025 für ca. zwei Wochen)
 #: osm_watch: note 4559018 15
 #: source_id: adac:1022292676 (Sperrung Neuenburger Str., bis 04.08.2025) (inaktiv)
 #: source_id: viz2021:13.40042,52.49947,21.07.2025,07:00 (bis 04.08.2025) (inaktiv)
@@ -9168,8 +9169,9 @@ Friedenauer Höhe: Erschließungsstraße, evtl. mit Anschluss an die Straße am Güte
 Fürst-Bismarck-Steg: Neubau geplant	?::projected 3879,22574 3907,22560
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Umsetzung wird voraussichtlich Ende 2025/Anfang 2026)
-#: last_checked: 2025-09-13
-#: next_check: 2025-12-31 (berliner-zeitung)
+#: last_checked: 2025-11-22 (mapillary)
+#: check_frequency: 60d
+#: next_check: 2026-03-31 (berliner-zeitung (Anfang 2026))
 Blaschkoallee/Onkel-Bräsig-Str./Riesestr.: vermutlich entsteht hier eine Ampel	? 13347,5262 13327,5234 13303,5205
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (für 2025 geplant)
@@ -12207,6 +12209,7 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: by: https://entwicklungsstadt.de/vom-flughafen-zum-zukunftsort-urban-tech-republic-startet-flaechenvermarktung/
 #: by: https://entwicklungsstadt.de/bundeswehr-stoppt-zivile-nutzung-des-ehemaligen-flughafens-tegel/
 #: by: https://www.tagesspiegel.de/berlin/plane-fur-urban-tech-republic-sind-nicht-betroffen-bundeswehr-will-standort-in-tegel-nord-weiter-nutzen-14677292.html
+#: by: https://www.entwicklungsstadt.de/tegel-berlin-investiert-370-millionen-euro-in-neues-zukunftsquartier/
 #: XXX werden die alten Zufahrtstraßen während der Bauarbeiten noch benutzbar sein?
 #: last_checked: 2025-04-16
 #: check_frequency: 720d
