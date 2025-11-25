@@ -146,6 +146,7 @@ Knoten Märkische/Landsberger Allee	1no 19512,15092 19644,15320
 #: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
 Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251124 (Sperrung ab 25.11.2025 bis voraussichtlich Ende März 2026)
+#: source_id: viz2021:13.540283,52.540747,25.11.2025,07:00 (bis 31.03.2026)
 #: XXX nach den Bauarbeiten vielleicht wieder zur Einbahnstraße machen?
 #: historical_note: früher (bis Nov. 2025) Einbahnstraße
 #: next_check: 2026-03-31
@@ -4045,7 +4046,7 @@ Drängelgitter	BNP:3::trailer=10 113,7
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="1"
-#: last_checked: 2025-11-10
+#: last_checked: 2025-11-25
 #: check_frequency: 60d
 #: next_check: 2028-12-31
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4144,9 +4145,9 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
-#: osm_watch: way id="394677970" version="9"
+#: osm_watch: way id="394677970" version="10"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-11-22
+#: last_checked: 2025-11-24 (osm)
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4373,7 +4374,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-11-02 vvv
+#: last_checked: 2025-11-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4942,7 +4943,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-10-24
+#: last_checked: 2025-11-25
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673

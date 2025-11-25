@@ -4740,19 +4740,20 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-11-10 vvv
+#: last_checked: 2025-11-25 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
 # REMOVED (hier mittlerweile wieder offen) --- Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
 # REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829
-Bulgarische Str. - Karpfenteich	2::inwork 15505,8829 15439,8839 15297,8921 15245,8916
+# REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15505,8829 15439,8839 15297,8921
+Bulgarische Str. - Karpfenteich	2::inwork 15297,8921 15245,8916
 # REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14321,9530 14332,9543 14384,9565 14478,9545
 # REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14321,9530
 #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 14398,9373
+Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 14398,9373 14382,9299
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15298,8781 15343,8714 15378,8668
 	2::inwork 15181,8967 15245,8916
@@ -5386,7 +5387,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 ',
          'from' => undef,
          'id' => 3350,
-         'text' => 'Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt, voraussichtliche Freigabe 2024',
+         'text' => 'Bahnübergang Ziethener Str. wird durch eine Unterführung ersetzt, Freigabe unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6405,7 +6406,7 @@ Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
 #: note: 2024 hat die Sperrung vor dem 2024-11-15 angefangen ...
 #: note: 2025 hat die Sperrung vor dem 2025-11-09 angefangen ...
 #: by: https://www.weihnachten-an-der-spree.de/
-#: osm_watch: node id="11346915244" version="2"
+#: osm_watch: node id="11346915244" version="3"
 # REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
 	2::xmas 13531,10673 13418,10724
 	2::xmas 13558,10704 13531,10673 13527,10660
@@ -7976,7 +7977,7 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-10-28 (research)
+#: last_checked: 2025-11-24 (research)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -8631,7 +8632,7 @@ Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025)
+         'data' => '#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
@@ -8696,7 +8697,7 @@ Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
-#: last_checked: 2025-10-22 (daf) vvv
+#: last_checked: 2025-11-24 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 Gutenbergstr.	q4::inwork; 5518,12159 5317,12242
@@ -9155,7 +9156,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-10-28 (research)
+#: last_checked: 2025-11-24 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 ',
          'from' => undef,
@@ -9414,14 +9415,15 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: osm_watch: note 5038218 2
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
-#: last_checked: 2025-11-10
+#: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
+#: last_checked: 2025-11-25
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 ',
          'from' => 1754431200,
          'id' => 4411,
-         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand November 2025: Diagonalweg ist gesperrt)',
+         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Ende November 2025: Diagonalweg ist offen)',
          'type' => 'gesperrt',
          'until' => 1767222000
        },
@@ -10203,7 +10205,7 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
        },
        {
          'data' => '#: also_indoor: traffic (T,no-G)
-#: last_checked: 2025-11-21
+#: last_checked: 2025-11-25
 #: check_frequency: 14d
 	q4::inwork 10437,11352 10593,11120
 ',
