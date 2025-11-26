@@ -129,7 +129,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="21"
-#: last_checked: 2025-11-07
+#: last_checked: 2025-11-21 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -303,7 +303,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2025-11-22
+#: last_checked: 2025-11-26
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -315,7 +315,13 @@ Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
 #: confirmed_by ^^^
 #: by: Jürgen Schulz-Brüssel
 #: confirmed_by: srt
-(Am Bahndamm): sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028 19124,10175 19401,10295 19675,10410 19711,10426
+(Am Bahndamm): sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
+#: osm_watch: way id="1379412008" version="1"
+#: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
+#: last_checked: 2025-11-26
+#: check_frequency: 60d
+(Am Bahndamm): unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
+(Am Bahndamm): sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
 Alemannenstr.: Asphalt	Q0 -3360,2917 -3417,2886
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3417,2886 -3452,2868 -3509,2817 -3635,2668 -3686,2579
 Alemannenstr.: mäßiges Kopfsteinpflaster	Q2 -3686,2579 -3692,2549 -3709,2517 -3725,2475 -3726,2457
@@ -6996,7 +7002,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="33"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2025-11-05
+#: last_checked: 2025-11-26
 #: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -14379,6 +14385,9 @@ Konradinstr.: Asphalt, einige leichte Schäden	Q0- 8872,5484 8674,5357
 # 
 (Fürbringerstr. - Baerwaldstr.): Verbundsteinpflaster	Q1 10067,9674 10290,9604
 # 
+(Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Asphalt	Q0 21249,11042 21237,11065 21162,11073 21163,11172
+(Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Asphalt	Q0 21163,11172 21137,11200
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -17372,7 +17381,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: osm_watch: way id="1009279082" version="6"
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2025-09-01
+#: last_checked: 2025-11-26
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764

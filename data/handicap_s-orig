@@ -36,7 +36,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # 
 #: next_check_id: TRAM21-2025
 #: source_id: viz2021:13.463751,52.510709,22.11.2025,08:00 (bis 14.12.2025)
-#: last_checked: 2025-11-22 vvv
+#: last_checked: 2025-11-26 vvv
 #: next_check: 2025-12-14 vvv
 #: valid: 20251122-20251214 vvv
 #: note: Vorfahrtsstraßenregelung über Gryphiusstr. - Krossener Str.
@@ -1052,7 +1052,7 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: next_check_id: STUBENRAUCH-2025
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9872 (Anfrage)
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
-#: source_id: viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025)
+#: source_id: viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025)
 #: last_checked: 2025-10-29 (krickstadt) vvv
 #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
@@ -1067,7 +1067,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025)
 #: source_id: viz2021:13.47353,52.50308,22.11.2025,08:00 (bis 14.12.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20251121
-#: last_checked: 2025-11-22
+#: last_checked: 2025-11-26
 #: next_check: 2025-12-14
 #: valid: 20251122-20251214
 Marktstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork; 15279,10862 15144,10905
@@ -1102,7 +1102,7 @@ Marktstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::in
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-11-20
+#: last_checked: 2025-11-26
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2121,7 +2121,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-15226.pdf
 #: by: https://www.nd-aktuell.de/artikel/1187963.bvg-oepnv-in-berlin-tram-in-der-investitionsfalle.html (2028/2029?)
 #: osm_watch: way id="223184082" version="10"
-#: last_checked: 2025-10-17
+#: last_checked: 2025-11-26
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -5190,7 +5190,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025)
-#: last_checked: 2025-11-22 vvv
+#: last_checked: 2025-11-26 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-12-05 vvv
 #: valid: -20251205
@@ -5497,6 +5497,10 @@ Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos
 # 
 #: note: Grünanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol
 (Fürbringerstr. - Baerwaldstr.): Grünanlage, Fußgänger	q4 10067,9674 10290,9604
+# 
+(Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Parkplatzzufahrt und Parkplatz	q2 21249,11042 21237,11065 21162,11073 21163,11172
+#: note: entweder den Bordstein zur Busspur nehmen, oder bbbbbbis zur Lindenstr. vorfahren
+(Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): einige Fußgänger, ggfs. Bordstein	q3 21163,11172 21137,11200
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

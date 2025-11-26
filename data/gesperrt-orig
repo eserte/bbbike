@@ -1795,6 +1795,8 @@ B2	2::igndisp -13096,5584 -12865,5567 -12718,5571
 Glienicker Str. (Köpenick): Radweg	1::igndisp 21363,3699 21308,3644
 Nordufer: Radweg	1::igndisp 7156,14763 7129,14787
 (Spandauer Damm - Wiesendamm)	1::igndisp -278,13094 -227,12994
+#: note: keine Einbahnstraße, aber unbequemes Überqueren der Köpenicker Str. mit Bordstein
+Köpenicker Str. - Rapsweißlingstr.	1::igndisp 21137,11200 21163,11172
 #: section ^^^
 ######################################################################
 #: section: Sperrungen in Potsdam vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -4147,7 +4149,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="10"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-11-24 (osm)
+#: last_checked: 2025-11-26
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4641,7 +4643,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-11-22
+#: last_checked: 2025-11-26
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 

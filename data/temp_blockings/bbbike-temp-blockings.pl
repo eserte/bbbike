@@ -29247,7 +29247,7 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inw
 #: osm_watch: way id="580507889" version="37"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-11-05
+#: last_checked: 2025-11-26
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -32150,7 +32150,7 @@ EOF
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-11-22
+#: last_checked: 2025-11-26
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -33913,8 +33913,8 @@ EOF
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 19
-#: last_checked: 2025-08-29 (research)
-#: check_frequency: 90d
+#: last_checked: 2025-11-26 (research)
+#: check_frequency: 30d
 #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 EOF
@@ -36455,7 +36455,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-17 (Kran wurde abgebaut)
+#: last_checked: 2025-11-21 (mapillary)
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -40830,8 +40830,8 @@ EOF
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (re-H,re-G,T,ex-W)
 #: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026
-#: last_checked: 2025-11-22
-#: check_frequency: 30d
+#: last_checked: 2025-11-26
+#: check_frequency: 14d (traffic)
 #: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 17383,9719 17391,9746 17404,9794
 EOF
@@ -45465,7 +45465,7 @@ EOF
 #: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025 + weitere Bauphasen) (inaktiv)
 #: source_id: viz2021:13.32381,52.6249,30.04.2025,11:31 (Höhe Elsestr., bis 29.11.2025) (inaktiv)
 #: source_id: viz2021:13.324736,52.625185,22.07.2024,07:00 (Elsestr. - Stadtgrenze, nur Kfz-Verkehr, bis 29.11.2025) (inaktiv)
-#: source_id: viz2021:13.32381,52.6249, (bis 29.11.2025)
+#: source_id: LMS-BR:340862/72 viz2021:13.32381,52.6249, (bis 29.11.2025) (bis 09.01.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1815251677278060801
 #: by: https://pbs.twimg.com/media/GS3L_VJWQAAhbAU?format=jpg&name=medium
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/arbeiten-an-der-schildower-strasse-dauern-18-monate_a421648
@@ -45474,7 +45474,7 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12985 (Einwohneranfrage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=13055 (Einwohneranfrage zur Einbahnstraßenregelung)
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
-#: next_check: 2025-11-29 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-01-09 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="82451158" version="15"
 #: osm_watch: note 4444217 1
 Schildower Str. zwischen Elsestr. und Stadtgrenze	q4::inwork 4683,24275 4705,24284 4779,24321 4849,24335 4898,24351
@@ -47486,6 +47486,7 @@ EOF
 #: source_id: viz2021:13.574491,52.448686,04.08.2025,07:00 (eigentlich eine andere Baustelle, hängt aber vielleicht damit zusammen; bis 13.10.2025) (inaktiv)
 #: source_id: viz2021:13.574491,52.448686, (eigentlich eine andere Baustelle, s.o., bis 16.02.2026)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
+#: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
@@ -47753,14 +47754,14 @@ EOF
 EOF
      },
      { from  => 1741240800, # 2025-03-06 07:00
-       until => $isodate2epoch->("2025-11-26 18:00:00"), # $isodate2epoch->("2025-09-25 04:00:00"), # 1757343600, # 2025-09-08 17:00
+       until => $isodate2epoch->("2025-12-12 18:00:00"), # $isodate2epoch->("2025-09-25 04:00:00"), # 1757343600, # 2025-09-08 17:00
 #      text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 25.09.2025',
-       text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Egerstr. und Berkaer Str., Sperrung, außerdem ist die Egerstr. Sackgasse an der Teplitzer Str., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, bis Ende November 2025',
+       text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Egerstr. und Berkaer Str., Sperrung, außerdem ist die Egerstr. Sackgasse an der Teplitzer Str., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, bis Mitte Dezember 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
 #: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025) (bis 25.09.2025) (inaktiv)
-#: source_id: viz2021:13.28104,52.47985,07.03.2025,07:00 (bis 26.11.2025)
+#: source_id: LMS-BR:362088/72 viz2021:13.28104,52.47985,07.03.2025,07:00 viz2021:13.28104,52.47985, (bis 26.11.2025) (bis 12.12.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
@@ -48362,13 +48363,13 @@ EOF
 EOF
      },
      { from  => 1744520400, # 2025-04-13 07:00
-       until => $isodate2epoch->("2025-11-28 23:59:59"), # $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
+       until => $isodate2epoch->("2025-12-31 23:59:59"), # $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
 #      text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 26.09.2025 17:00',
-       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Ende November 2025',
+       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Ende Dezember 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...) (inaktiv)
-#: source_id: viz2021:13.37222,52.4556, (bis 31.10.2025) (bis 28.11.2025)
+#: source_id: viz2021:13.37222,52.4556, (bis 31.10.2025) (bis 28.11.2025) (bis 31.12.2025)
 	q4::inwork 8365,5502 8365,5418
 EOF
      },
@@ -48493,14 +48494,15 @@ EOF
      },
      { from  => 1746334800, # 2025-05-04 07:00
        until => undef, # 1764543540, # 2025-11-30 23:59
-       text  => 'Wernigeroder Str.: Hochbauarbeiten, Einbahnstraßenregelung zwischen Nordhauser Str. und Quedlinburger Str., Richtung Süden gesperrt, vom 05.05.2025 bis 30.11.2025, evtl. wird die Einbahnstraßenregelung verlängert',
+       text  => 'Wernigeroder Str.: Hochbauarbeiten, Einbahnstraßenregelung zwischen Nordhauser Str. und Quedlinburger Str., Richtung Süden gesperrt, vom 05.05.2025 bis voraussichtlich Ende April 2026, evtl. wird die Einbahnstraßenregelung verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025)
+#: source_id: LMS-BR:367896/72 viz2021:13.313365,52.523877, (bis 30.04.2026)
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=782027#post782027
 #: by: https://entwicklungsstadt.de/mierendorffinsel-neuer-bauabschnitt-im-wohnquartier-hey-charlottenburg/ (Bauprojekt bis Mitte 2027)
 #: by: https://heycharlottenburg.de/ (Fertigstellung: Q3/2027)
-#: next_check: 2025-11-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 EOF
      },
@@ -49568,15 +49570,14 @@ EOF
      { from  => 1752319411, # 2025-07-12 13:23
        until => undef, # $isodate2epoch->("2025-10-02 20:00:00"), # 1759355999, # 2025-10-01 23:59
 #      text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025, evtl. wird die Sperrung verlängert',
-       text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Mitte November 2025)',
+       text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Ende November 2025)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: XXX Mittlerweile kann die Durchfahrt möglich sein (gesehen 2025-10-19 Sun 11:53, 2025-11-01 Sat 14:37)
-#: last_checked: 2025-11-22
+#: last_checked: 2025-11-26
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-10-02 (Halteverbotsschilder)
-# REMOVED (wahrscheinlich was anderes) #: next_check: 2025-09-05 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-31 (Halteverbotsschilder)
 	2::inwork 17950,8974 17915,8945
 EOF
      },
@@ -49965,7 +49966,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BLUECHER-2025
-#: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025) (bis 31.10.2025) (bis 22.11.2025) (bis 29.11.2025)
+#: source_id: LMS-BR:380698/72 viz2021:13.40203,52.49254,21.08.2025,07:00 (bis 15.09.2025) (bis 31.10.2025) (bis 22.11.2025) (bis 29.11.2025) (inaktiv)
 #: also_indoor: traffic (T,G,W,H)
 # REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-10-29 vvv --- #: next_check: 2025-11-22 (VIZ-Verkehrsmeldung) vvv
 Blücherstr. Richtung Baerwaldstr.: Gehweg für Radfahrer frei	q3::inwork; 10429,9514 10306,9640
@@ -50281,16 +50282,21 @@ EOF
      },
      { from  => 1757626813, # 2025-09-11 23:40
        until => undef, # 1764284400, # 2025-11-28 00:00
-       text  => 'Thielallee: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, bis voraussichtlich 27.11.2025, evtl. wird die Sperrung verlängert',
+       text  => 'Thielallee: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, bis voraussichtlich 05.12.2025, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: viz2021:13.28295,52.44204, (bis 27.11.2025)
+#: source_id: LMS-BR:383093/72 viz2021:13.28295,52.44204, (bis 27.11.2025) (bis 05.12.2025)
 #: also_indoor: traffic (T,G)
 #: next_check_id: THIELALLEE-2025
-#: last_checked: 2025-11-19 (mapillary)
-#: check_frequency: 30d (traffic)
-#: next_check: 2025-11-27 (VIZ-Verkehrsmeldung)
-	q4::inwork; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
+#: note: teilweise freigegeben, teilweise Gehweg für Radfahrer frei, teilweise ohne Freigabe
+#: last_checked: 2025-11-22 (osm) vvv
+#: check_frequency: 30d (traffic) vvv
+#: next_check: 2025-12-05 (VIZ-Verkehrsmeldung) vvv
+Thielallee: teilweise Gehweg für Radfahrer frei	q3::inwork; 2308,3862 2348,4026 2372,4127 2407,4280
+Thielallee: hier keine offizielle Freigabe	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2025-09-21 00:00:00"), # undef,
@@ -50733,15 +50739,15 @@ EOF
 EOF
      },
      { from  => 1760725052, # 2025-10-17 20:17
-       until => 1764543599, # 2025-11-30 23:59
-       text  => 'Lietzenburger Str./Bleibtreustr.: Wasserrohrbruch, evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich bis Ende November 2025',
+       until => $isodate2epoch->("2026-11-30 23:59:59"), # 1764543599, # 2025-11-30 23:59
+       text  => 'Lietzenburger Str./Bleibtreustr.: Wasserrohrbruch, evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich bis Ende November 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3f6iflglc27
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreievxmc4lkl4ix3jyzpen2xpvr2xl7frexucixqom4qs6ca4xy4jdq@jpeg (Sperrung des Kreuzungsbereichs?)
 #: source_id: viz2021:13.32047,52.49975, (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.31913,52.49968, (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.32149,52.49982, (bis 30.11.2025)
+#: source_id: LMS-BR:385513/72 viz2021:13.32149,52.49982, (bis 30.11.2025) (bis 30.11.2026)
 Lietzenburger Str.	q3::inwork 4764,10350 4659,10335 4485,10307
 Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
 EOF
@@ -50833,7 +50839,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: add_fragezeichen: Sind die Wege weiterhin gesperrt?
-#: last_checked: 2025-10-25
+#: last_checked: 2025-11-26
 	2::inwork 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 EOF
      },
@@ -51125,18 +51131,23 @@ Alt-Lietzow, Loschmidtstr.	q4::inwork; 4250,12390 4219,12324 4215,12307 4276,121
 EOF
      },
      { from  => 1763272800, # 2025-11-16 07:00
-       until => 1777564800, # 2026-04-30 18:00
+       until => undef, # 1777564800, # 2026-04-30 18:00
 #      text  => 'Iburger Ufer: Baustelle, Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 17.11.2025 07:00 bis 30.04.2026 18:00',
-       text  => 'Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis April 2026',
+       text  => 'Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis April 2026, evtl. wird verlängert',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=788555#post788555 (Baustellenschild: Sanierung der Pumpenstation bis 30.09.2027)
+#: by: https://www.deutsches-architektur-forum.de/pics/backstein/daf/2025/11/hkw_spreebord05.jpg
 #: source_id: LMS-BR:390326/72 viz2021:13.308606,52.520026,17.11.2025,07:00 (bis 30.04.2026)
+#: osm_watch: note 5059797 1
+#: osm_watch: way id="1210308501" version="7"
+#: osm_watch: way id="1219396158" version="6"
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer?
 # REMOVED --- #: XXX: Stimmt die Einbahnstraßenrichtung? Und warum steht in der VIZ-Verkehrsmeldung "ab Alt-Lietzow", müsste es nicht "ab Arcostr." heißen?
-#: note: Evtl. hat die Sperrung des Uferwegs mit der Einbahnstraßenregelung am Iburger Ufer zu tun?
-#: last_checked: 2025-11-19
-#: check_frequency: 30d
+#: note: Evtl. steht die Sperrung des Uferwegs auch mit der Einbahnstraßenregelung am Iburger Ufer im Zusammenhang?
+#: last_checked: 2025-11-26 (daf)
+#: check_frequency: 60d
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung zum Iburger Ufer)
 # REMOVED (hier für Radfahrer frei in Gegenrichtung) --- Iburger Ufer	q4::inwork; 3889,12591 4085,12614 4129,12619 4160,12612 4289,12576
 Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
