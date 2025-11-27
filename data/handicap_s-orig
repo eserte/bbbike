@@ -314,7 +314,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-11-24
+#: last_checked: 2025-11-27
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -490,7 +490,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-11-07 (architektur-urbanistik) vvv
+#: last_checked: 2025-11-25 (mapillary) vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="44"
@@ -943,6 +943,15 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED (Bauarbeiten weitgehend fertig) --- #: next_check_id: PARISER-2021 --- #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html --- # REMOVED (404) --- #: also_indoor: webcam https://portal1443.webcam-profi.de/ --- #: note: wobei mittlerweile die Einschränkungen recht gering sind --- #: last_checked: 2023-10-29 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-10-01 --- Pariser Str./Bundesallee: Bauarbeiten, Durchgang kann verengt sein	q2::inwork 5461,9923 5423,9932 5394,9940
 # 
 ### Neukölln ###
+# 
+#: by: https://www.buwog.de/wohnbauprojekte/berlin-buwog-set-44 (Fertigstellung ab 2028)
+#: osm_watch: note 3372461 1
+#: osm_watch: way id="714352578" version="3"
+#: XXX Wann sind die Bauarbeiten zu Ende?
+#: last_checked: 2025-11-27
+#: check_frequency: 180d
+#: next_check: 2028-01-31 (buwog website)
+Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
 #: last_checked: 2025-11-07

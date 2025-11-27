@@ -14,7 +14,7 @@
 #: by: https://www.morgenpost.de/berlin/article409965464/wie-der-senat-das-a100-chaos-in-den-griff-bekommen-will.html
 #: by: https://entwicklungsstadt.de/verkehrsdaten-elsenbruecke-durchschnittsgeschwindigkeit-sinkt-nach-a100-eroeffnung/
 #: priority: #D
-#: last_checked: 2025-11-24
+#: last_checked: 2025-11-27
 #: check_frequency: 90d
 Markgrafendamm -> Alt-Stralau: Sperrung der Linksabbiegespur	3 14608,10409 14558,10264 14619,10223
 # 
@@ -2386,4 +2386,6 @@ Landsberger Allee [Wohngebiet]	1 15357,14213 15596,14247 15666,14212 15701,14148
 #: historical_note ^^^
 # 
 Kaiser-Friedrich-Str.: Mittelstreifen, Übergang für Fußgänger südlich der Einmündung existiert	3nocross 3406,11849 3416,11768 3441,11601
+# 
+Stargarder Str.: modaler Filter	3 11290,15669 11158,15739 *
 # 

@@ -5773,7 +5773,8 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 14
-#: last_checked: 2025-09-21 (mapillary) vvv
+#: note: eine Fertigstellung Mitte Dezember 2025 ist unwahrscheinlich
+#: last_checked: 2025-11-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5794,9 +5795,9 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 ',
          'from' => 1645336800,
          'id' => 3518,
-         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn; außerdem sind die Fahrbahnen von Saalestr. und Mittelbuschweg gesperrt, vom 13.05.2024 07:00 bis Dezember 2025',
+         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn; außerdem sind die Fahrbahnen von Saalestr. und Mittelbuschweg gesperrt, vom 13.05.2024 07:00 bis Dezember 2025, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1765468800
+         'until' => undef
        },
        undef,
        undef,
@@ -6756,7 +6757,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237, (bis 31.12.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-11-19
+#: last_checked: 2025-11-25 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -6974,15 +6975,18 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4rsvjcrn22c
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4gbzwoqfzfhov3n3x3wfcpwsvgivjxw2idqdjtbrnto6ta7fy5q@jpeg (gesperrter Bereich etwa 45m lang)
 #: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023) (inaktiv)
-#: source_id: LMS-BR:388883/72 viz2021:13.38474,52.46081,04.11.2025,05:00 viz2021:13.38474,52.46081, (bis 24.11.2025) (bis 28.11.2025)
+#: source_id: LMS-BR:388883/72 viz2021:13.38474,52.46081,04.11.2025,05:00 viz2021:13.38474,52.46081, (bis 24.11.2025) (bis 28.11.2025) (inaktiv)
+#: also_indoor: traffic (T,G)
+#: last_checked: 2025-11-27 (traffic)
+#: check_frequency: 2d (traffic)
 # REMOVED ---	q4::inwork 9417,6063 9339,6076 9321,6079
 	q4::inwork 9321,6079 9212,6096
 ',
          'from' => 1762124400,
          'id' => 3878,
-         'text' => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Theodorstr., Sperrung, vom 04.11.2025 bis 28.11.2025',
+         'text' => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Theodorstr., Sperrung, vom 04.11.2025 bis 28.11.2025, evtl. wird die Baustelle verlängert',
          'type' => 'handicap',
-         'until' => 1764370799
+         'until' => undef
        },
        undef,
        undef,
@@ -8359,20 +8363,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => 1803657600
        },
-       {
-         'data' => '#: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025) (inaktiv)
-#: source_id: viz2021:13.28749,52.50307,13.06.2025,07:00 (bis 30.06.2025) (inaktiv)
-#: source_id: viz2021:13.28749,52.50307,26.06.2025,17:24 (bis 08.07.2025) (inaktiv)
-#: source_id: viz2021:13.28749,52.50307,14.07.2025,07:00 (bis 15.10.2025) (inaktiv)
-#: source_id: viz2021:13.289985,52.50298,15.10.2025,05:00 (bis 27.11.2025)
-	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
-',
-         'from' => 1749765600,
-         'id' => 4243,
-         'text' => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 27.11.2025',
-         'type' => 'handicap',
-         'until' => 1764262800
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
@@ -8439,17 +8430,22 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
          'data' => '#: next_check_id: MARKGRAFEN-2025
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025)
+#: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
+#: also_indoor: traffic (G)
+#: last_checked: 2025-11-27 (traffic) vvv
+#: check_frequency: 2d (traffic) vvv
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
 Markgrafenstr. nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1738350510,
          'id' => 4250,
-         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis Ende November 2025',
+         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis Ende November 2025, evtl. wird die Sperrung verlängert',
          'type' => 'handicap',
-         'until' => 1764284399
+         'until' => undef
        },
        undef,
        undef,
@@ -8683,7 +8679,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
 #: last_checked: 2025-11-21
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (W,H,no-T,no-G)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
 Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
 ',
@@ -8857,7 +8853,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-14 (traffic) vvv
+#: last_checked: 2025-11-27 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -9009,7 +9005,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-11-17 vvv
+#: last_checked: 2025-11-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9469,7 +9465,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-24
+#: last_checked: 2025-11-27
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9692,7 +9688,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-11-24
+#: last_checked: 2025-11-27
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 Corinthstr.	q4::inwork 14447,10491 14608,10409
 ',
@@ -9863,7 +9859,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
 #: note: laut rbb & VIZ Beginn einen Tag später
-#: last_checked: 2025-11-10
+#: last_checked: 2025-11-27 (vollständig Öffnung am nächsten Tag sehr wahrscheinlich)
 # REMOVED --- #: check_frequency: 1d --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung, BA-Pressemitteilung)
 	q4::inwork 13357,9313 13489,9456
@@ -10177,7 +10173,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=788555#post788555 (Baustellenschild: Sanierung der Pumpenstation bis 30.09.2027)
 #: by: https://www.deutsches-architektur-forum.de/pics/backstein/daf/2025/11/hkw_spreebord05.jpg
 #: source_id: LMS-BR:390326/72 viz2021:13.308606,52.520026,17.11.2025,07:00 (bis 30.04.2026)
-#: osm_watch: note 5059797 1
+#: osm_watch: note 5059797 2
 #: osm_watch: way id="1210308501" version="7"
 #: osm_watch: way id="1219396158" version="6"
 #: also_indoor: traffic (G,T)

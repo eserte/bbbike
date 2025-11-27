@@ -11,7 +11,7 @@
 #: source_id: viz2021:13.45883,52.51144,16.10.2025,07:00 (bis 02.12.2025)
 #: osm_watch: note 4669838 3
 #: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
-#: last_checked: 2025-11-18
+#: last_checked: 2025-11-26
 #: next_check: 2025-12-02
 #: valid: -20251203
 Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::inwork::alternating 14127,11811
@@ -176,6 +176,7 @@ Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 #: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.5975,52.50236, (bis 29.08.2025) (inaktiv) (bis 10.10.2025) (bis 14.10.2025) (inaktiv)
+#: source_id: bvg2024:398#HIM_FREETEXT_299600 (bis 2025-11-28)
 #: note: im Straßenzug existieren noch zwei weitere Engstellen, diese allerdings ohne Ampeln (gesehen 2025-10-25)
 #: last_checked: 2025-10-25
 #: next_check: 2025-12-05 (Halteverbotsschilder)
@@ -210,7 +211,7 @@ Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,09.09.2025,12:00 (bis 30.10.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025)
+#: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
 #: by: https://entwicklungsstadt.de/gefaehrliche-kreuzung-in-kreuzung-rudi-dutschke-strasse-soll-sicherer-werden/
@@ -361,7 +362,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
-#: last_checked: 2025-11-19
+#: last_checked: 2025-11-25 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	X::inwork 7873,12927
@@ -3936,7 +3937,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-11-21 vvv
+#: last_checked: 2025-11-25 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 	X::inwork 9121,12514
@@ -4144,7 +4145,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2025-11-05
+#: last_checked: 2025-11-27
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
