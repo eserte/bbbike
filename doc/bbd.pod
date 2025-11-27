@@ -418,6 +418,9 @@ reports: prefixed by the affected line, then a C<#>, then the id), and
 scheme-less (a real VIZ id). Sometimes also other forms of pseudo ids
 or even URLs are used here.
 
+Note that it is allowed to use a real VIZ id followed by a viz2021
+pseudo id (separated by a space).
+
 =item C<source_id[inactive]: I<id>>
 
 An inactive source id (typically not accessible anymore at the source
