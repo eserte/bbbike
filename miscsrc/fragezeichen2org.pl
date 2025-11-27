@@ -459,14 +459,14 @@ for my $file (@files) {
 		 my %seen_bvg_url;
 		 for my $source_id_def (@source_id_defs) {
 		     my($source_id, $inactive) = @$source_id_def;
-		     if      ($source_id =~ m{^(?:bvg2021|bvg2024):([^#\s]+)}) { # match the BVG line only; the BVG id cannot be used for linking
+		     if      ($source_id =~ m{(?:bvg2021|bvg2024):([^#\s]+)}) { # match the BVG line only; the BVG id cannot be used for linking
 			 my $bvg_url = "https://www.bvg.de/de/verbindungen/linienuebersicht/$1#stoerungsmeldungen";
 			 if (!$seen_bvg_url{$bvg_url}++) {
 			     push @extra_url_defs, ['BVG' . ($inactive ? '(inactive)' : ''), $bvg_url];
 			 }
-		     } elsif ($source_id =~ m{^viz2021:}) { # note: other VIZ id patterns (LS/..., LMS-...) cannot be used here due to lacking coordinates in the id
+		     } elsif ($source_id =~ m{(?:^| )viz2021:}) { # note: other VIZ id patterns (LS/..., LMS-...) cannot be used here due to lacking coordinates in the id
 			 my($px,$py) = ($px,$py);
-			 if ($source_id =~ m{^viz2021:(-?[\d\.]+),(-?[\d\.]+)}) {
+			 if ($source_id =~ m{(?:^| )viz2021:(-?[\d\.]+),(-?[\d\.]+)}) {
 			     ($px,$py) = ($1,$2);
 			 }
 			 if ($source_id =~ m{\b(inactive|inaktiv)\)?\s*$}) { # marked as inactive in a "comment" in the source_id value
