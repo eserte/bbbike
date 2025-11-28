@@ -1449,6 +1449,7 @@ Hansastr.: Radspuren geplant (2,5m breit) + Sanierung der Fahrbahn	?::inwork 154
 #: source_id: viz2021:13.495712,52.559878,04.09.2023,07:00 (Leitungsarbeiten bis 06.10.2023) (bis 09.10.2023) (inaktiv)
 #: source_id: viz2021:13.49483,52.55973,28.10.2025,07:00 (bis 10.11.2025) (inaktiv)
 #: source_id: viz2021:13.49483,52.55973, (Fahrbahnerneuerung, bis 10.11.2025) (inaktiv)
+#: source_id: LMS-BR:391576/72 viz2021:13.49661,52.56016,28.11.2025,07:00 (Gleisbauarbeiten, bis 14.12.2025)
 #: osm_watch: way id="40520565" version="56"
 #: osm_watch: way id="51317007" version="38"
 #: osm_watch: way id="624116238" version="18"
@@ -4189,9 +4190,10 @@ Malteser Str.: Busspur geplant, evtl. auch für Radfahrer frei	?; 7539,1529 7630,
 #: source_id: viz2021:13.40645,52.398143,27.07.2022,07:00 (Leitungsarbeiten, bis 2.11.2022) (inaktiv)
 #: source_id: viz2021:13.406583,52.396514,10.06.2025,07:00 (Leitungsarbeiten, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.406732,52.393143,25.06.2025,07:00 (Buswendemöglichkeit (wegen der Leitungsarbeiten?), bis 06.10.2025) (inaktiv)
+#: source_id: LMS-BR:371939/72 viz2021:13.40677,52.39382, (bis 27.02.2026)
 #: last_checked: 2025-10-30 (mapillary)
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 Lichtenrader Damm: Busspur geplant, evtl. auch für Radfahrer frei	?; 10822,-806 10849,-1332
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf
@@ -6065,6 +6067,7 @@ Schönfließer Brücke: Ersatzneubau geplant	?::projected 10592,15968 10593,16037
 #: by[nocache]: https://archive.is/Onetg
 #: by: https://www.tagesspiegel.de/berlin/noch-mehr-falle-von-risiko-stahl-wie-in-dresden-mindestens-vier-berliner-brucken-mussen-abgerissen-werden-13093906.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-verkehrseinschrankungen-drohen-abriss-plan-fur-zwei-weitere-risiko-brucken-uber-berliner-s-bahn-ring-steht-14930483.html (Baubeginn im 1. Quartal 2026, Bauende 2028)
+#: by: https://www.entwicklungsstadt.de/brueckenerneuerungen-im-prenzlauer-berg-zeitplan-fuer-dunckerbruecke-und-pappelallee-stehen/
 #: XXX während der Bauarbeiten soll der Fußgänger- und Radverkehr auf einer Brückenhälfte stattfinden können
 #: last_checked: 2025-05-24 (mapillary)
 #: next_check: 2026-03-31 (Tsp)
@@ -6389,7 +6392,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2025-11-26
+#: last_checked: 2025-11-28
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -7730,10 +7733,13 @@ Simplonstr.: Teileinziehung geplant	? 14181,11434 14254,11377
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12003 (Realisierung des Teilgebietes C: 2025)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_34_2201_2272_online.pdf (Teileinziehung)
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12133 (Vorlage zur Kenntnisnahme) (Beschluss Überweisung)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php
 #: osm_watch: note 4919919 4
-#: last_checked: 2025-11-21 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2025-12-31 (BVV-Drucksache) vvv
+#: note: Halteverbotsschilder vom 1.12. bis 12.12.2025, passiert nun was?
+#: last_checked: 2025-11-28 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2025-12-12 (Halteverbotsschilder) vvv
+# REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache) vvv
 Simplonstr.: Teileinziehung geplant	? 13996,11631 13992,11605 14031,11569
 Gabriel-Max-Str.: Teileinziehung geplant	? 14065,11605 14049,11553
 #: next_check ^^^
@@ -8470,7 +8476,7 @@ Friedland (B168): geplanter Radweg	?::projected 69850,-32667 69418,-33865 69506,
 #: by: https://www.o-sp.de/download/lbvbrandenburg/324121
 #: by: https://www.o-sp.de/download/lbvbrandenburg/324116
 #: source_id: 246001458 (bis 13.09.2024) (inaktiv)
-#: source_id: 256002034 (Neubau einer Ampel, bis 28.11.2025)
+#: source_id: 256002034 (Neubau einer Ampel, bis 28.11.2025) (inaktiv)
 #: last_checked: 2025-10-03 (mapillary)
 # REMOVED --- #: check_frequency: 120d (research frequency)
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
@@ -9622,6 +9628,7 @@ Hermann-Dorner-Allee: Zebrastreifen vor der Gemeinschaftsschule Adlersdorf (Höhe
 #: by: https://be.beteiligung.diplanung.de/verfahren/3-85/public/detail
 #: by: https://be.beteiligung.diplanung.de/file/3-85/db20dac1-a209-46c4-80b6-632637307045
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neues-friedhofsviertel-in-berlin-geplant-an-diesen-grabern-sollen-jetzt-hunderte-wohnungen-entstehen-14552366.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_49_3117_3172_online.pdf (FNP-Änderungsverfahren, Einleitung)
 #: last_checked: 2025-10-06 (research)
 #: check_frequency: 1000d
 Bebauungsplan 3-85: Friedhof wird verkleinert	? 10145,21017 10142,20925 10269,20960 10224,21280 10129,21251 10135,21171 10140,21107 10145,21017
@@ -10824,7 +10831,7 @@ Heiner-Carow-Str.: existiert noch nicht	?::projected 15081,10775 15071,10716 150
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/9-63-entwurf-alternative_3_a3.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6898 (wird hier eine Entlastungsstraße für den Glienicker Weg entstehen?)
 #: XXX Bebauungsplan 9-63
-#: last_checked: 2024-12-04
+#: last_checked: 2025-11-28 (research)
 #: check_frequency: 360d
 Gewerbegebiet Glienicker Weg: hier enstehen Straßen, evtl. eine Bahnunterführung Richtung Osten und ein Uferweg am Teltowkanal	?::projected 20653,2772 20877,3116 21082,2917 21376,3072 21329,2568 20904,2469 20653,2772
 # 

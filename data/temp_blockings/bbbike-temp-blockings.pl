@@ -41625,7 +41625,7 @@ EOF
 #: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023) (inaktiv)
 #: source_id: LMS-BR:388883/72 viz2021:13.38474,52.46081,04.11.2025,05:00 viz2021:13.38474,52.46081, (bis 24.11.2025) (bis 28.11.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-11-27 (traffic)
+#: last_checked: 2025-11-28 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED ---	q4::inwork 9417,6063 9339,6076 9321,6079
 	q4::inwork 9321,6079 9212,6096
@@ -43544,7 +43544,7 @@ EOF
 #: osm_watch: way id="1113567086" version="8"
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
-#: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Regelung für Radfahrer
+#: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Ausnahmeregelung für Radfahrer
 # REMOVED (frühere Sperrung) ---	q4::inwork 15055,11505 15016,11431
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
 # REMOVED --- #: next_check: 2025-11-17
@@ -44146,8 +44146,8 @@ EOF
 #      text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Gierkeplatz, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.04.2024 07:00 bis 21.06.2024 16:00',
 #      text  => 'Behaimstr. und Schustehrusstr.: Bauarbeiten zwischen Wilmersdorfer Str. und Gierkezeile bzw. Gierkeplatz, evtl. sind auch Radfahrer betroffen, bis 31.07.2024',
 #      text  => 'Gierkezeile: Bauarbeiten zwischen Haubachstr. und Zillestr., Sperrung, vermutlich sind auch Radfahrer betroffen, bis 30.09.2024 16:00',
-#      text  => 'Gierkeplatz: Bauarbeiten zwischen Gierkezeile und Schustehrusstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 28.02.2026',
-       text  => 'Gierkeplatz: Bauarbeiten zwischen Gierkezeile und Schustehrusstr., Sperrung, evtl. sind auch Radfahrer betroffen, außerdem Sperrung in der Behaimstr., bis 28.02.2026',
+#      text  => 'Gierkeplatz: Bauarbeiten zwischen Gierkezeile und Schustehrusstr., Sperrung, evtl. sind auch Radfahrer betroffen, außerdem Sperrung in der Behaimstr., bis 28.02.2026',
+       text  => 'Gierkeplatz: Bauarbeiten zwischen Gierkezeile und Schustehrusstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 28.02.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am nächsten Tag schon inaktiv)
@@ -44160,10 +44160,10 @@ EOF
 # REMOVED Gierkezeile, nördlicher Abschnitt	q4::inwork 3493,12228 3495,12185 3507,12076
 # REMOVED (alt) --- Gierkezeile, südlicher Abschnitt	q4::inwork 3507,12076 3514,11988 3528,11852
 # REMOVED (hier nicht mehr) --- Schustehrusstr.	q4::inwork 3528,12276 3623,12284
+#: also_indoor: traffic (G,T)
 Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
-#: source_id: viz2021:13.302719,52.516502,27.10.2025,07:00 (bis 28.11.2025)
-#: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
-Behaimstr.	q4::inwork 3495,12185 3630,12201
+#: source_id: viz2021:13.302719,52.516502,27.10.2025,07:00 (bis 28.11.2025) (inaktiv)
+# REMOVED --- #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung) --- Behaimstr.	q4::inwork 3495,12185 3630,12201
 EOF
      },
      { from  => 1712683045, # 2024-04-09 19:17
@@ -46248,6 +46248,7 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250405 (nächste Sperrung Juni - Dez 2025)
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250517 (nächste Sperrung 6. Juni 2025 - 1. Dez 2025)
 #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20251111 (Busse fahren hier wieder am 8.12.2025)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/PR_berlin_nord_komplexe_arbeiten_informationsveranstaltung_20251127.pdf
 #: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
 #: source_id[inactive]: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
 #: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
@@ -47237,7 +47238,7 @@ EOF
 #: source_id: viz2021:13.28749,52.50307,13.06.2025,07:00 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.28749,52.50307,26.06.2025,17:24 (bis 08.07.2025) (inaktiv)
 #: source_id: viz2021:13.28749,52.50307,14.07.2025,07:00 (bis 15.10.2025) (inaktiv)
-#: source_id: viz2021:13.289985,52.50298,15.10.2025,05:00 (bis 27.11.2025)
+#: source_id: LMS-BR:386771/72 viz2021:13.289985,52.50298,15.10.2025,05:00 (bis 27.11.2025) (inaktiv)
 	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
 EOF
      },
@@ -47338,9 +47339,9 @@ EOF
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
 #: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
-#: also_indoor: traffic (G)
-#: last_checked: 2025-11-27 (traffic) vvv
-#: check_frequency: 2d (traffic) vvv
+#: also_indoor: traffic (G,T)
+#: last_checked: 2025-11-28 (traffic) vvv
+#: check_frequency: 3d (traffic) vvv
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
 #: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
@@ -48061,10 +48062,10 @@ EOF
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
-#: source_id: viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025)
+#: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
 #: last_checked: 2025-11-21
 #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
-#: also_indoor: traffic (W,H,no-T,no-G)
+#: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
 Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
 EOF
@@ -49928,7 +49929,7 @@ EOF
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5Xo8NcrLYvz2MxS7AThUxo
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
-#: also_indoor: traffic (T)
+#: also_indoor: traffic (T,G,H,A,W)
 #: last_checked: 2025-11-11
 #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
@@ -50738,12 +50739,12 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1617856.php (bis 28. November 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410503791/zwei-wichtige-strassenbaustellen-in-treptow-koepenick-verzoegern-sich.html
 #: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025)
+#: source_id: LMS-BR:371047/72  viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025) (bis 31.01.2026)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
 #: note: laut rbb & VIZ Beginn einen Tag später
 #: last_checked: 2025-11-27 (vollständig Öffnung am nächsten Tag sehr wahrscheinlich)
 # REMOVED --- #: check_frequency: 1d --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
-#: next_check: 2025-11-28 (VIZ-Verkehrsmeldung, BA-Pressemitteilung)
+#: next_check: 2025-11-28 (alte VIZ-Verkehrsmeldung, wurde verlängert; BA-Pressemitteilung)
 	q4::inwork 13357,9313 13489,9456
 EOF
      },
