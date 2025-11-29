@@ -63,7 +63,7 @@ Baumschulenbrücke	Br 15584,5946 15628,6009
 # REMOVED (wird auch bei Wikipedia erwähnt) --- #: XXX_indoor: kommt im RV-Plan und beim Städte-Verlag vor: http://www.staedte-verlag.de/utcms/de-karten-karte.html?linkid=4288445
 Heidekampbrücke	Br 15332,6138 15397,6129
 Brücke über den Nördlicher Heidekampgraben	Br 15070,8584 15079,8575
-#: note: Quellen sind uneinig, ob die Brücke "Britzer Brücke" oder "Britzer-Allee-Brücke" heißt, und an der Brücke selbst gibt es kein Schild
+#: historical_note: Quellen sind uneinig, ob die Brücke "Britzer Brücke" oder "Britzer-Allee-Brücke" heißt, und an der Brücke selbst gibt es kein Schild (hat sich mittlerweile erledigt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_49_3117_3172_online.pdf (Umbenennung)
 #: oldname: -20251128: Britzer-Allee-Brücke
 Chris-Gueffroy-Brücke	Br 15144,6054 15143,5936
@@ -153,7 +153,8 @@ Alemannenbrücke	Br -3899,2002 -3827,2109
 Borussenbrücke	Br -3882,2447 -3820,2479
 #: note: im Volksmund "Spinnerbrücke"
 Spanische Allee, Autobahnbrücke	Br -3861,2837 -3746,2849
-Schönerlinder Str., Autobahnbrücke	Br 11980,24276 11959,24220
+#: alias: Schönerlinder Str., Autobahnbrücke
+Schönerlinder Brücke	Br 11980,24276 11959,24220
 Lindenhofbrücke	Br 12108,24547 12136,24607
 # REMOVED --- #: XXX wird neu gebaut --- während der Bauzeit wird es eine Ersatzbrücke (vermutlich mit Verschwenkung) geben --- mittlerweile (April 2021) ist die neue Brücke schon fertig und freigegeben, aber noch nicht komplett fertig --- #: XXX Die neue Brücke wird Radwege haben, bis kurz vor der Eisenbahnbrücke. --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.854393.php (ab 15. Oktober 2019) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/waehrend-der-bauzeit-fliesst-der-verkehr-auf-der-bucher-strasse-ueber-eine-behelfsbruecke_a236797 --- #: by: https://leute.tagesspiegel.de/pankow/macher/2020/01/02/104719/bucher-strasse-bezirk-kaempft-gegen-sperrung-der-autobahn-ausfahrt/ --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/pankower-verordnete-fordern-pruefung-von-alternativen-beim-ausbau-der-autobahn-a114_a253084 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.921252.php --- #: by: https://abendblatt-berlin.de/2020/04/17/berlin-bucher-strasse-bekommt-neue-bruecke/ (Fertigstellung voraussichtlich im 2. Quartal 2021) --- #: by: https://twitter.com/VIZ_Berlin/status/1251111931890581505 --- #: by: https://pbs.twimg.com/media/EVzXq8iWsAknwoc?format=jpg&name=large --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/bruecke-ueber-die-a114-wird-neu-gebaut_a264184 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1001081.php --- #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-210122/ (Bauarbeiten noch bis 29.04.2022) --- #: osm_watch: way id="9712546" version="16" --- #: source_id: viz2021:13.442786,52.614523,27.09.2021,08:00 (bis Ende 2021; werden bei den Fahrbahnarbeiten auch die Radwege gemacht?) (mittlerweile bis 21.1.2022) --- #: also_indoor: search Bucher_Straße --- #: last_checked: 2022-03-07 (mapillary) --- #: check_frequency: 60d --- #: next_check: 2022-04-29
 Bucher Str., Autobahnbrücke	Br 12882,23312 12915,23337

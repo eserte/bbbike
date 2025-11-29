@@ -2812,12 +2812,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: next_check: 2025-12-31 (wann sind die Sitzungswochen 2026?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1763938800,
+         'from' => 1764543600,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 25.11.2025 bis 28.11.2025',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 2.12.2025 bis 5.12.2025',
          'type' => 'gesperrt',
-         'until' => 1764370799
+         'until' => 1764975599
        },
        undef,
        undef,
@@ -5847,7 +5847,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-21 (mapillary)
+#: last_checked: 2025-11-29
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5872,7 +5872,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 1
-#: last_checked: 2025-11-17 vvv
+#: last_checked: 2025-11-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -6235,6 +6235,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: note: Die Flohmarktsaison 2024 startet am 24. März 2024 (Anmeldung ab 12.03.2024)
 #: note: "Unsere Winterpause 2024 beginnt nach dem letzten Termin am 01. Dezember 2024. Danach sind wir wieder ab März 2025 am Start."
 #: note: "... ersten Flowmarkt am 23. März 2025 ..."
+#: note: "... für den ersten Flowmarkt am 22. März 2026 ..."
 #: XXX Wann ist Saisonbeginn und -ende?
 #: next_check: 2025-11-30
 	q4::temp:clock 12412,9610 12250,9691
@@ -6970,24 +6971,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251103 (2025er-Sperrung)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4rsvjcrn22c
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4gbzwoqfzfhov3n3x3wfcpwsvgivjxw2idqdjtbrnto6ta7fy5q@jpeg (gesperrter Bereich etwa 45m lang)
-#: source_id: viz2021:13.386308,52.460699,08.08.2023,07:00 (hier nur Kfz-Verkehr (aber ob das stimmt?), bis 23.08.2023) (inaktiv)
-#: source_id: LMS-BR:388883/72 viz2021:13.38474,52.46081,04.11.2025,05:00 viz2021:13.38474,52.46081, (bis 24.11.2025) (bis 28.11.2025) (inaktiv)
-#: also_indoor: traffic (T,G)
-#: last_checked: 2025-11-28 (traffic)
-#: check_frequency: 2d (traffic)
-# REMOVED ---	q4::inwork 9417,6063 9339,6076 9321,6079
-	q4::inwork 9321,6079 9212,6096
-',
-         'from' => 1762124400,
-         'id' => 3878,
-         'text' => 'Albrechtstr.: Bauarbeiten zwischen Tempelhofer Damm und Theodorstr., Sperrung, vom 04.11.2025 bis 28.11.2025, evtl. wird die Baustelle verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7394,8 +7378,9 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-10-31 (daf)
-#: check_frequency: 30d
+#: last_checked: 2025-11-19
+#: check_frequency: 90d
+#: next_check: 2026-04-30 (Schilder vor Ort)
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-10-30 (Schilder vor Ort)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -7403,7 +7388,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 ',
          'from' => 1708236000,
          'id' => 4011,
-         'text' => 'Magnus-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, Ende der Sperrung unbekannt',
+         'text' => 'Magnus-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende April 2026, evtl. wird die Sperrung verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7738,7 +7723,7 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2025-11-29 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="26158804" version="27"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -8188,7 +8173,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2025-11-18 (architektur-urbanistik)
+#: last_checked: 2025-11-29
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -8330,9 +8315,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        {
          'data' => '#: also_indoor: traffic (re-G,W,ex-T,A)
-#: note: mittlerweile (Anfang Nov. 2025) vielleicht nur hinter dem Bayernring gesperrt
+#: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-11-07
+#: last_checked: 2025-11-29
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-07-31 (Halteverbotsschilder)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
@@ -8340,7 +8325,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 ',
          'from' => 1736343075,
          'id' => 4237,
-         'text' => 'Loewenhardtdamm: vermutlich Bauarbeiten in Höhe Bayernring mit Sperrung, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Loewenhardtdamm: Bauarbeiten in Höhe Bayernring mit Sperrung, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8432,7 +8417,7 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
 #: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
-#: also_indoor: traffic (G,T)
+#: also_indoor: traffic (G,ex-T)
 #: last_checked: 2025-11-28 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
@@ -8678,9 +8663,10 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
-#: last_checked: 2025-11-21
-#: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
+#: last_checked: 2025-11-29
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
 Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
 ',
@@ -8741,7 +8727,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
 #: osm_watch: way id="276210232" version="6"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2025-09-15
+#: last_checked: 2025-11-22 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -9006,7 +8992,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-11-27 vvv
+#: last_checked: 2025-11-29 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9089,7 +9075,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-20 (traffic) vvv
+#: last_checked: 2025-11-29 (traffic) vvv
 #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
@@ -9244,7 +9230,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: source_id: viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
 #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
-#: last_checked: 2025-09-13 vvv
+#: last_checked: 2025-11-29 vvv
 #: next_check: 2025-12-22 (VIZ-Verkehrsmeldung) vvv
 Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 # REMOVED (nicht mehr?) --- #: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
@@ -9466,7 +9452,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-27
+#: last_checked: 2025-11-29
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9487,7 +9473,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
        {
          'data' => '#: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,re-T)
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-29 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
@@ -9585,7 +9571,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'data' => '#: also_indoor: traffic (ex-T,G)
 #: note: laut Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-11-07 vvv
+#: last_checked: 2025-11-29 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2025-12-05 (Halteverbotsschilder am Wolffring) vvv
 Schreiberring	q4::inwork 8941,8186 8861,8242 8776,8285
@@ -9860,9 +9846,10 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: source_id: LMS-BR:371047/72  viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025) (bis 31.01.2026)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
 #: note: laut rbb & VIZ Beginn einen Tag später
-#: last_checked: 2025-11-27 (vollständig Öffnung am nächsten Tag sehr wahrscheinlich)
+#: last_checked: 2025-11-29 (noch immer Absperrungen)
+#: check_frequency: 7d
 # REMOVED --- #: check_frequency: 1d --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
-#: next_check: 2025-11-28 (alte VIZ-Verkehrsmeldung, wurde verlängert; BA-Pressemitteilung)
+#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 13357,9313 13489,9456
 ',
          'from' => 1761519600,
@@ -10036,20 +10023,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'type' => 'handicap',
          'until' => 1798736400
        },
-       {
-         'data' => '#: osm_watch[closed]: note 4953648 2
-#: also_indoor: traffic (none)
-#: last_checked: 2025-11-13
-#: check_frequency: 30d
-#: next_check: 2025-11-28
-	q4::inwork; 10308,12859 10260,12831 10166,12777
-',
-         'from' => undef,
-         'id' => 4490,
-         'text' => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis 28.11.2025',
-         'type' => 'handicap',
-         'until' => 1764370800
-       },
+       undef,
        {
          'data' => '#: osm_watch: note 5049958 1
 #: osm_watch: way id="1127993128" version="3"
@@ -10085,27 +10059,18 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'until' => 1772319599
        },
        {
-         'data' => '#: last_checked: 2025-11-07
+         'data' => '#: note: es gibt weitere Halteverbotsschilder, die bis Ende Februar 2026 gelten
+#: last_checked: 2025-11-29
 #: next_check: 2025-12-15 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295
 ',
          'from' => 1762538105,
          'id' => 4494,
-         'text' => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte Dezember 2025',
+         'text' => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte Dezember 2025, evtl. wird die Sperrung verlängert',
          'type' => 'handicap',
-         'until' => 1765818000
+         'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php
-#: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2025-11-16 Sun 11:11)
-Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten	q4::inwork 18586,9172 18548,8942 18518,8778
-',
-         'from' => 1762642800,
-         'id' => 4495,
-         'text' => 'Hentigstr.: Bauarbeiten zwischen Dönhoffstr. und Marksburgstr., zeitweise Sperrung, 10.11.2025 bis 28.11.2025',
-         'type' => 'gesperrt',
-         'until' => 1764370799
-       },
+       undef,
        {
          'data' => '#: last_checked: 2025-11-08
 ## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\\t3nocross 15986,16922 15929,16870 15875,16816\\n") | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\'
@@ -10122,7 +10087,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
        {
          'data' => '#: also_indoor: traffic (none)
 #: osm_watch: note 4847575 2
-#: last_checked: 2025-11-18 (architektur-urbanistik)
+#: last_checked: 2025-11-29
 #: next_check: 2025-12-21
 	2::inwork 7497,7761 7499,7880
 ',
@@ -10232,6 +10197,34 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
          'text' => 'Brandenburg, Potsdamer Str.: Sperrung der Bahnbrücke, vom 19.12.2025 18:00 bis voraussichtlich 22.12.2025 04:00',
          'type' => 'gesperrt',
          'until' => 1766372400
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist hier tatsächlich zeitweise oder dauerhaft gesperrt?
+#: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13063
+#: osm_watch: way id="25309641" version="11"
+#: note: bei osm bicycle=no, mittlerweile auch access=no
+Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
+',
+         'from' => undef,
+         'id' => 4507,
+         'text' => 'Fehrbelliner Str.: möglicherweise im Bereich der Schulen zeitweise oder dauerhaft gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (G[zu lang],no-T)
+#: last_checked: 2025-11-29 vvv
+#: check_frequency: 14d (traffic) vvv
+Kniephofstr.	q4::inwork 6124,5983 6226,5995 6318,6006
+Kissinger Str.	q3::inwork 6226,5995 6213,6135
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 4508,
+         'text' => 'Kniephofstr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege an der Altmarkstr., Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

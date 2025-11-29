@@ -15,13 +15,13 @@
 # REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13700,10676 13779,10642 13850,10612 13865,10606 13919,10583
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: last_checked: 2025-10-11 (krickstadt) vvv
-# REMOVED --- #: check_frequency: 360d vvv
+#: last_checked: 2025-11-29 vvv
+#: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-10-08 vvv
 (Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9215,506 9206,553 9347,595 9365,615
 (Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9124,522 9004,481
 # REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: temporary ^^^
@@ -129,7 +129,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="21"
-#: last_checked: 2025-11-21 (mapillary)
+#: last_checked: 2025-11-29
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -198,7 +198,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2025-10-31
+#: last_checked: 2025-11-29
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -210,7 +210,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2025-10-31 vvv
+#: last_checked: 2025-11-29 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -390,7 +390,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2025-11-27
+#: last_checked: 2025-11-29
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -484,7 +484,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-11-11
+#: last_checked: 2025-11-29
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -993,7 +993,8 @@ Berliner Allee: Asphalt	Q0 14766,17702 14754,17673
 Berliner Allee: Asphalt	Q0 14754,17673 14731,17611 14668,17463
 Berliner Allee: Asphalt	Q0 14668,17463 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Asphalt	Q0 10735,137 10613,108
-Lessingstr.: Asphalt mit Schäden	Q1 10613,108 10512,83 10425,67 10300,42
+Lessingstr.: Asphalt mit Schäden	Q1+ 10613,108 10512,83
+Lessingstr.: Asphalt mit leichten Schäden	Q0- 10512,83 10425,67 10300,42
 Lessingstr.: schlechtes Kopfsteinpflaster	Q3+ 10300,42 10169,20 10066,-3 9966,-22 9861,-44 9812,-41
 Lessingstr.: schlechtes Kopfsteinpflaster	Q3 9812,-41 9730,-33
 Monbijoustr.: Asphalt	Q0 9771,13182 9736,13061 9714,12995 9707,12974
@@ -8096,7 +8097,7 @@ Mühlenstr.: Asphalt	Q0 6842,2995 6763,2879 6745,2848
 #: note: früher das infravelo-Projekt "muehlenstrasse-1"
 #: XXX Wird das Kopfsteinpflaster auch hier durch Asphalt ersetzt? Und bedeutet das, dass die Route durch den Gemeindepark nicht realisiert wird?
 #: osm_watch: way id="702312697" version="7"
-#: last_checked: 2025-09-22 (mapillary)
+#: last_checked: 2025-11-29
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 Mühlenstr.: Kopfsteinpflaster	Q2+ 6745,2848 6665,2836
@@ -9041,11 +9042,12 @@ Bienwaldring: Asphalt	Q0 11824,2036 11733,1945
 Bienwaldring: Asphalt	Q0 11839,1708 12144,1742 12184,1749
 Egisheimer Weg: Asphalt	Q0 12002,1900 12033,1929 12101,1934
 Haewererweg: Asphalt	Q0 12295,1560 12286,1540 12206,1418 12156,1346
+Haewererweg: Asphalt	Q0 12097,1243 12018,1152
 Kestenzeile: Asphalt	Q0 12286,1540 12364,1471 12492,1428 12623,1411 12725,1429
 Michel-Klinitz-Weg: Verbundsteinpflaster	Q1 12315,1345 12265,1249 12307,1235 12354,1219 12373,1321
 Lindholzweg: Asphalt	Q0 12512,1650 12492,1428 12477,1291 12460,1168
 Lindholzweg: unbefestigte Straße	Q2 12460,1168 12379,1185
-Lindholzweg: unbefestigte Straße	Q2 12224,1235 12125,1282
+(Buckower Weg - Haewererweg): unbefestigte Straße	Q2 12224,1235 12125,1282
 (Zum Lindholzweg 45): Verbundsteinpflaster	Q1 12460,1168 12483,1160
 An den Achterhöfen: Asphalt	Q0 12260,1597 12295,1560 12512,1650 12643,1706 12911,1815
 Landschöppenpfad: Gehwegplatten	Q0- 12609,1780 12574,1866
@@ -16557,7 +16559,7 @@ Dielingsgrund: gutes Verbundsteinpflaster	Q1 10590,525 10783,587
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/grundeigentuemer-kritisieren-die-bvv_a234142 (auch erwähnt hier: Schwedter Str.)
 #: XXX siehe auch Finanzplan Berlin 2019-2023, S. 232 im pdf)
 #: osm_watch: way id="156350665" version="14"
-#: last_checked: 2025-06-11
+#: last_checked: 2025-11-29
 #: check_frequency: 180d
 Dielingsgrund: glattes Kopfsteinpflaster, etwas wellig	Q2+ 10777,605 10880,633 11083,639
 #: by: ^^^
@@ -18786,6 +18788,7 @@ Kunzeweg: Mosaikpflaster	Q1 15928,12483 15819,12498
 Johannes-Niemeyer-Weg: Verbundsteinpflaster	Q1 -7931,-2146 -7878,-2164 -7831,-2230 -7780,-2279 -7720,-2300
 # 
 #: by: fabian dietrich:
+#: confirmed_by: srt
 Salmbacher Str.: Asphalt	Q0 11139,1145 11250,1189 11393,1243 11532,1295 11643,1338 11756,1381 11922,1445 11991,1471
 # 
 #: by: Nicola: vvv
@@ -23745,7 +23748,7 @@ Pasewaldtstr.: Kopfsteinpflaster	Q2 640,3240 758,3417
 #: confirmed_by: srt
 Mistelweg: Beton	Q0 17102,2420 17175,2498 17230,2556 17284,2636
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
-Freiertweg: Asphalt	Q0 10638,403 10827,467 10955,501 11086,516
+Freiertweg: Asphalt, einige Schäden	Q0- 10638,403 10827,467 10955,501 11086,516
 #: by: ^^^
 # 
 #: by: ralf henze:
@@ -25603,11 +25606,11 @@ Köllnische Str.: sehr guter Asphalt	Q0 18659,5330 18307,5440
 # 
 #: by: Ruth Berendes-... vvv
 #: corrected_by: srt (Asphalt -> Beton)
-#: source_id: viz2021:13.42378,52.41824,27.10.2025,07:00 (Fahrbahnerneuerung zwischen Trimbacher Str. und Salmbacher Str., bis 28.11.2025) (inaktiv)
-#: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2025-10-31 (mapillary)
-#: next_check: 2025-11-28
-Delmer Steig: Beton	Q0- 12011,1361 11954,1407 11922,1445 11895,1489
+Delmer Steig: Beton, einige Hebungen	Q1+ 12011,1361 11954,1407
+# REMOVED --- #: source_id: viz2021:13.42378,52.41824,27.10.2025,07:00 (Fahrbahnerneuerung zwischen Trimbacher Str. und Salmbacher Str., bis 28.11.2025) (inaktiv) --- #: XXX nach den Bauarbeiten bessere Qualität? --- #: last_checked: 2025-10-31 (mapillary) --- #: next_check: 2025-11-28
+#: historical_note: früher (bis November 2025) Beton, einige Hebungen
+Delmer Steig: Beton	Q0 11954,1407 11922,1445
+Delmer Steig: Beton, einige Hebungen	Q1+ 11922,1445 11895,1489
 Prinzenstr. (Lichterfelde): mäßiges Verbundsteinpflaster	Q2+ 4931,2235 4995,2090
 #: by: ^^^
 # 
@@ -27543,6 +27546,7 @@ Darsteiner Weg: guter Beton	Q0- 28718,487 28813,598 29037,851 29042,891
 Jahnstr. (Hermsdorf): schlechtes Kopfsteinpflaster	Q3 3707,22864 3689,23078
 # 
 #: by: Irit Früchtnicht vvv
+#: confirmed_by: srt
 Christian-Henkel-Str.: guter Asphalt	Q0 12054,1044 12175,1101 12256,1111 12350,1088 12403,1011
 #: confirmed_by: srt
 Buckower Weg: gutes Verbundsteinpflaster	Q1+ 12379,1185 12373,1169 12350,1088
@@ -34257,6 +34261,9 @@ Einmündungsbereich asphaltiert	Q0 10380,757
 Kreuzungsbereich asphaltiert	Q0 10506,405
 Einmündungsbereich asphaltiert	Q0 10550,282
 Kreuzungsbereich asphaltiert	Q0 10613,108
+Kreuzungsbereich asphaltiert	Q0 10512,83
+Kreuzungsbereich asphaltiert	Q0 10425,67
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 10300,42
 Kreuzungsbereich asphaltiert	Q1 24553,12885
 Kreuzungsbereich asphaltiert	Q0 24696,13120
 Einmündungsbereich asphaltiert	Q0 24775,13218

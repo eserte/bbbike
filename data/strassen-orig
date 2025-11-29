@@ -1261,7 +1261,7 @@ Gotenstr. (Schˆneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wohn-und-beratungshaus-ella-barowsky-stra%C3%9Fe-gotenstra%C3%9Fe-am-stadtplatz-sch%C3%B6neberger-linse.1047/#post-24228 (Fertigstellung des Platzes erst 2028?)
 #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
-#: last_checked: 2025-11-09
+#: last_checked: 2025-11-29
 #: check_frequency: 180d
 (Gotenstr. - Ella-Barowsky-Str.)	NN 7497,7761 7551,7851
 # 
@@ -3948,8 +3948,8 @@ Friedenfelser Str.	H 7668,471 7688,544 7729,691 7757,834 7759,906 7753,994
 Buckower Chaussee	N 8533,525 8742,475 8977,505 9004,481
 #: carriageway_width: 12m (aber nur im Bereich des Bahn¸bergangs, ansonsten breiter, mit Mittelstreifen)
 # REMOVED --- #: next_check_id: BUCKOWERCHAUSSEE-2022 --- #: priority: #A --- #: next_check: 2025-10-08 vvv --- #: valid: !20220124-20251009
-Buckower Chaussee	H 9004,481 9079,531 9135,551 9196,570 9365,615 9858,744
-# REMOVED --- #: valid: 20220124-20251009 --- Buckower Chaussee	NH 9004,481 9079,531 9135,551 9196,570 9365,615 9858,744 --- #: next_check ^^^
+Buckower Chaussee	H 9004,481 9079,531 9135,551 9196,570 9289,595 9365,615 9858,744
+# REMOVED --- #: valid: 20220124-20251009 --- Buckower Chaussee	NH 9004,481 9079,531 9135,551 9196,570 9289,595 9365,615 9858,744 --- #: next_check ^^^
 Buckower Chaussee	H 9858,744 10047,813 10187,872 10276,906 10324,925 10427,968
 # 
 Heinitzweg	N 10276,906 10232,1015 10232,1025 10248,1055 10325,1083
@@ -6325,7 +6325,7 @@ Segelfliegerdamm	H 17490,3630 17522,3653 17552,3675 17585,3745 17592,3901 17607,
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5033
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036590665323/590665323/00106020/20-Anlagen/04/B0932SB.pdf (Ablehnung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_42_4657_4844_online.pdf (Widmung von Straﬂenland)
-#: osm_watch: way id="40571026" version="13"
+#: osm_watch: way id="40571026" version="14"
 #: last_checked: 2025-06-11
 #: check_frequency: 360d
 Segelfliegerdamm [Stichstraﬂe]	N 17592,3901 17782,3880
@@ -13376,7 +13376,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: XXX ‰ndert sich durch die (teilweise?) Straﬂenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="11"
 #: osm_watch: way id="23106203" version="17"
-#: last_checked: 2025-07-03 (mapillary)
+#: last_checked: 2025-11-29
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
 #: note: Auf Brandenburger Seite verl‰uft gleich nebenan der Grenzweg
@@ -20533,7 +20533,7 @@ Lindholzweg	N 12512,1650 12492,1428 12477,1291 12460,1168
 #: oldname: Straﬂe 44 (Buckow) vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file
 Lindholzweg	N 12460,1168 12379,1185
-Lindholzweg	N 12224,1235 12125,1282
+(Buckower Weg - Haewererweg)	N 12224,1235 12125,1282
 #: oldname ^^^
 #: note: mit erweitertem Spielstraﬂenschild "Privatstraﬂe, Durchfahrt und Parken verboten" vvv
 Buckower Weg	N 12379,1185 12373,1169 12350,1088

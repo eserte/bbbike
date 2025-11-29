@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: source_id: LMS-BR:364250/72 viz2021:13.43553,52.42484, (bis 31.05.2026)
+#: note: Anforderungsampel für Radfahrer auf dem Radweg (der ab Bauhüttenweg benutzungspflichtig geworden ist) Richtung Süden
+#: last_checked: 2025-11-29
+#: next_check: 2026-05-31
+#: valid: -20260531
+Buckower Damm: Gegenverkehrsregelung	X::inwork::alternating 12712,2378
+# 
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251015 (bis Anfang Dez 2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3byu65n322r
 #: source_id: viz2021:13.45883,52.51144,16.10.2025,07:00 (bis 02.12.2025)
@@ -455,14 +462,14 @@ Gürtelstr.	F::inwork 15153,11691
 # REMOVED --- #: next_check: 2025-08-07 (VIZ-Verkehrsmeldung)
 # REMOVED --- Südostallee: provisorische Fußgängerampel	F::inwork 17128,5736
 # 
-#: next_check_id: KWEISENBAHNBRUECKE-2022
-#: osm_watch: node id="9882573114" version="3"
-#: osm_watch: node id="7023223791" version="3"
-#: last_checked: 2025-04-21 (mapillary)
-#: check_frequency: 150d
-# REMOVED --- #: next_check: 2023-06-27
-# REMOVED --- #: valid: -20230627
-B179/Fichtestr.	X::inwork 26138,-12596
+# REMOVED (vermutlich existiert die Ampel nicht mehr?) --- #: next_check_id: KWEISENBAHNBRUECKE-2022
+# REMOVED --- #: osm_watch: node id="9882573114" version="3"
+# REMOVED --- #: osm_watch: node id="7023223791" version="3"
+# REMOVED --- #: last_checked: 2025-04-21 (mapillary)
+# REMOVED --- #: check_frequency: 150d
+# REMOVED --- # REMOVED --- #: next_check: 2023-06-27
+# REMOVED --- # REMOVED --- #: valid: -20230627
+# REMOVED --- B179/Fichtestr.	X::inwork 26138,-12596
 # 
 # REMOVED --- #: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (bis 12.7.2022) (nicht verlängert) (bis 28.9.2022) (nicht verlängert) --- #: source_id: viz2021:13.183144,52.423471,27.10.2022,10:00 (bis 23.11.2022) --- #: note: laut rbb bis 28.10.2022 --- #: next_check: 2022-11-23 --- #: valid: -20221123 --- Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork::alternating -4368,1731
 # REMOVED (vermutlich wegen der Sperrung nicht mehr) --- #: next_check_id: HAEMMERLING-2022 --- #: by: https://www.bahninfo-forum.de/read.php?9,726467,730605#msg-730605 (19.4.2022 - 30.11.2022) --- #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022) (wieder aktiviert, bis 30.9.2022) (bis 10.10.2022) (inaktiv) (bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) --- #: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m --- #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig --- #: last_checked: 2023-01-15 vvv --- #: next_check: 2023-01-31 vvv --- #: valid: -20230131 vvv --- Hämmerlingstr.: Gegenverkehrsregelung	X::inwork::alternating 21984,6317 --- Hämmerlingstr.: Gegenverkehrsregelung	X::inwork::alternating 22000,6245 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
@@ -2245,7 +2252,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6668,6810
 	X 6675,6740
 	X 6360,4504
-#: XXX_prog: geradeausfahrende Radfahrer in der Leonorenstr. Richtung Nordwesten haben zwei Ampeln zu beachten, und sind noch zusätzlich dadurch benachteiligt, dass die rechtsabbiegenden Autofahrer eine eigene lange Grünphase haben
+#: XXX_prog: geradeausfahrende Radfahrer in der Leonorenstr. Richtung Nordwesten haben zwei Ampeln zu beachten, und sind noch zusätzlich dadurch benachteiligt, dass die rechtsabbiegenden Autofahrer aus der Leonorenstr. eine eigene lange Grünphase haben
 	X 6120,4214
 	X 4702,2676
 	X 5447,3801
@@ -4381,9 +4388,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2025-10-31 (mapillary)
+#: last_checked: 2025-11-29
 #: check_frequency: 120d
-#: next_check: 2025-12-31 (Tsp)
+#: next_check: 2026-12-31 (infravelo)
 	X::inwork 12185,7381
 # 
 #: note: Anforderungsampel für Radfahrer in der Relation Brachvogelstr. - Mittenwalder Str.

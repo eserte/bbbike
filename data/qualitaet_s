@@ -624,7 +624,8 @@ Berliner Allee: Asphalt	Q0 14766,17702 14754,17673
 Berliner Allee: Asphalt	Q0 14754,17673 14731,17611 14668,17463
 Berliner Allee: Asphalt	Q0 14668,17463 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Asphalt	Q0 10735,137 10613,108
-Lessingstr.: Asphalt mit Schäden	Q1 10613,108 10512,83 10425,67 10300,42
+Lessingstr.: Asphalt mit Schäden	Q1 10613,108 10512,83
+Lessingstr.: Asphalt mit leichten Schäden	Q0 10512,83 10425,67 10300,42
 Lessingstr.: schlechtes Kopfsteinpflaster	Q3 10300,42 10169,20 10066,-3 9966,-22 9861,-44 9812,-41
 Lessingstr.: schlechtes Kopfsteinpflaster	Q3 9812,-41 9730,-33
 Monbijoustr.: Asphalt	Q0 9771,13182 9736,13061 9714,12995 9707,12974
@@ -7325,11 +7326,12 @@ Bienwaldring: Asphalt	Q0 11824,2036 11733,1945
 Bienwaldring: Asphalt	Q0 11839,1708 12144,1742 12184,1749
 Egisheimer Weg: Asphalt	Q0 12002,1900 12033,1929 12101,1934
 Haewererweg: Asphalt	Q0 12295,1560 12286,1540 12206,1418 12156,1346
+Haewererweg: Asphalt	Q0 12097,1243 12018,1152
 Kestenzeile: Asphalt	Q0 12286,1540 12364,1471 12492,1428 12623,1411 12725,1429
 Michel-Klinitz-Weg: Verbundsteinpflaster	Q1 12315,1345 12265,1249 12307,1235 12354,1219 12373,1321
 Lindholzweg: Asphalt	Q0 12512,1650 12492,1428 12477,1291 12460,1168
 Lindholzweg: unbefestigte Straße	Q2 12460,1168 12379,1185
-Lindholzweg: unbefestigte Straße	Q2 12224,1235 12125,1282
+(Buckower Weg - Haewererweg): unbefestigte Straße	Q2 12224,1235 12125,1282
 (Zum Lindholzweg 45): Verbundsteinpflaster	Q1 12460,1168 12483,1160
 An den Achterhöfen: Asphalt	Q0 12260,1597 12295,1560 12512,1650 12643,1706 12911,1815
 Landschöppenpfad: Gehwegplatten	Q0 12609,1780 12574,1866
@@ -15417,7 +15419,7 @@ Bollestr.: Asphalt	Q0 2915,20875 2914,20846 2944,20710 2956,20651
 Bollestr.: Kleinsteinpflaster	Q2 2956,20651 2968,20584
 Pasewaldtstr.: Kopfsteinpflaster	Q2 640,3240 758,3417
 Mistelweg: Beton	Q0 17102,2420 17175,2498 17230,2556 17284,2636
-Freiertweg: Asphalt	Q0 10638,403 10827,467 10955,501 11086,516
+Freiertweg: Asphalt, einige Schäden	Q0 10638,403 10827,467 10955,501 11086,516
 Straße Y: Asphalt	Q0 -632,16541 -671,16488
 Petitweg: guter Asphalt	Q0 11025,22504 10918,22349
 Petitweg: guter Asphalt	Q0 10918,22349 10994,22289 11073,22225
@@ -15982,7 +15984,9 @@ Hagenower Ring - Am Luchgraben: Asphalt	Q0 17079,20716 17287,20837
 Busonistr.: Asphalt	Q0 14865,23388 15033,23432 15167,23470 15295,23508 15324,23534 15426,23678 15471,23746 15520,23824 15552,23880 15569,23908 15601,23963 15675,24086 15745,24194 15760,24217
 Köllnische Str.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 19037,5316 18999,5237 18940,5243 18824,5280 18659,5330
 Köllnische Str.: sehr guter Asphalt	Q0 18659,5330 18307,5440
-Delmer Steig: Beton	Q0 12011,1361 11954,1407 11922,1445 11895,1489
+Delmer Steig: Beton, einige Hebungen	Q1 12011,1361 11954,1407
+Delmer Steig: Beton	Q0 11954,1407 11922,1445
+Delmer Steig: Beton, einige Hebungen	Q1 11922,1445 11895,1489
 Prinzenstr. (Lichterfelde): mäßiges Verbundsteinpflaster	Q2 4931,2235 4995,2090
 Stadtilmer Weg: Asphalt	Q0 6515,1010 6495,915 6592,882 6779,816 6841,793
 Berberitzenweg: mäßiger Beton	Q1 15526,4383 15635,4573 15690,4668 15816,4890 15867,4973 15947,5137

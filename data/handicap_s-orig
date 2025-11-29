@@ -82,7 +82,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="24"
 #: osm_watch: way id="1072662717" version="28"
-#: last_checked: 2025-11-12 (osm)
+#: last_checked: 2025-11-29
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -315,7 +315,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-11-27
+#: last_checked: 2025-11-29
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -1914,7 +1914,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-11-25
+#: last_checked: 2025-11-29
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -5345,11 +5345,9 @@ Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 # 
 Suttnerstr.: einige Fußgänger	q2+ 7728,5866 7733,5893 7735,5960
 # 
-#: next_check_id: HINDENBURGDAMM-2022
-#: XXX nach den Bauarbeiten prüfen und vielleicht wiederherstellen: Gehweg, einige Fußgänger, q2 
-#: last_checked: 2024-10-26
-#: next_check: 2025-11-30
-(Wolfensteindamm - Händelplatz): Baustelleneinrichtung, Ausweichen auf Gehweg	q3 4543,4820 4517,4853
+# REMOVED (keine Information mehr dazu, assume expired) --- #: next_check_id: HINDENBURGDAMM-2022 --- #: XXX nach den Bauarbeiten prüfen und vielleicht wiederherstellen: --- #: last_checked: 2024-10-26 --- #: next_check: 2025-11-30
+#: historical_note: zwischenzeitlich (ca. 2022 bis 2025): Baustelleneinrichtung, Ausweichen auf Gehweg, q3
+(Wolfensteindamm - Händelplatz): Gehweg, einige Fußgänger, q2	q3 4543,4820 4517,4853
 # 
 Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 # 
