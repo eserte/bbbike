@@ -1008,7 +1008,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-11-26
+#: last_checked: 2025-11-30
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -8661,7 +8661,9 @@ Gehweg für Radfahrer frei	RW1; -264,13009 -278,13094 -309,13268
 	RW1; 4545,22312 4604,22332 4658,22350
 teilweise Radspur, teilweise asphaltiertes Straßenbahnkap	RW1;RW1 19681,5924 19795,5935
 	RW3;RW3 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
-unbefestigter Gehweg für Radfahrer frei	RW1;RW9 -1082,2140 -1078,2154 -987,2205 -878,2265
+#: note: außerdem (bereits vor der Fahrradstraße Königsweg): unbefestigter Gehweg für Radfahrer frei, RW1;RW9
+	RW7;RW7 -1082,2140 -1078,2154 -987,2205 -878,2265
+	RW7;RW7 -878,2265 -844,2268 -790,2300 -745,2320
 asphaltiertes Straßenbahnkap	RW1;RW1 13786,12636 13828,12658
 asphaltiertes Straßenbahnkap	RW1; 14073,12755 14089,12805
 im Kurverbereich als Hochbordradweg	RW3;RW3 16220,25716 16294,25683 16414,25575

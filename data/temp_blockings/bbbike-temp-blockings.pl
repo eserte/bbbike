@@ -29240,7 +29240,7 @@ EOF
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20, 2025-09-10) existiert das Radfahrer-verboten-Schild nicht mehr
-#: last_checked: 2025-10-03 (mapillary)
+#: last_checked: 2025-11-30
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="43"
@@ -32150,7 +32150,7 @@ EOF
 #: osm_watch: way id="198581621" version="20"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-11-26
+#: last_checked: 2025-11-30
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -37958,11 +37958,13 @@ EOF
 #: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026) (neue ID -> inaktiv)
 #: source_id: viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026)
 #: source_id: bvg2024:m76#HIM_FREETEXT_292859
+#: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2025-10-30 (mapillary) vvv
-#: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
-# REMOVED --- #: next_check: 2026-03-01 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2025-11-30 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
+#: next_check: 2026-03-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung
 Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
@@ -37983,6 +37985,7 @@ Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156
 Zescher Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10509,-2128 10513,-2397
 Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 10642,-2371
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 EOF
@@ -38196,7 +38199,7 @@ EOF
 	q4; 9021,3878 9073,3892 9117,3898
 EOF
      },
-     { from  => $isodate2epoch->("2025-03-22 00:00:00"),
+     { from  => $isodate2epoch->("2026-03-21 00:00:00"),
        until => undef, #
        text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
        type  => 'gesperrt',
@@ -38209,7 +38212,7 @@ EOF
 #: note: "... ersten Flowmarkt am 23. März 2025 ..."
 #: note: "... für den ersten Flowmarkt am 22. März 2026 ..."
 #: XXX Wann ist Saisonbeginn und -ende?
-#: next_check: 2025-11-30
+#: next_check: 2026-03-01
 	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
@@ -40831,7 +40834,7 @@ EOF
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (re-H,re-G,T,ex-W)
 #: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026
-#: last_checked: 2025-11-26
+#: last_checked: 2025-11-30
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 17383,9719 17391,9746 17404,9794
@@ -47046,7 +47049,9 @@ EOF
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1617919.php
 #: alias: Lichtenberger Lichtermarkt
 #: tempex: first_advent & T13:00-18:00
-	q4::xmas 15710,12365 15537,12367 15508,12367
+Normannenstr.	q4::xmas 15710,12365 15537,12367 15508,12367
+Rathausstr.	q4::xmas 15537,12367 15576,12315
+Rathausstr.	q3::xmas 15576,12315 15628,12246
 EOF
      },
      { from  => $isodate2epoch->("2025-11-18 00:00:00"), # 1732402800, # 2024-11-24 00:00
@@ -47341,7 +47346,7 @@ EOF
 #: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
 #: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
 #: also_indoor: traffic (G,ex-T)
-#: last_checked: 2025-11-28 (traffic) vvv
+#: last_checked: 2025-11-30 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
@@ -48509,7 +48514,7 @@ EOF
        text  => 'Wernigeroder Str.: Hochbauarbeiten, Einbahnstraßenregelung zwischen Nordhauser Str. und Quedlinburger Str., Richtung Süden gesperrt, vom 05.05.2025 bis voraussichtlich Ende April 2026, evtl. wird die Einbahnstraßenregelung verlängert',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025)
+#: source_id: LMS-BR:367897/72 viz2021:13.31176,52.52457,05.05.2025,07:00 (bis 30.11.2025) (inaktiv)
 #: source_id: LMS-BR:367896/72 viz2021:13.313365,52.523877, (bis 30.04.2026)
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=782027#post782027
 #: by: https://entwicklungsstadt.de/mierendorffinsel-neuer-bauabschnitt-im-wohnquartier-hey-charlottenburg/ (Bauprojekt bis Mitte 2027)
@@ -49842,10 +49847,10 @@ EOF
        text  => 'Landschaftspark Herzberge: Nord-Süd-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen Sun 2025-08-03)
+#: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen 2025-08-03 Sun, 2025-11-30 Sun 11:42)
 #: note: außerdem existiert parallel (nur 40-50m Umweg) ein etwas engerer Betonweg
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-11-08
+#: last_checked: 2025-11-30
 #: check_frequency: 21d
 	2::inwork 17499,12998 17507,12781
 EOF
@@ -51008,13 +51013,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-11-09 00:00:00"),
-       until => $isodate2epoch->("2025-11-28 23:59:59"),
-       text  => 'Hentigstr.: Bauarbeiten zwischen Dönhoffstr. und Marksburgstr., zeitweise Sperrung, 10.11.2025 bis 28.11.2025',
+       until => $isodate2epoch->("2025-12-05 23:59:59"), # $isodate2epoch->("2025-11-28 23:59:59"),
+       text  => 'Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten zwischen Dönhoffstr. und Marksburgstr., 10.11.2025 bis 05.12.2025',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: next_check_id: HENTIG-2025
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php
-#: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2025-11-16 Sun 11:11)
-Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten	q4::inwork 18586,9172 18548,8942 18518,8778
+#: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2025-11-16 Sun 11:11, 2025-11-30 Sun 12:00)
+Hentigstr.	q4::inwork 18586,9172 18548,8942 18518,8778
 EOF
      },
      { from  => undef, # 
@@ -51123,7 +51129,8 @@ EOF
        text  => 'Hönower Str.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Ende Januar 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: last_checked: 2025-11-16
+#: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
+#: last_checked: 2025-11-30
 #: check_frequency: 45d
 #: next_check: 2026-01-31
 	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565
