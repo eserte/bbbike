@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.51;
+$VERSION = 2.52;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -199,14 +199,6 @@ sub register {
 	  tags => [qw(traffic)],
 	};
     if ($is_berlin) {
-	$main::info_plugins{__PACKAGE__ . "_FIS_Broker"} =
-	    { name => "FIS-Broker (1:5000)",
-	      callback => sub {
-		  showmap_fis_broker(@_);
-	      },
-	      callback_3 => sub { show_fis_broker_menu(@_) },
-	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
-	    };
 	$main::info_plugins{__PACKAGE__ . '_GeoPortalBerlin'} =
 	    { name => sub {
 		  my %args = @_;
@@ -757,24 +749,6 @@ sWHEAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+ECGRIMLMfSfQMAAAAYSURBVAjXY2BgkFrFgEaEAgHD
 fyAgnQAA1G8wOeyCs3YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDItMjVUMTk6MTI6NDQrMDE6
 MDDSKYNAAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTAyLTI1VDE5OjEyOjQ0KzAxOjAwo3Q7/AAA
 AABJRU5ErkJggg==
-EOF
-    }
-
-    if (!defined $images{FIS_Broker}) {
-	# First try was
-	#    convert http://fbinter.stadt-berlin.de/fb/images/favicon.ico png:- | base64
-	# but the icon was too blurry and quite large, so I took
-	# http://fbinter.stadt-berlin.de/fb/images/fisbroker_logo.jpg and hand-edited
-	# with Gimp (crop + scale to 16x16 + indexed color mode with 16 colors)
-	$images{FIS_Broker} = $main::top->Photo
-	    (-format => 'png',
-	     -data => <<EOF);
-iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEWPkh6QkSeXmDaZmTCYnB6e
-oDunqFC0tme7u3vKzY3OzZzb2qzk4cLz89v18+P8/vv6G3U3AAAAAWJLR0QAiAUdSAAAAAlwSFlz
-AAALEwAACxMBAJqcGAAAAAd0SU1FB+EGCxMzFc5bjNQAAACWSURBVAjXY/j//1Wx2dz//xn+/w4x
-NlbuBzIWKCsbKXH8Z/ijagwEhvMZPjIwMAoIMvIz/N69a+aafe/vMUxgVOtevfcGB8Pp3TPCT5xS
-1GDYzKB5vDrB2Jxhcc1inQZlZQ2G24VcW4WVjbUZPpgeFzVSNrJj+LPL0JiJ2Wg9yApjZWVxoF2/
-lJWNjUGW/n+Zltb7/z8ADMI7t51Q4A0AAAAASUVORK5CYII=
 EOF
     }
 
@@ -1854,114 +1828,6 @@ sub showmap_architektur_urbanistik {
 }
 
 ######################################################################
-# FIS-Broker
-
-sub showmap_url_fis_broker {
-    my(%args) = @_;
-    my $mapId = delete $args{mapId} || 'k5_farbe@senstadt';
-    my($x0,$y0) = _wgs84_to_utm33U($args{py0}, $args{px0});
-    my($x1,$y1) = _wgs84_to_utm33U($args{py1}, $args{px1});
-    sprintf 'https://fbinter.stadt-berlin.de/fb/index.jsp?loginkey=zoomStart&mapId=%s&bbox=%d,%d,%d,%d', $mapId, $x0, $y0, $x1, $y1;
-}
-
-sub showmap_fis_broker {
-    my(%args) = @_;
-    my $url = showmap_url_fis_broker(%args);
-    start_browser($url);
-}
-
-sub show_fis_broker_menu {
-    my(%args) = @_;
-    my $lang = $Msg::lang || 'de';
-    my $w = $args{widget};
-    my $menu_name = __PACKAGE__ . '_FisBroker_Menu';
-    if (Tk::Exists($w->{$menu_name})) {
-	$w->{$menu_name}->destroy;
-    }
-    my $link_menu = $w->Menu(-title => 'FIS-Broker',
-			     -tearoff => 0);
-    $link_menu->command
-	(-label => 'Fahrradwege (Stand 2017)',
-	 -command => sub { showmap_fis_broker(mapId => 'k_radwege@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Radverkehrsanlagen (Stand 2013)',
-	 -command => sub { showmap_fis_broker(mapId => 'wmsk_radverkehrsanlagen@senstadt', %args) },
-	);
-    $link_menu->command
-	# früher (bis 2024): 'Übergeordnetes Fahrradroutennetz (Stand 2014)', 'k_fahrradroutennetz@senstadt'
-	(-label => 'Radverkehrsnetz',
-	 -command => sub { showmap_fis_broker(mapId => 'k_radverkehrsnetz@senstadt', %args) },
-	);
-    $link_menu->separator;
-    $link_menu->command
-	(-label => 'Verkehrsmengen 2019',
-	 -command => sub { showmap_fis_broker(mapId => 'k_vmengen2019@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Verkehrsmengen 2014',
-	 -command => sub { showmap_fis_broker(mapId => 'wmsk_07_01verkmeng2014@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Übergeordnetes Straßennetz',
-	 -command => sub { showmap_fis_broker(mapId => 'verkehr_strnetz@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Straßenbefahrung 2014',
-	 -command => sub { showmap_fis_broker(mapId => 'k_StraDa@senstadt', %args) },
-	);
-    $link_menu->separator;
-    $link_menu->command
-	(-label => 'FNP',
-	 -command => sub { showmap_fis_broker(mapId => 'fnp_ak@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Bebauungspläne',
-	 -command => sub { showmap_fis_broker(mapId => 'bplan@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Flurstücke (INSPIRE)',
-	 -command => sub { showmap_fis_broker(mapId => 'CP_ALKIS@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Flurstücke (ALKIS)',
-	 -command => sub { showmap_fis_broker(mapId => 'wmsk_alkis@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Flurstücke (ALKIS) (via strassenraumkarte)',
-	 -command => sub { showmap_strassenraumkarte(%args) },
-	);
-    $link_menu->separator;
-    $link_menu->command
-	(-label => 'Grünanlagen',
-	 -command => sub { showmap_fis_broker(mapId => 'gris_oeffgruen@senstadt', %args) },
-	);
-    $link_menu->separator;
-    $link_menu->command
-	(-label => 'Orthophotos 2025',
-	 -command => sub { showmap_fis_broker(mapId => 'k_luftbild2025_rgbi@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Orthophotos 2024',
-	 -command => sub { showmap_fis_broker(mapId => 'k_luftbild2024_true_rgbi@senstadt', %args) },
-	);
-    $link_menu->command
-	(-label => 'Orthophotos 2023',
-	 -command => sub { showmap_fis_broker(mapId => 'k_luftbild2023_true_rgbi@senstadt', %args) },
-	);
-    $link_menu->separator;
-    $link_menu->command
-	(-label => ($lang eq 'de' ? "Link kopieren" : 'Copy link'),
-	 -command => sub { _copy_link(showmap_url_fis_broker(%args)) },
-	);
-
-    $w->{$menu_name} = $link_menu;
-    my $e = $w->XEvent;
-    $link_menu->Post($e->X, $e->Y);
-    Tk->break;
-}
-
-######################################################################
 # gdi.berlin.de (z.B. Radverkehrsnetz Berlin)
 
 sub showmap_url_gdi_berlin {
@@ -2102,6 +1968,10 @@ sub show_gdi_berlin_menu {
     $link_menu->command
 	(-label => 'Flurstücke (ALKIS)',
 	 -command => sub { showmap_gdi_berlin(layers => 'fluralkis', %args) },
+	);
+    $link_menu->command
+	(-label => 'Flurstücke (ALKIS) (via strassenraumkarte)',
+	 -command => sub { showmap_strassenraumkarte(%args) },
 	);
     $link_menu->separator;
     $link_menu->command
