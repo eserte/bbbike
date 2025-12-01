@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.52;
+$VERSION = 2.53;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1969,10 +1969,6 @@ sub show_gdi_berlin_menu {
 	(-label => 'Flurstücke (ALKIS)',
 	 -command => sub { showmap_gdi_berlin(layers => 'fluralkis', %args) },
 	);
-    $link_menu->command
-	(-label => 'Flurstücke (ALKIS) (via strassenraumkarte)',
-	 -command => sub { showmap_strassenraumkarte(%args) },
-	);
     $link_menu->separator;
     $link_menu->command
 	(-label => 'Grünanlagen',
@@ -2001,23 +1997,6 @@ sub show_gdi_berlin_menu {
     my $e = $w->XEvent;
     $link_menu->Post($e->X, $e->Y);
     Tk->break;
-}
-
-######################################################################
-# strassenraumkarte (using mapproxy.codefor.de)
-
-sub showmap_url_strassenraumkarte {
-    my(%args) = @_;
-    my $px = $args{px};
-    my $py = $args{py};
-    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png#%s/%s/%s", $scale, $py, $px;
-}
-
-sub showmap_strassenraumkarte {
-    my(%args) = @_;
-    my $url = showmap_url_strassenraumkarte(%args);
-    start_browser($url);
 }
 
 ######################################################################
