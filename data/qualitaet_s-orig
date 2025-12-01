@@ -1470,7 +1470,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12098 (Einwohneranfrage)
 #: last_checked: 2025-11-05 vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="317233618" version="13"
+#: osm_watch: way id="317233618" version="14"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 #: osm_watch: way id="25216398" version="41"
 Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21938,5866 21862,5857 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
@@ -2933,12 +2933,14 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 (Am Städtischen Zentralfriedhof): asphaltiert	Q0 17790,12255 17764,12238 17540,12222
 # REMOVED (weitgehend fertiggestellt, nur ein paar Meter an den Anschlüssen fehlen noch) --- #: XXX wird hier auch asphaltiert werden? --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php ("Vorplatz Zentralfriedhof, Asphaltierung Fahrradspur", "Planung") --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.842152.php ("bis Mitte November 2019") --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bezirksamt-laesst-am-vorplatz-des-zentralfriedhofs-spuren-fuer-radler-bauen_a236194 (bis Mitte November 2019) --- #: osm_watch: way id="70668204" version="9" --- #: last_checked: 2019-11-16 (fast fertig) --- #: check_frequency: 7d
 #: by: https://www.nachhaltige-erneuerung.berlin.de/frankfurter-allee-nord/umgestaltung-vorplatz-zentralfriedhof-friedrichsfelde (Realisierung bis 2025/2026)
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article410552147/firma-gefeuert-arbeiten-eingestellt-diese-baustelle-wird-zur-posse.html
+#: by: https://mein.berlin.de/ideas/2023-16489/ (bekommt dieser Platz nach Ende der Bauarbeiten den Namen Hermann-Mächtig-Platz?)
 #: source_id: bvg2024:256#HIM_FREETEXT_307497
 #: osm_watch: note 4294376 5
 #: osm_watch: way id="1025072174" version="4"
 #: XXX außerdem kann die Asphaltfahrbahn neben dem Friedhof gesperrt sein (nicht am Wochenende?), dann Ausweichen über unbefestigten parallelen Weg
 #: last_checked: 2025-11-30
-#: check_frequency: 60d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotschilder)
 #: XXX wiederherstellen: (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster, Schotter (Asphaltstreifen wegen Bauarbeiten nicht befahrbar)	Q2 17540,12222 17485,12240

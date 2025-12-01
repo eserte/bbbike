@@ -395,32 +395,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001302-955635-weihnachts-und-umweltmarkt-in-der-sophie.html
-#: by: https://www.weihnachtsmarkt-sophienstrasse.de/ (Absage 2021)
-#: tempex: before(1st_advent,1d) - +1d
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1764284400,
-         'id' => 166,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (29.11.2025 - 30.11.2025)',
-         'type' => 'gesperrt',
-         'until' => 1764543599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -715,33 +690,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1245294.php
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1586971.php
-	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1764370800,
-         'id' => 417,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 30. November 2025 von 13 bis 19 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1764529200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2500,7 +2449,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-10-07
+#: last_checked: 2025-12-01
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -2915,7 +2864,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3436,7 +3385,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: November 8.00 - 17.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Dezember 8.00 - 16.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -3721,34 +3670,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => 1766357999
        },
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
-#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html (Termin 2022 nicht bekannt)
-#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/?date=20221103
-#: tempex: 1st_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1764414000,
-         'id' => 2518,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 14,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 30.11.2025, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1764525600
-       },
+       undef,
        {
          'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
 #: tempex: 2nd_advent & T12-T19
@@ -4558,21 +4480,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.31363,52.52105,26.06.2023,06:00 (bis 30.06.2025) (bis 01.12.2025)
+#: source_id: LMS-BR:304601/72 viz2021:13.31363,52.52105,26.06.2023,06:00 viz2021:13.31363,52.52105, (bis 30.06.2025) (bis 01.12.2025) (bis 30.10.2026)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024, nun bis 30.06.2025
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2025-11-19
 #: check_frequency: 120d
-#: next_check: 2026-06-30
+#: next_check: 2026-10-30
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
 Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier nicht) ---	q3::inwork 4071,12720 4124,12721
 ',
          'from' => 1687804758,
          'id' => 2962,
-         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer sollen absteigen, Bordsteine, voraussichtlich bis Mitte 2026',
+         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer sollen absteigen, Bordsteine, voraussichtlich bis Oktober 2026',
          'type' => 'handicap',
-         'until' => 1782856799
+         'until' => 1793401199
        },
        undef,
        undef,
@@ -6663,7 +6585,7 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2025-11-02 (traffic)
+#: last_checked: 2025-12-01 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -7320,11 +7242,11 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
 #: source_id: viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025)
-#: source_id: viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025)
+#: source_id: LMS-BR:390300/72 viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025) (bis 12.12.2025)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
-#: osm_watch: way id="490912373" version="17"
+#: osm_watch: way id="490912373" version="18"
 #: osm_watch: way id="1113567086" version="8"
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
@@ -7336,9 +7258,9 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 ',
          'from' => 1763247600,
          'id' => 4001,
-         'text' => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 02.12.2025',
+         'text' => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 12.12.2025',
          'type' => 'handicap',
-         'until' => 1764716399
+         'until' => 1765580399
        },
        undef,
        undef,
@@ -7848,6 +7770,9 @@ Schildower Str. zwischen Elsestr. und Stadtgrenze	q4::inwork 4683,24275 4705,242
 # REMOVED (hier vermutlich beendet?) --- Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24233 4565,24327
 Amandastr.: Einbahnstraßenregelung	q4::inwork; 4302,24291 4312,24323 4340,24413
 Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
+#: source_id: LMS-BR:391852/72 viz2021:13.32023,52.62501,01.12.2025,07:00 (bis 09.01.2026)
+#: next_check: 2026-01-09 (VIZ-Verkehrsmeldung)
+Bertastr.	q4::inwork 4448,24277 4510,24170
 #: next_check ^^^
 ',
          'from' => 1721512800,
@@ -8028,53 +7953,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WOLLANK-2024
-#: by: https://www.morgenpost.de/bezirke/pankow/article406701822/jahrelanger-bau-stress-deutsche-bahn-trennt-pankow-und-mitte.html (erste Sperrung: Mitte November bis Mitte Dezember 2024)
-#: by[nocache]: https://archive.is/pZmLF
-#: by: https://www.rbb24.de/panorama/beitrag/2024/07/baustellen-bahn-berlin-pankow-sperrungen.html
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20240925 (26.11.2024 - 26.12.2024, weitere Vollsperrungen z.B. im März 2025)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_einschraenkungen_strassenverkehr_20240924ne.pdf
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wollankstrasse_informationsveranstaltung_20241126.pdf
-#: by: https://weddingweiser.de/wollankstrasse-naechste-bauphase/
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1861029520645538026 (bis 20.12.2024)
-#: by: https://pbs.twimg.com/media/GdOzzK9XEAAuZLU?format=jpg&name=medium (Umleitungsstrecken für Rad- und Fußverkehr)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/PR_berlin_nord_komplexe_arbeiten_informationsveranstaltung_20241127n.pdf (nächste Totalsperrung geplant: 03.03. bis 21.03.2025)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin-nord-komplexe-arbeiten_wollankstrasse_20241128.pdf
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250131
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/GR_berlin_nord_komplexe_arbeiten_wollankstrasse_wegefuehrung_20250131n.pdf
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1895379778414514298
-#: by: https://viz.berlin.de/aktuelle-meldungen/neubau-der-bruecke-uber-die-wollankstrasse/ (weitere Vollsperrung von Mitte Juni bis Dezember 2025)
-#: by: https://www.tagesspiegel.de/berlin/schon-wieder-einen-monat-vollsperrung-diese-baustelle-im-berliner-norden-verlangt-allen-gute-nerven-ab-13314622.html
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250405 (nächste Sperrung Juni - Dez 2025)
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord?date=20250517 (nächste Sperrung 6. Juni 2025 - 1. Dez 2025)
-#: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20251111 (Busse fahren hier wieder am 8.12.2025)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/PR_berlin_nord_komplexe_arbeiten_informationsveranstaltung_20251127.pdf
-#: source_id: viz2021:13.39343,52.564563,26.09.2024,12:00 (vorab: Baustellenampel, bis 26.11.2024 + weitere Arbeiten) (inaktiv)
-#: source_id[inactive]: bvg2024:m27#3b8f28da-f47b-4656-9e57-8822a64c30f3 (ab 2024-11-26, kein Endedatum) (bis 2025-03-03)
-#: source_id: bvg2024:m27#d4c1b822-7348-42cf-b591-de5e4cd772ea
-#: source_id: viz2021:13.393479,52.564574,26.11.2024,06:00 (bis 20.12.2024 + weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.39343,52.564563,20.12.2024,11:00 (Baustellenampel, bis 31.12.2025) (inaktiv)
-#: source_id: viz2021:13.39343,52.564563,03.03.2025,06:00 (bis 28.03.2025) (inaktiv)
-#: source_id: viz2021:13.39343,52.564563,31.03.2025,11:00 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
-#: source_id: viz2021:13.39427,52.56503,01.04.2025,08:23 (Baustellenampel Wollankstraße, bis 31.12.2025) (inaktiv)
-#: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025) (inaktiv)
-#: source_id: adac:310982460 (bis 01.12.2025) (neue ID -> inaktiv)
-#: source_id: adac:555605122 (bis voraussichtlich 01.12.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.39427,52.56503,06.06.2025,09:00 (bis 01.12.2025)
-# REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
-#: note: existiert nun auch in gesperrt-orig bis Anfang Dez 2025
-#: osm_watch: way id="23984383" version="35"
-#: osm_watch[closed]: note 4536637 10
-# REMOVED --- #: last_checked: 2025-04-25 --- #: next_check: 2025-06-06
-	2::inwork 9544,17629 9586,17665
-',
-         'from' => 1749074400,
-         'id' => 4172,
-         'text' => 'Wollankstr.: Neubau der Bahnbrücke, Vollsperrung vom 06.06.2025 bis 01.12.2025',
-         'type' => 'gesperrt',
-         'until' => 1764608400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8245,31 +8124,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5692582-3496862-lichtermarkt-am-rathaus-lichtenberg.html
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1617919.php
-#: alias: Lichtenberger Lichtermarkt
-#: tempex: first_advent & T13:00-18:00
-Normannenstr.	q4::xmas 15710,12365 15537,12367 15508,12367
-Rathausstr.	q4::xmas 15537,12367 15576,12315
-Rathausstr.	q3::xmas 15576,12315 15628,12246
-',
-         'from' => 1764370800,
-         'id' => 4228,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              27,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Normannenstr.: Lichtermarkt am Rathaus Lichtenberg, 30.11.2025 von 13 bis 18 Uhr',
-         'type' => 'handicap',
-         'until' => 1764529200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
 #: by: https://wintermarkt-schlossplatz.de/
@@ -8422,8 +8277,8 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
 #: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
-#: also_indoor: traffic (G,ex-T)
-#: last_checked: 2025-11-30 (traffic) vvv
+#: also_indoor: traffic (G,re-T[teilweise])
+#: last_checked: 2025-12-01 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
@@ -8593,7 +8448,7 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
        {
          'data' => '#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
 #: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025) (bis 25.09.2025) (inaktiv)
-#: source_id: LMS-BR:362088/72 viz2021:13.28104,52.47985,07.03.2025,07:00 viz2021:13.28104,52.47985, (bis 26.11.2025) (bis 12.12.2025)
+#: source_id: LMS-BR:362088/72 viz2021:13.28104,52.47985,07.03.2025,07:00 viz2021:13.28104,52.47985, (bis 26.11.2025) (bis 12.12.2025) (bis 15.12.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
@@ -8606,7 +8461,7 @@ Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
          'id' => 4277,
          'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Egerstr. und Berkaer Str., Sperrung, außerdem ist die Egerstr. Sackgasse an der Teplitzer Str., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, bis Mitte Dezember 2025',
          'type' => 'handicap',
-         'until' => 1765558800
+         'until' => 1765839599
        },
        undef,
        undef,
@@ -8619,25 +8474,7 @@ Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025)
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~03-07-2025-sperrung-am-horstweg-in-potsdam (08.08.2025 ab 22 Uhr bis 11.08.2025 um 6 Uhr, auch Radfahrer sind betroffen)
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/fur-bruckenneubau-der-nuthestrasse-horstweg-in-potsdam-wird-komplett-gesperrt-13963847.html
-#: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
-#: by: https://www.potsdam.de/de/486-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-herbstferien
-#: by: https://www.mobil-potsdam.de/de/baustellen/geplant/?c=5367
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2025-brueckenbau-an-der-l-40-neuer-termin-fuer-vollsperrung-des-horstwegs
-	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
-',
-         'from' => 1764198000,
-         'id' => 4289,
-         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 28.11.2025 22:00 Uhr bis zum 01.12.2025 06:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1764565200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
@@ -8668,16 +8505,17 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
+#: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
 #: last_checked: 2025-11-29
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
+#: check_frequency: 30d
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
 Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
 ',
          'from' => undef,
          'id' => 4294,
-         'text' => 'Kohlfurter Str.: vor Erkelenzdamm Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende November 2025',
+         'text' => 'Kohlfurter Str.: vor Erkelenzdamm Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9043,7 +8881,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
 # MOVED --- #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025 --- #: note: mittlerweile (Mitte September 2025) eine kurze Sperrung an der Koppenstr., aber zumindest am Sa weggeschobene Barrieren
 # REMOVED (nur noch Vorfahrt vor dem Gegenverkehr?) --- #: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt? ---
 # REMOVED ---	q4::inwork; 12238,11931 12413,11901
-#: last_checked: 2025-10-21
+#: last_checked: 2025-12-01
 #: check_frequency: 45d
 #: next_check: 2025-12-19 (Halteverbotsschilder)
 	q3::inwork 12238,11931 12413,11901
@@ -9052,7 +8890,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
          'id' => 4362,
          'text' => 'Lange Str.: Bauarbeiten an der Einmündung Koppenstr., Sperrung der Fahrbahn, voraussichtlich bis Mitte Dezember 2025',
          'type' => 'handicap',
-         'until' => 1766163600
+         'until' => undef
        },
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11158-entwicklungsquartier-andreasstra%C3%9Fe-lxk-campus/?postID=779073#post779073 (nicht eindeutig; durchgestrichenes Radfahrer-frei-Schild)
@@ -9974,9 +9812,9 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
-#: source_id: viz2021:13.39202,52.52009,28.10.2025,07:00 (bis 02.12.2025)
+#: source_id: LMS-BR:388170/72 viz2021:13.39202,52.52009,28.10.2025,07:00 viz2021:13.39202,52.52009, (bis 02.12.2025) (bis 30.01.2026)
 #: last_checked: 2025-11-21 vvv
-#: next_check: 2025-12-02 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-01-30 (VIZ-Verkehrsmeldung) vvv
 Georgenstr.	q4::inwork 9441,12670 9568,12688
 Planckstr.	q4::inwork 9435,12698 9441,12670
 Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
@@ -9985,9 +9823,9 @@ Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
 ',
          'from' => 1761519600,
          'id' => 4485,
-         'text' => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Anfang Dezember 2025',
+         'text' => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Ende Januar 2026',
          'type' => 'handicap',
-         'until' => 1764716399
+         'until' => 1769813999
        },
        {
          'data' => '#: source_id: LMS-BR:381146/72 viz2021:13.30594,52.52464, (bis 03.12.2025) (bis 22.12.2025)

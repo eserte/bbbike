@@ -1361,6 +1361,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.morgenpost.de/berlin/article410278807/elsenbruecke-bau-schreitet-voran-neue-verkehrsfuehrung-in-treptow.html
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/elsenbruecke/verkehrsfuehrungsplan20251021.pdf
 #: by: https://www.berliner-zeitung.de/mensch-metropole/elsenbruecke-vor-teil-eroeffnung-aber-ein-wunsch-scheitert-li.10007165
+#: by: https://www.morgenpost.de/berlin/article410569391/neuer-plan-fuer-die-elsenbruecke-wichtige-entlastung-kommt-doch-nicht.html
+#: by: https://www.entwicklungsstadt.de/zwischen-friedrichshain-und-treptow-so-soll-die-elsenbruecke-2026-wieder-volle-kapazitaet-erreichen/
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1736,7 +1738,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2025-11-06 vvv
+#: last_checked: 2025-12-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -1756,7 +1758,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="823635969" version="27"
 #: osm_watch: way id="4615746" version="54"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-11-16 (osm) vvv
+#: last_checked: 2025-12-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -7945,8 +7947,8 @@ Grünbeschichtung	RW4; 15417,12823 15367,12815 15357,12813
 Grünbeschichtung	RW4; 15357,12813 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
 #: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2025-11-04 (fehlt noch!)
-# REMOVED --- #: check_frequency: 14d --- #: next_check: 2025-11-04 (MoPo)
+#: last_checked: 2025-12-01 (Radwegschild fehlt noch)
+#: check_frequency: 45d
 Grünbeschichtung, Poller	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar
 Grünbeschichtung	RW3; 15010,12855 14940,12843

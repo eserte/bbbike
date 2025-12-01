@@ -799,7 +799,10 @@ Revaler Str.	N 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513
 #: note: getrennter Rad- und Gehweg
 Zur Revaler Str.	NN 14513,11075 14639,11051
 Matkowskystr.	N 14513,11075 14531,11142
-Simplonstr.	N 14760,11044 14712,11039 14682,11037 14639,11051 14605,11078 14531,11142 14468,11203 14400,11261 14369,11287 14328,11320 14254,11377 14181,11434 14099,11505 14049,11553 14031,11569 13992,11605 13996,11631
+Simplonstr.	N 14760,11044 14712,11039 14682,11037 14639,11051 14605,11078 14531,11142 14468,11203 14400,11261 14369,11287 14328,11320 14254,11377
+#: historical_note: früher (bis 30.11.2025) N
+Simplonstr.	NN 14254,11377 14181,11434
+Simplonstr.	N 14181,11434 14099,11505 14049,11553 14031,11569 13992,11605 13996,11631
 Konitzer Str.	N 14099,11505 14087,11467
 Helenenhof	NN 14506,11275 14395,11356
 Grünberger Str.	H 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
@@ -19870,7 +19873,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-11-13 vvv
+#: last_checked: 2025-12-01 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

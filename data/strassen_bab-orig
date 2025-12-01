@@ -71,10 +71,10 @@ BAB100	BAB::inwork; 2009,10517 2039,10566 2117,10698 2165,10785 2175,10864 2183,
 #: by: https://www.tagesspiegel.de/berlin/baustart-fur-die-ringbahnbrucke-zeitplan-umleitungen-s-bahn-sperrung--was-berliner-jetzt-wissen-mussen-14581964.html (bis Sommer 2027)
 #: by: https://www.tagesspiegel.de/berlin/bauwerk-soll-im-sommer-2027-fertig-sein-bietergemeinschaft-erhalt-neubau-auftrag-fur-die-berliner-westendbrucke-14773679.html
 #: XXX Neubau der Westendbrücke (mit Verlagerung)
-#: osm_watch: way id="4495210" version="23"
+#: osm_watch: way id="4495210" version="24"
 #: osm_watch[closed]: note 4671906 7
 #: also_indoor: webcam https://stream.netco.de/LiveApp/play.html?name=iTJR0GlIYNRMVUYJ607204630991365&playOrder=hls (mittlerweile (2025-05-18) nicht mehr aktiv)
-#: last_checked: 2025-11-12 (osm)
+#: last_checked: 2025-12-01 (osm)
 #: check_frequency: 360d
 #: next_check: 2027-09-20
 BAB100 (Westendbrücke)	BAB::Br::inwork; 2388,11997 2332,12106 2248,12201
@@ -219,7 +219,7 @@ Kleeblatt Zehlendorf	BAB;  -3526,1344 -3553,1260 -3602,1224 -3651,1251 -3636,132
 BAB115	BAB 2009,10517 1937,10569 1855,10569 1762,10531 1507,10183 480,8779 -865,6887 -3689,3059 -3786,2861 -3861,2355 -3861,2063 -3806,1934 -3636,1742 -3602,1699 -3571,1606 -3544,1450 -3526,1344 -3480,1049 -3442,806 -3404,501 -3480,273 -4381,-1135 -4712,-1453 -6021,-2039 -6224,-2266 -6502,-2976 -6562,-3181 -6548,-3936 -6538,-4260 -6594,-4456 -6698,-4654 -7019,-5006 -7107,-5182 -7145,-5357 -7141,-5756 -7104,-6868 -7162,-7534 -7314,-7813 -7568,-8042 -9155,-8816 -9345,-8943 -9472,-9172 -10094,-10162 -10285,-10556 -10653,-11444 -10730,-12017
 AD Funkturm	BAB; 1507,10183 1664,10263 1889,10283 2016,10348 2046,10391
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
-#: osm_watch: way id="4446472" version="22"
+#: osm_watch: way id="4446472" version="23"
 AD Funkturm	BAB::inwork; 2046,10391 2039,10566
 #: note: Ausfahrt A115 - Halenseestraße/Messedamm
 #: osm.highway: motorway_link

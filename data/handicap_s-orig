@@ -10,6 +10,36 @@
 # 
 ### Friedrichshain ###
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_14_0921_0992_online.pdf
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12003 (Realisierung des Teilgebietes C: 2025)
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12063 (Vorlage zur Kenntnisnahme)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_33_2153_2200_online.pdf (Teileinziehung)
+#: osm_watch: note 5075430 1
+#: osm_watch: way id="1379292888" version="1"
+#: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
+#: last_checked: 2025-12-01
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache)
+#: next_check: 2025-12-12 (Halteverbotsschilder)
+Simplonstr.: Absperrungen	q3::inwork 14181,11434 14254,11377
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12003 (Realisierung des Teilgebietes C: 2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_34_2201_2272_online.pdf (Teileinziehung)
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12133 (Vorlage zur Kenntnisnahme) (Beschluss Überweisung)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php
+#: osm_watch: note 4919919 6
+#: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
+#: last_checked: 2025-12-01 vvv
+#: check_frequency: 7d vvv
+#: next_check: 2025-12-12 (Halteverbotsschilder) vvv
+# REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache) vvv
+Simplonstr.: Absperrungen	q4::inwork 13996,11631 13992,11605 14031,11569
+Gabriel-Max-Str.: Absperrungen	q4::inwork 14065,11605 14049,11553
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 # REMOVED --- #: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025) (inaktiv)
 # REMOVED --- #: last_checked: 2025-09-10
 # REMOVED --- #: next_check: 2025-09-12
@@ -36,7 +66,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # 
 #: next_check_id: TRAM21-2025
 #: source_id: viz2021:13.463751,52.510709,22.11.2025,08:00 (bis 14.12.2025)
-#: last_checked: 2025-11-30 vvv
+#: last_checked: 2025-12-01 vvv
 #: next_check: 2025-12-14 vvv
 #: valid: 20251122-20251214 vvv
 #: note: Vorfahrtsstraßenregelung über Gryphiusstr. - Krossener Str.
@@ -106,7 +136,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-10-24
+#: last_checked: 2025-12-01
 #: check_frequency: 90d
 #: next_check: 2026-08-22 (entwicklungsstadt)
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
@@ -169,7 +199,7 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn noch nicht fre
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-11-25 vvv
+#: last_checked: 2025-12-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -410,10 +440,9 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="44"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-11-06 (daf)
-# REMOVED --- #: check_frequency: 60d
-#: check_frequency: 180d
-#: next_check: 2025-12-31 (entwicklungsstadt)
+#: last_checked: 2025-12-01 (daf)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-12-31 (entwicklungsstadt)
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 

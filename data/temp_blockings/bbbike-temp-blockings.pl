@@ -16620,7 +16620,7 @@ EOF
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-10-07
+#: last_checked: 2025-12-01
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -28627,8 +28627,8 @@ EOF
 EOF
      },
      { from  => 1687804758, # 1644676199, # 1527186848, # 2018-05-24 20:34
-       until => $isodate2epoch->("2026-06-30 23:59:59"), # $isodate2epoch->("2023-04-14 17:00:00"), # undef, # 1559170418, # undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
-       text  => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer sollen absteigen, Bordsteine, voraussichtlich bis Mitte 2026',
+       until => $isodate2epoch->("2026-10-30 23:59:59"), # $isodate2epoch->("2023-04-14 17:00:00"), # undef, # 1559170418, # undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
+       text  => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Radfahrer sollen absteigen, Bordsteine, voraussichtlich bis Oktober 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://aera.berlin/
@@ -28641,12 +28641,12 @@ EOF
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
-#: source_id: viz2021:13.31363,52.52105,26.06.2023,06:00 (bis 30.06.2025) (bis 01.12.2025)
+#: source_id: LMS-BR:304601/72 viz2021:13.31363,52.52105,26.06.2023,06:00 viz2021:13.31363,52.52105, (bis 30.06.2025) (bis 01.12.2025) (bis 30.10.2026)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024, nun bis 30.06.2025
 #: also_indoor: traffic (H,G,B,W)
 #: last_checked: 2025-11-19
 #: check_frequency: 120d
-#: next_check: 2026-06-30
+#: next_check: 2026-10-30
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
 Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier nicht) ---	q3::inwork 4071,12720 4124,12721
@@ -40066,7 +40066,7 @@ EOF
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2025-11-02 (traffic)
+#: last_checked: 2025-12-01 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -43528,21 +43528,21 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 EOF
      },
      { from  => $isodate2epoch->("2025-11-16 00:00:00"), # 1730782800, # 2024-11-05 06:00, # 1705899600, # 2024-01-22 06:00
-       until => $isodate2epoch->("2025-12-02 23:59:59"), # $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
+       until => $isodate2epoch->("2025-12-12 23:59:59"), # $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
 #      text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
 #      text  => 'Gürtelstr.: Kranabbau zwischen Weserstr. und Wiesenweg, Sperrung der Fahrbahn, vom 06.11.2024 06:00 bis 07.11.2024 18:00',
-       text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 02.12.2025',
+       text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 12.12.2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
 #: source_id: viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025)
-#: source_id: viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025)
+#: source_id: LMS-BR:390300/72 viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025) (bis 12.12.2025)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
-#: osm_watch: way id="490912373" version="17"
+#: osm_watch: way id="490912373" version="18"
 #: osm_watch: way id="1113567086" version="8"
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
@@ -45492,6 +45492,9 @@ Schildower Str. zwischen Elsestr. und Stadtgrenze	q4::inwork 4683,24275 4705,242
 # REMOVED (hier vermutlich beendet?) --- Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24233 4565,24327
 Amandastr.: Einbahnstraßenregelung	q4::inwork; 4302,24291 4312,24323 4340,24413
 Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
+#: source_id: LMS-BR:391852/72 viz2021:13.32023,52.62501,01.12.2025,07:00 (bis 09.01.2026)
+#: next_check: 2026-01-09 (VIZ-Verkehrsmeldung)
+Bertastr.	q4::inwork 4448,24277 4510,24170
 #: next_check ^^^
 EOF
      },
@@ -46264,7 +46267,7 @@ EOF
 #: source_id: viz2021:13.39343,52.564563,06.06.2025,09:00 (bis 01.12.2025) (inaktiv)
 #: source_id: adac:310982460 (bis 01.12.2025) (neue ID -> inaktiv)
 #: source_id: adac:555605122 (bis voraussichtlich 01.12.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.39427,52.56503,06.06.2025,09:00 (bis 01.12.2025)
+#: source_id: LMS-BR:347688/72 viz2021:13.39427,52.56503,06.06.2025,09:00 viz2021:13.39427,52.56503, (bis 01.12.2025) (Ampelregelung bis 31.12.2026)
 # REMOVED (wurde permanent gemacht) --- #: note: siehe auch temporären Eintrag in comments_trafficjam
 #: note: existiert nun auch in gesperrt-orig bis Anfang Dez 2025
 #: osm_watch: way id="23984383" version="35"
@@ -47345,8 +47348,8 @@ EOF
 #: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
 #: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
 #: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
-#: also_indoor: traffic (G,ex-T)
-#: last_checked: 2025-11-30 (traffic) vvv
+#: also_indoor: traffic (G,re-T[teilweise])
+#: last_checked: 2025-12-01 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 #: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
 Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
@@ -47770,14 +47773,14 @@ EOF
 EOF
      },
      { from  => 1741240800, # 2025-03-06 07:00
-       until => $isodate2epoch->("2025-12-12 18:00:00"), # $isodate2epoch->("2025-09-25 04:00:00"), # 1757343600, # 2025-09-08 17:00
+       until => $isodate2epoch->("2025-12-15 23:59:59"), # $isodate2epoch->("2025-09-25 04:00:00"), # 1757343600, # 2025-09-08 17:00
 #      text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 25.09.2025',
        text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Egerstr. und Berkaer Str., Sperrung, außerdem ist die Egerstr. Sackgasse an der Teplitzer Str., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, bis Mitte Dezember 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
 #: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025) (bis 25.09.2025) (inaktiv)
-#: source_id: LMS-BR:362088/72 viz2021:13.28104,52.47985,07.03.2025,07:00 viz2021:13.28104,52.47985, (bis 26.11.2025) (bis 12.12.2025)
+#: source_id: LMS-BR:362088/72 viz2021:13.28104,52.47985,07.03.2025,07:00 viz2021:13.28104,52.47985, (bis 26.11.2025) (bis 12.12.2025) (bis 15.12.2025)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
@@ -47958,7 +47961,7 @@ EOF
        text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 28.11.2025 22:00 Uhr bis zum 01.12.2025 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025)
+#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
@@ -48062,17 +48065,18 @@ EOF
      { from  => undef, # 
        until => undef, # XXX
 #      text  => 'Erkelenzdamm: in Höhe Wassertorplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Kohlfurter Str.: vor Erkelenzdamm Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende November 2025',
+       text  => 'Kohlfurter Str.: vor Erkelenzdamm Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
 #: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
 #: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
+#: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
 #: last_checked: 2025-11-29
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
+#: check_frequency: 30d
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
 Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
 EOF
@@ -49096,7 +49100,7 @@ EOF
 EOF
      },
      { from  => 1749297422, # 2025-06-07 13:57
-       until => $isodate2epoch->("2025-12-19 18:00:00"), # 1756225274, # $isodate2epoch->("2025-08-30 18:00:00"), # 1755381600, # 2025-08-17 00:00
+       until => undef, # $isodate2epoch->("2025-12-19 18:00:00"), # 1756225274, # $isodate2epoch->("2025-08-30 18:00:00"), # 1755381600, # 2025-08-17 00:00
 #      text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende August 2025',
 #      text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Sperrung, voraussichtlich bis Mitte September 2025',
        text  => 'Lange Str.: Bauarbeiten an der Einmündung Koppenstr., Sperrung der Fahrbahn, voraussichtlich bis Mitte Dezember 2025',
@@ -49107,7 +49111,7 @@ EOF
 # MOVED --- #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025 --- #: note: mittlerweile (Mitte September 2025) eine kurze Sperrung an der Koppenstr., aber zumindest am Sa weggeschobene Barrieren
 # REMOVED (nur noch Vorfahrt vor dem Gegenverkehr?) --- #: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt? ---
 # REMOVED ---	q4::inwork; 12238,11931 12413,11901
-#: last_checked: 2025-10-21
+#: last_checked: 2025-12-01
 #: check_frequency: 45d
 #: next_check: 2025-12-19 (Halteverbotsschilder)
 	q3::inwork 12238,11931 12413,11901
@@ -50893,16 +50897,16 @@ EOF
 EOF
      },
      { from  => 1761519600, # 2025-10-27 00:00
-       until => $isodate2epoch->("2025-12-02 23:59:59"), # 1765407599, # 2025-12-10 23:59
-       text  => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Anfang Dezember 2025',
+       until => $isodate2epoch->("2026-01-30 23:59:59"), # 1765407599, # 2025-12-10 23:59
+       text  => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Ende Januar 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
-#: source_id: viz2021:13.39202,52.52009,28.10.2025,07:00 (bis 02.12.2025)
+#: source_id: LMS-BR:388170/72 viz2021:13.39202,52.52009,28.10.2025,07:00 viz2021:13.39202,52.52009, (bis 02.12.2025) (bis 30.01.2026)
 #: last_checked: 2025-11-21 vvv
-#: next_check: 2025-12-02 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-01-30 (VIZ-Verkehrsmeldung) vvv
 Georgenstr.	q4::inwork 9441,12670 9568,12688
 Planckstr.	q4::inwork 9435,12698 9441,12670
 Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
