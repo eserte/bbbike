@@ -9090,12 +9090,12 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
        undef,
        undef,
        {
-         'data' => '#: next_check_id: GRUNEWALDSTR-2025
+         'data' => '# REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
 #: also_indoor: traffic (re-T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-11-19
+#: last_checked: 2025-12-02 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 7628,9365 7509,9337
 ',
@@ -9597,15 +9597,15 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251008
-#: source_id: viz2021:13.398,52.53495,08.10.2025,17:15 (bis 04.12.2025)
+#: source_id: LMS-BR:386091/72 viz2021:13.398,52.53495,08.10.2025,17:15 viz2021:13.398,52.53495, (bis 04.12.2025) (bis 06.01.2026)
 #: note: etwa 50m gesperrt, Umwege
 	q4::inwork 9800,14306 9938,14356
 ',
          'from' => 1759935291,
          'id' => 4462,
-         'text' => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, bis Anfang Dezember 2025',
+         'text' => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, 8.10.2025 bis Anfang Januar 2026',
          'type' => 'handicap',
-         'until' => 1764889199
+         'until' => 1767740399
        },
        undef,
        undef,

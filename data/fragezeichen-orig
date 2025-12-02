@@ -1429,7 +1429,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id: viz2021:13.487447,52.556905,05.10.2022,07:00 (Kabelarbeiten, bis 9.12.2022) (bis 13.1.2023) (bis 15.2.2023) (inaktiv)
 #: source_id: viz2021:13.48576,52.555908,24.04.2025,07:00 (Straßenarbeiten, bis 16.05.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:m4#HIM_FREETEXT_297553 (parallele Gleisbauarbeiten, bis 2025-11-30)
-#: source_id: bvg2024:m4#5c1204dc-e817-4dc2-95b0-431bad289cd6 (bis 2025-12-14)
+#: source_id[inactive]: bvg2024:m4#5c1204dc-e817-4dc2-95b0-431bad289cd6 (bis 2025-12-14)
 #: source_id: bvg2024:m4#4de79670-2bb7-4c7d-940b-3ad8e3fefa9c (bis 2025-12-14) (doppelt?)
 #: last_checked: 2025-11-10 (mapillary)
 #: check_frequency: 30d
@@ -3748,13 +3748,14 @@ Weißenhöher Str./Arno-Philippsthal-Str.: Zebrastreifen geplant	?::projected 2063
 #### END TK-Tiefbau-Liste
 # 
 #### BEGIN Zebrastreifen (MoPo-Liste)
+#: next_check_id: HANNOVERSCHE-2025
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (Umsetzung noch 2022)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/16-neue-zebrastreifen_a340070
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/infrastruktur/bau-von-querungshilfen/ (zurzeit in Ausführung, Stand April 2025)
 #: last_checked: 2025-11-25 (mapillary) (nichts zu sehen, trotz angeblicher Ausführung)
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-12-31
+#: next_check: 2026-01-10 (Verkehrsmeldung)
 Hannoversche Straße/Hessische Straße: Zebrastreifen geplant	?::projected 8770,13567 8775,13606 8799,13641
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10195 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10366 --- #: next_check: 2022-09-30 --- Titiseestraße/Waldshuter Zeile: Zebrastreifen geplant	?::projected 5493,22596 5484,22564 5473,22536
 #### END Zebrastreifen (MoPo-Liste)
@@ -7710,7 +7711,7 @@ Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_33_2153_2200_online.pdf (Teileinziehung)
 #: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
 #: osm_watch: note 5075443 1
-#: last_checked: 2025-12-01 (Durchfahrt-verboten-Schild steht)
+#: last_checked: 2025-12-02 (Durchfahrt-verboten-Schild steht)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache)
 #: next_check: 2025-12-12 (Halteverbotsschilder)
@@ -13208,10 +13209,10 @@ Kienitz - Sophienthal: Qualität?	? 80907,29110 80893,28847 80446,27917
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
 Letschin - Zechin: Qualität?	? 75109,27486 76529,27017 77571,26432 78633,25880 78680,25852 80792,24712 81319,24240 81421,24089 81443,23869
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
-#: source_id: LS/221-F/25/007 (Deckenerneuerung, mit Sperrung evtl. auch für Radverkehr (nicht in temp blockings eingetragen), bis 30.09.2025) (bis 30.11.2025) (inaktiv)
+#: source_id: LS/221-F/25/007 (Deckenerneuerung, mit Sperrung evtl. auch für Radverkehr (nicht in temp blockings eingetragen), bis 30.09.2025) (bis 30.11.2025) (inaktiv) (bis 12.12.2025)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-11-2025-l334-oe-letschin-information-zu-verkehrsfreigabe
 #: also_indoor: traffic (G,H)
-#: next_check: 2025-12-10 (ls brb)
+#: next_check: 2025-12-12 (Verkehrsmeldung)
 Letschin - Gusow: Qualität?	? 75060,27955 75109,27486 75093,27355 75140,27248 74713,26322 74762,26048 74750,26030 74704,25946 74496,25623 74170,25070 74025,23525 74469,22985 74591,22796 74571,22579 74310,22157 74180,21872
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
 Gusow - Zechin: Qualität?	? 74469,22985 75236,22927 76160,23229 77038,22882 77999,23404 79725,23213 80636,23136 81767,23337

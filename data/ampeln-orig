@@ -6,6 +6,12 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: HANNOVERSCHE-2025
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
+#: next_check: 2026-01-10
+#: valid: -20260110
+Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
+# 
 #: source_id: LMS-BR:364250/72 viz2021:13.43553,52.42484, (bis 31.05.2026)
 #: note: Anforderungsampel für Radfahrer auf dem Radweg (der ab Bauhüttenweg benutzungspflichtig geworden ist) Richtung Süden
 #: last_checked: 2025-11-29
@@ -18,7 +24,7 @@ Buckower Damm: Gegenverkehrsregelung	X::inwork::alternating 12712,2378
 #: source_id: LMS-BR:386895/72 viz2021:13.45883,52.51144,16.10.2025,07:00 viz2021:13.45883,52.51144, (bis 02.12.2025) (bis 31.12.2025)
 #: osm_watch: note 4669838 3
 #: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
-#: last_checked: 2025-12-01
+#: last_checked: 2025-12-02
 #: next_check: 2025-12-31
 #: valid: -20251231
 Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::inwork::alternating 14127,11811

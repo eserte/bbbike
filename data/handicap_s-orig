@@ -17,7 +17,7 @@
 #: osm_watch: note 5075430 1
 #: osm_watch: way id="1379292888" version="1"
 #: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
-#: last_checked: 2025-12-01
+#: last_checked: 2025-12-02
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache)
 #: next_check: 2025-12-12 (Halteverbotsschilder)
@@ -30,12 +30,13 @@ Simplonstr.: Absperrungen	q3::inwork 14181,11434 14254,11377
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php
 #: osm_watch: note 4919919 6
 #: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
-#: last_checked: 2025-12-01 vvv
+#: last_checked: 2025-12-02 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2025-12-12 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache) vvv
 Simplonstr.: Absperrungen	q4::inwork 13996,11631 13992,11605 14031,11569
-Gabriel-Max-Str.: Absperrungen	q4::inwork 14065,11605 14049,11553
+#: note: hier können die Absperrungen weggeschoben sein
+Gabriel-Max-Str.: Absperrungen	q3::inwork 14065,11605 14049,11553
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
