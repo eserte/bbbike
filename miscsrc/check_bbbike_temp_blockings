@@ -16,6 +16,7 @@ package BBBike::check_bbbike_temp_blockings;
 
 use strict;
 use vars qw(@temp_blocking);
+use v5.10.0; # ?<...>
 use FindBin;
 use Data::Dumper qw(Dumper);
 use Getopt::Long;
@@ -55,6 +56,31 @@ my $file = $temp_blockings_pl;
 my $yaml_file = $temp_blockings_yml;
 
 my $longest_file_length;
+
+my %german_month_to_num = qw(
+    Januar 1
+    Februar 2
+    März 3
+    April 4
+    Mai 5
+    Juni 6
+    Juli 7
+    August 8
+    September 9
+    Oktober 10
+    November 11
+    Dezember 12
+);
+my $german_month_rx = '(?:' . join('|', map { quotemeta } keys %german_month_to_num) . ')';
+$german_month_rx = qr{$german_month_rx};
+
+my %german_ranges = (
+    'Anfang' => [1,10],
+    'Mitte'  => [10,20],
+    'Ende'   => [20,31],
+);
+my $german_ranges_rx = '(?:' . join('|', map { quotemeta} keys %german_ranges) . ')';
+$german_ranges_rx = qr{$german_ranges_rx};
 
 sub process {
     local @ARGV = @_;
@@ -179,13 +205,36 @@ sub run_checks {
 	# From here: checks only for future blockings
 	
 	# timestamp plausibility
-	if (!$o->{dont_check_date} && $o->{text} =~ m{(\d+)\.(\d+)\.(20\d+).*?(\d+)\.(\d+)\.(20\d+)}) {
+	if (!$o->{dont_check_date} && $o->{text} =~ m{
+							 (?:
+							     (?<from_gerdayrange>$german_ranges_rx)\b\s*
+							 |   (?<from_d>\d+)\.
+							 )
+							 (?:
+							     \s*(?<from_germonth>$german_month_rx)\s*
+							 |   (?<from_m>\d+)\.
+							 )
+							 (?<from_y>20\d+)
+							 .*?
+							 (?:
+							     (?<until_gerdayrange>$german_ranges_rx)\b\s*
+							 |   (?<until_d>\d+)\.
+							 )
+							 (?:
+							     \s*(?<until_germonth>$german_month_rx)\s*
+							 |   (?<until_m>\d+)\.
+							 )
+							 (?<until_y>20\d+)
+						 }x) {
 	    # pre/postwarn_days: handle possible mismatch between
 	    # dates in text and dates in from/until fields
 	    my $prewarn_days = defined $o->{prewarn_days} ? $o->{prewarn_days} : 1;
 	    my $postwarn_days = defined $o->{postwarn_days} ? $o->{postwarn_days} : 1;
-	    my $from_text  = sprintf "%04d-%02d-%02d", $3,$2,$1;
-	    my $until_text = sprintf "%04d-%02d-%02d", $6,$5,$4;
+	    my $from_day_range  = defined $+{from_gerdayrange}  ? $german_ranges{$+{from_gerdayrange}}  : undef;
+	    my $until_day_range = defined $+{until_gerdayrange} ? $german_ranges{$+{until_gerdayrange}} : undef;
+	    my $from_m  = defined $+{from_germonth}  ? $german_month_to_num{$+{from_germonth}}  : $+{from_m};
+	    my $until_m = defined $+{until_germonth} ? $german_month_to_num{$+{until_germonth}} : $+{until_m};
+
 	    my($from_field, $from_and_one_day_field) = ('', '');
 	    if (defined $o->{from}) {
 		$from_field  = strftime "%F", localtime $o->{from};
@@ -196,13 +245,34 @@ sub run_checks {
 		$until_field = strftime "%F", localtime $o->{until};
 		$until_and_one_day_field = strftime "%F", localtime $o->{until} - 86400 * $postwarn_days; # day before
 	    }
+
 	    my $die_text;
-	    if ($from_text ne $from_field && $from_text ne $from_and_one_day_field) {
-		$die_text = "from date mismatch: $from_text vs. $from_field and $from_and_one_day_field in " . Dumper($o);
+	    if (defined $from_day_range) {
+		my $from_text_start = sprintf "%04d-%02d-%02d", $+{from_y},$from_m,$from_day_range->[0]; # XXX can't cope with prewarn days
+		my $from_text_end   = sprintf "%04d-%02d-%02d", $+{from_y},$from_m,$from_day_range->[1];
+		if ($from_field lt $from_text_start || $from_field gt $from_text_end) {
+		    $die_text = "from date mismatch: $from_text_start..$from_text_end vs. $from_field in" . Dumper($o);
+		}
+	    } else {
+		my $from_text  = sprintf "%04d-%02d-%02d", $+{from_y},$from_m,$+{from_d};
+		if ($from_text ne $from_field && $from_text ne $from_and_one_day_field) {
+		    $die_text = "from date mismatch: $from_text vs. $from_field and $from_and_one_day_field in " . Dumper($o);
+		}
 	    }
 	    my $dont_check_end = $o->{text} =~ m{\b(?:evtl\.|eventuell) wird die (?:Sperrung|Baustelle|Einbahnstraßenregelung) verlängert};
-	    if (!$dont_check_end && $until_text ne $until_field && $until_text ne $until_and_one_day_field) {
-		$die_text = "until date mismatch: $until_text vs. $until_field and $until_and_one_day_field in " . Dumper($o);
+	    if (!$dont_check_end) {
+		if (defined $until_day_range) {
+		    my $until_text_start = sprintf "%04d-%02d-%02d", $+{until_y},$until_m,$until_day_range->[0];
+		    my $until_text_end   = sprintf "%04d-%02d-%02d", $+{until_y},$until_m,$until_day_range->[1]; # XXX can't cope with postwarn days
+		    if ($until_field lt $until_text_start || $until_field gt $until_text_end) {
+			$die_text = "until date mismatch: $until_text_start..$until_text_end vs. $until_field in" . Dumper($o);
+		    }
+		} else {
+		    my $until_text = sprintf "%04d-%02d-%02d", $+{until_y},$until_m,$+{until_d};
+		    if ($until_text ne $until_field && $until_text ne $until_and_one_day_field) {
+			$die_text = "until date mismatch: $until_text vs. $until_field and $until_and_one_day_field in " . Dumper($o);
+		    }
+		}
 	    }
 	    if ($die_text) {
 		my $suggestion_text;

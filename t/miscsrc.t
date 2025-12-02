@@ -113,6 +113,8 @@ for my $f (@files) {
 		       |  fragezeichen2org\.pl
 		       |  mudways-enriched-to-handicap\.pl
 		       |  temp_blockings_tasks
+		       |  check_bbbike_temp_blockings
+		       |  mapillary-v4-fetch
 		       |  VMZTool\.pm
 		       )$}x && $] < 5.010;
 	myskip "$f works only with perl >= 5.14.0", 1
