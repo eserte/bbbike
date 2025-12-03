@@ -8,8 +8,12 @@
 # 
 #: next_check_id: HANNOVERSCHE-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
-#: next_check: 2026-01-10
-#: valid: -20260110
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
+#: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 (bis 02.01.2026)
+#: last_checked: 2025-12-03
+#: next_check: 2026-01-02
+#: valid: -20260102
 Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
 # 
 #: source_id: LMS-BR:364250/72 viz2021:13.43553,52.42484, (bis 31.05.2026)
@@ -22,7 +26,7 @@ Buckower Damm: Gegenverkehrsregelung	X::inwork::alternating 12712,2378
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251015 (bis Anfang Dez 2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3byu65n322r
 #: source_id: LMS-BR:386895/72 viz2021:13.45883,52.51144,16.10.2025,07:00 viz2021:13.45883,52.51144, (bis 02.12.2025) (bis 31.12.2025)
-#: osm_watch: note 4669838 3
+#: osm_watch: note 4669838 4
 #: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
 #: last_checked: 2025-12-02
 #: next_check: 2025-12-31
@@ -220,20 +224,6 @@ Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
 # 
 # REMOVED --- #: note: außerdem laut VIZ: Michaelkirchplatz/Heinrich-Heine-Platz (Mitte) Kreuzung Legiendamm: Kanalbauarbeiten, Gegenverkehrsregelung mit Baustellenampel, Anbindungen Legiendamm und nördlicher Michaelkirchpatz gesperrt, vom 15.10.2024 11:11 bis 28.10.2024 17:00 (aber als Radfahrer kann man die Ampel zum Überqueren nutzen) --- #: source_id: viz2021:13.41782,52.506594,15.10.2024,11:11 (bis 28.10.2024) (inaktiv) --- #: last_checked: 2024-10-15 (mapillary) --- #: next_check: 2024-10-28 --- #: valid: -20241028 --- Michaelkirchplatz: Gegenverkehrsregelung	X::inwork::alternating 11349,11227
 # 
-#: next_check_id: MARKGRAFEN-2025
-#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697,15.01.2025,13:00 (bis 23.04.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697,09.09.2025,12:00 (bis 30.10.2025) (inaktiv)
-#: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
-#: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 soll hier eine neue Ampel entstehen)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11843 (Anfrage)
-#: by: https://entwicklungsstadt.de/gefaehrliche-kreuzung-in-kreuzung-rudi-dutschke-strasse-soll-sicherer-werden/
-#: note: außerdem Anforderungsampel für querende Fußgänger
-#: last_checked: 2025-11-21
-#: next_check: 2025-11-27 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20250521
-Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 9751,11243
-# 
 # REMOVED --- #: next_check_id: RING-2025
 # REMOVED --- #: source_id: viz2021:13.36206,52.4473,24.07.2024,10:00 (bis 25.07.2025) (inaktiv) (bis 25.07.2025) (inaktiv)
 # REMOVED --- #: source_id: viz2021:13.363257,52.446918,24.07.2024,10:00 (bis 25.07.2025) (inaktiv)
@@ -246,8 +236,9 @@ Rudi-Dutschke-Str./Markgrafenstr.: Gegenverkehrsregelung	X::inwork::alternating 
 # REMOVED --- Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 # 
 #: next_check_id: PERLEBERGER-2024
-#: last_checked: 2025-08-13 (mapillary)
-#: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-12-03
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
 # REMOVED (stehen noch, sind aber ausgeschaltet, wohl dauerhaft) --- #: next_check_id: OSTEND-2024 --- #: last_checked: 2024-11-06 vvv --- #: next_check: 2024-11-03 vvv --- #: valid: -20241103 vvv --- An der Wuhlheide/Rathenaustr.: Baustellenampel	X::inwork 19245,6379 --- An der Wuhlheide/Steffelbauerstr.: Baustellenampel östlich der Einmündung	F::inwork 19594,6155 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
@@ -375,7 +366,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
-#: last_checked: 2025-11-25 (mapillary)
+#: last_checked: 2025-12-03
 #: check_frequency: 180d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	X::inwork 7873,12927
@@ -388,7 +379,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-10-31
+#: last_checked: 2025-12-03
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -615,7 +606,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2025-11-25
+#: last_checked: 2025-12-03
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
@@ -1567,7 +1558,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2025-10-31
+#: last_checked: 2025-12-03
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 	F::inwork 8096,11393
@@ -4351,7 +4342,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="7041133991" version="2"
 #: osm_watch: note 4938354 1
 #: note: Anforderungsampel
-#: last_checked: 2025-11-12
+#: last_checked: 2025-12-03
 #: check_frequency: 120d
 #: next_check: 2025-12-26 (VIZ-Verkehrsmeldung)
 	X::inwork 8250,14672
@@ -4504,6 +4495,8 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 	X 14379,7372
 	X 14323,7403
 # 
+#: historical_note: permanente Ampel ab Nov/Dez 2025
+	X 9751,11243
 #: section ^^^
 ################################################################################
 #: section: Potsdam vvv

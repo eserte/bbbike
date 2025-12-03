@@ -10,19 +10,6 @@
 # 
 ### Friedrichshain ###
 # 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_14_0921_0992_online.pdf
-#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12003 (Realisierung des Teilgebietes C: 2025)
-#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12063 (Vorlage zur Kenntnisnahme)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_33_2153_2200_online.pdf (Teileinziehung)
-#: osm_watch: note 5075430 1
-#: osm_watch: way id="1379292888" version="1"
-#: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
-#: last_checked: 2025-12-02
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache)
-#: next_check: 2025-12-12 (Halteverbotsschilder)
-Simplonstr.: Absperrungen	q3::inwork 14181,11434 14254,11377
-# 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12003 (Realisierung des Teilgebietes C: 2025)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_34_2201_2272_online.pdf (Teileinziehung)
@@ -30,11 +17,12 @@ Simplonstr.: Absperrungen	q3::inwork 14181,11434 14254,11377
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php
 #: osm_watch: note 4919919 6
 #: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
-#: last_checked: 2025-12-02 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2025-12-12 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache) vvv
-Simplonstr.: Absperrungen	q4::inwork 13996,11631 13992,11605 14031,11569
+#: note: hier können die Absperrungen weggeschoben sein
+Simplonstr.: Absperrungen	q3::inwork 13996,11631 13992,11605 14031,11569
 #: note: hier können die Absperrungen weggeschoben sein
 Gabriel-Max-Str.: Absperrungen	q3::inwork 14065,11605 14049,11553
 #: next_check ^^^
@@ -59,7 +47,7 @@ Gabriel-Max-Str.: Absperrungen	q3::inwork 14065,11605 14049,11553
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-11-28
+#: last_checked: 2025-12-03
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -67,7 +55,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # 
 #: next_check_id: TRAM21-2025
 #: source_id: viz2021:13.463751,52.510709,22.11.2025,08:00 (bis 14.12.2025)
-#: last_checked: 2025-12-01 vvv
+#: last_checked: 2025-12-03 vvv
 #: next_check: 2025-12-14 vvv
 #: valid: 20251122-20251214 vvv
 #: note: Vorfahrtsstraßenregelung über Gryphiusstr. - Krossener Str.
@@ -113,7 +101,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="24"
 #: osm_watch: way id="1072662717" version="28"
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -157,30 +145,6 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 # REMOVED (fertig) --- #: by: https://www.openstreetmap.org/note/3677860 --- #: also_indoor: traffic (G,H[falsch],B,W) --- #: last_checked: 2023-07-15 --- #: check_frequency: 14d --- Wühlischstr.: Bauarbeiten an der Einmündung Boxhagener Str., Fahrbahn gesperrt	q4::inwork 14759,11339 14771,11345
 # REMOVED (fertig) --- #: next_check_id: NIEMANN-2023 --- #: by: https://nitter.cz/VIZ_Berlin/status/1673932919125995523#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnpzQkhnQVhzQUFlekE3LmpwZw== --- #: XXX Bauarbeiten dauern möglicherweise bis November 2023 (Halteverbotsschilder) --- #: XXX alten handicap-Eintrag in der Niemannstr. wieder aktivieren bzw. valid-Direktive anpassen --- #: source_id: viz2021:13.460598,52.507475,28.06.2023,07:00 (bis 10.11.2023) (bis 29.12.2023) --- #: also_indoor: traffic (G[falsch],H[falsch],B,W) vvv --- #: last_checked: 2023-11-24 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-12-29 vvv --- #: valid: -20231229 vvv --- Seumestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14305,11514 14254,11377 --- Niemannstr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14254,11377 14211,11229 --- Haasestr.: Bauarbeiten vor der Kreuzung Simplonstr., Abschnitte der Fahrbahn gesperrt, Bordsteine	q3::inwork 14286,11186 14328,11320 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: also_indoor: traffic (G,W) --- #: last_checked: 2023-05-11 --- #: check_frequency: 7d --- Modersohnstr.: einige Meter der Fahrbahn Richtung Süden wegen Bauarbeiten gesperrt	q2::inwork; 14181,11434 14134,11272
-# 
-#: by: https://officehome.de/projekt/pandion-officehome-ostkreuz-campus-b (Fertigstellung Campus B Mitte 2024 (Campus A ein Jahr später?)) (wurde mittlerweile umbenannt)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11263 (Antrag: nach Ende des Bauvorhabens zu einem Rad/Fußweg umbauen)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ostkreuz-campus.1015/page-3#post-22544
-#: by: https://officehome.de/projekt/pandion-officehome-zinc
-#: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=760470#post760470
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11534 (Einwohneranfrage)
-#: by: https://officehome.de/news/officehome-ostkreuz-campus-feiert-hoffest
-#: by: https://entwicklungsstadt.de/friedrichshain-energie-unternehmen-enpal-bezieht-erstes-gebaeude-im-ostkreuz-campus/ (Spätsommer 2025?)
-#: by: https://entwicklungsstadt.de/ostkreuz-campus-teilprojekt-officehome-pollux-auf-der-zielgeraden/
-#: by: https://entwicklungsstadt.de/ostkreuz-campus-waechst-neuer-mieter-im-officehome-pollux/ (Fertigstellung im August 2025)
-#: by: https://entwicklungsstadt.de/bueroensemble-pollux-am-ostkreuz-kurz-vor-der-fertigstellung/
-# REMOVED (mittlerweile ist der neue westliche Gehweg fertig) --- #: note: der übriggebliebene Gehweg ist sehr holprig und stellenweise schmal
-#: XXX (Wohncontainer wurden mittlerweile abgebaut, Straße muss noch gemacht werden
-#: osm_watch: way id="936801541" version="6"
-#: osm_watch: way id="36987812" version="18"
-#: also_indoor: traffic (W,G)
-#: last_checked: 2025-11-30
-#: check_frequency: 10d
-# REMOVED --- #: next_check: 2025-09-01
-# REMOVED --- Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Hochbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
-# REMOVED --- Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn wegen Tiefbauarbeiten gesperrt	q4::inwork 14541,10735 14490,10610
-Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn noch nicht freigegeben	q4::inwork 14541,10735 14490,10610
-# 
 # REMOVED (fertig) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11888 (Anfrage) --- #: note: zwischenzeitlich war an der Frankfurter Allee eine Fahrgasse frei (zumindest für Radfahrer benutzbar), mittlerweile wieder über die gesamte Fahrbahnbreite abgesperrt --- #: also_indoor: traffic (none) --- #: last_checked: 2025-06-08 --- #: check_frequency: 10d --- Kinzigstr.: Bauarbeiten an der Einmündung Frankfurter Allee, Fahrbahn gesperrt	q3::inwork 14621,12168 14589,11975
 # REMOVED (hier mittlerweile offen) --- Kinzigstr.: Bauarbeiten nördlich und südlich des Kreuzungsbereichs Scharnweberstr., Fahrbahn gesperrt	q3::inwork 14589,11975 14475,11778 --- Schwarnweberstr.: Einbahnstraßenregelung	q3::inwork; 14589,11975 14675,11964 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0223_barrierefrei.pdf (20.2.2023 - 23.4.2023) --- #: by: https://viz.berlin.de/2023/02/verkehrsvorschau-200223/ (bis 24.4.2023) --- #: source_id: bvg2021:16#BVG316317_0 --- #: source_id: bvg2021:16#BVG318556_0 (bis 29.4.4023) --- #: note: siehe auch https://www.openstreetmap.org/note/3474648 --- #: XXX evtl. ist auch die Travestr. betroffen --- #: last_checked: 2023-04-18 --- #: next_check: 2023-04-24 --- #: valid: -20230429 --- Müggelstr./Travestr.: Gleisbauarbeiten	q4::inwork 14965,11924 14901,11808 14836,11842
@@ -196,11 +160,14 @@ Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn noch nicht fre
 #: by: https://www.berliner-zeitung.de/mensch-metropole/friedrichshain-ploetzlich-wurde-es-hell-was-passiert-eigentlich-im-berliner-ostbahnhof-li.418658 (bis 2026)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bahn-beendet-dachsanierung-am-ostbahnhof_a432168
 #: by: https://www.tagesspiegel.de/berlin/nach-15-jahren-sanierung-am-berliner-ostbahnhof-bau-einschrankungen-fur-fahrgaste-sollen-am-freitag-enden-13520704.html (bis Ende 2026)
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=789030#post789030 (3. BA bis Ende 2027)
+#: by: https://www.rbb24.de/panorama/beitrag/2025/12/ostbahnhof-berlin-sanierung-abgeschlossen.html
+#: by: https://www.entwicklungsstadt.de/sanierung-abgeschlossen-berliner-ostbahnhof-nach-15-jahren-bauzeit-fertig/
 #: XXX Wann sind die Bauarbeiten beendet?
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-12-01 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -346,7 +313,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -385,8 +352,9 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: next_check_id: PEKINGERPLATZ-2025
 #: note: laut Baustellenschild bis 01/2026
+#: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-12 vvv
+#: last_checked: 2025-12-03 (traffic) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 vvv
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Umwege, Gehweg für Radfahrer frei	q3::inwork; 7000,14832 6929,14845 6849,14831
@@ -860,10 +828,11 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
 #: also_indoor: traffic (T,re-G,ex-H,re-W)
-#: last_checked: 2025-11-24 (osm, traffic)
-#: check_frequency: 10d (traffic)
+#: last_checked: 2025-12-03
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
-Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
+Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
+# REMOVED (Fahrbahn hier frei in beide Richtungen) --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6992,14251 7123,14367
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
 #: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834
@@ -910,17 +879,17 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="28"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-11-21 (osm)
+#: last_checked: 2025-12-03
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
-#: next_check_id: MUSEUMDERMODERNE-2021
-#: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=759366#post759366
-#: last_checked: 2025-05-29 (architektur-urbanistik)
-#: check_frequency: 180d
-#: next_check: 2027-01-01
-Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 7952,11336 7934,11275
+# REMOVED (mittlerweile ist die Fahrbahn komplett gesperrt, kein Bürgersteig) --- #: next_check_id: MUSEUMDERMODERNE-2021
+# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=759366#post759366
+# REMOVED --- #: last_checked: 2025-05-29 (architektur-urbanistik)
+# REMOVED --- #: check_frequency: 180d
+# REMOVED --- #: next_check: 2027-01-01
+# REMOVED --- Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 7952,11336 7934,11275
 # 
 # REMOVED (offen) --- #: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant) --- #: by: https://www.tagesspiegel.de/berlin/spaeter-als-geplant-neue-nationalgalerie-in-berlin-wird-erst-mitte-august-2021-eroeffnet/26645770.html (Eröffnung Mitte August 2021) --- # REMOVED --- #: XXX laut Plakatwerbung wird am 22.8.2021 eröffnet --- #: XXX Straße fertig asphaltiert, aber noch durch Bauzäune abgesperrt --- #: last_checked: 2022-03-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2021-08-22 --- Neue Nationalgalerie: Bauzäune, Umfahren über Gehweg (Bordstein) möglich	q3::inwork 7874,11293 7828,11133
 # REMOVED (eigentlich keine Behinderungen durch die Bauarbeiten) --- #: next_check_id: MUSEUMDERMODERNE-2021 --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam) --- #: last_checked: 2021-12-29 --- #: check_frequency: 90d --- Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderungen	q3::inwork 7934,11275 7965,11380
@@ -4776,8 +4745,6 @@ Wuhlewanderweg: enge Brücke	q2 22349,17302 22364,17323
 Bergmannstr.: Tempo 10	q3+ 9505,9306 9632,9280 9689,9266 9753,9252
 # REMOVED --- #: next_check_id: NIEMANN-2023 --- #: XXX valid-Direktive anpassen --- #: next_check: 2023-12-29 --- #: valid: 20231229-
 #: XXX_prog mit Anhänger aber ggfs. q2
-Niemannstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14254,11377 14211,11229
-#: XXX_prog mit Anhänger aber ggfs. q2
 Helmerdingstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14468,11203 14442,11101
 #: XXX_prog mit Anhänger aber ggfs. q2
 Matkowskystr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0- 14531,11142 14513,11075
@@ -5201,6 +5168,10 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1+ 11635,12398 11845,12292
 # 
 Scharnweberstr.: Fußgängerzone für Radfahrer frei	q1+ 14675,11964 14783,11949
+Simplonstr.: Fußgängerzone für Radfahrer frei	q1+ 14254,11377 14181,11434
+#: XXX_prog mit Anhänger aber ggfs. q2
+#: note: außerdem: Bodenschwellen, allerdings nur für Anhänger relevant, q0-
+Niemannstr.: Fußgängerzone für Radfahrer frei	q1+ 14254,11377 14211,11229
 # 
 Maxstr.: Fußgängerzone für Radfahrer frei	q1+ 7781,15804 7738,15838
 # 
@@ -5542,6 +5513,10 @@ Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos
 #: note: entweder den Bordstein zur Busspur nehmen, oder bbbbbbis zur Lindenstr. vorfahren
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): einige Fußgänger, ggfs. Bordstein	q3 21163,11172 21137,11200
 # 
+südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
+# 
+(Putlitzstr. - Quitzowstr.): einige Fußgänger, flache Bordsteine	q2 6245,14194 6245,14204 6246,14228
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -5872,16 +5847,7 @@ Retzdorffpromenade: Fußgänger	q2 4886,6819 4985,6818
 Albestr.: enge Straße	q0- 5419,7464 5448,7436 5637,7435 5811,7433
 #: by: Michael Dinter:
 Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
-#: by: Wilfried Flade:
 # 
-#: next_check_id: KANZLERPARK-2024
-#: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
-#: XXX nach den Bauarbeiten folgenden Eintrag reaktivieren: südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623
-#: last_checked: 2025-11-19
-#: check_frequency: 45d
-#: next_check: 2026-02-28
-südliches Spreeufer: Engstelle und Umwege zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
-südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 #: by: Julia (jbrauch):
 #: note: wobei der südliche Bordstein mit etwas Umweg umfahren werden kann und am nördlichen Ende eine Bordsteinabsenkung existiert
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
@@ -6174,7 +6140,7 @@ Bootshausweg: Fußgänger	q1 -1661,16841 -1667,16828 -1675,16813
 Karl-Pokern-Str.: spielende Kinder	q0- 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
 # 
 #: by: ingo [AM]
-(Plantagenstr. - Ruheplatzstr.): Gehweg, Fußgänger	q4 7595,15596 7540,15566
+(Plantagenstr. - Ruheplatzstr.): Gehweg, Fußgänger	q4 7595,15596 7518,15605
 # 
 #: by: Andreas Püschel: vvv
 Bruno-Apitz-Str.: viele Fußgänger	q1 16423,24935 16359,24795 16304,24825 16264,24764 16131,24850

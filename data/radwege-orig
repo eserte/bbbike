@@ -257,7 +257,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2025-10-09 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 60d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -285,7 +285,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2025-10-31
+#: last_checked: 2025-12-03
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -557,7 +557,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-11-25 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1392,7 +1392,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-11-29 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 30d (neue Radverkehrsführung kommt vermutlich nicht mehr) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt+Tsp zum Ersatzneubau) vvv
@@ -1666,7 +1666,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
-#: last_checked: 2025-11-03 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-12-03
 #: check_frequency: 120d
 #: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
@@ -2293,6 +2293,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.tagesspiegel.de/berlin/wegen-bauarbeiten-in-mitte-schifffahrt-unter-muhlendammbrucke-zwei-monate-unterbrochen-13036282.html (Fertigstellung 2028)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/spree-unter-muehlendammbruecke-zwei-monate-gesperrt_a434285
 #: by: https://www.tagesspiegel.de/berlin/gefahr-von-spannstahlbruchen-einsturzgefahrdete-berliner-muhlendammbrucke-soll-ab-mai-2026-neu-gebaut-werden-14994923.html
+#: by: https://www.entwicklungsstadt.de/einsturzgefahr-der-muehlendammbruecke-berlin-treibt-neubau-ab-2026-voran/
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/muehlendammbruecke/
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029) (inaktiv)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
@@ -2402,7 +2403,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
-#: by: https://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 4. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2027 - 4. Quartal 2027)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
@@ -2411,7 +2412,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
 #: last_checked: 2025-11-22 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2026-12-31 (infravelo) vvv
+#: next_check: 2027-12-31 (infravelo) vvv
 asphaltiert	RW2; 17681,7589 17611,7690
 provisorische geschützte Radspur	RW3; 17611,7690 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3074,7 +3075,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-11-25 vvv
+#: last_checked: 2025-12-03 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3130,7 +3131,7 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX nach den Bauarbeiten wiederherstellen: RW3;
 #: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-11-25
+#: last_checked: 2025-12-03
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 	RW2; 12543,11521 12645,11673
@@ -3233,7 +3234,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3254,7 +3255,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -8324,7 +8325,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 90d
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
 asphaltiert	RW1; 13565,11492 13588,11490
@@ -9225,7 +9226,7 @@ asphaltiertes Straßenbahnkap	RW1; 12474,16443 12399,16479
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,705935#msg-705935
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-20 Uhr	RW5; 12574,1866 12817,2031
 	RW2;RW8 9505,9306 9632,9280 9689,9266 9753,9252
-Tempo 10	RW6;RW6 14254,11377 14211,11229
+# REMOVED (früher, bis Nov 2025) --- Tempo 10	RW6;RW6 14254,11377 14211,11229
 Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
@@ -9654,4 +9655,8 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 	RW1; 2624,1704 2824,1273
 # 
 	RW7;RW7 10306,9640 10429,9514 10580,9361 10564,9292
+# 
+	RW6;RW6 8278,11257 8280,11296 8253,11306
+# 
+	RW7;RW7 8245,16064 8346,16283 8420,16365
 # 

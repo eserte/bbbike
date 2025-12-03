@@ -380,7 +380,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2- 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2025-11-25
+#: last_checked: 2025-12-03
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -390,7 +390,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="29"
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -484,7 +484,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -2024,7 +2024,7 @@ Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093
 # 
 #: historical_note: früher (bis 2022/2023?) Kopfsteinpflaster, Q2
 #: note: einer der beiden Parkstreifen ist noch gepflastert (südlich Schönstedtstr. der westliche, nördlich der östliche)
-Uferstr.: Asphalt	Q0 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
+Uferstr.: Asphalt	Q0 8420,16365 8346,16283 8245,16064 8194,15960 8140,15859
 # 
 Oderstr.: Kopfsteinpflaster	Q2- 15106,11598 15043,11637 14946,11697
 Oderstr.: asphaltiert	Q0 14946,11697 14858,11744 14798,11777
@@ -7004,7 +7004,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20072,13070 20068,13036 20048,12830
 Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berliner-woche.de/friedrichsfelde/c-verkehr/strassenbelag-in-ordnung-bringen_a407286 (Antrag von Februar 2024)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
-#: osm_watch: way id="4689097" version="33"
+#: osm_watch: way id="4689097" version="34"
 #: XXX Wird hier die Fahrbahn saniert?
 #: last_checked: 2025-11-26
 #: check_frequency: 180d
@@ -13960,7 +13960,7 @@ Bahamasbogen: Verbundsteinpflaster	Q1+ -2759,18843 -2621,18840 -2482,18836 -2485
 #: XXX bleibt der unbefestigte Abschnitt?
 #: osm_watch: way id="993271092" version="2"
 #: priority: #C
-#: last_checked: 2025-11-10
+#: last_checked: 2025-12-03
 #: check_frequency: 120d
 (Mauerweg - Lohmühlenstr.): unbefestigt/Verbundsteinpflaster	Q2+ 13128,9726 13156,9702
 # 
@@ -14056,7 +14056,7 @@ Prenzlauer Promenade [Nebenfahrbahn]: Asphalt	Q0 11951,16914 11993,16862
 # 
 Alte Potsdamer Str.: Betonpflaster	Q0- 8280,11296 8318,11324 8375,11368 8389,11378 8481,11447 8479,11493
 # 
-Marlene-Dietrich-Platz: Kleinsteinpflaster	Q1- 8253,11306 8280,11296
+Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 8278,11257
 # 
 # REMOVED (ersetzte) --- Alte Potsdamer Str.: Kleinsteinpflaster	Q1 8389,11378 8375,11368
 # 
@@ -15437,7 +15437,7 @@ Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2756,4709 2673,4651 2545,4565 2
 #: corrected_by: mapillary, srt (gutes Verbundsteinpflaster -> ...)
 Schönstedtstr. (Gesundbrunnen): Kopfsteinpflaster	Q2 8430,15901 8338,15987 8270,16047
 #: corrected_by: mapillary (gutes Verbundsteinpflaster -> ...)
-Schönstedtstr. (Gesundbrunnen): Asphalt	Q0 8270,16047 8236,16071
+Schönstedtstr. (Gesundbrunnen): Asphalt	Q0 8270,16047 8245,16064
 Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 20315,3181 20405,3235 20597,3364 20644,3395 20718,3445
 Büchnerweg: Kopfsteinpflaster	Q2 20756,3470 20833,3519 20924,3577 21049,3657
 #: confirmed_by: srt
@@ -16519,7 +16519,7 @@ Nordmannzeile: Beton	Q0 6762,7109 6760,7147 6784,7233 6811,7266
 # 
 #: by: Mark Einig:
 #: corrected_by: srt (Asphalt -> ...)
-Bornemannstr.: Kopfsteinpflaster	Q2 8187,15965 8014,16089
+Bornemannstr.: Kopfsteinpflaster	Q2 8194,15960 8014,16089
 # 
 #: by: Peter Radeck:
 Holsteinische Str.: Asphalt	Q0 5052,9723 5067,9679 5065,9418 5053,8979
@@ -22126,7 +22126,7 @@ Masurenstr.: mäßiger Asphalt	Q1+ 10885,17469 10670,17458
 # 
 #: by: Gudrun Feix: vvv
 #: confirmed_by: Stefan Siegel, srt:
-Martin-Opitz-Str.: Kopfsteinpflaster	Q2 8236,16071 8077,16178
+Martin-Opitz-Str.: Kopfsteinpflaster	Q2 8245,16064 8077,16178
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Martin-Opitz-Str.: Asphalt	Q0 8077,16178 7987,16332
 #: by: ^^^
@@ -31322,7 +31322,7 @@ Groninger Str.: Asphalt	Q0 7393,16566 7409,16542 7415,16502
 #: confirmed_by: srt
 Groninger Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7415,16502 7433,16375 7458,16207 7474,16086
 Hochstädter Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7543,16016 7727,16223
-Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7540,15566 7627,15412
+Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7627,15412
 (Müllerstr. - Gerichtstr.): Gehwegplatten	Q0 7607,15282 7723,15417
 #: confirmed_by: srt
 Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6628,15411
@@ -31979,7 +31979,8 @@ Pannwitzstr.: schadhafter Beton	Q1- 4690,19446 4734,19618 4753,19728 4750,19881 
 #: by: Ingo [AM] vvv
 #: corrected_by: srt (removed "schlechter")
 Plantagenstr. (Wedding): Asphalt	Q0 7966,15571 7877,15581 7796,15590
-Plantagenstr. (Wedding): Kopfsteinpflaster	Q2 7796,15590 7595,15596
+#: corrected_by: srt (Q2 -> Q2-)
+Plantagenstr. (Wedding): Kopfsteinpflaster	Q2- 7796,15590 7595,15596
 #: by: ^^^
 # 
 #: by: rene carmosin [AM] vvv
@@ -33295,7 +33296,7 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3293,2218
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3141,4023
 Kreuzungsbereich asphaltiert	Q0 5390,6299
 #: by: mapillary vvv
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 8236,16071
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 8245,16064
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 8270,16047
 #: by ^^^
 Kreuzungsbereich asphaltiert	Q0 17248,11317
@@ -34372,8 +34373,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 11700,17629
 #: by: mapillary
 Einmündungsbereich mit Kleinsteinpflaster	Q1 16007,14367
 Einmündungsbereich asphaltiert	Q0 4372,12946
-Einmündungsbereich asphaltiert	Q0 8187,15965
-Kreuzungsbereich asphaltiert	Q0 8236,16071
+Einmündungsbereich asphaltiert	Q0 8194,15960
+Kreuzungsbereich asphaltiert	Q0 8245,16064
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 8270,16047
 Einmündungsbereich mit Kopfsteinpflaster	Q2 8338,15987
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 8481,16136

@@ -1328,7 +1328,7 @@ Nesselweg: Betonplatten, OK	Q1 8717,21429 8654,21327 8631,21290 8605,21248 8587,
 Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093,20379 8131,20287 8196,20096
-Uferstr.: Asphalt	Q0 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
+Uferstr.: Asphalt	Q0 8420,16365 8346,16283 8245,16064 8194,15960 8140,15859
 Oderstr.: Kopfsteinpflaster	Q2 15106,11598 15043,11637 14946,11697
 Oderstr.: asphaltiert	Q0 14946,11697 14858,11744 14798,11777
 Oderstr.: Kopfsteinpflaster	Q2 14798,11777 14710,11824 14626,11869
@@ -11740,7 +11740,7 @@ Prenzlauer Promenade [Nebenfahrbahn]: Asphalt, leichte Schäden	Q0 11843,17517 11
 Prenzlauer Promenade [Nebenfahrbahn]: mäßiger Beton	Q1 11891,17240 11951,16914
 Prenzlauer Promenade [Nebenfahrbahn]: Asphalt	Q0 11951,16914 11993,16862
 Alte Potsdamer Str.: Betonpflaster	Q0 8280,11296 8318,11324 8375,11368 8389,11378 8481,11447 8479,11493
-Marlene-Dietrich-Platz: Kleinsteinpflaster	Q1 8253,11306 8280,11296
+Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2 8253,11306 8280,11296 8278,11257
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1; 5243,18162 5301,18447 5324,18560 5345,18675
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1; 5324,18560 5301,18447 5243,18162 5225,18070
 Marathonallee: Asphalt mit leichten Rissen	Q0 818,11954 702,11929 589,11953
@@ -12481,7 +12481,7 @@ Gudvanger Str.: guter Asphalt	Q0 11567,15842 11614,15914 11641,15955 11673,16003
 Oudenarder Str.: Kopfsteinpflaster, teilweise verfugt, mit Bodenwellen	Q2 7232,16429 7282,16369 7433,16375 7746,16375
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2756,4709 2673,4651 2545,4565 2461,4556
 Schönstedtstr. (Gesundbrunnen): Kopfsteinpflaster	Q2 8430,15901 8338,15987 8270,16047
-Schönstedtstr. (Gesundbrunnen): Asphalt	Q0 8270,16047 8236,16071
+Schönstedtstr. (Gesundbrunnen): Asphalt	Q0 8270,16047 8245,16064
 Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 20315,3181 20405,3235 20597,3364 20644,3395 20718,3445
 Büchnerweg: Kopfsteinpflaster	Q2 20756,3470 20833,3519 20924,3577 21049,3657
 Badener Str.: Beton	Q0 24051,9156 23798,9263 23643,9330 23550,9369 23470,9403 23166,9549
@@ -12877,7 +12877,7 @@ Herderstr. (Steglitz): Kopfsteinpflaster	Q2 4689,6122 4472,6242
 Herderstr. (Steglitz): Beton	Q0 4472,6242 4386,6288
 Marienstr.: Asphalt	Q0 8726,12861 9042,12931
 Nordmannzeile: Beton	Q0 6762,7109 6760,7147 6784,7233 6811,7266
-Bornemannstr.: Kopfsteinpflaster	Q2 8187,15965 8014,16089
+Bornemannstr.: Kopfsteinpflaster	Q2 8194,15960 8014,16089
 Holsteinische Str.: Asphalt	Q0 5052,9723 5067,9679 5065,9418 5053,8979
 Dörfelweg: Asphalt	Q0 9730,-33 9593,-45 9507,-85
 Eisnerstr.: Asphalt	Q0 9507,-85 9653,-483 9698,-556
@@ -14824,7 +14824,7 @@ Odilostr.: Asphalt	Q0 3632,24214 3771,24241 3902,24266
 Westfalenring: mäßiger Beton	Q1 4068,406 4079,354 4066,277 4029,144 3939,109 3922,111 3837,166 3795,221 3729,324
 Täubchenstr.: Beton	Q0 -862,4542 -947,4303
 Masurenstr.: mäßiger Asphalt	Q1 10885,17469 10670,17458
-Martin-Opitz-Str.: Kopfsteinpflaster	Q2 8236,16071 8077,16178
+Martin-Opitz-Str.: Kopfsteinpflaster	Q2 8245,16064 8077,16178
 Martin-Opitz-Str.: Asphalt	Q0 8077,16178 7987,16332
 Mittelheide: Asphalt	Q0 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
 Gehrenweg: guter Beton	Q0 21868,-1674 21887,-1528 21901,-1406 21914,-1278 21930,-1159 21945,-1031 21987,-624
@@ -18222,7 +18222,7 @@ Turiner Str.: Asphalt	Q0 7354,15817 7436,15746
 Groninger Str.: Asphalt	Q0 7393,16566 7409,16542 7415,16502
 Groninger Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7415,16502 7433,16375 7458,16207 7474,16086
 Hochstädter Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7543,16016 7727,16223
-Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7540,15566 7627,15412
+Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7627,15412
 (Müllerstr. - Gerichtstr.): Gehwegplatten	Q0 7607,15282 7723,15417
 Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6628,15411
 Ostender Str.: Asphalt	Q0 6628,15411 6649,15427 6794,15553

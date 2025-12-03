@@ -3419,13 +3419,13 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: also_indoor: traffic (G,H,A,W,T)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: last_checked: 2025-11-20 (traffic)
+#: last_checked: 2025-12-03 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet?
 #: also_indoor: traffic (ex-T,G)
-#: last_checked: 2025-11-20 (traffic)
+#: last_checked: 2025-12-03 (traffic)
 #: check_frequency: 14d (traffic)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -5690,7 +5690,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 #: source_id: viz2021:13.452362,52.470898,21.02.2022,07:00 (bis 31.12.2022) (bis 31.1.2023) (bis 2.6.2023) (bis 31.12.2023) (bis 30.04.2024) (bis 13.05.2024) (inaktiv)
 #: source_id: viz2021:13.452181,52.471098,13.05.2024,07:00 (bis 11.12.2025) (inaktiv)
 #: source_id: viz2021:13.452222,52.471093,13.05.2024,07:00 (bis 11.12.2025) (inaktiv)
-#: source_id: viz2021:13.45047,52.47074,13.05.2024,07:00 (bis 11.12.2025)
+#: source_id: viz2021:13.45047,52.47074,13.05.2024,07:00 (bis 11.12.2025) (bis 30.07.2026)
 #: also_indoor: traffic (B,H(unvollständig),G)
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
@@ -5698,7 +5698,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 #: note: eine Fertigstellung Mitte Dezember 2025 ist unwahrscheinlich
 #: last_checked: 2025-11-27 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2025-12-11 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
 #: osm_watch: way id="31824547" version="28"
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
@@ -6107,12 +6107,12 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 # REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
 # REMOVED --- #: osm_watch: way id="1124627670" version="6" ---	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
 #: XXX Wie lange dauern die Bauarbeiten? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
-#: osm_watch: note 4806178 2
+#: osm_watch: note 4806178 3
 #: also_indoor: traffic (G,ex-T)
-#: last_checked: 2025-10-31 vvv
+#: last_checked: 2025-12-03 vvv
 	q3::inwork 8343,11133 8289,11205
 	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
-	q3::inwork 8253,11306 8232,11414
+# REMOVED (hier fertig) ---	q3::inwork 8253,11306 8232,11414
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -6683,7 +6683,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025) (inaktiv)
 #: source_id: viz2021:13.36722,52.52237, (bis 31.12.2025)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-11-25 (mapillary)
+#: last_checked: 2025-12-03
 #: check_frequency: 180d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -6967,7 +6967,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
        {
          'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024) (inaktiv)
 #: source_id: viz2021:13.432599,52.479016,01.09.2023,07:00 (bis 30.03.2026)
-#: osm_watch: way id="1207706195" version="4"
+#: osm_watch: way id="1207706195" version="5"
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: by: https://www.entwicklungsstadt.de/bund-baut-neue-bundesgeschaeftsstelle-auf-dem-vollgut-areal-in-neukoelln/ (Bezug im zweiten Quartal 2026)
@@ -7219,7 +7219,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-11-13 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -7346,7 +7346,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 # REMOVED --- #: osm_watch: way id="120633718" version="32"
 # REMOVED --- Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
 # REMOVED --- #: osm_watch[closed]: note 3816582 3
-# REMOVED --- Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8187,15965
+# REMOVED --- Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8194,15960
 # REMOVED --- #: osm_watch[closed]: note 3393893 7
 # REMOVED --- Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 # REMOVED --- # REMOVED --- #: add_fragezeichen ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -7355,7 +7355,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: osm_watch: way id="1273476153" version="2"
 #: also_indoor: traffic (G,no-T,no-H,W) vvv
 #: note: eigentlich 1s:q3
-#: last_checked: 2025-11-12
+#: last_checked: 2025-12-03
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (gesobau)
 Wiesenstr.: Einbahnstraßenregelung	q3::inwork; 8048,15829 7948,15802
@@ -7731,13 +7731,14 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
          'until' => 1769878800
        },
        {
-         'data' => '#: note: Sa-Öffnung gesehen (Tor zu, aber nicht verschlossen): 2025-07-26 13:57
+         'data' => '#: note: Sa-Öffnung gesehen (Tor zu, aber nicht verschlossen): 2025-07-26 Sat 13:57
+#: note: an einem Mi tagsüber *verschlossen*, gesehen am 2025-12-03 Wed 12:06
 	2::temp 5857,14985 5867,14993
 ',
          'from' => undef,
          'id' => 4111,
          'recurring' => 1,
-         'text' => 'Virchow-Klinikum, Eingang Sylter Str: offiziell nur Mo-Fr tagsüber ab 5 Uhr offen; kann aber auch samstags offen sein',
+         'text' => 'Virchow-Klinikum, Eingang Sylter Str: offiziell nur Mo-Fr tagsüber ab 5 Uhr offen (kann aber trotzdem verschlossen sein!); manchmal auch samstags offen',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8010,7 +8011,21 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'type' => 'gesperrt',
          'until' => 1772294400
        },
-       undef,
+       {
+         'data' => '#: by: rbb, wurde da aber mittlerweile entfernt
+#: also_indoor: traffic (re-G,ex-W,ex-B,ex-T)
+#: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
+#: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025
+# REMOVED --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31
+# REMOVED --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
+Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,10707 5072,10701
+',
+         'from' => 1764651600,
+         'id' => 4200,
+         'text' => 'Grolmanstr.: Bauarbeiten zwischen Savignyplatz und Uhlandstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
+         'type' => 'handicap',
+         'until' => 1781712000
+       },
        undef,
        undef,
        undef,
@@ -8272,27 +8287,7 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
          'type' => 'handicap',
          'until' => 1779746400
        },
-       {
-         'data' => '#: next_check_id: MARKGRAFEN-2025
-#: source_id: viz2021:13.39438,52.506948,15.01.2025,13:00 (bis 23.04.2025) (bis 21.05.2025) (bis 26.08.2025) (inaktiv)
-#: source_id: viz2021:13.39434,52.50697,21.05.2025,13:19 (bis 26.08.2025) (inaktiv) (bis 26.08.2025) (bis 09.09.2025) (inaktiv)
-#: source_id: LMS-BR:357997/72 viz2021:13.39434,52.50697, (bis 21.11.2025) (bis 27.11.2025) (inaktiv)
-#: also_indoor: traffic (G,re-T[teilweise])
-#: last_checked: 2025-12-01 (traffic) vvv
-#: check_frequency: 3d (traffic) vvv
-#: note: hier längerer Abschnitt der Fahrbahn gesperrt, Umwege erforderlich
-Markgrafenstr. südlich der Rudi-Dutschke-Str.	q4::inwork 9751,11243 9763,11148
-#: note: hier nur direkt an der Rudi-Dutschke-Str. gesperrt, dennoch ggfs. Umwege erforderlich
-Markgrafenstr. nördlich der Rudi-Dutschke-Str.	q3::inwork 9751,11243 9737,11349
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1738350510,
-         'id' => 4250,
-         'text' => 'Markgrafenstr.: Sperrung der Fahrbahn an der Rudi-Dutschke-Str., voraussichtlich bis Ende November 2025, evtl. wird die Sperrung verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8356,18 +8351,21 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
-#: last_checked: 2025-11-05
-#: check_frequency: 90d
-#: next_check: 2026-02-16 (VIZ-Verkehrsmeldung)
-	q4::inwork 22196,4847 22198,4800 22175,4730
+# REMOVED (vermutlich wieder offen?) --- Alt-Köpenick	q4::inwork 22196,4847 22198,4800 22175,4730
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22175,4730 22144,4660
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22144,4660 22138,4642 22111,4562
 # REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22093,4499
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+#: last_checked: 2025-11-05
+#: check_frequency: 90d
+#: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
+#: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
+#: also_indoor: traffic (no-G,T,H,A,no-W)
+Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 ',
          'from' => 1739702908,
          'id' => 4261,
-         'text' => 'Alt-Köpenick: Bauarbeiten, Anbindung in Höhe Freiheit gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Kietzer Str./Kirchstr.: Gleisbauarbeiten, Fahrbahn vermutlich gesperrt, voraussichtlich bis Ende August 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8410,8 +8408,8 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
 #: note: nördliches Tor offen, südliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25, 2025-03-24 17:32)
 #: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30)
-#: osm_watch: way id="207757723" version="7"
-#: osm_watch: way id="275795707" version="4"
+#: osm_watch: way id="207757723" version="8"
+#: osm_watch: way id="275795707" version="5"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
 #: last_checked: 2025-09-21 vvv
@@ -8591,7 +8589,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
-#: last_checked: 2025-11-19 (website check) vvv
+#: last_checked: 2025-12-03 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -8642,14 +8640,14 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: viz2021:13.55418,52.43793, (bis 12.12.2025)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-11-19 (traffic)
+#: last_checked: 2025-12-03 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: viz2021:13.55146,52.44, (bis 12.12.2025)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-11-19 (traffic)
+#: last_checked: 2025-12-03 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
@@ -8835,7 +8833,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-11-29 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8954,7 +8952,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: next_check_id: LYNAR-2025
 #: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
 #: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-11-20 (traffic) vvv
+#: last_checked: 2025-12-03 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-09-02 vvv
 # REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
@@ -9243,7 +9241,7 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: osm_watch: note 5038218 2
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2025-11-25
+#: last_checked: 2025-12-03
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -9295,7 +9293,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9470,11 +9468,11 @@ Spektegrabensteg	2::inwork -7228,15933 -7243,15943
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 5
+#: osm_watch: note 4801950 6
 #: osm_watch: way id="53168806" version="7"
-#: osm_watch: way id="1093001262" version="4"
+# REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2025-11-12 (noch abgesperrt)
+#: last_checked: 2025-12-03 (noch abgesperrt)
 #: check_frequency: 14d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 ',
@@ -9518,9 +9516,13 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-11-27
+#: last_checked: 2025-12-03 vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
-Corinthstr.	q4::inwork 14447,10491 14608,10409
+#: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
+Corinthstr.	q3::inwork; 14447,10491 14608,10409
+#: note: q4, weil insbesondere das Linksabbiegen umständlich und mit Umwegen verbunden ist
+Corinthstr.	q4::inwork; 14608,10409 14447,10491
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4449,
@@ -9678,29 +9680,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BOUCHE-2025
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (außerdem ein nicht terminierter 2. Bauabschnitt bis Kiefholzstraße)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027 (Beginn einen Tag später)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251213
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1617856.php (bis 28. November 2025)
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410503791/zwei-wichtige-strassenbaustellen-in-treptow-koepenick-verzoegern-sich.html
-#: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: LMS-BR:371047/72  viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025) (bis 31.01.2026)
-#: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
-#: note: laut rbb & VIZ Beginn einen Tag später
-#: last_checked: 2025-11-29 (noch immer Absperrungen)
-#: check_frequency: 7d
-# REMOVED --- #: check_frequency: 1d --- #: next_check: 2025-10-27 (Beginn der Arbeiten)
-#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
-	q4::inwork 13357,9313 13489,9456
-',
-         'from' => 1761519600,
-         'id' => 4472,
-         'text' => 'Bouchéstr.: Sanierungsarbeiten zwischen Karl-Kunger-Str. und Heidelberger Str., Sperrung der Fahrbahn, vom 28.10.2025 bis 28.11.2025, evtl. wird die Sperrung verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3f6iflglc27
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreievxmc4lkl4ix3jyzpen2xpvr2xl7frexucixqom4qs6ca4xy4jdq@jpeg (Sperrung des Kreuzungsbereichs?)
@@ -9795,14 +9775,15 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        },
        {
          'data' => '#: next_check_id: UFER-2025
-#: last_checked: 2025-11-12
+#: last_checked: 2025-12-03
 #: check_frequency: 14d
 #: next_check: 2025-12-31 (entwicklungsstadt website, infravelo)
-	q4::inwork 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
+# REMOVED (hier fertig) ---	q4::inwork 8420,16365 8346,16283 8245,16064
+	q4::inwork 8245,16064 8194,15960 8140,15859
 ',
          'from' => undef,
          'id' => 4482,
-         'text' => 'Uferstr.: Markierungsarbeiten, Sperrung der Fahrbahn möglich',
+         'text' => 'Uferstr.: Markierungsarbeiten, Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. möglich',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9868,9 +9849,9 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        },
        undef,
        {
-         'data' => '#: osm_watch: note 5049958 1
-#: osm_watch: way id="1127993128" version="3"
-#: last_checked: 2025-11-12
+         'data' => '#: osm_watch: note 5049958 2
+#: osm_watch: way id="1127993128" version="4"
+#: last_checked: 2025-12-03
 #: check_frequency: 60d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
@@ -9961,7 +9942,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 #: osm_watch: way id="1409889274" version="9"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2025-11-21 (osm) vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 120d vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
 	2::inwork 7696,14577 7635,14628
@@ -10031,18 +10012,7 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (T,no-G)
-#: last_checked: 2025-11-25
-#: check_frequency: 14d
-	q4::inwork 10437,11352 10593,11120
-',
-         'from' => undef,
-         'id' => 4505,
-         'text' => 'Kommandantenstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2025-b1-bruecke-potsdamer-strasse
 	2::inwork -44861,-1252 -45229,-992
@@ -10079,6 +10049,33 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
          'id' => 4508,
          'text' => 'Kniephofstr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege an der Altmarkstr., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (G,T)
+#: last_checked: 2025-12-03
+#: check_frequency: 10d
+	q4::inwork 10103,10989 10118,11025 10163,11070 10256,11160
+',
+         'from' => undef,
+         'id' => 4509,
+         'text' => 'Alte Jakobstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: KANZLERPARK-2024
+#: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
+#: add_fragezeichen: Ist der Uferweg wieder offen?
+#: last_checked: 2025-12-03
+#: check_frequency: 60d
+#: next_check: 2026-02-28
+	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853
+',
+         'from' => undef,
+         'id' => 4510,
+         'text' => 'Bettina-von-Arnim-Ufer: Bauarbeiten, Sperrung, Ende unbekannt',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

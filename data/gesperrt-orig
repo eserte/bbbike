@@ -1595,7 +1595,7 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2025-11-20 (daf) vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 (entwicklungsstadt) vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
@@ -1606,7 +1606,7 @@ Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 # 
 #: XXX nach den Bauarbeiten die alte Einbahnstraßenregelung eintragen
 #: note: es gibt eine provisorische Verbindung zur Weststr. (mittlerweile bei bbbike eingezeichnet)
-#: last_checked: 2025-07-26 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="273858820" version="11"
 #: osm_watch: way id="1239079510" version="1"
@@ -2187,7 +2187,6 @@ Kirchhofstr.	1s:q3 13179,7613 13173,7567 13117,7471 13029,7353
 # REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Björnsonstr	1s:q3 10209,16674 10197,16528
 Ibsenstr.	1s:q3 10295,16667 10209,16674
-Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: by: https://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
@@ -4055,7 +4054,7 @@ südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="1"
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 60d
 #: next_check: 2028-12-31
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4228,10 +4227,10 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="5"
-#: last_checked: 2025-11-20 (osm)
+#: last_checked: 2025-12-03
 #: check_frequency: 180d
 #: next_check: 2027-01-01
-Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396
+Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
 # 
 #: osm_watch[closed]: note 4165928 1
 #: last_checked: 2025-10-25
@@ -4386,7 +4385,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-12-01 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4413,7 +4412,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2025-10-23 (osm)
+#: last_checked: 2025-12-03
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4737,7 +4736,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2025-11-19
+#: last_checked: 2025-12-03
 #: check_frequency: 180d
 #: next_check: 2028-12-23 (Amtsblatt)
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -4922,11 +4921,13 @@ An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die 
 #: source_id: LMS-BR:391216/72 viz2021:13.37613,52.53612, (bis 01.09.2026)
 #: osm_watch: way id="129104626" version="25"
 #: osm_watch: way id="945966258" version="3"
+#: osm_watch: note 5077509 1
 #: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])
-#: last_checked: 2025-11-02
+#: last_checked: 2025-12-03
 #: check_frequency: 120d
 #: next_check: 2026-09-30 (Baustellenschild)
-Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
+# REMOVED --- Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
+Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q3:inwork 8442,14456 8266,14346 8077,14227
 # 
 # REMOVED (weitgehend offen) -- #: next_check_id: SIEGFRIED-2021 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?) --- #: by: https://www.i-live-tempelhof.de/ (Erstbezug Anfang 2023) --- #: priority: #C --- #: last_checked: 2022-09-24 --- #: check_frequency: 120d --- (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 # REMOVED (wieder offen) --- #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021 --- #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen --- #: last_checked: 2025-05-07 --- #: check_frequency: 60d --- Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
@@ -4934,7 +4935,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-11-25
+#: last_checked: 2025-12-03
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5044,7 +5045,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,1022
 # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14361,10259
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-11-29 vvv
+#: last_checked: 2025-12-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

@@ -3,8 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Simplonstr.: Absperrungen	q3::inwork 14181,11434 14254,11377
-Simplonstr.: Absperrungen	q4::inwork 13996,11631 13992,11605 14031,11569
+Simplonstr.: Absperrungen	q3::inwork 13996,11631 13992,11605 14031,11569
 Gabriel-Max-Str.: Absperrungen	q3::inwork 14065,11605 14049,11553
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 Boxhagener Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q4::inwork 14513,11657 14561,11600
@@ -15,7 +14,6 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4::inwork 12558,11920 12617,11888
-Bödikerstr.: zwischen Laskerstr. und Persiusstr. ist die Fahrbahn noch nicht freigegeben	q4::inwork 14541,10735 14490,10610
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
@@ -36,10 +34,9 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
-Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251 7123,14367
+Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
-Matthäikirchplatz: Bauarbeiten, etwas verengte Fahrbahn	q2::inwork 7970,11396 7952,11336 7934,11275
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -2338,7 +2335,6 @@ Weißenhöher Str. [69-71]: einige Fußgänger	q1 20569,11492 20582,11558
 Wuhlewanderweg: enge Brücke	q2 22349,17302 22364,17323
 (Verbindung Golliner Str. - Wuhlewanderweg): schmaler Pfad	q2 22272,18296 22287,18297 22356,18264 22356,18239 22363,18219
 Bergmannstr.: Tempo 10	q3 9505,9306 9632,9280 9689,9266 9753,9252
-Niemannstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0 14254,11377 14211,11229
 Helmerdingstr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0 14468,11203 14442,11101
 Matkowskystr.: Bodenschwellen, allerdings nur für Anhänger relevant	q0 14531,11142 14513,11075
 Orankestrand: Fußgänger, Radfahren offiziell verboten	q3 15479,16060 15592,16069 15664,16115 15731,16208
@@ -2576,6 +2572,8 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 (Weg am Beerenpfuhlgraben - Senftenberger Str.): Grünanlage, einige Fußgänger	q1 23521,14973 23529,14973 23543,14966
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1 11635,12398 11845,12292
 Scharnweberstr.: Fußgängerzone für Radfahrer frei	q1 14675,11964 14783,11949
+Simplonstr.: Fußgängerzone für Radfahrer frei	q1 14254,11377 14181,11434
+Niemannstr.: Fußgängerzone für Radfahrer frei	q1 14254,11377 14211,11229
 Maxstr.: Fußgängerzone für Radfahrer frei	q1 7781,15804 7738,15838
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031
 (Glühwürmchenweg - Pionierstr.): einige Fußgänger	q1 -6048,16292 -5959,16235 -5924,16458
@@ -2728,6 +2726,8 @@ Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos
 (Fürbringerstr. - Baerwaldstr.): Grünanlage, Fußgänger	q4 10067,9674 10290,9604
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Parkplatzzufahrt und Parkplatz	q2 21249,11042 21237,11065 21162,11073 21163,11172
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): einige Fußgänger, ggfs. Bordstein	q3 21163,11172 21137,11200
+südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
+(Putlitzstr. - Quitzowstr.): einige Fußgänger, flache Bordsteine	q2 6245,14194 6245,14204 6246,14228
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2859,8 +2859,6 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 Retzdorffpromenade: Fußgänger	q2 4886,6819 4985,6818
 Albestr.: enge Straße	q0 5419,7464 5448,7436 5637,7435 5811,7433
 Leuthener Str.: enge Straße	q1 7412,8351 7494,8354 7578,8358 7640,8359 7716,8356
-südliches Spreeufer: Engstelle und Umwege zwischen HDKDW und Bundeskanzleramt	q4::inwork 7745,12603 7782,12623
-südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
 Waldstr.: enge Straße	q0 9717,20501 9724,20291 9723,20269
 (Bad Kissingen): Fußgänger	q2 3596,7566 3609,7842
@@ -3050,7 +3048,7 @@ Bootshausweg: Fußgänger, teilweise sehr eng, nicht für Anhänger geeignet	q2 -122
 Bootshausweg: Fußgänger	q1 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1691,16848
 Bootshausweg: Fußgänger	q1 -1661,16841 -1667,16828 -1675,16813
 Karl-Pokern-Str.: spielende Kinder	q0 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
-(Plantagenstr. - Ruheplatzstr.): Gehweg, Fußgänger	q4 7595,15596 7540,15566
+(Plantagenstr. - Ruheplatzstr.): Gehweg, Fußgänger	q4 7595,15596 7518,15605
 Bruno-Apitz-Str.: viele Fußgänger	q1 16423,24935 16359,24795 16304,24825 16264,24764 16131,24850
 Bruno-Apitz-Str.: viele Fußgänger	q1 16359,24795 16334,24728
 Bruno-Apitz-Str.: viele Fußgänger	q1 16329,24865 16304,24825
@@ -3669,7 +3667,6 @@ Neue Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::ignd
 Kirchhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13179,7613 13173,7567 13117,7471 13029,7353
 Björnsonstr: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10209,16674 10197,16528
 Ibsenstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10295,16667 10209,16674
-Eichhornstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8232,11414 8253,11306 8280,11296
 Lindenallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1429,11528 1403,11428
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1753,20191 1907,20265
 Alt-Tegel: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
@@ -3693,7 +3690,7 @@ Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, 
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12959,11631 12728,11850
 Klixstr.: Einbahnstraße Richtung Norden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 3871,18144 3833,17929
-Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
+Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8442,14456 8266,14346 8077,14227
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5802,10621
 Weinmeisterhornweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -4798,11231 -4579,11174
 Walter-Friedrich-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16172,25217 16171,25254

@@ -115,7 +115,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-03
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -2390,4 +2390,19 @@ Kaiser-Friedrich-Str.: Mittelstreifen, Übergang für Fußgänger südlich der Einmün
 Stargarder Str.: modaler Filter	3 11290,15669 11158,15739 *
 # 
 Buckower Weg - Haewererweg: Poller	3 * 12224,1235 *
+# 
+#: historical_note: früher (bis Herbst 2025) galt die Einbahnstraßenregelung auch für den Radverkehr
+Eichhornstr.	1 8232,11414 8253,11306 8280,11296
+Eichhornstr.	1 8280,11296 8278,11257 8289,11205 8343,11133
+# 
+Friedrich-List-Ufer	1 8110,13042 8106,13130
+# 
+Antonstr./Ruheplatzstr.: Poller	3 7393,15476 7518,15605 7436,15746
+Antonstr./Ruheplatzstr.: Poller	3 7393,15476 7518,15605 7648,15741
+Antonstr./Ruheplatzstr.: Poller	3 7436,15746 7518,15605 7393,15476
+Antonstr./Ruheplatzstr.: Poller	3 7436,15746 7518,15605 7627,15412
+Antonstr./Ruheplatzstr.: Poller	3 7627,15412 7518,15605 7436,15746
+Antonstr./Ruheplatzstr.: Poller	3 7627,15412 7518,15605 7648,15741
+Antonstr./Ruheplatzstr.: Poller	3 7648,15741 7518,15605 7393,15476
+Antonstr./Ruheplatzstr.: Poller	3 7648,15741 7518,15605 7627,15412
 # 
