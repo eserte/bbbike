@@ -17,7 +17,7 @@
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php
 #: osm_watch: note 4919919 6
 #: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
-#: last_checked: 2025-12-03 vvv
+#: last_checked: 2025-12-04 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2025-12-12 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache) vvv
@@ -313,7 +313,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="9"
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-04
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -1533,7 +1533,7 @@ Tiergarten: einige Fußgänger	q1 8172,11679 8189,11722 8210,11775 8244,11878 8327
 Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/nordwegbruecke/ (noch keine geplante Bauzeit)
-#: last_checked: 2025-09-15
+#: last_checked: 2025-12-04
 #: check_frequency: 120d
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger, Engstelle an der Nordwegbrücke	q3 7661,12229 7653,12227
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 7653,12227 7449,12216 7288,12156 7215,12129 6812,12057
@@ -5202,10 +5202,10 @@ Straßenbahnübergang	q3 17861,17099 17866,17116
 Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
-#: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025)
+#: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025)
 #: last_checked: 2025-11-26 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2025-12-05 vvv
+#: next_check: 2025-12-19 vvv
 #: valid: -20251205
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
 #: valid: 20251205-
