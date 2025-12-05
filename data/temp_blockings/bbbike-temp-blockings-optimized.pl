@@ -647,8 +647,10 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
 #: source_id: viz2021:13.331602,52.505283,07.11.2024,07:00 (bis 12.01.2025) (inaktiv)
 #: source_id: viz2021:13.33567,52.50437,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Rankestr., bis 12.01.2025) (inaktiv)
 #: source_id: viz2021:13.33931,52.50323,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Tauentzienstr., bis 12.01.2025) (inaktiv)
-#: note: 2022+2023 ist die Farbahn auch gesperrt
-Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
+#: note: 2022+2023+2025 ist die Fahrbahn gesperrt
+Kantstr.: Weihnachtsmarkt, Gehweg frei	q4::xmas 5613,10963 5652,11004
+#: note: etwa 70m frei befahrbar
+Kantstr.: Logistik Markt	q3::xmas 5613,10963 5488,10978
 ',
          'from' => 1763852400,
          'id' => 394,
@@ -4604,11 +4606,11 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: last_checked: 2025-11-30
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="43"
-#: osm_watch: way id="580507889" version="37"
+#: osm_watch: way id="31525573" version="44"
+#: osm_watch: way id="580507889" version="38"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-11-26
+#: last_checked: 2025-12-04 (osm)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -5765,7 +5767,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://entwicklungsstadt.de/kai-wegner-besucht-zur-neueroeffnung-das-kalle-neukoelln/
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409917943/kalle-neukoelln-ist-fertig-da-schwingt-das-berlinerische-mit.html
 #: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
-#: osm_watch: way id="734271970" version="7"
+#: osm_watch: way id="734271970" version="8"
 #: osm_watch: way id="975241319" version="8"
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
@@ -7151,7 +7153,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-10-09
+#: last_checked: 2025-12-05
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -8013,12 +8015,8 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'until' => 1772294400
        },
        {
-         'data' => '#: by: rbb, wurde da aber mittlerweile entfernt
-#: also_indoor: traffic (re-G,ex-W,ex-B,ex-T)
-#: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3
-#: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025
-# REMOVED --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31
-# REMOVED --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
+         'data' => '# REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
+#: note: vermutlich Einbahnstraßenregelung, offen Richtung Savignyplatz
 Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,10707 5072,10701
 ',
          'from' => 1764651600,
@@ -8047,6 +8045,7 @@ Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,1070
        {
          'data' => '#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12009 (Anfrage)
+#: source_id: LMS-BR:392283/72 viz2021:13.58978,52.513229, (bis 27.02.2026)
 #: note: Länge der Engstelle etwa 80m
 #: note: außerdem ist der Radweg auf der Heinrich-Grüber-Str. wahrscheinlich gesperrt
 #: note: Halteverbotsschilder bis 31.12.2025
@@ -8054,13 +8053,14 @@ Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,1070
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
 #: last_checked: 2025-10-18 (luftbildsuche)
-#: check_frequency: 90d (traffic check)
-#: next_check: 2025-12-31 (Halteverbotsschilder)
+# REMOVED --- #: check_frequency: 90d (traffic check)
+# REMOVED --- #: next_check: 2025-12-31 (Halteverbotsschilder)
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 	q3::inwork; 23251,12146 23017,12177
 ',
          'from' => undef,
          'id' => 4218,
-         'text' => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
+         'text' => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Februar 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8279,7 +8279,8 @@ Chopinstr.	q4::inwork 14195,15604 14321,15636
 #: source_id: viz2021:13.319804,52.504158, (bis 25.05.2026)
 #: also_indoor: traffic (G,B,T,A)
 #: note: by rbb
-	q4::inwork 4692,10829 4704,10951 4709,11036
+	q4::inwork 4692,10829 4704,10951
+# REMOVED (hier nicht, erst ab Bahnbrücke) ---	q4::inwork 4704,10951 4709,11036
 ',
          'from' => 1738018800,
          'id' => 4249,
@@ -8591,7 +8592,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
-#: last_checked: 2025-12-03 (website check) vvv
+#: last_checked: 2025-12-04 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -8638,7 +8639,7 @@ Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: last_checked ^^^
 # 
-#: note: hier Arbeiten an Gasleitungen, aber in der gleichen Gegend
+#: note: laut Website möglicherweise bis 16.01.2026
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: viz2021:13.55418,52.43793, (bis 12.12.2025)
 #: also_indoor: traffic (T,G)
@@ -9295,7 +9296,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-05
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9414,13 +9415,14 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'data' => '#: also_indoor: traffic (ex-T,G)
 #: note: laut Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-11-29 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2025-12-05 (Halteverbotsschilder am Wolffring) vvv
+#: last_checked: 2025-12-05 (traffic) vvv
+#: check_frequency: 7d (traffic) vvv
+# REMOVED --- #: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2025-12-05 (Halteverbotsschilder am Wolffring) vvv
 Schreiberring	q4::inwork 8941,8186 8861,8242 8776,8285
 #: note: hier vermutlich nur Baustelleneinrichtungsfläche für die eigentlich Baustelle am Schreiberring
 Wolffring, südliche Fahrbahn	q4::inwork; 8969,8278 9032,8254
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -9430,26 +9432,7 @@ Wolffring, südliche Fahrbahn	q4::inwork; 8969,8278 9032,8254
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LMS-BR:383093/72 viz2021:13.28295,52.44204, (bis 27.11.2025) (bis 05.12.2025)
-#: also_indoor: traffic (T,G)
-#: next_check_id: THIELALLEE-2025
-#: note: teilweise freigegeben, teilweise Gehweg für Radfahrer frei, teilweise ohne Freigabe
-#: last_checked: 2025-11-22 (osm) vvv
-#: check_frequency: 30d (traffic) vvv
-#: next_check: 2025-12-05 (VIZ-Verkehrsmeldung) vvv
-Thielallee: teilweise Gehweg für Radfahrer frei	q3::inwork; 2308,3862 2348,4026 2372,4127 2407,4280
-Thielallee: hier keine offizielle Freigabe	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1757626813,
-         'id' => 4442,
-         'text' => 'Thielallee: Bauarbeiten, evtl. sind auch Radfahrer von der Sperrung betroffen, bis voraussichtlich 05.12.2025, evtl. wird die Sperrung verlängert',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026) (Sperrung am 22.09.2025; ab 13.10.2025 für Rückbauarbeiten gesperrt; neues Brückenbauwerk fertig: 2. Quartal 2026)
 #: osm_watch: way id="23926070" version="5"
@@ -9660,7 +9643,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2025-11-21
+#: last_checked: 2025-12-05
 #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
 ',
@@ -9864,16 +9847,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'type' => 'gesperrt',
          'until' => 1788213600
        },
-       {
-         'data' => '#: source_id: LMS-BR:388778/72 viz2021:13.316323,52.489331,03.11.2025,07:00 (bis 05.12.2025)
-	q4::inwork 4495,9184 4517,9401
-',
-         'from' => 1762063200,
-         'id' => 4492,
-         'text' => 'Sächsische Str.: Bauarbeiten zwischen Wegenerstr. und Hohenzollerndamm, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.11.2025 07:00 bis 05.12.2025 17:00',
-         'type' => 'handicap',
-         'until' => 1764950400
-       },
+       undef,
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/update-vollsperrung-nach-wasserrohrbruch-in-der-lily-braun-strasse/
 	q4::inwork 23213,13003 23173,12769

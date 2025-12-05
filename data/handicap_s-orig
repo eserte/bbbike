@@ -101,7 +101,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="24"
 #: osm_watch: way id="1072662717" version="28"
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-05
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -312,7 +312,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: next_check_id: MOLECULES-2025
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
-#: osm_watch: way id="1008972168" version="9"
+#: osm_watch: way id="1008972168" version="10"
 #: last_checked: 2025-12-04
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
@@ -406,10 +406,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://entwicklungsstadt.de/wedding-geplanter-abriss-der-ruine-in-der-burgsdorfstrasse-gestoppt/
 #: by: https://entwicklungsstadt.de/abriss-der-ruine-in-der-burgsdorfstrasse-in-mitte-hat-begonnen/ (Abriss bis Jahresende 2025)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1077_ds_2020_vi_eine-dauerhafte-sperrung-der-burgsdorfstrasse.pdf
-#: osm_watch: way id="549316654" version="44"
+#: osm_watch: way id="549316654" version="45"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-12-01 (daf)
+#: last_checked: 2025-12-03 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (entwicklungsstadt)
 #: valid: 20171026-
@@ -1915,7 +1915,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-05
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -5206,9 +5206,9 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: last_checked: 2025-11-26 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-12-19 vvv
-#: valid: -20251205
+#: valid: -20251219
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
-#: valid: 20251205-
+#: valid: 20251219-
 Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
 #: last_checked ^^^
 #: check_frequency ^^^
