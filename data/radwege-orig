@@ -1364,6 +1364,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.morgenpost.de/berlin/article410569391/neuer-plan-fuer-die-elsenbruecke-wichtige-entlastung-kommt-doch-nicht.html
 #: by: https://www.entwicklungsstadt.de/zwischen-friedrichshain-und-treptow-so-soll-die-elsenbruecke-2026-wieder-volle-kapazitaet-erreichen/
 #: by: https://www.tagesspiegel.de/berlin/verkehrsverwaltung-gibt-plane-auf-radweg-auf-der-berliner-elsenbrucke-wird-doch-nicht-zur-autospur-14998091.html
+#: by: https://www.tagesspiegel.de/berlin/verkehrssenatorin-erfindet-verkehrssimulation-berlin-kapituliert-vor-chaos-um-neuen-a100-abschnitt-15018752.html
+#: by: https://www.tagesspiegel.de/berlin/100-tage-autobahn-chaos-im-berliner-osten-ich-bin-so-sauer-ich-hasse-es-ich-hasse-es-ich-hasse-es-14911031.html
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -2410,7 +2412,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-11-22 vvv
+#: last_checked: 2025-12-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 asphaltiert	RW2; 17681,7589 17611,7690
@@ -4436,7 +4438,7 @@ Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
 # REMOVED (hier nicht, siehe https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1124786.php ) --- Gehweg für Radfahrer frei	RW1; 21569,5730 21600,5694 21605,5687 21623,5661 21706,5541 21789,5427
 Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2025-09-02 (mapillary)
+#: last_checked: 2025-12-06
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 #: XXX nach den Bauarbeiten wieder aktivieren: Gehweg für Radfahrer frei	RW1; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
@@ -4660,11 +4662,11 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2025-12-06 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
-	RW3; 22701,3643 22714,3558 22734,3433
+	RW3; 22701,3643 22706,3607 22714,3558 22734,3433
 	RW3; 22743,3377 22790,3135
 	RW3; 22802,3081 22811,3037 22823,2962 22831,2915 22849,2856 22878,2758
 	RW3; 22920,2622 22982,2418 22991,2387
@@ -4684,7 +4686,7 @@ asphaltiertes Straßenbahnkap	RW1; 22991,2387 23008,2331
 #: note: in den Haltestellenbereichen teilweise mit Verbundsteinpflaster/Asphalt vvv
 Gehwegplatten	RW1; 23099,2031 23064,2147
 Gehwegplatten	RW2; 23064,2147 23019,2296 23008,2331 22991,2387 22982,2418
-Gehwegplatten	RW1; 22982,2418 22920,2622 22904,2675 22902,2681 22878,2758 22849,2856 22831,2915 22823,2962 22811,3037 22802,3081 22790,3135 22743,3377 22734,3433 22714,3558 22701,3643 22694,3693 22666,3888
+Gehwegplatten	RW1; 22982,2418 22920,2622 22904,2675 22902,2681 22878,2758 22849,2856 22831,2915 22823,2962 22811,3037 22802,3081 22790,3135 22743,3377 22734,3433 22714,3558 22706,3607 22701,3643 22694,3693 22666,3888
 #: note ^^^
 Gehweg für Radfahrer frei	RW1; 23099,2031 23185,1649 23214,1522
 Gehweg für Radfahrer frei	RW1; 23243,1398 23214,1522 23185,1649 23099,2031

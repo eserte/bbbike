@@ -2763,12 +2763,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: next_check: 2025-12-31 (wann sind die Sitzungswochen 2026?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1764543600,
+         'from' => 1765753200,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 2.12.2025 bis 5.12.2025',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 16.12.2025 bis 19.12.2025',
          'type' => 'gesperrt',
-         'until' => 1764975599
+         'until' => 1766185199
        },
        undef,
        undef,
@@ -4603,7 +4603,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20, 2025-09-10) existiert das Radfahrer-verboten-Schild nicht mehr
-#: last_checked: 2025-11-30
+#: last_checked: 2025-12-06
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="44"
@@ -4755,15 +4755,15 @@ Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 1439
 #: also_indoor: traffic (T,G,H,W)
 #: note: H: falsche Einbahnstraßenrichtung; W: falsche Komplettsperrung
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2025-10-25 (traffic)
+#: last_checked: 2025-12-06
 # REMOVED --- #: check_frequency: 120d
-#: check_frequency: 60d (traffic)
+#: check_frequency: 90d (traffic)
 #: next_check: 2027-03-31
-Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
+Alter Markt, Lüdersstr., Freiheit: Einbahnstraßenregelung	q4::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836 22196,4847
 ',
          'from' => 1729526400,
          'id' => 3071,
-         'text' => 'Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
+         'text' => 'Lüdersstr./Alter Markt/Freiheit: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
          'until' => 1806508800
        },
        undef,
@@ -4991,10 +4991,10 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q3::inwork; 22495,4523 22458,456
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
 #: osm_watch: note 4813149 2
-#: osm_watch: way id="198581621" version="20"
+#: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-11-30
+#: last_checked: 2025-12-06
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5623,7 +5623,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 # REMOVED (frühere Baustelle) ---	q4::inwork 3731,10640 3764,10580
 # REMOVED (hier nicht, explizit als Sackgasse offen) --- Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-22 (daf)
+#: last_checked: 2025-11-29 (architektur-urbanistik)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 ',
          'from' => 1752605472,
@@ -6752,7 +6752,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
          'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
 #: also_indoor: traffic (re-H,re-G,T,ex-W)
 #: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026
-#: last_checked: 2025-11-30
+#: last_checked: 2025-12-06
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 17383,9719 17391,9746 17404,9794
@@ -8357,12 +8357,13 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22144,4660 22138,4642 22111,4562
 # REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22093,4499
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-#: last_checked: 2025-11-05
+#: last_checked: 2025-12-06
 #: check_frequency: 90d
 #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (no-G,T,H,A,no-W)
-Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
+Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
+# REMOVED (hier Sackgasse) --- Kietzer Str. - Kirchstr.	q4::inwork 22246,4711 22240,4768 22196,4847
 ',
          'from' => 1739702908,
          'id' => 4261,
@@ -8761,11 +8762,11 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        {
          'data' => '#: XXX: Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann (mittlerweile aber wohl nicht mehr)
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="4"
-#: last_checked: 2025-10-08
-#: check_frequency: 60d
-# REMOVED --- #: check_frequency: 14d (traffic)
+#: last_checked: 2025-12-06 (traffic)
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
 ',
          'from' => undef,
@@ -8977,7 +8978,24 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: FUNKWERK-2025
+#: also_indoor: traffic (ex-G,no-T)
+#: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
+#: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
+#: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
+#: last_checked: 2025-12-06
+#: check_frequency: 30d
+#: next_check: 2025-12-19 (Halteverbotsschilder)
+# REMOVED (hier nicht mehr) ---	q4::inwork 22456,3889 22538,3889
+	q3::inwork 22538,3889 22666,3888
+',
+         'from' => 1750888800,
+         'id' => 4379,
+         'text' => 'Charlottenstr.: Fahrbahn zwischen Karlstr. und Wendenschloßstr. gesperrt, möglicherweise bis Mitte Dezember 2025, evtl. wird verlängert',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        {
@@ -9121,10 +9139,10 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
        undef,
        {
          'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
-#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben)
+#: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben), 2025-12-06 Sat 11:20 nicht passierbar
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1163982841" version="3"
-#: last_checked: 2025-11-05
+#: last_checked: 2025-12-06
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
@@ -9296,7 +9314,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-05
+#: last_checked: 2025-12-06
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9873,14 +9891,14 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: next_check_id: HENTIG-2025
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php
-#: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2025-11-16 Sun 11:11, 2025-11-30 Sun 12:00)
+#: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2025-11-16 Sun 11:11, 2025-11-30 Sun 12:00, 2025-12-06 Sat 11:40)
 Hentigstr.	q4::inwork 18586,9172 18548,8942 18518,8778
 ',
          'from' => 1762642800,
          'id' => 4495,
-         'text' => 'Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten zwischen Dönhoffstr. und Marksburgstr., 10.11.2025 bis 05.12.2025',
+         'text' => 'Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten zwischen Dönhoffstr. und Marksburgstr., Ende der Arbeiten unbekannt',
          'type' => 'gesperrt',
-         'until' => 1764975599
+         'until' => 1765580399
        },
        {
          'data' => '#: last_checked: 2025-11-08
@@ -9913,15 +9931,18 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
          'data' => '#: by: https://www.henn.com/de/news/startschuss-fuer-berlin-center-gene-and-cell-therapies-von-bayer-und-charite
 #: by: https://www.henn.com/de/projekt/iq-space-berlin-center-gene-and-cell-therapies
 #: by: https://www.bayer.com/media/aufbau-von-translationszentrum-fuer-gentherapien-und-zelltherapien-in-berlin-beginnt/
-#: by: https://iq-spaces.com/de/berlin-mitte
+#: by: https://iq-spaces.com/de/berlin-mitte (iQ Space)
+#: by: http://www.deal-magazin.com/news/148507/Leuchtturmprojekt-fuer-Biomedizin-WOLFF--MUeLLER-baut-iQ-space (Fertigstellung April 2028)
 #: osm_watch: way id="1080985512" version="12"
 #: osm_watch: way id="1409889274" version="9"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
 #: last_checked: 2025-12-03 vvv
 #: check_frequency: 120d vvv
+#: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
 	2::inwork 7696,14577 7635,14628
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -9935,7 +9956,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
        undef,
        {
          'data' => '#: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
-#: last_checked: 2025-11-30
+#: last_checked: 2025-12-06
 #: check_frequency: 45d
 #: next_check: 2026-01-31
 	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565

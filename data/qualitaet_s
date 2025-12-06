@@ -937,7 +937,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 22027,6608 22097,6414 22146,633
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21938,5866 21862,5857 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
 Hämmerlingstr.: Kleinsteinpflaster	Q2 21683,6946 21705,6931
-Hämmerlingstr.: Asphalt	Q0 21705,6931 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
+Hämmerlingstr.: Asphalt	Q0 21705,6931 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22094,5672 22100,5579
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 29921,3079 29998,3170
 Dorfstr. (Rahnsdorf): unbefestigter Weg	Q2 30319,3511 30293,3520 30267,3520 30240,3503
@@ -1879,7 +1879,7 @@ Ahornallee: Kopfsteinpflaster	Q2 21509,4900 21607,4850 21684,4814
 Mentzelstr.: Kopfsteinpflaster	Q2 21726,4896 21684,4814 21579,4579
 Charlottenstr.: Asphalt	Q0 23036,3929 23027,3916 22966,3912 22855,3902
 Charlottenstr.: glattes Kopfsteinpflaster	Q1 22855,3902 22666,3888
-Charlottenstr.: Asphalt	Q0 22666,3888 22456,3889
+Charlottenstr.: Asphalt	Q0 22666,3888 22538,3889 22456,3889
 Karlstr.: teilweise neuer Beton	Q0 22456,3889 22458,4134
 Karlstr.: alter Beton	Q0 22458,4134 22502,4260
 Karlstr.: neuer Beton	Q0 22502,4260 22556,4386
@@ -1957,7 +1957,8 @@ Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 18041,6924 18059,6804 
 Roedernstr.: Asphalt	Q0 18068,6748 18076,6693 18079,6678
 Scharnweberstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 19344,6119 19495,6029
 Scharnweberstr.: Asphalt	Q0 19495,6029 19650,5920
-Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt	Q0 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt	Q0; 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+Alt-Köpenick: Kopfsteinpflaster, Asphalt links zwischen den Schienen	Q2; 22111,4562 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
 Alt-Köpenick: Kopfsteinpflaster	Q2 22111,4562 22093,4499
 Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22451,4749 22470,4691 22395,4678
 Katzengraben: Kopfsteinpflaster	Q2 22478,4659 22472,4681 22470,4691
@@ -3351,7 +3352,7 @@ Bukesweg: Asphalt	Q0 23547,3140 23633,2933 23643,2860 23668,2792
 Zum Schmetterlingshorst: Waldweg	Q1 24649,943 24666,994
 Zum Schmetterlingshorst: Asphalt	Q0 24666,994 24879,1728 24883,1740
 (Kuhwall): Asphalt	Q0 24990,2905 25156,3002 25259,3116
-Annenallee: Asphalt	Q0 22184,5545 22095,5585 22009,5593
+Annenallee: Asphalt	Q0 22184,5545 22100,5579 22009,5593
 Annenallee: schlechtes Kopfsteinpflaster	Q3 22009,5593 21912,5724
 Heinrich-Schlusnus-Str.: Asphalt	Q0 15026,6391 15056,6431 15054,6526 15054,6589 15070,6621 15146,6690
 Joseph-Schmidt-Str.: Asphalt	Q0 15260,6315 15255,6531 15275,6554
@@ -11718,7 +11719,7 @@ Helga-Hahnemann-Str.: Asphalt	Q0 18257,5743 18062,5856
 Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 (Havelländer Ring - Elfriede-Brüning-Str./Eva-Strittmatter-Str.): Asphalt	Q0 23387,15322 23404,15324 23418,15234
 (Eva-Strittmatter-Str. - Kastanienallee): Asphalt	Q0 23536,15252 23550,15261 23661,15282
-An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125 22546,3115 22470,3109
+An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125 22470,3109
 An der Villa Bolle: Verbundsteinpflaster	Q1 22668,3125 22674,3052
 (An der Villa Bolle - Am Marienhain): Verbundsteinpflaster	Q1 22668,3125 22662,3200 22662,3205
 Havelwerke: schlechtes Kopfsteinpflaster	Q3 -1945,15018 -1959,14962
@@ -11933,6 +11934,7 @@ Konradinstr.: Asphalt, einige leichte Schäden	Q0 8872,5484 8674,5357
 (Fürbringerstr. - Baerwaldstr.): Verbundsteinpflaster	Q1 10067,9674 10290,9604
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Asphalt	Q0 21249,11042 21237,11065 21162,11073 21163,11172
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Asphalt	Q0 21163,11172 21137,11200
+(Planstraße am ehemaligen Funkwerk): Asphalt	Q0 22538,3889 22553,3592 22586,3595
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -15783,7 +15785,7 @@ Bogenstr. (Hessenwinkel): Asphalt	Q0 32334,2224 32268,2229 32203,2254 32142,2304
 Lindenstr. (Schmöckwitz): Asphalt	Q0 27006,-2778 26939,-2860 26931,-2871
 Rothariweg: Asphalt mit einigen Schäden	Q0 8292,6331 8290,6191 8291,6048
 Beiersdorfer Weg: Asphalt	Q0 30775,4318 30837,4521 30913,4766
-Kinzerallee: mäßiges Kopfsteinpflaster	Q2 22092,5673 22154,5659 22236,5633 22383,5611
+Kinzerallee: mäßiges Kopfsteinpflaster	Q2 22094,5672 22154,5659 22236,5633 22383,5611
 Küselstr.: mäßiger Beton	Q1 12292,15464 12221,15514 12158,15556 12094,15598 12058,15621
 Korkedamm: Beton	Q0 19244,2141 19296,2257 19311,2290
 Korkedamm: Beton	Q0 19296,2257 19327,2288 19375,2341 19549,2331

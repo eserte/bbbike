@@ -99,6 +99,7 @@ Uferweg - Kiehnwerderallee: Waldweg	X 16657,8443 16490,8432
 #: mud: 2025-03-08: keine Beeinträchtigungen	h=q0
 #: mud: 2025-09-01: keine Beeinträchtigungen	h=q0
 #: mud: 2025-11-16: einige Pfützen	h=q1,wet
+#: mud: 2025-12-06: einige Pfützen	h=q1,wet
 Hönower Weg: asphaltiert, aber mit einigen Wellen	X 17383,9719 16984,9857 16925,9852 16900,9861
 # 
 # REMOVED (Weg wurde neu gemacht und ist nun asphaltiert) --- #: mud: 2020-03-06: eine "Seenlandschaft" --- Rüdersdorfer Str. - Am Wriezener Bahnhof: unbefestigt, mit vielen großen Kuhlen	X 13173,11788 13089,11708
@@ -294,6 +295,7 @@ Wasserwerk Wuhlheide - S-Bhf. Wuhlheide: Waldweg	X 19463,7117 19604,7079 19721,7
 #: mud: 2023-08-19: einige leicht sandige Stellen, aber keine größeren Beeinträchtigungen	h=q1-,dry
 #: mud: 2023-10-28: einige Pfützen und matschige Stellen	h=q2-,wet
 #: mud: 2024-09-04: mehrere sandige Stellen	h=q2-,dry
+#: mud: 2025-12-06: etwas feuchtere Oberfläche mit zwei kurzen matschigen Stellen	h=q1+,wet
 Waldweg an der S-Bahn: Waldweg, mögliche sandige Stellen	X 20870,7122 21194,6891 21412,6735
 # 
 #: mud: 2020-10-24: einige leicht matschige Stellen
@@ -305,6 +307,7 @@ Waldweg an der S-Bahn: Waldweg, mögliche sandige Stellen	X 20870,7122 21194,6891
 #: mud: 2023-08-19: keine Beeinträchtigungen	h=q0
 #: mud: 2023-10-28: einige leicht matschige Stellen	h=q1-,wet
 #: mud: 2024-09-04: keine Beeinträchtigungen	h=q0
+#: mud: 2025-12-06: einige leicht matschige Stellen	h=q1-,wet
 Waldweg an der S-Bahn - Köpenicker Str.: Waldweg	X 20870,7122 20867,7165 20892,7236 20872,7268
 # 
 #: mud: 2020-03-28: keine Beeinträchtigungen	h=q0
@@ -332,6 +335,7 @@ KGA Erpetal - S-Bhf. Hirschgartenstr: unbefestigter Weg	X 24060,6059 23951,6063
 #: mud: 2024-05-15: trocken, leicht sandig	h=q1,dry
 #: mud: 2024-10-16: Oberfläche leicht sandig	h=q0-,dry
 #: mud: 2024-11-23: große Pfützen, allerdings umfahrbar, etwas feuchtere Oberfläche	h=q2-,wet
+#: mud: 2025-12-06: keine Beeinträchtigungen	h=q0
 Schwarzer Weg: unbefestigter Weg, einige Kuhlen	X 17286,7173 17297,7196 17295,7328
 # 
 #: mud: 2020-03-28: keine Beeinträchtigungen, einige sandige Stellen, aber noch unproblematisch	h=q0-,dry
@@ -345,6 +349,7 @@ Schwarzer Weg: unbefestigter Weg, einige Kuhlen	X 17286,7173 17297,7196 17295,73
 #: mud: 2024-11-23: viele Pfützen	h=q3,wet
 #: mud: 2025-04-02: keine Beeinträchtigungen	h=q0
 #: mud: 2025-11-01: störende Pfützen in den Kuhlen, feuchte Oberfläche	h=q3,wet
+#: mud: 2025-12-06: etwas feuchtere Oberfläche	h=q1+,wet
 Schwarzer Weg: unbefestigter Weg, sehr viele Kuhlen	X 17301,7754 17305,8105 17311,8123
 # 
 #: mud: 2020-04-13: keine Beeinträchtigungen	h=q0
@@ -362,10 +367,12 @@ Lahmertstr. - Bohnsdorfer Str.: Waldweg	X 22130,1961 21997,1869
 #: mud: 2022-01-26: etwas feuchtere Oberfläche	h=q1+,wet
 #: mud: 2024-04-10: keine Beeinträchtigungen	h=q0
 #: mud: 2025-08-27: einige sandige Stellen	h=q2
+#: mud: 2025-12-06: etwas feuchtere Oberfläche	h=q1+,wet
 Köpenicker Allee: unbefestigter Weg, sandige Stellen	X 20226,7846 20280,7749
 # 
 #: mud: 2022-01-26: etwas feuchtere Oberfläche	h=q1,wet
 #: mud: 2024-04-10: keine Beeinträchtigungen	h=q0
+#: mud: 2025-12-06: abschnittsweise etwas matschig	h=q2,wet	note=besonders im Bereich der Alleebäume
 Köpenicker Allee: holpriger Fahrweg mit asphaltierten Stellen	X 19898,8410 19990,8253 20096,8077 20226,7846
 # 
 #: mud: 2025-08-27: mehrere sandige Stellen	h=q2-
