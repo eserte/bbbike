@@ -416,6 +416,9 @@ sub url_normalizations {
     $url =~ s{(https://www.nd-aktuell.de/artikel/\d+\.).*}{$1};
     $url =~ s{(https://www.tagesspiegel.de/.*)\?.*}{$1};
     $url =~ s{(https://www.berlin.de/.*)\?ts=\d+\b}{$1};
+    # should be last
+    $url =~ s{([&?])utm_source=.*?(?=&|$)}{$1 eq '?' ? '?' : ''}e;
+    $url =~ s{\?$}{};
     $url;
 }
 
