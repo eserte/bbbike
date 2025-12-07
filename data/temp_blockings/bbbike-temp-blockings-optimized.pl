@@ -5697,7 +5697,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 #: also_indoor: traffic (B,H(unvollständig),G)
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
-#: osm_watch: note 3065138 14
+#: osm_watch: note 3065138 15
 #: note: Ende Mitt 2026 oder Mitte 2027?
 #: last_checked: 2025-11-27 vvv
 #: check_frequency: 90d vvv

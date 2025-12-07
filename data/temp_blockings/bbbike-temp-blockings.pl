@@ -17778,7 +17778,7 @@ EOF
        until => $isodate2epoch->("2025-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 12, start => "2023-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten, 2022/2023 ebenso
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr. sowie einige Wege im östlichen Tiergarten, ab 26.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -36145,7 +36145,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
-#: osm_watch: note 3065138 14
+#: osm_watch: note 3065138 15
 #: note: Ende Mitt 2026 oder Mitte 2027?
 #: last_checked: 2025-11-27 vvv
 #: check_frequency: 90d vvv
