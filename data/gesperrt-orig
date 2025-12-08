@@ -4057,7 +4057,7 @@ südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,
 # 
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
 #: osm_watch: way id="179005464" version="11"
-#: osm_watch: way id="1339060325" version="1"
+#: osm_watch: way id="1339060325" version="2"
 #: last_checked: 2025-12-04
 #: check_frequency: 60d
 #: next_check: 2028-12-31
@@ -4266,7 +4266,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-# REMOVED (offen) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder offen? --- #: last_checked: 2025-07-27 --- #: check_frequency: 7d --- Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17257,9869
+# REMOVED (offen) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder offen? --- #: last_checked: 2025-07-27 --- #: check_frequency: 7d --- Weg im Grünzug Kraatzgraben: gesperrt, Leitungsarbeiten	2::inwork 17161,9921 17174,9914 17257,9869
 # REMOVED (laut osm wieder offen) --- #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=766898#post766898 --- #: by: https://moabitonline.de/41262 (Fertigstellung bis Oktober 2024 geplant) --- #: osm_watch[closed]: note 4551219 3 --- #: osm_watch: way id="1009956629" version="14" --- #: last_checked: 2025-01-15 --- #: next_check: 2024-10-31 --- Uferweg am Otto-Weidt-Platz: wegen Bauarbeiten an der Treppenanlage gesperrt	2::inwork 7912,14160 7875,14204
 # REMOVED (weiterhin Bauarbeiten, aber diese Zufahrt ist wieder offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2025-04-01 --- Otto-Weidt-Platz: Zuwegung zum Golda-Meir-Steg wegen Bauarbeiten gesperrt	2::inwork 7775,14062 7818,14117 7861,14133
 # 
@@ -4603,7 +4603,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-08
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4611,7 +4611,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2025-12-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677

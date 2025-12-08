@@ -2662,48 +2662,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1147421.php (2021 abgesagt)
-#: by: https://berliner-abendblatt.de/2021/11/17/berliner-weihnachtsmaerkte-werden-abgesagt/
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
-#: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1617272.php
-# REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
-#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
-	2::xmas 13416,7712 13424,7680
-	2::xmas 13416,7712 13378,7695 13288,7653
-	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
-	2::xmas 12972,7602 13100,7626 13130,7633 13174,7644
-	2::xmas 13179,7613 13174,7644
-	2::xmas 13179,7613 13295,7627
-	2::xmas 13288,7653 13295,7627
-	2::xmas 13288,7653 13174,7644
-	2::xmas 13288,7653 13278,7673 13245,7742
-#: tempex ^^^
-',
-         'from' => 1764802800,
-         'id' => 1998,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (05.12.2025 - 07.12.2025)',
-         'type' => 'gesperrt',
-         'until' => 1765148399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3602,29 +3561,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(2nd_advent,sa) - +1d
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1764889200,
-         'id' => 2515,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (06.12.2025 - 07.12.2025)',
-         'type' => 'gesperrt',
-         'until' => 1765148399
-       },
+       undef,
        {
          'data' => '#: tempex: before(3rd_advent,sa) - +1d
 	2::xmas 9986,13412 10321,13259
@@ -3673,29 +3610,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'until' => 1766357999
        },
        undef,
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
-#: tempex: 2nd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1765018800,
-         'id' => 2519,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 07.12.2025, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1765130400
-       },
+       undef,
        {
          'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
 #: tempex: 3rd_advent & T12-T19
@@ -4664,7 +4579,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-11-25 vvv
+#: last_checked: 2025-12-08 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -5697,7 +5612,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 #: also_indoor: traffic (B,H(unvollständig),G)
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
-#: osm_watch: note 3065138 15
+#: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
 #: last_checked: 2025-11-27 vvv
 #: check_frequency: 90d vvv
@@ -5935,13 +5850,13 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025) (inaktiv)
-#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025)
+#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 19.12.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2025-10-20 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
-#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -5950,7 +5865,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
 #: osm_watch: way id="42990078" version="31"
-#: osm_watch: note 4444205 3
+#: osm_watch: note 4444205 4
 Schönstr. zwischen Amalienstr. und Paul-Oestreich-Str.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
 # REMOVED (hier nicht mehr) --- Amalienstr.	q4::inwork 13722,16843 13794,16773
@@ -8859,6 +8774,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
        },
        {
          'data' => '#: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026)
+#: source_id: LMS-BR:392515/72 viz2021:13.315577,52.479657,08.12.2025,07:00 (bis 01.06.2026)
 #: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
 #: note: die textuelle Beschreibung (zwischen Mecklenburgische Straße und Paretzer Straße) und Kartendarstellung (nur ein paar Meter im Kurvenbereich) passen nicht zusammen
 	q4::inwork 4581,8048 4461,8105
@@ -8866,15 +8782,27 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
 ',
          'from' => 1748754000,
          'id' => 4354,
-         'text' => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 30.04.2026 23:59',
+         'text' => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 bis 01.06.2026',
          'type' => 'handicap',
-         'until' => 1777586399
+         'until' => 1780333200
        },
        undef,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
+#: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
+#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 (Gasteiner Str., bis 17.02.2026)
+#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026)
+	q4::inwork 5053,8979 5189,8983
+',
+         'from' => 1765062000,
+         'id' => 4359,
+         'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 17.02.2026',
+         'type' => 'handicap',
+         'until' => 1771369199
+       },
        undef,
        undef,
        {
@@ -8920,7 +8848,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        {
          'data' => '#: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-29 (traffic) vvv
+#: last_checked: 2025-12-08 (traffic) vvv
 #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
@@ -9205,6 +9133,7 @@ Insterburgallee	q4::inwork 229,11213 251,11039
 #: by[nocache]: https://archive.ph/Vv5di
 #: source_id: viz2021:13.34241,52.44693,18.08.2025,06:00 (bis 21.11.2025) (bis 31.01.2026)
 #: note: uneinheitliches Enddatum bei der VIZ: bis Anfang November 2025, oder die Variante des Bezirksamts (21.11.2025)? Bei der VIZ-Verkehrsmeldung nun auch 21.11.2025. Mittlerweile verlängert.
+#: note: laut rbb weitere Sperrung der Fahrbahn zwischen Stunde- und Presselstr. bis Ende 03/2026, auch für den Radverkehr (trotz des Hochbordradwegs?)
 	q4::inwork; 6360,4504 6283,4565 6203,4630
 ',
          'from' => 1755381600,
@@ -9314,7 +9243,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-08
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -10074,6 +10003,41 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
          'text' => 'Bettina-von-Arnim-Ufer: Bauarbeiten, Sperrung, Ende unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: LMS-BR:392540/72 viz2021:13.57415,52.45591, (explizit "Radweg gesperrt" (welcher Radweg?), bis 24.01.2026)
+#: note: laut rbb "wieder" (tatsächlich?); im Anschluss weitere Sperrungen bis März 2026
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=2025120 (weitere Sperrungen bis März 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m7hmridgq22t
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifalfmknxg5rbg55uyufahs74qyupdamuj45znpy2l5oj5ulbdgj4@jpeg (nur vor der Friedenstr.?)
+	q4::inwork 22033,6144 22075,5996
+# REMOVED (hier nicht?) ---	q4::inwork 22075,5996 22083,5899 22084,5877 22089,5782
+',
+         'from' => 1765219528,
+         'id' => 4511,
+         'text' => 'Hämmerlingstr.: Sperrung zwischen Seelenbinderstr. und Friedenstr., voraussichtlich bis März 2026',
+         'type' => 'handicap',
+         'until' => 1774994399
+       },
+       {
+         'data' => '#: source_id: LMS-BR:392518/72 viz2021:13.322216,52.504645,08.12.2025,07:00 (bis 06.02.2026)
+	q4::inwork 4841,10686 4857,10909 4858,10943
+',
+         'from' => 1765087200,
+         'id' => 4512,
+         'text' => 'Knesebeckstr.: Sperrung zwischen Savignyplatz und Mommsenstr., evtl. ist auch der Radverkehr betroffen, vom 08.12.2025 07:00 bis 06.02.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1770393600
+       },
+       {
+         'data' => '#: source_id: LMS-BR:392517/72 viz2021:13.28814,52.47719,08.12.2025,07:00 (bis 16.03.2026)
+	q4::inwork 2565,7637 2587,7769 2608,7798
+',
+         'from' => 1765087200,
+         'id' => 4513,
+         'text' => 'Kösener Str.: Sperrung zwischen Berkaer Str. und Hundekehlestr., evtl. ist der Radverkehr betroffen, vom 08.12.2025 07:00 bis 16.03.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1773676800
        }
      
 );

@@ -29599,7 +29599,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-11-25 vvv
+#: last_checked: 2025-12-08 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -36145,7 +36145,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
-#: osm_watch: note 3065138 15
+#: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
 #: last_checked: 2025-11-27 vvv
 #: check_frequency: 90d vvv
@@ -37241,13 +37241,13 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025) (inaktiv)
-#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025)
+#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 19.12.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
 #: last_checked: 2025-10-20 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
-#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -37256,7 +37256,7 @@ EOF
 # REMOVED (hier nicht mehr) ---	q4::inwork 13870,16837 13794,16773
 # REMOVED (q4 ist richtig) --- #: note: Halteverbotsschilder ab 10.06.2024, evtl. Ausweitung der Baustellenfläche? --- #: XXX vorher q2, jetzt (da es auch eine VIZ-Meldung gibt) q4 --- #: next_check: 2024-06-10
 #: osm_watch: way id="42990078" version="31"
-#: osm_watch: note 4444205 3
+#: osm_watch: note 4444205 4
 Schönstr. zwischen Amalienstr. und Paul-Oestreich-Str.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
 # REMOVED (hier nicht mehr) --- Amalienstr.	q4::inwork 13722,16843 13794,16773
@@ -49012,11 +49012,12 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
-       until => $isodate2epoch->("2026-04-30 23:59:59"), # 1827874740, # 2027-12-03 23:59
-       text  => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 07:00 bis 30.04.2026 23:59',
+       until => $isodate2epoch->("2026-06-01 19:00:00"), # 1827874740, # 2027-12-03 23:59
+       text  => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 bis 01.06.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026)
+#: source_id: LMS-BR:392515/72 viz2021:13.315577,52.479657,08.12.2025,07:00 (bis 01.06.2026)
 #: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
 #: note: die textuelle Beschreibung (zwischen Mecklenburgische Straße und Paretzer Straße) und Kartendarstellung (nur ein paar Meter im Kurvenbereich) passen nicht zusammen
 	q4::inwork 4581,8048 4461,8105
@@ -49079,14 +49080,17 @@ Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
-     { from  => 1748926800, # 2025-06-03 07:00
-       until => 1755788400, # 2025-08-21 17:00
-       text  => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, vom 04.06.2025 07:00 bis 21.08.2025 17:00',
+     { from  => $isodate2epoch->("2025-12-07 00:00:00"), # 1748926800, # 2025-06-03 07:00
+       until => $isodate2epoch->("2026-02-17 23:59:59"), # 1755788400, # 2025-08-21 17:00
+#      text  => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, vom 04.06.2025 07:00 bis 21.08.2025 17:00',
+       text  => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 17.02.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
 #: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
-	q4::inwork; 5053,8979 5189,8983
+#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 (Gasteiner Str., bis 17.02.2026)
+#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026)
+	q4::inwork 5053,8979 5189,8983
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
@@ -49218,7 +49222,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-29 (traffic) vvv
+#: last_checked: 2025-12-08 (traffic) vvv
 #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
@@ -49858,6 +49862,7 @@ EOF
 #: by[nocache]: https://archive.ph/Vv5di
 #: source_id: viz2021:13.34241,52.44693,18.08.2025,06:00 (bis 21.11.2025) (bis 31.01.2026)
 #: note: uneinheitliches Enddatum bei der VIZ: bis Anfang November 2025, oder die Variante des Bezirksamts (21.11.2025)? Bei der VIZ-Verkehrsmeldung nun auch 21.11.2025. Mittlerweile verlängert.
+#: note: laut rbb weitere Sperrung der Fahrbahn zwischen Stunde- und Presselstr. bis Ende 03/2026, auch für den Radverkehr (trotz des Hochbordradwegs?)
 	q4::inwork; 6360,4504 6283,4565 6203,4630
 EOF
      },
@@ -50018,7 +50023,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-08
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51283,6 +51288,38 @@ EOF
 #: check_frequency: 60d
 #: next_check: 2026-02-28
 	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853
+EOF
+     },
+     { from  => 1765219528, # 2025-12-08 19:45
+       until => $isodate2epoch->("2026-03-31 23:59:59"), # 1769209200, # 2026-01-24 00:00
+       text  => 'Hämmerlingstr.: Sperrung zwischen Seelenbinderstr. und Friedenstr., voraussichtlich bis März 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:392540/72 viz2021:13.57415,52.45591, (explizit "Radweg gesperrt" (welcher Radweg?), bis 24.01.2026)
+#: note: laut rbb "wieder" (tatsächlich?); im Anschluss weitere Sperrungen bis März 2026
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=2025120 (weitere Sperrungen bis März 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m7hmridgq22t
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifalfmknxg5rbg55uyufahs74qyupdamuj45znpy2l5oj5ulbdgj4@jpeg (nur vor der Friedenstr.?)
+	q4::inwork 22033,6144 22075,5996
+# REMOVED (hier nicht?) ---	q4::inwork 22075,5996 22083,5899 22084,5877 22089,5782
+EOF
+     },
+     { from  => 1765087200, # 2025-12-07 07:00
+       until => 1770393600, # 2026-02-06 17:00
+       text  => 'Knesebeckstr.: Sperrung zwischen Savignyplatz und Mommsenstr., evtl. ist auch der Radverkehr betroffen, vom 08.12.2025 07:00 bis 06.02.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:392518/72 viz2021:13.322216,52.504645,08.12.2025,07:00 (bis 06.02.2026)
+	q4::inwork 4841,10686 4857,10909 4858,10943
+EOF
+     },
+     { from  => 1765087200, # 2025-12-07 07:00
+       until => 1773676800, # 2026-03-16 17:00
+       text  => 'Kösener Str.: Sperrung zwischen Berkaer Str. und Hundekehlestr., evtl. ist der Radverkehr betroffen, vom 08.12.2025 07:00 bis 16.03.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:392517/72 viz2021:13.28814,52.47719,08.12.2025,07:00 (bis 16.03.2026)
+	q4::inwork 2565,7637 2587,7769 2608,7798
 EOF
      },
     );

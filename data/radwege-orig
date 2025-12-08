@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-11-29 vvv
+#: last_checked: 2025-12-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1394,7 +1394,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-12-04 vvv
+#: last_checked: 2025-12-08 vvv
 #: check_frequency: 30d (neue Radverkehrsführung kommt vermutlich nicht mehr) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt+Tsp zum Ersatzneubau) vvv
@@ -1964,7 +1964,8 @@ Asphalt, relativ breit	RW2; 14169,9525 14149,9546 14089,9610
 #: historical_note: früher (bis Sommer 2025): RW1;
 alter, schadhafter Asphalt	RW2; 14257,9432 14382,9299
 alter, schadhafter Asphalt	RW1; 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
-Verbundsteinpflaster	RW1; 15002,8651 15070,8584 15079,8575 15166,8489
+#: historical_note: früher (bis Dezember 2025): Verbundsteinpflaster, RW1;
+	RW4; 15002,8651 15070,8584 15079,8575 15166,8489
 	RW2; 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14257,9432 14169,9525
 	RW1;RW1 13535,10184 13579,10146 13711,10022 13782,9954 13795,9941
 asphaltiert	RW1; -7309,-1387 -7415,-1470 -7821,-1890
@@ -3237,7 +3238,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-08
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3258,7 +3259,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-08
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3838,7 +3839,9 @@ Radweg nur aufgemalt	RW1; 7602,17399 7381,17317 7292,17316 7282,17318 7104,17326
 	RW1; 9259,16236 9307,16190 9405,16081
 Radweg größtenteils nur aufgemalt	RW1;RW1 9732,15581 9646,15737 9623,15777 9494,15998
 	RW2;RW2 9494,15998 9459,16029 9446,16060
-	RW2; 15166,8489 15303,8343 15357,8286 15557,8077
+#: historical_note: früher (bis Dezember 2025): RW2;
+	RW4; 15166,8489 15303,8343
+	RW2; 15303,8343 15357,8286 15557,8077
 	RW1; 15557,8077 15920,7697
 asphaltiert, einige Wurzelhebungen	RW2; 15920,7697 16195,7398 16259,7328
 asphaltiert, akzeptable Qualität	RW2; 16259,7328 16353,7226 16377,7200
@@ -7332,7 +7335,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW6;RW6 11794,21354 11948,21366 11973,21385 11982,21392
 #: confirmed_by ^^^
 #: by: ^^^
-	RW7;RW7 16900,9861 16925,9852 16984,9857 17383,9719
+	RW7;RW7 16900,9861 16925,9852 16984,9857 17111,9813 17383,9719
 	RW6;RW6 19200,7682 19172,7712 19159,7746 19207,7834 19271,7794
 	RW6;RW6 18060,19146 18100,19127 18179,19095 18254,19063 18278,19051
 	RW6;RW6 16423,10259 16492,10163

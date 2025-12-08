@@ -17,7 +17,7 @@
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php
 #: osm_watch: note 4919919 6
 #: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
-#: last_checked: 2025-12-07 vvv
+#: last_checked: 2025-12-08 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2025-12-12 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache) vvv
@@ -1204,7 +1204,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 #: note: Länge der Engstelle nur etwa 40m-50m, deshalb q2 statt q3
 #: also_indoor: traffic (G,no-T,no-H,no-A,no-W)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2025-11-09
+#: last_checked: 2025-12-08 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: next_check: 2023-12-31
 Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
@@ -4165,7 +4165,8 @@ Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 1597
 #: note: Grünanlage, keine Zusatzschilder
 Nöldnerplatz [am Skatepark]: einige Fußgänger	q3 15820,10916 15844,10894 15856,10821
 Lückstr. [Wohngebiet]: Wohngebiet, einige Fußgänger	q3 16635,10636 16547,10435
-(Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953 16963,9960
+(Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17174,9914 17161,9921 17005,9953 16963,9960
+(Hönower Weg - Grünzug Kraatzgraben): einige Fußgänger	q1- 17111,9813 17139,9875 17174,9914
 #: note: hier etwas breiterer Weg
 (Weg im Grünzug): einige Fußgänger	q1 16963,9960 16886,9982 16841,9997
 (Dolgenseestr. - Weg im Grünzug): einige Fußgänger	q1- 17275,9892 17257,9869
@@ -5234,7 +5235,7 @@ Douglasienweg: einige Fußgänger	q1 11563,4099 11594,4107
 (Weg am Moabiter Werder - Elisabeth-Abegg-Str.): schmal, einige Fußgänger	q2 7751,12870 7822,12796
 # 
 #: note: kein Bürgersteig, oft Fußgänger (auf dem Weg zum Bahnhof?)
-Hönower Weg: einige Fußgänger	q0- 17383,9719 16984,9857 16925,9852 16900,9861
+Hönower Weg: einige Fußgänger	q0- 17383,9719 17111,9813 16984,9857 16925,9852 16900,9861
 # 
 (Fürstenwalder Damm - Müggelseedamm): einige Fußgänger	q0- 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943
 # 

@@ -120,7 +120,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt für Radfahrer	?::inwork 9047,9750
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: osm_watch: way id="667331289" version="7"
-#: last_checked: 2025-10-27
+#: last_checked: 2025-12-08
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -437,7 +437,7 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4963,7566
 #: source_id: 2147339938 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_91391 (möglicherweise inaktiv)
 #: source_id: viz2021:13.47342,52.481225,12.06.2023,09:00 (Kanalsanierung, bis 23.06.2023) (inaktiv)
-#: last_checked: 2025-10-18
+#: last_checked: 2025-12-08
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
@@ -449,13 +449,11 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410328717/auf-dieser-strasse-in-treptow-koepenick-baut-der-bezirk-einen-radstreifen.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251213 (17.10.2025 - 28.11.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1622336.php (Fahrbahnsanierung zwischen S-Bahnhof und Herkomerstr., später kommt hier wohl auch eine Radspur?)
-#: source_id: LMS-BR:388286/72 viz2021:13.469909,52.483432,29.10.2025,07:00 viz2021:13.469909,52.483432, (bis 08.12.2025) (nun ab Klingerstr., bis 17.12.2025) (bis 10.12.2025)
-#: last_checked: 2025-11-04 (mapillary)
-#: next_check: 2025-12-10
-Am Treptower Park und Köpenicker Landstraße: Bau eines Radfahrstreifens	?::inwork; 15007,8646 15070,8584 15079,8575 15166,8489 15303,8343
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1623927.php (Erwähnung der Verlängerung bis Trojanstr.)
 #: XXX Fortführung 2026
-#: last_checked: 2025-11-16
-#: next_check: 2026-12-31
+#: last_checked: 2025-12-08
+#: check_frequency: 180d
+#: next_check: 2026-12-31 (BA-Pressemitteilung)
 Köpenicker Landstraße: Radfahrstreifen bis Trojanstr.	?::projected; 15303,8343 15357,8286 15557,8077 15920,7697 16195,7398 16259,7328 16353,7226 16377,7200
 # 
 # REMOVED (leicht verbessert) --- #: source_id: 2147344613 (bis 19.6.2020) --- #: last_checked: 2020-06-17 --- #: next_check: 2020-06-19 --- Köpenicker Landstraße: bleibt der knappe Abstand zu den parkenden Autos?	?::inwork; 16428,7144 16353,7226 16259,7328
@@ -1432,10 +1430,12 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id: viz2021:13.48576,52.555908,24.04.2025,07:00 (Straßenarbeiten, bis 16.05.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:m4#HIM_FREETEXT_297553 (parallele Gleisbauarbeiten, bis 2025-11-30)
 #: source_id[inactive]: bvg2024:m4#5c1204dc-e817-4dc2-95b0-431bad289cd6 (bis 2025-12-14)
-#: source_id: bvg2024:m4#4de79670-2bb7-4c7d-940b-3ad8e3fefa9c (bis 2025-12-14) (doppelt?)
+#: source_id[inactive]: bvg2024:m4#4de79670-2bb7-4c7d-940b-3ad8e3fefa9c (bis 2025-12-14) (doppelt?)
+#: source_id: LMS-BR:392560/72 viz2021:13.489894,52.557953, (bis 22.12.2025)
 #: last_checked: 2025-11-10 (mapillary)
-#: check_frequency: 30d
-#: next_check: 2026-12-31 (infravelo)
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2025-12-22 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-12-31 (infravelo)
 Hansastr.: Radspuren geplant (2,5m breit) + Sanierung der Fahrbahn	?::inwork 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017 16296,17114 16318,17128
 # 
 #: next_check_id: HANSA-2025
@@ -1762,9 +1762,9 @@ Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksamt/protokolle/2018/protokoll-vom-16-01-2018.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung)
-#: osm_watch: way id="147557793" version="23"
-#: osm_watch: way id="891225245" version="10"
-#: osm_watch: way id="891225244" version="7"
+#: osm_watch: way id="147557793" version="24"
+#: osm_watch: way id="891225245" version="11"
+#: osm_watch: way id="891225244" version="8"
 #: last_checked: 2025-10-25
 #: check_frequency: 120d
 Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19021,11675 18999,11705 19000,11719 19005,11767 19004,11780
@@ -2543,7 +2543,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: last_checked: 2025-08-17
 #: check_frequency: 240d
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung)
-#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 Schönstr.: Neubau	?::inwork 13630,16629 13794,16773
 # REMOVED (hier fertig) --- Schönstr.: Neubau geplant	?::inwork 13794,16773 13870,16837
 # REMOVED (hier fertig) --- Schönstr.: Neubau geplant	?::projected 13870,16837 13974,16924 13996,16959
@@ -4469,12 +4469,14 @@ Cottbusser Str.: Fahrradstraße geplant	?::projected 23104,14827 23175,14823 2322
 #: by: https://www.berliner-zeitung.de/mensch-metropole/stau-vor-der-elsenbruecke-in-treptow-so-will-der-senat-das-chaos-an-der-a100-lindern-li.2355775 (noch 2025?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1607500.php (Vorbereitung für Fahrradstraße, Heidelberger Straße - Karl-Kunger-Str.; 2. BA bis Kiefholzstraße 2026)
 #: by: https://www.infravelo.de/projekt/bouchestrasse/ (4. Quartal 2025 - 4. Quartal 2026)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1623894.php (Anradeln am 11.12.2025)
 #: source_id: viz2021:13.449644,52.490923,02.05.2023,07:00 (Leitungsarbeiten, Fahrtrichtung für Kfz gesperrt, bis 30.06.2023) (bis 04.07.2023) (inaktiv)
-#: osm_watch: note 5010017 6
+#: osm_watch: note 5010017 8
 #: osm_watch: way id="506295118" version="23"
 #: osm_watch: way id="841291503" version="14"
 #: last_checked: 2025-11-29 (zwischen Kiefholzstraße und Heidelberger Str. markiert, aber noch nicht ausgeschildert)
 #: check_frequency: 30d
+#: next_check: 2025-12-11 (BA-Pressemitteilung: Anradeln im 1. BA)
 # REMOVED --- #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung)
 Bouchéstr.: Fahrradstraße wird eingerichtet	?::inwork 13188,9134 13298,9252 13357,9313 13489,9456 13602,9581
 # 
@@ -5689,7 +5691,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: source_id: viz2021:13.47161,52.50208,12.05.2025,07:00 (hier: Höhe Ingrid-Reschke-Str., aber tatsächlich Höhe An den Eiswerken, bis 20.07.2025) (inaktiv)
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: XXX Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2025-12-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 15019,10803
@@ -9256,7 +9258,7 @@ Neues Ufer: verkehrsberuhigter Bereich geplant	? 4283,13660 4363,13336
 #: by: https://www.morgenpost.de/bezirke/mitte/article410005636/fahrradfreundlicher-wedding-hier-entstehen-neue-routen.html
 #: osm_watch: way id="1352120015" version="5"
 #: osm_watch: way id="4603200" version="32"
-#: osm_watch: note 3954759 6
+#: osm_watch: note 3954759 7
 #: last_checked: 2025-12-03
 # REMOVED --- #: check_frequency: 21d
 #: next_check: 2025-12-31 (entwicklungsstadt website, infravelo)
@@ -9747,6 +9749,11 @@ Stechow - Rhinsmühlen: Radweg in Bau	?::inwork -54051,23436 -53816,23532 -53633,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/protokoll-mobilitaetswenderat-19112025.pdf
 #: next_check: 2026-12-31
 Friedenstr.: Umbau der RVA (Protektion), Mittelinsel am Knick Platz der Vereinten Nationen, Einschränkungen für den Kfz-Verkehr	?; 11842,13576 11893,13547 11924,13529 11995,13463 12058,13403 12085,13377 12131,13333 12163,13295 12236,13229
+# 
+#: XXX Haben die Bauarbeiten mit Sperrung schon angefangen? Laut BA bis 29.08.2026
+#: last_checked: 2025-12-06
+#: check_frequency: 2d
+Hönower Weg: Bauarbeiten der Wasserbetriebe, Umleitung	? 17111,9813 17383,9719
 # 
 #: section ^^^
 #: ignore ^^^
@@ -12078,13 +12085,14 @@ Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entst
 #: by: https://www.berliner-woche.de/wittenau/c-umwelt/plaene-fuer-fussweg-werden-anwohnern-vorgestellt_a433269
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1520948.php (bis Mitte 2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/mehr-als-500-neue-wohnungen-in-reinickendorf-gefahrdet-noch-immer-keine-losung-fur-berliner-schulneubau-13391023.html
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1623789.php (Baubeginn am 3.12.2025, Abschluss im Sommer 2026)
 #: XXX Bebauungsplan XX-277a Cité Foch (Nord)
 #: XXX evtl. wird es weitere Änderungen geben, z.B. Zurückstufung eines Teils der Avenue Charles de Gaulle, Fußwege im Süden könnten anders strukturiert werden
 #: osm_watch: way id="439885059" version="8"
 #: last_checked: 2025-04-02 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2026-06-01 (BA-Pressemitteilung)
-Am Packereigraben: entsteht hier ein Uferweg?	?::projected 4593,22011 4509,21944 4366,21895 4340,21828 4236,21804 4215,21753 4190,21738
+#: next_check: 2026-09-15 (BA-Pressemitteilung)
+Am Packereigraben: hier entsteht ein Uferweg	?::inwork 4593,22011 4509,21944 4366,21895 4340,21828 4236,21804 4215,21753 4190,21738
 # 
 #: next_check_id: SPREERADWEG-2025
 #: by: https://berliner-abendblatt.de/2021/10/01/spandau-brueckenschlag-fuer-radverkehr-an-der-spree/ (Planfeststellung ab Mitte 2022?)
