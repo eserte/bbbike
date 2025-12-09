@@ -4909,7 +4909,7 @@ Alter Markt, Lüdersstr., Freiheit: Einbahnstraßenregelung	q4::inwork; 22495,4523
 #: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-09
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5969,7 +5969,8 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
 #: source_id: adac:1081908618 (Bahnhofstr., bis voraussichtlich 01.03.2026) (neue ID -> inaktiv)
 #: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026) (neue ID -> inaktiv)
-#: source_id: viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026)
+#: source_id: LMS-BR:376495/72 viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026) (bis 18.05.2026)
+#: source_id: LMS-BR:392668/72 viz2021:13.40504,52.38669,09.12.2025,00:00 (Mellener Str. (nicht eingetragen), bis 18.05.2026)
 #: source_id: bvg2024:m76#HIM_FREETEXT_292859
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
@@ -5977,7 +5978,7 @@ Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 1384
 #: last_checked: 2025-11-30 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
-#: next_check: 2026-03-01 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-05-18 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung
 Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
@@ -5986,11 +5987,12 @@ Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 # REMOVED (laut Umleitungsplan nicht mehr) --- Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
 # REMOVED (laut Umleitungsplan nicht mehr) (tatsächlich auch nicht; interessanterweise ist eine provisorische Radspur noch übrig geblieben) --- Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED (hier nicht mehr) --- Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
-#: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026)
-#: source_id: viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026)
+#: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026) (inaktiv)
+#: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026)
 #: note: an der Bahnhofstr. keine Freigabe für Radfahrer, allerdings ab Mellener Str. Richtung Goltzstr. mit Einbahnstraße, Radfahrer beide Richtungen ausgeschildert?!
 Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
 # REMOVED (hier vermutlich nicht) --- Goltzstr.	q4::inwork; 10763,-2276 10642,-2371 10563,-2432 10454,-2520
+#: source_id: LMS-BR:392667/72 viz2021:13.40053,52.38317,09.12.2025,00:00 (bis 18.05.2026)
 #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Antrag: Freigabe für Radverkehr)
 Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156
@@ -6004,7 +6006,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 ',
          'from' => 1663524336,
          'id' => 3624,
-         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis März 2026',
+         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis Mai 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6234,7 +6236,7 @@ Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2025-10-09
+#: last_checked: 2025-12-06 (mapillary)
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -6663,21 +6665,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12
-#: also_indoor: traffic (re-H,re-G,T,ex-W)
-#: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026
-#: last_checked: 2025-12-06
-#: check_frequency: 14d (traffic)
-#: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe)
-	q4::inwork 17383,9719 17391,9746 17404,9794
-',
-         'from' => undef,
-         'id' => 3819,
-         'text' => 'Dolgenseestr.: Fahrbahn gesperrt, möglicherweise bis Juli 2026',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7160,7 +7148,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
 #: source_id: viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025)
-#: source_id: LMS-BR:390300/72 viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025) (bis 12.12.2025)
+#: source_id: LMS-BR:390300/72 viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025) (bis 12.12.2025) (bis 19.12.2025)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
@@ -7176,9 +7164,9 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 ',
          'from' => 1763247600,
          'id' => 4001,
-         'text' => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 12.12.2025',
+         'text' => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 19.12.2025',
          'type' => 'handicap',
-         'until' => 1765580399
+         'until' => 1766185199
        },
        undef,
        undef,
@@ -8484,6 +8472,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'data' => '#: next_check_id: ELSSHOLZ-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/grunewaldstra%C3%9Fe-8-neubau.1300/#post-24727
 #: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/tiefe-baugrube-grosse-geschichte-dieser-berliner-museumsneubau-uberrascht-mit-einer-zaun-galerie-15023919.html
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
@@ -8985,7 +8974,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
 #: source_id: viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-10-29
+#: last_checked: 2025-12-06 (mapillary)
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: next_check: 2025-12-19
 	q4::inwork 5700,10226 5597,10299 5450,10338
@@ -9131,9 +9120,10 @@ Insterburgallee	q4::inwork 229,11213 251,11039
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.1585917.php
 #: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/grundhafte-sanierung-der-fahrbahn-in-der-albrechtstrasse/
 #: by[nocache]: https://archive.ph/Vv5di
-#: source_id: viz2021:13.34241,52.44693,18.08.2025,06:00 (bis 21.11.2025) (bis 31.01.2026)
+#: source_id: viz2021:13.34241,52.44693,18.08.2025,06:00 (bis 21.11.2025) (zwischen Siemens- und Presselstr., bis 31.01.2026)
+#: source_id: LMS-BR:392691/72 viz2021:13.3401,52.44812,09.12.2025,12:00 (zwischen Stinde- und Presselstr., bis 31.03.2026)
 #: note: uneinheitliches Enddatum bei der VIZ: bis Anfang November 2025, oder die Variante des Bezirksamts (21.11.2025)? Bei der VIZ-Verkehrsmeldung nun auch 21.11.2025. Mittlerweile verlängert.
-#: note: laut rbb weitere Sperrung der Fahrbahn zwischen Stunde- und Presselstr. bis Ende 03/2026, auch für den Radverkehr (trotz des Hochbordradwegs?)
+#: note: laut rbb weitere Sperrung der Fahrbahn zwischen Stinde- und Presselstr. bis Ende 03/2026, auch für den Radverkehr (trotz des Hochbordradwegs?)
 	q4::inwork; 6360,4504 6283,4565 6203,4630
 ',
          'from' => 1755381600,
@@ -9210,8 +9200,8 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: also_indoor: traffic (T,G,H,A,W)
-#: last_checked: 2025-11-11
-#: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
+#: last_checked: 2025-12-06 (mapillary)
+# REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 # REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
 ',
@@ -9504,16 +9494,16 @@ Corinthstr.	q4::inwork; 14608,10409 14447,10491
        {
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1603361.php (Bauarbeiten 6. Oktober 2025 - Dezember 2025)
-#: next_check: 2025-12-01 (BA-Seite) vvv
+#: next_check: 2025-12-31 (BA-Seite, infravelo) vvv
 Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
 Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::inwork; 18445,2642 18374,2971
 #: next_check ^^^
 ',
          'from' => 1759615200,
          'id' => 4457,
-         'text' => 'Auf dem Oktogon/Hermann-Dorner-Allee: mögliche Einschränkungen und Sperrungen wegen Bauarbeiten, vom 6.10.2025 bis Dezember 2025',
+         'text' => 'Auf dem Oktogon/Hermann-Dorner-Allee: mögliche Einschränkungen und Sperrungen wegen Bauarbeiten, vom 6.10.2025 bis voraussichtlich Ende Dezember 2025',
          'type' => 'gesperrt',
-         'until' => 1767222000
+         'until' => 1767221999
        },
        undef,
        undef,
@@ -9671,14 +9661,15 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        },
        {
          'data' => '#: next_check_id: WERBELLINAMPEL-2025
-#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025)
+#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025) (bis 27.02.2026)
+
 	q4::inwork 12427,8109 12446,8032
 ',
          'from' => 1761241355,
          'id' => 4478,
-         'text' => 'Morusstr.: Bauarbeiten an der Einmündung Werbellinstr., Sperrung der Fahrbahn, voraussichtlich bis 14.12.2025',
+         'text' => 'Morusstr.: Bauarbeiten an der Einmündung Werbellinstr., Sperrung der Fahrbahn, voraussichtlich bis 27.02.2026',
          'type' => 'handicap',
-         'until' => 1765753200
+         'until' => 1772233199
        },
        {
          'data' => '#: by: https://www.berlin.de/special/shopping/biomarkt/3368882-1925662-oekomarkt-am-hohenstaufenplatz.html
@@ -9977,23 +9968,12 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (G,T)
-#: last_checked: 2025-12-03
-#: check_frequency: 10d
-	q4::inwork 10103,10989 10118,11025 10163,11070 10256,11160
-',
-         'from' => undef,
-         'id' => 4509,
-         'text' => 'Alte Jakobstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: KANZLERPARK-2024
 #: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
 #: add_fragezeichen: Ist der Uferweg wieder offen?
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-05 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2026-02-28
 	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853

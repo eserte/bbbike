@@ -51,10 +51,10 @@
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
-#: source_id: viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025)
+#: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026)
 #: last_checked: 2025-10-30 (mapillary)
-#: check_frequency: 45d
-#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
+#: check_frequency: 90d
+#: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
 # 
 #: temporary ^^^
@@ -1495,7 +1495,8 @@ Grünbeschichtung	RW3;RW3 2997,4378 2852,4584 2756,4709 2742,4727 2735,4736 2596,
 	RW3;RW3 2659,6499 2711,6698 2714,6857 2723,7029
 # 
 #: note: Thielallee, Richtung Norden
-	RW3; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
+	RW3; 2308,3862 2348,4026 2372,4127 2407,4280
+	RW4; 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
 # 
 Radweg nur aufgemalt	RW1; 4246,9406 4057,9648
 Radweg nur aufgemalt	RW1; 4057,9648 4246,9406
@@ -1758,10 +1759,10 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="823635969" version="27"
-#: osm_watch: way id="4615746" version="54"
+#: osm_watch: way id="823635969" version="28"
+#: osm_watch: way id="4615746" version="55"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-12-01 vvv
+#: last_checked: 2025-12-07 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv

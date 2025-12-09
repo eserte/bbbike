@@ -1077,7 +1077,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: source_id: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025) (zwischenzeitlich inaktiv)
 #: source_id: viz2021:13.47353,52.50308,22.11.2025,08:00 (bis 14.12.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20251121
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-09
 #: next_check: 2025-12-14
 #: valid: 20251122-20251214
 Marktstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork; 15279,10862 15144,10905
@@ -1112,7 +1112,7 @@ Marktstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::in
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-09
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -5350,9 +5350,13 @@ Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 # 
 Suttnerstr.: einige Fußgänger	q2+ 7728,5866 7733,5893 7735,5960
 # 
-# REMOVED (keine Information mehr dazu, assume expired) --- #: next_check_id: HINDENBURGDAMM-2022 --- #: XXX nach den Bauarbeiten prüfen und vielleicht wiederherstellen: --- #: last_checked: 2024-10-26 --- #: next_check: 2025-11-30
-#: historical_note: zwischenzeitlich (ca. 2022 bis 2025): Baustelleneinrichtung, Ausweichen auf Gehweg, q3
-(Wolfensteindamm - Händelplatz): Gehweg, einige Fußgänger, q2	q3 4543,4820 4517,4853
+#: next_check_id: HINDENBURGDAMM-2022
+#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026)
+#: XXX nach den Bauarbeiten prüfen und wiederherstellen: (Wolfensteindamm - Händelplatz): Gehweg, einige Fußgänger, q2	q3 4543,4820 4517,4853
+#: last_checked: 2025-12-06 (mapillary)
+#: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
+#: note: zwischenzeitlich (ab ca. 2022): 
+(Wolfensteindamm - Händelplatz): Baustelleneinrichtung, Ausweichen auf Gehweg	q3 4543,4820 4517,4853
 # 
 Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 # 

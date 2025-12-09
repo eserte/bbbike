@@ -287,7 +287,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535 --- #: XXX laut osm wieder Einbahnstraße --- #: osm_watch: way id="30043322" version="17" --- #: last_checked: 2020-12-12 --- #: check_frequency: 60d --- #: next_check: 2020-12-13 --- #: priority: #A --- #: valid: 20201214-
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
-#: osm_watch: way id="1047414962" version="5"
+#: osm_watch: way id="1047414962" version="6"
 #: last_checked: 2025-12-06
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
@@ -4159,7 +4159,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="10"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-09
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4425,13 +4425,13 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="4"
-#: last_checked: 2025-11-19
+#: last_checked: 2025-12-05 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-04-30 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
 #: note: valid-Datum "präventiv" gesetzt (Brückeneinschub passiert 2026)
 #: valid: -20261231
-Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7772,12694 7521,12581 7447,12520
+Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772,12694 7521,12581 7447,12520
 # 
 #: next_check_id: BAB100-2022
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/u0Q2caSUXqlMpEwIClbJq (Eröffnung im Frühjahr 2026?)
@@ -4603,7 +4603,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-12-08
+#: last_checked: 2025-12-09
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4611,7 +4611,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-12-08 vvv
+#: last_checked: 2025-12-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4649,7 +4649,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-09
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -5284,9 +5284,8 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: osm_watch: way id="696227207" version="5"
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt?
 #: last_checked: 2025-10-30 (mapillary)
-#: check_frequency: 45d
-# REMOVED --- #: next_check: 2024-08-05
-#: next_check: 2025-12-31
+#: check_frequency: 90d
+#: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 # 
 # REMOVED (Bauzäune sind nur stellenweise vorhanden (z.B. Seidenschwanzstr., westliche Einfahrt) und können leicht umfahren werden --- siehe mapillary) --- #: next_check_id: SEIDENSCHWANZSTR-2019 --- #: last_checked: 2020-04-26 vvv --- #: check_frequency: 360d vvv --- #: next_check: 2021-01-09 vvv --- #: XXX wann werden die Straßen eröffnet? vvv --- #: XXX laut osm (via StreetComplete) nicht mehr highway=construction vvv --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf --- #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen) --- #: by; https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-soll-an-der-bisamstrasse-den-bau-von-mehrfamilienhaeusern-pruefen_a228628 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-plant-mehrgeschosser-im-siedlungsgebiet-zwischen-bisamstrasse-und-landesgrenze_a278290 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.959124.php --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/die-degewo-will-ab-2023-an-der-stadtgrenze-200-mietwohnungen-bauen_a300659 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/buergerinitiative-lehnt-mietwohnungsbau-ab_a301920 --- #: osm_watch: way id="515337708" version="8" --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801 --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708 --- #: osm_watch: way id="515337706" version="6" --- Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854 --- #: osm_watch: way id="515337707" version="6" --- Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 26379,12909 --- #: osm_watch: way id="515337709" version="6" --- Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959 --- #: XXX ^^^ --- #: XXX ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
