@@ -13388,7 +13388,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010408',
        data  => <<EOF,
-	1::inwork 13439,14673 13148,14850 13107,14873 12807,15045 12704,15105
+	1::inwork 13439,14673 13370,14715 13148,14850 13107,14873 12807,15045 12704,15105
 EOF
      },
      { from  => 1224626400, # 2008-10-22 00:00
@@ -29120,7 +29120,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-11-21
+#: last_checked: 2025-12-10
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29236,7 +29236,7 @@ EOF
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18871,9565 18876,9512
 #: osm_watch[closed]: note 3658253 6
-#: osm_watch: way id="192487145" version="35"
+#: osm_watch: way id="192487145" version="36"
 #: osm_watch: note 4481312 6
 #: check_frequency: 60d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
@@ -29245,8 +29245,8 @@ EOF
 #: last_checked: 2025-12-06
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="44"
-#: osm_watch: way id="580507889" version="38"
+#: osm_watch: way id="31525573" version="45"
+#: osm_watch: way id="580507889" version="39"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
 #: last_checked: 2025-12-04 (osm)
@@ -33578,7 +33578,7 @@ EOF
 #: osm_watch: way id="362719487" version="16"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-10-31
+#: last_checked: 2025-12-07 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
 	q4::inwork 6021,10405 6116,10688
@@ -43489,7 +43489,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neuer-arger-um-bahn-baustelle-in-berlin-anwohner-kritisieren-kahlschlag-auf-raten-im-geschutzten-mauerstreifen-13189999.html
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
-#: osm_watch: way id="1244101968" version="6"
+#: osm_watch: way id="1244101968" version="7"
 #: osm_watch: way id="1149641617" version="4"
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
@@ -45103,7 +45103,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-12-04 vvv
+#: last_checked: 2025-12-10 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -46056,7 +46056,7 @@ EOF
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-10-31
+#: last_checked: 2025-12-07 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -48364,7 +48364,7 @@ EOF
        text  => 'Heesestr./Südendstr.: Sperrung der Fahrbahn zwischen Althoffstr. und Südendstr. sowie im Kreuzungsbereich Südendstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (re-G[Südendstr+Heesestr],T[Südendstr],re-W[Südendstr],A[Heesestr+Südendstr])
+#: also_indoor: traffic (re-G[Südendstr+Heesestr],T[Südendstr],ex-W[Südendstr],A[Heesestr+Südendstr])
 #: osm_watch: way id="1237862681" version="6"
 #: osm_watch: way id="1237862680" version="3"
 #: osm_watch: way id="1237862682" version="3"
@@ -49547,7 +49547,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-11-11
+#: last_checked: 2025-12-10
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50547,7 +50547,7 @@ EOF
 #: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2025-11-10 (okas)
+#: last_checked: 2025-12-10
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -50920,18 +50920,20 @@ EOF
      },
      { from  => 1761519600, # 2025-10-27 00:00
        until => $isodate2epoch->("2026-01-30 23:59:59"), # 1765407599, # 2025-12-10 23:59
-       text  => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Ende Januar 2026',
+#      text  => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Ende Januar 2026',
+       text  => 'Planckstr.: Sperrung wegen Gleisbauarbeiten, voraussichtlich bis Ende Januar 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
 #: source_id: LMS-BR:388170/72 viz2021:13.39202,52.52009,28.10.2025,07:00 viz2021:13.39202,52.52009, (bis 02.12.2025) (bis 30.01.2026)
-#: last_checked: 2025-11-21 vvv
+#: last_checked: 2025-12-10 vvv
 #: next_check: 2026-01-30 (VIZ-Verkehrsmeldung) vvv
-Georgenstr.	q4::inwork 9441,12670 9568,12688
+# REMOVED (mittlerweile vermutlich weitergewandert) --- Georgenstr.	q4::inwork 9441,12670 9568,12688
 Planckstr.	q4::inwork 9435,12698 9441,12670
-Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
+# REMOVED --- Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
+Planckstr.	q4::inwork 9441,12670 9454,12558
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -50984,15 +50986,16 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 EOF
      },
      { from  => undef, # 
-       until => 1764370800, # 2025-11-29 00:00
-       text  => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis 28.11.2025',
+       until => undef, # 1764370800, # 2025-11-29 00:00
+#      text  => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis 28.11.2025',
+       text  => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: osm_watch[closed]: note 4953648 2
+#: osm_watch: note 4953648 5
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-13
+#: last_checked: 2025-12-10
 #: check_frequency: 30d
-#: next_check: 2025-11-28
+# REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
 EOF
      },
@@ -51323,6 +51326,18 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:392517/72 viz2021:13.28814,52.47719,08.12.2025,07:00 (bis 16.03.2026)
 	q4::inwork 2565,7637 2587,7769 2608,7798
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Linienstr.: Wasserrohrbruch, Sperrung zwischen Kleine Rosenthaler Str. und Rosenthaler Str., evtl. sind auch Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LMS-BR:392756/72 viz2021:13.40303,52.52899, (kein Endedatum)
+#: also_indoor: traffic (G,no-T,H,W)
+#: last_checked: 2025-12-10 (VIZ-Verkehrsmeldung)
+#: check_frequency: 7d (traffic)
+	q4::inwork 10301,13701 10220,13694
 EOF
      },
     );

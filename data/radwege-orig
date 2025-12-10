@@ -557,7 +557,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-12-04 vvv
+#: last_checked: 2025-12-10 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -2303,7 +2303,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-11-21 vvv
+#: last_checked: 2025-12-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2327,7 +2327,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur oder Busspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="27"
-#: last_checked: 2025-11-11
+#: last_checked: 2025-12-10
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 # REMOVED (bis etwa Herbst/Winter 2024) --- provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -2772,6 +2772,7 @@ die letzten 60 Meter sind benutzungspflichtig, Grünbeschichtung	RW3; 11736,15727
 #: note: Wichertstr., Richtung Osten
 Grünbeschichtung	RW4; 11941,15586 11736,15727
 Grünbeschichtung	RW3; 11736,15727 11567,15842 11445,15920 11307,15995 11214,16043 10982,16121
+#: note: der grün eingefärbte Asphalt ist kaum zu erkennen
 Grünbeschichtung bzw. grüner Asphalt, Radspur teilweise hinter den parkenden Autos	RW4; 11941,15586 12245,15380 12325,15328 12417,15272 12704,15105
 # 
 #: by: Jens-Michael Schau (nördliche Fahrbahn)
@@ -2780,8 +2781,9 @@ Grünbeschichtung bzw. grüner Asphalt, Radspur teilweise hinter den parkenden Aut
 #: by: Jens-Michael Schau vvv
 #: confirmed_by: srt (RW3!)
 	RW3;RW3 12704,15105 12807,15045 13107,14873 13148,14850
-die letzten 50 Meter werden auf dem Gehweg geführt	RW3; 13148,14850 13439,14673
-	RW3; 13439,14673 13148,14850
+	RW3; 13148,14850 13370,14715
+	RW1; 13370,14715 13439,14673
+	RW3; 13439,14673 13370,14715 13148,14850
 #: by: ^^^
 	RW3;RW2 11709,14856 11609,14881
 	RW2; 11864,14781 11709,14856
@@ -3592,8 +3594,8 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: source_id: viz2021:13.45463,52.532024,04.11.2024,11:00 (bis 31.01.2025) (inaktiv) (bis 14.04.2025) (bis 30.04.2025) (bis 30.05.2025) (bis 30.06.2025) (bis 10.07.2025) (bis 27.06.2025) (inaktiv)
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
-#: osm_watch: way id="966685279" version="9"
-#: last_checked: 2025-11-06 vvv
+#: osm_watch: way id="966685279" version="10"
+#: last_checked: 2025-12-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -5370,10 +5372,10 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: osm_watch: note 4530704 5
 #: osm_watch: way id="631069428" version="12"
-#: osm_watch: way id="151370228" version="18"
-#: osm_watch: way id="631069429" version="11"
-#: osm_watch: way id="631069427" version="12"
-#: osm_watch: way id="631069430" version="14"
+#: osm_watch: way id="151370228" version="19"
+#: osm_watch: way id="631069429" version="12"
+#: osm_watch: way id="631069427" version="13"
+#: osm_watch: way id="631069430" version="15"
 #: note: Robert-Siewert-Str., Richtung Osten
 # REMOVED --- #: XXX Radweg wird vermutlich saniert --- #: last_checked: 2025-05-20 --- #: check_frequency: 90d
 #: historical_note: früher (bis 2025) Radweg antik und unbenutzbar
@@ -7095,7 +7097,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2025-11-25 (mapillary) vvv
+#: last_checked: 2025-12-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -9116,7 +9118,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: LMS-BR:347435/72 viz2021:13.38458,52.45267,23.09.2024,17:00 viz2021:13.38458,52.45267,(bis 01.11.2024) (bis 31.12.2025) (bis 26.06.2026)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
-#: last_checked: 2025-10-29 vvv
+#: last_checked: 2025-12-07 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-06-26 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -9204,7 +9206,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: osm_watch: way id="4357826" version="25"
 #: osm_watch: way id="354645907" version="20"
 #: osm_watch: way id="354645904" version="13"
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2025-12-07 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 	RW3; 8739,6701 8653,6781

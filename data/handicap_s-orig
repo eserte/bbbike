@@ -15,17 +15,17 @@
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_34_2201_2272_online.pdf (Teileinziehung)
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12133 (Vorlage zur Kenntnisnahme) (Beschluss Überweisung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php
-#: osm_watch: note 4919919 6
+#: osm_watch: note 4919919 7
 #: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
-#: last_checked: 2025-12-08 vvv
-#: check_frequency: 7d vvv
-#: next_check: 2025-12-12 (Halteverbotsschilder) vvv
+#: last_checked: 2025-12-10 vvv
+#: check_frequency: 3d vvv
+# REMOVED --- #: next_check: 2025-12-12 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache) vvv
 #: note: hier können die Absperrungen weggeschoben sein
-Simplonstr.: Absperrungen	q3::inwork 13996,11631 13992,11605 14031,11569
+Simplonstr.: Fußgängerzone für Radfahrer frei, allerdings noch mit Absperrungen	q3::inwork 13996,11631 13992,11605 14031,11569
 #: note: hier können die Absperrungen weggeschoben sein
 Gabriel-Max-Str.: Absperrungen	q3::inwork 14065,11605 14049,11553
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -47,7 +47,7 @@ Gabriel-Max-Str.: Absperrungen	q3::inwork 14065,11605 14049,11553
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-10
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -55,7 +55,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # 
 #: next_check_id: TRAM21-2025
 #: source_id: viz2021:13.463751,52.510709,22.11.2025,08:00 (bis 14.12.2025)
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2025-12-10 vvv
 #: next_check: 2025-12-14 vvv
 #: valid: 20251122-20251214 vvv
 #: note: Vorfahrtsstraßenregelung über Gryphiusstr. - Krossener Str.
@@ -488,9 +488,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- #: last_checked: 2022-07-17 (mapillary) --- # REMOVED --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2022-07-31 --- Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336,14586
 # 
 #: next_check_id: DOROTHEEN-2018
+#: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-11-25 (mapillary) vvv
+#: last_checked: 2025-12-10 vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="44"
@@ -531,7 +532,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2025-10-21
+#: last_checked: 2025-12-10
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -613,7 +614,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-11-21 vvv
+#: last_checked: 2025-12-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="18"
@@ -876,11 +877,11 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: osm_watch: way id="16096289" version="36"
-#: osm_watch: way id="707100249" version="28"
+#: osm_watch: way id="16096289" version="37"
+#: osm_watch: way id="707100249" version="29"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-09 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-01 (Tsp)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -5205,7 +5206,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025)
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2025-12-10 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-12-19 vvv
 #: valid: -20251219
