@@ -3378,16 +3378,18 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Tegeler Str.	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
-#: also_indoor: traffic (G,H,A,W,T)
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
+#: also_indoor: traffic (G,H,A,W,T)
 #: last_checked: 2025-12-03 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet?
+#: source_id: LMS-BR:392919/72 viz2021:13.355108,52.540463, (bis 31.03.2026)
 #: also_indoor: traffic (ex-T,G)
-#: last_checked: 2025-12-03 (traffic)
-#: check_frequency: 14d (traffic)
+#: last_checked: 2025-12-11 (VIZ-Verkehrsmeldung)
+#: check_frequency: 60d
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
@@ -5616,7 +5618,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 #: note: Ende Mitt 2026 oder Mitte 2027?
 #: last_checked: 2025-11-27 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-07-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
 #: osm_watch: way id="31824547" version="28"
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
@@ -5711,10 +5713,10 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
-#: osm_watch: note 4794007 1
+#: osm_watch: note 4794007 2
 #: last_checked: 2025-11-29 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-06-30 (infravelo) vvv
+#: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
 Weserstr. zwischen Innstr. und Treptower Str.	q4::inwork 13217,8493 13384,8354 13566,8212
 #: source_id: bvg2024:171#HIM_FREETEXT_286260
@@ -6665,7 +6667,32 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: HOENOWERWEG-2025
+# REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12 --- #: also_indoor: traffic (re-H,re-G,T,ex-W) --- #: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026 --- #: last_checked: 2025-12-09 (so gut wie fertig) --- #: check_frequency: 14d (traffic) --- #: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe) --- westliche Dolgenseestr.	q4::inwork 17383,9719 17391,9746 17404,9794
+#: XXX Laut BA gilt die verkehrsrechtliche Anordnung bis 29.08.2026; laut Aushang gehen die Bauarbeiten sogar bis Februar 2027
+#: note: siehe auch temporär aufgehobene Einbahnstraßenregelung in der westlichen Mellenseestr.
+#: also_indoor: traffic (no-T,no-G)
+#: osm_watch: note 5085082 1
+#: osm_watch: way id="31525839" version="16"
+#: source_id: bvg2024:396#HIM_FREETEXT_309001
+#: last_checked: 2025-12-11 vvv
+#: check_frequency: 10d (hohe Frequenz am Anfang) vvv
+#: next_check: 2027-02-28 (Aushang) vvv
+#: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden)
+Hönower Weg	2::inwork 17383,9719 17471,9688 17587,9655
+#: note: eigentlich nur der Einmündungsbereich zum Hönower Weg nicht passierbar
+östliche Dolgenseestr.	2::inwork 17471,9688 17494,9769
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3819,
+         'text' => 'Hönower Str.: Sperrung zwischen Neuer Feldweg und Dolgenseestr., möglicherweise bis Februar 2027',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -8589,7 +8616,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-27 (traffic) vvv
+#: last_checked: 2025-12-11 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -8741,7 +8768,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-12-03 vvv
+#: last_checked: 2025-12-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8991,7 +9018,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: add_fragezeichen: Besteht die Sperrung noch immer?
 #: XXX Mittlerweile kann die Durchfahrt möglich sein (gesehen 2025-10-19 Sun 11:53, 2025-11-01 Sat 14:37)
-#: last_checked: 2025-11-26
+#: last_checked: 2025-12-11
 #: check_frequency: 30d
 #: next_check: 2025-12-31 (Halteverbotsschilder)
 	2::inwork 17950,8974 17915,8945
@@ -9352,7 +9379,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'data' => '#: also_indoor: traffic (ex-T,G)
 #: note: laut Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-12-05 (traffic) vvv
+#: last_checked: 2025-12-11 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-12-05 (Halteverbotsschilder am Wolffring) vvv

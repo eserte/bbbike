@@ -1366,6 +1366,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.tagesspiegel.de/berlin/verkehrsverwaltung-gibt-plane-auf-radweg-auf-der-berliner-elsenbrucke-wird-doch-nicht-zur-autospur-14998091.html
 #: by: https://www.tagesspiegel.de/berlin/verkehrssenatorin-erfindet-verkehrssimulation-berlin-kapituliert-vor-chaos-um-neuen-a100-abschnitt-15018752.html
 #: by: https://www.tagesspiegel.de/berlin/100-tage-autobahn-chaos-im-berliner-osten-ich-bin-so-sauer-ich-hasse-es-ich-hasse-es-ich-hasse-es-14911031.html
+#: by: https://www.tagesspiegel.de/berlin/hupen-stress-larm-und-schlechte-luft-an-der-elsenbrucke-berliner-grune-fordern-polizeiprasenz-tag-und-nacht-15040339.html
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1394,7 +1395,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-12-08 vvv
+#: last_checked: 2025-12-11 vvv
 #: check_frequency: 30d (neue Radverkehrsführung kommt vermutlich nicht mehr) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt+Tsp zum Ersatzneubau) vvv
@@ -1466,7 +1467,7 @@ Verbundsteinpflaster mit deutlichen Unebenheiten	RW2; 3910,6949 3784,6985 3688,7
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
-#: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026)
 #: note: früher infravelo-Projekt "detmolder-strasse"
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (nach den Bauarbeiten der Wasserbetriebe 2026)
 #: osm_watch: way id="963841938" version="11"
@@ -2414,7 +2415,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2025-12-11 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 asphaltiert	RW2; 17681,7589 17611,7690
@@ -3241,7 +3242,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2025-12-08
+#: last_checked: 2025-12-11
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3262,7 +3263,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-12-08
+#: last_checked: 2025-12-11
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264

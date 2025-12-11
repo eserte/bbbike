@@ -208,7 +208,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2025-12-11 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -1506,7 +1506,12 @@ Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 12731,10547
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
-Mellenseestr. [Wohngebiet]	1 17587,9655 17628,9757 17633,9898
+#: next_check_id: HOENOWERWEG-2025
+#: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1" ändern
+#: last_checked: 2025-12-09
+#: check_frequency: 60d
+#: next_check: 2027-02-28
+Mellenseestr. [Wohngebiet]	1no 17587,9655 17628,9757 17633,9898
 Mellenseestr. [Wohngebiet]	1 17777,9649 17749,9811 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
 # REMOVED (eigentlich weitgehend beendet) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-05-06 --- #: check_frequency: 14d --- #: valid: 20220510-
@@ -4058,7 +4063,7 @@ südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-11
 #: check_frequency: 60d
 #: next_check: 2028-12-31
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4159,7 +4164,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="10"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-12-09
+#: last_checked: 2025-12-11
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4435,14 +4440,15 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 # 
 #: next_check_id: BAB100-2022
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/u0Q2caSUXqlMpEwIClbJq (Eröffnung im Frühjahr 2026?)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/stau-hotspot-elsenbruecke-in-treptow-gruene-attackieren-cdu-und-praesentieren-radikalen-a100-plan-li.10009556 (sukzessive Eröffnung ab Dez 2025?)
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
 #: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.), 2025-04-12 (Sa) 10:18 (Kiefholzstr. NO)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-11-27 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2025-12-11 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2026-04-15 (Tsp) vvv
 #: osm_watch: way id="1199463691" version="6"
 # REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
@@ -4649,7 +4655,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
 #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
 #: priority: #C
-#: last_checked: 2025-12-09
+#: last_checked: 2025-12-11
 #: check_frequency: 60d
 Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
@@ -4883,15 +4889,12 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="18"
-#: last_checked: 2025-11-22
+#: last_checked: 2025-12-11
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
 # REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
-#: osm_watch: way id="1061057025" version="14"
-#: last_checked: 2025-11-22
-#: check_frequency: 30d
-An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die Gehwege gebaut werden	2::inwork 17682,8464 17652,8349
+# REMOVED (sieht freigegeben aus) --- #: osm_watch: way id="1061057025" version="14" --- #: last_checked: 2025-11-22 --- #: check_frequency: 30d --- An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die Gehwege gebaut werden	2::inwork 17682,8464 17652,8349
 # REMOVED (bereits vor der Eröffnungsfeier freigegeben) --- #: XXX Es wird einen Anschluss an den Traberweg geben. --- #: osm_watch: note 4522174 4 --- #: last_checked: 2025-10-19 --- #: check_frequency: 30d --- #: next_check: 2025-11-06 (BA-Pressemitteilung) --- Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17821,8694 17851,8662
 # REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17668,8696 17648,8626 17628,8556

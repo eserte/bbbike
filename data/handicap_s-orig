@@ -298,7 +298,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-11-01 vvv
+#: last_checked: 2025-12-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -355,12 +355,15 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: last_checked: 2025-12-03 (traffic) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-01-31 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) vvv
+#: source_id: LMS-BR:392914/72 viz2021:13.35079,52.53931, (bis 31.03.2026)
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Umwege, Gehweg für Radfahrer frei	q3::inwork; 7000,14832 6929,14845 6849,14831
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork; 6849,14831 6929,14845 7000,14832
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 6849,14831 6824,14821 6709,14782
+#: source_id: LMS-BR:392917/72 viz2021:13.3549,52.5397, (bis 31.03.2026)
 Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 7000,14832 7007,14911
+#: source_id: LMS-BR:392916/72 viz2021:13.35109,52.54099, (bis 31.03.2026)
 #: note: hier keine expliziten Gehweg-für-Radfahrer-frei-Schilder
 Torfstr.: Bauarbeiten: Abschnitt der Fahrbahn gesperrt	q3::inwork 6849,14831 6837,14848 6739,14969
 #: next_check ^^^
@@ -1078,7 +1081,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: source_id: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025) (zwischenzeitlich inaktiv)
 #: source_id: viz2021:13.47353,52.50308,22.11.2025,08:00 (bis 14.12.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20251121
-#: last_checked: 2025-12-09
+#: last_checked: 2025-12-11
 #: next_check: 2025-12-14
 #: valid: 20251122-20251214
 Marktstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork; 15279,10862 15144,10905
