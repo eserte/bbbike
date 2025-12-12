@@ -259,7 +259,7 @@ sub run_checks {
 		    $die_text = "from date mismatch: $from_text vs. $from_field and $from_and_one_day_field in " . Dumper($o);
 		}
 	    }
-	    my $dont_check_end = $o->{text} =~ m{\b(?:evtl\.|eventuell) wird die (?:Sperrung|Baustelle|Einbahnstraßenregelung) verlängert};
+	    my $dont_check_end = $o->{text} =~ m{\b(?:evtl\.|eventuell|möglicherweise|vielleicht) (?:wird|werden) die (?:Sperrung|Baustelle|Bauarbeiten|Einbahnstraßenregelung) verlängert};
 	    if (!$dont_check_end) {
 		if (defined $until_day_range) {
 		    my $until_text_start = sprintf "%04d-%02d-%02d", $+{until_y},$until_m,$until_day_range->[0];
