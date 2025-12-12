@@ -251,14 +251,14 @@ RB63	R 38317,52908 38464,53273 38650,54555 38485,55382 38375,55910 38227,56637 3
 #: by: https://www.berliner-zeitung.de/mensch-metropole/ende-einer-regionalbahnstrecke-im-dezember-ist-schluss-wohl-fuer-immer-brandenburg-rb63-schorfheidebahn-li.279137
 #: by: https://www.berliner-zeitung.de/mensch-metropole/die-letzte-fahrt-steht-bevor-so-wird-gegen-das-ende-der-rb63-protestiert-li.295479
 #: by: https://www.nordkurier.de/regional/uckermark/gutachter-zu-rb-63-richtung-berlin-schaetzen-nutzen-hoeher-ein-als-kostenaufwand-2235454
-#: note: seit 2006-12-10 stillgelegt, Ersatz durch Bus 515 vvv
-#: note: Dezember 2018 bis 2022-12-11 wieder in Betrieb (RB64) vvv
+#: historical_note: seit 2006-12-10 stillgelegt, Ersatz durch Bus 515 vvv
+#: historical_note: Dezember 2018 bis 2022-12-11 wieder in Betrieb (RB64) vvv
 # Templin Stadt - Abzweig nach Britz
 	R0 16162,79250 16196,79268 17499,79944
 # Joachimsthal - Templin
 	R0 32819,64323 32187,64661 31433,65677 29635,68699 29571,69085 29531,69814 29542,69987 29573,71105 29788,71717 29854,72355 29767,72721 29662,73276 29035,73985 28755,74478 28494,74673 27995,74892 27693,75450 27216,75902 26811,76231 24914,77407 24754,77507 23914,78071 23317,78678 22939,78762 22419,78685 21114,78700 20733,78780 19366,79190 18459,79609 18303,79727 18139,79909 18019,79986 17784,80044 17499,79944
-#: note ^^^
-#: note ^^^
+#: historical_note ^^^
+#: historical_note ^^^
 # 
 # Potsdam - Golm
 RB20,RB21,RB22,RB23	RC -17293,-1183 -17717,-1398 -18008,-1418 -18495,-1234 -18629,-1140 -18723,-1036 -18833,-721 -18731,-30
@@ -316,6 +316,7 @@ RB24 Süd	RC 11898,-5865 11669,-5984 11532,-6102 11438,-6246 11392,-6413 11401,-6
 #: by: https://entwicklungsstadt.de/flughafen-express-fex-neue-route-ab-dezember-gesundbrunnen-faellt-weg/
 #: by: https://www.tagesspiegel.de/berlin/berliner-flughafenexpress-bekommt-schnellere-route-fex-fahrt-in-zukunft-nicht-mehr-uber-gesundbrunnen-und-ostkreuz-13577269.html
 #: by: https://www.entwicklungsstadt.de/dresdner-bahn-startet-neue-flughafenverbindung-und-kuerzere-fahrzeiten-fuer-berlin/
+#: by: https://www.entwicklungsstadt.de/fahrplanwechsel-2025-neue-dresdner-bahn-verkuerzt-wege-in-der-hauptstadtregion/
 #: XXX voraussichtlich zum Fahrplanwechsel 2025 fertig
 #: osm_watch: way id="909756344" version="21" brb
 #: osm_watch: way id="459557124" version="23" brb
@@ -661,7 +662,7 @@ RE4,RB10,RB14,RB21	RB -748,13327 -541,13249 -316,13237 757,13346 1200,13396 1719
 # Verbindung Nordring - Bahn nach Spandau
 	R0 2121,13108 2101,13209 2038,13319 1935,13393 1849,13436 1719,13456
 # 
-#: note: stillgelegt ca. Mai 1998
+#: historical_note: stillgelegt ca. Mai 1998
 #: url: http://www.draisinenbahn.de/draisinenbahn-tiefensee/home.html
 Draisinenstrecke Tiefensee - Sternebeck	R0 38906,30514 39258,30800 39771,31291 40927,32000 41114,32011 41493,31863 41733,31921 41968,32025 42836,32047 43115,32047 43653,32154 44375,32073 44935,32046 45214,31875 45449,31874 45772,31936 46094,31869 46224,31860 46740,31919 48264,31569 49012,31245 49141,31223 49379,31055 50128,30936 50375,30836
 # Sternebeck - Wriezen
@@ -776,11 +777,11 @@ RE5	RC 13827,22126 13850,22200 13876,22344 13866,22474 13821,22604 13752,22704
 	R 48036,125243 47943,124134 47948,123895 48015,123724 48164,123584 48455,123493 49101,123488 52188,123497 53127,123500 53549,123442 53913,123318 54250,123119 58666,120403 61168,118626 61497,118402 61951,118177 62430,118009 63028,117870 63435,117794 64045,117660 64421,117480 69153,114509 69539,114325 71064,113823 71064,113820 71598,113693 76829,113351 77230,113287 77230,113284 77653,113147 78618,112782 81268,111771 81778,111672 82421,111634
 # REMOVED --- #: note: http://www.draisine.com
 #: by: https://www.nordkurier.de/uckermark/mit-draisinenfahrten-ab-templin-ist-jetzt-schluss-2447228502.html
-#: note: Draisinenstrecke bis 2021
+#: historical_note: Draisinenstrecke bis 2021
 ehemalige Draisinenstrecke Templin - Lychen	R0 14467,78138 14323,78040 14110,78020 13907,78091 13754,78213 13500,78538 12586,79198 11439,80579 10332,81646 8828,82824 7742,83758 6432,84733 5700,85190 5192,85780 4522,86237 4329,86450 3984,87567 3923,87730 3699,87902 3242,88471 3121,88654 2928,88776 2684,88837 2318,88877 2176,88918 2064,89009 1851,89416 1729,89517 1567,89548 1264,89478
 # REMOVED --- #: note: http://www.draisine.com
 #: by: https://www.nordkurier.de/uckermark/mit-draisinenfahrten-ab-templin-ist-jetzt-schluss-2447228502.html
-#: note: Draisinenstrecke bis 2021
+#: historical_note: Draisinenstrecke bis 2021
 ehemalige Draisinenstrecke Lychen - Fürstenberg	R0 1264,89478 460,89253 -281,88664 -850,88410 -1774,87750 -2617,87171 -3734,86927 -4475,87069 -5430,87151 -5887,87080 -6801,87252 -8089,87608 -8518,87628 -8812,87496 -8893,87354 -9031,87221
 Verbindungskurve Fürstenberg	R0 -8518,87628 -8914,87638 -9178,87730 -9599,88120
 #: url: http://www.draisinenbahn.de/draisinenbahn-mittenwalde/die-strecke.html

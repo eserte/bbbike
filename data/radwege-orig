@@ -1008,7 +1008,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-11-30
+#: last_checked: 2025-12-12
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1367,6 +1367,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.tagesspiegel.de/berlin/verkehrssenatorin-erfindet-verkehrssimulation-berlin-kapituliert-vor-chaos-um-neuen-a100-abschnitt-15018752.html
 #: by: https://www.tagesspiegel.de/berlin/100-tage-autobahn-chaos-im-berliner-osten-ich-bin-so-sauer-ich-hasse-es-ich-hasse-es-ich-hasse-es-14911031.html
 #: by: https://www.tagesspiegel.de/berlin/hupen-stress-larm-und-schlechte-luft-an-der-elsenbrucke-berliner-grune-fordern-polizeiprasenz-tag-und-nacht-15040339.html
+#: by: https://www.tagesspiegel.de/berlin/verkehrssenatorin-kundigt-wesentliche-entlastung-an-elsenbrucke-in-berlin-wird-ende-januar-eroffnet-15044587.html (neuer Brückenteil Ende Januar 2026 teilweise fertig)
+#: by: https://www.entwicklungsstadt.de/verkehrschaos-an-der-elsenbruecke-gruene-praesentieren-acht-punkte-plan-zur-entlastung/
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1845,7 +1847,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2025-10-17 (osm) vvv
+#: last_checked: 2025-12-04 (youtube) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -1879,7 +1881,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2025-11-27
+#: last_checked: 2025-12-12 (webcam)
 #: check_frequency: 21d
 	RW0; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
@@ -2304,7 +2306,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-12-10 vvv
+#: last_checked: 2025-12-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -3301,11 +3303,11 @@ Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 140
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2025-11-20
-#: next_check: 2025-12-31
-#: valid: -20251231
+#: last_checked: 2025-12-12
+#: next_check: 2026-03-31
+#: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
-#: valid: !-20251231
+#: valid: !-20260331
 relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
@@ -3328,11 +3330,11 @@ relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2025-11-20
-#: next_check: 2025-12-31
-#: valid: -20251231
+#: last_checked: 2025-12-12
+#: next_check: 2026-03-31
+#: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
-#: valid: !-20251231
+#: valid: !-20260331
 relativ schmale Radspuren	RW3; 15106,11598 15153,11691
 relativ schmale Radspuren	RW3; 15153,11691 15202,11789 15256,11884
 #: note ^^^
@@ -5231,13 +5233,16 @@ Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 #: next_check_id: HANSA-2025
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
 #: last_checked: 2025-11-08
+#: next_check: 2025-12-22 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 15875,16816 15929,16870 15986,16922
 #: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;
 #: last_checked: 2025-11-08
+#: next_check: 2025-12-22 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
 	RW3; 16139,17017 16296,17114 16318,17128 16352,17150
 #: last_checked: 2025-11-08
+#: next_check: 2025-12-22 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 16352,17150 16460,17214
 neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 	RW2; 16578,17285 16837,17440
@@ -5512,7 +5517,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2025-11-08 vvv
+#: last_checked: 2025-12-12 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str., Richtung Westen
@@ -6109,7 +6114,7 @@ Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15
 #: next_check_id: WEISSETAUBE-2025
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
 #: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734
-#: last_checked: 2025-11-08
+#: last_checked: 2025-12-12
 	RW0; 17638,14945 17684,14858 17693,14840 17745,14734
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17745,14734 17791,14639
 # 
@@ -7413,7 +7418,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17569,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023) (inaktiv)
 #: XXX Asphaltierung des Radwegs --- wird auch dieser Abschnitt asphaltiert? (noch keine Bauarbeiten) vvv
-#: last_checked: 2025-09-08 vvv
+#: last_checked: 2025-12-12 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-31 vvv
 Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16861,18009 16905,17949 16945,17900 16981,17855
@@ -8266,7 +8271,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: adac:1733244580 (inaktiv)
 #: source_id: adac:256162332 (inaktiv)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_289064 (kein Endedatum)
-#: source_id: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 2x)
+#: source_id[inactive]: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 3x)
 #: source_id: bvg2024:172#HIM_FREETEXT_289063 (kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293426 (Haltestellenverlegung, kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293415 (Haltestellenverlegung, kein Endedatum)

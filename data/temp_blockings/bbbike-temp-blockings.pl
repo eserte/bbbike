@@ -39653,6 +39653,7 @@ EOF
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
+#: note: in einem YouTube-Video vom 4.12.2026 kein Radfahren-verboten-Schild mehr zu sehen
 #: osm_watch: way id="37861386" version="34"
 #: osm_watch: way id="1231148375" version="9"
 #: priority: #B
@@ -40843,7 +40844,7 @@ EOF
 # REMOVED --- #: note: Halteverbotsschilder bis 12.08.2023 --- # REMOVED (Baustelle noch da, aber Fahrbahn offen) --- #: last_checked: 2023-08-06 --- #: next_check: 2023-08-12 --- #: also_indoor: traffic (re-H,re-G,T,ex-W) --- #: note: laut Baustellenschild der Wasserbetriebe gibt es hier Arbeiten bis Juli 2026 --- #: last_checked: 2025-12-09 (so gut wie fertig) --- #: check_frequency: 14d (traffic) --- #: next_check: 2026-07-31 (Baustellenschild der Wasserbetriebe) --- westliche Dolgenseestr.	q4::inwork 17383,9719 17391,9746 17404,9794
 #: XXX Laut BA gilt die verkehrsrechtliche Anordnung bis 29.08.2026; laut Aushang gehen die Bauarbeiten sogar bis Februar 2027
 #: note: siehe auch temporär aufgehobene Einbahnstraßenregelung in der westlichen Mellenseestr.
-#: also_indoor: traffic (no-T,no-G)
+#: also_indoor: traffic (T,no-G,H)
 #: osm_watch: note 5085082 1
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
@@ -43556,7 +43557,7 @@ EOF
 #: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
-#: source_id: viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025)
+#: source_id: LMS-BR:390063/72 viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025) (bis 19.12.2025)
 #: source_id: LMS-BR:390300/72 viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025) (bis 12.12.2025) (bis 19.12.2025)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
@@ -47282,7 +47283,7 @@ EOF
 EOF
      },
      { from  => 1738450800, # 2025-02-02 00:00
-       until => $isodate2epoch->("2026-08-31 23:59:59"), # 1764543600, # 2025-12-01 00:00
+       until => 1765548535, # $isodate2epoch->("2026-08-31 23:59:59"), # 1764543600, # 2025-12-01 00:00
 #      text  => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung der Fahrbahn, vom 03.02.2025 bis voraussichtlich 30.11.2025',
 #      text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich 30.11.2025',
        text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich Ende August 2026',
@@ -47296,16 +47297,11 @@ EOF
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
 #: source_id: LMS-BR:359627/72 viz2021:13.46101,52.5454,05.02.2025,07:00 viz2021:13.46101,52.5454, (bis 30.11.2025) (noch immer Smetanastr.?, bis 05.12.2025) (bis 31.08.2026)
 #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-#: last_checked: 2025-10-23 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: last_checked: 2025-12-12 (vorfristig beendet) --- #: check_frequency: 120d --- #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 # REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
 # REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
 Chopinstr.	q4::inwork 14195,15604 14321,15636
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 EOF
      },
      { from  => 1737871200, # 2025-01-26 07:00
@@ -48089,12 +48085,11 @@ EOF
        until => undef, # XXX
 #      text  => 'Erkelenzdamm: in Höhe Wassertorplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Kohlfurter Str.: vor Erkelenzdamm Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
-       text  => 'Kohlfurter Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
+       text  => 'Regina-Jonas-Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GITSCHINER-2025
-#: XXX Haben die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun?
-#: XXX Ist der westliche Abschnitt der Kohlfurter Str. nun auch gesperrt? Laut rbb nur Richtung Osten gesperrt.
+#: note: Evtl. hatten die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun, deshalb der next_check_id-Eintrag.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
 #: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
@@ -48103,7 +48098,7 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
-Kohlfurter Str.	q4::inwork 11094,10261 11274,10184
+Regina-Jonas-Str.	q4::inwork 11094,10261 11274,10184
 EOF
      },
      { from  => undef, # 
@@ -48222,7 +48217,8 @@ EOF
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
-#: last_checked: 2025-12-04 (website check) vvv
+#: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr.; demnächst in der Landjägerstr. (nördlich Amtsstr.?)
+#: last_checked: 2025-12-11 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -48271,18 +48267,18 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # 
 #: note: laut Website möglicherweise bis 16.01.2026
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: viz2021:13.55418,52.43793, (bis 12.12.2025)
+#: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-12-03 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
-#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: viz2021:13.55146,52.44, (bis 12.12.2025)
+#: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-12-03 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
-#: next_check: 2025-12-12 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 # 
 #: check_frequency ^^^
@@ -49142,7 +49138,7 @@ EOF
 # MOVED --- #: note: es gibt Halteverbotsschilder bis zum 16.08.2025 und bis zum 30.08.2025 --- #: note: mittlerweile (Mitte September 2025) eine kurze Sperrung an der Koppenstr., aber zumindest am Sa weggeschobene Barrieren
 # REMOVED (nur noch Vorfahrt vor dem Gegenverkehr?) --- #: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt? ---
 # REMOVED ---	q4::inwork; 12238,11931 12413,11901
-#: last_checked: 2025-12-01
+#: last_checked: 2025-12-12
 #: check_frequency: 45d
 #: next_check: 2025-12-19 (Halteverbotsschilder)
 	q3::inwork 12238,11931 12413,11901
@@ -49158,7 +49154,7 @@ EOF
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-21 (daf)
+#: last_checked: 2025-12-12
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -49563,7 +49559,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-12
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50223,16 +50219,20 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Almazeile: wegen Bauarbeiten komplett gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Almazeile: wegen Bauarbeiten komplett gesperrt (Stand September 2025), Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_18_1093_1148_online.pdf (Einziehungsabsicht von öffentlich gewidmetem Straßenland)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_08_0417_0480_online.pdf (Einziehung von Straßenland)
+#: by: https://www.entwicklungsstadt.de/neue-feuerwache-tegelort-eingeweiht-76-millionen-euro-bau-staerkt-freiwillige-feuerwehr/
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1625291.php
 #: osm_watch: way id="5046358" version="12"
 #: osm_watch: note 4945213 1
 #: XXX wie wird die Situation nach den Hoch+Tiefbauarbeiten aussehen?
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder passierbar?
 #: last_checked: 2025-09-03
 #: check_frequency: 120d
+#: next_check: 2025-12-11
 	2::inwork -1616,18112 -1660,18114
 EOF
      },
@@ -51074,7 +51074,8 @@ EOF
        text  => 'Hansastr.: Gleisbauarbeiten und Fahrbahnsanierung, ggfs. kann die Straße nicht überquert werden',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: last_checked: 2025-11-08
+#: last_checked: 2025-12-12
+#: note: Gleisbauarbeiten weitgehend beendet, aber die Absperrgitter stehen weiterhin
 ## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 15986,16922 15929,16870 15875,16816\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
 #       3nocross::ignrte 15986,16922 15929,16870 15875,16816
 Falkenberger Str. -> Hansastr.	3::inwork 15888,16865 15929,16870 15986,16922
@@ -51278,8 +51279,8 @@ EOF
        text  => 'Kniephofstr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege an der Altmarkstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (G[zu lang],no-T)
-#: last_checked: 2025-11-29 vvv
+#: also_indoor: traffic (G[zu lang],no-T.no-H,no-W)
+#: last_checked: 2025-12-12 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q4::inwork 6124,5983 6226,5995 6318,6006
 Kissinger Str.	q3::inwork 6226,5995 6213,6135
@@ -51354,6 +51355,26 @@ EOF
 #: last_checked: 2025-12-10 (VIZ-Verkehrsmeldung)
 #: check_frequency: 7d (traffic)
 	q4::inwork 10301,13701 10220,13694
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rüdickenstr.: Baustelle, Fahrbahn gesperrt, Gehweg für Radfahrer frei, Bordsteine, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: RUEDICKEN-2025
+#: also_indoor: traffic (G[zu lang],T[zu kurz])
+#: last_checked: 2025-12-12
+	q3::inwork 17159,17631 17186,17593 17264,17489
+EOF
+     },
+     { from  => 1765432800, # 2025-12-11 07:00
+       until => 1767196800, # 2025-12-31 17:00
+       text  => 'Bettinastr.: Bauarbeiten zwischen Fontanestr. und Douglasstr., evtl. sind auch Radfahrer von der Sperrung betroffen, vom 12.12.2025 07:00 bis 31.12.2025 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:392993/72 viz2021:13.263135,52.485936,12.12.2025,07:00 (bis 31.12.2025)
+	q4::inwork 759,8712 926,8752
 EOF
      },
     );
