@@ -33,11 +33,14 @@ Jacobsdorf (Mark)	R 75478,-6977
 Pillgram	R 78352,-6456
 Frankfurt (O)-Rosengarten	R 83465,-6250
 Frankfurt (Oder)	R 88456,-6331
+#: section: disused vvv
 # REMOVED (alte Aliase nicht mehr gebraucht) --- #: alias: Berlin-Schönefeld Flughafen --- #: alias: Flughafen Berlin-Schönefeld
 #: note: zwischen 2020-10-31 und 2022-12-10 kein Regionalverkehr
 #: oldname: -20201025: Berlin-Schönefeld
 #: oldname: -20231210: Flughafen BER - Terminal 5
-Schönefeld (b Berlin)	RC 18055,-1466
+#: historical_note: ab 2025-12-14 ohne Regionalbahnverkehr, vorher RC
+Schönefeld (b Berlin)	R0 18055,-1466
+#: section ^^^
 Berlin-Hohenschönhausen	RB 17607,18021
 Berlin-Karow	RB 14608,23364
 Bernau	RC 22841,30263
@@ -112,10 +115,9 @@ Karstädt	RBau -104304,81935
 Neustadt (Dosse)	RBau -55182,48568
 #: XXX R
 Wusterhausen (Dosse)	RBau -54833,52477
-#: XXX R
-Kyritz	RBau -59455,58460
 #: next_check ^^^
 # 
+Kyritz	R -59455,58460
 Birkenwerder (b Bln)	RC 2150,31363
 Zeesen	R 26672,-15428
 Bestensee	R 26727,-17991
@@ -536,7 +538,8 @@ Schulzendorf	R0 55571,30338
 #: section: disused vvv
 Bergholz (bei Potsdam)	R0 -11212,-7688
 #: section ^^^
-Schmachtenhagen	RC 5206,41006
+#: historical_note: bis 2025-12-14 RC, seitdem ist die Strecke stillgelegt
+Schmachtenhagen	R0 5206,41006
 Waldsieversdorf	R 56716,15990
 Buckow (Märk. Schweiz)	R 55959,18038
 Blöhnsdorf	R -22883,-50700
