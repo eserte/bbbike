@@ -44,9 +44,8 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # REMOVED --- #: valid: -20251112
 # REMOVED --- Kladower Damm/Runebergweg/Topeliusweg: Gegenverkehrsregelung	X::inwork::alternating -6982,5237
 # 
-#: source_id: viz2021:13.44834,52.4684,26.09.2025,07:00 (bis 21.11.2025) (inaktiv)
-#: source_id: LMS-BR:384838/72 viz2021:13.44834,52.4684, (bis 19.12.2025)
-#: last_checked: 2025-09-27
+#: source_id: LMS-BR:384838/72 viz2021:13.44834,52.4684,26.09.2025,07:00 viz2021:13.44834,52.4684, (bis 21.11.2025) (bis 19.12.2025)
+#: last_checked: 2025-12-13
 #: next_check: 2025-12-19
 #: valid: -20251219
 Lahnstr./Mittelbuschweg: Gegenverkehrsregelung	X::inwork::alternating 13500,7018
@@ -3550,7 +3549,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: source_id: LMS-BR:381878/72 viz2021:13.43277,52.47837,01.09.2025,07:00 (bis 14.12.2025) (bis 27.02.2026)
 #: XXX laut Verkehrsmeldung nun Neubau einer Ampel, bis Mitte Dezember 2025, mittlerweile bis Ende Februar 2026
 #: priority: #D
-#: last_checked: 2025-10-08
+#: last_checked: 2025-12-13
 #: next_check: 2026-02-27
 provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583

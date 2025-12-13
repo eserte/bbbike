@@ -10,25 +10,6 @@
 # 
 ### Friedrichshain ###
 # 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_17_1113_1140_online.pdf
-#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12003 (Realisierung des Teilgebietes C: 2025)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_34_2201_2272_online.pdf (Teileinziehung)
-#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12133 (Vorlage zur Kenntnisnahme) (Beschluss Überweisung)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php
-#: osm_watch: note 4919919 7
-#: note: Halteverbotsschilder vom 1.12. bis 12.12.2025
-#: last_checked: 2025-12-10 vvv
-#: check_frequency: 3d vvv
-# REMOVED --- #: next_check: 2025-12-12 (Halteverbotsschilder) vvv
-# REMOVED --- #: next_check: 2025-12-31 (BVV-Drucksache) vvv
-#: note: hier können die Absperrungen weggeschoben sein
-Simplonstr.: Fußgängerzone für Radfahrer frei, allerdings noch mit Absperrungen	q3::inwork 13996,11631 13992,11605 14031,11569
-#: note: hier können die Absperrungen weggeschoben sein
-Gabriel-Max-Str.: Absperrungen	q3::inwork 14065,11605 14049,11553
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
 # REMOVED --- #: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025) (inaktiv)
 # REMOVED --- #: last_checked: 2025-09-10
 # REMOVED --- #: next_check: 2025-09-12
@@ -959,7 +940,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2025-11-07
+#: last_checked: 2025-12-13
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1078,7 +1059,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 ### Lichtenberg ###
 # 
 #: next_check_id: TRAM21-2025
-#: source_id: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025) (zwischenzeitlich inaktiv)
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025) (zwischenzeitlich inaktiv)
 #: source_id: viz2021:13.47353,52.50308,22.11.2025,08:00 (bis 14.12.2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20251121
 #: last_checked: 2025-12-11
@@ -5175,6 +5156,8 @@ Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unter
 # 
 Scharnweberstr.: Fußgängerzone für Radfahrer frei	q1+ 14675,11964 14783,11949
 Simplonstr.: Fußgängerzone für Radfahrer frei	q1+ 14254,11377 14181,11434
+Simplonstr.: Fußgängerzone für Radfahrer frei	q1+ 13996,11631 13992,11605 14031,11569
+Gabriel-Max-Str.: Fußgängerzone für Radfahrer frei	q1+ 14065,11605 14049,11553
 #: XXX_prog mit Anhänger aber ggfs. q2
 #: note: außerdem: Bodenschwellen, allerdings nur für Anhänger relevant, q0-
 Niemannstr.: Fußgängerzone für Radfahrer frei	q1+ 14254,11377 14211,11229
@@ -5457,7 +5440,11 @@ Lindenallee (Friedrichshagen): zwei Bodenschwellen	q1 25294,5761 25479,5753
 #: by: https://entwicklungsstadt.de/bodenschwellen-auf-dem-tempelhofer-feld-sicherheitsmassnahme-oder-stoerfaktor/
 Flughafen Tempelhof, Eingang Herrfurthstr.: zahlreiche Bodenschwellen	q2 11418,8015 11439,7894 11460,7802
 #: note: im Bereich von allen Eingängen wurden mehrere Bodenschwellenreihen verlegt
-Flughafen Tempelhof, Weg parallel zur Oderstr.: zahlreiche Bodenschwellen	q2 11458,7897 11490,7735 11509,7636 11527,7530 11547,7432 11552,7396 11589,7353
+Flughafen Tempelhof, Weg parallel zur Oderstr.: zahlreiche Bodenschwellen	q2 11458,7897 11490,7735 11509,7636 11527,7530 11547,7432 11552,7396
+Flughafen Tempelhof, Rundkurs: einige Bodenschwellen	q2+ 11460,7802 11470,7744 11472,7732 11541,7377
+Flughafen Tempelhof, Rundkurs: einige Bodenschwellen	q2+ 11608,7267 11598,7264 11407,7198
+Flughafen Tempelhof, Eingang Crashgate: zahlreiche Bodenschwellen	q2 11593,7317 11596,7280 11598,7264
+Flughafen Tempelhof, Eingang Crashgate: zahlreiche Bodenschwellen	q2 11608,7267 11596,7280
 # 
 #: XXX_prog: BS (ansonsten entfernen) vvv
 Loerkesteig: Bordstein	q2 2873,24313 2925,24350

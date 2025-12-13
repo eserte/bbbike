@@ -33252,7 +33252,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-11-17
+#: last_checked: 2025-12-13
 #: check_frequency: 90d
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -36149,7 +36149,7 @@ EOF
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
-#: last_checked: 2025-11-27 vvv
+#: last_checked: 2025-12-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -36158,6 +36158,7 @@ Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite
 #: osm_watch: way id="824500931" version="10"
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
+Mierstr.: Einbahnstraßenregelung	q4::inwork; 13627,7047 13575,7200
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
 #: osm_watch: way id="970153788" version="10"
 #: osm_watch: way id="971064429" version="10"
@@ -36461,7 +36462,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-13
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36487,7 +36488,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2025-11-29 vvv
+#: last_checked: 2025-12-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -37967,7 +37968,7 @@ EOF
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2025-11-30 (traffic) vvv
+#: last_checked: 2025-12-13 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
 #: next_check: 2026-05-18 (VIZ-Verkehrsmeldung) vvv
@@ -40845,7 +40846,7 @@ EOF
 #: XXX Laut BA gilt die verkehrsrechtliche Anordnung bis 29.08.2026; laut Aushang gehen die Bauarbeiten sogar bis Februar 2027
 #: note: siehe auch temporär aufgehobene Einbahnstraßenregelung in der westlichen Mellenseestr.
 #: also_indoor: traffic (T,no-G,H)
-#: osm_watch: note 5085082 1
+#: osm_watch: note 5085082 2
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
 #: last_checked: 2025-12-11 vvv
@@ -42176,7 +42177,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/bund-baut-neue-bundesgeschaeftsstelle-auf-dem-vollgut-areal-in-neukoelln/ (Bezug im zweiten Quartal 2026)
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: last_checked: 2025-11-07
+#: last_checked: 2025-12-13
 #: check_frequency: 120d
 #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 12407,8177 12545,8209
@@ -42267,18 +42268,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2025-12-19 17:00:00"), # 1735833600, # 2025-01-02 17:00
+       until => undef, # $isodate2epoch->("2025-12-19 17:00:00"), # 1735833600, # 2025-01-02 17:00
 #      text  => 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025',
 #      text  => 'Metzer Str.: Bauarbeiten, Fahrbahn zwischen Schönhauser Allee und Kollwitzstr. gesperrt, Umwege, vermutlich bis Anfang 2025',
-       text  => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis Ende 2025',
+       text  => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis Ende 2025, evtl. wird die Baustelle verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029) (inaktiv)
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029) (inaktiv)
-#: source_id: viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025)
-#: source_id: viz2021:13.41245,52.53267,02.01.2025,06:43 (bis 19.12.2025) (inaktiv)
-#: source_id: viz2021:13.41245,52.53267, (bis 19.12.2025)
+#: source_id: LMS-BR:308232/72 viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025)
+#: source_id: LMS-BR:308231/72 viz2021:13.41245,52.53267,02.01.2025,06:43 viz2021:13.41245,52.53267, (bis 19.12.2025)
 #: osm_watch: way id="23121446" version="38"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
@@ -44576,12 +44576,12 @@ EOF
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
 #: source_id: viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025)
-#: source_id: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum)
+#: source_id: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
 #: source_id: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-10-09 (BVV/BA) vvv
-#: next_check: 2025-12-31 (BA-Seite, evtl. für die Vereinsstr. fortsetzen?) vvv
+#: next_check: 2025-12-24 (BVG-Störungsmeldung) vvv
 Winckelmannstr.: Havarie, evtl. sind auch Radfahrer betroffen	q4::inwork 17503,4148 17507,4216
 Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4159 17405,4151
 #: next_check ^^^
@@ -46505,6 +46505,7 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901514334443909380
 #: by: https://www.erkner.de/rathaus-und-buergerservice/buergerinformationen/aktuelles/neuigkeiten/2025-1/ausbau-der-friedrichstrasse-beginnt.html (bis voraussichtlich Oktober 2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~11-12-2025-l30-erkner-verzoegerung
 #: osm_watch: way id="336698811" version="9"
 Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 #: osm_watch: way id="5057517" version="22"
@@ -49009,7 +49010,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-12-11 vvv
+#: last_checked: 2025-12-13 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -50037,7 +50038,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-08
+#: last_checked: 2025-12-13
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50227,7 +50228,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/neue-feuerwache-tegelort-eingeweiht-76-millionen-euro-bau-staerkt-freiwillige-feuerwehr/
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1625291.php
 #: osm_watch: way id="5046358" version="12"
-#: osm_watch: note 4945213 1
+#: osm_watch: note 4945213 2
 #: XXX wie wird die Situation nach den Hoch+Tiefbauarbeiten aussehen?
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder passierbar?
 #: last_checked: 2025-09-03
@@ -50484,7 +50485,7 @@ EOF
        data  => <<'EOF',
 # REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-12-04 vvv
+#: last_checked: 2025-12-13 vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
 Corinthstr.	q3::inwork; 14447,10491 14608,10409
@@ -50563,7 +50564,7 @@ EOF
 #: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-12 (architektur-urbanistik)
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -50986,7 +50987,6 @@ EOF
      },
      { from  => 1761890400, # 2025-10-31 07:00
        until => 1798736400, # 2026-12-31 18:00
-       dont_check_date => 1, # XXX check script cannot cope with "Stand DD.MM.YYYY"
 #      text  => 'Knaackstr.: Bauarbeiten zwischen Diedenhofer Str. und Prenzlauer Allee, Sperrung geplant (Stand 2.11.2025: noch keine Sperrung), außerdem Sperrung der Kolmarer Str., vom 01.11.2025 07:00 bis voraussichtlich Ende 2026',
 #      text  => 'Knaackstr.: Bauarbeiten zwischen Wasserturmplatz und Prenzlauer Allee, mögliche Sperrung, außerdem Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
        text  => 'Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
@@ -51347,12 +51347,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Linienstr.: Wasserrohrbruch, Sperrung zwischen Kleine Rosenthaler Str. und Rosenthaler Str., evtl. sind auch Radfahrer betroffen, Ende der Bauarbeiten unbekannt',
+       text  => 'Linienstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Kleine Rosenthaler Str. und Rosenthaler Str., Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: LMS-BR:392756/72 viz2021:13.40303,52.52899, (kein Endedatum)
 #: also_indoor: traffic (G,no-T,H,W)
-#: last_checked: 2025-12-10 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-12-12 (mapillary)
 #: check_frequency: 7d (traffic)
 	q4::inwork 10301,13701 10220,13694
 EOF

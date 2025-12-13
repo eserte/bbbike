@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-12-08 vvv
+#: last_checked: 2025-12-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1369,6 +1369,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.tagesspiegel.de/berlin/hupen-stress-larm-und-schlechte-luft-an-der-elsenbrucke-berliner-grune-fordern-polizeiprasenz-tag-und-nacht-15040339.html
 #: by: https://www.tagesspiegel.de/berlin/verkehrssenatorin-kundigt-wesentliche-entlastung-an-elsenbrucke-in-berlin-wird-ende-januar-eroffnet-15044587.html (neuer Brückenteil Ende Januar 2026 teilweise fertig)
 #: by: https://www.entwicklungsstadt.de/verkehrschaos-an-der-elsenbruecke-gruene-praesentieren-acht-punkte-plan-zur-entlastung/
+#: by: https://www.morgenpost.de/berlin/article410688105/c.html
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1397,7 +1398,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-12-11 vvv
+#: last_checked: 2025-12-13 vvv
 #: check_frequency: 30d (neue Radverkehrsführung kommt vermutlich nicht mehr) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt+Tsp zum Ersatzneubau) vvv
@@ -2301,6 +2302,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.berliner-woche.de/mitte/c-bauen/spree-unter-muehlendammbruecke-zwei-monate-gesperrt_a434285
 #: by: https://www.tagesspiegel.de/berlin/gefahr-von-spannstahlbruchen-einsturzgefahrdete-berliner-muhlendammbrucke-soll-ab-mai-2026-neu-gebaut-werden-14994923.html
 #: by: https://www.entwicklungsstadt.de/einsturzgefahr-der-muehlendammbruecke-berlin-treibt-neubau-ab-2026-voran/
+#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13392 (Antrag zur Barrierefreiheit der Anbindung des Rolandufers)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/muehlendammbruecke/
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029) (inaktiv)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
@@ -3244,7 +3246,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2025-12-11
+#: last_checked: 2025-12-13
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3265,7 +3267,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-12-11
+#: last_checked: 2025-12-13
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7837,7 +7839,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2025-11-29 vvv
+#: last_checked: 2025-12-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7884,7 +7886,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-11-29 vvv
+#: last_checked: 2025-12-13 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8766,8 +8768,13 @@ gemeinsamer Geh- und Radweg, alter Beton	RW2; 20915,17584 20929,17685 20853,1776
 	RW6;RW6 22101,10985 22146,10995 22172,10996
 	RW6;RW6 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
 	RW6;RW6 22131,11084 22137,11033 22146,10995
-#: note: außerdem stehen hier meistens einige pausierende Busse
-Busspur nicht für Radfahrer freigegeben	RW0; 15598,6294 15725,6235
+#: historical_note: früher nicht für Radfahrer freigegeben, mittlerweile verbreitert
+#: XXX die Busspur ist auch für Radfahrer gedacht (siehe BA-Pressemitteilung), aber noch gar nicht ausgeschildert
+#: last_checked: 2025-12-13
+#: next_check: 2025-12-17 (BA-Pressemitteilung: Anradeln)
+breite Busspur	RW5; 15505,6342 15598,6294 15725,6235
+#: historical_note: früher (bis Dez 2025) ohne Radverkehrsanlage
+	RW3; 15725,6235 15598,6294 15505,6342
 	RW3; 15725,6235 15768,6214
 Tempo 10	RW6;RW6 14996,12462 14801,12517
 Tempo 10	RW6;RW6 14798,12502 15005,12443

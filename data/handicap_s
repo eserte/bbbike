@@ -3,8 +3,6 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Simplonstr.: Fußgängerzone für Radfahrer frei, allerdings noch mit Absperrungen	q3::inwork 13996,11631 13992,11605 14031,11569
-Gabriel-Max-Str.: Absperrungen	q3::inwork 14065,11605 14049,11553
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 Boxhagener Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q4::inwork 14513,11657 14561,11600
 Glatzer Str.: Baustelleneinrichtungsfläche auf der Fahrbahn	q4::inwork 14570,11589 14651,11666
@@ -2574,6 +2572,8 @@ Wickenhagenweg: Grünanlage, einige Fußgänger	q3 -6137,864 -6125,838
 Singerstr.: Fußgängerzone für Radfahrer frei, höhere Fußgängerfrequenz zum Unterrichtsbeginn	q1 11635,12398 11845,12292
 Scharnweberstr.: Fußgängerzone für Radfahrer frei	q1 14675,11964 14783,11949
 Simplonstr.: Fußgängerzone für Radfahrer frei	q1 14254,11377 14181,11434
+Simplonstr.: Fußgängerzone für Radfahrer frei	q1 13996,11631 13992,11605 14031,11569
+Gabriel-Max-Str.: Fußgängerzone für Radfahrer frei	q1 14065,11605 14049,11553
 Niemannstr.: Fußgängerzone für Radfahrer frei	q1 14254,11377 14211,11229
 Maxstr.: Fußgängerzone für Radfahrer frei	q1 7781,15804 7738,15838
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031
@@ -2699,7 +2699,11 @@ In den Alboingärten: Fahrbahnanhebungen	q1 7936,6089 7739,6099 7646,6031 7638,59
 Lindenallee (Friedrichshagen): zwei Bodenschwellen	q1 25294,5761 25479,5753
 (Am Sudhaus - Isarstr.): einige Fußgänger	q2 12284,8195 12340,8208 12397,8221 12386,8274 12382,8292
 Flughafen Tempelhof, Eingang Herrfurthstr.: zahlreiche Bodenschwellen	q2 11418,8015 11439,7894 11460,7802
-Flughafen Tempelhof, Weg parallel zur Oderstr.: zahlreiche Bodenschwellen	q2 11458,7897 11490,7735 11509,7636 11527,7530 11547,7432 11552,7396 11589,7353
+Flughafen Tempelhof, Weg parallel zur Oderstr.: zahlreiche Bodenschwellen	q2 11458,7897 11490,7735 11509,7636 11527,7530 11547,7432 11552,7396
+Flughafen Tempelhof, Rundkurs: einige Bodenschwellen	q2 11460,7802 11470,7744 11472,7732 11541,7377
+Flughafen Tempelhof, Rundkurs: einige Bodenschwellen	q2 11608,7267 11598,7264 11407,7198
+Flughafen Tempelhof, Eingang Crashgate: zahlreiche Bodenschwellen	q2 11593,7317 11596,7280 11598,7264
+Flughafen Tempelhof, Eingang Crashgate: zahlreiche Bodenschwellen	q2 11608,7267 11596,7280
 Loerkesteig: Bordstein	q2 2873,24313 2925,24350
 Loerkesteig: Bordstein	q3 2956,24373 2969,24382
 (Bitterfelder Str./Otto-Rosenberg-Str. - Weg entlang der S-Bahn): enger Trampelpfad	q3 19896,16611 19890,16559
