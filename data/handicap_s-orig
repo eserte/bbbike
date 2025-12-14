@@ -28,24 +28,24 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 # 
-#: next_check_id: TRAM21-2025
-#: source_id: viz2021:13.463751,52.510709,22.11.2025,08:00 (bis 14.12.2025)
-#: last_checked: 2025-12-12 vvv
-#: next_check: 2025-12-14 vvv
-#: valid: 20251122-20251214 vvv
-#: note: Vorfahrtsstraßenregelung über Gryphiusstr. - Krossener Str.
-Boxhagener Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q4::inwork 14513,11657 14561,11600
-#: note: auf etwa 50-60m Länge
-Glatzer Str.: Baustelleneinrichtungsfläche auf der Fahrbahn	q4::inwork 14570,11589 14651,11666
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: TRAM21-2025
+# REMOVED --- #: source_id: viz2021:13.463751,52.510709,22.11.2025,08:00 (bis 14.12.2025)
+# REMOVED --- #: last_checked: 2025-12-12 vvv
+# REMOVED --- #: next_check: 2025-12-14 vvv
+# REMOVED --- #: valid: 20251122-20251214 vvv
+# REMOVED --- #: note: Vorfahrtsstraßenregelung über Gryphiusstr. - Krossener Str.
+# REMOVED --- Boxhagener Str.: Gleisbauarbeiten, Fahrbahn gesperrt	q4::inwork 14513,11657 14561,11600
+# REMOVED --- #: note: auf etwa 50-60m Länge
+# REMOVED --- Glatzer Str.: Baustelleneinrichtungsfläche auf der Fahrbahn	q4::inwork 14570,11589 14651,11666
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED --- #: source_id: viz2021:13.457875,52.512862,28.11.2024,14:29 (bis 13.12.2024) (inaktiv) --- #: XXX zu früh bei der VIZ gemeldet? -> aktuell läuft wohl die Umsetzung (auch wenn man vor Ort außer ein paar Halteverbotsschildern nicht viel sieht) -> mittlerweile stehen teilweise Verbotsschilder, ggfs. kommen noch ein physikalische Sperren -> mittlerweile stehen die ersten Poller --- #: last_checked: 2024-12-24 --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2024-12-13 --- Niederbarnimstr.: Bauarbeiten, Fahrbahn gesperrt	q4+::inwork 14073,11995 14055,11964
 # 
@@ -1058,32 +1058,17 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 # 
 ### Lichtenberg ###
 # 
-#: next_check_id: TRAM21-2025
-#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025) (zwischenzeitlich inaktiv)
-#: source_id: viz2021:13.47353,52.50308,22.11.2025,08:00 (bis 14.12.2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20251121
-#: last_checked: 2025-12-11
-#: next_check: 2025-12-14
-#: valid: 20251122-20251214
-Marktstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork; 15279,10862 15144,10905
+# REMOVED --- #: next_check_id: TRAM21-2025
+# REMOVED --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025) (zwischenzeitlich inaktiv)
+# REMOVED --- #: source_id: viz2021:13.47353,52.50308,22.11.2025,08:00 (bis 14.12.2025)
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20251121
+# REMOVED --- #: last_checked: 2025-12-11
+# REMOVED --- #: next_check: 2025-12-14
+# REMOVED --- #: valid: 20251122-20251214
+# REMOVED --- Marktstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork; 15279,10862 15144,10905
 # 
-# REMOVED --- #: next_check_id: ALFREDKOWALKE-2025
-# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Mitte November 2025, hier nur Kfz-Verkehr)
-# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lxnh2hsj23
-# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifwz3wmzuknwwd4xdfam555j65uqwce66iixldjvwr6lamkmawiwi@jpeg
-# REMOVED --- #: source_id: viz2021:13.51339,52.50534,20.10.2025,07:00 (bis 07.11.2025) (inaktiv)
-# REMOVED --- #: last_checked: 2025-10-25
-# REMOVED --- #: next_check: 2025-11-15
-# REMOVED --- #: valid: -20251120
-# REMOVED --- Alfred-Kowalke-Str.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Mitte November 2025	q2-::inwork; 18061,11240 18202,11253 18229,11256 18280,11266
-# 
-# REMOVED --- #: also_indoor: traffic (ex-H,G,ex-T)
-# REMOVED --- #: source_id: viz2021:13.518258,52.528778,01.04.2025,09:44 (hier nur Kfz-Verkehr, bis 30.04.2025) (inaktiv)
-# REMOVED --- #: last_checked: 2025-04-27 (traffic)
-# REMOVED --- #: next_check: 2025-04-30 (Halteverbotsschilder)
-# REMOVED --- #: valid: -20250430
-# REMOVED --- Rhinstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18024,13843 18050,13835 18134,13811 18198,13816
-# 
+# REMOVED --- #: next_check_id: ALFREDKOWALKE-2025 --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Mitte November 2025, hier nur Kfz-Verkehr) --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lxnh2hsj23 --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifwz3wmzuknwwd4xdfam555j65uqwce66iixldjvwr6lamkmawiwi@jpeg --- #: source_id: viz2021:13.51339,52.50534,20.10.2025,07:00 (bis 07.11.2025) (inaktiv) --- #: last_checked: 2025-10-25 --- #: next_check: 2025-11-15 --- #: valid: -20251120 --- Alfred-Kowalke-Str.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis Mitte November 2025	q2-::inwork; 18061,11240 18202,11253 18229,11256 18280,11266
+# REMOVED --- #: also_indoor: traffic (ex-H,G,ex-T) --- #: source_id: viz2021:13.518258,52.528778,01.04.2025,09:44 (hier nur Kfz-Verkehr, bis 30.04.2025) (inaktiv) --- #: last_checked: 2025-04-27 (traffic) --- #: next_check: 2025-04-30 (Halteverbotsschilder) --- #: valid: -20250430 --- Rhinstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 18024,13843 18050,13835 18134,13811 18198,13816
 # REMOVED (mittlerweile wegen Hochbauarbeiten nur eine Gegenverkehrsregelung in der Mitte des Abschnitts) --- #: XXX Laut Schild der Wasserbetriebe bis Juni 2025 --- #: note: eigentlich gibt es auch Beschränkungen im Kreuzungsbereich Bietzkestr./Archenholdstr. in Form von Verkehrsschildern, praktisch war freie Durchfahrt möglich; mittlerweile (Mitte Mai 2025) ist ein Abschnitt der Archenholdstr. gesperrt, Halteverbotsschilder bis 27.5.2025 --- #: also_indoor: traffic (none) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2025-08-23 --- #: check_frequency: 30d --- #: next_check: 2025-05-27 (Halteverbotsschilder) --- #: next_check: 2025-06-30 (Baustellenschild) --- #: valid: -20250630 --- Archenholdstr.: Fahrbahn an der Bietzkestr. gesperrt	q4::inwork 17062,11130 17155,11348 --- Archenholdstr.: Einbahnstraßenregelung	q4::inwork; 17155,11348 17275,11626
 # REMOVED (fast fertig) --- #: last_checked: 2025-04-04 --- #: check_frequency: 21d --- Fischerstr.: Bauarbeiten vor der Max-Taut-Schule, Fahrbahn gesperrt	q3::inwork 15970,10755 16080,10743
 # REMOVED --- #: next_check_id: SCHEFFEL-2024 --- #: last_checked: 2025-08-27 --- #: check_frequency: 14d --- #: next_check: 2025-05-31 (BA Lichtenberg) --- #: next_check: 2025-06-30 (infravelo) --- Am Stadtpark: Baustelleneinrichtung, Fahrbahn gesperrt	q2::inwork 15357,12813 15395,12762
@@ -1097,7 +1082,7 @@ Marktstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::in
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-12-09
+#: last_checked: 2025-12-14
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 

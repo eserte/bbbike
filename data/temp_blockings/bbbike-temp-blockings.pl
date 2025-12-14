@@ -21217,6 +21217,7 @@ EOF
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
+#: last_checked: 2025-12-12 (mapillary)
 #: next_check: 2025-12-20 (VIZ-Verkehrsmeldung)
 #: historical_note: früher q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
 	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
@@ -26147,7 +26148,7 @@ EOF
        until => $isodate2epoch->("2025-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12, start => "2023-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty; 2021/2022 ebenso, nur eine kleine, 2022/2023 ebenso
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -29601,7 +29602,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-12-08 vvv
+#: last_checked: 2025-12-14 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -30923,12 +30924,12 @@ EOF
 #: last_checked: 2019-12-14 vvv
 #: check_frequency: 7d vvv
 # REMOVED ---	q4::inwork; 13745,12118 13991,11992 14055,11964 14097,11949 14161,11930 14306,11889 14416,11815 14461,11738
-# REMOVED ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+# REMOVED ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14566,11594 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
 # REMOVED ---	q4::inwork; 14395,11753 14461,11738
 	q4::inwork 14416,11815 14395,11753
 # REMOVED (hier nicht mehr) ---	q3::inwork; 14395,11753 14461,11738
-# REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
+# REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14566,11594 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
 # REMOVED (nördl. Seite offen) --- #: note: Sperrung zur Gryphiusstr. ---	3::inwork 14550,11732 14513,11657 14461,11738 ---	3::inwork 14550,11732 14513,11657 14561,11600 ---	3::inwork 14550,11732 14513,11657 14496,11620 ---	3::inwork 14461,11738 14513,11657 14550,11732 ---	3::inwork 14561,11600 14513,11657 14550,11732 ---	3::inwork 14496,11620 14513,11657 14550,11732
 # REMOVED --- #: note: Umwege am Dreiecksplatz an der Gryphiusstr. ---	q4::inwork 14561,11600 14496,11620
 # REMOVED ---	q4::inwork 14496,11620 14513,11657
@@ -45838,7 +45839,7 @@ EOF
        until => undef, # XXX
 #      text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem IV. Quartal 2024 (Stand Ende März 2025: Bauarbeiten haben noch nicht begonnen)',
 #      text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem 10.04.2025',
-       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025',
+       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025 (Stand Mitte Dezember: befahrbar, allerdings noch nicht offiziell freigegeben)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
@@ -45854,8 +45855,8 @@ EOF
 #: osm_watch: way id="27260309" version="20"
 #: osm_watch: way id="372791173" version="12"
 #: osm_watch: way id="27260312" version="25"
-#: osm_watch: note 4673198 6
-#: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
+#: osm_watch: note 4673198 7
+#: add_fragezeichen: Ist der Mauerweg mittlerweile offiziell freigegeben?
 #: last_checked: 2025-10-15
 #: check_frequency: 60d
 #: next_check: 2025-12-31
@@ -49944,7 +49945,7 @@ EOF
 #: osm_watch: note 5038218 2
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-14
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50038,7 +50039,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-13
+#: last_checked: 2025-12-14
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50739,7 +50740,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2025-12-05
+#: last_checked: 2025-12-14
 #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
 EOF

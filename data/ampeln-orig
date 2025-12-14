@@ -406,7 +406,7 @@ Gürtelstr./Weserstr.	F0::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-12-12
+#: last_checked: 2025-12-14
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -619,7 +619,7 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: note: Anforderung für Radfahrer in Richtung Nord -> Süd, Richtung Süd -> Nord keine Ampel
-#: osm_watch: node id="1646650915" version="4"
+# REMOVED (laut osm wurde die Ampel entfernt) --- #: osm_watch: node id="1646650915" version="4"
 #: last_checked: 2025-06-22 (mapillary)
 #: check_frequency: 180d
 Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
@@ -629,6 +629,10 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
 ################################################################################
 #: section: Ampeln und Bahnübergänge in Berlin vvv
+#: next_check_id: TRAM21-2025
+#: note: provisorische Fußgängerampel, außerdem Signalisierung für Autofahrer Richtung Südosten wegen möglicher rangierender Straßenbahnen
+#: note: Anforderungsampel
+	F::inwork 14566,11594
 	X 9868,19023
 #: note: Anforderung
 	F 6776,5553
@@ -3709,6 +3713,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: off: 2019-12-26 holiday 12:38
 #: off: 2022-03-20 Sun 11:15
 #: off: 2024-09-08 Sun 08:14
+#: off: 2025-12-15 Sun 11:10
 #: off_rule: night Sun holiday
 	F 14802,11784
 # 

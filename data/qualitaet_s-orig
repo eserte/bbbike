@@ -380,7 +380,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2- 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-14
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -13535,9 +13535,13 @@ Bruno-Baum-Str.: Beton	Q0- 20260,15434 20286,15382 20123,15293 19997,15122
 Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 19768,14674 19719,14566 19687,14469
 #: historical_note: früher (bis 2025?): Asphalt mit Schäden, Q1
 #: historical_note: dann (bis Herbst 2025?): unbefestigte Baustraße, Q2
-#: XXX die Straße wird neu gemacht
+#: by: https://www.deutsches-architekturforum.de/thread/13768-neuk%C3%B6lln-kleinere-projekte/?postID=789650#post789650
+#: by: https://www.porr.de/news-presse/mitteilungen/detail/nachhaltiges-bauen-in-neukoelln-fuer-wohnprojekt-oder-wird-praedikat-nawoh-qng-angestrebt (Fertigstellung März 2027)
+#: osm_watch: way id="933570857" version="5"
+#: XXX die Straße wird neu gemacht, wird evtl. nach den Hochbauarbeiten komplettiert
 #: last_checked: 2025-12-13
-#: check_frequency: 45d
+#: check_frequency: 120d
+#: next_check: 2027-03-31 (porr website)
 (Verlängerung der Siegfriedstr.): Asphalt ohne letzte Deckschicht	Q1+ 11664,6796 11488,6781
 Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 (Gorgasring - Nonnendammallee): Verbundsteinpflaster	Q1 -695,14819 -676,14773 -679,14743 -941,14637

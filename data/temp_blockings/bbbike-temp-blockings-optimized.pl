@@ -3195,6 +3195,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
+#: last_checked: 2025-12-12 (mapillary)
 #: next_check: 2025-12-20 (VIZ-Verkehrsmeldung)
 #: historical_note: früher q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
 	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
@@ -4581,7 +4582,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-12-08 vvv
+#: last_checked: 2025-12-14 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -7782,8 +7783,8 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
 #: osm_watch: way id="27260309" version="20"
 #: osm_watch: way id="372791173" version="12"
 #: osm_watch: way id="27260312" version="25"
-#: osm_watch: note 4673198 6
-#: add_fragezeichen: Ist der Mauerweg noch immer gesperrt?
+#: osm_watch: note 4673198 7
+#: add_fragezeichen: Ist der Mauerweg mittlerweile offiziell freigegeben?
 #: last_checked: 2025-10-15
 #: check_frequency: 60d
 #: next_check: 2025-12-31
@@ -7791,7 +7792,7 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
 ',
          'from' => 1727647200,
          'id' => 4145,
-         'text' => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025',
+         'text' => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025 (Stand Mitte Dezember: befahrbar, allerdings noch nicht offiziell freigegeben)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9185,7 +9186,7 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: osm_watch: note 5038218 2
 #: add_fragezeichen: Sind die Wege bereits gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-14
 #: check_frequency: 14d
 #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -9237,7 +9238,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-13
+#: last_checked: 2025-12-14
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9588,7 +9589,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2025-12-05
+#: last_checked: 2025-12-14
 #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
 ',
