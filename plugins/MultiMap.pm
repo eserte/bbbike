@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.53;
+$VERSION = 2.54;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1417,9 +1417,9 @@ sub showmap_url_mapcompare {
     }
     my $common_qs;
     if ($profile && $profile eq '__distinct_map_data') {
-	my @maps = (qw(bvg-stadtplan bbbike-bbbike mapnik esri), $newest_berlin_aerial, qw(google-map nokia-traffic lgb-webatlas waze-world));
+	my @maps = (qw(bvg-stadtplan bbbike-bbbike mapnik esri), $newest_berlin_aerial, qw(google-map lgb-webatlas waze-world));
 	my $maps_qs = do { my $i = 0; join('&', map { "mt".($i++)."=".$_ } @maps) };
-	$common_qs = 'num=10&' . $maps_qs;
+	$common_qs = 'num=8&' . $maps_qs;
     } elsif ($maps) {
 	$common_qs = "num=" . scalar(@$maps);
 	for my $map_i (0 .. $#$maps) {
