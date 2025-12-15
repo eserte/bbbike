@@ -1300,17 +1300,13 @@ Gladauer Weg: Sperrung der Fahrbahn vor der Weiﬂenhˆher Str.	q3::inwork 20346,11
 # 
 ### Marienfelde ###
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: priority: #C vvv
-#: last_checked: 2025-11-15 (osm) vvv
-# REMOVED --- #: check_frequency: 360d vvv
-# REMOVED --- #: next_check: 2025-10-08 vvv
+#: last_checked: 2025-11-29 vvv
+#: check_frequency: 120d vvv
 (Buckower Chaussee - Bahnhof): einige Fuﬂg‰nger	q1 9365,615 9347,595 9206,553 9215,506 9239,461 9254,413
 (Fuﬂg‰ngerbr¸cke S-Bhf. Buckower Chaussee): Fuﬂg‰ngerbr¸cke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Buckower Chaussee - Bahnhof): einige Fuﬂg‰nger	q1 9004,481 9124,522 9160,460 9200,450
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
-#: priority ^^^
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 vvv --- #: last_checked: 2021-10-29 (bahninfo-forum) vvv --- #: next_check: 2021-11-22 vvv --- (provisorische Fuﬂg‰ngerbr¸cke S‰ntisstr.): Fuﬂg‰nger	q3 9014,898 9005,912 9002,919 9047,948 9058,932 --- #: XXX_prog BS an der Kreuzung, ansonsten q2 --- S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898 --- S‰ntisstr.: Bauarbeiten	q3 9058,932 9129,986 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # REMOVED (vermutlich keine Einschr‰nkung) --- #: next_check_id: HILDBURGHAUSER-2018 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.760187.php --- #: XXX "ab voraussichtlich 18.02.2019 erfolgt eine erneute Fahrbahnsperrung zwischen Steinheilpfad und Oberhofer Weg" (am 17.02. wird es allerdings noch nirgendwo erw‰hnt) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/sanierung-der-hildburghauser-strasse-verzoegert-sich-erneut_a193048 (erneute Sperrung ab 18. Februar 2019) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-ausbau-der-hildburghauser-strasse-verzoegert-sich-weiter_a201187 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.789448.php --- #: source_id: 2147341614 --- #: source_id: 2147343257 --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2018-07-02 --- #: next_check: 2019-02-25 --- # REMOVED --- #: valid: 20190218- --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5733,1240 --- # REMOVED --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5733,1240 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
@@ -2755,8 +2751,8 @@ Nazarethkirchstr.: einige Bodenschwellen	q0- 7543,16016 7441,15909 7354,15817 71
 #: XXX_prog BS auf der ˆstlichen Seite, auf der westlichen nur, wenn man von Norden aus der Storkower kommt
 #: note: fr¸her "q2"
 (Storkower Str. - Schneeglˆckchenstr.): Fuﬂg‰nger, Bordsteine	q4+ 13971,13818 14039,13834 14049,13846
-(Antonplatz - Bizetstr.): Fuﬂg‰nger	q2 13484,15893 13524,15786
-(Antonplatz - Bizetstr.): Fuﬂg‰nger	q2 13508,15912 13539,15859 13519,15849 13540,15792
+(Antonplatz - Bizetstr.): Fuﬂg‰nger	q3 13484,15893 13524,15786
+(Antonplatz - Bizetstr.): Fuﬂg‰nger	q3 13508,15912 13539,15859 13519,15849 13540,15792
 (Othellostr. - Prenzlauer Promenade): Fuﬂg‰nger	q1 11990,18104 11894,18146
 Rolandstr.: Fuﬂg‰nger	q1 11380,19783 11229,19706 11134,19655
 #: note: an der Seestraﬂe steht ein Schild "5 km/h Schritt fahren"
@@ -4614,7 +4610,7 @@ Uber-Platz: Fuﬂg‰ngerzone	q4 12990,11006 13067,11145
 #: next_check_id: MICHELANGELO-2025
 #: note: laut Aushang 2027/2028
 #: note: evtl. ist das bereits die angek¸ndigte Erneuerung der Fuﬂwegeverbindung
-#: last_checked: 2025-11-06
+#: last_checked: 2025-12-15
 #: check_frequency: 60d
 #: next_check: 2027-04-01
 # XXX sp‰ter: wieder aktivieren: (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
@@ -5177,7 +5173,7 @@ Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025)
-#: last_checked: 2025-12-10 vvv
+#: last_checked: 2025-12-15 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2025-12-19 vvv
 #: valid: -20251219

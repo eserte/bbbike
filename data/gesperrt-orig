@@ -2805,15 +2805,15 @@ tragen	0:45 18661,4655
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24176.pdf (nein?)
 #: note: bei osm wurden die Aufzüge entfernt
 #: add_fragezeichen: Bleibt der Übergang erhalten? vvv
-#: last_checked: 2025-11-15 (osm) vvv
-# REMOVED --- #: check_frequency: 360d vvv
+#: last_checked: 2025-11-29 vvv
+#: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2025-10-08 (pardok) vvv
 #: historical_note: früher (bis etwa Herbst 2025) gab es hier Aufzüge vvv
 tragen (2x15 Stufen)	0:35 9209,417
 tragen (3x12 Stufen)	0:35 9249,421
 #: historical_note ^^^
 # REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 # 
@@ -4642,6 +4642,7 @@ Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,1067
 #: by: https://entwicklungsstadt.de/mauerpark-sanierung-erste-teilflaeche-in-pankow-vorzeitig-fertiggestellt/
 #: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
 #: priority: #C
+#: osm_watch: note 4395422 3
 #: last_checked: 2025-09-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
@@ -5191,6 +5192,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1619116.php
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-quartier-senat-stellt-zweiten-teil-der-bebauungsleitlinien-vor/
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1625737.php
+#: by: https://www.entwicklungsstadt.de/molkenmarkt-zweiter-realisierungswettbewerb-fuer-zentrale-bauflaechen-startet/
 #: source_id: viz2021:13.41504,52.52091,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.40903,52.517,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)
 #: source_id: viz2021:13.41347,52.51971,14.01.2023,06:00 (bis 15.1.2023) (inaktiv)

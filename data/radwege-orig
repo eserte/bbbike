@@ -1008,7 +1008,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-12-14
+#: last_checked: 2025-12-15
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3600,7 +3600,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2025-12-10 vvv
+#: last_checked: 2025-12-15 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -3766,7 +3766,8 @@ etwas älterer Asphalt, schmal, kaum Platz zu parkenden Autos	RW1; 5539,2497 5669
 etwas älterer Asphalt	RW1; 5971,2691 6002,2723 6105,2826 6222,2940 6313,3028 6401,3113 6535,3243
 # REMOVED (laut http://www.panoramio.com/photo/19637894 kein Radweg) ---	RW;RW 5413,2436 5398,2422 5317,2345
 	RW1;RW1 3556,13200 3542,13203 3429,13227 3310,13253 3200,13277 3112,13296
-	RW2; 2857,14222 2846,14373 2956,14752
+	RW2; 2857,14222 2846,14373
+Busspur ist nicht für Radfahrer freigegeben	RW2; 2846,14373 2956,14752
 	RW2; 2905,14754 2788,14364 2803,14288 2831,14219
 neu asphaltiert	RW2; -1337,14538 -1350,14646
 neu asphaltiert	RW2; -1350,14646 -1337,14538
@@ -7105,7 +7106,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2025-12-10 vvv
+#: last_checked: 2025-12-14 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)

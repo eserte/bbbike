@@ -37248,7 +37248,7 @@ EOF
 #: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 19.12.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2025-10-20 (osm) vvv
+#: last_checked: 2025-12-15 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
@@ -45273,7 +45273,7 @@ EOF
 EOF
      },
      { from  => 1719941867, # 2024-07-02 19:37
-       until => undef, # $isodate2epoch->("2025-10-31 18:00:00"), # 1735686000, # 2025-01-01 00:00
+       until => 1765819249, # undef, # $isodate2epoch->("2025-10-31 18:00:00"), # 1735686000, # 2025-01-01 00:00
 #      text  => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Sperrung, voraussichtlich bis Oktober 2025, evtl. wird die Sperrung verlängert',
        text  => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Wegverbindungen können noch gesperrt sein',
        type  => 'gesperrt',
@@ -45285,13 +45285,7 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1545301.php (Eröffnung des Skate-Parks am 5.4.2025, der Zugang von der Gaußstr. ist aber weiterhin gesperrt)
 #: by: https://www.deutsches-architektur-forum.de/pics/backstein/daf/2025/11/goslarer_ufer03.jpg (am südlichen Ende ist anscheinend ein Schwingtor entstanden)
 #: note: 2024-09-18: Bauzäune sind weggeschoben; 2025-09-24: Arbeiten im südlichen Bereiche, Bauzäune
-# REMOVED --- #: osm_watch: way id="746470210" version="3"
-#: osm_watch: way id="1382537913" version="3"
-#: osm_watch: note 4916457 3
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Uferweg weiterhin gesperrt?
-#: last_checked: 2025-11-20 (daf)
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2025-10-31
+# REMOVED (laut osm note wurde der Bauzaun entfernt) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Uferweg weiterhin gesperrt? --- #: last_checked: 2025-11-20 (daf) --- #: check_frequency: 14d --- #: next_check: 2025-10-31
 	2::inwork 4151,13961 4156,13914 4186,13710
 EOF
      },
@@ -47794,14 +47788,14 @@ EOF
 EOF
      },
      { from  => 1741240800, # 2025-03-06 07:00
-       until => $isodate2epoch->("2025-12-15 23:59:59"), # $isodate2epoch->("2025-09-25 04:00:00"), # 1757343600, # 2025-09-08 17:00
+       until => 1765824178, # $isodate2epoch->("2025-12-15 23:59:59"), # $isodate2epoch->("2025-09-25 04:00:00"), # 1757343600, # 2025-09-08 17:00
 #      text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Hagenstr. und Berkaer Str., auch Radfahrer sollen betroffen sein, vom 07.03.2025 07:00 bis 25.09.2025',
        text  => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Egerstr. und Berkaer Str., Sperrung, außerdem ist die Egerstr. Sackgasse an der Teplitzer Str., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, bis Mitte Dezember 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
 #: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025) (bis 25.09.2025) (inaktiv)
-#: source_id: LMS-BR:362088/72 viz2021:13.28104,52.47985,07.03.2025,07:00 viz2021:13.28104,52.47985, (bis 26.11.2025) (bis 12.12.2025) (bis 15.12.2025)
+#: source_id: LMS-BR:362088/72 viz2021:13.28104,52.47985,07.03.2025,07:00 viz2021:13.28104,52.47985, (bis 26.11.2025) (bis 12.12.2025) (bis 15.12.2025) (inaktiv)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
 #: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
 #: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
@@ -49695,7 +49689,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 # REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (re-T,G)
+#: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
@@ -51053,6 +51047,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: note: es gibt weitere Halteverbotsschilder, die bis Ende Februar 2026 gelten
+#: also_indoor: traffic (G[unklar],T,W[etwas verschoben])
 #: last_checked: 2025-11-29
 #: next_check: 2025-12-15 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295

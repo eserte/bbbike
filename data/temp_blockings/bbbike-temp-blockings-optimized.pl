@@ -2667,31 +2667,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html
-#: by: https://berliner-abendblatt.de/2021/12/10/dieses-wochenende-weihnachtsmarkt-in-der-altstadt/
-	2::xmas 22111,4562 22162,4546 22214,4548
-',
-         'from' => 1765458000,
-         'id' => 2003,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 7,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              12,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 12.12.2025 bis zum 14.12.2025',
-         'type' => 'gesperrt',
-         'until' => 1765753199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3565,29 +3541,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(3rd_advent,sa) - +1d
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1765494000,
-         'id' => 2516,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (13.12.2025 - 14.12.2025)',
-         'type' => 'gesperrt',
-         'until' => 1765753199
-       },
+       undef,
        {
          'data' => '#: tempex: before(4th_advent,sa) - +1d
 #: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
@@ -3614,29 +3568,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
-#: tempex: 3rd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1765623600,
-         'id' => 2520,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 14.12.2025, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1765735200
-       },
+       undef,
        {
          'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
 #: tempex: 4th_advent & T12-T19
@@ -5857,7 +5789,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 19.12.2025)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2025-10-20 (osm) vvv
+#: last_checked: 2025-12-15 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
 #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
@@ -7552,29 +7484,7 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1462140.php
-#: by: https://mierendorffinsel.org/projekte/aktuelle-projekte/insel-rundweg/
-#: by: https://mierendorffinsel.org/2024/07/umgestaltung-eines-teilbereiches-der-mierendorff-insel-inselrundweg-teilweise-gesperrt/
-#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=772392#post772392 (bis Oktober 2025)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1545301.php (Eröffnung des Skate-Parks am 5.4.2025, der Zugang von der Gaußstr. ist aber weiterhin gesperrt)
-#: by: https://www.deutsches-architektur-forum.de/pics/backstein/daf/2025/11/goslarer_ufer03.jpg (am südlichen Ende ist anscheinend ein Schwingtor entstanden)
-#: note: 2024-09-18: Bauzäune sind weggeschoben; 2025-09-24: Arbeiten im südlichen Bereiche, Bauzäune
-# REMOVED --- #: osm_watch: way id="746470210" version="3"
-#: osm_watch: way id="1382537913" version="3"
-#: osm_watch: note 4916457 3
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Uferweg weiterhin gesperrt?
-#: last_checked: 2025-11-20 (daf)
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2025-10-31
-	2::inwork 4151,13961 4156,13914 4186,13710
-',
-         'from' => 1719941867,
-         'id' => 4105,
-         'text' => 'Uferweg zwischen Sickingenbrücke und Bahnbrücke: Bauarbeiten, Wegverbindungen können noch gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -8353,24 +8263,7 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.280936,52.478846,07.03.2025,07:00 (auch Radverkehr, bis 08.09.2025) (inaktiv)
-#: source_id: viz2021:13.28072,52.47738,07.03.2025,07:00 (bis 08.09.2025) (inaktiv) (bis 08.09.2025) (bis 19.09.2025) (bis 25.09.2025) (inaktiv)
-#: source_id: LMS-BR:362088/72 viz2021:13.28104,52.47985,07.03.2025,07:00 viz2021:13.28104,52.47985, (bis 26.11.2025) (bis 12.12.2025) (bis 15.12.2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1897882654047191208
-#: by: https://pbs.twimg.com/media/GlXGXcRW4AAMmID?format=jpg&name=medium
-#: by: https://pbs.twimg.com/media/GlXGko9WgAAqTNJ?format=jpg&name=large (Einbahnstraße in der Kronberger Str., Radfahrer frei)
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250924 (Umbau)
-# Teplitzer Str. ab Hagenstr.	q4::inwork; 2092,7810 2099,7904 2112,8088
-Teplitzer Str. zwischen Egerstr. und Berkaer Str.: Sperrung	q4::inwork; 2112,8088 2121,8351
-Egerstr.: Sackgasse	q3::inwork 2112,8088 2216,8079
-',
-         'from' => 1741240800,
-         'id' => 4277,
-         'text' => 'Teplitzer Str.: Bauarbeiten Richtung Norden zwischen Egerstr. und Berkaer Str., Sperrung, außerdem ist die Egerstr. Sackgasse an der Teplitzer Str., evtl. sind auch Radfahrer von den Bauarbeiten betroffen, bis Mitte Dezember 2025',
-         'type' => 'handicap',
-         'until' => 1765839599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9032,7 +8925,7 @@ Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
        undef,
        {
          'data' => '# REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (re-T,G)
+#: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
@@ -9820,6 +9713,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        },
        {
          'data' => '#: note: es gibt weitere Halteverbotsschilder, die bis Ende Februar 2026 gelten
+#: also_indoor: traffic (G[unklar],T,W[etwas verschoben])
 #: last_checked: 2025-11-29
 #: next_check: 2025-12-15 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295

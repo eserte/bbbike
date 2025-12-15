@@ -14093,12 +14093,12 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/GR_dresdner_bahn_wegefuehrung_buckower_chaussee_ab_20231010n.pdf (westl. Bahnsteig gesperrt, keine Änderung zur bisherigen Wegführung zu erkennen)
 #: XXX bauzeitliche Umleitung, vermutlich bis 2025; wie wird der endgültige Zustand aussehen? vvv
-#: last_checked: 2025-11-15 (osm) vvv
+#: last_checked: 2025-11-29 vvv
 # REMOVED --- #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2025-12-31 vvv
 #: osm_watch: way id="1121227933" version="5"
-#: osm.highway: service
-(Buckower Chaussee - Fußgängerbrücke)	N 9004,481 9124,522 9160,460
+# REMOVED (früher N+service, zurzeit Bauarbeiten, Gehweg+Radfahrer frei) --- #: osm.highway: service
+(Buckower Chaussee - Fußgängerbrücke)	NN 9004,481 9124,522 9160,460
 (Buckower Chaussee - Fußgängerbrücke)	NN 9160,460 9200,450
 (Fußgängerbrücke S-Bhf. Buckower Chaussee)	NN 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Fußgängerbrücke - Buckower Chaussee)	NN 9254,413 9239,461 9215,506 9206,553
