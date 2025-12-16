@@ -118,12 +118,12 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 # 
 #: next_check_id: PAULSBORNER-2025
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025) (inaktiv)
-#: source_id: viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025)
+#: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
-#: last_checked: 2025-09-06
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: next_check: 2025-12-31 (rbb/VIZ-Verkehrsmeldung) 
+#: last_checked: 2025-12-16 (traffic)
+#: check_frequency: 7d (traffic)
+#: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 #: valid: -20251231
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
@@ -339,7 +339,7 @@ Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 #: next_check_id: METZER-2023
 #: last_checked: 2025-11-12
 #: check_frequency: 90d
-#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
 Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # 
@@ -1852,7 +1852,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23181,14371
 	X 889,14392
 	B 21332,18819
-# REMOVED (wird zur Unterführung) ---	B 10365,-2603
+# REMOVED (wird zur Unterführung) ---	B 10362,-2604
 # REMOVED (wird zur Unterführung) ---	B 9024,906
 	B 19405,5284
 	B 20616,7292
@@ -4502,6 +4502,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 	X 14323,7403
 # 
 #: historical_note: permanente Ampel ab Nov/Dez 2025
+#: note: Anforderung für Radfahrer aus der Markgrafenstr. (sowohl Richtung N als auch S)
 	X 9751,11243
 #: section ^^^
 ################################################################################

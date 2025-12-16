@@ -11325,7 +11325,43 @@ Goltzstr. (Lichtenrade)	N 10983,-2116 10763,-2276 10642,-2371 10563,-2432 10454,
 Rehagener Str.	N 10657,-2639 10648,-2547 10638,-2452 10642,-2371 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10765,-1860
 Klausdorfer Weg	N 10505,-2552 10648,-2547 10833,-2544 10989,-2543
 Rohrbachstr.	N 9658,-2640 9658,-2419 9650,-2135
-# REMOVED (früher bis 1.7.2024 Bahnübergang) --- Wolziger Zeile	N 10382,-2598 10365,-2603 10307,-2633
+# REMOVED (früher bis 1.7.2024 Bahnübergang) --- Wolziger Zeile	N 10382,-2598 10362,-2604 10307,-2633
+# 
+#: next_check_id: WOLZIGERZEILE-2024
+#: by: https://dresdner-bahn.de/2019/05/ (Bahnübergang bleibt bis 2023)
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA2_Lichtenrade_Schichauweg-Stadtgrenze/20210716/
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ_dresdner_bahn_faq_20210604.pdf (Sperrung Mitte 2023, Eröffnung der Unterführung für Radfahrer im IV. Quartal 2023)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn (Frühjahr 2025 kann nicht gehalten werden, neues Datum wird noch bekanntgegeben)
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-bahnuebergangsarbeiten-bauzustandswechsel/ (nächster Wechsel am 8.12.2023)
+#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article242522652/Aufatmen-in-Lichtenrade-Bahnhofstrasse-bald-fuer-Verkehr-frei.html (Sperrung ab 1. Juli 2024)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240627 (Eröffnung im Frühjahr 2025 vorgesehen)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1460977.php
+#: by: https://www.berlin-dresden.de/bautagebuch.html (Frühjahr 2025)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,824421#msg-824421 (Verschiebung auf Sommer 2025)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22059.pdf (Verzögerungen, trotzdem Fertigstellung bis Sommer 2025)
+#: by: https://az-lichtenrade.de/neuigkeiten/neuigkeit-zur-sperrung-wolziger-zeile/
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/zeitplan?date=20250721 (kein Termin mehr)
+#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article409807736/dresdner-bahn-neue-ber-strecke-mit-schallschutz-teilt-berlin.html
+#: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html (Hoffnung auf eine Eröffnung im Winter 2025/2026)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/start-der-dresdner-bahn-in-berlin-steht-bevor-bald-faehrt-erstmals-ein-ice-durch-lichtenrade-li.10004430 (vor Weihnachten 2025 werden die Treppen eröffnet, im April 2026 die Rampen)
+#: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
+#: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025) (inaktiv)
+#: note: laut Schild Fertigstellung 2024 (mittlerweile ist dieser Termin obsolet)
+#: XXX Rampe auf der östlichen Seite muss noch gebaut werden
+# REMOVED --- #: note: zukünftige Sperrung ist mittlerweile in temp_blockings eingetragen
+#: osm_watch: way id="22909864" version="31"
+# REMOVED --- #: osm_watch: node id="1650096479" version="8"
+#: osm_watch: way id="1168938182" version="9"
+#: osm_watch: way id="837927791" version="14"
+#: osm_watch: note 5094173 1
+#: also_indoor: search Wolziger_Zeile
+#: last_checked: 2025-12-16 (DB website)
+# REMOVED --- #: check_frequency: 14d (indoor research)
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung (muss aber vermutlich verlängert werden))
+# REMOVED --- #: next_check: 2025-09-20 (pardok, bahninfo)
+#: next_check: 2026-06-01 (DB website: Frühjahr 2026)
+(Unterführung Wolziger Zeile)	NN 10307,-2633 10389,-2632 10405,-2638 10420,-2644
 Wolziger Zeile	N 10334,-2618 10307,-2633 10287,-2644
 Wolziger Zeile	N 10259,-2660 10287,-2644 10253,-2643 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
 Hohenzollernstr. (Lichtenrade)	N 9559,-2417 9658,-2419 9756,-2415 9864,-2411 9967,-2408 10069,-2405 10173,-2402
@@ -19891,7 +19927,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-12-10 vvv
+#: last_checked: 2025-12-16 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

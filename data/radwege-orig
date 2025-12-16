@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-12-14 vvv
+#: last_checked: 2025-12-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1048,7 +1048,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
 #: last_checked: 2025-11-12
 #: check_frequency: 90d
-#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
 teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
 neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
@@ -3087,7 +3087,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-12-03 vvv
+#: last_checked: 2025-12-16 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -4580,12 +4580,14 @@ neu asphaltiert	RW1; 22885,12580 22967,12647
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1610630.php
 #: XXX Richtung Süden anscheinend noch nicht fertig vvv
 #: last_checked: 2025-11-01 (mapillary) vvv
-Radspur	RW3; 21152,11945 21166,12023 21190,12193 21199,12258
-gemeinsamer Geh- und Radweg, Gehwegplatten und Asphalt	RW2; 21199,12258 21190,12193 21166,12023 21152,11945
+	RW3?; 21152,11945 21166,12023 21190,12193 21199,12258
+#: historical_note: früher (vor Komplettierung der Radspur) gemeinsamer Geh- und Radweg, Gehwegplatten und Asphalt, RW2;
+	RW3?; 21199,12258 21190,12193 21166,12023 21152,11945
+#: historical_note: früher (vor dem Brückenneubau bis 2025): Gehweg für Radfahrer frei, alter Beton, RW1;
+	RW3?; 21152,11945 21151,11934 21150,11925 21139,11830
 #: last_checked ^^^
 #: XXX ^^^
 # 
-Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21151,11934 21150,11925 21139,11830
 	RW1; 21199,12258 21206,12351 21221,12484 21251,12767 21298,13154
 	RW2; 21298,13154 21337,13470 21345,13550 21367,13757 21358,13909
 	RW2; 21358,13909 21367,13757 21345,13550 21337,13470 21298,13154 21251,12767 21221,12484 21206,12351 21199,12258
@@ -7499,7 +7501,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
-#: osm_watch: way id="162965650" version="28"
+#: osm_watch: way id="162965650" version="29"
 	RW3; 8776,16268 8921,16578
 #: osm_watch: way id="761539110" version="13"
 die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666

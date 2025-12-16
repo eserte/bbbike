@@ -56,13 +56,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-11-23 (osm) vvv
+#: last_checked: 2025-12-15 (osm) vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="9"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="182614432" version="22"
+#: osm_watch: way id="182614432" version="23"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="23"
@@ -148,7 +148,7 @@ Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2025-12-12 vvv
+#: last_checked: 2025-12-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -5908,7 +5908,8 @@ Alice-Salomon-Park: Fußgänger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 67
 Alice-Salomon-Park: Fußgänger	q1 6771,9458 6724,9457
 (Geßlerstr. - Monumentenstr.): Fußgänger, Kinder	q2 7973,8886 7970,9061 8009,9063
 (Loewenhardtdamm - Höhndorfstr.): Fußgänger, Bordsteine, Schranken	q2 8334,8655 8438,8676
-(Weg d. Kol. Papestr.): Fußgänger	q1 8215,8631 8259,8628 8260,8567 8265,8305
+#: historical_note: früher Fußgänger, q1 (es gab keine Radfahrverbotsschilder)
+(Weg d. Kol. Papestr.): Fußgänger, Radfahren nicht erlaubt	q3- 8215,8631 8259,8628 8260,8567 8265,8305
 (zum Bayernring): Fußgänger	q1 8454,8574 8531,8404
 #: XXX_prog: BS zu beiden Seiten (ansonsten wäre es vielleicht q1 oder q2) vvv
 Bautzener Platz: Fußgänger, Bordsteine	q3 8182,9240 8100,9240

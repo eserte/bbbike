@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-12-05
+#: last_checked: 2025-12-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -1424,10 +1424,10 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id[inactive]: bvg2024:m4#HIM_FREETEXT_297553 (parallele Gleisbauarbeiten, bis 2025-11-30)
 #: source_id[inactive]: bvg2024:m4#5c1204dc-e817-4dc2-95b0-431bad289cd6 (bis 2025-12-14)
 #: source_id[inactive]: bvg2024:m4#4de79670-2bb7-4c7d-940b-3ad8e3fefa9c (bis 2025-12-14) (doppelt?)
-#: source_id: LMS-BR:392560/72 viz2021:13.489894,52.557953, (bis 22.12.2025)
+#: source_id: LMS-BR:392560/72 viz2021:13.489894,52.557953, (bis 22.12.2025) (bis 13.01.2026)
 #: last_checked: 2025-12-12
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-12-22 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-13 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-12-31 (infravelo)
 Hansastr.: Radspuren geplant (2,5m breit) + Sanierung der Fahrbahn	?::inwork 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017 16296,17114 16318,17128
 # 
@@ -4887,7 +4887,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 # REMOVED (URL wurde ersetzt) --- #: by: https://www.luisenstadt-mitte.de/projekte/ohmstr.html (Baubeginn voraussichtlich 2023)
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstrasse-0 (Baubeginn 2023, verkehrsberuhigte Mischverkehrsfläche)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-der-ohmstrasse-876903.php (Neugestaltung bis 2023)
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-16
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-01-01
@@ -5162,9 +5162,9 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer? Wird eine Radspu
 #: by: https://berliner-abendblatt.de/2022/05/11/platz-der-luftbruecke/ (Baustart Ende 2023, Teilfertigstellung 2025)
 #: by: https://www.morgenpost.de/berlin/article408491954/platz-der-luftbruecke-wird-zur-naechsten-berliner-gross-baustelle.html (Erwähnung, Baustart (wo genau?) im Herbst 2025)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1592352.php (Informationsveranstaltung)
-#: last_checked: 2025-11-29
-#: check_frequency: 90d
-#: next_check: 2025-12-15 (MoPo: Baustart Herbst 2025)
+#: last_checked: 2025-12-16
+#: check_frequency: 60d
+# REMOVED (Termin wird wohl gerissen) --- #: next_check: 2025-12-15 (MoPo: Baustart Herbst 2025)
 Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9093,8665
 # 
 # REMOVED (fertig) --- #: source_id: 2147344618 --- #: last_checked: 2020-01-05 --- #: next_check: 2020-01-30 --- Tempelhofer Damm: Asphaltierung des Radwegs	?::inwork; 9229,8718 9229,8785
@@ -7549,41 +7549,6 @@ Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltier
 # REMOVED --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (umgesetzt) --- Holländerstr., Hst. "Brienzer Str." -> Markstr.: ist die Busspur für Radfahrer frei? Geltungszeiten?	?; 7292,17316 7381,17317 7602,17399
 # REMOVED (-> temp blockings) --- #: next_check_id: S-SCHICHAUWEG-2021 --- #: osm_watch: way id="114381366" version="13" --- #: last_checked: 2021-10-03 --- # REMOVED --- #: next_check: 2021-06-01 --- Unterführung am Schichauweg: bleibt die Unterführung während der Bauarbeiten offen?	? 9562,-619 9699,-600
 # 
-#: next_check_id: WOLZIGERZEILE-2024
-#: by: https://dresdner-bahn.de/2019/05/ (Bahnübergang bleibt bis 2023)
-#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA2_Lichtenrade_Schichauweg-Stadtgrenze/20210716/
-#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ_dresdner_bahn_faq_20210604.pdf (Sperrung Mitte 2023, Eröffnung der Unterführung für Radfahrer im IV. Quartal 2023)
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn (Frühjahr 2025 kann nicht gehalten werden, neues Datum wird noch bekanntgegeben)
-#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-bahnuebergangsarbeiten-bauzustandswechsel/ (nächster Wechsel am 8.12.2023)
-#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article242522652/Aufatmen-in-Lichtenrade-Bahnhofstrasse-bald-fuer-Verkehr-frei.html (Sperrung ab 1. Juli 2024)
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240627 (Eröffnung im Frühjahr 2025 vorgesehen)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1460977.php
-#: by: https://www.berlin-dresden.de/bautagebuch.html (Frühjahr 2025)
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,824421#msg-824421 (Verschiebung auf Sommer 2025)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22059.pdf (Verzögerungen, trotzdem Fertigstellung bis Sommer 2025)
-#: by: https://az-lichtenrade.de/neuigkeiten/neuigkeit-zur-sperrung-wolziger-zeile/
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/zeitplan?date=20250721 (kein Termin mehr)
-#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article409807736/dresdner-bahn-neue-ber-strecke-mit-schallschutz-teilt-berlin.html
-#: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html (Hoffnung auf eine Eröffnung im Winter 2025/2026)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/start-der-dresdner-bahn-in-berlin-steht-bevor-bald-faehrt-erstmals-ein-ice-durch-lichtenrade-li.10004430 (vor Weihnachten 2025 werden die Treppen eröffnet, im April 2026 die Rampen)
-#: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
-#: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025) (inaktiv)
-#: XXX laut Schild Fertigstellung 2024 (mittlerweile ist dieser Termin obsolet)
-# REMOVED --- #: note: zukünftige Sperrung ist mittlerweile in temp_blockings eingetragen
-#: osm_watch: way id="22909864" version="31"
-# REMOVED --- #: osm_watch: node id="1650096479" version="8"
-#: osm_watch: way id="1168938182" version="9"
-#: osm_watch: way id="837927791" version="14"
-#: also_indoor: search Wolziger_Zeile
-#: last_checked: 2025-10-15 (DB website)
-# REMOVED --- #: check_frequency: 14d (indoor research)
-#: check_frequency: 180d
-# REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung (muss aber vermutlich verlängert werden))
-# REMOVED --- #: next_check: 2025-09-20 (pardok, bahninfo)
-# REMOVED --- #: next_check: 2026-06-01 (DB website: Frühjahr 2026)
-#: next_check: 2025-12-20 (BerZ)
-Wolziger Zeile: Unterführung wird gebaut	?::inwork 10307,-2633 10389,-2632 10382,-2598
-# 
 #: next_check_id: GOERDELERDAMM-2024
 #: by[removed]: http://www.infravelo.de/projekt/goerdelerdamm-2/ (1. Quartal 2023 - 1. Quartal 2025) (umbenannt?)
 #: by[removed]: https://www.infravelo.de/projekt/goerdelerdamm/ (1. Quartal 2025 - 1. Quartal 2027) (entfernt, 404 im Web)
@@ -7705,7 +7670,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-16
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8306,7 +8271,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-16
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8315,7 +8280,7 @@ Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neuer-senatsplan-fuer-die-friedrichstrasse-mehr-platz-zum-flanieren-ohne-autofahrverbot-li.10005833 (Vorschlag: Fahrbahn zwischen UdL und Checkpoint Charlie schmaler machen)
 #: by: https://www.entwicklungsstadt.de/friedrichstrasse-kommt-nach-der-oeffnung-fuer-den-autoverkehr-nun-die-flaniermeile/
 #: XXX Wie wird die Situation für Radfahrer aussehen (handicap-Eintrag?)
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-16
 #: check_frequency: 120d
 Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezogen" werden	? 9478,11317 9474,11360 9468,11412
 # 
@@ -8597,7 +8562,7 @@ Prenzlauer Promenade: Sanierung geplant, Richtung Norden wird es dann eine Radve
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1316549.php (Sperrung der Bergmannstr. frühestens 2025)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/suedliche-zossener-strasse-kann-fuer-autos-gesperrt-werden_a380752
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12180 (Antrag)
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-16
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2025-12-31
 # REMOVED (hier nicht) --- Zossener Str./Friesenstr.: werden diese Straßen verkehrsberuhigt?	? 9827,10051 9837,9856 9820,9718 9790,9528
@@ -9725,7 +9690,7 @@ Riemeisterstr./Wilskistr.: neue Fußgängerüberweg (Zebrastreifen?) entsteht	?::pr
 Friedrich-Engels-Str.: wo wurde genau provisorisch asphaltiert?	? 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099 8409,21183 8316,21240 8277,21257
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_50_3173_3308_online.pdf
-#: osm_watch: way id="1128460131" version="8"
+#: osm_watch: way id="1128460131" version="9"
 #: osm_watch: note 5080235 1
 #: last_checked: 2025-12-05 (Amtsblatt)
 #: check_frequency: 30d
@@ -11579,7 +11544,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://entwicklungsstadt.de/berlin-mitte-weiterbau-des-bauprojekts-elements-hat-fahrt-aufgenommen/ (Uferweg nicht Teil des Projekts)
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: XXX möglicherweise geht es vom Paula-Thiede-Ufer in einer verschwenkten Rampe runter
-#: last_checked: 2025-12-12 vvv
+#: last_checked: 2025-12-16 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 3
@@ -11974,7 +11939,7 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: source_id: viz2021:13.536282,52.539294,19.03.2025,21:00 (Sperrung für Kfz-Verkehr, bis 20.03.2025) (inaktiv)
 #: source_id: viz2021:13.535464,52.539172,20.03.2025,18:00 (Sperrung für Kfz-Verkehr, bis 21.03.2025) (inaktiv)
 #: source_id: viz2021:13.545841,52.541629, (bis 31.12.2026)
-#: source_id: viz2021:13.52479,52.5364, (bis 21.12.2025)
+#: source_id: viz2021:13.52479,52.5364, (bis 21.12.2025) (inaktiv)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/marzahner-knoten/
 #: XXX Nicht ganz klar, wie die Radverkehrsführung ab dem 25.11.2024 gedacht ist: möglicherweise wird man von Westen her kommend vor dem BK 2 + 3 auf den nördlichen Gehweg geleitet und dann via Rampe auf die Märkische Allee geleitet (wo sie anscheinend vergessen werden); von Osten her kommend sehe ich im Verkehrszeichenplan keine Regelung für den Radverkehr; außerdem gibt es eine neue Rampe zur südlichen Frank-Schweitzer-Str.; außerdem wird die Frank-Schweitzer-Str. unterhalb der Brücke wohl komplett gesperrt.
 #: alias: Marzahner Knoten
@@ -12927,7 +12892,7 @@ Greenpark: wird es hier öffentlich nutzbare Wege geben?	? 13155,5871 13187,5751 
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: XXX die meisten Eingänge haben eine Tor-Drehkreuz-Kombination (man kann also nachts raus); Ausnahmen: Cuvrystr.+Ratiborstr.+Liegnitzer Str. (nur Tor) ...
 #: priority: #A
-#: last_checked: 2025-12-14
+#: last_checked: 2025-12-16
 #: check_frequency: 30d
 #: next_check: 2025-12-31 (Tsp)
 Görlitzer Park: Zaunbau, später dann nächtliche Sperrungen	?::inwork 13220,9980 13162,9904 13139,9880 13086,9825 12932,9900 12983,10000 12881,10056 12829,9957 12814,9966 12341,10218 12397,10335 12317,10382 12309,10427 12348,10432 13220,9980
@@ -12948,8 +12913,9 @@ Schleuse Friedenthal: Neubau	? -1737,40228 -1648,40148
 # 
 #: by: https://www.tagesspiegel.de/berlin/platz-vor-dem-abgeordnetenhaus-berlin-bekommt-einen-margot-friedlander-platz-14940515.html (Frühjahr 2026)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/11/berlin-platz-margot-friedlaender-benennung-abgeordnetenhaus-holocaust-zeitzeugin.html (9.5.2026)
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1626666.php (Senatsbeschluss, kein Datum)
 #: osm_watch: relation id="12923368" version="4"
-#: osm_watch: note 5069024 1
+#: osm_watch: note 5069024 2
 #: XXX evtl. Vorfahrt (Einbahnstraße Richtung Westen) einzeichnen?
 #: next_check: 2026-05-09
 Margot-Friedländer-Platz: geplante Benennung	? 8870,11268
