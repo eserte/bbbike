@@ -997,6 +997,16 @@ Kreisverkehr	Roundabout -54051,23436
 #: section: VeloFlow vvv
 #: ignore: vvv
 Kreuzbergstr. Richtung Westen vor Großbeerenstr.	CS; 9082,9338 8970,9323
+# 
+#: note: 2025-12-17 noch nicht eingeschaltet gewesen vvv
+Stargarder Str. Richtung Osten vor Prenzlauer Allee	CS; 11682,15397 11852,15281
+Stargarder Str. Richtung Westen vor Pappelallee	CS; 11407,15595 11290,15669
+Stargarder Str. Richtung Westen vor Schönhauser Allee	CS; 11158,15739 11086,15772 10953,15787
+Stargarder Str. Richtung Osten vor Pappelallee	CS; 11086,15772 11158,15739 11290,15669
+#: note ^^^
+# 
+Invalidenstr. Richtung Osten vor Scharnhorststr.	CS; 8358,13562 8453,13611
+# 
 #: ignore ^^^
 #: section ^^^
 # 
@@ -1365,6 +1375,7 @@ Ackerstr.: Wochenmarkt, Do, 11.00-18.00, anscheinend nur Halteverbot	CS; 9048,14
 Jagowstr.: Wochenmarkt, Mi+Sa, 08.00-13.00, anscheinend nur Halteverbot	CS; 5601,12756 5543,12664
 Koppenstr.: Wochenmarkt Di+Do 10.00-18.00, die Fahrbahn ist trotzdem befahrbar	CS 12632,12630 12592,12472
 Martha-Ndumbe-Platz: Wochenmarkt Di+Fr, 11-18 Uhr, aber anscheinend nur im "Rondellbereich" und somit keine Beeinträchtigung für Radfahrer	CS 7891,15417 7974,15418 8024,15401
+Martha-Ndumbe-Platz [Gerichtstr.-Reinickendorfer Str.]: Wochenmarkt Di+Fr, 11-18 Uhr, aber anscheinend nur im "Rondellbereich" und somit keine Beeinträchtigung für Radfahrer	CS 7891,15417 7947,15380 7975,15362 8002,15340
 #: ignore ^^^
 #: section ^^^
 #
@@ -1892,7 +1903,7 @@ Hochspannungsweg: nicht ausgeschildert, Feuerwehrzufahrt zum Britzer Garten	CP; 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1128830.php (Benennung eines Platzes nach Hans Peters)
 #: XXX wann wird der Platz ausgeschildert?
-#: last_checked: 2025-12-14 (daf)
+#: last_checked: 2025-12-17
 #: check_frequency: 60d
 Hans-Peters-Platz: nicht ausgeschildert	CS 7739,14119 7679,14030
 # 

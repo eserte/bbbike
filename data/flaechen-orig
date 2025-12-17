@@ -313,7 +313,8 @@ Lützowplatz	F:P 6929,10852 6918,10858 6824,10904 6873,11011 7002,11034 6998,110
 Wittenbergplatz	F:P 6250,10701 6372,10667 6335,10589 6320,10505 6192,10542 6216,10614 6228,10646
 #: note: Münsingen ist eine Stadt auf der Schwäbischen Alb, Benennung aber vermutlich nach https://de.wikipedia.org/wiki/Gottlob_M%C3%BCnsinger
 Münsingerpark	F:P -3624,14113 -3582,14283 -3636,14405 -3665,14400 -3710,14510 -3721,14495 -3769,14429 -3774,14413 -3717,14390 -3728,14290 -3753,14291 -3796,14160
-#: note: bei vmz detailnetz "Georg-Ramin-Park", aber kaum Referenzen im Netz dazu
+#: alias: Georg-Ramin-Park
+#: alias: Georg-Ramin-Grünzug
 Ramin-Park	F:P -3757,14444 -3769,14429 -3774,14413 -3922,14486 -4000,14614 -4063,14780 -4037,14803 -3898,14559 -3840,14490
 Helmholtzplatz	F:P 11450,15173 11223,15319 11262,15374 11480,15229
 Kollwitzplatz	F:P 11229,14422 11155,14554 11247,14578 11317,14564
@@ -1756,6 +1757,8 @@ Alice-Salomon-Platz	F:Square 23993,14797 24061,14801 24037,14854 24019,14899 239
 #: note: nicht frei befahrbar (Glascontainer, temporäre Sperrungen, temporäres Toilettenhäuschen)
 #: note: namensloser Dreiecksplatz zwischen Boxhagener Str., Gryphiusstr. und Krossener Str.
 	F:Square 14513,11657 14496,11620 14561,11600 14513,11657
+#: note: teilweise frei befahrbar (Brunnen im Zentrum, einige Bäume)
+Martha-Ndumbe-Platz	F:Square 8024,15401 7974,15418 7891,15417 7947,15380 7975,15362 8002,15340 8024,15401
 #: ignore ^^^
 #############################################################################
 # in Potsdam

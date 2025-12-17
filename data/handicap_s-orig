@@ -56,7 +56,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-12-15 (osm) vvv
+#: last_checked: 2025-12-17 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="9"
@@ -82,7 +82,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="24"
 #: osm_watch: way id="1072662717" version="28"
-#: last_checked: 2025-12-05
+#: last_checked: 2025-12-17
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -335,7 +335,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: note: laut Baustellenschild bis 01/2026
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-12-03 (traffic) vvv
+#: last_checked: 2025-12-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) vvv
 #: source_id: LMS-BR:392914/72 viz2021:13.35079,52.53931, (bis 31.03.2026)
@@ -343,6 +343,7 @@ Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Umwege, Gehweg für Radf
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork; 6849,14831 6929,14845 7000,14832
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 6849,14831 6824,14821 6709,14782
 #: source_id: LMS-BR:392917/72 viz2021:13.3549,52.5397, (bis 31.03.2026)
+#: osm_watch: note 4845944 1
 Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 7000,14832 7007,14911
 #: source_id: LMS-BR:392916/72 viz2021:13.35109,52.54099, (bis 31.03.2026)
 #: note: hier keine expliziten Gehweg-für-Radfahrer-frei-Schilder
@@ -366,7 +367,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 # REMOVED --- #: osm_watch: way id="885130938" version="7"
-#: last_checked: 2025-11-12
+#: last_checked: 2025-12-17
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -394,7 +395,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="45"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-12-03 (osm)
+#: last_checked: 2025-12-17
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (entwicklungsstadt)
 #: valid: 20171026-
@@ -598,7 +599,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-12-10 vvv
+#: last_checked: 2025-12-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="18"
@@ -1733,7 +1734,8 @@ Hermann-Stöhr-Platz: Fußgänger	q2 12453,11790 12413,11901
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q3 7531,8848 7563,8871
 Martha-Ndumbe-Platz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
-Martha-Ndumbe-Platz: Fußgänger	q2 7929,15355 7974,15418
+Martha-Ndumbe-Platz: Fußgänger	q2 7929,15355 7947,15380 7974,15418
+Martha-Ndumbe-Platz [Gerichtstr.-Reinickendorfer Str.]: Gehweg, Radfahrer frei	q2 7891,15417 7947,15380 7975,15362 8002,15340
 # REMOVED (hier Radweg) --- Martha-Ndumbe-Platz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: einige Fußgänger	q1- 5917,8351 5831,8358

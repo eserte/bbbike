@@ -485,7 +485,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-12-05
+#: last_checked: 2025-12-17
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -637,7 +637,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10226,14568 10311,14391
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2025-10-12
+#: last_checked: 2025-12-17
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (ex-infravelo)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -2513,24 +2513,9 @@ Ossastr.: Kopfsteinpflaster	Q2 12623,9134 12682,9089
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13279,8947 13455,8800
 Beermannstr.: Kopfsteinpflaster	Q2 13981,9474 14121,9366
-# REMOVED --- Beermannstr.: Kopfsteinpflaster	Q2 14121,9366 14157,9345
-# REMOVED --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
-# REMOVED --- Matthesstr.: Asphalt	Q0 14172,9457 14169,9525
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/elbestrasse-soll-spaetestens-ab-2024-fuer-fussgaenger-und-radfahrer-attraktiver-werden_a324155
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/senatsverwaltung-startet-machbarkeitsstudie-mit-fuenf-varianten_a382462
-#: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-zum-umbau-der-elbestrasse_a397300 (Machbarkeitsstudie)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1380880.php
-#: by: https://mein.berlin.de/projekte/elbestrasse/
-#: by: https://www.kms-sonne.de/projekte/elbestrasse/ (Baubeginn voraussichtlich 2025/2026) (mittlerweile, Stand 5.2.2025: Baubeginn ist voraussichtlich 2026, Abschluss 2029) (alte URL)
-#: by: https://www.kms-sonne.de/projekte/strassen-plaetze-und-gruenflaechen/elbestrasse/ (neue URL)
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/online-beteiligung-zur-elbestrasse-laeuft-bis-zum-27-november_a399343
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/elbestrasse/
-#: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/161024_protokoll_mobilitaetsrat_3_pdf.pdf (Erwähnung einer Brücke zur Bouchéstr.)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1577828.php (Umbau ab 2026)
-#: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
-#: last_checked: 2025-06-07
-#: check_frequency: 360d
-#: next_check: 2026-03-15 (kms website, Pressemitteilung)
+# REMOVED (existiert nicht mehr, A100 verläuft hier) --- Beermannstr.: Kopfsteinpflaster	Q2 14121,9366 14157,9345
+# REMOVED (existiert nicht mehr, A100 verläuft hier) --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
+# REMOVED (existiert nicht mehr, A100 verläuft hier) --- Matthesstr.: Asphalt	Q0 14172,9457 14169,9525
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13105,8720 12954,8840
 Laubestr.: Kopfsteinpflaster	Q2 12982,8564 12822,8675
@@ -11966,11 +11951,8 @@ Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10423,21701 10388,2
 (Friedrich-Ludwig-Jahn-Sportpark - Cantianstr.): Asphalt	Q0 10520,15353 10781,15438 10804,15447
 (Friedrich-Ludwig-Jahn-Sportpark): Verbundsteinpflaster	Q0- 10456,15561 10512,15406
 (Friedrich-Ludwig-Jahn-Sportpark): Asphalt	Q0 10512,15406 10520,15353
-#: next_check_id: JAHNSPORTPARK-2025
-#: XXX vor und vermutlich auch nach den Bauarbeiten: (Friedrich-Ludwig-Jahn-Sportpark): Asphalt	Q0 10520,15353 10562,15236 10583,15208
-#: last_checked: 2025-10-19 (mapillary)
-#: check_frequency: 60d
-(Friedrich-Ludwig-Jahn-Sportpark): fester Sand	Q1 10520,15353 10562,15236 10583,15208
+#: historical_note: zwischenzeitlich (2025) während der Abrissarbeiten am Stadion: fester Sand, Q1
+(Friedrich-Ludwig-Jahn-Sportpark): Asphalt	Q0 10520,15353 10562,15236 10583,15208
 (Lauenburger Str. - Stadtpark Steglitz): Asphalt	Q0 5870,4992 5907,4949 5945,4828 5947,4791
 zur Müller-Breslau-Str.: Kleinsteinpflaster	Q1 5756,11618 5725,11644
 Carpinusweg: Verbundsteinpflaster	Q1+ 715,5209 715,5129 825,5130 827,5201

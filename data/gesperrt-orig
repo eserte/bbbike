@@ -467,7 +467,7 @@ Kavalierstr.	1 10621,18837 10729,18584
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
-#: osm_watch: way id="4637773" version="27"
+#: osm_watch: way id="4637773" version="28"
 #: last_checked: 2025-07-18 (mapillary)
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
@@ -732,6 +732,10 @@ Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
 #: by: verena kauffmann:
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1627066.php (neu seit ca. Dez 2025, bestätigt bei osm)
+Büdnerring	1 7861,18333 7997,18524
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1627066.php (neu seit ca. Dez 2025, bestätigt in einer osm-Notiz)
+Raschdorffstr.	1 8096,18456 7954,18251
 Steilpfad	1s:q3 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4103,6716 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
@@ -2254,6 +2258,7 @@ An der Urania: breiter Mittelstreifen	3nocross 6740,10755 6685,10690 6532,10529
 # REMOVED (nicht mehr) --- Lindenstr./Markgrafenstr.: Barrieren	3nocross 9797,10771 9807,10788 9829,10830
 Friedrichstr.: Straßenbahnhaltestelle	3nocross 9246,13240 9254,13171 9262,13111
 Reinickendorfer Str.: Mittelstreifen mit Zaun	3nocross 7966,15571 7975,15500 8049,15470
+Reinickendorfer Str.: Mittelstreifen	3nocross 8001,15205 8002,15340 8024,15401
 #: XXX_prog unbequemes Überqueren, bessere Alternativen existieren, sollte als eine Art handicap für Punkte implementiert sein
 Spittelmarkt: unbequemes Überqueren	3nocross 10238,11741 10299,11786 10314,11804
 #: XXX_prog ggfs. routing_helper- oder handicap_directed-Lösungen implementieren
@@ -4079,8 +4084,9 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=784716#post784716
 #: by: https://entwicklungsstadt.de/europacity-neues-schulz-hotel-entsteht-an-der-heidestrasse-18/ (Eröffnung Anfang 2027)
 #: osm_watch[closed]: note 4940349 2
+#: osm_watch: way id="423457085" version="17"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2025-09-20 (daf) vvv
+#: last_checked: 2025-12-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 vvv
 #: osm_watch: way id="752856111" version="14"
@@ -4203,9 +4209,9 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12933,1101 12946,1027
 #: source_id: bvg2024:250#HIM_FREETEXT_308566
 #: last_checked: 2025-07-18 (mapillary) vvv
 #: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
-#: osm_watch: way id="1199394070" version="6"
+#: osm_watch: way id="1199394070" version="7"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
-#: osm_watch: way id="174271093" version="24"
+#: osm_watch: way id="174271093" version="25"
 Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 #: next_check ^^^
 #: last_checked ^^^
@@ -4646,7 +4652,7 @@ Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,1067
 #: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
 #: priority: #C
 #: osm_watch: note 4395422 3
-#: last_checked: 2025-09-17
+#: last_checked: 2025-12-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
 #: next_check: 2026-06-30 (BA, entwicklungsstadt)
@@ -4925,7 +4931,7 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 #: source_id: LMS-BR:391216/72 viz2021:13.37613,52.53612, (bis 01.09.2026)
 #: osm_watch: way id="129104626" version="25"
 #: osm_watch: way id="945966258" version="3"
-#: osm_watch: note 5077509 1
+#: osm_watch[closed]: note 5077509 1
 #: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])
 #: last_checked: 2025-12-03
 #: check_frequency: 120d
@@ -5259,7 +5265,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1615934.php
 #: by: https://entwicklungsstadt.de/wettbewerb-entschieden-so-sehen-die-ersten-molkenmarkt-wohnhaeuser-aus/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_51_3309_3560_online.pdf (zum Bebauungsplan 1-14-1)
-#: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
+#: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
 #: last_checked: 2025-12-10
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5476,12 +5482,13 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2025-11-02 vvv
+#: last_checked: 2025-12-17 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188 (inaktiv)
 #: osm_watch: way id="593108603" version="3"
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 #: osm_watch: way id="633754177" version="3"
+#: osm_watch: way id="642581106" version="7"
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 #: check_frequency ^^^
 #: last_checked ^^^

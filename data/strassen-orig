@@ -1933,7 +1933,7 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: note: ggfs. qualitaet/handicap-Einträge anpassen
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2025-09-24
+#: last_checked: 2025-12-17
 #: check_frequency: 90d
 (Heidestr./Kieler Brücke - George-Stephenson-Str.)	NN 7612,14325 7529,14274
 Lisa-Fittko-Str.	N 7820,13994 7734,13944
@@ -11675,6 +11675,7 @@ Lauterplatz	NN 5799,7880 5707,7878
 #: by: https://entwicklungsstadt.de/friedenauer-hoehe-grundsteinlegung-fuer-gewerbekomplex-the-friedenauer/ (bis Mitte 2027)
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article409541775/innsbrucker-platz-neues-quartier-baut-friedenau-zu-ende.html
 #: by: https://www.entwicklungsstadt.de/vom-gueterbahnhof-zum-gewerbestandort-das-projekt-the-friedenauer-in-berlin/
+#: by: https://www.entwicklungsstadt.de/friedenauer-hoehe-1-100-wohnungen-mit-robuster-klinkerfassade-an-der-ringbahn/
 #: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024) (bis 23.04.2024, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.342764,52.477504,02.06.2025,10:00 (Leitungsbau in der Hauptstr., bis 21.07.2025) (inaktiv)
 #: source_id: viz2021:13.34245,52.47724, (Hauptstr., bis 30.07.2025) (bis 31.08.2025) (bis 21.08.2025) (inaktiv)
@@ -11732,7 +11733,9 @@ Gerichtstr.	NN 7808,15417 7765,15417
 Gerichtstr.	N 7765,15417 7723,15417 7627,15412 7464,15409
 Martha-Ndumbe-Platz [Gerichtstr.]	NN 8024,15401 7974,15418 7891,15417
 Martha-Ndumbe-Platz [Reinickendorfer Str.]	NN 7975,15500 7975,15484 7974,15418
-Martha-Ndumbe-Platz [Lindower Str.]	NN 7929,15355 7974,15418
+Martha-Ndumbe-Platz [Lindower Str.]	NN 7929,15355 7947,15380 7974,15418
+#: note: 7975,15362 ist ein "Stützpunkt" wegen 3nocross
+Martha-Ndumbe-Platz [Gerichtstr.-Reinickendorfer Str.]	NN 7891,15417 7947,15380 7975,15362 8002,15340
 Adolfstr. (Wedding)	N 7808,15417 7796,15590 7781,15804
 #: historical_note: früher (bis Oktober 2025) N
 Maxstr.	NN 7781,15804 7738,15838

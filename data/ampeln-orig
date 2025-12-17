@@ -11,7 +11,7 @@
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
 #: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 (bis 02.01.2026)
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-17
 #: next_check: 2026-01-02
 #: valid: -20260102
 Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
@@ -25,12 +25,12 @@ Buckower Damm: Gegenverkehrsregelung	X::inwork::alternating 12712,2378
 # 
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251015 (bis Anfang Dez 2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3byu65n322r
-#: source_id: LMS-BR:386895/72 viz2021:13.45883,52.51144,16.10.2025,07:00 viz2021:13.45883,52.51144, (bis 02.12.2025) (bis 31.12.2025)
+#: source_id: LMS-BR:386895/72 viz2021:13.45883,52.51144,16.10.2025,07:00 viz2021:13.45883,52.51144, (bis 02.12.2025) (bis 31.12.2025) (bis 22.12.2025)
 #: osm_watch: note 4669838 4
 #: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
 #: last_checked: 2025-12-02
-#: next_check: 2025-12-31
-#: valid: -20251231
+#: next_check: 2025-12-22
+#: valid: -20251222
 Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::inwork::alternating 14127,11811
 # 
 #: source_id: 257304125 (bis 31.12.2026)
@@ -52,18 +52,18 @@ Lahnstr./Mittelbuschweg: Gegenverkehrsregelung	X::inwork::alternating 13500,7018
 # 
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: viz2021:13.38017,52.51979, (bis 12.05.2026)
-#: last_checked: 2025-10-12
+#: last_checked: 2025-12-15 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-05-12 (VIZ-Verkehrsmeldung, valid geht aber länger)
 #: valid: -20260701
 Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12647
 # 
-#: next_check_id: HERBERT-2025
-#: last_checked: 2025-11-09
-#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
-#: valid: -20251219
-Kolonnenstr./Herbertstr.: Gegenverkehrsregelung	X::inwork::alternating 7360,8918
+# REMOVED --- #: next_check_id: HERBERT-2025
+# REMOVED --- #: last_checked: 2025-11-09
+# REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20251219
+# REMOVED --- Kolonnenstr./Herbertstr.: Gegenverkehrsregelung	X::inwork::alternating 7360,8918
 # 
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347
 #: source_id: viz2021:13.37128,52.4366,13.08.2025,07:00 (provisorische Ampelanlage, bis 22.09.2025) (bis 13.03.2026)
@@ -152,11 +152,10 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # REMOVED --- #: valid ^^^
 # REMOVED --- #: next_check ^^^
 # 
-#: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...) (bis 03.07.2025 + ...) (bis 16.08.2025 + ...) (inaktiv)
-#: source_id: viz2021:13.26522,52.45642,15.05.2025,15:55 (bis 04.06.2025) (inaktiv)
-#: source_id: viz2021:13.26522,52.45642, (bis 06.08.2025) (bis 08.10.2025) (bis 14.11.2025) (bis 17.12.2025)
-#: next_check: 2025-12-17
-Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
+# REMOVED --- #: source_id: viz2021:13.265211,52.456414,25.06.2024,11:00 (bis 15.05.2025 + weitere Arbeiten) (bis 04.06.2025 + ...) (bis 03.07.2025 + ...) (bis 16.08.2025 + ...) (inaktiv)
+# REMOVED --- #: source_id: LMS-BR:337642/72 viz2021:13.26522,52.45642,15.05.2025,15:55 viz2021:13.26522,52.45642, (bis 04.06.2025) (bis 06.08.2025) (bis 08.10.2025) (bis 14.11.2025) (bis 17.12.2025)
+# REMOVED --- #: next_check: 2025-12-17
+# REMOVED --- Hüttenweg/Flanaganstr.: Gegenverkehrsregelung	X::inwork::alternating 1091,5465
 # 
 # REMOVED --- #: source_id: viz2021:13.202454,52.523618,18.03.2025,10:00 (bis 11.04.2025) (inaktiv)
 # REMOVED --- #: next_check: 2025-04-11
@@ -3948,7 +3947,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-12-14 (daf) vvv
+#: last_checked: 2025-12-17 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 	X::inwork 9121,12514
