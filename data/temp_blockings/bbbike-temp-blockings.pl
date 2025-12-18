@@ -17778,7 +17778,7 @@ EOF
        until => $isodate2epoch->("2025-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 12, start => "2023-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten, 2022/2023 ebenso
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => 2,
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr. sowie einige Wege im östlichen Tiergarten, ab 26.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -32151,7 +32151,7 @@ EOF
 #: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-12-09
+#: last_checked: 2025-12-18
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -40847,13 +40847,12 @@ EOF
 #: osm_watch: note 5085082 2
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2025-12-11 vvv
-#: check_frequency: 10d (hohe Frequenz am Anfang) vvv
+#: last_checked: 2025-12-18 vvv
+#: check_frequency: 14d (hohe Frequenz am Anfang) vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden)
-Hönower Weg	2::inwork 17383,9719 17471,9688 17587,9655
-#: note: eigentlich nur der Einmündungsbereich zum Hönower Weg nicht passierbar
-östliche Dolgenseestr.	2::inwork 17471,9688 17494,9769
+Hönower Weg	2::inwork 17383,9719 17471,9688
+östliche Dolgenseestr.	2::inwork 17471,9688 17480,9721
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -47116,9 +47115,12 @@ EOF
 	q4::inwork; 4787,7213 4791,7090
 EOF
      },
-     { from  => 1734584400, # 2024-12-19 06:00
-       until => 1734908340, # 2024-12-22 23:59
-       text  => 'Bölschestr.: Weihnachtsmarkt, zwischen Aßmannstr. und Fürstenwalder Damm gesperrt, vom 20.12.2024 6:00 Uhr bis 22.12.2024 23:59 Uhr',
+     { from  => $isodate2epoch->("2025-12-18 00:00:00"), # 1734584400, # 2024-12-19 06:00
+       until => $isodate2epoch->("2025-12-22 23:59:59"), # 1734908340, # 2024-12-22 23:59
+       periodic => 1,
+       recurrences => [['yearly', days => 18, months => 12]],
+#      text  => 'Bölschestr.: Weihnachtsmarkt, zwischen Aßmannstr. und Fürstenwalder Damm gesperrt, vom 20.12.2024 6:00 Uhr bis 22.12.2024 23:59 Uhr',
+       text  => 'Bölschestr.: Weihnachtsmarkt, zwischen Aßmannstr. und Fürstenwalder Damm gesperrt, vom 19.12.2025 6:00 Uhr bis 21.12.2025 23:59 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1869796587712467317
@@ -48007,8 +48009,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
-#: source_id: viz2021:13.53352,52.52323,08.10.2025,06:00 (Gegenverkehrsregelung, bis 30.11.2025) (inaktiv)
-#: source_id: viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 31.12.2025)
+#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -49474,11 +49475,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FUNKWERK-2025
-#: also_indoor: traffic (ex-G,no-T)
+#: also_indoor: traffic (re-G,no-T)
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-18 (traffic)
 #: check_frequency: 30d
 #: next_check: 2025-12-19 (Halteverbotsschilder)
 # REMOVED (hier nicht mehr) ---	q4::inwork 22456,3889 22538,3889
@@ -49570,7 +49571,7 @@ EOF
 #: source_id: adac:879720956 (bis voraussichtlich 02.10.2025) (neue ID -> inaktiv)
 #: note: bei rbb bis 02.10.2025
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
-#: source_id: viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025)
+#: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025)
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-12-06 (mapillary)
 # REMOVED --- #: check_frequency: 14d (traffic)
@@ -49642,14 +49643,14 @@ EOF
 EOF
      },
      { from  => 1752606169, # 2025-07-15 21:02
-       until => $isodate2epoch->("2025-12-22 23:59:59"), # 1758319200, # 2025-09-20 00:00
+       until => $isodate2epoch->("2025-12-18 15:00:00"), # 1758319200, # 2025-09-20 00:00
 #      text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz sowie vor Hermannstr., voraussichtlich bis September 2025',
        text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis Dezember 2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: THOMAS-2025
 #: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:376390/72 viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025) (bis 18.12.2025)
+#: source_id: LMS-BR:376390/72 viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025) (bis 18.12.2025) (inaktiv)
 #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg
 #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
 #: also_indoor: traffic (G,T,H,W)
@@ -50683,9 +50684,11 @@ EOF
      { from  => 1760131031, # 2025-10-10 23:17
        until => undef, # 1761951599, # 2025-10-31 23:59
 #      text  => 'Königsheideweg: Sperrung in Höhe Späthsfelder Weg, voraussichtlich bis Ende Oktober 2025',
-       text  => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, Ende der Bauarbeiten unbekannt',
+#      text  => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, Ende der Bauarbeiten unbekannt',
+       text  => 'Späthsfelder Weg: Sperrung der Fahrbahn vor dem Königsheideweg, Umwege, voraussichtlich bis Ende Januar 2026',
        type  => 'handicap',
        data  => <<'EOF',
+#: next_check_id: KOENIGSHEIDEWEG-2025
 #: by: https://www.tagesspiegel.de/berlin/brandanschlag-von-linksextremisten-im-sudosten-berlins-reparaturen-nach-langstem-stromausfall-der-nachkriegszeit-konnten-bis-2026-dauern-14310101.html
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2tnjk27qs22
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib6xakrcudbjnss6lcxcjqe6l7riqscbfw7jqibwzw2vtetkhm7kq@jpeg
@@ -50693,17 +50696,18 @@ EOF
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
 #: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
-#: source_id: viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
+#: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
 #: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
 #: also_indoor: traffic (T,G,H,W)
-#: last_checked: 2025-11-16 vvv
+#: last_checked: 2025-12-18 (VIZ) vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
-	q4::inwork 15807,5286 15870,5251 15828,5156
-	q4::inwork 16062,5242 15870,5251
+#: next_check: 2026-01-31 (VIZ) vvv
+# REMOVED (nicht mehr gesperrt) --- Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
+Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
@@ -51371,16 +51375,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1766077060, # undef, # XXX
        text  => 'Langenscheidtbrücke: wegen möglichen Brandschäden gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.tagesspiegel.de/berlin/hitze-beschadigte-das-bauwerk-brucke-in-berlin-schoneberg-nach-feuer-gesperrt-15061564.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/langenscheidtbrucke-in-schoneberg-nach-brand-fur-kfz-verkehr-gesperrt/ (nur Kfz-Verkehr betroffen)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mab4uqycg22s
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1627650.php
 #: source_id: LMS-BR:393540/72 viz2021:13.36405,52.48828, (kein Endedatum)
 #: also_indoor: traffic (T,G)
-#: add_fragezeichen: Ist die Brücke weiterhin gesperrt?
-#: last_checked: 2025-12-17 (Tsp, VIZ-Verkehrsmeldung, traffic)
-#: check_frequency: 2d
+# REMOVED --- #: add_fragezeichen: Ist die Brücke weiterhin gesperrt? --- #: last_checked: 2025-12-17 (Tsp, VIZ-Verkehrsmeldung, traffic) --- #: check_frequency: 2d
 	2::inwork 7647,9196 7735,9121
 EOF
      },

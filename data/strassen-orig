@@ -6602,7 +6602,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]	NN 18200,11269 18202,11253
 Charlottenstr. (Friedrichsfelde)	N 18477,11388 18462,11602 18520,11631 18520,11662 18520,11685 18520,11707
 Neuer Feldweg	N 17360,9629 17365,9654 17383,9719
 Dolgenseestr.	N 17383,9719 17391,9746 17404,9794
-Dolgenseestr.	N 17471,9688 17494,9769 17523,9882 17527,9899 17559,10024 17567,10055 17605,10199
+Dolgenseestr.	N 17471,9688 17480,9721 17494,9769 17523,9882 17527,9899 17559,10024 17567,10055 17605,10199
 Dolgenseestr.	N 17527,9760 17494,9769 17404,9794 17384,9807 17273,9880 17275,9892 17288,9952 17330,10117
 Dolgenseestr.	N 17567,10055 17457,10083 17330,10117 17156,10164 17026,10199
 Dolgenseestr.	N 17026,10199 17018,10122 17035,10079 17078,10038 17288,9952
@@ -6611,6 +6611,10 @@ Dolgenseestr. [Wohngebiet]	N 17559,10024 17761,9971 17774,9934
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]	N 17523,9882 17412,9911
 (Dolgenseestr., Fußgängerzone)	NN 17457,10083 17412,9911 17384,9807
 (Dolgenseestr., Erschließungsweg)	NN 17288,9952 17412,9911
+#: osm.highway: service
+(Dolgenseestr., Parkplatz)	N 17391,9746 17475,9722
+(Dolgenseestr., Parkplatz)	NN 17475,9722 17480,9721
+(Weg im Hönower Grünzug)	NN 17480,9721 17498,9714 17595,9674 17643,9662 17690,9660 17773,9670
 Am Tierpark	H 18215,11690 18216,11656 18263,11393 18280,11266 18327,11105 18343,11041 18417,10738 18446,10620 18554,10354 18585,10278 18609,10220 18631,10167 18694,10018
 Am Tierpark [zur Nebenfahrbahn]	N 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]	N 18304,11407 18272,11552 18264,11596 18285,11637
@@ -11944,9 +11948,9 @@ Fischerstr. (Rummelsburg)	NN 15970,10755 16080,10743
 Zobtener Str.	N 15758,10578 16148,10329 16353,10207 16539,10097 16734,9990 16811,9937 16878,9875
 Zobtener Str.	NN 16878,9875 16900,9861
 (Zobtener Str. - Fischerstr.)	NN 16353,10207 16404,10286
-(Fischerstr. - Lückstr.)	NN 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16562,10617
-#: historical_note: früher (bis etwa Ende 2020) war die Durchfahrt weiter östlich, wurde aber durch ein Howoge-Wohngebiet zugebaut
-(Fischerstr. - Lückstr.)	N 16562,10617 16576,10658
+(Fischerstr. - Lückstr.)	NN 16404,10286 16488,10381 16516,10431
+# REMOVED (existiert nicht mehr) --- (Fischerstr. - Lückstr.)	NN 16516,10448 16501,10460 16572,10613 16562,10617
+# REMOVED (Durchwegung existiert nicht mehr) --- #: historical_note: früher (bis etwa Ende 2020) war die Durchfahrt weiter östlich, wurde aber durch ein Howoge-Wohngebiet zugebaut --- (Fischerstr. - Lückstr.)	N 16562,10617 16576,10658
 Wallensteinstr.	N 18134,9080 18092,9141 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 (Weg entlang der Bahnstrecke)	NN 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
 (Weg entlang der Bahnstrecke)	N 17866,9639 18224,9795 18278,9818 18445,9887 18703,9997
@@ -16053,8 +16057,8 @@ Greifenberger Str.	N 17490,89 17287,401 17134,644
 Schleffiner Str.	N 17168,654 17159,703 17106,783 17035,775
 Exiner Str.	N 17412,491 17274,705 17134,908
 Mellenseestr.	N 17527,9899 17633,9898 17738,9922 17774,9934 17838,9956 17958,10012
-Mellenseestr. [Wohngebiet]	N 17633,9898 17628,9757 17587,9655
-Mellenseestr. [Wohngebiet]	N 17738,9922 17749,9811 17777,9649
+Mellenseestr. [Wohngebiet]	N 17633,9898 17626,9744 17595,9674 17587,9655
+Mellenseestr. [Wohngebiet]	N 17738,9922 17749,9811 17763,9729 17773,9670 17777,9649
 Mellenseestr. [Wohngebiet]	N 17838,9956 17868,9823 17920,9698
 Michiganseestr.	N 17026,10199 17042,10269 17081,10415
 Huronseestr.	N 16808,10554 16767,10398 16755,10352 16742,10303 16727,10245 16811,10219
@@ -16069,7 +16073,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2025-12-11
+#: last_checked: 2025-12-18
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16463,7 +16467,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2025-12-11
+#: last_checked: 2025-12-18
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

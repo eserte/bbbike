@@ -26,12 +26,13 @@ Markgrafendamm -> Alt-Stralau: Sperrung der Linksabbiegespur	3 14608,10409 14558
 #: osm_watch: way id="4609226" version="27"
 #: osm_watch: note 4705942 6
 #: source_id: viz2021:13.278443,52.516243,04.04.2025,08:00 (kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.27744,52.51422, (bis 31.12.2025)
+#: source_id: LMS-BR:364744/72 viz2021:13.27744,52.51422, (bis 31.12.2025) (kein Endedatum)
+#: note: laut rbb Einbahnstraße bis zur Fertigstellung der neuen Ringbahnbrücke A100
 #: priority: #D
 #: last_checked: 2025-09-24
-#: check_frequency: 270d
-#: next_check: 2025-12-31
-# REMOVED --- #: valid: -20251231
+#: check_frequency: 360d
+#: next_check: 2027-09-20 (rbb, entwicklungsstadt)
+#: valid: -20270920
 Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 # 
 #: next_check_id: A100-RINGBAHNBRUECKE-2025

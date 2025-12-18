@@ -906,8 +906,8 @@ Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Mittelstreifen, Bordsteine	3nocross::ignrte 12930,10621 12899,10595 12731,10547
 Skalitzer Str. -> Skalitzer Str.: Mittelstreifen, Bordsteine	3::igndisp 12930,10621 12899,10595 12978,10581
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
-Mellenseestr. [Wohngebiet]	1 17777,9649 17749,9811 17738,9922
-Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
+Mellenseestr. [Wohngebiet]	1s 17763,9729 17749,9811 17738,9922
+Mellenseestr. [Wohngebiet]	1s 17920,9698 17868,9823 17838,9956
 Mühsamstr.	1 13818,12897 13830,12907
 Lilli-Henoch-Str.	1s 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
@@ -3556,6 +3556,7 @@ Drängelgitter	BNP:3:-108:trailer=10 8982,10510
 Drängelgitter	BNP:3:-96:trailer=10 9165,10530
 Schwingtor	BNP:5:-27:trailer=10 11543,20272
 Drängelgitter	BNP:3:-248:trailer=10 113,7
+Drängelgitter	BNP:3:-68:trailer=10 17498,9714
 südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
 Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
@@ -3621,7 +3622,6 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
 Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,10677
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
-Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 (Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7789,12764 7649,12764
 (Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7362,12731 7377,12729 7542,12736 7588,12734 7819,12729
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
@@ -3642,7 +3642,6 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:i
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
-Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16576,10658 16562,10617
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,10227

@@ -1222,7 +1222,7 @@ Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12582,8651
 Zur Kreutzigerstr.: enger Hausdurchgang	q4 14280,12223 14274,12190
 Müggelstr.: einige Fußgänger	q3 14994,12121 14994,12064
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286
-(Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16562,10617
+(Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10431
 Märkischer Platz: Fußgänger, Radfahren offiziell nicht erlaubt	q4 11034,12038 11084,12070 11111,12027
 (Fischerinsel - Grünstraßenbrücke): Fußgänger, niedriger Bordstein	q2 10474,11843 10515,11785
 (Rampe Wriezener Park): Fußgänger, enge Rampe	q3 13416,11425 13442,11400
@@ -2449,6 +2449,9 @@ Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15737,360
 Fennpfuhlweg: vier Bodenschwellen	q0 17750,19181 17697,18989
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,9911
 (Dolgenseestr., Erschließungsweg): einige Fußgänger	q2 17288,9952 17412,9911
+(Dolgenseestr., Parkplatz): Parkplatzverkehr	q2 17391,9746 17475,9722
+(Dolgenseestr., Parkplatz): Bordstein	q3 17475,9722 17480,9721
+(Weg im Hönower Grünzug): Fußgänger	q3 17480,9721 17498,9714 17595,9674 17643,9662 17690,9660 17773,9670
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8099,13391 8106,13393
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): Rampe, einige Fußgänger	q3 8106,13393 8111,13358 8119,13396
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8119,13396 8174,13397
@@ -3634,6 +3637,8 @@ Enckestr. - Friedrichstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::
 (Straße vor dem Berliner Ensemble): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9153,12928 9212,12969
 Grüne Aue: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Am Heidehof: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -1410,2726 -1571,2669 -1612,2785
+Mellenseestr. [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17763,9729 17749,9811 17738,9922
+Mellenseestr. [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17920,9698 17868,9823 17838,9956
 Lilli-Henoch-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12357,15020 12388,14926
 Sinsheimer Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 13774,8849 13687,8734
 Hannaweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 20938,14066 20923,13953

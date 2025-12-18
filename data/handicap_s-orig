@@ -1083,7 +1083,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-12-14
+#: last_checked: 2025-12-18
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1283,7 +1283,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: note: Halteverbotsschilder bis 19.12.2025, laut Baustellenschild geplante Fertigstellung der Bahnbrücke 03/2026
 #: osm_watch: note 4721088 3
 #: also_indoor: traffic (T)
-#: last_checked: 2025-10-25
+#: last_checked: 2025-12-18 (traffic)
 #: check_frequency: 120d
 #: next_check: 2025-12-19 (Halteverbotsschilder)
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
@@ -2342,9 +2342,9 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="529086013" version="4"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="15"
-#: last_checked: 2025-11-08 (architektur-urbanistik)
+#: last_checked: 2025-12-18 (daf)
 #: check_frequency: 120d
-#: next_check: 2025-12-15 (Halteverbotsschilder)
+# REMOVED --- #: next_check: 2025-12-15 (Halteverbotsschilder)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
 # 
 #: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
@@ -3108,7 +3108,8 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q4+ 14280,12223 14274,12190
 Müggelstr.: einige Fußgänger	q3 14994,12121 14994,12064
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286
-(Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16562,10617
+(Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10431
+# REMOVED (existiert nicht mehr) --- (Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16516,10448 16501,10460 16572,10613 16562,10617
 # REMOVED (BS existiert nicht mehr) --- #: XXX_prog BS Bordstein am Monimbóplatz, ansonsten entfernen --- (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Bordstein	q2 17023,11908 17026,11888
 #: note: abgesenkter Bordstein zur Wallstr.
 #: note: früher "q2", Grünanlagen mit Radfahren-verboten-Zusatzschild
@@ -4896,6 +4897,11 @@ Fennpfuhlweg: vier Bodenschwellen	q0- 17750,19181 17697,18989
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,9911
 #: note: unklar, ob das hier zur für Radfahrer freigegebenen Fußgängerzone gehört
 (Dolgenseestr., Erschließungsweg): einige Fußgänger	q2 17288,9952 17412,9911
+(Dolgenseestr., Parkplatz): Parkplatzverkehr	q2 17391,9746 17475,9722
+#: XXX_prog BS (nur zur Parkplatzseite hin)
+(Dolgenseestr., Parkplatz): Bordstein	q3 17475,9722 17480,9721
+#: note: Grünanlagenschild ohne Zusatzschilder
+(Weg im Hönower Grünzug): Fußgänger	q3 17480,9721 17498,9714 17595,9674 17643,9662 17690,9660 17773,9670
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8099,13391 8106,13393
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): Rampe, einige Fußgänger	q3 8106,13393 8111,13358 8119,13396
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8119,13396 8174,13397
@@ -5174,10 +5180,10 @@ Straßenbahnübergang	q3 17861,17099 17866,17116
 Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
-#: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025)
+#: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: last_checked: 2025-12-15 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2025-12-19 vvv
+#: next_check: 2025-12-18 vvv
 #: valid: -20251219
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
 #: valid: 20251219-
@@ -7365,10 +7371,10 @@ Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,33
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Bei Sperrungen des Teltowkanaluferwegs ist hier die offizielle Umleitung für Fußgänger und *Radfahrer*, trotz Grünanlage.
 #: last_checked: 2025-06-25 vvv
-#: next_check: 2025-12-19 vvv
-#: valid: !20250617-20251219
+#: next_check: 2026-03-20 (VIZ-Verkehrsmeldung) vvv
+#: valid: !20250617-20260320
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065
-#: valid: 20250617-20251219
+#: valid: 20250617-20260320
 Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 #: next_check ^^^
 #: last_checked ^^^

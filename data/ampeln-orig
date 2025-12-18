@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: KOENIGSHEIDEWEG-2025
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
+#: last_checked: 2025-12-18 (VIZ)
+#: next_check: 2026-01-31 (VIZ)
+#: valid: -20260131
+Königsheideweg/Späthsfelder Weg: Baustellenampel	X::inwork::alternating 15870,5251
+# 
 #: next_check_id: HANNOVERSCHE-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
@@ -4342,14 +4349,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: source_id: viz2021:13.37326,52.53807,06.11.2023,09:00 (bis 15.02.2024) (inaktiv)
 #: source_id: viz2021:13.373268,52.538065,06.11.2023,09:00 (provisorische Ampelanlage bis 15.02.2024) (inaktiv)
 #: source_id: viz2021:13.373342,52.538077,26.06.2025,09:00 (Einmündungsumbau, bis 15.08.2025) (inaktiv)
-#: source_id: viz2021:13.373259,52.538069,26.06.2025,09:00 (bis 15.08.2025) (bis 01.09.2025) (bis 26.12.2025)
+#: source_id: LMS-BR:373894/72 viz2021:13.373259,52.538069,26.06.2025,09:00 (bis 15.08.2025) (bis 01.09.2025) (bis 26.12.2025) (bis 19.12.2025)
 #: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
 #: osm_watch: node id="7041133991" version="2"
 #: osm_watch: note 4938354 1
 #: note: Anforderungsampel
 #: last_checked: 2025-12-03
 #: check_frequency: 120d
-#: next_check: 2025-12-26 (VIZ-Verkehrsmeldung)
+#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	X::inwork 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 

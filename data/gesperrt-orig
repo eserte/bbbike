@@ -208,7 +208,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-12-11 vvv
+#: last_checked: 2025-12-18 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -1511,13 +1511,13 @@ Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 1273
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 #: next_check_id: HOENOWERWEG-2025
-#: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1" ändern
-#: last_checked: 2025-12-09
+#: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
+#: last_checked: 2025-12-18
 #: check_frequency: 60d
 #: next_check: 2027-02-28
-Mellenseestr. [Wohngebiet]	1no 17587,9655 17628,9757 17633,9898
-Mellenseestr. [Wohngebiet]	1 17777,9649 17749,9811 17738,9922
-Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
+Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
+Mellenseestr. [Wohngebiet]	1s:q4 17763,9729 17749,9811 17738,9922
+Mellenseestr. [Wohngebiet]	1s:q4 17920,9698 17868,9823 17838,9956
 # REMOVED (eigentlich weitgehend beendet) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-05-06 --- #: check_frequency: 14d --- #: valid: 20220510-
 Mühsamstr.	1 13818,12897 13830,12907
 #: note: nur ein Einfahrt-verboten-Schild ohne korrespondierendes Einbahnstraßenschild
@@ -4044,6 +4044,7 @@ Drängelgitter	BNP:3::trailer=10 8982,10510
 Drängelgitter	BNP:3::trailer=10 9165,10530
 Schwingtor	BNP:5::trailer=10 11543,20272
 Drängelgitter	BNP:3::trailer=10 113,7
+Drängelgitter	BNP:3::trailer=10 17498,9714
 # 
 #: section ^^^
 ############################################################################
@@ -4173,7 +4174,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="11"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-12-11
+#: last_checked: 2025-12-18
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4618,7 +4619,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2025-12-14
+#: last_checked: 2025-12-18
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4626,7 +4627,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2025-12-14 vvv
+#: last_checked: 2025-12-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4658,16 +4659,17 @@ Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,1067
 #: next_check: 2026-06-30 (BA, entwicklungsstadt)
 Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
-#: next_check_id: LICHTENBERGERBRUECKEN-2022
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9863 (Erwähnung)
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
-#: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
-#: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
-#: priority: #C
-#: last_checked: 2025-12-11
-#: check_frequency: 60d
-Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
+# REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022
+# REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9863 (Erwähnung)
+# REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
+# REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
+# REMOVED --- #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
+# REMOVED --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
+# REMOVED --- #: osm_watch: note 5096562 1
+# REMOVED --- #: priority: #C
+# REMOVED --- #: last_checked: 2025-12-11
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
 #: next_check_id: KANZLERPARK-2024
 #: XXX Bauarbeiten am Kanzlerpark
@@ -4987,12 +4989,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 # REMOVED (laut osm mittlerweile offen) --- #: next_check_id: NORD52-2019 --- #: last_checked: 2021-02-24 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2021-04-14 vvv --- #: osm_watch: way id="630987121" version="10" --- Ankerweg: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22118,2559 22159,2585 22197,2612 --- #: osm_watch: way id="353948101" version="11" --- An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2612 22270,2549 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 --- #: by: https://www.berndalbers.com/krautstrasse-30-berlin (vielleicht verschwindet die Straße im Zuge dieses Neubaus?) --- #: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_39_3593_3676_online.pdf (Einziehung und Widmung einer Grünanlage)--- #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden--- #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert; Ende März 2022: die komplette Straße existiert nicht mehr --- #: osm_watch: way id="25008069" version="15" --- #: last_checked: 2022-03-31 --- #: check_frequency: 90d --- # REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 --- Mehlbeerenweg: Straße existiert nicht mehr	2::inwork 11923,11881 11940,11982
 # REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/14299-wohnquartier-f%C3%BCrstenberger-stra%C3%9Fe-8-mitte-in-bau/?postID=686545#post686545 --- #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung) --- #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht --- #: osm_watch: way id="308312347" version="6" --- #: last_checked: 2022-11-30 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2022-08-15 --- Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10468,14636 10320,14608
-# 
-#: XXX früher gab es weiter östlich eine Durchfahrt; mittlerweile gibt es noch eine Baulücke, bei der theoretisch ein Durchgang möglich wäre, aber vermutlich wird die Baulücke hier auch noch geschlossen
-#: last_checked: 2025-10-25
-#: check_frequency: 180d
-Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16576,10658 16562,10617
-# 
+# REMOVED (Durchwegung existiert nicht und wird auch nicht wieder entstehen) --- #: XXX früher gab es weiter östlich eine Durchfahrt; mittlerweile gibt es noch eine Baulücke, bei der theoretisch ein Durchgang möglich wäre, aber vermutlich wird die Baulücke hier auch noch geschlossen --- #: last_checked: 2025-10-25 --- #: check_frequency: 180d --- Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt; vermutlich wird es auch in Zukunft keinen Durchgang geben	2 16576,10658 16562,10617
 # REMOVED (offen, dafür ist nun temporär die Anbindung an die Zobtener Str. verschwenkt) --- #: last_checked: 2021-05-23 vvv --- #: check_frequency: 14d vvv --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997 --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
 # REMOVED (hier jetzt offen, aber noch nicht fertig) --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16841,9997 16830,10030 16835,10052
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^

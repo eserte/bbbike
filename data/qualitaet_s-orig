@@ -6649,6 +6649,7 @@ Dolgenseestr.: Beton	Q0- 17026,10199 17018,10122 17035,10079 17078,10038 17288,9
 Dolgenseestr.: Beton	Q0- 17273,9880 17275,9892 17288,9952
 Dolgenseestr. [Wohngebiet]: Beton	Q1+ 17559,10024 17761,9971 17774,9934
 Dolgenseestr.: Asphalt und Beton mit einigen Hebungen	Q1 17288,9952 17330,10117
+(Weg im Hönower Grünzug): Asphalt	Q0 17480,9721 17498,9714 17595,9674 17643,9662 17690,9660 17773,9670
 Upsalaer Str.: Kopfsteinpflaster	Q2 11369,16744 11364,16887
 Obernburger Weg: Kopfsteinpflaster	Q2 11686,17710 11700,17629
 Obernburger Weg: Beton	Q1+ 11700,17629 11711,17569 11765,17578
@@ -9292,9 +9293,9 @@ Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2+ 12453,11790 12413,11901
 (Normannenstr. - Jobcenter Lichtenberg): Beton	Q1 16089,12522 16122,12524 16132,12621
 Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 (Zobtener Str. - Fischerstr.): unbefestigter Weg, etwas Schotter	Q2+ 16353,10207 16404,10286
-(Fischerstr. - Lückstr.): unbefestigter Weg, etwas Schotter	Q2+ 16404,10286 16488,10381 16516,10448
-(Fischerstr. - Lückstr.): Beton mit Schäden	Q2+ 16516,10448 16501,10460 16572,10613 16562,10617
-(Fischerstr. - Lückstr.): Beton mit Schäden	Q1- 16562,10617 16576,10658
+(Fischerstr. - Lückstr.): unbefestigter Weg, etwas Schotter	Q2+ 16404,10286 16488,10381 16516,10431
+# REMOVED (existiert nicht mehr) --- (Fischerstr. - Lückstr.): Beton mit Schäden	Q2+ 16516,10448 16501,10460 16572,10613 16562,10617
+# REMOVED (Durchwegung existiert nicht mehr) --- (Fischerstr. - Lückstr.): Beton mit Schäden	Q1- 16562,10617 16576,10658
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED --- #: XXX wird hier saniert werden? --- # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1 --- #: osm_watch: way id="35873435" version="13" --- #: last_checked: 2025-04-02 --- #: check_frequency: 120d
@@ -13610,8 +13611,8 @@ Messelstr.: Asphalt	Q0  2397,6960 2304,7059 2139,7239 2017,7412 1956,7453
 Müggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 (Barnimstr. - Mollstr.): Beton	Q0- 11785,13241 11762,13207
 Heidenfeldstr. [Stichstraße]: Beton	Q1 13445,13376 13419,13435
-Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1+ 17633,9898 17628,9757 17587,9655
-Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1+ 17738,9922 17749,9811 17777,9649
+Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1+ 17633,9898 17626,9744 17595,9674 17587,9655
+Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1+ 17738,9922 17749,9811 17763,9729 17773,9670 17777,9649
 Mellenseestr. [Wohngebiet]: Beton	Q0- 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 # REMOVED (im westlichen Abschnitt passiert nichts) --- #: XXX Bauarbeiten, im östlichen Abschnitt wurde neu asphaltiert, evtl. wird auch im restlichen Abschnitt noch gearbeitet --- #: source_id: viz2021:13.403481,52.488825,10.11.2023,10:00 (bis 01.12.2023) (inaktiv) --- #: last_checked: 2023-11-21 --- #: next_check: 2023-12-01
