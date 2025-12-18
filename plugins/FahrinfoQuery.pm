@@ -7,8 +7,7 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # Description (de): Eine OePNV-Routensuche mit Fahrinfo vornehmen
@@ -17,7 +16,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '2025.09';
+$VERSION = '2025.12';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -63,9 +62,9 @@ my $bbbike_root = bbbike_root;
 
 ######################################################################
 # configurable
-my $openvbb_download_size = '66MB';
+my $openvbb_download_size = '68MB';
 my $openvbb_year = 2025;
-my $openvbb_index = 3;
+my $openvbb_index = 4;
 my $openvbb_data_url = 'https://www.vbb.de/vbbgtfs';
 ######################################################################
 
