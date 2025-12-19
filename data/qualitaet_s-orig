@@ -485,7 +485,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-12-17
+#: last_checked: 2025-12-19
 #: check_frequency: 90d
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
@@ -9293,7 +9293,7 @@ Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2+ 12453,11790 12413,11901
 (Normannenstr. - Jobcenter Lichtenberg): Beton	Q1 16089,12522 16122,12524 16132,12621
 Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 (Zobtener Str. - Fischerstr.): unbefestigter Weg, etwas Schotter	Q2+ 16353,10207 16404,10286
-(Fischerstr. - Lückstr.): unbefestigter Weg, etwas Schotter	Q2+ 16404,10286 16488,10381 16516,10431
+(Fischerstr. - KGA Sanssouci, nördlicher Teil): unbefestigter Weg, etwas Schotter	Q2+ 16404,10286 16488,10381 16516,10431
 # REMOVED (existiert nicht mehr) --- (Fischerstr. - Lückstr.): Beton mit Schäden	Q2+ 16516,10448 16501,10460 16572,10613 16562,10617
 # REMOVED (Durchwegung existiert nicht mehr) --- (Fischerstr. - Lückstr.): Beton mit Schäden	Q1- 16562,10617 16576,10658
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
@@ -12338,6 +12338,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Weg am CleanTech Business Park): fester Belag	Q0 19647,16633 19601,16679 19631,16704 19749,17028 19788,17076 19845,17235 19907,17429
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
+Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
 #: note: in der Nähe der Straßenbahnschienen aber keine Schäden mehr
 Holteistr.: Asphalt mit Schäden	Q0-; 14710,11626 14676,11572 14639,11512
 #: historical_note: früher (bis Mitte Dez 2024) Asphalt mit Schäden, Q0-

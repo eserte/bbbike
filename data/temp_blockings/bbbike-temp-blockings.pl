@@ -16622,7 +16622,7 @@ EOF
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-12-16
+#: last_checked: 2025-12-19
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -33246,7 +33246,7 @@ EOF
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025) (inaktiv)
 #: source_id: LMS-BR:228995/72 viz2021:13.42885,52.47792,01.04.2025,12:21 viz2021:13.42885,52.47792, viz2021:13.42885,52.47792, (bis 31.12.2025) (bis 31.12.2026)
 #: osm_watch: way id="495949633" version="19"
-#: osm_watch: note 4199651 1
+#: osm_watch: note 4199651 6
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
@@ -33915,9 +33915,9 @@ EOF
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 19
-#: last_checked: 2025-11-26 (research)
+#: last_checked: 2025-12-16 (mapillary)
 #: check_frequency: 30d
-#: next_check: 2025-12-31 (blankenfelde-mahlow website)
+# REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 EOF
      },
@@ -35063,9 +35063,9 @@ EOF
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: osm_watch: way id="229990468" version="8"
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2025-09-22 (mapillary)
-#: check_frequency: 120d
-#: next_check: 2025-12-31
+#: last_checked: 2025-12-19 (DB website)
+#: check_frequency: 90d
+#: next_check: 2026-06-30 (DB website: 2026)
 	2::inwork 7673,4223 7769,4315
 EOF
      },
@@ -37223,7 +37223,7 @@ EOF
 EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
-       until => undef, # $isodate2epoch->("2024-04-30 17:00:00"), # undef, # 1667861999, # 2022-11-07 23:59
+       until => 1766181912, # $isodate2epoch->("2024-04-30 17:00:00"), # undef, # 1667861999, # 2022-11-07 23:59
        text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Amalienstr., Fahrbahn gesperrt, außerdem Kreuzungsbereich Schönstr./Amalienstr. gesperrt und Einbahnstraßenregelungen in Woelckpromenade und Paul-Oestreich-Str., vermutlich bis Mitte Dezember 2025', # früher: nur bis Amalienstr.
        type  => 'handicap',
        data  => <<EOF,
@@ -37242,13 +37242,10 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/seit-sechs-jahren-ist-die-schoenstrasse-baustelle_a419039 (bis Juni 2025)
 #: source_id: viz2021:13.456,52.556307,05.12.2023,07:00 (bis 30.04.2024) (bis 31.07.2025) (bis 10.06.2024) (inaktiv)
 #: source_id: viz2021:13.454869,52.555779,10.06.2024,07:00 (bis 22.07.2024, weitere Arbeiten folgen) (inaktiv) (bis 31.07.2024, weitere Arbeiten folgen) (bis 16.08.2025) (inaktiv)
-#: source_id: viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 19.12.2025)
+#: source_id: LMS-BR:336030/72 viz2021:13.456538,52.556604, (bis 31.07.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 19.12.2025) (inaktiv)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 # REMOVED --- #: note: außerhalb der Arbeitszeiten ist die Passage in der Schönstr. u.U. möglich, gesehen 2024-04-14 (Sun)
-#: last_checked: 2025-12-15 vvv
-#: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2025-10-31 (VIZ-Verkehrsmeldung, BA-Seite) vvv
-#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: last_checked: 2025-12-15 vvv --- #: check_frequency: 120d vvv --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1043813287" version="3"
 # REMOVED --- #: osm_watch: way id="1043813288" version="2"
 # REMOVED (fertig) ---	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -37265,9 +37262,7 @@ Amalienstr.	q4::inwork 13794,16773 13848,16721
 Paul-Oestreich-Str.: Einbahnstraßenregelung	q4::inwork; 13630,16629 13710,16544
 Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 13848,16721
 # REMOVED (fertig) ---	q3::inwork 13996,16959 14136,17170
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
@@ -38229,6 +38224,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: URBANTECHREPUBLIC-2022
 #: by: https://berliner-abendblatt.de/2023/01/11/senat-plant-auszug-der-fluechtlinge-aus-terminals-in-tegel/ (bis Mitte März 2023; allerdings bleibt Terminal C möglicherweise weiterhin als Unterkunft erhalten)
+#: by: https://www.tagesspiegel.de/berlin/nach-uber-dreieinhalb-jahren-betrieb-fluchtlingsunterkunft-tegel-ist-leergezogen--vorerst-keine-gefluchteten-mehr-vor-ort-15065214.html
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
 #: last_checked: 2025-03-04 (orthofotos) vvv
@@ -40545,20 +40541,20 @@ EOF
 EOF
      },
      { from  => 1683010800, # 2023-05-02 09:00
-       until => $isodate2epoch->("2025-12-31 23:59:59"), # 1757084400, # 2025-09-05 17:00
+       until => $isodate2epoch->("2026-03-06 23:59:59"), # 1757084400, # 2025-09-05 17:00
 #      text  => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, evtl. dürfen Radfahrer den Gehweg benutzen, vom 03.05.2023 09:00 bis 05.09.2025 17:00',
-       text  => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, vom 03.05.2023 09:00 bis 31.12.2025 17:00',
+#      text  => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, vom 03.05.2023 09:00 bis 31.12.2025 17:00',
+       text  => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, geplant bis Anfang März 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
-#: source_id: viz2021:13.36722,52.52237,05.09.2023,07:20 (bis 05.09.2025) (inaktiv)
-#: source_id: viz2021:13.36722,52.52237, (bis 31.12.2025)
+#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
 #: last_checked: 2025-12-03
 #: check_frequency: 180d
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
 EOF
      },
@@ -43545,7 +43541,7 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 EOF
      },
      { from  => $isodate2epoch->("2025-11-16 00:00:00"), # 1730782800, # 2024-11-05 06:00, # 1705899600, # 2024-01-22 06:00
-       until => $isodate2epoch->("2025-12-19 23:59:59"), # $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
+       until => 1766179538, # $isodate2epoch->("2025-12-19 23:59:59"), # $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
 #      text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
 #      text  => 'Gürtelstr.: Kranabbau zwischen Weserstr. und Wiesenweg, Sperrung der Fahrbahn, vom 06.11.2024 06:00 bis 07.11.2024 18:00',
        text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 19.12.2025',
@@ -43554,8 +43550,8 @@ EOF
 #: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
-#: source_id: LMS-BR:390063/72 viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025) (bis 19.12.2025)
-#: source_id: LMS-BR:390300/72 viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025) (bis 12.12.2025) (bis 19.12.2025)
+#: source_id: LMS-BR:390063/72 viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025) (bis 19.12.2025) (inaktiv)
+#: source_id: LMS-BR:390300/72 viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025) (bis 12.12.2025) (bis 19.12.2025) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
@@ -44556,6 +44552,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GM-T_ItXAAEbotS?format=jpg&name=large (Sterndamm)
 #: by: https://pbs.twimg.com/media/GM-UPCQXoAAPE8L?format=jpg&name=large (Winckelmannstr.)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251016 (bis 31.12.2025)
+#: by: https://www.bahninfo-forum.de/read.php?9,830505,844662#msg-844662
 #: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
 #: note: laut rbb bis 15.8.2024 (go with it)
 #: note: bei VIZ seit dem 8.8.2024 inaktiv (zu früh?)
@@ -47127,6 +47124,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
 #: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024) (inaktiv)
 #: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024) (inaktiv)
+#: source_id: LMS-BR:393717/72 viz2021:13.62548,52.45697,19.12.2025,06:00 (bis 21.12.2025)
 	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
      },
@@ -48403,13 +48401,13 @@ EOF
 EOF
      },
      { from  => 1744520400, # 2025-04-13 07:00
-       until => $isodate2epoch->("2025-12-31 23:59:59"), # $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
+       until => $isodate2epoch->("2026-01-02 23:59:59"), # $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
 #      text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 26.09.2025 17:00',
-       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Ende Dezember 2025',
+       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Anfang Januar 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...) (inaktiv)
-#: source_id: viz2021:13.37222,52.4556, (bis 31.10.2025) (bis 28.11.2025) (bis 31.12.2025)
+#: source_id: LMS-BR:366727/72 viz2021:13.37222,52.4556, (bis 31.10.2025) (bis 28.11.2025) (bis 31.12.2025) (bis 02.01.2026)
 	q4::inwork 8365,5502 8365,5418
 EOF
      },
@@ -49122,7 +49120,7 @@ EOF
 EOF
      },
      { from  => 1749297422, # 2025-06-07 13:57
-       until => undef, # $isodate2epoch->("2025-12-19 18:00:00"), # 1756225274, # $isodate2epoch->("2025-08-30 18:00:00"), # 1755381600, # 2025-08-17 00:00
+       until => 1766179882, # undef, # $isodate2epoch->("2025-12-19 18:00:00"), # 1756225274, # $isodate2epoch->("2025-08-30 18:00:00"), # 1755381600, # 2025-08-17 00:00
 #      text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende August 2025',
 #      text  => 'Lange Str.: zwischen Andreasstr. und Koppenstr. Hochbauarbeiten, Sperrung, voraussichtlich bis Mitte September 2025',
        text  => 'Lange Str.: Bauarbeiten an der Einmündung Koppenstr., Sperrung der Fahrbahn, voraussichtlich bis Mitte Dezember 2025',
@@ -49134,9 +49132,7 @@ EOF
 # REMOVED (nur noch Vorfahrt vor dem Gegenverkehr?) --- #: XXX Ist mittlerweile in beiden Fahrtrichtungen gesperrt? ---
 # REMOVED ---	q4::inwork; 12238,11931 12413,11901
 #: note: Asphaltierungsarbeiten am 16.12.2025, Sperrung der Fahrbahn könnte pünktlich aufgehoben werden
-#: last_checked: 2025-12-16
-#: check_frequency: 45d
-#: next_check: 2025-12-19 (Halteverbotsschilder)
+# REMOVD --- #: last_checked: 2025-12-16 --- #: check_frequency: 45d --- #: next_check: 2025-12-19 (Halteverbotsschilder)
 	q3::inwork 12238,11931 12413,11901
 EOF
      },
@@ -49479,9 +49475,10 @@ EOF
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2025-12-18 (traffic)
-#: check_frequency: 30d
-#: next_check: 2025-12-19 (Halteverbotsschilder)
+#: last_checked: 2025-12-19 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
 # REMOVED (hier nicht mehr) ---	q4::inwork 22456,3889 22538,3889
 	q3::inwork 22538,3889 22666,3888
 EOF
@@ -49564,18 +49561,18 @@ EOF
      { from  => 1752012000, # 2025-07-09 00:00
        until => undef, # 1759420800, # 2025-10-02 18:00
 #      text  => 'Schaperstr.: Bauarbeiten, von Nürnberger Str. Richtung Joachimsthaler Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 02.10.2025',
-#      text  => 'Schaperstr.: Bauarbeiten, Fahrbahn zwischen Nürnberger Str. und Joachimsthaler Str. gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Schaperstr.: Bauarbeiten, Fahrbahn zwischen Nürnberger Str. und Joachimsthaler Str. gesperrt, voraussichtlich bis 19.12.2025',
+#      text  => 'Schaperstr.: Bauarbeiten, Fahrbahn zwischen Nürnberger Str. und Joachimsthaler Str. gesperrt, voraussichtlich bis 19.12.2025',
+       text  => 'Schaperstr.: Bauarbeiten, Fahrbahn zwischen Nürnberger Str. und Joachimsthaler Str. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: adac:879720956 (bis voraussichtlich 02.10.2025) (neue ID -> inaktiv)
 #: note: bei rbb bis 02.10.2025
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
-#: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025)
+#: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-06 (mapillary)
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: next_check: 2025-12-19
+#: last_checked: 2025-12-19 (traffic)
+#: check_frequency: 7d (traffic)
+# REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	q4::inwork 5700,10226 5597,10299 5450,10338
 EOF
      },
@@ -49797,7 +49794,7 @@ EOF
        data  => <<'EOF',
 #: source_id: adac:356158344 (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.254503,52.506746,21.07.2025,07:00 (bis 17.10.2025) (inaktiv)
-#: source_id: viz2021:13.25418,52.50807,15.10.2025,06:00 (bis 19.12.2025)
+#: source_id: LMS-BR:386775/72 viz2021:13.25418,52.50807,15.10.2025,06:00 (bis 19.12.2025) (inaktiv)
 # REMOVED ---	q4::inwork 368,11051 251,11039 37,11014
 # REMOVED --- Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
 Insterburgallee	q4::inwork 229,11213 251,11039
@@ -50608,11 +50605,11 @@ EOF
 EOF
      },
      { from  => 1759726800, # 2025-10-06 07:00
-       until => $isodate2epoch->("2025-12-19 23:59:59"), # 1762531200, # 2025-11-07 17:00
+       until => 1766181750, # $isodate2epoch->("2025-12-19 23:59:59"), # 1762531200, # 2025-11-07 17:00
        text  => 'Ludwigkirchstraße: Baustelle, von Fasanenplatz Richtung Uhlandstr. gesperrt, vom 07.10.2025 bis 19.12.2025',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:385922/72 viz2021:13.32687,52.49824,07.10.2025,07:00 (bis 07.11.2025) (bis 19.12.2025)
+#: source_id: LMS-BR:385922/72 viz2021:13.32687,52.49824,07.10.2025,07:00 (bis 07.11.2025) (bis 19.12.2025) (inaktiv)
 #: note: anscheinend keine Freigabe für Radfahrer (zumindest nicht von der Uhlandstr. zu sehen)
 	q4::inwork; 5191,10190 5017,10150
 EOF
@@ -50697,7 +50694,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
 #: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
-#: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025)
+#: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
@@ -50954,17 +50951,17 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:381146/72 viz2021:13.30594,52.52464, (bis 03.12.2025) (bis 22.12.2025)
-#: source_id: viz2021:13.306215,52.524639,03.11.2025,07:00 (bis 19.12.2025)
+#: source_id: LMS-BR:388776/72 viz2021:13.306215,52.524639,03.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 	q4::inwork 3534,13098 3711,13098
 EOF
      },
      { from  => 1762124400, # 2025-11-03 00:00
-       until => 1766185200, # 2025-12-20 00:00
+       until => 1766181732, # 1766185200, # 2025-12-20 00:00
        text  => 'Lichterfelder Ring: Bauarbeiten Höhe Lechtaler Weg, Sperrung der Fahrbahn, vom 04.11.2025 bis 19.12.2025',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1610900.php
-#: source_id: viz2021:13.343271,52.41181,04.11.2025,07:00 (bis 19.12.2025)
+#: source_id: viz2021:13.343271,52.41181,04.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 	q4::inwork 6446,584 6582,600
 EOF
      },
@@ -51383,6 +51380,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/langenscheidtbrucke-in-schoneberg-nach-brand-fur-kfz-verkehr-gesperrt/ (nur Kfz-Verkehr betroffen)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mab4uqycg22s
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1627650.php
+#: by: https://www.tagesspiegel.de/berlin/weitere-prufungen-an-bauwerk-notig-brucke-in-berlin-schoneberg-bleibt-nach-feuer-fur-autofahrer-gesperrt-15061564.html
 #: source_id: LMS-BR:393540/72 viz2021:13.36405,52.48828, (kein Endedatum)
 #: also_indoor: traffic (T,G)
 # REMOVED --- #: add_fragezeichen: Ist die Brücke weiterhin gesperrt? --- #: last_checked: 2025-12-17 (Tsp, VIZ-Verkehrsmeldung, traffic) --- #: check_frequency: 2d

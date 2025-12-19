@@ -4102,7 +4102,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 # 
 #: by: https://www.reo.berlin/
 #: by: https://entwicklungsstadt.de/hotelentwicklung-in-friedrichshain-premier-inn-plant-282-zimmer-am-ostkreuz/
-#: last_checked: 2025-10-17
+#: last_checked: 2025-12-19
 #: check_frequency: 180d
 #: next_check: 2026-08-28 (Halteverbotsschilder in der Straße "Am Bremsenwerk")
 (an den Gebäuden der Deutschen Rentenversicherung): wegen Hochbauarbeiten gesperrt	2::inwork 15322,11335 15273,11350 15168,11327 15058,11250
@@ -4404,7 +4404,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-12-03 vvv
+#: last_checked: 2025-12-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4802,10 +4802,11 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 #: by: https://marzahn-hellersdorf.com/brueckenneubau-entenbruecke-am-stadion-wuhletal-verzoegert-sich-vergabeverfahren-noch-nicht-abgeschlossen/ (kein Zeitplan)
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12578
 #: by: https://marzahn-hellersdorf.com/entenbruecke-in-kaulsdorf-nord-neubau-verzoegert-sich-weiter/
+#: by: https://marzahn-hellersdorf.com/abriss-der-alten-entenbruecke-im-wuhletal-abgeschlossen-weg-frei-fuer-neubau/ (kein Termin für einen Neubau)
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="23"
-#: last_checked: 2025-12-06 (osm)
+#: last_checked: 2025-12-19 (marzahn-hellersdorf live)
 #: check_frequency: 360d
 # REMOVED (ein Baubeginn 2025 erscheint unwahrscheinlich) --- #: next_check: 2026-01-01
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
@@ -4864,14 +4865,14 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
 #: by: https://berliner-abendblatt.de/berlin-news/neue-bruecke-ueber-dem-teltowkanal-in-richtiger-position-id231682
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/brueckeneinbau-fuer-die-dresdner-bahn-ueber-den-teltowkanal-vollzogen_a392915
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240410 (Restarbeiten mit Sperrung bis 2025)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240410 (Restarbeiten mit Sperrung bis 2025) (Pflasterarbeiten werden erst 2026 stattfinden)
 #: by: https://www.morgenpost.de/berlin/article409571286/eroeffnung-der-dresdner-bahn-an-diesem-tag-soll-es-so-weit-sein.html
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: note: Dieser Eintrag existiert auch noch als aktiver bbbike-temp-blockings-Eintrag.
 #: osm_watch: way id="229990468" version="8"
-#: last_checked: 2025-09-22 (mapillary)
-#: check_frequency: 120d
-#: next_check: 2025-12-31
+#: last_checked: 2025-12-19 (DB website)
+#: check_frequency: 90d
+#: next_check: 2026-06-30 (DB website: 2026)
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
 # 
 # REMOVED (Absperrgitter mittlerweile üblicherweise verschoben) --- #: note: manchmal stehen die Absperrgitter etwas verschoben mit einer Öffnung, so dass man mit einem Fahrrad doch passieren kann (gesehen: 2022-09-23, 2022-09-30, 2022-10-29) --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-09-30 --- Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320

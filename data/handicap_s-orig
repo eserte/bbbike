@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-12-14
+#: last_checked: 2025-12-19
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -106,10 +106,11 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="1054730129" version="8"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: last_checked: 2025-12-01
+#: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
+#: last_checked: 2025-12-19
 #: check_frequency: 90d
 #: next_check: 2026-08-22 (entwicklungsstadt)
-Müncheberger Str.: schmaler Gehweg, Fußgänger, Bordstein	q4+::inwork 12558,11920 12617,11888
+Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,11888
 # 
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (beendet) --- #: next_check_id: STRALAUERALLEE-2023 --- #: last_checked: 2024-04-09 --- # REMOVED --- #: check_frequency: 30d --- #: check_frequency: 3d --- # REMOVED --- #: next_check: 2024-04-09 --- # REMOVED --- #: valid: -20240409 --- #: valid: -20240412 --- Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13549,10741 13496,10763
@@ -1283,9 +1284,10 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: note: Halteverbotsschilder bis 19.12.2025, laut Baustellenschild geplante Fertigstellung der Bahnbrücke 03/2026
 #: osm_watch: note 4721088 3
 #: also_indoor: traffic (T)
-#: last_checked: 2025-12-18 (traffic)
-#: check_frequency: 120d
-#: next_check: 2025-12-19 (Halteverbotsschilder)
+#: last_checked: 2025-12-19 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
@@ -3108,7 +3110,7 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q4+ 14280,12223 14274,12190
 Müggelstr.: einige Fußgänger	q3 14994,12121 14994,12064
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286
-(Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10431
+(Fischerstr. - KGA Sanssouci, nördlicher Teil): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10431
 # REMOVED (existiert nicht mehr) --- (Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16516,10448 16501,10460 16572,10613 16562,10617
 # REMOVED (BS existiert nicht mehr) --- #: XXX_prog BS Bordstein am Monimbóplatz, ansonsten entfernen --- (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Bordstein	q2 17023,11908 17026,11888
 #: note: abgesenkter Bordstein zur Wallstr.
@@ -5181,16 +5183,16 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: last_checked: 2025-12-15 vvv
+#: last_checked: 2025-12-19 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2025-12-18 vvv
-#: valid: -20251219
+# REMOVED --- #: next_check: 2025-12-18 vvv
+# REMOVED --- #: valid: -20251219
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
-#: valid: 20251219-
-Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
-#: last_checked ^^^
+# XXX #: valid: !-20251219
+# XXX (später wiederherstellen) --- Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
-#: next_check ^^^
+#: last_checked ^^^
 Colbestr.: eng	q0- 14468,11992 14416,11815
 # 
 #: note: Ausschilderung: Gehweg, Radfahrer frei
