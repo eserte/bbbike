@@ -796,8 +796,6 @@ Am Langen Weg:	1 -7033,14984 -7026,14890 -7015,14772 -7011,14693 -7013,14578
 Wehneltsteig	1 1256,14217 1305,14384
 #: by: Olaf (ziorjen), Sybille Koppermann, osm
 Bernhard-Bästlein-Str.	1 15595,14045 15593,13768
-#: XXX_prog: eigentlich 1s:q3, aber Konflikt mit handicap_s-Eintrag für Washingtonplatz
-Washingtonplatz	1s 8106,13130 8011,13128 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 # REMOVED (während der Bauarbeiten muss man zum Notweg kommen) --- #: by: Bernhard Husch: --- #: note: Einfahrt verboten --- Pfarrer-Lütkehaus-Platz	1 10228,-2136 10273,-2158
 Radebeuler Str.	1 19025,14037 19067,13818
@@ -4677,7 +4675,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
-#: last_checked: 2025-11-19 vvv
+#: last_checked: 2025-12-20 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="5"
@@ -4976,7 +4974,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2025-11-19 vvv
+#: last_checked: 2025-12-20 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5622,7 +5620,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="49"
 #: also_indoor: traffic
-#: last_checked: 2025-11-19 vvv
+#: last_checked: 2025-12-20 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5644,9 +5642,9 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: XXX laut osm note offen
 # REMOVED (entfernt) --- #: osm_watch: way id="127091100" version="14" brb
 # REMOVED (entfernt) --- #: osm_watch: way id="733975361" version="3" brb
-#: osm_watch: way id="161686079" version="14" brb
-#: osm_watch: way id="1202953901" version="5" brb
-#: osm_watch: way id="1202953902" version="5" brb
+#: osm_watch: way id="161686079" version="15" brb
+#: osm_watch: way id="1202953901" version="6" brb
+#: osm_watch: way id="1202953902" version="6" brb
 #: osm_watch[closed]: note 5074037 1
 #: last_checked: 2025-09-20 (mapillary)
 # REMOVED --- #: next_check: 2020-10-31

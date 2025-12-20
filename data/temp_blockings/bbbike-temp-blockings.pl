@@ -23652,6 +23652,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
 #: source_id: IM_020883 (inaktiv)
 #: source_id: 2147345257 (inaktiv)
+#: source_id: LMS-BR:393851/72 viz2021:13.49469,52.42125,20.12.2025,12:00 (bis 21.12.2025)
 Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
 Krokusstr.	2::xmas 16610,1715 16767,1831
 EOF
@@ -26144,7 +26145,7 @@ EOF
        until => $isodate2epoch->("2025-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12, start => "2023-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty; 2021/2022 ebenso, nur eine kleine, 2022/2023 ebenso
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => 5,
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2024 bis 02.01.2025',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -34726,8 +34727,7 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1179022.php (Fahrbahninstandsetzungsmaßnahme 19.04.2022 - 17.05.2022)
 #: by: https://www.berliner-woche.de/luebars/c-verkehr/strassenbau-geht-nach-pause-weiter_a338612
 #: also_indoor: traffic
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-19 (kartaview)
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2022-01-19 (kartaview)
 # REMOVED --- #: next_check: 2022-01-03
 	q4::inwork 5793,23422 5893,23287
 EOF
@@ -35692,6 +35692,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
 #: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
 #: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024) (inaktiv)
+#: source_id: LMS-BR:393826/72 viz2021:13.2597,52.51486,20.12.2025,05:00 (bis 21.12.2025)
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -36051,9 +36052,7 @@ EOF
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/information-zu-bauarbeiten_a355817
 #: source_id: 226500387 (bis 31.12.2022) (inaktiv)
 #: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022) (bis 30.04.2023) (inaktiv) (bis 12.05.2023) (inaktiv)
-#: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
-#: last_checked: 2022-09-09 (kartaview)
-#: next_check: 2023-05-12
+# REMOVED --- #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee? --- #: last_checked: 2022-09-09 (kartaview) --- #: next_check: 2023-05-12
 # REMOVED (hier bereits fertig, siehe kartaview)	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965
 	q4::inwork 3015,24965 3117,24966
 EOF
@@ -40840,7 +40839,7 @@ EOF
 #: XXX Laut BA gilt die verkehrsrechtliche Anordnung bis 29.08.2026; laut Aushang gehen die Bauarbeiten sogar bis Februar 2027
 #: note: siehe auch temporär aufgehobene Einbahnstraßenregelung in der westlichen Mellenseestr.
 #: also_indoor: traffic (T,no-G,H)
-#: osm_watch: note 5085082 2
+#: osm_watch: note 5085082 4
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
 #: last_checked: 2025-12-18 vvv
@@ -49146,7 +49145,7 @@ EOF
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-12
+#: last_checked: 2025-12-20
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -51253,6 +51252,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2025-b1-bruecke-potsdamer-strasse
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-12-2025-b1_bruecke-potsdamer-strasse_vollsperrung-am-4-adventswochenende
 	2::inwork -44861,-1252 -45229,-992
 EOF
      },

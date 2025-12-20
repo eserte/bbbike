@@ -7182,6 +7182,7 @@ Potsdamer Landstraße: Asphalt	Q0 -46082,-1499 -45831,-1335 -45613,-1222 -45360,-
 Potsdamer Landstraße: Kleinsteinpflaster	Q2 -45177,-1119 -44891,-1290
 Potsdamer Landstraße: Kopfsteinpflaster	Q2 -44891,-1290 -44861,-1252
 #: by ^^^
+Lotte-Laserstein-Str.: Verbundstein- oder Betonpflaster	Q1+ -10395,-2542 -10310,-2562 -10272,-2439 -10258,-2390
 ######################### User Contributions #################################
 #: by: osm vvv
 Kaltenhausen (Lehnin): Asphalt	Q0 -34556,-11168 -34623,-10955 -34593,-10886 -34512,-10818 -34512,-10534 -34492,-10500
@@ -8854,10 +8855,11 @@ Käthe-Kollwitz-Str., Hohen Neuendorf: schlechtes Kopfsteinpflaster	Q3 2177,29194
 Am Nuthetal: Asphalt	Q0 -10560,-3749 -10504,-3772 -10438,-3818 -10332,-3863 -10228,-3894 -10140,-3918 -9971,-3935 -9876,-3951 -9752,-3958
 Am Nuthetal: guter Beton	Q1+ -9752,-3958 -9647,-3958 -9544,-3913
 (Am Nuthetal - Wetzlarer Str.): gut verlegtes Pflaster	Q1+ -9544,-3913 -9531,-3917 -9461,-3879 -9440,-3872 -9391,-3864 -9328,-3871 -9276,-3891 -9240,-3912 -9217,-3897 -9186,-3853 -9157,-3842 -9134,-3851 -9114,-3846 -9064,-3866 -9047,-3889
-#: XXX Weg wurde gewidmet, evtl. wurde hier auch was an der Qualität gemacht?
-#: XXX Name "Geh- und Radweg Schlaatz - Drewitz" oder auch "Radwanderweg Schlaatz - Drewitz"
 #: by: http://www.potsdam.de/sites/default/files/documents/16297_amtsblatt_27-7_dsjs_final.pdf
-(Wetzlarer Str. - Stern-Center): alter Asphalt, Sand und Kies, relativ fest	Q2 -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8377,-4091 -8324,-4087 -8096,-4106 -8038,-4093
+#: historical_note: früher (vor 2016?): alter Asphalt, Sand und Kies, relativ fest, Q2
+#: alias: Geh- und Radweg Schlaatz - Drewitz
+#: alias: Radwanderweg Schlaatz - Drewitz
+(Wetzlarer Str. - Stern-Center): Asphalt	Q0 -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8377,-4091 -8324,-4087 -8096,-4106 -8038,-4093
 #: note: laut "Berliner Umland" witterungsabhängige Strecke:
 #: note: ehemaliger Buga-Weg
 (Im Schäferfeld - Wetzlarer Str.): gut gemachter Sand-Kies-Weg	Q1 -8563,-3805 -8562,-3849 -8661,-3971 -8982,-3860 -9002,-3896 -8970,-3923
@@ -9033,7 +9035,8 @@ Schleusenweg: guter Asphalt	Q0 -2737,-719 -2771,-710 -2832,-386 -2945,159 -3003,
 # 
 #: by: holger (macholm):
 #: note: "Fahrbahn wird gerade erneuert (Nov.2009)"
-Dieselstr. (Potsdam): Asphalt	Q0 -10350,-2358 -10454,-2339 -10551,-2310 -10653,-2276
+#: confirmed_by: srt (Höhe Horstweg)
+Dieselstr. (Potsdam): Asphalt	Q0 -10258,-2390 -10307,-2374 -10350,-2358 -10454,-2339 -10551,-2310 -10653,-2276
 # 
 #: by: anonymous
 Wilhelmstr. (Bergfelde): Kopfsteinpflaster	Q2 4267,29149 4376,29214

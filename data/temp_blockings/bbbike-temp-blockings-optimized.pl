@@ -2698,12 +2698,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: next_check: 2025-12-31 (wann sind die Sitzungswochen 2026?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1765753200,
+         'from' => 1767135600,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 16.12.2025 bis 19.12.2025',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
          'type' => 'gesperrt',
-         'until' => 1766185199
+         'until' => undef
        },
        undef,
        undef,
@@ -3643,6 +3643,7 @@ Brandenburger Str.	2::xmas -13556,-1140 -13525,-1131 -13410,-1101 -13289,-1071 -
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
 #: source_id: IM_020883 (inaktiv)
 #: source_id: 2147345257 (inaktiv)
+#: source_id: LMS-BR:393851/72 viz2021:13.49469,52.42125,20.12.2025,12:00 (bis 21.12.2025)
 Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
 Krokusstr.	2::xmas 16610,1715 16767,1831
 ',
@@ -5426,6 +5427,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
 #: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
 #: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024) (inaktiv)
+#: source_id: LMS-BR:393826/72 viz2021:13.2597,52.51486,20.12.2025,05:00 (bis 21.12.2025)
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 ',
          'from' => 1766116800,
@@ -6522,7 +6524,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: XXX Laut BA gilt die verkehrsrechtliche Anordnung bis 29.08.2026; laut Aushang gehen die Bauarbeiten sogar bis Februar 2027
 #: note: siehe auch temporär aufgehobene Einbahnstraßenregelung in der westlichen Mellenseestr.
 #: also_indoor: traffic (T,no-G,H)
-#: osm_watch: note 5085082 2
+#: osm_watch: note 5085082 4
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
 #: last_checked: 2025-12-18 vvv
@@ -8612,7 +8614,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-12
+#: last_checked: 2025-12-20
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -9619,6 +9621,7 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
        undef,
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2025-b1-bruecke-potsdamer-strasse
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-12-2025-b1_bruecke-potsdamer-strasse_vollsperrung-am-4-adventswochenende
 	2::inwork -44861,-1252 -45229,-992
 ',
          'from' => 1766077200,
