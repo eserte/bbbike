@@ -208,7 +208,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2025-12-18 vvv
+#: last_checked: 2025-12-21 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4172,7 +4172,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: osm_watch: way id="394677970" version="11"
 #: osm_watch: way id="656149821" version="4"
-#: last_checked: 2025-12-18
+#: last_checked: 2025-12-21
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4250,7 +4250,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-10-25
+#: last_checked: 2025-12-21
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -5028,27 +5028,15 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2025-12-13 vvv
+#: last_checked: 2025-12-21 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
+Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
-#: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026)
-#: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024)
-#: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025)
-#: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?)
-#: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt
-#: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können
-#: last_checked: 2025-11-29
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt)
-Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14462,10206 14424,10227
-# REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14361,10259
+# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
 #: last_checked: 2025-12-16 vvv
@@ -5580,7 +5568,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 # REMOVED --- #: osm_watch: way id="193373957" version="5" --- Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9473
 # REMOVED (existiert nicht mehr, kein Ersatz) --- #: osm_watch: way id="269294892" version="2"
 # REMOVED (dauerhaft?) --- #: osm_watch: way id="269294894" version="2" --- #: last_checked: 2018-05-06 --- #: check_frequency: 360d --- BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
-# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17# --- #: last_checked: 2017-11-19 --- #: next_check: 2017-12-18 --- am Osthafen: Bauarbeiten, gesperrt	2::inwork 14361,10259 14424,10227 14462,10206 14480,10157
+# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17# --- #: last_checked: 2017-11-19 --- #: next_check: 2017-12-18 --- am Osthafen: Bauarbeiten, gesperrt	2::inwork 14363,10258 14424,10227 14487,10199 14480,10157
 # REMOVED --- #: next_check_id: BND-2014 --- #: osm_watch: way id="129104626" version="5" --- #: osm_watch: node id="1975210030" version="4" --- # REMOVED (schon gemacht) --- : XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist --- #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf --- #: last_checked: 2017-09-04 --- Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverlässig offen	2::inwork 8251,14337 8442,14456
 # REMOVED --- #: next_check_id: SCHINKELPLATZ-2014 vvv --- #: osm_watch: way id="305153174" version="1" --- #: last_checked: 2016-11-30 vvv --- #: check_frequency: 14d vvv
 # REMOVED Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9990,12404 9996,12372 9943,12364

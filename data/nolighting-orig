@@ -63,10 +63,10 @@ Uferweg am Plänterwald/Treptower Park: teils beleuchtet	NL 16627,8581 16619,8606
 (Treptower Park: südl./westl. des Karpfenteichs)	NL 15505,8829 15468,8806 15413,8785 15343,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park: nördl. des Karpfenteichs)	NL 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
 (Treptower Park: östl. des Karpfenteichs)	NL 15343,8714 15298,8781 15235,8841 15223,8893 15159,8934
-# REMOVED (Laternen gehen wieder) --- #: note: einige Laternen existieren hier, aber viele davon sind defekt (gesehen: 2013-08-25) --- #: note: die meisten Laternen leuchten wieder (gesehen: 2015-01-18) --- trotzdem NL lassen? --- #: note: dunkel (gesehen: 2015-10-13 gegen 19 Uhr) --- #: note: alle Laternen gehen (gesehen: 2015-12-07 gegen 18:45 Uhr sowie 2015-12-27 gegen 19:00 Uhr) --- #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/bvv/pdf/mdv-vii-50.pdf (Seite 43) --- (Treptower Park)	NL 14318,9688 14316,9542 14321,9530 14347,9452 14398,9373
+# REMOVED (Laternen gehen wieder) --- #: note: einige Laternen existieren hier, aber viele davon sind defekt (gesehen: 2013-08-25) --- #: note: die meisten Laternen leuchten wieder (gesehen: 2015-01-18) --- trotzdem NL lassen? --- #: note: dunkel (gesehen: 2015-10-13 gegen 19 Uhr) --- #: note: alle Laternen gehen (gesehen: 2015-12-07 gegen 18:45 Uhr sowie 2015-12-27 gegen 19:00 Uhr) --- #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/bvv/pdf/mdv-vii-50.pdf (Seite 43) --- (Treptower Park)	NL 14318,9688 14316,9542 14320,9530 14347,9452 14398,9373
 (Treptower Park)	NL 14398,9373 14485,9271 14531,9244
-(Treptower Park)	NL 14257,9432 14286,9457 14321,9530
-(Treptower Park)	NL 14321,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
+(Treptower Park)	NL 14257,9432 14286,9457 14320,9530
+(Treptower Park)	NL 14320,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 (Treptower Park)	NL 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641
 (Treptower Park: zur Karpfenteichstr.)	NL 14852,8799 14883,8823 14918,8813
 # REMOVED (eine Laterne steht hier) --- (Treptower Park - Moosdorfstr.)	NL 14398,9373 14382,9299
@@ -565,7 +565,10 @@ Seefelder Str. (Fußweg)	NL 17325,16189 17362,16189 17383,16197
 Matthäifriedhofsweg	NL 7229,7188 7302,7190 7353,7193 7382,7175 7477,7122 7563,7113 7605,7109
 Naturpark	NL 7296,5872 7344,6104 7666,7093 7655,7096 7621,7105 7605,7109
 # REMOVED (Beleuchtung existiert) --- Dammweg	NL 15874,8345 16388,8821
+# 
+#: on:  2025-12-21 Sun 17:05
 Wasserweg: Beleuchtung existiert, ist aber nur von Anfang November bis Ende Februar täglich von 17 bis 22 Uhr eingeschaltet	NL 15678,8911 15698,8903 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16369,8836 16388,8821
+# 
 (Eierhäuschen - Kiehnwerderallee): Beleuchtung existiert, ist aber nur bis 22h eingeschaltet	NL 16619,8606 16578,8586 16436,8687
 # REMOVED --- (Umfahrung Spreepark)	NL 16028,8867 16084,8833 16129,8855
 # REMOVED --- Kiehnwerderallee	NL 16388,8821 16436,8687
@@ -749,7 +752,9 @@ Müggelschlößchenweg	NL 25385,4414 25132,4385 24181,4270
 (Volkspark Anton Saefkow)	NL 12970,14632 12962,14613 12968,14585 12989,14572 12996,14562 13010,14540 13013,14523
 Plänterwald	NL 16144,7882 16534,8182
 Plänterwald	NL 16657,8443 16490,8432
-# REMOVED (neue Straßenlaternen existieren nun) --- #: note: alte Straßenlaternen existieren, sehen aber funktionsuntüchtig aus --- Plänterwald	NL 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833 16086,8860
+#: note: Straßenlaternen existieren, sind aber gar nicht oder nur zeitweise eingeschaltet
+#: off: 2025-12-21 Sun 17:03
+Plänterwald	NL 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833 16086,8860
 (James-Franck-Str. - Arthur-Müller-Str.)	NL 18601,2971 18583,2972 18390,2972 18374,2971 18361,2972 18229,2973 18220,2973 18196,2974
 (Wilhelm-Hoff-Str. - James-Franck-Str.)	NL 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
 # Orankestrand: beleuchtet	Lit 15871,16399 15782,16277 15731,16208 15664,16115 15599,16077 15479,16072
@@ -1770,8 +1775,10 @@ Zur Alten Börse - Kröver Str.	NL 18712,12853 18800,12838
 (Sportpromenade - Bammelecke)	NL 25172,345 25287,434 25473,449
 (Sportpromenade - Bammelecke)	NL 25537,167 25552,177 25564,340 25513,385 25473,449
 Osthafengelände: unbeleuchtet oder schwach/indirekt beleuchtet	NL 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464
-Osthafengelände: schwach beleuchtet	NL 14207,10338 14361,10259 14424,10227 14462,10206 14480,10157
+Osthafengelände: schwach beleuchtet	NL 14207,10338 14363,10258 14424,10227 14487,10199 14480,10157
 Osthafengelände: unbeleuchtet	NL 13558,10704 13531,10673
+#: note: indirekt von der Elsenstr./-brücke beleuchtet
+(ehem. Osthafen - Stralauer Allee/Elsenbrücke): unbeleuchtet	NL 14487,10199 14517,10249
 Treseburger Ufer, Verlängerung	NL 12736,5913 13064,5953
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6182
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee)	NL 17686,18172 17721,18001

@@ -36,7 +36,7 @@ Buckower Damm: Gegenverkehrsregelung	X::inwork::alternating 12712,2378
 #: source_id: LMS-BR:386895/72 viz2021:13.45883,52.51144,16.10.2025,07:00 viz2021:13.45883,52.51144, (bis 02.12.2025) (bis 31.12.2025) (bis 22.12.2025)
 #: osm_watch: note 4669838 4
 #: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
-#: last_checked: 2025-12-19
+#: last_checked: 2025-12-21
 #: next_check: 2025-12-22
 #: valid: -20251222
 Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::inwork::alternating 14127,11811
@@ -404,7 +404,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2025-12-19
+#: last_checked: 2025-12-21
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -2881,6 +2881,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20375,11694
 # 
 #: off: 2014-01-04 Sun 14:48
+#: off: 2025-12-21 Sun 16:42
 #: off_rule: Sun
 #: note: Anforderungsampel
 	F 16650,11243
@@ -3048,6 +3049,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: off: 2025-08-27 Wed 23:39
 #: off: 2025-12-04 Thu 22:04
 #: off_rule: night
+#: historical_note: Anforderung wurde erst im Dez 2025 nach einem Unfall eingerichtet
+#: note: Anforderungsampel für Radfahrer aus der Corinthstr. Richtung Westen
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020

@@ -26833,10 +26833,10 @@ EOF
 	2::temp 14577,9641 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
 	2::temp 14695,9587 14705,9578 14791,9537
 	2::temp 14879,9433 14889,9381 14898,9364 14955,9294
-	2::temp 14321,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
+	2::temp 14320,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 	2::temp 14588,9473 14556,9581
 	2::temp 14318,9688 14371,9726 14443,9731
-	2::temp 14318,9688 14316,9542 14321,9530 14347,9452 14398,9373 14485,9271 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
+	2::temp 14318,9688 14316,9542 14320,9530 14347,9452 14398,9373 14485,9271 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 EOF
      },
      { from  => 1474149600, # 2016-09-18 00:00
@@ -28522,7 +28522,7 @@ EOF
 	q4 15623,9028 15633,9007 15630,8979 15623,8949 15617,8924 15608,8882 15591,8848
 	q4 15678,8911 15617,8924
 	q4 15630,8979 15658,9007
-	q4 14321,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
+	q4 14320,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 	q4 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 	q4 14719,9419 14774,9437 14809,9466
 	q4 14588,9473 14556,9581
@@ -29575,7 +29575,8 @@ EOF
 #      text  => 'Treptower Park, Weg zwischen Karpfenteich und Sowjetisches Ehrenmal: Bauarbeiten, Weg gesperrt',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
-       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
+#      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
+       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: alte Bauarbeiten von 2018 - 2022
@@ -29599,7 +29600,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-12-14 vvv
+#: last_checked: 2025-12-21 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -29607,12 +29608,12 @@ EOF
 # REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829
 # REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15505,8829 15439,8839 15297,8921
 Bulgarische Str. - Karpfenteich	2::inwork 15297,8921 15245,8916
-# REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14321,9530 14332,9543 14384,9565 14478,9545
-# REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
+# REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14320,9530 14332,9543 14384,9565 14478,9545
+# REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14320,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14321,9530
+# REMOVED (offen) --- Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14320,9530
 #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 14398,9373 14382,9299
+Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15298,8781 15343,8714 15378,8668
 	2::inwork 15181,8967 15245,8916
@@ -34982,11 +34983,11 @@ EOF
 #: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
 # REMOVED (wording: "Aufenthalt nicht gestattet") --- #: XXX bis wann bleibt die Sperrung bestehen? vvv --- #: last_checked: 2021-10-30 vvv --- #: check_frequency: 30d vvv
 	2::night 15668,9140 15631,9114 15580,9181 15604,9215 15693,9194 15683,9136
-	2::night 14478,9545 14384,9565 14332,9543 14321,9530 14316,9542 14318,9688
+	2::night 14478,9545 14384,9565 14332,9543 14320,9530 14316,9542 14318,9688
 	2::night 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441 14719,9419 14774,9437 14809,9466
 	2::night 14556,9581 14588,9473 14507,9529
 	2::night 14382,9299 14398,9373 14485,9271 14531,9244 14612,9190
-	2::night 14398,9373 14347,9452 14321,9530 14286,9457 14257,9432
+	2::night 14398,9373 14347,9452 14320,9530 14286,9457 14257,9432
 	2::night 14635,9441 14588,9473
 	2::night 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916 15223,8893
 	2::night 14705,9578 14791,9537 14823,9523 14837,9517 14867,9573 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545
@@ -38792,7 +38793,7 @@ EOF
 # REMOVED (Absperrungen wurden weitgehend weggeräumt) --- #: last_checked: 2025-05-13 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2025-09-19 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (hier mittlerweile offen) --- nördlicher Geh- und Radweg: zugunsten einer Behelfsfahrbahn temporär aufgegeben, Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14382,9299 14257,9432
 nördlicher Geh- und Radweg: Wechseln auf die andere Straßenseite notwendig	q4::inwork; 14169,9525 14149,9546 14089,9610
-# REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14257,9432 14286,9457 14321,9530
+# REMOVED (mittlerweile ist das Absperrgitter weg) --- #: note: Absperrgitter nur noch am nördlichen Ende (gesehen 2024-12-18) --- Trampelpfad vom Treptower Park: Absperrung	2::inwork 14257,9432 14286,9457 14320,9530
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -39100,18 +39101,23 @@ EOF
 	1::inwork 4515,4760 4517,4853
 EOF
      },
-     { from  => 1670264861, # 2022-12-05 19:27
-       until => 1688162399, # 2023-06-30 23:59
-       text  => 'Platz vor dem Spreepark: mögliche Bauarbeiten und Sperrung des Wegs, Dezember 2022 bis Mitte 2023', # früher: Wasserweg
+     { from  => undef, # 1670264861, # 2022-12-05 19:27
+       until => undef, # 1688162399, # 2023-06-30 23:59
+#      text  => 'Platz vor dem Spreepark: mögliche Bauarbeiten und Sperrung des Wegs, Dezember 2022 bis Mitte 2023', # früher: Wasserweg
+       text  => 'Platz vor dem Spreepark: Bauarbeiten mit Sperrung des Wegs, Umweg am Bauzaun entlang, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
-       source_id => 'https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger',
        data  => <<EOF,
 #: next_check_id: SPREEPARK-2022
-#: note: war zusätzlich in gesperrt-orig eingetragen
-# REMOVED --- #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten? vvv --- #: last_checked: 2023-05-22 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2023-06-30 vvv
+#: by: https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger
+# REMOVED --- #: note: war zusätzlich in gesperrt-orig eingetragen
+#: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten?
+#: last_checked: 2025-12-21 vvv
+#: check_frequency: 30d vvv
 # REMOVED (hier offen) ---	2::inwork 15678,8911 15698,8903 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16369,8836 16388,8821
-	2::inwork 16086,8860 16084,8833
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
+	q4::inwork 16086,8860 16084,8833
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -47644,7 +47650,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
 #: osm_watch: note 4188310 4
 #: also_indoor: traffic (G,T,ex-A,W)
-#: last_checked: 2025-10-23 (traffic) vvv
+#: last_checked: 2025-12-20 (traffic) vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (traffic) vvv
@@ -48207,6 +48213,7 @@ EOF
 #: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410745786/panne-auf-baustelle-in-koepenick-mit-massiven-folgen-fuer-anwohner.html
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
@@ -48253,9 +48260,11 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 # REMOVED --- #: next_check ^^^
 # REMOVED (abgeschlossen) --- #: note: wo genau? --- Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 # 
-#: last_checked: 2025-11-05 vvv
+#: last_checked: 2025-12-18 (MoPo) vvv
+#: check_frequency: 45d vvv
 Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: note: laut Website möglicherweise bis 16.01.2026
@@ -48762,7 +48771,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (none)
-#: last_checked: 2025-08-23
+#: last_checked: 2025-12-21
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 	q4::inwork 16915,11634 16957,11726
@@ -50031,7 +50040,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-16
+#: last_checked: 2025-12-21
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51079,6 +51088,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: also_indoor: traffic (none)
+#: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: osm_watch: note 4847575 2
 #: last_checked: 2025-11-29
 #: next_check: 2025-12-21

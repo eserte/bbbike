@@ -487,6 +487,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
 #: last_checked: 2025-12-19
 #: check_frequency: 90d
+#: next_check: 2026-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
 Revaler Str.: Asphalt/Kopfsteinpflaster oder Verbundsteinpflaster	Q1; 13473,11456 13565,11492 13588,11490
@@ -1968,7 +1969,7 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: osm_watch: way id="34428911" version="18" vvv
 #: osm_watch: note 4459967 1 vvv
 #: XXX wird hier asphaltiert? vvv
-#: last_checked: 2025-06-27 (mapillary) vvv
+#: last_checked: 2025-08-01 (orthofotos) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 #: by: mapillary
@@ -2053,7 +2054,7 @@ Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934
 Treptower Park: wassergebundene Decke	Q1 14588,9473 14556,9581
 #: historical_note: früher (bis Sommer 2025): Schotterweg, Q2
-Treptower Park: wassergebundene Decke	Q1 14257,9432 14286,9457 14321,9530
+Treptower Park: wassergebundene Decke	Q1 14257,9432 14286,9457 14320,9530
 Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674
 Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14577,9641
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
@@ -4595,12 +4596,12 @@ Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27863,943 27810,987 27775,1016 27568,1188
 Plutoweg: Asphalt	Q0 31082,3366 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
 #: historical_note: früher (vor den Bauarbeiten 2025): Asphalt, Q0
-Treptower Park: wassergebunde Decke und Kleinsteinpflaster	Q1 14318,9688 14316,9542 14321,9530
-#: historical_note: früher (vor den Bauarbeiten 2025): Asphalt, Q0
-Treptower Park: Asphalt mit zahlreichen fehlenden Stellen	Q1 14321,9530 14347,9452 14398,9373 14382,9299
+Treptower Park: wassergebunde Decke und Kleinsteinpflaster	Q1 14318,9688 14316,9542 14320,9530
+#: historical_note: früher (vor den Bauarbeiten 2025): Asphalt, Q0; danach (zu Beginn der Bauarbeiten): Asphalt mit zahlreichen fehlenden Stellen, Q1
+Treptower Park: wassergebunde Decke und Kleinsteinpflaster	Q1 14320,9530 14347,9452 14398,9373 14382,9299
 Treptower Park: wassergebundene Decke	Q1 14398,9373 14485,9271 14531,9244
 #: historical_note: bis Frühjahr 2025: Asphalt, einige Wurzelschäden, Q1+
-Treptower Park: wassergebundene Decke	Q1 14321,9530 14332,9543 14384,9565 14478,9545
+Treptower Park: wassergebundene Decke	Q1 14320,9530 14332,9543 14384,9565 14478,9545
 Treptower Park: wassergebundene Decke	Q1 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 Treptower Park: wassergebundene Decke	Q1 14705,9034 14644,9130 14628,9158 14612,9190 14531,9244
 Treptower Park: wassergebundene Decke	Q1 14475,9199 14531,9244
@@ -11797,16 +11798,18 @@ Bäkepark: Asphalt	Q0 5131,4207 5097,4221 5063,4266
 (Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2+ 13558,10704 13531,10673
 (Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13919,10583 13902,10546
 (Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13835,10577 13805,10528
-(ehem. Osthafen): Kopfsteinpflaster	Q2 13338,10801 13433,10759 13558,10704 13585,10693 13835,10577 13902,10546 13981,10499 14204,10397 14226,10387 14388,10307 14517,10249
+(ehem. Osthafen): Kopfsteinpflaster	Q2 13338,10801 13433,10759 13558,10704 13585,10693 13835,10577 13902,10546 13981,10499 14204,10397 14226,10387 14390,10306 14517,10249
 #: note: Kleinpflasterstreifen in der Mitte, etwas uneben
 (am ehem. Osthafen): Großsteinpflaster/Kleinsteinpflaster	Q2+ 13326,10765 13418,10724 13531,10673
 (am ehem. Osthafen): Beton	Q1+ 13531,10673 13527,10660 13679,10589
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13679,10589 13756,10554
 (am ehem. Osthafen): Beton	Q0- 13756,10554 13805,10528
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13805,10528 13824,10521
-(am ehem. Osthafen): Beton	Q0- 13824,10521 13944,10464 14207,10338 14361,10259 14424,10227 14462,10206 14480,10157
+(am ehem. Osthafen): Beton	Q0- 13824,10521 13944,10464 14207,10338 14363,10258 14424,10227 14487,10199 14480,10157
+(ehem. Osthafen - Stralauer Allee/Elsenbrücke): Kopfsteinpflaster	Q2 14487,10199 14517,10249
 (Bossestr. - ehem. Osthafen): Kopfsteinpflaster	Q2 14218,10430 14204,10397
 (Bossestr. - ehem. Osthafen): Beton mit Schienen	Q2+ 14226,10387 14207,10338
+(Bödikerstr. - ehem. Osthafen): Kopfsteinpflaster	Q2- 14404,10336 14390,10306 14363,10258
 (KGA Neu Berlin): Gehwegplatten	Q1 13636,14900 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
 (Steengravenweg - KGA Neu Berlin): Gehwegplatten	Q1 13733,14813 13704,14780
 (zum Weingarten): holpriger Asphalt mit Wurzelschäden	Q2 13765,14665 13867,14507
@@ -13104,8 +13107,8 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier die Fahrbahndecke noch verbessert?
 #: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2025-08-23
-#: check_frequency: 120d
+#: last_checked: 2025-12-21 (Bauarbeiten)
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8747 (Antrag zur Sanierung)
@@ -18315,10 +18318,10 @@ Peter-Huchel-Str.: Asphalt	Q0 22980,13286 23007,13509 23157,13467 23285,13441 23
 # 
 #: by: Lavinia Meier...: vvv
 #: corrected_by: srt (Asphalt -> Beton)
-Avenue Charles de Gaulle: Beton	Q0- 4098,21809 4153,21742 4204,21705 4240,21690 4290,21635
+Avenue Charles de Gaulle: Beton	Q0- 4098,21809 4153,21742 4204,21705 4225,21696 4240,21690 4290,21635
 #: confirmed_by: srt
 Avenue Charles de Gaulle: Asphalt	Q0 4290,21635 4305,21619 4343,21602 4380,21609 4497,21694 4525,21714 4631,21788 4698,21705 4747,21645 4778,21633
-Rue Montesquieu: Asphalt	Q0 4655,21939 4437,21775 4311,21681 4316,21633 4305,21619
+Rue Montesquieu: Asphalt	Q0 4655,21939 4527,21843 4444,21780 4437,21775 4311,21681 4316,21633 4305,21619
 #: confirmed_by: srt
 Rue Diderot: Asphalt	Q0 4525,21714 4596,21629
 #: by: ^^^

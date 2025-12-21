@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2025-12-20
+#: last_checked: 2025-12-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -84,7 +84,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: osm_watch: way id="1072662717" version="28"
 #: last_checked: 2025-12-17
 #: check_frequency: 90d
-#: next_check: 2026-12-31
+#: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
@@ -367,6 +367,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
+#: by: https://www.entwicklungsstadt.de/forschung-lehre-zukunft-bht-eroeffnet-laborneubau-wal-in-wedding/
 # REMOVED --- #: osm_watch: way id="885130938" version="7"
 #: last_checked: 2025-12-17
 #: check_frequency: 30d
@@ -1084,7 +1085,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht f¸r eine erneuerte Anbindung?
-#: last_checked: 2025-12-18
+#: last_checked: 2025-12-21
 Gustav-Tempel-Str.: kurzes St¸ck B¸rgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1448,7 +1449,7 @@ Am Sowjetischen Ehrenmal: einige Fuﬂg‰nger, Bordsteine (2x)	q4 14824,9390 14797,
 Am Sowjetischen Ehrenmal: einige Fuﬂg‰nger, Bordsteine (2x)	q4 14644,9130 14628,9158
 Treptower Park: einige Fuﬂg‰nger, enger Weg	q2+ 14797,9396 14719,9419
 Treptower Park: einige Fuﬂg‰nger	q1 14719,9419 14635,9441
-Treptower Park: einige Fuﬂg‰nger	q1 14321,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
+Treptower Park: einige Fuﬂg‰nger	q1 14320,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
 Treptower Park: einige Fuﬂg‰nger	q1 14398,9373 14485,9271 14531,9244
 Treptower Park: einige Fuﬂg‰nger	q1 14705,9034 14855,9046 14947,8993 14980,8940
 Treptower Park: einige Fuﬂg‰nger	q1+ 15297,8921 15213,8977 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
@@ -4751,7 +4752,7 @@ Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
 (Ludwig-Lesser-Park, westlicher Weg): einige Fuﬂg‰nger	q1 2312,25673 2247,25796 2237,25837 2207,26090
 (Ludwig-Lesser-Park - Am Poloplatz): einige Fuﬂg‰nger	q1 2207,26090 2204,26290 2199,26440 2199,26450
 #: note: rechtliche Lage unklar, teilweise werden die Wege auch von Autos befahren; Fuﬂg‰ngerfrequenz meist ¸berschaubar vvv
-Osthafen: einige Fuﬂg‰nger	q1 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14424,10227 14462,10206 14480,10157
+Osthafen: einige Fuﬂg‰nger	q1 13326,10765 13418,10724 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14363,10258 14424,10227 14487,10199 14480,10157
 Osthafen: einige Fuﬂg‰nger	q1 13531,10673 13558,10704
 #: XXX_prog BS: die Schiene kˆnnte man wie einen Bordstein behandeln, ansonsten q1
 Osthafen: einige Fuﬂg‰nger, ‹berquerung einer Schiene notwendig	q3 14207,10338 14226,10387

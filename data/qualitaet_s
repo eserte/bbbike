@@ -1388,7 +1388,7 @@ Treptower Park: Asphalt	Q0 15527,9096 15623,9028
 Treptower Park: Kleinsteinpflaster	Q1 15623,9028 15778,8990
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934
 Treptower Park: wassergebundene Decke	Q1 14588,9473 14556,9581
-Treptower Park: wassergebundene Decke	Q1 14257,9432 14286,9457 14321,9530
+Treptower Park: wassergebundene Decke	Q1 14257,9432 14286,9457 14320,9530
 Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674
 Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14577,9641
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
@@ -3368,10 +3368,10 @@ Philipp-Jacob-Rauch-Str.: Verbundsteinpflaster	Q0 27615,1245 27573,1279 27516,13
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27977,1187 27810,987
 Johann-Jacob-Baeyer-Str.: Asphalt	Q0 27863,943 27810,987 27775,1016 27568,1188
 Plutoweg: Asphalt	Q0 31082,3366 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
-Treptower Park: wassergebunde Decke und Kleinsteinpflaster	Q1 14318,9688 14316,9542 14321,9530
-Treptower Park: Asphalt mit zahlreichen fehlenden Stellen	Q1 14321,9530 14347,9452 14398,9373 14382,9299
+Treptower Park: wassergebunde Decke und Kleinsteinpflaster	Q1 14318,9688 14316,9542 14320,9530
+Treptower Park: wassergebunde Decke und Kleinsteinpflaster	Q1 14320,9530 14347,9452 14398,9373 14382,9299
 Treptower Park: wassergebundene Decke	Q1 14398,9373 14485,9271 14531,9244
-Treptower Park: wassergebundene Decke	Q1 14321,9530 14332,9543 14384,9565 14478,9545
+Treptower Park: wassergebundene Decke	Q1 14320,9530 14332,9543 14384,9565 14478,9545
 Treptower Park: wassergebundene Decke	Q1 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 Treptower Park: wassergebundene Decke	Q1 14705,9034 14644,9130 14628,9158 14612,9190 14531,9244
 Treptower Park: wassergebundene Decke	Q1 14475,9199 14531,9244
@@ -9853,15 +9853,17 @@ Bäkepark: Asphalt	Q0 5131,4207 5097,4221 5063,4266
 (Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2 13558,10704 13531,10673
 (Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13919,10583 13902,10546
 (Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13835,10577 13805,10528
-(ehem. Osthafen): Kopfsteinpflaster	Q2 13338,10801 13433,10759 13558,10704 13585,10693 13835,10577 13902,10546 13981,10499 14204,10397 14226,10387 14388,10307 14517,10249
+(ehem. Osthafen): Kopfsteinpflaster	Q2 13338,10801 13433,10759 13558,10704 13585,10693 13835,10577 13902,10546 13981,10499 14204,10397 14226,10387 14390,10306 14517,10249
 (am ehem. Osthafen): Großsteinpflaster/Kleinsteinpflaster	Q2 13326,10765 13418,10724 13531,10673
 (am ehem. Osthafen): Beton	Q1 13531,10673 13527,10660 13679,10589
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13679,10589 13756,10554
 (am ehem. Osthafen): Beton	Q0 13756,10554 13805,10528
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13805,10528 13824,10521
-(am ehem. Osthafen): Beton	Q0 13824,10521 13944,10464 14207,10338 14361,10259 14424,10227 14462,10206 14480,10157
+(am ehem. Osthafen): Beton	Q0 13824,10521 13944,10464 14207,10338 14363,10258 14424,10227 14487,10199 14480,10157
+(ehem. Osthafen - Stralauer Allee/Elsenbrücke): Kopfsteinpflaster	Q2 14487,10199 14517,10249
 (Bossestr. - ehem. Osthafen): Kopfsteinpflaster	Q2 14218,10430 14204,10397
 (Bossestr. - ehem. Osthafen): Beton mit Schienen	Q2 14226,10387 14207,10338
+(Bödikerstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 14404,10336 14390,10306 14363,10258
 (KGA Neu Berlin): Gehwegplatten	Q1 13636,14900 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
 (Steengravenweg - KGA Neu Berlin): Gehwegplatten	Q1 13733,14813 13704,14780
 (zum Weingarten): holpriger Asphalt mit Wurzelschäden	Q2 13765,14665 13867,14507
@@ -13582,9 +13584,9 @@ Peter-Huchel-Str.: Asphalt	Q0 22980,13286 23007,13509 23157,13467 23285,13441 23
 (Heinrich-Grüber-Str. - Grottkauer Str.): wassergebundene Decke	Q1 23738,13925 24050,13855 24130,13842
 (Heinrich-Grüber-Str. - Grottkauer Str.): Verbundsteinpflaster	Q1 24130,13842 24255,13816 24291,13828 24402,13805 24437,13786 24494,13785
 (Roßweiner Ring - Hönower Str.): wassergebundene Decke	Q1 24949,13760 24993,13731 25063,13781 25068,13778 25101,13797 25163,13785 25339,13948 25341,13984 25414,14036
-Avenue Charles de Gaulle: Beton	Q0 4098,21809 4153,21742 4204,21705 4240,21690 4290,21635
+Avenue Charles de Gaulle: Beton	Q0 4098,21809 4153,21742 4204,21705 4225,21696 4240,21690 4290,21635
 Avenue Charles de Gaulle: Asphalt	Q0 4290,21635 4305,21619 4343,21602 4380,21609 4497,21694 4525,21714 4631,21788 4698,21705 4747,21645 4778,21633
-Rue Montesquieu: Asphalt	Q0 4655,21939 4437,21775 4311,21681 4316,21633 4305,21619
+Rue Montesquieu: Asphalt	Q0 4655,21939 4527,21843 4444,21780 4437,21775 4311,21681 4316,21633 4305,21619
 Rue Diderot: Asphalt	Q0 4525,21714 4596,21629
 (Weg parallel zur S-Bahn): Asphalt mit einigen Schäden, Verunreinigungen	Q1 26890,5858 27096,5828 28655,5588
 (Weg parallel zur S-Bahn): Feinschotter	Q1 28655,5588 28709,5599 29145,5537 29176,5517

@@ -3563,30 +3563,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
-#: tempex: 4th_advent & T12-T19
-#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1766221200,
-         'id' => 2521,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              12,
-                              'start',
-                              '2024-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 21.12.2025, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1766332800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3637,34 +3614,7 @@ Brandenburger Str.	2::xmas -13556,-1140 -13525,-1131 -13410,-1101 -13289,-1071 -
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
-#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
-#: source_id: IM_020883 (inaktiv)
-#: source_id: 2147345257 (inaktiv)
-#: source_id: LMS-BR:393851/72 viz2021:13.49469,52.42125,20.12.2025,12:00 (bis 21.12.2025)
-Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
-Krokusstr.	2::xmas 16610,1715 16767,1831
-',
-         'from' => 1766142000,
-         'id' => 2529,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12,
-                              'start',
-                              '2022-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 20.12.2025 und 21.12.2025',
-         'type' => 'gesperrt',
-         'until' => 1766347200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4283,7 +4233,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q4 15623,9028 15633,9007 15630,8979 15623,8949 15617,8924 15608,8882 15591,8848
 	q4 15678,8911 15617,8924
 	q4 15630,8979 15658,9007
-	q4 14321,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
+	q4 14320,9530 14332,9543 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 	q4 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 	q4 14719,9419 14774,9437 14809,9466
 	q4 14588,9473 14556,9581
@@ -4509,7 +4459,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-12-14 vvv
+#: last_checked: 2025-12-21 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4517,12 +4467,12 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 # REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829
 # REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15505,8829 15439,8839 15297,8921
 Bulgarische Str. - Karpfenteich	2::inwork 15297,8921 15245,8916
-# REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14321,9530 14332,9543 14384,9565 14478,9545
-# REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14321,9530 14286,9457 14257,9432
+# REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14320,9530 14332,9543 14384,9565 14478,9545
+# REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14320,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
-Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14321,9530
+# REMOVED (offen) --- Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14320,9530
 #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 14398,9373 14382,9299
+Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15298,8781 15343,8714 15378,8668
 	2::inwork 15181,8967 15245,8916
@@ -4532,7 +4482,7 @@ Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14321,9530 14347,9452 1439
 ',
          'from' => undef,
          'id' => 3028,
-         'text' => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
+         'text' => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6130,7 +6080,25 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SPREEPARK-2022
+#: by: https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger
+# REMOVED --- #: note: war zusätzlich in gesperrt-orig eingetragen
+#: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten?
+#: last_checked: 2025-12-21 vvv
+#: check_frequency: 30d vvv
+# REMOVED (hier offen) ---	2::inwork 15678,8911 15698,8903 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16369,8836 16388,8821
+	q4::inwork 16086,8860 16084,8833
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3700,
+         'text' => 'Platz vor dem Spreepark: Bauarbeiten mit Sperrung des Wegs, Umweg am Bauzaun entlang, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -8118,7 +8086,7 @@ Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
          'data' => '#: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
 #: osm_watch: note 4188310 4
 #: also_indoor: traffic (G,T,ex-A,W)
-#: last_checked: 2025-10-23 (traffic) vvv
+#: last_checked: 2025-12-20 (traffic) vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (traffic) vvv
@@ -8307,6 +8275,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
          'data' => '#: also_indoor: url https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/umstrukturierung-des-netzes-in-treptow-koepenick
 #: also_indoor: traffic (G,B,T)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410745786/panne-auf-baustelle-in-koepenick-mit-massiven-folgen-fuer-anwohner.html
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
@@ -8353,9 +8322,11 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 # REMOVED --- #: next_check ^^^
 # REMOVED (abgeschlossen) --- #: note: wo genau? --- Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 # 
-#: last_checked: 2025-11-05 vvv
+#: last_checked: 2025-12-18 (MoPo) vvv
+#: check_frequency: 45d vvv
 Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: note: laut Website möglicherweise bis 16.01.2026
@@ -8497,7 +8468,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        undef,
        {
          'data' => '#: also_indoor: traffic (none)
-#: last_checked: 2025-08-23
+#: last_checked: 2025-12-21
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 	q4::inwork 16915,11634 16957,11726
@@ -8982,7 +8953,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-16
+#: last_checked: 2025-12-21
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9522,6 +9493,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
        },
        {
          'data' => '#: also_indoor: traffic (none)
+#: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: osm_watch: note 4847575 2
 #: last_checked: 2025-11-29
 #: next_check: 2025-12-21
