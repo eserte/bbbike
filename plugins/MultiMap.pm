@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.54;
+$VERSION = 2.55;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -279,11 +279,27 @@ sub register {
 	      ($images{BRB} ? (icon => $images{BRB}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . "_LSB"} =
-	    { name => "LS Brandenburg Verkehrsstärke 2021",
-	      callback => sub { showmap_bbviewer(@_, layers => 'verkehrsstaerke-2021') },
+	    { name => sub {
+		  my %args = @_;
+		  my $current_tag_filter = $args{current_tag_filter}||'';
+		  if ($current_tag_filter eq 'aerial') {
+		      "LS Brandenburg Luftbilder"
+		  } else {
+		      "LS Brandenburg Verkehrsstärke 2021",
+		  }
+	      },
+	      callback => sub {
+		  my %args = @_;
+		  my $current_tag_filter = $args{current_tag_filter}||'';
+		  if ($current_tag_filter eq 'aerial') {
+		      showmap_bbviewer(@_, layers => 'dop20c')
+		  } else {
+		      showmap_bbviewer(@_, layers => 'verkehrsstaerke-2021')
+		  }
+	      },
 	      callback_3 => sub { show_bbviewer_menu(@_) },
 	      ($images{BRB} ? (icon => $images{BRB}) : ()),
-	      tags => [qw(traffic)],
+	      tags => [qw(traffic aerial)],
 	    };
 	$main::info_plugins{__PACKAGE__ . "_RadverkehrsatlasBRB"} =
 	    { name => "Radverkehrsatlas Brandenburg",
