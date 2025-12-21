@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.26;
+$VERSION = 2.27;
 
 use File::Glob qw(bsd_glob);
 
@@ -855,6 +855,9 @@ EOF
 		],
 		[Button => $do_compound->("GraphHopper (direct)"),
 		 -command => sub { current_search_in_graphhopper() },
+		],
+		[Button => $do_compound->("OSRM (direct)"),
+		 -command => sub { current_search_in_osrm() },
 		],
 		[Button => $do_compound->("Valhalla (direct)"),
 		 -command => sub { current_search_in_valhalla() },
@@ -2178,6 +2181,32 @@ sub current_search_in_valhalla {
 
     my $profile = 'bicycle';
     my $url = sprintf "https://valhalla.openstreetmap.de/directions?profile=%s&wps=%s", $profile, join(",", @coord_params);
+
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_search_in_osrm {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+
+    my @coord_params;
+    {
+	require Karte::Polar;
+	my $o = $Karte::Polar::obj;
+	for my $c (@main::search_route_points) {
+	    my($lon,$lat) = $o->trim_accuracy($o->standard2map(split /,/, $c->[0]));
+	    push @coord_params, "$lat,$lon";
+	}
+    }
+
+    # Sample URL
+    # https://map.project-osrm.org/?loc=52.559082%2C13.531895&loc=52.550093%2C13.501489&hl=de&alt=1&profile=bike
+
+    my $profile = 'bike';
+    my $url = sprintf "https://map.project-osrm.org/?%s&hl=%s&alt=1&profile=%s", join("&", map {"loc=$_"} @coord_params), ($Msg::lang||'en'), $profile;
 
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
