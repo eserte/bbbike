@@ -736,6 +736,8 @@ Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8
 Büdnerring	1 7861,18333 7997,18524
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1627066.php (neu seit ca. Dez 2025, bestätigt in einer osm-Notiz)
 Raschdorffstr.	1 8096,18456 7954,18251
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1627066.php (neu seit ca. Dez 2025, bestätigt in einer osm-Notiz)
+Amendestr.	1 8222,18375 8061,18159
 Steilpfad	1s:q3 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4103,6716 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
@@ -4371,7 +4373,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="21"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-12-12
+#: last_checked: 2025-12-22
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4455,7 +4457,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2025-12-13 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-04-15 (Tsp) vvv
 #: osm_watch: way id="1199463691" version="6"
@@ -4697,6 +4699,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
+#: osm_watch: note 3644429 8
 #: last_checked: 2025-12-10
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
@@ -4930,7 +4933,7 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
 #: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025) (bis 31.08.2026) (inaktiv)
 #: source_id: LMS-BR:391216/72 viz2021:13.37613,52.53612, (bis 01.09.2026)
-#: osm_watch: way id="129104626" version="25"
+#: osm_watch: way id="129104626" version="26"
 #: osm_watch: way id="945966258" version="3"
 #: osm_watch[closed]: note 5077509 1
 #: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])

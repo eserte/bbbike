@@ -31,15 +31,15 @@ Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
 #: valid: -20260531
 Buckower Damm: Gegenverkehrsregelung	X::inwork::alternating 12712,2378
 # 
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251015 (bis Anfang Dez 2025)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3byu65n322r
-#: source_id: LMS-BR:386895/72 viz2021:13.45883,52.51144,16.10.2025,07:00 viz2021:13.45883,52.51144, (bis 02.12.2025) (bis 31.12.2025) (bis 22.12.2025)
-#: osm_watch: note 4669838 4
-#: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
-#: last_checked: 2025-12-21
-#: next_check: 2025-12-22
-#: valid: -20251222
-Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::inwork::alternating 14127,11811
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251015 (bis Anfang Dez 2025)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3byu65n322r
+# REMOVED --- #: source_id: LMS-BR:386895/72 viz2021:13.45883,52.51144,16.10.2025,07:00 viz2021:13.45883,52.51144, (bis 02.12.2025) (bis 31.12.2025) (bis 22.12.2025) (inaktiv)
+# REMOVED --- #: osm_watch: note 4669838 4
+# REMOVED --- #: XXX hier entsteht ein Fußgängerüberweg (Zebrastreifen?)
+# REMOVED --- #: last_checked: 2025-12-21
+# REMOVED --- #: next_check: 2025-12-22
+# REMOVED --- #: valid: -20251222
+# REMOVED --- Grünberger Str./Gabriel-Max-Str.: Kreuzungsampel und Gegenverkehrsregelung	X::inwork::alternating 14127,11811
 # 
 #: source_id: 257304125 (bis 31.12.2026)
 #: next_check: 2026-12-31
@@ -3958,7 +3958,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-12-20 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 	X::inwork 9121,12514
@@ -4166,7 +4166,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2025-11-27
+#: last_checked: 2025-12-22
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -4340,28 +4340,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 # REMOVED (bei osm entfernt) --- #: next_check_id: CHAUSSEE-2020 --- #: osm_watch: node id="26748289" version="10" --- #: last_checked: 2023-05-18 --- #: check_frequency: 60d --- #: next_check: 2023-05-26 ---	X::inwork 8336,14586
 # 
-#: by: https://www.tagesspiegel.de/berlin/bau-neuer-ampeln-steckt-im-stau-3917599.html (2019)
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/schulneubau-bekommt-ampel_a189100 (2019, kein genauer Termin)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/433_2018_zu_ds_0680_v_ampelstandort_chaussee_boyenstr_bav.pdf
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
-#: by: https://www.berliner-woche.de/wedding/c-bauen/neubau-der-grundschule-am-nordhafen-eroeffnet_a357236 (Schule in der Nähe der Ampel)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11743 (Antrag)
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/ampel-vor-der-grundschule_a376910
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1721436001623535938#m (Neubau einer Ampel)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lsihknavns24
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreif47sv3n2ssmvgyrczxwo5wu7odor75cggl77dts6fzo4t2bg5cku@jpeg
-#: source_id: viz2021:13.37326,52.53807,06.11.2023,09:00 (bis 15.02.2024) (inaktiv)
-#: source_id: viz2021:13.373268,52.538065,06.11.2023,09:00 (provisorische Ampelanlage bis 15.02.2024) (inaktiv)
-#: source_id: viz2021:13.373342,52.538077,26.06.2025,09:00 (Einmündungsumbau, bis 15.08.2025) (inaktiv)
-#: source_id: LMS-BR:373894/72 viz2021:13.373259,52.538069,26.06.2025,09:00 (bis 15.08.2025) (bis 01.09.2025) (bis 26.12.2025) (bis 19.12.2025) (inaktiv)
-#: XXX erst einmal provisorisch, noch keine Bauarbeiten für eine permanente Ampelanlage
-#: osm_watch: node id="7041133991" version="2"
-#: osm_watch: note 4938354 1
-#: note: Anforderungsampel
-#: last_checked: 2025-12-03
-#: check_frequency: 120d
-#: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
-	X::inwork 8250,14672
+#: historical_note: eine provisorische Ampel gab es hier lange (4 oder 5 Jahre?), im Dezember 2025 wurde die permanente Ampel fertiggestellt
+	X 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 
 # REMOVED (bei osm entfernt) --- #: XXX steht vermutlich im Zusammenhang mit den Bauarbeiten an der Schule (Gehweg gesperrt) --- #: osm_watch: node id="9454113715" version="2"--- #: last_checked: 2022-07-14 --- #: check_frequency: 90d ---	F::inwork 8138,14786

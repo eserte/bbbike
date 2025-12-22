@@ -17774,12 +17774,13 @@ EOF
 	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2024-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
-       until => $isodate2epoch->("2025-01-02 23:59:59"),
+     { from  => $isodate2epoch->("2025-12-28 00:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+       until => $isodate2epoch->("2026-01-02 18:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 12, start => "2023-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten, 2022/2023 ebenso
-       recurrence_prewarn_days => 2,
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr. sowie einige Wege im östlichen Tiergarten, ab 26.12.2024 bis 02.01.2025',
+#      recurrence_prewarn_days => 2,
+#      text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr. sowie einige Wege im östlichen Tiergarten, ab 26.12.2024 bis 02.01.2025',
+       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., möglicherweise sind einige Wege im östlichen Tiergarten auch gesperrt, ab 29.12.2025 06:00 bis 02.01.2026 18:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SILVESTER-YYYY
@@ -17804,6 +17805,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel-2024-25/ (ab 26.12.2024)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrungen-zur-silvesterfeier-am-brandenburger-tor/
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel/ (Platz des 18. März + Teile der Ebertstraße und der Straße des 17. Juni)
+#: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8502,12226 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -23652,7 +23654,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
 #: source_id: IM_020883 (inaktiv)
 #: source_id: 2147345257 (inaktiv)
-#: source_id: LMS-BR:393851/72 viz2021:13.49469,52.42125,20.12.2025,12:00 (bis 21.12.2025)
+#: source_id: LMS-BR:393851/72 viz2021:13.49469,52.42125,20.12.2025,12:00 (bis 21.12.2025) (inaktiv)
 Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
 Krokusstr.	2::xmas 16610,1715 16767,1831
 EOF
@@ -26141,12 +26143,12 @@ EOF
 	2::inwork 20640,7122 20722,6971
 EOF
      },
-     { from  => $isodate2epoch->("2024-12-28 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
-       until => $isodate2epoch->("2025-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
+     { from  => $isodate2epoch->("2025-12-31 14:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => $isodate2epoch->("2026-01-01 06:00:00"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12, start => "2023-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty; 2021/2022 ebenso, nur eine kleine, 2022/2023 ebenso
        recurrence_prewarn_days => 5,
-       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2024 bis 02.01.2025',
+       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2025 bis 01.01.2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SILVESTER-YYYY
@@ -26161,6 +26163,7 @@ EOF
 #: by: https://www.morgenpost.de/berlin/article410080861/doch-silvester-am-brandenburger-tor-wegner-macht-hoffnung.html
 #: by: https://www.morgenpost.de/berlin/article410229476/nach-silvesterparty-absage-in-berlin-nun-gibt-es-neue-plaene.html
 #: by: https://www.entwicklungsstadt.de/silvester-2026-berlin-feiert-mit-neuem-konzept-am-brandenburger-tor/
+#: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
 #: source_id: viz2021:13.349991,52.514511,31.12.2024,06:00 (bis 01.01.2025) (inaktiv)
 #: note: am 2023-12-29 mittags war der östliche Tiergarten komplett umzäunt, aber die Wege waren noch offen
 Pariser Platz	2::temp 8722,12268 8637,12258
@@ -29600,7 +29603,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-12-21 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -35693,7 +35696,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
 #: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
 #: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024) (inaktiv)
-#: source_id: LMS-BR:393826/72 viz2021:13.2597,52.51486,20.12.2025,05:00 (bis 21.12.2025)
+#: source_id: LMS-BR:393826/72 viz2021:13.2597,52.51486,20.12.2025,05:00 (bis 21.12.2025) (inaktiv)
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -36460,7 +36463,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-13
+#: last_checked: 2025-12-22
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -39111,13 +39114,10 @@ EOF
 #: by: https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger
 # REMOVED --- #: note: war zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten?
-#: last_checked: 2025-12-21 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2025-12-21
+#: check_frequency: 30d
 # REMOVED (hier offen) ---	2::inwork 15678,8911 15698,8903 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16369,8836 16388,8821
 	q4::inwork 16086,8860 16084,8833
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -45119,7 +45119,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-12-16 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -47129,7 +47129,7 @@ EOF
 #: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
 #: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024) (inaktiv)
 #: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024) (inaktiv)
-#: source_id: LMS-BR:393717/72 viz2021:13.62548,52.45697,19.12.2025,06:00 (bis 21.12.2025)
+#: source_id: LMS-BR:393717/72 viz2021:13.62548,52.45697,19.12.2025,06:00 (bis 21.12.2025) (inaktiv)
 	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
      },
@@ -48847,7 +48847,7 @@ EOF
        dont_check_date => 1,
 #      text  => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, vom 19.05.2025 12:00 bis 19.06.2025 17:00, evtl. wird verlängert',
 #      text  => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, Ende der Bauarbeiten unbekannt',
-       text  => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Ende 2025',
+       text  => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Ende 2025, evtl. werden die Bauarbeiten verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: PAULSBORNER-2025
@@ -48860,7 +48860,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-12-16 (traffic) vvv
+#: last_checked: 2025-12-22 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -50040,7 +50040,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-21
+#: last_checked: 2025-12-22
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50958,7 +50958,7 @@ EOF
        text  => 'Nordhauser Str.: Bauarbeiten zwischen Sömmeringstr. und Mierendorffplatz, Sperrung, evtl. sind auch Radfahrer betroffen, bis 22.12.2025',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:381146/72 viz2021:13.30594,52.52464, (bis 03.12.2025) (bis 22.12.2025)
+#: source_id: LMS-BR:381146/72 viz2021:13.30594,52.52464, (bis 03.12.2025) (bis 22.12.2025) (inaktiv)
 #: source_id: LMS-BR:388776/72 viz2021:13.306215,52.524639,03.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 	q4::inwork 3534,13098 3711,13098
 EOF
@@ -51019,8 +51019,8 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: osm_watch: note 5049958 2
-#: osm_watch: way id="1127993128" version="4"
-#: last_checked: 2025-12-03
+#: osm_watch: way id="1127993128" version="5"
+#: last_checked: 2025-12-22 (osm)
 #: check_frequency: 60d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447

@@ -2674,7 +2674,60 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SILVESTER-YYYY
+#: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72 (inaktiv)
+#: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72 (inaktiv)
+#: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.37737,52.51457,26.12.2023,19:35 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024) (inaktiv)
+#: source_id: viz2021:13.371607,52.515899,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: viz2021:13.37688,52.51775,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: viz2021:13.379494,52.516456,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: viz2021:13.37679,52.5163,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: viz2021:13.37081,52.51779,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
+#: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
+#: by: https://viz.berlin.de/2020/12/welcome21/
+#: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
+#: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
+#: by: https://viz.berlin.de/aktuelle-meldungen/silvesterfeier-sperrungen/ (außerdem noch weitergehende Sperrungen: alle Straßen rund um den Großen Stern)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel-2024-25/ (ab 26.12.2024)
+#: by: https://viz.berlin.de/aktuelle-meldungen/sperrungen-zur-silvesterfeier-am-brandenburger-tor/
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel/ (Platz des 18. März + Teile der Ebertstraße und der Straße des 17. Juni)
+#: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
+Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+Bremer Weg am Brandenburger Tor	2::temp 8502,12226 8466,12197
+Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+Str. des 17 Juni/Kleine Querallee	3::temp 8391,12389 8344,12221 8327,12174
+Str. des 17 Juni/Kleine Querallee	3::temp 8327,12174 8344,12221 8391,12389
+Simsonweg	2::temp 8546,12279 8391,12389 8354,12416
+Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
+# 2020 hier nicht --- Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+# 2020 hier nicht --- Yitzhak-Rabin-Str.	2::temp 8055,12186 8068,12237 8119,12414
+# 2020 hier nicht --- Str. des 17 Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+',
+         'from' => 1766876400,
+         'id' => 2010,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              12,
+                              'start',
+                              '2023-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., möglicherweise sind einige Wege im östlichen Tiergarten auch gesperrt, ab 29.12.2025 06:00 bis 02.01.2026 18:00',
+         'type' => 'gesperrt',
+         'until' => 1767373200
+       },
        undef,
        undef,
        undef,
@@ -3536,30 +3589,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(4th_advent,sa) - +1d
-#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
-	2::xmas 9986,13412 10321,13259
-',
-         'from' => 1766098800,
-         'id' => 2517,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              16,
-                              'months',
-                              12,
-                              'start',
-                              '2024-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (20.12.2025 - 21.12.2025)',
-         'type' => 'gesperrt',
-         'until' => 1766357999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3961,7 +3991,72 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SILVESTER-YYYY
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
+#: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
+#: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1873699127751737404
+#: by: https://pbs.twimg.com/media/GgC3OOnXEAE6uNt?format=jpg&name=large (Sperrung sogar ab Bachstr./Tiergartenstr./Lutherbrücke, auch für den Radverkehr? was ist mit dem westlichen Tiergarten?)
+#: by: https://www.morgenpost.de/berlin/article409432854/veranstalter-sagt-silvester-party-am-brandenburger-tor-ab.html (2025 keine Silvester-Party?)
+#: by: https://www.tagesspiegel.de/berlin/kein-geld-vom-land-berlin-silvesterparty-am-brandenburger-tor-steht-vor-dem-aus-13973120.html
+#: by: https://www.morgenpost.de/berlin/article410080861/doch-silvester-am-brandenburger-tor-wegner-macht-hoffnung.html
+#: by: https://www.morgenpost.de/berlin/article410229476/nach-silvesterparty-absage-in-berlin-nun-gibt-es-neue-plaene.html
+#: by: https://www.entwicklungsstadt.de/silvester-2026-berlin-feiert-mit-neuem-konzept-am-brandenburger-tor/
+#: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
+#: source_id: viz2021:13.349991,52.514511,31.12.2024,06:00 (bis 01.01.2025) (inaktiv)
+#: note: am 2023-12-29 mittags war der östliche Tiergarten komplett umzäunt, aber die Wege waren noch offen
+Pariser Platz	2::temp 8722,12268 8637,12258
+Straße des 17. Juni	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 7031,12320 7288,12156 7383,12095
+	2::temp 7875,12363 7836,12247 7822,12201 7816,12150
+	2::temp 8400,12417 8391,12389 8344,12221
+	2::temp 8354,12416 8391,12389 8546,12279
+	2::temp 8775,12457 8804,12280 8722,12268
+# umschließende Fläche: 6892,12023 6844,11993 6815,11952 7436,11532 7576,11534 7682,11549 7851,11602 8112,11685 8224,11710 8476,11797 8544,11861 8571,12154 8498,12198 8470,12216 8018,12162 7780,12127 7283,12068
+	2::temp 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
+	2::temp 7823,12120 7832,12036 7822,11952 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7813,11589 7816,11571
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7664,11597 7711,11558 7713,11553 7717,11540
+	2::temp 8210,11775 8221,11876 8221,11885 8215,12156
+	2::temp 8210,11775 8244,11878 8327,12174
+	2::temp 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742
+	2::temp 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
+	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566
+	2::temp 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
+	2::temp 7600,11513 7621,11541 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099
+	2::temp 8005,11627 8006,11648 8014,11753 8016,11770 8020,11937 8022,12016
+	2::temp 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
+	2::temp 8034,12093 8049,12140
+	2::temp 8167,11865 8132,11910
+	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
+	2::temp 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197
+	2::temp 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
+	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
+	2::temp 7373,11594 7362,11561 7359,11538 7356,11517
+	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
+Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156
+',
+         'from' => 1767186000,
+         'id' => 2767,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 5,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              28,
+                              'months',
+                              12,
+                              'start',
+                              '2023-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2025 bis 01.01.2026',
+         'type' => 'gesperrt',
+         'until' => 1767243600
+       },
        undef,
        undef,
        undef,
@@ -4459,7 +4554,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-12-21 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -5371,31 +5466,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
-#: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
-#: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024) (inaktiv)
-#: source_id: LMS-BR:393826/72 viz2021:13.2597,52.51486,20.12.2025,05:00 (bis 21.12.2025)
-	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'from' => 1766116800,
-         'id' => 3490,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Preußenallee: voraussichtlich Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 20.12.2025 05:00 bis 21.12.2025 23:00 ',
-         'type' => 'gesperrt',
-         'until' => 1766354400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5570,7 +5641,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-13
+#: last_checked: 2025-12-22
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6085,13 +6156,10 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger
 # REMOVED --- #: note: war zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten?
-#: last_checked: 2025-12-21 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2025-12-21
+#: check_frequency: 30d
 # REMOVED (hier offen) ---	2::inwork 15678,8911 15698,8903 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16369,8836 16388,8821
 	q4::inwork 16086,8860 16084,8833
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 3700,
@@ -7314,7 +7382,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-12-16 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -7876,7 +7944,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
 #: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024) (inaktiv)
 #: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024) (inaktiv)
-#: source_id: LMS-BR:393717/72 viz2021:13.62548,52.45697,19.12.2025,06:00 (bis 21.12.2025)
+#: source_id: LMS-BR:393717/72 viz2021:13.62548,52.45697,19.12.2025,06:00 (bis 21.12.2025) (inaktiv)
 	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 ',
          'from' => 1766012400,
@@ -8493,7 +8561,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-12-16 (traffic) vvv
+#: last_checked: 2025-12-22 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -8506,7 +8574,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
          'dont_check_date' => 1,
          'from' => 1747562400,
          'id' => 4345,
-         'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Ende 2025',
+         'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Ende 2025, evtl. werden die Bauarbeiten verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8953,7 +9021,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-21
+#: last_checked: 2025-12-22
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9395,17 +9463,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR:381146/72 viz2021:13.30594,52.52464, (bis 03.12.2025) (bis 22.12.2025)
-#: source_id: LMS-BR:388776/72 viz2021:13.306215,52.524639,03.11.2025,07:00 (bis 19.12.2025) (inaktiv)
-	q4::inwork 3534,13098 3711,13098
-',
-         'from' => 1761675773,
-         'id' => 4486,
-         'text' => 'Nordhauser Str.: Bauarbeiten zwischen Sömmeringstr. und Mierendorffplatz, Sperrung, evtl. sind auch Radfahrer betroffen, bis 22.12.2025',
-         'type' => 'handicap',
-         'until' => 1766422800
-       },
+       undef,
        undef,
        undef,
        {
@@ -9439,8 +9497,8 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        },
        {
          'data' => '#: osm_watch: note 5049958 2
-#: osm_watch: way id="1127993128" version="4"
-#: last_checked: 2025-12-03
+#: osm_watch: way id="1127993128" version="5"
+#: last_checked: 2025-12-22 (osm)
 #: check_frequency: 60d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
@@ -9491,20 +9549,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (none)
-#: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
-#: osm_watch: note 4847575 2
-#: last_checked: 2025-11-29
-#: next_check: 2025-12-21
-	2::inwork 7497,7761 7499,7880
-',
-         'from' => 1762694374,
-         'id' => 4497,
-         'text' => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., voraussichtlich bis Dezember 2025',
-         'type' => 'gesperrt',
-         'until' => 1766358000
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.henn.com/de/news/startschuss-fuer-berlin-center-gene-and-cell-therapies-von-bayer-und-charite
@@ -9591,17 +9636,7 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2025-b1-bruecke-potsdamer-strasse
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-12-2025-b1_bruecke-potsdamer-strasse_vollsperrung-am-4-adventswochenende
-	2::inwork -44861,-1252 -45229,-992
-',
-         'from' => 1766077200,
-         'id' => 4506,
-         'text' => 'Brandenburg, Potsdamer Str.: Sperrung der Bahnbrücke, vom 19.12.2025 18:00 bis voraussichtlich 22.12.2025 04:00',
-         'type' => 'gesperrt',
-         'until' => 1766372400
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Ist hier tatsächlich zeitweise oder dauerhaft gesperrt?
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13063

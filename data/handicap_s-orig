@@ -56,10 +56,10 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-21 (osm) vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083527067" version="9"
+#: osm_watch: way id="1083527067" version="10"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="182614432" version="23"
@@ -601,7 +601,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="18"
@@ -4853,6 +4853,8 @@ Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
 Solmsstr.: asphaltierte Kissen (2x)	q1 9705,9732 9676,9564
 Fürbringerstr.: asphaltierte Kissen (2x)	q1 9705,9732 9820,9718
+#: note: sowie ein weiterer umfahrbarer Kissen an der nordwestlichen Einfahrt sowie eine umfahrbare Fahrbahnschwelle an der südöstlichen Einfahrt
+Blücherstr.: asphaltierte Kissen (2x)	q1 10306,9640 10429,9514 10580,9361
 #: note: (noch) keine Ausschilderung
 (Nordpromenade, entlang der S-Bahn): einige Fußgänger	q2 20640,12095 20807,12083
 #: note: Ausschilderung existiert am westlichen Ende; am östlichen Ende nur ein Grünanlagenschild ohne Zusatzschilder

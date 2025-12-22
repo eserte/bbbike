@@ -557,7 +557,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2025-12-10 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1399,7 +1399,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-12-21 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 30d (neue Radverkehrsführung kommt vermutlich nicht mehr) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt+Tsp zum Ersatzneubau) vvv
@@ -1884,7 +1884,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2025-12-12 (webcam)
+#: last_checked: 2025-12-22
 #: check_frequency: 21d
 	RW0; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
@@ -3048,11 +3048,12 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-17 Uhr	RW5; 9795,10512 9858,10350
 Radspur fängt nach der Bushaltestelle an	RW4; 10213,11728 10221,11678 10201,11631
 	RW6;RW6 10032,10752 9829,10830
 	RW6;RW6 9973,11150 10163,11070
-Verbundsteinpflaster mit Schäden	RW1;RW1 10122,10294 10178,10411
-Verbundsteinpflaster mit Schäden	RW1; 10178,10411 10293,10645
-# REMOVED (nicht mehr) --- vorhandener Radweg ist abgesperrt
-Verbundsteinpflaster mit Schäden	RW1; 10293,10645 10178,10411
-Verbundsteinpflaster mit Schäden	RW1;RW1 10293,10645 10329,10723
+#: historical_note: früher (bis 2025): Verbundsteinpflaster mit Schäden, RW1;RW1
+	RW7;RW7 10122,10294 10178,10411
+#: historical_note: früher (bis 2025): Verbundsteinpflaster mit Schäden, RW1;RW1; 2024 oder so wurde bereits der Radweg Richtung Süden abgesperrt
+	RW7;RW7 10178,10411 10293,10645
+#: historical_note: früher (bis 2025): Verbundsteinpflaster mit Schäden, RW1;RW1
+	RW7;RW7 10293,10645 10329,10723
 #: historical_note: früher (bis 2025): Verbundsteinpflaster mit Schäden, RW1;RW1
 	RW7;RW7 10329,10723 10397,10852
 #: historical_note: früher (bis 2025): Verbundsteinpflaster, RW1;RW1
@@ -3249,7 +3250,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2025-12-21
+#: last_checked: 2025-12-22
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3270,7 +3271,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-12-21
+#: last_checked: 2025-12-22
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7847,7 +7848,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2025-12-13 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7894,7 +7895,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-12-13 vvv
+#: last_checked: 2025-12-22 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8780,8 +8781,8 @@ gemeinsamer Geh- und Radweg, alter Beton	RW2; 20915,17584 20929,17685 20853,1776
 	RW6;RW6 22131,11084 22137,11033 22146,10995
 #: historical_note: früher nicht für Radfahrer freigegeben, mittlerweile verbreitert
 #: XXX die Busspur ist auch für Radfahrer gedacht (siehe BA-Pressemitteilung), aber noch gar nicht ausgeschildert
-#: last_checked: 2025-12-13
-#: next_check: 2025-12-17 (BA-Pressemitteilung: Anradeln)
+#: last_checked: 2025-12-22
+# REMOVED --- #: next_check: 2025-12-17 (BA-Pressemitteilung: Anradeln)
 breite Busspur	RW5; 15505,6342 15598,6294 15725,6235
 #: historical_note: früher (bis Dez 2025) ohne Radverkehrsanlage
 	RW3; 15725,6235 15598,6294 15505,6342
