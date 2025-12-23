@@ -17806,6 +17806,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrungen-zur-silvesterfeier-am-brandenburger-tor/
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel/ (Platz des 18. März + Teile der Ebertstraße und der Straße des 17. Juni)
 #: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
+#: by: https://www.tagesspiegel.de/berlin/silvester-party-vor-dem-brandenburger-tor-so-lauft-die-sause-yeah-26-am-31-dezember-in-berlin-15075309.html
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8502,12226 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -33578,6 +33579,7 @@ EOF
 #: by: https://www.quantum.ag/presseartikel/quantum-uebernimmt-berliner-projekt-p1
 #: by: https://entwicklungsstadt.de/zwischen-stillstand-und-neustart-wie-es-um-berlins-signa-projekte-steht/ (weiterhin bis Anfang 2027)
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
+#: by: https://www.entwicklungsstadt.de/am-kadewe-in-der-city-west-fassade-des-bueroturms-quantum-p1-vollstaendig-installiert/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="17"
@@ -33585,7 +33587,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2025-12-15 (osm)
 #: check_frequency: 180d
-#: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
+#: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 	q4::inwork 6021,10405 6116,10688
 EOF
      },
@@ -40941,7 +40943,7 @@ EOF
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: note: mittlerweile laufen Rückbauarbeiten
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-11-03 (okas)
+#: last_checked: 2025-12-22 (bahninfo-forum)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -45924,12 +45926,12 @@ EOF
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
 #: note: laut berlin-usedom-radweginfo bis Ende 2024, mittlerweile bis Mitte 2025, mittlerweile bis Ende 2025
 #: note: auf finowkanal.info kein Endedatum
-#: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025) Eröffnung Ende 2025
+#: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025, Ende Dezember 2025) Eröffnung Ende 2025
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-11-24 (research)
+#: last_checked: 2025-12-22 (research)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -47712,7 +47714,7 @@ EOF
 #: osm_watch: way id="275795707" version="5"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-09-21 vvv
+#: last_checked: 2025-12-23 vvv
 #: check_frequency: 90d vvv
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
 #: note: wieder dauerhaft (?) gesperrt -> siehe auch neuen gesperrt-orig-Eintrag
@@ -48218,7 +48220,7 @@ EOF
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr.; demnächst in der Landjägerstr. (nördlich Amtsstr.?)
-#: last_checked: 2025-12-11 (website check) vvv
+#: last_checked: 2025-12-23 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -48271,14 +48273,14 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-17 (traffic)
+#: last_checked: 2025-12-23 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-17 (traffic)
+#: last_checked: 2025-12-23 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
@@ -48389,7 +48391,7 @@ EOF
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-12-11 (traffic) vvv
+#: last_checked: 2025-12-23 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -49524,7 +49526,7 @@ EOF
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-11-24 (research)
+#: last_checked: 2025-12-22 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -49578,7 +49580,7 @@ EOF
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
 #: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-19 (traffic)
+#: last_checked: 2025-12-23 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	q4::inwork 5700,10226 5597,10299 5450,10338
@@ -49622,16 +49624,12 @@ EOF
 EOF
      },
      { from  => 1752319411, # 2025-07-12 13:23
-       until => undef, # $isodate2epoch->("2025-10-02 20:00:00"), # 1759355999, # 2025-10-01 23:59
+       until => 1766503182, # undef, # $isodate2epoch->("2025-10-02 20:00:00"), # 1759355999, # 2025-10-01 23:59
 #      text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Straße komplett gesperrt, voraussichtlich bis Anfang Oktober 2025, evtl. wird die Sperrung verlängert',
        text  => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Ende November 2025)',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: add_fragezeichen: Besteht die Sperrung noch immer?
-#: XXX Mittlerweile kann die Durchfahrt möglich sein (gesehen 2025-10-19 Sun 11:53, 2025-11-01 Sat 14:37)
-#: last_checked: 2025-12-11
-#: check_frequency: 30d
-#: next_check: 2025-12-31 (Halteverbotsschilder)
+# REMOVED (Baustelle existiert noch, aber keine Durchfahrt-verboten-Schilder mehr gesehen) --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: XXX Mittlerweile kann die Durchfahrt möglich sein (gesehen 2025-10-19 Sun 11:53, 2025-11-01 Sat 14:37) --- #: last_checked: 2025-12-23 --- #: check_frequency: 30d --- #: next_check: 2025-12-31 (Halteverbotsschilder)
 	2::inwork 17950,8974 17915,8945
 EOF
      },
@@ -51181,7 +51179,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-23
 #: check_frequency: 45d
 #: next_check: 2026-01-31
 	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565
@@ -51355,8 +51353,8 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: LMS-BR:392756/72 viz2021:13.40303,52.52899, (kein Endedatum)
-#: also_indoor: traffic (ex-G,no-T,H,ex-W)
-#: last_checked: 2025-12-17 (traffic)
+#: also_indoor: traffic (re-G,no-T,H,re-W)
+#: last_checked: 2025-12-22 (traffic)
 #: check_frequency: 7d (traffic)
 	q4::inwork 10301,13701 10220,13694
 EOF

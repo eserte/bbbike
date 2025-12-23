@@ -2698,6 +2698,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrungen-zur-silvesterfeier-am-brandenburger-tor/
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel/ (Platz des 18. März + Teile der Ebertstraße und der Straße des 17. Juni)
 #: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
+#: by: https://www.tagesspiegel.de/berlin/silvester-party-vor-dem-brandenburger-tor-so-lauft-die-sause-yeah-26-am-31-dezember-in-berlin-15075309.html
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8502,12226 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -5122,6 +5123,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: by: https://www.quantum.ag/presseartikel/quantum-uebernimmt-berliner-projekt-p1
 #: by: https://entwicklungsstadt.de/zwischen-stillstand-und-neustart-wie-es-um-berlins-signa-projekte-steht/ (weiterhin bis Anfang 2027)
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
+#: by: https://www.entwicklungsstadt.de/am-kadewe-in-der-city-west-fassade-des-bueroturms-quantum-p1-vollstaendig-installiert/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="17"
@@ -5129,7 +5131,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2025-12-15 (osm)
 #: check_frequency: 180d
-#: next_check: 2027-01-01 (presseportal website, entwicklungsstadt)
+#: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 	q4::inwork 6021,10405 6116,10688
 ',
          'from' => undef,
@@ -6593,7 +6595,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: note: mittlerweile laufen Rückbauarbeiten
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-11-03 (okas)
+#: last_checked: 2025-12-22 (bahninfo-forum)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -7664,12 +7666,12 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
 #: note: laut berlin-usedom-radweginfo bis Ende 2024, mittlerweile bis Mitte 2025, mittlerweile bis Ende 2025
 #: note: auf finowkanal.info kein Endedatum
-#: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025) Eröffnung Ende 2025
+#: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025, Ende Dezember 2025) Eröffnung Ende 2025
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="11"
 #: osm_watch: way id="1328520022" version="1"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-11-24 (research)
+#: last_checked: 2025-12-22 (research)
 #: check_frequency: 30d
 #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -7939,30 +7941,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by[nocache]: https://x.com/VIZ_Berlin/status/1869796587712467317
-#: by: https://pbs.twimg.com/media/GfKxCRhXEAA0vc3?format=png&name=900x900
-#: source_id: viz2021:13.62548,52.45697,20.12.2024,06:00 (bis 22.12.2024) (inaktiv)
-#: source_id: viz2021:13.494454,52.421146,20.12.2024,19:00 (bis 22.12.2024) (inaktiv)
-#: source_id: LMS-BR:393717/72 viz2021:13.62548,52.45697,19.12.2025,06:00 (bis 21.12.2025) (inaktiv)
-	q4::xmas 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
-',
-         'from' => 1766012400,
-         'id' => 4233,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Bölschestr.: Weihnachtsmarkt, zwischen Aßmannstr. und Fürstenwalder Damm gesperrt, vom 19.12.2025 6:00 Uhr bis 21.12.2025 23:59 Uhr',
-         'type' => 'handicap',
-         'until' => 1766444399
-       },
+       undef,
        {
          'data' => '#: by: https://www.sjk.de/aktuelles/2024/baustart-im-st-joseph-krankenhaus-berlin-tempelhof.html (Abrissarbeiten bis Ende 2024, Bauarbeiten bis Ende 2028)
 #: by: https://entwicklungsstadt.de/baustart-in-tempelhof-neues-klinikgebaeude-fuer-das-st-joseph-krankenhaus/ (bis Ende 2028, Verzögerungen möglich)
@@ -8185,7 +8164,7 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: osm_watch: way id="275795707" version="5"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-09-21 vvv
+#: last_checked: 2025-12-23 vvv
 #: check_frequency: 90d vvv
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
 #: note: wieder dauerhaft (?) gesperrt -> siehe auch neuen gesperrt-orig-Eintrag
@@ -8348,7 +8327,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr.; demnächst in der Landjägerstr. (nördlich Amtsstr.?)
-#: last_checked: 2025-12-11 (website check) vvv
+#: last_checked: 2025-12-23 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -8401,14 +8380,14 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-17 (traffic)
+#: last_checked: 2025-12-23 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-17 (traffic)
+#: last_checked: 2025-12-23 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
@@ -8442,7 +8421,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-12-11 (traffic) vvv
+#: last_checked: 2025-12-23 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -8757,7 +8736,7 @@ Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-11-24 (research)
+#: last_checked: 2025-12-22 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 ',
          'from' => undef,
@@ -8811,7 +8790,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
 #: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-19 (traffic)
+#: last_checked: 2025-12-23 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 	q4::inwork 5700,10226 5597,10299 5450,10338
@@ -8825,20 +8804,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        undef,
        undef,
        undef,
-       {
-         'data' => '#: add_fragezeichen: Besteht die Sperrung noch immer?
-#: XXX Mittlerweile kann die Durchfahrt möglich sein (gesehen 2025-10-19 Sun 11:53, 2025-11-01 Sat 14:37)
-#: last_checked: 2025-12-11
-#: check_frequency: 30d
-#: next_check: 2025-12-31 (Halteverbotsschilder)
-	2::inwork 17950,8974 17915,8945
-',
-         'from' => 1752319411,
-         'id' => 4389,
-         'text' => 'Wandlitzstr. - Blockdammweg: Bauarbeiten, Durchfahrt offiziell verboten (allerdings können die Barrieren weggeschoben sein) (Stand Ende November 2025)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9399,16 +9365,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
          'type' => 'handicap',
          'until' => 1778709599
        },
-       {
-         'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/machtige-wasser-pipeline-am-berliner-grunewaldsee-geborsten-spazierganger-storen-die-bauarbeiten-massiv-14628494.html (für noch mindestens vier Wochen gesperrt)
-	2::inwork 546,6583 663,6575 698,6592 775,6615
-',
-         'from' => 1761159637,
-         'id' => 4477,
-         'text' => 'am Grunewaldsee: Wasserrohrbruch, Sperrung des Wegs, voraussichtlich bis Ende November 2025',
-         'type' => 'gesperrt',
-         'until' => 1766444399
-       },
+       undef,
        {
          'data' => '#: next_check_id: WERBELLINAMPEL-2025
 #: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025) (bis 27.02.2026)
@@ -9580,7 +9537,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
        undef,
        {
          'data' => '#: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
-#: last_checked: 2025-12-06
+#: last_checked: 2025-12-23
 #: check_frequency: 45d
 #: next_check: 2026-01-31
 	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565
@@ -9718,8 +9675,8 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
        },
        {
          'data' => '#: source_id: LMS-BR:392756/72 viz2021:13.40303,52.52899, (kein Endedatum)
-#: also_indoor: traffic (ex-G,no-T,H,ex-W)
-#: last_checked: 2025-12-17 (traffic)
+#: also_indoor: traffic (re-G,no-T,H,re-W)
+#: last_checked: 2025-12-22 (traffic)
 #: check_frequency: 7d (traffic)
 	q4::inwork 10301,13701 10220,13694
 ',

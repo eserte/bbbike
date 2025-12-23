@@ -129,7 +129,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
-#: last_checked: 2025-12-16 (traffic)
+#: last_checked: 2025-12-22 (traffic)
 #: check_frequency: 7d (traffic)
 #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 #: valid: -20251231
@@ -404,14 +404,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2025-12-21
+#: last_checked: 2025-12-23
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-12-15
+#: last_checked: 2025-12-23
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -4477,7 +4477,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
 #: XXX noch provisorisch, wird verstetigt
-#: last_checked: 2025-12-11
+#: last_checked: 2025-12-23
 #: check_frequency: 30d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 
@@ -4494,6 +4494,11 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: historical_note: permanente Ampel ab Nov/Dez 2025
 #: note: Anforderung für Radfahrer aus der Markgrafenstr. (sowohl Richtung N als auch S)
 	X 9751,11243
+# 
+#: historical_note: seit Dez 2025
+#: note: Anforderung für Radfahrer im Zuge des Hönower Wiesenwegs
+	X 17380,8858
+# 
 #: section ^^^
 ################################################################################
 #: section: Potsdam vvv

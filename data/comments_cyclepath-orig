@@ -190,6 +190,9 @@ Gehweg für Radfahrer frei	RW1;RW1 -7640,26928 -7675,27004 -7674,27071 -7250,2802
 	RW3;RW3 -10772,-2153 -10673,-2128
 Radweg auf Gehweg	RW2;RW2 -12213,-2131 -12093,-2156
 	RW4; -12213,-2131 -12255,-2123 -12431,-2096
+	RW4?; -12431,-2096 -12255,-2123
+#: note: hier ein Zweirichtungsradweg für Radfahrer, die Richtung Heinrich-Mann-Allee/Brauhausberg fahren
+	RW2; -12255,-2123 -12213,-2131
 Radweg auf Gehweg	RW2;RW2 -12093,-2156 -12004,-2175 -11939,-2190 -11834,-2213 -11778,-2225 -11694,-2245
 	RW4?; -11694,-2245 -11597,-2203
 	RW3; -11597,-2203 -11513,-2122 -11369,-2085
