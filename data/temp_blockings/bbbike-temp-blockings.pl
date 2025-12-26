@@ -17916,20 +17916,29 @@ EOF
 	    #    BBBIKE_TEMP_BLOCKINGS_DEBUG=1 perl data/temp_blockings/bbbike-temp-blockings.pl
 	    my $text = 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt';
 	    my $ret = $next_interval->([
-	        ["2025-06-03", "2025-06-06"],
-	        ["2025-06-24", "2025-06-27"],
-	        ["2025-07-08", "2025-07-11"],
-	        ["2025-09-09", "2025-09-12"],
-	        ["2025-09-16", "2025-09-18"],
-	        ["2025-09-23", "2025-09-26"],
-	        ["2025-10-07", "2025-10-10"],
-	        ["2025-10-14", "2025-10-17"],
-	        ["2025-11-04", "2025-11-07"],
-	        ["2025-11-11", "2025-11-14"],
-	        ["2025-11-25", "2025-11-28"],
-	        ["2025-12-02", "2025-12-05"],
-	        ["2025-12-16", "2025-12-19"],
-	        ["2026-01-01", undef],
+	        ["2026-01-12", "2026-01-16"],
+	        ["2026-01-26", "2026-01-30"],
+	        ["2026-02-23", "2026-02-27"],
+	        ["2026-03-02", "2026-03-06"],
+	        ["2026-03-16", "2026-03-20"],
+	        ["2026-03-23", "2026-03-27"],
+	        ["2026-04-13", "2026-04-17"],
+	        ["2026-04-20", "2026-04-24"],
+	        ["2026-05-04", "2026-05-08"],
+	        ["2026-05-18", "2026-05-22"],
+	        ["2026-06-08", "2026-06-12"],
+	        ["2026-06-22", "2026-06-26"],
+	        ["2026-07-06", "2026-07-10"],
+	        ["2026-09-07", "2026-09-11"],
+	        ["2026-09-21", "2026-09-25"],
+	        ["2026-10-05", "2026-10-09"],
+	        ["2026-10-12", "2026-10-16"],
+	        ["2026-11-02", "2026-11-06"],
+	        ["2026-11-09", "2026-11-13"],
+	        ["2026-11-23", "2026-11-27"],
+	        ["2026-12-07", "2026-12-11"],
+	        ["2026-12-14", "2026-12-18"],
+	        ["2027-01-01", undef],
 	    ], $text);
 	    if ($ret->{until}) {
 	        $text .= ', nächster Zeitraum ' . $epoch2dedate->($ret->{from}) . ' bis ' . $epoch2dedate->($ret->{until});
@@ -17950,8 +17959,9 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_23_1469_1520_online.pdf (Termine 2025)
 #: by: https://www.morgenpost.de/bezirke/mitte/article409680344/sperrungen-am-bundestag-rechtens-gericht-faellt-urteil.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_45_2805_2868_online.pdf (Teileinziehung während der Sitzungswochen Di-Fr, keine Termine)
+#: by: https://www.bundestag.de/parlament/plenum/sitzungskalender/bt2026-1084980
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
-#: next_check: 2025-12-31 (wann sind die Sitzungswochen 2026?)
+#: next_check: 2026-01-12 (Bestätigung für die Sitzungswochen 2026?)
 	2::temp 8554,12593 8540,12420
 EOF
      },
@@ -31192,7 +31202,8 @@ EOF
      },
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2025-03-26 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Ende März 2025, evtl. wird verlängert',
+#      text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Ende März 2025, evtl. wird verlängert',
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
@@ -31214,9 +31225,9 @@ EOF
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="19"
 #: osm_watch: way id="1148659680" version="6"
-#: last_checked: 2025-10-30 (mapillary)
+#: last_checked: 2025-12-16 (mapillary)
 # REMOVED --- #: check_frequency: 14d (traffic)
-#: check_frequency: 60d
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
@@ -33256,7 +33267,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-12-13
+#: last_checked: 2025-12-25
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -36465,7 +36476,7 @@ EOF
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-22
+#: last_checked: 2025-12-25
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36491,7 +36502,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2025-12-13 vvv
+#: last_checked: 2025-12-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -37262,7 +37273,7 @@ EOF
 #: osm_watch: note 4444205 4
 Schönstr. zwischen Amalienstr. und Paul-Oestreich-Str.	q4::inwork 13794,16773 13630,16629
 #: historical_note: ursprünglich q3::inwork, nun ist der gesamte Abschnitt bis Woelckpromenade gesperrt
-# REMOVED (hier nicht mehr) --- Amalienstr.	q4::inwork 13722,16843 13794,16773
+# REMOVED (hier nicht mehr) --- Amalienstr.	q4::inwork 13727,16838 13794,16773
 Amalienstr.	q4::inwork 13794,16773 13848,16721
 Paul-Oestreich-Str.: Einbahnstraßenregelung	q4::inwork; 13630,16629 13710,16544
 Woelckpromenade: Einbahnstraßenregelung	q4::inwork; 13710,16544 13756,16620 13848,16721
@@ -37966,7 +37977,7 @@ EOF
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2025-12-13 (traffic) vvv
+#: last_checked: 2025-12-24 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
 #: next_check: 2026-05-18 (VIZ-Verkehrsmeldung) vvv
@@ -40465,7 +40476,7 @@ EOF
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-11-04 vvv
+#: last_checked: 2025-12-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -42811,17 +42822,6 @@ EOF
 	    #    BBBIKE_TEMP_BLOCKINGS_DEBUG=1 perl data/temp_blockings/bbbike-temp-blockings.pl
 	    my $text = "Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt)";
 	    my $ret = $next_interval->([
-	        #["2024-09-14", "2024-09-15"],
-	        #["2024-10-03", "2024-10-06"],
-	        #["2024-11-02", "2024-11-03"],
-	        #["2025-04-05", "2025-04-06"],
-	        #["2025-05-03", "2025-05-04"],
-	        #["2025-06-07", "2025-06-09"],
-	        #["2025-07-05", "2025-07-06"],
-	        #["2025-08-02", "2025-08-03"],
-	        #["2025-09-13", "2025-09-14"],
-	        #["2025-10-03", "2025-10-05"],
-	        ["2025-11-01", "2025-11-02"],
 	        ["2026-04-04", "2026-04-06"],
 	        ["2026-05-02", "2026-05-03"],
 	        ["2026-05-23", "2026-05-25"],
@@ -44577,13 +44577,14 @@ EOF
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
 #: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026)
-#: source_id: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
+#: source_id[inactive]: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
 #: source_id: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-10-09 (BVV/BA) vvv
+#: last_checked: 2025-12-24 (bahninfo-forum) vvv
 #: next_check: 2026-02-13 (VIZ-Verkehrsmeldung) vvv
-Winckelmannstr.: Havarie, evtl. sind auch Radfahrer betroffen	q4::inwork 17503,4148 17507,4216
+Winckelmannstr.: Havarie, Sperrung der Fahrbahn	q4::inwork 17503,4148 17507,4216
+Köpenicker Str.: Einmündungsbereich gesperrt	q3::inwork 17507,4216 17638,4224
 Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4159 17405,4151
 #: next_check ^^^
 #: last_checked ^^^
@@ -44931,7 +44932,7 @@ EOF
 EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
-       until => $isodate2epoch->("2025-12-31 18:00:00"), # $isodate2epoch->("2025-08-29 17:00:00"), # 1722265200, # 2024-07-29 17:00
+       until => undef, # $isodate2epoch->("2025-12-31 18:00:00"), # $isodate2epoch->("2025-08-29 17:00:00"), # 1722265200, # 2024-07-29 17:00
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.08.2025 17:00',
        text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
        type  => 'handicap',
@@ -45021,6 +45022,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
+#: also_indoor: traffic (G,H,W)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
 #: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
 #: by: https://www.deutsches-architekturforum.de/thread/14764-reinickendorf-kleinere-projekte/?postID=766343#post766343 (Quartier Alt-Wittenau)
@@ -45029,8 +45031,9 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1574495.php
 #: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
 #: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/
-#: last_checked: 2025-06-11 (mapillary)
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
+#: last_checked: 2025-12-25 (traffic)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
 	q3::inwork; 5476,20372 5801,20339
 EOF
      },
@@ -45908,7 +45911,7 @@ EOF
 #: osm_watch: way id="1119255054" version="10"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-12-17
+#: last_checked: 2025-12-26
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -47479,8 +47482,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 5e5fb692-e58e-4ef9-8fa9-ae1d8c41e3bels.brandenburg.de (bis 01.05.2026)
-#: osm_watch: way id="24012076" version="17"
+#: osm_watch: way id="24012076" version="18" brb
 #: XXX Wird die Qualität der Straße nach den Bauarbeiten besser sein?
+#: XXX Laut osm gehen die Bauarbeiten sogar bis Juli 2027
 #: next_check: 2026-04-30
 	2::inwork -30699,57370 -30570,57254 -30550,57216
 EOF
@@ -48717,7 +48721,7 @@ EOF
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="4"
-#: last_checked: 2025-12-06 (traffic)
+#: last_checked: 2025-12-24 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -49012,7 +49016,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-12-13 vvv
+#: last_checked: 2025-12-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -49231,19 +49235,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1766579604, # undef, # XXX
        text  => 'Betty-Katz-Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-12-17 (traffic) vvv
-#: check_frequency: 10d (traffic) vvv
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2025-12-17 (traffic) vvv --- #: check_frequency: 10d (traffic) vvv
 	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1750748520, # 2025-06-24 09:02
@@ -49882,15 +49882,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1766754663, # undef, # XXX
        text  => 'Landschaftspark Herzberge: Nord-Süd-Weg wegen Bauarbeiten gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: note: evtl. kann am Wochenende die Durchfahrt inoffiziell möglich sein (gesehen 2025-08-03 Sun, 2025-11-30 Sun 11:42)
 #: note: außerdem existiert parallel (nur 40-50m Umweg) ein etwas engerer Betonweg
-#: add_fragezeichen: Ist der Weg noch immer gesperrt?
-#: last_checked: 2025-11-30
-#: check_frequency: 21d
+# REMOVED (mittlerweile (2025-12-26) ist der halbe Weg frei) --- #: add_fragezeichen: Ist der Weg noch immer gesperrt? --- #: last_checked: 2025-12-26 --- #: check_frequency: 21d
 	2::inwork 17499,12998 17507,12781
 EOF
      },
@@ -50038,7 +50036,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-22
+#: last_checked: 2025-12-25
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50481,7 +50479,7 @@ EOF
        data  => <<'EOF',
 # REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-12-13 vvv
+#: last_checked: 2025-12-25 vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
 Corinthstr.	q3::inwork; 14447,10491 14608,10409
@@ -50993,7 +50991,7 @@ EOF
 #: also_indoor: traffic (G,T)
 #: last_checked: 2025-11-21
 #: check_frequency: 120d
-#: next_check: 2025-12-31
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 EOF
      },
@@ -51114,6 +51112,7 @@ EOF
 #: by: https://www.bayer.com/media/aufbau-von-translationszentrum-fuer-gentherapien-und-zelltherapien-in-berlin-beginnt/
 #: by: https://iq-spaces.com/de/berlin-mitte (iQ Space)
 #: by: http://www.deal-magazin.com/news/148507/Leuchtturmprojekt-fuer-Biomedizin-WOLFF--MUeLLER-baut-iQ-space (Fertigstellung April 2028)
+#: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
 #: osm_watch: way id="1080985512" version="13"
 #: osm_watch: way id="1409889274" version="10"
 #: osm_watch: way id="1430307301" version="4"
@@ -51281,8 +51280,8 @@ EOF
        text  => 'Kniephofstr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege an der Altmarkstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (G[zu lang],no-T.no-H,no-W)
-#: last_checked: 2025-12-12 (traffic) vvv
+#: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
+#: last_checked: 2025-12-24 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q4::inwork 6124,5983 6226,5995 6318,6006
 Kissinger Str.	q3::inwork 6226,5995 6213,6135

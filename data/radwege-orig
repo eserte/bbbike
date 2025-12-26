@@ -285,7 +285,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-24 (webcam)
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -1008,7 +1008,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2025-12-15
+#: last_checked: 2025-12-24
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1400,7 +1400,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-12-22 vvv
+#: last_checked: 2025-12-25 vvv
 #: check_frequency: 30d (neue Radverkehrsführung kommt vermutlich nicht mehr) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt+Tsp zum Ersatzneubau) vvv
@@ -1748,7 +1748,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-26 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (ex-VIZ-Verkehrsmeldung) vvv
@@ -1769,7 +1769,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="55"
 #: osm_watch: way id="1082929723" version="14"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-26 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
@@ -2781,19 +2781,24 @@ die letzten 60 Meter sind benutzungspflichtig, Grünbeschichtung	RW3; 11736,15727
 #: note: Wichertstr., Richtung Osten
 Grünbeschichtung	RW4; 11941,15586 11736,15727
 Grünbeschichtung	RW3; 11736,15727 11567,15842 11445,15920 11307,15995 11214,16043 10982,16121
+# 
+#: note: Grellstr., Richtung Westen
+stellenweise Grünbeschichtung	RW4; 12704,15105 12417,15272 12325,15328 12245,15380 11941,15586
+#: note: Grellstr., Richtung Osten
 #: note: der grün eingefärbte Asphalt ist kaum zu erkennen
 Grünbeschichtung bzw. grüner Asphalt, Radspur teilweise hinter den parkenden Autos	RW4; 11941,15586 12245,15380 12325,15328 12417,15272 12704,15105
 # 
-#: by: Jens-Michael Schau (nördliche Fahrbahn)
-#: confirmed_by: srt (RW3!)
-	RW3; 12704,15105 12417,15272 12325,15328 12245,15380 11941,15586
-#: by: Jens-Michael Schau vvv
-#: confirmed_by: srt (RW3!)
-	RW3;RW3 12704,15105 12807,15045 13107,14873 13148,14850
-	RW3; 13148,14850 13370,14715
-	RW1; 13370,14715 13439,14673
-	RW3; 13439,14673 13370,14715 13148,14850
-#: by: ^^^
+#: note: Storkower Str., Richtung Südosten
+Bushaltestelle, stellenweise Grünbeschichtung	RW3; 12704,15105 12807,15045
+stellenweise Grünbeschichtung	RW4; 12807,15045 13107,14873 13148,14850 13370,14715
+alter Asphalt	RW1; 13370,14715 13439,14673
+#: note: Storkower Str., Richtung Nordwesten
+Bushaltestelle, am Anfang Grünbeschichtung	RW3; 13439,14673 13370,14715
+stellenweise Grünbeschichtung	RW4; 13370,14715 13148,14850
+Bushaltestelle	RW3; 13148,14850 13107,14873
+stellenweise Grünbeschichtung	RW4; 13107,14873 12807,15045
+Bushaltestelle, stellenweise Grün- und Rotbeschichtung	RW3; 12807,15045 12704,15105
+# 
 	RW3;RW2 11709,14856 11609,14881
 	RW2; 11864,14781 11709,14856
 	RW1;RW2 10881,15047 11045,15012
@@ -3251,7 +3256,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2025-12-22
+#: last_checked: 2025-12-25
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3272,7 +3277,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2025-12-22
+#: last_checked: 2025-12-25
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3310,7 +3315,7 @@ Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 140
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2025-12-23
+#: last_checked: 2025-12-26
 #: next_check: 2026-03-31
 #: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
@@ -3319,7 +3324,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-12-23
+#: last_checked: 2025-12-26
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3330,14 +3335,14 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2025-12-23
+#: last_checked: 2025-12-26
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2025-12-23
+#: last_checked: 2025-12-26
 #: next_check: 2026-03-31
 #: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
@@ -3605,17 +3610,18 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2025-12-15 vvv
+#: last_checked: 2025-12-24 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
-alter Asphalt, Schäden, schmaler Unterstreifen gegen parkende Autos	RW1; 13439,14673 13727,14207 13731,14200 13736,14192
+beginnt mit einem Radstreifen und wird nicht eindeutig auf den Hochbord geführt	RW1; 13439,14673 13520,14542
+alter Asphalt, Schäden, schmaler Unterstreifen gegen parkende Autos	RW1; 13520,14542 13727,14207 13731,14200 13736,14192
 #: historical_note: früher (bis etwa 2025): alter Asphalt, Schäden, schmaler Unterstreifen gegen parkende Autos
 neues Verbundsteinpflaster, trotzdem etwas uneben	RW1; 13736,14192 13879,13967
 alter Asphalt, Schäden, schmaler Unterstreifen gegen parkende Autos, Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
 #: note: Storkower Str., Richtung Nordwesten
-alter Asphalt, Schäden, kein sichtbarer Unterstreifen gegen parkende Autos	RW1; 14006,13761 13971,13818 13879,13967 13736,14192 13731,14200 13727,14207 13439,14673
+alter Asphalt, Schäden, kein sichtbarer Unterstreifen gegen parkende Autos	RW1; 14006,13761 13971,13818 13879,13967 13736,14192 13731,14200 13727,14207 13520,14542 13439,14673
 #: last_checked ^^^
 #: check_frequency ^^^
 #: next_check ^^^
@@ -4950,7 +4956,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-26 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -7491,7 +7497,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
 #: last_checked: 2025-09-02 (mapillary)
-#: check_frequency: 120d
+#: check_frequency: 150d
 	RW0; 22365,6149 22467,6135
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
 	RW6;RW6 21473,10369 21546,10352
@@ -7849,7 +7855,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2025-12-22 vvv
+#: last_checked: 2025-12-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7896,7 +7902,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2025-12-22 vvv
+#: last_checked: 2025-12-25 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -7977,7 +7983,7 @@ Grünbeschichtung	RW4; 15417,12823 15367,12815 15357,12813
 Grünbeschichtung	RW4; 15357,12813 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
 #: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2025-12-01 (Radwegschild fehlt noch)
+#: last_checked: 2025-12-24 (Radwegschild fehlt noch)
 #: check_frequency: 45d
 Grünbeschichtung, Poller	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar
@@ -8620,7 +8626,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2025-12-17
+#: last_checked: 2025-12-26
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8647,7 +8653,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-26 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-09-30 (infravelo) vvv
@@ -9696,4 +9702,6 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 	RW7;RW7 8245,16064 8346,16283 8420,16365
 # 
 	RW7;RW7 18586,9172 18548,8942 18518,8778
+# 
+	RW7;RW7 13357,9313 13489,9456
 # 

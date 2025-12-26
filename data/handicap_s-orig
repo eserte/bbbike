@@ -56,7 +56,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2025-12-21 (osm) vvv
+#: last_checked: 2025-12-26 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="10"
@@ -295,7 +295,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="10"
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-25
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -394,10 +394,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://entwicklungsstadt.de/abriss-der-ruine-in-der-burgsdorfstrasse-in-mitte-hat-begonnen/ (Abriss bis Jahresende 2025)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1077_ds_2020_vi_eine-dauerhafte-sperrung-der-burgsdorfstrasse.pdf
 #: by: https://www.entwicklungsstadt.de/abriss-in-der-burgsdorfstrasse-1-ruine-in-wedding-fast-vollstaendig-verschwunden/
-#: osm_watch: way id="549316654" version="45"
+#: osm_watch: way id="549316654" version="46"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2025-12-17
+#: last_checked: 2025-12-23 (osm)
 #: check_frequency: 60d
 #: next_check: 2026-03-15 (MoPo)
 #: valid: 20171026-
@@ -868,9 +868,9 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="29"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-12-09 (osm)
+#: last_checked: 2025-12-24 (webcam)
 #: check_frequency: 180d
-#: next_check: 2027-01-01 (Tsp)
+#: next_check: 2029-12-31 (entwicklungsstadt)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
 # REMOVED (mittlerweile ist die Fahrbahn komplett gesperrt, kein Bürgersteig) --- #: next_check_id: MUSEUMDERMODERNE-2021
@@ -1135,10 +1135,10 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
 #: osm_watch: way id="1275438996" version="3"
 # REMOVED --- #: osm_watch: way id="1262014804" version="1"
-#: osm_watch: note 4126168 3
+#: osm_watch: note 4126168 4
 #: osm_watch[closed]: note 4126169 1
 #: priority: #C
-#: last_checked: 2025-08-24
+#: last_checked: 2025-12-26
 #: check_frequency: 120d
 #: next_check: 2026-04-30 (Halteverbotsschilder)
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
@@ -2105,7 +2105,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.nd-aktuell.de/artikel/1187963.bvg-oepnv-in-berlin-tram-in-der-investitionsfalle.html (2028/2029?)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/erneuerung-endhaltestelle-lichtenberg (Eröffnung des Planfeststellungsverfahrens vielleicht 2026, Umsetzung 2029/2030)
 #: osm_watch: way id="223184082" version="10"
-#: last_checked: 2025-12-23
+#: last_checked: 2025-12-26
 #: check_frequency: 360d
 #: next_check: 2029-06-30 (bvg)
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
@@ -3419,7 +3419,7 @@ Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 #: note: einige Einkaufsmöglichkeiten, relativ viele Fußgänger, schnell fahren nicht möglich
 #: XXX_prog BS zur Genslerstr.
-(Landsberger Allee - Genslerstr./Zechliner Str.): Fußgänger, Bordstein	q2 16590,14386 16544,14593
+(Landsberger Allee - Genslerstr./Zechliner Str.): Fußgänger, Bordstein	q2 16590,14386 16548,14575 16544,14593
 #: note: früher stand hier "q2", wäre das auch tatsächlich möglich gewesen?
 (Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q4+ 12125,12490 12134,12540
 # 
@@ -4300,7 +4300,7 @@ Epensteinplatz: einige Fußgänger, flache Bordsteine	q3 8432,17798 8417,17790 840
 Jenaer Str.: einige Fußgänger, flacher Bordstein	q2 5790,9460 5795,9483
 Barbarossastr.: einige Fußgänger	q1 5795,9483 5821,9502
 (Crivitzer Str. - Woldegker Str./Rostocker Str.): einige Fußgänger	q2 17584,18551 17511,18636
-(Hosemannstr. - Naugarder Str.): parkende Autos	q1 12583,15566 12605,15491
+# REMOVED (mittlerweile dürfen Autos hier wohl nicht parken (Poller)) --- (Hosemannstr. - Naugarder Str.): parkende Autos	q1 12583,15566 12605,15491
 Färberstr. [Wohngebiet]: enge Straße, einige Fußgänger auf der Fahrbahn	q1 21622,4884 21591,4902 21631,4991 21643,5020
 #: XXX_prog BS am nördlichen Ende, ansonsten q1
 Färberstr. [Wohngebiet]: enge Straße, einige Fußgänger auf der Fahrbahn, Bordstein	q3 21643,5020 21665,5035
@@ -5186,7 +5186,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: last_checked: 2025-12-20 vvv
+#: last_checked: 2025-12-24 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2025-12-18 vvv
 # REMOVED --- #: valid: -20251219
@@ -5507,6 +5507,9 @@ Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 # 
 (Putlitzstr. - Quitzowstr.): einige Fußgänger, flache Bordsteine	q2 6245,14194 6245,14204 6246,14228
+# 
+#: note: außer "Feuerwehrzufahrt" keine weiteren Schilder
+(Zechliner Str. - Allee-Center): einige Fußgänger	q2 16288,14555 16447,14558 16548,14575
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

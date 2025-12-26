@@ -469,7 +469,7 @@ Kavalierstr.	1 10621,18837 10729,18584
 #: XXX Einbahnstraßenregelung umgedreht
 #: osm_watch: way id="4637773" version="28"
 #: last_checked: 2025-07-18 (mapillary)
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
@@ -4209,8 +4209,9 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12933,1101 12946,1027
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: source_id: bvg2024:250#HIM_FREETEXT_308566
+#: source_id: bvg2024:250#HIM_FREETEXT_307841
 #: last_checked: 2025-07-18 (mapillary) vvv
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="7"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
 #: osm_watch: way id="174271093" version="25"
@@ -4249,7 +4250,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 #: osm_watch: way id="1332697425" version="5"
 #: last_checked: 2025-12-03
 #: check_frequency: 180d
-#: next_check: 2027-01-01
+#: next_check: 2029-12-31 (entwicklungsstadt)
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
 # 
 #: osm_watch[closed]: note 4165928 1
@@ -4265,7 +4266,7 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information
 #: also_indoor: traffic (G)
-#: last_checked: 2025-08-27
+#: last_checked: 2025-12-25 (traffic)
 #: check_frequency: 120d
 #: next_check: 2026-10-29
 Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
@@ -4887,10 +4888,11 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-oeffnet-nach-langer-sanierung-id248135
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-wird-nach-sanierung-wieder-eroeffnet-id270349 (Bernhard-Lichtenberg-Haus frühestens Ende 2025 fertig)
 #: by: https://entwicklungsstadt.de/bauprojekt-am-bebelplatz-fortschritte-beim-bernhard-lichtenberg-haus/ (geplante Fertigstellung Ende 2025)
+#: by: https://www.erzbistumberlin.de/medien/pressestelle/aktuelle-pressemeldungen/pressemeldung/news-title/richtfest-am-bernhard-lichtenberg-haus/ (Fertigstellung im Sommer 2026)
 #: osm_watch: way id="28120501" version="13"
 #: last_checked: 2025-12-10
 #: check_frequency: 90d
-#: next_check: 2025-12-31 (berliner-abendblatt, entwicklungsstadt)
+#: next_check: 2026-09-01 (erzbistumberlin)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 # 
 # REMOVED --- #: by: mapillary --- #: last_checked: 2022-02-05 (mapillary) --- #: check_frequency: 90d --- Ackerstr. (Schulzendorf): Hochbauarbeiten, Straße gesperrt	2::inwork 22996,-4983 22962,-5193
@@ -5661,7 +5663,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2025-09-18 vvv
+#: last_checked: 2025-12-26 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006

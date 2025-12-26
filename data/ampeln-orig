@@ -404,14 +404,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2025-12-23
+#: last_checked: 2025-12-26
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-12-23
+#: last_checked: 2025-12-26
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -1567,9 +1567,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-24 (webcam)
 #: check_frequency: 180d
-#: next_check: 2027-01-01 (Tsp)
+#: next_check: 2029-12-31 (entwicklungsstadt)
 	F::inwork 8096,11393
 #: XXX_prog gilt nicht für Radfahrer in Richtung West->Ost
 	X 5758,11895
@@ -1674,7 +1674,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036154063735/154063735/00111219/19-Anlagen/05/B1138ZB2.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7226 (Antrag) (wurde abgelehnt)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409001203/gefaehrliche-kreuzung-warten-auf-eine-ampel-seit-ueber-20-jahren.html
-#: last_checked: 2025-06-29 (mapillary)
+#: last_checked: 2025-11-04 (mapillary)
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -3563,8 +3563,8 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: source_id: LMS-BR:381878/72 viz2021:13.43277,52.47837,01.09.2025,07:00 (bis 14.12.2025) (bis 27.02.2026)
 #: XXX laut Verkehrsmeldung nun Neubau einer Ampel, bis Mitte Dezember 2025, mittlerweile bis Ende Februar 2026
 #: priority: #D
-#: last_checked: 2025-12-13
-#: next_check: 2026-02-27
+#: last_checked: 2025-12-25
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583
 #: note: Anforderungsampel

@@ -14,7 +14,7 @@
 #: by: https://www.morgenpost.de/berlin/article409965464/wie-der-senat-das-a100-chaos-in-den-griff-bekommen-will.html
 #: by: https://entwicklungsstadt.de/verkehrsdaten-elsenbruecke-durchschnittsgeschwindigkeit-sinkt-nach-a100-eroeffnung/
 #: priority: #D
-#: last_checked: 2025-12-22
+#: last_checked: 2025-12-25
 #: check_frequency: 90d
 Markgrafendamm -> Alt-Stralau: Sperrung der Linksabbiegespur	3 14608,10409 14558,10264 14619,10223
 # 
@@ -66,8 +66,8 @@ Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20250912 (Freigabe im Sep 2025 nicht möglich, kein neuer Freigabetermin)
 #: by: https://www.blankenfelde-mahlow.de/planen-bauen/bauen/dresdner-bahn/?date=20250923 (bis Ende 2025)
 #: also_indoor: traffic (G,B,W)
-#: osm_watch: way id="1223345278" version="10"
-#: osm_watch: way id="1262225305" version="6"
+#: osm_watch: way id="1223345278" version="11"
+#: osm_watch: way id="1262225305" version="7"
 #: XXX Außerdem: der S-Bahnhof wird zukünftig wohl südlich des Bahnunterführung sein
 #: XXX Unterführung wird voraussichtlich im Sommer 2025 fertig sein
 #: XXX Eröffnung des Fußgängertunnels am 4.2.2025
@@ -2203,7 +2203,7 @@ Zeestower Weg: Poller	3 * -7636,15309 *
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6273 (Zwischenbericht)
 #: note: seit 2024 für Radfahrer frei
 # REMOVED --- #: osm_watch: way id="23008657" version="18" --- #: XXX Wird die Einbahnstraßenregelung für Radfahrer aufgehoben? --- #: last_checked: 2024-06-13 --- #: check_frequency: 90d
-Amalienstr.	1 13794,16773 13722,16843 13653,16907 13581,16968
+Amalienstr.	1 13794,16773 13727,16838 13653,16907 13581,16968
 # 
 #: historical_note: früher auch für Radfahrer eine Einbahnstraße
 Landjägerstr.	1 22740,4415 22542,4485 22495,4523
