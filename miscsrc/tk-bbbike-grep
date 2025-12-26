@@ -128,7 +128,7 @@ if ($auto_update_from_selection) {
 if ($stay_on_top && is_in_path 'wmctrl') {
     $mw->update;
     my $hex_win_id = sprintf "0x%x", ($mw->wrapper)[0];
-    my @cmd = ('wmctrl', '-i', '-r', $hex_win_id, '-b', 'add,above');
+    my @cmd = ('wmctrl', ($debug ? ('-v') : ()), '-i', '-r', $hex_win_id, '-b', 'add,above');
     warn "Run: @cmd\n" if $debug;
     system @cmd;
     warn "@cmd failed (for stay on top): $?" if $? != 0;
