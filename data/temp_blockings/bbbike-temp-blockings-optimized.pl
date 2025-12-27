@@ -3924,36 +3924,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
-#: also_indoor: webcam https://portal1391.webcam-profi.de/
-#: osm_watch: node id="3204993764" version="8"
-#: tempex: before(first_advent, monday)-YYYY1226 vvv
-#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
-	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
-	q4::xmas 11064,12910 11141,12806
-#: tempex ^^^
-',
-         'from' => 1763852400,
-         'id' => 2763,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
-         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 24. November 2025 bis 26. Dezember 2025',
-         'type' => 'handicap',
-         'until' => 1766789999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7813,7 +7784,7 @@ Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,1070
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-27
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
