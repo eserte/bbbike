@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2025-12-21 vvv
+#: last_checked: 2025-12-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1400,7 +1400,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2025-12-25 vvv
+#: last_checked: 2025-12-28 vvv
 #: check_frequency: 30d (neue Radverkehrsführung kommt vermutlich nicht mehr) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-01-31 (entwicklungsstadt+Tsp zum Ersatzneubau) vvv
@@ -2311,7 +2311,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2025-12-12 vvv
+#: last_checked: 2025-12-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2335,7 +2335,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur oder Busspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="27"
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 # REMOVED (bis etwa Herbst/Winter 2024) --- provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -3097,7 +3097,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2025-12-16 vvv
+#: last_checked: 2025-12-28 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3150,13 +3150,8 @@ an der Karl-Marx-Allee fehlen einige Meter Radspur	RW4; 12891,12549 12878,12430
 	RW3; 12758,11915 12728,11850 12676,11739 12660,11705 12645,11673 12543,11521
 #: note: Straße der Pariser Kommune, Richtung Norden
 	RW3; 12497,11459 12543,11521
-#: next_check_id: OSTBAHNHOF-2021
-#: XXX nach den Bauarbeiten wiederherstellen: RW3;
-#: note: mittlerweile (Sommer 2024) ist das Radweg-Schild wohl verschwunden, deshalb RW2 -> RW1; mittlerweile (Januar 2025) ist es wieder da
-#: last_checked: 2025-12-03
-#: check_frequency: 30d
-#: next_check: 2026-12-31 (Tsp)
-	RW2; 12543,11521 12645,11673
+#: historical_note: während der Bauarbeiten am Ostbahnhof 2021-2025 Radwegführung auf dem Hochbord, wechselnd RW2 und RW1
+	RW3; 12543,11521 12645,11673
 	RW3; 12645,11673 12660,11705 12676,11739 12728,11850 12758,11915
 Fahrradschleuse	RW3; 12758,11915 12822,12067
 	RW4; 12822,12067 12833,12154 12854,12287

@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-12-16
+#: last_checked: 2025-12-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -2281,7 +2281,7 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_05.pdf
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_06.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1471213.php
-#: last_checked: 2025-12-05
+#: last_checked: 2025-12-28
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (infravelo)
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -3730,7 +3730,7 @@ Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,1271
 Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen oder eine Ampel gebaut?	?::projected 12723,13934 12766,13942 12758,13896
 # 
 #: by: https://www.berliner-zeitung.de/news/pankow-am-volkspark-friedrichshain-wird-ein-zebrastreifen-eingerichtet-li.2323422 (Baubeginn im Sommer 2025?)
-#: last_checked: 2025-11-21
+#: last_checked: 2025-12-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-09-20 (berliner-zeitung)
 Am Friedrichshain/Käthe-Niederkirchner-Str.: wird hier ein Zebrastreifen gebaut?	? 12376,13781 12402,13762 12424,13745
@@ -6622,10 +6622,11 @@ Blankenburger Chaussee Höhe Beuthener Str./Straße 43: ein Zebrastreifen soll hie
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf (Bd.3) vvv
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6828 (Antrag: Forderung nach einer Erneuerung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/tEj4BLWSyTzpr3nuG9vfrze3Kxt5Cgq2BSi2Upul/jhLiudeQ/37-Anlagen/04/B1310ZB1.pdf (1. Zwischenbericht: Investitionsplanung 2021-2025)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22060.pdf (erst ab 2031 vorgesehen)
 #: osm_watch: way id="152863346" version="18"
 #: last_checked: 2025-11-05
-#: check_frequency: 360d
-#: next_check: 2025-12-31
+#: check_frequency: 720d
+#: next_check: 2031-12-31 (pardok)
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: XXX Maßnahme Fh.6
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6666 (BVV-Beschluss, 2020-12-10)
@@ -7524,7 +7525,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2025-12-17
+#: last_checked: 2025-12-28
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7703,7 +7704,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2025-12-26
+#: last_checked: 2025-12-28
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7711,7 +7712,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2025-12-22
+#: last_checked: 2025-12-28
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8206,7 +8207,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.bahninfo-forum.de/read.php?9,818927,840301#msg-840301 (Baustart ab Dez 2025 für vier Jahre)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/waisentunnel
 #: by: http://bvg-projekt.de/projekte/ersatzneubau-waisentunnel-spreeunterquerung-berlin-mitte-bim-pilot-1-0/
-#: last_checked: 2025-12-22
+#: last_checked: 2025-12-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (Tsp, entwicklungsstadt: Baustart)
 Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. Gehweg frei)	? 11139,12243 11155,12184 11278,12185
@@ -8278,6 +8279,7 @@ Hennickendorf - B1/Rüdersdorf: Verlegung der Landesstraße, Bau eines Radweges	?:
 #: by: https://www.nordkurier.de/regional/uckermark/templin-hofft-auf-grossen-radweg-nach-prenzlau-2060632
 #: by: https://www.nordkurier.de/regional/uckermark/faehrkrugbruecke-wird-erst-ab-2025-gebaut-1575714 (zwischen 2025 und 2027)
 #: source_id: LS/721-E/20/088 (bis 31.12.2024) (bis 31.12.2025)
+#: osm_watch: way id="245862156" version="10"
 #: XXX der Radweg soll auf der Nordseite weitergeführt werden, und gleich hinter der Einmündung enden
 #: next_check: 2025-12-31
 Templin-Fährkrug: Neubau Brücke mit Radweg	?::projected 18881,80833 18937,80848 19036,81068
@@ -9125,7 +9127,7 @@ Wilhelm-Busch-Str.: Einbahnstraße geplant	?::projected 13205,8126 13312,8026
 #: osm_watch: note 4706094 3
 #: XXX fehlt in Berlin.coords.data (PLZ?)
 #: add_fragezeichen: Wurde der Marion-Seelig-Platz benannt und ausgeschildert?
-#: last_checked: 2025-11-29 (osm note)
+#: last_checked: 2025-12-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-04 (Widerspruchsfrist)
 Marion-Seelig-Platz: Benennung	? 12161,13711 12189,13750 12204,13719 12161,13711
@@ -9659,7 +9661,7 @@ Cecilienstr.: wird hier ein Zebrastreifen angelegt?	? 21956,13665 21918,13720 21
 #: by: https://entwicklungsstadt.de/glatteres-pflaster-weniger-laerm-hufelandstrasse-in-prenzlauer-berg-nahezu-fertig-umgebaut/
 #: osm_watch: way id="4615063" version="41"
 #: osm_watch: note 5010352 4
-#: last_checked: 2025-11-10 (mapillary)
+#: last_checked: 2025-12-28
 #: check_frequency: 60d
 #: next_check: 2026-06-30 (infravelo)
 Hufelandstr.: Fahrradstraße geplant	?::projected 12077,14186 12228,14083 12361,13985 12478,13903 12582,13834 12578,13800

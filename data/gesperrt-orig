@@ -4070,12 +4070,13 @@ südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: last_checked ^^^
 # 
+#: next_check_id: BKATREPTOW-2025
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
-#: last_checked: 2025-12-14
+#: last_checked: 2025-12-28
 #: check_frequency: 60d
-#: next_check: 2028-12-31
+#: next_check: 2028-12-31 (entwicklungsstadt)
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~22-09-2025-b1-spatenstich-altsaedtischer-bahnhof (Freigabe 2028?)
@@ -4088,7 +4089,7 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-28 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 vvv
 #: osm_watch: way id="752856111" version="14"
@@ -4119,16 +4120,16 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: by: https://www.tagesspiegel.de/berlin/weitere-baustelle-in-mitte-marx-engels-forum-wird-bald-umgestaltet-13598920.html (ab Juni 2025)
 #: by: https://gruen-berlin.de/projekte/urbane-freiraeume/rathaus-und-marx-engels-forum/ueber-das-projekt
 #: by: https://www.tagesspiegel.de/berlin/baustart-in-berlin-mitte-das-marx-engels-forum-wird-umgestaltet-13899289.html (Marx-Engels-Forum wird ab Juli 2025 eingezäunt sein, 1. BA bis 2027)
-#: by: https://entwicklungsstadt.de/historische-mitte-im-wandel-bauarbeiten-am-rathausforum-angelaufen/
+#: by: https://entwicklungsstadt.de/historische-mitte-im-wandel-bauarbeiten-am-rathausforum-angelaufen/ (1. BA bis 2027)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/marx-engels-forum-marienviertel.94/page-3#post-26287
 #: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
 #: osm_watch: note 4795958 5
 #: osm_watch: way id="169067264" version="14"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2025-11-21 vvv
+#: last_checked: 2025-12-28 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2027-12-31 vvv
+#: next_check: 2027-12-31 (Tsp, entwicklungsstadt) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 10431,12709
@@ -5046,7 +5047,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-12-16 vvv
+#: last_checked: 2025-12-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5257,7 +5258,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://entwicklungsstadt.de/wettbewerb-entschieden-so-sehen-die-ersten-molkenmarkt-wohnhaeuser-aus/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_51_3309_3560_online.pdf (zum Bebauungsplan 1-14-1)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-28
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5265,7 +5266,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-28
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5559,7 +5560,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2025-10-24
+#: last_checked: 2025-12-28
 #: check_frequency: 90d
 #: next_check: 2027-12-31
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372

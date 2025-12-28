@@ -39517,10 +39517,10 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1480288.php (zurzeit offen, neue Sperrung 2025 bis zum Spätsommer 2025)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/spielplatz-ist-wieder-offen_a424125
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1518885.php (Arbeiten ab 13.01.2025 bis voraussichtlich Ende Oktober 2025)
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/start-fuer-weitere-bauabschnitte-am-hindenburgdamm_a433899
 #: by: https://www.bew.berlin/aktuelles-und-presse/bauvorhaben-hindenburgdamm/ (mittlerweile bis Ende Dezember 2025)
 #: by: https://www.bew.berlin/binaries/content/assets/website/newsroom/illustration---netzverstarkung-hindenburgdamm.pdf/ (bis 4. Quartal 2025)
 #: by: https://www.bew.berlin/binaries/content/assets/website/newsroom/illustration---netzverstarkung-hindenburgdamm.pdf?date=20251120 (nun bis 1. Quartal 2026?)
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/start-fuer-weitere-bauabschnitte-am-hindenburgdamm_a433899
 #: osm_watch[closed]: note 3951936 1
 #: osm_watch[closed]: note 3947464 1
 #: osm_watch[closed]: note 3631207 6
@@ -40082,7 +40082,7 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 7
 #: osm_watch: note 3834144 7
-#: also_indoor: traffic (B,T,ex-H,re-G,ex-W,ex-A)
+#: also_indoor: traffic (ex-T,ex-H,re-G,re-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
@@ -40476,7 +40476,7 @@ EOF
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-12-26 vvv
+#: last_checked: 2025-12-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -42003,7 +42003,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="27"
-#: last_checked: 2025-11-11
+#: last_checked: 2025-12-28
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -43526,7 +43526,7 @@ EOF
        text  => 'Gipsstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: WEINMEISTER-2025
+# REMOVED --- #: next_check_id: WEINMEISTER-2025
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 # REMOVED (fragezeichen-Eintrag existiert) --- #: XXX Außerdem wird eine Fußgängerampel etwa am Anfang der Baustelle entstehen (siehe bahninfo-forum)
 #: by: https://www.bvg.de/de/unternehmen/medienportal/pressemitteilungen/2025-08-29-aufzug-weinmeisterstrasse
@@ -43534,7 +43534,7 @@ EOF
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-12-03 vvv
+#: last_checked: 2025-12-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -44578,7 +44578,7 @@ EOF
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
 #: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026)
 #: source_id[inactive]: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
-#: source_id: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
+#: source_id[inactive]: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-12-24 (bahninfo-forum) vvv
@@ -45911,7 +45911,7 @@ EOF
 #: osm_watch: way id="1119255054" version="10"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-12-26
+#: last_checked: 2025-12-28
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -48866,7 +48866,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-12-22 (traffic) vvv
+#: last_checked: 2025-12-28 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -49562,7 +49562,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-12-12
+#: last_checked: 2025-12-28
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -49933,18 +49933,18 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 EOF
      },
      { from  => 1754431200, # 2025-08-06 00:00
-       until => 1767222000, # 2026-01-01 00:00
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025 (Stand Ende November 2025: Diagonalweg ist offen)',
+       until => undef, # 1767222000, # 2026-01-01 00:00
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
-#: osm_watch: note 5038218 2
-#: add_fragezeichen: Sind die Wege bereits gesperrt?
+#: osm_watch: note 5038218 3
+#: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2025-12-14
+#: last_checked: 2025-12-28
 #: check_frequency: 14d
-#: next_check: 2025-12-31
+# REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 EOF
      },
@@ -50036,7 +50036,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-25
+#: last_checked: 2025-12-28
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50479,7 +50479,7 @@ EOF
        data  => <<'EOF',
 # REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-12-25 vvv
+#: last_checked: 2025-12-28 vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
 Corinthstr.	q3::inwork; 14447,10491 14608,10409
@@ -50735,7 +50735,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2025-12-16
+#: last_checked: 2025-12-28
 #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
 EOF
@@ -51003,7 +51003,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 5
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-17
+#: last_checked: 2025-12-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
@@ -51347,14 +51347,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1766928791, # undef, # XXX
        text  => 'Linienstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Kleine Rosenthaler Str. und Rosenthaler Str., Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: LMS-BR:392756/72 viz2021:13.40303,52.52899, (kein Endedatum)
-#: also_indoor: traffic (re-G,no-T,H,re-W)
-#: last_checked: 2025-12-22 (traffic)
-#: check_frequency: 7d (traffic)
+#: also_indoor: traffic (ex-G,no-T,H,re-W)
+# REMOVED --- #: last_checked: 2025-12-28 --- #: check_frequency: 7d (traffic)
 	q4::inwork 10301,13701 10220,13694
 EOF
      },

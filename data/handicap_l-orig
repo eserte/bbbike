@@ -38,11 +38,11 @@ Karl-Marx-Str. (Hohen Neuendorf): Bauarbeiten, nur ein schmaler Gehweg ist frei	
 ### Blankenfelde ###
 # 
 #: next_check_id: BHFBLANKENFELDE-2023
-#: note: Radfahrer sollen absteigen
-#: last_checked: 2025-10-30 (pt42)
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2025-12-31
-Bhf. Blankenfelde: Engstellen	q3::inwork 11667,-7536 11601,-7560 11551,-7599
+#: note: mittlerweile nur Engstelle am östlichen Ende, deshalb q3 -> q2
+#: last_checked: 2025-12-24 (mapillary)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-12-31
+Bhf. Blankenfelde: Engstelle	q2::inwork 11667,-7536 11601,-7560 11551,-7599
 # 
 #: temporary ^^^
 ######################################################################
