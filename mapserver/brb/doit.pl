@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use FindBin;
@@ -299,6 +298,7 @@ if (!defined $dest_dir) {
     error "Currently defining --dest-dir is mandatory!";
 }
 
+$d->mkdir($dest_dir);
 $d->write_binary("$dest_dir/.options", "@saved_ARGV\n"); # only written if different from previous run
 
 $d->make_path($dest_dir); # XXX may this directory contain files from a previous run?
