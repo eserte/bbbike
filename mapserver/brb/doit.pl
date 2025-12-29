@@ -207,7 +207,6 @@ sub action_static_files {
     my @distfiles = qw(
 			   Makefile
 			   doit.pl
-			   brb-ipaq.map-tpl
 			   brb.css
 			   brb.html-tpl
 			   brb.js-tpl
@@ -272,7 +271,6 @@ sub action_all {
     my $d = shift;
     action_static_files($d);
     action_map_file($d, "brb");
-    action_map_file($d, "brb-ipaq");
     action_html_files($d);
     action_dist_any($d);
 }
