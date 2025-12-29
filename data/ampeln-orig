@@ -129,7 +129,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
-#: last_checked: 2025-12-22 (traffic)
+#: last_checked: 2025-12-29 (traffic)
 #: check_frequency: 7d (traffic)
 #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 #: valid: -20251231
@@ -254,7 +254,7 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: osm_watch: note 4289251 2
 #: source_id: adac:1602492862 (inaktiv)
-#: last_checked: 2025-10-29
+#: last_checked: 2025-12-29
 #: check_frequency: 120d
 #: next_check: 2028-01-01
 Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
@@ -384,7 +384,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-12-03
+#: last_checked: 2025-12-29
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -953,6 +953,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5764,10322
 #: note: Auf der nördlichen Seite gibt es einen Zweirichtungsradweg, um Radfahrern zwischen Pariser Str. und Regensburger Str. den Wegzu verkürzen; allerdings kann man die Überquerung der Bundesallee kaum während einer Grünphase schaffen.
 	X 5467,9866
+#: XXX_prog: Ampel gilt nicht für rechtsabbiegende Radfahrer Bundesallee -> Spichernstraße
 	X 5463,9961
 	X 5725,9846
 	X 5905,9795
@@ -1559,7 +1560,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2025-12-24 (webcam)
+#: last_checked: 2025-12-29
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	F::inwork 8096,11393
@@ -1870,7 +1871,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Ausfahrt Klinikum Neukölln
 	X 14347,3836
 	F 10000,11691
-	X 3952,8980
+	X 3951,8992
 	X 4324,8899
 	X 11290,15669
 	X 12090,16199
@@ -3950,7 +3951,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2025-12-22 vvv
+#: last_checked: 2025-12-29 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 	X::inwork 9121,12514

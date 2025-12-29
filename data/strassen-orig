@@ -1171,7 +1171,7 @@ Sybelstr.	N 3705,10581 3613,10576 3497,10570 3389,10567 3106,10554
 Meyerinckplatz	N 3997,10607 3981,10590 4007,10559 4030,10575
 Lewishamstr.	H 3835,10352 3813,10435 3783,10517 3753,10578 3644,10759 3623,10800 3592,10869 3546,10962
 Lewishamstr.	H 3644,10759 3725,10598 3770,10508 3813,10435
-Konstanzer Str.	H 4219,10279 4183,10144 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648 4011,9474 3983,9343 3958,9260 3915,9120 3919,9085 3952,8980
+Konstanzer Str.	H 4219,10279 4183,10144 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648 4011,9474 3983,9343 3958,9260 3915,9120 3919,9085 3951,8992
 Brandenburgische Str. (Wilmersdorf)	H 4777,8870 4689,8953 4609,9027 4467,9163 4396,9237 4377,9258 4342,9301 4246,9406 4057,9648 3980,9761 3951,9836 3949,9842 3927,9935
 Brandenburgische Str. (Wilmersdorf)	H 3927,9935 3896,10042 3869,10153 3852,10236
 Brandenburgische Str. (Wilmersdorf)	H 3927,9935 3907,10043 3880,10154 3852,10236
@@ -1190,7 +1190,7 @@ Mansfelder Str.	N 4447,9082 4325,9082 4228,9093 4156,9120 4096,9175 3958,9260 38
 Cicerostr.	N 3422,9178 3437,9341 3471,9754
 Cicerostr.	N 3469,9807 3457,9827 3468,9961 3489,10240
 Lehniner Platz	N 3489,10240 3492,10307
-Berliner Str. (Wilmersdorf)	H 5895,9083 5801,9065 5770,9055 5725,9041 5635,9018 5492,8982 5341,8931 5266,8903 5195,8880 5182,8880 5172,8880 5022,8879 4918,8872 4777,8870 4451,8874 4324,8899 4181,8933 4006,8967 3952,8980 3831,9052
+Berliner Str. (Wilmersdorf)	H 5895,9083 5801,9065 5770,9055 5725,9041 5635,9018 5492,8982 5341,8931 5266,8903 5195,8880 5182,8880 5172,8880 5022,8879 4918,8872 4777,8870 4451,8874 4324,8899 4181,8933 3989,8982 3951,8992 3831,9052
 (Berliner Str. - Badensche Str.)	NN 5195,8880 5278,8866
 Badensche Str.	H 5266,8903 5278,8866 5343,8858 5494,8843 5641,8831 5782,8828 5901,8819 6012,8809 6181,8801 6241,8798 6286,8799 6367,8804 6449,8807
 Am Rathaus	N 6286,8799 6293,8699 6309,8679 6313,8638
@@ -1266,7 +1266,7 @@ Gotenstr. (Schöneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wohn-und-beratungshaus-ella-barowsky-stra%C3%9Fe-gotenstra%C3%9Fe-am-stadtplatz-sch%C3%B6neberger-linse.1047/#post-24228 (Fertigstellung des Platzes erst 2028?)
 #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
-#: last_checked: 2025-11-29
+#: last_checked: 2025-12-29
 #: check_frequency: 180d
 (Gotenstr. - Ella-Barowsky-Str.)	NN 7497,7761 7551,7851
 # 
@@ -6346,7 +6346,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 # 
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
-#: osm_watch: way id="33712134" version="8"
+#: osm_watch: way id="33712134" version="10"
 #: last_checked: 2025-11-05
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18441,4600 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
@@ -14372,7 +14372,7 @@ Am Alten Lokschuppen	NN 15730,11279 15708,11193 15752,11115 15805,10949
 (Weg im Salvador-Allende-Viertel)	NN 22888,4184 22957,4264 23016,4326 23025,4358 23036,4420 23051,4461 23077,4512 23109,4554 23166,4585 23279,4599
 (Weg im Salvador-Allende-Viertel - Am Berg)	NN 23051,4461 23010,4506
 (An der Müggelspree)	NN 23409,5035 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
-Kalischer Str.	N 3964,8559 3970,8582 3979,8772 4006,8967
+Kalischer Str.	N 3964,8559 3970,8582 3979,8772 3989,8982
 #: note: private Erschließungsstraße vvv
 #: oldname: -202011: Planstraße E vvv
 Steinkleeweg	NN 8568,21431 8599,21411 8578,21378 8553,21338 8631,21290
@@ -19336,7 +19336,7 @@ Blüthgenstr.	N 3904,9379 3905,9523
 Brienner Str.	N 4224,9241 4251,9206 4228,9093 4198,9015 4181,8933
 #: note: bei osm "Kalkhorster Str.", aber in der Realität gibt es keine Straßenschilder
 (Zufahrt zur Kolonie Hohenzollerndamm)	NN 3751,8796 3858,8786
-Apeldorner Weg	NN 3822,8718 3858,8786 3952,8980
+Apeldorner Weg	NN 3822,8718 3858,8786 3951,8992
 Kalkhorster Str.	NN 3928,8598 3904,8664
 Kalkhorster Str.	N 3904,8664 3926,8779 3979,8772
 Ermslebener Weg	N 4143,8501 4135,8320
@@ -19942,7 +19942,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2025-12-22 vvv
+#: last_checked: 2025-12-29 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
@@ -21030,7 +21030,7 @@ Boninstr. (Lichterfelde)	N 3945,1034 3892,999 3840,964
 (Hornstr. - Park am Gleisdreieck)	NN 8779,9829 8761,9765 8729,9747 8722,9743
 (Park am Gleisdreieck, südöstlicher Weg)	NN 8722,9743 8565,9657 8540,9644 8508,9551 8477,9562 8458,9566 8426,9572 8396,9577
 (Rampe Hornstr. - Generalszug)	NN 8722,9743 8733,9841
-(A.T.U-Einfahrt - ALDI-Parkplatz)	N 8595,9495 8561,9482 8546,9468 8514,9470 8487,9405 8499,9253
+(A.T.U-Einfahrt - ALDI-Parkplatz)	N 8595,9495 8568,9493 8562,9455 8525,9462 8490,9403 8500,9378 8499,9253
 (Park am Gleisdreieck, Eingang Schöneberger Str.)	NN 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
 (Park am Gleisdreieck)	NN 8278,10384 8264,10344 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
 (Park am Gleisdreieck, Weg über dem Tunnelmund)	NN 8190,10340 8264,10344 8315,10347

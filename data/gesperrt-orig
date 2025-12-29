@@ -56,7 +56,7 @@ Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4103,6716 4141,6688 4248,6620 
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
 Bayerischer Platz	1 6059,9118 6044,9223 6079,9244 6123,9237 6142,9134 6145,9105 6108,9087 6066,9094 6059,9118
 #: confirmed_by: osm
-orthodoxe Kirche	1 3952,8980 3831,9052
+orthodoxe Kirche	1 3951,8992 3831,9052
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2302,4914 2185,4831 2079,4769 2027,4792
 U-Bahn Dahlem	1 2027,4792 2095,4805 2166,4858 2212,4891 2280,4941 2454,5067 2499,5144 2717,5578
 Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5847,2588 -5737,2746 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
@@ -103,7 +103,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="25"
 #: osm_watch: way id="1430487470" version="1"
-#: last_checked: 2025-11-19 (mapillary)
+#: last_checked: 2025-12-29
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -467,7 +467,7 @@ Kavalierstr.	1 10621,18837 10729,18584
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
-#: osm_watch: way id="4637773" version="28"
+#: osm_watch: way id="4637773" version="29"
 #: last_checked: 2025-07-18 (mapillary)
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
@@ -1207,8 +1207,8 @@ Nossener Str.	1 24345,14403 24298,14267 24217,14041
 Nossener Str.	1 24187,14052 24221,14142 24272,14278 24316,14412
 Mark-Twain-Str.	1 24345,14501 24363,14453 24345,14403
 Mark-Twain-Str.	1 24316,14412 24345,14501
-#: note: der Abschnitt ist außerdem eine Einbahnstraße, offen bergauf
-A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
+#: note: der Abschnitt ist eine Einbahnstraße, offen bergauf
+A.T.U-Einfahrt	1 8562,9455 8568,9493
 (Erfurter Str. - Wexstr.)	1 6260,8011 6261,8058
 Rubensstr.	1 6431,7883 6306,7864
 Bäumerplan	1 8527,7939 8553,7795
@@ -4127,7 +4127,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="14"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2025-12-28 vvv
+#: last_checked: 2025-12-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4407,7 +4407,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="5"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-12-19 vvv
+#: last_checked: 2025-12-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4892,7 +4892,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://entwicklungsstadt.de/bauprojekt-am-bebelplatz-fortschritte-beim-bernhard-lichtenberg-haus/ (geplante Fertigstellung Ende 2025)
 #: by: https://www.erzbistumberlin.de/medien/pressestelle/aktuelle-pressemeldungen/pressemeldung/news-title/richtfest-am-bernhard-lichtenberg-haus/ (Fertigstellung im Sommer 2026)
 #: osm_watch: way id="28120501" version="13"
-#: last_checked: 2025-12-10
+#: last_checked: 2025-12-29
 #: check_frequency: 90d
 #: next_check: 2026-09-01 (erzbistumberlin)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -5047,7 +5047,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-12-28 vvv
+#: last_checked: 2025-12-29 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5258,7 +5258,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://entwicklungsstadt.de/wettbewerb-entschieden-so-sehen-die-ersten-molkenmarkt-wohnhaeuser-aus/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_51_3309_3560_online.pdf (zum Bebauungsplan 1-14-1)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2025-12-28
+#: last_checked: 2025-12-29
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5266,7 +5266,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2025-12-28
+#: last_checked: 2025-12-29
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

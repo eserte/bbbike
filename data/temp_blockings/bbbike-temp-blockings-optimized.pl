@@ -2652,6 +2652,8 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: source_id: viz2021:13.379494,52.516456,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
 #: source_id: viz2021:13.37679,52.5163,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
 #: source_id: viz2021:13.37081,52.51779,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
+#: source_id: LMS-BR:394521/72 viz2021:13.376655,52.516287,29.12.2025,06:00 (bis 02.01.2026)
+#: source_id: LMS-BR:394520/72 viz2021:13.37737,52.51457,29.12.2025,06:00 (bis 02.01.2026)
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 #: by: https://viz.berlin.de/2020/12/welcome21/
@@ -2663,6 +2665,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel/ (Platz des 18. März + Teile der Ebertstraße und der Straße des 17. Juni)
 #: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
 #: by: https://www.tagesspiegel.de/berlin/silvester-party-vor-dem-brandenburger-tor-so-lauft-die-sause-yeah-26-am-31-dezember-in-berlin-15075309.html
+#: note: 2025-12-29 nachmittags: Ebertstr. komplett gesperrt, vom Tiergarten würde man zum Brandenburger Tor nur über lange Umwege (bis Behrenstr.) kommen
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8502,12226 8466,12197
 Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
@@ -4392,7 +4395,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18871,9565 18876,9512
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="36"
-#: osm_watch: note 4481312 6
+#: osm_watch: note 4481312 7
 #: check_frequency: 60d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: priority: #B
@@ -4400,8 +4403,8 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: last_checked: 2025-12-06
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="45"
-#: osm_watch: way id="580507889" version="39"
+#: osm_watch: way id="31525573" version="46"
+#: osm_watch: way id="580507889" version="40"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
 #: last_checked: 2025-12-04 (osm)
@@ -5032,7 +5035,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: osm_watch: way id="362719487" version="17"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-12-15 (osm)
+#: last_checked: 2025-12-29
 #: check_frequency: 180d
 #: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 	q4::inwork 6021,10405 6116,10688
@@ -5541,7 +5544,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://entwicklungsstadt.de/kai-wegner-besucht-zur-neueroeffnung-das-kalle-neukoelln/
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409917943/kalle-neukoelln-ist-fertig-da-schwingt-das-berlinerische-mit.html
 #: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
-#: osm_watch: way id="734271970" version="8"
+#: osm_watch: way id="734271970" version="9"
 #: osm_watch: way id="975241319" version="8"
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
@@ -5748,7 +5751,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 # REMOVED (dieser Wegteil wurde laut osm wieder geöffnet) --- #: osm_watch: way id="147686211" version="11"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-09-26
+#: last_checked: 2025-12-29
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -5823,35 +5826,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: ALTEPOTSDAMER-2022
-#: by: https://www.berliner-zeitung.de/news/shopping-berlin-potsdamer-platz-arkaden-heissen-jetzt-the-playce-li.250487
-#: by: https://www.deutsches-architekturforum.de/thread/5528-rund-um-den-potsdamer-platz/?postID=726648#post726648
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Teileinziehung, Radverkehr wird möglich sein, eingezogener Bereich bis zur Schellingstr.)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_10_0929_1092_online.pdf (Teileinziehung)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_14_1553_1632_online.pdf (Teileinziehung)
-#: by: https://entwicklungsstadt.de/letzte-bauphase-am-potsdamer-platz-umbau-des-marlene-dietrich-platzes-gestartet/
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_45_2805_2868_online.pdf (keine Einschränkung der Nutzung mehr?)
-# REMOVED (Bauarbeiten beendet) --- #: XXX Wie lange dauern die Bauarbeiten an? Danach vermutlich auch Fußgängerzone, Radfahrer frei, wie im nordöstlichen Abschnitt auch -> handicap_s-Eintrag! --- #: last_checked: 2024-01-25 --- #: check_frequency: 14d
-# REMOVED --- #: next_check: 2023-09-15
-# REMOVED (hier nicht mehr) ---	q4::inwork 8389,11378 8481,11447
-# REMOVED (hier nicht) ---	q4::inwork 8481,11447 8479,11493
-# REMOVED --- #: osm_watch: way id="1124627670" version="6" ---	q4::inwork 8280,11296 8318,11324 8375,11368 8389,11378
-#: XXX Wie lange dauern die Bauarbeiten? Wird es nach Fertigstellung weiterhin eine Einbahnstraße geben?
-#: osm_watch: note 4806178 3
-#: also_indoor: traffic (G,ex-T)
-#: last_checked: 2025-12-03 vvv
-	q3::inwork 8343,11133 8289,11205
-	q4::inwork 8289,11205 8278,11257 8280,11296 8253,11306
-# REMOVED (hier fertig) ---	q3::inwork 8253,11306 8232,11414
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3627,
-         'text' => 'Marlene-Dietrich-Platz: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7751,7 +7726,7 @@ Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,1070
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2025-12-27
+#: last_checked: 2025-12-29
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -8140,13 +8115,12 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
        undef,
        undef,
        {
-         'data' => '#: next_check_id: GITSCHINER-2025
-#: note: Evtl. hatten die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun, deshalb der next_check_id-Eintrag.
+         'data' => '# REMOVED --- #: next_check_id: GITSCHINER-2025 --- #: note: Evtl. hatten die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun, deshalb der next_check_id-Eintrag.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
 #: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
 #: note: Baustelle ist mittlerweile vom Erkelenzdamm weiter Richtung Admiralstr. gewandert
-#: last_checked: 2025-12-16
+#: last_checked: 2025-12-29
 #: check_frequency: 30d
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -8556,7 +8530,27 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: also_indoor: traffic (ex-G)
+#: note: Halteverbotsschilder bis 31.03.2026
+#: note: Baustellenschild der Wasserbetriebe zu Bauarbeiten in der Gegend bis Dezember 2026
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2025-12-29 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-03-31 vvv
+# REMOVED (hier nicht mehr) ---	q4::inwork 4500,6612 4630,6534
+	q3::inwork 4630,6534 4846,6417
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 4370,
+         'text' => 'Betty-Katz-Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
@@ -8681,10 +8675,11 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
 #: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-23 (traffic)
+#: last_checked: 2025-12-29
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
-	q4::inwork 5700,10226 5597,10299 5450,10338
+# REMOVED (hier nicht (mehr?)) ---	q4::inwork 5700,10226 5597,10299
+	q4::inwork 5597,10299 5450,10338
 ',
          'from' => 1752012000,
          'id' => 4385,
@@ -8702,11 +8697,11 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        undef,
        {
          'data' => '# REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (re-T,G)
+#: also_indoor: traffic (ex-T,G,no-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-12-16 (traffic)
+#: last_checked: 2025-12-29 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 7628,9365 7509,9337
 ',
@@ -9384,7 +9379,20 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: also_indoor: traffic (none)
+#: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
+#: osm_watch: note 4847575 4
+#: last_checked: 2025-12-29
+# REMOVED --- #: next_check: 2025-12-21
+	2::inwork 7497,7761 7499,7880
+',
+         'from' => 1762694374,
+         'id' => 4497,
+         'text' => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: by: https://www.henn.com/de/news/startschuss-fuer-berlin-center-gene-and-cell-therapies-von-bayer-und-charite
@@ -9574,6 +9582,19 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
          'text' => 'Bettinastr.: Bauarbeiten zwischen Fontanestr. und Douglasstr., evtl. sind auch Radfahrer von der Sperrung betroffen, vom 12.12.2025 07:00 bis 31.12.2025 17:00',
          'type' => 'handicap',
          'until' => 1767196800
+       },
+       undef,
+       {
+         'data' => '#: note: vermutete morgendliche Öffnung um 8h 
+#: tempex: (mo-fr T00:00-T08:00),(mo-fr T20:00-T23:59),(sa T00:00-T08:00),(sa T16:00-T23:59),su,holiday
+	2::temp 8562,9455 8568,9493
+',
+         'from' => undef,
+         'id' => 4518,
+         'recurring' => 1,
+         'text' => 'A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

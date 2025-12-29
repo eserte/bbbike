@@ -198,7 +198,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2025-12-04
+#: last_checked: 2025-12-29
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -485,7 +485,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-12-19
+#: last_checked: 2025-12-29
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -766,7 +766,8 @@ Sakrower Kirchweg: Beton	Q1+ -8255,3946 -8162,4025
 Sakrower Kirchweg: Asphalt	Q0 -8162,4025 -7990,4086 -7914,4150 -7792,4249 -7714,4279
 Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1+ -7714,4279 -7636,4346 -7595,4374 -7419,4497 -7381,4517 -7257,4581 -7152,4645 -7134,4681 -7131,4742 -7080,4896
 Kalischer Str.: Asphalt	Q0 3964,8559 3970,8582
-Kalischer Str.: Kleinsteinpflaster	Q1 3970,8582 3979,8772 4006,8967
+Kalischer Str.: Kleinsteinpflaster	Q1- 3970,8582 3979,8772
+Kalischer Str.: unebenes Kleinsteinpflaster	Q2+ 3979,8772 3989,8982
 Mannheimer Str. (Wilmersdorf): Asphalt	Q0 4456,8598 4320,8596
 Mannheimer Str. (Wilmersdorf): Kopfsteinpflaster	Q2 4456,8716 4456,8598
 Thulestr.: Asphalt	Q0 11630,16623 11534,16622 11440,16622
@@ -9167,7 +9168,7 @@ Wettersternweg: Verbundsteinpflaster	Q0- 20710,11234 20713,11263
 Nossener Str.: Beton	Q0 24217,14041 24298,14267 24345,14403
 Mark-Twain-Str.: Beton	Q0 24345,14403 24363,14453 24345,14501
 Mark-Twain-Str.: Beton	Q0 24368,14570 24359,14543 24345,14501 24316,14412
-(ATU-Einfahrt - ALDI-Parkplatz): Asphalt	Q0 8595,9495 8561,9482 8546,9468 8514,9470 8487,9405 8499,9253
+(ATU-Einfahrt - ALDI-Parkplatz): Asphalt	Q0 8595,9495 8568,9493 8562,9455 8525,9462 8490,9403 8500,9378 8499,9253
 Imbuschweg: Beton	Q0 14017,2985 14154,2923 14212,2865 14234,2829 14244,2759
 (Imbuschweg - Karsenzeile): Verbundsteinpflaster	Q1 14244,2759 14245,2704
 Karsenzeile: Gehwegplatten	Q1+ 14682,2532 14597,2607 14582,2595 14458,2709 14408,2708 14245,2704
@@ -17079,7 +17080,9 @@ Kamillenstr.: Kopfsteinpflaster	Q1- 3637,4680 3499,4881 3391,4950
 #: corrected_by: srt (Kopfsteinpflaster,	Q1 -> ...)
 Kamillenstr.: schlechtes Kopfsteinpflaster	Q3+ 3391,4950 3265,5030
 Malvenstr.: Kopfsteinpflaster	Q1 3499,4881 3597,4941 3684,4998
-Treitschkestr.: asphaltiertes Kopfsteinpflaster	Q1 4846,6417 4630,6534 4500,6612
+Betty-Katz-Str.: asphaltiertes Kopfsteinpflaster	Q1 4846,6417 4630,6534
+#: corrected_by: srt (asphaltiertes Kopfsteinpflaster, Q1 -> ..., vielleicht bei den Bauarbeiten 2025 neu gemacht?)
+Betty-Katz-Str.: Asphalt	Q0- 4630,6534 4500,6612
 #: corrected_by: srt (was Asphalt Q0)
 Viktoriapark/Zimmermannstr. (Steglitz): kleinteiliges Pflaster	Q1 4954,5888 4981,5939 5013,6003
 #: corrected_by: srt (was Q1)
@@ -18193,9 +18196,9 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="16"
-#: last_checked: 2025-08-20
+#: last_checked: 2025-12-29
 #: check_frequency: 120d
-Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
+Markelstr.: glattes Kopfsteinpflaster	Q1- 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
 Markelstr.: asphaltiert	Q0 4894,6509 5020,6434 5269,6305
 #: by: ^^^
@@ -30638,7 +30641,7 @@ Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4229,8499 4220,8237
 Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8237 4229,8499
 (Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4143,8501 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3751,8796 3858,8786
-Apeldorner Weg: wassergebundene Decke	Q1 3822,8718 3858,8786 3952,8980
+Apeldorner Weg: wassergebundene Decke	Q1 3822,8718 3858,8786 3951,8992
 Bechstedter Weg: Asphalt	Q0 3467,9045 3661,8815
 Zum Bechstedter Weg: Asphalt	Q1 3661,8815 3701,8849
 #: corrected_by: srt (Kleinpflaster -> ...)

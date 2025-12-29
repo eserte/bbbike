@@ -257,7 +257,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2025-12-03 vvv
+#: last_checked: 2025-12-29 vvv
 #: check_frequency: 60d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -285,7 +285,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2025-12-24 (webcam)
+#: last_checked: 2025-12-29
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -601,7 +601,11 @@ Gehwegplatten	RW1; 5139,9777 5052,9723 4976,9670
 	RW1; 5139,9777 5219,9808 5435,9859 5467,9866
 teilweise Radweg auf der Fahrbahn hinter den parkenden Autos, Asphalt mit einigen Schäden	RW1;RW1 4976,9670 4858,9594 4699,9505 4657,9481 4601,9449 4517,9401
 Verbundsteinpflaster	RW1; 4517,9401 4507,9395 4415,9343 4342,9301 4224,9241 4096,9175 3998,9125 3919,9085
-	RW1; 3919,9085 3998,9125 4096,9175 4224,9241 4342,9301 4415,9343 4507,9395 4517,9401
+	RW1; 3919,9085 3998,9125 4096,9175 4224,9241 4342,9301
+#: historical_note: früher (bis 2025): Verbundsteinpflaster, eher schmal, keine Benutzungspflicht
+	RW2; 4342,9301 4415,9343
+#: historical_note: früher (bis 2025): Verbundsteinpflaster, RW1
+Poller	RW4; 4415,9343 4507,9395 4517,9401
 #: note: Straßenbäume sind Platanen
 Verbundsteinpflaster, Wurzelhebungen	RW1; 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3565,9057
 Poller	RW3; 3565,9057 3521,9059
@@ -1476,7 +1480,7 @@ Verbundsteinpflaster mit deutlichen Unebenheiten	RW2; 3910,6949 3784,6985 3688,7
 #: note: früher infravelo-Projekt "detmolder-strasse"
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (nach den Bauarbeiten der Wasserbetriebe 2026)
 #: osm_watch: way id="963841938" version="11"
-#: last_checked: 2025-09-06
+#: last_checked: 2025-12-29
 #: check_frequency: 360d
 #: next_check: 2026-12-31
 	RW2; 4349,8118 4280,8188
@@ -2335,7 +2339,7 @@ provisorische Busspur	RW5; 10550,12096 10512,12039
 #: source_id: viz2021:13.409118,52.51693,15.01.2019,00:00 (bis 30.06.2023) (bis 07.07.2023) (bis 31.12.2023) (bis 30.08.2024) (bis 15.07.2024) (inaktiv)
 #: XXX Wie lange bleibt die provisorische Radspur oder Busspur Richtung Spittelmarkt erhalten?
 #: osm_watch: way id="81112790" version="27"
-#: last_checked: 2025-12-28
+#: last_checked: 2025-12-29
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-08-30
 # REMOVED (bis etwa Herbst/Winter 2024) --- provisorische Radspur	RW4; 10697,12303 10662,12255 10646,12234
@@ -2604,7 +2608,7 @@ eigentlich provisorische Radspuren per Gelbmarkierung, in der Praxis zugeparkt	R
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
 #: source_id: LMS-BR:310311/72 viz2021:13.33538,52.49928, (bis 27.02.2026)
 #: also_indoor: traffic (ex-B[minor])
-#: last_checked: 2025-11-24 (Tsp)
+#: last_checked: 2025-12-29
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
 #	RW3; 5764,10322 5808,10396
@@ -7116,7 +7120,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2025-12-14 (daf) vvv
+#: last_checked: 2025-12-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -8354,7 +8358,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="9"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-12-19
+#: last_checked: 2025-12-29
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -8523,7 +8527,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2025-12-05
+#: last_checked: 2025-12-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326

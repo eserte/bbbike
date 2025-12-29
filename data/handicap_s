@@ -42,7 +42,6 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 16853,3078
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3::inwork 15937,15134 16075,15069
-Rembrandtstr.: Engstelle an einer Hochbaustelle	q2::inwork 6355,7184 6234,7020
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
 Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
@@ -2735,6 +2734,8 @@ Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 (Putlitzstr. - Quitzowstr.): einige Fußgänger, flache Bordsteine	q2 6245,14194 6245,14204 6246,14228
 (Zechliner Str. - Allee-Center): einige Fußgänger	q2 16288,14555 16447,14558 16548,14575
+(A.T.U-Einfahrt - ALDI-Parkplatz): Parkplatzverkehr	q2 8568,9493 8562,9455 8525,9462 8490,9403 8500,9378 8499,9253
+zur A.T.U-Einfahrt: linken Gehweg benutzen	q4; 8595,9495 8568,9493
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2933,7 +2934,7 @@ Am Stadtpark (Steglitz): Fußgänger	q2 5658,4548 5746,4514 5821,4480
 Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5334,4857 5356,4892 5377,4901 5436,4983
 (Verlängerte Wallenbergstr.): Fußgänger, schmal	q3 4143,8501 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Fußgänger, Poller	q2 3751,8796 3858,8786
-Apeldorner Weg: Fußgänger, Bordstein	q2 3822,8718 3858,8786 3952,8980
+Apeldorner Weg: Fußgänger, Bordstein	q2 3822,8718 3858,8786 3951,8992
 Münstersche Str.: Fußgänger	q2 3840,9683 3698,9624
 (Hoffmannstr. - Puschkinallee): Fußgänger	q1 14077,10016 14011,9868 13999,9842
 August-Lindemann-Str.: Fußgänger	q3 14355,12752 14360,12792
