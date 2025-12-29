@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2014,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use Inline::MakeMaker;
@@ -79,6 +78,17 @@ $inlinedistpm:	$inlinepm
 EOF
 
     $rule;
+}
+
+# Required on some systems (seen on bookworm). Otherwise would fail with
+#
+#    cc: error: Inline.o: No such file or directory
+#
+# Reason unknown. Interestingly the other ext Makefile.PL are unaffected.
+sub MY::dynamic {
+    return <<'EOF';
+dynamic :: 
+EOF
 }
 
 
