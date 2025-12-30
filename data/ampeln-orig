@@ -129,10 +129,10 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
-#: last_checked: 2025-12-29 (traffic)
+#: last_checked: 2025-12-30 (traffic)
 #: check_frequency: 7d (traffic)
-#: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
-#: valid: -20251231
+# REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
+# REMOVED --- #: valid: -20251231
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
 # REMOVED --- #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
@@ -404,14 +404,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2025-12-26
+#: last_checked: 2025-12-30
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2025-12-26
+#: last_checked: 2025-12-30
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -488,7 +488,7 @@ Gürtelstr.	F::inwork 15153,11691
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
 #: last_checked: 2025-12-06 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2025-12-31 (VIZ-Verkehrsmeldung; laut DB bis 2027 (für valid genommen)) vvv
+#: next_check: 2027-12-31 (DB) vvv
 #: valid: -20271231 vvv
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork::alternating 21984,6317
 Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating  22000,6245
@@ -4470,7 +4470,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
 #: XXX noch provisorisch, wird verstetigt
-#: last_checked: 2025-12-23
+#: last_checked: 2025-12-30
 #: check_frequency: 30d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

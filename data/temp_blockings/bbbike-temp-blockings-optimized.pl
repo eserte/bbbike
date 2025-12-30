@@ -4791,7 +4791,7 @@ Alter Markt, Lüdersstr., Freiheit: Einbahnstraßenregelung	q4::inwork; 22495,4523
 #: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-12-18
+#: last_checked: 2025-12-30
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -6274,8 +6274,8 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2025-12-01 (traffic)
-#: check_frequency: 30d (traffic)
+#: last_checked: 2025-12-30 (traffic)
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
@@ -6443,8 +6443,8 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 4
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2025-12-18 vvv
-#: check_frequency: 14d (hohe Frequenz am Anfang) vvv
+#: last_checked: 2025-12-30 vvv
+#: check_frequency: 21d (hohe Frequenz am Anfang) vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden)
 Hönower Weg	2::inwork 17383,9719 17471,9688
@@ -6636,7 +6636,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
-#: osm_watch: way id="84960597" version="27"
+#: osm_watch: way id="84960597" version="28"
 #: last_checked: 2025-12-28
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
@@ -6896,7 +6896,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2025-09-17
+#: last_checked: 2025-12-28 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -6921,7 +6921,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
-#: osm_watch: way id="755340907" version="12"
+#: osm_watch: way id="755340907" version="13"
 #: osm_watch: note 4917519 1
 #: also_indoor: traffic (G,W)
 Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
@@ -7194,7 +7194,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        {
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr)
+#: source_id: LMS-BR:374530/72 viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr)
 #: osm_watch: way id="1303423090" version="6"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: last_checked: 2025-08-18 (mapillary)
@@ -7549,12 +7549,12 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
 #: note: auf finowkanal.info kein Endedatum
 #: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025, Ende Dezember 2025) Eröffnung Ende 2025
 #: osm_watch: way id="105827200" version="12"
-#: osm_watch: way id="105827213" version="11"
-#: osm_watch: way id="1328520022" version="1"
+#: osm_watch: way id="105827213" version="12"
+#: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-12-22 (research)
+#: last_checked: 2025-12-30 (osm)
 #: check_frequency: 30d
-#: next_check: 2025-12-31
+# REMOVED --- #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
 ',
          'from' => 1724611975,
@@ -8093,7 +8093,7 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
-#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026)
+#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -8103,7 +8103,8 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (ex-H,G)
 #: last_checked: 2025-11-24 (traffic)
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 Merler Weg	q4::inwork 18852,13269 19180,13219
 ',
          'from' => undef,
@@ -8421,12 +8422,12 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,re-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-12-28 (traffic) vvv
+#: last_checked: 2025-12-30 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
-#: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -8569,28 +8570,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LYNAR-2025
-#: source_id: viz2021:13.28978,52.48908,11.06.2025,11:00 (bis 18.07.2025) (inaktiv)
-#: source_id: viz2021:13.29003,52.48923, (bis 08.08.2025) (bis 25.08.2025) (bis 02.09.2025) (inaktiv)
-#: last_checked: 2025-12-17 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
-# REMOVED --- #: next_check: 2025-09-02 vvv
-# REMOVED (nicht mehr) --- #: also_indoor: traffic (G) --- Lynarstr.: Anbindung gesperrt	q4::inwork 2576,9132 2674,9111
-Charlottenbrunner Str. - Lynarstr.: Radweg Richtung Westen gesperrt	q4::inwork; 2706,9108 2674,9111
-Lynarstr. - Charlottenbrunner Str.: Engstellen am Radweg	q2::inwork; 2674,9111 2706,9108
-#: also_indoor: traffic (G,ex-T,ex-H)
-Auguste-Viktoria-Str.: Fahrbahn und Radweg Richtung Süden gesperrt	q4::inwork; 2708,9144 2706,9108
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4374,
-         'text' => 'Lynarstr./Auguste-Viktoria-Str.: Bauarbeiten, Engstellen und gesperrte Fahrbahnen, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9278,7 +9258,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        },
        {
          'data' => '#: next_check_id: UFER-2025
-#: last_checked: 2025-12-17
+#: last_checked: 2025-12-28 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-03-31 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8420,16365 8346,16283 8245,16064
@@ -9286,7 +9266,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
 ',
          'from' => undef,
          'id' => 4482,
-         'text' => 'Uferstr.: Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten möglich (Stand Mitte Dezember 2025: keine Bauarbeiten)',
+         'text' => 'Uferstr.: Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten möglich (Stand Ende Dezember 2025: keine Bauarbeiten)',
          'type' => 'handicap',
          'until' => undef
        },
