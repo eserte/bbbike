@@ -82,6 +82,7 @@ sub compute_config {
     $c{EDITWARNHTML}             = "<!-- DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl -->";
     $c{EDITWARNJS}               = "/* DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl */";
     $c{EDITWARNMAP}              = "## DO NOT EDIT. Created automatically using $FindBin::RealBin/doit.pl";
+    $c{USE_CRONTAB_LOGGER}       = 1;
 
     require BBBikeMapserver;
     $c{ALL_LAYERS} = join ' ', BBBikeMapserver::all_layers();
