@@ -634,11 +634,14 @@ LAYER
       FONT "lucida"
 [% IF SMALL_SCREEN -%]
 [%   IF expr == "W2" -%]
+      SIZE 7
       MINSIZE 7
 [%   ELSE -%]
+      SIZE 6
       MINSIZE 6
 [%   END -%]
 [% ELSE -%]
+      SIZE 8
       MINSIZE 8
 [% END -%]
       COLOR 0 0 255
@@ -707,8 +710,10 @@ LAYER
       TYPE truetype
       FONT "lucida"
 [% IF SMALL_SCREEN -%]
+      SIZE 6
       MINSIZE 6
 [% ELSE -%]
+      SIZE 8
       MINSIZE 8
 [% END -%]
       COLOR 0 0 255
