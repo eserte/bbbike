@@ -13,6 +13,7 @@
 
 use FindBin;
 use lib ("$FindBin::RealBin/../..", "$FindBin::RealBin/../../lib");
+use if $ENV{DOIT_IN_REMOTE}, lib => "/srv/www/bbbike-webserver/BBBike"; # XXX hack for remote doit
 use Doit;
 use Doit::Log;
 use Doit::Util qw(copy_stat);
@@ -265,6 +266,14 @@ sub action_httpd_conf {
     }
 }
 
+# not included in "action_all"
+sub action_copy_mapserver_config {
+    my($d, $target_ssh) = @_;
+    my $target_doit = $d->do_ssh_connect($target_ssh, as => 'root');
+    $target_doit->ssh->rsync_put("$FindBin::RealBin/mapserver.conf", '/tmp/mapserver.conf');
+    $target_doit->copy('/tmp/mapserver.conf', '/etc/mapserver.conf');
+}
+
 ######################################################################
 
 sub action_all {
@@ -327,7 +336,14 @@ for my $action (@actions) {
 	die "Action '$action' not defined";
     }
     no strict 'refs';
-    &$sub($d);
+    if ($sub eq 'action_copy_mapserver_config') {
+	if (!defined $target_ssh) {
+	    error "Action $action requires --target-ssh";
+	}
+	&$sub($d, $target_ssh);
+    } else {
+	&$sub($d);
+    }
 }
 
 __END__
