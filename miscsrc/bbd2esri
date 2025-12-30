@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2009,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2009,2016,2017,2025 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # quick hack
@@ -32,7 +31,7 @@ use Getopt::Long;
 use BBBikeUtil qw(rad2deg);
 
 use vars '$VERSION';
-$VERSION = '0.51';
+$VERSION = '0.52';
 
 my $outprefix;
 my $shapetype = "polyline";
@@ -177,7 +176,7 @@ sub create_shape_file {
 	    my $d = shift;
 	    my $rec = $create_record_sub->($d);
 	    push @rec_offset, $rec_offset;
-	    push @rec_length, length($rec);
+	    push @rec_length, length($rec) - 8; # dbx expects the record length *without* the header (which is 8 bytes)
 	    push @rec, $rec;
 	    $rec_offset += length($rec);
 	    push @dbf, create_dbf_record($d, -type => $type, -file => $file);
