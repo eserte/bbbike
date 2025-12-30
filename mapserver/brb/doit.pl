@@ -151,7 +151,7 @@ sub action_map_file {
 	    $d->system("$FindBin::RealBin/mkroutemap", '-force', '-scope', $scope, $dest, $dest_scope);
 	}
     }
-    $d->ln_nsf("$mapbasename.map", "$dest_dir/$mapbasename-brb.map");
+    $d->ln_nsf("$mapbasename-brb.map", "$dest_dir/$mapbasename.map");
 }
 
 sub action_html_files {
