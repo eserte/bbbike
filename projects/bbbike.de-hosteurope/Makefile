@@ -256,6 +256,14 @@ MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc-jessie
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
 .endif
 
+.ifdef TARGET
+.if ${TARGET} == bbbike-pps-bookworm
+PREPARE_MAPSERVER_DIST_MAIN_TARGET=prepare-mapserver-dist-main-doit
+.else
+PREPARE_MAPSERVER_DIST_MAIN_TARGET=prepare-mapserver-dist-main-make
+.endif
+.endif
+
 all:
 
 ######################################################################
@@ -634,7 +642,7 @@ prepare-bbbike-dist-old-bbbike-data:
 	    ${CURDIR}/BBBike/tmp/old-bbbike-data/
 
 prepare-mapserver-dist:	prepare-mapserver-dist-pre \
-			prepare-mapserver-dist-main \
+			${PREPARE_MAPSERVER_DIST_MAIN_TARGET} \
 			prepare-mapserver-dist-post
 
 prepare-mapserver-local-dist:	prepare-mapserver-dist-pre \
@@ -648,8 +656,14 @@ prepare-mapserver-dist-pre:
 	[ -d ${CURDIR}/$(HTDOCS)/mapserver/brb ] || \
 	    mkdir -p ${CURDIR}/$(HTDOCS)/mapserver/brb
 
+prepare-mapserver-dist-main-doit:
+	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
+	    ./doit.pl --dest-dir /tmp/mapserver-${TARGET} --host ${TARGET} --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --htdocs-dir /srv/www/bbbike-webserver/public --target-ssh ${TARGET}
+	cp -Rpf /tmp/mapserver-${TARGET}/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
+	rm -f ${CURDIR}/.not_rsyncable
+
 # XXX rename /tmp/radzeit_mapserver_dist, here and in mapserver/brb/Makefile
-prepare-mapserver-dist-main:
+prepare-mapserver-dist-main-make:
 # XXX   Copying and removing the localinc file here is an ugly hack
 	cp -pf etc/${MAPSERVER_BRB_LOCALINC} ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
 # XXX	need SERVER_NAME hack as cgi/bbbike-hosteurope-jessie.cgi.config otherwise does a fallback to the current hostname
