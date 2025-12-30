@@ -869,6 +869,9 @@ LAYER
 [% PROCESS CLASS_FERRY imgsuffix="_klein" minscale=75000 maxscale=150000 legend=0 -%]
 [% PROCESS CLASS_FERRY imgsuffix="" minscale=undef maxscale=75000 legend=1 -%]
 END
+[% ELSE -%]
+# ferry annotations for mapserver 7.x and newer are rendered later because
+# of layer stacking
 [% END -%]
 
 ### BEGIN AFTER FAEHREN_ANNOTATIONS
@@ -2600,6 +2603,42 @@ END
 
 ### BEGIN AFTER AMPELN
 ### END AFTER AMPELN
+
+[% IF !ENABLE_ANNOTATION_LAYERS -%]
+# Hack for mapserver 7.x+ which looks ugly --- ferry icon is rendered on every line point.
+# Better than nothing; alternative would be to compute another midpoint layer.
+LAYER
+  NAME "Fähren (Annotations)"
+  GROUP faehren
+  STATUS [% ON_FAEHREN %]
+  DATA faehren
+  TYPE POINT
+
+[% BLOCK CLASS_FERRY -%]
+  CLASS
+[% IF legend -%]
+    NAME "Fähren"
+[% END -%]
+    STYLE
+      COLOR 0 255 0
+      SYMBOL '[% IMAGE_DIR %]/ferry[% imgsuffix %].[% IMAGE_SUFFIX %]'
+    END
+    LABEL
+      TEXT ' '  # invisible label
+      MINFEATURESIZE 10
+      MINDISTANCE 150
+      POSITION CC
+      SIZE TINY
+      COLOR 0 128 192
+    END
+    [% IF maxscale %]MAXSCALEDENOM [% maxscale %][% END %]
+    [% IF minscale %]MINSCALEDENOM [% minscale %][% END %]
+  END
+[% END -%]
+[% PROCESS CLASS_FERRY imgsuffix="_klein" minscale=75000 maxscale=150000 legend=0 -%]
+[% PROCESS CLASS_FERRY imgsuffix="" minscale=undef maxscale=75000 legend=1 -%]
+END
+[% END -%]
 
 ### BEGIN ADDITIONAL LAYERS
 ### END ADDITIONAL LAYERS
