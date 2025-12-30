@@ -299,7 +299,8 @@ GetOptions(
 	   "htdocs-dir=s" => \my $htdocs_dir,
 	   "target-ssh=s" => \my $target_ssh,
 	   'www-user=s' => \my $www_user,
-	  ) or die "usage: $0 [--dry-run] [--dest-dir directory] [--host host] [--location-style vhost|bbbike] [--bbbike-dir /path...] [--htdocs-dir /path...] [--target-ssh user\@host] [--www-user username] action ...\n";
+	   'debug!' => \my $debug,
+	  ) or die "usage: $0 [--dry-run] [--debug] [--dest-dir directory] [--host host] [--location-style vhost|bbbike] [--bbbike-dir /path...] [--htdocs-dir /path...] [--target-ssh user\@host] [--www-user username] action ...\n";
 
 if (!defined $dest_dir) {
     error "Currently defining --dest-dir is mandatory!";
@@ -324,6 +325,10 @@ compute_config($d, $target_doit,
 	       HTDOCS_DIR => $htdocs_dir,
 	       WWW_USER => $www_user,
 	      );
+if ($debug) {
+    require Data::Dumper;
+    info 'DEBUG: ' . Data::Dumper->new([\%c],[qw(config)])->Indent(1)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump;
+}
 
 my @actions = @ARGV;
 if (!@actions) {
