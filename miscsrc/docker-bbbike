@@ -34,7 +34,7 @@ use BBBikeUtil qw(save_pwd2 bbbike_root);
 my %codename_to_packagerepos;
 # list generated with following command on mydebs system:
 #     perl -ne 'print " $1" if /Codename: (\S+)/' /srv/www/debian-repo/conf/distributions ; echo
-for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trusty xenial bionic buster focal bullseye bookworm)) {
+for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trusty xenial bionic buster focal bullseye bookworm trixie)) {
     $codename_to_packagerepos{$codename}->{'mydebs.bbbike.de'} = 1;
 }
 for my $codename (qw(bionic focal jammy noble)) {
