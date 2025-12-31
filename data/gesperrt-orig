@@ -4660,7 +4660,7 @@ Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,1067
 #: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
 #: priority: #C
 #: osm_watch: note 4395422 3
-#: last_checked: 2025-12-17
+#: last_checked: 2025-12-29 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
 #: next_check: 2026-06-30 (BA, entwicklungsstadt)
@@ -4781,6 +4781,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 # REMOVED (nicht mehr gesperrt) --- #: next_check_id: U6-2022 --- #: XXX Ist hier noch immer gesperrt? --- #: last_checked: 2025-06-06 (okas) --- #: check_frequency: 120d --- # REMOVED --- #: next_check: 2026-10-01 --- #: next_check: 2025-07-01 --- Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 # 
 #: next_check_id: U6-2022
+#: osm_watch: way id="1036123062" version="6"
 #: XXX Ist hier noch immer eine Einbahnstraße?
 #: last_checked: 2025-09-03
 #: check_frequency: 120d
@@ -5050,7 +5051,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2025-12-29 vvv
+#: last_checked: 2025-12-31 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

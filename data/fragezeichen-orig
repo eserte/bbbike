@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-12-29
+#: last_checked: 2025-12-31
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -545,7 +545,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: osm_watch: way id="4632077" version="36"
 #: osm_watch: note 4459974 3
 #: XXX infravelo-Planung: nördlich Thulestr. geschützte Radfahrstreifen, südlich ohne Protektion; außerdem Umbau der Kreuzung Stahlheimer Straße/Wisbyer Straße, so dass auch eine "legale" Fahrtmöglichkeit von Süd nach Nord besteht
-#: last_checked: 2025-09-17
+#: last_checked: 2025-12-29 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (infravelo)
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
@@ -2617,7 +2617,7 @@ Tietzenweg: geplante Fahrradstraße, evtl. Abfräsung des Kopfsteinpflasters	?::pr
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzi5gejmok2i
 #: by: https://www.infravelo.de/projekt/togostrasse/ (3. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 1. Quartal 2026)
 #: by: https://entwicklungsstadt.de/wedding-arbeiten-an-neuer-fahrradstrasse-in-der-togostrasse-haben-begonnen/
-#: source_id: LMS-BR:384501/72 viz2021:13.33499,52.55607,23.09.2025,07:00 (zwischen Otawistr. und Transvaalstr. (?), bis 30.11.2025) (bis 31.12.2025)
+#: source_id: LMS-BR:384501/72 viz2021:13.33499,52.55607,23.09.2025,07:00 (zwischen Otawistr. und Transvaalstr. (?), bis 30.11.2025) (bis 31.12.2025) (inaktiv)
 #: osm_watch: way id="597289462" version="17"
 #: osm_watch: way id="4605293" version="40"
 #: osm_watch: note 3954758 11
@@ -3622,7 +3622,7 @@ Radweg neben der BAB100: genaue Lage?	?::inwork 14291,7033 14233,6923 14239,6875
 #: check_frequency: 270d
 Wiesbadener Str./Sodener Str.: Zebrastreifen geplant	?::projected 3677,7363 3703,7324 3744,7274
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (erwähnt)
-#: last_checked: 2025-07-06
+#: last_checked: 2025-08-01 (orthofotos)
 #: check_frequency: 180d
 Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,10144 12048,10097 12073,10050
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (noch keine Mittelzusage)
@@ -8283,7 +8283,7 @@ Hennickendorf - B1/Rüdersdorf: Verlegung der Landesstraße, Bau eines Radweges	?:
 #: by: https://www.o-sp.de/download/lbvbrandenburg/189017
 #: by: https://www.nordkurier.de/regional/uckermark/templin-hofft-auf-grossen-radweg-nach-prenzlau-2060632
 #: by: https://www.nordkurier.de/regional/uckermark/faehrkrugbruecke-wird-erst-ab-2025-gebaut-1575714 (zwischen 2025 und 2027)
-#: source_id: LS/721-E/20/088 (bis 31.12.2024) (bis 31.12.2025)
+#: source_id: LS/721-E/20/088 (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
 #: osm_watch: way id="245862156" version="10"
 #: XXX der Radweg soll auf der Nordseite weitergeführt werden, und gleich hinter der Einmündung enden
 #: next_check: 2025-12-31 (Verkehrsmeldung)
@@ -9967,6 +9967,7 @@ Käthe-Pietschker-Str.: wo befindet sich die Straße? Qualität?	? -16068,6548 -159
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_48_3491_3534_online.pdf (Grundstücksnummerierungen)
 #: by: https://entwicklungsstadt.de/koepenick-wohnprojekt-marienufer-und-wiederbelebung-der-villa-bolle/ (Fertigstellung 2026)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-koepenick-quartier-am-marienufer-nimmt-gestalt-an-das-kosten-die-wohnungen-li.2346672
+#: by: https://www.deutsche-wohnen.com/wohnen/quartiere-siedlungen/marienufer
 #: XXX an der nördlichen Grenze verläuft eine Verbundsteinpflastergehweg in O-W-Richtung, noch mit Bauzaun an der Wendenschloßstr. und 230m weiter auch
 #: XXX wird zukünftig entstehen, evtl. entsteht noch ein Uferweg vvv
 #: XXX fehlen alle bei Berlin.coords.data, PLZ=12557 (laut DPAG-Mitteilungsblatt + LOR) vvv

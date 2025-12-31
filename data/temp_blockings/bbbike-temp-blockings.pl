@@ -44727,7 +44727,7 @@ EOF
      },
      { from  => 1717279200, # 2024-06-02 00:00
        until => undef, # $isodate2epoch->("2025-12-31 23:59:59"), # 1748901600, # 2025-06-03 00:00
-       text  => 'Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle gesperrt, voraussichtlich bis Ende 2025',
+       text  => 'Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle gesperrt, voraussichtlich bis Ende 2025, evtl. wird die Sperrung verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: A117-2024
@@ -50046,7 +50046,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-28
+#: last_checked: 2025-12-31
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50584,16 +50584,20 @@ EOF
 EOF
      },
      { from  => 1759615200, # 2025-10-05 00:00
-       until => $isodate2epoch->("2025-12-31 23:59:59"),
-       text  => 'Auf dem Oktogon/Hermann-Dorner-Allee: mögliche Einschränkungen und Sperrungen wegen Bauarbeiten, vom 6.10.2025 bis voraussichtlich Ende Dezember 2025',
+       until => undef, # $isodate2epoch->("2025-12-31 23:59:59"),
+       text  => 'Auf dem Oktogon/Hermann-Dorner-Allee: mögliche Einschränkungen und Sperrungen wegen Bauarbeiten, vom 6.10.2025 bis voraussichtlich Ende Dezember 2025, evtl. werden die Bauarbeiten verlängert',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: HERMANNDORNERALLEE-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1603361.php (Bauarbeiten 6. Oktober 2025 - Dezember 2025)
+#: also_indoor: traffic (no-G,T,H,no-W) vvv
+#: last_checked: 2025-12-31 (traffic) vvv
 #: next_check: 2025-12-31 (BA-Seite, infravelo) vvv
 Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
 Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::inwork; 18445,2642 18374,2971
 #: next_check ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
 EOF
      },
      { from  => undef, # 
@@ -51380,11 +51384,11 @@ EOF
 EOF
      },
      { from  => 1765432800, # 2025-12-11 07:00
-       until => 1767196800, # 2025-12-31 17:00
+       until => 1767197522, # 1767196800, # 2025-12-31 17:00
        text  => 'Bettinastr.: Bauarbeiten zwischen Fontanestr. und Douglasstr., evtl. sind auch Radfahrer von der Sperrung betroffen, vom 12.12.2025 07:00 bis 31.12.2025 17:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:392993/72 viz2021:13.263135,52.485936,12.12.2025,07:00 (bis 31.12.2025)
+#: source_id: LMS-BR:392993/72 viz2021:13.263135,52.485936,12.12.2025,07:00 (bis 31.12.2025) (inaktiv)
 	q4::inwork 759,8712 926,8752
 EOF
      },

@@ -1000,11 +1000,15 @@ Kreisverkehr	Roundabout -7202,-4017
 #: ignore: vvv
 Kreuzbergstr. Richtung Westen vor Großbeerenstr.	CS; 9082,9338 8970,9323
 # 
-#: note: 2025-12-17 noch nicht eingeschaltet gewesen vvv
+#: note: 2025-12-29 noch nicht eingeschaltet gewesen vvv
 Stargarder Str. Richtung Osten vor Prenzlauer Allee	CS; 11682,15397 11852,15281
 Stargarder Str. Richtung Westen vor Pappelallee	CS; 11407,15595 11290,15669
 Stargarder Str. Richtung Westen vor Schönhauser Allee	CS; 11158,15739 11086,15772 10953,15787
 Stargarder Str. Richtung Osten vor Pappelallee	CS; 11086,15772 11158,15739 11290,15669
+#: note ^^^
+# 
+#: note: 2025-12-29 noch nicht eingeschaltet gewesen vvv
+Schönhauser Allee Richtung Norden vor Stargarder Str.	CS; 10925,15581 10941,15697 10953,15787
 #: note ^^^
 # 
 Invalidenstr. Richtung Osten vor Scharnhorststr.	CS; 8358,13562 8453,13611
@@ -2004,6 +2008,7 @@ Nußbaumallee: nicht ausgeschildert	CP2; 1788,12252 1732,12224
 #: by: https://www.berliner-woche.de/staaken/c-bauen/am-eidechsenweg-in-staaken-entstehen-140-wohnungen_a414788 (bis Ende 2026)
 #: by: https://entwicklungsstadt.de/baubeginn-in-staaken-138-neue-wohnungen-60-prozent-gefoerdert/ (Fertigstellung: zweites Quartal 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/vermietung-ab-sofort-am-ehemaligen-flugplatz-berlin-staaken-werden-weitere-wohnungen-fertig-14897003.html (ab März 2026 bezugsfertig)
+#: by: https://www.entwicklungsstadt.de/neubau-in-staaken-wbm-startet-vermietung-von-wohnungen-am-eidechsenweg/
 #: osm_watch: way id="924335497" version="4"
 #: osm_watch: way id="1442705218" version="1"
 #: add_fragezeichen: Ist der Eidechsenweg bereits ausgeschildert? vvv
