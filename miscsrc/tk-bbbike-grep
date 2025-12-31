@@ -409,6 +409,8 @@ sub get_bbbike_icon {
 
 sub url_normalizations {
     my $url = shift;
+    # should be first
+    $url =~ s{https://archive\.[a-z]+/o/[^/]+/}{};
     # Mostly for forum URLs, to remove the current page/article indication from the URL.
     $url =~ s{(https://www.deutsches-architekturforum.de/thread/\d+-).*}{$1};
     $url =~ s{(https://www.architektur-urbanistik.berlin/index.php\?threads/.*?/).*}{$1};
