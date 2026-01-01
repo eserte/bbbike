@@ -160,10 +160,10 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/kreuzungsbereich-zum-suedhafen/ (voraussichtlicher Baubeginn: Ende 2026)
 #: osm_watch: way id="4609212"  version="18"
 #: osm_watch: way id="25113713" version="24"
-#: osm_watch: way id="4752742"  version="17"
-#: osm_watch: way id="4752743"  version="21"
-#: osm_watch: way id="8049679"  version="26"
-#: osm_watch: way id="8049678"  version="19"
+#: osm_watch: way id="4752742"  version="18"
+#: osm_watch: way id="4752743"  version="23"
+#: osm_watch: way id="8049679"  version="27"
+#: osm_watch: way id="8049678"  version="20"
 #: last_checked: 2025-04-16
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 540d
@@ -5726,7 +5726,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: osm_watch: note 4969496 3
 #: XXX Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
-#: last_checked: 2025-12-30 vvv
+#: last_checked: 2026-01-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 15019,10803
@@ -9448,7 +9448,7 @@ Bad Belzig: Straßennamen? Qualität? Einbahnstraßen auch für Radfahrer gültig?	? 
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/planckstrasse/
 #: osm_watch: note 3954448 15
 #: osm_watch: note 3954746 4
-#: osm_watch: way id="195397561" version="22"
+#: osm_watch: way id="195397561" version="23"
 #: last_checked: 2025-12-22
 # REMOVED (während der Gleisbauarbeiten 30d) --- #: check_frequency: 14d
 #: check_frequency: 30d
@@ -9768,6 +9768,11 @@ Friedenstr.: Umbau der RVA (Protektion), Mittelinsel am Knick Platz der Vereinte
 #: XXX Wird es einen Anschluss an den Ankerweg geben oder der Uferweg Richtung Grünauer Brücke fortgesetzt?
 #: next_check: 2027-12-31
 Verlängerung des Uferwegs?	? 22239,2644 22197,2612
+# 
+#: next_check_id: NAGASAKIPLATZ-2026
+#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
+#: next_check: 2027-03-31
+Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Ampelanlage wird wohl verschoben	? -8483,-1530 -8469,-1541 -8447,-1553
 # 
 #: section ^^^
 #: ignore ^^^
@@ -10417,10 +10422,10 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen, Sackgasse	?::projected -
 #: source_id: viz2021:13.225913,52.551143,24.09.2024,09:00 (Fernwärmeleitungsbau, bis 18.11.2024) (bis 31.12.2024) (vorfristig inaktiv)
 #: source_id: viz2021:13.22743,52.54953,24.09.2024,09:00 (bis 18.11.2024) (inaktiv)
 #: osm_watch: way id="830632211" version="7"
-#: XXX eine baldige Anbindung an die Rhenaniastr. erscheint unrealistisch, siehe Orthofotos 2025
+#: XXX eine baldige Anbindung an die Rhenaniastr. erscheint unrealistisch, siehe Orthofotos Frühjahr+August 2025
 #: XXX bei DTAG 12/2025 wird eine neue Straße "Am Salzhof" (PLZ 13599) erwähnt, ist das hier?
 #: last_checked: 2025-09-04 (daf)
-#: check_frequency: 120d
+#: check_frequency: 150d
 #: next_check: 2026-12-31 (bw)
 # REMOVED --- #: next_check: 2025-04-05 (Amtsblatt: Benennung einer Straße)
 "Waterkant": entstehen hier für Radfahrer nutzbare Wege?	?::inwork -1762,15925 -1552,16043 -1493,16135
@@ -12271,6 +12276,7 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: by: https://entwicklungsstadt.de/bundeswehr-stoppt-zivile-nutzung-des-ehemaligen-flughafens-tegel/
 #: by: https://www.tagesspiegel.de/berlin/plane-fur-urban-tech-republic-sind-nicht-betroffen-bundeswehr-will-standort-in-tegel-nord-weiter-nutzen-14677292.html
 #: by: https://www.entwicklungsstadt.de/tegel-berlin-investiert-370-millionen-euro-in-neues-zukunftsquartier/
+#: by: https://www.tagesspiegel.de/berlin/110000-gefluchtete-wurden-in-tegel-betreut-die-grosste-fluchtlingsnotunterkunft-deutschlands-ist-zu--so-geht-es-weiter-15092734.html
 #: XXX werden die alten Zufahrtstraßen während der Bauarbeiten noch benutzbar sein?
 #: last_checked: 2025-04-16
 #: check_frequency: 720d

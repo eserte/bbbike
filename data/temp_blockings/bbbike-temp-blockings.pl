@@ -35791,13 +35791,16 @@ EOF
        until => undef, # $isodate2epoch->("2025-10-11 20:00:00"), # 1735998265, # undef, # $isodate2epoch->("2024-08-31 18:00:00"), # 1672527600, # 2023-01-01 00:00
 #      text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt', # vom 01.01.2022 bis 31.08.2024',
 #      text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, voraussichtlich bis Mitte Oktober 2025',
-       text  => 'Waitzstr.: Baustelle, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+#      text  => 'Waitzstr.: Baustelle, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+       text  => 'Waitzstr.: Baustelle, Einbahnstraßenregelung, voraussichtlich bis Juni 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.306069,52.502061,01.01.2022,06:00 (mittlerweile inaktiv) (bis 31.12.2023) (inaktiv)
 #: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
 #: source_id: viz2021:13.30605,52.50146,15.07.2025,07:00 (bis 11.10.2025) (inaktiv)
 #: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
+#: source_id: LMS-BR:394765/72 viz2021:13.305676,52.501251,01.01.2026,07:00 (bis 30.06.2026)
+#: source_id: LMS-BR:394766/72 viz2021:13.30605,52.50146,01.01.2026,07:00 (benachbarte Lewishamstr., bis 30.06.2026)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084 (altes Bauvorhaben von ~2021)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-lewishamstra%C3%9Fe-4-ehem-hotel-panorama-adenauer-platz.1193/page-3#post-26359
@@ -35808,11 +35811,12 @@ EOF
 # REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
 #	2::inwork 3731,10640 3764,10580
 # REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
-#: note: laut rbb bis 11.10.2025
 # REMOVED (frühere Baustelle) ---	q4::inwork 3731,10640 3764,10580
 # REMOVED (hier nicht, explizit als Sackgasse offen) --- Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
+#: note: laut rbb Sperrungen in beiden Richtungen
 #: also_indoor: traffic (none)
 #: last_checked: 2025-11-29 (architektur-urbanistik)
+#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 EOF
      },
@@ -40798,8 +40802,8 @@ Baustellenbereich zwischen Bahnhofstr. und Borgmannstr.	q4::inwork 22531,5871 22
 # REMOVED --- #: add_fragezeichen ^^^
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-26 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-07-18 18:30:00") },
+     { from  => $isodate2epoch->("2025-06-26 00:00:00"), # do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-26 00:00:00") }, # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-07-18 18:30:00"), # do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-07-18 18:30:00") },
 #      text  => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 16. Juni 2023 bis 28. Juli 2023',
 #      text  => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 28. Juni 2024 bis 19. Juli 2024',
        text  => 'Niederbarnimstr.: zwischen Frankfurter Allee und Boxhagener Str. freitags zwischen 15:00 und 19:00 Uhr temporäre Spielstraße, 27. Juni 2025 bis 18. Juli 2025',
@@ -49494,7 +49498,7 @@ EOF
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2025-12-19 (traffic)
+#: last_checked: 2026-01-01 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -50378,7 +50382,7 @@ EOF
      },
      { from  => undef,
        until => undef, # XXX
-       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Mitte Dezember 2025: Absperrung existiert)',
+       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Ende Dezember 2025: Absperrung existiert)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
@@ -50386,10 +50390,11 @@ EOF
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
 #: osm_watch: note 4801950 6
 #: osm_watch: way id="53168806" version="7"
+#: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2025-12-17
-#: check_frequency: 14d
+#: last_checked: 2026-01-01 (osm)
+#: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
      },
@@ -51000,7 +51005,7 @@ EOF
        text  => 'Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
+#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026) (vorfristig inaktiv)
 # REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
 #: last_checked: 2025-11-21
@@ -51128,11 +51133,11 @@ EOF
 #: by: https://iq-spaces.com/de/berlin-mitte (iQ Space)
 #: by: http://www.deal-magazin.com/news/148507/Leuchtturmprojekt-fuer-Biomedizin-WOLFF--MUeLLER-baut-iQ-space (Fertigstellung April 2028)
 #: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
-#: osm_watch: way id="1080985512" version="13"
-#: osm_watch: way id="1409889274" version="10"
+#: osm_watch: way id="1080985512" version="14"
+#: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-31 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
@@ -51418,6 +51423,19 @@ EOF
 #: note: vermutete morgendliche Öffnung um 8h 
 #: tempex: (mo-fr T00:00-T08:00),(mo-fr T20:00-T23:59),(sa T00:00-T08:00),(sa T16:00-T23:59),su,holiday
 	2::temp 8562,9455 8568,9493
+EOF
+     },
+     { from  => $isodate2epoch->("2026-01-05 00:00:00"),
+       until => $isodate2epoch->("2027-03-31 23:59:59"),
+       text  => 'Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Umbauarbeiten im Kreuzungsbereich, evtl. sind auch Radfahrer von den Sperrungen betroffen, 06.01.2026 bis 31.03.2027',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: NAGASAKIPLATZ-2026
+#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
+#: note: hier möglicherweise ein kürzerer Abschnitt?
+August-Bebel-Str.	q3::inwork -8444,-1691 -8469,-1541
+August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
+Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
 EOF
      },
     );

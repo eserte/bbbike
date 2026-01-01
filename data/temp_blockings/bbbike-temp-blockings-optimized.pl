@@ -2823,7 +2823,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3344,7 +3344,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Dezember 8.00 - 16.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Januar 8.00 - 16.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -3898,72 +3898,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SILVESTER-YYYY
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
-#: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
-#: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1873699127751737404
-#: by: https://pbs.twimg.com/media/GgC3OOnXEAE6uNt?format=jpg&name=large (Sperrung sogar ab Bachstr./Tiergartenstr./Lutherbrücke, auch für den Radverkehr? was ist mit dem westlichen Tiergarten?)
-#: by: https://www.morgenpost.de/berlin/article409432854/veranstalter-sagt-silvester-party-am-brandenburger-tor-ab.html (2025 keine Silvester-Party?)
-#: by: https://www.tagesspiegel.de/berlin/kein-geld-vom-land-berlin-silvesterparty-am-brandenburger-tor-steht-vor-dem-aus-13973120.html
-#: by: https://www.morgenpost.de/berlin/article410080861/doch-silvester-am-brandenburger-tor-wegner-macht-hoffnung.html
-#: by: https://www.morgenpost.de/berlin/article410229476/nach-silvesterparty-absage-in-berlin-nun-gibt-es-neue-plaene.html
-#: by: https://www.entwicklungsstadt.de/silvester-2026-berlin-feiert-mit-neuem-konzept-am-brandenburger-tor/
-#: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
-#: source_id: viz2021:13.349991,52.514511,31.12.2024,06:00 (bis 01.01.2025) (inaktiv)
-#: note: am 2023-12-29 mittags war der östliche Tiergarten komplett umzäunt, aber die Wege waren noch offen
-Pariser Platz	2::temp 8722,12268 8637,12258
-Straße des 17. Juni	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 7031,12320 7288,12156 7383,12095
-	2::temp 7875,12363 7836,12247 7822,12201 7816,12150
-	2::temp 8400,12417 8391,12389 8344,12221
-	2::temp 8354,12416 8391,12389 8546,12279
-	2::temp 8775,12457 8804,12280 8722,12268
-# umschließende Fläche: 6892,12023 6844,11993 6815,11952 7436,11532 7576,11534 7682,11549 7851,11602 8112,11685 8224,11710 8476,11797 8544,11861 8571,12154 8498,12198 8470,12216 8018,12162 7780,12127 7283,12068
-	2::temp 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
-	2::temp 7823,12120 7832,12036 7822,11952 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7813,11589 7816,11571
-	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7664,11597 7711,11558 7713,11553 7717,11540
-	2::temp 8210,11775 8221,11876 8221,11885 8215,12156
-	2::temp 8210,11775 8244,11878 8327,12174
-	2::temp 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742
-	2::temp 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
-	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566
-	2::temp 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
-	2::temp 7600,11513 7621,11541 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099
-	2::temp 8005,11627 8006,11648 8014,11753 8016,11770 8020,11937 8022,12016
-	2::temp 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
-	2::temp 8034,12093 8049,12140
-	2::temp 8167,11865 8132,11910
-	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
-	2::temp 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-	2::temp 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197
-	2::temp 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
-	2::temp 7373,11594 7362,11561 7359,11538 7356,11517
-	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
-Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156
-',
-         'from' => 1767186000,
-         'id' => 2767,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 5,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              28,
-                              'months',
-                              12,
-                              'start',
-                              '2023-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2025 bis 01.01.2026',
-         'type' => 'gesperrt',
-         'until' => 1767243600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4656,7 +4591,21 @@ Alter Markt, Lüdersstr., Freiheit: Einbahnstraßenregelung	q4::inwork; 22495,4523
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1430940.php (Saisonstart am 3. April 2024)
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-umwelt/saison-beginnt-in-boeckhstrasse_a411440
+	q4::temp::play 11175,9882 11197,9894 11411,9810
+',
+         'from' => 1774908000,
+         'id' => 3146,
+         'recurring' => 1,
+         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
+         'type' => 'handicap',
+         'until' => 1790784000
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
@@ -4863,7 +4812,21 @@ Alter Markt, Lüdersstr., Freiheit: Einbahnstraßenregelung	q4::inwork; 22495,4523
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
+#: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-ist-temporaere-spielstrasse_a392084 (mittlerweile von Mai bis September)
+	q4::temp::play 10670,14116 10716,14195 10739,14228
+',
+         'from' => 1777586400,
+         'id' => 3254,
+         'recurring' => 1,
+         'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.5. bis 30.9. (außer Schulferien)',
+         'type' => 'handicap',
+         'until' => 1790784000
+       },
        undef,
        undef,
        undef,
@@ -5172,17 +5135,98 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        undef,
        undef,
        undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
+#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
+#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/neun-spielstrassen-im-sommer_a343397
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10412 (allgemein zu temporären Spiel- und Nachbarschaftsstraßen)
+# REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-24
+	q4::temp::play 14798,12502 15005,12443
+',
+         'from' => 1780178400,
+         'id' => 3368,
+         'recurring' => 1,
+         'text' => 'Bänschstr.: zwischen Voigtstr. und Pettenkoferstr. sonntags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 31.08., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1788192000
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+# REMOVED --- #: XXX wird diese Spielstraße verstetigt? --- #: last_checked: 2021-05-13 --- #: next_check: 2022-05-17
+	q4::temp::play 13273,12902 13371,12694
+',
+         'from' => 1777500000,
+         'id' => 3369,
+         'recurring' => 1,
+         'text' => 'Richard-Sorge-Str.: zwischen Mühsamstr. und Straßmannstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1790784000
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+# REMOVED --- #: XXX Spielstraße wurde möglicherweise verstetigt; genaue Geltungszeiten? --- #: last_checked: 2021-05-12 --- #: next_check: 2022-05-12
+	q4::temp::play 14468,11203 14531,11142
+',
+         'from' => 1777500000,
+         'id' => 3370,
+         'recurring' => 1,
+         'text' => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1790785800
+       },
+       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+# REMOVED (ja, Schilder hängen) --- #: XXX wird diese Spielstraße verstetigt? --- #: next_check: 2022-05-31
+	q4::temp::play 12286,9739 12398,9938
+',
+         'from' => 1780178400,
+         'id' => 3372,
+         'recurring' => 1,
+         'text' => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
+         'type' => 'handicap',
+         'until' => 1790784000
+       },
        undef,
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
+#: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
+# REMOVED (done) --- #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen --- #: next_check: 2022-09-15
+	q4::temp::play 11917,9663 12074,9689
+',
+         'from' => 1778796000,
+         'id' => 3377,
+         'recurring' => 1,
+         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+         'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
+         'type' => 'handicap',
+         'until' => 1789488000
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
+#: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
+# REMOVED (done) --- #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen --- #: next_check: 2022-09-15
+	q4::temp::play 13038,8394 12856,8344
+',
+         'from' => 1778796000,
+         'id' => 3378,
+         'recurring' => 1,
+         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+         'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
+         'type' => 'handicap',
+         'until' => 1789488000
+       },
        undef,
        undef,
        undef,
@@ -5385,6 +5429,8 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
 #: source_id: viz2021:13.30605,52.50146,15.07.2025,07:00 (bis 11.10.2025) (inaktiv)
 #: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
+#: source_id: LMS-BR:394765/72 viz2021:13.305676,52.501251,01.01.2026,07:00 (bis 30.06.2026)
+#: source_id: LMS-BR:394766/72 viz2021:13.30605,52.50146,01.01.2026,07:00 (benachbarte Lewishamstr., bis 30.06.2026)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084 (altes Bauvorhaben von ~2021)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-lewishamstra%C3%9Fe-4-ehem-hotel-panorama-adenauer-platz.1193/page-3#post-26359
@@ -5395,16 +5441,17 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 # REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
 #	2::inwork 3731,10640 3764,10580
 # REMOVED (hier keine Sperrung) ---	2::inwork 3764,10580 3883,10585
-#: note: laut rbb bis 11.10.2025
 # REMOVED (frühere Baustelle) ---	q4::inwork 3731,10640 3764,10580
 # REMOVED (hier nicht, explizit als Sackgasse offen) --- Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
+#: note: laut rbb Sperrungen in beiden Richtungen
 #: also_indoor: traffic (none)
 #: last_checked: 2025-11-29 (architektur-urbanistik)
+#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 ',
          'from' => 1752605472,
          'id' => 3496,
-         'text' => 'Waitzstr.: Baustelle, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+         'text' => 'Waitzstr.: Baustelle, Einbahnstraßenregelung, voraussichtlich bis Juni 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5658,6 +5705,20 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
          'type' => 'gesperrt',
          'until' => undef
        },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+#: by: http://spielstraßen.de/uebersicht.php#kreu
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php (2025)
+# REMOVED --- #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05. --- #: last_checked: 2024-03-17 --- #: next_check: 2024-05-01
+	q4::temp::play 12822,10487 12897,10439
+',
+         'from' => 1779400800,
+         'id' => 3552,
+         'recurring' => 1,
+         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
+         'type' => 'handicap',
+         'until' => 1790440200
+       },
        undef,
        undef,
        undef,
@@ -5675,8 +5736,19 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: url: https://www.wuhlheide.de/programm
+#: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03, 2024-06-09
+#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023; Nachtrag: am 17. September 2023 gab es wohl auch eins
+#: note: 2024 gibt es Konzerttermine zwischen dem 22. Juni 2024 und 14. September 2024
+	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
+',
+         'from' => 1781992800,
+         'id' => 3570,
+         'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis Mitte September',
+         'type' => 'gesperrt',
+         'until' => 1789401600
+       },
        {
          'data' => '#: by: Gonsolo & osm
 	2::temp -8489,-2220 -8574,-2204 -8653,-2195
@@ -7083,7 +7155,17 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php
+	q4::temp::play 9570,10566 9556,10666
+',
+         'from' => 1777932000,
+         'id' => 4046,
+         'recurring' => 1,
+         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 6. Mai bis zum 14. Oktober (außer Sommerferien) ',
+         'type' => 'gesperrt',
+         'until' => 1791995400
+       },
        undef,
        undef,
        undef,
@@ -8581,7 +8663,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2025-12-19 (traffic)
+#: last_checked: 2026-01-01 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -8983,15 +9065,16 @@ Spektegrabensteg	2::inwork -7228,15933 -7243,15943
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
 #: osm_watch: note 4801950 6
 #: osm_watch: way id="53168806" version="7"
+#: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2025-12-17
-#: check_frequency: 14d
+#: last_checked: 2026-01-01 (osm)
+#: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 ',
          'from' => undef,
          'id' => 4444,
-         'text' => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Mitte Dezember 2025: Absperrung existiert)',
+         'text' => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Ende Dezember 2025: Absperrung existiert)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9281,7 +9364,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        undef,
        undef,
        {
-         'data' => '#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026)
+         'data' => '#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026) (vorfristig inaktiv)
 # REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
 #: last_checked: 2025-11-21
@@ -9385,11 +9468,11 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 #: by: https://iq-spaces.com/de/berlin-mitte (iQ Space)
 #: by: http://www.deal-magazin.com/news/148507/Leuchtturmprojekt-fuer-Biomedizin-WOLFF--MUeLLER-baut-iQ-space (Fertigstellung April 2028)
 #: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
-#: osm_watch: way id="1080985512" version="13"
-#: osm_watch: way id="1409889274" version="10"
+#: osm_watch: way id="1080985512" version="14"
+#: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2025-12-31 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
@@ -9570,6 +9653,20 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
          'text' => 'A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: NAGASAKIPLATZ-2026
+#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
+#: note: hier möglicherweise ein kürzerer Abschnitt?
+August-Bebel-Str.	q3::inwork -8444,-1691 -8469,-1541
+August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
+Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
+',
+         'from' => 1767567600,
+         'id' => 4519,
+         'text' => 'Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Umbauarbeiten im Kreuzungsbereich, evtl. sind auch Radfahrer von den Sperrungen betroffen, 06.01.2026 bis 31.03.2027',
+         'type' => 'handicap',
+         'until' => 1806530399
        }
      
 );
