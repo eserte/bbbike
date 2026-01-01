@@ -2640,6 +2640,35 @@ LAYER
 END
 [% END -%]
 
+[% IF !ENABLE_ANNOTATION_LAYERS -%]
+LAYER
+  NAME "Straﬂen (Annotations)"
+  GROUP strassen
+  STATUS [% ON_STRASSEN %]
+  DATA strassen
+  TYPE LINE
+
+  LABELITEM 'STRNR'
+[% BLOCK LABEL_STRNR -%]
+  CLASS
+    LABEL
+      [% IF expression %]EXPRESSION [% expression %][% END %]
+      TYPE truetype
+      FONT "lucida"
+      SIZE 6
+      COLOR [% textcolor %]
+      STYLE
+        SYMBOL 'strnrbox'
+        COLOR [% color %]
+        SIZE 10
+      END
+    END
+  END
+[% END -%]
+[% PROCESS LABEL_STRNR expression="/^B/" color=COLOR_YELLOW textcolor=COLOR_BLACK -%]
+END
+[% END -%]
+
 ### BEGIN ADDITIONAL LAYERS
 ### END ADDITIONAL LAYERS
 
