@@ -618,7 +618,7 @@ sub count_output {
 
         next if $ignore_localrequests && localrequest($_);
 
-        elsif (m,"GET /\S+output_as=(.*?)[;&\s],) {
+        if (m,"GET /\S+output_as=(.*?)[;&\s],) {
             $counter->{$1}++;
         }
 
