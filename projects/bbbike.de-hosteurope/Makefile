@@ -42,6 +42,7 @@ DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
 TARGET_LIVE=		hosteurope
+TARGET_PPS=		bbbike-pps-jessie
 HOST!=			hostname
 DEPLOYMENT_HOST?=	cabulja
 PERL?=			perl
@@ -231,7 +232,7 @@ TARGET=bbbike.hosteurope.herceg.de
 .elif ${.TARGETS} == ""
 # no TARGET=
 .else
-.error "Please set TARGET to ${TARGET_LIVE} or bbbike.hosteurope.herceg.de"
+.error "Please set TARGET to ${TARGET_LIVE} or ${TARGET_PPS}"
 .endif
 .endif
 
@@ -244,11 +245,15 @@ BBBIKECGI=		bbbike2.cgi
 .endif
 
 BBBIKE_CGI_CONFIG=PLEASE_DEFINE_bbbike.cgi.config
+# following not needed if the mapserver-doit.pl deployment is used
 MAPSERVER_BRB_LOCALINC=	PLEASE_DEFINE_mapserver-brb-brb.map-localinc
 .ifdef TARGET
 .if ${TARGET} == bbbike-pps-jessie || ${TARGET} == hosteurope
 BBBIKE_CGI_CONFIG=	bbbike-hosteurope-jessie.cgi.config
 MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc-jessie
+.endif
+.if ${TARGET} == bbbike-pps-bookworm || ${TARGET} == hosteurope2026
+BBBIKE_CGI_CONFIG=	bbbike-hosteurope-jessie.cgi.config
 .endif
 .endif
 
@@ -315,7 +320,7 @@ rsync-tests:
 	${RSYNC_PROG} ${RSYNC_ARGS} --exclude cover_db/ --exclude tmp/ ${BBBIKE_ROOT_DIR}/t/ ${RSYNC_DEST}/BBBike/t/
 
 rsync-tests-pps:
-	${MAKE} rsync-tests TARGET=bbbike-pps-jessie
+	${MAKE} rsync-tests TARGET=${TARGET_PPS}
 
 /tmp/mapserver.rsync.exclude: .rsync.exclude
 	perl -pe 's{^public/mapserver/}{}' $> > $@
@@ -409,7 +414,7 @@ deploy-local-no-test:	${DEPLOY_LOCAL_NO_TEST_TARGETS}
 deploy-pps:
 			-@mkdir -p .last
 			-@date >> .last/start-deploy-pps
-			${MAKE} deploy TARGET=bbbike-pps-jessie
+			${MAKE} deploy TARGET=${TARGET_PPS}
 
 .ORDER:			${DEPLOY_DATA_TARGETS}
 deploy-data:		${DEPLOY_DATA_TARGETS}
@@ -423,13 +428,13 @@ deploy-temp-blockings:	check-temp-blockings-integrity-pre \
 			rsync-temp-blockings
 
 check-pps:
-			${MAKE} check TARGET=bbbike-pps-jessie
+			${MAKE} check TARGET=${TARGET_PPS}
 
 test-pps:
-			${MAKE} test TARGET=bbbike-pps-jessie
+			${MAKE} test TARGET=${TARGET_PPS}
 
 test-on-pps-full:
-			${MAKE} test-on-remote-full TARGET=bbbike-pps-jessie
+			${MAKE} test-on-remote-full TARGET=${TARGET_PPS}
 
 test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
