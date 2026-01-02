@@ -257,7 +257,7 @@ MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc-jessie
 .endif
 
 .ifdef TARGET
-.if ${TARGET} == bbbike-pps-bookworm
+.if ${TARGET} == bbbike-pps-bookworm || ${TARGET} == hosteurope2026
 PREPARE_MAPSERVER_DIST_MAIN_TARGET=prepare-mapserver-dist-main-doit
 .else
 PREPARE_MAPSERVER_DIST_MAIN_TARGET=prepare-mapserver-dist-main-make
@@ -658,7 +658,7 @@ prepare-mapserver-dist-pre:
 
 prepare-mapserver-dist-main-doit:
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ./doit.pl --dest-dir /tmp/mapserver-${TARGET} --host ${TARGET} --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --htdocs-dir /srv/www/bbbike-webserver/public --target-ssh ${TARGET}
+	    ./doit.pl --dest-dir /tmp/mapserver-${TARGET} --host ${BBBIKE_HOSTEUROPE_SSH_HOST} --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --htdocs-dir /srv/www/bbbike-webserver/public --target-ssh ${BBBIKE_HOSTEUROPE_SSH_HOST}
 	cp -Rpf /tmp/mapserver-${TARGET}/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
 
