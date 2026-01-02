@@ -2638,64 +2638,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SILVESTER-YYYY
-#: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72 (inaktiv)
-#: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72 (inaktiv)
-#: source_id: viz2021:13.369347,52.515752,26.12.2023,06:00 (bis 02.01.2024) (inaktiv)
-#: source_id: viz2021:13.37737,52.51457,26.12.2023,19:35 (bis 02.01.2024) (inaktiv)
-#: source_id: viz2021:13.37679,52.5163,26.12.2023,19:34 (bis 02.01.2024) (inaktiv)
-#: source_id: viz2021:13.36975,52.51584,26.12.2023,19:36 (bis 02.01.2024) (inaktiv)
-#: source_id: viz2021:13.37737,52.51457,02.01.2024,10:34 (bis 02.01.2024) (inaktiv)
-#: source_id: viz2021:13.371607,52.515899,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
-#: source_id: viz2021:13.37688,52.51775,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
-#: source_id: viz2021:13.379494,52.516456,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
-#: source_id: viz2021:13.37679,52.5163,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
-#: source_id: viz2021:13.37081,52.51779,26.12.2024,06:00 (bis 02.01.2025) (inaktiv)
-#: source_id: LMS-BR:394521/72 viz2021:13.376655,52.516287,29.12.2025,06:00 (bis 02.01.2026)
-#: source_id: LMS-BR:394520/72 viz2021:13.37737,52.51457,29.12.2025,06:00 (bis 02.01.2026)
-#: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
-#: by[nocache]: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
-#: by: https://viz.berlin.de/2020/12/welcome21/
-#: by: https://www.berlin.de/events/3303144-2229501-silvesterparty-am-brandenburger-tor.html
-#: by: https://berliner-abendblatt.de/berlin-news/silvesterparty-am-brandenburger-tor-mit-eintritt-geplant-id235013
-#: by: https://viz.berlin.de/aktuelle-meldungen/silvesterfeier-sperrungen/ (außerdem noch weitergehende Sperrungen: alle Straßen rund um den Großen Stern)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel-2024-25/ (ab 26.12.2024)
-#: by: https://viz.berlin.de/aktuelle-meldungen/sperrungen-zur-silvesterfeier-am-brandenburger-tor/
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehr-an-den-bevorstehenden-feiertagen-und-zum-jahreswechsel/ (Platz des 18. März + Teile der Ebertstraße und der Straße des 17. Juni)
-#: by: https://viz.berlin.de/aktuelle-meldungen/ubersicht-der-sperrungen-in-tiergarten-zum-jahreswechsel/ (2025/2026)
-#: by: https://www.tagesspiegel.de/berlin/silvester-party-vor-dem-brandenburger-tor-so-lauft-die-sause-yeah-26-am-31-dezember-in-berlin-15075309.html
-#: note: 2025-12-29 nachmittags: Ebertstr. komplett gesperrt, vom Tiergarten würde man zum Brandenburger Tor nur über lange Umwege (bis Behrenstr.) kommen
-Str. des 17 Juni ab Yitzhak-Rabin-Str. und Teil des Pariser Platzes	2::temp 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-Bremer Weg am Brandenburger Tor	2::temp 8502,12226 8466,12197
-Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
-Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-Str. des 17 Juni/Kleine Querallee	3::temp 8391,12389 8344,12221 8327,12174
-Str. des 17 Juni/Kleine Querallee	3::temp 8327,12174 8344,12221 8391,12389
-Simsonweg	2::temp 8546,12279 8391,12389 8354,12416
-Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
-# 2020 hier nicht --- Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
-# 2020 hier nicht --- Yitzhak-Rabin-Str.	2::temp 8055,12186 8068,12237 8119,12414
-# 2020 hier nicht --- Str. des 17 Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-',
-         'from' => 1766876400,
-         'id' => 2010,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              12,
-                              'start',
-                              '2023-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor: Veranstaltung (Silvesterparty), Straße gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., möglicherweise sind einige Wege im östlichen Tiergarten auch gesperrt, ab 29.12.2025 06:00 bis 02.01.2026 18:00',
-         'type' => 'gesperrt',
-         'until' => 1767373200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2716,6 +2659,7 @@ Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
 #: by: https://www.morgenpost.de/bezirke/mitte/article409680344/sperrungen-am-bundestag-rechtens-gericht-faellt-urteil.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_45_2805_2868_online.pdf (Teileinziehung während der Sitzungswochen Di-Fr, keine Termine)
 #: by: https://www.bundestag.de/parlament/plenum/sitzungskalender/bt2026-1084980
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Termine 2026)
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 #: next_check: 2026-01-12 (Bestätigung für die Sitzungswochen 2026?)
 	2::temp 8554,12593 8540,12420
@@ -8401,17 +8345,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...) (inaktiv)
-#: source_id: LMS-BR:366727/72 viz2021:13.37222,52.4556, (bis 31.10.2025) (bis 28.11.2025) (bis 31.12.2025) (bis 02.01.2026)
-	q4::inwork 8365,5502 8365,5418
-',
-         'from' => 1744520400,
-         'id' => 4314,
-         'text' => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Anfang Januar 2026',
-         'type' => 'handicap',
-         'until' => 1767394799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8886,10 +8820,11 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
          'data' => '#: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 (östlich Husemannstr., bis 28.02.2026)
 #: source_id: viz2021:13.4151,52.53846,18.08.2025,07:00 (westlich Husemannstr., bis 28.02.2026)
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5Xo8NcrLYvz2MxS7AThUxo
-#: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig)
+#: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig) (Jan 2026: erster Abschnitt noch immer abgesperrt)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
+#: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: also_indoor: traffic (T,G,H,A,W)
-#: last_checked: 2025-12-06 (mapillary)
+#: last_checked: 2026-01-02
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 # REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
@@ -9028,7 +8963,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2025-12-17
+#: last_checked: 2026-01-02
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
@@ -9364,12 +9299,12 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        undef,
        undef,
        {
-         'data' => '#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026) (vorfristig inaktiv)
+         'data' => '#: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026) (vorfristig fälschlicherweise inaktiv)
 # REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
-#: last_checked: 2025-11-21
+#: last_checked: 2026-01-02
 #: check_frequency: 120d
-#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung)
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 ',
          'from' => 1761890400,
