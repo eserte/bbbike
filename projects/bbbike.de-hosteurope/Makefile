@@ -43,7 +43,7 @@ TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
 TARGET_LIVE=		hosteurope
 HOST!=			hostname
-DEPLOYMENT_HOST?=	cvrsnica.herceg.de
+DEPLOYMENT_HOST?=	cabulja
 PERL?=			perl
 
 EXTRA_MISCSRC_FILES=	bbd2esri \
