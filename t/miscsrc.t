@@ -34,6 +34,7 @@ chdir "$FindBin::RealBin/.." or die $!;
 my $cwd = getcwd;
 
 my @files = grep { -f $_ && !m{\.el$} && !m{\.sh$} && !m{\.xslt$} & !m{\.py$} } bsd_glob("miscsrc/*");
+push @files, grep { -f $_ } qw(misc/munin-plugins/bbbike);
 
 my $has_skips = 0;
 sub myskip ($$) {
