@@ -19,6 +19,7 @@ no utf8;
 BEGIN {
     my @errors;
     for my $check (
+		   q{use MIME::Lite; 1}, # used in mapserver_comment.cgi
 		   q{use Email::MIME; 1},
 		   # NOTE: The usage of decode_entities below is not that correct,
 		   # but sufficient for the test cases here.

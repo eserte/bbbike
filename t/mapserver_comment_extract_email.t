@@ -8,7 +8,23 @@
 use strict;
 use warnings;
 use FindBin;
-use Test::More 'no_plan';
+
+BEGIN {
+    my @errors;
+    for my $check (
+		   q{use MIME::Lite; 1}, # used in mapserver_comment.cgi
+		   q{use Test::More; 1},
+		   q{defined &done_testing},
+		  ) {
+	if (!eval $check) {
+	    push @errors, $check;
+	}
+    }
+    if (@errors) {
+	print "1..0 # skip the following prereq(s) were not met: " . join(", ", map { "q<$_>" } @errors) . "\n";
+	exit;
+    }
+}
 
 require "$FindBin::RealBin/../cgi/mapserver_comment.cgi";
 
@@ -33,5 +49,7 @@ for my $fail_s (
 ) {
     is extract_email($fail_s), undef, "invalid email $fail_s";
 }
+
+done_testing;
 
 __END__
