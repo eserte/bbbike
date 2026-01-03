@@ -74,7 +74,8 @@ CGI_FILES=		bbbike.cgi \
 			qrcode.cgi
 TESTS_ON_REMOTE?=	basic.t \
 			strassen-gpx.t \
-			bbbikedraw.t
+			bbbikedraw.t \
+			mapserver_comment.t
 TESTS_FROM_LOCAL=	\
 			bbbikecgiapi.t \
 			bbbikecgiapi-config.t \
