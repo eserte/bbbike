@@ -12,6 +12,7 @@ use lib (
 	 "$FindBin::RealBin/..",
 	);
 use CGI '-oldstyle_urls';
+use Getopt::Long;
 use Encode qw(encode_utf8);
 no utf8;
 
@@ -42,6 +43,13 @@ BEGIN {
 use BBBikeTest qw(check_cgi_testing like_long_data);
 
 check_cgi_testing;
+
+GetOptions("debug" => \my $debug)
+    or die "usage: $0 [--debug]\n";
+
+if ($debug) {
+    require Data::Printer;
+}
 
 my $mapserver_comment = "$FindBin::RealBin/../cgi/mapserver_comment.cgi";
 
@@ -78,12 +86,17 @@ for my $method (qw(GET POST)) {
 	# message will be unusable, of course.
 	my($stdout, $stderr);
 	ok run [$^X, $mapserver_comment], ">", \$stdout, "2>", \$stderr, (defined $content ? ("<", \$content) : ());
-	(
+	my %ret = (
 	 raw_stdout => $stdout,
 	 http => HTTP::Message->parse($stdout),
 	 raw_stderr => $stderr,
 	 mail => $stderr eq '' ? undef : Email::MIME->new($stderr),
 	);
+	if ($debug) {
+	    Data::Printer::p(\@cgi_params);
+	    Data::Printer::p(\%ret);
+	}
+	%ret;
     };
 
     {

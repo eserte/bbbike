@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003-2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2011,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -49,6 +48,8 @@ warn $@ if $@;
 use vars qw($to $cc $comment);
 
 sub newstreetform_extra_html ($$);
+
+return 1 if caller;
 
 eval {
     undef $to;
@@ -249,7 +250,7 @@ eval {
 	if (request_method eq 'POST') {
 	    $plain_body .= "\nPOST Vars:\n";
 	    for my $key (param) {
-		$plain_body .= Data::Dumper->new([param($key)],[$key])->Indent(1)->Useqq(1)->Dump;
+		$plain_body .= Data::Dumper->new([BBBikeCGI::Util::my_multi_param($key)],[$key])->Indent(1)->Useqq(1)->Dump;
 	    }
 	}
 
@@ -264,11 +265,11 @@ eval {
 			(defined $add_bbd       && $add_bbd ne ""));
     $subject = substr($subject, 0, 70) . "..." if length $subject > 70;
 
-    my($subject_mime, $to_mime, $cc_mime, $email_mime, $encoded_plain_body) =
-	($subject, $to, $cc, $email, $plain_body);
+    my($subject_mime, $to_mime, $cc_mime, $encoded_plain_body) =
+	($subject, $to, $cc, $plain_body);
     my $charset = "iso-8859-1";
     if (eval { require Encode; 1 }) {
-	for ($subject_mime, $to_mime, $cc_mime, $email_mime) {
+	for ($subject_mime) {
 	    $_ = Encode::encode("MIME-B", $_)
 		if defined $_;
 	}
@@ -277,6 +278,7 @@ eval {
 	    $charset = "utf-8";
 	}
     }
+    my $email_mime = extract_email($email);
 
     my $msg = MIME::Lite->new(Subject => $subject_mime,
 			      To      => $to_mime,
@@ -309,6 +311,7 @@ eval {
 	    $msg->attach(Type => "text/html; charset=utf-8",
 			 Data => $add_html_body_bytes,
 			 Filename => "newstreetform.html",
+			 Encoding => 'quoted-printable',
 			);
 	}
 	if (defined $add_bbd && $add_bbd ne "") {
@@ -462,6 +465,14 @@ EOF
 <div><a href="$mailto_link">Mail per Browser-Mailprogramm eingeben und senden</a></div>
 EOF
     $extra_html;
+}
+
+# Simple extractor, may extract invalid email addresses,
+# main point is to strip possible whitespace and keep
+# only ascii-like characters.
+sub extract_email {
+    my($text) = @_;
+    $text =~ /([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})/ ? $1 : undef;
 }
 
 =head1 NAME
