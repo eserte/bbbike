@@ -71,7 +71,11 @@ Kwalify	- optional für Validierung in der Testsuite
 
 Mail::Mailer 1.53	- falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will
 
-MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface
+MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface (alt)
+
+Email::MIME	- Versenden von Benutzer-Kommentaren im Webinterface
+
+Email::Sender::Simple	- Versenden von Benutzer-Kommentaren im Webinterface
 
 String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)
 

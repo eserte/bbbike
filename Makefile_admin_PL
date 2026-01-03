@@ -381,14 +381,14 @@ fbsdport-pkg-plist-check: fbsdport
 # categorized:
 DEB_DEVEL=	git-core bison byacc flex g++ bmake gcc \
 		libc6-dev libinline-perl strace rsync less make
-DEB_TEST=	libimage-info-perl libwww-mechanize-perl libemail-mime-perl
+DEB_TEST=	libimage-info-perl libwww-mechanize-perl libemail-mime-perl libemail-sender-perl libemail-mime-perl
 # Note: libpango-perl not available in lenny, only squeeze
 DEB_DRAW=	libgd3 \
 		netpbm libgd-gd2-perl ttf-bitstream-vera fonts-dejavu \
 		libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \
 		libtest-number-delta-perl
 DEB_DRAW_OPTIONAL= perlmagick libimager-perl imagemagick libsvg-perl librsvg2-bin
-DEB_MAIL=	libmime-lite-perl libmailtools-perl
+DEB_MAIL=	libemail-mime-perl libemail-sender-perl libmime-lite-perl libmailtools-perl
 DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libxml-twig-perl libdbi-perl libtie-ixhash-perl \
 		libobject-realize-later-perl libmldbm-perl \
@@ -448,7 +448,7 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libgd-gd2-perl libgeo-coder-google-perl \
 		libgeo-metar-perl libimage-exiftool-perl \
 		libimage-info-perl libimager-perl libinline-perl libipc-run-perl \
-		libjson-xs-perl libmailtools-perl libmime-lite-perl libmldbm-perl \
+		libjson-xs-perl libmailtools-perl libemail-mime-perl libemail-sender-perl libmime-lite-perl libmldbm-perl \
 		libobject-realize-later-perl libpdf-create-perl \
 		libstatistics-descriptive-perl libstring-approx-perl libsvg-perl \
 		libtemplate-perl libtest-differences-perl libtest-simple-perl \
