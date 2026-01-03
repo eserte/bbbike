@@ -253,7 +253,7 @@ BBBIKE_CGI_CONFIG=	bbbike-hosteurope-jessie.cgi.config
 MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc-jessie
 .endif
 .if ${TARGET} == bbbike-pps-bookworm || ${TARGET} == hosteurope2026
-BBBIKE_CGI_CONFIG=	bbbike-hosteurope-jessie.cgi.config
+BBBIKE_CGI_CONFIG=	bbbike-hosteurope-bookworm.cgi.config
 .endif
 .endif
 
