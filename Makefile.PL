@@ -559,7 +559,7 @@ sub make_general_bundle {
 				   file => $file,
 				   bundle_module => $bundle_module,
 				   modules_string => $modules_string,
-				   \%args,
+				   %args,
 				 }, \$out) or die $t->error;
     open(BUNDLE, ">$file") or die "Can't write bundle $file: $!";
     binmode BUNDLE;
