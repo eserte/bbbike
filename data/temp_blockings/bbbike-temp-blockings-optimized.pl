@@ -4456,7 +4456,77 @@ Alter Markt, Lüdersstr., Freiheit: Einbahnstraßenregelung	q4::inwork; 22495,4523
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BERLINHALBMARATHON-RECURRING
+#: url: https://www.generali-berliner-halbmarathon.de/
+#: by: https://viz.berlin.de/2022/04/halbmarathon/ (3.4.2022)
+#: by: https://twitter.com/ellirhc11/status/1509924822444298250
+#: by: https://viz.berlin.de/2023/03/halbmarathon/ (2.4.2023)
+#: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
+#: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
+#: by: https://www.tagesspiegel.de/berlin/berliner-halbmarathon-2025-strecke-sperrungen-und-termine-am-wochenende--ein-uberblick-13468081.html
+#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
+#: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
+#: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
+#: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
+#: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024) (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
+#: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
+#: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
+#: source_id[inactive]: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
+#: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
+#: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025) (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
+#: source_id: viz2021:13.373428,52.515998,07.04.2025,12:00 (bis 07.04.2025) (inaktiv)
+	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
+	2::temp 8540,12420 8775,12457
+	2::temp 8309,12758 8306,12609 8207,12606
+	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8068,12237 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+	2::temp 8306,12609
+	2::temp 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156 7215,12129 6812,12057
+	3 8554,12593 8540,12420 8775,12457
+	3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
+# REMOVED ---	3 8369,12609 8373,12416 8391,12389
+	3 8775,12457 8540,12420 8554,12593
+	3 8327,12174 8344,12221 8391,12389
+	3 7429,12070 7383,12095 7288,12156 7031,12320
+# REMOVED ---	3 8391,12389 8373,12416 8369,12609
+	3 8391,12389 8344,12221 8327,12174
+	3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
+	3 7654,12464 7627,12380 7603,12353
+	3 7603,12353 7627,12380 7654,12464
+	3 8592,12252 8538,12245 8522,12187
+	3 8592,12252 8538,12245 8502,12226
+	3 7822,12201 7816,12150 7823,12120
+	3 7822,12201 7836,12247 7875,12363 7945,12592
+	3 8522,12187 8538,12245 8502,12226
+	3 8522,12187 8538,12245 8592,12252
+	3 7945,12592 7875,12363 7836,12247 7822,12201
+	3 7945,12592 8122,12603 8120,12756
+	3 7031,12320 7288,12156 7383,12095 7429,12070
+	3 8502,12226 8538,12245 8522,12187
+	3 8502,12226 8538,12245 8592,12252
+	3 8120,12756 8122,12603 7945,12592
+	3 7823,12120 7816,12150 7822,12201
+',
+         'from' => 1774479600,
+         'id' => 3086,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              3
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 27.03.2026 bis 30.03.2026 6 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1774843200
+       },
        undef,
        undef,
        undef,
@@ -8998,7 +9068,7 @@ Spektegrabensteg	2::inwork -7228,15933 -7243,15943
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 6
+#: osm_watch: note 4801950 7
 #: osm_watch: way id="53168806" version="7"
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
@@ -9047,12 +9117,14 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2025-12-28 vvv
+#: last_checked: 2026-01-03 vvv
+#: next_check: 2026-02-16 (Halteverbotsschilder) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
 Corinthstr.	q3::inwork; 14447,10491 14608,10409
 #: note: q4, weil insbesondere das Linksabbiegen umständlich und mit Umwegen verbunden ist
 Corinthstr.	q4::inwork; 14608,10409 14447,10491
+#: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => undef,

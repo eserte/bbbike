@@ -120,7 +120,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt für Radfahrer	?::inwork 9047,9750
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: osm_watch: way id="667331289" version="7"
-#: last_checked: 2025-12-23
+#: last_checked: 2026-01-03
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -2566,12 +2566,14 @@ Königsweg: Fahrradstraße in Entstehung	?::inwork -3096,1026 -3024,1069 -2813,118
 #: osm_watch[closed]: note 4968980 6
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1598817.php (Tietzenweg: Sanierung ab 20.10.2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1611975.php (Baubeginn am am 10.11.2025)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/gremien/mobilitaetsrat/20251001-protokoll-15-sitzung-mobirat.pdf
 #: note: während der Leitungsarbeiten Gehweg für Radfahrer frei
 #: last_checked: 2025-11-19 (mapillary) (Leitungsarbeiten der BWB)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-10-31 (BA-Pressemitteilung)
 Tietzenweg: geplante Fahrradstraße	?::projected 3425,4541 3501,4435 3557,4355 3587,4312 3643,4232
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1611975.php (2026?)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/gremien/mobilitaetsrat/20251001-protokoll-15-sitzung-mobirat.pdf
 #: next_check: 2026-12-31 (BA-Pressemitteilung)
 Tietzenweg: geplante Fahrradstraße, evtl. Abfräsung des Kopfsteinpflasters	?::projected 3643,4232 3766,4058 3777,4042 3870,3914
 # 
@@ -4987,6 +4989,7 @@ S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408737310/krach-stau-wann-die-anwohner-am-hindenburgdamm-aufatmen-koennen.html (Fertigstellung der gesammten Trasse bis Ende 2026?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lofsr5vfb22v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiadkl4cy62rxrcxb2mwv3thaemmdbewq7pxilvi5yzuaqmrnatoge@jpeg
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/gremien/mobilitaetsrat/20251001-protokoll-15-sitzung-mobirat.pdf ("Überlegung")
 #: source_id: 2147347219 (Leitungsarbeiten bis Ende 2021; haben diese etwas mit der geplanten Busspur zu tun, oder verzögern sie die Einrichtung derselben?) (inaktiv)
 #: source_id: viz2021:13.315375,52.450057,04.12.2022,07:00 (Fernwärmebauarbeiten, bis 11.12.2023) (inaktiv)
 #: source_id: viz2021:13.315483,52.44521,09.10.2024,07:00 (Fernwärmebauarbeiten, bis 30.09.2025) (inaktiv)
@@ -5726,7 +5729,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: osm_watch: note 4969496 3
 #: XXX Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
-#: last_checked: 2026-01-01 vvv
+#: last_checked: 2026-01-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 15019,10803
@@ -6196,8 +6199,9 @@ Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,1442
 #: by: https://abendblatt-berlin.de/2020/05/08/berlin-reinickendorf-radwege/ (als geschützter Radstreifen?)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11189 (Ersuchen)
 #: XXX evtl. auch im weiteren Verlauf der Bernauer Str., dort, wo noch Gehwege sind
-#: osm_watch: way id="126095383" version="31"
-#: osm_watch: way id="236824892" version="18"
+#: osm_watch: way id="126095383" version="32"
+#: osm_watch: way id="236824892" version="19"
+#: osm_watch: way id="1463718514" version="1"
 #: last_checked: 2025-07-28 (mapillary)
 #: check_frequency: 120d
 Bernauer Str.: entstehen hier Radstreifen?	?::projected 130,17187 149,17239 240,17524 506,18327
@@ -9007,7 +9011,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
-#: last_checked: 2026-01-02 vvv
+#: last_checked: 2026-01-03 vvv
 #: check_frequency: 14d vvv
 # REMOVED (realisiert) --- #: osm_watch: way id="1145089826" version="5" --- Scharnweberstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14888,11934
 # REMOVED (realisiert) --- #: osm_watch: way id="127538487" version="21" --- Finowstr.: Einbahnstraße für Kfz in Vorbereitung	? 14783,11949 14710,11824
@@ -10863,12 +10867,12 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
 #: XXX vermutlich beleuchtet; Rampe und Treppe am Paul-und-Paula-Ufer
 #: osm_watch: way id="1077916762" version="10"
-#: last_checked: 2025-12-30
+#: last_checked: 2026-01-03
 #: check_frequency: 90d
 # REMOVED (Eröffnung 2025 unwahrscheinlich) --- #: next_check: 2025-12-31 (Plakat)
 Paul-und-Paula-Promenade: wird gebaut	?::inwork 14984,10677 15056,10625
 #: osm_watch: way id="1077916763" version="2"
-#: last_checked: 2025-12-30
+#: last_checked: 2026-01-03
 #: check_frequency: 270d
 Heiner-Carow-Str.: existiert noch nicht	?::projected 15081,10775 15071,10716 15056,10625
 # 

@@ -1051,7 +1051,7 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: next_check_id: STUBENRAUCH-2025
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9872 (Anfrage)
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
-#: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026)
+#: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv)
 #: last_checked: 2025-10-29 (krickstadt) vvv
 #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
@@ -5187,7 +5187,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: last_checked: 2026-01-02 vvv
+#: last_checked: 2026-01-03 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2025-12-18 vvv
 # REMOVED --- #: valid: -20251219
