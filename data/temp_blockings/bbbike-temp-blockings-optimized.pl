@@ -587,53 +587,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
-#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410506383/weihnachtsmarkt-city-west-wichtige-strassen-bleiben-drei-jahre-zu.html
-#: by: https://www.entwicklungsstadt.de/umbau-des-breitscheidplatzes-sicherungskonzept-fuer-den-platz-ab-2026/
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1619006.php
-#: source_id: viz2021:13.33407,52.5054,07.11.2024,07:00 (Verengung Breitscheidplatz, bis 12.01.2025) (inaktiv)
-# REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
-# sowieso schon mit q4 markiert, deshalb -> 2
-	2::xmas 5829,10964 5782,10884
-	2::xmas 5656,10876 5652,11004
-#: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
-#: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
-#: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
-#: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
-#: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
-# REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
-#: source_id: 2147345089 (inaktiv)
-#: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
-#: source_id: viz2021:13.331602,52.505283,07.11.2024,07:00 (bis 12.01.2025) (inaktiv)
-#: source_id: viz2021:13.33567,52.50437,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Rankestr., bis 12.01.2025) (inaktiv)
-#: source_id: viz2021:13.33931,52.50323,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Tauentzienstr., bis 12.01.2025) (inaktiv)
-#: note: 2022+2023+2025 ist die Fahrbahn gesperrt
-Kantstr.: Weihnachtsmarkt, Gehweg frei	q4::xmas 5613,10963 5652,11004
-#: note: etwa 70m frei befahrbar
-Kantstr.: Logistik Markt	q3::xmas 5613,10963 5488,10978
-',
-         'from' => 1763852400,
-         'id' => 394,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              11,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 24. November 2025 bis voraussichtlich 04. Januar 2026',
-         'type' => 'gesperrt',
-         'until' => 1767560400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4155,6 +4109,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=749078#post749078 (Rückbau der Rauchgasentschwefelungsanlage am Heizkraftwerk Charlottenburg)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/teilabriss-heizkraftwerk-charlottenburg.1423/#post-23000
 #: by: https://entwicklungsstadt.de/was-entsteht-an-der-mierendorffinsel-10-aktuelle-bauprojekte/
+#: by: https://www.entwicklungsstadt.de/heizkraftwerk-charlottenburg-genehmigung-fuer-neue-gasturbinen-ab-2028/
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
@@ -4932,7 +4887,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2025-12-25
+#: last_checked: 2026-01-04
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -5610,7 +5565,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-25
+#: last_checked: 2026-01-04
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -8234,7 +8189,7 @@ Regina-Jonas-Str.	q4::inwork 11094,10261 11274,10184
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
-#: last_checked: 2025-11-24 (daf) vvv
+#: last_checked: 2026-01-04 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 Gutenbergstr.	q4::inwork; 5518,12159 5317,12242
@@ -8305,7 +8260,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr.; demnächst in der Landjägerstr. (nördlich Amtsstr.?)
-#: last_checked: 2025-12-23 (website check) vvv
+#: last_checked: 2026-01-05 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -8358,14 +8313,14 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-23 (traffic)
+#: last_checked: 2026-01-05 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-23 (traffic)
+#: last_checked: 2026-01-05 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
@@ -8399,7 +8354,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-12-23 (traffic) vvv
+#: last_checked: 2026-01-05 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -8506,9 +8461,9 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: bvg2024:110#HIM_FREETEXT_284868
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
-#: also_indoor: traffic (T,G,re-H)
+#: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2025-12-30 (traffic) vvv
+#: last_checked: 2026-01-05 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -8540,7 +8495,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2025-12-25 vvv
+#: last_checked: 2026-01-04 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8724,7 +8679,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: also_indoor: traffic (G,T,B)
-#: last_checked: 2025-12-28
+#: last_checked: 2026-01-05
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -8741,7 +8696,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
 #: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-04 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 # REMOVED (hier nicht (mehr?)) ---	q4::inwork 5700,10226 5597,10299
@@ -9116,9 +9071,10 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        },
        {
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
+#: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
 #: last_checked: 2026-01-03 vvv
-#: next_check: 2026-02-16 (Halteverbotsschilder) vvv
+#: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
 Corinthstr.	q3::inwork; 14447,10491 14608,10409
@@ -9182,15 +9138,15 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251008
-#: source_id: LMS-BR:386091/72 viz2021:13.398,52.53495,08.10.2025,17:15 viz2021:13.398,52.53495, (bis 04.12.2025) (bis 06.01.2026)
+#: source_id: LMS-BR:386091/72 viz2021:13.398,52.53495,08.10.2025,17:15 viz2021:13.398,52.53495, (bis 04.12.2025) (bis 06.01.2026) (bis 27.01.2026)
 #: note: etwa 50m gesperrt, Umwege
 	q4::inwork 9800,14306 9938,14356
 ',
          'from' => 1759935291,
          'id' => 4462,
-         'text' => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, 8.10.2025 bis Anfang Januar 2026',
+         'text' => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, geplant bis Ende Januar 2026',
          'type' => 'handicap',
-         'until' => 1767740399
+         'until' => 1769554799
        },
        undef,
        undef,
@@ -9674,6 +9630,17 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
          'text' => 'Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Umbauarbeiten im Kreuzungsbereich, evtl. sind auch Radfahrer von den Sperrungen betroffen, 06.01.2026 bis 31.03.2027',
          'type' => 'handicap',
          'until' => 1806530399
+       },
+       {
+         'data' => '#: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026)
+#: source_id: bvg2024:140#HIM_FREETEXT_312088
+	q4::inwork 12056,10642 11839,10736
+',
+         'from' => 1767506400,
+         'id' => 4520,
+         'text' => 'Waldemarstr.: Bauarbeiten, Sperrung zwischen Audre-Lorde-Str. und Mariannenplatz, evtl. sind auch Radfahrer betroffen, vom 05.01.2026 07:00 bis 13.03.2026 16:00',
+         'type' => 'handicap',
+         'until' => 1773414000
        }
      
 );

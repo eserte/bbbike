@@ -4122,6 +4122,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: by: https://www.tagesspiegel.de/berlin/baustart-in-berlin-mitte-das-marx-engels-forum-wird-umgestaltet-13899289.html (Marx-Engels-Forum wird ab Juli 2025 eingezäunt sein, 1. BA bis 2027)
 #: by: https://entwicklungsstadt.de/historische-mitte-im-wandel-bauarbeiten-am-rathausforum-angelaufen/ (1. BA bis 2027)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/marx-engels-forum-marienviertel.94/page-3#post-26287
+#: by: https://www.entwicklungsstadt.de/marx-engels-forum-in-berlin-mitte-archaeologische-funde-muessen-neugestaltung-weichen/
 #: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
 #: osm_watch: note 4795958 5
 #: osm_watch: way id="169067264" version="14"
@@ -4212,7 +4213,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12933,1101 12946,1027
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: source_id: bvg2024:250#HIM_FREETEXT_308566
-#: source_id[inactive]: bvg2024:250#HIM_FREETEXT_307841
+#: source_id: bvg2024:250#HIM_FREETEXT_307841
 #: last_checked: 2025-12-28 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="7"
@@ -4387,7 +4388,7 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
 #: osm_watch: way id="618834389" version="17"
-#: osm_watch: way id="43619494" version="8"
+#: osm_watch: way id="43619494" version="9"
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg; mittlerweile (2024-12-13) ist die Straße kaum noch erkennbar
 #: priority: #C
@@ -4408,9 +4409,9 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
 #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
 #: also_indoor: traffic (B)
-#: osm_watch: way id="1120450475" version="5"
+#: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 1
-#: last_checked: 2025-12-29 vvv
+#: last_checked: 2026-01-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4781,7 +4782,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 # REMOVED (nicht mehr gesperrt) --- #: next_check_id: U6-2022 --- #: XXX Ist hier noch immer gesperrt? --- #: last_checked: 2025-06-06 (okas) --- #: check_frequency: 120d --- # REMOVED --- #: next_check: 2026-10-01 --- #: next_check: 2025-07-01 --- Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
 # 
 #: next_check_id: U6-2022
-#: osm_watch: way id="1036123062" version="7"
+#: osm_watch: way id="1036123062" version="8"
 #: XXX Ist hier noch immer eine Einbahnstraße?
 #: last_checked: 2025-09-03
 #: check_frequency: 120d
@@ -4958,7 +4959,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2025-12-12
+#: last_checked: 2026-01-05
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673

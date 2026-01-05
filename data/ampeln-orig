@@ -129,7 +129,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
-#: last_checked: 2025-12-30 (traffic)
+#: last_checked: 2026-01-05 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20251231
@@ -3556,7 +3556,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: source_id: LMS-BR:381878/72 viz2021:13.43277,52.47837,01.09.2025,07:00 (bis 14.12.2025) (bis 27.02.2026)
 #: XXX laut Verkehrsmeldung nun Neubau einer Ampel, bis Mitte Dezember 2025, mittlerweile bis Ende Februar 2026
 #: priority: #D
-#: last_checked: 2025-12-25
+#: last_checked: 2026-01-04
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583
@@ -4374,7 +4374,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2025-11-29
+#: last_checked: 2026-01-04
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (infravelo)
 	X::inwork 12185,7381
