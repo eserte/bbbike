@@ -51,7 +51,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 82;
+my $basic_tests = 83;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -88,6 +88,23 @@ goto XXX if $do_xxx;
     $s = eval { Strassen->new_stream("$FindBin::RealBin/../data/this-file-does-not-exist") };
     like $@, qr{Can't open .*this-file-does-not-exist}, 'error on non-existing strassen file (constructor new_stream)';
     is $s, undef;
+}
+
+SKIP: {
+    skip "Requires IPC::Run", 1
+	if !eval { require IPC::Run; 1 };
+    my $sample_bbd = <<"EOF";
+Teststr.\tHH 1234,5678 2345,6789
+EOF
+    my $success = IPC::Run::run([
+	$^X, "-I$FindBin::RealBin/..", "-I$FindBin::RealBin/../lib", '-Mstrict', '-MStrassen::Core', '-e',
+	<<'EOF',
+my $s = Strassen->new('-');
+binmode STDOUT;
+print $s->data->[0];
+EOF
+    ], '<', \$sample_bbd, '>', \my $output);
+    is $output, $sample_bbd, 'reading from bbd data from stdin';
 }
 
 {
