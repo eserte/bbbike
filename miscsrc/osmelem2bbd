@@ -86,6 +86,11 @@ for my $elem (@elems) {
 }
 
 if ($as_org_link) {
+    require I18N::Langinfo;
+    my $codeset = I18N::Langinfo::langinfo(I18N::Langinfo::CODESET());
+    $codeset = lc $codeset;
+    binmode STDOUT, ":encoding($codeset)";
+
     $s->init;
     while() {
 	my $r = $s->next;
