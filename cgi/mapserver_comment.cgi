@@ -559,6 +559,7 @@ EOF
 # only ascii-like characters.
 sub extract_email {
     my($text) = @_;
+    return undef if !defined $text;
     $text =~ /([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})/ ? $1 : undef;
 }
 

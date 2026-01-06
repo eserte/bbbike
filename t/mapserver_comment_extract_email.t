@@ -28,6 +28,12 @@ BEGIN {
 
 require "$FindBin::RealBin/../cgi/mapserver_comment.cgi";
 
+my @warnings;
+local $SIG{__WARN__} = sub { push @warnings, @_ };
+local $^W = 1;
+
+is extract_email(undef), undef, 'undefined argument';
+
 for my $pass_s (
     'user@example.com',
     'foo.bar+tag@sub.domain.org',
@@ -49,6 +55,8 @@ for my $fail_s (
 ) {
     is extract_email($fail_s), undef, "invalid email $fail_s";
 }
+
+is_deeply \@warnings, [], 'no warnings';
 
 done_testing;
 
