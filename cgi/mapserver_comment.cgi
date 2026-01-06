@@ -32,7 +32,7 @@ use lib (grep { -d }
 use BBBikeVar;
 use BBBikeCGI::Util qw();
 use Data::Dumper;
-use CGI qw(:standard -no_xhtml);
+use CGI ();
 use CGI::Carp;
 use vars qw($debug $bbbike_url $bbbike_root $bbbike_html $use_cgi_bin_layout
 	    @MIME_Lite_send $email_module);
@@ -54,13 +54,29 @@ if (!defined $email_module) {
 
 return 1 if caller;
 
+my $q;
+
 eval {
     undef $to;
     undef $cc;
     undef $comment;
 
+    $q = CGI->new;
+
+    {
+	my $f = "$realbin/Botchecker_BBBike.pm";
+	if (-r $f) {
+	    eval {
+		local $SIG{'__DIE__'};
+		do $f;
+		Botchecker_BBBike::run($q);
+	    };
+	    warn $@ if $@;
+	}
+    }
+
     # from bbbike.cgi:
-    $bbbike_url = BBBikeCGI::Util::my_url(CGI->new);
+    $bbbike_url = BBBikeCGI::Util::my_url($q);
     ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
     if (!defined $bbbike_html) {
 	$bbbike_html   = "$bbbike_root/" . ($use_cgi_bin_layout ? "BBBike/" : "") .
@@ -82,32 +98,32 @@ eval {
 	}
     }
 
-    my $encoding = param("encoding");
+    my $encoding = $q->param("encoding");
     if ($encoding && $encoding !~ m{^(utf-8|iso-8859-1)$}) {
 	undef $encoding;
     }
     if ($encoding && eval { require Encode; 1 }) {
-	for my $key (param) {
-	    param($key, Encode::decode($encoding, scalar param($key)));
+	for my $key ($q->param) {
+	    $q->param($key, Encode::decode($encoding, scalar $q->param($key)));
 	}
     }
 
-    my $email  = param('email');
-    my $author = param('author');
+    my $email  = $q->param('email');
+    my $author = $q->param('author');
     my $by     = $author || $email;
     my $by_long = $author ? $author . ($email ? " <$email>" : "") : $email ? $email . ($author ? " ($author)" : "") : "unknown";
 
-    my $subject = param("subject") || "BBBike-Kommentar";
+    my $subject = $q->param("subject") || "BBBike-Kommentar";
     if ($by) {
 	$subject .= " von $by";
     }
 
-    my $mapx = param("mapx");
-    my $mapy = param("mapy");
+    my $mapx = $q->param("mapx");
+    my $mapy = $q->param("mapy");
 
     my($link1, $link2);
-    if (param("routelink")) {
-	$link1 = param("routelink");
+    if ($q->param("routelink")) {
+	$link1 = $q->param("routelink");
 	($link2 = $link1) =~ s{^http://[^/]+/cgi-bin/}{http://localhost/bbbike/cgi/}; # guess local link for bbbikegooglemap, may be wrong
     } elsif (defined $mapx && defined $mapy) {
 	my $coords_esc = CGI::escape(join(",", map { int } ($mapx, $mapy)));
@@ -121,16 +137,16 @@ eval {
 
     {
 	my @add_bbd;
-	for my $key (param) {
+	for my $key ($q->param) {
 	    if ($key =~ m{^wpt\.\d+}) {
-		my($comment, $xy) = split /!/, param($key);
+		my($comment, $xy) = split /!/, $q->param($key);
 		$comment =~ s{[\t\n]}{ }g;
 		push @add_bbd, "$comment\tWpt $xy";
 	    }
 	}
-	if (param("route")) {
-	    my(@points) = split / /, param("route");
-	    my $bbd_comment = param("comment") || "<no comment>";
+	if ($q->param("route")) {
+	    my(@points) = split / /, $q->param("route");
+	    my $bbd_comment = $q->param("comment") || "<no comment>";
 	    $bbd_comment =~ s{[\t\n]}{ }g;
 	    push @add_bbd, "$bbd_comment\tRte @points";
 	}
@@ -149,14 +165,14 @@ eval {
 	}
     }
 
-    if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
+    if ($q->param("formtype") && $q->param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
 	open(BACKUP, ">>/tmp/newstreetform-backup-$<")
 	    or warn "Cannot write backup data for newstreetform: $!";
 	print BACKUP "-" x 70, "\n";
 	print BACKUP scalar localtime;
 	print BACKUP "\n";
 	my $data = {};
-	for my $param (param) {
+	for my $param ($q->param) {
 	    my @val = BBBikeCGI::Util::my_multi_param($param);
 	    if (@val == 1) {
 		$data->{$param} = $val[0];
@@ -181,7 +197,7 @@ eval {
 	}
 	$subject = substr($subject, 0, 70) . "..." if length $subject > 70;
 
-	my $is_spam = length param('url');
+	my $is_spam = length $q->param('url');
 	$subject = "SPAM: $subject" if $is_spam;
 
 	eval {
@@ -208,16 +224,16 @@ eval {
 	    $plain_body .= "\nERROR processing template: $@";
 	}
 
-    } elsif (param("formtype") && param("formtype") eq 'bbbikeroute') {
+    } elsif ($q->param("formtype") && $q->param("formtype") eq 'bbbikeroute') { # note: this was planned to be used by bbbike_comment.cgi, which does not exist
 	$comment =
 	    "Von: $by_long\n" .
 	    "An:  $to\n\n" .
 	    "Kommentar:\n" .
-	    param("comment") . "\n" .
-	    "Query: " . param("query") . "\n";
+	    $q->param("comment") . "\n" .
+	    "Query: " . $q->param("query") . "\n";
 	$plain_body .= $comment . "\n";
-	$link1 = $bbbike_url . "?" . param("query");
-	$link2 = "http://www/bbbike/cgi/bbbike.cgi?" . param("query");
+	$link1 = $bbbike_url . "?" . $q->param("query");
+	$link2 = "http://www/bbbike/cgi/bbbike.cgi?" . $q->param("query");
 	$plain_body .= "Remote: " . $link1 . "\n";
 	$plain_body .= "Lokal:  " . $link2 . "\n";
 	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
@@ -225,17 +241,17 @@ eval {
 	my $is_spam = length param('url');
 	$subject = "SPAM: $subject" if $is_spam;
     } elsif (
-	     request_method() eq 'OPTIONS' &&
-	     (http('origin')||'') =~ m{^https?://localhost(:\d+)?}
+	     $q->request_method() eq 'OPTIONS' &&
+	     ($q->http('origin')||'') =~ m{^https?://localhost(:\d+)?}
 	    ) {
 	# CORS handling, part one - a Preflighted request
-	print header(
-		     -Access_Control_Allow_Origin => http('origin'),
-		     -Access_Control_Allow_Methods => 'POST, GET, OPTIONS',
-		    );
+	print $q->header(
+		         -Access_Control_Allow_Origin => $q->http('origin'),
+		         -Access_Control_Allow_Methods => 'POST, GET, OPTIONS',
+		        );
 	exit;
     } else {
-	my $comment_param = param("comment");
+	my $comment_param = $q->param("comment");
 	$comment_param = '' if !defined $comment_param;
 	if (!$author && !$email && $comment_param eq '' && !$add_bbd) {
 	    empty_msg(); # exits
@@ -250,19 +266,19 @@ eval {
 	$plain_body .= "Remote: " . $link1 . "\n" if defined $link1;
 	$plain_body .= "Lokal:  " . $link2 . "\n" if defined $link2;
 	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
-	if (request_method eq 'POST') {
+	if ($q->request_method eq 'POST') {
 	    $plain_body .= "\nPOST Vars:\n";
-	    for my $key (param) {
+	    for my $key ($q->param) {
 		$plain_body .= Data::Dumper->new([BBBikeCGI::Util::my_multi_param($key)],[$key])->Indent(1)->Useqq(1)->Dump;
 	    }
 	}
 
 	no warnings 'uninitialized'; # url param may be undef
-	my $is_spam = length param('url');
+	my $is_spam = length $q->param('url');
 	$subject = "SPAM: $subject" if $is_spam;
     }
 
-    my $mailout = param('mailout');
+    my $mailout = $q->param('mailout');
 
     my $is_multipart = ((defined $add_html_body && $add_html_body ne "") ||
 			(defined $add_bbd       && $add_bbd ne ""));
@@ -404,49 +420,51 @@ eval {
 	}
     }
 
-    my $cookie = cookie(-name => 'mapserver_comment',
+    my $cookie = $q->cookie(
+			-name => 'mapserver_comment',
 			-value => { email => $email,
 				    author => $author,
 				  },
 			-path => "/",
 			-expires => "+1y",
 		       );
-    if (param("formtype") && param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
+    if ($q->param("formtype") && $q->param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
 	my $dir = defined $bbbike_html ? $bbbike_html : "..";
 	my $url = "$dir/newstreetform.html";
 	my $bbbikegooglemapsurl;
-	if (param("supplied_coord")) {
+	if ($q->param("supplied_coord")) {
 	    $bbbikegooglemapsurl = "$BBBike::BBBIKE_GOOGLEMAP_URL?" .
 		CGI->new({
-		    wpt         => scalar param("supplied_coord"),
+		    wpt         => scalar $q->param("supplied_coord"),
 		    coordsystem => "bbbike",
 		    maptype     => "hybrid",
 		    mapmode     => "addroute",
 		    zoom        => 17,
 		})->query_string;
 	}
-	print header(-cookie => $cookie),
-	    start_html(-title=>"Neue Straße für BBBike",
-		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	    "Danke, die Angaben wurden an ", a({-href => "mailto:$to"}, $to), " gesendet.",br(),br(),
+	print $q->header(-cookie => $cookie),
+	    $q->start_html(-title=>"Neue Straße für BBBike",
+		           -style=>{'src'=>"$bbbike_html/bbbike.css"}),
+	    "Danke, die Angaben wurden an ", $q->a({-href => "mailto:$to"}, $to), " gesendet.",$q->br(),$q->br(),
 	    (defined $bbbikegooglemapsurl ?
-	     (a({-href => $bbbikegooglemapsurl}, "Weitere Kommentare zu dieser Straße auf einer Karte eintragen"),br(),br()) :
+	     ($q->a({-href => $bbbikegooglemapsurl}, "Weitere Kommentare zu dieser Straße auf einer Karte eintragen"),$q->br(),$q->br()) :
 	     ()
 	    ),
-	    a({-href => $url}, "Weitere Straße eintragen"),
-	    end_html;
+	    $q->a({-href => $url}, "Weitere Straße eintragen"),
+	    $q->end_html;
     } else {
-	my $origin = http('origin');
-	print header(
+	my $origin = $q->http('origin');
+	print $q->header
+	    	    (
 		     -cookie => $cookie,
 		     # CORS handling, part two
 		     ($origin && $origin =~ m{^https?://localhost(:\d+)?} ? (-Access_Control_Allow_Origin => $origin) : ()),
 		    ),
-	    start_html(-title=>"Kommentar abgesandt",
-		       -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	    "Danke, der folgende Kommentar wurde an " . BBBikeCGI::Util::my_escapeHTML($to) . " gesendet:",br(),br(),
-	    pre(BBBikeCGI::Util::my_escapeHTML($comment)),
-	    end_html;
+	    $q->start_html(-title=>"Kommentar abgesandt",
+		           -style=>{'src'=>"$bbbike_html/bbbike.css"}),
+	    "Danke, der folgende Kommentar wurde an " . BBBikeCGI::Util::my_escapeHTML($to) . " gesendet:",$q->br(),$q->br(),
+	    $q->pre(BBBikeCGI::Util::my_escapeHTML($comment)),
+	    $q->end_html;
     }
 };
 if ($@) {
@@ -455,26 +473,26 @@ if ($@) {
 }
 
 sub error_msg {
-    print(header,
-	  start_html(-title=>"Fehler beim Versenden",
-		     -style=>{'src'=>"$bbbike_html/bbbike.css"}),
+    print($q->header,
+	  $q->start_html(-title=>"Fehler beim Versenden",
+		         -style=>{'src'=>"$bbbike_html/bbbike.css"}),
 	  "Der Kommentar konnte wegen eines internen Fehlers nicht abgesandt werden. Bitte stattdessen eine Mail an ",
-	  a({-href=>"mailto:$to?" . CGI->new({subject => "BBBike-Kommentar (fallback)",
+	  $q->a({-href=>"mailto:$to?" . CGI->new({subject => "BBBike-Kommentar (fallback)",
 					      body=>$comment})->query_string},$to),
-	  " mit dem folgenden Inhalt versenden:",br(),br(),
-	  pre($comment),
-	  end_html,
+	  " mit dem folgenden Inhalt versenden:",$q->br(),$q->br(),
+	  $q->pre($comment),
+	  $q->end_html,
 	 );
     exit;
 }
 
 sub empty_msg {
-    print(header,
-	  start_html(-title=>'Fehler beim Versenden',
-		     -style=>{'src'=>"$bbbike_html/bbbike.css"}),
-	  "Bitte einen Kommentar angeben.",br(),
-	  a({-href=>'javascript:history.back()'},'Zurück'),
-	  end_html,
+    print($q->header,
+	  $q->start_html(-title=>'Fehler beim Versenden',
+		         -style=>{'src'=>"$bbbike_html/bbbike.css"}),
+	  "Bitte einen Kommentar angeben.",$q->br(),
+	  $q->a({-href=>'javascript:history.back()'},'Zurück'),
+	  $q->end_html,
 	 );
     exit;
 }
