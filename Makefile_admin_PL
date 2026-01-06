@@ -713,6 +713,11 @@ coverage-singlefile:
 	@if [ "${COVERFILE}" = "" ]; then echo "Please define COVERFILE"; false; fi
 	env BBBIKE_TEST_NO_NETWORK=1 BBBIKE_TEST_NO_CGI_TESTS=1 PERL5OPT=-MDevel::Cover DEVEL_COVER_OPTIONS=${STD_DEVEL_COVER_OPTIONS} ${PERL} -MTest::Harness -e 'runtests(@ARGV)' "${COVERFILE}"
 
+# Some tests have check_cgi_testing set, but do not run server-side.
+coverage-singlefile-cgitest:
+	@if [ "${COVERFILE}" = "" ]; then echo "Please define COVERFILE"; false; fi
+	env BBBIKE_TEST_NO_NETWORK=1 BBBIKE_TEST_NO_CGI_TESTS=0 PERL5OPT=-MDevel::Cover DEVEL_COVER_OPTIONS=${STD_DEVEL_COVER_OPTIONS} ${PERL} -MTest::Harness -e 'runtests(@ARGV)' "${COVERFILE}"
+
 coverage-result:
 	${PERL} -S cover
 	-rm -f MYMETA.json.lock
