@@ -198,6 +198,7 @@ eval {
 	$subject = substr($subject, 0, 70) . "..." if length $subject > 70;
 
 	my $is_spam = length $q->param('url');
+	maybe_send_to_zdjelameda('unexpected param') if $is_spam;
 	$subject = "SPAM: $subject" if $is_spam;
 
 	eval {
@@ -239,6 +240,7 @@ eval {
 	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
 
 	my $is_spam = length param('url');
+	maybe_send_to_zdjelameda('unexpected param') if $is_spam;
 	$subject = "SPAM: $subject" if $is_spam;
     } elsif (
 	     $q->request_method() eq 'OPTIONS' &&
@@ -275,6 +277,7 @@ eval {
 
 	no warnings 'uninitialized'; # url param may be undef
 	my $is_spam = length $q->param('url');
+	maybe_send_to_zdjelameda('unexpected param') if $is_spam;
 	$subject = "SPAM: $subject" if $is_spam;
     }
 
@@ -557,6 +560,15 @@ EOF
 sub extract_email {
     my($text) = @_;
     $text =~ /([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})/ ? $1 : undef;
+}
+
+sub maybe_send_to_zdjelameda {
+    my $reason = shift || 'unspecified reason in mapserver_comment.cgi';
+    return if !defined &Botchecker_BBBike::redirect_to_zdjela_meda;
+    return if !$q; # should not happen
+    no warnings 'once';
+    $Botchecker_BBBike::REASON = $reason;
+    Botchecker_BBBike::redirect_to_zdjela_meda($q);
 }
 
 =head1 NAME
