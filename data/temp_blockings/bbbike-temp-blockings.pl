@@ -30479,13 +30479,16 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork; 9044,13711 8992,13774 8935,13844
 EOF
      },
-     { from  => 1557007200, # 2019-05-05 00:00
-       until => 1558031782, # $isodate2epoch->("2019-05-17 18:00:00"),
-       text  => 'Schottstr.: Richtung Gotlindestr. zwischen Roedeliusplatz und Rüdigerstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17. Mai 2019',
+     { from  => $isodate2epoch->("2026-01-06 00:00:00"), # 1557007200, # 2019-05-05 00:00
+       until => $isodate2epoch->("2026-03-10 23:59:59"), # 1558031782, # $isodate2epoch->("2019-05-17 18:00:00"),
+#      text  => 'Schottstr.: Richtung Gotlindestr. zwischen Roedeliusplatz und Rüdigerstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17. Mai 2019',
+       text  => 'Schottstr./Rüdigerstr.: Richtung Freiaplatz. zwischen Roedeliusplatz und Atzpodienstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich Anfang März 2026',
        type  => 'handicap',
-       source_id => '2147344157',
        data  => <<EOF,
-	q4::inwork; 16276,12273 16397,12397
+#: source_id: 2147344157 (2019er-Sperrung) (inaktiv)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260106
+# REMOVED (2019er-Sperrung, kürzer) ---	q4::inwork; 16276,12273 16397,12397
+Schottstr., Rüdigerstr.	q4::inwork; 16276,12273 16397,12397 16485,12384
 EOF
      },
      { from  => 1557093600, # 2019-05-06 00:00
@@ -33600,10 +33603,10 @@ EOF
 #: by: https://www.entwicklungsstadt.de/am-kadewe-in-der-city-west-fassade-des-bueroturms-quantum-p1-vollstaendig-installiert/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="17"
+#: osm_watch: way id="362719487" version="18"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-05 (osm)
 #: check_frequency: 180d
 #: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 	q4::inwork 6021,10405 6116,10688
@@ -37988,7 +37991,7 @@ EOF
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2025-12-24 (traffic) vvv
+#: last_checked: 2026-01-06 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
 #: next_check: 2026-05-18 (VIZ-Verkehrsmeldung) vvv
@@ -44555,10 +44558,10 @@ EOF
 EOF
      },
      { from  => undef, # 1715058000, # 2024-05-07 07:00
-       until => $isodate2epoch->("2026-02-13 23:59:59"), # undef, # 1723898534, # $isodate2epoch->("2024-08-20 17:00:00"), # 1723129200, # 2024-08-08 17:00
+       until => $isodate2epoch->("2026-02-28 23:59:59"), # undef, # 1723898534, # $isodate2epoch->("2024-08-20 17:00:00"), # 1723129200, # 2024-08-08 17:00
 #      text  => 'Sterndamm: Gleisarbeiten zwischen Winckelmannstr. und Königsheideweg, Sperrung der Fahrbahn, gemeinsamer Geh- und Radweg mit Umwegen, außerdem sind die Anbindung Trützschlerstr. und Abschnitte der Winckelmannstr. gesperrt, vom 08.05.2024 07:00 bis voraussichtlich 20.08.2024 17:00',
 #      text  => 'Winckelmannstr.: einige Abschnitte wegen Gleisarbeiten gesperrt, bis voraussichtlich 20.08.2024 17:00',
-       text  => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, außerdem Sperrung in der Vereinsstr., voraussichtlich bis 13.02.2026',
+       text  => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, außerdem Sperrung in der Vereinsstr., voraussichtlich bis Ende Februar 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2024
@@ -44587,13 +44590,13 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
-#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026)
+#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026) (bis 28.02.2026)
 #: source_id[inactive]: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
 #: source_id[inactive]: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-12-24 (bahninfo-forum) vvv
-#: next_check: 2026-02-13 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-02-28 (VIZ-Verkehrsmeldung) vvv
 Winckelmannstr.: Havarie, Sperrung der Fahrbahn	q4::inwork 17503,4148 17507,4216
 Köpenicker Str.: Einmündungsbereich gesperrt	q3::inwork 17507,4216 17638,4224
 Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4159 17405,4151
@@ -46662,11 +46665,18 @@ EOF
      { from  => 1764651600, # 2025-12-02 06:00, # 1729461600, # 2024-10-21 00:00
        until => 1781712000, # 2026-06-17 18:00, # 1755694539, # undef, # 1740765216, # $isodate2epoch->("2025-02-28 23:59:59"), # 1735340400, # 2024-12-28 00:00
 #      text  => 'Grolmanstr.: Bauarbeiten zwischen Goethestr. und Pestalozzistr., Sperrung der Fahrbahn, voraussichtlich bis August 2025, evtl. wird verlängert',
-       text  => 'Grolmanstr.: Bauarbeiten zwischen Savignyplatz und Uhlandstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
+#      text  => 'Grolmanstr.: Bauarbeiten zwischen Savignyplatz und Uhlandstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
+#      text  => 'Grolmanstr.: Bauarbeiten zwischen Savignyplatz und Uhlandstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
+       text  => 'Grolmanstr.: Bauarbeiten südöstlich und nordwestlich des Savignyplatzes, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
+#: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026)
+#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
+Grolmanstr. (nordwestlicher Abschnitt)	q4::inwork 4828,11094 4775,11203
 #: note: vermutlich Einbahnstraßenregelung, offen Richtung Savignyplatz
+#: source_id: LMS-BR:392050/72 viz2021:13.323692,52.504398,03.12.2025,06:00 (Sperrung; bis 17.06.2026)
+#: source_id: LMS-BR:366524/72 viz2021:13.32531,52.50287, (Gegenverkehrsregelung; bis 29.03.2026)
 Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,10707 5072,10701
 EOF
      },
@@ -51310,7 +51320,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2025-12-24 (traffic) vvv
+#: last_checked: 2026-01-06 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q4::inwork 6124,5983 6226,5995 6318,6006
 Kissinger Str.	q3::inwork 6226,5995 6213,6135
@@ -51453,7 +51463,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026)
-#: source_id: bvg2024:140#HIM_FREETEXT_312088
+#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312088 (bereits am nächsten Tag inaktiv)
+#: source_id: bvg2024:140#HIM_FREETEXT_312193
 	q4::inwork 12056,10642 11839,10736
 EOF
      },
