@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2016,2018,2020,2021,2022 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2016,2018,2020,2021,2022,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -123,6 +122,14 @@ sub handle_file {
 
 	     my $cat;
 
+	     my($current_source_file, $current_source_line);
+	     if (defined $dir->{source_file}) {
+		 $current_source_file = $dir->{source_file}[0];
+	     }
+	     if (defined $dir->{source_line}) {
+		 $current_source_line = $dir->{source_line}[0];
+	     }
+
 	     if ($dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0]) {
 		 if ($dir->{_nextcheck_date}[0] le $today) {
 		     if ($dir->{_nextcheck_label} && $dir->{_nextcheck_label}[0]) {
@@ -212,10 +219,10 @@ sub handle_file {
 
 	     if ($emit_source_directives) {
 		 if (!$emitted_file) {
-		     print "#: source_file: $file\n";
+		     print "#: source_file: " . (defined $current_source_file ? $current_source_file : $file) . "\n";
 		     $emitted_file = 1;
 		 }
-		 print "#: source_line: $linenumber\n";
+		 print "#: source_line: ". (defined $current_source_line ? $current_source_line : $linenumber) . "\n";
 	     }
 	     # XXX better!!!
 	     $add_name =~ s{[\t\r\n]}{ }g if defined $add_name;
