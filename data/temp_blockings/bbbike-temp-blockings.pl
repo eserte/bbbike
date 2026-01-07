@@ -28665,7 +28665,7 @@ EOF
 #: source_id: LMS-BR:304601/72 viz2021:13.31363,52.52105,26.06.2023,06:00 viz2021:13.31363,52.52105, (bis 30.06.2025) (bis 01.12.2025) (bis 30.10.2026)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024, nun bis 30.06.2025
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2025-11-19
+#: last_checked: 2026-01-07 (daf)
 #: check_frequency: 120d
 #: next_check: 2026-10-30
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -30480,12 +30480,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-01-06 00:00:00"), # 1557007200, # 2019-05-05 00:00
-       until => $isodate2epoch->("2026-03-10 23:59:59"), # 1558031782, # $isodate2epoch->("2019-05-17 18:00:00"),
+       until => $isodate2epoch->("2026-03-02 23:59:59"), # 1558031782, # $isodate2epoch->("2019-05-17 18:00:00"),
 #      text  => 'Schottstr.: Richtung Gotlindestr. zwischen Roedeliusplatz und Rüdigerstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17. Mai 2019',
        text  => 'Schottstr./Rüdigerstr.: Richtung Freiaplatz. zwischen Roedeliusplatz und Atzpodienstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich Anfang März 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147344157 (2019er-Sperrung) (inaktiv)
+#: source_id: LMS-BR:395406/72 viz2021:13.49371,52.51618,07.01.2026,07:00 (bis 02.03.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260106
 # REMOVED (2019er-Sperrung, kürzer) ---	q4::inwork; 16276,12273 16397,12397
 Schottstr., Rüdigerstr.	q4::inwork; 16276,12273 16397,12397 16485,12384
@@ -42017,7 +42018,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2025-12-28
+#: last_checked: 2026-01-07
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -43548,7 +43549,7 @@ EOF
 #: source_id: LMS-BR:323527/72 viz2021:13.40366,52.52607, (bis 31.08.2025) (inaktiv)
 # REMOVED --- #: note: eigentlich q4+::inwork; --- #: note: laut Baustellenschild bis 15.9.2025
 # REMOVED --- #: also_indoor: traffic (G,T,B,H,W,A)
-#: last_checked: 2025-12-28 vvv
+#: last_checked: 2026-01-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
@@ -45132,7 +45133,7 @@ EOF
 #: by: https://entwicklungsstadt.de/grossbaustelle-in-mitte-sanierung-der-krausenstrasse-geht-in-naechste-phase/
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027) (inaktiv)
 #: source_id: viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
-#: osm_watch: way id="42747980" version="20"
+#: osm_watch: way id="42747980" version="21"
 #: XXX Sperrung zwischen Jerusalemer Str. (West) und Markgrafenstr. ab 15. Oktober 2025
 #: XXX Sperrung im 1. BA bis Ende Oktober 2025
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
@@ -48798,7 +48799,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-21
+#: last_checked: 2026-01-07
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 	q4::inwork 16915,11634 16957,11726
@@ -49589,7 +49590,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-01-05
+#: last_checked: 2026-01-07
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50065,7 +50066,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: osm_watch: note 4924394 1
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2025-12-31
+#: last_checked: 2026-01-07
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
 	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51041,7 +51042,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 5
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-28
+#: last_checked: 2026-01-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
