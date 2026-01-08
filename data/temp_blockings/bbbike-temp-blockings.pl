@@ -18592,12 +18592,12 @@ EOF
 	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => $isodate2epoch->("2025-07-25 00:00:00"), # 1658440800, # 2022-07-22 00:00
-       until => $isodate2epoch->("2025-07-26 23:59:59"), # 1658613599, # 2022-07-23 23:59
+     { from  => $isodate2epoch->("2026-07-24 00:00:00"), # 1658440800, # 2022-07-22 00:00
+       until => $isodate2epoch->("2026-07-25 23:59:59"), # 1658613599, # 2022-07-23 23:59
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6, start => "2020-07-30T00:00:00"]], # Absage 2020
 #      recurrence_prewarn_days => -7,
-       text  => 'CSD am 26.07.2025',
+       text  => 'CSD am 25.07.2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://csd-berlin.de/event-info-en/
@@ -26517,14 +26517,18 @@ EOF
 	2::inwork 63500,89978 63789,89450 63797,89389 63814,89247 63826,89135 63928,88223 64007,87773 64113,87461
 EOF
      },
-     { from  => 1465077600, # 2016-06-05 00:00
-       until => $isodate2epoch->("2016-06-11 23:59:59"),
-       text  => 'Wartenberger Weg: Richtung Dorfstraße zwischen Egon-Erwin-Kisch-Straße und Dorfstraße Baustelle, Fahrtrichtung gesperrt, ab 06.06.2016 06:00 bis zum 11.06.2016',
+     { from  => $isodate2epoch->("2026-01-08 00:00:00"), # 1465077600, # 2016-06-05 00:00
+       until => $isodate2epoch->("2026-03-27 23:59:59"), # $isodate2epoch->("2016-06-11 23:59:59"),
+#      text  => 'Wartenberger Weg: Richtung Dorfstraße zwischen Egon-Erwin-Kisch-Straße und Dorfstraße Baustelle, Fahrtrichtung gesperrt, ab 06.06.2016 06:00 bis zum 11.06.2016',
+       text  => 'Wartenberger Weg: Richtung Malchow zwischen Hagenower Ring und An der Margaretenhöhe gesperrt, evtl. sind auch Radfahrer betroffen, bis 27.03.2026',
        type  => 'handicap',
-       source_id => '2147340170',
        data  => <<EOF,
-#: note: laut fritz sogar Vollsperrung
-	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
+#: source_id: 2147340170 (2016er-Sperrung, inaktiv)
+#: source_id: LMS-BR:395568/72 viz2021:13.50143,52.57656, (bis 27.03.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mbw6ybn6pk2i (Radverkehr auch betroffen)
+# REMOVED (2016) --- #: note: laut fritz sogar Vollsperrung
+# REMVOED (2016) ---	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
+	q4::inwork; 17003,19035 16736,19193
 EOF
      },
      { from  => 1509050079,
@@ -39533,7 +39537,7 @@ EOF
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/spielplatz-ist-wieder-offen_a424125
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1518885.php (Arbeiten ab 13.01.2025 bis voraussichtlich Ende Oktober 2025)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/start-fuer-weitere-bauabschnitte-am-hindenburgdamm_a433899
-#: by: https://www.bew.berlin/aktuelles-und-presse/bauvorhaben-hindenburgdamm/ (mittlerweile bis Ende Dezember 2025)
+#: by: https://www.bew.berlin/aktuelles-und-presse/bauvorhaben-hindenburgdamm/ (mittlerweile bis Ende Dezember 2025) (mittlerweile bis März 2026)
 #: by: https://www.bew.berlin/binaries/content/assets/website/newsroom/illustration---netzverstarkung-hindenburgdamm.pdf/ (bis 4. Quartal 2025)
 #: by: https://www.bew.berlin/binaries/content/assets/website/newsroom/illustration---netzverstarkung-hindenburgdamm.pdf?date=20251120 (nun bis 1. Quartal 2026?)
 #: osm_watch[closed]: note 3951936 1
@@ -39547,8 +39551,8 @@ EOF
 #: priority: #A
 #: add_fragezeichen: Besteht die Sperrung des Uferwegs weiterhin? vvv
 #: last_checked: 2025-10-29 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-12-31 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-03-31 (bew.berlin) vvv
 ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: osm_watch: way id="46907541" version="18"
 #: osm_watch: way id="1116849053" version="5"
@@ -44949,16 +44953,18 @@ EOF
      { from  => 1717909200, # 2024-06-09 07:00
        until => undef, # $isodate2epoch->("2025-12-31 18:00:00"), # $isodate2epoch->("2025-08-29 17:00:00"), # 1722265200, # 2024-07-29 17:00
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.08.2025 17:00',
-       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
+#      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
+       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Juni 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: LMS-BR:374530/72 viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr)
+#: source_id: LMS-BR:374530/72 viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026)
 #: osm_watch: way id="1303423090" version="6"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: last_checked: 2025-08-18 (mapillary)
-#: next_check: 2025-12-31 (Baustellenschild)
+# REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
+#: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
 EOF
      },

@@ -2539,39 +2539,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BEBELPLATZXMAS-2022
-#: by: https://www.weihnachtsmarkt-berlin.de/
-#: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (2022 und 2023 vorübergehend am Bebelplatz, evtl. auch schon 2021)
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971676-955635-weihnachtszauber-gendarmenmarkt.html (2021 schon am Bebelplatz, wegen Bauarbeiten bis 2023)
-#: by: https://www.weihnachtsmarkt-berlin.de/?date=20211019 (2021 noch immer am Gendarmenmarkt?)
-#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt.html
-#: by: https://www.morgenpost.de/bezirke/mitte/article410233534/weihnachtszauber-kehrt-auf-den-gendarmenmarkt-in-mitte-zurueck.html
-#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
-#: note: schmale Durchgänge am Rand des Weihnachtsmarkts existieren
-	2::xmas 9536,11922 9666,11935
-	2::xmas 9523,12019 9656,12031
-',
-         'from' => 1763074800,
-         'id' => 1989,
-         'periodic' => 1,
-         'postwarn_days' => 7,
-         'prewarn_days' => 10,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11,
-                              'start',
-                              '2025-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 24.11.2025 bis 31.12.2025, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
-         'type' => 'gesperrt',
-         'until' => 1767826799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2738,7 +2706,201 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://csd-berlin.de/event-info-en/
+#: by: https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/gesamte-innenstadt-verkehrseinschrankungen-zum-christopher-street-day
+#: by: https://csd-berlin.de/ (24.7.2021, Route steht noch nicht fest)
+#: by: https://csd-berlin.de/csd-berlin-2021/demo-route-2/
+#: by: https://csd-berlin.de/demo-route-finale-2022/
+#: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
+#: by: https://csd-berlin.de/csd-berlin-2023/route-finale
+#: by: https://csd-berlin.de/route-finale
+#: by: https://www.berlin.de/events/3889775-2229501-pride-village-csd-finale.html
+#: source_id: viz2021:13.3899,52.51036,21.07.2023,19:32 (bis 22.07.2023) (inaktiv)
+	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396
+	2::temp 7033,10396 6937,10407 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904
+# Route via Karl-Heinrich-Ulrichs-Str.	2::temp 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904
+Route via An der Urania	2::temp 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6826,11479 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6812,12057 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
+	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
+	3 8573,11404 8542,11502 8548,11571
+	3 8573,11404 8542,11502 8442,11555
+	3 9997,11713 10000,11691 9992,11682
+	3 8743,11489 8740,11524 8736,11557
+	3 7103,11247 6851,11346 6692,11365
+	3 6716,11439 6826,11479 6914,11487
+	3 6716,11439 6826,11479 6789,11499 6750,11550
+	3 9456,11513 9444,11616 9432,11702
+	3 8119,12414 8068,12237 8055,12186 8049,12140
+	3 8049,12140 8055,12186 8068,12237 8119,12414
+	3 8630,12310 8637,12258 8641,12227 8643,12208
+	3 6841,11114 6880,11110 7004,11168 7115,11220
+	3 6742,11099 6873,11011 7002,11034
+	3 8232,11414 8217,11455 8172,11679
+	3 8548,11571 8542,11502 8442,11555
+	3 8548,11571 8542,11502 8573,11404
+	3 7444,10479 7633,10394 7744,10372
+	3 7698,10147 7579,10183 7526,9969
+	3 8327,12174 8344,12221 8391,12389
+	3 7002,11034 6873,11011 6742,11099
+	3 8643,12208 8641,12227 8637,12258 8630,12310
+	3 7744,10372 7633,10394 7444,10479
+	3 9581,11523 9569,11631 9559,11715
+	3 9331,11497 9268,11590 9234,11683
+	3 9000,11727 9058,11564 9155,11283
+	3 6164,11947 6642,12010 6550,11954
+	3 8502,12226 8538,12245 8522,12187
+	3 8104,11037 7980,11070 7747,11075
+	3 7031,12320 7288,12156 7383,12095 7429,12070
+	3 9155,11283 9058,11564 9000,11727
+	3 7963,10716 7820,10768 7534,10850
+	3 7534,10850 7820,10768 7963,10716
+	3 8102,11099 8000,11137 7828,11133
+	3 6540,11754 6778,11742 6980,11790
+	3 8592,11541 8596,11508 8599,11474
+	3 7822,12201 7816,12150 7823,12120
+	3 8442,11555 8542,11502 8548,11571
+	3 8442,11555 8542,11502 8573,11404
+	3 7033,10328 7033,10396 6937,10407
+	3 7033,10328 7033,10396 7227,10489
+# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 7110,10613 6972,10665 6818,10725
+# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 6818,10725 6972,10665 7110,10613
+An der Urania/Kurfürstenstr.	3 6607,10801 6740,10755 6818,10725
+An der Urania/Kurfürstenstr.	3 6818,10725 6740,10755 6607,10801
+Eisenacher Str./Courbièrestr.	3 6719,10347 6753,10446 6743,10615
+Eisenacher Str./Courbièrestr.	3 6743,10615 6753,10446 6719,10347
+# Wichmannstr./Schillstr.	3 6681,10959 6824,10904 6740,10755
+# Wichmannstr./Schillstr.	3 6740,10755 6824,10904 6681,10959
+Wichmannstr./Lützowplatz	3 6681,10959 6824,10904 6918,10858
+Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
+	3 7429,10366 7413,10244 7384,10127
+	3 7429,12070 7383,12095 7288,12156 7031,12320
+	3 7384,10127 7413,10244 7429,10366
+	3 6750,11550 6789,11499 6826,11479 6716,11439
+	3 6750,11550 6789,11499 6826,11479 6914,11487
+	3 7849,10488 7689,10514 7478,10612
+	3 7115,11220 7004,11168 6880,11110 6841,11114
+	3 8391,12389 8344,12221 8327,12174
+	3 8736,11557 8740,11524 8743,11489
+	3 6980,11790 6778,11742 6540,11754
+	3 6679,11602 6809,11570 6869,11567
+	3 7823,12120 7816,12150 7822,12201
+	3 7828,11133 8000,11137 8102,11099
+	3 9559,11715 9569,11631 9581,11523
+	3 7526,9969 7579,10183 7698,10147
+	3 8522,12187 8538,12245 8502,12226
+	3 6692,11365 6851,11346 7103,11247
+	3 9234,11683 9268,11590 9331,11497
+	3 7209,10205 7238,10299 7275,10418
+	3 7275,10418 7238,10299 7209,10205
+	3 8599,11474 8596,11508 8592,11541
+	3 7478,10612 7689,10514 7849,10488
+	3 7747,11075 7980,11070 8104,11037
+	3 6937,10407 7033,10396 7033,10328
+	3 6937,10407 7033,10396 7227,10489
+	3 6914,11487 6826,11479 6789,11499 6750,11550
+	3 6914,11487 6826,11479 6716,11439
+	3 9992,11682 10000,11691 9997,11713
+	3 6869,11567 6809,11570 6679,11602
+	3 6550,11954 6642,12010 6164,11947
+	3 8172,11679 8217,11455 8232,11414
+	3 9692,11732 9701,11656 9702,11647
+	3 9432,11702 9444,11616 9456,11513
+	3 7227,10489 7033,10396 6937,10407
+	3 7227,10489 7033,10396 7033,10328
+	3 9702,11647 9701,11656 9692,11732
+# REMOVED ---	2::temp 6744,11936 6809,11979 6828,12031 6812,12057 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6778,11742 6809,11570 6826,11479 6851,11346 6880,11110 6882,11061 6873,11011 6824,10904 6740,10755 6685,10690 6532,10529 6494,10440
+# REMOVED ---	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+# REMOVED ---	3 8592,11541 8596,11508 8599,11474
+# REMOVED ---	3 9992,11682 10000,11691 9997,11713
+# REMOVED ---	3 6841,11114 6880,11110 7004,11168 7115,11220
+# REMOVED ---	3 9234,11683 9268,11590 9331,11497
+# REMOVED ---	3 6550,11954 6642,12010 6164,11947
+# REMOVED ---	3 7002,11034 6873,11011 6742,11099
+# REMOVED ---	3 7031,12320 7288,12156 7383,12095 7429,12070
+# REMOVED ---	3 8481,11638 8553,11638 8743,11663
+# REMOVED ---	3 6869,11567 6809,11570 6679,11602
+# REMOVED ---	3 9331,11497 9268,11590 9234,11683
+# REMOVED ---	3 8599,11474 8596,11508 8592,11541
+# REMOVED ---	3 6540,11754 6778,11742 6980,11790
+# REMOVED ---	3 6750,11550 6789,11499 6826,11479 6914,11487
+# REMOVED ---	3 6750,11550 6789,11499 6826,11479 6716,11439
+# REMOVED ---	3 9432,11702 9444,11616 9456,11513
+# REMOVED ---	3 6742,11099 6873,11011 7002,11034
+# REMOVED ---	3 8327,12174 8344,12221 8391,12389
+# REMOVED ---	3 8546,12279 8538,12245 8592,12252
+# REMOVED ---	3 8546,12279 8538,12245 8502,12226
+# REMOVED ---	3 8546,12279 8538,12245 8522,12187
+# REMOVED ---	3 7823,12120 7816,12150 7822,12201
+# REMOVED ---	3 8119,12414 8068,12237 8055,12186 8049,12140
+# REMOVED ---	3 7429,12070 7383,12095 7288,12156 7031,12320
+# REMOVED ---	3 8391,12389 8344,12221 8327,12174
+# REMOVED ---	3 6980,11790 6778,11742 6540,11754
+# REMOVED ---	3 8743,11663 8553,11638 8481,11638
+# REMOVED ---	3 8442,11555 8542,11502 8479,11493
+# REMOVED ---	3 8442,11555 8542,11502 8573,11404
+# REMOVED ---	3 9702,11647 9701,11656 9692,11732
+# REMOVED ---	3 7115,11220 7004,11168 6880,11110 6841,11114
+# REMOVED ---	3 7822,12201 7816,12150 7823,12120
+# REMOVED ---	3 6692,11365 6851,11346 7103,11247
+# REMOVED ---	3 6607,10801 6740,10755 6818,10725
+# REMOVED ---	3 6679,11602 6809,11570 6869,11567
+# REMOVED ---	3 7103,11247 6851,11346 6692,11365
+# REMOVED ---	3 6918,10858 6824,10904 6681,10959
+# REMOVED ---	3 9581,11523 9569,11631 9559,11715
+# REMOVED ---	3 6636,10492 6602,10504 6532,10529 6468,10550
+# REMOVED ---	3 9456,11513 9444,11616 9432,11702
+# REMOVED ---	3 8736,11557 8740,11524 8743,11489
+# REMOVED ---	3 8743,11489 8740,11524 8736,11557
+# REMOVED ---	3 8489,11782 8571,11846 8501,11815
+# REMOVED ---	3 8522,12187 8538,12245 8502,12226
+# REMOVED ---	3 8522,12187 8538,12245 8592,12252
+# REMOVED ---	3 8522,12187 8538,12245 8546,12279
+# REMOVED ---	3 8502,12226 8538,12245 8522,12187
+# REMOVED ---	3 8502,12226 8538,12245 8592,12252
+# REMOVED ---	3 8502,12226 8538,12245 8546,12279
+# REMOVED ---	3 8573,11404 8542,11502 8442,11555
+# REMOVED ---	3 8573,11404 8542,11502 8479,11493
+# REMOVED ---	3 8479,11493 8542,11502 8442,11555
+# REMOVED ---	3 8479,11493 8542,11502 8573,11404
+# REMOVED ---	3 8501,11815 8571,11846 8489,11782
+# REMOVED ---	3 6681,10959 6824,10904 6918,10858
+# REMOVED ---	3 9559,11715 9569,11631 9581,11523
+# REMOVED ---	3 9000,11727 9058,11564 9155,11283
+# REMOVED ---	3 9155,11283 9058,11564 9000,11727
+# REMOVED ---	3 6914,11487 6826,11479 6789,11499 6750,11550
+# REMOVED ---	3 6914,11487 6826,11479 6716,11439
+# REMOVED ---	3 9997,11713 10000,11691 9992,11682
+# REMOVED ---	3 6818,10725 6740,10755 6607,10801
+# REMOVED ---	3 8592,12252 8538,12245 8546,12279
+# REMOVED ---	3 8592,12252 8538,12245 8502,12226
+# REMOVED ---	3 8592,12252 8538,12245 8522,12187
+# REMOVED ---	3 6164,11947 6642,12010 6550,11954
+# REMOVED ---	3 6468,10550 6532,10529 6602,10504 6636,10492
+# REMOVED ---	3 9692,11732 9701,11656 9702,11647
+# REMOVED ---	3 8049,12140 8055,12186 8068,12237 8119,12414
+# REMOVED ---	3 6716,11439 6826,11479 6789,11499 6750,11550
+# REMOVED ---	3 6716,11439 6826,11479 6914,11487
+',
+         'from' => 1784844000,
+         'id' => 2083,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              6,
+                              'start',
+                              '2020-07-30T00:00:00'
+                            ]
+                          ],
+         'text' => 'CSD am 25.07.2026',
+         'type' => 'gesperrt',
+         'until' => 1785016799
+       },
        undef,
        undef,
        undef,
@@ -3850,7 +4012,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147340170 (2016er-Sperrung, inaktiv)
+#: source_id: LMS-BR:395568/72 viz2021:13.50143,52.57656, (bis 27.03.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mbw6ybn6pk2i (Radverkehr auch betroffen)
+# REMOVED (2016) --- #: note: laut fritz sogar Vollsperrung
+# REMVOED (2016) ---	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
+	q4::inwork; 17003,19035 16736,19193
+',
+         'from' => 1767826800,
+         'id' => 2791,
+         'text' => 'Wartenberger Weg: Richtung Malchow zwischen Hagenower Ring und An der Margaretenhöhe gesperrt, evtl. sind auch Radfahrer betroffen, bis 27.03.2026',
+         'type' => 'handicap',
+         'until' => 1774652399
+       },
        undef,
        undef,
        undef,
@@ -6130,7 +6305,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/spielplatz-ist-wieder-offen_a424125
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1518885.php (Arbeiten ab 13.01.2025 bis voraussichtlich Ende Oktober 2025)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/start-fuer-weitere-bauabschnitte-am-hindenburgdamm_a433899
-#: by: https://www.bew.berlin/aktuelles-und-presse/bauvorhaben-hindenburgdamm/ (mittlerweile bis Ende Dezember 2025)
+#: by: https://www.bew.berlin/aktuelles-und-presse/bauvorhaben-hindenburgdamm/ (mittlerweile bis Ende Dezember 2025) (mittlerweile bis März 2026)
 #: by: https://www.bew.berlin/binaries/content/assets/website/newsroom/illustration---netzverstarkung-hindenburgdamm.pdf/ (bis 4. Quartal 2025)
 #: by: https://www.bew.berlin/binaries/content/assets/website/newsroom/illustration---netzverstarkung-hindenburgdamm.pdf?date=20251120 (nun bis 1. Quartal 2026?)
 #: osm_watch[closed]: note 3951936 1
@@ -6144,8 +6319,8 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 #: priority: #A
 #: add_fragezeichen: Besteht die Sperrung des Uferwegs weiterhin? vvv
 #: last_checked: 2025-10-29 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2025-12-31 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-03-31 (bew.berlin) vvv
 ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: osm_watch: way id="46907541" version="18"
 #: osm_watch: way id="1116849053" version="5"
@@ -7231,16 +7406,17 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        {
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: LMS-BR:374530/72 viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr)
+#: source_id: LMS-BR:374530/72 viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026)
 #: osm_watch: way id="1303423090" version="6"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: last_checked: 2025-08-18 (mapillary)
-#: next_check: 2025-12-31 (Baustellenschild)
+# REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
+#: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
 ',
          'from' => 1717909200,
          'id' => 4083,
-         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
+         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Juni 2026',
          'type' => 'handicap',
          'until' => undef
        },

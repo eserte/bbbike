@@ -542,13 +542,15 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095 (südlich der Binzstraße: Bauarbeiten beginnen 2021; nördlich der Binzstraße: konkrete Planungen nicht vor 2022)
 #: by: http://www.infravelo.de/projekt/neumannstrasse/ (2. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 4. Quartal 2021 - 4. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024) (2. Quartal 2024 - 2. Quartal 2025) (2. Quartal 2025 - 3. Quartal 2026) (3. Quartal 2025 - 3. Quartal 2026) (4. Quartal 2025 - 4. Quartal 2027) (2. Quartal 2026 - 4. Quartal 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/fahrrad-projekt-kommt-nach-15-jahren-planung-berliner-bezirk-baut-drei-meter-breiten-radweg--diesmal-ohne-beton-blocke-14654240.html (Beginn der Bauarbeiten Anfang 2026)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/senat-gibt-grunes-licht-fur-millionen-projekt-neuer-fahrradstreifen-soll-berliner-schulstrasse-sicherer-machen--aber-nur-teilweise-15112717.html (2026 Realisierung zwischen Thulestr. und Binzstr.)
 #: osm_watch: way id="35573588" version="30"
 #: osm_watch: way id="4632077" version="36"
 #: osm_watch: note 4459974 3
 #: XXX infravelo-Planung: nördlich Thulestr. geschützte Radfahrstreifen, südlich ohne Protektion; außerdem Umbau der Kreuzung Stahlheimer Straße/Wisbyer Straße, so dass auch eine "legale" Fahrtmöglichkeit von Süd nach Nord besteht
 #: last_checked: 2025-12-29 (mapillary)
 #: check_frequency: 180d
-#: next_check: 2027-12-31 (infravelo)
+# REMOVED --- #: next_check: 2027-12-31 (infravelo)
+#: next_check: 2026-12-31 (Tsp: 1. BA)
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4555
@@ -1476,8 +1478,9 @@ Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielle
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1346593.php ("Überarbeitung" notwendig)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1348146.php (weiterhin nicht freigegeben)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/gruenes-licht-fuer-zwei-radprojekte_a387901 (neue Planung gefordert)
+#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6156 (verkehrsrechtliche Anordnung durch die SenMVKU wurde zurückgezogen ---> Frequenz von 180d auf 360d erhöhen)
 #: last_checked: 2025-08-30 (mapillary)
-#: check_frequency: 180d
+#: check_frequency: 360d
 Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
 # 
 #: XXX zwischenzeitlich (April 2019) teilweise eine provisorische Radspur Richtung Süden wegen der Bauarbeiten am ZOB
@@ -5522,6 +5525,7 @@ Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1612069.php (Anradeln im fertigen Teil)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neuer-zeitplan-nach-jahrelanger-verzogerung-mit-pollern-oder-ohne-in-prenzlauer-berg-werden-zwei-neue-fahrradstrassen-eingerichtet-15061167.html (ab 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/vollsperrung-fur-zwei-wichtige-linien-in-berlin-gleisbauarbeiten-in-prenzlauer-berg-trennen-bald-pankow-und-mitte-15104676.html (Sperrungen wegen Gleisbauarbeiten in der Kastanienallee ab 2. Halbjahr 2026, SEV führt via Schwedter Straße)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neue-details-zu-tram-grossbaustelle-doppel-sperrung-zwischen-pankow-und-mitte-oder-nicht-bvg-schafft-klarheit-15109371.html
 #: osm_watch[closed]: note 3954748 9
 #: osm_watch: note 4127416 4
 # REMOVED --- #: XXX Vorfahrtsregelung wird auch geändert, Einbahnstraßenregelungen für Kfz (Höhe Fürstenberger Str. nur Richtung N/S bis Griebenower)
@@ -5994,7 +5998,7 @@ Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::;
 #: XXX Instandsetzung 2017, danach vielleicht bessere Qualität --- mittlerweile (2021) enthält die Liste der Straßenbaumaßnahmen diesen Eintrag nicht mehr
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
 #: osm_watch: way id="33361741" version="23"
-#: last_checked: 2025-01-14 (mapillary)
+#: last_checked: 2025-02-20 (mapillary)
 #: check_frequency: 360d
 Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,26445 3170,26502
 # 
@@ -6161,7 +6165,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="21"
-#: last_checked: 2026-01-02
+#: last_checked: 2026-01-08
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -6493,7 +6497,7 @@ An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Buch
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023) (inaktiv) (bis 6.6.2023) (bis 20.10.2023) (bis 31.12.2023) (vorfristig inaktiv)
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
-#: source_id: LMS-BR:395261/72 viz2021:13.480566,52.499214,07.11.2025,09:00 (Fahrstreifensperrung, bis 29.05.2026) (am nächsten Tag bereits inaktiv) (wieder bis 29.05.2026)
+#: source_id: LMS-BR:395261/72 viz2021:13.480566,52.499214,07.11.2025,09:00 (Fahrstreifensperrung, bis 29.05.2026) (am nächsten Tag bereits inaktiv) (wieder bis 29.05.2026) (und wieder gleich inaktiv)
 #: last_checked: 2025-12-23
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
@@ -11014,6 +11018,7 @@ A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21861,-2154 2166
 #: by: https://entwicklungsstadt.de/alt-buckow-stadt-und-land-eroeffnet-nachbarschaftstreff-am-gensweg/
 #: by: https://entwicklungsstadt.de/neue-wohnungen-in-den-buckower-feldern-stadt-und-land-startet-vermietung/
 #: by: https://www.entwicklungsstadt.de/nachhaltige-stadtentwicklung-im-sueden-berlins-rundgang-durch-die-buckower-felder/
+#: by: https://www.entwicklungsstadt.de/wohnungsneubau-in-berlin-erste-vermietungen-2026-in-plaenterwald-und-den-buckower-feldern/ (Bauarbeiten bis Ende 2026)
 # REMOVED --- #: XXX mögliche Straßennamen (laut bw) (mittlerweile im Amtsblatt bestätigt) (fehlen alle in Berlin.coords.data): --- #: XXX * An den Buckower Feldern (PLZ=12349) --- #: XXX * Gensweg (PLZ=12349) --- #: XXX * An den Weiden (PLZ=12349) --- #: XXX * Dyrekeweg (PLZ=12349) --- #: XXX * In den Bauerngärten (PLZ=12349) --- #: XXX sowie die Privatstraßen: --- #: XXX * Am Mühlanger (PLZ=12349) --- #: XXX * Knyphausenweg (PLZ=12349)
 #: osm_watch: way id="28319563" version="27"
 #: source_id: viz2021:13.436,52.41714,30.05.2024,06:00 (Wanderbaustelle, bis 31.08.2024) (inaktiv)
@@ -12975,6 +12980,7 @@ Greenpark: wird es hier öffentlich nutzbare Wege geben?	? 13155,5871 13187,5751 
 #: by: https://www.tagesspiegel.de/berlin/damit-im-winter-niemand-aussen-herum-radeln-muss-noch-zwei-monate-lang-ist-der-gorlitzer-park-nachts-offen-15064543.html (voraussichtlich ab 1.3.2026)
 #: by: https://www.entwicklungsstadt.de/goerlitzer-park-naechtlicher-wachdienst-soll-800-000-euro-kosten/
 #: by: https://www.morgenpost.de/berlin/article410813408/wachdienst-am-goerlitzer-park-kostet-berlin-sechsstelligen-betrag-im-jahr.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/verzogert-sich-die-parkschliessung-in-berlin-weiter-anwohner-wollen-gegen-zaun-um-den-gorlitzer-park-klagen-15111621.html
 #: XXX Werden die Wege nachts (genaue Schließzeiten?) abgeschlossen sein? Oder wird das nur situationsbedingt (wann?) passieren?
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: XXX die meisten Eingänge haben eine Tor-Drehkreuz-Kombination (man kann also nachts raus); Ausnahmen: Cuvrystr.+Ratiborstr.+Liegnitzer Str. (nur Tor) ...

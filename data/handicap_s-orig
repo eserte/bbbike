@@ -5186,14 +5186,15 @@ Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: last_checked: 2026-01-03 vvv
+#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026)
+#: last_checked: 2026-01-08 vvv
 #: check_frequency: 21d vvv
-# REMOVED --- #: next_check: 2025-12-18 vvv
+#: next_check: 2026-03-15 vvv
 # REMOVED --- #: valid: -20251219
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
 # XXX #: valid: !-20251219
 # XXX (sp‰ter wiederherstellen) --- Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 Colbestr.: eng	q0- 14468,11992 14416,11815
