@@ -2582,6 +2582,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_45_2805_2868_online.pdf (Teileinziehung während der Sitzungswochen Di-Fr, keine Termine)
 #: by: https://www.bundestag.de/parlament/plenum/sitzungskalender/bt2026-1084980
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Termine 2026)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_02_0065_0148_online.pdf (unveränderte Termine 2026)
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 #: next_check: 2026-01-12 (Bestätigung für die Sitzungswochen 2026?)
 	2::temp 8554,12593 8540,12420
@@ -7621,7 +7622,8 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 #: source_id: viz2021:13.321648,52.624144,22.07.2024,07:00 (hier ab Elsestr., bis 30.04.2025 + weitere Bauphasen) (inaktiv)
 #: source_id: viz2021:13.32381,52.6249,30.04.2025,11:31 (Höhe Elsestr., bis 29.11.2025) (inaktiv)
 #: source_id: viz2021:13.324736,52.625185,22.07.2024,07:00 (Elsestr. - Stadtgrenze, nur Kfz-Verkehr, bis 29.11.2025) (inaktiv)
-#: source_id: LMS-BR:340862/72 viz2021:13.32381,52.6249, (bis 29.11.2025) (bis 09.01.2026)
+#: source_id: LMS-BR:340862/72 viz2021:13.32381,52.6249, (bis 29.11.2025) (bis 09.01.2026) (inaktiv)
+#: also_indoor: traffic (G,T)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1815251677278060801
 #: by: https://pbs.twimg.com/media/GS3L_VJWQAAhbAU?format=jpg&name=medium
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/arbeiten-an-der-schildower-strasse-dauern-18-monate_a421648
@@ -7631,6 +7633,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=13055 (Einwohneranfrage zur Einbahnstraßenregelung)
 #: XXX Gesamtbauzeit 18 Monate; zwei Bauabschnitte, nächster Bauabschnitt ist Gertrudstr. - Landesgrenze
 #: note: laut osm keine Bauarbeiten mehr
+#: add_fragezeichen: Sind die Bauarbeiten in der Schildower Straße und Umgebung beendet? vvv
 #: next_check: 2026-01-09 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="82451158" version="16"
 #: osm_watch: note 4444217 2
@@ -7645,10 +7648,11 @@ Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
 #: next_check: 2026-01-09 (VIZ-Verkehrsmeldung)
 Bertastr.	q4::inwork 4448,24277 4510,24170
 #: next_check ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1721512800,
          'id' => 4117,
-         'text' => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024',
+         'text' => 'Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024, evtl. sind die Bauarbeiten bereits beendet',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9487,9 +9491,9 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'until' => 1798736400
        },
        {
-         'data' => '#: osm_watch: note 4953648 5
+         'data' => '#: osm_watch: note 4953648 6
 #: also_indoor: traffic (none)
-#: last_checked: 2026-01-07
+#: last_checked: 2026-01-08 (osm note)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
