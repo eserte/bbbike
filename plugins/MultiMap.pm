@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.55;
+$VERSION = 2.56;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -335,6 +335,14 @@ sub register {
 	  callback => sub { showmap_mapilio(@_) },
 	  callback_3_std => sub { showmap_url_mapilio(@_) },
 	  ($images{Mapilio} ? (icon => $images{Mapilio}) : ()),
+	  tags => [qw(streetview)],
+        };
+    $main::info_plugins{__PACKAGE__ . '_AppleMaps'} =
+	{ name => 'AppleMaps StreetView',
+	  callback => sub { showmap_applemaps_via_pythonanywhere(@_) },
+	  callback_3 => sub { show_applemaps_menu(@_) },
+	  allmaps_cb => sub { showmap_url_applemaps(@_) },
+	  ($images{AppleMaps} ? (icon => $images{AppleMaps}) : ()),
 	  tags => [qw(streetview)],
         };
     $main::info_plugins{__PACKAGE__ . '_BerlinerLinien'} =
@@ -1169,6 +1177,33 @@ hgCehACPdwD70QD/1AD/0wD/2gDpwwC1lgCLdACFbwCjhwDXsgD91ADzywDHpgCEbgCylAD/3gD8
 0gD/1AD/1AD+0wD/2QD/4wD/3wD/2gD/5AD/3QD+1AD/1gD/4AD/5AD/2gD/0wD/1AC5Cre8AAAA
 K0lEQVQYV2NhYEQFLAJDQ+DLfxY+ZP6N/1qoAuaM21j4UbRcj0QTsMS0BQCz4AhbtS1HHQAAAABJ
 RU5ErkJggg==
+EOF
+    }
+
+    if (!defined $images{AppleMaps}) {
+	# Created with:
+	#   wget 'https://maps.apple.com/static/maps-app-web-client/images/maps-app-icon-120x120.png'
+	#   convert -resize 16x16 maps-app-icon-120x120.png maps-app-icon-16x16.png
+	#   pngcrush -brute -reduce -rem allb -m 0 maps-app-icon-16x16.png maps-app-icon-16x16-2.png
+	#   base64 maps-app-icon-16x16-2.png
+	$images{AppleMaps} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAwpJREFU
+OBEFwU1oHGUYwPH/+847s7NJNslmk00xlmgLpko+SCxGaiEVgtqWgq0IEXoLnvQgpZciSK0HQWp6
+EjwJBbE9eSsVv0BoPYiSg81hazFYNZpmsmuym83OzrzP4+9n3q1fCkPCJUUuTpqZidt3Xy18cd8B
+cGpcOf/iLep2g2OPTuD3ld0D9fT76OuaV39V0JuurMNv1LW+okglsx4Vg+QAoAJelYbskoce2oa+
+Tn+hJypNJ5JcA2PsOff6hRkzV/HekkqOeMVn4DOQHHJRNvNtkmKCtZagGXI0nadEuZKJXnAjpjrx
+cvgKY+Yge9JGPPhMAZBc6XrPjt/nJ7fKqdJLsAuVZISTpZM0osaEUzS2apkOpvBWuJ4JdAwAPlNS
+n9POc9byBxTjXk7oMUwLgoajaqqxU0BRVAQvwoAzTFbBGihHyn63SytPCUzAD/nPbIQJL5SPMtYd
+JfIhLlhvkT0W460SBJZzsxGHD1pEYXII6tEAnbZHrWCsYTW/z5pdZzgoMxj1YzqfrGl3LEafHeLb
+vX7eu2PpCaEQwOYevDO/x9bAdb7Z/REbWIy1gKIoCljpeoKHTTYTw/t3LLUtWJ6Ct2fhz//g2t1e
+FoIlzvYt4jSinXfpeE/qha4XnHiP6Qn4NY2pPYLxEiw+AT0hPDUA97bg960yy4fOMhkf4fPmLe6l
+DwDFYLDiBfEeo4rPYHEc2l34twmnD4NmYFCMGp4vTvNB9S3OD56mZPvIERxeyXZSpmgxeyCmGMDy
+l9DO4MwETA7D3KiQeSVwSsUO8mb5NWbjI9zY+UqdqnY0k3ho7S+uzPVy5ZciqxugCqGFy8f/YTz7
+jtwtYMMqimIwzBenebpwKHWI1KyxM90/msxV1vnszJOsJSFe4Zlh4fHWp4R/f0g8uEg+cgktPgeA
+IJRsb80CK8aY7dA62PMM0OJ4tcHCaIMh24Q8oeAyovZtejaWiOofY3wCmG1FVxxww4AGxl40UWFC
+4rggooDibEih4AjagAHjNygkl1Ob/VZLRz66KtHIzf8B1/J0hX2FaC8AAAAASUVORK5CYII=
 EOF
     }
 }
@@ -2163,6 +2198,73 @@ sub showmap_mapilio {
     my $url = showmap_url_mapilio(%args);
     start_browser($url);
 }
+
+######################################################################
+# Apple StreetView via pythonanywhere
+
+sub showmap_url_applemaps_via_pythonanywhere {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    # sample URL: https://lookmap.eu.pythonanywhere.com/#c=18/52.507503/13.460554&p=52.507503/13.460554&a=328.94/-11.04
+    sprintf 'https://lookmap.eu.pythonanywhere.com/#c=%d/%f/%f&p=%f/%f', $scale, $py, $px, $py, $px;
+}
+
+sub showmap_applemaps_via_pythonanywhere {
+    my(%args) = @_;
+    my $url = showmap_url_applemaps_via_pythonanywhere(%args);
+    start_browser($url);
+}
+
+sub showmap_url_applemaps {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    # sample URL: https://maps.apple.com/look-around?coordinate=52.592878150036974%2C13.322970502516824
+    sprintf 'https://maps.apple.com/look-around?coordinate=%f,%f', $py, $px;
+}
+
+sub showmap_applemaps {
+    my(%args) = @_;
+    my $url = showmap_url_applemaps(%args);
+    start_browser($url);
+}
+
+sub show_applemaps_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_AppleMaps_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'AppleMaps',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'Apple StreetView via pythonanywhere',
+	 -command => sub { showmap_applemaps_via_pythonanywhere(%args) },
+	);
+    $link_menu->command
+	(-label => 'Apple Maps',
+	 -command => sub { showmap_applemaps(%args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => "Link kopieren (StreetView)",
+	 -command => sub { _copy_link(showmap_url_applemaps_via_pythonanywhere(%args)) },
+	);
+    $link_menu->command
+	(-label => "Link kopieren (Maps)",
+	 -command => sub { _copy_link(showmap_url_applemaps(%args)) },
+	);
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
+}
+
 
 ######################################################################
 # berliner-linien.de
