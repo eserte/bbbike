@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2025 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2026 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -7883,9 +7883,11 @@ sub set_bindings {
 	       });
 
     $top->bind("<<CloseMainWin>>" => \&exit_app);
-    for my $mod (qw(Alt Control)) {
-	$top->bind("<$mod-r>" => sub { reload_all() });
-    }
+
+    $top->eventAdd(qw[<<Reload>> <Alt-r>]);
+    $top->eventAdd(qw[<<Reload>> <Control-r>]);
+    eval { $top->eventAdd(qw[<<Reload>> <Key-XF86Reload>]) };
+    $top->bind('<<Reload>>' => sub { reload_all() });
 
     $top->bind('<Control-o>' => sub { load_save_route(0) });
     $top->bind('<Control-s>' => sub { load_save_route(1) });
