@@ -423,7 +423,7 @@ sub _xmllint_string_with_XML_LibXML {
 	my $diag = "Errors:\n" . join("\n", @errors) . "\nXML:\n" . $content;
 	if (length $diag > 1024) {
 	    require File::Temp;
-	    my($tempfh,$tempfile) = File::Temp::tempfile(SUFFIX => ".xml",
+	    my($tempfh,$tempfile) = File::Temp::tempfile(SUFFIX => ".xml.txt",
 							 UNLINK => 0);
 	    print $tempfh $diag;
 	    close $tempfh;
