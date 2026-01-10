@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2010,2011,2012,2018,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2010,2011,2012,2018,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -30,7 +30,7 @@ use BBBikeUtil qw(is_in_path);
 
 sub save_pwd (&);
 
-our $VERSION = "0.05";
+our $VERSION = "0.06";
 
 use constant TIMEOUT => 60;
 
@@ -317,10 +317,14 @@ sub download_osm_tile {
 	    if ($n) {
 		warn "Would mirror $url to $dest\n";
 	    } else {
+		my $real_dest = $dest;
 		if ($debug >= 1) {
 		    warn "Mirroring $url -> $dest...\n";
 		}
 		my $resp = $ua->mirror($url, $dest);
+		if ($debug >= 3) {
+		    warn "Request:\n" . $resp->request->as_string . "\nResponse:\n" . $resp->dump;
+		}
 		if (!$resp->is_success) {
 		    die "No success while mirroring '$url' to '$dest': " . $resp->status_line;
 		} else {
@@ -331,10 +335,15 @@ sub download_osm_tile {
 			}
 			rename $dest, "$dest.gz"
 			    or die "Cannot rename $dest to $dest.gz: $!";
+			$real_dest = "$dest.gz";
 		    } elsif ($dest !~ m{\.gz$}) {
 			system('gzip', '-f', $dest);
 			die "gzip $dest: $@" if $? != 0;
+			$real_dest = "$dest.gz";
 		    }
+		}
+		if ($real_dest =~ /\.gz$/) {
+		    _maybe_convert_zlib($real_dest);
 		}
 	    }
 	} else {
@@ -399,6 +408,34 @@ sub download_osm_tile {
 
 	return $result;
     }
+}
+
+# openstreetmap started to generate zlib content, which is gzip
+# minus some headers. gzip/gunzip can handle such files, but
+# XML::LibXML cannot, so we decompress and compress such files.
+# Requires IPC::Run.
+sub _maybe_convert_zlib {
+    my $file = shift;
+    if (open my $ifh, '<', $file) {
+	binmode $ifh;
+	read($ifh, my $buf, 2);
+	if ($buf =~ /^\x78/) {
+	    if ($debug >= 1) {
+		warn "INFO: zlib file detected --- need to decompress and recompress it.\n";
+	    }
+	} else {
+	    # probably a proper gzip file
+	    return;
+	}
+    }
+
+    require IPC::Run;
+    IPC::Run::run(['gzip', '-cd', $file], '|', ['gzip'], '>', "$file~")
+	    or die "Error while decompressing and recompressing file $file to $file~...\n";
+    -s "$file~"
+	or die "Destination file $file~ is empty";
+    rename "$file~", $file
+	or die "Error renaming $file~ to $file: $!";
 }
 
 # REPO BEGIN
