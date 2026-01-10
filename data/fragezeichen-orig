@@ -12538,6 +12538,8 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-riesiges-neubauviertel-so-entsteht-die-insel-gartenfeld--die-grosse-fotostrecke-14377331.html
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamtes/2-beschluss-16092025.pdf (Benennung der öffentlichen Straßen, Wirksamkeit zum 15.11.2025)
 #: by: https://www.entwicklungsstadt.de/fortschritt-auf-der-insel-gartenfeld-quartiersentwicklung-erreicht-neues-etappenziel/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neues-viertel-fur-10000-berliner-die-bvg-schickt-diese-neue-buslinie-ins-riesige-neubaugebiet-auf-der-insel-gartenfeld-15118268.html
+#: by: https://www.gewobag.de/bauen-in-berlin/bauprojekte/neues-gartenfeld-1-bauabschnitt/
 #: osm_watch: relation id="10290512" version="6"
 #: osm_watch: way id="1306187833" version="27"
 #: osm_watch: way id="1306187834" version="26"
@@ -12568,13 +12570,14 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: check_frequency: 180d vvv
 #: next_check: 2026-04-12 (Fahrplanänderung) vvv
 # REMOVED --- #: next_check: 2028-06-30 vvv
-Insel Gartenfeld: Stadtquartier entsteht, einige Planstraßen, Uferpromenade, Ufergrünzug, eine Brücke	?::inwork -910,16549 -1038,15673 -852,15528 -358,15621 -245,16027 -910,16549
-Planstraße 1 (Moderlieschenstr.)	?::projected -292,15715 -384,15782 -455,15698 -612,15818 -870,16012 -903,15970 -1006,15833
-Planstraße 2 (Gründlingstr.)	?::projected -612,15818 -648,15777 -903,15970
-Planstraße 3 (Rotfederstr.)	?::projected -814,16109 -744,16191 -712,16228 -674,16276 -624,16239 -491,16138 -416,16081 -368,16045 -256,15959 -301,15896 -384,15782
-Planstraße 4 (Alandstraße)	?::projected -384,15782 -502,15873 -549,15908 -814,16109
+# REMOVED --- (geplante Straßen bereits eingezeichnet) --- Insel Gartenfeld: Stadtquartier entsteht, einige Planstraßen, Uferpromenade, Ufergrünzug, eine Brücke	?::inwork -910,16549 -1038,15673 -852,15528 -358,15621 -245,16027 -910,16549
+Planstraße 1 (Moderlieschenstr.)	?::projected -292,15715 -384,15782 -437,15721 -596,15838 -864,16036 -910,15975 -1006,15833
+Planstraße 2 (Gründlingstr.)	?::projected -596,15838 -648,15777 -910,15975
+Planstraße 3 (Rotfederstr.)	?::projected -809,16106 -744,16191 -712,16228 -674,16276 -624,16239 -491,16138 -416,16081 -368,16045 -256,15959 -301,15896 -384,15782
+Rotfederstr. - Moderlieschenstr.: wird es hier  eine Verbindung geben?	?::projected -809,16106 -864,16036
+Planstraße 4 (Alandstraße)	?::projected -384,15782 -502,15873 -549,15908 -809,16106
 Planstraße 5 (Steinbeißerpromenade)	?::projected -233,15997 -855,16489
-Planstraße 6 (Stintplatz)	?::projected -612,15818 -549,15908 -482,15994 -416,16081
+Planstraße 6 (Stintplatz)	?::projected -596,15838 -549,15908 -482,15994 -416,16081
 #: note: ursprünglich angedachte Brücke im Anschluss des Wegs wird nicht realisiert
 Planstraße 7 (Rapfenweg) (Fußgänger/Radfahrerbereich)	?::projected -648,15777 -805,15564
 Private Planstraße 1 (Silberkarpfenstr.)	?::projected -674,16276 -853,16413 -890,16363 -712,16228

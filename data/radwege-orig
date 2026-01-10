@@ -2588,11 +2588,12 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: XXX Nürnberger Str.: mittlerweile gibt es wegen einer Hochbaustelle provisorische Radspuren; Halteverbotsschilder bis 30.06.2025
 #: osm_watch: way id="4491980" version="28"
 #: priority: #B
-#: last_checked: 2025-10-31 vvv
+#: last_checked: 2026-01-10 (daf) vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) vvv
-provisorische Radspuren	RW3; 5866,10492 6025,10746
+#: historical_note: zeitweise provisorische Radspuren, RW3
+	RW0; 5866,10492 6025,10746
 #: historical_note: früher eingetragen: provisorische Radspuren, RW3;
 #: note: provisorische Radspuren starten erst 70m hinter der Kreuzung
 #: note: kann zugeparkt sein (oder ist immer?), gesehen am 2025-06-14 (Fr) abends und 2025-07-17 (Do) abends Richtung Südwesten
@@ -8360,7 +8361,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-09
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456

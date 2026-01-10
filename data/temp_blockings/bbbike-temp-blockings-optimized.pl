@@ -5155,7 +5155,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: osm_watch: way id="362719487" version="18"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2026-01-05 (osm)
+#: last_checked: 2026-01-10 (daf)
 #: check_frequency: 180d
 #: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 	q4::inwork 6021,10405 6116,10688
@@ -5808,7 +5808,57 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: HAEMMERLING-2022
+#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
+#: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
+#: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023) (bis 14.09.2023) (inaktiv)
+#: source_id: viz2021:13.57292,52.460387,14.11.2023,09:00 (Kraneinsatz in der Hämmerlingstr., Sperrung nur für Kfz-Verkehr, bis 14.11.2023) (inaktiv)
+#: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
+#: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
+#: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024) (inaktiv)
+#: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
+#: source_id: adac:89620388 (bis voraussichtlich 08.08.2025) (inaktiv)
+#: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025) (inaktiv)
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
+#: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
+#: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
+#: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
+#: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230330.pdf (Hämmerlingstr. bis 15.6.2023 gesperrt)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (Hämmerlingstr. ab Ende Juni 2023 passierbar)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf (bis 11.7.2023)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734 (rechtzeitig zur Sperrung der Bahnhofstr. offen?)
+#: by: https://phoenix1554.wordpress.com/2023/08/20/umbau-bahnhof-berlin-kopenick-20-08-2023/ (Freigabe am 28.8.2023?)
+#: by: https://www.deutsches-architekturforum.de/thread/15143-neubau-regionalbahnhof-k%C3%B6penick/?postID=760886#post760886
+#: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1758065960009744712#m (auch Fußgänger sind betroffen!)
+#: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOu2XcAAADii.jpg (Detailkarte der Sperrung)
+#: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025) (neue Sperrung: 26. Januar (circa 5 Uhr), bis Freitag, 6. März 2026 (circa 11 Uhr))
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1836261367248228357
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html (21. Juli 2025 6 Uhr bis 8. August 2025 12 Uhr)
+#: by: https://www.entwicklungsstadt.de/bahnhof-koepenick-neue-sperrungen-im-zuge-des-grossumbaus/
+#: osm_watch: note 3566736 14
+# REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
+# REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
+# REMOVED --- #: osm_watch: way id="794278028" version="10"
+# REMOVED --- #: osm_watch: way id="1181902719" version="1"
+# REMOVED --- #: XXX nächste Sperrung der Hämmerlingstr.: Von Montag, 21. Juli (6 Uhr), bis Freitag, 8. August 2025 (vsl. 12 Uhr)
+Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
+# REMOVED (hier nicht?) Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 22000,6245 22033,6144
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => 1769382000,
+         'id' => 3549,
+         'text' => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 26.01.2026 06:00 Uhr bis 06.03.2026 11:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1772791200
+       },
        undef,
        {
          'data' => '#: next_check_id: WILTBERG-2022
@@ -7051,7 +7101,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="2"
-#: last_checked: 2025-12-05
+#: last_checked: 2026-01-10 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
@@ -7644,7 +7694,7 @@ Schildower Str. zwischen Elsestr. und Stadtgrenze	q4::inwork 4683,24275 4705,242
 # REMOVED (hier vermutlich beendet?) --- Gertrudstr.: Fahrbahn im Kreuzungsbereich gesperrt	q3::inwork 4737,24064 4614,24233 4565,24327
 Amandastr.: Einbahnstraßenregelung	q4::inwork; 4302,24291 4312,24323 4340,24413
 Seeblickstr.: Einbahnstraßenregelung	q4::inwork; 4233,24459 4187,24332
-#: source_id: LMS-BR:391852/72 viz2021:13.32023,52.62501,01.12.2025,07:00 (bis 09.01.2026)
+#: source_id: LMS-BR:391852/72 viz2021:13.32023,52.62501,01.12.2025,07:00 (bis 09.01.2026) (inaktiv)
 #: next_check: 2026-01-09 (VIZ-Verkehrsmeldung)
 Bertastr.	q4::inwork 4448,24277 4510,24170
 #: next_check ^^^
@@ -8839,24 +8889,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: adac:879720956 (bis voraussichtlich 02.10.2025) (neue ID -> inaktiv)
-#: note: bei rbb bis 02.10.2025
-#: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
-#: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
-#: also_indoor: traffic (T,G)
-#: last_checked: 2026-01-04 (traffic)
-#: check_frequency: 7d (traffic)
-# REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
-# REMOVED (hier nicht (mehr?)) ---	q4::inwork 5700,10226 5597,10299
-	q4::inwork 5597,10299 5450,10338
-',
-         'from' => 1752012000,
-         'id' => 4385,
-         'text' => 'Schaperstr.: Bauarbeiten, Fahrbahn zwischen Nürnberger Str. und Joachimsthaler Str. gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9122,8 +9155,8 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'until' => undef
        },
        {
-         'data' => '#: also_indoor: traffic (G,H[zu viel])
-#: last_checked: 2025-11-12
+         'data' => '#: also_indoor: traffic (G,H,no-T)
+#: last_checked: 2026-01-10 (traffic)
 #: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 ',
@@ -9740,18 +9773,7 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
          'until' => 1773676800
        },
        undef,
-       {
-         'data' => '#: next_check_id: RUEDICKEN-2025
-#: also_indoor: traffic (G[zu lang],T[zu kurz])
-#: last_checked: 2025-12-12
-	q3::inwork 17159,17631 17186,17593 17264,17489
-',
-         'from' => undef,
-         'id' => 4515,
-         'text' => 'Rüdickenstr.: Baustelle, Fahrbahn gesperrt, Gehweg für Radfahrer frei, Bordsteine, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
