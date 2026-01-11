@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2014,2017,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2014,2017,2023,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeApacheSessionCounted;
@@ -16,7 +15,7 @@ package BBBikeApacheSessionCounted;
 use strict;
 use vars qw($VERSION $debug);
 
-$VERSION = '0.06';
+$VERSION = '0.07';
 $debug = $main::debug; # XXX hmmmm
 $main::debug = $main::debug if 0; # cease -w
 
@@ -32,6 +31,7 @@ our %CLUSTER_DEFS = (
 		     #'lvps176-28-19-132.dedicated.hosteurope.de' => [5, 'http://bbbike.lvps176-28-19-132.dedicated.hosteurope.de/cgi-bin/asch'],
 		     #'bbbike-vmz'                                => [6, 'http://ip78-137-103-246.pbiaas.com/cgi-bin/asch'],
 		     'lvps83-169-5-248.dedicated.hosteurope.de'  => [7, 'http://bbbike.lvps83-169-5-248.dedicated.hosteurope.de/cgi-bin/asch'],
+		     '177.227.205.92.host.secureserver.net'      => [8, 'http://177.227.205.92.host.secureserver.net/cgi-bin/asch'],
 		    );
 ######################################################################
 our $THIS_HOST_ID;
