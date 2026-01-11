@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2011,2017,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2011,2017,2024,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # Interface to BBBikeDraw.pm
@@ -265,7 +264,7 @@ if (defined $dimfile) {
     while(my($k,$v) = each %$draw) {
 	delete $draw->{$k} if $k =~ /^(_|Image$)/;
     }
-    print DIM Data::Dumper->Dumpxs([$draw], ['draw']);
+    print DIM Data::Dumper->new([$draw], ['draw'])->Indent(1)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump;
     close DIM;
 }
 
