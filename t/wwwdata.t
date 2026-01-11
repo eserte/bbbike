@@ -63,7 +63,7 @@ GetOptions("htmldir=s" => \$htmldir,
 	       $htmldir = $BBBike::BBBIKE_UPDATE_WWW;
 	   },
 	   "pps"       => sub {
-	       $htmldir = 'http://bbbike-pps-jessie/BBBike';
+	       $htmldir = 'http://bbbike-pps-bookworm/BBBike';
 	   },
 	   "long"      => \$long_test,
 	   'add-inc=s@' => sub {

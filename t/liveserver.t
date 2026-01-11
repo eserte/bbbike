@@ -40,7 +40,7 @@ plan skip_all => "skip bbbike.de live tests" if $ENV{BBBIKE_TEST_SKIP_BBBIKE_DE}
 
 my $bbbike_url               = "http://bbbike.de";
 my $bbbike_data_url          = "$bbbike_url/BBBike/data";
-my $bbbike_pps_url           = "http://bbbike-pps-jessie";
+my $bbbike_pps_url           = "http://bbbike-pps-bookworm";
 my $bbbike_data_pps_url      = "$bbbike_pps_url/BBBike/data";
 
 my @urls;
