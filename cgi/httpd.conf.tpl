@@ -228,6 +228,11 @@ ServerAlias [% SERVER_ALIAS %]
             </Location>
         </IfDefine>
         <IfDefine !BBBIKE_USE_PLACK_MODPERL>
+	    <IfModule mod_headers.c>
+		<Location [% ROOT_URL %]/data/.modified>
+		    Header set Content-Type "application/x-bbbike-data"
+		</Location>
+	    </IfModule>
             PerlModule BBBikeDataDownloadCompat
             <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2|label|multi_bez_str)$">
                 SetHandler perl-script
