@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2020,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: srezic@cpan.org
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use FindBin;
@@ -74,7 +73,7 @@ EOF
 sub usage_cgi (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] cgi [--dist debian|ubuntu|...] [--distver stretch|...] [--test]
-	 [--invalidate-apt] [--[no]mapserver] [--use-bbbike-ppa] [--force-ipv4]
+	 [--invalidate-apt] [--[no]mapserver] [--use-bbbike-ppa] [--no-force-ipv4]
 EOF
 }
 
@@ -1211,7 +1210,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
     my %opt = (
 	       jobs    => 1,
 	       dist    => 'debian',
-	       distver => 'jessie',
+	       distver => 'bookworm',
 	       src     => 'local',
 	       branch  => undef,
 	       env     => {},
@@ -1265,12 +1264,12 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 } elsif ($subcmd =~ m{^(cgi|web)$}) {
     my %opt = (
 	       dist    => 'debian',
-	       distver => 'jessie',
+	       distver => 'bookworm',
 	       test => 0,
 	       'invalidate-apt' => 0,
 	       mapserver => 0,
 	       'use-bbbike-ppa' => undef,
-	       'force-ipv4' => 0,
+	       'force-ipv4' => 1,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -1406,7 +1405,7 @@ source directory into the docker container:
 
 A crontab entry may look like this:
 
-    48 0 * * *      mkdir -p $HOME/log/docker-bbbike-debian-jessie && cd $HOME/cvrsnica/src/bbbike && ./miscsrc/docker-bbbike test --dist debian --distver jessie --src local --env BBBIKE_TEST_SKIP_MAPSERVER=0 > $HOME/log/docker-bbbike-debian-jessie/$(date +\%FT\%T.log) 2>&1
+    48 0 * * *      mkdir -p $HOME/log/docker-bbbike-debian-bookworm && cd $HOME/cvrsnica/src/bbbike && ./miscsrc/docker-bbbike test --dist debian --distver bookworm --src local --env BBBIKE_TEST_SKIP_MAPSERVER=0 > $HOME/log/docker-bbbike-debian-bookworm/$(date +\%FT\%T.log) 2>&1
 
 Coverage testing may be activated using the C<--cover-dir> option
 which needs to be set to a directory which contains the coverage
@@ -1440,7 +1439,7 @@ Create a debian package for an existing tarball:
 
 Run the cgi in a docker container:
 
-    ./miscrc/docker-bbbike cgi --distver jessie
+    ./miscsrc/docker-bbbike cgi --distver bookworm
 
 =head1 HOWTOS
 
@@ -1454,9 +1453,9 @@ a debian package).
 
 If not the default live server should be used for updates, then open
 ptksh (Shift-P) and set another server. The following works for using
-a starman installation on the host C<bbbike-pps-jessie>:
+a starman installation on the host C<bbbike-pps-bookworm>:
 
-    $BBBike::BBBIKE_UPDATE_WWW='http://bbbike-pps-jessie:5000/BBBike';
+    $BBBike::BBBIKE_UPDATE_WWW='http://bbbike-pps-bookworm:5000/BBBike';
 
 Now you can use "Einstellungen > Daten-Update über das Internet".
 
