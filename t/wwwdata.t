@@ -102,6 +102,7 @@ my $ua_http_agent_fmt = "bbbike/%s (Http/$Http::VERSION) ($^O) BBBike-Test/1.0";
 
 my %contents;         # url => [{md5 => ..., ua_label => ..., accept_gzip => ...}, ...]
 my %compress_results; # $accept_gzip => { $content_type => { $got_gzipped => $count } }
+my %seen_bbbike_data_versions;
 my @bench_results;
 my %done_filesystem_comparison;
 my @diags;
@@ -218,6 +219,7 @@ EOF
 	my_note "The following Content-Types are sometimes compressed, sometimes uncompressed: " . join(", ", sort keys %mixed_compression_ct);
     }
 }
+my_note "The following X-BBBike-Data-Version values were returned: " . join(", ", sort keys %seen_bbbike_data_versions);
 
 if ($long_test) {
     diag "Timings:";
@@ -501,6 +503,15 @@ EOF
 		    };
 	    } else {
 		diag "No content check for $file defined";
+	    }
+
+	    my $got_bbbike_data_version = $resp->header('X-BBBike-Data-Version');
+	    if (defined $got_bbbike_data_version) {
+		$seen_bbbike_data_versions{$got_bbbike_data_version}++;
+		no warnings 'numeric';
+		if ($bbbike_version >= 3.16 && $bbbike_version < 3.18) { # XXX currently "newest" might be returned for 3.18, which might need to be adjusted if newer bbbike data+program versions and old-bbbike-data directories appear
+		    is $got_bbbike_data_version, $bbbike_version, 'expected X-BBBike-Data-Version header';
+		}
 	    }
 
 	}
