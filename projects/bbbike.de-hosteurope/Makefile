@@ -912,7 +912,7 @@ automatic-deployment--run:
 	-@${XTERM_CONF_TITLE} "BBBike deployment"
 	${MAKE} deploy
 	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff"
-	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list rsync-XXX-list rsync-bbbgeojsonp rsync-geojson BBBIKE_HOSTEUROPE_HOST=${BBBIKE_HOSTEUROPE_HOST} BBBIKE_HOSTEUROPE_USER=${BBBIKE_HOSTEUROPE_USER}
+	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list rsync-XXX-list rsync-bbbgeojsonp rsync-geojson BBBIKE_HOSTEUROPE_HOST=${BBBIKE_HOSTEUROPE_SSH_HOST} BBBIKE_HOSTEUROPE_USER=${BBBIKE_HOSTEUROPE_USER}
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync -unconfirmed
 	-@${XTERM_CONF_TITLE} "BBBike deployment finished"

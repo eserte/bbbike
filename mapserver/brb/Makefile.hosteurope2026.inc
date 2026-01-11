@@ -2,7 +2,9 @@
 RSYNC=	rsync
 BBBIKE_HOSTEUROPE_USER=	root
 BBBIKE_HOSTEUROPE_SSH_HOST=	177.227.205.92.host.secureserver.net
-BBBIKE_HOSTEUROPE_HOST=	bbbike.177.227.205.92.host.secureserver.net
+#BBBIKE_HOSTEUROPE_SSH_HOST=	bbbike.de
+#BBBIKE_HOSTEUROPE_HOST=	bbbike.177.227.205.92.host.secureserver.net
+BBBIKE_HOSTEUROPE_HOST=	bbbike.de
 BBBIKE_HOSTEUROPE_APACHE_DIR=	/srv/www/bbbike-webserver/
 BBBIKE_MAPSERVER_URL=	http://bbbike.177.227.205.92.host.secureserver.net/cgi-bin/mapserv
 BBBIKE_MAPSERVER_DIRECT=	http://bbbike.177.227.205.92.host.secureserver.net/mapserver/brb/
