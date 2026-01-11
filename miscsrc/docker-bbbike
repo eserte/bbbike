@@ -1455,7 +1455,7 @@ If not the default live server should be used for updates, then open
 ptksh (Shift-P) and set another server. The following works for using
 a starman installation on the host C<bbbike-pps-bookworm>:
 
-    $BBBike::BBBIKE_UPDATE_WWW='http://bbbike-pps-bookworm:5000/BBBike';
+    $BBBike::BBBIKE_UPDATE_WWW='http://bbbike-pps-bookworm/BBBike';
 
 Now you can use "Einstellungen > Daten-Update über das Internet".
 
