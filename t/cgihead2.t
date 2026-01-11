@@ -95,7 +95,7 @@ for my $var (@var) {
     $url{$var} = \@url;
 }
 
-plan tests => 1 + 3 * (scalar(map { @$_ } values %url));
+plan tests => 3 * (scalar(map { @$_ } values %url));
 
 my $ua = LWP::UserAgent->new(keep_alive => 10);
 $ua->agent('BBBike-Test/1.0');
@@ -153,28 +153,6 @@ for my $var (@var) {
 	$ua->timeout($timeout);
 
 	check_url($url, $var);
-    }
-}
-
-SKIP: {
-    my $no_tests = 1;
-    skip "Test does not apply anymore", $no_tests;
-    # That's because $BBBike::DISTDIR is now set to a different
-    # download link, not using anymore the sf mirrors.
-
-    my $bsd_port_dir = "/usr/ports";
-    if (-d $bsd_port_dir) {
-	chdir "$bsd_port_dir/Mk" or die "Cannot chdir into Mk directory: $!";
-	my($output) = `make -f bsd.sites.mk -V MASTER_SITE_SOURCEFORGE 2>/dev/null`;
-	chomp $output;
-	my @sf_dist_dir = map { s{%SUBDIR%/*}{bbbike}g; $_ } split / /, $output;
-	if (grep { $_ eq $BBBike::DISTDIR } @sf_dist_dir) {
-	    pass("Found $BBBike::DISTDIR in Sourceforge sites");
-	} else {
-	    fail("Cannot find $BBBike::DISTDIR in @sf_dist_dir");
-	}
-    } else {
-	skip "No BSD ports available", $no_tests
     }
 }
 
