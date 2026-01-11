@@ -77,7 +77,7 @@ push @var, (qw(
 	       $BBBike::SF_DISTFILE_DEBIAN
 	       $BBBike::SF_DISTFILE_DEBIAN_I386
 	       $BBBike::SF_DISTFILE_DEBIAN_AMD64
-	       $BBBike::DISTFILE_FREEBSD_I386
+	       $BBBike::DISTFILE_FREEBSD_AMD64
 	      ),
 	   );
 # Not HEADable:
@@ -135,7 +135,7 @@ for my $var (@var) {
 
 	local $TODO;
 	if (TODO_FREEBSD_PKG_ERRORS &&
-	    ($url eq $BBBike::DISTFILE_FREEBSD_I386 # || $url eq $BBBike::DISTFILE_FREEBSD_ALL
+	    ($url eq $BBBike::DISTFILE_FREEBSD_AMD64 # || $url eq $BBBike::DISTFILE_FREEBSD_ALL
 	    )
 	   ) {
 	    $TODO = TODO_FREEBSD_PKG_ERRORS;
