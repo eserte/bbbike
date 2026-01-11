@@ -3,7 +3,7 @@ package BBBikeApacheSessionCountedHandler;
 use strict;
 use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 use BBBikeApacheSessionCounted;
 
@@ -19,6 +19,7 @@ my $app = sub {
 
     my $sess = BBBikeApacheSessionCounted::tie_session($session_id);
     my $res = Plack::Response->new;
+    $res->header('X-Tag', 'rm.asch');
 
     if (!$sess || !(tied %$sess)) {
         warn "Cannot tie session with id $session_id";
