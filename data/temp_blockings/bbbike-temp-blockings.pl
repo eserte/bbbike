@@ -17966,7 +17966,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Termine 2026)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_02_0065_0148_online.pdf (unveränderte Termine 2026)
 # REMOVED (ja) --- #: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
-#: next_check: 2026-01-12 (Bestätigung für die Sitzungswochen 2026?)
+#: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 EOF
      },
@@ -48210,6 +48210,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/grunewaldstra%C3%9Fe-8-neubau.1300/#post-24727
 #: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/tiefe-baugrube-grosse-geschichte-dieser-berliner-museumsneubau-uberrascht-mit-einer-zaun-galerie-15023919.html
+#: by: https://www.entwicklungsstadt.de/museumsneubau-bildlabor-kleistpark-in-schoeneberg-kulturprojekt-kommt-nur-langsam-voran/
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
@@ -48902,7 +48903,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-01-05 (traffic) vvv
+#: last_checked: 2026-01-11 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -49736,11 +49737,11 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 # REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (ex-T,G,no-H,no-W)
+#: also_indoor: traffic (re-T,G,no-H,W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2025-12-29 (traffic)
+#: last_checked: 2026-01-11 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 7628,9365 7509,9337
 EOF
