@@ -115,6 +115,16 @@ ServerAlias [% SERVER_ALIAS %]
     ErrorLog  [% ERROR_LOG %]
     CustomLog [% ACCESS_LOG %] srt
 
+    <IfDefine BBBIKE_USE_PLACK_PROXY>
+	ProxyPreserveHost On
+    </IfDefine>
+
+    <IfDefine BBBIKE_USE_PLACK_PROXY>
+	# needs to come before ScriptAlias [% CGI_ROOT_URL %]
+	ProxyPass        [% CGI_ROOT_URL %]/asch http://localhost:[% PLACK_PORT %]/cgi-bin/asch
+	ProxyPassReverse [% CGI_ROOT_URL %]/asch http://localhost:[% PLACK_PORT %]/cgi-bin/asch
+    </IfDefine>
+
 [%      IF MAPSERV_FILE -%]
     ScriptAlias [% CGI_ROOT_URL %]/mapserv [% MAPSERV_FILE %]
 
@@ -190,9 +200,8 @@ ServerAlias [% SERVER_ALIAS %]
     </IfModule>
 
     <IfDefine BBBIKE_USE_PLACK_PROXY>
-	ProxyPreserveHost On
-	ProxyPass        /BBBike/data http://localhost:[% PLACK_PORT %]/BBBike/data
-	ProxyPassReverse /BBBike/data http://localhost:[% PLACK_PORT %]/BBBike/data
+	ProxyPass        [% ROOT_URL %]/data http://localhost:[% PLACK_PORT %]/BBBike/data
+	ProxyPassReverse [% ROOT_URL %]/data http://localhost:[% PLACK_PORT %]/BBBike/data
     </IfDefine>
     <IfDefine !BBBIKE_USE_PLACK_PROXY>
     <IfModule perl_module>
