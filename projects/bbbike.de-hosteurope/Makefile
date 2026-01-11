@@ -41,8 +41,8 @@ LOCAL_HTML_URL?=	${LOCAL_URL}/BBBike
 DATA_DIR=		data
 TEMP_BLOCKINGS_DIR=	data/temp_blockings
 BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
-TARGET_LIVE=		hosteurope
-TARGET_PPS=		bbbike-pps-jessie
+TARGET_LIVE=		hosteurope2026
+TARGET_PPS=		bbbike-pps-bookworm
 HOST!=			hostname
 DEPLOYMENT_HOST?=	cabulja
 PERL?=			perl
@@ -175,7 +175,7 @@ MKDIST_STYLE=	cp
 
 
 .ifndef TARGET
-.for t in ${DEPLOY_TARGETS}
+.for t in ${DEPLOY_TARGETS} automatic-deployment
 .if make($t)
 TARGET=${TARGET_LIVE}
 .endif
@@ -908,7 +908,7 @@ automatic-deployment--run:
 	-@${XTERM_CONF_TITLE} "BBBike pps deployment"
 	nice ${MAKE} deploy-pps NO_PARALLEL=1
 	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff @ pps"
-	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list rsync-XXX-list rsync-bbbgeojsonp rsync-geojson BBBIKE_HOSTEUROPE_HOST=bbbike-pps-jessie BBBIKE_HOSTEUROPE_USER=root
+	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list rsync-XXX-list rsync-bbbgeojsonp rsync-geojson BBBIKE_HOSTEUROPE_HOST=${TARGET_PPS} BBBIKE_HOSTEUROPE_USER=root
 	-@${XTERM_CONF_TITLE} "BBBike deployment"
 	${MAKE} deploy
 	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff"
@@ -939,5 +939,5 @@ automatic-deployment--check-prerequisites:
 	else \
 	    true; \
 	fi
-	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike-pps-jessie
+	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' ${TARGET_PPS}
 	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike.de
