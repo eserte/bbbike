@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.27;
+$VERSION = 2.28;
 
 use File::Glob qw(bsd_glob);
 
@@ -1982,7 +1982,7 @@ sub current_search_in_bbbike_cgi {
 
     my $root_url = ($stage eq 'local' ? 'http://localhost/bbbike/cgi/bbbike.cgi' :
 		    $stage eq 'devel' ? 'http://bbbike.cvrsnica.herceg.de/cgi-bin/bbbike.cgi' :
-		    $stage eq 'pps'   ? 'http://bbbike-pps-jessie.herceg.de/cgi-bin/bbbike.cgi' :
+		    $stage eq 'pps'   ? 'http://bbbike-pps-bookworm.herceg.de/cgi-bin/bbbike.cgi' :
 		    $stage eq 'live'  ? 'http://bbbike.de/cgi-bin/bbbike.cgi' :
 		    die "Invalid stage parameter '$stage'"
 		   );
