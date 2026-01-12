@@ -40106,11 +40106,11 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 7
 #: osm_watch: note 3834144 7
-#: also_indoor: traffic (ex-T,ex-H,re-G,re-W,ex-A)
+#: also_indoor: traffic (re-T,ex-H,re-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2025-12-30 (traffic)
+#: last_checked: 2026-01-12 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -45420,9 +45420,9 @@ EOF
 #: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
-#: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
+#: also_indoor: traffic (G,T,W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2026-01-12 (traffic, nur Bäkebrücke) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-20 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
@@ -51442,7 +51442,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mab4uqycg22s
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1627650.php
 #: by: https://www.tagesspiegel.de/berlin/weitere-prufungen-an-bauwerk-notig-brucke-in-berlin-schoneberg-bleibt-nach-feuer-fur-autofahrer-gesperrt-15061564.html
-#: source_id: LMS-BR:393540/72 viz2021:13.36405,52.48828, (kein Endedatum)
+#: source_id: LMS-BR:393540/72 viz2021:13.36405,52.48828, (kein Endedatum) (inaktiv)
 #: osm_watch: note 5097733 1
 #: also_indoor: traffic (T,G)
 # REMOVED --- #: add_fragezeichen: Ist die Brücke weiterhin gesperrt? --- #: last_checked: 2025-12-17 (Tsp, VIZ-Verkehrsmeldung, traffic) --- #: check_frequency: 2d
@@ -51482,6 +51482,17 @@ EOF
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312088 (bereits am nächsten Tag inaktiv)
 #: source_id: bvg2024:140#HIM_FREETEXT_312193
 	q4::inwork 12056,10642 11839,10736
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schwarzer Weg: wegen Bauarbeiten möglicherweise gesperrt',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: osm_watch: way id="1417905902" version="3"
+#: osm_watch: way id="1257637878" version="3"
+#: last_checked: 2025-12-28 (osm)
+	2::inwork 20285,-2775 20875,-2584
 EOF
      },
     );

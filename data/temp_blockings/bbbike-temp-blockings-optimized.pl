@@ -6524,11 +6524,11 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 7
 #: osm_watch: note 3834144 7
-#: also_indoor: traffic (ex-T,ex-H,re-G,re-W,ex-A)
+#: also_indoor: traffic (re-T,ex-H,re-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2025-12-30 (traffic)
+#: last_checked: 2026-01-12 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 7d
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -7622,9 +7622,9 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 #: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
-#: also_indoor: traffic (ex-G,ex-B,ex-T,ex-W)
+#: also_indoor: traffic (G,T,W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2026-01-12 (traffic, nur Bäkebrücke) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-20 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
@@ -9815,6 +9815,18 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
          'text' => 'Waldemarstr.: Bauarbeiten, Sperrung zwischen Audre-Lorde-Str. und Mariannenplatz, evtl. sind auch Radfahrer betroffen, vom 05.01.2026 07:00 bis 13.03.2026 16:00',
          'type' => 'handicap',
          'until' => 1773414000
+       },
+       {
+         'data' => '#: osm_watch: way id="1417905902" version="3"
+#: osm_watch: way id="1257637878" version="3"
+#: last_checked: 2025-12-28 (osm)
+	2::inwork 20285,-2775 20875,-2584
+',
+         'from' => undef,
+         'id' => 4521,
+         'text' => 'Schwarzer Weg: wegen Bauarbeiten möglicherweise gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
