@@ -1430,11 +1430,11 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id[inactive]: bvg2024:m4#HIM_FREETEXT_297553 (parallele Gleisbauarbeiten, bis 2025-11-30)
 #: source_id[inactive]: bvg2024:m4#5c1204dc-e817-4dc2-95b0-431bad289cd6 (bis 2025-12-14)
 #: source_id[inactive]: bvg2024:m4#4de79670-2bb7-4c7d-940b-3ad8e3fefa9c (bis 2025-12-14) (doppelt?)
-#: source_id: LMS-BR:392560/72 viz2021:13.489894,52.557953, (bis 22.12.2025) (bis 13.01.2026)
+#: source_id: LMS-BR:392560/72 viz2021:13.489894,52.557953, (bis 22.12.2025) (bis 13.01.2026) (bis 21.01.2026)
 #: XXX Fertigstellung laut osm note sogar erst Anfang 2027
 #: last_checked: 2025-12-12
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-01-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-21 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-12-31 (infravelo)
 Hansastr.: Radspuren geplant (2,5m breit) + Sanierung der Fahrbahn	?::inwork 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017 16296,17114 16318,17128
 # 
@@ -1822,12 +1822,15 @@ Marzahner Chaussee: Hochbordradweg entsteht	?::inwork; 19192,13350 19198,13272 1
 #: osm_watch: way id="147432180" version="17"
 #: osm_watch: way id="25630356" version="33"
 #: osm_watch: way id="82456679" version="18"
-#: last_checked: 2025-11-11 (BVV-Drucksache)
+#: last_checked: 2025-11-11 (BVV-Drucksache) vvv
 # REMOVED --- #: check_frequency: 150d (ab Sommer 2025 ggfs. anpassen)
 #: check_frequency: 60d
 #: next_check: 2025-11-26 (BA-Seite: aktuell 1. Bauabschnitt)
 # REMOVED --- #: next_check: 2028-12-31 (infravelo)
-Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::projected 7602,17399 7579,17532 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
+Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::inwork 7602,17399 7579,17532 7572,17558
+#: check_frequency: 360d (keine bekannte Planung)
+Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::projected 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
+#: last_checked ^^^
 # 
 #: XXX vielleicht auch ein größerer Abschnitt
 #: by: https://api.fixmyberlin.de/api/plannings/56 (Fertigstellung für 2019 geplant)
@@ -2290,7 +2293,7 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_06.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1471213.php
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
-#: last_checked: 2026-01-06
+#: last_checked: 2026-01-13
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (infravelo)
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -2479,6 +2482,7 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::projected 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.875919.php
 #: by: https://www.tagesspiegel.de/berlin/21-jahre-nach-dem-masterplan-scharounplatz-am-kulturforum-ist-fertig/25337114.html
 #: by: https://www.berliner-woche.de/tiergarten/c-verkehr/scharounplatz-und-herbert-von-karajan-strasse-neu-gestaltet_a248254
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1632645.php (Verkehrsberuhigung der Sigismundstr. zwischen Potsdamer Str. und Matthäikirchplatz)
 #: XXX Bebauungsplan 1-35a (Kulturforum)
 # REMOVED --- #: XXX Oberfläche nach den Bauarbeiten: vermutlich Betonpflaster --- #: XXX vermutlich begradigte Verkehrsführung
 # REMOVED (als alias eingetragen) --- #: XXX existiert hier irgendwo die Bezeichnung "Scharounplatz"?
@@ -3304,7 +3308,7 @@ Weichselstr.: Umbau geplant	?::projected 12330,8636 12392,8724 12434,8776 12478,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1380880.php
 #: by: https://mein.berlin.de/projekte/elbestrasse/
 #: by: https://www.kms-sonne.de/projekte/elbestrasse/ (Baubeginn voraussichtlich 2025/2026) (mittlerweile, Stand 5.2.2025: Baubeginn ist voraussichtlich 2026, Abschluss 2029) (alte URL)
-#: by: https://www.kms-sonne.de/projekte/strassen-plaetze-und-gruenflaechen/elbestrasse/ (neue URL)
+#: by: https://www.kms-sonne.de/projekte/strassen-plaetze-und-gruenflaechen/elbestrasse/ (neue URL) (BPU bis Frühjahr 2026)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/online-beteiligung-zur-elbestrasse-laeuft-bis-zum-27-november_a399343
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/elbestrasse/
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/161024_protokoll_mobilitaetsrat_3_pdf.pdf (Erwähnung einer Brücke zur Bouchéstr.)
@@ -4920,7 +4924,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstrasse-0 (Baubeginn 2023, verkehrsberuhigte Mischverkehrsfläche)
 #: by: https://www.luisenstadt-mitte.de/drupal/web/projekte/ohmstrasse-0 (alternative URL)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-der-ohmstrasse-876903.php (Neugestaltung bis 2023)
-#: last_checked: 2025-12-16
+#: last_checked: 2026-01-13
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-01-01
@@ -5550,6 +5554,19 @@ Schwedter Str.: Fahrradstraße zwischen Choriner Str. und Schönhauser Allee	?::pr
 #: next_check: 2026-06-30 (Tsp (frühestens 2026))
 Saarbrücker Str.: soll Fahrradstraße werden	? 10895,13961 11052,13870 11116,13830 11251,13667
 # 
+#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7223 (Antrag zur Fahrradstraße)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/debatte-um-stummel-fahrradstrasse-in-berlin-wenige-meter-oder-mehrere-kilometer-wie-lang-wird-die-neue-radmeile-15127768.html (zunächst nur zwischen Greifswalder Straße und Hosemannstraße?)
+#: osm_watch: note 4459955 4
+#: osm_watch: note 4527644 3
+#: XXX Laut osm note soll 2025 eine Fahrradstraße in dieser Straße entstehen (gesamte Straße oder nur ein Abschnitt?)
+#: last_checked: 2026-01-02 vvv
+# REMOVED (Realisierung 2025 unwahrscheinlich) --- #: next_check: 2025-12-31 (osm note)
+#: check_frequency: 360d
+Erich-Weinert-Str.	? 10997,16280 11295,16199 11404,16140 11542,16070 11614,16034 11673,16003 11829,15912 11903,15874 11995,15827 12168,15731 12232,15695 12298,15658 12375,15615 12556,15518
+#: check_frequency: 150d
+Erich-Weinert-Str.	? 12556,15518 12605,15491 12621,15482 12870,15342
+#: last_checked ^^^
+# 
 # REMOVED (Evaluierung ist zu Ende) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.741426.php ("Dunkelampel") --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird dafür die Ampel an der Nostitzstr. aufgegeben?) --- #: XXX zurzeit gibt es hier nur einen provisorischen Zebrastreifen --- #: last_checked: 2019-09-24 (mapillary) --- #: check_frequency: 60d --- Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # REMOVED --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/einstimmen-auf-die-testphase-fuer-die-begegnungszone-bergmannstrasse_a182777 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/infos-zur-testphase_a187582 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/auf-der-bergmannstrasse-stehen-erste-module-fuer-die-begegnungszone_a188443 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/cdu-und-spd-fordern-parklet-abbau-an-der-bergmannstrasse_a196570 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780380.php (Beendigung August 2019) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/vorzeitiges-ende-fuer-begegnungszone-an-der-bergmannstrasse_a199381 (Beendigung Ende Juli 2019) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8927 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/der-preis-fuer-die-testphase_a204442 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8999 (kein Ende im Juli 2019) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.809103.php --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813379.php --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/begegnungszone-bergmannstrasse-als-arbeitsprozess_a215350 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.822926.php (wo genau werden die Findlinge aufgestellt?) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/sitzmoebel-und-strassenpunkte-auf-der-bergmannstrasse-kommen-ab-23-september-weg_a226615 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.835750.php --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/ausstellung-an-den-parklets-stellt-varianten-fuer-gestaltung-der-bergmannstrasse-vor_a231553 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.847532.php --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.848152.php (Abbau: Begin KW 39/2019, Dauer 3 Wochen) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/wie-es-mit-der-begegnungszone-bergmannstrasse-weiter-geht_a233467 --- #: by: https://www.abendblatt-berlin.de/2019/09/28/berlin-kreuzberg-parklets-in-der-bergmannstrasse-werden-abgebaut/ --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/steine-statt-parklets_a234229 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/die-bvv-und-die-findlinge-in-der-bergmannstrasse_a234952 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/was-auf-den-flaechen-an-der-bergmannstrasse-passieren-soll_a238405 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9378 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9349 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.991740.php (verkehrliche Umgestaltung des Bergmannkiezes) --- #: by: https://www.berlin.de/bergmannkiez/ --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/zukunft-bergmannkiez_a286807 --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9768 (Finanzierung des Umbaus der Bergmannstraße) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1040993.php (Leitungsarbeiten bis Mitte Februar 2021) --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/arbeiten-an-kabelanlagen_a298826 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1053358.php (Tempo 20 im Kiez, Durchfahrtsperren, Einbahnstraßen, Anlieger-frei-Schilder) --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/im-bergmannkiez-werden-erste-massnahmen-realisiert_a302916 (bauliche Maßnahmen in der Bergmannstraße ab 2022) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Fußgängerzone, Geschwindigkeitsbegrenzung für Radfahrer) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084639.php (erste Realisierung KW 19/2021) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/durchfahrt-verboten_a310398 --- #: by: https://www.berlin.de/bergmannkiez/_assets/210202_bergmannkiez_informationsschreiben-poster.pdf --- #: by: https://taz.de/Verkehrsberuhigung-der-Bergmannstrasse/!5762811/ --- #: by: https://taz.de/picture/4824322/624/taz-grafik-270421-Bergmannstrasse-verkehrliche-massnahmen-online-1.png
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
@@ -5758,7 +5775,7 @@ Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 150
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-01-05
+#: last_checked: 2026-01-13
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -7683,6 +7700,7 @@ Spandauer Damm: hier ist eine permanente Radspur geplant	?::projected; 2641,1245
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1362455.php (2. Bauabschnitt bis Sommer 2024, danach kommt der 3. Bauabschnitt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12444 (2. Bauabschnitt bis Herbst 2024)
 #: by: https://entwicklungsstadt.de/schaefersee-in-reinickendorf-modernisierung-mit-neuem-uferweg-und-barrierefreiem-zugang/ (weiterhin 2. Bauabschnitt; 3. Bauabschnitt 2026)
+#: by: https://zukunft-residenzstrasse.de/projekte-im-foerdergebiet-lebendiges-zentrum-residenzstrasse/gruenraeume/umgestaltung-des-freiraums-am-schaefersee.html (2. BA bis Mai 2026; 3. BA folgt dann)
 # REMOVED (realisiert) --- #: XXX Fertigstellung 2021 vvv --- #: last_checked: 2022-05-14 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-07-08 vvv --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7253,17467 7222,17471 7173,17591 7189,17666
 # REMOVED (fertig) --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7189,17666 7185,17681
 # REMOVED (realisiert) --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7185,17681 7173,17712
@@ -7692,16 +7710,16 @@ Spandauer Damm: hier ist eine permanente Radspur geplant	?::projected; 2641,1245
 #: osm_watch: note 4359095 3
 #: osm_watch: way id="1305263128" version="1"
 #: last_checked: 2025-10-12
-# REMOVED --- #: next_check: 2025-05-31
+#: next_check: 2026-05-31 (zukunft-residenzstrasse website)
 Wege um den Schäfersee: Umgestaltung, Weg wird asphaltiert	?::inwork 7320,17718 7415,17696 7466,17627
 #: XXX Fertigstellung 2023; vermutlich ein-zwei Jahre später vvv
 #: last_checked: 2025-09-03 vvv
-#: check_frequency: 360d vvv
-# REMOVED --- #: next_check: 2024-12-31 vvv
+# REMOVED --- #: check_frequency: 360d vvv
+#: next_check: 2026-05-31 (zukunft-residenzstrasse website: Beginn des 3. BA) vvv
 Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7466,17627 7477,17544 7455,17495 7350,17464 7253,17467
 Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7477,17544 7572,17558
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -7729,7 +7747,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2026-01-02
+#: last_checked: 2026-01-13
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7737,7 +7755,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-01-07
+#: last_checked: 2026-01-13
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8343,7 +8361,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-01-06
+#: last_checked: 2026-01-13
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -10430,7 +10448,7 @@ Goebelstr.: wird hier ein öffentlicher für Radfahrer benutzbarer Weg entstehen, 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12305 (Vorlage zur Beschlussfassung)
 #: by: https://www.deutsches-architekturforum.de/thread/11058-spandau-kleinere-projekte/?postID=783542#post783542
 #: by: https://am-salzhof-berlin.de/ (Vermietung ab 2027)
-#: last_checked: 2025-07-05
+#: last_checked: 2026-01-11 (luftbildsuche)
 #: check_frequency: 720d
 #: next_check: 2027-12-31 (am-salzhof website)
 Daumstr.: abzweigende Wohngebietsstraße wird entstehen, Sackgasse	?::projected -1706,15794 -1492,15901

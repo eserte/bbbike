@@ -33499,18 +33499,24 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEMKE-2020
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php (alte Sperrung von 2020)
+#: by: https://marzahn-hellersdorf.com/sanierung-der-lemkestrasse-was-die-senatsantwort-im-detail-offenlegt/ (2. BA fertig?)
 # REMOVED (alter Abschnit) ---	q4::inwork 25191,12343 25363,12553
 #: osm_watch: note 4513116 4
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
 #: XXX zurzeit (2025-03) Asphaltierungsarbeiten
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-10-25
-#: check_frequency: 90d
-#: next_check: 2026-07-30
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2025-10-25 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-01-13 (ma-he) vvv
+# REMOVED --- #: next_check: 2026-07-30
 # REMOVED (hier war noch nichts) ---	q4::inwork 25363,12553 25534,12763
 # REMOVED (fertig) ---	q4::inwork 25534,12763 25620,12872 25663,12927 --- Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 	q4::inwork 25534,12763 25363,12553
 Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef,
@@ -45150,7 +45156,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2025-12-22 vvv
+#: last_checked: 2026-01-13 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -48758,7 +48764,7 @@ EOF
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="4"
-#: last_checked: 2025-12-24 (traffic)
+#: last_checked: 2026-01-13 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -49605,7 +49611,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-01-07
+#: last_checked: 2026-01-13
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401

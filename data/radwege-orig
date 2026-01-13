@@ -2316,7 +2316,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-01-07 vvv
+#: last_checked: 2026-01-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -3103,7 +3103,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-01-07 vvv
+#: last_checked: 2026-01-13 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -5251,16 +5251,16 @@ Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 #: next_check_id: HANSA-2025
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
 #: last_checked: 2025-11-08
-#: next_check: 2026-01-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-21 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 15875,16816 15929,16870 15986,16922
 #: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;
 #: last_checked: 2025-11-08
-#: next_check: 2026-01-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-21 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
 	RW3; 16139,17017 16296,17114 16318,17128 16352,17150
 #: last_checked: 2025-11-08
-#: next_check: 2026-01-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-21 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 16352,17150 16460,17214
 neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 	RW2; 16578,17285 16837,17440
@@ -8361,7 +8361,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-01-09
+#: last_checked: 2026-01-13
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
