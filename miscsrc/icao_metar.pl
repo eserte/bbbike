@@ -2,12 +2,11 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2009,2012,2013,2016,2017,2018,2020,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2016,2017,2018,2020,2024,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -40,14 +39,20 @@ my $near;
 my $o;
 my $retry_def;
 my $use_fallback;
+my $use_auto_fallback;
 GetOptions("sitecode=s" => \$wanted_site_code,
 	   "wettermeldung!" => \$wettermeldung_compatible,
 	   "near=s" => \$near,
 	   "o=s" => \$o,
 	   "retry-def=s" => \$retry_def,
 	   "fallback!" => \$use_fallback,
+	   "auto-fallback!" => \$use_auto_fallback,
 	  )
     or usage;
+
+if ($use_fallback && $use_auto_fallback) {
+    die "Cannot use both -fallback and -auto-fallback.\n";
+}
 
 my @retry_sleeps;
 if ($retry_def) {
@@ -122,7 +127,13 @@ my $got_something = 0;
 for my $site_def (@sites) {
     my($site_code, $r) = @{$site_def}{qw(sitecode record)};
 
-    my $content = $use_fallback ? get_metar_mesonet_fallback($site_code) : get_metar_standard($site_code);
+    my $content;
+    if (!$use_fallback) {
+	$content = get_metar_standard($site_code);
+    }
+    if (!defined $content && ($use_fallback || $use_auto_fallback)) {
+	$content = get_metar_mesonet_fallback($site_code);
+    }
     next if !defined $content;
 
     #$content =~ s/\n//g;
@@ -383,6 +394,11 @@ but exit code will still be zero.
 =item C<-fallback>
 
 Use fallback URL (L<https://mesonet.agron.iastate.edu>).
+
+=item C<-auto-fallback>
+
+Use the fallback URL only if the regular URL fails. Cannot be used
+together with C<-fallback>.
 
 =back
 
