@@ -38,6 +38,7 @@ my $wettermeldung_compatible;
 my $near;
 my $o;
 my $retry_def;
+my $timeout = 30;
 my $use_fallback;
 my $use_auto_fallback;
 GetOptions("sitecode=s" => \$wanted_site_code,
@@ -45,6 +46,7 @@ GetOptions("sitecode=s" => \$wanted_site_code,
 	   "near=s" => \$near,
 	   "o=s" => \$o,
 	   "retry-def=s" => \$retry_def,
+	   "timeout=i" => \$timeout,
 	   "fallback!" => \$use_fallback,
 	   "auto-fallback!" => \$use_auto_fallback,
 	  )
@@ -63,7 +65,7 @@ if ($retry_def) {
 
 my $ua = LWP::UserAgent->new;
 $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
-$ua->timeout(30);
+$ua->timeout($timeout);
 
 my @sites;
 if ($wanted_site_code) {
@@ -390,6 +392,10 @@ expected that 4xx errors are permanent.
 Additionally, if C<-retry-def> is specified and no site could be
 fetched, then the script will die. Otherwise there will be no output,
 but exit code will still be zero.
+
+=item C<-timeout I<secs>>
+
+Change the default timeout of 30s.
 
 =item C<-fallback>
 
