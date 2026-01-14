@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2011,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -96,7 +96,7 @@ if ($set eq 'ziel') {
     my @layers;
     my $q2 = CGI->new(query_string());
     if (!grep { $_ eq 'route' } BBBikeCGI::Util::my_multi_param($q2, "layer")) {
-	@layers = ($q2->param("layer"), "route");
+	@layers = (BBBikeCGI::Util::my_multi_param($q2, "layer"), "route");
     }
 
     require File::Basename;
