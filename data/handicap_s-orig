@@ -943,7 +943,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2025-12-13
+#: last_checked: 2026-01-14
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1015,9 +1015,9 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2025-12-31 (traffic)
-#: check_frequency: 45d
-#: next_check: 2026-01-01 (entwicklungsstadt)
+#: last_checked: 2026-01-14
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-01-01 (entwicklungsstadt)
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 # 
 # REMOVED (Baustelle aufgehoben, Einfahrt-verboten-Schilder sind noch provisorisch) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews?date=20220830 --- #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf --- #: by: https://www.kms-sonne.de/baustellennews?date=20230915 (bis Herbst 2024?) --- #: source_id: viz2021:13.434335,52.481525,21.11.2023,12:00 (bis 01.07.2024) (bis 30.04.2025) (bis 22.04.2025 + weitere Arbeiten) (inaktiv) --- #: osm_watch: way id="640465875" version="15" --- #: XXX Die Einfahrt-verboten-Schilder sind temporär, b --- #: last_checked: 2025-07-11 --- #: check_frequency: 30d --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) --- # REMOVED --- #: next_check: 2025-04-22 (VIZ-Verkehrsmeldung) --- Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -1285,7 +1285,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: note: Halteverbotsschilder bis 19.12.2025, laut Baustellenschild geplante Fertigstellung der Bahnbrücke 03/2026
 #: osm_watch: note 4721088 3
 #: also_indoor: traffic (T)
-#: last_checked: 2026-01-01 (traffic)
+#: last_checked: 2026-01-14 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)

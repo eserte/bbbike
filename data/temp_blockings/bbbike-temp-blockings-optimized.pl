@@ -4471,7 +4471,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2025-12-22 vvv
+#: last_checked: 2026-01-14 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4797,12 +4797,12 @@ Schottstr., Rüdigerstr.	q4::inwork; 16276,12273 16397,12397 16485,12384
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (neue Baustellenampel in der Daimlerstr., bis Ende April 2025)
-#: also_indoor: traffic (ex-G,ex-H,re-B,re-T,W)
+#: also_indoor: traffic (re-G,ex-H,re-T,ex-W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="19"
 #: osm_watch: way id="1148659680" version="6"
-#: last_checked: 2025-12-16 (mapillary)
+#: last_checked: 2026-01-14 (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -5229,7 +5229,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 19
-#: last_checked: 2025-12-16 (mapillary)
+#: last_checked: 2026-01-14 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -5618,7 +5618,28 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED --- #: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023) (inaktiv) --- #: source_id: viz2021:13.43816,52.46045,08.12.2023,00:00 (bis 29.03.2024) (inaktiv) --- #: also_indoor: traffic (ex-B,ex-G,ex-W)
+# REMOVED --- #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? --- #: last_checked: 2023-01-17 (Asphaltierungsarbeiten) --- #: check_frequency: 7d
+# REMOVED --- #: next_check: 2022-10-14
+# REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
+# REMOVED --- Jahnstr.	q3::inwork 12833,6127 13027,6168 13227,6209
+# REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
+# REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
+# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?) --- #: note: Halteverbotsschilder mittlerweile bis 07.06.2024, nun bis 28.06.2024 --- #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv --- #: last_checked: 2024-06-22 vvv --- #: next_check: 2024-06-28 vvv --- Jahnstr.	q4::inwork; 12833,6127 13027,6168 --- Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127 --- : next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
+#: note: Halteverbotsschilder bis 18.12.2026
+#: last_checked: 2026-01-14
+#: check_frequency: 120d
+#: next_check: 2026-12-18 (Halteverbotsschilder)
+Jahnstr.	q3::inwork; 13027,6168 13227,6209
+',
+         'from' => undef,
+         'id' => 3497,
+         'text' => 'Jahnstr.: Hochbauarbeiten zwischen  Rungiusstr. und Priesterweg, kurze Einbahnstraßenregelung, voraussichtlich bis Ende 2026',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -5685,7 +5706,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
-#: last_checked: 2025-12-13 vvv
+#: last_checked: 2026-01-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5693,8 +5714,8 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
 #: osm_watch: way id="824500931" version="10"
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
-Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
-Mierstr.: Einbahnstraßenregelung	q4::inwork; 13627,7047 13575,7200
+# REMOVED (nicht mehr) --- Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
+# REMOVED (nicht mehr) --- Mierstr.: Einbahnstraßenregelung	q4::inwork; 13627,7047 13575,7200
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
 #: osm_watch: way id="970153788" version="10"
 #: osm_watch: way id="971064429" version="10"
@@ -5759,7 +5780,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="970452276" version="8"
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-01-04
+#: last_checked: 2026-01-14
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6287,7 +6308,33 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen, und die Bauzäune waren noch am 2024-01-05 (!) da
+#: note: 2024 hat die Sperrung vor dem 2024-11-15 angefangen ...
+#: note: 2025 hat die Sperrung vor dem 2025-11-09 angefangen, und es wurde am 2026-01-14 noch immer abgebaut
+#: by: https://www.weihnachten-an-der-spree.de/
+#: osm_watch: node id="11346915244" version="3"
+# REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
+	2::xmas 13531,10673 13418,10724
+	2::xmas 13558,10704 13531,10673 13527,10660
+# REMOVED (seit 2025 Bauarbeiten) ---	2::xmas 13418,10724 13326,10765
+',
+         'from' => 1762556400,
+         'id' => 3696,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 17.11. - 30.12.2025, sowie während der Aufbau- und Abbauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1768582800
+       },
        undef,
        undef,
        undef,
@@ -8087,7 +8134,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: also_indoor: traffic (ex-T,G[zu lang])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2025-12-16
+#: last_checked: 2026-01-14 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2028-12-31
@@ -8602,7 +8649,8 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: source_id: LMS-BR:367896/72 viz2021:13.313365,52.523877, (bis 30.04.2026)
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=782027#post782027
 #: by: https://entwicklungsstadt.de/mierendorffinsel-neuer-bauabschnitt-im-wohnquartier-hey-charlottenburg/ (Bauprojekt bis Mitte 2027)
-#: by: https://heycharlottenburg.de/ (Fertigstellung: Q3/2027)
+#: by: https://heycharlottenburg.de/ ("Hey Charlottenburg", Fertigstellung: Q3/2027)
+#: by: https://www.entwicklungsstadt.de/hey-charlottenburg-waechst-fast-70-wohnungen-auf-der-mierendorffinsel-bald-bezugsfertig/
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 ',
@@ -8702,7 +8750,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2026-01-04 vvv
+#: last_checked: 2026-01-14 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8829,7 +8877,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-01-01 (traffic)
+#: last_checked: 2026-01-14 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -9019,14 +9067,14 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: osm_watch: note 5038218 3
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2025-12-28
+#: last_checked: 2026-01-14
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 ',
          'from' => 1754431200,
          'id' => 4411,
-         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
+         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Januar 2026: Diagonalweg ist offen)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9070,18 +9118,19 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: note 4924394 1
+#: osm_watch: note 4924394 2
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
 #: last_checked: 2026-01-07
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
-	q4::inwork 13856,10864 13755,10896 13795,10995
+# REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
+	q4::inwork; 13755,10896 13856,10864 13896,10851 14011,10812
 ',
          'from' => 1755881434,
          'id' => 4418,
-         'text' => 'Rotherstr., Lehmbruckstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis April 2026',
+         'text' => 'Rotherstr., Am Rudolfplatz: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis April 2026',
          'type' => 'handicap',
-         'until' => 1777586400
+         'until' => undef
        },
        undef,
        undef,
@@ -9263,7 +9312,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-01-03 vvv
+#: last_checked: 2026-01-14 vvv
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
@@ -9389,8 +9438,9 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2025-12-28
-#: next_check: 2026-01-09 (Halteverbotsschilder)
+#: last_checked: 2026-01-14
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
 ',
          'from' => 1760378957,
@@ -9547,8 +9597,8 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        },
        {
          'data' => '#: osm_watch: note 5049958 2
-#: osm_watch: way id="1127993128" version="5"
-#: last_checked: 2025-12-22 (osm)
+#: osm_watch: way id="1127993128" version="6"
+#: last_checked: 2026-01-13 (osm)
 #: check_frequency: 60d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
@@ -9833,6 +9883,18 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
          'text' => 'Schwarzer Weg: wegen Bauarbeiten möglicherweise gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.bwb.de/de/baustelleninformationen.php?date=20260114 (bis August 2026, danach zwei weitere Bauabschnitte bis 2027)
+#: also_indoor: traffic (no-G,no-T,no-H,no-W)
+#: next_check: 2026-08-15
+	q4::inwork 4655,21939 4527,21843
+',
+         'from' => 1768390446,
+         'id' => 4522,
+         'text' => 'Rue Montesquieu: Bauarbeiten, mögliche Sperrung der Fahrbahn, vorraussichtlich bis August 2026',
+         'type' => 'handicap',
+         'until' => 1788213600
        }
      
 );
