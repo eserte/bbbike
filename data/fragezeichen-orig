@@ -310,7 +310,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2
 #: osm_watch: way id="182782708" version="15"
 #: osm_watch: way id="168307255" version="15"
 #: osm_watch: way id="4687243" version="33"
-#: last_checked: 2025-12-15
+#: last_checked: 2026-01-15
 #: check_frequency: 360d
 #: next_check: 2026-03-15
 Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projected 14989,14539 14919,14503 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14243,13890 14218,13834
@@ -6366,7 +6366,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17251,11789 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2025-12-23
+#: last_checked: 2026-01-15
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -7748,7 +7748,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2026-01-13
+#: last_checked: 2026-01-15
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -12162,8 +12162,10 @@ Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entst
 #: by: https://www.tagesspiegel.de/berlin/bezirke/mehr-als-500-neue-wohnungen-in-reinickendorf-gefahrdet-noch-immer-keine-losung-fur-berliner-schulneubau-13391023.html
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1623789.php (Baubeginn am 3.12.2025, Abschluss im Sommer 2026)
 #: by: https://www.entwicklungsstadt.de/bis-sommer-2026-neuer-gruenzug-weg-bringt-bewegung-in-die-cite-foch/
+#: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13939 (Vorlage zur Beschlussfassung)
+#: by: https://bvv-reinickendorf.berlin.de/pi-r/___tmp/tmp/45081036/hjSByebIJrZtGzUOBHmQh98eOBvllCmkQeNOYIV3/OsTdwMEN/62-Anlagen/01/Anlagea_XX-277a_Planzeichnung_Stand_01082024.pdf
 #: XXX Bebauungsplan XX-277a Cité Foch (Nord)
-#: XXX evtl. wird es weitere Änderungen geben, z.B. Zurückstufung eines Teils der Avenue Charles de Gaulle, Fußwege im Süden könnten anders strukturiert werden
+#: XXX laut B-Plan wird es weitere Änderungen geben, z.B. Zurückstufung eines Teils der Avenue Charles de Gaulle (Durchfahrt für MIV an der nördlichen Rue Racine nicht mehr möglich), Rue Lamartine wird für den MIV gesperrt, Fußwege im Süden könnten anders strukturiert werden
 #: osm_watch: way id="439885059" version="8"
 #: last_checked: 2025-04-02 (mapillary)
 #: check_frequency: 360d
@@ -12567,10 +12569,9 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/erste-mieter-erster-bus-erste-kita-berlins-neues-mega-viertel-erwacht-15130985.html
 #: osm_watch: relation id="10290512" version="6"
 #: osm_watch: way id="1306187833" version="27"
-#: osm_watch: way id="1306187834" version="26"
+#: osm_watch: way id="1306187834" version="27"
 #: osm_watch: way id="1306187830" version="17"
-#: osm_watch: way id="1306187834" version="26"
-#: osm_watch: way id="1294762943" version="17"
+#: osm_watch: way id="1294762943" version="18"
 #: osm_watch: way id="178253967" version="26"
 #: osm_watch: way id="936729763" version="27"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
@@ -12592,7 +12593,7 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: XXX 5) Belgienstraße
 #: XXX 6) Bachsaiblingstraße
 #: XXX ab 12. April 2026 wird es eine neue Buslinie zur Alandstr. geben (laut berliner-linienchronik) (mittlerweile: laut osm ist die Alandstr. fertig; asphaltiert)
-#: last_checked: 2025-11-28 (osm) vvv
+#: last_checked: 2026-01-14 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-04-12 (Fahrplanänderung) vvv
 # REMOVED --- #: next_check: 2028-06-30 vvv
@@ -12730,7 +12731,6 @@ Bebauungsplan 12-63a: wird es hier einen Verbindungsweg geben?	? 2645,20011 2653
 # 
 # REMOVED --- #: osm_watch: way id="741298765" version="7" brb --- #: osm_watch: way id="741298766" version="7" brb --- #: osm_watch: way id="741297437" version="10" brb --- #: XXX Der Ritterfleck - laut osm alle mittlerweile fertiggestellt, allerdings fehlen Angaben zu surface etc.; mittlerweile sind surface+smoothness verfügbar --- #: last_checked: 2023-03-13 (osm) vvv --- #: check_frequency: 360d vvv --- #: next_check: 2024-01-10 vvv --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: by: https://www.berlin.de/sen/stadtentwicklung/staedtebau/einzelprojekte/siemensstadt-square/ (Bebauungsplan 5-123)
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/am-24-juli-startet-das-beteiligungsverfahren-fuer-den-eingangsbereich_a387032 (Fertigstellung Anfang 2027)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf (Bebauungsplan 5-123a)
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1346647.php
@@ -12744,7 +12744,9 @@ Bebauungsplan 12-63a: wird es hier einen Verbindungsweg geben?	? 2645,20011 2653
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-19890.pdf
 #: by: https://www.aukett-heese.de/de/projects/siemensstadt-square/ (Modul C1.1)
 #: by: https://greenbox.la/entree-siemensstadt-square-in-berlin/ (Entrée)
+#: also_indoor: url https://www.berlin.de/sen/stadtentwicklung/staedtebau/einzelprojekte/siemensstadt-square/
 #: osm_watch: way id="1298280066" version="2"
+#: note: Bebauungsplan 5-123
 #: last_checked: 2025-12-06 (daf)
 #: check_frequency: 720d
 #: next_check: 2035-12-31 (BA-Pressemitteilung)

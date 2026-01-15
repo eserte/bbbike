@@ -22479,9 +22479,9 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
 #: also_indoor: traffic (G,H,A,W,T)
-#: last_checked: 2025-12-17
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: check_frequency: 30d
+#: last_checked: 2026-01-15 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 # REMOVED (keine Sperrung mehr) --- #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet? --- #: source_id: LMS-BR:392919/72 viz2021:13.355108,52.540463, (bis 31.03.2026) --- #: also_indoor: traffic (re-T,G) --- #: last_checked: 2025-12-16 (traffic) --- #: check_frequency: 60d --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) --- Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
@@ -33613,6 +33613,7 @@ EOF
 #: by: https://entwicklungsstadt.de/zwischen-stillstand-und-neustart-wie-es-um-berlins-signa-projekte-steht/ (weiterhin bis Anfang 2027)
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
 #: by: https://www.entwicklungsstadt.de/am-kadewe-in-der-city-west-fassade-des-bueroturms-quantum-p1-vollstaendig-installiert/
+#: by: https://www.entwicklungsstadt.de/buerohochhaus-p1-am-kadewe-erste-flaechen-in-der-city-west-vermietet/ (Einzug Dezember 2026, Fertigstellung Anfang 2027)
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="18"
@@ -36676,14 +36677,14 @@ EOF
 	q4::inwork; 12330,8636 12494,8501
 EOF
      },
-     { from  => $isodate2epoch->("2026-01-26 00:00:00"), # $isodate2epoch->("2025-07-20 00:00:00"), # $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
+     { from  => $isodate2epoch->("2026-01-25 00:00:00"), # $isodate2epoch->("2025-07-20 00:00:00"), # $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
        until => $isodate2epoch->("2026-03-06 11:00:00"), # $isodate2epoch->("2025-08-08 12:00:00"), # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
 #      dont_check_date => 1,
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, voraussichtlich bis 28.08.2023, eventuell etwas länger bis zum 30.08.2023',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, Hämmerlingstr. vom 21.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 21.07.2025 06:00 Uhr bis 08.08.2025 12:00 Uhr',
-       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 26.01.2026 06:00 Uhr bis 06.03.2026 11:00 Uhr',
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 26.01.2026 05:00 Uhr bis 06.03.2026 11:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
@@ -36721,6 +36722,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html (21. Juli 2025 6 Uhr bis 8. August 2025 12 Uhr)
 #: by: https://www.entwicklungsstadt.de/bahnhof-koepenick-neue-sperrungen-im-zuge-des-grossumbaus/
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410891906/s-bahnhof-koepenick-deutsche-bahn-kuendigt-fuer-januar-neue-sperrung-an.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1633950.php
 #: osm_watch: note 3566736 14
 # REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -50615,7 +50617,7 @@ EOF
 #: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2025-12-17
+#: last_checked: 2026-01-15 (traffic)
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -51452,6 +51454,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mab4uqycg22s
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1627650.php
 #: by: https://www.tagesspiegel.de/berlin/weitere-prufungen-an-bauwerk-notig-brucke-in-berlin-schoneberg-bleibt-nach-feuer-fur-autofahrer-gesperrt-15061564.html
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10082 (Antrag)
 #: source_id: LMS-BR:393540/72 viz2021:13.36405,52.48828, (kein Endedatum) (inaktiv)
 #: osm_watch: note 5097733 1
 #: also_indoor: traffic (T,G)
@@ -51507,13 +51510,30 @@ EOF
      },
      { from  => 1768390446, # 2026-01-14 12:34
        until => 1788213600, # 2026-09-01 00:00
-       text  => 'Rue Montesquieu: Bauarbeiten, mögliche Sperrung der Fahrbahn, vorraussichtlich bis August 2026',
+       text  => 'Rue Montesquieu: Bauarbeiten, mögliche Sperrung der Fahrbahn, voraussichtlich bis August 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20260114 (bis August 2026, danach zwei weitere Bauabschnitte bis 2027)
+#: by: https://www.morgenpost.de/bezirke/reinickendorf/article410918440/citC3A9-foch-die-wasserbetriebe-raeumen-das-chaos-der-franzosen-auf.html
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: next_check: 2026-08-15
 	q4::inwork 4655,21939 4527,21843
+EOF
+     },
+     { from  => undef, # 
+       until => 1798757999, # 2026-12-31 23:59
+       text  => 'Hausburgstr.: Hochbauarbeiten, Sperrung der Fahrbahn zwischen Hermann-Blankenstein-Str. und Kochhannstr., außerdem Einbahnstraßenregelung in der Hermann-Blankenstein-Str., voraussichtlich bis Ende 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
+#: last_checked: 2026-01-15 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 vvv
+Hausburgstr.: gesperrter Abschnitt etwa 50m lang	q4::inwork 13742,13376 13706,13460
+Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,13487 13706,13460
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
     );
