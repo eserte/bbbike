@@ -1292,8 +1292,7 @@ Beim Pfarrhof	1 -7292,14811 -7304,14567
 #: by: ^^^
 #: note: interpoliert
 Am Kleinen Platz	1 -7248,14826 -7292,14811
-#: note: hier sind öfter mal Polizeiautos geparkt; Taxiverkehr
-Ella-Trebe-Str.	1s:q4 7938,13302 7938,13150
+# REMOVED (keine Einbahnstraße für Radfahrer mehr) --- #: note: hier sind öfter mal Polizeiautos geparkt; Taxiverkehr --- Ella-Trebe-Str.	1s:q4 7938,13302 7938,13150
 Waldmeisterstr.	1 1736,7557 1880,7558 1930,7594
 Waldmeisterstr.	1 1956,7453 1878,7499 1722,7497
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7281 vvv
@@ -4236,6 +4235,7 @@ Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeite
 #: XXX ^^^
 # 
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-den-koenigsgraben/ (laut Bild schon abgebrochen; voraussichtliche Bauzeit: noch in Planung)
+#: by: https://www.tagesspiegel.de/berlin/jede-sechste-brucke-in-berlin-ist-marode-diese-175-berliner-bauten-mussen-abgerissen-werden-15138364.html ("in Planung")
 #: XXX_osm: bei osm bereits komplett entfernt
 #: last_checked: 2025-11-29
 #: check_frequency: 180d
@@ -4337,7 +4337,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # REMOVED (neue Rampe existiert) --- #: next_check_id: KNOTENMARZAHN-2022 --- #: XXX an dieser Stelle wird es alternativ eine Rampe geben --- #: osm_watch: note 4298701 3 --- #: osm_watch: way id="1297589176" version="1" --- #: last_checked: 2025-08-24 --- #: check_frequency: 180d --- #: next_check: 2026-12-31 --- (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19157,14948 19162,14931 19121,14916 19173,14932
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: osm_watch: way id="4696062" version="29"
+#: osm_watch: way id="4696062" version="30"
 #: last_checked: 2025-08-24
 #: check_frequency: 180d
 #: next_check: 2026-12-31
@@ -4382,7 +4382,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="22"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-12-22
+#: last_checked: 2026-01-16
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4687,7 +4687,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
-#: last_checked: 2025-12-20 vvv
+#: last_checked: 2026-01-16 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="5"
@@ -4710,7 +4710,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
 #: osm_watch: note 3644429 8
-#: last_checked: 2026-01-13
+#: last_checked: 2026-01-16
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4762,7 +4762,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2025-12-03
+#: last_checked: 2026-01-16
 #: check_frequency: 180d
 #: next_check: 2028-12-23 (Amtsblatt)
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -4898,7 +4898,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-wird-nach-sanierung-wieder-eroeffnet-id270349 (Bernhard-Lichtenberg-Haus frühestens Ende 2025 fertig)
 #: by: https://entwicklungsstadt.de/bauprojekt-am-bebelplatz-fortschritte-beim-bernhard-lichtenberg-haus/ (geplante Fertigstellung Ende 2025)
 #: by: https://www.erzbistumberlin.de/medien/pressestelle/aktuelle-pressemeldungen/pressemeldung/news-title/richtfest-am-bernhard-lichtenberg-haus/ (Fertigstellung im Sommer 2026)
-#: osm_watch: way id="28120501" version="13"
+#: osm_watch: way id="28120501" version="14"
 #: last_checked: 2025-12-29
 #: check_frequency: 90d
 #: next_check: 2026-09-01 (erzbistumberlin)
@@ -5266,7 +5266,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_51_3309_3560_online.pdf (zum Bebauungsplan 1-14-1)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Straßenlandwidmung, Grunerstr.)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-01-07
+#: last_checked: 2026-01-16
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5274,7 +5274,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-01-13
+#: last_checked: 2026-01-16
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5624,7 +5624,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="49"
 #: also_indoor: traffic
-#: last_checked: 2025-12-20 vvv
+#: last_checked: 2026-01-16 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230

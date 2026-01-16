@@ -3437,7 +3437,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Tegeler Str.	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
-#: source_id: viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
+#: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
 #: also_indoor: traffic (G,H,A,W,T)
 #: last_checked: 2026-01-15 (traffic)
 #: check_frequency: 14d (traffic)
@@ -4347,7 +4347,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2025-12-10
+#: last_checked: 2026-01-16
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6310,33 +6310,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
        },
        undef,
        undef,
-       {
-         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen, und die Bauzäune waren noch am 2024-01-05 (!) da
-#: note: 2024 hat die Sperrung vor dem 2024-11-15 angefangen ...
-#: note: 2025 hat die Sperrung vor dem 2025-11-09 angefangen, und es wurde am 2026-01-14 noch immer abgebaut
-#: by: https://www.weihnachten-an-der-spree.de/
-#: osm_watch: node id="11346915244" version="3"
-# REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
-	2::xmas 13531,10673 13418,10724
-	2::xmas 13558,10704 13531,10673 13527,10660
-# REMOVED (seit 2025 Bauarbeiten) ---	2::xmas 13418,10724 13326,10765
-',
-         'from' => 1762556400,
-         'id' => 3696,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 17.11. - 30.12.2025, sowie während der Aufbau- und Abbauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => 1768582800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6491,9 +6465,9 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: note: in einem YouTube-Video vom 4.12.2026 kein Radfahren-verboten-Schild mehr zu sehen
 #: osm_watch: way id="37861386" version="34"
-#: osm_watch: way id="1231148375" version="9"
+#: osm_watch: way id="1231148375" version="10"
 #: priority: #B
-#: last_checked: 2025-10-17 (osm)
+#: last_checked: 2026-01-16 (osm)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-18 (nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -6681,7 +6655,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2025-12-03
+#: last_checked: 2026-01-16
 #: check_frequency: 180d
 #: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -6946,7 +6920,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2026-01-07
+#: last_checked: 2026-01-16
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -7585,7 +7559,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-01-13 vvv
+#: last_checked: 2026-01-16 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8936,7 +8910,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        },
        {
          'data' => '#: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-01-13
+#: last_checked: 2026-01-16
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9120,7 +9094,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: note 4924394 2
+#: osm_watch: note 4924394 3
 #: also_indoor: traffic (G[zuviel],T[zuwenig])
 #: last_checked: 2026-01-07
 #: check_frequency: 60d
@@ -9198,7 +9172,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_08_0417_0480_online.pdf (Einziehung von Straßenland)
 #: by: https://www.entwicklungsstadt.de/neue-feuerwache-tegelort-eingeweiht-76-millionen-euro-bau-staerkt-freiwillige-feuerwehr/
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1625291.php
-#: osm_watch: way id="5046358" version="12"
+#: osm_watch: way id="5046358" version="13"
 #: osm_watch: note 4945213 2
 #: XXX wie wird die Situation nach den Hoch+Tiefbauarbeiten aussehen?
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder passierbar?
@@ -9423,18 +9397,7 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251012
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m32dodcvmk2r
-#: note: vielleicht gibt es eine Umleitung durch den Volkspark Köpenick, ist allerdings nicht in der BBBike-Datenbasis enthalten
-	2::inwork 22965,4124 23368,3894
-',
-         'from' => 1760220000,
-         'id' => 4467,
-         'text' => 'Müggelheimer Damm: Bauarbeiten zwischen Pablo-Neruda-Str. und Salvador-Allende-Str., Sperrung des Rad- und Gehwegs, voraussichtlich bis Mitte Januar 2026',
-         'type' => 'gesperrt',
-         'until' => 1768517999
-       },
+       undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)

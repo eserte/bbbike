@@ -478,7 +478,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2025-12-29 vvv
+#: last_checked: 2026-01-16 vvv
 #: check_frequency: 21d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="46"
@@ -496,7 +496,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 9011,12423 9028,123
 #: osm_watch: note 3469300 8
 #: osm_watch: way id="111833186" version="15"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
-#: osm_watch: way id="153698413" version="19"
+#: osm_watch: way id="153698413" version="20"
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -519,7 +519,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-01-13
+#: last_checked: 2026-01-16
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -601,7 +601,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2025-12-29 vvv
+#: last_checked: 2026-01-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="18"
@@ -2339,6 +2339,7 @@ Buschrosenplatz: enge Straﬂe	q1 13002,5548 13054,5556 13075,5470
 #: by: https://www.no6.berlin/
 #: by: https://www.no6.berlin/nolle-6 (Fertigstellung Q2/2027)
 #: by: https://entwicklungsstadt.de/neugestaltung-am-nollendorfplatz-bauarbeiten-am-metropol-theater-laufen/
+#: by: https://www.entwicklungsstadt.de/nachverdichtung-am-nollendorfplatz-buero-neubau-no6-ersetzt-frueheres-spielcasino/
 #: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; mittlerweile bis Halteverbotsschilder bis 15.12.2025; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch[closed]: note 4506575 2
@@ -2501,9 +2502,9 @@ M¸ggelpark: Fuﬂg‰nger	q2 25695,4714 25658,4619 25656,4578 25772,4543
 (entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1+ 3379,8969 3490,8840 3521,8814 3570,8760 3650,8666 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
 Gˆrresstr.: enge Straﬂe	q1 5073,7660 5194,7540 5273,7460 5318,7424
 Stendaler Platz: Fuﬂg‰nger, Spielplatz	q2 6394,14085 6489,14071
-Washingtonplatz: querende Fuﬂg‰nger, Taxis	q2; 7937,13126 8011,13128 8106,13130
-#: XXX_prog: eigentlich 1s:q3 in gesperrt-orig, aber Konflikt mit dem handicap_s-Eintrag in die andere Richtung (stimmt das?)
-Washingtonplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 8011,13128 7937,13126
+#: historical_note: fr¸her Einbahnstraﬂenregelung auch f¸r Radfahrer g¸ltig
+Washingtonplatz: querende Fuﬂg‰nger, Taxis	q2 7937,13126 8011,13128 8106,13130
+Ella-Trebe-Str.: querende Fuﬂg‰nger, Taxis	q2 7937,13126 7938,13150 7938,13302
 #: XXX_prog: die Verlangsamung eigentlich nur durch das "Vorfahrt gew‰hren" verursacht, hier explizit gemacht, damit bei "Ampeloptimierung" keine unnˆtigen Schlenker gemacht werden. Leider reicht q3 hier nicht aus. Durch gerichtete Handicaps ersetzen, sobald implementiert.
 #: note: Rio-Reiser-Platz
 	q4::igndisp 11754,10516 11734,10563 11690,10543 11708,10497 11754,10516
@@ -3577,7 +3578,7 @@ Cajamarcaplatz: viele Fuﬂg‰nger	q4 17698,5727 17766,5659
 (zum Fuﬂg‰ngertunnel S-Bhf. Schˆneweide): Fuﬂg‰nger, schieben	q4 17765,5469 17634,5607
 # REMOVED (wurde in strassen-orig entfernt) --- #: XXX_prog BS an der Tram-Haltestelle, ansonsten trotzdem q3 --- (S-Bhf. Schˆneweide - Straﬂenbahn-/Bushaltestelle): Fuﬂg‰nger, Bordstein	q3 17634,5607 17675,5521
 # REMOVED (Bordstein wurde abgesenkt) --- #: XXX_prog BS, sonst entfernen --- Wasserweg: Bordstein	q2 15678,8911 15698,8903 15873,8884
-(Ella-Trebe-Str. - Invalidenstr.): einige Fuﬂg‰nger	q1 7938,13302 7968,13335 8003,13374
+(Ella-Trebe-Str. - Invalidenstr.): querende Fuﬂg‰nger	q2 7938,13302 7968,13335 8003,13374
 Europaplatz: einige Fuﬂg‰nger	q1 7901,13324 7938,13302
 Wuhlestr. [Wohngebiet]: Fuﬂg‰nger	q1 21580,13583 21430,13602
 (oberer Wuhlewanderweg): einige Fuﬂg‰nger	q1+ 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22757,14010 22788,14032 22820,14063 22855,14114 22872,14175 22872,14224 22860,14440 22868,14477 22873,14498 22861,14573
