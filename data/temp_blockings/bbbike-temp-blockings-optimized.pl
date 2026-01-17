@@ -2587,12 +2587,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1768086000,
+         'from' => 1769295600,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 12.1.2026 bis 16.1.2026',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 26.1.2026 bis 30.1.2026',
          'type' => 'gesperrt',
-         'until' => 1768604399
+         'until' => 1769813999
        },
        undef,
        undef,
@@ -3442,7 +3442,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 #: last_checked: 2026-01-15 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
 # REMOVED (keine Sperrung mehr) --- #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet? --- #: source_id: LMS-BR:392919/72 viz2021:13.355108,52.540463, (bis 31.03.2026) --- #: also_indoor: traffic (re-T,G) --- #: last_checked: 2025-12-16 (traffic) --- #: check_frequency: 60d --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) --- Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
@@ -4566,11 +4566,12 @@ Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14320,9530 14347,9452 1439
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 90d (traffic)
 #: next_check: 2027-03-31
-Alter Markt, Lüdersstr., Freiheit: Einbahnstraßenregelung	q4::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836 22196,4847
+Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
+# REMOVED (hier mittlerweile Sackgasse, Fuß+Radverkehr frei) --- Freiheit: Einbahnstraßenregelung	q4::inwork; 22377,4836 22196,4847
 ',
          'from' => 1729526400,
          'id' => 3071,
-         'text' => 'Lüdersstr./Alter Markt/Freiheit: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
+         'text' => 'Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
          'until' => 1806508800
        },
        undef,
@@ -4670,7 +4671,8 @@ Alter Markt, Lüdersstr., Freiheit: Einbahnstraßenregelung	q4::inwork; 22495,4523
 #: source_id: LMS-BR:395406/72 viz2021:13.49371,52.51618,07.01.2026,07:00 (bis 02.03.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260106
 # REMOVED (2019er-Sperrung, kürzer) ---	q4::inwork; 16276,12273 16397,12397
-Schottstr., Rüdigerstr.	q4::inwork; 16276,12273 16397,12397 16485,12384
+Schottstr.: nur ein kurzes Stück vor der Kreuzung gesperrt	q3::inwork; 16276,12273 16397,12397
+Rüdigerstr.: Baustellenlänge ca. 50m	q4::inwork; 16397,12397 16485,12384
 ',
          'from' => 1767654000,
          'id' => 3094,
@@ -6467,7 +6469,7 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: osm_watch: way id="37861386" version="34"
 #: osm_watch: way id="1231148375" version="10"
 #: priority: #B
-#: last_checked: 2026-01-16 (osm)
+#: last_checked: 2026-01-17
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-18 (nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -6756,7 +6758,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: note: mittlerweile laufen Rückbauarbeiten
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2025-12-22 (bahninfo-forum)
+#: last_checked: 2026-01-17 (bahninfo-forum)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -7936,6 +7938,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1901514334443909380
 #: by: https://www.erkner.de/rathaus-und-buergerservice/buergerinformationen/aktuelles/neuigkeiten/2025-1/ausbau-der-friedrichstrasse-beginnt.html (bis voraussichtlich Oktober 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~11-12-2025-l30-erkner-verzoegerung
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-01-2026-l30-erkner-weitere-baumbegutachtungen
 #: osm_watch: way id="336698811" version="9"
 Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 #: osm_watch: way id="5057517" version="22"
@@ -8532,7 +8535,7 @@ Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 # REMOVED --- #: next_check ^^^
 # REMOVED (abgeschlossen) --- #: note: wo genau? --- Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 # 
-#: last_checked: 2025-12-18 (MoPo) vvv
+#: last_checked: 2026-01-17 vvv
 #: check_frequency: 45d vvv
 Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
@@ -8694,7 +8697,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-01-11 (traffic) vvv
+#: last_checked: 2026-01-17 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -9502,7 +9505,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Wege weiterhin gesperrt?
-#: last_checked: 2025-11-26
+#: last_checked: 2026-01-17
 	2::inwork 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 ',
          'from' => undef,
@@ -9878,6 +9881,47 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
          'text' => 'Hausburgstr.: Hochbauarbeiten, Sperrung der Fahrbahn zwischen Hermann-Blankenstein-Str. und Kochhannstr., außerdem Einbahnstraßenregelung in der Hermann-Blankenstein-Str., voraussichtlich bis Ende 2026',
          'type' => 'handicap',
          'until' => 1798757999
+       },
+       {
+         'data' => '#: next_check_id: KNOTENMARZAHN-2022
+#: osm_watch: note 4547152 5
+#: last_checked: 2026-01-17
+#: check_frequency: 120d
+#: next_check: 2026-12-31
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.)	2::inwork 19157,14979 19171,14938 19173,14932
+',
+         'from' => undef,
+         'id' => 4524,
+         'text' => 'Georg-Knorr-Str. - Frank-Schweitzer-Str.: Unterführung unter der Landsberger Allee kann gesperrt sein (Stand Mitte Januar 2026: Durchfahrt möglich)',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: HELGAHAHNEMANN-2023
+#: last_checked: 2026-01-17 vvv
+#: check_frequency: 45d vvv
+#: osm_watch: way id="1467787945" version="1"
+Uferweg	2::inwork 18192,5931 18118,5953
+#: osm_watch: way id="958828368" version="2"
+Verbindungsweg	2::inwork 18118,5953 18075,5880
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 4525,
+         'text' => 'Hasselwerderpark/Uferweg - Am Werkstor/Kupferkamp: Wege können noch gesperrt sein (Stand Mitte Januar 2026: Durchfahrt möglich)',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
+	2::inwork -62638,16382 -62739,15787 -62836,15181
+',
+         'from' => 1773097200,
+         'id' => 4526,
+         'text' => 'Mögelin: Radwegsanierung, Sperrung des Radwegs von Mitte März bis Anfang Juli 2026',
+         'type' => 'gesperrt',
+         'until' => 1783720799
        }
      
 );

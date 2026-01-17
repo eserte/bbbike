@@ -120,7 +120,7 @@ Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX Einbahnstraßenregelung temporär aufgehoben
-#: last_checked: 2025-12-06
+#: last_checked: 2026-01-17
 #: check_frequency: 120d
 #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
@@ -128,7 +128,7 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2025-09-19 (luftbildsuche) vvv
+#: last_checked: 2026-01-17 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
@@ -159,7 +159,7 @@ Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219
 Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
 Frank-Schweitzer-Str.	1no 19195,14931 19178,14924
 Frank-Schweitzer-Str.	2::inwork 19178,14924 19111,14894 19117,14875
-Frank-Schweitzer-Str.	1no 19117,14875 19243,14903 19256,14906
+Frank-Schweitzer-Str.	1no 19117,14875 19256,14906
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -722,7 +722,8 @@ Magirusstr.	1 8199,6583 7990,6598
 Ceciliengärten	1 6256,7428 6241,7428 6239,7600 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
 Ingelheimer Str.	1 18891,8586 18951,8574 19022,8571 19075,8590
 Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
-Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
+Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348
+# REMOVED (hier nicht) --- Murtzaner Ring	1 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
 Rosenstr.	1 22284,4653 22212,4655 22144,4660
 Laurenzstr.	1 22246,4711 22175,4730
@@ -4180,7 +4181,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-01-07
+#: last_checked: 2026-01-17
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4242,13 +4243,13 @@ Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeite
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2025-12-22 (bahninfo-forum)
+#: last_checked: 2026-01-17 (bahninfo-forum)
 #: check_frequency: 120d
 Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
 #: osm_watch: way id="1149630679" version="6"
-#: last_checked: 2025-12-22 (bahninfo-forum)
+#: last_checked: 2026-01-17 (bahninfo-forum)
 #: check_frequency: 60d
 Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
 # 
@@ -4338,7 +4339,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: osm_watch: way id="4696062" version="30"
-#: last_checked: 2025-08-24
+#: last_checked: 2026-01-17
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
@@ -4347,17 +4348,11 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: way id="26244466" version="25"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.53642,52.53865, (bis 31.12.2026)
-#: last_checked: 2025-09-19 (luftbildsuche)
+#: last_checked: 2026-01-17
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
 # 
-#: next_check_id: KNOTENMARZAHN-2022
-#: osm_watch: note 4547152 4
-#: last_checked: 2025-08-24
-#: check_frequency: 180d
-#: next_check: 2026-12-31
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung gesperrt	2::inwork 19157,14979 19171,14938 19173,14932
 # REMOVED (dieser Abschnitt wird wohl aufgegeben) --- (Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung gesperrt	2::inwork 19173,14932 19178,14924
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1415395.php (Bauarbeiten voraussichtlich bis zum zweiten Quartal 2026)
@@ -4461,6 +4456,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/u0Q2caSUXqlMpEwIClbJq (Eröffnung im Frühjahr 2026?)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/stau-hotspot-elsenbruecke-in-treptow-gruene-attackieren-cdu-und-praesentieren-radikalen-a100-plan-li.10009556 (sukzessive Eröffnung ab Dez 2025?)
 #: by: https://fragdenstaat.de/anfrage/umweltinformationen-zur-eroeffnung-des-rad-und-fusswegs-am-16-bauabschnitt-der-a100-in-berlin/#nachricht-1066335
+#: by: https://www.entwicklungsstadt.de/entlang-der-a100-wann-wird-der-neue-radweg-freigegeben/
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
 #: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.), 2025-04-12 (Sa) 10:18 (Kiefholzstr. NO)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
@@ -4855,7 +4851,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: last_checked: 2025-12-23
+#: last_checked: 2026-01-17
 #: check_frequency: 180d
 #: next_check: 2027-06-30
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861

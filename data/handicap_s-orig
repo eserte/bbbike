@@ -56,7 +56,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-01-15 vvv
+#: last_checked: 2026-01-17 (osm) vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="11"
@@ -65,7 +65,7 @@ Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfu
 #: osm_watch: way id="182614432" version="23"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="114684413" version="23"
+#: osm_watch: way id="114684413" version="24"
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
 #: osm_watch: way id="1108260165" version="8"
 #: note: etwa 30m lang
@@ -2619,9 +2619,9 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 # REMOVED (dieser Abschnitt wird aufgegeben) --- (Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19173,14932 19178,14924
 (Landsberger Allee - Frank-Schweitzer-Str.): Rampe	q2- 19157,14948 19162,14931 19121,14916 19173,14932
 (Landsberger Allee/Georg-Knorr-Str. - Frank-Schweitzer-Str.): einige Fußgänger	q2 19173,14932 19195,14931
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.): einige Fußgänger	q2 19178,14924 19182,14918 19227,14914
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): einige Fußgänger	q2 19178,14924 19182,14918 19232,14916
 #: XXX_prog BS (ansonsten q2)
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.): einige Fußgänger, Bordstein	q3 19227,14914 19243,14903
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): einige Fußgänger, Bordstein	q3 19232,14916 19256,14906
 # REMOVED --- (Rudolfplatz, Park): Fußgänger, Bordsteine, Radfahren verboten, ggfs. schieben	q3 14026,10869 13896,10851
 (Hoeppnerstr. - Hessenring): eng, Fußgänger	q3 8376,7440 8446,7524 8549,7622
 (Kolonie Zähringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622
@@ -3739,17 +3739,21 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2025-09-10 vvv
+#: last_checked: 2026-01-17 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="12"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
 #: osm_watch: way id="979814386" version="5"
-(Uferweg an der Spree): Radfahren verboten	q4 18667,5467 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
+(Uferweg an der Spree): Radfahren verboten	q4 18667,5467 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18192,5931
 #: osm_watch: way id="26995547" version="8"
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+#: note: hier kein explizites Radfahrverbot, vielleicht wird das noch geändert
+(Uferweg an der Spree): einige Fußgänger	q1 18192,5931 18118,5953
+#: note: hier kein explizites Radfahrverbot, vielleicht wird das noch geändert
+(Am Werkstor/Kupferkamp - Uferweg): einige Fußgänger	q1 18075,5880 18118,5953
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
@@ -4242,6 +4246,7 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.morgenpost.de/bezirke/spandau/article408813542/verkehrswende-die-plaene-fuer-die-radbruecke-am-rathaus-spandau.html
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13024 (Anfrage)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/schrottrampe-am-u-bahnhof-bleibt-das-hassliche-wahrzeichen-der-altstadt-spandau-fur-immer-14306738.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-grosses-bvg-drehkreuz-schandfleck-am-rathaus-spandau-wird-abgerissen-15141605.html (Erwähnung der gläsernen Brücke; Sanierung des Platzes bis 2032)
 # REMOVED (wieder benutzungspflichtig) --- #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
 #: last_checked: 2025-08-08 (mapillary) vvv
 #: check_frequency: 360d vvv
@@ -5188,7 +5193,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026)
-#: last_checked: 2026-01-08 vvv
+#: last_checked: 2026-01-17 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-03-15 vvv
 # REMOVED --- #: valid: -20251219
@@ -5518,6 +5523,11 @@ südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7
 zur A.T.U-Einfahrt: linken Gehweg benutzen	q4; 8595,9495 8568,9493
 # 
 Am Dorfanger - Parkanlage: schmaler Weg	q3 4803,20529 4799,20517 4790,20493
+# 
+#: by: https://pascalgrothe.de/drei-jahre-wartezeit-schwellen-stoppen-raser-in-der-kohlweisslingstrasse/
+#: note: gesehen am 2026-01-17: es wurde nur auf der östlichen Seite außerhalb der Parktaschen geparkt, und somit war die Lücke neben der Bodenschwelle zugeparkt
+Kohlweißlingstr.: drei Bodenschwellen, Lücke kann zugeparkt sein	q1; 21723,10920 21677,11017 21637,11115 21598,11190
+Kohlweißlingstr.: drei Bodenschwellen, Lücke meist frei	q0-; 21598,11190 21637,11115 21677,11017 21723,10920
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

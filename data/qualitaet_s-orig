@@ -3990,7 +3990,7 @@ Platz am Kaisersteg: Gehwegpflasterung	Q0- 18381,6134 18428,6123
 Platz am Kaisersteg: Kleinsteinpflaster	Q1 18428,6123 18417,6068
 Platz am Kaisersteg: Gehwegpflasterung	Q0- 18417,6068 18422,6013 18420,6009
 Kaisersteg: Asphalt, leicht uneben	Q0- 18420,6009 18393,5964 18353,5897 18326,5850
-Britzer Str.: Asphalt	Q0 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376
+Britzer Str.: Asphalt	Q0 18470,5600 18380,5520 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
 Erikastr.: Asphalt	Q0 19500,4919 19477,5048 19424,5217
 Eisblumensteig: Asphalt	Q0 19579,4931 19576,4986 19553,5079 19541,5100 19520,5176 19524,5201 19532,5234 19534,5242
@@ -5708,7 +5708,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (vom 27. Februar 2022: Bauarbeiten 2023 und 2024)
 #: XXX ƒndert sind bei den Bauarbeiten etwas am Belag? Wird es w‰hrend der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="17"
-#: last_checked: 2025-12-06
+#: last_checked: 2026-01-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -11930,8 +11930,10 @@ H‰nselstr.: Beton	Q0- 15695,7254 15555,7133 15436,7031
 (Hasselwerderpark, Uferweg an der Spree): Betonpflaster	Q0- 18634,5484 18560,5539
 (Hasselwerderpark, Uferweg an der Spree): Beton	Q1 18560,5539 18506,5596
 (Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900
-(Hasselwerderpark, Uferweg an der Spree): Asphalt/Beton	Q0 18334,5900 18199,5935
+(Hasselwerderpark, Uferweg an der Spree): Asphalt/Beton	Q0 18334,5900 18192,5931
 (Hasselwerderpark, Uferweg an der Spree - Kaisersteg): wassergebundene Decke	Q1 18413,5799 18339,5853 18326,5850
+(Uferweg an der Spree): Betonpflaster	Q0- 18192,5931 18118,5953
+(Am Werkstor/Kupferkamp - Uferweg): Betonpflaster	Q0- 18075,5880 18118,5953
 Insel-R¸gen-Weg: Gehwegplatten	Q1 10967,17671 10978,17589 11064,17599
 Insel-R¸gen-Weg: unbefestigt	Q2 11064,17599 11228,17624 11354,17645
 Insel-R¸gen-Weg: Beton	Q1 11069,17562 11064,17599
@@ -14038,6 +14040,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13868 (Einwohneranfrage)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13869 (Einwohneranfrage)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13934 (Anfrage)
+#: by: https://www.entwicklungsstadt.de/umbau-ollenhauerstrasse-buergerinitiative-kritisiert-geplanten-kahlschlag-in-reinickendorf/
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5243,18162 5301,18447 5324,18560 5345,18675
@@ -15148,7 +15151,7 @@ Mannheimer Str. (Mahlsdorf): guter Asphalt	Q0 24143,9371 23972,9439 23887,9463 2
 #: confirmed_by: srt vvv
 Grenzstr. (Mahlsdorf): Asphalt	Q0 23188,9593 23166,9549 23120,9443 23072,9341 23018,9226
 Eschenstr.: sehr guter Asphalt	Q0+ 23031,9209 23018,9226 22947,9277 22830,9361 22718,9442 22666,9479 22548,9523 22473,9530 22458,9532 22413,9544 22402,9551 22366,9571
-Heerstr.: Beton mit Sch‰den/Asphalt	Q0- 22366,9571 22274,9622 22129,9702
+Heerstr.: Beton mit Sch‰den/Asphalt	Q0- 22366,9571 22342,9584 22274,9622 22129,9702
 #: historical_note: fr¸her (bis 2024) Beton, Q0-
 Heerstr.: Asphalt	Q0 22129,9702 21988,9766
 # REMOVED --- #: XXX nach den Bauarbeiten asphaltiert? --- #: osm_watch: way id="42814694" version="20" --- #: next_check: 2024-11-01
@@ -15444,7 +15447,9 @@ Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8307,16434
 Maisweg: Asphalt	Q0 20680,12632 20773,12621 20816,12618
 #: corrected_by: srt (Asphalt -> )
 Maisweg: Asphalt/Verbundsteinpflaster	Q1+ 20816,12618 20851,12669
-Maisweg: Asphalt	Q0 20851,12669 20961,12858 21003,13152
+#: corrected_by: srt (Asphalt -> ...)
+Maisweg: Verbundsteinpflaster	Q1+ 20851,12669 20877,12714
+Maisweg: Asphalt	Q0 20877,12714 20961,12858 21003,13152
 #: confirmed_by: srt
 Ingw‰onenweg: Asphalt	Q0 16442,22505 16499,22789 16517,22868 16543,22942 16566,23007 16587,23067 16627,23187
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
@@ -25200,7 +25205,7 @@ Kummerower Ring: guter Beton	Q0 22615,13734 22527,13708 22523,13680 22544,13602 
 # 
 #: by: where_are_you_between: vvv
 #: confirmed_by: srt
-Hainstr.: guter Asphalt	Q0 18370,5511 18370,5647 18349,5744 18312,5824
+Hainstr.: guter Asphalt	Q0 18380,5520 18371,5541 18367,5645 18349,5730 18312,5824
 #: confirmed_by: srt
 Flieﬂstr.: m‰ﬂiges Kopfsteinpflaster	Q2 18164,5701 18019,5786
 #: confirmed_by: srt
