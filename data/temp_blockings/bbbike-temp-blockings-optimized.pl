@@ -1145,7 +1145,32 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025)
+#: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00 (inaktiv)
+#: source_id: viz2021:13.49144,52.42064,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
+#: source_id: viz2021:13.49469,52.42125,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
+	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+	2::temp 16610,1715 16767,1831
+',
+         'from' => 1778191200,
+         'id' => 952,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              5,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (9. und 10. Mai 2026)',
+         'type' => 'gesperrt',
+         'until' => 1778450399
+       },
        undef,
        undef,
        undef,
@@ -3437,10 +3462,11 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Tegeler Str.	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
-#: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026)
-#: also_indoor: traffic (G,H,A,W,T)
-#: last_checked: 2026-01-15 (traffic)
-#: check_frequency: 14d (traffic)
+#: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
+#: also_indoor: traffic (ex-G,ex-H,ex-A,ex-W,T)
+#: last_checked: 2026-01-18 (traffic)
+#: check_frequency: 7d (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
@@ -8493,7 +8519,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr.; demnächst in der Landjägerstr. (nördlich Amtsstr.?)
-#: last_checked: 2026-01-05 (website check) vvv
+#: last_checked: 2026-01-19 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -8546,14 +8572,14 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-01-05 (traffic)
+#: last_checked: 2026-01-19 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-01-05 (traffic)
+#: last_checked: 2026-01-19 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
@@ -8587,7 +8613,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-05 (traffic) vvv
+#: last_checked: 2026-01-18 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -8912,8 +8938,9 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'until' => 1782918000
        },
        {
-         'data' => '#: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-01-16
+         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
+#: also_indoor: traffic (G,T,B)
+#: last_checked: 2026-01-18 (daf)
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9311,7 +9338,21 @@ Corinthstr.	q4::inwork; 14608,10409 14447,10491
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260119
+#: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
+#: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025) (inaktiv)
+#	q4::inwork; 17916,5675 18013,5627
+	q4::inwork 17916,5675 18013,5627
+',
+         'from' => 1768777200,
+         'id' => 4454,
+         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 20.01.2026 bis Ende März 2026',
+         'type' => 'handicap',
+         'until' => 1774994399
+       },
        {
          'data' => '#: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
@@ -9639,11 +9680,11 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 #: by: https://iq-spaces.com/de/berlin-mitte (iQ Space)
 #: by: http://www.deal-magazin.com/news/148507/Leuchtturmprojekt-fuer-Biomedizin-WOLFF--MUeLLER-baut-iQ-space (Fertigstellung April 2028)
 #: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
-#: osm_watch: way id="1080985512" version="14"
+#: osm_watch: way id="1080985512" version="15"
 #: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2025-12-31 (osm) vvv
+#: last_checked: 2026-01-19 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
