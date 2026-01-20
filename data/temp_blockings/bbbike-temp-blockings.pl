@@ -29145,7 +29145,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-01-16
+#: last_checked: 2026-01-19
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29625,7 +29625,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-01-14 vvv
+#: last_checked: 2026-01-20 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -29638,7 +29638,7 @@ Bulgarische Str. - Karpfenteich	2::inwork 15297,8921 15245,8916
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 # REMOVED (offen) --- Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14320,9530
 #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: gesperrt	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
+Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune können bereits weggeschoben sein	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15298,8781 15343,8714 15378,8668
 	2::inwork 15181,8967 15245,8916
@@ -38013,7 +38013,7 @@ EOF
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2026-01-06 (traffic) vvv
+#: last_checked: 2026-01-20 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
 #: next_check: 2026-05-18 (VIZ-Verkehrsmeldung) vvv
@@ -42329,7 +42329,7 @@ EOF
 #: osm_watch: way id="23121446" version="38"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2025-11-12 vvv
+#: last_checked: 2026-01-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 10908,13978 10933,14122
@@ -45162,7 +45162,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-01-16 vvv
+#: last_checked: 2026-01-19 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -49067,7 +49067,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2026-01-14 vvv
+#: last_checked: 2026-01-20 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -50092,17 +50092,22 @@ EOF
      { from  => 1755881434, # 2025-08-22 18:50
        until => undef, # 1777586400, # 2026-05-01 00:00
 #      text  => 'Rotherstr., Lehmbruckstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis April 2026',
-       text  => 'Rotherstr., Am Rudolfplatz: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis April 2026',
+       text  => 'Rotherstr., Am Rudolfplatz, Rudolfstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis April 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: osm_watch: note 4924394 3
-#: also_indoor: traffic (G[zuviel],T[zuwenig])
-#: last_checked: 2026-01-07
-#: check_frequency: 60d
-#: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe)
+#: osm_watch: note 4924394 4
+#: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2026-01-20 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
-	q4::inwork; 13755,10896 13856,10864 13896,10851 14011,10812
+Rotherstr., Am Rudolfplatz	q4::inwork; 13755,10896 13856,10864 13896,10851 14011,10812
+Rudolfstr.	q4::inwork; 14026,10869 13886,10939
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1755406800, # 2025-08-17 07:00
@@ -50544,7 +50549,7 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-01-14 vvv
+#: last_checked: 2026-01-20 vvv
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
@@ -50604,7 +50609,7 @@ EOF
      { from  => $isodate2epoch->("2026-01-19 00:00:00"), # $isodate2epoch->("2025-09-28 00:00:00"),
        until => $isodate2epoch->("2026-03-31 23:59:59"), # 1762196646, # $isodate2epoch->("2025-11-03 23:59:59"), # 1761951600, # 2025-11-01 00:00
 #      text  => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 29.09.2025 bis 03.11.2025',
-       text  => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 20.01.2026 bis Ende März 2026',
+       text  => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 20.01.2026 bis voraussichtlich Ende März 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
@@ -50612,7 +50617,10 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260119
 #: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025) (inaktiv)
+#: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026)
+#: note: laut rbb ebenfalls nur bis Ende Januar 2026
 #	q4::inwork; 17916,5675 18013,5627
+#: next_check: 2026-01-31
 	q4::inwork 17916,5675 18013,5627
 EOF
      },
@@ -51079,7 +51087,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 6
 #: also_indoor: traffic (none)
-#: last_checked: 2026-01-08 (osm note)
+#: last_checked: 2026-01-19
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
@@ -51358,7 +51366,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2026-01-06 (traffic) vvv
+#: last_checked: 2026-01-20 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q4::inwork 6124,5983 6226,5995 6318,6006
 Kissinger Str.	q3::inwork 6226,5995 6213,6135
@@ -51582,6 +51590,25 @@ EOF
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
 	2::inwork -62638,16382 -62739,15787 -62836,15181
+EOF
+     },
+     { from  => 1768802400, # 2026-01-19 07:00
+       until => 1774969200, # 2026-03-31 17:00
+       text  => 'Friedrichshaller Str.: Bauarbeiten zwischen Cunostr. und Kolberger Platz Berlin, Sperrung, evtl. sind auch Radfahrer betroffen, vom 20.01.2026 07:00 bis 31.03.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:396580/72 viz2021:13.29513,52.47536,20.01.2026,07:00 (bis 31.03.2026)
+	q4::inwork 2786,7721 2911,7686 3084,7599
+EOF
+     },
+     { from  => undef, # 
+       until => 1774969200, # 2026-03-31 17:00
+       text  => 'Zoppoter Str. und Borkumer Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis 31.03.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:395246/72 viz2021:13.298302,52.47039,05.01.2026,07:00 (Zoppoter Str., bis 31.03.2026)
+#: source_id: LMS-BR:395247/72 viz2021:13.29834,52.47075,05.01.2026,07:00 (Borkumer Str., bis 31.03.2026)
+	q4::inwork 3202,7121 3302,7092 3295,6987
 EOF
      },
     );
