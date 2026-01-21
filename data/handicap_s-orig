@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-01-07
+#: last_checked: 2026-01-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -56,18 +56,18 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-01-17 (osm) vvv
+#: last_checked: 2026-01-20 (osm) vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="11"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="182614432" version="23"
+#: osm_watch: way id="182614432" version="24"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="24"
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
-#: osm_watch: way id="1108260165" version="8"
+#: osm_watch: way id="1108260165" version="9"
 #: note: etwa 30m lang
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: next_check ^^^
@@ -280,7 +280,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-12-11 vvv
+#: last_checked: 2026-01-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -484,11 +484,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: osm_watch: way id="24242892" version="46"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/schadowstra%C3%9Fe-4-dorotheenstra%C3%9Fe-verwaltungsgeb%C3%A4ude-bundestag.757/page-2#post-23517
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
 #: osm_watch: way id="930343902" version="5"
 # REMOVED --- #: note: Fahrbahn offen, beide Bürgersteige gesperrt, Umleitung für Fußgänger --- 
 # REMOVED --- #: note: (wieder) komplett gesperrt, auch die Bürgersteige --- Schadowstr.: Fahrbahn gesperrt, Umleitung	q4::inwork 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
+#: by: https://www.entwicklungsstadt.de/elisabeth-selbert-haus-unter-den-linden-rohbau-waechst-fertigstellung-fuer-2026-geplant/
 #: osm_watch: way id="4402037" version="27"
 #: osm_watch: way id="1241756428" version="2"
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
@@ -757,7 +758,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: last_checked: 2026-01-20
 #: check_frequency: 14d
 #: next_check: 2026-01-23 (VIZ-Verkehrsmeldung)
-Grimmestr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
+Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
 # 
 # # REMOVED --- #: next_check_id: GITSCHINER-2025
 # REMOVED --- #: last_checked: 2025-06-25
@@ -1060,7 +1061,7 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: next_check_id: STUBENRAUCH-2025
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9872 (Anfrage)
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
-#: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026)
+#: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026) (inaktiv)
 #: last_checked: 2025-10-29 (krickstadt) vvv
 #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
@@ -5203,7 +5204,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026)
-#: last_checked: 2026-01-17 vvv
+#: last_checked: 2026-01-21 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-03-15 vvv
 # REMOVED --- #: valid: -20251219

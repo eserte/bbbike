@@ -36187,7 +36187,7 @@ EOF
 #: source_id: viz2021:13.452362,52.470898,21.02.2022,07:00 (bis 31.12.2022) (bis 31.1.2023) (bis 2.6.2023) (bis 31.12.2023) (bis 30.04.2024) (bis 13.05.2024) (inaktiv)
 #: source_id: viz2021:13.452181,52.471098,13.05.2024,07:00 (bis 11.12.2025) (inaktiv)
 #: source_id: viz2021:13.452222,52.471093,13.05.2024,07:00 (bis 11.12.2025) (inaktiv)
-#: source_id: LMS-BR:392162/72 viz2021:13.45219,52.47105, (Niemetzstr., bis 30.07.2027)
+#: source_id: LMS-BR:392162/72 viz2021:13.45219,52.47105, viz2021:13.45133,52.47198, (Niemetzstr., bis 30.07.2027)
 #: source_id: LMS-BR:333172/72 viz2021:13.45047,52.47074,13.05.2024,07:00 viz2021:13.45047,52.47074, (Saalestr., bis 11.12.2025) (bis 30.07.2026) (bis 30.07.2027)
 #: also_indoor: traffic (B,H(unvollständig),G)
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
@@ -36505,10 +36505,11 @@ EOF
 #: osm_watch: way id="734271970" version="9"
 #: osm_watch: way id="975241319" version="8"
 #: osm_watch: way id="970452276" version="8"
+#: osm_watch: note 5093384 1
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-01-14
-#: check_frequency: 10d
+#: last_checked: 2026-01-18 (mapillary)
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
@@ -40897,8 +40898,8 @@ EOF
 #: osm_watch: note 5085082 4
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2025-12-30 vvv
-#: check_frequency: 21d (hohe Frequenz am Anfang) vvv
+#: last_checked: 2026-01-21 vvv
+#: check_frequency: 30d (hohe Frequenz am Anfang) vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden)
 Hönower Weg	2::inwork 17383,9719 17471,9688
@@ -43547,7 +43548,7 @@ EOF
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2025-12-28 (mapillary)
+#: last_checked: 2026-01-19 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -45878,7 +45879,7 @@ EOF
        until => undef, # XXX
 #      text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem IV. Quartal 2024 (Stand Ende März 2025: Bauarbeiten haben noch nicht begonnen)',
 #      text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich ab dem 10.04.2025',
-       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025 (Stand Mitte Dezember: befahrbar, allerdings noch nicht offiziell freigegeben)',
+       text  => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025 (Stand Mitte Januar 2026: befahrbar, allerdings noch nicht offiziell freigegeben)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
@@ -45896,9 +45897,9 @@ EOF
 #: osm_watch: way id="27260312" version="25"
 #: osm_watch: note 4673198 8
 #: add_fragezeichen: Ist der Mauerweg mittlerweile offiziell freigegeben?
-#: last_checked: 2025-10-15
-#: check_frequency: 60d
-#: next_check: 2025-12-31
+#: last_checked: 2026-01-19 (mapillary)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-12-31
 	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 EOF
      },
@@ -45948,11 +45949,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083535036" version="13"
-#: osm_watch: way id="1119255054" version="10"
+#: osm_watch: way id="1083535036" version="14"
+#: osm_watch: way id="1119255054" version="11"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2025-12-28
+#: last_checked: 2026-01-20 (osm)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -47572,8 +47573,7 @@ EOF
 #: source_id[inactive]: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
 #: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
-#: source_id: viz2021:13.574491,52.448686,04.08.2025,07:00 (eigentlich eine andere Baustelle, hängt aber vielleicht damit zusammen; bis 13.10.2025) (inaktiv)
-#: source_id: viz2021:13.574491,52.448686, (eigentlich eine andere Baustelle, s.o., bis 16.02.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
 #: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
@@ -48164,7 +48164,7 @@ EOF
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
-#: last_checked: 2026-01-04 (daf) vvv
+#: last_checked: 2026-01-20 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 Gutenbergstr.	q4::inwork; 5518,12159 5317,12242
@@ -48262,7 +48262,8 @@ EOF
 #      text  => 'Wassermannstr., Freystadter Weg, Lohnauer Steig und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
 #      text  => 'Lohnauer Steig, Selchowstr. und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
 #      text  => 'Wassermannstr., Lohnauer Steig, Selchowstr. und Umgebung: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
-       text  => 'Wassermannstr., Lohnauer Steig und Umgebung, Gutenbergstr., Flemmingstr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+#      text  => 'Wassermannstr., Lohnauer Steig und Umgebung, Gutenbergstr., Flemmingstr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+       text  => 'Wassermannstr., Gutenbergstr., Flemmingstr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
        type  => 'handicap',
        accept_multi_feature_distance => 2000,
        data  => <<'EOF',
@@ -48273,8 +48274,8 @@ EOF
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
-#: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr.; demnächst in der Landjägerstr. (nördlich Amtsstr.?)
-#: last_checked: 2026-01-19 (website check) vvv
+#: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
+#: last_checked: 2026-01-21 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -48308,8 +48309,7 @@ EOF
 # REMOVED (vor Ort keine Bauarbeiten) --- #: note: voraussichtlich ab 09.04.2025 --- Thomas-Müntzer-Str.: Sackgasse, vermutlich an der Radickestr.	q3::inwork 20299,3435 20149,3617
 # REMOVED (Abgeschlossen) --- #: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt; mittlerweile: Maßnahmen ab dem 10.06.2025 fortgesetzt; mittlerweile: Bauende voraussichtlich am 04.08.2025 --- Wünschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
 # REMOVED (abgeschlossen) --- #: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?); verlängert bis 08.08.2025; verlängert bis 19.09.2025 --- # REMOVED (hier nicht) --- Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275 --- Freystadter Weg	q4::inwork 21008,4275 20981,4628 20981,4696 20994,4761
-#: note: Temporäre Baustelleneinrichtungsfläche bis 26.09.2025, nun bis Ende Oktober 2025, nun bis Anfang 2026
-Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
+# REMOVED (abgeschlossen) --- #: note: Temporäre Baustelleneinrichtungsfläche bis 26.09.2025, nun bis Ende Oktober 2025, nun bis Anfang 2026 --- Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
 # REMOVED (mittlerweile: abgeschlossen mit Freigabe) --- #: note: Beginn ab dem 19.05.2025 (aber wo genau?); mittlerweile ab 02.06.2025 --- Zinsgutstr.	q4::inwork 20679,3944 20862,3824
 # REMOVED (hier nicht) --- Zinsgutstr.	q4::inwork 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
 # REMOVED ("Kabeltiefbau abgeschlossen") --- #: note: laut Haltestellenschilder vom 21.05.2025 07 Uhr bis 24.07.2025 17 Uhr; laut Website Verkehrsfreigabe am 08.08.2025 --- Flemmingstr.	q4::inwork 21848,4882 21726,4537 --- #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt --- Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
@@ -48323,7 +48323,7 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: note: laut Website möglicherweise bis 16.01.2026
+#: note: laut Website möglicherweise bis 16.01.2026; nun: Asphaltierung steht noch aus
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
@@ -48331,6 +48331,7 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
+#: note: laut stromnetz-Seite mittlerweile abgeschlossen, aber vielleicht steht hier auch noch die Asphaltierung aus?
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026)
 #: also_indoor: traffic (T,G)
@@ -49583,7 +49584,7 @@ EOF
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2025-12-22 (research)
+#: last_checked: 2026-01-21 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -51299,7 +51300,7 @@ EOF
 #: osm_watch: way id="1219396158" version="7"
 #: osm_watch: way id="1458967378" version="1"
 #: also_indoor: traffic (G,T)
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer?
+#: add_fragezeichen: Ist der Uferweg unter dem Siemenssteg weiterhin gesperrt?
 # REMOVED --- #: XXX: Stimmt die Einbahnstraßenrichtung? Und warum steht in der VIZ-Verkehrsmeldung "ab Alt-Lietzow", müsste es nicht "ab Arcostr." heißen?
 #: note: Evtl. steht die Sperrung des Uferwegs auch mit der Einbahnstraßenregelung am Iburger Ufer im Zusammenhang?
 #: last_checked: 2025-11-26 (daf)

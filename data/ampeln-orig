@@ -404,14 +404,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-01-17
+#: last_checked: 2026-01-21
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2026-01-17
+#: last_checked: 2026-01-21
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -4159,7 +4159,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2025-12-22
+#: last_checked: 2026-01-21
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -4470,7 +4470,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
 #: XXX noch provisorisch, wird verstetigt
-#: last_checked: 2025-12-30
+#: last_checked: 2026-01-21
 #: check_frequency: 30d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 
@@ -4491,6 +4491,9 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: historical_note: seit Dez 2025
 #: note: Anforderung für Radfahrer im Zuge des Hönower Wiesenwegs
 	X 17380,8858
+# 
+#: historical_note: seit etwa Ende 2025/Anfang 2026
+	X 22899,15073
 # 
 #: section ^^^
 ################################################################################

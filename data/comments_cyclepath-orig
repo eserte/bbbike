@@ -520,8 +520,9 @@ Verbundsteinpflasterradwege auf Gehweg	RW;RW 27589,161496 27408,161558 27157,161
 	RW;RW 26697,161590 26698,161653 26699,161759 26699,161847 26700,161925
 #: source_id: LS/222-W/25/094 (bis 15.09.2025) (bis 17.09.2025) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~18-09-2025-l-400-sanierter-radweg-zwischen-waltersdorf-und-berlin-ab-sofort-freigegeben
-#: osm_watch: way id="846657377" version="9"
+# REMOVED --- #: osm_watch: way id="846657377" version="9"
 #: osm_watch: way id="804766834" version="6"
+#: osm_watch: way id="1185492287" version="2"
 # REMOVED --- #: add_fragezeichen: Wurden die Wurzelschäden bei der Sanierung des Radwegs behoben? --- #: next_check: 2025-09-17
 #: historical_note: früher (bis 17.09.2025) mit Wurzelschäden
 asphaltiert	RW8;RW2 22003,-1625 22001,-1632 21861,-2154 21696,-2925 21722,-3421 21687,-3601 21607,-3739
@@ -2071,7 +2072,10 @@ Beton	RW1; -11008,-3382 -10893,-3289
 	RW;RW 9059,36323 9282,36780 9439,36963 10209,37661 11598,37920 11779,37863 11818,37915 11852,37949 12044,37981 12210,38054
 # 
 	RW2; 1401,-1310 1437,-1298 1477,-1282
-Verbundsteinpflaster	RW; 1916,-1090 1865,-1139 1477,-1282 1437,-1298 1401,-1310
+#: by: mapillary, osm
+	RW3; 1477,-1282 1713,-1194 1865,-1139
+Verbundsteinpflaster	RW2; 1916,-1090 1865,-1139 1713,-1194
+Verbundsteinpflaster	RW1; 1713,-1194 1477,-1282 1437,-1298 1401,-1310
 neu asphaltiert	RW2;RW2 1182,-2170 1186,-1973 1335,-1472 1361,-1339
 neu asphaltiert	RW2; 1372,-1277 1415,-949
 	RW3; 1415,-949 1453,-746

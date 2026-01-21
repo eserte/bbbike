@@ -208,7 +208,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2026-01-07 vvv
+#: last_checked: 2026-01-21 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -468,7 +468,7 @@ Kavalierstr.	1 10621,18837 10729,18584
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
 #: osm_watch: way id="4637773" version="29"
-#: last_checked: 2025-12-28 (mapillary)
+#: last_checked: 2026-01-19 (mapillary)
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
@@ -2802,7 +2802,7 @@ tragen (3x13 Stufen)	0:45 18739,4728
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409854635/licht-am-ende-des-tunnels-s-bahnhof-erhaelt-endlich-seinen-aufzug.html (1. Quartal 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23856.pdf (Inbetriebnahme im 2. Quartal 2026)
 #: XXX hier wird es in Zukunft einen Aufzug geben
-#: last_checked: 2025-11-05
+#: last_checked: 2026-01-20 (bahninfo-forum)
 #: next_check: 2026-06-30 (pardok)
 tragen	0:45 18661,4655
 # 
@@ -4154,14 +4154,17 @@ Glockenblumenweg: Einbahnstraße	1s:q2:inwork 16461,2569 16260,2717
 #: next_check ^^^
 #: last_checked ^^^
 # 
+#: next_check_id: BVGBETRIEBSHOFSPREE-2026
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1576769.php (Arbeiten ab 7.7.2025, bislang mit Bauzäunen gesichert)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7894 (zum geplanten Skaterpark)
 #: priority: #C vvv
-#: last_checked: 2025-07-27 vvv
+#: last_checked: 2026-01-21 vvv
 #: check_frequency: 180d vvv
+#: next_check: 2027-04-30 (nd) vvv
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
 #: XXX könnte mit den Bauarbeiten am neuen BVG-Betriebshof zu tun haben
-neben der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16997,7057 16849,6902 16775,6813 16747,6813
+neben der Minna-Todenhagen-Brücke: Sperrung der Rampe und Treppe	2::inwork 16997,7057 16849,6902 16775,6813 16747,6813
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -4181,7 +4184,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-01-17
+#: last_checked: 2026-01-21
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4216,7 +4219,7 @@ Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12933,1101 12946,1027
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: source_id: bvg2024:250#HIM_FREETEXT_308566
 #: source_id: bvg2024:250#HIM_FREETEXT_307841
-#: last_checked: 2025-12-28 (mapillary) vvv
+#: last_checked: 2026-01-19 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="7"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4463,7 +4466,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-01-14 vvv
+#: last_checked: 2026-01-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-04-15 (Tsp) vvv
 #: osm_watch: way id="1199463691" version="6"
@@ -4625,7 +4628,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-01-07
+#: last_checked: 2026-01-21
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4734,7 +4737,7 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2025-11-27
+#: last_checked: 2026-01-21
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -4911,7 +4914,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="19"
-#: last_checked: 2025-12-30
+#: last_checked: 2026-01-21
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
@@ -5107,14 +5110,17 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: by: https://jtre.de/de/projects/nordhafen-living-and-office
 #: by: https://jtre.de/de/news/ein_jahr_bauzeit (Fertigstellung des Gebäudes im Frühjahr 2027)
+#: by: https://www.entwicklungsstadt.de/wohnraum-in-der-europacity-nordhafen-living-office-soll-bis-fruehjahr-2027-fertig-werden/
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 # REMOVED (keine Updates mehr) --- #: also_indoor: webcam https://portal1915.webcam-profi.de/
 #: last_checked: 2026-01-15 (daf) vvv
 #: check_frequency: 90d vvv
+#: next_check: 2027-04-15 (jtre.de, entwicklungsstadt (Frühjahr 2027)) vvv
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
 George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgersteig frei	2s:q4:inwork 7446,14403 7529,14274
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (offen) --- #: note: hier stehen Wachhäuschen, die aber nicht immer besetzt sind, außerdem gibt es Schranken --- #: last_checked: 2024-06-30 (daf) vvv --- #: check_frequency: 45d vvv --- George-Stephenson-Str.: möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7529,14274 7569,14209 7614,14136 --- (Heidestr./Hedwig-Porschütz-Str. - George-Stephenson-Str.): möglicher Baustellenverkehr, Freigabe noch unklar	2::inwork 7569,14209 7652,14257 --- #: check_frequency ^^^ --- #: last_checked ^^^

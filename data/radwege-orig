@@ -1382,6 +1382,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://viz.berlin.de/aktuelle-meldungen/witterungsbedingte-verschiebung-der-inbetriebnahme-der-elsenbrucke/
 #: by: https://www.tagesspiegel.de/berlin/verkehrschaos-an-der-a100-teil-eroffnung-der-berliner-elsenbrucke-verzogert-sich-weiter-15136055.html
 #: by: https://www.tagesspiegel.de/berlin/situation-wurde-als-beherrschbar-angesehen-bund-und-senat-nahmen-warnung-vor-a100-verkehrschaos-nicht-ernst-15138248.html
+#: by: https://www.entwicklungsstadt.de/stau-nach-plan-wie-der-senat-das-verkehrschaos-an-der-elsenbruecke-erklaert/
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1410,7 +1411,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-01-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-02-10 (SenMVKU zum Ersatzneubau) vvv
@@ -1895,7 +1896,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-01-11 (webcam)
+#: last_checked: 2026-01-21
 #: check_frequency: 21d
 	RW0; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
@@ -2433,7 +2434,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-01-17 vvv
+#: last_checked: 2026-01-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 asphaltiert	RW2; 17681,7589 17611,7690
@@ -3263,7 +3264,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-01-20
+#: last_checked: 2026-01-21
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3285,7 +3286,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-01-20
+#: last_checked: 2026-01-21
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3323,7 +3324,7 @@ Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 140
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2025-12-26
+#: last_checked: 2026-01-21
 #: next_check: 2026-03-31
 #: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
@@ -3332,7 +3333,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-01-17
+#: last_checked: 2026-01-21
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3343,14 +3344,14 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-01-17
+#: last_checked: 2026-01-21
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2025-12-26
+#: last_checked: 2026-01-21
 #: next_check: 2026-03-31
 #: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
@@ -5252,16 +5253,16 @@ Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 #: next_check_id: HANSA-2025
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
 #: last_checked: 2025-11-08
-#: next_check: 2026-01-21 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 15875,16816 15929,16870 15986,16922
 #: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;
 #: last_checked: 2025-11-08
-#: next_check: 2026-01-21 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
 	RW3; 16139,17017 16296,17114 16318,17128 16352,17150
 #: last_checked: 2025-11-08
-#: next_check: 2026-01-21 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 16352,17150 16460,17214
 neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 	RW2; 16578,17285 16837,17440
@@ -7514,7 +7515,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2025-12-28 (mapillary) vvv
+#: last_checked: 2026-01-19 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -8061,7 +8062,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2025-12-29 (mapillary) vvv
+#: last_checked: 2026-01-19 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8790,13 +8791,10 @@ gemeinsamer Geh- und Radweg, alter Beton	RW2; 20915,17584 20929,17685 20853,1776
 	RW6;RW6 22101,10985 22146,10995 22172,10996
 	RW6;RW6 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
 	RW6;RW6 22131,11084 22137,11033 22146,10995
-#: historical_note: früher nicht für Radfahrer freigegeben, mittlerweile verbreitert
-#: XXX die Busspur ist auch für Radfahrer gedacht (siehe BA-Pressemitteilung), aber noch gar nicht ausgeschildert
-#: last_checked: 2025-12-22
-# REMOVED --- #: next_check: 2025-12-17 (BA-Pressemitteilung: Anradeln)
-breite Busspur	RW5; 15505,6342 15598,6294 15725,6235
-#: historical_note: früher (bis Dez 2025) ohne Radverkehrsanlage
-	RW3; 15725,6235 15598,6294 15505,6342
+#: historical_note: früher (bis Mitte Dez 2025) nicht für Radfahrer freigegeben, mittlerweile verbreitert; ab Jan 2026 auch entsprechend ausgeschildert
+breite Busspur ist immer gültig	RW5; 15505,6342 15598,6294 15725,6235
+#: historical_note: früher (bis Dez 2025) ohne Radverkehrsanlage; bis Jan 2026 nicht ausgeschildert
+	RW4; 15725,6235 15598,6294 15505,6342
 	RW3; 15725,6235 15768,6214
 Tempo 10	RW6;RW6 14996,12462 14801,12517
 Tempo 10	RW6;RW6 14798,12502 15005,12443

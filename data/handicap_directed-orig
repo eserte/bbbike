@@ -525,7 +525,7 @@ Landsberger Allee	DH:t=60 19015,14901 18831,14823 18553,14678
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2025-12-11 vvv
+#: last_checked: 2026-01-21 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-09-11 (Umstellung der Verkehrsführung (auf die andere Brückenhälfte)) vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
@@ -728,5 +728,20 @@ Baseler Str.: Anbindung Finckensteinallee gesperrt, Umwege	DH:h=q4,90:len=50 316
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
+# 
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260114 (bis Anfang April 2026)
+#: source_id: LMS-BR:396180/72 viz2021:13.51373,52.50545,15.01.2026,09:00 (bis 03.04.2026)
+#: note: Richtung Osten existiert ein Hochbordradweg, der temporär benutzungspflichtig geworden ist
+#: last_checked: 2026-01-21
+#: next_check: 2026-04-03 (VIZ-Verkehrsmeldung)
+#: valid: -20260403
+Alfred-Kowalke-Str.: Baustellenampel und Gegenverkehrsregelung	DH:tl 18027,11244 17876,11217
+# 
+#: note: der gesperrte Bereich ist sehr kurz, nur 10-15m lang; auch Autos fahren hier auf der Gegenspur vorbei
+#: source_id: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
+#: source_id: LMS-BR:396306/72 viz2021:13.4528,52.51244, (kein Endedatum)
+#: last_checked: 2026-01-18
+#: check_frequency: 14d
+Grünberger Str.: Schlagloch vor der Simon-Dach-Str., Sperrung der Fahrtrichtung	DH:h=q4,15 13696,11920 14006,11843
 # 
 #: temporary ^^^
