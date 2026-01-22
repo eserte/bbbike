@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2025-12-31
+#: last_checked: 2026-01-22
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -1434,8 +1434,8 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id[inactive]: bvg2024:m4#5c1204dc-e817-4dc2-95b0-431bad289cd6 (bis 2025-12-14)
 #: source_id[inactive]: bvg2024:m4#4de79670-2bb7-4c7d-940b-3ad8e3fefa9c (bis 2025-12-14) (doppelt?)
 #: source_id: LMS-BR:392560/72 viz2021:13.489894,52.557953, (bis 22.12.2025) (bis 13.01.2026) (bis 21.01.2026) (bis 06.03.2026)
-#: source_id: bvg2024:156#HIM_FREETEXT_314202
-#: source_id: bvg2024:259#HIM_FREETEXT_314203
+#: source_id[inactive]: bvg2024:156#HIM_FREETEXT_314202
+#: source_id[inactive]: bvg2024:259#HIM_FREETEXT_314203
 #: XXX Fertigstellung laut osm note sogar erst Anfang 2027
 #: last_checked: 2025-12-12
 # REMOVED --- #: check_frequency: 30d
@@ -2298,7 +2298,7 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_06.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1471213.php
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
-#: last_checked: 2026-01-14
+#: last_checked: 2026-01-22
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (infravelo)
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -3646,7 +3646,7 @@ Radweg neben der BAB100: genaue Lage?	?::inwork 14291,7033 14233,6923 14239,6875
 #: check_frequency: 270d
 Wiesbadener Str./Sodener Str.: Zebrastreifen geplant	?::projected 3677,7363 3703,7324 3744,7274
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (erwähnt)
-#: last_checked: 2025-08-01 (orthofotos)
+#: last_checked: 2026-01-22
 #: check_frequency: 180d
 Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,10144 12048,10097 12073,10050
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (noch keine Mittelzusage)
@@ -5770,7 +5770,7 @@ Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 150
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-01-20
+#: last_checked: 2026-01-22
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -5791,7 +5791,7 @@ Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,1538
 #: by[nocache]: https://www.bz-berlin.de/berlin/zebrastreifen-verkehr-berlin-planung (Realisierung 2025)
 #: source_id: LMS-BR:387480/72 viz2021:13.32482,52.52781, (nur ein Fahrstreifen frei, bis 31.12.2025) (bis 23.01.2026) (inaktiv)
 #: priority: #D
-#: last_checked: 2025-06-01
+#: last_checked: 2025-08-01 (orthofotos)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-01-23 (VIZ-Verkehrsmeldung)
 Huttenstr. 12/Nähe Berlichingenstr.: Zebrastreifen geplant	?::projected 4916,13508 4985,13470 4913,13454
@@ -6378,7 +6378,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (infravelo)
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
-#: osm_watch: way id="4045220" version="55"
+#: osm_watch: way id="4045220" version="56"
 #: last_checked: 2025-12-23
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18871,9565 18846,9532 18765,9426 18735,9421
@@ -6627,7 +6627,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
 #: XXX mittlerweile Bauarbeiten hinter der Kreuzung Zeughofstr. Richtung NW, unklare Einbahnstraßenregelung; 2024-05-27: alle Einfahrt-verboten-Schilder haben nun Radfahrer-frei-Zusatzschilder, bei den Einbahnstraßenschildern fehlen sie weiterhin; mittlerweile scheint diese Baustelle fertig zu sein
 #: priority: #D
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-22
 #: check_frequency: 60d
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
 # 
@@ -7469,7 +7469,7 @@ Friedrichshaller Str.: wird es hier Verbesserungen für den Radverkehr geben?	? 2
 # 
 #: by[removed]: http://www.infravelo.de/projekt/per-rad-durch-den-boecklerpark/ (bis 2. Quartal 2021) (mittlerweile 3. Quartal 2022 bis 4. Quartal 2022) (mittlerweile gelöscht)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Sanierung des östlichen Teils)
-#: last_checked: 2025-10-28
+#: last_checked: 2026-01-22
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-12-31
 # REMOVED (hier eventuell später?) --- Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088
@@ -7511,7 +7511,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::inwork; 4517,9401 4507,9395
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2026-01-20
+#: last_checked: 2026-01-22
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7750,7 +7750,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-01-20
+#: last_checked: 2026-01-22
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8254,7 +8254,8 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.entwicklungsstadt.de/tunnel-unter-der-spree-baurecht-fuer-eine-der-wichtigsten-verbindungen-der-bvg/ (Frühjahr 2025 bis 2030)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/geheimer-u-bahn-tunnel-der-bvg-berlin-bekommt-grossbaustelle-mitten-in-der-spree-li.10015244 (Bauarbeiten beginnen auf der Südseite)
 #: by: https://www.nd-aktuell.de/artikel/1197016.bvg-u-bahn-baurecht-fuer-den-waisentunnel.html
-#: last_checked: 2026-01-20
+#: by: https://www.tagesspiegel.de/berlin/wichtige-verbindung-des-berliner-u-bahn-netzes-endlich-baurecht-fur-den-neuen-waisentunnel-15163355.html
+#: last_checked: 2026-01-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (Tsp, entwicklungsstadt: Baustart)
 Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt, Littenstr. Gehweg frei)	?::projected 11139,12243 11155,12184 11278,12185
@@ -8361,7 +8362,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-01-20
+#: last_checked: 2026-01-22
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -9196,8 +9197,9 @@ Friedenauer Höhe: Erschließungsstraße, evtl. mit Anschluss an die Straße am Güte
 # REMOVED --- #: next_check: 2026-01-01 (SenMVKU website, Tsp)
 Östliche Bucher-Straßen-Brücke: Ersatzneubau geplant	?::projected 13045,23465 13080,23508
 # 
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/fuerst-bismarck-steg/ (2026, Bauzeit halbes Jahr)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/fuerst-bismarck-steg/ (2026, Bauzeit halbes Jahr) (voraussichtliche Bauzeit: 2026 bis 2027)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/fuerst-bismarck-steg/
+#: osm_watch: way id="25722363" version="11"
 #: next_check: 2026-03-15 (SenMVKU website)
 Fürst-Bismarck-Steg: Neubau geplant	?::projected 3879,22574 3907,22560
 # 
@@ -9408,9 +9410,9 @@ Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrun
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php (Bauarbeiten ab 10. November 2025, erster Bauabschnitt bis 28. November 2025, Abschluss der Gesamtmaßnahme voraussichtlich im Frühjahr 2026)
 #: by: https://www.infravelo.de/projekt/hentigstrasse-caesarstrasse-roemerweg/ (4. Quartal 2025 - 2. Quartal 2026)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
-#: osm_watch: way id="1181114546" version="6"
-#: osm_watch: way id="1047417490" version="8"
-#: osm_watch: way id="217186432" version="17"
+#: osm_watch: way id="1181114546" version="7"
+#: osm_watch: way id="1047417490" version="9"
+#: osm_watch: way id="217186432" version="18"
 #: osm_watch: way id="1064532032" version="8"
 #: osm_watch: way id="1039590533" version="11"
 #: osm_watch: note 5042514 5
@@ -12636,8 +12638,8 @@ Private Planstraße 6 (Bachsaiblingstr.)	?::projected -414,15983 -301,15896
 #: last_checked ^^^
 # 
 #: next_check_id: GARTENFELD-2025
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rhenaniabruecke/ (Neubau der Rhenaniabrücke, 2025 bis 2027)
-#: next_check: 2027-12-31
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rhenaniabruecke/ (Neubau der Rhenaniabrücke, 2025 bis 2027) (2026 bis 2028)
+#: next_check: 2028-12-31 (SenMVKU-Seite)
 Rhenaniabrücke: Neubau geplant	?::projected -1095,15865 -1006,15833
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10693 (Erwähnung)
@@ -13039,7 +13041,7 @@ Greenpark: wird es hier öffentlich nutzbare Wege geben?	? 13155,5871 13187,5751 
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: XXX die meisten Eingänge haben eine Tor-Drehkreuz-Kombination (man kann also nachts raus); Ausnahmen: Cuvrystr.+Ratiborstr.+Liegnitzer Str. (nur Tor) ...
 #: priority: #A
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-22
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2026-03-01 (Tsp)
 Görlitzer Park: Zaunbau, später dann nächtliche Sperrungen	?::inwork 13220,9980 13162,9904 13139,9880 13086,9825 12932,9900 12983,10000 12881,10056 12829,9957 12814,9966 12341,10218 12397,10335 12317,10382 12309,10427 12348,10432 13220,9980

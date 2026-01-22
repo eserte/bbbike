@@ -5804,10 +5804,10 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://entwicklungsstadt.de/kai-wegner-besucht-zur-neueroeffnung-das-kalle-neukoelln/
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409917943/kalle-neukoelln-ist-fertig-da-schwingt-das-berlinerische-mit.html
 #: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
-#: osm_watch: way id="734271970" version="9"
-#: osm_watch: way id="975241319" version="8"
+#: osm_watch: way id="734271970" version="10"
+#: osm_watch: way id="975241319" version="9"
 #: osm_watch: way id="970452276" version="8"
-#: osm_watch: note 5093384 1
+#: osm_watch: note 5093384 3
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
 #: last_checked: 2026-01-18 (mapillary)
@@ -6577,7 +6577,9 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
 #: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024) (inaktiv)
+#: source_id: LMS-BR:396763/72 viz2021:13.31537,52.50317,22.01.2026,07:00 (bis 31.03.2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/mommsenstrasse-in-berlin-bei-jahrelangen-arbeiten-am-fernwarmenetz-ist-kein-ende-in-sicht-14131187.html ("keine konkreten Termine")
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mcyjddfqrc24 (Sperrung bis 31.03.2026)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 7
@@ -6586,15 +6588,15 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2026-01-12 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 7d
+#: last_checked: 2026-01-22 (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 ',
          'from' => 1681189200,
          'id' => 3764,
-         'text' => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt',
+         'text' => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, voraussichtlich bis Ende März 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8201,9 +8203,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
-#: also_indoor: traffic (ex-H,T,A[shorter],G[shorter])
+#: also_indoor: traffic (re-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2025-07-03 (traffic)
+#: last_checked: 2026-01-22 (traffic)
 # REMOVED --- #: check_frequency: 21d (traffic)
 #: next_check: 2026-01-23 (VIZ-Verkehrsmeldung)
 	q4::inwork 2396,9427 2467,9425 2592,9419
@@ -8430,7 +8432,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
 #: note: Baustelle ist mittlerweile vom Erkelenzdamm weiter Richtung Admiralstr. gewandert
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-22
 #: check_frequency: 30d
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -9812,21 +9814,7 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LMS-BR:392540/72 viz2021:13.57415,52.45591, (explizit "Radweg gesperrt" (welcher Radweg?), bis 24.01.2026)
-#: note: laut rbb "wieder" (tatsächlich?); im Anschluss weitere Sperrungen bis März 2026
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=2025120 (weitere Sperrungen bis März 2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m7hmridgq22t
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifalfmknxg5rbg55uyufahs74qyupdamuj45znpy2l5oj5ulbdgj4@jpeg (nur vor der Friedenstr.?)
-	q4::inwork 22033,6144 22075,5996
-# REMOVED (hier nicht?) ---	q4::inwork 22075,5996 22083,5899 22084,5877 22089,5782
-',
-         'from' => 1765219528,
-         'id' => 4511,
-         'text' => 'Hämmerlingstr.: Sperrung zwischen Seelenbinderstr. und Friedenstr., voraussichtlich bis März 2026',
-         'type' => 'handicap',
-         'until' => 1774994399
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:392518/72 viz2021:13.322216,52.504645,08.12.2025,07:00 (bis 06.02.2026)
 	q4::inwork 4841,10686 4857,10909 4858,10943

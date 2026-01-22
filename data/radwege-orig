@@ -557,7 +557,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-01-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -6883,7 +6883,7 @@ Gehwegplatten	RW1; 620,12144 610,12100
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
 #: osm_watch: way id="153370345" version="23"
-#: osm_watch: way id="153373877" version="32"
+#: osm_watch: way id="153373877" version="33"
 	RW3; 6826,11479 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: die Rechtsabbieger werden an der Ampel vorbei geführt
 Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigradweg	RW3; 6168,11042 6145,10975
@@ -6896,7 +6896,7 @@ Fahrradschleuse, rechtsabbiegende Radfahrer benutzen den ehemaligen Bürgersteigr
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
 #: osm_watch: way id="153370344" version="39"
-#: osm_watch: way id="153373879" version="31"
+#: osm_watch: way id="153373879" version="32"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6826,11479
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
@@ -8364,7 +8364,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-01-13
+#: last_checked: 2026-01-22
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -8533,7 +8533,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
