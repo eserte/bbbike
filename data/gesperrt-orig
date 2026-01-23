@@ -208,7 +208,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2026-01-21 vvv
+#: last_checked: 2026-01-23 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -1512,8 +1512,8 @@ Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 #: next_check_id: HOENOWERWEG-2025
 #: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
-#: last_checked: 2025-12-18
-#: check_frequency: 60d
+#: last_checked: 2026-01-23
+#: check_frequency: 90d
 #: next_check: 2027-02-28
 Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
 Mellenseestr. [Wohngebiet]	1s:q4 17763,9729 17749,9811 17738,9922
@@ -4088,6 +4088,7 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=784716#post784716
 #: by: https://entwicklungsstadt.de/europacity-neues-schulz-hotel-entsteht-an-der-heidestrasse-18/ (Eröffnung Anfang 2027)
+#: by: https://www.entwicklungsstadt.de/heidestrasse-18-rohbau-des-neuen-schulz-hotels-waechst-sichtbar-in-die-hoehe/
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
@@ -4184,7 +4185,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-01-21
+#: last_checked: 2026-01-23
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4628,7 +4629,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-01-21
+#: last_checked: 2026-01-23
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4636,7 +4637,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-01-07 vvv
+#: last_checked: 2026-01-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4814,10 +4815,11 @@ Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12578
 #: by: https://marzahn-hellersdorf.com/entenbruecke-in-kaulsdorf-nord-neubau-verzoegert-sich-weiter/
 #: by: https://marzahn-hellersdorf.com/abriss-der-alten-entenbruecke-im-wuhletal-abgeschlossen-weg-frei-fuer-neubau/ (kein Termin für einen Neubau)
+#: by: https://marzahn-hellersdorf.com/neue-bruecke-ueber-die-wuhle-soll-namen-bekommen-buergerinnen-und-buerger-gefragt/
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="23"
-#: last_checked: 2025-12-19 (marzahn-hellersdorf live)
+#: last_checked: 2026-01-22 (marzahn-hellersdorf live)
 #: check_frequency: 360d
 # REMOVED (ein Baubeginn 2025 erscheint unwahrscheinlich) --- #: next_check: 2026-01-01
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961

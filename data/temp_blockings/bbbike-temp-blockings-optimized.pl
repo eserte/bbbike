@@ -4415,7 +4415,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: source_id: viz2021:13.52779,52.49067,14.08.2024,14:30 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.52703,52.486973,16.10.2024,08:00 (östliche Fahrbahn, bis 31.10.2025) (inaktiv)
 #: source_id: bvg2024:396#HIM_FREETEXT_242591
-#: source_id: viz2021:13.52634,52.48451, (bis 31.10.2025) (bis 31.01.2026)
+#: source_id: viz2021:13.52634,52.48451, (bis 31.10.2025) (bis 31.01.2026) (bis 30.04.2026)
 # REMOVED --- #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 # REMOVED --- #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
 # REMOVED --- #: note: die eigentlich gesperrte westliche Fahrbahn kann zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09, teilweise gemacht 2023-10-28), letzte Asphaltdeckschicht fehlt, teilweise auch unbefestigt; mittlerweile möglicherweise durchgängig asphaltiert ohne letzte Deckschicht; mittlerweile (2024-09-28) vermutlich komplett mit Deckschicht asphaltiert
@@ -4431,9 +4431,9 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18871,9565 18876,9512
 #: osm_watch[closed]: note 3658253 6
 #: osm_watch: way id="192487145" version="36"
-#: osm_watch: note 4481312 7
+#: osm_watch: note 4481312 8
 #: check_frequency: 60d vvv
-#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20, 2025-09-10) existiert das Radfahrer-verboten-Schild nicht mehr
 #: last_checked: 2025-12-06
@@ -4452,7 +4452,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 ',
          'from' => undef,
          'id' => 3008,
-         'text' => 'Treskowallee: Richtung Norden Gehweg mit Verschwenkungen und Bordsteinen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; Bauarbeiten voraussichtlich bis Ende Januar 2026',
+         'text' => 'Treskowallee: Richtung Norden Gehweg mit Verschwenkungen und Bordsteinen für Radfahrer frei, kein Radfahrverbot auf der Fahrbahn; in beiden Richtungen hohe Staugefahr; Bauarbeiten voraussichtlich bis Ende April 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4925,7 +4925,7 @@ Rüdigerstr.: Baustellenlänge ca. 50m	q4::inwork; 16397,12397 16485,12384
 #: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2025-12-30
+#: last_checked: 2026-01-23
 #: check_frequency: 30d
 #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -6684,16 +6684,16 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
          'data' => '#: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
-#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026)
+#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
 #: last_checked: 2026-01-16
 #: check_frequency: 180d
-#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
 ',
          'from' => 1683010800,
          'id' => 3800,
-         'text' => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, geplant bis Anfang März 2026',
+         'text' => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, geplant bis Ende März 2026',
          'type' => 'handicap',
          'until' => 1772837999
        },
@@ -6757,8 +6757,8 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 4
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-01-21 vvv
-#: check_frequency: 30d (hohe Frequenz am Anfang) vvv
+#: last_checked: 2026-01-23 vvv
+#: check_frequency: 45d (hohe Frequenz am Anfang) vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden)
 Hönower Weg	2::inwork 17383,9719 17471,9688
@@ -7161,7 +7161,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://entwicklungsstadt.de/tiergarten-hier-entstehen-zwei-hochhausprojekte-direkt-nebeneinander/ (Fertigstellung 2026)
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
-#: osm_watch: way id="1232322874" version="2"
+#: osm_watch: way id="1232322874" version="3"
 #: last_checked: 2026-01-10 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
@@ -8200,19 +8200,19 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
 #: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026)
+#: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
 #: also_indoor: traffic (re-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2026-01-22 (traffic)
 # REMOVED --- #: check_frequency: 21d (traffic)
-#: next_check: 2026-01-23 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-02-06 (VIZ-Verkehrsmeldung)
 	q4::inwork 2396,9427 2467,9425 2592,9419
 ',
          'from' => 1737970440,
          'id' => 4247,
-         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 23.01.2026',
+         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 06.02.2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8658,6 +8658,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: by: https://entwicklungsstadt.de/mierendorffinsel-neuer-bauabschnitt-im-wohnquartier-hey-charlottenburg/ (Bauprojekt bis Mitte 2027)
 #: by: https://heycharlottenburg.de/ ("Hey Charlottenburg", Fertigstellung: Q3/2027)
 #: by: https://www.entwicklungsstadt.de/hey-charlottenburg-waechst-fast-70-wohnungen-auf-der-mierendorffinsel-bald-bezugsfertig/
+#: by: https://www.entwicklungsstadt.de/hey-charlottenburg-auf-der-mierendorffinsel-erster-bauabschnitt-abgeschlossen/
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 ',
@@ -8725,7 +8726,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-01-17 (traffic) vvv
+#: last_checked: 2026-01-23 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -9430,7 +9431,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
 #: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
-#: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv)
+#: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv) (bis 30.01.2026) (bis 09.04.2026)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
@@ -9438,7 +9439,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: also_indoor: traffic (T,G,H,W)
 #: last_checked: 2025-12-18 (VIZ) vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2026-01-31 (VIZ) vvv
+#: next_check: 2026-04-09 (VIZ) vvv
 # REMOVED (nicht mehr gesperrt) --- Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
 Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: next_check ^^^
@@ -9447,7 +9448,7 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 ',
          'from' => 1760131031,
          'id' => 4466,
-         'text' => 'Späthsfelder Weg: Sperrung der Fahrbahn vor dem Königsheideweg, Umwege, voraussichtlich bis Ende Januar 2026',
+         'text' => 'Späthsfelder Weg: Sperrung der Fahrbahn vor dem Königsheideweg, Umwege, voraussichtlich bis April 2026',
          'type' => 'handicap',
          'until' => undef
        },

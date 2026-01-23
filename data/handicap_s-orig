@@ -479,12 +479,14 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
 #: last_checked: 2026-01-16 vvv
-#: check_frequency: 21d (traffic) vvv
+#: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="46"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/schadowstra%C3%9Fe-4-dorotheenstra%C3%9Fe-verwaltungsgeb%C3%A4ude-bundestag.757/page-2#post-23517
+#: by: https://www.entwicklungsstadt.de/neubau-fuer-den-deutschen-bundestag-an-der-dorotheenstrasse-nimmt-gestalt-an/ (Fertigstellung 2027)
 #: osm_watch: way id="930343902" version="5"
+#: next_check: 2027-12-31 (entwicklungsstadt)
 # REMOVED --- #: note: Fahrbahn offen, beide Bürgersteige gesperrt, Umleitung für Fußgänger --- 
 # REMOVED --- #: note: (wieder) komplett gesperrt, auch die Bürgersteige --- Schadowstr.: Fahrbahn gesperrt, Umleitung	q4::inwork 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -492,12 +494,15 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,124
 #: by: https://www.entwicklungsstadt.de/elisabeth-selbert-haus-unter-den-linden-rohbau-waechst-fertigstellung-fuer-2026-geplant/
 #: osm_watch: way id="4402037" version="27"
 #: osm_watch: way id="1241756428" version="2"
+#: next_check: 2026-12-31 (entwicklungsstadt)
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lux-berlin-neust%C3%A4dtischer-kirchplatz.903/page-2#post-23516
 #: osm_watch: note 3469300 8
 #: osm_watch: way id="111833186" version="15"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
+#: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
 #: osm_watch: way id="153698413" version="20"
+#: next_check: 2027-12-31 (entwicklungsstadt)
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -753,11 +758,12 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 # REMOVED --- #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, (bis 15.01.2026) (inaktiv)
 # REMOVED --- Grimmstr.: Wasserrohrbruch, wo genau? Sind Radfahrer betroffen?	?::inwork; 11089,9751 11072,9711 11042,9642 11023,9597
-#: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026)
-#: also_indoor: traffic (no-G,T[nur Müllenhoffstr.],H[zuviel],no-W,A[falsche Position])
-#: last_checked: 2026-01-20
+#: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026)
+#: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, (bis 30.01.2026)
+#: also_indoor: traffic (G[nur Müllenhoffstr.],T[nur Grimmstr.],H,W[nur Müllenhoffstr.],A[falsche Position])
+#: last_checked: 2026-01-23 (traffic)
 #: check_frequency: 14d
-#: next_check: 2026-01-23 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-30 (VIZ-Verkehrsmeldung)
 Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
 # 
 # # REMOVED --- #: next_check_id: GITSCHINER-2025
@@ -1096,7 +1102,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2025-12-30
+#: last_checked: 2026-01-23
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -4920,8 +4926,8 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,99
 #: note: unklar, ob das hier zur für Radfahrer freigegebenen Fußgängerzone gehört
 (Dolgenseestr., Erschließungsweg): einige Fußgänger	q2 17288,9952 17412,9911
 (Dolgenseestr., Parkplatz): Parkplatzverkehr	q2 17391,9746 17475,9722
-#: XXX_prog BS (nur zur Parkplatzseite hin)
-(Dolgenseestr., Parkplatz): Bordstein	q3 17475,9722 17480,9721
+#: XXX_prog BS (nur zur Parkplatzseite hin, bleibt die Anrampung dauerhaft?)
+(Dolgenseestr., Parkplatz): Bordstein mit Anrampung	q1 17475,9722 17480,9721
 #: note: Grünanlagenschild ohne Zusatzschilder
 (Weg im Hönower Grünzug): Fußgänger	q3 17480,9721 17498,9714 17595,9674 17643,9662 17690,9660 17773,9670
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8099,13391 8106,13393
@@ -5072,7 +5078,11 @@ Anna-Seghers-Str.: enge und unübersichtliche Kurve	q1 19795,3945 19821,4018 1988
 Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 7621,7813
 # 
 #: note: Grünanlagen-Schild ohne Zusatzschilder am östlichen Ende, am westlichen Ende fehlt es
-Zobeltitzstr.: einige Fußgänger	q1 4370,18039 4492,18013
+#: note: Zobeltitzstraße (Rosengarten)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_04_0213_0280_online.pdf (Teileinziehung von Straßenland)
+#: XXX Werden hier durch die Teileinziehung explizite Radfahren-verboten-Schilder aufgestellt?
+#: last_checked: 2026-01-23 (Amtsblatt)
+Zobeltitzstr.: einige Fußgänger	q2 4370,18039 4492,18013
 # 
 #: note: Grünanlagen-Schild ohne Zusatzschilder
 Am Aalemannkanal: selten Fußgänger	q0- -2741,18333 -2229,18312 -2197,18307 -2171,18265
