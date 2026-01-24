@@ -3162,8 +3162,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 tragen (6 Stufen)	0:15 4608,63927
 Treppe	0:40 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90 3514,24652
-tragen oder schieben (Treppe, ca. 28 Stufen, Kinderwagenrampe)	0:30 25902,-6006
-tragen oder schieben (Treppe, ca. 28 Stufen, Kinderwagenrampe)	0:30 25928,-5990
+tragen oder schieben oder Aufzug benutzen (Treppe, ca. 28 Stufen, Kinderwagenrampe)	0:30 25902,-6006
+tragen oder schieben oder Aufzug benutzen (Treppe, ca. 28 Stufen, Kinderwagenrampe)	0:30 25928,-5990
 # REMOVED --- (seit Nov 2024 Rampe) --- tragen (Treppe, 19 Stufen)	0:25 25928,-5990
 tragen (Treppe)	0:120 -14199,-707
 #: note: zum RE-Bahnsteig sind es noch fünf zusätzliche Stufen, Aufzüge existieren
@@ -4412,7 +4412,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 1
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-01-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4962,7 +4962,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2026-01-13
+#: last_checked: 2026-01-24
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5055,7 +5055,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-01-22 vvv
+#: last_checked: 2026-01-24 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5215,7 +5215,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="60333311" version="35"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="289966097" version="24"
 #: priority: #A
-#: last_checked: 2025-10-31 (webcam)
+#: last_checked: 2026-01-20 (webcam)
 #: check_frequency: 90d
 # REMOVED --- Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10685,12422 10772,12515
 # REMOVED (existiert nicht mehr) --- Grunerstr.: Straßenzug wird entfernt	2::inwork 10697,12303 10746,12364
@@ -5270,7 +5270,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_51_3309_3560_online.pdf (zum Bebauungsplan 1-14-1)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Straßenlandwidmung, Grunerstr.)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-01-16
+#: last_checked: 2026-01-20 (webcam)
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5278,7 +5278,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-01-16
+#: last_checked: 2026-01-20 (webcam)
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

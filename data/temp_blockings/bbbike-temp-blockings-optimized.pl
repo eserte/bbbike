@@ -3464,7 +3464,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
 #: also_indoor: traffic (ex-G,ex-H,ex-A,ex-W,T)
-#: last_checked: 2026-01-18 (traffic)
+#: last_checked: 2026-01-24 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
@@ -6654,7 +6654,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-12-28 vvv
+#: last_checked: 2026-01-24 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -7047,13 +7047,13 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
-#: last_checked: 2025-09-26
+#: last_checked: 2026-01-22 (architektur-urbanistik)
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 ',
          'from' => 1740817421,
          'id' => 3927,
-         'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Clara-Wieck-Str.: vor der Einmündung Tiergartenstr. Bauarbeiten, Fahrbahn offiziell gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8965,11 +8965,11 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        undef,
        {
          'data' => '# REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (re-T,G,no-H,W)
+#: also_indoor: traffic (re-T,G,no-H,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2026-01-11 (traffic)
+#: last_checked: 2026-01-24 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 7628,9365 7509,9337
 ',
@@ -9129,7 +9129,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-01-24 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9241,7 +9241,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-01-02
+#: last_checked: 2026-01-24
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
@@ -9389,7 +9389,7 @@ Corinthstr.	q4::inwork; 14608,10409 14447,10491
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1603361.php (Bauarbeiten 6. Oktober 2025 - Dezember 2025)
 #: also_indoor: traffic (no-G,T,H,no-W) vvv
 #: last_checked: 2025-12-31 (traffic) vvv
-#: next_check: 2025-12-31 (BA-Seite, infravelo) vvv
+#: next_check: 2026-03-31 (BA-Seite, infravelo) vvv
 Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
 Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::inwork; 18445,2642 18374,2971
 #: next_check ^^^
@@ -9398,7 +9398,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 ',
          'from' => 1759615200,
          'id' => 4457,
-         'text' => 'Auf dem Oktogon/Hermann-Dorner-Allee: mögliche Einschränkungen und Sperrungen wegen Bauarbeiten, vom 6.10.2025 bis voraussichtlich Ende Dezember 2025, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Auf dem Oktogon/Hermann-Dorner-Allee: mögliche Einschränkungen und Sperrungen wegen Bauarbeiten, vom 6.10.2025 bis voraussichtlich März 2026, evtl. werden die Bauarbeiten verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9458,7 +9458,7 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-01-14
+#: last_checked: 2026-01-24
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9731,9 +9731,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 #: by: https://www.deutsches-architektur-forum.de/pics/backstein/daf/2025/11/hkw_spreebord05.jpg
 #: source_id: LMS-BR:390326/72 viz2021:13.308606,52.520026,17.11.2025,07:00 (bis 30.04.2026)
 #: osm_watch: note 5059797 2
-#: osm_watch: way id="1210308501" version="8"
 #: osm_watch: way id="1210308502" version="3"
-#: osm_watch: way id="1219396158" version="7"
 #: osm_watch: way id="1458967378" version="1"
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Ist der Uferweg unter dem Siemenssteg weiterhin gesperrt?
@@ -9773,6 +9771,7 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
        undef,
        {
          'data' => '#: add_fragezeichen: Ist hier tatsächlich zeitweise oder dauerhaft gesperrt?
+#: note: hier ist allerdings eine Verbindung im Radvorrangnetz geplant
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13063
 #: osm_watch: way id="25309641" version="11"
 #: note: bei osm bicycle=no, mittlerweile auch access=no
@@ -9981,6 +9980,16 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'text' => 'Zoppoter Str. und Borkumer Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis 31.03.2026 17:00',
          'type' => 'handicap',
          'until' => 1774969200
+       },
+       {
+         'data' => '#: by: https://marzahn-hellersdorf.com/sperrung-wuhletalstrasse-fuer-rad-und-autoverkehr/
+	q4::inwork; 20728,17670 20488,17793
+',
+         'from' => 1769295600,
+         'id' => 4529,
+         'text' => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., vom 26.01.2026 bis 30.01.2026',
+         'type' => 'handicap',
+         'until' => 1769814000
        }
      
 );

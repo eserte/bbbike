@@ -149,7 +149,7 @@ Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,118
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-01-13 vvv
+#: last_checked: 2026-01-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -397,7 +397,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="47"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2026-01-10 (osm)
+#: last_checked: 2026-01-18 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2026-03-15 (MoPo)
 #: valid: 20171026-
@@ -4639,8 +4639,8 @@ Uber-Platz: Fußgängerzone	q4 12990,11006 13067,11145
 #: next_check_id: MICHELANGELO-2025
 #: note: laut Aushang 2027/2028
 #: note: evtl. ist das bereits die angekündigte Erneuerung der Fußwegeverbindung
-#: last_checked: 2025-12-15
-#: check_frequency: 60d
+#: last_checked: 2026-01-24
+#: check_frequency: 120d
 #: next_check: 2027-04-01
 # XXX später: wieder aktivieren: (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
 # REMOVED (hier (noch) nicht) --- Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrungen geben?	? 13973,15259 13905,15306
@@ -4885,6 +4885,8 @@ Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307
 (Pieskower Weg - Hanns-Eisler-Str.): einige Fußgänger	q1 13224,15049 13249,15037 13270,15046 13295,15107 13313,15113 13324,15109
 #: XXX_prog BS (kerb_up Richtung Norden; ansonsten q1)
 (Pieskower Weg - Hanns-Eisler-Str.): einige Fußgänger, Bordstein	q3 13224,15049 13246,15065 13264,15094 13289,15149
+#: note: abgeflachte Bordsteine existieren auf beiden Seiten; eigentlich nur als Gehweg erkennbar
+(Thomas-Mann-Str. [östlicher Strang] - Rad/Gehweg): einige Fußgänger	q3 13295,15202 13266,15162
 #: XXX_prog BS (ansonsten q3+)
 (Falkenberger Chaussee - Wartenberger Str.): Bordstein, Rampe	q4+ 17577,17910 17521,17894
 (Falkenberger Chaussee - Wartenberger Str.): Rampe	q3+ 17521,17894 17568,17945
@@ -5932,10 +5934,10 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 #: note: Grünanlagenschild
 (Verbindungsweg): Fußgänger, schmal, Bordstein	q3 11667,13465 11703,13426
 #: corrected_by: srt ("Wurzeln" entfernt, "Schule" hinzugefügt)
-#: note: unklar, ob es sich hier um einen reinen Gehweg handelt; früher "q2"
-Weinstr.: Fußgänger, Schulen	q3 11774,13251 11914,13381
+#: historical_note: früher mit q2 getaggt, danach mit q3 (unklar, ob es sich hier um einen reinen Gehweg handelt), mittlerweile steht ein explizites Gehwegschild, zumindest am südlichen Ende
+Weinstr.: Fußgänger, Schulen	q3- 11774,13251 11914,13381
 #: note: früher "q2"
-(Mollstr. - Barnimstr.): Fußgänger, Radfahren offiziell nicht erlaubt	q4+ 11723,13139 11749,13215
+(Mollstr. - Barnimstr.): Fußgänger, Radfahren offiziell nicht erlaubt	q3- 11723,13139 11749,13215
 Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
 # 
 #: note: nach den Bauarbeiten im Sommer/Herbst 2021 stellenweise etwas breiter geworden
@@ -6495,7 +6497,7 @@ Wegerichstr.: enge Straße	q0- 16678,2330 16666,2437 16663,2450 16538,2543
 # 
 #: by: steffen (stache-bln):
 #: note: Radweg markiert
-(Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fußgänger	q0 13548,14980 13369,15083 13324,15109 13328,15127 13289,15149 13123,15244
+(Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fußgänger	q0 13548,14980 13369,15083 13324,15109 13328,15127 13289,15149 13266,15162 13123,15244
 # 
 #: by: Beate Voigt:
 Siegfried-Baruch-Weg: einige Fußgänger, recht eng	q2 7857,19693 7871,19698 7974,19739 8030,19762
