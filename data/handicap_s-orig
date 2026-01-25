@@ -761,9 +761,10 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026)
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, (bis 30.01.2026)
 #: also_indoor: traffic (G[nur Müllenhoffstr.],T[nur Grimmstr.],H,W[nur Müllenhoffstr.],A[falsche Position])
-#: last_checked: 2026-01-23 (traffic)
+#: last_checked: 2026-01-25 (sieht recht fertig aus)
 #: check_frequency: 14d
 #: next_check: 2026-01-30 (VIZ-Verkehrsmeldung)
+#: valid: -20260130
 Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
 # 
 # # REMOVED --- #: next_check_id: GITSCHINER-2025
@@ -884,7 +885,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="29"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-25
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1904,7 +1905,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2026-01-22
+#: last_checked: 2026-01-25
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -3506,10 +3507,10 @@ entlang der Erpe: Bordstein	q2 24584,5914 24637,5960
 #: XXX_prog: BS am nordöstlichen Ende, am Wendehammer, nur relevant, wenn man von der/zur Lauinger Str. kommt/fährt, aber nicht, wenn man gerade auf dem unbefestigten Weg weiterfährt
 Lauinger Str.: einige Fußgänger, nicht ganz abgesenkter Bordstein	q1 21221,11398 21171,11336 21137,11294
 Landsberger Allee - Siegfriedstr.: einige Fußgänger	q1+ 16590,14386 16596,14367 16641,14329 16762,14237 16873,14236
-#: note Radfahren ist nicht verboten vvv
-(Kleistpark): einige Fußgänger	q1 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
-(Kleistpark): einige Fußgänger	q1 7430,9576 7501,9573
-(Kleistpark): einige Fußgänger	q1 7310,9622 7307,9528
+#: note Grünanlage, keine weiteren Zusatzschilder vvv
+(Kleistpark): einige Fußgänger	q2 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
+(Kleistpark): einige Fußgänger	q2 7430,9576 7501,9573
+(Kleistpark): einige Fußgänger	q2 7310,9622 7307,9528
 #: XXX_prog: BS, ansonsten q1, falls auch die parkenden Autos anderweitig berücksichtigt werden
 (Kleistpark - Grunewaldstr.): einige Fußgänger, Bordstein/parkende Autos an der Grunewaldstr.	q3 7307,9528 7299,9346
 #: XXX_prog BS (ansonsten -> q1)
@@ -5551,6 +5552,9 @@ Am Dorfanger - Parkanlage: schmaler Weg	q3 4803,20529 4799,20517 4790,20493
 #: note: gesehen am 2026-01-17: es wurde nur auf der östlichen Seite außerhalb der Parktaschen geparkt, und somit war die Lücke neben der Bodenschwelle zugeparkt
 Kohlweißlingstr.: drei Bodenschwellen, Lücke kann zugeparkt sein	q1; 21723,10920 21677,11017 21637,11115 21598,11190
 Kohlweißlingstr.: drei Bodenschwellen, Lücke meist frei	q0-; 21598,11190 21637,11115 21677,11017 21723,10920
+# 
+#: note: keine Verbotsschilder für Radfahrer
+(Gleditschstr. - Elßholzstr.): einige Fußgänger	q3 7122,9517 7166,9512 7209,9507
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

@@ -29145,7 +29145,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-01-19
+#: last_checked: 2026-01-25
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -36690,7 +36690,7 @@ EOF
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, Hämmerlingstr. vom 21.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 21.07.2025 06:00 Uhr bis 08.08.2025 12:00 Uhr',
-       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 26.01.2026 05:00 Uhr bis 06.03.2026 11:00 Uhr',
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 26.01.2026 05:00 Uhr bis 06.03.2026 11:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
@@ -36729,6 +36729,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/bahnhof-koepenick-neue-sperrungen-im-zuge-des-grossumbaus/
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410891906/s-bahnhof-koepenick-deutsche-bahn-kuendigt-fuer-januar-neue-sperrung-an.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1633950.php
+#: by: https://viz.berlin.de/aktuelle-meldungen/umbau-bahnhof-kopenick-sperrung-hammerlingstrasse/
 #: osm_watch: note 3566736 14
 # REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -47248,7 +47249,7 @@ EOF
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2025-12-16
+#: last_checked: 2026-01-25
 #: check_frequency: 90d
 #: next_check: 2026-06-30 (Baustellenschild der Wasserbetriebe)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
@@ -48230,7 +48231,7 @@ EOF
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2025-11-22 (architektur-urbanistik)
+#: last_checked: 2026-01-25
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -49761,7 +49762,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2026-01-24 (traffic)
+#: last_checked: 2026-01-25
 #: check_frequency: 14d (traffic)
 	q3::inwork 7628,9365 7509,9337
 EOF
@@ -49979,12 +49980,12 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1587005.php
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-19 vvv
+#: last_checked: 2026-01-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-15 vvv
 #: note: Halteverbotsschilder bis 15.05.2026
 Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
-Barbarossastr.: östliche Zufahrt	q3::inwork 6747,9531 6860,9529
+Barbarossastr.: östliche Zufahrt, etwa 30-40m der Fahrbahn sind gesperrt	q3::inwork 6747,9531 6860,9529
 Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: next_check ^^^
 #: check_frequency ^^^
@@ -50103,7 +50104,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-24 vvv
+#: last_checked: 2026-01-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50203,7 +50204,11 @@ EOF
        data  => <<'EOF',
 #: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,re-T)
-#: last_checked: 2025-12-16 vvv
+#: osm_watch: way id="722008943" version="13"
+#: osm_watch: way id="722013098" version="13"
+#: osm_watch: way id="1350756367" version="3"
+#: osm_watch: note 5124809 1
+#: last_checked: 2026-01-25 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
@@ -50821,9 +50826,9 @@ EOF
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
-#: note: Halteverbotsschilder bis 09.01.26
+#: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-01-24
+#: last_checked: 2026-01-25
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903

@@ -384,7 +384,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
 #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
 #: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-25
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-01
 # REMOVED --- #: valid: -20240701
@@ -770,10 +770,10 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 #: related ^^^
 #: related antidromic vvv
 #: note: kann nachts ausgeschaltet sein (gesehen 2014-12 (Fr) gegen 23:30, 2024-05-29 (Mi) um 23:00) vvv
-#: note: mittlerweile auch an Sonntagen, Feiertagen und an Samstagabenden ausgeschaltet, gesehen: 2022-12-18 (So) gegen 12:00, 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50), 2023-10-15 (So) vormittags und abends, 2023-12-26 (Mo, Weihnachten) 11:54, 2024-06-23 (So) 11:47, 2024-07-07 (So) 14:18 und 19:17, 2024-07-14 (So) 17:48, 2024-08-18 (So) 13:08, 2025-04-18 (Karfreitag) 09:55
+#: note: mittlerweile auch an Sonntagen, Feiertagen und an Samstagabenden ausgeschaltet, gesehen: 2022-12-18 (So) gegen 12:00, 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50), 2023-10-15 (So) vormittags und abends, 2023-12-26 (Mo, Weihnachten) 11:54, 2024-06-23 (So) 11:47, 2024-07-07 (So) 14:18 und 19:17, 2024-07-14 (So) 17:48, 2024-08-18 (So) 13:08, 2025-04-18 (Karfreitag) 09:55, 2026-01-25 Sun 13:03
 #: note: nicht ausgeschaltet am Samstag (zu früh?): 2023-10-21 (Sa) 12:40, 2023-11-04 (Sa) 11:34, 2024-01-13 (Sa) 14:20
 	X 11089,9751
-#: note: vermutlich zur gleichen Zeit wie die zusammenhängende Ampel ausgeschaltet, gesehen: 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50, 2023-12-26 (Mo, Weihnachten) 11:54, 2024-05-29 (Mi) um 23:00, 2024-07-14 (So) 17:48, 2024-08-18 (So) 13:08, 2025-01-19 (So) 17:00, 2025-04-18 (Karfreitag) 09:55, 2025-11-09 Sun 13:30
+#: note: vermutlich zur gleichen Zeit wie die zusammenhängende Ampel ausgeschaltet, gesehen: 2023-04-02 (So) gegen 14:00, 2023-05-29 (Pfingstmontag) gegen 13:55, 2023-10-14 (Sa) gegen 21:50, 2023-12-26 (Mo, Weihnachten) 11:54, 2024-05-29 (Mi) um 23:00, 2024-07-14 (So) 17:48, 2024-08-18 (So) 13:08, 2025-01-19 (So) 17:00, 2025-04-18 (Karfreitag) 09:55, 2025-11-09 Sun 13:30, 2026-01-25 Sun 13:03
 	X 11141,9732
 #: note ^^^
 #: related ^^^
@@ -886,6 +886,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog beim Linksabbiegen von Westen kommend in die Oderbruchstr. hat man als Radfahrer drei Ampeln, wobei die letzten zwei wohl gleich geschaltet sind
 	X 14218,13834
 	F 8014,8771
+#: note: Grüner Pfeil für Radfahrer (Hohenfriedbergstr. -> Kolonnenstr., N->W)
 	X 7795,8765
 	X 7709,8777
 #: note: Grüner Pfeil für Radfahrer (Leberstr. -> Kolonnenstr., S->O)
@@ -1560,7 +1561,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-25
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	F::inwork 8096,11393
@@ -4367,6 +4368,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1134851.php (temporäre Ampel wird durch eine finale Ampel abgelöst, Ampel am südlichen Ausgang Leinestr. wird dafür abgebaut)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 neue Ampel -> Verstetigung?)
 #: by: https://www.infravelo.de/projekt/hermannstrasse/ (2. Quartal 2026 - 4. Quartal 2026)
+#: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (LSA 2026)
 #: note: früher das infravelo-Projekt "hermannstrasse-noerdliche-bauabschnitt"
 #: osm_watch: node id="8656381176" version="5"
 #: osm_watch: node id="8740310061" version="4"
@@ -4377,7 +4379,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
 #: last_checked: 2026-01-04
 #: check_frequency: 120d
-#: next_check: 2026-12-31 (infravelo)
+#: next_check: 2026-12-31 (infravelo, mobilitaetsrat)
 	X::inwork 12185,7381
 # 
 #: note: Anforderungsampel für Radfahrer in der Relation Brachvogelstr. - Mittenwalder Str.

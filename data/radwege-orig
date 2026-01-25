@@ -257,7 +257,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2025-12-29 vvv
+#: last_checked: 2026-01-25 vvv
 #: check_frequency: 60d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -285,7 +285,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2025-12-29
+#: last_checked: 2026-01-25
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -3110,7 +3110,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-01-25 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -4663,6 +4663,10 @@ mäßiges Verbundsteinpflaster	RW1; 2574,5688 2477,5694 2320,5743 2314,5745 2165,5
 mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,5808 2137,5798 2165,5790 2314,5745 2320,5743 2477,5694 2574,5688
 #: historical_note: seit ungefähr 2025 existiert eine Absperrung vor den schlimmsten Wurzelhebungen
 #: note: da die Absperrung etwa 40m hinter der Widderstr. steht und auch sonst keine Ausschilderung existiert, fahren die meisten Radfahrer praktisch über den Gehweg an der abgesperrten Stelle vorbei
+#: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf
+#: XXX evtl. Verlegung der RVA auf die Fahrbahn
+#: last_checked: 2026-01-14
+#: check_frequency: 120d
 abgesperrter Radweg, alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg	RW0; 14853,7451 14775,7385
 alte Gehwegplatten, deutliche Schäden und Wurzelhebungen, Bord gegen Gehweg	RW1; 14775,7385 14758,7373 14708,7325 14617,7243
 Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15011,7593 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
@@ -9616,7 +9620,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 6994,9288 7118,9315
 #: next_check_id: ELSSHOLZ-2025
 #: osm_watch[closed]: note 4803321 2
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2025-11-22 (architektur-urbanistik)
+#: last_checked: 2026-01-25
 #: check_frequency: 90d
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7118,9315 7202,9329 7299,9346
 Leitboys	RW4; 7299,9346 7418,9366 7471,9360
@@ -9626,7 +9630,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 7418,9366 7299,9346
 #: next_check_id: GRUNEWALDSTR-2025
 #: next_check_id: ELSSHOLZ-2025
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2025-11-22 (architektur-urbanistik)
+#: last_checked: 2026-01-25
 #: check_frequency: 90d
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7299,9346 7202,9329 7118,9315
 Leitboys	RW4; 7118,9315 6994,9288
