@@ -9413,15 +9413,16 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251008
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260126 (bis Anfang April (2026))
 #: source_id: LMS-BR:386091/72 viz2021:13.398,52.53495,08.10.2025,17:15 viz2021:13.398,52.53495, (bis 04.12.2025) (bis 06.01.2026) (bis 27.01.2026)
 #: note: etwa 50m gesperrt, Umwege
 	q4::inwork 9800,14306 9938,14356
 ',
          'from' => 1759935291,
          'id' => 4462,
-         'text' => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, geplant bis Ende Januar 2026',
+         'text' => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, geplant bis Anfang April 2026',
          'type' => 'handicap',
-         'until' => 1769554799
+         'until' => 1775858399
        },
        undef,
        undef,
@@ -9883,8 +9884,12 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
          'until' => 1773414000
        },
        {
-         'data' => '#: osm_watch: way id="1417905902" version="3"
+         'data' => '#: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
+#: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2025/04/2025-04-28_VZ-Plan01-2_Schoenefeld_Waltersdorf_Schwarzer_Weg_Hubertus-1024x602.jpg
+#: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen?
+#: osm_watch: way id="1417905902" version="3"
 #: osm_watch: way id="1257637878" version="3"
+#: osm_watch: note 5142999 1
 #: last_checked: 2025-12-28 (osm)
 	2::inwork 20285,-2775 20875,-2584
 ',
@@ -9988,7 +9993,10 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
        },
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/sperrung-wuhletalstrasse-fuer-rad-und-autoverkehr/
-	q4::inwork; 20728,17670 20488,17793
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdctk23ius26
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreift74aki4cefjeuaaglkozrz3xw2z6jx2ehon6fdl4gp4vgcw4jni@jpeg
+	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
+	2::inwork 20728,17670 20801,17821
 ',
          'from' => 1769295600,
          'id' => 4529,

@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-01-21
+#: last_checked: 2026-01-26
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -755,6 +755,20 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # REMOVED (BVG-Meldung ist weg) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?) --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50363 (allerdings ist hier eine andere Baustelle beim 365er erwähnt, nur die Karte zeigt auch diese Baustelle) --- #: XXX laut googlemaps bis 23. September 2018; laut vmz bis Anfang Dezember 2018 --- #: also_indoor: traffic --- #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72 --- #: source_id: 2147342044 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-12-06 --- # REMOVED --- #: valid: -20181201 --- #: priority: #A --- Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
 ### Kreuzberg ###
+# 
+#: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
+#: last_checked: 2026-01-25 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-12-31 vvv
+#: valid: -20261231 vvv
+#: note: typischerweise steht die Absperrung auf dem Radweg
+Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10198,9405 10290,9604 10306,9640 10361,9755 10405,9795
+#: note: hier weniger Probleme mit der Baustelleneinrichtung, deshalb q1 statt q2
+Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q1::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
+#: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, (bis 15.01.2026) (inaktiv)
 # REMOVED --- Grimmstr.: Wasserrohrbruch, wo genau? Sind Radfahrer betroffen?	?::inwork; 11089,9751 11072,9711 11042,9642 11023,9597
