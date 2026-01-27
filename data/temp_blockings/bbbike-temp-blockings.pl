@@ -36707,6 +36707,7 @@ EOF
 #: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
 #: source_id: adac:89620388 (bis voraussichtlich 08.08.2025) (inaktiv)
 #: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025) (inaktiv)
+#: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558,26.01.2026,05:00 (bis 06.03.2026)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -44978,12 +44979,13 @@ EOF
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
        text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Juni 2026',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: LMS-BR:374530/72 viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026)
+#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt)
 #: osm_watch: way id="1303423090" version="6"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
 #: last_checked: 2025-08-18 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
@@ -49548,7 +49550,7 @@ EOF
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-01-14 (traffic)
+#: last_checked: 2026-01-27 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -49939,7 +49941,7 @@ EOF
 #: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/grundhafte-sanierung-der-fahrbahn-in-der-albrechtstrasse/
 #: by[nocache]: https://archive.ph/Vv5di
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1626976.php (nur noch Fahrbahn zwischen Presselstr. und Stindestr. betroffen)
-#: source_id: viz2021:13.34241,52.44693,18.08.2025,06:00 (bis 21.11.2025) (zwischen Siemens- und Presselstr., bis 31.01.2026)
+#: source_id: viz2021:13.34241,52.44693,18.08.2025,06:00 (bis 21.11.2025) (zwischen Siemens- und Presselstr., bis 31.01.2026) (inaktiv)
 #: source_id: LMS-BR:392691/72 viz2021:13.3401,52.44812,09.12.2025,12:00 (zwischen Stinde- und Presselstr., bis 31.03.2026)
 #: note: uneinheitliches Enddatum bei der VIZ: bis Anfang November 2025, oder die Variante des Bezirksamts (21.11.2025)? Bei der VIZ-Verkehrsmeldung nun auch 21.11.2025. Mittlerweile verlängert.
 #: note: laut rbb weitere Sperrung der Fahrbahn zwischen Stinde- und Presselstr. bis Ende 03/2026, auch für den Radverkehr (trotz des Hochbordradwegs?)
@@ -50721,7 +50723,7 @@ EOF
 EOF
      },
      { from  => 1759935291, # 2025-10-08 16:54
-       until => $isodate2epoch->("2026-04-10 23:59:59"), # $isodate2epoch->("2026-01-27 23:59:59"), # $isodate2epoch->("2025-12-04 23:59:59"),
+       until => $isodate2epoch->("2026-04-02 23:59:59"), # $isodate2epoch->("2026-01-27 23:59:59"), # $isodate2epoch->("2025-12-04 23:59:59"),
 #      text  => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, 8.10.2025 bis Anfang Januar 2026',
 #      text  => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, geplant bis Ende Januar 2026',
        text  => 'Anklamer Str.: Bauarbeiten, Anbindung Brunnenstr. gesperrt, geplant bis Anfang April 2026',
@@ -50729,7 +50731,7 @@ EOF
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251008
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260126 (bis Anfang April (2026))
-#: source_id: LMS-BR:386091/72 viz2021:13.398,52.53495,08.10.2025,17:15 viz2021:13.398,52.53495, (bis 04.12.2025) (bis 06.01.2026) (bis 27.01.2026)
+#: source_id: LMS-BR:386091/72 viz2021:13.398,52.53495,08.10.2025,17:15 viz2021:13.398,52.53495, (bis 04.12.2025) (bis 06.01.2026) (bis 27.01.2026) (bis 02.04.2026)
 #: note: etwa 50m gesperrt, Umwege
 	q4::inwork 9800,14306 9938,14356
 EOF
@@ -50798,10 +50800,12 @@ EOF
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
 #: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
+#: XXX laut stromnetz-Seite ab 2026-01-30 ist der Königsheideweg wieder komplett gesperrt (-> ampel entfernen, temp blocking erweitern), voraussichtlich bis 2025-04-09
 #: also_indoor: traffic (T,G,H,W)
 #: last_checked: 2025-12-18 (VIZ) vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2026-04-09 (VIZ) vvv
+#: next_check: 2026-01-29 (stromnetz) vvv
+# REMOVED --- #: next_check: 2026-04-09 (VIZ) vvv
 # REMOVED (nicht mehr gesperrt) --- Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
 Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: next_check ^^^
@@ -51634,6 +51638,7 @@ EOF
 #: by: https://marzahn-hellersdorf.com/sperrung-wuhletalstrasse-fuer-rad-und-autoverkehr/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdctk23ius26
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreift74aki4cefjeuaaglkozrz3xw2z6jx2ehon6fdl4gp4vgcw4jni@jpeg
+#: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026)
 	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
 	2::inwork 20728,17670 20801,17821
 EOF

@@ -211,6 +211,7 @@ S85	SB 20033,-559 20170,-510 20428,-365 20575,-227 20716,10 20874,139 21031,227 
 #: by: https://bauprojekte.deutschebahn.com/p/siemensbahn-reaktivierung/infobauarbeiten
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/baustart-fur-die-siemensbahn-berlin-bekommt-neue-s-bahnbrucken-uber-die-spree-15136954.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-neue-s-bahnstrecke-wann-und-wo-es-losgeht-mit-dem-neubau-der-siemensbahn-15141568.html (Baustart im Herbst 2026)
+#: by: https://www.entwicklungsstadt.de/reaktivierung-nach-vier-jahrzehnten-wie-die-siemensbahn-berlin-veraendern-soll/
 #: also_indoor: url https://siemensbahn.deutschebahn.com/News.html
 #: XXX ehem. S-Bahn nach Gartenfeld, soll wiedereröffnet werden
 #: XXX mögliche Einschränkungen während der Bauarbeiten (aus den Planunterlagen, Kapitel 8):
@@ -320,13 +321,14 @@ S85,S9	SC::Tu 15731,-4812 16358,-4962 16848,-4904 17808,-4496
 #: by: https://igeb.org/files/SVW251022-Fahrgastsprechtag-S.pdf (Frühjahr 2026)
 #: by: https://www.rbb24.de/panorama/beitrag/2025/10/berlin-sbahn-s15-s21-verkehr-oepnv-eroeffnung.html (Eröffnungstermin 28.03.2025)
 #: by: https://entwicklungsstadt.de/s-bahn-linie-s15-neuer-termin-fuer-eroeffnung-im-maerz-2026/
+#: by: https://www.nd-aktuell.de/artikel/1197136.verkehr-s-bahn-berlin-bereitet-sich-auf-neue-strecke-vor.html
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/webcam6.jpg (anscheinend seit Juni 2024 keine aktuellen Bilder mehr)
 #: osm_watch: note 4308592 8
 #: XXX ursprünglich geplant als S21, wird aber als Linie S15 eröffnet
 #: XXX 2025 noch kein Linienbetrieb auf dem Abzweig nach Westhafen
 #: last_checked: 2025-06-30 (Tsp) vvv
 # REMOVED --- #: check_frequency: 210d vvv
-#: next_check: 2026-03-28 (rbb, berliner-linienchronik) vvv
+#: next_check: 2026-03-28 (rbb, berliner-linienchronik, nd) vvv
 S15	SBau::Tu 8061,13303 7810,13720
 S15	SBau 7810,13720 7360,14411 7329,14630 7350,14803 7447,14907
 S15	SBau 7360,14411 7199,14524 7052,14556 6944,14562

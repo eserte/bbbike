@@ -149,7 +149,7 @@ Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,118
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-01-24 vvv
+#: last_checked: 2026-01-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -1312,16 +1312,16 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Biesdorf ###
 # 
-#: next_check_id: WEISSENHOEHER-2025
-#: note: Länge des gesperrten Bereichs geschätzt 50m, u.U. Umwege notwendig
-#: note: Halteverbotsschilder bis 19.12.2025, laut Baustellenschild geplante Fertigstellung der Bahnbrücke 03/2026
-#: osm_watch: note 4721088 3
-#: also_indoor: traffic (T)
-#: last_checked: 2026-01-14 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
-Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
+# REMOVED --- #: next_check_id: WEISSENHOEHER-2025
+# REMOVED --- #: note: Länge des gesperrten Bereichs geschätzt 50m, u.U. Umwege notwendig
+# REMOVED --- #: note: Halteverbotsschilder bis 19.12.2025, laut Baustellenschild geplante Fertigstellung der Bahnbrücke 03/2026
+# REMOVED --- #: osm_watch: note 4721088 3
+# REMOVED --- #: also_indoor: traffic (ex-T)
+# REMOVED --- #: last_checked: 2026-01-27 (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
+# REMOVED --- # REMOVED --- #: check_frequency: 120d
+# REMOVED --- # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
+# REMOVED --- Gladauer Weg: Sperrung der Fahrbahn vor der Weißenhöher Str.	q3::inwork 20346,11337 20354,11500
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
 # REMOVED (hier wohl nicht mehr) --- Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293

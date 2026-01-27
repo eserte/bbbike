@@ -2575,7 +2575,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article410331195/neue-radwege-fahrradstrassen-an-diesen-orten-wird-im-suedwesten-gebaut.html
 #: by: https://www.entwicklungsstadt.de/sichere-radverbindung-im-berliner-sueden-koenigsweg-wurde-weiter-ausgebaut/
 #: osm_watch[closed]: note 4968979 7
-#: osm_watch: way id="4871595" version="38"
+#: osm_watch: way id="4871595" version="39"
 #: XXX letzte Schilder (Fahrradstraße, Vorfahrt) fehlen noch
 #: last_checked: 2025-11-04 (mapillary)
 # REMOVED --- #: next_check: 2025-09-26 (BA-Pressemitteilung)
@@ -4764,14 +4764,14 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 #: source_id: viz2021:13.572984,52.540446,30.06.2025,10:00 (bis 02.08.2025) (inaktiv)
 #: source_id: viz2021:13.57417,52.54036, (bis 02.08.2025) (bis 18.08.2025) (inaktiv)
 #: source_id: viz2021:13.58437,52.53957, (zwischen Kyritzer und Gothaer, bis 06.10.2025) (bis 13.10.2025) (inaktiv)
-#: source_id: LMS-BR:352813/72 viz2021:13.56986,52.54077, (bis 19.12.2025) (bis 26.01.2026)
+#: source_id: LMS-BR:352813/72 viz2021:13.56986,52.54077, (bis 19.12.2025) (bis 26.01.2026) (bis 27.03.2026)
 #: note: Bauarbeiten gehen sogar bis zur Gothaer Str.; Radfahrer Richtung Osten können hier aber eine asphaltierte Service-Straße benutzen
 #: note: Zusätzlich zu den Straßenbauarbeiten werden die Hellersdorfer Brücken neu gemacht (siehe SenUMVK-Seite), vermutlich Ende 2025 - Mitte 2027, mit Behelfsbrücke für den Fuß+Radverkehr
 #: XXX ab 18.8.2025 für den Kfz-Verkehr zwischen Kyritzer Str. und Gothaer Str. gesperrt (+ weitere Arbeiten im Anschluss)
 #: osm_watch: note 3581028 16
 #: last_checked: 2025-11-10 (mapillary) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-01-26 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-03-27 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
 Eisenacher Str./Hellersdorfer Brücken: Bauarbeiten	?::inwork 21599,15213 21718,15198 21809,15186 21903,15174 22059,15153 22323,15119 22441,15118 22577,15109 22599,15105 22726,15082 22899,15073
 # REMOVED --- #: osm_watch: way id="175916583" version="11" --- Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
@@ -4930,7 +4930,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstrasse-0 (Baubeginn 2023, verkehrsberuhigte Mischverkehrsfläche)
 #: by: https://www.luisenstadt-mitte.de/drupal/web/projekte/ohmstrasse-0 (alternative URL)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-der-ohmstrasse-876903.php (Neugestaltung bis 2023)
-#: last_checked: 2026-01-25
+#: last_checked: 2026-01-27
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-01-01
@@ -4942,7 +4942,7 @@ Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11380,11863 11324,11689
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20250527-mobilitaetsrat-mitte-praesentation.pdf (Bauzeitraum: 2026-2027)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1076_ds_1443_vi_verkehrskonzept_adalbertstrasse.pdf
 #: XXX verschwindet dabei auch das Kopfsteinpflaster?
-#: last_checked: 2026-01-06
+#: last_checked: 2026-01-27
 #: check_frequency: 270d
 #: next_check: 2027-12-31 (Mobilitätsrat-Präsentation)
 Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,11106 11726,11265 11808,11482
@@ -5781,7 +5781,7 @@ Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 150
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-01-22
+#: last_checked: 2026-01-27
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -7755,7 +7755,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2026-01-25
+#: last_checked: 2026-01-27
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7763,7 +7763,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-01-25
+#: last_checked: 2026-01-27
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8375,7 +8375,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-01-22
+#: last_checked: 2026-01-27
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8398,6 +8398,7 @@ Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezo
 #: by: https://www.berliner-woche.de/hakenfelde/c-bauen/wohnungsbaugesellschaft-errichtet-bis-zum-jahresende-231-mietpreisgebundene-wohnungen_a434768
 #: by: https://www.howoge.de/immobiliensuche/neubauprojekte/havelufer-quartier.html (Fertigstellung: Dez 2025)
 #: by: https://entwicklungsstadt.de/wohnraum-in-spandau-diese-fuenf-neubauprojekte-entstehen-aktuell/ (bis Herbst 2025/Ende 2025)
+#: by: https://www.entwicklungsstadt.de/neues-quartier-an-der-havel-231-wohnungen-in-spandau-bezugsfertig/
 #: XXX Straßen fehlen in Berlin.coords.data (PLZ=13587 für Meta-London-Str. laut DPAG+LOR, ebenso für Marius-Carpentier-Str. laut DPAG+LOR); private Erschließungsstraßen vvv
 #: XXX Wirksamkeit der Benennung zum 11.3.2023 vvv
 #: XXX außerdem wird es hier einen ausgeschilderten "Patrizia-Boulevard" geben (wo genau?)
@@ -9263,7 +9264,7 @@ Sellheimbrücke: Neubau geplant, danach mit Radwegen	?::projected 14509,21337 145
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1414188.php (Umsetzung 2025)
 #: osm_watch: note 3954723 3
-#: osm_watch: way id="4607070" version="35"
+#: osm_watch: way id="4607070" version="36"
 #: last_checked: 2025-12-29
 #: check_frequency: 90d
 # REMOVED (Realisierung 2025 unwahrscheinlich) --- #: next_check: 2025-12-31 (BA-Seite)
@@ -9271,14 +9272,14 @@ Genthiner Str.: Fahrradstraße geplant	? 7415,10883 7393,10809 7354,10671 7330,10
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1501715.php (Umsetzung 2025) (Umsetzung vorbehaltlich der Finanzierung 2026)
 #: osm_watch: note 3954730 6
-#: osm_watch: way id="4607069" version="24"
+#: osm_watch: way id="4607069" version="25"
 #: last_checked: 2025-12-29
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (BA-Seite)
 Kluckstr.: Fahrradstraße geplant	? 7579,11032 7534,10850
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/1069_2025_ds_2192_umbenennung_kluckstrasse_anita_augspurg_strasse.pdf
-#: osm_watch: way id="754567008" version="10"
+#: osm_watch: way id="754567008" version="11"
 #: last_checked: 2025-12-29
 #: check_frequency: 45d (indoor research)
 Kluckstr.: Umbenennung in Anita-Augspurg-Str. geplant	? 7579,11032 7534,10850
@@ -11693,7 +11694,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: XXX möglicherweise geht es vom Paula-Thiede-Ufer in einer verschwenkten Rampe runter
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 3
-#: last_checked: 2025-12-16
+#: last_checked: 2026-01-27
 #: check_frequency: 90d
 Uferweg geplant	?::inwork 12010,11545 11962,11596
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
@@ -12249,6 +12250,7 @@ Sophienwerder-Brücke - Am Juliusturm: geplanter Weg	?::projected -1567,14175 -15
 #: by: https://www.berliner-woche.de/buch/c-bauen/bebauungsplan-fuer-buch-am-sandhaus_a432900
 #: by: https://www.berliner-woche.de/buch/c-umwelt/nabu-berlin-ruft-zur-buergerbeteiligung-auf_a435680
 #: by: https://entwicklungsstadt.de/neubauoffensive-in-berlin-diese-fuenf-quartiere-praegen-die-kommenden-jahre/ (Baustart 2026)
+#: by: https://www.entwicklungsstadt.de/naturschutz-oder-wohnungsbau-neue-pruefung-zur-moorlinse-in-buch/
 #: last_checked: 2025-03-04 (orthofotos)
 #: check_frequency: 720d
 Am Sandhaus: werden hier neue Straßen entstehen?	? 14889,25937 15022,25846 15107,25665 15599,25819 15937,25650
@@ -14099,7 +14101,8 @@ Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualität?	? -15825,-166 -16108
 # REMOVED --- #: by: http://www.potsdam.de/cms/dokumente/31998475_2027173/1fd58c39/Amtsblatt_02_14.pdf --- #: XXX fehlt in Potsdam.coords.data, PLZ=14476 --- #: XXX Kleinsteinpflaster, Q1- (falls das hier überhaupt die richtige Straße ist) --- #: last_checked: 2014-09-13 --- #: check_frequency: 180d --- #: XXX alter Name bis 2016-09: Georg-Sigismund-von-Oppen-Weg --- #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._9_2016_neu_0.pdf (Straßenumbenennung) --- Von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8445,8504 -8395,8498 -8380,8475 -8240,8450
 # REMOVED (-> landstrassen + qualitaet_s) --- #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-Süd) --- #: by: https://www.potsdam.de/sites/default/files/documents/17210_amtsblatt_mai2017_dsjs_korr3_final.pdf (ebenso) --- #: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf (ebenso) --- #: by: https://www.deutsches-architekturforum.de/thread/15208-potsdam-verkehrsprojekte-und-wege-stra%C3%9Fe-schiene-wasser-rad-und-fu%C3%9Fwege/?postID=750593#post750593 (fertig, aber noch nicht offiziell freigegeben) --- #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/uferweg-leipziger-strasse-eroffnung-am-30-november-10793791.html --- #: last_checked: 2023-10-31 (daf) vvv --- # REMOVED --- #: check_frequency: 30d vvv --- #: next_check: 2023-11-30 vvv --- # REMOVED --- #: XXX hier existiert vermutlich schon ein Geh/Radweg, laut osm Verbundsteinpflaster --- Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12783,-2269 -12781,-2376 --- #: osm_watch: way id="1178419456" version="4" --- Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12831,-2439 -12961,-2498 -12962,-2534 -12996,-2571 -13040,-2618 -13080,-2647 -13060,-2723 -13162,-2715 -13177,-2722 --- #: next_check ^^^ --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
+#: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf (Bebauungsplan Nr. 8D)
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/uferweg-in-gross-glienicke-potsdam-wird-jetzt-die-rechnung-prasentiert-15170832.html (unklar, welcher Abschnitt gemeint ist: Bebauungsplan Nr. 8 "Seepromenade/Dorfstraße")
 #: XXX hier existiert noch nichts
 #: last_checked: 2019-05-11
 #: check_frequency: 360d
