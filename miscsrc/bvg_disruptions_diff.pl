@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2024,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,6 +20,7 @@ use Encode qw(decode encode);
 use File::Basename qw(basename dirname);
 use File::Temp qw();
 use Getopt::Long;
+use HTML::Entities qw(decode_entities);
 use JSON::XS qw(decode_json);
 use IPC::Run qw(run);
 use List::MoreUtils qw(uniq);
@@ -253,8 +254,12 @@ sub filter_and_split_json {
 	    }
 	    delete $element->{messageType} if ($element->{messageType}||'') eq 'TRAFFIC';
 	    for my $content (@{ $element->{content} }) {
-		$content->{content} =~ s{<p>}{}g;
-		$content->{content} =~ s{</p>}{\n}g;
+		my $is_html = 0;
+		$is_html = 1 if $content->{content} =~ s{^<p>(.*)</p>$}{$1\n}g;
+		$is_html = 1 if $content->{content} =~ s{(<br>)+}{\n}g;
+		if ($is_html) {
+		    $content->{content} = decode_entities($content->{content});
+		}
 		delete $content->{icon};
 	    }
 	    simplify_lines(\($element->{lines}));
