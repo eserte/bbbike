@@ -21214,10 +21214,10 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-04 00:00:00"), # 1336255200, # 2012-05-06 00:00
-       until => $isodate2epoch->("2026-01-30 23:59:59"), # undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
+       until => $isodate2epoch->("2026-02-13 23:59:59"), # undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #      text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #      text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Ende Januar 2026',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Mitte Februar 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
@@ -21227,7 +21227,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
-#: source_id: LMS-BR:342841/72 viz2021:13.5384,52.42059,12.08.2024,07:00 viz2021:13.5384,52.42059, (bis 31.03.2025) (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025) (bis 30.01.2026)
+#: source_id: LMS-BR:342841/72 viz2021:13.5384,52.42059,12.08.2024,07:00 viz2021:13.5384,52.42059, (bis 31.03.2025) (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025) (bis 30.01.2026) (bis 13.02.2026)
 #: osm_watch: way id="152466403" version="24"
 #: osm_watch: way id="1424980083" version="3"
 #: osm_watch: way id="1082710233" version="5"
@@ -21236,7 +21236,7 @@ EOF
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
 #: last_checked: 2025-12-12 (mapillary)
-#: next_check: 2026-01-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-02-13 (VIZ-Verkehrsmeldung)
 #: historical_note: früher q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
 	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
@@ -36194,7 +36194,7 @@ EOF
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
-#: last_checked: 2026-01-14 vvv
+#: last_checked: 2026-01-27 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -45967,7 +45967,7 @@ EOF
      },
      { from  => 1724611975, # 2024-08-25 20:52
        until => undef, # 1735685999, # 2024-12-31 23:59
-       text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2025',
+       text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2025, evtl. wird die Sperrung verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: FINOWKANAL-2025
@@ -45982,7 +45982,7 @@ EOF
 #: osm_watch: way id="105827213" version="12"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 4
-#: last_checked: 2025-12-30 (osm)
+#: last_checked: 2026-01-28 (research)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -48331,19 +48331,19 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # 
 #: note: laut Website möglicherweise bis 16.01.2026; nun: Asphaltierung steht noch aus
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026)
+#: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026)
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-01-19 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
-#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: note: laut stromnetz-Seite mittlerweile abgeschlossen, aber vielleicht steht hier auch noch die Asphaltierung aus?
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026)
+#: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026)
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-01-19 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
-#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 # 
 #: check_frequency ^^^
@@ -49062,10 +49062,11 @@ EOF
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
-       until => $isodate2epoch->("2026-01-31 23:59:59"), # $isodate2epoch->("2025-11-28 23:59:59"), # 1750431600, # 2025-06-20 17:00
+       until => $isodate2epoch->("2026-03-31 23:59:59"), # $isodate2epoch->("2026-01-31 23:59:59"), # $isodate2epoch->("2025-11-28 23:59:59"), # 1750431600, # 2025-06-20 17:00
 #      text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, vom 02.06.2025 07:00 bis 24.06.2025 17:00',
 #      text  => 'Wildenbruchstr. und Karl-Kunger-Straße: Leitungsbauarbeiten, Sperrungen, voraussichtlich bis Ende September 2025, evtl. noch länger',
-       text  => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende Januar 2026',
+#      text  => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende Januar 2026',
+       text  => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende März 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025) (inaktiv)
@@ -49073,11 +49074,11 @@ EOF
 #: source_id: bvg2024:194#HIM_FREETEXT_286893 (ohne Endedatum)
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026)
-#: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026)
-#: last_checked: 2026-01-20 vvv
+#: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026)
+#: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026)
+#: last_checked: 2026-01-28 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
 Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 #: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (inaktiv)
@@ -49584,14 +49585,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Schleuse Heegermühle: Sperrung des Fuß- und Radwegs Treidelweg nördlich der Schleuse sowie der Straße Am Finowkanal, voraussichtlich bis Ende 2025',
+       text  => 'Schleuse Heegermühle: Sperrung des Fuß- und Radwegs Treidelweg nördlich der Schleuse sowie der Straße Am Finowkanal, voraussichtlich bis Ende 2025, evtl. wird die Sperrung verlängert',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: FINOWKANAL-2025
 #: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2026-01-21 (research)
+#: last_checked: 2026-01-28 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -50010,7 +50011,7 @@ EOF
 #: osm_watch: note 5038218 3
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-01-14
+#: last_checked: 2026-01-28
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50106,7 +50107,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-25 vvv
+#: last_checked: 2026-01-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50261,15 +50262,15 @@ EOF
 EOF
      },
      { from  => 1756417862, # 2025-08-28 23:51
-       until => $isodate2epoch->("2026-01-30 23:59:59"),
+       until => $isodate2epoch->("2026-03-31 23:59:59"),
 #      text  => 'Schillerstr., Goethestr. und Giesensdorfer Str.: Bauarbeiten, Sperrungen, bis Ende Januar 2026',
-       text  => 'Schillerstr. und Goethestr.: Bauarbeiten, Sperrungen, bis Ende Januar 2026',
+       text  => 'Schillerstr. und Goethestr.: Bauarbeiten, Sperrungen, bis Ende März 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiasgxyh4yi2yyv2ipifgm5ybdhxw3cbimwdzuqkhqo6rzca5axq3a@jpeg
-#: source_id: viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026)
-#: source_id: viz2021:13.31541,52.42855, (bis 31.01.2026)
+#: source_id: LMS-BR:381588/72 viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026) (bis 31.03.2026)
+#: source_id: LMS-BR:386922/72 viz2021:13.31541,52.42855, (bis 31.01.2026) (bis 31.03.2026)
 Schillerstr.	q3::inwork 4429,2396 4568,2424
 #: note: nicht komplett gesperrt
 Goethestr.	q3::inwork 4568,2424 4526,2648
@@ -50286,32 +50287,22 @@ EOF
 EOF
      },
      { from  => 1756792864, # 2025-09-02 08:01
-       until => 1772233200, # 2026-02-28 00:00
-       text  => 'Essener Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Stromstr. und Krefelder Str., bis zum 27.02.2026',
+       until => $isodate2epoch->("2026-03-31 23:59:59"), # 1772233200, # 2026-02-28 00:00
+       text  => 'Essener Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Stromstr. und Krefelder Str., bis zum 31.03.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxtebnjz3s2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic5lycfbu4ygtwangqqvtwdmgujojeqx4yzlmlyzox3qcirs66hxy@jpeg
-#: source_id: viz2021:13.34231,52.52413,02.09.2025,06:00 (bis 27.02.2026)
+#: source_id: viz2021:13.34231,52.52413,02.09.2025,06:00 (bis 27.02.2026) (bis 31.03.2026)
 	q4::inwork 6183,13083 6114,13095 5993,13064
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1769617476, # undef, # XXX
        text  => 'Almazeile: wegen Bauarbeiten komplett gesperrt (Stand September 2025), Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_18_1093_1148_online.pdf (Einziehungsabsicht von öffentlich gewidmetem Straßenland)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_08_0417_0480_online.pdf (Einziehung von Straßenland)
-#: by: https://www.entwicklungsstadt.de/neue-feuerwache-tegelort-eingeweiht-76-millionen-euro-bau-staerkt-freiwillige-feuerwehr/
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1625291.php
-#: osm_watch: way id="5046358" version="13"
-#: osm_watch: note 4945213 2
-#: XXX wie wird die Situation nach den Hoch+Tiefbauarbeiten aussehen?
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Weg wieder passierbar?
-#: last_checked: 2025-09-03
-#: check_frequency: 120d
-#: next_check: 2025-12-11
+#: note: siehe auch entsprechenden Fragezeichen-Eintrag
 	2::inwork -1616,18112 -1660,18114
 EOF
      },
@@ -50561,7 +50552,7 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-01-28 vvv
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
@@ -50629,10 +50620,11 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260119
 #: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025) (inaktiv)
-#: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026)
+#: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026) (bis 31.03.2026)
 #: note: laut rbb ebenfalls nur bis Ende Januar 2026
 #	q4::inwork; 17916,5675 18013,5627
-#: next_check: 2026-01-31
+#: last_checked: 2026-01-27 (mapillary)
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 17916,5675 18013,5627
 EOF
      },
@@ -50779,11 +50771,13 @@ Bötzowstr.	q3::inwork 12280,13880 12361,13985 12423,14066
 # REMOVED (fertig) ---	q4::inwork 12361,13985 12228,14083 12077,14186
 EOF
      },
-     { from  => 1760131031, # 2025-10-10 23:17
-       until => undef, # 1761951599, # 2025-10-31 23:59
+     { from  => $isodate2epoch->("2026-01-28 00:00:00"), # 1760131031, # 2025-10-10 23:17
+       until => $isodate2epoch->("2026-04-09 23:59:59"), # undef, # 1761951599, # 2025-10-31 23:59
+       prewarn_days => 2,
 #      text  => 'Königsheideweg: Sperrung in Höhe Späthsfelder Weg, voraussichtlich bis Ende Oktober 2025',
 #      text  => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, Ende der Bauarbeiten unbekannt',
-       text  => 'Späthsfelder Weg: Sperrung der Fahrbahn vor dem Königsheideweg, Umwege, voraussichtlich bis April 2026',
+#      text  => 'Späthsfelder Weg: Sperrung der Fahrbahn vor dem Königsheideweg, Umwege, voraussichtlich bis April 2026',
+       text  => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, vom 30.01.2026 bis voraussichtlich 09.04.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: KOENIGSHEIDEWEG-2025
@@ -50795,6 +50789,8 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
 #: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdhvspimr22s
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreify53suk5ojkyl7r3nzqjul2mglb7crtmdfajwvq3bh7rutlzwige@jpeg
 #: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv) (bis 30.01.2026) (bis 09.04.2026)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
@@ -50804,9 +50800,9 @@ EOF
 #: also_indoor: traffic (T,G,H,W)
 #: last_checked: 2025-12-18 (VIZ) vvv
 # REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2026-01-29 (stromnetz) vvv
-# REMOVED --- #: next_check: 2026-04-09 (VIZ) vvv
-# REMOVED (nicht mehr gesperrt) --- Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
+# REMOVED --- #: next_check: 2026-01-29 (stromnetz) vvv
+#: next_check: 2026-04-09 (VIZ) vvv
+Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
 Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -50885,8 +50881,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251213
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1617856.php (bis 28. November 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410503791/zwei-wichtige-strassenbaustellen-in-treptow-koepenick-verzoegern-sich.html
-#: source_id: viz2021:13.44875,52.49034,28.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: LMS-BR:371047/72  viz2021:13.44875,52.49034, (bis 31.01.2026) (bis 28.11.2025) (bis 31.01.2026)
+#: source_id: LMS-BR:371047/72 viz2021:13.44875,52.49034,28.10.2025,07:00 viz2021:13.44875,52.49034, (bis 14.11.2025) (bis 31.01.2026) (bis 28.11.2025) (bis 31.01.2026)
 #: also_indoor: traffic (G[zu früh],W[zu früh],H[zu früh],A[zu früh],T)
 #: note: laut rbb & VIZ Beginn einen Tag später
 # REMOVED (keine Sperrung mehr) --- #: last_checked: 2025-11-29 (noch immer Absperrungen) --- #: check_frequency: 7d --- #: check_frequency: 1d --- #: next_check: 2025-10-27 (Beginn der Arbeiten) --- #: next_check: 2026-01-31 (VIZ-Verkehrsmeldung)
@@ -51040,7 +51035,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
-#: source_id: LMS-BR:388170/72 viz2021:13.39202,52.52009,28.10.2025,07:00 viz2021:13.39202,52.52009, (bis 02.12.2025) (bis 30.01.2026)
+#: source_id: LMS-BR:388170/72 viz2021:13.39202,52.52009,28.10.2025,07:00 viz2021:13.39202,52.52009, (bis 02.12.2025) (bis 30.01.2026) (bis 03.03.2026)
 # REMOVED (mittlerweile die halbe Fahrbahn der Planckstr. frei) --- #: last_checked: 2025-12-10 vvv --- #: next_check: 2026-01-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (mittlerweile vermutlich weitergewandert) --- Georgenstr.	q4::inwork 9441,12670 9568,12688
 Planckstr.	q4::inwork 9435,12698 9441,12670
@@ -51631,14 +51626,15 @@ EOF
 EOF
      },
      { from  => 1769295600, # 2026-01-25 00:00
-       until => 1769814000, # 2026-01-31 00:00
-       text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., vom 26.01.2026 bis 30.01.2026',
+       until => $isodate2epoch->("2026-03-31 23:59:59"), # 1769814000, # 2026-01-31 00:00
+#      text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., vom 26.01.2026 bis 30.01.2026',
+       text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich bis Ende März 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://marzahn-hellersdorf.com/sperrung-wuhletalstrasse-fuer-rad-und-autoverkehr/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdctk23ius26
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreift74aki4cefjeuaaglkozrz3xw2z6jx2ehon6fdl4gp4vgcw4jni@jpeg
-#: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026)
+#: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026)
 	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
 	2::inwork 20728,17670 20801,17821
 EOF

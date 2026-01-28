@@ -6,13 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
-#: next_check_id: KOENIGSHEIDEWEG-2025
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
-#: source_id: LMS-BR:383381/72 viz2021:13.482381,52.45217, (bis 31.01.2026) (bis 09.04.2026)
-#: last_checked: 2025-12-18 (VIZ)
-#: next_check: 2026-04-09 (VIZ)
-#: valid: -20260409
-Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
+# REMOVED --- #: next_check_id: KOENIGSHEIDEWEG-2025
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
+# REMOVED --- #: source_id: LMS-BR:383381/72 viz2021:13.482381,52.45217, (bis 31.01.2026) (bis 09.04.2026)
+# REMOVED --- #: last_checked: 2025-12-18 (VIZ)
+# REMOVED --- #: next_check: 2026-04-09 (VIZ)
+# REMOVED --- #: valid: -20260409
+# REMOVED --- Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
 # 
 #: next_check_id: HANNOVERSCHE-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
@@ -4161,7 +4161,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2026-01-21
+#: last_checked: 2026-01-27 (mapillary)
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
