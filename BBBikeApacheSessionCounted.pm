@@ -15,7 +15,7 @@ package BBBikeApacheSessionCounted;
 use strict;
 use vars qw($VERSION $debug);
 
-$VERSION = '0.08';
+$VERSION = '0.09';
 $debug = $main::debug; # XXX hmmmm
 $main::debug = $main::debug if 0; # cease -w
 
@@ -30,7 +30,7 @@ our %CLUSTER_DEFS = (
 		     'mosor'                                     => [4, 'http://mosor/bbbike/cgi/asch'],
 		     #'lvps176-28-19-132.dedicated.hosteurope.de' => [5, 'http://bbbike.lvps176-28-19-132.dedicated.hosteurope.de/cgi-bin/asch'],
 		     #'bbbike-vmz'                                => [6, 'http://ip78-137-103-246.pbiaas.com/cgi-bin/asch'],
-		     'lvps83-169-5-248.dedicated.hosteurope.de'  => [7, 'http://bbbike.lvps83-169-5-248.dedicated.hosteurope.de/cgi-bin/asch'],
+		     #'lvps83-169-5-248.dedicated.hosteurope.de'  => [7, 'http://bbbike.lvps83-169-5-248.dedicated.hosteurope.de/cgi-bin/asch'],
 		     '177.227.205.92.host.secureserver.net'      => [8, 'http://177.227.205.92.host.secureserver.net/cgi-bin/asch'],
 		     'bbbike-pps-bookworm'                       => [9, 'http://bbbike-pps-bookworm/cgi-bin/asch'],
 		    );
