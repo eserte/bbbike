@@ -15,10 +15,11 @@ package BBBikeApacheSessionCounted;
 use strict;
 use vars qw($VERSION $debug);
 
-$VERSION = '0.09';
+$VERSION = '0.10';
 $debug = $main::debug; # XXX hmmmm
 $main::debug = $main::debug if 0; # cease -w
 
+use POSIX qw(strftime);
 use Apache::Session::Counted;
 
 ######################################################################
@@ -50,13 +51,20 @@ sub tie_session {
     #my $dirlevels = 0;
     my $dirlevels = 1;
     my @l = localtime;
-    my $date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
+    my $date;
+    if (0) {
+	# daily counter
+	$date = sprintf "%04d-%02d-%02d", $l[5]+1900, $l[4]+1, $l[3];
+    } else {
+	# weekly counter
+	$date = strftime("%G-W%V", @l); # iso 8601 year-week
+    }
     ## Make sure a different user for cgi-bin/mod_perl operation is used
     #my $directory = "/tmp/bbbike-sessions-" . $< . "-$date";
-    ## No need for per-day directories,
+    ## No need for per-day/week directories,
     ## I have /tmp/coordssessions
     my $directory = "/tmp/bbbike-sessions-" . $<;
-    ## Resetting the sessions daily:
+    ## Resetting the sessions daily/weekly:
     my $counterfile = "/tmp/bbbike-counter-" . $< . "-$date";
     #my $counterfile = "/tmp/bbbike-counter-" . $<;
 
