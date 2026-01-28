@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2020,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2020,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -781,7 +781,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.014';
+$VERSION = '11.015';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -7926,6 +7926,7 @@ sub show_session_expired_error {
 	(-type => 'text/html',
 	 @no_cache,
 	 -x_tag => 'error.sessionexpired',
+	 -status => '410 Gone',
 	);
     header(-title => M('Fehler: Sitzung ist abgelaufen'));
     print <<EOF;

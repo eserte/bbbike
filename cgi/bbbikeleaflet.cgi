@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2015,2016,2018,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2015,2016,2018,2023,2024,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -30,7 +30,6 @@ use BBBikeCGI::Util ();
 my $cgi_config = BBBikeCGI::Config->load_config("$FindBin::RealBin/bbbike.cgi.config", 'perl');
 
 my $q = CGI->new;
-print $q->header('text/html; charset=utf-8');
 
 my $leaflet_ver        = $q->param('leafletver');
 my $enable_upload      = $q->param('upl') || 0;
@@ -43,6 +42,7 @@ my $loc                = $q->param('loc');
 my $geojsonp_url       = $q->param('geojsonp_url');
 my $show_feature_list  = $q->param('fl') || 0; # feature list can currently only be enabled together with a geojsonp_url
 my $show_expired_session_msg;
+my $http_status;
 my($coords, $wgs84_coords);
 if ($q->param('coordssession')) {
     require BBBikeApacheSessionCounted;
@@ -50,6 +50,7 @@ if ($q->param('coordssession')) {
 	$coords = $sess->{routestringrep};
     } else {
 	$show_expired_session_msg = 1;
+	$http_status = '410 Gone';
     }
 } elsif ($q->param('coords') || $q->param('coords_forw') || $q->param('coords_rev')) {
     # Currently coords_forw and coords_rev are rendered the same, but
@@ -76,6 +77,11 @@ if ($devel) {
     # $enable_accel = 1; # XXX not yet
     $leaflet_ver = '0.7.3' if !defined $leaflet_ver;
 }
+
+print $q->header(
+    -type => 'text/html; charset=utf-8',
+    (defined $http_status ? (-status => $http_status) : ()),
+);
 
 my $tpl = BBBikeLeaflet::Template->new
     (

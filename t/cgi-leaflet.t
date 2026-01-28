@@ -138,9 +138,13 @@ SKIP: {
 	    fail 'Cannot find bbbikeleaflet link';
 	}
     }
-    
+
+    { # expired or invalid session
+	my $session_id = '1:12345678_12345678_12345678';
+	my $resp = $ua->get("$base_url?coordssession=$session_id");
+	is $resp->code, 410, '410 Gone for non-existent coordssession'
+	    or diag $resp->dump;
+    }
 }
-
-
 
 __END__

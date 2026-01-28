@@ -59,7 +59,7 @@ my $json_xs_3_tests = 4;
 my $yaml_tests = 7;
 my $xml_libxml_tests = 30;
 #plan 'no_plan';
-plan tests => 264 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
+plan tests => 266 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips", "debug"),
 	       )) {
@@ -911,6 +911,13 @@ SKIP: {
     expected_tag $resp, 'rm.route.gpxtrack';
     is $resp->header('content-disposition'), 'attachment; filename=track_wuehlischstr_simplonstr.gpx', 'different start/goal name, but still detected as circular route';
     gpxlint_string($resp->decoded_content(charset => 'none'));
+}
+
+{ # expired or invalid coordssession
+    my $session_id = '1:12345678_12345678_12345678';
+    my %params = (coordssession => $session_id);
+    my $resp = bbbike_cgi_search +{ %params }, "expired coordssession", { status => 410 };
+    expected_tag $resp, 'error.sessionexpired';
 }
 
 sub bbbike_cgi_search ($$;$) {
