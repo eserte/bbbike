@@ -15,6 +15,7 @@ use strict;
 use warnings;
 use FindBin;
 use lib "$FindBin::RealBin/..";
+use utf8;
 
 use Encode qw(decode encode);
 use File::Basename qw(basename dirname);
@@ -240,6 +241,13 @@ sub filter_and_split_json {
     my $data = decode_json($json);
     my %records;
     for my $element (@$data) {
+	# some elevator records don't have type=ELEVATOR --- fix it
+	if (($element->{"messageType"}||'') ne 'ELEVATOR' &&
+	    @{ $element->{content} || [] } == 1 && # is it the only content?
+	    ($element->{content}[0]{headline}||'') eq 'Aufzug außer Betrieb') {
+	    # fix messageType
+	    $element->{"messageType"} = 'ELEVATOR';
+	}
 	next if ($element->{"messageType"}||'') eq "ELEVATOR";
 
 	inject_title($element);
