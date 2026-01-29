@@ -122,7 +122,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt für Radfahrer	?::inwork 9047,9750
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html (hier ist ein komplett unklares Projekt gelistet: Kynaststraße, von Paul-Paula-Ufer bis Glasbläserallee als Schutzstreifen, 285 Meter --- wo soll das sein?)
 #: osm_watch: way id="667331289" version="7"
-#: last_checked: 2026-01-28
+#: last_checked: 2026-01-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -943,7 +943,7 @@ Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2026-01-28
+#: last_checked: 2026-01-29
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -2118,7 +2118,7 @@ Marienpark: Planstraße 1 geplant	?::projected 8178,3591 8200,3479 8263,3496 8235
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2026-01-28
+#: last_checked: 2026-01-29
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 14020,9524 13981,9474 13923,9405 13892,9365 13849,9310
 # 
@@ -2580,7 +2580,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: last_checked: 2025-11-04 (mapillary)
 # REMOVED --- #: next_check: 2025-09-26 (BA-Pressemitteilung)
 Königsweg: Fahrradstraße in Entstehung	?::inwork -878,2265 -844,2268 -790,2300 -745,2320 -670,2361 -505,2456 -409,2510
-#: osm_watch: way id="4864927" version="30"
+#: osm_watch: way id="4864927" version="31"
 #: XXX vermutlich wird es auch eine Vorfahrtsregelung geben
 #: last_checked: 2025-10-15
 # REMOVED --- #: next_check: 2025-09-26 (BA-Pressemitteilung)
@@ -3144,6 +3144,7 @@ Gebrüder-Hirth-Str.: Verlängerung in Brandenburg geplant, wann wird die Straße g
 #: by: https://www.infravelo.de/projekt/herrfurthplatz/ (2. Quartal 2027 - 3. Quartal 2027)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_37_2357_2428_online.pdf (Teileinziehung; sofortige Vollziehung)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1624232.php (Mitteilung vom 9.12.2025: "in den kommenden Wochen")
+#: by: https://www.schillerpromenade.berlin/mitmachen/gebietsgremium/
 #: osm_watch: way id="155605301" version="24"
 #: osm_watch: way id="901251946" version="7"
 #: osm_watch: way id="901251934" version="7"
@@ -3152,7 +3153,7 @@ Gebrüder-Hirth-Str.: Verlängerung in Brandenburg geplant, wann wird die Straße g
 #: XXX Einbahnstraßenregelung fällt dann weg
 #: last_checked: 2026-01-04
 # REMOVED --- #: check_frequency: 180d
-#: check_frequency: 30d
+#: check_frequency: 60d
 #: next_check: 2027-09-30 (infravelo)
 Herrfurthplatz: ein Abschnitt wird "eingezogen"; eventuell wird hier auch asphaltiert?	?::projected 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 # REMOVED (hier wohl nicht) --- Herrfurthplatz: ein Abschnitt wird "eingezogen"; eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964
@@ -3252,7 +3253,7 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 # 
 #: by: https://www.infravelo.de/projekt/werbellinstrasse-1/ (4. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 2. Quartal 2026)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (voraussichtlich ab März 2026)
-#: last_checked: 2026-01-14
+#: last_checked: 2026-01-29
 #: check_frequency: 90d
 #: next_check: 2026-06-30 (infravelo)
 Werbellinstr.: teilweise geschützte Radspur Richtung Karl-Marx-Str. geplant	?::projected; 12427,8109 12566,8140 12656,8160 12700,8170
@@ -3807,7 +3808,7 @@ Weißenhöher Str./Arno-Philippsthal-Str.: Zebrastreifen geplant	?::projected 2063
 #: osm_watch: note 5077510 1
 #: last_checked: 2025-12-17
 #: check_frequency: 90d
-#: next_check: 2026-01-30 (Verkehrsmeldung)
+#: next_check: 2026-02-13 (VIZ-Verkehrsmeldung)
 Hannoversche Straße/Hessische Straße: Zebrastreifen geplant	?::projected 8770,13567 8775,13606 8799,13641
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10195 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10366 --- #: next_check: 2022-09-30 --- Titiseestraße/Waldshuter Zeile: Zebrastreifen geplant	?::projected 5493,22596 5484,22564 5473,22536
 #### END Zebrastreifen (MoPo-Liste)
@@ -4652,7 +4653,8 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-stitzung-vom-17072025.pdf (Monumenten/Langenscheidtstr.: Mitte September 2025 bis Ende Oktober 2025)
 #: by: https://entwicklungsstadt.de/vorrang-fuers-rad-umbau-der-monumenten-und-langenscheidtstrasse/
 #: by: https://viz.berlin.de/aktuelle-meldungen/umbau-fahrradstrasse-monumentenstrasse-und-langenscheidtstrasse-startet/
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1636087.php
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1636087.php (Anradeln)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1638946.php (Anradeln abgesagt)
 #: XXX außerdem: ein gegenläufiger Radweg auf der Südseite der Monumentenbrücke ist geplant
 #: XXX Langenscheidtbrücke wird für Kfz Einbahnstraße Richtung Osten; mittlerweile Richtung Westen?
 #: last_checked: 2025-10-29
@@ -5765,7 +5767,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: osm_watch: note 4969496 3
 #: XXX Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
-#: last_checked: 2026-01-28 vvv
+#: last_checked: 2026-01-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 15019,10803
@@ -6476,7 +6478,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2026-01-28
+#: last_checked: 2026-01-29
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg war geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6493,7 +6495,7 @@ Marktstr.: Popup-Radweg war geplant	? 14988,11130 15060,11006 15088,10950 15113,
 #: osm_watch: way id="44108324" version="16"
 #: osm_watch: way id="176050265" version="13"
 #: osm_watch: way id="1099807542" version="9"
-#: last_checked: 2026-01-17
+#: last_checked: 2026-01-29
 #: check_frequency: 60d
 #: next_check: 2026-09-30 (infravelo)
 Hauptstr. [Nebenfahrbahn]: wird hier eine Fahrradstraße eingerichtet (wo genau?)? was passiert mit der Einbahnstraßenregelung?	? 15298,10682 15332,10657 15392,10615
@@ -6523,7 +6525,7 @@ An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Buch
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
 #: source_id: LMS-BR:395261/72 viz2021:13.480566,52.499214,07.11.2025,09:00 (Fahrstreifensperrung, bis 29.05.2026) (am nächsten Tag bereits inaktiv) (wieder bis 29.05.2026) (und wieder gleich inaktiv)
-#: last_checked: 2026-01-23
+#: last_checked: 2026-01-29
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -8590,7 +8592,7 @@ Thyrow - Siethen (L795): neuer Radweg auf der Westseite geplant	?::projected -62
 #: osm_watch: way id="15090371" version="24"
 #: osm_watch: way id="680827092" version="5"
 #: osm_watch: way id="35141067" version="15"
-#: last_checked: 2025-11-01 (indoor research)
+#: last_checked: 2026-01-29 (indoor research)
 #: check_frequency: 90d (indoor research)
 Bindow: Brückenneubau, Radweg	?::projected 33508,-13362 33989,-13281
 # 
@@ -8994,9 +8996,9 @@ Quartiersweg - Wilhelm-Kabus-Str.: geplanter Geh- und Radweg	?::projected 7639,7
 #: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024) (bis 08.12.2024) (bis 22.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:162#fe73d49a-2471-4d3b-a756-05ec6943ea49 (2024-11-25 - 2024-12-08)
 #: source_id[inactive]: bvg2024:162#dc4f3cec-5359-4dd3-937e-28db262a7b3f (bis 2025-01-13)
-#: source_id[inactive]: bvg2024:162#HIM_FREETEXT_307837 (Haltestellenverlegung ab 01.12.2025) (zwischenzeitlich entfernt)
+#: source_id: bvg2024:162#HIM_FREETEXT_307837 (Haltestellenverlegung ab 01.12.2025) (zwischenzeitlich entfernt) (wieder aktiv)
 #: source_id: bvg2024:164#HIM_FREETEXT_307835 (-"-)
-#: source_id: bvg2024:164#HIM_FREETEXT_307834 (-"-)
+#: source_id[inactive]: bvg2024:164#HIM_FREETEXT_307834 (-"-)
 #: XXX Bauphasen laut Bauzeitenplan aus den Ausschreibungsunterlagen: Alt-Köpenick 17.02.2025 - 30.11.2025; Kirchstr. 01.12.2025 - 09.05.2027
 #: last_checked: 2026-01-17
 #: check_frequency: 120d
@@ -9873,9 +9875,10 @@ Koppelweg: entsteht hier irgendwo ein Zebrastreifen?	? 11772,4379 11936,4358 121
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_08_0417_0480_online.pdf (Einziehung von Straßenland)
 #: by: https://www.entwicklungsstadt.de/neue-feuerwache-tegelort-eingeweiht-76-millionen-euro-bau-staerkt-freiwillige-feuerwehr/
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1625291.php
-#: osm_watch: way id="5046358" version="13"
+# REMOVED --- #: osm_watch: way id="5046358" version="13"
+#: osm_watch: way id="1467128359" version="2"
 #: osm_watch: note 4945213 3
-#: XXX wie sieht die Situation nach den Hoch+Tiefbauarbeiten aus?
+#: XXX wie sieht die Situation nach den Hoch+Tiefbauarbeiten aus? laut osm eine Service-Straße
 #: last_checked: 2025-09-03
 #: check_frequency: 120d
 #: next_check: 2025-12-11
@@ -10974,7 +10977,7 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 # REMOVED (Eröffnung 2025 unwahrscheinlich) --- #: next_check: 2025-12-31 (Plakat)
 Paul-und-Paula-Promenade: wird gebaut	?::inwork 14984,10677 15056,10625
 #: osm_watch: way id="1077916763" version="2"
-#: last_checked: 2026-01-28
+#: last_checked: 2026-01-29
 #: check_frequency: 270d
 Heiner-Carow-Str.: existiert noch nicht	?::projected 15081,10775 15071,10716 15056,10625
 # 
@@ -12618,12 +12621,12 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/erste-mieter-erster-bus-erste-kita-berlins-neues-mega-viertel-erwacht-15130985.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_03_0149_0212_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: relation id="10290512" version="6"
-#: osm_watch: way id="1306187833" version="27"
+#: osm_watch: way id="1306187833" version="28"
 #: osm_watch: way id="1306187834" version="27"
 #: osm_watch: way id="1306187830" version="17"
-#: osm_watch: way id="1294762943" version="18"
-#: osm_watch: way id="178253967" version="26"
-#: osm_watch: way id="936729763" version="27"
+#: osm_watch: way id="1294762943" version="19"
+#: osm_watch: way id="178253967" version="27"
+#: osm_watch: way id="936729763" version="28"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
 #: note: Insel Gartenfeld
 #: XXX neue Straßennamen:

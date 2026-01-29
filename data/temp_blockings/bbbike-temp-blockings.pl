@@ -36508,7 +36508,7 @@ EOF
 #: osm_watch: note 5093384 3
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-01-18 (mapillary)
+#: last_checked: 2026-01-29
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -42225,14 +42225,17 @@ EOF
 #: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024) (inaktiv)
 #: source_id: viz2021:13.432599,52.479016,01.09.2023,07:00 (bis 30.03.2026)
 #: osm_watch: way id="1207706195" version="5"
+#: osm_watch: note 5147506 1
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: by: https://www.entwicklungsstadt.de/bund-baut-neue-bundesgeschaeftsstelle-auf-dem-vollgut-areal-in-neukoelln/ (Bezug im zweiten Quartal 2026)
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
+#: add_fragezeichen: Besteht die Sperrung noch immer?
 #: last_checked: 2025-12-13
 #: check_frequency: 120d
-#: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
+#: next_check: 2026-01-29
+# REMOVED --- #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork 12407,8177 12545,8209
 EOF
      },
@@ -46706,8 +46709,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
-#: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026)
-#: next_check: 2026-01-31 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
+#: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026) (bis 27.02.2026)
+#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
 Grolmanstr. (nordwestlicher Abschnitt)	q4::inwork 4828,11094 4775,11203
 #: note: vermutlich Einbahnstraßenregelung, offen Richtung Savignyplatz
 #: source_id: LMS-BR:392050/72 viz2021:13.323692,52.504398,03.12.2025,06:00 (Sperrung; bis 17.06.2026)
@@ -48925,7 +48928,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-01-23 (traffic) vvv
+#: last_checked: 2026-01-29 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -49076,7 +49079,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026)
-#: last_checked: 2026-01-28 vvv
+#: last_checked: 2026-01-29 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -50107,7 +50110,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-28 vvv
+#: last_checked: 2026-01-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50552,7 +50555,7 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-01-28 vvv
+#: last_checked: 2026-01-29 vvv
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
@@ -51626,7 +51629,7 @@ EOF
 EOF
      },
      { from  => 1769295600, # 2026-01-25 00:00
-       until => $isodate2epoch->("2026-03-31 23:59:59"), # 1769814000, # 2026-01-31 00:00
+       until => 1769711583, # $isodate2epoch->("2026-03-31 23:59:59"), # 1769814000, # 2026-01-31 00:00
 #      text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., vom 26.01.2026 bis 30.01.2026',
        text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich bis Ende März 2026',
        type  => 'handicap',
@@ -51634,7 +51637,7 @@ EOF
 #: by: https://marzahn-hellersdorf.com/sperrung-wuhletalstrasse-fuer-rad-und-autoverkehr/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdctk23ius26
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreift74aki4cefjeuaaglkozrz3xw2z6jx2ehon6fdl4gp4vgcw4jni@jpeg
-#: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026)
+#: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026) (removed)
 	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
 	2::inwork 20728,17670 20801,17821
 EOF
