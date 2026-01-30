@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-01-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -3111,7 +3111,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-01-27 vvv
+#: last_checked: 2026-01-30 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3247,8 +3247,10 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^
 # 
-	RW4;RW2 12126,13088 12139,13162
-	RW4;RW4 12139,13162 12163,13295
+	RW4; 12126,13088 12139,13162 12163,13295
+#: note: durchgezogene Linie,aber kein Schild
+	RW4; 12163,13295 12139,13162
+	RW1; 12139,13162 12126,13088
 	RW4;RW1 13493,11217 13541,11355
 # REMOVED --- #: next_check_id: WARSCHAUER-2014 --- #: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein) --- #: last_checked: 2015-07-01 --- #: check_frequency: 7d
 # REMOVED --- #: XXX Bauarbeiten an der Revaler Str., Radspuren zeitweise wieder aufgehoben --- #: last_checked: 2016-03-07 --- #: check_frequency:7d
@@ -4543,14 +4545,15 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX Radwege werden neu gemacht vvv
 #: last_checked: 2025-11-10 (mapillary) vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 150d vvv
+#: next_check: 2026-06-01 (BA-Pressemitteilung) vvv
 # REMOVED --- #: next_check: 2025-08-18 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher (bis 2025): Verbundsteinpflaster und bröckelnder Beton
 neu asphaltiert, 2m breit	RW2;RW8 22899,15073 22726,15082 22599,15105 22577,15109 22441,15118
 # REMOVED --- neu asphaltiert, 2m breit	RW2;RW8 22441,15118 22323,15119
 neu asphaltiert, 2m breit	RW2;RW8 22323,15119 22059,15153 21903,15174
 letzte Deckschicht fehlt, 2m breit	RW2;RW8 21903,15174 21809,15186 21718,15198 21599,15213
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -8301,7 +8304,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: adac:1733244580 (inaktiv)
 #: source_id: adac:256162332 (inaktiv)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_289064 (kein Endedatum)
-#: source_id[inactive]: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 4x)
+#: source_id: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 4x)
 #: source_id: bvg2024:172#HIM_FREETEXT_289063 (kein Endedatum)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_293426 (Haltestellenverlegung, kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293415 (Haltestellenverlegung, kein Endedatum)

@@ -3463,8 +3463,8 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
-#: also_indoor: traffic (ex-G,ex-H,ex-A,ex-W,T)
-#: last_checked: 2026-01-24 (traffic)
+#: also_indoor: traffic (ex-G,ex-H,ex-A,re-W,T)
+#: last_checked: 2026-01-30 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
@@ -7964,7 +7964,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
        undef,
        {
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
-#: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026)
+#: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026) (bis 31.03.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025) (inaktiv)
 #: source_id: LS/221-F/25/052 (bis 30.04.2026)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
@@ -7981,9 +7981,9 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 ',
          'from' => 1742079600,
          'id' => 4189,
-         'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, bis voraussichtlich Oktober 2026',
+         'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, bis voraussichtlich Ende März 2026',
          'type' => 'gesperrt',
-         'until' => 1793466000
+         'until' => 1774969200
        },
        undef,
        undef,
@@ -9135,7 +9135,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-29 vvv
+#: last_checked: 2026-01-30 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9427,6 +9427,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdhvspimr22s
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreify53suk5ojkyl7r3nzqjul2mglb7crtmdfajwvq3bh7rutlzwige@jpeg
 #: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv) (bis 30.01.2026) (bis 09.04.2026)
+#: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
@@ -9712,16 +9713,18 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
        undef,
        {
          'data' => '#: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
-#: last_checked: 2025-12-23
-#: check_frequency: 45d
-#: next_check: 2026-01-31
+#: also_indoor: traffic (G,no-T,no-W,no-H)
+#: last_checked: 2026-01-30 (traffic)
+#: check_frequency: 3d (traffic)
+# REMOVED --- #: check_frequency: 45d
+# REMOVED --- #: next_check: 2026-01-31
 	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565
 ',
          'from' => 1763294725,
          'id' => 4501,
-         'text' => 'Hönower Str.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Ende Januar 2026',
+         'text' => 'Hönower Str.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Ende Januar 2026, evtl. wird die Baustelle verlängert',
          'type' => 'handicap',
-         'until' => 1769900399
+         'until' => undef
        },
        undef,
        {
@@ -9750,12 +9753,15 @@ Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603695.php (Bauarbeiten 6. Oktober 2025 bis Ende Januar 2026)
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
+#: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2025-11-19 vvv
-#: next_check: 2026-01-31 vvv
+#: last_checked: 2026-01-30 (traffic) vvv
+#: check_frequency: 3d (traffic) vvv
+# REMOVED --- #: next_check: 2026-01-31 vvv
 Damaschkestr.: komplett gesperrt	q4::inwork 3013,10553 3123,10504
 Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',

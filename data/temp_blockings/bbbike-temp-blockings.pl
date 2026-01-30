@@ -22478,8 +22478,8 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
-#: also_indoor: traffic (ex-G,ex-H,ex-A,ex-W,T)
-#: last_checked: 2026-01-24 (traffic)
+#: also_indoor: traffic (ex-G,ex-H,ex-A,re-W,T)
+#: last_checked: 2026-01-30 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
@@ -46540,14 +46540,15 @@ Fischerinsel: Engstelle am Mühlendamm	q3::inwork; 10512,12039 10578,11969
 EOF
      },
      { from  => $isodate2epoch->("2025-03-16 00:00:00"), # 1728882000, # 2024-10-14 07:00
-       until => $isodate2epoch->("2026-10-31 18:00:00"), # 1739473056, # 1741964400, # 2025-03-14 16:00
+       until => $isodate2epoch->("2026-03-31 17:00:00"), # 1739473056, # 1741964400, # 2025-03-14 16:00
 #      text  => 'Erkner: L30, Bauarbeiten, möglicherweise ist die Brücke für Fußgänger und Radfahrer gesperrt, vom 15.10.2024 07:00 Uhr bis 14.03.2025 16:00 Uhr',
 #      text  => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, vom 17.03.2025 bis 28.02.2026',
-       text  => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, bis voraussichtlich Oktober 2026',
+#      text  => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, bis voraussichtlich Oktober 2026',
+       text  => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, bis voraussichtlich Ende März 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 246700596 (bis 14.03.2025) (inaktiv)
-#: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026)
+#: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026) (bis 31.03.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025) (inaktiv)
 #: source_id: LS/221-F/25/052 (bis 30.04.2026)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
@@ -48044,7 +48045,7 @@ EOF
        text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 28.11.2025 22:00 Uhr bis zum 01.12.2025 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025) (inaktiv)
+#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025) (inaktiv) (bis 30.01.2026) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
@@ -50110,7 +50111,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-29 vvv
+#: last_checked: 2026-01-30 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50795,6 +50796,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdhvspimr22s
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreify53suk5ojkyl7r3nzqjul2mglb7crtmdfajwvq3bh7rutlzwige@jpeg
 #: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv) (bis 30.01.2026) (bis 09.04.2026)
+#: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
@@ -51272,14 +51274,16 @@ Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
 EOF
      },
      { from  => 1763294725, # 2025-11-16 13:05
-       until => 1769900399, # 2026-01-31 23:59
-       text  => 'Hönower Str.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Ende Januar 2026',
+       until => undef, # 1769900399, # 2026-01-31 23:59
+       text  => 'Hönower Str.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Ende Januar 2026, evtl. wird die Baustelle verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
-#: last_checked: 2025-12-23
-#: check_frequency: 45d
-#: next_check: 2026-01-31
+#: also_indoor: traffic (G,no-T,no-W,no-H)
+#: last_checked: 2026-01-30 (traffic)
+#: check_frequency: 3d (traffic)
+# REMOVED --- #: check_frequency: 45d
+# REMOVED --- #: next_check: 2026-01-31
 	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565
 EOF
      },
@@ -51328,12 +51332,15 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603695.php (Bauarbeiten 6. Oktober 2025 bis Ende Januar 2026)
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
+#: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2025-11-19 vvv
-#: next_check: 2026-01-31 vvv
+#: last_checked: 2026-01-30 (traffic) vvv
+#: check_frequency: 3d (traffic) vvv
+# REMOVED --- #: next_check: 2026-01-31 vvv
 Damaschkestr.: komplett gesperrt	q4::inwork 3013,10553 3123,10504
 Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 EOF
