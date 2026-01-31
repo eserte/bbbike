@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2023,2024,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1059,7 +1059,7 @@ EOF
 
     function updateCopyrights() {
         if (map.getMapTypeId() == "BBBike") {
- 	    copyrightNode.innerHTML = 'Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi/info=1">Slaven Rezi&#x107;</a>';
+ 	    copyrightNode.innerHTML = 'Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi?info=1">Slaven Rezi&#x107;</a>';
         } else if (map.getMapTypeId() == "Mapnik" ||
                    map.getMapTypeId() == "T\@H" ||
                    map.getMapTypeId() == "Cycle") {
@@ -1188,7 +1188,7 @@ EOF
             new GLatLngBounds(new GLatLng(-90,-180), new GLatLng(90,180)), 0,
             '(<a rel="license" href="http://bbbike.sourceforge.net/bbbike/doc/README.html#LIZENZ">GPL</a>)');
         var bbbikeCopyrightCollection =
-            new GCopyrightCollection('Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi/info=1">Slaven Rezi&#x107;</a>');
+            new GCopyrightCollection('Kartendaten &copy; $bbbike_copyright_year <a href="http://bbbike.de/cgi-bin/bbbike.cgi?info=1">Slaven Rezi&#x107;</a>');
         bbbikeCopyrightCollection.addCopyright(bbbikeCopyright);
     
         var tilelayers_bbbike_mapnik = new Array();
