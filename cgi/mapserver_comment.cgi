@@ -51,6 +51,9 @@ sub newstreetform_extra_html ($$);
 if (!defined $email_module) {
     $email_module = 'Email::MIME';
 }
+if (ref $email_module eq 'CODE') {
+    $email_module = $email_module->();
+}
 
 return 1 if caller;
 

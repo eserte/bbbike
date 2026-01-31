@@ -19,7 +19,7 @@ no utf8;
 BEGIN {
     my @errors;
     for my $check (
-		   q{use Email::MIME; use Email::Sender::Simple; 1}, # used in mapserver_comment.cgi
+		   q{use Email::MIME; 1}, # note: this is used within the tests; for generating MIME::Lite could be used
 		   # NOTE: The usage of decode_entities below is not that correct,
 		   # but sufficient for the test cases here.
 		   q{use HTML::Entities qw(decode_entities); 1},
@@ -44,14 +44,42 @@ use BBBikeTest qw(check_cgi_testing like_long_data);
 
 check_cgi_testing;
 
+my $mapserver_comment = "$FindBin::RealBin/../cgi/mapserver_comment.cgi";
+
+# get $email_module setting
+run sub {
+    local $0 = $mapserver_comment;
+    if (!eval qq{require "$mapserver_comment"; 1}) {
+	die "Cannot require $mapserver_comment: $@" if $@;
+    }
+    no warnings 'once';
+    print $main::email_module;
+}, '>', \my $email_module
+    or die "Error running code";
+
+# check if modules exist depending on $email_module setting
+if ($email_module eq 'Email::MIME') {
+    if (!eval q{use Email::MIME; use Email::Sender::Simple; 1}) {
+	plan skip_all => "configured to use Email::MIME, but required modules missing ($@)";
+    }
+} elsif ($email_module eq 'MIME::Lite') {
+    if (!eval q{use MIME::Lite; 1}) {
+	plan skip_all => "configured to use MIME::Lite, but required module missing ($@)";
+    }
+} else {
+    diag "WARNING: \$email_module is not set, things may fail";
+}
+
 GetOptions("debug" => \my $debug)
     or die "usage: $0 [--debug]\n";
 
 if ($debug) {
-    require Data::Printer;
+    diag "\$email_module=$email_module";
 }
 
-my $mapserver_comment = "$FindBin::RealBin/../cgi/mapserver_comment.cgi";
+if ($debug) {
+    require Data::Printer;
+}
 
 for my $method (qw(GET POST)) {
 
