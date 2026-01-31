@@ -781,7 +781,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.015';
+$VERSION = '11.016';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -970,13 +970,6 @@ use vars qw($smallform);
 $smallform = 0;
 
 $header_written = 0;
-
-if ($q->path_info ne "") {
-    my $q2 = CGI->new(substr($q->path_info, 1));
-    foreach my $k ($q2->param) {
-	$q->param($k, BBBikeCGI::Util::my_multi_param($q2, $k));
-    }
-}
 
 if ($q->param("tmp")) {
     my $file = $q->param("tmp");
