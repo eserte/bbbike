@@ -126,9 +126,9 @@ for my $f (@files) {
 	myskip "$f needs Archive::Zip", $tests_per_file
 	    if $f =~ m{^( cgi/bbbike-data.cgi
 		      )$}x && !eval { require Archive::Zip; 1 };
-	myskip "$f needs MIME::Lite", $tests_per_file # XXX in future will require Email::MIME & Email::Sender::Simple
+	myskip "$f needs Email::MIME and Email::Sender::Simple", $tests_per_file
 	    if $f =~ m{^( cgi/mapserver_comment.cgi
-		      )$}x && !eval { require MIME::Lite; 1 };
+		      )$}x && !eval { require Email::MIME; require Email::Sender::Simple; 1 };
 	myskip "$f does not work on Win32", $tests_per_file
 	    if $f =~ m{^( lib/Tk/ContextHelp.pm
 		      )$}x && $^O eq 'MSWin32';

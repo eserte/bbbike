@@ -49,7 +49,7 @@ use vars qw($from $to $cc $comment);
 sub newstreetform_extra_html ($$);
 
 if (!defined $email_module) {
-    $email_module = 'MIME::Lite';
+    $email_module = 'Email::MIME';
 }
 
 return 1 if caller;
@@ -665,10 +665,15 @@ either B<newstreetform> or B<fragezeichenform>.
 
 =head2 Configuration
 
-To define the mail sending method, set the C<@MIME_Lite_send>
-variable in C<bbbike.cgi.config>. The value of this variable is the
-same as the arguments of the C<send> method of L<MIME::Lite>. To
-define an SMTP server, use the following:
+C<$email_module> may be set to either C<Email::MIME> (default) or
+C<MIME::Lite> (default until 2025).
+
+C<Email::MIME> requires also C<Email::Sender::Simple> to be installed.
+
+When C<MIME::Lite> is chosen: To define the mail sending method, set
+the C<@MIME_Lite_send> variable in C<bbbike.cgi.config>. The value of
+this variable is the same as the arguments of the C<send> method of
+L<MIME::Lite>. To define an SMTP server, use the following:
 
     @MIME_Lite_send = ("smtp", "mail.example.com");
 

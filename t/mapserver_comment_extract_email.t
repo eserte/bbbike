@@ -12,7 +12,7 @@ use FindBin;
 BEGIN {
     my @errors;
     for my $check (
-		   q{use MIME::Lite; 1}, # used in mapserver_comment.cgi
+		   q{use Email::MIME; use Email::Sender::Simple; 1}, # used in mapserver_comment.cgi
 		   q{use Test::More; 1},
 		   q{defined &done_testing},
 		  ) {

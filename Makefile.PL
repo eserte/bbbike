@@ -122,8 +122,6 @@ my @req_table =
 
   [qw/Mail::Mailer	1.53	unix	0	mail/,
    'falls man aus bbbike heraus E-Mails mit der Routenbeschreibung verschicken will'],
-  [qw/MIME::Lite	0	unix	2	mail/,
-   'Versenden von Benutzer-Kommentaren im Webinterface (alt)'],
   [qw/Email::MIME	0	unix	2	mail/,
    'Versenden von Benutzer-Kommentaren im Webinterface'],
   [qw/Email::Sender::Simple	0	unix	2	mail/,

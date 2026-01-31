@@ -1018,7 +1018,7 @@ RUN apt-get update && apt-get install -qqy --no-install-recommends \\
       libapache-session-counted-perl \\
       libarray-heap-perl \\
       make gcc libc6-dev libinline-perl libinline-c-perl \\
-      libemail-mime-perl libemail-sender-perl libmime-lite-perl
+      libemail-mime-perl libemail-sender-perl
 EOF
     if ($opt{mapserver}) {
 	$dockerfile .= <<EOF;

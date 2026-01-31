@@ -31,8 +31,6 @@ YAML::XS	- optional für YAML-Dumps der BBBike-Route, für die Testsuite sowie fue
 
 JSON::XS	- optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben
 
-MIME::Lite	- Versenden von Benutzer-Kommentaren im Webinterface (alt)
-
 Email::MIME	- Versenden von Benutzer-Kommentaren im Webinterface
 
 Email::Sender::Simple	- Versenden von Benutzer-Kommentaren im Webinterface
