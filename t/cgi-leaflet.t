@@ -43,6 +43,7 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
     my $resp = $ua->get($base_url);
     ok $resp->is_success, "Fetching $base_url is OK"
 	or diag $resp->status_line;
+    is $resp->header('X-Tag'), 'll.route.none', 'X-Tag set';
     my $content = $resp->decoded_content(charset => 'none');
     tidy_check $content, 'tidy check for base URL';
     like $content, qr{var initialRouteGeojson = null;}, 'no initial coords';
@@ -54,6 +55,7 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
     for my $param (qw(coords coords_rev)) {
 	my $url = "$base_url?$param=1381,11335!1450,11309!1532,11280!1574,11379"; # Theodor-Heuss-Platz
 	my $resp = $ua->get($url);
+	is $resp->header('X-Tag'), 'll.route.coords', 'X-Tag set';
 	ok $resp->is_success, "Fetching with simple coords and param key $param is OK"
 	    or diag $resp->status_line;
 	my $content = $resp->decoded_content(charset => 'none');
@@ -70,6 +72,7 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
     my $resp = $ua->get($url);
     ok $resp->is_success, "Fetching with multiple coords is OK"
 	or diag $resp->status_line;
+    is $resp->header('X-Tag'), 'll.route.coords', 'X-Tag set';
     my $content = $resp->decoded_content(charset => 'none');
     tidy_check $content, 'tidy check with multiple coords';
     like $content, qr<^initialGeojson =>m, 'beginning geojson';
@@ -81,6 +84,7 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
     my $resp = $ua->get($url);
     ok $resp->is_success, "Fetching with gple is OK"
 	or diag $resp->status_line;
+    is $resp->header('X-Tag'), 'll.route.gple', 'X-Tag set';
     my $content = $resp->decoded_content(charset => 'none');
     tidy_check $content, 'tidy check with multiple coords';
     (my $content_oneline = $content) =~ s{\n}{ }g;
@@ -93,6 +97,7 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
     ok $resp->is_success, "Fetching with gpleu is OK"
 	or diag $resp->status_line;
     my $content = $resp->decoded_content(charset => 'none');
+    is $resp->header('X-Tag'), 'll.route.gple', 'X-Tag set';
     tidy_check $content, 'tidy check with multiple coords';
     (my $content_oneline = $content) =~ s{\n}{ }g;
     like $content_oneline, qr<initialGeojson =\s*\{\s*"geometry" : \{\s*"coordinates" : \[\s*\[\s*"13.42456",\s*"52.49721"\s*\],\s*\[\s*"13.42313",\s*"52.4957"\s*\],\s*\[\s*"13.4262",\s*"52.49469"\s*\],\s*\[\s*"13.42775",\s*"52.49633"\s*\],\s*\[\s*"13.42456",\s*"52.49721"\s*\]\s*\],>, 'expected geojson as generated from gpleu';
@@ -113,6 +118,7 @@ SKIP: {
 	    pass "Found bbbikeleaflet link '$bbbikeleaflet_url'";
 	    my $resp2 = $ua->get($bbbikeleaflet_url);
 	    ok $resp2->is_success, 'Fetching a bbbikeleaflet URL with coordssession is OK';
+	    is $resp2->header('X-Tag'), 'll.route.session', 'X-Tag set';
 	    my $content2 = $resp2->decoded_content(charset => 'none');
 	    tidy_check $content2, 'tidy check';
 	    like $content2, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.38\d+,52.48\d+\Q],[\E13.38\d+,52.48\d+\Q]],"type":"LineString"},"properties":{"type":"Route"},"type":"Feature"};>m, 'expected coords';
@@ -131,6 +137,7 @@ SKIP: {
 	    pass "Found English bbbikeleaflet link '$bbbikeleaflet_url'";
 	    my $resp2 = $ua->get($bbbikeleaflet_url);
 	    ok $resp2->is_success, 'Fetching a bbbikeleaflet URL with coordssession is OK';
+	    is $resp2->header('X-Tag'), 'll.route.session', 'X-Tag set';
 	    my $content2 = $resp2->decoded_content(charset => 'none');
 	    tidy_check $content2, 'tidy check';
 	    like $content2, qr<^\QinitialRouteGeojson = {"geometry":{"coordinates":[[\E13.38\d+,52.48\d+\Q],[\E13.38\d+,52.48\d+\Q]],"type":"LineString"},"properties":{"type":"Route"},"type":"Feature"};>m, 'expected coords';
@@ -144,6 +151,7 @@ SKIP: {
 	my $resp = $ua->get("$base_url?coordssession=$session_id");
 	is $resp->code, 410, '410 Gone for non-existent coordssession'
 	    or diag $resp->dump;
+	is $resp->header('X-Tag'), 'error.sessionexpired', 'X-Tag set';
     }
 }
 

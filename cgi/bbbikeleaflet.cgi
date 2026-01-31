@@ -44,13 +44,16 @@ my $show_feature_list  = $q->param('fl') || 0; # feature list can currently only
 my $show_expired_session_msg;
 my $http_status;
 my($coords, $wgs84_coords);
+my $tag;
 if ($q->param('coordssession')) {
     require BBBikeApacheSessionCounted;
     if (my $sess = BBBikeApacheSessionCounted::tie_session(scalar $q->param('coordssession'))) {
 	$coords = $sess->{routestringrep};
+	$tag = 'll.route.session';
     } else {
 	$show_expired_session_msg = 1;
 	$http_status = '410 Gone';
+	$tag = 'error.sessionexpired';
     }
 } elsif ($q->param('coords') || $q->param('coords_forw') || $q->param('coords_rev')) {
     # Currently coords_forw and coords_rev are rendered the same, but
@@ -61,6 +64,7 @@ if ($q->param('coordssession')) {
 	       BBBikeCGI::Util::my_multi_param($q, 'coords_forw'),
 	       BBBikeCGI::Util::my_multi_param($q, 'coords_rev'),
 	      ];
+    $tag = 'll.route.coords';
 } elsif ($q->param('gple') || $q->param('gpleu')) {
     my $gple = scalar $q->param('gpleu') ? do {
 	require Route::GPLEU;
@@ -69,6 +73,9 @@ if ($q->param('coordssession')) {
     require Algorithm::GooglePolylineEncoding;
     my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline($gple);
     $wgs84_coords = [ join "!", map { join ',', $_->{lon}, $_->{lat} } @polyline ];
+    $tag = 'll.route.gple';
+} else {
+    $tag = 'll.route.none';
 }
 
 my $show_speedometer;
@@ -81,6 +88,7 @@ if ($devel) {
 print $q->header(
     -type => 'text/html; charset=utf-8',
     (defined $http_status ? (-status => $http_status) : ()),
+    (defined $tag ? ('-x_tag' => $tag) : ()),
 );
 
 my $tpl = BBBikeLeaflet::Template->new
