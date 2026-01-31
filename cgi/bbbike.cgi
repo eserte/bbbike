@@ -1213,7 +1213,7 @@ if (defined $q->param('begin')) {
     # (Netscape3, Solaris2?)
     $q->delete('begin');
     choose_form();
-} elsif (defined $q->param('info') || $q->path_info eq '/_info') {
+} elsif (defined $q->param('info')) {
     $q->delete('info');
     show_info();
 } elsif (defined $q->param('uploadpage') ||

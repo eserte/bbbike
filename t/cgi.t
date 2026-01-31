@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013,2017,2018,2022,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013,2017,2018,2022,2023,2024,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -157,7 +157,7 @@ my @imagetype_defs =
 my $file_cache_tests_per_format = 4;
 my $file_cache_tests_formats = scalar grep { $_->{can_file_cache} } (@output_as_defs, @imagetype_defs);
 
-plan tests => (280 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
+plan tests => (278 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -545,12 +545,6 @@ for my $cgiurl (@urls) {
     {
 	# Klick on Info link
 	std_get "$action?info=1", testname => "Click on info link";
-    }
-
-    {
-	# Info page through pathinfo
-	my $content = std_get "$action/info=1", testname => "Info page through pathinfo";
-	like_html $content, qr/Link auf BBBike setzen/, "Is it really the info page?";
     }
 
  SKIP: {
