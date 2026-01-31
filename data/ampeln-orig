@@ -19,7 +19,7 @@
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
 #: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026)
-#: last_checked: 2025-12-17
+#: last_checked: 2026-01-29 (mapillary)
 #: next_check: 2026-02-13 (VIZ-Verkehrsmeldung)
 #: valid: -20260213
 Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
@@ -243,7 +243,7 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # 
 #: next_check_id: PERLEBERGER-2024
 #: last_checked: 2025-12-03
-#: check_frequency: 60d
+#: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
@@ -371,7 +371,8 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
-#: last_checked: 2026-01-16
+#: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
+#: last_checked: 2026-01-29 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	X::inwork 7873,12927
@@ -3953,7 +3954,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-01-16 vvv
+#: last_checked: 2026-01-29 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 	X::inwork 9121,12514

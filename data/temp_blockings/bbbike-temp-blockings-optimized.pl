@@ -2612,12 +2612,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1769295600,
+         'from' => 1771714800,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 26.1.2026 bis 30.1.2026',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 23.2.2026 bis 27.2.2026',
          'type' => 'gesperrt',
-         'until' => 1769813999
+         'until' => 1772233199
        },
        undef,
        undef,
@@ -4497,7 +4497,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-01-31 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -6688,7 +6688,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2026-01-16
+#: last_checked: 2026-01-29 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -6981,24 +6981,23 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
        undef,
        {
          'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024) (inaktiv)
-#: source_id: viz2021:13.432599,52.479016,01.09.2023,07:00 (bis 30.03.2026)
-#: osm_watch: way id="1207706195" version="5"
-#: osm_watch: note 5147506 1
+#: source_id: LMS-BR:311065/72 viz2021:13.432599,52.479016,01.09.2023,07:00 (bis 30.03.2026)
+#: osm_watch: way id="1207706195" version="7"
+#: osm_watch: note 5147506 2
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
 #: by: https://www.entwicklungsstadt.de/bund-baut-neue-bundesgeschaeftsstelle-auf-dem-vollgut-areal-in-neukoelln/ (Bezug im zweiten Quartal 2026)
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-12-13
-#: check_frequency: 120d
-#: next_check: 2026-01-29
-# REMOVED --- #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
-	q4::inwork 12407,8177 12545,8209
+#: last_checked: 2026-01-30 (osm note)
+#: check_frequency: 90d
+#: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
+	q4::inwork; 12407,8177 12545,8209
 ',
          'from' => 1693458000,
          'id' => 3913,
-         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Fahrbahn gesperrt, vom 01.09.2023 07:00 bis voraussichtlich Ende März 2026',
+         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Einbahnstraßenregelung, voraussichtlich bis Ende März 2026',
          'type' => 'handicap',
          'until' => 1774886400
        },
@@ -7052,7 +7051,8 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
-#: last_checked: 2026-01-22 (architektur-urbanistik)
+#: note: offiziell gesperrt, Absperrungen können aber weggeschoben sein
+#: last_checked: 2026-01-29 (mapillary)
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 ',
@@ -8621,7 +8621,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-18 (traffic) vvv
+#: last_checked: 2026-01-31 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
@@ -8928,7 +8928,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: source_id: viz2021:13.38017,52.51979,09.07.2025,07:00 (bis 12.05.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 2
-#: osm_watch: way id="1429845843" version="1"
+#: osm_watch: way id="1429845843" version="2"
 #: also_indoor: traffic (T,H,G)
 #: last_checked: 2025-12-15 (mapillary) vvv
 #: check_frequency: 90d vvv
@@ -9101,8 +9101,8 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig) (Jan 2026: erster Abschnitt noch immer abgesperrt)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
-#: also_indoor: traffic (T,G,H,A,W)
-#: last_checked: 2026-01-02
+#: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
+#: last_checked: 2026-01-31 (traffic)
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 # REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
@@ -9135,7 +9135,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-30 vvv
+#: last_checked: 2026-01-31 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9317,8 +9317,9 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-01-29 vvv
-#: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2026-01-31 vvv
+#: next_check: 2026-02-11 (Halteverbotsschilder) vvv
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
 Corinthstr.	q3::inwork; 14447,10491 14608,10409

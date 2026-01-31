@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-01-26
+#: last_checked: 2026-01-31
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -478,7 +478,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-01-16 vvv
+#: last_checked: 2026-01-29 (mapillary) vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="46"
@@ -847,7 +847,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
 #: also_indoor: traffic (T,re-G,ex-H,re-W)
-#: last_checked: 2025-12-03
+#: last_checked: 2026-01-31 (traffic)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
@@ -2372,6 +2372,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: by: https://www.no6.berlin/nolle-6 (Fertigstellung Q2/2027)
 #: by: https://entwicklungsstadt.de/neugestaltung-am-nollendorfplatz-bauarbeiten-am-metropol-theater-laufen/
 #: by: https://www.entwicklungsstadt.de/nachverdichtung-am-nollendorfplatz-buero-neubau-no6-ersetzt-frueheres-spielcasino/
+#: by: http://www.deal-magazin.com/news/3/149287/Berlin-Nollendorfplatz-Bauwens-startet-nachhaltiges-Bueroprojekt-NO6 (bis Herbst 2027)
 #: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; mittlerweile bis Halteverbotsschilder bis 15.12.2025; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch[closed]: note 4506575 2
@@ -2380,7 +2381,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="11636138" version="15"
 #: last_checked: 2025-12-18 (daf)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-12-15 (Halteverbotsschilder)
+#: next_check: 2027-11-30 (deal magazin: Herbst 2027)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
 # 
 #: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
@@ -5231,7 +5232,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026)
-#: last_checked: 2026-01-21 vvv
+#: last_checked: 2026-01-31 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-03-15 vvv
 # REMOVED --- #: valid: -20251219
