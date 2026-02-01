@@ -2715,7 +2715,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3430,7 +3430,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Januar 8.00 - 16.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Februar 8.00 - 17.00 Uhr)',
          'until' => undef
        },
        undef,
