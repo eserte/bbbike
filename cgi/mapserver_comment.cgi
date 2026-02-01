@@ -107,14 +107,6 @@ eval {
 	$from = $to; # fallback to something
     }
 
-    if ($debug) {
-	require Sys::Hostname;
-	if (Sys::Hostname::hostname() =~ /herceg\.de$/) {
-	    $to = "eserte\@smtp.herceg.de";
-	    $cc = "slaven\@smtp.herceg.de";
-	}
-    }
-
     my $encoding = $q->param("encoding");
     if ($encoding && $encoding !~ m{^(utf-8|iso-8859-1)$}) {
 	undef $encoding;
