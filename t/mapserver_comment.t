@@ -40,7 +40,7 @@ BEGIN {
     }
 }
 
-use BBBikeTest qw(check_cgi_testing like_long_data);
+use BBBikeTest qw(check_cgi_testing like_long_data like_html);
 
 check_cgi_testing allow_devel_cover => 1;
 
@@ -70,15 +70,29 @@ if ($email_module eq 'Email::MIME') {
     diag "WARNING: \$email_module is not set, things may fail";
 }
 
-GetOptions("debug" => \my $debug)
-    or die "usage: $0 [--debug]\n";
+my $debug;
+my $debug_method = 'Data::Printer';
+GetOptions(
+    "debug" => \$debug,
+    "dddebug" => sub {
+	$debug = 1;
+	$debug_method = 'Data::Dumper';
+    },
+)
+    or die "usage: $0 [--debug|--dddebug]\n";
 
 if ($debug) {
     diag "\$email_module=$email_module";
 }
 
 if ($debug) {
-    require Data::Printer;
+    if ($debug_method eq 'Data::Printer') {
+	require Data::Printer;
+	*p = sub { Data::Printer::p(@_) };
+    } else {
+	require Data::Dumper;
+	*p = sub { print STDERR Data::Dumper::Dumper(@_) };
+    }
 }
 
 for my $method (qw(GET POST)) {
@@ -122,9 +136,9 @@ for my $method (qw(GET POST)) {
 	);
 	if ($debug) {
 	    print STDERR "*** CGI params ***\n";
-	    Data::Printer::p(\@cgi_params);
+	    p(\@cgi_params);
 	    print STDERR "*** Return ***\n";
-	    Data::Printer::p(\%ret);
+	    p(\%ret);
 	    print STDERR "-" x 70, "\n";
 	}
 	%ret;
@@ -201,9 +215,10 @@ for my $method (qw(GET POST)) {
 					   multivar => 'multivar_val2',
 					   strname => 'Teststreet',
 					   email => 'somebody@example.org',
-					   comment => "test comment",
+					   comments => "test comment with umlauts äöü",
 					  );
 	like decode_entities($res{http}->decoded_content), qr{Danke, die Angaben.*gesendet}, "HTTP: Thankyou ($method)";
+	like decode_entities($res{http}->decoded_content), qr{Weitere Straße eintragen}, "HTTP: another street sentence (containing umlauts) ($method)";
 	like $res{http}->header('set-cookie'), qr{mapserver_comment}, 'Seen Set-Cookie header';
 	my @parts = $res{mail}->parts;
 	is scalar(@parts), 2, "Two parts found in mail (text and html)";
@@ -211,6 +226,9 @@ for my $method (qw(GET POST)) {
 	like_long_data $plain, qr{var1.*var1_val}, 'Found single param in plain part', '.txt';
 	like_long_data $plain, qr{multivar_val2}, 'Found 2nd multi param in plain part', '.txt';
 	like_long_data $plain, qr{email.*somebody.*example\.org}, 'Found email in plain part', '.txt';
+	like_long_data $plain, qr{test comment with umlauts äöü}, 'Found comments in plain part', '.txt';
+	my $html = $parts[1]->body_str; # and html part is the second one (index=1)
+	like_html $html, qr{test comment with umlauts äöü}, 'Found comments in html part';
     }
 }
 
