@@ -31,7 +31,6 @@ use lib (grep { -d }
 	);
 use BBBikeVar;
 use BBBikeCGI::Util qw();
-use Data::Dumper;
 use CGI ();
 use CGI::Carp;
 use vars qw($debug $bbbike_url $bbbike_root $bbbike_html $use_cgi_bin_layout
@@ -175,12 +174,14 @@ eval {
     }
 
     if ($q->param("formtype") && $q->param("formtype") =~ /^(newstreetform|fragezeichenform)$/) {
-	open(BACKUP, ">>/tmp/newstreetform-backup-$<")
+	open my $BACKUP, '>>', "/tmp/newstreetform-backup-$<"
 	    or warn "Cannot write backup data for newstreetform: $!";
-	print BACKUP "-" x 70, "\n";
-	print BACKUP scalar localtime;
-	print BACKUP "\n";
+	binmode $BACKUP, ':encoding(utf-8)';
+	print $BACKUP "-" x 70, "\n";
+	print $BACKUP scalar localtime;
+	print $BACKUP "\n";
 	my $data = {};
+	my $dump_data = {};
 	for my $param ($q->param) {
 	    my @val = BBBikeCGI::Util::my_multi_param($param);
 	    if (@val == 1) {
@@ -189,14 +190,13 @@ eval {
 		$data->{$param} = \@val;
 	    }
 	    next if (@val == 0 || (@val == 1 && $val[0] eq '') && $param !~ /^supplied/);
-	    my $dump = Data::Dumper->new([$data->{$param}],[$param])->Indent(1)->Useqq(1)->Dump;
-	    print BACKUP $dump;
-	    $plain_body .= $dump;
+	    $dump_data->{$param} = $data->{$param};
 	}
-	my $dump = Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
-	print BACKUP $dump;
+	$dump_data->{ENV} = \%ENV;
+	my $dump = dump_val($dump_data);
+	print $BACKUP $dump;
 	$plain_body .= $dump;
-	close BACKUP;
+	close $BACKUP;
 
 	{
 	    no warnings 'uninitialized'; # strname may be empty
@@ -259,12 +259,14 @@ eval {
 	$plain_body .= $comment . "\n";
 	$plain_body .= "Remote: " . $link1 . "\n" if defined $link1;
 	$plain_body .= "Lokal:  " . $link2 . "\n" if defined $link2;
-	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
+	$plain_body .= "\nENV:\n" . dump_val(\%ENV);
 	if ($q->request_method eq 'POST') {
-	    $plain_body .= "\nPOST Vars:\n";
+	    my $dump_data = {};
 	    for my $key ($q->param) {
-		$plain_body .= Data::Dumper->new([BBBikeCGI::Util::my_multi_param($key)],[$key])->Indent(1)->Useqq(1)->Dump;
+		$dump_data->{$key} = BBBikeCGI::Util::my_multi_param($key);
 	    }
+	    $plain_body .= "\nPOST Vars:\n";
+	    $plain_body .= dump_val($dump_data);
 	}
 
 	no warnings 'uninitialized'; # url param may be undef
@@ -553,6 +555,21 @@ sub extract_email {
     my($text) = @_;
     return undef if !defined $text;
     $text =~ /([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})/ ? $1 : undef;
+}
+
+# returns characters
+sub dump_val {
+    my($val) = @_;
+    my $ret = eval {
+	require BBBikeYAML;
+	require Encode;
+	Encode::bytes2str("utf-8", BBBikeYAML::Dump($val));
+    };
+    if (!defined $ret || $@) {
+	require Data::Dumper;
+	$ret = Data::Dumper->new([$val],[])->Indent(1)->Useqq(1)->Dump;
+    }
+    $ret;
 }
 
 sub maybe_send_to_zdjelameda {
