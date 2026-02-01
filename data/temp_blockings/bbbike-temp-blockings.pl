@@ -48338,7 +48338,7 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-01-19 (traffic)
+#: last_checked: 2026-02-01 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
@@ -48346,7 +48346,7 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-01-19 (traffic)
+#: last_checked: 2026-02-01 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
@@ -51281,7 +51281,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
-#: also_indoor: traffic (G,no-T,no-W,no-H)
+#: also_indoor: traffic (ex-G,no-T,no-W,no-H)
+#: add_fragezeichen: Wurde die Einbahnstraßenregelung wieder aufgehoben?
 #: last_checked: 2026-01-30 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: check_frequency: 45d
@@ -51336,7 +51337,7 @@ EOF
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-01-30 (traffic) vvv
+#: last_checked: 2026-02-01 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 Damaschkestr.: komplett gesperrt	q4::inwork 3013,10553 3123,10504
