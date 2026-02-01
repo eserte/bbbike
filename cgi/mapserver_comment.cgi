@@ -242,23 +242,6 @@ eval {
 	    $plain_body .= "\nERROR processing template: $@";
 	}
 
-    } elsif ($q->param("formtype") && $q->param("formtype") eq 'bbbikeroute') { # note: this was planned to be used by bbbike_comment.cgi, which does not exist
-	$comment =
-	    "Von: $by_long\n" .
-	    "An:  $to\n\n" .
-	    "Kommentar:\n" .
-	    $q->param("comment") . "\n" .
-	    "Query: " . $q->param("query") . "\n";
-	$plain_body .= $comment . "\n";
-	$link1 = $bbbike_url . "?" . $q->param("query");
-	$link2 = "http://www/bbbike/cgi/bbbike.cgi?" . $q->param("query");
-	$plain_body .= "Remote: " . $link1 . "\n";
-	$plain_body .= "Lokal:  " . $link2 . "\n";
-	$plain_body .= "\n" . Data::Dumper->new([\%ENV],['ENV'])->Indent(1)->Useqq(1)->Dump;
-
-	my $is_spam = length param('url');
-	maybe_send_to_zdjelameda('unexpected param') if $is_spam;
-	$subject = "SPAM: $subject" if $is_spam;
     } elsif (
 	     $q->request_method() eq 'OPTIONS' &&
 	     ($q->http('origin')||'') =~ m{^https?://localhost(:\d+)?}
@@ -647,8 +630,7 @@ to the mail as an attachment in B<bbd> format.
 
 May be B<newstreetform> (if coming from the newstreetform.html
 formular), B<fragezeichenform> (if coming from the
-fragezeichenform.html formular), B<bbbikeroute> (if coming from
-bbbike_comment.cgi, not yet used), or nothing.
+fragezeichenform.html formular), or nothing.
 
 =item comment
 
