@@ -46,8 +46,9 @@ if (!GetOptions(get_std_opts("cgiurl", "xxx"),
 		"v" => \$v,
 		'browser=s@' => \@browsers,
 		'xxx-petri-dank' => \$do_xxx{PETRI_DANK},
+		'xxx-newstreetform' => \$do_xxx{NEWSTREETFORM},
 	       )) {
-    die "usage: $0 [-cgiurl url] [-xxx|-xxx-petri-dank] [-v] [-browser ...]";
+    die "usage: $0 [-cgiurl url] [-xxx|-xxx-petri-dank|-xxx-newstreetform] [-v] [-browser ...]";
 }
 
 if (!@browsers) {
@@ -863,7 +864,7 @@ for my $browser (@browsers) {
     ######################################################################
     # non-utf8 checks
 
-    {
+ XXX_NEWSTREETFORM: {
 	$get_agent->();
 
 	$agent->get($cgiurl);
@@ -943,6 +944,8 @@ for my $browser (@browsers) {
 	    $like_long_data->(qr{Danke, die Angaben.*gesendet}, "Sent comment (shortfragezeichenform)");
 	    $not_source_code->();
 	}
+
+	exit 0 if $do_xxx{NEWSTREETFORM};
     }
 
     ######################################################################
