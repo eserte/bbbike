@@ -172,28 +172,16 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	$agent->form_number(1) if $agent->forms and scalar @{$agent->forms};
-	{
-	    local $^W; $agent->current_form->value('start', 'duden');
-	}
-	;
-	{
-	    # This used to be just "sonntag", but now there are some
-	    # new "Kolonien" starting with the same prefix...
-	    local $^W; $agent->current_form->value('ziel', 'sonntagstr');
-	}
-	;
+	$agent->current_form->value('start', 'duden');
+	# This used to be just "sonntag", but now there are some
+	# new "Kolonien" starting with the same prefix...
+	$agent->current_form->value('ziel', 'sonntagstr');
 	$agent->submit();
 	my_tidy_check($agent);
 
 	$on_a_particular_page->('crossing');
-	{
-	    local $^W; $agent->current_form->value('startc', '8982,8781');
-	}
-	;			# Set Duden/Methfesselstr.
-	{
-	    local $^W; $agent->current_form->value('zielc', '14598,11245');
-	}
-	;			# Set Sonntag/Böcklinstr.
+	$agent->current_form->value('startc', '8982,8781'); # Set Duden/Methfesselstr.
+	$agent->current_form->value('zielc', '14598,11245'); # Set Sonntag/Böcklinstr.
 	$agent->submit();
 	my_tidy_check($agent);
 
@@ -246,14 +234,8 @@ for my $browser (@browsers) {
 	$on_a_particular_page->('startpage');
 	$like_long_data->(qr/Sonntagstr./, "... with the start street preserved");
 
-	{
-	    local $^W; $agent->current_form->value('via', 'Heerstr');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 'Adlergestell');
-	}
-	;
+	$agent->current_form->value('via', 'Heerstr');
+	$agent->current_form->value('ziel', 'Adlergestell');
 	$agent->submit();
 	my_tidy_check($agent);
 
@@ -262,10 +244,7 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	$on_a_particular_page->('crossing');
-	{
-	    local $^W; $agent->current_form->value('zielc', '27360,-3042');
-	}
-	;			# Wernsdorfer Str.
+	$agent->current_form->value('zielc', '27360,-3042'); # Wernsdorfer Str.
 	$agent->submit();
 	my_tidy_check($agent);
 
@@ -301,15 +280,15 @@ for my $browser (@browsers) {
 	    my $formnr = (($agent->forms)[0]->attr("name") =~ /Ausweichroute/ ? 3 : 2);
 	    $agent->form_number($formnr);
 	}
-	eval { local $^W; $agent->current_form->value('pref_speed', '25'); };
+	eval { $agent->current_form->value('pref_speed', '25'); };
 	is($@, "", "setting pref_speed ok");
-	eval { local $^W; $agent->current_form->value('pref_cat', 'N_RW'); };
+	eval { $agent->current_form->value('pref_cat', 'N_RW'); };
 	is($@, "", "setting pref_cat ok");
-	eval { local $^W; $agent->current_form->value('pref_quality', 'Q2'); };
+	eval { $agent->current_form->value('pref_quality', 'Q2'); };
 	is($@, "", "setting pref_quality ok");
-	eval { local $^W; $agent->current_form->value('pref_ampel', 'yes'); };
+	eval { $agent->current_form->value('pref_ampel', 'yes'); };
 	is($@, "", "setting pref_ampel ok");
-	eval { local $^W; $agent->current_form->value('pref_green', 'GR2'); };
+	eval { $agent->current_form->value('pref_green', 'GR2'); };
 	is($@, "", "setting pref_green ok");
 	$agent->submit();
 	my_tidy_check($agent);
@@ -354,14 +333,8 @@ for my $browser (@browsers) {
 
 	$agent->get($cgiurl);
 	$agent->form_name("BBBikeForm");
-	{
-	    local $^W; $agent->current_form->value('start', 'Petri Dank');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 'Römische Bäder');
-	}
-	;
+	$agent->current_form->value('start', 'Petri Dank');
+	$agent->current_form->value('ziel', 'Römische Bäder');
 	$agent->submit();
 	my_tidy_check($agent);
 
@@ -403,14 +376,8 @@ for my $browser (@browsers) {
 
 	$agent->get($cgiurl);
 	$agent->form_name("BBBikeForm");
-	{
-	    local $^W; $agent->current_form->value('start', 'kaiser-friedrich-str');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 'helmholtzstr');
-	}
-	;
+	$agent->current_form->value('start', 'kaiser-friedrich-str');
+	$agent->current_form->value('ziel', 'helmholtzstr');
 	$agent->submit();
 	my_tidy_check($agent);
 
@@ -468,14 +435,8 @@ for my $browser (@browsers) {
 
 	$agent->get($cgiurl);
 	$agent->form_name("BBBikeForm");
-	{
-	    local $^W; $agent->current_form->value('start', 'am neuen palais');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 'dudenstr');
-	}
-	;
+	$agent->current_form->value('start', 'am neuen palais');
+	$agent->current_form->value('ziel', 'dudenstr');
 	$agent->submit();
 	my_tidy_check($agent);
 
@@ -569,14 +530,8 @@ for my $browser (@browsers) {
 
 	$agent->get($cgiurl);
 	$agent->form_name("BBBikeForm");
-	{
-	    local $^W; $agent->current_form->value('start', 'Rixdorfer Str. (Niederschöneweide)/schnellerstr');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 'Rixdorfer Str. (Niederschöneweide)/südostallee');
-	}
-	;
+	$agent->current_form->value('start', 'Rixdorfer Str. (Niederschöneweide)/schnellerstr');
+	$agent->current_form->value('ziel', 'Rixdorfer Str. (Niederschöneweide)/südostallee');
 	$agent->submit;
 
 	$agent->submit;
@@ -712,14 +667,8 @@ for my $browser (@browsers) {
 
 	$agent->get($cgiurl);
 	$agent->form_name("BBBikeForm");
-	{
-	    local $^W; $agent->current_form->value('start', 'kleine parkstr');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 's hauptbahnhof');
-	}
-	;
+	$agent->current_form->value('start', 'kleine parkstr');
+	$agent->current_form->value('ziel', 's hauptbahnhof');
 	$agent->submit();
 	my_tidy_check($agent);
 
@@ -742,14 +691,8 @@ for my $browser (@browsers) {
 
 	$agent->get($cgiurl);
 	$agent->form_name("BBBikeForm");
-	{
-	    local $^W; $agent->current_form->value('start', 'brandenburger tor');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 'seumestr');
-	}
-	;
+	$agent->current_form->value('start', 'brandenburger tor');
+	$agent->current_form->value('ziel', 'seumestr');
 	$agent->submit();
 	my_tidy_check($agent);
 
@@ -874,10 +817,7 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	$on_a_particular_page->('info');
-	{
-	    local $^W = 0; # cease "Parsing of undecoded UTF-8 will give garbage when decoding entities" warning
-	    $agent->follow_link(text_regex => qr{dieses Formular});
-	}
+	$agent->follow_link(text_regex => qr{dieses Formular});
 	my_tidy_check($agent);
 
 	$on_a_particular_page->('streetform');
@@ -901,10 +841,7 @@ for my $browser (@browsers) {
 	    $not_source_code->();
 	}
 
-	{
-	    local $^W = 0; # cease "Parsing of undecoded UTF-8 will give garbage when decoding entities" warning
-	    $agent->get($fragezeichenform_url);
-	}
+	$agent->get($fragezeichenform_url);
 	my_tidy_check($agent);
 
 	#######################
@@ -923,10 +860,7 @@ for my $browser (@browsers) {
 	    $not_source_code->();
 	}
 
-	{
-	    local $^W = 0; # cease "Parsing of undecoded UTF-8 will give garbage when decoding entities" warning
-	    $agent->get($shortfragezeichenform_url);
-	}
+	$agent->get($shortfragezeichenform_url);
 	my_tidy_check($agent);
 
 	#######################
@@ -957,14 +891,8 @@ for my $browser (@browsers) {
 
 	$agent->get($cgiurl);
 	$agent->form_name("BBBikeForm");
-	{
-	    local $^W; $agent->current_form->value('start', 'Schloß Sanssouci');
-	}
-	;
-	{
-	    local $^W; $agent->current_form->value('ziel', 'Potsdam Hauptbahnhof');
-	}
-	;
+	$agent->current_form->value('start', 'Schloß Sanssouci');
+	$agent->current_form->value('ziel', 'Potsdam Hauptbahnhof');
 	$agent->submit();
 	my_tidy_check($agent);
 	$known_on_2nd_page->();
