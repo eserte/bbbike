@@ -899,7 +899,15 @@ sub using_bbbike_test_cgi () {
     _update_bbbike_test_data;
 }
 
-sub check_cgi_testing () {
+sub check_cgi_testing (;@) {
+    my(%opts) = @_;
+    my $allow_devel_cover = delete $opts{allow_devel_cover};
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
+    if ($allow_devel_cover && $INC{"Devel/Cover.pm"}) {
+	return;
+    }
+
     if ($ENV{BBBIKE_TEST_NO_CGI_TESTS}) {
 	print "1..0 # skip Requested to not test cgi functionality.\n";
 	exit 0;
