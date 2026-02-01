@@ -121,8 +121,11 @@ for my $method (qw(GET POST)) {
 	 mail => $stderr eq '' ? undef : Email::MIME->new($stderr),
 	);
 	if ($debug) {
+	    print STDERR "*** CGI params ***\n";
 	    Data::Printer::p(\@cgi_params);
+	    print STDERR "*** Return ***\n";
 	    Data::Printer::p(\%ret);
+	    print STDERR "-" x 70, "\n";
 	}
 	%ret;
     };
