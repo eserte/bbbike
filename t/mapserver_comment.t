@@ -42,7 +42,7 @@ BEGIN {
 
 use BBBikeTest qw(check_cgi_testing like_long_data);
 
-check_cgi_testing;
+check_cgi_testing allow_devel_cover => 1;
 
 my $mapserver_comment = "$FindBin::RealBin/../cgi/mapserver_comment.cgi";
 
