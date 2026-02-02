@@ -72,6 +72,27 @@ if ($WWW::Mechanize::VERSION == 1.32) {
 EOF
 }
 
+if ($WWW::Mechanize::VERSION <= 2.20) {
+# XXX exchanged $self->content by $self->response
+# keep strange indentation to minimize diff against original
+# https://github.com/libwww-perl/WWW-Mechanize/issues/225
+*WWW::Mechanize::_extract_forms = sub {
+    my $self = shift;
+
+    my @forms = HTML::Form->parse( $self->response, $self->base );
+    $self->{forms} = \@forms;
+    for my $form ( @forms ) {
+        for my $input ($form->inputs) {
+             if ($input->type eq 'file') {
+                 $input->value( undef );
+             }
+        }
+    }
+
+    return;
+}
+}
+
 ######################################################################
 # general testing
 
