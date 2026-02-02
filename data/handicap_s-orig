@@ -405,6 +405,39 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=18B1427E-DCE6-45CE-A2D8-3AE59415C594
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/06.3_Einschraenkung_Strassenverkehr.pdf
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/06.4_Einschraenkung_Fuss-_und_Radweg.pdf
+#: by: https://bvg-projekt.de/projekte/ersatzneubau-waisentunnel-spreeunterquerung-berlin-mitte-bim-pilot-1-0/ (Bauzeit 2024 - 2028)
+#: by: https://www.tagesspiegel.de/berlin/maroder-u-bahn-bau-ist-seit-jahren-gesperrt-immer-neue-schwierigkeiten-beim-berliner-waisentunnel-11186392.html (2030 noch immer nicht fertig?)
+#: by[nocache]: https://archive.is/FHiO5
+#: by: https://www.nd-aktuell.de/artikel/1180005.verkehr-maroder-waisentunnel-sorgenkind-der-berliner-u-bahn.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf (keine Termine genannt)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/schauplatz-einer-spektakulaeren-ddr-flucht-in-berlin-das-geschieht-mit-dem-stillen-bvg-tunnel-in-mitte-li.2266468 (Baubeginn 7 Monate nach Ende des Planfeststellungsverfahrens)
+#: by: https://www.tagesspiegel.de/berlin/der-waisentunnel-bleibt-verwaist-planung-fur-berliner-problembaustelle-unter-der-spree-stockt-12997495.html (verschiebt sich auf unbestimmte Zeit)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-21170.pdf
+#: by: https://www.nd-aktuell.de/artikel/1189799.sanierung-berliner-u-bahn-geschichtstraechtiger-waisentunnel-vor-neubau.html
+#: by: https://www.nd-aktuell.de/artikel/1191086.bvg-oepnv-in-berlin-u-bahn-bleibt-hochrisikopatient.html (Baubeginn 2025?)
+#: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-bvg-plant-tunnel-neubau-unter-der-spree.html (Baubeginn Ende 2025)
+#: by: https://entwicklungsstadt.de/nach-sieben-jahren-bvg-erneuert-berliner-waisentunnel/ (Fertigstellung 2028?)
+#: by: https://www.tagesspiegel.de/berlin/macht-keinen-sinn-uber-weitere-strecken-zu-reden-bvg-chef-erteilt-u-bahn-traumen-des-senats-eine-absage-13955360.html (Baustart: Dezember 2025, Bauzeit: rund vier Jahre)
+#: by: https://www.nd-aktuell.de/artikel/1192535.muehlendammwehr-neuer-wanderweg-fuer-spreewelse-in-berlin-mitte.html
+#: by: https://entwicklungsstadt.de/waisentunnel-berlin-ersatzneubau-sichert-stabilitaet-des-u-bahnnetzes/
+#: by: https://www.nd-aktuell.de/artikel/1194529.u-bahn-u-mexikoplatz-baustart-in-elf-monaten.html (Planfeststellungsbeschluss noch im Oktober 2026?)
+#: by: https://www.bahninfo-forum.de/read.php?9,818927,840301#msg-840301 (Baustart ab Dez 2025 für vier Jahre)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/waisentunnel
+#: by: https://bvg-projekt.de/projekte/ersatzneubau-waisentunnel-spreeunterquerung-berlin-mitte-bim-pilot-1-0/
+#: by: https://www.morgenpost.de/berlin/article410990337/u-bahn-tunnel-unter-der-spree-bvg-darf-wichtige-verbindung-bauen.html
+#: by: https://www.entwicklungsstadt.de/tunnel-unter-der-spree-baurecht-fuer-eine-der-wichtigsten-verbindungen-der-bvg/ (Frühjahr 2025 bis 2030)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/geheimer-u-bahn-tunnel-der-bvg-berlin-bekommt-grossbaustelle-mitten-in-der-spree-li.10015244 (Bauarbeiten beginnen auf der Südseite)
+#: by: https://www.nd-aktuell.de/artikel/1197016.bvg-u-bahn-baurecht-fuer-den-waisentunnel.html
+#: by: https://www.tagesspiegel.de/berlin/wichtige-verbindung-des-berliner-u-bahn-netzes-endlich-baurecht-fur-den-neuen-waisentunnel-15163355.html
+#: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt, Littenstr. Gehweg frei)
+#: last_checked: 2026-02-02 (zumindest Littenstr. ist gesperrt)
+#: check_frequency: 30d
+#: next_check: 2030-12-31
+Littenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11139,12243 11155,12184
+# 
 # REMOVED (keine Bauarbeiten mehr)
 # REMOVED --- #: next_check_id: HEINRICHHEINE-2025
 # REMOVED --- #: source_id: viz2021:13.41769,52.51364, (bis 31.12.2025)
@@ -525,7 +558,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-01-16
+#: last_checked: 2026-02-02
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -1255,6 +1288,20 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # REMOVED (hier nicht mehr bzw. integriert in die Moltkestraßenbrückensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
 ### Prenzlauer Berg ###
+# 
+#: source_id: bvg2024:142#HIM_FREETEXT_316063 (kein Endedatum)
+#: source_id: bvg2024:200#HIM_FREETEXT_316065 (kein Endedatum)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum)
+#: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
+#: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
+#: also_indoor: traffic (T,G)
+#: last_checked: 2026-02-02 vvv
+#: check_frequency: 14d vvv
+Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork; 11652,13564 11706,13635 11820,13804
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork 11785,13625 11762,13619 11706,13635
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/scale-b%C3%BCroneubau-storkower-stra%C3%9Fe-142-146.864/page-4#post-24657 --- # REMOVED (ja) --- #: XXX wird sich auch die Qualität der Fahrbahn verbessern? --- #: osm_watch: way id="1184177622" version="3" --- #: osm_watch: way id="804682311" version="4" --- #: osm_watch: note 4734732 6 --- #: priority: #C --- #: last_checked: 2025-08-21 (architektur-urbanistik) --- #: check_frequency: 30d --- # REMOVED --- #: check_frequency: 60d --- Storkower Str. [Gewerbegebiet]: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg passierbar	q4::inwork 13736,14192 13636,14130
 # REMOVED (hier offen) --- Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13636,14130 13707,14021

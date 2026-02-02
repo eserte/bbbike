@@ -1845,6 +1845,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        {
          'data' => '#: by: https://www.stadtrand-nachrichten.de/griebnitzsee-steglitz-zehlendorf-berlin/
+#: by: https://www.entwicklungsstadt.de/griebnitzsee-potsdam-startet-planungsprozess-fuer-uferflaechen/
 	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9116,-737 -9254,-656 -9358,-537 -9375,-502 -9445,-377 -9585,-277 -9795,-230
 	2::temp -8084,-1460 -8133,-1474 -8260,-1461
 ',
@@ -6129,7 +6130,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2026-01-20 (traffic) vvv
+#: last_checked: 2026-02-02 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
 #: next_check: 2026-05-18 (VIZ-Verkehrsmeldung) vvv
@@ -7596,7 +7597,8 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-01-19 vvv
+#: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
+#: last_checked: 2026-02-02 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8691,7 +8693,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="4"
-#: last_checked: 2026-01-13 (traffic)
+#: last_checked: 2026-02-02 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -8949,7 +8951,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-01-18 (daf)
+#: last_checked: 2026-02-02
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9232,12 +9234,12 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-01-24
+#: last_checked: 2026-02-02 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
          'id' => 4436,
-         'text' => 'Schulweg: Durchgang wegen Bauarbeiten versperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Schulweg: Durchgang wegen Bauarbeiten offiziell versperrt (aber Bauzaun kann weggeschoben sein), Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9791,7 +9793,7 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
        },
        {
          'data' => '#: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2026-01-20 (traffic) vvv
+#: last_checked: 2026-02-02 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q4::inwork 6124,5983 6226,5995 6318,6006
 Kissinger Str.	q3::inwork 6226,5995 6213,6135
@@ -9990,6 +9992,17 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'text' => 'Zoppoter Str. und Borkumer Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis 31.03.2026 17:00',
          'type' => 'handicap',
          'until' => 1774969200
+       },
+       undef,
+       {
+         'data' => '#: source_id: LMS-BR:397835/72 viz2021:13.32184,52.5019,02.02.2026,07:00 (bis 22.03.2026)
+	q4::inwork 4819,10355 4838,10597
+',
+         'from' => 1769925600,
+         'id' => 4530,
+         'text' => 'Knesebeckstr.: Bauarbeiten zwischen Kurfürstendamm und Lietzenburger Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.02.2026 07:00 bis 22.03.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1774195200
        }
      
 );
