@@ -8529,7 +8529,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
-#: last_checked: 2026-01-21 (website check) vvv
+#: last_checked: 2026-02-03 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -9137,7 +9137,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-31 vvv
+#: last_checked: 2026-02-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9460,7 +9460,7 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-01-25
+#: last_checked: 2026-02-03
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9993,7 +9993,21 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'type' => 'handicap',
          'until' => 1774969200
        },
-       undef,
+       {
+         'data' => '#: by: https://marzahn-hellersdorf.com/sperrung-wuhletalstrasse-fuer-rad-und-autoverkehr/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdctk23ius26
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreift74aki4cefjeuaaglkozrz3xw2z6jx2ehon6fdl4gp4vgcw4jni@jpeg
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260203
+#: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026) (removed)
+	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
+	2::inwork 20728,17670 20801,17821
+',
+         'from' => 1770073200,
+         'id' => 4529,
+         'text' => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich vom 4.2.2026 bis 6.2.2026',
+         'type' => 'handicap',
+         'until' => 1770418799
+       },
        {
          'data' => '#: source_id: LMS-BR:397835/72 viz2021:13.32184,52.5019,02.02.2026,07:00 (bis 22.03.2026)
 	q4::inwork 4819,10355 4838,10597
