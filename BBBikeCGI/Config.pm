@@ -3,19 +3,18 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2021,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2021,2023,2024,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeCGI::Config;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 sub the_config {
     my(undef, $output_for, $ns) = @_;
@@ -67,6 +66,9 @@ sub the_config {
       bbbike_images              => $var->('bbbike_images'),
       bbbike_html                => $var->('bbbike_html'),
       use_heap                   => $bool_or_undef->($var->('StrassenNetz::use_heap')),
+      use_winter_optimization    => $bool->($var->('use_winter_optimization')),
+      winter_hardness            => $var->('winter_hardness'),
+      winter_no_RW1              => $bool->($var->('winter_no_RW1')),
      };
 }
 

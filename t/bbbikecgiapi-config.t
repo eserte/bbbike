@@ -110,6 +110,9 @@ my $version_rx = qr{^v?\d+\.};
 	 use_heap                   => undef,
 	 use_select		    => JSON::XS::true,
 	 use_utf8		    => JSON::XS::true,
+	 use_winter_optimization    => JSON::XS::false,
+	 winter_hardness            => undef,
+	 winter_no_RW1              => JSON::XS::false,
 	 with_cat_display	    => JSON::XS::false,
 	 with_comments		    => JSON::XS::true
 	};

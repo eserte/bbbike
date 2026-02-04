@@ -64,6 +64,9 @@ use BBBikeTest qw(eq_or_diff);
 	 use_utf8		    => JSON::XS::true,
 	 with_cat_display	    => JSON::XS::false,
 	 with_comments		    => JSON::XS::true,
+	 use_winter_optimization    => JSON::XS::false,
+	 winter_hardness            => undef,
+	 winter_no_RW1              => JSON::XS::false,
 	}, 'config in bbbike-test.cgi.config, for json';
 }
 
