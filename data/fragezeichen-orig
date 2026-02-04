@@ -21,8 +21,8 @@
 #: source_id: 2147344783 (Leitungsarbeiten bis 4.12.2020) (inaktiv)
 #: source_id: 2147345057 (Leitungsarbeiten bis 30.4.2021) (inaktiv)
 #: source_id: viz2021:13.313808,52.486798,04.11.2019,14:00 (Leitungsarbeiten bis 4.11.2021) (inaktiv)
-#: osm_watch: way id="4387786" version="35"
-#: osm_watch: way id="1117691909" version="6"
+#: osm_watch: way id="4387786" version="36"
+#: osm_watch: way id="1117691909" version="7"
 #: osm_watch: way id="1470248762" version="1"
 #: XXX laut rbb Arbeiten bis 25.10.2021, mittlerweile bis 30.8.2022
 # REMOVED --- #: also_indoor: traffic (H,G)
@@ -9158,7 +9158,7 @@ Donaustr.: modaler Filter geplant	?::projected 13147,8056 13236,7970 13246,7961
 #: XXX noch hängen keine Radfahrer-frei-Schilder, bleibt das so oder wird es noch vorbereitet?
 #: osm_watch: way id="155605363" version="24"
 #: last_checked: 2025-12-22
-#: check_frequency: 45d
+#: check_frequency: 60d
 # REMOVED (vermutlich unabhängig davon) --- #: next_check: 2025-04-29 (VIZ-Verkehrsmeldung zur Roseggerstr.)
 Wilhelm-Busch-Str.: Einbahnstraße geplant	?::projected 13205,8126 13312,8026
 # 
@@ -9826,6 +9826,7 @@ Verlängerung des Uferwegs?	? 22239,2644 22197,2612
 # 
 #: next_check_id: NAGASAKIPLATZ-2026
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
+#: last_checked: 2026-02-03 (Tsp)
 #: next_check: 2027-03-31
 Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Ampelanlage wird wohl verschoben	? -8483,-1530 -8469,-1541 -8447,-1553
 # 
@@ -11083,7 +11084,7 @@ A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21861,-2154 2166
 #: next_check: 2026-03-31 vvv
 # REMOVED --- Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 12797,1277 12918,1312 12960,1025 12605,846 12539,1049
 # REMOVED (laut osm fertiggestellt) --- #: osm_watch: way id="946008572" version="4" --- An den Buckower Feldern: noch nicht gebaut oder freigegeben	?::inwork 12727,1074 12656,1019
-#: osm_watch: way id="946008573" version="7"
+#: osm_watch: way id="946008573" version="8"
 In den Bauerngärten: noch nicht gebaut oder freigegeben	?::inwork 12713,962 12772,1019 12868,1085
 #: osm_watch: way id="1420324059" version="1"
 #: XXX: hier wird es möglicherweise eine Verbindung zum Buckower Damm geben

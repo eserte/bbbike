@@ -51519,12 +51519,14 @@ EOF
      },
      { from  => $isodate2epoch->("2026-01-05 00:00:00"),
        until => $isodate2epoch->("2027-03-31 23:59:59"),
-       text  => 'Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Umbauarbeiten im Kreuzungsbereich, evtl. sind auch Radfahrer von den Sperrungen betroffen, 06.01.2026 bis 31.03.2027',
+       text  => 'Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Umbauarbeiten im Kreuzungsbereich, evtl. sind auch Radfahrer von den Sperrungen betroffen, 06.01.2026 bis 31.03.2027 (Stand Anfang Februar 2026: Bauarbeiten werden witterungsbedingt verschoben)',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: NAGASAKIPLATZ-2026
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
+#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/frost-posse-in-babelsberg-busse-fahren-wochenlang-umleitung--trotz-verschobener-baustelle-15213887.html
 #: note: hier möglicherweise ein kürzerer Abschnitt?
+#: last_checked: 2026-02-03 (Tsp)
 August-Bebel-Str.	q3::inwork -8444,-1691 -8469,-1541
 August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
 Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
@@ -51652,6 +51654,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdctk23ius26
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreift74aki4cefjeuaaglkozrz3xw2z6jx2ehon6fdl4gp4vgcw4jni@jpeg
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260203
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdz6on5ijc2u
 #: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026) (removed)
 	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
 	2::inwork 20728,17670 20801,17821
