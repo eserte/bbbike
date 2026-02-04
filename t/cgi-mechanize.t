@@ -76,6 +76,7 @@ if ($WWW::Mechanize::VERSION <= 2.20) {
 # XXX exchanged $self->content by $self->response
 # keep strange indentation to minimize diff against original
 # https://github.com/libwww-perl/WWW-Mechanize/issues/225
+no warnings 'redefine';
 *WWW::Mechanize::_extract_forms = sub {
     my $self = shift;
 
