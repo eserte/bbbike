@@ -229,6 +229,16 @@ for my $type (keys %str) {
 
 my $net = {};
 
+if ($do_display) {
+    print <<EOF;
+#: title: Winteroptimization (type $winter_hardness)
+#: line_arrow: last
+#: line_do_offset: 1
+#:
+# 
+EOF
+}
+
 while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
     while(my($k2,$cat) = each %$v) {
 	#my($xxx) = $net{"s"}->get_street_record($k1, $k2); next if $xxx->[Strassen::NAME] !~ /admiralbrücke/i;#XXX
@@ -266,7 +276,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		if (defined $rw) {
 		    if ($rw =~ /^RW(2|8|)$/) {
 			$res = 1;
-			push @reason, "Radweg";
+			push @reason, "benutzungspflichtiger Radweg";
 		    }
 		}
 	    }
@@ -361,9 +371,8 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 			 '#ff4400',
 			 '#ffaa00',
 			 '#f6ff00',
-			 '#c7ff00',
-			 '#00ff26',
-			 #'#00ffe1',
+			 '#60c000',
+			 '#00c000',
 			 '#0000ff',
 			]->[$cat];
 	    print "$cat " . join(", ", @reason) . "\t$color; $k1 $k2\n";
