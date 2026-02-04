@@ -23,15 +23,21 @@ BEGIN {
     }
 }
 
+use File::Temp qw(tempdir);
+
 use Strassen::Core;
 use Strassen::StrassenNetz;
+use Strassen::Util;
 my $make_net = eval 'use BBBikeXS; 1' ? 'make_net_XS' : 'make_net';
 
-use BBBikeTest qw(using_bbbike_test_data);
+use BBBikeTest qw(using_bbbike_test_data my_note);
 
 plan 'no_plan';
 
 using_bbbike_test_data;
+
+my $cachedir = tempdir("bbbike-strassennetz-heavy-cache-XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
+$Strassen::Util::cachedir = $cachedir;
 
 # Net with test data
 my $s = Strassen->new("strassen");
@@ -131,12 +137,13 @@ $s_net->$make_net;
     is $res->{side}, 'l';
 }
 
-{
+for my $use_cache (0, 1, 1) {
+    my_note "make_net_cyclepath paths: use cache: $use_cache";
     my $radwege_exact = Strassen->new("radwege_exact");
     my $cyclepath_net = StrassenNetz->new($s);
-    $cyclepath_net->make_net_cyclepath($radwege_exact);
+    $cyclepath_net->make_net_cyclepath($radwege_exact, UseCache => $use_cache);
     my $cyclepath_ignore_RW1_net = StrassenNetz->new($s);
-    $cyclepath_ignore_RW1_net->make_net_cyclepath($radwege_exact, IgnoreCyclePath => 1);
+    $cyclepath_ignore_RW1_net->make_net_cyclepath($radwege_exact, UseCache => $use_cache, IgnoreCyclePath => 1);
     for my $def (
 	[$cyclepath_net,            'normal net'],
 	[$cyclepath_ignore_RW1_net, 'ignore cycle path net'],
@@ -148,9 +155,13 @@ $s_net->$make_net;
 	is $net->{Net}->{"9133,9343"}->{"9104,9262"},    'N',     "$name: residential street";
 	is $net->{Net}->{"9199,11166"}->{"9162,11286"},  'H_RW',  "$name: secondary street with cycle path or lane (here: lane)";
 	if ($net == $cyclepath_net) {
-	    is $net->{Net}->{"22162,1067"}->{"22208,1103"},  'H_RW',  "$name: secondary street with cycle path or lane (here: path)";
+	    is $net->{Net}->{"15361,12071"}->{"15670,12022"}, 'H_RW', "$name: primary street with cycle path or lane (here: path)";
+	    is $net->{Net}->{"15670,12022"}->{"15361,12071"}, 'H_RW', "$name: primary street with cycle path or lane (here: path)";
+	    is $net->{Net}->{"22162,1067"}->{"22208,1103"},   'H_RW', "$name: secondary street with cycle path or lane (here: path)";
 	} else {
-	    is $net->{Net}->{"22162,1067"}->{"22208,1103"},  'H',  "$name: secondary street with cycle lane";
+	    is $net->{Net}->{"15361,12071"}->{"15670,12022"}, 'H',    "$name: primary street without cycle lane";
+	    is $net->{Net}->{"15670,12022"}->{"15361,12071"}, 'H',    "$name: primary street without cycle lane";
+	    is $net->{Net}->{"22162,1067"}->{"22208,1103"},   'H',    "$name: secondary street without cycle lane";
 	}
     }
 }
