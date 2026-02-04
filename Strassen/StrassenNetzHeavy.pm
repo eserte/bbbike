@@ -1,12 +1,11 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2017,2023 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2017,2023,2026 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package Strassen::StrassenNetzHeavy;
@@ -262,13 +261,15 @@ sub make_net_cat {
 
 # Create a special cycle path/street category net
 # Categories created are:
-#    H     => H, B or HH without cycle path and bus lane
-#    H_RW  => same with cycle path
+#    H     => H, B or HH without cycle path/lane and bus lane
+#    H_RW  => same with cycle path/lane
 #    H_Bus => same with bus lane
-#    N     => NH, N or NN without cycle path and bus lane
-#    N_RW  => same with cycle path
+#    N     => NH, N or NN without cycle path/lane and bus lane
+#    N_RW  => same with cycle path/lane
 #    N_Bus => same with bus lane
-# %args: may be UseCache => $boolean
+# %args:
+#    UseCache => $boolean
+#    IgnoreCyclePath => $boolean (means: just cycle lanes used)
 # Note: former versions of this function had a "$type" argument in
 #       between, which is not needed and is now removed.
 ### AutoLoad Sub
@@ -276,13 +277,16 @@ sub make_net_cyclepath {
     my($self, $cyclepath, %args) = @_;
 
     my $cachefile;
-    my $cacheable = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
+    my $cacheable          = defined $args{UseCache} ? $args{UseCache} : $Strassen::Util::cacheable;
+    my $ignore_cycle_path  = $args{IgnoreCyclePath};
+    my $cacheprefix;
     if ($cacheable) {
 	#XXXmy @src = $self->sourcefiles;
 	my @src = $self->dependent_files;
 	push @src, $cyclepath->dependent_files;
 	$cachefile = $self->get_cachefile;
-	my $net = Strassen::Util::get_from_cache("net_cyclepath_$cachefile", \@src);
+	$cacheprefix = "net_cyclepath_" . ($ignore_cycle_path ? "ignoreRW1_" : "") . "$cachefile";
+	my $net = Strassen::Util::get_from_cache($cacheprefix, \@src);
 	if (defined $net) {
 	    $self->{Net} = $net;
 	    if ($VERBOSE) {
@@ -310,8 +314,11 @@ sub make_net_cyclepath {
 	for my $i (0 .. $#kreuzungen-1) {
 	    my $str_cat   = ($cat =~ /^(H|HH|B)$/ ? 'H' : 'N');
 	    if (exists $c_net->{$kreuzungen[$i]}{$kreuzungen[$i+1]}) {
-		if ($c_net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} eq 'RW5') {
+		my $cat = $c_net->{$kreuzungen[$i]}{$kreuzungen[$i+1]};
+		if ($cat eq 'RW5') {
 		    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat."_Bus";
+		} elsif ($ignore_cycle_path && $cat =~ /^RW[1289]$/) {
+		    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat; # no RW!
 		} else {
 		    $net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat."_RW";
 		}
@@ -319,8 +326,11 @@ sub make_net_cyclepath {
 		$net->{$kreuzungen[$i]}{$kreuzungen[$i+1]} = $str_cat;
 	    }
 	    if (exists $c_net->{$kreuzungen[$i+1]}{$kreuzungen[$i]}) {
-		if ($c_net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} eq 'RW5') {
+		my $cat = $c_net->{$kreuzungen[$i+1]}{$kreuzungen[$i]};
+		if ($cat eq 'RW5') {
 		    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $str_cat."_Bus";
+		} elsif ($ignore_cycle_path && $cat =~ /^RW[1289]$/) {
+		    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $str_cat; # no RW!
 		} else {
 		    $net->{$kreuzungen[$i+1]}{$kreuzungen[$i]} = $str_cat."_RW";
 		}
@@ -331,7 +341,7 @@ sub make_net_cyclepath {
     }
 
     if ($cacheable) {
-	Strassen::Util::write_cache($net, "net_cyclepath_$cachefile", -modifiable => 1);
+	Strassen::Util::write_cache($net, $cacheprefix, -modifiable => 1);
 	if ($VERBOSE) {
 	    warn "Wrote cache ($cachefile)\n";
 	}

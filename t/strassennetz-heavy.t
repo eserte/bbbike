@@ -34,7 +34,8 @@ plan 'no_plan';
 using_bbbike_test_data;
 
 # Net with test data
-my $s_net = StrassenNetz->new(Strassen->new("strassen"));
+my $s = Strassen->new("strassen");
+my $s_net = StrassenNetz->new($s);
 $s_net->$make_net;
 
 {
@@ -128,6 +129,30 @@ $s_net->$make_net;
     my($res) = $s_net->next_neighbors('14794,10844', '15263,10747');
     is $res->{coord}, '15279,10862';
     is $res->{side}, 'l';
+}
+
+{
+    my $radwege_exact = Strassen->new("radwege_exact");
+    my $cyclepath_net = StrassenNetz->new($s);
+    $cyclepath_net->make_net_cyclepath($radwege_exact);
+    my $cyclepath_ignore_RW1_net = StrassenNetz->new($s);
+    $cyclepath_ignore_RW1_net->make_net_cyclepath($radwege_exact, IgnoreCyclePath => 1);
+    for my $def (
+	[$cyclepath_net,            'normal net'],
+	[$cyclepath_ignore_RW1_net, 'ignore cycle path net'],
+    ) {
+	my($net, $name) = @$def;
+	is $net->{Net}->{"10020,11262"}->{"9984,11270"}, 'H_Bus', "$name: secondary street with bus lane";
+	is $net->{Net}->{"9984,11270"}->{"10020,11262"}, 'H',     "$name: secondary street without anything";
+	is $net->{Net}->{"9229,8785"}->{"9227,8890"},    'H',     "$name: primary street without anything (still \"H\" is used)";
+	is $net->{Net}->{"9133,9343"}->{"9104,9262"},    'N',     "$name: residential street";
+	is $net->{Net}->{"9199,11166"}->{"9162,11286"},  'H_RW',  "$name: secondary street with cycle path or lane (here: lane)";
+	if ($net == $cyclepath_net) {
+	    is $net->{Net}->{"22162,1067"}->{"22208,1103"},  'H_RW',  "$name: secondary street with cycle path or lane (here: path)";
+	} else {
+	    is $net->{Net}->{"22162,1067"}->{"22208,1103"},  'H',  "$name: secondary street with cycle lane";
+	}
+    }
 }
 
 __END__
