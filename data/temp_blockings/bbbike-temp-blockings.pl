@@ -25424,8 +25424,9 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1706034582, # undef, # 1444844659, # undef, # XXX
-       text  => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt, möglicherweise seit dem 23.1.2024 wieder offen',
+       until => undef, # 1706034582, # undef, # 1444844659, # undef, # XXX
+#      text  => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt, möglicherweise seit dem 23.1.2024 wieder offen',
+       text  => 'Döberitzer Verbindung: wegen Bauarbeiten vor dem Stadtbad Tiergarten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
 #       source_id => 'wosch',
        data  => <<EOF,
@@ -25440,10 +25441,16 @@ EOF
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/baederbetriebe-wollen-halle-anfang-2024-eroeffnen_a399828
 #: by: https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=754974#post754974 (offen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/stadtbad-tiergarten-hat-nach-vier-jahren-wieder-offen_a405684
-#: osm_watch: way id="462738551" version="21"
-#: osm_watch: way id="848019125" version="6"
-#: osm_watch: note 4030867 1
+#: by: https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=792320#post792320 (neue Bauarbeiten)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/25-meter-becken-und-sonnenterrasse-moabit-bekommt-ein-freibad--baustart-steht-fest-12987601.html (Eröffnung 2026)
+#: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-bauarbeiten-fuer-den-aussenbereich-gehen-voran/
+# REMOVED --- #: osm_watch: way id="848019125" version="6" --- #: osm_watch: note 4030867 1
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023 --- #: last_checked: 2023-12-29 --- #: next_check: 2024-01-23
+#: osm_watch: way id="462738551" version="29"
+#: osm_watch: way id="1242653753" version="1"
+#: osm_watch: note 2694532 12
+#: last_checked: 2026-02-04 (daf)
+#: check_frequency: 90d
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 EOF
@@ -48932,7 +48939,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-01-29 (traffic) vvv
+#: last_checked: 2026-02-04 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -51644,7 +51651,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-02-03 00:00:00"), # 1769295600, # 2026-01-25 00:00
-       until => $isodate2epoch->("2026-02-06 23:59:59"), # 1769711583, # $isodate2epoch->("2026-03-31 23:59:59"), # 1769814000, # 2026-01-31 00:00
+       until => 1770222477, # $isodate2epoch->("2026-02-06 23:59:59"), # 1769711583, # $isodate2epoch->("2026-03-31 23:59:59"), # 1769814000, # 2026-01-31 00:00
 #      text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., vom 26.01.2026 bis 30.01.2026',
 #      text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich bis Ende März 2026',
        text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich vom 4.2.2026 bis 6.2.2026',
@@ -51655,6 +51662,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreift74aki4cefjeuaaglkozrz3xw2z6jx2ehon6fdl4gp4vgcw4jni@jpeg
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260203
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdz6on5ijc2u
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdzhvgzya22m (witterungsbedingte Verschiebung, noch kein neuer Termin)
 #: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026) (removed)
 	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
 	2::inwork 20728,17670 20801,17821
