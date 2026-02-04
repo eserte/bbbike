@@ -1,3 +1,4 @@
+// -*- coding: utf-8 -*-
 // bbbike_start.js
 // (c) 2001-2002,2009,2010 Slaven Rezic. All rights reserved.
 // See comment in bbbike.cgi regarding x/ygridwidth
@@ -335,13 +336,13 @@ function locate_me() {
 
 function locate_me_error(error) {
   vis("locateme_wait", "hide");
-  var msg = "Es konnte keine Positionierung durchgeführt werden. ";
+  var msg = "Es konnte keine Positionierung durchgefÃ¼hrt werden. ";
   if (error.code == 1) {
-    msg += "Möglicher Grund: Ortungsdienste sind ausgeschaltet. Bitte in den Einstellungen des Geräts aktivieren!";
+    msg += "MÃ¶glicher Grund: Ortungsdienste sind ausgeschaltet. Bitte in den Einstellungen des GerÃ¤ts aktivieren!";
   } else if (error.code == 2) {
     msg += "Die Position konnte nicht ermittelt werden.";
   } else if (error.code == 3) {
-    msg += "Möglicher Grund: Zeitablauf bei der Ermittlung der Position";
+    msg += "MÃ¶glicher Grund: Zeitablauf bei der Ermittlung der Position";
   } else {
     msg += "Unbekannter Grund, Fehler-Code=" + error.code;
   }
@@ -356,7 +357,7 @@ function locate_me_cb(position) {
 function locate_me_res(res) {
   vis("locateme_wait", "hide");
   if (!res) {
-    alert("Die Positionierung konnte nicht durchgeführt werden.");
+    alert("Die Positionierung konnte nicht durchgefÃ¼hrt werden.");
   } else if (!res.bbbikepos) {
     //alert("Es konnte keine Position gefunden werden.");
     redirect_to_bbbikeorg(res.origlon, res.origlat);
@@ -415,7 +416,7 @@ function redirect_to_bbbikeorg(lng, lat) {
   call_bbbikeorg_location(lng, lat, function(city) {
       window.location = "http://www.bbbike.org/" + city + "/?appid=bbbikede&startc_wgs84=" + lng + "," + lat;
     }, function() {
-      alert("Die Position " + lng + "," + lat + " wird von bbbike.de und bbbike.org nicht unterstützt.");
+      alert("Die Position " + lng + "," + lat + " wird von bbbike.de und bbbike.org nicht unterstÃ¼tzt.");
     });
 }
 

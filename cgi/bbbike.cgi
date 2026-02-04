@@ -111,7 +111,7 @@ use vars qw($VERSION $VERBOSE
 	    $use_region_image
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr $outer_berlin_subplaces_qr
 	    $warn_message $use_utf8 $data_is_wgs84 $osm_data
-	    $bbbike_start_js_version $bbbike_css_version
+	    $bbbike_start_js_version $bbbike_result_js_version $bbbike_css_version
 	    $use_file_cache $cache_entry
 	   );
 # XXX Currently "cooked" data helps somewhat in performance (no need
@@ -847,7 +847,8 @@ $nice_berlinmap = 0;
 $nice_abcmap    = 0;
 $need_zoom_hack = undef; # will be defined in _zoom_hack_init
 
-$bbbike_start_js_version = '1.25';
+$bbbike_start_js_version = '1.26';
+$bbbike_result_js_version = '1.18';
 $bbbike_css_version = '1.02';
 
 use vars qw(@b_and_p_plz_multi_files %is_usable_without_strassen %same_single_point_optimization);
@@ -6813,7 +6814,7 @@ sub gather_weather_proc {
 
 sub bbbike_result_js {
     [
-     { -src => $bbbike_html . "/bbbike_result.js?v=1.17" },
+     { -src => $bbbike_html . "/bbbike_result.js?v=$bbbike_result_js_version" },
      { -code => qq{set_bbbike_images_dir_in_bbbike_result('$bbbike_images')} },
     ];
 }

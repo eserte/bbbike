@@ -1,4 +1,5 @@
-// (c) 2003,2004,2005,2007,2008,2010,2011,2012,2013,2015,2019 Slaven Rezic. All rights reserved.
+// -*- coding: utf-8 -*-
+// (c) 2003,2004,2005,2007,2008,2010,2011,2012,2013,2015,2019,2026 Slaven Rezic. All rights reserved.
 
 var bbbike_images_dir;
 
@@ -22,7 +23,7 @@ function test_temp_blockings_set() {
 	    return true;
 	}
     }
-    alert("Bitte mindestens eine Auswahlbox ausw‰hlen");
+    alert("Bitte mindestens eine Auswahlbox ausw√§hlen");
     return false;
 }
 
@@ -162,19 +163,19 @@ function reset_form(default_speed, default_cat, default_quality,
 // XXX The texts here should be duplicated in help.html!!!
 function show_help(what) {
     if (what == "winteroptimization") {
-	alert("Erfahrungsgem‰ﬂ werden bei Schnee und Eis Hauptstraﬂen am ehesten ger‰umt. Deshalb wird bei dieser Einstellung verst‰rkt auf Hauptstraﬂen optimiert und Nebenstraﬂen gemieden. Weitere Eigenschaften flieﬂen in eine schlechtere Bewertung einer Straﬂe ein: benutzungspflichtige Radwege, Kopfsteinpflasterstraﬂen, Straﬂenbahnen auf der Fahrbahn und Br¸cken.");
+	alert("Erfahrungsgem√§√ü werden bei Schnee und Eis Hauptstra√üen am ehesten ger√§umt. Deshalb wird bei dieser Einstellung verst√§rkt auf Hauptstra√üen optimiert und Nebenstra√üen gemieden. Weitere Eigenschaften flie√üen in eine schlechtere Bewertung einer Stra√üe ein: benutzungspflichtige Radwege, Kopfsteinpflasterstra√üen, Stra√üenbahnen auf der Fahrbahn und Br√ºcken.");
     } else if (what == "fragezeichen") {
 	alert("Bei Wahl dieser Einstellungen werden auch Stra\u00dfen und Wege, deren Eignung f\u00fcr Radfahrer unbekannt ist, in die Suche mit einbezogen.");
     } else if (what == "") {
 	alert("Es wurde kein Hilfethema angegeben");
     } else {
-	alert("Keine Hilfe f¸r das Thema " + what);
+	alert("Keine Hilfe f√ºr das Thema " + what);
     }
 }
 
 function show_help_en(what) {
     if (what == "winteroptimization") {
-	alert("Erfahrungsgem‰ﬂ werden bei Schnee und Eis Hauptstraﬂen am ehesten ger‰umt. Deshalb wird bei dieser Einstellung verst‰rkt auf Hauptstraﬂen optimiert und Nebenstraﬂen gemieden. Weitere Eigenschaften flieﬂen in eine schlechtere Bewertung einer Straﬂe ein: benutzungspflichtige Radwege, Kopfsteinpflasterstraﬂen, Straﬂenbahnen auf der Fahrbahn und Br¸cken.");
+	alert("Based on experience, main roads are the most likely to be cleared of snow and ice. Therefore, with this setting, routing is more strongly optimized for main roads and avoids side streets. Other factors that lead to a lower rating for a road include mandatory cycle paths, cobblestone surfaces, tram tracks on the roadway, and bridges.");
     } else if (what == "fragezeichen") {
 	alert("If you choose this option then streets with unknown suitability for cyclists will also be used in the route search.");
     } else if (what == "") {
