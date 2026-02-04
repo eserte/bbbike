@@ -54,7 +54,8 @@ EXTRA_MISCSRC_FILES=	bbd2esri \
 			bbbike_cgi_clean_expired_cache.pl \
 			cron-wrapper \
 			update-modperl-reload-touchfile.pl \
-			icao_metar.pl
+			icao_metar.pl \
+			grepstrassen
 EXTRA_MISC_FILES=	gpx.xsd kml21.xsd bbbikecgires.kwalify bbbikecgires.rnc kreisfahrt_anyyear/kreisfahrt_anyyear.png
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
@@ -627,6 +628,9 @@ prepare-bbbike-dist-data-datadir:
 
 prepare-bbbike-dist-data-datadir-additional:
 	cp -pf ${BBBIKE_ROOT_DIR}/data/*-cooked \
+	    ${CURDIR}/BBBike/data/
+# needed for winter_optimization.pl (busroutes currently only available in -orig variant)
+	cp -pf ${BBBIKE_ROOT_DIR}/data/comments_misc-orig \
 	    ${CURDIR}/BBBike/data/
 
 # Most of temp_blockings is not yet in MANIFEST, so copy is necessary
