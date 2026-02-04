@@ -105,7 +105,7 @@ use vars qw($VERSION $VERBOSE
 	    $bbbike_temp_blockings_file $bbbike_temp_blockings_optimized_file
 	    @temp_blocking $temp_blocking_epoch
 	    $use_cgi_compress_gzip $use_bbbikedraw_pdf_compress $max_matches
-	    $use_winter_optimization $winter_hardness
+	    $use_winter_optimization $winter_hardness $winter_no_RW1
 	    $with_lang_switch
 	    $newstreetform_encoding
 	    $use_region_image
@@ -781,7 +781,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.016';
+$VERSION = '11.017';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -3662,7 +3662,10 @@ sub search_coord {
 		my $str = get_streets();
 		$radwege_strcat_net = StrassenNetz->new($str);
 		$radwege_strcat_net->make_net_cyclepath
-		    (get_cyclepath_streets(), UseCache => 1);
+		    (get_cyclepath_streets(),
+		     UseCache => 1,
+		     IgnoreCyclePath => ($winter_no_RW1 && $use_winter_optimization && (defined $q->param('pref_winter') && $q->param('pref_winter') ne '')),
+		    );
 	    }
 	    $penalty = { "H"     => 4,
 			 "H_Bus" => ($pref_cat eq 'N_RW1' ? 4 : 1),

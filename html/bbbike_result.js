@@ -163,7 +163,7 @@ function reset_form(default_speed, default_cat, default_quality,
 // XXX The texts here should be duplicated in help.html!!!
 function show_help(what) {
     if (what == "winteroptimization") {
-	alert("Erfahrungsgemäß werden bei Schnee und Eis Hauptstraßen am ehesten geräumt. Deshalb wird bei dieser Einstellung verstärkt auf Hauptstraßen optimiert und Nebenstraßen gemieden. Weitere Eigenschaften fließen in eine schlechtere Bewertung einer Straße ein: benutzungspflichtige Radwege, Kopfsteinpflasterstraßen, Straßenbahnen auf der Fahrbahn und Brücken.");
+	alert("Erfahrungsgemäß werden bei Schnee und Eis Hauptstraßen am ehesten geräumt. Deshalb wird bei dieser Einstellung verstärkt auf Hauptstraßen optimiert und Nebenstraßen gemieden. Weitere Eigenschaften können in eine schlechtere Bewertung einer Straße einfließen: Hochbordradwege, Kopfsteinpflasterstraßen, Straßenbahnen auf der Fahrbahn und Brücken.");
     } else if (what == "fragezeichen") {
 	alert("Bei Wahl dieser Einstellungen werden auch Stra\u00dfen und Wege, deren Eignung f\u00fcr Radfahrer unbekannt ist, in die Suche mit einbezogen.");
     } else if (what == "") {
@@ -175,7 +175,7 @@ function show_help(what) {
 
 function show_help_en(what) {
     if (what == "winteroptimization") {
-	alert("Based on experience, main roads are the most likely to be cleared of snow and ice. Therefore, with this setting, routing is more strongly optimized for main roads and avoids side streets. Other factors that lead to a lower rating for a road include mandatory cycle paths, cobblestone surfaces, tram tracks on the roadway, and bridges.");
+	alert("Based on experience, main roads are the most likely to be cleared of snow and ice. Therefore, with this setting, routing is more strongly optimized for main roads and avoids side streets. Other factors which may lead to a lower rating for a road include cycle paths, cobblestone surfaces, tram tracks on the roadway, and bridges.");
     } else if (what == "fragezeichen") {
 	alert("If you choose this option then streets with unknown suitability for cyclists will also be used in the route search.");
     } else if (what == "") {

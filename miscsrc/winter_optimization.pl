@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2010,2016,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2010,2016,2024,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -87,6 +86,34 @@ my %usability_desc =
 	do_cobblestone_opt => 0,
 	do_tram_opt        => 0,
        )
+     : $winter_hardness eq 'jan_2026' # some snowy days, freezing rain
+     ? (cat_to_usability => { NN => 1,
+			      N  => 4,
+			      NH => 6,
+			      H  => 6,
+			      HH => 6,
+			      B  => 6,
+			    },
+	do_kfz_adjustment    => 1,
+	do_living_street_opt => 1,
+	do_busroute_opt      => 1,
+	do_cobblestone_opt   => 0,
+	do_tram_opt          => 0,
+       )
+     : $winter_hardness eq 'feb_2026' # icy paths, fresh snow
+     ? (cat_to_usability => { NN => 1,
+			      N  => 3,
+			      NH => 6,
+			      H  => 6,
+			      HH => 6,
+			      B  => 6,
+			    },
+	do_kfz_adjustment    => 1,
+	do_living_street_opt => 1,
+	do_busroute_opt      => 1,
+	do_cobblestone_opt   => 0,
+	do_tram_opt          => 0,
+       )
      : $winter_hardness eq 'XXX_busroute'
      ? (cat_to_usability => { NN => 1,
 			      N  => 1,
@@ -136,7 +163,7 @@ my $do_tram_opt        =    $usability_desc{do_tram_opt};
 my $do_busroute_opt    =    $usability_desc{do_busroute_opt};
 my $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert werden
 my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
-my $do_living_street_opt = 0;
+my $do_living_street_opt =  $usability_desc{do_living_street_opt};
 
 my $outfile = "$FindBin::RealBin/../tmp/winter_optimization." . $winter_hardness . "." . ($as_json ? 'json' : 'st');
 
@@ -330,9 +357,9 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	$net->{"$k1,$k2"} = $out_cat;
 
 	if ($do_display) {
-	    my $color = ['#ff0000',
+	    my $color = ['#a00000',
+			 '#ff4400',
 			 '#ffaa00',
-			 '#ffdd00',
 			 '#f6ff00',
 			 '#c7ff00',
 			 '#00ff26',

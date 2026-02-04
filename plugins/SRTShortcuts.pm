@@ -1029,7 +1029,7 @@ EOF
 			    },
 			   ];
 		       }
-		   } qw(- XXX_busroute - snowy very_snowy dry_cold - grade1 grade2 grade3)
+		   } qw(- XXX_busroute - snowy very_snowy dry_cold - grade1 grade2 grade3 - jan_2026 feb_2026)
 		  ),
 		 ],
 		],
