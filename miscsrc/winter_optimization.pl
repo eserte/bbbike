@@ -27,13 +27,17 @@ my $do_display = 0;
 my $one_instance = 0;
 my $winter_hardness = 'snowy';
 my $as_json;
+my $destdir;
+my $add_uid;
 
 if (!GetOptions("display" => \$do_display,
 		"one-instance" => \$one_instance,
+		"destdir=s" => \$destdir,
+		"add-uid" => \$add_uid,
 		"winter-hardness=s" => \$winter_hardness,
 		"as-json" => \$as_json,
 	       )) {
-    die "usage: $0 [-display] [-one-instance] [-as-json] [-winter-hardness snowy|very_snowy|dry_cold]\n";
+    die "usage: $0 [-display] [-one-instance] [-destdir ...] [-add-uid] [-as-json] [-winter-hardness snowy|very_snowy|dry_cold]\n";
 }
 
 if ($as_json) {
@@ -165,9 +169,10 @@ my $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert
 my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
 my $do_living_street_opt =  $usability_desc{do_living_street_opt};
 
-my $outfile = "$FindBin::RealBin/../tmp/winter_optimization." . $winter_hardness . "." . ($as_json ? 'json' : 'st');
+$destdir = "$FindBin::RealBin/../tmp" if !$destdir;
+my $outfile = "$destdir/winter_optimization." . $winter_hardness . "." . ($add_uid ? "$<." : "") . ($as_json ? 'json' : 'st');
 
-my $lock_file = "/tmp/winter_optimization.lck";
+my $lock_file = "/tmp/winter_optimization." . ($add_uid ? "$<." : ""). "lck";
 if ($one_instance) {
     open(LCK, "> $lock_file");
     if (!flock LCK, LOCK_EX|LOCK_NB) {

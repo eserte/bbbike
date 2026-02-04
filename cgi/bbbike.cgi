@@ -3415,9 +3415,11 @@ sub search_coord {
 	    $winter_hardness ||= 'snowy'; # some default
 	    require Storable;
 	    my $penalty;
+	    my @search_dirs = ($tmp_dir, "$FindBin::RealBin/../tmp", @Strassen::datadirs);
+	    my $basename = "winter_optimization.$winter_hardness.$<.st";
 	    for my $try (1 .. 2) {
-		for my $dir ("$FindBin::RealBin/../tmp", @Strassen::datadirs) {
-		    my $f = "$dir/winter_optimization.$winter_hardness.st";
+		for my $dir (@search_dirs) {
+		    my $f = "$dir/$basename";
 		    if (-r $f && -s $f) {
 			$penalty = Storable::retrieve($f);
 			last;
@@ -3425,9 +3427,9 @@ sub search_coord {
 		}
 		if (!$penalty) {
 		    if ($try == 2) {
-			die "Can't find winter_optimization.$winter_hardness.st in @Strassen::datadirs and cannot build...";
+			die "Can't find $basename in @search_dirs and cannot build...";
 		    } else {
-			system("$FindBin::RealBin/../miscsrc/winter_optimization.pl", "-winter-hardness", $winter_hardness, "-one-instance");
+			system("$FindBin::RealBin/../miscsrc/winter_optimization.pl", "-winter-hardness", $winter_hardness, "-one-instance", "-destdir", $tmp_dir, "-add-uid");
 		    }
 		} else {
 		    last;

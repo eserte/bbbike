@@ -379,7 +379,7 @@ post-rsync-bbbike-data:
 .endif
 .endif
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
-	   "rm -f ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/winter_optimization*"
+	   "rm -f ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/winter_optimization* /tmp/winter_optimization*"
 .ifdef TARGET
 .if ${TARGET} == ${TARGET_LIVE}
 	-@date >> .last/post-rsync-bbbike-data
