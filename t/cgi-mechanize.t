@@ -47,8 +47,9 @@ if (!GetOptions(get_std_opts("cgiurl", "xxx"),
 		'browser=s@' => \@browsers,
 		'xxx-petri-dank' => \$do_xxx{PETRI_DANK},
 		'xxx-newstreetform' => \$do_xxx{NEWSTREETFORM},
+		'xxx-bbbike2' => \$do_xxx{BBBIKE2},
 	       )) {
-    die "usage: $0 [-cgiurl url] [-xxx|-xxx-petri-dank|-xxx-newstreetform] [-v] [-browser ...]";
+    die "usage: $0 [-cgiurl url] [-xxx|-xxx-petri-dank|-xxx-newstreetform|xxx-bbbike2] [-v] [-browser ...]";
 }
 
 if (!@browsers) {
@@ -61,7 +62,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBike-Test/1.0" } @browsers;
 
 my $outer_berlin_tests = 36;
-my $tests = 150 + $outer_berlin_tests;
+my $tests = 155 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -932,6 +933,7 @@ for my $browser (@browsers) {
     ######################################################################
     # outer Berlin
 
+ XXX_BBBIKE2:
  SKIP: {
 	# Is bbbike2.cgi available?
 	my $can_bbbike2_cgi;
@@ -949,6 +951,26 @@ for my $browser (@browsers) {
 	}
 	skip("Outer Berlin feature needs a working bbbike2.cgi", $outer_berlin_tests)
 	    if !$can_bbbike2_cgi;
+
+	my $bbbike2_config = BBBikeTest::get_cgi_config(cgiurl => $bbbike2_url);
+	is ref($bbbike2_config), 'HASH', 'got the bbbike2 config';
+
+	# winter optimization
+    SKIP: {
+	    skip "winter optimization not active", 4
+		if !$bbbike2_config->{use_winter_optimization};
+
+	    $get_agent->();
+	    $agent->get("$bbbike2_url?startc=10923%2C13156&zielc=8542%2C11502&pref_seen=1");
+	    $on_a_particular_page->('routeresult');
+	    $agent->form_name('search');
+	    $agent->current_form->value('pref_winter', 'WI2');
+	    $agent->current_form->value('pref_cat', 'N_RW1');
+	    $agent->submit();
+	    my_tidy_check($agent);
+	    $on_a_particular_page->('routeresult');
+	    $like_long_data->(qr{(Unter den Linden|Ebertstr|Leipziger Str)});
+	}
 
 	{
 	    $get_agent->();
