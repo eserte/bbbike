@@ -106,11 +106,11 @@ my %usability_desc =
        )
      : $winter_hardness eq 'feb_2026' # icy paths, fresh snow
      ? (cat_to_usability => { NN => 1,
-			      N  => 3,
-			      NH => 6,
-			      H  => 6,
-			      HH => 6,
-			      B  => 6,
+			      N  => 2, # used to be 3 before 2026-02-05
+			      NH => 4, # used to be 6 before 2026-02-05
+			      H  => 5, # used to be 6 before 2026-02-05
+			      HH => 5, # used to be 6 before 2026-02-05
+			      B  => 5, # used to be 6 before 2026-02-05
 			    },
 	do_kfz_adjustment    => 1,
 	do_living_street_opt => 1,
@@ -327,8 +327,21 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	    }
 
 	    my $kfz = $net{"kfz"}->{Net}{$k1}{$k2};
-	    if ($do_kfz_adjustment && defined $kfz) {
-		$cat_num += $kfz;
+	    if ($do_kfz_adjustment && defined $kfz && $kfz != 0) {
+		if ($kfz >= +2) {
+		    $cat_num = $cat_to_usability{adjust_cat($main_cat, +1)};
+		} elsif ($kfz == +1) {
+		    my $higher_cat_num = $cat_to_usability{adjust_cat($main_cat, +1)};
+		    $cat_num = ($cat_num + $higher_cat_num)/2;
+		} elsif ($kfz == -1) {
+		    my $lower_cat_num = $cat_to_usability{adjust_cat($main_cat, -1)};
+		    $cat_num = ($cat_num + $lower_cat_num)/2;
+		} elsif ($kfz <= -2) {
+		    $cat_num = $cat_to_usability{adjust_cat($main_cat, -1)};
+		} else {
+		    warn "Should not happen: kfz '$kfz' unhandled...";
+		    # continue with unchanged $cat_num
+		}
 		push @reason, $main_cat . $kfz;
 	    } else {
 		push @reason, $main_cat;
@@ -353,8 +366,8 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 
 	    if ($do_busroute_opt) {
 		my $busroute = $net{"busroute"}->{Net}{$k1}{$k2};
-		if (defined $busroute && $res < 6) {
-		    $res = 6;
+		if (defined $busroute && $res < $cat_to_usability{B}) { # assume B has always the highest usability
+		    $res = $cat_to_usability{B};
 		}
 	    }
 
@@ -380,7 +393,7 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 			 '#00c000',
 			 '#0000ff',
 			]->[$cat];
-	    print "$cat " . join(", ", @reason) . "\t$color; $k1 $k2\n";
+	    print "$cat ($out_cat%) " . join(", ", @reason) . "\t$color; $k1 $k2\n";
 	}
     }
 }
@@ -425,6 +438,31 @@ sub create_busroute {
     run(["$FindBin::RealBin/grepstrassen", "-catrx", '^busroute_N', $cmo],
 	">", $tmpfile) or die $!;
     $tmpfile;
+}
+
+sub adjust_cat {
+    my($cat, $direction) = @_;
+    return $cat if !$direction;
+    my @order = qw(NN N NH H HH B);
+    for my $cat_i (0 .. $#order) {
+	if ($cat eq $order[$cat_i]) {
+	    if ($direction < 0) {
+		if ($cat_i > 0) {
+		    return $order[$cat_i-1];
+		} else {
+		    return $cat;
+		}
+	    } elsif ($direction > 0) {
+		if ($cat_i < $#order) {
+		    return $order[$cat_i+1];
+		} else {
+		    return $cat;
+		}
+	    }
+	}
+    }
+    warn "Should not happen: did not found category '$cat' in '@order'";
+    $cat;
 }
 
 __END__
