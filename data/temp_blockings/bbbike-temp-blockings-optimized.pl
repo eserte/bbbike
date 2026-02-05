@@ -3464,8 +3464,8 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
-#: also_indoor: traffic (ex-G,ex-H,ex-A,re-W,T)
-#: last_checked: 2026-01-30 (traffic)
+#: also_indoor: traffic (re-G,ex-H,ex-A,re-W,T)
+#: last_checked: 2026-02-05 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
@@ -3934,6 +3934,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.deutsches-architekturforum.de/thread/11563-moabit-kleinere-projekte/?postID=792320#post792320 (neue Bauarbeiten)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/25-meter-becken-und-sonnenterrasse-moabit-bekommt-ein-freibad--baustart-steht-fest-12987601.html (Eröffnung 2026)
 #: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-bauarbeiten-fuer-den-aussenbereich-gehen-voran/
+#: by: https://www.entwicklungsstadt.de/berliner-baeder-im-wandel-welche-projekte-vorankommen-und-welche-warten/
 # REMOVED --- #: osm_watch: way id="848019125" version="6" --- #: osm_watch: note 4030867 1
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023 --- #: last_checked: 2023-12-29 --- #: next_check: 2024-01-23
 #: osm_watch: way id="462738551" version="29"
@@ -4968,9 +4969,9 @@ Rüdigerstr.: Baustellenlänge ca. 50m	q4::inwork; 16397,12397 16485,12384
 ',
          'from' => undef,
          'id' => 3223,
-         'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 06.02.2026',
+         'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 06.02.2026, evtl. werden die Bauarbeiten verlängert',
          'type' => 'gesperrt',
-         'until' => 1770397200
+         'until' => undef
        },
        {
          'data' => '#: note: permanente Halteverbotsschilder
@@ -6154,16 +6155,16 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
 #: source_id: adac:1081908618 (Bahnhofstr., bis voraussichtlich 01.03.2026) (neue ID -> inaktiv)
 #: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026) (neue ID -> inaktiv)
-#: source_id: LMS-BR:376495/72 viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026) (bis 18.05.2026)
-#: source_id: LMS-BR:392668/72 viz2021:13.40504,52.38669,09.12.2025,00:00 (Mellener Str. (nicht eingetragen), bis 18.05.2026)
+#: source_id: LMS-BR:376495/72 viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026) (bis 18.05.2026) (bis 31.12.2026)
+#: source_id: LMS-BR:392668/72 viz2021:13.40504,52.38669,09.12.2025,00:00 (Mellener Str. (nicht eingetragen), bis 18.05.2026) (bis 31.12.2026)
 #: source_id: bvg2024:m76#HIM_FREETEXT_292859
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: last_checked: 2026-02-02 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
+#: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
-#: next_check: 2026-05-18 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung
 Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
@@ -6173,11 +6174,11 @@ Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 # REMOVED (laut Umleitungsplan nicht mehr) (tatsächlich auch nicht; interessanterweise ist eine provisorische Radspur noch übrig geblieben) --- Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
 # REMOVED (hier nicht mehr) --- Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
 #: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026) (inaktiv)
-#: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026)
+#: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026) (bis 31.12.2026)
 #: note: an der Bahnhofstr. keine Freigabe für Radfahrer, allerdings ab Mellener Str. Richtung Goltzstr. mit Einbahnstraße, Radfahrer beide Richtungen ausgeschildert?!
 Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
 # REMOVED (hier vermutlich nicht) --- Goltzstr.	q4::inwork; 10763,-2276 10642,-2371 10563,-2432 10454,-2520
-#: source_id: LMS-BR:392667/72 viz2021:13.40053,52.38317,09.12.2025,00:00 (bis 18.05.2026)
+#: source_id: LMS-BR:392667/72 viz2021:13.40053,52.38317,09.12.2025,00:00 (bis 18.05.2026) (bis 31.12.2026)
 #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Antrag: Freigabe für Radverkehr)
 Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156
@@ -6191,7 +6192,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 ',
          'from' => 1663524336,
          'id' => 3624,
-         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis Mai 2026',
+         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis Ende 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7273,7 +7274,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
 #: osm_watch: way id="755340907" version="13"
 #: osm_watch: note 4917519 1
-#: also_indoor: traffic (G,W)
+#: also_indoor: traffic (ex-G,ex-W,no-T)
 Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -8238,19 +8239,19 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
 #: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026)
+#: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026) (bis 17.02.2026)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
 #: also_indoor: traffic (re-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-01-22 (traffic)
+#: last_checked: 2026-02-05 (traffic)
 # REMOVED --- #: check_frequency: 21d (traffic)
-#: next_check: 2026-02-06 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-02-17 (VIZ-Verkehrsmeldung)
 	q4::inwork 2396,9427 2467,9425 2592,9419
 ',
          'from' => 1737970440,
          'id' => 4247,
-         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 06.02.2026',
+         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 17.02.2026, evtl. werden die Bauarbeiten verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9167,7 +9168,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-03 vvv
+#: last_checked: 2026-02-05 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
