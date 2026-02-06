@@ -122,7 +122,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt für Radfahrer	?::inwork 9047,9750
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html (hier ist ein komplett unklares Projekt gelistet: Kynaststraße, von Paul-Paula-Ufer bis Glasbläserallee als Schutzstreifen, 285 Meter --- wo soll das sein?)
 #: osm_watch: way id="667331289" version="7"
-#: last_checked: 2026-01-31
+#: last_checked: 2026-02-06
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -195,6 +195,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: by: https://www.infravelo.de/meldung/rsv-3-infoveranstaltungen/ (zur Radschnellverbindung "Königsweg - Kronprinzessinnenweg")
 #: by: https://entwicklungsstadt.de/von-wannsee-bis-zum-kurfuerstendamm-radschnellweg-koenigsweg-kronprinzessinnenweg-nimmt-gestalt-an/
 #: by: https://www.entwicklungsstadt.de/vom-wannsee-zum-kudamm-erstes-planfeststellungsverfahren-fuer-berliner-radschnellweg/
+#: by: https://www.infravelo.de/meldung/erste-berliner-rsv-startet-in-planfeststellungsverfahren/
 #: source_id: IM_026443 (inaktiv)
 #: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (Leitungsarbeiten bis 30.5.2022) (mittlerweile bis 12.7.2022) (bis 28.9.2022) (inaktiv)
 #: source_id: viz2021:13.178114,52.421439,11.03.2022,09:00 (Leitungsarbeiten bis 13.5.2022) (mittlerweile bis 3.6.2022) (inaktiv)
@@ -622,13 +623,14 @@ Munsterdamm: bei der geplanten Fahrbahnsanierung entstehen Radspuren	?::projecte
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1587005.php (Fernwärmebauarbeiten bis 2028/29)
 #: by: https://mein.berlin.de/vorhaben/2024-00917/
 #: by: https://www.entwicklungsstadt.de/erst-fernwaerme-dann-gruen-warum-der-barbarossaplatz-derzeit-eine-grossbaustelle-ist/
+#: by: https://www.entwicklungsstadt.de/baustelle-barbarossaplatz-umgestaltung-in-schoeneberg-beginnt-im-sommer-2027/
 #: XXX entfällt auch die Einbahnstraßenregelung?
 #: osm_watch: way id="4597427" version="23"
 #: also_indoor: traffic
 #: last_checked: 2025-02-05
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: check_frequency: 270d
-#: next_check: 2026-07-01 (BVV-Drucksache, Baustart)
+#: next_check: 2026-07-01 (BVV-Drucksache, entwicklungsstadt: Baustart)
 Barbarossaplatz: Sperrung für den Autoverkehr geplant	?::projected 6747,9531 6731,9559
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf
@@ -5775,7 +5777,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) geplant	?
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: osm_watch: note 4969496 3
 #: XXX Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
-#: last_checked: 2026-01-31 vvv
+#: last_checked: 2026-02-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 15019,10803
@@ -6293,11 +6295,12 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 #: by: https://www.nd-aktuell.de/artikel/1194725.bvg-tram-ostkreuz-droht-die-naechste-schleife.html (geplant 2026)
 #: by: https://www.nd-aktuell.de/artikel/1195355.bvg-berlin-historische-tatra-fahrten-zum-tram-abschied.html (Frühjahr bis Herbst 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24501.pdf (Ende Mai bis Anfang September 2026: Gleisbauarbeiten zwischen Trautenauer Str. und Heiligenberger Str.; bis November 2026 Fahrleitungsarbeiten)
+#: by: https://vergabekooperation.berlin/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-19b93d33a3f-612e68b1b4be4955&Category=InvitationToTender (Bauzeit 25.05.2026 - 06.09.2026 (Gleisbauarbeiten))
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243332 (2024-11-11 - 2024-12-12)
 #: last_checked: 2026-01-21
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2026-05-31 (pardok)
+#: next_check: 2026-05-25 (vergabe website)
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17736,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 # 
 #: osm_watch: way id="621721786" version="3"
@@ -7413,7 +7416,7 @@ B158 Bad Freienwalde: bei der Instandsetzung sind möglicherweise Radspuren entst
 #: source_id: LS/221-F/24/025 (Baumfällarbeiten, bis 29.02.2024) (inaktiv)
 #: osm_watch: way id="325491555" version="5"
 #: last_checked: 2025-04-13 (mapillary)
-#: check_frequency: 300d
+#: check_frequency: 330d
 #: next_check: 2027-12-31 (LS-BRB-Pressemitteilung)
 # REMOVED --- #: next_check: 2024-02-29
 # REMOVED --- #: next_check: 2025-03-01
@@ -9112,6 +9115,7 @@ Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14475,11778 14550,11732
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_50_3173_3308_online.pdf (zum Bebauungsplan)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/abtransport-soll-noch-monate-dauern-hunderte-weitere-tonnen-asbest-beim-abriss-des-berliner-jahn-stadions-freigesetzt-15013665.html
 #: by: https://www.entwicklungsstadt.de/neue-asbestfunde-am-mauerpark-abtransport-dauert-bis-2026/
+#: by: https://www.entwicklungsstadt.de/inklusion-statt-baustelle-neue-plaene-fuer-die-sportwiese-im-jahn-sportpark/
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: last_checked: 2025-12-17 vvv
@@ -9616,8 +9620,9 @@ Hauptstr. (Nebenarm): soll als verkehrsberuhigter Bereich ausgewiesen werden	?::
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
 #: last_checked: 2026-02-02
 # REMOVED --- #: check_frequency: 120d
-#: check_frequency: 30d
-#: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
+#: next_check: 2026-06-30 (nd: Weiterbau im Sommer 2026?)
 # REMOVED --- #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
 # XXX war in gesperrt-orig: Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
 Rolandufer: wird unter der Mühlendammbrücke wieder gesperrt werden?	? 10821,12153 10660,12176 10591,12203 10583,12206
@@ -10960,12 +10965,12 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
 #: XXX vermutlich beleuchtet; Rampe und Treppe am Paul-und-Paula-Ufer
 #: osm_watch: way id="1077916762" version="11"
-#: last_checked: 2026-01-31
+#: last_checked: 2026-02-06
 #: check_frequency: 90d
 # REMOVED (Eröffnung 2025 unwahrscheinlich) --- #: next_check: 2025-12-31 (Plakat)
 Paul-und-Paula-Promenade: wird gebaut	?::inwork 14984,10677 15056,10625
 #: osm_watch: way id="1077916763" version="2"
-#: last_checked: 2026-01-29
+#: last_checked: 2026-02-06
 #: check_frequency: 270d
 Heiner-Carow-Str.: existiert noch nicht	?::projected 15081,10775 15071,10716 15056,10625
 # 

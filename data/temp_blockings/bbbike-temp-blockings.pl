@@ -50122,7 +50122,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-05 vvv
+#: last_checked: 2026-02-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50568,8 +50568,9 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-01-31 vvv
-#: next_check: 2026-02-11 (Halteverbotsschilder) vvv
+#: last_checked: 2026-02-06 vvv
+# REMOVED  --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
+#: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
@@ -51452,7 +51453,7 @@ EOF
        text  => 'Knesebeckstr.: Sperrung zwischen Savignyplatz und Mommsenstr., evtl. ist auch der Radverkehr betroffen, vom 08.12.2025 07:00 bis 06.02.2026 17:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:392518/72 viz2021:13.322216,52.504645,08.12.2025,07:00 (bis 06.02.2026)
+#: source_id: LMS-BR:392518/72 viz2021:13.322216,52.504645,08.12.2025,07:00 (bis 06.02.2026) (inaktiv)
 	q4::inwork 4841,10686 4857,10909 4858,10943
 EOF
      },

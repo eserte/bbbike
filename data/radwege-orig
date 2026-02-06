@@ -1412,7 +1412,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-01-31 vvv
+#: last_checked: 2026-02-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED (unwahrscheinlich) --- #: next_check: 2026-02-10 (SenMVKU zum Ersatzneubau) vvv
@@ -2319,6 +2319,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: by: https://www.entwicklungsstadt.de/einsturzgefahr-der-muehlendammbruecke-berlin-treibt-neubau-ab-2026-voran/
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13392 (Antrag zur Barrierefreiheit der Anbindung des Rolandufers)
 #: by: https://www.tagesspiegel.de/berlin/jede-sechste-brucke-in-berlin-ist-marode-diese-175-berliner-bauten-mussen-abgerissen-werden-15138364.html
+#: by: https://www.nd-aktuell.de/artikel/1197424.tramausbau-ausbau-strassenbahnlinie-m-planungsstopp-aber-keine-sabotage.html (Weiterbau der östlichen Hälfte ab Sommer 2026, Fertigstellung 2027?)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/muehlendammbruecke/
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029) (inaktiv)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
@@ -3267,7 +3268,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-01-31
+#: last_checked: 2026-02-06
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3289,7 +3290,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-01-31
+#: last_checked: 2026-02-06
 #: check_frequency: 90d
 #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -8124,7 +8125,7 @@ asphaltiert	RW1; -4098,13201 -4046,13177 -4017,13167
 	RW6;RW6 21409,11941 21411,11863 21456,11825
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/protokoll-fahrrat-am-08102024.pdf (Aufhebung des Benutzungspflicht?)
 #: last_checked: 2025-08-11 (mapillary)
-#: check_frequency: 180d
+#: check_frequency: 270d
 asphaltiert	RW2;RW9 16594,22188 16678,22149 17073,21329
 asphaltiert	RW1;RW1 19363,3730 19125,3491
 # REMOVED (jetzt Tempo-20-Zone) --- Tempo 10	RW6;RW6 14693,7168 14792,7192 14878,7211 14946,7228 14997,7240 15085,7258 --- Tempo 10	RW6;RW6 14853,7451 14942,7347 14997,7240
