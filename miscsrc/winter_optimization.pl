@@ -107,10 +107,10 @@ my %usability_desc =
      : $winter_hardness eq 'feb_2026' # icy paths, fresh snow
      ? (cat_to_usability => { NN => 1,
 			      N  => 2, # used to be 3 before 2026-02-05
-			      NH => 4, # used to be 6 before 2026-02-05
-			      H  => 5, # used to be 6 before 2026-02-05
-			      HH => 5, # used to be 6 before 2026-02-05
-			      B  => 5, # used to be 6 before 2026-02-05
+			      NH => 6, # used to be 6 before 2026-02-05, 4 before 2026-02-06
+			      H  => 6, # used to be 6 before 2026-02-05, 5 before 2026-02-06
+			      HH => 6, # used to be 6 before 2026-02-05, 5 before 2026-02-06
+			      B  => 6, # used to be 6 before 2026-02-05, 5 before 2026-02-06
 			    },
 	do_kfz_adjustment    => 1,
 	do_living_street_opt => 1,
