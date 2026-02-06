@@ -2,25 +2,19 @@
 # -*- perl -*-
 
 #
-# $Id: mapscript_daemon.pl,v 1.2 2003/07/08 22:15:15 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use FindBin;
-#use lib "$FindBin::RealBin/../../lib";
-#use Text::ScriptTemplate;
 use HTTP::Daemon;
 use HTTP::Status;
-# XXX do not hardcode
-use blib "/usr/local/src/mapserver/mapserver-3.6.4/mapscript/perl";
-use mapscript;
+use mapscript; # apt install libmapscript-perl
 use CGI qw(:standard -no_xhtml);
 use File::Temp qw(tempfile);
 use File::Spec;
@@ -94,10 +88,9 @@ sub mapscript::imageObj::saveWebImage {
     my($img, $type) = @_;
     my($fh, $temp) = tempfile(DIR => File::Spec->tmpdir(),
 			      SUFFIX => ".png");
-    $img->saveImage($temp, $type, 0, 0, 0);
+    $img->save($temp);
     chmod 0644, $temp;
     "/image/" . basename($temp);
 }
-
 
 __END__
