@@ -933,7 +933,7 @@ for my $browser (@browsers) {
     ######################################################################
     # outer Berlin
 
- XXX_BBBIKE2:
+ XXX_BBBIKE2: {
  SKIP: {
 	# Is bbbike2.cgi available?
 	my $can_bbbike2_cgi;
@@ -1079,6 +1079,7 @@ EOF
 	    $like_long_data->(qr{\QFritz-Reuter-Str. (Mahlow-Waldblick)}, 'Found via in subplace (Mahlow-Waldblick)');
 	    $like_long_data->(qr{\QGlasower Damm (Mahlow)}, 'Found goal in place (Mahlow)');
 	}
+    }
     }
 
 } # for
