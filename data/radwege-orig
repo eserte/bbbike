@@ -1012,7 +1012,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-01-17
+#: last_checked: 2026-02-07
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1050,7 +1050,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2025-11-12
+#: last_checked: 2026-01-19
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -1066,7 +1066,6 @@ Bushaltestelle	RW5; 10917,15525 10925,15581
 Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/gefahrlicher-zickzack-kurs-statt-sicherheit-wird-der-millionenteure-radstreifen-auf-der-schonhauser-allee-jetzt-wieder-demontiert-13841635.html
-#: XXX außerdem: gibt es hier auch eine VeloFlow-Anzeige, oder ist diese im YouTube-Video https://www.youtube.com/watch?v=TSaQQGqdMGQ&t=47s nur montiert?
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
 #: last_checked: 2025-12-30 (mapillary)
 #: historical_note: früher: Gehwegplatten	RW2;
@@ -1412,7 +1411,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-02-06 vvv
+#: last_checked: 2026-02-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED (unwahrscheinlich) --- #: next_check: 2026-02-10 (SenMVKU zum Ersatzneubau) vvv
@@ -1897,7 +1896,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-01-21
+#: last_checked: 2026-02-07 (webcam)
 #: check_frequency: 21d
 	RW0; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
@@ -3112,7 +3111,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-01-30 vvv
+#: last_checked: 2026-02-07 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3268,7 +3267,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-02-06
+#: last_checked: 2026-02-07
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
 # 
 	RW3; 14641,10552 14675,10693 14671,10751
@@ -3290,9 +3289,9 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-02-06
+#: last_checked: 2026-02-07
 #: check_frequency: 90d
-#: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
 #	RW3; 14641,10552 14608,10409
 #die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
@@ -3337,7 +3336,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-01-29
+#: last_checked: 2026-02-07
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3348,7 +3347,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-01-29
+#: last_checked: 2026-02-07
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -8305,7 +8304,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: adac:1733244580 (inaktiv)
 #: source_id: adac:256162332 (inaktiv)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_289064 (kein Endedatum)
-#: source_id: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 4x)
+#: source_id[inactive]: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 5x)
 #: source_id: bvg2024:172#HIM_FREETEXT_289063 (kein Endedatum)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_293426 (Haltestellenverlegung, kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293415 (Haltestellenverlegung, kein Endedatum)
@@ -8642,7 +8641,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2026-01-14 (mapillary)
+#: last_checked: 2026-02-07
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -9246,6 +9245,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/strassenzug-mit-neuen-radwegen_a371366
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-stitzung-vom-17072025.pdf (Baubeginn im August (2025?) + Lichtsignalanlage)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html (Schutzstreifen, 555 Meter -> reicht vermutlich für beide Richtungen)
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/verkehrsplanung/radverkehr/akteure-und-gremien/20251113_fahrrat_protokoll.pdf
 #: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße)
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)

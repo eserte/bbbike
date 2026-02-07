@@ -56,7 +56,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-02-01 (osm) vvv
+#: last_checked: 2026-02-07 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="12"
@@ -808,7 +808,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 # REMOVED --- Grimmstr.: Wasserrohrbruch, wo genau? Sind Radfahrer betroffen?	?::inwork; 11089,9751 11072,9711 11042,9642 11023,9597
 #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026)
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, (bis 30.01.2026) (bis 06.03.2026)
-#: also_indoor: traffic (G[nur Müllenhoffstr.],T[nur Grimmstr.],H,W[nur Müllenhoffstr.],A[falsche Position])
+#: also_indoor: traffic (G[nun Grimmstr.],T[nun Müllenhoffstr.],H,ex-W[nur Müllenhoffstr.],A[falsche Position])
 #: last_checked: 2026-01-25 (sieht recht fertig aus)
 #: check_frequency: 14d
 #: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
@@ -959,23 +959,27 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
 ### Charlottenburg ###
 # 
-# REMOVED --- #: next_check_id: RANKE-2023
-# REMOVED --- # REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
-# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
-# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
-# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
-# REMOVED --- #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
-# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 50m
-# REMOVED --- #: last_checked: 2025-10-31
+#: next_check_id: RANKE-2023
+# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
+#: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
+#: note: Länge des gesperrten Bereichs etwa 50m (frühere Sperrung)
+#: also_indoor: traffic (G,T,W)
+#: last_checked: 2026-02-07 (traffic)
+#: check_frequency: 21d (traffic)
 # REMOVED --- #: next_check: 2025-11-08
 # REMOVED --- #: valid: -20251108
-# REMOVED --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Kraneinsatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
+#Rankestr.: Einmündungsbereich Breitscheidplatz wegen Kraneinsatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
+Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen	q3::inwork 5669,10704 5782,10884
 # 
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
 #: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
 #: by: https://entwicklungsstadt.de/charlottenburg-ein-verborgenes-wissenschaftsquartier-wird-neu-erfunden/ (zu Bauarbeiten auf dem PTB-Gelände, keine explizite Erwähnung dieser Stelle)
-#: osm_watch: way id="152832871" version="24"
+#: osm_watch: way id="152832871" version="25"
 #: osm_watch: way id="1132383957" version="2"
 #: note: mittlerweile eine Art "Drängelgitter" aus dem Bauzaun gemacht
 #: last_checked: 2025-11-19
@@ -1009,7 +1013,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-01-29
+#: last_checked: 2026-02-07
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1151,7 +1155,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-01-29
+#: last_checked: 2026-02-07
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1290,6 +1294,9 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Prenzlauer Berg ###
 # 
+#: last_checked: 2026-02-07
+Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
+# 
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_316063 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316065 (kein Endedatum)
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
@@ -1303,7 +1310,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: by: https://www.morgenpost.de/bezirke/pankow/article411096985/ende-ungewiss-frust-und-chaos-nach-rohrbruch-in-prenzlauer-berg.html
 #: by: https://www.morgenpost.de/bezirke/pankow/article411086279/wasserrohrbruch-mit-folgen-greifswalder-strasse-stadtauswaerts-voll-gesperrt.html
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-02-02 vvv
+#: last_checked: 2026-02-07 vvv
 #: check_frequency: 14d vvv
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork; 11652,13564 11706,13635 11820,13804
 Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork 11785,13625 11762,13619 11706,13635
@@ -1973,7 +1980,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2026-01-25
+#: last_checked: 2026-02-07
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374

@@ -32186,7 +32186,8 @@ EOF
      { from  => undef, # 1687200191, # undef, # 
        until => undef, # $isodate2epoch->("2026-02-06 18:00:00"), # undef, # 1689428101, # undef, # 1592053810, # undef, # XXX
 #      text  => 'Zobtener Str.: Bauarbeiten, 120m lange Engstelle, Straße kann auch komplett gesperrt sein',
-       text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 06.02.2026, evtl. werden die Bauarbeiten verlängert',
+#      text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 06.02.2026, evtl. werden die Bauarbeiten verlängert',
+       text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: offizielle Umleitung über Fischerstr.
@@ -32198,9 +32199,10 @@ EOF
 #: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-01-23
-#: check_frequency: 30d
-#: next_check: 2026-02-06
+#: last_checked: 2026-02-07
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
 	2::inwork 16353,10207 16148,10329
 # REMOVED (Anlieger frei) ---	2::inwork 16148,10329 15758,10578
@@ -49091,7 +49093,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026)
-#: last_checked: 2026-01-29 vvv
+#: last_checked: 2026-02-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -49566,7 +49568,7 @@ EOF
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-01-27 (traffic)
+#: last_checked: 2026-02-07 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -49780,7 +49782,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2026-01-25
+#: last_checked: 2026-02-07
 #: check_frequency: 14d (traffic)
 	q3::inwork 7628,9365 7509,9337
 EOF
@@ -50018,7 +50020,7 @@ EOF
      { from  => 1754431200, # 2025-08-06 00:00
        until => undef, # 1767222000, # 2026-01-01 00:00
 #      text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Januar 2026: Diagonalweg ist offen)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Ende Januar 2026: Diagonalweg ist offen)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
@@ -50568,7 +50570,7 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-02-06 vvv
+#: last_checked: 2026-02-07 vvv
 # REMOVED  --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv

@@ -138,11 +138,11 @@ Knoten Märkische/Landsberger Allee	1no 19200,14963 19157,14948 19015,14901
 Knoten Märkische/Landsberger Allee	1no 19254,15000 19309,15023 19364,15045 19512,15092 19565,15106 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19254,15000 19200,14963
 Knoten Märkische/Landsberger Allee	2::inwork 19408,15007 19350,14997 19214,14966 19200,14963
-#: osm_watch: way id="30884033" version="23"
+#: osm_watch: way id="30884033" version="24"
 Knoten Märkische/Landsberger Allee	2::inwork 19452,14807 19464,14971 19408,15007
 #: osm_watch: way id="4696050" version="24"
 Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061 19408,15007
-#: osm_watch: way id="30884034" version="24"
+#: osm_watch: way id="30884034" version="25"
 Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee: nur Rechtsabbiegen erlaubt	3 19644,15320 19512,15092 19565,15106
 #: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
@@ -4186,7 +4186,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-02-06
+#: last_checked: 2026-02-07
 #: check_frequency: 120d
 #: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4464,6 +4464,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: by: https://fragdenstaat.de/anfrage/umweltinformationen-zur-eroeffnung-des-rad-und-fusswegs-am-16-bauabschnitt-der-a100-in-berlin/#nachricht-1066335
 #: by: https://www.entwicklungsstadt.de/entlang-der-a100-wann-wird-der-neue-radweg-freigegeben/
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (keine Infos von der Autobahn GmbH)
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/verkehrsplanung/radverkehr/akteure-und-gremien/20251113_fahrrat_protokoll.pdf (Frühjahr 2026?)
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
 #: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.), 2025-04-12 (Sa) 10:18 (Kiefholzstr. NO)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
@@ -4472,7 +4473,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
 #: last_checked: 2026-01-31 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-04-15 (Tsp) vvv
+#: next_check: 2026-04-15 (Tsp, Fahrrat) vvv
 #: osm_watch: way id="1199463691" version="6"
 # REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -4516,6 +4517,9 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/carl-bechstein-campus-heidestra%C3%9Fe-46-52.1363/#post-26823
+#: by: https://www.carl-bechstein-stiftung.de/projekte/carl-bechstein-campus/ (Projektstopp: was bedeutet das für diesen Weg?)
+#: by: https://return.co.de/blog/articles/grosse-plane-unklare-zukunft-was-wird-aus-dem-bechstein-campus/
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch auf der anderen Seite so ausgeschildert?
 #: XXX culdesac-Eintrag an der Döberitzer Str. muss vermutlich geändert werden
@@ -4632,7 +4636,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-02-06
+#: last_checked: 2026-02-07
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4640,7 +4644,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-02-06 vvv
+#: last_checked: 2026-02-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
