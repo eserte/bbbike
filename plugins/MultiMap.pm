@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.57;
+$VERSION = 2.58;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -429,6 +429,14 @@ sub register {
 	      callback_3_std => sub { showmap_url_tilda_geo_de(@_, data => $default_data) },
 	      # no icon available
 	      tags => [qw(bicycle)],
+	    };
+    }
+    if (1) { # XXX should be $is_country eq 'DE', but this variable does not exist
+	$main::info_plugins{__PACKAGE__ . '_BasemapDe'} =
+	    { name =>  'basemap.de',
+	      callback => sub { showmap_basemap_de(@_) },
+	      callback_3_std => sub { showmap_url_basemap_de(@_) },
+	      ($images{BasemapDe} ? (icon => $images{BasemapDe}) : ()),
 	    };
     }
     if ($is_berlin && $main::devel_host) {
@@ -1204,6 +1212,27 @@ l9DO4MwETA7D3KiQeSVwSsUO8mb5NWbjI9zY+UqdqnY0k3ho7S+uzPVy5ZciqxugCqGFy8f/YTz7
 jtwtYMMqimIwzBenebpwKHWI1KyxM90/msxV1vnszJOsJSFe4Zlh4fHWp4R/f0g8uEg+cgktPgeA
 IJRsb80CK8aY7dA62PMM0OJ4tcHCaIMh24Q8oeAyovZtejaWiOofY3wCmG1FVxxww4AGxl40UWFC
 4rggooDibEih4AjagAHjNygkl1Ob/VZLRz66KtHIzf8B1/J0hX2FaC8AAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{BasemapDe}) {
+	# Created with:
+	#   wget https://icons.duckduckgo.com/ip3/basemap.de.ico
+	#   convert 'basemap.de.ico[2]' basemap.de.png
+	#   pngcrush -brute -reduce -rem allb -m 0 basemap.de.png basemap.de-2.png
+	#   base64 basemap.de-2.png
+	$images{BasemapDe} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAM9QTFRF
+AAAAHBYAGhQAGBQAICAAGRYAFBQAGBUAAAAAGRMAGhYAFBQAGhcAGBMAGxUAGhYAGhUAKgAAGhUA
+AAAAGhYAGRYAGBMAGhYAGhoAGhcAEhIAGhYAGhUAGxMAGBgAFxcAGRYAFxcAGRQAGhQAFRUAGxYA
+GRQAJCQAGhEAGxcAFxcAAAAAGhUAGRYAGRUAGhIAGhUAEREAGhYAGBUAGRYAIBAAGxcAGhoAGRQA
+GhQAGRcAHg8AAAAAGRkAGRUAFRUAHBwAGxcAGRQAFxcAAAAAiMbeJwAAAEV0Uk5TAC5NSwhbDVQC
+KYEZTjVgijEGlARGUTaCCloOlVdCKiKYCzRODDkzBx5CLAWSaIYdaw9QSkcQOBRwiXERAx9vGAlD
+MiEBb5CptQAAAIhJREFUGBkFwQdCggAAAMBrIVCkRKWihg3S0rZabrH+/6bugIPDo2MAcBIEtTCK
+TwGcJc7rjfQiAy6vrjNhQLMFtHNApwV0c0DvBhT9W4A7cP8AoASPA0CWlGD4BETNZ2A0Bl4ygNdh
+CG/vAB+fX2AyBShm8B2nAD/zxXK13mwBDHbLqtr//sE/7CILCdkMDsYAAAAASUVORK5CYII=
 EOF
     }
 }
@@ -2587,6 +2616,27 @@ sub showmap_url_tilda_geo_de {
 sub showmap_tilda_geo_de {
     my(%args) = @_;
     my $url = showmap_url_tilda_geo_de(%args);
+    start_browser($url);
+}
+
+######################################################################
+# basemap.de
+
+sub showmap_url_basemap_de {
+    my(%args) = @_;
+    require MIME::Base64;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = sprintf "%.2f", 17 - log(($args{mapscale_scale})/3000)/log(2);
+    my $configJSON = <<EOF;
+{"styleID":0,"externalStyleURL":"","zoom":$scale,"lon":$px,"lat":$py,"pitch":0,"bearing":0,"saturation":0,"brightness":0,"changedLayers":[],"changedSubGroups":[],"hiddenSubGroups":[],"hiddenLayers":[347,348,349,330,331,332],"hiddenControls":["zoomlevel"]}
+EOF
+    "https://basemap.de/viewer/?config=" . MIME::Base64::encode_base64($configJSON, '');
+}
+
+sub showmap_basemap_de {
+    my(%args) = @_;
+    my $url = showmap_url_basemap_de(%args);
     start_browser($url);
 }
 
