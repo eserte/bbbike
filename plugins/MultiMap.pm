@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.56;
+$VERSION = 2.57;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1907,7 +1907,8 @@ sub showmap_url_gdi_berlin {
 	fluralkis          => 'hintergrund_k5_farbe,alkis_flurstuecke:flurstuecke',
 	flurinspire        => 'hintergrund_k5_farbe,cp_alkis:CP.CadastralZoning,cp_alkis:CP.CadastralParcel',
 	gruenanlagen       => 'hintergrund_k5_grau,gruenanlagen:spielplaetze,gruenanlagen:gruenanlagen',
-	ortho2025          => 'hintergrund_k5_grau,dop_2025_fruehjahr:dop_2025',
+	ortho2025          => 'hintergrund_k5_grau,truedop_2025_sommer:truedop_2025_sommer_rgb',
+	ortho2025_fruehjahr=> 'hintergrund_k5_grau,dop_2025_fruehjahr:dop_2025',
 	ortho2024          => 'hintergrund_k5_grau,truedop_2024:truedop_2024',
 	ortho2023          => 'hintergrund_k5_grau,truedop_2023:truedop_2023',
     }->{$args{layers}};
