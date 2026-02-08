@@ -3111,7 +3111,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-02-07 vvv
+#: last_checked: 2026-02-08 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -8304,7 +8304,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: adac:1733244580 (inaktiv)
 #: source_id: adac:256162332 (inaktiv)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_289064 (kein Endedatum)
-#: source_id[inactive]: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 5x)
+#: source_id: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 5x)
 #: source_id: bvg2024:172#HIM_FREETEXT_289063 (kein Endedatum)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_293426 (Haltestellenverlegung, kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293415 (Haltestellenverlegung, kein Endedatum)
@@ -8543,7 +8543,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2026-01-22
+#: last_checked: 2026-02-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326

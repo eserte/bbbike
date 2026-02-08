@@ -43576,7 +43576,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2025-03-31 18:00:00"), # undef, # XXX
+       until => 1770576367, # undef, # $isodate2epoch->("2025-03-31 18:00:00"), # undef, # XXX
 #      text  => 'Weinmeisterstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, voraussichtlich bis Ende März 2025, evtl. wird verlängert',
 #      text  => 'Weinmeisterstr. und Gipsstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, geplant bis Ende August 2025',
 #      text  => 'Weinmeisterstr. und Gipsstr.: Fahrbahn vor der Rosenthaler Str. gesperrt, vermutlich bis Mitte September 2025',
@@ -43595,8 +43595,9 @@ EOF
 #: check_frequency: 30d vvv
 # REMOVED (laut bahninfo-forum Sperrung aufgehoben) --- #: next_check: 2025-08-31 (VIZ-Verkehrsmeldung) vvv --- Weinmeisterstr., etwa 70m	q4::inwork 10391,13344 10341,13376
 #: note: Hochbauarbeiten unabhängig von der anderen Baustelle am U-Bahnhof
+#: note: laut osm note nun wieder offen
 #: osm_watch: way id="755340907" version="13"
-#: osm_watch: note 4917519 1
+#: osm_watch: note 4917519 2
 #: also_indoor: traffic (ex-G,ex-W,no-T)
 Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 # REMOVED --- #: next_check ^^^
@@ -50228,7 +50229,7 @@ EOF
 #: osm_watch: way id="722013098" version="13"
 #: osm_watch: way id="1350756367" version="3"
 #: osm_watch: note 5124809 1
-#: last_checked: 2026-01-25 vvv
+#: last_checked: 2026-02-08 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
@@ -51551,7 +51552,8 @@ EOF
 #: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312088 (bereits am nächsten Tag inaktiv)
 #: source_id: bvg2024:140#HIM_FREETEXT_312193
-	q4::inwork 12056,10642 11839,10736
+#: note: wenn es eine Baustelle gibt, dann nur im hinteren Teil an der Audre-Lorde-Str., deshalb q4 -> q3
+	q3::inwork 12056,10642 11839,10736
 EOF
      },
      { from  => undef, # 
