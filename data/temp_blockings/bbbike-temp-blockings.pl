@@ -29154,7 +29154,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-01-25
+#: last_checked: 2026-02-09
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -37895,6 +37895,7 @@ EOF
 #: by: https://entwicklungsstadt.de/tiergarten-wird-die-erweiterung-des-bauhaus-archivs-bis-herbst-2025-fertig/
 #: by: https://entwicklungsstadt.de/kulturbauten-in-der-krise-warum-berlins-grossprojekte-aus-dem-takt-geraten/
 #: by: https://entwicklungsstadt.de/festival-auf-der-baustelle-das-bauhaus-archiv-oeffnet-seine-tueren/
+#: by: https://www.entwicklungsstadt.de/direktorin-bestaetigt-weiteren-zeitverzug-neues-bauhaus-archiv-soll-erst-2027-fertig-werden/
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -37902,7 +37903,7 @@ EOF
 #: osm_watch: way id="481651814" version="6"
 #: last_checked: 2025-12-29
 #: check_frequency: 120d
-#: next_check: 2027-12-31 (stories.bauhaus.de)
+#: next_check: 2027-12-31 (stories.bauhaus.de, entwicklungsstadt)
 	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
      },
@@ -42338,7 +42339,7 @@ EOF
        until => undef, # $isodate2epoch->("2025-12-19 17:00:00"), # 1735833600, # 2025-01-02 17:00
 #      text  => 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025',
 #      text  => 'Metzer Str.: Bauarbeiten, Fahrbahn zwischen Schönhauser Allee und Kollwitzstr. gesperrt, Umwege, vermutlich bis Anfang 2025',
-       text  => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis Ende 2026',
+       text  => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis 2027',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: METZER-2023
@@ -42348,11 +42349,13 @@ EOF
 #: source_id: LMS-BR:308231/72 viz2021:13.41245,52.53267,02.01.2025,06:43 viz2021:13.41245,52.53267, (bis 19.12.2025) (bis 18.12.2026)
 #: osm_watch: way id="23121446" version="38"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
 #: last_checked: 2026-01-19 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
-	q4::inwork; 10908,13978 10933,14122
+# REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-03-31 (Tsp) vvv
+Schönhauser Allee: Radspur gesperrt	q4::inwork; 10908,13978 10933,14122
 #: note: früher wurde man zur nördlichen Fußgängerampel geführt, aber mittlerweile ist hier auch gesperrt, Umweg zur nächsten Überquerungsmöglichkeit mindestens 2x 135m; besser den linken Gehweg benutzen
 Metzer Str.: Fahrbahn gesperrt	q4::inwork; 11006,14087 10933,14122
 Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
@@ -45186,7 +45189,7 @@ EOF
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-02-02 vvv
+#: last_checked: 2026-02-09 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -48072,17 +48075,18 @@ EOF
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 EOF
      },
-     { from  => 1743310800, # 2025-03-30 07:00
-       until => 1749225600, # 2025-06-06 18:00
+     { from  => $isodate2epoch->("2026-02-09 00:00:00"), # 1743310800, # 2025-03-30 07:00
+       until => $isodate2epoch->("2026-06-30 17:00:00"), # 1749225600, # 2025-06-06 18:00
 #      text  => 'Seelingstr.: an der Schloßstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2025 07:00 bis 06.06.2025 18:00',
-       text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
+#      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
+#      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
+       text  => 'Seelingstr.: Bauarbeiten zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis Ende Juni 2026',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
+# REMOVED --- #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv) --- #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv) ---	q4::inwork 2920,12070 2686,12051
+#: source_id: LMS-BR:398542/72 viz2021:13.29634,52.51568,09.02.2026,07:00 (Einbahnstraße, aber in welche Richtung? bis 30.06.2026)
 	q4::inwork 3088,12094 2920,12070
-#: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv)
-#: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv)
-	q4::inwork 2920,12070 2686,12051
 EOF
      },
      { from  => undef, # 
@@ -50660,7 +50664,7 @@ EOF
 #: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2026-01-15 (traffic)
+#: last_checked: 2026-02-09
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -51118,9 +51122,9 @@ EOF
        text  => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: osm_watch: note 4953648 6
+#: osm_watch: note 4953648 7
 #: also_indoor: traffic (none)
-#: last_checked: 2026-01-19
+#: last_checked: 2026-02-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
@@ -51656,11 +51660,12 @@ EOF
 	q4::inwork 3202,7121 3302,7092 3295,6987
 EOF
      },
-     { from  => $isodate2epoch->("2026-02-03 00:00:00"), # 1769295600, # 2026-01-25 00:00
-       until => 1770222477, # $isodate2epoch->("2026-02-06 23:59:59"), # 1769711583, # $isodate2epoch->("2026-03-31 23:59:59"), # 1769814000, # 2026-01-31 00:00
+     { from  => $isodate2epoch->("2026-02-09 00:00:00"), # $isodate2epoch->("2026-02-03 00:00:00"), # 1769295600, # 2026-01-25 00:00
+       until => $isodate2epoch->("2026-02-10 16:00:00"), # 1770222477, # $isodate2epoch->("2026-02-06 23:59:59"), # 1769711583, # $isodate2epoch->("2026-03-31 23:59:59"), # 1769814000, # 2026-01-31 00:00
 #      text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., vom 26.01.2026 bis 30.01.2026',
 #      text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich bis Ende März 2026',
-       text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich vom 4.2.2026 bis 6.2.2026',
+#      text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich vom 4.2.2026 bis 6.2.2026',
+       text  => 'Wuhletalstr.: Sperrung zwischen Märkische Allee und Wolfener Str., voraussichtlich vom 9.2.2026 bis 10.2.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://marzahn-hellersdorf.com/sperrung-wuhletalstrasse-fuer-rad-und-autoverkehr/
@@ -51669,7 +51674,9 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260203
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdz6on5ijc2u
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdzhvgzya22m (witterungsbedingte Verschiebung, noch kein neuer Termin)
-#: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026) (removed)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3meg6v4jm7227
+#: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026) (inaktiv)
+#: source_id: LMS-BR:398566/72 viz2021:13.558472,52.562812,09.02.2026,12:00 (bis 10.02.2026)
 	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
 	2::inwork 20728,17670 20801,17821
 EOF
