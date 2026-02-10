@@ -21218,7 +21218,7 @@ EOF
        until => $isodate2epoch->("2026-02-13 23:59:59"), # undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #      text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #      text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
-       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Mitte Februar 2026',
+       text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Anfang Juni 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/tief/index.html
@@ -21228,7 +21228,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
-#: source_id: LMS-BR:342841/72 viz2021:13.5384,52.42059,12.08.2024,07:00 viz2021:13.5384,52.42059, (bis 31.03.2025) (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025) (bis 30.01.2026) (bis 13.02.2026)
+#: source_id: LMS-BR:342841/72 viz2021:13.5384,52.42059,12.08.2024,07:00 viz2021:13.5384,52.42059, (bis 31.03.2025) (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025) (bis 30.01.2026) (bis 13.02.2026) (bis 03.06.2026)
 #: osm_watch: way id="152466403" version="24"
 #: osm_watch: way id="1424980083" version="3"
 #: osm_watch: way id="1082710233" version="5"
@@ -21237,7 +21237,7 @@ EOF
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
 #: last_checked: 2025-12-12 (mapillary)
-#: next_check: 2026-02-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-06-03 (VIZ-Verkehrsmeldung)
 #: historical_note: früher q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
 	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
@@ -45189,7 +45189,7 @@ EOF
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-02-09 vvv
+#: last_checked: 2026-02-10 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -47545,11 +47545,11 @@ EOF
 EOF
      },
      { from  => 1742108400, # 2025-03-16 08:00
-       until => $isodate2epoch->("2026-02-28 17:00:00"), # 1764345600, # 2025-11-28 17:00
-       text  => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 28.02.2026',
+       until => $isodate2epoch->("2026-04-30 17:00:00"), # 1764345600, # 2025-11-28 17:00
+       text  => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 30.04.2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 256401910 (bis 28.11.2025) (Gehwegsperrung bis 25.07.2025) (bis 28.2.2026)
+#: source_id: 256401910 (bis 28.11.2025) (Gehwegsperrung bis 25.07.2025) (bis 28.2.2026) (bis 30.4.2026)
 	2::inwork 41356,16225 41672,16084
 EOF
      },
@@ -48080,13 +48080,13 @@ EOF
 #      text  => 'Seelingstr.: an der Schloßstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2025 07:00 bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
-       text  => 'Seelingstr.: Bauarbeiten zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis Ende Juni 2026',
+       text  => 'Seelingstr.: Bauarbeiten zwischen Schloßstr. und Danckelmannstr., Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2026',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
 # REMOVED --- #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv) --- #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv) ---	q4::inwork 2920,12070 2686,12051
 #: source_id: LMS-BR:398542/72 viz2021:13.29634,52.51568,09.02.2026,07:00 (Einbahnstraße, aber in welche Richtung? bis 30.06.2026)
-	q4::inwork 3088,12094 2920,12070
+	q4::inwork; 2920,12070 3088,12094
 EOF
      },
      { from  => undef, # 
@@ -48947,7 +48947,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-02-04 (traffic) vvv
+#: last_checked: 2026-02-10 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -49242,7 +49242,7 @@ EOF
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: also_indoor: traffic (none)
-#: last_checked: 2025-12-20
+#: last_checked: 2026-02-10 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -49651,7 +49651,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-02-02
+#: last_checked: 2026-02-10
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50359,7 +50359,7 @@ EOF
        data  => <<'EOF',
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-02-02 (Bauzaun weggeschoben)
+#: last_checked: 2026-02-10 (Bauzaun vermutlich weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -50576,9 +50576,9 @@ EOF
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
 #: last_checked: 2026-02-07 vvv
-# REMOVED  --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
-#: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-11 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
+# REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (Radfahrverbot ist nun aufgehoben) --- Markgrafendamm	q4::inwork 14641,10552 14608,10409 14558,10264
 #: note: q3, weil die gesperrte Strecke recht kurz ist und man nach insgesamt 60m auf der Radspur ist
 Corinthstr.	q3::inwork; 14447,10491 14608,10409
@@ -50664,7 +50664,7 @@ EOF
 #: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
 #: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2026-02-09
+#: last_checked: 2026-02-10
 #: check_frequency: 30d
 #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
@@ -51053,9 +51053,10 @@ EOF
 EOF
      },
      { from  => 1761519600, # 2025-10-27 00:00
-       until => 1765980094, # $isodate2epoch->("2026-01-30 23:59:59"), # 1765407599, # 2025-12-10 23:59
+       until => $isodate2epoch->("2026-03-03 23:59:59"), # 1765980094, # $isodate2epoch->("2026-01-30 23:59:59"), # 1765407599, # 2025-12-10 23:59
 #      text  => 'Georgenstr./Planckstr.: Sperrung wegen Gleisbauarbeiten, vom 28.10.2025 bis Ende Januar 2026',
-       text  => 'Planckstr.: Sperrung wegen Gleisbauarbeiten, voraussichtlich bis Ende Januar 2026',
+#      text  => 'Planckstr.: Sperrung wegen Gleisbauarbeiten, voraussichtlich bis Ende Januar 2026',
+       text  => 'Charlottenstr.: Sperrung wegen Gleisbauarbeiten an der Dorotheenstr., voraussichtlich bis Anfang März 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
@@ -51064,10 +51065,11 @@ EOF
 #: source_id: LMS-BR:388170/72 viz2021:13.39202,52.52009,28.10.2025,07:00 viz2021:13.39202,52.52009, (bis 02.12.2025) (bis 30.01.2026) (bis 03.03.2026)
 # REMOVED (mittlerweile die halbe Fahrbahn der Planckstr. frei) --- #: last_checked: 2025-12-10 vvv --- #: next_check: 2026-01-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (mittlerweile vermutlich weitergewandert) --- Georgenstr.	q4::inwork 9441,12670 9568,12688
-Planckstr.	q4::inwork 9435,12698 9441,12670
+# REMOVED --- Planckstr.	q4::inwork 9435,12698 9441,12670
 # REMOVED --- Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
-Planckstr.	q4::inwork 9441,12670 9454,12558
+# REMOVED --- Planckstr.	q4::inwork 9441,12670 9454,12558
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
+Charlottenstr.	q3::inwork 9454,12558 9462,12481
 EOF
      },
      { from  => 1761675773, # 2025-10-28 19:22
@@ -51675,8 +51677,9 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdz6on5ijc2u
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdzhvgzya22m (witterungsbedingte Verschiebung, noch kein neuer Termin)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3meg6v4jm7227
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3meibzi6zi22h
 #: source_id: LMS-BR:397148/72 viz2021:13.558852,52.562683,26.01.2026,07:00 (bis 30.01.2026) (bis 31.03.2026) (inaktiv)
-#: source_id: LMS-BR:398566/72 viz2021:13.558472,52.562812,09.02.2026,12:00 (bis 10.02.2026)
+#: source_id: LMS-BR:398566/72 viz2021:13.558472,52.562812,09.02.2026,12:00 (bis 10.02.2026) (inaktiv)
 	q4::inwork; 20915,17584 20769,17650 20728,17670 20488,17793
 	2::inwork 20728,17670 20801,17821
 EOF
