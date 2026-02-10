@@ -109,13 +109,13 @@ my %usability_desc =
 	do_tram_opt          => 0,
        )
      : $winter_hardness eq 'feb_2026' # icy paths, fresh snow
-     #                                  -04 -05 -06 07- 
-     ? (cat_to_usability => { NN => 1, # 1   1   1   1
-			      N  => 4, # 3   2   2   4
-			      NH => 6, # 6   4   6   6
-			      H  => 6, # 6   5   6   6
-			      HH => 6, # 6   5   6   6
-			      B  => 6, # 6   5   6   6
+     #                                  -04 -05 -06 07- 10-
+     ? (cat_to_usability => { NN => 1, # 1   1   1   1   1
+			      N  => 5, # 3   2   2   4   5
+			      NH => 6, # 6   4   6   6   6
+			      H  => 6, # 6   5   6   6   6
+			      HH => 6, # 6   5   6   6   6
+			      B  => 6, # 6   5   6   6   6
 			    },
 	do_kfz_adjustment    => 1,
 	do_living_street_opt => 1,
@@ -123,6 +123,7 @@ my %usability_desc =
 	do_busroute_opt      => 1,
 	do_cobblestone_opt   => 0,
 	do_tram_opt          => 0,
+	exceptions_file      => 'winteroptimization_exceptions_2026_02.bbd',
        )
      : $winter_hardness eq 'XXX_busroute'
      ? (cat_to_usability => { NN => 1,
@@ -176,6 +177,26 @@ my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mo
 my $do_living_street_opt =  $usability_desc{do_living_street_opt};
 my $do_cycleroad_opt   =    $usability_desc{do_cycleroad_opt};
 
+my $exceptions_file;
+if ($usability_desc{exceptions_file}) {
+    my @candidates = (
+	bbbike_aux_dir . '/bbd/' . $usability_desc{exceptions_file},
+	bbbike_root . "/tmp/" . $usability_desc{exceptions_file},
+    );
+    my $f;
+    for my $candidate (@candidates) {
+	if (-r $candidate && -s $candidate) {
+	    $f = $candidate;
+	    last;
+	}
+    }
+    if (!defined $f) {
+	warn "WARNING: the specified exceptions file does not exist, checked in '@candidates', continue without!\n";
+    } else {
+	$exceptions_file = $f;
+    }
+}
+
 $destdir = bbbike_root . "/tmp" if !$destdir;
 my $outfile = "$destdir/winter_optimization." . $winter_hardness . "." . ($add_uid ? "$<." : "") . ($as_json ? 'json' : 'st');
 
@@ -220,13 +241,16 @@ if ($do_busroute_opt) {
     my($busroute_file) = create_busroute();
     $str{"busroute"} = Strassen->new($busroute_file);
 }
+if (defined $exceptions_file) {
+    $str{"exceptions"} = Strassen->new($exceptions_file);
+}
 #lock_keys %str;
 
 my %net;
 for my $type (keys %str) {
     $net{$type} = StrassenNetz->new($str{$type});
     my %args = (-usecache => 1);
-    if ($type =~ /^(s|qs)$/) {
+    if ($type =~ /^(s|qs|exceptions)$/) {
 	$args{-net2name} = 1;
     }
     if ($type eq 's') {
@@ -259,6 +283,18 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	my @reason;
 
     CALC: {
+
+	    if (defined $exceptions_file) {
+		my $final_res = $net{'exceptions'}->{Net}{$k1}{$k2};
+		if (defined $final_res) {
+		    my $rec = $net{'exceptions'}->get_street_record($k1, $k2);
+		    (my $name = $rec->[Strassen::NAME]) =~ s{^.*?:\s*}{};
+		    $res = $final_res;
+		    push @reason, $name;
+		    last CALC;
+		}
+	    }
+
 	    my $quality_penalty = 0;
 	    if ($do_cobblestone_opt) {
 		my $q = $net{"qs"}->{Net}{$k1}{$k2};
