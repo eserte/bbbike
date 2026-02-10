@@ -115,6 +115,7 @@ my %usability_desc =
 			    },
 	do_kfz_adjustment    => 1,
 	do_living_street_opt => 1,
+	do_cycleroad_opt     => 1, # upgrade to NH usability
 	do_busroute_opt      => 1,
 	do_cobblestone_opt   => 0,
 	do_tram_opt          => 0,
@@ -169,6 +170,7 @@ my $do_busroute_opt    =    $usability_desc{do_busroute_opt};
 my $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert werden
 my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
 my $do_living_street_opt =  $usability_desc{do_living_street_opt};
+my $do_cycleroad_opt   =    $usability_desc{do_cycleroad_opt};
 
 $destdir = "$FindBin::RealBin/../tmp" if !$destdir;
 my $outfile = "$destdir/winter_optimization." . $winter_hardness . "." . ($add_uid ? "$<." : "") . ($as_json ? 'json' : 'st');
@@ -201,7 +203,7 @@ if ($do_bridge_opt) {
     $str{"br"} = Strassen->new("brunnels");
 }
 $str{"qs"} = Strassen->new("qualitaet_s");
-if ($do_cyclepath_opt || $do_living_street_opt) {
+if ($do_cyclepath_opt || $do_cycleroad_opt || $do_living_street_opt) {
     $str{"rw"} = Strassen->new("radwege_exact");
 }
 if ($do_kfz_adjustment) {
@@ -346,6 +348,18 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		push @reason, $main_cat . $kfz;
 	    } else {
 		push @reason, $main_cat;
+	    }
+
+	    if ($do_cycleroad_opt) {
+		# upgrade cycleroads to at least NH roads
+		my $rw = $net{"rw"}->{Net}{$k1}{$k2};
+		if (defined $rw && $rw =~ /^RW7$/) {
+		    my $maybe_catnum = $cat_to_usability{NH};
+		    if ($maybe_catnum > $cat_num) {
+			$cat_num = $maybe_catnum;
+			push @reason, "Fahrradstraße";
+		    }
+		}
 	    }
 
 	    $res = $cat_num if $cat_num < $res;
