@@ -17,11 +17,15 @@ use lib ("$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	);
+use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
 use Strassen;
 eval 'use BBBikeXS';
 #use Hash::Util qw(lock_keys);
 use Getopt::Long;
 use Fcntl qw(LOCK_EX LOCK_NB);
+
+my $miscsrc = bbbike_root . "/miscsrc";
+my $datadir = bbbike_root . "/data";
 
 my $do_display = 0;
 my $one_instance = 0;
@@ -172,7 +176,7 @@ my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mo
 my $do_living_street_opt =  $usability_desc{do_living_street_opt};
 my $do_cycleroad_opt   =    $usability_desc{do_cycleroad_opt};
 
-$destdir = "$FindBin::RealBin/../tmp" if !$destdir;
+$destdir = bbbike_root . "/tmp" if !$destdir;
 my $outfile = "$destdir/winter_optimization." . $winter_hardness . "." . ($add_uid ? "$<." : "") . ($as_json ? 'json' : 'st');
 
 my $lock_file = "/tmp/winter_optimization." . ($add_uid ? "$<." : ""). "lck";
@@ -189,7 +193,7 @@ if ($one_instance) {
     }
 }
 
-my $strassen_orig = "$FindBin::RealBin/../data/strassen-orig";
+my $strassen_orig = "$datadir/strassen-orig";
 
 my %str;
 if (-r $strassen_orig) {
@@ -432,25 +436,25 @@ sub create_strassen_with_NH {
     use File::Temp qw(tempfile);
     use IPC::Run qw(run);
     my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".bbd", UNLINK => 1);
-    run(["$FindBin::RealBin/convert_orig_to_bbd", "-keep-directive", "alias",
+    run(["$miscsrc/convert_orig_to_bbd", "-keep-directive", "alias",
 	 $strassen_orig],
 	">", $tmpfile) or die $!;
-    run(["$FindBin::RealBin/grepstrassen", "-v", "--namerx", ' \(Potsdam\)', 'plaetze'],
+    run(["$miscsrc/grepstrassen", "-v", "--namerx", ' \(Potsdam\)', 'plaetze'],
 	">>", $tmpfile) or die $!;
-    run(["$FindBin::RealBin/grepstrassen", "-ignoreglobaldirectives", "-catrx", ".", "routing_helper-orig"],
+    run(["$miscsrc/grepstrassen", "-ignoreglobaldirectives", "-catrx", ".", "routing_helper-orig"],
 	"|",
-	["$FindBin::RealBin/replacestrassen", "-catexpr", 's/.*/NN::igndisp/'],
+	["$miscsrc/replacestrassen", "-catexpr", 's/.*/NN::igndisp/'],
 	">>", $tmpfile) or die $!;
     $tmpfile
 }
 
 sub create_busroute {
-    my $cmo = "$FindBin::RealBin/../data/comments_misc-orig";
+    my $cmo = "$datadir/comments_misc-orig";
     -r $cmo or die "Cannot read $cmo";
     use File::Temp qw(tempfile);
     use IPC::Run qw(run);
     my($tmpfh,$tmpfile) = tempfile(SUFFIX => ".bbd", UNLINK => 1);
-    run(["$FindBin::RealBin/grepstrassen", "-catrx", '^busroute_N', $cmo],
+    run(["$miscsrc/grepstrassen", "-catrx", '^busroute_N', $cmo],
 	">", $tmpfile) or die $!;
     $tmpfile;
 }
