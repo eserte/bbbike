@@ -109,20 +109,21 @@ my %usability_desc =
 	do_tram_opt          => 0,
        )
      : $winter_hardness eq 'feb_2026' # icy paths, fresh snow
-     #                                  -04 -05 -06 07- 10-
-     ? (cat_to_usability => { NN => 1, # 1   1   1   1   1
-			      N  => 5, # 3   2   2   4   5
-			      NH => 6, # 6   4   6   6   6
-			      H  => 6, # 6   5   6   6   6
-			      HH => 6, # 6   5   6   6   6
-			      B  => 6, # 6   5   6   6   6
+     #                                  -04 -05 -06 07- 10- 11-
+     ? (cat_to_usability => { NN => 2, # 1   1   1   1   1   2
+			      N  => 6, # 3   2   2   4   5   6
+			      NH => 6, # 6   4   6   6   6   6
+			      H  => 6, # 6   5   6   6   6   6
+			      HH => 6, # 6   5   6   6   6   6
+			      B  => 6, # 6   5   6   6   6   6
 			    },
-	do_kfz_adjustment    => 1,
-	do_living_street_opt => 1,
+	do_kfz_adjustment    => 0,
+	do_living_street_opt => 0,
 	do_cycleroad_opt     => 1, # upgrade to NH usability
 	do_busroute_opt      => 1,
 	do_cobblestone_opt   => 0,
 	do_tram_opt          => 0,
+	do_green_NN_opt      => 1,
 	exceptions_file      => 'winteroptimization_exceptions_2026_02.bbd',
        )
      : $winter_hardness eq 'XXX_busroute'
@@ -176,6 +177,7 @@ my $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert
 my $do_bridge_opt      = 0; # I don't think anymore bridges are critical (and mostly if you have to use one, then usually you cannot avoid it at all)
 my $do_living_street_opt =  $usability_desc{do_living_street_opt};
 my $do_cycleroad_opt   =    $usability_desc{do_cycleroad_opt};
+my $do_green_NN_opt    =    $usability_desc{do_green_NN_opt};
 
 my $exceptions_file;
 if ($usability_desc{exceptions_file}) {
@@ -240,6 +242,9 @@ if ($do_tram_opt) {
 if ($do_busroute_opt) {
     my($busroute_file) = create_busroute();
     $str{"busroute"} = Strassen->new($busroute_file);
+}
+if ($do_green_NN_opt) {
+    $str{"green"} = Strassen->new("green");
 }
 if (defined $exceptions_file) {
     $str{"exceptions"} = Strassen->new($exceptions_file);
@@ -363,6 +368,15 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		print STDERR Data::Dumper->new([$rec,"$k1 $k2"],[])->Indent(1)->Useqq(1)->Dump;
 		warn "Category $main_cat unhandled...\n";
 		last CALC;
+	    }
+
+	    if ($do_green_NN_opt && $main_cat eq 'NN') {
+		my $green = $net{"green"}->{Net}{$k1}{$k2};
+		if (!defined $green) {
+		    push @reason, 'keine Grünanlage';
+		    $cat_num = $cat_to_usability{N}; # upgrade to N
+		}
+		# XXX. evtl noch weitere Indikatoren benutzen, z.B. "Grünanlage/Grünanlagenschild" in handicap_s-orig beachten, im Namen bzw. in der note-Direktive
 	    }
 
 	    if (!$is_bridge && defined $net{"br"}->{Net}{$k1}{$k2} && $net{"br"}->{Net}{$k1}{$k2} eq 'Br') {
