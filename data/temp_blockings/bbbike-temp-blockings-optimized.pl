@@ -3465,9 +3465,8 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
 #: also_indoor: traffic (re-G,ex-H,ex-A,re-W,T)
-#: last_checked: 2026-02-05 (traffic)
-#: check_frequency: 7d (traffic)
-# REMOVED --- #: check_frequency: 14d (traffic)
+#: last_checked: 2026-02-11 (traffic)
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
@@ -6151,7 +6150,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: by: https://az-lichtenrade.de/wp-content/uploads/2025/07/Screenshot-2025-07-07-095708-800x567.png
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu2kux6y6n27
 #: by: https://fahrinfo.vbb.de/him-uploads/1753173224127_Kartenausschnitt_Bahnhofstr.png
-#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/ (für Radfahrer keine Einbahnstraßenregelung in der Goltzstr.)
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/ (für Radfahrer keine Einbahnstraßenregelung in der Goltzstr.) (Feb 2026: Stillstand)
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
@@ -6164,7 +6163,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: last_checked: 2026-02-02 (traffic) vvv
-#: check_frequency: 30d (traffic) vvv
+#: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
@@ -6690,7 +6689,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-24 vvv
+#: last_checked: 2026-02-11 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -7358,7 +7357,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1273476153" version="2"
 #: also_indoor: traffic (G,no-T,no-H,W) vvv
 #: note: eigentlich 1s:q3
-#: last_checked: 2025-12-17
+#: last_checked: 2026-02-11
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (gesobau)
 Wiesenstr.: Einbahnstraßenregelung	q3::inwork; 8048,15829 7948,15802
@@ -8296,7 +8295,25 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'type' => 'gesperrt',
          'until' => 1777586400
        },
-       undef,
+       {
+         'data' => '#: note: by rbb
+#: note: von der Potsdamer Str. aus sind zumindest die Bürgersteige frei, am Marlene-Dietrich-Platz vermutete Vollsperrung (2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz-1/?date=20260211
+	q4::temp 8232,11414 8309,11390 8375,11368
+	q4::temp 8217,11455 8232,11414
+	2::temp 8232,11414 8253,11306 8280,11296
+	2::temp 8280,11296 8318,11324 8375,11368
+	q4::temp 8375,11368 8389,11378 8481,11447
+	2::temp 8309,11390 8318,11324
+	q4::temp 8389,11378 8374,11479
+Eichhornstr. Süd	q4::temp 8278,11257 8289,11205 8343,11133
+',
+         'from' => 1770837120,
+         'id' => 4260,
+         'text' => 'Eichhornstr., Alte Potsdamer Str., Varian-Fry-Str., Ludwig-Beck-Str.: Straßen können wegen der Berlinale gesperrt sein, evtl. sind auch Radfahrer betroffen, bis 22. Februar 2026',
+         'type' => 'gesperrt',
+         'until' => 1771801199
+       },
        {
          'data' => '#: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250216 (Gesamtdauer der Arbeiten bis Mitte 2027)
@@ -9074,6 +9091,7 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
          'data' => '#: next_check_id: BARBAROSSAPLATZ-2025
 #: by: https://www.bew.berlin/aktuelles-und-presse/2025/fernwaerme-ausbau-am-barbarossaplatz-beginnt/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1587005.php
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10135 (Antrag)
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
 #: last_checked: 2026-01-25 vvv
@@ -9124,7 +9142,7 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
-#: last_checked: 2026-01-31 (traffic)
+#: last_checked: 2026-02-11 (von der Danziger Str. gesehen)
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 # REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
@@ -9289,18 +9307,18 @@ Spektegrabensteg	2::inwork -7228,15933 -7243,15943
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 7
+#: osm_watch: note 4801950 8
 #: osm_watch: way id="53168806" version="7"
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-01-01 (osm)
+#: last_checked: 2026-02-11
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 ',
          'from' => undef,
          'id' => 4444,
-         'text' => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Ende Dezember 2025: Absperrung existiert)',
+         'text' => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Mitte Februar 2026: mit Bauzäunen abgesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9591,7 +9609,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        },
        {
          'data' => '#: next_check_id: UFER-2025
-#: last_checked: 2025-12-28 (mapillary)
+#: last_checked: 2026-02-11
 #: check_frequency: 30d
 #: next_check: 2026-03-31 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8420,16365 8346,16283 8245,16064
@@ -9736,7 +9754,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 #: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-01-19 (osm) vvv
+#: last_checked: 2026-02-11 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
@@ -9949,7 +9967,8 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
        },
        {
          'data' => '#: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
-#: last_checked: 2026-01-15 vvv
+#: osm_watch: note 4953642 2
+#: last_checked: 2026-02-11 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Hausburgstr.: gesperrter Abschnitt etwa 50m lang	q4::inwork 13742,13376 13706,13460
@@ -10036,6 +10055,51 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'text' => 'Knesebeckstr.: Bauarbeiten zwischen Kurfürstendamm und Lietzenburger Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.02.2026 07:00 bis 22.03.2026 17:00',
          'type' => 'handicap',
          'until' => 1774195200
+       },
+       {
+         'data' => '	2 -2950,12589 -3013,12909 -3008,13052 -2940,13169
+',
+         'from' => undef,
+         'id' => 4531,
+         'permanent' => 1,
+         'text' => 'Südhafen: Betreten für Unbefugte nicht gestattet',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: TOGO-2025
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Kann die Fahrbahn benutzt werden?
+#: last_checked: 2026-02-11
+#: check_frequency: 21d
+	q3::inwork; 5906,16403 5700,16584
+',
+         'from' => undef,
+         'id' => 4532,
+         'text' => 'Togostr.: Bauarbeiten in Höhe Otawistr., Ausweichen auf Bürgersteig/alten Radweg notwendig, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/dunckerbruecke/ (Bauarbeiten: 2025 bis 2027) (mittlerweile 2026-2027) (mittlerweile 2. Quartal 2026 bis 3. Quartal 2028)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/jahrelange-verzogerungen-in-berlin-senat-verschiebt-weitere-bruckenbauten-uber-den-s-bahn-ring-12504611.html (Verzögerung: Baustart erst 2026, Bauzeit 15 Monate)
+#: by[nocache]: https://archive.is/Onetg
+#: by: https://www.tagesspiegel.de/berlin/noch-mehr-falle-von-risiko-stahl-wie-in-dresden-mindestens-vier-berliner-brucken-mussen-abgerissen-werden-13093906.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-verkehrseinschrankungen-drohen-abriss-plan-fur-zwei-weitere-risiko-brucken-uber-berliner-s-bahn-ring-steht-14930483.html (Baubeginn im 1. Quartal 2026, Bauende 2028)
+#: by: https://www.entwicklungsstadt.de/brueckenerneuerungen-im-prenzlauer-berg-zeitplan-fuer-dunckerbruecke-und-pappelallee-stehen/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mem2uvbli224 (Sperrung)
+#: osm_watch: note 5163943 1
+#: XXX: Dunckerbrücke: Ersatzneubau
+#: XXX ursprüngliche Planung: während der Bauarbeiten soll der Fußgänger- und Radverkehr auf einer Brückenhälfte stattfinden können; mittlerweile wird es wohl eine Vollsperrung geben, ab 3. Quartal 2027 wird der Fuß+Radverkehr über den neuen Rohbau geführt werden
+# REMOVED --- #: last_checked: 2025-05-24 (mapillary)
+# REMOVED --- #: next_check: 2026-06-30 (SenMVKU (2. Quartal 2026))
+#: next_check: 2026-02-12
+Dunckerbrücke	q4::inwork 11689,15639 11654,15572
+',
+         'from' => 1770764400,
+         'id' => 4533,
+         'text' => 'Dunckerbrücke: Sperrung für Kfz- und Radverkehr ab dem 12.02.2026, möglicherweise ist das Schieben weiterhin möglich',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

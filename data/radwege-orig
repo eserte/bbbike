@@ -1012,7 +1012,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-11
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1067,7 +1067,7 @@ Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/gefahrlicher-zickzack-kurs-statt-sicherheit-wird-der-millionenteure-radstreifen-auf-der-schonhauser-allee-jetzt-wieder-demontiert-13841635.html
 #: XXX wegen Hochbaustelle noch nicht fertiggestellt, später: 
-#: last_checked: 2025-12-30 (mapillary)
+#: last_checked: 2026-02-11
 #: historical_note: früher: Gehwegplatten	RW2;
 #Radspur, niedrige Protektion	RW4;
 	RW2; 10941,15697 10953,15787
@@ -1088,7 +1088,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,1552
 #: next_check_id: SCHOENHAUSERALLEE-2024
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2025-12-30 (mapillary)
+#: last_checked: 2026-02-11
 provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
@@ -1591,7 +1591,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: note: mit Leitboys
 	RW4; 7497,5610 7236,5685
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz, Suggestivstreifen wird regelmäßig vor rechtsabbiegenden Autos benutzt
-#: XXX hier werden wohl auch Leitboys entstehen
+#: XXX Leitboys auch in die andere Richtung waren mal geplant
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
@@ -1893,6 +1893,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 	RW1; 14174,7505 14095,7568 14015,7631
 # REMOVED --- #: next_check_id: SONNENALLEE-2014 --- #: XXX laut fritz & vmz bis Ende Dezember 2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111 --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: last_checked: 2018-06-06 --- #: next_check: 2018-08-17 --- #: check_frequency: 30d
 	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14323,7403 14305,7415 14174,7505
+#: by: https://www.entwicklungsstadt.de/estrel-tower-rueckbau-des-zweiten-krans-markiert-weiteren-baufortschritt/
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
@@ -2613,6 +2614,7 @@ eigentlich provisorische Radspuren per Gelbmarkierung, in der Praxis zugeparkt	R
 #: XXX Bauarbeiten (Aufzugeinbau am U-Bhf. Augsburger Str.?), Radspur ist aufgehoben
 #: by: https://www.bahninfo-forum.de/read.php?9,428761,753041#msg-753041 (erster von zwei Aufzügen in Betrieb genommen)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/berliner-verkehr-dauerbaustelle-in-der-city-west-soll-endlich-verschwinden-14913767.html (bis Anfang 2026)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/umbauten-am-u-bahnhof-augsburger-strasse-ende-der-dauerbaustelle-in-der-city-west-verzogert-sich-weiter-15210570.html (bis 30.4.2026?)
 #: source_id: 2147345461 (bis 30.09.2021) (inaktiv)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
@@ -2620,7 +2622,8 @@ eigentlich provisorische Radspuren per Gelbmarkierung, in der Praxis zugeparkt	R
 #: also_indoor: traffic (ex-B[minor])
 #: last_checked: 2025-12-29
 # REMOVED --- #: check_frequency: 45d
-#: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-30 (Tsp)
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
@@ -3111,7 +3114,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-02-08 vvv
+#: last_checked: 2026-02-11 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -4971,7 +4974,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2026-01-02 vvv
+#: last_checked: 2026-02-11 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -6170,7 +6173,12 @@ Beton	RW1; 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
 	RW6;RW6 5052,9723 5067,9679 5065,9418 5053,8979
 	RW6;RW6 10590,525 10783,587
 	RW6;RW6 5560,13382 5580,13587 5609,13790 5647,14067
-	RW1;RW1 5906,16403 5700,16584 5596,16662
+# 
+#: historical_note: früher (bis 2025/2026): Hochbordradwege, alter Asphalt, RW1;RW1
+	RW7;RW7 5906,16403 5700,16584 5596,16662
+#: historical_note: früher (bis 2025/2026): keine Radverkehrsanlage
+	RW7;RW7 5906,16403 6005,16313 6104,16223
+# 
 	RW1;RW1 16130,239 16272,388 16346,481 16422,575 16522,712 16526,786 16451,950
 	RW6;RW6 -2124,1780 -2092,1796 -2002,1806 -1948,1819 -1921,1826 -1910,1829 -1843,1852 -1768,1882 -1737,1904 -1698,1927 -1654,1954 -1590,1985
 	RW6;RW6 -2146,1849 -1984,1911
@@ -8001,7 +8009,7 @@ Grünbeschichtung	RW4; 15417,12823 15367,12815 15357,12813
 Grünbeschichtung	RW4; 15357,12813 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
 #: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2025-12-24 (Radwegschild fehlt noch)
+#: last_checked: 2026-02-11 (Radwegschild fehlt noch)
 #: check_frequency: 45d
 Grünbeschichtung, Poller	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar
@@ -8075,7 +8083,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2026-01-19 (mapillary) vvv
+#: last_checked: 2026-02-11 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8644,7 +8652,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-11
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8671,7 +8679,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2026-01-02 vvv
+#: last_checked: 2026-02-11 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-09-30 (infravelo) vvv

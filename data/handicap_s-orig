@@ -56,7 +56,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-02-07 vvv
+#: last_checked: 2026-02-11 vvv
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="12"
@@ -333,10 +333,11 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 ### Wedding/Gesundbrunnen ###
 # 
 #: next_check_id: PEKINGERPLATZ-2025
+#: next_check_id: NORDUFER-2025
 #: note: laut Baustellenschild bis 01/2026
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-12-17 vvv
+#: last_checked: 2026-02-11 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) vvv
 #: source_id: LMS-BR:392914/72 viz2021:13.35079,52.53931, (bis 31.03.2026)
@@ -344,7 +345,7 @@ Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Umwege, Gehweg für Radf
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork; 6849,14831 6929,14845 7000,14832
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 6849,14831 6824,14821 6709,14782
 #: source_id: LMS-BR:392917/72 viz2021:13.3549,52.5397, (bis 31.03.2026)
-#: osm_watch: note 4845944 1
+#: osm_watch: note 4845944 2
 Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 7000,14832 7007,14911
 #: source_id: LMS-BR:392916/72 viz2021:13.35109,52.54099, (bis 31.03.2026)
 #: note: hier keine expliziten Gehweg-für-Radfahrer-frei-Schilder
@@ -359,8 +360,8 @@ Torfstr.: Bauarbeiten: Abschnitt der Fahrbahn gesperrt	q3::inwork 6849,14831 683
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="3"
-#: last_checked: 2025-11-12
-#: check_frequency: 150d
+#: last_checked: 2026-02-11
+#: check_frequency: 120d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
 #: next_check_id: WEDDINGADVANCEDLABS-2025
@@ -369,7 +370,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 #: by: https://www.entwicklungsstadt.de/forschung-lehre-zukunft-bht-eroeffnet-laborneubau-wal-in-wedding/
 # REMOVED --- #: osm_watch: way id="885130938" version="7"
-#: last_checked: 2025-12-17
+#: last_checked: 2026-02-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -901,10 +902,10 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: note 3913793 10
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2025-11-16 (webcam)
+#: last_checked: 2026-02-11
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (caimmo website)
-(Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2 7995,13537 7963,13489
+(Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
 # 
 # REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: source_id[inactive]: bvg2021:m27#BVG305466_0 --- #: next_check: 2023-09-06 vvv --- #: check_frequency: 90d vvv --- #: last_checked: 2023-05-14 (osm) vvv
 # REMOVED (sieht offen aus) --- #: source_id: viz2021:13.35534,52.52683,28.04.2022,07:00 (bis 07.07.2023) (inaktiv) (bis 06.09.2023) --- #: source_id: viz2021:13.355319,52.52676,28.04.2022,07:00 (bis 7.7.2023) (inaktiv) --- #: osm_watch: way id="140336721" version="33" --- #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
@@ -1294,7 +1295,10 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Prenzlauer Berg ###
 # 
-#: last_checked: 2026-02-07
+#: osm_watch: note 5163520 1
+#: add_fragezeichen: Ist die Fahrbahn wegen der Hochbauarbeiten weiterhin gesperrt?
+#: last_checked: 2026-02-11
+#: check_frequency: 90d
 Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
 # 
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_316063 (kein Endedatum)
@@ -5293,7 +5297,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026)
-#: last_checked: 2026-01-31 vvv
+#: last_checked: 2026-02-11 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-03-15 vvv
 # REMOVED --- #: valid: -20251219
@@ -5631,6 +5635,9 @@ Kohlweißlingstr.: drei Bodenschwellen, Lücke meist frei	q0-; 21598,11190 21637,1
 # 
 #: note: keine Verbotsschilder für Radfahrer
 (Gleditschstr. - Elßholzstr.): einige Fußgänger	q3 7122,9517 7166,9512 7209,9507
+# 
+#: note: fast über die gesamte Breite der Fahrbahn, können nur über den Abflusskanal umfahren werden
+Jean-Monnet-Str.: zwei Bodenschwellen	q2+ 7995,13537 8048,13578
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
