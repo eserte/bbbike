@@ -163,18 +163,30 @@ init_apt() {
 		else
 		    FIRST_WGET_TRIES=5
 		fi
-	        wget --connect-timeout=10 --tries=$FIRST_WGET_TRIES -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key > /tmp/mydebs.bbbike.key || {
+		if debian_ubuntu_version ge debian/trixie
+		then
+		    MYDEBS_BBBIKE_KEY_BASENAME=mydebs.bbbike.2026.asc
+		else
+		    MYDEBS_BBBIKE_KEY_BASENAME=mydebs.bbbike.key
+		fi
+	        wget --connect-timeout=10 --tries=$FIRST_WGET_TRIES -O- http://mydebs.bbbike.de/key/$MYDEBS_BBBIKE_KEY_BASENAME > /tmp/$MYDEBS_BBBIKE_KEY_BASENAME || {
 		    if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
 		    then
 			MYDEBS_BBBIKE_DE_PORTSPEC=:8000
-			wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC}/key/mydebs.bbbike.key > /tmp/mydebs.bbbike.key
+			wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC}/key/$MYDEBS_BBBIKE_KEY_BASENAME > /tmp/$MYDEBS_BBBIKE_KEY_BASENAME
 		    else
-			echo "Cannot fetch mydebs.bbbike.key and TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT not specified"
+			echo "Cannot fetch $MYDEBS_BBBIKE_KEY_BASENAME and TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT not specified"
 			false
 		    fi
 		}
-	        sudo apt-key add /tmp/mydebs.bbbike.key
-	        sudo sh -c "echo deb http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC} ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
+		if debian_ubuntu_version ge debian/trixie
+		then
+		    sudo cp /tmp/$MYDEBS_BBBIKE_KEY_BASENAME /etc/apt/keyrings/$MYDEBS_BBBIKE_KEY_BASENAME
+	            sudo sh -c "echo deb [signed-by=/etc/apt/keyrings/$MYDEBS_BBBIKE_KEY_BASENAME] http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC} ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
+		else
+	            sudo apt-key add /tmp/$MYDEBS_BBBIKE_KEY_BASENAME
+	            sudo sh -c "echo deb http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC} ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
+		fi
 	        sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
 	    fi
 	fi
