@@ -62,7 +62,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 #: osm_watch: way id="1083527067" version="12"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="182614432" version="24"
+#: osm_watch: way id="182614432" version="25"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="24"
@@ -1082,11 +1082,11 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_16_0951_1002_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b%C3%BCrgerstra%C3%9Fe-53-wvm-immobilien.834/#post-22914
 #: by: https://www.entwicklungsstadt.de/baufortschritt-in-der-buergerstrasse-41-eigentumswohnungen-kurz-vor-fertigstellung/ (bezugsfertig ab Anfang 2026)
-#: also_indoor: traffic (ex-B,G,W,no-T)
+#: also_indoor: traffic (ex-B,G,ex-W,no-T)
 #: add_fragezeichen: Besteht die Sperrung in der Bürgerstr. weiterhin?
 #: osm_watch: way id="123748198" version="5"
 #: osm_watch: note 4098252 2
-#: last_checked: 2026-01-14
+#: last_checked: 2026-02-12 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-01-01 (entwicklungsstadt)
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290

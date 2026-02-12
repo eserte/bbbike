@@ -22283,6 +22283,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311487.php
 #: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024) (25.04.2025 - 27.04.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1549582.php
+#: by: https://www.laubinger.de/event/18-koepenicker-winzerfruehlingplant/
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -31254,7 +31255,7 @@ EOF
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="19"
 #: osm_watch: way id="1148659680" version="6"
-#: last_checked: 2026-01-14 (traffic)
+#: last_checked: 2026-02-12 (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -33971,7 +33972,7 @@ EOF
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 19
-#: last_checked: 2026-01-14 (traffic)
+#: last_checked: 2026-02-12 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -45991,8 +45992,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: FINOWKANAL-2025
 #: by: https://www.finowkanal.info/de/bautagebuch?date=20250117 (Bauarbeiten ... Schleusenpaket 1 ... voraussichtlich bis April 2026)
+#: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
 #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
-#: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
+#: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
 #: note: laut berlin-usedom-radweginfo bis Ende 2024, mittlerweile bis Mitte 2025, mittlerweile bis Ende 2025
 #: note: auf finowkanal.info kein Endedatum
@@ -46001,7 +46003,7 @@ EOF
 #: osm_watch: way id="105827213" version="12"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 4
-#: last_checked: 2026-01-28 (research)
+#: last_checked: 2026-02-12 (research)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -47225,7 +47227,7 @@ EOF
 #: also_indoor: traffic (ex-T,G[zu lang])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2026-01-14 (traffic)
+#: last_checked: 2026-02-12 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2028-12-31
@@ -47570,9 +47572,13 @@ EOF
        text  => 'Eichhornstr., Alte Potsdamer Str., Varian-Fry-Str., Ludwig-Beck-Str.: Straßen können wegen der Berlinale gesperrt sein, evtl. sind auch Radfahrer betroffen, bis 22. Februar 2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: by rbb
 #: note: von der Potsdamer Str. aus sind zumindest die Bürgersteige frei, am Marlene-Dietrich-Platz vermutete Vollsperrung (2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz-1/?date=20260211
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3menazi7da22a
+#: source_id: LMS-BR:398774/72 viz2021:13.373511,52.506371,12.02.2026,05:00 (bis 22.02.2026)
+#: source_id: LMS-BR:398777/72 viz2021:13.37318,52.50857,12.02.2026,05:00 (bis 22.02.2026)
+#: source_id: LMS-BR:398775/72 viz2021:13.375836,52.509344,12.02.2026,05:00 (bis 22.02.2026)
+#: source_id: LMS-BR:398776/72 viz2021:13.37318,52.50857,12.02.2026,05:00 (bis 22.02.2026)
 	q4::temp 8232,11414 8309,11390 8375,11368
 	q4::temp 8217,11455 8232,11414
 	2::temp 8232,11414 8253,11306 8280,11296
@@ -49612,10 +49618,11 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: FINOWKANAL-2025
-#: also_indoor: url https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal
+#: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
+#: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2026-01-28 (research)
+#: last_checked: 2026-02-12 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
