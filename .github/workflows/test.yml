@@ -122,6 +122,10 @@ jobs:
             distver:                    bookworm
             bbbike_test_skip_mapserver: 0
             use_bbbike_ppa:             0
+          - dist:                       debian
+            distver:                    trixie
+            bbbike_test_skip_mapserver: 0
+            use_bbbike_ppa:             0
           - dist:                       ubuntu
             distver:                    bionic
             bbbike_test_skip_mapserver: 0
