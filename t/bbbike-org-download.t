@@ -153,20 +153,34 @@ SKIP: {
 	if ($^O eq 'linux' && is_in_path('ldd')) {
 	    my $ldd_output = `ldd $wget_path`;
 	    if ($ldd_output =~ m{(\Qlibgnutls-deb0.so.28\E|\Qlibssl.so.1.0.0\E)}) {
+		diag "Detected very old libgnutls or libssl" if $debug;
 		$no_check_certificate = 1;
-	    } elsif ($ldd_output =~ m{\Qlibgnutls.so.30\E}) {
-		# check for problematic versions
-		my $libgnutls_version;
-		open my $fh, '-|', qw(dpkg -s libgnutls30) or die $!;
-		while(<$fh>) {
-		    chomp;
-		    if (m/^Version:\s+(\S+)/) {
-			$libgnutls_version = $1;
-			last;
+	    } elsif ($ldd_output =~ m{\Qlibgnutls.so.30\E\s+=>\s+(\S+)}) {
+		my $libgnutls_file = $1;
+		my $libgnutls_package;
+		{
+		    open my $fh, '-|', qw(dpkg -S), $libgnutls_file or die $!;
+		    my $line = <$fh>;
+		    if (defined $line) {
+			($libgnutls_package) = $line =~ m{^([^:]+)};
+			diag "Found package $libgnutls_package for version check..." if $debug;
 		    }
 		}
-		if ($libgnutls_version =~ m{^3\.5\.8-5\+deb9u[0-5]$}) {
-		    $no_check_certificate = 1;
+		if (defined $libgnutls_package) {
+		    # check for problematic versions
+		    my $libgnutls_version;
+		    open my $fh, '-|', qw(dpkg -s), $libgnutls_package or die $!;
+		    while(<$fh>) {
+			chomp;
+			if (m/^Version:\s+(\S+)/) {
+			    $libgnutls_version = $1;
+			    diag "Found version $libgnutls_version for version check..." if $debug;
+			    last;
+			}
+		    }
+		    if ($libgnutls_version =~ m{^3\.5\.8-5\+deb9u[0-5]$}) {
+			$no_check_certificate = 1;
+		    }
 		}
 	    }
 	}
