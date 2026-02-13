@@ -8654,7 +8654,7 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (re-G[Südendstr+Heesestr],T[Südendstr],ex-W[Südendstr],A[Heesestr+Südendstr])
+         'data' => '#: also_indoor: traffic (re-G[Südendstr+ex-Heesestr],ex-T[Südendstr],ex-W[Südendstr],A[Heesestr+Südendstr])
 #: osm_watch: way id="1237862681" version="6"
 #: osm_watch: way id="1237862680" version="3"
 #: osm_watch: way id="1237862682" version="3"
@@ -8665,8 +8665,9 @@ Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 4
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-01-31 (traffic) vvv
+#: last_checked: 2026-02-13 (traffic) vvv
 #: check_frequency: 14d vvv
+#: next_check: 2026-02-13
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
 	q4::inwork 5276,5622 5274,5557
 	q3::inwork 5274,5557 5466,5523
@@ -8806,11 +8807,11 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: bvg2024:194#HIM_FREETEXT_286893 (ohne Endedatum)
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026)
-#: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026)
+#: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
+#: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: last_checked: 2026-02-07 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
 Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 #: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (inaktiv)
@@ -8824,7 +8825,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 ',
          'from' => 1748754000,
          'id' => 4353,
-         'text' => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende März 2026',
+         'text' => 'Karl-Kunger-Straße: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende Juli 2026',
          'type' => 'handicap',
          'until' => 1774994399
        },
@@ -8849,15 +8850,15 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
 #: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
-#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 (Gasteiner Str., bis 17.02.2026)
-#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026)
+#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026)
+#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026)
 	q4::inwork 5053,8979 5189,8983
 ',
          'from' => 1765062000,
          'id' => 4359,
-         'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 17.02.2026',
+         'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 17.03.2026',
          'type' => 'handicap',
-         'until' => 1771369199
+         'until' => 1773788399
        },
        undef,
        undef,
@@ -10082,28 +10083,6 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'from' => undef,
          'id' => 4532,
          'text' => 'Togostr.: Bauarbeiten in Höhe Otawistr., Ausweichen auf Bürgersteig/alten Radweg notwendig, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
-       {
-         'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/dunckerbruecke/ (Bauarbeiten: 2025 bis 2027) (mittlerweile 2026-2027) (mittlerweile 2. Quartal 2026 bis 3. Quartal 2028)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/jahrelange-verzogerungen-in-berlin-senat-verschiebt-weitere-bruckenbauten-uber-den-s-bahn-ring-12504611.html (Verzögerung: Baustart erst 2026, Bauzeit 15 Monate)
-#: by[nocache]: https://archive.is/Onetg
-#: by: https://www.tagesspiegel.de/berlin/noch-mehr-falle-von-risiko-stahl-wie-in-dresden-mindestens-vier-berliner-brucken-mussen-abgerissen-werden-13093906.html
-#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-verkehrseinschrankungen-drohen-abriss-plan-fur-zwei-weitere-risiko-brucken-uber-berliner-s-bahn-ring-steht-14930483.html (Baubeginn im 1. Quartal 2026, Bauende 2028)
-#: by: https://www.entwicklungsstadt.de/brueckenerneuerungen-im-prenzlauer-berg-zeitplan-fuer-dunckerbruecke-und-pappelallee-stehen/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mem2uvbli224 (Sperrung)
-#: osm_watch: note 5163943 1
-#: XXX: Dunckerbrücke: Ersatzneubau
-#: XXX ursprüngliche Planung: während der Bauarbeiten soll der Fußgänger- und Radverkehr auf einer Brückenhälfte stattfinden können; mittlerweile wird es wohl eine Vollsperrung geben, ab 3. Quartal 2027 wird der Fuß+Radverkehr über den neuen Rohbau geführt werden
-# REMOVED --- #: last_checked: 2025-05-24 (mapillary)
-# REMOVED --- #: next_check: 2026-06-30 (SenMVKU (2. Quartal 2026))
-#: next_check: 2026-02-12
-Dunckerbrücke	q4::inwork 11689,15639 11654,15572
-',
-         'from' => 1770764400,
-         'id' => 4533,
-         'text' => 'Dunckerbrücke: Sperrung für Kfz- und Radverkehr ab dem 12.02.2026, möglicherweise ist das Schieben weiterhin möglich',
          'type' => 'handicap',
          'until' => undef
        }

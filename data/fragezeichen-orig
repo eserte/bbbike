@@ -4489,7 +4489,7 @@ Cottbusser Str.: Fahrradstraße geplant	?::projected 23104,14827 23175,14823 2322
 #: osm_watch: way id="506295118" version="26"
 #: osm_watch: way id="841291503" version="14"
 #: last_checked: 2026-01-28 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Bouchéstr.: Fahrradstraße wird eingerichtet	?::projected 13188,9134 13298,9252 13357,9313
 Bouchéstr.: Fahrradstraße wird eingerichtet	?::projected 13489,9456 13602,9581
@@ -8969,6 +8969,8 @@ Königsberger Str.: Verbreiterung und Erneuerung der Radwege	? 5256,2379 5229,239
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1639750.php
 #: by: https://www.aktives-adlershof.de/baumassnahmen/umbau-radickestrasse (2. BA: Mitte April 2026 - 8.5.2026: Zinsgutstraße - Nipkowstraße (Vollsperrung))
 #: by: https://www.aktives-adlershof.de/fileadmin/_processed_/2/0/csm_Bauablauf_4cf0b1cb99.png
+#: by: https://www.aktives-adlershof.de/fileadmin/Interne_Dokumente/Projekte/Radickestra%C3%9Fe/2026_02_11_Pr%C3%A4sentation_Radickestra%C3%9Fe.pdf
+#: XXX Vorfahrt in der Fahrradstraße
 #: last_checked: 2025-06-18
 # REMOVED --- #: next_check: 2026-09-30 (infravelo)
 #: next_check: 2026-04-13 (geplanter Beginn der Bauarbeiten)
@@ -9079,6 +9081,7 @@ Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14475,11778 14550,11732
 #: by: https://www.entwicklungsstadt.de/friedrich-ludwig-jahn-sportpark-jetzt-werden-die-flutlichtmasten-gesprengt/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/doppel-sprengung-direkt-am-mauerpark-zwei-explosionen-in-dieser-woche-mitten-in-berlin--so-soll-es-ablaufen-15234365.html
 #: by: https://www.entwicklungsstadt.de/jahn-sportpark-so-verlief-die-sprengung-der-historischen-flutlichtmasten/
+#: by: https://www.entwicklungsstadt.de/kosten-fuer-jahn-sportpark-steigen-auf-ueber-250-millionen-euro/
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: last_checked: 2025-12-17 vvv
@@ -9090,13 +9093,13 @@ Jahnsportpark: wird es während der Bauarbeiten Einschränkungen geben? Werden sic
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1209145.php (2018-2024) (2026-2027)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
 #: XXX Hier soll es eine Einbahnstraßenregelung Radfahrer frei geben; evtl. wird auch die Qualtität besser werden
 #: priority: #C
 #: last_checked: 2026-01-06
 #: check_frequency: 180d
-# REMOVED --- #: next_check: 2024-12-31
+#: next_check: 2027-12-31 (BA-Seite)
 Annenstr. [Wohngebiet]: Einbahnstraße für Kfz geplant	?::projected 11259,11391 11192,11429 11233,11510
 # 
 #: next_check_id: ROSEGGER-2024
@@ -9232,9 +9235,11 @@ Genthiner Str.: Fahrradstraße geplant	? 7415,10883 7393,10809 7354,10671 7330,10
 Kluckstr.: Fahrradstraße geplant	? 7579,11032 7534,10850
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/1069_2025_ds_2192_umbenennung_kluckstrasse_anita_augspurg_strasse.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_07_0405_0468_online.pdf (Umbenennung, wirksam am 23.5.2026)
 #: osm_watch: way id="754567008" version="11"
-#: last_checked: 2026-02-09 (indoor research)
-#: check_frequency: 45d (indoor research)
+#: last_checked: 2026-02-13 (Amtsblatt)
+# REMOVED --- #: check_frequency: 45d (indoor research)
+#: next_check: 2026-05-23 (Amtsblatt)
 Kluckstr.: Umbenennung in Anita-Augspurg-Str. geplant	? 7579,11032 7534,10850
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1501722.php (Umsetzung 2025) (Umsetzung vorbehaltlich der Finanzierung 2026)
@@ -9569,6 +9574,8 @@ Hammelspring - Vogelsang: Bau eines Radwegs	? 10218,73220 10148,73146 9760,72696
 # 
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6147 (Zwischenbericht: verkehrsberuhigter Bereich 2025) (neuer Zwischenbericht: Umsetzung vielleicht 2026)
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6639 (verkehrsberuhigter Bereich 2025)
+#: osm_watch: way id="25939420" version="19"
+#: osm_watch: way id="1429082251" version="1"
 #: priority: #C
 #: last_checked: 2025-08-18 (mapillary)
 #: check_frequency: 180d
@@ -12238,6 +12245,8 @@ Am Sandhaus: werden hier neue Straßen entstehen?	? 14889,25937 15022,25846 15107
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1390034.php (FNP-Änderung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_01_0001_0064_online.pdf (FNP-Änderung 04/22)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1642672.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_07_0405_0468_online.pdf
+#: by[nocache]: https://be.beteiligung.diplanung.de/verfahren/8-102 (XXX noch nicht aktiv)
 #: last_checked: 2025-10-06 (mapillary)
 #: check_frequency: 360d
 Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbindung geben?	? 16512,920 16672,556
@@ -12503,6 +12512,8 @@ U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,
 #: by: https://entwicklungsfeld-britzer-damm.de/faq.html (Planreife Anfang 2026)
 #: by: https://britzer-terrassen.de/ (neue URL für entwicklungsfeld-britzer-damm.de)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1642672.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_07_0405_0468_online.pdf
+#: by[nocache]: https://be.beteiligung.diplanung.de/verfahren/8-98 (noch nicht aktiv XXX)
 #: osm_watch: note 3245865 2
 #: last_checked: 2025-11-29
 #: check_frequency: 360d
@@ -12658,6 +12669,7 @@ Rhenaniabrücke: Neubau geplant	?::projected -1095,15865 -1006,15833
 #: by: https://mein.berlin.de/vorhaben/2025-01297/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_03_0149_0212_online.pdf (zu den Bebauungsplänen)
 #: by: https://www.entwicklungsstadt.de/1-000-wohnungen-sollen-im-hochhaus-an-der-warschauer-bruecke-entstehen/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_07_0405_0468_online.pdf
 #: last_checked: 2025-07-12
 #: check_frequency: 720d
 Tamara-Danz-Str. - Rudolfstr.: wird hier eine Fuß- und Radwegverbindung entstehen?	? 13540,11148 13527,11110
@@ -12874,6 +12886,7 @@ Bebauungsplan 3-43 (Brunnengalerie Buch - Süd): ein neuer Geh/Radweg in Fortsetz
 #: by: https://www.berlin-s21.de/BA-2.html
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-neuer-s-bahn-tunnel-die-plaene-fuer-die-mega-baustelle-am-brandenburger-tor-li.2219252 (ab 2027, ~8 Jahre Bauzeit)
 #: by: https://www.tagesspiegel.de/berlin/pannenbaustelle-auf-nord-sud-verbindung-eroffnung-der-berliner-s-bahn-linie-s21-verschiebt-sich-erneut-13185256.html
+#: by: https://www.berliner-zeitung.de/mensch-metropole/brandenburger-tor-warum-die-strasse-des-17-juni-jahrelang-gesperrt-wird-li.10018676
 #: XXX mögliche Sperrungen im Oberflächenverkehr (laut U-10-04_Verkehrsstudie.pdf):
 #: XXX - Ebertstr. (2030-2035), in den Phasen 1 und 3 südlich Straße des 17. Juni, in Phase 2 auch nördlich davon
 #: XXX - einige Wege im Spreebogenpark (aber nicht der Weg zur Gustav-Heinemann-Brücke), evtl. auch der Spreeuferweg?
@@ -13065,10 +13078,11 @@ Schleuse Friedenthal: Neubau	? -1737,40228 -1648,40148
 #: by: https://www.rbb24.de/panorama/beitrag/2025/11/berlin-platz-margot-friedlaender-benennung-abgeordnetenhaus-holocaust-zeitzeugin.html (9.5.2026)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1626666.php (Senatsbeschluss, kein Datum)
 #: by: https://www.entwicklungsstadt.de/gedenken-an-zeitzeugin-berlin-bekommt-einen-margot-friedlaender-platz/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_07_0405_0468_online.pdf (Wirksamkeit zum 7.5.2026)
 #: osm_watch: relation id="12923368" version="4"
-#: osm_watch: note 5069024 2
+#: osm_watch: note 5069024 3
 #: XXX evtl. Vorfahrt (Einbahnstraße Richtung Westen) einzeichnen?
-#: next_check: 2026-05-09
+#: next_check: 2026-05-07 (Amtsblatt)
 Margot-Friedländer-Platz: geplante Benennung	? 8870,11268
 # 
 #: by: https://www.potsdam.de/system/files/document/2025-09-18-Amtsblatt%2018_0.pdf
