@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -207,7 +207,6 @@ sub action_static_files {
     my($d) = @_;
 
     my @distfiles = qw(
-			   Makefile
 			   doit.pl
 			   brb.css
 			   brb.html-tpl

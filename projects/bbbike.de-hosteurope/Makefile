@@ -246,29 +246,16 @@ BBBIKECGI=		bbbike.cgi
 BBBIKECGI=		bbbike2.cgi
 .endif
 
-BBBIKE_CGI_CONFIG=PLEASE_DEFINE_bbbike.cgi.config
-# following not needed if the mapserver-doit.pl deployment is used
-MAPSERVER_BRB_LOCALINC=	PLEASE_DEFINE_mapserver-brb-brb.map-localinc
 .ifdef TARGET
-.if ${TARGET} == bbbike-pps-jessie || ${TARGET} == hosteurope
-BBBIKE_CGI_CONFIG=	bbbike-hosteurope-jessie.cgi.config
-MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc-jessie
-.endif
 .if ${TARGET} == bbbike-pps-bookworm || ${TARGET} == hosteurope2026
 BBBIKE_CGI_CONFIG=	bbbike-hosteurope-bookworm.cgi.config
+.else
+BBBIKE_CGI_CONFIG=	PLEASE_DEFINE_bbbike.cgi.config
 .endif
 .endif
 
 .ifdef TARGET
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
-.endif
-
-.ifdef TARGET
-.if ${TARGET} == bbbike-pps-bookworm || ${TARGET} == hosteurope2026
-PREPARE_MAPSERVER_DIST_MAIN_TARGET=prepare-mapserver-dist-main-doit
-.else
-PREPARE_MAPSERVER_DIST_MAIN_TARGET=prepare-mapserver-dist-main-make
-.endif
 .endif
 
 all:
@@ -657,12 +644,8 @@ prepare-bbbike-dist-data-tmp-additional:
 	    ${CURDIR}/BBBike/tmp/
 
 prepare-mapserver-dist:	prepare-mapserver-dist-pre \
-			${PREPARE_MAPSERVER_DIST_MAIN_TARGET} \
+			prepare-mapserver-dist-main-doit \
 			prepare-mapserver-dist-post
-
-prepare-mapserver-local-dist:	prepare-mapserver-dist-pre \
-				prepare-mapserver-dist-local-main \
-				prepare-mapserver-dist-post
 
 prepare-mapserver-dist-pre:
 	[ -e ${CURDIR}/cgi-bin/mapserv ] || \
@@ -676,28 +659,6 @@ prepare-mapserver-dist-main-doit:
 	    ./doit.pl --dest-dir /tmp/mapserver-${TARGET} --host ${BBBIKE_HOSTEUROPE_HOST} --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --htdocs-dir /srv/www/bbbike-webserver/public --target-ssh ${BBBIKE_HOSTEUROPE_SSH_HOST}
 	cp -Rpf /tmp/mapserver-${TARGET}/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
-
-# XXX rename /tmp/radzeit_mapserver_dist, here and in mapserver/brb/Makefile
-prepare-mapserver-dist-main-make:
-# XXX   Copying and removing the localinc file here is an ugly hack
-	cp -pf etc/${MAPSERVER_BRB_LOCALINC} ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
-# XXX	need SERVER_NAME hack as cgi/bbbike-hosteurope-jessie.cgi.config otherwise does a fallback to the current hostname
-	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    env SERVER_NAME=bbbike.de ${MAKE} dist-any TARGET=${MAPSERVER_TARGET}
-	rm -f ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
-	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
-	rm -f ${CURDIR}/.not_rsyncable
-
-prepare-mapserver-dist-local-main:
-	touch ${CURDIR}/.not_rsyncable
-# XXX   Copying and removing the localinc file here is an ugly hack
-	cp -pf etc/mapserver-brb-brb.map-localinc ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
-	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ${MAKE} dist-any TARGET=bbbike.hosteurope.herceg.de
-	rm -f ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
-	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
-	chmod 777 ${CURDIR}/$(HTDOCS)/mapserver/brb
-	chmod 777 ${CURDIR}/$(HTDOCS)/mapserver/brb/tmp
 
 prepare-mapserver-dist-post:
 	@echo "XXX Check permissions of $(HTDOCS)/mapserver/brb and maybe WWWUSER in bbbike/mapserver/brb/Makefile"
