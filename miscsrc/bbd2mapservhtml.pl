@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2012,2013,2014,2015,2016,2018,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2012,2013,2014,2015,2016,2018,2023,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # Create a HTML-Formular from bbd data. The HTML form will redirect to
@@ -26,7 +25,6 @@ use lib ("$FindBin::RealBin/..",
 use Strassen::Core;
 use Strassen::Util;
 use Strassen::Combine;
-use Object::Iterate qw(iterate);
 use Getopt::Long;
 use BBBikeVar;
 use CGI qw();
@@ -355,9 +353,11 @@ EOF
     $html = join("\n", @html);
 } else {
     my @lines;
-    iterate {
-	push @lines, $_->[Strassen::COORDS()];
-    } $s;
+    while(1) {
+	my $r = $s->next;
+	last if !@{ $r->[Strassen::COORDS] };
+	push @lines, $r->[Strassen::COORDS()];
+    }
 
     my @coords = lines_to_coords(@lines);
 
