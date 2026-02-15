@@ -88,7 +88,10 @@ if ($coloring) {
 }
 
 if ($do_preamble) {
+    binmode STDOUT, ':encoding(utf-8)';
     print <<"EOF";
+#: #: -*- coding: utf-8 -*-
+#: encoding: utf-8
 #: line_dash: $line_dash
 #: line_width: $line_width
 EOF
