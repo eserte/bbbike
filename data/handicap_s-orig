@@ -80,8 +80,8 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="26"
-#: osm_watch: way id="1072662717" version="30"
+#: osm_watch: way id="1072662716" version="27"
+#: osm_watch: way id="1072662717" version="31"
 #: last_checked: 2026-02-13
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
@@ -884,11 +884,13 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 #: also_indoor: traffic (T,re-G,ex-H,re-W)
 #: last_checked: 2026-01-31 (traffic)
 #: check_frequency: 60d
+#: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
 # REMOVED (Fahrbahn hier frei in beide Richtungen) --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6992,14251 7123,14367
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
+#: by: https://www.deutsches-architekturforum.de/thread/15624-anna-lindh-haus-am-europaplatz/?postID=792919#post792919
 #: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834
 #: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
 #: by: https://www.caimmo.com/de/presse/news/artikel/ca-immo-startet-bau-des-anna-lindh-haus-am-berliner-hauptbahnhof/ (Fertigstellung Ende 2026)
@@ -1014,7 +1016,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-15
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1156,7 +1158,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-15
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 

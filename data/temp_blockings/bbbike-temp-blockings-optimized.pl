@@ -4440,14 +4440,14 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
 #: priority: #B
 #: note: an der Waldowallee Radfahrer verboten, Anlieger frei; wird nicht mehr wiederholt; außerdem Umleitungsempfehlungen vor der Hönower Str. (prominent) und vor dem Römerweg (weniger prominent); mittlerweile (2025-05-20, 2025-09-10) existiert das Radfahrer-verboten-Schild nicht mehr
-#: last_checked: 2025-12-06
+#: last_checked: 2026-02-15
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 #: osm_watch: way id="31525573" version="46"
 #: osm_watch: way id="580507889" version="40"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2025-12-04 (osm)
+#: last_checked: 2026-02-15
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -4930,7 +4930,7 @@ Rüdigerstr.: Baustellenlänge ca. 50m	q4::inwork; 16397,12397 16485,12384
 #: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-15
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-06
@@ -5816,7 +5816,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: note 5093384 3
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-01-29
+#: last_checked: 2026-02-15
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5841,7 +5841,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2025-12-25 vvv
+#: last_checked: 2026-02-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -6766,10 +6766,10 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 4
 #: osm_watch: way id="31525839" version="16"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-01-23 vvv
-#: check_frequency: 45d (hohe Frequenz am Anfang) vvv
+#: last_checked: 2026-02-15 vvv
+#: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
-#: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden)
+#: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
 Hönower Weg	2::inwork 17383,9719 17471,9688
 östliche Dolgenseestr.	2::inwork 17471,9688 17480,9721
 #: next_check ^^^
@@ -9156,7 +9156,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-13 vvv
+#: last_checked: 2026-02-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9239,7 +9239,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        undef,
        {
          'data' => '#: also_indoor: traffic (G,H,no-T)
-#: last_checked: 2026-01-10 (traffic)
+#: last_checked: 2026-02-15 (daf)
 #: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 ',
@@ -9253,7 +9253,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-02-10 (Bauzaun vermutlich weggeschoben)
+#: last_checked: 2026-02-15 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
@@ -9338,7 +9338,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-02-13 vvv
+#: last_checked: 2026-02-15 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -9480,7 +9480,7 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-02-13
+#: last_checked: 2026-02-15
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9755,16 +9755,17 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
        {
          'data' => '#: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung wieder aufgehoben?
-#: last_checked: 2026-01-30 (traffic)
-#: check_frequency: 3d (traffic)
-# REMOVED --- #: check_frequency: 45d
+#: add_fragezeichen: Wann sie die Bauarbeiten beendet?
+#: last_checked: 2026-02-15
+#: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-01-31
-	q4::inwork; 18660,9410 18735,9421 18765,9426 18846,9532 18871,9565
+Hönower Str.: Einbahnstraßenregelung	q4::inwork; 18660,9410 18735,9421
+Hönower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
+# REMOVED (hier Anlieger frei) ---	q4::inwork; 18846,9532 18871,9565
 ',
          'from' => 1763294725,
          'id' => 4501,
-         'text' => 'Hönower Str.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis Ende Januar 2026, evtl. wird die Baustelle verlängert',
+         'text' => 'Hönower Str.: Durchfahrt wegen Bauarbeiten verboten, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9831,7 +9832,7 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
        },
        {
          'data' => '#: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2026-02-02 (traffic) vvv
+#: last_checked: 2026-02-15 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q4::inwork 6124,5983 6226,5995 6318,6006
 Kissinger Str.	q3::inwork 6226,5995 6213,6135

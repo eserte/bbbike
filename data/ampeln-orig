@@ -412,14 +412,14 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-02-14
+#: last_checked: 2026-02-15
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2026-02-14
+#: last_checked: 2026-02-15
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
@@ -4396,7 +4396,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2026-01-04
+#: last_checked: 2026-02-15
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (infravelo, mobilitaetsrat)
 	X::inwork 12185,7381
@@ -4492,7 +4492,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
 #: XXX noch provisorisch, wird verstetigt
-#: last_checked: 2026-01-21
+#: last_checked: 2026-02-15
 #: check_frequency: 30d
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 

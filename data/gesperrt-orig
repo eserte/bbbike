@@ -208,7 +208,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2026-01-23 vvv
+#: last_checked: 2026-02-15 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -288,7 +288,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="6"
-#: last_checked: 2025-12-23
+#: last_checked: 2026-02-15
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -4093,7 +4093,7 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-02-15 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 vvv
 #: osm_watch: way id="752856111" version="15"
@@ -4186,9 +4186,9 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-15
 #: check_frequency: 120d
-#: next_check: 2026-05-01 (entwicklungsstadt, Aushang)
+#: next_check: 2026-05-31 (entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
 # 
 # REMOVED (mittlerweile (oder schon immer): man kommt an der Baustelle vorbei, etwas verwinkelt, aber lohnt nicht, temporär eine Degradierung q2->q3 vorzunehmen) --- #: priority: #B --- #: last_checked: 2025-04-30 --- #: next_check: 2025-07-31 (Halteverbotsschilder) --- Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877
@@ -4369,7 +4369,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
-#: last_checked: 2025-12-04 (osm)
+#: last_checked: 2026-02-15
 #: check_frequency: 150d
 #: next_check: 2026-06-30 (BA-Pressemitteilung)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -4636,7 +4636,7 @@ Straße 171: wegen Bauarbeiten gesperrt	2::inwork 12694,22570 12657,22596
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-15
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4644,7 +4644,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-02-07 vvv
+#: last_checked: 2026-02-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4868,7 +4868,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: last_checked: 2026-01-17
+#: last_checked: 2026-02-15
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
 # REMOVED --- #: next_check: 2027-06-30
@@ -4929,7 +4929,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="19"
-#: last_checked: 2026-01-21
+#: last_checked: 2026-02-15
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
@@ -5068,7 +5068,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-02-13 vvv
+#: last_checked: 2026-02-15 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
