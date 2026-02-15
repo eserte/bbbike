@@ -656,7 +656,7 @@ prepare-mapserver-dist-pre:
 
 prepare-mapserver-dist-main-doit:
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
-	    ./doit.pl --dest-dir /tmp/mapserver-${TARGET} --host ${BBBIKE_HOSTEUROPE_HOST} --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --htdocs-dir /srv/www/bbbike-webserver/public --target-ssh ${BBBIKE_HOSTEUROPE_SSH_HOST}
+	    ./doit.pl --dest-dir /tmp/mapserver-${TARGET} --host ${BBBIKE_HOSTEUROPE_HOST} --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --mapserver-dir /srv/www/bbbike-webserver/public/mapserver/brb --target-ssh ${BBBIKE_HOSTEUROPE_SSH_HOST}
 	cp -Rpf /tmp/mapserver-${TARGET}/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
 

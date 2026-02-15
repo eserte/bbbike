@@ -957,11 +957,11 @@ sub cgi {
 	for my $f ("data/Makefile", "data/Makefile.mapfiles", "data/Makefile.garmin", "data/Makefile.vars", "data/doit.pl", bsd_glob("data/*-orig"), "data/temp_blockings/bbbike-temp-blockings.pl", bsd_glob("data/temp_blockings/*.bbd"),  bsd_glob("miscsrc/*")) {
 	    my($src, $dest) = ("$FindBin::RealBin/../$f", "$docker_context_dir/" . dirname($f));
 	    next if -d $src; # ignore directories in miscsrc
-	    $doit->copy($src, $dest);
+	    _copy_p($doit, $src, $dest);
 	}
-	for my $f ("miscsrc/bbbikedraw.pl", "miscsrc/bbd2esri") {
-	    $doit->chmod(0755, "$docker_context_dir/$f"); # XXX copy should really preserve the file mode
-	}
+	# for my $f ("bbbikedraw.pl", "grepstrassen", "bbd2esri", "bbd2mapservhtml.pl") {
+	#     $doit->chmod(0755, "$docker_context_dir/miscsrc/$f"); # XXX copy should really preserve the file mode
+	# }
 	$doit->system("cp", "-rf", "$FindBin::RealBin/../mapserver/", "$docker_context_dir/mapserver/");
     }
 
@@ -1043,7 +1043,7 @@ EOF
 	$dockerfile .= <<'EOF';
 RUN (cd cgi && cp -f bbbike-debian.cgi.config bbbike.cgi.config)
 RUN (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' mapfiles)
-RUN (cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && perl -I../.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake')
+RUN (cd mapserver/brb && ./doit.pl --dest-dir . --host localhost  --location-style bbbike --bbbike-dir ../.. templates permissions)
 EOF
 	# XXX global config file for mapserver 8.x
 	# XXX review and maybe remove again

@@ -48,7 +48,7 @@ sub compute_config {
     $c{HOST}                     = delete $opts{HOST} // 'localhost'; # XXX needs to be determined by bbbike.cgi.config or so
     $c{LOCAL_BBBIKE_DIR}         = delete $opts{LOCAL_BBBIKE_DIR} // realpath(cwd . "/../..");
     $c{BBBIKE_DIR}               = delete $opts{BBBIKE_DIR} // $c{LOCAL_BBBIKE_DIR};
-    $c{HTDOCS_DIR}               = delete $opts{HTDOCS_DIR} // $c{BBBIKE_DIR};
+    $c{MAPSERVER_DIR}            = delete $opts{MAPSERVER_DIR} // "$c{BBBIKE_DIR}/mapserver/brb";
     $c{WWW_USER}                 = delete $opts{WWW_USER} // 'www-data';
     die "Unhandled options: " . join(' ', %opts) if %opts;
 
@@ -57,7 +57,6 @@ sub compute_config {
     # computed config
     $c{LOCAL_BBBIKE_DATA_DIR}    = "$c{LOCAL_BBBIKE_DIR}/data";
     $c{LOCAL_BBBIKE_MISCSRC_DIR} = "$c{LOCAL_BBBIKE_DIR}/miscsrc";
-    $c{MAPSERVER_DIR}            = "$c{HTDOCS_DIR}/mapserver/brb";
     $c{MAPSERVER_RELURL}         = $c{LOCATION_STYLE} eq 'bbbike' ? '/bbbike/mapserver/brb' : '/mapserver/brb';
     $c{MAPSERVER_URL}            = "http://$c{HOST}$c{MAPSERVER_RELURL}";
     $c{MAPSERVER_PROG_RELURL}    = '/cgi-bin/mapserv';
@@ -246,6 +245,17 @@ sub action_dist_any {
     $d->chmod(0755, "$dest_dir/tmp");
 }
 
+# not included in "action_all", required if mapserver is called from apache
+sub action_permissions {
+    my $d = shift;
+    # XXX www-data works for debian, need to check for other systems
+    $d->chown(undef, 'www-data', $dest_dir);
+    $d->chmod(0775, $dest_dir);
+    $d->mkdir("$dest_dir/tmp");
+    $d->chown(undef, 'www-data', "$dest_dir/tmp");
+    $d->chmod(0775, "$dest_dir/tmp");
+}
+
 # not included in "action_all"
 sub action_crontab {
     my $d = shift;
@@ -276,6 +286,12 @@ sub action_copy_mapserver_config {
 
 ######################################################################
 
+sub action_templates {
+    my $d = shift;
+    action_map_file($d, "brb");
+    action_html_files($d);
+}
+
 sub action_all {
     my $d = shift;
     action_static_files($d);
@@ -296,11 +312,11 @@ GetOptions(
 	   "host=s" => \my $host,
 	   "location-style=s" => \my $location_style,
 	   "bbbike-dir=s" => \my $bbbike_dir,
-	   "htdocs-dir=s" => \my $htdocs_dir,
+	   "mapserver-dir=s" => \my $mapserver_dir,
 	   "target-ssh=s" => \my $target_ssh,
 	   'www-user=s' => \my $www_user,
 	   'debug!' => \my $debug,
-	  ) or die "usage: $0 [--dry-run] [--debug] [--dest-dir directory] [--host host] [--location-style vhost|bbbike] [--bbbike-dir /path...] [--htdocs-dir /path...] [--target-ssh user\@host] [--www-user username] action ...\n";
+	  ) or die "usage: $0 [--dry-run] [--debug] [--dest-dir directory] [--host host] [--location-style vhost|bbbike] [--bbbike-dir /path...] [--mapserver-dir /path...] [--target-ssh user\@host] [--www-user username] action ...\n";
 
 if (!defined $dest_dir) {
     error "Currently defining --dest-dir is mandatory!";
@@ -322,7 +338,7 @@ compute_config($d, $target_doit,
 	       HOST => $host,
 	       LOCATION_STYLE => $location_style,
 	       BBBIKE_DIR => $bbbike_dir,
-	       HTDOCS_DIR => $htdocs_dir,
+	       MAPSERVER_DIR => $mapserver_dir,
 	       WWW_USER => $www_user,
 	      );
 if ($debug) {
@@ -361,6 +377,6 @@ A typical local setup (using "bbbike" location style):
 
 A typical production setup (using "vhost" location style):
 
-    ./doit.pl --dest-dir /tmp/remote_mapserver_dist --host bbbike.de --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --htdocs-dir /srv/www/bbbike-webserver/public --target-ssh bbbike-prod
+    ./doit.pl --dest-dir /tmp/remote_mapserver_dist --host bbbike.de --location-style vhost --bbbike-dir /srv/www/bbbike-webserver/BBBike --mapserver-dir /srv/www/bbbike-webserver/public/mapserver/brb --target-ssh bbbike-prod
 
 =cut

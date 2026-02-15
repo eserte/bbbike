@@ -554,8 +554,7 @@ init_cgi_config() {
 	perl Makefile.PL
 	# -j does not work here
 	(cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' mapfiles)
-	# -j not tested here
-	(cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && perl -I../.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake')
+	(cd mapserver/brb && ./doit.pl --dest-dir . --host localhost  --location-style bbbike --bbbike-dir ../.. templates permissions)
     fi
     (cd cgi && ln -snf bbbike2-ci.cgi.config bbbike2.cgi.config)
 }
