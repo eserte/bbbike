@@ -881,10 +881,12 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 #: next_check_id: PERLEBERGER-2024
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
-#: also_indoor: traffic (T,re-G,ex-H,re-W)
-#: last_checked: 2026-01-31 (traffic)
-#: check_frequency: 60d
-#: next_check: 2026-02-16 (laut rbb endet die Sperrung)
+#: osm_watch: way id="1392961223" version="5"
+#: also_indoor: traffic (T,ex-G,ex-H,ex-W)
+#: last_checked: 2026-02-16 (traffic)
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 2d
+# REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
 # REMOVED (Fahrbahn hier frei in beide Richtungen) --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6992,14251 7123,14367

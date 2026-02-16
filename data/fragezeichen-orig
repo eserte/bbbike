@@ -2122,7 +2122,7 @@ Marienpark: Planstraße 1 geplant	?::projected 8178,3591 8200,3479 8263,3496 8235
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2026-02-15
+#: last_checked: 2026-02-16
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 14020,9524 13981,9474 13923,9405 13892,9365 13849,9310
 # 
@@ -2593,6 +2593,7 @@ Königsweg: Fahrradstraße in Entstehung	?::inwork -3096,1026 -3024,1069 -2813,118
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1598817.php (Tietzenweg: Sanierung ab 20.10.2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1611975.php (Baubeginn am am 10.11.2025)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/gremien/mobilitaetsrat/20251001-protokoll-15-sitzung-mobirat.pdf
+#: osm_watch: way id="1428523821" version="6"
 #: note: während der Leitungsarbeiten Gehweg für Radfahrer frei
 #: add_fragezeichen: Ist die Fahrradstraße im Tietzenweg fertiggestellt?
 #: last_checked: 2025-11-19 (mapillary) (Leitungsarbeiten der BWB)
@@ -2602,6 +2603,8 @@ Tietzenweg: geplante Fahrradstraße	?::projected 3425,4541 3501,4435 3557,4355 35
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1611975.php (2026?)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/gremien/mobilitaetsrat/20251001-protokoll-15-sitzung-mobirat.pdf
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
+#: osm_watch: way id="1423053724" version="1"
+#: osm_watch: way id="148666424" version="28"
 #: next_check: 2026-12-31 (BA-Pressemitteilung)
 Tietzenweg: geplante Fahrradstraße, evtl. Abfräsung des Kopfsteinpflasters	?::projected 3643,4232 3766,4058 3777,4042 3870,3914
 # 
@@ -3540,7 +3543,7 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 #: osm_watch: way id="852517037" version="4"
 #: XXX offene Fragen: wird es irgendwann eine Anbindung zum Bahndamm Richtung Görlitzer Park geben (angedacht ist es, aber Realisierung hat nicht begonnen)? wird es eine Anbindung zur Beermannstr. geben? wird es eine Anbindung zu Am Treptower Park geben?
 #: XXX außerdem wird es auch einen Betriebsweg auf der östlichen Seite geben, aber das wird wohl eine Sackgasse sein
-#: last_checked: 2026-02-13
+#: last_checked: 2026-02-16
 #: check_frequency: 30d
 #: next_check: 2026-04-15 (Tsp)
 # REMOVED (keine baldige Eröffnung zu erwarten) --- #: next_check: 2025-08-27 (rbb)
@@ -3549,14 +3552,14 @@ Betriebsweg Kiefholzstr. - Görlitzer Bahn/Beermannstr.: asphaltiert, noch nicht 
 #: next_check_id: BAB100-2022
 #: osm_watch: way id="612109178" version="4"
 #: XXX asphaltiert; es gibt Tore an beiden Enden
-#: last_checked: 2026-01-21
+#: last_checked: 2026-02-16
 #: check_frequency: 30d
 #: next_check: 2026-04-15 (Tsp)
 Betriebsweg Sonnenallee - Neuköllnische Allee: wird der Weg für Radfahrer befahrbar sein?	?::inwork 14245,7059 14261,7164 14323,7403
 # 
 #: osm_watch: way id="1413347151" version="3"
 #: XXX Hier fertig asphaltiert, aber auch noch Bauzäune.
-#: last_checked: 2026-01-14
+#: last_checked: 2026-02-16
 #: check_frequency: 30d
 #: next_check: 2026-04-15 (Tsp)
 Radweg neben der BAB100: genaue Lage?	?::inwork 14291,7033 14233,6923 14239,6875
@@ -3773,7 +3776,7 @@ Weißenhöher Str./Arno-Philippsthal-Str.: Zebrastreifen geplant	?::projected 2063
 #: osm_watch: note 5077510 2
 #: last_checked: 2026-02-11
 #: check_frequency: 90d
-# REMOVED (keine Fortschritte) --- #: next_check: 2026-02-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-02-20 (VIZ-Verkehrsmeldung)
 Hannoversche Straße/Hessische Straße: Zebrastreifen geplant	?::projected 8770,13567 8775,13606 8799,13641
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10195 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10366 --- #: next_check: 2022-09-30 --- Titiseestraße/Waldshuter Zeile: Zebrastreifen geplant	?::projected 5493,22596 5484,22564 5473,22536
 #### END Zebrastreifen (MoPo-Liste)
@@ -7435,6 +7438,7 @@ Osdorfer Str.: neue parallele Straße wird gebaut, alte Straße wird zum Radweg	?:
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1639117.php (Urbane Mitte Nord, B-Plan VI-140caa)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_05_0281_0324_online.pdf (B-Plan VI-140caa, möglicherweise betroffen: Straße unter dem U-Bahnhof Gleisdreieck)
 #: by: https://www.entwicklungsstadt.de/urbane-mitte-nord-senat-fuehrt-bebauungsplanung-mit-neuen-zielen-fort/
+#: by: https://www.entwicklungsstadt.de/urbane-mitte-am-gleisdreieck-bauausschuss-entscheidet-ueber-hochhaeuser-im-sueden/
 #: last_checked: 2025-04-27
 #: check_frequency: 1080d
 Bebauungsplan VI-140cab "Urbane Mitte Süd" (zwischen Gleisdreieckpark und Technikmuseum): wird die Trebbiner Str. verlängert und entsteht eine Verbindung für Radfahrer? Genaue Lage?	? 8521,10268 8427,10120 8360,10133
@@ -7925,7 +7929,7 @@ Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 1
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408769475/kein-geld-fuer-verkehrssicherheit-ost-bezirke-weisen-kritik-zurueck.html (Verzögerung, Umsetzung erst 2027-2028?)
 #: by: https://www.entwicklungsstadt.de/entlang-der-a100-wann-wird-der-neue-radweg-freigegeben/ (Zweirichtungsradweg auf der südwestlichen Seite?)
 #: XXX mittlerweile wurde bereits im Zuge der Umgestaltung der Kreuzung Elsenstr./Am Treptower Park eine Radwegauffahrt gebaut; außerdem siehe provisorische Führung des Radverkehr Richtung Nordwesten; laut infravelo verzögert sich die Umsetzung wegen einer Baumaßnahme der BWB, Realisierung erst 2027
-#: last_checked: 2026-02-15
+#: last_checked: 2026-02-16
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (infravelo)
 # REMOVED (hier wurde ein Stummel bereits realisiert) --- Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 14031,9673
@@ -8542,6 +8546,7 @@ Bindow: Brückenneubau, Radweg	?::projected 33508,-13362 33989,-13281
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=39532
 #: by: https://www.o-sp.de/download/lbvbrandenburg/196344
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~03-02-2026-wublitzbruecke-an-der-l902 (Bau eines Damms zur Umfahrung bis Ende August 2026)
+#: source_id: LS/223-P/26/017 (bis 21.08.2026)
 #: last_checked: 2026-02-03 (ls website)
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: check_frequency: 90d (indoor research)
@@ -8861,6 +8866,7 @@ Bruno-Taut-Straße 6: Erschließungsstraße entsteht	? 21685,916 21745,997 21882,10
 # REMOVED (eingeschaltet, siehe Mapillary) --- #: source_id: viz2021:13.409747,52.562662,22.01.2024,09:00 (bis 28.02.2024) (inaktiv) --- #: add_fragezeichen: Ist die Fußgängerampel bereits fertig? --- #: XXX Anforderungsampel --- #: osm_watch: node id="11828956479" version="1" --- #: last_checked: 2024-06-01 (mapillary) --- #: check_frequency: 21d --- #: next_check: 2024-02-28 --- Mühlenstr.: Bau einer Fußgängerampel	?::inwork 10672,17428 10679,17441 10686,17453
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=76950
+#: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=85626 (L 90 BÜ-Beseitigung in der OD Werder (Havel) im Landkreis Potsdam-Mittelmark - 1. Planänderung)
 #: by: https://www.o-sp.de/download/lbvbrandenburg/429942
 #: by: https://www.o-sp.de/download/lbvbrandenburg/429944 (Lageplan: Unterführung, evtl. nur für Kfz?)
 #: by: https://www.o-sp.de/download/lbvbrandenburg/429946 (Lageplan: neuer Tunnel im Bereich des Bahnhofs, evtl. für Fußgänger/Radfahrer?)
@@ -9846,6 +9852,15 @@ Koppelweg: entsteht hier irgendwo ein Zebrastreifen?	? 11772,4379 11936,4358 121
 #: check_frequency: 120d
 #: next_check: 2025-12-11
 Almazeile: Service-Straße oder nun Straße ohne Namen?	? -1616,18112 -1660,18114
+# 
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1643651.php (voraussichtlich KW 8/2026)
+#: by: https://www.entwicklungsstadt.de/einbahnstrassen-im-monumentenkiez-bezirk-ordnet-verkehr-neu/
+#: priority: #D vvv
+#: next_check: 2026-02-20 vvv
+Bautzener Str.: Einbahnstraßenregelung (offen von S nach N) für Kfz geplant	?::projected; 8186,9380 8185,9338 8183,9260 8182,9240 8180,9099
+Hochkirchstr.: Einbahnstraßenregelung (offen von N nach S) für Kfz geplant	?::projected; 8081,9120 8079,9194 8098,9194 8100,9240 8102,9262 8105,9313 8076,9316 8086,9418
+#: next_check ^^^
+#: priority ^^^
 # 
 #: section ^^^
 #: ignore ^^^
@@ -12185,6 +12200,8 @@ Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entst
 #: by: https://www.entwicklungsstadt.de/bis-sommer-2026-neuer-gruenzug-weg-bringt-bewegung-in-die-cite-foch/
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13939 (Vorlage zur Beschlussfassung)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/___tmp/tmp/45081036/hjSByebIJrZtGzUOBHmQh98eOBvllCmkQeNOYIV3/OsTdwMEN/62-Anlagen/01/Anlagea_XX-277a_Planzeichnung_Stand_01082024.pdf
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1643552.php
+#: by: https://www.entwicklungsstadt.de/cite-foch-in-reinickendorf-bebauungsplan-beschlossen-300-wohnungen-folgen/
 #: XXX Bebauungsplan XX-277a Cité Foch (Nord)
 #: XXX laut B-Plan wird es weitere Änderungen geben, z.B. Zurückstufung eines Teils der Avenue Charles de Gaulle (Durchfahrt für MIV an der nördlichen Rue Racine nicht mehr möglich), Rue Lamartine wird für den MIV gesperrt, Fußwege im Süden könnten anders strukturiert werden
 #: osm_watch: way id="439885059" version="8"

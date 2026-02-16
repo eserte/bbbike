@@ -4501,7 +4501,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-02-13 vvv
+#: last_checked: 2026-02-16 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -4525,7 +4525,7 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune können bereits w
 ',
          'from' => undef,
          'id' => 3028,
-         'text' => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
+         'text' => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Mitte Februar 2026: Bauzäune sind weggeschoben, Durchfahrt kann möglich sein)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7023,6 +7023,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: osm_watch: way id="23121446" version="38"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
+#: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
 #: last_checked: 2026-01-19 vvv
 #: check_frequency: 90d vvv
@@ -7434,7 +7435,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
-#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026) (bis 28.02.2026)
+#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026) (bis 28.02.2026) (bis 31.03.2026)
 #: source_id[inactive]: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
 #: source_id[inactive]: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
@@ -7449,9 +7450,9 @@ Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4
 ',
          'from' => undef,
          'id' => 4058,
-         'text' => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, außerdem Sperrung in der Vereinsstr., voraussichtlich bis Ende Februar 2026',
+         'text' => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, außerdem Sperrung in der Vereinsstr., voraussichtlich bis Ende März 2026',
          'type' => 'handicap',
-         'until' => 1772319599
+         'until' => 1774994399
        },
        undef,
        undef,
@@ -7913,6 +7914,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        undef,
        {
          'data' => '#: next_check_id: ZURALTENBOERSE-2025
+#: osm_watch: node id="12522972446" version="1"
 #: last_checked: 2025-06-09
 #: check_frequency: 180d
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
@@ -8751,7 +8753,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-02-10 (traffic) vvv
+#: last_checked: 2026-02-16 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -9156,7 +9158,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-02-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9338,7 +9340,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-02-16 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -9849,7 +9851,12 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
        {
          'data' => '#: next_check_id: KANZLERPARK-2024
 #: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
+#: osm_watch: way id="1126186878" version="6"
+#: osm_watch: note 5130610 1
+#: osm_watch: note 5130626 1
+#: osm_watch: note 5096118 2
 #: add_fragezeichen: Ist der Uferweg wieder offen?
+#: XXX auch  laut osm note bis 28.2.2026 gesperrt
 #: last_checked: 2025-12-05 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2026-02-28
@@ -10071,6 +10078,28 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'text' => 'Paaren - Grünefeld: Bauarbeiten mit Sperrung, vom 2. März 2026 bis Mitte August 2026',
          'type' => 'gesperrt',
          'until' => 1786831199
+       },
+       {
+         'data' => '#: source_id: LMS-BR:399141/72 viz2021:13.284481,52.470838, (bis 31.12.2026)
+	q4::inwork 2465,6984 2360,7107
+',
+         'from' => 1771268404,
+         'id' => 4535,
+         'text' => 'Bernadottestr.: Bauarbeiten zwischen Hammersteinstr. und Pücklerstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 31.12.2026',
+         'type' => 'handicap',
+         'until' => 1798736400
+       },
+       {
+         'data' => '#: source_id: LMS-BR:399098/72 viz2021:13.421275,52.551604,16.02.2026,06:00 (bis 15.04.2026)
+Kuglerstr.	q4::inwork 11467,16238 11543,16207
+#: source_id: LMS-BR:399099/72 viz2021:13.42011,52.55189,16.02.2026,06:00 (bis 15.04.2026)
+Lewaldstr.	q4::inwork 11401,16265 11470,16394
+',
+         'from' => 1771110000,
+         'id' => 4536,
+         'text' => 'Kuglerstr.: Bauarbeiten zwischen Glaßbrennerstr. und Scherenbergstr. sowie in der Lewaldstr., Sperrungen, evtl. sind auch Radfahrer betroffen, vom 16.02.2026 06:00 bis 15.04.2026',
+         'type' => 'handicap',
+         'until' => 1776268800
        }
      
 );
