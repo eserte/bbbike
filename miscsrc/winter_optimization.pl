@@ -57,117 +57,145 @@ if ($winter_hardness eq '1') {
     $winter_hardness = 'very_snowy';
 }
 
-my %usability_desc =
-    ($winter_hardness eq 'snowy'
-     ? (cat_to_usability => { NN => 1,
-			      N  => 3,
-			      NH => 4,
-			      H  => 5,
-			      HH => 6,
-			      B  => 6,
-			    },
-	do_kfz_adjustment  => 1, # use -2/-1/+1/+2 adjustment from comments_kfzverkehr
-	do_cobblestone_opt => 1,
-	do_tram_opt        => 1,
-       )
-     : $winter_hardness eq 'very_snowy'
-     ? (cat_to_usability => { NN => 1,
-			      N  => 2,
-			      NH => 4,
-			      H  => 5,
-			      HH => 6,
-			      B  => 6,
-			    },
-	do_kfz_adjustment  => 1, # use -2/-1/+1/+2 adjustment from comments_kfzverkehr
-	do_cobblestone_opt => 1,
-	do_tram_opt        => 1,
-       )
-     : $winter_hardness eq 'dry_cold'
-     ? (cat_to_usability => { NN => 1, # dry but icy cyclepaths
-			      N  => 6,
-			      NH => 6,
-			      H  => 6,
-			      HH => 6,
-			      B  => 6,
-			    },
-	do_kfz_adjustment  => 0,
-	do_cobblestone_opt => 0,
-	do_tram_opt        => 0,
-       )
-     : $winter_hardness eq 'jan_2026' # some snowy days, freezing rain
-     ? (cat_to_usability => { NN => 1,
-			      N  => 4,
-			      NH => 6,
-			      H  => 6,
-			      HH => 6,
-			      B  => 6,
-			    },
-	do_kfz_adjustment    => 1,
-	do_living_street_opt => 1,
-	do_busroute_opt      => 1,
-	do_cobblestone_opt   => 0,
-	do_tram_opt          => 0,
-       )
-     : $winter_hardness eq 'feb_2026' # icy paths, fresh snow
-     #                                  -04 -05 -06 07- 10- 11-
-     ? (cat_to_usability => { NN => 2, # 1   1   1   1   1   2
-			      N  => 6, # 3   2   2   4   5   6
-			      NH => 6, # 6   4   6   6   6   6
-			      H  => 6, # 6   5   6   6   6   6
-			      HH => 6, # 6   5   6   6   6   6
-			      B  => 6, # 6   5   6   6   6   6
-			    },
-	do_kfz_adjustment    => 0,
-	do_living_street_opt => 0,
-	do_cycleroad_opt     => 1, # upgrade to NH usability
-	do_busroute_opt      => 1,
-	do_cobblestone_opt   => 0,
-	do_tram_opt          => 0,
-	do_green_NN_opt      => 1,
-	exceptions_file      => 'winteroptimization_exceptions_2026_02.bbd',
-       )
-     : $winter_hardness eq 'XXX_busroute'
-     ? (cat_to_usability => { NN => 1,
-			      N  => 1,
-			      NH => 6,
-			      H  => 6,
-			      HH => 6,
-			      B  => 6,
-			    },
-	do_busroute_opt     => 1,
-       )
-     : $winter_hardness eq 'grade1' # frischer Schnee: nur HH gut befahrbar, H und NH mit Abstufungen
-     ? (cat_to_usability => { NN => 1,
-			      N  => 1,
-			      NH => 2,
-			      H  => 2,
-			      HH => 6,
-			      B  => 6,
-			    },
-       )
-     : $winter_hardness eq 'grade2' # nach 2-3 Tagen: HH, H, NH, Bus gut befahrbar
-     ? (cat_to_usability => { NN => 1,
-			      N  => 1,
-			      NH => 6,
-			      H  => 6,
-			      HH => 6,
-			      B  => 6,
-			    },
-	do_busroute_opt     => 1,
-       )
-     : $winter_hardness eq 'grade3' # nach 3-4 Tagen: HH, H, NH, N gut befahrbar (außer RW6)
-     ? (cat_to_usability => { NN => 1,
-			      N  => 6,
-			      NH => 6,
-			      H  => 6,
-			      HH => 6,
-			      B  => 6,
-			    },
-	do_busroute_opt     => 1,
-	do_living_street_opt => 1,
-       )
-     : die "winter-hardness should be snowy, very_snowy, or dry_cold"
+my %usability_desc;
+my %usability_descs =
+    (
+	# generic scenarios
+	'light_snowy' => {
+	    cat_to_usability => { NN => 2,
+				  N  => 4,
+				  NH => 6,
+				  H  => 6,
+				  HH => 6,
+				  B  => 6,
+			      },
+	    do_kfz_adjustment    => 1,
+	    do_living_street_opt => 1,
+	    do_cycleroad_opt     => 1, # upgrade to NH usability (guessed)
+	    do_busroute_opt      => 1,
+	    do_cobblestone_opt   => 0,
+	    do_tram_opt          => 0,
+	    do_green_NN_opt      => 0,
+	},
+	'snowy' => { # XXX not reviewed
+	    cat_to_usability => { NN => 1,
+				  N  => 3,
+				  NH => 4,
+				  H  => 5,
+				  HH => 6,
+				  B  => 6,
+			      },
+	    do_kfz_adjustment  => 1, # use -2/-1/+1/+2 adjustment from comments_kfzverkehr
+	    do_cobblestone_opt => 1,
+	    do_tram_opt        => 1,
+	},
+	'very_snowy' => { # XXX not reviewed
+	    cat_to_usability => { NN => 1,
+				  N  => 2,
+				  NH => 4,
+				  H  => 5,
+				  HH => 6,
+				  B  => 6,
+			      },
+	    do_kfz_adjustment  => 1, # use -2/-1/+1/+2 adjustment from comments_kfzverkehr
+	    do_cobblestone_opt => 1,
+	    do_tram_opt        => 1,
+	},
+	'dry_cold' => { # XXX not reviewed
+	    cat_to_usability => { NN => 1, # dry but icy cyclepaths
+				  N  => 6,
+				  NH => 6,
+				  H  => 6,
+				  HH => 6,
+				  B  => 6,
+			      },
+	    do_kfz_adjustment  => 0,
+	    do_cobblestone_opt => 0,
+	    do_tram_opt        => 0,
+	},
+	'grade1' => { # XXX not reviewed: frischer Schnee: nur HH gut befahrbar, H und NH mit Abstufungen
+	    cat_to_usability => { NN => 1,
+				  N  => 1,
+				  NH => 2,
+				  H  => 2,
+				  HH => 6,
+				  B  => 6,
+			      },
+	},
+	'grade2' => { # XXX not reviewed: nach 2-3 Tagen: HH, H, NH, Bus gut befahrbar
+	    cat_to_usability => { NN => 1,
+				  N  => 1,
+				  NH => 6,
+				  H  => 6,
+				  HH => 6,
+				  B  => 6,
+			      },
+	    do_busroute_opt     => 1,
+	},
+	'grade3' => { # XXX not reviewed: nach 3-4 Tagen: HH, H, NH, N gut befahrbar (außer RW6)
+	    cat_to_usability => { NN => 1,
+				  N  => 6,
+				  NH => 6,
+				  H  => 6,
+				  HH => 6,
+				  B  => 6,
+			      },
+	    do_busroute_opt      => 1,
+	    do_living_street_opt => 1,
+	},
+	# experiments
+	'XXX_busroute' => {
+	    cat_to_usability => { NN => 1,
+				  N  => 1,
+				  NH => 6,
+				  H  => 6,
+				  HH => 6,
+				  B  => 6,
+			      },
+	    do_busroute_opt     => 1,
+	},
+	# special scenarios
+	'jan_2026' => { # some snowy days, freezing rain
+	    cat_to_usability => { NN => 1,
+				  N  => 4,
+				  NH => 6,
+				  H  => 6,
+				  HH => 6,
+				  B  => 6,
+			      },
+	    do_kfz_adjustment    => 1,
+	    do_living_street_opt => 1,
+	    do_busroute_opt      => 1,
+	    do_cobblestone_opt   => 0,
+	    do_tram_opt          => 0,
+	},
+	'feb_2026' => { # icy paths, fresh snow, updated several times
+	    #                               -04 -05 -06 07- 10- 11-
+	    cat_to_usability => { NN => 2, # 1   1   1   1   1   2
+				  N  => 6, # 3   2   2   4   5   6
+				  NH => 6, # 6   4   6   6   6   6
+				  H  => 6, # 6   5   6   6   6   6
+				  HH => 6, # 6   5   6   6   6   6
+				  B  => 6, # 6   5   6   6   6   6
+			      },
+	    do_kfz_adjustment    => 0,
+	    do_living_street_opt => 0,
+	    do_cycleroad_opt     => 1, # upgrade to NH usability
+	    do_busroute_opt      => 1,
+	    do_cobblestone_opt   => 0,
+	    do_tram_opt          => 0,
+	    do_green_NN_opt      => 1,
+	    exceptions_file      => 'winteroptimization_exceptions_2026_02.bbd',
+	}
     );
+if ($winter_hardness eq 'feb_2026_b') {
+    %usability_desc = %{ $usability_descs{light_snowy} };
+    $usability_desc{exceptions_file} = 'winteroptimization_exceptions_2026_02.bbd';
+} elsif (exists $usability_descs{$winter_hardness}) {
+    %usability_desc = %{ $usability_descs{$winter_hardness} };
+} else {
+    die "Unknown winter-hardness '$winter_hardness'. Valid values are: " . join(',', sort keys %usability_descs) . "\n"
+}
 my %cat_to_usability   = %{ $usability_desc{cat_to_usability} };
 my $do_cobblestone_opt =    $usability_desc{do_cobblestone_opt};
 my $do_kfz_adjustment  =    $usability_desc{do_kfz_adjustment};
