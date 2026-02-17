@@ -6795,15 +6795,16 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED ---	2::inwork 7090,19943 7123,19855 7138,19839
 #: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
 #: note: mittlerweile laufen Rückbauarbeiten
+#: note: der direkte Umweg über das Stadler-Gelände kann gesperrt sein (Wochenende? sonntags?), gesehen am 2025-02-15 Sun gegen 11:30
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2026-01-17 (bahninfo-forum)
+#: last_checked: 2026-02-15 (mapillary)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
 ',
          'from' => undef,
          'id' => 3827,
-         'text' => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten gesperrt, vielleicht dauerhaft, evtl. ist ein Umweg über das Stadler-Gelände möglich',
+         'text' => 'Bhf. Wilhelmsruh - Hertzstr.: wegen Bauarbeiten gesperrt, vielleicht dauerhaft, evtl. ist an Werktagen ein Umweg über das Stadler-Gelände möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7020,12 +7021,12 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029) (inaktiv)
 #: source_id: LMS-BR:308232/72 viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025) (bis 18.12.2026)
 #: source_id: LMS-BR:308231/72 viz2021:13.41245,52.53267,02.01.2025,06:43 viz2021:13.41245,52.53267, (bis 19.12.2025) (bis 18.12.2026)
-#: osm_watch: way id="23121446" version="38"
+#: osm_watch: way id="23121446" version="39"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2026-01-19 vvv
+#: last_checked: 2026-02-13 (osm) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2027-03-31 (Tsp) vvv
@@ -7332,7 +7333,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="1273476153" version="2"
 #: also_indoor: traffic (G,no-T,no-H,W) vvv
 #: note: eigentlich 1s:q3
-#: last_checked: 2026-02-11
+#: last_checked: 2026-02-15 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (gesobau)
 Wiesenstr.: Einbahnstraßenregelung	q3::inwork; 8048,15829 7948,15802
@@ -7581,7 +7582,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-02-10 vvv
+#: last_checked: 2026-02-17 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8193,19 +8194,19 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
 #: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026) (bis 17.02.2026)
+#: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026) (bis 17.02.2026) (bis 23.07.2026)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
 #: also_indoor: traffic (re-H,T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-02-05 (traffic)
+#: last_checked: 2026-02-17 (traffic)
 # REMOVED --- #: check_frequency: 21d (traffic)
-#: next_check: 2026-02-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-07-23 (VIZ-Verkehrsmeldung)
 	q4::inwork 2396,9427 2467,9425 2592,9419
 ',
          'from' => 1737970440,
          'id' => 4247,
-         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 17.02.2026, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Bismarckplatz und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 23.07.2026, evtl. werden die Bauarbeiten verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8340,8 +8341,8 @@ Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
 #: osm_watch: note 4188310 4
-#: also_indoor: traffic (G,T,ex-A,W)
-#: last_checked: 2025-12-20 (traffic) vvv
+#: also_indoor: traffic (G,T,ex-A,W[degradiert zu NN])
+#: last_checked: 2026-02-17 (traffic) vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (traffic) vvv
@@ -10100,6 +10101,16 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'text' => 'Kuglerstr.: Bauarbeiten zwischen Glaßbrennerstr. und Scherenbergstr. sowie in der Lewaldstr., Sperrungen, evtl. sind auch Radfahrer betroffen, vom 16.02.2026 06:00 bis 15.04.2026',
          'type' => 'handicap',
          'until' => 1776268800
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260217
+	q4::inwork 12862,14618 12780,14675 12700,14726
+',
+         'from' => 1771359027,
+         'id' => 4537,
+         'text' => 'Anton-Saefkow-Str.: Bauarbeiten zwischen Eugen-Schönhaar-Str. und Bötzowstr, Sperrung, bis Ende August 2026',
+         'type' => 'handicap',
+         'until' => 1788213599
        }
      
 );

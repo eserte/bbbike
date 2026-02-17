@@ -7,7 +7,7 @@
 #: temporary vvv
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
-#: last_checked: 2026-02-09
+#: last_checked: 2026-02-17
 #: check_frequency: 60d
 Michaelbrücke	F::inwork 11676,11839
 # 
@@ -4355,6 +4355,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (bei osm entfernt) --- #: next_check_id: CHAUSSEE-2020 --- #: osm_watch: node id="26748289" version="10" --- #: last_checked: 2023-05-18 --- #: check_frequency: 60d --- #: next_check: 2023-05-26 ---	X::inwork 8336,14586
 # 
 #: historical_note: eine provisorische Ampel gab es hier lange (4 oder 5 Jahre?), im Dezember 2025 wurde die permanente Ampel fertiggestellt
+#: note: Anforderung für Radfahrer aus der Boyenstr. sowie linksabbiegende Radfahrer in die Boyenstr.
 	X 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 
@@ -4430,7 +4431,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 2
-#: last_checked: 2026-01-14 (mapillary) vvv
+#: last_checked: 2026-02-15 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

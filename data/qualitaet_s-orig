@@ -485,7 +485,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-02-13
+#: last_checked: 2026-02-17
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -1053,7 +1053,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="28"
-#: last_checked: 2026-02-07 (mapillary)
+#: last_checked: 2026-02-15 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1278,9 +1278,12 @@ Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
 # 
 Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 9255,20038 9226,20124 9165,20292 9149,20336
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
-Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
-Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, betonierter Gehweg für Radfahrer frei	Q1+ 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
-Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, Gehweg mit Verbundsteinpflaster für Radfahrer frei	Q1 8513,21099 8409,21183 8316,21240 8277,21257
+#: historical_note: bis Dez 2025: Asphalt, aber Q2
+Friedrich-Engels-Str.: Asphalt	Q0 8967,20539 8904,20596
+#: historical_note: bis Dez 2025: Fahrbahn Kopfsteinpflaster, betonierter Gehweg für Radfahrer frei, Q1+
+Friedrich-Engels-Str.: Fahrbahn asphaltiert, betonierter Gehweg für Radfahrer frei	Q0 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
+#: historical_note: bis Dez 2025: Fahrbahn Kopfsteinpflaster, Gehweg mit Verbundsteinpflaster für Radfahrer frei, Q1
+Friedrich-Engels-Str.: Fahrbahn asphaltiert, Gehweg mit Verbundsteinpflaster für Radfahrer frei	Q0 8513,21099 8409,21183 8316,21240 8277,21257
 Quickborner Str.: Kopfsteinpflaster, zwischen den Straßenbahnschienen betoniert	Q1 8162,21302 8078,21415
 Quickborner Str.: Kopfsteinpflaster	Q2 8078,21415 8016,21499
 # 

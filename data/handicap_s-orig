@@ -82,7 +82,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="27"
 #: osm_watch: way id="1072662717" version="31"
-#: last_checked: 2026-02-13
+#: last_checked: 2026-02-17
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -883,7 +883,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,ex-G,ex-H,ex-W)
-#: last_checked: 2026-02-16 (traffic)
+#: last_checked: 2026-02-17 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 2d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
@@ -2418,8 +2418,12 @@ Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8
 Hedwigskirchgasse: Fußgänger	q1 9737,12238 9747,12205
 #: XXX_prog: Bordstein (BS) nur am Südende
 Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9755,12144
-#: XXX_prog: BS am Nordende, flach
-Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
+# 
+#: last_checked: 2026-02-17
+#: check_frequency: 10d
+# XXX (später wiederherstellen) --- #: XXX_prog: BS am Nordende, flach --- Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
+Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
+# 
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3+ 13535,10184 13371,9974
 Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 #: note: Grünanlage mit "Radfahren-verboten-Zeichen" (FH/KB-Style)
