@@ -72,13 +72,13 @@ my %usability_descs =
 			      },
 	    do_kfz_adjustment    => 1,
 	    do_living_street_opt => 1,
-	    do_cycleroad_opt     => 1, # upgrade to NH usability (guessed)
+	    do_cycleroad_opt     => 1, # upgrade to NH usability
 	    do_busroute_opt      => 1,
 	    do_cobblestone_opt   => 0,
 	    do_tram_opt          => 0,
 	    do_green_NN_opt      => 0,
 	},
-	'snowy' => { # XXX not reviewed
+	'snowy' => {
 	    cat_to_usability => { NN => 1,
 				  N  => 3,
 				  NH => 4,
@@ -86,9 +86,13 @@ my %usability_descs =
 				  HH => 6,
 				  B  => 6,
 			      },
-	    do_kfz_adjustment  => 1, # use -2/-1/+1/+2 adjustment from comments_kfzverkehr
-	    do_cobblestone_opt => 1,
-	    do_tram_opt        => 1,
+	    do_kfz_adjustment    => 1, # use -2/-1/+1/+2 adjustment from comments_kfzverkehr
+	    do_living_street_opt => 1,
+	    do_cycleroad_opt     => 1, # upgrade to NH usability
+	    do_busroute_opt      => 1,
+	    do_cobblestone_opt   => 0,
+	    do_tram_opt          => 0,
+	    do_green_NN_opt      => 0,
 	},
 	'very_snowy' => { # XXX not reviewed
 	    cat_to_usability => { NN => 1,
@@ -189,7 +193,8 @@ my %usability_descs =
 	    exceptions_file      => 'winteroptimization_exceptions_2026_02.bbd',
 	}
     );
-if ($winter_hardness eq 'feb_2026_b') {
+if (0) {
+} elsif ($winter_hardness eq 'feb_2026_b') {
     %usability_desc = %{ $usability_descs{light_snowy} };
     $usability_desc{exceptions_file} = 'winteroptimization_exceptions_2026_02.bbd';
 } elsif (exists $usability_descs{$winter_hardness}) {
