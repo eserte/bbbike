@@ -11,6 +11,7 @@
 # WWW:  https://github.com/eserte/bbbike
 #
 
+use 5.010; # defined-or
 use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/../lib",
@@ -315,16 +316,25 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
         my $res = 99999;
 	my @reason;
 
+	my $rw_cat;
+	my $rw_cat_reason;
     CALC: {
 
 	    if (defined $exceptions_file) {
-		my $final_res = $net{'exceptions'}->{Net}{$k1}{$k2};
-		if (defined $final_res) {
-		    my $rec = $net{'exceptions'}->get_street_record($k1, $k2);
-		    (my $name = $rec->[Strassen::NAME]) =~ s{^.*?:\s*}{};
-		    $res = $final_res;
-		    push @reason, $name;
-		    last CALC;
+		my $exception_cat = $net{'exceptions'}->{Net}{$k1}{$k2};
+		if (defined $exception_cat) {
+		    if ($exception_cat =~ m{^\d+$}) {
+			my $rec = $net{'exceptions'}->get_street_record($k1, $k2);
+			(my $name = $rec->[Strassen::NAME]) =~ s{^.*?:\s*}{};
+			$res = $exception_cat;
+			push @reason, $name;
+			last CALC;
+		    } elsif ($exception_cat =~ m{^RW\d+$}) {
+			$rw_cat = $exception_cat;
+			$rw_cat_reason = 'Radverkehrsanlage ' . ($rw_cat eq 'RW0' ? 'degradiert' : "geändert zu $rw_cat");
+		    } else {
+			warn "WARNING: Unrecognized category '$exception_cat' in street with coordinates $k1 $k2\n";
+		    }
 		}
 	    }
 
@@ -353,21 +363,21 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	    }
 
 	    if ($do_cyclepath_opt) {
-		my $rw = $net{"rw"}->{Net}{$k1}{$k2};
-		if (defined $rw) {
-		    if ($rw =~ /^RW(2|8|)$/) {
+		$rw_cat //= $net{"rw"}->{Net}{$k1}{$k2};
+		if (defined $rw_cat) {
+		    if ($rw_cat =~ /^RW(2|8|)$/) {
 			$res = 1;
-			push @reason, "benutzungspflichtiger Radweg";
+			push @reason, $rw_cat_reason // "benutzungspflichtiger Radweg";
 		    }
 		}
 	    }
 
 	    if ($do_living_street_opt) {
-		my $rw = $net{"rw"}->{Net}{$k1}{$k2};
-		if (defined $rw) {
-		    if ($rw =~ /^RW6$/) {
+		$rw_cat //= $net{"rw"}->{Net}{$k1}{$k2};
+		if (defined $rw_cat) {
+		    if ($rw_cat =~ /^RW6$/) {
 			$res = 1;
-			push @reason, "verkehrsberuhigter Bereich";
+			push @reason, $rw_cat_reason // "verkehrsberuhigter Bereich";
 		    }
 		}
 	    }
@@ -434,12 +444,12 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 
 	    if ($do_cycleroad_opt) {
 		# upgrade cycleroads to at least NH roads
-		my $rw = $net{"rw"}->{Net}{$k1}{$k2};
-		if (defined $rw && $rw =~ /^RW7$/) {
+		$rw_cat //= $net{"rw"}->{Net}{$k1}{$k2};
+		if (defined $rw_cat && $rw_cat =~ /^RW7$/) {
 		    my $maybe_catnum = $cat_to_usability{NH};
 		    if ($maybe_catnum > $cat_num) {
 			$cat_num = $maybe_catnum;
-			push @reason, "Fahrradstraße";
+			push @reason, $rw_cat_reason // "Fahrradstraße";
 		    }
 		}
 	    }
