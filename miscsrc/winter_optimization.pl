@@ -175,15 +175,15 @@ my %usability_descs =
 	    do_tram_opt          => 0,
 	},
 	'feb_2026' => { # icy paths, fresh snow, updated several times
-	    #                               -04 -05 -06 07- 10- 11-
-	    cat_to_usability => { NN => 2, # 1   1   1   1   1   2
-				  N  => 6, # 3   2   2   4   5   6
-				  NH => 6, # 6   4   6   6   6   6
-				  H  => 6, # 6   5   6   6   6   6
-				  HH => 6, # 6   5   6   6   6   6
-				  B  => 6, # 6   5   6   6   6   6
+	    #                               -04 -05 -06 07- 10- 11- 18-
+	    cat_to_usability => { NN => 2, # 1   1   1   1   1   2   2
+				  N  => 6, # 3   2   2   4   5   6   6
+				  NH => 6, # 6   4   6   6   6   6   6
+				  H  => 6, # 6   5   6   6   6   6   6
+				  HH => 6, # 6   5   6   6   6   6   6
+				  B  => 6, # 6   5   6   6   6   6   6
 			      },
-	    do_kfz_adjustment    => 0,
+	    do_kfz_adjustment    => 1,
 	    do_living_street_opt => 0,
 	    do_cycleroad_opt     => 1, # upgrade to NH usability
 	    do_busroute_opt      => 1,
@@ -323,20 +323,29 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 
 	my $rw_cat;
 	my $rw_cat_reason;
+	my $main_cat;
+	my $main_cat_overridden;
+	my $green_cat;
     CALC: {
 
 	    if (defined $exceptions_file) {
 		my $exception_cat = $net{'exceptions'}->{Net}{$k1}{$k2};
 		if (defined $exception_cat) {
+		    my $rec = $net{'exceptions'}->get_street_record($k1, $k2);
+		    (my $name = $rec->[Strassen::NAME]) =~ s{^.*?:\s*}{};
 		    if ($exception_cat =~ m{^\d+$}) {
-			my $rec = $net{'exceptions'}->get_street_record($k1, $k2);
-			(my $name = $rec->[Strassen::NAME]) =~ s{^.*?:\s*}{};
 			$res = $exception_cat;
 			push @reason, $name;
 			last CALC;
 		    } elsif ($exception_cat =~ m{^RW\d+$}) {
 			$rw_cat = $exception_cat;
-			$rw_cat_reason = 'Radverkehrsanlage ' . ($rw_cat eq 'RW0' ? 'degradiert' : "geändert zu $rw_cat");
+			$rw_cat_reason = 'Radverkehrsanlage ' . ($rw_cat eq 'RW0' ? 'degradiert' : "geändert zu $rw_cat"). ": $name";
+		    } elsif ($exception_cat =~ m{^(NN|N|NH|H|HH|B)$}) {
+			$main_cat = $exception_cat;
+			$main_cat_overridden = 1;
+		    } elsif ($exception_cat =~ m{^(green\d*)$}) {
+			$green_cat = $exception_cat;
+			push @reason, $name;
 		    } else {
 			warn "WARNING: Unrecognized category '$exception_cat' in street with coordinates $k1 $k2\n";
 		    }
@@ -387,17 +396,20 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 		}
 	    }
 
-	    my $main_cat;
 	    my $is_bridge;
 	    for (@$cat) {
 		next if $_ eq 'Pl';
 		if ($do_bridge_opt && $_ eq 'Br') {
 		    $is_bridge = 1;
 		} elsif (defined $main_cat) {
-		    my $rec = $net{"s"}->get_street_record($k1, $k2);
-		    require Data::Dumper;
-		    print STDERR Data::Dumper->new([$rec,"$k1 $k2"],[])->Indent(1)->Useqq(1)->Dump;
-		    warn "Multiple main categories found: $_ vs. $main_cat";
+		    if ($main_cat_overridden) {
+			push @reason, "Straßenkategorie geändert von $_ zu $main_cat";
+		    } else {
+			my $rec = $net{"s"}->get_street_record($k1, $k2);
+			require Data::Dumper;
+			print STDERR Data::Dumper->new([$rec,"$k1 $k2"],[])->Indent(1)->Useqq(1)->Dump;
+			warn "Multiple main categories found: $_ vs. $main_cat";
+		    }
 		} else {
 		    $main_cat = $_;
 		}
@@ -414,8 +426,8 @@ while(my($k1,$v) = each %{ $net{"s"}->{Net} }) {
 	    }
 
 	    if ($do_green_NN_opt && $main_cat eq 'NN') {
-		my $green = $net{"green"}->{Net}{$k1}{$k2};
-		if (!defined $green) {
+		$green_cat //= $net{"green"}->{Net}{$k1}{$k2};
+		if (!defined $green_cat) {
 		    push @reason, 'keine Grünanlage';
 		    $cat_num = $cat_to_usability{N}; # upgrade to N
 		}
