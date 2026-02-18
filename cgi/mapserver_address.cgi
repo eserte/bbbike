@@ -5,12 +5,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2014,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2014,2016,2017,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -23,19 +22,16 @@ BEGIN {
 
 use FindBin;
 use vars qw($BBBIKE_ROOT $BBBIKE_URL);
-BEGIN { # XXX do not hardcode
+BEGIN { # XXX do not hardcode, but where to get values?
     $ENV{SERVER_NAME} ||= "";
-    if ($ENV{SERVER_NAME} eq 'bbbike.hosteurope.herceg.de') {
-	$BBBIKE_ROOT = "/home/e/eserte/src/bbbike/projects/bbbike.de-hosteurope/BBBike";
-	$BBBIKE_URL = "/BBBike";
-	@Strassen::datadirs = "$BBBIKE_ROOT/data";
-    } elsif ($ENV{SERVER_NAME} =~ m{(
-					bbbike\.de$
-				    |   bbbike-pps
-				    |   lvps\d+-\d+-\d+-\d+\.dedicated\.hosteurope\.de$
-				    )
-			           }xi
-	    ) {
+    if ($ENV{SERVER_NAME} =~ m{(
+				   bbbike\.de$
+			       |   bbbike-pps
+			       |   lvps\d+-\d+-\d+-\d+\.dedicated\.hosteurope\.de$
+			       |   .*\.host\.secureserver\.net$
+			       )
+			      }xi
+       ) {
 	$BBBIKE_URL = "/BBBike";
     } else {
 	$BBBIKE_URL = "/bbbike";
@@ -45,16 +41,11 @@ BEGIN { # XXX do not hardcode
 }
 use CGI qw(:standard *table);
 use CGI::Carp;
-use lib (defined $BBBIKE_ROOT ? ("$BBBIKE_ROOT",
-				 "$BBBIKE_ROOT/lib",
-				 "$BBBIKE_ROOT/data",
-				 "$BBBIKE_ROOT/miscsrc",
-				) : (),
-	 "/home/e/eserte/src/bbbike",
-	 "/home/e/eserte/src/bbbike/lib",
-	 "/home/e/eserte/src/bbbike/data",
-	 "/home/e/eserte/src/bbbike/miscsrc",
-	); # XXX do not hardcode
+use lib ("$BBBIKE_ROOT",
+	 "$BBBIKE_ROOT/lib",
+	 "$BBBIKE_ROOT/data",
+	 "$BBBIKE_ROOT/miscsrc",
+	);
 use BBBikeCGI::Util ();
 
 pathinfo_to_param();
@@ -214,9 +205,6 @@ sub resolve_street {
     require BBBikeRouting;
     my $br = BBBikeRouting->new;
     $br->init_context;
-    ## XXX not enabled by default, because there is no db
-    ## on radzeit for example
-    #$br->Context->UseTelbuchDBApprox(1); # XXX experimental!!!
     my $start = $br->Start;
     $start->Street(scalar param("street"));
     $start->Citypart(scalar(param("citypart")) || undef);
