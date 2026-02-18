@@ -82,7 +82,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="27"
 #: osm_watch: way id="1072662717" version="31"
-#: last_checked: 2026-02-17
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -259,6 +259,13 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1439849150187806720 (voraussichtlich für drei Wochen) --- #: by: https://twitter.com/VIZ_Berlin/status/1439919999142043651 --- #: by: https://twitter.com/wasserbetriebe/status/1440980462776823808 (bereits am Sonntag offen) --- #: by: https://twitter.com/VIZ_Berlin/status/1440984451782164484 --- #: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum) (mittlerweile bis 26.9.2021) (mittlerweile bis 27.9.2021) --- #: priority: #A --- #: next_check: 2021-09-27 --- #: valid: -20210927 --- Tempelhofer Damm: Fahrbahn zwischen Alt-Tempelhof und Götzstr. Richtung Süden gesperrt	q4::inwork; 9249,6642 9254,6542
 # 
 ### Mariendorf ###
+# 
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf4dnag3yg2z (nur Kfz-Verkehr, bis November 2026 geplant)
+#: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 (bis 13.11.2026)
+#: last_checked: 2026-02-18
+#: next_check: 2026-11-13 (VIZ)
+#: valid: -20261113
+Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), Gehweg für Radfahrer frei	q2::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
 # 
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1355154731493191681 --- #: XXX laut rbbtext bis zum 12.2.2021 gesperrt --- #: source_id: 2147346843 (kein Endedatum) --- #: also_indoor: traffic (H,G) --- #: last_checked: 2021-01-29 (viz twitter) --- #: check_frequency: 14d --- #: next_check: 2021-02-12 --- Rixdorfer Str.: Wasserrohrbruch, einige Meter Fahrbahn hinter der Eisenacher Str. Richtung Süden gesperrt	q2::inwork; 10412,4552 10288,4354
 # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739 --- #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019) --- #: source_id: 2147342785 (Gesamtbaumaßnahme bis Mitte September 2019) --- #: XXX laut fritz bis 2.9.2019, mittlerweile "bis auf Weiteres" --- #: also_indoor: traffic (H,ex-G) --- #: priority: #A --- #: last_checked: 2019-08-03 (mapillary) --- #: next_check: 2019-09-17 --- #: valid: -20190917 --- Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
@@ -807,10 +814,11 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 # 
 # REMOVED --- #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, (bis 15.01.2026) (inaktiv)
 # REMOVED --- Grimmstr.: Wasserrohrbruch, wo genau? Sind Radfahrer betroffen?	?::inwork; 11089,9751 11072,9711 11042,9642 11023,9597
+#: by: https://bsky.app/profile/eserte.bsky.social/post/3mf5bn74i322s
 #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026)
-#: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, (bis 30.01.2026) (bis 06.03.2026)
+#: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026)
 #: also_indoor: traffic (G[nun Grimmstr.],T[nun Müllenhoffstr.],H,ex-W[nur Müllenhoffstr.],A[falsche Position])
-#: last_checked: 2026-02-08 (sieht noch immer recht fertig aus)
+#: last_checked: 2026-02-18 (sieht noch immer recht fertig aus)
 #: check_frequency: 14d
 #: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
 #: valid: -20260306
@@ -883,9 +891,9 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,ex-G,ex-H,ex-W)
-#: last_checked: 2026-02-17 (traffic)
+#: last_checked: 2026-02-18 (traffic)
 # REMOVED --- #: check_frequency: 60d
-#: check_frequency: 2d
+#: check_frequency: 3d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
@@ -1988,7 +1996,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-18
 #: check_frequency: 180d
 #: next_check: 2027-01-31
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -2679,7 +2687,7 @@ Fußgängerbrücke Storkower Str.: Fußgänger	q4+ 14481,13143 14524,13271 14530,1326
 #: XXX_prog BS (beide Enden, ansonsten q1)
 Lemgoer Str.: Bordsteine, einige Fußgänger	q3 14341,17030 14331,17016 14328,17011
 # 
-(Uferweg am Kanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
+(Uferweg am Britzer Verbindungskanal): gemeinsamer Rad- und Gehweg	q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
 #: XXX_prog: BS am Wendehammer (ansonsten q3)
 (Allmersweg - Groß-Berliner Damm): Fußgänger, Bordstein	q3- 17789,5189 17726,5166

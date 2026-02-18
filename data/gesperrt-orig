@@ -103,7 +103,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="25"
 #: osm_watch: way id="1430487470" version="1"
-#: last_checked: 2025-12-29
+#: last_checked: 2026-02-18
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -4266,7 +4266,7 @@ Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temp
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
 # 
 #: osm_watch[closed]: note 4165928 1
-#: last_checked: 2025-12-21
+#: last_checked: 2026-01-21
 #: check_frequency: 60d
 Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4865,22 +4865,6 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 # REMOVED (scheint offen zu sein) --- #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173 --- #: XXX culdesac-Eintrag für die Spreestr. anpassen! --- #: last_checked: 2022-10-05 --- #: check_frequency: 45d --- (Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
 # REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: XXX alten Eintrag hier wiederherstellen! --- #: last_checked: 2023-02-19 (bahninfo-forum) --- #: check_frequency: 90d --- #: next_check: 2023-07-07 ---  Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060
 # REMOVED (keine Bauarbeiten mehr) --- #: XXX laut Schild der Wasserbetriebe bis April 2023; Einbahnstraßenregelung fängt schon 30m westlich der Einmündung Zum Langen See an --- #: XXX man kommt als Radfahrer aber recht gut vorbei --- #: last_checked: 2022-08-11 --- #: check_frequency: 180d --- #: next_check: 2023-04-30 --- #: valid: -20230531 --- Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung	1s:q3 23608,1210 23520,1194
-# 
-#: next_check_id: DRESDNERBAHN-2021
-#: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
-#: by: https://berliner-abendblatt.de/berlin-news/neue-bruecke-ueber-dem-teltowkanal-in-richtiger-position-id231682
-#: by: https://www.berliner-woche.de/mariendorf/c-verkehr/brueckeneinbau-fuer-die-dresdner-bahn-ueber-den-teltowkanal-vollzogen_a392915
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240410 (Restarbeiten mit Sperrung bis 2025) (Pflasterarbeiten werden erst 2026 stattfinden)
-#: by: https://www.morgenpost.de/berlin/article409571286/eroeffnung-der-dresdner-bahn-an-diesem-tag-soll-es-so-weit-sein.html
-#: note: Fertigstellung EÜ laut Baustellenschild 2023
-#: note: Dieser Eintrag existiert auch noch als aktiver bbbike-temp-blockings-Eintrag.
-#: osm_watch: way id="229990468" version="8"
-#: last_checked: 2025-12-19 (DB website)
-#: check_frequency: 90d
-#: next_check: 2026-06-30 (DB website: 2026)
-Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
-# 
 # REMOVED (Absperrgitter mittlerweile üblicherweise verschoben) --- #: note: manchmal stehen die Absperrgitter etwas verschoben mit einer Öffnung, so dass man mit einem Fahrrad doch passieren kann (gesehen: 2022-09-23, 2022-09-30, 2022-10-29) --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-09-30 --- Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
 # REMOVED --- #: next_check_id: FALKENBERG-2021 --- #: last_checked: 2023-05-06 --- #: check_frequency: 150d --- Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943
 # 
@@ -5048,7 +5032,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5296,7 +5280,8 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 # REMOVED --- #: osm_watch: way id="588431071" version="8"
 #: osm_watch: way id="696227207" version="5"
 #: add_fragezeichen: Ist der Weg weiterhin gesperrt?
-#: last_checked: 2025-10-30 (mapillary)
+#: note: Sperrung am südlichen Ende entfernt, am nördlichen Ende aber weiterhin Bauzäune
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549

@@ -52,7 +52,7 @@
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026)
-#: last_checked: 2025-10-30 (mapillary)
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -147,7 +147,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2025-10-15 vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -173,7 +173,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: https://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021) (mittlerweile gelöscht) (wieder da, "abgeschlossen")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2025-10-08 vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 120d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -1383,6 +1383,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.tagesspiegel.de/berlin/situation-wurde-als-beherrschbar-angesehen-bund-und-senat-nahmen-warnung-vor-a100-verkehrschaos-nicht-ernst-15138248.html
 #: by: https://www.entwicklungsstadt.de/stau-nach-plan-wie-der-senat-das-verkehrschaos-an-der-elsenbruecke-erklaert/
 #: by: https://www.tagesspiegel.de/berlin/verkehrschaos-an-der-berliner-a100-elsenbrucke-wird-fruhestens-im-februar-fertig-15192309.html
+#: by: https://www.tagesspiegel.de/berlin/nachste-verzogerung-angesichts-der-wetterlage-berliner-elsenbrucke-wird-fruhestens-im-marz-fertig-15261576.html
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1411,11 +1412,11 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-02-16 vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
-# REMOVED (unwahrscheinlich) --- #: next_check: 2026-02-10 (SenMVKU zum Ersatzneubau) vvv
-#: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-03-31 (Tsp) vvv
+# REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
 #: next_check ^^^
@@ -1596,7 +1597,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="24"
-#: last_checked: 2025-10-15
+#: last_checked: 2026-02-18
 #: check_frequency: 120d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
@@ -2655,7 +2656,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 # REMOVED (Nov 2025: wieder der alte Stand) --- #: XXX Anfang 2025: der benutzungspflichtige Radweg Richtung Süden fängt wegen Hochbauarbeiten etwa 50m später an
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="25"
-#: last_checked: 2025-11-29
+#: last_checked: 2026-02-18
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -3270,7 +3271,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-02-16
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
@@ -3294,7 +3295,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-02-16
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -8386,7 +8387,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-02-17
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -9175,7 +9176,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: LMS-BR:347435/72 viz2021:13.38458,52.45267,23.09.2024,17:00 viz2021:13.38458,52.45267,(bis 01.11.2024) (bis 31.12.2025) (bis 26.06.2026)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
-#: last_checked: 2025-12-07 (mapillary) vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-06-26 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -9265,7 +9266,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: osm_watch: way id="4357826" version="25"
 #: osm_watch: way id="354645907" version="20"
 #: osm_watch: way id="354645904" version="13"
-#: last_checked: 2025-12-07 (mapillary) vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 	RW3; 8739,6701 8653,6781

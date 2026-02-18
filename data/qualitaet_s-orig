@@ -485,7 +485,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-02-17
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -3493,7 +3493,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 # REMOVED --- #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
 #: osm_watch: way id="30893534" version="30"
 #: osm_watch: way id="1155399359" version="5"
-#: last_checked: 2025-09-22 (mapillary)
+#: last_checked: 2026-02-18
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Am Teltowkanal: Asphalt	Q0 7911,4465 7866,4419 7769,4315
@@ -4814,7 +4814,7 @@ Hohenbirker Weg: Beton	Q0 16195,6506 16283,6604
 Heidemühler Weg: sehr guter Beton	Q0 16304,6374 16195,6506
 Heidemühler Weg: Beton	Q0 16195,6506 16147,6545
 Dornbrunner Str.: Asphalt	Q0 16147,6545 16043,6414 15954,6297
-(Uferweg am Kanal): wassergebundene Decke, teilweise mit etwas Schotter	Q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
+(Uferweg am Britzer Verbindungskanal): wassergebundene Decke, teilweise mit etwas Schotter	Q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
 (Breiter Weg - Südostallee/Sterndamm): rauer Asphalt	Q1- 17538,5301 17601,5374
 Breiter Weg: Asphalt	Q0 17538,5301 17469,5289 17365,5271
 Breiter Weg: Asphalt mit einigen Schäden	Q1 17365,5271 17297,5260
@@ -9271,7 +9271,9 @@ Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8
 #: next_check_id: MUSSEHL-2025
 #: note: kein "add_fragezeichen", unklares Ende der Bauarbeiten
 #: XXX: Ist die Qualität nach den Bauarbeiten besser geworden?
-#: next_check: 2026-02-20
+#: last_checked: 2026-02-18
+#: check_frequency: 45d
+# REMOVED --- #: next_check: 2026-02-20
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8982,8781 8926,8682 8842,8561
 Mussehlstr.: Gehwegplatten	Q0- 8842,8561 8759,8458
 Mussehlstr.: Verbundsteinpflaster	Q1+ 8759,8458 8720,8373

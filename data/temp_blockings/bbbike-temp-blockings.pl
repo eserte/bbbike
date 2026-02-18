@@ -35112,16 +35112,19 @@ EOF
      },
      { from  => 1630965600, # 2021-09-07 00:00
        until => undef, # $isodate2epoch->("2023-12-31 18:00:00"), # undef, # 1638313199, # 2021-11-30 23:59
-       text  => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, bis 2025', # was 'mindestens bis Ende 2023', # was 'bis November 2021'
+#      text  => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, bis 2025', # was 'mindestens bis Ende 2023', # was 'bis November 2021'
+       text  => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, voraussichtliche Eröffnung 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DRESDNERBAHN-2021
 #: by: https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
+#: note: 2026-02-18: eigentlich muss nur noch die Wegoberfläche wiederhergestellt werden; vielleicht geht das schnell, sobald die Frostperiode vorüber ist?
 #: osm_watch: way id="229990468" version="8"
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2025-12-19 (DB website)
-#: check_frequency: 90d
+#: last_checked: 2026-02-18
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 45d
 #: next_check: 2026-06-30 (DB website: 2026)
 	2::inwork 7673,4223 7769,4315
 EOF
@@ -36206,7 +36209,7 @@ EOF
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
-#: last_checked: 2026-01-27 (mapillary) vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -38936,12 +38939,13 @@ EOF
 	2::inwork 7646,6031 7638,5967
 EOF
      },
-     { from  => $isodate2epoch->("2025-09-01 00:00:00"), # undef, # 1668540097, # 2022-11-15 20:21
-       until => 1765996377, # $isodate2epoch->("2026-01-05 23:59:59"), # undef, # $isodate2epoch->("2024-05-31 17:00:00"), # 1691445599, # 2023-08-07 23:59
+     { from  => $isodate2epoch->("2026-02-18 00:00:00"), # $isodate2epoch->("2025-09-01 00:00:00"), # undef, # 1668540097, # 2022-11-15 20:21
+       until => $isodate2epoch->("2026-05-20 23:59:59"), # 1765996377, # $isodate2epoch->("2026-01-05 23:59:59"), # undef, # $isodate2epoch->("2024-05-31 17:00:00"), # 1691445599, # 2023-08-07 23:59
 #      text  => 'Schönfließer Str.: Bauarbeiten im Kreuzungsbereich Senheimer Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2024',
 #      text  => 'Sennheimer Str.: mögliche Sperrungen wegen Bauarbeiten',
 #      text  => 'Sennheimer Str.: mögliche Engstellen wegen Bauarbeiten, ab September 2025',
-       text  => 'Sennheimer Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Ariadnestr. und Huttenstr., bis Anfang Januar 2025',
+#      text  => 'Sennheimer Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Ariadnestr. und Huttenstr., bis Anfang Januar 2025',
+       text  => 'Sennheimer Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Zeltinger Str. und Markgrafenstr., bis Mitte Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: SCHOENFLIESSER-2023
@@ -38951,6 +38955,7 @@ EOF
 #: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250901 (zwischen Ariadnestr. und Huttenstr., bis Anfang Januar 2025)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxtdq3jj6s2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifqx6o4w72on7jaccdvtrnyrddznimtqlfdiiqgjyx4jlitkt7a6e@jpeg (keine Ausnahmen für Radfahrer)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz-1/?date=20260218 (südlicher Abschnitt)
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
@@ -38967,9 +38972,11 @@ EOF
 # REMOVED --- #: add_fragezeichen: Ist die Straße noch immer gesperrt?
 # REMOVED --- #: last_checked: 2025-09-01 (VIZ-Verkehrsmeldung) --- #: next_check: 2026-01-05 (VIZ-Verkehrsmeldung)
 # REMOVED --- Sennheimer Str., 1. BA bis Huttenstr.	q3::inwork 2490,26126 2484,25984 2496,25915
-Sennheimer Str., Ariadnestr. bis Huttenstr.	q4::inwork 2502,25544 2515,25666 2519,25772 2496,25915
-Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
+# REMOVED --- Sennheimer Str., Ariadnestr. bis Huttenstr.	q4::inwork 2502,25544 2515,25666 2519,25772 2496,25915
+# REMOVED --- Kreuzungsbereich Markgrafenstr.	q3::inwork 2615,25634 2515,25666 2384,25679
 # REMOVED --- Sennheimer Str.	q4::inwork 2496,25915 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
+Sennheimer Str., Zeltinger Str. bis Markgrafenstr.	q4::inwork 2510,25350 2506,25398 2502,25544 2515,25666
+Kreuzungsbereich Ariadnestr.	q3::inwork 2376,25498 2502,25544 2643,25500
 EOF
      },
      { from  => $isodate2epoch->("2022-11-17 09:00:00"),
@@ -47020,7 +47027,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2025-12-29
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -47277,7 +47284,7 @@ EOF
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-01-25
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 #: next_check: 2026-06-30 (Baustellenschild der Wasserbetriebe)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
@@ -50068,20 +50075,24 @@ EOF
 EOF
      },
      { from  => 1755406800, # 2025-08-17 07:00
-       until => 1772298000, # 2026-02-28 18:00
+       until => $isodate2epoch->("2026-05-29 23:59:59"), # 1772298000, # 2026-02-28 18:00
 #      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, außerdem Baustelleneinrichtungsfläche in der Kolmarer Str., evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
-       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
+#      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
+       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bisEnde Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 (östlich Husemannstr., bis 28.02.2026)
-#: source_id: viz2021:13.4151,52.53846,18.08.2025,07:00 (westlich Husemannstr., bis 28.02.2026)
+#: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 viz2021:13.41764,52.53833, (östlich Husemannstr., bis 28.02.2026) (bis 29.05.2026)
+#: source_id: LMS-BR:380369/72 viz2021:13.4151,52.53846,18.08.2025,07:00 viz2021:13.4151,52.53846, (westlich Husemannstr., bis 28.02.2026) (bis 29.05.2026)
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5Xo8NcrLYvz2MxS7AThUxo
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig) (Jan 2026: erster Abschnitt noch immer abgesperrt)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
+#: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026?)
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
 #: last_checked: 2026-02-11 (von der Danziger Str. gesehen)
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
+# REMOVED --- #: next_check: 2026-02-28 (strabag)
+#: next_check: 2026-05-28 (VIZ-Verkehrsmeldung)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 # REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
 EOF
@@ -50143,7 +50154,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-16 vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50238,7 +50249,7 @@ EOF
        until => undef, # 1761951599, # 2025-10-31 23:59
 #      text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Oktober 2025',
 #      text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Februar 2026',
+       text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, geplant bis Februar 2026, voraussichtlich wird verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: MUSSEHL-2025
@@ -50247,14 +50258,14 @@ EOF
 #: osm_watch: way id="722013098" version="13"
 #: osm_watch: way id="1350756367" version="3"
 #: osm_watch: note 5124809 1
-#: last_checked: 2026-02-08 vvv
+#: last_checked: 2026-02-18 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2026-02-20 (Halteverbotsschilder) vvv
+# REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
 	q4::inwork 8982,8781 8926,8682
 #: note: hier auf etwa 50m Länge gesperrt
 	q3::inwork 8926,8682 8842,8561
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -50590,7 +50601,7 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-02-16 vvv
+#: last_checked: 2026-02-18 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -50871,7 +50882,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-02-15
+#: last_checked: 2026-02-18
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51124,12 +51135,14 @@ EOF
        text  => 'Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
        type  => 'handicap',
        data  => <<'EOF',
+#: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026? danach geht's in der nordwestlichen Knaackstr. und Wörther Str. weiter (3. BA))
 #: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026) (vorfristig fälschlicherweise inaktiv)
 # REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
 #: last_checked: 2026-01-02
 #: check_frequency: 120d
-#: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung)
+#: next_check: 2026-02-28 (strabag)
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 EOF
      },
@@ -51171,16 +51184,17 @@ EOF
      },
      { from  => $isodate2epoch->("2025-11-04 00:00:00"),
        until => $isodate2epoch->("2026-02-28 23:59:59"),
-       text  => 'Lily-Braun-Str.: Leitungsarbeiten zwischen Ernst-Bloch-Str. und Gülzower Str., Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
+       text  => 'Lily-Braun-Str.: Leitungsarbeiten zwischen Ernst-Bloch-Str. und Gülzower Str., Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026, eventuell wird die Sperrung verlängert',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://marzahn-hellersdorf.com/update-vollsperrung-nach-wasserrohrbruch-in-der-lily-braun-strasse/
+#: by: https://marzahn-hellersdorf.com/update-zum-rohrschaden-lily-braun-strasse-frost-verzoegert-abschlussarbeiten-fremdkoerper-in-leitung-entdeckt/
 	q4::inwork 23213,13003 23173,12769
 EOF
      },
      { from  => 1762538105, # 2025-11-07 18:55
        until => undef, # $isodate2epoch->("2025-12-15 18:00:00"),
-       text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar Dezember 2026, evtl. wird die Sperrung verlängert',
+       text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026
@@ -51219,13 +51233,13 @@ EOF
      { from  => 1762694374, # 2025-11-09 14:19
        until => undef, # 1766358000, # 2025-12-22 00:00
 #      text  => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., voraussichtlich bis Dezember 2025',
-       text  => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt',
+       text  => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt (Stand Mitte Februar 2026)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
-#: osm_watch: note 4847575 4
-#: last_checked: 2025-12-29
+#: osm_watch: note 4847575 6
+#: last_checked: 2026-02-18
 # REMOVED --- #: next_check: 2025-12-21
 	2::inwork 7497,7761 7499,7880
 EOF
@@ -51794,7 +51808,18 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260217
+#: source_id: LMS-BR:399332/72 viz2021:13.43881,52.53783,18.02.2026,06:00 (bis 31.08.2026)
 	q4::inwork 12862,14618 12780,14675 12700,14726
+EOF
+     },
+     { from  => 1771714800, # 2026-02-22 00:00
+       until => 1772233200, # 2026-02-28 00:00
+       text  => 'Unterführung an der Wilhelm-Kuhr-Str.: Sperrung, vom 23.02.2026 bis 27.02.2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord/infobauarbeiten?date=20260217
+#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wilhelm-kuhr-strasse_sperrung_20260216.pdf
+	2::inwork 9236,17907 9303,17965
 EOF
      },
     );
