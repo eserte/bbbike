@@ -38940,7 +38940,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-02-18 00:00:00"), # $isodate2epoch->("2025-09-01 00:00:00"), # undef, # 1668540097, # 2022-11-15 20:21
-       until => $isodate2epoch->("2026-05-20 23:59:59"), # 1765996377, # $isodate2epoch->("2026-01-05 23:59:59"), # undef, # $isodate2epoch->("2024-05-31 17:00:00"), # 1691445599, # 2023-08-07 23:59
+       until => $isodate2epoch->("2026-05-21 23:59:59"), # 1765996377, # $isodate2epoch->("2026-01-05 23:59:59"), # undef, # $isodate2epoch->("2024-05-31 17:00:00"), # 1691445599, # 2023-08-07 23:59
 #      text  => 'Schönfließer Str.: Bauarbeiten im Kreuzungsbereich Senheimer Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2024',
 #      text  => 'Sennheimer Str.: mögliche Sperrungen wegen Bauarbeiten',
 #      text  => 'Sennheimer Str.: mögliche Engstellen wegen Bauarbeiten, ab September 2025',
@@ -38956,6 +38956,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxtdq3jj6s2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifqx6o4w72on7jaccdvtrnyrddznimtqlfdiiqgjyx4jlitkt7a6e@jpeg (keine Ausnahmen für Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz-1/?date=20260218 (südlicher Abschnitt)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf6wgzoasc2c
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
@@ -38963,6 +38964,7 @@ EOF
 #: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
 #: source_id: viz2021:13.286611,52.641435,19.08.2024,07:00 (neue Baustelle, nur Kfz-Verkehr, bis 26.08.2024) (bis 23.08.2024) (inaktiv)
 #: source_id: LMS-BR:381984/72 viz2021:13.29204,52.63667,02.09.2025,06:00 (bis 05.01.2026) (vorfristig inaktiv)
+#: source_id: LMS-BR:399443/72 viz2021:13.29213,52.635,19.02.2026,07:00 (bis 21.05.2026)
 # REMOVED --- #: also_indoor: traffic (ex-H,G,B,W)
 # REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
 # REMOVED --- #: note: Vorbereitungen für Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
@@ -48186,7 +48188,7 @@ EOF
        until => undef, # XXX
 #      text  => 'Erkelenzdamm: in Höhe Wassertorplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Kohlfurter Str.: vor Erkelenzdamm Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
-       text  => 'Regina-Jonas-Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
+       text  => 'Regina-Jonas-Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026, evtl. wird die Baustelle verlängert',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: GITSCHINER-2025 --- #: note: Evtl. hatten die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun, deshalb der next_check_id-Eintrag.
@@ -48194,9 +48196,9 @@ EOF
 #: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
 #: note: Baustelle ist mittlerweile vom Erkelenzdamm weiter Richtung Admiralstr. gewandert
-#: last_checked: 2026-01-22
-#: check_frequency: 30d
-#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-02-19
+#: check_frequency: 14d
+# REMOVED (möglicherweise wird verlängert) --- #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
 Regina-Jonas-Str.	q4::inwork 11094,10261 11274,10184
 EOF

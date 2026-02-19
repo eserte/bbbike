@@ -167,6 +167,8 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="4752743"  version="23"
 #: osm_watch: way id="8049679"  version="27"
 #: osm_watch: way id="8049678"  version="20"
+#: XXX laut SenMVKU-Seite wird Schulenburgstraße/Tiefwerderweg voraussichtlich eine Ampel entstehen + Radfahrstreifen zwischen Tiefwerderweg und Ruhlebener Str. (je 1,60m breit)
+#: XXX laut SenMVKU-Seite werden auf der neuen Schulenburgbrücke kombinierte Rad/Gehwege entstehen
 #: last_checked: 2025-04-16
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 540d
@@ -2305,7 +2307,7 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_06.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1471213.php
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
-#: last_checked: 2026-02-18
+#: last_checked: 2026-02-19
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (infravelo)
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -4907,7 +4909,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstrasse-0 (Baubeginn 2023, verkehrsberuhigte Mischverkehrsfläche)
 #: by: https://www.luisenstadt-mitte.de/drupal/web/projekte/ohmstrasse-0 (alternative URL)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-der-ohmstrasse-876903.php (Neugestaltung bis 2023)
-#: last_checked: 2026-02-03
+#: last_checked: 2026-02-19
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-01-01
@@ -5988,7 +5990,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: source_id: viz2021:13.397721,52.495244,24.01.2022,06:00 (Kabelarbeiten bis 11.2.2022, haben diese etwas mit dem Radweg zu tun?) (inaktiv)
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="26"
-#: last_checked: 2026-01-20 (ein provisorisch asphaltierter Radweg)
+#: last_checked: 2026-02-19 (ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-02-11
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::; 10006,9942 9950,9987
@@ -7505,7 +7507,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::inwork; 4517,9401 4507,9395
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2026-02-08
+#: last_checked: 2026-02-19
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7609,7 +7611,7 @@ Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12
 #: osm_watch: way id="1294888597" version="4"
 # REMOVED --- #: next_check: 2025-12-31 (Ende 1. BA; temp-blockings-Eintrag anpassen)
 # REMOVED --- #: next_check: 2026-10-31 (BA-Pressemitteilung)
-#: next_check: 2026-05-20 (VIZ)
+#: next_check: 2026-05-21 (VIZ)
 Senheimer Str..: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::projected 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
 #: osm_watch: way id="920903753" version="10"
 #: source_id: viz2021:13.28683,52.63925,15.08.2025,07:00 (Kraneinsatz, bis 22.08.2025) (inaktiv)
@@ -7745,7 +7747,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-02-17
+#: last_checked: 2026-02-19
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -7864,10 +7866,13 @@ Paule-Panke-Str.: geplante Privatstraße	?::projected 11168,18542 11214,18388 111
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8592
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3otg2i5ok2v (nur Fahrbahnsanierung bis 31.10.2025?)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz-1/?date=20260218 (Leitungsarbeiten bis Mitte März 2026, Baustellenampel, Sperrung der benachbarten Anbindungen)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf76ss7fhk2m
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifd46rorblypyllhkkqsqxl4uruux6rkjq7fst3tdtgcmowccl33u@jpeg
 #: source_id: viz2021:13.50192,52.55813,21.10.2025,10:00 (nur ein Fahrstreifen frei, bis 31.10.2025) (inaktiv)
+#: source_id: LMS-BR:399459/72 viz2021:13.50192,52.55813,19.02.2026,10:30 (bis 02.04.2026)
 #: last_checked: 2025-11-08
 #: check_frequency: 120d
-#: next_check: 2026-03-20 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-02 (VIZ-Verkehrsmeldung)
 Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::projected 16931,17024 16950,17061 16974,17087
 # 
 #: by: https://berliner-abendblatt.de/2021/10/28/so-sieht-das-neue-dreieck-funkturm-aus/ (Bauarbeiten frühestens ab 2023)
@@ -8004,7 +8009,7 @@ Paradiesstr.: evtl. werden hier noch Radwege als Zufahrt zur B96a erstellt, viel
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10587 (Anfrage)
 #: by: https://www.tagesspiegel.de/berlin/nach-fast-zehn-jahren-planung-umbau-der-kreuzberger-oranienstrasse-abgesagt-14150390.html
-#: last_checked: 2026-02-08
+#: last_checked: 2026-02-19
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung (war) geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -8033,12 +8038,12 @@ Oranienstr.: Verkehrsberuhigung (war) geplant	?::projected 10906,10874 10965,108
 #: XXX erste Markierung an der Einmündung Brachvogelstr./Alexandrinenstr. gesehen; mittlerweile gibt es Markierungsarbeiten zwischen Oranienstr. und Franz-Künstler-Str. sowie südlich der Neuenburger Str.; Radwege sind noch mit Einschränkungen (teilweise ragen Absperrungen rein) nutzbar
 #: XXX laut BA (siehe osm-note) soll es auch Einbahnstraßenregelungen für Kfz geben; gesehen: ab Ritterstr. und Franz-Klühs-Str. Richtung SW Einfahrt gesperrt, evtl. kommt noch mehr
 #: XXX neue Vorfahrtsregelung? zumindest an der Neuenburger Str. ist schon eins vorbereitet, an der Johanniterstr. ebenso
-#: last_checked: 2026-01-20 vvv
+#: last_checked: 2026-02-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-03-31 (infravelo) vvv
 Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht	?::inwork 10006,9942 10029,9989 10066,10071 10069,10151
 # REMOVED (realisiert) --- Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht	?::inwork 10069,10151 10083,10192 10122,10294
-Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht (Vorfahrtsregelung fehlt noch, Markierungen noch nicht ganz fertig)	?::inwork 10122,10294 10178,10411 10293,10645
+Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht (Vorfahrtsregelung fehlt noch (vorbereitetes Schild ist noch abgedeckt), Markierungen noch nicht ganz fertig)	?::inwork 10122,10294 10178,10411 10293,10645
 # REMOVED (realisiert) --- Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht	?::inwork 10293,10645 10329,10723
 # REMOVED (nicht fertig geworden) (nun realisiert) --- #: next_check: 2025-08-22 (MoPo) --- Alexandrinenstr. (Franz-Künstler-Str. - Oranienstr.): Fahrradstraße entsteht	?::inwork 10329,10723 10397,10852 10501,11056
 #: next_check ^^^
@@ -8330,7 +8335,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-02-17
+#: last_checked: 2026-02-19
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -9874,6 +9879,7 @@ Hochkirchstr.: Einbahnstraßenregelung (offen von N nach S) für Kfz geplant	?::pr
 # 
 #: by: https://www.wna-berlin.wsv.de/Webs/WNA/WNA-Berlin/DE/SharedDocs/Pressemitteilungen/20260217_baufeldfreimachung_techowbruecke_PM.html?nn=1007084
 #: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/berliner-bauprojekt-verargert-anwohner-erst-weichen-baume-dann-verschwindet-die-altersschwache-brucke-15261099.html (geplanter Baustart: IV. Quartal 2026, Bauzeit 2½ Jahre)
+#: by: https://www.entwicklungsstadt.de/techowbruecke-in-mariendorf-ersatzneubau-ab-ende-2026-geplant/
 #: osm_watch: way id="5363712" version="20"
 #: last_checked: 2026-02-18
 #: next_check: 2026-10-01 (Tsp)
@@ -11739,7 +11745,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 Uferweg wird verlängert	?::inwork 12010,11545 11962,11596
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: osm_watch: way id="124182482" version="10"
-#: last_checked: 2026-02-17
+#: last_checked: 2026-02-19
 #: check_frequency: 120d
 Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 # 

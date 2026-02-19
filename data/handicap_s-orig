@@ -149,7 +149,7 @@ Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,118
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-02-08 vvv
+#: last_checked: 2026-02-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -799,14 +799,14 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
-#: last_checked: 2026-01-25 vvv
+#: last_checked: 2026-02-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 #: valid: -20261231 vvv
 #: note: typischerweise steht die Absperrung auf dem Radweg
 Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10198,9405 10290,9604 10306,9640 10361,9755 10405,9795
 #: note: hier weniger Probleme mit der Baustelleneinrichtung, deshalb q1 statt q2
-Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q1::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
+Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q1-::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
 #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -853,6 +853,13 @@ Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 
 # REMOVED --- #: by: https://www.kondorwessels.com/referenzen/pulse-berlin/ --- #: source_id: 2147341145 (ausgelaufen) --- #: source_id: LMS-BR_r_LMS-BR_93387 (ausgelaufen) --- #: source_id: viz2021:13.38359,52.50342,31.08.2021,10:25 (bis 30.9.2022 (!)) --- #: osm_watch: way id="563341816" version="7" --- #: XXX laut rbb bis 31.09.2022 (sic!) --- #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pulse-berlin-hallesches-quartier.642/post-16415 (möglicherweise fertig) --- #: also_indoor: traffic (H) --- #: last_checked: 2021-05-30 (daf) --- #: check_frequency: 120d --- #: next_check: 2022-09-30 --- #: valid: -20220930 --- Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
 # REMOVED --- #: source_id: 2147341141 --- #: source_id: LMS-BR_r_LMS-BR_93355 --- #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017 --- #: last_checked: 2017-05-19 --- Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
 # REMOVED --- #: next_check_id: BAERWALDSTR-2017 --- #: last_checked: 2017-03-25 --- Wilmsstr.: Bauarbeiten an der Baerwaldstr.	q2::inwork 10480,9949 10627,9912
+# 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/25-01-22_praesentation.pdf (zeigt der Plan eine temporäre Baustellensituation oder wird es eine permanente Einbahnstraßenregelung (Radfahrer frei) geben?
+#: also_indoor: traffic (T,G)
+#: last_checked: 2026-02-19
+#: check_frequency: 14d (traffic)
+Wilmsstr.: Bauarbeiten an der Geibelstr./am Carl-Herz-Ufer, Fahrbahn gesperrt	q3::inwork 10480,9949 10627,9912
+# 
 # REMOVED --- #: last_checked: 2016-12-09 --- #: next_check: 2016-12-12 --- #: priority: #A --- #: valid: -20161212 --- Brachvogelstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 10066,10071 10069,10151
 # REMOVED --- #: source_id: IM_023816 --- #: source_id: 2147339541 --- #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober --- #: last_checked: 2017-03-27 --- #: check_frequency: 14d --- Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10430,10081 10500,10081
 # REMOVED --- #: source_id: LMS-BR_r_LMS-BR_68468 --- #: source_id: LMS-BR_r_LMS-BR_85494 --- #: source_id: LMS-BR_r_LMS-BR_89318 --- #: XXX laut fritz "Vollsperrung" in der Alexandrinenstr (bis 31.03.2017, später bis 30.04.2017 verlängert) ("Vollsperrung" stimmt aber nicht) --- #: last_checked: 2017-04-26 --- #: next_check: 2017-04-30 --- Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10690,11167 10683,11175 10674,11170 10593,11120 10501,11056
@@ -1019,6 +1026,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: by: https://www.entwicklungsstadt.de/buwog-set-44-in-neukoelln-baustart-auf-dem-gelaende-der-geyer-werke/ (bis Herbst 2028)
 #: osm_watch: note 3372461 1
 #: osm_watch: way id="714352578" version="3"
+#: source_id: bvg2024:171#HIM_FREETEXT_320392 (Haltestelle ist aufgehoben, kein Endedatum)
 #: XXX Wann sind die Bauarbeiten zu Ende?
 #: last_checked: 2025-11-27
 #: check_frequency: 180d
@@ -1317,7 +1325,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316065 (kein Endedatum)
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
-#: source_id: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
+#: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
 #: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
@@ -2427,10 +2435,9 @@ Hedwigskirchgasse: Fußgänger	q1 9737,12238 9747,12205
 #: XXX_prog: Bordstein (BS) nur am Südende
 Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9755,12144
 # 
-#: last_checked: 2026-02-17
-#: check_frequency: 10d
-# XXX (später wiederherstellen) --- #: XXX_prog: BS am Nordende, flach --- Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
-Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
+# REMOVED --- #: last_checked: 2026-02-17 --- #: check_frequency: 10d --- # XXX (später wiederherstellen) --- Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
+#: XXX_prog: BS am Nordende, flach
+Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
 # 
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3+ 13535,10184 13371,9974
 Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
@@ -2457,9 +2464,9 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; mittlerweile bis Halteverbotsschilder bis 15.12.2025; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch[closed]: note 4506575 2
-#: osm_watch: way id="529086013" version="4"
+#: osm_watch: way id="529086013" version="5"
 #: osm_watch: way id="1377234658" version="2"
-#: osm_watch: way id="11636138" version="15"
+#: osm_watch: way id="11636138" version="16"
 #: last_checked: 2025-12-18 (daf)
 #: check_frequency: 120d
 #: next_check: 2027-11-30 (deal magazin: Herbst 2027)
