@@ -18,6 +18,7 @@ BEGIN {
     if (!$BBBike::PLACK_TESTING) {
 	delete $INC{"FindBin.pm"}
     }
+    @Strassen::datadirs = @Strassen::datadirs if 0; # cease -w
 }
 
 use FindBin;
