@@ -189,7 +189,7 @@ my %usability_descs =
 	    do_busroute_opt      => 1,
 	    do_cobblestone_opt   => 0,
 	    do_tram_opt          => 0,
-	    do_green_NN_opt      => 1,
+	    do_green_NN_opt      => 0,
 	    exceptions_file      => 'winteroptimization_exceptions_2026_02.bbd',
 	}
     );
