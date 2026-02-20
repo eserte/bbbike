@@ -29279,11 +29279,11 @@ EOF
 #: last_checked: 2026-02-15
 # REMOVED --- Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, für Radverkehr verboten, Anlieger frei	q4::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
 Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inwork; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898
-#: osm_watch: way id="31525573" version="46"
+#: osm_watch: way id="31525573" version="47"
 #: osm_watch: way id="580507889" version="40"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2026-02-15
+#: last_checked: 2026-02-19 (osm)
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -36518,7 +36518,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409917943/kalle-neukoelln-ist-fertig-da-schwingt-das-berlinerische-mit.html
 #: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
 #: osm_watch: way id="734271970" version="10"
-#: osm_watch: way id="975241319" version="9"
+#: osm_watch: way id="975241319" version="10"
 #: osm_watch: way id="970452276" version="8"
 #: osm_watch: note 5093384 3
 #: note: Halteverbotsschilder bis 30.09.2025
@@ -49594,7 +49594,7 @@ EOF
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-02-07 (traffic)
+#: last_checked: 2026-02-20 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -49809,7 +49809,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2026-02-07
+#: last_checked: 2026-02-20 (traffic)
 #: check_frequency: 14d (traffic)
 	q3::inwork 7628,9365 7509,9337
 EOF
@@ -50056,7 +50056,7 @@ EOF
 #: osm_watch: note 5038218 3
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-02-13
+#: last_checked: 2026-02-20
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50884,7 +50884,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-02-18
+#: last_checked: 2026-02-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51004,12 +51004,12 @@ EOF
 EOF
      },
      { from  => 1761241355, # 2025-10-23 19:42
-       until => $isodate2epoch->("2026-02-27 23:59:59"), # 1765753200, # 2025-12-15 00:00
-       text  => 'Morusstr.: Bauarbeiten an der Einmündung Werbellinstr., Sperrung der Fahrbahn, voraussichtlich bis 27.02.2026',
+       until => $isodate2epoch->("2026-04-30 23:59:59"), # 1765753200, # 2025-12-15 00:00
+       text  => 'Morusstr.: Bauarbeiten an der Einmündung Werbellinstr., Sperrung der Fahrbahn, voraussichtlich bis Ende April 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: WERBELLINAMPEL-2025
-#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025) (bis 27.02.2026)
+#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025) (bis 27.02.2026) (bis 30.04.2026)
 
 	q4::inwork 12427,8109 12446,8032
 EOF
@@ -51822,6 +51822,15 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord/infobauarbeiten?date=20260217
 #: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wilhelm-kuhr-strasse_sperrung_20260216.pdf
 	2::inwork 9236,17907 9303,17965
+EOF
+     },
+     { from  => 1771714800, # 2026-02-22 00:00
+       until => 1785535199, # 2026-07-31 23:59
+       text  => 'Uferweg Tegeler See: Bauarbeiten, mögliche Sperrung im Bereich des Wasserwerks, ab 23.02.2026 bis voraussichtlich Ende Juli 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645215.php (Sperrung dieses Abschnitts für drei Monate, allerdings ohne einen konkreten Termin zu benennen)
+	2::inwork 710,18727 714,18758 897,18943 1002,19014 1122,19036 1165,19009 1200,18969
 EOF
      },
     );

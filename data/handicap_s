@@ -2423,8 +2423,6 @@ Bruno-Baum-Grünzug: Grünanlage, Fußgänger	q3 20260,15434 20245,15394 20004,15251
 (Ihnestr. - Clayallee): einige Fußgänger, Bordstein	q3 1981,4741 2033,4757
 (Breitenbachplatz/Südwestkorso - Kreuznacher Str.): Gehweg	q4 4103,6716 4174,6711
 (Krautstr. - Kleine Markusstr.): zwei Bodenschwellen	q2 12002,12008 11961,12025 11956,12071 11932,12111 11937,12127
-An der Wuhlheide: gegenläufiger Geh/Radweg	q3; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687
-Lindenstr.: gegenläufiger Geh/Radweg	q3; 21605,5687 21623,5661 21706,5541 21789,5427
 (Zur Waage - Zur Innung): Grünanlage, einige Fußgänger	q3 14067,13050 14086,13090
 Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
@@ -2600,6 +2598,8 @@ Straße 3: vier Aufpflasterungen	q1 18816,19648 19071,19576
 Straßenbahnübergang	q3 17790,17126 17799,17145
 Straßenbahnübergang	q3 17861,17099 17866,17116
 Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
+(Übergang Straßenbahnhaltestelle Alte Försterei)	q3 21365,5832 21364,5827
+(Übergang Höhe Haupteingang Stadion an der Alten Försterei)	q3 21519,5767 21522,5771
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
 Colbestr.: eng	q0 14468,11992 14416,11815
 Lisa-Fittko-Str.: einige Fußgänger	q1 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
@@ -3591,6 +3591,7 @@ Steinträgerweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 12
 Harzburger Str. (Pankow), Klaustaler Str...: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Römerweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 19236,9710 19450,9728 19459,9842
 Hauptstr. (Richtungsfahrbahn): linker Bürgersteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp::igndisp; 15307,10701 15261,10738
+Lindenstr. (Straßenbahntrasse): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp::igndisp; 21605,5687 21623,5661 21706,5541 21789,5427
 Lötschbergstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 20161,11715 20150,11512
 Brodenbacher Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 15178,17134 14897,17093
 Hartmannsweilerweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16,3744 41,3510 17,3471

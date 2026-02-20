@@ -1015,6 +1015,8 @@ Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10884
 Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21739,5492 21703,5538 21649,5617
 Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21519,5767 21467,5802 21364,5827 21303,5826
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492 21789,5427
+An der Wuhlheide/Pyramidenbrücke (Straßenbahntrasse)	1::igndisp 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687
+Lindenstr. (Straßenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 21789,5427
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (mit Ampel, Brückenneubau 2021)
@@ -4465,6 +4467,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: by: https://www.entwicklungsstadt.de/entlang-der-a100-wann-wird-der-neue-radweg-freigegeben/
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (keine Infos von der Autobahn GmbH)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/verkehrsplanung/radverkehr/akteure-und-gremien/20251113_fahrrat_protokoll.pdf (Frühjahr 2026?)
+#: by: https://www.tagesspiegel.de/berlin/monatelang-ohne-ersichtlichen-grund-gesperrt-aktivisten-offnen-eigenmachtig-neuen-radweg-an-der-a100-15272876.html
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
 #: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.), 2025-04-12 (Sa) 10:18 (Kiefholzstr. NO)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
@@ -4616,7 +4619,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-02-15
+#: last_checked: 2026-02-20
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4624,7 +4627,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-02-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5032,7 +5035,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-02-18 vvv
+#: last_checked: 2026-02-20 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5051,10 +5054,10 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/drei-neue-hochhauser-an-der-spree-langzeit-projekt-molecules-mit-neuem-konzept-13684222.html
 #: confirmed_by: srt
 # REMOVED (mehr als zwei Jahre kaputt) --- #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
-#: last_checked: 2025-11-24 vvv
+#: last_checked: 2026-02-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-06-30 (agromex website) vvv
-Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
+Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5470,7 +5473,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: osm_watch: way id="593108603" version="3"
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 #: osm_watch: way id="633754177" version="3"
-#: osm_watch: way id="642581106" version="7"
+#: osm_watch: way id="642581106" version="8"
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 #: check_frequency ^^^
 #: last_checked ^^^

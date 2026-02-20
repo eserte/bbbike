@@ -117,16 +117,26 @@ Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die li
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5458,10443 5520,10453 5568,10535 5627,10637
 Nordufer: bereits an der Ampel Föhrer Str. auf den linken Zweirichtungsradweg wechseln	PI; 6334,14756 6213,14777 5984,14819 5873,14847
 # 
-#: next_check_id: PYRAMIDENBRUECKE-2022
-#: note: vor den Bauarbeiten: unbequemes Überqueren, aber (mittlerweile?) möglich; 
-#: XXX hier wird eine Querungshilfe erstellt (nach Brückenneubau)
-#: last_checked: 2025-12-06
-#: check_frequency: 180d
-# REMOVED --- #: next_check: 2023-07-15
-An der Wuhlheide - Wuhlewanderweg: bereits an der Ampel Rudolf-Rühl-Allee die Straßenseite wechseln	PI; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687 21618,5699
+# REMOVED (Übergang vor der Alten Försterei eingetragen) --- #: next_check_id: PYRAMIDENBRUECKE-2022
+# REMOVED --- #: note: vor den Bauarbeiten: unbequemes Überqueren, aber (mittlerweile?) möglich; 
+# REMOVED --- #: XXX hier wird eine Querungshilfe erstellt (nach Brückenneubau)
+# REMOVED --- #: last_checked: 2025-12-06
+# REMOVED --- #: check_frequency: 180d
+# REMOVED --- #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: valid: 20260630-
+# REMOVED --- An der Wuhlheide - Wuhlewanderweg: bereits an der Ampel Rudolf-Rühl-Allee die Straßenseite wechseln	PI; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687 21618,5699
+# REMOVED --- #: valid: -20260630
+# REMOVED --- An der Wuhlheide - Wuhlewanderweg: etwa in Höhe des Haupteingangs des Stadions an der Alten Försterei die Straßenseite wechseln	PI; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687 21618,5699
+# REMOVED --- #: next_check ^^^
 # 
-#: XXX_prog: RL:ja, GPS:nein
-An der Wuhlheide - Alte Försterei: bereits an der Ampel Rudolf-Rühl-Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21406,5864
+# REMOVED (Übergang an der Straßenbahnhaltestelle eingetragen) --- #: XXX_prog: RL:ja, GPS:nein
+# REMOVED --- #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung, siehe oben) vvv
+# REMOVED --- #: valid: 20260630-
+# REMOVED --- An der Wuhlheide - Alte Försterei: bereits an der Ampel Rudolf-Rühl-Allee die Straßenseite wechseln (Straßenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21406,5864
+# REMOVED --- #: valid: -20260630
+# REMOVED --- An der Wuhlheide - Alte Försterei: die Straße "An der Wuhlheide" in Höhe der Straßenbahnhaltestelle Alte Försterei überqueren	PI; 21303,5826 21365,5832 21406,5864
+# REMOVED --- #: next_check ^^^
+# 
 Wuhlewanderweg - Lindenstr.: zunächst linken Gehweg benutzen, an der Cardinalstr. oder Ampel Joachimstr. die Straßenseite wechseln	CP; 21618,5699 21605,5687 21623,5661 21706,5541
 Mariendorfer Damm - Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9206,5193 9196,5272 9171,5263
 # REMOVED (-> routing_helper-orig) --- #: note: schlecht passierbarer Mittelstreifen --- Jerusalemer - Leipziger Str.: zunächst linken Gehweg benutzen, an der Ampel Jerusalemer Str. die Straßenseite wechseln	CP; 9892,11752 9896,11703 9898,11679 9981,11689
@@ -665,7 +675,7 @@ Einfahrt an der Bushaltestelle Zedlitzberg	CP2; -11528,3111 -11395,3270
 # 
 #: next_check_id: BKATREPTOW-2025
 #: XXX früher, evtl. wieder herstellen: Puschkinallee - Eichenstr.: ggfs. schon die Überquerungshilfe vor dem Schlesischen Busch benutzen und durch die Grünanlage (asphaltierter Weg) fahren
-#: last_checked: 2026-02-13
+#: last_checked: 2026-02-20
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Puschkinallee - Eichenstr.: ggfs. schon die provisorische Ampel am Schlesischen Busch benutzen und durch die Grünanlage fahren	PI; 13579,10146 13711,10022 13782,9954 13805,10007 13842,10095

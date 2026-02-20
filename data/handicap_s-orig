@@ -82,7 +82,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="27"
 #: osm_watch: way id="1072662717" version="31"
-#: last_checked: 2026-02-18
+#: last_checked: 2026-02-20
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -302,7 +302,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="10"
-#: last_checked: 2026-01-28
+#: last_checked: 2026-02-20
 #: check_frequency: 90d
 #: next_check: 2029-06-30 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -897,10 +897,10 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
 #: osm_watch: way id="1392961223" version="5"
-#: also_indoor: traffic (T,ex-G,ex-H,ex-W)
-#: last_checked: 2026-02-18 (traffic)
+#: also_indoor: traffic (T,re-G,ex-H,re-W)
+#: last_checked: 2026-02-20 (traffic)
 # REMOVED --- #: check_frequency: 60d
-#: check_frequency: 3d
+#: check_frequency: 10d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
@@ -1334,7 +1334,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: by: https://www.morgenpost.de/bezirke/pankow/article411096985/ende-ungewiss-frust-und-chaos-nach-rohrbruch-in-prenzlauer-berg.html
 #: by: https://www.morgenpost.de/bezirke/pankow/article411086279/wasserrohrbruch-mit-folgen-greifswalder-strasse-stadtauswaerts-voll-gesperrt.html
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-02-07 vvv
+#: last_checked: 2026-02-20 (traffic) vvv
 #: check_frequency: 14d vvv
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork; 11652,13564 11706,13635 11820,13804
 Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork 11785,13625 11762,13619 11706,13635
@@ -4972,8 +4972,8 @@ Bruno-Baum-Grünzug: Grünanlage, Fußgänger	q3 20260,15434 20245,15394 20004,15251
 (Ihnestr. - Clayallee): einige Fußgänger, Bordstein	q3 1981,4741 2033,4757
 (Breitenbachplatz/Südwestkorso - Kreuznacher Str.): Gehweg	q4+ 4103,6716 4174,6711
 (Krautstr. - Kleine Markusstr.): zwei Bodenschwellen	q2 12002,12008 11961,12025 11956,12071 11932,12111 11937,12127
-An der Wuhlheide: gegenläufiger Geh/Radweg	q3; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687
-Lindenstr.: gegenläufiger Geh/Radweg	q3; 21605,5687 21623,5661 21706,5541 21789,5427
+# REMOVED --- An der Wuhlheide: gegenläufiger Geh/Radweg	q3; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687
+# REMOVED --- Lindenstr.: gegenläufiger Geh/Radweg	q3; 21605,5687 21623,5661 21706,5541 21789,5427
 #: note: Grünanlage, keine Zusatzschilder
 (Zur Waage - Zur Innung): Grünanlage, einige Fußgänger	q3 14067,13050 14086,13090
 Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
@@ -5316,6 +5316,8 @@ Straße 3: vier Aufpflasterungen	q1+ 18816,19648 19071,19576
 Straßenbahnübergang	q3 17790,17126 17799,17145
 Straßenbahnübergang	q3 17861,17099 17866,17116
 Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
+(Übergang Straßenbahnhaltestelle Alte Försterei)	q3 21365,5832 21364,5827
+(Übergang Höhe Haupteingang Stadion an der Alten Försterei)	q3 21519,5767 21522,5771
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)

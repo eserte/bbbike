@@ -577,6 +577,8 @@ Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10884
 Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21739,5492 21703,5538 21649,5617
 Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21519,5767 21467,5802 21364,5827 21303,5826
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492 21789,5427
+An der Wuhlheide/Pyramidenbrücke (Straßenbahntrasse)	1::igndisp 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687
+Lindenstr. (Straßenbahntrasse)	1s::igndisp 21605,5687 21623,5661 21706,5541 21789,5427
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21623,5661 21605,5687 21600,5694
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
@@ -3645,7 +3647,7 @@ Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405
 Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
 Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
-Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
+Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
 George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgersteig frei	2s:inwork 7446,14403 7529,14274

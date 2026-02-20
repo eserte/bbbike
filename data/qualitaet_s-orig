@@ -128,7 +128,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: osm_watch: way id="65707583" version="22"
+#: osm_watch: way id="65707583" version="23"
 #: last_checked: 2026-01-18 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -315,13 +315,13 @@ Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
 #: confirmed_by ^^^
 #: by: Jürgen Schulz-Brüssel
 #: confirmed_by: srt
-(Am Bahndamm): sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
+Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
 #: last_checked: 2025-12-23
 #: check_frequency: 60d
-(Am Bahndamm): unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
-(Am Bahndamm): sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
+Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
+Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
 Alemannenstr.: Asphalt	Q0 -3360,2917 -3417,2886
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3417,2886 -3452,2868 -3509,2817 -3635,2668 -3686,2579
 Alemannenstr.: mäßiges Kopfsteinpflaster	Q2 -3686,2579 -3692,2549 -3709,2517 -3725,2475 -3726,2457
@@ -1123,7 +1123,7 @@ Tiergarten: Mosaikpflaster	Q1 8344,12221 8391,12389 8400,12417
 Parkweg: Kleinsteinpflaster	Q1 14318,9688 14361,9772 14404,9847 14448,9922
 Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 #: note: mittlerweile etwas wellig, Höhenunterschiede zwischen einzelnen Gehwegplatten und dem Sandweg
-Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1- 14373,10046 14202,10152 14126,10176 13918,10240
+Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1- 14373,10046 14202,10152 14126,10176 13980,10221 13918,10240
 Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11259,8591 11182,8983 11145,9087 11141,9107 11136,9183
 # REMOVED --- #: next_check_id: LILIENTHALWEG-2020 --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php --- #: by: https://abendblatt-berlin.de/2020/04/26/neukoelln-sanierung-des-lilienthalwegs/ --- #: XXX Weg wird gepflastert (Betonpflaster, kleines Stück Kleinsteinpflaster) --- #: last_checked: 2020-08-12 --- # REMOVED --- #: next_check: 2020-07-31 --- #: check_frequency: 7d
 Hasenheide, zur Lilienthalstr.: Verbundsteinpflaster, kleine Stück mit Kleinsteinpflaster	Q1+ 10709,9192 11111,9104 11141,9107
@@ -3335,7 +3335,7 @@ Hauptstr.: Asphalt	Q0 -7360,13409 -7273,13354
 (Am Bullengraben): Gitterbrücke	Q1+ -7443,13616 -7522,13651
 (Am Bullengraben): Asphalt	Q0 -7443,13616 -7428,13643 -7500,13715
 #: corrected_by: srt (wassergebundene Decke -> ..., vielleicht neu gemacht?)
-(Am Bullengraben): Asphalt	Q0 -7522,13651 -7529,13657 -7503,13742 -7592,13713 -7656,13723 -7717,13720 -7759,13716 -7796,13693
+(Am Bullengraben): Asphalt	Q0 -7484,13770 -7503,13742 -7592,13713 -7656,13723 -7717,13720 -7759,13716 -7796,13693
 #: corrected_by: srt (wassergebundene Decke, Q1 -> ...)
 Philipp-Gerlach-Weg: Kopfsteinpflaster	Q2+ -7796,13693 -7836,13662 -7845,13608
 #: confirmed_by: srt
@@ -8441,10 +8441,11 @@ Hirtschulzstr.: schlechtes Kopfsteinpflaster	Q3 24316,12566 24195,12558 24077,12
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_06_0305_0356_online.pdf (Planfeststellung)
 #: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/A52708EE-CE1B-417C-AD65-05C9975C940D/UL03_Lageplan_Blatt1_gesiegelt.pdf
 #: by: https://www.tagesspiegel.de/berlin/pendler-sollen-sicherer-zur-s-bahn-kommen-umbau-von-gefahrlichem-tram-anschluss-im-berliner-sudosten-dauert-noch-jahre-11218738.html (Baubeginn 4. Quartal 2026, Bauzeit 6 Monate)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25004.pdf (Klärung der Finanzierung, kein Zeitplan)
 #: XXX Straßenbahnhaltestelle soll auf die Westseite verlegt werden; gemeinsamer Rad- und Gehweg bis zur Schöneicher Str. (Kaphaltestelle?); Kopfsteinpflaster wird durch Asphalt ersetzt; Fußgängerampel vor der Schöneicher Str.
-#: last_checked: 2025-07-08 (mapillary)
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2027-06-30 (Tsp (4. Quartal 2026 plus sechs Monate))
+#: last_checked: 2026-02-11 (pardok)
+#: check_frequency: 720d
+# REMOVED --- #: next_check: 2027-06-30 (Tsp (4. Quartal 2026 plus sechs Monate))
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
 Biesterfelder Str.: Asphalt	Q0 16942,16174 17010,16349 17102,16464
 Klettwitzer Str.: Asphalt	Q0 18875,16872 18782,16597
