@@ -16623,7 +16623,7 @@ EOF
 # REMOVED --- #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
 #: XXX: Bauarbeiten am Ostbahnhof, evtl. wurde die Marktfläche hierher verschoben (falls es wieder rückgängig gemacht wird: Eintrag oben aktivieren)
 # REMOVED --- #: XXX Prüfen: wird die Marktfläche in der Koppenstr. jemals genutzt? Am 2024-04-21 (So) gegen 12:15 Uhr keine Nutzung. Vielleicht nur auf der Platzfläche? Am 2024-05-05 kein Markt, möglicherweise in Karlshorst gewesen. Am 2024-05-19 gegen 10:15 Uhr keine Nutzung in der Koppenstr., nur sehr wenige Stände am Rand des Hermann-Stöhr-Platzes, nicht einmal der Diagonalweg war betroffen. 2024-06-09: Stände nur am Rand des Hermann-Stöhr-Platzes (Höhe Westtunnel Ostbahnhof). 2024-06-16: Nutzung der Koppenstr.
-#: last_checked: 2025-12-19
+#: last_checked: 2026-02-21
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 	q4::temp:clock 12378,11806 12413,11901
@@ -33631,6 +33631,7 @@ EOF
 #: by: https://entwicklungsstadt.de/13-etagen-bueroturm-am-kadewe-projekt-quantum-p1-waechst-in-die-hoehe/
 #: by: https://www.entwicklungsstadt.de/am-kadewe-in-der-city-west-fassade-des-bueroturms-quantum-p1-vollstaendig-installiert/
 #: by: https://www.entwicklungsstadt.de/buerohochhaus-p1-am-kadewe-erste-flaechen-in-der-city-west-vermietet/ (Einzug Dezember 2026, Fertigstellung Anfang 2027)
+#: by: https://www.entwicklungsstadt.de/lueckenschluss-am-kadewe-projekt-quantum-p1-zeigt-seine-dimensionen/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="18"
@@ -42068,7 +42069,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2026-01-16
+#: last_checked: 2026-02-21
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -43849,7 +43850,7 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-11-19
+#: last_checked: 2025-12-05 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-04-30 (Schilder vor Ort)
 # REMOVED --- #: check_frequency: 120d
@@ -49263,7 +49264,7 @@ EOF
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: also_indoor: traffic (none)
-#: last_checked: 2026-02-10 (daf)
+#: last_checked: 2026-02-21
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -49654,7 +49655,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="2"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2025-12-15 (mapillary) vvv
+#: last_checked: 2026-02-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -51097,6 +51098,7 @@ EOF
 # REMOVED --- Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
 # REMOVED --- Planckstr.	q4::inwork 9441,12670 9454,12558
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
+#: last_checked: 2026-02-21
 Charlottenstr.	q3::inwork 9454,12558 9462,12481
 EOF
      },
@@ -51268,11 +51270,12 @@ EOF
 #: by: https://iq-spaces.com/de/berlin-mitte (iQ Space)
 #: by: http://www.deal-magazin.com/news/148507/Leuchtturmprojekt-fuer-Biomedizin-WOLFF--MUeLLER-baut-iQ-space (Fertigstellung April 2028)
 #: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/sellerstra%C3%9Fe-1-15-errichtung-und-b%C3%BCro-und-laborgeb%C3%A4udes.1506/#post-26917
 #: osm_watch: way id="1080985512" version="15"
 #: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-02-20 (architektur-urbanistik) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570

@@ -209,7 +209,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="4323788" version="28"
 #: osm_watch: way id="23109081" version="24"
 #: osm_watch: way id="41108858" version="23"
-#: last_checked: 2025-12-20
+#: last_checked: 2026-02-21
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-10-11
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
@@ -2227,7 +2227,7 @@ Roedernallee: Sanierung des Radweges bzw. neue Radspuren waren vorgesehen	? 6392
 #: osm_watch: way id="4441941" version="29"
 #: osm_watch: way id="1431125767" version="1"
 #: osm_watch: way id="1431125768" version="1"
-#: last_checked: 2025-10-22
+#: last_checked: 2026-02-21
 #: check_frequency: 360d
 Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7145,-961 -7066,-840 -7042,-724 -7069,-392 -7076,-227 -7067,-36 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310 -7167,362 -7180,378 -7178,377
 # 
@@ -2374,7 +2374,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/luisenblock-ost.34/page-2#post-22369 (Tiefbauarbeiten im Schiffbauerdamm 2025/2026)
 #: by: https://www.bbr.bund.de/BBR/DE/Wettbewerbe/Planungswettbewerbe/berlin/luisenblock-ost/verfahren.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_08_0469_0520_online.pdf (Einziehung von öffentlichem Straßenland (alter Straßenabschnitt))
-#: last_checked: 2026-01-16
+#: last_checked: 2026-02-21
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 180d
 #: next_check: 2026-12-31
@@ -5857,7 +5857,7 @@ Sickingenstr./Rostocker Str.: Zebrastreifen geplant	?::projected 5131,14046 5089
 #: XXX angeordnet, aber noch keine Mittelzusage, weitere Mittelzusagen evtl. im Sommer 2022 vvv
 #: priority: #D vvv
 #: check_frequency: 120d vvv
-#: last_checked: 2026-01-16
+#: last_checked: 2026-02-21
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
 # REMOVED (zumindest auf der nördlichen Seite fertig) --- #: next_check_id: FRIEDENKOPPEN-2023 --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (2023) --- #: source_id: viz2021:13.43786,52.52023,31.01.2024,12:46 (bis 29.02.2024) (am nächsten Tag entfernt, inaktiv) --- #: source_id: viz2021:13.437884,52.520284,23.06.2023,06:00 (bis 31.08.2023, Gesamtbaumaßnahme bis 11/2023) (bis 15.10.2023) (inaktiv) (bis 31.01.2024) (bis 29.02.2024) (bis 02.04.2024) (bis 30.06.2024) (bis 18.04.2024) (inaktiv) --- #: source_id: viz2021:13.438124,52.520164,18.04.2024,06:00 (bis 30.06.2024) (bis 26.07.2024) (inaktiv) --- #: source_id: viz2021:13.43794,52.52035,18.04.2024,06:00 (bis 30.06.2024) (inaktiv) --- #: source_id: viz2021:13.43786,52.52023,27.06.2024,15:16 (bis 26.07.2024) (inaktiv) --- #: osm_watch: note 4161500 6 --- #: note: (weggedrehte) Masten steht schon --- #: last_checked: 2024-09-25 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2024-07-26 --- Friedenstr./Koppenstr.: Zebrastreifen in Bau	?::inwork 12694,12798 12690,12769 12653,12762
 #: XXX hier waren Asphaltierungsarbeiten, vielleicht im Zusammenhang mit dem Zebrastreifen?
@@ -5887,10 +5887,10 @@ Blankenfelder Str/Chartronstr.: Zebrastreifen geplant	?::projected 11510,22103 1
 #: last_checked: 2025-12-29
 Eisenzahnstr./Hohenzollerndamm: Zebrastreifen geplant	?::projected 3665,9086 3688,9051 3707,9019
 #: note: nicht in der sen/uvk-Liste aufgeführt
-#: XXX Zurzeit Bauarbeiten am Gehweg, vielleicht für den neuen Zebrastreifen?
-#: osm_watch: note 4949301 1
-#: last_checked: 2025-09-06
-#: check_frequency: 60d
+#: XXX Zurzeit Bauarbeiten am Gehweg, vielleicht für den neuen Zebrastreifen? --- mittlerweile stehen die Masten, weggedreht, Markierungen fehlen noch (siehe osm-Notiz)
+#: osm_watch: note 4949301 2
+#: last_checked: 2026-02-20 (osm note)
+#: check_frequency: 30d
 Fontanestr./Auerbacher Str.: Zebrastreifen geplant (ein zweiter an dieser Kreuzung?)	?::projected 901,8862 920,8895 941,8864
 # REMOVED (laut osm fertig) --- #: osm_watch: note 3624572 7 --- #: last_checked: 2024-03-22 (Mast steht, weggedreht, ohne Schild, keine Markierung) --- #: check_frequency: 60d --- Fontanestr. 15: Zebrastreifen in Bau	?::work 982,8596 972,8626 1002,8618
 #: last_checked: 2025-10-31 (mapillary)
@@ -6931,7 +6931,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1623505.php (Realisierungswettbewerb)
 #: by: https://www.entwicklungsstadt.de/weiterentwicklung-des-regierungsviertels-wettbewerb-fuer-luisenblock-ost-ii-gestartet/ (Fertigstellung 2034?)
 #: by: https://www.entwicklungsstadt.de/luisenblock-ost-wettbewerb-gestartet-bebauungsplan-wird-neu-aufgesetzt/
-#: last_checked: 2025-12-20
+#: last_checked: 2026-02-21
 #: check_frequency: 720d
 #: next_check: 2034-12-31
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
@@ -8252,7 +8252,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1491829.php (Bebauungsplan II-201da)
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/bebauungsplanverfahren/01_ii-201da_bebauungsplanentwurf.pdf
 #: XXX ein paar Meter existieren bereits; wird die Uferpromenade mit dem Spreeuferweg verknüpft?
-#: last_checked: 2026-02-11
+#: last_checked: 2026-02-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-12-30
 Humboldthafen: Verlängerung der Uferpromenade	?::inwork 8119,13396 8118,13222 8160,13171 8159,13032
@@ -8590,7 +8590,7 @@ Wublitz: Brückenneubau; alte Brücke wird zum Radweg	?::projected -19987,2459 -20
 #: XXX Wird diese Unterführung auch für Radfahrer befahrbar sein?
 #: XXX Anbindung an B96 (Bahnhofsplatz) fehlt bei BBBike noch.
 #: osm_watch: way id="1308462460" version="6"
-#: last_checked: 2025-06-21
+#: last_checked: 2026-02-16 (youtube)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2027-09-30 (zossen.de website)
 Bhf. Zossen: neue Bahnunterführung	?::inwork 13391,-20703 13391,-20703 13460,-20702
@@ -8706,7 +8706,7 @@ Brodowiner Ring - Hohensaatener Str.: Stadtplatz in Planung	? 22192,16165 22063,
 #: note: laut Mobilitätsrat Mitte wird die Maßnahme 2024 umgesetzt (siehe osm note)
 #: osm_watch: way id="4376904" version="25"
 #: osm_watch: note 3769887 11
-#: last_checked: 2025-12-20
+#: last_checked: 2026-02-21
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2024-03-01
 Helgoländer Ufer	? 6686,12768 6758,12681 6775,12661
@@ -9041,7 +9041,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
-#: last_checked: 2026-02-14 vvv
+#: last_checked: 2026-02-21 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="563341820" version="24"
 #: note: zwischenzeitlich gar keine Einbahnstraßenregelung
@@ -9218,13 +9218,6 @@ Westfälische Str./Bielefelder Str.: vermutlich entsteht hier 2025 eine Ampel	? 3
 Französische Str./Markgrafenstr.: neue Ampel sollte 2025 entstehen	? 9624,12153 9645,12133 9671,12109
 # 
 # REMOVED (ja) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1529206.php (10. bis 28. Februar 2025) --- #: by: https://www.berliner-zeitung.de/news/bauarbeiten-in-treptow-koepenick-semliner-strasse-bis-ende-februar-gesperrt-li.2293919 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20250308 (bis 14.03.2025) --- #: osm_watch: way id="1184915885" version="4" --- #: osm_watch: note 4645618 2 --- #: XXX es wird wohl nur "geflickt", also -> Q0- --- #: last_checked: 2025-03-08 --- #: next_check: 2025-03-14 (BA-Seite) --- Semliner Str.: ist die Qualität nach den Bauarbeiten besser geworden?	?::inwork 22272,7242 22296,7366
-# 
-#: next_check_id: AMALTENMARKT-2018
-#: XXX früher provisorisch asphaltiert, jetzt ein provisorischer Weg
-#: osm_watch: way id="760022943" version="21" brb
-#: last_checked: 2024-07-08 (daf)
-#: check_frequency: 60d
-Anna-Zielenziger-Str.: ist die Straße gepflastert oder asphaltiert?	? -12719,-1542 -12780,-1558 -12790,-1560
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10678 (Bebauungsplan 11-192)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Y8IWNCkTxPRb3qEGD9B2FDhWv3rLvvvQ4hITiaRp/rESlfSVA/13-Anlagen/04/attach_A9AF.pdf
@@ -9437,6 +9430,7 @@ Prinz-Eugen-Str./Adolfstr./Plantagenstr.: Modalfilter geplant	?::projected 7783,
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~12-08-2025-b103-vollsperrung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-12-2025-b103-zwischen-gantikow-und-vehlow (Fertigstellung des gesamten Projekts bis Ende 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~09-01-2026-b103_witterung-verzoegert-bauarbeiten
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-02-2026-b103-zw-gantikow-u-vehlow_fortsetzung-der-arbeiten
 #: source_id: LS/223-K/25/140 (bis 18.12.2026)
 #: next_check: 2026-12-18 (Verkehrsmeldung)
 Gantikow - Vehlow: Bau eines asphaltierten Radwegs (Westseite?)	? -61969,62314 -62264,62702 -62375,62930 -62549,63698 -62652,63877 -62911,64069 -63077,64306 -63485,65303 -63882,65722 -63957,66019 -64027,66282
@@ -9499,7 +9493,7 @@ Bad Belzig: Straßennamen? Qualität? Einbahnstraßen auch für Radfahrer gültig?	? 
 #: osm_watch: note 3954448 15
 #: osm_watch: note 3954746 4
 #: osm_watch: way id="195397561" version="23"
-#: last_checked: 2026-02-10
+#: last_checked: 2026-02-21
 # REMOVED (während der Gleisbauarbeiten 30d) --- #: check_frequency: 14d
 #: check_frequency: 30d
 Planckstr.: wird hier eine Fahrradstraße entstehen?	? 9376,12911 9375,12911 9386,12833 9402,12792 9429,12728 9435,12698 9441,12670
@@ -9921,6 +9915,40 @@ Berliner Str.: Radfahrstreifen in Mittellage, Grünbeschichtung	?::projected 5895
 #: next_check_id: METROPOLITANPARK-2019
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_08_0469_0520_online.pdf (Widmung von öffentlicher Grün- und Erholungsanlage)
 Metropolitan Park: ist hier eine nutzbare Wegverbindung? Kann man die umliegende Grünanlage eintragen?	? -7926,13709 -7907,13730 -7835,13707 -7818,13683 -7836,13662
+# 
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=18B1427E-DCE6-45CE-A2D8-3AE59415C594
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/06.3_Einschraenkung_Strassenverkehr.pdf
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/06.4_Einschraenkung_Fuss-_und_Radweg.pdf
+#: by: https://bvg-projekt.de/projekte/ersatzneubau-waisentunnel-spreeunterquerung-berlin-mitte-bim-pilot-1-0/ (Bauzeit 2024 - 2028)
+#: by: https://www.tagesspiegel.de/berlin/maroder-u-bahn-bau-ist-seit-jahren-gesperrt-immer-neue-schwierigkeiten-beim-berliner-waisentunnel-11186392.html (2030 noch immer nicht fertig?)
+#: by[nocache]: https://archive.is/FHiO5
+#: by: https://www.nd-aktuell.de/artikel/1180005.verkehr-maroder-waisentunnel-sorgenkind-der-berliner-u-bahn.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18170.pdf (keine Termine genannt)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/schauplatz-einer-spektakulaeren-ddr-flucht-in-berlin-das-geschieht-mit-dem-stillen-bvg-tunnel-in-mitte-li.2266468 (Baubeginn 7 Monate nach Ende des Planfeststellungsverfahrens)
+#: by: https://www.tagesspiegel.de/berlin/der-waisentunnel-bleibt-verwaist-planung-fur-berliner-problembaustelle-unter-der-spree-stockt-12997495.html (verschiebt sich auf unbestimmte Zeit)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-21170.pdf
+#: by: https://www.nd-aktuell.de/artikel/1189799.sanierung-berliner-u-bahn-geschichtstraechtiger-waisentunnel-vor-neubau.html
+#: by: https://www.nd-aktuell.de/artikel/1191086.bvg-oepnv-in-berlin-u-bahn-bleibt-hochrisikopatient.html (Baubeginn 2025?)
+#: by: https://www.rbb24.de/panorama/beitrag/2025/05/berlin-bvg-plant-tunnel-neubau-unter-der-spree.html (Baubeginn Ende 2025)
+#: by: https://entwicklungsstadt.de/nach-sieben-jahren-bvg-erneuert-berliner-waisentunnel/ (Fertigstellung 2028?)
+#: by: https://www.tagesspiegel.de/berlin/macht-keinen-sinn-uber-weitere-strecken-zu-reden-bvg-chef-erteilt-u-bahn-traumen-des-senats-eine-absage-13955360.html (Baustart: Dezember 2025, Bauzeit: rund vier Jahre)
+#: by: https://www.nd-aktuell.de/artikel/1192535.muehlendammwehr-neuer-wanderweg-fuer-spreewelse-in-berlin-mitte.html
+#: by: https://entwicklungsstadt.de/waisentunnel-berlin-ersatzneubau-sichert-stabilitaet-des-u-bahnnetzes/
+#: by: https://www.nd-aktuell.de/artikel/1194529.u-bahn-u-mexikoplatz-baustart-in-elf-monaten.html (Planfeststellungsbeschluss noch im Oktober 2026?)
+#: by: https://www.bahninfo-forum.de/read.php?9,818927,840301#msg-840301 (Baustart ab Dez 2025 für vier Jahre)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/waisentunnel
+#: by: https://bvg-projekt.de/projekte/ersatzneubau-waisentunnel-spreeunterquerung-berlin-mitte-bim-pilot-1-0/
+#: by: https://www.morgenpost.de/berlin/article410990337/u-bahn-tunnel-unter-der-spree-bvg-darf-wichtige-verbindung-bauen.html
+#: by: https://www.entwicklungsstadt.de/tunnel-unter-der-spree-baurecht-fuer-eine-der-wichtigsten-verbindungen-der-bvg/ (Frühjahr 2025 bis 2030)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/geheimer-u-bahn-tunnel-der-bvg-berlin-bekommt-grossbaustelle-mitten-in-der-spree-li.10015244 (Bauarbeiten beginnen auf der Südseite)
+#: by: https://www.nd-aktuell.de/artikel/1197016.bvg-u-bahn-baurecht-fuer-den-waisentunnel.html
+#: by: https://www.tagesspiegel.de/berlin/wichtige-verbindung-des-berliner-u-bahn-netzes-endlich-baurecht-fur-den-neuen-waisentunnel-15163355.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_06_0325_0404_online.pdf
+#: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei
+#: last_checked: 2026-02-21
+#: check_frequency: 14d
+#: next_check: 2030-12-31 (entwicklungsstadt)
+Littenstr.: wann wird die Fahrbahn wegen Bauarbeiten wieder gesperrt sein?	? 11139,12243 11155,12184
 # 
 #: section ^^^
 #: ignore ^^^
@@ -10850,7 +10878,7 @@ ehemaliger Kiesumschlagplatz am Napoleonkai: evtl. entsteht hier eine Abkürzung 
 #: by: https://berliner-abendblatt.de/2022/02/11/westkreuzpark-linke/
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/plaene-fuer-westkreuzpark-gescheitert_a336131
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8358 (Anfrage)
-#: last_checked: 2025-11-19
+#: last_checked: 2026-02-21
 #: check_frequency: 720d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -11757,7 +11785,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 Uferweg wird verlängert	?::inwork 12010,11545 11962,11596
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: osm_watch: way id="124182482" version="10"
-#: last_checked: 2026-02-19
+#: last_checked: 2026-02-21
 #: check_frequency: 120d
 Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 # 
@@ -12616,7 +12644,7 @@ Tempelhofer Weg/Britzer Damm: Bebauungsplan 8-98, werden hier Wege/Straßen entst
 #: by: https://www.deutsches-architekturforum.de/thread/14794-ulap-quartier-geplant/?postID=768618#post768618
 #: by: https://entwicklungsstadt.de/hauptbahnhof-landeslabor-wird-fuer-neues-stadtquartier-abgerissen/ (Rückbau bis Ende 2025; Bauzeit des ULAP-Quartiers 10 Jahre)
 #: by: https://www.entwicklungsstadt.de/abriss-fast-abgeschlossen-berlins-landeslabor-macht-platz-fuer-neues-hochhaus-quartier/
-#: last_checked: 2025-12-03
+#: last_checked: 2026-02-21
 #: check_frequency: 720d
 #: next_check: 2035-12-31 (entwicklungsstadt)
 ULAP-Quartier: wird es eine Verbindung unter der Stadtbahn geben?	? 7787,12994 7722,13060
@@ -13141,6 +13169,7 @@ Greenpark: wird es hier öffentlich nutzbare Wege geben?	? 13155,5871 13187,5751 
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/verzogert-sich-die-parkschliessung-in-berlin-weiter-anwohner-wollen-gegen-zaun-um-den-gorlitzer-park-klagen-15111621.html
 #: by: https://www.entwicklungsstadt.de/goerlitzer-park-ab-1-maerz-geschlossen-senat-setzt-umstrittenen-plan-um/
 #: by: https://www.tagesspiegel.de/berlin/keine-weitere-verzogerung-trotz-protest-gorlitzer-park-soll-tatsachlich-ab-marz-nachts-schliessen-15270981.html
+#: by: https://www.tagesspiegel.de/berlin/bundnis-will-gegen-senatsplan-klagen-widerstand-gegen-nachtliche-schliessung-des-gorlitzer-parks-15278107.html
 #: XXX Werden die Wege nachts (genaue Schließzeiten?) abgeschlossen sein? Oder wird das nur situationsbedingt (wann?) passieren?
 #: XXX Neue Lampen werden geplant -> nolighting-Einträge ggfs. prüfen.
 #: XXX die meisten Eingänge haben eine Tor-Drehkreuz-Kombination (man kann also nachts raus); Ausnahmen: Cuvrystr.+Ratiborstr.+Liegnitzer Str. (nur Tor) ...

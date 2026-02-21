@@ -8,7 +8,7 @@
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-02-19
+#: last_checked: 2026-02-21
 #: check_frequency: 60d
 Michaelbrücke	F::inwork 11676,11839
 # 
@@ -68,7 +68,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # 
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: viz2021:13.38017,52.51979, (bis 12.05.2026)
-#: last_checked: 2026-01-16
+#: last_checked: 2026-02-21
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-05-12 (VIZ-Verkehrsmeldung, valid geht aber länger)
@@ -1104,7 +1104,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9242,7044
 #: note ^^^
 #: XXX_prog ^^^
+# 
+#: note: Grüner Pfeil für alle (Alt-Tempelhof -> Manteuffelstr., O->N)
 	X 8739,6701
+# 
 	X 9249,6642
 	X 9247,6687
 	X 9254,6542
@@ -3973,7 +3976,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-02-10 vvv
+#: last_checked: 2026-02-21 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 	X::inwork 9121,12514

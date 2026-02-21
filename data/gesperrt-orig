@@ -4416,7 +4416,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 1
-#: last_checked: 2026-02-19 vvv
+#: last_checked: 2026-02-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4942,7 +4942,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2026-02-19
+#: last_checked: 2026-02-21
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -4970,7 +4970,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2026-01-29 (mapillary) vvv
+#: last_checked: 2026-02-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5093,11 +5093,12 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 #: by: https://jtre.de/de/projects/nordhafen-living-and-office
 #: by: https://jtre.de/de/news/ein_jahr_bauzeit (Fertigstellung des Gebäudes im Frühjahr 2027)
 #: by: https://www.entwicklungsstadt.de/wohnraum-in-der-europacity-nordhafen-living-office-soll-bis-fruehjahr-2027-fertig-werden/
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/nordhafen-living-office-heidestra%C3%9Fe-30-32.1495/#post-26912
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 # REMOVED (keine Updates mehr) --- #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-02-20 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-04-15 (jtre.de, entwicklungsstadt (Frühjahr 2027)) vvv
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
@@ -5608,7 +5609,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="49"
 #: also_indoor: traffic
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-02-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5679,7 +5680,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 # REMOVED --- #: osm_watch: way id="765539341" version="17" brb
-#: last_checked: 2025-12-12 (osm)
+#: last_checked: 2026-02-21
 #: check_frequency: 120d
 #: osm_watch: way id="1285592463" version="8" brb
 # REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12802,-1485 -12708,-1445
