@@ -30,7 +30,7 @@ use BBBikeUtil qw(is_in_path);
 
 sub save_pwd (&);
 
-our $VERSION = "0.06";
+our $VERSION = "0.07";
 
 use constant TIMEOUT => 60;
 
@@ -89,7 +89,7 @@ EOF
 }
 
 GetOptions("reload!" => \$do_reload,
-	   "minage=i" => \$min_age,
+	   "minage=f" => \$min_age,
 	   "o=s" => \$o,
 	   "debug=i" => \$debug,
 	   "n" => \$n,
