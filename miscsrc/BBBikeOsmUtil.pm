@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.31;
+$VERSION = 1.32;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -129,23 +129,33 @@ sub mirror_and_plot_osm_files {
 		    main::status_message("Mirror $url ...", "info"); $main::top->update;
 		    main::IncBusy($main::top);
 		    eval {
-			my $resp = $ua->mirror($url, $file);
-			if (!$resp->is_success) {
-			    die "Could not mirror $url: " . $resp->status_line . "\n";
-			} else {
-			    no warnings 'uninitialized'; # content-encoding header may be missing
-			    if ($resp->header('content-encoding') eq 'gzip') {
-				if ($file !~ m{\.gz$}) {
-				    warn "Rename $file -> $file.gz...\n"; # XXX debug
-				    rename $file, "$file.gz"
-					or die "Cannot rename $file to $file.gz: $!";
-				    $file = "$file.gz"; # change @$osm_files_ref
-				    $success = 1;
-				} else {
-				    $success = 1;
-				}
+			if (1) {
+			    my @cmd = ($^X, bbbike_root() . '/miscsrc/downloadosm', '-minage', $refresh_days, '-reload', $file);
+			    system @cmd;
+			    if ($? != 0) {
+				die "Running '@cmd' failed (exit code " . ($?<<8) . ")\n";
 			    } else {
-				$success = 1; # XXX correct?
+				$success = 1;
+			    }
+			} else { # XXX use downloadosm script, as it has a hack for handling zlib-compressed files
+			    my $resp = $ua->mirror($url, $file);
+			    if (!$resp->is_success) {
+				die "Could not mirror $url: " . $resp->status_line . "\n";
+			    } else {
+				no warnings 'uninitialized'; # content-encoding header may be missing
+				if ($resp->header('content-encoding') eq 'gzip') {
+				    if ($file !~ m{\.gz$}) {
+					warn "Rename $file -> $file.gz...\n"; # XXX debug
+					rename $file, "$file.gz"
+					    or die "Cannot rename $file to $file.gz: $!";
+					$file = "$file.gz"; # change @$osm_files_ref
+					$success = 1;
+				    } else {
+					$success = 1;
+				    }
+				} else {
+				    $success = 1; # XXX correct?
+				}
 			    }
 			}
 		    };
