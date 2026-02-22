@@ -287,7 +287,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535 --- #: XXX laut osm wieder Einbahnstraße --- #: osm_watch: way id="30043322" version="17" --- #: last_checked: 2020-12-12 --- #: check_frequency: 60d --- #: next_check: 2020-12-13 --- #: priority: #A --- #: valid: 20201214-
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
-#: osm_watch: way id="1047414962" version="6"
+#: osm_watch: way id="1047414962" version="7"
 #: last_checked: 2026-02-15
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
@@ -1624,10 +1624,10 @@ Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 #: note: es gibt eine provisorische Verbindung zur Weststr. (mittlerweile bei bbbike eingezeichnet)
 #: last_checked: 2025-12-03 vvv
 #: check_frequency: 120d vvv
-#: osm_watch: way id="273858820" version="11"
-#: osm_watch: way id="1239079510" version="1"
+#: osm_watch: way id="273858820" version="12"
+#: osm_watch: way id="1239079510" version="2"
 (Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5924,15005 5935,14948 5940,14911 6030,14924
-#: osm_watch: way id="273858819" version="11"
+#: osm_watch: way id="273858819" version="12"
 (Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5879,14981 5893,14945 5935,14948
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4188,7 +4188,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-02-15
+#: last_checked: 2026-02-21
 #: check_frequency: 120d
 #: next_check: 2026-05-31 (entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4474,7 +4474,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-02-16 vvv
+#: last_checked: 2026-02-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-04-15 (Tsp, Fahrrat) vvv
 #: osm_watch: way id="1199463691" version="6"

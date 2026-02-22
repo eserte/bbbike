@@ -4501,7 +4501,7 @@ Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den E
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-02-16 vvv
+#: last_checked: 2026-02-22 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -5194,7 +5194,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: by: https://www.entwicklungsstadt.de/lueckenschluss-am-kadewe-projekt-quantum-p1-zeigt-seine-dimensionen/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="18"
+#: osm_watch: way id="362719487" version="19"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2026-01-10 (daf)
@@ -5782,7 +5782,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
        undef,
        undef,
        {
-         'data' => '#: note: Tor offen, gesehen am 2022-03-23 mittags vvv
+         'data' => '#: note: Tor offen, gesehen am 2022-03-23 mittags, 2026-02-22 Sun 13:14 vvv
 	3 14976,8053 14968,8046 14903,7997
 	3 14903,7997 14968,8046 14976,8053
 #: note ^^^
@@ -6398,7 +6398,7 @@ Kreuzungsbereich Ariadnestr.	q3::inwork 2376,25498 2502,25544 2643,25500
 #: by: https://gruen-berlin.de/pressemitteilung/spreepark-i-baustart-fuer-wasserweg-und-schiffsanleger
 # REMOVED --- #: note: war zusätzlich in gesperrt-orig eingetragen
 #: add_fragezeichen: Gibt es noch immer Sperrungen wegen der Bauarbeiten?
-#: last_checked: 2026-02-13
+#: last_checked: 2026-02-22
 #: check_frequency: 30d
 # REMOVED (hier offen) ---	2::inwork 15678,8911 15698,8903 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16369,8836 16388,8821
 	q4::inwork 16086,8860 16084,8833
@@ -6804,8 +6804,8 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: XXX Laut BA gilt die verkehrsrechtliche Anordnung bis 29.08.2026; laut Aushang gehen die Bauarbeiten sogar bis Februar 2027
 #: note: siehe auch temporär aufgehobene Einbahnstraßenregelung in der westlichen Mellenseestr.
 #: also_indoor: traffic (T,no-G,H)
-#: osm_watch: note 5085082 4
-#: osm_watch: way id="31525839" version="16"
+#: osm_watch: note 5085082 5
+#: osm_watch: way id="31525839" version="17"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
 #: last_checked: 2026-02-15 vvv
 #: check_frequency: 45d vvv
@@ -7550,7 +7550,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
 #: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt)
-#: osm_watch: way id="1303423090" version="6"
+#: osm_watch: way id="1303423090" version="7"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
 #: last_checked: 2025-08-18 (mapillary)
@@ -8476,9 +8476,9 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
-#: osm_watch: way id="1089784248" version="4"
+#: osm_watch: way id="1089784248" version="5"
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
-#: osm_watch: way id="1374232475" version="4"
+#: osm_watch: way id="1374232475" version="5"
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (ex-H,G)
 #: last_checked: 2025-11-24 (traffic)
@@ -8753,8 +8753,8 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
          'data' => '#: XXX: Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann (mittlerweile aber wohl nicht mehr)
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
-#: osm_watch: way id="1376570531" version="4"
-#: last_checked: 2026-02-02 (traffic)
+#: osm_watch: way id="1376570531" version="5"
+#: last_checked: 2026-02-22 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -8795,7 +8795,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-02-16 (traffic) vvv
+#: last_checked: 2026-02-22 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -9203,7 +9203,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-18 vvv
+#: last_checked: 2026-02-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9231,7 +9231,7 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
          'data' => '#: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,re-T)
 #: osm_watch: way id="722008943" version="13"
-#: osm_watch: way id="722013098" version="13"
+#: osm_watch: way id="722013098" version="14"
 #: osm_watch: way id="1350756367" version="3"
 #: osm_watch: note 5124809 1
 #: last_checked: 2026-02-18 vvv

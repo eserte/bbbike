@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-02-14
+#: last_checked: 2026-02-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -82,7 +82,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="27"
 #: osm_watch: way id="1072662717" version="31"
-#: last_checked: 2026-02-20
+#: last_checked: 2026-02-22
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -506,7 +506,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,124
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lux-berlin-neust%C3%A4dtischer-kirchplatz.903/page-2#post-23516
 #: osm_watch: note 3469300 9
-#: osm_watch: way id="111833186" version="16"
+#: osm_watch: way id="111833186" version="17"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
 #: osm_watch: way id="153698413" version="20"
@@ -1149,7 +1149,7 @@ Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-02-15
+#: last_checked: 2026-02-22
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2268,7 +2268,7 @@ Ceciliengärten [zur Sponholzstr.]: einige Fußgänger, schmale Rampe, Bodstein	q3-
 (Weg am Humboldthain): Radfahren erlaubt, Fußgänger haben Vorrang	q1 9255,15816 9092,15789 8934,15740
 Humboldtsteg: einige Fußgänger	q1 8934,15740 8886,15799
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
-(Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15353,11902 15307,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
+(Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1- 15353,11902 15307,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
 # REMOVED (existiert nicht mehr?) --- #: note: explizites Schild mit einem durchgestrichenen Fahrrad nur von Süden her --- Am Bahndamm: teilweise enge Stellen, Fußgänger, Radfahren offiziell nicht erlaubt	q2; 7769,4315 7727,4418 7692,4464 7667,4549
 #: XXX_prog BS an der Attilastr., ansonsten bleibt es bei q2
 Am Bahndamm: teilweise enge Stellen, Fußgänger, Bordstein	q2 7667,4549 7692,4464 7727,4418 7769,4315
