@@ -19614,6 +19614,14 @@ sub delete_user_dels {
 					  $c->delete("delnet-$xy1-$xy2");
 					  $c->delete("delnet-$xy2-$xy1");
 				      });
+
+	# XXX If refreshing $net, then _Deleted is usually also gone, and remove_from_deleted would miss left-over canvas marks.
+	($any_delnet_tag) = $c->find("withtag", "delnet");
+	if (defined $any_delnet_tag) {
+	    status_message('delete_user_dels: Deleting left-over canvas items', 'info');
+	    $c->delete('delnet');
+	}
+
 	restore_cursor();
     }
 }
