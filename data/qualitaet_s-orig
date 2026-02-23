@@ -488,7 +488,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-02-18
+#: last_checked: 2026-02-23
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -2007,6 +2007,9 @@ Travestr.: Kopfsteinpflaster	Q2 14986,11760 14901,11808
 Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0- 14901,11808 14836,11842
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1- 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1- 5913,8415 5831,8358
+#: next_check_id: VOLKSPARKWILMERSDORF-2026
+#: XXX Nach den Bauarbeiten bessere Qualität (Q1?)?
+#: next_check: 2026-04-24
 Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: Mosaikpflaster mit Parkweg-Streifen	Q1- 5469,8524 5405,8549 5331,8581
 Volkspark Wilmersdorf: Parkweg	Q1- 5761,8339 5699,8308
@@ -17381,7 +17384,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-der-sitzung-vom-21052024.pdf (keine Mittel für die Sanierung)
 #: osm_watch: way id="1009279082" version="8"
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: also_indoor: traffic (ex-G)
+# REMOVED --- #: also_indoor: traffic (ex-G)
 #: last_checked: 2025-11-26
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-12-31
@@ -17471,7 +17474,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: osm_watch: way id="42689070" version="12"
 #: osm_watch: way id="1033468087" version="3"
 #: last_checked: 2025-12-26
-#: check_frequency: 60d
+#: check_frequency: 90d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14906,15859 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
 Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15599,15786

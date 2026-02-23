@@ -1012,7 +1012,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-02-22
+#: last_checked: 2026-02-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1756,14 +1756,14 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11651 (Anfrage)
 #: by: https://www.entwicklungsstadt.de/strassenumbau-xxl-in-friedrichshain-so-sieht-es-aktuell-an-der-petersburger-strasse-aus/
 #: source_id: viz2021:13.450139,52.522818,16.09.2024,08:00 (bis 30.09.2027) (inaktiv)
-#: source_id: LMS-BR:346568/72 viz2021:13.447594,52.526157, viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (bis 31.12.2025) (bis 01.06.2026)
+#: source_id: LMS-BR:346568/72 viz2021:13.447594,52.526157, viz2021:13.447594,52.526157,16.09.2024,08:00 (bis 30.09.2027) (bis 31.12.2025) (bis 01.06.2026) (bis 23.12.2027)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-01-24 vvv
+#: last_checked: 2026-02-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2027-09-30 (ex-VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234
 alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13685,12664 13695,12643
 #: next_check ^^^
@@ -1781,10 +1781,10 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="56"
 #: osm_watch: way id="1082929723" version="14"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-02-12 (osm) vvv
+#: last_checked: 2026-02-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2027-09-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 provisorische Radspur	RW3; 13695,12643 13685,12664
 provisorische Radspur	RW4; 13685,12664 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
 provisorische Radspur	RW4; 13383,13349 13375,13367 13330,13468
@@ -1895,11 +1895,14 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 # REMOVED --- #: next_check_id: SONNENALLEE-2014 --- #: XXX laut fritz & vmz bis Ende Dezember 2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111 --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: last_checked: 2018-06-06 --- #: next_check: 2018-08-17 --- #: check_frequency: 30d
 	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14323,7403 14305,7415 14174,7505
 #: by: https://www.entwicklungsstadt.de/estrel-tower-rueckbau-des-zweiten-krans-markiert-weiteren-baufortschritt/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mfiwaviigs24 (Fernwärmearbeiten bis Ende März 2026)
+#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 (bis 31.03.2026)
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-02-16
+#: last_checked: 2026-02-23 (webcam)
 #: check_frequency: 21d
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	RW0; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
 neues Verbundsteinpflaster	RW2; 14305,7415 14323,7403 14334,7395 14369,7376
@@ -8317,8 +8320,8 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: adac:1733244580 (inaktiv)
 #: source_id: adac:256162332 (inaktiv)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_289064 (kein Endedatum)
-#: source_id: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 5x)
-#: source_id: bvg2024:172#HIM_FREETEXT_289063 (kein Endedatum)
+#: source_id[inactive]: bvg2024:172#HIM_FREETEXT_289382 (kein Endedatum) (zwischenzeitlich inaktiv, 6x)
+#: source_id[inactive]: bvg2024:172#HIM_FREETEXT_289063 (kein Endedatum) (zwischenzeitlich inaktiv, 1x)
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_293426 (Haltestellenverlegung, kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293415 (Haltestellenverlegung, kein Endedatum)
 #: source_id: bvg2024:m11#HIM_FREETEXT_293425 (kein Endedatum)
@@ -8387,7 +8390,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-02-18
+#: last_checked: 2026-02-23
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456

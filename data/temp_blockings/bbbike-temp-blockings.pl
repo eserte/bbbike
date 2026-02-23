@@ -35636,16 +35636,20 @@ EOF
 	2::inwork 9699,-600 9632,-608 9562,-619
 EOF
      },
-     { from  => 1638385908, # 2021-12-01 20:11
-       until => 1638471600, # 2021-12-02 20:00
-       text  => 'Havelchaussee und Kronprinzessinenweg: Forstarbeiten, Sperrungen für Radfahrer möglich, am 2.12.2021 von 7 Uhr bis 20 Uhr',
-       type  => 'handicap',
-       source_id => 'viz2021:13.191315,52.461666,02.12.2021,07:00',
+     { from  => $isodate2epoch->("2026-02-25 00:00:00"), # 1638385908, # 2021-12-01 20:11
+       until => $isodate2epoch->("2026-02-26 20:00:00"), # 1638471600, # 2021-12-02 20:00
+#      text  => 'Havelchaussee und Kronprinzessinenweg: Forstarbeiten, Sperrungen für Radfahrer möglich, am 2.12.2021 von 7 Uhr bis 20 Uhr',
+       text  => 'Havelchaussee: Baumschnittarbeiten in Höhe Lieper Bucht, Sperrungen, am 26.02.2026 von 7 Uhr bis 20 Uhr',
+#      type  => 'handicap',
+       type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: viz2021:13.233805,52.467757,02.12.2021,07:00
+#: source_id: viz2021:13.191315,52.461666,02.12.2021,07:00 (inaktiv)
+#: source_id: viz2021:13.233805,52.467757,02.12.2021,07:00 (inaktiv)
 #: by: https://viz.berlin.de/2021/12/verkehrsvorschau-02122021/
-	q4::inwork -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-	q4::inwork 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888 -2218,5133 -3296,3686
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645766.php
+# REMOVED (2021er-Sperrung) ---	q4::inwork -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+# REMOVED (2021er-Sperrung) ---	q4::inwork 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888 -2218,5133 -3296,3686
+Havelchaussee im Bereich Lieper Bucht	2::inwork -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677
 EOF
      },
      { from  => $isodate2epoch->("2021-12-11 00:00:00"),
@@ -45992,7 +45996,7 @@ EOF
 #: osm_watch: way id="1119255054" version="11"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-01-20 (osm)
+#: last_checked: 2026-02-23
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -47589,10 +47593,10 @@ EOF
 #: note: von der Potsdamer Str. aus sind zumindest die Bürgersteige frei, am Marlene-Dietrich-Platz vermutete Vollsperrung (2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz-1/?date=20260211
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3menazi7da22a
-#: source_id: LMS-BR:398774/72 viz2021:13.373511,52.506371,12.02.2026,05:00 (bis 22.02.2026)
-#: source_id: LMS-BR:398777/72 viz2021:13.37318,52.50857,12.02.2026,05:00 (bis 22.02.2026)
-#: source_id: LMS-BR:398775/72 viz2021:13.375836,52.509344,12.02.2026,05:00 (bis 22.02.2026)
-#: source_id: LMS-BR:398776/72 viz2021:13.37318,52.50857,12.02.2026,05:00 (bis 22.02.2026)
+#: source_id: LMS-BR:398774/72 viz2021:13.373511,52.506371,12.02.2026,05:00 (bis 22.02.2026) (inaktiv)
+#: source_id: LMS-BR:398777/72 viz2021:13.37318,52.50857,12.02.2026,05:00 (bis 22.02.2026) (inaktiv)
+#: source_id: LMS-BR:398775/72 viz2021:13.375836,52.509344,12.02.2026,05:00 (bis 22.02.2026) (inaktiv)
+#: source_id: LMS-BR:398776/72 viz2021:13.37318,52.50857,12.02.2026,05:00 (bis 22.02.2026) (inaktiv)
 	q4::temp 8232,11414 8309,11390 8375,11368
 	q4::temp 8217,11455 8232,11414
 	2::temp 8232,11414 8253,11306 8280,11296
@@ -48189,17 +48193,17 @@ EOF
        until => undef, # XXX
 #      text  => 'Erkelenzdamm: in Höhe Wassertorplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Kohlfurter Str.: vor Erkelenzdamm Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
-       text  => 'Regina-Jonas-Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026, evtl. wird die Baustelle verlängert',
+       text  => 'Regina-Jonas-Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende April 2026, evtl. wird die Baustelle verlängert',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: GITSCHINER-2025 --- #: note: Evtl. hatten die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun, deshalb der next_check_id-Eintrag.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
-#: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026)
+#: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026) (bis 30.04.2026)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
 #: note: Baustelle ist mittlerweile vom Erkelenzdamm weiter Richtung Admiralstr. gewandert
 #: last_checked: 2026-02-19
-#: check_frequency: 14d
-# REMOVED (möglicherweise wird verlängert) --- #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
+#: check_frequency: 30d
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
 Regina-Jonas-Str.	q4::inwork 11094,10261 11274,10184
 EOF
@@ -51637,7 +51641,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
 #: osm_watch: note 4953642 2
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-02-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Hausburgstr.: gesperrter Abschnitt etwa 50m lang	q4::inwork 13742,13376 13706,13460
@@ -51834,6 +51838,30 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645215.php (Sperrung dieses Abschnitts für drei Monate, allerdings ohne einen konkreten Termin zu benennen)
 	2::inwork 710,18727 714,18758 897,18943 1002,19014 1122,19036 1165,19009 1200,18969
+EOF
+     },
+     { from  => 1771801200, # 2026-02-23 00:00
+       until => $isodate2epoch->("2026-03-23 17:00:00"),
+       text  => 'Alte Rhinstr.: Einbahnstraßenregelung, voraussichtlich bis 23.03.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mfiwskygqs24
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihvfh52q73rbokesrtjn4f323tpx2zfhfzp77fdzdzn45zmzgpmhi@jpeg
+#: source_id: LMS-BR:399784/72 viz2021:13.5175,52.53549,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026)
+#: source_id: LMS-BR:399785/72 viz2021:13.516948,52.535637,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026)
+	q4::inwork; 18183,14573 18225,14398 18247,14241
+EOF
+     },
+     { from  => 1771974000, # 2026-02-25 00:00
+       until => 1777068000, # 2026-04-25 00:00
+       text  => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, vom 26.02.2026 bis 24.04.2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: next_check_id: VOLKSPARKWILMERSDORF-2026
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645709.php
+#: by: https://www.berlin.de/imgscale2/9AuxRVefLWbbF7Yg6n-jfxJdZdY8R2b6JXZ86PSf0BA/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI2L21hcmdpbl8yMDAwXzEwMDBfZWUzY2E5ZGUzNWVkNzI0MjNmZDVmYTQ2ODBhY2VlNjZfc3RyYXNzZW5zcGVycnVuZy5wbmc.png
+#: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
+	2::inwork 5533,8478 5660,8366
 EOF
      },
     );
