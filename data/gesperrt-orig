@@ -150,7 +150,7 @@ Knoten Märkische/Landsberger Allee	1no 19512,15092 19644,15320
 #: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
 Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251124 (Sperrung ab 25.11.2025 bis voraussichtlich Ende März 2026)
-#: source_id: viz2021:13.540283,52.540747,25.11.2025,07:00 (bis 31.03.2026)
+#: source_id: LMS-BR:391269/72 viz2021:13.540283,52.540747,25.11.2025,07:00 viz2021:13.54008,52.5405,25.11.2025,07:00 (bis 31.03.2026)
 #: XXX nach den Bauarbeiten vielleicht wieder zur Einbahnstraße machen?
 #: historical_note: früher (bis Nov. 2025) Einbahnstraße
 #: next_check: 2026-03-31
@@ -4134,7 +4134,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-02-10 vvv
+#: last_checked: 2026-02-24 (webcam) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4384,7 +4384,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="22"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-02-09
+#: last_checked: 2026-02-24
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4925,7 +4925,7 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 #: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
 #: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025) (bis 31.08.2026) (inaktiv)
-#: source_id: LMS-BR:391216/72 viz2021:13.37613,52.53612, (bis 01.09.2026)
+#: source_id: LMS-BR:391216/72 viz2021:13.37613,52.53612, viz2021:13.376138,52.536093, (bis 01.09.2026) (bis 31.08.2026)
 #: osm_watch: way id="129104626" version="27"
 #: osm_watch: way id="945966258" version="3"
 #: osm_watch[closed]: note 5077509 1
@@ -5150,7 +5150,7 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: XXX - temporärer Weg in W-O-Richtung südlich der Baustelleneinrichtungsfläche (etwa 8162,10177 8248,10159)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="14"
-#: last_checked: 2025-12-16
+#: last_checked: 2026-02-24
 #: check_frequency: 120d
 #: next_check: 2028-02-28 (pardok)
 #: priority: #A
@@ -5609,7 +5609,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="49"
 #: also_indoor: traffic
-#: last_checked: 2026-02-21 vvv
+#: last_checked: 2026-02-24 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5696,7 +5696,7 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-14
 # REMOVED --- Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 * 8673,12315 *
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2025-10-31 (webcam)
+#: last_checked: 2026-02-24 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

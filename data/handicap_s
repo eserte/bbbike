@@ -52,8 +52,8 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3::inwork 15937,15134 16075,
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
 Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
-Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork; 11652,13564 11706,13635 11820,13804
-Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork 11785,13625 11762,13619 11706,13635
+Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619 11706,13635
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9365,615 9347,595 9206,553 9215,506 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9004,481 9124,522 9160,460 9200,450
@@ -670,7 +670,7 @@ Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
 Hedwigskirchgasse: Fußgänger	q1 9737,12238 9747,12205
 Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9755,12144
-Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
+Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3 13535,10184 13371,9974
 Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fußgänger	q3 13230,9981 13270,10030

@@ -3437,9 +3437,10 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
-#: also_indoor: traffic (re-G,ex-H,ex-A,re-W,T)
-#: last_checked: 2026-02-11 (traffic)
-#: check_frequency: 14d (traffic)
+#: also_indoor: traffic (ex-re-G,ex-H,ex-A,ex-re-W,T)
+#: last_checked: 2026-02-24 (traffic)
+#: check_frequency: 7d (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
@@ -5603,6 +5604,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: source_id: viz2021:13.233805,52.467757,02.12.2021,07:00 (inaktiv)
 #: by: https://viz.berlin.de/2021/12/verkehrsvorschau-02122021/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645766.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1646448.php
 # REMOVED (2021er-Sperrung) ---	q4::inwork -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
 # REMOVED (2021er-Sperrung) ---	q4::inwork 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888 -2218,5133 -3296,3686
 Havelchaussee im Bereich Lieper Bucht	2::inwork -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677
@@ -6551,7 +6553,7 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: source_id: viz2021:13.579251,52.458484,24.03.2023,20:00 (bis 28.08.2023) (bis 09.06.2023, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023) (inaktiv)
 #: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028) (bis 30.06.2028) (bis 28.02.2028) (bis 28.02.2026) (inaktiv)
-#: source_id: viz2021:13.57935,52.45857, (bis 29.02.2028)
+#: source_id: LMS-BR:351546/72 viz2021:13.57935,52.45857, viz2021:13.579628,52.458891, (bis 29.02.2028)
 # REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
@@ -7637,7 +7639,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-02-17 vvv
+#: last_checked: 2026-02-24 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8083,7 +8085,7 @@ Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,1070
        {
          'data' => '#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12009 (Anfrage)
-#: source_id: LMS-BR:392283/72 viz2021:13.58978,52.513229, (bis 27.02.2026)
+#: source_id: LMS-BR:392283/72 viz2021:13.58978,52.513229, (bis 27.02.2026) (bis 31.03.2026)
 #: note: Länge der Engstelle etwa 80m
 #: note: außerdem ist der Radweg auf der Heinrich-Grüber-Str. wahrscheinlich gesperrt
 #: note: Halteverbotsschilder bis 31.12.2025
@@ -8093,12 +8095,12 @@ Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,1070
 #: last_checked: 2025-10-18 (luftbildsuche)
 # REMOVED --- #: check_frequency: 90d (traffic check)
 # REMOVED --- #: next_check: 2025-12-31 (Halteverbotsschilder)
-#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 23251,12146 23017,12177
 ',
          'from' => undef,
          'id' => 4218,
-         'text' => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Februar 2026',
+         'text' => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende März 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9292,7 +9294,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-02-15 (Bauzaun weggeschoben)
+#: last_checked: 2026-02-24 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
@@ -9593,7 +9595,6 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        {
          'data' => '#: next_check_id: WERBELLINAMPEL-2025
 #: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025) (bis 27.02.2026) (bis 30.04.2026)
-
 	q4::inwork 12427,8109 12446,8032
 ',
          'from' => 1761241355,
@@ -9898,8 +9899,9 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
 #: osm_watch: note 5130626 1
 #: osm_watch: note 5096118 2
 #: add_fragezeichen: Ist der Uferweg wieder offen?
-#: XXX auch  laut osm note bis 28.2.2026 gesperrt
-#: last_checked: 2025-12-05 (mapillary)
+#: XXX auch laut osm note bis 28.2.2026 gesperrt
+#: XXX Absperrungen, die teilweise weggeschoben sind
+#: last_checked: 2026-02-24
 #: check_frequency: 60d
 #: next_check: 2026-02-28
 	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853
@@ -10200,6 +10202,16 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'text' => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, vom 26.02.2026 bis 24.04.2026',
          'type' => 'gesperrt',
          'until' => 1777068000
+       },
+       {
+         'data' => '#: source_id: LS/223-P/26/014 (bis 28.08.2026)
+	2::inwork -19216,29323 -18694,27999 -18187,27206
+',
+         'from' => 1772341200,
+         'id' => 4542,
+         'text' => 'Paaren im Glien - Grünefeld: Fahrbahnerneuerung, Sperrung, evtl. sind auch Radfahrer betroffen, 02.03.2026 06:00 Uhr bis 28.08.2026 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1787940000
        }
      
 );

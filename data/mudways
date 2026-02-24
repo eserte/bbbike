@@ -1057,13 +1057,16 @@ Windhuker Str.: wassergebundene Decke	X 5426,16539 5712,16245 5748,16235
 #: mud: 2025-06-01: keine Beeinträchtigungen	h=q0
 Verlängerte Schulzendorfer Str.: gut befahrbarer Waldweg	X 2150,22464 2015,22435 1834,22421 1622,22383
 # 
-#: mud: 2025-06-11: einige matschige Stellen und Pfützen, alle umfahrbar	h=q1
+#: mud: 2025-06-11: einige matschige Stellen und Pfützen, alle umfahrbar	h=q1,wet
 (Weg am ehem. Güteraußenring): wassergebundene Decke	X 9170,-673 9143,-667 8656,-736
 # 
 #: mud: 2025-06-11: keine Beeinträchtigungen	h=q0
 (Weg am ehem. Güteraußenring): wassergebundene Decke	X 9170,-673 9252,-667 9352,-643 9424,-608 9492,-538 9522,-533
 # 
-#: mud: 2025-06-11: einige Pfützen	h=q2
+#: mud: 2025-06-11: einige Pfützen	h=q2,wet
 #: note: zwar existiert ein Kleinsteinpflasterstreifen, aber dieser ist schmal
 (Weg am ehem. Güteraußenring): wassergebundene Decke	X 9522,-533 9562,-619
+# 
+#: mud: 2026-02-24: feuchte, leicht matschige Oberfläche	h=q2+,wet
+(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke mit Unebenheiten	X 8264,10192 8276,10079
 # 

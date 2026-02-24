@@ -1306,11 +1306,12 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
 #: by: https://www.morgenpost.de/bezirke/pankow/article411096985/ende-ungewiss-frust-und-chaos-nach-rohrbruch-in-prenzlauer-berg.html
 #: by: https://www.morgenpost.de/bezirke/pankow/article411086279/wasserrohrbruch-mit-folgen-greifswalder-strasse-stadtauswaerts-voll-gesperrt.html
+#: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-02-20 (traffic) vvv
+#: last_checked: 2026-02-24 vvv
 #: check_frequency: 14d vvv
-Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork; 11652,13564 11706,13635 11820,13804
-Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt	q3::inwork 11785,13625 11762,13619 11706,13635
+Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619 11706,13635
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -2409,9 +2410,10 @@ Hedwigskirchgasse: Fußgänger	q1 9737,12238 9747,12205
 #: XXX_prog: Bordstein (BS) nur am Südende
 Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9755,12144
 # 
-# REMOVED --- #: last_checked: 2026-02-17 --- #: check_frequency: 10d --- # XXX (später wiederherstellen) --- Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
-#: XXX_prog: BS am Nordende, flach
-Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
+#: last_checked: 2026-02-24
+#: check_frequency: 10d
+# XXX (später wiederherstellen) --- #: XXX_prog: BS am Nordende, flach --- Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
+Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
 # 
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3+ 13535,10184 13371,9974
 Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
@@ -5443,10 +5445,10 @@ Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 Suttnerstr.: einige Fußgänger	q2+ 7728,5866 7733,5893 7735,5960
 # 
 #: next_check_id: HINDENBURGDAMM-2022
-#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026)
+#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026) (bis 29.05.2026)
 #: XXX nach den Bauarbeiten prüfen und wiederherstellen: (Wolfensteindamm - Händelplatz): Gehweg, einige Fußgänger, q2	q3 4543,4820 4517,4853
 #: last_checked: 2025-12-06 (mapillary)
-#: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-05-29 (VIZ-Verkehrsmeldung)
 #: note: zwischenzeitlich (ab ca. 2022): 
 (Wolfensteindamm - Händelplatz): Baustelleneinrichtung, Ausweichen auf Gehweg	q3 4543,4820 4517,4853
 # 
