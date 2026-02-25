@@ -8,6 +8,7 @@ use Plack::Builder;
 use Plack::Middleware::Rewrite;
 use Plack::Middleware::Static;
 use Plack::App::WrapCGI;
+use Plack::MIME;
 
 use Config qw(%Config);
 use Cwd 'realpath';
@@ -98,6 +99,9 @@ $ENV{PATH} = "$Config{bin}:$ENV{PATH}";
 
 my $cgiurl    = USE_CGI_BIN_LAYOUT ? '/cgi-bin' : '/bbbike/cgi';
 my $staticurl = USE_CGI_BIN_LAYOUT ? '/BBBike'  : '/bbbike';
+
+Plack::MIME->add_type('.geojson' => 'application/geo+json');
+Plack::MIME->add_type('.bbbgeojsonp' => 'application/javascript');
 
 builder {
 
