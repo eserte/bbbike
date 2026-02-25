@@ -39,12 +39,13 @@ Lüneburger Str.: Wasserrohrbruch, einige Meter der Fahrbahn sind gesperrt	q3::in
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
-Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen	q3::inwork 5669,10704 5782,10884
+Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
+Prinzregentenstr.: Bauarbeiten in Höhe Waghäuseler Str., Radfahrer sollen absteigen	q2::inwork 5660,8366 5652,8605 5641,8831
+Waghäuseler Str..: Bauarbeiten in Höhe Prinzregentenstr., Radfahrer sollen absteigen	q3::inwork 5498,8598 5652,8605 5786,8609
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
-Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 16853,3078
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
@@ -670,7 +671,7 @@ Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
 Hedwigskirchgasse: Fußgänger	q1 9737,12238 9747,12205
 Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9755,12144
-Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
+Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3 13535,10184 13371,9974
 Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fußgänger	q3 13230,9981 13270,10030
@@ -1389,7 +1390,8 @@ Fuldaer Weg: enger Pfad	q3 -2392,17870 -2401,17824
 Grützmacherpark: Fußgänger	q1 -1532,15225 -1389,15285
 (Uferweg an der Schleuse - Tegeler Weg): steil	q4 2817,14003 2881,14061
 (Pankeweg): Fußgänger, eng	q3 9034,17357 9036,17387 9076,17532 9120,17553
-Ansbacher Str./Wittenbergplatz: Fußgänger	q2 6192,10542 6216,10614 6228,10646 6250,10701
+Ansbacher Str./Wittenbergplatz: Fußgänger	q3 6192,10542 6216,10614 6228,10646 6250,10701
+Wittenbergplatz: einige Fußgänger	q2 6192,10542 6309,10509
 (Planufer - Böckhstr.): einige Fußgänger	q1 11160,9932 11170,9919 11197,9894
 Mendelssohnstr.: Fußgänger, Bordstein	q3 11598,13598 11652,13564
 (Wiese vor dem Reichstag): Fußgänger, Bordsteine, Radfahren nicht erlaubt	q4 8373,12416 8369,12609

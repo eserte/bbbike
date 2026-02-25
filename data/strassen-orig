@@ -979,6 +979,7 @@ Kleiststr. (Schˆneberg)	HH 7033,10328 6971,10346 6937,10363 6851,10416
 Kleiststr. (Schˆneberg)	HH 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6468,10550 6335,10589
 Wittenbergplatz	HH 6228,10646 6292,10627 6335,10589
 Wittenbergplatz	HH 6335,10589 6268,10588 6216,10614
+Wittenbergplatz	NN 6192,10542 6309,10509
 #: carriageway_width: 53m (13m+medial strip=24m+16m, Kreuzung Kurf¸rstenstr.) (an der Kreuzung Kleiststr. sogar: 82m (18m+medial strip=40m+24m))
 An der Urania	HH 6532,10529 6685,10690 6740,10755
 Kurf¸rstenstr. (Tiergarten, Schˆneberg)	N 8058,10306 7850,10351 7744,10372 7633,10394
@@ -1212,7 +1213,7 @@ Ansbacher Str.	NN 6192,10542 6216,10614 6228,10646 6250,10701
 Ansbacher Str.	N 6250,10701 6266,10927
 Bayreuther Str.	NN 6276,10401 6294,10464
 #: carriageway_width: 12m
-Bayreuther Str.	N 6294,10464 6335,10589 6361,10677 6359,10891
+Bayreuther Str.	N 6294,10464 6309,10509 6335,10589 6361,10677 6359,10891
 Bamberger Str. (Schˆneberg, Wilmersdorf)	N 5895,9083 5879,9237 5886,9351 5888,9398 5893,9530 5900,9737 5905,9795 5895,9946 5936,10147
 G¸ntzelstr.	N 5929,9351 5886,9351 5787,9354 5711,9357 5627,9362 5479,9367
 G¸ntzelstr.	NH 5479,9367 5327,9377 5176,9398 5065,9418 4957,9437 4842,9458 4752,9474 4699,9505
@@ -11695,7 +11696,7 @@ Lauterplatz	NN 5799,7880 5707,7878
 # REMOVED (eingetragen) --- #: XXX Friedenauer Hˆhe (Privatstraﬂe) -> im Amtsblatt, PLZ=12159, laut LOR PLZ=10827+12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
 # REMOVED (eingetragen) --- #: XXX Hannah-Hˆch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h", bei DPAG ebenso, PLZ=12159
-#: last_checked: 2025-12-26 (architektur-urbanistik) vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (website the-friedenauer) vvv
 #: osm_watch: way id="1254710366" version="11"
@@ -19956,7 +19957,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straﬂe)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-02-19 vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

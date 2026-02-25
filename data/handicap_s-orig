@@ -486,7 +486,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-02-21 vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="46"
@@ -615,7 +615,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-02-21 vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="18"
@@ -784,7 +784,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026)
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026)
 #: also_indoor: traffic (G[nun Grimmstr.],T[nun Müllenhoffstr.],H,ex-W[nur Müllenhoffstr.],A[falsche Position])
-#: last_checked: 2026-02-18 (sieht noch immer recht fertig aus)
+#: last_checked: 2026-02-25 (sieht noch immer recht fertig aus) (und mittlerweile sind die Absperrungen weit weggeschoben)
 #: check_frequency: 14d
 #: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
 #: valid: -20260306
@@ -843,7 +843,7 @@ Wilmsstr.: Bauarbeiten an der Geibelstr./am Carl-Herz-Ufer, Fahrbahn gesperrt	q3
 #: next_check_id: WESTUMFAHRUNGBAHNHOF-2023
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: way id="24695200" version="19"
-#: last_checked: 2025-12-06
+#: last_checked: 2026-02-23 (okas)
 #: check_frequency: 120d
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
@@ -959,14 +959,16 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
 #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
-#: note: Länge des gesperrten Bereichs etwa 50m (frühere Sperrung)
+#: osm_watch: note 5181118 1
+#: osm_watch: way id="4491984" version="29"
+# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 50m (frühere Sperrung)
+#: note: Überfahrt über die gesamte Breite gesperrt, außerdem Sperrung im Einmündungsbereich (weniger als 50m lang)
 #: also_indoor: traffic (G,T,W)
-#: last_checked: 2026-02-07 (traffic)
-#: check_frequency: 21d (traffic)
+#: last_checked: 2026-02-25
+# REMOVED --- #: check_frequency: 21d (traffic)
 # REMOVED --- #: next_check: 2025-11-08
 # REMOVED --- #: valid: -20251108
-#Rankestr.: Einmündungsbereich Breitscheidplatz wegen Kraneinsatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
-Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen	q3::inwork 5669,10704 5782,10884
+Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
 # 
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
@@ -987,6 +989,24 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
 # 
 ### Wilmersdorf ###
+# 
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1584050.php (ab 28.07.2025 für 6-8 Wochen)
+#: by: https://entwicklungsstadt.de/wilmersdorf-kreuzung-prinzregentenstrasse-wird-fahrradfreundlicher/
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf
+#: source_id: viz2021:13.33276,52.4798,28.07.2025,07:00 (Prinzregentenstr., bis 17.10.2025) (inaktiv)
+#: source_id: viz2021:13.33525,52.48398,28.07.2025,07:00 (Waghäuseler Str., bis 17.10.2025) (inaktiv)
+#: source_id: LMS-BR:389150/72 viz2021:13.33317,52.484342,06.11.2025,07:00 (bis 21.11.2025) (bis 23.12.2025) (bis 30.01.2026) (inaktiv)
+#: source_id: LMS-BR:392922/72 viz2021:13.33327,52.483961, (bis 30.01.2026) (inaktiv)
+#: osm_watch: note 4921165 7
+#: XXX im ersten Bauabschnitt ist Radverkehr noch möglich ("gegenseitige Rücksichtnahme"), im zweiten Bauabschnitt muss der Radverkehr schieben --- 2. BA hat wohl angefangen, nun Gehweg, Radfahrer absteigen, aber faktisch ist noch genau so viel Platz vorhanden wie im 1. BA
+#: XXX Umbauarbeiten, danach Vorfahrt für Prinzregentenstr.
+# REMOVED --- #: next_check: 2026-01-30 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-02-25 vvv
+#: check_frequency: 21d vvv
+Prinzregentenstr.: Bauarbeiten in Höhe Waghäuseler Str., Radfahrer sollen absteigen	q2::inwork 5660,8366 5652,8605 5641,8831
+Waghäuseler Str..: Bauarbeiten in Höhe Prinzregentenstr., Radfahrer sollen absteigen	q3::inwork 5498,8598 5652,8605 5786,8609
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (traffic) --- #: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv --- #: also_indoor: traffic (B,G,ex-H) vvv --- #: last_checked: 2022-12-06 (research) vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-11-30 vvv --- # REMOVED --- #: valid: -20221130 vvv --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: source_id ^^^
 # REMOVED (laut kartaview größtenteils fertiggestellt) --- #: next_check_id: MAXIMILIANSQUARTIER-2020 --- #: last_checked: 2022-02-27 --- #: check_frequency: 90d --- Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987
@@ -1116,8 +1136,9 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
 #: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026) (inaktiv)
 #: last_checked: 2025-10-29 (krickstadt) vvv
-#: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
-Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
+#: next_check: 2026-01-22 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
+# REMOVED (nicht mehr) --- Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 16853,3078
 #: next_check ^^^
@@ -1264,7 +1285,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2025-11-19 (mapillary) vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1979,7 +2000,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2026-02-18
+#: last_checked: 2026-02-25
 #: check_frequency: 180d
 #: next_check: 2027-09-30 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -2410,10 +2431,9 @@ Hedwigskirchgasse: Fußgänger	q1 9737,12238 9747,12205
 #: XXX_prog: Bordstein (BS) nur am Südende
 Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9755,12144
 # 
-#: last_checked: 2026-02-24
-#: check_frequency: 10d
-# XXX (später wiederherstellen) --- #: XXX_prog: BS am Nordende, flach --- Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
-Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
+# REMOVED --- #: last_checked: 2026-02-24 --- #: check_frequency: 10d --- Zufahrt Franz-Mehring-Platz: Bauarbeiten mit Sperrung an der Rüdersdorfer Str.	q3 12735,12131 12691,12042
+#: XXX_prog: BS am Nordende, flach
+Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
 # 
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3+ 13535,10184 13371,9974
 Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
@@ -3446,7 +3466,10 @@ Fuldaer Weg: enger Pfad	q3+ -2392,17870 -2401,17824
 Grützmacherpark: Fußgänger	q1 -1532,15225 -1389,15285
 (Uferweg an der Schleuse - Tegeler Weg): steil	q4 2817,14003 2881,14061
 (Pankeweg): Fußgänger, eng	q3 9034,17357 9036,17387 9076,17532 9120,17553
-Ansbacher Str./Wittenbergplatz: Fußgänger	q2 6192,10542 6216,10614 6228,10646 6250,10701
+#: historical_note: früher (bis 2026) mit q2 getaggt
+#: note: am südlichen Ende wird suggeriert, dass Radfahrer nach rechts abbiegen sollen, am nördlichen Ende Fußgängerzone, Lieferverkehr frei
+Ansbacher Str./Wittenbergplatz: Fußgänger	q3 6192,10542 6216,10614 6228,10646 6250,10701
+Wittenbergplatz: einige Fußgänger	q2 6192,10542 6309,10509
 (Planufer - Böckhstr.): einige Fußgänger	q1 11160,9932 11170,9919 11197,9894
 #: XXX_prog BS hohe Bordsteinkante an der Otto-Braun-Str. (oder leeren Gehweg benutzen)
 Mendelssohnstr.: Fußgänger, Bordstein	q3 11598,13598 11652,13564

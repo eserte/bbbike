@@ -6457,16 +6457,16 @@ EOF
 	1::inwork 4356,12009 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2025-05-09 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-05-11 23:59:59"),
+     { from  => $isodate2epoch->("2026-05-08 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-05-10 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4, start => "2021-10-25T00:00:00"]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (10.05.2025 und 11.05.2025)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (09.05.2026 und 10.05.2026)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html
 #: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
-#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025)
+#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025) (09. Mai 2026 - 10. Mai 2026)
 #: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00 (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
 #: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
@@ -19958,7 +19958,7 @@ EOF
      { from  => $isodate2epoch->("2022-04-28 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-05-23 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 4, start => "2025-06-02T00:00:00"]],
+       recurrences => [['yearly', days => 25, months => 4, start => "2026-06-02T00:00:00"]],
 #      recurrence_prewarn_days => 14, # weder Ort noch Termin bekannt
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2022 bis 22.05.2022',
        type  => 'handicap',
@@ -22269,11 +22269,12 @@ EOF
 	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2025-04-24 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-04-27 23:59:59"),
+     { from  => $isodate2epoch->("2026-04-16 14:00:00"), # $isodate2epoch->("2025-04-24 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-04-19 23:59:59"), # $isodate2epoch->("2025-04-27 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 25.04.2025 bis 27.04.2025',
+       recurrences => [['yearly', days => 16, months => 4]],
+#      text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 25.04.2025 bis 27.04.2025',
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, voraussichtlich 17.04.2026 bis 19.04.2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.winzerfest-köpenick.de/ (existiert mittlerweile nicht mehr; siehe unten)
@@ -22490,9 +22491,9 @@ Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15
 # REMOVED (keine Sperrung mehr) --- #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet? --- #: source_id: LMS-BR:392919/72 viz2021:13.355108,52.540463, (bis 31.03.2026) --- #: also_indoor: traffic (re-T,G) --- #: last_checked: 2025-12-16 (traffic) --- #: check_frequency: 60d --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) --- Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
      },
-     { from  => $isodate2epoch->("2025-04-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-05-04 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2025 bis 04.05.2025)', # früher: Lichtenrader Maientanz
+     { from  => $isodate2epoch->("2026-04-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-05-03 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2026 bis 03.05.2026)', # früher: Lichtenrader Maientanz
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2021-05-06T00:00:00"]],
        type  => 'handicap',
@@ -28681,7 +28682,7 @@ EOF
 #: source_id: LMS-BR:304601/72 viz2021:13.31363,52.52105,26.06.2023,06:00 viz2021:13.31363,52.52105, (bis 30.06.2025) (bis 01.12.2025) (bis 30.10.2026)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024, nun bis 30.06.2025
 #: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2026-01-07 (daf)
+#: last_checked: 2026-02-25
 #: check_frequency: 120d
 #: next_check: 2026-10-30
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
@@ -33638,7 +33639,7 @@ EOF
 #: osm_watch: way id="362719487" version="19"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2026-01-10 (daf)
+#: last_checked: 2026-02-25
 #: check_frequency: 180d
 #: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 	q4::inwork 6021,10405 6116,10688
@@ -37212,11 +37213,11 @@ EOF
 	2::inwork 7189,17666 7173,17591 7222,17471 7253,17467
 EOF
      },
-     { from  => $isodate2epoch->("2025-05-19 06:00:00"), # $isodate2epoch->("2024-04-22 06:00:00"), # $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00 # zwei Tage vor dem Event
-       until => $isodate2epoch->("2025-05-22 08:00:00"), # $isodate2epoch->("2024-04-25 08:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
+     { from  => $isodate2epoch->("2026-05-18 06:00:00"), # $isodate2epoch->("2025-05-19 06:00:00"), # $isodate2epoch->("2024-04-22 06:00:00"), # $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00 # zwei Tage vor dem Event
+       until => $isodate2epoch->("2026-05-21 06:00:00"), # $isodate2epoch->("2025-05-22 08:00:00"), # $isodate2epoch->("2024-04-25 08:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Straße des 17. Juni, Ebertstr. und östlicher Tiergarten: Vorbereitungen für den Berliner Firmenlauf, Straßen und Wege gesperrt, voraussichtlich vom 19.05.2025 bis 22.05.2025 08:00 ',
+       text  => 'Straße des 17. Juni, Ebertstr. und östlicher Tiergarten: Vorbereitungen für den Berliner Firmenlauf, Straßen und Wege gesperrt, voraussichtlich vom 18.05.2026 bis 21.05.2026 08:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
@@ -37232,7 +37233,7 @@ EOF
 #: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
-#: by: https://berliner-firmenlauf.de/ (21. Mai 2025)
+#: by: https://berliner-firmenlauf.de/ (21. Mai 2025) (20. Mai 2026)
 #: note: 2025 Sperrzaun entlang der Bellevueallee zwischen Straße des 17. Juni und Kemperplatz
 	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095
@@ -39093,8 +39094,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
+#: osm_watch: note 4984535 1
 #: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2025-12-06 (mapillary)
+#: last_checked: 2026-02-25
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -41114,7 +41116,7 @@ EOF
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
 #: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
-#: last_checked: 2025-11-10 (okas)
+#: last_checked: 2026-02-16 (okas)
 #: check_frequency: 360d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -42075,7 +42077,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2026-02-21
+#: last_checked: 2026-02-25
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -43856,7 +43858,7 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2025-12-05 (mapillary)
+#: last_checked: 2026-02-25
 #: check_frequency: 90d
 #: next_check: 2026-04-30 (Schilder vor Ort)
 # REMOVED --- #: check_frequency: 120d
@@ -45410,7 +45412,7 @@ EOF
 # REMOVED --- #: XXX Nach den Bauarbeiten vielleicht bessere Qualität --- #: XXX: Der mudways-Eintrag in der Weverpromenade wurde bereits entfernt; im Stadtpark muss man nach den Bauarbeiten prüfen -> hier auch schon entfernt --- #: note: am nördlichen Ende sind Umleitungen westlich und östlich des gesperrten Bereichs ausgewiesen
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2025-11-29 vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="26158804" version="27"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
@@ -46160,7 +46162,7 @@ EOF
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2025-12-07 (mapillary)
+#: last_checked: 2026-02-25
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -46744,17 +46746,18 @@ EOF
 #      text  => 'Grolmanstr.: Bauarbeiten zwischen Goethestr. und Pestalozzistr., Sperrung der Fahrbahn, voraussichtlich bis August 2025, evtl. wird verlängert',
 #      text  => 'Grolmanstr.: Bauarbeiten zwischen Savignyplatz und Uhlandstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
 #      text  => 'Grolmanstr.: Bauarbeiten zwischen Savignyplatz und Uhlandstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
-       text  => 'Grolmanstr.: Bauarbeiten südöstlich und nordwestlich des Savignyplatzes, Sperrung, evtl. sind auch Radfahrer betroffen, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
+       text  => 'Grolmanstr.: Bauarbeiten südöstlich und nordwestlich des Savignyplatzes, Sperrung bzw. Einbahnstraßenregelung, vom 03.12.2025 06:00 bis 17.06.2026 18:00',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
 #: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026) (bis 27.02.2026)
+#: note: etwa 50m der Fahrbahn gesperrt
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
-Grolmanstr. (nordwestlicher Abschnitt)	q4::inwork 4828,11094 4775,11203
-#: note: vermutlich Einbahnstraßenregelung, offen Richtung Savignyplatz
+Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4828,11094 4775,11203
 #: source_id: LMS-BR:392050/72 viz2021:13.323692,52.504398,03.12.2025,06:00 (Sperrung; bis 17.06.2026)
 #: source_id: LMS-BR:366524/72 viz2021:13.32531,52.50287, (Gegenverkehrsregelung; bis 29.03.2026)
-Grolmanstr. (südöstlicher Abschhnitt)	q4::inwork 4910,10940 4930,10903 5040,10707 5072,10701
+#: note: Einbahnstraßenregelung, offen Richtung Savignyplatz; während der Arbeitszeiten kann es aber zu weiteren Einschränkungen kommen (gesehen 2026-02-25 Wed 13:23)
+Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,10707
 EOF
      },
      { from  => $isodate2epoch->("2025-08-17 00:00:00"), # 1729533901, # 2024-10-21 20:05
@@ -48122,7 +48125,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
-#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026)
+#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -48133,7 +48136,7 @@ EOF
 #: also_indoor: traffic (ex-H,G)
 #: last_checked: 2025-11-24 (traffic)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-02 (VIZ-Verkehrsmeldung)
 Merler Weg	q4::inwork 18852,13269 19180,13219
 EOF
      },
@@ -48212,17 +48215,21 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Gutenbergstr.: Einbahnstraßenregelung zwischen Englische Str. und Hannah-Karminski-Str., offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+#      text  => 'Gutenbergstr.: Einbahnstraßenregelung zwischen Englische Str. und Hannah-Karminski-Str., offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+       text  => 'Gutenbergstr.: Hochbauarbeiten zwischen Englische Str. und Hannah-Karminski-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GUTENBERG-2025
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
-#: last_checked: 2026-01-20 (daf) vvv
-#: check_frequency: 120d vvv
+#: osm_watch: note 4702892 3
+#: last_checked: 2026-02-25 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
-Gutenbergstr.	q4::inwork; 5518,12159 5317,12242
+# REMOVED --- Gutenbergstr.: Einbahnstraße	q4::inwork; 5518,12159 5317,12242
+Gutenbergstr.: Fahrbahn gesperrt	q4::inwork 5518,12159 5317,12242
 Hannah-Karminski-Str.	2::inwork 5317,12242 5360,12331
 #: next_check ^^^
 #: check_frequency ^^^
@@ -48499,14 +48506,14 @@ EOF
 #: osm_watch[closed]: note 4544105 3
 #: osm_watch: way id="4871838" version="30"
 #: osm_watch: way id="1237862688" version="3"
-#: osm_watch: note 4832179 4
+#: osm_watch: note 4832179 5
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-13 (traffic) vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2026-02-13
+# REMOVED --- #: next_check: 2026-02-13
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
-	q4::inwork 5276,5622 5274,5557
-	q3::inwork 5274,5557 5466,5523
+Heesestr.: Sperrung der Fahrbahn	q4::inwork 5276,5622 5274,5557
+Südendstr.: Sperrung nur im Kreuzungsbereich	q3::inwork 5274,5557 5466,5523
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -50163,7 +50170,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-22 vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50267,7 +50274,7 @@ EOF
 #: osm_watch: way id="722013098" version="14"
 #: osm_watch: way id="1350756367" version="3"
 #: osm_watch: note 5124809 1
-#: last_checked: 2026-02-18 vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 45d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
@@ -50393,7 +50400,7 @@ EOF
        data  => <<'EOF',
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-02-24 (Bauzaun weggeschoben)
+#: last_checked: 2026-02-25 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -50891,7 +50898,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-02-20
+#: last_checked: 2026-02-25
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -50902,7 +50909,7 @@ EOF
        text  => 'Kranzallee: Bauarbeiten zwischen Kiplingweg und Am Postfenn, Sperrung, evtl. sind auch Radfahrer betroffen, vom 15.10.2025 06:00 bis 25.02.2026 18:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:386774/72 viz2021:13.2335,52.50543,15.10.2025,06:00 (bis 25.02.2026)
+#: source_id: LMS-BR:386774/72 viz2021:13.2335,52.50543,15.10.2025,06:00 (bis 25.02.2026) (inaktiv)
 	q4::inwork -1167,10873 -1318,10854 -1501,10833
 EOF
      },
@@ -51103,7 +51110,7 @@ EOF
 # REMOVED --- Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
 # REMOVED --- Planckstr.	q4::inwork 9441,12670 9454,12558
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
-#: last_checked: 2026-02-21
+#: last_checked: 2026-02-25
 Charlottenstr.	q3::inwork 9454,12558 9462,12481
 EOF
      },
@@ -51203,14 +51210,15 @@ EOF
      },
      { from  => 1762538105, # 2025-11-07 18:55
        until => undef, # $isodate2epoch->("2025-12-15 18:00:00"),
-       text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026, evtl. wird die Sperrung verlängert',
+       text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, geplant bis Ende Februar 2026, voraussichtlich wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
-#: also_indoor: traffic (G[unklar],T,W[etwas verschoben])
-#: last_checked: 2025-12-16
-#: next_check: 2026-02-28 (Halteverbotsschilder)
+#: also_indoor: traffic (G[unklar],T,W[etwas verschoben],no-H)
+#: last_checked: 2026-02-25
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2026-02-28 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295
 EOF
      },
@@ -51383,7 +51391,7 @@ EOF
 #: add_fragezeichen: Ist der Uferweg unter dem Siemenssteg weiterhin gesperrt?
 # REMOVED --- #: XXX: Stimmt die Einbahnstraßenrichtung? Und warum steht in der VIZ-Verkehrsmeldung "ab Alt-Lietzow", müsste es nicht "ab Arcostr." heißen?
 #: note: Evtl. steht die Sperrung des Uferwegs auch mit der Einbahnstraßenregelung am Iburger Ufer im Zusammenhang?
-#: last_checked: 2025-11-26 (daf)
+#: last_checked: 2026-02-25
 #: check_frequency: 60d
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung zum Iburger Ufer)
 # REMOVED (hier für Radfahrer frei in Gegenrichtung) --- Iburger Ufer	q4::inwork; 3889,12591 4085,12614 4129,12619 4160,12612 4289,12576
@@ -51451,9 +51459,10 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2026-02-15 (traffic) vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 14d (traffic) vvv
-Kniephofstr.	q4::inwork 6124,5983 6226,5995 6318,6006
+Kniephofstr.	q3::inwork 6124,5983 6226,5995
+Kniephofstr.	q4::inwork 6226,5995 6318,6006
 Kissinger Str.	q3::inwork 6226,5995 6213,6135
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -51472,21 +51481,21 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Bettina-von-Arnim-Ufer: Bauarbeiten, Sperrung, Ende unbekannt',
+       text  => 'Bettina-von-Arnim-Ufer: Bauarbeiten, Sperrung, Ende unbekannt (Stand Ende Februar 2026: Uferweg ist gesperrt)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: KANZLERPARK-2024
 #: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
 #: osm_watch: way id="1126186878" version="6"
-#: osm_watch: note 5130610 1
+#: osm_watch: note 5130610 2
 #: osm_watch: note 5130626 1
 #: osm_watch: note 5096118 2
 #: add_fragezeichen: Ist der Uferweg wieder offen?
 #: XXX auch laut osm note bis 28.2.2026 gesperrt
-#: XXX Absperrungen, die teilweise weggeschoben sind
-#: last_checked: 2026-02-24
+#: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
+#: last_checked: 2026-02-25
 #: check_frequency: 60d
-#: next_check: 2026-02-28
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-28
 	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853
 EOF
      },

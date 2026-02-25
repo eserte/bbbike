@@ -3086,7 +3086,7 @@ tragen (41 Stufen)	0:45 9983,16561
 tragen (Treppe)	0:45 9982,16527
 tragen (Treppe, 7+10 Stufen)	0:30 3766,12596
 # REMOVED (enge Rampe existiert, ist in handicap_s-orig reflektiert) --- tragen (Treppe, 3 Stufen)	0:10 3810,12600
-tragen (Treppe, 18 Stufen)	0:30 4321,12566
+tragen (Treppe, 18 Stufen mit Kinderwagenrampe)	0:30 4321,12566
 #: note: http://www.flickr.com/photos/berolino/524778263/
 tragen (Jungfernbrücke, 10 Stufen)	0:15 10212,12002
 #: note: http://www.panoramio.com/photo/8007884
@@ -4134,7 +4134,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-02-24 (webcam) vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4203,11 +4203,11 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 # REMOVED (laut osm hier offen) --- #: osm_watch: way id="946008571" version="9" --- An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
 #: XXX außerdem Anbindung zum Mauerweg geplant
 #: osm_watch: way id="1344518197" version="2"
-#: osm_watch: way id="1420324060" version="1"
+#: osm_watch: way id="1420324060" version="2"
 # REMOVED (laut osm hier offen) --- Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019 12809,969
 #: XXX außerdem Anbindung zum Mauerweg geplant
-#: osm_watch: way id="946008579" version="7"
+#: osm_watch: way id="946008579" version="8"
 # REMOVED (laut osm hier offen) --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12861,1102 12868,1085
 Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12868,1085 12879,1000
 #: XXX außerdem Anbindung zum Mauerweg geplant
@@ -4452,7 +4452,7 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="4"
-#: last_checked: 2025-12-05 (mapillary)
+#: last_checked: 2026-02-25
 #: check_frequency: 90d
 #: next_check: 2026-04-30 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
@@ -4768,7 +4768,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2025-11-10 (okas)
+#: last_checked: 2026-02-16 (okas)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2026-10-01
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
@@ -4970,7 +4970,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2026-02-21 vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5035,7 +5035,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-02-20 vvv
+#: last_checked: 2026-02-25 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5259,7 +5259,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-02-10
+#: last_checked: 2026-02-25
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
