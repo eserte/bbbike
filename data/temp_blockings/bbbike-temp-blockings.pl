@@ -30153,7 +30153,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-10-21 18:00:00"), # $isodate2epoch->("2024-09-22 00:00:00"), # $isodate2epoch->("2019-02-10 06:00:00"),
-       until => $isodate2epoch->("2027-03-31 18:00:00"), # $isodate2epoch->("2024-10-21 18:00:00"), # 1575318719, # $isodate2epoch->("2019-12-31 18:00:00"),
+       until => 1772131088, # $isodate2epoch->("2027-03-31 18:00:00"), # $isodate2epoch->("2024-10-21 18:00:00"), # 1575318719, # $isodate2epoch->("2019-12-31 18:00:00"),
 #      text  => 'Freiheit/Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Norden, vom 11.02.2019 bis voraussichtlich Ende 2019',
 #      text  => 'Freiheit/Lüdersstr./Alter Markt: Bauarbeiten, Fahrbahn gesperrt, vom 23.09.2024 bis voraussichtlich 21.10.2024',
 #      text  => 'Lüdersstr./Alter Markt/Freiheit: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
@@ -30164,6 +30164,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
 #: by: https://www.bahninfo-forum.de/read.php?9,800515,811033#msg-811033
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260326 (Umbau der Baustelle Lüdersstr., gesperrt für Autos, Radverkehr frei -> Annahme: keine Einbahnstraße mehr)
 #: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024) (bis 21.10.2024) (inaktiv)
 #: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
@@ -33634,6 +33635,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/am-kadewe-in-der-city-west-fassade-des-bueroturms-quantum-p1-vollstaendig-installiert/
 #: by: https://www.entwicklungsstadt.de/buerohochhaus-p1-am-kadewe-erste-flaechen-in-der-city-west-vermietet/ (Einzug Dezember 2026, Fertigstellung Anfang 2027)
 #: by: https://www.entwicklungsstadt.de/lueckenschluss-am-kadewe-projekt-quantum-p1-zeigt-seine-dimensionen/
+#: by: https://www.entwicklungsstadt.de/neue-mieter-fuer-hochhausprojekt-am-kadewe-bueroflaechen-im-quantum-p1-fast-vergeben/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="19"
@@ -35647,6 +35649,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.191315,52.461666,02.12.2021,07:00 (inaktiv)
 #: source_id: viz2021:13.233805,52.467757,02.12.2021,07:00 (inaktiv)
+#: source_id: LMS-BR:400094/72 viz2021:13.19657,52.46779,26.02.2026,06:00 (bis 26.02.2026)
 #: by: https://viz.berlin.de/2021/12/verkehrsvorschau-02122021/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645766.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1646448.php
@@ -38306,7 +38309,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/nach-uber-dreieinhalb-jahren-betrieb-fluchtlingsunterkunft-tegel-ist-leergezogen--vorerst-keine-gefluchteten-mehr-vor-ort-15065214.html
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
-#: last_checked: 2025-03-04 (orthofotos) vvv
+#: last_checked: 2025-08-01 (orthofotos) vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="272993611" version="8"
@@ -45210,7 +45213,7 @@ EOF
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-02-24 vvv
+#: last_checked: 2026-02-26 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -46752,11 +46755,14 @@ EOF
 # REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
 #: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026) (bis 27.02.2026)
 #: note: etwa 50m der Fahrbahn gesperrt
-#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
+#: last_checked: 2026-02-25
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
 Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4828,11094 4775,11203
 #: source_id: LMS-BR:392050/72 viz2021:13.323692,52.504398,03.12.2025,06:00 (Sperrung; bis 17.06.2026)
 #: source_id: LMS-BR:366524/72 viz2021:13.32531,52.50287, (Gegenverkehrsregelung; bis 29.03.2026)
 #: note: Einbahnstraßenregelung, offen Richtung Savignyplatz; während der Arbeitszeiten kann es aber zu weiteren Einschränkungen kommen (gesehen 2026-02-25 Wed 13:23)
+#: last_checked: 2026-02-26
+#: next_check: 2026-06-17
 Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,10707
 EOF
      },
@@ -48389,15 +48395,15 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-02-14 (traffic)
+#: last_checked: 2026-02-26 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 #: note: laut stromnetz-Seite mittlerweile abgeschlossen, aber vielleicht steht hier auch noch die Asphaltierung aus?
 #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026)
-#: also_indoor: traffic (T,G)
-#: last_checked: 2026-02-14 (traffic)
+#: also_indoor: traffic (ex-T,G)
+#: last_checked: 2026-02-26 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
@@ -49668,7 +49674,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="2"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-02-21 vvv
+#: last_checked: 2026-02-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -49687,7 +49693,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-02-10
+#: last_checked: 2026-02-26
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -51170,8 +51176,9 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 7
 #: also_indoor: traffic (none)
-#: last_checked: 2026-02-09
-#: check_frequency: 30d
+#: last_checked: 2026-02-26
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
 EOF
@@ -51882,6 +51889,25 @@ EOF
        data  => <<'EOF',
 #: source_id: LS/223-P/26/014 (bis 28.08.2026)
 	2::inwork -19216,29323 -18694,27999 -18187,27206
+EOF
+     },
+     { from  => 1772085600, # 2026-02-26 07:00
+       until => 1772474400, # 2026-03-02 19:00
+       text  => 'Rathausstr. vor dem Roten Rathaus: voraussichtlich Filmarbeiten mit zeitweiliger Sperrung der Fahrbahn, 27.02.2026 bis 02.03.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260226
+	q4::temp 10696,12601 10599,12526
+EOF
+     },
+     { from  => 1772341200, # 2026-03-01 06:00
+       until => 1787335200, # 2026-08-21 20:00
+       text  => 'Forstallee: Bauarbeiten zwischen Birkenallee und Fasanenstr., Sperrung, 02.03.2026 06:00 Uhr bis 21.08.2026 20:00 Uhr',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: FORSTALLEEZEUTHEN-2026
+#: source_id: 266100065 (bis 21.08.2026)
+	q4::inwork 25400,-6408 25083,-6494
 EOF
      },
     );

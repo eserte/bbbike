@@ -486,7 +486,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-02-26 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="46"
@@ -533,7 +533,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-02-10
+#: last_checked: 2026-02-26
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -859,11 +859,13 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 ### Moabit ###
 # 
-#: source_id: LMS-BR:397184/72 viz2021:13.35084,52.52032, (kein Endedatum)
+#: source_id: LMS-BR:397184/72 viz2021:13.35084,52.52032, (kein Endedatum) (bis 27.03.2026)
 #: also_indoor: traffic (no-G,T,no-W)
 #: note: ca. 20m sind über die gesamte Breite gesperrt; zwar gibt es ein Sackgassenschild, frei für Fußgänger und Radfahrer, aber ich habe keine offizielle Wegführung für den Radverkehr gesehen
 #: last_checked: 2026-02-21
-#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: next_check: 2026-03-27 (VIZ-Verkehrsmeldung)
+#: valid: -20260327
 Lüneburger Str.: Wasserrohrbruch, einige Meter der Fahrbahn sind gesperrt	q3::inwork 6876,12610 6813,12617
 # 
 #: next_check_id: PERLEBERGER-2024
