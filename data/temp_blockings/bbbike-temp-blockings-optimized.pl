@@ -2642,12 +2642,12 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
 #: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1771714800,
+         'from' => 1772319600,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 23.2.2026 bis 27.2.2026',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 2.3.2026 bis 6.3.2026',
          'type' => 'gesperrt',
-         'until' => 1772233199
+         'until' => 1772837999
        },
        undef,
        undef,
@@ -4763,20 +4763,7 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune können bereits w
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147344157 (2019er-Sperrung) (inaktiv)
-#: source_id: LMS-BR:395406/72 viz2021:13.49371,52.51618,07.01.2026,07:00 (bis 02.03.2026)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260106
-# REMOVED (2019er-Sperrung, kürzer) ---	q4::inwork; 16276,12273 16397,12397
-Schottstr.: nur ein kurzes Stück vor der Kreuzung gesperrt	q3::inwork; 16276,12273 16397,12397
-Rüdigerstr.: Baustellenlänge ca. 50m	q4::inwork; 16397,12397 16485,12384
-',
-         'from' => 1767654000,
-         'id' => 3094,
-         'text' => 'Schottstr./Rüdigerstr.: Richtung Freiaplatz. zwischen Roedeliusplatz und Atzpodienstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich Anfang März 2026',
-         'type' => 'handicap',
-         'until' => 1772492399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6032,7 +6019,7 @@ Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: source_id: viz2021:13.492668,52.636706,15.04.2025,12:00 (bis 12.09.2025 + weitere Bauphasen) (inaktiv)
-#: source_id: viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025)
+#: source_id: viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025) (bis 31.12.2027)
 #: also_indoor: traffic (H,ex-G,ex-B,W)
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
@@ -6045,7 +6032,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 ',
          'from' => 1744581600,
          'id' => 3551,
-         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis Ende Februar 2026',
+         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis Ende Februar 2026, evtl. werden die Bauarbeiten verlängert',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7176,8 +7163,8 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029) (inaktiv)
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029) (inaktiv)
-#: source_id: LMS-BR:308232/72 viz2021:13.41278,52.53261,01.08.2023,07:00 (bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025) (bis 18.12.2026)
-#: source_id: LMS-BR:308231/72 viz2021:13.41245,52.53267,02.01.2025,06:43 viz2021:13.41245,52.53267, (bis 19.12.2025) (bis 18.12.2026)
+#: source_id: LMS-BR:308232/72 viz2021:13.41278,52.53261,01.08.2023,07:00 viz2021:13.41278,52.53261, (Metzer Str., bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025) (bis 18.12.2026) (bis 30.04.2026)
+#: source_id: LMS-BR:308231/72 viz2021:13.41245,52.53267,02.01.2025,06:43 viz2021:13.41245,52.53267, (bis 19.12.2025) (bis 18.12.2026) (bis 30.04.2026)
 #: osm_watch: way id="23121446" version="39"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
@@ -7599,7 +7586,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T,G)
 #: last_checked: 2025-12-24 (bahninfo-forum) vvv
-#: next_check: 2026-02-28 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) vvv
 Winckelmannstr.: Havarie, Sperrung der Fahrbahn	q4::inwork 17503,4148 17507,4216
 Köpenicker Str.: Einmündungsbereich gesperrt	q3::inwork 17507,4216 17638,4224
 Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4159 17405,4151
@@ -8001,11 +7988,11 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083535036" version="14"
-#: osm_watch: way id="1119255054" version="11"
+#: osm_watch: way id="1083535036" version="15"
+#: osm_watch: way id="1119255054" version="12"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-02-23
+#: last_checked: 2026-02-26  (osm)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -8151,10 +8138,11 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        },
        {
          'data' => '# REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
-#: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026) (bis 27.02.2026)
+#: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026) (bis 27.02.2026) (inaktiv)
+#: source_id: LMS-BR:400310/72 viz2021:13.32117,52.50746, (bis 27.03.2026)
 #: note: etwa 50m der Fahrbahn gesperrt
 #: last_checked: 2026-02-25
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
+#: next_check: 2026-03-27 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
 Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4828,11094 4775,11203
 #: source_id: LMS-BR:392050/72 viz2021:13.323692,52.504398,03.12.2025,06:00 (Sperrung; bis 17.06.2026)
 #: source_id: LMS-BR:366524/72 viz2021:13.32531,52.50287, (Gegenverkehrsregelung; bis 29.03.2026)
@@ -8740,20 +8728,20 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 # 
 #: note: laut Website möglicherweise bis 16.01.2026; nun: Asphaltierung steht noch aus
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026)
+#: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 30.04.2026)
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-02-26 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
-#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
-#: note: laut stromnetz-Seite mittlerweile abgeschlossen, aber vielleicht steht hier auch noch die Asphaltierung aus?
-#: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026)
-#: also_indoor: traffic (ex-T,G)
-#: last_checked: 2026-02-26 (traffic)
-# REMOVED --- #: check_frequency: 3d (traffic)
-#: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
-Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
+# REMOVED --- #: note: laut stromnetz-Seite mittlerweile abgeschlossen, aber vielleicht steht hier auch noch die Asphaltierung aus?
+# REMOVED --- #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+# REMOVED --- #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (ex-T,G)
+# REMOVED --- #: last_checked: 2026-02-26 (traffic)
+# REMOVED --- # REMOVED --- #: check_frequency: 3d (traffic)
+# REMOVED --- #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
+# REMOVED --- Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 # 
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -9304,7 +9292,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-02-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9485,8 +9473,8 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
-#: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-02-18 vvv
+#: next_check_id: MARKGoRAFENDAMM-2022
+#: last_checked: 2026-02-27 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -9628,7 +9616,7 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-02-25
+#: last_checked: 2026-02-27
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9742,26 +9730,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251027
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4acqfnefs23
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicgdo7drl4tguk2rjrq4pxljxdc5hvtdnu7fpnvhk424c2b6i3xwq@jpeg
-#: source_id: LMS-BR:388170/72 viz2021:13.39202,52.52009,28.10.2025,07:00 viz2021:13.39202,52.52009, (bis 02.12.2025) (bis 30.01.2026) (bis 03.03.2026)
-# REMOVED (mittlerweile die halbe Fahrbahn der Planckstr. frei) --- #: last_checked: 2025-12-10 vvv --- #: next_check: 2026-01-30 (VIZ-Verkehrsmeldung) vvv
-# REMOVED (mittlerweile vermutlich weitergewandert) --- Georgenstr.	q4::inwork 9441,12670 9568,12688
-# REMOVED --- Planckstr.	q4::inwork 9435,12698 9441,12670
-# REMOVED --- Planckstr.: nur wenige Meter	q3::inwork 9441,12670 9454,12558
-# REMOVED --- Planckstr.	q4::inwork 9441,12670 9454,12558
-# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
-#: last_checked: 2026-02-25
-Charlottenstr.	q3::inwork 9454,12558 9462,12481
-',
-         'from' => 1761519600,
-         'id' => 4485,
-         'text' => 'Charlottenstr.: Sperrung wegen Gleisbauarbeiten an der Dorotheenstr., voraussichtlich bis Anfang März 2026',
-         'type' => 'handicap',
-         'until' => 1772578799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9770,7 +9739,7 @@ Charlottenstr.	q3::inwork 9454,12558 9462,12481
 #: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026) (vorfristig fälschlicherweise inaktiv)
 # REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
-#: last_checked: 2026-01-02
+#: last_checked: 2026-02-27 (traffic)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung)
 #: next_check: 2026-02-28 (strabag)
@@ -9880,7 +9849,7 @@ Hansastr. -> Falkenberger Str.	3::inwork 15875,16816 15929,16870 15888,16865
 #: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-02-20 (architektur-urbanistik) vvv
+#: last_checked: 2026-02-27 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
@@ -10159,14 +10128,14 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'until' => 1783720799
        },
        {
-         'data' => '#: source_id: LMS-BR:396580/72 viz2021:13.29513,52.47536,20.01.2026,07:00 (bis 31.03.2026)
+         'data' => '#: source_id: LMS-BR:396580/72 viz2021:13.29513,52.47536,20.01.2026,07:00 (bis 31.03.2026) (bis 30.06.2026)
 	q4::inwork 2786,7721 2911,7686 3084,7599
 ',
          'from' => 1768802400,
          'id' => 4527,
-         'text' => 'Friedrichshaller Str.: Bauarbeiten zwischen Cunostr. und Kolberger Platz Berlin, Sperrung, evtl. sind auch Radfahrer betroffen, vom 20.01.2026 07:00 bis 31.03.2026 17:00',
+         'text' => 'Friedrichshaller Str.: Bauarbeiten zwischen Cunostr. und Kolberger Platz Berlin, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Juni 2026',
          'type' => 'handicap',
-         'until' => 1774969200
+         'until' => 1782856799
        },
        {
          'data' => '#: source_id: LMS-BR:395246/72 viz2021:13.298302,52.47039,05.01.2026,07:00 (Zoppoter Str., bis 31.03.2026)
@@ -10257,17 +10226,7 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'type' => 'handicap',
          'until' => 1788213599
        },
-       {
-         'data' => '#: by: https://bauprojekte.deutschebahn.com/p/berlin-nord/infobauarbeiten?date=20260217
-#: by: https://bauprojekte.deutschebahn.com/media/projects/13736/docs/HZ_berlin_nord_komplexe_arbeiten_wilhelm-kuhr-strasse_sperrung_20260216.pdf
-	2::inwork 9236,17907 9303,17965
-',
-         'from' => 1771714800,
-         'id' => 4538,
-         'text' => 'Unterführung an der Wilhelm-Kuhr-Str.: Sperrung, vom 23.02.2026 bis 27.02.2026',
-         'type' => 'gesperrt',
-         'until' => 1772233200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645215.php (Sperrung dieses Abschnitts für drei Monate, allerdings ohne einen konkreten Termin zu benennen)
 	2::inwork 710,18727 714,18758 897,18943 1002,19014 1122,19036 1165,19009 1200,18969
@@ -10316,13 +10275,15 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260226
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mft3534nyk2i
+#: source_id: LMS-BR:400218/72 viz2021:13.407209,52.518403,27.02.2026,07:00 (bis 01.03.2026)
 	q4::temp 10696,12601 10599,12526
 ',
          'from' => 1772085600,
          'id' => 4543,
-         'text' => 'Rathausstr. vor dem Roten Rathaus: voraussichtlich Filmarbeiten mit zeitweiliger Sperrung der Fahrbahn, 27.02.2026 bis 02.03.2026',
+         'text' => 'Rathausstr. vor dem Roten Rathaus: Filmarbeiten mit zeitweiliger Sperrung der Fahrbahn, 27.02.2026 bis 01.03.2026',
          'type' => 'handicap',
-         'until' => 1772474400
+         'until' => 1772370000
        },
        {
          'data' => '#: next_check_id: FORSTALLEEZEUTHEN-2026
@@ -10334,6 +10295,31 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'text' => 'Forstallee: Bauarbeiten zwischen Birkenallee und Fasanenstr., Sperrung, 02.03.2026 06:00 Uhr bis 21.08.2026 20:00 Uhr',
          'type' => 'handicap',
          'until' => 1787335200
+       },
+       {
+         'data' => '#: next_check_id: PETERSBURGER-2024
+#: last_checked: 2026-02-27 vvv
+#: check_frequency: 14d vvv
+	3::inwork 13747,12642 13695,12643 13681,12624
+	3::inwork 13761,12690 13695,12643 13681,12624
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 4545,
+         'text' => 'Bersarinplatz: Radfahrer sollen einen Umweg über Mühsamstr. fahren',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: 266700064 (bis 09.03.2026)
+	2::inwork 45787,-225 45836,-8 45968,619
+',
+         'from' => 1772168400,
+         'id' => 4546,
+         'text' => 'Bahnübergang Hangelsberg: Gleisbauarbeiten, Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, 28.02.2026 06:00 Uhr bis 09.03.2026 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1773082800
        }
      
 );

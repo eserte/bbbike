@@ -2693,7 +2693,7 @@ Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3764,13613
 Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3693,13769 -3716,13724
 Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4119,12763 -4063,12842
 Wilhelmstr.: Mittelstreifen	3nocross -4008,12916 -3967,12976 -3923,13060
-Invalidenstr.: Straßenbahntrasse	3nocross 9148,13944 9189,13953 9274,13963
+Invalidenstr.: Straßenbahntrasse	3nocross 9148,13944 9189,13953 9223,13957 9274,13963
 Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7901,13324
 #: XXX_prog hack für das bekannte 3nocross-Problem
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
@@ -4057,6 +4057,27 @@ Drängelgitter	BNP:3::trailer=10 17498,9714
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1647872.php (bereits seit 2022 gesperrt)
+#: osm_watch: way id="1158959851" version="3"
+#: osm_watch: way id="236674294" version="8"
+#: note: nur dieser Abschnitt ist offen:
+#: osm_watch: way id="25958768" version="11"
+#: last_checked: 2026-02-27 (BA-Pressemitteilung)
+#: check_frequency: 360d
+Am Egelpfuhlgraben: Holzbohlensteg zum Bullengraben gesperrt	2::inwork -5790,13458 -5785,13606
+# 
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/zumutung-fur-uns-anwohner-arger-um-millionen-baustelle-der-ig-metall-im-berliner-westen-15207890.html
+#: by: https://baustelle-biz-pichelssee.de/
+#: by: https://www.entwicklungsstadt.de/bildungsstaette-mit-ausblick-ig-metall-plant-neubau-mit-114-zimmern-am-spandauer-pichelsee/
+#: by: https://baustelle-biz-pichelssee.de/2026/02/09/abgeschlossene-asphaltarbeiten-zum-schutz-der-zufahrtsstrasse/
+#: by: https://baustelle-biz-pichelssee.de/2026/02/11/strassenfuehrung-und-baustellenverkehr/ (kommt eine Einbahnstraßenregelung?)
+#: by: https://baustelle-biz-pichelssee.de/2026/02/11/fertigstellung-der-schutzschicht/
+#: by: https://baustelle-biz-pichelssee.de/2026/02/23/einbahnstrassenregelung-fuer-die-strasse-alt-pichelsdorf/ (Einbahnstraßenregelung wurde vereinbart, möglicherweise in den restlichen Abschnitten von Alt-Pichelsdorf, aber in welche Richtung und ist auch der Radverkehr betroffen?)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/ice-bahnhof-obdachlose-ig-metall-bussgelder-hier-sind-die-wichtigsten-news-aus-dem-rathaus-berlin-spandau-15294793.html
+#: XXX vermutlich bis 2028 temporär asphaltiert, evtl. auch weitere Einbahnstraßenregelungen?
+#: next_check: 2028-11-03
+Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3606,11532 -3657,11631 -3692,11681
+# 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,843064#msg-843064
 #: by: https://youtu.be/K2IBgxLwMxI?si=lYxk-LHhip3m6lCJ&t=669
@@ -4095,7 +4116,7 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2026-02-15 (daf) vvv
+#: last_checked: 2026-02-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 vvv
 #: osm_watch: way id="752856111" version="15"
@@ -4134,7 +4155,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-02-26 vvv
+#: last_checked: 2026-02-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4527,7 +4548,7 @@ An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 1092
 #: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch auf der anderen Seite so ausgeschildert?
 #: XXX culdesac-Eintrag an der Döberitzer Str. muss vermutlich geändert werden
 #: osm_watch: way id="237704728" version="4"
-#: last_checked: 2025-11-16 (webcam)
+#: last_checked: 2026-02-27
 #: check_frequency: 120d
 Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nicht	2::inwork 7787,13838 7872,13685
 # 
@@ -4930,7 +4951,7 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 #: osm_watch: way id="945966258" version="3"
 #: osm_watch[closed]: note 5077509 1
 #: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])
-#: last_checked: 2026-02-15 (mapillary)
+#: last_checked: 2026-02-27
 #: check_frequency: 120d
 #: next_check: 2026-09-30 (Baustellenschild)
 # REMOVED --- Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -4970,7 +4991,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-02-27 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5024,7 +5045,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-02-13 vvv
+#: last_checked: 2026-02-27 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5035,11 +5056,11 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-02-27 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
-Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
+# REMOVED (dieser Abschnitt nicht mehr gesperrt) --- Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5098,7 +5119,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 # REMOVED (keine Updates mehr) --- #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2026-02-20 (architektur-urbanistik) vvv
+#: last_checked: 2026-02-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-04-15 (jtre.de, entwicklungsstadt (Frühjahr 2027)) vvv
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
@@ -5141,6 +5162,8 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/36cb0b59-b56f-4369-b327-d21403ca27fd/11-05_Ma%C3%9Fnahmenkarte.pdf
 #: by: https://entwicklungsstadt.de/gleisdreieckpark-neubau-zweier-u-bahn-bruecken-verzoegert-sich/ (2028-2030)
 #: by: https://www.tagesspiegel.de/berlin/marode-u-bahn-brucke-muss-ersetzt-werden-berliner-gleisdreieckpark-wird-jahrelang-zur-baustelle-14701874.html
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/planfeststellungen/bekanntmachungen/u1-dennewitzbruecke-1644776.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_09_0521_0564_online.pdf (Bekanntmachung zum Planfeststellungsverfahren ... Bauwerk XII)
 #: XXX während der richtigen Bauarbeiten wird es weitere Einschränkungen geben (laut 08-02_Go_Kus_GP1058_Wege .. 08-04_Go_Kus_GP1060_Wege und Maßnahmenkarte):
 #: XXX - Parkzugang Kurfürstenstraße: Sperrung des Weges anscheinend bis zum östlichen Weg; am Eingang temporäre Treppe & temporärer Weg bis Höhe westlicher Weg
 #: XXX - westlicher Weg zwischen Höhe Kurfürstenstraße und Pohlstraße liegt in der Baustelleneinrichtungsfläche
@@ -5260,7 +5283,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-02-26
+#: last_checked: 2026-02-27
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5288,7 +5311,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: note: Sperrung am südlichen Ende entfernt, am nördlichen Ende aber weiterhin Bauzäune
 #: last_checked: 2026-02-18
 #: check_frequency: 90d
-#: next_check: 2026-02-28 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 # 
 # REMOVED (Bauzäune sind nur stellenweise vorhanden (z.B. Seidenschwanzstr., westliche Einfahrt) und können leicht umfahren werden --- siehe mapillary) --- #: next_check_id: SEIDENSCHWANZSTR-2019 --- #: last_checked: 2020-04-26 vvv --- #: check_frequency: 360d vvv --- #: next_check: 2021-01-09 vvv --- #: XXX wann werden die Straßen eröffnet? vvv --- #: XXX laut osm (via StreetComplete) nicht mehr highway=construction vvv --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf --- #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen) --- #: by; https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-soll-an-der-bisamstrasse-den-bau-von-mehrfamilienhaeusern-pruefen_a228628 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-plant-mehrgeschosser-im-siedlungsgebiet-zwischen-bisamstrasse-und-landesgrenze_a278290 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.959124.php --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/die-degewo-will-ab-2023-an-der-stadtgrenze-200-mietwohnungen-bauen_a300659 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/buergerinitiative-lehnt-mietwohnungsbau-ab_a301920 --- #: osm_watch: way id="515337708" version="8" --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801 --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708 --- #: osm_watch: way id="515337706" version="6" --- Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854 --- #: osm_watch: way id="515337707" version="6" --- Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 26379,12909 --- #: osm_watch: way id="515337709" version="6" --- Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959 --- #: XXX ^^^ --- #: XXX ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -5469,7 +5492,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-02-27 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188 (inaktiv)
 #: osm_watch: way id="593108603" version="3"
@@ -5697,7 +5720,7 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-14
 # REMOVED --- Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 * 8673,12315 *
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-#: last_checked: 2026-02-24 (webcam)
+#: last_checked: 2026-02-27
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

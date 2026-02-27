@@ -1017,6 +1017,10 @@ Schönhauser Allee Richtung Norden vor Stargarder Str.	CS; 10925,15581 10941,156
 Invalidenstr. Richtung Osten vor Scharnhorststr.	CS; 8358,13562 8453,13611
 #: note: 2026-02-11 noch nicht eingeschaltet gewesen
 Invalidenstr. Richtung Westen vor Alexanderufer	CS; 8453,13611 8358,13562 8332,13548
+#: note: 2026-02-27 noch nicht eingeschaltet gewesen
+Invalidenstr. Richtung Westen vor Caroline-Michaelis-Str.	CS; 9223,13957 9189,13953 9148,13944
+#: note: 2026-02-27 noch nicht eingeschaltet gewesen
+Invalidenstr. Richtung Westen vor Chausseestr.	CS; 9046,13900 8935,13844
 # 
 Langenscheidtstr. Richtung Südosten vor Crellestr.	CS; 7596,9249 7647,9196
 # 
@@ -1361,7 +1365,7 @@ Bus 358	busroute_N 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 1
 #: XXX Wann ziehen die Gaslaternen um?
 #: osm_watch: note 2969085 7
 #: priority: #C
-#: last_checked: 2026-02-21
+#: last_checked: 2026-02-27
 #: check_frequency: 90d
 Gaslaternen-Freilichtmuseum Berlin	CS 5895,11692 5835,11768 5858,11863 5900,11913
 #: ignore ^^^
@@ -1912,7 +1916,7 @@ Hochspannungsweg: nicht ausgeschildert, Feuerwehrzufahrt zum Britzer Garten	CP; 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1128830.php (Benennung eines Platzes nach Hans Peters)
 #: XXX wann wird der Platz ausgeschildert?
-#: last_checked: 2026-02-11
+#: last_checked: 2026-02-27
 #: check_frequency: 60d
 Hans-Peters-Platz: nicht ausgeschildert	CS 7739,14119 7679,14030
 # 

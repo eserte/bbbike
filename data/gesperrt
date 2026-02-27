@@ -2567,8 +2567,8 @@ Sprengelstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4026,12720 -4119,12763 -
 Mittelstreifen	3nocross::ignrte -4008,12916 -3967,12976 -3923,13060
 Wilhelmstr. -> Zimmerstr.: Mittelstreifen	3::igndisp -3923,13060 -3967,12976 -3942,12957
 Zimmerstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -3942,12957 -3967,12976 -4008,12916
-Straßenbahntrasse	3nocross::ignrte 9148,13944 9189,13953 9274,13963
-Invalidenstr. -> Eichendorffstr.: Straßenbahntrasse	3::igndisp 9274,13963 9189,13953 9193,13942
+Straßenbahntrasse	3nocross::ignrte 9148,13944 9189,13953 9223,13957 9274,13963
+Invalidenstr. -> Eichendorffstr.: Straßenbahntrasse	3::igndisp 9223,13957 9189,13953 9193,13942
 Eichendorffstr. -> Invalidenstr.: Straßenbahntrasse	3::igndisp 9193,13942 9189,13953 9148,13944
 Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7901,13324
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
@@ -3561,6 +3561,8 @@ Drängelgitter	BNP:3:-96:trailer=10 9165,10530
 Schwingtor	BNP:5:-27:trailer=10 11543,20272
 Drängelgitter	BNP:3:-248:trailer=10 113,7
 Drängelgitter	BNP:3:-68:trailer=10 17498,9714
+Am Egelpfuhlgraben: Holzbohlensteg zum Bullengraben gesperrt	2::inwork -5790,13458 -5785,13606
+Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s -3606,11532 -3657,11631 -3692,11681
 südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
 Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
@@ -3646,7 +3648,6 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
 Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
-Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
