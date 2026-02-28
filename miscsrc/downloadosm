@@ -30,7 +30,7 @@ use BBBikeUtil qw(is_in_path);
 
 sub save_pwd (&);
 
-our $VERSION = "0.07";
+our $VERSION = "0.08";
 
 use constant TIMEOUT => 60;
 
@@ -46,6 +46,7 @@ my $short_osm_download_file_qr =           qr{$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.o
 
 my $debug = 1;
 my $do_reload;
+my $do_reload_or_download;
 my $min_age;
 my $n;
 my $o;
@@ -60,10 +61,12 @@ sub usage () {
     die <<EOF;
 usage: $0 [options] -o directory -- x0 y0 x1 y1
        $0 [options] -reload existing.osm ...
+       $0 [options] -reload-or-download possibly-non-existing.osm ...
 
 First form:  specify a bbox (four parameters, x0 y0 x1 y1)
 Second form: refresh existing osm files downloaded with this tool
              Alternatively specify a directory containing osm files
+Third form:  like second form, but files must not exist yet
 
 -n:        no exec
 -debug i:  set debugging/verbosity level (default=$debug)
@@ -77,7 +80,7 @@ Second form: refresh existing osm files downloaded with this tool
 -socksproxy=socks://host:port 	set socks proxy
 -timeout seconds 	set timeout, (default $timeout seconds)
 
-With -reload:
+With -reload and -reload-or-download:
 -minage days: download only files which are older than days days
               handy if a download process aborted and should be
               restarted
@@ -89,6 +92,7 @@ EOF
 }
 
 GetOptions("reload!" => \$do_reload,
+	   "reload-or-download!" => \$do_reload_or_download,
 	   "minage=f" => \$min_age,
 	   "o=s" => \$o,
 	   "debug=i" => \$debug,
@@ -106,6 +110,8 @@ GetOptions("reload!" => \$do_reload,
 	  )
     or usage;
 
+($do_report && $do_reload_or_download)
+    and die "Can't specify -reload and -reload-or-download together.\n";
 
 my $ua = eval {
     require LWP::UserAgent;
@@ -125,10 +131,14 @@ if ($@) {
 activate_socksproxy($socksproxy) if $socksproxy;
 
 my @reload;
-if ($do_reload) {
+if ($do_reload || $do_reload_or_download) {
     @reload = @ARGV;
     if (!@reload) {
-	die "Please specify .osm files to reload!";
+	if ($do_reload_or_download) {
+	    die "Please specify .osm files to download or reload!\n";
+	} else {
+	    die "Please specify .osm files to reload!\n";
+	}
     }
 } else {
     if (!@ARGV) {
@@ -142,11 +152,13 @@ if (@reload == 1 && -d $reload[0]) {
 
 if (@reload) {
     if ($min_age) {
-	@reload = grep { -M $_ >= $min_age || -z $_ } @reload;
+	@reload = grep { (!-f $_ && $do_reload_or_download) || -M $_ >= $min_age || -z $_ } @reload;
     }
-    for my $reload (@reload) {
-	if (!-r $reload) {
-	    die "The file <$reload> does not exist or is not readable.\n";
+    if ($do_reload) {
+	for my $reload (@reload) {
+	    if (!-r $reload) {
+		die "The file <$reload> does not exist or is not readable.\n";
+	    }
 	}
     }
     for my $reload (@reload) {
@@ -464,6 +476,7 @@ downloadosm - download data from openstreetmap
 
     downloadosm -o directory -- x0 y0 x1 y1
     downloadosm -reload existing.osm
+    downloadosm -reload-or-download possibly-non-existing.osm
 
 =head1 DESCRIPTION
 
