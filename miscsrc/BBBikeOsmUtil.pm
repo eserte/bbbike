@@ -130,11 +130,14 @@ sub mirror_and_plot_osm_files {
 		    main::IncBusy($main::top);
 		    eval {
 			if (1) {
-			    my @cmd = ($^X, bbbike_root() . '/miscsrc/downloadosm', '-minage', $refresh_days, '-reload', $file);
+			    my @cmd = ($^X, bbbike_root() . '/miscsrc/downloadosm', '-minage', $refresh_days, '-reload-or-download', $file);
 			    system @cmd;
 			    if ($? != 0) {
 				die "Running '@cmd' failed (exit code " . ($?<<8) . ")\n";
 			    } else {
+				if (!-f $file && -f "$file.gz") {
+				    $file = "$file.gz"; # change @$osm_files_ref
+				}
 				$success = 1;
 			    }
 			} else { # XXX use downloadosm script, as it has a hack for handling zlib-compressed files
