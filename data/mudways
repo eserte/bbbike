@@ -712,7 +712,11 @@ Hausvaterweg: unbefestigte Straße	X 20281,18690 20347,18667
 (Walter-Nicklitz-Promenade): wassergebundene Decke	X 8290,15304 8329,15397
 # 
 #: mud: 2022-01-05: keine Beeinträchtigungen, nur im Bereich der Schranken leicht matschig	h=q1,wet
+#: mud: 2026-02-28: keine Beeinträchtigungen, nur wenige Stellen mit leicht feuchter Oberfläche	h=q0-,wet
 (Kolonie Blaschkotal): fester Sandweg, etwas Schotter	X 13158,5490 13178,5378 13112,5253
+# 
+#: mud: 2026-02-28: matschig, allerdings umfahrbar	h=q3+,wet
+(Weg durch Kolonie): fester Sandweg, etwas Schotter	X 13112,5253 13045,5119
 # 
 #: mud: 2022-01-18: leicht matschig	h=q2,wet
 #: mud: 2025-06-13: keine Beeinträchtigungen	h=q0
@@ -912,7 +916,7 @@ Kolonie Albrechtshöhe: wassergebundene Decke	X 10260,5953 10215,5959 9955,5993
 (Geraldstr. - Wuhlewanderweg): unbefestigter Pfad	X 21131,8739 21183,8738
 # 
 #: mud: 2023-04-14: zahlreiche Pfützen, matschig	h=q3,wet
-(Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	X 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900
+(Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	X 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18352,5884 18334,5900
 # 
 #: mud: 2023-05-02: weitgehend trocken	h=q0-,wet
 #: mud: 2023-10-19: weitgehend trocken	h=q0-,wet

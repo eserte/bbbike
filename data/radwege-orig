@@ -1246,7 +1246,7 @@ Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 1
 #: note: Waltersdorfer Chaussee/Neuköllner Str., Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
 #: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2025-10-31 (mapillary)
+#: last_checked: 2026-02-28
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
@@ -1412,7 +1412,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-02-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (Tsp) vvv
@@ -1779,7 +1779,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="823635969" version="30"
 #: osm_watch: way id="4615746" version="57"
-#: osm_watch: way id="1082929723" version="14"
+#: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
 #: last_checked: 2026-02-24 (osm) vvv
 #: check_frequency: 30d vvv
@@ -2440,7 +2440,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-02-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 asphaltiert	RW2; 17681,7589 17611,7690
@@ -3274,7 +3274,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-02-27
+#: last_checked: 2026-02-28
 #: check_frequency: 90d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
@@ -3298,7 +3298,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-02-27
+#: last_checked: 2026-02-28
 #: check_frequency: 90d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -8341,13 +8341,15 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
-#: last_checked: 2026-02-22 (youtube) vvv
+#: last_checked: 2026-02-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-31 (Baustellenschild) vvv
 #: note: Stubenrauchstr. Richtung Nordosten
 provisorische Radspur	RW4; 16135,2135 16182,2200
 Fahrbahn Richtung NO nur für Radfahrer und Anliegerverkehr	RW10; 16182,2200 16242,2279 16306,2364 16382,2464 16461,2569 16475,2586 16547,2680 16573,2715 16635,2796 16677,2856 16703,2888
-Gehweg für Radfahrer freigegeben, keine Benutzungsmöglichkeit der Fahrbahn	RW1; 16703,2888 16786,2989 16831,3049 16853,3078
+Gehweg für Radfahrer freigegeben, keine Benutzungsmöglichkeit der Fahrbahn	RW1; 16703,2888 16786,2989
+#: historical_note: früher (bis Anfang 2026?) "keine Benutzungsmöglichkeit der Fahrbahn"
+Gehweg für Radfahrer freigegeben	RW1; 16786,2989 16831,3049 16853,3078
 Fahrbahn Richtung NO nur für Radfahrer und Anliegerverkehr	RW10; 16853,3078 16891,3129
 #: note: Stubenrauchstr. Richtung Südwesten
 #: XXX wird nach den Bauarbeiten evtl. wieder eingerichtet: Busspur gilt Mo-Fr 6-19 Uhr	RW5; 16242,2279 16182,2200
@@ -9000,9 +9002,13 @@ nur teilweise mit provisorischer Radspur	RW0; 3975,11087 3795,11098
 #: last_checked ^^^
 #: note: Kantstr., Richtung Osten
 #: historical_note: früher war der westliche Abschnitt für Linienverkehr frei, dann nicht mehr, seit der Ringbahnbrückensperrung wieder; mittlerweile ist der Radstreifen nicht mehr provisorisch, aber weiterhin für Linienverkehr frei; ab Herbst 2025 keine Linienverkehr-Freigabe mehr (zumindest nicht in Höhe Amtsgerichtsplatz)
-	RW4; 2233,11049 2340,11056 2491,11061 2621,11065 2740,11076 2854,11085 2865,11086 3006,11093 3082,11090 3283,11097 3391,11097 3501,11096 3795,11098
+	RW4; 2233,11049 2340,11056 2491,11061 2621,11065
+Radspur mit Bushaltestelle	RW3; 2621,11065 2666,11069
+	RW4; 2666,11069 2740,11076 2854,11085 2865,11086 3006,11093
+Radspur mit Bushaltestelle	RW3; 3006,11093 3082,11090
+	RW4; 3082,11090 3283,11097 3391,11097 3501,11096 3795,11098
 #: note: Kantstr., Richtung Westen
-	RW4; 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2621,11065 2491,11061 2340,11056 2233,11049
+	RW4; 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2666,11069 2621,11065 2491,11061 2340,11056 2233,11049
 # 
 Tempo 10	RW6;RW6 11785,7583 11763,7687 11738,7790 11713,7899
 # 
@@ -9669,14 +9675,15 @@ asphaltiert	RW1;RW9 7308,9163 7363,9152
 # 
 	RW6;RW6 7998,15068 8015,15047 8037,14958 8091,14895
 # 
-	RW6;RW6 12673,1140 12692,1117 12704,1102 12716,1088 12727,1074
+	RW6;RW6 12673,1140 12692,1117 12704,1102 12716,1088 12727,1074 12772,1019 12808,968
 	RW6;RW6 12673,1140 12738,1213 12802,1285 12868,1315
-	RW6;RW6 12802,1285 12832,1192 12838,1174 12861,1102 12868,1085
+	RW6;RW6 12802,1285 12832,1192 12838,1174 12861,1102 12868,1085 12860,1057 12882,999
 	RW6;RW6 12716,1088 12742,1113 12832,1192 12860,1200 12914,1215
 	RW6;RW6 12727,1074 12656,1019
 	RW6;RW6 12838,1174 12917,1197
-	RW6;RW6 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101
-	RW6;RW6 12868,1085 12891,1091 12933,1101
+	RW6;RW6 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101 12946,1027
+	RW6;RW6 12713,962 12772,1019 12868,1085 12891,1091 12933,1101
+	RW6;RW6 12808,968 12882,999 12946,1027
 # 
 #: by: osm
 	RW7;RW7 -298,2577 -197,2634 -155,2658

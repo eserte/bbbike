@@ -2750,7 +2750,7 @@ Paplitzer Str.: Kopfsteinpflaster	Q2 10722,-3191 10735,-3142
 Mauerweg: wassergebundene Decke	Q1 11802,554 11928,588 11956,599
 Mauerweg: Verbundsteinpflaster	Q1 11956,599 12014,620
 Mauerweg: wassergebundene Decke	Q1 12014,620 12246,706
-Mauerweg: Asphalt	Q0 12246,706 12557,799 12651,848 12731,893 12823,939 12886,968 12984,1011
+Mauerweg: Asphalt	Q0 12246,706 12557,799 12651,848 12731,893 12823,939 12890,969 12984,1011
 Ringslebenstr.: Asphalt	Q0 13805,1435 13850,1461
 Mauerweg: unebener Asphalt	Q1 14430,1731 14626,1768 14682,1782
 Mauerweg: Asphalt	Q0 14682,1782 14716,1772 14755,1738 14858,1700 14876,1686 15058,1191 15056,1139 15200,737 15333,378 15423,150 15480,6 15538,-30 15571,-93
@@ -2775,8 +2775,8 @@ Deutschtaler Str.: Asphalt	Q0 17344,1060 17492,843 17640,626
 Deutschtaler Str.: Kopfsteinpflaster	Q2 17640,626 17811,374 17854,314 17949,180 18014,85
 Deutschtaler Str.: Kopfsteinpflaster	Q2 18014,85 18081,-9 18232,-228
 Timmendorfer Weg: Kopfsteinpflaster	Q2 17879,-3 18014,85 18085,137
-Selgenauer Weg: Beton	Q0 17526,1540 17460,1645 17386,1728
-Selgenauer Weg: Asphalt	Q0 17386,1728 17271,1718 17241,1750
+Selgenauer Weg: Beton	Q0 17526,1540 17460,1645 17401,1717
+Selgenauer Weg: Asphalt	Q0 17401,1717 17271,1718 17241,1750
 Zinnwalder Steig: glattes Kopfsteinpflaster	Q1 17460,1645 17580,1693
 Pfarrer-Heß-Weg: glattes Kopfsteinpflaster	Q1 17675,1677 17848,1657
 Im Bauernbusch: Asphalt	Q0 17855,1629 17848,1657 17824,1756 17809,1855 17764,2032
@@ -2899,7 +2899,7 @@ Unter der Kranbahn: Beton	Q0 18423,6285 18381,6134 18367,6086
 Platz am Kaisersteg: Gehwegpflasterung	Q0 18381,6134 18428,6123
 Platz am Kaisersteg: Kleinsteinpflaster	Q1 18428,6123 18417,6068
 Platz am Kaisersteg: Gehwegpflasterung	Q0 18417,6068 18422,6013 18420,6009
-Kaisersteg: Asphalt, leicht uneben	Q0 18420,6009 18393,5964 18353,5897 18326,5850
+Kaisersteg: Asphalt, leicht uneben	Q0 18420,6009 18393,5964 18353,5897 18324,5847
 Britzer Str.: Asphalt	Q0 18470,5600 18380,5520 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
 Erikastr.: Asphalt	Q0 19500,4919 19477,5048 19424,5217
@@ -5082,7 +5082,7 @@ Hafenstr.: Kopfsteinpflaster	Q2 17531,2460 17629,2606
 Wischmattenweg: Beton	Q0 17721,2232 17880,2152 17928,2248
 Kiefwiesensteig: Gehwegplatten	Q1 17880,2152 17901,2075
 Ritterspornweg: Beton	Q0 17440,2062 17514,2139 17553,2157 17657,2213
-Herzblattweg: Beton	Q0 17347,1823 17270,1921 17285,2044
+Herzblattweg: Beton	Q0 17347,1823 17261,1930 17285,2044
 Hofjagdweg: Beton	Q0 17824,1756 18103,1820
 Freigutweg: Asphalt	Q0 17809,1855 17909,1881 18076,1919
 Radewiesenweg: Kopfsteinpflaster	Q2 17860,2061 17889,1971 17909,1881
@@ -9979,9 +9979,10 @@ Hänselstr.: Beton	Q0 15695,7254 15555,7133 15436,7031
 (Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18667,5467 18634,5484
 (Hasselwerderpark, Uferweg an der Spree): Betonpflaster	Q0 18634,5484 18560,5539
 (Hasselwerderpark, Uferweg an der Spree): Beton	Q1 18560,5539 18506,5596
-(Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900
-(Hasselwerderpark, Uferweg an der Spree): Asphalt/Beton	Q0 18334,5900 18192,5931
-(Hasselwerderpark, Uferweg an der Spree - Kaisersteg): wassergebundene Decke	Q1 18413,5799 18339,5853 18326,5850
+(Hasselwerderpark, Uferweg an der Spree): wassergebundene Decke	Q1 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18352,5884 18334,5900
+(Hasselwerderpark, Uferweg an der Spree): Asphalt/Beton mit Unebenheiten	Q1 18334,5900 18279,5925 18192,5931
+(Hasselwerderpark, Uferweg an der Spree - Kaisersteg): wassergebundene Decke	Q1 18413,5799 18335,5854
+(Uferweg an der Spree - Kaisersteg): Verbundsteinpflaster, daneben Kopfsteinpflaster	Q1 18352,5884 18335,5854 18324,5847
 (Uferweg an der Spree): Betonpflaster	Q0 18192,5931 18118,5953
 (Am Werkstor/Kupferkamp - Uferweg): Betonpflaster	Q0 18075,5880 18118,5953
 Insel-Rügen-Weg: Gehwegplatten	Q1 10967,17671 10978,17589 11064,17599
@@ -11858,11 +11859,17 @@ Gensweg: Beton	Q0 12657,1154 12673,1140
 Gensweg: Asphalt	Q0 12673,1140 12692,1117
 Gensweg: Betonpflaster	Q0 12692,1117 12704,1102
 Gensweg: Kleinsteinpflaster	Q1 12704,1102 12716,1088 12727,1074
+Gensweg: Betonpflaster	Q0 12772,1019 12808,968
+(Gensweg - Mauerweg): Asphalt	Q0 12808,968 12823,939
 Am Mühlanger: Betonpflaster	Q0 12673,1140 12738,1213
 Am Mühlanger: Betonpflaster	Q0 12738,1213 12802,1285
 Am Mühlanger: Betonpflaster	Q0 12802,1285 12868,1315 12902,1321
-Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192 12838,1174 12861,1102
+Dyrekeweg: Betonpflaster	Q0 12790,1302 12802,1285 12832,1192
+Dyrekeweg: Kleinsteinpflaster	Q1 12832,1192 12838,1174
+Dyrekeweg: Betonpflaster	Q0 12838,1174 12861,1102
 Dyrekeweg: Kleinsteinpflaster	Q1 12861,1102 12868,1085
+Dyrekeweg: Betonpflaster	Q0 12868,1085 12860,1057 12882,999
+(Dyrekeweg - Mauerweg): Asphalt	Q0 12882,999 12890,969
 An den Buckower Feldern: Betonpflaster	Q0 12914,1215 12860,1200
 An den Buckower Feldern: Kleinsteinpflaster	Q1 12860,1200 12832,1192
 An den Buckower Feldern: Betonpflaster	Q0 12832,1192 12742,1113
@@ -11871,8 +11878,10 @@ An den Buckower Feldern: Betonpflaster	Q0 12838,1174 12917,1197
 An den Buckower Feldern: Betonpflaster	Q0 12727,1074 12656,1019
 Knyphausenweg: Betonpflaster	Q0 12902,1321 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101
 (Buckower Felder - Buckower Damm/Gerlinger Str.): Betonpflaster	Q0 12902,1321 12926,1330 12938,1348
+In den Bauerngärten: Betonpflaster	Q0 12713,962 12772,1019 12868,1085
 In den Bauerngärten: Kleinsteinpflaster	Q1 12868,1085 12891,1091
 In den Bauerngärten: Betonpflaster	Q0 12891,1091 12933,1101
+An den Weiden: Betonpflaster	Q0 12808,968 12882,999 12946,1027
 Döberitzer Grünzug: Beton	Q0 7861,13465 7819,13559
 Döberitzer Grünzug: Asphalt	Q0 7819,13559 7825,13569 7805,13594 7782,13600
 Döberitzer Grünzug: Beton	Q0 7782,13600 7756,13634
@@ -13842,7 +13851,7 @@ Beerbaumstr.: Asphalt	Q0 15843,23980 15906,24088
 (Beerbaumstr. - Karower Chaussee): Gehwegplatten, gut fahrbar	Q1 15906,24088 15940,24142
 (Beerbaumstr. - Karower Chaussee): Trampelpfad, fester Sandweg, einigermaßen fahrbar	Q2 15940,24142 16021,24243 16123,24232
 Kappenstr.: schlechtes Kopfsteinpflaster, auch Gehwege sind schlecht	Q3 16549,1758 16599,1836 16677,1941
-Pfarrer-Heß-Weg: sehr schlechtes Kopfsteinpflaster	Q3 17386,1728 17580,1693 17675,1677
+Pfarrer-Heß-Weg: sehr schlechtes Kopfsteinpflaster	Q3 17401,1717 17580,1693 17675,1677
 Seltersstr.: Asphalt	Q0 11447,192 11564,195
 Woermannkehre: Asphalt	Q0 13601,6259 13732,6314
 Behringstr.: Kopfsteinpflaster, Fugen mit Asphalt vergossen	Q2 16262,6913 16423,6746 16481,6686
@@ -14602,7 +14611,8 @@ Rhabarberweg: meist guter Beton, stellenweise brüchig	Q1 17175,2498 17059,2605 1
 Eibischstr.: guter Beton	Q0 16899,2344 16911,2375 16934,2407 17027,2495
 Krokusstr.: guter Asphalt	Q0 16610,1715 16767,1831 16797,2017 16809,2091 16822,2219 16812,2347 16788,2461 16770,2550 16738,2717
 Krokusstr.: Asphalt	Q0 16738,2717 16739,2736 16677,2856
-Margueritenring: Beton	Q0 16513,2217 16822,2219 16917,2218 17009,2095 17080,2063 17190,2052 17285,2044 17409,2032 17440,2062
+Margueritenring: Beton mit einigen schadhaften Stellen	Q1 16513,2217 16822,2219
+Margueritenring: Beton	Q0 16822,2219 16917,2218 17024,2078 17080,2063 17190,2052 17285,2044 17409,2032 17440,2062
 Westiger Pfad: Beton	Q0 1603,18418 1615,18303 1596,18214
 Löwenzahnweg: Beton	Q0 16045,2434 16106,2514 16183,2615 16260,2717 16376,2862
 Forkenzeile: guter Asphalt	Q0 16042,23275 16113,23376 16183,23476
@@ -15886,7 +15896,7 @@ Kummerower Ring: guter Beton	Q0 22615,13734 22527,13708 22523,13680 22544,13602 
 Hainstr.: guter Asphalt	Q0 18380,5520 18371,5541 18367,5645 18349,5730 18312,5824
 Fließstr.: mäßiges Kopfsteinpflaster	Q2 18164,5701 18019,5786
 Fließstr.: guter Asphalt	Q0 18019,5786 17877,5860
-Flutstr.: am Rand mäßiges Kopfsteinpflaster, in der Mitte eine gute asphaltierte Spur	Q1 18019,5786 17980,5721 17931,5695 17916,5675
+Flutstr.: am Rand Kopfsteinpflaster, in der Mitte eine asphaltierte Spur mit Unebenheiten	Q1 18019,5786 17980,5721 17931,5695 17916,5675
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): sehr gut asphaltiert	Q0 15204,7236 15306,7251 15350,7272
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): Asphalt, einige Wurzelhebungen	Q0 15350,7272 15422,7265
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): mäßig asphaltiert (viele Unebenheiten durch Baumwurzeln)	Q2 15422,7265 15468,7291 15579,7316 15609,7347

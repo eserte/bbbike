@@ -47,7 +47,6 @@ Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,
 H¸ttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 B¸rgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
-Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 16853,3078
 Gustav-Tempel-Str.: kurzes St¸ck B¸rgersteig	q3 15261,10738 15245,10719
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3::inwork 15937,15134 16075,15069
 Friedenauer Hˆhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -665,7 +664,7 @@ Oberlandgarten: Fuﬂg‰nger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fuﬂg‰nger	q1 12052,6660 12059,6642 12092,6616 12155,6526
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
-Mauerweg: einige Fuﬂg‰nger	q1 12984,1011 12886,968 12823,939 12731,893 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: einige Fuﬂg‰nger	q1 12984,1011 12890,969 12823,939 12731,893 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Bayernring: enge Straﬂe	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -1662,8 +1661,9 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18506,5596
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18473,5645
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
-(Uferweg an der Spree): Radfahren verboten	q4 18667,5467 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18334,5900 18192,5931
-(Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
+(Uferweg an der Spree): Radfahren verboten	q4 18667,5467 18634,5484 18560,5539 18506,5596 18473,5645 18430,5719 18413,5799 18400,5841 18352,5884 18334,5900 18279,5925 18192,5931
+(Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18335,5854
+(Uferweg an der Spree - Kaisersteg): einige Fuﬂg‰nger	q1 18352,5884 18335,5854 18324,5847
 (Uferweg an der Spree): einige Fuﬂg‰nger	q1 18192,5931 18118,5953
 (Am Werkstor/Kupferkamp - Uferweg): einige Fuﬂg‰nger	q1 18075,5880 18118,5953
 Insel-R¸gen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
@@ -2511,7 +2511,7 @@ Azaleenstr.: Bodenschwelle	q1 23443,4524 23491,4534 23536,4543
 (entlang der Alten Erpe): einige Fuﬂg‰nger, schmal	q2 22855,5554 22872,5555 22932,5594 22983,5601 23216,5560 23270,5567 23321,5560 23379,5559
 (Berliner Str. - Kissingenstr.): Lieferverkehr, einige Fuﬂg‰nger	q2 10853,17802 10896,17846 10944,17863
 (Blitzenroder Ring - Packereigraben): einige Fuﬂg‰nger	q2 5808,22387 5796,22401 5796,22412
-Johannisthaler Park: Fuﬂg‰nger, Radfahren erlaubt	q2 17760,4867 17659,4849 17580,4761
+Johannisthaler Park: Fuﬂg‰nger, Gr¸nanlage	q2 17760,4867 17659,4849 17580,4761
 (M‰rkische Allee - Biesdorfer Promenade): Fuﬂg‰nger, schmal	q2 19743,13210 19757,13191 19830,13170
 (M‰rkische Allee - Biesdorfer Promenade): Fuﬂg‰nger	q1 19830,13170 19842,13144 19873,13129
 (Tr‰nkegraben - Volkradstr.): Fuﬂg‰nger, Radfahren erlaubt	q2 17298,10633 17329,10620 17363,10587 17422,10571

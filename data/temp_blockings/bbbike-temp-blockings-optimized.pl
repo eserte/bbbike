@@ -5700,7 +5700,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 # REMOVED (hier nicht, explizit als Sackgasse offen) --- Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 #: note: laut rbb Sperrungen in beiden Richtungen
 #: also_indoor: traffic (none)
-#: last_checked: 2025-11-29 (architektur-urbanistik)
+#: last_checked: 2026-02-25 (mapillary)
 #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 ',
@@ -5721,7 +5721,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?) --- #: note: Halteverbotsschilder mittlerweile bis 07.06.2024, nun bis 28.06.2024 --- #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv --- #: last_checked: 2024-06-22 vvv --- #: next_check: 2024-06-28 vvv --- Jahnstr.	q4::inwork; 12833,6127 13027,6168 --- Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127 --- : next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: note: Halteverbotsschilder bis 18.12.2026
-#: last_checked: 2026-01-14
+#: last_checked: 2026-02-28
 #: check_frequency: 120d
 #: next_check: 2026-12-18 (Halteverbotsschilder)
 Jahnstr.	q3::inwork; 13027,6168 13227,6209
@@ -5798,7 +5798,7 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
-#: last_checked: 2026-02-18 vvv
+#: last_checked: 2026-02-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -6020,15 +6020,17 @@ Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: source_id: viz2021:13.492668,52.636706,15.04.2025,12:00 (bis 12.09.2025 + weitere Bauphasen) (inaktiv)
 #: source_id: viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025) (bis 31.12.2027)
-#: also_indoor: traffic (H,ex-G,ex-B,W)
+#: also_indoor: traffic (H,re-G,W,T)
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
-#: next_check: 2026-02-28 (DB) vvv
+#: last_checked: 2026-02-28 (traffic) vvv
+# REMOVED --- #: next_check: 2026-02-28 (DB) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
 Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
 # REMOVED ---	2::inwork 16166,25767 16121,25818
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1744581600,
          'id' => 3551,
@@ -6320,7 +6322,7 @@ Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 106
 #: note: "... ersten Flowmarkt am 23. März 2025 ..."
 #: note: "... für den ersten Flowmarkt am 22. März 2026 ..."
 #: XXX Wann ist Saisonbeginn und -ende?
-#: next_check: 2026-03-01
+#: next_check: 2026-10-01
 	q4::temp:clock 12412,9610 12250,9691
 ',
          'from' => 1774047600,
@@ -7400,7 +7402,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
-#: last_checked: 2025-10-06 (mapillary)
+#: last_checked: 2026-02-25 (mapillary)
 #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
@@ -7493,28 +7495,7 @@ Wiesenstr.: Einbahnstraßenregelung	q3::inwork; 8048,15829 7948,15802
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.30279,52.51551,08.04.2024,07:00 (bis 21.06.2024) (am nächsten Tag schon inaktiv)
-#: source_id: viz2021:13.30305,52.51725,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024) (inaktiv)
-#: source_id: viz2021:13.30263,52.5165,18.06.2024,07:00 (falsche Ortsangabe, bis 31.07.2024) (inaktiv)
-#: source_id: viz2021:13.30279,52.51551,01.08.2024,07:00 (bis 30.09.2024) (inaktiv)
-#: source_id: viz2021:13.302319,52.517538,18.08.2025,07:00 (bis 28.02.2026)
-# REMOVED --- #: also_indoor: traffic (H,G,B[teilweise],T[teilweise])
-# REMOVED (hier nicht mehr) --- #: note: bei rbb wieder aktiv
-# REMOVED Gierkezeile, nördlicher Abschnitt	q4::inwork 3493,12228 3495,12185 3507,12076
-# REMOVED (alt) --- Gierkezeile, südlicher Abschnitt	q4::inwork 3507,12076 3514,11988 3528,11852
-# REMOVED (hier nicht mehr) --- Schustehrusstr.	q4::inwork 3528,12276 3623,12284
-#: also_indoor: traffic (G,T)
-Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
-#: source_id: viz2021:13.302719,52.516502,27.10.2025,07:00 (bis 28.11.2025) (inaktiv)
-# REMOVED --- #: next_check: 2025-11-28 (VIZ-Verkehrsmeldung) --- Behaimstr.	q4::inwork 3495,12185 3630,12201
-',
-         'from' => 1755468000,
-         'id' => 4038,
-         'text' => 'Gierkeplatz: Bauarbeiten zwischen Gierkezeile und Schustehrusstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 28.02.2026',
-         'type' => 'handicap',
-         'until' => 1772298000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7585,7 +7566,7 @@ Gierkeplatz (NW)	q4::inwork 3478,12306 3456,12296 3447,12269
 #: source_id[inactive]: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T,G)
-#: last_checked: 2025-12-24 (bahninfo-forum) vvv
+#: last_checked: 2026-02-28 vvv
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) vvv
 Winckelmannstr.: Havarie, Sperrung der Fahrbahn	q4::inwork 17503,4148 17507,4216
 Köpenicker Str.: Einmündungsbereich gesperrt	q3::inwork 17507,4216 17638,4224
@@ -8126,16 +8107,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026)
-	2::inwork -34435,12201 -34027,12437 -33697,13146
-',
-         'from' => 1752962400,
-         'id' => 4199,
-         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.07.2025 08:00 Uhr bis 28.02.2026 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1772294400
-       },
+       undef,
        {
          'data' => '# REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
 #: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026) (bis 27.02.2026) (inaktiv)
@@ -8678,7 +8650,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
-#: last_checked: 2026-02-14 (website check) vvv
+#: last_checked: 2026-02-28 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -8884,7 +8856,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-02-22 (traffic) vvv
+#: last_checked: 2026-02-28 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -9292,7 +9264,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-02-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9473,8 +9445,8 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
        {
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
-#: next_check_id: MARKGoRAFENDAMM-2022
-#: last_checked: 2026-02-27 vvv
+#: next_check_id: MARKGRAFENDAMM-2022
+#: last_checked: 2026-02-28 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -9724,7 +9696,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
 ',
          'from' => undef,
          'id' => 4482,
-         'text' => 'Uferstr.: Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten möglich (Stand Ende Dezember 2025: keine Bauarbeiten)',
+         'text' => 'Uferstr.: Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten möglich (Stand Februar 2026: keine Bauarbeiten)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -10015,14 +9987,14 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/frost-posse-in-babelsberg-busse-fahren-wochenlang-umleitung--trotz-verschobener-baustelle-15213887.html
 #: note: hier möglicherweise ein kürzerer Abschnitt?
-#: last_checked: 2026-02-03 (Tsp)
+#: last_checked: 2026-02-25 (mapillary)
 August-Bebel-Str.	q3::inwork -8444,-1691 -8469,-1541
 August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
 Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
 ',
          'from' => 1767567600,
          'id' => 4519,
-         'text' => 'Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Umbauarbeiten im Kreuzungsbereich, evtl. sind auch Radfahrer von den Sperrungen betroffen, 06.01.2026 bis 31.03.2027 (Stand Anfang Februar 2026: Bauarbeiten werden witterungsbedingt verschoben)',
+         'text' => 'Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Umbauarbeiten im Kreuzungsbereich, evtl. sind auch Radfahrer von den Sperrungen betroffen, 06.01.2026 bis 31.03.2027 (Stand Ende Februar 2026: Bauarbeiten werden witterungsbedingt verschoben)',
          'type' => 'handicap',
          'until' => 1806530399
        },
@@ -10070,11 +10042,12 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
        },
        {
          'data' => '#: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
-#: osm_watch: note 4953642 2
+#: osm_watch[closed]: note 4953642 2
 #: last_checked: 2026-02-23 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Hausburgstr.: gesperrter Abschnitt etwa 50m lang	q4::inwork 13742,13376 13706,13460
+#: osm_watch: way id="8428399" version="36"
 Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,13487 13706,13460
 #: next_check ^^^
 #: check_frequency ^^^
@@ -10102,7 +10075,7 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
        },
        {
          'data' => '#: next_check_id: HELGAHAHNEMANN-2023
-#: last_checked: 2026-01-17 vvv
+#: last_checked: 2026-02-28 vvv
 #: check_frequency: 45d vvv
 #: osm_watch: way id="1467787945" version="1"
 Uferweg	2::inwork 18192,5931 18118,5953
@@ -10113,19 +10086,20 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
 ',
          'from' => undef,
          'id' => 4525,
-         'text' => 'Hasselwerderpark/Uferweg - Am Werkstor/Kupferkamp: Wege können noch gesperrt sein (Stand Mitte Januar 2026: Durchfahrt möglich)',
+         'text' => 'Hasselwerderpark/Uferweg - Am Werkstor/Kupferkamp: Wege können noch gesperrt sein (Stand Ende Februar 2026: Durchfahrt möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 ',
-         'from' => 1773097200,
+         'from' => 1773529200,
          'id' => 4526,
-         'text' => 'Mögelin: Radwegsanierung, Sperrung des Radwegs von Mitte März bis Anfang Juli 2026',
+         'text' => 'Mögelin: Radwegsanierung, Sperrung des Radwegs vom 16.03.2026 bis Mitte Juli 2026',
          'type' => 'gesperrt',
-         'until' => 1783720799
+         'until' => 1784584799
        },
        {
          'data' => '#: source_id: LMS-BR:396580/72 viz2021:13.29513,52.47536,20.01.2026,07:00 (bis 31.03.2026) (bis 30.06.2026)
@@ -10320,6 +10294,16 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'text' => 'Bahnübergang Hangelsberg: Gleisbauarbeiten, Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, 28.02.2026 06:00 Uhr bis 09.03.2026 20:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1773082800
+       },
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-02-2026-b246_zw-storkow-und-wendisch-rietz_radwegerneuerung
+	2::inwork 51951,-21317 50704,-20473 50359,-20087 49368,-19096 49273,-18856 48989,-18635 48250,-18150
+',
+         'from' => 1772319600,
+         'id' => 4547,
+         'text' => 'Wendisch Rietz - Storkow: Radweg wird wegen Sanierungsarbeiten gesperrt, vom 2.3.2026 bis Mitte Mai 2026',
+         'type' => 'gesperrt',
+         'until' => 1778882399
        }
      
 );

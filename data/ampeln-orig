@@ -32,12 +32,12 @@ Michaelbrücke	F::inwork 11676,11839
 #: valid: -20260511
 Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
 # 
-#: source_id: LMS-BR:364250/72 viz2021:13.43553,52.42484, (bis 31.05.2026)
-#: note: Anforderungsampel für Radfahrer auf dem Radweg (der ab Bauhüttenweg benutzungspflichtig geworden ist) Richtung Süden
-#: last_checked: 2025-11-29
-#: next_check: 2026-05-31
-#: valid: -20260531
-Buckower Damm: Gegenverkehrsregelung	X::inwork::alternating 12712,2378
+# REMOVED (steht noch, ist aber ausgeschaltet) --- #: source_id: LMS-BR:364250/72 viz2021:13.43553,52.42484, (bis 31.05.2026)
+# REMOVED --- #: note: Anforderungsampel für Radfahrer auf dem Radweg (der ab Bauhüttenweg benutzungspflichtig geworden ist) Richtung Süden
+# REMOVED --- #: last_checked: 2026-02-28
+# REMOVED --- #: next_check: 2026-05-31
+# REMOVED --- #: valid: -20260531
+# REMOVED --- Buckower Damm: Gegenverkehrsregelung	X::inwork::alternating 12712,2378
 # 
 # REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251015 (bis Anfang Dez 2025)
 # REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3byu65n322r
@@ -90,11 +90,11 @@ Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12
 Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::inwork 8461,3410
 # 
 #: next_check_id: STUBENRAUCH-2025
-#: note: an dieser Stelle gibt es keine Überfahrtmöglichkeit auf der Fahrbahn, nur auf dem Gehweg (gesehen: 2025-07-18, 2025-09-10)
+#: note: an dieser Stelle gibt es keine Überfahrtmöglichkeit auf der Fahrbahn, nur auf dem Gehweg (gesehen: 2025-07-18, 2025-09-10, 2026-02-28)
 #: note: Anforderungsampel für Radfahrer in der Stubenrauchstr. Richtung NO
-#: off: 2024-09-10 Wed 11:25
+#: off: 2024-09-10 Wed 11:25, 2026-02-28 Sat 13:27
 #: on: 2025-10-06 Mon 14:55
-#: last_checked: 2025-10-31 (mapillary)
+#: last_checked: 2026-02-28
 #: check_frequency: 90d
 #: next_check: 2026-10-31
 Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage, kann ausgeschaltet sein	X::inwork 16461,2569
@@ -137,7 +137,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
-#: last_checked: 2026-02-22 (traffic)
+#: last_checked: 2026-02-28 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20251231
@@ -380,7 +380,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
-#: last_checked: 2026-01-29 (mapillary)
+#: last_checked: 2026-02-22 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	X::inwork 7873,12927
