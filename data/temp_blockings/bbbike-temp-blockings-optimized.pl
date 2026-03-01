@@ -2745,7 +2745,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3433,7 +3433,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Februar 8.00 - 17.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: März 8.00 - 18.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -4536,7 +4536,7 @@ Treskowallee Richtung Süden: Gehweg nicht für Radfahrer frei, Staugefahr	q3::inw
 #: osm_watch: way id="580507889" version="40"
 #: priority: #B
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Godesberger Str.; wird noch an der Bopparder Str. und Marksburgstr. wiederholt
-#: last_checked: 2026-02-19 (osm)
+#: last_checked: 2026-03-01
 Treskowallee Richtung Norden: Gehweg für Radfahrer frei, Verschenkungen an den Einmündungen, oder staugefährdete Fahrbahn benutzen	q3::inwork; 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
 # REMOVED (hier keine Bauarbeiten mehr) --- Treskowallee	q4::inwork; 18770,8898 18737,8686
 # REMOVED (temporäre Einbahnstraßenregelung aufgehoben, frühere noch nicht eingesetzt, aber es war sowieso Radfahrer frei) --- #: osm_watch: way id="4549817" version="29" --- #: last_checked: 2024-10-19 --- #: check_frequency: 14d --- Andernacher Str.	q3::inwork; 19000,8509 18949,8437
@@ -4983,9 +4983,8 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune können bereits w
 #: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-02-15
-#: check_frequency: 14d
-# REMOVED --- #: check_frequency: 30d
+#: last_checked: 2026-03-01
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-06
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
 	2::inwork 16353,10207 16148,10329
@@ -6912,7 +6911,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-03-01 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -7900,7 +7899,7 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13066 (Anfrage)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13178 (Antrag)
 #: osm_watch: way id="27457006" version="28"
-#: last_checked: 2025-10-16 (osm)
+#: last_checked: 2026-02-25 (mapillary)
 #: check_frequency: 180d
 	2::inwork 9017,17290 8982,17299
 ',
@@ -9375,7 +9374,27 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:383093/72 viz2021:13.28295,52.44204, (bis 27.11.2025) (bis 05.12.2025) (inaktiv)
+#: also_indoor: traffic (ex-T,ex-G)
+#: next_check_id: THIELALLEE-2025
+#: note: teilweise freigegeben, teilweise Gehweg für Radfahrer frei, teilweise ohne Freigabe
+# REMOVED --- #: last_checked: 2025-11-22 (osm) vvv --- #: check_frequency: 30d (traffic) vvv --- #: next_check: 2025-12-05 (VIZ-Verkehrsmeldung) vvv
+# REMOVED (alte Sperrung Richtung Norden) --- Thielallee: teilweise Gehweg für Radfahrer frei	q3::inwork; 2308,3862 2348,4026 2372,4127 2407,4280
+# REMOVED (alte Sperrung Richtung Norden) --- Thielallee: hier keine offizielle Freigabe	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260301
+Thielallee Richtung Süden	q4::inwork; 2596,4907 2573,4889 2531,4733 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
+Landoltweg: Sackgasse an der Thielallee	q4::inwork 2438,4800 2531,4733
+Faradayweg: Sackgasse an der Thielallee	q4::inwork 2388,4619 2461,4556
+Van\'t-Hoff-Str.: Sackgasse an der Thielallee	q4::inwork 2323,4486 2429,4385
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => 1772319600,
+         'id' => 4442,
+         'text' => 'Thielallee: Bauarbeiten, vermutlich Sperrung der Fahrbahn, geplant bis Ende April 2026',
+         'type' => 'handicap',
+         'until' => 1777586399
+       },
        {
          'data' => '#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026) (Sperrung am 22.09.2025; ab 13.10.2025 für Rückbauarbeiten gesperrt; neues Brückenbauwerk fertig: 2. Quartal 2026)
 #: osm_watch: way id="23926070" version="5"
@@ -9561,6 +9580,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
+#: source_id: bvg2024:265#HIM_FREETEXT_322378 (Umleitung des Busverkehrs via Südostallee - Kiefholzstr.)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
 #: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
 #: XXX laut stromnetz-Seite ab 2026-01-30 ist der Königsheideweg wieder komplett gesperrt (-> ampel entfernen, temp blocking erweitern), voraussichtlich bis 2025-04-09
@@ -9753,17 +9773,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'until' => 1788213600
        },
        undef,
-       {
-         'data' => '#: by: https://marzahn-hellersdorf.com/update-vollsperrung-nach-wasserrohrbruch-in-der-lily-braun-strasse/
-#: by: https://marzahn-hellersdorf.com/update-zum-rohrschaden-lily-braun-strasse-frost-verzoegert-abschlussarbeiten-fremdkoerper-in-leitung-entdeckt/
-	q4::inwork 23213,13003 23173,12769
-',
-         'from' => 1762210800,
-         'id' => 4493,
-         'text' => 'Lily-Braun-Str.: Leitungsarbeiten zwischen Ernst-Bloch-Str. und Gülzower Str., Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026, eventuell wird die Sperrung verlängert',
-         'type' => 'gesperrt',
-         'until' => 1772319599
-       },
+       undef,
        {
          'data' => '#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
@@ -10247,18 +10257,7 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'type' => 'gesperrt',
          'until' => 1787940000
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260226
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mft3534nyk2i
-#: source_id: LMS-BR:400218/72 viz2021:13.407209,52.518403,27.02.2026,07:00 (bis 01.03.2026)
-	q4::temp 10696,12601 10599,12526
-',
-         'from' => 1772085600,
-         'id' => 4543,
-         'text' => 'Rathausstr. vor dem Roten Rathaus: Filmarbeiten mit zeitweiliger Sperrung der Fahrbahn, 27.02.2026 bis 01.03.2026',
-         'type' => 'handicap',
-         'until' => 1772370000
-       },
+       undef,
        {
          'data' => '#: next_check_id: FORSTALLEEZEUTHEN-2026
 #: source_id: 266100065 (bis 21.08.2026)
@@ -10304,6 +10303,56 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'text' => 'Wendisch Rietz - Storkow: Radweg wird wegen Sanierungsarbeiten gesperrt, vom 2.3.2026 bis Mitte Mai 2026',
          'type' => 'gesperrt',
          'until' => 1778882399
+       },
+       {
+         'data' => '#: tempex: (YYYY0101-YYYY0513,YYYY0923-YYYY1231) T22:00-T06:00, (YYYY0513-YYYY0923) T23:00-T06:00 vvv
+## Drehkreuz (Ausgang möglich -> "Einbahnstraße")
+Ausgang Skalitzer Str.	1::night 12328,10442 12331,10409
+Ausgang Lübbener Str.	1::night 12608,10294 12580,10252
+Ausgang Oppelner Str.	1::night 12767,10216 12763,10207
+Ausgang Falckensteinstr.	1::night 12905,10143 12901,10134
+Ausgang Eisenbahnbrücke	1::night 13146,9903 13141,9911
+Ausgang Glogauer Str.	1::night 12814,9966 12833,9998
+## Tor ohne Drehkreuz (Ausgang nicht möglich -> "Komplettsperrung"
+Ausgang Cuvrystr.	2::night 13013,10068 13035,10076
+Ausgang Ratiborstr.	2::night 12932,9900 12960,9955
+Ausgang Liegnitzer Str.	2::night 12681,10047 12671,10042
+#: next_check_id: GOERLITZERPARK-2025
+#: XXX Prüfung notwendig vvv
+#: next_check: 2026-03-01 vvv
+Ausgang Görlitzer Ufer	2::night 13138,9897 13139,9880
+Ausgang Forster Str. (zum Rondell)	2::night 12556,10116 12507,10130
+Ausgang Forster Str.	2::night 12507,10130 12504,10172
+Ausgang Forster Str.	2::night 12464,10153 12504,10172
+#: next_check ^^^
+#: XXX ^^^
+#: tempex ^^^
+',
+         'from' => undef,
+         'id' => 4548,
+         'recurring' => 1,
+         'text' => 'Görlitzer Park: nachts (vom 23. September bis 13. Mai von 22 bis 6 Uhr) wird der Park geschlossen. Achtung: das Verlassen des Parks durch die Drehkreuze ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260301
+#: note: nach den Bauarbeiten wird hier ein modaler Filter sein
+	q4::inwork 14211,11229 14286,11186
+',
+         'from' => 1772390148,
+         'id' => 4549,
+         'text' => 'Revaler Str.: Bauarbeiten zwischen Haasestr. und Niemannstr., evtl. sind auch Radfahrer von der Sperrung betroffen, bis Mitte März 2026',
+         'type' => 'handicap',
+         'until' => 1773615599
+       },
+       {
+         'data' => '	q4::inwork 11725,16630 11766,16633 11825,16666
+',
+         'from' => 1772341200,
+         'id' => 4550,
+         'text' => 'Thulestraße: Leitungsarbeiten zwischen Talstr. und Hardangerstraße, evtl. sind auch Radfahrer von der Sperrung betroffen, bis ca. Mitte März 2026',
+         'type' => 'handicap',
+         'until' => 1773701999
        }
      
 );

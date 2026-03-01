@@ -208,7 +208,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-03-01 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4209,7 +4209,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-02-21
+#: last_checked: 2026-03-01
 #: check_frequency: 120d
 #: next_check: 2026-05-31 (entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4555,7 +4555,7 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nic
 #: next_check_id: PLANSTRASSE9-2023
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: osm_watch: way id="20420585" version="37"
-#: last_checked: 2025-12-06
+#: last_checked: 2026-03-01
 #: check_frequency: 90d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
@@ -4640,7 +4640,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-02-28
+#: last_checked: 2026-03-01
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4648,7 +4648,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-03-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5781,7 +5781,8 @@ Drängelgitter	BNP:5 4351,6307
 Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 # REMOVED (hier nicht (mehr?)) --- Markobrunner Str.	1 4384,7029 4462,7137 4593,7167
 Landauer Str.	1 4578,7358 4786,7327
-Eschenstr. (Friedenau)	1 5056,7505 5147,7505 5194,7540
+Offenbacher Str.	1s:q4 4785,7609 5045,7623
+Deidesheimer Str.	1s:q4 4978,7530 4785,7518
 (Zur Dillenburger Str.)	1 3784,6985 3910,6949 3944,6901 3981,6850
 Dillenburger Str.	1 3947,6814 3855,6918 3784,6985
 Drängelgitter	BNP:5 3596,7199
