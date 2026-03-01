@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -28,7 +28,7 @@ use constant LAST => CAT;
 
 use constant UNDEF_RECORD => [undef, [], undef];
 
-$VERSION = '1.9904';
+$VERSION = '1.9905';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -709,40 +709,49 @@ sub global_directives_as_string {
 
 ### AutoLoad Sub
 sub _write {
-    my($self, $filename, %args) = @_;
-    if (!defined $filename) {
-	$filename = $self->file;
-    }
-    if (!defined $filename) {
-	warn "No filename specified";
-	return 0;
-    }
-    my $mode = delete $args{mode};
-    if (open(my $COPY, "$mode $filename")) {
-	my $global_dirs = $self->get_global_directives;
-	binmode $COPY;
-	if ($global_dirs->{encoding}) {
-	    binmode $COPY, ":encoding(". $global_dirs->{encoding}->[0] . ")";
+    my($self, $filename_or_filehandle, %args) = @_;
+    my $ofh = defined $filename_or_filehandle ? eval { require Scalar::Util; Scalar::Util::openhandle($filename_or_filehandle) } : undef;
+    my $must_close;
+    if (!defined $ofh) {
+	my $filename = $filename_or_filehandle;
+	if (!defined $filename) {
+	    $filename = $self->file;
 	}
-	print $COPY $self->as_string(%args);
-	close $COPY;
-	1;
-    } else {
-	warn "Can't write/append to $filename: $!" if $VERBOSE;
-	0;
+	if (!defined $filename) {
+	    warn "No filename specified";
+	    return 0;
+	}
+	my $mode = delete $args{mode};
+	if (!open($ofh, "$mode $filename")) {
+	    warn "Can't write/append to $filename: $!" if $VERBOSE;
+	    return 0;
+	}
+	$must_close = 1;
     }
+
+    my $global_dirs = $self->get_global_directives;
+    if ($global_dirs->{encoding}) {
+	binmode $ofh, ":encoding(". $global_dirs->{encoding}->[0] . ")";
+    } else {
+	binmode $ofh;
+    }
+    print $ofh $self->as_string(%args);
+    if ($must_close) {
+	close $ofh;
+    }
+    1;
 }
 
 ### AutoLoad Sub
 sub write {
-    my($self, $filename, %args) = @_;
-    $self->_write($filename, mode => ">", %args);
+    my($self, $filename_or_filehandle, %args) = @_;
+    $self->_write($filename_or_filehandle, mode => ">", %args);
 }
 
 ### AutoLoad Sub
 sub append {
-    my($self, $filename, %args) = @_;
-    $self->_write($filename, mode => ">>", %args);
+    my($self, $filename_or_filehandle, %args) = @_;
+    $self->_write($filename_or_filehandle, mode => ">>", %args);
 }
 
 sub get {
