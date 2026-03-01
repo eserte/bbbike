@@ -729,11 +729,10 @@ sub _write {
 	$must_close = 1;
     }
 
+    binmode $ofh; # for windows
     my $global_dirs = $self->get_global_directives;
     if ($global_dirs->{encoding}) {
 	binmode $ofh, ":encoding(". $global_dirs->{encoding}->[0] . ")";
-    } else {
-	binmode $ofh;
     }
     print $ofh $self->as_string(%args);
     if ($must_close) {
