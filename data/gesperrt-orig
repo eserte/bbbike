@@ -3053,7 +3053,7 @@ tragen (Brücke Tegeler Hafen, Fahrradschienen existieren)	0:30 1227,20281
 tragen (Brücke Tegeler Hafen, 4+10 Stufen, Fahrradschienen existieren)	0:30 1166,20330
 # REMOVED (hier ist keine Treppe) --- tragen? (Fußgängerbrücke)	0:120 19762,-160
 # REMOVED (Rampe existiert) --- tragen (Stufen), mit MTB befahrbar	0:30 5725,11644
-tragen (23 Stufen)	0:25 13138,9897
+tragen (23 Stufen)	0:25 13131,9893
 unter der S-Bahn-Brücke tragen (6 Stufen)	0:10 3726,18982
 unter der S-Bahn-Brücke tragen (5 Stufen)	0:10 3733,18997
 tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30 14530,13269
@@ -4097,6 +4097,7 @@ südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,
 # 
 #: next_check_id: BKATREPTOW-2025
 #: by: https://entwicklungsstadt.de/treptow-ausbau-des-bka-standorts-puschkinallee-hat-begonnen/ (Arbeiten bis 2028)
+#: by: https://www.entwicklungsstadt.de/puschkinallee-ausbau-am-bka-standort-treptow-nimmt-form-an/
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
 #: last_checked: 2026-02-13
@@ -4116,7 +4117,7 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-02 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 vvv
 #: osm_watch: way id="752856111" version="15"
@@ -4388,11 +4389,11 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-schulgeb%C3%A4ude-in-modulbauweise-r%C3%B6merweg-39.1498/#post-25322
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1596137.php (Richtfest; Start zum Schuljahr 2026/2027)
 #: by: https://entwicklungsstadt.de/lichtenberg-richtfest-fuer-neue-holz-compartmentschule-am-roemerweg/
-#: osm_watch: way id="25796737" version="21"
+#: osm_watch: way id="25796737" version="22"
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
-#: last_checked: 2026-02-15
+#: last_checked: 2026-03-01 (osm)
 #: check_frequency: 150d
 #: next_check: 2026-06-30 (BA-Pressemitteilung)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -4405,7 +4406,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="22"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-02-24
+#: last_checked: 2026-03-02
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4723,7 +4724,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
 #: osm_watch: note 3644429 8
-#: last_checked: 2026-02-26
+#: last_checked: 2026-03-02
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -5056,7 +5057,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-01 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5164,6 +5165,7 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: by: https://www.tagesspiegel.de/berlin/marode-u-bahn-brucke-muss-ersetzt-werden-berliner-gleisdreieckpark-wird-jahrelang-zur-baustelle-14701874.html
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/planfeststellungen/bekanntmachungen/u1-dennewitzbruecke-1644776.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_09_0521_0564_online.pdf (Bekanntmachung zum Planfeststellungsverfahren ... Bauwerk XII)
+#: by: https://www.entwicklungsstadt.de/gleisdreieck-wird-grossbaustelle-hochhaeuser-und-neue-u-bahn-bruecken-geplant/
 #: XXX während der richtigen Bauarbeiten wird es weitere Einschränkungen geben (laut 08-02_Go_Kus_GP1058_Wege .. 08-04_Go_Kus_GP1060_Wege und Maßnahmenkarte):
 #: XXX - Parkzugang Kurfürstenstraße: Sperrung des Weges anscheinend bis zum östlichen Weg; am Eingang temporäre Treppe & temporärer Weg bis Höhe westlicher Weg
 #: XXX - westlicher Weg zwischen Höhe Kurfürstenstraße und Pohlstraße liegt in der Baustelleneinrichtungsfläche

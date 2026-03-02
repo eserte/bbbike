@@ -82,7 +82,7 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="27"
 #: osm_watch: way id="1072662717" version="31"
-#: last_checked: 2026-02-23
+#: last_checked: 2026-03-02
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -405,9 +405,9 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: way id="549316654" version="47"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2026-01-18 (architektur-urbanistik)
-#: check_frequency: 60d
-#: next_check: 2026-03-15 (MoPo)
+#: last_checked: 2026-03-02 (daf)
+#: check_frequency: 30d
+# REMOVED (wird wohl länger dauern?) --- #: next_check: 2026-03-15 (MoPo)
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -955,7 +955,8 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
 ### Charlottenburg ###
 # 
-#: next_check_id: RANKE-2023
+# REMOVED --- #: next_check_id: RANKE-2023
+#: next_check_id: RANKE-2026
 # REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
@@ -1333,7 +1334,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: by: https://www.morgenpost.de/bezirke/pankow/article411086279/wasserrohrbruch-mit-folgen-greifswalder-strasse-stadtauswaerts-voll-gesperrt.html
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-02-24 vvv
+#: last_checked: 2026-03-02 vvv
 #: check_frequency: 14d vvv
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
 Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619 11706,13635
@@ -1572,7 +1573,7 @@ Treptower Park: einige Fußgänger	q1+ 15297,8921 15213,8977 15190,9027 15154,9106
 Treptower Park: einige Fußgänger	q1+ 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
 Görlitzer Park: Fußgänger	q2 12671,10042 12681,10047 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
-Görlitzer Park: Fußgänger	q2 13141,9911 12983,10000 12866,10064 12802,10097
+Görlitzer Park: Fußgänger	q2 13141,9911 13132,9916 12983,10000 12866,10064 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12502,10244 12457,10309 12384,10368 12331,10409 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12866,10064 12901,10134 12905,10143
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12795,10147 12774,10178 12757,10197 12728,10196 12693,10183 12670,10160
@@ -2004,7 +2005,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="26"
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-01
 #: check_frequency: 180d
 #: next_check: 2027-09-30 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374

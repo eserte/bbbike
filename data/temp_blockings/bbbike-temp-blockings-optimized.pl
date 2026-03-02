@@ -3496,8 +3496,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
-#: also_indoor: traffic (ex-re-G,ex-H,ex-A,ex-re-W,T)
-#: last_checked: 2026-02-24 (traffic)
+#: also_indoor: traffic (re-ex-re-G,ex-H,ex-A,ex-re-W,T)
+#: last_checked: 2026-03-02 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
@@ -4466,7 +4466,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-02-09
+#: last_checked: 2026-03-02
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6242,13 +6242,12 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2026-02-02 (traffic) vvv
+#: last_checked: 2026-03-02 (az-lichtenrade) vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
-#: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung
-Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
+# REMOVED (laut az-lichtenrade mittlerweile in beide Richtungen befahrbar) --- #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung --- Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
 # REMOVED (laut Umleitungsplan nicht mehr) --- Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
@@ -7170,8 +7169,8 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
-#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), manchmal nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2026-02-13 (osm) vvv
+#: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), meistens nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15, 2026-03-02). Radfahrer benutzen hier die Fahrbahn.
+#: last_checked: 2026-03-02 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2027-03-31 (Tsp) vvv
@@ -7706,7 +7705,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-02-26 vvv
+#: last_checked: 2026-03-02 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -9227,17 +9226,18 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026?)
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
+#: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
-#: last_checked: 2026-02-11 (von der Danziger Str. gesehen)
+#: last_checked: 2026-03-02
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 # REMOVED --- #: next_check: 2026-02-28 (strabag)
-#: next_check: 2026-05-28 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-05-29 (VIZ-Verkehrsmeldung, Halteverbotsschilder)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 # REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
 ',
          'from' => 1755406800,
          'id' => 4413,
-         'text' => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bisEnde Mai 2026',
+         'text' => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bis Ende Mai 2026',
          'type' => 'handicap',
          'until' => 1780091999
        },
@@ -9263,7 +9263,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-03-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9290,11 +9290,11 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
        {
          'data' => '#: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,re-T)
-#: osm_watch: way id="722008943" version="13"
+#: osm_watch: way id="722008943" version="14"
 #: osm_watch: way id="722013098" version="14"
 #: osm_watch: way id="1350756367" version="3"
 #: osm_watch: note 5124809 1
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-03-01 (osm) vvv
 #: check_frequency: 45d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
@@ -9360,12 +9360,12 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-02-25 (Bauzaun weggeschoben)
+#: last_checked: 2026-03-02 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
          'id' => 4436,
-         'text' => 'Schulweg: Durchgang wegen Bauarbeiten offiziell versperrt (aber Bauzaun kann weggeschoben sein), Ende der Bauarbeiten unbekannt',
+         'text' => 'Schulweg: Durchgang wegen Bauarbeiten offiziell versperrt (Stand Anfang März 2026: Bauzaun üblicherweise weggeschoben), Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9376,6 +9376,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        undef,
        {
          'data' => '#: source_id: LMS-BR:383093/72 viz2021:13.28295,52.44204, (bis 27.11.2025) (bis 05.12.2025) (inaktiv)
+#: source_id: LMS-BR:400525/72 viz2021:13.28705,52.4512,02.03.2026,07:00 (bis 30.04.2026)
 #: also_indoor: traffic (ex-T,ex-G)
 #: next_check_id: THIELALLEE-2025
 #: note: teilweise freigegeben, teilweise Gehweg für Radfahrer frei, teilweise ohne Freigabe
@@ -9608,7 +9609,7 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-02-27
+#: last_checked: 2026-03-01
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9731,10 +9732,10 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
 #: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026) (vorfristig fälschlicherweise inaktiv)
 # REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
-#: last_checked: 2026-02-27 (traffic)
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung)
-#: next_check: 2026-02-28 (strabag)
+#: last_checked: 2026-03-02
+#: check_frequency: 90d
+#: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-02-28 (strabag)
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 ',
          'from' => 1761890400,
@@ -10305,27 +10306,21 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'until' => 1778882399
        },
        {
-         'data' => '#: tempex: (YYYY0101-YYYY0513,YYYY0923-YYYY1231) T22:00-T06:00, (YYYY0513-YYYY0923) T23:00-T06:00 vvv
+         'data' => '#: tempex: (YYYY0101-YYYY0513,YYYY0923-YYYY1231) T22:00-T06:00, (YYYY0514-YYYY0922) T23:00-T06:00 vvv
 ## Drehkreuz (Ausgang möglich -> "Einbahnstraße")
 Ausgang Skalitzer Str.	1::night 12328,10442 12331,10409
 Ausgang Lübbener Str.	1::night 12608,10294 12580,10252
 Ausgang Oppelner Str.	1::night 12767,10216 12763,10207
 Ausgang Falckensteinstr.	1::night 12905,10143 12901,10134
-Ausgang Eisenbahnbrücke	1::night 13146,9903 13141,9911
+Ausgang Eisenbahnbrücke	1::night 13141,9911 13132,9916
 Ausgang Glogauer Str.	1::night 12814,9966 12833,9998
 ## Tor ohne Drehkreuz (Ausgang nicht möglich -> "Komplettsperrung"
 Ausgang Cuvrystr.	2::night 13013,10068 13035,10076
 Ausgang Ratiborstr.	2::night 12932,9900 12960,9955
 Ausgang Liegnitzer Str.	2::night 12681,10047 12671,10042
-#: next_check_id: GOERLITZERPARK-2025
-#: XXX Prüfung notwendig vvv
-#: next_check: 2026-03-01 vvv
-Ausgang Görlitzer Ufer	2::night 13138,9897 13139,9880
-Ausgang Forster Str. (zum Rondell)	2::night 12556,10116 12507,10130
-Ausgang Forster Str.	2::night 12507,10130 12504,10172
-Ausgang Forster Str.	2::night 12464,10153 12504,10172
-#: next_check ^^^
-#: XXX ^^^
+Ausgang Forster Str.	1::night 12507,10130 12504,10172
+Ausgang Forster Str.	1::night 12464,10153 12504,10172
+Ausgang Forster Str. (zum Rondell)	2::night 12564,10121 12592,10112
 #: tempex ^^^
 ',
          'from' => undef,
@@ -10336,23 +10331,38 @@ Ausgang Forster Str.	2::night 12464,10153 12504,10172
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260301
-#: note: nach den Bauarbeiten wird hier ein modaler Filter sein
-	q4::inwork 14211,11229 14286,11186
+#: source_id: LMS-BR:400526/72 viz2021:13.46099,52.5058,02.03.2026,07:00 (bis 13.03.2026)
+#: note: nach den Bauarbeiten wird hier vermutlich ein modaler Filter sein
+#: note: inkonsistente Ausschilderung: Richtung Osten Durchfahrt verboten, Radfahrer frei, aber es geht nur über den Bürgersteig weiter, keine Bordsteinabsenkungen; Richtung Westen keine eindeutige Freigabe
+#: last_checked: 2026-03-02
+#: next_check: 2026-03-13 (VIZ-Verkehrsmeldung)
+	q3::inwork 14211,11229 14286,11186
 ',
          'from' => 1772390148,
          'id' => 4549,
-         'text' => 'Revaler Str.: Bauarbeiten zwischen Haasestr. und Niemannstr., evtl. sind auch Radfahrer von der Sperrung betroffen, bis Mitte März 2026',
+         'text' => 'Revaler Str.: Bauarbeiten zwischen Haasestr. und Niemannstr., Sperrung der Fahrbahn, bis Mitte März 2026',
          'type' => 'handicap',
          'until' => 1773615599
        },
        {
-         'data' => '	q4::inwork 11725,16630 11766,16633 11825,16666
+         'data' => '#: source_id: LMS-BR:400534/72 viz2021:13.42499,52.55511,02.03.2026,07:00 (bis 13.03.2026)
+	q4::inwork 11725,16630 11766,16633 11825,16666
 ',
          'from' => 1772341200,
          'id' => 4550,
          'text' => 'Thulestraße: Leitungsarbeiten zwischen Talstr. und Hardangerstraße, evtl. sind auch Radfahrer von der Sperrung betroffen, bis ca. Mitte März 2026',
          'type' => 'handicap',
-         'until' => 1773701999
+         'until' => 1773442799
+       },
+       {
+         'data' => '#: source_id: LMS-BR:400524/72 viz2021:13.333157,52.486212,02.03.2026,07:00 (bis 31.08.2026)
+	q4::inwork 5635,9018 5641,8831
+',
+         'from' => 1772344800,
+         'id' => 4551,
+         'text' => 'Prinzregentenstr.: Bauarbeiten zwischen Badensche Str. und Berliner Str., evtl. sind auch Radfahrer betroffen, vom 02.03.2026 07:00 bis 31.08.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1788188400
        }
      
 );

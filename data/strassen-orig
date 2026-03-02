@@ -607,7 +607,8 @@ Ludwig-Richter-Str.	N 15002,8651 14940,8583
 (Am Britzer Verbindungskanal)	NN 15358,6022 15166,6019
 (Am Britzer Verbindungskanal - Chris-Gueffroy-Allee)	NN 15166,6019 15156,6034 15144,6054
 (Am Britzer Verbindungskanal)	NN 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
-(Eisenbahnbrücke)	NN 13282,9828 13207,9868 13146,9903 13141,9911 13138,9897 13139,9880
+(Eisenbahnbrücke)	NN 13282,9828 13207,9868 13146,9903 13141,9911
+(Eisenbahnbrücke - Görlitzer Ufer)	NN 13141,9911 13131,9893 13146,9887
 (zur Eisenbahnbrücke)	NN 13207,9868 13259,9870 13302,9894
 (Bahndamm)	NN 13282,9828 13476,9720 13940,9376 13970,9349
 (Bahndamm - Elsenstr.)	NN 13940,9376 13953,9372 13923,9405
@@ -1490,7 +1491,7 @@ Wanda-Kallenbach-Str.	N 13214,11064 13150,11101
 #: note: nicht ausgeschildert:
 (Rummelsburger Platz)	N 12766,11223 12664,11310
 Vor dem Schlesischen Tor	H 13449,10262 13487,10227 13535,10184
-Görlitzer Ufer	NN 13086,9825 13139,9880 13162,9904 13220,9980
+Görlitzer Ufer	NN 13086,9825 13146,9887 13162,9904 13220,9980
 Görlitzer Ufer	N 13220,9980 13275,10055
 Görlitzer Ufer	NN 13275,10055 13283,10069
 Heckmannufer	N 13283,10069 13310,10081 13449,10262
@@ -11535,7 +11536,7 @@ Sorauer Str.	N 12822,10487 12682,10258
 (Görlitzer Park, Einfahrt Liegnitzer Str.)	NN 12690,10062 12681,10047 12671,10042
 (Görlitzer Park, zwischen Forster und Lübbener Str.)	NN 12507,10130 12504,10172 12509,10189 12543,10223 12580,10252 12608,10294
 (Görlitzer Park, zwischen Forster und Lübbener Str.)	NN 12464,10153 12504,10172
-(Görlitzer Park)	NN 13141,9911 12983,10000 12866,10064 12802,10097 12670,10160 12543,10223 12502,10244 12457,10309 12384,10368 12331,10409 12328,10442
+(Görlitzer Park)	NN 13141,9911 13132,9916 12983,10000 12866,10064 12802,10097 12670,10160 12543,10223 12502,10244 12457,10309 12384,10368 12331,10409 12328,10442
 (Görlitzer Park, zwischen Glogauer und Falckensteinstr.)	NN 12814,9966 12833,9998 12866,10064 12901,10134 12905,10143
 (Görlitzer Park, zwischen Cuvrystr. und Ratiborstr.)	NN 13035,10076 13013,10068 13013,10047 12983,10000 12960,9955 12932,9900
 (Görlitzer Park, Rondell)	NN 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196 12757,10197 12774,10178 12795,10147 12802,10097
@@ -12701,7 +12702,7 @@ Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20783,-528 20781,-580 20829,-773 20814,-935
 #: XXX wird diese Straße einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verlängert?
 # REMOVED --- #: osm_watch: way id="27564863" version="23"
-#: last_checked: 2025-11-05
+#: last_checked: 2026-02-28 (mapillary)
 #: check_frequency: 360d
 (Hufenweg Verlängerung)	N 20814,-935 20813,-941 20779,-1195
 # REMOVED (hier nun die Trasse der Rita-Maiburg-Str.) --- (Hufenweg Verlängerung)	N 20779,-1195 20775,-1224 20799,-1272 20807,-1305
@@ -19961,7 +19962,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-02-26 vvv
+#: last_checked: 2026-03-02 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

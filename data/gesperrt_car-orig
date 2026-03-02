@@ -116,7 +116,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2026-02-27
+#: last_checked: 2026-03-01
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -520,7 +520,7 @@ Stubenrauchstr.: Bahntrasse	3nocross 16135,2135 16182,2200 16242,2279
 #: note: Luftbild:
 Buschkrugallee: Mittelstreifen	3nocross 13294,6386 13307,6359 13316,6320
 Gieselerstr.	1 4609,9027 4619,9200
-Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13139,9880 13162,9904 13220,9980
+Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13146,9887 13162,9904 13220,9980
 #: note: Luftbild:
 Rudower Chaussee: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
 #: by: Hans Lindner
@@ -2053,7 +2053,7 @@ Freia-Eisner-Str.	1 12848,11093 12926,11224
 Boxhagener Str. -> Wühlischstr.: nur geradeaus erlaubt	3 14752,11369 14771,11345 14759,11339
 # 
 # REMOVED (weitgehend fertig) --- #: next_check_id: GOERLITZERUFER-2023 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10495 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/tcMrrF8nTN3IT7viP6pb5EBZHU3GgAia57XFsY1a/yrxEcIUU/49-Anlagen/01/DS0258_VzK_FussgaengerzoneGoerlitzerUfer.pdf --- #: by: https://berliner-abendblatt.de/2022/06/30/goerlitzer-ufer-soll-zur-fussgaenger-zone-werden/ --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_45_3033_3096_online.pdf (Teileinziehung beabsichtigt) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1272030.php --- #: by: https://berliner-abendblatt.de/2022/12/11/wrangelkiez-digitale-infoveranstaltung-am-12-dezember/ --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/bezirksamt-entschleunigt-wrangelkiez_a367223 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_28_2981_3084_online.pdf (Einziehung von Straßenland) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1374338.php (Bauarbeiten KW42/2023 bis Ende 2023) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1317595.php --- #: by[removed]: https://www.infravelo.de/projekt/goertlitzer-ufer/ (mittlerweile ein Redirect) --- #: by: https://www.infravelo.de/projekt/goerlitzer-ufer/ (4. Quartal 2023) (mittlerweile 4. Quartal 2023 - 2. Quartal 2024) --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/am-goerlitzer-ufer-wird-gebaut_a403467 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1431136.php --- #: osm_watch: way id="148176599" version="17" --- #: XXX Eintrag kann vollständig entfernt werden, wenn alle Markierungen/Schilder/... fertig sind --- #: last_checked: 2024-03-26 --- #: check_frequency: 14d --- #: next_check: 2024-06-30
-Görlitzer Ufer: hier soll ein Fußgänger/Radfahrerbereich eingerichtet werden	2 13220,9980 13162,9904 13139,9880 13086,9825
+Görlitzer Ufer: hier soll ein Fußgänger/Radfahrerbereich eingerichtet werden	2 13220,9980 13162,9904 13146,9887 13086,9825
 # 
 #: historical_note: früher Einbahnstraße für alle
 #: by: osm

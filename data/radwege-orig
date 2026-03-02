@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -557,7 +557,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-02-24 vvv
+#: last_checked: 2026-03-02 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1050,7 +1050,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2026-01-19
+#: last_checked: 2026-03-02
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -2832,11 +2832,11 @@ die letzten Meter sind benutzungspflichtig	RW3; 11154,14985 11045,15012
 für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
 	RW1; 16368,11912 16317,11920 16214,11935
 #: note: Benutzungspflicht unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
-	RW1; 13086,9825 13139,9880 13162,9904 13220,9980
+	RW1; 13086,9825 13146,9887 13162,9904 13220,9980
 	RW2; 9753,9252 9801,9241
 	RW1;RW9 9801,9241 9818,9239 9880,9233 9973,9232
 #
-# REMOVED (weitgehend entfernt) --- #: next_check_id: GOERLITZERUFER-2023 --- #: XXX wie sieht es nach dem Umbau aus? --- #: last_checked: 2024-03-14 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-30 vvv ---	RW1; 13220,9980 13162,9904 --- #: historical_note: früher Radweg auf dem Bürgersteig --- #: historical_note: zwischenzeitlich provisorische geschützte Radspur, RW3; --- #: osm_watch: way id="984857536" version="6" ---	RW1; 13162,9904 13139,9880 13086,9825 13026,9854 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED (weitgehend entfernt) --- #: next_check_id: GOERLITZERUFER-2023 --- #: XXX wie sieht es nach dem Umbau aus? --- #: last_checked: 2024-03-14 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2024-06-30 vvv ---	RW1; 13220,9980 13162,9904 --- #: historical_note: früher Radweg auf dem Bürgersteig --- #: historical_note: zwischenzeitlich provisorische geschützte Radspur, RW3; --- #: osm_watch: way id="984857536" version="6" ---	RW1; 13162,9904 13146,9887 13086,9825 13026,9854 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 Radspur links von der Fahrspur	RW3; 9801,9241 9753,9252
 #: note: die ersten Meter asphaltierter Bürgersteigradweg
@@ -8392,7 +8392,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-02-23
+#: last_checked: 2026-03-02
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
