@@ -32192,7 +32192,8 @@ EOF
        until => undef, # $isodate2epoch->("2026-02-06 18:00:00"), # undef, # 1689428101, # undef, # 1592053810, # undef, # XXX
 #      text  => 'Zobtener Str.: Bauarbeiten, 120m lange Engstelle, Straße kann auch komplett gesperrt sein',
 #      text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 06.02.2026, evtl. werden die Bauarbeiten verlängert',
-       text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Sperrung unbekannt',
+#      text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Sperrung unbekannt',
+       text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis Ende April 2026, evtl. werden die Bauarbeiten verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: offizielle Umleitung über Fischerstr.
@@ -32200,13 +32201,13 @@ EOF
 #: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
-#: osm_watch: note 4813149 2
+#: osm_watch: note 4813149 3
 #: osm_watch: way id="198581621" version="21"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
 #: last_checked: 2026-03-01
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-02-06
+#: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
 	2::inwork 16353,10207 16148,10329
 # REMOVED (Anlieger frei) ---	2::inwork 16148,10329 15758,10578
@@ -42081,7 +42082,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-03
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -46741,7 +46742,7 @@ EOF
        text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.07.2025 08:00 Uhr bis 28.02.2026 17:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv)
+#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 EOF
      },
@@ -48386,8 +48387,8 @@ EOF
 # REMOVED --- #: next_check ^^^
 # REMOVED (abgeschlossen) --- #: note: wo genau? --- Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 # 
-#: last_checked: 2026-01-17 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2026-02-28 (MoPo) vvv
+#: check_frequency: 60d vvv
 Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: check_frequency ^^^
@@ -49388,7 +49389,7 @@ EOF
 #: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
-#: source_id: viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026)
+#: source_id: LMS-BR:373761/72 viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026) (inaktiv)
 #: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
 #: last_checked: 2025-11-10 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-03-02 (VIZ-Verkehrsmeldung)
@@ -49676,7 +49677,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="2"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-02-26 vvv
+#: last_checked: 2026-03-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -50494,6 +50495,7 @@ EOF
 # REMOVED (alte Sperrung Richtung Norden) --- Thielallee: teilweise Gehweg für Radfahrer frei	q3::inwork; 2308,3862 2348,4026 2372,4127 2407,4280
 # REMOVED (alte Sperrung Richtung Norden) --- Thielallee: hier keine offizielle Freigabe	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260301
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mg2ij3imd62m
 Thielallee Richtung Süden	q4::inwork; 2596,4907 2573,4889 2531,4733 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
 Landoltweg: Sackgasse an der Thielallee	q4::inwork 2438,4800 2531,4733
 Faradayweg: Sackgasse an der Thielallee	q4::inwork 2388,4619 2461,4556
@@ -50530,7 +50532,7 @@ EOF
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-02-11
+#: last_checked: 2026-03-03
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
@@ -51306,7 +51308,7 @@ EOF
 #: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-03 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
@@ -51554,7 +51556,7 @@ EOF
        text  => 'Linienstr.: Wasserrohrbruch, Sperrung der Fahrbahn zwischen Kleine Rosenthaler Str. und Rosenthaler Str., Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LMS-BR:392756/72 viz2021:13.40303,52.52899, (kein Endedatum)
+#: source_id: LMS-BR:392756/72 viz2021:13.40303,52.52899, (kein Endedatum) (inaktiv)
 #: also_indoor: traffic (ex-G,no-T,H,re-W)
 # REMOVED --- #: last_checked: 2025-12-28 --- #: check_frequency: 7d (traffic)
 	q4::inwork 10301,13701 10220,13694
@@ -51996,6 +51998,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260301
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mg2ivkj3xz2k
 #: source_id: LMS-BR:400526/72 viz2021:13.46099,52.5058,02.03.2026,07:00 (bis 13.03.2026)
 #: note: nach den Bauarbeiten wird hier vermutlich ein modaler Filter sein
 #: note: inkonsistente Ausschilderung: Richtung Osten Durchfahrt verboten, Radfahrer frei, aber es geht nur über den Bürgersteig weiter, keine Bordsteinabsenkungen; Richtung Westen keine eindeutige Freigabe
@@ -52009,6 +52012,7 @@ EOF
        text  => 'Thulestraße: Leitungsarbeiten zwischen Talstr. und Hardangerstraße, evtl. sind auch Radfahrer von der Sperrung betroffen, bis ca. Mitte März 2026',
        type  => 'handicap',
        data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mg2ififjv32s
 #: source_id: LMS-BR:400534/72 viz2021:13.42499,52.55511,02.03.2026,07:00 (bis 13.03.2026)
 	q4::inwork 11725,16630 11766,16633 11825,16666
 EOF

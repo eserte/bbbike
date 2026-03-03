@@ -557,7 +557,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-03-02 vvv
+#: last_checked: 2026-03-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1438,10 +1438,29 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17
 	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7775,14062 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325
 Fahrradschleuse	RW3; 7612,14325 7566,14404
 	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7739,14119 7775,14062 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
-	RW3;RW3 7733,14570 7711,14548 7609,14447 7566,14404
-Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7733,14570
-Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
+# 
+#: note: Sellerstr., Richtung Südwesten
+Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
+#: next_check_id: NORDHAFENBRUECKE-2026
+#: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
+#: last_checked: 2026-03-03 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2028-03-03 vvv
+#: XXX früher RW1;, nun Benutzungspflicht
+Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW2; 7829,14665 7733,14570
+#: XXX früher RW3;, nun muss man auf die andere Straßenseite wechseln
+	RW8; 7733,14570 7711,14548 7609,14447 7566,14404
+#: note: Sellerstr., Richtung Nordosten
+#: XXX früher RW3;, nun gemeinsamer Rad- und Gehweg im Zweirichtungsverkehr
+	RW2; 7566,14404 7609,14447 7711,14548 7733,14570
+#: XXX früher Gehweg für Radfahrer frei	RW1;
+	RW2; 7733,14570 7829,14665
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+Gehweg für Radfahrer frei	RW1; 7829,14665 7960,14794
 Verbundsteinpflaster	RW1; 7960,14794 8057,14876
+# 
 	RW3; 7368,14573 7401,14526 7487,14472 7532,14446 7566,14404
 	RW3; 7566,14404 7532,14446 7487,14472 7401,14526
 Fahrradschleuse	RW3; 7401,14526 7368,14573
@@ -1687,7 +1706,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
-#: last_checked: 2026-02-27
+#: last_checked: 2026-03-03
 #: check_frequency: 120d
 #: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
@@ -3118,7 +3137,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-02-17 vvv
+#: last_checked: 2026-03-03 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -8341,7 +8360,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-03-01 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-31 (Baustellenschild) vvv
 #: note: Stubenrauchstr. Richtung Nordosten

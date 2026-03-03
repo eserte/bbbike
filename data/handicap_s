@@ -777,6 +777,7 @@ Müggelpark: Fußgänger	q2 25695,4714 25658,4619 25656,4578 25772,4543
 Görresstr.: enge Straße	q1 5073,7660 5194,7540 5273,7460 5318,7424
 Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2 7937,13126 8011,13128 8106,13130
+Friedrich-List-Ufer: Taxis	q1 8106,13130 8110,13042
 Ella-Trebe-Str.: querende Fußgänger, Taxis	q2 7937,13126 7938,13150 7938,13302
 	q4::igndisp 11754,10516 11734,10563 11690,10543 11708,10497 11754,10516
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576 7710,12585
@@ -1548,8 +1549,8 @@ Cajamarcaplatz: viele Fußgänger	q4 17698,5727 17766,5659
 (Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17696,5665 17634,5607
 (zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17728,5756 17698,5727 17667,5697 17696,5665
 (zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17765,5469 17634,5607
-(Ella-Trebe-Str. - Invalidenstr.): querende Fußgänger	q2 7938,13302 7968,13335 8003,13374
-Europaplatz: einige Fußgänger	q1 7901,13324 7938,13302
+(Ella-Trebe-Str. - Invalidenstr.): querende Fußgänger, Taxis	q3 7938,13302 7968,13335 8003,13374
+Europaplatz: einige Fußgänger, Taxis	q3 7901,13324 7938,13302
 Wuhlestr. [Wohngebiet]: Fußgänger	q1 21580,13583 21430,13602
 (oberer Wuhlewanderweg): einige Fußgänger	q1 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22757,14010 22788,14032 22820,14063 22855,14114 22872,14175 22872,14224 22860,14440 22868,14477 22873,14498 22861,14573
 (oberer Wuhlewanderweg): Fußgänger, Kinderspielplätze	q1 22861,14573 22851,14603 22756,14787 22702,14880 22690,14915 22643,14977 22599,15030 22588,15056 22577,15109
@@ -2085,7 +2086,7 @@ Alice-Salomon-Platz: Fußgänger, Lieferverkehr	q1 23993,14797 24061,14801
 Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 (entlang des Kreuzgrabens): Fußgänger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10172,20142
 (entlang des Kreuzgrabens): Fußgänger, eng	q4 10172,20142 10157,20128 10095,20108
-Europaplatz: sehr viele Fußgänger	q4 7938,13302 8015,13303 8102,13304
+Europaplatz: sehr viele Fußgänger	q4 7938,13302 7989,13302 8102,13304
 Europaplatz [Nord]: einige Fußgänger	q2 8057,13400 8010,13450 7963,13489
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
@@ -3711,6 +3712,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
 Köpenicker Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp::igndisp; 21137,11346 21137,11294
+An der Ostbahn: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12645,11673 12900,11515
 Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -3606,11532 -3657,11631 -3692,11681
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7697,14187 7781,14238 7802,14250
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7757,14318 7735,14305 7652,14257

@@ -149,7 +149,7 @@ Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,118
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-02-21 vvv
+#: last_checked: 2026-03-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -486,7 +486,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-03 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="46"
@@ -859,13 +859,13 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 ### Moabit ###
 # 
-#: source_id: LMS-BR:397184/72 viz2021:13.35084,52.52032, (kein Endedatum) (bis 27.03.2026)
+#: source_id: LMS-BR:397184/72 viz2021:13.35084,52.52032, (kein Endedatum) (bis 27.03.2026) (bis 04.03.2026)
 #: also_indoor: traffic (no-G,T,no-W)
 #: note: ca. 20m sind über die gesamte Breite gesperrt; zwar gibt es ein Sackgassenschild, frei für Fußgänger und Radfahrer, aber ich habe keine offizielle Wegführung für den Radverkehr gesehen
 #: last_checked: 2026-02-27
 # REMOVED --- #: check_frequency: 14d (traffic)
-#: next_check: 2026-03-27 (VIZ-Verkehrsmeldung)
-#: valid: -20260327
+#: next_check: 2026-03-04 (VIZ-Verkehrsmeldung)
+#: valid: -20260304
 Lüneburger Str.: Wasserrohrbruch, einige Meter der Fahrbahn sind gesperrt	q3::inwork 6876,12610 6813,12617
 # 
 #: next_check_id: PERLEBERGER-2024
@@ -897,7 +897,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: note 3913793 10
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="3"
-#: last_checked: 2026-02-27
+#: last_checked: 2026-03-03
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (caimmo website)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
@@ -1140,7 +1140,7 @@ Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
 #: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026) (inaktiv)
 #: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026)
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-03-01 (mapillary) vvv
 #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 # REMOVED (nicht mehr) --- Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
@@ -1325,7 +1325,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
 #: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
@@ -1335,9 +1335,11 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-03-02 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-04-20 (VIZ-Verkehrsmeldung) vvv
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
 Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619 11706,13635
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -2626,6 +2628,7 @@ Görresstr.: enge Straße	q1 5073,7660 5194,7540 5273,7460 5318,7424
 Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 #: historical_note: früher Einbahnstraßenregelung auch für Radfahrer gültig
 Washingtonplatz: querende Fußgänger, Taxis	q2 7937,13126 8011,13128 8106,13130
+Friedrich-List-Ufer: Taxis	q1- 8106,13130 8110,13042
 Ella-Trebe-Str.: querende Fußgänger, Taxis	q2 7937,13126 7938,13150 7938,13302
 #: XXX_prog: die Verlangsamung eigentlich nur durch das "Vorfahrt gewähren" verursacht, hier explizit gemacht, damit bei "Ampeloptimierung" keine unnötigen Schlenker gemacht werden. Leider reicht q3 hier nicht aus. Durch gerichtete Handicaps ersetzen, sobald implementiert.
 #: note: Rio-Reiser-Platz
@@ -3703,8 +3706,8 @@ Cajamarcaplatz: viele Fußgänger	q4 17698,5727 17766,5659
 (zum Fußgängertunnel S-Bhf. Schöneweide): Fußgänger, schieben	q4 17765,5469 17634,5607
 # REMOVED (wurde in strassen-orig entfernt) --- #: XXX_prog BS an der Tram-Haltestelle, ansonsten trotzdem q3 --- (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): Fußgänger, Bordstein	q3 17634,5607 17675,5521
 # REMOVED (Bordstein wurde abgesenkt) --- #: XXX_prog BS, sonst entfernen --- Wasserweg: Bordstein	q2 15678,8911 15698,8903 15873,8884
-(Ella-Trebe-Str. - Invalidenstr.): querende Fußgänger	q2 7938,13302 7968,13335 8003,13374
-Europaplatz: einige Fußgänger	q1 7901,13324 7938,13302
+(Ella-Trebe-Str. - Invalidenstr.): querende Fußgänger, Taxis	q3 7938,13302 7968,13335 8003,13374
+Europaplatz: einige Fußgänger, Taxis	q3 7901,13324 7938,13302
 Wuhlestr. [Wohngebiet]: Fußgänger	q1 21580,13583 21430,13602
 (oberer Wuhlewanderweg): einige Fußgänger	q1+ 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22757,14010 22788,14032 22820,14063 22855,14114 22872,14175 22872,14224 22860,14440 22868,14477 22873,14498 22861,14573
 (oberer Wuhlewanderweg): Fußgänger, Kinderspielplätze	q1- 22861,14573 22851,14603 22756,14787 22702,14880 22690,14915 22643,14977 22599,15030 22588,15056 22577,15109
@@ -4467,7 +4470,7 @@ Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 (entlang des Kreuzgrabens): Fußgänger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10172,20142
 (entlang des Kreuzgrabens): Fußgänger, eng	q4 10172,20142 10157,20128 10095,20108
 #: note ^^^
-Europaplatz: sehr viele Fußgänger	q4 7938,13302 8015,13303 8102,13304
+Europaplatz: sehr viele Fußgänger	q4 7938,13302 7989,13302 8102,13304
 Europaplatz [Nord]: einige Fußgänger	q2 8057,13400 8010,13450 7963,13489
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1- 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
@@ -4756,6 +4759,7 @@ Uber-Platz: Fußgängerzone	q4 12990,11006 13067,11145
 Michelangelostr. - Gürtelstr.: Bauarbeiten, Engstelle	q3::inwork 13905,15306 13809,15370 13716,15437
 # 
 #: note: früher (bis ca. 2020) für Radfahrer explizit frei, mittlerweile hängt hier ein explizites Radfahren-verboten-Schild
+#: note: mittlerweile wurde die "Industriekultur Berlin Radroute 1" explizit hier entlang geführt
 An der Kieler Brücke: Fußgängerzone, Radfahren verboten	q4 7877,14504 7804,14445
 # REMOVED (zurzeit keine größeren Einschränkungen feststellbar) --- (Straße E, Innovationspark Wuhlheide): Gewerbebetriebe	q2 21233,7246 21181,7199 21243,7135
 (Straße G, Innovationspark Wuhlheide): Gewerbebetriebe	q1 21627,6942 21547,7024
