@@ -1036,7 +1036,6 @@ Buswendestelle Gensweg	2s 12673,1140 12609,1088 12588,1103
 Straﬂentunnel	3nocross::ignrte 7901,13324 7895,13415 7907,13532
 Minna-Cauer-Str. -> Lehrter Str.: Straﬂentunnel	3::igndisp 7901,13324 7895,13415 7873,13448
 Lehrter Str. -> Minna-Cauer-Str.: Straﬂentunnel	3::igndisp 7873,13448 7895,13415 7907,13532
-Zur Alten Bˆrse - Merler Weg: gesperrtes Tor/Bauzaun	2 18736,13080 18749,13158
 Straﬂe am Heizhaus: Betriebsgel‰nde	2 20150,8962 20220,8976
 Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
 Puschkinstr. [Nebenstraﬂe]	1s 14152,9746 14092,9773
@@ -2347,9 +2346,9 @@ Mittelstreifen	3nocross::ignrte 12908,11058 12848,11093 12793,11132 12736,11186
 M¸hlenstr. -> Freia-Eisner-Str.: Mittelstreifen	3::igndisp 12793,11132 12848,11093 12926,11224
 Freia-Eisner-Str. -> M¸hlenstr.: Mittelstreifen	3::igndisp 12926,11224 12848,11093 12908,11058
 Edith-Kiss-Str. -> M¸hlenstr.: Mittelstreifen	3::igndisp 12866,11256 12793,11132 12848,11093
-Straﬂenbahntrasse	3nocross::ignrte 21180,15846 21220,15741 21239,15633
+Straﬂenbahntrasse	3nocross::ignrte 21180,15846 21220,15741 21227,15701 21239,15633
 Raoul-Wallenberg-Str. -> Schˆnagelstr.: Straﬂenbahntrasse	3::igndisp 21180,15846 21220,15741 21602,15908
-Schˆnagelstr. -> Raoul-Wallenberg-Str.: Straﬂenbahntrasse	3::igndisp 21602,15908 21220,15741 21239,15633
+Schˆnagelstr. -> Raoul-Wallenberg-Str.: Straﬂenbahntrasse	3::igndisp 21602,15908 21220,15741 21227,15701
 Straﬂenbahntrasse	3nocross::ignrte 26871,-2500 26698,-2322 26286,-1901
 Adlergestell -> Langer See: Straﬂenbahntrasse	3::igndisp 26286,-1901 26698,-2322 26846,-2176
 Langer See -> Adlergestell: Straﬂenbahntrasse	3::igndisp 26846,-2176 26698,-2322 26871,-2500
@@ -3561,6 +3560,8 @@ Dr‰ngelgitter	BNP:3:-96:trailer=10 9165,10530
 Schwingtor	BNP:5:-27:trailer=10 11543,20272
 Dr‰ngelgitter	BNP:3:-248:trailer=10 113,7
 Dr‰ngelgitter	BNP:3:-68:trailer=10 17498,9714
+Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s::inwork 8870,13926 8831,13973 8732,14098
+Zinnowitzer Str.: Einbahnstraﬂenregelung wegen des Umleitungsverkehrs	1s::inwork 9070,14058 9011,14019 8870,13926
 An der Ostbahn: Bauarbeiten, Einbahnstraﬂenregelung	1s:inwork 12645,11673 12900,11515
 Am Egelpfuhlgraben: Holzbohlensteg zum Bullengraben gesperrt	2::inwork -5790,13458 -5785,13606
 Alt-Pichelsdorf: Einbahnstraﬂenregelung w‰hrend der Bauarbeiten	1s -3606,11532 -3657,11631 -3692,11681

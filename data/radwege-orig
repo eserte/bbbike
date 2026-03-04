@@ -1012,7 +1012,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-02-23
+#: last_checked: 2026-03-04
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1384,6 +1384,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.entwicklungsstadt.de/stau-nach-plan-wie-der-senat-das-verkehrschaos-an-der-elsenbruecke-erklaert/
 #: by: https://www.tagesspiegel.de/berlin/verkehrschaos-an-der-berliner-a100-elsenbrucke-wird-fruhestens-im-februar-fertig-15192309.html
 #: by: https://www.tagesspiegel.de/berlin/nachste-verzogerung-angesichts-der-wetterlage-berliner-elsenbrucke-wird-fruhestens-im-marz-fertig-15261576.html
+#: by: https://www.entwicklungsstadt.de/neuer-zeitplan-fuer-die-elsenbruecke-erste-entlastung-fuer-verkehr-an-der-a100-geplant/
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1415,7 +1416,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: last_checked: 2026-02-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
-#: next_check: 2026-03-31 (Tsp) vvv
+#: next_check: 2026-03-31 (Tsp, entwicklungsstadt) vvv
 # REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
@@ -5290,16 +5291,16 @@ Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 #: next_check_id: HANSA-2025
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
 #: last_checked: 2025-11-08
-#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 15875,16816 15929,16870 15986,16922
 #: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;
 #: last_checked: 2025-11-08
-#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
 	RW3; 16139,17017 16296,17114 16318,17128 16352,17150
 #: last_checked: 2025-11-08
-#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
 provisorischer gemeinsamer Geh- und Radweg	RW2; 16352,17150 16460,17214
 neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 	RW2; 16578,17285 16837,17440
@@ -5372,8 +5373,8 @@ Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-20351.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll_fahrrat_26-02-2025.pdf
 #: source_id: viz2021:13.55154,52.55437,22.09.2025,18:00 (Nachtsperrung, bis 23.09.2025) (inaktiv)
-#: last_checked: 2025-09-29 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2026-03-04 vvv
+#: check_frequency: 150d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: XXX früher: Verbundsteinpflaster	RW1;
 #: osm_watch: way id="870445662" version="19"
@@ -7504,7 +7505,8 @@ getrennter Rad- und Gehweg	RW2;RW2 24853,-3105 24872,-3095 24901,-3076
 	RW6;RW6 12203,-2259 12019,-2683
 	RW2;RW2 21239,15633 21241,15573
 	RW2; 21242,15529 21241,15573
-Radweg endet bereits nach 70 Metern, noch vor der Kreuzung	RW2; 21239,15633 21220,15741
+	RW2; 21239,15633 21227,15701
+	RW2; 21220,15741 21227,15701 21239,15633
 	RW1; 21951,15918 21980,15857
 	RW6;RW6 24191,14866 24115,14828 24061,14801
 	RW6;RW6 22692,13836 22671,13839 22668,13849 22652,13895 22658,13898 22670,13902
@@ -7518,6 +7520,7 @@ Verbundsteinpflaster	RW1; 21170,16942 21390,16903
 	RW2; 20947,15948 20832,15981
 gemeinsamer Geh- und Radweg	RW2; 20832,15981 20712,16011 20636,16046
 	RW2; 20712,16011 20832,15981
+gemeinsamer Geh- und Radweg	RW2; 20832,15981 20947,15948
 #: note: alter DDR-Radweg, an Kreuzungen entfernt sich der Radweg von der Hauptstraße vvv
 	RW1;RW1 20120,16297 20212,16252 20372,16173 20394,16162 20479,16124 20636,16046
 	RW1; 20636,16046 20712,16011

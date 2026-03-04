@@ -6022,18 +6022,18 @@ Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
 #: also_indoor: traffic (H,re-G,W,T)
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
-#: last_checked: 2026-02-28 (traffic) vvv
+#: last_checked: 2026-03-02 vvv
 # REMOVED --- #: next_check: 2026-02-28 (DB) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
-Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16166,25767 16121,25818
-Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767
+Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16220,25716 16166,25767 16121,25818
+Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767 16220,25716
 # REMOVED ---	2::inwork 16166,25767 16121,25818
 # REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => 1744581600,
          'id' => 3551,
-         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis Ende Februar 2026, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6854,13 +6854,13 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
          'data' => '#: next_check_id: WILTBERG-2022
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-300523/ (alte Sperrung)
 #: by: https://nitter.cz/VIZ_Berlin/status/1663489643629752320#m
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20250330 (bis 31. August 2025)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20250330 (bis 31. August 2025) (mittlerweile bis Anfang 2028)
 #: source_id: viz2021:13.498511,52.640138,30.05.2023,11:30 (bis 02.06.2023) (inaktiv)
 #	2::inwork 16222,25829 16532,26174 17101,26701
 #: note: evtl. mit der Sperrung in der Wiltbergstr. zusammenhängend
 #: add_fragezeichen: Ist der Röntgentaler Weg wieder offen?
-#: last_checked: 2025-09-27 (DB website) vvv
-#: next_check: 2028-03-15 (DB website) vvv
+#: last_checked: 2026-03-02 vvv
+#: next_check: 2028-03-15 (DB website: Anfang 2028) vvv
 	2::inwork 16532,26174 16222,25829 16166,25767
 # REMOVED --- #: note: Länge der Einbahnstraßenregelung geschätzte 100-200m; mittlerweile laut VIZ Sperrung der Fahrbahn, etwa 130m --- #: source_id: viz2021:13.49931,52.640533,15.04.2025,07:00 (bis 06.10.2025) (inaktiv) --- #: source_id: adac:1795606390 (bis voraussichtlich 06.10.2025) (neue ID -> inaktiv) --- #: source_id: viz2021:13.499947,52.640906, (bis 06.10.2025) --- #: next_check: 2025-10-06 (VIZ-Verkehrsmeldung) ---	q3::inwork; 17101,26701 16532,26174
 # REMOVED (nicht mehr?)	q3::inwork 17101,26701 16532,26174
@@ -8039,13 +8039,13 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        {
          'data' => '#: next_check_id: ZURALTENBOERSE-2025
 #: osm_watch: node id="12522972446" version="1"
-#: last_checked: 2025-06-09
+#: last_checked: 2026-03-04
 #: check_frequency: 180d
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 ',
          'from' => undef,
          'id' => 4164,
-         'text' => 'Zur Alten Börse - Merler Weg: Verbindung kann möglicherweise mit Bauzäunen versperrt sein (Stand Juni 2025: nicht passierbar)',
+         'text' => 'Zur Alten Börse - Merler Weg: Tor kann verschlossen sein (Stand März 2026: Tor kann geöffnet werden)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8530,21 +8530,21 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
 #: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
-#: note: Baustellebereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt
+#: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m)
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
 #: osm_watch: way id="1089784248" version="5"
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
 #: osm_watch: way id="1374232475" version="5"
 #: osm_watch[closed]: note 4693093 1
-#: also_indoor: traffic (ex-H,G)
-#: last_checked: 2025-11-24 (traffic)
-# REMOVED --- #: check_frequency: 90d
+#: also_indoor: traffic (ex-H,G,no-T)
+#: last_checked: 2026-03-04
+#: check_frequency: 90d
 #: next_check: 2026-04-02 (VIZ-Verkehrsmeldung)
 Merler Weg	q4::inwork 18852,13269 19180,13219
 ',
          'from' => undef,
          'id' => 4291,
-         'text' => 'Merler Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt, nur ein sehr enger Bürgersteig vorhanden, Ende der Bauarbeiten unbekannt',
+         'text' => 'Merler Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt, nur ein sehr enger Bürgersteig vorhanden sowie ein notwendiger Umweg durch das Wohngebiet, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8644,6 +8644,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: also_indoor: traffic (G,B,T)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410745786/panne-auf-baustelle-in-koepenick-mit-massiven-folgen-fuer-anwohner.html
+#: by: https://www.aktives-adlershof.de/aktuelles?date=20260303 (ab 9.3.2026 Bauarbeiten Nipkowstraße/Radickestraße (evtl. mit Sperrung?))
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
@@ -8829,7 +8830,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        undef,
        {
          'data' => '#: also_indoor: traffic (none)
-#: last_checked: 2026-01-07
+#: last_checked: 2026-03-04
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 	q4::inwork 16915,11634 16957,11726
@@ -8984,7 +8985,22 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
+#: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
+#: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
+#: source_id: LMS-BR:373761/72 viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026) (inaktiv) (bis 01.06.2026)
+#: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
+#: last_checked: 2025-11-10 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-06-01 (VIZ-Verkehrsmeldung)
+	q3::inwork 12627,19317 12457,19248
+',
+         'from' => 1750748520,
+         'id' => 4371,
+         'text' => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis Anfang Juni 2026',
+         'type' => 'handicap',
+         'until' => 1780351199
+       },
        undef,
        undef,
        undef,
@@ -9697,7 +9713,7 @@ Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
          'data' => '#: next_check_id: UFER-2025
 #: last_checked: 2026-02-11
 #: check_frequency: 30d
-#: next_check: 2026-03-31 (infravelo)
+#: next_check: 2026-06-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8420,16365 8346,16283 8245,16064
 	q4::inwork 8245,16064 8194,15960 8140,15859
 ',
@@ -9733,7 +9749,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 4953648 7
 #: also_indoor: traffic (none)
-#: last_checked: 2026-02-26
+#: last_checked: 2026-03-02
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -10074,9 +10090,9 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
          'data' => '#: next_check_id: HELGAHAHNEMANN-2023
 #: last_checked: 2026-02-28 vvv
 #: check_frequency: 45d vvv
-#: osm_watch: way id="1467787945" version="1"
+#: osm_watch: way id="1467787945" version="2"
 Uferweg	2::inwork 18192,5931 18118,5953
-#: osm_watch: way id="958828368" version="2"
+#: osm_watch: way id="958828368" version="3"
 Verbindungsweg	2::inwork 18118,5953 18075,5880
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -10315,25 +10331,10 @@ Ausgang Forster Str. (zum Rondell)	2::night 12564,10121 12592,10112
          'text' => 'Görlitzer Park: nachts (vom 23. September bis 13. Mai von 22 bis 6 Uhr) wird der Park geschlossen. Achtung: das Verlassen des Parks durch die Drehkreuze ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260301
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mg2ivkj3xz2k
-#: source_id: LMS-BR:400526/72 viz2021:13.46099,52.5058,02.03.2026,07:00 (bis 13.03.2026)
-#: note: nach den Bauarbeiten wird hier vermutlich ein modaler Filter sein
-#: note: inkonsistente Ausschilderung: Richtung Osten Durchfahrt verboten, Radfahrer frei, aber es geht nur über den Bürgersteig weiter, keine Bordsteinabsenkungen; Richtung Westen keine eindeutige Freigabe
-#: last_checked: 2026-03-02
-#: next_check: 2026-03-13 (VIZ-Verkehrsmeldung)
-	q3::inwork 14211,11229 14286,11186
-',
-         'from' => 1772390148,
-         'id' => 4549,
-         'text' => 'Revaler Str.: Bauarbeiten zwischen Haasestr. und Niemannstr., Sperrung der Fahrbahn, bis Mitte März 2026',
-         'type' => 'handicap',
-         'until' => 1773615599
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mg2ififjv32s
-#: source_id: LMS-BR:400534/72 viz2021:13.42499,52.55511,02.03.2026,07:00 (bis 13.03.2026)
+#: source_id: LMS-BR:400534/72 viz2021:13.42499,52.55511,02.03.2026,07:00 viz2021:13.426376,52.555395,02.03.2026,07:00 (bis 13.03.2026)
 	q4::inwork 11725,16630 11766,16633 11825,16666
 ',
          'from' => 1772341200,

@@ -859,14 +859,14 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 ### Moabit ###
 # 
-#: source_id: LMS-BR:397184/72 viz2021:13.35084,52.52032, (kein Endedatum) (bis 27.03.2026) (bis 04.03.2026)
-#: also_indoor: traffic (no-G,T,no-W)
-#: note: ca. 20m sind über die gesamte Breite gesperrt; zwar gibt es ein Sackgassenschild, frei für Fußgänger und Radfahrer, aber ich habe keine offizielle Wegführung für den Radverkehr gesehen
-#: last_checked: 2026-02-27
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: next_check: 2026-03-04 (VIZ-Verkehrsmeldung)
-#: valid: -20260304
-Lüneburger Str.: Wasserrohrbruch, einige Meter der Fahrbahn sind gesperrt	q3::inwork 6876,12610 6813,12617
+# REMOVED --- #: source_id: LMS-BR:397184/72 viz2021:13.35084,52.52032, (kein Endedatum) (bis 27.03.2026) (bis 04.03.2026) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (no-G,T,no-W)
+# REMOVED --- #: note: ca. 20m sind über die gesamte Breite gesperrt; zwar gibt es ein Sackgassenschild, frei für Fußgänger und Radfahrer, aber ich habe keine offizielle Wegführung für den Radverkehr gesehen
+# REMOVED --- #: last_checked: 2026-02-27
+# REMOVED --- # REMOVED --- #: check_frequency: 14d (traffic)
+# REMOVED --- #: next_check: 2026-03-04 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20260304
+# REMOVED --- Lüneburger Str.: Wasserrohrbruch, einige Meter der Fahrbahn sind gesperrt	q3::inwork 6876,12610 6813,12617
 # 
 #: next_check_id: PERLEBERGER-2024
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
@@ -1175,7 +1175,7 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-04
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -5459,6 +5459,7 @@ Straße zum Müggelturm: vier Bodenschwellen	q1; 25711,1481 25725,1561 25701,1587 
 # 
 (Lea-Grundig-Str./Jan-Petersen-Str. - Radweg an der Straßenbahn): einige Fußgänger	q1 21031,16217 21000,16238
 # 
+(Zur Alten Börse - Merler Weg): schmal, möglicherweise geschlossenes Tor	q3 18736,13080 18749,13158
 (Zur Alten Börse - Merler Weg): Betriebsgeländestraßen	q1- 18749,13158 18766,13257
 # 
 (Am Bahndamm - Elsa-Neumann-Str.): Bordsteine	q3 168,15220 149,15237
@@ -5673,6 +5674,8 @@ Kohlweißlingstr.: drei Bodenschwellen, Lücke meist frei	q0-; 21598,11190 21637,1
 # 
 #: note: fast über die gesamte Breite der Fahrbahn, können nur über den Abflusskanal umfahren werden
 Jean-Monnet-Str.: zwei Bodenschwellen	q2+ 7995,13537 8048,13578
+# 
+(Einbecker Str. - Frankfurter Allee): schmale Fahrbahn, kein Bürgersteig	q2 17020,11748 17034,11797 17221,11777 17251,11789
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

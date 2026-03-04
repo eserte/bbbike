@@ -62,6 +62,7 @@ U-Bahn Dahlem	1 2027,4792 2095,4805 2166,4858 2212,4891 2280,4941 2454,5067 2499
 Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5847,2588 -5737,2746 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7064,584
 Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
+# 
 #: next_check_id: ELLABAROWSKY-2024
 #: XXX Einbahnstraßenregelung wird aufgehoben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5334
@@ -100,6 +101,8 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://entwicklungsstadt.de/hochhaus-statt-tankstelle-oeffentlichkeitsbeteiligung-fuer-bueroprojekt-am-sachsendamm-gestartet/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_21_1285_1376_online.pdf (Straßenlandwidmung, kleine Fläche)
 #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10166
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10167 (Vorlage zur Beschlussfassung: 7-100 VE, nicht verkehrsrelevant)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="25"
 #: osm_watch: way id="1430487470" version="1"
@@ -107,6 +110,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
+# 
 Alt-Mariendorf	1 9732,3883 9831,3876 9953,3806
 Friedenstr./Reißeckstr.	1 9953,3806 9751,3769 9584,3713 9455,3671 9391,3651 9222,3602 9128,3580 8964,3539
 Friedenstr.	1 9462,3642 9391,3651
@@ -208,7 +212,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2026-03-01 vvv
+#: last_checked: 2026-03-04 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -735,6 +739,7 @@ Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1627066.php (neu seit ca. Dez 2025, bestätigt bei osm)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13980 (Einbahnstraße wird für Radfahrer nicht freigegeben)
+#: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14092 (Anfrage)
 Büdnerring	1 7861,18333 7997,18524
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1627066.php (neu seit ca. Dez 2025, bestätigt in einer osm-Notiz)
 Raschdorffstr.	1 8096,18456 7954,18251
@@ -1742,17 +1747,17 @@ Buswendestelle Gensweg	2s:q4 12673,1140 12609,1088 12588,1103
 # 
 Minna-Cauer-Str.: Straßentunnel	3nocross 7901,13324 7895,13415 7907,13532
 # 
-#: next_check_id: ZURALTENBOERSE-2025
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
-#: by: https://pascalgrothe.de/stillstand-am-magerviehhof-wie-gehts-weiter-an-der-alten-boerse/ (Umwandlung zur öffentlichen Verkehrsfläche geplant)
-#: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08); 2025-01-22: wieder ein verschlossenes Tor; siehe auch gesperrt-orig-Eintrag
-#: osm_watch: way id="946443907" version="4"
-#: osm_watch: node id="12522972446" version="1"
-#: note: siehe auch temp_blockings-Eintrag
-#: last_checked: 2025-06-09
-#: check_frequency: 180d
-Zur Alten Börse - Merler Weg: gesperrtes Tor/Bauzaun	2 18736,13080 18749,13158
+# REMOVED (Tor kann mittlerweile geöffnet werden) --- #: next_check_id: ZURALTENBOERSE-2025
+# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
+# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
+# REMOVED --- #: by: https://pascalgrothe.de/stillstand-am-magerviehhof-wie-gehts-weiter-an-der-alten-boerse/ (Umwandlung zur öffentlichen Verkehrsfläche geplant)
+# REMOVED --- #: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08); 2025-01-22: wieder ein verschlossenes Tor; siehe auch gesperrt-orig-Eintrag
+# REMOVED --- #: osm_watch: way id="946443907" version="4"
+# REMOVED --- #: osm_watch: node id="12522972446" version="1"
+# REMOVED --- #: note: siehe auch temp_blockings-Eintrag
+# REMOVED --- #: last_checked: 2026-03-04
+# REMOVED --- #: check_frequency: 180d
+# REMOVED --- Zur Alten Börse - Merler Weg: gesperrtes Tor/Bauzaun	2 18736,13080 18749,13158
 # 
 Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
 # 
@@ -2613,7 +2618,7 @@ Mühlenstr.: Mittelstreifen	3nocross 12908,11058 12848,11093 12793,11132 12736,11
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 6692,11365 6851,11346 6880,11110
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 7103,11247 6851,11346 6880,11110
 # REMOVED (jetzt mit 3nocross) --- Klingelhöferstr.: Mittelstreifen	3 6880,11110 6851,11346 6692,11365
-Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21180,15846 21220,15741 21239,15633
+Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21180,15846 21220,15741 21227,15701 21239,15633
 Adlergestell: Straßenbahntrasse	3nocross 26871,-2500 26698,-2322 26286,-1901
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21623,15357 21647,15496
 #: note: Luftbild:
@@ -4057,6 +4062,18 @@ Drängelgitter	BNP:3::trailer=10 17498,9714
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: CHAUSSEE-2026
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgajtghhk22z (bis Mitte 2028)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic7uvofh3wrzpb7wyvjerbuse4cytqqbdur2lbewv4g3yj6exeobi@jpeg
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigbzjnvlhpronxht3kltljejlvulbku2mwya5iobwkufrdryx7ud4@jpeg
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260304
+#: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert eine Furt an der Baustelle vorbei
+#: next_check: 2026-03-05 vvv
+# REMOVED --- #: next_check: 2028-07-01 vvv
+Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
+Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9070,14058 9011,14019 8870,13926
+#: next_check ^^^
+# 
 #: XXX genauer anschauen!
 #: also_indoor: traffic (no-T,no-G)
 #: last_checked: 2026-03-03
@@ -4204,8 +4221,8 @@ neben der Minna-Todenhagen-Brücke: Sperrung der Rampe und Treppe	2::inwork 16997
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026) (inaktiv)
 #: osm_watch: way id="1087144824" version="9"
-#: last_checked: 2025-09-29
-#: check_frequency: 120d
+#: last_checked: 2026-03-04
+#: check_frequency: 150d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
 # 
@@ -4440,6 +4457,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: by: https://entwicklungsstadt.de/friedrichshain-kreuzberg-fuenf-stadtentwicklungsprojekte-im-ueberblick/
 #: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
 #: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-so-soll-der-neubau-in-friedrichshain-aussehen/
+#: by: https://www.entwicklungsstadt.de/baustellen-update-am-ostbahnhof-edge-friedrichspark-nimmt-gestalt-an/ (im Laufe des Jahres 2026 bezugsfertig)
 #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
@@ -4655,7 +4673,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-03-01 vvv
+#: last_checked: 2026-03-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
