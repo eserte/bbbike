@@ -89,7 +89,9 @@ sub plot_visible_area {
 	    main::restack();
 	}
     } else {
-	main::status_message("No OSM tiles available in visible area");
+	my $msg = "No OSM tiles available in visible area $x0 $y0 $x1 $y1";
+	main::status_message($msg);
+	warn $msg;
     }
 }
 
@@ -99,7 +101,9 @@ sub mirror_and_plot_visible_area {
     if (@osm_files) {
 	mirror_and_plot_osm_files(\@osm_files);
     } else {
-	main::status_message("No OSM tiles available in visible area");
+	my $msg = "No OSM tiles available in visible area $x0 $y0 $x1 $y1";
+	main::status_message($msg);
+	warn $msg;
     }
 }
 
