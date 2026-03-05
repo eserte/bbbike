@@ -2227,7 +2227,7 @@ Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
          'from' => undef,
          'id' => 1817,
          'recurring' => 1,
-         'text' => 'Crellestr: Mi und Sa 10.00-15.00 Wochenmarkt; außerdem jeden 2. Sonntag von März bis Oktober 10.00-17.00 Flohmarkt; Behinderungen möglich',
+         'text' => 'Lucie-Leydicke-Platz: Mi und Sa 10.00-15.00 Wochenmarkt; außerdem jeden 2. Sonntag von März bis Oktober 10.00-17.00 Flohmarkt; Behinderungen möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6231,6 +6231,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu2kux6y6n27
 #: by: https://fahrinfo.vbb.de/him-uploads/1753173224127_Kartenausschnitt_Bahnhofstr.png
 #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/ (für Radfahrer keine Einbahnstraßenregelung in der Goltzstr.) (Feb 2026: Stillstand)
+#: by: https://az-lichtenrade.de/wp-content/uploads/2026/03/26-03-04_Umleitungsplan-ab-0326.png
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
@@ -7971,7 +7972,7 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
 #: osm_watch: way id="1119255054" version="12"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-02-26  (osm)
+#: last_checked: 2026-03-05
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -7985,7 +7986,8 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
        {
          'data' => '#: next_check_id: FINOWKANAL-2025
 #: by: https://www.finowkanal.info/de/bautagebuch?date=20250117 (Bauarbeiten ... Schleusenpaket 1 ... voraussichtlich bis April 2026)
-#: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
+# REMOVED (nun 404) --- #: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
+#: by: https://www.finowkanal.info/service/aktuelles/
 #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
@@ -8413,11 +8415,11 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22144,4660 22138,4642 22111,4562
 # REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22093,4499
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-#: last_checked: 2025-12-06
+#: last_checked: 2026-03-05 (traffic)
 #: check_frequency: 90d
 #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
-#: also_indoor: traffic (no-G,T,H,A,no-W)
+#: also_indoor: traffic (G,T,H,A,W)
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
 # REMOVED (hier Sackgasse) --- Kietzer Str. - Kirchstr.	q4::inwork 22246,4711 22240,4768 22196,4847
 ',
@@ -9014,7 +9016,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-02-20 (traffic)
+#: last_checked: 2026-03-05 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -9031,7 +9033,8 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        undef,
        {
          'data' => '#: next_check_id: FINOWKANAL-2025
-#: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
+# REMOVED (nun 404) --- #: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
+#: by: https://www.finowkanal.info/service/aktuelles/
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
 #: osm_watch: way id="996266699" version="2"
@@ -9095,7 +9098,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        undef,
        {
          'data' => '# REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
-#: also_indoor: traffic (re-T,G,no-H,ex-W)
+#: also_indoor: traffic (ex-T,G,no-H,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
@@ -9583,7 +9586,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
-#: source_id: bvg2024:265#HIM_FREETEXT_322378 (Umleitung des Busverkehrs via Südostallee - Kiefholzstr.)
+#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_322378 (Umleitung des Busverkehrs via Südostallee - Kiefholzstr.)
 #: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
 #: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
 #: XXX laut stromnetz-Seite ab 2026-01-30 ist der Königsheideweg wieder komplett gesperrt (-> ampel entfernen, temp blocking erweitern), voraussichtlich bis 2025-04-09
@@ -10272,21 +10275,7 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'type' => 'handicap',
          'until' => 1787335200
        },
-       {
-         'data' => '#: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-02-27 vvv
-#: check_frequency: 14d vvv
-	3::inwork 13747,12642 13695,12643 13681,12624
-	3::inwork 13761,12690 13695,12643 13681,12624
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4545,
-         'text' => 'Bersarinplatz: Radfahrer sollen einen Umweg über Mühsamstr. fahren',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: 266700064 (bis 09.03.2026)
 	2::inwork 45787,-225 45836,-8 45968,619
@@ -10352,6 +10341,16 @@ Ausgang Forster Str. (zum Rondell)	2::night 12564,10121 12592,10112
          'text' => 'Prinzregentenstr.: Bauarbeiten zwischen Badensche Str. und Berliner Str., evtl. sind auch Radfahrer betroffen, vom 02.03.2026 07:00 bis 31.08.2026 17:00',
          'type' => 'handicap',
          'until' => 1788188400
+       },
+       {
+         'data' => '#: source_id: 267310009 (bis 18.12.2026)
+	q4::inwork 34174,101912 34328,101975 34380,102078 34474,102170 34528,102362 34607,102396
+',
+         'from' => 1772946000,
+         'id' => 4552,
+         'text' => 'Güstow (Am Lindenberg): Bauarbeiten, Sperrung, vom 09.03.2026 06:00 Uhr bis 18.12.2026 20:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1797620400
        }
      
 );

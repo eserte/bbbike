@@ -56,7 +56,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-02-26 (osm) vvv
+#: last_checked: 2026-03-05 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="12"
@@ -70,6 +70,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: osm_watch: way id="1108260165" version="9"
 #: note: etwa 30m lang
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
+Petersburger Str.: gemeinsamer Rad- und Gehweg	q2+::inwork; 13434,13234 13383,13349 13375,13367 13330,13468
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -1332,11 +1333,13 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
 #: by: https://www.morgenpost.de/bezirke/pankow/article411096985/ende-ungewiss-frust-und-chaos-nach-rohrbruch-in-prenzlauer-berg.html
 #: by: https://www.morgenpost.de/bezirke/pankow/article411086279/wasserrohrbruch-mit-folgen-greifswalder-strasse-stadtauswaerts-voll-gesperrt.html
+#: by: https://www.morgenpost.de/bezirke/pankow/article411357085/greifswalder-strasse-weitere-vollsperrung-ab-montag.html
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-03-02 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-04-20 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-03-08 (mögliche Erweiterung der Sperrung?) vvv
+# REMOVED --- #: next_check: 2026-04-20 (VIZ-Verkehrsmeldung) vvv
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
 Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619 11706,13635
 #: next_check ^^^

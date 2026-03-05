@@ -4067,7 +4067,9 @@ Drängelgitter	BNP:3::trailer=10 17498,9714
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic7uvofh3wrzpb7wyvjerbuse4cytqqbdur2lbewv4g3yj6exeobi@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigbzjnvlhpronxht3kltljejlvulbku2mwya5iobwkufrdryx7ud4@jpeg
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260304
-#: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert eine Furt an der Baustelle vorbei
+#: by: https://www.entwicklungsstadt.de/mehrjaehrige-sperrung-in-mitte-u6-bauarbeiten-legen-teil-der-chausseestrasse-lahm/
+#: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026)
+#: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
 #: next_check: 2026-03-05 vvv
 # REMOVED --- #: next_check: 2028-07-01 vvv
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
@@ -4179,7 +4181,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-05 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4206,6 +4208,7 @@ Glockenblumenweg: Einbahnstraße	1s:q2:inwork 16461,2569 16260,2717
 #: next_check_id: BVGBETRIEBSHOFSPREE-2026
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1576769.php (Arbeiten ab 7.7.2025, bislang mit Bauzäunen gesichert)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7894 (zum geplanten Skaterpark)
+#: by: https://www.tagesspiegel.de/berlin/jugendliche-haben-die-ideen-geliefert-neuer-skatepark-in-berlins-sudosten-geplant-15312633.html (Projektstart 2028)
 #: priority: #C vvv
 #: last_checked: 2026-01-21 vvv
 #: check_frequency: 180d vvv
@@ -4569,6 +4572,8 @@ An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 1092
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/carl-bechstein-campus-heidestra%C3%9Fe-46-52.1363/#post-26823
 #: by: https://www.carl-bechstein-stiftung.de/projekte/carl-bechstein-campus/ (Projektstopp: was bedeutet das für diesen Weg?)
 #: by: https://return.co.de/blog/articles/grosse-plane-unklare-zukunft-was-wird-aus-dem-bechstein-campus/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/klavierbauer-plante-konzertsaal-bechsteincampus-in-der-berliner-europacity-vorerst-gestoppt-15314396.html
+#: by: https://www.entwicklungsstadt.de/vom-klaviercampus-zum-biergarten-bechstein-campus-in-der-europacity-gestoppt/
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch auf der anderen Seite so ausgeschildert?
 #: XXX culdesac-Eintrag an der Döberitzer Str. muss vermutlich geändert werden

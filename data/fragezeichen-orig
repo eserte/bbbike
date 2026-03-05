@@ -3926,7 +3926,7 @@ Seegefelder Weg: Verbreiterung der Straße + Anlage von Radspuren geplant	?::proj
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf (Einstellung des Planfeststellungsverfahrens, wird doch nicht gebaut?)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/verbindungsstrasse-karow/ (alternative URL)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/verbindungsstrasse-karow/
-#: last_checked: 2024-06-16 (mapillary) vvv
+#: last_checked: 2026-03-02 (mapillary) vvv
 # REMOVED --- #: check_frequency: 360d vvv
 #: check_frequency: 1000d vvv
 # REMOVED (keine Infos zum Planfeststellungsverfahren) --- #: next_check: 2024-12-31 vvv
@@ -5834,8 +5834,9 @@ Ufnaustraße/Huttenstraße: Zebrastreifen geplant	?::projected 4427,13550 4455,135
 #: by[nocache]: https://www.bz-berlin.de/berlin/zebrastreifen-verkehr-berlin-planung (Realisierung 2025) (hier "Ludwig-Hofmann-Quartier" (sic!))
 #: by: https://entwicklungsstadt.de/quartiersentwicklung-in-pankow-buch-bonava-plant-450-neue-wohnungen-bis-2030/ (zum Wohnquartier)
 #: priority: #D
-#: last_checked: 2025-08-25 (mapillary)
-#: next_check: 2025-12-31 (bz)
+#: last_checked: 2026-03-02 (mapillary)
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-12-31 (bz)
 Wiltbergstraße/Ludwig-Hoffmann-Quartier: Zebrastreifen geplant	?::projected 15662,26270 15539,26439 15698,26313
 # 
 # REMOVED --- #: next_check_id: DENNEWITZFLOTTWELL-2019 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin) --- #: XXX mittlerweile existiert schon ein provisorischer Zebrastreifen --- #: priority: #D --- #: last_checked: 2021-09-05 --- Dennewitzstr./Kurfürstenstr.: Zebrastreifen in Bau	?::inwork 8058,10330 8058,10306 8089,10317
@@ -6185,7 +6186,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="21"
-#: last_checked: 2026-02-23
+#: last_checked: 2026-03-05
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -6652,7 +6653,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: by: https://www.berliner-woche.de/karow/c-verkehr/der-ueberweg-soll-kommen_a331769
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/infrastruktur/bau-von-querungshilfen/ (Vorplanung)
 #: priority: #D
-#: last_checked: 2026-02-23 (mapillary)
+#: last_checked: 2026-03-02 (mapillary)
 #: check_frequency: 120d
 Blankenburger Chaussee Höhe Beuthener Str./Straße 43: ein Zebrastreifen soll hier realisiert werden	?::projected 15057,22288 15094,22290 15134,22293
 # 
@@ -7840,7 +7841,7 @@ Wönnichstr.: Teileinziehung geplant	? 16977,11769 16957,11726 16915,11634
 #: by: https://entwicklungsstadt.de/neues-quartier-am-wasser-spreesight-erhaelt-baugenehmigung-in-charlottenburg/ (bis 2027)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="496771672" version="11"
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-05 (daf)
 #: check_frequency: 360d
 #: next_check: 2027-12-31 (entwicklungsstadt (benachbartes Bauvorhaben))
 Uferweg an der Spree: soll hier entstehen	?::projected 5550,12238 5493,12244 5411,12290
@@ -8378,6 +8379,7 @@ Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603
 #: by: https://www.entwicklungsstadt.de/es-geht-los-am-checkpoint-charlie-realisierungswettbewerb-startet-im-april/
 #: by: https://www.entwicklungsstadt.de/tippelschritte-in-mitte-wer-kommt-schneller-voran-bauakademie-oder-checkpoint-charlie/ (Umgestaltung bis 2030)
 #: by: https://www.entwicklungsstadt.de/checkpoint-charlie-nach-der-wende-vom-grenzuebergang-zum-touristenhotspot/
+#: by: https://www.entwicklungsstadt.de/ein-ort-der-weltgeschichte-sucht-seine-form-wettbewerb-fuer-den-checkpoint-charlie/
 #: XXX Wie wird die Situation für Radfahrer aussehen (handicap-Eintrag?)
 #: last_checked: 2026-03-03
 #: check_frequency: 120d
@@ -8794,6 +8796,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260301
 #: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/25-meter-breiter-radweg-statt-parkspur-allee-im-berliner-sudwesten-wird-baustelle--radfahrer-bekommen-mehr-platz-und-schutz-15311485.html
+#: by: https://www.entwicklungsstadt.de/thielallee-zweiter-bauabschnitt-fuer-neuen-radfahrstreifen-startet/
 #: source_id: viz2021:13.283887,52.444748,26.05.2025,07:00 (Leitungsarbeiten, für Kfz-Verkehr in einer Richtung gesperrt, bis 08.09.2025) (inaktiv)
 #: source_id: adac:1306443658 (bis voraussichtlich 08.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:370262/72 viz2021:13.2837,52.4442,26.05.2025,07:00 (bis 08.09.2025) (bis 17.10.2025) (bis 19.12.2025) (bis 27.11.2025) (inaktiv)
@@ -9714,17 +9717,6 @@ Bebauungsplan 3-85: Friedhof wird verkleinert	? 10145,21017 10142,20925 10269,20
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1605007.php (geplant für 2026)
 #: next_check: 2026-12-31
 Odernheimer Str.: Zebrastreifen geplant	? 28518,1365 28545,1373 28540,1350
-# 
-#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8567 (Mitteilung zur Kenntnisnahme)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_50_3173_3308_online.pdf (Teilweise Umbenennung einer Straße)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1645250.php (Umbenennung am 6. März 2026)
-#: by: https://www.entwicklungsstadt.de/crellemarkt-wird-lucie-leydicke-platz-tempelhof-schoeneberg-ehrt-traditionsgastwirtin/
-#: osm_watch: way id="86640928" version="14"
-#: osm_watch: note 5174848 1
-#: last_checked: 2025-10-08 (BVV-Drucksache)
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2026-03-06 (Amtsblatt, BA-Pressemitteilung)
-Crellestr.: Benennung in Lucie-Leydicke-Platz geplant	?::projected 7770,9336 7836,9413 7882,9490
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2025/vzbbvv1299_vi_tempo_30_und_zebrastreifen_cecilienstr.pdf
 #: priority: #D
@@ -12222,6 +12214,7 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/marzahner-knoten/verkehrszeichenplan20250519.pdf
 #: by: https://www.entwicklungsstadt.de/verkehrsknoten-marzahn-neubauprojekt-startet-in-naechste-bauphase/
 #: by: https://www.entwicklungsstadt.de/verkehrsknoten-marzahn-grossbaustelle-fuer-eine-zukunftsfaehige-mobilitaet/
+#: by: https://www.nd-aktuell.de/artikel/1198026.bvg-tramsperrung-in-marzahn-erneut-verlaengert.html
 #: source_id: viz2021:13.539245,52.540066,05.12.2022,07:00 (Vorbereitungsarbeiten bis 9.12.2022) (inaktiv)
 #: source_id: viz2021:13.539533,52.539819,19.12.2022,07:00 (bis 6.1.2023) (bis 31.12.2026) (bis 6.1.2023) (inaktiv)
 #: source_id: viz2021:13.539363,52.5398,06.01.2023,13:06 (bis 03.03.2023) (inaktiv)

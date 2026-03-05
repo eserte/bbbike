@@ -11630,7 +11630,9 @@ Steinmetzstr. (Schöneberg)	N 7698,10147 7744,10372
 #: osm.highway: service
 (Parkplatz Dennewitzplatz)	N 7813,10112 7814,10117
 Blumenthalstr. (Schöneberg)	N 7814,10117 7850,10351
-Crellestr.	NN 7882,9490 7836,9413 7770,9336
+#: oldname: -20260306: Crellestr.
+#: ignore_oldname_file: yes
+Lucie-Leydicke-Platz	NN 7882,9490 7836,9413 7770,9336
 Crellestr.	N 7770,9336 7647,9196 7570,9124
 Crellestr.	NN 7570,9124 7524,9093 7484,9066
 Crellestr.	N 7484,9066 7307,8945
