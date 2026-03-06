@@ -129,7 +129,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-01-18 (mapillary)
+#: last_checked: 2026-03-06
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -488,7 +488,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-03-02
+#: last_checked: 2026-03-06
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -977,7 +977,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2026-01-29
+#: last_checked: 2026-03-06
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -1200,7 +1200,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2026-02-11
+#: last_checked: 2026-03-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -8815,7 +8815,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8467,9663 8489,9656 8540,9644
 (Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8341,10721 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8330,9610 8338,9593
 (Park am Gleisdreieck, westlicher Weg): Asphalt	Q0 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8190,10340 8180,10282 8145,10090
-(Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
+(Park am Gleisdreieck, Generalszug): Beton	Q0 8338,9971 8521,9911 8571,9896 8597,9888 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg): Kopfsteinpflaster	Q2 8775,10289 8780,10248 8726,10056
 (Park am Gleisdreieck, östlicher Weg): Asphalt	Q0 8726,10056 8652,9870
 (Park am Gleisdreieck, mittlerer Weg): Asphalt	Q0 8579,10030 8521,9911
@@ -8932,7 +8932,8 @@ Melissenweg: Verbundsteinpflaster	Q1 16003,3652 16041,3718
 Klausenpaß: Beton	Q0 10271,2603 10369,2582 10392,2577 10507,2548 10693,2513
 Nuthestr.: Asphalt	Q0 10301,-1891 10270,-1890 10251,-1877 10239,-1849
 Nuthestr.: Beton	Q0 10239,-1849 10095,-1482 10048,-1379 9989,-1278 9925,-1106 9849,-911 9888,-853
-Möckernstr. - Park am Gleisdreieck: Kopfsteinpflaster	Q2 8808,10290 8775,10289 8707,10285
+(Ladestraße): Kopfsteinpflaster mit geglätteten Streifen	Q1- 8749,10287 8597,9888
+Möckernstr. - Park am Gleisdreieck: Kopfsteinpflaster	Q2 8808,10290 8775,10289 8749,10287 8707,10285
 Möckernstr. - Park am Gleisdreieck: Asphalt	Q0 8707,10285 8668,10219 8615,10108 8579,10030
 Pfalzburger Str.: Kleinsteinpflaster	Q1 4842,9458 4827,9304
 Simsonweg: Kleinsteinpflaster und wassergebundene Decke	Q1 8354,12416 8391,12389 8546,12279
@@ -34510,5 +34511,6 @@ Kreuzungsbereich asphaltiert	Q0 7648,15741
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9474,15714
 Einmündungsbereich mit Kopfsteinpflaster	Q2 10105,14608
 Kreuzungsbereich mit Asphalt und Kopfsteinpflaster	Q2 18019,5786
+Einmündungsbereich mit Kopfsteinpflaster	Q2 8749,10287
 #: ignore ^^^
 #: section ^^^

@@ -132,7 +132,7 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2026-01-17 vvv
+#: last_checked: 2026-03-03 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
@@ -1049,7 +1049,7 @@ Lindenstr. (Straßenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 2
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535, (bis 31.12.2027)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2026-03-03 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -4076,11 +4076,11 @@ Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr.
 Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9070,14058 9011,14019 8870,13926
 #: next_check ^^^
 # 
-#: XXX genauer anschauen!
 #: also_indoor: traffic (no-T,no-G)
-#: last_checked: 2026-03-03
-#: check_frequency: 3d
-An der Ostbahn: Bauarbeiten, Einbahnstraßenregelung	1s:q4:inwork 12645,11673 12900,11515
+#: note: Lieferverkehr frei, kurze Engstelle (ca. 20-30m)
+#: last_checked: 2026-03-06
+#: check_frequency: 30d
+An der Ostbahn: Bauarbeiten, kurze Engstelle mit Einbahnstraßenregelung	1s:q2:inwork 12645,11673 12900,11515
 # 
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1647872.php (bereits seit 2022 gesperrt)
 #: osm_watch: way id="1158959851" version="3"
@@ -4328,7 +4328,7 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information
 #: also_indoor: traffic (G)
-#: last_checked: 2025-12-25 (traffic)
+#: last_checked: 2026-03-03 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-10-29
 Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
@@ -4465,7 +4465,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 1
-#: last_checked: 2026-02-21 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4486,8 +4486,8 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
-#: osm_watch: way id="1106303945" version="11"
-#: osm_watch: way id="4543436" version="44"
+#: osm_watch: way id="1106303945" version="12"
+#: osm_watch: way id="4543436" version="45"
 #: osm_watch: way id="176338611" version="21"
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
@@ -4601,6 +4601,7 @@ Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,90
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_52_4785_4880_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Benennung, Wirksamkeit ab 14.2.2022)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/erste-haeuser-im-kokoni-one-fast-fertig_a385494 (endgültige Fertigstellung von Kokoni One bis Herbst 2024)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_10_0565_0644_online.pdf (Grundstücksnummerierungen in der benachbarten Straße 76)
 # REMOVED --- #: XXX Privatstraße, fehlt bei Berlin.coords.data (PLZ=13127 laut LOR und DPAG-Mitteilungsblatt)
 #: XXX gehört das hier auch zu "Kokoni One"?
 #: XXX wird vermutlich Betonpflaster sein
@@ -4931,6 +4932,7 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://berliner-abendblatt.de/berlin-news/sankt-hedwigs-kathedrale-wird-nach-sanierung-wieder-eroeffnet-id270349 (Bernhard-Lichtenberg-Haus frühestens Ende 2025 fertig)
 #: by: https://entwicklungsstadt.de/bauprojekt-am-bebelplatz-fortschritte-beim-bernhard-lichtenberg-haus/ (geplante Fertigstellung Ende 2025)
 #: by: https://www.erzbistumberlin.de/medien/pressestelle/aktuelle-pressemeldungen/pressemeldung/news-title/richtfest-am-bernhard-lichtenberg-haus/ (Fertigstellung im Sommer 2026)
+#: by: https://www.entwicklungsstadt.de/bernhard-lichtenberg-haus-am-bebelplatz-fassadenarbeiten-am-neubau-sichtbar/
 #: osm_watch: way id="28120501" version="14"
 #: last_checked: 2025-12-29
 #: check_frequency: 90d
@@ -4994,7 +4996,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2026-03-03
+#: last_checked: 2026-03-06
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5076,7 +5078,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-06 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027

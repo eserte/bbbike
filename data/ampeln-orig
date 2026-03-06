@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: last_checked: 2026-03-03 (mapillary) vvv
+#: next_check: 2026-06-26 (VIZ) vvv
+(Übergang Höhe Haupteingang Stadion an der Alten Försterei)	F::inwork 21519,5767
+(Übergang Höhe Haupteingang Stadion an der Alten Försterei)	F::inwork 21522,5771
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: note: eigentlich zwei Fußgängerampeln
 #: last_checked: 2026-02-27
@@ -24,10 +31,10 @@ Michaelbrücke	F::inwork 11676,11839
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
-#: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026)
+#: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026)
 #: last_checked: 2026-03-03
 #: check_frequency: 90d
-#: next_check: 2026-03-06 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-03-17 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260213
 #: valid: -20260511
 Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
@@ -137,7 +144,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
-#: last_checked: 2026-02-28 (traffic)
+#: last_checked: 2026-03-06 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20251231
@@ -494,8 +501,9 @@ Gürtelstr.	F::inwork 15153,11691
 #: source_id: viz2021:13.572881,52.460427,14.11.2023,14:00 (bis 27.09.2024) (inaktiv)
 #: source_id: viz2021:13.57339,52.45923,11.03.2024,00:00 (bis 27.09.2024) (inaktiv) (bis 04.10.2024) (inaktiv)
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten) (inaktiv)
+#: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558, (bis 06.01.2027)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2026-03-06 (VIZ-Verkehrsmeldung) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (DB) vvv
 #: valid: -20271231 vvv
@@ -5522,6 +5530,9 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	F -8708,86368
 #: note: Anforderungsampel beim Überqueren der B185
 	X -68766,-67664
+#: by: mapillary
+#: note: Anforderungsampel
+	F 31040,12361
 # 
 #: section: ^^^
 ################################################################################

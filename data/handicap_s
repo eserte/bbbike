@@ -8,7 +8,7 @@ Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfu
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
-Petersburger Str.: gemeinsamer Rad- und Gehweg	q2::inwork; 13434,13234 13383,13349 13375,13367 13330,13468
+Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13434,13234 13383,13349 13375,13367 13330,13468
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,11888
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -34,7 +34,6 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10198,9405 10290,9604 10306,9640 10361,9755 10405,9795
 Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q1::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
 Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
-Wilmsstr.: Bauarbeiten an der Geibelstr./am Carl-Herz-Ufer, Fahrbahn gesperrt	q3::inwork 10480,9949 10627,9912
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
@@ -3716,7 +3715,7 @@ Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 177
 Köpenicker Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp::igndisp; 21137,11346 21137,11294
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 8870,13926 8831,13973 8732,14098
 Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 9070,14058 9011,14019 8870,13926
-An der Ostbahn: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12645,11673 12900,11515
+An der Ostbahn: Bauarbeiten, kurze Engstelle mit Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 12645,11673 12900,11515
 Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -3606,11532 -3657,11631 -3692,11681
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7697,14187 7781,14238 7802,14250
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7757,14318 7735,14305 7652,14257

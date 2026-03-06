@@ -23040,7 +23040,7 @@ EOF
 #: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
 #: by: https://www.berlin.de/events/5983059-2229501-radioeins-parkfest.html
 #: by: https://www.radioeins.de/themen/_/parkfest/
-	q3::temp 8652,9870 8571,9896
+	q3::temp 8652,9870 8597,9888 8571,9896
 EOF
      },
      { from  => undef, # 
@@ -26533,12 +26533,13 @@ EOF
      { from  => $isodate2epoch->("2026-01-08 00:00:00"), # 1465077600, # 2016-06-05 00:00
        until => $isodate2epoch->("2026-03-27 23:59:59"), # $isodate2epoch->("2016-06-11 23:59:59"),
 #      text  => 'Wartenberger Weg: Richtung Dorfstraße zwischen Egon-Erwin-Kisch-Straße und Dorfstraße Baustelle, Fahrtrichtung gesperrt, ab 06.06.2016 06:00 bis zum 11.06.2016',
-       text  => 'Wartenberger Weg: Richtung Malchow zwischen Hagenower Ring und An der Margaretenhöhe gesperrt, evtl. sind auch Radfahrer betroffen, bis 27.03.2026',
+       text  => 'Wartenberger Weg: Richtung Malchow zwischen Hagenower Ring und An der Margaretenhöhe gesperrt, bis 27.03.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147340170 (2016er-Sperrung, inaktiv)
 #: source_id: LMS-BR:395568/72 viz2021:13.50143,52.57656, (bis 27.03.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mbw6ybn6pk2i (Radverkehr auch betroffen)
+#: note: keine Ausnahme für Radfahrer
 # REMOVED (2016) --- #: note: laut fritz sogar Vollsperrung
 # REMVOED (2016) ---	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
 	q4::inwork; 17003,19035 16736,19193
@@ -36221,7 +36222,7 @@ EOF
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-03-03 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -36232,6 +36233,7 @@ Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 # REMOVED (nicht mehr) --- Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
 # REMOVED (nicht mehr) --- Mierstr.: Einbahnstraßenregelung	q4::inwork; 13627,7047 13575,7200
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
+#: note: teilweise erheblicher Kfz-Ausweichverkehr in der Braunschweiger Str., im Osten bis Schudomastr./Brusendorfer Str., im Westen gestaffelt bis Wipperstr.
 #: osm_watch: way id="970153788" version="10"
 #: osm_watch: way id="971064429" version="10"
 Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
@@ -36535,7 +36537,7 @@ EOF
 #: osm_watch: note 5093384 3
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-02-15
+#: last_checked: 2026-03-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36561,7 +36563,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -36734,7 +36736,7 @@ EOF
 #: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
 #: source_id: adac:89620388 (bis voraussichtlich 08.08.2025) (inaktiv)
 #: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025) (inaktiv)
-#: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558,26.01.2026,05:00 (bis 06.03.2026)
+#: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558,26.01.2026,05:00 (bis 06.03.2026) (inaktiv)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -42271,7 +42273,7 @@ EOF
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-01-30 (osm note)
+#: last_checked: 2026-03-06
 #: check_frequency: 90d
 #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 12407,8177 12545,8209
@@ -45216,7 +45218,7 @@ EOF
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-03-02 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -46239,7 +46241,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZURALTENBOERSE-2025
-#: osm_watch: node id="12522972446" version="1"
+#: osm_watch: node id="12522972446" version="2"
 #: last_checked: 2026-03-04
 #: check_frequency: 180d
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
@@ -47016,7 +47018,7 @@ EOF
 #: osm_watch: way id="1309204624" version="1"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-10-18 (luftbildsuche)
+#: last_checked: 2026-03-03 (mapillary)
 # REMOVED --- #: check_frequency: 90d (traffic check)
 # REMOVED --- #: next_check: 2025-12-31 (Halteverbotsschilder)
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
@@ -48363,6 +48365,7 @@ EOF
 #: source_id: adac:210225916 (bis 18.07.2025) (inaktiv)
 #: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025) (bis 15.08.2025) (inaktiv)
 #: source_id: viz2021:13.54611,52.43478,10.06.2025,07:00 (hier: Radickestr. bis Friedenstr., bis 15.08.2025) (inaktiv)
+#: source_id: bvg2024:162#HIM_FREETEXT_323764 (Umleitung, vermutlich wegen bevorstehenden Bauarbeiten an der Kreuzung Radickestr./Nipkowstr.)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 # REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
@@ -48995,7 +48998,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-02-28 (traffic) vvv
+#: last_checked: 2026-03-06 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -49146,7 +49149,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: last_checked: 2026-02-07 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -49289,6 +49292,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
+#: by: https://www.entwicklungsstadt.de/deutliche-fortschritte-auf-dem-lxk-campus-ein-blick-auf-die-baustelle/
 #: also_indoor: traffic (none)
 #: last_checked: 2026-02-21
 #: check_frequency: 90d
@@ -49681,7 +49685,7 @@ EOF
 #: source_id: viz2021:13.38017,52.51979,09.07.2025,07:00 (bis 12.05.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 2
-#: osm_watch: way id="1429845843" version="2"
+#: osm_watch: way id="1429845843" version="3"
 #: also_indoor: traffic (T,H,G)
 #: last_checked: 2026-03-03 vvv
 #: check_frequency: 90d vvv
@@ -50186,7 +50190,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-01 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50641,7 +50645,7 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-03-06 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -51718,13 +51722,14 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
 #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2026-03-15 00:00:00"), # 1773097200, # 2026-03-10 00:00
-       until => $isodate2epoch->("2026-07-20 23:59:59"), # 1783720799, # 2026-07-10 23:59
-       text  => 'Mögelin: Radwegsanierung, Sperrung des Radwegs vom 16.03.2026 bis Mitte Juli 2026',
+     { from  => $isodate2epoch->("2026-03-08 00:00:00"), # 1773097200, # 2026-03-10 00:00
+       until => $isodate2epoch->("2026-07-17 20:00:00"), # 1783720799, # 2026-07-10 23:59
+       text  => 'Mögelin: Radwegsanierung, Sperrung des Radwegs vom 09.03.2026 bis Mitte Juli 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
+#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 EOF
      },
@@ -52036,6 +52041,17 @@ EOF
        data  => <<'EOF',
 #: source_id: 267310009 (bis 18.12.2026)
 	q4::inwork 34174,101912 34328,101975 34380,102078 34474,102170 34528,102362 34607,102396
+EOF
+     },
+     { from  => 1772708400, # 2026-03-05 12:00
+       until => 1776808740, # 2026-04-21 23:59
+       text  => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.03.2026 12:00 bis 21.04.2026 23:59',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026)
+#: also_indoor: traffic (T,G)
+	q4::inwork 6044,3110 5936,2977 5853,3050
+	q4::inwork 5774,2785 5936,2977 6022,2901
 EOF
      },
     );

@@ -4136,13 +4136,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147340170 (2016er-Sperrung, inaktiv)
 #: source_id: LMS-BR:395568/72 viz2021:13.50143,52.57656, (bis 27.03.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mbw6ybn6pk2i (Radverkehr auch betroffen)
+#: note: keine Ausnahme für Radfahrer
 # REMOVED (2016) --- #: note: laut fritz sogar Vollsperrung
 # REMVOED (2016) ---	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
 	q4::inwork; 17003,19035 16736,19193
 ',
          'from' => 1767826800,
          'id' => 2791,
-         'text' => 'Wartenberger Weg: Richtung Malchow zwischen Hagenower Ring und An der Margaretenhöhe gesperrt, evtl. sind auch Radfahrer betroffen, bis 27.03.2026',
+         'text' => 'Wartenberger Weg: Richtung Malchow zwischen Hagenower Ring und An der Margaretenhöhe gesperrt, bis 27.03.2026',
          'type' => 'handicap',
          'until' => 1774652399
        },
@@ -5797,7 +5798,7 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitt 2026 oder Mitte 2027?
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-03-03 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5808,6 +5809,7 @@ Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 # REMOVED (nicht mehr) --- Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
 # REMOVED (nicht mehr) --- Mierstr.: Einbahnstraßenregelung	q4::inwork; 13627,7047 13575,7200
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
+#: note: teilweise erheblicher Kfz-Ausweichverkehr in der Braunschweiger Str., im Osten bis Schudomastr./Brusendorfer Str., im Westen gestaffelt bis Wipperstr.
 #: osm_watch: way id="970153788" version="10"
 #: osm_watch: way id="971064429" version="10"
 Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
@@ -5872,7 +5874,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: note 5093384 3
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-02-15
+#: last_checked: 2026-03-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5897,7 +5899,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-02-15 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -5927,61 +5929,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: HAEMMERLING-2022
-#: next_check_id: RBAHNHOFKOEPENICK-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
-#: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
-#: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
-#: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
-#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023) (bis 14.09.2023) (inaktiv)
-#: source_id: viz2021:13.57292,52.460387,14.11.2023,09:00 (Kraneinsatz in der Hämmerlingstr., Sperrung nur für Kfz-Verkehr, bis 14.11.2023) (inaktiv)
-#: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
-#: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
-#: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024) (inaktiv)
-#: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
-#: source_id: adac:89620388 (bis voraussichtlich 08.08.2025) (inaktiv)
-#: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025) (inaktiv)
-#: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558,26.01.2026,05:00 (bis 06.03.2026)
-#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
-#: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
-#: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
-#: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
-#: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230330.pdf (Hämmerlingstr. bis 15.6.2023 gesperrt)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (Hämmerlingstr. ab Ende Juni 2023 passierbar)
-#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf (bis 11.7.2023)
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734 (rechtzeitig zur Sperrung der Bahnhofstr. offen?)
-#: by: https://phoenix1554.wordpress.com/2023/08/20/umbau-bahnhof-berlin-kopenick-20-08-2023/ (Freigabe am 28.8.2023?)
-#: by: https://www.deutsches-architekturforum.de/thread/15143-neubau-regionalbahnhof-k%C3%B6penick/?postID=760886#post760886
-#: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1758065960009744712#m (auch Fußgänger sind betroffen!)
-#: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOu2XcAAADii.jpg (Detailkarte der Sperrung)
-#: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025) (neue Sperrung: 26. Januar (circa 5 Uhr), bis Freitag, 6. März 2026 (circa 11 Uhr))
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1836261367248228357
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html (21. Juli 2025 6 Uhr bis 8. August 2025 12 Uhr)
-#: by: https://www.entwicklungsstadt.de/bahnhof-koepenick-neue-sperrungen-im-zuge-des-grossumbaus/
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410891906/s-bahnhof-koepenick-deutsche-bahn-kuendigt-fuer-januar-neue-sperrung-an.html
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1633950.php
-#: by: https://viz.berlin.de/aktuelle-meldungen/umbau-bahnhof-kopenick-sperrung-hammerlingstrasse/
-#: osm_watch: note 3566736 14
-# REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
-# REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
-# REMOVED --- #: osm_watch: way id="794278028" version="10"
-# REMOVED --- #: osm_watch: way id="1181902719" version="1"
-# REMOVED --- #: XXX nächste Sperrung der Hämmerlingstr.: Von Montag, 21. Juli (6 Uhr), bis Freitag, 8. August 2025 (vsl. 12 Uhr)
-Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
-# REMOVED (hier nicht?) Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 22000,6245 22033,6144
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-',
-         'from' => 1769295600,
-         'id' => 3549,
-         'text' => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 26.01.2026 05:00 Uhr bis 06.03.2026 11:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1772791200
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: WILTBERG-2022
@@ -7143,7 +7091,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-01-30 (osm note)
+#: last_checked: 2026-03-06
 #: check_frequency: 90d
 #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 12407,8177 12545,8209
@@ -7706,7 +7654,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-03-02 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -8040,7 +7988,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        undef,
        {
          'data' => '#: next_check_id: ZURALTENBOERSE-2025
-#: osm_watch: node id="12522972446" version="1"
+#: osm_watch: node id="12522972446" version="2"
 #: last_checked: 2026-03-04
 #: check_frequency: 180d
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
@@ -8156,7 +8104,7 @@ Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,
 #: osm_watch: way id="1309204624" version="1"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2025-10-18 (luftbildsuche)
+#: last_checked: 2026-03-03 (mapillary)
 # REMOVED --- #: check_frequency: 90d (traffic check)
 # REMOVED --- #: next_check: 2025-12-31 (Halteverbotsschilder)
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
@@ -8664,6 +8612,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: source_id: adac:210225916 (bis 18.07.2025) (inaktiv)
 #: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025) (bis 15.08.2025) (inaktiv)
 #: source_id: viz2021:13.54611,52.43478,10.06.2025,07:00 (hier: Radickestr. bis Friedenstr., bis 15.08.2025) (inaktiv)
+#: source_id: bvg2024:162#HIM_FREETEXT_323764 (Umleitung, vermutlich wegen bevorstehenden Bauarbeiten an der Kreuzung Radickestr./Nipkowstr.)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 # REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
@@ -8857,7 +8806,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-02-28 (traffic) vvv
+#: last_checked: 2026-03-06 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -8889,7 +8838,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: last_checked: 2026-02-07 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8948,6 +8897,7 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bebauungsplan-v-52-block-krautstra%C3%9Fe-lange-stra%C3%9Fe-andreasstra%C3%9Fe-stadtbahn.545/page-7#post-25122
 #: by: https://www.lxk-berlin.de/ (Fertigstellung Q4 2026)
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
+#: by: https://www.entwicklungsstadt.de/deutliche-fortschritte-auf-dem-lxk-campus-ein-blick-auf-die-baustelle/
 #: also_indoor: traffic (none)
 #: last_checked: 2026-02-21
 #: check_frequency: 90d
@@ -9055,7 +9005,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: source_id: viz2021:13.38017,52.51979,09.07.2025,07:00 (bis 12.05.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 2
-#: osm_watch: way id="1429845843" version="2"
+#: osm_watch: way id="1429845843" version="3"
 #: also_indoor: traffic (T,H,G)
 #: last_checked: 2026-03-03 vvv
 #: check_frequency: 90d vvv
@@ -9267,7 +9217,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-01 vvv
+#: last_checked: 2026-03-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9471,7 +9421,7 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-03-06 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -10109,13 +10059,14 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
+#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 ',
-         'from' => 1773529200,
+         'from' => 1772924400,
          'id' => 4526,
-         'text' => 'Mögelin: Radwegsanierung, Sperrung des Radwegs vom 16.03.2026 bis Mitte Juli 2026',
+         'text' => 'Mögelin: Radwegsanierung, Sperrung des Radwegs vom 09.03.2026 bis Mitte Juli 2026',
          'type' => 'gesperrt',
-         'until' => 1784584799
+         'until' => 1784311200
        },
        {
          'data' => '#: source_id: LMS-BR:396580/72 viz2021:13.29513,52.47536,20.01.2026,07:00 (bis 31.03.2026) (bis 30.06.2026)
@@ -10351,6 +10302,18 @@ Ausgang Forster Str. (zum Rondell)	2::night 12564,10121 12592,10112
          'text' => 'Güstow (Am Lindenberg): Bauarbeiten, Sperrung, vom 09.03.2026 06:00 Uhr bis 18.12.2026 20:00 Uhr',
          'type' => 'handicap',
          'until' => 1797620400
+       },
+       {
+         'data' => '#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026)
+#: also_indoor: traffic (T,G)
+	q4::inwork 6044,3110 5936,2977 5853,3050
+	q4::inwork 5774,2785 5936,2977 6022,2901
+',
+         'from' => 1772708400,
+         'id' => 4553,
+         'text' => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.03.2026 12:00 bis 21.04.2026 23:59',
+         'type' => 'handicap',
+         'until' => 1776808740
        }
      
 );
