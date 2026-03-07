@@ -2561,7 +2561,7 @@ Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,129
 Märkische Allee: Mittelstreifen	3nocross 20120,16297 20232,16522 20242,16543 20323,16706
 Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20654,17384 20691,17463 20717,17516 20768,17609 20798,17664 20853,17762 20889,17838 20912,17872 21011,18061
 Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
-# REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17579,17908 17675,17971 17744,18016 17843,18078
+# REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17579,17908 17675,17971 17744,18016 17837,18075
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13633,10705 13678,10685 13700,10676 13779,10642
@@ -4236,7 +4236,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-07
 #: check_frequency: 120d
 #: next_check: 2026-05-31 (entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4403,7 +4403,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: way id="26244466" version="25"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
 #: source_id: viz2021:13.53642,52.53865, (bis 31.12.2026)
-#: last_checked: 2026-01-17
+#: last_checked: 2026-03-01 (luftbildsuche)
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
@@ -4904,7 +4904,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026)
-#: last_checked: 2026-02-28
+#: last_checked: 2026-03-01 (luftbildsuche)
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
 # REMOVED --- #: next_check: 2027-06-30
@@ -5089,11 +5089,12 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-03-01 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
-# REMOVED (dieser Abschnitt nicht mehr gesperrt) --- Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
+#: historical_note: zwischenzeitlich (Anfang März 2026) war dieser Abschnitt offen
+Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork 13326,10765 13418,10724
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

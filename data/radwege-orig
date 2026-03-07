@@ -285,7 +285,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2026-01-25
+#: last_checked: 2026-03-03 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-03-06 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1012,7 +1012,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-03-04
+#: last_checked: 2026-03-07
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1414,7 +1414,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-03-06 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (Tsp, entwicklungsstadt) vvv
@@ -1802,7 +1802,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="57"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-03-05 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -3296,7 +3296,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-03-06
+#: last_checked: 2026-03-07
 #: check_frequency: 90d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
@@ -3320,7 +3320,7 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-03-06
+#: last_checked: 2026-03-07
 #: check_frequency: 90d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3358,7 +3358,7 @@ Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 140
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2026-01-21
+#: last_checked: 2026-03-07
 #: next_check: 2026-03-31
 #: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
@@ -3367,7 +3367,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-07
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3378,14 +3378,14 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-07
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2026-01-21
+#: last_checked: 2026-03-07
 #: next_check: 2026-03-31
 #: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
@@ -3653,7 +3653,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2026-01-24 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -4871,7 +4871,7 @@ Die letzten 40 Meter sind benutzungspflichtig	RW3; 11383,22369 11279,22316
 	RW3;RW3 11383,22369 11484,22406 11583,22442 11694,22479 11747,22496 11817,22519
 	RW4;RW3 11817,22519 11936,22570
 	RW2;RW1 18196,18254 18078,18224 17932,18133
-	RW2;RW3 17932,18133 17843,18078
+	RW2;RW3 17932,18133 17837,18075
 	RW1;RW2 17400,17790 17159,17631
 	RW2;RW2 17159,17631 16938,17500
 	RW4;RW2 16938,17500 16930,17495 16837,17440
@@ -5290,25 +5290,22 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Hochbord gefüh
 die ersten Meter werden auf dem Hochbord geführt	RW3; 14653,15738 14808,15788
 	RW3; 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
 Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
+#: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
+	RW4; 15875,16816 15929,16870 15986,16922
+#: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
+	RW4; 15986,16922 16139,17017
+#: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
+	RW4; 16139,17017 16296,17114 16318,17128 16352,17150
 #: next_check_id: HANSA-2025
-#: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
-#: last_checked: 2025-11-08
+#: last_checked: 2026-03-07
 #: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
-provisorischer gemeinsamer Geh- und Radweg	RW2; 15875,16816 15929,16870 15986,16922
-#: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;
-#: last_checked: 2025-11-08
-#: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
-provisorischer gemeinsamer Geh- und Radweg	RW2; 15986,16922 16139,17017
-#: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
-	RW3; 16139,17017 16296,17114 16318,17128 16352,17150
-#: last_checked: 2025-11-08
-#: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
-provisorischer gemeinsamer Geh- und Radweg	RW2; 16352,17150 16460,17214
+#: historical_note: während der Bauarbeiten (2025/2026): provisorischer gemeinsamer Geh- und Radweg, RW2;
+	RW0; 16352,17150 16460,17214
 neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 	RW2; 16578,17285 16837,17440
 # 
-	RW4; 17843,18078 17744,18016 17721,18001 17675,17971 17577,17910 17482,17844
-	RW1; 17482,17844 17579,17908 17675,17971 17721,18001 17744,18016 17843,18078
+	RW4; 17837,18075 17744,18016 17721,18001 17675,17971 17577,17910 17482,17844
+	RW1; 17482,17844 17579,17908 17675,17971 17721,18001 17744,18016 17837,18075
 	RW2;RW1 17482,17844 17400,17790
 	RW2; 18223,18153 18196,18254
 	RW2; 18624,18259 18601,18342
@@ -5408,7 +5405,7 @@ neu asphaltiert	RW1; 18875,16872 18738,16957
 breiter asphaltierter Gehweg für Radfahrer frei	RW1; 17966,17768 18011,17712 18172,17520 18227,17457 18349,17387
 abwechselnd Verbundsteinpflaster und Beton	RW1; 18349,17387 18506,17236
 	RW1;RW1 17966,17768 17955,17783 17895,17870 17894,17925
-	RW2;RW1 17894,17925 17892,18015 17843,18078
+	RW2;RW1 17894,17925 17894,17987 17837,18075
 #: note: teilweise vorhandener Radweg ist abgesperrt
 	RW0; 12144,18436 11950,18529
 	RW1; 12566,18275 12455,18276 12144,18436
@@ -5578,7 +5575,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2025-12-12 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str., Richtung Westen
@@ -6177,7 +6174,7 @@ Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-wei%C3%9Fe-taube.161/page-3#post-26792
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
 #: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734
-#: last_checked: 2026-01-21 (architektur-urbanistik)
+#: last_checked: 2026-03-01 (luftbildsuche)
 	RW0; 17638,14945 17684,14858 17693,14840 17745,14734
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17745,14734 17791,14639
 # 
@@ -7132,6 +7129,7 @@ Verbundsteinpflaster	RW1;RW1 14723,16686 14836,16701 15139,16747 15219,16759 152
 Gehwegplatten	RW1;RW1 15181,18137 15239,18063 15238,18015
 	RW1; 15221,17900 15238,18015
 	RW2; 17186,17593 17159,17631
+	RW7;RW7 17186,17593 17264,17489 17392,17315 17422,17288 17481,17263 17499,17285
 Verbundsteinpflaster	RW1;RW1 19930,815 20171,698 20337,616
 Verbundsteinpflaster	RW1; 20550,474 20589,403 20604,354 20625,275
 Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
@@ -7487,7 +7485,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17454,3096 17525,3029 17569,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
 #: source_id: viz2021:13.504732,52.563446,11.07.2023,07:00 (Erneuerung Radweg, bis 12.09.2023) (bis 20.09.2023) (inaktiv)
 #: XXX Asphaltierung des Radwegs --- wird auch dieser Abschnitt asphaltiert? (noch keine Bauarbeiten) vvv
-#: last_checked: 2025-12-12 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2023-12-31 vvv
 Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16861,18009 16905,17949 16945,17900 16981,17855
@@ -8788,9 +8786,9 @@ Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
 	RW6;RW6 17370,12649 17475,12603
 	RW6;RW6 17467,12659 17455,12687 17426,12699 17412,12660 17436,12652 17467,12659 17492,12650 17519,12638 17530,12620 17571,12557
 	RW6;RW6 17461,12521 17472,12552 17475,12603 17492,12650
-	RW3; 17843,18078 17796,18130 17768,18160 17702,18168
+	RW3; 17837,18075 17796,18130 17768,18160 17702,18168
 	RW3; 17702,18168 17768,18160 17796,18130
-Verbundsteinpflaster	RW1; 17796,18130 17843,18078
+Verbundsteinpflaster	RW1; 17796,18130 17837,18075
 	RW3;RW3 11754,10516 11721,10530 11690,10543
 Gehweg für Radfahrer frei	RW1; 10177,13766 10193,13816 10209,13854
 	RW2; 10193,13816 10177,13766
@@ -9651,7 +9649,7 @@ Tempo 10	RW6;RW6 -7523,14969 -7387,14951
 #
 # REMOVED (mittlerweile wieder entfernt; Fußgänger dürfen hier nicht mehr laufen) --- #: note: als Fahrrad*zone* ausgeschildert ---	RW7;RW7 6293,7875 6263,7894 6178,7899
 # 
-	RW6;RW6 5799,7880 5800,7826
+	RW6;RW6 5810,7883 5812,7826
 # 
 	RW7;RW7 12564,7467 12585,7357 12601,7284 12613,7236 12634,7151 12648,7080
 # 

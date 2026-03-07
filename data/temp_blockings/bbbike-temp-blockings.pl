@@ -29613,7 +29613,7 @@ EOF
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
-       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Mitte Februar 2026: Bauzäune sind weggeschoben, Durchfahrt kann möglich sein)',
+       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Anfang März 2026: Durchfahrt nicht möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: alte Bauarbeiten von 2018 - 2022
@@ -29637,7 +29637,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-02-22 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -29650,7 +29650,7 @@ Bulgarische Str. - Karpfenteich	2::inwork 15297,8921 15245,8916
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 # REMOVED (offen) --- Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14320,9530
 #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune können bereits weggeschoben sein	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
+Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
 	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 	2::inwork 15298,8781 15343,8714
 # REMOVED (passierbar) ---	2::inwork 15343,8714 15378,8668
@@ -33305,7 +33305,7 @@ EOF
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2026-01-04
+#: last_checked: 2026-03-05 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -35868,7 +35868,7 @@ EOF
 # REMOVED (hier nicht, explizit als Sackgasse offen) --- Waitzstr., südlicher Abschnitt	q4::inwork 3770,10508 3739,10495
 #: note: laut rbb Sperrungen in beiden Richtungen
 #: also_indoor: traffic (none)
-#: last_checked: 2026-02-25 (mapillary)
+#: last_checked: 2026-03-01 (architektur-urbanistik)
 #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 EOF
@@ -36783,13 +36783,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-04-14 00:00:00"), # 1713897172, # 1652122429, # 2022-05-09 20:53
-       until => undef, # $isodate2epoch->("2027-09-12 17:00:00"), # $isodate2epoch->("2025-04-10 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
+       until => $isodate2epoch->("2026-06-01 00:00:00"), # undef, # $isodate2epoch->("2027-09-12 17:00:00"), # $isodate2epoch->("2025-04-10 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.03.2025',
 #      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis 10.04.2025',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags zunächst bis Mitte September 2025',
-#      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis Ende Februar 2026, evtl. werden die Bauarbeiten verlängert',
-       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ende der Bauarbeiten unbekannt',
+#      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ende der Bauarbeiten unbekannt',
+       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, vorerst bis Anfang Juni 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36804,7 +36804,7 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FF1fgjuGXsAAx82o.jpg
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1782997647063699803
 #: by: https://pbs.twimg.com/media/GL21lA-XwAASF5a?format=jpg&name=medium (Umleitungsstrecke für Radfahrer)
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20241218 (Inbetriebnahme 2027) (mittlerweile Sperrung der Wiltbergstr. bis Ende Februar 2026)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-gesundbrunnen-bernau?date=20241218 (Inbetriebnahme 2027) (mittlerweile Sperrung der Wiltbergstr. bis Ende Februar 2026) (befristete Öffnung vom 1.6.2026 bis 14.8.2026, danach Sperrung bis 2028)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1876878754120925633
 #: by: https://pbs.twimg.com/media/Ggsmd-aWMAAlsTV?format=jpg&name=medium
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/PL_berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_sperrungen_20250326.pdf
@@ -36831,12 +36831,12 @@ EOF
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
 #: last_checked: 2026-03-02 vvv
-# REMOVED --- #: next_check: 2026-02-28 (DB) vvv
+#: next_check: 2026-06-01 (DB) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16220,25716 16166,25767 16121,25818
 Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767 16220,25716
 # REMOVED ---	2::inwork 16166,25767 16121,25818
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 EOF
      },
@@ -49082,7 +49082,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiebwxdqzzfbx4fuikq5twvb2ibrbfh7mzstw4rj6hwp7ucy4km2zi@jpeg (laut Verkehrszeichenplan keine Ausnahmen für Radfahrer)
 Malchower Weg	q4::inwork; 16887,17349 16905,17281 16915,17231
 #: note: nur wenige Meter, deshalb q3
-Drossener Str.: Einbahnstraßenregelung	q3::inwork; 16709,17177 16915,17231
+Drossener Str.: Einbahnstraßenregelung	q3::inwork; 16753,17192 16915,17231
 Privatstr. 2	q4::inwork 16905,17281 17028,17298
 EOF
      },
@@ -50081,15 +50081,15 @@ EOF
      { from  => 1754431200, # 2025-08-06 00:00
        until => undef, # 1767222000, # 2026-01-01 00:00
 #      text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Mitte Februar 2026: Diagonalweg ist offen)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang März 2026: Diagonalweg ist offen)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
-#: osm_watch: note 5038218 3
+#: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-02-20
+#: last_checked: 2026-03-07
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50190,7 +50190,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-06 vvv
+#: last_checked: 2026-03-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50645,7 +50645,7 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-03-06 vvv
+#: last_checked: 2026-03-07 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -50927,7 +50927,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-07
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51265,11 +51265,11 @@ Hentigstr.	q4::inwork 18586,9172 18548,8942 18518,8778
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1772887891, # undef, # XXX
        text  => 'Hansastr.: Gleisbauarbeiten und Fahrbahnsanierung, ggfs. kann die Straße nicht überquert werden',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: last_checked: 2025-12-12
+# REMOVED --- #: last_checked: 2025-12-12
 #: note: Gleisbauarbeiten weitgehend beendet, aber die Absperrgitter stehen weiterhin
 ## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 15986,16922 15929,16870 15875,16816\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
 #       3nocross::ignrte 15986,16922 15929,16870 15875,16816
@@ -52052,6 +52052,44 @@ EOF
 #: also_indoor: traffic (T,G)
 	q4::inwork 6044,3110 5936,2977 5853,3050
 	q4::inwork 5774,2785 5936,2977 6022,2901
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Blockdammweg: Bauarbeiten, Fahrbahn möglicherweise gesperrt',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23&plugid=/ingrid-group:ige-iplug-be&docid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/2_Uebersichtslageplan.pdf
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/3_Lageplan_250.pdf
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/4_Schnitt_50.pdf
+#: by: https://www.bahninfo-forum.de/read.php?9,726473,726473
+#: by: https://www.bahninfo-forum.de/read.php?9,763838,763884#msg-763884 (Bauzeit September 2023 bis Dezember 2023)
+#: by: https://www.nd-aktuell.de/artikel/1173566.strassenbahnausbau-ostkreuz-tram-in-der-endlosschleife.html (Fertigstellung 2024 oder später?)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-17324.pdf
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/strassenbahnlinie-22-wird-dringend-benoetigt_a404082
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ehrlichstra%C3%9Fe-80-82-blockdammweg.1330/#post-22388
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-18187.pdf
+#: by: https://www.tagesspiegel.de/berlin/bessere-anbindung-von-karlshorst-berliner-tram-linie-22-wird-dieses-jahr-nicht-fertig-11304169.html (Bauzeit halbes Jahr nach Erteilen der Baugenehmigung)
+#: by: https://www.bahninfo-forum.de/read.php?9,767323,801038#msg-801038 (Erwähnung der Ampel Ehrlichstr./Blockdammweg zum Schuljahr 2024/2025)
+#: by: https://www.nd-aktuell.de/artikel/1173566.strassenbahn-kein-ende-beim-tram-ausbau-der-bvg-zum-berliner-ostkreuz.html
+#: by: https://www.nd-aktuell.de/artikel/1185212.oeffentlicher-nahverkehr-oepnv-in-berlin-baurecht-fuer-neue-tramlinie-ist-da.html (Inbetriebnahme Mitte 2026?)
+#: by: https://entwicklungsstadt.de/fortschritt-in-der-parkstadt-karlshorst-gruenflaeche-mit-100-neuen-baeumen-eroeffnet-im-april/ (Erwähnung)
+#: by: https://www.nd-aktuell.de/artikel/1190546.oepnv-bvg-keine-tram-von-friedrichshain-bis-karlshorst.html (Inbetriebnahme nicht vor dem 2. Quartal 2026)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23105.pdf (geplante Bauarbeiten von März 2026 bis Herbst 2026; während der Bauarbeiten Sperrung, auch für den Fußverkehr)
+#: by: https://www.nd-aktuell.de/artikel/1193002.bvg-berlins-kuerzeste-tram-kann-kommen.html
+#: by: https://www.nd-aktuell.de/artikel/1194725.bvg-tram-ostkreuz-droht-die-naechste-schleife.html (2026)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24501.pdf (Leitungsarbeiten ab März 2026: Bauarbeiten für die Zwischenendstelle; Ende Mai bis Anfang September 2026 die eigentlichen Bauarbeiten, siehe auch Gleisbauarbeiten zwischen Trautenauer Str. und Heiligenberger Str.)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24534.pdf
+#: osm_watch: way id="1456917114" version="4"
+#: osm_watch: note 5193492 2
+#: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
+#: last_checked: 2026-03-01
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2026-03-15 (pardok: geplanter Beginn der Leitungsarbeiten)
+#: next_check: 2026-03-02 (bahninfo-forum)
+# REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten)
+	2::inwork 17754,8863 17762,8855 17904,8924
 EOF
      },
     );

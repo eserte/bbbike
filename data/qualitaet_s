@@ -4714,7 +4714,8 @@ Rüdickenstr. [Wohngebiet]: Beton	Q0 17264,17489 17172,17424 17101,17460 17064,17
 (Falkenberger Chaussee - Rüdickenstr.): grobes Verbundsteinpflaster	Q1 16938,17500 16992,17472 17004,17471 17064,17515
 (Grünanlage): wassergebundene Decke	Q1 17004,17471 17185,17388 17377,17309 17392,17315
 Neuzeller Weg: Asphalt/Beton	Q1 16658,17142 16578,17285
-Drossener Str.: Asphalt/Beton	Q1 16915,17231 16709,17177 16658,17142 16471,17036 16402,16990 16381,16969
+Drossener Str.: rauer Asphalt	Q1 16915,17231 16753,17192 16658,17142 16471,17036
+Drossener Str.: Asphalt	Q0 16471,17036 16402,16990 16381,16969
 Tamseler Str.: Asphalt	Q0 16556,16673 16633,16687 16807,16726 17004,16778
 Gerzlower Str.: Asphalt	Q0 16806,16496 16718,16545 16622,16569
 Degnerstr.: Asphalt mit einigen Aufpflasterungen	Q0 16806,16496 16692,16253 16653,16150
@@ -5660,7 +5661,7 @@ Lankestrand: Kopfsteinpflaster	Q2 -3689,11291 -3679,11248 -3673,11216
 Heilsberger Allee: Asphalt	Q0 -611,11193 -559,11209 -402,11328 -332,11426 -309,11526 -278,11843
 Sensburger Allee: Asphalt	Q0 -45,11520 -177,11541 -309,11526
 Straße 153: Verbundsteinpflaster	Q1 -9071,4876 -9059,4862 -8994,4851
-Hohenschönhausener Weg.: Asphalt	Q0 16697,17695 16607,17767 16501,17851 16397,17938 16306,18011
+Hohenschönhausener Weg.: Asphalt	Q0 16760,17614 16697,17695 16607,17767 16501,17851 16397,17938 16306,18011
 Ribnitzer Str.: Beton	Q0 16277,17830 16306,18011 16335,18197 16420,18262 16473,18302
 Zum Hechtgraben: Beton	Q0 16420,18262 16365,18335 16323,18395 16297,18468 16268,18551 16233,18643
 Nienhagener Str.: Beton	Q0 16365,18335 16469,18409 16534,18457
@@ -11408,9 +11409,9 @@ Dernburgstr.: Verbundsteinpflaster	Q1 2673,10670 2596,10663
 (Zechliner Str. - Neustrelitzer Str.): Verbundsteinpflaster	Q1 16281,14604 16323,14672
 Cecilienstr.: Asphalt, einige Schäden	Q0 20281,14012 20348,14005 20447,13995 20567,13983 20690,13972 20830,13960
 Johanneskirchplatz: gepflastert	Q2 3030,3276 3056,3290 3067,3319 3059,3339
-Lauterplatz: Verbundsteinpflaster	Q1 5799,7880 5707,7878
-Hannah-Höch-Weg: Asphalt	Q0 5635,7820 5800,7826
-Lauterplatz: Betonsteinpflaster	Q0 5800,7826 5799,7880
+Lauterplatz: Verbundsteinpflaster	Q1 5810,7883 5707,7878
+Hannah-Höch-Weg: Asphalt	Q0 5635,7820 5812,7826
+Lauterplatz: Betonsteinpflaster	Q0 5812,7826 5810,7883
 Chaukenstr. [21-37]: Verbundsteinpflaster	Q1 20207,789 20270,760
 Chaukenstr. [21-37]: Verbundsteinpflaster	Q1 20255,722 20270,760 20278,780
 Altglienicker Grund [Wohngebiet]: Beton	Q0 19243,450 19225,384 19202,306
@@ -11836,7 +11837,7 @@ Hilde-Archenhold-Brücke: Asphalt	Q0 19300,4018 19358,4077
 Ungarnstr.: Fahrbahn betoniert und Radweg mit Verbundsteinpflaster, beide mit Schäden und Unebenheiten	Q1 7666,16879 7583,16872
 Ungarnstr.: Fahrbahn asphaltiert (leicht uneben) und Radweg mit schadhaften Verbundsteinpflaster	Q0 7583,16872 7394,16836 7267,16784 7177,16715 7106,16646 7056,16587
 Friedenauer Höhe: Asphalt	Q0 6293,7875 6263,7894 6178,7899
-Friedenauer Höhe: Betonsteinpflaster	Q0 6178,7899 6126,7917 6011,7911 5799,7880
+Friedenauer Höhe: Betonsteinpflaster	Q0 6178,7899 6126,7917 6011,7911 5810,7883
 (Reinbeckstr. - Spreeufer): Kopfsteinpflaster	Q2 18310,6223 18298,6199
 (Reinbeckstr. - Spreeufer): Beton	Q1 18298,6199 18282,6184 18259,6110
 (Reinbeckstr. - Spreeufer): Gehwegplatten	Q0 18259,6110 18242,6067
@@ -11987,7 +11988,7 @@ Hänflingsteig: Kopfsteinpflaster	Q2 20093,14591 19905,14650 19830,14668 19768,14
 Kleine Mittelstr.: Kopfsteinpflaster	Q2 -3536,15450 -3414,15460
 (ehem. Autobahnbrücke): guter Beton	Q1 -5359,-1298 -5364,-1204
 Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17894,17925 17956,17927 17994,17958 18010,17972 18109,17861 18179,17915 18214,17876
-Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17994,17958 17962,18010 18041,18073 18134,17967 18279,18079
+Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17994,17958 17962,18010 18041,18073 18141,17960 18279,18079
 Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 9120,20015 9155,19836 9159,19818
 Blumenthalstr.: Kopfsteinpflaster	Q2 9159,19818 9177,19745
 Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 9177,19745 9195,19644 9213,19538 9231,19440 9249,19351 9258,19290
@@ -13965,8 +13966,8 @@ Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	Q2 8106,3
 Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	Q2 8055,3547 8016,3651 7795,4242
 Mariendorfer-Hafen-Weg: Holzbohlen	Q1 7795,4242 7769,4315
 (Am Bahndamm): Verbundsteinpflaster/wassergebundene Decke	Q1 7769,4315 7727,4418 7692,4464 7667,4549
-Ahrenshooper Str.: Beton	Q1 16761,18516 16889,18347 16949,18261 17082,18068
-Ahrenshooper Str.: Beton	Q0 16905,17949 16938,17971 17082,18068 17215,18153
+Ahrenshooper Str.: Beton	Q1 16761,18516 16889,18347 16949,18261 17081,18070
+Ahrenshooper Str.: Beton	Q1 16905,17949 16938,17971 17081,18070 17217,18165
 Havelstr.: Asphalt	Q0 -3150,14631 -3122,14557 -3107,14535 -3054,14498
 Klärwerkstr.: Asphalt	Q0 -1284,13340 -1258,13552
 Gräfenberger Weg: schlechtes Kopfsteinpflaster	Q3 2390,2954 2346,3077 2256,3172
@@ -14213,7 +14214,9 @@ Eisenhammerweg: Kopfsteinpflaster	Q2 1640,19645 1606,19775
 Eisenhammerweg: Beton	Q0 1606,19775 1585,19862
 Eisenhammerweg: mäßiges Kopfsteinpflaster	Q2 1585,19862 1563,19960 1543,20060
 Eisenhammerweg: schlechtes Kopfsteinpflaster	Q3 1543,20060 1529,20131
-Wustrower Str.: guter Beton	Q0 16888,18610 17016,18436 17076,18355 17128,18281 17215,18153 17341,17990 17289,17952 17100,17819 17015,17935
+Wustrower Str.: guter Beton	Q0 16888,18610 17016,18436 17076,18355 17128,18281 17217,18165
+Wustrower Str.: Beton mit einigen Schäden	Q1 17217,18165 17341,17990
+Wustrower Str.: guter Beton	Q0 17341,17990 17289,17952 17100,17819 17015,17935
 Wustrower Str.: guter Beton	Q0 17289,17952 17356,17856
 Waldseeweg: mäßiges Kopfsteinpflaster	Q2 4256,23985 4237,23964 4128,23880 3985,23814
 Waldseeweg: mäßiges Kopfsteinpflaster	Q2 4237,23964 4240,23985
@@ -18536,7 +18539,8 @@ Seefelder Str. (Fußweg): Verbundsteinpflaster	Q1 17325,16189 17362,16189 17383,1
 Seefelder Str.: Beton	Q0 16961,16042 16966,16127
 Seefelder Str.: Beton	Q1 16966,16127 17000,16141 17184,16149 17290,16154 17293,16134 17341,16136 17344,16081 17419,16080
 Straße 142: rauer Asphalt	Q0 17102,16464 17152,16605 17212,16760
-Straße 142: Asphalt	Q0 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
+Straße 142: Asphalt	Q0 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277
+Straße 142: Verbundsteinpflaster	Q1 17418,17277 17422,17288
 Paul-Koenig-Str.: Asphalt	Q0 17152,16605 17268,16526 17312,16498 17304,16485
 Paul-Koenig-Str.: Asphalt mit einigen Schäden	Q1 17304,16485 17385,16432
 Paul-Koenig-Str.: schlechtes Kopfsteinpflaster	Q3 17385,16432 17424,16407 17446,16393

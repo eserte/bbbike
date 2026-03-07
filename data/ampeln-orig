@@ -420,21 +420,21 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-07
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-07
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 # REMOVED (ja) --- #: XXX gibt es die Ampeln wieder?
-#: last_checked: 2026-01-17 vvv
+#: last_checked: 2026-03-01 (luftbildsuche) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv
@@ -1592,7 +1592,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2026-01-25
+#: last_checked: 2026-03-03 (architektur-urbanistik)
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	F::inwork 8096,11393
@@ -2366,7 +2366,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23162,16095
 	X 23895,15904
 	X 25007,15650
-	X 17843,18078
+	X 17837,18075
 	X 17400,17790
 	X 16837,17440
 	X 15662,16649

@@ -49,7 +49,7 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3::inwork 15937,15134 16075,15069
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
-Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5799,7880
+Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5810,7883
 Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
 Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619 11706,13635
@@ -2757,6 +2757,7 @@ Kohlweißlingstr.: drei Bodenschwellen, Lücke meist frei	q0; 21598,11190 21637,11
 (Gleditschstr. - Elßholzstr.): einige Fußgänger	q3 7122,9517 7166,9512 7209,9507
 Jean-Monnet-Str.: zwei Bodenschwellen	q2 7995,13537 8048,13578
 (Einbecker Str. - Frankfurter Allee): schmale Fahrbahn, kein Bürgersteig	q2 17020,11748 17034,11797 17221,11777 17251,11789
+Warnitzer Str.: Kurven, unübersichtlch	q1 18141,17960 18041,18073 17962,18010 17994,17958
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3307,7 +3308,7 @@ Brusebergstr.: enge Straße	q1 6060,18534 6045,18305 6086,18162 6115,18042 6145,1
 Plüschowstr.: einige Fußgänger	q1 242,3459 199,3774
 Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
 Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
-Hohenschönhausener Weg: Fußgänger haben Vorrang	q1 15600,18551 15825,18385 16306,18011 16397,17938 16501,17851 16607,17767 16697,17695
+Hohenschönhausener Weg: Fußgänger haben Vorrang	q1 15600,18551 15825,18385 16306,18011 16397,17938 16501,17851 16607,17767 16697,17695 16760,17614
 Murtzaner Ring: enge Straße	q1 19593,14472 19593,14452 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179 20051,14191 20061,14220 20056,14373 20051,14441
 Lindenhoekweg: enge Straße	q1 12382,15802 12310,15837 12247,15868
 Taxusweg: enge Straße	q1 25649,13728 25671,13840 25681,13943 25681,14049
