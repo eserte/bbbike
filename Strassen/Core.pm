@@ -686,6 +686,21 @@ sub as_string {
 }
 
 ### AutoLoad Sub
+sub as_binary_string {
+    my($self, %args) = @_;
+    require Encode;
+    my $s = $self->as_string(%args);
+    my $encoding = $self->get_global_directive('encoding');
+    if (defined $encoding) {
+	return Encode::encode($encoding, $s);
+    }
+    if (Encode::is_utf8($s)) {
+	return Encode::encode('iso-8859-1', $s);
+    }
+    $s;
+}
+
+### AutoLoad Sub
 sub global_directives_as_string {
     my($self) = @_;
     my $glob_dir;

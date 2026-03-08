@@ -57,7 +57,7 @@ my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
 my $zebrastreifen2_tests = 2;
 my $zebrastreifen3_tests = 2;
-my $encoding_tests = 10;
+my $encoding_tests = 12;
 my $multistrassen_tests = 11;
 my $initless_tests = 3;
 my $global_directive_tests = 10;
@@ -568,6 +568,10 @@ EOF
     $s->init;
     my $rec = $s->next;
     is($rec->[Strassen::NAME], "\x{20ac}", "Got unicode character");
+
+    my $as_binary_string_result = $s->as_binary_string;
+    ok !Encode::is_utf8($as_binary_string_result), 'no utf-8 characters in as_binary_string return value';
+    is $as_binary_string_result, $octet_data, 'roundtrip';
 
     my($tmpfh,$tmpfile) = create_temporary_content($octet_data, SUFFIX => ".bbd");
 
