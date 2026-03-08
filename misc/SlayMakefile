@@ -91,7 +91,7 @@
 		my %citypart2link;
 		while(my($citypart, $fz) = each %citypart2fz) {
 			@{ $fz->{Data} } = sort @{ $fz->{Data} };
-			my $bbd = $fz->as_string;
+			my $bbd = $fz->as_binary_string;
 			my @cmd = ("$BBBIKE_MISCSRC_DIR/bbd2mapservhtml.pl",
 				   '-bbbikeurl', $bbbikeurl,
 				   '-email', $BBBike::EMAIL,
