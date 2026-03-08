@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -41,6 +41,7 @@ use StrassenNextCheck;
 use VectorUtil qw(get_polygon_center);
 
 use constant ORG_MODE_HEADLINE_LENGTH => 77; # used for tag alignment
+use constant DEFAULT_ZOOM => 17;
 
 sub _temp_blockings_id_to_line ($$);
 
@@ -385,23 +386,37 @@ for my $file (@files) {
 		 for my $also_indoor_dir (@{ $dir->{also_indoor} }) {
 		     if      ($also_indoor_dir =~ m{^traffic\b}) {
 			 my($extra) = $also_indoor_dir =~ m{(\(.*?\))}; # $extra contains map specifiers
-			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=15&profile=traffic", $extra];
-			 if ($extra && ($extra eq '(none)' || $extra =~ /\bB\b/)) { # not handled by mc.bbbike.org, so create an extra link
-			     push @extra_url_defs, ['Bing', sprintf('https://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1', $py, $px, 17)];
-			 }
-			 if ($extra && ($extra eq '(none)' || $extra =~ /\bT\b/)) { # not handled by mc.bbbike.org, so create an extra link
-			     push @extra_url_defs, ['TomTom', sprintf('https://plan.tomtom.com/de/?p=%s,%s,%.2fz', $py, $px, 17)];
-			 }
-			 if ($extra && ($extra eq '(none)' || $extra =~ /\bA\b/)) { # not handled by mc.bbbike.org, so create an extra link
-			     my($px0,$px1) = map { $px + $_*0.01136 } (-1, +1);
-			     my($py0,$py1) = map { $py + $_*0.00245 } (-1, +1);
-			     push @extra_url_defs, ['ADAC', sprintf("https://maps.adac.de/?traffic=construction,announcements,flow&bounds=%.5f,%.5f-%.5f,%.5f", $py0,$px0,$py1,$px1)];
-			 }
-			 if ($extra && ($extra eq '(none)' || $extra =~ /\bW\b/)) { # construction information not available as tiles and thus handled by mc.bbbike.org, so create an extra link
-			     push @extra_url_defs, ['Waze', sprintf('https://www.waze.com/en/live-map/directions?to=ll.%s%%2C%s', $py, $px)];
-			 }
-			 if ($extra && ($extra eq '(none)' || $extra =~ /\bH\b/)) {
-			     push @extra_url_defs, ['Here', sprintf('https://wego.here.com/?map=%f,%f,%.2f', $py, $px, 17)];
+			 if (!$extra) {
+			     push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=".DEFAULT_ZOOM."&profile=traffic", $extra];
+			 } else {
+			     my $decorate_label = sub {
+				 my($label, $extra_begin) = @_;
+				 if (defined $extra_begin && $extra_begin =~ /^(?:ex|no)/) {
+				     "($label)";
+				 } else {
+				     $label;
+				 }
+			     };
+			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*G\b/)) {
+				 push @extra_url_defs, [$decorate_label->('Google', $1), sprintf('http://www.google.com/maps/@%s,%s,%dz/data=!5m1!1e1', $py, $px, DEFAULT_ZOOM)];
+			     }
+			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*T\b/)) {
+				 push @extra_url_defs, [$decorate_label->('TomTom', $1), sprintf('https://plan.tomtom.com/de/?p=%s,%s,%.2fz', $py, $px, DEFAULT_ZOOM)];
+			     }
+			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*W\b/)) {
+				 push @extra_url_defs, [$decorate_label->('Waze', $1), sprintf('https://www.waze.com/en/live-map/directions?to=ll.%s%%2C%s', $py, $px)];
+			     }
+			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*H\b/)) {
+				 push @extra_url_defs, [$decorate_label->('Here', $1), sprintf('https://wego.here.com/?map=%f,%f,%.2f', $py, $px, DEFAULT_ZOOM)];
+			     }
+			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*A\b/)) {
+				 my($px0,$px1) = map { $px + $_*0.01136 } (-1, +1);
+				 my($py0,$py1) = map { $py + $_*0.00245 } (-1, +1);
+				 push @extra_url_defs, [$decorate_label->('ADAC', $1), sprintf("https://maps.adac.de/?traffic=construction,announcements,flow&bounds=%.5f,%.5f-%.5f,%.5f", $py0,$px0,$py1,$px1)];
+			     }
+			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*B\b/)) { # order last, as it is showing the same data as TomTom and displaying on mobile devices is broken
+				 push @extra_url_defs, [$decorate_label->('Bing', $1), sprintf('https://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1', $py, $px, DEFAULT_ZOOM)];
+			     }
 			 }
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
 			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
