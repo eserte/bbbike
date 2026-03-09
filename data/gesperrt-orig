@@ -673,7 +673,7 @@ Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
 #: by: ^^^
 Im Heidewinkel	1 1065,15229 1009,15400 978,15496 877,15474 772,15460
 #: note: Luftbild
-Teufelsseestr.	1 454,11159 438,11236
+Teufelsseestr.	1 445,11165 438,11236
 #: by: Michael Häusler:
 Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
 Flughafen Tempelhof	1 9364,8640 9451,8548 9401,8510 9321,8607
@@ -859,7 +859,7 @@ Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
 #: by: anonymous and osm
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
-Straßenbahnwendeschleife Virchowstr.	1 13081,13457 12925,13373
+Straßenbahnwendeschleife Virchowstr.	1 13081,13457 12944,13398 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 B179n: benutzungspflichtiger Radweg existiert	2::igndisp 24383,-12050 24368,-11972 24320,-11722 24353,-11553 24361,-11236
@@ -4070,11 +4070,15 @@ Drängelgitter	BNP:3::trailer=10 17498,9714
 #: by: https://www.entwicklungsstadt.de/mehrjaehrige-sperrung-in-mitte-u6-bauarbeiten-legen-teil-der-chausseestrasse-lahm/
 #: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026)
 #: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
-#: next_check: 2026-03-05 vvv
-# REMOVED --- #: next_check: 2028-07-01 vvv
+#: last_checked: 2026-03-09 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2028-07-01 vvv
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
-Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9070,14058 9011,14019 8870,13926
+# REMOVED (hier nicht) --- Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9070,14058 9011,14019
+Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9011,14019 8870,13926
 #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: also_indoor: traffic (no-T,no-G)
 #: note: Lieferverkehr frei, kurze Engstelle (ca. 20-30m)

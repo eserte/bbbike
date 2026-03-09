@@ -77,7 +77,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13434,13234 1
 #: last_checked ^^^
 # 
 # REMOVED (offen) --- #: next_check_id: KNIPRODE-2024 --- #: add_fragezeichen: Sind hier noch immer Bauarbeiten? --- #: also_indoor: traffic (B,T) --- #: last_checked: 2025-02-01 --- #: check_frequency: 30d --- #: next_check: 2025-09-30 (BA Pankow) --- Virchowstr.: Anbindung zur Kniprodestr. gesperrt	q3::inwork 12640,13814 12707,13706
-# REMOVED --- #: osm_watch: note 4340404 1 --- #: last_checked: 2024-08-27 --- Straßenbahnwendeschleife Virchowstr.: Bauarbeiten, Sperrungen möglich	q4::inwork 12925,13373 13081,13457 13151,13367
+# REMOVED --- #: osm_watch: note 4340404 1 --- #: last_checked: 2024-08-27 --- Straßenbahnwendeschleife Virchowstr.: Bauarbeiten, Sperrungen möglich	q4::inwork 12925,13373 12944,13398 13081,13457 13151,13367
 # REMOVED --- #: source_id: viz2021:13.435796,52.521627,04.01.2024,07:00 (nur Kfz-Verkehr, bis 26.01.2024) (bis 09.02.2024) (inaktiv) --- #: by: https://berliner-abendblatt.de/berlin-news/wasserrohrbruch-in-friedrichshain-sperrung-bis-ende-januar-id241331 --- #: also_indoor: traffic (G) --- #: last_checked: 2024-02-04 (mapillary) vvv --- #: next_check: 2024-02-09 vvv --- #: valid: -20240209 vvv --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q3::inwork; 12616,12844 12600,12860 --- Friedenstr.: kurzes Stück der Fahrbahn gesperrt	q2::inwork; 12600,12860 12520,12938 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX Sieht nach Leitungsarbeiten aus. --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: also_indoor: traffic (B) --- #: last_checked: 2024-04-23 --- #: check_frequency: 14d --- Gubener Str.: Sperrung im Kreuzungsbereich Grünberger Str./Wedekindstr.	q2+::inwork 13406,11896 13352,12003
 # 
@@ -489,7 +489,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-03-03 vvv
+#: last_checked: 2026-03-09 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="46"
@@ -1333,12 +1333,13 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neue-sperrung-wegen-rohrbruch-baustelle-kreuzung-in-prenzlauer-berg-funf-tage-dicht-15316994.html
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-03-02 vvv
+#: last_checked: 2026-03-09 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-03-09 (mögliche Erweiterung der Sperrung?) vvv
+#: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
 # REMOVED --- #: next_check: 2026-04-20 (VIZ-Verkehrsmeldung) vvv
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
-Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619 11706,13635
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q4::inwork 11762,13619 11706,13635
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

@@ -40557,7 +40557,7 @@ EOF
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-03-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -42380,7 +42380,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), meistens nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15, 2026-03-02). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2026-03-02 vvv
+#: last_checked: 2026-03-09 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2027-03-31 (Tsp) vvv
@@ -45218,7 +45218,7 @@ EOF
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-03-06 vvv
+#: last_checked: 2026-03-09 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -46008,7 +46008,7 @@ EOF
 #: osm_watch: way id="1119255054" version="12"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-03-05
+#: last_checked: 2026-03-09
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -48366,9 +48366,11 @@ EOF
 #: source_id: adac:1081924964 (bis voraussichtlich 18.07.2025) (bis 15.08.2025) (inaktiv)
 #: source_id: viz2021:13.54611,52.43478,10.06.2025,07:00 (hier: Radickestr. bis Friedenstr., bis 15.08.2025) (inaktiv)
 #: source_id: bvg2024:162#HIM_FREETEXT_323764 (Umleitung, vermutlich wegen bevorstehenden Bauarbeiten an der Kreuzung Radickestr./Nipkowstr.)
+#: source_id: LMS-BR:401266/72 viz2021:13.550062,52.436321,09.03.2026,07:00 (Radickestr./Nipkowstr., bis 27.03.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (bei der Baustelle Radickestr./Nipkowstr. wird nur der Kfz-Verkehr erwähnt, bis Ende März 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm547wnd22g
 # REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
 # REMOVED (hier nicht mehr?) --- #: note: Halteverbotsschilder bis 15.08.2025, auch laut Website bis zum gleichen Datum; bei rbb+adac nun ebenfalls bis zum 15.08.2025 verlängert
 # REMOVED --- Radickestraße: Einbahnstraße zwischen Anna-Seghers-Str. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572
@@ -49343,16 +49345,20 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-03-08 00:00:00"), # 1750654800, # 2025-06-23 07:00
-       until => $isodate2epoch->("2026-05-20 23:59:59"), # $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
+       until => $isodate2epoch->("2026-05-18 23:59:59"), # $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
 #      text  => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Fahrbahn Richtung Osten gesperrt, gemeinsamer Geh- und Radweg (Umwege + Bordsteine), vom 24.06.2025 07:00 bis 31.07.2025 17:00',
        text  => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis Mitte Mai 2026',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
 #: source_id: adac:2089388170 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.492511,52.516292,24.06.2025,07:00 (bis 31.07.2025) (inaktiv)
+#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026)
 # REMOVED (alte Bauarbeiten von 2025) --- #: note: bei rbb bis 31.07.2025 verlängert --- #: note: durch die Umwege + Bordsteine ist q4 berechtigt ---	q4::inwork; 16397,12397 16485,12384 16583,12371
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
+#: next_check: 2026-05-18 (VIZ: weitere Arbeiten?)
 	q4::inwork; 16276,12273 16397,12397 16485,12384
 EOF
      },
@@ -49948,7 +49954,7 @@ EOF
 #: source_id: adac:356158344 (bis 17.10.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.254503,52.506746,21.07.2025,07:00 (bis 17.10.2025) (inaktiv)
 #: source_id: LMS-BR:386775/72 viz2021:13.25418,52.50807,15.10.2025,06:00 (bis 19.12.2025) (inaktiv)
-# REMOVED ---	q4::inwork 368,11051 251,11039 37,11014
+# REMOVED ---	q4::inwork 356,11050 251,11039 37,11014
 # REMOVED --- Kreuzungsbereich Insterburgallee ist auch betroffen	q3::inwork 229,11213 251,11039 265,10935
 Insterburgallee	q4::inwork 229,11213 251,11039
 EOF
@@ -50544,7 +50550,7 @@ EOF
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-03-03
+#: last_checked: 2026-03-09 (daf)
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
@@ -50734,7 +50740,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
 #: by: https://bvg.de/dam/jcr:d7121a77-8148-45ab-a019-8e2e57fa9e29/Karte_Map_M1_12.png (Ersatzverkehr)
 #: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
-#: source_id: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
+#: source_id[inactive]: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
 #: last_checked: 2026-02-10
 #: check_frequency: 30d
@@ -51958,7 +51964,7 @@ EOF
        text  => 'Bahnübergang Hangelsberg: Gleisbauarbeiten, Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, 28.02.2026 06:00 Uhr bis 09.03.2026 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: 266700064 (bis 09.03.2026)
+#: source_id: 266700064 (bis 09.03.2026) (inaktiv)
 	2::inwork 45787,-225 45836,-8 45968,619
 EOF
      },
@@ -52084,15 +52090,48 @@ EOF
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24501.pdf (Leitungsarbeiten ab März 2026: Bauarbeiten für die Zwischenendstelle; Ende Mai bis Anfang September 2026 die eigentlichen Bauarbeiten, siehe auch Gleisbauarbeiten zwischen Trautenauer Str. und Heiligenberger Str.)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24534.pdf
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse (bis voraussichtlich 1. November 2026)
+#: by[nocache]: https://www.uvp-verbund.de/documents-ige-ng/igc_be/27B18CBA-A54C-4B76-B3FF-2B1F76A96A23/Alle_Unterlagen_gesiegelt%2F3_Lageplan_gesiegelt.pdf (Baustelleneinrichtungsfläche)
 #: osm_watch: way id="1456917114" version="4"
 #: osm_watch: note 5193492 2
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
-#: last_checked: 2026-03-01
-#: check_frequency: 180d
+#: last_checked: 2026-03-01 vvv
+#: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2026-03-15 (pardok: geplanter Beginn der Leitungsarbeiten)
-#: next_check: 2026-03-02 (bahninfo-forum)
+#: next_check: 2026-03-02 (bahninfo-forum) vvv
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten)
-	2::inwork 17754,8863 17762,8855 17904,8924
+Blockdammweg, Rampe	2::inwork 17754,8863 17762,8855 17904,8924
+#: XXX dieser Abschnitt vermutlich Baustelleneinrichtungsfläche, auch prüfen!
+Blockdammweg - Wandlitzstr.	2::inwork 17754,8863 17915,8945
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1772838000, # 2026-03-07 00:00
+       until => $isodate2epoch->("2026-07-17 23:59:59"),
+       text  => 'Behrenstr.: Einbahnstraßenregelung vor der Komischen Oper, bis Mitte Juli 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm6ljzf5k2g
+#: source_id: LMS-BR:401270/72 viz2021:13.38605,52.51546,09.03.2026,07:00 (westliche Behrenstr., bis 17.07.2026)
+#: source_id: LMS-BR:401276/72 viz2021:13.38904,52.51565,09.03.2026,07:00 (östliche Behrenstr., auch für den Radverkehr relevant, bis 17.07.2026)
+#: source_id: LMS-BR:401277/72 viz2021:13.38623,52.51459,09.03.2026,07:00 (Glinkastr., bis 17.07.2026)
+#: note: Bauarbeiten bis Mitte Juli 2026, es wird nur der Autoverkehr genannt
+# REMOVED --- #: next_check: 2026-03-09 (VIZ)
+# REMOVED (für Radfahrer existiert eine Furt) --- Behrenstr.: gilt die Sperrung auch für Radfahrer?	?::inwork 9164,12172 9064,12156 9054,12154 8861,12125
+# REMOVED (Einbahnstraße Radfahrer frei, allerdings eine schmale noch nicht richtig markierte Spur) --- Glinkastr.: gilt die Sperrung auch für Radfahrer?	?::inwork; 9183,12076 9164,12172 9141,12320
+#: note: Länge der Einbahnstraßenregelung geschätzt 100m
+	q3::inwork; 9373,12197 9164,12172
+EOF
+     },
+     { from  => 1772924400, # 2026-03-08 00:00
+       until => 1777672799, # 2026-05-01 23:59
+       text  => 'Cunistraße: vom Rosenthaler Weg abgehängt, bis Anfang Mai 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260309
+	q4::inwork 11807,22395 11694,22479
 EOF
      },
     );

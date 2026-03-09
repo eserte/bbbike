@@ -52,7 +52,8 @@ Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5810,7883
 Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
-Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619 11706,13635
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q4::inwork 11762,13619 11706,13635
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9365,615 9347,595 9206,553 9215,506 9239,461 9254,413
 (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9004,481 9124,522 9160,460 9200,450
@@ -3715,7 +3716,7 @@ Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 
 Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
 Köpenicker Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp::igndisp; 21137,11346 21137,11294
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 8870,13926 8831,13973 8732,14098
-Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 9070,14058 9011,14019 8870,13926
+Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 9011,14019 8870,13926
 An der Ostbahn: Bauarbeiten, kurze Engstelle mit Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 12645,11673 12900,11515
 Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -3606,11532 -3657,11631 -3692,11681
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7697,14187 7781,14238 7802,14250

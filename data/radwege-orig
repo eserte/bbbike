@@ -529,7 +529,7 @@ Radweg auf der Fahrbahn hinter den parkenden Autos	RW2;RW2 5900,11913 6164,11947
 	RW1;RW1 4245,10435 4256,10583 4267,10724 4270,10861 4289,11060 4302,11232 4312,11354 4331,11554 4337,11721 4356,12009
 Gehweg für Radfahrer frei	RW9;RW1 775,10426 643,10524 564,10584
 Gehweg für Radfahrer frei	RW8;RW1 564,10584 452,10669 475,10882 495,11090
-Gehweg für Radfahrer frei	RW1;RW9 225,10885 265,10935 368,11051 454,11159
+Gehweg für Radfahrer frei	RW1;RW9 225,10885 265,10935 356,11050 445,11165
 #: note: insbesondere ist die Radwegführung aus Richtung Heerstr./Teufelsseestr. so, dass man den linken Gehweg benutzen muss
 Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.morgenpost.de/content/2008/02/03/berlin/944972.html "gibt es schon"
@@ -538,7 +538,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://fahrrad.wikia.com/wiki/Teufelsseechaussee
 #: confirmed_by: srt
 	RW7;RW7 -938,9394 -886,9447 -817,9533 -697,9598 -471,9647 -324,9701 -232,9768 -153,9854 -103,9934 -75,10017 -57,10103 -1,10327 41,10501 96,10701 200,10851 225,10885
-	RW2;RW8 454,11159 480,11204 504,11243
+	RW2;RW8 445,11165 486,11211 504,11243
 	RW2;RW1 4741,5309 4677,5274 4593,5235 4516,5194
 	RW2;RW2 4516,5194 4436,5150 4347,5103
 neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10996 10562,11029 10501,11056 10256,11160 10020,11262
@@ -1050,7 +1050,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2026-03-02
+#: last_checked: 2026-03-09
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -7170,7 +7170,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)

@@ -377,7 +377,7 @@ Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
 Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
 Im Heidewinkel	1 1065,15229 1009,15400 978,15496 877,15474 772,15460
-Teufelsseestr.	1 454,11159 438,11236
+Teufelsseestr.	1 445,11165 438,11236
 Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
 Flughafen Tempelhof	1 9364,8640 9451,8548 9401,8510 9321,8607
 Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 11211,6384 11244,6379 11272,6374 11278,6359 11266,6347 11240,6350
@@ -487,7 +487,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 (KGA Rahnsdorf Süd, Birkenweg): kein Durchfangsverkehr, abgesperrtes Tor	2 30345,3277 30389,3314 30393,3437 30378,3501
 Steinträgerweg	1s 12987,2220 13023,2093
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
-Straßenbahnwendeschleife Virchowstr.	1 13081,13457 12925,13373
+Straßenbahnwendeschleife Virchowstr.	1 13081,13457 12944,13398 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 B179n: benutzungspflichtiger Radweg existiert	2::igndisp 24383,-12050 24368,-11972 24320,-11722 24353,-11553 24361,-11236
@@ -3561,7 +3561,7 @@ Schwingtor	BNP:5:-27:trailer=10 11543,20272
 Drängelgitter	BNP:3:-248:trailer=10 113,7
 Drängelgitter	BNP:3:-68:trailer=10 17498,9714
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s::inwork 8870,13926 8831,13973 8732,14098
-Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s::inwork 9070,14058 9011,14019 8870,13926
+Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s::inwork 9011,14019 8870,13926
 An der Ostbahn: Bauarbeiten, kurze Engstelle mit Einbahnstraßenregelung	1s:inwork 12645,11673 12900,11515
 Am Egelpfuhlgraben: Holzbohlensteg zum Bullengraben gesperrt	2::inwork -5790,13458 -5785,13606
 Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s -3606,11532 -3657,11631 -3692,11681
@@ -3909,8 +3909,8 @@ Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 251,11039 229,11213 200,
 Insterburgallee -> Heerstr.: Heerstr.	3::igndisp 200,11428 229,11213 438,11236
 Insterburgallee -> Insterburgallee: Heerstr.	3::igndisp 200,11428 229,11213 251,11039
 Sensburger Allee -> Heerstr.: Heerstr.	3::igndisp 326,11391 438,11236 504,11243
-Sensburger Allee -> Teufelsseestr.: Heerstr.	3::igndisp 326,11391 438,11236 454,11159
-Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 504,11243 438,11236 454,11159
+Sensburger Allee -> Teufelsseestr.: Heerstr.	3::igndisp 326,11391 438,11236 445,11165
+Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 504,11243 438,11236 445,11165
 Heerstr. -> Sensburger Allee: Heerstr.	3::igndisp 229,11213 438,11236 326,11391
 tragen (20 Stufen)	0:30:-186 23,11137
 Lerschpfad	1 2181,12276 2151,12397
