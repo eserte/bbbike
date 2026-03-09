@@ -36,3 +36,16 @@ rechtsabbiegende Autos schneiden geradeausfahrende Radfahrer	CS::danger 9222,360
 Checkpoint Charlie: unaufmerksame Touristen, ungeduldige Autofahrer	CP::danger 9478,11317
 #: note: siehe auch Ordnungsamt-Online-Anfrage 1xx341
 Ahrensfelder Chaussee: hohe Bordsteinkante am Ende des Radwegs	CS::danger; 21332,18819 21359,18834
+# 
+######################################################################
+# Vorübergehende Gefahrenstellen
+#
+#: temporary vvv
+# 
+#: next_check_id: NIEMETZ-2022
+#: XXX Spekulation: normalerweise gibt es hier eine einspurige Straßenführung, aber evtl. war man der Meinung, dass mit der Sperrung der Saalestr.+Niemetzstr. hier mehr Verkehrskapazität notwendig ist?
+#: last_checked: 2026-02-28
+#: check_frequency: 60d
+Karl-Marx-Str. hinter Walterstr.: typischerweise parkende Autos auf der provisorischen Radspur	CS::danger; 13121,6689 13141,6651
+# 
+#: temporary ^^^

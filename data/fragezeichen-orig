@@ -6284,11 +6284,13 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24501.pdf (Ende Mai bis Anfang September 2026: Gleisbauarbeiten zwischen Trautenauer Str. und Heiligenberger Str.; bis November 2026 Fahrleitungsarbeiten)
 #: by: https://vergabekooperation.berlin/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-19b93d33a3f-612e68b1b4be4955&Category=InvitationToTender (Bauzeit 25.05.2026 - 06.09.2026 (Gleisbauarbeiten))
 #: by: https://www.nd-aktuell.de/artikel/1197548.bvg-berlin-tramgleise-immer-abgefahrener.html
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse ("Erhaltungsmaßnahme" zwischen Blockdammweg und Trautenauer Str., voraussichtlich vom 26.05.2026 bis 06.09.2026, Hönower Wiesenweg wird zur Einbahnstraße (vermutlich bis Georg-Klingenberg-Str., hier auch Einbahnstraße?); zusätzlich Gleisbauarbeiten in der Ehrlichstr., EV geht via Müritzstr.+Wandlitzstr., dort auch Einbahnstraßenregelung?)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243332 (2024-11-11 - 2024-12-12)
+#: XXX ist der "untere" Blockdammweg ebenfalls gesperrt?
 #: last_checked: 2026-02-15
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2026-05-25 (vergabe website)
+#: next_check: 2026-05-26 (bvg)
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17736,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 # 
 #: osm_watch: way id="621721786" version="3"
@@ -7295,6 +7297,7 @@ Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article410800953/bruecke-niemetzstrasse-darum-verlaengern-sich-die-arbeiten-bis-2027.html (laut DB bis Ende Juli 2027)
 #: by: https://www.entwicklungsstadt.de/neubau-der-niemetzstrassen-bruecke-in-neukoelln-strasse-bleibt-voraussichtlich-bis-2027-gesperrt/
 #: note: früher das infravelo-Projekt "default-6d78387dc3d7944b4063adc358083e35
+#: traffic_note: Durch die Sperrung der Saalestr. gibt es nun erheblichen Ausweichverkehr in der Braunschweiger Str., insbesondere im mittleren Abschnitt (Schudomastr. - Elsterstr.), aber auch in den angrenzenden Bereichen mehr Verkehr als davor.
 #: XXX laut Plänen wird es Richtung Norden eine Fahrradschleuse und Richtung Süden eine Radspur geben; vermutlich wird die Straße während der Bauarbeiten komplett gesperrt
 #: XXX laut Ausschilderung an der Sonnenallee Sperrung ab 21.2.2022 4:30 Uhr
 #: XXX laut infravelo sollen hier Radspuren (PBL) erstellt werden; außerdem Einbahnstraße für Kfz
@@ -8977,6 +8980,7 @@ Quartiersweg - Wilhelm-Kabus-Str.: geplanter Geh- und Radweg	?::projected 7639,7
 #: by: https://entwicklungsstadt.de/umbau-der-altstadt-koepenick-barrierefreie-haltestellen-und-neue-gleise/ (Abschluss 2027)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409741488/so-gehen-die-bauarbeiten-der-bvg-in-der-altstadt-koepenick-weiter.html
 #: by: https://fahrinfo.vbb.de/him-uploads/1764145410722_Schlossplatz_K_penick_Haltestellenplan.png
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/altstadt-koepenick
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_244204 (ab 2024-10-28, für vorbereitende Arbeiten?)
 #: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024) (bis 08.12.2024) (bis 22.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:162#fe73d49a-2471-4d3b-a756-05ec6943ea49 (2024-11-25 - 2024-12-08)
@@ -12986,17 +12990,19 @@ Siemenssiedlung: Ausbau der Straßen, ggfs. werden die Sandstraßen durch befestig
 #: by: https://www.tagesspiegel.de/berlin/berliner-e-busse-bekommen-ein-depot-die-bvg-baut-batterietechnik-aus-14146766.html
 #: by: https://www.electrive.net/2025/08/08/bvg-legt-grundstein-fuer-e-bus-depot-in-marienfelde/
 #: by: https://www.nd-aktuell.de/artikel/1193192.e-mobilitaet-busflotte-der-bvg-elektro-anschluss-fuer-marienfelde.html
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/betriebshof-saentisstrasse (Inbetriebnahme 2027)
 #: osm_watch: way id="951211591" version="6"
 #: osm_watch: note 4120308 5
 #: priority: #D
 #: last_checked: 2025-10-08
-#: next_check: 2027-04-30 (Tsp)
+#: next_check: 2027-04-30 (Tsp, bvg)
 BVG-Betriebshof an der Säntisstraße: in Bau	?::inwork 9105,968 9106,932 9128,885 9274,973 9289,944 9391,1008 9449,923 9541,945 9485,1126 9376,1219 9241,1073 9165,1014 9155,1006 9129,986 9105,968
 # 
 #: next_check_id: BVGBETRIEBSHOFSPREE-2026
 #: by: https://www.nd-aktuell.de/artikel/1196189.elektromobilitaet-bvg-maximal-prozent-e-busse-bis.html (bis April 2027)
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/betriebshof-treptow (Inbetriebnahme 2027)
 #: priority: #D
-#: next_check: 2027-04-30 (nd)
+#: next_check: 2027-04-30 (nd, bvg)
 BVG-Betriebshof "Spree": in Bau	?::inwork 16838,6708 16858,6685 17056,6861 16995,7005 16965,6994 16962,7020 16849,6902 16775,6813 16768,6790 16805,6747 16838,6708
 # 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1435971.php

@@ -4981,10 +4981,10 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal we
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
 #: osm_watch: note 4813149 3
-#: osm_watch: way id="198581621" version="21"
+#: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-08 (osm)
 #: check_frequency: 30d
 #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5797,7 +5797,7 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
-#: note: Ende Mitt 2026 oder Mitte 2027?
+#: note: Ende Mitte 2026 oder Mitte 2027?
 #: last_checked: 2026-03-03 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
@@ -5871,7 +5871,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="734271970" version="10"
 #: osm_watch: way id="975241319" version="10"
 #: osm_watch: way id="970452276" version="8"
-#: osm_watch: note 5093384 3
+#: osm_watch: note 5093384 4
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
 #: last_checked: 2026-03-08
@@ -8085,7 +8085,7 @@ Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,
 #: note: Länge der Engstelle etwa 80m
 #: note: außerdem ist der Radweg auf der Heinrich-Grüber-Str. wahrscheinlich gesperrt
 #: note: Halteverbotsschilder bis 31.12.2025
-#: osm_watch: way id="1309204624" version="1"
+#: osm_watch: way id="1309204624" version="2"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
 #: last_checked: 2026-03-03 (mapillary)
@@ -10235,19 +10235,19 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
        {
          'data' => '#: tempex: (YYYY0101-YYYY0513,YYYY0923-YYYY1231) T22:00-T06:00, (YYYY0514-YYYY0922) T23:00-T06:00 vvv
 ## Drehkreuz (Ausgang möglich -> "Einbahnstraße")
-Ausgang Skalitzer Str.	1::night 12328,10442 12331,10409
-Ausgang Lübbener Str.	1::night 12608,10294 12580,10252
-Ausgang Oppelner Str.	1::night 12767,10216 12763,10207
-Ausgang Falckensteinstr.	1::night 12905,10143 12901,10134
-Ausgang Eisenbahnbrücke	1::night 13141,9911 13132,9916
-Ausgang Glogauer Str.	1::night 12814,9966 12833,9998
+Ausgang Skalitzer Str. (Drehkreuz)	1::night 12328,10442 12331,10409
+Ausgang Lübbener Str. (Drehkreuz)	1::night 12608,10294 12580,10252
+Ausgang Oppelner Str. (Drehkreuz)	1::night 12767,10216 12763,10207
+Ausgang Falckensteinstr. (Drehkreuz)	1::night 12905,10143 12901,10134
+Ausgang Eisenbahnbrücke (Drehkreuz)	1::night 13141,9911 13132,9916
+Ausgang Glogauer Str. (Drehkreuz)	1::night 12814,9966 12833,9998
 ## Tor ohne Drehkreuz (Ausgang nicht möglich -> "Komplettsperrung"
-Ausgang Cuvrystr.	2::night 13013,10068 13035,10076
-Ausgang Ratiborstr.	2::night 12932,9900 12960,9955
-Ausgang Liegnitzer Str.	2::night 12681,10047 12671,10042
-Ausgang Forster Str.	1::night 12507,10130 12504,10172
-Ausgang Forster Str.	1::night 12464,10153 12504,10172
-Ausgang Forster Str. (zum Rondell)	2::night 12564,10121 12592,10112
+Ausgang Cuvrystr. (Tor ohne Drehkreuz)	2::night 13013,10068 13035,10076
+Ausgang Ratiborstr. (Tor ohne Drehkreuz)	2::night 12932,9900 12960,9955
+Ausgang Liegnitzer Str. (Tor ohne Drehkreuz)	2::night 12681,10047 12671,10042
+Ausgang Forster Str. (Tor ohne Drehkreuz)	1::night 12507,10130 12504,10172
+Ausgang Forster Str. (Tor ohne Drehkreuz)	1::night 12464,10153 12504,10172
+Ausgang Forster Str. (zum Rondell) (Tor ohne Drehkreuz)	2::night 12564,10121 12592,10112
 #: tempex ^^^
 ',
          'from' => undef,
@@ -10323,6 +10323,7 @@ Ausgang Forster Str. (zum Rondell)	2::night 12564,10121 12592,10112
 #: by: https://www.nd-aktuell.de/artikel/1194725.bvg-tram-ostkreuz-droht-die-naechste-schleife.html (2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24501.pdf (Leitungsarbeiten ab März 2026: Bauarbeiten für die Zwischenendstelle; Ende Mai bis Anfang September 2026 die eigentlichen Bauarbeiten, siehe auch Gleisbauarbeiten zwischen Trautenauer Str. und Heiligenberger Str.)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24534.pdf
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse (bis voraussichtlich 1. November 2026)
 #: osm_watch: way id="1456917114" version="4"
 #: osm_watch: note 5193492 2
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
