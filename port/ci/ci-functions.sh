@@ -518,12 +518,6 @@ install_perl_dependencies() {
 	# and must now be installed from BackPAN
 	cpanm --quiet --notest GRAY/Geo-Distance-XS-0.13.tar.gz
 
-	# The indexed Data-Random-0.15 (prereq for
-	# WWW-Mechanize-FormFiller) vanished from CPAN. Need to
-	# manually install an old one (from BackPAN?)
-	# https://rt.cpan.org/Ticket/Display.html?id=173551
-	cpanm --quiet --notest BAREFOOT/Data-Random-0.14.tar.gz
-
 	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then
 	    # There is at least Apache::Session which adds unwanted dependencies
