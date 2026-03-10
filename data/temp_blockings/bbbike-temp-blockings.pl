@@ -48527,7 +48527,7 @@ EOF
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 5
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-03-09 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-02-13
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
@@ -49237,15 +49237,15 @@ Wielandstr.: Anbindung Pestalozzistr. gesperrt	q3::inwork 4415,11053 4434,11227
 EOF
      },
      { from  => $isodate2epoch->("2025-12-07 00:00:00"), # 1748926800, # 2025-06-03 07:00
-       until => $isodate2epoch->("2026-03-17 23:59:59"), # 1755788400, # 2025-08-21 17:00
+       until => $isodate2epoch->("2026-03-23 23:59:59"), # 1755788400, # 2025-08-21 17:00
 #      text  => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, vom 04.06.2025 07:00 bis 21.08.2025 17:00',
-       text  => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 17.03.2026',
+       text  => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 23.03.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
 #: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
-#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026)
-#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026)
+#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026)
+#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026)
 	q4::inwork 5053,8979 5189,8983
 EOF
      },
@@ -49297,8 +49297,8 @@ EOF
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: by: https://www.entwicklungsstadt.de/deutliche-fortschritte-auf-dem-lxk-campus-ein-blick-auf-die-baustelle/
 #: also_indoor: traffic (none)
-#: last_checked: 2026-02-21
-#: check_frequency: 90d
+#: last_checked: 2026-03-10 (daf)
+#: check_frequency: 60d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
 EOF
@@ -50198,7 +50198,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-08 vvv
+#: last_checked: 2026-03-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50732,19 +50732,18 @@ EOF
 EOF
      },
      { from  => 1759010400, # 2025-09-28 00:00
-       until => 1777586399, # 2026-04-30 23:59
+       until => $isodate2epoch->("2026-03-09 08:00:00"), # 1777586399, # 2026-04-30 23:59
        text  => 'Am Kupfergraben: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis März/April 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
 #: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
 #: by: https://bvg.de/dam/jcr:d7121a77-8148-45ab-a019-8e2e57fa9e29/Karte_Map_M1_12.png (Ersatzverkehr)
+#: by: https://www.bahninfo-forum.de/read.php?9,701070,854232#msg-854232 (Tramverkehr seit dem 9.3.2026)
 #: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
 #: source_id[inactive]: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
 #: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2026-02-10
-#: check_frequency: 30d
-#: next_check: 2026-04-30
+# REMOVED --- #: last_checked: 2026-02-10 --- #: check_frequency: 30d --- #: next_check: 2026-04-30
 # REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
 	q4::inwork 9815,12705 9754,12775
 EOF
@@ -51326,7 +51325,7 @@ EOF
 #: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-03-03 vvv
+#: last_checked: 2026-03-09 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
@@ -51497,7 +51496,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-03-09 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q3::inwork 6124,5983 6226,5995
 Kniephofstr.	q4::inwork 6226,5995 6318,6006
@@ -51737,7 +51736,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
-#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026)
+#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 EOF
      },
@@ -52125,12 +52124,15 @@ EOF
 	q3::inwork; 9373,12197 9164,12172
 EOF
      },
-     { from  => 1772924400, # 2026-03-08 00:00
-       until => 1777672799, # 2026-05-01 23:59
-       text  => 'Cunistraße: vom Rosenthaler Weg abgehängt, bis Anfang Mai 2026',
+     { from  => $isodate2epoch->("2026-03-25 00:00:00"), # 1772924400, # 2026-03-08 00:00
+       until => $isodate2epoch->("2026-05-04 23:59:59"), 
+       text  => 'Cunistraße: vom Rosenthaler Weg abgehängt, voraussichtlich ab 26.3.2026 bis 04.05.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260309
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonn3av322l
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgpd42uvik2s (voraussichtlich erst ab 26.3.2026)
+#: source_id: LMS-BR:401371/72 viz2021:13.4266,52.60763,10.03.2026,07:00 (angrenzender Rosenthaler Weg, bis 04.05.2026)
 	q4::inwork 11807,22395 11694,22479
 EOF
      },

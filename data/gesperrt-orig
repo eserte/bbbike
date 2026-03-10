@@ -4069,6 +4069,10 @@ Drängelgitter	BNP:3::trailer=10 17498,9714
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260304
 #: by: https://www.entwicklungsstadt.de/mehrjaehrige-sperrung-in-mitte-u6-bauarbeiten-legen-teil-der-chausseestrasse-lahm/
 #: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026)
+#: osm_watch: way id="1471571709" version="2"
+#: osm_watch: way id="4597200" version="34"
+#: osm_watch: note 5192591 2
+#: osm_watch: note 5192593 1
 #: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
 #: last_checked: 2026-03-09 vvv
 #: check_frequency: 120d vvv
@@ -4240,7 +4244,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-10
 #: check_frequency: 120d
 #: next_check: 2026-05-31 (entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4675,7 +4679,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-10
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4683,7 +4687,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-03-04 vvv
+#: last_checked: 2026-03-10 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5092,8 +5096,9 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant) --- #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/dockyard-feiert-richtfest_a396811 (Fertigstellung 2026) --- #: by: https://www.pecan.de/neubau-ketteler-la-roche-schule-im-quartier-neumuehle-2/ (Fertigstellung 4. Quartal 2024) --- #: by: https://www.pecan.de/projects/dockyard-berlin/ (Realisierung 2022-2025) --- #: by: https://entwicklungsstadt.de/fortschritt-an-der-spree-dockyard-waterfront-offices-kurz-vor-fertigstellung/ (Uferbereich offen?) --- #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld? --- #: note: mittlerweile (2025-03-26) werden die Wohncontainer abgetragen; 2025-04-04: keine Wohncontainer mehr da, noch immer abgesperrt --- #: XXX vermutlich wird man zur Rampe Stralauer Allee/Elsenbrücke gelangen können --- #: last_checked: 2025-11-29 --- #: check_frequency: 21d --- # REMOVED --- #: next_check: 2025-05-30 (entwicklungsstadt) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14480,10157 14487,10199 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14487,10199 14424,10227 --- # REMOVED (hier nicht mehr) --- Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14424,10227 14363,10258
 # 
-#: by: https://stralauer-one.com/ (Kernsanierung bis 2026)
-#: last_checked: 2026-03-08 vvv
+#: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
+#: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
+#: last_checked: 2026-03-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5113,7 +5118,7 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/drei-neue-hochhauser-an-der-spree-langzeit-projekt-molecules-mit-neuem-konzept-13684222.html
 #: confirmed_by: srt
 # REMOVED (mehr als zwei Jahre kaputt) --- #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
-#: last_checked: 2026-02-20 vvv
+#: last_checked: 2026-03-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-06-30 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,10152 14373,10046

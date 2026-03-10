@@ -106,6 +106,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-heinrich-hertz-gymnasium-am-ostbahnhof.1438/#post-25032
 #: by: https://entwicklungsstadt.de/neue-sechsfeld-sporthalle-entsteht-an-der-fredersdorfer-strasse/
 #: by: https://entwicklungsstadt.de/friedrichshain-wie-aus-einem-parkplatz-eine-moderne-schule-wird/ (weiterhin bis Herbst 2026)
+#: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-am-ostbahnhof-zeigt-sich-mit-roter-fassade/
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
@@ -870,7 +871,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,re-G,re-W,ex-H)
-#: last_checked: 2026-03-01 (traffic)
+#: last_checked: 2026-03-09 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
@@ -1225,7 +1226,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 #: osm_watch: note 4126168 4
 #: osm_watch[closed]: note 4126169 1
 #: priority: #C
-#: last_checked: 2025-12-26
+#: last_checked: 2026-03-07 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-04-30 (Halteverbotsschilder)
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
@@ -1332,6 +1333,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: by: https://www.morgenpost.de/bezirke/pankow/article411357085/greifswalder-strasse-weitere-vollsperrung-ab-montag.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neue-sperrung-wegen-rohrbruch-baustelle-kreuzung-in-prenzlauer-berg-funf-tage-dicht-15316994.html
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
+#: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-03-09 vvv
 #: check_frequency: 30d vvv

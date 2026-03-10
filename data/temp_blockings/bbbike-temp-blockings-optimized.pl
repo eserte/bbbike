@@ -8681,7 +8681,7 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 5
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-03-09 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-02-13
 # REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
@@ -8866,15 +8866,15 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
 #: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
-#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026)
-#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026)
+#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026)
+#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026)
 	q4::inwork 5053,8979 5189,8983
 ',
          'from' => 1765062000,
          'id' => 4359,
-         'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 17.03.2026',
+         'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 23.03.2026',
          'type' => 'handicap',
-         'until' => 1773788399
+         'until' => 1774306799
        },
        undef,
        undef,
@@ -8886,8 +8886,8 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: by: https://www.entwicklungsstadt.de/deutliche-fortschritte-auf-dem-lxk-campus-ein-blick-auf-die-baustelle/
 #: also_indoor: traffic (none)
-#: last_checked: 2026-02-21
-#: check_frequency: 90d
+#: last_checked: 2026-03-10 (daf)
+#: check_frequency: 60d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
 ',
@@ -9221,7 +9221,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-08 vvv
+#: last_checked: 2026-03-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9466,25 +9466,7 @@ Corinthstr.	q4::inwork; 14608,10409 14447,10491
          'type' => 'handicap',
          'until' => 1774994399
        },
-       {
-         'data' => '#: by: https://www.youtube.com/watch?v=Rt---y3m2KY (voraussichtlich bis Ende März 2026?)
-#: by: https://www.bahninfo-forum.de/read.php?9,751033,840466#msg-840466
-#: by: https://bvg.de/dam/jcr:d7121a77-8148-45ab-a019-8e2e57fa9e29/Karte_Map_M1_12.png (Ersatzverkehr)
-#: note: ausgeschilderte Umleitung für den Radverkehr via Universitätsstr.
-#: source_id[inactive]: bvg2024:m1#e14494c8-4b05-423b-bc16-1d1b30312c46 (kein Endedatum)
-#: also_indoor: traffic (G,T,H[nur Georgenstr])
-#: last_checked: 2026-02-10
-#: check_frequency: 30d
-#: next_check: 2026-04-30
-# REMOVED (hier nicht) ---	q4::inwork 9870,12657 9815,12705
-	q4::inwork 9815,12705 9754,12775
-',
-         'from' => 1759010400,
-         'id' => 4455,
-         'text' => 'Am Kupfergraben: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis März/April 2026',
-         'type' => 'handicap',
-         'until' => 1777586399
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
@@ -9778,7 +9760,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-03-03 vvv
+#: last_checked: 2026-03-09 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 	2::inwork 7662,14579 7696,14577 7733,14570
@@ -9875,7 +9857,7 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
        },
        {
          'data' => '#: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2026-02-25 vvv
+#: last_checked: 2026-03-09 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q3::inwork 6124,5983 6226,5995
 Kniephofstr.	q4::inwork 6226,5995 6318,6006
@@ -10050,7 +10032,7 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
-#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026)
+#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 ',
          'from' => 1772924400,
@@ -10364,13 +10346,16 @@ Blockdammweg - Wandlitzstr.	2::inwork 17754,8863 17915,8945
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260309
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonn3av322l
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgpd42uvik2s (voraussichtlich erst ab 26.3.2026)
+#: source_id: LMS-BR:401371/72 viz2021:13.4266,52.60763,10.03.2026,07:00 (angrenzender Rosenthaler Weg, bis 04.05.2026)
 	q4::inwork 11807,22395 11694,22479
 ',
-         'from' => 1772924400,
+         'from' => 1774393200,
          'id' => 4556,
-         'text' => 'Cunistraße: vom Rosenthaler Weg abgehängt, bis Anfang Mai 2026',
+         'text' => 'Cunistraße: vom Rosenthaler Weg abgehängt, voraussichtlich ab 26.3.2026 bis 04.05.2026',
          'type' => 'handicap',
-         'until' => 1777672799
+         'until' => 1777931999
        }
      
 );

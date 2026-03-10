@@ -122,7 +122,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt für Radfahrer	?::inwork 9047,9750
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html (hier ist ein komplett unklares Projekt gelistet: Kynaststraße, von Paul-Paula-Ufer bis Glasbläserallee als Schutzstreifen, 285 Meter --- wo soll das sein?)
 #: osm_watch: way id="667331289" version="7"
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-10
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -316,8 +316,8 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2
 #: osm_watch: way id="168307255" version="15"
 #: osm_watch: way id="4687243" version="33"
 #: last_checked: 2026-03-07
-#: check_frequency: 360d
-#: next_check: 2026-03-15
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2026-03-15
 Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projected 14989,14539 14919,14503 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14243,13890 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
@@ -4759,8 +4759,8 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 #: note: Zusätzlich zu den Straßenbauarbeiten werden die Hellersdorfer Brücken neu gemacht (siehe SenUMVK-Seite), vermutlich Ende 2025 - Mitte 2027, mit Behelfsbrücke für den Fuß+Radverkehr
 #: XXX ab 18.8.2025 für den Kfz-Verkehr zwischen Kyritzer Str. und Gothaer Str. gesperrt (+ weitere Arbeiten im Anschluss)
 #: osm_watch: note 3581028 16
-#: last_checked: 2025-11-10 (mapillary) vvv
-#: check_frequency: 150d vvv
+#: last_checked: 2026-03-08 (mapillary) vvv
+#: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2026-03-27 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2026-06-01 (BA-Pressemitteilung) vvv
 # REMOVED --- #: next_check: 2025-07-31 vvv
@@ -4800,7 +4800,7 @@ Britzer Damm: Busspur geplant	?::projected; 12564,4308 12547,4391 12731,4841
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/9gePsGoSM172PryleD0XuoBH4T9vqEjh8qteLGeO/RztWbeIU/10-Anlagen/02/810MA_0733_Busspur_Britzer_Damm.pdf
 #: by: https://www.berliner-zeitung.de/mensch-metropole/busspuren-in-gefahr-warum-in-berlin-noch-mehr-bvg-fahrstreifen-verschwinden-koennten-li.2206041 (Erwähnung)
 #: note: während der Sperrung Tempelhofer Weg/Gradestr. war in Richtung Süden ab Wussowstr. eine temporäre Busspur markiert, allerdings ohne Radfreigabe
-#: last_checked: 2026-02-28
+#: last_checked: 2026-03-08 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-06-30
 Britzer Damm (von Fulhamer Allee bis Hermannstraße): Busspur geplant, evtl. in beiden Richtungen	? 12731,4841 12885,5205 12883,5257 12841,5416 12812,5526 12798,5580 12794,5596 12789,5612 12722,5831 12699,5909 12644,6087 12628,6166 12618,6207 12597,6293 12595,6299 12588,6337 12576,6374
@@ -7699,7 +7699,7 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs, vielleicht auch Asphaltierun
 #: source_id: viz2021:13.298076,52.519552,15.02.2022,10:00 (bis 25.4.2022) (mittlerweile inaktiv)
 #: osm_watch: note 4434294 7
 #: osm_watch: way id="1101200759" version="12"
-#: osm_watch: way id="428720064" version="26"
+#: osm_watch: way id="428720064" version="27"
 #: last_checked: 2026-02-25 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-06-30 (infravelo) vvv
@@ -8325,7 +8325,7 @@ Templin-Fährkrug: Neubau Brücke mit Radweg	?::projected 18881,80833 18937,80848 
 #: by: https://www.treuenbrietzen.de/seite/490016/l85.html
 #: osm_watch: way id="228112128" version="5"
 #: XXX ansonsten: hier gibt's wohl keine Radwege
-#: last_checked: 2024-08-08 (mapillary)
+#: last_checked: 2025-10-02 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-15
 Treuenbrietzen: L85 soll rechtwinklig auf die B102 stoßen	?::projected -25677,-35211 -25661,-35305
@@ -8444,7 +8444,7 @@ Neuendorf - Duben (B87): Erstellung eines Radwegs	?::projected 42589,-54983 4219
 #: by: https://www.o-sp.de/lbvbrandenburg/plan?pid=69219
 #: by: https://www.o-sp.de/download/lbvbrandenburg/355723
 #: note: laut osm existiert östlich der Pfälzer Str. zumindest auf der Nordseite ein Radweg
-#: last_checked: 2025-03-14 (indoor research)
+#: last_checked: 2026-03-09 (indoor research)
 #: check_frequency: 90d (indoor research)
 Forst, Cottbusser Str.: Schutzstreifen geplant	?::projected 94780,-71444 95299,-71685 95465,-71725 95667,-71870
 # 
@@ -9730,7 +9730,7 @@ Cecilienstr.: wird hier ein Zebrastreifen angelegt?	? 21956,13665 21918,13720 21
 #: by: https://www.entwicklungsstadt.de/weniger-laerm-mehr-grip-erste-bilanz-zum-umbau-der-hufelandstrasse-in-prenzlauer-berg/
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7290 (Antrag)
 #: osm_watch: way id="4615063" version="41"
-#: osm_watch: note 5010352 4
+#: osm_watch: note 5010352 5
 #: last_checked: 2026-03-09
 #: check_frequency: 60d
 #: next_check: 2026-06-30 (infravelo)
@@ -9844,11 +9844,6 @@ Thulestr./Talstr.: Zebrastreifen geplant	?::projected 11802,16677 11825,16666 11
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (osm note)
 Sonnenallee: werden noch die fehlenden Radweg/spur-Stücke realisiert?	?;? 15768,6214 15725,6235
-# 
-#: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (Erwähnung eines FGÜ ohne genauere Lagebezeichnung, bis April 2026)
-#: priority: #D
-#: next_check: 2026-04-30 (mobilitaetsrat)
-Koppelweg: entsteht hier irgendwo ein Zebrastreifen?	? 11772,4379 11936,4358 12154,4340
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksamt/beschluesse/2026/vzbbvv1403_vi_fussgaengerueberweg_guelzower_str_heinrich-grueber-str.pdf (Vorschlag wird geprüft)
 #: priority: #D
@@ -9986,8 +9981,10 @@ S-Bhf. Zeuthen: Aufzugbau	? 25956,-6072
 #: by: https://www.degewo.de/wachstum/neubau/marzahn/bisamstrasse
 #: by: https://www.tagesspiegel.de/berlin/bezirke/umstrittenes-projekt-in-berlin-mahlsdorf-baustart-fur-mehrfamilienhauser-an-der-bisamstrasse-13429456.html (Fertigstellung im Sommer 2027)
 #: XXX zurzeit nur ein Trampelpfad zwischen Brandenburg und Berlin, nur im südöstlichen Abschnitt existiert ein Betonpflasterweg
-#: osm_watch: way id="916688407" version="3"
+# REMOVED (deleted) --- #: osm_watch: way id="916688407" version="3"
 #: osm_watch: way id="211738497" version="7"
+#: osm_watch: way id="1180945624" version="1"
+#: osm_watch: way id="1149914117" version="1"
 #: last_checked: 2025-10-18 (luftbildsuche)
 #: check_frequency: 720d
 #: next_check: 2027-09-01 (Tsp (zum Wohngebiet))
@@ -12894,8 +12891,8 @@ Bebauungsplan 9-68 VE: Straßen geplant	? 20560,518 20722,562 20796,520 20841,354
 #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-holzbauprojekt-mehrfamilienhaus-wohnanlage-ortsteil-kaulsdorf-berlin-deutschland-652585.html
 #: XXX Berlin.coords.data-Eintrag fehlt (PLZ=12621 laut DPAG-Mitteilungsblatt 6/2023)
 #: XXX es wird wohl eine Anbindung zur Franzburger Str. entstehen
-#: osm_watch: way id="1246660907" version="7"
-#: osm_watch: way id="676848100" version="8"
+#: osm_watch: way id="1246660907" version="8"
+#: osm_watch: way id="676848100" version="9"
 #: note: Privatstraße
 #: last_checked: 2025-10-18 (luftbildsuche)
 #: check_frequency: 120d
@@ -14521,5 +14518,11 @@ Seilerstr. (Gramzow): Qualität?	? 49787,90264 49854,90252 49851,90216 49968,9021
 # 
 #: XXX fehlt in Potsdam.coords.data
 Perugiaplatz (Potsdam): genaue Lage? Qualität?	? -13211,2566 -13205,2542 -13197,2517
+# 
+#: osm_watch: way id="26223763" version="29"
+#: XXX außerdem Verlängerungen von bestehenden Straßen
+#: last_checked: 2026-03-03 (osm)
+#: check_frequency: 120d
+Bernhard-Lichtenberg-Str. (Ahrensfelde): neue Straße entsteht	?::inwork 22366,19467 22439,19573 22592,19772 22580,19815 22545,19864
 # 
 #: section ^^^
