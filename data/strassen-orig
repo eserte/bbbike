@@ -6147,6 +6147,7 @@ An den Berggärten	N -4664,8532 -4772,8533 -4856,8534 -4869,8534 -4923,8534
 An den Berggärten	NN -4923,8534 -4997,8535
 Straße 254	N -4997,8535 -4998,8477 -4999,8465
 (Elfensteig)	N -4772,8533 -4771,8466 -4774,8439
+#: note: in DPAG-Mitteilungsblatt 03/2026 wurde "Erlkönigsteig" zu "Am Berghang"
 (Erlkönigsteig)	N -4856,8534 -4857,8462 -4857,8442
 Feensteig	N -4999,8465 -4857,8462
 (Gnomensteig)	N -4857,8442 -4774,8439
@@ -7422,10 +7423,10 @@ Hedwigstr. (Alt-Hohenschönhausen)	N 16616,16046 16505,16096 16520,16200
 Gembitzer Str.	N 16815,16214 16889,16378 16948,16482 17056,16558
 Amtsstr.	N 22419,4457 22495,4523
 # REMOVED --- #: note Gebiet um den Alten Markt, Lüdersstr., Katzengraben, Freiheit ist Tempo-10-Zone --- #: XXX wird die Tempo-10-Zone aufgehoben? --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/entsprechende-anordnung-fuer-die-altstadt-muss-zurueckgenommen-werden_a244816 --- #: by: https://www.abendblatt-berlin.de/2019/12/24/berlin-koepenick-schilder-muessen-gewechselt-werden/ (20er-Zone?) --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/rechtswidrige-verkehrsschilder-wurde-bereits-ausgetauscht_a247570 --- #: priority: #D --- #: next_check: 2020-04-01
-Alter Markt	N 22395,4678 22470,4691
+Alter Markt	N 22363,4678 22395,4678 22470,4691
 Alter Markt	N 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.	N 22390,4702 22388,4737 22377,4836
-Jägerstr. (Köpenick)	N 22314,4604 22355,4660 22365,4676 22395,4678
+Jägerstr. (Köpenick)	N 22314,4604 22355,4660 22363,4678
 Futranplatz	N 22451,4749 22388,4737
 Freiheit (Köpenick)	N 22439,4838 22377,4836 22196,4847
 Spindlergasse	N 22472,4681 22496,4689
@@ -7467,7 +7468,7 @@ Kietzer Str.	N 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604
 (Am Kietzer Graben)	N 22585,4634 22531,4605 22458,4565
 Kirchstr. (Köpenick)	N 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 Rosenstr. (Köpenick)	N 22144,4660 22212,4655 22284,4653
-Schüßlerplatz	N 22284,4653 22355,4660
+Rosenstr. (Köpenick) [Schüßlerplatz]	N 22284,4653 22355,4660
 Böttcherstr.	N 22214,4548 22212,4655
 Laurenzstr.	N 22246,4711 22175,4730
 Landjägerstr.	N 22458,4565 22495,4523 22542,4485 22740,4415
@@ -16107,7 +16108,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-11
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16502,7 +16503,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-11
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

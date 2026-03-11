@@ -119,12 +119,12 @@ Knoten Märkische Allee	1 19924,11890 19979,11774
 Knoten Märkische Allee	1 20114,11719 20064,11687 20026,11663
 Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 18934,11796 19138,11815 19389,11761
-Altstadt Köpenick	1 22451,4749 22439,4838
+Katzengraben	1s:q4 22451,4749 22439,4838
 Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX Einbahnstraßenregelung temporär aufgehoben
-#: last_checked: 2026-01-17
+#: last_checked: 2026-03-11
 #: check_frequency: 120d
 #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
@@ -212,7 +212,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2026-03-04 vvv
+#: last_checked: 2026-03-11 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -1616,7 +1616,7 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2025-12-06 (webcam) vvv
+#: last_checked: 2026-03-11 (webcam) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 (entwicklungsstadt) vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
@@ -4244,7 +4244,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-03-10
+#: last_checked: 2026-03-11
 #: check_frequency: 120d
 #: next_check: 2026-05-31 (entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4336,12 +4336,12 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information
 #: also_indoor: traffic (G)
-#: last_checked: 2026-03-03 (mapillary)
+#: last_checked: 2026-03-11
 #: check_frequency: 120d
 #: next_check: 2026-10-29
 Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
 #: XXX evtl. muss mudways hier nach den Bauarbeiten neu evaluiert werden?
-#: last_checked: 2025-08-27 vvv
+#: last_checked: 2026-03-11 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="37452317" version="6"
@@ -4438,7 +4438,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://www.stadtmuseum.de/museum/marinehaus
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
 #: osm_watch: note 4211143 4
-#: osm_watch: way id="4612427" version="22"
+#: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
 #: last_checked: 2026-03-02
 #: check_frequency: 30d
@@ -4679,7 +4679,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-03-10
+#: last_checked: 2026-03-11
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4687,7 +4687,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-03-10 vvv
+#: last_checked: 2026-03-11 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4912,7 +4912,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026)
-#: last_checked: 2026-03-01 (luftbildsuche)
+#: last_checked: 2026-03-11
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
 # REMOVED --- #: next_check: 2027-06-30
@@ -4958,7 +4958,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="19"
-#: last_checked: 2026-02-15
+#: last_checked: 2026-03-11
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
@@ -5208,6 +5208,7 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/planfeststellungen/bekanntmachungen/u1-dennewitzbruecke-1644776.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_09_0521_0564_online.pdf (Bekanntmachung zum Planfeststellungsverfahren ... Bauwerk XII)
 #: by: https://www.entwicklungsstadt.de/gleisdreieck-wird-grossbaustelle-hochhaeuser-und-neue-u-bahn-bruecken-geplant/
+#: by: https://www.entwicklungsstadt.de/streitpunkt-denkmalschutz-bvg-favorisiert-modernen-brueckenneubau-im-gleisdreieck/
 #: XXX während der richtigen Bauarbeiten wird es weitere Einschränkungen geben (laut 08-02_Go_Kus_GP1058_Wege .. 08-04_Go_Kus_GP1060_Wege und Maßnahmenkarte):
 #: XXX - Parkzugang Kurfürstenstraße: Sperrung des Weges anscheinend bis zum östlichen Weg; am Eingang temporäre Treppe & temporärer Weg bis Höhe westlicher Weg
 #: XXX - westlicher Weg zwischen Höhe Kurfürstenstraße und Pohlstraße liegt in der Baustelleneinrichtungsfläche

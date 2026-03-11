@@ -785,6 +785,7 @@ Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 Alter Markt: Asphalt	Q0 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Asphalt	Q0 22390,4702 22388,4737 22377,4836
 Freiheit: Asphalt	Q0 22377,4836 22196,4847
+Alter Markt: Kopfsteinpflaster	Q2 22395,4678 22363,4678
 Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 Norwegerstr.: mäßiger Asphalt	Q1 9959,16510 9975,16425
 Kolonnenweg: mäßiger Asphalt	Q1 9959,16510 9955,16578
@@ -1963,7 +1964,7 @@ Scharnweberstr.: Asphalt	Q0 19495,6029 19650,5920
 Alt-Köpenick: Kopfsteinpflaster, zwischen den Schienen Asphalt	Q0; 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 Alt-Köpenick: Kopfsteinpflaster, Asphalt links zwischen den Schienen	Q2; 22111,4562 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
 Alt-Köpenick: Kopfsteinpflaster	Q2 22111,4562 22093,4499
-Katzengraben, Schüßlerplatz: Kopfsteinpflaster	Q2 22439,4838 22451,4749 22470,4691 22395,4678
+Katzengraben, Alter Markt: Kopfsteinpflaster	Q2 22433,4887 22439,4838 22451,4749 22470,4691 22395,4678
 Katzengraben: Kopfsteinpflaster	Q2 22478,4659 22472,4681 22470,4691
 Spindlergasse: Kopfsteinpflaster	Q2 22472,4681 22496,4689 22522,4695
 Futranplatz: Kopfsteinpflaster	Q2 22451,4749 22388,4737
@@ -5152,6 +5153,7 @@ Zum kleinen Pfuhl: schlechtes Kopfsteinpflaster, Gehweg asphaltiert	Q2 12127,156
 Leonberger Ring: Asphalt	Q0 12286,2065 12283,2102 12348,2265 12384,2274 12561,2192 12582,2122
 (Katzengrabensteg - Bellevuepark): wassergebundene Decke	Q1 22632,4958 22726,5328
 Katzengrabensteg: Holzbohlen	Q1 22581,4932 22484,4868
+(zum Katzengrabensteg): Asphalt	Q0 22433,4887 22484,4868
 Saaleckplatz: Asphalt	Q0 5204,1057 5187,1059 5162,1098 5162,1110 5178,1123 5190,1114 5212,1074 5204,1057
 Brüderstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3044,3680 3063,3693
 Brüderstr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 3063,3693 3195,3783 3206,3800
@@ -15873,7 +15875,7 @@ Brinkmannstr.: schlechtes Kopfsteinpflaster, sehr holprig	Q3 7095,5317 7216,5303
 Bat-Yam-Platz: Gehwegplatten	Q1 14515,2212 14545,2206 14633,2145
 Saalmannsteig: Gehwegplatten	Q0 5410,19050 5284,19043
 Saalmannsteig: Mosaikpflaster	Q1 5284,19043 5181,19037
-Jägerstr. (Köpenick): Kopfsteinpflaster	Q2 22395,4678 22365,4676 22355,4660 22314,4604
+Jägerstr. (Köpenick): Kopfsteinpflaster	Q2 22363,4678 22355,4660 22314,4604
 (Swakopmunder Str. - Charles-Corcelle-Ring): gutes Verbundsteinpflaster	Q1 5223,16783 5141,16799 5091,16810 5035,16819 5012,16824 5005,16824
 Rothenbücherweg: Verbundsteinpflaster	Q1 -4666,9844 -4666,9780 -4662,9689 -4657,9594 -4651,9487 -4645,9365 -4635,9267 -4611,9122
 Noéweg: Schotterstraße	Q2 11108,22445 10994,22289

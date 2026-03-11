@@ -3479,7 +3479,57 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: url: https://www.berliner-frauenlauf.de/
+#: by: https://www.berliner-frauenlauf.de/der-tag/strecke.html
+#: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
+#: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
+#: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/zahlreiche-verkehrseinschrankungen-am-samstag-den-17-mai-2025/
+#: source_id: viz2021:13.37679,52.5163,12.05.2023,20:00 (bis 14.05.2023) (inaktiv)
+#: source_id: viz2021:13.35124,52.51439,03.05.2024,12:00 (bis 05.05.2024) (inaktiv)
+#: source_id: viz2021:13.37081,52.51779,03.05.2024,00:00 (bis 05.05.2024) (inaktiv)
+#: source_id: viz2021:13.374677,52.516116,16.05.2025,12:00 (bis 18.05.2025) (inaktiv)
+# REMOVED --- #: tempex: 20170520 vvv
+	2::temp 8055,12186 8068,12237 8119,12414
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7463,11538 7504,11512
+	2::temp 6778,11742 6980,11790 7058,11809 7173,11864 7182,11870 7200,11881 7240,11907 7449,11883
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7648,11708 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
+	2::temp 8026,11764 8016,11770 7793,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
+	2::temp 8502,12226 8466,12197
+	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
+	2::temp 7600,11513 7621,11541 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865
+	2::temp 8221,11885 8215,12156 8214,12205
+	2::temp 8244,11878 8327,12174 8344,12221
+	3 7429,12070 7383,12095 7288,12156 7031,12320
+	3 7822,12201 7816,12150 7823,12120
+	3 7031,12320 7288,12156 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1778832000,
+         'id' => 2427,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              5,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 16. Mai 2026',
+         'type' => 'gesperrt',
+         'until' => 1778990400
+       },
        undef,
        undef,
        {
@@ -3548,7 +3598,40 @@ Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: url: https://classicdays-berlin.de/
+#: by: http://www.die-classic-days-berlin.de/programm-2/
+#: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
+#: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
+#: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
+#: note: kann auch im Juni oder Juli stattfinden
+#: source_id: IM_025248 (inaktiv)
+#: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
+#: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024) (inaktiv)
+#: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
+#: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
+# REMOVED --- #: tempex: 20170616T0400-20170619T0400
+	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
+	q4::temp 5072,10701 5069,10662
+',
+         'from' => 1778119200,
+         'id' => 2439,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              5,
+                              'start',
+                              '2021-06-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 08.05.2026 04:00 Uhr bis 11.05.2026 05:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1778468400
+       },
        undef,
        undef,
        undef,
@@ -4671,7 +4754,33 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal we
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (in osm aufgehoben) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php --- #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/ --- #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369 --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben? --- #: source_id: 2147344699 --- #: osm_watch: way id="25274116" version="20" --- #: osm_watch: way id="671101960" version="4" --- #: also_indoor: traffic (G,H) --- #: last_checked: 2019-11-23 --- #: check_frequency: 7d
+#: next_check_id: ALTSTADTKOEPENICK-2024
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
+#: by: https://www.bahninfo-forum.de/read.php?9,800515,811033#msg-811033
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260326 (Umbau der Baustelle Lüdersstr., gesperrt für Autos, Radverkehr frei -> Annahme: keine Einbahnstraße mehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mft2mppu3c2i
+#: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024) (bis 21.10.2024) (inaktiv)
+#: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
+#: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
+#: also_indoor: traffic (T,G,H,W)
+#: note: H: falsche Einbahnstraßenrichtung; W: falsche Komplettsperrung
+# REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
+#: last_checked: 2026-03-11
+# REMOVED --- #: check_frequency: 90d (traffic)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2027-03-31
+# REMOVED (nicht mehr) --- Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
+# REMOVED (hier mittlerweile Sackgasse, Fuß+Radverkehr frei) --- Freiheit: Einbahnstraßenregelung	q4::inwork; 22377,4836 22196,4847
+Landjägerbrücke	q4::inwork 22426,4609 22446,4581 22458,4565 22495,4523
+',
+         'from' => undef,
+         'id' => 3071,
+         'text' => 'Landjägerbrücke: Bauarbeiten, Sperrung der Fahrbahn',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -4803,7 +4912,45 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal we
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: url: https://www.berliner-teamstaffel.de/
+#: by: https://www.berliner-teamstaffel.de/der-tag/strecke.html
+#: by: https://www.berliner-teamstaffel.de/event/strecke
+#: source_id: 2147344332 (inaktiv)
+#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
+#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.36701,52.51742,06.06.2023,18:00 (bis 10.06.2023) (inaktiv)
+#: source_id: viz2021:13.362236,52.517659,06.06.2023,18:00 (John-Foster-Dulles-Allee, bis 10.06.2023) (inaktiv)
+#: source_id: viz2021:13.364825,52.517521,02.06.2025,18:00 (John-Foster-Dulles-Allee, bis 06.06.2025) (inaktiv)
+	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7836,12247 7822,12201 7816,12150
+	2::temp 7383,12095 7288,12156 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
+	3 6689,12632 7031,12320 7051,12426
+	3 6689,12632 7031,12320 7001,12274
+	3 7654,12464 7627,12380 7603,12353
+	3 7001,12274 7031,12320 7051,12426
+	3 7001,12274 7031,12320 6689,12632
+	3 7051,12426 7031,12320 7001,12274
+	3 7051,12426 7031,12320 6689,12632
+	3 7603,12353 7627,12380 7654,12464
+',
+         'from' => 1780178400,
+         'id' => 3114,
+         'periodic' => 1,
+         'prewarn_days' => 2,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              12,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 2. Juni 2026 bis 4. Juni 2026',
+         'type' => 'gesperrt',
+         'until' => 1780642800
+       },
        undef,
        undef,
        undef,
@@ -4984,7 +5131,7 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal we
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-03-08 (osm)
+#: last_checked: 2026-03-11
 #: check_frequency: 30d
 #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5221,7 +5368,20 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (nicht mehr) --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2021-03-01 --- #: check_frequency: 45d
+# REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349 ---	q4::inwork 17771,8349 17753,8290
+#: next_check_id: BLOCKDAMMWEG-2026
+#: note: vielleicht Baustelleneinrichtung für den Blockdammweg, vielleicht schon vorbereitend für die Sperrung der Ehrlichstr. und Umleitungsverkehr via Georg-Klingenberg-Str. und Trautenauer Str.
+#: last_checked: 2026-03-11
+	q4::inwork; 17879,8773 17851,8662 17846,8644
+',
+         'from' => undef,
+         'id' => 3320,
+         'text' => 'Trautenauer Str.: Einbahnstraßenregelung zwischen Georg-Klingenberg-Str. und Ehrlichstr.',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
@@ -5870,11 +6030,11 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
 #: osm_watch: way id="734271970" version="10"
 #: osm_watch: way id="975241319" version="10"
-#: osm_watch: way id="970452276" version="8"
+#: osm_watch: way id="970452276" version="9"
 #: osm_watch: note 5093384 4
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-10 (osm)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6843,7 +7003,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-03-01 vvv
+#: last_checked: 2026-03-11 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -8347,17 +8507,22 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22144,4660 22138,4642 22111,4562
 # REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22093,4499
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-#: last_checked: 2026-03-05 (traffic)
-#: check_frequency: 90d
-#: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
+#: last_checked: 2026-03-05 (traffic) vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-08-24 (VIZ-Verkehrsmeldung) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
 # REMOVED (hier Sackgasse) --- Kietzer Str. - Kirchstr.	q4::inwork 22246,4711 22240,4768 22196,4847
+Jägerstr.: Fahrbahn gesperrt	q4::inwork 22314,4604 22355,4660
+Schüßlerplatz: Fahrbahn gesperrt	q4::inwork 22284,4653 22355,4660
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1739702908,
          'id' => 4261,
-         'text' => 'Kietzer Str./Kirchstr.: Gleisbauarbeiten, Fahrbahn vermutlich gesperrt, voraussichtlich bis Ende August 2026',
+         'text' => 'Kietzer Str./Kirchstr. und angrenzende Straßen: Gleisbauarbeiten, Fahrbahn vermutlich gesperrt, voraussichtlich bis Ende August 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8583,7 +8748,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
-#: last_checked: 2026-02-28 (website check) vvv
+#: last_checked: 2026-03-11 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -9084,7 +9249,7 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben), 2025-12-06 Sat 11:20 nicht passierbar
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1163982841" version="3"
-#: last_checked: 2025-12-06
+#: last_checked: 2026-03-11
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
@@ -10018,7 +10183,7 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
 #: check_frequency: 45d vvv
 #: osm_watch: way id="1467787945" version="2"
 Uferweg	2::inwork 18192,5931 18118,5953
-#: osm_watch: way id="958828368" version="3"
+#: osm_watch: way id="958828368" version="4"
 Verbindungsweg	2::inwork 18118,5953 18075,5880
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -10280,7 +10445,8 @@ Ausgang Forster Str. (zum Rondell) (Tor ohne Drehkreuz)	2::night 12564,10121 125
          'until' => 1776808740
        },
        {
-         'data' => '#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23&plugid=/ingrid-group:ige-iplug-be&docid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23
+         'data' => '#: next_check_id: BLOCKDAMMWEG-2026
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23&plugid=/ingrid-group:ige-iplug-be&docid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/2_Uebersichtslageplan.pdf
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/3_Lageplan_250.pdf
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/4_Schnitt_50.pdf
@@ -10305,23 +10471,23 @@ Ausgang Forster Str. (zum Rondell) (Tor ohne Drehkreuz)	2::night 12564,10121 125
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse (bis voraussichtlich 1. November 2026)
 #: by[nocache]: https://www.uvp-verbund.de/documents-ige-ng/igc_be/27B18CBA-A54C-4B76-B3FF-2B1F76A96A23/Alle_Unterlagen_gesiegelt%2F3_Lageplan_gesiegelt.pdf (Baustelleneinrichtungsfläche)
 #: osm_watch: way id="1456917114" version="4"
-#: osm_watch: note 5193492 2
+#: osm_watch: note 5193492 3
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
-#: last_checked: 2026-03-01 vvv
-#: check_frequency: 180d vvv
-# REMOVED --- #: next_check: 2026-03-15 (pardok: geplanter Beginn der Leitungsarbeiten)
-#: next_check: 2026-03-02 (bahninfo-forum) vvv
+#: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
+#: last_checked: 2026-03-11 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-06-08 (Halteverbotsschilder) vvv
+# REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten)
 Blockdammweg, Rampe	2::inwork 17754,8863 17762,8855 17904,8924
-#: XXX dieser Abschnitt vermutlich Baustelleneinrichtungsfläche, auch prüfen!
-Blockdammweg - Wandlitzstr.	2::inwork 17754,8863 17915,8945
+Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4554,
-         'text' => 'Blockdammweg: Bauarbeiten, Fahrbahn möglicherweise gesperrt',
+         'text' => 'Blockdammweg: Bauarbeiten, Fahrbahn (Rampe zur Brücke und Anbindung zur Wandlitzstr.) komplett gesperrt, voraussichtlich bis Herbst 2026',
          'type' => 'gesperrt',
          'until' => undef
        },

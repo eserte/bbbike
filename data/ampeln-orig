@@ -420,7 +420,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-11
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -503,7 +503,7 @@ Gürtelstr.	F::inwork 15153,11691
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558, (bis 06.01.2027)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2026-03-06 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2026-03-11 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (DB) vvv
 #: valid: -20271231 vvv
@@ -522,7 +522,7 @@ Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating 
 #: check_frequency: 120d
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-01-17
+#: last_checked: 2026-03-11
 #: check_frequency: 120d
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
@@ -4504,11 +4504,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderung für Radfahrer im Zuge der Bornitzstr., evtl. zeitweise (tagsüber?) automatisch aktiviert
 	X 15950,12886
 # 
+#: next_check_id: BLOCKDAMMWEG-2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
 #: XXX noch provisorisch, wird verstetigt --- in Zukunft wird der gesamte Knotenpunkt bis zur Blockdammweg-Rampe durch die Ampelanlage erfasst
-#: last_checked: 2026-02-15
-#: check_frequency: 30d
+#: last_checked: 2026-03-11
+#: check_frequency: 90d
+#: next_check: 2026-09-01
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 
 #: note: Anforderungsampel im Zuge der August-Froehlich-Str. und An der Werderlake

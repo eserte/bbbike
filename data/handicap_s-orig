@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-03-05
+#: last_checked: 2026-03-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -841,7 +841,7 @@ Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 
 #: next_check_id: WESTUMFAHRUNGBAHNHOF-2023
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: way id="24695200" version="19"
-#: last_checked: 2026-02-23 (okas)
+#: last_checked: 2026-03-11
 #: check_frequency: 120d
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
@@ -852,6 +852,13 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # REMOVED (zurzeit keine weiteren Beeinträchtigungen) --- #: last_checked: 2016-07-29 --- Nalepastr.: Bauarbeiten	q3::inwork 17190,7306 17219,7268
 # 
 ### Friedrichshagen ###
+# 
+#: also_indoor: traffic (G,no-T)
+#: source_id: LMS-BR:392304/72 viz2021:13.60111,52.45156, (Bauarbeiten im angrenzenden Fürstenwalder Damm, bis 30.04.2026)
+#: last_checked: 2026-03-11
+#: check_frequency: 21d
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
+Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463650.php --- #: note: vor Ort sahen die Beeinträchtigungen nicht so groß aus --- #: source_id: 2147339863 --- #: valid: 20160627-20161130 --- S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 # 
@@ -1173,7 +1180,7 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-03-04
+#: last_checked: 2026-03-11
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -6870,7 +6877,7 @@ Bat-Yam-Platz: Fußgänger	q1 14515,2212 14545,2206 14633,2145
 Saalmannsteig: Fußgänger	q2 5410,19050 5284,19043 5181,19037
 #: by: Stefan Dietrich:
 #: corrected_by: srt/policy (q3 -> q1)
-Jägerstr. (Köpenick): enge Straße	q1 22395,4678 22365,4676 22355,4660 22314,4604
+Jägerstr. (Köpenick): enge Straße	q1 22395,4678 22363,4678 22355,4660 22314,4604
 #: by: Roger Menge: vvv
 #: confirmed_by: srt (and added BS)
 #: XXX_prog BS (an der Swakopmunder Str., ansonsten q2)

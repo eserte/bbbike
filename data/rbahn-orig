@@ -149,10 +149,14 @@ RE2,RE4,RE6,RE8,RB10,RB21	RB -3663,14083 -4142,14180 -4766,14330 -5489,14498 -56
 #: by: https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/Liniennetze/bahn-regionalverkehr-brandenburg-und-berlin.pdf (vom 2.8.2025)
 #: by: https://thomas.krickstadt.de/bvg+vbb/netzplanvergleiche/2025-02-19-2025-08-01-xxl.gif
 #: by: https://generalsanierung.db-ersatzverkehr.de/resource/blob/13438864/b872f7333867e698c3a2ef9904e87d43/Bild-Liniennetzplan-gesamt-data.png
+#: by: https://www.deutschebahn.com/de/presse/pressestart_zentrales_uebersicht/Inbetriebnahme-der-Strecke-Hamburg-Berlin-in-zwei-Stufen-Erste-Zugfahrten-ab-15-Mai-13769684 (Verlängerung bis 14.06.2026)
+#: by: https://www.deutschebahn.com/resource/blob/13769696/9911ffb88bbe4341465376f1306f04a8/GS-HH-B_Teilinbetriebnahme_Mrz26-data.png
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgrvlrz4x22n
+#: by: https://viz.berlin.de/aktuelle-meldungen/inbetriebnahme-der-strecke-hamburg-berlin-in-zwei-stufen-erste-zugfahrten-ab-15-mai/
 #: also_indoor: url https://hamburg-berlin.deutschebahn.com/home.html
 #: XXX globale ignore_disconnected-Einträge beachten!
-#: XXX Bauarbeiten zwischen August 2025 und April 2026, Sperrung der Strecke vvv
-#: next_check: 2026-04-30 vvv
+#: XXX Bauarbeiten zwischen August 2025 und April 2026, Sperrung der Strecke; mittlerweile im brandenburgischen Teil bis 14.06.2026 verlängert vvv
+#: next_check: 2026-06-13 vvv
 # Spandau - Albrechtshof, ab Abzweig Staaken
 #: XXX was RE2,RE6,RE8,RB10,RB14	RB
 	RBau -5606,14534 -5819,14597 -6387,14841 -7785,15392 -8380,15635

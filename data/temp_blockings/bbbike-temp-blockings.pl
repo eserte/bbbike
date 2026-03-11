@@ -491,14 +491,15 @@ EOF
      },
      { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-01 23:59:59"),
-       periodic => 1,
-       recurrences => [['yearly', days => 1, months => 5, start => "2025-05-02T00:00:00"]],
-       #recurrence_prewarn_days => 14,
+## Es ist unwahrscheinlich, dass das MyFest in Zukunft wieder stattfindet.
+#      periodic => 1,
+#      recurrences => [['yearly', days => 1, months => 5, start => "2025-05-02T00:00:00"]],
+#      #recurrence_prewarn_days => 14,
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: tempex: YYYY0431T1200-YYYY05020000 vvv
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
+#: url: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1170557.php (2022 vermutlich nicht)
 #: by: https://berliner-abendblatt.de/2022/01/26/myfest-findet-nicht-statt/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10236 (Anfrage)
@@ -507,6 +508,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/nahost-konflikt-auch-problem-bei-demonstrationen-am-1-mai-id249800
 #: by: https://berliner-abendblatt.de/berlin-news/spranger-fuer-das-myfest-ist-der-bezirk-zustaendig-id250115
 #: by: https://www.morgenpost.de/bezirke/friedrichshain-kreuzberg/article403927094/myfest-1-mai-2025-berlin-kreuzberg.html (findet 2025 nicht statt)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1637367.php
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11506,10746 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
@@ -2396,7 +2398,7 @@ EOF
 	2 22111,4562 22162,4546
 	2 22111,4562 22093,4499
 	2 22153,4840 22074,4664 22057,4618 22043,4562
-	2 22395,4678 22365,4676 22355,4660 22314,4604
+	2 22395,4678 22363,4678 22355,4660 22314,4604
 	2 22324,4586 22214,4548 22162,4546
 	2 22043,4562 22057,4531 22071,4501
 EOF
@@ -14369,7 +14371,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: Findet möglicherweise dauerhaft nicht mehr statt. Siehe stattdessen "Wein- und Winzerfest Westend"
-#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
+#: url: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210409 (geplant 8. und 9. Mai 2021)
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210418 (erst 2022)
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20220407 (geplant 7. und 8. Mai 2022)
@@ -14907,7 +14909,7 @@ EOF
 	2::temp 22093,4499 22087,4470 22084,4455 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
 	2::temp 22138,4642 22074,4664
-	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
+	2::temp 22314,4604 22355,4660 22363,4678 22395,4678
 	2::temp 22284,4653 22355,4660
 	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
 Streetfood-Bereich am Kietzgrabensteg	2::temp 22514,4632 22531,4605
@@ -22397,13 +22399,14 @@ EOF
 	q4::xmas 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
-     { from  => $isodate2epoch->("2025-05-16 10:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57 # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-05-18 06:00:00"), # 1367704799, # 2013-05-04 23:59 # am nächsten Tag am Morgen
+     { from  => $isodate2epoch->("2026-05-15 10:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57 # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-05-17 06:00:00"), # 1367704799, # 2013-05-04 23:59 # am nächsten Tag am Morgen
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5, start => "2021-10-25T00:00:00"]],
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 17. Mai 2025',
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 16. Mai 2026',
        type  => 'gesperrt',
        data  => <<EOF,
+#: url: https://www.berliner-frauenlauf.de/
 #: by: https://www.berliner-frauenlauf.de/der-tag/strecke.html
 #: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
@@ -22604,13 +22607,14 @@ EOF
 	2::temp 3976,11869 3801,11858
 EOF
      },
-     { from  => $isodate2epoch->("2025-05-08 04:00:00"), # ein Tag Vorlauf vor der Sperrung, die einen Tag vor der Verantaltung beginnt
-       until => $isodate2epoch->("2025-05-12 05:00:00"), # Sperrung typischerweise bis in den Morgen des nächsten Tages
+     { from  => $isodate2epoch->("2026-05-07 04:00:00"), # -2d: ein Tag Vorlauf vor der Sperrung, die einen Tag vor der Verantaltung beginnt
+       until => $isodate2epoch->("2026-05-11 05:00:00"), # +1d: Sperrung typischerweise bis in den Morgen des nächsten Tages
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 5, start => "2021-06-01T00:00:00"]], # auf 2021 verlegt --- auf 2020 verlegt
-       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 09.05.2025 04:00 Uhr bis 12.05.2025 05:00 Uhr',
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 08.05.2026 04:00 Uhr bis 11.05.2026 05:00 Uhr', # -1d..+1d
        type  => 'handicap',
        data  => <<EOF,
+#: url: https://classicdays-berlin.de/
 #: by: http://www.die-classic-days-berlin.de/programm-2/
 #: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
 #: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
@@ -24536,7 +24540,7 @@ EOF
 # REMOVED (hier wohl nicht) ---	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
 # REMOVED (hier wohl nicht) ---	2::temp 22212,4655 22214,4548
 # REMOVED (hier wohl nicht) ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
-# REMOVED (hier wohl nicht) ---	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
+# REMOVED (hier wohl nicht) ---	2::temp 22314,4604 22355,4660 22363,4678 22395,4678
 # REMOVED (hier wohl nicht) ---	2::temp 22175,4730 22246,4711
 # REMOVED (hier wohl nicht) ---	2::temp 22074,4664 22138,4642
 # REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
@@ -30153,12 +30157,13 @@ EOF
 	q3::inwork 4119,22634 4232,22458 4280,22383
 EOF
      },
-     { from  => $isodate2epoch->("2024-10-21 18:00:00"), # $isodate2epoch->("2024-09-22 00:00:00"), # $isodate2epoch->("2019-02-10 06:00:00"),
-       until => 1772131088, # $isodate2epoch->("2027-03-31 18:00:00"), # $isodate2epoch->("2024-10-21 18:00:00"), # 1575318719, # $isodate2epoch->("2019-12-31 18:00:00"),
+     { from  => undef, # $isodate2epoch->("2024-10-21 18:00:00"), # $isodate2epoch->("2024-09-22 00:00:00"), # $isodate2epoch->("2019-02-10 06:00:00"),
+       until => undef, # 1772131088, # $isodate2epoch->("2027-03-31 18:00:00"), # $isodate2epoch->("2024-10-21 18:00:00"), # 1575318719, # $isodate2epoch->("2019-12-31 18:00:00"),
 #      text  => 'Freiheit/Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Norden, vom 11.02.2019 bis voraussichtlich Ende 2019',
 #      text  => 'Freiheit/Lüdersstr./Alter Markt: Bauarbeiten, Fahrbahn gesperrt, vom 23.09.2024 bis voraussichtlich 21.10.2024',
 #      text  => 'Lüdersstr./Alter Markt/Freiheit: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
-       text  => 'Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
+#      text  => 'Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
+       text  => 'Landjägerbrücke: Bauarbeiten, Sperrung der Fahrbahn',
        data  => <<EOF,
 # REMOVED (in osm aufgehoben) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php --- #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/ --- #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369 --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben? --- #: source_id: 2147344699 --- #: osm_watch: way id="25274116" version="20" --- #: osm_watch: way id="671101960" version="4" --- #: also_indoor: traffic (G,H) --- #: last_checked: 2019-11-23 --- #: check_frequency: 7d
 #: next_check_id: ALTSTADTKOEPENICK-2024
@@ -30173,12 +30178,13 @@ EOF
 #: also_indoor: traffic (T,G,H,W)
 #: note: H: falsche Einbahnstraßenrichtung; W: falsche Komplettsperrung
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2025-12-06
-# REMOVED --- #: check_frequency: 120d
-#: check_frequency: 90d (traffic)
-#: next_check: 2027-03-31
-Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
+#: last_checked: 2026-03-11
+# REMOVED --- #: check_frequency: 90d (traffic)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2027-03-31
+# REMOVED (nicht mehr) --- Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
 # REMOVED (hier mittlerweile Sackgasse, Fuß+Radverkehr frei) --- Freiheit: Einbahnstraßenregelung	q4::inwork; 22377,4836 22196,4847
+Landjägerbrücke	q4::inwork 22426,4609 22446,4581 22458,4565 22495,4523
 EOF
      },
      { from  => 1550383200, # 2019-02-17 07:00
@@ -30731,16 +30737,17 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2025-06-01 00:00:00"), # $isodate2epoch->("2024-05-12 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
-       until => $isodate2epoch->("2025-06-06 09:00:00"), # $isodate2epoch->("2024-05-17 09:00:00"), # 1560549599, # 2019-06-14 23:59
-       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 3. Juni 2025 bis 5. Juni 2025',
+     { from  => $isodate2epoch->("2026-05-31 00:00:00"), # $isodate2epoch->("2024-05-12 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen! -> -2d
+       until => $isodate2epoch->("2026-06-05 09:00:00"), # $isodate2epoch->("2024-05-17 09:00:00"), # 1560549599, # 2019-06-14 23:59 -> +1d
+       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 2. Juni 2026 bis 4. Juni 2026',
+       prewarn_days => 2,
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 5]],
        type  => 'gesperrt',
        data  => <<EOF,
+#: url: https://www.berliner-teamstaffel.de/
 #: by: https://www.berliner-teamstaffel.de/der-tag/strecke.html
 #: by: https://www.berliner-teamstaffel.de/event/strecke
-#: by: https://www.berliner-teamstaffel.de/
 #: source_id: 2147344332 (inaktiv)
 #: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
@@ -32206,7 +32213,7 @@ EOF
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-03-08 (osm)
+#: last_checked: 2026-03-11
 #: check_frequency: 30d
 #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -33601,13 +33608,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1615835277, # undef, # XXX
-       text  => 'Trautenauer Str.: Fahrbahn wegen Bauarbeiten am Projekt "Parkstadt Karlshorst" gesperrt',
+       until => undef, # 1615835277, # undef, # XXX
+#      text  => 'Trautenauer Str.: Fahrbahn wegen Bauarbeiten am Projekt "Parkstadt Karlshorst" gesperrt',
+       text  => 'Trautenauer Str.: Einbahnstraßenregelung zwischen Georg-Klingenberg-Str. und Ehrlichstr.',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
 # REMOVED (nicht mehr) --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2021-03-01 --- #: check_frequency: 45d
-# REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349
-	q4::inwork 17771,8349 17753,8290
+# REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349 ---	q4::inwork 17771,8349 17753,8290
+#: next_check_id: BLOCKDAMMWEG-2026
+#: note: vielleicht Baustelleneinrichtung für den Blockdammweg, vielleicht schon vorbereitend für die Sperrung der Ehrlichstr. und Umleitungsverkehr via Georg-Klingenberg-Str. und Trautenauer Str.
+#: last_checked: 2026-03-11
+	q4::inwork; 17879,8773 17851,8662 17846,8644
 EOF
      },
      { from  => undef, # 
@@ -36533,11 +36544,11 @@ EOF
 #: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
 #: osm_watch: way id="734271970" version="10"
 #: osm_watch: way id="975241319" version="10"
-#: osm_watch: way id="970452276" version="8"
+#: osm_watch: way id="970452276" version="9"
 #: osm_watch: note 5093384 4
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-10 (osm)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36870,8 +36881,8 @@ EOF
        text  => 'Schnellerstr./Spreestr.: Straßenfest (Fest für Demokratie und Toleranz), Fahrbahnen gesperrt, am 17.5.2025 von 07:00 bis 23:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: url: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1525328801823133698#m
-#: by: https://www.berlin.de/events/8011055-2229501-fest-fuer-demokratie-und-toleranz.html (17. Mai 2025)
 #: by: https://nitter.net/pic/media%2FFSi8fsTXMAAtSC7.jpg%3Fname%3Dorig
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412883.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1444072.php
@@ -40942,7 +40953,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-03-01 vvv
+#: last_checked: 2026-03-11 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -47633,7 +47644,7 @@ EOF
 #      text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Rosenstr. und Müggelheimer Str. gesperrt, geplant bis November 2025',
 #      text  => 'Alt-Köpenick: Bauarbeiten, Anbindung in Höhe Freiheit gesperrt, voraussichtlich bis zum 13.10.2025',
 #      text  => 'Alt-Köpenick: Bauarbeiten, Anbindung in Höhe Freiheit gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Kietzer Str./Kirchstr.: Gleisbauarbeiten, Fahrbahn vermutlich gesperrt, voraussichtlich bis Ende August 2026',
+       text  => 'Kietzer Str./Kirchstr. und angrenzende Straßen: Gleisbauarbeiten, Fahrbahn vermutlich gesperrt, voraussichtlich bis Ende August 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ALTSTADTKOEPENICK-2024
@@ -47655,13 +47666,18 @@ EOF
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22144,4660 22138,4642 22111,4562
 # REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22093,4499
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-#: last_checked: 2026-03-05 (traffic)
-#: check_frequency: 90d
-#: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
+#: last_checked: 2026-03-05 (traffic) vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-08-24 (VIZ-Verkehrsmeldung) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
 # REMOVED (hier Sackgasse) --- Kietzer Str. - Kirchstr.	q4::inwork 22246,4711 22240,4768 22196,4847
+Jägerstr.: Fahrbahn gesperrt	q4::inwork 22314,4604 22355,4660
+Schüßlerplatz: Fahrbahn gesperrt	q4::inwork 22284,4653 22355,4660
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1739634060, # 2025-02-15 16:41
@@ -48352,7 +48368,7 @@ EOF
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
-#: last_checked: 2026-02-28 (website check) vvv
+#: last_checked: 2026-03-11 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 # REMOVED --- #: next_check: 2025-09-01 (Wassermannstr.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
@@ -48925,8 +48941,8 @@ EOF
        text  => 'Pfarrstr. und Kaskelstr.: Straßenfest (Viva Victoria), am 17.5.2025 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
-#: note: frühere Veranstaltungstage: 14.5.2022, ...
-#: by: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
+#: note: frühere Veranstaltungstage: 14.5.2022, 17.5.2025, ...
+#: url: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
 	q4::temp 15434,11086 15359,11115 15461,11313
 	q4::temp 15245,11162 15359,11115 15279,10862
 EOF
@@ -49901,7 +49917,7 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben), 2025-12-06 Sat 11:20 nicht passierbar
 #: also_indoor: traffic (none)
 #: osm_watch: way id="1163982841" version="3"
-#: last_checked: 2025-12-06
+#: last_checked: 2026-03-11
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
@@ -50257,11 +50273,11 @@ EOF
        data  => <<'EOF',
 #: next_check_id: HIRSCHGARTEN-2024
 #: by: https://sbahn.berlin/fahren/bahnhofsuebersicht/hirschgarten/ (kein Halt vom 05.08. (Di) 4 Uhr bis 06.09.2025 (Sa) 5 Uhr)
-#: osm_watch: note 4890807 3
+#: osm_watch: note 4890807 4
 #: osm_watch: way id="37523779" version="6"
 #: note: 2025-08-27: An der Nordseite nicht richtig gesperrt gewesen, an der Südseite nur halbherzig.
-#: last_checked: 2025-08-27
-#: next_check: 2025-09-06
+#: last_checked: 2026-03-11
+# REMOVED --- #: next_check: 2025-09-06
 	2::inwork 23951,6063 23948,6054 23947,6014 23930,6013
 EOF
      },
@@ -51723,7 +51739,7 @@ EOF
 #: check_frequency: 45d vvv
 #: osm_watch: way id="1467787945" version="2"
 Uferweg	2::inwork 18192,5931 18118,5953
-#: osm_watch: way id="958828368" version="3"
+#: osm_watch: way id="958828368" version="4"
 Verbindungsweg	2::inwork 18118,5953 18075,5880
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -52063,9 +52079,10 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Blockdammweg: Bauarbeiten, Fahrbahn möglicherweise gesperrt',
+       text  => 'Blockdammweg: Bauarbeiten, Fahrbahn (Rampe zur Brücke und Anbindung zur Wandlitzstr.) komplett gesperrt, voraussichtlich bis Herbst 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: next_check_id: BLOCKDAMMWEG-2026
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23&plugid=/ingrid-group:ige-iplug-be&docid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/2_Uebersichtslageplan.pdf
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/3_Lageplan_250.pdf
@@ -52091,16 +52108,16 @@ EOF
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse (bis voraussichtlich 1. November 2026)
 #: by[nocache]: https://www.uvp-verbund.de/documents-ige-ng/igc_be/27B18CBA-A54C-4B76-B3FF-2B1F76A96A23/Alle_Unterlagen_gesiegelt%2F3_Lageplan_gesiegelt.pdf (Baustelleneinrichtungsfläche)
 #: osm_watch: way id="1456917114" version="4"
-#: osm_watch: note 5193492 2
+#: osm_watch: note 5193492 3
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
-#: last_checked: 2026-03-01 vvv
-#: check_frequency: 180d vvv
-# REMOVED --- #: next_check: 2026-03-15 (pardok: geplanter Beginn der Leitungsarbeiten)
-#: next_check: 2026-03-02 (bahninfo-forum) vvv
+#: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
+#: last_checked: 2026-03-11 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-06-08 (Halteverbotsschilder) vvv
+# REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten)
 Blockdammweg, Rampe	2::inwork 17754,8863 17762,8855 17904,8924
-#: XXX dieser Abschnitt vermutlich Baustelleneinrichtungsfläche, auch prüfen!
-Blockdammweg - Wandlitzstr.	2::inwork 17754,8863 17915,8945
+Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
