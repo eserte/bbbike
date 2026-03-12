@@ -41047,7 +41047,7 @@ EOF
 #: note: mittlerweile laufen Rückbauarbeiten
 #: note: der direkte Umweg über das Stadler-Gelände kann gesperrt sein (Wochenende? sonntags?), gesehen am 2025-02-15 Sun gegen 11:30
 #: add_fragezeichen: Ist die Wegverbindung noch gesperrt?
-#: last_checked: 2026-02-15 (mapillary)
+#: last_checked: 2026-03-11 (bahninfo-forum)
 #: check_frequency: 90d
 	2::inwork 7090,19943 7123,19855
 # REMOVED (hier nicht gesperrt, Umleitungsstrecke für den Mauerweg) ---	2::inwork 7123,19855 7138,19839 7184,19783 7285,19700 7308,19653
@@ -45229,13 +45229,13 @@ EOF
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-03-09 vvv
+#: last_checked: 2026-03-12 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9925,11568 9737,11546 9711,11543
-Jerusalemer Str. (Nord): Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9992,11682
+# REMOVED (Gasse für Radfahrer existiert, zumindest von Norden her mit Radwegschild) --- Jerusalemer Str. (Nord): Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9992,11682
 Jerusalemer Str. (Süd): Baustelleneinrichtungsfläche	q3::inwork 9925,11568 9936,11469
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
@@ -46753,12 +46753,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-07-20 00:00:00"), # 1731826800, # 2024-11-17 08:00, # 1729705680, # 1730012400, # 2024-10-27 08:00
-       until => $isodate2epoch->("2026-02-28 17:00:00"), # 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
+       until => $isodate2epoch->("2026-07-10 20:00:00"), # $isodate2epoch->("2026-02-28 17:00:00"), # 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
 #      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.11.2024 08:00 Uhr bis 12.05.2026 16:00 Uhr', # verschoben?
-       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.07.2025 08:00 Uhr bis 28.02.2026 17:00 Uhr',
+#      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.07.2025 08:00 Uhr bis 28.02.2026 17:00 Uhr',
+       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis 10.07.2026 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026)
+#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 EOF
      },
@@ -48413,7 +48414,8 @@ EOF
 # REMOVED --- #: next_check ^^^
 # REMOVED (abgeschlossen) --- #: note: wo genau? --- Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 # 
-#: last_checked: 2026-02-28 (MoPo) vvv
+#: also_indoor: traffic (no-T,G[nur Flemmingstr])
+#: last_checked: 2026-03-11 (traffic) vvv
 #: check_frequency: 60d vvv
 Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
@@ -48424,7 +48426,7 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 30.04.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-02-26 (traffic)
+#: last_checked: 2026-03-11 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
@@ -49017,7 +49019,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-03-06 (traffic) vvv
+#: last_checked: 2026-03-12 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 2924,9391 2947,9367
@@ -49730,7 +49732,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-02-26
+#: last_checked: 2026-03-12
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50214,7 +50216,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-10 vvv
+#: last_checked: 2026-03-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50950,7 +50952,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-12
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51222,8 +51224,8 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 7
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-02
-#: check_frequency: 14d
+#: last_checked: 2026-03-12 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
+#: check_frequency: 10d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
@@ -51303,15 +51305,18 @@ EOF
      { from  => 1762694374, # 2025-11-09 14:19
        until => undef, # 1766358000, # 2025-12-22 00:00
 #      text  => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., voraussichtlich bis Dezember 2025',
-       text  => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt (Stand Mitte Februar 2026)',
+#      text  => 'Gotenstr.: Sperrung der Fahrbahn und Bürgersteige vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt (Stand Mitte Februar 2026)',
+       text  => 'Gotenstr.: Sperrung der Fahrbahn vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
-#: osm_watch: note 4847575 6
+#: note: laut osm note mittlerweile ein schmaler Weg frei
+#: osm_watch: note 4847575 7
 #: last_checked: 2026-02-18
 # REMOVED --- #: next_check: 2025-12-21
-	2::inwork 7497,7761 7499,7880
+#	2::inwork 7497,7761 7499,7880
+	q4::inwork 7497,7761 7499,7880
 EOF
      },
      { from  => undef, # 
@@ -52031,7 +52036,7 @@ EOF
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260301
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mg2ivkj3xz2k
-#: source_id: LMS-BR:400526/72 viz2021:13.46099,52.5058,02.03.2026,07:00 (bis 13.03.2026)
+#: source_id: LMS-BR:400526/72 viz2021:13.46099,52.5058,02.03.2026,07:00 (bis 13.03.2026) (inaktiv)
 #: note: nach den Bauarbeiten wird hier vermutlich ein modaler Filter sein
 #: note: inkonsistente Ausschilderung: Richtung Osten Durchfahrt verboten, Radfahrer frei, aber es geht nur über den Bürgersteig weiter, keine Bordsteinabsenkungen; Richtung Westen keine eindeutige Freigabe --- mittlerweile sind die ersten Poller gesetzt und ein Durchlass für Radfahrer existiert
 # REMOVED --- #: last_checked: 2026-03-02 --- #: next_check: 2026-03-13 (VIZ-Verkehrsmeldung)
