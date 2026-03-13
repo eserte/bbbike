@@ -28,7 +28,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-03-11
+#: last_checked: 2026-03-13
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -56,7 +56,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-03-07 vvv
+#: last_checked: 2026-03-13 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="12"
@@ -83,9 +83,9 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13434,13234 1
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="28"
-#: osm_watch: way id="1072662717" version="32"
-#: last_checked: 2026-03-06
+#: osm_watch: way id="1072662716" version="29"
+#: osm_watch: way id="1072662717" version="33"
+#: last_checked: 2026-03-13
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -784,22 +784,17 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 # 
 # REMOVED --- #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, (bis 15.01.2026) (inaktiv)
 # REMOVED --- Grimmstr.: Wasserrohrbruch, wo genau? Sind Radfahrer betroffen?	?::inwork; 11089,9751 11072,9711 11042,9642 11023,9597
-#: by: https://bsky.app/profile/eserte.bsky.social/post/3mf5bn74i322s
-#: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026)
-#: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026)
-#: also_indoor: traffic (G[nun Grimmstr.],T[nun Müllenhoffstr.],H,ex-W[nur Müllenhoffstr.],A[falsche Position])
-#: last_checked: 2026-03-08 (sieht noch immer recht fertig aus) (und mittlerweile sind die Absperrungen weit weggeschoben, seen 2026-03-08 Sun)
-#: check_frequency: 14d
-#: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
-#: valid: -20260312
-Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
+# REMOVED --- #: by: https://bsky.app/profile/eserte.bsky.social/post/3mf5bn74i322s
+# REMOVED --- #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
+# REMOVED --- #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
+# REMOVED --- #: last_checked: 2026-03-08 (sieht noch immer recht fertig aus) (und mittlerweile sind die Absperrungen weit weggeschoben, seen 2026-03-08 Sun)
+# REMOVED --- #: check_frequency: 14d
+# REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20260312
+# REMOVED --- Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
 # 
-# # REMOVED --- #: next_check_id: GITSCHINER-2025
-# REMOVED --- #: last_checked: 2025-06-25
-# REMOVED --- #: next_check: 2025-08-29 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20250829
-# REMOVED --- Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
-# 
+# REMOVED --- #: next_check_id: GITSCHINER-2025 --- #: last_checked: 2025-06-25 --- #: next_check: 2025-08-29 (VIZ-Verkehrsmeldung) --- #: valid: -20250829 --- Böcklerstr.: Fahrbahn an der Skalitzer Str. gesperrt	q3::inwork 10871,10322 10887,10142
 # REMOVED (keine Baustelle mehr) --- #: source_id: viz2021:13.399669,52.49836,28.02.2024,07:00 (bis 15.04.2024) (bis 31.05.2024) (bis 31.07.2024) (bis 31.08.2024) (bis 28.09.2024) (bis 07.10.2024) (inaktiv) (bis 01.11.2024) (bis 29.11.2024) (bis 31.01.2025) (inaktiv) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1762710469696258300 --- #: by: https://pbs.twimg.com/media/GHWZ0ryXkAAbi2I?format=png (Verkehrszeichenplan) --- #: also_indoor: traffic (G,B,ex-W) --- #: last_checked: 2024-12-21 vvv --- #: next_check: 2025-12-19 vvv --- #: valid: -20250131 vvv --- Alexandrinenstr.: gemeinsamer Rad- und Gehweg im Baustellenbereich	q2+::inwork; 10178,10411 10122,10294 --- Alexandrinenstr.: Sperrung der Fahrbahn und des rechten Rad/Gehwegs Richtung Norden	q3::inwork; 10122,10294 10178,10411 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (scheint vorfristig beendet worden zu sein) --- #: XXX Alexandrinenstraße (Kreuzberg) in beiden Richtungen, Kreuzung Ritterstraße: Leitungsarbeiten, Die Alexandrinenstraße ist von beiden Seiten von der Ritterstraße abgehängt, vom 11.12.2023 06:00 bis 29.12.2023 17:00 --- #: source_id: viz2021:13.403669,52.503381,11.12.2023,06:00 (bis 29.12.2023) (bis 29.02.2023) --- #: also_indoor: traffic (G,W)--- #: last_checked: 2024-01-08 --- #: check_frequency: 30d --- #: next_check: 2024-02-29 --- #: valid: -20240229 --- Alexandrinenstr.: Fahrbahn in Höhe Ritterstr. gesperrt	q2::inwork 10501,11056 10397,10852 10329,10723
 # REMOVED (beendet) --- #: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00, 2021-11-09 gegen 18:10) --- #: last_checked: 2021-11-20 --- #: check_frequency: 14d --- Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
@@ -1342,13 +1337,14 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-03-09 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
-# REMOVED --- #: next_check: 2026-04-20 (VIZ-Verkehrsmeldung) vvv
-Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
-Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork 11785,13625 11762,13619
-Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q4::inwork 11762,13619 11706,13635
+#: last_checked: 2026-03-13 vvv
+#: check_frequency: 10d vvv
+# REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
+#: next_check: 2026-04-20 (VIZ-Verkehrsmeldung) vvv
+#: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig
+Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635 11820,13804
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
+Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3+::inwork; 11706,13635 11762,13619 11785,13625
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

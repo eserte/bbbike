@@ -22484,8 +22484,8 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
-#: also_indoor: traffic (re-ex-re-G,ex-H,ex-A,ex-re-W,T)
-#: last_checked: 2026-03-08 (traffic)
+#: also_indoor: traffic (re-ex-re-G,ex-H,ex-A,ex-W,T)
+#: last_checked: 2026-03-13 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
@@ -33991,7 +33991,7 @@ EOF
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 19
-#: last_checked: 2026-02-12 (traffic)
+#: last_checked: 2026-03-13 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -34330,8 +34330,8 @@ EOF
        text  => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
        type  => 'handicap',
        recurring => 1,
-       source_id => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
-       data  => <<EOF,
+       data  => <<'EOF',
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
@@ -39115,7 +39115,7 @@ EOF
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: osm_watch: note 4984535 1
 #: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-11 (mapillary)
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -40568,7 +40568,7 @@ EOF
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-09 vvv
+#: last_checked: 2026-03-13 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -41086,15 +41086,16 @@ EOF
 	q4::temp::play 7657,9942 7698,10147
 EOF
      },
-     { from  => $isodate2epoch->("2025-04-03 00:00:00"), # 1688594400, # 2023-07-06 00:00
-       until => $isodate2epoch->("2025-11-08 00:00:00"), # 1699052399, # 2023-11-03 23:59
-       text  => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2024 bis November 2025',
+     { from  => $isodate2epoch->("2026-04-02 00:00:00"), # 1688594400, # 2023-07-06 00:00
+       until => $isodate2epoch->("2026-11-06 19:00:00"), # 1699052399, # 2023-11-03 23:59
+       text  => 'Hähnelstr.: zwischen Lauterstr. und Stierstr. jeden 1. Freitag im Monat von 15 bis 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, April 2026 bis November 2026',
        type  => 'handicap',
        recurring => 1,
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1336522.php
 #: by: http://spielstraßen.de/uebersicht.php?date=20230620
 #: by: http://spielstraßen.de/uebersicht.php?date=20240401
+#: by: http://spielstraßen.de/uebersicht.php?date=20260313 (uneinheitlicher Beginn: 15:00 vs 15:30)
 	q4::temp::play 5956,7686 5812,7685
 EOF
      },
@@ -42096,7 +42097,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2026-03-03
+#: last_checked: 2026-03-13
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -45433,7 +45434,7 @@ EOF
 #: priority: #A vvv
 #: last_checked: 2026-02-25 vvv
 #: check_frequency: 30d vvv
-#: osm_watch: way id="26158804" version="27"
+#: osm_watch: way id="26158804" version="28"
 # REMOVED (hier mittlerweile auch offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5787,4400 5738,4361 5721,4356
 # REMOVED (hier mittlerweile offen; zwar neu gemacht, aber (noch?) ziemlich wellig) --- Weverpromenade	2::inwork 5721,4356 5541,4305
 # REMOVED (hier mittlerweile offen) --- Stadtpark Steglitz	2::inwork 5841,4557 5836,4469 5787,4400
@@ -46019,7 +46020,7 @@ EOF
 #: osm_watch: way id="1119255054" version="12"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-03-09
+#: last_checked: 2026-03-13
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -46044,7 +46045,7 @@ EOF
 #: osm_watch: way id="105827213" version="12"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 4
-#: last_checked: 2026-02-12 (research)
+#: last_checked: 2026-03-13 (research)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -47276,7 +47277,7 @@ EOF
 #: also_indoor: traffic (ex-T,G[zu lang])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2026-02-12 (traffic)
+#: last_checked: 2026-03-13 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2028-12-31
@@ -48535,13 +48536,13 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (re-G[Südendstr+ex-Heesestr],ex-T[Südendstr],ex-W[Südendstr],A[Heesestr+Südendstr])
-#: osm_watch: way id="1237862681" version="6"
+#: osm_watch: way id="1237862681" version="7"
 #: osm_watch: way id="1237862680" version="3"
-#: osm_watch: way id="1237862682" version="3"
+#: osm_watch: way id="1237862682" version="4"
 #: osm_watch[closed]: note 4544910 5
 #: osm_watch[closed]: note 4544909 3
 #: osm_watch[closed]: note 4544105 3
-#: osm_watch: way id="4871838" version="30"
+#: osm_watch: way id="4871838" version="31"
 #: osm_watch: way id="1237862688" version="3"
 #: osm_watch: note 4832179 5
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
@@ -49692,10 +49693,11 @@ EOF
 #: next_check_id: FINOWKANAL-2025
 # REMOVED (nun 404) --- #: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
 #: by: https://www.finowkanal.info/service/aktuelles/
+#: osm_watch: way id="215065232" version="5"
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
-#: note: laut umap-Karte Eröffnung Ende 2025 (Stand Juli 2025)
+#: note: laut umap-Karte Eröffnung Ende 2025 (Stand März 2026); bei osm nur die Schleusenüberfahrt als gesperrt gekennzeichnet
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2026-02-12 (research)
+#: last_checked: 2026-03-13 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -50316,9 +50318,9 @@ EOF
        data  => <<'EOF',
 #: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,re-T)
-#: osm_watch: way id="722008943" version="14"
-#: osm_watch: way id="722013098" version="14"
-#: osm_watch: way id="1350756367" version="3"
+#: osm_watch: way id="722008943" version="15"
+#: osm_watch: way id="722013098" version="15"
+#: osm_watch: way id="1350756367" version="4"
 #: osm_watch: note 5124809 1
 #: last_checked: 2026-03-01 (osm) vvv
 #: check_frequency: 45d vvv
@@ -51669,9 +51671,9 @@ EOF
        text  => 'Waldemarstr.: Bauarbeiten, Sperrung zwischen Audre-Lorde-Str. und Mariannenplatz, evtl. sind auch Radfahrer betroffen, vom 05.01.2026 07:00 bis 13.03.2026 16:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026)
+#: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312088 (bereits am nächsten Tag inaktiv)
-#: source_id: bvg2024:140#HIM_FREETEXT_312193
+#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312193
 #: note: wenn es eine Baustelle gibt, dann nur im hinteren Teil an der Audre-Lorde-Str., deshalb q4 -> q3
 	q3::inwork 12056,10642 11839,10736
 EOF
@@ -52044,12 +52046,12 @@ EOF
 EOF
      },
      { from  => 1772341200, # 2026-03-01 06:00
-       until => $isodate2epoch->("2026-03-13 23:59:59"), # 1773701999, # 2026-03-16 23:59
-       text  => 'Thulestraße: Leitungsarbeiten zwischen Talstr. und Hardangerstraße, evtl. sind auch Radfahrer von der Sperrung betroffen, bis ca. Mitte März 2026',
+       until => $isodate2epoch->("2026-04-02 23:59:59"), # 1773701999, # 2026-03-16 23:59
+       text  => 'Thulestraße: Leitungsarbeiten zwischen Talstr. und Hardangerstraße, evtl. sind auch Radfahrer von der Sperrung betroffen, bis Anfang April 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mg2ififjv32s
-#: source_id: LMS-BR:400534/72 viz2021:13.42499,52.55511,02.03.2026,07:00 viz2021:13.426376,52.555395,02.03.2026,07:00 (bis 13.03.2026)
+#: source_id: LMS-BR:400534/72 viz2021:13.42499,52.55511,02.03.2026,07:00 viz2021:13.426376,52.555395,02.03.2026,07:00 (bis 13.03.2026) (bis 02.04.2026)
 	q4::inwork 11725,16630 11766,16633 11825,16666
 EOF
      },
@@ -52156,6 +52158,17 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgpd42uvik2s (voraussichtlich erst ab 26.3.2026)
 #: source_id: LMS-BR:401371/72 viz2021:13.4266,52.60763,10.03.2026,07:00 (angrenzender Rosenthaler Weg, bis 04.05.2026)
 	q4::inwork 11807,22395 11694,22479
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Marienburger Str.: Einbahnstraßenregelung zwischen Winsstr. und Greifswalder Str., evtl. sind auch Radfahrer betroffen',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (G,no-T,no-H,W)
+#: last_checked: 2026-03-13
+#: check_frequency: 14d
+	q4::inwork; 11821,14317 12077,14186
 EOF
      },
     );

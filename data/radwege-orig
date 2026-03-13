@@ -1787,7 +1787,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-03-05 vvv
+#: last_checked: 2026-03-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1808,7 +1808,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="57"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-03-07 vvv
+#: last_checked: 2026-03-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -3364,7 +3364,7 @@ Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 140
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-13
 #: next_check: 2026-03-31
 #: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
@@ -3373,7 +3373,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-13
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3384,14 +3384,14 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-13
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-13
 #: next_check: 2026-03-31
 #: valid: -20260331
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
@@ -5006,7 +5006,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-03-13 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -8420,7 +8420,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-03-06
+#: last_checked: 2026-03-13
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -8687,7 +8687,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2026-02-11
+#: last_checked: 2026-03-13
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8714,7 +8714,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-03-13 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-09-30 (infravelo) vvv
@@ -9302,8 +9302,8 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: source_id: viz2021:13.377485,52.466729,13.11.2023,06:00 (Leitungsarbeiten bis 01.12.2023) (inaktiv)
 #: osm_watch: way id="4357826" version="25"
-#: osm_watch: way id="354645907" version="20"
-#: osm_watch: way id="354645904" version="13"
+#: osm_watch: way id="354645907" version="21"
+#: osm_watch: way id="354645904" version="14"
 #: last_checked: 2026-02-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
