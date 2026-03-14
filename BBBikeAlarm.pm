@@ -44,7 +44,7 @@ $VERSION = '1.47';
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
-# XXX Leave funktioniert nur für max. 12 Stunden (testen!)
+# XXX Leave funktioniert nur fï¿½r max. 12 Stunden (testen!)
 
 sub my_die ($) {
     my $msg = shift;
@@ -71,7 +71,7 @@ sub enter_alarm {
     };
     if (!defined $ride_time) {
 	$top->messageBox(
-			 -message => M"Keine Fahrzeit übergeben",
+			 -message => M"Keine Fahrzeit ï¿½bergeben",
 			 -icon => 'error',
 			 -type => 'OK',
 			);
@@ -118,7 +118,7 @@ sub enter_alarm {
 		(-variable => \$sunset_choice,
 		 -options => [["" => ""],
 			      [M("Sonnenuntergang") => $sunset_real],
-			      [M("Ende der bürgerl. Dämmerung") => $sunset_civil],
+			      [M("Ende der bï¿½rgerl. Dï¿½mmerung") => $sunset_civil],
 			     ],
 		 -command => sub {
 		     $ankunft = $sunset_choice
@@ -335,7 +335,7 @@ sub enter_alarm {
 		       $t->destroy;
 		   })->pack(-side => "left", -fill => "x", -expand => 1);
 	$f->Button(Name => "close",
-		   -text => M"Schließen",
+		   -text => M"Schlieï¿½en",
 		   -command => sub {
 		       $do_close = 1;
 		       $t->destroy;
@@ -892,7 +892,7 @@ sub emacs_org_mode_date {
     $txt->insert("end", "** $text <$org_date>");
     $txt->selectAll;
     $t->Button(Name => "close",
-	       -text => M"Schließen",
+	       -text => M"Schlieï¿½en",
 	       -command => sub {
 		   $t->destroy;
 	       })->pack(-side => "right", -fill => "x");
@@ -1008,8 +1008,7 @@ sub tk_interface {
 	add_tk_alarm($$, $end_time, $esc_text);
     }
 
-    $top->after
-	($wait*1000, sub {
+    my $alarm_cb = sub {
 	     $top->deiconify;
 	     $top->raise;
 	     if ($Tk::platform eq 'unix') {
@@ -1041,8 +1040,20 @@ sub tk_interface {
 			  $dir = -1;
 		      }
 		  });
+    };
 
-	      });
+    my $max_after_seconds = 60;
+    my $schedule_alarm_check; # pre-declare for recursive reference
+    $schedule_alarm_check = sub {
+	my $remaining = $end_time - time;
+	if ($remaining <= 0) {
+	    $alarm_cb->();
+	} else {
+	    my $next_check = $remaining < $max_after_seconds ? $remaining : $max_after_seconds;
+	    $top->after($next_check * 1000, $schedule_alarm_check);
+	}
+    };
+    $schedule_alarm_check->();
     Tk::MainLoop();
 }
 
@@ -1239,14 +1250,14 @@ sub show_all {
 	    $l[3] = _decode_desc($desc);
 	    my $state = "unknown";
 	    if ($host eq $this_host) {
-		$state = (kill(0 => $pid) ? M("läuft") : M("läuft nicht"));
+		$state = (kill(0 => $pid) ? M("lï¿½uft") : M("lï¿½uft nicht"));
 	    }
 	    push @l, $state;
 
 	    my $reltime;
 	    my $min = ($time-time)/60;
 	    if ($min < 0) {
-		$reltime = M"überfällig";
+		$reltime = M"ï¿½berfï¿½llig";
 	    } else {
 		$reltime = sprintf "%d:%02d h", $min/60, abs($min)%60;
 	    }
@@ -1665,7 +1676,7 @@ Debian systems). In this case, just remove the mentioned file.
 
 =head1 TODO
 
-    sollte ich evtl. verwenden für die Liste der Alarme:
+    sollte ich evtl. verwenden fï¿½r die Liste der Alarme:
     http://reefknot.sourceforge.net/
     Date::ICal, Net::ICal
 
