@@ -29617,7 +29617,7 @@ EOF
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
-       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Anfang März 2026: Durchfahrt nicht möglich)',
+       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Mitte März 2026: Durchfahrt nicht möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: alte Bauarbeiten von 2018 - 2022
@@ -29641,24 +29641,25 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-03-07 vvv
+#: last_checked: 2026-03-14 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
 # REMOVED (hier mittlerweile wieder offen) --- Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
 # REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15558,8820 15505,8829
 # REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15505,8829 15439,8839 15297,8921
-Bulgarische Str. - Karpfenteich	2::inwork 15297,8921 15245,8916
+# REMOVED (offen) --- Bulgarische Str. - Karpfenteich	2::inwork 15297,8921 15245,8916
 # REMOVED (offen) --- Treptower Park: an der Wiese im südwestlichen Teil des Parks	2::inwork 14320,9530 14332,9543 14384,9565 14478,9545
 # REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14320,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 # REMOVED (offen) --- Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14320,9530
 #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
-	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
-	2::inwork 15298,8781 15343,8714
+Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal (mittlerweile eher nicht) weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
+# REMOVED (offen) ---	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
+# REMOVED (offen) ---	2::inwork 15298,8781 15343,8714
 # REMOVED (passierbar) ---	2::inwork 15343,8714 15378,8668
-	2::inwork 15181,8967 15245,8916
+# REMOVED (offen) ---	2::inwork 15181,8967 15245,8916
+	2::inwork 15159,8934 15181,8967
 # REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -38323,9 +38324,10 @@ EOF
 #: next_check_id: URBANTECHREPUBLIC-2022
 #: by: https://berliner-abendblatt.de/2023/01/11/senat-plant-auszug-der-fluechtlinge-aus-terminals-in-tegel/ (bis Mitte März 2023; allerdings bleibt Terminal C möglicherweise weiterhin als Unterkunft erhalten)
 #: by: https://www.tagesspiegel.de/berlin/nach-uber-dreieinhalb-jahren-betrieb-fluchtlingsunterkunft-tegel-ist-leergezogen--vorerst-keine-gefluchteten-mehr-vor-ort-15065214.html
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/txl-%E2%80%93-the-urban-tech-republic-kurt-schumacher-quartier.145/page-3#post-27032
 #: XXX Wie lange bleibt das Gelände gesperrt? Bei osm ist der Tunnel als "abandoned" gekennzeichnet. vvv
 #: note: Wachschutz an der Einfahrt "Zum Flughafen Tegel", theoretisch kan man über die Straße zur Luftfracht auf das Gelände gelangen
-#: last_checked: 2025-08-01 (orthofotos) vvv
+#: last_checked: 2026-03-07 (architektur-urbanistik) vvv
 #: check_frequency: 360d vvv
 # REMOVED --- #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="272993611" version="8"
@@ -48875,7 +48877,7 @@ EOF
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="5"
-#: last_checked: 2026-02-22 (traffic)
+#: last_checked: 2026-03-14 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -50109,7 +50111,7 @@ EOF
      { from  => 1754431200, # 2025-08-06 00:00
        until => undef, # 1767222000, # 2026-01-01 00:00
 #      text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang März 2026: Diagonalweg ist offen)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Mitte März 2026: Diagonalweg ist offen)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
@@ -50117,7 +50119,7 @@ EOF
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-14
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50218,7 +50220,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-12 vvv
+#: last_checked: 2026-03-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50673,7 +50675,7 @@ EOF
 # REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-03-08 vvv
+#: last_checked: 2026-03-14 vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv

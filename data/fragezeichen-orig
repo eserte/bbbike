@@ -82,7 +82,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2026-03-12
+#: last_checked: 2026-03-14
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -351,7 +351,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15951,12832 15953,12753
 #: osm_watch: way id="1447387791" version="1"
 #: osm_watch: way id="1122589166" version="5"
 #: osm_watch: way id="1122589168" version="3"
-#: last_checked: 2026-02-22 vvv
+#: last_checked: 2026-03-14 vvv
 #: check_frequency: 270d vvv
 #: XXX Maßnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15456,7516 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
@@ -444,7 +444,7 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4963,7566
 #: source_id: 2147339938 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_91391 (möglicherweise inaktiv)
 #: source_id: viz2021:13.47342,52.481225,12.06.2023,09:00 (Kanalsanierung, bis 23.06.2023) (inaktiv)
-#: last_checked: 2026-02-13
+#: last_checked: 2026-03-14
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
@@ -459,7 +459,7 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1623927.php (Erwähnung der Verlängerung bis Trojanstr.)
 #: by: https://www.infravelo.de/projekt/b-96a-koepenicker-landstrasse-stadtauswaerts/ (bereits realisierter Abschnitt bis S Plänterwald) (4. Quartal 2025 - 4. Quartal 2025) (Status Abgeschlossen)
 #: XXX Fortführung 2026
-#: last_checked: 2026-02-22
+#: last_checked: 2026-03-14
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (BA-Pressemitteilung)
 Köpenicker Landstraße: Radfahrstreifen bis Trojanstr.	?::projected; 15303,8343 15357,8286 15557,8077 15920,7697 16195,7398 16259,7328 16353,7226 16377,7200
@@ -971,7 +971,7 @@ Johannisthaler Chaussee: Bau eines Gehweges geplant, Freigabe für Radfahrer in b
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6858 (Forderung nach einem Fuß/Radweg auf der Nordseite)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/OEjhDcwY/34-Anlagen/04/B1340ZB1.pdf (1. Zwischenbericht)
 #: osm_watch: way id="154749357" version="24"
-#: last_checked: 2025-11-16
+#: last_checked: 2026-03-14
 #: check_frequency: 180d
 Königsheideweg: Bau eines Gehweges Südseite geplant, Freigabe für Radfahrer in beide Richtungen	?::projected 15382,5687 15642,5468 15731,5369 15807,5286 15870,5251 16062,5242 16279,5170
 # 
@@ -981,7 +981,7 @@ Königsheideweg: Bau eines Gehweges Südseite geplant, Freigabe für Radfahrer in b
 #: osm_watch: way id="1196086846" version="2"
 #: osm_watch: way id="1370680787" version="2"
 #: osm_watch: way id="31824581" version="32"
-#: last_checked: 2025-11-16
+#: last_checked: 2026-03-14
 #: check_frequency: 120d
 Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 15363,5668 15174,5467 15038,5235 14988,5214 14808,5202 14744,5211
 # 
@@ -1006,7 +1006,7 @@ Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 1
 #: XXX Gehweg auf der Nordwestseite ist fertig, noch (?) keine Änderungen bei der Radwegführung
 #: XXX es gab Bauarbeiten auf der Südostseite, aber da wurde wohl nur der Gehweg gemacht
 #: XXX Eine Freigabe wird vermutlich nicht passieren (siehe Schlussbericht) --- selten prüfen!
-#: last_checked: 2026-01-27 (mapillary)
+#: last_checked: 2026-03-14
 #: check_frequency: 360d
 Baumschulenstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 15584,5946 15628,6009 15723,6151
 # 
@@ -1014,7 +1014,7 @@ Baumschulenstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6950 (Antrag: Einbahnstraße, Bodenschwellen...)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/isek-lebendiges-zentrum-baumschulenstrasse-koepenicker-landstrasse_bericht.pdf (Erwähnung)
-#: last_checked: 2025-12-11
+#: last_checked: 2026-03-14
 #: check_frequency: 120d
 Neue Krugallee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 16615,7062 16507,7254
 # 
@@ -2130,7 +2130,7 @@ Marienpark: Planstraße 1 geplant	?::projected 8178,3591 8200,3479 8263,3496 8235
 #: osm_watch: way id="110450333" version="19"
 #: source_id: 2147343384 (möglicherweise inaktiv)
 #: XXX Siehe auch den provisorischen Radweg wegen der Bauarbeiten am Knoten Elsenstr./Am Treptower Park
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-14
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 14060,9574 14020,9524 13981,9474 13923,9405 13892,9365 13849,9310
 # 
@@ -3554,25 +3554,30 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 # REMOVED --- #: osm_watch: way id="1409203289" version="1"
 # REMOVED --- #: osm_watch: way id="1409203288" version="1"
 #: osm_watch: way id="852517037" version="4"
-#: XXX offene Fragen: wird es irgendwann eine Anbindung zum Bahndamm Richtung Görlitzer Park geben (angedacht ist es, aber Realisierung hat nicht begonnen)? wird es eine Anbindung zur Beermannstr. geben? wird es eine Anbindung zu Am Treptower Park geben?
 #: XXX außerdem wird es auch einen Betriebsweg auf der östlichen Seite geben, aber das wird wohl eine Sackgasse sein
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-14
 #: check_frequency: 30d
 #: next_check: 2026-04-15 (Tsp)
 # REMOVED (keine baldige Eröffnung zu erwarten) --- #: next_check: 2025-08-27 (rbb)
-Betriebsweg Kiefholzstr. - Görlitzer Bahn/Beermannstr.: asphaltiert, noch nicht eröffnet	?::inwork 14137,8983 14173,9018 14144,9092 14129,9137 14117,9233 14082,9267 14088,9299 14131,9356 14133,9371 14114,9384 14149,9546
+# REMOVED (übetragen nach strassen+gesperrt) --- Betriebsweg Kiefholzstr. - Beermannstr.: asphaltiert, noch nicht eröffnet	?::inwork 14139,8980 14173,9018 14136,9126 14130,9161 14120,9234 14103,9316 14131,9358 14124,9364
+Betriebsweg Beermannstr. - Am Treptower Park: noch nicht eröffnet, genaue Wegführung an der Beermannstr.?	?::inwork 14124,9364 14126,9375 14114,9384 14149,9546
+# 
+#: next_check_id: BAB100-2022
+#: last_checked: 2026-03-14
+#: check_frequency: 120d
+Betriebsweg Kiefholzstr. - Görlitzer Bahndamm/Park: wird hier eine Wegverbindung entstehen?	? 14081,9268 13970,9349
 # 
 #: next_check_id: BAB100-2022
 #: osm_watch: way id="612109178" version="4"
 #: XXX asphaltiert; es gibt Tore an beiden Enden
-#: last_checked: 2026-02-16
+#: last_checked: 2026-03-14
 #: check_frequency: 30d
 #: next_check: 2026-04-15 (Tsp)
 Betriebsweg Sonnenallee - Neuköllnische Allee: wird der Weg für Radfahrer befahrbar sein?	?::inwork 14245,7059 14261,7164 14323,7403
 # 
 #: osm_watch: way id="1413347151" version="3"
 #: XXX Hier fertig asphaltiert, aber auch noch Bauzäune.
-#: last_checked: 2026-02-16
+#: last_checked: 2026-03-14
 #: check_frequency: 30d
 #: next_check: 2026-04-15 (Tsp)
 Radweg neben der BAB100: genaue Lage?	?::inwork 14291,7033 14233,6923 14239,6875
@@ -4029,7 +4034,7 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 #: osm_watch: way id="1340601972" version="2"
 #: XXX Hier sind mittlerweile Bauarbeiten; offiziell "Verbot für Fahrzeuge aller Art, bis auf Anlieger", als Radfahrer kommt man eigentlich noch problemlos vorbei; außerdem nun "Gehweg, Radfahrer frei" im Bereich der Baustelle am Richard-Kolkwitz-Weg; mittlerweile wurde die zwischenzeitliche Sperrung wieder aufgehoben, aber evtl. kommt es in Zukunft wieder zu Sperrungen, deshalb Halbierung der check_frequency
 #: note: dieser Abschnitt wird auch "Beerfelder Str." heißen, siehe Amtsblatt 51/2024
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-13 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (website zwieseler-hof, entwicklungsstadt)
 Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler Str. und Verkehrsberuhigung der nördlichen Zwieseler Str. geplant	?::inwork 19810,10155 19790,10298 19704,10301 19711,10426
@@ -4039,7 +4044,7 @@ Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_08_0501_0548_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="1340601973" version="2"
 #: XXX fehlt bei Berlin.coords.data, PLZ=10318 laut LOR 06/2025
-#: last_checked: 2026-03-01
+#: last_checked: 2026-03-13 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (website zwieseler-hof)
 Zwieseler Hof: neue Straße geplant	?::inwork 19790,10298 19789,10403
@@ -4894,7 +4899,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: also_indoor: traffic vvv
 #: last_checked: 2026-02-15 (indoor research) vvv
 # REMOVED (outdoor) --- #: check_frequency: 60d vvv
-#: check_frequency: 30d (indoor research) vvv
+#: check_frequency: 90d (indoor research) vvv
 #: also_indoor: search Schildower_Straße
 Schildower Str.: wird hier ein modaler Filter entstehen?	? 4914,24366 4898,24351
 #: also_indoor: search Elsestraße
@@ -6251,7 +6256,7 @@ Bernauer Str.: entstehen hier Radstreifen?	?::projected 130,17187 149,17239 240,
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/sL7kdbzP5EQMi4zipWVmzE8uhvhUQdEBhzrTewoP/eaZbKErR/99-Anlagen/07/B0777SB.pdf (Schlussbericht: Ausschreibung und Vergabe 2025)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/infrastruktur/bau-von-querungshilfen/ (Vorplanung)
 #: XXX provisorischer Zebrastreifen (evtl. schon im Zuge der Havarie Köpenicker Landstraße/Baumschulenweg entstanden)
-#: last_checked: 2026-02-22
+#: last_checked: 2026-03-14
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 120d
 #: priority: #D
@@ -7979,7 +7984,7 @@ Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 1
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408769475/kein-geld-fuer-verkehrssicherheit-ost-bezirke-weisen-kritik-zurueck.html (Verzögerung, Umsetzung erst 2027-2028?)
 #: by: https://www.entwicklungsstadt.de/entlang-der-a100-wann-wird-der-neue-radweg-freigegeben/ (Zweirichtungsradweg auf der südwestlichen Seite?)
 #: XXX mittlerweile wurde bereits im Zuge der Umgestaltung der Kreuzung Elsenstr./Am Treptower Park eine Radwegauffahrt gebaut; außerdem siehe provisorische Führung des Radverkehr Richtung Nordwesten; laut infravelo verzögert sich die Umsetzung wegen einer Baumaßnahme der BWB, Realisierung erst 2027
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-14
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (infravelo)
 # REMOVED (hier wurde ein Stummel bereits realisiert) --- Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 14031,9673
@@ -7990,7 +7995,8 @@ Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14031,9
 #: next_check_id: TREPTOWERPARK-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
 #: XXX Ist bei der Entsiegelung auch dieser Weg betroffen? Wird dieser Weg während der Bauarbeiten gesperrt sein? Mittlerweile: ein ca. 100m langer Abschnitt halbseitig gesperrt
-#: last_checked: 2026-02-22
+#: osm_watch: note 4970885 2
+#: last_checked: 2026-03-14
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-11-01
 # REMOVED (hier fertig) --- Treptower Park: Sanierung im südlichen Parkteil	?::inwork 14318,9688 14316,9542 14320,9530
@@ -8138,7 +8144,7 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16093,-613 16173
 #: source_id: viz2021:13.49476,52.46667, (bis 11.09.2025) (bis 30.06.2027)
 #: XXX Zurzeit (Ende Februar 2023) kaum Einschränkungen für Radfahrer, nur stadtauswärts ist es auf dem Bürgersteig ein bisschen enger; mittlerweile (Mitte März 2023) existiert diese Einschränkung nicht mehr; Juli 2023: siehe handicap_directed
 #: XXX geplante Änderungen laut infravelo: auf der Brücke "gemeinsamer Geh- und Radweg" (war doch bislang auch so?), außerdem wird es mit der neuen Brückenkonstruktion möglich sein, an beiden Ufern Wege entlangzuführen
-#: last_checked: 2026-01-27 (mapillary)
+#: last_checked: 2026-03-14
 #: check_frequency: 90d
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung)
 Marggraffbrücke: Abriss und Neubau	?::inwork 16677,6892 16720,6845
@@ -8213,7 +8219,7 @@ Bebauungsplan 10-56-1: entsteht hier eine neue Straße?	? 19486,17170 19279,17220
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/sL7kdbzP5EQMi4zipWVmzE8uhvhUQdEBhzrTewoP/DIEFeBrR/01-Anlagen/07/B0350SB.pdf (Schlussbericht)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/infrastruktur/bau-von-querungshilfen/ (Vorplanung)
 #: priority: #D
-#: last_checked: 2026-01-31
+#: last_checked: 2026-03-14
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
@@ -9072,7 +9078,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
-#: last_checked: 2026-03-13 vvv
+#: last_checked: 2026-03-14 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="563341820" version="24"
 #: note: zwischenzeitlich gar keine Einbahnstraßenregelung
@@ -9218,9 +9224,11 @@ Friedenauer Höhe - Lauterstr.: hier entsteht eine Treppe (13+6 Stufen)	?::inwork
 Östliche Bucher-Straßen-Brücke: Ersatzneubau geplant	?::projected 13045,23465 13080,23508
 # 
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/fuerst-bismarck-steg/ (2026, Bauzeit halbes Jahr) (voraussichtliche Bauzeit: 2026 bis 2027)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24727.pdf (Beginn der Bauarbeiten im Betrachtungsraum 2026 bis 2028)
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/fuerst-bismarck-steg/
 #: osm_watch: way id="25722363" version="11"
-#: next_check: 2026-03-15 (SenMVKU website)
+#: last_checked: 2026-03-14 (indoor research)
+# REMOVED --- #: next_check: 2026-03-15 (SenMVKU website)
 Fürst-Bismarck-Steg: Neubau geplant	?::projected 3879,22574 3907,22560
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neukoellner-erkaempfen-sich-vor-gericht-eine-ampel-ein-vorbild-fuer-berlin-li.2278730 (Umsetzung wird voraussichtlich Ende 2025/Anfang 2026)
@@ -9848,7 +9856,7 @@ Rixdorfer Str./Wolfsburger Weg: hier soll ein Fußgängerüberweg (Zebrastreifen?) 
 Thulestr./Talstr.: Zebrastreifen geplant	?::projected 11802,16677 11825,16666 11818,16643
 # 
 #: osm_watch: note 5096104 1
-#: last_checked: 2026-01-27 (mapillary)
+#: last_checked: 2026-03-14
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (osm note)
 Sonnenallee: werden noch die fehlenden Radweg/spur-Stücke realisiert?	?;? 15768,6214 15725,6235
@@ -10554,6 +10562,7 @@ Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,
 #: by: https://www.degewo.de/presse/pressemitteilungen/presse/degewo-und-woehr-bauer-uebernehmen-wohnungsbauprojekt-lichterfelde-sued-von-der-groth-gruppe (Projektzeitraum 2026 bis 2035)
 #: by: https://www.tagesspiegel.de/berlin/millionen-wohnungs-deal-im-berliner-sudwesten-degewo-und-co-ubernehmen-den-bau-von-2080-wohnungen-15348359.html
 #: by: https://www.entwicklungsstadt.de/2-500-wohnungen-geplant-neulichterfelde-geht-in-die-naechste-phase/
+#: by:https://www.tagesspiegel.de/berlin/berliner-wirtschaft/neues-stadtquartier-im-berliner-sudwesten-degewo-deal-sichert-sozialen-wohnungsbau--und-wirft-fragen-auf-15355387.html
 # REMOVED --- #: osm_watch: way id="318397770" version="2"
 # REMOVED --- #: osm_watch: way id="318395919" version="6"
 #: osm_watch: way id="49998472" version="9"
@@ -10712,7 +10721,7 @@ II. Städtischer Friedhof Eythstraße: Teilfläche wird wegen eines Schulbaus aufge
 #: by: https://www.bonava.de/contentassets/ee9319c1e7fb4e9992d0373a539a23c1/quartierslageplan-gartenstadt-karlshorst-berlin-bonava.jpg_web-image.jpg
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_02_0065_0148_online.pdf (Grundstücksnummerierungen)
 #: XXX neue Straßen entstehen, Bebauungsplan XVII-50ab --- Gartenstadt Karlshorst II; fehlen alle in Berlin.coords.data; PLZ laut LOR: 10318
-#: last_checked: 2026-03-01 vvv
+#: last_checked: 2026-03-13 (architektur-urbanistik) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2031-12-31 (entwicklungsstadt) vvv
 #: XXX Planstraße 2:

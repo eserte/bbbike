@@ -488,7 +488,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-03-13
+#: last_checked: 2026-03-14
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -2535,8 +2535,8 @@ Jansastr.: Kopfsteinpflaster	Q2 12429,8856 12524,9012
 Ossastr.: Kopfsteinpflaster	Q2 12623,9134 12682,9089
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13279,8947 13455,8800
-Beermannstr.: Kopfsteinpflaster	Q2 13981,9474 14121,9366
-# REMOVED (existiert nicht mehr, A100 verläuft hier) --- Beermannstr.: Kopfsteinpflaster	Q2 14121,9366 14157,9345
+Beermannstr.: Kopfsteinpflaster	Q2 13981,9474 14124,9364
+# REMOVED (existiert nicht mehr, A100 verläuft hier) --- Beermannstr.: Kopfsteinpflaster	Q2 14124,9364 14157,9345
 # REMOVED (existiert nicht mehr, A100 verläuft hier) --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
 # REMOVED (existiert nicht mehr, A100 verläuft hier) --- Matthesstr.: Asphalt	Q0 14172,9457 14169,9525
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
@@ -4642,7 +4642,8 @@ Treptower Park: Kleinsteinpflaster	Q1- 15163,9200 15183,9186 15213,9166
 Treptower Park: wassergebundene Decke	Q1+ 15213,9166 15275,9140 15359,9131 15407,9151
 #: historical_note: bis 2025: Schotterweg, Q2+
 (Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916
-(Neue Krugallee/Bulgarische Str. - Karpfenteich): Asphalt	Q0 15245,8916 15223,8893
+#: historical_note: bis 2025/2026: Asphalt, Q0
+(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15245,8916 15223,8893
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6313,8254 6385,8274 6459,8281 6552,8281
 Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3569,11473 3554,11617
 Goethepark: Asphalt	Q1 3467,11373 3594,11372
@@ -4813,9 +4814,9 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 #: by: https://entwicklungsstadt.de/lakegrund-in-berlin-treptow-gruenanlage-wird-klimaresilient-umgestaltet/ (Abschluss 2025)
 #: by: https://www.entwicklungsstadt.de/lakegrund-in-treptow-modernisierung-der-gruenanlage-steht-kurz-vor-dem-abschluss/
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
-#: osm_watch: note 4526759 2
+#: osm_watch: note 4526759 3
 #: XXX "Teilentsiegelung" geplant
-#: last_checked: 2025-12-11
+#: last_checked: 2026-03-14
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (BA-Pressemitteilung)
 Lakegrund: Beton	Q1+ 16406,7430 16368,7425 16195,7398
@@ -6252,8 +6253,8 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 (Kirchsteig - Grünzug am Falkenberg): Beton	Q0- 21925,612 21879,557 21876,554 21905,510 21904,481 21886,466 21860,462
 (Grünzug am Falkenberg): Beton	Q0- 21876,554 21801,608
 #: XXX eventuell nur während der Bauarbeiten eine Schotterstraße, wie sieht es danach aus? (mittlerweile gibt es aber keine Bauarbeiten mehr)
-#: osm_watch: way id="226981984" version="3"
-#: last_checked: 2025-05-20
+#: osm_watch: way id="226981984" version="4"
+#: last_checked: 2026-03-14 (osm)
 #: check_frequency: 360d
 (Kirchsteig - Grünzug am Falkenberg): Schotter	Q2+ 21860,462 21774,412
 (Lindenblütenstr. - Mohnblütenweg): wassergebundene Decke	Q1 21681,326 21688,312
@@ -10102,11 +10103,13 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307
 (Treptower Park): wassergebundene Decke	Q1 15190,9027 15154,9106 15025,9171 14955,9294
 #: historical_note: früher (bis Anfang 2025) Asphalt, Q0
 (Treptower Park): wassergebundene Decke	Q1 14955,9294 14898,9364 14889,9381 14879,9433
-(Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15343,8714 15378,8668
+#: historical_note: früher (bis 2025/2026) Asphalt, Q0
+(Treptower Park): wassergebundene Decke	Q1 15159,8934 15223,8893 15235,8841 15298,8781 15343,8714 15378,8668
 # REMOVED --- #: next_check_id: TREPTOWERPARK-2018 --- #: last_checked: 2019-10-19 vvv --- früher Asphalt Q0-
 (Treptower Park): wassergebundene Decke	Q1 15505,8829 15468,8806 15413,8785 15343,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park - Karpfenteichstr.): wassergebundene Decke	Q1 14918,8813 14883,8823 14852,8799
-(Treptower Park): Asphalt	Q0 15181,8967 15245,8916
+#: historical_note: früher (bis 2025/2026) Asphalt, Q0
+(Treptower Park): wassergebundene Decke	Q1 15181,8967 15245,8916
 Florentinestr.: Asphalt	Q0 16633,20174 16728,20189
 (Florentinestr., Verlängerung): wassergebundene Decke	Q1 16728,20189 17050,20298
 (Weg): Asphalt	Q0 17061,20451 17130,20436 17426,20265 17643,20144 17745,20095 17842,20065
@@ -14134,6 +14137,9 @@ Wallenbergstr.: Kopfsteinpflaster	Q2- 4453,8490 4457,8383 4473,8351
 (Weg entlang der A100, westliche Seite): Asphalt	Q0 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 (Weg entlang der A100, westliche Seite): Betonpflaster mit Fugen	Q2+ 14375,8057 14406,8003 14410,7986
 (Weg entlang der A100, westliche Seite): Asphalt	Q0 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
+(Betriebsweg Kiefholzstr. - Beermannstr.): Asphalt	Q0 14139,8980 14173,9018 14136,9126 14130,9161 14120,9234 14103,9316 14131,9358 14124,9364
+(Betriebsweg Kiefholzstr. - Görlitzer Bahndamm): Asphalt	Q0 14120,9234 14081,9268
+(Betriebsweg Beermannstr. - Görlitzer Bahndamm): Asphalt	Q0 14103,9316 14088,9294 14081,9268
 # 
 (zu den Depotgebäuden): Asphalt	Q0 24700,5633 24716,5613 24734,5592 24733,5553
 (Fürstenwalder Damm - Müggelseedamm): Waldweg, etwas Split	Q1- 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943
