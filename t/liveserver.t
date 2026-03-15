@@ -15,12 +15,13 @@ use lib ("$FindBin::RealBin/..",
 BEGIN {
     if (!eval q{
 	use Test::More;
+	use HTTP::Tiny;
 	use LWP::ConnCache;
 	use LWP::UserAgent;
 	use Compress::Zlib;
 	1;
     }) {
-	print "1..0 # skip no Test::More, Compress::Zlib, LWP::ConnCache and/or LWP::UserAgent modules\n";
+	print "1..0 # skip no Test::More, Compress::Zlib, HTTP::Tiny, LWP::ConnCache and/or LWP::UserAgent modules\n";
 	exit;
     }
 }
@@ -31,7 +32,7 @@ use URI;
 use Http;
 use Strassen::Core;
 
-use BBBikeTest qw(check_network_testing image_ok like_long_data);
+use BBBikeTest qw(check_network_testing image_ok like_long_data http_tiny_env_proxy_args);
 
 check_network_testing;
 
@@ -115,30 +116,47 @@ for my $url (@urls) {
 	    }
 	}
 
-	# simulate old/new Http.pm and compression handling
-	# see httpd.conf.tpl for en/disabling DEFLATE functionality
-	for my $def (
-	     # UA                                         compress
-	    ["bbbike/3.16 (Http/3.17)",                   0],
-	    ["bbbike/3.17 (Http/4.01) (darwin)",          0],
-	    ["bbbike/3.17 (Http/4.01) (linux)",           1],
-	    ["bbbike/3.18 (Http/4.08) (darwin)",          1],
-	    ["bbbike/3.18 (Http/4.08) (linux)",           1],
-	    ["bbbike/3.16 (LWP::UserAgent/6.15) (linux)", 1],
-	) {
-	    my($ua_prefix, $should_compress) = @$def;
-	    my $ua_string = "$ua_prefix BBBike-Test/1.0";
-	    my $ua = LWP::UserAgent->new(conn_cache => $conn_cache);
-	    $ua->agent($ua_string);
-	    $ua->env_proxy;
-	    $ua->default_headers->push_header('Accept-Encoding' => 'gzip');
-	    my $resp = $ua->get("$url/obst");
-	    ok $resp->is_success, "successful fetch with $ua_string"
-		or diag $resp->dump;
-	    if ($should_compress) {
-		isnt $resp->content_encoding, '', "Got non-empty content-encoding '" . $resp->content_encoding . "' for UA '$ua_string'";
-	    } else {
-		ok !$resp->content_encoding, "Got no or empty content-encoding for UA '$ua_string'";
+	{
+	    # prefer HTTP::Tiny over LWP as the former correctly
+	    # retrys failed HTTP/1.1 keep-alive connections due to
+	    # server restarts
+	    my $ua = HTTP::Tiny->new(
+		default_headers => {
+		    'Accept-Encoding' => 'gzip',
+		},
+		http_tiny_env_proxy_args(),
+	    );
+	    # simulate old/new Http.pm and compression handling
+	    # see httpd.conf.tpl for en/disabling DEFLATE functionality
+	    for my $def (
+		# UA                                         compress
+		["bbbike/3.16 (Http/3.17)",                   0],
+		["bbbike/3.17 (Http/4.01) (darwin)",          0],
+		["bbbike/3.17 (Http/4.01) (linux)",           1],
+		["bbbike/3.18 (Http/4.08) (darwin)",          1],
+		["bbbike/3.18 (Http/4.08) (linux)",           1],
+		["bbbike/3.16 (LWP::UserAgent/6.15) (linux)", 1],
+	    ) {
+		my($ua_prefix, $should_compress) = @$def;
+		my $ua_string = "$ua_prefix BBBike-Test/1.0";
+		my $resp = $ua->get(
+		    "$url/obst",
+		    {
+			headers => {
+			    'User-Agent' => $ua_string,
+			},
+		    }
+		);
+		ok $resp->{success}, "successful fetch with $ua_string"
+		    or diag explain $resp;
+		my $content_encoding = $resp->{headers}{'content-encoding'} // '';
+		if ($should_compress) {
+		    isnt $content_encoding, '',
+			"Got non-empty content-encoding '$content_encoding' for UA '$ua_string'";
+		} else {
+		    ok !$content_encoding,
+			"Got no or empty content-encoding for UA '$ua_string'";
+		}
 	    }
 	}
 
