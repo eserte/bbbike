@@ -36,6 +36,7 @@ my @origin_defs =
      ['http://bbbike.de',      1],
      ['http://www.bbbike.de',  1],
      ['http://www.bbbike.org', 1],
+     ['https://friendly.host', 1], # defined in @allowed_origins of bbbike-test.cgi.config
     );
 
 my @output_as_defs =
