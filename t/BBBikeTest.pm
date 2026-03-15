@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2023,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2023,2024,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeTest;
@@ -54,7 +53,7 @@ use BBBikeBuildUtil qw(get_pmake);
 use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(bbbike_root is_in_path module_exists);
 
-@EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
+@EXPORT = (qw(get_std_opts set_user_agent http_tiny_env_proxy_args do_display tidy_check
 	      libxml_parse_html libxml_parse_html_or_skip
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string xml_eq
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
@@ -182,6 +181,17 @@ JS
 	$ua->agent($test_ua);
 	$ua->env_proxy;
     }
+}
+
+sub http_tiny_env_proxy_args {
+    my %args;
+    $args{proxy}       = $ENV{http_proxy}  || $ENV{HTTP_PROXY}
+        if $ENV{http_proxy}  || $ENV{HTTP_PROXY};
+    $args{https_proxy} = $ENV{https_proxy} || $ENV{HTTPS_PROXY}
+        if $ENV{https_proxy} || $ENV{HTTPS_PROXY};
+    $args{no_proxy}    = $ENV{no_proxy}    || $ENV{NO_PROXY}
+        if $ENV{no_proxy}    || $ENV{NO_PROXY};
+    return %args;
 }
 
 # $htmldir is actually a mis-namer
