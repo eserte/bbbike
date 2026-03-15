@@ -51,8 +51,9 @@ BEGIN {
 }
 use lib (@extra_libs);
 
+# early check (without Origin check)
 BEGIN {
-    if ($ENV{BOTCHECKER_JS_ENABLED}) {
+    if ($ENV{BOTCHECKER_JS_ENABLED} && !$ENV{HTTP_ORIGIN}) {
 	require Botchecker_js;
 	Botchecker_js::antibot("BBBike");
     }
@@ -112,7 +113,7 @@ use vars qw($VERSION $VERBOSE
 	    $include_outer_region @outer_berlin_places $outer_berlin_qr $outer_berlin_subplaces_qr
 	    $warn_message $use_utf8 $data_is_wgs84 $osm_data
 	    $bbbike_start_js_version $bbbike_result_js_version $bbbike_css_version
-	    $use_file_cache $cache_entry
+	    $use_file_cache $cache_entry @allowed_origins
 	   );
 # XXX Currently "cooked" data helps somewhat in performance (no need
 # to subtract inaccessible_strassen points from street data) and
@@ -739,6 +740,12 @@ eval { local $SIG{'__DIE__'};
        #warn "$config_master.config";
        do "$config_master.config" };
 
+# late check (now @allowed_origins is known)
+if ($ENV{BOTCHECKER_JS_ENABLED} && (!$ENV{HTTP_ORIGIN} || !(grep { $ENV{HTTP_ORIGIN} eq $_ } @allowed_origins))) {
+    require Botchecker_js;
+    Botchecker_js::antibot("BBBike");
+}
+
 if ($lang ne "") {
     $msg = eval { do "$FindBin::RealBin/msg/$lang" };
     if ($msg && ref $msg ne 'HASH') {
@@ -781,7 +788,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.017';
+$VERSION = '11.018';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -6876,13 +6883,13 @@ sub http_header {
 # also allow requests between bbbike.de and bbbike.org
 sub cors_handling {
     my $origin = $q->http('origin');
-    if ($origin && $origin =~ m{^https?://
-				(?: localhost
-				|   bbbike-pps
-				|   (?:.*\.)?bbbike\.de
-				|   (?:.*\.)?bbbike\.org
-				|   (?:.*\.)?herceg\.de
-				)(?::\d+)?$}x) {
+    if ($origin && ($origin =~ m{^https?://
+				 (?: localhost
+				 |   bbbike-pps
+				 |   (?:.*\.)?bbbike\.de
+				 |   (?:.*\.)?bbbike\.org
+				 |   (?:.*\.)?herceg\.de
+				 )(?::\d+)?$}x || (grep { $origin eq $_ } @allowed_origins))) {
 	(-Access_Control_Allow_Origin => $origin);
     } else {
 	();
