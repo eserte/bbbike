@@ -628,7 +628,7 @@ Munsterdamm: bei der geplanten Fahrbahnsanierung entstehen Radspuren	?::projecte
 #: by: https://www.entwicklungsstadt.de/erst-fernwaerme-dann-gruen-warum-der-barbarossaplatz-derzeit-eine-grossbaustelle-ist/
 #: by: https://www.entwicklungsstadt.de/baustelle-barbarossaplatz-umgestaltung-in-schoeneberg-beginnt-im-sommer-2027/
 #: XXX entfällt auch die Einbahnstraßenregelung?
-#: osm_watch: way id="4597427" version="23"
+#: osm_watch: way id="4597427" version="24"
 #: also_indoor: traffic
 #: last_checked: 2025-02-05
 # REMOVED --- #: check_frequency: 120d
@@ -3733,7 +3733,7 @@ Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685
 #: by ^^^
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (Finanzierung unklar, vermutlich nicht 2023)
-#: last_checked: 2026-03-13
+#: last_checked: 2026-03-15
 #: check_frequency: 180d
 Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,12718 12347,12699
 # 
@@ -4580,7 +4580,7 @@ Wundtstr./Horstweg: "Qualifizierung" des Stadtplatzes; wird sich etwas für Radfa
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_03_0117_0164_online.pdf (Teileinziehung)
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-15 vvv
 #: check_frequency: 40d vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 #: osm_watch: way id="202156991" version="21"
@@ -5553,7 +5553,7 @@ Pankstr.: geschützter Radfahrstreifen geplant	? 8776,16268 8578,16057 8436,15907
 # REMOVED (realisiert) --- Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str. geplant	?::projected 10629,14299 10567,14337 10530,14452
 # REMOVED (realisiert) --- Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str. geplant	?::projected 10530,14452 10506,14521 10468,14636
 # REMOVED (realisiert) --- Schwedter Str.: Fahrradstraße zwischen Bernauer und Choriner Str.	?::inwork 10468,14636 10448,14707 10440,14730 10402,14835 10377,14909 10367,14946 10379,14963
-#: last_checked: 2025-11-12
+#: last_checked: 2026-03-15
 #: next_check: 2027-06-30 (Tsp (ab 2027))
 Schwedter Str.: Fahrradstraße zwischen Choriner Str. und Schönhauser Allee	?::projected 10629,14299 10739,14228 10822,14179 10933,14122
 # 
@@ -5562,7 +5562,7 @@ Schwedter Str.: Fahrradstraße zwischen Choriner Str. und Schönhauser Allee	?::pr
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7231 (Antrag: Sofortmaßnahmen für mehr Verkehrssicherheit)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neuer-zeitplan-nach-jahrelanger-verzogerung-mit-pollern-oder-ohne-in-prenzlauer-berg-werden-zwei-neue-fahrradstrassen-eingerichtet-15061167.html (frühestens ab 2026)
 #: by: https://www.morgenpost.de/berlin/article411153220/pankow-setzt-auf-radverkehr-eine-neue-fahrradstrasse-entsteht.html (ab September 2026)
-#: last_checked: 2026-03-13
+#: last_checked: 2026-03-15
 #: check_frequency: 180d
 #: next_check: 2026-09-15 (MoPo)
 Saarbrücker Str.: soll Fahrradstraße werden	? 10895,13961 11052,13870 11116,13830 11251,13667
@@ -6063,13 +6063,13 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Dunckerstr. südlich Wichertstr.: Umsetzung 2022)
 #: by: https://entwicklungsstadt.de/risikostahl-vier-berliner-ringbahnbruecken-muessen-abgerissen-werden/
 #: XXX laut Tsp "später auch südlich bis zur Danziger und nördlich bis zur Wisbyer/Ostseestraße"
-#: last_checked: 2026-01-19 (mapillary)
+#: last_checked: 2026-03-15
 #: check_frequency: 120d
 Dunckerstr.: entsteht hier eine Fahrradstraße?	? 11595,15460 11632,15530 11654,15572 11689,15639 11736,15727 11779,15813 11829,15912 11899,16037 11926,16088 12012,16250
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Umsetzung 2022)
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7165 (Antrag zur Verkehrsberuhigung)
-#: last_checked: 2026-02-11
+#: last_checked: 2026-03-15
 #: check_frequency: 120d
 Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595,15058 11609,15114 11631,15192 11651,15273 11682,15397
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-12-06-19.pdf
@@ -6082,7 +6082,7 @@ Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6323&date=20230702 (Vorlage zur Kenntnisnahme) (Abschlussbericht: "nicht aussichtsreich")
 #: by: https://www.tagesspiegel.de/berlin/bezirke/unendliche-behordensaga-um-gleimstrasse-warum-eine-berliner-strasse-im-dauerstau-zwischen-fahrrad-und-auto-ideologie-feststeckt-12825074.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/streit-uber-umwandlung-in-fahrradstrasse-ist-die-zukunft-der-gleimstrasse-in-berlin-jetzt-entschieden-13988267.html
-#: last_checked: 2026-02-11
+#: last_checked: 2026-03-15
 #: check_frequency: 180d
 Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10701,15750 10554,15725 10426,15705 10418,15704 10170,15659 10130,15653
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021/2022)
@@ -7780,7 +7780,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2026-03-09
+#: last_checked: 2026-03-15
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7788,7 +7788,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-03-13
+#: last_checked: 2026-03-15
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -9905,8 +9905,8 @@ Techowbrücke (Gersdorfstr.): Neubau geplant	?::projected 8234,4660 8212,4686 819
 #: by: https://www.entwicklungsstadt.de/radweg-umbau-berliner-strasse-in-wilmersdorf-bezirk-verweigert-umsetzung-der-senatsplaene/
 #: source_id: viz2021:13.336934,52.488251,12.09.2025,07:00 (unklare Bauarbeiten, bis 06.10.2025) (inaktiv)
 #: osm_watch: note 5110471 4
-#: osm_watch: way id="4446331" version="32"
-#: osm_watch: way id="25205072" version="30"
+#: osm_watch: way id="4446331" version="33"
+#: osm_watch: way id="25205072" version="31"
 #: last_checked: 2026-02-25
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (infravelo)
@@ -9953,7 +9953,7 @@ Metropolitan Park: ist hier eine nutzbare Wegverbindung? Kann man die umliegende
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_06_0325_0404_online.pdf
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei
-#: last_checked: 2026-03-12
+#: last_checked: 2026-03-15
 #: check_frequency: 14d
 #: next_check: 2030-12-31 (entwicklungsstadt)
 Littenstr.: wann wird die Fahrbahn wegen Bauarbeiten wieder gesperrt sein?	? 11139,12243 11155,12184
@@ -12771,12 +12771,12 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.entwicklungsstadt.de/das-neue-gartenfeld-so-sieht-das-groesste-baufeld-spandaus-aus/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/bvg-verrat-neue-details-kurz-nach-8-uhr-halt-der-erste-bus-im-neuen-berliner-mega-viertel-15340411.html (Busse ab 12.04.2026)
 #: osm_watch: relation id="10290512" version="6"
-#: osm_watch: way id="1306187833" version="29"
-#: osm_watch: way id="1306187834" version="28"
-#: osm_watch: way id="1306187830" version="18"
-#: osm_watch: way id="1294762943" version="20"
-#: osm_watch: way id="178253967" version="29"
-#: osm_watch: way id="936729763" version="31"
+# REMOVED --- #: osm_watch: way id="1306187833" version="29"
+#: osm_watch: way id="1306187834" version="29"
+#: osm_watch: way id="1306187830" version="28"
+#: osm_watch: way id="1294762943" version="21"
+#: osm_watch: way id="178253967" version="30"
+#: osm_watch: way id="936729763" version="32"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
 #: note: Insel Gartenfeld
 #: XXX neue Straßennamen:
@@ -12824,6 +12824,7 @@ Private Planstraße 6 (Bachsaiblingstr.)	?::projected -414,15983 -301,15896
 # 
 #: next_check_id: GARTENFELD-2025
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rhenaniabruecke/ (Neubau der Rhenaniabrücke, 2025 bis 2027) (2026 bis 2028)
+#: osm_watch: way id="1488967978" version="1"
 #: next_check: 2028-12-31 (SenMVKU-Seite)
 Rhenaniabrücke: Neubau geplant	?::projected -1095,15865 -1006,15833
 # 

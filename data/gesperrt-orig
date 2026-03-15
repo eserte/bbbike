@@ -104,8 +104,8 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10166
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10167 (Vorlage zur Beschlussfassung: 7-100 VE, nicht verkehrsrelevant)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: osm_watch: way id="152264786" version="25"
-#: osm_watch: way id="1430487470" version="1"
+#: osm_watch: way id="152264786" version="26"
+#: osm_watch: way id="1430487470" version="2"
 #: last_checked: 2026-02-18
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
@@ -4062,6 +4062,12 @@ Drängelgitter	BNP:3::trailer=10 17498,9714
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026)
+#: last_checked: 2026-03-15
+#: next_check: 2026-05-05
+#: valid: -20260505
+(Berolinastr. - Mollstr.): wegen Tiefbauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
+# 
 #: next_check_id: CHAUSSEE-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgajtghhk22z (bis Mitte 2028)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic7uvofh3wrzpb7wyvjerbuse4cytqqbdur2lbewv4g3yj6exeobi@jpeg
@@ -4441,7 +4447,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-03-12
+#: last_checked: 2026-03-15
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4474,7 +4480,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 1
-#: last_checked: 2026-03-06 vvv
+#: last_checked: 2026-03-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -5328,7 +5334,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Straßenlandwidmung, Grunerstr.)
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1647248.php
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-03-12
+#: last_checked: 2026-03-15
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 

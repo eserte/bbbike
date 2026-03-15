@@ -31823,21 +31823,26 @@ EOF
 	2::bomb 23297,14772 23369,14756 23405,14758 23531,14781
 EOF
      },
-     { from  => undef, # 
-       until => 1752661487, # undef, # 1618661092, # undef, # XXX
+     { from  => $isodate2epoch->("2026-03-15 00:00:00"), # undef, # 
+       until => $isodate2epoch->("2026-06-10 23:59:59"), # 1752661487, # undef, # 1618661092, # undef, # XXX
 #      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt',
 #      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., voraussichtlich bis Mitte Dezember 2024, evtl. wurde verlängert',
-       text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., Ende der Bauarbeiten unbekannt',
+#      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., Ende der Bauarbeiten unbekannt',
+       text  => 'Neuenhagener Str.: Bauarbeiten, Anbindung an die B1/B5 gesperrt, evtl. sind auch Radfahrer betroffen, ab 16.3.2026 bis Anfang Juni 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: MUENSTERBERGERWEG-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert? --- #: last_checked: 2020-10-31 --- #: check_frequency: 120d --- #: next_check: 2021-12-31
-#: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
+# REMOVED --- #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
 #: also_indoor: traffic (ex-B,ex-T)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2025-06-14 (traffic) vvv --- #: check_frequency: 14d (traffic) vvv --- #: next_check: 2025-06-14 (traffic) vvv
-Münsterberger Weg	2::inwork 24029,11363 24172,11320
-Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
-Münsterberger Weg	q3::inwork 24029,11363 23883,11416
+# REMOVED --- Münsterberger Weg	2::inwork 24029,11363 24172,11320
+# REMOVED --- Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
+# REMOVED --- Münsterberger Weg	q3::inwork 24029,11363 23883,11416
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
+#: by: https://marzahn-hellersdorf.com/verkehr-in-mahlsdorf-einschraenkungen-auf-der-b1-b5-ab-montag/ (ab 16.3.2026 bis Anfang Juni 2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
+#: next_check: 2026-03-16
+Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
 EOF
      },
      { from  => undef, # 
@@ -42394,7 +42399,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), meistens nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15, 2026-03-02). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2026-03-09 vvv
+#: last_checked: 2026-03-15 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2027-03-31 (Tsp) vvv
@@ -49736,7 +49741,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-03-12
+#: last_checked: 2026-03-15
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50450,7 +50455,7 @@ EOF
        data  => <<'EOF',
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-03-02 (Bauzaun weggeschoben)
+#: last_checked: 2026-03-15 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -51213,7 +51218,7 @@ EOF
 #: source_id: LMS-BR:388631/72 viz2021:13.419493,52.534236,01.11.2025,07:00 (bis 31.12.2026) (vorfristig fälschlicherweise inaktiv)
 # REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
-#: last_checked: 2026-03-02
+#: last_checked: 2026-03-15
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-02-28 (strabag)
@@ -51228,8 +51233,8 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 7
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-12 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
-#: check_frequency: 10d
+#: last_checked: 2026-03-15 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
+#: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
 	q4::inwork; 10308,12859 10260,12831 10166,12777
@@ -51853,7 +51858,7 @@ EOF
 #: osm_watch: note 5163943 1
 #: XXX: Dunckerbrücke: Ersatzneubau
 #: XXX ursprüngliche Planung: während der Bauarbeiten soll der Fußgänger- und Radverkehr auf einer Brückenhälfte stattfinden können; mittlerweile wird es wohl eine Vollsperrung geben, ab 3. Quartal 2027 wird der Fuß+Radverkehr über den neuen Rohbau geführt werden
-#: last_checked: 2026-02-13 (VIZ)
+#: last_checked: 2026-03-15
 #: next_check: 2026-06-30 (SenMVKU (2. Quartal 2026))
 # REMOVED --- #: next_check: 2026-02-12
 Dunckerbrücke	q4::inwork 11689,15639 11654,15572
@@ -52164,13 +52169,34 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Marienburger Str.: Einbahnstraßenregelung zwischen Winsstr. und Greifswalder Str., evtl. sind auch Radfahrer betroffen',
+       text  => 'Marienburger Str.: Einbahnstraßenregelung zwischen Winsstr. und Greifswalder Str.',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,no-T,no-H,W)
-#: last_checked: 2026-03-13
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
+#: last_checked: 2026-03-15
 #: check_frequency: 14d
 	q4::inwork; 11821,14317 12077,14186
+EOF
+     },
+     { from  => 1773529200, # 2026-03-15 00:00
+       until => undef, # XXX
+       text  => 'Albanstr.: Anbindung Säntisstr. gesperrt, vom 16.03.2026, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
+#: XXX Wann sind die Bauarbeiten beendet?
+#: last_checked: 2026-03-15 (VIZ)
+	q3::inwork 8971,864 8898,1042
+EOF
+     },
+     { from  => 1773529200, # 2026-03-15 00:00
+       until => 1778882399, # 2026-05-15 23:59
+       text  => 'Brüsseler Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Antwerpener Str. und Lütticher Straße, vom 16.03.2026 bis Mitte Mai 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
+	q4::inwork 6539,15548 6690,15671
 EOF
      },
     );
