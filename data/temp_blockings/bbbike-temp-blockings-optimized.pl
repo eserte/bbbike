@@ -3657,7 +3657,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -5099,6 +5099,8 @@ Landjägerbrücke	q4::inwork 22426,4609 22446,4581 22458,4565 22495,4523
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: by: https://marzahn-hellersdorf.com/verkehr-in-mahlsdorf-einschraenkungen-auf-der-b1-b5-ab-montag/ (ab 16.3.2026 bis Anfang Juni 2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5oyo7f6k2u
+#: source_id: LMS-BR:401939/72 viz2021:13.60641,52.50494, (bis 05.06.2026)
 #: next_check: 2026-03-16
 Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
 ',
@@ -5106,7 +5108,7 @@ Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
          'id' => 3189,
          'text' => 'Neuenhagener Str.: Bauarbeiten, Anbindung an die B1/B5 gesperrt, evtl. sind auch Radfahrer betroffen, ab 16.3.2026 bis Anfang Juni 2026',
          'type' => 'gesperrt',
-         'until' => 1781128799
+         'until' => 1780696799
        },
        undef,
        undef,
@@ -7232,7 +7234,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2026-03-13
+#: last_checked: 2026-03-16
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -7497,7 +7499,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2026-01-19 (mapillary)
+#: last_checked: 2026-03-14 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -8443,7 +8445,21 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'type' => 'handicap',
          'until' => 1803657600
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025) (inaktiv)
+#: source_id: viz2021:13.28749,52.50307,13.06.2025,07:00 (bis 30.06.2025) (inaktiv)
+#: source_id: viz2021:13.28749,52.50307,26.06.2025,17:24 (bis 08.07.2025) (inaktiv)
+#: source_id: viz2021:13.28749,52.50307,14.07.2025,07:00 (bis 15.10.2025) (inaktiv)
+#: source_id: LMS-BR:386771/72 viz2021:13.289985,52.50298,15.10.2025,05:00 (bis 27.11.2025) (inaktiv)
+#: source_id: LMS-BR:401929/72 viz2021:13.287593,52.503064,16.03.2026,06:00 (bis 27.04.2026)
+	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
+',
+         'from' => 1749765600,
+         'id' => 4243,
+         'text' => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 27.04.2026',
+         'type' => 'handicap',
+         'until' => 1777327199
+       },
        undef,
        undef,
        undef,
@@ -8539,7 +8555,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 #: source_id[inactive]: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
 #: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
-#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
 #: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
@@ -9590,7 +9606,7 @@ Spektegrabensteg	2::inwork -7228,15933 -7243,15943
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-03-09 (daf)
+#: last_checked: 2026-03-16
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 ',
@@ -9677,7 +9693,17 @@ Corinthstr.	q4::inwork; 14608,10409 14447,10491
          'until' => 1774994399
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603529.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1652785.php (Wiederaufnahme der Bauarbeiten)
+	q4::inwork 4339,6315 4379,6390 4407,6445
+',
+         'from' => 1774738800,
+         'id' => 4456,
+         'text' => 'Paulsenstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 30.03.2026 bis 10.04.2026',
+         'type' => 'handicap',
+         'until' => 1775858399
+       },
        {
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1603361.php (Bauarbeiten 6. Oktober 2025 - Dezember 2025)
@@ -9898,7 +9924,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 4953648 7
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-15 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
+#: last_checked: 2026-03-16 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -9913,7 +9939,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="6"
-#: last_checked: 2026-01-13 (osm)
+#: last_checked: 2026-03-16
 #: check_frequency: 60d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
@@ -9975,7 +10001,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: last_checked: 2026-03-09 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
-	2::inwork 7662,14579 7696,14577 7733,14570
+# REMOVED (mittlerweile wieder offen, wegen der Bauarbeiten an der Nordhafenbrücke) ---	2::inwork 7662,14579 7696,14577 7733,14570
 	2::inwork 7696,14577 7635,14628
 #: next_check ^^^
 #: check_frequency ^^^
@@ -10094,7 +10120,7 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
 #: add_fragezeichen: Ist der Uferweg wieder offen?
 #: XXX auch laut osm note bis 28.2.2026 gesperrt
 #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-16
 #: check_frequency: 60d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-28
 	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853
@@ -10107,16 +10133,7 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR:392517/72 viz2021:13.28814,52.47719,08.12.2025,07:00 (bis 16.03.2026)
-	q4::inwork 2565,7637 2587,7769 2608,7798
-',
-         'from' => 1765087200,
-         'id' => 4513,
-         'text' => 'Kösener Str.: Sperrung zwischen Berkaer Str. und Hundekehlestr., evtl. ist der Radverkehr betroffen, vom 08.12.2025 07:00 bis 16.03.2026 17:00',
-         'type' => 'handicap',
-         'until' => 1773676800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -10149,7 +10166,21 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
          'type' => 'handicap',
          'until' => 1806530399
        },
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026) (inaktiv)
+#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312088 (bereits am nächsten Tag inaktiv)
+#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312193
+#: note: wenn es eine Baustelle gibt, dann nur im hinteren Teil an der Audre-Lorde-Str., deshalb q4 -> q3
+# REMOVED (alte Meldung) --- Waldemarstr.	q3::inwork 12056,10642 11839,10736
+#: source_id: LMS-BR:401947/72 viz2021:13.427972,52.501103,16.03.2026,07:00 (bis 22.05.2026)
+Audre-Lorde-Str.	q4::inwork 12056,10642 12000,10531
+',
+         'from' => 1773529200,
+         'id' => 4520,
+         'text' => 'Audre-Lorde-Str.: Bauarbeiten, Sperrung zwischen Waldemarstr. und Naunynstr., evtl. sind auch Radfahrer betroffen, vom 16.03.2026 bis 22.05.2026',
+         'type' => 'handicap',
+         'until' => 1779458400
+       },
        {
          'data' => '#: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2025/04/2025-04-28_VZ-Plan01-2_Schoenefeld_Waltersdorf_Schwarzer_Weg_Hubertus-1024x602.jpg
@@ -10573,18 +10604,21 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
-#: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2026-03-15 (VIZ)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5pl5dudc2u
+#: source_id: LMS-BR:401941/72 viz2021:13.3797,52.41385,16.03.2026,07:00 (bis 02.05.2026)
+# REMOVED --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2026-03-15 (VIZ)
 	q3::inwork 8971,864 8898,1042
 ',
          'from' => 1773529200,
          'id' => 4558,
-         'text' => 'Albanstr.: Anbindung Säntisstr. gesperrt, vom 16.03.2026, Ende der Bauarbeiten unbekannt',
+         'text' => 'Albanstr.: Anbindung Säntisstr. gesperrt, vom 16.03.2026 bis 02.05.2026',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1777759199
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5q4ohmcs2u
+#: source_id: LMS-BR:401945/72 viz2021:13.35056,52.54723,16.03.2026,07:00 (bis 15.05.2026)
 	q4::inwork 6539,15548 6690,15671
 ',
          'from' => 1773529200,
@@ -10592,6 +10626,16 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'text' => 'Brüsseler Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Antwerpener Str. und Lütticher Straße, vom 16.03.2026 bis Mitte Mai 2026',
          'type' => 'handicap',
          'until' => 1778882399
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260316
+	q4::inwork 15508,12367 15537,12367
+',
+         'from' => 1773788400,
+         'id' => 4560,
+         'text' => 'Normannenstr./Rathausstr.: Anbindung an die Möllendorffstr. gesperrt, voraussichtlich vom 19.03.2026 bis Ende April 2026',
+         'type' => 'handicap',
+         'until' => 1777586399
        }
      
 );

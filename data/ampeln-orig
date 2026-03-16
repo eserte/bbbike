@@ -257,7 +257,7 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # REMOVED --- Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 # 
 #: next_check_id: PERLEBERGER-2024
-#: last_checked: 2025-12-03
+#: last_checked: 2026-03-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
@@ -387,7 +387,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
-#: last_checked: 2026-02-22 (architektur-urbanistik)
+#: last_checked: 2026-03-16
 #: check_frequency: 180d
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	X::inwork 7873,12927
@@ -4073,6 +4073,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 4937,6205
 #: note: zwei Übergänge, zu beiden Seiten der Wilhelmshavener Str.
 	F 6105,13328
+#: note: Anforderungsampel, nicht synchron geschaltet
 	F 6022,13330
 # 
 # REMOVED (nein, es bleibt bei einer Fußgängerampel) --- #: next_check_id: TRAMTURM-2021 --- #: XXX wird im Zuge des Straßenbahnnaus zur "richtigen" Ampel --- #: next_check: 2023-07-07
@@ -4366,7 +4367,15 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 5364,7330
 # 
-# REMOVED (bei osm entfernt) --- #: next_check_id: CHAUSSEE-2020 --- #: osm_watch: node id="26748289" version="10" --- #: last_checked: 2023-05-18 --- #: check_frequency: 60d --- #: next_check: 2023-05-26 ---	X::inwork 8336,14586
+# REMOVED --- #: next_check_id: CHAUSSEE-2020
+#: next_check_id: CHAUSSEE-2026
+#: osm_watch: node id="26748289" version="10"
+#: XXX möglicherweise im Zusammenhang mit den neuen Bauarbeiten in der Chausseestr.
+#: last_checked: 2026-03-16
+#: check_frequency: 60d
+#: next_check: 2028-07-01
+#: valid: -20280701
+	X::inwork 8336,14586
 # 
 #: historical_note: eine provisorische Ampel gab es hier lange (4 oder 5 Jahre?), im Dezember 2025 wurde die permanente Ampel fertiggestellt
 #: note: Anforderung für Radfahrer aus der Boyenstr. sowie linksabbiegende Radfahrer in die Boyenstr.

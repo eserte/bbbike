@@ -4055,12 +4055,20 @@ Drängelgitter	BNP:3::trailer=10 9165,10530
 Schwingtor	BNP:5::trailer=10 11543,20272
 Drängelgitter	BNP:3::trailer=10 113,7
 Drängelgitter	BNP:3::trailer=10 17498,9714
+#: note: nur von der Gaußstr. weg öffnend
+Schwingtor	BNP:5::trailer=10 4183,13725
 # 
 #: section ^^^
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: NORDHAFENBRUECKE-2026
+#: last_checked: 2026-03-16
+#: check_frequency: 30d
+#: next_check: 2028-03-03
+Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
 # 
 #: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026)
 #: last_checked: 2026-03-15
@@ -4195,7 +4203,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-03-12 vvv
+#: last_checked: 2026-03-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4285,7 +4293,7 @@ An den Weiden: Hochbauarbeiten, gesperrt	2::inwork 12882,999 12946,1027
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: source_id: bvg2024:250#HIM_FREETEXT_308566
 #: source_id: bvg2024:250#HIM_FREETEXT_307841
-#: last_checked: 2026-01-19 (mapillary) vvv
+#: last_checked: 2026-03-14 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="7"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4298,7 +4306,7 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 # REMOVED --- #: valid: -20251201
 # REMOVED --- Wollankstr.: Sperrung, auch für Fußgänger und Radfahrer	2::inwork 9544,17629 9586,17665
 #: note: existiert auch als temp_blockings-Eintrag
-#: last_checked: 2025-12-28 (mapillary)
+#: last_checked: 2026-03-14 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten	2::inwork 9586,17665 9461,17795
@@ -5342,7 +5350,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-03-12
+#: last_checked: 2026-03-16
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5692,7 +5700,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: osm_watch: way id="186329816" version="49"
 #: also_indoor: traffic
-#: last_checked: 2026-03-03 vvv
+#: last_checked: 2026-03-16 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
@@ -5993,6 +6001,8 @@ Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20 3829,13572
 Schranke	BNP:5 3969,13405
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5 3822,14195
+#: note: kleine Borde zwischen Fahrbahn und Fußgängerweg
+Tor (falls geschlossen, den Fußgängerweg nehmen)	BNP:5 3744,14176
 Wiebestr.: Privatweg, verschlossenes Tor	2 4527,13244 4495,13107
 Spandauer Damm: queren nur mit tragen möglich	3nocross 3033,12509 3177,12522 3212,12526 3279,12533
 Bonhoefferufer	1 3181,13044 3133,13021 3150,12927 3193,12857 3327,12818

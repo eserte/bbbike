@@ -519,7 +519,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1040.pdf (keine Priorisierung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2026-01-14 (mapillary) vvv
+#: last_checked: 2026-03-16 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
 #: osm_watch: way id="169459736" version="18"
@@ -1618,7 +1618,7 @@ Melchiorstr.: Asphalt	Q0 11917,11186 11726,11265 11542,11342
 Hansa-Ufer: Asphalt	Q0 5871,12595 5797,12494 5740,12419
 Hansa-Ufer: Gehwegplatten	Q0- 5740,12419 5657,12339
 Bochumer Platz: Kleinpflaster	Q1 5914,12845 5938,12848
-Unionstr: Kopfsteinpflaster	Q2 5782,14067 5943,14049
+Unionstr: Kopfsteinpflaster	Q2 5782,14067 5826,14062 5864,14058 5943,14049
 Bremer Str.: Fahrbahn Kopfsteinpflaster, Verbundsteinpflasterradweg	Q1 5956,14168 5943,14049
 Bremer Str.: mehrere gepflasterte Moabiter Kissen	Q1 5943,14049 5928,13922
 Bremer Str.: Kopfsteinpflaster	Q2 5928,13922 5921,13866
@@ -31299,12 +31299,15 @@ Lambertstr.: Asphalt	Q0 3365,13695 3439,13711 3508,13727
 Struvesteig: Asphalt	Q0 3439,13711 3452,13677 3442,13595
 #: confirmed_by: srt
 Scheinerweg: Asphalt	Q0 3508,13727 3526,13685 3522,13577
-Am Bahnhof Jungfernheide: fester Sandweg teilweise mit Schlaglöchern	Q2 3702,13865 4151,13961
-(Goslarer Ufer - Am Bahnhof Jungfernheide): Parkweg	Q1 4151,13961 4076,14203 4011,14245
-(Goslarer Ufer - Am Bahnhof Jungfernheide): Parkweg (oder Kopfsteinpflasterstraße)	Q1- 4186,13710 4156,13914
-(Goslarer Ufer - Am Bahnhof Jungfernheide): Kopfsteinpflaster	Q2 4156,13914 4151,13961
-(Lise-Meitner-Str. - Goslarer Ufer): Parkweg, teilweise etwas viel Schotter	Q1 4011,14245 3957,14229
-(Lise-Meitner-Str. - Goslarer Ufer): Asphalt	Q0 3957,14229 3822,14195 3712,14168 3674,14156
+Am Bahnhof Jungfernheide: fester Sandweg teilweise mit Schlaglöchern	Q2 3702,13865 4141,13959
+(Goslarer Ufer - Am Bahnhof Jungfernheide): Kopfsteinpflaster	Q2 4141,13959 4135,13982
+(Goslarer Ufer - Am Bahnhof Jungfernheide): alter Parkweg	Q1- 4135,13982 4076,14203 4011,14245
+#: historical_note: früher (vor der Umgestaltung bis 2025): Parkweg (oder Kopfsteinpflasterstraße), Q1-; mittlerweile keine parallele Kopfsteinpflasterstraße mehr
+(Goslarer Ufer - Am Bahnhof Jungfernheide): wassergebundene Decke	Q1 4186,13710 4183,13725 4150,13904
+#: historical_note: früher (vor der Umgestaltung bis 2025): Kopfsteinpflaster, Q2
+(Goslarer Ufer - Am Bahnhof Jungfernheide): wassergebundene Decke	Q1 4150,13904 4141,13959
+(Lise-Meitner-Str. - Goslarer Ufer): alter Parkweg	Q1- 4011,14245 3878,14212
+(Lise-Meitner-Str. - Goslarer Ufer): Asphalt	Q0 3878,14212 3822,14195 3744,14176 3712,14168 3674,14156
 #: corrected_by: srt (Q2 -> Q2-)
 (Schwarzer Weg): Unterschiedlicher Belag (Pflaster, Sand, Wiese, Platten)	Q2- 4237,13231 4167,13375 4093,13429 3969,13487 3823,13540
 (Dahlienweg): Gehwegplatten	Q0 3823,13540 3829,13572 3833,13590

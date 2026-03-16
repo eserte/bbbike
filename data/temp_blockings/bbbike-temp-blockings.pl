@@ -31824,7 +31824,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-03-15 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2026-06-10 23:59:59"), # 1752661487, # undef, # 1618661092, # undef, # XXX
+       until => $isodate2epoch->("2026-06-05 23:59:59"), # 1752661487, # undef, # 1618661092, # undef, # XXX
 #      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt',
 #      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., voraussichtlich bis Mitte Dezember 2024, evtl. wurde verlängert',
 #      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., Ende der Bauarbeiten unbekannt',
@@ -31841,6 +31841,8 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: by: https://marzahn-hellersdorf.com/verkehr-in-mahlsdorf-einschraenkungen-auf-der-b1-b5-ab-montag/ (ab 16.3.2026 bis Anfang Juni 2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5oyo7f6k2u
+#: source_id: LMS-BR:401939/72 viz2021:13.60641,52.50494, (bis 05.06.2026)
 #: next_check: 2026-03-16
 Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
 EOF
@@ -40669,7 +40671,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2026-01-29 (mapillary)
+#: last_checked: 2026-03-16
 #: check_frequency: 180d
 #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -42104,7 +42106,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2026-03-13
+#: last_checked: 2026-03-16
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -43619,7 +43621,7 @@ EOF
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2026-01-19 (mapillary)
+#: last_checked: 2026-03-14 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -45402,7 +45404,7 @@ EOF
 #: by: https://www.deutsches-architektur-forum.de/pics/backstein/daf/2025/11/goslarer_ufer03.jpg (am südlichen Ende ist anscheinend ein Schwingtor entstanden)
 #: note: 2024-09-18: Bauzäune sind weggeschoben; 2025-09-24: Arbeiten im südlichen Bereiche, Bauzäune
 # REMOVED (laut osm note wurde der Bauzaun entfernt) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist der Uferweg weiterhin gesperrt? --- #: last_checked: 2025-11-20 (daf) --- #: check_frequency: 14d --- #: next_check: 2025-10-31
-	2::inwork 4151,13961 4156,13914 4186,13710
+	2::inwork 4141,13959 4150,13904 4183,13725 4186,13710
 EOF
      },
      { from  => 1719846420, # 2024-07-01 17:07
@@ -47397,11 +47399,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-06-13 00:00:00"), # 1737525600, # 2025-01-22 07:00
-       until => $isodate2epoch->("2025-11-27 18:00:00"), # 1748617200, # 2025-05-30 17:00
+       until => $isodate2epoch->("2026-04-27 23:59:59"), # 1748617200, # 2025-05-30 17:00
 #      text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, Gehweg für Radfahrer frei, vom 23.01.2025 07:00 bis 30.05.2025 17:00',
 #      text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, vom 13.06.2025 07:00 bis 08.07.2025 17:00',
 #      text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 15.10.2025',
-       text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 27.11.2025',
+       text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 27.04.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.289979,52.50298,23.01.2025,07:00 (bis 30.05.2025) (inaktiv)
@@ -47409,6 +47411,7 @@ EOF
 #: source_id: viz2021:13.28749,52.50307,26.06.2025,17:24 (bis 08.07.2025) (inaktiv)
 #: source_id: viz2021:13.28749,52.50307,14.07.2025,07:00 (bis 15.10.2025) (inaktiv)
 #: source_id: LMS-BR:386771/72 viz2021:13.289985,52.50298,15.10.2025,05:00 (bis 27.11.2025) (inaktiv)
+#: source_id: LMS-BR:401929/72 viz2021:13.287593,52.503064,16.03.2026,06:00 (bis 27.04.2026)
 	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
 EOF
      },
@@ -47664,7 +47667,7 @@ EOF
 #: source_id[inactive]: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
 #: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
-#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
 #: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
@@ -50577,7 +50580,7 @@ EOF
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-03-09 (daf)
+#: last_checked: 2026-03-16
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
@@ -50775,12 +50778,14 @@ EOF
 	q4::inwork 9815,12705 9754,12775
 EOF
      },
-     { from  => 1759615200, # 2025-10-05 00:00
-       until => 1762556400, # 2025-11-08 00:00
-       text  => 'Paulsenstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 06.10.2025 bis 07.11.2025',
+     { from  => $isodate2epoch->("2026-03-29 00:00:00"), # 1759615200, # 2025-10-05 00:00
+       until => $isodate2epoch->("2026-04-10 23:59:59"), # 1762556400, # 2025-11-08 00:00
+#      text  => 'Paulsenstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 06.10.2025 bis 07.11.2025',
+       text  => 'Paulsenstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 30.03.2026 bis 10.04.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603529.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1652785.php (Wiederaufnahme der Bauarbeiten)
 	q4::inwork 4339,6315 4379,6390 4407,6445
 EOF
      },
@@ -51233,7 +51238,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 7
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-15 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
+#: last_checked: 2026-03-16 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -51247,7 +51252,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="6"
-#: last_checked: 2026-01-13 (osm)
+#: last_checked: 2026-03-16
 #: check_frequency: 60d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
@@ -51358,7 +51363,7 @@ EOF
 #: last_checked: 2026-03-09 (daf) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
-	2::inwork 7662,14579 7696,14577 7733,14570
+# REMOVED (mittlerweile wieder offen, wegen der Bauarbeiten an der Nordhafenbrücke) ---	2::inwork 7662,14579 7696,14577 7733,14570
 	2::inwork 7696,14577 7635,14628
 #: next_check ^^^
 #: check_frequency ^^^
@@ -51560,7 +51565,7 @@ EOF
 #: add_fragezeichen: Ist der Uferweg wieder offen?
 #: XXX auch laut osm note bis 28.2.2026 gesperrt
 #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-16
 #: check_frequency: 60d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-28
 	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853
@@ -51594,7 +51599,7 @@ EOF
        text  => 'Kösener Str.: Sperrung zwischen Berkaer Str. und Hundekehlestr., evtl. ist der Radverkehr betroffen, vom 08.12.2025 07:00 bis 16.03.2026 17:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:392517/72 viz2021:13.28814,52.47719,08.12.2025,07:00 (bis 16.03.2026)
+#: source_id: LMS-BR:392517/72 viz2021:13.28814,52.47719,08.12.2025,07:00 (bis 16.03.2026) (inaktiv)
 	q4::inwork 2565,7637 2587,7769 2608,7798
 EOF
      },
@@ -51673,16 +51678,19 @@ August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
 Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
 EOF
      },
-     { from  => 1767506400, # 2026-01-04 07:00
-       until => 1773414000, # 2026-03-13 16:00
-       text  => 'Waldemarstr.: Bauarbeiten, Sperrung zwischen Audre-Lorde-Str. und Mariannenplatz, evtl. sind auch Radfahrer betroffen, vom 05.01.2026 07:00 bis 13.03.2026 16:00',
+     { from  => $isodate2epoch->("2026-03-15 00:00:00"), # 1767506400, # 2026-01-04 07:00
+       until => $isodate2epoch->("2026-05-22 16:00:00"), # 1773414000, # 2026-03-13 16:00
+#      text  => 'Waldemarstr.: Bauarbeiten, Sperrung zwischen Audre-Lorde-Str. und Mariannenplatz, evtl. sind auch Radfahrer betroffen, vom 05.01.2026 07:00 bis 13.03.2026 16:00',
+       text  => 'Audre-Lorde-Str.: Bauarbeiten, Sperrung zwischen Waldemarstr. und Naunynstr., evtl. sind auch Radfahrer betroffen, vom 16.03.2026 bis 22.05.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312088 (bereits am nächsten Tag inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312193
 #: note: wenn es eine Baustelle gibt, dann nur im hinteren Teil an der Audre-Lorde-Str., deshalb q4 -> q3
-	q3::inwork 12056,10642 11839,10736
+# REMOVED (alte Meldung) --- Waldemarstr.	q3::inwork 12056,10642 11839,10736
+#: source_id: LMS-BR:401947/72 viz2021:13.427972,52.501103,16.03.2026,07:00 (bis 22.05.2026)
+Audre-Lorde-Str.	q4::inwork 12056,10642 12000,10531
 EOF
      },
      { from  => undef, # 
@@ -52180,13 +52188,14 @@ EOF
 EOF
      },
      { from  => 1773529200, # 2026-03-15 00:00
-       until => undef, # XXX
-       text  => 'Albanstr.: Anbindung Säntisstr. gesperrt, vom 16.03.2026, Ende der Bauarbeiten unbekannt',
+       until => $isodate2epoch->("2026-05-02 23:59:59"), # undef, # XXX
+       text  => 'Albanstr.: Anbindung Säntisstr. gesperrt, vom 16.03.2026 bis 02.05.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
-#: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2026-03-15 (VIZ)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5pl5dudc2u
+#: source_id: LMS-BR:401941/72 viz2021:13.3797,52.41385,16.03.2026,07:00 (bis 02.05.2026)
+# REMOVED --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2026-03-15 (VIZ)
 	q3::inwork 8971,864 8898,1042
 EOF
      },
@@ -52196,7 +52205,18 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5q4ohmcs2u
+#: source_id: LMS-BR:401945/72 viz2021:13.35056,52.54723,16.03.2026,07:00 (bis 15.05.2026)
 	q4::inwork 6539,15548 6690,15671
+EOF
+     },
+     { from  => 1773788400, # 2026-03-18 00:00
+       until => 1777586399, # 2026-04-30 23:59
+       text  => 'Normannenstr./Rathausstr.: Anbindung an die Möllendorffstr. gesperrt, voraussichtlich vom 19.03.2026 bis Ende April 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260316
+	q4::inwork 15508,12367 15537,12367
 EOF
      },
     );
