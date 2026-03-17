@@ -14379,13 +14379,20 @@ EOF
 	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
-     { from  => 1241419680, # 2009-05-04 08:48
-       until => 1309438800, # 2011-06-30 15:00
-       text  => 'Kantstr. zwischen Hardebergstr. und Joachimstaler Str. gesperrt (bis 2011) ',
+     { from  => undef, # 1241419680, # 2009-05-04 08:48
+       until => $isodate2epoch->("2029-12-31 23:59:59"), # 1309438800, # 2011-06-30 15:00
+#      text  => 'Kantstr. zwischen Hardenbergstr. und Joachimstaler Str. gesperrt (bis 2011) ',
+       text  => 'Kantstr.: Fahrbahn an der Hardenbergstr. gesperrt',
        type  => 'gesperrt',
-       source_id => 'IM_012523',
        data  => <<EOF,
-	2::inwork 5652,11004 5613,10963 5488,10978
+# REMOVED --- #: source_id: IM_012523 (inaktiv) ---	2::inwork 5652,11004 5613,10963 5488,10978
+#: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
+#: also_indoor: traffic (T,G)
+#: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
+#: last_checked: 2026-03-17
+#: check_frequency: 60d
+#: next_check: 2026-12-31 (BVV)
+Kantstr.	q4::inwork 5613,10963 5652,11004
 EOF
      },
      { from  => 1244582648, # 
@@ -29161,7 +29168,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-03-02
+#: last_checked: 2026-03-17
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -33659,7 +33666,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/neue-mieter-fuer-hochhausprojekt-am-kadewe-bueroflaechen-im-quantum-p1-fast-vergeben/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="19"
+#: osm_watch: way id="362719487" version="20"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2026-02-25
@@ -36175,7 +36182,7 @@ EOF
        data  => <<EOF,
 #: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mo, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert), 2024-04-23 (Di) 17:35 (Spalt, Mofa passt durch), 2024-08-18 (So) 13:20 (weiterhin 100cm breiter Spalt)
 #: osm_watch: node id="575826622" version="4" vvv
-#: last_checked: 2025-12-16 vvv
+#: last_checked: 2026-03-14 (mapillary) vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -39124,7 +39131,7 @@ EOF
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: osm_watch: note 4984535 1
 #: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2026-03-11 (mapillary)
+#: last_checked: 2026-03-17
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -40182,7 +40189,7 @@ EOF
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 7
-#: osm_watch: note 3834144 7
+#: osm_watch: note 3834144 9
 #: also_indoor: traffic (re-T,ex-H,re-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
@@ -43519,7 +43526,7 @@ EOF
 #: by: https://entwicklungsstadt.de/tiergarten-hier-entstehen-zwei-hochhausprojekte-direkt-nebeneinander/ (Fertigstellung 2026)
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
-#: osm_watch: way id="1232322874" version="3"
+#: osm_watch: way id="1232322874" version="4"
 #: last_checked: 2026-01-10 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-03-31 (daf, entwicklungsstadt)
@@ -47286,7 +47293,7 @@ EOF
 #: also_indoor: traffic (ex-T,G[zu lang])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2026-03-13 (traffic)
+#: last_checked: 2026-03-14 (mapillary)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2028-12-31
@@ -48240,16 +48247,17 @@ EOF
        until => undef, # XXX
 #      text  => 'Erkelenzdamm: in Höhe Wassertorplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Kohlfurter Str.: vor Erkelenzdamm Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026',
-       text  => 'Regina-Jonas-Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende April 2026, evtl. wird die Baustelle verlängert',
+#      text  => 'Regina-Jonas-Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende April 2026, evtl. wird die Baustelle verlängert',
+       text  => 'Regina-Jonas-Str.: zwischen Erkelenzdamm und Admiralstr. Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich bis Ende April 2026',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: GITSCHINER-2025 --- #: note: Evtl. hatten die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun, deshalb der next_check_id-Eintrag.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
 #: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026) (bis 30.04.2026)
 #: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
-#: note: Baustelle ist mittlerweile vom Erkelenzdamm weiter Richtung Admiralstr. gewandert
-#: last_checked: 2026-02-19
-#: check_frequency: 30d
+#: note: Baustelle ist mittlerweile vom Erkelenzdamm weiter Richtung Admiralstr. gewandert; mittlerweile (2026-03-17) kann man vorbeifahren (außerhalb der Arbeitszeiten?)
+#: last_checked: 2026-03-17
+#: check_frequency: 21d
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
 Regina-Jonas-Str.	q4::inwork 11094,10261 11274,10184
@@ -48331,7 +48339,7 @@ EOF
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2026-02-11 (architektur-urbanistik)
+#: last_checked: 2026-03-17
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -49871,17 +49879,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1773772952, # undef, # XXX
        text  => 'Willmanndamm: Sperrung vor der Langenscheidtstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 # REMOVED --- #: next_check_id: GRUNEWALDSTR-2025
 #: also_indoor: traffic (ex-T,G,no-H,ex-W)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: abgesperrter Bereich etwa 30m, deshalb q4 -> q3
 # REMOVED (nein, sieht nach langsamen Leitungsarbeiten aus) --- #: XXX evtl. im Zusammenhang mit dem Radwegbau in der Grunewaldstr.?
-#: last_checked: 2026-02-20 (traffic)
-#: check_frequency: 14d (traffic)
+# REMOVED (Baustelle noch da, aber man kann vorbeifahren) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2026-03-17 --- #: check_frequency: 14d (traffic)
 	q3::inwork 7628,9365 7509,9337
 EOF
      },
@@ -50228,7 +50234,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-14 vvv
+#: last_checked: 2026-03-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50332,7 +50338,7 @@ EOF
 #: osm_watch: way id="722013098" version="15"
 #: osm_watch: way id="1350756367" version="4"
 #: osm_watch: note 5124809 1
-#: last_checked: 2026-03-01 (osm) vvv
+#: last_checked: 2026-03-14 (mapillary) vvv
 #: check_frequency: 45d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
@@ -50415,6 +50421,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxtebnjz3s2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic5lycfbu4ygtwangqqvtwdmgujojeqx4yzlmlyzox3qcirs66hxy@jpeg
 #: source_id: viz2021:13.34231,52.52413,02.09.2025,06:00 (bis 27.02.2026) (bis 31.03.2026)
+#: note: Baustelle fängt einige Meter westlich der Kreuzung Krefelder Str. an
 	q4::inwork 6183,13083 6114,13095 5993,13064
 EOF
      },
@@ -50966,7 +50973,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-03-12
+#: last_checked: 2026-03-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51236,7 +51243,7 @@ EOF
        text  => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: osm_watch: note 4953648 7
+#: osm_watch: note 4953648 8
 #: also_indoor: traffic (none)
 #: last_checked: 2026-03-16 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
 #: check_frequency: 7d
@@ -51279,13 +51286,15 @@ EOF
      },
      { from  => 1762538105, # 2025-11-07 18:55
        until => undef, # $isodate2epoch->("2025-12-15 18:00:00"),
-       text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, geplant bis Ende Februar 2026, voraussichtlich wird die Sperrung verlängert',
+#      text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, geplant bis Ende Februar 2026, voraussichtlich wird die Sperrung verlängert',
+       text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
 #: also_indoor: traffic (G[unklar],T,W[etwas verschoben],no-H)
-#: last_checked: 2026-02-25
+#: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: last_checked: 2026-03-14 (mapillary)
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2026-02-28 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295
@@ -51520,7 +51529,7 @@ EOF
 #: add_fragezeichen: Ist hier tatsächlich zeitweise oder dauerhaft gesperrt?
 #: note: hier ist allerdings eine Verbindung im Radvorrangnetz geplant
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13063
-#: osm_watch: way id="25309641" version="11"
+#: osm_watch: way id="25309641" version="12"
 #: note: bei osm bicycle=no, mittlerweile auch access=no
 Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
 EOF
@@ -51951,6 +51960,8 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645709.php
 #: by: https://www.berlin.de/imgscale2/9AuxRVefLWbbF7Yg6n-jfxJdZdY8R2b6JXZ86PSf0BA/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI2L21hcmdpbl8yMDAwXzEwMDBfZWUzY2E5ZGUzNWVkNzI0MjNmZDVmYTQ2ODBhY2VlNjZfc3RyYXNzZW5zcGVycnVuZy5wbmc.png
 #: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
+#: last_checked: 2026-03-17
+#: next_check: 2026-04-25
 	2::inwork 5533,8478 5660,8366
 EOF
      },
@@ -52071,11 +52082,12 @@ EOF
 EOF
      },
      { from  => 1772344800, # 2026-03-01 07:00
-       until => 1788188400, # 2026-08-31 17:00
+       until => 1773772824, # 1788188400, # 2026-08-31 17:00
        text  => 'Prinzregentenstr.: Bauarbeiten zwischen Badensche Str. und Berliner Str., evtl. sind auch Radfahrer betroffen, vom 02.03.2026 07:00 bis 31.08.2026 17:00',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:400524/72 viz2021:13.333157,52.486212,02.03.2026,07:00 (bis 31.08.2026)
+#: last_checked: 2026-03-17 (existiert nicht)
 	q4::inwork 5635,9018 5641,8831
 EOF
      },
@@ -52210,13 +52222,25 @@ EOF
 	q4::inwork 6539,15548 6690,15671
 EOF
      },
-     { from  => 1773788400, # 2026-03-18 00:00
-       until => 1777586399, # 2026-04-30 23:59
-       text  => 'Normannenstr./Rathausstr.: Anbindung an die Möllendorffstr. gesperrt, voraussichtlich vom 19.03.2026 bis Ende April 2026',
+     { from  => $isodate2epoch->("2026-03-17 00:00:00"), # 1773788400, # 2026-03-18 00:00
+       until => $isodate2epoch->("2026-04-28 23:59:59"), # 1777586399, # 2026-04-30 23:59
+#      text  => 'Normannenstr./Rathausstr.: Anbindung an die Möllendorffstr. gesperrt, voraussichtlich vom 19.03.2026 bis Ende April 2026',
+       text  => 'Normannenstr./Rathausstr.: Anbindung an die Möllendorffstr. gesperrt, bis Ende April 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260316
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mhachhnv7c22
+#: source_id: LMS-BR:402040/72 viz2021:13.47949,52.51624,17.03.2026,07:00 (bis 28.04.2026)
 	q4::inwork 15508,12367 15537,12367
+EOF
+     },
+     { from  => 1773640800, # 2026-03-16 07:00
+       until => 1780930800, # 2026-06-08 17:00
+       text  => 'Wilhelmsaue: Bauarbeiten zwischen Gerdauer Str. und Bundesallee, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2026 07:00 bis 08.06.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:402038/72 viz2021:13.328819,52.485151,17.03.2026,07:00 (bis 08.06.2026)
+	q4::inwork 5498,8726 5347,8732
 EOF
      },
     );

@@ -104,7 +104,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2026-03-14
+#: last_checked: 2026-03-17
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -234,9 +234,12 @@ Prenzlauer Allee/Sredzkistr.	3nocross 11655,14697 11633,14631 11572,14452
 Gärtnerstr.	1 14211,11552 14247,11681 14272,11775
 Wismarplatz	1 14395,11753 14416,11815
 Wismarplatz	3 14461,11738 14416,11815 14395,11753
+#: historical_note: seit etwa Februar/März 2026
 Simon-Dach-Str.	1 13954,11647 13888,11405
 Simon-Dach-Str.	1 13954,11647 13981,11746 14006,11843
 Simon-Dach-Str.	1 14055,11964 14021,11910 14006,11843
+#: historical_note: seit Mitte März 2026
+Libauer Str.	1 13895,11663 13711,11458
 #: by: Gregor (bluege):
 Buchhorster Str.	1 7616,20633 7736,20598 7793,20580 7866,20556 7979,20528
 Handjerystr.	1 5641,7189 5624,7113 5565,7024
@@ -2409,6 +2412,7 @@ Antonstr./Ruheplatzstr.: Poller	3 7648,15741 7518,15605 7627,15412
 # 
 Alexandrinenstr.	1 10397,10852 10329,10723 10293,10645 10178,10411
 Alexandrinenstr.	1 10069,10151 10083,10192 10122,10294
+Brachvogelstr.	1 10066,10071 10029,9989 10006,9942
 # 
 #: historical_note: der modale Filter wurde ca. Anfang Dezember 2025 eingerichtet vvv
 #: historical_note: seit ca. 2026-02-17 ist die Durchfahrt im Zuge der Alten Jakobstr. für den Linienverkehr frei, drei Poller wurden herausgenommen vvv
@@ -2451,4 +2455,7 @@ Hochkirchstr.: Einbahnstraßenregelung (offen von N nach S) für Kfz	1 8081,9120 8
 #: by: osm:
 #: historical_note: seit 2026-03-03
 Fontanestr.	1 11632,8302 11647,8227
+# 
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1652985.php
+Büchsenweg	1 7676,18713 7674,18738 7685,18775 7881,18835 8000,18831 8045,18804 8066,18754
 # 
