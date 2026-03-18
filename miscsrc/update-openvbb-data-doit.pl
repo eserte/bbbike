@@ -72,7 +72,8 @@ my $openvbb_data_url = 'https://www.vbb.de/vbbgtfs';
 #my $res = $ua->head($openvbb_data_url);
 #$openvbb_data_url = $res->request->url;
 
-$doit->lwp_mirror($openvbb_data_url, "$tempdir/GTFS.zip");
+# need to fake agent since March 2026
+$doit->lwp_mirror($openvbb_data_url, "$tempdir/GTFS.zip", ua => LWP::UserAgent->new(agent => "Mozilla/5.0"));
 my $openvbb_download_size = int((-s "$tempdir/GTFS.zip")/1024/1024);
 
 my $found_stops;
