@@ -5346,7 +5346,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-18
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -6071,7 +6071,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: note 5093384 4
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-10 (osm)
+#: last_checked: 2026-03-18
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6096,7 +6096,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-03-08 vvv
+#: last_checked: 2026-03-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -6626,6 +6626,7 @@ Kreuzungsbereich Ariadnestr.	q3::inwork 2376,25498 2502,25544 2643,25500
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
 #: osm_watch: note 4984535 1
+#: osm_watch: way id="1144627217" version="6"
 #: also_indoor: traffic (re-W,ex-G,T)
 #: last_checked: 2026-03-17
 #: check_frequency: 90d
@@ -7286,7 +7287,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-18
 #: check_frequency: 90d
 #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 12407,8177 12545,8209
@@ -7938,14 +7939,14 @@ Weverpromenade: Umwege	q2::inwork 5541,4305 5721,4356
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025) (inaktiv)
 #: source_id: adac:969740805 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: adac:794067672 (bis 12.12.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026)
+#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,T,W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
 #: last_checked: 2026-01-12 (traffic, nur Bäkebrücke) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-03-20 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-06-19 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
 #: osm_watch: way id="5363433" version="28"
 #: osm_watch[closed]: note 4442541 4
@@ -7966,9 +7967,9 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 ',
          'from' => 1750024800,
          'id' => 4110,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., vom 17.06.2025 bis voraussichtlich Ende März 2026',
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., voraussichtlich bis Mitte Juni 2026',
          'type' => 'gesperrt',
-         'until' => 1774047599
+         'until' => 1781906399
        },
        {
          'data' => '#: note: Sa-Öffnung gesehen (Tor zu, aber nicht verschlossen): 2025-07-26 Sat 13:57
@@ -8078,33 +8079,7 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1477829.php
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neuer-weg-mit-baenken-und-fotos-erinnert-an-deutsche-teilung_a423624
-#: by: https://www.tagesspiegel.de/berlin/start-der-kirschblutensaison-wo-es-in-berlin-am-schonsten-bluht-13420069.html (Erwähnung der Sperrung der "Kirschblütenallee", bis Ende 2025)
-#: by: https://gruen-berlin.de/projekt-meldung/berliner-mauerweg-vorbereitungen-fuer-massnahmen-am-japaneck-in-teltow (Hauptarbeiten ab März 2025)
-#: by: https://gruen-berlin.de/fileadmin/user_upload/Bilder/03_Projekte/31_Infrastruktur/313_Mauerweg/gruenberlin_projekte_infrastruktur_berlinermauerweg_plangrafik_japaneck.png
-#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article408670731/warum-die-kirschbluetenallee-bis-jahresende-gesperrt-bleibt.html (Ende März 2025: noch keine Sperrung)
-#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins (Bauarbeiten ab 10.04.2025)
-#: by: https://www.stadtblatt-online.de/verkehr/berliner-mauerweg-baustart-fuer-weitere-teilstrecke-im-sueden-berlins/ (Bauarbeiten ab 11.04.2025)
-#: by: https://entwicklungsstadt.de/4-abschnitt-des-berliner-mauerwegs-wird-erneuert/
-#: XXX Nach den Bauarbeiten vermutlich bessere Qualität -> qualitaet_s-Eintrag anpassen!
-#: osm_watch: way id="27260309" version="21"
-#: osm_watch: way id="372791173" version="12"
-#: osm_watch: way id="27260312" version="25"
-#: osm_watch: note 4673198 8
-#: add_fragezeichen: Ist der Mauerweg mittlerweile offiziell freigegeben?
-#: last_checked: 2026-01-19 (mapillary)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-12-31
-	2::inwork 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
-',
-         'from' => 1727647200,
-         'id' => 4145,
-         'text' => 'Mauerweg: Bauarbeiten zwischen Japaneck und Lichterfelder Allee, Sperrung, voraussichtlich bis Ende 2025 (Stand Mitte Januar 2026: befahrbar, allerdings noch nicht offiziell freigegeben)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8327,7 +8302,7 @@ Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2026-02-18
+#: last_checked: 2026-03-18
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 	q4::inwork; 7696,7771 7632,7807 7621,7813 7551,7851 7537,7859 7499,7880
@@ -9033,10 +9008,10 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-03-12 (traffic) vvv
+#: last_checked: 2026-03-18 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
-	q4::inwork; 2924,9391 2947,9367
+# REMOVED (evtl. nicht mehr?) ---	q4::inwork; 2924,9391 2947,9367
 	q4::inwork 2947,9367 2978,9338 2977,9220
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -9065,7 +9040,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: source_id: viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: last_checked: 2026-03-08 vvv
+#: last_checked: 2026-03-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9210,7 +9185,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-03-05 (traffic)
+#: last_checked: 2026-03-18 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -9282,7 +9257,24 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: adac:879720956 (bis voraussichtlich 02.10.2025) (neue ID -> inaktiv)
+#: note: bei rbb bis 02.10.2025
+#: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
+#: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
+#: also_indoor: traffic (re-T,G)
+#: last_checked: 2026-03-17
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
+# REMOVED (hier nicht (mehr?)) ---	q4::inwork 5700,10226 5597,10299
+	q4::inwork 5597,10299 5450,10338
+',
+         'from' => 1752012000,
+         'id' => 4385,
+         'text' => 'Schaperstr.: Bauarbeiten, Fahrbahn zwischen Nürnberger Str. und Joachimsthaler Str. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -9447,7 +9439,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-17 vvv
+#: last_checked: 2026-03-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9519,6 +9511,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxtebnjz3s2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic5lycfbu4ygtwangqqvtwdmgujojeqx4yzlmlyzox3qcirs66hxy@jpeg
 #: source_id: viz2021:13.34231,52.52413,02.09.2025,06:00 (bis 27.02.2026) (bis 31.03.2026)
+#: osm_watch: way id="169658769" version="29"
 #: note: Baustelle fängt einige Meter westlich der Kreuzung Krefelder Str. an
 	q4::inwork 6183,13083 6114,13095 5993,13064
 ',
@@ -9652,7 +9645,8 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
          'data' => '# REMOVED --- #: next_check_id: BAB100-2022
 #: note: Halteverbotsschilder bis 16.02.2026
 #: next_check_id: MARKGRAFENDAMM-2022
-#: last_checked: 2026-03-14 vvv
+#: last_checked: 2026-03-18 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-02-11 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-03-31 (andere Halteverbotsschilder) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -9662,6 +9656,7 @@ Corinthstr.	q3::inwork; 14447,10491 14608,10409
 #: note: q4, weil insbesondere das Linksabbiegen umständlich und mit Umwegen verbunden ist
 Corinthstr.	q4::inwork; 14608,10409 14447,10491
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -9974,9 +9969,9 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: also_indoor: traffic (none)
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
-#: note: laut osm note mittlerweile ein schmaler Weg frei
+#: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen
 #: osm_watch: note 4847575 7
-#: last_checked: 2026-02-18
+#: last_checked: 2026-03-18
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
 	q4::inwork 7497,7761 7499,7880
@@ -10063,10 +10058,10 @@ Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-02-01 (traffic) vvv
-#: check_frequency: 3d (traffic) vvv
+#: last_checked: 2026-03-18 vvv
+#: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
-Damaschkestr.: komplett gesperrt	q4::inwork 3013,10553 3123,10504
+# REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3013,10553 3123,10504
 Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -10075,7 +10070,7 @@ Damaschkestr.: ca. 30m gesperrt	q3::inwork 3123,10504 3206,10458
 ',
          'from' => 1763553537,
          'id' => 4504,
-         'text' => 'Damaschkestr.: Bauarbeiten in Höhe Kracauerplatz, Fahrbahn gesperrt, voraussichtlich bis Ende Januar 2026',
+         'text' => 'Damaschkestr.: Bauarbeiten in Höhe Kracauerplatz, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -10122,7 +10117,7 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
 #: add_fragezeichen: Ist der Uferweg wieder offen?
 #: XXX auch laut osm note bis 28.2.2026 gesperrt
 #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
-#: last_checked: 2026-03-16
+#: last_checked: 2026-03-18 (daf)
 #: check_frequency: 60d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-28
 	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853
@@ -10401,6 +10396,7 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2026
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645709.php
 #: by: https://www.berlin.de/imgscale2/9AuxRVefLWbbF7Yg6n-jfxJdZdY8R2b6JXZ86PSf0BA/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI2L21hcmdpbl8yMDAwXzEwMDBfZWUzY2E5ZGUzNWVkNzI0MjNmZDVmYTQ2ODBhY2VlNjZfc3RyYXNzZW5zcGVycnVuZy5wbmc.png
+#: osm_watch: note 5180232 1
 #: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
 #: last_checked: 2026-03-17
 #: next_check: 2026-04-25
@@ -10640,7 +10636,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 ',
          'from' => 1773640800,
          'id' => 4561,
-         'text' => 'Wilhelmsaue: Bauarbeiten zwischen Gerdauer Str. und Bundesallee, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2026 07:00 bis 08.06.2026 17:00',
+         'text' => 'Wilhelmsaue: Bauarbeiten zwischen Gerdauer Str. und Bundesallee, Sperrung der Fahrbahn, vom 17.03.2026 07:00 bis 08.06.2026 17:00',
          'type' => 'handicap',
          'until' => 1780930800
        }

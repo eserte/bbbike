@@ -490,7 +490,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-03-15 (daf) vvv
+#: last_checked: 2026-03-18 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="46"
@@ -619,7 +619,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-03-12 vvv
+#: last_checked: 2026-03-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="18"
@@ -981,7 +981,7 @@ Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, 
 #: osm_watch: way id="152832871" version="25"
 #: osm_watch: way id="1132383957" version="2"
 #: note: mittlerweile eine Art "Drängelgitter" aus dem Bauzaun gemacht
-#: last_checked: 2025-11-19
+#: last_checked: 2026-03-18
 #: check_frequency: 120d
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
@@ -1005,7 +1005,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: XXX im ersten Bauabschnitt ist Radverkehr noch möglich ("gegenseitige Rücksichtnahme"), im zweiten Bauabschnitt muss der Radverkehr schieben --- 2. BA hat wohl angefangen, nun Gehweg, Radfahrer absteigen, aber faktisch ist noch genau so viel Platz vorhanden wie im 1. BA
 #: XXX Umbauarbeiten, danach Vorfahrt für Prinzregentenstr.
 # REMOVED --- #: next_check: 2026-01-30 (VIZ-Verkehrsmeldung)
-#: last_checked: 2026-03-17 vvv
+#: last_checked: 2026-03-18 vvv
 #: check_frequency: 21d vvv
 Prinzregentenstr.: Bauarbeiten in Höhe Waghäuseler Str., Radfahrer sollen absteigen	q2::inwork 5660,8366 5652,8605 5641,8831
 Waghäuseler Str..: Bauarbeiten in Höhe Prinzregentenstr., Radfahrer sollen absteigen	q3::inwork 5498,8598 5652,8605 5786,8609
@@ -1023,7 +1023,7 @@ Waghäuseler Str..: Bauarbeiten in Höhe Prinzregentenstr., Radfahrer sollen abste
 #: by: https://www.entwicklungsstadt.de/buwog-set-44-in-neukoelln-baustart-auf-dem-gelaende-der-geyer-werke/ (bis Herbst 2028)
 #: osm_watch: note 3372461 1
 #: osm_watch: way id="714352578" version="3"
-#: source_id: bvg2024:171#HIM_FREETEXT_320392 (Haltestelle ist aufgehoben, kein Endedatum)
+#: source_id[inactive]: bvg2024:171#HIM_FREETEXT_320392 (Haltestelle ist aufgehoben, kein Endedatum)
 #: XXX Wann sind die Bauarbeiten zu Ende?
 #: last_checked: 2025-11-27
 #: check_frequency: 180d
@@ -1031,7 +1031,7 @@ Waghäuseler Str..: Bauarbeiten in Höhe Prinzregentenstr., Radfahrer sollen abste
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-03-08
+#: last_checked: 2026-03-18
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -7555,10 +7555,10 @@ Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,33
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Bei Sperrungen des Teltowkanaluferwegs ist hier die offizielle Umleitung für Fußgänger und *Radfahrer*, trotz Grünanlage.
 #: last_checked: 2025-06-25 vvv
-#: next_check: 2026-03-20 (VIZ-Verkehrsmeldung) vvv
-#: valid: !20250617-20260320
+#: next_check: 2026-06-19 (VIZ-Verkehrsmeldung) vvv
+#: valid: !20250617-20260619
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065
-#: valid: 20250617-20260320
+#: valid: 20250617-20260619
 Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 #: next_check ^^^
 #: last_checked ^^^
