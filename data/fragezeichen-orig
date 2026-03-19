@@ -2316,7 +2316,7 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: by: https://www.infravelo.de/assets/PDFs/PE_RW_Verkehrszeichenplaene/230504_PE-RW_VZPL_Koepenicker-Schlesische_Strasse_06.pdf
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1471213.php
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
-#: last_checked: 2026-03-17
+#: last_checked: 2026-03-19
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (infravelo)
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
@@ -4940,7 +4940,7 @@ Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11380,11863 11324,11689
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20250527-mobilitaetsrat-mitte-praesentation.pdf (Bauzeitraum: 2026-2027)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1076_ds_1443_vi_verkehrskonzept_adalbertstrasse.pdf
 #: XXX verschwindet dabei auch das Kopfsteinpflaster?
-#: last_checked: 2026-03-06
+#: last_checked: 2026-03-19
 #: check_frequency: 270d
 #: next_check: 2027-12-31 (Mobilitätsrat-Präsentation)
 Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,11106 11726,11265 11808,11482
@@ -5217,8 +5217,9 @@ Bahnhofstr./Briesingstr.: Bau einer provisorischen Ampel	? 10278,-2101 10310,-21
 #: by: https://gruen-berlin.de/projekte/urbane-freiraeume/platz-der-luftbruecke/planung-entwicklung (Fahrradschutzstreifen zwischen Schulenburgring und Te-Damm, ab 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-3#post-26650
 #: by: https://www.entwicklungsstadt.de/zwischen-klimaanpassung-und-verkehrsrealitaet-berlins-plaetze-im-wandel/
+#: by: https://www.entwicklungsstadt.de/endlich-baustart-platz-der-luftbruecke-wird-neu-gestaltet-was-geplant-ist/ (Bauarbeiten ab 20.3.2026)
 #: last_checked: 2026-03-14 (mapillary)
-#: check_frequency: 60d
+#: check_frequency: 30d
 # REMOVED (Termin wurde gerissen) --- #: next_check: 2025-12-15 (MoPo: Baustart Herbst 2025)
 Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9093,8665
 # 
@@ -6021,7 +6022,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: source_id: viz2021:13.397721,52.495244,24.01.2022,06:00 (Kabelarbeiten bis 11.2.2022, haben diese etwas mit dem Radweg zu tun?) (inaktiv)
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="26"
-#: last_checked: 2026-03-14 (mapillary) (ein provisorisch asphaltierter Radweg)
+#: last_checked: 2026-03-19 (ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-02-11
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::; 10006,9942 9950,9987
@@ -6372,7 +6373,7 @@ Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8525 (Erwähnung einer Verbesserung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf
-#: source_id: LMS-BR:399338/72 viz2021:13.50838,52.51041, (bis 13.03.2026) (bis 20.03.2026)
+#: source_id: LMS-BR:399338/72 viz2021:13.50838,52.51041, (bis 13.03.2026) (bis 20.03.2026) (bis 27.03.2026)
 #: osm_watch: way id="4689026" version="48"
 #: note: in früheren Planungen nur ab Robert-Uhrig-Str., nun ab Rosenfelder Str.
 #: last_checked: 2026-03-04
@@ -7507,7 +7508,7 @@ Friedrichshaller Str.: wird es hier Verbesserungen für den Radverkehr geben?	? 2
 # 
 #: by[removed]: http://www.infravelo.de/projekt/per-rad-durch-den-boecklerpark/ (bis 2. Quartal 2021) (mittlerweile 3. Quartal 2022 bis 4. Quartal 2022) (mittlerweile gelöscht)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Sanierung des östlichen Teils)
-#: last_checked: 2026-01-22
+#: last_checked: 2026-03-19
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-12-31
 # REMOVED (hier eventuell später?) --- Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088
@@ -7549,7 +7550,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::inwork; 4517,9401 4507,9395
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erwähnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2026-03-14 (mapillary)
+#: last_checked: 2026-03-19
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7781,7 +7782,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="3"
-#: last_checked: 2026-03-16
+#: last_checked: 2026-03-19
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7789,7 +7790,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-03-18
+#: last_checked: 2026-03-19
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8083,12 +8084,11 @@ Oranienstr.: Verkehrsberuhigung (war) geplant	?::projected 10906,10874 10965,108
 #: XXX erste Markierung an der Einmündung Brachvogelstr./Alexandrinenstr. gesehen; mittlerweile gibt es Markierungsarbeiten zwischen Oranienstr. und Franz-Künstler-Str. sowie südlich der Neuenburger Str.; Radwege sind noch mit Einschränkungen (teilweise ragen Absperrungen rein) nutzbar
 #: XXX laut BA (siehe osm-note) soll es auch Einbahnstraßenregelungen für Kfz geben; gesehen: ab Ritterstr. und Franz-Klühs-Str. Richtung SW Einfahrt gesperrt, evtl. kommt noch mehr
 #: XXX neue Vorfahrtsregelung? zumindest an der Neuenburger Str. ist schon eins vorbereitet, an der Johanniterstr. ebenso
-#: last_checked: 2026-03-14 (mapillary) vvv
+#: last_checked: 2026-03-19 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-03-14 (mapillary) vvv
-# REMOVED --- #: next_check: 2026-03-31 (infravelo) vvv
+#: next_check: 2026-03-31 (infravelo) vvv
 # REMOVED (realisiert) --- Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht (erste Markierungen wurden aufgetragen)	?::inwork 10006,9942 10029,9989 10066,10071
-Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht (erste Markierungen wurden aufgetragen)	?::inwork 10066,10071 10069,10151
+Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht (Einbahnstraßenregelung für Kfz  noch nicht aktiv)	?::inwork 10006,9942 10029,9989 10066,10071
 # REMOVED (realisiert) --- Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht	?::inwork 10069,10151 10083,10192 10122,10294
 Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht (Vorfahrtsregelung fehlt noch (vorbereitetes Schild ist noch abgedeckt), Markierungen noch nicht ganz fertig)	?::inwork 10122,10294 10178,10411 10293,10645
 # REMOVED (realisiert) --- Brachvogelstr., Alexandrinenstr.: Fahrradstraße entsteht	?::inwork 10293,10645 10329,10723
@@ -8359,7 +8359,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-03-12
+#: last_checked: 2026-03-19
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8461,7 +8461,7 @@ Forst, Cottbusser Str.: Schutzstreifen geplant	?::projected 94780,-71444 95299,-
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348108
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348110
 #: by: https://www.o-sp.de/download/lbvbrandenburg/348116
-#: last_checked: 2025-12-20 (indoor research)
+#: last_checked: 2026-03-19 (indoor research)
 #: check_frequency: 90d (indoor research)
 Herzberg/Elster - Fermerswalde (B87): Radweg geplant	?::projected -1256,-81290 -2100,-84117 -2267,-84330
 # 
@@ -9030,13 +9030,13 @@ Königsberger Str.: Verbreiterung und Erneuerung der Radwege	? 5256,2379 5229,239
 #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-weitere-massnahmen-fuer-den-fahrradverkehr-geplant-li.2275385 (Erwähnung)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/barrierefreiheit-ladezonen-zweigleisige-tram-strassenumbau-im-berliner-sudosten-geplant-13666159.html ("fahrradfreundliche Straße")
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1639750.php
-#: by: https://www.aktives-adlershof.de/baumassnahmen/umbau-radickestrasse (2. BA: Mitte April 2026 - 8.5.2026: Zinsgutstraße - Nipkowstraße (Vollsperrung))
+#: by: https://www.aktives-adlershof.de/baumassnahmen/umbau-radickestrasse (2. BA: Mitte April 2026 - 8.5.2026: Zinsgutstraße - Nipkowstraße (Vollsperrung)) (30.03.2026 bis voraussichtlich 30.06.2026)
 #: by: https://www.aktives-adlershof.de/fileadmin/_processed_/2/0/csm_Bauablauf_4cf0b1cb99.png
 #: by: https://www.aktives-adlershof.de/fileadmin/Interne_Dokumente/Projekte/Radickestra%C3%9Fe/2026_02_11_Pr%C3%A4sentation_Radickestra%C3%9Fe.pdf
 #: XXX Vorfahrt in der Fahrradstraße
 #: last_checked: 2025-06-18
 # REMOVED --- #: next_check: 2026-09-30 (infravelo)
-#: next_check: 2026-04-13 (geplanter Beginn der Bauarbeiten)
+#: next_check: 2026-03-30 (aktives-adlershof: geplanter Beginn der Bauarbeiten)
 Radickestr.: Planung einer Fahrradstraße	?::projected 20499,3572 20592,3633 20683,3693 20776,3753 20862,3824
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6897
@@ -9163,7 +9163,7 @@ Jahnsportpark: wird es während der Bauarbeiten Einschränkungen geben? Werden sic
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/schmidtstrasse_lageplan.pdf
 #: XXX Hier soll es eine Einbahnstraßenregelung Radfahrer frei geben; evtl. wird auch die Qualtität besser werden
 #: priority: #C
-#: last_checked: 2026-02-17
+#: last_checked: 2026-03-19
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (BA-Seite)
 Annenstr. [Wohngebiet]: Einbahnstraße für Kfz geplant	?::projected 11259,11391 11192,11429 11233,11510
@@ -9649,7 +9649,7 @@ Hauptstr. (Nebenarm): soll als verkehrsberuhigter Bereich ausgewiesen werden	?::
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
-#: next_check: 2026-06-30 (nd: Weiterbau im Sommer 2026?)
+#: next_check: 2026-05-30 (Zuschlag im Mai 2026, Beginn der Bauarbeiten wenig später?)
 # REMOVED --- #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung)
 # XXX war in gesperrt-orig: Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
 Rolandufer: wird unter der Mühlendammbrücke wieder gesperrt werden?	? 10821,12153 10660,12176 10591,12203 10583,12206
@@ -11831,7 +11831,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: XXX möglicherweise geht es vom Paula-Thiede-Ufer in einer verschwenkten Rampe runter
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 3
-#: last_checked: 2026-03-10 (daf)
+#: last_checked: 2026-03-19
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 Uferweg wird verlängert	?::inwork 12010,11545 11962,11596
@@ -12258,6 +12258,7 @@ Knoten Marzahn: Neubau	?::inwork 19467,15045 19633,15098
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/berlin/politik-und-verwaltung/bundeskanzleramt/erweiterung/projektinformation.html#Projektverlauf ("Verschub" für Anfang 2026 geplant)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundeskanzleramt-erweiterungsbau.666/page-2#post-26945
 #: by: https://www.elwis.de/DE/dynamisch/Nfb/NfbDetailview/showPdf:0456/2026 (Brückeneinschub vom 17.3.2026 bis 2.4.2026)
+#: by: https://www.entwicklungsstadt.de/1-500-tonnen-in-bewegung-neue-suedbruecke-am-bundeskanzleramt-wird-eingeschoben/ (in Betrieb ab 2028)
 #: XXX im Zuge des Bebauungsplans 1-106 (Moabiter Werder)
 #: XXX: laut BBR-Projektleitung sollen die Arbeiten (zumindest diejenigen, die die Uferwege beeinträchtigen?) im 2. Quartal 2026 abgeschlossen sein
 #: last_checked: 2026-03-18 (daf)
@@ -12864,6 +12865,8 @@ Rhenaniabrücke: Neubau geplant	?::projected -1095,15865 -1006,15833
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/bebauungsplanverfahren/bebauungsplanverfahren-der-senatsverwaltung-fuer-stadtentwicklung-bauen-und-wohnen/v-67b-ve/1_b_plan_v67bve_planzeichnung.pdf (mit Vorplatz)
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1653614.php
 #: by: https://www.entwicklungsstadt.de/rudolfstrasse-18-oeffentlichkeitsbeteiligung-fuer-hochhaus-mit-1-000-wohnungen-beginnt/
+#: by: https://s1.directupload.eu/images/260319/344lrrry.jpg (evtl. auch ein Weg hinter den Häusern zur Ehrenbergstr.?)
+#: by: https://www.entwicklungsstadt.de/rudolfstrasse-an-der-warschauer-bruecke-so-koennte-das-geplante-167-meter-hohe-hochhaus-aussehen/
 #: last_checked: 2025-07-12
 #: check_frequency: 720d
 Tamara-Danz-Str. - Rudolfstr.: wird hier eine Fuß- und Radwegverbindung entstehen?	? 13540,11148 13527,11110
@@ -13036,11 +13039,13 @@ Siemenssiedlung: Ausbau der Straßen, ggfs. werden die Sandstraßen durch befestig
 #: by: https://www.electrive.net/2025/08/08/bvg-legt-grundstein-fuer-e-bus-depot-in-marienfelde/
 #: by: https://www.nd-aktuell.de/artikel/1193192.e-mobilitaet-busflotte-der-bvg-elektro-anschluss-fuer-marienfelde.html
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/betriebshof-saentisstrasse (Inbetriebnahme 2027)
+#: by: https://www.tagesspiegel.de/berlin/bvg-baut-neuen-betriebshof-in-marienfelde-hier-werden-kunftig-berlins-elektrobusse-geladen-15370813.html (fertig im Sommer 2027)
+#: by: https://www.entwicklungsstadt.de/infrastruktur-fuer-die-verkehrswende-bvg-grossprojekt-in-marienfelde-waechst/
 #: osm_watch: way id="951211591" version="6"
 #: osm_watch: note 4120308 5
 #: priority: #D
 #: last_checked: 2025-10-08
-#: next_check: 2027-04-30 (Tsp, bvg)
+#: next_check: 2027-09-15 (Tsp)
 BVG-Betriebshof an der Säntisstraße: in Bau	?::inwork 9105,968 9106,932 9128,885 9274,973 9289,944 9391,1008 9449,923 9541,945 9485,1126 9376,1219 9241,1073 9165,1014 9155,1006 9129,986 9105,968
 # 
 #: next_check_id: BVGBETRIEBSHOFSPREE-2026

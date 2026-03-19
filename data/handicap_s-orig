@@ -85,37 +85,12 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13434,13234 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="29"
 #: osm_watch: way id="1072662717" version="33"
-#: last_checked: 2026-03-14
+#: last_checked: 2026-03-19
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
-# 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11088 (zum Neubau des Heinrich-Hertz-Gymnasiums)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_46_4257_4312_online.pdf (Einziehung)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11284 (Anfrage)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1399078.php (Bauarbeiten an der Schule: Frühjahr/Sommer 2024 bis Schuljahresbeginn 2026/2027)
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/erbbaurechtsvertrag-fuer-neue-heinrich-hertz-schule-unterschrieben_a403443
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-friedrichshain-kreuzberg.58/page-7#post-22363
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/schulneubau-genehmigt_a411137
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11464 (Anfrage)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_20_1183_1234_online.pdf (Einziehung einer Grünanlage (nördlich dieser Stelle))
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/howoge-legt-grundstein-fuer-modernes-heinrich-hertz-gymnasium_a420359 (Eröffnung im Herbst 2026)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-heinrich-hertz-gymnasium-am-ostbahnhof.1438/#post-25032
-#: by: https://entwicklungsstadt.de/neue-sechsfeld-sporthalle-entsteht-an-der-fredersdorfer-strasse/
-#: by: https://entwicklungsstadt.de/friedrichshain-wie-aus-einem-parkplatz-eine-moderne-schule-wird/ (weiterhin bis Herbst 2026)
-#: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-am-ostbahnhof-zeigt-sich-mit-roter-fassade/
-#: osm_watch: way id="1054730129" version="9"
-#: osm_watch: way id="295548381" version="9"
-#: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
-#: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
-#: last_checked: 2025-12-19
-#: check_frequency: 90d
-#: next_check: 2026-08-22 (entwicklungsstadt)
-Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,11888
-# 
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (beendet) --- #: next_check_id: STRALAUERALLEE-2023 --- #: last_checked: 2024-04-09 --- # REMOVED --- #: check_frequency: 30d --- #: check_frequency: 3d --- # REMOVED --- #: next_check: 2024-04-09 --- # REMOVED --- #: valid: -20240409 --- #: valid: -20240412 --- Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13549,10741 13496,10763
 # 
@@ -153,7 +128,7 @@ Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,118
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-03-06 vvv
+#: last_checked: 2026-03-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -350,15 +325,15 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: last_checked: 2026-02-11 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) vvv
-#: source_id: LMS-BR:392914/72 viz2021:13.35079,52.53931, (bis 31.03.2026)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
+#: source_id: LMS-BR:392914/72 viz2021:13.35079,52.53931, (bis 31.03.2026) (bis 30.04.2026)
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Umwege, Gehweg für Radfahrer frei	q3::inwork; 7000,14832 6929,14845 6849,14831
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork; 6849,14831 6929,14845 7000,14832
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 6849,14831 6824,14821 6709,14782
-#: source_id: LMS-BR:392917/72 viz2021:13.3549,52.5397, (bis 31.03.2026)
+#: source_id: LMS-BR:392917/72 viz2021:13.3549,52.5397, (bis 31.03.2026) (bis 30.04.2026)
 #: osm_watch: note 4845944 2
 Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 7000,14832 7007,14911
-#: source_id: LMS-BR:392916/72 viz2021:13.35109,52.54099, (bis 31.03.2026)
+#: source_id: LMS-BR:392916/72 viz2021:13.35109,52.54099, (bis 31.03.2026) (bis 30.04.2026)
 #: note: hier keine expliziten Gehweg-für-Radfahrer-frei-Schilder
 Torfstr.: Bauarbeiten: Abschnitt der Fahrbahn gesperrt	q3::inwork 6849,14831 6837,14848 6739,14969
 #: next_check ^^^
@@ -493,24 +468,24 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: last_checked: 2026-03-18 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
-#: osm_watch: way id="24242892" version="46"
+#: osm_watch: way id="24242892" version="47"
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/schadowstra%C3%9Fe-4-dorotheenstra%C3%9Fe-verwaltungsgeb%C3%A4ude-bundestag.757/page-2#post-23517
 #: by: https://www.entwicklungsstadt.de/neubau-fuer-den-deutschen-bundestag-an-der-dorotheenstrasse-nimmt-gestalt-an/ (Fertigstellung 2027)
-#: osm_watch: way id="930343902" version="5"
+#: osm_watch: way id="930343902" version="6"
 #: next_check: 2027-12-31 (entwicklungsstadt)
 # REMOVED --- #: note: Fahrbahn offen, beide Bürgersteige gesperrt, Umleitung für Fußgänger --- 
 # REMOVED --- #: note: (wieder) komplett gesperrt, auch die Bürgersteige --- Schadowstr.: Fahrbahn gesperrt, Umleitung	q4::inwork 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
 #: by: https://www.entwicklungsstadt.de/elisabeth-selbert-haus-unter-den-linden-rohbau-waechst-fertigstellung-fuer-2026-geplant/
-#: osm_watch: way id="4402037" version="27"
+#: osm_watch: way id="4402037" version="28"
 #: osm_watch: way id="1241756428" version="2"
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lux-berlin-neust%C3%A4dtischer-kirchplatz.903/page-2#post-23516
 #: osm_watch: note 3469300 9
-#: osm_watch: way id="111833186" version="17"
+#: osm_watch: way id="111833186" version="18"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
 #: osm_watch: way id="153698413" version="20"
@@ -769,7 +744,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
-#: last_checked: 2026-03-17 vvv
+#: last_checked: 2026-03-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 #: valid: -20261231 vvv

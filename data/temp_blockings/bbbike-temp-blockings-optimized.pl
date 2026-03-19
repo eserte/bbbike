@@ -3465,6 +3465,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024) (25.04.2025 - 27.04.2025)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1549582.php
 #: by: https://www.laubinger.de/event/18-koepenicker-winzerfruehlingplant/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1653814.php
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -3483,7 +3484,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                               4
                             ]
                           ],
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, voraussichtlich 17.04.2026 bis 19.04.2026',
+         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 17.04.2026 bis 19.04.2026',
          'type' => 'gesperrt',
          'until' => 1776635999
        },
@@ -3562,13 +3563,13 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
 #: also_indoor: traffic (re-ex-re-G,ex-H,ex-A,ex-W,T)
-#: last_checked: 2026-03-13 (traffic)
+#: last_checked: 2026-03-19 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
 Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
-# REMOVED (keine Sperrung mehr) --- #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet? --- #: source_id: LMS-BR:392919/72 viz2021:13.355108,52.540463, (bis 31.03.2026) --- #: also_indoor: traffic (re-T,G) --- #: last_checked: 2025-12-16 (traffic) --- #: check_frequency: 60d --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) --- Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
+# REMOVED (keine Sperrung mehr) --- #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet? --- #: source_id: LMS-BR:392919/72 viz2021:13.355108,52.540463, (bis 31.03.2026) (bis 30.04.2026) --- #: also_indoor: traffic (re-T,G) --- #: last_checked: 2025-12-16 (traffic) --- #: check_frequency: 60d --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) --- Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 ',
          'from' => 1719810000,
          'id' => 2430,
@@ -5886,6 +5887,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084 (altes Bauvorhaben von ~2021)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-lewishamstra%C3%9Fe-4-ehem-hotel-panorama-adenauer-platz.1193/page-3#post-26359
+#: by: https://www.entwicklungsstadt.de/panorama-hotel-am-adenauerplatz-nimmt-form-an-hotel-wohnen-und-bueros-geplant/
 # REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: osm_watch: way id="1300235970" version="3"
 # REMOVED --- #: osm_watch: way id="1039329567" version="6"
@@ -7704,13 +7706,13 @@ Wiesenstr.: Einbahnstraßenregelung	q3::inwork; 8048,15829 7948,15802
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
-#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026) (bis 28.02.2026) (bis 31.03.2026)
+#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026) (bis 28.02.2026) (bis 31.03.2026) (bis 20.03.2026)
 #: source_id[inactive]: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
 #: source_id[inactive]: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-02-28 vvv
-#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-03-20 (VIZ-Verkehrsmeldung) vvv
 Winckelmannstr.: Havarie, Sperrung der Fahrbahn	q4::inwork 17503,4148 17507,4216
 Köpenicker Str.: Einmündungsbereich gesperrt	q3::inwork 17507,4216 17638,4224
 Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4159 17405,4151
@@ -7719,9 +7721,9 @@ Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4
 ',
          'from' => undef,
          'id' => 4058,
-         'text' => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, außerdem Sperrung in der Vereinsstr., voraussichtlich bis Ende März 2026',
+         'text' => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, außerdem Sperrung in der Vereinsstr., voraussichtlich bis 20. März 2026',
          'type' => 'handicap',
-         'until' => 1774994399
+         'until' => 1774015200
        },
        undef,
        undef,
@@ -9081,15 +9083,15 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        {
          'data' => '#: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
 #: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
-#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026)
-#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026)
+#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026) (bis 24.03.2026)
+#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026) (bis 24.03.2026)
 	q4::inwork 5053,8979 5189,8983
 ',
          'from' => 1765062000,
          'id' => 4359,
-         'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 23.03.2026',
+         'text' => 'Gasteiner Str.: Bauarbeiten, Einbahnstraßenregelung zwischen Holsteinische Str. und Nassauische Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 24.03.2026',
          'type' => 'handicap',
-         'until' => 1774306799
+         'until' => 1774350000
        },
        undef,
        undef,
@@ -9225,7 +9227,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: source_id: viz2021:13.38017,52.51979,09.07.2025,07:00 (bis 12.05.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 2
-#: osm_watch: way id="1429845843" version="3"
+#: osm_watch: way id="1429845843" version="4"
 #: also_indoor: traffic (T,H,G)
 #: last_checked: 2026-03-03 vvv
 #: check_frequency: 90d vvv
@@ -10382,8 +10384,8 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mfiwskygqs24
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihvfh52q73rbokesrtjn4f323tpx2zfhfzp77fdzdzn45zmzgpmhi@jpeg
-#: source_id: LMS-BR:399784/72 viz2021:13.5175,52.53549,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026)
-#: source_id: LMS-BR:399785/72 viz2021:13.516948,52.535637,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026)
+#: source_id: LMS-BR:399784/72 viz2021:13.5175,52.53549,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026) (bis 20.03.2026)
+#: source_id: LMS-BR:399785/72 viz2021:13.516948,52.535637,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026) (bis 20.03.2026)
 	q4::inwork; 18183,14573 18225,14398 18247,14241
 ',
          'from' => 1771801200,
