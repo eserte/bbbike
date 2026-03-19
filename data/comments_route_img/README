@@ -67,3 +67,8 @@ Folgende Bilder wurden aus
 - RDE.png
   https://www.radweg-deutsche-einheit.de/favicon.ico
   Converted using Gimp (using 1st image in the multi-image file, crop corners manually, resize to 30x30)
+
+- IKB.png
+  https://industriekultur.berlin/wp-content/uploads/cropped-cropped-Logo-Industriekultur-Berlin-PFEIL-32x32.png
+  curl https://industriekultur.berlin/wp-content/uploads/cropped-cropped-Logo-Industriekultur-Berlin-PFEIL-32x32.png | convert -geometry 30x30 - - > IKB.png
+
