@@ -4095,6 +4095,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.tagesspiegel.de/berlin/bezirke/25-meter-becken-und-sonnenterrasse-moabit-bekommt-ein-freibad--baustart-steht-fest-12987601.html (Eröffnung 2026)
 #: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-bauarbeiten-fuer-den-aussenbereich-gehen-voran/
 #: by: https://www.entwicklungsstadt.de/berliner-baeder-im-wandel-welche-projekte-vorankommen-und-welche-warten/
+#: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-fundamente-der-becken-sind-bereits-gegossen/
 # REMOVED --- #: osm_watch: way id="848019125" version="6" --- #: osm_watch: note 4030867 1
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023 --- #: last_checked: 2023-12-29 --- #: next_check: 2024-01-23
 #: osm_watch: way id="462738551" version="29"
@@ -6393,7 +6394,8 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 #: last_checked: 2026-03-02 (az-lichtenrade) vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
-#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-04-07 (Briesingstr. nicht mehr Einbahnstraße?)
+# REMOVED --- #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 # REMOVED (laut az-lichtenrade mittlerweile in beide Richtungen befahrbar) --- #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung --- Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
@@ -7679,52 +7681,7 @@ Wiesenstr.: Einbahnstraßenregelung	q3::inwork; 8048,15829 7948,15802
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: STERNDAMM-2024
-#: by: https://www.bahninfo-forum.de/read.php?9,726524,798077#msg-798077 (Umleitungsplan)
-#: by: https://www.bvg.de/dam/jcr:af2cde0c-259c-48dd-a34e-a6451c81540d/Kartenausschnitt-Johannisthal_240319.png
-#: by: https://www.bahninfo-forum.de/read.php?9,726524,798920#msg-798920
-#: by: http://thomas.krickstadt.de/strassenbahnen/2024-05-04-gleisschleife-johannisthal/index.html
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1788060004194341063
-#: by: https://pbs.twimg.com/media/GM-T_ItXAAEbotS?format=jpg&name=large (Sterndamm)
-#: by: https://pbs.twimg.com/media/GM-UPCQXoAAPE8L?format=jpg&name=large (Winckelmannstr.)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php?date=20251016 (bis 31.12.2025)
-#: by: https://www.bahninfo-forum.de/read.php?9,830505,844662#msg-844662
-#: note: laut Baustellenplakat (siehe bahninfo-forum) nur bis 05.07.2024, oder gibt es da nur eine Änderung der Verkehrsführung?
-#: note: laut rbb bis 15.8.2024 (go with it)
-#: note: bei VIZ seit dem 8.8.2024 inaktiv (zu früh?)
-#: source_id: viz2021:13.505693,52.445739,08.05.2024,07:00 (Sterndamm und Anbindungen, bis 08.08.2024) (inaktiv) (bis 20.08.2024) (bis 15.08.2024, im Anschluss weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.50508,52.44526,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
-# REMOVED --- Sterndamm: gemeinsamer Rad- und Gehweg	q3::inwork; 17387,4446 17428,4503 17471,4570 17516,4657
-# REMOVED --- Winckelmannstr. am Sterndamm	q4::inwork 17428,4503 17476,4337
-# REMOVED --- Trützschlerstr.	q2::inwork 17471,4570 17612,4460
-#: source_id: viz2021:13.506038,52.441227,08.05.2024,07:00 (Winckelmannstr., bis 08.08.2024) (inaktiv) (bis 20.08.2024) (bis 19.08.2024, im Anschluss weitere Arbeiten) (inaktiv)
-#: source_id: viz2021:13.5056,52.44039,08.05.2024,07:00 (bis 08.05.2024) (inaktiv)
-# REMOVED --- Winckelmannstr.	q4::inwork 17503,4148 17498,4078 17468,3979 17465,3768
-# REMOVED --- #: by: krickstadt --- Haeckelstr.	q4::inwork 17379,3932 17468,3979
-#: note: neue Havarie 2025
-#: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
-#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
-#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
-#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026) (bis 28.02.2026) (bis 31.03.2026) (bis 20.03.2026)
-#: source_id[inactive]: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
-#: source_id[inactive]: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
-#: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
-#: also_indoor: traffic (T,G)
-#: last_checked: 2026-02-28 vvv
-#: next_check: 2026-03-20 (VIZ-Verkehrsmeldung) vvv
-Winckelmannstr.: Havarie, Sperrung der Fahrbahn	q4::inwork 17503,4148 17507,4216
-Köpenicker Str.: Einmündungsbereich gesperrt	q3::inwork 17507,4216 17638,4224
-Vereinsstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen	q4::inwork 17297,4159 17405,4151
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 4058,
-         'text' => 'Winckelmannstr.: Bauarbeiten, Fahrbahn zwischen Vereinsstr. und Köpenicker Str. gesperrt, außerdem Sperrung in der Vereinsstr., voraussichtlich bis 20. März 2026',
-         'type' => 'handicap',
-         'until' => 1774015200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9441,7 +9398,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-18 vvv
+#: last_checked: 2026-03-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9694,6 +9651,7 @@ Corinthstr.	q4::inwork; 14608,10409 14447,10491
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603529.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1652785.php (Wiederaufnahme der Bauarbeiten)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/hier-sollen-berliner-kissen-raser-bremsen-berliner-bezirk-lasst-buckel-in-verkehrsberuhigter-zone-verbauen-15364376.html
 	q4::inwork 4339,6315 4379,6390 4407,6445
 ',
          'from' => 1774738800,
@@ -9949,7 +9907,18 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'until' => 1788213600
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://marzahn-hellersdorf.com/update-vollsperrung-nach-wasserrohrbruch-in-der-lily-braun-strasse/
+#: by: https://marzahn-hellersdorf.com/update-zum-rohrschaden-lily-braun-strasse-frost-verzoegert-abschlussarbeiten-fremdkoerper-in-leitung-entdeckt/
+#: by: https://marzahn-hellersdorf.com/update-zur-lily-braun-strasse-leitung-wird-wieder-ans-netz-angeschlossen-abschlussarbeiten-bis-23-maerz/
+	q4::inwork 23213,13003 23173,12769
+',
+         'from' => 1762210800,
+         'id' => 4493,
+         'text' => 'Lily-Braun-Str.: Leitungsarbeiten zwischen Ernst-Bloch-Str. und Gülzower Str., Fahrbahn gesperrt, voraussichtlich bis 23. März 2026',
+         'type' => 'gesperrt',
+         'until' => 1774306799
+       },
        {
          'data' => '#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
@@ -10059,6 +10028,7 @@ Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603695.php (Bauarbeiten 6. Oktober 2025 bis Ende Januar 2026)
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
+#: osm_watch: note 5206966 2
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
 #: last_checked: 2026-03-18 vvv
 #: check_frequency: 14d (traffic) vvv
@@ -10381,19 +10351,7 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
          'type' => 'gesperrt',
          'until' => 1785535199
        },
-       {
-         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mfiwskygqs24
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihvfh52q73rbokesrtjn4f323tpx2zfhfzp77fdzdzn45zmzgpmhi@jpeg
-#: source_id: LMS-BR:399784/72 viz2021:13.5175,52.53549,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026) (bis 20.03.2026)
-#: source_id: LMS-BR:399785/72 viz2021:13.516948,52.535637,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026) (bis 20.03.2026)
-	q4::inwork; 18183,14573 18225,14398 18247,14241
-',
-         'from' => 1771801200,
-         'id' => 4540,
-         'text' => 'Alte Rhinstr.: Einbahnstraßenregelung, voraussichtlich bis 23.03.2026',
-         'type' => 'handicap',
-         'until' => 1774281600
-       },
+       undef,
        {
          'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2026
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645709.php
@@ -10641,6 +10599,29 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'text' => 'Wilhelmsaue: Bauarbeiten zwischen Gerdauer Str. und Bundesallee, Sperrung der Fahrbahn, vom 17.03.2026 07:00 bis 08.06.2026 17:00',
          'type' => 'handicap',
          'until' => 1780930800
+       },
+       {
+         'data' => '#: source_id: LMS-BR:402369/72 viz2021:13.44384,52.44579,20.03.2026,07:00 (bis 21.04.2026)
+#: also_indoor: traffic (no-G,T,H)
+#: by: https://www.berlin.de/events/2991117-2229501-britzer-baumbluete.html
+#: by: https://www.wollenschlaeger-berlin.de/67-britzer-baumbluete/ (70. Britzer Baumblüte)
+	2::temp 13098,4452 13225,4495 13266,4507
+',
+         'from' => 1773900000,
+         'id' => 4562,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              3
+                            ]
+                          ],
+         'text' => 'Parchimer Allee - Britzer Park: Veranstaltung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 20.03.2026 07:00 bis 21.04.2026 20:00',
+         'type' => 'gesperrt',
+         'until' => 1776794400
        }
      
 );

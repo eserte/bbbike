@@ -25459,6 +25459,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/25-meter-becken-und-sonnenterrasse-moabit-bekommt-ein-freibad--baustart-steht-fest-12987601.html (Eröffnung 2026)
 #: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-bauarbeiten-fuer-den-aussenbereich-gehen-voran/
 #: by: https://www.entwicklungsstadt.de/berliner-baeder-im-wandel-welche-projekte-vorankommen-und-welche-warten/
+#: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-fundamente-der-becken-sind-bereits-gegossen/
 # REMOVED --- #: osm_watch: way id="848019125" version="6" --- #: osm_watch: note 4030867 1
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023 --- #: last_checked: 2023-12-29 --- #: next_check: 2024-01-23
 #: osm_watch: way id="462738551" version="29"
@@ -38080,7 +38081,8 @@ EOF
 #: last_checked: 2026-03-02 (az-lichtenrade) vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
-#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-04-07 (Briesingstr. nicht mehr Einbahnstraße?)
+# REMOVED --- #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 # REMOVED (laut az-lichtenrade mittlerweile in beide Richtungen befahrbar) --- #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung --- Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
@@ -44697,7 +44699,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,835148,837007#msg-837007
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8117 (Antrag; Arbeiten bis Ende des Jahres 2025?)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/UtIl3yvMwYnHwVG9hJyu3ftRqOegqX6rspA2QGwo/vvHZMnlS/08-Anlagen/03/B1123ZB1.pdf (Zwischenbericht: bis Ende 2025, Vereinsstr. sogar bis 6.1.2026)
-#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026) (bis 28.02.2026) (bis 31.03.2026) (bis 20.03.2026)
+#: source_id: LMS-BR:381193/72 viz2021:13.50621,52.44257, (kein Enddatum) (bis 31.10.2025) (bis 23.12.2025) (bis 13.02.2026) (bis 28.02.2026) (bis 31.03.2026) (bis 20.03.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:60#HIM_FREETEXT_303210 (kein Endedatum) (bis 24.12.2025)
 #: source_id[inactive]: bvg2024:60#807d1e02-c853-425f-a249-b4318a521ef5 (kein Endedatum)
 #: note: bei rbb sogar bis 31.10.2026; mittlerweile korrigiert auf 31.10.2025
@@ -50236,7 +50238,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-18 vvv
+#: last_checked: 2026-03-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50798,6 +50800,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603529.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1652785.php (Wiederaufnahme der Bauarbeiten)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/hier-sollen-berliner-kissen-raser-bremsen-berliner-bezirk-lasst-buckel-in-verkehrsberuhigter-zone-verbauen-15364376.html
 	q4::inwork 4339,6315 4379,6390 4407,6445
 EOF
      },
@@ -51280,12 +51283,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-11-04 00:00:00"),
-       until => $isodate2epoch->("2026-02-28 23:59:59"),
-       text  => 'Lily-Braun-Str.: Leitungsarbeiten zwischen Ernst-Bloch-Str. und Gülzower Str., Fahrbahn gesperrt, voraussichtlich bis Ende Februar 2026, eventuell wird die Sperrung verlängert',
+       until => $isodate2epoch->("2026-03-23 23:59:59"),
+       text  => 'Lily-Braun-Str.: Leitungsarbeiten zwischen Ernst-Bloch-Str. und Gülzower Str., Fahrbahn gesperrt, voraussichtlich bis 23. März 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://marzahn-hellersdorf.com/update-vollsperrung-nach-wasserrohrbruch-in-der-lily-braun-strasse/
 #: by: https://marzahn-hellersdorf.com/update-zum-rohrschaden-lily-braun-strasse-frost-verzoegert-abschlussarbeiten-fremdkoerper-in-leitung-entdeckt/
+#: by: https://marzahn-hellersdorf.com/update-zur-lily-braun-strasse-leitung-wird-wieder-ans-netz-angeschlossen-abschlussarbeiten-bis-23-maerz/
 	q4::inwork 23213,13003 23173,12769
 EOF
      },
@@ -51493,6 +51497,7 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603695.php (Bauarbeiten 6. Oktober 2025 bis Ende Januar 2026)
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
+#: osm_watch: note 5206966 2
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
 #: last_checked: 2026-03-18 vvv
 #: check_frequency: 14d (traffic) vvv
@@ -51946,14 +51951,14 @@ EOF
 EOF
      },
      { from  => 1771801200, # 2026-02-23 00:00
-       until => $isodate2epoch->("2026-03-23 17:00:00"),
+       until => 1774031970, # $isodate2epoch->("2026-03-23 17:00:00"),
        text  => 'Alte Rhinstr.: Einbahnstraßenregelung, voraussichtlich bis 23.03.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mfiwskygqs24
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihvfh52q73rbokesrtjn4f323tpx2zfhfzp77fdzdzn45zmzgpmhi@jpeg
-#: source_id: LMS-BR:399784/72 viz2021:13.5175,52.53549,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026) (bis 20.03.2026)
-#: source_id: LMS-BR:399785/72 viz2021:13.516948,52.535637,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026) (bis 20.03.2026)
+#: source_id: LMS-BR:399784/72 viz2021:13.5175,52.53549,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026) (bis 20.03.2026) (inaktiv)
+#: source_id: LMS-BR:399785/72 viz2021:13.516948,52.535637,23.02.2026,07:00 (Gleisbauarbeiten bis 23.03.2026) (bis 20.03.2026) (inaktiv)
 	q4::inwork; 18183,14573 18225,14398 18247,14241
 EOF
      },
@@ -52248,6 +52253,20 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:402038/72 viz2021:13.328819,52.485151,17.03.2026,07:00 (bis 08.06.2026)
 	q4::inwork 5498,8726 5347,8732
+EOF
+     },
+     { from  => 1773900000, # 2026-03-19 07:00
+       until => 1776794400, # 2026-04-21 20:00
+       periodic => 1,
+       recurrences => [["yearly", days => 15, months => 3]],
+       text  => 'Parchimer Allee - Britzer Park: Veranstaltung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 20.03.2026 07:00 bis 21.04.2026 20:00',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LMS-BR:402369/72 viz2021:13.44384,52.44579,20.03.2026,07:00 (bis 21.04.2026)
+#: also_indoor: traffic (no-G,T,H)
+#: by: https://www.berlin.de/events/2991117-2229501-britzer-baumbluete.html
+#: by: https://www.wollenschlaeger-berlin.de/67-britzer-baumbluete/ (70. Britzer Baumblüte)
+	2::temp 13098,4452 13225,4495 13266,4507
 EOF
      },
     );

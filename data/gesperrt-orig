@@ -4110,8 +4110,9 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026)
 #: osm_watch: way id="1471571709" version="2"
 #: osm_watch: way id="4597200" version="35"
-#: osm_watch: note 5192591 2
-#: osm_watch: note 5192593 1
+#: osm_watch: way id="1108289467" version="11"
+#: osm_watch[closed]: note 5192591 2
+#: osm_watch[closed]: note 5192593 1
 #: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
 #: last_checked: 2026-03-09 vvv
 #: check_frequency: 120d vvv
@@ -4283,7 +4284,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-03-11
+#: last_checked: 2026-03-20
 #: check_frequency: 120d
 #: next_check: 2026-05-31 (entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4534,8 +4535,8 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
-#: osm_watch: way id="1106303945" version="12"
-#: osm_watch: way id="4543436" version="45"
+#: osm_watch: way id="1106303945" version="13"
+#: osm_watch: way id="4543436" version="46"
 #: osm_watch: way id="176338611" version="21"
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
@@ -4725,7 +4726,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-03-11
+#: last_checked: 2026-03-20
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4733,7 +4734,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-03-11 vvv
+#: last_checked: 2026-03-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5132,7 +5133,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-03-18 vvv
+#: last_checked: 2026-03-20 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
