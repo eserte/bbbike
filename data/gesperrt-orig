@@ -419,7 +419,7 @@ Große Präsidentenstr.	1 10105,13004 10219,13102
 # REMOVED --- #: next_check: 2025-02-28
 Duisburger Str.	1 4183,10144 3880,10154
 # 
-Straße 462	1 4914,17399 5068,17384
+Straße 462	1 4914,17399 5017,17415 5051,17410
 Havensteinstr.	1 6293,2583 6468,2720 6592,2827
 Worpsweder Str.	1 6182,4931 6202,5163
 Wilseder Str.	1 6295,5158 6276,4915
@@ -471,7 +471,7 @@ Kavalierstr.	1 10621,18837 10729,18584
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
-#: osm_watch: way id="4637773" version="29"
+#: osm_watch: way id="4637773" version="30"
 #: last_checked: 2026-01-19 (mapillary)
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
@@ -2291,7 +2291,8 @@ Togostr.: Mittelstreifen	3nocross 5906,16403 5700,16584 5596,16662
 Märkische Allee: Mittelstreifen	3nocross 21251,18508 21163,18347 21011,18061
 Märkische Allee: Mittelstreifen	3nocross 19809,15676 19880,15818 19988,16039
 Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21275,11547 21311,11528
-Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4997,17241
+Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4989,17245
+Kurt-Schumacher-Damm: Mittelstreifen	3nocross 5046,17396 5051,17410 5109,17507
 Rudower Str.: Mittelstreifen	3nocross 14788,3441 14822,3409 14994,3245
 Tempelhofer Damm: Mittelstreifen	3nocross 9247,4915 9239,4980 9206,5193
 Malteserstr.: Mittelstreifen	3nocross 7438,1855 7423,1905 7409,1953
@@ -4114,7 +4115,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: osm_watch[closed]: note 5192591 2
 #: osm_watch[closed]: note 5192593 1
 #: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
-#: last_checked: 2026-03-09 vvv
+#: last_checked: 2026-03-21 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-07-01 vvv
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
@@ -4321,9 +4322,9 @@ An den Weiden: Hochbauarbeiten, gesperrt	2::inwork 12882,999 12946,1027
 #: source_id: bvg2024:250#HIM_FREETEXT_307841
 #: last_checked: 2026-03-14 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
-#: osm_watch: way id="1199394070" version="7"
+#: osm_watch: way id="1199394070" version="8"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
-#: osm_watch: way id="174271093" version="25"
+#: osm_watch: way id="174271093" version="26"
 Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 #: next_check ^^^
 #: last_checked ^^^
@@ -4761,7 +4762,7 @@ Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,1067
 #: priority: #C
 #: osm_watch: note 4395422 3
 #: osm_watch: note 4558995 4
-#: last_checked: 2026-02-15 (mapillary)
+#: last_checked: 2026-03-21
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
 #: next_check: 2026-06-30 (BA, entwicklungsstadt)
@@ -4875,22 +4876,13 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2026-02-16 (okas)
+#: last_checked: 2026-03-21
 # REMOVED --- #: check_frequency: 360d
-#: next_check: 2026-10-01
+#: next_check: 2026-12-01 (berliner-zeitung (Ende 2026))
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #
 # REMOVED (nicht mehr gesperrt) --- #: next_check_id: U6-2022 --- #: XXX Ist hier noch immer gesperrt? --- #: last_checked: 2025-06-06 (okas) --- #: check_frequency: 120d --- # REMOVED --- #: next_check: 2026-10-01 --- #: next_check: 2025-07-01 --- Weg am Kienhorstgraben: Durchgang zur Seidelstr. gesperrt	2::inwork 3706,17931 3723,17979
-# 
-#: next_check_id: U6-2022
-#: osm_watch: way id="1036123062" version="8"
-#: XXX Ist hier noch immer eine Einbahnstraße?
-#: last_checked: 2025-09-03
-#: check_frequency: 120d
-#: next_check: 2026-10-01
-Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
-# 
-# 
+# REMOVED (keine Einbahnstraße mehr) --- #: next_check_id: U6-2022 --- #: osm_watch: way id="1036123062" version="8" --- #: XXX Ist hier noch immer eine Einbahnstraße? --- #: last_checked: 2026-03-21 --- #: check_frequency: 120d --- #: next_check: 2026-10-01 --- Klixstr.: Einbahnstraße Richtung Norden	1s:q4:inwork 3871,18144 3833,17929
 # REMOVED (kein Gerüst mehr) --- #: next_check_id: U6-2022 --- #: XXX Wie sieht die Situation nach den Bauarbeiten aus? --- #: last_checked: 2022-09-26 (mapillary) --- #: next_check: 2022-11-30 --- Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,17938 3706,17931 3833,17929
 # 
 #: next_check_id: WUHLESTEG-2022

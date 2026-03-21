@@ -1564,7 +1564,7 @@ Osterwäldchen	F:P 18006,10404 17986,10321 18039,10307 18030,10272 18043,10265 1
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1402282.php
 #: alias: Park am Urnenfriedhof Gerichtstraße
 Grünzug an der Ruheplatzstraße	F:P 7564,15528 7617,15565 7661,15414 7627,15412
-Urnenfriedhof Gerichtstraße	F:Cemetery 7661,15414 7703,15416 7701,15467 7755,15468 7753,15568 7721,15566 7721,15593 7595,15596 7617,15565 7661,15414
+Urnenfriedhof Gerichtstraße	F:Cemetery 7661,15414 7703,15416 7701,15467 7755,15468 7753,15568 7721,15566 7721,15599 7595,15596 7617,15565 7661,15414
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11916
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1419833.php (Messingplakette seit dem 21.2.2024)
@@ -1904,7 +1904,7 @@ Strandbad Orankesee	F:Sport 15691,16123 15680,16135 15731,16208 15793,16162 1586
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklung/stadtplanung/bebauungsplanverfahren/beteiligung/ix-55-3_planzeichnung.pdf (Fläche b (N-S-Weg) ... Geh- und Radfahrrecht)
 #: by: https://entwicklungsstadt.de/so-waechst-das-gewerbequartier-gowest-in-berlin-schmargendorf/
 #: note: früher Brendel Leuchten/Reemtsma
-#: last_checked: 2025-11-23 (architektur-urbanistik)
+#: last_checked: 2026-03-21 (daf)
 #: check_frequency: 270d
 #: next_check: 2026-06-15
 	F:Industrial 3895,8079 3779,8105 3777,7984 3649,7992 3639,7800 3735,7792 3731,7689 3839,7787 3884,7829 3895,8079
@@ -2343,13 +2343,14 @@ Kolonien Roedernallee, Flora, Freizeit, Lebensfreude, Neues Leben, An der Nordba
 Kolonie Einheit	F:Orchard 5830,18779 5825,18835 5637,18817 5635,18776
 Kolonie Einheit	F:Orchard 5479,19070 5689,19088 5676,18953 5506,18948 5512,18980 5460,18986
 Kolonie Kühler Grund	F:Orchard 4780,20116 4728,20003 4684,19915 4437,20031 4491,20125
-Kolonien Pflanzersheim, Parkheim	F:Orchard 6125,18966 6064,18971 5843,18936 5869,18779 6009,18755 6314,18705 6432,18682 6436,18729 6342,18755 6360,18861
+Kolonien Pflanzersheim, Parkheim	F:Orchard 6125,18966 6064,18971 5843,18936 5869,18779 6009,18755 6314,18705 6432,18682 6433,18729 6342,18755 6360,18861
 Kolonie Steinberg	F:Orchard 4126,20771 4047,20748 3915,20711 3604,20603 3454,20748 3251,20840 3265,20862 3373,20899 3517,21026 3563,21046 3565,21074 3912,21090
 #: XXX_prog: Layerelement evtl überdeckt vom umliegenden Wald
 Waldfriedhof Müggelheim	F:Cemetery 29030,491 29203,513 29222,398 29077,382
 Kolonie Schlachtensee-Süd	F:Orchard -2140,1555 -2012,1269 -1563,1465 -1578,1740 -1793,1652 -1824,1716
 Kolonie Schweinekopf	F:Orchard 5363,17667 5449,17757 5342,17784 5306,17691
-	F:Cemetery 5536,18234 5299,18109 5279,17965 5377,17940 5367,17899 5342,17784 5449,17757 5363,17667 5318,17617 5438,17468 5622,17637 5704,17701 5815,17750 5954,17777 6045,18305 6060,18534 5860,18400
+	F:Cemetery 5536,18234 5299,18109 5279,17965 5377,17940 5367,17899 5342,17784 5449,17757 5363,17667 5318,17617 5438,17468 5622,17637 5704,17701 5815,17750 5954,17777 6045,18305 6054,18444 5944,18456 5860,18400
+	F:P 5944,18456 6060,18534 6054,18444 5944,18456
 	F:P 6056,17798 6049,17839 6065,18004 6031,18151 6040,18289 5954,17777 6056,17798
 Golgatha-Gnaden-Friedhof	F:Cemetery 6828,17310 6785,17446 6672,17467 6642,17571 6457,17630 6379,17371 6535,17323 6581,17309 6609,17310
 Johannes-Evangelist-Friedhof	F:Cemetery 6609,17310 6636,17147 6749,17057 6806,17014 6894,17115 6828,17310

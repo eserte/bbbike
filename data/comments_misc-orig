@@ -103,7 +103,7 @@ Richtung Maaßenstr.	CP2; 7033,10396 7033,10328
 # #: XXX_prog ^^^
 # 
 (Lauterberger Str. - Andreasberger Str.): Privatstraße	CS 12053,6042 12154,6063
-#
+# 
 Philosophenweg: Privatstraße	CS 16073,12883 16074,12778
 # 
 Innovationspark Köpenick	CS 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
@@ -776,6 +776,8 @@ Privatstraße	CS 21126,-273 21045,-330 21089,-378 21138,-428
 # 
 (Siegfriedshöfe): Privatgelände	CS 16801,12197 16745,12213 16665,12218
 # 
+Merkurstr.: Privatstraße	CS 4762,17484 4753,17446 4737,17385
+# 
 #: section ^^^
 # 
 ######################################################################
@@ -1011,7 +1013,7 @@ Stargarder Str. Richtung Westen vor Schönhauser Allee	CS; 11158,15739 11086,157
 Stargarder Str. Richtung Osten vor Pappelallee	CS; 11086,15772 11158,15739 11290,15669
 #: note ^^^
 # 
-#: note: 2025-12-29 + 2026-02-11 + 2026-03-15 noch nicht eingeschaltet gewesen
+#: note: 2025-12-29 + 2026-02-11 + 2026-03-15 + 2026-03-21 noch nicht eingeschaltet gewesen
 Schönhauser Allee Richtung Norden vor Stargarder Str.	CS; 10925,15581 10941,15697 10953,15787
 # 
 Invalidenstr. Richtung Osten vor Scharnhorststr.	CS; 8358,13562 8453,13611
@@ -1171,8 +1173,8 @@ Bus M27	busroute_N 10815,18074 10900,18113 10970,18164 10993,18203
 Bus 125	busroute_N 7335,18257 7507,18372 7593,18433 7676,18492 7861,18333 7954,18251 8061,18159 8116,18115 8135,18028 8152,17936 8181,17752 8206,17594 8226,17479 8231,17431 8185,17352 8154,17301 8123,17255 8088,17218 8055,17179 7970,17087
 # REMOVED --- Bus 126	busroute_N 7970,17087 7926,17050 7841,16966 7745,16889 7672,16878
 Bus 122	busroute_N 6377,17854 6383,18033 6403,18289 6418,18491 6432,18682
-Bus 122	busroute_N 5225,18070 5536,18234 5860,18400 6060,18534 6153,18592 6217,18619 6296,18638 6306,18673 6314,18705
-Bus 122	busroute_N 5068,17384 4914,17399 4901,17341 4891,17289 4997,17241
+Bus 122	busroute_N 5225,18070 5536,18234 5860,18400 6060,18534 6153,18592 6217,18619 6286,18651 6306,18673 6314,18705
+Bus 122	busroute_N 5051,17410 5017,17415 4914,17399 4901,17341 4891,17289 4989,17245
 Bus 124	busroute_N 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 Bus 125	busroute_N 4320,17805 4370,18039 4414,18243 4291,18264 4182,18288 4094,18307 4009,18322 3909,18342 3876,18348 3733,18376 3738,18573 3731,18601 3713,18621 3562,18712 3680,18913 3700,18965
 Bus 322	busroute_N 4228,19024 4190,19048 4138,19015 3909,19002 3810,19133 3546,19477
@@ -1805,13 +1807,13 @@ nicht ausgeschildert, hinter dem Netto links abbiegen	CP; 5429,19165 5476,19450 
 nicht ausgeschildert, vor dem Netto links abbiegen	CP; 5495,19571 5486,19515 5476,19450 5398,19463
 # 
 nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz rechts abbiegen	CP; 5198,17433 5109,17507 5121,17559
-nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz links abbiegen	CP; 5198,17433 5109,17507 5068,17384
+nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz links abbiegen	CP; 5198,17433 5109,17507 5051,17410
 nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz rechts abbiegen	CP; 5121,17559 5109,17507 5034,17535
 nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz links abbiegen	CP; 5121,17559 5109,17507 5198,17433
-nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz rechts abbiegen	CP; 5034,17535 5109,17507 5068,17384
+nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz rechts abbiegen	CP; 5034,17535 5109,17507 5051,17410
 nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz links abbiegen	CP; 5034,17535 5109,17507 5121,17559
-nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz rechts abbiegen	CP; 5068,17384 5109,17507 5198,17433
-nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz links abbiegen	CP; 5068,17384 5109,17507 5034,17535
+nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz rechts abbiegen	CP; 5051,17410 5109,17507 5198,17433
+nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz links abbiegen	CP; 5051,17410 5109,17507 5034,17535
 # 
 ausgeschildert mit einem blauen Schild "Krumme Straße"	CP2; 22168,-487 22167,-471
 # 
@@ -2154,7 +2156,7 @@ bereits vor der Einmündung als "Neheimer Str." ausgeschildert	CP2; 1735,19045 1
 Lichtenberger Str. [Wohngebiet]: nicht ausgeschildert	CP2; 11947,12494 11867,12284
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-03-08 (daf)
+#: last_checked: 2026-03-15 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2027-06-30
 Friedenauer Höhe: nicht ausgeschildert	CS 6293,7875 6263,7894 6178,7899 6126,7917 6011,7911 5810,7883
@@ -2230,7 +2232,7 @@ Neben dem Dorfteich: nicht ausgeschildert	CS 17757,18991 17748,18956 17766,18949
 # 
 Hegelplatz: nicht ausgeschildert	CS 9681,12601 9673,12661
 # 
-Merkurstr.: nicht ausgeschildert	CP2; 4762,17484 4737,17385
+Merkurstr.: nicht ausgeschildert	CP2; 4762,17484 4753,17446
 # 
 Stellerweg: erst einige Meter nach Beginn des Weges ausgeschildert	CP2; 14790,14656 14608,14701
 # 

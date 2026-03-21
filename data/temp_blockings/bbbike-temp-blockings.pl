@@ -18176,7 +18176,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015512',
        data  => <<EOF,
-	q4::inwork; 8179,18756 8066,18754 7886,18742 7843,18705
+	q4::inwork; 8179,18756 8066,18754 7875,18741 7843,18705
 EOF
      },
      { from  => 1270987200, # 2010-04-11 14:00
@@ -22476,7 +22476,8 @@ EOF
 #      text  => 'Kiautschoustr.: Bauarbeiten an der Tegeler Str., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Kiautschoustr.: Bauarbeiten zwischen Tegeler Str. und Samoastr., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
 #      text  => 'Tegeler Str.: Leitungsarbeiten zwischen Triftstr. und Sprengelstr., Fahrbahn gesperrt, außerdem Bauarbeiten in der Kiautschoustr. zwischen Tegeler Str. und Samoastr., voraussichtlich bis Mitte Januar 2026',
-       text  => 'Tegeler Str.: Leitungsarbeiten zwischen Triftstr. und Sprengelstr., Fahrbahn gesperrt, voraussichtlich bis Mitte Januar 2026',
+#      text  => 'Tegeler Str.: Leitungsarbeiten zwischen Triftstr. und Sprengelstr., Fahrbahn gesperrt, voraussichtlich bis Mitte Januar 2026',
+       text  => 'Tegeler Str.: Bauarbeiten an der Triftstr., kurzer Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
@@ -22493,12 +22494,15 @@ EOF
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
 #: also_indoor: traffic (re-ex-re-G,ex-H,ex-A,ex-W,T)
-#: last_checked: 2026-03-19 (traffic)
+#: osm_watch: note 5212713 1
+#: add_fragezeichen: Besteht die Baustelle noch immer?
+#: last_checked: 2026-03-21
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
-Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q4::inwork 7085,15226 7131,15109
+#: note: da nur ein kurzer Abschnitt gesperrt ist: q4 -> q3
+Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q3::inwork 7085,15226 7131,15109
 # REMOVED (keine Sperrung mehr) --- #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet? --- #: source_id: LMS-BR:392919/72 viz2021:13.355108,52.540463, (bis 31.03.2026) (bis 30.04.2026) --- #: also_indoor: traffic (re-T,G) --- #: last_checked: 2025-12-16 (traffic) --- #: check_frequency: 60d --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) --- Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
 EOF
      },
@@ -35709,7 +35713,7 @@ Heinz-Galinski-Str.	2::bomb 8161,16752 8082,16483 8093,16438
 Exerzierstr.	2::bomb 8093,16438 8166,16454 8307,16434 8436,16415
 Schwedenstr.	2::bomb 8486,16425 8249,16741 8197,16809 8127,16894
 Tromsöer Str.	2::bomb 8197,16809 8243,16889
-Uferstr. (Gesundbrunnen)	2::bomb 8346,16283 8420,16365
+Uferstr. (Gesundbrunnen)	2::bomb 8346,16283 8446,16386
 Reinickendorfer Str.	2::bomb 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769
 Seestr. (Wedding, Charlottenburg-Nord, Moabit)	2::bomb 7681,16769 7606,16746
 Louise-Schroeder-Platz	2::bomb 7681,16769 7672,16834 7666,16879
@@ -36405,7 +36409,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.374637,52.551773,09.03.2022,07:01', # bis 15.12.2023 # inaktiv
        data  => <<EOF,
-	q4::inwork 8194,15960 8245,16064 8346,16283 8420,16365
+	q4::inwork 8194,15960 8245,16064 8346,16283 8446,16386
 EOF
      },
      { from  => $isodate2epoch->("2025-11-17 00:00:00"), # $isodate2epoch->("2025-04-06 00:00:00"), # 1645513200, # 2022-02-22 08:00
@@ -38081,7 +38085,7 @@ EOF
 #: last_checked: 2026-03-02 (az-lichtenrade) vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
-#: next_check: 2026-04-07 (Briesingstr. nicht mehr Einbahnstraße?)
+#: next_check: 2026-04-07 (Briesingstr. nicht mehr Einbahnstraße?) vvv
 # REMOVED --- #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
 # REMOVED (laut az-lichtenrade mittlerweile in beide Richtungen befahrbar) --- #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung --- Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
@@ -38785,11 +38789,11 @@ EOF
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
 #	3nocross::ignrte 6437,18958 6435,18839 6432,18682
 Roedernallee -> Veltener Str., Kienhorstpark	3::inwork 6432,18682 6435,18839 6360,18861
-Roedernallee -> Alt-Reinickendorf	3::inwork 6437,18958 6435,18839 6528,18808
-Alt-Reinickendorf -> Roedernallee	3::inwork 6528,18808 6435,18839 6432,18682
-Alt-Reinickendorf -> Veltener Str., Kienhorstpark	3::inwork 6528,18808 6435,18839 6360,18861
+Roedernallee -> Alt-Reinickendorf	3::inwork 6437,18958 6435,18839 6496,18819 6528,18808
+Alt-Reinickendorf -> Roedernallee	3::inwork 6528,18808 6496,18819 6435,18839 6432,18682
+Alt-Reinickendorf -> Veltener Str., Kienhorstpark	3::inwork 6528,18808 6496,18819 6435,18839 6360,18861
 Veltener Str., Kienhorstpark -> Roedernallee	3::inwork 6360,18861 6435,18839 6437,18958
-Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,18839 6528,18808
+Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,18839 6496,18819 6528,18808
 EOF
      },
      { from  => undef, # 
@@ -42118,7 +42122,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="28"
-#: last_checked: 2026-03-16
+#: last_checked: 2026-03-21
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -42676,9 +42680,9 @@ EOF
 #: osm_watch: way id="279580369" version="9"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2025-09-03
+#: last_checked: 2026-03-21
 #: check_frequency: 120d
-#: next_check: 2026-10-01
+#: next_check: 2026-12-01 (berliner-zeitung (Ende 2026))
 	q3::inwork 4335,17642 4392,17777
 EOF
      },
@@ -44220,7 +44224,7 @@ EOF
 # REMOVED --- Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
 # REMOVED --- # REMOVED --- #: add_fragezeichen ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: https://www.gesobau.de/wohnungsbau/wiesenstrasse-reinickendorfer-strasse/ (bis Herbst 2026)
-#: osm_watch: way id="120633718" version="35"
+#: osm_watch: way id="120633718" version="36"
 #: osm_watch: way id="1273476153" version="2"
 #: also_indoor: traffic (G,no-T,no-H,W) vvv
 #: note: eigentlich 1s:q3
@@ -46640,9 +46644,14 @@ EOF
 #: by: https://www.erkner.de/rathaus-und-buergerservice/buergerinformationen/aktuelles/neuigkeiten/2025-1/ausbau-der-friedrichstrasse-beginnt.html (bis voraussichtlich Oktober 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~11-12-2025-l30-erkner-verzoegerung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-01-2026-l30-erkner-weitere-baumbegutachtungen
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-03-2026-l30-start-zweiter-bauabschnitt-friedrichstrasse (Bauzustand ändert sich am 23.3.2026)
+#: by: https://www.erkner.de/rathaus-und-buergerservice/buergerinformationen/aktuelles/neuigkeiten/2026-1/l-30-start-des-zweiten-bauabschnitts.html
+#: osm_watch: note 4705333 2
 #: osm_watch: way id="336698811" version="9"
+#: next_check: 2026-03-22 (ls.brandenburg: Änderung des Bauzustands)
 Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 #: osm_watch: way id="5057517" version="22"
+#: next_check: 2026-04-01 (ls.brandenburg: Änderung des Bauzustands)
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 EOF
      },
@@ -50173,7 +50182,7 @@ EOF
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
-#: last_checked: 2026-03-02
+#: last_checked: 2026-03-21
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 # REMOVED --- #: next_check: 2026-02-28 (strabag)
 #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung, Halteverbotsschilder)
@@ -51146,14 +51155,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Uferstr.: Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten möglich (Stand Februar 2026: keine Bauarbeiten)',
+       text  => 'Uferstr.: Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten möglich (Stand März 2026: keine Bauarbeiten)',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: UFER-2025
-#: last_checked: 2026-02-11
+#: last_checked: 2026-03-21
 #: check_frequency: 30d
 #: next_check: 2026-06-30 (infravelo)
-# REMOVED (hier fertig) ---	q4::inwork 8420,16365 8346,16283 8245,16064
+# REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
 	q4::inwork 8245,16064 8194,15960 8140,15859
 EOF
      },
@@ -51253,7 +51262,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 8
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-16 (Asphaltierungsarbeiten, mögliche baldige Freigabe)
+#: last_checked: 2026-03-20 (mapillary) (Asphaltierungsarbeiten, fast fertig)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -51859,14 +51868,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1774100890, # undef, # XXX
        text  => 'Togostr.: Bauarbeiten in Höhe Otawistr., Ausweichen auf Bürgersteig/alten Radweg notwendig, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: TOGO-2025
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Kann die Fahrbahn benutzt werden?
-#: last_checked: 2026-02-11
-#: check_frequency: 21d
+# REMOVED (Fahrbahn ist weitgehend offen) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Kann die Fahrbahn benutzt werden? --- #: last_checked: 2026-02-11 --- #: check_frequency: 21d
 	q3::inwork; 5906,16403 5700,16584
 EOF
      },
@@ -52267,6 +52274,36 @@ EOF
 #: by: https://www.berlin.de/events/2991117-2229501-britzer-baumbluete.html
 #: by: https://www.wollenschlaeger-berlin.de/67-britzer-baumbluete/ (70. Britzer Baumblüte)
 	2::temp 13098,4452 13225,4495 13266,4507
+EOF
+     },
+     { from  => 1774735200, # 2026-03-28 23:00
+       until => 1796079599, # 2026-11-30 23:59
+       text  => 'Schlieben: Neubau der Brücke über den Mühlengraben, Sperrung vom 30. März 2026 bis voraussichtlich November 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-03-2026-l68_schlieben-neubau-bruecke-muehlengraben
+#: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2068%20Schlieben%20Neubau%20der%20Br%C3%BCcke%20%C3%BCber%20den%20M%C3%BChlengraben_Karte%20PM%2017-03-26.pdf
+	2::inwork 10811,-77411 10980,-77816
+EOF
+     },
+     { from  => 1774735200, # 2026-03-28 23:00
+       until => 1782856799, # 2026-06-30 23:59
+       text  => 'Altenhof: Bauarbeiten, Sperrung, ab 30. März 2026 bis Ende Juni 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-03-2026-l238-deckenerneuerung-altenhof
+#: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%20238%20Altenhof%20-%20KP%20L%2023%20Baubeginn%20Deckenerneuerung_Karte%2013-03-26.pdf
+#: note: 1. BA bis 10.04.2026
+#: next_check: 2026-04-10 vvv
+	2::inwork 30158,56695 30049,56674 30146,56367
+	q4::inwork 30146,56367 30225,55956
+# note: 2. BA vom 13.04.2026 bis 24.04.2026
+#	q4::inwork 30158,56695 30396,56665 30488,56704 30720,56827 30806,56904
+# note: 3. BA vom 27. April bis zum 13. Mai 2026
+#	q4::inwork 30806,56904 31008,57090 31114,57242 31247,57341 31587,57581 31722,57984
+# note: 4. BA vom 18. Mai bis Ende Juni 2026
+#	2::inwork 31722,57984 31872,58453 31863,59127 31968,59333 32207,59713 32638,60246 32783,60359 32855,60461 32848,60794 33037,60947 33171,61270 33118,61738 33172,61951 33219,61981
+#: next_check ^^^
 EOF
      },
     );

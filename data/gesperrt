@@ -225,7 +225,7 @@ Spilstr.	1 3865,6758 3826,6656 3836,6550
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10219,13102
 Duisburger Str.	1 4183,10144 3880,10154
-Straße 462	1 4914,17399 5068,17384
+Straße 462	1 4914,17399 5017,17415 5051,17410
 Havensteinstr.	1 6293,2583 6468,2720 6592,2827
 Worpsweder Str.	1 6182,4931 6202,5163
 Wilseder Str.	1 6295,5158 6276,4915
@@ -1475,13 +1475,14 @@ Märkische Allee -> Basdorfer Str.: Mittelstreifen	3::igndisp 19988,16039 19880,1
 Basdorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 20102,15709 19880,15818 19809,15676
 Mittelstreifen	3nocross::ignrte 21108,11628 21251,11560 21275,11547 21311,11528
 Alt-Biesdorf -> Walsheimer Str.: Mittelstreifen	3::igndisp 21108,11628 21251,11560 21352,11701
-Mittelstreifen	3nocross::ignrte 4704,17101 4931,17174 4997,17241
+Mittelstreifen	3nocross::ignrte 4704,17101 4931,17174 4989,17245
 Charles-Corcelle-Ring -> Kurt-Schumacher-Damm: Mittelstreifen	3::igndisp 4952,17122 4931,17174 4704,17101
 Charles-Corcelle-Ring -> Str. 455: Mittelstreifen	3::igndisp 4952,17122 4931,17174 4916,17201
-Kurt-Schumacher-Damm -> Charles-Corcelle-Ring: Mittelstreifen	3::igndisp 4997,17241 4931,17174 4952,17122
+Kurt-Schumacher-Damm -> Charles-Corcelle-Ring: Mittelstreifen	3::igndisp 4989,17245 4931,17174 4952,17122
 Kurt-Schumacher-Damm -> Str. 455: Mittelstreifen	3::igndisp 4704,17101 4931,17174 4916,17201
 Str. 455 -> Charles-Corcelle-Ring: Mittelstreifen	3::igndisp 4916,17201 4931,17174 4952,17122
-Str. 455 -> Kurt-Schumacher-Damm: Mittelstreifen	3::igndisp 4916,17201 4931,17174 4997,17241
+Str. 455 -> Kurt-Schumacher-Damm: Mittelstreifen	3::igndisp 4916,17201 4931,17174 4989,17245
+Mittelstreifen	3nocross::ignrte 5046,17396 5051,17410 5109,17507
 Mittelstreifen	3nocross::ignrte 14788,3441 14822,3409 14994,3245
 Rudower Str. -> Grasmückenweg: Mittelstreifen	3::igndisp 14788,3441 14822,3409 14877,3475
 Grasmückenweg -> Rudower Str.: Mittelstreifen	3::igndisp 14877,3475 14822,3409 14994,3245
@@ -3643,7 +3644,6 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
-Klixstr.: Einbahnstraße Richtung Norden	1s:inwork 3871,18144 3833,17929
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550

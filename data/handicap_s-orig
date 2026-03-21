@@ -10,6 +10,10 @@
 # 
 ### Friedrichshain ###
 # 
+#: last_checked: 2026-03-21
+#: check_frequency: 10d
+Gubener Str.: Fahrbahn gesperrt, Baustellenfl‰che	q3::inwork 13352,12003 13339,12029 13326,12056
+# 
 # REMOVED --- #: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025) (inaktiv)
 # REMOVED --- #: last_checked: 2025-09-10
 # REMOVED --- #: next_check: 2025-09-12
@@ -56,7 +60,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-03-14 (osm) vvv
+#: last_checked: 2026-03-21 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="13"
@@ -346,7 +350,7 @@ Torfstr.: Bauarbeiten: Abschnitt der Fahrbahn gesperrt	q3::inwork 6849,14831 683
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="3"
-#: last_checked: 2026-02-11
+#: last_checked: 2026-03-21
 #: check_frequency: 120d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
@@ -356,7 +360,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 #: by: https://www.entwicklungsstadt.de/forschung-lehre-zukunft-bht-eroeffnet-laborneubau-wal-in-wedding/
 # REMOVED --- #: osm_watch: way id="885130938" version="7"
-#: last_checked: 2026-02-11
+#: last_checked: 2026-03-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -812,7 +816,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: next_check_id: WESTUMFAHRUNGBAHNHOF-2023
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: way id="24695200" version="19"
-#: last_checked: 2026-03-11
+#: last_checked: 2026-03-14 (architektur-urbanistik)
 #: check_frequency: 120d
 H‰mmerlingstr. - Alte Fˆrsterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
@@ -1266,7 +1270,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-03-08 (daf) vvv
+#: last_checked: 2026-03-15 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Hˆhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1292,7 +1296,7 @@ Friedenauer Hˆhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 #: osm_watch: note 5163520 2
 #: add_fragezeichen: Ist die Fahrbahn wegen der Hochbauarbeiten weiterhin gesperrt?
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-21
 #: check_frequency: 90d
 Erich-Boltze-Str., Verl‰ngerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
 # 
@@ -2226,7 +2230,8 @@ Gropiusstr.: Fuﬂg‰nger auf dem Uferweg	q1 8389,16214 8534,16355 8543,16364
 Pankeweg: Fuﬂg‰nger	q1 8286,14635 8322,14687 8292,14734 8275,14869 8262,14910
 Pankeweg: Fuﬂg‰nger	q1 8262,14910 8245,15004 8266,15134
 Pankeweg: Fuﬂg‰nger	q1 8232,15220 8268,15312
-Pankeweg: Fuﬂg‰nger	q1 8312,15470 8156,15614 8176,15635 8150,15700 8164,15840 8250,16008 8270,16047 8330,16160 8389,16214
+#: note: Radfahren nicht erlaubt
+Pankeweg: Fuﬂg‰nger	q3 8312,15470 8156,15614 8176,15635 8150,15700 8164,15840 8250,16008 8270,16047 8330,16160 8389,16214
 Pankeweg: Fuﬂg‰nger, eng	q2 8486,16425 8522,16458 8573,16443 8592,16436
 Pankeweg: Fuﬂg‰nger	q1 8592,16436 8688,16533
 Pankeweg: Fuﬂg‰nger	q2 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9128,17455 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9110,17784 9147,17941
@@ -5180,7 +5185,8 @@ Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 76
 #: note: Zobeltitzstraﬂe (Rosengarten)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_04_0213_0280_online.pdf (Teileinziehung von Straﬂenland)
 #: XXX Werden hier durch die Teileinziehung explizite Radfahren-verboten-Schilder aufgestellt?
-#: last_checked: 2026-01-23 (Amtsblatt)
+#: XXX zurzeit wird die Parkanlage umgestaltet)
+#: last_checked: 2026-03-21
 Zobeltitzstr.: einige Fuﬂg‰nger	q2 4370,18039 4492,18013
 # 
 #: note: Gr¸nanlagen-Schild ohne Zusatzschilder
@@ -6920,7 +6926,8 @@ Stadtilmer Weg: enge Straﬂe	q1 6515,1010 6495,915 6592,882 6779,816 6841,793
 #: by: ^^^
 #: by: JP (fortgump) vvv
 L¸bener Weg: enge Straﬂe	q1 6403,18289 6353,18292 6314,18295 6227,18299 6131,18302 6045,18305
-Brusebergstr.: enge Straﬂe	q1 6060,18534 6045,18305 6086,18162 6115,18042 6145,18016 6307,18039 6383,18033
+#: corrected_by: srt/policy (q1 -> q0-)
+Brusebergstr.: enge Straﬂe	q0- 6060,18534 6045,18305 6086,18162 6115,18042 6145,18016 6307,18039 6383,18033
 #: by: ^^^
 # REMOVED --- #: by: Jonas Laehnemann: --- Hoffbauerpfad: schmaler Pfad	q2 214,969 333,1104
 #: by: Juli (cellicatissimo...)
