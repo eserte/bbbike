@@ -149,7 +149,7 @@ for my $url (@urls) {
 		);
 		ok $resp->{success}, "successful fetch with $ua_string"
 		    or diag explain $resp;
-		my $content_encoding = $resp->{headers}{'content-encoding'} // '';
+		my $content_encoding = $resp->{headers}{'content-encoding'}; $content_encoding = '' if !defined $content_encoding;
 		if ($should_compress) {
 		    isnt $content_encoding, '',
 			"Got non-empty content-encoding '$content_encoding' for UA '$ua_string'";
