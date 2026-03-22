@@ -3,19 +3,18 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2014,2016,2017,2021,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2014,2016,2017,2021,2022,2023,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.14';
+$VERSION = '1.15';
 
 use Scalar::Util qw(openhandle);
 
@@ -187,15 +186,19 @@ sub load_gpx {
 
     my $creator = $twig->root->{att}->{'creator'};
     my $gps_device;
-    if (defined $creator && $creator =~ m{^( etrex
-					  |  montana
-					  |  oregon
-					  |  monterra
-					  |  dakota
-					  |  colorado
-					  |  gpsmap
-					  )}ix) { # heuristics: looks like a GPS device (see also: https://en.wikipedia.org/wiki/List_of_Garmin_products)
-	$gps_device = $creator;
+    if (defined $creator) {
+	if ($creator =~ m{^( etrex
+			  |  montana
+			  |  oregon
+			  |  monterra
+			  |  dakota
+			  |  colorado
+			  |  gpsmap
+			  )}ix) { # heuristics: looks like a GPS device (see also: https://en.wikipedia.org/wiki/List_of_Garmin_products)
+	    $gps_device = $creator;
+	} elsif ($creator =~ m{^Guru Maps/}) {
+	    $gps_device = 'Guru Maps'; # may be an iOS or Android device
+	}
     }
 
     my $garmin_userdef_symbols_set;

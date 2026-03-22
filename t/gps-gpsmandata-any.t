@@ -29,7 +29,7 @@ use IO::File qw();
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 101;
+plan tests => 103;
 
 use GPS::GpsmanData::Any;
 
@@ -461,6 +461,54 @@ EOF
 	}
 	eq_or_diff $gpsman, $expected_gpsman, "expected " . ($guess_device ? "with" : "without") . " srt:device line";
     }
+}
+
+{
+    # Test case here: gpx file created with a smartphone app
+    my $sample_trk_gpx = <<'EOF';
+<?xml version="1.0" encoding="utf-8"?>
+<gpx version="1.1" creator="Guru Maps/6.0.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gom="https://gurumaps.app/gpx/v3" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd https://gurumaps.app/gpx/v3 https://gurumaps.app/gpx/v3/schema.xsd">
+ <trk>
+  <name>pedes Rummelsburger Bucht</name>
+  <type>TrackStyle_2196F3C8</type>
+  <extensions>
+   <gom:time>2026-03-22T13:24:24.513Z</gom:time>
+   <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+    <color>2196F3</color>
+   </line>
+  </extensions>
+  <trkseg>
+   <trkpt lat="52.4958430841" lon="13.4804822303"><ele>33.821</ele><time>2026-03-22T14:01:22.001Z</time><hdop>11.875</hdop><vdop>6.312</vdop><extensions><gom:speed>0.0</gom:speed><gom:course>255.617</gom:course><gom:rel_alt>-3.688</gom:rel_alt></extensions></trkpt>
+   <trkpt lat="52.4958517594" lon="13.4804815597"><ele>33.814</ele><time>2026-03-22T14:01:23.001Z</time><hdop>12.25</hdop><vdop>6.5</vdop><extensions><gom:speed>0.0</gom:speed><gom:course>255.617</gom:course><gom:rel_alt>-3.688</gom:rel_alt></extensions></trkpt>
+   <trkpt lat="52.4958517594" lon="13.4804815597"><ele>33.814</ele><time>2026-03-22T14:01:24.001Z</time><hdop>12.125</hdop><vdop>6.437</vdop><extensions><gom:speed>0.0</gom:speed><gom:course>255.617</gom:course><gom:rel_alt>-3.693</gom:rel_alt></extensions></trkpt>
+  </trkseg>
+ </trk>
+</gpx>
+EOF
+    $sample_trk_gpx =~ s{\n\z}{}; # no EOL at end of file
+    $sample_trk_gpx =~ s{\n}{\r\n}g; # yes, DOS newlines
+
+    my $expected_gpsman = <<'EOF';
+!Format: DDD 0 WGS 84
+!Creation: no
+
+!T:	pedes Rummelsburger Bucht	srt:device=Guru Maps
+	22-Mar-2026 14:01:22	N52.4958430841	E13.4804822303	~33.821
+	22-Mar-2026 14:01:23	N52.4958517594	E13.4804815597	~33.814
+	22-Mar-2026 14:01:24	N52.4958517594	E13.4804815597	~33.814
+EOF
+    my $tmpfile = _create_temporary_gpx($sample_trk_gpx);
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+	my $gpsman = $gps->as_string;
+	$gpsman =~ s{^% Written by.*\n\n}{};
+	# XXX hash randomization artefact in !T line
+	$gpsman =~ s{\tcolour=}{};
+	$gpsman =~ s{colour=\t}{};
+	eq_or_diff $gpsman, $expected_gpsman, 'Roundtrip check for gpx file generated with smartphone app';
+    }
+
 }
 
 sub _create_temporary_gpx {
