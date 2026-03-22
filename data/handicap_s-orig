@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2026-03-21
+#: last_checked: 2026-03-22
 #: check_frequency: 10d
 Gubener Str.: Fahrbahn gesperrt, Baustellenfläche	q3::inwork 13352,12003 13339,12029 13326,12056
 # 
@@ -32,7 +32,7 @@ Gubener Str.: Fahrbahn gesperrt, Baustellenfläche	q3::inwork 13352,12003 13339,1
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-03-20
+#: last_checked: 2026-03-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -132,7 +132,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-03-19 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -172,7 +172,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # REMOVED (wieder offen) --- #: last_checked: 2020-03-30 --- Lange Str.: Bauarbeiten, kurze Einbahnstraßenregelung	q2::inwork; 12413,11901 12238,11931
-# REMOVED (weitgehend wiederhergestellt) --- #: next_check_id: KAUFHOF-2018 --- #: XXX bis wann gehen die Bauarbeiten? --- #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren --- #: last_checked: 2021-04-09 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2021-03-01 --- Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
+# REMOVED (weitgehend wiederhergestellt) --- #: next_check_id: KAUFHOF-2018 --- #: XXX bis wann gehen die Bauarbeiten? --- #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren --- #: last_checked: 2021-04-09 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2021-03-01 --- Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12476,11864 12413,11901
 # REMOVED (beendet) --- #: XXX_prog BS (östliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (beendet) --- #: next_check_id: KAUFHOF-2018 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/fassade-am-buerohochhaus-am-ostbahnhof-ist-fast-fertig_a279073 (bis Frühjahr 2021) --- #: note: laut fritz bis Ende 2020 --- #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+) --- #: also_indoor: traffic (G) --- #: last_checked: 2021-01-25 --- #: check_frequency: 30d --- #: next_check: 2021-03-01 --- Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12558,11920 12617,11888
 # REMOVED --- #: XXX vermutlich wird der Zebrastreifen nördlich der Kreuzung "verstetigt" --- #: source_id: 2147346517 (bis 6.11.2020) --- #: source_id: LMS-BR_r_LMS-BR_221528_LMS-BR_72 (bis 18.12.2020) (inaktiv) --- #: priority: #B --- #: last_checked: 2020-12-15 vvv --- #: check_frequency: 14d vvv
@@ -437,14 +437,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED (mittlerweile wieder Führung via Fahrbahn trotz nicht ganz abgeschlossener Baustelle) --- #: source_id: viz2021:13.414995,52.527328,22.05.2023,06:00 (bis 09.06.2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1660510235155484672#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndldEE0b1dBQVU0VmE2LmpwZw== --- #: next_check: 2023-06-09 --- #: valid: -20230609 --- Mollstr.: Fahrbahnsanierungsarbeiten, Radfahrer werden über den Gehweg geführt	q1-::inwork; 11160,13492 11216,13451 11270,13412 11276,13408
 # REMOVED (fertig) --- #: by: https://www.deutsches-architekturforum.de/thread/14788-band-des-bundes-spreebogenpark-und-reichstag/?postID=737430#post737430 --- #: XXX evtl. wird die Straße nach den Bauarbeiten nicht mehr gepflastert sein -> ja, es ist schon asphaltiert (bereits eingetragen, bis auf die Stichstraße) --- #: last_checked: 2023-04-06 --- #: check_frequency: 30d --- Elisabeth-Abegg-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 7930,12912 7858,12830 7789,12764
 # REMOVED (nicht mehr) --- #: next_check_id: MOLKENMARKT-2021 --- #: next_check_id: STRALAUER-2023 --- #: source_id: viz2021:13.412245,52.51585,02.11.2022,08:00 (bis 30.09.2023) --- #: last_checked: 2023-08-11 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2023-09-30 vvv --- # REMOVED (hier nicht mehr) --- Stralauer Str.: Radweg auf schmalen Bürgersteig	q1::inwork; 11139,12243 11094,12243 10951,12249 --- Stralauer Str.: Radweg auf schmalen Bürgersteig	q2::inwork; 10951,12249 10830,12279 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-# REMOVED (mittlerweile auch tagsüber offen, gesehen 2024-03-22 (Fri) mittags --- #: next_check_id: MOLKENMARKT-2021 --- #: note: wobei die Absperrungen offen sein können (außerhalb der Arbeitszeiten?) --- #: last_checked: 2024-03-22 (webcam) vvv --- #: check_frequency: 14d vvv
-# REMOVED --- #: XXX nach Fertigstellung des Molkenmarkts entfernen
-# REMOVED --- Grunerstr.: Gehweg	q3 10973,12611 11057,12715
-# REMOVED --- Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611
-# REMOVED --- Grunerstr.: verschwenkter Radweg	q2 10931,12622 10954,12604 10973,12611
-# REMOVED --- Klosterstr.: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q3::inwork 10947,12457 10900,12546 10873,12577 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
+# REMOVED (mittlerweile auch tagsüber offen, gesehen 2024-03-22 (Fri) mittags --- #: next_check_id: MOLKENMARKT-2021 --- #: note: wobei die Absperrungen offen sein können (außerhalb der Arbeitszeiten?) --- #: last_checked: 2024-03-22 (webcam) vvv --- #: check_frequency: 14d vvv --- #: XXX nach Fertigstellung des Molkenmarkts entfernen --- Grunerstr.: Gehweg	q3 10973,12611 11057,12715 --- Grunerstr.: Gehweg	q3 10900,12546 10929,12500 10913,12556 10973,12611 --- Grunerstr.: verschwenkter Radweg	q2 10931,12622 10954,12604 10973,12611 --- Klosterstr.: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q3::inwork 10947,12457 10900,12546 10873,12577 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (keine Einbahnstraße, sondern nur noch eine Gegenverkehrsregelung (wobei das Schild auf der westlichen Seite fehlt) --- #: XXX Bis wann gehen die Bauarbeiten? Auf der einen Seite Halteverbot bis 31.12.2023, auf der anderen Straßenseite bis 16.12.2022 --- #: osm_watch: way id="184632250" version="3" --- #: last_checked: 2022-11-30 --- #: next_check: 2022-12-31 --- Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 # REMOVED --- #: next_check_id: ROSENTHALER-2022 --- #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m --- #: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig --- #: by: https://berliner-abendblatt.de/2022/07/07/strassenbahn-bauarbeiten-einschraenkungen-ab-ende-juli/ (Gleisbauarbeiten im Anschluss? 11.7.2022-21.8.2022) --- #: by: https://viz.berlin.de/2022/07/verkehrsvorschau-11072022/ --- #: by: https://nitter.it/VIZ_Berlin/status/1546388826465001472#m --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvg-erneuert-tramgleise_a351479 (hier: "Der Autoverkehr bleibt bis zum 28. August eingeschränkt") --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rosenthaler-strasse-gesperrt_a352559 --- #: by: https://viz.berlin.de/2022/12/verkehrsvorschau-061222/ --- #: add_fragezeichen: Sind die Bauarbeiten in der Rosenthaler Straße und Gipsstraße beendet? vvv --- #: also_indoor: traffic (B) vvv --- #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv --- #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv) --- #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022) (bis 6.12.2022) (inaktiv) --- #: source_id: viz2021:13.402613,52.528076,06.12.2022,08:00 (bis 20.12.2022) (bis 15.3.2023) --- #: priority: #A --- #: last_checked: 2023-01-24 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2023-03-15 vvv --- Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10341,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -512,7 +505,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: by: http://www.deal-magazin.com/news/3/123294/Berlin-Naechste-Projektphase-fuer-das-Mehrreligionenhaus-House-of-One
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_33_2299_2354_online.pdf (Einziehung von benachbarten Flurstücken)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_46_3407_3446_online.pdf (Einziehung von Straßenland (danebenliegende Grundstücke))
-#: source_id: viz2021:13.40486,52.51353,27.04.2023,07:00 (Verengung in der Gertraudenstr., bis 31.03.2028)
+#: source_id: LMS-BR:306235/72 viz2021:13.40486,52.51353,27.04.2023,07:00 (Verengung in der Gertraudenstr., bis 31.03.2028)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
@@ -724,17 +717,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Niederschöneweide ###
 # 
-# REMOVED --- #: next_check_id: SCHOENEWEIDE-2018
-# REMOVED --- #: next_check_id: STERNDAMM-2023
-# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?)
-# REMOVED --- #: last_checked: 2025-07-02 vvv
-# REMOVED --- #: check_frequency: 30d vvv
-# REMOVED --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17845,5546 17765,5469
-# REMOVED --- # REMOVED Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17754,5460 17736,5441 17695,5394
-# REMOVED --- # REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17754,5460
-# REMOVED --- #: check_frequency ^^^
-# REMOVED --- #: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: SCHOENEWEIDE-2018 --- #: next_check_id: STERNDAMM-2023 --- #: by: https://www.bahninfo-forum.de/read.php?9,726524,794483#msg-794483 (voraussichtlich bis Juni 2024?) --- #: last_checked: 2025-07-02 vvv --- #: check_frequency: 30d vvv --- Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17886,5587 17845,5546 17765,5469 --- # REMOVED Sterndamm: Engstellen, Behinderungen möglich	q2::inwork; 17765,5469 17754,5460 17736,5441 17695,5394 --- # REMOVED (hier keine mehr) --- Sterndamm: Engstellen	q2::inwork; 17695,5394 17736,5441 17754,5460 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: SCHOENEWEIDE-2018 --- #: source_id: viz2021:13.510004,52.456491,22.02.2024,07:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024) --- #: by: https://www.bahninfo-forum.de/read.php?9,413132,802427#msg-802427 (Freigabe der Brückenstraße am 6.7.2024) --- #: note: Da der Königsplatz am 6.7.2024 weiterhin gesperrt sein wird, wird es hier erstmal keinen Straßenbahnverkehr geben. --- #: also_indoor: traffic (H,W) --- #: last_checked: 2024-08-05 (krickstadt) vvv --- #: next_check: 2024-08-16 vvv --- #: valid: -20240817 vvv --- Brückenstr.: Anbindung an Schnellerstraße/Michael-Brückner-Straße gesperrt	q3::inwork 17728,5756 17900,6072 --- #: XXX hier kann man möglicherweise mittlerweile illegal abkürzen --- Michael-Brückner-Str.: Umwege an der Einmündung Brückenstr.	q3::inwork; 17782,5698 17728,5756 17628,5865 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
@@ -1155,7 +1138,7 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-03-11
+#: last_checked: 2026-03-22
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1448,6 +1431,7 @@ Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für 
 # 
 #: temporary ^^^
 #: section ^^^
+# 
 ######################################################################
 #: section: permanente Einträge vvv
 # REMOVED (mittlerweile flacher) --- #: next_check_id: WUHLEWANDERWEG-2014 vvv --- #: by: https://api.fixmyberlin.de/api/projects/270 --- #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv --- #: last_checked: 2020-10-03 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2020-09-30 vvv --- Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 22031,12208 21995,12153 --- Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21995,12153 22031,12208 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
@@ -1838,8 +1822,9 @@ Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12878,12430 12950,12340
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12950,12340 12985,12303
 #: XXX_prog: zusätzlich noch Bordsteine an der östlichen Seite (BS) (ohne Bordstein früher q2)
 #: note: relativ breit, kann manchmal stehen hier viele Menschen, theoretisch wäre q3 möglich
-Lange Str. [vor dem ehemaligen Kaufhof]: Fußgänger, Bordstein	q4+ 12413,11901 12522,11837
+Lange Str. [vor dem ehemaligen Kaufhof]: Fußgänger, Bordstein	q4+ 12413,11901 12476,11864 12522,11837
 Hermann-Stöhr-Platz: Fußgänger	q2 12453,11790 12413,11901
+Hermann-Stöhr-Platz: Fußgänger	q2 12453,11790 12476,11864
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q3 7531,8848 7563,8871
 Martha-Ndumbe-Platz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
@@ -4390,7 +4375,8 @@ Wangenheimsteg: Bordstein, einige Fußgänger	q2 2585,9653 2628,9702
 Melli-Besse-Anlage: einige Fußgänger	q1 2628,9702 2664,9744
 #: note: Schild: gemeinsamer Rad- und Gehweg
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fußgänger, Restaurantbetrieb	q1 8295,13531 8290,13538 8224,13634
-(Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124 23113,11262
+# REMOVED --- (Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124
+(Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23102,11153 23113,11262
 # 
 #: note: Grünanlage, keine Zusatzschilder zur Radbenutzung vvv
 Volkspark Anton Saefkow: einige Fußgänger	q2 12620,14979 12632,14956 12639,14913 12592,14838

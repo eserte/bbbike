@@ -1047,9 +1047,9 @@ Lindenstr. (Straßenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 2
 #: source_id: viz2021:13.56657,52.45535,13.07.2023,17:06 (bis 15.07.2023) (inaktiv)
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022) (bis 15.7.2023) (bis 31.12.2023) (bis 31.12.2027) (bis 30.06.2027) (inaktiv)
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
-#: source_id: viz2021:13.56657,52.45535, (bis 31.12.2027)
+#: source_id: LMS-BR:263717/72 viz2021:13.56657,52.45535, (bis 31.12.2027)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2026-03-03 (mapillary) vvv
+#: last_checked: 2026-03-17 (luftbildsuche) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -4084,7 +4084,7 @@ Schwingtor	BNP:5::trailer=10 4183,13725
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
 #: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
-#: last_checked: 2026-03-19
+#: last_checked: 2026-03-22
 #: check_frequency: 21d
 #: next_check: 2026-08-22 (entwicklungsstadt)
 # REMOVED --- Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,11888
@@ -4285,7 +4285,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-03-20
+#: last_checked: 2026-03-22
 #: check_frequency: 120d
 #: next_check: 2026-05-31 (entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4405,17 +4405,6 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 # REMOVED --- #: check_frequency: 14d (traffic checks)
 # REMOVED --- Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 # 
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/kleinere-projekte-in-marzahn-hellersdorf.42/page-7#post-23307
-#: osm_watch: way id="1306238147" version="3"
-# REMOVED (Straßen wurden bei osm entfernt) --- #: osm_watch: way id="25795669" version="13"
-#: last_checked: 2025-10-25 vvv
-#: check_frequency: 180d vvv
-(Aldi/Rewe-Parkplatz): mit Bauzäunen abgesperrt, Neubau des Einkaufszentrums	2::inwork 23163,11113 23131,11124 23113,11262
-#: note: evtl. im Zusammenhang mit dem Neubau des Einkaufszentrums
-Rosenhagener Str.: Sperrung der Fahrbahn	2s:q4:inwork 23152,11065 23159,11097 23163,11113 23165,11123
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
 #: last_checked: 2025-04-19 (mapillary) vvv
 #: check_frequency: 360d vvv
 #: osm_watch: way id="741297435" version="11" brb
@@ -4451,7 +4440,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: next_check_id: KNOTENMARZAHN-2022
 #: osm_watch: way id="26244466" version="25"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
-#: source_id: viz2021:13.53642,52.53865, (bis 31.12.2026)
+#: source_id: LMS-BR:316070/72 viz2021:13.53642,52.53865, (bis 31.12.2026)
 #: last_checked: 2026-03-01 (luftbildsuche)
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
@@ -4515,7 +4504,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 1
-#: last_checked: 2026-03-15 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4532,7 +4521,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: next_check_id: VIRCHOW-2023
 #: XXX Nordufer (Wedding) in beiden Richtungen zwischen Eckernförder Platz und Föhrer Straße: wegen Baustelle gesperrt, vom 24.02.2024 00:00 bis 29.12.2028 23:59
 #: XXX Nordufer/Sylter Straße (Wedding) in beiden Richtungen zwischen Föhrer Straße und Westring: Baustelleneinrichtung, Vollsperrung für Kfz- und Rad- und Fußverkehr, vom 23.02.2024 07:00 bis 31.12.2028 17:00
-#: source_id: viz2021:13.33994,52.53982,24.02.2024,00:00 (bis 29.12.2028) (inaktiv) (bis 29.12.2028)
+#: source_id: LMS-BR:326104/72 viz2021:13.33994,52.53982,24.02.2024,00:00 (bis 29.12.2028) (inaktiv) (bis 29.12.2028)
 #: source_id: viz2021:13.340567,52.539671,23.02.2024,07:00 (bis 31.12.2028) (inaktiv)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20240223
 #: also_indoor: traffic (G,W)
@@ -4573,7 +4562,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-03-18 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-04-15 (Tsp, Fahrrat) vvv
 #: osm_watch: way id="1199463691" version="6"
@@ -4727,7 +4716,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-03-20
+#: last_checked: 2026-03-22
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4735,7 +4724,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-03-20 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5043,7 +5032,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2026-03-06
+#: last_checked: 2026-03-22
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5137,7 +5126,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-03-14 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5157,7 +5146,7 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/drei-neue-hochhauser-an-der-spree-langzeit-projekt-molecules-mit-neuem-konzept-13684222.html
 #: confirmed_by: srt
 # REMOVED (mehr als zwei Jahre kaputt) --- #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
-#: last_checked: 2026-03-10 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-06-30 (agromex website) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,10152 14373,10046
@@ -5716,9 +5705,9 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="49"
+#: osm_watch: way id="186329816" version="50"
 #: also_indoor: traffic
-#: last_checked: 2026-03-16 vvv
+#: last_checked: 2026-03-21 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230

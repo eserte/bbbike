@@ -2468,7 +2468,7 @@ Wasserweg: neu asphaltiert	Q0 16028,8867 16086,8860 16129,8855
 Wasserweg: neu asphaltiert	Q0 16129,8855 16201,8860
 Wasserweg: neu asphaltiert	Q0 16201,8860 16369,8836 16388,8821
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16490,8432 16534,8182
-Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q1 16534,8182 16602,7810 16620,7574 16633,7434
+Kiehnwerderallee: asphaltiert, Wurzelhebungen	Q1 16534,8182 16602,7810 16620,7574 16633,7434
 (Uferweg - Kiehnwerderallee): neu asphaltiert	Q0 16619,8606 16578,8586 16436,8687
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16657,8443 16490,8432
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16655,7572 16620,7574
@@ -3549,7 +3549,8 @@ Hohenbirker Weg: Beton	Q0 16195,6506 16283,6604
 Heidemühler Weg: sehr guter Beton	Q0 16304,6374 16195,6506
 Heidemühler Weg: Beton	Q0 16195,6506 16147,6545
 Dornbrunner Str.: Asphalt	Q0 16147,6545 16043,6414 15954,6297
-(Uferweg am Britzer Verbindungskanal): wassergebundene Decke, teilweise mit etwas Schotter	Q1 16425,6445 16275,6275 16263,6248 16098,6134 16065,6126 16049,6121
+(Uferweg am Britzer Verbindungskanal): wassergebundene Decke, teilweise mit etwas Schotter	Q1 16425,6445 16275,6275 16263,6248 16098,6134
+(Uferweg am Britzer Verbindungskanal): Verbundsteinpflaster	Q1 16098,6134 16065,6126 16049,6121
 (Breiter Weg - Südostallee/Sterndamm): rauer Asphalt	Q1 17538,5301 17601,5374
 Breiter Weg: Asphalt	Q0 17538,5301 17469,5289 17365,5271
 Breiter Weg: Asphalt mit einigen Schäden	Q1 17365,5271 17297,5260
@@ -7612,6 +7613,7 @@ Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 
 (entlang der Hedwigskathedrale): Pflasterung	Q2 9808,12182 9775,12178 9771,12190 9747,12205
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): wassergebundene Decke	Q1 12944,11760 13052,11867
 Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2 12453,11790 12413,11901
+Hermann-Stöhr-Platz: Gehwegpflasterung	Q0 12453,11790 12476,11864
 (Zur Alten Flussbadeanstalt - Bolleufer): Asphalt	Q0 16347,9594 16268,9670
 (Zur Alten Flussbadeanstalt - Bolleufer): Beton, teilweise Verbundsteinpflaster	Q0 16268,9670 16261,9663 16182,9591 16120,9653 16125,9678 16119,9689
 (Normannenstr. - Jobcenter Lichtenberg): Verbundsteinpflaster, Asphalt	Q1 16056,12317 16068,12376 16080,12441 16089,12522
@@ -10820,7 +10822,7 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q3 13953,9372 13923,9405
 An den Grachten: Verbundsteinpflaster	Q1 22191,11130 22181,11057 22172,10996 22169,10969 22166,10936 22132,10915
 Am Groen: Verbundsteinpflaster	Q1 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
 Am Groen: Verbundsteinpflaster	Q1 22131,11084 22137,11033 22146,10995
-(Aldi/Rewe-Parkplatz): Verbundsteinpflaster	Q1 23163,11113 23131,11124 23113,11262
+(Aldi/Rewe-Parkplatz): Verbundsteinpflaster	Q1 23102,11153 23113,11262
 Epensteinplatz: Gehwegplatten	Q1 8432,17798 8417,17790 8409,17774
 Weichselstr.: Asphalt	Q0 14926,12129 14888,11934
 (Crivitzer Str. - Woldegker Str./Rostocker Str.): Asphalt/glatte Pflasterung	Q1 17584,18551 17511,18636

@@ -366,7 +366,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-03-20 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1010,7 +1010,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.47336,52.51379,06.02.2023,06:00 (bis 24.02.2023) (inaktiv)
 #: source_id: viz2021:13.474048,52.513732,06.02.2023,06:00 (zwischen Jessnerstr. und Eisenbahnbrücke, bis 24.2.2023) (bis 27.2.2023) (inaktiv)
 #: source_id: viz2021:13.4633,52.51478,27.02.2023,10:00 (bis 21.04.2023) (inaktiv)
-#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023)
+#: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
 #: last_checked: 2026-03-07
@@ -1420,7 +1420,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-03-20 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
@@ -1713,7 +1713,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025; mittlerweile bis 31.12.2024
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
+#: source_id: LMS-BR:388766/72 viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
 #: last_checked: 2026-03-03
 #: check_frequency: 120d
 #: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
@@ -3287,7 +3287,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-03-20
+#: last_checked: 2026-03-22
 #: check_frequency: 90d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409 14641,10552
@@ -3308,10 +3308,10 @@ Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_222564
 #: source_id[inactive]: bvg2024:HIM_FREETEXT_247779
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026) (inaktiv)
-#: source_id: viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-03-20
+#: last_checked: 2026-03-22
 #: check_frequency: 90d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3357,8 +3357,8 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
-#: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-03-13
+#: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
+#: last_checked: 2026-03-22
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3368,8 +3368,8 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Gürtelstr./Neue Bahnhofstr., Richtung Norden
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
-#: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-03-13
+#: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
+#: last_checked: 2026-03-22
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4497,7 +4497,7 @@ Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
 # REMOVED (hier nicht, siehe https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1124786.php ) --- Gehweg für Radfahrer frei	RW1; 21569,5730 21600,5694 21605,5687 21623,5661 21706,5541 21789,5427
 Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2026-03-03 (mapillary)
+#: last_checked: 2026-03-17 (luftbildsuche)
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 #: XXX nach den Bauarbeiten wieder aktivieren: Gehweg für Radfahrer frei	RW1; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
@@ -7160,7 +7160,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
-#: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024)
+#: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
 #: last_checked: 2026-03-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
@@ -8341,10 +8341,10 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: bvg2024:m11#HIM_FREETEXT_293424 (kein Endedatum)
 #: source_id: adac:875632473 (bis 30.06.2026) (!) (neue ID -> inaktiv)
 #: source_id: adac:334221108 (bis 30.06.2026) (!) (neue ID -> inaktiv)
-#: source_id: viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026)
+#: source_id: LMS-BR:372746/72 viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026)
 #: source_id: viz2021:13.49537,52.43164, (Ampelanlage außer Betrieb, kein Endedatum) (inaktiv)
-#: source_id: viz2021:13.485714,52.424228, (bis 12.05.2026)
-#: source_id: viz2021:13.48561,52.42415, (bis 30.06.2026)
+#: source_id: LMS-BR:362451/72 viz2021:13.485714,52.424228, (bis 12.05.2026)
+#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892218755624718652 (nur Kfz-Verkehr erwähnt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/stubenrauchstrasse-in-rudow-nach-rohrbruch-gesperrt/ ("mehrere Monate", auf dem Bild scheint die Absperrung über die gesamte Fahrbahnbreite zu gehen, etwa 90m vor der Kanalstraße)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1894669757980254425 (bis 30.05.2025)
@@ -8684,7 +8684,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss voraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
-#: by: https://www.infravelo.de/projekt/danziger-strasse/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (mittlerweile bis 4. Quartal 2023) (bis 4. Quartal 2024) (4. Quartal 2020 - 3. Quartal 2025) (4. Quartal 2020 - 3. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/danziger-strasse/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (mittlerweile bis 4. Quartal 2023) (bis 4. Quartal 2024) (4. Quartal 2020 - 3. Quartal 2025) (4. Quartal 2020 - 3. Quartal 2026) (4. Quartal 2020 - 3. Quartal 2027)
 #: note: früher das infravelo-Projekt "danziger-strasse-1"
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
@@ -8702,7 +8702,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: last_checked: 2026-03-21 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-09-30 (infravelo) vvv
+#: next_check: 2027-09-30 (infravelo) vvv
 #: osm_watch: way id="335479077" version="24"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
@@ -9756,4 +9756,7 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 	RW7;RW7 18586,9172 18548,8942 18518,8778
 # 
 	RW7;RW7 13357,9313 13489,9456
+# 
+#: historical_note: Fahrradstraße seit 2025/2026
+	RW7;RW7 3425,4541 3501,4435 3557,4355 3587,4312 3643,4232
 # 

@@ -6973,7 +6973,8 @@ Steffenshagener Str.	N 22983,11098 23159,11097
 (Lidl-Parkplatz)	N 22982,11157 22994,11251 22996,11264
 Rosenhagener Str.	N 23132,11001 23152,11065 23159,11097 23163,11113 23165,11123
 #: osm.highway: service
-(Aldi/Rewe-Parkplatz)	N 23163,11113 23131,11124 23113,11262
+# REMOVED (Verbindung existiert seit den Umbauarbeiten 2025/2026 nicht mehr) --- (Aldi/Rewe-Parkplatz)	N 23163,11113 23131,11124
+(Aldi/Rewe-Parkplatz)	N 23102,11153 23113,11262
 #: note: Privatweg
 Hohenseeweg	NN 22972,11066 23152,11065
 Am Niederfeld	NH 22436,11054 22540,11031 22634,11024 22755,11013 22847,11008 22865,11007 22947,10998 23132,11001 23392,10993 23573,10975
@@ -12194,7 +12195,8 @@ Lange Str. (Friedrichshain)	N 12522,11837 12577,11804 12676,11739
 Lange Str. (Friedrichshain)	N 12002,12008 12212,11963
 Wriezener Karree	N 12728,11850 12959,11631
 Hermann-Stöhr-Platz	NN 12453,11790 12413,11901
-Hermann-Stöhr-Platz	NN 12413,11901 12522,11837
+Hermann-Stöhr-Platz	NN 12413,11901 12476,11864 12522,11837
+Hermann-Stöhr-Platz	NN 12453,11790 12476,11864
 Singerstr.	N 11497,12463 11613,12408 11635,12398
 #: note: Poller zu beiden Seiten
 Singerstr.	NN 11635,12398 11845,12292
@@ -19988,7 +19990,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-03-19 vvv
+#: last_checked: 2026-03-22 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
@@ -21157,8 +21159,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025) (bis 31.08.2026) (inaktiv)
-#: source_id: viz2021:13.33801,52.51361,09.01.2025,11:20 (bis 31.08.2026) (inaktiv)
-#: source_id: viz2021:13.33801,52.51361, (bis 31.08.2026)
+#: source_id: LMS-BR:233438/72 viz2021:13.33801,52.51361,09.01.2025,11:20 viz2021:13.33801,52.51361, (bis 31.08.2026)
 #: last_checked: 2026-02-27
 #: check_frequency: 180d
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
@@ -21166,15 +21167,15 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: osm_watch: way id="1277899794" version="4"
-#: last_checked: 2026-03-03 (mapillary)
+#: last_checked: 2026-03-17 (luftbildsuche)
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
 #: osm_watch: way id="1156287321" version="3"
-#: last_checked: 2026-03-03 (mapillary)
+#: last_checked: 2026-03-17 (luftbildsuche)
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
 #: osm_watch: way id="1138047106" version="6"
-#: last_checked: 2026-03-03 (mapillary)
+#: last_checked: 2026-03-17 (luftbildsuche)
 #: check_frequency: 90d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661
 # 

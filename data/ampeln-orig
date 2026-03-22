@@ -74,7 +74,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # REMOVED --- Lahnstr./Mittelbuschweg: Gegenverkehrsregelung	X::inwork::alternating 13500,7018
 # 
 #: next_check_id: SCHIFFBAUERDAMM-2025
-#: source_id: viz2021:13.38017,52.51979, (bis 12.05.2026)
+#: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026)
 #: last_checked: 2026-03-03
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
@@ -415,19 +415,19 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: source_id: viz2021:13.47181,52.50783,24.01.2023,09:00 (bis 03.06.2024) (inaktiv)
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.471417,52.507338,11.06.2025,07:00 (bis 31.03.2027) (inaktiv)
-#: source_id: viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
+#: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-03-13
+#: last_checked: 2026-03-22
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026
 #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
-#: last_checked: 2026-03-13
+#: last_checked: 2026-03-22
 #: check_frequency: 120d
 #: next_check: 2026-03-31 (Halteverbotsschilder)
 Gürtelstr.	F::inwork 15153,11691
