@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -479,10 +479,25 @@ sub action_fragezeichen_nextcheck_sort_by_lastchecked {
 sub action_sourceid {
     my $d = shift;
 
+    # sourceid-all.yml:
+    #   all sourceids, even if marked as inactive or belonging to a past temp blockings entry (however, removed (commented out) sourceids are ignored)
+    # sourceid-current.yml:
+    #   all sourceids, even if marked as inactive, excluding past temp blockings entries
+    # sourceid-inactive.yml:
+    #   sourceids which are marked as inactive, excluding past temp blockings entries
+    # sourceid-active.yml (currently not active):
+    #   sourceids which are not marked as inactive, excluding past temp blockings entries
+    # sourceid-active-primary.yml (currently not active):
+    #   sourceids which are not marked as inactive, excluding past temp blockings entries,
+    #   only the first id if multiple are defined (this was used to find all viz2021 ids
+    #   without a LMS-BR id)
+
     for my $variant_def (
         ["sourceid-all.yml",      "bbbike-temp-blockings.bbd",           []],
         ["sourceid-current.yml",  "bbbike-temp-blockings-optimized.bbd", []],
         ["sourceid-inactive.yml", "bbbike-temp-blockings-optimized.bbd", ["--inactive"]],
+        #["sourceid-active.yml",   "bbbike-temp-blockings-optimized.bbd", ["--active"]],
+        #["sourceid-active-primary.yml", "bbbike-temp-blockings-optimized.bbd", ["--active", "--only-primary-id"]],
     ) {
 	my($dest_base, $temp_blockings_base, $extra_opts) = @$variant_def;
 	my $dest = "$persistenttmpdir/$dest_base";
