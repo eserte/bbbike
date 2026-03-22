@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package VMZTool;
@@ -16,7 +15,7 @@ package VMZTool;
 use v5.10.0; # named captures, defined-or
 use strict;
 use warnings;
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -637,6 +636,7 @@ sub parse_vmz_2021 {
     my $place = 'Berlin';
 
     tie my %id2rec, 'Tie::IxHash';
+    tie my %viz2025_id2rec, 'Tie::IxHash';
     tie my %place2rec, 'Tie::IxHash';
 
     if ($data->{type} ne 'FeatureCollection') {
@@ -758,10 +758,12 @@ sub parse_vmz_2021 {
 
 	push @{ $place2rec{$place} }, $out_record;
 	$id2rec{$viz2021_id} = $out_record;
+	$viz2025_id2rec{$viz2025_id} = $out_record;
     }
 
     (place2rec => \%place2rec,
      id2rec    => \%id2rec,
+     viz2025_id2rec => \%viz2025_id2rec,
      parsed_at => scalar(localtime),
     );
 }
@@ -771,6 +773,7 @@ sub parse_vmz_2021 {
 sub as_bbd {
     my($self, $place2rec, $old_store) = @_;
     my $old_id2rec = $old_store ? $old_store->{id2rec} : undef;
+    my $old_viz2025_id2rec = $old_store ? $old_store->{viz2025_id2rec} : undef;
     my $s = <<'EOF';
 #: #: -*- coding: utf-8 -*-
 #: encoding: utf-8
@@ -780,6 +783,7 @@ EOF
     my $handle_rec = sub {
 	my($rec, $is_removed) = @_;
 	my $id = $rec->{id};
+	my $viz2025_id = $rec->{viz2025_id};
 
 	# Check if record should be ignored
 	my $do_ignore = 0;
@@ -862,12 +866,20 @@ EOF
 	}
 	if ($is_removed) {
 	    push @attribs, 'REMOVED';
-	} elsif (!$old_id2rec || !$old_id2rec->{$id}) {
-	    push @attribs, 'NEW';
-	} elsif ($old_id2rec->{$id}->{text} eq $rec->{text}) {
-	    push @attribs, 'UNCHANGED';
 	} else {
-	    push @attribs, 'CHANGED';
+	    my $old_rec;
+	    if (defined $viz2025_id && $old_viz2025_id2rec && exists $old_viz2025_id2rec->{$viz2025_id}) {
+		$old_rec = $old_viz2025_id2rec->{$viz2025_id};
+	    } elsif ($old_id2rec && exists $old_id2rec->{$id}) {
+		$old_rec = $old_id2rec->{$id};
+	    }
+	    if (!$old_rec) {
+		push @attribs, 'NEW';
+	    } elsif ($old_rec->{text} eq $rec->{text}) {
+		push @attribs, 'UNCHANGED';
+	    } else {
+		push @attribs, 'CHANGED';
+	    }
 	}
 	if (!$is_removed) {
 	    if (defined $rec->{maxTimeTo} && $rec->{maxTimeTo} lt $today) { # ignore time part, ignore timezones
@@ -892,6 +904,7 @@ EOF
 		    "\tX @coords\n";
     };
     my %seen_id;
+    my %seen_viz2025_id;
     for my $place (sort {
 	my $a_rec = $place2rec->{$a}->[0];
 	my $b_rec = $place2rec->{$b}->[0];
@@ -907,11 +920,14 @@ EOF
 	my $recs = $place2rec->{$place};
 	for my $rec (@$recs) {
 	    $seen_id{$rec->{id}}++;
+	    $seen_viz2025_id{$rec->{viz2025_id}}++ if defined $rec->{viz2025_id};
 	    $handle_rec->($rec, 0);
     	}
     }
+    # handle removed records
     for my $old_id (keys %$old_id2rec) {
-	if (!$seen_id{$old_id}) {
+	my $old_viz2025_id = $old_id2rec->{$old_id}->{viz2025_id};
+	if (!$seen_id{$old_id} && (!defined $old_viz2025_id || !$seen_viz2025_id{$old_viz2025_id})) {
 	    $handle_rec->($old_id2rec->{$old_id}, 1);
 	}
     }
@@ -1124,6 +1140,9 @@ if ($need_to_use_old_store) {
 	    if (!exists $res{id2rec}->{$id}) {
 		$res{id2rec}->{$id} = $rec;
 		push @{ $res{place2rec}->{$rec->{place}} }, $rec;
+	    }
+	    if (defined $rec->{viz2025_id}) {
+		$res{viz2025_id2rec}->{$rec->{viz2025_id}} = $rec;
 	    }
 	}
     }
