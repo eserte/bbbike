@@ -357,6 +357,19 @@ EOF
 		(map {
 		    my $last_days = $_;
 		    my $file = '/tmp/street-accurate-categorized-split-last-' . $last_days . '-days.bbd';
+		    my @srcfiles;
+		    for my $candidate (
+			"$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2013.bbd",
+			"$bbbike_rootdir/tmp/fit.bbd",
+			"$bbbike_rootdir/tmp/gopro.bbd",
+			"$bbbike_rootdir/tmp/galileo.bbd",
+		    ) {
+			if (-s $candidate) {
+			    push @srcfiles, $candidate;
+			} else {
+			    warn "Skip file '$candidate', no such file exists...\n";
+			}
+		    }
 		    layer_checkbutton([$do_compound->("Last $last_days days")],
 				      'str', $file,
 				      set_layer_highlightning => 1,
@@ -365,7 +378,7 @@ EOF
 				      preparecallback => sub {
 					  my $rx = _generate_date_range_regex($last_days);
 					  require IPC::Run;
-					  my @cmd = ("$bbbike_rootdir/miscsrc/grepstrassen", "--preserveglobaldirectives", "--namerx", $rx, "$bbbike_rootdir/tmp/streets-accurate-categorized-split-since2013.bbd", "$bbbike_rootdir/tmp/fit.bbd");
+					  my @cmd = ("$bbbike_rootdir/miscsrc/grepstrassen", "--preserveglobaldirectives", "--namerx", $rx, @srcfiles);
 					  if (!IPC::Run::run(\@cmd, '>', "$file~")) {
 					      main::status_message("Failed to create $file", "die");
 					  }
