@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2006,2008,2009,2012,2015,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2008,2009,2012,2015,2019,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeAlarm;
@@ -40,7 +39,7 @@ my $install_datebook_additions = 1;
 use File::Basename qw(basename);
 use Time::Local;
 
-$VERSION = '1.47';
+$VERSION = '1.48';
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
