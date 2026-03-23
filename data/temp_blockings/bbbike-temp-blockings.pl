@@ -23970,14 +23970,17 @@ EOF
 	q4::inwork 9383,13986 9469,14004 9659,14043 9676,14046
 EOF
      },
-     { from  => undef, # 
-       until => 1430672249, # undef, # XXX
-       text  => 'Gürtelstr. (Weißensee): Einbahnstraße zwischen Meyerbeerstr. und Gounodstr.',
+     { from  => 1774159200, # 2026-03-22 07:00 # undef, # 
+       until => 1777067940, # 2026-04-24 23:59 # 1430672249, # undef, # XXX
+#      text  => 'Gürtelstr. (Weißensee): Einbahnstraße zwischen Meyerbeerstr. und Gounodstr.',
+       text  => 'Gürtelstr.: Bauarbeiten zwischen Meyerbeerstr. und Gounodstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.03.2026 07:00 bis 24.04.2026',
        type  => 'handicap',
-       source_id => 'http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4',
        data  => <<EOF,
+#: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4
 # REMOVED (fertig) --- #: XXX wann ist die Baustelle fertig? --- #: last_checked: 2015-02-13 --- #: check_frequency: 60d
-	q3::inwork; 13555,15596 13459,15653
+# REMOVED (alte Sperrung) ---	q3::inwork; 13555,15596 13459,15653
+#: source_id: LMS-BR:402618/72 viz2021:13.451039,52.545703,23.03.2026,07:00 (bis 24.04.2026)
+	q4::inwork 13574,15585 13555,15596 13459,15653
 EOF
      },
      { from  => 1396047600, # 2014-03-29 00:00
@@ -42119,7 +42122,7 @@ EOF
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
-#: osm_watch: way id="84960597" version="28"
+#: osm_watch: way id="84960597" version="29"
 #: last_checked: 2026-03-21
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
@@ -45246,7 +45249,7 @@ EOF
 #: by: https://entwicklungsstadt.de/grossbaustelle-in-mitte-sanierung-der-krausenstrasse-geht-in-naechste-phase/
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027) (inaktiv)
 #: source_id: LMS-BR:337726/72 viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
-#: osm_watch: way id="42747980" version="21"
+#: osm_watch: way id="42747980" version="22"
 #: XXX Sperrung zwischen Jerusalemer Str. (West) und Markgrafenstr. ab 15. Oktober 2025
 #: XXX Sperrung im 1. BA bis Ende Oktober 2025
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
@@ -52032,11 +52035,12 @@ EOF
 EOF
      },
      { from  => 1772319600, # 2026-03-01 00:00
-       until => 1778882399, # 2026-05-15 23:59
-       text  => 'Wendisch Rietz - Storkow: Radweg wird wegen Sanierungsarbeiten gesperrt, vom 2.3.2026 bis Mitte Mai 2026',
+       until => $isodate2epoch->("2026-05-29 20:00:00"), # 1778882399, # 2026-05-15 23:59
+       text  => 'Wendisch Rietz - Storkow: Radweg wird wegen Sanierungsarbeiten gesperrt, vom 2.3.2026 bis Ende Mai 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-02-2026-b246_zw-storkow-und-wendisch-rietz_radwegerneuerung
+#: source_id: LS/221-F/26/013 (bis 29.05.2026)
 	2::inwork 51951,-21317 50704,-20473 50359,-20087 49368,-19096 49273,-18856 48989,-18635 48250,-18150
 EOF
      },
@@ -52279,6 +52283,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-03-2026-l68_schlieben-neubau-bruecke-muehlengraben
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2068%20Schlieben%20Neubau%20der%20Br%C3%BCcke%20%C3%BCber%20den%20M%C3%BChlengraben_Karte%20PM%2017-03-26.pdf
+#: source_id: LS/222-C/26/034 (bis 30.11.2026)
 	2::inwork 10811,-77411 10980,-77816
 EOF
      },

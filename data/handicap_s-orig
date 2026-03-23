@@ -32,7 +32,7 @@ Gubener Str.: Fahrbahn gesperrt, Baustellenfläche	q3::inwork 13352,12003 13339,1
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-03-22
+#: last_checked: 2026-03-23
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -87,9 +87,9 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13434,13234 1
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="29"
-#: osm_watch: way id="1072662717" version="33"
-#: last_checked: 2026-03-19
+#: osm_watch: way id="1072662716" version="30"
+#: osm_watch: way id="1072662717" version="34"
+#: last_checked: 2026-03-23 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -5308,7 +5308,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-03-14 vvv
+#: last_checked: 2026-03-23 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-05-04 vvv
 # REMOVED --- #: valid: -20251219

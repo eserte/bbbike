@@ -3554,7 +3554,8 @@ Buschwindröschenweg: wird diese Straße verkehrsberuhigt sein? wird es wie im ben
 # REMOVED (eingetragen) --- #: XXX -> strassen_bab-orig, wenn fertig --- #: XXX vermutlich wird es weitere begleitende Wege geben, die hoffentlich für Radfahrer befahrbar sein werden (bis zur Grenzallee? zwischen Kiefholzstr. und Görlitzer Damm auf der westlichen Seite der Autobahn?) (bis Am Treptower Park allerdings nicht, da ist kein Platz mehr übrig) --- #: next_check: 2025-08-27 (rbb) vvv --- BAB100	?::inwork 14169,9525 14147,9383 14167,9099 --- BAB100 (Tunnelabschnitt)	?::inwork 14167,9099 14270,8885 --- BAB100	?::inwork 14270,8885 14307,8729 14281,8444 14288,8341 14326,8240 14421,8032 14447,7901 14459,7763 14436,7611 14346,7377 14278,7090 --- BAB100 (Tunnelabschnitt)	?::inwork 14278,7090 14219,6838 14161,6729 --- BAB100	?::inwork 14161,6729 14101,6640 --- #: next_check ^^^
 # REMOVED --- #: osm_watch: way id="1409203289" version="1"
 # REMOVED --- #: osm_watch: way id="1409203288" version="1"
-#: osm_watch: way id="852517037" version="4"
+#: osm_watch: way id="852398445" version="6"
+#: osm_watch: node id="7951264620" version="3"
 #: XXX außerdem wird es auch einen Betriebsweg auf der östlichen Seite geben, aber das wird wohl eine Sackgasse sein
 #: last_checked: 2026-03-22
 #: check_frequency: 30d
@@ -4543,7 +4544,7 @@ Bouchéstr.: Fahrradstraße wird eingerichtet	?::projected 13489,9456 13602,9581
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/W9UFI7zmu0QT242OBAMn6NFyTsADv6r9D99CePxL/bqWHSjmf/88-Anlagen/02/1028-6VorlagezurBeschlussfassungAnlage.pdf (Kfz-Verkehr in Nord-Süd Richtung wird nicht mehr möglich sein)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410042615/wo-in-charlottenburg-wilmersdorf-investiert-und-gespart-wird.html
 # REMOVED --- #: XXX Der Stadtplatz bleibt bis zum 1. November 2020 bestehen --- temporärer Stadtplatz, wo genau? --- #: XXX am 5.11.2021 Markierungsarbeiten im Bereich des Stadtplatzes ---
-#: osm_watch: way id="33492395" version="22"
+#: osm_watch: way id="33492395" version="23"
 # REMOVED (entfernt) --- #: osm_watch: way id="58648979" version="12"
 #: osm_watch: way id="1092954638" version="8"
 #: note: selten genutzter inoffizieller Name: Horst-Wundt-Platz
@@ -4591,8 +4592,8 @@ Bodestr.: in Zukunft nur für Rad- und Fußverkehr offen	? 9919,12613 9948,12631 1
 # REMOVED (wieder entfernt) --- #: XXX mittlerweile zumindest am Schloßplatz provisorisch abgesperrt
 #: also_indoor: traffic (ex-B)
 #: osm_watch: way id="23121445" version="31"
-#: osm_watch: way id="1462815778" version="1"
-#: osm_watch: way id="1462815781" version="1"
+#: osm_watch: way id="1462815778" version="2"
+#: osm_watch: way id="1462815781" version="2"
 Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,12635
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -5223,6 +5224,7 @@ Bahnhofstr./Briesingstr.: Bau einer provisorischen Ampel	? 10278,-2101 10310,-21
 #: by: https://gruen-berlin.de/pressemitteilung/baustart-fuer-ein-lebenswertes-und-nachhaltiges-quartier-am-platz-der-luftbruecke
 #: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/damit-der-historisch-bedeutsame-ort-im-21-jahrhundert-ankommt-umbauarbeiten-am-platz-der-luftbrucke-in-tempelhof-gestartet-15382515.html
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article411511492/baustart-am-platz-der-luftbruecke-mamC2ADmutC2ADproC2ADjekt-an-historischem-ort.html
+#: by: https://www.entwicklungsstadt.de/mehr-gruen-mehr-raum-bauarbeiten-am-platz-der-luftbruecke-gestartet/ (erster Bauabschnitt bis Anfang 2028)
 #: last_checked: 2026-03-14 (mapillary)
 #: check_frequency: 30d
 # REMOVED (Termin wurde gerissen) --- #: next_check: 2025-12-15 (MoPo: Baustart Herbst 2025)
@@ -6465,6 +6467,7 @@ Märkische Allee: Radverkehrsanlagen werden entstehen, evtl. als PBL	?::projected
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/radweg-an-der-charlottenburger-chaussee-wird-umfassend-saniert_a396496 (zwischen Hausnummer 51 und Stendelweg, Asphalt, 2,16m breit, bis Sommer 2024)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/baume-oder-radweg-beides-hilft-diese-idee-aus-niedersachsen-der-berliner-problembaustelle-12542495.html (Richtung Osten zwischen Stendelweg und Bezirksgrenze: Sommer 2025 bis Herbst 2025; Richtung Westen zwischen Wiesendamm und An den Freiheitswiesen: 2025 bis Ende 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/grunes-weihnachtswunder-neue-baume-fur-den-neuen-radweg-an-charlottenburger-chaussee-15032915.html (Finanzierungvorbehalt, Anfang 2026 gibt's neue Infos)
+#: source_id: LMS-BR:402645/72 viz2021:13.23263,52.52769, (unspezifizierte Tiefbauarbeiten, bis 15.05.2026)
 #: last_checked: 2025-09-24 vvv
 #: check_frequency: 270d vvv
 # REMOVED --- #: next_check: 2025-09-01 (Tsp) vvv
@@ -7712,7 +7715,7 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs, vielleicht auch Asphaltierun
 #: source_id: viz2021:13.298076,52.519552,15.02.2022,10:00 (bis 25.4.2022) (mittlerweile inaktiv)
 #: osm_watch: note 4434294 7
 #: osm_watch: way id="1101200759" version="12"
-#: osm_watch: way id="428720064" version="27"
+#: osm_watch: way id="428720064" version="28"
 #: last_checked: 2026-02-25 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2028-06-30 (infravelo) vvv
@@ -8737,7 +8740,7 @@ Brodowiner Ring - Hohensaatener Str.: Stadtplatz in Planung	? 22192,16165 22063,
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13027 (Antrag) (Sanierung der Spree-Uferwände in diesem Bereich?)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/20250121-mobilitaetsrat-mitte-tagesordnung.pdf (auch hier ein Hinweis auf die Sanierung der Uferwände)
 #: note: laut Mobilitätsrat Mitte wird die Maßnahme 2024 umgesetzt (siehe osm note)
-#: osm_watch: way id="4376904" version="25"
+#: osm_watch: way id="4376904" version="26"
 #: osm_watch: note 3769887 12
 #: last_checked: 2026-03-18
 #: check_frequency: 60d
@@ -9088,7 +9091,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
-#: last_checked: 2026-03-21 vvv
+#: last_checked: 2026-03-23 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="563341820" version="24"
 #: note: zwischenzeitlich gar keine Einbahnstraßenregelung
@@ -11084,6 +11087,7 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 #: by: https://entwicklungsstadt.de/ocean-berlin-baufortschritt-am-grossaquarium-in-lichtenberg/ (Eröffnung Ende 2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/lichtenberg/haie-rochen-millionen-liter-wasser-so-sieht-das-riesen-aquarium-ocean-berlin-in-berlin-aus-14829719.html
 #: by: https://entwicklungsstadt.de/baufortschritt-am-meerespark-ocean-berlin-feiert-richtfest-an-der-rummelsburger-bucht/
+#: by: https://www.entwicklungsstadt.de/aquarium-in-lichtenberg-ocean-berlin-zeigt-seine-endgueltige-form/
 # REMOVED (alle eingetragen) --- #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
 # REMOVED (eingetragen) --- #: XXX * bestehende Untere Kynaststr. -> An der Mole (PLZ=10317 laut LOR)
 # REMOVED --- #: XXX * Paul-und-Paula-Promenade --- #: XXX * Rummelsburger Seeblick (PLZ=10317 laut LOR) --- #: XXX * Ulrich-Plenzdorf-Str. (PLZ=10317 laut LOR) --- #: XXX * An den Eiswerken --- #: XXX * Heiner-Carow-Str. --- #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR) --- #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
@@ -12800,7 +12804,7 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: osm_watch: way id="1306187834" version="30"
 #: osm_watch: way id="1306187830" version="29"
 #: osm_watch: way id="1294762943" version="22"
-#: osm_watch: way id="178253967" version="30"
+#: osm_watch: way id="178253967" version="31"
 #: osm_watch: way id="936729763" version="33"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
 #: note: Insel Gartenfeld
@@ -12849,7 +12853,8 @@ Private Planstraße 6 (Bachsaiblingstr.)	?::projected -414,15983 -301,15896
 # 
 #: next_check_id: GARTENFELD-2025
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rhenaniabruecke/ (Neubau der Rhenaniabrücke, 2025 bis 2027) (2026 bis 2028)
-#: osm_watch: way id="1488967978" version="1"
+#: osm_watch: way id="1488967978" version="2"
+#: last_checked: 2026-03-23 (osm)
 #: next_check: 2028-12-31 (SenMVKU-Seite)
 Rhenaniabrücke: Neubau geplant	?::projected -1095,15865 -1006,15833
 # 
@@ -14394,7 +14399,7 @@ Straßen in Döberitz: genaue Straßennamen, Qualität?	? -12956,13814 -13017,13815 
 #: osm_watch: way id="285893839" version="6"
 #: osm_watch: way id="1098595193" version="4"
 #: osm_watch: way id="1491175543" version="1"
-#: last_checked: 2026-01-17
+#: last_checked: 2026-03-21 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-09-01
 Heerstr. - Fichtenstr. - Chemnitzer Str.: wird hier ein Verbindungsweg für Radfahrer und Fußgänger gebaut? Qualität? Nachts beleuchtet?	? 22366,9571 22219,9545 22137,9532

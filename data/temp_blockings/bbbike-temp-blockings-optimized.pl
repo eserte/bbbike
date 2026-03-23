@@ -3856,7 +3856,19 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4
+# REMOVED (fertig) --- #: XXX wann ist die Baustelle fertig? --- #: last_checked: 2015-02-13 --- #: check_frequency: 60d
+# REMOVED (alte Sperrung) ---	q3::inwork; 13555,15596 13459,15653
+#: source_id: LMS-BR:402618/72 viz2021:13.451039,52.545703,23.03.2026,07:00 (bis 24.04.2026)
+	q4::inwork 13574,15585 13555,15596 13459,15653
+',
+         'from' => 1774159200,
+         'id' => 2557,
+         'text' => 'Gürtelstr.: Bauarbeiten zwischen Meyerbeerstr. und Gounodstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.03.2026 07:00 bis 24.04.2026',
+         'type' => 'handicap',
+         'until' => 1777067940
+       },
        undef,
        undef,
        undef,
@@ -7253,7 +7265,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
-#: osm_watch: way id="84960597" version="28"
+#: osm_watch: way id="84960597" version="29"
 #: last_checked: 2026-03-21
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
@@ -7802,7 +7814,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: by: https://entwicklungsstadt.de/grossbaustelle-in-mitte-sanierung-der-krausenstrasse-geht-in-naechste-phase/
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027) (inaktiv)
 #: source_id: LMS-BR:337726/72 viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
-#: osm_watch: way id="42747980" version="21"
+#: osm_watch: way id="42747980" version="22"
 #: XXX Sperrung zwischen Jerusalemer Str. (West) und Markgrafenstr. ab 15. Oktober 2025
 #: XXX Sperrung im 1. BA bis Ende Oktober 2025
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
@@ -10357,13 +10369,14 @@ Lewaldstr.	q4::inwork 11401,16265 11470,16394
        undef,
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-02-2026-b246_zw-storkow-und-wendisch-rietz_radwegerneuerung
+#: source_id: LS/221-F/26/013 (bis 29.05.2026)
 	2::inwork 51951,-21317 50704,-20473 50359,-20087 49368,-19096 49273,-18856 48989,-18635 48250,-18150
 ',
          'from' => 1772319600,
          'id' => 4547,
-         'text' => 'Wendisch Rietz - Storkow: Radweg wird wegen Sanierungsarbeiten gesperrt, vom 2.3.2026 bis Mitte Mai 2026',
+         'text' => 'Wendisch Rietz - Storkow: Radweg wird wegen Sanierungsarbeiten gesperrt, vom 2.3.2026 bis Ende Mai 2026',
          'type' => 'gesperrt',
-         'until' => 1778882399
+         'until' => 1780077600
        },
        {
          'data' => '#: tempex: (YYYY0101-YYYY0513,YYYY0923-YYYY1231) T22:00-T06:00, (YYYY0514-YYYY0922) T23:00-T06:00 vvv
@@ -10589,6 +10602,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-03-2026-l68_schlieben-neubau-bruecke-muehlengraben
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2068%20Schlieben%20Neubau%20der%20Br%C3%BCcke%20%C3%BCber%20den%20M%C3%BChlengraben_Karte%20PM%2017-03-26.pdf
+#: source_id: LS/222-C/26/034 (bis 30.11.2026)
 	2::inwork 10811,-77411 10980,-77816
 ',
          'from' => 1774735200,
