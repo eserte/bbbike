@@ -45153,7 +45153,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
-#: also_indoor: traffic (G,H,W)
+#: also_indoor: traffic (G,ex-H,ex-W,no-T)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
 #: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
 #: by: https://www.deutsches-architekturforum.de/thread/14764-reinickendorf-kleinere-projekte/?postID=766343#post766343 (Quartier Alt-Wittenau)
@@ -45162,8 +45162,8 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1574495.php
 #: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
 #: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/
-#: last_checked: 2025-12-25 (traffic)
-#: check_frequency: 90d
+#: last_checked: 2026-03-24 (traffic)
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
 	q3::inwork; 5476,20372 5801,20339
 EOF
@@ -45256,7 +45256,7 @@ EOF
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
-#: last_checked: 2026-03-12 vvv
+#: last_checked: 2026-03-24 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
@@ -48404,9 +48404,9 @@ EOF
 #: note: Landjägerstr. hat einen eigenen Eintrag
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
-#: last_checked: 2026-03-11 (website check) vvv
+#: last_checked: 2026-03-24 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
-#: next_check: 2026-03-15 (Sperrung der Gellertstr. ab 16.3.2026, eine Woche der Thomas-Müntzer-Str.) vvv
+# REMOVED --- #: next_check: 2026-03-15 (Sperrung der Gellertstr. ab 16.3.2026, eine Woche der Thomas-Müntzer-Str.) vvv
 # REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025) (inaktiv)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
@@ -48447,11 +48447,11 @@ EOF
 # REMOVED (hier nicht) --- Zinsgutstr.	q4::inwork 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
 # REMOVED ("Kabeltiefbau abgeschlossen") --- #: note: laut Haltestellenschilder vom 21.05.2025 07 Uhr bis 24.07.2025 17 Uhr; laut Website Verkehrsfreigabe am 08.08.2025 --- Flemmingstr.	q4::inwork 21848,4882 21726,4537 --- #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt --- Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 # REMOVED (abgeschlossen) --- #: note: wo genau? --- Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 # 
 #: also_indoor: traffic (no-T,G[nur Flemmingstr])
-#: last_checked: 2026-03-11 (traffic) vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2026-03-24 (traffic) vvv
+#: check_frequency: 30d vvv
 Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: check_frequency ^^^
@@ -48461,7 +48461,7 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 30.04.2026)
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-03-11 (traffic)
+#: last_checked: 2026-03-24 (traffic)
 # REMOVED --- #: check_frequency: 3d (traffic)
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
@@ -49054,7 +49054,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-03-18 (traffic) vvv
+#: last_checked: 2026-03-24 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 # REMOVED (evtl. nicht mehr?) ---	q4::inwork; 2924,9391 2947,9367
@@ -49297,8 +49297,8 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
 #: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
-#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026) (bis 24.03.2026)
-#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026) (bis 24.03.2026)
+#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026) (bis 24.03.2026) (inaktiv)
+#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026) (bis 24.03.2026) (inaktiv)
 	q4::inwork 5053,8979 5189,8983
 EOF
      },
@@ -50482,7 +50482,7 @@ EOF
        data  => <<'EOF',
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-03-22 (Bauzaun vermutlich weggeschoben)
+#: last_checked: 2026-03-24 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -51261,7 +51261,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 8
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-20 (mapillary) (Asphaltierungsarbeiten, fast fertig)
+#: last_checked: 2026-03-24 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -51817,12 +51817,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1774969200, # 2026-03-31 17:00
-       text  => 'Zoppoter Str. und Borkumer Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis 31.03.2026 17:00',
+       until => $isodate2epoch->("2026-06-30 23:59:59"), # 1774969200, # 2026-03-31 17:00
+       text  => 'Zoppoter Str. und Borkumer Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:395246/72 viz2021:13.298302,52.47039,05.01.2026,07:00 (Zoppoter Str., bis 31.03.2026)
-#: source_id: LMS-BR:395247/72 viz2021:13.29834,52.47075,05.01.2026,07:00 (Borkumer Str., bis 31.03.2026)
+#: source_id: LMS-BR:395246/72 viz2021:13.298302,52.47039,05.01.2026,07:00 (Zoppoter Str., bis 31.03.2026) (bis 30.06.2026)
+#: source_id: LMS-BR:395247/72 viz2021:13.29834,52.47075,05.01.2026,07:00 (Borkumer Str., bis 31.03.2026) (bis 30.06.2026)
 	q4::inwork 3202,7121 3302,7092 3295,6987
 EOF
      },
@@ -52305,6 +52305,33 @@ EOF
 # note: 4. BA vom 18. Mai bis Ende Juni 2026
 #	2::inwork 31722,57984 31872,58453 31863,59127 31968,59333 32207,59713 32638,60246 32783,60359 32855,60461 32848,60794 33037,60947 33171,61270 33118,61738 33172,61951 33219,61981
 #: next_check ^^^
+EOF
+     },
+     { from  => 1774383320, # 2026-03-24 21:15
+       until => 1782165600, # 2026-06-23 00:00
+       text  => 'Pichelswerderstr.: Bauarbeiten zwischen Freiheit und Heidereuterstr., Sperrung, evtl. sind auch Radfahrer betroffen, Baustelle, bis 22.06.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:402799/72 viz2021:13.21378,52.53175, (bis 23.06.2026)
+	q4::inwork -2699,13359 -2669,13488 -2576,13777
+EOF
+     },
+     { from  => 1774324800, # 2026-03-24 05:00
+       until => 1779472800, # 2026-05-22 20:00
+       text  => 'L20: Bauarbeiten, Sperrung des Radwegs zwischen Falkensee und Bushaltestelle Falkenhagener Forst, 25.03.2026 05:00 Uhr bis 22.05.2026 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/223-P/26/041 (bis 22.05.2026)
+	2::inwork -10031,18697 -10474,19644
+EOF
+     },
+     { from  => 1774760400, # 2026-03-29 07:00
+       until => 1775142000, # 2026-04-02 17:00
+       text  => 'Henningsdorf: Sperrung der Bahnunterführung, evtl. sind auch Radfahrer betroffen, 30.03.2026 07:00 Uhr bis 02.04.2026 17:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: 256502094 (bis 02.04.2026)
+	2::inwork -3203,25328 -3331,25078
 EOF
      },
     );
