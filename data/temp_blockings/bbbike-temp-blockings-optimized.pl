@@ -5078,7 +5078,7 @@ Landjägerbrücke	q4::inwork 22426,4609 22446,4581 22458,4565 22495,4523
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="19"
 #: osm_watch: way id="1148659680" version="7"
-#: last_checked: 2026-03-07 (osm)
+#: last_checked: 2026-03-25
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -5542,7 +5542,7 @@ Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 19
-#: last_checked: 2026-03-13 (traffic)
+#: last_checked: 2026-03-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -6022,7 +6022,7 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitte 2026 oder Mitte 2027?
-#: last_checked: 2026-03-03 (mapillary) vvv
+#: last_checked: 2026-03-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -10180,11 +10180,11 @@ Audre-Lorde-Str.	q4::inwork 12056,10642 12000,10531
        {
          'data' => '#: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2025/04/2025-04-28_VZ-Plan01-2_Schoenefeld_Waltersdorf_Schwarzer_Weg_Hubertus-1024x602.jpg
-#: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen?
+#: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen? -> nein, noch immer mit langer Umfahrung
 #: osm_watch: way id="1417905902" version="3"
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 1
-#: last_checked: 2025-12-28 (osm)
+#: last_checked: 2026-03-25
 	2::inwork 20285,-2775 20875,-2584
 ',
          'from' => undef,
@@ -10717,7 +10717,7 @@ Weg entlang der A100: unklar, ob offiziell eröffnet	2::inwork 14341,8763 14326,8
 #: osm_watch: way id="1425622570" version="1"
 #: osm_watch: way id="693633081" version="14"
 #: osm_watch: way id="693633082" version="17"
-Weg entlang der A100: unklar, ob offiziell eröffnet	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
+Weg entlang der A100: unklar, ob offiziell eröffnet	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
 #: next_check ^^^
 #: priority ^^^
 ',

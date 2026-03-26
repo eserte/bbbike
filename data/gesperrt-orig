@@ -3213,6 +3213,9 @@ tragen (Treppe)	0:30 -46087,-1491
 #: XXX wieviele Stufen gibt es hier?
 tragen (Treppe)	0:45 10405,-2638
 tragen (Treppe, 3 Stufen)	0:10 4799,20517
+#: note: hier möglicherweise mit einer Steighilfe (automatisch fahrendes schmales Band?)
+tragen (zwei Treppen)	0:60 51766,-59693
+tragen (zwei Treppen)	0:60 51694,-59945
 #
 #: section ^^^
 ###################################################################
@@ -4578,6 +4581,8 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht
 (Betriebsweg Kiefholzstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14120,9234 14081,9268
 #: osm_watch: way id="1455838853" version="3"
 (Betriebsweg Beermannstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14103,9316 14088,9294 14081,9268
+#: osm_watch: way id="825049429" version="10"
+Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
