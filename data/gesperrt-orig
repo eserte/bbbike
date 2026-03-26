@@ -154,10 +154,10 @@ Knoten Märkische/Landsberger Allee	1no 19512,15092 19644,15320
 #: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
 Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251124 (Sperrung ab 25.11.2025 bis voraussichtlich Ende März 2026)
-#: source_id: LMS-BR:391269/72 viz2021:13.540283,52.540747,25.11.2025,07:00 viz2021:13.54008,52.5405,25.11.2025,07:00 (bis 31.03.2026)
+#: source_id: LMS-BR:391269/72 viz2021:13.540283,52.540747,25.11.2025,07:00 viz2021:13.54008,52.5405,25.11.2025,07:00 (bis 31.03.2026) (bis 30.06.2026)
 #: XXX nach den Bauarbeiten vielleicht wieder zur Einbahnstraße machen?
 #: historical_note: früher (bis Nov. 2025) Einbahnstraße
-#: next_check: 2026-03-31
+#: next_check: 2026-06-30
 Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219 19577,15166
 #: XXX evtl. wird dieser Abschnitt der Frank-Schweitzer-Str. komplett aufgegeben?
 Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
@@ -4125,11 +4125,11 @@ Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inw
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: also_indoor: traffic (no-T,no-G)
-#: note: Lieferverkehr frei, kurze Engstelle (ca. 20-30m)
-#: last_checked: 2026-03-06
-#: check_frequency: 30d
-An der Ostbahn: Bauarbeiten, kurze Engstelle mit Einbahnstraßenregelung	1s:q2:inwork 12645,11673 12900,11515
+# REMOVED (gab's nur für kurze Zeit) --- #: also_indoor: traffic (no-T,no-G)
+# REMOVED --- #: note: Lieferverkehr frei, kurze Engstelle (ca. 20-30m)
+# REMOVED --- #: last_checked: 2026-03-26
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- An der Ostbahn: Bauarbeiten, kurze Engstelle mit Einbahnstraßenregelung	1s:q2:inwork 12645,11673 12900,11515
 # 
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1647872.php (bereits seit 2022 gesperrt)
 #: osm_watch: way id="1158959851" version="3"
@@ -4346,16 +4346,13 @@ Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeite
 #: check_frequency: 180d
 Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,107
 # 
-#: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2026-02-15 (mapillary)
-#: check_frequency: 120d
-Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7236,19689
+# REMOVED --- #: next_check_id: HEIDEKRAUTBAHN-2021 --- #: last_checked: 2026-03-22 (mapillary) --- #: check_frequency: 120d --- Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7200,19715
+# REMOVED --- #: next_check_id: HEIDEKRAUTBAHN-2021 --- #: osm_watch: way id="1149630679" version="6" --- #: last_checked: 2026-03-11 (bahninfo-forum) --- #: check_frequency: 60d --- Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7309,19652 7266,19686 7218,19723 7200,19715 7160,19752 7104,19802
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: osm_watch: way id="1149630679" version="6"
-#: last_checked: 2026-03-11 (bahninfo-forum)
-#: check_frequency: 60d
-Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7308,19653 7266,19686 7236,19689 7104,19802
+#: last_checked: 2026-03-22 (mapillary)
+#: check_frequency: 120d
+wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7297,19676 7285,19700 7184,19783 7138,19839 7123,19855 7090,19943
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="5"
@@ -4504,15 +4501,15 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 1
-#: last_checked: 2026-03-22 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-03-31 (website) vvv
+#: last_checked: 2026-03-26 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q4:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 #: osm_watch: way id="154381294" version="21"
 Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -4556,6 +4553,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (keine Infos von der Autobahn GmbH)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/verkehrsplanung/radverkehr/akteure-und-gremien/20251113_fahrrat_protokoll.pdf (Frühjahr 2026?)
 #: by: https://www.tagesspiegel.de/berlin/monatelang-ohne-ersichtlichen-grund-gesperrt-aktivisten-offnen-eigenmachtig-neuen-radweg-an-der-a100-15272876.html
+#: by: https://www.entwicklungsstadt.de/erste-fotos-so-sieht-der-neue-radweg-an-der-a100-sonnenallee-aus/
 #: note: manchmal ist der Bauzaun auf einer Seite offen, aber auf der anderen Seite weiterhin zu
 #: note: manchmal auf einer Seite offen und auf der anderen Seite nicht geprüft, gesehen 2024-09-30 (Mo) 17:53 (nordöstliche Seite), 2024-11-19 (Di) 08:03 (nordöstliche Seite), 2024-12-18 (Mi) (nordöstliche Seite), 2025-01-27 (Mo) 12:18 (Dieselstr., NW, SW, SO, aber nicht NO), 2025-01-29 (Mi) 14:23 (Kiefholzstr. NO), 2025-02-10 (Mo) 12:31 (Kiefholzstr NW und NO), 2025-04-05 (Sa) 11:45 (Kiefholzstr.), 2025-04-12 (Sa) 10:18 (Kiefholzstr. NO)
 #: note: manchmal aber sogar auf beiden Seiten offen, gesehen: 2024-08-17 (Sa) 11:00 (nordöstlicher Abschnitt), 2024-10-14 (Mo) 12:17 (mindestens nordöstlicher Abschnitt)
@@ -4565,15 +4563,8 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: last_checked: 2026-03-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-04-15 (Tsp, Fahrrat) vvv
-#: osm_watch: way id="1199463691" version="6"
-# REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
-Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
 # REMOVED (offiziell offen) --- #: osm_watch: way id="1199463690" version="2" --- Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
-#: osm_watch: way id="1425622570" version="1"
-#: osm_watch: way id="693633081" version="14"
-#: osm_watch: way id="693633082" version="17"
-Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 # REMOVED --- #: osm_watch: way id="1199463688" version="3"
 #: osm_watch: way id="1199465845" version="5"
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
@@ -4939,7 +4930,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026)
+#: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026)
 #: last_checked: 2026-03-11
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
@@ -5032,7 +5023,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2026-03-22
+#: last_checked: 2026-03-26
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5126,7 +5117,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-03-22 vvv
+#: last_checked: 2026-03-26 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5246,7 +5237,7 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: XXX - temporärer Weg in W-O-Richtung südlich der Baustelleneinrichtungsfläche (etwa 8162,10177 8248,10159)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="14"
-#: last_checked: 2026-02-24
+#: last_checked: 2026-03-26
 #: check_frequency: 120d
 #: next_check: 2028-02-28 (pardok)
 #: priority: #A

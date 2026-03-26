@@ -3,7 +3,6 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Gubener Str.: Fahrbahn gesperrt, Baustellenfläche	q3::inwork 13352,12003 13339,12029 13326,12056
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
@@ -3719,7 +3718,6 @@ Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 177
 Köpenicker Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp::igndisp; 21137,11346 21137,11294
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 8870,13926 8831,13973 8732,14098
 Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 9011,14019 8870,13926
-An der Ostbahn: Bauarbeiten, kurze Engstelle mit Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 12645,11673 12900,11515
 Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -3606,11532 -3657,11631 -3692,11681
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7697,14187 7781,14238 7802,14250
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7757,14318 7735,14305 7652,14257
