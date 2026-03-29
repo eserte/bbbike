@@ -45,19 +45,10 @@ BEGIN {
 	     "$FindBin::RealBin/BBBike", # weitere Alternative
 	     "$FindBin::RealBin/BBBike/lib",
 	     "$FindBin::RealBin",
-	     ($ENV{BOTCHECKER_JS_ENABLED} && $ENV{SERVER_NAME} =~ m{^(bbbike\.v\.|bbbike-timesink\.|.*\.duckdns\.org$)} ? "$FindBin::RealBin/../../../../../botchecker" : ()),
 	    );
     }
 }
 use lib (@extra_libs);
-
-# early check (without Origin check)
-BEGIN {
-    if ($ENV{BOTCHECKER_JS_ENABLED} && !$ENV{HTTP_ORIGIN}) {
-	require Botchecker_js;
-	Botchecker_js::antibot("BBBike");
-    }
-}
 
 use Strassen; # XXX => Core etc.?
 use Strassen::Dataset;
@@ -740,12 +731,6 @@ eval { local $SIG{'__DIE__'};
        #warn "$config_master.config";
        do "$config_master.config" };
 
-# late check (now @allowed_origins is known)
-if ($ENV{BOTCHECKER_JS_ENABLED} && (!$ENV{HTTP_ORIGIN} || !(grep { $ENV{HTTP_ORIGIN} eq $_ } @allowed_origins))) {
-    require Botchecker_js;
-    Botchecker_js::antibot("BBBike");
-}
-
 if ($lang ne "") {
     $msg = eval { do "$FindBin::RealBin/msg/$lang" };
     if ($msg && ref $msg ne 'HASH') {
@@ -788,7 +773,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.018';
+$VERSION = '11.019';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
