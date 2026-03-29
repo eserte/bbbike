@@ -3380,7 +3380,7 @@ EOF
 # 1.bbd beschreibt die Fläche:
 #	X -12322,-2267 -12306,-2300 -12306,-2563 -12207,-2726 -12198,-2922 -12231,-3061 -12204,-3469 -11636,-3843 -11431,-3686 -11135,-3439 -10857,-3194 -10483,-2699 -10655,-2569 -10930,-2457 -11033,-2346 -11147,-2041 -11196,-2042 -11820,-1979 -12115,-1964 -12116,-2122 -12228,-2104 -12281,-2198
        data  => <<EOF,
-Friedrich-Engels-Str. (Potsdam)	2::temp -11369,-2085 -11513,-2122 -11597,-2203 -11694,-2245 -11778,-2225 -11834,-2213 -11939,-2190 -12004,-2175 -12093,-2156 -12213,-2131
+Friedrich-Engels-Str. (Potsdam)	2::temp -11369,-2085 -11513,-2122 -11597,-2203 -11646,-2234 -11694,-2245 -11778,-2225 -11834,-2213 -11939,-2190 -12004,-2175 -12093,-2156 -12213,-2131
 Zum Wasserturm (Potsdam)	2::temp -12100,-2039 -12003,-2046 -11947,-2048 -11830,-2053 -11834,-2191
 Friedhofsgasse (Potsdam)	2::temp -11778,-2225 -11799,-2283 -12001,-2495
 Am Stellwerk (Potsdam)	2::temp -12004,-2175 -12003,-2158 -12003,-2046
@@ -3930,13 +3930,13 @@ EOF
 	2 -5982,74385 -6037,73865
 EOF
      },
-     { from  => 1140994800, # 2006-02-27 00:00
-       until => 1141426800, # 2006-03-04 00:00
-       text  => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.02.2006-03.03.2006 ',
+     { from  => $isodate2epoch->("2026-03-20 00:00:00"), # 1140994800, # 2006-02-27 00:00
+       until => $isodate2epoch->("2026-03-30 20:00:00"), # 1141426800, # 2006-03-04 00:00
+#      text  => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.02.2006-03.03.2006 ',
+       text  => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung, 20.03.2026 bis 30.03.2026',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -22477,67056 -21523,67550 -21068,67751
-	2 -21068,67751 -20615,67938 -20598,67945 -20469,68007
+	2::inwork -20615,67938 -21068,67751 -21523,67550
 EOF
      },
      { from  => 1139871600, # 2006-02-14 00:00
@@ -14389,7 +14389,7 @@ EOF
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
 #: also_indoor: traffic (T,G)
 #: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
-#: last_checked: 2026-03-17
+#: last_checked: 2026-03-28
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (BVV)
 Kantstr.	q4::inwork 5613,10963 5652,11004
@@ -22496,7 +22496,7 @@ EOF
 #: also_indoor: traffic (re-ex-re-G,ex-H,ex-A,ex-W,T)
 #: osm_watch: note 5212713 2
 #: add_fragezeichen: Besteht die Baustelle noch immer?
-#: last_checked: 2026-03-21
+#: last_checked: 2026-03-27
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
@@ -30387,7 +30387,7 @@ EOF
 #: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
 #: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06)
+#: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06) (2026-03-29)
 #: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
 #: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025) (inaktiv)
 #: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
@@ -37936,7 +37936,7 @@ EOF
 #: also_indoor: traffic (H,G,B,W)
 #: note: Länge des Einbahnstraßenabschnitts nur etwa 50m
 #: note: auch bei rbb vorfristig entfernt
-	q3::inwork; 4838,10597 4819,10355
+	q4::inwork; 4838,10597 4819,10355
 EOF
      },
      { from  => undef, # 
@@ -39148,7 +39148,7 @@ EOF
 #: osm_watch: note 4984535 1
 #: osm_watch: way id="1144627217" version="6"
 #: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2026-03-17
+#: last_checked: 2026-03-27
 #: check_frequency: 90d
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -39908,6 +39908,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: note: Sa-Öffnung gesehen: 2025-07-26 13:54
+#: note: abends länger geöffnet, gesehen: 2026-03-27 Fri 22:13
 #: tempex: summer T17:00-T05:00, winter T20:00-T05:00, sa, su, holiday vvv
 	2::temp 6470,14990 6504,14969
 #: tempex ^^^
@@ -42128,7 +42129,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-03-21
+#: last_checked: 2026-03-28
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -43528,7 +43529,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1774651119, # undef, # XXX
        text  => 'Landgrafenstr.: Hochbauarbeiten, Einbahnstraßenregelung zwischen Kurfürstenstr. und Wissmannstr., Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -43542,9 +43543,7 @@ EOF
 # REMOVED (kann nicht mehr beobachtet werden) --- #: also_indoor: webcam https://portal1944.webcam-profi.de/
 #: also_indoor: traffic (ex-G[falsch,beide Richtungen],ex-W[falsch,beide Richtungen])
 #: osm_watch: way id="1232322874" version="4"
-#: last_checked: 2026-01-10 (daf)
-#: check_frequency: 90d
-#: next_check: 2026-03-31 (daf, entwicklungsstadt)
+# REMOVED --- #: last_checked: 2026-01-10 (daf) --- #: check_frequency: 90d --- #: next_check: 2026-03-31 (daf, entwicklungsstadt)
 	q4::inwork; 6681,10959 6607,10801
 EOF
      },
@@ -45787,16 +45786,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1774809833, # undef, # XXX
        text  => 'Heubuder Brücke: wegen Bauschäden gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13021 (Antrag)
-#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13066 (Anfrage)
-#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13178 (Antrag)
-#: osm_watch: way id="27457006" version="28"
-#: last_checked: 2026-02-25 (mapillary)
-#: check_frequency: 180d
+#: note: -> gesperrt-orig
 	2::inwork 9017,17290 8982,17299
 EOF
      },
@@ -46213,7 +46207,7 @@ EOF
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-27
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -46653,8 +46647,8 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-03-2026-l30-start-zweiter-bauabschnitt-friedrichstrasse (Bauzustand ändert sich am 23.3.2026)
 #: by: https://www.erkner.de/rathaus-und-buergerservice/buergerinformationen/aktuelles/neuigkeiten/2026-1/l-30-start-des-zweiten-bauabschnitts.html (Gesamtbaumaßnahme bis Frühjahr 2027)
 #: osm_watch: note 4705333 2
-#: osm_watch: way id="336698811" version="9"
-#: osm_watch: way id="860389744" version="8"
+#: osm_watch: way id="336698811" version="10"
+#: osm_watch: way id="860389744" version="10"
 #: next_check: 2026-10-31 (ls.brandenburg: Änderung des Bauzustands)
 # REMOVED --- Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 Friedrichstr., 2. BA	q3::inwork 34359,2165 34250,2546
@@ -46813,13 +46807,13 @@ EOF
 #: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026) (bis 27.02.2026) (inaktiv)
 #: source_id: LMS-BR:400310/72 viz2021:13.32117,52.50746, (bis 27.03.2026) (bis 17.04.2026)
 #: note: etwa 50m der Fahrbahn gesperrt
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-28
 #: next_check: 2026-04-17 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
 Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4828,11094 4775,11203
 #: source_id: LMS-BR:392050/72 viz2021:13.323692,52.504398,03.12.2025,06:00 (Sperrung; bis 17.06.2026)
 #: source_id: LMS-BR:366524/72 viz2021:13.32531,52.50287, (Gegenverkehrsregelung; bis 29.03.2026) (bis 17.04.2026)
 #: note: Einbahnstraßenregelung, offen Richtung Savignyplatz; während der Arbeitszeiten kann es aber zu weiteren Einschränkungen kommen (gesehen 2026-02-25 Wed 13:23)
-#: last_checked: 2026-02-26
+#: last_checked: 2026-03-28
 #: next_check: 2026-06-17
 Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,10707
 EOF
@@ -49211,7 +49205,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:371046/72 viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: source_id: LMS-BR:371047/72 viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: last_checked: 2026-03-18 vvv
+#: last_checked: 2026-03-27 (indirekt) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -49356,7 +49350,7 @@ EOF
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: by: https://www.entwicklungsstadt.de/deutliche-fortschritte-auf-dem-lxk-campus-ein-blick-auf-die-baustelle/
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-10 (daf)
+#: last_checked: 2026-03-28
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -50147,7 +50141,7 @@ EOF
      { from  => 1754431200, # 2025-08-06 00:00
        until => undef, # 1767222000, # 2026-01-01 00:00
 #      text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Mitte März 2026: Diagonalweg ist offen)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Ende März 2026: Diagonalweg ist offen)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
@@ -50155,7 +50149,7 @@ EOF
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-03-14
+#: last_checked: 2026-03-27
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50256,7 +50250,7 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-26 vvv
+#: last_checked: 2026-03-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50994,7 +50988,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-03-26
+#: last_checked: 2026-03-27
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51266,7 +51260,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 8
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-24 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
+#: last_checked: 2026-03-28 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -51391,7 +51385,7 @@ EOF
 #: osm_watch: way id="1409889274" version="11"
 #: osm_watch: way id="1430307301" version="4"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-03-09 (daf) vvv
+#: last_checked: 2026-03-24 (architektur-urbanistik) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 # REMOVED (mittlerweile wieder offen, wegen der Bauarbeiten an der Nordhafenbrücke) ---	2::inwork 7662,14579 7696,14577 7733,14570
@@ -51860,12 +51854,17 @@ EOF
 EOF
      },
      { from  => 1769925600, # 2026-02-01 07:00
-       until => 1774195200, # 2026-03-22 17:00
-       text  => 'Knesebeckstr.: Bauarbeiten zwischen Kurfürstendamm und Lietzenburger Str., Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.02.2026 07:00 bis 22.03.2026 17:00',
+       until => $isodate2epoch->("2026-04-30 23:59:59"), # undef, # 1774195200, # 2026-03-22 17:00
+       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden,, vom 02.02.2026 bis 30.04.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:397835/72 viz2021:13.32184,52.5019,02.02.2026,07:00 (bis 22.03.2026) (inaktiv)
-	q4::inwork 4819,10355 4838,10597
+#: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (bis 30.04.2026)
+#: also_indoor: traffic (T,G,W)
+#: last_checked: 2026-03-27
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2026-04-30
+	q4::inwork; 4838,10597 4819,10355
 EOF
      },
      { from  => undef, # 
@@ -52192,6 +52191,7 @@ EOF
        text  => 'Behrenstr.: Einbahnstraßenregelung vor der Komischen Oper, bis Mitte Juli 2026',
        type  => 'handicap',
        data  => <<'EOF',
+#: next_check_id: BEHREN-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm6ljzf5k2g
 #: source_id: LMS-BR:401270/72 viz2021:13.38605,52.51546,09.03.2026,07:00 (westliche Behrenstr., bis 17.07.2026)
@@ -52223,10 +52223,11 @@ EOF
        text  => 'Marienburger Str.: Einbahnstraßenregelung zwischen Winsstr. und Greifswalder Str.',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (G,no-T,no-H,W)
+#: also_indoor: traffic (G,no-T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-03-15
+#: last_checked: 2026-03-29 (traffic)
 #: check_frequency: 14d
+#: next_check: 2026-03-29
 	q4::inwork; 11821,14317 12077,14186
 EOF
      },
@@ -52334,6 +52335,7 @@ EOF
        text  => 'L20: Bauarbeiten, Sperrung des Radwegs zwischen Falkensee und Bushaltestelle Falkenhagener Forst, 25.03.2026 05:00 Uhr bis 22.05.2026 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~20-03-2026-baustart-radwegsanierung-entlang-der-l202-und-l20
 #: source_id: LS/223-P/26/041 (bis 22.05.2026)
 	2::inwork -10031,18697 -10474,19644
 EOF
@@ -52358,14 +52360,13 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1774635426, # undef,
        text  => 'Betriebsweg an der A100: zwischen Sonnenallee und Kiefholzstr. möglicherweise offen',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: BAB100-2022
 #: osm_watch: note 5220896 1
-#: priority: #A vvv
-#: next_check: 2026-03-25 vvv
+# REMOVED --- #: priority: #A vvv --- #: next_check: 2026-03-25 vvv
 #: osm_watch: way id="1199463691" version="6"
 # REMOVED (deleted) --- #: osm_watch: way id="1199463688" version="3"
 Weg entlang der A100: unklar, ob offiziell eröffnet	2::inwork 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102
@@ -52373,8 +52374,28 @@ Weg entlang der A100: unklar, ob offiziell eröffnet	2::inwork 14341,8763 14326,8
 #: osm_watch: way id="693633081" version="14"
 #: osm_watch: way id="693633082" version="17"
 Weg entlang der A100: unklar, ob offiziell eröffnet	2::inwork 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372
-#: next_check ^^^
-#: priority ^^^
+# REMOVED --- #: next_check ^^^ --- #: priority ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Meinekestr.: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (T,no-G)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2026-03-27
+#: check_frequency: 21d
+	q4::inwork 5313,10420 5341,10756
+EOF
+     },
+     { from  => 1774812579, # 2026-03-29 21:29
+       until => 1777240800, # 2026-04-27 00:00
+       text  => 'Gotha-Allee: Bauarbeiten zwischen Bolivarallee und Meiningenallee, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 26.04.2026 06:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:391148/72 viz2021:13.260879,52.52029, (bis 27.04.2026)
+	q4::inwork 765,12564 618,12563 522,12577
 EOF
      },
     );

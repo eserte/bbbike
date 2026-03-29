@@ -268,7 +268,7 @@ B166 - Meyenburg: Qualität des südlichen Abschnitts? Hier auch asphaltiert?	? 65
 B166 - Berkholz: Qualität?	? 65022,74147 64076,73706 63945,73688
 Altranft - Sonnenburg: Qualität?	? 55627,41154 55542,41087 54597,39850 53976,39070 54043,38820 53890,38424 53397,38297
 Sonnenburg - Baasee: Qualität?	? 53397,38297 52995,38583 52879,38436 52531,38339 52410,38174
-Turmstr. (Potsdam): Qualität?	? -8081,-4396 -8111,-4396 -8259,-4119
+Turmstr. (Potsdam): Qualität? Zugang zum Radweg über Fernwärmeleitung mit Treppe	? -8081,-4396 -8111,-4396 -8259,-4119
 Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8451,-3728 -8510,-3616
 Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Autofahrer befahrbar? Führt hier die Route F3 entlang?	? -26785,5851 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
 Herzfelde - Wichmannsdorf: Qualität?	? 23296,89289 23237,89944 23320,90230 23670,90984 24655,92476 24850,93056
@@ -456,7 +456,7 @@ Wildeberstr. (Potsdam): Qualität des Geh/Radweg-Abschnitts?	? -7248,-3434 -7285,
 Otto-Haseloff-Str. (Potsdam): Qualität des nordöstlichen Abschnitts?	? -6744,-3310 -6811,-3373
 Sternstr. (Potsdam): Qualität des nordöstlichen Abschnitts?	? -6959,-3804 -6941,-3803 -6796,-3645
 Sternstr. (Potsdam): Qualität des südwestlichen Abschnitts?	? -7228,-4113 -7335,-4235 -7436,-4337 -7480,-4391 -7531,-4446 -7616,-4536 -7702,-4629 -7853,-4790
-Newtonstr. - Stern-Center: Können Radfahrer zum Stern-Center fahren?	? -7805,-4022 -7802,-4113
+Newtonstr. - Stern-Center: Können Radfahrer zum Stern-Center fahren? (Rampe am südlichen Ende scheint zu existieren)	? -7805,-4022 -7802,-4113
 Laplacering (Potsdam): Qualität?	? -7819,-3764 -7987,-3769 -7980,-3938 -7812,-3936
 Leibnizring (Potsdam): Qualität?	? -7815,-3805 -7663,-3800 -7656,-3934 -7812,-3936
 Guido-Seeber-Weg (Potsdam): Qualität?	? -7308,-4459 -7378,-4396 -7427,-4439 -7464,-4407 -7480,-4391
@@ -543,7 +543,6 @@ Kirschweg (Potsdam-Uetz-Paaren): Qualität?	? -20914,8535 -20996,8861
 Laubenweg (Potsdam-Grube): Qualität?	? -19987,2459 -19891,2447
 Schwarzer Weg (Potsdam-Grube): Qualität?	? -19422,2220 -19433,2155 -19691,2134 -19924,2119 -20031,2094
 Schmidtshof (Potsdam-Grube): Qualität?	? -19691,2134 -19689,2191 -19927,2193 -19927,2216 -20053,2244
-Zum Wasserturm: Spielstraße? Können Radfahrer direkt zur Friedrich-Engels-Str. fahren?	? -11834,-2213 -11834,-2191 -11830,-2053
 Am Golmer Weinberg (Potsdam-Golm): Qualität?	? -19197,-348 -19180,-292 -19175,-237
 Ritterstr. (Potsdam-Golm): Qualität? Genaue Lage	? -19180,-292 -19101,-318
 Am Gutstor (Groß Glienicke): Qualität?	? -9429,7137 -9445,7199 -9506,7421
@@ -689,7 +688,7 @@ Strandweg (Potsdam): Qualität? Genaue Lage?	? -14285,3039 -14264,3153
 Strandweg (Potsdam-Grube): Qualität? Genaue Lage?	? -19594,4268 -19660,4394 -19646,4521 -19706,4563 -19714,4588
 Am Windmühlenberg (Potsdam-Bornim): Qualität? Ausgeschildert?	? -17052,841 -17075,854 -17076,865 -17250,940 -17570,903
 An der Brauerei (Potsdam): Qualität? Ausgeschildert?	? -9434,-5753 -9381,-5813
-Bebraer Str. (Potsdam): Qualität?	? -8259,-4119 -8339,-4151 -8377,-4091
+Bebraer Str. (Potsdam): Qualität? Zugang zum Radweg über Fernwärmeleitung mit Treppe	? -8259,-4119 -8339,-4151 -8377,-4091
 Bergweg (Potsdam): Qualität? Für Kfz gesperrt? Nachts beleuchtet?	? -9425,-524 -9561,-544
 Fritze-Bollmann-Steig (Potsdam-Grube): Qualität? Genaue Lage? Ist der richtige Straßenname "Bollmannsteig"?	? -19538,4264 -19587,4355 -19625,4416 -19612,4534 -19612,4573
 Weg nach Bornim (Potsdam-Eiche): Qualität? Ausgeschildert?	? -16856,-529 -16856,-498 -16808,-279
@@ -834,6 +833,8 @@ B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
 Buckower Chaussee (Gilt die Einbahnstraßenregelung wieder?)	? 8742,475 8977,505 9004,481
 Lindenallee (Ist die Einbahnstraße mittlerweile für Radfahrer offen?)	? 1429,11528 1403,11428
+tragen (2x15 Stufen) (Bleibt der Übergang erhalten?)	? 9209,417
+tragen (3x12 Stufen) (Bleibt der Übergang erhalten?)	? 9249,421
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
 Verbundsteinpflaster, teilweise schadhaft (Wurzelschäden) (Wird die Qualität des Radwegs nach den Bauarbeiten besser sein?)	? 43162,14428 42996,14793
@@ -864,9 +865,12 @@ Lemkestr.: zwischen Sudermannstr. und Lenbachstr. Bauarbeiten, Fahrbahn kann ges
 Lemkestr.: zwischen Sudermannstr. und Lenbachstr. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Sudermannstr., Ende der Bauarbeiten unbekannt [Sudermannstr.] (Sind die Bauarbeiten beendet?)	? 25306,12602 25363,12553 25462,12473
 Steg am Krugpfuhl gesperrt, Ende der Sperrung unbekannt (Wann ist der Steg wieder offen?)	? 11162,22939 11150,22898
 Kleine Waldstr. - Waldstr.: während der Bauarbeiten zur neuen A117-Anschlussstelle gesperrt, voraussichtlich bis Ende 2025, evtl. wird die Sperrung verlängert [Kleine Waldstr. - Waldstr.] (Ist der Weg noch immer gesperrt?)	? 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
+Weverpromenade: Bauarbeiten, mögliche Umwege, Ende der Bauarbeiten unbekannt [Weverpromenade: Umwege] (Sind die Bauarbeiten beendet?)	? 5541,4305 5721,4356
 Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024, evtl. sind die Bauarbeiten bereits beendet [Schildower Str. zwischen Elsestr. und Stadtgrenze] (Sind die Bauarbeiten in der Schildower Straße und Umgebung beendet?)	? 4683,24275 4705,24284 4779,24321 4849,24335 4898,24351
 Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024, evtl. sind die Bauarbeiten bereits beendet [Amandastr.: Einbahnstraßenregelung] (Sind die Bauarbeiten in der Schildower Straße und Umgebung beendet?)	? 4302,24291 4312,24323 4340,24413
 Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024, evtl. sind die Bauarbeiten bereits beendet [Seeblickstr.: Einbahnstraßenregelung] (Sind die Bauarbeiten in der Schildower Straße und Umgebung beendet?)	? 4233,24459 4187,24332
 Schildower Str.: Bauarbeiten zwischen Marthastr. und Elsestr., Sperrung der Fahrbahn, vermutlich sind auch Radfahrer betroffen, ab 22. Juli 2024, evtl. sind die Bauarbeiten bereits beendet [Bertastr.] (Sind die Bauarbeiten in der Schildower Straße und Umgebung beendet?)	? 4448,24277 4510,24170
+Betty-Katz-Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? 4630,6534 4846,6417
 Lauinger Str., Gartenstr.: einige Wege sind gesperrt, Umwege erforderlich, Ende der Bauarbeiten unbekannt (Sind die Wege weiterhin gesperrt?)	? 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 Fehrbelliner Str.: möglicherweise im Bereich der Schulen zeitweise oder dauerhaft gesperrt [Fehrbelliner Str.] (Ist hier tatsächlich zeitweise oder dauerhaft gesperrt?)	? -3761,15604 -3727,15695
+Marienburger Str.: Einbahnstraßenregelung zwischen Winsstr. und Greifswalder Str. (Besteht die Einbahnstraßenregelung weiterhin?)	? 11821,14317 12077,14186

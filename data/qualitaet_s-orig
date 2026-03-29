@@ -393,7 +393,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="30"
-#: last_checked: 2026-01-28
+#: last_checked: 2026-03-27
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -490,7 +490,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-03-24
+#: last_checked: 2026-03-27
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -1315,7 +1315,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 #: osm_watch: way id="4810830" version="46"
 #: osm_watch: way id="1431956179" version="1"
-#: last_checked: 2025-12-20
+#: last_checked: 2026-03-28
 #: check_frequency: 720d
 #: next_check: 2028-12-31
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
@@ -7071,6 +7071,9 @@ Wilhelmine-Reichard-Weg: Asphalt	Q0 -8195,6459 -8068,6261 -8044,6251 -7999,6258
 (Zufahrt Luftwaffenmuseum): Asphalt	Q0 -7915,7063 -7668,7117
 Sparnecker Weg: Kopfsteinpflaster	Q2- -8125,6184 -7999,6258
 Selbitzer Str.: Asphalt	Q0 -8116,6167 -8206,6072 -8262,5901 -8370,5670
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1657244.php
+#: XXX Verbundsteinpflaster wird durch Asphalt ersetzt (während der Osterferien 2026)
+#: next_check: 2026-04-13
 Selbitzer Str.: Verbundsteinpflaster	Q1 -8370,5670 -8442,5530
 Selbitzer Str.: Asphalt	Q0 -8442,5530 -8487,5445 -8553,5329 -8614,5185 -8634,5065 -8634,4921 -8642,4789 -8637,4741 -8654,4625
 Zingerleweg: teilweise welliger Asphalt	Q1 -8252,5613 -8370,5670 -8470,5716 -8571,5764 -8694,5816 -8713,5814
@@ -12394,7 +12397,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX mittlerweile gibt es im Schatten der kleinen Baustelle an der Simon-Dach-Str. Ausbesserungsarbeiten; anscheinend werden diese bis mindestens Boxhagener Platz durchgeführt
-#: last_checked: 2026-03-23
+#: last_checked: 2026-03-29
 #: check_frequency: 14d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -19109,10 +19112,11 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.tagesspiegel.de/berlin/bezirke/galerie-gemalde-und-abrissbagger-hier-sind-die-neuen-plane-fur-den-gutspark-neukladow-13440736.html (Bau wird 2025 gestartet)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/es-geht-langsamer-voran-als-geplant-wieder-verzogerungen-im-berliner-ausflugsparadies-14639003.html (Baustart 2026?)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/bundeswehr-kultur-wohnungsbau-vier-baustellen-in-berliner-sudwesten-wo-bagger-anrucken-15295421.html
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamtes/beschluss-10022026.pdf (zur Finanzierung)
 #: XXX wird hier asphaltiert?
 #: osm_watch: way id="205746338" version="10"
-#: last_checked: 2025-11-01 (Tsp)
-#: check_frequency: 150d
+#: last_checked: 2026-02-10 (BA-Beschluss)
+#: check_frequency: 120d
 #: next_check: 2026-12-31 (Tsp)
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt

@@ -4068,6 +4068,15 @@ Schwingtor	BNP:5::trailer=10 4183,13725
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13021 (Antrag)
+#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13066 (Anfrage)
+#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13178 (Antrag)
+#: osm_watch: way id="27457006" version="30"
+#: note: war mal in temp_blockings
+#: last_checked: 2026-03-28 (osm)
+#: check_frequency: 180d
+Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
+# 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11088 (zum Neubau des Heinrich-Hertz-Gymnasiums)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_46_4257_4312_online.pdf (Einziehung)
@@ -4118,7 +4127,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: osm_watch[closed]: note 5192591 2
 #: osm_watch[closed]: note 5192593 1
 #: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
-#: last_checked: 2026-03-21 vvv
+#: last_checked: 2026-03-27 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-07-01 vvv
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
@@ -4177,7 +4186,7 @@ südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,
 #: by: https://www.entwicklungsstadt.de/puschkinallee-ausbau-am-bka-standort-treptow-nimmt-form-an/
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
-#: last_checked: 2026-03-14
+#: last_checked: 2026-03-27
 #: check_frequency: 60d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4302,14 +4311,14 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: next_check: 2026-12-31 vvv
 # REMOVED (laut osm hier offen) --- #: osm_watch: way id="946008571" version="9" --- An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
 #: XXX außerdem Anbindung zum Mauerweg geplant
-#: osm_watch: way id="1344518197" version="2"
+#: osm_watch: way id="1344518197" version="3"
 #: osm_watch: way id="1420324060" version="2"
 # REMOVED (laut osm hier offen) --- Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019
 # REMOVED (fertig) --- Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12772,1019 12808,968
 # REMOVED (fertig) --- #: XXX außerdem Anbindung zum Mauerweg geplant --- #: osm_watch: way id="946008579" version="8" --- # REMOVED (laut osm hier offen) --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12861,1102 12868,1085 --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12868,1085 12860,1057 12882,999
 #: XXX außerdem Anbindung zum Mauerweg geplant
-#: osm_watch: way id="1341530667" version="1"
+#: osm_watch: way id="1341530667" version="2"
 # REMOVED (laut osm hier offen) --- Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101
 Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12933,1101 12946,1027
 #: osm_watch: way id="1482608309" version="1"
@@ -4471,7 +4480,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-03-24
+#: last_checked: 2026-03-28
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4504,7 +4513,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 1
-#: last_checked: 2026-03-26 vvv
+#: last_checked: 2026-03-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-03-31 (website) vvv
 #: osm_watch: way id="1054783030" version="8"
@@ -4531,7 +4540,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2025-12-03
+#: last_checked: 2026-03-27
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4563,7 +4572,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-03-22 vvv
+#: last_checked: 2026-03-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-04-15 (Tsp, Fahrrat) vvv
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
@@ -4768,11 +4777,12 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: next_check_id: KANZLERPARK-2024
 #: XXX Bauarbeiten am Kanzlerpark
 #: XXX nach den Bauarbeiten ggfs. Einbahnstraßenregelung in der Ingeborg-Drewitz-Allee wieder herstellen
+#: XXX wird es den Diagonalweg Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee in Zukunft noch geben? (Platz wäre noch...)
 #: by: https://berliner-abendblatt.de/berlin-news/kein-feierlicher-spatenstich-fuer-kanzleramts-neubau-id223830
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
 #: by: https://www.entwicklungsstadt.de/erweiterung-des-bundeskanzleramtes-baukoerper-steht-neue-bruecke-wartet-auf-ihren-einbau/
-#: last_checked: 2026-01-16 vvv
+#: last_checked: 2026-03-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="5"
@@ -4795,7 +4805,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
 #: osm_watch: note 3644429 8
-#: last_checked: 2026-03-17
+#: last_checked: 2026-03-27
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -4823,7 +4833,7 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2026-03-14
+#: last_checked: 2026-03-27
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -4932,6 +4942,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: by: https://www.cdu-lichtenberg.de/artikel/schulneubau-der-hauptstrassegeorg-loewenstein-strasse (Fertigstellung der Schule im 2. Quartal 2027, der Außenanlagen im 2. Quartal 2028)
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1642232.php (Richtfest; Übergabe bis Dezember 2026)
 #: by: https://www.entwicklungsstadt.de/richtfest-fuer-neue-grundschule-in-lichtenberg-432-plaetze-bis-ende-2026/
+#: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11109 (zur Schulneugründung)
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
@@ -5016,7 +5027,7 @@ Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 #: osm_watch: way id="945966258" version="3"
 #: osm_watch[closed]: note 5077509 1
 #: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])
-#: last_checked: 2026-02-27
+#: last_checked: 2026-03-27
 #: check_frequency: 120d
 #: next_check: 2026-09-30 (Baustellenschild)
 # REMOVED --- Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -5056,7 +5067,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2026-02-27 vvv
+#: last_checked: 2026-03-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5122,7 +5133,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-03-26 vvv
+#: last_checked: 2026-03-27 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5353,7 +5364,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-03-18
+#: last_checked: 2026-03-27
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
