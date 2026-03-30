@@ -632,15 +632,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork -20615,67938 -21068,67751 -21523,67550
-',
-         'from' => 1773961200,
-         'id' => 439,
-         'text' => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung, 20.03.2026 bis 30.03.2026',
-         'type' => 'gesperrt',
-         'until' => 1774893600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4844,78 +4836,7 @@ Landjägerbrücke	q4::inwork 22426,4609 22446,4581 22458,4565 22495,4523
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BERLINHALBMARATHON-RECURRING
-#: url: https://www.generali-berliner-halbmarathon.de/
-#: by: https://viz.berlin.de/2022/04/halbmarathon/ (3.4.2022)
-#: by: https://twitter.com/ellirhc11/status/1509924822444298250
-#: by: https://viz.berlin.de/2023/03/halbmarathon/ (2.4.2023)
-#: by: https://berliner-abendblatt.de/berlin-news/berliner-halbmarathon-darauf-muessen-sich-verkehrsteilnehmer-einstellen-id215213
-#: by: https://nitter.cz/VIZ_Berlin/status/1641788685896105984#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnNqQjBNcFdZQUFVWEl1LmpwZw==
-#: by: https://www.tagesspiegel.de/berlin/berliner-halbmarathon-2025-strecke-sperrungen-und-termine-am-wochenende--ein-uberblick-13468081.html
-#: source_id: viz2021:13.376808,52.516209,31.03.2023,06:00 (bis 31.03.2023) (inaktiv)
-#: source_id: viz2021:13.369347,52.515752,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
-#: source_id: viz2021:13.37086,52.51939,31.03.2023,18:00 (bis 03.04.2023) (inaktiv)
-#: source_id: viz2021:13.36973,52.517661,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
-#: source_id: viz2021:13.376808,52.516209,05.04.2024,06:00 (bis 05.04.2024) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
-#: source_id: viz2021:13.36975,52.51584,05.04.2024,18:00 (bis 08.04.2024) (inaktiv)
-#: source_id: viz2021:13.376808,52.516209,08.04.2024,06:00 (bis 08.04.2024) (inaktiv)
-#: source_id: bvg2024:m19#d0ae615b-3c36-48ec-902c-234bee6c8cee (2025-04-06) (2026-03-29)
-#: source_id: viz2021:13.37257,52.520854,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
-#: source_id: viz2021:13.373428,52.515998,04.04.2025,06:00 (bis 04.04.2025) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,04.04.2025,18:00 (bis 07.04.2025) (inaktiv)
-#: source_id: viz2021:13.373428,52.515998,07.04.2025,12:00 (bis 07.04.2025) (inaktiv)
-#: source_id: LMS-BR:402958/72 viz2021:13.36968,52.51571,26.03.2026,06:00 (bis 30.03.2026)
-	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
-	2::temp 8540,12420 8775,12457
-	2::temp 8309,12758 8306,12609 8207,12606
-	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8068,12237 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
-	2::temp 8306,12609
-	2::temp 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156 7215,12129 6812,12057
-	3 8554,12593 8540,12420 8775,12457
-	3 8399,12610 8420,12556 8421,12479 8400,12417 8391,12389
-# REMOVED ---	3 8369,12609 8373,12416 8391,12389
-	3 8775,12457 8540,12420 8554,12593
-	3 8327,12174 8344,12221 8391,12389
-	3 7429,12070 7383,12095 7288,12156 7031,12320
-# REMOVED ---	3 8391,12389 8373,12416 8369,12609
-	3 8391,12389 8344,12221 8327,12174
-	3 8391,12389 8400,12417 8421,12479 8420,12556 8399,12610
-	3 7654,12464 7627,12380 7603,12353
-	3 7603,12353 7627,12380 7654,12464
-	3 8592,12252 8538,12245 8522,12187
-	3 8592,12252 8538,12245 8502,12226
-	3 7822,12201 7816,12150 7823,12120
-	3 7822,12201 7836,12247 7875,12363 7945,12592
-	3 8522,12187 8538,12245 8502,12226
-	3 8522,12187 8538,12245 8592,12252
-	3 7945,12592 7875,12363 7836,12247 7822,12201
-	3 7945,12592 8122,12603 8120,12756
-	3 7031,12320 7288,12156 7383,12095 7429,12070
-	3 8502,12226 8538,12245 8522,12187
-	3 8502,12226 8538,12245 8592,12252
-	3 8120,12756 8122,12603 7945,12592
-	3 7823,12120 7816,12150 7822,12201
-',
-         'from' => 1774479600,
-         'id' => 3086,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              3
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 27.03.2026 bis 30.03.2026 6 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1774843200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5202,7 +5123,7 @@ Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-03-11
+#: last_checked: 2026-03-30
 #: check_frequency: 30d
 #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -6977,13 +6898,13 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 7
 #: osm_watch: note 3834144 9
-#: also_indoor: traffic (re-T,ex-H,re-G,ex-W,ex-A)
+#: also_indoor: traffic (re-T,re-ex-H,re-G,re-ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2026-01-22 (traffic)
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-03-30 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 ',
@@ -7073,7 +6994,23 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: KATHARINAPAULUS-2023
+#: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
+#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
+#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026)
+#: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
+#: last_checked: 2026-03-16
+#: check_frequency: 180d
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
+	q3::inwork; 7872,13022 7873,12927
+',
+         'from' => 1683010800,
+         'id' => 3800,
+         'text' => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, geplant bis Ende Juli 2026',
+         'type' => 'handicap',
+         'until' => 1785535199
+       },
        {
          'data' => '#: next_check_id: WILTBERG-2022
 #: by: https://viz.berlin.de/2023/05/verkehrsvorschau-300523/ (alte Sperrung)
@@ -7350,28 +7287,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.4345,52.47926,01.09.2023,07:00 (Komplettsperrung, bis 19.12.2024) (inaktiv)
-#: source_id: LMS-BR:311065/72 viz2021:13.432599,52.479016,01.09.2023,07:00 (bis 30.03.2026)
-#: osm_watch: way id="1207706195" version="7"
-#: osm_watch: note 5147506 2
-#: by: https://www.berliner-woche.de/neukoelln/c-bauen/infos-rund-um-die-karl-marx-strasse_a411332
-#: by: https://www.berliner-woche.de/neukoelln/c-bauen/naturschutzverband-bund-verlegt-seine-zentrale-an-die-rollbergstrasse_a420895 (Fertigstellung 2026)
-#: by: https://www.entwicklungsstadt.de/bund-baut-neue-bundesgeschaeftsstelle-auf-dem-vollgut-areal-in-neukoelln/ (Bezug im zweiten Quartal 2026)
-#: note: Halteverbotsschilder bis Ende März 2026
-#: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung
-#: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-03-18
-#: check_frequency: 90d
-#: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
-	q4::inwork; 12407,8177 12545,8209
-',
-         'from' => 1693458000,
-         'id' => 3913,
-         'text' => 'Rollbergstr.: Baustelle zwischen Hans-Schiftan-Str. und Uwe-Lieschied-Str., Einbahnstraßenregelung, voraussichtlich bis Ende März 2026',
-         'type' => 'handicap',
-         'until' => 1774886400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8277,7 +8193,7 @@ Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,
        {
          'data' => '#: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12009 (Anfrage)
-#: source_id: LMS-BR:392283/72 viz2021:13.58978,52.513229, (bis 27.02.2026) (bis 31.03.2026)
+#: source_id: LMS-BR:392283/72 viz2021:13.58978,52.513229, (bis 27.02.2026) (bis 31.03.2026) (bis 30.04.2026)
 #: note: Länge der Engstelle etwa 80m
 #: note: außerdem ist der Radweg auf der Heinrich-Grüber-Str. wahrscheinlich gesperrt
 #: note: Halteverbotsschilder bis 31.12.2025
@@ -8287,12 +8203,12 @@ Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,
 #: last_checked: 2026-03-03 (mapillary)
 # REMOVED --- #: check_frequency: 90d (traffic check)
 # REMOVED --- #: next_check: 2025-12-31 (Halteverbotsschilder)
-#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 	q3::inwork; 23251,12146 23017,12177
 ',
          'from' => undef,
          'id' => 4218,
-         'text' => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende März 2026',
+         'text' => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende April 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8924,14 +8840,14 @@ Südendstr.: Sperrung nur im Kreuzungsbereich	q3::inwork 5274,5557 5466,5523
        undef,
        {
          'data' => '#: source_id: viz2021:13.457594,52.43103,05.05.2025,07:00 (bis 30.10.2025) (inaktiv)
-#: source_id: LMS-BR:367900/72 viz2021:13.45996,52.43191,05.05.2025,07:00 viz2021:13.45996,52.43191, (bis 30.10.2025) (bis 19.12.2025) (bis 30.03.2026)
+#: source_id: LMS-BR:367900/72 viz2021:13.45996,52.43191,05.05.2025,07:00 viz2021:13.45996,52.43191, (bis 30.10.2025) (bis 19.12.2025) (bis 30.03.2026) (bis 30.11.2026)
 	q4::inwork 14154,2923 14212,2865
 ',
          'from' => 1746334800,
          'id' => 4321,
-         'text' => 'Imbuschweg: Anbindung Johannisthaler Chaussee gesperrt, evtl. sind auch Radfahrer betroffen, vom 05.05.2025 07:00 bis voraussichtlich 30.03.2026',
+         'text' => 'Imbuschweg: Anbindung Johannisthaler Chaussee gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende November 2026',
          'type' => 'handicap',
-         'until' => 1774907999
+         'until' => 1796079599
        },
        undef,
        undef,
@@ -8984,15 +8900,17 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (none)
-#: last_checked: 2026-03-04
+         'data' => '#: next_check_id: WOENNICH-2026
+#: also_indoor: traffic (none)
+#: note: Halteverbotsschilder ursprünglich bis 31.03.2026, mittlerweile 30.09.2026
+#: last_checked: 2026-03-30
 #: check_frequency: 120d
-#: next_check: 2026-03-31 (Halteverbotsschilder)
+#: next_check: 2026-09-30 (Halteverbotsschilder)
 	q4::inwork 16915,11634 16957,11726
 ',
          'from' => undef,
          'id' => 4341,
-         'text' => 'Wönnichstr.: Fahrbahn zwischen Einbecker Str. und Irenenstr. gesperrt, voraussichtlich bis Frühjahr 2026',
+         'text' => 'Wönnichstr.: Fahrbahn zwischen Einbecker Str. und Irenenstr. gesperrt, voraussichtlich bis Herbst 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9010,7 +8928,7 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-03-24 (traffic) vvv
+#: last_checked: 2026-03-30 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 # REMOVED (evtl. nicht mehr?) ---	q4::inwork; 2924,9391 2947,9367
@@ -9252,8 +9170,8 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: note: bei rbb bis 02.10.2025
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
 #: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
-#: also_indoor: traffic (re-T,G)
-#: last_checked: 2026-03-17
+#: also_indoor: traffic (ex-re-T,G)
+#: last_checked: 2026-03-30
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2025-12-19 (VIZ-Verkehrsmeldung)
 # REMOVED (hier nicht (mehr?)) ---	q4::inwork 5700,10226 5597,10299
@@ -9484,7 +9402,7 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiasgxyh4yi2yyv2ipifgm5ybdhxw3cbimwdzuqkhqo6rzca5axq3a@jpeg
 #: source_id: LMS-BR:381588/72 viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026) (bis 31.03.2026)
-#: source_id: LMS-BR:386922/72 viz2021:13.31541,52.42855, (bis 31.01.2026) (bis 31.03.2026)
+#: source_id: LMS-BR:386922/72 viz2021:13.31541,52.42855, (bis 31.01.2026) (bis 31.03.2026) (bis 19.06.2026)
 Schillerstr.	q3::inwork 4429,2396 4568,2424
 #: note: nicht komplett gesperrt
 Goethestr.	q3::inwork 4568,2424 4526,2648
@@ -9492,29 +9410,29 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
 ',
          'from' => 1756417862,
          'id' => 4430,
-         'text' => 'Schillerstr. und Goethestr.: Bauarbeiten, Sperrungen, bis Ende März 2026',
+         'text' => 'Schillerstr. und Goethestr.: Bauarbeiten, Sperrungen, bis Mitte Juni 2026',
          'type' => 'handicap',
-         'until' => 1774994399
+         'until' => 1781906399
        },
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxtebnjz3s2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic5lycfbu4ygtwangqqvtwdmgujojeqx4yzlmlyzox3qcirs66hxy@jpeg
-#: source_id: LMS-BR:381983/72 viz2021:13.34231,52.52413,02.09.2025,06:00 (bis 27.02.2026) (bis 31.03.2026)
+#: source_id: LMS-BR:381983/72 viz2021:13.34231,52.52413,02.09.2025,06:00 (bis 27.02.2026) (bis 31.03.2026) (bis 30.04.2026)
 #: osm_watch: way id="169658769" version="29"
 #: note: Baustelle fängt einige Meter westlich der Kreuzung Krefelder Str. an
 	q4::inwork 6183,13083 6114,13095 5993,13064
 ',
          'from' => 1756792864,
          'id' => 4432,
-         'text' => 'Essener Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Stromstr. und Krefelder Str., bis zum 31.03.2026',
+         'text' => 'Essener Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Stromstr. und Krefelder Str., bis zum 30.04.2026',
          'type' => 'handicap',
-         'until' => 1774994399
+         'until' => 1777586399
        },
        undef,
        {
          'data' => '#: also_indoor: traffic (G,H,no-T)
-#: last_checked: 2026-02-15 (daf)
+#: last_checked: 2026-03-30 (daf)
 #: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 ',
@@ -9642,18 +9560,18 @@ Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260119
 #: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025) (inaktiv)
-#: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026) (bis 31.03.2026)
+#: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026) (bis 31.03.2026) (bis 30.05.2026)
 #: note: laut rbb ebenfalls nur bis Ende Januar 2026
 #	q4::inwork; 17916,5675 18013,5627
 #: last_checked: 2026-01-27 (mapillary)
-#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-05-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 17916,5675 18013,5627
 ',
          'from' => 1768777200,
          'id' => 4454,
-         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 20.01.2026 bis voraussichtlich Ende März 2026',
+         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., voraussichtlich bis Ende Mai 2026',
          'type' => 'handicap',
-         'until' => 1774994399
+         'until' => 1780178399
        },
        undef,
        {
@@ -10290,7 +10208,38 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/dunckerbruecke/ (Bauarbeiten: 2025 bis 2027) (mittlerweile 2026-2027) (mittlerweile 2. Quartal 2026 bis 3. Quartal 2028)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/jahrelange-verzogerungen-in-berlin-senat-verschiebt-weitere-bruckenbauten-uber-den-s-bahn-ring-12504611.html (Verzögerung: Baustart erst 2026, Bauzeit 15 Monate)
+#: by[nocache]: https://archive.is/Onetg
+#: by: https://www.tagesspiegel.de/berlin/noch-mehr-falle-von-risiko-stahl-wie-in-dresden-mindestens-vier-berliner-brucken-mussen-abgerissen-werden-13093906.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-verkehrseinschrankungen-drohen-abriss-plan-fur-zwei-weitere-risiko-brucken-uber-berliner-s-bahn-ring-steht-14930483.html (Baubeginn im 1. Quartal 2026, Bauende 2028)
+#: by: https://www.entwicklungsstadt.de/brueckenerneuerungen-im-prenzlauer-berg-zeitplan-fuer-dunckerbruecke-und-pappelallee-stehen/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mem2uvbli224 (Sperrung)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3meqixlgqxk2v (wieder passierbar)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1657877.php (Fertigstellung des Ersatzneubaus im 3. Quartal 2028)
+#: by[nocache]: https://datenbox.stadt-berlin.de/filr/public-link/file-download/ff8080829cc8a6be019d3ecb1ecd320a/56806/-1750463542264121186/VZP01_SVB134_03AB26-03531.pdf
+#: by[nocache]: https://datenbox.stadt-berlin.de/filr/public-link/file-download/ff8080829cc8a6be019d3ecb15d331fe/56807/6355489618209798644/VZP_UL01_SVB134_03AB26-03531.pdf
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mic6eylp6c2u
+#: osm_watch: note 5163943 1
+#: XXX: Dunckerbrücke: Ersatzneubau
+#: XXX ursprüngliche Planung: während der Bauarbeiten soll der Fußgänger- und Radverkehr auf einer Brückenhälfte stattfinden können; mittlerweile wird es wohl eine Vollsperrung geben, ab 3. Quartal 2027 wird der Fuß+Radverkehr über den neuen Rohbau geführt werden
+#: last_checked: 2026-03-30 (Pressemitteilung) vvv
+#: check_frequency: 120d vvv
+#: next_check: 2028-09-30 (Pressemitteilung) vvv
+Dunckerbrücke	2::inwork 11689,15639 11654,15572
+Kanzowstr. - Dunckerstr.: Fahrbahnbereich abschnittsweise gesperrt	q3::inwork 11916,15500 11689,15639 11736,15727
+Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1774908000,
+         'id' => 4533,
+         'text' => 'Dunckerbrücke: Vollsperrung ab dem 01.04.2026',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-02-2026-l16_erneuerung-sperrung-zw-paaren-und-gruenefeld
 	2::inwork -18187,27206 -18694,27999 -19216,29323
@@ -10637,8 +10586,8 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-03-2026-l238-deckenerneuerung-altenhof
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%20238%20Altenhof%20-%20KP%20L%2023%20Baubeginn%20Deckenerneuerung_Karte%2013-03-26.pdf
 #: source_id: LS/221-E/26/020 (bis 30.06.2026)
-#: note: 1. BA bis 10.04.2026
-#: next_check: 2026-04-10 vvv
+#: note: 1. BA bis 12.04.2026
+#: next_check: 2026-04-12 vvv
 	2::inwork 30158,56695 30049,56674 30146,56367
 	q4::inwork 30146,56367 30225,55956
 # note: 2. BA vom 13.04.2026 bis 24.04.2026
@@ -10676,16 +10625,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'type' => 'gesperrt',
          'until' => 1779472800
        },
-       {
-         'data' => '#: source_id: 256502094 (bis 02.04.2026)
-	2::inwork -3203,25328 -3331,25078
-',
-         'from' => 1774760400,
-         'id' => 4567,
-         'text' => 'Henningsdorf: Sperrung der Bahnunterführung, evtl. sind auch Radfahrer betroffen, 30.03.2026 07:00 Uhr bis 02.04.2026 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1775142000
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mhwuh3kyg22m
 #: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026)

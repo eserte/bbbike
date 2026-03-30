@@ -1014,7 +1014,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-03-07
+#: last_checked: 2026-03-30
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1926,13 +1926,13 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 	RW2; 14530,7301 14430,7348 14379,7372 14369,7376 14334,7395 14323,7403 14305,7415 14174,7505
 #: by: https://www.entwicklungsstadt.de/estrel-tower-rueckbau-des-zweiten-krans-markiert-weiteren-baufortschritt/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mfiwaviigs24 (Fernwärmearbeiten bis Ende März 2026)
-#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 (bis 31.03.2026)
+#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 (bis 31.03.2026) (bis 31.07.2026)
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-03-27
+#: last_checked: 2026-03-30 (webcam)
 #: check_frequency: 21d
-#: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 	RW0; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
 neues Verbundsteinpflaster	RW2; 14305,7415 14323,7403 14334,7395 14369,7376
@@ -3351,16 +3351,17 @@ Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 140
 Gehwegplatten	RW2; 15361,12071 15300,11965 15256,11884
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 relativ schmale Radspuren	RW3; 15256,11884 15202,11789 15153,11691
-#: last_checked: 2026-03-13
-#: next_check: 2026-03-31
-#: valid: -20260331
+#: last_checked: 2026-03-30
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2026-03-31
+#: valid: -20260410
 Tempo 20 und Radfahrüberholverbot	RW0; 15153,11691 15106,11598
-#: valid: !-20260331
+#: valid: !-20260410
 relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-03-22
+#: last_checked: 2026-03-30
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3371,18 +3372,19 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-03-22
+#: last_checked: 2026-03-30
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
 #: valid: 20250611-20270331
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
-#: last_checked: 2026-03-13
-#: next_check: 2026-03-31
-#: valid: -20260331
+#: last_checked: 2026-03-30
+#: check_frequency: 10d
+# REMOVED --- #: next_check: 2026-03-31
+#: valid: -20260410
 Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691
-#: valid: !-20260331
+#: valid: !-20260410
 relativ schmale Radspuren	RW3; 15106,11598 15153,11691
 relativ schmale Radspuren	RW3; 15153,11691 15202,11789 15256,11884
 #: note ^^^
