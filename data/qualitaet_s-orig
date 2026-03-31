@@ -382,7 +382,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2- 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2025-12-14
+#: last_checked: 2026-03-31
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -393,7 +393,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="30"
-#: last_checked: 2026-03-27
+#: last_checked: 2026-03-31
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -1084,7 +1084,7 @@ Görlitzer Park: Asphalt	Q0 12814,9966 12833,9998 12866,10064
 Görlitzer Park: Gehwegplatten	Q0- 12866,10064 12901,10134 12905,10143
 Görlitzer Park, Rondell: Asphalt	Q0 12774,10178 12795,10147 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196
 Görlitzer Park, Rondell: Kopfsteinpflaster	Q2 12728,10196 12757,10197 12774,10178
-Görlitzer Park: Asphalt	Q0 12802,10097 12670,10160
+Görlitzer Park: Asphalt, Regenablaufrinnen	Q1+ 12802,10097 12670,10160
 Görlitzer Park: Asphalt/Kleinsteinpflaster	Q1+ 12507,10130 12504,10172
 Görlitzer Park: Kleinsteinpflaster	Q1- 12504,10172 12464,10153
 Görlitzer Park: Asphalt	Q0 12504,10172 12509,10189 12543,10223 12580,10252
@@ -14102,6 +14102,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13991 (Einwohneranfrage)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13993 (Einwohneranfrage)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13997 (Einwohneranfrage)
+#: by: https://www.entwicklungsstadt.de/streitpunkt-stadtgruen-wie-es-mit-der-ollenhauerstrasse-weitergeht/
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: last_checked: 2026-03-21 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
@@ -16367,8 +16368,8 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10373,18887 10358,18882
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20220724 (BPU 2022 anvisiert, außerdem Erwähnung der Planung in der Hermann-Hesse-Str.)
 #: by: https://www.berliner-woche.de/pankow/c-bauen/senat-stellt-mehr-foerdermittel-fuer-hertha-und-hugenottenplatz-bereit_a365807 (Erwähnung, außerdem Weiterführung der Fahrradstraße in der Waldstr.)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409226405/berlin-pankow-aerger-um-holperpiste-fahrradprojekt-nach-zehn-jahren-gestoppt.html (aus finanziellen Gründen gestoppt)
-#: osm_watch: way id="4764684" version="34"
-#: osm_watch: way id="26790073" version="22"
+#: osm_watch: way id="4764684" version="35"
+#: osm_watch: way id="26790073" version="23"
 #: last_checked: 2026-02-07 (mapillary)
 #: check_frequency: 360d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421

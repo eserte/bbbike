@@ -29634,7 +29634,7 @@ EOF
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
-       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Mitte März 2026: Durchfahrt nicht möglich)',
+       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Ende März 2026: Bauzäune können weggeschoben sein)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: alte Bauarbeiten von 2018 - 2022
@@ -29658,7 +29658,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-03-22 vvv
+#: last_checked: 2026-03-31 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
@@ -29671,7 +29671,7 @@ EOF
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 # REMOVED (offen) --- Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14320,9530
 #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal (mittlerweile eher nicht) weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
+Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
 # REMOVED (offen) ---	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 # REMOVED (offen) ---	2::inwork 15298,8781 15343,8714
 # REMOVED (passierbar) ---	2::inwork 15343,8714 15378,8668
@@ -38086,7 +38086,8 @@ EOF
 #: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026) (neue ID -> inaktiv)
 #: source_id: LMS-BR:376495/72 viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026) (bis 18.05.2026) (bis 31.12.2026)
 #: source_id: LMS-BR:392668/72 viz2021:13.40504,52.38669,09.12.2025,00:00 (Mellener Str. (nicht eingetragen), bis 18.05.2026) (bis 31.12.2026)
-#: source_id: bvg2024:m76#HIM_FREETEXT_292859
+#: source_id[inactive]: bvg2024:m76#HIM_FREETEXT_292859
+#: source_id: bvg2024:m76#HIM_FREETEXT_328938
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
@@ -40201,18 +40202,18 @@ EOF
 #: source_id: viz2021:13.3076,52.50361,04.12.2023,13:13 (bis 01.04.2024) (vorfristig inaktiv)
 #: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024) (inaktiv)
-#: source_id: LMS-BR:396763/72 viz2021:13.31537,52.50317,22.01.2026,07:00 (bis 31.03.2026)
+#: source_id: LMS-BR:396763/72 viz2021:13.31537,52.50317,22.01.2026,07:00 (bis 31.03.2026) (inaktiv)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/mommsenstrasse-in-berlin-bei-jahrelangen-arbeiten-am-fernwarmenetz-ist-kein-ende-in-sicht-14131187.html ("keine konkreten Termine")
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mcyjddfqrc24 (Sperrung bis 31.03.2026)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch: note 3834145 7
 #: osm_watch: note 3834144 9
-#: also_indoor: traffic (re-T,re-ex-H,re-G,re-ex-W,ex-A)
+#: also_indoor: traffic (ex-re-T,ex-H,re-G,ex-W,ex-A)
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2026-03-30 (traffic)
+#: last_checked: 2026-03-31 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -49690,7 +49691,7 @@ EOF
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-03-18 (traffic)
+#: last_checked: 2026-03-31 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -49771,7 +49772,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-03-15
+#: last_checked: 2026-03-28 (luftbildsuche)
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50083,7 +50084,7 @@ EOF
 #: by[nocache]: https://archive.ph/Vv5di
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1626976.php (nur noch Fahrbahn zwischen Presselstr. und Stindestr. betroffen)
 #: source_id: viz2021:13.34241,52.44693,18.08.2025,06:00 (bis 21.11.2025) (zwischen Siemens- und Presselstr., bis 31.01.2026) (inaktiv)
-#: source_id: LMS-BR:392691/72 viz2021:13.3401,52.44812,09.12.2025,12:00 (zwischen Stinde- und Presselstr., bis 31.03.2026)
+#: source_id: LMS-BR:392691/72 viz2021:13.3401,52.44812,09.12.2025,12:00 (zwischen Stinde- und Presselstr., bis 31.03.2026) (inaktiv)
 #: note: uneinheitliches Enddatum bei der VIZ: bis Anfang November 2025, oder die Variante des Bezirksamts (21.11.2025)? Bei der VIZ-Verkehrsmeldung nun auch 21.11.2025. Mittlerweile verlängert.
 #: note: laut rbb weitere Sperrung der Fahrbahn zwischen Stinde- und Presselstr. bis Ende 03/2026, auch für den Radverkehr (trotz des Hochbordradwegs?)
 	q4::inwork; 6360,4504 6283,4565 6203,4630
@@ -50253,9 +50254,9 @@ EOF
 #: osm_watch: note 4924394 4
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-03-27 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2026-04-30 ( Baustellenschild der Wasserbetriebe) vvv
+#: last_checked: 2026-03-31 vvv
+#: check_frequency: 21d vvv
+#: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
 Rotherstr., Am Rudolfplatz	q4::inwork; 13755,10896 13856,10864 13896,10851 14011,10812
 Rudolfstr.	q4::inwork; 14026,10869 13886,10939
@@ -50823,7 +50824,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: HERMANNDORNERALLEE-2025
 #: also_indoor: traffic (no-G,T,H,no-W) vvv
-#: last_checked: 2025-12-31 (traffic) vvv
+#: last_checked: 2026-03-22 (luftbildsuche) vvv
 #: next_check: 2026-05-31 (BA-Seite) vvv
 Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
 Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::inwork; 18445,2642 18374,2971
@@ -51905,15 +51906,17 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mem2uvbli224 (Sperrung)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3meqixlgqxk2v (wieder passierbar)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1657877.php (Fertigstellung des Ersatzneubaus im 3. Quartal 2028)
-#: by[nocache]: https://datenbox.stadt-berlin.de/filr/public-link/file-download/ff8080829cc8a6be019d3ecb1ecd320a/56806/-1750463542264121186/VZP01_SVB134_03AB26-03531.pdf
-#: by[nocache]: https://datenbox.stadt-berlin.de/filr/public-link/file-download/ff8080829cc8a6be019d3ecb15d331fe/56807/6355489618209798644/VZP_UL01_SVB134_03AB26-03531.pdf
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/dunckerbruecke/dunckerbruecke-sperrung-baustellenbereich-zuwegung.pdf
+#: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/dunckerbruecke/dunckerbruecke-umleitung-rad-fuss-verkehr.pdf
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mic6eylp6c2u
-#: osm_watch: note 5163943 1
+#: by: https://www.tagesspiegel.de/berlin/neubau-dauert-bis-2028-berliner-dunckerbrucke-ab-1-april-gesperrt-15417132.html
+#: by: https://www.entwicklungsstadt.de/ersatzneubau-der-dunckerbruecke-beginnt-planung-bauphasen-verkehrsfuehrung/
+#: osm_watch: note 5163943 2
 #: XXX: Dunckerbrücke: Ersatzneubau
 #: XXX ursprüngliche Planung: während der Bauarbeiten soll der Fußgänger- und Radverkehr auf einer Brückenhälfte stattfinden können; mittlerweile wird es wohl eine Vollsperrung geben, ab 3. Quartal 2027 wird der Fuß+Radverkehr über den neuen Rohbau geführt werden
 #: last_checked: 2026-03-30 (Pressemitteilung) vvv
 #: check_frequency: 120d vvv
-#: next_check: 2028-09-30 (Pressemitteilung) vvv
+#: next_check: 2027-09-30 (mögliche Nutzung durch den Rad+Fußverkehr) vvv
 Dunckerbrücke	2::inwork 11689,15639 11654,15572
 Kanzowstr. - Dunckerstr.: Fahrbahnbereich abschnittsweise gesperrt	q3::inwork 11916,15500 11689,15639 11736,15727
 Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
@@ -52410,6 +52413,15 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:391148/72 viz2021:13.260879,52.52029, (bis 27.04.2026)
 	q4::inwork 765,12564 618,12563 522,12577
+EOF
+     },
+     { from  => 1775448000, # 2026-04-06 06:00
+       until => 1776448800, # 2026-04-17 20:00
+       text  => 'Hirschfelde - Gielsdorf: Brückensperrung, evtl. ist auch der Radverkehr betroffen, 07.04.2026 06:00 Uhr bis 17.04.2026 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/221-F/26/034 (bis 17.04.2026)
+	2::inwork 39226,24131 39390,24178
 EOF
      },
     );
