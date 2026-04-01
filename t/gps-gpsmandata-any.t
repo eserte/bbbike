@@ -29,8 +29,6 @@ use IO::File qw();
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan 'no_plan';
-
 use GPS::GpsmanData::Any;
 
 require GPS::GpsmanData::TestRoundtrip;
@@ -548,5 +546,7 @@ sub _create_temporary_gpx_gz {
 
     $tmpfile;
 }
+
+done_testing;
 
 __END__

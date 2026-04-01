@@ -198,12 +198,13 @@ sub load_gpx {
 	}
 	$root        = $doc->documentElement;
 	$node_name      = sub { $_[0]->nodeName };
-	$node_children  = sub { grep { $_->nodeType == 1 } $_[0]->childNodes };
+	$node_children  = sub { grep { $_->nodeType == 1 } $_[0]->childNodes }; # 1 == XML_ELEMENT_NODE
 	$node_text      = sub { $_[0]->textContent };
 	$node_att       = sub { $_[0]->getAttribute($_[1]) };
+	my $xpc = XML::LibXML::XPathContext->new;
+	$xpc->registerNs('gpxx', 'http://www.garmin.com/xmlschemas/GpxExtensions/v3');
 	$node_findvalue = sub {
-	    my $xpc = XML::LibXML::XPathContext->new($_[0]);
-	    $xpc->registerNs('gpxx', 'http://www.garmin.com/xmlschemas/GpxExtensions/v3');
+	    $xpc->setContextNode($_[0]);
 	    $xpc->findvalue($_[1]);
 	};
     } else {
