@@ -205,7 +205,8 @@ Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 #: osm_watch: note 4996305 1
 #: osm_watch: way id="1025420899" version="8"
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung wieder?
-#: last_checked: 2025-11-29
+#: last_checked: 2026-04-01
+#: check_frequency: 60d
 Buckower Chaussee	1no 8742,475 8977,505 9004,481
 # 
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
@@ -461,7 +462,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
 #: osm_watch: way id="27491366" version="19"
-#: last_checked: 2025-08-20
+#: last_checked: 2026-04-01
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
@@ -2816,21 +2817,21 @@ tragen (3x13 Stufen)	0:45 18739,4728
 tragen	0:45 18661,4655
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
-#: next_check_id: BUCKOWERCHAUSSEE-2022
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24176.pdf (nein?)
-#: note: bei osm wurden die Aufzüge entfernt
-#: add_fragezeichen: Bleibt der Übergang erhalten? vvv
-#: last_checked: 2025-11-29 vvv
-#: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2025-10-08 (pardok) vvv
-#: historical_note: früher (bis etwa Herbst 2025) gab es hier Aufzüge vvv
-tragen (2x15 Stufen)	0:35 9209,417
-tragen (3x12 Stufen)	0:35 9249,421
-#: historical_note ^^^
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED (nicht mehr relevant) --- #: next_check_id: BUCKOWERCHAUSSEE-2022
+# REMOVED --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24176.pdf (nein?)
+# REMOVED --- #: note: bei osm wurden die Aufzüge entfernt
+# REMOVED --- #: add_fragezeichen: Bleibt der Übergang erhalten? vvv
+# REMOVED --- #: last_checked: 2025-11-29 vvv
+# REMOVED --- #: check_frequency: 120d vvv
+# REMOVED --- # REMOVED --- #: next_check: 2025-10-08 (pardok) vvv
+# REMOVED --- #: historical_note: früher (bis etwa Herbst 2025) gab es hier Aufzüge vvv
+# REMOVED --- tragen (2x15 Stufen)	0:35 9209,417
+# REMOVED --- tragen (3x12 Stufen)	0:35 9249,421
+# REMOVED --- #: historical_note ^^^
+# REMOVED --- # REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED --- #: add_fragezeichen ^^^
 # 
 tragen (28 Stufen)	0:30 6138,12877
 Schranke	BNP:3::trailer=10 20480,5445
@@ -4164,12 +4165,12 @@ Am Egelpfuhlgraben: Holzbohlensteg zum Bullengraben gesperrt	2::inwork -5790,134
 #: next_check: 2028-11-03
 Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3606,11532 -3657,11631 -3692,11681
 # 
-#: next_check_id: BUCKOWERCHAUSSEE-2022
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,843064#msg-843064
-#: by: https://youtu.be/K2IBgxLwMxI?si=lYxk-LHhip3m6lCJ&t=669
-#: last_checked: 2025-11-29 (bahninfo-forum)
-#: check_frequency: 120d
-südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
+# REMOVED (nicht mehr relevant) --- #: next_check_id: BUCKOWERCHAUSSEE-2022
+# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,578649,843064#msg-843064
+# REMOVED --- #: by: https://youtu.be/K2IBgxLwMxI?si=lYxk-LHhip3m6lCJ&t=669
+# REMOVED --- #: last_checked: 2025-11-29 (bahninfo-forum)
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- südliche Fußgängerbrücke S Buckower Chaussee: gesperrt	2 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
 # 
 # REMOVED --- #: next_check_id: ALFREDKOWALKE-2025
 # REMOVED --- #: last_checked: 2025-10-25 vvv
@@ -4573,7 +4574,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-03-31 vvv
+#: last_checked: 2026-04-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-04-15 (Tsp, Fahrrat) vvv
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
@@ -4947,7 +4948,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026)
+#: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026)
 #: last_checked: 2026-03-11
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
@@ -5122,7 +5123,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-03-31 vvv
+#: last_checked: 2026-04-01 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5134,7 +5135,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-03-31 vvv
+#: last_checked: 2026-04-01 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

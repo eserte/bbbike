@@ -68,13 +68,13 @@ Bhf. Blankenfelde: neue Unterführung ist noch nicht für den Kfz-Verkehr fertig	2
 #: check_frequency: 180d vvv
 #: next_check: 2028-01-01 vvv
 #: osm_watch: way id="47973246" version="13"
-#: last_checked: 2025-09-06
+#: last_checked: 2026-04-01
 Mecklenburgische Str./Rudolf-Mosse-Str.: Überfahrt gesperrt, für Radfahrer ist ein bisschen Platz frei gelassen	3nocross 3619,7587 3631,7598 3839,7787
 #: osm_watch: way id="223384912" version="12"
-#: last_checked: 2025-12-26 (architektur-urbanistik)
+#: last_checked: 2026-04-01
 Sodener Str.: Einbahnstraßenregelung, Radfahrer frei	1 3688,7093 3703,7324
 #: osm_watch: way id="4395528" version="35"
-#: last_checked: 2025-10-29
+#: last_checked: 2026-04-01
 Schlangenbader Str.: Einbahnstraßenregelung, mit entgegengesetzter provisorischer Radspur	1 3981,6850 3958,7040 3965,7297
 #: next_check ^^^
 #: check_frequency ^^^
@@ -104,7 +104,7 @@ Neue Bahnhofstr.	3 15016,11431 14945,11300 14918,11249 14908,11231
 Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 13305,10789
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
-#: last_checked: 2026-03-31
+#: last_checked: 2026-04-01
 #: check_frequency: 90d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
@@ -2412,8 +2412,9 @@ Antonstr./Ruheplatzstr.: Poller	3 7648,15741 7518,15605 7393,15476
 Antonstr./Ruheplatzstr.: Poller	3 7648,15741 7518,15605 7627,15412
 # 
 Alexandrinenstr.	1 10397,10852 10329,10723 10293,10645 10178,10411
-Alexandrinenstr.	1 10066,10071 10069,10151 10083,10192 10122,10294
-# REMOVED (noch nicht aktiv) --- Brachvogelstr.	1 10029,9989 10006,9942
+Alexandrinenstr.	1 10069,10151 10083,10192 10122,10294
+Brachvogelstr.	1 10066,10071 10069,10151
+Brachvogelstr.	1 10066,10071 10029,9989 10006,9942
 # 
 #: historical_note: der modale Filter wurde ca. Anfang Dezember 2025 eingerichtet vvv
 #: historical_note: seit ca. 2026-02-17 ist die Durchfahrt im Zuge der Alten Jakobstr. für den Linienverkehr frei, drei Poller wurden herausgenommen vvv
@@ -2463,4 +2464,14 @@ Büchsenweg	1 7676,18713 7674,18738 7685,18775 7707,18794 7881,18835 8000,18831 8
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/seltsame-verkehrsfuhrungen-schilder-wirrwarr-irritiert-autofahrer-im-berliner-westen-15374981.html
 #: osm_watch: note 5155889 4
 Guerickestr.: Einfahrt gesperrt	1 4358,12365 4305,12377
+# 
+Schloßstr./Hubertusstr.: Durchlass nur für Radfahrer	3nocross 5091,5979 5099,5994 5137,6066
+# 
+Gritznerstr.: nur Rechtsabbiegen erlaubt	3 4630,6534 4555,6403 4511,6318
+Gritznerstr. -> Schildhornstr.: nur Rechtsabbiegen erlaubt	3 4630,6534 4555,6403 4776,6284
+# 
+Fürbringerstr. -> Solmsstr.: nur Rechtsabbiegen erlaubt	3 9820,9718 9705,9732 9676,9564
+# 
+#: note: keine Ausnahme für den Radverkehr, aber man kann die Fußgängerampel auf der linken Seite benutzen
+Heesestr. -> Albrechtstr.: Linksabbiegen nicht erlaubt	3 5274,5557 5183,5437 5256,5392
 # 

@@ -2,8 +2,6 @@
 #: title: Qualität der Straßen in Berlin
 #: note: XXX_* categorization done 2008-01-26
 #:
-(Fußgängerbrücke - Buckower Chaussee): Asphalt	Q0 9254,413 9239,461 9215,506 9206,553 9347,595 9365,615
-(Bahnsteig - Buckower Chaussee): Asphalt	Q0 9200,450 9160,460 9124,522 9004,481
 Mozartstr.: Kopfsteinpflaster	Q3 10259,-2660 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10474,-3186 10467,-3201
 Eiswerder (Brücken, Straßen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2023,15683 -1978,15684 -1923,15684 -1849,15683 -1833,15689 -1700,15762
@@ -605,7 +603,8 @@ Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12104,8299 12168,8313 12216,83
 Boddinstr.: Kopfsteinpflaster	Q2 12216,8323 12368,8356 12582,8408
 Boddinstr.: Kopfsteinpflaster	Q2 12116,8247 12177,8263 12168,8313
 Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
-Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
+Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177
+Rollbergstr.: Kopfsteinpflaster	Q2 12407,8177 12545,8209 12714,8249
 Uwe-Lieschied-Str.: schlechtes Kopfsteinpflaster	Q3 12407,8177 12427,8109
 Falkstr.: Asphalt	Q0 12162,8053 12178,7985 12179,7979
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12186,7952 12195,7916 12216,7838 12220,7822
@@ -10375,7 +10374,7 @@ Lutterbacher Str.: Asphalt	Q0 2064,3214 2127,3111
 (Biesheimring - Lutterbacher Str.): Verbundsteinpflaster	Q1 2048,3062 2066,3072
 (Biesheimring - Lutterbacher Str.): Verbundsteinpflaster	Q1 1987,3166 1999,3177
 Lynarstr.: Asphalt	Q0 2074,9225 1937,9253
-Johannaplatz: Asphalt	Q0 2132,9267 2074,9225 2098,9173 2165,9155 2193,9195 2177,9251 2132,9267
+Johannaplatz: Asphalt	Q0 2113,9266 2074,9225 2098,9173 2165,9155 2193,9195 2177,9251 2113,9266
 Kietzgrabensteg: Asphalt/Beton	Q0 22514,4632 22531,4605
 Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0 11818,6201 12023,6236 12235,6276 12242,6234
 Weg über Autobahntunnel: Gehwegplatten	Q0 12045,6181 12023,6236
@@ -10738,7 +10737,7 @@ Bornitzstr. [82 A - 92 F]: Verbundsteinpflaster	Q1 16430,12848 16431,12825 16428
 Ramlerstr. [entlang der Swinemünder Brücke]: Kopfsteinpflaster	Q2 9666,15739 9644,15780
 (Bärbel-Bohley-Ring - Ramlerstr.): Asphalt	Q0 9744,15793 9644,15780
 (Alt-Lichtenrade - Töpchiner Weg): Betonpflaster	Q0 10950,-438 11207,-413
-Furkastr.: Beton	Q0 10150,2006 10170,2158 10214,2348 10268,2590
+Furkastr.: Beton	Q1 10150,2006 10141,2034 10170,2158 10214,2348 10268,2590
 Furkastr.: Verbundsteinpflaster	Q1 10268,2590 10271,2603
 Furkastr.: Asphalt	Q0 10271,2603 10304,2743
 Furkastr.: Verbundsteinpflaster	Q1 10304,2743 10322,2815
@@ -13078,7 +13077,7 @@ An der Wildbahn: Asphalt mit Schäden	Q1 -1221,22468 -996,22416 -926,22399 -725,2
 An der Wildbahn: Verbundsteinpflaster	Q1 -725,22355 -489,22295 -313,22233
 Gieselerstr.: Asphalt	Q0 4601,9449 4619,9200 4609,9027
 Hattenheimer Str. (Frohnau): Kleinpflastersteine	Q2 2673,25012 2907,24757
-Hubertusstr. (Steglitz): Asphalt	Q0 5254,5900 5099,5994
+Hubertusstr. (Steglitz): Asphalt mit aufgebrochenen Stellen, noch gut umfahrbar	Q0 5254,5900 5099,5994
 Hessenallee: Asphalt	Q0 640,11676 640,11706 769,11770 884,11896
 Fehmarner Str.: guter Asphalt	Q0 6709,14782 6528,15000
 Luckenwalder Str.: Asphalt	Q0 8644,10408 8397,10488 8384,10507
@@ -13142,7 +13141,7 @@ Kamillenstr.: Kopfsteinpflaster	Q1 3637,4680 3499,4881 3391,4950
 Kamillenstr.: schlechtes Kopfsteinpflaster	Q3 3391,4950 3265,5030
 Malvenstr.: Kopfsteinpflaster	Q1 3499,4881 3597,4941 3684,4998
 Betty-Katz-Str.: asphaltiertes Kopfsteinpflaster	Q1 4846,6417 4630,6534
-Betty-Katz-Str.: Asphalt	Q0 4630,6534 4500,6612
+Betty-Katz-Str.: Asphalt über Kopfsteinpflaster	Q0 4630,6534 4500,6612
 Viktoriapark/Zimmermannstr. (Steglitz): kleinteiliges Pflaster	Q1 4954,5888 4981,5939 5013,6003
 Herrfurthstr. (Steglitz): Kopfsteinpflaster	Q2 4558,5863 4724,5782
 Wulffstr.: Beton	Q0 4477,5250 4599,5341 4640,5411
@@ -18332,7 +18331,7 @@ Plöner Str.: Asphalt	Q0 2308,8071 2310,8184 2315,8431
 Gneiststr. (Grunewald): Asphalt	Q0 1421,9173 1587,9320
 Niersteiner Str.: Asphalt	Q0 1677,9404 1562,9436
 Hasensprung (Grunewald): Mosaikpflaster	Q1 1485,8845 1474,8859 1440,8903 1415,8937 1394,8965 1374,8992 1360,9012 1324,9057 1316,9067
-Herbertstr. (Grunewald): Asphalt	Q0 2132,9267 2056,9446
+Herbertstr. (Grunewald): Asphalt	Q0 2113,9266 2056,9446
 Herbertstr. (Grunewald): Asphalt	Q0 2165,9155 2183,9101 2282,8869
 Schleinitzstr.: Asphalt	Q0 2183,9101 2059,8954
 Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2559,8833

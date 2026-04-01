@@ -2768,7 +2768,9 @@ Antonstr./Ruheplatzstr.: Poller	3 7627,15412 7518,15605 7648,15741
 Antonstr./Ruheplatzstr.: Poller	3 7648,15741 7518,15605 7393,15476
 Antonstr./Ruheplatzstr.: Poller	3 7648,15741 7518,15605 7627,15412
 Alexandrinenstr.	1 10397,10852 10329,10723 10293,10645 10178,10411
-Alexandrinenstr.	1 10066,10071 10069,10151 10083,10192 10122,10294
+Alexandrinenstr.	1 10069,10151 10083,10192 10122,10294
+Brachvogelstr.	1 10066,10071 10069,10151
+Brachvogelstr.	1 10066,10071 10029,9989 10006,9942
 Alte Jakobstr./Kommandantenstr.: Poller	3 10256,11160 10437,11352 10593,11120
 Alte Jakobstr./Kommandantenstr.: Poller	3 10256,11160 10437,11352 10482,11398
 Alte Jakobstr./Kommandantenstr.: Poller	3 10593,11120 10437,11352 10389,11390
@@ -2794,3 +2796,10 @@ Hochkirchstr.: Einbahnstraßenregelung (offen von N nach S) für Kfz	1 8081,9120 8
 Fontanestr.	1 11632,8302 11647,8227
 Büchsenweg	1 7676,18713 7674,18738 7685,18775 7707,18794 7881,18835 8000,18831 8045,18804 8066,18754
 Guerickestr.: Einfahrt gesperrt	1 4358,12365 4305,12377
+Durchlass nur für Radfahrer	3nocross::ignrte 5091,5979 5099,5994 5137,6066
+Schloßstr. -> Hubertusstr.: Durchlass nur für Radfahrer	3::igndisp 5137,6066 5099,5994 5254,5900
+Hubertusstr. -> Schloßstr.: Durchlass nur für Radfahrer	3::igndisp 5254,5900 5099,5994 5091,5979
+Gritznerstr.: nur Rechtsabbiegen erlaubt	3 4630,6534 4555,6403 4511,6318
+Gritznerstr. -> Schildhornstr.: nur Rechtsabbiegen erlaubt	3 4630,6534 4555,6403 4776,6284
+Fürbringerstr. -> Solmsstr.: nur Rechtsabbiegen erlaubt	3 9820,9718 9705,9732 9676,9564
+Heesestr. -> Albrechtstr.: Linksabbiegen nicht erlaubt	3 5274,5557 5183,5437 5256,5392

@@ -1020,7 +1020,7 @@ Waghäuseler Str..: Bauarbeiten in Höhe Prinzregentenstr., Radfahrer sollen abste
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-03-18
+#: last_checked: 2026-04-01
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1419,14 +1419,14 @@ Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für 
 # REMOVED (laut osm sind die Bauarbeiten beendet) --- #: next_check_id: BOHNSDORFERKREISEL-2017 --- #: source_id: 2147341295 --- #: osm_watch: way id="410955359" version="3" --- #: last_checked: 2017-08-07 --- #: check_frequency: 30d --- Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 21870,803 22007,711
 # 
 ### Marienfelde ###
-#: next_check_id: BUCKOWERCHAUSSEE-2022
-#: last_checked: 2025-11-29 vvv
-#: check_frequency: 120d vvv
-(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9365,615 9347,595 9206,553 9215,506 9239,461 9254,413
-(Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
-(Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9004,481 9124,522 9160,460 9200,450
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (nicht mehr relevant) --- #: next_check_id: BUCKOWERCHAUSSEE-2022
+# REMOVED --- #: last_checked: 2025-11-29 vvv
+# REMOVED --- #: check_frequency: 120d vvv
+# REMOVED --- (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9365,615 9347,595 9206,553 9215,506 9239,461 9254,413
+# REMOVED --- (Fußgängerbrücke S-Bhf. Buckower Chaussee): Fußgängerbrücke, Bahnsteig	q4 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
+# REMOVED --- (Buckower Chaussee - Bahnhof): einige Fußgänger	q1 9004,481 9124,522 9160,460 9200,450
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 vvv --- #: last_checked: 2021-10-29 (bahninfo-forum) vvv --- #: next_check: 2021-11-22 vvv --- (provisorische Fußgängerbrücke Säntisstr.): Fußgänger	q3 9014,898 9005,912 9002,919 9047,948 9058,932 --- #: XXX_prog BS an der Kreuzung, ansonsten q2 --- Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898 --- Säntisstr.: Bauarbeiten	q3 9058,932 9129,986 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # REMOVED (vermutlich keine Einschränkung) --- #: next_check_id: HILDBURGHAUSER-2018 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.760187.php --- #: XXX "ab voraussichtlich 18.02.2019 erfolgt eine erneute Fahrbahnsperrung zwischen Steinheilpfad und Oberhofer Weg" (am 17.02. wird es allerdings noch nirgendwo erwähnt) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/sanierung-der-hildburghauser-strasse-verzoegert-sich-erneut_a193048 (erneute Sperrung ab 18. Februar 2019) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-ausbau-der-hildburghauser-strasse-verzoegert-sich-weiter_a201187 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.789448.php --- #: source_id: 2147341614 --- #: source_id: 2147343257 --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2018-07-02 --- #: next_check: 2019-02-25 --- # REMOVED --- #: valid: 20190218- --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5733,1240 --- # REMOVED --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5733,1240 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
@@ -1913,7 +1913,7 @@ Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10592,15968 10575,15968
 Rolandufer: Gehweg, viele Fußgänger	q3 10821,12153 10660,12176 10591,12203 10583,12206
 Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe	q4 10583,12206 10492,12289 10417,12378 10416,12394
 #: XXX_prog BS an der Lynar/Herthastr., sowie an der Koenigsallee, wenn man nach links abbiegen möchte (ansonsten q2 oder q3)
-Herthastr.: Gehweg, Bordsteine	q4 1937,9253 1932,9263
+Lynarstr.: Gehweg, Bordsteine	q4 1937,9253 1932,9263
 Fuggerstr.: einige Fußgänger	q1 6118,10327 6073,10354 6029,10356
 Pfalzburger Str.: Gehweg, Radfahrer frei	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077

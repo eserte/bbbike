@@ -1186,7 +1186,6 @@ Warmbrunner Str.	NN 3158,8763 3106,8780
 Warmbrunner Str.	N 3106,8780 3056,8784 2961,8793 2832,8805 2682,8821 2559,8833 2388,8852
 Warmbrunner Str.	H 2388,8852 2322,8857
 Herthastr. (Grunewald)	N 2322,8857 2282,8869 2190,8903 2059,8954 1920,9009 1937,9253
-Herthastr. (Grunewald)	NN 1937,9253 1932,9263
 Fechnerstr.	N 5022,8879 5004,8935 4958,8981 4920,9000 4815,9098 4755,9154
 Leon-Jessel-Platz	NN 4755,9154 4735,9171 4700,9179
 Wegenerstr. (Wilmersdorf)	N 4699,9202 4619,9200 4495,9184 4467,9163
@@ -3834,7 +3833,7 @@ Hochfeilerweg	N 10170,2158 10108,2174 10043,2351 9975,2536 9993,2551 10015,2651
 Hochkönigweg	N 10968,3130 11026,3302 11056,3412 11064,3461 11097,3657 11086,3708
 Hochthronweg	N 11064,3461 11168,3488
 Hochtristenweg	N 11026,3302 11058,3301 11125,3343 11191,3382
-Furkastr.	N 10150,2006 10170,2158 10214,2348 10268,2590 10271,2603 10304,2743 10322,2815
+Furkastr.	N 10150,2006 10141,2034 10170,2158 10214,2348 10268,2590 10271,2603 10304,2743 10322,2815
 Furkastr.	N 10329,2882 10422,3091 10439,3129 10504,3198
 (Parkweg im Zuge der Furkastr.)	NN 10322,2815 10318,2839 10329,2882
 Hochkalterweg	N 10576,2683 10526,2694 10402,2721 10304,2743
@@ -13721,6 +13720,7 @@ Cunostr.	N 3042,7465 3084,7599 3094,7790 3107,7997 3108,8052 3117,8248 3131,8435
 Charlottenbrunner Str.	N 3315,9009 3292,8996 3180,9015 3075,9033 2968,9050 2829,9076 2706,9108
 Lynarstr. (Grunewald)	N 2674,9111 2576,9132 2453,9156 2337,9178 2193,9195
 Lynarstr. (Grunewald)	N 2074,9225 1937,9253
+Lynarstr. (Grunewald)	NN 1937,9253 1932,9263
 Breitscheidplatz	NN 5656,10876 5652,11004
 Breitscheidplatz	NN 5782,10884 5829,10964
 Pettenkoferstr.	N 14836,12826 14858,12765 14935,12596 14996,12462
@@ -14187,24 +14187,24 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: check_frequency: 180d
 (ehemaliger Weg zum S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9310,245
 # 
-#: next_check_id: BUCKOWERCHAUSSEE-2022
-#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/GR_dresdner_bahn_wegefuehrung_buckower_chaussee_ab_20231010n.pdf (westl. Bahnsteig gesperrt, keine Änderung zur bisherigen Wegführung zu erkennen)
-#: XXX bauzeitliche Umleitung, vermutlich bis 2025; wie wird der endgültige Zustand aussehen? vvv
-#: last_checked: 2025-11-29 vvv
-#: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2025-12-31 vvv
-#: osm_watch: way id="1121227933" version="5"
-# REMOVED (früher N+service, zurzeit Bauarbeiten, Gehweg+Radfahrer frei) --- #: osm.highway: service
-(Buckower Chaussee - Fußgängerbrücke)	NN 9004,481 9124,522 9160,460
-(Buckower Chaussee - Fußgängerbrücke)	NN 9160,460 9200,450
-(Fußgängerbrücke S-Bhf. Buckower Chaussee)	NN 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
-(Fußgängerbrücke - Buckower Chaussee)	NN 9254,413 9239,461 9215,506 9206,553
-#: osm.highway: service
-(Fußgängerbrücke - Buckower Chaussee)	N 9206,553 9347,595 9365,615
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED (nicht mehr relevant) --- #: next_check_id: BUCKOWERCHAUSSEE-2022
+# REMOVED --- #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/GR_dresdner_bahn_wegefuehrung_buckower_chaussee_ab_20231010n.pdf (westl. Bahnsteig gesperrt, keine Änderung zur bisherigen Wegführung zu erkennen)
+# REMOVED --- #: XXX bauzeitliche Umleitung, vermutlich bis 2025; wie wird der endgültige Zustand aussehen? vvv
+# REMOVED --- #: last_checked: 2025-11-29 vvv
+# REMOVED --- #: check_frequency: 120d vvv
+# REMOVED --- # REMOVED --- #: next_check: 2025-12-31 vvv
+# REMOVED --- #: osm_watch: way id="1121227933" version="5"
+# REMOVED --- # REMOVED (früher N+service, zurzeit Bauarbeiten, Gehweg+Radfahrer frei) --- #: osm.highway: service
+# REMOVED --- (Buckower Chaussee - Fußgängerbrücke)	NN 9004,481 9124,522 9160,460
+# REMOVED --- (Buckower Chaussee - Fußgängerbrücke)	NN 9160,460 9200,450
+# REMOVED --- (Fußgängerbrücke S-Bhf. Buckower Chaussee)	NN 9200,450 9209,417 9210,414 9246,426 9249,421 9254,413
+# REMOVED --- (Fußgängerbrücke - Buckower Chaussee)	NN 9254,413 9239,461 9215,506 9206,553
+# REMOVED --- #: osm.highway: service
+# REMOVED --- (Fußgängerbrücke - Buckower Chaussee)	N 9206,553 9347,595 9365,615
+# REMOVED --- # REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED --- #: XXX ^^^
 # 
 # REMOVED (hier verläuft in Zukunft die Fernbahntrasse) --- #: osm.highway: service --- (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9310,245 9253,370
 # REMOVED (hier verläuft in Zukunft die Fernbahntrasse) --- (Eisnerstr. - S-Bhf Buckower Chaussee)" bezeichnet	NN 9253,370 9196,570
@@ -15499,7 +15499,7 @@ Voigtstr.	N 14709,12156 14748,12314 14776,12418 14798,12502 14801,12517 14814,12
 Voigtstr.	NN 14835,12801 14836,12826
 (Voigtstr. - Pettenkoferstr.)	N 14832,12755 14858,12765
 (Lynarstr - Charlottenbrunner Str.)	NN 2674,9111 2706,9108
-Johannaplatz	N 2193,9195 2177,9251 2132,9267 2074,9225 2098,9173 2165,9155 2193,9195
+Johannaplatz	N 2193,9195 2177,9251 2113,9266 2074,9225 2098,9173 2165,9155 2193,9195
 Gensinger Str.	N 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19021,11675 18999,11705 19000,11719 19005,11767 19004,11780
 Gensinger Str. [Wohngebiet]	N 18927,12135 18913,11909 18910,11826
 (Gensinger Str. - Alt-Friedrichsfelde)	N 19138,11815 18934,11796 18853,11780
@@ -15552,7 +15552,7 @@ Straupitzer Steig	NN 6769,21377 6770,21342
 Calauer Str.	N 6473,21969 6618,21972
 Wesendorfer Str.	N 7390,21608 7244,21811
 (Wanderweg Erkner - Hessenwinkel)	NN 33526,2771 33419,2765 33406,2738 33255,2762 33086,2790 33002,2826
-Friedrichshaller Str.	N 3468,7455 3320,7515 3183,7563 3084,7599 2911,7686 2786,7721 2774,7655
+Friedrichshaller Str.	N 3468,7455 3436,7481 3320,7515 3183,7563 3084,7599 2911,7686 2786,7721 2774,7655
 Friedrichshaller Str.	NN 2774,7655 2757,7604
 #: note: beleuchtet
 (Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.)	NN 3218,8233 3218,8223 3212,8107 3206,7988 3198,7787 3183,7563
@@ -19933,7 +19933,7 @@ Carl-Ludwig-Schleich-Promenade	NN 2273,8640 2317,8616 2361,8608
 Gneiststr. (Grunewald)	N 1421,9173 1587,9320
 Niersteiner Str.	N 1677,9404 1562,9436
 Hasensprung (Grunewald)	NN 1485,8845 1474,8859 1440,8903 1415,8937 1394,8965 1374,8992 1360,9012 1324,9057 1316,9067
-Herbertstr. (Grunewald)	N 2132,9267 2056,9446
+Herbertstr. (Grunewald)	N 2113,9266 2056,9446
 Herbertstr. (Grunewald)	N 2165,9155 2183,9101 2282,8869
 Schleinitzstr.	N 2183,9101 2059,8954
 Wangenheimstr.	N 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2559,8833
