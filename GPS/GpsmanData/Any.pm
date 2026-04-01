@@ -14,7 +14,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.15';
+$VERSION = '1.16';
 
 use Scalar::Util qw(openhandle);
 
@@ -80,8 +80,8 @@ sub load_gpx {
 	my $fh = IO::Zlib->new;
 	$fh->open($file_or_fh, "rb")
 	    or die "Can't open gzipped file '$file_or_fh' : $!";
-	# Unfortunately XML::Twig cannot handle IO::Zlib globs, so
-	# create a temporary
+	# Unfortunately some XML parsers cannot handle IO::Zlib globs,
+	# so create a temporary
 	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_tmp.gpx");
 	{
 	    local $/ = 8192;
@@ -128,13 +128,6 @@ sub load_gpx {
 	 'kayaking' => 'kayak',
 	);
 
-    my $latlong2xy_twig = sub {
-	my($node) = @_;
-	my $lat = $node->att("lat");
-	my $lon = $node->att("lon");
-	($lat, $lon);
-    };
-
     my $gpx_time_to_epoch = sub {
 	my $time = shift;
 	my($Y,$M,$D,$h,$m,$s,$ms,$tz) = $time =~ m{^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(\.\d+)?Z?$};
@@ -171,20 +164,62 @@ sub load_gpx {
     }
 
     require GPS::GpsmanData::GarminGPX;
-    require XML::Twig;
 
-    my $twig = XML::Twig->new;
-    if (openhandle $file_or_fh) {
-	$twig->parse($file_or_fh);
-    } else {
-	$twig->parsefile($file_or_fh);
+    my $xmlmodule = delete $args{xmlmodule};
+    if (!defined $xmlmodule) {
+	$xmlmodule = eval { require XML::Twig; 1 } ? 'XML::Twig' : 'XML::LibXML';
     }
+
+    my($node_name, $node_children, $node_text, $node_att, $node_findvalue);
+    my $root;
+
+    if ($xmlmodule eq 'XML::Twig') {
+	require XML::Twig;
+	my $twig = XML::Twig->new;
+	if (openhandle $file_or_fh) {
+	    $twig->parse($file_or_fh);
+	} else {
+	    $twig->parsefile($file_or_fh);
+	}
+	$root        = $twig->root;
+	$node_name      = sub { $_[0]->name };
+	$node_children  = sub { $_[0]->children };
+	$node_text      = sub { $_[0]->children_text };
+	$node_att       = sub { $_[0]->att($_[1]) };
+	$node_findvalue = sub { $_[0]->findvalue($_[1]) };
+    } elsif ($xmlmodule eq 'XML::LibXML') {
+	require XML::LibXML;
+	my $parser = XML::LibXML->new;
+	my $doc;
+	if (openhandle $file_or_fh) {
+	    $doc = $parser->parse_fh($file_or_fh);
+	} else {
+	    $doc = $parser->parse_file($file_or_fh);
+	}
+	$root        = $doc->documentElement;
+	$node_name      = sub { $_[0]->nodeName };
+	$node_children  = sub { grep { $_->nodeType == 1 } $_[0]->childNodes };
+	$node_text      = sub { $_[0]->textContent };
+	$node_att       = sub { $_[0]->getAttribute($_[1]) };
+	$node_findvalue = sub {
+	    my $xpc = XML::LibXML::XPathContext->new($_[0]);
+	    $xpc->registerNs('gpxx', 'http://www.garmin.com/xmlschemas/GpxExtensions/v3');
+	    $xpc->findvalue($_[1]);
+	};
+    } else {
+	die "Unsupported xmlmodule: $xmlmodule";
+    }
+
+    my $latlong2xy = sub {
+	my($node) = @_;
+	my $lat = $node_att->($node, "lat");
+	my $lon = $node_att->($node, "lon");
+	($lat, $lon);
+    };
 
     my @wpts;
 
-    my $root = $twig->root;
-
-    my $creator = $twig->root->{att}->{'creator'};
+    my $creator = $node_att->($root, 'creator');
     my $gps_device;
     if (defined $creator) {
 	if ($creator =~ m{^( etrex
@@ -203,8 +238,8 @@ sub load_gpx {
 
     my $garmin_userdef_symbols_set;
 
-    for my $wpt_or_trk ($root->children) {
-	if ($wpt_or_trk->name eq 'wpt') {
+    for my $wpt_or_trk ($node_children->($root)) {
+	if ($node_name->($wpt_or_trk) eq 'wpt') {
 	    my $wpt_in = $wpt_or_trk;
 	    my $name;
 	    my $comment;
@@ -212,18 +247,18 @@ sub load_gpx {
 	    my $epoch;
 	    my $gpsman_symbol;
 	    my $ele;
-	    for my $wpt_child ($wpt_in->children) {
-		if ($wpt_child->name eq 'name') {
-		    $name = $wpt_child->children_text;
-		} elsif ($wpt_child->name eq 'cmt') {
-		    $comment = $wpt_child->children_text;
-		} elsif ($wpt_child->name eq 'ele') {
-		    $ele = $wpt_child->children_text;
-		} elsif ($wpt_child->name eq 'time') {
-		    my $time = $wpt_child->children_text;
+	    for my $wpt_child ($node_children->($wpt_in)) {
+		if ($node_name->($wpt_child) eq 'name') {
+		    $name = $node_text->($wpt_child);
+		} elsif ($node_name->($wpt_child) eq 'cmt') {
+		    $comment = $node_text->($wpt_child);
+		} elsif ($node_name->($wpt_child) eq 'ele') {
+		    $ele = $node_text->($wpt_child);
+		} elsif ($node_name->($wpt_child) eq 'time') {
+		    my $time = $node_text->($wpt_child);
 		    $epoch = $gpx_time_to_epoch->($time);
-		} elsif ($wpt_child->name eq 'sym') {
-		    my $sym = $wpt_child->children_text;
+		} elsif ($node_name->($wpt_child) eq 'sym') {
+		    my $sym = $node_text->($wpt_child);
 		    ($gpsman_symbol, my($this_garmin_userdef_symbols_set)) = GPS::GpsmanData::GarminGPX::garmin_symbol_name_to_gpsman_symbol_name_set($sym);
 		    if ($this_garmin_userdef_symbols_set) {
 			if (!$garmin_userdef_symbols_set) {
@@ -234,7 +269,7 @@ sub load_gpx {
 		    }
 		}
 	    }
-	    my($lat, $lon) = $latlong2xy_twig->($wpt_in);
+	    my($lat, $lon) = $latlong2xy->($wpt_in);
 	    $first_coordinate_event->($lon, $lat, $epoch) if $first_coordinate_event && $epoch;
 	    my $wpt = GPS::Gpsman::Waypoint->new;
 	    $wpt->Ident($name);
@@ -249,7 +284,7 @@ sub load_gpx {
 	    }
 	    $wpt->Symbol($gpsman_symbol) if defined $gpsman_symbol;
 	    push @wpts, $wpt;
-	} elsif ($wpt_or_trk->name eq 'trk') {
+	} elsif ($node_name->($wpt_or_trk) eq 'trk') {
 	    my $trk = $wpt_or_trk;
 	    my $name;
 	    my $comment;
@@ -257,36 +292,36 @@ sub load_gpx {
 	    my $trkseg;
 	    my $track_display_color;
 	    my $is_first_segment = 1;
-	    for my $trk_child ($trk->children) {
-		if ($trk_child->name eq 'name') {
-		    $name = $trk_child->children_text;
-		} elsif ($trk_child->name eq 'cmt') {
-		    $comment = $trk_child->children_text;
-		} elsif ($trk_child->name eq 'extensions') {
-		    $track_display_color = $trk_child->findvalue('./gpxx:TrackExtension/gpxx:DisplayColor');
+	    for my $trk_child ($node_children->($trk)) {
+		if ($node_name->($trk_child) eq 'name') {
+		    $name = $node_text->($trk_child);
+		} elsif ($node_name->($trk_child) eq 'cmt') {
+		    $comment = $node_text->($trk_child);
+		} elsif ($node_name->($trk_child) eq 'extensions') {
+		    $track_display_color = $node_findvalue->($trk_child, './gpxx:TrackExtension/gpxx:DisplayColor');
 		    if (defined $track_display_color) {
 			$track_display_color = GPS::GpsmanData::GarminGPX::garmin_to_gpsman_color($track_display_color);
 		    }
-		    for my $extensions_node ($trk_child->children) {
-			if ($extensions_node->name eq 'srt:vehicle') {
-			    $vehicle = $extensions_node->children_text;
-			} elsif ($extensions_node->name eq 'srt:brand') {
-			    $brand = $extensions_node->children_text;
+		    for my $extensions_node ($node_children->($trk_child)) {
+			if ($node_name->($extensions_node) eq 'srt:vehicle') {
+			    $vehicle = $node_text->($extensions_node);
+			} elsif ($node_name->($extensions_node) eq 'srt:brand') {
+			    $brand = $node_text->($extensions_node);
 			}
 		    }
-		} elsif ($trk_child->name eq 'type') {
+		} elsif ($node_name->($trk_child) eq 'type') {
 		    if ($type_to_vehicle) {
-			my $type = $trk_child->children_text;
+			my $type = $node_text->($trk_child);
 			$vehicle = $activity_type_to_vehicle{ lc($type) };
 		    }
-		} elsif ($trk_child->name eq 'desc') {
+		} elsif ($node_name->($trk_child) eq 'desc') {
 		    if ($guess_device && !defined $gps_device) {
-			my $desc = $trk_child->children_text;
+			my $desc = $node_text->($trk_child);
 			if ($desc =~ / recorded on (.*)/) { # fit2gpx would generate something like "Cycling (generic) recorded on Garmin Fenix5_plus"
 			    $gps_device = $1;
 			}
 		    }
-		} elsif ($trk_child->name eq 'trkseg') {
+		} elsif ($node_name->($trk_child) eq 'trkseg') {
 		    if ($trkseg) {
 			push @{ $gpsman->{Chunks} }, $trkseg;
 			undef $trkseg;
@@ -309,27 +344,27 @@ sub load_gpx {
 			$trkseg->IsTrackSegment(1);
 		    }
 		    my @data;
-		    for my $trkpt ($trk_child->children) {
-			my $trkpt_name = $trkpt->name;
+		    for my $trkpt ($node_children->($trk_child)) {
+			my $trkpt_name = $node_name->($trkpt);
 			if ($trkpt_name eq 'trkpt') {
-			    my($lat, $lon) = $latlong2xy_twig->($trkpt);
+			    my($lat, $lon) = $latlong2xy->($trkpt);
 			    my $wpt = GPS::Gpsman::Waypoint->new;
 			    $wpt->Ident("");
 			    my $accuracy;
 			    $wpt->Latitude($lat);
 			    $wpt->Longitude($lon);
-			    for my $trkpt_child ($trkpt->children) {
-				if ($trkpt_child->name eq 'ele') {
-				    $wpt->Altitude($trkpt_child->children_text);
-				} elsif ($trkpt_child->name eq 'time') {
-				    my $time = $trkpt_child->children_text;
+			    for my $trkpt_child ($node_children->($trkpt)) {
+				if ($node_name->($trkpt_child) eq 'ele') {
+				    $wpt->Altitude($node_text->($trkpt_child));
+				} elsif ($node_name->($trkpt_child) eq 'time') {
+				    my $time = $node_text->($trkpt_child);
 				    my $epoch = $gpx_time_to_epoch->($time);
 				    $first_coordinate_event->($lon, $lat, $epoch, sub { $trkseg->TimeOffset($timeoffset) }) if $first_coordinate_event;
 				    $wpt->unixtime_to_DateTime($epoch, $trkseg);
-				} elsif ($trkpt_child->name eq 'srt:accuracy') {
-				    $accuracy = $trkpt_child->children_text || 0;
-				} elsif (!defined $accuracy && $trkpt_child->name eq 'hdop') {
-				    my $hdop_value = $trkpt_child->children_text+0;
+				} elsif ($node_name->($trkpt_child) eq 'srt:accuracy') {
+				    $accuracy = $node_text->($trkpt_child) || 0;
+				} elsif (!defined $accuracy && $node_name->($trkpt_child) eq 'hdop') {
+				    my $hdop_value = $node_text->($trkpt_child)+0;
 				    # XXX The used values here need to be evaluated!
 				    if ($hdop_value >= 50) {
 					$accuracy = 2;
@@ -354,7 +389,7 @@ sub load_gpx {
 			    if (!$trkseg->TrackAttrs) {
 				$trkseg->TrackAttrs({});
 			    }
-			    $trkseg->TrackAttrs->{$trkpt_name} = $trkpt->children_text;
+			    $trkseg->TrackAttrs->{$trkpt_name} = $node_text->($trkpt);
 			}
 		    }
 		    $trkseg->Track(\@data);
@@ -365,29 +400,29 @@ sub load_gpx {
 		push @{ $gpsman->{Chunks} }, $trkseg;
 		undef $trkseg;
 	    }
-	} elsif ($wpt_or_trk->name =~ m{^(?:metadata|extensions)$}) {
+	} elsif ($node_name->($wpt_or_trk) =~ m{^(?:metadata|extensions)$}) {
 	    # ignore
-	} elsif ($wpt_or_trk->name =~ m{^(?:name|desc|author|email|url|urlname|time|keywords|bounds)$}) {
+	} elsif ($node_name->($wpt_or_trk) =~ m{^(?:name|desc|author|email|url|urlname|time|keywords|bounds)$}) {
 	    # ignore GPX 1.0 elements
-	} elsif ($wpt_or_trk->name eq 'rte') {
+	} elsif ($node_name->($wpt_or_trk) eq 'rte') {
 	    my $rte = $wpt_or_trk;
 	    my $gpsman_rte = GPS::GpsmanData->new;
 	    $gpsman_rte->Type($gpsman_rte->TYPE_ROUTE);
 	    $gpsman_rte->TimeOffset($timeoffset) if defined $timeoffset;
 	    # XXX Name? TrackAttrs?
 	    my @data;
-	    for my $rte_child ($rte->children) {
-		if ($rte_child->name eq 'rtept') {
-		    my($lat, $lon) = $latlong2xy_twig->($rte_child);
+	    for my $rte_child ($node_children->($rte)) {
+		if ($node_name->($rte_child) eq 'rtept') {
+		    my($lat, $lon) = $latlong2xy->($rte_child);
 		    my $wpt = GPS::Gpsman::Waypoint->new;
 		    my $name = '';
-		    for my $rtept_child ($rte_child->children) {
-			if ($rtept_child->name eq 'name') {
-			    $name = $rtept_child->children_text;
-			} elsif ($rtept_child->name eq 'ele') {
-			    $wpt->Altitude($rtept_child->children_text);
-			} elsif ($rtept_child->name eq 'time') {
-			    my $time = $rtept_child->children_text;
+		    for my $rtept_child ($node_children->($rte_child)) {
+			if ($node_name->($rtept_child) eq 'name') {
+			    $name = $node_text->($rtept_child);
+			} elsif ($node_name->($rtept_child) eq 'ele') {
+			    $wpt->Altitude($node_text->($rtept_child));
+			} elsif ($node_name->($rtept_child) eq 'time') {
+			    my $time = $node_text->($rtept_child);
 			    my $epoch = $gpx_time_to_epoch->($time);
 			    $first_coordinate_event->($lon, $lat, $epoch, sub { $gpsman_rte->TimeOffset($timeoffset) }) if $first_coordinate_event;
 			    $wpt->unixtime_to_DateTime($epoch, $gpsman_rte);
@@ -404,7 +439,7 @@ sub load_gpx {
 	    $gpsman_rte->Track(\@data);
 	    push @{ $gpsman->{Chunks} }, $gpsman_rte;
 	} else {
-	    die "No support for " . $wpt_or_trk->name . " planned";
+	    die "No support for " . $node_name->($wpt_or_trk) . " planned";
 	}
     }
 
@@ -481,6 +516,10 @@ This method also accepts a filehandle instead of a file name.
 Optional argument is C<timeoffset>, which may be set to a number for
 the time offset to UTC in hours, or to C<automatic>, for automatically
 determining the time offset using L<Time::Zone::By4D>.
+
+Optional argument is C<xmlmodule>, which may be set to C<XML::Twig> or
+C<XML::LibXML> to explicitly choose the XML parser. If not specified,
+C<XML::Twig> is preferred and C<XML::LibXML> is used as fallback.
 
 Currently there's support for waypoint (C<< <wpt> >>), track (C<<
 <trk> >>), and route (C<< <rte> >>) elements.
