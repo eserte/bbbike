@@ -29,11 +29,21 @@ use IO::File qw();
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 103;
+plan 'no_plan';
 
 use GPS::GpsmanData::Any;
 
 require GPS::GpsmanData::TestRoundtrip;
+
+my @xmlmodules;
+push @xmlmodules, undef; # default
+push @xmlmodules, 'XML::Twig'   if eval { require XML::Twig; 1 };
+push @xmlmodules, 'XML::LibXML' if eval { require XML::LibXML; 1 };
+
+for my $xmlmodule (@xmlmodules) {
+my $label = defined $xmlmodule ? " (xmlmodule=$xmlmodule)" : " (xmlmodule=default)";
+my @xm = defined $xmlmodule ? (xmlmodule => $xmlmodule) : ();
+note "Testing with$label";
 
 {
     my $gpsman_gpx10_sample_file = <<'EOF';
@@ -74,10 +84,10 @@ EOF
     my $tmpfile = _create_temporary_gpx($gpsman_gpx10_sample_file);
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
-	my $gps2 = GPS::GpsmanData::Any->load($tmpfile, debug => 0);
+	my $gps2 = GPS::GpsmanData::Any->load($tmpfile, debug => 0, @xm);
 	eq_or_diff $gps2, $gps, 'using debug option should not change anything';
 
 	is scalar($gps->flat_track), 2, 'Found two waypoints in first track';
@@ -89,23 +99,23 @@ EOF
 	## handled differently in gpx 1.1
 	#ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx 1.0 file';
 
-	my $gps_loadgpx = GPS::GpsmanData::Any->load_gpx($tmpfile);
+	my $gps_loadgpx = GPS::GpsmanData::Any->load_gpx($tmpfile, @xm);
 	eq_or_diff $gps_loadgpx, $gps, 'load_gpx works and returns the same like load';
 
 	my $fh = IO::File->new("$tmpfile", 'r');
-	my $gps_fh = GPS::GpsmanData::Any->load_gpx($fh);
+	my $gps_fh = GPS::GpsmanData::Any->load_gpx($fh, @xm);
 	eq_or_diff $gps_fh, $gps, 'loading from a filehandle';
 
 	my $tmpgzfile = _create_temporary_gpx_gz($gpsman_gpx10_sample_file);
-	my $gps_gz = GPS::GpsmanData::Any->load("$tmpgzfile");
+	my $gps_gz = GPS::GpsmanData::Any->load("$tmpgzfile", @xm);
 	eq_or_diff $gps_gz, $gps, 'loading gzipped gpx file';
 
-	my $gps_gz_loadgpx = GPS::GpsmanData::Any->load_gpx("$tmpgzfile");
+	my $gps_gz_loadgpx = GPS::GpsmanData::Any->load_gpx("$tmpgzfile", @xm);
 	eq_or_diff $gps_gz_loadgpx, $gps, 'loading gzipped gpx file using load_gpx';
     }
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => -2);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => -2, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my $wpt = ($gps->flat_track)[0];
@@ -121,7 +131,7 @@ EOF
     my $tmpfile = _create_temporary_gpx($sample_gpx);
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	is scalar(@{ $gps->Chunks }), 2, 'Found two chunks';
@@ -165,7 +175,7 @@ EOF
     }
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 2);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 2, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my $wpt1 = $gps->Chunks->[0]->Track->[0];
@@ -178,7 +188,7 @@ EOF
     }
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 'automatic');
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 'automatic', @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my $wpt = $gps->Chunks->[0]->Track->[0];
@@ -196,7 +206,7 @@ EOF
     my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my @chunks = @{ $gps->Chunks };
@@ -232,7 +242,7 @@ EOF
     }
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 2);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 2, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 	my $wpt = $gps->Chunks->[0]->Waypoints->[0];
 	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
@@ -243,7 +253,7 @@ EOF
     }
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 'automatic');
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, timeoffset => 'automatic', @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 	my $wpt = $gps->Chunks->[0]->Waypoints->[0];
 	isa_ok $wpt, 'GPS::Gpsman::Waypoint';
@@ -262,7 +272,7 @@ EOF
     my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
 
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my @chunks = @{ $gps->Chunks };
@@ -310,7 +320,7 @@ EOF
 
     my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my $first_chunk = $gps->Chunks->[0];
@@ -345,7 +355,7 @@ EOF
 
     my $tmpfile = _create_temporary_gpx($sample_trk_gpx);
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my $first_chunk = $gps->Chunks->[0];
@@ -363,7 +373,7 @@ EOF
 EOF
     my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 
 	my($wpt) = @{ $gps->Chunks->[0]->Waypoints };
@@ -381,7 +391,7 @@ EOF
 EOF
     my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file';
     }
@@ -437,7 +447,7 @@ EOF
 	(my $sample_trk_gpx = $sample_trk_gpx) =~ s{__TYPE__}{$type}g;
 	my $tmpfile = _create_temporary_gpx($sample_trk_gpx);
 	for my $type_to_vehicle (0, 1) {
-	    my $gps = GPS::GpsmanData::Any->load($tmpfile, typetovehicle => $type_to_vehicle);
+	    my $gps = GPS::GpsmanData::Any->load($tmpfile, typetovehicle => $type_to_vehicle, @xm);
 	    isa_ok $gps, 'GPS::GpsmanMultiData';
 	    my $gpsman = $gps->as_string;
 	    $gpsman =~ s{^% Written by.*\n\n}{};
@@ -451,7 +461,7 @@ EOF
 
     for my $guess_device (0, 1) {
 	my $tmpfile = _create_temporary_gpx($sample_trk_gpx);
-	my $gps = GPS::GpsmanData::Any->load($tmpfile, guessdevice => $guess_device);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, guessdevice => $guess_device, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 	my $gpsman = $gps->as_string;
 	$gpsman =~ s{^% Written by.*\n\n}{};
@@ -499,7 +509,7 @@ EOF
 EOF
     my $tmpfile = _create_temporary_gpx($sample_trk_gpx);
     {
-	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	my $gps = GPS::GpsmanData::Any->load($tmpfile, @xm);
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 	my $gpsman = $gps->as_string;
 	$gpsman =~ s{^% Written by.*\n\n}{};
@@ -510,6 +520,8 @@ EOF
     }
 
 }
+
+} # end for my $xmlmodule
 
 sub _create_temporary_gpx {
     my $gpx_string = shift;
