@@ -2670,6 +2670,9 @@ Nahmitzer Damm -> Parkweg im Fresepark: Mittelstreifen	3::igndisp 8736,337 8584,
 Parkweg im Fresepark -> Nahmitzer Damm: Mittelstreifen	3::igndisp 8583,310 8584,320 8470,329
 Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,4093
 Michelangelostr.: links abbiegen nicht möglich	3 13854,15129 13816,15137 13823,15111
+Mittelstreifen	3nocross::ignrte 13560,15318 13540,15329 13279,15468
+Michelangelostr. -> Wohngebiet Michelangelostr.: Mittelstreifen	3::igndisp 13279,15468 13540,15329 13608,15436
+Wohngebiet Michelangelostr. -> Michelangelostr.: Mittelstreifen	3::igndisp 13608,15436 13540,15329 13560,15318
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2326,25625 -2130,26026 -2146,26048
 zum Wasserwerk Stolpe: Leitplanken am Radweg	3 -2109,26055 -2130,26026 -2146,26048
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983

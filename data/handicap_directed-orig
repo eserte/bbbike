@@ -587,7 +587,7 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-03-24 vvv
+#: last_checked: 2026-03-31 (mapillary) vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
 # REMOVED (temporär) --- Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13685,12664 13622,12806 13579,12904
@@ -782,6 +782,7 @@ Kurfürstenstr. (Mariendorf): provisorischer Radweg auf dem Gehweg, ca. 40m	DH:h=
 #: last_checked ^^^
 # 
 #: source_id: bvg2024:347#HIM_FREETEXT_324247 (kein Endedatum)
+#: also_indoor: traffic (T,G[zu lang])
 #: note: mittlerweile mit Umweg
 #: last_checked: 2026-03-29 vvv
 #: check_frequency: 14d vvv

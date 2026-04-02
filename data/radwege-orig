@@ -1792,7 +1792,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-03-24 vvv
+#: last_checked: 2026-03-31 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -3137,7 +3137,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-03-28 vvv
+#: last_checked: 2026-04-02 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -5000,7 +5000,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2026-03-21 vvv
+#: last_checked: 2026-04-02 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -7232,13 +7232,13 @@ Verbundsteinpflaster, schmal	RW1; 9858,744 9885,681 9950,577
 #: confirmed_by: srt
 	RW3;RW3 10512,12039 10578,11969 10604,11941 10642,11901 10672,11870 10687,11853 10722,11816
 Gehweg für Radfahrer frei	RW1; 18166,14277 18058,14269 17979,14247
-	RW1; 13186,15518 13279,15468 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13647,14912 13636,14900
+	RW1; 13186,15518 13279,15468 13540,15329 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13647,14912 13636,14900
 	RW4; 13636,14900 13439,14673
 	RW4; 13439,14673 13636,14900
 	RW3; 13636,14900 13647,14912 13744,15018
 	RW4; 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187 13692,15231
 	RW3; 13692,15231 13560,15318
-	RW4; 13560,15318 13279,15468 13186,15518
+	RW4; 13560,15318 13540,15329 13279,15468 13186,15518
 Fahrradschleuse, zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13078,15586
 	RW3; 13078,15586 13186,15518
 #: by: Grönwoldt:
@@ -8041,8 +8041,8 @@ Grünbeschichtung	RW4; 15417,12823 15367,12815 15357,12813
 Grünbeschichtung	RW4; 15357,12813 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
 #: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2026-02-11 (Radwegschild fehlt noch)
-#: check_frequency: 45d
+#: last_checked: 2026-04-02 (Radwegschild fehlt noch)
+#: check_frequency: 60d
 Grünbeschichtung, Poller	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar
 Grünbeschichtung	RW3; 15010,12855 14940,12843
@@ -8686,7 +8686,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2026-03-21
+#: last_checked: 2026-03-31 (mapillary)
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8713,7 +8713,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2026-03-21 vvv
+#: last_checked: 2026-04-02 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv

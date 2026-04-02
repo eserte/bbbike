@@ -27,7 +27,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-03-23
+#: last_checked: 2026-04-02
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -50,7 +50,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-03-21 vvv
+#: last_checked: 2026-03-31 (mapillary) vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="13"
@@ -417,7 +417,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_06_0325_0404_online.pdf
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-03-28
+#: last_checked: 2026-04-02
 #: check_frequency: 30d
 #: next_check: 2030-12-31 (entwicklungsstadt)
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -1327,11 +1327,11 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-03-24 vvv
+#: last_checked: 2026-04-02 vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
 #: next_check: 2026-04-20 (VIZ-Verkehrsmeldung) vvv
-#: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig
+#: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
 # REMOVED (mittlerweile kommt man zumindest bis zur Kreuzung auf der Fahrbahn vorbei an den Absperrungen) --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
 Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
@@ -4248,7 +4248,9 @@ Hampstedtstr.: einige Fußgänger	q2 749,2616 816,2658
 #: XXX_prog: BS an der Ella-Kay-Str., ansonsten q2
 (Greifswalder Str. - Ella-Kay-Str.): einige Fußgänger, Bordstein	q3 12183,14757 12060,14827
 (Greifswalder Str. - Ella-Kay-Str.): einige Fußgänger	q2 12174,14739 12128,14764
-(Wohngebiet Michelangelostr.): nur für Fußgänger	q4 13687,15387 13597,15443
+(Wohngebiet Michelangelostr.): nur für Fußgänger	q4 13687,15387 13608,15436 13597,15443
+#: note: Verbot für alle Fahrzeuge
+(Wohngebiet Michelangelostr.): einige Fußgänger	q3 13540,15329 13608,15436
 Arberstr.: einige Fußgänger	q1 19437,9653 19450,9728
 Schwarzer Weg: einige Fußgänger	q2 17294,7367 17276,7348
 Schwarzer Weg: einige Fußgänger	q2 17276,7348 17282,7337 17295,7328
@@ -4753,7 +4755,7 @@ Uber-Platz: Fußgängerzone	q4 12990,11006 13067,11145
 #: next_check_id: MICHELANGELO-2025
 #: note: laut Aushang 2027/2028
 #: note: evtl. ist das bereits die angekündigte Erneuerung der Fußwegeverbindung
-#: last_checked: 2026-01-24
+#: last_checked: 2026-04-02
 #: check_frequency: 120d
 #: next_check: 2027-04-01
 # XXX später: wieder aktivieren: (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
@@ -5336,7 +5338,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-03-28 vvv
+#: last_checked: 2026-04-02 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-05-04 vvv
 # REMOVED --- #: valid: -20251219

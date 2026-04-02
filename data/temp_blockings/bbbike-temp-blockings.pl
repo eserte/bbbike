@@ -22470,7 +22470,7 @@ EOF
 EOF
      },
      { from  => 1719810000, # 2024-07-01 07:00, # undef, # 
-       until => undef, # 1731652771, # $isodate2epoch->("2024-11-15 17:00:00"), # 1730822400, # 2024-11-05 17:00, # 1371066874, # undef, # XXX
+       until => 1775155151, # undef, # 1731652771, # $isodate2epoch->("2024-11-15 17:00:00"), # 1730822400, # 2024-11-05 17:00, # 1371066874, # undef, # XXX
 #      text  => 'Tegeler Str.: zwischen Triftstr. und Sprengelstr. Bauarbeiten, Ausweichen auf den Gehweg',
 #      text  => 'Tegeler Str.: Bauarbeiten, Richtung Luxemburger Str. zwischen Lynarstr. und Sprengelstr. Fahrtrichtung gesperrt, auch Radfahrer sind betroffen, vom 02.07.2024 07:00 bis voraussichtlich 15.11.2024 17:00',
 #      text  => 'Kiautschoustr.: Bauarbeiten an der Tegeler Str., einige Meter der Fahrbahn sind gesperrt, Ende der Bauarbeiten unbekannt',
@@ -22493,11 +22493,9 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
 # REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
 #: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
-#: also_indoor: traffic (re-ex-re-G,ex-H,ex-A,ex-W,T)
+#: also_indoor: traffic (ex-re-ex-re-G,ex-H,ex-A,ex-W,ex-T)
 #: osm_watch: note 5212713 2
-#: add_fragezeichen: Besteht die Baustelle noch immer?
-#: last_checked: 2026-03-27
-#: check_frequency: 7d (traffic)
+# REMOVED --- #: add_fragezeichen: Besteht die Baustelle noch immer? --- #: last_checked: 2026-04-02 (traffic) --- #: check_frequency: 7d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
@@ -45267,14 +45265,17 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
 #: last_checked: 2026-03-26 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
+#: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
+Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
-Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9925,11568 9737,11546 9711,11543
+#: note: Krausenstr. ist in diesem Abschnitt eine geschotterte Baustraße, manchmal (z.B. im Winter) keine Sperrungen und deshalb eingeschränkt befahrbar
+Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 9925,11568 9737,11546 9711,11543
 # REMOVED (Gasse für Radfahrer existiert, zumindest von Norden her mit Radwegschild) --- Jerusalemer Str. (Nord): Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9992,11682
+#: note: etwa die Hälfte der Straße ist normal offen, dann geht's über eine Auffahrt auf einen sehr breiten Gehweg --- eigentlich q3+
 Jerusalemer Str. (Süd): Baustelleneinrichtungsfläche	q3::inwork 9925,11568 9936,11469
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
@@ -47450,10 +47451,10 @@ EOF
 EOF
      },
      { from  => 1738450800, # 2025-02-02 00:00
-       until => 1765548535, # $isodate2epoch->("2026-08-31 23:59:59"), # 1764543600, # 2025-12-01 00:00
+       until => $isodate2epoch->("2026-08-31 23:59:59"), # 1764543600, # 2025-12-01 00:00
 #      text  => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung der Fahrbahn, vom 03.02.2025 bis voraussichtlich 30.11.2025',
 #      text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich 30.11.2025',
-       text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich Ende August 2026',
+       text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Indira-Gandhi-Str., Einbahnstraßenregelung, bis voraussichtlich Ende August 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
@@ -47468,7 +47469,8 @@ EOF
 # REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 # REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
 # REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
-Chopinstr.	q4::inwork 14195,15604 14321,15636
+# REMOVED --- Chopinstr.	q4::inwork 14195,15604 14321,15636
+Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,15738
 EOF
      },
      { from  => 1737871200, # 2025-01-26 07:00
@@ -50189,7 +50191,7 @@ EOF
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
-#: last_checked: 2026-03-21
+#: last_checked: 2026-03-31 (mapillary)
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 # REMOVED --- #: next_check: 2026-02-28 (strabag)
 #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung, Halteverbotsschilder)
@@ -51266,7 +51268,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 8
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-28 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
+#: last_checked: 2026-04-02 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -52244,9 +52246,9 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (G,no-T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-03-29 (traffic)
-#: check_frequency: 14d
-#: next_check: 2026-03-29
+#: last_checked: 2026-04-02
+#: check_frequency: 21d (traffic)
+# REMOVED --- #: next_check: 2026-03-29
 	q4::inwork; 11821,14317 12077,14186
 EOF
      },
@@ -52425,6 +52427,15 @@ EOF
        data  => <<'EOF',
 #: source_id: LS/221-F/26/034 (bis 17.04.2026)
 	2::inwork 39226,24131 39390,24178
+EOF
+     },
+     { from  => 1775426400, # 2026-04-06 00:00
+       until => 1781560799, # 2026-06-15 23:59
+       text  => 'Borsigstr.: Bauarbeiten, Anbindung an die Torstr. gesperrt, vom 7.4.2026 bis Mitte Juni 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260402
+	q4::inwork 9508,13578 9373,13769
 EOF
      },
     );

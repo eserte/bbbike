@@ -3555,38 +3555,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
        },
        undef,
        undef,
-       {
-         'data' => '# REMOVED (by: juergen.saidowsky) ---  #: last_checked: 2013-06-07 --- #: XXX wann sind die Bauarbeiten beendet?
-# REMOVED (2013er-Eintrag)	q4::inwork; 7085,15226 7131,15109
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20250921 (neue Bauarbeiten 2025 in der Tegeler Str.)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzflkiq3b224
-#: source_id: viz2021:13.357334,52.54161,02.07.2024,07:00 (hier fälschlicherweise nur Kfz-Verkehr, außerdem fälschlicherweise bis Triftstr., bis 05.11.2024) (bis 14.11.2024) (inaktiv)
-#: source_id[inactive]: bvg2024:142#HIM_FREETEXT_230218 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
-#: source_id[inactive]: bvg2024:142#HIM_FREETEXT_230219 (bis 31.10.2024) (bis auf weiteres) (bis 15.11.2024)
-#: source_id: viz2021:13.35879,52.53996,02.07.2024,07:00 (bis 14.11.2024) (inaktiv)
-# REMOVED (hier nicht) ---	q4::inwork; 7259,14870 7209,14927
-# REMOVED --- Tegeler Str.	q4::inwork; 7209,14927 7182,14986 7178,14996 7131,15109
-# REMOVED (hier nicht) ---	q4::inwork; 7131,15109 7085,15226
-# REMOVED --- Sprengelstr.: Anbindung an Tegeler Str. über Fußgängerfurt	q3::inwork 6945,15045 7131,15109 7281,15175
-#: source_id: LMS-BR:384378/72 viz2021:13.35614,52.54327,22.09.2025,07:00 (bis 17.01.2026) (inaktiv)
-#: also_indoor: traffic (re-ex-re-G,ex-H,ex-A,ex-W,T)
-#: osm_watch: note 5212713 2
-#: add_fragezeichen: Besteht die Baustelle noch immer?
-#: last_checked: 2026-03-27
-#: check_frequency: 7d (traffic)
-# REMOVED --- #: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-01-17 (VIZ-Verkehrsmeldung)
-#: note: da nur ein kurzer Abschnitt gesperrt ist: q4 -> q3
-Tegeler Str.: Bauarbeiten zwischen Triftstr. und Sprengelstr.	q3::inwork 7085,15226 7131,15109
-# REMOVED (keine Sperrung mehr) --- #: add_fragezeichen: Sind die Bauarbeiten in der Kiautschoustr. beendet? --- #: source_id: LMS-BR:392919/72 viz2021:13.355108,52.540463, (bis 31.03.2026) (bis 30.04.2026) --- #: also_indoor: traffic (re-T,G) --- #: last_checked: 2025-12-16 (traffic) --- #: check_frequency: 60d --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung) --- Kiautschoustr.: Anbindung an Tegeler Str. gesperrt	q3::inwork 7007,14911 7182,14986
-',
-         'from' => 1719810000,
-         'id' => 2430,
-         'text' => 'Tegeler Str.: Bauarbeiten an der Triftstr., kurzer Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '# REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
 #: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
@@ -7826,14 +7795,17 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: note: Krausenstr. ist Baustraße, evtl. im Winter keine Sperrungen und deshalb eingeschränkt befahrbar
 #: last_checked: 2026-03-26 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
+#: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
+Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
-Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9925,11568 9737,11546 9711,11543
+#: note: Krausenstr. ist in diesem Abschnitt eine geschotterte Baustraße, manchmal (z.B. im Winter) keine Sperrungen und deshalb eingeschränkt befahrbar
+Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 9925,11568 9737,11546 9711,11543
 # REMOVED (Gasse für Radfahrer existiert, zumindest von Norden her mit Radwegschild) --- Jerusalemer Str. (Nord): Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9992,11682
+#: note: etwa die Hälfte der Straße ist normal offen, dann geht\'s über eine Auffahrt auf einen sehr breiten Gehweg --- eigentlich q3+
 Jerusalemer Str. (Süd): Baustelleneinrichtungsfläche	q3::inwork 9925,11568 9936,11469
 # REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
@@ -8394,7 +8366,28 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => 1777327199
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-in-der-smetanastrasse_a434819
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1887013282894025077
+#: by: https://pbs.twimg.com/media/Gi7-nVQXEAAnVV2?format=jpg&name=large (Richtung Süden Gehweg Radfahrer frei, Richtung Norden nicht)
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
+#: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
+#: source_id: LMS-BR:359627/72 viz2021:13.46101,52.5454,05.02.2025,07:00 viz2021:13.46101,52.5454, (bis 30.11.2025) (noch immer Smetanastr.?, bis 05.12.2025) (bis 31.08.2026)
+#: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
+# REMOVED --- #: last_checked: 2025-12-12 (vorfristig beendet) --- #: check_frequency: 120d --- #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
+# REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
+# REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
+# REMOVED --- Chopinstr.	q4::inwork 14195,15604 14321,15636
+Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,15738
+',
+         'from' => 1738450800,
+         'id' => 4245,
+         'text' => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Indira-Gandhi-Str., Einbahnstraßenregelung, bis voraussichtlich Ende August 2026',
+         'type' => 'handicap',
+         'until' => 1788213599
+       },
        undef,
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
@@ -9313,7 +9306,7 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
-#: last_checked: 2026-03-21
+#: last_checked: 2026-03-31 (mapillary)
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 # REMOVED --- #: next_check: 2026-02-28 (strabag)
 #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung, Halteverbotsschilder)
@@ -9807,7 +9800,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 4953648 8
 #: also_indoor: traffic (none)
-#: last_checked: 2026-03-28 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
+#: last_checked: 2026-04-02 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -10485,9 +10478,9 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        {
          'data' => '#: also_indoor: traffic (G,no-T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-03-29 (traffic)
-#: check_frequency: 14d
-#: next_check: 2026-03-29
+#: last_checked: 2026-04-02
+#: check_frequency: 21d (traffic)
+# REMOVED --- #: next_check: 2026-03-29
 	q4::inwork; 11821,14317 12077,14186
 ',
          'from' => undef,
@@ -10667,6 +10660,16 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'text' => 'Hirschfelde - Gielsdorf: Brückensperrung, evtl. ist auch der Radverkehr betroffen, 07.04.2026 06:00 Uhr bis 17.04.2026 20:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1776448800
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260402
+	q4::inwork 9508,13578 9373,13769
+',
+         'from' => 1775426400,
+         'id' => 4573,
+         'text' => 'Borsigstr.: Bauarbeiten, Anbindung an die Torstr. gesperrt, vom 7.4.2026 bis Mitte Juni 2026',
+         'type' => 'handicap',
+         'until' => 1781560799
        }
      
 );
