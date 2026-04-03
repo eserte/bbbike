@@ -213,7 +213,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2026-03-30 vvv
+#: last_checked: 2026-04-03 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -293,7 +293,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="7"
-#: last_checked: 2026-02-15
+#: last_checked: 2026-04-03
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -4300,7 +4300,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-03-30
+#: last_checked: 2026-04-03
 #: check_frequency: 120d
 #: next_check: 2026-05-26 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4348,7 +4348,7 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 # REMOVED --- #: valid: -20251201
 # REMOVED --- Wollankstr.: Sperrung, auch für Fußgänger und Radfahrer	2::inwork 9544,17629 9586,17665
 #: note: existiert auch als temp_blockings-Eintrag
-#: last_checked: 2026-03-14 (mapillary)
+#: last_checked: 2026-04-01 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten	2::inwork 9586,17665 9461,17795
@@ -4950,7 +4950,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026)
-#: last_checked: 2026-03-11
+#: last_checked: 2026-04-03
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
 # REMOVED --- #: next_check: 2027-06-30
@@ -4996,7 +4996,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="19"
-#: last_checked: 2026-03-11
+#: last_checked: 2026-04-03
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
@@ -5042,7 +5042,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2026-03-26
+#: last_checked: 2026-04-01 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5124,7 +5124,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-04-01 vvv
+#: last_checked: 2026-04-03 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5136,7 +5136,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-04-01 vvv
+#: last_checked: 2026-04-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

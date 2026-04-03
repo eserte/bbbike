@@ -32238,7 +32238,7 @@ EOF
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-03-30
+#: last_checked: 2026-04-03
 #: check_frequency: 30d
 #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -33642,7 +33642,7 @@ EOF
 # REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349 ---	q4::inwork 17771,8349 17753,8290
 #: next_check_id: BLOCKDAMMWEG-2026
 #: note: vielleicht Baustelleneinrichtung für den Blockdammweg, vielleicht schon vorbereitend für die Sperrung der Ehrlichstr. und Umleitungsverkehr via Georg-Klingenberg-Str. und Trautenauer Str.
-#: last_checked: 2026-03-11
+#: last_checked: 2026-04-03
 	q4::inwork; 17879,8773 17851,8662 17846,8644
 EOF
      },
@@ -40992,7 +40992,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-03-11 vvv
+#: last_checked: 2026-04-03 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -43648,7 +43648,7 @@ EOF
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2026-03-14 (mapillary)
+#: last_checked: 2026-04-01 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -47889,12 +47889,12 @@ EOF
 #: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17, 2025-09-01 Mon 12:13), aber nicht immer (gesehen 2024-11-16 Sat, 2025-09-21 Sun 10:05); das südliche Tor ist immer zu
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
 #: note: nördliches Tor offen, südliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25, 2025-03-24 17:32)
-#: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30)
+#: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30, 2026-04-03 Fri 11:07 Karfreitag)
 #: osm_watch: way id="207757723" version="8"
 #: osm_watch: way id="275795707" version="5"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2025-12-23 vvv
+#: last_checked: 2026-04-03 vvv
 #: check_frequency: 90d vvv
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
 #: note: wieder dauerhaft (?) gesperrt -> siehe auch neuen gesperrt-orig-Eintrag
@@ -48912,7 +48912,7 @@ EOF
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="5"
-#: last_checked: 2026-03-14 (traffic)
+#: last_checked: 2026-04-03 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -50256,7 +50256,7 @@ EOF
 #: osm_watch: note 4924394 5
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-04-01 vvv
+#: last_checked: 2026-04-03 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50356,13 +50356,13 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: MUSSEHL-2025
-#: also_indoor: traffic (G,re-T)
+#: also_indoor: traffic (G,ex-re-T,W)
 #: osm_watch: way id="722008943" version="15"
 #: osm_watch: way id="722013098" version="15"
 #: osm_watch: way id="1350756367" version="4"
 #: osm_watch: note 5124809 1
 #: last_checked: 2026-03-14 (mapillary) vvv
-#: check_frequency: 45d vvv
+#: check_frequency: 30d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
 	q4::inwork 8982,8781 8926,8682
@@ -50996,7 +50996,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-03-27
+#: last_checked: 2026-04-03
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51316,10 +51316,10 @@ EOF
        data  => <<'EOF',
 #: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
-#: also_indoor: traffic (G[unklar],T,W[etwas verschoben],no-H)
+#: also_indoor: traffic (ex-G[unklar],T,W[etwas verschoben],no-H)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2026-03-14 (mapillary)
-#: check_frequency: 21d
+#: last_checked: 2026-04-03 (traffic)
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-02-28 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295
 EOF
@@ -51455,11 +51455,12 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: note: Fahrbahn kann auch ab Treskowallee komplett gesperrt sein, Durchfahrt-verboten-Schilder sind dort vorbereitet
+#: note: Halteverbotsschilder bis 30.04.2026
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
 #: add_fragezeichen: Wann sie die Bauarbeiten beendet?
-#: last_checked: 2026-02-15
+#: last_checked: 2026-04-03
 #: check_frequency: 45d
-# REMOVED --- #: next_check: 2026-01-31
+#: next_check: 2026-04-30 (Halteverbotsschilder)
 Hönower Str.: Einbahnstraßenregelung	q4::inwork; 18660,9410 18735,9421
 Hönower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
 # REMOVED (hier Anlieger frei) ---	q4::inwork; 18846,9532 18871,9565
@@ -51914,11 +51915,12 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mic6eylp6c2u
 #: by: https://www.tagesspiegel.de/berlin/neubau-dauert-bis-2028-berliner-dunckerbrucke-ab-1-april-gesperrt-15417132.html
 #: by: https://www.entwicklungsstadt.de/ersatzneubau-der-dunckerbruecke-beginnt-planung-bauphasen-verkehrsfuehrung/
+#: by: https://www.berliner-zeitung.de/news/prenzlauer-berg-dunckerbruecke-ab-april-gesperrt-li.10027810
 #: source_id: LMS-BR:403521/72 viz2021:13.42326,52.54529,01.04.2026,07:00 (bis 14.06.2028)
 #: osm_watch: note 5163943 2
 #: XXX: Dunckerbrücke: Ersatzneubau
 #: XXX ursprüngliche Planung: während der Bauarbeiten soll der Fußgänger- und Radverkehr auf einer Brückenhälfte stattfinden können; mittlerweile wird es wohl eine Vollsperrung geben, ab 3. Quartal 2027 wird der Fuß+Radverkehr über den neuen Rohbau geführt werden
-#: last_checked: 2026-03-30 (Pressemitteilung) vvv
+#: last_checked: 2026-04-01 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-09-30 (mögliche Nutzung durch den Rad+Fußverkehr) vvv
 Dunckerbrücke	2::inwork 11689,15639 11654,15572
@@ -52191,16 +52193,17 @@ EOF
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24534.pdf
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse (bis voraussichtlich 1. November 2026)
 #: by[nocache]: https://www.uvp-verbund.de/documents-ige-ng/igc_be/27B18CBA-A54C-4B76-B3FF-2B1F76A96A23/Alle_Unterlagen_gesiegelt%2F3_Lageplan_gesiegelt.pdf (Baustelleneinrichtungsfläche)
-#: osm_watch: way id="1456917114" version="4"
 #: osm_watch: note 5193492 3
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-03-11 vvv
+#: last_checked: 2026-04-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten)
+#: osm_watch: way id="1456917114" version="4"
 Blockdammweg, Rampe	2::inwork 17754,8863 17762,8855 17904,8924
+#: osm_watch: way id="10861731" version="41"
 Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: next_check ^^^
 #: check_frequency ^^^
@@ -52345,11 +52348,14 @@ EOF
      },
      { from  => 1774383320, # 2026-03-24 21:15
        until => 1782165600, # 2026-06-23 00:00
-       text  => 'Pichelswerderstr.: Bauarbeiten zwischen Freiheit und Heidereuterstr., Sperrung, evtl. sind auch Radfahrer betroffen, Baustelle, bis 22.06.2026',
+       text  => 'Pichelswerderstr.: Bauarbeiten zwischen Freiheit und Gewerbehof, Einbahnstraße offen Richtung Norden, bis 22.06.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:402799/72 viz2021:13.21378,52.53175, (bis 23.06.2026)
-	q4::inwork -2699,13359 -2669,13488 -2576,13777
+#: note: Einbahnstraßenregelung genau genommen nur bis zur Kaufland-Ausfahrt
+#: last_checked: 2026-03-31 (mapillary)
+#: next_check: 2026-06-23 (VIZ-Verkehrsmeldung)
+	q4::inwork; -2576,13777 -2669,13488
 EOF
      },
      { from  => 1774324800, # 2026-03-24 05:00
@@ -52436,6 +52442,21 @@ EOF
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260402
 	q4::inwork 9508,13578 9373,13769
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rheingaustr.: Hochbauarbeiten, Einbahnstraßenregelung, evtl. ist auch der Radverkehr betroffen, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by[nocache]: https://www.neubaukompass.de/neubau/das-rheingau-berlin/ (bezugsfertig: 4. Quartal 2027)
+#: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdl-hohenstaufen-pallas-und-goebenstr/?postID=795563#post795563
+#: also_indoor: traffic (G,no-T,no-W,no-H)
+#: osm_watch: way id="251962463" version="4"
+#: last_checked: 2026-04-03 (daf)
+#: check_frequency: 30d
+#: next_check: 2027-12-31 (neubaukompass website)
+	q4::inwork; 4886,6819 4886,6711
 EOF
      },
     );
