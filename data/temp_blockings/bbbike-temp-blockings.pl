@@ -51389,9 +51389,9 @@ EOF
 #: by: http://www.deal-magazin.com/news/148507/Leuchtturmprojekt-fuer-Biomedizin-WOLFF--MUeLLER-baut-iQ-space (Fertigstellung April 2028)
 #: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/sellerstra%C3%9Fe-1-15-errichtung-und-b%C3%BCro-und-laborgeb%C3%A4udes.1506/#post-26917
-#: osm_watch: way id="1080985512" version="15"
+#: osm_watch: way id="1080985512" version="16"
 #: osm_watch: way id="1409889274" version="11"
-#: osm_watch: way id="1430307301" version="4"
+#: osm_watch: way id="1430307301" version="5"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
 #: last_checked: 2026-03-24 (architektur-urbanistik) vvv
 #: check_frequency: 120d vvv
@@ -51567,7 +51567,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2026-03-22 (traffic) vvv
+#: last_checked: 2026-04-04 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q3::inwork 6124,5983 6226,5995
 Kniephofstr.	q4::inwork 6226,5995 6318,6006
@@ -51769,7 +51769,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
 #: osm_watch[closed]: note 4953642 2
-#: last_checked: 2026-02-23 vvv
+#: last_checked: 2026-04-04 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 Hausburgstr.: gesperrter Abschnitt etwa 50m lang	q4::inwork 13742,13376 13706,13460

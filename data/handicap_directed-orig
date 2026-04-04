@@ -546,7 +546,9 @@ Marggraffbrücke: Radfahrer Richtung Nordwesten müssen den gegenüberliegenden Rad
 #: by: https://www.entwicklungsstadt.de/halbseitige-sperrung-bis-2027-sanierung-an-der-nordhafenbruecke-startet/
 #: by: https://www.tagesspiegel.de/berlin/ein-jahr-lang-einschrankungen-an-der-nordhafenbrucke-in-berlin-mitte-wird-ab-dienstag-gebaut-15310076.html
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: osm_watch: note 5189408 2
+#: osm_watch: note 5189408 3
+#: osm_watch: node id="13704066872" version="1"
+#: osm_watch: node id="13704066873" version="1"
 #: last_checked: 2026-03-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
@@ -587,10 +589,13 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-03-31 (mapillary) vvv
+#: last_checked: 2026-04-04 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+#: osm_watch[closed]: note 4639045 5
+#: osm_watch: node id="13657024133" version="1"
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
 # REMOVED (temporär) --- Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13685,12664 13622,12806 13579,12904
+#: osm_watch: node id="13657024132" version="1"
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13481,13128 13434,13234 13383,13349
 Petersburger Str. - Matternstr.: Matternstr. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,107 13622,12806 13579,12904 13788,13002
 #: source_id: viz2021:13.451515,52.521453,23.08.2024,07:00 (bis 30.09.2027) (inaktiv)

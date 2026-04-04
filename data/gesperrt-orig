@@ -4105,6 +4105,9 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,11888
 # 
 #: next_check_id: NORDHAFENBRUECKE-2026
+#: osm_watch: way id="1495906089" version="1"
+#: osm_watch: way id="971631807" version="9"
+#: osm_watch: way id="971631806" version="9"
 #: last_checked: 2026-03-16
 #: check_frequency: 30d
 #: next_check: 2028-03-03
@@ -4906,6 +4909,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: by: https://marzahn-hellersdorf.com/abriss-der-alten-entenbruecke-im-wuhletal-abgeschlossen-weg-frei-fuer-neubau/ (kein Termin für einen Neubau)
 #: by: https://marzahn-hellersdorf.com/neue-bruecke-ueber-die-wuhle-soll-namen-bekommen-buergerinnen-und-buerger-gefragt/
 #: by: https://marzahn-hellersdorf.com/entenbruecke-am-stadion-wuhletal-ausschreibung-soll-2026-starten-bauzeit-rund-ein-jahr/
+#: by: https://marzahn-hellersdorf.com/abschied-von-der-entenbruecke-neue-wuhle-bruecke-soll-bibersteg-heissen/
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="23"
@@ -5715,13 +5719,16 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
-#: osm_watch: way id="186329816" version="50"
 #: also_indoor: traffic
-#: last_checked: 2026-03-21 (osm) vvv
+#: last_checked: 2026-04-04 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
+#: osm_watch: way id="154807176" version="65"
+#: osm_watch: way id="186329816" version="50"
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
+#: osm_watch: way id="692480577" version="38"
+#: osm_watch: way id="692480576" version="37"
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 7989,13302
 # REMOVED --- Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8099,13391 8098,13419
 #: next_check ^^^

@@ -27,8 +27,8 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-04-02
-#: check_frequency: 30d
+#: last_checked: 2026-04-04
+#: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
@@ -50,7 +50,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-03-31 (mapillary) vvv
+#: last_checked: 2026-04-04 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="13"
@@ -64,9 +64,13 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: osm_watch: way id="1108260165" version="9"
 #: note: etwa 30m lang
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
-#: last_checked: 2026-03-05
-#: check_frequency: 30d
-Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13434,13234 13383,13349 13375,13367 13330,13468
+#: osm_watch: note 5191913 2
+#: last_checked: 2026-04-04 vvv
+#: check_frequency: 45d vvv
+Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q3::inwork; 13434,13234 13383,13349
+Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 13375,13367 13330,13468
+#: check_frequency ^^^
+#: last_checked ^^^
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -376,10 +380,10 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1077_ds_2020_vi_eine-dauerhafte-sperrung-der-burgsdorfstrasse.pdf
 #: by: https://www.entwicklungsstadt.de/abriss-in-der-burgsdorfstrasse-1-ruine-in-wedding-fast-vollstaendig-verschwunden/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/geisterhaus-in-berlin-wedding-schrottimmobilie-legte-uber-acht-jahre-strasse-lahm--erst-jetzt-folgt-der-abriss-15407901.html
-#: osm_watch: way id="549316654" version="47"
+#: osm_watch: way id="549316654" version="48"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2026-03-27
+#: last_checked: 2026-04-03 (osm)
 #: check_frequency: 30d
 # REMOVED (wird wohl länger dauern?) --- #: next_check: 2026-03-15 (MoPo)
 #: valid: 20171026-
@@ -885,7 +889,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch: note 3913793 11
 #: osm_watch[closed]: note 4157644 3
-#: osm_watch: way id="1283287449" version="3"
+#: osm_watch: way id="1283287449" version="4"
 #: last_checked: 2026-03-29 (webcam)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (caimmo website)
@@ -2639,7 +2643,7 @@ südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7
 (Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 (Fontanestr. - Kopenhagener Str.): Fußgänger	q2 7522,19804 7518,19762 7578,19753 7617,19748
 #: XXX_prog: BS Bordsteine (2x)
-#: note: früher "q2"
+#: note: früher "q2"; der westliche Bordstein ist mittlerweile recht abgeflacht, aber es könnten Autos davor parken
 Oleanderstr.: Fußgänger, Bordsteine	q4+ 14271,14024 14298,14015
 #: by: Sylke Sallmon:
 Pankgrafenstr. (Pankow): Fußgänger, ggfs. schieben	q2 10470,18402 10502,18338
