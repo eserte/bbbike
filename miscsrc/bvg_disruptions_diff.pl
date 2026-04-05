@@ -24,6 +24,7 @@ use Getopt::Long;
 use HTML::Entities qw(decode_entities);
 use JSON::XS qw(decode_json);
 use IPC::Run qw(run);
+use List::Util qw(max);
 use List::MoreUtils qw(uniq);
 use Storable qw(dclone);
 use Term::ANSIColor qw(colored);
@@ -91,11 +92,20 @@ if (!defined $new_version) {
 my $json_dirname  = dirname($json_file);
 my $json_basename = basename $json_file;
 
-my @versions = do {
-    my $save_pwd = save_pwd2;
-    chdir $json_dirname;
-    split /\n/, qx(git log --pretty=%H -- $json_basename);
-};
+my $max_delta_version = max grep { /^\d+$/ } ($old_version, $new_version);
+my @versions;
+if (defined $max_delta_version) {
+    @versions = do {
+	my $save_pwd = save_pwd2;
+	chdir $json_dirname;
+	# $max_delta_version=0 means "latest commit", so we need N+1 commits
+	# to have @versions[$max_delta_version] valid
+	my @cmd = (qw(git log -n), ($max_delta_version+1), qw(--pretty=%H --), $json_basename);
+	open my $fh, '-|', @cmd or die $!;
+	local $/;
+	split /\n/, scalar <$fh>;
+    };
+}
 
 my(%old_records, %new_records);
 for my $def (
