@@ -166,6 +166,7 @@ sub do_search {
 	    $encoding = $dir->{encoding}->[0] || 'iso-8859-1';
 	}
 	my $is_temp_blockings_pl = $filename =~ m{bbbike-temp-blockings\.pl$};
+	my $is_temp_blockings_pl_preamble = $is_temp_blockings_pl ? 1 : undef;
 	my $local_hits = 0;
 	open $fh, $filename
 	    or do {
@@ -195,6 +196,9 @@ sub do_search {
 		} else {
 		    #warn "DEBUG: $epoch is not over yet...\n";
 		}
+	    } elsif ($until_time_spec =~ /Time::Local::timelocal/) {
+		# likely to be inactive; this style not used anymore since 2008
+		return 1;
 	    } else {
 		warn "WARNING: Cannot parse '$until_time_spec' at all";
 	    }
@@ -218,6 +222,11 @@ sub do_search {
 		$local_hits++;
 		last if defined $limit && $local_hits + $hits >= $limit; # limit this file
 	    } elsif ($is_temp_blockings_pl) {
+		if ($is_temp_blockings_pl_preamble) {
+		    if (/^\@temp_blocking\s*=/) {
+			$is_temp_blockings_pl_preamble = 0;
+		    }
+		}
 		if (/from\s*=>/) {
 		    $until_time_spec = undef;
 		} elsif (/until\s*=>\s*(.*)/) {
