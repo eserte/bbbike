@@ -211,7 +211,7 @@ var unknown_map_url = unknown_map_url_mapping[mapset] || unknown_map_url_mapping
 var accel;
 
 function parseCat(cat) {
-    if (cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
+    if (cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?+)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
 	var cat    = RegExp.$1;
         var attribString = RegExp.$2;
 	var attribs = {};
@@ -229,8 +229,21 @@ var stdGeojsonLayerOptions = {
 		if (parsedCat) {
 		    cat = parsedCat.cat;
 		    var color = '#f00';
+		    var opacity = 0.5;
 		    if (cat == '?') {
 			color = '#6c0000';
+		    } else if (cat == '??') {
+			color = '#b05555';
+		    } else if (cat == '???') {
+			color = '#ec8888';
+		    } else if (cat == '????') {
+			color = '#f2a0a0';
+		    } else if (cat == '?????') {
+			color = '#fcc8c8';
+		    } else if (cat == '??????') {
+			color = '#fdd8d8';
+		    } else if (cat == '???????') {
+			color = '#fde0e0';
 		    } else if (cat.match(/^[qQ]0/)) {
 			color = '#698b69';
 		    } else if (cat.match(/^[qQ]1/)) {
@@ -242,8 +255,11 @@ var stdGeojsonLayerOptions = {
 		    } else if (cat.match(/^[qQ]4/)) {
 			color = '#c00000';
 		    }
+		    if (cat.match(/^\?+$/)) {
+			opacity = 1.0;
+		    }
                     return { //dashArray: [2,2],
-			color: color, weight: 5, lineCap: "butt" }
+			color: color, weight: 5, lineCap: "butt", opacity: opacity }
 		}
 	    },
 	    // --- XXX does not work (with leaflet 0.4.4?)
