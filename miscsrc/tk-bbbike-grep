@@ -191,6 +191,8 @@ sub run_grep {
 	    my @tag;
 	    if ($matching_text =~ /^#\s*REMOVED/) {
 		@tag = 'removedItem';
+	    } elsif ($matching_text =~ /^INACTIVE:/) {
+		@tag = 'removedItem';
 	    } else {
 		@tag = 'activeItem';
 	    }

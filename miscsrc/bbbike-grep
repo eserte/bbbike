@@ -21,11 +21,12 @@ use Encode qw(decode);
 use File::Glob qw(bsd_glob);
 use Getopt::Long;
 use I18N::Langinfo qw(langinfo CODESET);
+use Time::Local qw(timelocal);
 
 use BBBikeUtil qw(bbbike_root bbbike_aux_dir);
 use Strassen::Core;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 my $bbbike_datadir = bbbike_root . '/data';
 my $bbbike_miscdir = bbbike_root . '/misc';
@@ -164,6 +165,7 @@ sub do_search {
 	    my $dir = Strassen->get_global_directives($filename); # XXX can this throw an exception?
 	    $encoding = $dir->{encoding}->[0] || 'iso-8859-1';
 	}
+	my $is_temp_blockings_pl = $filename =~ m{bbbike-temp-blockings\.pl$};
 	my $local_hits = 0;
 	open $fh, $filename
 	    or do {
@@ -173,17 +175,54 @@ sub do_search {
 	    };
 	binmode $fh, ":encoding($encoding)";
 	$outfile = defined $reldir ? File::Spec->abs2rel($filename, $reldir) : $filename;
+
+	my $until_time_spec; # currently used only for $is_temp_blockings_pl files
+	my $until_time_spec_check = sub {
+	    if ($until_time_spec =~ /^undef/) {
+		return 1;
+	    } elsif ($until_time_spec =~ /^(\d{9,})/) { # match epoch seconds since 1973
+		if ($1 <= time) {
+		    return 1;
+		} else {
+		    #warn "DEBUG: $1 is not over yet...\n";
+		}
+	    } elsif ($until_time_spec =~ /isodate2epoch->\("(\d+)-(\d+)-(\d+)\s+(\d+):(\d+):(\d+)/) {
+		my $epoch = eval { timelocal($6,$5,$4,$3,$2-1,$1) };
+		if (!defined $epoch) {
+		    warn "WARNING: Cannot parse '$until_time_spec' as ISO-like date: $@";
+		} elsif ($epoch <= time) {
+		    return 1;
+		} else {
+		    #warn "DEBUG: $epoch is not over yet...\n";
+		}
+	    } else {
+		warn "WARNING: Cannot parse '$until_time_spec' at all";
+	    }
+	    0;
+	};
+
 	while(<$fh>) {
 	    if ($_ =~ $search_rx) {
 		chomp;
-		my $out = $format_output->($_);
-		if (/^#\s*REMOVED/) {
-		    push @removed_lines, $out;
+		my $line = $_;
+		if ($until_time_spec && $until_time_spec_check->()) {
+		    push @removed_lines, $format_output->("INACTIVE: $line");
 		} else {
-		    print $out;
+		    my $out = $format_output->($line);
+		    if ($line =~ /^#\s*REMOVED/) {
+			push @removed_lines, $out;
+		    } else {
+			print $out;
+		    }
 		}
 		$local_hits++;
 		last if defined $limit && $local_hits + $hits >= $limit; # limit this file
+	    } elsif ($is_temp_blockings_pl) {
+		if (/from\s*=>/) {
+		    $until_time_spec = undef;
+		} elsif (/until\s*=>\s*(.*)/) {
+		    $until_time_spec = $1;
+		}
 	    }
 	}
 	close $fh;
