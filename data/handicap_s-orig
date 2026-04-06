@@ -126,7 +126,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-04-01 (mapillary) vvv
+#: last_checked: 2026-04-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -422,7 +422,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://www.entwicklungsstadt.de/bvg-beginnt-bau-am-waisentunnel-start-fuer-ersatzneubau-unter-der-spree/
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-04-02
+#: last_checked: 2026-04-06
 #: check_frequency: 30d
 #: next_check: 2030-12-31 (entwicklungsstadt)
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -493,7 +493,7 @@ Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,121
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-03-28 vvv
+#: last_checked: 2026-04-06 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -762,7 +762,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
-#: last_checked: 2026-03-19 vvv
+#: last_checked: 2026-04-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 #: valid: -20261231 vvv
@@ -782,7 +782,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 # REMOVED --- #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 # REMOVED --- #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
-# REMOVED --- #: last_checked: 2026-03-08 (sieht noch immer recht fertig aus) (und mittlerweile sind die Absperrungen weit weggeschoben, seen 2026-03-08 Sun)
+# REMOVED --- #: last_checked: 2026-04-03 (sieht noch immer recht fertig aus) (und mittlerweile sind die Absperrungen weit weggeschoben, seen 2026-03-08 Sun, 2026-04-03 Fri Karfreitag)
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260312
@@ -866,8 +866,8 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
 #: osm_watch: way id="1392961223" version="5"
-#: also_indoor: traffic (T,re-G,re-W,ex-H)
-#: last_checked: 2026-03-27
+#: also_indoor: traffic (T,re-G[viel zu kurz?],re-W,re-ex-H)
+#: last_checked: 2026-04-06 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
@@ -1019,7 +1019,7 @@ Waghäuseler Str..: Bauarbeiten in Höhe Prinzregentenstr., Radfahrer sollen abste
 #: source_id[inactive]: bvg2024:171#HIM_FREETEXT_320392 (Haltestelle ist aufgehoben, kein Endedatum)
 #: source_id: bvg2024:171#HIM_FREETEXT_303697 (Verlegung der Haltestelle, kein Endedatum)
 #: XXX Wann sind die Bauarbeiten zu Ende?
-#: last_checked: 2025-11-27
+#: last_checked: 2026-04-03 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2028-11-30 (entwicklungsstadt)
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
@@ -4921,7 +4921,7 @@ Diestelmeyerstr.: einige Fußgänger	q3 12833,12920 12690,12769
 #: note: rechtliche Lage unklar, möglicherweise Gehweg
 Sokratesweg: einige Fußgänger	q2 18514,9552 18604,9535
 #: note: Radfahrer sollen hier absteigen
-Hans-Baluschek-Park: enge Rampe, Fußgänger	q2 7252,6080 7278,6101
+Hans-Baluschek-Park: enge Rampe, Fußgänger	q3 7252,6080 7278,6101
 #: note: Radfahrer sollen absteigen
 (nördlicher Otto-Weidt-Platz - Golda-Meir-Steg): Fußgänger	q2 7784,14147 7827,14152 7861,14133
 Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198

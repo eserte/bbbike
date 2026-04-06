@@ -367,7 +367,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-03-31 vvv
+#: last_checked: 2026-04-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -4118,7 +4118,8 @@ asphaltiert	RW1; 198,1689 242,1816 243,1820 324,2034
 Verbundsteinpflaster	RW1;RW1 324,2034 457,2251 561,2395
 Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 	RW1; 749,2616 709,2592
-	RW1; 790,2434 900,2469 960,2534 1008,2568 1121,2583 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1703,2620 1750,2636 1885,2697 2000,2748 2123,2803 2290,2864
+	RW1; 790,2434 900,2469 960,2534 1008,2568 1121,2583 1238,2599
+unebene Gehwegplatten, einige Verbundsteinpflasterabschnitte	RW1; 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1703,2620 1750,2636 1885,2697 2000,2748 2123,2803 2290,2864
 unebene Gehwegplatten	RW1; 2290,2864 2123,2803
 unebenes Verbundsteinpflaster	RW1; 2123,2803 2000,2748 1885,2697
 unebene Gehwegplatten	RW1; 1885,2697 1750,2636 1703,2620
@@ -5493,7 +5494,9 @@ Verbundsteinpflaster	RW1; 13931,17362 14044,17519 14153,17670 14161,17681 14214,
 	RW1;RW1 -1646,2434 -1604,2324 -1596,2307 -1537,2152 -1463,2080 -1377,2077 -1281,2074
 Gehwegplatten mit Bord	RW1; -1249,2590 -1248,2488 -1248,2451
 	RW1; -1248,2451 -1256,2216 -1281,2074 -1296,2025 -1283,1898 -1578,1740
-	RW1; -1578,1740 -1283,1898 -1296,2025 -1281,2074 -1256,2216 -1248,2451 -1248,2488 -1249,2590
+Verbundsteinpflaster	RW1; -1578,1740 -1283,1898
+Verbundsteinpflaster, teilweise mit erheblichen Unebenheiten	RW1; -1283,1898 -1296,2025 -1281,2074 -1256,2216
+	RW1; -1256,2216 -1248,2451 -1248,2488 -1249,2590
 Radweg nur aufgemalt	RW1;RW1 -1256,2216 -1082,2140
 	RW0;RW0 -1082,2140 -763,1976 -666,1959 -613,1949
 alte Gehwegplatten, Bord	RW1; -613,1949 -541,1883 -418,1787 -375,1754 -356,1740 -306,1700 -163,1564 -87,1475 85,1322
@@ -7165,7 +7168,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-03-28 vvv
+#: last_checked: 2026-04-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -8756,9 +8759,10 @@ Gehweg für Radfahrer frei	RW1; -264,13009 -278,13094 -309,13268
 	RW1; 4545,22312 4604,22332 4658,22350
 teilweise Radspur, teilweise asphaltiertes Straßenbahnkap	RW1;RW1 19681,5924 19795,5935
 	RW3;RW3 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
+	RW7;RW7 -3096,1026 -3024,1069 -2813,1188 -2669,1266 -2605,1302
 #: note: außerdem (bereits vor der Fahrradstraße Königsweg): unbefestigter Gehweg für Radfahrer frei, RW1;RW9
 	RW7;RW7 -1082,2140 -1078,2154 -987,2205 -878,2265
-	RW7;RW7 -878,2265 -844,2268 -790,2300 -745,2320
+	RW7;RW7 -878,2265 -844,2268 -790,2300 -745,2320 -670,2361 -505,2456 -409,2510
 asphaltiertes Straßenbahnkap	RW1;RW1 13786,12636 13828,12658
 asphaltiertes Straßenbahnkap	RW1; 14073,12755 14089,12805
 im Kurverbereich als Hochbordradweg	RW3;RW3 16220,25716 16294,25683 16414,25575
@@ -9003,7 +9007,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
-#: last_checked: 2026-03-28 vvv
+#: last_checked: 2026-04-06 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten

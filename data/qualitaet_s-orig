@@ -149,7 +149,7 @@ Methfesselstr.: sehr gutes Kopfsteinpflaster, 40 km/h	Q0 9211,9354 9170,9206 915
 Methfesselstr.: mäßiges Kopfsteinpflaster	Q2 9115,9046 9105,9018 9063,8935 8982,8781
 Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
 Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,6436 7227,6102
-#: XXX wird dieses Teilstück asphaltiert? (vermutlich nicht mehr)
+#: XXX wird dieses Teilstück asphaltiert? (vermutlich nicht mehr) Oder wenigstens nachgebessert?
 #: XXX Baumaßnahme GL7.6, GL7.7 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf (erwähnt)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf
@@ -180,7 +180,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: osm_watch: way id="102486250" version="31"
 #: osm_watch[closed]: note 4659483 8
 # REMOVED (confirmed) --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
-#: last_checked: 2025-08-30
+#: last_checked: 2026-04-06
 #: check_frequency: 180d
 # REMOVED (ehemaliger infravelo-Eintrag) --- #: next_check: 2025-09-30 (infravelo)
 #: historical_note: früher (bis April 2025): mäßiges bis schlechtes Kopfsteinpflaster, Q2-
@@ -326,7 +326,7 @@ Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 188
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
 Alemannenstr.: Asphalt	Q0 -3360,2917 -3417,2886
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3417,2886 -3452,2868 -3509,2817 -3635,2668 -3686,2579
-Alemannenstr.: mäßiges Kopfsteinpflaster	Q2 -3686,2579 -3692,2549 -3709,2517 -3725,2475 -3726,2457
+Alemannenstr.: mäßiges Kopfsteinpflaster	Q2 -3686,2579 -3695,2540 -3709,2517 -3725,2475 -3726,2457
 Alemannenstr.: asphaltiert	Q0 -3726,2457 -3740,2295 -3753,2241 -3827,2109
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3827,2109 -3899,2002 -4048,1851
 # REMOVED (aufgenommen) --- #: add_fragezeichen: Hat die Straße mittlerweile bessere Qualität (z.B. neuer Asphalt?)? --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/bauen/tiefbau/bauarbeiten.html?date=20131119
@@ -5321,7 +5321,7 @@ Borkumer Str.: Asphalt	Q0 -3678,13801 -3851,13849
 Borkumer Str.: Beton	Q0 -3851,13849 -3965,13870
 Emmy-Zehden-Weg: Asphalt	Q0 4891,15092 4810,15000
 #: by: Wolfram Jahn: Von B1 bis fast zur Kirche Nikolassee auch asphaltiert; grobes Kopfsteinpflaster dann bis Ecke Mittelbusch und wieder ab Beskidenstraße
-#: confirmed_by: srt (nur an Gerkrathstr. und B1)
+#: confirmed_by: srt
 #: note: laut ADFC-Karte zwischen B1 und Beskidenstr. gut geeignet, westlicher Abschnitt ungeeignet, wahrscheinlich wegen Kopfsteinpflaster
 Kirchweg: asphaltiert	Q0 -2912,1829 -2981,1925 -3019,1998
 Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3019,1998 -3031,2184
@@ -9306,7 +9306,7 @@ Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8
 #: next_check_id: MUSSEHL-2025
 #: note: kein "add_fragezeichen", unklares Ende der Bauarbeiten
 #: XXX: Ist die Qualität nach den Bauarbeiten besser geworden?
-#: last_checked: 2026-03-14 (mapillary)
+#: last_checked: 2026-04-06
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-20
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8982,8781 8926,8682 8842,8561
@@ -9864,8 +9864,8 @@ Wonnegausteig: mäßiger Asphalt	Q1- -2708,2439 -2704,2431 -2690,2385 -2675,2336 -
 Von-Luck-Str.: Asphalt	Q0 -2674,2133 -2720,2200 -2784,2358 -2842,2506 -2910,2601 -3018,2712 -3225,2902
 #: note: Wolfram (kirch...) meint hierzu: "relativ gut asphaltiert, ein paar hochgewölbte Querrillen (Frostschäden), ab 20 Km/h und 5 bar etwas lästig"
 Im Mittelbusch: Asphalt	Q0 -2720,2200 -2832,2190 -2934,2186 -3031,2184
-#: note: glatt gepflasterter Randbereich, eher selten zugeparkt
-Im Mittelbusch: schlechtes Kopfsteinpflaster	Q3 -3031,2184 -3095,2178 -3156,2134 -3215,2048
+#: note: hier absolutes Parkverbot
+Im Mittelbusch: schlechtes Kopfsteinpflaster, glatt gepflasterter Randbereich	Q2 -3031,2184 -3095,2178 -3156,2134 -3215,2048
 Waldhauswinkel: Beton	Q0 -2847,1705 -2784,1728
 Barnhelmstr.: Beton	Q0 -3248,1330 -2959,1430 -2758,1498 -2700,1517
 Quantzstr.: Beton	Q0 -2813,1188 -2885,1306 -2959,1430 -3044,1578 -3113,1692
@@ -13965,7 +13965,8 @@ St. Wolfgang-Str.: Gehwegplatten und glatte Pflasterung	Q0- 10216,12706 10287,12
 Stindestr.: Kopfsteinpflaster	Q2 6272,4716 6203,4630
 Großbeerenstr.: Asphalt mit einigen Schäden	Q1+; 8602,2377 8655,2556 8674,2627
 #: historical_note: bis Herbst 2025: Asphalt mit einigen Schäden, Q1
-Blücherstr.: Asphalt	Q0 10429,9514 10306,9640
+Blücherstr.: Asphalt	Q0 10306,9640 10429,9514
+Blücherstr.: Asphalt	Q0 10429,9514 10580,9361 10564,9292
 Agricolastr.: Asphalt	Q0 5376,12781 5543,12664 5673,12581 5797,12494
 Götelstr. [Parallelstraße]: Asphalt	Q0 -3293,12304 -3284,12304 -3255,12338 -3252,12405 -3260,12540
 Hölderlinstr.: Asphalt mit einigen leichten Schäden	Q0- 1787,11509 1586,11483 1429,11528
@@ -16856,7 +16857,11 @@ Schopenhauerstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -2167,3161 -2279,3
 Schopenhauerstr.: Asphalt	Q0 -2464,2914 -2481,2900 -2487,2891
 #: confirmed_by: srt
 Schopenhauerstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -2487,2891 -2593,2764 -2776,2660 -2910,2601 -3190,2467
-Normannenstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -3290,2420 -3368,2415 -3423,2443 -3492,2524 -3580,2551 -3692,2549
+#: corrected_by: srt ("überwiegend" entfernt)
+Normannenstr.: schlechtes Kopfsteinpflaster	Q3 -3290,2420 -3368,2415
+#: corrected_by: srt (clarification)
+#: note: es existiert zu beiden Seiten glatteres Pflaster, allerdings ist das meiste davon zugeparkt
+Normannenstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -3368,2415 -3423,2443 -3492,2524 -3605,2558 -3695,2540
 #: confirmed_by: srt (added "mäßiges bis schlechtes")
 Wasgenstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ -2642,3135 -2603,3128 -2464,2914
 Wasgenstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ -2487,2891 -2464,2861 -2440,2760 -2391,2624 -2408,2597
@@ -24773,7 +24778,7 @@ Drachholzstr.: schlechtes Kopfsteinpflaster	Q3+ 25553,5486 25754,5485
 # 
 #: by: Dzienian: vvv
 #: corrected_by: srt
-Prinz-Friedrich-Leopold-Str.: Kopfsteinpflaster	Q2 -3692,2549 -3634,2488
+Prinz-Friedrich-Leopold-Str.: Kopfsteinpflaster	Q2 -3695,2540 -3634,2488
 #: note: laut ADFC-Karte gut geeignet:
 Prinz-Friedrich-Leopold-Str.: guter Asphalt	Q0 -3634,2488 -3568,2382 -3519,2180 -3503,1988 -3501,1826 -3559,1760
 #: by: ^^^

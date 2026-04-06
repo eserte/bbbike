@@ -171,7 +171,7 @@ Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 188
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
 Alemannenstr.: Asphalt	Q0 -3360,2917 -3417,2886
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3417,2886 -3452,2868 -3509,2817 -3635,2668 -3686,2579
-Alemannenstr.: mäßiges Kopfsteinpflaster	Q2 -3686,2579 -3692,2549 -3709,2517 -3725,2475 -3726,2457
+Alemannenstr.: mäßiges Kopfsteinpflaster	Q2 -3686,2579 -3695,2540 -3709,2517 -3725,2475 -3726,2457
 Alemannenstr.: asphaltiert	Q0 -3726,2457 -3740,2295 -3753,2241 -3827,2109
 Alemannenstr.: gutes Kopfsteinpflaster	Q1 -3827,2109 -3899,2002 -4048,1851
 Nymphenufer: Kopfsteinpflaster, OK	Q1 -4164,1993 -4134,1984
@@ -8068,7 +8068,7 @@ Nickisch-Rosenegk-Str.: Kopfsteinpflaster	Q2 -2761,2895 -2709,3104
 Wonnegausteig: mäßiger Asphalt	Q1 -2708,2439 -2704,2431 -2690,2385 -2675,2336 -2674,2330
 Von-Luck-Str.: Asphalt	Q0 -2674,2133 -2720,2200 -2784,2358 -2842,2506 -2910,2601 -3018,2712 -3225,2902
 Im Mittelbusch: Asphalt	Q0 -2720,2200 -2832,2190 -2934,2186 -3031,2184
-Im Mittelbusch: schlechtes Kopfsteinpflaster	Q3 -3031,2184 -3095,2178 -3156,2134 -3215,2048
+Im Mittelbusch: schlechtes Kopfsteinpflaster, glatt gepflasterter Randbereich	Q2 -3031,2184 -3095,2178 -3156,2134 -3215,2048
 Waldhauswinkel: Beton	Q0 -2847,1705 -2784,1728
 Barnhelmstr.: Beton	Q0 -3248,1330 -2959,1430 -2758,1498 -2700,1517
 Quantzstr.: Beton	Q0 -2813,1188 -2885,1306 -2959,1430 -3044,1578 -3113,1692
@@ -11684,7 +11684,8 @@ St. Wolfgang-Str.: Gehwegplatten und glatte Pflasterung	Q0 10216,12706 10287,127
 (Jenbacher Weg - Mauerweg): Asphalt	Q0 6411,533 6413,520 6401,464 6427,395 6424,346 6388,241 6357,215
 Stindestr.: Kopfsteinpflaster	Q2 6272,4716 6203,4630
 Großbeerenstr.: Asphalt mit einigen Schäden	Q1; 8602,2377 8655,2556 8674,2627
-Blücherstr.: Asphalt	Q0 10429,9514 10306,9640
+Blücherstr.: Asphalt	Q0 10306,9640 10429,9514
+Blücherstr.: Asphalt	Q0 10429,9514 10580,9361 10564,9292
 Agricolastr.: Asphalt	Q0 5376,12781 5543,12664 5673,12581 5797,12494
 Götelstr. [Parallelstraße]: Asphalt	Q0 -3293,12304 -3284,12304 -3255,12338 -3252,12405 -3260,12540
 Hölderlinstr.: Asphalt mit einigen leichten Schäden	Q0 1787,11509 1586,11483 1429,11528
@@ -13006,7 +13007,8 @@ Schopenhauerstr.: asphaltiert	Q0 -1902,3290 -1956,3292 -2038,3252 -2167,3161
 Schopenhauerstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -2167,3161 -2279,3089 -2367,3006 -2464,2914
 Schopenhauerstr.: Asphalt	Q0 -2464,2914 -2481,2900 -2487,2891
 Schopenhauerstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -2487,2891 -2593,2764 -2776,2660 -2910,2601 -3190,2467
-Normannenstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -3290,2420 -3368,2415 -3423,2443 -3492,2524 -3580,2551 -3692,2549
+Normannenstr.: schlechtes Kopfsteinpflaster	Q3 -3290,2420 -3368,2415
+Normannenstr.: überwiegend schlechtes Kopfsteinpflaster	Q3 -3368,2415 -3423,2443 -3492,2524 -3605,2558 -3695,2540
 Wasgenstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 -2642,3135 -2603,3128 -2464,2914
 Wasgenstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 -2487,2891 -2464,2861 -2440,2760 -2391,2624 -2408,2597
 Wasgenstr.: Asphalt	Q0 -2408,2597 -2390,2539 -2372,2477 -2353,2424 -2328,2342 -2308,2276 -2280,2177
@@ -15751,7 +15753,7 @@ Dattelner Weg: guter Beton	Q0 1015,18419 1082,18389 1153,18359 1221,18332
 Seppenrader Weg: betoniert	Q0 1153,18359 1225,18508
 Dülmener Pfad: betoniert	Q0 1198,18520 1290,18679
 Drachholzstr.: schlechtes Kopfsteinpflaster	Q3 25553,5486 25754,5485
-Prinz-Friedrich-Leopold-Str.: Kopfsteinpflaster	Q2 -3692,2549 -3634,2488
+Prinz-Friedrich-Leopold-Str.: Kopfsteinpflaster	Q2 -3695,2540 -3634,2488
 Prinz-Friedrich-Leopold-Str.: guter Asphalt	Q0 -3634,2488 -3568,2382 -3519,2180 -3503,1988 -3501,1826 -3559,1760
 Am Waldpark: mäßiges Kopfsteinpflaster	Q2 4240,23985 4226,24037 4154,24112 4156,24168 4136,24200 4034,24181
 Rackebüller Weg: Verbundsteinpflaster	Q1 10658,-406 10586,-220

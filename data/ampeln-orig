@@ -21,7 +21,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-03-28
+#: last_checked: 2026-04-06
 #: check_frequency: 60d
 Michaelbrücke	F::inwork 11676,11839
 # 
@@ -81,7 +81,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # 
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026)
-#: last_checked: 2026-03-28
+#: last_checked: 2026-04-06
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-05-12 (VIZ-Verkehrsmeldung, valid geht aber länger)
@@ -404,10 +404,11 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
-#: last_checked: 2026-03-28
+#: last_checked: 2026-04-05 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
-	X::inwork 7873,12927
+# REMOVED (verschoben)	X::inwork 7873,12927
+	F::inwork 7822,12937
 # 
 # REMOVED --- #: source_id: viz2021:13.376888,52.517762,25.05.2023,11:19 (bis 30.09.2023) (inaktiv) --- #: last_checked: 2023-06-04 --- #: next_check: 2023-09-30 --- #: valid: -20230930 --- F::inwork 8373,12416
 # REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork::alternating 22192,6659
@@ -2442,6 +2443,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 6104,6253
 #: note: Anforderungsampel
 	F 5397,5302
+#: note: Anforderungsampel
 	F 5088,5495
 	F 8665,24941
 	X 3167,23277
@@ -3993,7 +3995,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-03-28 vvv
+#: last_checked: 2026-04-06 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3
@@ -5160,6 +5162,7 @@ UBB, halbstündlich	B 51270,179246
 	B -6076,73802
 	X 6349,-1745
 	X -1709,653
+	F -1748,579
 	X -1664,-1720
 	X -850,-203
 	X -351,708
@@ -5424,7 +5427,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"
-#: last_checked: 2025-04-12
+#: last_checked: 2025-06-22 (mapillary)
 #: check_frequency: 360d
 	X0 19131,-2145
 #: XXX ^^^
