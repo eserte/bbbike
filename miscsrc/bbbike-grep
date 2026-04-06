@@ -180,7 +180,7 @@ sub do_search {
 	my $until_time_spec; # currently used only for $is_temp_blockings_pl files
 	my $until_time_spec_check = sub {
 	    if ($until_time_spec =~ /^undef/) {
-		return 1;
+		return 0;
 	    } elsif ($until_time_spec =~ /^(\d{9,})/) { # match epoch seconds since 1973
 		if ($1 <= time) {
 		    return 1;
