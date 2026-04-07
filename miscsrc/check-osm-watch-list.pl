@@ -4,11 +4,10 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016,2018,2019,2022,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2018,2019,2022,2023,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
 # WWW:  https://github.com/eserte/bbbike
 #
 
@@ -60,8 +59,9 @@ GetOptions(
 	   'without-notes' => sub { $with_notes = 0 },
 	   'method=s' => \$method,
 	   'diff-context=i' => \$diff_context,
+	   'overpass-api-url=s' => \$overpass_api_url,
 	  )
-    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-diff-context lines] [-osm-watch-list ...] [-new-file ...] [-without-notes] [-method overpass|api|osm-file]\n";
+    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-diff-context lines] [-osm-watch-list ...] [-new-file ...] [-without-notes] [-method overpass|api|osm-file] [-overpass-api-url ...]\n";
 
 if ($method !~ m{^(osm-file|api|overpass)$}) {
     die "Allowed methods are 'overpass', 'api' and 'osm-file', specified was '$method'";
@@ -422,6 +422,9 @@ typically need less bandwidth (C<api> for 500 watches about 2 MB,
 C<overpass> even less) than downloading complete osm files (Berlin,
 for example, is gzip-compressed more than 120 MB at the time of
 writing).
+
+C<-overpass-api-url I<URL>> can be used to access a different Overpass
+API server.
 
 =head1 AUTHOR
 
