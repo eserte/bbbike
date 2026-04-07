@@ -3982,8 +3982,8 @@ Borkumer Str.: Asphalt	Q0 -3678,13801 -3851,13849
 Borkumer Str.: Beton	Q0 -3851,13849 -3965,13870
 Emmy-Zehden-Weg: Asphalt	Q0 4891,15092 4810,15000
 Kirchweg: asphaltiert	Q0 -2912,1829 -2981,1925 -3019,1998
-Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3019,1998 -3031,2184
-Kirchweg: asphaltiert	Q0 -3031,2184 -3030,2266
+Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3019,1998 -3028,2154
+Kirchweg: asphaltiert	Q0 -3028,2154 -3031,2184 -3030,2266
 Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
 Hortensienplatz: Gehwegplatten	Q0 4156,4784 4121,4841 4116,4850
 (Lustgarten entlang des Spreekanals): wassergebundene Decke	Q1 10063,12438 9956,12617 9948,12631
@@ -9957,8 +9957,8 @@ Gockelweg [Stichstraße]: Verbundsteinpflaster	Q1 16173,-571 16145,-503 16119,-51
 (Königsheideweg - Südostallee): Asphalt	Q0 15784,5865 15788,5898 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059 16159,6051 16169,6064
 (Königsheideweg - Südostallee): Asphalt	Q0 15788,5898 15881,5901 15967,5924 15964,5940
 Planckstr.: Asphalt	Q0 9402,12792 9386,12833 9375,12911
-Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1 12267,16946 12307,16950 12382,17006 12562,17135
-Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1 12562,17135 12768,17308 12780,17318 12865,17381 12976,17464 12998,17480
+Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1 12267,16946 12307,16950 12382,17006 12562,17135 12768,17308
+Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1 12768,17308 12780,17318 12865,17381 12976,17464 12998,17480
 Am Steinberg: Beton	Q1 12998,17480 13156,17579
 (Erknerstr. - Forstmeisterweg): unbefestigter Weg	Q2 32224,3889 32236,3885
 (Lassallestr. - Forstmeisterweg): unbefestigter Weg	Q2 32222,3680 32233,3679
@@ -11590,6 +11590,7 @@ Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
 Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17252,14495 17400,14511
+Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17526,14531 17824,14572
 Klaus-Selmke-Str.: Asphalt	Q0 21133,11387 21275,11547
 Kurfürstendamm: Asphaltschäden	Q0; 5475,10808 5656,10876
 Bruno-Bauer-Str.: Gehwegplatten	Q0 12893,6527 12904,6488 12921,6424
@@ -11961,6 +11962,8 @@ Konradinstr.: Asphalt, einige leichte Schäden	Q0 8872,5484 8674,5357
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Asphalt	Q0 21163,11172 21137,11200
 (Planstraße am ehemaligen Funkwerk): Asphalt	Q0 22538,3889 22553,3592 22586,3595
 Am Dorfanger - Parkanlage: Parkweg	Q1 4799,20517 4790,20493
+(Kolonie Frieden, Hauptweg): unbefestigter Weg zwischen Rasengittersteinen, etwas Schotter	Q2 13150,17039 13261,16918
+(Kolonie Frieden, Hauptweg): holpriger unbefestigter Weg zwischen Rasengittersteinen	Q2 13261,16918 13382,16777
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -14796,7 +14799,7 @@ Karmeliterweg: Asphalt	Q0 1745,24546 1797,24562 1852,24593 1878,24619
 Alemannenstr. (Frohnau): Asphalt	Q0 1738,25243 1767,25098 1775,25019 1750,24942 1730,24860 1732,24798 1735,24738 1736,24722
 Riegerzeile: guter Beton	Q0 8775,4365 8788,4278
 Hosemannstr.: guter Asphalt	Q0 12721,15807 12762,15882 12783,15921 12817,15985 12842,16032
-Roelckestr.: guter Asphalt	Q0 12842,16032 12890,16121 12943,16214 13033,16387 13104,16522 13272,16672 13581,16968 13754,17133 13812,17206 13832,17232 13904,17325
+Roelckestr.: guter Asphalt	Q0 12842,16032 12890,16121 12943,16214 13033,16387 13104,16522 13272,16672 13382,16777 13581,16968 13754,17133 13812,17206 13832,17232 13904,17325
 Rathener Str.: guter Asphalt	Q0 24228,14644 24271,14576 24359,14543
 Grillostr.: Asphalt	Q0 8741,685 8730,707 8729,728 8790,854 8872,1031 8898,1042
 Kaiserstr. (Lichterfelde): glattes Kopfsteinpflaster	Q1 5097,988 5063,1040 5045,1089 5050,1133 5079,1189 5134,1224 5201,1227 5246,1208 5284,1170 5309,1130

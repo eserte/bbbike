@@ -382,7 +382,7 @@ Attilastr. -> Ellwanger Str.: Mittelstreifen, Umweg bis zur Neckarsulmer Str.	DH
 Zechliner Str. -> Landsberger Allee: sehr ungünstige Ampelschaltung	DH:t=120 16304,14434 16314,14361 16590,14386
 # 
 #: note: siehe auch ampeln-Eintrag
-Ferdinand-Schultze-Str. -> Landsberger Allee: sehr ungünstige Ampelschaltung	DH:t=120 17791,14639 17848,14523 18057,14549
+Ferdinand-Schultze-Str. -> Landsberger Allee: sehr ungünstige Ampelschaltung	DH:t=120 17791,14639 17824,14572 17848,14523 18057,14549
 # 
 #: note: siehe auch comments_path-Eintrag
 Brunnenstr. -> Humboldthain: Mittelstreifen, zunächst den linken Gehweg benutzen	DH:h=q3,30 9267,15790 9255,15816 9092,15789
@@ -789,7 +789,7 @@ Kurfürstenstr. (Mariendorf): provisorischer Radweg auf dem Gehweg, ca. 40m	DH:h=
 #: source_id: bvg2024:347#HIM_FREETEXT_324247 (kein Endedatum)
 #: also_indoor: traffic (T,G[zu lang])
 #: note: mittlerweile mit Umweg
-#: last_checked: 2026-03-29 vvv
+#: last_checked: 2026-04-07 (traffic) vvv
 #: check_frequency: 14d vvv
 Hildegard-Jadamowitz-Str.: Sperrung der Fahrbahn, Umweg	DH:len=80:h=q3,50 13019,12316 12985,12303
 Hildegard-Jadamowitz-Str.: Sperrung der Fahrbahn, Umweg	DH:len=80:h=q3,50 12985,12303 13019,12316

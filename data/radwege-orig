@@ -1016,7 +1016,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-03-30
+#: last_checked: 2026-04-07
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1396,6 +1396,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.tagesspiegel.de/berlin/elsenbrucke-nun-beidseitig-zweispurig-stau-gibt-es-nur-noch-auf-der-autobahn-15363025.html
 #: by: https://www.entwicklungsstadt.de/neue-verkehrsfuehrung-auf-der-elsenbruecke-das-aendert-sich-fuer-alle-verkehrsteilnehmer/
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8251 (Antrag zur Busspur)
+#: by: https://www.entwicklungsstadt.de/elsenbruecke-und-a100-mehr-spuren-aber-kaum-entlastung/
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -3646,7 +3647,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2026-04-04 vvv
+#: last_checked: 2026-04-07 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -6163,18 +6164,18 @@ asphaltierter Bordsteinradweg	RW1; 18042,4667 18239,4453 18374,4307 18541,4125 1
 # 
 #: note: Ferdinand-Schultze-Str., Richtung Norden
 #: historical_note: ganz früher (vor 2015?) RW2;
-Verbundsteinpflasterradweg	RW1; 17848,14523 17791,14639
-	RW1; 17791,14639 17848,14523
+Verbundsteinpflasterradweg	RW1; 17848,14523 17824,14572 17791,14639
 Verbundsteinpflasterradweg	RW1; 17791,14639 17745,14734 17693,14840 17684,14858 17638,14945 17609,15006 17432,15378 17424,15400 17405,15454 17377,15588 17370,15670 17378,15760
 #: note: Ferdinand-Schultze-Str., Richtung Süden
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15588 17405,15454 17424,15400 17432,15378 17609,15006 17638,14945
 #: next_check_id: WEISSETAUBE-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-wei%C3%9Fe-taube.161/page-3#post-26792
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
-#: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734
-#: last_checked: 2026-03-01 (luftbildsuche)
-	RW0; 17638,14945 17684,14858 17693,14840 17745,14734
-Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17745,14734 17791,14639
+#: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639 17824,14572
+#: last_checked: 2026-04-07
+#: check_frequency: 60d
+	RW0; 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639 17824,14572
+	RW3; 17824,14572 17848,14523
 # 
 	RW4; 17488,15766 17429,15930
 # REMOVED (nein) --- #: XXX zurzeit gibt es hier Bauarbeiten, werden die letzten Meter vielleicht auch noch zur Radspur gemacht? --- #: last_checked: 2018-01-14 --- #: check_frequency: 60d
@@ -6877,7 +6878,7 @@ Verbundsteinpflaster	RW1; 16961,16042 17130,16032 17178,16029
 	RW4;RW4 14809,16525 14619,16551
 	RW6;RW6 13385,13992 13485,14054 13585,14117
 Verbundsteinpflaster, OK, relativ breit	RW1; 13037,16957 12989,16921 12923,16873 12858,16825 12813,16791
-asphaltiert	RW1; 12757,16748 12813,16791 12858,16825 12923,16873 12989,16921 13037,16957 13129,17024 13342,17180 13511,17311 13590,17368
+asphaltiert	RW1; 12757,16748 12813,16791 12858,16825 12923,16873 12989,16921 13037,16957 13129,17024 13150,17039 13342,17180 13511,17311 13590,17368
 	RW1; 13590,17368 13633,17399 13708,17453
 #: by: Ulrich Dalkmann
 	RW6;RW6 -8207,7012 -8140,6898 -8087,6806

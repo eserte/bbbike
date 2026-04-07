@@ -14366,7 +14366,7 @@ EOF
        until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2025-10-25T00:00:00"]],
-#      recurrence_prewarn_days => -40,
+       recurrence_prewarn_days => 14,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31517,7 +31517,7 @@ EOF
        data  => <<EOF,
 #: source_id: 2147344888 (bis Mitte Oktober 2019)
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/veraenderte-verkehrsfuehrung_a234880
-	q4::inwork; 13590,17368 13511,17311 13342,17180 13129,17024 13037,16957
+	q4::inwork; 13590,17368 13511,17311 13342,17180 13150,17039 13129,17024 13037,16957
 	q4::inwork; 12813,16791 12757,16748 12705,16708
 EOF
      },
@@ -31860,6 +31860,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5oyo7f6k2u
 #: source_id: LMS-BR:401939/72 viz2021:13.60641,52.50494, (bis 05.06.2026)
+#: source_id: LMS-BR:404070/72 viz2021:13.60641,52.50494,07.04.2026,08:00 (B1 Höhe Neuenhagener Str., bis 30.04.2026)
 #: next_check: 2026-03-16
 Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
 EOF
@@ -34015,7 +34016,7 @@ EOF
 #: osm_watch: way id="1060570985" version="4"
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
-#: osm_watch: note 3914565 19
+#: osm_watch: note 3914565 21
 #: last_checked: 2026-03-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
@@ -38091,28 +38092,29 @@ EOF
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: last_checked: 2026-03-02 (az-lichtenrade) vvv
 #: check_frequency: 60d (traffic) vvv
-# REMOVED --- #: next_check: 2025-11-30 (az-lichtenrade, "im November") vvv
-#: next_check: 2026-04-07 (Briesingstr. nicht mehr Einbahnstraße?) vvv
-# REMOVED --- #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
-# REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
-# REMOVED (laut az-lichtenrade mittlerweile in beide Richtungen befahrbar) --- #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung --- Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
-# REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
-# REMOVED (laut Umleitungsplan nicht mehr) --- Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
-# REMOVED (laut Umleitungsplan nicht mehr) (tatsächlich auch nicht; interessanterweise ist eine provisorische Radspur noch übrig geblieben) --- Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
-# REMOVED (hier nicht mehr) --- Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
 #: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026) (inaktiv)
 #: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026) (bis 31.12.2026)
 #: note: an der Bahnhofstr. keine Freigabe für Radfahrer, allerdings ab Mellener Str. Richtung Goltzstr. mit Einbahnstraße, Radfahrer beide Richtungen ausgeschildert?!
 Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
-# REMOVED (hier vermutlich nicht) --- Goltzstr.	q4::inwork; 10763,-2276 10642,-2371 10563,-2432 10454,-2520
+Zescher Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10509,-2128 10513,-2397
+Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 10642,-2371
 #: source_id: LMS-BR:392667/72 viz2021:13.40053,52.38317,09.12.2025,00:00 (bis 18.05.2026) (bis 31.12.2026)
 #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Antrag: Freigabe für Radverkehr)
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260407 (Freigabe für Radverkehr nach den Osterfeiertagen)
+#: add_fragezeichen: Ist die Briesingstr. für Radfahrer in beide Richtungen freigegeben?
+#: next_check: 2026-04-07
 Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156
+# REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
+# REMOVED (laut Umleitungsplan nicht mehr) --- Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
+# REMOVED (laut Umleitungsplan nicht mehr) (tatsächlich auch nicht; interessanterweise ist eine provisorische Radspur noch übrig geblieben) --- Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
+# REMOVED (hier nicht mehr) --- Gerstnerweg	q4::inwork; 10303,-1954 10409,-1954 10513,-1954
+# REMOVED (hier vermutlich nicht) --- Goltzstr.	q4::inwork; 10763,-2276 10642,-2371 10563,-2432 10454,-2520
+# REMOVED (laut Umleitungsplan nicht mehr) --- Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116
+# REMOVED (laut az-lichtenrade mittlerweile in beide Richtungen befahrbar) --- #: note: laut Umleitungsplan seit Juli 2025 umgedrehte Einbahnstraßenrichtung --- Bahnhofstr.	q4::inwork; 10756,-2128 10983,-2116
 # REMOVED (hier nicht?) --- Briesingstr.	q4::inwork; 10318,-2156 10310,-2136
-Zescher Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10509,-2128 10513,-2397
-Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 10642,-2371
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -47456,7 +47458,7 @@ EOF
        until => $isodate2epoch->("2026-08-31 23:59:59"), # 1764543600, # 2025-12-01 00:00
 #      text  => 'Smetanastr.: Bauarbeiten zwischen Chopin- und Gounodstr., Sperrung der Fahrbahn, vom 03.02.2025 bis voraussichtlich 30.11.2025',
 #      text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Otto-Brahm-Str., Sperrung der Fahrbahn, bis voraussichtlich 30.11.2025',
-       text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Indira-Gandhi-Str., Einbahnstraßenregelung, bis voraussichtlich Ende August 2026',
+       text  => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Indira-Gandhi-Str., Einbahnstraßenregelung, offen Richtung Westen, bis voraussichtlich Ende August 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
@@ -47466,12 +47468,13 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
 #: source_id: LMS-BR:359627/72 viz2021:13.46101,52.5454,05.02.2025,07:00 viz2021:13.46101,52.5454, (bis 30.11.2025) (noch immer Smetanastr.?, bis 05.12.2025) (bis 31.08.2026)
-#: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
+# REMOVED --- #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
 # REMOVED --- #: last_checked: 2025-12-12 (vorfristig beendet) --- #: check_frequency: 120d --- #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 # REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
 # REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
 # REMOVED --- Chopinstr.	q4::inwork 14195,15604 14321,15636
+#: note: Halteverbotsschilder bis 30.08.2026 18:00
 Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,15738
 EOF
      },
@@ -47697,7 +47700,7 @@ EOF
 #: source_id[inactive]: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
 #: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
-#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026) (bis 22.04.2026)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
 #: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
@@ -47712,7 +47715,7 @@ EOF
 #: also_indoor: traffic (G,T,H,A,W)
 #: last_checked: 2026-03-05 (traffic) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-08-24 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
 # REMOVED (hier Sackgasse) --- Kietzer Str. - Kirchstr.	q4::inwork 22246,4711 22240,4768 22196,4847
 Jägerstr.: Fahrbahn gesperrt	q4::inwork 22314,4604 22355,4660
@@ -48409,12 +48412,7 @@ EOF
 #: by: https://www.aktives-adlershof.de/aktuelles?date=20260303 (ab 9.3.2026 Bauarbeiten Nipkowstraße/Radickestraße (evtl. mit Sperrung?))
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
-# REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
-#: last_checked: 2026-04-06 (website check) vvv
-#: check_frequency: 14d (website checks) vvv
-# REMOVED --- #: next_check: 2026-03-15 (Sperrung der Gellertstr. ab 16.3.2026, eine Woche der Thomas-Müntzer-Str.) vvv
-# REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
 #: source_id: viz2021:13.546969,52.435063,10.06.2025,07:00 (hier nur Kfz-Verkehr, bis 18.07.2025) (mittlerweile auch Radverkehr; Gesamtbaumaßnahme bis Mitte 08/2025) (inaktiv)
 #: source_id[inactive]: bvg2024:162#HIM_FREETEXT_287515 (Verlegung der Haltestelle Radickestr./Nipkowstr. ab 10.06.2025)
 #: by: https://fahrinfo.vbb.de/him-uploads/1749208703071_Kartenausschnitt_Radickestr.png (evtl. Erweiterung der Einbahnstraßenregelung in der Radickestraße?)
@@ -48430,6 +48428,32 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (bei der Baustelle Radickestr./Nipkowstr. wird nur der Kfz-Verkehr erwähnt, bis Ende März 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm547wnd22g
+#: last_checked: 2026-04-06 (website check) vvv
+#: check_frequency: 14d (website checks) vvv
+#: note: laut rbb Einbahnstraße
+Radickestraße: Sperrung Richtung Adlergestell zwischen Arndtstraße und Nipkowstraße	q4::inwork; 20592,3633 20499,3572
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: also_indoor: traffic (no-T,G[nur Flemmingstr])
+#: last_checked: 2026-04-07 (traffic) vvv
+#: check_frequency: 30d vvv
+Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
+Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: note: laut Website möglicherweise bis 16.01.2026; nun: Asphaltierung steht noch aus
+#: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
+#: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 30.04.2026)
+#: also_indoor: traffic (T,G)
+#: last_checked: 2026-04-07 (traffic)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
+Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
+# 
+# REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
+# REMOVED --- #: next_check: 2026-03-15 (Sperrung der Gellertstr. ab 16.3.2026, eine Woche der Thomas-Müntzer-Str.) vvv
+# REMOVED (noch nicht aktiv): next_check: 2025-07-30 (Oberspreestr.)
 # REMOVED (ist gewandert?) --- #: note: Beginn ab 10. Juni 2025 --- Radickestraße: Einbahnstraße zwischen Gellertstr. und Friedenstr., offen Richtung Adlergestell	q4::inwork; 20237,3392 20262,3409 20299,3435 20366,3480
 # REMOVED (hier nicht mehr?) --- #: note: Halteverbotsschilder bis 15.08.2025, auch laut Website bis zum gleichen Datum; bei rbb+adac nun ebenfalls bis zum 15.08.2025 verlängert
 # REMOVED --- Radickestraße: Einbahnstraße zwischen Anna-Seghers-Str. und Nipkowstr., offen Richtung Adlergestell	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572
@@ -48438,8 +48462,6 @@ EOF
 # REMOVED --- Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
 # REMOVED --- Gellertstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20148,3490 20237,3392
 # REMOVED --- Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
-#: note: laut rbb Einbahnstraße
-Radickestraße: Sperrung Richtung Adlergestell zwischen Arndtstraße und Nipkowstraße	q4::inwork; 20592,3633 20499,3572
 # REMOVED --- #: next_check: 2025-07-15
 # REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
 # REMOVED --- #: note: ab 28.07.2025, genauer Abschnitt unklar --- Wassermannstr.	q4::inwork 20637,3919 20776,3753
@@ -48456,23 +48478,6 @@ Radickestraße: Sperrung Richtung Adlergestell zwischen Arndtstraße und Nipkowstr
 # REMOVED ("Kabeltiefbau abgeschlossen") --- #: note: laut Haltestellenschilder vom 21.05.2025 07 Uhr bis 24.07.2025 17 Uhr; laut Website Verkehrsfreigabe am 08.08.2025 --- Flemmingstr.	q4::inwork 21848,4882 21726,4537 --- #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt --- Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 # REMOVED (abgeschlossen) --- #: note: wo genau? --- Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 # REMOVED --- #: next_check ^^^
-# 
-#: also_indoor: traffic (no-T,G[nur Flemmingstr])
-#: last_checked: 2026-03-24 (traffic) vvv
-#: check_frequency: 30d vvv
-Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
-Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
-#: note: laut Website möglicherweise bis 16.01.2026; nun: Asphaltierung steht noch aus
-#: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
-#: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 30.04.2026)
-#: also_indoor: traffic (T,G)
-#: last_checked: 2026-03-24 (traffic)
-# REMOVED --- #: check_frequency: 3d (traffic)
-#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
-Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 # REMOVED --- #: note: laut stromnetz-Seite mittlerweile abgeschlossen, aber vielleicht steht hier auch noch die Asphaltierung aus?
 # REMOVED --- #: source_id: viz2021:13.55199,52.439584,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 # REMOVED --- #: source_id: LMS-BR:390692/72 viz2021:13.55146,52.44, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (inaktiv)
@@ -48482,8 +48487,6 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 # REMOVED --- #: next_check: 2026-02-27 (VIZ-Verkehrsmeldung)
 # REMOVED --- Wassermannstr.: Dörpfeldstr. - Selchowstr. gesperrt	q4::inwork 20637,3919 20583,3983
 # 
-#: check_frequency ^^^
-#: last_checked ^^^
 EOF
      },
      { from  => 1744520400, # 2025-04-13 07:00
@@ -49029,6 +49032,8 @@ EOF
 #: by: https://entwicklungsstadt.de/wuhlheide-bruecke-rueckbau-abgeschlossen-zukunft-offen/
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8053 (Antrag)
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8055 (Antrag (Kreisverkehr))
+#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/ein-jahr-nach-abriss-der-berliner-wuhlheide-brucke-was-wird-aus-den-verbliebenen-rampen-15438304.html
+#: by: https://www.entwicklungsstadt.de/wuhlheide-bruecke-abriss-und-umbau-der-kreuzung/
 # REMOVED --- #: add_fragezeichen: Ist die Durchfahrt für Radfahrer wieder möglich? --- #: last_checked: 2025-05-20 --- #: next_check: 2025-05-29
 unter der Brücke	2::inwork 17990,7115 18010,7137
 EOF
@@ -51099,7 +51104,7 @@ EOF
      { from  => 1761110409, # 2025-10-22 07:20
        until => $isodate2epoch->("2026-05-13 23:59:59"),
 #      text  => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
-       text  => 'Amalienstr.: Einbahnstraßenregelung, außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., bis 13. Mai 2026',
+       text  => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 13. Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
@@ -51107,9 +51112,10 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
 #: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026)
 #: source_id: bvg2024:156#HIM_FREETEXT_303396
-# REMOVED --- Gustav-Adolf-Str.	q4::inwork; 13037,16957 13129,17024 13342,17180
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
+Wigandstaler Str.: Einfahrt verboten	q3::inwork; 12910,17123 13037,16957
 Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
+Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprigen Gehweg erlaubt	q2::inwork; 13037,16957 13129,17024 13150,17039 13342,17180
 EOF
      },
      { from  => 1761159637, # 2025-10-22 21:00
@@ -51789,15 +51795,16 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Georg-Knorr-Str. - Frank-Schweitzer-Str.: Unterführung unter der Landsberger Allee kann gesperrt sein (Stand Mitte Januar 2026: Durchfahrt möglich)',
+#      text  => 'Georg-Knorr-Str. - Frank-Schweitzer-Str.: Unterführung unter der Landsberger Allee kann gesperrt sein (Stand Mitte Januar 2026: Durchfahrt möglich)',
+       text  => 'Georg-Knorr-Str. - Frank-Schweitzer-Str.: Unterführung unter der Landsberger Allee kann gesperrt sein (Stand April 2026: Durchfahrt vermutlich nicht möglich)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: KNOTENMARZAHN-2022
 #: osm_watch: note 4547152 5
-#: last_checked: 2026-01-17
-#: check_frequency: 120d
+#: last_checked: 2026-04-06 (daf)
+#: check_frequency: 90d
 #: next_check: 2026-12-31
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.)	2::inwork 19157,14979 19171,14938 19173,14932
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.)	2::inwork 19173,14932 19171,14938 19157,14979
 EOF
      },
      { from  => undef,
@@ -52444,11 +52451,14 @@ EOF
 EOF
      },
      { from  => 1775426400, # 2026-04-06 00:00
-       until => 1781560799, # 2026-06-15 23:59
+       until => $isodate2epoch->("2026-06-12 23:59:59"), # 1781560799, # 2026-06-15 23:59
        text  => 'Borsigstr.: Bauarbeiten, Anbindung an die Torstr. gesperrt, vom 7.4.2026 bis Mitte Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260402
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3miuzl2mxlk23
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia66tltsum32mkymbjkhdu43dqpdebywpnndoeadsdfsr2o4tk5vm (Länge des gesperrten Bereichs 72,5m)
+#: source_id: LMS-BR:404063/72 viz2021:13.391393,52.528031,07.04.2026,07:00 (bis 12.06.2026)
 	q4::inwork 9508,13578 9373,13769
 EOF
      },
@@ -52465,6 +52475,37 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2027-12-31 (neubaukompass website)
 	q4::inwork; 4886,6819 4886,6711
+EOF
+     },
+     { from  => undef, # 
+       until => undef, #
+       text  => 'Kolonie Frieden, Hauptweg: nachts und im Winter geschlossen, Öffnungszeiten April - August 08:00-21:00 Uhr, September 08:00-20:00 Uhr, Oktober - März verschlossen',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<'EOF',
+#: tempex: YYYY0101-YYYY0331, YYYY0401-YYYY0831 T21:00-T08:00, YYYY0901-YYYY0930 T20:00-T08:00, YYYY1001-YYYY1231
+	2::temp 13382,16777 13261,16918 13150,17039
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Sabinensteig: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (G[ungenaue Richtungsangabe],T,H,no-W)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2026-04-07
+#: check_frequency: 14d (traffic)
+	q4::inwork; 16416,16236 16395,16099
+EOF
+     },
+     { from  => 1775451600, # 2026-04-06 07:00
+       until => 1780091940, # 2026-05-29 23:59
+       text  => 'Bödikerstr.: Bauarbeiten zwischen Corinthstr. und Persiusstr., Sperrung, vom 07.04.2026 07:00 bis 29.05.2026 23:59',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:404055/72 viz2021:13.46315,52.49949,07.04.2026,07:00 (bis 29.05.2026)
+	q4::inwork 14447,10491 14490,10610
 EOF
      },
     );

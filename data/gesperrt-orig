@@ -132,8 +132,8 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2026-03-03 (mapillary) vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2026-04-06 (daf) vvv
+#: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
 Knoten Märkische/Landsberger Allee	1no 19175,14968 19196,14976
@@ -4073,9 +4073,9 @@ Schwingtor	BNP:5::trailer=10 4183,13725
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13021 (Antrag)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13066 (Anfrage)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13178 (Antrag)
-#: osm_watch: way id="27457006" version="30"
+#: osm_watch: way id="27457006" version="31"
 #: note: war mal in temp_blockings
-#: last_checked: 2026-03-28 (osm)
+#: last_checked: 2026-04-06 (osm)
 #: check_frequency: 180d
 Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 # 
@@ -5848,7 +5848,7 @@ B101 südlich von Großenhain: Brücke gesperrt	2::inwork 21254,-125506 21046,-1256
 #: next_check: 2026-11-30 (entwicklungsstadt) vvv
 #: osm_watch: way id="1217551824" version="1"
 Friedenthaler Schleuse: Weg möglicherweise gesperrt	2::inwork -1732,40250 -1693,40207 -1707,40192
-#: osm_watch: way id="1217551823" version="2"
+#: osm_watch: way id="1217551823" version="3"
 Hinter dem Schlosspark: Weg möglicherweise gesperrt	2::inwork -1675,40140 -1707,40192 -1818,40242 -1871,40107
 #: next_check ^^^
 # 

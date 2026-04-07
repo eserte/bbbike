@@ -27,7 +27,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-04-04
+#: last_checked: 2026-04-07
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -420,12 +420,17 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://www.tagesspiegel.de/berlin/wichtige-verbindung-des-berliner-u-bahn-netzes-endlich-baurecht-fur-den-neuen-waisentunnel-15163355.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_06_0325_0404_online.pdf
 #: by: https://www.entwicklungsstadt.de/bvg-beginnt-bau-am-waisentunnel-start-fuer-ersatzneubau-unter-der-spree/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3miuytedlfk23
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigimbmt5kemm4xvcr7cadihp3nwx4uistazkfxzlindpj6vtcmg3u (Einbahnstraßenregelung)
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026)
+#: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
 #: last_checked: 2026-04-06
 #: check_frequency: 30d
-#: next_check: 2030-12-31 (entwicklungsstadt)
-Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
+#: next_check: 2026-04-24 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2030-12-31 (entwicklungsstadt)
+#Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
+Littenstr.: Einbahnstraßenregelung wegen Bauarbeiten	q4::inwork; 11155,12184 11139,12243
 # 
 # REMOVED (keine Bauarbeiten mehr)
 # REMOVED --- #: next_check_id: HEINRICHHEINE-2025
@@ -865,6 +870,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: next_check_id: PERLEBERGER-2024
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033
+#: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,re-G[viel zu kurz?],re-W,re-ex-H)
 #: last_checked: 2026-04-06 (traffic)
@@ -1144,6 +1150,11 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 #: last_checked ^^^
 # 
 ### Lichtenberg ###
+# 
+#: next_check_id: WEISSETAUBE-2025
+#: last_checked: 2026-04-07
+#: check_frequency: 60d
+Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hochbauarbeiten	q1-::inwork 17526,14531 17824,14572
 # 
 # REMOVED --- #: next_check_id: TRAM21-2025
 # REMOVED --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025) (zwischenzeitlich inaktiv)
@@ -5343,7 +5354,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-04-02 vvv
+#: last_checked: 2026-04-07 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-05-04 vvv
 # REMOVED --- #: valid: -20251219
@@ -5689,6 +5700,8 @@ Jean-Monnet-Str.: zwei Bodenschwellen	q2+ 7995,13537 8048,13578
 (Einbecker Str. - Frankfurter Allee): schmale Fahrbahn, kein Bürgersteig	q2 17020,11748 17034,11797 17221,11777 17251,11789
 # 
 Warnitzer Str.: Kurven, unübersichtlch	q1 18141,17960 18041,18073 17962,18010 17994,17958
+# 
+(Kolonie Frieden, Hauptweg): einige Fußgänger	q1 13150,17039 13261,16918 13382,16777
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

@@ -4975,7 +4975,7 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11050 (Antrag zur Verkehrsberuhigung)
 #: XXX wann wird hier saniert?
 #: osm_watch: way id="22046245" version="25"
-#: last_checked: 2026-03-07
+#: last_checked: 2026-04-07
 #: check_frequency: 360d
 # REMOVED (keine Anzeichen für eine baldige Sanierung) --- #: next_check: 2025-12-31
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
@@ -5324,8 +5324,8 @@ Emmy-Zehden-Weg: Asphalt	Q0 4891,15092 4810,15000
 #: confirmed_by: srt
 #: note: laut ADFC-Karte zwischen B1 und Beskidenstr. gut geeignet, westlicher Abschnitt ungeeignet, wahrscheinlich wegen Kopfsteinpflaster
 Kirchweg: asphaltiert	Q0 -2912,1829 -2981,1925 -3019,1998
-Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3019,1998 -3031,2184
-Kirchweg: asphaltiert	Q0 -3031,2184 -3030,2266
+Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3019,1998 -3028,2154
+Kirchweg: asphaltiert	Q0 -3028,2154 -3031,2184 -3030,2266
 Kirchweg: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg üblich	Q3 -3030,2266 -3109,2306 -3211,2405 -3244,2436 -3235,2496 -3280,2507
 Hortensienplatz: Gehwegplatten	Q0- 4156,4784 4121,4841 4116,4850
 (Lustgarten entlang des Spreekanals): wassergebundene Decke	Q1 10063,12438 9956,12617 9948,12631
@@ -11552,8 +11552,8 @@ Am Rodelberg: Asphalt	Q0 7082,22414 7287,22403 7292,22505
 Wilhelm-Kuhr-Str.: Asphalt	Q0 9236,17907 9193,17763 9160,17656
 Hönower Weg: Asphalt	Q0 17383,9719 17471,9688
 #: historical_note: bis Anfang 2025: Beton mit einigen Hebungen, Q0-; mittlerweile ist noch ein unebener Asphaltstreifen durch Leitungsarbeiten entstanden, deshalb Degradierung auf Q1+, Herbst 2025: wieder etwas besser vvv
-Hönower Weg: Beton mit einigen Hebungen	Q0+; 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770
-Hönower Weg: Beton mit einigen Hebungen	Q0+; 18066,9770 17920,9698 17777,9649
+Hönower Weg: Beton mit einigen Hebungen	Q0-; 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770
+Hönower Weg: Beton mit einigen Hebungen	Q0-; 18066,9770 17920,9698 17777,9649
 #: historical_note: Juli 2025: Beton wieder neu gemacht, davor zeitweise Beton mit einigen Hebungen, Q1+;
 Hönower Weg: Beton	Q0-; 17777,9649 17668,9632 17587,9655 17471,9688
 #: historical_note ^^^
@@ -11953,8 +11953,8 @@ Gockelweg [Stichstraße]: Verbundsteinpflaster	Q1+ 16173,-571 16145,-503 16119,-5
 (Königsheideweg - Südostallee): Asphalt	Q0 15788,5898 15881,5901 15967,5924 15964,5940
 #: historical_note: früher (bis 2024/2025): Pflasterung, alte Straßenbahnschienen, provisorische Asphaltstreifen, Q1; letzte Deckschicht seit etwa Ende Juni 2025 drauf
 Planckstr.: Asphalt	Q0 9402,12792 9386,12833 9375,12911
-Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1 12267,16946 12307,16950 12382,17006 12562,17135
-Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1+ 12562,17135 12768,17308 12780,17318 12865,17381 12976,17464 12998,17480
+Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1 12267,16946 12307,16950 12382,17006 12562,17135 12768,17308
+Am Steinberg: teils rauer, teils schadhafter Asphalt	Q1+ 12768,17308 12780,17318 12865,17381 12976,17464 12998,17480
 Am Steinberg: Beton	Q1+ 12998,17480 13156,17579
 (Erknerstr. - Forstmeisterweg): unbefestigter Weg	Q2 32224,3889 32236,3885
 (Lassallestr. - Forstmeisterweg): unbefestigter Weg	Q2 32222,3680 32233,3679
@@ -12403,7 +12403,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX mittlerweile gibt es im Schatten der kleinen Baustelle an der Simon-Dach-Str. Ausbesserungsarbeiten; anscheinend werden diese bis mindestens Boxhagener Platz durchgeführt
-#: last_checked: 2026-04-04
+#: last_checked: 2026-04-07
 #: check_frequency: 14d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -13867,6 +13867,7 @@ Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0- 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
 Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17252,14495 17400,14511
+Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17526,14531 17824,14572
 Klaus-Selmke-Str.: Asphalt	Q0 21133,11387 21275,11547
 Kurfürstendamm: Asphaltschäden	Q0-; 5475,10808 5656,10876
 Bruno-Bauer-Str.: Gehwegplatten	Q0- 12893,6527 12904,6488 12921,6424
@@ -14441,6 +14442,9 @@ Konradinstr.: Asphalt, einige leichte Schäden	Q0- 8872,5484 8674,5357
 (Planstraße am ehemaligen Funkwerk): Asphalt	Q0 22538,3889 22553,3592 22586,3595
 # 
 Am Dorfanger - Parkanlage: Parkweg	Q1 4799,20517 4790,20493
+# 
+(Kolonie Frieden, Hauptweg): unbefestigter Weg zwischen Rasengittersteinen, etwas Schotter	Q2+ 13150,17039 13261,16918
+(Kolonie Frieden, Hauptweg): holpriger unbefestigter Weg zwischen Rasengittersteinen	Q2 13261,16918 13382,16777
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -21995,7 +21999,7 @@ Riegerzeile: guter Beton	Q0 8775,4365 8788,4278
 # 
 #: by: Thomas Dachbrodt: vvv
 Hosemannstr.: guter Asphalt	Q0 12721,15807 12762,15882 12783,15921 12817,15985 12842,16032
-Roelckestr.: guter Asphalt	Q0 12842,16032 12890,16121 12943,16214 13033,16387 13104,16522 13272,16672 13581,16968 13754,17133 13812,17206 13832,17232 13904,17325
+Roelckestr.: guter Asphalt	Q0 12842,16032 12890,16121 12943,16214 13033,16387 13104,16522 13272,16672 13382,16777 13581,16968 13754,17133 13812,17206 13832,17232 13904,17325
 #: by: ^^^
 # 
 #: by: Bob Lüder:
