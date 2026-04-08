@@ -8976,7 +8976,29 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2; im April 2026 nach Hinweis von Thomas K. wieder reaktiviert
+#: also_indoor: traffic (G,T)
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
+#: last_checked: 2026-04-08 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-11-04 (Halteverbotsschilder) vvv
+# REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
+#: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3
+Borstellstr.	q4::inwork 6532,4422 6491,4391
+#: note: hier Halteverbotsschilder bis 4.11.2025
+Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => 1747223796,
+         'id' => 4336,
+         'text' => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: XXX: Bis zum Tor kommt man erstmal auf einem engen Gehweg, dann über Gras, aber das Haupttor ist verschlossen. Etwas weiter östlich gibt es ein kleines Tor, welches ggfs. geöffnet werden kann (mittlerweile aber wohl nicht mehr)
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)

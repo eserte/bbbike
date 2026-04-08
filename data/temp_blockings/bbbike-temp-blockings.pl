@@ -48890,24 +48890,27 @@ EOF
 EOF
      },
      { from  => 1747223796, # 2025-05-14 13:56
-       until => 1761951600, # 2025-11-01 00:00
+       until => undef, # 1761951600, # 2025-11-01 00:00
 #      text  => 'Brandenburgische Str., Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
-       text  => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vermutlich bis Anfang November 2025',
+#      text  => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vermutlich bis Anfang November 2025',
+       text  => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2
-#: also_indoor: traffic (G,T[zu wenig])
-#: last_checked: 2025-10-15 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2025-11-04 (Halteverbotsschilder) vvv
+#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2; im April 2026 nach Hinweis von Thomas K. wieder reaktiviert
+#: also_indoor: traffic (G,T)
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
+#: last_checked: 2026-04-08 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: next_check: 2025-11-04 (Halteverbotsschilder) vvv
 # REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
 #: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3
 Borstellstr.	q4::inwork 6532,4422 6491,4391
 #: note: hier Halteverbotsschilder bis 4.11.2025
 Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
