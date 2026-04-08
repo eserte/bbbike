@@ -6707,8 +6707,10 @@ Kurt-Weill-Gasse: Gehwegplatten	Q0 23993,14797 23961,14841 23918,14876 23882,149
 Senftenberger Str. (Hellersdorf): Asphalt	Q0 23708,14989 23580,14970
 Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1 23580,14970 23594,14886 23517,14873 23531,14781
 Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1 23580,14970 23543,14966
-(Weg am Beerenpfuhlgraben): Asphalt	Q0 23369,14756 23368,14771 23412,14899 23521,14973
-(Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1 23521,14973 23529,14973 23543,14966
+(Weg am Beerenpfuhlgraben): Asphalt	Q0 23518,14971 23516,14980 23505,14982 23391,14904 23381,14874 23349,14772 23369,14756
+(Weg am Beerenpfuhlgraben): Asphalt	Q0 23369,14756 23367,14766 23412,14899 23518,14971
+(Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1 23518,14971 23529,14973 23543,14966
+(Alt-Hellersdorf - Weg am Beerenpfuhlgraben): Asphalt	Q0 23305,14914 23333,14886 23381,14874
 Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23300,14933 23305,14914
 (Alt-Hellersdorf - Cottbusser Str.): Asphalt	Q0 23305,14914 23318,14847 23297,14772
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23304,14473 23290,14493
@@ -11964,6 +11966,8 @@ Konradinstr.: Asphalt, einige leichte Schäden	Q0 8872,5484 8674,5357
 Am Dorfanger - Parkanlage: Parkweg	Q1 4799,20517 4790,20493
 (Kolonie Frieden, Hauptweg): unbefestigter Weg zwischen Rasengittersteinen, etwas Schotter	Q2 13150,17039 13261,16918
 (Kolonie Frieden, Hauptweg): holpriger unbefestigter Weg zwischen Rasengittersteinen	Q2 13261,16918 13382,16777
+(Teupitzer Park): Verbundsteinpflaster	Q1 23572,15880 23579,15824
+(Teupitzer Park): Kopfsteinpflaster	Q2 23579,15824 23596,15697
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13456,9 +13460,9 @@ Lemkestr.: Beton	Q0 26464,13884 26301,13691 26120,13486 25961,13304
 Lemkestr.: Asphalt	Q0; 25961,13304 25872,13191 25801,13101
 Lemkestr.: Kopfsteinpflaster	Q2; 25801,13101 25872,13191 25961,13304
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25620,12872
-Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25534,12763 25363,12553
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 Lemkestr.: Asphalt	Q0 25620,12872 25534,12763
+Lemkestr.: Asphalt	Q0 25534,12763 25363,12553
 Lemkestr.: Asphalt	Q0 25363,12553 25191,12343
 Lemkestr.: Asphalt	Q0 25109,12196 25072,12107
 Stirnerstr.: guter Asphalt	Q0 5905,5088 6066,5045
@@ -15550,7 +15554,7 @@ Neumarkplan: Beton mit einigen Schäden	Q1 12356,4133 12415,4053 12485,3933 12572
 Massiner Weg: Kopfsteinpflaster	Q2 12356,4133 12318,4099 12225,3982 12064,3813
 Deutsch-Kroner-Ring: mäßiges Kopfsteinpflaster	Q2 12064,3813 12155,3730 12205,3790 12250,3839 12266,3863 12271,3906 12254,3959 12225,3982
 Privatstr. 5: schlechter Asphalt, Schlaglöcher	Q2 16950,17061 17025,17069 17119,17071 17141,17070 17160,17068 17231,17055 17317,17027
-Teupitzer Str. (Hellersdorf): Asphalt	Q0 23568,15603 23573,15627 23575,15639 23587,15699 23663,15682 23689,15804 23625,15818 23633,15866 23643,15911 23843,15869
+Teupitzer Str. (Hellersdorf): Asphalt	Q0 23568,15603 23573,15627 23575,15639 23587,15699 23596,15697 23663,15682 23689,15804 23625,15818 23633,15866 23643,15911 23843,15869
 Neue Bergstr.: guter Asphalt	Q0 -3519,15751 -3302,15787 -3044,15837 -2886,15867
 Im Hufenschlag: Verbundsteinpflaster	Q1 4934,19075 4519,19040
 Im Hufenschlag: Beton	Q0 4519,19040 4471,19124 4423,19195 4357,19261

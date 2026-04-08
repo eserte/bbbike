@@ -320,7 +320,7 @@ Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
-#: last_checked: 2026-03-01
+#: last_checked: 2026-04-08
 #: check_frequency: 60d
 Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
@@ -4220,7 +4220,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert?
 #: osm_watch: way id="100280204" version="12"
 #: osm_watch: way id="688671074" version="11"
-#: last_checked: 2025-10-18 (luftbildsuche)
+#: last_checked: 2026-04-08
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23363,11600 23225,11649
@@ -4233,7 +4233,7 @@ Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776
 #: XXX wird hier wieder der alte Zustand hergestellt?
 #: osm_watch[closed]: note 4661800 2
 #: osm_watch: way id="24205371" version="24"
-#: last_checked: 2025-10-25
+#: last_checked: 2026-04-08
 #: check_frequency: 90d
 Münsterberger Weg: wassergebundene Decke, Unebenheiten	Q1- 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
@@ -6653,7 +6653,7 @@ Charlottenstr: Asphalt	Q0 18462,11602 18477,11388
 Am Tierpark [zur Nebenfahrbahn]: Beton	Q1+ 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]: Beton	Q1+ 18304,11407 18272,11552 18264,11596 18285,11637
 Am Tierpark [Wohngebiet]: Beton	Q1+ 18304,11407 18399,11423
-Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q1+ 18285,11637 18329,11654 18381,11655 18520,11662
+Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q1 18285,11637 18329,11654 18381,11655 18520,11662
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18317,11734 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821 18717,11835 18719,11903
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18717,11821 18574,11833 18525,11806 18453,11804 18461,11767
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18717,11835 18730,11834
@@ -6998,7 +6998,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="34"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2026-01-21
+#: last_checked: 2026-04-08
 #: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -8356,8 +8356,10 @@ Kurt-Weill-Gasse: Gehwegplatten	Q0- 23993,14797 23961,14841 23918,14876 23882,14
 Senftenberger Str. (Hellersdorf): Asphalt	Q0 23708,14989 23580,14970
 Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1+ 23580,14970 23594,14886 23517,14873 23531,14781
 Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1+ 23580,14970 23543,14966
-(Weg am Beerenpfuhlgraben): Asphalt	Q0+ 23369,14756 23368,14771 23412,14899 23521,14973
-(Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1- 23521,14973 23529,14973 23543,14966
+(Weg am Beerenpfuhlgraben): Asphalt	Q0+ 23518,14971 23516,14980 23505,14982 23391,14904 23381,14874 23349,14772 23369,14756
+(Weg am Beerenpfuhlgraben): Asphalt	Q0+ 23369,14756 23367,14766 23412,14899 23518,14971
+(Weg am Beerenpfuhlgraben - Senftenberger Str.): Kleinsteinpflaster	Q1- 23518,14971 23529,14973 23543,14966
+(Alt-Hellersdorf - Weg am Beerenpfuhlgraben): Asphalt	Q0 23305,14914 23333,14886 23381,14874
 Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23300,14933 23305,14914
 #: historical_note: früher (bis 2024): Betonplatten, Q1
 (Alt-Hellersdorf - Cottbusser Str.): Asphalt	Q0 23305,14914 23318,14847 23297,14772
@@ -14446,6 +14448,9 @@ Am Dorfanger - Parkanlage: Parkweg	Q1 4799,20517 4790,20493
 (Kolonie Frieden, Hauptweg): unbefestigter Weg zwischen Rasengittersteinen, etwas Schotter	Q2+ 13150,17039 13261,16918
 (Kolonie Frieden, Hauptweg): holpriger unbefestigter Weg zwischen Rasengittersteinen	Q2 13261,16918 13382,16777
 # 
+(Teupitzer Park): Verbundsteinpflaster	Q1 23572,15880 23579,15824
+(Teupitzer Park): Kopfsteinpflaster	Q2 23579,15824 23596,15697
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -17943,25 +17948,24 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://stefan-ziller.eu/2025/lemkestrasse-was-erwartet-und-2025/ (vom 21. Februar 2025)
 #: by: https://marzahn-hellersdorf.com/sanierung-der-lemkestrasse-was-die-senatsantwort-im-detail-offenlegt/ (zwei Bauabschnitte folgen noch)
 #: source_id[inactive]: bvg2024:395#HIM_FREETEXT_232017 (bis 2025-05-07)
-#: XXX auf https://www.instagram.com/marzahn_hellersdorf_live/p/C_D3h_Xis-R/?img_index=1 ist ein Zeichen 250 zu sehen, ohne Ausnahmen -> siehe temp blockings-Eintrag
+# REMOVED --- #: XXX auf https://www.instagram.com/marzahn_hellersdorf_live/p/C_D3h_Xis-R/?img_index=1 ist ein Zeichen 250 zu sehen, ohne Ausnahmen -> siehe temp blockings-Eintrag
 #: also_indoor: search Lemkestraße vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-07-30 vvv
+#: check_frequency: 180d vvv
+# REMOVED (keine Termine mehr?) --- #: next_check: 2026-07-30 vvv
 #: osm_watch: way id="593503609" version="12"
 #: osm_watch: way id="40267304" version="19"
-#: last_checked: 2025-10-25
+#: last_checked: 2026-04-08
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25620,12872
 #: osm_watch: way id="24204822" version="30"
-#: last_checked: 2025-10-25
-Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25534,12763 25363,12553
-#: osm_watch: way id="24204822" version="30"
-#: last_checked: 2025-10-25
+#: last_checked: 2026-04-08
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: also_indoor ^^^
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
 Lemkestr.: Asphalt	Q0 25620,12872 25534,12763
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ..., 2025/2026 neu gemacht)
+Lemkestr.: Asphalt	Q0 25534,12763 25363,12553
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
 Lemkestr.: Asphalt	Q0  25363,12553 25191,12343
 #: confirmed_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
@@ -24131,7 +24135,7 @@ Deutsch-Kroner-Ring: mäßiges Kopfsteinpflaster	Q2 12064,3813 12155,3730 12205,37
 Privatstr. 5: schlechter Asphalt, Schlaglöcher	Q2+ 16950,17061 17025,17069 17119,17071 17141,17070 17160,17068 17231,17055 17317,17027
 # 
 #: by: andeas pasler:
-Teupitzer Str. (Hellersdorf): Asphalt	Q0 23568,15603 23573,15627 23575,15639 23587,15699 23663,15682 23689,15804 23625,15818 23633,15866 23643,15911 23843,15869
+Teupitzer Str. (Hellersdorf): Asphalt	Q0 23568,15603 23573,15627 23575,15639 23587,15699 23596,15697 23663,15682 23689,15804 23625,15818 23633,15866 23643,15911 23843,15869
 # 
 #: by: Eva (maus 2000):
 #: confirmed_by: anonymous:

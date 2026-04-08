@@ -218,15 +218,18 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # REMOVED --- #: valid: -20250214
 # REMOVED --- Wartenberger Weg: Gegenverkehrsregelung	X::inwork::alternating 15882,19165
 # 
-# REMOVED --- #: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
-# REMOVED --- #: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
-# REMOVED --- #: source_id: viz2021:13.5975,52.50236, (bis 29.08.2025) (inaktiv) (bis 10.10.2025) (bis 14.10.2025) (inaktiv)
-# REMOVED --- #: source_id[inactive]: bvg2024:398#HIM_FREETEXT_299600 (bis 2025-11-28)
-# REMOVED --- #: note: im Straßenzug existieren noch zwei weitere Engstellen, diese allerdings ohne Ampeln (gesehen 2025-10-25)
-# REMOVED --- #: last_checked: 2025-10-25
+#: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
+#: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
+#: source_id: viz2021:13.5975,52.50236, (bis 29.08.2025) (inaktiv) (bis 10.10.2025) (bis 14.10.2025) (inaktiv)
+#: source_id[inactive]: bvg2024:398#HIM_FREETEXT_299600 (bis 2025-11-28)
+#: note: im Straßenzug existieren noch zwei weitere Engstellen, diese allerdings ohne Ampeln (gesehen 2025-10-25)
+#: note: als Radfahrer Richtung Westen darf man den schmalen Gehweg benutzen; der Radweg an dieser Stelle ist wegen Baustelleneinrichtung nicht benutzbar
+#: also_indoor: traffic (T[inwork],no-G)
+#: last_checked: 2026-04-08
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2025-12-05 (Halteverbotsschilder)
-# REMOVED --- #: valid: -20251205
-# REMOVED --- Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
+#: valid: -20260901
+Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
 # 
 # REMOVED --- #: source_id: LMS-BR:379742/72 viz2021:13.589646,52.502679,13.08.2025,09:15 (bis 17.10.2025) (inaktiv)
 # REMOVED --- #: last_checked: 2025-08-27
@@ -438,7 +441,7 @@ Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-04-06
+#: last_checked: 2026-04-08
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -3315,6 +3318,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 1892,13058
 # REMOVED (wurde mit Bau des Modalfilters entfernt) ---	F 9474,16297
 	F 12990,11006
+#: XXX_prog: für linksabbiegende Radfahrer (Alt-Biesdorf -> Apollofalterallee, O->SW) Anforderungsampel
 	X 21628,11384
 	X 21392,11486
 	X 21863,11289

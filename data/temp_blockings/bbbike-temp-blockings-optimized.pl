@@ -3590,7 +3590,41 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://familienfez.fez-berlin.de/programm/kindertagsfest/
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
+#: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
+#: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
+#: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
+#: by: https://fez-berlin.de/veranstaltungen2024/internationales-kindertagsfest
+#: by: https://fez-berlin.de/veranstaltungen2025/kindertagsfest (ganzes Wochenende, Sa+So)
+#: by: https://tickets.fez-berlin.de/Views/Pages/Appointments/EventAppointments.aspx?EventID=2699 (2026 3 Tage)
+#: tempex: YYYY0531-YYYY0603 vvv
+	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
+	2::temp 20199,6318 20262,6493 20225,6631
+	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+	2::temp 19939,5999 20064,6290 20086,6307 20106,6357
+#: tempex ^^^
+',
+         'from' => 1780005600,
+         'id' => 2436,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              5,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 30. Mai 2026 bis 1. Juni 2026',
+         'type' => 'gesperrt',
+         'until' => 1780351199
+       },
        undef,
        undef,
        {
@@ -5027,29 +5061,7 @@ Landjägerbrücke	q4::inwork 22426,4609 22446,4581 22458,4565 22495,4523
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: next_check_id: MUENSTERBERGERWEG-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert? --- #: last_checked: 2020-10-31 --- #: check_frequency: 120d --- #: next_check: 2021-12-31
-# REMOVED --- #: note: Laut Baustellenschild der Wasserbetriebe bis Dezember 2024, Halteverbotsschilder bis 15.12.2024; einige Halteverbotsschilder bis Ende Februar 2025
-#: also_indoor: traffic (ex-B,ex-T)
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2025-06-14 (traffic) vvv --- #: check_frequency: 14d (traffic) vvv --- #: next_check: 2025-06-14 (traffic) vvv
-# REMOVED --- Münsterberger Weg	2::inwork 24029,11363 24172,11320
-# REMOVED --- Gielsdorfer Str.	q4::inwork 24018,11320 24029,11363 24089,11522
-# REMOVED --- Münsterberger Weg	q3::inwork 24029,11363 23883,11416
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
-#: by: https://marzahn-hellersdorf.com/verkehr-in-mahlsdorf-einschraenkungen-auf-der-b1-b5-ab-montag/ (ab 16.3.2026 bis Anfang Juni 2026)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5oyo7f6k2u
-#: source_id: LMS-BR:401939/72 viz2021:13.60641,52.50494, (bis 05.06.2026)
-#: source_id: LMS-BR:404070/72 viz2021:13.60641,52.50494,07.04.2026,08:00 (B1 Höhe Neuenhagener Str., bis 30.04.2026)
-#: next_check: 2026-03-16
-Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
-',
-         'from' => 1773529200,
-         'id' => 3189,
-         'text' => 'Neuenhagener Str.: Bauarbeiten, Anbindung an die B1/B5 gesperrt, evtl. sind auch Radfahrer betroffen, ab 16.3.2026 bis Anfang Juni 2026',
-         'type' => 'gesperrt',
-         'until' => 1780696799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5093,7 +5105,7 @@ Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-04-03
+#: last_checked: 2026-04-08
 #: check_frequency: 30d
 #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -5296,34 +5308,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LEMKE-2020
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php (alte Sperrung von 2020)
-#: by: https://marzahn-hellersdorf.com/sanierung-der-lemkestrasse-was-die-senatsantwort-im-detail-offenlegt/ (2. BA fertig?)
-# REMOVED (alter Abschnit) ---	q4::inwork 25191,12343 25363,12553
-#: osm_watch: note 4513116 4
-#: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
-#: XXX zurzeit (2025-03) Asphaltierungsarbeiten
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-10-25 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-01-13 (ma-he) vvv
-# REMOVED --- #: next_check: 2026-07-30
-# REMOVED (hier war noch nichts) ---	q4::inwork 25363,12553 25534,12763
-# REMOVED (fertig) ---	q4::inwork 25534,12763 25620,12872 25663,12927 --- Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
-	q4::inwork 25534,12763 25363,12553
-Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => 1720994400,
-         'id' => 3313,
-         'text' => 'Lemkestr.: zwischen Sudermannstr. und Lenbachstr. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Sudermannstr., Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => 1785513600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6324,7 +6309,32 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/
+#: by: https://partner-fuer-spandau.de/veranstaltungen/spandauer-sommerklassiker-das-spandauer-havelfest/263
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11798 (Anfrage (findet 2023 nicht statt?))
+#: by: https://www.berlin.de/events/3467999-2229501-spandauer-havelfest.html (2024) (29. Mai 2025 - 1. Juni 2025)
+	2::temp -2918,14496 -2964,14478 -3026,14358 -3054,14305 -3091,14220 -3135,14183 -3275,14114
+	2::temp -3054,14305 -3019,14286
+	2::temp -2964,14478 -2939,14433 -3019,14286 -3042,14255 -3059,14230 -3090,14198 -3153,14141 -3187,14116 -3291,14043 -3306,14035 -3345,13994
+	2::temp -3042,14255 -3091,14220
+',
+         'from' => 1780524000,
+         'id' => 3599,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              28,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 5. Juni 2026 bis 7. Juni 2026',
+         'type' => 'gesperrt',
+         'until' => 1780855200
+       },
        undef,
        undef,
        undef,
@@ -6982,7 +6992,35 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
+#: by: https://nitter.cz/VIZ_Berlin/status/1662153122070790145#m
+#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
+#: by: https://www.family-and-friends-ev.de/?date=20240303
+#: by: https://www.family-and-friends-ev.de/7-9-juni-2025-pfingsten-in-der-preussenallee
+#: by: https://www.visitberlin.de/de/event/wein-und-winzerfest-westend
+#: source_id: viz2021:13.259512,52.513271,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
+#: source_id: viz2021:13.2597,52.51486,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
+#: source_id: viz2021:13.2597,52.51486,07.06.2025,05:00 (bis 09.06.2025) (inaktiv)
+# REMOVED (nicht an der Marathonallee, fängt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
+	2::temp 577,11837 562,11710 560,11695 550,11607
+',
+         'from' => 1779400800,
+         'id' => 3789,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn voraussichtlich zwischen Bayernallee und Badenallee gesperrt, vom 23.05.2026 bis 25.05.2026',
+         'type' => 'gesperrt',
+         'until' => 1779742800
+       },
        undef,
        undef,
        {
@@ -7105,7 +7143,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-04-03 vvv
+#: last_checked: 2026-04-08 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -8627,7 +8665,36 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# 
+#: next_check_id: WEISSENHOEHER-2025
+#: by: https://pascalgrothe.de/bahnbruecke-in-der-weissenhoeher-strasse-wird-abgerissen/ (von Februar bis Oktober 2025 zur Einbahnstraße in Richtung Westen, Abriss vom 14. März bis 14. November 2025, Ersatzneubau)
+#: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article408186475/monatelange-baustelle-abriss-der-eisenbahn-bruecke-in-biesdorf.html (Abschluss der Arbeiten Ende März 2026)
+#: by: https://christian-graeff.de/2025/01/21/abriss-der-bruecke-ueber-der-weissenhoeher-strasse/
+#: by: https://christian-graeff.de/wp-content/uploads/2025/02/Anwohnerinfo_DB_EUEWeissenh_TeilII.pdf
+#: by: https://pascalgrothe.de/neue-bahnbruecke-ueber-die-weissenhoeher-strasse-soll-in-diesem-jahr-befahren-werden/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lwnmezex6225
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiehgzilfxsm6lw3fw6qmzw6ifyzeflqouzu4an4b2m66n32pr7kuy@jpeg
+#: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025) (inaktiv)
+#: source_id: viz2021:13.55274,52.50751,18.08.2025,07:00 (bis 08.09.2025) (inaktiv)
+#: also_indoor: traffic (ex-T,ex-H,ex-A)
+# REMOVED (siehe Verkehrszeichenplan) --- #: XXX laut VIZ-Meldung schon ab Grabensprung gesperrt: stimmt das?
+# REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
+# REMOVED --- #: next_check: 2025-08-18 (check: bereits ab Grabensprung gesperrt?)
+# REMOVED --- #: next_check: 2025-09-15 (mögliches Ende der Sperrung laut VIZ)
+# REMOVED --- Weißenhöher Weg: unter der Bahnbrücke	2::inwork 20354,11500 20150,11512
+# REMOVED --- Gladauer Str.: Zugang auch für Fußgänger gesperrt	2::inwork 20354,11500 20346,11337
+#: note: Halteverbotsschilder bis 30.04.2026
+#: last_checked: 2026-04-08
+#: next_check: 2026-04-30 (Halteverbotsschilder)
+Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,11337
+',
+         'from' => 1755381600,
+         'id' => 4282,
+         'text' => 'Gladauer Str.: Fahrbahn an der Weißenhöher Str. gesperrt, voraussichtlich bis Ende April 2026',
+         'type' => 'handicap',
+         'until' => 1777572000
+       },
        undef,
        undef,
        undef,
@@ -8743,6 +8810,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/tiefe-baugrube-grosse-geschichte-dieser-berliner-museumsneubau-uberrascht-mit-einer-zaun-galerie-15023919.html
 #: by: https://www.entwicklungsstadt.de/museumsneubau-bildlabor-kleistpark-in-schoeneberg-kulturprojekt-kommt-nur-langsam-voran/
+#: by: https://www.entwicklungsstadt.de/bildlabor-kleistpark-grundstein-fuer-kunst-und-forschung-gelegt/
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
@@ -9671,7 +9739,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdhvspimr22s
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreify53suk5ojkyl7r3nzqjul2mglb7crtmdfajwvq3bh7rutlzwige@jpeg
 #: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv) (bis 30.01.2026) (bis 09.04.2026)
-#: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026)
+#: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026) (bis 30.05.2026)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_322378 (Umleitung des Busverkehrs via Südostallee - Kiefholzstr.)
@@ -9682,7 +9750,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
 #: last_checked: 2025-12-18 (VIZ) vvv
 # REMOVED --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-01-29 (stromnetz) vvv
-#: next_check: 2026-04-09 (VIZ) vvv
+#: next_check: 2026-05-30 (VIZ) vvv
 Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
 Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: next_check ^^^
@@ -9692,9 +9760,9 @@ Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
          'from' => 1769554800,
          'id' => 4466,
          'prewarn_days' => 2,
-         'text' => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, vom 30.01.2026 bis voraussichtlich 09.04.2026',
+         'text' => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, vom 30.01.2026 bis voraussichtlich 30.05.2026',
          'type' => 'handicap',
-         'until' => 1775771999
+         'until' => 1780178399
        },
        undef,
        {
@@ -9792,7 +9860,7 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Wege weiterhin gesperrt?
-#: last_checked: 2026-01-17
+#: last_checked: 2026-04-08
 	2::inwork 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 ',
          'from' => undef,
@@ -10747,6 +10815,19 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'text' => 'Bödikerstr.: Bauarbeiten zwischen Corinthstr. und Persiusstr., Sperrung, vom 07.04.2026 07:00 bis 29.05.2026 23:59',
          'type' => 'handicap',
          'until' => 1780091940
+       },
+       {
+         'data' => '#: next_check_id: BER-2026
+#: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407
+#: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun?
+#: next_check: 2026-05-01
+	2::inwork 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
+',
+         'from' => 1777154400,
+         'id' => 4578,
+         'text' => 'LPG-Straße (Flughafen BER): Straßenbau, Vollsperrung, 27. bis 30. April 2026',
+         'type' => 'gesperrt',
+         'until' => 1777586399
        }
      
 );

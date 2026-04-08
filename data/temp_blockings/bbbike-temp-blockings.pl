@@ -22577,20 +22577,21 @@ EOF
 	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11309,19923 11423,19982 11555,20051
 EOF
      },
-     { from  => $isodate2epoch->("2025-05-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-06-01 23:59:59"),
-       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 31. Mai 2025 und 1. Juni 2025',
+     { from  => $isodate2epoch->("2026-05-29 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-06-01 23:59:59"),
+       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 30. Mai 2026 bis 1. Juni 2026',
        periodic => 1,
-       recurrences => [["yearly", "days" => 30, "months" => 5, start => "2021-10-25T00:00:00"]],
+       recurrences => [["yearly", "days" => 29, "months" => 5, start => "2021-10-25T00:00:00"]],
        type  => 'gesperrt',
-       source_id => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
        data  => <<EOF,
+#: by: https://familienfez.fez-berlin.de/programm/kindertagsfest/
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
 #: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
 #: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
 #: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
 #: by: https://fez-berlin.de/veranstaltungen2024/internationales-kindertagsfest
 #: by: https://fez-berlin.de/veranstaltungen2025/kindertagsfest (ganzes Wochenende, Sa+So)
+#: by: https://tickets.fez-berlin.de/Views/Pages/Appointments/EventAppointments.aspx?EventID=2699 (2026 3 Tage)
 #: tempex: YYYY0531-YYYY0603 vvv
 	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
@@ -31841,7 +31842,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-03-15 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2026-06-05 23:59:59"), # 1752661487, # undef, # 1618661092, # undef, # XXX
+       until => 1775646625, # $isodate2epoch->("2026-06-05 23:59:59"), # 1752661487, # undef, # 1618661092, # undef, # XXX
 #      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt',
 #      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., voraussichtlich bis Mitte Dezember 2024, evtl. wurde verlängert',
 #      text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, außerdem Sperrung des Kreuzungsbereichs Gielsdorfer Str., Ende der Bauarbeiten unbekannt',
@@ -31861,7 +31862,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5oyo7f6k2u
 #: source_id: LMS-BR:401939/72 viz2021:13.60641,52.50494, (bis 05.06.2026)
 #: source_id: LMS-BR:404070/72 viz2021:13.60641,52.50494,07.04.2026,08:00 (B1 Höhe Neuenhagener Str., bis 30.04.2026)
-#: next_check: 2026-03-16
+# REMOVED (nur geringe Verschwenkung für Radfahrer) --- #: next_check: 2026-03-16
 Neuenhagener Str.	q4::inwork 24175,11265 24172,11320
 EOF
      },
@@ -32239,7 +32240,7 @@ EOF
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-04-03
+#: last_checked: 2026-04-08
 #: check_frequency: 30d
 #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -33545,7 +33546,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-07-15 00:00:00"), # 1607814000, # 2020-12-13 00:00
-       until => $isodate2epoch->("2026-07-31 18:00:00"), # 1613921964, # (deaktiviert --- bei Mapillary nichts zu sehen) --- 1627682399, # 2021-07-30 23:59
+       until => 1775646085, # $isodate2epoch->("2026-07-31 18:00:00"), # 1613921964, # (deaktiviert --- bei Mapillary nichts zu sehen) --- 1627682399, # 2021-07-30 23:59
 #      text  => 'Lemkestr.: zwischen Linderhofstr. und Sudermannstr., Sperrung der Fahrbahn, vom 14. Dezember 2020 bis voraussichtlich 30. Juli 2021 (außer über die Weihnachtsfeiertage)',
 #      text  => 'Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich bis Sommer 2026',
 #      text  => 'Lemkestr.: zwischen Lenbachstr. und Frans-Hals-Str. Bauarbeiten, Fahrbahn kann gesperrt sein, außerdem Sperrung des Kreuzungsbereichs Lenbachstr., Ende der Bauarbeiten unbekannt',
@@ -33558,20 +33559,13 @@ EOF
 # REMOVED (alter Abschnit) ---	q4::inwork 25191,12343 25363,12553
 #: osm_watch: note 4513116 4
 #: note: Fahrbahn kann außerhalb der Arbeitszeiten offen sein
-#: XXX zurzeit (2025-03) Asphaltierungsarbeiten
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2025-10-25 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-01-13 (ma-he) vvv
+# REMOVED (keine Sperrung mehr) --- #: XXX zurzeit (2025-03) Asphaltierungsarbeiten --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2025-10-25 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2026-01-13 (ma-he) vvv
 # REMOVED --- #: next_check: 2026-07-30
 # REMOVED (hier war noch nichts) ---	q4::inwork 25363,12553 25534,12763
 # REMOVED (fertig) ---	q4::inwork 25534,12763 25620,12872 25663,12927 --- Lenbachstr.	q3::inwork 25476,12810 25534,12763 25629,12688
 	q4::inwork 25534,12763 25363,12553
 Sudermannstr.	q3::inwork 25306,12602 25363,12553 25462,12473
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => undef,
@@ -37608,11 +37602,11 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 # REMOVED (nicht mehr) --- Wallensteinstr.: Einbahnstraßenregelung	q4::inwork; 18134,9080 18092,9141 18037,9195
 EOF
      },
-     { from  => $isodate2epoch->("2025-05-28 00:00:00"), # $isodate2epoch->("2024-06-06 00:00:00"), # 1660168800, # 2022-08-11 00:00
-       until => $isodate2epoch->("2025-06-01 20:00:00"), # $isodate2epoch->("2024-06-09 21:00:00"), # 1660514399, # 2022-08-14 23:59
+     { from  => $isodate2epoch->("2026-06-04 00:00:00"), # $isodate2epoch->("2024-06-06 00:00:00"), # 1660168800, # 2022-08-11 00:00
+       until => $isodate2epoch->("2026-06-07 20:00:00"), # $isodate2epoch->("2024-06-09 21:00:00"), # 1660514399, # 2022-08-14 23:59
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 5]], # kann im Juni oder August stattfinden, manchmal auch Ende Mai
-       text  => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 29. Mai 2025 bis 1. Juni 2025',
+       text  => 'Lindenufer und Havelpromenade: Veranstaltung (Spandauer Havelfest), Straßen und Wege können gesperrt sein, 5. Juni 2026 bis 7. Juni 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/
@@ -40534,9 +40528,9 @@ EOF
 	q4::inwork; 17251,11789 17306,11866
 EOF
      },
-     { from  => $isodate2epoch->("2025-06-06 00:00:00"), # $isodate2epoch->("2024-05-17 05:00:00"), # $isodate2epoch->("2023-05-26 05:00:00"),
-       until => $isodate2epoch->("2025-06-09 23:00:00"), # $isodate2epoch->("2024-05-20 23:00:00"), # $isodate2epoch->("2023-05-29 23:00:00"),
-       text  => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn voraussichtlich zwischen Bayernallee und Badenallee gesperrt, vom 07.06.2025 bis 09.06.2025',
+     { from  => $isodate2epoch->("2026-05-22 00:00:00"), # $isodate2epoch->("2024-05-17 05:00:00"), # $isodate2epoch->("2023-05-26 05:00:00"),
+       until => $isodate2epoch->("2026-05-25 23:00:00"), # $isodate2epoch->("2024-05-20 23:00:00"), # $isodate2epoch->("2023-05-29 23:00:00"),
+       text  => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn voraussichtlich zwischen Bayernallee und Badenallee gesperrt, vom 23.05.2026 bis 25.05.2026',
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 5]],
        type  => 'gesperrt',
@@ -40546,6 +40540,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
 #: by: https://www.family-and-friends-ev.de/?date=20240303
 #: by: https://www.family-and-friends-ev.de/7-9-juni-2025-pfingsten-in-der-preussenallee
+#: by: https://www.visitberlin.de/de/event/wein-und-winzerfest-westend
 #: source_id: viz2021:13.259512,52.513271,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
 #: source_id: viz2021:13.2597,52.51486,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
 #: source_id: viz2021:13.2597,52.51486,07.06.2025,05:00 (bis 09.06.2025) (inaktiv)
@@ -40994,7 +40989,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-04-03 vvv
+#: last_checked: 2026-04-08 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -48071,10 +48066,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-08-17 00:00:00"), # 1742274000, # 2025-03-18 06:00
-       until => 1757352969, # $isodate2epoch->("2025-09-08 23:59:59"), # $isodate2epoch->("2025-04-02 18:00:00"), # 1743606000, # 2025-04-02 17:00
+       until => $isodate2epoch->("2026-04-30 20:00:00"), # 1757352969, # $isodate2epoch->("2025-09-08 23:59:59"), # $isodate2epoch->("2025-04-02 18:00:00"), # 1743606000, # 2025-04-02 17:00
 #      text  => 'Weißenhöher Str.: Brückenabriss, Sperrung auch für den Rad- und Fußverkehr, vom 19.03.2025 06:00 bis 02.04.2025 18:00',
-       text  => 'Weißenhöher Str.: komplette Sperrung der Straße (vermutlich wegen Brückenarbeiten), auch für den Rad- und Fußverkehr, auch die Anbindung Gladauer Str. ist gesperrt, vom 18.08.2025 bis 08.09.2025',
-       type  => 'gesperrt',
+#      text  => 'Weißenhöher Str.: komplette Sperrung der Straße (vermutlich wegen Brückenarbeiten), auch für den Rad- und Fußverkehr, auch die Anbindung Gladauer Str. ist gesperrt, vom 18.08.2025 bis 08.09.2025',
+       text  => 'Gladauer Str.: Fahrbahn an der Weißenhöher Str. gesperrt, voraussichtlich bis Ende April 2026',
+#      type  => 'gesperrt',
+       type  => 'handicap',
        data  => <<'EOF',
 # 
 #: next_check_id: WEISSENHOEHER-2025
@@ -48087,13 +48084,17 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiehgzilfxsm6lw3fw6qmzw6ifyzeflqouzu4an4b2m66n32pr7kuy@jpeg
 #: source_id: viz2021:13.550304,52.507594,19.03.2025,06:00 (bis 02.04.2025) (inaktiv)
 #: source_id: viz2021:13.55274,52.50751,18.08.2025,07:00 (bis 08.09.2025) (inaktiv)
-#: also_indoor: traffic (T,H,A)
+#: also_indoor: traffic (ex-T,ex-H,ex-A)
 # REMOVED (siehe Verkehrszeichenplan) --- #: XXX laut VIZ-Meldung schon ab Grabensprung gesperrt: stimmt das?
 # REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-08-18 (check: bereits ab Grabensprung gesperrt?)
 # REMOVED --- #: next_check: 2025-09-15 (mögliches Ende der Sperrung laut VIZ)
-Weißenhöher Weg: unter der Bahnbrücke	2::inwork 20354,11500 20150,11512
-Gladauer Str.: Zugang auch für Fußgänger gesperrt	2::inwork 20354,11500 20346,11337
+# REMOVED --- Weißenhöher Weg: unter der Bahnbrücke	2::inwork 20354,11500 20150,11512
+# REMOVED --- Gladauer Str.: Zugang auch für Fußgänger gesperrt	2::inwork 20354,11500 20346,11337
+#: note: Halteverbotsschilder bis 30.04.2026
+#: last_checked: 2026-04-08
+#: next_check: 2026-04-30 (Halteverbotsschilder)
+Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,11337
 EOF
      },
      { from  => 1742386162, # 2025-03-19 13:09
@@ -48362,6 +48363,7 @@ EOF
 #: by: https://entwicklungsstadt.de/museumsneubau-in-schoeneberg-baufortschritt-am-bildlabor-kleistpark/ (Bildlabor Kleistpark, bis I. Quartal 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/tiefe-baugrube-grosse-geschichte-dieser-berliner-museumsneubau-uberrascht-mit-einer-zaun-galerie-15023919.html
 #: by: https://www.entwicklungsstadt.de/museumsneubau-bildlabor-kleistpark-in-schoeneberg-kulturprojekt-kommt-nur-langsam-voran/
+#: by: https://www.entwicklungsstadt.de/bildlabor-kleistpark-grundstein-fuer-kunst-und-forschung-gelegt/
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
@@ -48985,6 +48987,7 @@ EOF
        until => 1747512000, # 2025-05-17 22:00
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 5]],
+       recurrence_prewarn_days => 21,
        text  => 'Pfarrstr. und Kaskelstr.: Straßenfest (Viva Victoria), am 17.5.2025 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
@@ -50947,12 +50950,12 @@ Bötzowstr.	q3::inwork 12280,13880 12361,13985 12423,14066
 EOF
      },
      { from  => $isodate2epoch->("2026-01-28 00:00:00"), # 1760131031, # 2025-10-10 23:17
-       until => $isodate2epoch->("2026-04-09 23:59:59"), # undef, # 1761951599, # 2025-10-31 23:59
+       until => $isodate2epoch->("2026-05-30 23:59:59"), # undef, # 1761951599, # 2025-10-31 23:59
        prewarn_days => 2,
 #      text  => 'Königsheideweg: Sperrung in Höhe Späthsfelder Weg, voraussichtlich bis Ende Oktober 2025',
 #      text  => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, Ende der Bauarbeiten unbekannt',
 #      text  => 'Späthsfelder Weg: Sperrung der Fahrbahn vor dem Königsheideweg, Umwege, voraussichtlich bis April 2026',
-       text  => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, vom 30.01.2026 bis voraussichtlich 09.04.2026',
+       text  => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, vom 30.01.2026 bis voraussichtlich 30.05.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: KOENIGSHEIDEWEG-2025
@@ -50967,7 +50970,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdhvspimr22s
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreify53suk5ojkyl7r3nzqjul2mglb7crtmdfajwvq3bh7rutlzwige@jpeg
 #: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv) (bis 30.01.2026) (bis 09.04.2026)
-#: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026)
+#: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026) (bis 30.05.2026)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
 #: source_id[inactive]: bvg2024:265#HIM_FREETEXT_322378 (Umleitung des Busverkehrs via Südostallee - Kiefholzstr.)
@@ -50978,7 +50981,7 @@ EOF
 #: last_checked: 2025-12-18 (VIZ) vvv
 # REMOVED --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-01-29 (stromnetz) vvv
-#: next_check: 2026-04-09 (VIZ) vvv
+#: next_check: 2026-05-30 (VIZ) vvv
 Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
 Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: next_check ^^^
@@ -51167,7 +51170,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: add_fragezeichen: Sind die Wege weiterhin gesperrt?
-#: last_checked: 2026-01-17
+#: last_checked: 2026-04-08
 	2::inwork 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 EOF
      },
@@ -52506,6 +52509,18 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:404055/72 viz2021:13.46315,52.49949,07.04.2026,07:00 (bis 29.05.2026)
 	q4::inwork 14447,10491 14490,10610
+EOF
+     },
+     { from  => 1777154400, # 2026-04-26 00:00
+       until => 1777586399, # 2026-04-30 23:59
+       text  => 'LPG-Straße (Flughafen BER): Straßenbau, Vollsperrung, 27. bis 30. April 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: next_check_id: BER-2026
+#: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407
+#: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun?
+#: next_check: 2026-05-01
+	2::inwork 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
 EOF
      },
     );
