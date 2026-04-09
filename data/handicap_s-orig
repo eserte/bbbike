@@ -425,12 +425,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-04-06
+#: last_checked: 2026-04-08
 #: check_frequency: 30d
 #: next_check: 2026-04-24 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2030-12-31 (entwicklungsstadt)
-#Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
-Littenstr.: Einbahnstraßenregelung wegen Bauarbeiten	q4::inwork; 11155,12184 11139,12243
+# REMOVED (verkehrsrechtlich Anordnung wurde nicht umgesetzt?) --- Littenstr.: Einbahnstraßenregelung wegen Bauarbeiten	q4::inwork; 11155,12184 11139,12243
+Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 # 
 # REMOVED (keine Bauarbeiten mehr)
 # REMOVED --- #: next_check_id: HEINRICHHEINE-2025
@@ -992,24 +992,6 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
 # 
 ### Wilmersdorf ###
-# 
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1584050.php (ab 28.07.2025 für 6-8 Wochen)
-#: by: https://entwicklungsstadt.de/wilmersdorf-kreuzung-prinzregentenstrasse-wird-fahrradfreundlicher/
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf
-#: source_id: viz2021:13.33276,52.4798,28.07.2025,07:00 (Prinzregentenstr., bis 17.10.2025) (inaktiv)
-#: source_id: viz2021:13.33525,52.48398,28.07.2025,07:00 (Waghäuseler Str., bis 17.10.2025) (inaktiv)
-#: source_id: LMS-BR:389150/72 viz2021:13.33317,52.484342,06.11.2025,07:00 (bis 21.11.2025) (bis 23.12.2025) (bis 30.01.2026) (inaktiv)
-#: source_id: LMS-BR:392922/72 viz2021:13.33327,52.483961, (bis 30.01.2026) (inaktiv)
-#: osm_watch: note 4921165 7
-#: XXX im ersten Bauabschnitt ist Radverkehr noch möglich ("gegenseitige Rücksichtnahme"), im zweiten Bauabschnitt muss der Radverkehr schieben --- 2. BA hat wohl angefangen, nun Gehweg, Radfahrer absteigen, aber faktisch ist noch genau so viel Platz vorhanden wie im 1. BA
-#: XXX Umbauarbeiten, danach Vorfahrt für Prinzregentenstr.
-# REMOVED --- #: next_check: 2026-01-30 (VIZ-Verkehrsmeldung)
-#: last_checked: 2026-03-18 vvv
-#: check_frequency: 21d vvv
-Prinzregentenstr.: Bauarbeiten in Höhe Waghäuseler Str., Radfahrer sollen absteigen	q2::inwork 5660,8366 5652,8605 5641,8831
-Waghäuseler Str..: Bauarbeiten in Höhe Prinzregentenstr., Radfahrer sollen absteigen	q3::inwork 5498,8598 5652,8605 5786,8609
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 # REMOVED (traffic) --- #: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv --- #: also_indoor: traffic (B,G,ex-H) vvv --- #: last_checked: 2022-12-06 (research) vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-11-30 vvv --- # REMOVED --- #: valid: -20221130 vvv --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: source_id ^^^
 # REMOVED (laut kartaview größtenteils fertiggestellt) --- #: next_check_id: MAXIMILIANSQUARTIER-2020 --- #: last_checked: 2022-02-27 --- #: check_frequency: 90d --- Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987

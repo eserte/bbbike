@@ -29177,7 +29177,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-03-17
+#: last_checked: 2026-04-08
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30180,7 +30180,7 @@ EOF
 #      text  => 'Freiheit/Lüdersstr./Alter Markt: Bauarbeiten, Fahrbahn gesperrt, vom 23.09.2024 bis voraussichtlich 21.10.2024',
 #      text  => 'Lüdersstr./Alter Markt/Freiheit: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
 #      text  => 'Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis März 2027',
-       text  => 'Landjägerbrücke: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 09.04.2026',
+       text  => 'Landjägerbrücke: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 09.04.2026, evtl. wird verlängert',
        data  => <<EOF,
 # REMOVED (in osm aufgehoben) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php --- #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/ --- #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369 --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben? --- #: source_id: 2147344699 --- #: osm_watch: way id="25274116" version="20" --- #: osm_watch: way id="671101960" version="4" --- #: also_indoor: traffic (G,H) --- #: last_checked: 2019-11-23 --- #: check_frequency: 7d
 #: next_check_id: ALTSTADTKOEPENICK-2024
@@ -30193,13 +30193,13 @@ EOF
 #: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
 #: source_id: LMS-BR:400264/72 viz2021:13.579723,52.444511, (Landjägerbrücke bis Amtsstr., bis 26.03.2026) (bis 09.04.2026)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
-#: also_indoor: traffic (T,G,H,W)
+#: also_indoor: traffic (ex-T,G,H,W)
 #: note: H: falsche Einbahnstraßenrichtung; W: falsche Komplettsperrung
 # REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2026-03-11
+#: last_checked: 2026-04-09 (traffic)
 # REMOVED --- #: check_frequency: 90d (traffic)
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-04-09
+#: next_check: 2026-04-10
 # REMOVED (nicht mehr) --- Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
 # REMOVED (hier mittlerweile Sackgasse, Fuß+Radverkehr frei) --- Freiheit: Einbahnstraßenregelung	q4::inwork; 22377,4836 22196,4847
 Landjägerbrücke	q4::inwork 22426,4609 22446,4581 22458,4565 22495,4523
@@ -42126,6 +42126,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2o2qvma2k2q (Gleisbauarbeiten Oct - Nov 2025)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidm6w7deqbesf4p45eknbfejknsw6ev4dyvgqks6z4w7o6ax4gx6q@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicknnpabrsd464573rxm4pcrbhtjkynzhsbh65cwpnqkz5ukeed2i@jpeg (Umleitung für Radfahrer)
+#: by: https://www.entwicklungsstadt.de/hackesche-hoefe-denkmalgeschuetztes-ensemble-erhaelt-neue-fassade/
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -45254,6 +45255,7 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-bauen/bauarbeiten-in-der-friedrichstadt-ziehen-sich-bis-2027-hin_a420056
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1604375.php (weitere Planungen der Sperrungen)
 #: by: https://entwicklungsstadt.de/grossbaustelle-in-mitte-sanierung-der-krausenstrasse-geht-in-naechste-phase/
+#: by: https://www.entwicklungsstadt.de/berlin-mitte-baustelle-krausenstrasse/
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027) (inaktiv)
 #: source_id: LMS-BR:337726/72 viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="22"
@@ -45262,24 +45264,24 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-03-26 vvv
+#: last_checked: 2026-04-08 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
-# REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
 #: note: Krausenstr. ist in diesem Abschnitt eine geschotterte Baustraße, manchmal (z.B. im Winter) keine Sperrungen und deshalb eingeschränkt befahrbar
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 9925,11568 9737,11546 9711,11543
-# REMOVED (Gasse für Radfahrer existiert, zumindest von Norden her mit Radwegschild) --- Jerusalemer Str. (Nord): Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9992,11682
 #: note: etwa die Hälfte der Straße ist normal offen, dann geht's über eine Auffahrt auf einen sehr breiten Gehweg --- eigentlich q3+
 Jerusalemer Str. (Süd): Baustelleneinrichtungsfläche	q3::inwork 9925,11568 9936,11469
-# REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
 Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
-# REMOVED (mittlerweile geradlinigere Führung, nur etwas enger) --- Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+# REMOVED (fertiggestellt) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10176,11593 10001,11577
+# REMOVED (Gasse für Radfahrer existiert, zumindest von Norden her mit Radwegschild) --- Jerusalemer Str. (Nord): Fahrbahn gesperrt, Bauarbeiten	q4::inwork 10001,11577 9992,11682
+# REMOVED (hier kommt man als Radfahrer legal durch) --- Krausenstr. (erster Bauabschnitt)	q4::inwork 10001,11577 9925,11568
+# REMOVED (mittlerweile geradlinigere Führung, nur etwas enger) --- Jerusalemer Str. (Verschwenkungen)	q2::inwork 10001,11577 9992,11682 9991,11690
 EOF
      },
      { from  => undef, #
@@ -51286,7 +51288,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 8
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-02 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
+#: last_checked: 2026-04-08 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -52524,6 +52526,34 @@ EOF
 #: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun?
 #: next_check: 2026-05-01
 	2::inwork 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
+EOF
+     },
+     { from  => 1775758387, # 2026-04-09 20:13
+       until => 1781301600, # 2026-06-13 00:00
+       text  => 'Landweg: Sperrung zwischen Réaumurstr. und Osdorfer Str., evtl. sind auch Radfahrer betroffen, bis 12.06.2026 17:00',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LMS-BR:404321/72 viz2021:13.320862,52.410467, (bis 13.06.2026)
+#: note: hier keine Bürgersteige
+	2::inwork 4748,453 4759,436 4913,422 5061,409
+EOF
+     },
+     { from  => 1775758530, # 2026-04-09 20:15
+       until => 1785880800, # 2026-08-05 00:00
+       text  => 'Westerwaldstr.: Bauarbeiten zwischen Erzgebirgsweg und Pionierstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 04.08.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:404324/72 viz2021:13.17839,52.54934,-1 (bis 05.08.2026)
+	q4::inwork -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5061,15847 -5036,15923 -5019,15970 -4951,16116
+EOF
+     },
+     { from  => 1775758590, # 2026-04-09 20:16
+       until => 1780696800, # 2026-06-06 00:00
+       text  => 'Woltmannweg: Bauarbeiten zwischen Osdorfer Str. und Blochmannstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 05.06.2026 18:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:404317/72 viz2021:13.31786,52.41443, (bis 06.06.2026)
+	q4::inwork 4862,975 4837,890 4768,840
 EOF
      },
     );
