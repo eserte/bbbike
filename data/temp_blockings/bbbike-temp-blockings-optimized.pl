@@ -4807,7 +4807,7 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal we
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mft2mppu3c2i
 #: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024) (bis 21.10.2024) (inaktiv)
 #: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
-#: source_id: LMS-BR:400264/72 viz2021:13.579723,52.444511, (Landjägerbrücke bis Amtsstr., bis 26.03.2026) (bis 09.04.2026)
+#: source_id: LMS-BR:400264/72 viz2021:13.579723,52.444511, (Landjägerbrücke bis Amtsstr., bis 26.03.2026) (bis 09.04.2026) (inaktiv)
 #: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
 #: also_indoor: traffic (ex-T,G,H,W)
 #: note: H: falsche Einbahnstraßenrichtung; W: falsche Komplettsperrung
@@ -8718,7 +8718,7 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
        },
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
-#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026)
+#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m)
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -8729,7 +8729,7 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
 #: also_indoor: traffic (ex-H,G,no-T)
 #: last_checked: 2026-03-04
 #: check_frequency: 90d
-#: next_check: 2026-04-10 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-15 (VIZ-Verkehrsmeldung)
 Merler Weg	q4::inwork 18852,13269 19180,13219
 ',
          'from' => undef,
@@ -9469,7 +9469,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 5
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-04-06 vvv
+#: last_checked: 2026-04-10 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9665,10 +9665,12 @@ Kaiserdamm -> Fritschestr.: Richtung Osten/Norden	3 3159,11562 3320,11583 3287,1
        undef,
        {
          'data' => '#: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/holzbruecken-spandau/ (2024-2025) (mittlerweile: voraussichtliche Bauzeit: 2025 bis 2026) (mittlerweile: Sperrung ab Mitte Januar 2026 bis 2. Quartal 2026)
-#: last_checked: 2025-09-19 (SenMVKU website)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/morsch-und-marode-diese-berliner-holzbrucken-werden-jetzt-abgerissen-und-neu-gebaut-15444631.html (Bauzeit laut Schild: von März bis Mai 2026)
+#: last_checked: 2026-04-09 (Tsp)
 #: check_frequency: 270d
-#: next_check: 2026-06-30 (SenMVKU website)
-Südparkbrücke: Neubau geplant	2::inwork -4048,12107 -4033,12108
+#: next_check: 2026-05-31 (Baustellenschild)
+# REMOVED --- #: next_check: 2026-06-30 (SenMVKU website)
+Südparkbrücke: Neubau	2::inwork -4048,12107 -4033,12108
 ',
          'from' => 1767999600,
          'id' => 4448,
@@ -9750,44 +9752,7 @@ Hermann-Dorner-Allee: Einbahnstraße, mögliche Einschränkungen für Radfahrer	q4::
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: KOENIGSHEIDEWEG-2025
-#: by: https://www.tagesspiegel.de/berlin/brandanschlag-von-linksextremisten-im-sudosten-berlins-reparaturen-nach-langstem-stromausfall-der-nachkriegszeit-konnten-bis-2026-dauern-14310101.html
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2tnjk27qs22
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib6xakrcudbjnss6lcxcjqe6l7riqscbfw7jqibwzw2vtetkhm7kq@jpeg
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifikftud5lbc4zhtz5kjrx4fyvomsalwvil26zy5ff6mpmqnqf7tm@jpeg
-#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
-#: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdhvspimr22s
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreify53suk5ojkyl7r3nzqjul2mglb7crtmdfajwvq3bh7rutlzwige@jpeg
-#: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv) (bis 30.01.2026) (bis 09.04.2026)
-#: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026) (bis 30.05.2026)
-#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
-#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
-#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_322378 (Umleitung des Busverkehrs via Südostallee - Kiefholzstr.)
-#: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
-#: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
-#: XXX laut stromnetz-Seite ab 2026-01-30 ist der Königsheideweg wieder komplett gesperrt (-> ampel entfernen, temp blocking erweitern), voraussichtlich bis 2025-04-09
-#: also_indoor: traffic (T,G,H,W)
-#: last_checked: 2025-12-18 (VIZ) vvv
-# REMOVED --- #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2026-01-29 (stromnetz) vvv
-#: next_check: 2026-05-30 (VIZ) vvv
-Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
-Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1769554800,
-         'id' => 4466,
-         'prewarn_days' => 2,
-         'text' => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, vom 30.01.2026 bis voraussichtlich 30.05.2026',
-         'type' => 'handicap',
-         'until' => 1780178399
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
