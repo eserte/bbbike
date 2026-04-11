@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -236,6 +236,12 @@ for my $feat (@{$sequence_layer->{features}}) {
 
   my $seq_id = $props->{id} or next;
 
+  my $start_captured_at = format_timestamp_ms($props->{captured_at} // $props->{start_captured_at});
+  next unless $start_captured_at; # Filter no start date
+
+  if ($date_from && $start_captured_at lt $date_from) { next; }
+  if ($date_to && $start_captured_at gt $date_to) { next; }
+
   my $geom_data = $feat->{geometry};
   my $coords = decode_geometry($geom_data, $extent);
   $coords or next;
@@ -248,12 +254,6 @@ for my $feat (@{$sequence_layer->{features}}) {
     my ($lat, $lon) = tile_coord_to_latlon($tile_x, $tile_y, $zoom, $coord->[0], $coord->[1]);
     push @latlon, [$lat, $lon];
   }
-
-  my $start_captured_at = format_timestamp_ms($props->{captured_at} // $props->{start_captured_at});
-  next unless $start_captured_at; # Filter no start date
-
-  if ($date_from && $start_captured_at lt $date_from) { next; }
-  if ($date_to && $start_captured_at gt $date_to) { next; }
 
   my $start_id = $props->{image_id} // $props->{start_id} // $seq_id;
   my $creator = defined $props->{creator_id} ? $props->{creator_id} : "";
