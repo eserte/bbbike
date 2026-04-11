@@ -9703,18 +9703,7 @@ Südparkbrücke: Neubau	2::inwork -4048,12107 -4033,12108
          'until' => 1780178399
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603529.php
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1652785.php (Wiederaufnahme der Bauarbeiten)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/hier-sollen-berliner-kissen-raser-bremsen-berliner-bezirk-lasst-buckel-in-verkehrsberuhigter-zone-verbauen-15364376.html
-	q4::inwork 4339,6315 4379,6390 4407,6445
-',
-         'from' => 1774738800,
-         'id' => 4456,
-         'text' => 'Paulsenstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 30.03.2026 bis 10.04.2026',
-         'type' => 'handicap',
-         'until' => 1775858399
-       },
+       undef,
        {
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
 #: also_indoor: traffic (no-G,T,H,no-W) vvv

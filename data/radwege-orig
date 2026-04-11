@@ -4574,17 +4574,17 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 #: XXX Radwege werden neu gemacht vvv
 #: last_checked: 2026-03-08 (mapillary) vvv
 #: check_frequency: 120d vvv
-#: next_check: 2026-06-01 (BA-Pressemitteilung) vvv
+#: next_check: 2026-04-10 (marzahn-hellersdorf.com: mögliche Eröffnung) vvv
+# REMOVED --- #: next_check: 2026-06-01 (BA-Pressemitteilung) vvv
 # REMOVED --- #: next_check: 2025-08-18 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher (bis 2025): Verbundsteinpflaster und bröckelnder Beton
 neu asphaltiert, 2m breit	RW2;RW8 22899,15073 22726,15082 22599,15105 22577,15109 22441,15118
 # REMOVED --- neu asphaltiert, 2m breit	RW2;RW8 22441,15118 22323,15119
-neu asphaltiert, 2m breit	RW2;RW8 22323,15119 22059,15153 21903,15174
-letzte Deckschicht fehlt, 2m breit	RW2;RW8 21903,15174 21809,15186 21718,15198 21599,15213
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+neu asphaltiert, 2m breit	RW;RW 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 # 
 	RW1;RW1 23082,15329 22968,15315 22897,15287 22899,15073 22905,14925 22925,14865 22969,14840 23104,14827
 	RW1;RW0 23088,14579 23084,14472
