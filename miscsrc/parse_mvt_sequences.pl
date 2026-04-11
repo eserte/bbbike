@@ -250,36 +250,37 @@ for my $feat (@{$sequence_layer->{features}}) {
   my $coords = decode_geometry($geom_data, $extent);
   $coords or next;
 
-  # Flatten and convert coordinates
-  my $flat_coords = flatten_coordinates($coords);
-  print STDERR Data::Dumper->new([$flat_coords],[qw()])->Indent(0)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump, "\n" if DEBUG;
-  print STDERR Data::Dumper->new([$props],[qw()])->Indent(0)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump, "\n" if DEBUG;
-  my @latlon;
-  for my $coord (@$flat_coords) {
-    my ($lat, $lon) = tile_coord_to_latlon($tile_x, $tile_y, $zoom, $coord->[0], $coord->[1]);
-    push @latlon, [$lat, $lon];
-  }
-  print STDERR join(" ", map { "$_->[1],$_->[0]" } @latlon), "\n" if DEBUG;
-
   my $start_id = $props->{image_id} // $props->{start_id} // $seq_id;
   my $creator = defined $props->{creator_id} ? $props->{creator_id} : "";
   my $make = $props->{make} // "";
   my $end_captured_at = format_timestamp_ms($props->{end_captured_at} // "");
 
-  my $url = sprintf("https://www.mapillary.com/app/user/%s?pKey=%s&focus=photo&dateFrom=%s&dateTo=%s&z=15&lat=%f&lng=%f",
-                    $creator, $start_id, substr($start_captured_at,0,10), substr($start_captured_at,0,10),
-                    $latlon[0][0], $latlon[0][1]);
+  for my $part (@$coords) {
+      my $flat_coords = flatten_coordinates($part);
+      print STDERR Data::Dumper->new([$flat_coords],[qw()])->Indent(0)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump, "\n" if DEBUG;
+      print STDERR Data::Dumper->new([$props],[qw()])->Indent(0)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump, "\n" if DEBUG;
+      my @latlon;
+      for my $coord (@$flat_coords) {
+	  my ($lat, $lon) = tile_coord_to_latlon($tile_x, $tile_y, $zoom, $coord->[0], $coord->[1]);
+	  push @latlon, [$lat, $lon];
+      }
+      print STDERR join(" ", map { "$_->[1],$_->[0]" } @latlon), "\n" if DEBUG;
 
-  push @sequences, {
-    url => $url,
-    start_captured_at => $start_captured_at,
-    end_captured_at => $end_captured_at,
-    creator => $creator,
-    make => $make,
-    start_id => $start_id,
-    sequence => $seq_id,
-    coordinates => \@latlon,
-  };
+      my $url = sprintf("https://www.mapillary.com/app/user/%s?pKey=%s&focus=photo&dateFrom=%s&dateTo=%s&z=15&lat=%f&lng=%f",
+			$creator, $start_id, substr($start_captured_at,0,10), substr($start_captured_at,0,10),
+			$latlon[0][0], $latlon[0][1]);
+
+      push @sequences, {
+	  url => $url,
+	  start_captured_at => $start_captured_at,
+	  end_captured_at => $end_captured_at,
+	  creator => $creator,
+	  make => $make,
+	  start_id => $start_id,
+	  sequence => $seq_id,
+	  coordinates => \@latlon,
+      };
+  }
 }
 
 print encode_json(\@sequences);
