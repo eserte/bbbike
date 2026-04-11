@@ -367,7 +367,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-04-10 vvv
+#: last_checked: 2026-04-11 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1716,6 +1716,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: by: https://entwicklungsstadt.de/lehrter-campus-weiteres-grundstueck-am-berliner-hauptbahnhof-wird-bebaut/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4pf4wjedk2m (bis 2027)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia5nvrd3wxnnwwbw6stlnxi4vh4oagqnwu7bwn3f7hkaqmtykoas4@jpeg
+#: by: https://www.entwicklungsstadt.de/lehrter-campus-am-hauptbahnhof-baustelle-kommt-kaum-voran/
 #: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025; mittlerweile bis 31.12.2024
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
@@ -4572,19 +4573,19 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 # 
 #: next_check_id: EISENACHERGOTHAER-2023
 #: XXX Radwege werden neu gemacht vvv
-#: last_checked: 2026-03-08 (mapillary) vvv
-#: check_frequency: 120d vvv
-#: next_check: 2026-04-10 (marzahn-hellersdorf.com: mögliche Eröffnung) vvv
+#: last_checked: 2026-04-11 (mapillary) (südlicher Bürgersteig noch nicht fertig) vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2026-04-10 (marzahn-hellersdorf.com: mögliche Eröffnung) vvv
 # REMOVED --- #: next_check: 2026-06-01 (BA-Pressemitteilung) vvv
 # REMOVED --- #: next_check: 2025-08-18 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher (bis 2025): Verbundsteinpflaster und bröckelnder Beton
 neu asphaltiert, 2m breit	RW2;RW8 22899,15073 22726,15082 22599,15105 22577,15109 22441,15118
 # REMOVED --- neu asphaltiert, 2m breit	RW2;RW8 22441,15118 22323,15119
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
-neu asphaltiert, 2m breit	RW;RW 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
+neu asphaltiert, 2m breit	RW1;RW1 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 # 
 	RW1;RW1 23082,15329 22968,15315 22897,15287 22899,15073 22905,14925 22925,14865 22969,14840 23104,14827
 	RW1;RW0 23088,14579 23084,14472
@@ -8419,7 +8420,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-03-27
+#: last_checked: 2026-04-11
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -8588,7 +8589,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2026-04-10
+#: last_checked: 2026-04-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
