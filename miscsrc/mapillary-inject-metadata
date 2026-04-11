@@ -49,6 +49,8 @@ my $url_short = 'https://graph.mapillary.com';
 my $url = "$url_short/graphql";
 $ua->default_header(Authorization => "OAuth $token");
 
+my $image_id_to_make = $with_make ? create_image_id_to_make_cache(@filenames) : {};
+
 for my $filename (@filenames) {
     my $has_changes;
     my $fh = File::ReadBackwards->new($filename)
@@ -72,8 +74,13 @@ for my $filename (@filenames) {
 	    if ($with_make && /\bmake=($|\s)/) { # empty make
 		if (/\bstart_id=(\d+)/) {
 		    my $image_id = $1;
-		    my $data = cached_graph_api_call("$image_id?fields=id,make");
-		    my $make = $data->{make};
+		    my $make;
+		    if (defined $image_id_to_make->{$image_id}) {
+			$make = $image_id_to_make->{$image_id};
+		    } else {
+			my $data = cached_graph_api_call("$image_id?fields=id,make");
+			$make = $data->{make};
+		    }
 		    if (!$make) {
 			warn "WARNING: cannot find make for image id $image_id, skipping...\n";
 		    } else {
@@ -174,6 +181,36 @@ sub graph_api_call {
     my $json = $resp->decoded_content;
     my $data = decode_json($json);
     $data;
+}
+
+# Performance: do batch requests to create a image_id->make mapping
+sub create_image_id_to_make_cache {
+    my(@filenames) = @_;
+    my %start_ids;
+    for my $filename (@filenames) {
+	open my $fh, '<', $filename
+	    or die "Can't open $filename: $!";
+	while(<$fh>) {
+	    next if /^#/;
+	    if (/\bmake=($|\s)/) { # empty make
+		if (/\bstart_id=(\d+)/) {
+		    $start_ids{$1} = 1;
+		}
+	    }	    
+	}
+    }
+    my %image_id_to_make;
+    if (%start_ids) {
+	my @start_ids = sort { $a<=>$b } keys %start_ids;
+	while(@start_ids) {
+	    my @batch = splice @start_ids, 0, 50; # possibly number of max. elements per batch call
+	    my $data = graph_api_call('?ids='.join(',',@batch).'&fields=make');
+	    while(my($start_id,$v) = each %$data) {
+		$image_id_to_make{$start_id} = $v->{make};
+	    }
+	}
+    }
+    \%image_id_to_make;
 }
 
 # REPO BEGIN
