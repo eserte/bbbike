@@ -20,6 +20,10 @@ use JSON::PP;
 use Math::Trig 'pi', 'sinh', 'atan';
 use POSIX 'strftime';
 
+use constant DEBUG => $ENV{BBBIKE_DEBUG};
+
+use if DEBUG, 'Data::Dumper';
+
 my $miscdir = "$FindBin::RealBin/../misc";
 
 # Helper: parse YYYYMMDD date format to comparable string
@@ -248,12 +252,14 @@ for my $feat (@{$sequence_layer->{features}}) {
 
   # Flatten and convert coordinates
   my $flat_coords = flatten_coordinates($coords);
-#require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$flat_coords],[qw()])->Indent(1)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump; # XXX
+  print STDERR Data::Dumper->new([$flat_coords],[qw()])->Indent(0)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump, "\n" if DEBUG;
+  print STDERR Data::Dumper->new([$props],[qw()])->Indent(0)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump, "\n" if DEBUG;
   my @latlon;
   for my $coord (@$flat_coords) {
     my ($lat, $lon) = tile_coord_to_latlon($tile_x, $tile_y, $zoom, $coord->[0], $coord->[1]);
     push @latlon, [$lat, $lon];
   }
+  print STDERR join(" ", map { "$_->[1],$_->[0]" } @latlon), "\n" if DEBUG;
 
   my $start_id = $props->{image_id} // $props->{start_id} // $seq_id;
   my $creator = defined $props->{creator_id} ? $props->{creator_id} : "";
