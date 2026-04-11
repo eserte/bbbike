@@ -26,8 +26,6 @@ use LWP::UserAgent;
 
 use BBBikeYAML qw(LoadFile);
 
-my %creator_id2username; # ephemeral cache
-
 my $token;
 my $with_make = 1;
 GetOptions(
@@ -74,7 +72,7 @@ for my $filename (@filenames) {
 	    if ($with_make && /\bmake=($|\s)/) { # empty make
 		if (/\bstart_id=(\d+)/) {
 		    my $image_id = $1;
-		    my $data = graph_api_call("$image_id?fields=id,make");
+		    my $data = cached_graph_api_call("$image_id?fields=id,make");
 		    my $make = $data->{make};
 		    if (!$make) {
 			warn "WARNING: cannot find make for image id $image_id, skipping...\n";
@@ -89,13 +87,9 @@ for my $filename (@filenames) {
 	    }
 	    if (/\bcreator=(\d+)/) { # numerical id, needs to be translated
 		my $creator_id = $1;
-		my $creator_username = $creator_id2username{$creator_id};
-		if (!defined $creator_username) {
-		    my $data = graph_api_call("$creator_id?fields=username,id");
-		    $creator_username = $data->{username}
-			or die "No username found in response for $creator_id\n";
-		    $creator_id2username{$creator_id} = $creator_username;
-		}
+		my $data = cached_graph_api_call("$creator_id?fields=username,id");
+		my $creator_username = $data->{username}
+		    or die "No username found in response for $creator_id\n";
 		$current_creator = $creator_username;
 		s/\bcreator=\d+/creator=$creator_username/;
 		warn "INFO: changed creator userid $creator_id to username $creator_username.\n";
@@ -148,6 +142,17 @@ for my $filename (@filenames) {
 	warn "INFO: $filename was changed\n";
     } else {
 	warn "INFO: $filename unchanged\n";
+    }
+}
+
+{
+    my %cache;
+    sub cached_graph_api_call {
+	my($query) = @_;
+	return $cache{$query} if exists $cache{$query};
+	my $data = graph_api_call($query);
+	$cache{$query} = $data;
+	$data;
     }
 }
 
