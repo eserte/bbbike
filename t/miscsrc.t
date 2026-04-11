@@ -103,7 +103,9 @@ for my $f (@files) {
 	myskip "$f works only with installed MIME::Parser", 1
 	    if $f =~ m{/visualize_user_input.pl$} && !eval { require MIME::Parser; 1 };
 	myskip "$f works only with installed File::ReadBackwards", 1
-	    if $f =~ m{/replay_accesslog$} && !eval { require File::ReadBackwards; 1 };
+	    if $f =~ m{/( replay_accesslog
+		       |  mapillary-inject-metadata
+		       )$}x && !eval { require File::ReadBackwards; 1 };
 	myskip "$f works only with installed DB_File::Lock", 1
 	    if $f =~ m{/correct_data.pl$} && !eval { require DB_File::Lock; 1 };
 	myskip "$f works only with perl >= 5.10.0", 1

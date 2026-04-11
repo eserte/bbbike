@@ -1,10 +1,10 @@
-#!/usr/bin/env pistachio-perl
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2021,2022,2023,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2021,2022,2023,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,30 +14,35 @@
 use strict;
 use warnings;
 
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
 use File::Copy qw(cp);
 use File::ReadBackwards;
 use File::Temp;
 use JSON::XS qw(decode_json);
 use Getopt::Long;
 use LWP::UserAgent;
-use lib "$ENV{HOME}/src/bbbike";
+
 use BBBikeYAML qw(LoadFile);
 
 my %creator_id2username; # ephemeral cache
 
 my $token;
-my $with_make;
+my $with_make = 1;
 GetOptions(
 	   "t|token=s" => \$token,
 	   'with-make!' => \$with_make,
+	   'without-make' => sub { $with_make = 0 },
 	  )
-    or die "usage: $0 [--token token] [--with-make] file.bbd ...\n";
+    or die "usage: $0 [--token token] [--with-make|--without-make] file.bbd ...\n";
 my @filenames = @ARGV
     or die "Please provide one or more filenames";
 
 if (!$token) {
     my $conf_file = "$ENV{HOME}/.mapillary";
-    my $conf = LoadFile $conf_file;
+    my $conf = eval { LoadFile $conf_file }
+	or die "Please provide --token or create a YAML file '$conf_file' with a 'client_token' entry for the Mapillary API token\n";
     $token = $conf->{client_token} || die "Can't get client_token from $conf_file";
 }
 
@@ -193,3 +198,38 @@ sub copy_stat {
 # REPO END
 
 __END__
+
+=head1 NAME
+
+mapillary-inject-metadata - add metadata (creator and make) to mapillary-originated bbd files
+
+=head1 SYNOPSIS
+
+    mapillary-inject-metadata [--token ...] [--with-make|--without-make] file.bbd
+
+=head1 DESCRIPTION
+
+When creating bbd files from Mapillary vector tiles using
+L<mapillary-mvt-fetch>, then sequence information like creator or make
+are missing. This script injects the missing information.
+
+Typical workflow is
+
+    mapillary-mvt-fetch YYYYMMDD >| YYYYMMDD.bbd
+    mapillary-inject-metadata YYYYMMDD.bbd
+
+This script requires a Mapillary API token, either supplied using the
+C<--token> option, or stored in a YAML file F<~/.mapillary> as hash
+entry C<client_token>:
+
+    client_token: MLY|...
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<mapillary-mvt-fetch>.
+
+=cut
