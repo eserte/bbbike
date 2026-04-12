@@ -1425,7 +1425,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-04-03 vvv
+#: last_checked: 2026-04-12 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
@@ -1721,7 +1721,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:388766/72 viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
-#: last_checked: 2026-03-03
+#: last_checked: 2026-04-12
 #: check_frequency: 120d
 #: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
@@ -2618,19 +2618,18 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
 #: by: https://www.deutsches-architekturforum.de/thread/14542-gesch%C3%A4fts-b%C3%BCrokomplex-p1-am-kadewe-sch%C3%B6neberg-in-bau/?postID=749610#post749610 (provisorische Radspur zu sehen)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/dokumentiert-fragen-und-antworten-zum-dreibezirke-eck-in-berlins-city-west-12808346.html (Planung südlich der Tauenzienstraße "nicht konsensfähig")
-#: XXX Nürnberger Str.: mittlerweile gibt es wegen einer Hochbaustelle provisorische Radspuren; Halteverbotsschilder bis 30.06.2025
+# REMOVED --- #: XXX Nürnberger Str.: mittlerweile gibt es wegen einer Hochbaustelle provisorische Radspuren; Halteverbotsschilder bis 30.06.2025
 #: osm_watch: way id="4491980" version="30"
 #: priority: #B
-#: last_checked: 2026-03-27 vvv
-# REMOVED --- #: check_frequency: 120d vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2026-04-12 vvv
+#: check_frequency: 120d vvv
+# REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) vvv
 #: historical_note: zeitweise provisorische Radspuren, RW3
 	RW0; 5866,10492 6025,10746
 #: historical_note: früher eingetragen: provisorische Radspuren, RW3;
-#: note: provisorische Radspuren starten erst 70m hinter der Kreuzung
-#: note: kann zugeparkt sein (oder ist immer?), gesehen am 2025-06-14 (Fr) abends und 2025-07-17 (Do) abends Richtung Südwesten
-eigentlich provisorische Radspuren per Gelbmarkierung, in der Praxis zugeparkt	RW0; 6025,10746 5866,10492
+#: historical_note: ca. 2025 gab es provisorische Radspuren, erst 70m hinter der Kreuzung beginnend, oft oder immer zugeparkt (zugeparkt: gesehen am 2025-06-14 (Fr) abends und 2025-07-17 (Do) abends Richtung Südwesten)
+	RW0; 6025,10746 5866,10492
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3295,7 +3294,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-04-05 vvv
+#: last_checked: 2026-04-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3323,7 +3322,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-04-05
+#: last_checked: 2026-04-12
 #: check_frequency: 30d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -6674,7 +6673,7 @@ Grünbeschichtung	RW3; 5370,6486 5424,6584 5533,6753 5604,6870
 	RW1;RW1 -4290,14025 -4314,13828
 #: by: anonymous
 	RW6;RW6 -7595,13399 -7585,13388 -7595,13214 -7597,13159 -7592,13107
-	RW1;RW8 3106,14195 3030,14224 2960,14218 2896,14187
+alte Gehwegplatten	RW1;RW8 3106,14195 3030,14224 2960,14218 2896,14187
 	RW1;RW9 20205,-548 20172,-533
 asphaltiert	RW2;RW2 20205,-548 19996,-740
 asphaltiert, in beide Richtung befahrbar	RW2; 19996,-740 19894,-835
@@ -7914,7 +7913,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2026-04-01 vvv
+#: last_checked: 2026-04-12 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7961,7 +7960,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-04-01 vvv
+#: last_checked: 2026-04-12 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344

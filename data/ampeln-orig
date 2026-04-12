@@ -38,7 +38,7 @@ Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
 #: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026)
-#: last_checked: 2026-03-03
+#: last_checked: 2026-04-12
 #: check_frequency: 90d
 #: next_check: 2026-04-24 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260213
@@ -267,7 +267,7 @@ Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
 # REMOVED --- Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 # 
 #: next_check_id: PERLEBERGER-2024
-#: last_checked: 2026-03-16
+#: last_checked: 2026-04-12
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
 Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
@@ -2405,6 +2405,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog keine Ampel für Radfahrer im Zuge des Wolfensteindamms von Nord nach Südwest
 	X 4796,5129
 	X 25519,4830
+#: off: 2026-04-12 Sun 09:13
+#: off_rule: Sun?
 	X 984,14086
 	X 6489,16658
 	X 6702,16900
@@ -3053,7 +3055,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 # REMOVED (aufgehoben, by: Kaja Kruse) --- X 10713,15753
 # 
 #: off: 2014-10-12 Sun 15:12
-#: off_rule: weekend?
+#: off: 2026-04-12 Sun 09:14
+#: off_rule: weekend? Sun?
 #: note: Anforderungsampel
 	X 1053,13790
 # 
@@ -3604,7 +3607,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 30.04.2026)
 #: XXX laut Verkehrsmeldung nun Neubau einer Ampel, bis Mitte Dezember 2025, mittlerweile bis Ende Februar 2026 etc.
 #: priority: #D
-#: last_checked: 2026-04-01
+#: last_checked: 2026-04-12
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583
@@ -4059,10 +4062,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog Ampel existiert nur in Richtung Norden
 #: off: 2019-11-03 Sun 14:50
 #: off: 2022-10-03 Sun 10:50
+#: off: 2026-04-12 Sun 08:57
 #: off_rule: Sun
 	X 5086,14504
 # 
 #: off: 2022-10-03 holiday 10:50
+#: off: 2026-04-12 Sun 08:57
 #: off_rule: Sun? holiday?
 	X 5205,14253
 # 

@@ -767,7 +767,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
-#: last_checked: 2026-04-11 vvv
+#: last_checked: 2026-04-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 #: valid: -20261231 vvv
@@ -874,7 +874,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,re-G[viel zu kurz?],re-W,re-ex-H)
-#: last_checked: 2026-04-06 (traffic)
+#: last_checked: 2026-04-12
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
@@ -955,24 +955,24 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
 ### Charlottenburg ###
 # 
-# REMOVED --- #: next_check_id: RANKE-2023
-#: next_check_id: RANKE-2026
-# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
-#: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
-#: osm_watch: note 5181118 1
-#: osm_watch: way id="4491984" version="29"
-# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 50m (frühere Sperrung)
-#: note: Überfahrt über die gesamte Breite gesperrt, außerdem Sperrung im Einmündungsbereich (weniger als 50m lang)
-#: also_indoor: traffic (G,T,ex-W)
-#: last_checked: 2026-03-27
-#: check_frequency: 21d (traffic)
-# REMOVED --- #: next_check: 2025-11-08
-# REMOVED --- #: valid: -20251108
-Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
+# REMOVED --- # REMOVED --- #: next_check_id: RANKE-2023
+# REMOVED --- #: next_check_id: RANKE-2026
+# REMOVED --- # REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
+# REMOVED --- #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
+# REMOVED --- #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
+# REMOVED --- #: osm_watch: note 5181118 1
+# REMOVED --- #: osm_watch: way id="4491984" version="29"
+# REMOVED --- # REMOVED --- #: note: Länge des gesperrten Bereichs etwa 50m (frühere Sperrung)
+# REMOVED --- #: note: Überfahrt über die gesamte Breite gesperrt, außerdem Sperrung im Einmündungsbereich (weniger als 50m lang)
+# REMOVED --- #: also_indoor: traffic (G,T,ex-W)
+# REMOVED --- #: last_checked: 2026-04-12
+# REMOVED --- #: check_frequency: 21d (traffic)
+# REMOVED --- # REMOVED --- #: next_check: 2025-11-08
+# REMOVED --- # REMOVED --- #: valid: -20251108
+# REMOVED --- Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
 # 
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
@@ -1014,7 +1014,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-04-01
+#: last_checked: 2026-04-12
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -2464,13 +2464,13 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: by: https://entwicklungsstadt.de/neugestaltung-am-nollendorfplatz-bauarbeiten-am-metropol-theater-laufen/
 #: by: https://www.entwicklungsstadt.de/nachverdichtung-am-nollendorfplatz-buero-neubau-no6-ersetzt-frueheres-spielcasino/
 #: by: http://www.deal-magazin.com/news/3/149287/Berlin-Nollendorfplatz-Bauwens-startet-nachhaltiges-Bueroprojekt-NO6 (bis Herbst 2027)
-#: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; mittlerweile bis Halteverbotsschilder bis 15.12.2025; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden
+#: XXX Laut Halteverbotsschilder vermutlich bis 15.04.2025 gesperrt; mittlerweile bis Halteverbotsschilder bis 15.12.2025; vermutlich verschwindet der Parkplatz dauerhaft; in diesem Fall bleibt sollte eine q4-Strecke auf dem Gehweg gemappt werden; 2026-04-12: keine Erneuerung der Halteverbotsschilder
 #: XXX wieder herstellen: Nollendorfplatz [Parkplatz]: Parkplatzverkehr	q1 7036,10313 6978,10319 6941,10329
 #: osm_watch[closed]: note 4506575 2
 #: osm_watch: way id="529086013" version="5"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="16"
-#: last_checked: 2025-12-18 (daf)
+#: last_checked: 2026-04-12
 #: check_frequency: 120d
 #: next_check: 2027-11-30 (deal magazin: Herbst 2027)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
