@@ -226,6 +226,23 @@ sub info {
     $info;
 }
 
+sub new_stream {
+    my($class, @street_objs) = @_;
+    for my $street_obj (@street_objs) {
+	if (!UNIVERSAL::isa($street_obj, 'Strassen')) {
+	    die "Object $street_obj is not a Strassen object";
+	}
+    }
+    bless { StreetObjs => \@street_objs }, $class;
+}
+
+sub read_stream {
+    my($self, $callback, %args) = @_;
+    for my $street_obj (@{ $self->{StreetObjs} }) {
+	$street_obj->read_stream($callback, %args);
+    }
+}
+
 # XXX Hack: autoloader does not work for inherited methods
 for my $method (qw(agrep bbox bboxes pos_from_name choose_street new_with_removed_points sort_records_by_cat make_coord_to_pos grepstreets)) {
     my $code = 'sub ' . $method . ' { shift->Strassen::' . $method . '(@_) }';
