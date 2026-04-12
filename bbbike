@@ -18305,8 +18305,7 @@ sub do_search {
     if ($bicycle_road_opimization) {
 	if (!$non_bicycle_roads_net) {
 	    require Storable;
-	    #XXX my $src_s = get_cyclepath_streets_stream(); # XXX missing implementation for MultiStrassen!
-	    my $src_s = Strassen->new('radwege_exact');
+	    my $src_s = get_cyclepath_streets_as_stream();
 	    my $s = Strassen->new;
 	    $src_s->read_stream
 		(
@@ -22641,6 +22640,17 @@ sub get_cyclepath_streets {
 	MultiStrassen->new(qw(radwege_exact comments_cyclepath));
     } else {
 	Strassen->new('radwege_exact');
+    }
+}
+
+sub get_cyclepath_streets_as_stream {
+    if ($multistrassen) {
+	MultiStrassen->new_stream(
+	    Strassen->new_stream('radwege_exact'),
+	    Strassen->new_stream('comments_cyclepath'),
+	);
+    } else {
+	Strassen->new_stream('radwege_exact');
     }
 }
 
