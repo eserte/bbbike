@@ -18251,9 +18251,9 @@ sub do_search {
 	}
     }
     if ($radwege_optimierung) {
+	# XXX wenn L zugeschaltet wird, muß radwege_net aktualisiert werden
 	if (!$radwege_net) {
-	    my $radwege_exact = new Strassen "radwege_exact";
-	    $radwege_net = new StrassenNetz $radwege_exact;
+	    $radwege_net = StrassenNetz->new(get_cyclepath_streets());
 	    $radwege_net->make_net_cat(-obeydir => 1);
 	    # add all other streets do not have cycle paths ...
 	    while (my($p1,$hash) = each %{ $net->{Net} }) {
@@ -18285,7 +18285,7 @@ sub do_search {
 		warn "Can't get streets object, ignore N_RW optimization";
 	    } else {
 		$N_RW_net = new StrassenNetz $s;
-		$N_RW_net->make_net_cyclepath(Strassen->new("radwege_exact"), 'N_RW');
+		$N_RW_net->make_net_cyclepath(get_cyclepath_streets());
 	    }
 	}
 	if ($N_RW_net) {
@@ -18305,8 +18305,8 @@ sub do_search {
     if ($bicycle_road_opimization) {
 	if (!$non_bicycle_roads_net) {
 	    require Storable;
-	    my $src_s = Strassen->new_stream('radwege_exact');
-	    main::status_message("Can't get radwege_exact", 'die') if !$src_s;
+	    #XXX my $src_s = get_cyclepath_streets_stream(); # XXX missing implementation for MultiStrassen!
+	    my $src_s = Strassen->new('radwege_exact');
 	    my $s = Strassen->new;
 	    $src_s->read_stream
 		(
@@ -22634,6 +22634,14 @@ sub get_any_strassen_obj {
 	$object = get_strassen_obj($p_file{$type});
     }
     $object;
+}
+
+sub get_cyclepath_streets {
+    if ($multistrassen) {
+	MultiStrassen->new(qw(radwege_exact comments_cyclepath));
+    } else {
+	Strassen->new('radwege_exact');
+    }
 }
 
 sub handle_global_directives {
