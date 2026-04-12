@@ -44,7 +44,7 @@ BEGIN {
     }
 }
 
-plan tests => 80 + $have_nowarnings;
+plan tests => 96 + $have_nowarnings;
 
 print "# Tests may fail if data changes\n";
 
@@ -483,7 +483,6 @@ EOF
     ok !$net->{Wegfuehrung}{'60,0'}, 'Wegfuehrung removed';
 }
 
-XXX:
 {
     pass("-- Preserve order of comments --");
 
@@ -503,4 +502,47 @@ If this test fails, then check two things:
 
 EOF
 }
+
+XXX:
+{
+    my $streets = Strassen->new_from_data_string(<<EOF);
+Street A	A 10,10 20,20
+Street B	B;C 30,30 40,40
+Street X	X; 50,50 60,60
+Street Y	;Y 70,70 80,80
+EOF
+
+    {
+	my $net = StrassenNetz->new($streets);
+	$net->make_net_cat(-usecache => 0, -obeydir => 0);
+	is $net->{Net}{"10,10"}{"20,20"}, 'A',   'obeydir set to false, forward direction';
+	is $net->{Net}{"20,20"}{"10,10"}, 'A',   'obeydir set to false, backward direction';
+	is $net->{Net}{"30,30"}{"40,40"}, 'B',   'obeydir set to false, separate cats, forward';
+	is $net->{Net}{"40,40"}{"30,30"}, 'C',   'obeydir set to false, separate cats, backward';
+	is $net->{Net}{"50,50"}{"60,60"}, 'X',   'obeydir set to false, only forward direction exists, forward';
+	is $net->{Net}{"60,60"}{"50,50"}, undef, 'obeydir set to false, only forward direction exists, backward';
+	is $net->{Net}{"70,70"}{"80,80"}, undef, 'obeydir set to false, only backward direction exists, forward';
+	is $net->{Net}{"80,80"}{"70,70"}, 'Y',   'obeydir set to false, only backward direction exists, backward';
+    }
+
+    {
+	my $net = StrassenNetz->new($streets);
+	$net->make_net_cat(-usecache => 0, -obeydir => 1);
+	is $net->{Net}{"10,10"}{"20,20"}, 'A',   'obeydir set to true, forward direction';
+	is $net->{Net}{"20,20"}{"10,10"}, undef, 'obeydir set to true, backward direction (not existent)';
+	is $net->{Net}{"30,30"}{"40,40"}, 'B',   'obeydir set to true, separate cats, forward';
+	{
+	    local $TODO = "Not working as expected";
+	    is $net->{Net}{"40,40"}{"30,30"}, 'C',   'obeydir set to true, separate cats, backward';
+	}
+	is $net->{Net}{"50,50"}{"60,60"}, 'X',   'obeydir set to true, only forward direction exists, forward';
+	is $net->{Net}{"60,60"}{"50,50"}, undef, 'obeydir set to true, only forward direction exists, backward';
+	is $net->{Net}{"70,70"}{"80,80"}, undef, 'obeydir set to true, only backward direction exists, forward';
+	{
+	    local $TODO = "Not working as expected";
+	    is $net->{Net}{"80,80"}{"70,70"}, 'Y',   'obeydir set to true, only backward direction exists, backward';
+	}
+    }
+}
+
 __END__
