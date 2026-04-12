@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2014,2015,2017,2025 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2014,2015,2017,2025,2026 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -27,7 +27,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = '1.63';
+$VERSION = '1.64';
 
 package StrassenNetz;
 use strict;
@@ -569,6 +569,7 @@ sub get_street_record {
 			 HasStrcat
 			 HasRadwege
 			 HasRadwegeStrcat
+			 HasBicycleRoadOptimization
 			 HasGreen
 			 HasUnlitStreets
 			 HasSteigung
@@ -766,6 +767,11 @@ sub build_penalty_code {
                             $pen *= $tram_penalty->{$cat};
                         }
 		    }
+';
+    }
+    if ($sc->HasBicycleRoadOptimization) {
+	$penalty_code .= '
+                    $pen = $bicycle_road_penalty_sub->($pen, $next_node, $last_node);
 ';
     }
     if ($sc->UserDefPenaltySub) {
@@ -1256,6 +1262,7 @@ sub search {
     $sc->HasStrcat        (exists $args{Strcat});
     $sc->HasRadwege       (exists $args{Radwege});
     $sc->HasRadwegeStrcat (exists $args{RadwegeStrcat});
+    $sc->HasBicycleRoadOptimization(exists $args{BicycleRoadOptimization});
     $sc->HasGreen         (exists $args{Green});
     $sc->HasUnlitStreets  (exists $args{UnlitStreets});
     $sc->HasSteigung      (exists $args{Steigung});
@@ -1340,6 +1347,10 @@ sub search {
     if (exists $args{Tram}) {
 	$tram_net = $args{Tram}->{Net}->{Net};
 	$tram_penalty = $args{Tram}->{Penalty} || die "No penalty";
+    }
+    my $bicycle_road_penalty_sub;
+    if (exists $args{BicycleRoadOptimization}) {
+	$bicycle_road_penalty_sub = $args{BicycleRoadOptimization}->{PenaltySub};
     }
     my $user_def_penalty_sub = $args{UserDefPenaltySub};
 

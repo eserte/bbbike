@@ -3,18 +3,17 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2007,2008,2013,2014,2016,2017,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2007,2008,2013,2014,2016,2017,2025,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeGlobalVars;
 
 use vars qw($VERSION);
-$VERSION = '1.77';
+$VERSION = '1.78';
 
 package main;
 
@@ -230,7 +229,7 @@ use vars qw($handicap_s_optimierung %handicap_s_speed
 	    $handicap_directed_net);
 
 use vars qw($radwege_optimierung $radwege_net $N_RW_optimization $N_RW1_optimization $N_RW_net
-	    %radwege_speed $green_optimization $green_net
+	    %radwege_speed $bicycle_road_opimization $non_bicycle_roads_net $green_optimization $green_net
 	    $special_vehicle_rb
 	    $unlit_streets_optimization $unlit_streets_net
 	   );

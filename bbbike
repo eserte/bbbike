@@ -3448,6 +3448,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 		      -variable => \$ampel_optimierung,
 		      -command => \&calc_ampel_optimierung,
 		     );
+    $sb2m->separator;
     $sb2m->checkbutton(-label => M"Radwege-Optimierung",
 		       -variable => \$radwege_optimierung,
 		       -command => sub {
@@ -3477,6 +3478,10 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			   }
 		       }
 		      );
+    $sb2m->checkbutton(-label => M"Fahrradstraßen bevorzugen",
+		       -variable => \$bicycle_road_opimization,
+		      );
+    $sb2m->separator;
     unless ($skip_features{"green"}) {
 	$sb2m->cascade(-label => M("Grüne Wege")."...");
 	my $gwm = $sb2m->Menu(-title => M"Grüne Wege");
@@ -18297,6 +18302,38 @@ sub do_search {
 	}
     }
 
+    if ($bicycle_road_opimization) {
+	if (!$non_bicycle_roads_net) {
+	    require Storable;
+	    my $src_s = Strassen->new_stream('radwege_exact');
+	    main::status_message("Can't get radwege_exact", 'die') if !$src_s;
+	    my $s = Strassen->new;
+	    $src_s->read_stream
+		(
+		    sub {
+			my($r) = @_;
+			if ($r->[Strassen::CAT()] =~ m{^RW7\b}) {
+			    my $new_r = Storable::dclone($r);
+			    $new_r->[Strassen::CAT()] = 'RW7;';
+			    $s->push($new_r);
+			}
+		    }
+		);
+	    $non_bicycle_roads_net = StrassenNetz->new($s);
+	    $non_bicycle_roads_net->make_net_cat(-obeydir => 1, -usecache => 0); # no caching, because source is generated on-the-fly
+	}
+
+	my $penalty_noncycleroads_koeff = 1.5; # for now hard-coded
+	$extra_args{BicycleRoadOptimization} =
+	    {PenaltySub => sub {
+		 my($p, $next_node, $last_node) = @_;
+		 if (!$non_bicycle_roads_net->{Net}{$last_node}{$next_node}) {
+		     $p *= $penalty_noncycleroads_koeff;
+		 }
+		 $p;
+	     }};
+    }
+
     if ($tram_optimization) {
 	if (!$tram_net) {
 	    $tram_net = StrassenNetz->new(Strassen->new('comments_tram')); # XXX -orig?
@@ -19192,6 +19229,7 @@ sub make_net {
     undef $strcat_net;
     undef $radwege_net;
     undef $N_RW_net;
+    undef $non_bicycle_roads_net;
     undef $green_net;
     undef $unlit_streets_net;
     undef $steigung_net;
