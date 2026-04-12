@@ -217,9 +217,13 @@ sub make_net_cat {
 	if ($ret->[Strassen::CAT()] =~ /^(.*?)(?:::?.*)?;(.*?)(?:::?.*)?$/) {
 	    ($cat_hin, $cat_rueck) = ($1, $2);
 	} else {
-	    ($cat_hin) = ($cat_rueck) = $ret->[Strassen::CAT()] =~ /^(.*?)(?:::?.*)?$/;
-	    if ($onewayhack && $cat_hin =~ m{^(1|1s|3)$}) { # this are the directed categories
+	    ($cat_hin) = $ret->[Strassen::CAT()] =~ /^(.*?)(?:::?.*)?$/;
+	    if ($obey_dir) {
 		$cat_rueck = "";
+	    } elsif ($onewayhack && $cat_hin =~ m{^(1|1s|3)$}) { # this are the directed categories
+		$cat_rueck = "";
+	    } else {
+		$cat_rueck = $cat_hin;
 	    }
 	}
 	my $strassen_pos = $strassen->pos;
@@ -235,7 +239,7 @@ sub make_net_cat {
 			if $do_net2name;
 		}
 	    }
-	    if (!$obey_dir && $cat_rueck ne "") {
+	    if ($cat_rueck ne "") {
 		if ($multiple) {
 		    push @{$net->{$kreuzungen[$i+1]}{$kreuzungen[$i]}}, $cat_rueck;
 		    push @{$net2name->{$kreuzungen[$i+1]}{$kreuzungen[$i]}}, $strassen_pos

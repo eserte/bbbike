@@ -531,17 +531,11 @@ EOF
 	is $net->{Net}{"10,10"}{"20,20"}, 'A',   'obeydir set to true, forward direction';
 	is $net->{Net}{"20,20"}{"10,10"}, undef, 'obeydir set to true, backward direction (not existent)';
 	is $net->{Net}{"30,30"}{"40,40"}, 'B',   'obeydir set to true, separate cats, forward';
-	{
-	    local $TODO = "Not working as expected";
-	    is $net->{Net}{"40,40"}{"30,30"}, 'C',   'obeydir set to true, separate cats, backward';
-	}
+	is $net->{Net}{"40,40"}{"30,30"}, 'C',   'obeydir set to true, separate cats, backward';
 	is $net->{Net}{"50,50"}{"60,60"}, 'X',   'obeydir set to true, only forward direction exists, forward';
 	is $net->{Net}{"60,60"}{"50,50"}, undef, 'obeydir set to true, only forward direction exists, backward';
 	is $net->{Net}{"70,70"}{"80,80"}, undef, 'obeydir set to true, only backward direction exists, forward';
-	{
-	    local $TODO = "Not working as expected";
-	    is $net->{Net}{"80,80"}{"70,70"}, 'Y',   'obeydir set to true, only backward direction exists, backward';
-	}
+	is $net->{Net}{"80,80"}{"70,70"}, 'Y',   'obeydir set to true, only backward direction exists, backward';
     }
 }
 
