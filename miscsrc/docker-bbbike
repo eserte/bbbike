@@ -1038,10 +1038,12 @@ EOF
     if (!$opt{mapserver}) {
 	$dockerfile .= <<'EOF';
 RUN (cd cgi && cp -f bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
+RUN (cd cgi && cat bbbike2-debian.cgi.config | perl -pe 's/bbbike-debian.cgi.config/bbbike-debian-no-mapserver.cgi.config/' > bbbike2.cgi.config)
 EOF
     } else {
 	$dockerfile .= <<'EOF';
 RUN (cd cgi && cp -f bbbike-debian.cgi.config bbbike.cgi.config)
+RUN (cd cgi && cp -f bbbike2-debian.cgi.config bbbike2.cgi.config)
 RUN (cd data && perl -I.. -MBBBikeBuildUtil=run_pmake -e 'run_pmake' mapfiles)
 RUN (cd mapserver/brb && ./doit.pl --dest-dir . --host localhost  --location-style bbbike --bbbike-dir ../.. templates permissions)
 EOF
