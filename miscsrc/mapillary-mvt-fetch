@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -203,3 +203,319 @@ for my $seq (sort {
 }
 
 __END__
+
+=head1 NAME
+
+mapillary-mvt-fetch - Fetch, decode and display Mapillary sequences in BBBike
+
+=head1 SYNOPSIS
+
+mapillary-mvt-fetch [options] [DATE_SPEC]
+
+  mapillary-mvt-fetch
+  mapillary-mvt-fetch 20250101
+  mapillary-mvt-fetch --bbox 13.3,52.4,13.5,52.6 20250101-20250103
+  mapillary-mvt-fetch --mvt-impl py --zoom 14 20250101-
+
+=head1 DESCRIPTION
+
+B<mapillary-mvt-fetch> retrieves Mapillary vector tiles (MVT format),
+decodes them into sequence data, and outputs the result as C<.bbd> files
+understood by C<bbbike> for visualization.
+
+The script is a high-level orchestration tool combining:
+
+=over 4
+
+=item *
+
+tile computation from a bounding box
+
+=item *
+
+tile download from the Mapillary vector tile API
+
+=item *
+
+decoding via helper scripts
+
+=item *
+
+formatting as C<.bbd> files for BBBike display
+
+=back
+
+=head2 OPTIONS
+
+=over 4
+
+=item B<--bbox>=I<minlon,minlat,maxlon,maxlat>
+
+Bounding box in WGS84 coordinates.
+
+If not specified, a default bounding box (the Berlin area) is used.
+
+=item B<--zoom>=I<level>
+
+Zoom level used for tile computation.
+
+Default: 12
+
+=item B<--mvt-impl>=I<pl|py>
+
+Select implementation used for decoding MVT tiles:
+
+=over 4
+
+=item *
+
+C<pl> (default): use C<parse_mvt_sequences.pl>
+
+=item *
+
+C<py>: use C<parse_mvt_sequences.py>
+
+=back
+
+=item B<--[no]cache>
+
+Enable or disable HTTP caching.
+
+Default: enabled.
+
+Uses C<LWP::UserAgent::WithCache> with cache root:
+
+  ~/.cache
+
+Cache expiration is 8 hours.
+
+=back
+
+=head2 DATE SPECIFICATION
+
+An optional positional argument defines the date range.
+
+Supported formats:
+
+=over 4
+
+=item B<YYYYMMDD>
+
+Single day.
+
+Internally expanded to:
+
+  YYYYMMDD - next day
+
+=item B<YYYYMMDD->
+
+Open-ended range starting at the given date.
+
+=item B<YYYYMMDD-YYYYMMDD>
+
+Explicit range.
+
+Note: the end date is typically specified as the B<next day>
+to include a single day.
+
+Example:
+
+  20250102-20250103   # selects 2025-01-02
+
+=back
+
+If no date is given, the default is:
+
+=over 4
+
+=item *
+
+yesterday (local time) as start date
+
+=item *
+
+no explicit end date
+
+=back
+
+=head2 CONFIGURATION
+
+=head3 Mapillary access token
+
+The Mapillary API access token is either specified with the C<--token>
+option or read from F<~/.mapillary>. This file must be in YAML format
+and contain:
+
+  client_token: YOUR_TOKEN
+
+The script aborts if no token is found.
+
+=head2 TYPICAL USAGE
+
+Download and transform Mapillary vector tiles, inject metadata
+(creator and make), and display in BBBike:
+
+    cd .../src/bbbike
+    DATE=20260101
+    ./miscsrc/mapillary-mvt-fetch $DATE > /tmp/$DATE.bbd
+    ./miscsrc/mapillary-inject-metadata /tmp/$DATE.bbd
+    ./bbbikeclient /tmp/$DATE.bbd
+
+=head2 INTERNAL WORKFLOW
+
+=head3 1. Tile computation
+
+The bounding box is converted into tile coordinates using the standard
+Web Mercator tiling scheme.
+
+All tiles covering the bounding box at the selected zoom level are
+enumerated.
+
+=head3 2. Tile download
+
+Each tile is fetched from:
+
+  https://tiles.mapillary.com/maps/vtp/mly1_public/2/Z/X/Y
+
+The access token is appended as a query parameter.
+
+Tiles are stored temporarily as:
+
+  /tmp/tile_Z_X_Y.mvt
+
+=head3 3. MVT decoding
+
+Each tile is decoded by invoking one of:
+
+=over 4
+
+=item *
+
+C<parse_mvt_sequences.pl>
+
+=item *
+
+C<parse_mvt_sequences.py>
+
+=back
+
+The scripts are called internally as:
+
+  parse_mvt_sequences.* FILE DATE_FROM DATE_TO
+
+They return JSON, which is decoded and accumulated.
+
+These helper scripts are not intended for direct use.
+
+=head3 4. Output formatting
+
+The combined results are sorted by:
+
+=over 4
+
+=item *
+
+start_captured_at
+
+=item *
+
+latitude / longitude
+
+=item *
+
+sequence id
+
+=back
+
+The output is formatted in C<.bbd> format:
+
+=over 4
+
+=item *
+
+directive lines with a direct Mapillary URL
+
+=item *
+
+sequence metadata (capture date, creator...)
+
+=item *
+
+polyline coordinates
+
+=back
+
+=head3 5. Display in BBBike
+
+The output is meant to be used in C<bbbike> or C<bbbikeclient> which
+displays the sequences on a map.
+
+=head2 PREREQUISITES
+
+=head3 General
+
+=over 4
+
+=item *
+
+Perl
+
+=item *
+
+Network access
+
+=item *
+
+Valid Mapillary access token in C<~/.mapillary>
+
+=back
+
+=head3 C<--mvt-impl=py>
+
+=over 4
+
+=item *
+
+Python 3
+
+=item *
+
+mapbox_vector_tile module
+
+=back
+
+=head3 C<--mvt-impl=pl>
+
+=over 4
+
+=item *
+
+either L<Google::ProtocolBuffers::Dynamic> or L<Google::ProtocolBuffers>
+
+=back
+
+=head3 Optional (caching)
+
+=over 4
+
+=item *
+
+L<LWP::UserAgent::WithCache>
+
+=item *
+
+L<HTTP::Date>
+
+=back
+
+=head1 SEE ALSO
+
+L<parse_mvt_sequences.pl>,
+L<parse_mvt_sequences.py>,
+L<bbbikeclient>
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
