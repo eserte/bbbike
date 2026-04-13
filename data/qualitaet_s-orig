@@ -12405,9 +12405,9 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Weg am CleanTech Business Park): fester Belag	Q0 19647,16633 19601,16679 19631,16704 19749,17028 19788,17076 19845,17235 19907,17429
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
-#: XXX mittlerweile gibt es im Schatten der kleinen Baustelle an der Simon-Dach-Str. Ausbesserungsarbeiten; anscheinend werden diese bis mindestens Boxhagener Platz durchgeführt
-#: last_checked: 2026-04-07
-#: check_frequency: 14d
+#: XXX mittlerweile gibt es im Schatten der kleinen Baustelle an der Simon-Dach-Str. Ausbesserungsarbeiten; anscheinend werden diese bis mindestens Boxhagener Platz durchgeführt --- Sperrung ist mittlerweile beendet, Ausbesserungsarbeiten stehen noch aus
+#: last_checked: 2026-04-13
+#: check_frequency: 30d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
 #: note: in der Nähe der Straßenbahnschienen aber keine Schäden mehr
@@ -19140,11 +19140,13 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/es-geht-langsamer-voran-als-geplant-wieder-verzogerungen-im-berliner-ausflugsparadies-14639003.html (Baustart 2026?)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/bundeswehr-kultur-wohnungsbau-vier-baustellen-in-berliner-sudwesten-wo-bagger-anrucken-15295421.html
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamtes/beschluss-10022026.pdf (zur Finanzierung)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neubau-des-berliner-havelradwegs-neuer-asphalt-am-fluss--baustart-noch-2026-15449624.html (Baustart Anfang Juni 2026, Fertigstellung Ende Oktober 2026, mögliche Sperrungen während der Bauarbeiten)
 #: XXX wird hier asphaltiert?
 #: osm_watch: way id="205746338" version="10"
 #: last_checked: 2026-02-10 (BA-Beschluss)
 #: check_frequency: 120d
-#: next_check: 2026-12-31 (Tsp)
+#: next_check: 2026-06-01 (Tsp: Baustart)
+# REMOVED --- #: next_check: 2026-12-31 (Tsp)
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt
 Ernst-Liesegang-Ufer: wassergebundene Decke	Q1 -5924,5602 -5911,5619 -5853,5674

@@ -4797,34 +4797,7 @@ Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal we
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (in osm aufgehoben) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php --- #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/ --- #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369 --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben? --- #: source_id: 2147344699 --- #: osm_watch: way id="25274116" version="20" --- #: osm_watch: way id="671101960" version="4" --- #: also_indoor: traffic (G,H) --- #: last_checked: 2019-11-23 --- #: check_frequency: 7d
-#: next_check_id: ALTSTADTKOEPENICK-2024
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1482944.php (Radfahrer sollen absteigen)
-#: by: https://www.berliner-woche.de/koepenick/c-bauen/vollsperrungen-ab-23-september_a425058
-#: by: https://www.bahninfo-forum.de/read.php?9,800515,811033#msg-811033
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260326 (Umbau der Baustelle Lüdersstr., gesperrt für Autos, Radverkehr frei -> Annahme: keine Einbahnstraße mehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mft2mppu3c2i
-#: source_id: viz2021:13.578224,52.446249,23.09.2024,07:00 (hier nur Kfz-Verkehr, bis 18.10.2024) (bis 21.10.2024) (inaktiv)
-#: source_id: viz2021:13.578256,52.445989,23.09.2024,07:00 (hier keine Erwähnung der Verkehrsarten, bis 18.10.2024) (inaktiv)
-#: source_id: LMS-BR:400264/72 viz2021:13.579723,52.444511, (Landjägerbrücke bis Amtsstr., bis 26.03.2026) (bis 09.04.2026) (inaktiv)
-#: note: nach den Bauarbeiten wird der Straßenzug provisorisch asphaltiert sein (siehe qualitaet_s-orig)
-#: also_indoor: traffic (ex-T,G,H,W)
-#: note: H: falsche Einbahnstraßenrichtung; W: falsche Komplettsperrung
-# REMOVED (während der Asphaltierungsarbeiten)	q4::inwork 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565
-#: last_checked: 2026-04-09 (traffic)
-# REMOVED --- #: check_frequency: 90d (traffic)
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-04-10
-# REMOVED (nicht mehr) --- Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22495,4523 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702 22388,4737 22377,4836
-# REMOVED (hier mittlerweile Sackgasse, Fuß+Radverkehr frei) --- Freiheit: Einbahnstraßenregelung	q4::inwork; 22377,4836 22196,4847
-Landjägerbrücke	q4::inwork 22426,4609 22446,4581 22458,4565 22495,4523
-',
-         'from' => undef,
-         'id' => 3071,
-         'text' => 'Landjägerbrücke: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 09.04.2026, evtl. wird verlängert',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5355,7 +5328,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.entwicklungsstadt.de/neue-mieter-fuer-hochhausprojekt-am-kadewe-bueroflaechen-im-quantum-p1-fast-vergeben/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="20"
+#: osm_watch: way id="362719487" version="21"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2026-04-12
@@ -6942,8 +6915,8 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mcyjddfqrc24 (Sperrung bis 31.03.2026)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
-#: osm_watch: note 3834145 7
-#: osm_watch: note 3834144 9
+#: osm_watch[closed]: note 3834145 7
+#: osm_watch: note 3834144 10
 #: also_indoor: traffic (ex-re-T[wrongly removed],ex-H[wrongly removed],re-G,ex-W[wrongly removed],ex-A[wrongly removed])
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
@@ -7396,12 +7369,12 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029) (inaktiv)
 #: source_id: LMS-BR:308232/72 viz2021:13.41278,52.53261,01.08.2023,07:00 viz2021:13.41278,52.53261, (Metzer Str., bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025) (bis 18.12.2026) (bis 30.04.2026)
 #: source_id: LMS-BR:308231/72 viz2021:13.41245,52.53267,02.01.2025,06:43 viz2021:13.41245,52.53267, (bis 19.12.2025) (bis 18.12.2026) (bis 30.04.2026)
-#: osm_watch: way id="23121446" version="39"
+#: osm_watch: way id="23121446" version="40"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), meistens nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15, 2026-03-02). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2026-04-10 (mapillary) vvv
+#: last_checked: 2026-04-12 (osm) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2027-03-31 (Tsp) vvv
@@ -8857,28 +8830,52 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (bei der Baustelle Radickestr./Nipkowstr. wird nur der Kfz-Verkehr erwähnt, bis Ende März 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm547wnd22g
-#: last_checked: 2026-04-06 (website check) vvv
+#: note: Kabelgrube bis 1. Juni 2026
+#: last_checked: 2026-04-13 (website check) vvv
 #: check_frequency: 14d (website checks) vvv
 #: note: laut rbb Einbahnstraße
 Radickestraße: Sperrung Richtung Adlergestell zwischen Arndtstraße und Nipkowstraße	q4::inwork; 20592,3633 20499,3572
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: also_indoor: traffic (no-T,G[nur Flemmingstr])
-#: last_checked: 2026-04-07 (traffic) vvv
-#: check_frequency: 30d vvv
-Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
-Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
-#: check_frequency ^^^
-#: last_checked ^^^
+#: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen, Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
+# REMOVED --- #: also_indoor: traffic (no-T,G[nur Flemmingstr])
+# REMOVED --- #: last_checked: 2026-04-07 (traffic) vvv
+# REMOVED --- #: check_frequency: 30d vvv
+# REMOVED --- Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
+# REMOVED --- Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 #: note: laut Website möglicherweise bis 16.01.2026; nun: Asphaltierung steht noch aus
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 30.04.2026)
+#: note: Vollsperrung aufgrund Kabelgrube bis Ende Juni 2026
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-04-07 (traffic)
-#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-06-30 (website)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
+# 
+#: note: Vollsperrung bis Juni 2026
+#: also_indoor: traffic (G,no-T,no-W)
+#: next_check: 2026-06-30
+Freystadter Weg: möglicherweise gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
+# 
+#: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
+#: also_indoor: traffic (T,no-G,no-W)
+#: next_check: 2026-06-01
+Gellertstr.: möglicherweise gesperrt	q4::inwork 20148,3490 20237,3392
+# 
+#: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
+#: also_indoor: traffic (T,no-G,no-W)
+#: next_check: 2026-06-01
+Thomas-Müntzer-Str.: möglicherweise gesperrt	q4::inwork 20149,3617 20299,3435
+# 
+#: note: Grube offen bis Ende Juni 2026
+#: also_indoor: traffic (none)
+#: next_check: 2026-06-30
+Lohnauer Steig: möglicherweise gesperrt, genaue Lage unklar	q4::inwork 20790,4114 20852,4157 20829,4211 20770,4277 20614,4381
 # 
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
 # REMOVED --- #: next_check: 2026-03-15 (Sperrung der Gellertstr. ab 16.3.2026, eine Woche der Thomas-Müntzer-Str.) vvv
@@ -8919,7 +8916,7 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 ',
          'from' => undef,
          'id' => 4303,
-         'text' => 'Wassermannstr., Gutenbergstr., Flemmingstr., Radickestr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+         'text' => 'Radickestr., Freystadter Weg, Gellertstr., Wassermannstr. und Umgebung: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9123,7 +9120,21 @@ Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.32451,52.48746,04.06.2025,07:00 (bis 21.08.2025) (inaktiv)
+#: source_id: viz2021:13.32451,52.48746,03.07.2025,07:00 (bis 21.08.2025) (inaktiv)
+#: source_id: LMS-BR:392520/72 viz2021:13.32656,52.48749,08.12.2025,07:00 viz2021:13.32656,52.48749, (Gasteiner Str., bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026) (bis 24.03.2026) (inaktiv)
+#: source_id: LMS-BR:392521/72 viz2021:13.32451,52.48746,08.12.2025,07:00 viz2021:13.32451,52.48746, (Holsteinische Str. (nur Einmündungsbereich?), bis 17.02.2026) (bis 17.03.2026) (bis 23.03.2026) (bis 24.03.2026) (inaktiv)
+# REMOVED --- Gasteiner Str.	q4::inwork 5053,8979 5189,8983
+#: source_id: LMS-BR:404642/72 viz2021:13.324617,52.48873,13.04.2026,06:00 (bis 30.04.2026)
+Holsteinische Str.	q4::inwork 5053,8979 5065,9418
+',
+         'from' => 1776103276,
+         'id' => 4359,
+         'text' => 'Holsteinische Str.: Bauarbeiten, Sperrung zwischen Gasteiner Str. und Güntzelstr., evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende April 2026',
+         'type' => 'handicap',
+         'until' => 1777564800
+       },
        undef,
        undef,
        undef,
@@ -9218,7 +9229,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-03-31 (traffic)
+#: last_checked: 2026-04-13 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
@@ -10011,7 +10022,7 @@ Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603695.php (Bauarbeiten 6. Oktober 2025 bis Ende Januar 2026)
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
-#: osm_watch: note 5206966 2
+#: osm_watch: note 5206966 4
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
 #: last_checked: 2026-04-12 vvv
 #: check_frequency: 14d (traffic) vvv
@@ -10108,14 +10119,14 @@ Kissinger Str.	q3::inwork 6226,5995 6213,6135
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/frost-posse-in-babelsberg-busse-fahren-wochenlang-umleitung--trotz-verschobener-baustelle-15213887.html
 # REMOVED --- #: last_checked: 2026-02-25 (mapillary)
-#: osm_watch: way id="10612721" version="22"
-#: osm_watch: way id="1221275926" version="7"
+#: osm_watch: way id="10612721" version="23"
+#: osm_watch: way id="1221275926" version="8"
 August-Bebel-Str.	q4::inwork -8444,-1691 -8469,-1541
-#: osm_watch: way id="24969126" version="16"
+#: osm_watch: way id="24969126" version="17"
 August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
-#: osm_watch: way id="23044834" version="22"
+#: osm_watch: way id="23044834" version="23"
 Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
-#: osm_watch: way id="1485412396" version="1"
+#: osm_watch: way id="1485412396" version="2"
 Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 ',
          'from' => 1772319600,
