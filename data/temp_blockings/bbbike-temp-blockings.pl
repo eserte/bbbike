@@ -29632,18 +29632,9 @@ EOF
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
-       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Anfang April 2026: Bauzäune können weggeschoben sein)',
+       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Mitte April 2026: Bauzäune können weggeschoben sein)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: alte Bauarbeiten von 2018 - 2022
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
-# REMOVED (fertig) --- #: next_check_id: TREPTOWERPARK-2018 --- #: XXX wann sind die Bauarbeiten fertig? --- #: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen --- #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet --- #: osm_watch: way id="26608603" version="9" --- #: last_checked: 2019-11-02 vvv --- #: check_frequency: 7d vvv
-# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14980,8940
-# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15343,8714 15413,8785 15468,8806 15505,8829
-# REMOVED (hier mittlerweile offen) ---	2::inwork 14918,8813 14883,8823 14852,8799
-# REMOVED (hier mittlerweile offen) ---	2::inwork 14980,8940 15057,8910
-# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
-# REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176947.php (kein Datum genannt)
 #: by: https://berliner-abendblatt.de/2022/02/16/treptower-park-rodung-und-neupflanzung/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1181109.php
@@ -29652,12 +29643,26 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1243634.php (fertig)
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/ueber-den-bezirk/treptower-park/artikel.1181979.php
-# REMOVED ---	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-04-05 vvv
+#: last_checked: 2026-04-14 vvv
 #: check_frequency: 14d vvv
+#: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
+Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
+zwischen Karpfenteich und Sowjetisches Ehrenmal: gesperrt	2::inwork 15181,8967 15245,8916
+zwischen Karpfenteich und Sowjetisches Ehrenmal: kann gesperrt sein	2::inwork 15159,8934 15181,8967
+#: check_frequency ^^^
+#: last_checked ^^^
+# REMOVED --- #: note: alte Bauarbeiten von 2018 - 2022 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
+# REMOVED (fertig) --- #: next_check_id: TREPTOWERPARK-2018 --- #: XXX wann sind die Bauarbeiten fertig? --- #: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen --- #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet --- #: osm_watch: way id="26608603" version="9" --- #: last_checked: 2019-11-02 vvv --- #: check_frequency: 7d vvv
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14980,8940
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15343,8714 15413,8785 15468,8806 15505,8829
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14918,8813 14883,8823 14852,8799
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14980,8940 15057,8910
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
+# REMOVED ---	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 # REMOVED (hier mittlerweile wieder offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 14879,9433 14889,9381 14898,9364 14955,9294 15025,9171
 # REMOVED (offen) --- entlang des Sowjetischen Ehrenmals	2::inwork 15025,9171 15154,9106 15190,9027
 # REMOVED (hier mittlerweile wieder offen) --- Zugang zum Sowjetischen Ehrenmal hier nicht möglich	2::inwork 14889,9381 14824,9390
@@ -29668,16 +29673,10 @@ EOF
 # REMOVED (realisiert) --- #: XXX hier wird vermutlich eine wassergebundene Decke entstehen --- Treptower Park - Am Treptower Park	2::inwork 14320,9530 14286,9457 14257,9432
 # REMOVED --- #: XXX laut Ausschilderung bis 25.07.2025 gesperrt, dauert vermutlich länger --- #: add_fragezeichen: Ist der Verbindungsweg Puschkinallee - Am Treptower Park noch immer gesperrt?
 # REMOVED (offen) --- Puschkinallee - Am Treptower Park: Engstellen	q3::inwork 14318,9688 14316,9542 14320,9530
-#: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind manchmal weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
 # REMOVED (offen) ---	2::inwork 15159,8934 15223,8893 15235,8841 15298,8781
 # REMOVED (offen) ---	2::inwork 15298,8781 15343,8714
 # REMOVED (passierbar) ---	2::inwork 15343,8714 15378,8668
-	2::inwork 15181,8967 15245,8916
-	2::inwork 15159,8934 15181,8967
 # REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
-#: check_frequency ^^^
-#: last_checked ^^^
 EOF
      },
      { from  => 1538258400, # 2018-09-30 00:00
@@ -36251,12 +36250,13 @@ EOF
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitte 2026 oder Mitte 2027?
-#: last_checked: 2026-03-25 vvv
+#: last_checked: 2026-04-14 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
 #: osm_watch: way id="31824547" version="28"
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
+Niemetzstr.: etwa 80m der Fahrbahn gesperrt	q3::inwork 13797,7267 13891,7107
 #: osm_watch: way id="824500931" version="10"
 Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 # REMOVED (nicht mehr) --- Mittelbuschweg: Einbahnstraßenregelung	q4::inwork; 13575,7200 13484,7140 13500,7018
@@ -36566,7 +36566,7 @@ EOF
 #: osm_watch: note 5093384 4
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-12
+#: last_checked: 2026-04-14
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -49099,7 +49099,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-04-01 vvv
+#: last_checked: 2026-04-14 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
@@ -50298,7 +50298,7 @@ EOF
 #: osm_watch: note 4924394 5
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-04-12 vvv
+#: last_checked: 2026-04-14 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -52546,6 +52546,7 @@ EOF
        text  => 'Bödikerstr.: Bauarbeiten zwischen Corinthstr. und Persiusstr., Sperrung, vom 07.04.2026 07:00 bis 29.05.2026 23:59',
        type  => 'handicap',
        data  => <<'EOF',
+#: note: siehe auch fragezeichen-Eintrag
 #: source_id: LMS-BR:404055/72 viz2021:13.46315,52.49949,07.04.2026,07:00 (bis 29.05.2026)
 	q4::inwork 14447,10491 14490,10610
 EOF
@@ -52574,11 +52575,14 @@ EOF
      },
      { from  => 1775758530, # 2026-04-09 20:15
        until => 1785880800, # 2026-08-05 00:00
-       text  => 'Westerwaldstr.: Bauarbeiten zwischen Erzgebirgsweg und Pionierstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 04.08.2026 17:00',
+#      text  => 'Westerwaldstr.: Bauarbeiten zwischen Erzgebirgsweg und Pionierstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 04.08.2026 17:00',
+       text  => 'Westerwaldstr.: Bauarbeiten zwischen Erzgebirgsweg und Hermann-Schmidt-Weg, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 04.08.2026 17:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:404324/72 viz2021:13.17839,52.54934,-1 (bis 05.08.2026)
-	q4::inwork -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5061,15847 -5036,15923 -5019,15970 -4951,16116
+#: source_id: LMS-BR:404324/72 viz2021:13.17839,52.54934,-1 (hier bis Pionierstr., was vermutlich zu weit ist, bis 05.08.2026)
+#: source_id: LMS-BR:388895/72 viz2021:13.17839,52.54934, (hier nur bis Hermann-Schmidt-Weg, was realistischer ist, bis 04.08.2026)
+	q4::inwork -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5061,15847
+# REMOVED (hier vermutlich nicht) ---	q4::inwork -5061,15847 -5036,15923 -5019,15970 -4951,16116
 EOF
      },
      { from  => 1775758590, # 2026-04-09 20:16
@@ -52592,13 +52596,50 @@ EOF
      },
      { from  => 1775939275, # 2026-04-11 22:27
        until => 1793487600, # 2026-11-01 00:00
-       text  => 'Wuhlheide: Weg zwischen Hegemeisterweg/Treskowallee und Modellpark ("Kastanienallee") kann wegen Leitungsarbeiten gesperrt sein, voraussichtlich bis Oktober 2026',
+       text  => 'Wuhlheide: Weg zwischen Hegemeisterweg/Treskowallee und Modellpark ("Kastanienallee") kann wegen Leitungsarbeiten gesperrt sein, voraussichtlich bis Ende Oktober 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.entwicklungsstadt.de/treptow-koepenick-volkspark-wuhlheide-baustelle-europaradweg/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1660792.php (1600m, also wesentlich länger als die Kastanienallee, bis Ende Oktober 2026)
+#: by: https://www.nbb-netzgesellschaft.de/presse/pressemitteilungen/beitrag/erneuerung-der-gasleitung-schont-vegetation-am-europa-radweg/
 #: osm_watch: way id="10856020" version="51"
-#: next_check: 2026-10-01
+#: next_check: 2026-10-31 (BA TK)
 	2::inwork 18437,7752 19045,6959
+EOF
+     },
+     { from  => 1772319600, # 2026-03-01 00:00
+       until => 1811800800, # 2027-06-01 00:00
+       text  => 'Niemetzstr., Böhmischer Platz: Leitungsarbeiten, Fahrbahn gesperrt, Gesamtbaumaßnahme bis Mai 2027',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: note: laut Baustellenschild der Wasserbetriebe dauern die Bauarbeiten im Bauabschnitt Böhmische Straße zwischen Kanner Straße und Niemetzstraße von März 2026 bis Mai 2027 -> erwartete Änderungen des aktuell gesperrten Abschnitts, deshalb check_frequency=45d
+#: last_checked: 2026-04-14 vvv
+#: check_frequency: 45d vvv
+#: next_check: 2027-05-31 (Baustellenschild der Wasserbetriebe) vvv
+Niemetzstr.	q4::inwork 13583,7642 13571,7588 13581,7586
+Niemetzstr.: hier etwa auf 75m Länge gesperrt	q3::inwork 13581,7586 13702,7418
+Böhmischer Platz	q4::inwork 13571,7588 13553,7594
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1776194113, # 2026-04-14 21:15
+       until => 1780264800, # 2026-06-01 00:00
+       text  => 'Königsheideweg: Wasserrohrbruch an der Haushoferstr., Sperrung der Fahrbahn, evtl. sind auch die Gehwege gesperrt, voraussichtlich bis Mai 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mj3a42tvr22c
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3jhzev7nn7npnvgjodpz73bp/bafkreigxey6zts3zykrxg6ykoe472an4iuxo7ckpmp775jxxzez5ytxgom (möglicherweise ist der südliche Gehweg frei?)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mje5slc5bc2e (kurzer gesperrter Abschnitt (<100m), möglicherweise noch 3-4 Wochen gesperrt, also bis Mitte Mai 2026)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreig5ow7bkpljf3l3jir4cwrdxwxgm7aepe7i2fpobf43g4x4rlljry (nun ist der nördliche Gehweg frei)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mjeegagzbk2e
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1660827.php (hier: auch Gehwege gesperrt? Dauer 4-6 Wochen)
+#: source_id: LMS-BR:404340/72 viz2021:13.50053,52.44753, (kein Endedatum)
+#: last_checked: 2026-04-13 (VIZ)
+#: check_frequency: 21d
+#: next_check: 2026-05-31
+	2::inwork 17115,4757 17037,4794
 EOF
      },
     );

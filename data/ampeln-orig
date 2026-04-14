@@ -21,7 +21,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-04-06
+#: last_checked: 2026-04-14
 #: check_frequency: 60d
 Michaelbrücke	F::inwork 11676,11839
 # 
@@ -151,7 +151,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
-#: last_checked: 2026-04-01
+#: last_checked: 2026-04-14 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20251231
@@ -3976,6 +3976,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X -284,14738
 	F 609,14429
 #: note: Anforderungsampel für Radfahrer vom Wohlrabedamm kommend
+#: note: Anforderungsampel für linksabbiegende Radfahrer auf dem Radweg Siemensdamm -> Wohlrabedamm, O->S
 	X 1709,14243
 	X 7979,20528
 	F 198,4580
@@ -4214,7 +4215,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2026-03-14
+#: last_checked: 2026-04-14 (webcam)
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -4550,6 +4551,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 	F 22902,2681
 # 
 #: note: Anforderung für Radfahrer im Zuge des A100-Betriebswegs
+#: XXX_prog gilt nicht für rechtsabbiegende Radfahrer von der Sonnenallee auf den Betriebsweg (SO->N)
 	X 14379,7372
 	X 14323,7403
 # 
