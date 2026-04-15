@@ -1211,7 +1211,40 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/ (Aktualisierungen nur bis 2020)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.921158.php (Absage 2020)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html (geplant für 8. und 9. Mai 2021)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20210418 (abgesagt)
+#: by: https://www.laubinger.de/event/30-fest-auf-der-boelschestrasse/ (geplant für 7.05.2022 - 8.05.2022)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20230325 (wegen Bauarbeiten für 2023 abgesagt)
+#: by: https://www.facebook.com/events/1572185126967043/?ref_source=NEWS_FEED&__hwl=1&_rdr (20.9.-22.9.2024)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-traditionsfeste-kein-festumzug-durch-die-kopenicker-altstadt-13344679.html (2025 nur auf dem Marktplatz Friedrichshagen?)
+#: by: https://www.laubinger.de/event/31-fest-auf-der-boelsche-geplant/ (fällt 2025 aus)
+#: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.624675,52.451034,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
+	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
+',
+         'from' => 1778623200,
+         'id' => 964,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              5,
+                              'start',
+                              '2025-05-13T00:00:00'
+                            ]
+                          ],
+         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (14. bis 17. Mai 2024)',
+         'type' => 'gesperrt',
+         'until' => 1779055200
+       },
        undef,
        undef,
        undef,
@@ -2158,10 +2191,11 @@ Hauptallee	2::night -14389,-859 -14910,-903 -15684,-966
        },
        {
          'data' => '#: tempex: night vvv
-	2::night 3332,12742 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595
+	2::night 3332,12742 3233,12757 3127,12815 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595
 	2::night 2953,13489 2925,13516 2858,13530
 	2::night 2906,13610 2876,13594 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 	2::night 2625,13229 2534,13214 2466,13232 2419,13232 2331,13173 2285,13023
+	2::night 3261,12670 3243,12681 3251,12701 3221,12742 3233,12757
 #: tempex ^^^
 ',
          'from' => undef,
@@ -2602,7 +2636,17 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 247300035 (bis 02.03.2024) (inaktiv)
+#: source_id: 267301326 (bis 06.06.2026)
+	2::inwork 48237,70892 48162,70928 48093,70968
+',
+         'from' => 1779861600,
+         'id' => 1975,
+         'text' => 'Kerkow - Glambeck: Bahnübergang gesperrt, vom 28.05.2026 08:00 Uhr bis 06.06.2026 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1780761600
+       },
        undef,
        undef,
        undef,
@@ -4906,7 +4950,35 @@ zwischen Karpfenteich und Sowjetisches Ehrenmal: kann gesperrt sein	2::inwork 15
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: CHARLOTTENBURGERUFER-2024
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.859708.php ("Restarbeiten ... unterhalb der Brücke ... bis Ende 2019")
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/schlossbruecke-wieder-befahrbar_a238318 (alte Sperrung bis 2019)
+# REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
+# REMOVED --- #: osm_watch: way id="72660098" version="8" --- #: XXX laut osm offen
+# REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
+#: osm_watch[closed]: note 4210973 7
+#: osm_watch: note 200739 2
+#: osm_watch: node id="27306736" version="13"
+# REMOVED --- #: osm_watch: node id="3005701527" version="3"
+#: priority: #A
+#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
+#: last_checked: 2026-04-15
+#: check_frequency: 60d
+#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+	2::inwork 3233,12757 3332,12742
+',
+         'from' => undef,
+         'id' => 3124,
+         'text' => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, Ende unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -7843,7 +7915,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-04-08 vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -8694,7 +8766,7 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
        },
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
-#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026)
+#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026) (bis 30.04.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m)
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -8859,8 +8931,9 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 # 
 #: note: Vollsperrung bis Juni 2026
 #: also_indoor: traffic (G,no-T,no-W)
+#: last_checked: 2026-04-13 (mapillary)
 #: next_check: 2026-06-30
-Freystadter Weg: möglicherweise gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
+Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
 # 
 #: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
 #: also_indoor: traffic (T,no-G,no-W)
@@ -9290,7 +9363,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-04-09 (mapillary)
+#: last_checked: 2026-04-15
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9342,15 +9415,15 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
        },
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecken-pulvermuehle-iv-vii-und-viii/ (geplante Bauzeit: Juni 2025 bis August 2025) (mittlerweile: Mitte August bis Mitte Dezember 2025) (mittlerweile: Oktober 2025 bis April 2026)
+         'data' => '#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecken-pulvermuehle-iv-vii-und-viii/ (geplante Bauzeit: Juni 2025 bis August 2025) (mittlerweile: Mitte August bis Mitte Dezember 2025) (mittlerweile: Oktober 2025 bis April 2026) (mittlerweile bis Mai 2026)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1582442.php (Sperrung von IV und VIII ab Juli 2025)
-#: osm_watch: note 4841625 4
+#: osm_watch: note 4841625 5
 #: note: Pulvermühle VII bereits seit Sommer 2024 (oder Januar 2023?) gesperrt
 #: note: nicht besonders routingrelevant; keine der drei Brücken wurde in den letzten 12 Monaten bei BBBike-Websuchen vorgeschlagen
 #: add_fragezeichen: Sind die Brücken noch immer gesperrt? vvv
 #: last_checked: 2025-08-26 (osm note) vvv
 # REMOVED --- #: check_frequency: 180d vvv
-#: next_check: 2026-04-30 (SenMVKU-Seite) vvv
+#: next_check: 2026-05-31 (SenMVKU-Seite) vvv
 Pulvermühle VII	2::inwork -1848,15535 -1903,15333
 Pulvermühle IV	2::inwork -1848,15317 -1762,15291
 Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
@@ -9361,7 +9434,7 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
 ',
          'from' => undef,
          'id' => 4400,
-         'text' => 'Fußgängerbrücken Pulvermühle IV, VII und VIII: wegen Brückenschäden gesperrt, voraussichtlich bis April 2026',
+         'text' => 'Fußgängerbrücken Pulvermühle IV, VII und VIII: wegen Brückenschäden gesperrt, voraussichtlich bis Mai 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9632,7 +9705,7 @@ Spektegrabensteg	2::inwork -7228,15933 -7243,15943
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-03-16
+#: last_checked: 2026-04-15
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 ',
@@ -9882,9 +9955,9 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'until' => 1798736400
        },
        {
-         'data' => '#: osm_watch: note 4953648 8
+         'data' => '#: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-09 (mapillary) (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
+#: last_checked: 2026-04-15 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -9899,7 +9972,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="6"
-#: last_checked: 2026-03-16
+#: last_checked: 2026-04-15
 #: check_frequency: 60d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
@@ -9959,7 +10032,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: osm_watch: way id="1409889274" version="12"
 #: osm_watch: way id="1430307301" version="5"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-04-04 (osm) vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 # REMOVED (mittlerweile wieder offen, wegen der Bauarbeiten an der Nordhafenbrücke) ---	2::inwork 7662,14579 7696,14577 7733,14570
@@ -10006,17 +10079,18 @@ Hönower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
 #: add_fragezeichen: Ist der Uferweg unter dem Siemenssteg weiterhin gesperrt?
 # REMOVED --- #: XXX: Stimmt die Einbahnstraßenrichtung? Und warum steht in der VIZ-Verkehrsmeldung "ab Alt-Lietzow", müsste es nicht "ab Arcostr." heißen?
 #: note: Evtl. steht die Sperrung des Uferwegs auch mit der Einbahnstraßenregelung am Iburger Ufer im Zusammenhang?
-#: last_checked: 2026-04-10 (osm change)
+#: last_checked: 2026-04-15
 #: check_frequency: 60d
-#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung zum Iburger Ufer)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung zum Iburger Ufer, wird vermutlich verlängert)
+# REMOVED --- #: next_check: 2027-09-30 (Baustellenschild)
 # REMOVED (hier für Radfahrer frei in Gegenrichtung) --- Iburger Ufer	q4::inwork; 3889,12591 4085,12614 4129,12619 4160,12612 4289,12576
 Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 ',
          'from' => 1763272800,
          'id' => 4503,
-         'text' => 'Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis April 2026, evtl. wird verlängert',
+         'text' => 'Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis Herbst 2027',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1822341599
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603695.php (Bauarbeiten 6. Oktober 2025 bis Ende Januar 2026)
@@ -10282,6 +10356,7 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
 #: by: https://www.tagesspiegel.de/berlin/neubau-dauert-bis-2028-berliner-dunckerbrucke-ab-1-april-gesperrt-15417132.html
 #: by: https://www.entwicklungsstadt.de/ersatzneubau-der-dunckerbruecke-beginnt-planung-bauphasen-verkehrsfuehrung/
 #: by: https://www.berliner-zeitung.de/news/prenzlauer-berg-dunckerbruecke-ab-april-gesperrt-li.10027810
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/fehlende-akzeptanz-fur-vollsperrung-wie-gefahrlich-ist-der-illegale-verkehr-auf-dieser-maroden-berliner-ringbahnbrucke-15471271.html
 #: source_id: LMS-BR:403521/72 viz2021:13.42326,52.54529,01.04.2026,07:00 (bis 14.06.2028)
 #: osm_watch: note 5163943 2
 #: XXX: Dunckerbrücke: Ersatzneubau
@@ -10322,18 +10397,7 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
          'type' => 'handicap',
          'until' => 1798736400
        },
-       {
-         'data' => '#: source_id: LMS-BR:399098/72 viz2021:13.421275,52.551604,16.02.2026,06:00 (bis 15.04.2026)
-Kuglerstr.	q4::inwork 11467,16238 11543,16207
-#: source_id: LMS-BR:399099/72 viz2021:13.42011,52.55189,16.02.2026,06:00 (bis 15.04.2026)
-Lewaldstr.	q4::inwork 11401,16265 11470,16394
-',
-         'from' => 1771110000,
-         'id' => 4536,
-         'text' => 'Kuglerstr.: Bauarbeiten zwischen Glaßbrennerstr. und Scherenbergstr. sowie in der Lewaldstr., Sperrungen, evtl. sind auch Radfahrer betroffen, vom 16.02.2026 06:00 bis 15.04.2026',
-         'type' => 'handicap',
-         'until' => 1776268800
-       },
+       undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260217
 #: source_id: LMS-BR:399332/72 viz2021:13.43881,52.53783,18.02.2026,06:00 (bis 31.08.2026)
@@ -10881,6 +10945,16 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'text' => 'Königsheideweg: Wasserrohrbruch an der Haushoferstr., Sperrung der Fahrbahn, evtl. sind auch die Gehwege gesperrt, voraussichtlich bis Mai 2026',
          'type' => 'gesperrt',
          'until' => 1780264800
+       },
+       {
+         'data' => '#: source_id: LMS-BR:404867/72 viz2021:13.43789,52.54463,15.04.2026,07:00 (bis 30.04.2026)
+	q4::inwork 12556,15518 12605,15491
+',
+         'from' => 1776142800,
+         'id' => 4585,
+         'text' => 'Erich-Weinert-Str.: Kraneinsatz zwischen Naugarder Str. und Hosemannstr., evtl. ist auch der Radverkehr von der Sperrung betroffen, vom 15.04.2026 07:00 bis 30.04.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1777561200
        }
      
 );

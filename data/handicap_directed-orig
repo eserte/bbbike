@@ -547,16 +547,14 @@ Marggraffbrücke: Radfahrer Richtung Nordwesten müssen den gegenüberliegenden Rad
 #: by: https://www.tagesspiegel.de/berlin/ein-jahr-lang-einschrankungen-an-der-nordhafenbrucke-in-berlin-mitte-wird-ab-dienstag-gebaut-15310076.html
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
 #: osm_watch: note 5189408 3
-#: osm_watch: node id="13704066872" version="1"
-#: osm_watch: node id="13704066873" version="1"
-#: last_checked: 2026-03-16 vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden Radweg wechseln	DH:t=30 7829,14665 7733,14570 7711,14548
-Überquerung der Sellerstr. mit Ampel	DH:tl 7696,14577 7733,14570 7753,14528
-Überquerung der Sellerstr. mit Ampel	DH:tl 7696,14577 7733,14570 7829,14665
-Überquerung der Sellerstr. mit Ampel	DH:tl 7753,14528 7733,14570 7696,14577
-Überquerung der Sellerstr. mit Ampel	DH:tl 7753,14528 7733,14570 7711,14548
+# REMOVED (-> ampeln-orig) --- Überquerung der Sellerstr. mit Ampel	DH:tl 7696,14577 7733,14570 7753,14528
+# REMOVED --- Überquerung der Sellerstr. mit Ampel	DH:tl 7696,14577 7733,14570 7829,14665
+# REMOVED --- Überquerung der Sellerstr. mit Ampel	DH:tl 7753,14528 7733,14570 7696,14577
+# REMOVED --- Überquerung der Sellerstr. mit Ampel	DH:tl 7753,14528 7733,14570 7711,14548
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

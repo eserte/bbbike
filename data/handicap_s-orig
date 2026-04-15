@@ -83,9 +83,9 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="30"
 #: osm_watch: way id="1072662717" version="34"
-#: last_checked: 2026-04-11
+#: last_checked: 2026-04-15
 #: check_frequency: 90d
-#: next_check: 2026-12-31 (entwicklungsstadt)
+#: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
@@ -321,7 +321,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: note: laut Baustellenschild bis 01/2026
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-04-11 (traffic) vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
 #: source_id: LMS-BR:392914/72 viz2021:13.35079,52.53931, (bis 31.03.2026) (bis 30.04.2026)
@@ -425,7 +425,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-15
 #: check_frequency: 30d
 #: next_check: 2026-04-24 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2030-12-31 (entwicklungsstadt)
@@ -1313,8 +1313,8 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026)
-#: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026)
+#: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
 #: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
 #: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
@@ -1327,9 +1327,9 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-04-11 (traffic) vvv
-#: check_frequency: 10d vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
-#: next_check: 2026-04-20 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
 #: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
 # REMOVED (mittlerweile kommt man zumindest bis zur Kreuzung auf der Fahrbahn vorbei an den Absperrungen) --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635
 Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
@@ -1620,7 +1620,7 @@ Tiergarten: einige Fußgänger	q1 8172,11679 8189,11722 8210,11775 8244,11878 8327
 Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/nordwegbruecke/ (noch keine geplante Bauzeit)
-#: last_checked: 2025-12-04
+#: last_checked: 2026-04-15
 #: check_frequency: 120d
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger, Engstelle an der Nordwegbrücke	q3 7661,12229 7653,12227
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 7653,12227 7449,12216 7288,12156 7215,12129 6812,12057
@@ -2001,6 +2001,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: by: https://entwicklungsstadt.de/wellenbad-am-spreewaldplatz-veraenderungen-beim-umfang-der-umbauarbeiten/
 #: by: https://www.entwicklungsstadt.de/spreewaldbad-in-kreuzberg-sanierung-laeuft-wiedereroeffnung-fuer-2027-geplant/ (bis III. Quartal 2027)
 #: by: https://www.entwicklungsstadt.de/wellenbad-kreuzberg-sanierung-macht-fortschritte/ (bis Ende 2027)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/dauerbaustelle-berliner-hallenbader-stadtbad-schoneberg-soll-mitte-2026-wieder-offnen--verzogerungen-beim-wellenbad-am-spreewaldplatz-15470876.html
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
@@ -3291,7 +3292,7 @@ Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2
 (Haeftenzeile - Weg über der U-Bahn): Fußgänger	q1 2135,14475 2126,14392
 #: XXX_prog BS auf Nordseite
 (Wohlrabedamm - Reisstr.): Bordstein	q2 1311,14191 1314,14207
-Spreeufer: unter der Rohrdammbrücke sehr eng	q3 1123,13523 1186,13529
+Spreeufer: unter der Rohrdammbrücke sehr eng	q3 1123,13523 1142,13525 1186,13529
 (Uranusstr. - Siriusstr.): Schulgelände, teilweise ist das Radfahren explizit verboten	q4 18827,-537 18906,-316
 (Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
 (Parkweg im Business Park Berlin): Fußgänger	q1 20799,-1272 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
@@ -4804,7 +4805,7 @@ Windhuker Str.: einige Fußgänger	q1 5426,16539 5712,16245 5748,16235
 (Weg im Hochzeitspark): Fußgänger, geschützte Grünanlage, Bordstein	q2 20547,16485 20553,16403 20583,16317
 Voigtstr.: einige Fußgänger	q4+ 14836,12826 14835,12801
 (Uferweg an der Scharfen Lanke): Fußgänger	q1 -4204,11432 -4246,11438
-(Gorgasring - Nonnendammallee): gemeinsamer Geh- und Radweg, nicht besonders breit	q2 -695,14819 -676,14773 -679,14743 -941,14637
+(Gorgasring - Nonnendammallee): gemeinsamer Geh- und Radweg, nicht besonders breit	q2 -695,14819 -676,14773 -679,14743 -928,14643
 (Uferweg an der Stockholmer Str.): Fußgänger	q2 8982,17299 8957,17217 8870,17073
 Heubuder Brücke: Fußgänger	q2 9017,17290 8982,17299 8973,17301
 (Rudower Höhe): Fußgänger, geschützte Grünanlage	q4 18245,1699 18300,1612 18347,1557 18405,1453 18450,1417 18491,1413
@@ -5692,6 +5693,8 @@ Warnitzer Str.: Kurven, unübersichtlch	q1 18141,17960 18041,18073 17962,18010 17
 (Teupitzer Park): Fußgänger	q2 23572,15880 23579,15824 23596,15697
 (Teupitzer Str. - Zossener Str./Kastanienallee): Fußgänger	q3 23573,15627 23617,15594
 # 
+(Dihlmannstr./Im Heidewinkel - Freibad Jungfernheide): einige Fußgänger	q1 1065,15229 1089,15184 1132,15161 1265,15192 1416,15190
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -5781,6 +5784,8 @@ Friedrichstr. (Lichterfelde): Fuß- und Radweg	q1 2890,3561 2717,3600
 # REMOVED (Rampe ist jetzt in gesperrt-orig) --- Rampen	q3 1610,13380 1551,13377
 # REMOVED (elsewhere more accurate) --- (Krankenhausgelände): eher schmaler Gehweg	q1 2688,12701 2663,12699 2663,12695 2561,12686
 (Schloßpark Charlottenburg, westlicher Weg): Fußgänger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
+(Schloßpark Charlottenburg): Fußgänger	q1 2953,13489 2925,13516 2858,13530
+(Luisenplatz - Schloßpark Charlottenburg): Fußgänger, teilweise schmal, kurvig	q3 3275,12667 3261,12670 3243,12681 3251,12701 3221,12742 3233,12757
 (Uferweg): teilweise relativ schmal, Fußgänger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
 #: note: Privatweg, an einer Stelle Nicht-StVO-konforme "Radfahren verboten"-Schilder
 Sparrstr. - Triftstr.: Gehweg	q3 7281,15175 7248,15296
@@ -5993,8 +5998,9 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Südpark): Fußgänger	q1 -4033,11786 -4030,11794 -4029,11803 -4027,11818 -4090,11954 -4095,12006 -4093,12040 -4092,12062 -4106,12100 -4144,12187 -4169,12371
 #: note: Grünanlagenschild ohne Zusatzschilder
 (Glühwürmchenweg - Pionierstr.): einige Fußgänger	q1 -6014,16485 -6048,16292
-Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
-Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2658,13694 2402,13602 2321,13572
+Schloßpark Charlottenburg: Fußgänger	q1 3233,12757 3127,12815 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595 2920,13612
+Spreeweg: unter der Bahnbrücke eng	q3 2920,13612 2908,13656 2902,13665
+Spreeweg: schmal und unübersichtlich	q2 2902,13665 2829,13709 2760,13716 2663,13700 2402,13602 2321,13572
 #: note: Abstufung wegen des leicht kurvigen Verlaufs
 Lefèvrestr.: enge Straße	q1+ 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
 # XXX removed by srt: Lefèvrestr.: enge Straße	q1 5215,6643 5360,6642
@@ -6185,7 +6191,7 @@ Vineta Platz: Fußgänger	q2 9904,15014 9988,15057 10071,15096
 Ruppiner Str.: Fußgänger	q1 9904,15014 9918,14986 9942,14936
 Swinemünder Str.: Fußgänger	q1 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
 (Unterführung Schloßbrücke): Fußgänger, teilweise eng	q2 3396,12741 3332,12742
-(Unterführung Schloßbrücke): Fußgänger, sehr eng	q3 3332,12742 3231,12749
+(Unterführung Schloßbrücke): Fußgänger, sehr eng	q3 3332,12742 3233,12757
 Sesenheimer Str.: Fußgänger, Bordsteine	q2 3864,11484 3874,11380
 #: confirmed_by: srt
 (südliches Spreeufer): Fußgänger	q2 5203,12850 5184,12937 5176,12968 5086,13052 4994,13092 4915,13114 4822,13109 4748,13092 4710,13069 4644,13003 4619,12975 4590,12800 4749,12689

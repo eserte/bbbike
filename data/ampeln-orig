@@ -6,6 +6,23 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: NORDHAFENBRUECKE-2026
+#: osm_watch: node id="13704066872" version="1"
+#: osm_watch: node id="13704066873" version="1"
+#: note: manchmal (oder immer?) bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20)
+#: last_checked: 2026-04-15
+#: check_frequency: 90d
+#: next_check: 2028-03-03
+Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
+# 
+#: next_check_id: CHARLOTTENBURGERUFER-2024
+#: osm_watch: note 5200746 2
+#: note: Anforderungsampel
+#: last_checked: 2026-04-15
+#: check_frequency: 60d
+#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
+# 
 #: next_check_id: BEHREN-2026
 #: last_checked: 2026-03-27
 #: next_check: 2026-07-17
@@ -38,7 +55,7 @@ Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
 #: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026)
-#: last_checked: 2026-04-12
+#: last_checked: 2026-04-15
 #: check_frequency: 90d
 #: next_check: 2026-04-24 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260213
@@ -385,7 +402,7 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # 
 # REMOVED --- #: source_id: viz2021:13.54877,52.416283,15.08.2023,09:00 (bis 06.09.2023) (bis 19.09.2023) (inaktiv) --- #: note: zwischen Wendenstr. und Germanenplatz --- #: next_check: 2023-09-19 --- #: valid: -20230919 --- Germanenstr.: Gegenverkehrsregelung	X::inwork::alternating 20381,1390
-# REMOVED --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1355528.php --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rohrdammbruecke/ --- #: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/rohrdammbruecke-wird-saniert_a389916 --- #: note: Gilt vermutlich nur für den Radverkehr Richtung Norden (gesonderte Radspur); Richtung Süden weiterhin der alte Hochbordradweg --- #: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 18.09.2023, weitere Arbeiten im Anschluss) (bis 30.11.2023) (bis 31.10.2023) (inaktiv) vvv --- #: next_check: 2023-10-31 vvv --- #: valid: -20231031 vvv --- Rohrdammbrücke: Gegenverkehrsregelung	X::inwork::alternating 1170,13521 --- Rohrdammbrücke: Gegenverkehrsregelung	X::inwork::alternating 1124,13599 --- #: valid ^^^ --- #: next_check ^^^ --- #: source_id ^^^
+# REMOVED --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1355528.php --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/rohrdammbruecke/ --- #: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/rohrdammbruecke-wird-saniert_a389916 --- #: note: Gilt vermutlich nur für den Radverkehr Richtung Norden (gesonderte Radspur); Richtung Süden weiterhin der alte Hochbordradweg --- #: source_id: viz2021:13.268403,52.52926,04.08.2023,08:00 (bis 18.09.2023, weitere Arbeiten im Anschluss) (bis 30.11.2023) (bis 31.10.2023) (inaktiv) vvv --- #: next_check: 2023-10-31 vvv --- #: valid: -20231031 vvv --- Rohrdammbrücke: Gegenverkehrsregelung	X::inwork::alternating 1170,13521 --- Rohrdammbrücke: Gegenverkehrsregelung	X::inwork::alternating 1119,13598 --- #: valid ^^^ --- #: next_check ^^^ --- #: source_id ^^^
 # REMOVED --- #: by: https://nitter.net/VIZ_Berlin/status/1683357845155115010#m --- #: by: https://nitter.net/pic/orig/media%2FF1fwqZtXgA4eKSM.jpg --- #: source_id: viz2021:13.541546,52.423078,24.07.2023,09:00 (bis 21.08.2023) (bis 25.08.2023) (inaktiv) --- #: next_check: 2023-08-25 --- #: valid: -20230825 --- Köpenicker Str.: Gegenverkehrsregelung	X::inwork::alternating 19933,2078
 # REMOVED --- #: note: Richtung Nordwesten kann die Ampel auf dem Radweg umfahren werden, Richtung Südosten wird der Radverkehr auf die Fahrbahn geführt; außerdem Einschränkungen an der Anbindung Höhenweg --- #: XXX Fürstenbrunner Weg (Westend) in beiden Richtungen in der Nähe der Brücke über die Eisenbahn: Tiefbauarbeiten, Gegenverkehrsregelung mit Baustellenampel, vom 25.03.2024 11:00 bis 26.04.2024 17:00 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772172398252507477 --- #: by: https://pbs.twimg.com/media/GJgFZxTW0AAoCrL?format=jpg&name=medium --- #: source_id: viz2021:13.274541,52.527881,25.03.2024,11:00 (bis 26.04.2024) (inaktiv) --- #: next_check: 2024-04-26 --- #: valid: -20240426 --- Fürstenbrunner Weg: Gegenverkehrsregelung	X::inwork::alternating 1610,13380
 # REMOVED --- #: source_id: viz2021:13.209709,52.603468,24.07.2023,08:00 (bis 24.11.2023) (inaktiv) (bis 16.02.2024) (inaktiv) --- #: next_check: 2024-02-16 --- #: valid: -20240216 --- Alt-Heiligensee: Gegenverkehrsregelung	X::inwork::alternating -3020,21786
@@ -417,15 +434,15 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork::alternating 22192,6659
 # REMOVED (Ampel steht noch, ist aber ausgeschaltet, vermutlich dauerhaft) --- #: next_check_id: BAUMSCHULEN-2023 --- #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023) (bis 08.01.2024) (bis 29.02.2024) (bis 23.03.2024) (bis 22.03.2024) (inaktiv) --- #: source_id[inactive]: bvg2021:265#BVG314924_0 (bis 23.03.2024) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1385383.php (Abschluss der Bauarbeiten bis Jahresende 2023) --- #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrbahn-der-baumschulenstrasse-wird-neu-gemacht_a400218 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7361 (Antrag auf Errichtung einer Querungshilfe (Zebrastreifen? Ampel?) an dieser Stelle) --- #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet) --- allerdings steht die Ampel nach Ende der Sperrung noch --- #: osm_watch: way id="383023440" version="19" --- #: last_checked: 2024-04-07 --- #: check_frequency: 14d --- #: next_check: 2024-03-22 --- #: valid: -20240322 --- X::inwork 16328,7005
 # 
-#: next_check_id: SONYCENTER-2023
-#: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
-#: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
-#: note: Länge der Gegenverkehrstrecke ist ca. 80m
-#: last_checked: 2026-03-27
-# REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: next_check: 2024-07-01
-# REMOVED --- #: valid: -20240701
-Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
+# REMOVED --- #: next_check_id: SONYCENTER-2023
+# REMOVED --- #: by: https://entwicklungsstadt.de/sony-center-am-potsdamer-platz-investition-und-umbau/ (bis Ende 2023)
+# REMOVED --- #: XXX Möglicherweise im Zusammenhang mit Bauarbeiten am Sony-Center
+# REMOVED --- #: note: Länge der Gegenverkehrstrecke ist ca. 80m
+# REMOVED --- #: last_checked: 2026-04-15
+# REMOVED --- # REMOVED --- #: check_frequency: 90d
+# REMOVED --- # REMOVED --- #: next_check: 2024-07-01
+# REMOVED --- # REMOVED --- #: valid: -20240701
+# REMOVED --- Bellevuestr.: Gegenverkehrsregelung	X::inwork::alternating 8328,11617
 # 
 # REMOVED --- #: next_check_id: ADELESCHREIBERKRIEGER-2014 --- #: note: laut rbb bis Ende März 2023, zwischen Adele-Schreiber-Krieger-Str. und Schiffbauerdamm --- #: source_id: viz2021:13.380011,52.520356,17.02.2023,12:00 (bis 31.03.2023) (inaktiv) --- #: source_id: viz2021:13.37994,52.52093,17.02.2023,12:00 (neuer Eintrag, bis 13.04.2023) (inaktiv) --- #: last_checked: 2023-04-18 --- #: check_frequency: 7d --- #: next_check: 2023-04-13 --- #: valid: -20230427 --- Gegenverkehrsregelung	X::inwork::alternating 8737,12757
 # 
@@ -2001,6 +2018,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6757,13112
 	X 5975,13256
 # REMOVED (Ampel wurde bei der Straßenbahnerweiterung abgebaut) ---	X 5956,13330
+#: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer (Nonnendammallee -> Daumstr., O->N)
 	X -1350,14646
 #: note: Anforderung für linksabbiegende Radfahrer (Am Juliusturm -> Daumstr.)
 #: XXX_prog: gilt nicht für geradesausfahrende Radfahrer
@@ -2528,6 +2546,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F -3043,16601
 	X -2959,17507
 	X -302,15546
+#: note: Anforderung für Radfahrer aus dem Neuen Gartenfeld
 	X -292,15715
 	X 449,15654
 	X 1232,15717
@@ -3057,7 +3076,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: off: 2026-04-12 Sun 09:14
 #: off_rule: weekend? Sun?
 #: note: Anforderungsampel
-	X 1053,13790
+	X 1061,13791
 # 
 #: XXX_prog Ampel ist nach Osten versetzt, aber hier eingetragen, damit auch das Nord-Süd-Routing diese Ampel erfährt
 #: XXX_prog in Nord->Süd-Richtung gilt eigentlich nur die Ampel über die Straßenbahntrasse

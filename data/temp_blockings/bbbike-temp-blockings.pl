@@ -509,6 +509,7 @@ EOF
 #: by: https://berliner-abendblatt.de/berlin-news/spranger-fuer-das-myfest-ist-der-bezirk-zustaendig-id250115
 #: by: https://www.morgenpost.de/bezirke/friedrichshain-kreuzberg/article403927094/myfest-1-mai-2025-berlin-kreuzberg.html (findet 2025 nicht statt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1637367.php
+#: by: https://www.morgenpost.de/bezirke/friedrichshain-kreuzberg/article403927094/myfest-1-mai-2026-berlin-kreuzberg-goerli.html
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11506,10746 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
@@ -8477,12 +8478,13 @@ EOF
 	q4::temp 6173,12396 6276,12506 6314,12518 6442,12545
 EOF
      },
-     { from  => $isodate2epoch->("2024-09-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2024-09-22 23:59:59"),
+     { from  => $isodate2epoch->("2026-05-13 00:00:00"), # $isodate2epoch->("2024-09-19 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-05-18 00:00:00"), # $isodate2epoch->("2024-09-22 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2025-05-13T00:00:00"]], # normalerweise zum Muttertag, kann aber auch im Herbst stattfinden
        recurrence_prewarn_days => 1,
-       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (20. bis 22. September 2024)',
+#      text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (20. bis 22. September 2024)',
+       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (14. bis 17. Mai 2024)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/ (Aktualisierungen nur bis 2020)
@@ -9117,7 +9119,7 @@ EOF
        data  => <<EOF,
 	2::inwork 1969,12375 1941,12627 1929,12741 1892,13058
 	2::inwork 1858,13231 1610,13380 1545,13418
-	2::inwork 931,14268 984,14086 1010,13972 1053,13790 1124,13599
+	2::inwork 931,14268 984,14086 1015,13973 1061,13791 1119,13598
 	2::inwork 1159,13541 1170,13521 1193,13485 1488,13454
 EOF
      },
@@ -15916,10 +15918,11 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: night vvv
-	2::night 3332,12742 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595
+	2::night 3332,12742 3233,12757 3127,12815 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595
 	2::night 2953,13489 2925,13516 2858,13530
 	2::night 2906,13610 2876,13594 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 	2::night 2625,13229 2534,13214 2466,13232 2419,13232 2331,13173 2285,13023
+	2::night 3261,12670 3243,12681 3251,12701 3221,12742 3233,12757
 #: tempex ^^^
 EOF
      },
@@ -17413,13 +17416,15 @@ EOF
 	q4::xmas 5358,-90502 5798,-90075
 EOF
      },
-     { from  => $isodate2epoch->("2024-02-18 00:00:00"), # 1257375600, # 2009-11-05 00:00
-       until => $isodate2epoch->("2024-03-02 17:00:00"), # 1257807600, # 2009-11-10 00:00
-       #text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.11.2009, 08.11.2009 und 09.11.2009',
-       text  => 'Kerkow - Joachimsthal: Bahnübergang wegen Gleiserneuerung gesperrt, vom 19.02.2024 bis 02.03.2024',
+     { from  => 1779861600, # 2026-05-27 08:00 # $isodate2epoch->("2024-02-18 00:00:00"), # 1257375600, # 2009-11-05 00:00
+       until => 1780761600, # 2026-06-06 18:00 # $isodate2epoch->("2024-03-02 17:00:00"), # 1257807600, # 2009-11-10 00:00
+#      text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.11.2009, 08.11.2009 und 09.11.2009',
+#      text  => 'Kerkow - Joachimsthal: Bahnübergang wegen Gleiserneuerung gesperrt, vom 19.02.2024 bis 02.03.2024',
+       text  => 'Kerkow - Glambeck: Bahnübergang gesperrt, vom 28.05.2026 08:00 Uhr bis 06.06.2026 18:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 247300035 (bis 02.03.2024) (inaktiv)
+#: source_id: 267301326 (bis 06.06.2026)
 	2::inwork 48237,70892 48162,70928 48093,70968
 EOF
      },
@@ -18492,7 +18497,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015726',
        data  => <<EOF,
-	q4::inwork; -260,14210 -245,14333 -278,14532
+	q4::inwork; -260,14210 -245,14333 -269,14483 -278,14532
 EOF
      },
      { from  => 1274188260, # 2010-05-18 15:11
@@ -30906,12 +30911,12 @@ EOF
 EOF
      },
      { from  => undef, # 1561845600, # 2019-06-30 00:00
-       until => 1741629790, # undef, # 1591940076, # undef, # 1569945600, # 2019-10-01 18:00
+       until => undef, # 1741629790, # undef, # 1591940076, # undef, # 1569945600, # 2019-10-01 18:00
 #      text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, Ende unbekannt',
        text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: CHARLOTTENBURGERUFER-2024 (old)
+#: next_check_id: CHARLOTTENBURGERUFER-2024
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
@@ -30922,11 +30927,16 @@ EOF
 # REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
 # REMOVED --- #: osm_watch: way id="72660098" version="8" --- #: XXX laut osm offen
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
-#: osm_watch: note 4210973 7
-#: osm_watch: node id="27306736" version="12"
-#: osm_watch: node id="3005701527" version="3"
-# REMOVED (laut osm offen) --- #: priority: #A --- #: add_fragezeichen: Ist die Unterführung noch immer gesperrt? --- #: last_checked: 2025-03-05 --- #: check_frequency: 60d --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung)
-	2::inwork 3231,12749 3332,12742
+#: osm_watch[closed]: note 4210973 7
+#: osm_watch: note 200739 2
+#: osm_watch: node id="27306736" version="13"
+# REMOVED --- #: osm_watch: node id="3005701527" version="3"
+#: priority: #A
+#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
+#: last_checked: 2026-04-15
+#: check_frequency: 60d
+#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+	2::inwork 3233,12757 3332,12742
 EOF
      },
      { from  => 1562012626, # 2019-07-01 22:23
@@ -45263,7 +45273,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-04-08 vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -47117,9 +47127,9 @@ EOF
 # REMOVED --- #: XXX Gibt es tatsächlich eine Umleitung mit Verbot für den Radverkehr? --- #: priority: #A --- 
 #: note: Aber eigentlich kann man die Fußgängerampel benutzen...
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-07-09 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-31 vvv
-#	q4::inwork; 8453,13611 8572,13671
+#	q4::inwork; 8453,13611 8539,13654 8572,13671
 	3::inwork 8358,13562 8453,13611 8408,13684
-	3::inwork 8408,13684 8453,13611 8572,13671
+	3::inwork 8408,13684 8453,13611 8539,13654 8572,13671
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -48204,7 +48214,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
-#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026)
+#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026) (bis 30.04.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m)
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -48462,8 +48472,9 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 # 
 #: note: Vollsperrung bis Juni 2026
 #: also_indoor: traffic (G,no-T,no-W)
+#: last_checked: 2026-04-13 (mapillary)
 #: next_check: 2026-06-30
-Freystadter Weg: möglicherweise gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
+Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
 # 
 #: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
 #: also_indoor: traffic (T,no-G,no-W)
@@ -49817,7 +49828,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-04-09 (mapillary)
+#: last_checked: 2026-04-15
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50024,18 +50035,18 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Fußgängerbrücken Pulvermühle IV, VII und VIII: wegen Brückenschäden gesperrt, voraussichtlich bis April 2026',
+       text  => 'Fußgängerbrücken Pulvermühle IV, VII und VIII: wegen Brückenschäden gesperrt, voraussichtlich bis Mai 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecken-pulvermuehle-iv-vii-und-viii/ (geplante Bauzeit: Juni 2025 bis August 2025) (mittlerweile: Mitte August bis Mitte Dezember 2025) (mittlerweile: Oktober 2025 bis April 2026)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecken-pulvermuehle-iv-vii-und-viii/ (geplante Bauzeit: Juni 2025 bis August 2025) (mittlerweile: Mitte August bis Mitte Dezember 2025) (mittlerweile: Oktober 2025 bis April 2026) (mittlerweile bis Mai 2026)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1582442.php (Sperrung von IV und VIII ab Juli 2025)
-#: osm_watch: note 4841625 4
+#: osm_watch: note 4841625 5
 #: note: Pulvermühle VII bereits seit Sommer 2024 (oder Januar 2023?) gesperrt
 #: note: nicht besonders routingrelevant; keine der drei Brücken wurde in den letzten 12 Monaten bei BBBike-Websuchen vorgeschlagen
 #: add_fragezeichen: Sind die Brücken noch immer gesperrt? vvv
 #: last_checked: 2025-08-26 (osm note) vvv
 # REMOVED --- #: check_frequency: 180d vvv
-#: next_check: 2026-04-30 (SenMVKU-Seite) vvv
+#: next_check: 2026-05-31 (SenMVKU-Seite) vvv
 Pulvermühle VII	2::inwork -1848,15535 -1903,15333
 Pulvermühle IV	2::inwork -1848,15317 -1762,15291
 Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
@@ -50657,7 +50668,7 @@ EOF
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-03-16
+#: last_checked: 2026-04-15
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
@@ -51316,9 +51327,9 @@ EOF
        text  => 'Anna-Louisa-Karsch-Str.: Einbahnstraßenregelung, offen Richtung Nordosten, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: osm_watch: note 4953648 8
+#: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-09 (mapillary) (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
+#: last_checked: 2026-04-15 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -51332,7 +51343,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="6"
-#: last_checked: 2026-03-16
+#: last_checked: 2026-04-15
 #: check_frequency: 60d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
@@ -51443,7 +51454,7 @@ EOF
 #: osm_watch: way id="1409889274" version="12"
 #: osm_watch: way id="1430307301" version="5"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-04-04 (osm) vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 # REMOVED (mittlerweile wieder offen, wegen der Bauarbeiten an der Nordhafenbrücke) ---	2::inwork 7662,14579 7696,14577 7733,14570
@@ -51532,9 +51543,10 @@ Alt-Lietzow, Loschmidtstr.	q4::inwork; 4250,12390 4219,12324 4215,12307 4276,121
 EOF
      },
      { from  => 1763272800, # 2025-11-16 07:00
-       until => undef, # 1777564800, # 2026-04-30 18:00
+       until => $isodate2epoch->("2027-09-30 23:59:59"), # undef, # 1777564800, # 2026-04-30 18:00
 #      text  => 'Iburger Ufer: Baustelle, Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 17.11.2025 07:00 bis 30.04.2026 18:00',
-       text  => 'Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis April 2026, evtl. wird verlängert',
+#      text  => 'Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis April 2026, evtl. wird verlängert',
+       text  => 'Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis Herbst 2027',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=788555#post788555 (Baustellenschild: Sanierung der Pumpenstation bis 30.09.2027)
@@ -51547,9 +51559,10 @@ EOF
 #: add_fragezeichen: Ist der Uferweg unter dem Siemenssteg weiterhin gesperrt?
 # REMOVED --- #: XXX: Stimmt die Einbahnstraßenrichtung? Und warum steht in der VIZ-Verkehrsmeldung "ab Alt-Lietzow", müsste es nicht "ab Arcostr." heißen?
 #: note: Evtl. steht die Sperrung des Uferwegs auch mit der Einbahnstraßenregelung am Iburger Ufer im Zusammenhang?
-#: last_checked: 2026-04-10 (osm change)
+#: last_checked: 2026-04-15
 #: check_frequency: 60d
-#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung zum Iburger Ufer)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung zum Iburger Ufer, wird vermutlich verlängert)
+# REMOVED --- #: next_check: 2027-09-30 (Baustellenschild)
 # REMOVED (hier für Radfahrer frei in Gegenrichtung) --- Iburger Ufer	q4::inwork; 3889,12591 4085,12614 4129,12619 4160,12612 4289,12576
 Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 EOF
@@ -51970,6 +51983,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/neubau-dauert-bis-2028-berliner-dunckerbrucke-ab-1-april-gesperrt-15417132.html
 #: by: https://www.entwicklungsstadt.de/ersatzneubau-der-dunckerbruecke-beginnt-planung-bauphasen-verkehrsfuehrung/
 #: by: https://www.berliner-zeitung.de/news/prenzlauer-berg-dunckerbruecke-ab-april-gesperrt-li.10027810
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/fehlende-akzeptanz-fur-vollsperrung-wie-gefahrlich-ist-der-illegale-verkehr-auf-dieser-maroden-berliner-ringbahnbrucke-15471271.html
 #: source_id: LMS-BR:403521/72 viz2021:13.42326,52.54529,01.04.2026,07:00 (bis 14.06.2028)
 #: osm_watch: note 5163943 2
 #: XXX: Dunckerbrücke: Ersatzneubau
@@ -52640,6 +52654,15 @@ EOF
 #: check_frequency: 21d
 #: next_check: 2026-05-31
 	2::inwork 17115,4757 17037,4794
+EOF
+     },
+     { from  => 1776142800, # 2026-04-14 07:00
+       until => 1777561200, # 2026-04-30 17:00
+       text  => 'Erich-Weinert-Str.: Kraneinsatz zwischen Naugarder Str. und Hosemannstr., evtl. ist auch der Radverkehr von der Sperrung betroffen, vom 15.04.2026 07:00 bis 30.04.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:404867/72 viz2021:13.43789,52.54463,15.04.2026,07:00 (bis 30.04.2026)
+	q4::inwork 12556,15518 12605,15491
 EOF
      },
     );

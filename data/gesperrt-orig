@@ -179,7 +179,7 @@ Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2788,14364 2905,14754
 Kurt-Schumacher-Damm (Süd)	1 2956,14752 2846,14373 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3591,16260
-Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1337,14538 -1392,14527 -1484,14513 -1411,14585 -1350,14646 -1119,14659 -941,14637
+Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1337,14538 -1392,14527 -1484,14513 -1411,14585 -1350,14646 -1156,14679 -928,14643
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12042,19682 11990,19741 11907,19749
@@ -999,7 +999,7 @@ Bundesallee (Richtungsfahrbahn)	1::igndisp 5494,8843 5503,8709 5498,8598 5476,85
 #: note: ^^^
 # 
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -278,14532 -457,14536 -914,14602
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -941,14637 -278,14532
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -928,14643 -278,14532
 #: note: Mittelstreifen vvv
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2627 4313,2630 4224,2671 4170,2727
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2627
@@ -1627,7 +1627,7 @@ Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 # 
 #: XXX nach den Bauarbeiten die alte Einbahnstraßenregelung eintragen
 #: note: es gibt eine provisorische Verbindung zur Weststr. (mittlerweile bei bbbike eingezeichnet)
-#: last_checked: 2025-12-03 vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="273858820" version="12"
 #: osm_watch: way id="1239079510" version="2"
@@ -1794,6 +1794,8 @@ Lise-Meitner-Str., Wendeschleife	1 3674,14156 3684,14145 3672,14115 3671,14074
 # 
 Marienfelder Allee: Radweg nur in eine Richtung	1 7706,541 7668,471
 (Britzer Str. - Rixdorfer Str.): Radweg nur in eine Richtung	1 10012,3895 9999,3852 10010,3824 10048,3806
+# 
+Luisenplatz: Mittelstreifen mit niedrigem Geländer, Ketten am Hochbord	3nocross 3291,12721 3275,12667 3269,12648 3271,12609
 # 
 #: section ^^^
 ######################################################################
@@ -3019,8 +3021,7 @@ tragen (ca. 35 Stufen)	0:30 3361,15784
 tragen (4 x 8 Stufen)	0:30 1761,3208
 tragen (36 Stufen)	0:35 17759,11768
 tragen (15 Stufen)	0:30 4710,23263
-#: note: genauer: 26 oder 27 Stufen
-tragen (ca. 30 Stufen)	0:30 1192,13518
+tragen (27 Stufen)	0:30 1189,13524
 tragen (7 Stufen)	0:20 9762,16119
 tragen (3+20 Stufen)	0:40 -6458,14292
 #: note: Luftbild (Stufenanzahl)
@@ -4107,8 +4108,8 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: osm_watch: way id="1495906089" version="1"
 #: osm_watch: way id="971631807" version="9"
 #: osm_watch: way id="971631806" version="9"
-#: last_checked: 2026-03-16
-#: check_frequency: 30d
+#: last_checked: 2026-04-15
+#: check_frequency: 45d
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
 # 
@@ -4246,7 +4247,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-04-08 vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4485,7 +4486,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-15
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4952,7 +4953,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="1086484458" version="3"
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
-#: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026)
+#: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
 #: last_checked: 2026-04-03
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
@@ -5073,7 +5074,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2026-04-06 vvv
+#: last_checked: 2026-04-15 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5370,7 +5371,7 @@ Grunerstr.: Straßenzug wird entfernt	2::inwork 10746,12364 10807,12451 10838,124
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-15
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
