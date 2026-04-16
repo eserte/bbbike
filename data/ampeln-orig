@@ -4440,6 +4440,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: confirmed_by: srt
 	X 12015,24351
 # 
+#: next_check_id: THOMAS-2025
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6034
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ampel-am-anita-berber-park-laesst-auf-sich-warten_a172484
@@ -4460,8 +4461,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2026-03-18
-#: check_frequency: 120d
+#: last_checked: 2026-04-16
+#: check_frequency: 30d
 #: next_check: 2026-12-31 (infravelo, mobilitaetsrat)
 	X::inwork 12185,7381
 # 

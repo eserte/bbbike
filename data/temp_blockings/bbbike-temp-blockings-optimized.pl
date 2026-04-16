@@ -5873,7 +5873,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?) --- #: note: Halteverbotsschilder mittlerweile bis 07.06.2024, nun bis 28.06.2024 --- #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv --- #: last_checked: 2024-06-22 vvv --- #: next_check: 2024-06-28 vvv --- Jahnstr.	q4::inwork; 12833,6127 13027,6168 --- Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127 --- : next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: note: Halteverbotsschilder bis 18.12.2026
-#: last_checked: 2026-02-28
+#: last_checked: 2026-04-16
 #: check_frequency: 120d
 #: next_check: 2026-12-18 (Halteverbotsschilder)
 Jahnstr.	q3::inwork; 13027,6168 13227,6209
@@ -5950,7 +5950,7 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitte 2026 oder Mitte 2027?
-#: last_checked: 2026-04-14 vvv
+#: last_checked: 2026-04-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -7915,7 +7915,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-04-15 vvv
+#: last_checked: 2026-04-16 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -8777,7 +8777,7 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
 #: also_indoor: traffic (ex-H,G,no-T)
 #: last_checked: 2026-03-04
 #: check_frequency: 90d
-#: next_check: 2026-04-15 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 Merler Weg	q4::inwork 18852,13269 19180,13219
 ',
          'from' => undef,
@@ -9539,7 +9539,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 5
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-04-14 vvv
+#: last_checked: 2026-04-16 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -10397,7 +10397,20 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
          'type' => 'handicap',
          'until' => 1798736400
        },
-       undef,
+       {
+         'data' => '#  REMOVED --- #: source_id: LMS-BR:399098/72 viz2021:13.421275,52.551604,16.02.2026,06:00 (bis 15.04.2026) (inaktiv)
+#  REMOVED --- Kuglerstr.	q4::inwork 11467,16238 11543,16207
+#  REMOVED --- #: source_id: LMS-BR:399099/72 viz2021:13.42011,52.55189,16.02.2026,06:00 (bis 15.04.2026) (inaktiv)
+#  REMOVED --- Lewaldstr.	q4::inwork 11401,16265 11470,16394
+#: source_id: LMS-BR:404972/72 viz2021:13.422177,52.551433,16.04.2026,06:00 (bis 30.06.2026)
+Glaßbrennerstr.	q4::inwork 11543,16207 11632,16373
+',
+         'from' => 1776363269,
+         'id' => 4536,
+         'text' => 'Glaßbrennerstr.: Bauarbeiten zwischen Kuglerstr. und Wisbyer  Str., Sperrungen, evtl. sind auch Radfahrer betroffen, bis 30.06.2026',
+         'type' => 'handicap',
+         'until' => 1782856799
+       },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260217
 #: source_id: LMS-BR:399332/72 viz2021:13.43881,52.53783,18.02.2026,06:00 (bis 31.08.2026)
@@ -10848,7 +10861,17 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:404055/72 viz2021:13.46315,52.49949,07.04.2026,07:00 (bis 29.05.2026)
+#: note: q4 -> q3, weil nur ein kurzer Abschnitt betroffen ist, allerdings müssen Bordsteine überwunden werden
+	q3::inwork 14447,10491 14490,10610
+',
+         'from' => 1775451600,
+         'id' => 4577,
+         'text' => 'Bödikerstr.: Bauarbeiten zwischen Corinthstr. und Persiusstr., Sperrung, vom 07.04.2026 07:00 bis 29.05.2026 23:59',
+         'type' => 'handicap',
+         'until' => 1780091940
+       },
        {
          'data' => '#: next_check_id: BER-2026
 #: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407
@@ -10900,7 +10923,8 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1660792.php (1600m, also wesentlich länger als die Kastanienallee, bis Ende Oktober 2026)
 #: by: https://www.nbb-netzgesellschaft.de/presse/pressemitteilungen/beitrag/erneuerung-der-gasleitung-schont-vegetation-am-europa-radweg/
 #: osm_watch: way id="10856020" version="51"
-#: next_check: 2026-10-31 (BA TK)
+#: priority: #A
+#: next_check: 2026-10-31 (BA TK, nbb netzgesellschaft)
 	2::inwork 18437,7752 19045,6959
 ',
          'from' => 1775939275,
@@ -10911,7 +10935,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        },
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe dauern die Bauarbeiten im Bauabschnitt Böhmische Straße zwischen Kanner Straße und Niemetzstraße von März 2026 bis Mai 2027 -> erwartete Änderungen des aktuell gesperrten Abschnitts, deshalb check_frequency=45d
-#: last_checked: 2026-04-14 vvv
+#: last_checked: 2026-04-16 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-05-31 (Baustellenschild der Wasserbetriebe) vvv
 Niemetzstr.	q4::inwork 13583,7642 13571,7588 13581,7586
@@ -10934,7 +10958,10 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreig5ow7bkpljf3l3jir4cwrdxwxgm7aepe7i2fpobf43g4x4rlljry (nun ist der nördliche Gehweg frei)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mjeegagzbk2e
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1660827.php (hier: auch Gehwege gesperrt? Dauer 4-6 Wochen)
+#: by: https://fahrinfo.vbb.de/him-uploads/1776322735562_Kartenausschnitt_Kiefholzstr_003_.jpg
 #: source_id: LMS-BR:404340/72 viz2021:13.50053,52.44753, (kein Endedatum)
+#: source_id: bvg2024:265#HIM_FREETEXT_330512 (kein Endedatum)
+#: source_id: bvg2024:x11#HIM_FREETEXT_330465 (kein Endedatum)
 #: last_checked: 2026-04-13 (VIZ)
 #: check_frequency: 21d
 #: next_check: 2026-05-31

@@ -42,14 +42,14 @@ Ahrensfelder Chaussee: hohe Bordsteinkante am Ende des Radwegs	CS::danger; 21332
 #
 #: temporary vvv
 # 
-#: next_check_id: NIEMETZ-2022
-#: XXX Spekulation: normalerweise gibt es hier eine einspurige Straßenführung, aber evtl. war man der Meinung, dass mit der Sperrung der Saalestr.+Niemetzstr. hier mehr Verkehrskapazität notwendig ist?
-#: last_checked: 2026-02-28
-#: check_frequency: 60d
-Karl-Marx-Str. hinter Walterstr.: typischerweise parkende Autos auf der provisorischen Radspur	CS::danger; 13121,6689 13141,6651
+# REMOVED (die temporäre Gelbmarkierung wurde entfernt, die normalen Radspuren gelten wieder) --- #: next_check_id: NIEMETZ-2022
+# REMOVED --- #: XXX Spekulation: normalerweise gibt es hier eine einspurige Straßenführung, aber evtl. war man der Meinung, dass mit der Sperrung der Saalestr.+Niemetzstr. hier mehr Verkehrskapazität notwendig ist?
+# REMOVED --- #: last_checked: 2026-02-28
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- Karl-Marx-Str. hinter Walterstr.: typischerweise parkende Autos auf der provisorischen Radspur	CS::danger; 13121,6689 13141,6651
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-04-15
+#: last_checked: 2026-04-16
 #: check_frequency: 90d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Bauarbeiten in Kurve, mögliche Engstellen	CS::danger 11160,12071 11111,12027 11054,11992

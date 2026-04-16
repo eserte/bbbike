@@ -43,7 +43,6 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
-Bürgerstr.: Fahrbahn gesperrt, Hochbauarbeiten	q4::inwork 12830,6254 12997,6290
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hochbauarbeiten	q1::inwork 17526,14531 17824,14572
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
@@ -190,7 +189,9 @@ Hasenheide, zur Lilienthalstr.: Fußgänger	q3 10709,9192 11111,9104 11141,9107
 (Hasenheide, Eingang Lucy-Lameck-Str.): Fußgänger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
 (Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
-(Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1 11632,8302 11577,8315 11559,8357
+(Flughafenstr. - Rundweg in der Hasenheide): linker Gehweg	q3; 11577,8315 11632,8302
+(Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1; 11632,8302 11577,8315
+(Flughafenstr. - Rundweg in der Hasenheide): Fußgänger	q1 11577,8315 11559,8357
 Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944
 Am Landwehrkanal: Fußgänger	q1 13333,9929 13271,9927 13225,9897
 Am Flutgraben: Fußgänger	q1 13418,9944 13579,10146
