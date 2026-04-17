@@ -4301,21 +4301,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147340170 (2016er-Sperrung, inaktiv)
-#: source_id: LMS-BR:395568/72 viz2021:13.50143,52.57656, (bis 27.03.2026) (bis 17.04.2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mbw6ybn6pk2i (Radverkehr auch betroffen)
-#: note: keine Ausnahme für Radfahrer
-# REMOVED (2016) --- #: note: laut fritz sogar Vollsperrung
-# REMVOED (2016) ---	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
-	q4::inwork; 17003,19035 16736,19193
-',
-         'from' => 1767826800,
-         'id' => 2791,
-         'text' => 'Wartenberger Weg: Richtung Malchow zwischen Hagenower Ring und An der Margaretenhöhe gesperrt, voraussichtlich bis Mitte April 2026',
-         'type' => 'handicap',
-         'until' => 1776463199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4963,7 +4949,7 @@ zwischen Karpfenteich und Sowjetisches Ehrenmal: kann gesperrt sein	2::inwork 15
 # REMOVED --- #: osm_watch: way id="72660098" version="8" --- #: XXX laut osm offen
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: osm_watch[closed]: note 4210973 7
-#: osm_watch: note 200739 2
+#: osm_watch: note 5200739 2
 #: osm_watch: node id="27306736" version="13"
 # REMOVED --- #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
@@ -6458,23 +6444,23 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
-#: last_checked: 2026-03-02 (az-lichtenrade) vvv
+#: last_checked: 2026-04-15 (az-lichtenrade) vvv
 #: check_frequency: 60d (traffic) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
-#: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026) (inaktiv)
-#: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026) (bis 31.12.2026)
-#: note: an der Bahnhofstr. keine Freigabe für Radfahrer, allerdings ab Mellener Str. Richtung Goltzstr. mit Einbahnstraße, Radfahrer beide Richtungen ausgeschildert?!
-Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
+# REMOVED (nun mit Freigabe für Radfahrer) --- #: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026) (inaktiv) --- #: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026) (bis 31.12.2026) --- #: note: an der Bahnhofstr. keine Freigabe für Radfahrer, allerdings ab Mellener Str. Richtung Goltzstr. mit Einbahnstraße, Radfahrer beide Richtungen ausgeschildert?! --- Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
+#: note: laut az-lichtenrade (15. April 2026): Bauarbeiten an der Zescher Straße verzögern sich
 Zescher Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10509,-2128 10513,-2397
 Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 10642,-2371
-#: source_id: LMS-BR:392667/72 viz2021:13.40053,52.38317,09.12.2025,00:00 (bis 18.05.2026) (bis 31.12.2026)
-#: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
-#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Antrag: Freigabe für Radverkehr)
-#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260407 (Freigabe für Radverkehr nach den Osterfeiertagen)
-#: add_fragezeichen: Ist die Briesingstr. für Radfahrer in beide Richtungen freigegeben?
-#: next_check: 2026-04-07
-Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156
+# 
+# REMOVED (mittlerweile freigegeben?) --- #: source_id: LMS-BR:392667/72 viz2021:13.40053,52.38317,09.12.2025,00:00 (bis 18.05.2026) (bis 31.12.2026)
+# REMOVED --- #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
+# REMOVED --- #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Antrag: Freigabe für Radverkehr)
+# REMOVED --- #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260407 (Freigabe für Radverkehr nach den Osterfeiertagen)
+# REMOVED --- #: add_fragezeichen: Ist die Briesingstr. für Radfahrer in beide Richtungen freigegeben?
+# REMOVED --- #: next_check: 2026-04-24
+# REMOVED --- Briesingstr.	q4::inwork; 10454,-2520 10404,-2404 10318,-2156
+# 
 # REMOVED (hier nicht, hier existiert sogar eine Radspur in Gegenrichtung) --- Mellener Str.	q4::inwork; 10756,-2128 10758,-1949
 # REMOVED (laut Umleitungsplan nicht mehr) --- Mellener Str.	q4::inwork; 10756,-2128 10763,-2276
 # REMOVED (laut Umleitungsplan nicht mehr) (tatsächlich auch nicht; interessanterweise ist eine provisorische Radspur noch übrig geblieben) --- Löptener Str.	q4::inwork; 10758,-1949 10906,-1946 10980,-1919
@@ -8521,7 +8507,7 @@ Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,157
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
 #: also_indoor: traffic (re-H,ex-T,A[shorter],G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-02-17 (traffic)
+#: last_checked: 2026-04-17 (traffic)
 #: check_frequency: 60d (traffic)
 #: next_check: 2026-07-23 (VIZ-Verkehrsmeldung)
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 2396,9427 2467,9425
@@ -8552,7 +8538,21 @@ Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,157
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.30113,52.51347,04.11.2024,07:00 (bis 28.02.2025) (inaktiv)
+#: source_id: viz2021:13.30113,52.51347,13.02.2025,11:00 (bis 28.03.2025) (inaktiv)
+#: source_id: viz2021:13.30307,52.51345,10.03.2025,12:00 (bis 31.03.2025) (vorfristig inaktiv)
+# REMOVED (alte Verkehrsmeldung) --- #: also_indoor: traffic (H,T) --- #: note: bei rbb und einigen Verkehrsdiensten noch aktiv, bei VIZ nicht mehr --- # REMOVED (hier nicht mehr?) ---	q4::inwork; 3666,11855 3528,11852 --- 	q4::inwork; 3528,11852 3406,11849
+#: source_id: LMS-BR:403637/72 viz2021:13.30491,52.51342, (bis 15.05.2026)
+Zillestr.	q4::inwork 3666,11855 3801,11858
+# 
+',
+         'from' => 1776451766,
+         'id' => 4254,
+         'text' => 'Zillestr.: Sperrung zwischen Richard-Wagner-Str. und Wilmersdorfer Str., evtl. sind auch Radfahrer betroffen, bis 15.5.2026',
+         'type' => 'handicap',
+         'until' => 1778882399
+       },
        undef,
        {
          'data' => '#: note: Grünanlagenschilder mit expliziten Radfahrverbot
@@ -8648,7 +8648,7 @@ Schüßlerplatz: Fahrbahn gesperrt	q4::inwork 22284,4653 22355,4660
          'data' => '#: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
 #: osm_watch: note 4188310 4
 #: also_indoor: traffic (G,T,ex-A,W[degradiert zu NN])
-#: last_checked: 2026-02-17 (traffic) vvv
+#: last_checked: 2026-04-17 (traffic) vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (traffic) vvv
@@ -8910,14 +8910,15 @@ Radickestraße: Sperrung Richtung Adlergestell zwischen Arndtstraße und Nipkowstr
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
+#: by: https://www.aktives-adlershof.de/fileadmin/Interne_Dokumente/Projekte/Radickestra%C3%9Fe/20260415_Baunewsletter_Netzumstrukturierung_Treptow-K%C3%B6penick_14-1.pdf (Baustelle bleibt jedoch weiterhin eingerichtet)
 #: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen, Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
-# REMOVED --- #: also_indoor: traffic (no-T,G[nur Flemmingstr])
-# REMOVED --- #: last_checked: 2026-04-07 (traffic) vvv
-# REMOVED --- #: check_frequency: 30d vvv
-# REMOVED --- Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
-# REMOVED --- Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
-# REMOVED --- #: check_frequency ^^^
-# REMOVED --- #: last_checked ^^^
+#: also_indoor: traffic (no-T,G[nur Flemmingstr])
+#: last_checked: 2026-04-15 (newsletter) vvv
+#: check_frequency: 30d vvv
+Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
+Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: note: laut Website möglicherweise bis 16.01.2026; nun: Asphaltierung steht noch aus
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
@@ -8931,7 +8932,7 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 # 
 #: note: Vollsperrung bis Juni 2026
 #: also_indoor: traffic (G,no-T,no-W)
-#: last_checked: 2026-04-13 (mapillary)
+#: last_checked: 2026-04-15 (mapillary)
 #: next_check: 2026-06-30
 Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
 # 
@@ -9614,9 +9615,9 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxtebnjz3s2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic5lycfbu4ygtwangqqvtwdmgujojeqx4yzlmlyzox3qcirs66hxy@jpeg
 #: source_id: LMS-BR:381983/72 viz2021:13.34231,52.52413,02.09.2025,06:00 (bis 27.02.2026) (bis 31.03.2026) (bis 30.04.2026)
-#: osm_watch: way id="169658769" version="30"
+#: osm_watch: way id="169658769" version="31"
 #: note: Baustelle fängt einige Meter westlich der Kreuzung Krefelder Str. an
-#: last_checked: 2026-04-04 (osm)
+#: last_checked: 2026-04-16 (osm)
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 6183,13083 6114,13095 5993,13064
 ',
@@ -10133,7 +10134,7 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
        },
        {
          'data' => '#: also_indoor: traffic (G[zu lang],no-T,no-H,no-W)
-#: last_checked: 2026-04-04 (traffic) vvv
+#: last_checked: 2026-04-17 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 Kniephofstr.	q3::inwork 6124,5983 6226,5995
 Kniephofstr.	q4::inwork 6226,5995 6318,6006
@@ -10982,6 +10983,16 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'text' => 'Erich-Weinert-Str.: Kraneinsatz zwischen Naugarder Str. und Hosemannstr., evtl. ist auch der Radverkehr von der Sperrung betroffen, vom 15.04.2026 07:00 bis 30.04.2026 17:00',
          'type' => 'handicap',
          'until' => 1777561200
+       },
+       {
+         'data' => '#: source_id: LMS-BR:405077/72 viz2021:13.32306,52.50635,17.04.2026,07:00 (bis 15.05.2026)
+	q4::inwork 4916,11083 4880,11088 4897,11354
+',
+         'from' => 1776315600,
+         'id' => 4586,
+         'text' => 'Knesebeckstr.: Bauarbeiten zwischen Savignyplatz und Goethestr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 17.04.2026 07:00 bis 15.05.2026 23:59',
+         'type' => 'handicap',
+         'until' => 1778882340
        }
      
 );

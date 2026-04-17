@@ -3444,7 +3444,7 @@ Clara-Grunwald-Str.: Asphalt	Q0 15688,10400 15652,10348 15578,10250 15567,10235
 Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15990,10185 15952,10134 15874,10025 15840,9980
 (Hildegard-Marcusson-Straße - Uferweg): Parkweg	Q1 15840,9980 15813,9961 15786,9957
 Sven-Hedin-Str.: asphaltierte Fahrbahn, asphaltierter Radweg	Q0 458,3697 394,3694 263,3779
-Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 263,3779 199,3774 16,3744 -92,3724 -141,3715 -267,3657 -370,3585 -478,3509 -548,3467 -645,3434 -741,3410 -800,3409 -968,3438 -1012,3465
+Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 263,3779 199,3774 181,3771 16,3744 -92,3724 -141,3715 -267,3657 -370,3585 -478,3509 -548,3467 -645,3434 -741,3410 -800,3409 -968,3438 -1012,3465
 #: note: Q2 von Dominik Seelow hochgestuft
 Schützallee: kleinteiliges Kopfsteinpflaster auf der Fahrbahn, Radweg mit unebenen Pflaster	Q1 2230,3823 2160,3854 1987,3888 1939,3893
 Schützallee: asphaltierte Fahrbahn, Radweg mit unebenen Pflaster	Q0 1939,3893 1800,3903 1787,3905 1741,3907 1664,3907 1603,3909 1523,3904 1462,3906 1389,3900 1276,3892 1139,3876 1015,3858 891,3828 732,3780 627,3749 458,3697
@@ -14467,6 +14467,8 @@ Moderlieschenstr.: alter Asphalt	Q0- -384,15782 -444,15710
 Moderlieschenstr.: Asphalt	Q0 -444,15710 -607,15832 -732,15940
 #: note: Platten mit Metall eingefasst
 Moderlieschenstr.: Betonplatten	Q1- -732,15940 -866,16042
+# 
+(Privatstraße): Verbundsteinpflaster	Q1+ 196,3650 181,3771
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 

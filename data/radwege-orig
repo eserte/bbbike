@@ -52,7 +52,7 @@
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026) (bis 30.04.2026)
-#: last_checked: 2026-02-18
+#: last_checked: 2026-04-15 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 provisorische Radspuren	RW3;RW3 7597,4499 7628,4521 7667,4549 7690,4563
@@ -1722,7 +1722,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:388766/72 viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
-#: last_checked: 2026-04-12
+#: last_checked: 2026-04-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
@@ -2367,7 +2367,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-03-27 vvv
+#: last_checked: 2026-04-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -4924,7 +4924,7 @@ schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos	RW1;RW1 5
 	RW1; -7123,310 -7078,262 -7067,240 -7050,199
 Gehweg für Radfahrer frei	RW1; -7050,199 -7050,152
 	RW1;RW1 -1012,3465 -968,3438 -800,3409 -741,3410 -645,3434 -548,3467 -478,3509 -370,3585 -267,3657
-	RW1;RW1 -267,3657 -141,3715 -92,3724 16,3744 199,3774 263,3779 394,3694 458,3697
+	RW1;RW1 -267,3657 -141,3715 -92,3724 16,3744 181,3771 199,3774 263,3779 394,3694 458,3697
 	RW1;RW 458,3697 627,3749 732,3780
 	RW1;RW1 732,3780 891,3828 1015,3858 1139,3876 1276,3892 1389,3900 1462,3906 1523,3904
 	RW1;RW 1523,3904 1603,3909 1664,3907 1741,3907 1787,3905 1800,3903
@@ -7174,7 +7174,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-04-06 vvv
+#: last_checked: 2026-04-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -9781,4 +9781,9 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
 #: historical_note: Fahrradstraße seit 2025/2026
 	RW7;RW7 3425,4541 3501,4435 3557,4355 3587,4312 3643,4232
+# 
+#: historical_note: seit etwa 2025/2026
+	RW3;RW3 11073,-2037 10983,-2116 10756,-2128
+# 
+	RW6;RW6 196,3650 181,3771
 # 

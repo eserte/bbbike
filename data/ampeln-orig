@@ -647,7 +647,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: XXX Ampel wird vermutlich permanent gemacht
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
 #: osm_watch: node id="7978101859" version="2"
-#: last_checked: 2025-10-30 (mapillary)
+#: last_checked: 2026-04-15 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-28
 	X::inwork 10096,-2137
@@ -671,6 +671,17 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: last_checked: 2025-06-22 (mapillary)
 #: check_frequency: 180d
 Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
+# 
+#: next_check_id: BAHNHOF-2022
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Frühjahr 2026)
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260320 (Ampel wird nach Ostern 2026 eingeschaltet; dann entfällt auch die Einbahnstraßenregelung in der Briesingstr. für den Radverkehr)
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260416 (KW 17/2026)
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260417 (in Betrieb genommen)
+#: osm_watch: note 5254100 1
+#: XXX Wann wird hier eine dauerhafte Ampel eingerichtet?
+#: last_checked: 2026-04-17 (az-lichtenrade)
+#: check_frequency: 120d
+Bahnhofstr./Briesingstr.: provisorische Ampel	?::inwork 10310,-2136
 # 
 #: temporary ^^^
 #: section ^^^
@@ -1725,7 +1736,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036154063735/154063735/00111219/19-Anlagen/05/B1138ZB2.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7226 (Antrag) (wurde abgelehnt)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409001203/gefaehrliche-kreuzung-warten-auf-eine-ampel-seit-ueber-20-jahren.html
-#: last_checked: 2025-11-04 (mapillary)
+#: last_checked: 2026-04-15 (mapillary)
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -4022,7 +4033,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-04-06 vvv
+#: last_checked: 2026-04-15 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3
@@ -4493,6 +4504,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag) (im Ausschuss abgelehnt)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag) (von BVV beschlossen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/eine-ampelanlage-fuer-die-kreuzung_a367115
+#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7345 (Antrag)
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 2
 #: last_checked: 2026-03-22 (mapillary) vvv
@@ -4758,6 +4770,9 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: section ^^^
 ################################################################################
 #: section: Ampeln elsewhere vvv
+#: by: mapillary
+#: note: Anforderungsampel
+	F 12351,-8883
 #: historical_note: bis 2024/2025 Kreisverkehr, jetzt normale Kreuzung
 #: by: osm
 	X 39341,-1057
