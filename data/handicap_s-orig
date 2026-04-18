@@ -27,7 +27,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-04-13
+#: last_checked: 2026-04-18
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -1163,7 +1163,7 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht f¸r eine erneuerte Anbindung?
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-18
 Gustav-Tempel-Str.: kurzes St¸ck B¸rgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf B¸rgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1326,7 +1326,7 @@ Erich-Boltze-Str., Verl‰ngerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: note: auﬂerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ung¸nstiger f¸r Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bˆtzowstraﬂe - Hufelandstraﬂe
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-04-11 (traffic) vvv
+#: last_checked: 2026-04-16 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mˆgliche Verkleinerung der Sperrung?) vvv
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
@@ -5342,7 +5342,7 @@ Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026)
 #: note: L‰nge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-04-07 vvv
+#: last_checked: 2026-04-18 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-05-04 vvv
 # REMOVED --- #: valid: -20251219
@@ -5654,6 +5654,8 @@ Schˆnleinstr. [Hohenstaufenplatz]: mˆgliche Einschr‰nkungen durch parkende Autos
 # 
 #: XXX_prog: BS (an beiden Enden)
 (Anne-Frank-CarÈe, westlicher Weg): gemeinsamer Geh- und Radweg, Bordsteine	q3 19576,533 19537,420
+#: note: zumindest am s¸dlichen Ende ein "Einfahrt verboten"-Schild ohne weitere Freigaben, vom Charakter her aber eine normale Service-Straﬂe
+(Anne-Frank-CarÈe, Verbindung zwischen Erxlebenstr. und Hassoweg): Lieferverkehr, einige Fuﬂg‰nger	q1- 19624,377 19677,498
 # 
 #: note: Gr¸nanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol
 (F¸rbringerstr. - Baerwaldstr.): Gr¸nanlage, Fuﬂg‰nger	q4 10067,9674 10290,9604
@@ -6788,7 +6790,8 @@ Sch‰ferstr. (Spandau): enge Straﬂe	q1 -2915,15994 -2673,16021 -2656,16010
 #: corrected_by: srt/policy (q1 -> q0-)
 Feldspatweg: enge Straﬂe	q0- 11407,1592 11369,1585 11180,1623 11106,1639 11025,1657 10981,1665 10943,1661 10907,1651 10860,1620 10831,1585 10810,1533 10807,1497 10816,1411 10868,1281
 #: by: anonymous
-Peenestr.: enge Straﬂe	q1 19333,1154 19434,1265 19575,1239 19737,1204
+#: corrected_by: srt/policy (q1 -> q0-)
+Peenestr.: enge Straﬂe	q0- 19333,1154 19434,1265 19575,1239 19737,1204
 #: by: Heidi (...mary):
 #: corrected_by: srt/policy (q1 -> q0-)
 Borkzeile: enge Straﬂe	q0- -4220,14311 -4207,14473 -4203,14515 -4188,14566 -4156,14677

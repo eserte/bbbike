@@ -157,7 +157,7 @@ Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage, kann ausgeschaltet sei
 # REMOVED --- Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
-#: last_checked: 2026-01-17
+#: last_checked: 2026-04-18
 #: check_frequency: 180d
 #: next_check: 2027-05-09 (Ausschreibungsunterlagen)
 Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
@@ -458,7 +458,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-18
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -677,9 +677,9 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260320 (Ampel wird nach Ostern 2026 eingeschaltet; dann entfällt auch die Einbahnstraßenregelung in der Briesingstr. für den Radverkehr)
 #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260416 (KW 17/2026)
 #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260417 (in Betrieb genommen)
-#: osm_watch: note 5254100 1
+#: osm_watch: note 5254100 3
 #: XXX Wann wird hier eine dauerhafte Ampel eingerichtet?
-#: last_checked: 2026-04-17 (az-lichtenrade)
+#: last_checked: 2026-04-17 (az-lichtenrade, osm note)
 #: check_frequency: 120d
 Bahnhofstr./Briesingstr.: provisorische Ampel	?::inwork 10310,-2136
 # 

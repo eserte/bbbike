@@ -505,7 +505,7 @@ An der Nordbahn: Verbundsteinpflaster	Q1 8647,18567 8589,18559 8558,18597 8562,1
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8562,18642 8476,18773
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
 An der Nordbahn: Asphalt	Q0 7200,19715 7160,19752
-An der Nordbahn: mäßiger Asphalt	Q1 7160,19752 7104,19802 6680,20165 6395,20413
+An der Nordbahn: mäßiger Asphalt	Q1 7160,19752 7104,19802 6950,19934 6680,20165 6395,20413
 Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
 Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4719,11206 4775,11203
 Pestalozzistr.: Kopfsteinpflaster, teilweise Verbundsteine	Q2 4176,11235 4101,11233 3981,11232
@@ -11076,8 +11076,6 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 (Schillerstr. - Bogenstr.): Verbundsteinpflaster	Q1 5071,2169 5005,2100 4995,2090
 (Seestr. - Armenische Str.): Verbundsteinpflaster	Q1 7393,16566 7285,16638
 (Brusebergstr. - Gotthardstr.): wassergebundene Decke, teilweise mit Schotter	Q1 6045,18305 6046,18290 6040,18289 6031,18151 6065,18004 6049,17839 6056,17798
-(Hertzstr./PankowPark - Bhf. Wilhelmsruh): Asphalt	Q0 7090,19943 7123,19855 7138,19839
-(Hertzstr./PankowPark - Bhf. Wilhelmsruh): unbefestigter Weg	Q2 7138,19839 7184,19783 7285,19700 7297,19676
 (Provinzstr. - Verlängerte Koloniestr.): unbefestigter Weg	Q2 8628,18441 8823,18252
 (Provinzstr. - Verlängerte Koloniestr.): Feinschotter	Q2 8823,18252 8918,18159
 (Koloniestr. - Pankeweg): Verbundsteinpflaster	Q1 8973,17756 9024,17780
@@ -11151,6 +11149,7 @@ Ruppiner Chaussee: Asphalt, einige Schäden	Q1;Q0 488,22275 455,22285 355,22344 2
 Mausohrweg: Asphalt	Q0 33327,2979 33296,2894
 Mausohrweg: Asphalt	Q0 33167,2940 33296,2894 33406,2852 33503,2818
 Abendseglersteig: Asphalt	Q0 33406,2852 33383,2792 33267,2810 33139,2835 33167,2940
+(Hertzstr. - PankowPark): Asphalt	Q0 7090,19943 7031,19950 6990,19987 6953,19939
 Beate-Hahn-Str.: Asphalt	Q0 12257,18649 12381,18897
 Marianne-Foerster-Str.: Verbundsteinpflaster	Q1 12363,18596 12375,18622 12470,18816 12481,18838
 Rubinweg: Betonsteinpflaster	Q0 11495,20364 11543,20272
@@ -11741,6 +11740,8 @@ Wilhelminenhofstr.: Kleinsteinpflaster	Q1 19010,5833 19017,5815
 An der Villa Bolle: Asphalt	Q0 22790,3135 22668,3125 22470,3109
 An der Villa Bolle: Verbundsteinpflaster	Q1 22668,3125 22674,3052
 (An der Villa Bolle - Am Marienhain): Verbundsteinpflaster	Q1 22668,3125 22662,3200 22662,3205
+Helmut-Rupprecht-Str.: Asphalt	Q0 22470,3109 22476,3035 22485,2937
+Jeanne-Baret-Str.: Asphalt	Q0 22485,2937 22737,2956 22823,2962
 Havelwerke: schlechtes Kopfsteinpflaster	Q3 -1945,15018 -1959,14962
 Havelwerke: Asphalt, kurze Kopfsteinpflasterabschnitte	Q1 -1959,14962 -2082,14997
 Havelwerke: Asphalt	Q0 -2082,14997 -2092,14963
@@ -11961,6 +11962,7 @@ Wegerichstr.: Gehwegplatten	Q1 16475,2586 16538,2543
 Bulgarische Str.: Verbundsteinpflaster	Q1; 15591,8848 15558,8820 15378,8668 15166,8489
 Konradinstr.: Asphalt, einige leichte Schäden	Q0 8872,5484 8674,5357
 (Anne-Frank-Carée, westlicher Weg): Betonpflaster	Q0 19576,533 19537,420
+(Anne-Frank-Carée, Verbindung zwischen Erxlebenstr. und Hassoweg): Betonpflaster	Q0 19624,377 19677,498
 (Fürbringerstr. - Baerwaldstr.): Verbundsteinpflaster	Q1 10067,9674 10290,9604
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Asphalt	Q0 21249,11042 21237,11065 21162,11073 21163,11172
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Asphalt	Q0 21163,11172 21137,11200
@@ -14285,7 +14287,7 @@ Helmholtzstr. (Oberschöneweide): gutes Kopfsteinpflaster	Q1 17459,6854 17574,690
 Helmholtzstr. (Oberschöneweide): schlechtes Kopfsteinpflaster	Q3 17632,6930 17763,6960
 Helmholtzstr. (Oberschöneweide): schlechtes Kopfsteinpflaster	Q3 17763,6960 17845,6986 17919,6968
 Im Gestell: Kopfsteinpflaster	Q2 595,4594 519,4547 444,4498 371,4453
-Luisenstr. (Köpenick): Beton	Q0 22641,4095 22458,4134
+Luisenstr. (Köpenick): Beton	Q0 22636,4095 22458,4134
 Luisenstr. (Köpenick): Kopfsteinpflaster	Q2 22458,4134 22348,4177
 Luisenstr. (Köpenick): Beton	Q0 22348,4177 22319,4197 22279,4220
 Langerhansstr.: mäßiges Kopfsteinpflaster	Q2 22154,5659 22200,5776 22234,5921
@@ -14741,7 +14743,7 @@ Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14170,13496 14218,13661
 Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -833,3619 -935,3706
 Erdmann-Graeser-Weg: Beton	Q0 -935,3706 -961,3737
 Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -961,3737 -1013,3804
-Friedrich-Wolf-Str.: mäßiger Beton	Q1 22236,2029 22224,2061 22210,2140 22131,2333 22160,2346
+Friedrich-Wolf-Str.: rauer Beton	Q1 22236,2029 22224,2061 22210,2140 22131,2333 22160,2346
 Friedrich-Wolf-Str.: Kleinsteinpflaster	Q1 22160,2346 22205,2367
 Jansenstr.: guter Asphalt	Q0 5266,19849 5338,19843 5396,19833 5422,19829 5439,19826 5533,19811
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Gehwegplatten	Q0 4997,19849 4992,19891 5029,19945

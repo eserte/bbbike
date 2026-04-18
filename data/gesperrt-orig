@@ -124,7 +124,7 @@ Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX Einbahnstraßenregelung temporär aufgehoben
-#: last_checked: 2026-03-11
+#: last_checked: 2026-04-18
 #: check_frequency: 120d
 #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
@@ -213,7 +213,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
-#: last_checked: 2026-04-08 vvv
+#: last_checked: 2026-04-18 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -1348,7 +1348,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="15"
-#: last_checked: 2025-11-05
+#: last_checked: 2026-04-18
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1520,7 +1520,7 @@ Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 #: next_check_id: HOENOWERWEG-2025
 #: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-18
 #: check_frequency: 90d
 #: next_check: 2027-02-28
 Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
@@ -3218,6 +3218,7 @@ tragen (Treppe, 3 Stufen)	0:10 4799,20517
 #: note: hier möglicherweise mit einer Steighilfe (automatisch fahrendes schmales Band?)
 tragen (zwei Treppen)	0:60 51766,-59693
 tragen (zwei Treppen)	0:60 51694,-59945
+tragen (4 Stufen)	0:10 6953,19939
 #
 #: section ^^^
 ###################################################################
@@ -4303,7 +4304,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-18
 #: check_frequency: 120d
 #: next_check: 2026-05-26 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4366,11 +4367,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 # 
 # REMOVED --- #: next_check_id: HEIDEKRAUTBAHN-2021 --- #: last_checked: 2026-03-22 (mapillary) --- #: check_frequency: 120d --- Weg am Bhf. Wilhelmsruh: wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7504,19459 7466,19492 7200,19715
 # REMOVED --- #: next_check_id: HEIDEKRAUTBAHN-2021 --- #: osm_watch: way id="1149630679" version="6" --- #: last_checked: 2026-03-11 (bahninfo-forum) --- #: check_frequency: 60d --- Mauerweg: wegen Bauarbeiten für die Heidekrautbahn gesperrt, vermutlich nur temporär	2::inwork 7309,19652 7266,19686 7218,19723 7200,19715 7160,19752 7104,19802
-# 
-#: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2026-04-03 (okas)
-#: check_frequency: 120d
-wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7297,19676 7285,19700 7184,19783 7138,19839 7123,19855 7090,19943
+# REMOVED --- #: next_check_id: HEIDEKRAUTBAHN-2021 --- #: last_checked: 2026-04-03 (okas) --- #: check_frequency: 120d --- wegen Bauarbeiten gesperrt, möglicherweise dauerhaft	2::inwork 7297,19676 7285,19700 7184,19783 7138,19839 7123,19855 7090,19943
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="5"
@@ -4699,6 +4696,20 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 # REMOVED --- #: last_checked ^^^
 # 
 # REMOVED (bis zum Knick offen) --- #: next_check_id: MARIENUFER-2023 --- #: osm_watch: way id="1272560911" version="2" --- #: last_checked: 2025-07-19 --- #: check_frequency: 90d --- #: next_check: 2026-12-31 (entwicklungsstadt) --- # REMOVED (hier nicht mehr) --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22470,3109
+# 
+#: next_check_id: MARIENUFER-2023
+#: last_checked: 2026-04-18 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 (entwicklungsstadt) vvv
+#: osm_watch: way id="1069273104" version="6"
+Helmut-Rupprecht-Str.: noch gesperrt	2::inwork 22470,3109 22476,3035 22485,2937
+#: osm_watch: way id="1069273103" version="19"
+#: osm_watch: node id="11816929582" version="3"
+Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 # REMOVED (mittlerweile wieder offen) --- #: next_check_id: BEHRENSUFER-2023 --- #: osm_watch: way id="41340056" version="26" --- #: last_checked: 2023-08-21 --- #: check_frequency: 240d --- #: next_check: 2028-12-31 --- Wilhelminenhofstr.: wegen Bauarbeiten am Behrens-Ufer gesperrt	2::inwork 19139,5627 19184,5554
 # REMOVED --- #: next_check_id: YORCKSTRBR5-2023 --- #: last_checked: 2023-09-20 --- #: check_frequency: 90d --- #: next_check: 2023-09-30 --- Hellweg-Parkplatz: wegen Bauarbeiten an der Rampe zur Yorckstraßenbrücke 5 gesperrt	2::inwork 8242,9699 8243,9766
 # 
@@ -4727,7 +4738,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-03-22
+#: last_checked: 2026-04-18
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4735,7 +4746,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-04-08 vvv
+#: last_checked: 2026-04-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4954,7 +4965,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
-#: last_checked: 2026-04-03
+#: last_checked: 2026-04-18
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
 # REMOVED --- #: next_check: 2027-06-30
@@ -5000,7 +5011,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
 #: osm_watch: way id="1084269868" version="19"
-#: last_checked: 2026-04-03
+#: last_checked: 2026-04-18
 #: check_frequency: 21d
 Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
 # REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485

@@ -1083,12 +1083,18 @@ neu asphaltiert	RW2; 10997,16280 10989,16197 10982,16121
 	RW1; 10982,16121 10975,16010 10969,15944 10964,15896 10953,15787
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert, allerdings Mosaikpflaster an allen Auffahrten 
 #: note: an Kreuzungen grün-rot-grün beschichtet
-Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581 10917,15525
+Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697
 #: next_check_id: SCHOENHAUSERALLEE-2024
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauersperrung-uber-hunderte-meter-millionen-radstreifen-in-der-schonhauser-allee-in-berlin-kaum-nutzbar-15484732.html
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2026-03-21
+#: last_checked: 2026-04-17 (Tsp) vvv
+#: next_check: 2026-09-15 (Tsp) vvv
+#: XXX nach den Bauarbeiten wiederherstellen: Radspur, niedrige Protektion	RW4;
+provisorische Radwegführung über Hochbord	RW2;  10941,15697 10925,15581 10917,15525
 provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
+#: next_check ^^^
+#: last_checked ^^^
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
 neu asphaltiert	RW1; 10883,15251 10883,15129
@@ -2463,7 +2469,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-04-03 vvv
+#: last_checked: 2026-04-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 asphaltiert	RW2; 17681,7589 17611,7690
@@ -3368,7 +3374,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-18
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3379,7 +3385,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-18
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4717,7 +4723,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 	RW2; 25179,5815 25121,5795
 	RW4; 25121,5795 25028,5756 25015,5751
 	RW1; 22700,4351 22674,4309
-	RW2;RW1 22674,4309 22641,4095 22640,4081 22643,4058 22666,3888
+	RW2;RW1 22674,4309 22657,4281 22636,4095 22640,4081 22643,4058 22666,3888
 # 
 #: XXX wird hier eine Grünbeschichtung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
@@ -4731,7 +4737,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2025-12-06 vvv
+#: last_checked: 2026-04-18 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693

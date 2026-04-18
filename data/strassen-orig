@@ -3622,14 +3622,15 @@ Grünauer Str. (Köpenick)	H 22058,2700 22050,2736 22004,2904 21967,3102 21958,316
 Köllnischer Platz	H 21781,4470 21789,4520
 Teichmummelring	N 22246,2272 22418,2390 22454,2342 22271,2214
 Ankerweg	N 22118,2559 22159,2585 22197,2612
-An der Brücke	NN 22197,2612 22170,2631 22110,2643 22083,2637
+An der Brücke	NN 22197,2612 22170,2631 22110,2643
+(An der Brücke - Regattastr.)	NN 22110,2643 22083,2637
 Am Ruderverein	N 22153,2482 22221,2520 22270,2549
 An der Dahme	N 22197,2612 22270,2549 22358,2460
 #: next_check_id: NORD52-2019
 #: XXX Wird dieser Abschnitt einen Straßennamen bekommen?
 #: osm_watch: way id="488104821" version="8"
 #: osm_watch: way id="520100569" version="6"
-#: last_checked: 2025-05-20
+#: last_checked: 2026-04-18
 #: check_frequency: 180d
 (An der Dahme - Teichmummelring)	NN 22358,2460 22418,2390
 Gaffelsteig	N 22287,2431 22221,2520 22159,2585
@@ -3733,6 +3734,8 @@ An der Villa Bolle	N 22790,3135 22668,3125 22470,3109
 #: osm.highway: service
 An der Villa Bolle	N 22668,3125 22674,3052
 (An der Villa Bolle - Am Marienhain)	NN 22668,3125 22662,3200 22662,3205
+Helmut-Rupprecht-Str.	N 22470,3109 22476,3035 22485,2937
+Jeanne-Baret-Str.	N 22485,2937 22737,2956 22823,2962
 Niebergallstr.	N 23102,1637 23144,1439 23158,1379 23168,1335 23202,1192
 Peter-Gast-Weg	N 23144,1439 23030,1414
 Hugo-Wolf-Steig	N 23168,1335 23053,1308
@@ -4844,32 +4847,11 @@ Beethovenstr. (Wilhelmsruh)	N 7933,20171 8008,20332 8057,20430
 Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,19928 7223,19826 7324,19795 7522,19804
 (Fontanestr. - Kopenhagener Str.)	NN 7522,19804 7518,19762
 (Fontanestr. - Kopenhagener Str.)	N 7518,19762 7578,19753 7617,19748
-#: next_check_id: HEIDEKRAUTBAHN-2021
-#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bekommt-eine-neue-verbindung-nach-brandenburg-li.87110 (Spatenstich Ende November 2020)
-#: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/heidekrautbahn-wird-reaktiviert_a279508
-#: by: https://www.tagesspiegel.de/berlin/finanzierung-der-heidekrautbahn-unklar-warum-sich-der-wiederaufbau-der-berliner-pendlerstrecke-verzoegert/26183756.html#
-#: by: https://www.berliner-zeitung.de/mensch-metropole/endlich-baubeginn-bei-der-heidekrautbahn-li.119226?lid=true (Spatenstich am 2.12.2020)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8734 (außerdem: Verschwenkung des Mauerwegs im Bereich des NEB-Vorhabens, Asphaltiertung+3.50m Breite)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5674 (Ersatz für die derzeitige Verbindung gefordert)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5193 (Sperrung des Weges spätestens im 2. Quartal 2021)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8947 (Forderung nach einem Radweg)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5195&date=20210314 (Verlegung des Mauerwegs; noch keine Lösung zum Weg)
-#: by: https://www.baustellen-doku.info/berlin_heidekrautbahn_reaktivierung_stammstrecke/20210321/ (provisorische Verlegung des Mauerwegs, neu asphaltiert)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5193&date=2021-08-24 (Aufstellung eines Bebauungsplans?)
-#: by: https://www.baustellen-doku.info/berlin_heidekrautbahn_reaktivierung_stammstrecke/20230214/
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5195&date=20230401
-#: by: https://www.rbb24.de/panorama/beitrag/2024/11/berlin-reinickendorf-reaktivierung-heidekrautbahn-baubeginn-schleppend.html (Bauarbeiten?)
-#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=5195
-#: XXX: bleibt dieser Weg erhalten oder muss er der Heidekrautbahn weichen?
-#: XXX: Bebauungsplan 3-15b
-# REMOVED (deleted) --- #: osm_watch: way id="31428032" version="20"
-#: osm_watch: way id="386544517" version="6"
-#: osm_watch[closed]: note 2048562 13
-#: last_checked: 2026-04-03 (okas)
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2021-05-01
-(Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7285,19700 7297,19676
 Hertzstr.	N 7090,19943 7209,19928 7333,19911 7556,19882 7672,19869 7807,19811
+#: note: teilweise als Hertzstr. ausgeschildert
+#: osm.highway: service
+(Hertzstr. - PankowPark)	N 7090,19943 7031,19950 6990,19987 6953,19939
+(PankowPark - An der Nordbahn/Mauerweg)	NN 6953,19939 6950,19934
 Garibaldistr.	N 7324,19795 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7711,19956 7838,19884
 Hielscherstr.	N 7522,19804 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460 7866,20556 7933,20711 7966,20787
 Sommerstr. (Reinickendorf)	NH 8179,18756 8257,18684 8425,18542 8438,18444 8456,18371 8475,18283
@@ -7184,6 +7166,7 @@ Heiner-Müller-Str.	NN 17639,8627 17648,8626
 Heiner-Müller-Str.	N 17648,8626 17773,8588
 Ruth-Baumgarte-Str.	N 17794,8429 17738,8450 17682,8464 17608,8483
 Ruth-Baumgarte-Str.	NN 17608,8483 17599,8485
+#: note: blaue Straßenschilder
 An der Waldsiedlung	N 17682,8464 17652,8349
 #: note: blaue Straßenschilder
 Irmtraud-Morgner-Str.	N 17521,8549 17619,8558 17628,8556 17755,8519
@@ -7526,7 +7509,7 @@ Kinzerallee	N 22094,5672 22154,5659 22236,5633 22383,5611
 #: oldname: -20101101 Waldstr. (Köpenick)
 Zur Güterbahn	N 23346,5723 23328,5737 23327,5817
 Bellevuestr. (Köpenick)	NH 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
-Wendenschloßstr.	H 23451,4877 23388,4864 23059,4635 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22759,4430 22740,4415 22700,4351 22674,4309 22641,4095 22640,4081 22643,4058 22666,3888 22694,3693 22701,3643 22706,3607 22714,3558 22734,3433 22743,3377 22790,3135 22802,3081 22811,3037 22823,2962 22831,2915 22849,2856 22878,2758 22902,2681 22904,2675 22920,2622 22982,2418 22991,2387 23008,2331 23019,2296 23064,2147 23099,2031 23185,1649
+Wendenschloßstr.	H 23451,4877 23388,4864 23059,4635 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22759,4430 22740,4415 22700,4351 22674,4309 22657,4281 22636,4095 22640,4081 22643,4058 22666,3888 22694,3693 22701,3643 22706,3607 22714,3558 22734,3433 22743,3377 22790,3135 22802,3081 22811,3037 22823,2962 22831,2915 22849,2856 22878,2758 22902,2681 22904,2675 22920,2622 22982,2418 22991,2387 23008,2331 23019,2296 23064,2147 23099,2031 23185,1649
 Wendenschloßstr.	N 23185,1649 23214,1522 23243,1398 23295,1145
 #: XXX_osm: bei osm evtl. falsch geschrieben (kein ß)
 Am Schloßberg	N 22791,4457 22801,4443 22866,4352
@@ -15193,7 +15176,7 @@ Interessentenweg	N 6453,19737 6501,19956 6565,20026 6627,20045 6659,20135
 (ehem. Mauerweg)	NN 8562,18642 8578,18629
 (An der Nordbahn)	NN 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
 # REMOVED --- (An der Nordbahn)	NN 7466,19492 7200,19715
-(An der Nordbahn)	NN 7200,19715 7160,19752 7104,19802 6680,20165 6395,20413
+(An der Nordbahn)	NN 7200,19715 7160,19752 7104,19802 6950,19934 6680,20165 6395,20413
 (Markscheiderstr. - An der Nordbahn)	NN 7105,19677 7102,19702 7121,19726
 Buddestr. (Niederschönhausen)	NN 8648,18585 8737,18516
 Buddestr. (Niederschönhausen)	N 8737,18516 8789,18476
@@ -16150,7 +16133,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-18
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16545,7 +16528,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-18
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -16612,6 +16595,8 @@ Pauline-Staegemann-Str.	N 11652,13372 11589,13305
 Pauline-Staegemann-Str.	NN 11578,13310 11526,13252
 Anne-Frank-Str.	N 19507,556 19576,533 19595,526 19677,498 19741,476 19852,437
 (Anne-Frank-Carée, westlicher Weg)	NN 19576,533 19537,420
+#: osm.highway: service
+(Anne-Frank-Carée, Verbindung zwischen Erxlebenstr. und Hassoweg)	N 19624,377 19677,498
 Kunibertstr.	N 19595,526 19648,656 19660,696 19694,811
 Hassoweg	N 19677,498 19726,628 19741,671 19781,767
 Strelitzer Str.	N 9856,14204 9800,14306 9679,14511 9621,14624 9517,14785
@@ -17530,7 +17515,7 @@ Hüttendorfer Weg	N 21466,-281 21402,-116
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="5"
 #: osm_watch: way id="28264046" version="13"
-#: last_checked: 2025-12-21 (indoor check)
+#: last_checked: 2026-04-18
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375
@@ -17969,12 +17954,12 @@ Flemmingstr. (Köpenick)	N 21856,4910 21848,4882 21726,4537
 Charlottenstr. (Köpenick)	N 23036,3929 23027,3916 22966,3912 22855,3902 22666,3888 22538,3889 22456,3889
 #: next_check_id: FUNKWERK-2025
 #: XXX Bekommt diese Straße noch einen Straßennamen?
-#: last_checked: 2025-12-06
+#: last_checked: 2026-04-18
 #: check_frequency: 180d
 #: note: Privatstraße
 (Planstraße am ehemaligen Funkwerk)	N 22538,3889 22553,3592 22586,3595
 Karlstr. (Köpenick)	N 22456,3889 22458,4134 22502,4260 22556,4386
-Luisenstr. (Köpenick)	N 22641,4095 22458,4134 22348,4177 22319,4197 22279,4220
+Luisenstr. (Köpenick)	N 22636,4095 22458,4134 22348,4177 22319,4197 22279,4220
 Gartenstr. (Köpenick)	N 22456,3889 22281,4033 22263,4120 22279,4220 22302,4255 22362,4331 22382,4361 22419,4457
 Spitzerstr.	N 22319,4197 22358,4282 22385,4317 22425,4370 22451,4441
 Kietz	N 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
