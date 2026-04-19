@@ -490,7 +490,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-04-15
+#: last_checked: 2026-04-19
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -4655,9 +4655,9 @@ Treptower Park: wassergebundene Decke	Q1+ 14889,9381 15003,9337 15163,9200
 Treptower Park: Kleinsteinpflaster	Q1- 15163,9200 15183,9186 15213,9166
 Treptower Park: wassergebundene Decke	Q1+ 15213,9166 15275,9140 15359,9131 15407,9151
 #: historical_note: bis 2025: Schotterweg, Q2+
-(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916
+(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15558,8820 15505,8829 15439,8839 15297,8921 15250,8911
 #: historical_note: bis 2025/2026: Asphalt, Q0
-(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15245,8916 15223,8893
+(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15250,8911 15230,8888
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6313,8254 6385,8274 6459,8281 6552,8281
 Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3569,11473 3554,11617
 Goethepark: Asphalt	Q1 3467,11373 3594,11372
@@ -10127,12 +10127,15 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307
 #: historical_note: früher (bis Anfang 2025) Asphalt, Q0
 (Treptower Park): wassergebundene Decke	Q1 14955,9294 14898,9364 14889,9381 14879,9433
 #: historical_note: früher (bis 2025/2026) Asphalt, Q0
-(Treptower Park): wassergebundene Decke	Q1 15159,8934 15223,8893 15235,8841 15298,8781 15343,8714 15378,8668
+(Treptower Park): wassergebundene Decke	Q1 15159,8934 15230,8888 15235,8841 15254,8816
+(Treptower Park): wassergebundene Decke	Q1 15254,8816 15190,8730
+#: historical_note: früher (bis 2025/2026) Asphalt, Q0
+(Treptower Park): wassergebundene Decke	Q1 15254,8816 15298,8781 15343,8714 15378,8668
 # REMOVED --- #: next_check_id: TREPTOWERPARK-2018 --- #: last_checked: 2019-10-19 vvv --- früher Asphalt Q0-
-(Treptower Park): wassergebundene Decke	Q1 15505,8829 15468,8806 15413,8785 15343,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
+(Treptower Park): wassergebundene Decke	Q1 15505,8829 15468,8806 15413,8785 15343,8714 15269,8732 15190,8730 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park - Karpfenteichstr.): wassergebundene Decke	Q1 14918,8813 14883,8823 14852,8799
 #: historical_note: früher (bis 2025/2026) Asphalt, Q0
-(Treptower Park): wassergebundene Decke	Q1 15181,8967 15245,8916
+(Treptower Park): wassergebundene Decke	Q1 15181,8967 15250,8911
 Florentinestr.: Asphalt	Q0 16633,20174 16728,20189
 (Florentinestr., Verlängerung): wassergebundene Decke	Q1 16728,20189 17050,20298
 (Weg): Asphalt	Q0 17061,20451 17130,20436 17426,20265 17643,20144 17745,20095 17842,20065
@@ -11762,7 +11765,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2026-02-11 vvv
+#: last_checked: 2026-04-19 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -12409,7 +12412,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX mittlerweile gibt es im Schatten der kleinen Baustelle an der Simon-Dach-Str. Ausbesserungsarbeiten; anscheinend werden diese bis mindestens Boxhagener Platz durchgeführt --- Sperrung ist mittlerweile beendet, Ausbesserungsarbeiten stehen noch aus
-#: last_checked: 2026-04-18
+#: last_checked: 2026-04-19
 #: check_frequency: 30d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -13178,13 +13181,8 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Margueritenring - Köpenicker Str.): alter Asphalt	Q1- 17046,1708 17100,1650
 (Grünstreifen 1929): Verbundsteinpflaster	Q1 17102,2420 17039,2358 17179,2186 17194,2131 17190,2052
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
-#: next_check_id: SPREEPARK-2022
-#: XXX wird hier die Fahrbahndecke noch verbessert?
-#: osm_watch: way id="1061650562" version="1"
-#: last_checked: 2026-03-22
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2023-06-30
-(Am Plänterwald - Spreepark): unebener Asphalt	Q1 16084,8833 16086,8860
+# REMOVED --- #: next_check_id: SPREEPARK-2022 --- #: XXX wird hier die Fahrbahndecke noch verbessert? --- #: osm_watch: way id="1061650562" version="1" --- #: last_checked: 2026-03-22 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-06-30 --- #: historical_note: früher (bis Frühjahr 2026): unebener Asphalt, Q1
+(Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 16084,8833 16086,8860
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8747 (Antrag zur Sanierung)
 Lepsiusstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0- 4520,5793 4558,5863 4603,5954 4646,6040 4652,6052 4689,6122 4716,6173 4730,6198 4776,6284 4840,6405 4846,6417 4894,6509
 Reichenhaller Str.: Verbundsteinpflaster	Q1 3094,7790 3198,7787
@@ -17985,7 +17983,9 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: osm_watch: way id="40267304" version="19"
 #: last_checked: 2026-04-08
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25620,12872
-#: osm_watch: way id="24204822" version="30"
+# REMOVED --- #: osm_watch: way id="24204822" version="32"
+#: osm_watch: way id="9925057" version="27"
+#: osm_watch: way id="628125261" version="10"
 #: last_checked: 2026-04-08
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 # REMOVED --- #: next_check ^^^

@@ -83,7 +83,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="30"
 #: osm_watch: way id="1072662717" version="34"
-#: last_checked: 2026-04-15
+#: last_checked: 2026-04-19
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -264,11 +264,11 @@ Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), Gehweg für Radfahre
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2026-01-21 vvv
+#: last_checked: 2026-04-19 (traffic) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
-#: also_indoor: traffic (B,T)
+#: also_indoor: traffic (B,T,no-G)
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 #: next_check ^^^
 #: check_frequency ^^^
@@ -850,7 +850,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: also_indoor: traffic (G,no-T)
 #: source_id: LMS-BR:392304/72 viz2021:13.60111,52.45156, (Bauarbeiten im angrenzenden Fürstenwalder Damm, bis 30.04.2026) (bis 08.05.2026)
-#: last_checked: 2026-03-31 (traffic)
+#: last_checked: 2026-04-19 (traffic)
 #: check_frequency: 21d
 #: next_check: 2026-05-08 (VIZ-Verkehrsmeldung)
 Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
@@ -1549,8 +1549,8 @@ Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14488,9848 1
 (Uferweg - Puschkinallee): Fußgänger	q2 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fußgänger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fußgänger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
-Treptower Park: einige Fußgänger	q1+ 15558,8820 15505,8829 15439,8839 15297,8921 15245,8916 15223,8893
-Treptower Park: einige Fußgänger	q1+ 15505,8829 15468,8806 15413,8785 15343,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
+Treptower Park: einige Fußgänger	q1+ 15558,8820 15505,8829 15439,8839 15297,8921 15250,8911 15230,8888
+Treptower Park: einige Fußgänger	q1+ 15505,8829 15468,8806 15413,8785 15343,8714 15269,8732 15190,8730 15036,8728 14949,8773 14918,8813 14854,8964
 Treptower Park: einige Fußgänger	q1+ 14918,8813 14883,8823 14852,8799
 Treptower Park: einige Fußgänger	q1+ 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15214,9090 15183,9186
 Treptower Park: einige Fußgänger	q1 14588,9473 14556,9581
