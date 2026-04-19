@@ -389,32 +389,33 @@ for my $file (@files) {
 			 if (!$extra) {
 			     push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=".DEFAULT_ZOOM."&profile=traffic", $extra];
 			 } else {
+			     my $is_none = $extra eq '(none)';
 			     my $decorate_label = sub {
 				 my($label, $extra_begin) = @_;
-				 if (defined $extra_begin && $extra_begin =~ /^(?:ex|no)/) {
+				 if ($is_none || (defined $extra_begin && $extra_begin =~ /^(?:ex|no)/)) {
 				     "($label)";
 				 } else {
 				     $label;
 				 }
 			     };
-			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*G\b/)) {
+			     if ($is_none || $extra =~ /\b(ex-|re-|no-)*G\b/) {
 				 push @extra_url_defs, [$decorate_label->('Google', $1), sprintf('http://www.google.com/maps/@%s,%s,%dz/data=!5m1!1e1', $py, $px, DEFAULT_ZOOM)];
 			     }
-			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*T\b/)) {
+			     if ($is_none || $extra =~ /\b(ex-|re-|no-)*T\b/) {
 				 push @extra_url_defs, [$decorate_label->('TomTom', $1), sprintf('https://plan.tomtom.com/de/?p=%s,%s,%.2fz', $py, $px, DEFAULT_ZOOM)];
 			     }
-			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*W\b/)) {
+			     if ($is_none || $extra =~ /\b(ex-|re-|no-)*W\b/) {
 				 push @extra_url_defs, [$decorate_label->('Waze', $1), sprintf('https://www.waze.com/en/live-map/directions?to=ll.%s%%2C%s', $py, $px)];
 			     }
-			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*H\b/)) {
+			     if ($is_none || $extra =~ /\b(ex-|re-|no-)*H\b/) {
 				 push @extra_url_defs, [$decorate_label->('Here', $1), sprintf('https://wego.here.com/?map=%f,%f,%.2f', $py, $px, DEFAULT_ZOOM)];
 			     }
-			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*A\b/)) {
+			     if ($is_none || $extra =~ /\b(ex-|re-|no-)*A\b/) {
 				 my($px0,$px1) = map { $px + $_*0.01136 } (-1, +1);
 				 my($py0,$py1) = map { $py + $_*0.00245 } (-1, +1);
 				 push @extra_url_defs, [$decorate_label->('ADAC', $1), sprintf("https://maps.adac.de/?traffic=construction,announcements,flow&bounds=%.5f,%.5f-%.5f,%.5f", $py0,$px0,$py1,$px1)];
 			     }
-			     if (($extra eq '(none)' || $extra =~ /\b(ex-|re-|no-)*B\b/)) { # order last, as it is showing the same data as TomTom and displaying on mobile devices is broken
+			     if ($is_none || $extra =~ /\b(ex-|re-|no-)*B\b/) { # order last, as it is showing the same data as TomTom and displaying on mobile devices is broken
 				 push @extra_url_defs, [$decorate_label->('Bing', $1), sprintf('https://www.bing.com/maps/?cp=%s~%s&lvl=%s&trfc=1', $py, $px, DEFAULT_ZOOM)];
 			     }
 			 }
