@@ -987,8 +987,10 @@ Kreisverkehr	Roundabout -54051,23436
 Kreisverkehr	Roundabout -7202,-4017
 #: by: osm
 Kreisverkehr	Roundabout 21861,-2154
-#: by:  osm
+#: by: osm
 Kreisverkehr	Roundabout -16371,19111
+#: by: mapillary
+Kreisverkehr	Roundabout 27934,-10286
 #: XXX_prog ^^^
 #: ignore ^^^
 #: section ^^^
@@ -2097,9 +2099,10 @@ B198 - Alexanderhof: nicht ausgeschildert	CP2; 42328,99227 42355,99280
 Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: XXX Wann sind die Straßen ausgeschildert? vvv
-#: last_checked: 2026-04-19 vvv
-#: check_frequency: 30d vvv
+#: XXX Wann ist die Straße ausgeschildert?
+#: last_checked: 2026-04-20
+#: check_frequency: 30d
+Paul-und-Paula-Promenade: nicht ausgeschildert	CS 14886,10748 14909,10732 14984,10677
 # REMOVED (ausgeschildert) --- #: note: nur ein kleines provisorisches Papierschild an der Kreuzung Ulrich-Plenzdorf-Str. hängt an der Hauswand --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15163,10758 15151,10699
 # REMOVED (ausgeschildert) --- Ingrid-Reschke-Str.: nicht ausgeschildert	CS 15151,10699 15140,10647 15138,10638
 # REMOVED (ausgeschildert) --- Ulrich-Plenzdorf-Str.: nicht ausgeschildert	CS 14994,10732 15071,10716
@@ -2108,10 +2111,6 @@ Grünow - Alexanderhof: nicht Alexanderhof	CP2; 42911,101207 43003,101043
 # REMOVED (ausgeschildert) --- Gustav-Tempel-Str.: nicht ausgeschildert	CS 15245,10719 15236,10684 15220,10682 15205,10616 15200,10600
 # REMOVED (mittlerweise ausgeschildert) --- An den Eiswerken: nicht ausgeschildert	CP2; 15004,10791 14994,10732
 # REMOVED (ausgeschildert) --- An den Eiswerken: nicht ausgeschildert	CS 14994,10732 14984,10677
-Paul-und-Paula-Promenade: nicht ausgeschildert	CS 14886,10748 14909,10732 14984,10677
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
 # 
 Rubensstr.: nicht ausgeschildert	CP2; 6306,7864 6431,7883
 # 

@@ -3507,39 +3507,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.winzerfest-köpenick.de/ (existiert mittlerweile nicht mehr; siehe unten)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.907823.php (fällt 2020 aus)
-#: by: https://www.winzerfest-koepenick.de/?date=20220317 (geplant für 22.04. bis zum 24.04.2022)
-#: by: https://www.winzerfest-koepenick.de/?date=20230322
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1311487.php
-#: by: https://www.winzerfest-koepenick.de/ (19.4. bis 21.4.2024) (25.04.2025 - 27.04.2025)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1549582.php
-#: by: https://www.laubinger.de/event/18-koepenicker-winzerfruehlingplant/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1653814.php
-# REMOVED --- #: tempex: 20170421T1400-20170423 vvv
-Luisenhain	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
-Zugang zum Luisenhain	2::temp 22074,4664 22138,4642
-# REMOVED (hier 2026 nicht) --- Alt-Köpenick	2::temp 22093,4499 22111,4562 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
-# REMOVED (hier 2026 nicht) --- Grünstraße	2::temp 22111,4562 22162,4546 22214,4548
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1776340800,
-         'id' => 2419,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              16,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Köpenicker Winzerfrühling: Luisenhain, Schlossinsel, Behinderungen möglich, 17.04.2026 bis 19.04.2026',
-         'type' => 'gesperrt',
-         'until' => 1776635999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6115,6 +6083,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: source_id: adac:89620388 (bis voraussichtlich 08.08.2025) (inaktiv)
 #: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025) (inaktiv)
 #: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558,26.01.2026,05:00 (bis 06.03.2026) (inaktiv)
+#: source_id: LMS-BR:405392/72 viz2021:13.57271,52.46072,20.04.2026,07:00 (bis 30.04.2026)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -6140,6 +6109,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: by: https://viz.berlin.de/aktuelle-meldungen/umbau-bahnhof-kopenick-sperrung-hammerlingstrasse/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1656616.php (neue Sperrung im April 2026, siehe auch DB-Seite)
 #: by: https://www.entwicklungsstadt.de/berlin-koepenick-vollsperrung-wegen-umbau-am-s-bahnhof/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mjvnk53jgk23
 #: osm_watch: note 3566736 14
 # REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -7626,7 +7596,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2026-04-01 (mapillary)
+#: last_checked: 2026-04-18 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -9651,7 +9621,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        undef,
        {
          'data' => '#: also_indoor: traffic (G,H,no-T)
-#: last_checked: 2026-03-30 (daf)
+#: last_checked: 2026-04-18 (mapillary)
 #: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 ',

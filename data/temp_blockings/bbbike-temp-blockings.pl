@@ -36784,6 +36784,7 @@ EOF
 #: source_id: adac:89620388 (bis voraussichtlich 08.08.2025) (inaktiv)
 #: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025) (inaktiv)
 #: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558,26.01.2026,05:00 (bis 06.03.2026) (inaktiv)
+#: source_id: LMS-BR:405392/72 viz2021:13.57271,52.46072,20.04.2026,07:00 (bis 30.04.2026)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -36809,6 +36810,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/umbau-bahnhof-kopenick-sperrung-hammerlingstrasse/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1656616.php (neue Sperrung im April 2026, siehe auch DB-Seite)
 #: by: https://www.entwicklungsstadt.de/berlin-koepenick-vollsperrung-wegen-umbau-am-s-bahnhof/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mjvnk53jgk23
 #: osm_watch: note 3566736 14
 # REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -43659,7 +43661,7 @@ EOF
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2026-04-01 (mapillary)
+#: last_checked: 2026-04-18 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -47779,6 +47781,7 @@ EOF
 #: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
 #: source_id: adac:1389146504 (bis 31.07.2025) (bis 15.08.2025) (bis 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.23143,52.50934, (bis 15.08.2025) (bis 30.09.2025) (inaktiv)
+#: source_id: LMS-BR:405374/72 viz2021:13.231178,52.509307,20.04.2026,06:00 (neue Bauarbeiten westlich der Passenheimer Str., ignoriert, bis 16.10.2026)
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
 #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt, mittlerweile bis 15.08.2025
 # REMOVED --- #: next_check: 2025-04-30
@@ -50537,7 +50540,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,H,no-T)
-#: last_checked: 2026-03-30 (daf)
+#: last_checked: 2026-04-18 (mapillary)
 #: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 EOF
