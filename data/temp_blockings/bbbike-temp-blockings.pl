@@ -14368,7 +14368,7 @@ EOF
        until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2025-10-25T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 1,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31298,9 +31298,9 @@ EOF
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="19"
 #: osm_watch: way id="1148659680" version="7"
-#: last_checked: 2026-03-25
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: check_frequency: 30d
+#: last_checked: 2026-04-21 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
@@ -34023,7 +34023,7 @@ EOF
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 21
 #: last_checked: 2026-03-25
-#: check_frequency: 30d
+#: check_frequency: 45d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 EOF
@@ -38878,9 +38878,9 @@ EOF
 # REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6836,2460 6965,2418
 # REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
 # REMOVED (alte Sperrung) --- östlicher Abschnitt ab Am Gemeindepark	2::inwork 7172,2343 7285,2377
-#: also_indoor: traffic (T,no-G,no-H,no-W)
+#: also_indoor: traffic (T,G,H,W)
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-04-01
+#: last_checked: 2026-04-21
 #: check_frequency: 21d (traffic)
 Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7285,2377 7172,2343 7051,2366 6965,2418
 EOF
@@ -40224,11 +40224,11 @@ EOF
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch[closed]: note 3834145 7
 #: osm_watch: note 3834144 10
-#: also_indoor: traffic (ex-re-T[wrongly removed],ex-H[wrongly removed],re-G,ex-W[wrongly removed],ex-A[wrongly removed])
+#: also_indoor: traffic (ex-re-T[wrongly removed and no traffic],ex-H[wrongly removed],re-G,ex-W[wrongly removed],ex-A[wrongly removed])
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2026-04-12
+#: last_checked: 2026-04-21 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -45173,7 +45173,7 @@ EOF
 EOF
      },
      { from  => 1718254800, # 2024-06-13 07:00
-       until => $isodate2epoch->("2026-09-01 17:00:00"), # 1725030000, # 2024-08-30 17:00
+       until => 1776793905, # $isodate2epoch->("2026-09-01 17:00:00"), # 1725030000, # 2024-08-30 17:00
 #      text  => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, voraussichtlich bis Ende 2025',
        text  => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, möglicherweise bis zum Sommer 2026',
        type  => 'handicap',
@@ -45189,8 +45189,8 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1574495.php
 #: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
 #: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/
-#: last_checked: 2026-03-24 (traffic)
-#: check_frequency: 30d
+#: by: https://www.entwicklungsstadt.de/reinickendorf-roedernallee-118-studenten-wohnheim-waechst/
+# REMOVED --- #: last_checked: 2026-03-24 (traffic) --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
 	q3::inwork; 5476,20372 5801,20339
 EOF
@@ -45283,7 +45283,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-04-16 vvv
+#: last_checked: 2026-04-21 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -47355,14 +47355,16 @@ EOF
 	q3::inwork 5069,10662 5047,10381
 EOF
      },
-     { from  => $isodate2epoch->("2025-03-28 00:00:00"), # 1739473908, # 1739682000, # 2025-02-16 06:00
-       until => $isodate2epoch->("2025-04-04 18:00:00"), # 1739473908, # 1740157200, # 2025-02-21 18:00
+     { from  => $isodate2epoch->("2026-05-08 00:00:00"), # $isodate2epoch->("2025-03-28 00:00:00"), # 1739473908, # 1739682000, # 2025-02-16 06:00
+       until => $isodate2epoch->("2026-05-13 06:00:00"), # $isodate2epoch->("2025-04-04 18:00:00"), # 1739473908, # 1740157200, # 2025-02-21 18:00
 #      text  => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 17.02.2025 06:00 Uhr bis 21.02.2025 18:00 Uhr',
-       text  => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 29.03.2025 05:00 Uhr bis 04.04.2025 18:00 Uhr',
+#      text  => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 29.03.2025 05:00 Uhr bis 04.04.2025 18:00 Uhr',
+       text  => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 09.05.2026 07:00 Uhr bis 13.05.2026 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 246002279 (bis 21.02.2025) (inaktiv)
 #: source_id: 256000273 (bis 04.04.2025) (inaktiv)
+#: source_id: 266000271 (bis 13.05.2026)
 	2::inwork 24749,22618 24719,22727 24718,22731 24761,23151
 EOF
      },
@@ -48306,9 +48308,9 @@ EOF
 # REMOVED --- #: next_check_id: GITSCHINER-2025 --- #: note: Evtl. hatten die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun, deshalb der next_check_id-Eintrag.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
 #: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026) (bis 30.04.2026)
-#: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
+#: also_indoor: traffic (re-W,re-H,no-T,G)
 #: note: Baustelle ist mittlerweile vom Erkelenzdamm weiter Richtung Admiralstr. gewandert; mittlerweile (2026-03-17) kann man vorbeifahren (außerhalb der Arbeitszeiten?)
-#: last_checked: 2026-04-03 (mapillary)
+#: last_checked: 2026-04-21 (traffic)
 #: check_frequency: 21d
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -48953,11 +48955,13 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2; im April 2026 nach Hinweis von Thomas K. wieder reaktiviert
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: last_checked: 2026-04-08 (traffic) vvv
+#: last_checked: 2026-04-21 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-04 (Halteverbotsschilder) vvv
 # REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
 #: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3
+#: XXX Ist dieser Abschnitt noch immer gesperrt?
+#: next_check: 2026-04-21
 Borstellstr.	q4::inwork 6532,4422 6491,4391
 #: note: hier Halteverbotsschilder bis 4.11.2025
 Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
@@ -48976,7 +48980,7 @@ EOF
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="5"
-#: last_checked: 2026-04-03 (traffic)
+#: last_checked: 2026-04-21 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -49040,16 +49044,17 @@ EOF
 	q4::inwork 16915,11634 16957,11726
 EOF
      },
-     { from  => 1747396800, # 2025-05-16 14:00
-       until => 1747512000, # 2025-05-17 22:00
+     { from  => $isodate2epoch->("2026-06-15 00:00:00"), # 1747396800, # 2025-05-16 14:00
+       until => $isodate2epoch->("2026-06-16 22:00:00"), # 1747512000, # 2025-05-17 22:00
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 5]],
        recurrence_prewarn_days => 21,
-       text  => 'Pfarrstr. und Kaskelstr.: Straßenfest (Viva Victoria), am 17.5.2025 von 14 bis 22 Uhr',
+       text  => 'Pfarrstr. und Kaskelstr.: Straßenfest (Viva Victoria), voraussichtlich am 16.5.2026 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: note: frühere Veranstaltungstage: 14.5.2022, 17.5.2025, ...
 #: url: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
+#: by: https://www.lichtenberg-nachrichten.de/kalender-termine/
 	q4::temp 15434,11086 15359,11115 15461,11313
 	q4::temp 15245,11162 15359,11115 15279,10862
 EOF
@@ -51348,7 +51353,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-17 (mapillary) (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
+#: last_checked: 2026-04-21 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -51598,7 +51603,7 @@ EOF
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
 #: osm_watch: note 5206966 4
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-04-12 vvv
+#: last_checked: 2026-04-21 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 # REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3027,10560 3123,10504
@@ -51831,7 +51836,9 @@ EOF
 #: osm_watch: way id="1417905902" version="3"
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 1
-#: last_checked: 2026-03-25
+#: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
+#: last_checked: 2026-04-21 (traffic)
+#: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 EOF
      },
@@ -52133,6 +52140,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: FORSTALLEEZEUTHEN-2026
+#: by: https://www.zeuthen.de/Information-zum-Ausbau-der-Forstallee-im-Zeitraum-Februar-2026-November-2027-705728.html (weitere Arbeiten bis November 2027)
 #: source_id: 266100065 (bis 21.08.2026)
 	q4::inwork 25400,-6408 25083,-6494
 EOF
@@ -52244,11 +52252,11 @@ EOF
 EOF
      },
      { from  => 1772708400, # 2026-03-05 12:00
-       until => 1776808740, # 2026-04-21 23:59
-       text  => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.03.2026 12:00 bis 21.04.2026 23:59',
+       until => $isodate2epoch->("2026-06-29 23:59:59"), # 1776808740, # 2026-04-21 23:59
+       text  => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.03.2026 12:00 bis 29.06.2026 23:59',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026)
+#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026) (bis 29.06.2026)
 #: also_indoor: traffic (T,G)
 	q4::inwork 6044,3110 5936,2977 5853,3050
 	q4::inwork 5774,2785 5936,2977 6022,2901
@@ -52340,7 +52348,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (G,no-T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-04-16 (mapillary)
+#: last_checked: 2026-04-21
 #: check_frequency: 21d (traffic)
 # REMOVED --- #: next_check: 2026-03-29
 	q4::inwork; 11821,14317 12077,14186
@@ -52398,7 +52406,7 @@ EOF
        text  => 'Parchimer Allee - Britzer Park: Veranstaltung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 20.03.2026 07:00 bis 21.04.2026 20:00',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LMS-BR:402369/72 viz2021:13.44384,52.44579,20.03.2026,07:00 (bis 21.04.2026)
+#: source_id: LMS-BR:402369/72 viz2021:13.44384,52.44579,20.03.2026,07:00 (bis 21.04.2026) (inaktiv)
 #: also_indoor: traffic (no-G,T,H)
 #: by: https://www.berlin.de/events/2991117-2229501-britzer-baumbluete.html
 #: by: https://www.wollenschlaeger-berlin.de/67-britzer-baumbluete/ (70. Britzer Baumblüte)
@@ -52725,6 +52733,14 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2026-04-18
 	q4::inwork 22130,1961 22004,2149
+EOF
+     },
+     { from  => 1776722400, # 2026-04-21 00:00
+       until => 1811800799, # 2027-05-31 23:59
+       text  => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist unterbrochen, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis zum Frühjahr 2027',
+       type  => 'handicap',
+       data  => <<'EOF',
+	q4::inwork 18700,6604 18771,6699
 EOF
      },
     );

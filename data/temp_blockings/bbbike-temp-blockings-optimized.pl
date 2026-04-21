@@ -5038,9 +5038,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="19"
 #: osm_watch: way id="1148659680" version="7"
-#: last_checked: 2026-03-25
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: check_frequency: 30d
+#: last_checked: 2026-04-21 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
@@ -5455,7 +5455,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 21
 #: last_checked: 2026-03-25
-#: check_frequency: 30d
+#: check_frequency: 45d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
 ',
@@ -6641,9 +6641,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2892,15983 2809,16143
 # REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6836,2460 6965,2418
 # REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
 # REMOVED (alte Sperrung) --- östlicher Abschnitt ab Am Gemeindepark	2::inwork 7172,2343 7285,2377
-#: also_indoor: traffic (T,no-G,no-H,no-W)
+#: also_indoor: traffic (T,G,H,W)
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-04-01
+#: last_checked: 2026-04-21
 #: check_frequency: 21d (traffic)
 Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7285,2377 7172,2343 7051,2366 6965,2418
 ',
@@ -6960,11 +6960,11 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: historical_note: früher (Sommer 2023?) waren die Gehwege explizit für Radfahrer freigegeben, jetzt (Dezember 2023) stehen explizite Radfahrer-verboten-Schilder
 #: osm_watch[closed]: note 3834145 7
 #: osm_watch: note 3834144 10
-#: also_indoor: traffic (ex-re-T[wrongly removed],ex-H[wrongly removed],re-G,ex-W[wrongly removed],ex-A[wrongly removed])
+#: also_indoor: traffic (ex-re-T[wrongly removed and no traffic],ex-H[wrongly removed],re-G,ex-W[wrongly removed],ex-A[wrongly removed])
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2026-04-12
+#: last_checked: 2026-04-21 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
 # Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
@@ -7835,29 +7835,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
-#: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
-#: also_indoor: traffic (G,ex-H,ex-W,no-T)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
-#: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
-#: by: https://www.deutsches-architekturforum.de/thread/14764-reinickendorf-kleinere-projekte/?postID=766343#post766343 (Quartier Alt-Wittenau)
-#: by: https://www.gesobau.de/wohnungsbau/quartier-alt-wittenau/ (Bauphase bis Sommer 2026)
-#: by: https://entwicklungsstadt.de/baufortschritt-in-alt-wittenau-gesobau-quartier-nimmt-gestalt-an/ (Fertigstellung Sommer 2026)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1574495.php
-#: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
-#: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/
-#: last_checked: 2026-03-24 (traffic)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
-	q3::inwork; 5476,20372 5801,20339
-',
-         'from' => 1718254800,
-         'id' => 4089,
-         'text' => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, möglicherweise bis zum Sommer 2026',
-         'type' => 'handicap',
-         'until' => 1788274800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7889,7 +7867,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-04-16 vvv
+#: last_checked: 2026-04-21 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -8408,7 +8386,18 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 246002279 (bis 21.02.2025) (inaktiv)
+#: source_id: 256000273 (bis 04.04.2025) (inaktiv)
+#: source_id: 266000271 (bis 13.05.2026)
+	2::inwork 24749,22618 24719,22727 24718,22731 24761,23151
+',
+         'from' => 1778191200,
+         'id' => 4236,
+         'text' => 'Bernau - Blumberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 09.05.2026 07:00 Uhr bis 13.05.2026 06:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1778644800
+       },
        {
          'data' => '#: also_indoor: traffic (re-G,W,ex-T,A)
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
@@ -8780,9 +8769,9 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
          'data' => '# REMOVED --- #: next_check_id: GITSCHINER-2025 --- #: note: Evtl. hatten die Bauarbeiten etwas mit den Arbeiten in der Gitschiner Straße zu tun, deshalb der next_check_id-Eintrag.
 #: source_id: LMS-BR:381134/72 viz2021:13.41373,52.49797,25.08.2025,07:00 (Bauarbeiten in der Kohlfurter Str., bis 28.11.2025) (inaktiv)
 #: source_id: LMS-BR:391858/72 viz2021:13.41373,52.49797,01.12.2025,08:00 (bis 27.02.2026) (bis 30.04.2026)
-#: also_indoor: traffic (ex-W,ex-H,no-T,no-G)
+#: also_indoor: traffic (re-W,re-H,no-T,G)
 #: note: Baustelle ist mittlerweile vom Erkelenzdamm weiter Richtung Admiralstr. gewandert; mittlerweile (2026-03-17) kann man vorbeifahren (außerhalb der Arbeitszeiten?)
-#: last_checked: 2026-04-03 (mapillary)
+#: last_checked: 2026-04-21 (traffic)
 #: check_frequency: 21d
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 # REMOVED (wieder offen) --- Erkelenzdamm	q4::inwork 11117,10326 11094,10261
@@ -9047,11 +9036,13 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2; im April 2026 nach Hinweis von Thomas K. wieder reaktiviert
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: last_checked: 2026-04-08 (traffic) vvv
+#: last_checked: 2026-04-21 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-11-04 (Halteverbotsschilder) vvv
 # REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
 #: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3
+#: XXX Ist dieser Abschnitt noch immer gesperrt?
+#: next_check: 2026-04-21
 Borstellstr.	q4::inwork 6532,4422 6491,4391
 #: note: hier Halteverbotsschilder bis 4.11.2025
 Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
@@ -9071,7 +9062,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="5"
-#: last_checked: 2026-04-03 (traffic)
+#: last_checked: 2026-04-21 (traffic)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -9100,7 +9091,30 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: note: frühere Veranstaltungstage: 14.5.2022, 17.5.2025, ...
+#: url: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
+#: by: https://www.lichtenberg-nachrichten.de/kalender-termine/
+	q4::temp 15434,11086 15359,11115 15461,11313
+	q4::temp 15245,11162 15359,11115 15279,10862
+',
+         'from' => 1781474400,
+         'id' => 4342,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 21,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Pfarrstr. und Kaskelstr.: Straßenfest (Viva Victoria), voraussichtlich am 16.5.2026 von 14 bis 22 Uhr',
+         'type' => 'handicap',
+         'until' => 1781640000
+       },
        undef,
        undef,
        {
@@ -9949,7 +9963,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-17 (mapillary) (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
+#: last_checked: 2026-04-21 (Absperrung nur noch etwa 50m Länge, noch immer Einbahnstraße)
 #: check_frequency: 7d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -10090,7 +10104,7 @@ Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
 #: osm_watch: note 5206966 4
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-04-12 vvv
+#: last_checked: 2026-04-21 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 # REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3027,10560 3123,10504
@@ -10209,7 +10223,9 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: osm_watch: way id="1417905902" version="3"
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 1
-#: last_checked: 2026-03-25
+#: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
+#: last_checked: 2026-04-21 (traffic)
+#: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 ',
          'from' => undef,
@@ -10456,6 +10472,7 @@ Glaßbrennerstr.	q4::inwork 11543,16207 11632,16373
        undef,
        {
          'data' => '#: next_check_id: FORSTALLEEZEUTHEN-2026
+#: by: https://www.zeuthen.de/Information-zum-Ausbau-der-Forstallee-im-Zeitraum-Februar-2026-November-2027-705728.html (weitere Arbeiten bis November 2027)
 #: source_id: 266100065 (bis 21.08.2026)
 	q4::inwork 25400,-6408 25083,-6494
 ',
@@ -10516,16 +10533,16 @@ Ausgang Forster Str. (zum Rondell) (Tor ohne Drehkreuz)	2::night 12564,10121 125
          'until' => 1797620400
        },
        {
-         'data' => '#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026)
+         'data' => '#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026) (bis 29.06.2026)
 #: also_indoor: traffic (T,G)
 	q4::inwork 6044,3110 5936,2977 5853,3050
 	q4::inwork 5774,2785 5936,2977 6022,2901
 ',
          'from' => 1772708400,
          'id' => 4553,
-         'text' => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.03.2026 12:00 bis 21.04.2026 23:59',
+         'text' => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.03.2026 12:00 bis 29.06.2026 23:59',
          'type' => 'handicap',
-         'until' => 1776808740
+         'until' => 1782770399
        },
        {
          'data' => '#: next_check_id: BLOCKDAMMWEG-2026
@@ -10612,7 +10629,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        {
          'data' => '#: also_indoor: traffic (G,no-T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-04-16 (mapillary)
+#: last_checked: 2026-04-21
 #: check_frequency: 21d (traffic)
 # REMOVED --- #: next_check: 2026-03-29
 	q4::inwork; 11821,14317 12077,14186
@@ -10671,29 +10688,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'type' => 'handicap',
          'until' => 1780930800
        },
-       {
-         'data' => '#: source_id: LMS-BR:402369/72 viz2021:13.44384,52.44579,20.03.2026,07:00 (bis 21.04.2026)
-#: also_indoor: traffic (no-G,T,H)
-#: by: https://www.berlin.de/events/2991117-2229501-britzer-baumbluete.html
-#: by: https://www.wollenschlaeger-berlin.de/67-britzer-baumbluete/ (70. Britzer Baumblüte)
-	2::temp 13098,4452 13225,4495 13266,4507
-',
-         'from' => 1773900000,
-         'id' => 4562,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              3
-                            ]
-                          ],
-         'text' => 'Parchimer Allee - Britzer Park: Veranstaltung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 20.03.2026 07:00 bis 21.04.2026 20:00',
-         'type' => 'gesperrt',
-         'until' => 1776794400
-       },
+       undef,
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-03-2026-l68_schlieben-neubau-bruecke-muehlengraben
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2068%20Schlieben%20Neubau%20der%20Br%C3%BCcke%20%C3%BCber%20den%20M%C3%BChlengraben_Karte%20PM%2017-03-26.pdf
@@ -11003,6 +10998,15 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'text' => 'Waldstr. (Grünau): Bauarbeiten, Fahrbahn gesperrt, Umwege für den Rad- und Fußverkehr, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 18700,6604 18771,6699
+',
+         'from' => 1776722400,
+         'id' => 4589,
+         'text' => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist unterbrochen, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis zum Frühjahr 2027',
+         'type' => 'handicap',
+         'until' => 1811800799
        }
      
 );

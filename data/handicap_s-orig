@@ -545,7 +545,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-03-27
+#: last_checked: 2026-04-21
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -786,8 +786,8 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: by: https://bsky.app/profile/eserte.bsky.social/post/3mf5bn74i322s
 #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
-#: also_indoor: traffic (G[nun Grimmstr.],ex-T[nun M¸llenhoffstr.],ex-H,ex-W[nur M¸llenhoffstr.],ex-A[falsche Position])
-#: last_checked: 2026-04-11
+#: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun M¸llenhoffstr.],re-H,ex-W[nur M¸llenhoffstr.],ex-A[falsche Position])
+#: last_checked: 2026-04-21 (traffic)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260312
@@ -5803,7 +5803,7 @@ Gralsburgsteig: enge Straﬂe	q1 2164,25190 2206,25260 2038,25531 1950,25763 1921,
 Bahnhofstr. (Friedenau): enge Straﬂe	q1 6082,7066 6151,7078 6157,7117
 #: by: (x)qusor:
 #: note: teilweise mit Gehwegschild, teilweise werden Radfahrer zum Absteigen gebeten
-(Michelangelostr. - Straﬂe 106): Kleingartenanlage	q2 13854,15129 13867,15111 14314,14841 14349,14821 14599,14679
+(Michelangelostr. - Straﬂe 106): Kleingartenanlage	q2 13854,15129 13867,15111 14314,14841 14349,14821 14486,14743 14599,14679
 #: by: Andrea (techlin):
 #: corrected_by: srt/policy (q1 -> q0-)
 Hugo-Heimann-Str.: enge, leicht kurvige Straﬂe	q0- 14120,1991 14165,2106 14184,2157 14218,2181 14259,2184 14393,2137 14444,2090 14587,2032

@@ -315,7 +315,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2
 #: osm_watch: way id="182782708" version="15"
 #: osm_watch: way id="168307255" version="15"
 #: osm_watch: way id="4687243" version="33"
-#: last_checked: 2026-04-04
+#: last_checked: 2026-04-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2026-03-15
 Oderbruchstr./Hohenschˆnhauser Str.: werden hier Radspuren markiert?	?::projected 14989,14539 14919,14503 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14243,13890 14218,13834
@@ -812,9 +812,9 @@ Oberspreestr.: L¸ckenschluss geplant (Radweg?)	?::projected; 19965,5101 19757,51
 #: check_frequency: 90d
 Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
-#: osm_watch: way id="86571257" version="43"
-#: osm_watch: way id="549006853" version="9"
-#: osm_watch: way id="1192733715" version="4"
+#: osm_watch: way id="86571257" version="44"
+#: osm_watch: way id="549006853" version="10"
+#: osm_watch: way id="1192733715" version="5"
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3771
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6088
@@ -823,7 +823,7 @@ Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,
 #: last_checked: 2026-04-18
 #: check_frequency: 180d
 Wilhelminenhofstr.: Radfahrstreifen auf nˆrdlicher Seite geplant	?::projected; 19010,5833 18928,5920 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 18095,6396 17991,6431
-#: osm_watch: way id="199768813" version="22"
+#: osm_watch: way id="199768813" version="23"
 #: XXX haben die Bauarbeiten was mit der Maﬂnahme zu tun? (bis Anfang Mai 2018) (laut Bezirkswebsite Ende der Bauarbeiten bis August 2018)
 #: source_id: 2147342044 (inaktiv)
 #: last_checked: 2026-04-18
@@ -4026,6 +4026,7 @@ Gartenstr. (Biesdorf): wird eventuell noch k¸rzer werden	?::projected 21193,1133
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1517928.php (Bauvorbescheid)
 #: by: https://entwicklungsstadt.de/karlshorst-neubauquartier-zwieseler-hof-entwickelt-sich-planmaessig/ (Fertigstellung 2026)
 #: by: https://www.entwicklungsstadt.de/wohnquartier-zwieseler-hof-in-karlshorst-rohbau-des-ersten-bauabschnitts-fertiggestellt/ (erster Bauabschnitt Ende 2026 fertig, Gesamtbaumaﬂnahme bis 2028/2029)
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article411769455/pinguine-als-nachbarn-neben-dem-tierpark-berlin-entsteht-ein-neues-quartier.html
 #: osm_watch: way id="1022558675" version="7"
 #: osm_watch: way id="1340601972" version="2"
 #: XXX Hier sind mittlerweile Bauarbeiten; offiziell "Verbot f¸r Fahrzeuge aller Art, bis auf Anlieger", als Radfahrer kommt man eigentlich noch problemlos vorbei; auﬂerdem nun "Gehweg, Radfahrer frei" im Bereich der Baustelle am Richard-Kolkwitz-Weg; mittlerweile wurde die zwischenzeitliche Sperrung wieder aufgehoben, aber evtl. kommt es in Zukunft wieder zu Sperrungen, deshalb Halbierung der check_frequency
@@ -4973,7 +4974,7 @@ Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,1110
 #: by: https://www.tagesspiegel.de/berlin/bezirke/senat-lasst-baustart-platzen-dieser-berliner-bahnhof-wird-zur-unendlichen-geschichte-13148983.html (kein Baustart 2025)
 #: by: https://entwicklungsstadt.de/gruseltunnel-am-s-bahnhof-greifswalder-strasse-wird-ab-2026-saniert/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/sanierungsstau-im-dunklen-schacht-beim-bau-am-gruseltunnel-in-prenzlauer-berg-soll-die-tram-stoppen-15393674.html (Sanierung des Tunnels ab 2027, keine oberirdische Querung?)
-#: last_checked: 2026-04-02
+#: last_checked: 2026-04-21
 #: check_frequency: 360d
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-03-01
@@ -5529,7 +5530,7 @@ Schwedter Str.: Fahrradstraﬂe zwischen Choriner Str. und Schˆnhauser Allee	?::pr
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7231 (Antrag: Sofortmaﬂnahmen f¸r mehr Verkehrssicherheit)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neuer-zeitplan-nach-jahrelanger-verzogerung-mit-pollern-oder-ohne-in-prenzlauer-berg-werden-zwei-neue-fahrradstrassen-eingerichtet-15061167.html (fr¸hestens ab 2026)
 #: by: https://www.morgenpost.de/berlin/article411153220/pankow-setzt-auf-radverkehr-eine-neue-fahrradstrasse-entsteht.html (ab September 2026)
-#: last_checked: 2026-04-10 (mapillary)
+#: last_checked: 2026-04-21
 #: check_frequency: 180d
 #: next_check: 2026-09-15 (MoPo)
 Saarbr¸cker Str.: soll Fahrradstraﬂe werden	? 10895,13961 11052,13870 11116,13830 11251,13667
@@ -5762,7 +5763,7 @@ Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 150
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-04-16
+#: last_checked: 2026-04-21
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -7532,7 +7533,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::inwork; 4517,9401 4507,9395
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erw‰hnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2026-04-16
+#: last_checked: 2026-04-21
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -7763,7 +7764,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich ge‰ndert) (mittlerweile entfernt; mˆglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelˆscht)
 #: osm_watch: way id="1146013214" version="4"
-#: last_checked: 2026-04-19
+#: last_checked: 2026-04-21
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7771,7 +7772,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Gr¸nberger Str.: gesch¸tzte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-04-19
+#: last_checked: 2026-04-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: gesch¸tzte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8265,7 +8266,7 @@ Humboldthafen: Verl‰ngerung der Uferpromenade	?::inwork 8119,13396 8118,13222 81
 # REMOVED (-> temp blockings) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236449.php (ab dem 5. September 2022 f¸r etwa ein Jahr) --- #: by: https://viz.berlin.de/2022/08/treskowallee/ --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/fahrbahn-ein-jahr-lang-gesperrt_a355424 --- #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv) --- #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung f¸r Radfahrer Richtung Norden) --- #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr.; an der Waldowallee Richtung Norden sieht es per Markierung so aus, als ob die Radfahrer vom Gehweg kommen w¸rden, obwohl es keine radfahrer-bezogene Schilder an der vorherigen Kreuzung gab --- #: note: laut rbb gilt die Umleitung f¸r Radfahrer ab Schˆnower Straﬂe --- aber so eine Straﬂe existiert hier nicht?! --- #: priority: #B --- #: last_checked: 2022-09-18 (teilweise ist der Gehweg f¸r Radfahrer frei) --- #: next_check: 2022-09-23 --- Treskowallee: geplante Bauarbeiten --- wird es Verbote f¸r Radfahrer geben?	?::inwork 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_33_2189_2232_online.pdf
-#: last_checked: 2025-10-23
+#: last_checked: 2026-04-21
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-09-19
 Hohenschˆnhauser Str./S¸derbrokweg: Widmung als ˆffentliches Straﬂenland, ‰ndert sich was?	? 14580,14636 14599,14679 14608,14701 14666,14845
@@ -8384,14 +8385,15 @@ Friedrichstr.: Straﬂe soll zwischen Checkpoint Charlie und Sch¸tzenstr. "eingezo
 #: XXX Wirksamkeit der Benennung zum 11.3.2023 vvv
 #: XXX auﬂerdem wird es hier einen ausgeschilderten "Patrizia-Boulevard" geben (wo genau?)
 #: XXX laut daf sind die meisten Wege/Straﬂen freigegeben
+#: XXX laut osm ist der ˆstliche Abschnitt der Marius-Carpentier-Str. offen
 #: osm_watch: way id="1092621335" version="5"
-#: osm_watch: way id="589783182" version="8"
+#: osm_watch: way id="589783182" version="9"
 #: osm_watch: way id="1427045684" version="2"
 #: osm_watch: way id="1427045683" version="2"
 #: last_checked: 2026-02-26 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2025-12-31 (Tsp, howoge) vvv
-#: osm_watch: way id="367781611" version="15"
+#: osm_watch: way id="367781611" version="16"
 Marius-Carpentier-Str.: genaue Lage? Qualit‰t (vermutlich asphaltiert?)? Wird man die Streitstr. ¸berqueren kˆnnen (sieht noch nicht so aus)?	? -3034,16719 -2904,16703 -2629,16653
 #: osm_watch: way id="367813140" version="9"
 Meta-London-Str.: genaue Lage? Qualit‰t?	? -2939,16495 -2904,16703
@@ -9265,7 +9267,7 @@ Franzˆsische Str./Markgrafenstr.: neue Ampel sollte 2025 entstehen	? 9624,12153 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10678 (Bebauungsplan 11-192)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Y8IWNCkTxPRb3qEGD9B2FDhWv3rLvvvQ4hITiaRp/rESlfSVA/13-Anlagen/04/attach_A9AF.pdf
 #: XXX auﬂerdem: Straﬂenfl‰chen der Max-Brunnow-Str. in diesem Bereich entfallen; bleibt der Rad- und Gehweg oder wird es zu einem reinen Fuﬂg‰ngerweg?
-#: last_checked: 2026-04-07
+#: last_checked: 2026-04-21
 #: check_frequency: 1000d
 Arthur-Weisbrodt-Str./Max-Brunnow-Str.: direkte Anbindung zur Thaerstraﬂenbr¸cke?	?::projected 14170,13496 14109,13449
 # 
@@ -9666,7 +9668,7 @@ Hauptstr. (Nebenarm): soll als verkehrsberuhigter Bereich ausgewiesen werden	?::
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> best‰tigt, allerdings stehen die Bauz‰une noch da und kˆnnten wieder f¸r eine Sperrung sorgen
-#: last_checked: 2026-03-27
+#: last_checked: 2026-04-21
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Br¸cke ab Mai 2025)
@@ -9706,6 +9708,7 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor dauerhaft offen sei
 #: by: https://www.entwicklungsstadt.de/berlin-wuerdigt-altkanzler-helmut-kohl-allee-kommt-im-mai-2026/
 #: by: https://www.tagesspiegel.de/berlin/berlin-bekommt-eine-helmut-kohl-allee-termin-fur-die-umbenennung-der-hofjagerallee-steht-fest-15032827.html
 #: by: https://www.tagesspiegel.de/berlin/erinnerung-an-helmut-kohl-und-margot-friedlander-berlin-bekommt-im-mai-zwei-neue-prominente-strassennamen-15454208.html
+#: by: https://www.morgenpost.de/bezirke/mitte/article411772548/berlin-bekommt-eine-helmut-kohl-allee-das-ist-zur-festveranstaltung-geplant.html
 #: osm_watch: note 4985952 3
 #: note: im DPAG-Mitteilungsblatt 03/2026 bereits umbenannt
 #: last_checked: 2026-03-27
@@ -10031,6 +10034,7 @@ Carl-Herz-Ufer: Plannung einer Fahrradstraﬂe + Asphaltierung	?::projected 10627,
 R¸dickenstr.: Fahrradstraﬂe entsteht, evtl. Sanierungen	? 17186,17593 17264,17489 17392,17315 17422,17288
 # 
 #: XXX: laut Mail von SenMVKU voraussichtlich im Mai (2026)
+#: last_checked: 2026-04-21
 #: next_check: 2026-05-04
 Bersarinplatz: Sperrung der Furt geplant	?; 13747,12642 13695,12643 13681,12624
 # 
@@ -12854,12 +12858,11 @@ Dragonerareal: werden hier Wege/Straﬂe entstehen?	? 9203,9859 9411,9997
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-neue-bvg-linie-endlich-rollt-der-bus-ins-riesige-neubaugebiet-15476762.html
 #: source_id: LMS-BR:402041/72 viz2021:13.247943,52.548911,17.03.2026,07:00 (Bauarbeiten in der Gartenfelder Str., bis 31.07.2026)
 #: osm_watch: relation id="10290512" version="6"
-# REMOVED --- #: osm_watch: way id="1306187833" version="29"
-#: osm_watch: way id="1306187834" version="31"
 #: osm_watch: way id="1306187830" version="29"
 #: osm_watch: way id="1294762943" version="23"
 #: osm_watch: way id="178253967" version="32"
-#: osm_watch: way id="936729763" version="33"
+# REMOVED --- #: osm_watch: way id="936729763" version="33"
+# REMOVED --- #: osm_watch: way id="1306187833" version="29"
 #: note: Arbeitstitel "Das Neue Gartenfeld"
 #: note: Insel Gartenfeld
 #: XXX neue Straﬂennamen:
@@ -12887,27 +12890,43 @@ Dragonerareal: werden hier Wege/Straﬂe entstehen?	? 9203,9859 9411,9997
 # REMOVED (eingetragen) --- Planstraﬂe 1 (Moderlieschenstr.)	?::projected -292,15715 -384,15782
 # REMOVED (eingetragen) --- Planstraﬂe 1 (Moderlieschenstr.)	?::projected -384,15782 -444,15710 -607,15832 -732,15940 -866,16042
 #: note: nur eine Trassenfreihaltung existiert
+#: osm_watch: way id="682423176" version="23"
 Planstraﬂe 1 (Moderlieschenstr.)	?::projected -943,15948 -1006,15833
 #: note: privates Firmengel‰nde
+#: osm_watch: way id="1295248299" version="8"
 Planstraﬂe 2 (Gr¸ndlingstr.)	?::projected -607,15832 -648,15777
 #: note: zurzeit noch Firmengel‰nde (Parkplatz...) ohne Zugang von Westen
+#: osm_watch: way id="1295248596" version="11"
+#: osm_watch: way id="1060659769" version="18"
 Planstraﬂe 2 (Gr¸ndlingstr.)	?::projected -648,15777 -917,15981
 #: note: Straﬂe existiert nˆrdlich der Alandstr. weitgehend noch nicht, ist aber schon an der Alandstr. ausgeschildert (2x), s¸dlich der Alandstr. -> siehe strassen-orig
+#: osm_watch: way id="1436940020" version="3"
+#: osm_watch: way id="1410333029" version="5"
+#: osm_watch: way id="1413007225" version="12"
+#: osm_watch: way id="1306187834" version="31"
 Planstraﬂe 3 (Rotfederstr.)	?::projected -809,16106 -744,16191 -712,16228 -674,16276 -624,16239 -491,16138 -416,16081 -368,16045 -256,15959 -301,15896 -384,15782
 # REMOVED (eingezeichnet) --- Planstraﬂe 4 (Alandstraﬂe)	?::projected -384,15782 -504,15869 -552,15903 -809,16106
 Planstraﬂe 5 (Steinbeiﬂerpromenade)	?::projected -233,15997 -855,16489
 #: note: bislang nur Trassenfreihaltung, keine Ausschilderung
+#: osm_watch: way id="1282919720" version="11"
+#: osm_watch: way id="1445971835" version="1"
 Planstraﬂe 6 (Stintplatz)	?::projected -607,15832 -552,15903 -482,15994 -416,16081
 #: note: urspr¸nglich angedachte Br¸cke im Anschluss des Wegs wird nicht realisiert
 Planstraﬂe 7 (Rapfenweg) (Fuﬂg‰nger/Radfahrerbereich)	?::projected -648,15777 -805,15564
+#: osm_watch: way id="1413286476" version="7"
 Private Planstraﬂe 1 (Silberkarpfenstr.)	?::projected -674,16276 -853,16413 -890,16363 -712,16228
+#: osm_watch: way id="1306187832" version="4"
 Private Planstraﬂe 2 (Zwergstichlingstr.)	?::projected -624,16239 -659,16190 -523,16092 -491,16138
 #: XXX genaue Lage unklar
+#: osm_watch: way id="1436940025" version="1"
 Private Planstraﬂe 3 (G¸sterstr.)	?::projected -594,16079 -482,15994 -433,15959
 #: XXX genaue Lage unklar
+#: osm_watch: way id="1436940024" version="1"
 Private Planstraﬂe 4 (Karauschestr.)	?::projected -594,16079 -744,16191
 #: note: eine alte Servicestraﬂe existiert bereits, keine Ausschilderung
+#: osm_watch: way id="1410336971" version="6"
 Private Planstraﬂe 5 (Belgienstr.)	?::projected -504,15869 -433,15959 -414,15983 -368,16045
+#: osm_watch: way id="883834091" version="15"
 Private Planstraﬂe 6 (Bachsaiblingstr.)	?::projected -414,15983 -301,15896
 #: next_check ^^^
 #: check_frequency ^^^
