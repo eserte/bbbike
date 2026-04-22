@@ -784,14 +784,14 @@ Kurfürstenstr. (Mariendorf): provisorischer Radweg auf dem Gehweg, ca. 40m	DH:h=
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: source_id: bvg2024:347#HIM_FREETEXT_324247 (kein Endedatum)
-#: also_indoor: traffic (T,G[zu lang])
-#: note: mittlerweile mit Umweg; mittlerweile (2026-04-19) ist die Grube geschlossen und die letzte Deckschicht fehlt noch; deshalb check_frequency=7d
-#: last_checked: 2026-04-21 vvv
-#: check_frequency: 7d vvv
-Hildegard-Jadamowitz-Str.: Sperrung der Fahrbahn, Umweg	DH:len=80:h=q3,50 13019,12316 12985,12303
-Hildegard-Jadamowitz-Str.: Sperrung der Fahrbahn, Umweg	DH:len=80:h=q3,50 12985,12303 13019,12316
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: source_id[inactive]: bvg2024:347#HIM_FREETEXT_324247 (kein Endedatum)
+# REMOVED --- #: also_indoor: traffic (ex-T,G[zu lang])
+# REMOVED --- #: note: mittlerweile mit Umweg; mittlerweile (2026-04-19) ist die Grube geschlossen und die letzte Deckschicht fehlt noch; deshalb check_frequency=7d
+# REMOVED --- #: last_checked: 2026-04-21 vvv
+# REMOVED --- #: check_frequency: 7d vvv
+# REMOVED --- Hildegard-Jadamowitz-Str.: Sperrung der Fahrbahn, Umweg	DH:len=80:h=q3,50 13019,12316 12985,12303
+# REMOVED --- Hildegard-Jadamowitz-Str.: Sperrung der Fahrbahn, Umweg	DH:len=80:h=q3,50 12985,12303 13019,12316
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 #: temporary ^^^

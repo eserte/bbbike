@@ -9458,6 +9458,7 @@ Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrun
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php (Bauarbeiten ab 10. November 2025, erster Bauabschnitt bis 28. November 2025, Abschluss der Gesamtmaßnahme voraussichtlich im Frühjahr 2026)
 #: by: https://www.infravelo.de/projekt/hentigstrasse-caesarstrasse-roemerweg/ (4. Quartal 2025 - 2. Quartal 2026)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1663687.php (Weiterführung der Arbeiten ab KW 22/2026)
 #: osm_watch: way id="1181114546" version="7"
 #: osm_watch: way id="1047417490" version="9"
 #: osm_watch: way id="217186432" version="18"
@@ -9467,7 +9468,7 @@ Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrun
 #: note: Baubeginn: im IV. Quartal 2025 (laut BVV-Antrag)
 #: last_checked: 2026-04-18
 #: check_frequency: 45d
-#: next_check: 2026-06-30 (infravelo)
+#: next_check: 2026-06-30 (infravelo, BA)
 Römerweg - Cäsarstraße - Hentigstraße: Fahrradstraße wird eingerichtet	?::projected 18807,9746 18781,9744 18687,9736 18685,9719 18660,9599 18626,9406 18586,9172
 # REMOVED (hier realisiert) --- Römerweg - Cäsarstraße - Hentigstraße: Fahrradstraße wird eingerichtet	?::inwork 18586,9172 18548,8942 18518,8778
 # 
@@ -9501,7 +9502,8 @@ Gantikow - Vehlow: Bau eines asphaltierten Radwegs (Westseite?)	? -61969,62314 -
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-05-2025-l167_steinstrasse-neuruppin (Fertigstellung ist für Juli 2027 geplant)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~13-06-2025-spatenstich-fuer-die-sanierung-der-steinstrasse-in-neuruppin
-#: next_check: 2027-07-31
+#: source_id: LS/223-K/25/124 (bis 31.07.2027)
+#: next_check: 2027-07-31 (ls.brandenburg, Verkehrsmeldung)
 Steinstr. (Neuruppin): Erstellung eines Schutzstreifens	? -30936,57385 -30806,57284 -30682,57189 -30611,57193 -30550,57216 -30548,57214
 # 
 #: next_check_id: NORDUFER-2025
@@ -10023,6 +10025,7 @@ Carl-Herz-Ufer: Plannung einer Fahrradstraße + Asphaltierung	?::projected 10627,
 #: by: https://www.entwicklungsstadt.de/neu-hohenschoenhausen-baustart-fuer-neue-fahrradstrasse-in-der-ruedickenstrasse/
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
 #: by: https://www.infravelo.de/projekt/ruedickenstrasse/ (4. Quartal 2025 - 2. Quartal 2026)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1663687.php (weitere Maßnahmen ab 22.4.2026)
 #: osm_watch: way id="1425822829" version="4"
 #: osm_watch: way id="1086616391" version="8"
 #: osm_watch: way id="1093530367" version="6"
@@ -10031,13 +10034,17 @@ Carl-Herz-Ufer: Plannung einer Fahrradstraße + Asphaltierung	?::projected 10627,
 #: note: siehe temp blockings für Sperrungen
 #: last_checked: 2026-03-07 (ausgeschildert ist bereits, wird es noch Markierungen oder weitere Sanierungen geben?)
 #: check_frequency: 60d
-#: next_check: 2026-06-30 (infravelo)
+#: next_check: 2026-06-30 (infravelo, BA)
 Rüdickenstr.: Fahrradstraße entsteht, evtl. Sanierungen	? 17186,17593 17264,17489 17392,17315 17422,17288
 # 
 #: XXX: laut Mail von SenMVKU voraussichtlich im Mai (2026)
 #: last_checked: 2026-04-21
 #: next_check: 2026-05-04
 Bersarinplatz: Sperrung der Furt geplant	?; 13747,12642 13695,12643 13681,12624
+# 
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1663549.php
+#: next_check: 2026-06-30
+Görlitzer Brücken: Sperrung droht	? 13970,9349 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903 13141,9911
 # 
 #: section ^^^
 #: ignore ^^^

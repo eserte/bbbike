@@ -2437,17 +2437,7 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 246401377 (bis 08.10.2024) (inaktiv)
-#: source_id: 266400241 (bis 22.04.2026)
-	2::inwork 30910,13101 30815,13170 30795,13191
-',
-         'from' => 1776290400,
-         'id' => 1875,
-         'text' => 'Neuenhagen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 17.04.2026 22:00 Uhr bis 22.04.2026 06:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1776830400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -10710,8 +10700,8 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 # REMOVED --- #: next_check: 2026-04-12 vvv
 # REMOVED ---	2::inwork 30158,56695 30049,56674 30146,56367
 # REMOVED ---	q4::inwork 30146,56367 30225,55956
-# note: 2. BA vom 13.04.2026 bis 24.04.2026
-#: next_check: 2026-04-23 vvv
+# note: 2. BA vom 13.04.2026 bis 24.04.2026, mittlerweile bis 26.04.2026
+#: next_check: 2026-04-25 vvv
 	q4::inwork 30158,56695 30396,56665 30488,56704 30720,56827 30806,56904
 # note: 3. BA vom 27. April bis zum 13. Mai 2026
 #	q4::inwork 30806,56904 31008,57090 31114,57242 31247,57341 31587,57581 31722,57984
@@ -11000,13 +10990,24 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'until' => undef
        },
        {
-         'data' => '	q4::inwork 18700,6604 18771,6699
+         'data' => '#: source_id: LMS-BR:405614/72 viz2021:13.5281,52.46354,22.04.2026,07:00 (bis 31.03.2027)
+	q4::inwork 18700,6604 18771,6699
 ',
          'from' => 1776722400,
          'id' => 4589,
-         'text' => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist unterbrochen, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis zum Frühjahr 2027',
+         'text' => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist unterbrochen, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende März 2027',
          'type' => 'handicap',
-         'until' => 1811800799
+         'until' => 1806530399
+       },
+       {
+         'data' => '#: source_id: LMS-BR:405635/72 viz2021:13.32897,52.43632,22.04.2026,00:00 (bis 26.06.2026)
+	q4::inwork 5370,3587 5468,3302
+',
+         'from' => 1776722400,
+         'id' => 4590,
+         'text' => 'Gärtnerstr.: Bauarbeiten zwischen Marienstr. und Hartmannstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 22.04.2026 bis 26.06.2026',
+         'type' => 'handicap',
+         'until' => 1782511140
        }
      
 );

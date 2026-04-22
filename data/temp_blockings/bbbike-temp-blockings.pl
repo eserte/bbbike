@@ -52438,8 +52438,8 @@ EOF
 # REMOVED --- #: next_check: 2026-04-12 vvv
 # REMOVED ---	2::inwork 30158,56695 30049,56674 30146,56367
 # REMOVED ---	q4::inwork 30146,56367 30225,55956
-# note: 2. BA vom 13.04.2026 bis 24.04.2026
-#: next_check: 2026-04-23 vvv
+# note: 2. BA vom 13.04.2026 bis 24.04.2026, mittlerweile bis 26.04.2026
+#: next_check: 2026-04-25 vvv
 	q4::inwork 30158,56695 30396,56665 30488,56704 30720,56827 30806,56904
 # note: 3. BA vom 27. April bis zum 13. Mai 2026
 #	q4::inwork 30806,56904 31008,57090 31114,57242 31247,57341 31587,57581 31722,57984
@@ -52737,11 +52737,21 @@ EOF
 EOF
      },
      { from  => 1776722400, # 2026-04-21 00:00
-       until => 1811800799, # 2027-05-31 23:59
-       text  => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist unterbrochen, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis zum Frühjahr 2027',
+       until => $isodate2epoch->("2027-03-31 23:59:59"),
+       text  => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist unterbrochen, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende März 2027',
        type  => 'handicap',
        data  => <<'EOF',
+#: source_id: LMS-BR:405614/72 viz2021:13.5281,52.46354,22.04.2026,07:00 (bis 31.03.2027)
 	q4::inwork 18700,6604 18771,6699
+EOF
+     },
+     { from  => 1776722400, # 2026-04-21 00:00
+       until => 1782511140, # 2026-06-26 23:59
+       text  => 'Gärtnerstr.: Bauarbeiten zwischen Marienstr. und Hartmannstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 22.04.2026 bis 26.06.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:405635/72 viz2021:13.32897,52.43632,22.04.2026,00:00 (bis 26.06.2026)
+	q4::inwork 5370,3587 5468,3302
 EOF
      },
     );
