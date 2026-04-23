@@ -23978,7 +23978,7 @@ EOF
 EOF
      },
      { from  => 1774159200, # 2026-03-22 07:00 # undef, # 
-       until => 1777067940, # 2026-04-24 23:59 # 1430672249, # undef, # XXX
+       until => 1776978236, # 1777067940, # 2026-04-24 23:59 # 1430672249, # undef, # XXX
 #      text  => 'Gürtelstr. (Weißensee): Einbahnstraße zwischen Meyerbeerstr. und Gounodstr.',
        text  => 'Gürtelstr.: Bauarbeiten zwischen Meyerbeerstr. und Gounodstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 23.03.2026 07:00 bis 24.04.2026',
        type  => 'handicap',
@@ -23986,7 +23986,7 @@ EOF
 #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=11143&page=4
 # REMOVED (fertig) --- #: XXX wann ist die Baustelle fertig? --- #: last_checked: 2015-02-13 --- #: check_frequency: 60d
 # REMOVED (alte Sperrung) ---	q3::inwork; 13555,15596 13459,15653
-#: source_id: LMS-BR:402618/72 viz2021:13.451039,52.545703,23.03.2026,07:00 (bis 24.04.2026)
+#: source_id: LMS-BR:402618/72 viz2021:13.451039,52.545703,23.03.2026,07:00 (bis 24.04.2026) (inaktiv)
 	q4::inwork 13574,15585 13555,15596 13459,15653
 EOF
      },
@@ -51685,13 +51685,13 @@ EOF
 #: next_check_id: KANZLERPARK-2024
 #: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
 #: osm_watch: way id="1126186878" version="6"
-#: osm_watch: note 5130610 2
+#: osm_watch: note 5130610 3
 #: osm_watch: note 5130626 1
 #: osm_watch: note 5096118 2
 #: add_fragezeichen: Ist der Uferweg wieder offen?
 #: XXX auch laut osm note bis 28.2.2026 gesperrt
 #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
-#: last_checked: 2026-04-11 (daf)
+#: last_checked: 2026-04-23 (osm note)
 #: check_frequency: 60d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-28
 	2::inwork 7745,12603 7782,12623 7934,12734 8006,12853
@@ -52521,11 +52521,11 @@ EOF
 EOF
      },
      { from  => 1774812579, # 2026-03-29 21:29
-       until => 1777240800, # 2026-04-27 00:00
+       until => 1776978194, # 1777240800, # 2026-04-27 00:00
        text  => 'Gotha-Allee: Bauarbeiten zwischen Bolivarallee und Meiningenallee, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 26.04.2026 06:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:391148/72 viz2021:13.260879,52.52029, (bis 27.04.2026)
+#: source_id: LMS-BR:391148/72 viz2021:13.260879,52.52029, (bis 27.04.2026) (vorfristig inaktiv)
 	q4::inwork 765,12564 618,12563 522,12577
 EOF
      },
@@ -52741,6 +52741,8 @@ EOF
        text  => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist unterbrochen, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende März 2027',
        type  => 'handicap',
        data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mk2ovdyy3s2p
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiagfo5b3th22qpmdtsb3lvk57qcmjmcv777fefzyf3fdt5lcm62sa
 #: source_id: LMS-BR:405614/72 viz2021:13.5281,52.46354,22.04.2026,07:00 (bis 31.03.2027)
 	q4::inwork 18700,6604 18771,6699
 EOF
@@ -52752,6 +52754,17 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:405635/72 viz2021:13.32897,52.43632,22.04.2026,00:00 (bis 26.06.2026)
 	q4::inwork 5370,3587 5468,3302
+EOF
+     },
+     { from  => 1776747600, # 2026-04-21 07:00
+       until => 1789077540, # 2026-09-10 23:59
+       text  => 'Buchholzer Str.: Bauarbeiten, Sperrung zwischen Schönhauser Allee und Greifenhagener Str., vom 22.04.2026 bis 10.09.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mk2npuw5xs2k
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4y7xizfc6tyab3rgfg4im6jxup6topqj3pjhccstvdccxdvlmpm
+#: source_id: LMS-BR:405615/72 viz2021:13.41291,52.5453,22.04.2026,07:00 (bis 10.09.2026)
+	q4::inwork 11055,15504 10917,15525
 EOF
      },
     );
