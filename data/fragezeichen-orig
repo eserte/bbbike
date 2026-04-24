@@ -3790,7 +3790,7 @@ Weißenhöher Str./Arno-Philippsthal-Str.: Zebrastreifen geplant	?::projected 2063
 #: osm_watch: note 5077510 3
 #: last_checked: 2026-04-15
 #: check_frequency: 90d
-#: next_check: 2026-04-24 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
 Hannoversche Straße/Hessische Straße: Zebrastreifen oder Ampel geplant	?::projected 8770,13567 8775,13606 8799,13641
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10195 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10366 --- #: next_check: 2022-09-30 --- Titiseestraße/Waldshuter Zeile: Zebrastreifen geplant	?::projected 5493,22596 5484,22564 5473,22536
 #### END Zebrastreifen (MoPo-Liste)
@@ -3823,6 +3823,7 @@ Hannoversche Straße/Hessische Straße: Zebrastreifen oder Ampel geplant	?::projec
 #: by: https://entwicklungsstadt.de/blankenburger-sueden-studio-rw-gewinnt-wettbewerb-fuer-berlins-groesstes-neubauquartier/
 #: by: https://www.tagesspiegel.de/berlin/mega-quartier-in-pankow-nimmt-gestalt-an-stadtebaulicher-wettbewerb-zum-blankenburger-suden-entschieden-14339012.html (Teilfläche Süd)
 #: by: https://www.tagesspiegel.de/berlin/strassenbahnausbau-verzogert-sich-noch-weiter-stoppt-schwarz-rot-die-nachste-berliner-tramstrecke-14543834.html (Straßenbahnverlängerung 2032)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_17_0997_1056_online.pdf (FNP-Änderung)
 #: XXX gehört nun zum Planungsgebiet "Blankenburger Süden"
 #: last_checked: 2025-01-04 (mapillary) vvv
 #: check_frequency: 720d vvv
@@ -10050,6 +10051,11 @@ Bersarinplatz: Sperrung der Furt geplant	?; 13747,12642 13695,12643 13681,12624
 #: next_check: 2026-06-30
 Görlitzer Brücken: Sperrung droht	? 13970,9349 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903 13141,9911
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_17_0997_1056_online.pdf (Umbenennung zum 16.10.2026)
+#: XXX auch die umliegenden Wege/Flächen berücksichtigen
+#: next_check: 2026-10-16 (Amtsblatt)
+Blücherplatz: Umbenennung zu Eva-Mamlok-Platz	? 9521,10010 9536,10064 9579,10122 9631,10142 9702,10129 9702,10129 9827,10051
+# 
 #: section ^^^
 #: ignore ^^^
 # 
@@ -11469,6 +11475,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://entwicklungsstadt.de/wohnprojekt-pankower-tor-im-stillstand-2027-als-fruehester-termin-realistisch/ (Baustart frühestens 2027)
 #: by: https://www.morgenpost.de/bezirke/pankow/article410137027/stopp-fuer-pankower-tor-senat-nimmt-bescheid-zurueck.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/strassenbahn-anschluss-fur-neues-stadtquartier-so-soll-eine-neue-tramlinie-in-berlin-pankow-den-stau-uberwinden-15061179.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_17_0997_1056_online.pdf (FNP-Änderung)
 #: osm_watch: way id="97369501" version="15"
 # REMOVED (404) --- #: also_indoor: webcam https://portal1761.webcam-profi.de/ (vom Lokschuppen)
 #: last_checked: 2025-09-17
@@ -12778,6 +12785,7 @@ U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,
 #: by: https://be.beteiligung.diplanung.de/verfahren/8-98/public/detail
 #: by: https://be.beteiligung.diplanung.de/file/8-98/fbd729db-bf77-468e-a809-4e2bb8dc026c (eine Planstraße im nördlichen Teil, Fuß+Radweg bzw. verkehrsberuhigter Bereich im westlichen und südlichen Teil)
 #: by: https://britzer-terrassen.de/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_17_0997_1056_online.pdf (FNP-Änderung)
 #: note: Projektname "Britzer Terrassen"
 #: osm_watch: note 3245865 2
 #: last_checked: 2026-02-28

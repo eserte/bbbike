@@ -32943,6 +32943,8 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkatzzkxxk23 (nur Kfz-Verkehr?)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibjpomztrl7ue4dytoxkmnjsh744jbbhwzd6nizzlutgtbegbvavm
 #: source_id: 2147346269 (mittlerweile inaktiv)
 #: source_id: 2147346566 (bis 22.12.2020) (inaktiv)
 #: source_id: 2147346747 (Restarbeiten bis zum 20.1.2021) (inaktiv)
@@ -40209,7 +40211,8 @@ EOF
      { from  => 1681189200, # 2023-04-11 07:00
        until => undef, # $isodate2epoch->("2024-05-24 23:59:59"), # 1693447200, # 2023-08-31 04:00
 #      text  => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, Ende der Bauarbeiten unbekannt', # voraussichtlich bis 24.05.2024', # war: ... zwischen Hindemithplatz und Wielandstr. ...
-       text  => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, voraussichtlich bis Ende März 2026',
+#      text  => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, voraussichtlich bis Ende März 2026',
+       text  => 'Mommsenstr.: Bauarbeiten zwischen Leibnizstr. und Wielandstr., Fahrbahn gesperrt, keine Gehwegfreigabe für Radfahrer, voraussichtlich bis Ende 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.3076,52.50361,12.04.2023,07:00 (bis 31.08.2023) (inaktiv)
@@ -40218,6 +40221,7 @@ EOF
 #: source_id: viz2021:13.31347,52.503273,08.01.2024,12:00 (bis 30.03.2024) (inaktiv)
 #: source_id: viz2021:13.3076,52.50361,26.03.2024,11:40 (bis 24.05.2024) (inaktiv)
 #: source_id: LMS-BR:396763/72 viz2021:13.31537,52.50317,22.01.2026,07:00 (bis 31.03.2026) (inaktiv)
+#: source_id: LMS-BR:405819/72 viz2021:13.31537,52.50317,24.04.2026,07:00 (bis 31.12.2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/mommsenstrasse-in-berlin-bei-jahrelangen-arbeiten-am-fernwarmenetz-ist-kein-ende-in-sicht-14131187.html ("keine konkreten Termine")
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mcyjddfqrc24 (Sperrung bis 31.03.2026)
 #: add_fragezeichen: Besteht die Baustelle noch immer?
@@ -40229,10 +40233,10 @@ EOF
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
 #: last_checked: 2026-04-21 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: next_check: 2026-03-31 (VIZ-Verkehrsmeldung)
-# Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
+#: check_frequency: 30d (traffic)
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
+# REMOVED --- Mommsenstr., westlicher Abschnitt	q3::inwork 3869,10760 4267,10724
 EOF
      },
      { from  => 1680415200, # 2023-04-02 08:00
