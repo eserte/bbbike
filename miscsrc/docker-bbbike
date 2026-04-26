@@ -36,7 +36,7 @@ my %codename_to_packagerepos;
 for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trusty xenial bionic buster focal bullseye bookworm trixie)) {
     $codename_to_packagerepos{$codename}->{'mydebs.bbbike.de'} = 1;
 }
-for my $codename (qw(bionic focal jammy noble)) {
+for my $codename (qw(bionic focal jammy noble resolute)) {
     $codename_to_packagerepos{$codename}->{'bbbike-ppa'} = 1;
 }
 
@@ -588,6 +588,7 @@ EOF
 	(my $short_perl_ver = $opt{'perl-ver'}) =~ s{\.\d+$}{};
 	# Probably travis has only perls for ubuntu trusty and precise
 	my $distnumver = { ubuntu => {
+				       resolute=> '26.04',
 				       noble   => '24.04',
 				       jammy   => '22.04',
 				       focal   => '20.04',
@@ -739,7 +740,7 @@ EOF
 
     # XXX global config file for mapserver 8.x
     # XXX review and maybe remove again
-    if ($real_distver =~ /(bookworm|noble)/) {
+    if ($real_distver =~ /(bookworm|noble|resolute)/) {
 	warning "Temporary hack: provide /etc/mapserver.conf until better solutions exist";
 	$dockerfile .= <<'EOF';
 RUN if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]; then cp /bbbike/mapserver/brb/mapserver.conf /etc; fi
@@ -1049,7 +1050,7 @@ RUN (cd mapserver/brb && ./doit.pl --dest-dir . --host localhost  --location-sty
 EOF
 	# XXX global config file for mapserver 8.x
 	# XXX review and maybe remove again
-	if ($opt{distver} =~ /(bookworm|noble)/) {
+	if ($opt{distver} =~ /(bookworm|noble|resolute)/) {
 	    warning "Temporary hack: provide /etc/mapserver.conf until better solutions exist";
 	    $dockerfile .= <<'EOF';
 RUN cp /bbbike/mapserver/brb/mapserver.conf /etc
