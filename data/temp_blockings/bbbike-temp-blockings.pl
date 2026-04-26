@@ -39671,11 +39671,11 @@ EOF
 #: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
 #: add_fragezeichen: Besteht die Sperrung des Uferwegs weiterhin? vvv
-#: last_checked: 2025-10-29 vvv
+#: last_checked: 2026-04-24 (osm) vvv
 #: check_frequency: 210d vvv
 #: next_check: 2026-06-30 (bew.berlin) vvv
 ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
-#: osm_watch: way id="46907541" version="18"
+#: osm_watch: way id="46907541" version="19"
 #: osm_watch: way id="1116849053" version="5"
 	2::inwork 3980,2102 4064,2293 4209,2641 4220,2664
 #: osm_watch: way id="77098244" version="20"
@@ -50995,14 +50995,17 @@ EOF
 	2::inwork 2033,10613 2090,10576 2117,10495
 EOF
      },
-     { from  => 1760042654, # 2025-10-09 22:44
-       until => $isodate2epoch->("2025-11-14 23:59:59"), # 1761865200, # 2025-10-31 00:00
-       text  => 'Chausseestr.: Gleisbauarbeiten zwischen Tieckstr. und Invalidenstr., Sperrung Richtung Nordwesten, bis 14.11.2025',
+     { from  => $isodate2epoch->("2026-04-26 00:00:00"), # 1760042654, # 2025-10-09 22:44
+       until => $isodate2epoch->("2026-05-31 23:59:59"), # $isodate2epoch->("2025-11-14 23:59:59"), # 1761865200, # 2025-10-31 00:00
+#      text  => 'Chausseestr.: Gleisbauarbeiten zwischen Tieckstr. und Invalidenstr., Sperrung Richtung Nordwesten, bis 14.11.2025',
+       text  => 'Chausseestr.: Gleisbauarbeiten zwischen Invalidenstr. und Tieckstr., Sperrung Richtung Südosten, 27.04.2026 bis Ende Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:386176/72 viz2021:13.38535,52.52873, (bis 31.10.2025) (bis 14.11.2025) (inaktiv)
-#: note: laut rbb auch für Radverkehr; Umleitung ist eingerichtet
-	q4::inwork; 9094,13648 9044,13711 8992,13774 8935,13844
+# REMOVED (alte Meldung) --- #: note: laut rbb auch für Radverkehr; Umleitung ist eingerichtet --- q4::inwork; 9094,13648 9044,13711 8992,13774 8935,13844
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Gleisbauarbeiten ab 27.4.2026)
+Chausseestr.	q4::inwork; 8935,13844 8992,13774 9044,13711 9094,13648
+Schlegelstr.: Anbindung Chaussestr. unterbrochen	q3::inwork 9044,13711 9231,13843
 EOF
      },
      { from  => 1760220000, # 2025-10-12 00:00
@@ -52769,6 +52772,17 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4y7xizfc6tyab3rgfg4im6jxup6topqj3pjhccstvdccxdvlmpm
 #: source_id: LMS-BR:405615/72 viz2021:13.41291,52.5453,22.04.2026,07:00 (bis 10.09.2026)
 	q4::inwork 11055,15504 10917,15525
+EOF
+     },
+     { from  => $isodate2epoch->("2026-04-26 00:00:00"),
+       until => $isodate2epoch->("2026-05-15 23:59:59"),
+       text  => 'Wandlitzstr.: Bauarbeiten, Fahrbahn gesperrt, 27.04.2026 bis Mitte Mai 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: WANDLITZ-2021
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Sanierungsarbeiten ab 27.4.2026)
+#: next_check: 2026-04-27
+Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
 EOF
      },
     );

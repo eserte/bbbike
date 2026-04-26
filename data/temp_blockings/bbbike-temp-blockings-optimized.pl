@@ -2698,12 +2698,12 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
 #: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1776549600,
+         'from' => 1777759200,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 20.4.2026 bis 24.4.2026',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 4.5.2026 bis 8.5.2026',
          'type' => 'gesperrt',
-         'until' => 1777067999
+         'until' => 1778277599
        },
        undef,
        undef,
@@ -6781,11 +6781,11 @@ Kreuzungsbereich Ariadnestr.	q3::inwork 2376,25498 2502,25544 2643,25500
 #: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
 #: add_fragezeichen: Besteht die Sperrung des Uferwegs weiterhin? vvv
-#: last_checked: 2025-10-29 vvv
+#: last_checked: 2026-04-24 (osm) vvv
 #: check_frequency: 210d vvv
 #: next_check: 2026-06-30 (bew.berlin) vvv
 ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
-#: osm_watch: way id="46907541" version="18"
+#: osm_watch: way id="46907541" version="19"
 #: osm_watch: way id="1116849053" version="5"
 	2::inwork 3980,2102 4064,2293 4209,2641 4220,2664
 #: osm_watch: way id="77098244" version="20"
@@ -9794,7 +9794,19 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer	q4::inwork; 18445,2642 1
          'until' => 1778709599
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:386176/72 viz2021:13.38535,52.52873, (bis 31.10.2025) (bis 14.11.2025) (inaktiv)
+# REMOVED (alte Meldung) --- #: note: laut rbb auch für Radverkehr; Umleitung ist eingerichtet --- q4::inwork; 9094,13648 9044,13711 8992,13774 8935,13844
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Gleisbauarbeiten ab 27.4.2026)
+Chausseestr.	q4::inwork; 8935,13844 8992,13774 9044,13711 9094,13648
+Schlegelstr.: Anbindung Chaussestr. unterbrochen	q3::inwork 9044,13711 9231,13843
+',
+         'from' => 1777154400,
+         'id' => 4464,
+         'text' => 'Chausseestr.: Gleisbauarbeiten zwischen Invalidenstr. und Tieckstr., Sperrung Richtung Südosten, 27.04.2026 bis Ende Mai 2026',
+         'type' => 'handicap',
+         'until' => 1780264799
+       },
        undef,
        undef,
        undef,
@@ -10422,22 +10434,7 @@ Glaßbrennerstr.	q4::inwork 11543,16207 11632,16373
          'until' => 1785535199
        },
        undef,
-       {
-         'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2026
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645709.php
-#: by: https://www.berlin.de/imgscale2/9AuxRVefLWbbF7Yg6n-jfxJdZdY8R2b6JXZ86PSf0BA/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI2L21hcmdpbl8yMDAwXzEwMDBfZWUzY2E5ZGUzNWVkNzI0MjNmZDVmYTQ2ODBhY2VlNjZfc3RyYXNzZW5zcGVycnVuZy5wbmc.png
-#: osm_watch: note 5180232 1
-#: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
-#: last_checked: 2026-03-17
-#: next_check: 2026-04-25
-	2::inwork 5533,8478 5660,8366
-',
-         'from' => 1771974000,
-         'id' => 4541,
-         'text' => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, vom 26.02.2026 bis 24.04.2026',
-         'type' => 'gesperrt',
-         'until' => 1777068000
-       },
+       undef,
        {
          'data' => '#: source_id: LS/223-P/26/014 (bis 28.08.2026)
 	2::inwork -19216,29323 -18694,27999 -18187,27206
@@ -11002,6 +10999,18 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'text' => 'Buchholzer Str.: Bauarbeiten, Sperrung zwischen Schönhauser Allee und Greifenhagener Str., vom 22.04.2026 bis 10.09.2026',
          'type' => 'handicap',
          'until' => 1789077540
+       },
+       {
+         'data' => '#: next_check_id: WANDLITZ-2021
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Sanierungsarbeiten ab 27.4.2026)
+#: next_check: 2026-04-27
+Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
+',
+         'from' => 1777154400,
+         'id' => 4592,
+         'text' => 'Wandlitzstr.: Bauarbeiten, Fahrbahn gesperrt, 27.04.2026 bis Mitte Mai 2026',
+         'type' => 'handicap',
+         'until' => 1778882399
        }
      
 );
