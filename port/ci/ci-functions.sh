@@ -24,7 +24,7 @@ debian_ubuntu_version() {
     _DUV_ORDER="squeeze precise wheezy trusty jessie \
 xenial stretch bionic buster \
 focal bullseye jammy \
-bookworm noble trixie"
+bookworm noble trixie resolute forky"
 
     case "$1" in
         lt|le|eq|ge|gt|ne) op="$1" ;;
