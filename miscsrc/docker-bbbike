@@ -39,6 +39,13 @@ for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trus
 for my $codename (qw(bionic focal jammy noble resolute)) {
     $codename_to_packagerepos{$codename}->{'bbbike-ppa'} = 1;
 }
+for my $codename (qw(trixie forky)) {
+    $codename_to_packagerepos{$codename}->{'eserte-obs'} = 1;
+}
+my %codename_to_obs_repository = (
+    trixie => 'Debian_13',
+    forky  => 'Debian_Testing',
+);
 
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
@@ -943,6 +950,11 @@ sub cgi {
 	$use_bbbike_ppa = 1;
 	info "bbbike-ppa support exists for $opt{dist}:$opt{distver} --- using it";
     }
+    my $use_eserte_obs;
+    if ($codename_to_packagerepos{$opt{'distver'}}->{'eserte-obs'}) {
+	$use_eserte_obs = 1;
+	info "eserte-obs support exists for $opt{dist}:$opt{distver} --- using it";
+    }
 
     # Prepare docker environment
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
@@ -1006,6 +1018,11 @@ EOF
 RUN apt-get install -qqy --no-install-recommends \\
       software-properties-common
 RUN add-apt-repository ppa:eserte/bbbike
+EOF
+    } elsif ($use_eserte_obs) {
+	$dockerfile .= <<"EOF"
+RUN wget -O- https://download.opensuse.org/repositories/home:/eserte/$codename_to_obs_repository{$opt{distver}}/Release.key | gpg --dearmor > /usr/share/keyrings/obs-eserte.gpg
+RUN printf "Types: deb\\nURIs: https://download.opensuse.org/repositories/home:/eserte/$codename_to_obs_repository{$opt{distver}}\\nSuites: ./\\nSigned-By: /usr/share/keyrings/obs-eserte.gpg\\n" > /etc/apt/sources.list.d/obs-eserte.sources
 EOF
     } else {
 	$dockerfile .= <<'EOF';
