@@ -1013,12 +1013,16 @@ RUN wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | apt-key add -
 RUN CODENAME=$(perl -nle '/^VERSION_CODENAME="?([^"]+)/ and $codename=$1; /^VERSION="\d+ \((.*)\)/ and $maybe_codename=$1; END { print $codename // $maybe_codename }' /etc/os-release); echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~ && mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
 EOF
     }
+    my $extra_pkgs = '';
+    if ($opt{distver} =~ /^(resolute|forky)$/) {
+	$extra_pkgs = 'libcrypt-dev';
+    }
     $dockerfile .= <<EOF;
 RUN apt-get update && apt-get install -qqy --no-install-recommends \\
       libplack-middleware-rewrite-perl libplack-middleware-deflater-perl libcgi-emulate-psgi-perl libcgi-compile-perl \\
       libapache-session-counted-perl \\
       libarray-heap-perl \\
-      make gcc libc6-dev libinline-perl libinline-c-perl \\
+      make gcc libc6-dev $extra_pkgs libinline-perl libinline-c-perl \\
       libemail-mime-perl libemail-sender-perl
 EOF
     if ($opt{mapserver}) {
