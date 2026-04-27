@@ -105,7 +105,7 @@ sub trkseg_split {
     for my $trk ($doc->findnodes('/*[local-name(.)="gpx"]/*[local-name(.)="trk"]')) {
 	for my $trkseg ($trk->findnodes('./*[local-name(.)="trkseg"]')) {
 	    my($prev_trkpt) = $trkseg->findnodes('(./*[local-name(.)="trkpt"])[1]');
-	    while (my $next_trkpt = $prev_trkpt->nextNonBlankSibling) {
+	    while ($prev_trkpt and my $next_trkpt = $prev_trkpt->nextNonBlankSibling) {
 		# XXX do we need to check if $next_trkpt is really a trkpt?
 		my $do_split;
 		if ($by eq 'time-gap') {
