@@ -563,6 +563,9 @@ Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 1
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1515855.php (Fahrbahnsanierung)
 # REMOVED (nein, keine Verbesserung) --- #: XXX Ist der Asphalt hier besser geworden?
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260427 (Sanierung)
+#: XXX nach der Sanierung vermutlich Q0
+#: next_check: 2026-05-22 (BA)
 Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
 #: next_check_id: ODER-2022
@@ -17483,7 +17486,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 # REMOVED --- #: also_indoor: traffic (ex-G)
 #: last_checked: 2026-03-01
 #: check_frequency: 90d
-#: next_check: 2026-04-27 (VIZ: Sanierungsarbeiten)
+#: next_check: 2026-05-08 (VIZ-Verkehrsmeldung: Sanierungsarbeiten)
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
 #: corrected_by: srt (mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen, Q2 -> ..., neu gemacht)
 Wandlitzstr.: Asphalt	Q0 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976

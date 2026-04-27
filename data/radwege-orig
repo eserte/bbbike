@@ -1948,7 +1948,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-04-14 (webcam)
+#: last_checked: 2026-04-27
 #: check_frequency: 21d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 	RW0; 14174,7505 14305,7415
@@ -2652,14 +2652,16 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/berliner-verkehr-dauerbaustelle-in-der-city-west-soll-endlich-verschwinden-14913767.html (bis Anfang 2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/umbauten-am-u-bahnhof-augsburger-strasse-ende-der-dauerbaustelle-in-der-city-west-verzogert-sich-weiter-15210570.html (bis 30.4.2026?)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (bis Mitte Juni 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhanhgf4k2n
 #: source_id: 2147345461 (bis 30.09.2021) (inaktiv)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
 #: source_id: LMS-BR:310311/72 viz2021:13.33538,52.49928, (bis 27.02.2026) (bis 24.03.2026) (bis 29.04.2026) (bis 19.05.2026)
+#: source_id: LMS-BR:406187/72 viz2021:13.3359,52.49999,27.04.2026,07:00 (bis 12.06.2026)
 #: also_indoor: traffic (ex-B[minor])
 #: last_checked: 2025-12-29
 # REMOVED --- #: check_frequency: 45d
-#: next_check: 2026-05-19 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-06-12 (VIZ-Verkehrsmeldung)
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492

@@ -29653,7 +29653,7 @@ EOF
 #: next_check_id: TREPTOWERPARK-2025
 #: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-04-19 vvv
+#: last_checked: 2026-04-27 vvv
 #: check_frequency: 14d vvv
 #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
 Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind oft weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
@@ -45387,9 +45387,10 @@ EOF
 	q4::inwork 11273,12301 11300,12241
 EOF
      },
-     { from  => 1719698400, # 2024-06-30 00:00
-       until => 1727117268, # -> dauerhaft entfernt # undef, # XXX
-       text  => 'Wolziger Zeile: Sperrung des Bahnübergangs ab 1.7.2024',
+     { from  => 1777318739, # 1719698400, # 2024-06-30 00:00
+       until => $isodate2epoch->("2026-05-31 23:59:59"), # 1727117268, # -> dauerhaft entfernt # undef, # XXX
+#      text  => 'Wolziger Zeile: Sperrung des Bahnübergangs ab 1.7.2024',
+       text  => 'Wolziger Zeile: Unterführung wegen Bauarbeiten voraussichtlich bis Ende 2026 gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLZIGERZEILE-2024
@@ -45398,6 +45399,7 @@ EOF
 #: note: Schranke existiert noch, man kann als Radfahrer/Fußgänger noch halb-legal durch (Stand 2024-07-03) (mittlerweile komplett zu)
 # REMOVED --- #: last_checked: 2024-09-21 (youtube)
 #	2::inwork 10382,-2598 10362,-2604 10307,-2633
+	2::inwork 10307,-2633 10389,-2632 10405,-2638 10420,-2644
 EOF
      },
      { from  => 1733835600, # 2024-12-10 14:00, # 1719859975, # 2024-07-01 20:52
@@ -47123,7 +47125,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2026-04-06
+#: last_checked: 2026-04-27
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 # REMOVED (hier Radfahrer frei) ---	q4::inwork; 7696,7771 7632,7807
@@ -47450,7 +47452,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-06-13 00:00:00"), # 1737525600, # 2025-01-22 07:00
-       until => $isodate2epoch->("2026-04-27 23:59:59"), # 1748617200, # 2025-05-30 17:00
+       until => 1777317275, # $isodate2epoch->("2026-04-27 23:59:59"), # 1748617200, # 2025-05-30 17:00
 #      text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, Gehweg für Radfahrer frei, vom 23.01.2025 07:00 bis 30.05.2025 17:00',
 #      text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, vom 13.06.2025 07:00 bis 08.07.2025 17:00',
 #      text  => 'Dernburgstr.: Bauarbeiten zwischen Suarezstr. und Herbartstr., Sperrung der Fahrbahn, evtl. ist der Gehweg für Radfahrer frei, bis 15.10.2025',
@@ -47462,7 +47464,7 @@ EOF
 #: source_id: viz2021:13.28749,52.50307,26.06.2025,17:24 (bis 08.07.2025) (inaktiv)
 #: source_id: viz2021:13.28749,52.50307,14.07.2025,07:00 (bis 15.10.2025) (inaktiv)
 #: source_id: LMS-BR:386771/72 viz2021:13.289985,52.50298,15.10.2025,05:00 (bis 27.11.2025) (inaktiv)
-#: source_id: LMS-BR:401929/72 viz2021:13.287593,52.503064,16.03.2026,06:00 (bis 27.04.2026)
+#: source_id: LMS-BR:401929/72 viz2021:13.287593,52.503064,16.03.2026,06:00 (bis 27.04.2026) (inaktiv)
 Dernburgstr.	q3::inwork 2493,10675 2596,10663 2673,10670 2698,10645
 Herbartstr.	q3::inwork 2493,10675 2468,10780 2361,10941
 EOF
@@ -49135,7 +49137,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-04-14 (traffic) vvv
+#: last_checked: 2026-04-27 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
@@ -49303,13 +49305,15 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
 EOF
      },
      { from  => 1748754000, # 2025-06-01 07:00
-       until => $isodate2epoch->("2026-06-01 19:00:00"), # 1827874740, # 2027-12-03 23:59
-       text  => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 bis 01.06.2026',
+       until => $isodate2epoch->("2026-09-30 23:59:59"), # $isodate2epoch->("2026-06-01 19:00:00"), # 1827874740, # 2027-12-03 23:59
+#      text  => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 02.06.2025 bis 01.06.2026',
+       text  => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis Ende September 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR:371044/72 viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026)
 #: source_id: LMS-BR:392515/72 viz2021:13.315577,52.479657,08.12.2025,07:00 (bis 01.06.2026)
 #: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
+#: source_id: LMS-BR:406181/72 viz2021:13.315703,52.479603,27.04.2026,07:00 (bis 30.09.2026)
 #: note: die textuelle Beschreibung (zwischen Mecklenburgische Straße und Paretzer Straße) und Kartendarstellung (nur ein paar Meter im Kurvenbereich) passen nicht zusammen
 	q4::inwork 4581,8048 4461,8105
 Brabanter Str.: bis zum Kreuzungsbereich keine Einschränkungen	q3::inwork 4461,8105 4457,8270
@@ -50996,14 +51000,16 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-04-26 00:00:00"), # 1760042654, # 2025-10-09 22:44
-       until => $isodate2epoch->("2026-05-31 23:59:59"), # $isodate2epoch->("2025-11-14 23:59:59"), # 1761865200, # 2025-10-31 00:00
+       until => $isodate2epoch->("2026-05-22 23:59:59"), # $isodate2epoch->("2025-11-14 23:59:59"), # 1761865200, # 2025-10-31 00:00
 #      text  => 'Chausseestr.: Gleisbauarbeiten zwischen Tieckstr. und Invalidenstr., Sperrung Richtung Nordwesten, bis 14.11.2025',
-       text  => 'Chausseestr.: Gleisbauarbeiten zwischen Invalidenstr. und Tieckstr., Sperrung Richtung Südosten, 27.04.2026 bis Ende Mai 2026',
+       text  => 'Chausseestr.: Gleisbauarbeiten zwischen Invalidenstr. und Tieckstr., Sperrung Richtung Südosten, 27.04.2026 bis 22.05.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:386176/72 viz2021:13.38535,52.52873, (bis 31.10.2025) (bis 14.11.2025) (inaktiv)
 # REMOVED (alte Meldung) --- #: note: laut rbb auch für Radverkehr; Umleitung ist eingerichtet --- q4::inwork; 9094,13648 9044,13711 8992,13774 8935,13844
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Gleisbauarbeiten ab 27.4.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkh73cmyjk2n
+#: source_id: LMS-BR:406185/72 viz2021:13.38307,52.53058,27.04.2026,07:00 (bis 22.05.2026)
 Chausseestr.	q4::inwork; 8935,13844 8992,13774 9044,13711 9094,13648
 Schlegelstr.: Anbindung Chaussestr. unterbrochen	q3::inwork 9044,13711 9231,13843
 EOF
@@ -52261,7 +52267,7 @@ EOF
      },
      { from  => 1772708400, # 2026-03-05 12:00
        until => $isodate2epoch->("2026-06-29 23:59:59"), # 1776808740, # 2026-04-21 23:59
-       text  => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 06.03.2026 12:00 bis 29.06.2026 23:59',
+       text  => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung der Fahrbahn, vom 06.03.2026 bis 29.06.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026) (bis 29.06.2026)
@@ -52775,14 +52781,24 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-04-26 00:00:00"),
-       until => $isodate2epoch->("2026-05-15 23:59:59"),
-       text  => 'Wandlitzstr.: Bauarbeiten, Fahrbahn gesperrt, 27.04.2026 bis Mitte Mai 2026',
+       until => $isodate2epoch->("2026-05-08 23:59:59"),
+       text  => 'Wandlitzstr.: Bauarbeiten, Fahrbahn gesperrt, 27.04.2026 bis 08.05.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: WANDLITZ-2021
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Sanierungsarbeiten ab 27.4.2026)
-#: next_check: 2026-04-27
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhcym3k622a (Sperrung auch für den Radverkehr)
+#: source_id: LMS-BR:406184/72 viz2021:13.51884,52.48334,27.04.2026,07:00 (bis 08.05.2026)
+#: next_check: 2026-05-08
 Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
+EOF
+     },
+     { from  => 1777759200, # 2026-05-03 00:00
+       until => 1779487200, # 2026-05-23 00:00
+       text  => 'Adalbertstr.: Sanierung der Fahrbahn, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 4.5.2026 bis 22.5.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+	q4::inwork 11552,10863 11589,10947 11640,11067
 EOF
      },
     );
