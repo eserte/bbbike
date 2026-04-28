@@ -51,7 +51,7 @@
 #: source_id: viz2021:13.36063,52.44674,17.12.2024,19:27 (bis 30.04.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: viz2021:13.361581,52.44712,08.02.2025,00:30 (bis 08.02.2025) (inaktiv)
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
-#: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026) (bis 30.04.2026)
+#: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026) (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:405906/72 viz2021:13.36206,52.4473,24.04.2026,19:00 (bis 26.04.2026) (inaktiv)
 #: last_checked: 2026-04-15 (mapillary)
 #: check_frequency: 90d
@@ -560,7 +560,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-04-21 vvv
+#: last_checked: 2026-04-28 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1434,7 +1434,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-04-19 vvv
+#: last_checked: 2026-04-28 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
@@ -1529,6 +1529,7 @@ Verbundsteinpflaster mit deutlichen Unebenheiten	RW2; 3910,6949 3784,6985 3688,7
 #: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026)
 #: note: früher infravelo-Projekt "detmolder-strasse"
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (nach den Bauarbeiten der Wasserbetriebe 2026)
+#: by: https://www.tagesspiegel.de/berlin/kaum-noch-neue-radwege-in-berlin-ausbau-stockt-fordermittel-verfallen-15506512.html (2026)
 #: osm_watch: way id="963841938" version="11"
 #: last_checked: 2025-12-29
 #: check_frequency: 360d
@@ -1823,11 +1824,11 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="823635969" version="31"
+#: osm_watch: way id="823635969" version="32"
 #: osm_watch: way id="4615746" version="58"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-04-21 vvv
+#: last_checked: 2026-04-27 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -2377,7 +2378,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-04-21 vvv
+#: last_checked: 2026-04-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -3309,7 +3310,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-04-19 vvv
+#: last_checked: 2026-04-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3337,7 +3338,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-04-19
+#: last_checked: 2026-04-28
 #: check_frequency: 30d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7186,7 +7187,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-04-15 (mapillary) vvv
+#: last_checked: 2026-04-22 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -7579,7 +7580,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2026-03-21 vvv
+#: last_checked: 2026-04-22 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -7929,7 +7930,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2026-04-12 vvv
+#: last_checked: 2026-04-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7976,7 +7977,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-04-12 vvv
+#: last_checked: 2026-04-28 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344

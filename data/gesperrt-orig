@@ -106,7 +106,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="26"
 #: osm_watch: way id="1430487470" version="2"
-#: last_checked: 2026-03-18
+#: last_checked: 2026-04-22 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -473,7 +473,7 @@ Kavalierstr.	1 10621,18837 10729,18584
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
 #: osm_watch: way id="4637773" version="31"
-#: last_checked: 2026-04-18 (mapillary)
+#: last_checked: 2026-04-21 (mapillary)
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
@@ -4348,7 +4348,7 @@ An den Weiden: Hochbauarbeiten, gesperrt	2::inwork 12882,999 12946,1027
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: source_id: bvg2024:250#HIM_FREETEXT_308566
 #: source_id: bvg2024:250#HIM_FREETEXT_307841
-#: last_checked: 2026-04-18 (mapillary) vvv
+#: last_checked: 2026-04-21 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="8"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4576,7 +4576,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-04-16 vvv
+#: last_checked: 2026-04-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-05-31 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
@@ -4823,7 +4823,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
 #: osm_watch: note 3644429 8
-#: last_checked: 2026-04-08
+#: last_checked: 2026-04-28
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -5170,11 +5170,12 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 #: by: https://entwicklungsstadt.de/bauvorhaben-so-ist-der-stand-bei-berlins-stillstand-projekten/
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408887866/eine-spektakulaere-skyline-wo-berlin-drei-neue-hochhaeuser-bekommt.html (bis Ende 2029)
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/drei-neue-hochhauser-an-der-spree-langzeit-projekt-molecules-mit-neuem-konzept-13684222.html
+#: by: https://www.entwicklungsstadt.de/hochhausprojekt-molecules-berlin-treptowers-stillstand/ (mindestens bis Ende 2030)
 #: confirmed_by: srt
 # REMOVED (mehr als zwei Jahre kaputt) --- #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
 #: last_checked: 2026-03-22 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2029-06-30 (agromex website) vvv
+#: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
 #: next_check ^^^
@@ -5330,7 +5331,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Straßenlandwidmung, Grunerstr.)
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1647248.php
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-04-21
+#: last_checked: 2026-04-28
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5338,7 +5339,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-04-21
+#: last_checked: 2026-04-28
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

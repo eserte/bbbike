@@ -24,7 +24,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-03-27
+#: last_checked: 2026-04-22 (mapillary)
 #: next_check: 2026-07-17
 #: valid: -20260717
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -55,7 +55,7 @@ Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
 #: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026) (bis 22.05.2026)
-#: last_checked: 2026-04-15
+#: last_checked: 2026-04-22 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260213
@@ -98,11 +98,12 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # 
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026)
+#: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
 #: last_checked: 2026-04-06
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
-#: next_check: 2026-05-12 (VIZ-Verkehrsmeldung, valid geht aber länger)
-#: valid: -20260701
+#: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
+#: valid: -20261028
 Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12647
 # 
 # REMOVED --- #: next_check_id: HERBERT-2025
@@ -3632,12 +3633,12 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: next_check_id: WERBELLINAMPEL-2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxqt6w56sc2n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiaabfty7ylfpgmcw5ag7b77wju75h6pncaxihwtb3fp2azsb5p2ti@jpeg
-#: source_id: LMS-BR:381878/72 viz2021:13.43277,52.47837,01.09.2025,07:00 viz2021:13.43277,52.47837, (bis 14.12.2025) (bis 27.02.2026) (bis 30.04.2026)
-#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 30.04.2026)
+#: source_id: LMS-BR:381878/72 viz2021:13.43277,52.47837,01.09.2025,07:00 viz2021:13.43277,52.47837, (bis 14.12.2025) (bis 27.02.2026) (bis 30.04.2026) (bis 11.05.2026)
+#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 30.04.2026) (bis 11.05.2026)
 #: XXX laut Verkehrsmeldung nun Neubau einer Ampel, bis Mitte Dezember 2025, mittlerweile bis Ende Februar 2026 etc.
 #: priority: #D
 #: last_checked: 2026-04-12
-#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-05-11 (VIZ-Verkehrsmeldung)
 provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583
 #: note: Anforderungsampel
@@ -4033,7 +4034,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-04-15 (mapillary) vvv
+#: last_checked: 2026-04-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3

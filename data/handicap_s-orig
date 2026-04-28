@@ -425,10 +425,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-04-15
+#: last_checked: 2026-04-28
 #: check_frequency: 30d
-#: next_check: 2026-05-05 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2030-12-31 (entwicklungsstadt)
+# REMOVED --- #: next_check: 2026-05-05 (VIZ-Verkehrsmeldung)
+#: next_check: 2030-12-31 (entwicklungsstadt)
 # REMOVED (verkehrsrechtlich Anordnung wurde nicht umgesetzt?) --- Littenstr.: Einbahnstraßenregelung wegen Bauarbeiten	q4::inwork; 11155,12184 11139,12243
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 # 
@@ -545,7 +545,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-04-21
+#: last_checked: 2026-04-28
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -1001,8 +1001,22 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Neukölln ###
 # 
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260427 (hier: nur Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhxndyhlk2o
+#: source_id: LMS-BR:405792/72 viz2021:13.424843,52.482167, (bis 26.05.2026)
+#: traffic_note: Ausweichverkehr über Reuterstr. - Flughafenstr., Gefahr von Stauungen vor den Ampeln
+#: last_checked: 2026-04-28 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-05-26 vvv
+Hermannstr.: Wasserrohrbruch, Engstelle	q3::inwork; 11884,8492 11882,8519 11882,8527
+Karlsgartenstr.: Absperrung an der Hermannstr	q3::inwork 11769,8515 11882,8527
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: by: https://www.buwog.de/wohnbauprojekte/berlin-buwog-set-44 ("BUWOG SET 44", Fertigstellung ab 2028)
 #: by: https://www.entwicklungsstadt.de/buwog-set-44-in-neukoelln-baustart-auf-dem-gelaende-der-geyer-werke/ (bis Herbst 2028)
+#: by: https://www.entwicklungsstadt.de/neukoelln-neue-wohnungen-und-gewerbe-fuer-harzer-kiez-geplant/
 #: osm_watch: note 3372461 1
 #: osm_watch: way id="714352578" version="3"
 #: source_id[inactive]: bvg2024:171#HIM_FREETEXT_320392 (Haltestelle ist aufgehoben, kein Endedatum)
@@ -1014,7 +1028,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-04-12
+#: last_checked: 2026-04-28
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1278,7 +1292,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-03-15 (architektur-urbanistik) vvv
+#: last_checked: 2026-04-22 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
