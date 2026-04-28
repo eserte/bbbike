@@ -32,6 +32,7 @@ my $tz = "Europe/Berlin";
 my $do_output_files;
 my $check_net = 1;
 my $v;
+my $debug;
 my $data_dir;
 my $do_yaml = 0;
 my $do_checks = 1;
@@ -89,6 +90,7 @@ sub process {
 		    "f|file=s" => \$file,
 		    "checknet!" => \$check_net,
 		    "v|verbose+" => \$v,
+		    "debug" => \$debug,
 		    "useyaml!" => \$do_yaml,
 		    'action=s@' => \@action,
 		    "checks!" => \$do_checks,
@@ -322,12 +324,12 @@ EOF
 	    warn "  Check points...\n" if $v;
 	    require "$FindBin::RealBin/check_points";
 	    my $ret = BBBike::check_points::doit
-		("-q", "-memcache", $full_path, "strassen", "faehren");
+		("-q", ($debug ? "-debug" : ()), "-memcache", $full_path, "strassen", "faehren");
 	    if ($ret != 0) {
 		# Otherwise do a full region check
 		warn "  Check points (wide region)...\n" if $v;
 		$ret = BBBike::check_points::doit
-		    ("-report", "-memcache", $full_path,
+		    (($debug ? "-debug" : ()), "-report", "-memcache", $full_path,
 		     "strassen", "faehren", "landstrassen", "landstrassen2");
 		if ($ret != 0) {
 		    die "File $full_path (containing " . Dumper($o) . " failed check_points test";

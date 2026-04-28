@@ -38,6 +38,7 @@ sub doit {
     my $usecache = 1;
     my $usememcache = 1;
     my $q;
+    my $debug;
     my $do_report = 0;
     my $assert_single_coordinate;
     my @namerx;
@@ -49,6 +50,7 @@ sub doit {
 	       "cache!" => \$usecache,
 	       "memcache!" => \$usememcache,
 	       "q|quiet!" => \$q,
+	       "debug" => \$debug,
 	       "report!" => \$do_report,
 	       "assert-single-coordinate!" => \$assert_single_coordinate,
 	       "namerx=s\@" => \@namerx,
@@ -64,6 +66,10 @@ EOF
     my(@check) = @ARGV;
     if (!@ARGV) {
 	die "files to check against missing!";
+    }
+
+    if ($debug) {
+	Strassen::set_verbose(1);
     }
 
     if (@namerx) {
