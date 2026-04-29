@@ -115,7 +115,7 @@ Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347
 #: source_id: LMS-BR:379727/72 viz2021:13.37128,52.4366,13.08.2025,07:00 viz2021:13.37128,52.4366, (provisorische Ampelanlage, bis 22.09.2025) (bis 13.03.2026) (bis 06.05.2026)
 #: XXX permanente Ampel in Planung
-#: last_checked: 2025-10-08
+#: last_checked: 2026-04-29
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2026-05-06 (VIZ-Verkehrsmeldung)
 Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::inwork 8461,3410
@@ -648,7 +648,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: XXX Ampel wird vermutlich permanent gemacht
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
 #: osm_watch: node id="7978101859" version="2"
-#: last_checked: 2026-04-15 (mapillary)
+#: last_checked: 2026-04-29
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-28
 	X::inwork 10096,-2137
@@ -678,9 +678,9 @@ Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260320 (Ampel wird nach Ostern 2026 eingeschaltet; dann entfällt auch die Einbahnstraßenregelung in der Briesingstr. für den Radverkehr)
 #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260416 (KW 17/2026)
 #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260417 (in Betrieb genommen)
-#: osm_watch: note 5254100 3
+#: osm_watch: note 5254100 4
 #: XXX Wann wird hier eine dauerhafte Ampel eingerichtet?
-#: last_checked: 2026-04-17 (az-lichtenrade, osm note)
+#: last_checked: 2026-04-29
 #: check_frequency: 120d
 Bahnhofstr./Briesingstr.: provisorische Ampel	?::inwork 10310,-2136
 # 
@@ -2785,6 +2785,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 1849,11088
 	X 3355,12258
+#: note: während der Bauarbeiten mit Gegenverkehrsregelung; sehr lange Zykluszeit (gesehen am 2026-04-29 Wed 12:53: über 130s!)
 	X 10465,-2129
 	X 10756,-2128
 	X 17879,-3

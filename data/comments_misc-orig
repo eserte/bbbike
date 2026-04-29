@@ -1249,7 +1249,7 @@ Bus M44, ...	busroute_N 13708,1383 13634,1371 13413,1363 13300,1359 13194,1355 1
 Bus 172	busroute_N 12938,1348 12790,1302 12657,1154 12588,1103 12538,1075 12403,1011 12307,964 12107,898
 Bus 172	busroute_N 10266,-1473 10460,-1471 10496,-1486 10508,-1511 10531,-1633 10539,-1689 10537,-1785 10513,-1954 10512,-1994 10507,-2016 10465,-2129
 Bus 172	busroute_N 10021,-1918 9959,-1918 9982,-1818
-Bus 175	busroute_N 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9534,-1926 9428,-1892 9431,-1800 9443,-1626 9445,-1460 9457,-1329 9456,-1271 9379,-935
+Bus 175	busroute_N 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9534,-1926 9428,-1892 9431,-1800 9443,-1626 9450,-1464 9457,-1329 9456,-1271 9379,-935
 Bus 175	busroute_N 10310,-2136 10318,-2156 10404,-2404 10454,-2520 10505,-2552 10510,-2642
 # REMOVED (ehemalige Führung via Wolziger Zeile) --- Bus 175	busroute_N 10096,-2137 10173,-2402 10253,-2643 10287,-2644 10307,-2633 10334,-2618 10362,-2604 10382,-2598 10420,-2644 10510,-2642
 Bus 175	busroute_N 10510,-2642 10638,-2638 10657,-2639 10678,-2640 10832,-2636 10949,-2635 11063,-2615 11308,-2535 11496,-2484 11706,-2409 11818,-2356 11882,-2326 12052,-2250 12122,-2219 12154,-2202 12082,-1908 12058,-1785 12050,-1715 12046,-1678 11778,-1706
@@ -1715,7 +1715,7 @@ Waldpromenade: nicht ausgeschildert	CS 23473,8114 23376,8186 23261,8274 23149,83
 # 
 (Friedrichstr. - Enckestr.): ausgeschildert Friedrichstrasse 23 23A 23B; entlang taz-Gebäude und Besselpark	CP2; 9537,10837 9666,10848
 # 
-#: last_checked: 2026-04-14
+#: last_checked: 2026-04-29
 #: check_frequency: 90d
 Mergenthalerring: Straße nicht ausgeschildert, Richtung "Elbekies" fahren	CP2; 14261,8851 14252,8829
 # 
@@ -2259,7 +2259,7 @@ Kuckuckweg: ausgeschildert, allerdings sieht man das Schild nur von der anderen 
 Arenholzsteig: nicht ausgeschildert	CP2; 8496,6919 8481,6900
 Straße 478: ausgeschildert zum Bezirksamt Tempelhof-Schöneberg	CP2; 7781,-182 8054,-198
 #: note: den Radwegweiser müsste man zweiteilen: Schönefeld 12 via Mauerweg (jetzt falsch), (S) Lichtenrade 1,5 (richtig, kann bleiben); dann könnte man das B-L-Schild umhängen
-#: last_checked: 2025-06-11
+#: last_checked: 2026-04-29
 #: check_frequency: 180d
 falsche Ausschilderung der Berlin-Leipzig-Route (Mozartstr. statt Mauerweg)	CP2; 10467,-3201 10491,-3208
 # 
@@ -2274,7 +2274,7 @@ teilweise als "Grüner Hauptweg 4" (Wanderweg) ausgeschildert	CS 9880,16994 9933
 Wartin - Neudorf: als Radweg Casekow-Penkun-Oder ausgeschildert	CS 60089,95070 60142,95193 60453,95524 61366,95963 61474,95960 61627,95918 61716,95932 61770,95996 61799,96082
 # 
 #: osm_watch: way id="1381389258" version="5"
-#: last_checked: 2025-10-08
+#: last_checked: 2026-04-29
 #: check_frequency: 180d
 Marienpark: nicht ausgeschildert	CS 8163,3660 8124,3706 8106,3745 8094,3819 8347,3886
 # 

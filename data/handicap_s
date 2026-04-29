@@ -14,6 +14,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), Gehweg für Radfahrer frei	q2::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
+Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10382,-2598 10394,-2567
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Umwege, Gehweg für Radfahrer frei	q3::inwork; 7000,14832 6929,14845 6849,14831
@@ -578,7 +579,7 @@ Humboldtsteg: einige Fußgänger	q1 8934,15740 8886,15799
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
 (Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15353,11902 15307,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
 Am Bahndamm: teilweise enge Stellen, Fußgänger, Bordstein	q2 7667,4549 7692,4464 7727,4418 7769,4315
-Am Bahndamm: einige Fußgänger, schmal	q2 7769,4315 7795,4242 8016,3651 8055,3547 8106,3410
+Am Bahndamm: einige Fußgänger, schmal	q2 7769,4315 7795,4242 8016,3651 8055,3547 8110,3409
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Teltowkanalpromenade: schmale und kurvige Unterführung	q2 4778,3352 4815,3382 4822,3431
@@ -3313,7 +3314,7 @@ Thaliaweg: enge Straße	q0 6638,3138 6482,3004
 Marmaraweg: Fußgänger	q1 10368,4279 10371,4337
 Kolonie Bismarckruh: Fußgänger, Radfahren erlaubt	q1 1293,13332 1311,13210 1336,12967 1335,12921 1242,12535
 Damwildsteig: enge Straße	q1 -482,21392 -777,21455 -1090,21526 -1213,21553
-Beyrodtstr.: enge Straße	q1 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
+Beyrodtstr.: enge Straße	q0 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 Egmontstr.: enge Straße	q1 17306,11866 17151,11912
 Stadtilmer Weg: enge Straße	q1 6515,1010 6495,915 6592,882 6779,816 6841,793
 Lübener Weg: enge Straße	q1 6403,18289 6353,18292 6314,18295 6227,18299 6131,18302 6045,18305

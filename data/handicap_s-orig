@@ -249,6 +249,11 @@ Rˆblingstr.: Sperrung der Fahrbahn (Einbahnstraﬂenregelung), Gehweg f¸r Radfahre
 # 
 ### Lichtenrade ###
 # 
+#: next_check_id: WOLZIGERZEILE-2024
+#: last_checked: 2026-04-29
+#: next_check: 2026-06-01
+Horstwalder Str. - Goltzstr.: Arbeiten an der Unterf¸hrung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10382,-2598 10394,-2567
+# 
 # REMOVED --- #: next_check_id: BAHNHOFSTR-2020 --- #: source_id: 2147345858 --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, Fahrrad ggfs. schieben	q3 10273,-2158 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
 # 
 ### Treptow ###
@@ -1327,8 +1332,8 @@ Erich-Boltze-Str., Verl‰ngerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026)
-#: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026)
+#: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
 #: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
 #: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
@@ -1337,6 +1342,7 @@ Erich-Boltze-Str., Verl‰ngerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: by: https://www.morgenpost.de/bezirke/pankow/article411357085/greifswalder-strasse-weitere-vollsperrung-ab-montag.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neue-sperrung-wegen-rohrbruch-baustelle-kreuzung-in-prenzlauer-berg-funf-tage-dicht-15316994.html
 #: by: https://www.bahninfo-forum.de/read.php?9,854720,854720#msg-854720
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260429 (Umbau der Baustelle am 30.4.2026, danach f‰llt wohl der einspurige Abschnitt in der Otto-Braun/Greifswalder  weg...)
 #: note: auﬂerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ung¸nstiger f¸r Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bˆtzowstraﬂe - Hufelandstraﬂe
 #: also_indoor: traffic (T,G)
@@ -2320,7 +2326,7 @@ Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fuﬂg‰nger	q1 15393,11590 15423,11667
 #: XXX_prog BS an der Attilastr., ansonsten bleibt es bei q2
 Am Bahndamm: teilweise enge Stellen, Fuﬂg‰nger, Bordstein	q2 7667,4549 7692,4464 7727,4418 7769,4315
 #: note: kann im Sommer im s¸dlichen Abschnitt ziemlich zugewachsen sein
-Am Bahndamm: einige Fuﬂg‰nger, schmal	q2 7769,4315 7795,4242 8016,3651 8055,3547 8106,3410
+Am Bahndamm: einige Fuﬂg‰nger, schmal	q2 7769,4315 7795,4242 8016,3651 8055,3547 8110,3409
 Edenkobener Steg: Fuﬂg‰nger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
@@ -6965,7 +6971,8 @@ Kolonie Bismarckruh: Fuﬂg‰nger, Radfahren erlaubt	q1 1293,13332 1311,13210 1336,
 #: by: Jens M¸ller:
 Damwildsteig: enge Straﬂe	q1 -482,21392 -777,21455 -1090,21526 -1213,21553
 #: by: anonymous
-Beyrodtstr.: enge Straﬂe	q1 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
+#: corrected_by: srt/policy (q1 ->q0-)
+Beyrodtstr.: enge Straﬂe	q0- 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 #: by: Olaf Kr¸ger:
 #: corrected_by: srt/policy (q2 -> q1)
 Egmontstr.: enge Straﬂe	q1 17306,11866 17151,11912

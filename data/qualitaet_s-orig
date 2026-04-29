@@ -29,7 +29,8 @@
 ######################################################################
 # 
 #: section: permanente Einträge vvv
-Mozartstr.: Kopfsteinpflaster	Q3+ 10259,-2660 10392,-2980 10462,-3149
+#: historical_note: früher Q3+, mittlerweile tendiere ich zu glatt Q3
+Mozartstr.: Kopfsteinpflaster	Q3 10259,-2660 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10474,-3186 10467,-3201
 #: corrected_by: Ulrike Burchardt: (was: Kopfsteinpflaster, now: "wunderbar zu fahren")
 #: confirmed_by: Tina (wrong email)
@@ -3524,12 +3525,13 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 # REMOVED --- #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
 #: osm_watch: way id="30893534" version="30"
 #: osm_watch: way id="1155399359" version="5"
-#: last_checked: 2026-02-18
+#: last_checked: 2026-04-29
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-12-31
 Am Teltowkanal: Asphalt	Q0 7911,4465 7866,4419 7769,4315
 # 
-Am Teltowkanal: fester Sandweg	Q1 7769,4315 7673,4223
+Am Teltowkanal: Verbundsteinpflaster	Q1 7769,4315 7724,4270
+Am Teltowkanal: fester Sandweg	Q1 7724,4270 7673,4223
 Edenkobener Steg: Holzbohlen	Q1 6618,4191 6633,4272
 Teltowkanalstr.: Kopfsteinpflaster	Q2 5624,4112 5524,4066 5458,4037
 Teltowkanalstr.: Asphalt	Q0 5458,4037 5405,4014
@@ -3853,7 +3855,7 @@ Michendorfer Str.: Beton	Q0 -700,1504 -706,1736 -726,1799
 Genshagener Str.: Beton	Q0 -623,1510 -622,1604
 Sputendorfer Str.: Beton	Q0 -546,1516 -545,1611
 Gerhardsdorfer Str.: Beton	Q0 -464,1522 -468,1614
-Paplitzer Str.: Kopfsteinpflaster	Q2 10722,-3191 10735,-3142
+Paplitzer Str.: Kopfsteinpflaster	Q3 10722,-3191 10735,-3142
 (Paplitzer Str. - Mauerweg): unbefestigter enger Weg, kurze Steigung	Q3+ 10722,-3191 10687,-3270
 (Mauerweg Unterführung Dresdener Bahn): Asphalt	Q0 10467,-3201 10491,-3208 10577,-3245 10621,-3252 10668,-3268 10687,-3270
 (Mauerweg Lichtenrade): Asphalt	Q0 10687,-3270 11157,-3295 11522,-3319 11570,-3356 11647,-3360 11704,-3336 11742,-3336
@@ -3961,7 +3963,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="5"
 #: priority: #C
-#: last_checked: 2025-11-05
+#: last_checked: 2026-04-29
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -7419,6 +7421,8 @@ Zernickstr.: Verbundsteinpflaster	Q1 7408,257 7391,347
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Verbundsteinpflaster	Q1 7668,-138 7552,-67 7535,20
 (KGA Birkholz): Verbundsteinpflaster	Q1 7751,-920 7766,-920 7765,-898 7977,-864 8026,-859 8059,-1077 8063,-1107 8085,-1120
 (KGA Birkholz): Verbundsteinpflaster	Q1 7766,-920 8059,-1077
+Schichauweg: Verbundsteinpflasterstreifen eingerahmt von Kopfsteinpflasterstreifen	Q2 8085,-1120 8297,-1161
+Schichauweg: Asphalt	Q0 8297,-1161 8511,-1182 8698,-1165 8873,-1118 8953,-1089 9155,-1017
 Diedersdorfer Weg: Asphalt	Q0 7668,471 7810,424 7781,-182 7776,-283 7773,-344 7765,-525 7749,-857 7751,-920 7752,-949
 Reinstedter Weg: Asphalt	Q0 7300,-335 7384,-387 7475,-443 7565,-494 7603,-511 7657,-522 7706,-527
 Reinstedter Weg: unbefestigter Weg	Q2 7706,-527 7765,-525
@@ -11019,8 +11023,8 @@ Gäßnerweg: Asphalt	Q0- 8551,6552 8553,6665
 (Prühßstr. - Rixdorfer Str.): Asphalt	Q0 9869,4271 9965,4299 10051,4295 10143,4283 10220,4236
 (Westphalweg/Dirschelweg - Schwimmbad): wassergebundene Decke, holprig	Q2+ 10059,4396 10051,4295
 (Upstallweg - Richterstr.): Asphalt	Q0 9264,3874 9244,3872 9226,3870 9217,3906
-(Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8199,3338 8145,3380
-(Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8145,3380 8106,3410
+(Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8207,3339 8147,3383
+(Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8147,3383 8110,3409
 #: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
 #: osm_watch: way id="25514283" version="17"
 #: last_checked: 2025-09-22 (mapillary)
@@ -14836,7 +14840,11 @@ Schönstr.: Asphalt	Q0 13391,16436 13630,16629
 #: corrected_by: srt ("mäßiger" gestrichen, Q1 -> Q0-) (mittlerweile neu gemacht)
 Schönstr.: Asphalt	Q0 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959 14136,17170
 #: confirmed_by: srt
-Beyrodtstr.: guter Asphalt	Q0 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
+Beyrodtstr.: guter Asphalt	Q0 7888,1321 7981,1505
+#: corrected_by: srt (guter Asphalt -> ...)
+Beyrodtstr.: Beton	Q0 7981,1505 8074,1698
+#: confirmed_by: srt
+Beyrodtstr.: guter Asphalt	Q0 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 Albersweilerweg: Asphalt	Q0 11763,1879 11951,1901 11978,1921
 #: confirmed_by: rjoop (nördliche Einfahrt)
 Kolonie Bismarckruh: Verbundsteinpflaster	Q1 1293,13332 1311,13210 1336,12967 1335,12921 1242,12535
@@ -15104,6 +15112,7 @@ Lübbenauer Weg: unbefestigte Straße	Q2 26656,-1147 26736,-1089
 #: confirmed_by: srt
 Franz-Stenzer-Str.: guter Asphalt	Q0 20636,16046 20610,15993 20586,15947 20508,15792 20399,15744 20181,15658 20135,15626 20111,15609 20044,15585 19974,15594 19876,15644 19809,15676
 Triniusstr. (Oberschöneweide): Asphalt	Q0 18273,6606 18339,6660 18417,6775 18492,6893
+#: confirmed_by: srt
 Wendehalsweg: guter Asphalt	Q0 14550,3625 14594,3712 14619,3759 14911,4009
 #: confirmed_by: srt
 Nürnberger Str. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 11172,-2224 11388,-2202 11625,-2179
@@ -15853,7 +15862,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf ("Vorplanung")
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf (Asphaltierung geplant)
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/mehrheit-der-lokalpolitiker-fuer-netzausbau-cdu-abgeordneter-fuerchtet-wegfall-von-parkplaetzen_a406794 (Erwähnung)
-#: last_checked: 2025-06-11
+#: last_checked: 2026-04-29
 #: check_frequency: 360d
 #: osm_watch: way id="152177244" version="15"
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10510,-2642 10573,-2891 10606,-3017 10655,-3135 10735,-3142
@@ -19555,7 +19564,7 @@ Sondershauser Str.: Asphalt	Q0 6386,1051 6397,1135 6411,1223 6441,1444 6470,1598
 # REMOVED --- #: corrected_by: srt (clarified: teilweise Asphalt -> Kopfsteinpflaster) --- #: XXX wird das hier auch noch asphaltiert? (und da gibt es noch ein kleines Stück an der Apoldaer Str.) --- #: XXX Baumaßnahme GL6.23 (Realisierung nach 2011) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung) --- #: last_checked: 2019-10-11 (mapillary) --- #: check_frequency: 300d --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.929349.php (Asphaltierung; früher Kopfsteinpflaster)
 Sondershauser Str.: Asphalt	Q0 6470,1598 6486,1680
 #: confirmed_by: srt vvv
-Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	Q2- 8106,3410 8055,3547
+Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	Q2- 8110,3409 8055,3547
 Mariendorfer-Hafen-Weg: unbefestigter Weg, einige Stellen mit Schotter	Q2 8055,3547 8016,3651 7795,4242
 #: confirmed_by ^^^
 Mariendorfer-Hafen-Weg: Holzbohlen	Q1 7795,4242 7769,4315
@@ -20254,9 +20263,14 @@ Joachimstr. (Bohnsdorf): schlechtes Kopfsteinpflaster, Straßenränder teilweise u
 Joachimstr. (Bohnsdorf): Asphalt	Q0 22631,50 22710,98
 #: by: ^^^
 # 
-#: by: Cordelia Will:
-#: confirmed_by: srt (nördlicher und südlicher Abschnitt)
-Illigstr.: guter Asphalt	Q0 9428,-1892 9431,-1800 9443,-1626 9445,-1460 9457,-1329 9456,-1271 9379,-935
+#: by: Cordelia Will: vvv
+#: confirmed_by: srt
+Illigstr.: guter Asphalt	Q0 9428,-1892 9431,-1800 9443,-1626
+#: corrected_by: srt (guter Asphalt -> ...)
+Illigstr.: Beton	Q0 9443,-1626 9450,-1464 9457,-1329
+#: confirmed_by: srt
+Illigstr.: guter Asphalt	Q0 9457,-1329 9456,-1271 9379,-935
+#: by ^^^
 # 
 #: by: anja (anka1702):
 #: corrected_by: srt (Verbundsteinpflaster -> Asphalt)
@@ -27036,7 +27050,7 @@ Oberjägerweg: fester Sandweg, mal Sand, mal uneben, mal Kopfsteinpflaster	Q2 -66
 #: by: Dorothea Parak: vvv
 Kiepertstr.: guter Asphalt	Q0 8522,1870 8374,1815
 #: confirmed_by: srt
-Kiepertstr.: guter Asphalt	Q0 8286,1830 8277,1812 8198,1777 8085,1763 7994,1750 7962,1748 7876,1786
+Kiepertstr.: guter Asphalt	Q0 8286,1830 8277,1812 8152,1771 8085,1763 7994,1750 7962,1748 7876,1786
 #: by: ^^^
 # 
 #: by: Lutz Stroppe:
@@ -28123,7 +28137,13 @@ Flakenseestr.: mäßiger Beton	Q1- 26492,5099 26350,5167 26211,5239
 Trappenpfad: guter Asphalt	Q0 14387,3875 14737,4175
 #: note: enge Straße, ohne Kategorisierung, Zone 30
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt)
-Laubsängerweg: Asphalt	Q0 14761,3580 14725,3617 14645,3691 14594,3712 14568,3731
+Laubsängerweg: Asphalt	Q0 14761,3580 14725,3617
+#: corrected_by: srt (mäßiger Asphalt -> Asphalt)
+Laubsängerweg: Asphalt	Q0; 14725,3617 14645,3691 14594,3712
+#: corrected_by: srt (mäßiger Asphalt -> ...)
+Laubsängerweg: Asphalt, am Rand (Parkstreifen) mäßiger Beton	Q0-; 14594,3712 14645,3691 14725,3617
+#: corrected_by: srt (mäßiger Asphalt -> Asphalt)
+Laubsängerweg: Asphalt	Q0 14594,3712 14568,3731
 #: corrected_by: srt (mäßiger Asphalt -> mäßiger Beton)
 Laubsängerweg: mäßiger Beton	Q1 14568,3731 14484,3796 14453,3823 14387,3875 14324,3938
 Tränkeweg: guter Asphalt	Q0 14453,3823 14806,4125
@@ -32261,7 +32281,8 @@ Groscurthstr.: Asphalt	Q0- 16369,25230 16458,25193 16428,25107
 #: by: ^^^
 # 
 #: by: anonymous [AM] vvv
-Dinnendahlstr.: Kopfsteinpflaster	Q2 9139,-1350 9282,-1442 9445,-1460
+#: confirmed_by: srt
+Dinnendahlstr.: Kopfsteinpflaster	Q2 9139,-1350 9210,-1409 9282,-1442 9359,-1462 9450,-1464
 #: corrected_by: srt (Q1 -> Q0)
 Karl-Stieler-Str.: Asphalt	Q0 6029,4902 6097,4858 6204,4835 6267,4825 6312,4806 6342,4783 6414,4723
 #: confirmed_by: srt
@@ -33115,7 +33136,8 @@ Löwenbrucher Weg: Asphalt	Q0 10392,-2980 10272,-3027 10107,-3063 9924,-3068 9878
 #: corrected_by: srt (Q1- -> Q2+)
 (Blohmstr. - Diedersdorfer Str.): Asphalt mit Löchern und Wurzelhebungen	Q2+ 8492,-1376 8061,-1117
 (Blohmstr. - Diedersdorfer Str.): Asphalt mit Löchern und Unebenheiten	Q1- 8061,-1117 7752,-949
-(Dinnendahlstr. - Schichauweg): unbefestigter Waldweg	Q1 9139,-1350 8953,-1184 8882,-1142 8873,-1118
+#: corrected_by: srt (Q1 -> Q1-)
+(Dinnendahlstr. - Schichauweg): unbefestigter Waldweg	Q1- 9139,-1350 8953,-1184 8882,-1142 8873,-1118
 (Mauerweg - Hohenzollernstr.): fester Waldweg	Q1 9506,-2421 9559,-2417
 #: corrected_by: srt (fester Parkweg, Q1 -> ...)
 (Straße 478 - Königsgraben): Verbundsteinpflaster mit Unebenheiten	Q1- 8585,-231 8054,-198
@@ -34626,5 +34648,13 @@ Einmündungsbereich asphaltiert	Q0 7891,15417
 Einmündungsbereich asphaltiert	Q0 7875,15589
 Kreuzungsbereich asphaltiert	Q0 4862,17934
 Einmündungsbereich mit Kleinsteinpflaster	Q1- -622,15502
+Kreuzungsbereich betoniert	Q0 7981,1505
+Einmündungsbereich asphaltiert	Q0 9139,-1350
+Kreuzungsbereich betoniert	Q0 9282,-1442
+Einmündungsbereich betoniert	Q0 9450,-1464
+Kreuzungsbereich asphaltiert mit einigen Schäden	Q1+ 9443,-1626
+Einmündungsbereich betoniert	Q0 9757,-1621
+Einmündungsbereich asphaltiert	Q0 14645,3691
+Einmündungsbereich asphaltiert	Q0 14911,3568
 #: ignore ^^^
 #: section ^^^
