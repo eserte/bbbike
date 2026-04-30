@@ -27,7 +27,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-04-20
+#: last_checked: 2026-04-30
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -50,7 +50,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-04-04 vvv
+#: last_checked: 2026-04-30 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="13"
@@ -65,7 +65,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: etwa 30m lang
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: osm_watch: note 5191913 2
-#: last_checked: 2026-04-04 vvv
+#: last_checked: 2026-04-30 vvv
 #: check_frequency: 45d vvv
 Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q3::inwork; 13434,13234 13383,13349
 Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 13375,13367 13330,13468
@@ -329,14 +329,14 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: last_checked: 2026-04-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
-#: source_id: LMS-BR:392914/72 viz2021:13.35079,52.53931, (bis 31.03.2026) (bis 30.04.2026)
+#: source_id: LMS-BR:392914/72 viz2021:13.35079,52.53931, (bis 31.03.2026) (bis 30.04.2026) (inaktiv)
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Umwege, Gehweg für Radfahrer frei	q3::inwork; 7000,14832 6929,14845 6849,14831
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork; 6849,14831 6929,14845 7000,14832
 Nordufer/Pekinger Platz: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 6849,14831 6824,14821 6709,14782
-#: source_id: LMS-BR:392917/72 viz2021:13.3549,52.5397, (bis 31.03.2026) (bis 30.04.2026)
+#: source_id: LMS-BR:392917/72 viz2021:13.3549,52.5397, (bis 31.03.2026) (bis 30.04.2026) (inaktiv)
 #: osm_watch: note 4845944 2
 Samoastr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 7000,14832 7007,14911
-#: source_id: LMS-BR:392916/72 viz2021:13.35109,52.54099, (bis 31.03.2026) (bis 30.04.2026)
+#: source_id: LMS-BR:392916/72 viz2021:13.35109,52.54099, (bis 31.03.2026) (bis 30.04.2026) (inaktiv)
 #: note: hier keine expliziten Gehweg-für-Radfahrer-frei-Schilder
 Torfstr.: Bauarbeiten: Abschnitt der Fahrbahn gesperrt	q3::inwork 6849,14831 6837,14848 6739,14969
 #: next_check ^^^
@@ -427,7 +427,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://www.entwicklungsstadt.de/bvg-beginnt-bau-am-waisentunnel-start-fuer-ersatzneubau-unter-der-spree/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3miuytedlfk23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigimbmt5kemm4xvcr7cadihp3nwx4uistazkfxzlindpj6vtcmg3u (Einbahnstraßenregelung)
-#: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026)
+#: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
 #: last_checked: 2026-04-28
@@ -632,7 +632,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-03-27 vvv
+#: last_checked: 2026-04-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="18"
@@ -875,7 +875,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 # 
 #: next_check_id: PERLEBERGER-2024
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
-#: source_id: bvg2024:m27#HIM_FREETEXT_302033
+#: source_id[inactive]: bvg2024:m27#HIM_FREETEXT_302033
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,re-G[viel zu kurz?],re-W,re-ex-H)
@@ -1330,7 +1330,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_316063 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316065 (kein Endedatum)
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
-#: source_id: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
+#: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
 #: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
@@ -1346,15 +1346,16 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-04-16 (mapillary) vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2026-04-30 vvv
+#: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
-#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
-#: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
+#: next_check: 2026-05-28 (VIZ-Verkehrsmeldung) vvv
+Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
+# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
+# REMOVED --- #: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
 # REMOVED (mittlerweile kommt man zumindest bis zur Kreuzung auf der Fahrbahn vorbei an den Absperrungen) --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635
-Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
-Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
-Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
+# REMOVED --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
+# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5360,11 +5361,11 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026)
+#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
 #: last_checked: 2026-04-18 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2026-05-04 vvv
+#: next_check: 2026-05-15 vvv
 # REMOVED --- #: valid: -20251219
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
 # XXX #: valid: !-20251219

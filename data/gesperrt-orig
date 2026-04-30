@@ -4124,10 +4124,10 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
 # 
-#: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026)
+#: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026) (bis 22.07.2026)
 #: last_checked: 2026-03-15
-#: next_check: 2026-05-05
-#: valid: -20260505
+#: next_check: 2026-07-22
+#: valid: -20260722
 (Berolinastr. - Mollstr.): wegen Tiefbauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
 # 
 #: next_check_id: CHAUSSEE-2026
@@ -4348,8 +4348,8 @@ An den Weiden: Hochbauarbeiten, gesperrt	2::inwork 12882,999 12946,1027
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
-#: source_id: bvg2024:250#HIM_FREETEXT_308566
-#: source_id: bvg2024:250#HIM_FREETEXT_307841
+#: source_id[inactive]: bvg2024:250#HIM_FREETEXT_308566
+#: source_id[inactive]: bvg2024:250#HIM_FREETEXT_307841
 #: last_checked: 2026-04-21 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="8"
@@ -4486,7 +4486,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-04-21
+#: last_checked: 2026-04-30
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
