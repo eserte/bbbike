@@ -27,7 +27,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-04-30
+#: last_checked: 2026-05-01
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -269,7 +269,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2026-04-19 (traffic) vvv
+#: last_checked: 2026-05-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -5225,6 +5225,7 @@ Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 76
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_04_0213_0280_online.pdf (Teileinziehung von Straßenland)
 #: XXX Werden hier durch die Teileinziehung explizite Radfahren-verboten-Schilder aufgestellt?
 #: XXX zurzeit wird die Parkanlage umgestaltet)
+#: osm_watch: note 5214226 1
 #: last_checked: 2026-03-21
 Zobeltitzstr.: einige Fußgänger	q2 4370,18039 4492,18013
 # 

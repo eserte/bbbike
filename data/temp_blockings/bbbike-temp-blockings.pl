@@ -18559,7 +18559,7 @@ EOF
      { from  => $isodate2epoch->("2025-05-22 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2025-05-26 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
-       recurrences => [['yearly', days => 15, months => 5, start => "2024-06-08T00:00:00"]], # kann auch erst im September stattfinden
+       recurrences => [['yearly', days => 15, months => 5, start => "2026-06-01T00:00:00"]], # kann auch erst im September stattfinden; 2026 finden Veranstaltungen wohl nur im Rathauspark statt
        recurrence_prewarn_days => 14,
        text  => 'Erkner: Heimatfest, evtl. Sperrungen oder Einschränkungen möglich, 23.5.2025 bis 25.5.2025',
        type  => 'gesperrt',
@@ -32239,8 +32239,8 @@ EOF
        until => undef, # $isodate2epoch->("2026-02-06 18:00:00"), # undef, # 1689428101, # undef, # 1592053810, # undef, # XXX
 #      text  => 'Zobtener Str.: Bauarbeiten, 120m lange Engstelle, Straße kann auch komplett gesperrt sein',
 #      text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 06.02.2026, evtl. werden die Bauarbeiten verlängert',
-#      text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Sperrung unbekannt',
-       text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis Ende April 2026, evtl. werden die Bauarbeiten verlängert',
+#      text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis Ende April 2026, evtl. werden die Bauarbeiten verlängert',
+       text  => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: offizielle Umleitung über Fischerstr.
@@ -32248,13 +32248,13 @@ EOF
 #: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
-#: osm_watch: note 4813149 3
+#: osm_watch: note 4813149 5
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-04-18
+#: last_checked: 2026-05-01
 #: check_frequency: 30d
-#: next_check: 2026-04-30 (SGA Lichtenberg)
+# REMOVED --- #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
 	2::inwork 16353,10207 16148,10329
 # REMOVED (Anlieger frei) ---	2::inwork 16148,10329 15758,10578
@@ -33651,7 +33651,7 @@ EOF
 # REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349 ---	q4::inwork 17771,8349 17753,8290
 #: next_check_id: BLOCKDAMMWEG-2026
 #: note: vielleicht Baustelleneinrichtung für den Blockdammweg, vielleicht schon vorbereitend für die Sperrung der Ehrlichstr. und Umleitungsverkehr via Georg-Klingenberg-Str. und Trautenauer Str.
-#: last_checked: 2026-04-03
+#: last_checked: 2026-05-01
 	q4::inwork; 17879,8773 17851,8662 17846,8644
 EOF
      },
@@ -41012,7 +41012,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-01 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -48339,6 +48339,7 @@ EOF
 #: next_check_id: GUTENBERG-2025
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
+#: also_indoor: traffic (G,no-T)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
 #: osm_watch: note 4702892 3
 #: last_checked: 2026-02-25 vvv
@@ -49315,7 +49316,7 @@ EOF
        text  => 'Aachener Str.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis Ende September 2026',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: LMS-BR:371044/72 viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026)
+#: source_id: LMS-BR:371044/72 viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:392515/72 viz2021:13.315577,52.479657,08.12.2025,07:00 (bis 01.06.2026)
 #: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
 #: source_id: LMS-BR:406181/72 viz2021:13.315703,52.479603,27.04.2026,07:00 (bis 30.09.2026)
@@ -50218,6 +50219,7 @@ EOF
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10135 (Antrag)
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
+#: osm_watch: note 4895287 3
 #: last_checked: 2026-01-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-15 vvv
@@ -50238,7 +50240,7 @@ EOF
      { from  => 1754431200, # 2025-08-06 00:00
        until => undef, # 1767222000, # 2026-01-01 00:00
 #      text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Mitte April 2026: Diagonalweg ist offen)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Mai 2026: Diagonalweg ist offen)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
@@ -50246,7 +50248,7 @@ EOF
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-04-19
+#: last_checked: 2026-05-01
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50342,13 +50344,14 @@ EOF
        until => undef, # 1777586400, # 2026-05-01 00:00
 #      text  => 'Rotherstr., Lehmbruckstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis April 2026',
 #      text  => 'Rotherstr., Am Rudolfplatz, Rudolfstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende April 2026, evtl. wird verlängert',
-       text  => 'Am Rudolfplatz und Rudolfstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende April 2026, evtl. wird verlängert',
+#      text  => 'Am Rudolfplatz und Rudolfstr.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis Ende April 2026, evtl. wird verlängert',
+       text  => 'Am Rudolfplatz und Rudolfstr.: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: osm_watch: note 4924394 5
+#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-04-29 vvv
+#: last_checked: 2026-05-01 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51102,7 +51105,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-04-19
+#: last_checked: 2026-05-01
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51272,8 +51275,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: UFER-2025
-#: last_checked: 2026-03-21
-#: check_frequency: 30d
+#: last_checked: 2026-04-30 (BA)
+#: check_frequency: 14d
 #: next_check: 2026-06-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
 	q4::inwork 8245,16064 8194,15960 8140,15859
@@ -51566,12 +51569,14 @@ EOF
 #: note: Halteverbotsschilder bis 30.04.2026
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
 #: add_fragezeichen: Wann sie die Bauarbeiten beendet?
-#: last_checked: 2026-04-18
-#: check_frequency: 45d
-#: next_check: 2026-04-30 (Halteverbotsschilder)
+#: last_checked: 2026-05-01 vvv
+#: check_frequency: 45d vvv
+# REMOVED --- #: next_check: 2026-04-30 (Halteverbotsschilder) vvv
 Hönower Str.: Einbahnstraßenregelung	q4::inwork; 18660,9410 18735,9421
 Hönower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
 # REMOVED (hier Anlieger frei) ---	q4::inwork; 18846,9532 18871,9565
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1763272800, # 2025-11-16 07:00
@@ -52316,7 +52321,7 @@ EOF
 #: osm_watch: note 5193492 3
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-04-03 vvv
+#: last_checked: 2026-05-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
@@ -52790,13 +52795,14 @@ EOF
      },
      { from  => $isodate2epoch->("2026-04-26 00:00:00"),
        until => $isodate2epoch->("2026-05-08 23:59:59"),
-       text  => 'Wandlitzstr.: Bauarbeiten, Fahrbahn gesperrt, 27.04.2026 bis 08.05.2026',
+       text  => 'Wandlitzstr.: Asphaltierungsarbeiten, Fahrbahn gesperrt, 27.04.2026 bis 08.05.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: WANDLITZ-2021
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Sanierungsarbeiten ab 27.4.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhcym3k622a (Sperrung auch für den Radverkehr)
 #: source_id: LMS-BR:406184/72 viz2021:13.51884,52.48334,27.04.2026,07:00 (bis 08.05.2026)
+#: last_checked: 2026-05-01
 #: next_check: 2026-05-08
 Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
 EOF
@@ -52815,10 +52821,11 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1659492.php (Absperrung "innerhalb der nächsten drei Wochen")
+#: osm_watch: way id="77503429" version="18"
 #: add_fragezeichen: Ist der Pankeweg bereits gesperrt?
 #: priority: #A
 # REMOVED --- #: last_checked: 2026-04-08 (Pressemitteilung) --- #: check_frequency: 21d
-Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12154,20325 11995,19759
+Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12235,20380 12216,20344 12154,20325 11995,19759
 EOF
      },
      { from  => 1769508000, # 2026-01-27 11:00
@@ -52852,6 +52859,26 @@ EOF
        data  => <<'EOF',
 #: source_id: 266000282 (bis 10.05.2026)
 	2::inwork 29505,24363 29414,24387 29334,24409
+EOF
+     },
+     { from  => $isodate2epoch->("2026-05-19 00:00:00"),
+       until => 1779314399, # 2026-05-20 23:59
+       text  => 'Choriner Straße: Veranstaltung (Choriner Straßenfest), möglicherweise keine Durchfahrt möglich, am 20.5.2026 ab 13 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: also_indoor: url https://www.berlin.de/events/5984720-2229501-choriner-kiez-und-strassenfest.html
+	2::temp 10629,14299 10864,14692
+EOF
+     },
+     { from  => 1777586400, # 2026-05-01 00:00
+       until => 1779487200, # 2026-05-23 00:00
+       text  => 'Müritzstr.: Bauarbeiten, Fahrbahn gesperrt, bis 22.5.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (G,T)
+#: last_checked: 2026-05-01
+#: next_check: 2025-05-22
+	q4::inwork 18147,8895 18009,8687
 EOF
      },
     );

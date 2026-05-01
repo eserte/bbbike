@@ -2811,7 +2811,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3499,7 +3499,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: April 8.00 - 19.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Mai 8.00 - 20.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -3890,46 +3890,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html
-#: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
-#: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20240421 (vor dem Roten Rathaus)
-#: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00 (inaktiv)
-#: source_id: viz2021:13.37688,52.51775,30.04.2022,12:00 (inaktiv)
-#: source_id: viz2021:13.36968,52.51571,30.04.2022,12:00 (inaktiv)
-#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
-# REMOVED (Pariser Platz) ---	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
-# REMOVED (Pariser Platz) ---	2::temp 8573,12325 8540,12420
-# REMOVED (Pariser Platz) ---	2::temp 8303,12216 8344,12221 8538,12245 8592,12252
-# REMOVED (Pariser Platz) ---	2::temp 8089,12190 8214,12205
-# REMOVED (Pariser Platz) ---	3::temp 8391,12389 8344,12221 8327,12174
-# REMOVED (Pariser Platz) ---	3::temp 8327,12174 8344,12221 8391,12389
-Rathausstr.	2::temp 10599,12526 10696,12601
-Jüdenstr.	2::temp 10696,12601 10783,12502
-#: tempex ^^^
-',
-         'from' => 1777500000,
-         'id' => 2565,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 7,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              4,
-                              'start',
-                              '2021-05-03T00:00:00'
-                            ]
-                          ],
-         'text' => 'Rotes Rathaus: Veranstaltung (Kundgebung des DGB), Rathausstr. und Jüdenstr. könnten unpassierbar sein, am 1. Mai 2026',
-         'type' => 'gesperrt',
-         'until' => 1777658400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5051,13 +5012,13 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 #: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
 # REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
-#: osm_watch: note 4813149 3
+#: osm_watch: note 4813149 5
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-04-18
+#: last_checked: 2026-05-01
 #: check_frequency: 30d
-#: next_check: 2026-04-30 (SGA Lichtenberg)
+# REMOVED --- #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
 	2::inwork 16353,10207 16148,10329
 # REMOVED (Anlieger frei) ---	2::inwork 16148,10329 15758,10578
@@ -5067,7 +5028,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 ',
          'from' => undef,
          'id' => 3223,
-         'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis Ende April 2026, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5270,7 +5231,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349 ---	q4::inwork 17771,8349 17753,8290
 #: next_check_id: BLOCKDAMMWEG-2026
 #: note: vielleicht Baustelleneinrichtung für den Blockdammweg, vielleicht schon vorbereitend für die Sperrung der Ehrlichstr. und Umleitungsverkehr via Georg-Klingenberg-Str. und Trautenauer Str.
-#: last_checked: 2026-04-03
+#: last_checked: 2026-05-01
 	q4::inwork; 17879,8773 17851,8662 17846,8644
 ',
          'from' => undef,
@@ -7028,7 +6989,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-01 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -8648,6 +8609,7 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
          'data' => '#: next_check_id: GUTENBERG-2025
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
+#: also_indoor: traffic (G,no-T)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
 #: osm_watch: note 4702892 3
 #: last_checked: 2026-02-25 vvv
@@ -9043,7 +9005,7 @@ Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
          'until' => 1785535199
        },
        {
-         'data' => '#: source_id: LMS-BR:371044/72 viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026)
+         'data' => '#: source_id: LMS-BR:371044/72 viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:392515/72 viz2021:13.315577,52.479657,08.12.2025,07:00 (bis 01.06.2026)
 #: source_id: adac:68273372 (bis voraussichtlich 03.12.2027) (neue ID -> inaktiv)
 #: source_id: LMS-BR:406181/72 viz2021:13.315703,52.479603,27.04.2026,07:00 (bis 30.09.2026)
@@ -9308,6 +9270,7 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10135 (Antrag)
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
+#: osm_watch: note 4895287 3
 #: last_checked: 2026-01-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-15 vvv
@@ -9336,14 +9299,14 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-04-19
+#: last_checked: 2026-05-01
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 ',
          'from' => 1754431200,
          'id' => 4411,
-         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Mitte April 2026: Diagonalweg ist offen)',
+         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Mai 2026: Diagonalweg ist offen)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9390,10 +9353,10 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
        undef,
        undef,
        {
-         'data' => '#: osm_watch: note 4924394 5
+         'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-04-29 vvv
+#: last_checked: 2026-05-01 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9407,7 +9370,7 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
 ',
          'from' => 1755881434,
          'id' => 4418,
-         'text' => 'Am Rudolfplatz und Rudolfstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis Ende April 2026, evtl. wird verlängert',
+         'text' => 'Am Rudolfplatz und Rudolfstr.: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9672,7 +9635,7 @@ Schlegelstr.: Anbindung Chaussestr. unterbrochen	q3::inwork 9044,13711 9231,1384
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-04-19
+#: last_checked: 2026-05-01
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9773,8 +9736,8 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
        },
        {
          'data' => '#: next_check_id: UFER-2025
-#: last_checked: 2026-03-21
-#: check_frequency: 30d
+#: last_checked: 2026-04-30 (BA)
+#: check_frequency: 14d
 #: next_check: 2026-06-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
 	q4::inwork 8245,16064 8194,15960 8140,15859
@@ -9908,12 +9871,14 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: note: Halteverbotsschilder bis 30.04.2026
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
 #: add_fragezeichen: Wann sie die Bauarbeiten beendet?
-#: last_checked: 2026-04-18
-#: check_frequency: 45d
-#: next_check: 2026-04-30 (Halteverbotsschilder)
+#: last_checked: 2026-05-01 vvv
+#: check_frequency: 45d vvv
+# REMOVED --- #: next_check: 2026-04-30 (Halteverbotsschilder) vvv
 Hönower Str.: Einbahnstraßenregelung	q4::inwork; 18660,9410 18735,9421
 Hönower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
 # REMOVED (hier Anlieger frei) ---	q4::inwork; 18846,9532 18871,9565
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1763294725,
          'id' => 4501,
@@ -10155,21 +10120,7 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'until' => 1782856799
        },
        undef,
-       {
-         'data' => '#: source_id: LMS-BR:397835/72 viz2021:13.32184,52.5019,02.02.2026,07:00 (bis 22.03.2026) (inaktiv)
-#: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (bis 30.04.2026)
-#: also_indoor: traffic (T,G,W)
-#: last_checked: 2026-04-29 (traffic)
-# REMOVED --- #: check_frequency: 21d
-#: next_check: 2026-04-30
-	q4::inwork; 4838,10597 4819,10355
-',
-         'from' => 1769925600,
-         'id' => 4530,
-         'text' => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden,, vom 02.02.2026 bis 30.04.2026',
-         'type' => 'handicap',
-         'until' => 1777586399
-       },
+       undef,
        {
          'data' => '	2 -2950,12589 -3013,12909 -3008,13052 -2940,13169
 ',
@@ -10391,7 +10342,7 @@ Ausgang Forster Str. (zum Rondell) (Tor ohne Drehkreuz)	2::night 12564,10121 125
 #: osm_watch: note 5193492 3
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-04-03 vvv
+#: last_checked: 2026-05-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
@@ -10648,19 +10599,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'type' => 'handicap',
          'until' => 1780091940
        },
-       {
-         'data' => '#: next_check_id: BER-2026
-#: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407
-#: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun?
-#: next_check: 2026-05-01
-	2::inwork 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
-',
-         'from' => 1777154400,
-         'id' => 4578,
-         'text' => 'LPG-Straße (Flughafen BER): Straßenbau, Vollsperrung, 27. bis 30. April 2026',
-         'type' => 'gesperrt',
-         'until' => 1777586399
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:404321/72 viz2021:13.320862,52.410467, (bis 13.06.2026)
 #: note: hier keine Bürgersteige
@@ -10827,12 +10766,13 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Sanierungsarbeiten ab 27.4.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhcym3k622a (Sperrung auch für den Radverkehr)
 #: source_id: LMS-BR:406184/72 viz2021:13.51884,52.48334,27.04.2026,07:00 (bis 08.05.2026)
+#: last_checked: 2026-05-01
 #: next_check: 2026-05-08
 Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
 ',
          'from' => 1777154400,
          'id' => 4592,
-         'text' => 'Wandlitzstr.: Bauarbeiten, Fahrbahn gesperrt, 27.04.2026 bis 08.05.2026',
+         'text' => 'Wandlitzstr.: Asphaltierungsarbeiten, Fahrbahn gesperrt, 27.04.2026 bis 08.05.2026',
          'type' => 'handicap',
          'until' => 1778277599
        },
@@ -10847,10 +10787,11 @@ Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 183
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1659492.php (Absperrung "innerhalb der nächsten drei Wochen")
+#: osm_watch: way id="77503429" version="18"
 #: add_fragezeichen: Ist der Pankeweg bereits gesperrt?
 #: priority: #A
 # REMOVED --- #: last_checked: 2026-04-08 (Pressemitteilung) --- #: check_frequency: 21d
-Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12154,20325 11995,19759
+Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12235,20380 12216,20344 12154,20325 11995,19759
 ',
          'from' => 1777410245,
          'id' => 4594,
@@ -10893,6 +10834,28 @@ Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12154,20325 11995,19
          'text' => 'Bahnübergang Werneuchen: Sperrung, evtl. ist auch der Radverkehr betroffen, vom 08.05.2026 18:00 Uhr bis 10.05.2026 08:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1778392800
+       },
+       {
+         'data' => '#: also_indoor: url https://www.berlin.de/events/5984720-2229501-choriner-kiez-und-strassenfest.html
+	2::temp 10629,14299 10864,14692
+',
+         'from' => 1779141600,
+         'id' => 4598,
+         'text' => 'Choriner Straße: Veranstaltung (Choriner Straßenfest), möglicherweise keine Durchfahrt möglich, am 20.5.2026 ab 13 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1779314399
+       },
+       {
+         'data' => '#: also_indoor: traffic (G,T)
+#: last_checked: 2026-05-01
+#: next_check: 2025-05-22
+	q4::inwork 18147,8895 18009,8687
+',
+         'from' => 1777586400,
+         'id' => 4599,
+         'text' => 'Müritzstr.: Bauarbeiten, Fahrbahn gesperrt, bis 22.5.2026',
+         'type' => 'handicap',
+         'until' => 1779487200
        }
      
 );
