@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -93,11 +93,11 @@ sub teaser {
 }
 
 sub teaser_sternfahrt_adfc {
-    my $out_of_date = $today gt "20250601";
+    my $out_of_date = $today gt "20260607";
     if (!$out_of_date) {
 	my $url = "https://berlin.adfc.de/sternfahrt";
 	<<EOF
-<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 1. Juni $year</div>
+<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 7. Juni $year</div>
 EOF
     } else {
 	();
