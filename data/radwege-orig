@@ -1477,7 +1477,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: last_checked: 2026-04-15 vvv
+#: last_checked: 2026-05-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 #: XXX früher RW1;, nun Benutzungspflicht
@@ -3787,7 +3787,8 @@ Gehwegplatten	RW1; 5121,17559 5109,17507
 # REMOVED (2025-10-12: die provisorische Radspur ist noch da, aber der neue Radweg kann schon befahren werden) --- #: next_check_id: WEDDINGADVANCEDLABS-2025 --- #: osm_watch: note 3417116 11 --- #: XXX Radweg wird neu asphaltiert --- #: last_checked: 2025-09-24
 #: historical_note: früher (bis 2025): alte Gehwegplatten
 neu asphaltiert	RW1; 6996,15319 6833,15215
-	RW1; 6833,15215 6715,15152 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
+abschnittsweise neu asphaltiert	RW1; 6833,15215 6715,15152
+alte Gehwegplatten	RW1; 6715,15152 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 Verbundsteinpflaster	RW1; 6334,14756 6445,14893 6504,14969 6528,15000 6561,15041 6626,15104
 alte Gehwegplatten	RW1; 6626,15104 6715,15152 6833,15215 6996,15319 7138,15437 7277,15586
 asphaltiert	RW1;RW1 6334,14756 6288,14661
@@ -3953,11 +3954,7 @@ neu asphaltiert	RW2;RW2 16720,6845 16747,6813 16805,6747
 holpriges und teilweise enges Verbundsteinpflaster, teilweise zugewachsen, Q2+	RW1;RW1 7368,14573 7314,14599 7167,14666 6940,14750 6847,14735 6572,14639 6288,14661
 # REMOVED (Rückbau des Radwegs im Oktober/November 2025) --- vorhandener Radweg ist abgesperrt	RW0; 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831
 # REMOVED (hier ist kein Radweg mehr) ---	RW0; 6849,14831 6929,14845 7000,14832
-#: next_check_id: NORDUFER-2025
-#: XXX wird auch dieser Abschnitt des alten Radwegs vollständig zurückgebaut?
-#: note: leider wurde die Absperrung an der Samoastr. vergessen --- in der Mitte des Radwegabschnitts fährt man in eine Sandgrube
-#: next_check: 2026-06-20
-	RW0; 7000,14832 7129,14787
+# REMOVED (Rückbau bis Frühjahr 2026) --- #: next_check_id: NORDUFER-2025 --- #: XXX wird auch dieser Abschnitt des alten Radwegs vollständig zurückgebaut? --- #: note: leider wurde die Absperrung an der Samoastr. vergessen --- in der Mitte des Radwegabschnitts fährt man in eine Sandgrube --- #: next_check: 2026-06-20 ---	RW0; 7000,14832 7129,14787
 	RW1; 7156,14763 7236,14729
 Verbundsteinpflaster	RW1; 5736,15098 5848,14977 5984,14819
 Radweg nur aufgemalt	RW1; 5984,14819 5848,14977
@@ -4091,12 +4088,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21131,10848 21132,10923 21133,10948
 	RW0;RW3 21133,10948 21135,10995
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21135,10995 21136,11134 21137,11200 21138,11254 21138,11271
 	RW3; 21136,11134 21135,10995
-# REMOVED	RW; 18823,9708 18807,9746 18769,9839 18740,9907
-	RW1;RW1 18740,9907 18769,9839 18807,9746 18823,9708
-#: note: die Ausschilderung ist "Gehweg für Radfahrer frei", aber es existiert ein separater Radweg hier
-	RW1; 18823,9708 18860,9605 18866,9584 18871,9565
-	RW4; 18871,9565 18876,9512
-	RW2;RW1 18740,9907 18703,9997 18694,10018 18631,10167
+	RW2;RW1 18694,10018 18631,10167
 	RW4;RW4 18417,10738 18446,10620 18554,10354
 Busspur ist immer gültig	RW5; 18554,10354 18585,10278 18609,10220
 	RW1; 18609,10220 18631,10167
@@ -5582,15 +5574,6 @@ etwa zur Hälfte neu asphaltiert, danach Verbundsteinpflaster	RW1; 17211,7280 172
 Verbundsteinpflaster	RW1; 17286,7173 17352,7051 17459,6854 17510,6751
 neu asphaltiert	RW1; 17286,7173 17211,7280
 	RW3;RW1 17990,7115 18010,7137
-asphaltiert, uneben	RW1; 18010,7137 18086,7243 18165,7371 18198,7425 18256,7520 18267,7537
-#: historical_note: früher (bis 2025): Verbundsteinpflaster
-neu asphaltiert, etwas breiter	RW1; 18267,7537 18382,7724 18406,7760
-Verbundsteinpflaster	RW1; 18406,7760 18471,7862 18577,8033
-neu asphaltiert	RW1; 18577,8033 18626,8114 18657,8163
-neu asphaltiert	RW2; 18657,8163 18672,8238
-	RW1; 18577,8033 18471,7862 18406,7760 18382,7724 18267,7537 18256,7520 18198,7425 18165,7371 18086,7243 18010,7137
-	RW2; 18672,8238 18657,8163 18626,8114 18577,8033
-	RW2;RW1 18672,8238 18704,8427
 	RW1; 13265,5519 13305,5316
 	RW1;RW1 13305,5316 13327,5234
 	RW2;RW1 16887,17349 16837,17440
@@ -8215,7 +8198,6 @@ asphaltiert	RW1;RW1 19363,3730 19125,3491
 	RW3;RW3 4467,9163 4609,9027 4689,8953
 	RW3; 4689,8953 4777,8870
 einige Meter mit Benutzungspflicht	RW3; 4777,8870 4689,8953
-	RW4; 18867,9464 18876,9512 18871,9565 18866,9584 18860,9605 18823,9708
 	RW6;RW6 -1710,16735 -1857,16766
 	RW6;RW6 -1783,16533 -1897,16562
 	RW6;RW6 -1798,16465 -1902,16493
@@ -8450,7 +8432,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-04-19
+#: last_checked: 2026-05-02
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -8531,8 +8513,6 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW6;RW6 6363,4047 6428,4076 6493,4105 6517,4051 6452,4024 6428,4076
 10km/h	RW6;RW6 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
 	RW4; 7714,13223 7759,13246
-# REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18718,8583 18704,8427 ---	RW0; 18718,8583 18704,8427
-neu asphaltiert	RW2; 18737,8686 18727,8634 18718,8583 18704,8427 18718,8583
 	RW6;RW6 7781,14238 7802,14250 7769,14300 7757,14318 7735,14305
 	RW6;RW6 7930,14060 7973,13991
 #: note: früher (vor 2022) 10km/h
@@ -9149,7 +9129,33 @@ Poller	RW4; 9383,13986 9469,14004 9659,14043 9676,14046 9804,14071 9821,14073 99
 # 
 asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 20205,-548 20272,-501 20585,-272 20671,-205 20777,-88 20895,39 21025,176 21115,271
 asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,449 21613,923 21656,989 21829,1351
+# 
+#: note: Treskowallee, Richtung Süden
+Verbundsteinpflaster	RW1; 18694,10018 18703,9997 18740,9907 18769,9839 18807,9746 18823,9708 18860,9605 18866,9584 18871,9565
+	RW4; 18871,9565 18876,9512
+#: note: Parkverbot Mo-Fr 6-19 Uhr, Sa 6-14 Uhr; in der restlichen Zeit nur eine Fahrspur mit angrenzenden Mittelstreifen
+	RW0; 18876,9512 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
+neu asphaltiert	RW2; 18737,8686 18727,8634 18718,8583 18704,8427
+Verbundsteinpflaster	RW1; 18704,8427 18672,8238
+Verbundsteinpflaster	RW2; 18672,8238 18657,8163 18626,8114 18577,8033
+Verbundsteinpflaster	RW1; 18577,8033 18471,7862 18406,7760 18382,7724 18267,7537 18256,7520 18198,7425 18165,7371 18086,7243 18010,7137
+#: note: Treskowallee, Richtung Norden
+asphaltiert, uneben	RW1; 18010,7137 18086,7243 18165,7371 18198,7425 18256,7520 18267,7537
+#: historical_note: früher (bis 2025): Verbundsteinpflaster
+neu asphaltiert, etwas breiter	RW1; 18267,7537 18382,7724 18406,7760
+Verbundsteinpflaster	RW1; 18406,7760 18471,7862 18577,8033
+neu asphaltiert	RW1; 18577,8033 18626,8114
+#: historical_note: früher (bis etwa 2025/2026) benutzungspflichtig
+neu asphaltiert	RW1; 18626,8114 18657,8163 18672,8238
+Verbundsteinpflaster	RW1; 18672,8238 18704,8427
+neu asphaltiert	RW2; 18704,8427 18718,8583
 	RW4; 18718,8583 18727,8634 18737,8686
+#: note: Parkverbot Mo-Fr 6-19 Uhr, Sa 6-14 Uhr; in der restlichen Zeit nur eine Fahrspur mit angrenzenden Mittelstreifen
+	RW0; 18737,8686 18770,8898 18790,9018 18809,9133 18834,9256 18867,9464
+	RW4; 18867,9464 18876,9512 18871,9565 18866,9584 18860,9605 18823,9708
+Verbundsteinpflaster	RW1; 18823,9708 18807,9746 18769,9839 18740,9907
+Verbundsteinpflaster	RW2; 18740,9907 18703,9997 18694,10018
+# 
 	RW4; 7098,3067 7105,3040 7115,3003
 #: by: mapillary
 	RW3;RW3 18938,2054 18881,2062

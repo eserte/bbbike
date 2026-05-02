@@ -1427,6 +1427,7 @@ Johannisstr. -> Friedrichstr.: Straßenbahnhaltestelle	3::igndisp 9385,13174 9254
 Mittelstreifen mit Zaun	3nocross::ignrte 7966,15571 7975,15500 8049,15470
 Reinickendorfer Str. -> Martha-Ndumbe-Pl. [Reinickendorfer Str.]: Mittelstreifen mit Zaun	3::igndisp 8049,15470 7975,15500 7975,15484
 Martha-Ndumbe-Pl. [Reinickendorfer Str.] -> Reinickendorfer Str.: Mittelstreifen mit Zaun	3::igndisp 7975,15484 7975,15500 7966,15571
+Mittelstreifen	3nocross::ignrte 7966,15571 7962,15633 7948,15802
 Mittelstreifen	3nocross::ignrte 8001,15205 8002,15340 8024,15401
 Reinickendorfer Str. -> Martha-Ndumbe-Pl. [Gerichtstr.-Reinickendorfer Str.]: Mittelstreifen	3::igndisp 8001,15205 8002,15340 7975,15362
 Martha-Ndumbe-Pl. [Gerichtstr.-Reinickendorfer Str.] -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 7975,15362 8002,15340 8024,15401
@@ -1630,7 +1631,7 @@ Mittelstreifen	3nocross::ignrte 7263,4281 7310,4308 7366,4345
 Attilastr. -> Ludwigsburger Weg: Mittelstreifen	3::igndisp 7263,4281 7310,4308 7250,4401
 Ludwigsburger Weg -> Attilastr.: Mittelstreifen	3::igndisp 7250,4401 7310,4308 7366,4345
 Straßenbahn	3nocross::ignrte 18010,7137 17990,7115 17934,7029 17919,6978
-Treskowallee -> Roedernstr.: Straßenbahn	3::igndisp 18010,7137 17990,7115 18012,7096
+Edisonstr. -> Roedernstr.: Straßenbahn	3::igndisp 18010,7137 17990,7115 18012,7096
 Roedernstr. -> Edisonstr.: Straßenbahn	3::igndisp 18012,7096 17990,7115 17934,7029
 Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 17990,7115
 Edisonstr. -> Fuststr.: Straßenbahn	3::igndisp 17919,6978 17934,7029 17823,7203

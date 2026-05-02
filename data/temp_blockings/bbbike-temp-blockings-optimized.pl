@@ -7514,35 +7514,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: note: laut Schild der Wasserbetriebe bis August 2024
-# REMOVED --- # REMOVED (laut osm beendet) --- #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin? vvv --- #: last_checked: 2025-05-24 (mapillary) vvv --- #: check_frequency: 60d vvv
-# REMOVED --- #: osm_watch: way id="1156267450" version="8"
-# REMOVED --- Wiesenstr.: nur ein Abschnitt betroffen	q3::inwork 7948,15802 8048,15829
-# REMOVED --- #: osm_watch: way id="120633718" version="32"
-# REMOVED --- Wiesenstr.	q4::inwork 8048,15829 8140,15859 8164,15840
-# REMOVED --- #: osm_watch[closed]: note 3816582 3
-# REMOVED --- Uferstr.: nur Einmündungsbereich betroffen	q3::inwork 8140,15859 8194,15960
-# REMOVED --- #: osm_watch[closed]: note 3393893 7
-# REMOVED --- Kösliner Str.: Einmündungsbereich betroffen	q3::inwork 8048,15829 8066,15610
-# REMOVED --- # REMOVED --- #: add_fragezeichen ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-#: by: https://www.gesobau.de/wohnungsbau/wiesenstrasse-reinickendorfer-strasse/ (bis Herbst 2026)
-#: osm_watch: way id="120633718" version="36"
-#: osm_watch: way id="1273476153" version="2"
-#: also_indoor: traffic (G,no-T,no-H,W) vvv
-#: note: eigentlich 1s:q3
-#: last_checked: 2026-02-15 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2026-11-30 (gesobau)
-Wiesenstr.: Einbahnstraßenregelung	q3::inwork; 8048,15829 7948,15802
-#: also_indoor ^^^
-',
-         'from' => undef,
-         'id' => 4033,
-         'text' => 'Wiesenstr.: Hochbauarbeiten, Einbahnstraßenregelung, möglicherweise bis Herbst 2026',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9736,7 +9708,7 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
        },
        {
          'data' => '#: next_check_id: UFER-2025
-#: last_checked: 2026-04-30 (BA)
+#: last_checked: 2026-05-02
 #: check_frequency: 14d
 #: next_check: 2026-06-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
@@ -9774,7 +9746,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-30 (Absperrung nur noch etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße)
+#: last_checked: 2026-05-02 (Absperrung nur noch etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße)
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -10519,20 +10491,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'until' => 1789077599
        },
        undef,
-       {
-         'data' => '#: also_indoor: traffic (T,no-G)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: nur wenige Meter am Ku\'damm gesperrt, deshalb q4 -> q3
-#: last_checked: 2026-04-12
-#: check_frequency: 21d
-	q3::inwork 5313,10420 5341,10756
-',
-         'from' => undef,
-         'id' => 4570,
-         'text' => 'Meinekestr.: Bauarbeiten, Fahrbahn am Kurfürstendamm gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -10553,7 +10512,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdl-hohenstaufen-pallas-und-goebenstr/?postID=795563#post795563
 #: also_indoor: traffic (G,no-T,no-W,no-H)
 #: osm_watch: way id="251962463" version="4"
-#: last_checked: 2026-04-03 (daf)
+#: last_checked: 2026-05-02 (traffic)
 #: check_frequency: 30d
 #: next_check: 2027-12-31 (neubaukompass website)
 	q4::inwork; 4886,6819 4886,6711

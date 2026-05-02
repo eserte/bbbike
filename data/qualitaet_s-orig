@@ -491,7 +491,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-04-19
+#: last_checked: 2026-05-02
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -522,7 +522,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1040.pdf (keine Priorisierung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2026-04-22 (mapillary) vvv
+#: last_checked: 2026-05-02 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
 #: osm_watch: way id="169459736" version="19"
@@ -1215,7 +1215,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2026-04-12
+#: last_checked: 2026-05-02
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -14483,6 +14483,8 @@ Moderlieschenstr.: Betonplatten	Q1- -732,15940 -866,16042
 # 
 (Privatstraße): Verbundsteinpflaster	Q1+ 196,3650 181,3771
 # 
+(Müllerstr. - Ruheplatzstr.): Asphalt	Q0 7607,15282 7617,15307 7627,15412
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -26451,7 +26453,8 @@ Hugo-Vogel-Str.: guter Asphalt	Q0 -6216,1192 -6244,1315 -6249,1332 -6304,1564 -6
 Hallberger Zeile: guter Asphalt	Q0 15954,6297 16068,6216
 # 
 #: by: Philipp Voss:
-Weddingstr.: gutes Kopfsteinpflaster	Q1 8066,15610 8053,15598 7962,15633
+#: corrected_by: srt (gutes Kopfsteinpflaster, Q1 -> ...)
+Weddingstr.: Kopfsteinpflaster	Q2+ 8066,15610 8053,15598 7962,15633
 # 
 #: by: Sebastian Müller:
 Melsunger Str.: mäßiger Asphalt	Q1 -4694,8897 -4786,8847 -5071,8864 -5382,8880

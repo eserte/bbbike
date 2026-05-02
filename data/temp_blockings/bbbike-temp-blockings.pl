@@ -44239,7 +44239,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1751050067, # undef, # XXX
+       until => 1777732287, # undef, # 1751050067, # undef, # XXX
 #      text  => 'Wiesenstr./Uferstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        text  => 'Wiesenstr.: Hochbauarbeiten, Einbahnstraßenregelung, möglicherweise bis Herbst 2026',
        type  => 'handicap',
@@ -44258,13 +44258,10 @@ EOF
 #: by: https://www.gesobau.de/wohnungsbau/wiesenstrasse-reinickendorfer-strasse/ (bis Herbst 2026)
 #: osm_watch: way id="120633718" version="36"
 #: osm_watch: way id="1273476153" version="2"
-#: also_indoor: traffic (G,no-T,no-H,W) vvv
+#: also_indoor: traffic (G,no-T,no-H,W)
 #: note: eigentlich 1s:q3
-#: last_checked: 2026-02-15 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2026-11-30 (gesobau)
+# REMOVED --- #: last_checked: 2026-05-02 (von Osten aus keine Einengung mehr gesehen) --- #: check_frequency: 90d --- #: next_check: 2026-11-30 (gesobau)
 Wiesenstr.: Einbahnstraßenregelung	q3::inwork; 8048,15829 7948,15802
-#: also_indoor ^^^
 EOF
      },
      { from  => 1711947600, # 2024-04-01 07:00
@@ -51275,7 +51272,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: UFER-2025
-#: last_checked: 2026-04-30 (BA)
+#: last_checked: 2026-05-02
 #: check_frequency: 14d
 #: next_check: 2026-06-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
@@ -51378,7 +51375,7 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-30 (Absperrung nur noch etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße)
+#: last_checked: 2026-05-02 (Absperrung nur noch etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße)
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -52533,15 +52530,14 @@ Weg entlang der A100: unklar, ob offiziell eröffnet	2::inwork 14440,8050 14439,8
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1777745259, # undef, # XXX
        text  => 'Meinekestr.: Bauarbeiten, Fahrbahn am Kurfürstendamm gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (T,no-G)
+#: also_indoor: traffic (ex-T,no-G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: nur wenige Meter am Ku'damm gesperrt, deshalb q4 -> q3
-#: last_checked: 2026-04-12
-#: check_frequency: 21d
+# REMOVED --- #: last_checked: 2026-05-02 (traffic) --- #: check_frequency: 21d
 	q3::inwork 5313,10420 5341,10756
 EOF
      },
@@ -52585,7 +52581,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdl-hohenstaufen-pallas-und-goebenstr/?postID=795563#post795563
 #: also_indoor: traffic (G,no-T,no-W,no-H)
 #: osm_watch: way id="251962463" version="4"
-#: last_checked: 2026-04-03 (daf)
+#: last_checked: 2026-05-02 (traffic)
 #: check_frequency: 30d
 #: next_check: 2027-12-31 (neubaukompass website)
 	q4::inwork; 4886,6819 4886,6711
