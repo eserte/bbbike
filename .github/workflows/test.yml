@@ -15,6 +15,7 @@ jobs:
     name: ${{ matrix.os }} ${{ matrix.add_name }}
     runs-on: ${{ matrix.os }}
     strategy:
+     fail-fast: false
      matrix:
 ## XXX windows not yet working, macos not tested --- TODO
        include:
@@ -101,6 +102,7 @@ jobs:
     name: Docker tests with ${{ matrix.dist }}:${{ matrix.distver }}
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         include:
           - dist:                       debian
