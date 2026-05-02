@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         URL-Links hervorheben mit Set (Berliner Zeitungen, Debugging)
 // @namespace    http://tampermonkey.net/
-// @version      1.6
+// @version      1.7
 // @description  Hebt Links hervor, deren href in externer URL-Liste steht; mit Debug-Logs; nur auf tagesspiegel.de und anderen Berliner Zeitungen
 // @author       Dein Name
 // @match        https://*.tagesspiegel.de/*
@@ -65,20 +65,25 @@ GM_registerMenuCommand('Set urlListFile', () => {
         return JSON.parse(response.responseText);
     }
 
-    function highlightLinks(urlArray) {
-        console.log('[DEBUG] Anzahl geladener URLs aus JSON:', urlArray.length);
+    let cachedUrlSet = null;
 
-        const normalizedUrls = urlArray.map(normalizeUrl);
-        const urlSet = new Set(normalizedUrls);
+    function highlightLinks() {
+        if (!cachedUrlSet) {
+            console.warn('[DEBUG] highlightLinks: cachedUrlSet ist noch nicht geladen.');
+            return;
+        }
 
-        const links = document.querySelectorAll('a[href]');
-        console.log('[DEBUG] Anzahl gefundener <a>-Links auf der Seite:', links.length);
+        const links = document.querySelectorAll('a[href]:not([data-highlighted])');
+        if (links.length === 0) return;
+
+        console.log('[DEBUG] Anzahl neu zu prüfender <a>-Links auf der Seite:', links.length);
 
         let countMatched = 0;
 
         links.forEach(link => {
+            link.setAttribute('data-highlighted', 'true');
             const normHref = normalizeUrl(link.href);
-            if (urlSet.has(normHref)) {
+            if (cachedUrlSet.has(normHref)) {
                 countMatched++;
                 link.style.border = '4px solid green';
                 link.style.padding = '2px';
@@ -88,12 +93,37 @@ GM_registerMenuCommand('Set urlListFile', () => {
             }
         });
 
-        console.log('[DEBUG] Anzahl hervorgehobener Links auf der Seite:', countMatched);
+        if (countMatched > 0) {
+            console.log('[DEBUG] Anzahl neu hervorgehobener Links auf der Seite:', countMatched);
+        }
     }
 
     fetchUrlList()
         .then(urlArray => {
-            highlightLinks(urlArray);
+            console.log('[DEBUG] Anzahl geladener URLs aus JSON:', urlArray.length);
+            const normalizedUrls = urlArray.map(normalizeUrl);
+            cachedUrlSet = new Set(normalizedUrls);
+
+            highlightLinks();
+
+            // Beobachte die Seite auf dynamisch hinzugefügte Inhalte
+            const observer = new MutationObserver((mutations) => {
+                let hasAddedNodes = false;
+                for (const mutation of mutations) {
+                    if (mutation.addedNodes.length > 0) {
+                        hasAddedNodes = true;
+                        break;
+                    }
+                }
+                if (hasAddedNodes) {
+                    highlightLinks();
+                }
+            });
+
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
         })
         .catch(error => {
             console.error('[DEBUG] Highlight-Skript Fehler:', error);
