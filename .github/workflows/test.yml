@@ -147,7 +147,7 @@ jobs:
           - dist:                       ubuntu
             distver:                    focal
             bbbike_test_skip_mapserver: 0
-            use_bbbike_ppa:             1
+            use_bbbike_ppa:             0
             use_eserte_obs:             0
           - dist:                       ubuntu
             distver:                    resolute
