@@ -39,12 +39,15 @@ for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trus
 for my $codename (qw(bionic focal jammy noble resolute)) {
     $codename_to_packagerepos{$codename}->{'bbbike-ppa'} = 1;
 }
-for my $codename (qw(trixie forky)) {
+for my $codename (qw(trixie forky jammy noble resolute)) {
     $codename_to_packagerepos{$codename}->{'eserte-obs'} = 1;
 }
 my %codename_to_obs_repository = (
-    trixie => 'Debian_13',
-    forky  => 'Debian_Testing',
+    trixie   => 'Debian_13',
+    forky    => 'Debian_Testing',
+    jammy    => 'xUbuntu_22.04',
+    noble    => 'xUbuntu_24.04',
+    resolute => 'xUbuntu_26.04',
 );
 
 sub usage (;$) {
@@ -483,12 +486,19 @@ sub ci {
 
     my $t0 = Time::HiRes::time();
 
+    my($use_eserte_obs, $use_bbbike_ppa) = (0, 0);
+    $use_eserte_obs = $codename_to_packagerepos{$opt{'distver'}}->{'eserte-obs'} ? 1 : 0;
+    if (!$use_eserte_obs) {
+	$use_bbbike_ppa = $codename_to_packagerepos{$opt{'distver'}}->{'bbbike-ppa'} ? 1 : 0;
+    }
+
     my %default_env =
 	(
 	 # build config
 	 USE_MODPERL                => 1,
 	 USE_SYSTEM_PERL            => 1,
-	 USE_BBBIKE_PPA             => $codename_to_packagerepos{$opt{'distver'}}->{'bbbike-ppa'} ? 1 : 0,
+	 USE_ESERTE_OBS		    => $use_eserte_obs,
+	 USE_BBBIKE_PPA             => $use_bbbike_ppa,
 	 # init_env_vars() is ineffective in this setup, so set it here
 	 BBBIKE_LONG_TESTS          => 1,
 	 BBBIKE_TEST_SKIP_MAPSERVER => 1,
