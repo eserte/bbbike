@@ -185,16 +185,12 @@ init_apt() {
 	    if [ ! -e $sources_list_file ]
 	    then
 		deb_repo_portspec=
-		# Usually wget is able to download the key on 2nd attempt,
-		# but this would mask the still existing network problem,
-		# so use only 1 try if fallback operation is enabled.
-		if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
-		then
-		    first_wget_tries=1
-		else
-		    first_wget_tries=5
-		fi
-	        wget --connect-timeout=10 --tries=$first_wget_tries -O- $deb_repo_url/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename || {
+		# Usually wget is able to download the key on 2nd attempt.
+		first_wget_tries=5
+		(
+		    set -o pipefail
+	            wget --connect-timeout=10 --tries=$first_wget_tries -O- $deb_repo_url/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename
+		) || {
 		    if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
 		    then
 			deb_repo_portspec=:8000
