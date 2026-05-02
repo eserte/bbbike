@@ -151,43 +151,74 @@ init_apt() {
 	    fi
 	    sudo add-apt-repository ppa:eserte/bbbike
 	else
-	    if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
+	    if [ "$USE_ESERTE_OBS" = "1" ]
 	    then
-		MYDEBS_BBBIKE_DE_PORTSPEC=
+		sources_list_file=/etc/apt/sources.list.d/obs-eserte.sources
+		TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT=0 # always unset
+		case "$CODENAME" in
+		    trixie)   obs_distname=Debian_13 ;;
+		    forky)    obs_distname=Debian_Testing ;;
+		    jammy)    obs_distname=xUbuntu_22.04 ;;
+		    noble)    obs_distname=xUbuntu_24.04 ;;
+		    resolute) obs_distname=xUbuntu_26.04 ;;
+		    *)
+			echo "No OBS support for $CODENAME"
+			return 2
+			;;
+		esac
+		deb_repo_url=https://download.opensuse.org/repositories/home:/eserte/$obs_distname
+		deb_repo_key_basename=obs-eserte.gpg
+		deb_repo_key_src_baseurl=Release.key
+		gpg_dearmor_cmd="gpg --dearmor"
+	    else
+		sources_list_file=/etc/apt/sources.list.d/mydebs.bbbike.list
+		if debian_ubuntu_version ge debian/trixie
+		then
+		    deb_repo_key_basename=mydebs.bbbike.2026.asc
+		else
+		    deb_repo_key_basename=mydebs.bbbike.key
+		fi
+		deb_repo_url=http://mydebs.bbbike.de
+		deb_repo_key_src_baseurl=key/$deb_repo_key_basename
+		gpg_dearmor_cmd="cat"
+	    fi
+	    if [ ! -e $sources_list_file ]
+	    then
+		deb_repo_portspec=
 		# Usually wget is able to download the key on 2nd attempt,
 		# but this would mask the still existing network problem,
 		# so use only 1 try if fallback operation is enabled.
 		if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
 		then
-		    FIRST_WGET_TRIES=1
+		    first_wget_tries=1
 		else
-		    FIRST_WGET_TRIES=5
+		    first_wget_tries=5
 		fi
-		if debian_ubuntu_version ge debian/trixie
-		then
-		    MYDEBS_BBBIKE_KEY_BASENAME=mydebs.bbbike.2026.asc
-		else
-		    MYDEBS_BBBIKE_KEY_BASENAME=mydebs.bbbike.key
-		fi
-	        wget --connect-timeout=10 --tries=$FIRST_WGET_TRIES -O- http://mydebs.bbbike.de/key/$MYDEBS_BBBIKE_KEY_BASENAME > /tmp/$MYDEBS_BBBIKE_KEY_BASENAME || {
+	        wget --connect-timeout=10 --tries=$first_wget_tries -O- $deb_repo_url/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename || {
 		    if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
 		    then
-			MYDEBS_BBBIKE_DE_PORTSPEC=:8000
-			wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC}/key/$MYDEBS_BBBIKE_KEY_BASENAME > /tmp/$MYDEBS_BBBIKE_KEY_BASENAME
+			deb_repo_portspec=:8000
+			wget --connect-timeout=10 --tries=5 -O- $deb_repo_url${deb_repo_portspec}/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename
 		    else
-			echo "Cannot fetch $MYDEBS_BBBIKE_KEY_BASENAME and TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT not specified"
+			echo "Cannot fetch $deb_repo_key_src_baseurl from $deb_repo_url and TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT not specified"
 			false
 		    fi
 		}
-		if debian_ubuntu_version ge debian/trixie
+		if [ "$USE_ESERTE_OBS" = "1" ]
 		then
-		    sudo cp /tmp/$MYDEBS_BBBIKE_KEY_BASENAME /etc/apt/keyrings/$MYDEBS_BBBIKE_KEY_BASENAME
-	            sudo sh -c "echo deb [signed-by=/etc/apt/keyrings/$MYDEBS_BBBIKE_KEY_BASENAME] http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC} ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
+		    sudo cp /tmp/$deb_repo_key_basename /etc/apt/keyrings/$deb_repo_key_basename
+		    printf "Types:deb\nURIs: $deb_repo_url\nSuites: ./\nSigned-By: /etc/apt/keyrings/$deb_repo_key_basename\n" | sudo tee $sources_list_file~ > /dev/null
 		else
-	            sudo apt-key add /tmp/$MYDEBS_BBBIKE_KEY_BASENAME
-	            sudo sh -c "echo deb http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC} ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
+		    if debian_ubuntu_version ge debian/trixie
+		    then
+		        sudo cp /tmp/$deb_repo_key_basename /etc/apt/keyrings/$deb_repo_key_basename
+	                sudo sh -c "echo deb [signed-by=/etc/apt/keyrings/$deb_repo_key_basename] http://mydebs.bbbike.de${deb_repo_portspec} ${CODENAME} main > $sources_list_file~"
+		    else
+	                sudo apt-key add /tmp/$deb_repo_key_basename
+	                sudo sh -c "echo deb http://mydebs.bbbike.de${deb_repo_portspec} ${CODENAME} main > $sources_list_file~"
+		    fi
 		fi
-	        sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
+	        sudo mv $sources_list_file~ $sources_list_file
 	    fi
 	fi
     fi
