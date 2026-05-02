@@ -10578,7 +10578,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        {
          'data' => '#: also_indoor: traffic (G[ungenaue Richtungsangabe],T,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-04-19 (traffic)
+#: last_checked: 2026-05-01 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork; 16416,16236 16395,16099
 ',
@@ -10848,7 +10848,7 @@ Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12235,20380 12216,20
        {
          'data' => '#: also_indoor: traffic (G,T)
 #: last_checked: 2026-05-01
-#: next_check: 2025-05-22
+#: next_check: 2026-05-22
 	q4::inwork 18147,8895 18009,8687
 ',
          'from' => 1777586400,
