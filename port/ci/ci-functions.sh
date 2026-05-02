@@ -18,6 +18,24 @@ wrapper() {
     set +x
 }
 
+apt_update() {
+    for i in 1 2 3; do
+        sudo apt-get update $apt_quiet && return 0
+        echo "apt-get update failed, retrying ($i)..."
+        sleep 5
+    done
+    return 1
+}
+
+apt_install() {
+    for i in 1 2 3; do
+        sudo apt-get install -y $apt_quiet "$@" && return 0
+        echo "apt-get install failed, retrying ($i)..."
+        sleep 5
+    done
+    return 1
+}
+
 debian_ubuntu_version() {
     set +x
     # Interleaved Debian/Ubuntu release codenames (ordered)
@@ -147,7 +165,7 @@ init_apt() {
 	then
 	    if ! which add-apt-repository >/dev/null 2>&1
 	    then
-	        sudo apt-get install -y $apt_quiet --no-install-recommends software-properties-common
+	        apt_install --no-install-recommends software-properties-common
 	    fi
 	    sudo add-apt-repository ppa:eserte/bbbike
 	else
@@ -179,24 +197,36 @@ init_apt() {
 		    deb_repo_key_basename=mydebs.bbbike.key
 		fi
 		deb_repo_url=http://mydebs.bbbike.de
+		# Check if port 80 is reachable, otherwise fallback to 8000 early
+		if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
+		then
+		    if ! wget --quiet --connect-timeout=5 --tries=1 --spider $deb_repo_url/key/$deb_repo_key_basename >/dev/null 2>&1
+		    then
+			echo "Port 80 seems to be blocked, using port 8000 for mydebs.bbbike.de"
+			deb_repo_portspec=:8000
+			deb_repo_url="http://mydebs.bbbike.de${deb_repo_portspec}"
+		    fi
+		fi
 		deb_repo_key_src_baseurl=key/$deb_repo_key_basename
 		gpg_dearmor_cmd="cat"
 	    fi
 	    if [ ! -e $sources_list_file ]
 	    then
-		deb_repo_portspec=
 		# Usually wget is able to download the key on 2nd attempt.
+		# In CI we use more tries to handle transient network issues.
 		first_wget_tries=5
 		(
 		    set -o pipefail
 	            wget --connect-timeout=10 --tries=$first_wget_tries -O- $deb_repo_url/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename
 		) || {
-		    if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
+			# this fallback is probably not needed anymore if we did the check above
+			if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ] && [ "$deb_repo_portspec" = "" ]
 		    then
+			echo "Fallback to port 8000..."
 			deb_repo_portspec=:8000
-			wget --connect-timeout=10 --tries=5 -O- $deb_repo_url${deb_repo_portspec}/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename
+			    wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de${deb_repo_portspec}/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename
 		    else
-			echo "Cannot fetch $deb_repo_key_src_baseurl from $deb_repo_url and TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT not specified"
+			    echo "Cannot fetch $deb_repo_key_src_baseurl from $deb_repo_url"
 			false
 		    fi
 		}
@@ -218,7 +248,7 @@ init_apt() {
 	    fi
 	fi
     fi
-    sudo apt-get update $apt_quiet
+    apt_update
 }
 
 # Reasons for the following dependencies
@@ -318,10 +348,10 @@ install_non_perl_dependencies() {
 	extra_build_packages=
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $extra_build_packages $cpanminus_package $cpm_dep_packages $imager_ext_packages $libproj_packages
+    apt_install --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $extra_build_packages $cpanminus_package $cpm_dep_packages $imager_ext_packages $libproj_packages
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
-	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver
+	apt_install --no-install-recommends mapserver-bin cgi-mapserver
     fi
 
     # Hack to run libqt5core (needed by gpsbabel) in a debian:buster
@@ -334,7 +364,7 @@ install_non_perl_dependencies() {
 		if ldconfig -p | perl -Mversion -nle 'if (/libQt5Core.so.*OS ABI: Linux (\d+\.\d+)/) { exit($1 > 3.16 ? 0 : 1) }'
 		then
 		    echo "Need to remove ABI specification of $qt5sofile"
-		    sudo apt-get install -y $apt_quiet --no-install-recommends binutils
+		    apt_install --no-install-recommends binutils
 		    sudo strip --remove-section=.note.ABI-tag $qt5sofile
 		fi
 		;;
@@ -352,7 +382,7 @@ install_perl_testonly_dependencies() {
 	    # Currently only available in bbbike ppa (XXX create also in mydebs)
 	    test_packages+=" libimager-image-base-perl"
 	fi
-	sudo apt-get install -y $apt_quiet --no-install-recommends $test_packages
+	apt_install --no-install-recommends $test_packages
     else
 	if debian_ubuntu_version ge debian/buster
 	then
@@ -454,9 +484,9 @@ install_webserver_dependencies() {
 	# probably valid also for all newer debians and ubuntus after jessie
 	if debian_ubuntu_version ge ubuntu/xenial
 	then
-	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2
+	    apt_install --no-install-recommends apache2
 	else
-	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2-mpm-prefork
+	    apt_install --no-install-recommends apache2-mpm-prefork
 	fi
 	if debian_ubuntu_version le ubuntu/trusty
 	then
@@ -467,13 +497,13 @@ install_webserver_dependencies() {
 	# Installation of modperl will trigger a restart, so no separate one needed
 	if [ "$USE_SYSTEM_PERL" = "1" ]
 	then
-	    sudo apt-get install -y $apt_quiet --no-install-recommends libapache2-mod-perl2 libapache2-reload-perl
+	    apt_install --no-install-recommends libapache2-mod-perl2 libapache2-reload-perl
 	else
 	    if debian_ubuntu_version le ubuntu/trusty
 	    then
-		sudo apt-get install -y $apt_quiet --no-install-recommends apache2-prefork-dev
+		apt_install --no-install-recommends apache2-prefork-dev
 	    else
-		sudo apt-get install -y $apt_quiet --no-install-recommends apache2-dev
+		apt_install --no-install-recommends apache2-dev
 	    fi
 	    cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/"
 	    sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load"
@@ -481,7 +511,7 @@ install_webserver_dependencies() {
     else
 	if [ "$USE_SYSTEM_PERL" = "1" ]
 	then
-	    sudo apt-get install -y $apt_quiet --no-install-recommends starman libcgi-emulate-psgi-perl libcgi-compile-perl libplack-middleware-rewrite-perl libplack-middleware-deflater-perl
+	    apt_install --no-install-recommends starman libcgi-emulate-psgi-perl libcgi-compile-perl libplack-middleware-rewrite-perl libplack-middleware-deflater-perl
 	# else: plack dependencies are already handled in Makefile.PL's PREREQ_PM
 	fi
     fi
@@ -519,7 +549,7 @@ install_perl_dependencies() {
 	else
 	    email_packages=libmime-lite-perl
 	fi
-	sudo apt-get install -y $apt_quiet --no-install-recommends libapache-session-counted-perl libarchive-zip-perl libgd-gd2-perl libsvg-perl libobject-realize-later-perl libdb-file-lock-perl libpdf-create-perl libtext-csv-xs-perl libdbi-perl libdate-calc-perl libobject-iterate-perl libgeo-metar-perl libgeo-spacemanager-perl libimage-exiftool-perl libdatetime-format-iso8601-perl libdbd-xbase-perl libxml-libxml-perl libxml2-utils libxml-twig-perl libxml-simple-perl $libgeo_distance_perl_package libimage-info-perl libinline-perl $libinline_c_perl_package libtemplate-perl libyaml-libyaml-perl libclass-accessor-perl libdatetime-perl libstring-approx-perl libtext-unidecode-perl libipc-run-perl libjson-xs-perl libcairo-perl libpango-perl libemail-mime-perl $email_packages libcdb-file-perl libmldbm-perl libpalm-palmdoc-perl libimager-qrcode-perl libtie-ixhash-perl libwww-mechanize-perl libhtml-format-perl libhtml-form-perl libwww-perl liblwp-protocol-https-perl $additional_non_live_packages
+	apt_install --no-install-recommends libapache-session-counted-perl libarchive-zip-perl libgd-gd2-perl libsvg-perl libobject-realize-later-perl libdb-file-lock-perl libpdf-create-perl libtext-csv-xs-perl libdbi-perl libdate-calc-perl libobject-iterate-perl libgeo-metar-perl libgeo-spacemanager-perl libimage-exiftool-perl libdatetime-format-iso8601-perl libdbd-xbase-perl libxml-libxml-perl libxml2-utils libxml-twig-perl libxml-simple-perl $libgeo_distance_perl_package libimage-info-perl libinline-perl $libinline_c_perl_package libtemplate-perl libyaml-libyaml-perl libclass-accessor-perl libdatetime-perl libstring-approx-perl libtext-unidecode-perl libipc-run-perl libjson-xs-perl libcairo-perl libpango-perl libemail-mime-perl $email_packages libcdb-file-perl libmldbm-perl libpalm-palmdoc-perl libimager-qrcode-perl libtie-ixhash-perl libwww-mechanize-perl libhtml-format-perl libhtml-form-perl libwww-perl liblwp-protocol-https-perl $additional_non_live_packages
 	if debian_ubuntu_version le ubuntu/precise
 	then
 	    # upgrade Archive::Zip (precise comes with 1.30) because
@@ -528,7 +558,7 @@ install_perl_dependencies() {
 	fi
 	if [ "$BBBIKE_TEST_GUI" = "1" ]
 	then
-	    sudo apt-get install -y $apt_quiet --no-install-recommends perl-tk
+	    apt_install --no-install-recommends perl-tk
 	fi
     else
 	# XXX Tk::ExecuteCommand does not specify Tk as a prereq,
@@ -676,13 +706,14 @@ install_selenium() {
 
 	# Test::WWW::Selenium
 	if [ "$USE_SYSTEM_PERL" = "1" ]
-	   apt_packages+=" libtest-www-selenium-perl"
 	then
+	   apt_packages+=" libtest-www-selenium-perl"
+	else
 	    cpanm --quiet --notest Test::WWW::Selenium
 	fi
 
 	# outstanding installs
-	sudo apt-get install -y $apt_quiet --no-install-recommends $apt_packages
+	apt_install --no-install-recommends $apt_packages
 
     fi
 }
