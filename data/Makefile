@@ -200,7 +200,8 @@ persistent-tmp:	fragezeichen-outdoor \
 		osm-watch-lists \
 		doit \
 		data-bbbgeojsonp \
-		data-geojson
+		data-geojson \
+		tampermonkey-urls
 
 rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
@@ -1204,6 +1205,15 @@ ${PERSISTENTTMPDIR}/.check_data_test_mount:	${BBBIKEDIR}/t/data-test/strassen \
 	${STEIGUNG_STAT} -str ${BBBIKEDIR}/t/data-test/strassen -i ${BBBIKEDIR}/t/data-test/hoehe -die-on-fatal -o $@~
 	mv $@~ $@
 	-@$(READONLY) $@
+
+tampermonkey-urls: \
+		${PERSISTENTTMPDIR}/tampermonkey/newspaper_urls.json \
+		${PERSISTENTTMPDIR}/tampermonkey/bvv_urls.json
+
+# XXX reuse ADDITIONAL_OSMWATCH_FILES here
+${PERSISTENTTMPDIR}/tampermonkey/newspaper_urls.json ${PERSISTENTTMPDIR}/tampermonkey/bvv_urls.json: *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd ${ADDITIONAL_OSMWATCH_FILES}
+	@mkdir -p ${PERSISTENTTMPDIR}/tampermonkey
+	${PERL} ${MISCSRCDIR}/extract-tampermonkey-urls.pl --output-dir ${PERSISTENTTMPDIR}/tampermonkey
 
 ######################################################################
 # BBBGEOJSONP TARGETS
