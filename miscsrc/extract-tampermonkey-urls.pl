@@ -3,6 +3,7 @@
 use strict;
 use FindBin;
 use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
+use Doit;
 use Getopt::Long;
 use JSON::PP;
 use File::Spec;
@@ -15,6 +16,9 @@ sub usage {
 usage: $0 --output-dir directory
 EOF
 }
+
+my $doit = Doit->init;
+$doit->add_component('file');
 
 my $output_dir;
 GetOptions(
@@ -68,14 +72,16 @@ warn "Found " . scalar(@bvv_urls) . " BVV URLs\n";
 my $json_encoder = JSON::PP->new->utf8->canonical->pretty;
 
 my $newspaper_file = File::Spec->catfile($output_dir, "newspaper_urls.json");
-open(my $nfh, ">", $newspaper_file) or die "Could not open '$newspaper_file' for writing: $!";
-print $nfh $json_encoder->encode(\@newspaper_urls);
-close $nfh;
+$doit->file_atomic_write($newspaper_file, sub {
+    my $nfh = shift;
+    print $nfh $json_encoder->encode(\@newspaper_urls);
+});
 
 my $bvv_file = File::Spec->catfile($output_dir, "bvv_urls.json");
-open(my $bfh, ">", $bvv_file) or die "Could not open '$bvv_file' for writing: $!";
-print $bfh $json_encoder->encode(\@bvv_urls);
-close $bfh;
+$doit->file_atomic_write($bvv_file, sub {
+    my $bfh = shift;
+    print $bfh $json_encoder->encode(\@bvv_urls);
+});
 
 __END__
 
