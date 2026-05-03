@@ -26,10 +26,10 @@
 # REMOVED --- Pufendorfstr.: 70m der Fahrbahn gesperrt, Ausweichen auf Bürgersteig	q3::inwork 12616,12844 12842,13070
 # 
 #: also_indoor: traffic (B,T)
-#: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten
-#: last_checked: 2026-05-01
+#: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
+#: last_checked: 2026-05-03
 #: check_frequency: 21d
-# REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder)
+#: next_check: 2026-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 # 
@@ -518,6 +518,7 @@ Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,1
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
 #: by: https://www.entwicklungsstadt.de/elisabeth-selbert-haus-unter-den-linden-rohbau-waechst-fertigstellung-fuer-2026-geplant/
+#: by: https://www.entwicklungsstadt.de/unter-den-linden-elisabeth-selbert-haus-waechst-sichtbar-in-die-hoehe-ist-aber-im-verzug/ (Fertigstellung 2026 unwahrscheinlich)
 #: osm_watch: way id="4402037" version="28"
 #: osm_watch: way id="1241756428" version="2"
 #: next_check: 2026-12-31 (entwicklungsstadt)
@@ -1183,7 +1184,7 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-04-18
+#: last_checked: 2026-05-03
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1298,7 +1299,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-04-22 (mapillary) vvv
+#: last_checked: 2026-05-02 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -4404,6 +4405,8 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.morgenpost.de/bezirke/spandau/article408813542/verkehrswende-die-plaene-fuer-die-radbruecke-am-rathaus-spandau.html
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13024 (Anfrage)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/schrottrampe-am-u-bahnhof-bleibt-das-hassliche-wahrzeichen-der-altstadt-spandau-fur-immer-14306738.html
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/mobilitaetsrat/protokoll-mobilitaetsrat-spandau-2sitzung.pdf (15.10.2025, Erwähnung: Finanzierung fehlt)
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/mobilitaetsrat/praesentation-mobilitaetsrat-spandau-2sitzung.pdf
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-grosses-bvg-drehkreuz-schandfleck-am-rathaus-spandau-wird-abgerissen-15141605.html (Erwähnung der gläsernen Brücke; Sanierung des Platzes bis 2032)
 # REMOVED (wieder benutzungspflichtig) --- #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
 #: last_checked: 2025-08-08 (mapillary) vvv
@@ -5367,7 +5370,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-03 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-05-15 vvv
 # REMOVED --- #: valid: -20251219
@@ -5723,6 +5726,13 @@ Warnitzer Str.: Kurven, unübersichtlch	q1 18141,17960 18041,18073 17962,18010 17
 (Teupitzer Str. - Zossener Str./Kastanienallee): Fußgänger	q3 23573,15627 23617,15594
 # 
 (Dihlmannstr./Im Heidewinkel - Freibad Jungfernheide): einige Fußgänger	q1 1065,15229 1089,15184 1132,15161 1265,15192 1416,15190
+# 
+(Schmetterlingswiesen, westlicher Weg): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21385,11119 21432,11021 21473,10928 21517,10827 21559,10732 21592,10656 21657,10519
+(Schmetterlingswiesen, östlicher Weg): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21457,11188 21483,11129 21514,11058 21601,10864 21642,10773 21674,10701 21727,10582
+(Aurorafalterweg - Eisfalterweg): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21402,11009 21432,11021 21514,11058 21540,11070
+(Mohrenfalterstr. - Distelfalterstr.): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21491,10815 21494,10816 21517,10827 21601,10864
+(Dukatenfalterweg - Parkweg): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21649,10777 21642,10773 21559,10732
+(Habichtshorst - Schmetterlingswiesen): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21592,10656 21674,10701
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

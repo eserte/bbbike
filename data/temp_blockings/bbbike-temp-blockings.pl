@@ -32252,7 +32252,7 @@ EOF
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2026-05-01
+#: last_checked: 2026-05-03
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-04-30 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
@@ -36585,7 +36585,7 @@ EOF
 #: osm_watch: way id="734271970" version="10"
 #: osm_watch: way id="975241319" version="10"
 #: osm_watch: way id="970452276" version="9"
-#: osm_watch: note 5093384 4
+#: osm_watch: note 5093384 6
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
 #: last_checked: 2026-04-28
@@ -41012,7 +41012,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-05-03 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -48105,7 +48105,7 @@ EOF
        until => undef, # $isodate2epoch->("2026-04-30 20:00:00"), # 1757352969, # $isodate2epoch->("2025-09-08 23:59:59"), # $isodate2epoch->("2025-04-02 18:00:00"), # 1743606000, # 2025-04-02 17:00
 #      text  => 'Weißenhöher Str.: Brückenabriss, Sperrung auch für den Rad- und Fußverkehr, vom 19.03.2025 06:00 bis 02.04.2025 18:00',
 #      text  => 'Weißenhöher Str.: komplette Sperrung der Straße (vermutlich wegen Brückenarbeiten), auch für den Rad- und Fußverkehr, auch die Anbindung Gladauer Str. ist gesperrt, vom 18.08.2025 bis 08.09.2025',
-       text  => 'Gladauer Str.: Fahrbahn an der Weißenhöher Str. gesperrt, voraussichtlich bis Ende April 2026, evtl. wird die Sperrung verlängert',
+       text  => 'Gladauer Str.: Fahrbahn an der Weißenhöher Str. gesperrt (Absperrung kann aber zeitweise weggeschoben sein), voraussichtlich bis Ende Juli 2026, evtl. wird die Sperrung verlängert',
 #      type  => 'gesperrt',
        type  => 'handicap',
        data  => <<'EOF',
@@ -48121,9 +48121,9 @@ EOF
 #: source_id: viz2021:13.55274,52.50751,18.08.2025,07:00 (bis 08.09.2025) (inaktiv)
 #: also_indoor: traffic (ex-T,ex-H,ex-A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: note: Halteverbotsschilder bis 30.04.2026
-#: last_checked: 2026-04-08
-#: next_check: 2026-04-30 (Halteverbotsschilder)
+#: note: Halteverbotsschilder bis 30.04.2026, mittlerweile bis 31.07.2026
+#: last_checked: 2026-05-03
+#: next_check: 2026-07-31 (Halteverbotsschilder)
 Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,11337
 # REMOVED (siehe Verkehrszeichenplan) --- #: XXX laut VIZ-Meldung schon ab Grabensprung gesperrt: stimmt das?
 # REMOVED --- #: last_checked: 2025-03-12 (nur eine Engstelle ohne Verbote) --- #: check_frequency: 21d
@@ -48240,6 +48240,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
+#: by: https://www.entwicklungsstadt.de/marzahner-chaussee-rohbauarbeiten-fuer-neue-wohnungen-kommen-voran/ (Fertigstellung: geplant bis 2027)
 #: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026) (bis 30.04.2026) (bis 08.05.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m)
@@ -51262,7 +51263,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: add_fragezeichen: Sind die Wege weiterhin gesperrt?
-#: last_checked: 2026-04-08
+#: last_checked: 2026-05-03
 	2::inwork 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 EOF
      },
@@ -52359,7 +52360,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260309
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonn3av322l
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgpd42uvik2s (voraussichtlich erst ab 26.3.2026)
-#: source_id: LMS-BR:401371/72 viz2021:13.4266,52.60763,10.03.2026,07:00 (angrenzender Rosenthaler Weg, bis 04.05.2026)
+#: source_id: LMS-BR:401371/72 viz2021:13.4266,52.60763,10.03.2026,07:00 (angrenzender Rosenthaler Weg, bis 04.05.2026) (inaktiv)
 #: source_id: LMS-BR:402967/72 viz2021:13.4262,52.60772,26.03.2026,07:00 (Cunistr., bis 04.05.2026)
 	q4::inwork 11807,22395 11694,22479
 EOF

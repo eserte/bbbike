@@ -570,15 +570,15 @@ Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
 #: note: Anforderungsampel, man bekommt zügig grün
 #: source_id: viz2021:13.56016,52.48441,01.07.2025,18:32 (Ampelanlage außer Betrieb (also existiert sie noch)) (inaktiv)
-#: last_checked: 2025-11-26
+#: last_checked: 2026-05-03
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2025-11-26
+#: last_checked: 2026-05-03
 #: check_frequency: 120d
 Köpenicker Str./Hadubrandstr.	F::inwork 21055,8374
 #: note: anstelle des Zebrastreifens, also eigentlich südlich des eingetragenen Punktes
-#: last_checked: 2025-11-26
+#: last_checked: 2026-05-03
 #: check_frequency: 120d
 Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
@@ -3478,7 +3478,10 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 4592,3762
 #: note: Anforderungsampel
 	F -306,1700
-#: note: am So, 2018-04-29, gegen 12:30 ausgeschaltet
+#: off: 2018-04-29 Sun 12:30
+#: off: 2026-05-03 Sun 11:10
+#: note: möglicherweise außerhalb der Geschäftszeiten ausgeschaltet, also auch nachts?
+#: off_rule: Sun?
 	X 20959,11472
 	F 21137,11294
 	X 7481,19400
@@ -3498,7 +3501,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	X 18718,8583
 	X 18727,8634
 	X 18737,8686
-#: note: Anforderungsampel für Radfahrer aus der Godesberger Str. (und vermutlich auch Dorotheastr.)
+#: note: Anforderungsampel für Radfahrer aus der Godesberger Str., sowie für linksabbiegende Radfahrer aus der Treskowallee in Dorotheastr. und Godesberger Str.
 	X 18770,8898
 # 
 	X 18704,8427

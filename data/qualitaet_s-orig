@@ -286,13 +286,21 @@ Kressenweg: Asphalt	Q0 23513,9567 23528,9680 23574,9782
 Kressenweg: Asphalt, einige "Moabiter Kissen"	Q0- 23574,9782 23603,9883 23659,10074
 Kressenweg: Asphalt	Q0 23533,10858 23565,10957 23573,10975 23648,11265
 Kressenweg: leicht löchriger Beton	Q0- 23659,10074 23726,10308 23683,10391 23638,10408 23534,10446 23522,10456 23467,10569 23466,10622 23533,10858
-# REMOVED --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20130816.1515.388062.html --- #: XXX Sanierung der Fischerstr. bis Ende Oktober, danach asphaltiert --- #: priority: #A --- #: last_checked: 2013-10-19
+# 
+Fischerstr.: Kopfsteinpflaster	Q2 15970,10755 16080,10743
+Fischerstr.: Asphalt	Q0 16038,10818 16080,10743
+#: historical_note: früher (bis 2013?) gepflastert, siehe http://www.berlin.de/ba-lichtenberg/presse/archiv/20130816.1515.388062.html
 #: note: außen Kopfsteinpflaster
-Fischerstr.: Asphaltstreifen in der Mitte	Q0- 16080,10743 16181,10609
+Fischerstr.: Asphaltstreifen in der Mitte	Q0 16080,10743 16181,10609
 Fischerstr.: Kopfsteinpflaster	Q2+; 16181,10609 16193,10593 16220,10555
 Fischerstr.: Asphalt mit Schäden	Q1; 16220,10555 16193,10593 16181,10609
-Fischerstr.: Asphalt	Q0 16038,10818 16080,10743
-Fischerstr.: Kopfsteinpflaster	Q2 15970,10755 16080,10743
+Fischerstr.: Asphalt mit leichten Schäden	Q0- 16220,10555 16261,10481 16371,10331
+Fischerstr.: Beton mit leichten Schäden	Q0- 16371,10331 16404,10286
+#: historical_note: früher (bis Mai 2025): Asphaltschäden, Q2+
+Fischerstr.: Asphalt	Q0 16404,10286 16423,10259
+#: historical_note: früher (bis Mai 2025): Asphaltschäden, Q1+
+Fischerstr.: Asphalt	Q0 16423,10259 16492,10163 16539,10097
+# 
 Neuer Feldweg: Asphalt	Q0 17365,9654 17360,9629
 # REMOVED --- #: note: mindestens eine Ausfahrt besteht aus groben Kopfsteinpflaster mit großen Fugen, deshalb nur Q2+ --- Wallensteinstr./Neuer Feldweg: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg Verbundsteinpflaster	Q2+; 17360,9629 17425,9605 17456,9594 17549,9529
 #: note: der Gehweg ist hier auch für Radfahrer frei, Verbundsteinpflaster mit schlechten Stellen
@@ -321,7 +329,7 @@ Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
-#: last_checked: 2026-05-01
+#: last_checked: 2026-05-03
 #: check_frequency: 60d
 Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
@@ -391,11 +399,13 @@ Harzer Str.: Asphalt mit einigen Schäden	Q0- 13188,9134 13264,9073 13333,9017
 Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.2)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/2026-03-02-protokoll_ag-mobilitaet.pdf ("Belagwechsel ... nicht geplant")
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="30"
 #: last_checked: 2026-05-01
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 360d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
 Hirschberger Str.: Asphalt	Q0 14988,11130 15021,11152 15056,11138
@@ -7010,7 +7020,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="34"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2026-04-08
+#: last_checked: 2026-05-03
 #: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -11391,10 +11401,6 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 (Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0- 21262,15271 21263,15291
 Dürerplatz: Verbundsteinpflaster	Q1 6234,7020 6276,6995
 # REMOVED (konnte ich nicht feststellen) --- Loewenhardtdamm: Asphalt mit einigen Schäden	Q1; 8632,8174 8730,8079
-#: historical_note: früher (bis Mai 2025): Asphaltschäden, Q2+
-Fischerstr.: Asphalt	Q0 16404,10286 16423,10259
-#: historical_note: früher (bis Mai 2025): Asphaltschäden, Q1+
-Fischerstr.: Asphalt	Q0 16423,10259 16492,10163 16539,10097
 # REMOVED (möglicherweise dauerhaft gesperrt) --- (Wattstr./Siemensstr. - Wilhelminenhofstr.): Beton	Q1 17766,6616 17801,6554 17800,6504
 (Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1- 23402,3779 23368,3894
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
@@ -13537,7 +13543,7 @@ George-Stephenson-Str.: Asphalt	Q0 7487,14472 7446,14403 7529,14274 7569,14209 7
 (Straße G, Innovationspark Wuhlheide): Asphalt	Q0 21572,7051 21547,7024 21476,6956 21560,6869
 (Straße G, Innovationspark Wuhlheide): Beton	Q0- 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide): Beton	Q0- 21582,6842 21560,6869
-(Lindenstr. - Schmetterlingswiesen, östlicher Weg): wassergebundene Decke	Q1 21420,11150 21483,11129
+(Lindenstr. - Schmetterlingswiesen, östlicher Weg): wassergebundene Decke	Q1- 21420,11150 21483,11129
 Potsdamer Str.: Asphaltschäden	Q1; 7507,9458 7512,9572 7518,9791
 Potsdamer Str.: Asphaltschäden	Q1;Q1 7526,9969 7579,10183
 (Supermarktparkplatz): Verbundsteinpflaster	Q1 2554,10258 2551,10266 2706,10362 2718,10359
@@ -14146,6 +14152,7 @@ Marathonallee: Asphalt mit Schäden	Q1+ 589,11953 439,11968
 Marathonallee: Asphalt	Q0+ 439,11968 291,11941
 # 
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/mobilitaetsrat/protokoll-mobilitaetsrat-spandau-2sitzung.pdf
 (Staaken - Falkensee): unbefestigt, teilweise Schotter	Q2 -8079,16164 -8119,16190 -8183,16273 -8295,16360
 # 
 (Glühwürmchenweg - Pionierstr.): Asphalt	Q0 -6048,16292 -5959,16235
