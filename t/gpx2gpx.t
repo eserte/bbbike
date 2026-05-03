@@ -206,6 +206,37 @@ require_geo_distance {
     like $dest_gpsman, qr{^!T:.*srt:brand=rental bike}m, 'found srt:brand (former gpx already has <trk><extensions>)';
 }
 
+# empty trkseg
+{
+    my $empty_trkseg_gpx = <<'EOF';
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Garmin Connect" xmlns="http://www.topografix.com/GPX/1/1">
+ <metadata>
+  <time>2026-04-22T13:04:33Z</time>
+ </metadata>
+ <trk>
+  <name>Empty Track</name>
+  <trkseg>
+  </trkseg>
+ </trk>
+</gpx>
+EOF
+    ok run [@script], '<', \$empty_trkseg_gpx, '>', \my $dest_gpx, 'run on empty trkseg';
+    ok gpxlint_string($dest_gpx), 'result is valid GPX';
+    is count_trksegs($dest_gpx), 1, 'still one trkseg';
+    is count_trkpts($dest_gpx), 0, 'zero trkpts';
+
+    ok run [@script, '--trk-attrib', 'srt:vehicle=bike'], '<', \$empty_trkseg_gpx, '>', \$dest_gpx, 'run with --trk-attrib on empty trkseg';
+    ok gpxlint_string($dest_gpx), 'result is valid GPX';
+    like $dest_gpx, qr{<srt:vehicle>bike</srt:vehicle>}, 'found srt:vehicle';
+
+    require_datetime_iso8601 {
+	ok run [@script, '--trkseg-split-by-time-gap=60'], '<', \$empty_trkseg_gpx, '>', \$dest_gpx, 'split by time on empty trkseg';
+	ok gpxlint_string($dest_gpx), 'result is valid GPX';
+	is count_trksegs($dest_gpx), 1, 'still one trkseg';
+    };
+}
+
 sub count_trksegs ($) {
     my $gpx = shift;
     my $count = 0;
