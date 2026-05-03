@@ -31,6 +31,7 @@ my $coloring;
 my $verbose;
 my $emit_source_directives;
 my $remove_non_coords;
+my $handle_mapillary_section;
 my $line_dash = '8, 5';
 my $line_width = 5;
 
@@ -45,13 +46,14 @@ GetOptions(
 	   "line-width=i" => \$line_width,
 	   "emit-source-directives" => \$emit_source_directives,
 	   "remove-non-coords" => \$remove_non_coords,
+	   "handle-mapillary-section" => \$handle_mapillary_section,
 	   "fragezeichen-mode"    => sub { push @actions, sub { $fragezeichen_mode = 1 } },
 	   "no-fragezeichen-mode" => sub { push @actions, sub { $fragezeichen_mode = 0 } },
 	   "indoor-mode"          => sub { push @actions, sub { $door_mode = 'in' } },
 	   "outdoor-mode"         => sub { push @actions, sub { $door_mode = 'out' } },
 	   "<>"                   => sub { my $f = $_[0]; push @actions, sub { handle_file($f) } },
 	  )
-    or die "usage: $0 [--today YYYY-MM-DD] [--verbose] [--fragezeichen-mode|--no-fragezeichen-mode|--indoor-mode|--outdoor-mode] ...";
+    or die "usage: $0 [--today YYYY-MM-DD] [--verbose] [--fragezeichen-mode|--no-fragezeichen-mode|--indoor-mode|--outdoor-mode] [--handle-mapillary-section] ...";
 
 if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
     die "Unexpected argument for --today '$today', expected YYYY-MM-DD";
@@ -98,6 +100,12 @@ EOF
     if (%colors) {
 	for my $cat (sort { length $a <=> length $b} keys %colors) {
 	    print "#: category_color.$cat: $colors{$cat}\n";
+	}
+	if ($handle_mapillary_section) {
+	    for my $cat (sort { length $a <=> length $b} keys %colors) {
+		print "#: category_color.Mply$cat: $colors{$cat}\n";
+		print "#: category_image.Mply$cat: ../images/mapillary.png\n"; # XXX hardcoded!
+	    }
 	}
     }
     print <<'EOF';
@@ -218,6 +226,10 @@ sub handle_file {
 		 if (($add_name||'') =~ /(Umbenennung|umbenannt|neuer Name|neuer Straßenname|ausgeschildert|Ausschilderung|Straßenschilder|\bSchilder\b)/i) {
 		     $cat .= '::sign';
 		 }
+	     }
+
+	     if ($dir->{'section'} && $dir->{'section'}[0] =~ /Mapillary/i) {
+		 $cat = "Mply$cat";
 	     }
 
 	     if ($emit_source_directives) {
