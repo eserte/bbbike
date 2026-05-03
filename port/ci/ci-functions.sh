@@ -194,7 +194,7 @@ init_apt() {
 		else
 		    first_wget_tries=5
 		fi
-	        wget --connect-timeout=10 --tries=$first_wget_tries -O- $deb_repo_url/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename || {
+	        { set -o pipefail; wget --connect-timeout=10 --tries=$first_wget_tries -O- $deb_repo_url/$deb_repo_key_src_baseurl | $gpg_dearmor_cmd > /tmp/$deb_repo_key_basename; } || {
 		    if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
 		    then
 			deb_repo_portspec=:8000
