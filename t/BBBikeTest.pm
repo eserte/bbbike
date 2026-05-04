@@ -23,7 +23,7 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
-use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo);
+use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo $can_exiftool);
 
 use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
@@ -63,7 +63,7 @@ use BBBikeUtil qw(bbbike_root is_in_path module_exists);
 	      on_author_system maybe_skip_mail_sending_tests
 	      get_pmake image_ok zip_ok create_temporary_content static_url
 	      get_cgi_config selenium_diag noskip_diag
-	      pdfinfo
+	      pdfinfo pdfinfo_with_exiftool
 	      checkpoint_apache_errorlogs output_apache_errorslogs
 	      my_note
 	    ),
@@ -1280,6 +1280,49 @@ sub pdfinfo ($) {
     }
     close $fh
 	or die "Error running @cmd: $!";
+
+    \%info;
+}
+
+sub pdfinfo_with_exiftool ($) {
+    my($pdffile) = @_;
+    if (!defined $can_exiftool) {
+	$can_exiftool = module_exists('Image::ExifTool') || is_in_path('exiftool');
+    }
+    return if !$can_exiftool;
+
+    my %info;
+    if (module_exists('Image::ExifTool')) {
+	require Image::ExifTool;
+	my $et = Image::ExifTool->new;
+	$et->ExtractInfo($pdffile);
+	my $raw_info = $et->GetInfo;
+	for my $k (keys %$raw_info) {
+	    $info{$k} = $raw_info->{$k};
+	}
+    } else {
+	my @cmd = ('exiftool', '-s', $pdffile);
+	open my $fh, "-|", @cmd
+	    or die "Error running @cmd: $!";
+	while(<$fh>) {
+	    chomp;
+	    my($k,$v) = split /:\s+/, $_, 2;
+	    $info{$k} = $v;
+	}
+	close $fh
+	    or die "Error running @cmd: $!";
+    }
+
+    my %map = (
+	'PageCount'  => 'Pages',
+	'PDFVersion' => 'PDF version',
+	'FileSize'   => 'File size',
+    );
+    while (my($old_k, $new_k) = each %map) {
+	if (exists $info{$old_k}) {
+	    $info{$new_k} = delete $info{$old_k};
+	}
+    }
 
     \%info;
 }
