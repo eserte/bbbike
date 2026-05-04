@@ -1287,31 +1287,14 @@ sub pdfinfo ($) {
 sub pdfinfo_with_exiftool ($) {
     my($pdffile) = @_;
     if (!defined $can_exiftool) {
-	$can_exiftool = module_exists('Image::ExifTool') || is_in_path('exiftool');
+	$can_exiftool = module_exists('Image::ExifTool');
     }
     return if !$can_exiftool;
 
-    my %info;
-    if (module_exists('Image::ExifTool')) {
-	require Image::ExifTool;
-	my $et = Image::ExifTool->new;
-	$et->ExtractInfo($pdffile);
-	my $raw_info = $et->GetInfo;
-	for my $k (keys %$raw_info) {
-	    $info{$k} = $raw_info->{$k};
-	}
-    } else {
-	my @cmd = ('exiftool', '-s', $pdffile);
-	open my $fh, "-|", @cmd
-	    or die "Error running @cmd: $!";
-	while(<$fh>) {
-	    chomp;
-	    my($k,$v) = split /:\s+/, $_, 2;
-	    $info{$k} = $v;
-	}
-	close $fh
-	    or die "Error running @cmd: $!";
-    }
+    require Image::ExifTool;
+    my $et = Image::ExifTool->new;
+    $et->ExtractInfo($pdffile);
+    my %info = %{ $et->GetInfo };
 
     my %map = (
 	'PageCount'  => 'Pages',
