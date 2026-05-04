@@ -1349,17 +1349,22 @@ sub pdfinfo_with_exiftool ($) {
 	}
 
 	# Page size / MediaBox
-	if ($content =~ m{/MediaBox\s*\[\s*([\d\.]+)\s+([\d\.]+)\s+([\d\.]+)\s+([\d\.]+)\s*\]}) {
-	    my($x1, $y1, $x2, $y2) = ($1, $2, $3, $4);
-	    my $w = abs($x2 - $x1);
-	    my $h = abs($y2 - $y1);
+	if ($content =~ m{/MediaBox\s*\[\s*([-\d\.\s]+)\]}) {
+	    my $val = $1;
+	    $val =~ s/^\s+//; $val =~ s/\s+$//;
+	    my @c = split /\s+/, $val;
+	    if (@c >= 4) {
+		my($x1, $y1, $x2, $y2) = @c;
+		my $w = abs($x2 - $x1);
+		my $h = abs($y2 - $y1);
 
-	    my %known_sizes = (
-		'595x842' => 'A4',
-		'842x595' => 'A4',
-	    );
-	    my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
-	    $info{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
+		my %known_sizes = (
+		    '595x842' => 'A4',
+		    '842x595' => 'A4',
+		);
+		my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
+		$info{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
+	    }
 	}
 	close $fh;
     }
