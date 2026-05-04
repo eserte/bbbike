@@ -6,6 +6,12 @@
 #: section: Tempor‰re Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: GNEISENAU-2026
+#: note: eigentlich knapp ˆstlich der Kreuzung; baustellenbedingt muss auch der Radverkehr im Zuge der Schleiermacherstr. die Ampel benutzen
+#: last_checked: 2026-05-04
+#: next_check: 2026-12-31
+Gneisenaustr./Schleiermacherstr.: provisorische Fuﬂg‰ngerampel	F::inwork 10032,9456
+# 
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: osm_watch: node id="13704066872" version="1"
 #: osm_watch: node id="13704066873" version="1"
@@ -236,18 +242,17 @@ Paulsborner Str./Caspar-Theyﬂ-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # REMOVED --- #: valid: -20250214
 # REMOVED --- Wartenberger Weg: Gegenverkehrsregelung	X::inwork::alternating 15882,19165
 # 
-#: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
-#: source_id: viz2021:13.5975,52.50236, (bis 29.08.2025) (inaktiv) (bis 10.10.2025) (bis 14.10.2025) (inaktiv)
-#: source_id[inactive]: bvg2024:398#HIM_FREETEXT_299600 (bis 2025-11-28)
-#: note: im Straﬂenzug existieren noch zwei weitere Engstellen, diese allerdings ohne Ampeln (gesehen 2025-10-25)
-#: note: als Radfahrer Richtung Westen darf man den schmalen Gehweg benutzen; der Radweg an dieser Stelle ist wegen Baustelleneinrichtung nicht benutzbar
-#: also_indoor: traffic (T[inwork],no-G)
-#: last_checked: 2026-04-21 (traffic)
-#: check_frequency: 14d (traffic)
+# REMOVED --- #: source_id: viz2021:13.604324,52.501495,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.5975,52.50236,03.03.2025,10:30 (bis 31.07.2025) (inaktiv)
+# REMOVED --- #: source_id: viz2021:13.5975,52.50236, (bis 29.08.2025) (inaktiv) (bis 10.10.2025) (bis 14.10.2025) (inaktiv)
+# REMOVED --- #: source_id[inactive]: bvg2024:398#HIM_FREETEXT_299600 (bis 2025-11-28)
+# REMOVED --- #: note: im Straﬂenzug existieren noch zwei weitere Engstellen, diese allerdings ohne Ampeln (gesehen 2025-10-25)
+# REMOVED --- #: note: als Radfahrer Richtung Westen darf man den schmalen Gehweg benutzen; der Radweg an dieser Stelle ist wegen Baustelleneinrichtung nicht benutzbar
+# REMOVED --- #: also_indoor: traffic (ex-T[inwork],no-G)
+# REMOVED --- #: last_checked: 2026-04-21 (traffic) --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2025-12-05 (Halteverbotsschilder)
-#: valid: -20260901
-Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
+# REMOVED --- #: valid: -20260901
+# REMOVED --- Elsenstr.: Gegenverkehrsregelung	X::inwork::alternating 24363,10818
 # 
 # REMOVED --- #: source_id: LMS-BR:379742/72 viz2021:13.589646,52.502679,13.08.2025,09:15 (bis 17.10.2025) (inaktiv)
 # REMOVED --- #: last_checked: 2025-08-27
@@ -1630,7 +1635,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2026-03-27
+#: last_checked: 2026-05-04
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	F::inwork 8096,11393
@@ -5611,6 +5616,7 @@ Doppelte Bettelampel (beim ‹berqueren der Pudagla-Straﬂe)	X 52868,176203
 	F 31040,12361
 #: note: Anforderungsampel
 	F 49794,-59785
+	B 74976,18303
 # 
 #: section: ^^^
 ################################################################################

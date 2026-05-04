@@ -37978,7 +37978,7 @@ EOF
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 # REMOVED (dieser Wegteil wurde laut osm wieder geöffnet) --- #: osm_watch: way id="147686211" version="11"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-12-29
+#: last_checked: 2026-05-04
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de, entwicklungsstadt)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -42620,15 +42620,17 @@ EOF
 	q3::inwork 12349,8464 12494,8501
 EOF
      },
-     { from  => 1696309200, # 2023-10-03 07:00
-       until => 1744202678, # $isodate2epoch->("2025-04-30 17:00:00"), # $isodate2epoch->("2024-05-04 17:00:00"), # 1700064000, # 2023-11-15 17:00
+     { from  => $isodate2epoch->("2026-05-04 00:00:00"), # 1696309200, # 2023-10-03 07:00
+       until => $isodate2epoch->("2026-05-29 23:59:59"), # 1744202678, # $isodate2epoch->("2025-04-30 17:00:00"), # $isodate2epoch->("2024-05-04 17:00:00"), # 1700064000, # 2023-11-15 17:00
 #      text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2023 07:00 bis 04.05.2024 17:00',
-       text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.04.2025',
+#      text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.04.2025',
+       text  => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. ist auch der Radverkehr betroffen, bis 29.05.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GEORGWILHELM-2024
 #: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024) (bis 04.05.2024) (inaktiv)
 #: source_id: viz2021:13.290227,52.497049,06.11.2024,10:00 (bis 28.02.2025) (bis 30.04.2025) (vorfristig inaktiv)
+#: source_id: LMS-BR:407051/72 viz2021:13.29003,52.49751,04.05.2026,07:00 (bis 29.05.2026)
 	q4::inwork 2702,10006 2687,10053
 EOF
      },
@@ -45288,7 +45290,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-04-30 vvv
+#: last_checked: 2026-05-04 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -46664,7 +46666,7 @@ EOF
 #: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026) (bis 31.03.2026) (bis 20.08.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025) (inaktiv)
-#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv)
+#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv) (bis 31.05.2026)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
@@ -46682,7 +46684,7 @@ EOF
 # REMOVED --- Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 Friedrichstr., 2. BA	q3::inwork 34359,2165 34250,2546
 #: osm_watch: way id="5057517" version="22"
-#: next_check: 2026-04-01 (ls.brandenburg: Änderung des Bauzustands)
+#: next_check: 2026-05-31 (VIZ-Verkehrsmeldung)
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 EOF
      },
@@ -47387,7 +47389,7 @@ EOF
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-04-06
+#: last_checked: 2026-05-04
 #: check_frequency: 90d
 #: next_check: 2026-06-30 (Baustellenschild der Wasserbetriebe)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
@@ -47667,11 +47669,11 @@ EOF
 EOF
      },
      { from  => 1742108400, # 2025-03-16 08:00
-       until => $isodate2epoch->("2026-04-30 17:00:00"), # 1764345600, # 2025-11-28 17:00
-       text  => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 30.04.2026',
+       until => $isodate2epoch->("2026-06-15 17:00:00"), # $isodate2epoch->("2026-04-30 17:00:00"), # 1764345600, # 2025-11-28 17:00
+       text  => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 15.06.2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 256401910 (bis 28.11.2025) (Gehwegsperrung bis 25.07.2025) (bis 28.2.2026) (bis 30.4.2026) (inaktiv)
+#: source_id: 256401910 (bis 28.11.2025) (Gehwegsperrung bis 25.07.2025) (bis 28.2.2026) (bis 30.4.2026) (inaktiv) (bis 15.06.2026)
 	2::inwork 41356,16225 41672,16084
 EOF
      },
@@ -48199,11 +48201,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-05-07 00:00:00"), # $isodate2epoch->("2025-11-27 00:00:00"), # $isodate2epoch->("2025-08-07 00:00:00"), # $isodate2epoch->("2025-04-03 00:00:00"),
-       until => $isodate2epoch->("2026-05-11 23:59:59"), # $isodate2epoch->("2025-12-01 06:00:00"), # $isodate2epoch->("2025-08-11 06:00:00"), # $isodate2epoch->("2025-04-07 06:00:00"),
+       until => $isodate2epoch->("2026-05-11 06:00:00"), # $isodate2epoch->("2025-12-01 06:00:00"), # $isodate2epoch->("2025-08-11 06:00:00"), # $isodate2epoch->("2025-04-07 06:00:00"),
 #      text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, voraussichtlich vom 4.4.2025 22:00 Uhr bis zum 7.4.2025 06:00 Uhr',
 #      text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 8.8.2025 22:00 Uhr bis zum 11.8.2025 06:00 Uhr',
 #      text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 28.11.2025 22:00 Uhr bis zum 01.12.2025 06:00 Uhr',
-       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 8.5.2026 bis 11.5.2026',
+       text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 08.05.2026 22:00 Uhr bis 11.05.2026 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025) (inaktiv) (bis 30.01.2026) (inaktiv) (wechselseite Verkehrsführung, bis 15.05.2026)
@@ -48217,6 +48219,7 @@ EOF
 #: by: https://www.mobil-potsdam.de/de/baustellen/geplant/?c=5367
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2025-brueckenbau-an-der-l-40-neuer-termin-fuer-vollsperrung-des-horstwegs
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-04-2026-l40-potsdam-fertigstellung-bruecke-ueber-horstweg
+#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5510
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 EOF
      },
@@ -50208,7 +50211,8 @@ EOF
      { from  => 1754329180,
        until => undef,
 #      text  => 'Eisenacher Str.: mögliche Bauarbeiten zwischen Lindauer Str. und Barbarossaplatz, evtl. sind auch Radfahrer betroffen, ab 5.8.2025',
-       text  => 'Barbarossaplatz: östlicher Platzbereich gesperrt, voraussichtlich bis Mitte Mai 2026',
+#      text  => 'Barbarossaplatz: südlicher und östlicher Platzbereich gesperrt, voraussichtlich bis Mitte Mai 2026',
+       text  => 'Barbarossaplatz: südlicher und östlicher Platzbereich gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BARBAROSSAPLATZ-2025
@@ -50218,14 +50222,20 @@ EOF
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
 #: osm_watch: note 4895287 3
-#: last_checked: 2026-01-25 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-05-15 vvv
+#: last_checked: 2026-05-04 vvv
+#: check_frequency: 60d vvv
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-05-15 vvv
 #: note: Halteverbotsschilder bis 15.05.2026
 Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
 Barbarossastr.: östliche Zufahrt, etwa 30-40m der Fahrbahn sind gesperrt	q3::inwork 6747,9531 6860,9529
 Eisenacher Str.	q4::inwork 6727,9497 6724,9457
-#: next_check ^^^
+#       3nocross::ignrte 6724,9457 6727,9497 6694,9537
+Barbarossapl. -> Barbarossapl.	3::inwork 6694,9537 6727,9497 6747,9531
+Barbarossapl. -> Schwäbische Str.	3::inwork 6694,9537 6727,9497 6771,9458
+Barbarossapl. -> Eisenacher Str.	3::inwork 6747,9531 6727,9497 6724,9457
+Barbarossapl. -> Schwäbische Str.	3::inwork 6747,9531 6727,9497 6771,9458
+Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (hier entgegen der Meldung nicht) --- Eisenacher Str.: Bauarbeiten 2025/2026	q4::inwork 6743,9678 6731,9559
@@ -50349,7 +50359,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-05-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50454,11 +50464,12 @@ EOF
 #: osm_watch: way id="722013098" version="15"
 #: osm_watch: way id="1350756367" version="4"
 #: osm_watch: note 5124809 1
+#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2026
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
-#: last_checked: 2026-04-06 vvv
+#: last_checked: 2026-05-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
-#: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
+#: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026; mittlerweile bis 30.04.2026 (aber bereits obsolet)
 	q4::inwork 8982,8781 8926,8682
 #: note: hier auf etwa 50m Länge gesperrt
 	q3::inwork 8926,8682 8842,8561
@@ -51103,7 +51114,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-05-01
+#: last_checked: 2026-05-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51423,13 +51434,13 @@ EOF
        text  => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026
+#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026, mittlerweile bis 31.05.2026
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
 #: also_indoor: traffic (re-G,ex-T,W[mittlerweile richtige Lage],no-H)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2026-04-06
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: next_check: 2026-02-28 (Halteverbotsschilder)
+#: last_checked: 2026-05-04
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: next_check: 2026-05-31 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295
 EOF
      },
@@ -51629,7 +51640,7 @@ EOF
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
 #: osm_watch: note 5206966 4
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-04-21 (traffic) vvv
+#: last_checked: 2026-05-04 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 # REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3027,10560 3123,10504
@@ -51861,7 +51872,7 @@ EOF
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 1
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
-#: last_checked: 2026-04-21 (traffic)
+#: last_checked: 2026-05-04 (traffic)
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 EOF
@@ -52124,8 +52135,9 @@ EOF
 EOF
      },
      { from  => 1771974000, # 2026-02-25 00:00
-       until => 1777068000, # 2026-04-25 00:00
-       text  => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, vom 26.02.2026 bis 24.04.2026',
+       until => undef, # 1777068000, # 2026-04-25 00:00
+#      text  => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, vom 26.02.2026 bis 24.04.2026',
+       text  => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: VOLKSPARKWILMERSDORF-2026
@@ -52133,8 +52145,9 @@ EOF
 #: by: https://www.berlin.de/imgscale2/9AuxRVefLWbbF7Yg6n-jfxJdZdY8R2b6JXZ86PSf0BA/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI2L21hcmdpbl8yMDAwXzEwMDBfZWUzY2E5ZGUzNWVkNzI0MjNmZDVmYTQ2ODBhY2VlNjZfc3RyYXNzZW5zcGVycnVuZy5wbmc.png
 #: osm_watch: note 5180232 1
 #: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
-#: last_checked: 2026-03-17
-#: next_check: 2026-04-25
+#: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
+#: last_checked: 2026-05-04
+# REMOVED (wurde nicht gehalten) --- #: next_check: 2026-04-25
 	2::inwork 5533,8478 5660,8366
 EOF
      },
@@ -52353,15 +52366,15 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-03-25 00:00:00"), # 1772924400, # 2026-03-08 00:00
-       until => $isodate2epoch->("2026-05-04 23:59:59"), 
-       text  => 'Cunistraße: vom Rosenthaler Weg abgehängt, voraussichtlich ab 26.3.2026 bis 04.05.2026',
+       until => $isodate2epoch->("2026-06-05 23:59:59"), 
+       text  => 'Cunistraße: vom Rosenthaler Weg abgehängt, voraussichtlich ab 26.03.2026 bis 05.06.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260309
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonn3av322l
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgpd42uvik2s (voraussichtlich erst ab 26.3.2026)
 #: source_id: LMS-BR:401371/72 viz2021:13.4266,52.60763,10.03.2026,07:00 (angrenzender Rosenthaler Weg, bis 04.05.2026) (inaktiv)
-#: source_id: LMS-BR:402967/72 viz2021:13.4262,52.60772,26.03.2026,07:00 (Cunistr., bis 04.05.2026)
+#: source_id: LMS-BR:402967/72 viz2021:13.4262,52.60772,26.03.2026,07:00 (Cunistr., bis 04.05.2026) (bis 05.06.2026)
 	q4::inwork 11807,22395 11694,22479
 EOF
      },
@@ -52876,6 +52889,25 @@ EOF
 #: last_checked: 2026-05-01
 #: next_check: 2026-05-22
 	q4::inwork 18147,8895 18009,8687
+EOF
+     },
+     { from  => 1777784400, # 2026-05-03 07:00
+       until => 1783090800, # 2026-07-03 17:00
+       text  => 'Bamberger Str.: zwischen Motzstr. und Barbarossastr. Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 04.05.2026 07:00 bis 03.07.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:407048/72 viz2021:13.337175,52.494029,04.05.2026,07:00 (bis 03.07.2026)
+#: note: möglicherweise nur kurzer Abschnitt (Hausnummer 13-14a) betroffen, deshalb q4->q3
+	q3::inwork 5893,9530 5900,9737
+EOF
+     },
+     { from  => 1778130000, # 2026-05-07 07:00
+       until => 1778731200, # 2026-05-14 06:00
+       text  => 'Gusow-Platkow: B167: Bahnübergang gesperrt, evtl. ist auch der Radverkehr betroffen, 08.05.2026 07:00 Uhr bis 14.05.2026 06:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: 266400483 (bis 14.05.2026)
+	2::inwork 74990,18281 74976,18303 74959,18332
 EOF
      },
     );

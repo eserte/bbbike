@@ -3569,36 +3569,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
-#: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
-#: by: https://www.family-and-friends-ev.de/?date=20210418 (4.-6. Juni 2021, dann aber vermutlich kein Maientanz")
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-am-idyllischen-dorfteich-lichtenrade
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein (2024: 3. bis 5. Mai)
-#: by: https://www.family-and-friends-ev.de/1-4-mai-2025-kunst-trifft-wein (2025: 1. bis 4. Mai)
-# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
-	2::temp 11064,-1597 11054,-1659 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
-',
-         'from' => 1777500000,
-         'id' => 2431,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              4,
-                              'start',
-                              '2021-05-06T00:00:00'
-                            ]
-                          ],
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2026 bis 03.05.2026)',
-         'type' => 'handicap',
-         'until' => 1777845599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6231,7 +6202,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
 # REMOVED (dieser Wegteil wurde laut osm wieder geöffnet) --- #: osm_watch: way id="147686211" version="11"
 #: osm_watch: way id="481651814" version="6"
-#: last_checked: 2025-12-29
+#: last_checked: 2026-05-04
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (stories.bauhaus.de, entwicklungsstadt)
 	2::inwork 6882,11061 6920,11064 7142,11145
@@ -7295,7 +7266,19 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: GEORGWILHELM-2024
+#: source_id: viz2021:13.290205,52.497012,04.10.2023,07:00 (bis 15.11.2023) (bis 29.11.2023) (bis 06.12.2023) (inaktiv) (bis 29.01.2024) (bis 13.03.2024) (bis 25.03.2024) (bis 04.05.2024) (inaktiv)
+#: source_id: viz2021:13.290227,52.497049,06.11.2024,10:00 (bis 28.02.2025) (bis 30.04.2025) (vorfristig inaktiv)
+#: source_id: LMS-BR:407051/72 viz2021:13.29003,52.49751,04.05.2026,07:00 (bis 29.05.2026)
+	q4::inwork 2702,10006 2687,10053
+',
+         'from' => 1777845600,
+         'id' => 3931,
+         'text' => 'Georg-Wilhelm-Str.: Anbindung Kurfürstendamm gesperrt, evtl. ist auch der Radverkehr betroffen, bis 29.05.2026',
+         'type' => 'handicap',
+         'until' => 1780091999
+       },
        undef,
        undef,
        undef,
@@ -7346,11 +7329,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1777586400,
+         'from' => 1779400800,
          'id' => 3956,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 2.5.2026 bis 3.5.2026',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 23.5.2026 bis 25.5.2026',
          'type' => 'handicap',
-         'until' => 1777845599
+         'until' => 1779746399
        },
        undef,
        undef,
@@ -7667,7 +7650,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-04-30 vvv
+#: last_checked: 2026-05-04 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -7991,7 +7974,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026) (bis 31.03.2026) (bis 20.08.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025) (inaktiv)
-#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv)
+#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv) (bis 31.05.2026)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
@@ -8009,7 +7992,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 # REMOVED --- Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
 Friedrichstr., 2. BA	q3::inwork 34359,2165 34250,2546
 #: osm_watch: way id="5057517" version="22"
-#: next_check: 2026-04-01 (ls.brandenburg: Änderung des Bauzustands)
+#: next_check: 2026-05-31 (VIZ-Verkehrsmeldung)
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 ',
          'from' => 1742079600,
@@ -8218,7 +8201,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-04-06
+#: last_checked: 2026-05-04
 #: check_frequency: 90d
 #: next_check: 2026-06-30 (Baustellenschild der Wasserbetriebe)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
@@ -8349,7 +8332,16 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 256401910 (bis 28.11.2025) (Gehwegsperrung bis 25.07.2025) (bis 28.2.2026) (bis 30.4.2026) (inaktiv) (bis 15.06.2026)
+	2::inwork 41356,16225 41672,16084
+',
+         'from' => 1742108400,
+         'id' => 4258,
+         'text' => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 15.06.2026',
+         'type' => 'gesperrt',
+         'until' => 1781535600
+       },
        {
          'data' => '#: source_id: 5e5fb692-e58e-4ef9-8fa9-ae1d8c41e3bels.brandenburg.de (bis 01.05.2026)
 #: osm_watch: way id="24012076" version="18" brb
@@ -8532,13 +8524,14 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
 #: by: https://www.mobil-potsdam.de/de/baustellen/geplant/?c=5367
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2025-brueckenbau-an-der-l-40-neuer-termin-fuer-vollsperrung-des-horstwegs
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-04-2026-l40-potsdam-fertigstellung-bruecke-ueber-horstweg
+#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5510
 	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
 ',
          'from' => 1778104800,
          'id' => 4289,
-         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 8.5.2026 bis 11.5.2026',
+         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 08.05.2026 22:00 Uhr bis 11.05.2026 06:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1778536799
+         'until' => 1778472000
        },
        {
          'data' => '# REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
@@ -9244,14 +9237,20 @@ Pulvermühle VIII	2::inwork -1926,15254 -1955,15164
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
 #: osm_watch: note 4895287 3
-#: last_checked: 2026-01-25 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-05-15 vvv
+#: last_checked: 2026-05-04 vvv
+#: check_frequency: 60d vvv
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-05-15 vvv
 #: note: Halteverbotsschilder bis 15.05.2026
 Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
 Barbarossastr.: östliche Zufahrt, etwa 30-40m der Fahrbahn sind gesperrt	q3::inwork 6747,9531 6860,9529
 Eisenacher Str.	q4::inwork 6727,9497 6724,9457
-#: next_check ^^^
+#       3nocross::ignrte 6724,9457 6727,9497 6694,9537
+Barbarossapl. -> Barbarossapl.	3::inwork 6694,9537 6727,9497 6747,9531
+Barbarossapl. -> Schwäbische Str.	3::inwork 6694,9537 6727,9497 6771,9458
+Barbarossapl. -> Eisenacher Str.	3::inwork 6747,9531 6727,9497 6724,9457
+Barbarossapl. -> Schwäbische Str.	3::inwork 6747,9531 6727,9497 6771,9458
+Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (hier entgegen der Meldung nicht) --- Eisenacher Str.: Bauarbeiten 2025/2026	q4::inwork 6743,9678 6731,9559
@@ -9262,7 +9261,7 @@ Eisenacher Str.	q4::inwork 6727,9497 6724,9457
 ',
          'from' => 1754329180,
          'id' => 4410,
-         'text' => 'Barbarossaplatz: östlicher Platzbereich gesperrt, voraussichtlich bis Mitte Mai 2026',
+         'text' => 'Barbarossaplatz: südlicher und östlicher Platzbereich gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9329,7 +9328,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-05-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9361,11 +9360,12 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
 #: osm_watch: way id="722013098" version="15"
 #: osm_watch: way id="1350756367" version="4"
 #: osm_watch: note 5124809 1
+#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2026
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
-#: last_checked: 2026-04-06 vvv
+#: last_checked: 2026-05-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
-#: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026
+#: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026; mittlerweile bis 30.04.2026 (aber bereits obsolet)
 	q4::inwork 8982,8781 8926,8682
 #: note: hier auf etwa 50m Länge gesperrt
 	q3::inwork 8926,8682 8842,8561
@@ -9608,7 +9608,7 @@ Schlegelstr.: Anbindung Chaussestr. unterbrochen	q3::inwork 9044,13711 9231,1384
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-05-01
+#: last_checked: 2026-05-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9776,13 +9776,13 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        undef,
        undef,
        {
-         'data' => '#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026
+         'data' => '#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026, mittlerweile bis 31.05.2026
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
 #: also_indoor: traffic (re-G,ex-T,W[mittlerweile richtige Lage],no-H)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2026-04-06
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: next_check: 2026-02-28 (Halteverbotsschilder)
+#: last_checked: 2026-05-04
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: next_check: 2026-05-31 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295
 ',
          'from' => 1762538105,
@@ -9890,7 +9890,7 @@ Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 #: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
 #: osm_watch: note 5206966 4
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-04-21 (traffic) vvv
+#: last_checked: 2026-05-04 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 # REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3027,10560 3123,10504
@@ -9995,7 +9995,7 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 1
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
-#: last_checked: 2026-04-21 (traffic)
+#: last_checked: 2026-05-04 (traffic)
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 ',
@@ -10200,7 +10200,23 @@ Glaßbrennerstr.	q4::inwork 11543,16207 11632,16373
          'until' => 1785535199
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2026
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645709.php
+#: by: https://www.berlin.de/imgscale2/9AuxRVefLWbbF7Yg6n-jfxJdZdY8R2b6JXZ86PSf0BA/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI2L21hcmdpbl8yMDAwXzEwMDBfZWUzY2E5ZGUzNWVkNzI0MjNmZDVmYTQ2ODBhY2VlNjZfc3RyYXNzZW5zcGVycnVuZy5wbmc.png
+#: osm_watch: note 5180232 1
+#: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
+#: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
+#: last_checked: 2026-05-04
+# REMOVED (wurde nicht gehalten) --- #: next_check: 2026-04-25
+	2::inwork 5533,8478 5660,8366
+',
+         'from' => 1771974000,
+         'id' => 4541,
+         'text' => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: source_id: LS/223-P/26/014 (bis 28.08.2026)
 	2::inwork -19216,29323 -18694,27999 -18187,27206
@@ -10359,14 +10375,14 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonn3av322l
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgpd42uvik2s (voraussichtlich erst ab 26.3.2026)
 #: source_id: LMS-BR:401371/72 viz2021:13.4266,52.60763,10.03.2026,07:00 (angrenzender Rosenthaler Weg, bis 04.05.2026) (inaktiv)
-#: source_id: LMS-BR:402967/72 viz2021:13.4262,52.60772,26.03.2026,07:00 (Cunistr., bis 04.05.2026)
+#: source_id: LMS-BR:402967/72 viz2021:13.4262,52.60772,26.03.2026,07:00 (Cunistr., bis 04.05.2026) (bis 05.06.2026)
 	q4::inwork 11807,22395 11694,22479
 ',
          'from' => 1774393200,
          'id' => 4556,
-         'text' => 'Cunistraße: vom Rosenthaler Weg abgehängt, voraussichtlich ab 26.3.2026 bis 04.05.2026',
+         'text' => 'Cunistraße: vom Rosenthaler Weg abgehängt, voraussichtlich ab 26.03.2026 bis 05.06.2026',
          'type' => 'handicap',
-         'until' => 1777931999
+         'until' => 1780696799
        },
        {
          'data' => '#: also_indoor: traffic (G,no-T,no-H,no-W)
@@ -10816,6 +10832,27 @@ Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12235,20380 12216,20
          'text' => 'Müritzstr.: Bauarbeiten, Fahrbahn gesperrt, bis 22.5.2026',
          'type' => 'handicap',
          'until' => 1779487200
+       },
+       {
+         'data' => '#: source_id: LMS-BR:407048/72 viz2021:13.337175,52.494029,04.05.2026,07:00 (bis 03.07.2026)
+#: note: möglicherweise nur kurzer Abschnitt (Hausnummer 13-14a) betroffen, deshalb q4->q3
+	q3::inwork 5893,9530 5900,9737
+',
+         'from' => 1777784400,
+         'id' => 4600,
+         'text' => 'Bamberger Str.: zwischen Motzstr. und Barbarossastr. Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 04.05.2026 07:00 bis 03.07.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1783090800
+       },
+       {
+         'data' => '#: source_id: 266400483 (bis 14.05.2026)
+	2::inwork 74990,18281 74976,18303 74959,18332
+',
+         'from' => 1778130000,
+         'id' => 4601,
+         'text' => 'Gusow-Platkow: B167: Bahnübergang gesperrt, evtl. ist auch der Radverkehr betroffen, 08.05.2026 07:00 Uhr bis 14.05.2026 06:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1778731200
        }
      
 );
