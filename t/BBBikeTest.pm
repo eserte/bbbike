@@ -63,7 +63,7 @@ use BBBikeUtil qw(bbbike_root is_in_path module_exists);
 	      on_author_system maybe_skip_mail_sending_tests
 	      get_pmake image_ok zip_ok create_temporary_content static_url
 	      get_cgi_config selenium_diag noskip_diag
-	      pdfinfo pdfinfo_with_exiftool
+	      pdfinfo pdfinfo_with_exiftool pdfinfo_with_poppler
 	      checkpoint_apache_errorlogs output_apache_errorslogs
 	      my_note
 	    ),
@@ -1264,6 +1264,18 @@ EOF
 
 sub pdfinfo ($) {
     my($pdffile) = @_;
+    my $info = pdfinfo_with_exiftool($pdffile);
+    if (!$info || !exists $info->{Title}) {
+	my $poppler_info = pdfinfo_with_poppler($pdffile);
+	if ($poppler_info) {
+	    $info = { %{$info||{}}, %$poppler_info };
+	}
+    }
+    $info;
+}
+
+sub pdfinfo_with_poppler ($) {
+    my($pdffile) = @_;
     if (!defined $can_pdfinfo) {
 	$can_pdfinfo = is_in_path('pdfinfo');
     }
@@ -1305,6 +1317,55 @@ sub pdfinfo_with_exiftool ($) {
 	if (exists $info{$old_k}) {
 	    $info{$new_k} = delete $info{$old_k};
 	}
+    }
+
+    if (open my $fh, "<", $pdffile) {
+	my $content = do { local $/; <$fh> };
+
+	# Regex fallbacks for metadata
+	if ($content =~ m{/Info\s+(\d+)\s+\d+\s+R}) {
+	    my $obj_num = $1;
+	    if ($content =~ m{$obj_num\s+\d+\s+obj\s*<<(.*?)>>\s*endobj}s) {
+		my $dict = $1;
+		for my $meta (qw(Title Author Creator Producer)) {
+		    if ((!defined $info{$meta} || $info{$meta} eq '') &&
+			$dict =~ m{/$meta\s*\(([^\)]+)\)}i) {
+			$info{$meta} = $1;
+		    }
+		}
+	    }
+	}
+	for my $meta (qw(Title Author Creator Producer)) {
+	    if (!defined $info{$meta} || $info{$meta} eq '') {
+		if ($content =~ m{/$meta\s*\(([^\)]+)\)}i) {
+		    $info{$meta} = $1;
+		}
+	    }
+	}
+	if (!defined $info{'PDF version'} || $info{'PDF version'} eq '') {
+	    if ($content =~ m{^%PDF-(\d+\.\d+)}) {
+		$info{'PDF version'} = $1;
+	    }
+	}
+
+	# Page size / MediaBox
+	if ($content =~ m{/MediaBox\s*\[\s*([\d\.]+)\s+([\d\.]+)\s+([\d\.]+)\s+([\d\.]+)\s*\]}) {
+	    my($x1, $y1, $x2, $y2) = ($1, $2, $3, $4);
+	    my $w = abs($x2 - $x1);
+	    my $h = abs($y2 - $y1);
+
+	    my %known_sizes = (
+		'595x842' => 'A4',
+		'842x595' => 'A4',
+	    );
+	    my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
+	    $info{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
+	}
+	close $fh;
+    }
+
+    if ($info{'File size'} && $info{'File size'} =~ m{^(\d+)(\s+bytes)?$}) {
+	$info{'File size'} = "$1 bytes";
     }
 
     \%info;
