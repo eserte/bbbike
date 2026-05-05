@@ -239,7 +239,6 @@ init_apt() {
 # - libzbar-dev:            prerequisite for Barcode::ZBar
 # - pdftk:                  compression in BBBikeDraw::PDFUtil (for non-cairo)
 # - libimage-exiftool-perl: provides Image::ExifTool for testing
-# - qpdf:                   decompress PDF for metadata extraction
 # - tzdata:                 t/geocode_images.t needs to set TZ
 # - libgif-dev:             required for GIF support when building Imager
 # - libproj-dev:            for Alien::Proj, but use only if new enough
@@ -323,7 +322,7 @@ install_non_perl_dependencies() {
 	extra_build_packages=
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package libimage-exiftool-perl qpdf tzdata gcc $extra_build_packages $cpanminus_package $cpm_dep_packages $imager_ext_packages $libproj_packages
+    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package libimage-exiftool-perl tzdata gcc $extra_build_packages $cpanminus_package $cpm_dep_packages $imager_ext_packages $libproj_packages
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver

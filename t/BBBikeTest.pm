@@ -23,7 +23,7 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
-use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo $can_exiftool $can_qpdf);
+use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo $can_exiftool);
 
 use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
@@ -1264,8 +1264,18 @@ EOF
 
 sub pdfinfo ($) {
     my($pdffile) = @_;
-    my $info = pdfinfo_with_exiftool($pdffile);
-    if (!$info || !exists $info->{Title}) {
+    if (!defined $can_pdfinfo) {
+	$can_pdfinfo = is_in_path('pdfinfo');
+    }
+    if (!defined $can_exiftool) {
+	$can_exiftool = module_exists('Image::ExifTool');
+    }
+
+    my $info;
+    if ($can_exiftool) {
+	$info = pdfinfo_with_exiftool($pdffile);
+    }
+    if ((!$info || !exists $info->{Title}) && $can_pdfinfo) {
 	my $poppler_info = pdfinfo_with_poppler($pdffile);
 	if ($poppler_info) {
 	    $info = { %{$info||{}}, %$poppler_info };
@@ -1276,9 +1286,6 @@ sub pdfinfo ($) {
 
 sub pdfinfo_with_poppler ($) {
     my($pdffile) = @_;
-    if (!defined $can_pdfinfo) {
-	$can_pdfinfo = is_in_path('pdfinfo');
-    }
     return if !$can_pdfinfo;
 
     my @cmd = ('pdfinfo', $pdffile);
@@ -1307,7 +1314,7 @@ sub _pdf_parse_content {
 	    for my $meta (qw(Title Author Creator Producer)) {
 		if ((!defined $info_ref->{$meta} || $info_ref->{$meta} eq '') &&
 		    $dict =~ m{/$meta\s*\(([^\)]+)\)}i) {
-			$info_ref->{$meta} = $1;
+		    $info_ref->{$meta} = $1;
 		}
 	    }
 	}
@@ -1340,9 +1347,6 @@ sub _pdf_parse_content {
 
 sub pdfinfo_with_exiftool ($) {
     my($pdffile) = @_;
-    if (!defined $can_exiftool) {
-	$can_exiftool = module_exists('Image::ExifTool');
-    }
     return if !$can_exiftool;
 
     require Image::ExifTool;
@@ -1363,7 +1367,9 @@ sub pdfinfo_with_exiftool ($) {
 
     my $content;
     if (open my $fh, "<", $pdffile) {
-	$content = do { local $/; <$fh> };
+	# Don't slurp the whole file if it's too large, but for tests it's fine.
+	# To be safe, read only first 1MB.
+	read $fh, $content, 1024*1024;
 	close $fh;
     }
 
@@ -1372,19 +1378,29 @@ sub pdfinfo_with_exiftool ($) {
     }
 
     if (!exists $info{'Page size'}) {
-	if (!defined $can_qpdf) {
-	    $can_qpdf = is_in_path('qpdf');
-	}
-	if ($can_qpdf) {
-	    my $qdf_file = "$pdffile.qdf";
-	    if (system("qpdf", "--qdf", "--object-streams=disable", $pdffile, $qdf_file) == 0) {
-		if (open my $fh, "<", $qdf_file) {
-		    my $qdf_content = do { local $/; <$fh> };
-		    close $fh;
-		    _pdf_parse_content($qdf_content, \%info);
-		}
+	my $output = "";
+	open my $str_fh, '>', \$output or die $!;
+	my $old_stdout = select $str_fh;
+	$et->Options(Verbose => 2);
+	$et->ExtractInfo($pdffile);
+	select $old_stdout;
+	close $str_fh;
+
+	if ($output =~ /MediaBox = \[([\d\.\s,]+)\]/) {
+	    my $val = $1;
+	    my @c = split /[\s,]+/, $val;
+	    if (@c >= 4) {
+		my($x1, $y1, $x2, $y2) = @c;
+		my $w = abs($x2 - $x1);
+		my $h = abs($y2 - $y1);
+
+		my %known_sizes = (
+		    '595x842' => 'A4',
+		    '842x595' => 'A4',
+		);
+		my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
+		$info{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
 	    }
-	    unlink $qdf_file;
 	}
     }
 
