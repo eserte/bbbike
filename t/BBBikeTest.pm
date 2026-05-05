@@ -23,7 +23,7 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
-use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo $can_exiftool);
+use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo $can_exiftool $can_qpdf);
 
 use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
@@ -1296,6 +1296,48 @@ sub pdfinfo_with_poppler ($) {
     \%info;
 }
 
+sub _pdf_parse_content {
+    my($content, $info_ref) = @_;
+
+    # Regex fallbacks for metadata
+    if ($content =~ m{/Info\s+(\d+)\s+\d+\s+R}) {
+	my $obj_num = $1;
+	if ($content =~ m{$obj_num\s+\d+\s+obj\s*<<(.*?)>>\s*endobj}s) {
+	    my $dict = $1;
+	    for my $meta (qw(Title Author Creator Producer)) {
+		if ((!defined $info_ref->{$meta} || $info_ref->{$meta} eq '') &&
+		    $dict =~ m{/$meta\s*\(([^\)]+)\)}i) {
+			$info_ref->{$meta} = $1;
+		}
+	    }
+	}
+    }
+    if (!defined $info_ref->{'PDF version'} || $info_ref->{'PDF version'} eq '') {
+	if ($content =~ m{^%PDF-(\d+\.\d+)}) {
+	    $info_ref->{'PDF version'} = $1;
+	}
+    }
+
+    # Page size / MediaBox
+    if ($content =~ m{/MediaBox\s*\[\s*([-\d\.\s]+)\]}s) {
+	my $val = $1;
+	$val =~ s/^\s+//; $val =~ s/\s+$//;
+	my @c = split /\s+/, $val;
+	if (@c >= 4) {
+	    my($x1, $y1, $x2, $y2) = @c;
+	    my $w = abs($x2 - $x1);
+	    my $h = abs($y2 - $y1);
+
+	    my %known_sizes = (
+		'595x842' => 'A4',
+		'842x595' => 'A4',
+	    );
+	    my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
+	    $info_ref->{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
+	}
+    }
+}
+
 sub pdfinfo_with_exiftool ($) {
     my($pdffile) = @_;
     if (!defined $can_exiftool) {
@@ -1319,54 +1361,31 @@ sub pdfinfo_with_exiftool ($) {
 	}
     }
 
+    my $content;
     if (open my $fh, "<", $pdffile) {
-	my $content = do { local $/; <$fh> };
-
-	# Regex fallbacks for metadata
-	if ($content =~ m{/Info\s+(\d+)\s+\d+\s+R}) {
-	    my $obj_num = $1;
-	    if ($content =~ m{$obj_num\s+\d+\s+obj\s*<<(.*?)>>\s*endobj}s) {
-		my $dict = $1;
-		for my $meta (qw(Title Author Creator Producer)) {
-		    if ((!defined $info{$meta} || $info{$meta} eq '') &&
-			$dict =~ m{/$meta\s*\(([^\)]+)\)}i) {
-			$info{$meta} = $1;
-		    }
-		}
-	    }
-	}
-	for my $meta (qw(Title Author Creator Producer)) {
-	    if (!defined $info{$meta} || $info{$meta} eq '') {
-		if ($content =~ m{/$meta\s*\(([^\)]+)\)}i) {
-		    $info{$meta} = $1;
-		}
-	    }
-	}
-	if (!defined $info{'PDF version'} || $info{'PDF version'} eq '') {
-	    if ($content =~ m{^%PDF-(\d+\.\d+)}) {
-		$info{'PDF version'} = $1;
-	    }
-	}
-
-	# Page size / MediaBox
-	if ($content =~ m{/MediaBox\s*\[\s*([-\d\.\s]+)\]}) {
-	    my $val = $1;
-	    $val =~ s/^\s+//; $val =~ s/\s+$//;
-	    my @c = split /\s+/, $val;
-	    if (@c >= 4) {
-		my($x1, $y1, $x2, $y2) = @c;
-		my $w = abs($x2 - $x1);
-		my $h = abs($y2 - $y1);
-
-		my %known_sizes = (
-		    '595x842' => 'A4',
-		    '842x595' => 'A4',
-		);
-		my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
-		$info{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
-	    }
-	}
+	$content = do { local $/; <$fh> };
 	close $fh;
+    }
+
+    if ($content) {
+	_pdf_parse_content($content, \%info);
+    }
+
+    if (!exists $info{'Page size'}) {
+	if (!defined $can_qpdf) {
+	    $can_qpdf = is_in_path('qpdf');
+	}
+	if ($can_qpdf) {
+	    my $qdf_file = "$pdffile.qdf";
+	    if (system("qpdf", "--qdf", "--object-streams=disable", $pdffile, $qdf_file) == 0) {
+		if (open my $fh, "<", $qdf_file) {
+		    my $qdf_content = do { local $/; <$fh> };
+		    close $fh;
+		    _pdf_parse_content($qdf_content, \%info);
+		}
+	    }
+	    unlink $qdf_file;
+	}
     }
 
     if ($info{'File size'} && $info{'File size'} =~ m{^(\d+)(\s+bytes)?$}) {
@@ -1375,8 +1394,6 @@ sub pdfinfo_with_exiftool ($) {
 
     \%info;
 }
-
-{
     # Show apache errorlog contents on failures.
     #
     # Usually used like this:
@@ -1442,7 +1459,7 @@ sub pdfinfo_with_exiftool ($) {
 	    }
 	}
     }
-}
+
 
 sub my_note (@) {
     my(@notes) = @_;
