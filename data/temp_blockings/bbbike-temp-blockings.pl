@@ -14370,7 +14370,7 @@ EOF
        until => $isodate2epoch->("2023-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2025-10-25T00:00:00"]],
-       recurrence_prewarn_days => 1,
+       recurrence_prewarn_days => -15,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2023)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -33685,7 +33685,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/neue-mieter-fuer-hochhausprojekt-am-kadewe-bueroflaechen-im-quantum-p1-fast-vergeben/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="21"
+#: osm_watch: way id="362719487" version="22"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2026-04-12
@@ -36272,7 +36272,7 @@ EOF
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitte 2026 oder Mitte 2027?
-#: last_checked: 2026-04-29 vvv
+#: last_checked: 2026-05-04 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -36285,7 +36285,7 @@ Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 # REMOVED (nicht mehr) --- Mierstr.: Einbahnstraßenregelung	q4::inwork; 13627,7047 13575,7200
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
 #: note: teilweise erheblicher Kfz-Ausweichverkehr in der Braunschweiger Str., im Osten bis Schudomastr./Brusendorfer Str., im Westen gestaffelt bis Wipperstr.
-#: osm_watch: way id="970153788" version="10"
+#: osm_watch: way id="970153788" version="11"
 #: osm_watch: way id="971064429" version="10"
 Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
 # REMOVED (frei) ---	2::inwork 13693,7228 13575,7200
@@ -40631,14 +40631,16 @@ EOF
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
-# REMOVED (hier ist noch eine halbe Fahrbahn frei) --- Margarete-Sommer-Str.	2::inwork 12970,13996 12874,13893
+#: osm_watch: way id="4615467" version="38"
 Margarete-Sommer-Str.	2::inwork 12874,13893 12802,13813 12707,13706
 #: note: bis zur Kniprodestr. gesperrt, allerdings könnte die Benutzung des Hochbords geduldet sein
+#: osm_watch: way id="175916784" version="20"
 Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED --- #: add_fragezeichen ^^^
+# REMOVED (hier ist noch eine halbe Fahrbahn frei) --- Margarete-Sommer-Str.	2::inwork 12970,13996 12874,13893
 EOF
      },
      { from  => undef, # 
@@ -50277,10 +50279,10 @@ EOF
 EOF
      },
      { from  => 1755406800, # 2025-08-17 07:00
-       until => $isodate2epoch->("2026-05-29 23:59:59"), # 1772298000, # 2026-02-28 18:00
+       until => $isodate2epoch->("2026-06-03 23:59:59"), # 1772298000, # 2026-02-28 18:00
 #      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, außerdem Baustelleneinrichtungsfläche in der Kolmarer Str., evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
 #      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
-       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bis Ende Mai 2026',
+       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bis Anfang Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 viz2021:13.41764,52.53833, (östlich Husemannstr., bis 28.02.2026) (bis 29.05.2026)
@@ -50289,6 +50291,7 @@ EOF
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig) (Jan 2026: erster Abschnitt noch immer abgesperrt)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026?)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-sperrungen-in-prenzlauer-berg-darum-wird-die-riesen-baustelle-im-berliner-kollwitzkiez-erst-viel-spater-fertig-15554939.html (Gesamtbaumaßnahme bis April 2029; Sredzkistr. bis 3.6.2026 fertig)
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
@@ -51845,7 +51848,7 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 EOF
      },
      { from  => $isodate2epoch->("2026-03-15 00:00:00"), # 1767506400, # 2026-01-04 07:00
-       until => 1775415036, # auf Mapillary-Bildern von 2026-04-03 keine Bauarbeiten zu sehen --- $isodate2epoch->("2026-05-22 16:00:00"), # 1773414000, # 2026-03-13 16:00
+       until => $isodate2epoch->("2026-05-22 16:00:00"), # 1775415036, # auf Mapillary-Bildern von 2026-04-03 keine Bauarbeiten zu sehen --- $isodate2epoch->("2026-05-22 16:00:00"), # 1773414000, # 2026-03-13 16:00
 #      text  => 'Waldemarstr.: Bauarbeiten, Sperrung zwischen Audre-Lorde-Str. und Mariannenplatz, evtl. sind auch Radfahrer betroffen, vom 05.01.2026 07:00 bis 13.03.2026 16:00',
        text  => 'Audre-Lorde-Str.: Bauarbeiten, Sperrung zwischen Waldemarstr. und Naunynstr., evtl. sind auch Radfahrer betroffen, vom 16.03.2026 bis 22.05.2026',
        type  => 'handicap',
@@ -51853,7 +51856,7 @@ EOF
 #: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312088 (bereits am nächsten Tag inaktiv)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312193
-#: also_indoor: traffic (no-G,no-T)
+#: also_indoor: traffic (G,T,W)
 #: note: wenn es eine Baustelle gibt, dann nur im hinteren Teil an der Audre-Lorde-Str., deshalb q4 -> q3
 # REMOVED (alte Meldung) --- Waldemarstr.	q3::inwork 12056,10642 11839,10736
 #: source_id: LMS-BR:401947/72 viz2021:13.427972,52.501103,16.03.2026,07:00 (bis 22.05.2026)
@@ -51991,16 +51994,17 @@ EOF
 EOF
      },
      { from  => 1769925600, # 2026-02-01 07:00
-       until => $isodate2epoch->("2026-04-30 23:59:59"), # undef, # 1774195200, # 2026-03-22 17:00
-       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden,, vom 02.02.2026 bis 30.04.2026',
+       until => $isodate2epoch->("2026-06-05 23:59:59"), # undef, # 1774195200, # 2026-03-22 17:00
+#      text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden,, vom 02.02.2026 bis 30.04.2026',
+       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden,, bis Anfang Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:397835/72 viz2021:13.32184,52.5019,02.02.2026,07:00 (bis 22.03.2026) (inaktiv)
-#: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (bis 30.04.2026)
-#: also_indoor: traffic (T,G,W)
-#: last_checked: 2026-04-29 (traffic)
+#: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (bis 30.04.2026) (bis 05.06.2026)
+#: also_indoor: traffic (T,ex-G,ex-W)
+#: last_checked: 2026-05-05 (traffic)
 # REMOVED --- #: check_frequency: 21d
-#: next_check: 2026-04-30
+#: next_check: 2026-06-05
 	q4::inwork; 4838,10597 4819,10355
 EOF
      },
@@ -52817,11 +52821,12 @@ EOF
 Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
 EOF
      },
-     { from  => 1777759200, # 2026-05-03 00:00
+     { from  => $isodate2epoch->("2026-05-04 00:00:00"),
        until => 1779487200, # 2026-05-23 00:00
-       text  => 'Adalbertstr.: Sanierung der Fahrbahn, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 4.5.2026 bis 22.5.2026',
+       text  => 'Adalbertstr.: Sanierung der Fahrbahn, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 5.5.2026 bis 22.5.2026',
        type  => 'handicap',
        data  => <<'EOF',
+#: source_id: LMS-BR:407164/72 viz2021:13.42067,52.50324,05.05.2026,07:00 (bis 22.05.2026)
 	q4::inwork 11552,10863 11589,10947 11640,11067
 EOF
      },

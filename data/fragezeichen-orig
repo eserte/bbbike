@@ -1997,12 +1997,14 @@ Heerstr.: Verbesserung des Radwegs geplant? ("neuer breiterer Gehweg")	?::projec
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/endversion-protokoll-18-06-20.pdf
 #: by: https://api.fixmyberlin.de/api/plannings/128
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1665748.php (Umbau zwischen Wiesenweg und Weidenweg, bis 8.8.2026)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neue-berliner-grundschule-baustart-an-der-heerstrasse--mehr-sicherheit-fur-staakens-schulkinder-15557090.html (Bauarbeiten bis 24.8.2026)
 #: XXX unklare Lage --- Radwege sind bereits asphaltiert (zumindest im östlichen Abschnitt), aber scheint nicht allzu frisch zu sein; nur im Bereich Am Zeppelinpark wurde der Radweg stadtauswärts neu gemacht
 #: osm_watch: way id="1158951853" version="7"
 #: osm_watch: way id="967256183" version="11"
 #: last_checked: 2025-07-05
 # REMOVED --- #: check_frequency: 360d
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2026-08-24 (Tsp)
 Heerstr.: evtl. Sanierung des Radwegs? Beidseitig	?::projected -7294,12833 -7344,12854 -7600,12934 -7716,12970 -8040,13077 -8050,13080 -8313,13167 -8384,13191 -8437,13208 -8784,13321 -8892,13351 -9005,13354
 # 
 # REMOVED (mit RW1 und Kommentar markiert) --- Heerstr.: Nebenfahrbahnen mit aufnehmen	? -3692,11681 -3708,11686 -3820,11721 -4033,11786 -4078,11800
@@ -3785,7 +3787,7 @@ Weißenhöher Str./Arno-Philippsthal-Str.: Zebrastreifen geplant	?::projected 2063
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/16-neue-zebrastreifen_a340070
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/infrastruktur/bau-von-querungshilfen/ (zurzeit in Ausführung, Stand April 2025)
-#: osm_watch: note 5077510 3
+#: osm_watch: note 5077510 4
 #: last_checked: 2026-04-22 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
@@ -5578,7 +5580,7 @@ Erich-Weinert-Str.	? 12556,15518 12605,15491 12621,15482 12870,15342
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349062.php (Entsiegelungsmaßnahme ab 24.07.2023)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/bauarbeiten-in-fussgaengerzone_a388510
 #: osm_watch: way id="4685729" version="23"
-#: last_checked: 2026-04-02
+#: last_checked: 2026-05-05
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-07-24
 Waldeyerstr.: wird es hier zu weiteren Einschränkungen für den Radverkehr kommen?	? 15058,12329 15003,12241
@@ -7505,6 +7507,7 @@ Osdorfer Str.: neue parallele Straße wird gebaut, alte Straße wird zum Radweg	?:
 #: by: https://www.entwicklungsstadt.de/urbane-mitte-am-gleisdreieck-bauausschuss-entscheidet-ueber-hochhaeuser-im-sueden/
 #: by: https://www.entwicklungsstadt.de/neubauten-am-gleisdreieck-bauausschuss-stimmt-fuer-urbane-mitte-sued/
 #: by: https://www.entwicklungsstadt.de/urbane-mitte-sued-am-gleisdreieck-das-plant-projektentwickler-periskop/
+#: by: https://www.entwicklungsstadt.de/gleisdreieck-so-geht-es-mit-der-urbanen-mitte-sued-weiter/
 #: last_checked: 2025-04-27
 #: check_frequency: 1080d
 Bebauungsplan VI-140cab "Urbane Mitte Süd" (zwischen Gleisdreieckpark und Technikmuseum): wird die Trebbiner Str. verlängert und entsteht eine Verbindung für Radfahrer? Genaue Lage?	? 8521,10268 8427,10120 8360,10133
@@ -9491,9 +9494,9 @@ Ursula-Hirschmann-Platz: Benennung geplant	? 7518,15605 7595,15596
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-12-2025-b103-zwischen-gantikow-und-vehlow (Fertigstellung des gesamten Projekts bis Ende 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~09-01-2026-b103_witterung-verzoegert-bauarbeiten
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-02-2026-b103-zw-gantikow-u-vehlow_fortsetzung-der-arbeiten
-#: source_id: LS/223-K/25/140 (bis 18.12.2026)
+#: source_id: LS/223-K/25/140 (bis 18.12.2026) (bis 30.06.2026)
 #: source_id: LS/223-K/26/054 (bis 31.10.2026)
-#: next_check: 2026-12-18 (Verkehrsmeldung)
+#: next_check: 2026-10-31 (Verkehrsmeldung)
 Gantikow - Vehlow: Bau eines asphaltierten Radwegs (Westseite?)	? -61969,62314 -62264,62702 -62375,62930 -62549,63698 -62652,63877 -62911,64069 -63077,64306 -63485,65303 -63882,65722 -63957,66019 -64027,66282
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~23-05-2025-l167_steinstrasse-neuruppin (Fertigstellung ist für Juli 2027 geplant)
@@ -10023,6 +10026,7 @@ Bersarinplatz: Sperrung der Furt geplant	?; 13747,12642 13695,12643 13681,12624
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12444 (Resolution)
 #: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12446 (Resolution)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/gorlitzer-bahnbrucken-vor-sperrung-berlin-kampft-um-die-fuss-und-radverbindung-uber-den-landwehrkanal-15546775.html
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article411862788/berlin-brueckensperrung-zwischen-treptow-und-kreuzberg-kommt-noch-eine-loesung.html
 #: next_check: 2026-06-30
 Görlitzer Brücken: Sperrung droht	? 13970,9349 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903 13141,9911
 # 
@@ -11945,6 +11949,7 @@ Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 #: by: https://www.entwicklungsstadt.de/1-600-wohnungen-in-marzahn-neubauquartier-im-georg-knorr-park-schreitet-voran/
 #: by: https://www.entwicklungsstadt.de/marzahn-erste-bauphase-konnekt/ (erster Bauabschnitt bis Ende 2029)
 #: by: https://www.entwicklungsstadt.de/wohnquartier-konnekt-waechst-zweiter-bauabschnitt-in-marzahn-genehmigt/
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1667799.php (Beschluss des Bebauungsplans XXI-22-2)
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2026-04-06 (daf)
 #: check_frequency: 720d

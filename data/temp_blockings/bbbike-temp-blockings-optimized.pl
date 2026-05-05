@@ -5237,7 +5237,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.entwicklungsstadt.de/neue-mieter-fuer-hochhausprojekt-am-kadewe-bueroflaechen-im-quantum-p1-fast-vergeben/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
-#: osm_watch: way id="362719487" version="21"
+#: osm_watch: way id="362719487" version="22"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
 #: last_checked: 2026-04-12
@@ -5790,7 +5790,7 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitte 2026 oder Mitte 2027?
-#: last_checked: 2026-04-29 vvv
+#: last_checked: 2026-05-04 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -5803,7 +5803,7 @@ Mittelbuschweg: südlicher Gehweg ist frei	q4::inwork 13797,7267 13693,7228
 # REMOVED (nicht mehr) --- Mierstr.: Einbahnstraßenregelung	q4::inwork; 13627,7047 13575,7200
 #: note: eigentlich schon Einbahnstraßenregelung ab Unstrutstr., offen Richtung Westen sowie für BVG+Linienverkehr frei (aber warum eigentlich nicht für den Radverkehr?)
 #: note: teilweise erheblicher Kfz-Ausweichverkehr in der Braunschweiger Str., im Osten bis Schudomastr./Brusendorfer Str., im Westen gestaffelt bis Wipperstr.
-#: osm_watch: way id="970153788" version="10"
+#: osm_watch: way id="970153788" version="11"
 #: osm_watch: way id="971064429" version="10"
 Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 13648,7284 13762,7321 13794,7333
 # REMOVED (frei) ---	2::inwork 13693,7228 13575,7200
@@ -6861,14 +6861,16 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
-# REMOVED (hier ist noch eine halbe Fahrbahn frei) --- Margarete-Sommer-Str.	2::inwork 12970,13996 12874,13893
+#: osm_watch: way id="4615467" version="38"
 Margarete-Sommer-Str.	2::inwork 12874,13893 12802,13813 12707,13706
 #: note: bis zur Kniprodestr. gesperrt, allerdings könnte die Benutzung des Hochbords geduldet sein
+#: osm_watch: way id="175916784" version="20"
 Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED --- #: add_fragezeichen ^^^
+# REMOVED (hier ist noch eine halbe Fahrbahn frei) --- Margarete-Sommer-Str.	2::inwork 12970,13996 12874,13893
 ',
          'from' => undef,
          'id' => 3792,
@@ -9290,6 +9292,7 @@ Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig) (Jan 2026: erster Abschnitt noch immer abgesperrt)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026?)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-sperrungen-in-prenzlauer-berg-darum-wird-die-riesen-baustelle-im-berliner-kollwitzkiez-erst-viel-spater-fertig-15554939.html (Gesamtbaumaßnahme bis April 2029; Sredzkistr. bis 3.6.2026 fertig)
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
@@ -9302,9 +9305,9 @@ Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 ',
          'from' => 1755406800,
          'id' => 4413,
-         'text' => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bis Ende Mai 2026',
+         'text' => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bis Anfang Juni 2026',
          'type' => 'handicap',
-         'until' => 1780091999
+         'until' => 1780523999
        },
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/zukunft-des-berliner-mauerwegs-zwei-neue-baustellen-etappen-an-der-alten-ddr-grenze-in-spandau-13615882.html (Baustart Ende 2025)
@@ -9986,7 +9989,22 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
          'type' => 'handicap',
          'until' => 1806530399
        },
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:395245/72 viz2021:13.42806,52.5012,05.01.2026,07:00 (bis 13.03.2026) (inaktiv)
+#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312088 (bereits am nächsten Tag inaktiv)
+#: source_id[inactive]: bvg2024:140#HIM_FREETEXT_312193
+#: also_indoor: traffic (G,T,W)
+#: note: wenn es eine Baustelle gibt, dann nur im hinteren Teil an der Audre-Lorde-Str., deshalb q4 -> q3
+# REMOVED (alte Meldung) --- Waldemarstr.	q3::inwork 12056,10642 11839,10736
+#: source_id: LMS-BR:401947/72 viz2021:13.427972,52.501103,16.03.2026,07:00 (bis 22.05.2026)
+Audre-Lorde-Str.	q4::inwork 12056,10642 12000,10531
+',
+         'from' => 1773529200,
+         'id' => 4520,
+         'text' => 'Audre-Lorde-Str.: Bauarbeiten, Sperrung zwischen Waldemarstr. und Naunynstr., evtl. sind auch Radfahrer betroffen, vom 16.03.2026 bis 22.05.2026',
+         'type' => 'handicap',
+         'until' => 1779458400
+       },
        {
          'data' => '#: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2025/04/2025-04-28_VZ-Plan01-2_Schoenefeld_Waltersdorf_Schwarzer_Weg_Hubertus-1024x602.jpg
@@ -10093,7 +10111,21 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
          'until' => 1782856799
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:397835/72 viz2021:13.32184,52.5019,02.02.2026,07:00 (bis 22.03.2026) (inaktiv)
+#: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (bis 30.04.2026) (bis 05.06.2026)
+#: also_indoor: traffic (T,ex-G,ex-W)
+#: last_checked: 2026-05-05 (traffic)
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2026-06-05
+	q4::inwork; 4838,10597 4819,10355
+',
+         'from' => 1769925600,
+         'id' => 4530,
+         'text' => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden,, bis Anfang Juni 2026',
+         'type' => 'handicap',
+         'until' => 1780696799
+       },
        {
          'data' => '	2 -2950,12589 -3013,12909 -3008,13052 -2940,13169
 ',
@@ -10753,11 +10785,12 @@ Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 183
          'until' => 1778277599
        },
        {
-         'data' => '	q4::inwork 11552,10863 11589,10947 11640,11067
+         'data' => '#: source_id: LMS-BR:407164/72 viz2021:13.42067,52.50324,05.05.2026,07:00 (bis 22.05.2026)
+	q4::inwork 11552,10863 11589,10947 11640,11067
 ',
-         'from' => 1777759200,
+         'from' => 1777845600,
          'id' => 4593,
-         'text' => 'Adalbertstr.: Sanierung der Fahrbahn, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 4.5.2026 bis 22.5.2026',
+         'text' => 'Adalbertstr.: Sanierung der Fahrbahn, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 5.5.2026 bis 22.5.2026',
          'type' => 'handicap',
          'until' => 1779487200
        },
