@@ -18,10 +18,7 @@ use FindBin;
 use File::Basename qw(basename);
 use File::Path qw(make_path);
 use Getopt::Long;
-my $has_lwp = eval { require LWP::UserAgent; 1 };
-if (!$has_lwp) {
-    require HTTP::Tiny;
-}
+use LWP::UserAgent;
 use IO::Uncompress::Gunzip qw($GunzipError);
 use IO::Uncompress::Unzip qw($UnzipError);
 
@@ -54,7 +51,11 @@ my $soil_dwd_dir;
 my $for_date;
 my $as = 'text';
 my $adjust_by_precip;
-my $precip_factor = 4.0; # +4% nFK per 1mm rain
+my $precip_factor = 4.0; # +4% nFK per 1mm rain.
+                         # This heuristic factor is based on an assumed field
+                         # capacity of ~25mm for the top 10cm of soil (1/25 = 4%).
+                         # Note that the soil moisture values (BF10) are
+                         # given in % nFK (usable field capacity).
 my $precip_max = 120;
 GetOptions(
     "q|quiet" => \$q,
@@ -100,23 +101,16 @@ my $pm = do {
     }
 };
 
-my $ua = $has_lwp ? LWP::UserAgent->new : HTTP::Tiny->new;
+my $ua = LWP::UserAgent->new;
 
 chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 FETCH_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     my $pid = $pm and $pm->start and next FETCH_LOOP;
     warn "INFO: update station $station ($stations{$station})...\n" unless $q;
     my $url = "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_v2_$station.txt.gz";
-    $url =~ s{^https:}{http:} if !$has_lwp;
-    if ($has_lwp) {
-	my $resp = $ua->mirror($url, basename($url));
-	$resp->code < 400
-	    or die "Mirroring $url failed: " . $resp->dump;
-    } else {
-	my $resp = $ua->mirror($url, basename($url));
-	$resp->{success}
-	    or die "Mirroring $url failed: $resp->{status} $resp->{reason}";
-    }
+    my $resp = $ua->mirror($url, basename($url));
+    $resp->code < 400
+	or die "Mirroring $url failed: " . $resp->dump;
     $pm and $pm->finish;
 }
 $pm and $pm->wait_all_children;
@@ -160,16 +154,9 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     if ($need_update) {
 	my $pid = $pm and $pm->start and next FETCH_HISTORICAL_LOOP;
 	my $url = "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/historical/$historical_file";
-	$url =~ s{^https:}{http:} if !$has_lwp;
-	if ($has_lwp) {
-	    my $resp = $ua->get($url, ':content_file' => basename($url));
-	    $resp->is_success
-		or die "Fetching $url failed: " . $resp->dump;
-	} else {
-	    my $resp = $ua->mirror($url, basename($url));
-	    $resp->{success}
-		or die "Mirroring $url failed: $resp->{status} $resp->{reason}";
-	}
+	my $resp = $ua->get($url, ':content_file' => basename($url));
+	$resp->is_success
+	    or die "Fetching $url failed: " . $resp->dump;
 	$pm and $pm->finish;
     }
 }
@@ -188,17 +175,10 @@ if ($adjust_by_precip) {
 		? "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/recent/stundenwerte_RR_${precip_station}_akt.zip"
 		: "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/now/10minutenwerte_nieder_${precip_station}_now.zip";
 	    my $target = "$precip_dir/precip_${type}_${precip_station}.zip";
-	    $url =~ s{^https:}{http:} if !$has_lwp;
-	    if ($has_lwp) {
-		my $resp = $ua->mirror($url, $target);
-		# 404 is acceptable for 'now' files
-		$resp->code < 400 || ($type eq '10min' && $resp->code == 404)
-		    or die "Mirroring $url failed: " . $resp->dump;
-	    } else {
-		my $resp = $ua->mirror($url, $target);
-		$resp->{success} || ($type eq '10min' && $resp->{status} == 404)
-		    or die "Mirroring $url failed: $resp->{status} $resp->{reason}";
-	    }
+	    my $resp = $ua->mirror($url, $target);
+	    # 404 is acceptable for 'now' files
+	    $resp->code < 400 || ($type eq '10min' && $resp->code == 404)
+		or die "Mirroring $url failed: " . $resp->dump;
 	}
 	$pm and $pm->finish;
     }
