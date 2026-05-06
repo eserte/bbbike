@@ -18,8 +18,12 @@ use FindBin;
 use File::Basename qw(basename);
 use File::Path qw(make_path);
 use Getopt::Long;
-use LWP::UserAgent;
+my $has_lwp = eval { require LWP::UserAgent; 1 };
+if (!$has_lwp) {
+    require HTTP::Tiny;
+}
 use IO::Uncompress::Gunzip qw($GunzipError);
+use IO::Uncompress::Unzip qw($UnzipError);
 
 use lib "$FindBin::RealBin/..";
 
@@ -33,6 +37,14 @@ my %stations = qw(
     427 Schoenefeld
     433 Tempelhof
 );
+# Mapping to 5-digit station IDs for hourly precipitation data
+my %precip_stations = qw(
+    400 00400
+    403 00403
+    420 00420
+    427 00427
+    433 00433
+);
 # There's also
 #    430 Tegel
 # but observations stopped at 20210502.
@@ -41,13 +53,19 @@ my $q;
 my $soil_dwd_dir;
 my $for_date;
 my $as = 'text';
+my $adjust_by_precip;
+my $precip_factor = 4.0; # +4% nFK per 1mm rain
+my $precip_max = 120;
 GetOptions(
     "q|quiet" => \$q,
     "soil-dwd-dir=s" => \$soil_dwd_dir,
     "date=s" => \$for_date,
     "as=s" => \$as,
+    "adjust-by-precip" => \$adjust_by_precip,
+    "precip-factor=f" => \$precip_factor,
+    "precip-max=i" => \$precip_max,
 )
-    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json|mapping]\n";
+    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json|mapping] [--adjust-by-precip] [--precip-factor factor] [--precip-max max_bf10]\n";
 
 $as =~ m{^(text|json|mapping)$}
     or die "--as can only be text (default) or json or mapping\n";
@@ -66,11 +84,11 @@ if (bbbike_aux_dir) {
     $soil_dwd_dir = bbbike_aux_dir . "/data/soil_dwd";
 } else {
     $soil_dwd_dir = bbbike_root . "/tmp/soil_dwd";
-    for my $subdir (qw(recent historical)) {
-	if (!-d "$soil_dwd_dir/$subdir") {
-	    warn "INFO: create $soil_dwd_dir/$subdir directory...";
-	    make_path "$soil_dwd_dir/$subdir";
-	}
+}
+for my $subdir (qw(recent historical precip)) {
+    if (!-d "$soil_dwd_dir/$subdir") {
+	warn "INFO: create $soil_dwd_dir/$subdir directory...";
+	make_path "$soil_dwd_dir/$subdir";
     }
 }
 
@@ -82,16 +100,23 @@ my $pm = do {
     }
 };
 
-my $ua = LWP::UserAgent->new;
+my $ua = $has_lwp ? LWP::UserAgent->new : HTTP::Tiny->new;
 
 chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 FETCH_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     my $pid = $pm and $pm->start and next FETCH_LOOP;
     warn "INFO: update station $station ($stations{$station})...\n" unless $q;
     my $url = "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/recent/derived_germany_soil_daily_recent_v2_$station.txt.gz";
-    my $resp = $ua->mirror($url, basename($url));
-    $resp->code < 400
-	or die "Mirroring $url failed: " . $resp->dump;
+    $url =~ s{^https:}{http:} if !$has_lwp;
+    if ($has_lwp) {
+	my $resp = $ua->mirror($url, basename($url));
+	$resp->code < 400
+	    or die "Mirroring $url failed: " . $resp->dump;
+    } else {
+	my $resp = $ua->mirror($url, basename($url));
+	$resp->{success}
+	    or die "Mirroring $url failed: $resp->{status} $resp->{reason}";
+    }
     $pm and $pm->finish;
 }
 $pm and $pm->wait_all_children;
@@ -135,13 +160,50 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
     if ($need_update) {
 	my $pid = $pm and $pm->start and next FETCH_HISTORICAL_LOOP;
 	my $url = "https://opendata.dwd.de/climate_environment/CDC/derived_germany/soil/daily/historical/$historical_file";
-	my $resp = $ua->get($url, ':content_file' => basename($url));
-	$resp->is_success
-	    or die "Fetching $url failed: " . $resp->dump;
+	$url =~ s{^https:}{http:} if !$has_lwp;
+	if ($has_lwp) {
+	    my $resp = $ua->get($url, ':content_file' => basename($url));
+	    $resp->is_success
+		or die "Fetching $url failed: " . $resp->dump;
+	} else {
+	    my $resp = $ua->mirror($url, basename($url));
+	    $resp->{success}
+		or die "Mirroring $url failed: $resp->{status} $resp->{reason}";
+	}
 	$pm and $pm->finish;
     }
 }
 $pm and $pm->wait_all_children;
+
+if ($adjust_by_precip) {
+    my $precip_dir = "$soil_dwd_dir/precip";
+    FETCH_PRECIP_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
+	my $precip_station = $precip_stations{$station};
+	next if !$precip_station;
+
+	my $pid = $pm and $pm->start and next FETCH_PRECIP_LOOP;
+	warn "INFO: update precipitation for station $station ($stations{$station})...\n" unless $q;
+	for my $type (qw(hourly 10min)) {
+	    my $url = ($type eq 'hourly')
+		? "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/recent/stundenwerte_RR_${precip_station}_akt.zip"
+		: "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/now/10minutenwerte_nieder_${precip_station}_now.zip";
+	    my $target = "$precip_dir/precip_${type}_${precip_station}.zip";
+	    $url =~ s{^https:}{http:} if !$has_lwp;
+	    if ($has_lwp) {
+		my $resp = $ua->mirror($url, $target);
+		# 404 is acceptable for 'now' files
+		$resp->code < 400 || ($type eq '10min' && $resp->code == 404)
+		    or die "Mirroring $url failed: " . $resp->dump;
+	    } else {
+		my $resp = $ua->mirror($url, $target);
+		$resp->{success} || ($type eq '10min' && $resp->{status} == 404)
+		    or die "Mirroring $url failed: $resp->{status} $resp->{reason}";
+	    }
+	}
+	$pm and $pm->finish;
+    }
+    $pm and $pm->wait_all_children;
+}
 
 my $res;
 
@@ -177,26 +239,92 @@ for my $station (sort {$a<=>$b} keys %stations) {
 	$this_res->{station_name} = $stations{$station};
     }
     if (!$got_line) {
-	if ($as ne 'text') {
-	    if (defined $for_date) {
-		$this_res->{date} = $for_date;
-	    }
-	    $this_res->{BF10} = undef;
-	} else {
-	    printf "%-12s: no data\n", $station_id;
+	if (defined $for_date) {
+	    $this_res->{date} = $for_date;
 	}
+	$this_res->{BF10} = undef;
     } else {
 	my @f = split /;/, $got_line;
 	my $date = $f[$date_index];
 	my $bf10 = $f[$bf_index];
-	if ($as ne 'text') {
-	    $this_res->{date} = $date;
-	    $bf10 =~ s{\s+}{}g; $bf10 += 0;
-	    $this_res->{BF10} = $bf10;
+	$date =~ s{\s+}{}g;
+	$bf10 =~ s{\s+}{}g; $bf10 += 0;
+	$this_res->{date} = $date;
+	$this_res->{BF10} = $bf10;
+    }
+
+    if ($as eq 'text') {
+	if (!defined $this_res->{BF10}) {
+	    printf "%-12s: no data\n", $station_id;
 	} else {
-	    printf "%-12s: %s %s\n", $station_id, $date, $bf10;
+	    printf "%-12s: %s %s\n", $station_id, $this_res->{date}, $this_res->{BF10};
 	}
     }
+    if ($adjust_by_precip && $this_res->{date} && defined $this_res->{BF10}) {
+	my $precip_station = $precip_stations{$station};
+	my %precip_by_10min;
+	for my $type (qw(hourly 10min)) {
+	    my $precip_file = "$soil_dwd_dir/precip/precip_${type}_${precip_station}.zip";
+	    if (-e $precip_file) {
+		my $u = IO::Uncompress::Unzip->new($precip_file)
+		    or die "Can't open $precip_file: $UnzipError";
+		while (my $status = $u->nextStream) {
+		    my $name = $u->getHeaderInfo->{Name};
+		    if ($name =~ /^produkt_(rr_stunde|zehn_now_rr)_.*\.txt$/) {
+			my $header = <$u>;
+			my @cols = split /;/, $header;
+			my $date_idx;
+			my $precip_idx;
+			for my $i (0 .. $#cols) {
+			    my $col = $cols[$i];
+			    $col =~ s/^\s+|\s+$//g;
+			    $date_idx = $i if $col eq 'MESS_DATUM';
+			    $precip_idx = $i if $col =~ /^(R1|RWS_10)$/;
+			}
+			if (defined $date_idx && defined $precip_idx) {
+			    # soil date is YYYYMMDD, hourly date is YYYYMMDDHH, 10min is YYYYMMDDHHMM
+			    my $soil_date_limit = $this_res->{date} . "23" . ($type eq '10min' ? "59" : "");
+			    while (<$u>) {
+				my @f = split /;/, $_;
+				my $m_date = $f[$date_idx];
+				$m_date =~ s/^\s+|\s+$//g;
+				if ($m_date > $soil_date_limit) {
+				    my $val = $f[$precip_idx];
+				    $val =~ s/^\s+|\s+$//g;
+				    if ($val >= 0) {
+					if ($type eq 'hourly') {
+					    for my $mm (qw(00 10 20 30 40 50)) {
+						$precip_by_10min{$m_date . $mm} = $val / 6;
+					    }
+					} else {
+					    $precip_by_10min{$m_date} = $val;
+					}
+				    }
+				}
+			    }
+			}
+			last;
+		    }
+		}
+	    }
+	}
+	my $sum_precip = 0;
+	$sum_precip += $_ for values %precip_by_10min;
+	if ($sum_precip > 0) {
+	    my $adjustment = int($sum_precip * $precip_factor + 0.5);
+	    my $old_bf10 = $this_res->{BF10};
+	    $this_res->{BF10} += $adjustment;
+	    if ($this_res->{BF10} > $precip_max) {
+		$this_res->{BF10} = $precip_max;
+	    }
+	    if ($as eq 'text') {
+		printf "  (adjusted by precip: %.1fmm * %.1f -> %d -> %d)\n", $sum_precip, $precip_factor, $adjustment, $this_res->{BF10};
+	    }
+	    $this_res->{precip_sum} = $sum_precip;
+	    $this_res->{bf10_old} = $old_bf10;
+	}
+    }
+
     if ($as ne 'text') {
 	$res->{$station} = $this_res;
     }
