@@ -130,7 +130,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-04-28
+#: last_checked: 2026-05-05 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -403,7 +403,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="30"
-#: last_checked: 2026-05-01
+#: last_checked: 2026-05-05 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
@@ -1300,7 +1300,7 @@ Diesterwegstr.: Kopfsteinpflaster	Q2 12060,15141 11995,15012
 Diesterwegstr.: Asphalt	Q0 11995,15012 11964,14962
 Diesterwegstr.: Kopfsteinpflaster	Q2 11964,14962 11864,14781
 Straßmannstr.: Kopfsteinpflaster	Q2 13530,13014 13741,13107 13835,13149
-Niederkirchnerstr.: Asphalt	Q0 8720,11226 9155,11283
+Niederkirchnerstr.: Asphalt	Q0 8720,11226 8833,11241 8938,11255 9155,11283
 Johanniterstr.: Asphalt	Q0 9837,10117 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
@@ -1574,7 +1574,7 @@ Pankeweg: Kopfsteinpflaster	Q2 12578,20749 12505,20702
 Pankeweg: asphaltiert	Q0 12505,20702 12386,20636 12363,20582 12310,20523 12266,20467 12235,20380 12216,20344 12154,20325
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6833
 #: by: mapillary
-Pankeweg: asphaltiert, Wurzelschäden	Q1 12154,20325 11995,19759
+Pankeweg: asphaltiert, Wurzelschäden	Q1 12154,20325 12094,20110 11995,19759
 Pankeweg: asphaltiert	Q0 11995,19759 11907,19749
 Schloßallee: Asphalt, teilweise mit leichten Schäden	Q0- 11883,19739 11730,19684 11472,19593 11312,19537 11268,19519 11236,19509
 Schloßallee: Parkweg, OK	Q1 11236,19509 11081,19456 10857,19379 10636,19289 10589,19275
@@ -2038,7 +2038,7 @@ Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0- 14901,11
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1- 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1- 5913,8415 5831,8358
 #: next_check_id: VOLKSPARKWILMERSDORF-2026
-#: osm_watch: note 5180232 1
+#: osm_watch: note 5180232 2
 #: osm_watch: way id="21849639" version="15"
 #: XXX Nach den Bauarbeiten bessere Qualität (Q1?)? Auch östlich der Prinzregentenstr. wird zumindest punktuell ausgebessert (Höhenunterschiede zu Borden und Gullydeckeln)
 #: add_fragezeichen: Ist die Qualität des Parkwegs nach den Bauarbeiten besser geworden?
@@ -7247,7 +7247,7 @@ Doberaner Str.: Beton	Q0 16358,18687 16233,18643
 Doberaner Str.: Asphalt	Q1 16233,18643 16164,18611 16144,18521 16167,18427 16196,18364
 Doberaner Str.: Beton	Q1 16196,18364 16315,18208 16335,18197
 An der Oskar-Schindler-Schule: Beton	Q0- 16256,17651 16269,17759 16277,17830
-(Perler Str. - Darßer Str.): wassergebundene Decke	Q1 15851,17722 16256,17651 16358,17627 16761,17561
+(Perler Str. - Darßer Str.): wassergebundene Decke	Q1 15851,17722 16256,17651 16358,17627 16453,17611 16761,17561
 #: note: die Qualität des Asphalts lässt schon nach...
 (entlang der ehemaligen NEB-Trasse): Asphalt	Q0- 15821,17510 15814,17454 15839,17431 15939,17412 16141,17325 16146,17304 16229,17217 16296,17114
 (entlang der ehemaligen NEB-Trasse): Beton	Q0 16318,17128 16369,17042
@@ -12735,8 +12735,10 @@ Clara-Müller-Jahnke-Str.: Betonpflaster	Q1+ 31971,3170 31799,3192 31800,3091 318
 (Einkaufszentrum Lagunenweg - Parkweg): Verbundsteinpflaster	Q1 31650,3218 31660,3193
 (Parkweg): Asphalt	Q0 31762,3202 31747,3199 31700,3204 31660,3193 31658,3157 31683,3132 31707,3075 31751,3028 31800,2969 31948,2962
 (Falkenberger Str. - Piesporter Str., Wohngebietsstraße): Verbundsteinpflaster	Q1 15370,16781 15362,16742 15350,16729
-# REMOVED (ja) --- #: XXX wird hier die Qualität verbessert? --- #: last_checked: 2018-10-05 vvv --- #: check_frequency: 180d vvv
-B2: neu asphaltierter Radweg	Q0 15778,20350 15872,20496 15900,20531 16025,20631 16644,21042 16815,21156 17073,21329
+#: historical_note: der Radweg wurde hier ca. 2018 neu asphaltiert, danach Q0, mittlerweile wieder schlechter vvv
+B2: asphaltiert mit teilweise erheblichen Wurzelhebungen	Q1-; 15778,20350 15872,20496 15900,20531 16025,20631 16644,21042 16815,21156 17073,21329
+B2: aspaltiert mit einigen Wurzelhebungen	Q1; 17073,21329 16815,21156 16644,21042 16025,20631 15900,20531 15872,20496 15778,20350
+#: historical_note ^^^
 (Falkenberger Fußsteig - Falkenberger Chaussee): wassergebundene Decke, teilweise mit Regenschäden	Q1- 18507,18541 18483,18433 18521,18347 18530,18327
 (Falkenberger Chaussee - Darßer Str.): Asphalt, etwas wellig	Q1+ 16938,17500 16848,17530
 (Falkenberger Chaussee - Darßer Str.): Beton	Q1+ 16848,17530 16825,17537 16785,17524
@@ -20334,17 +20336,17 @@ Eisenhammerweg: schlechtes Kopfsteinpflaster	Q3+ 1543,20060 1529,20131
 #: by: ^^^
 # 
 #: by: Stefan Rose:
-#: confirmed_by: srt (leichte Anpassung der Kategorie: Q0 -> Q0-)
-Wustrower Str.: guter Beton	Q0- 16888,18610 17016,18436 17076,18355 17128,18281 17217,18165
+#: corrected_by: srt (guter Beton, Q0 -> ...)
+Wustrower Str.: Beton	Q1+ 16888,18610 17016,18436 17076,18355 17128,18281 17217,18165
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1636595.php
-#: XXX wird hier die Fahrbahndecke saniert?
-#: last_checked: 2026-03-07
+#: XXX wird hier die Fahrbahndecke saniert? oder nur Gehwegvorstreckungen gebaut?
+#: last_checked: 2026-05-06
 #: check_frequency: 45d
 #: corrected_by: srt (Q0 -> Q1-, added "mit einigen Schäden")
 Wustrower Str.: Beton mit einigen Schäden	Q1- 17217,18165 17341,17990
 #: confirmed_by: srt (leichte Anpassung der Kategorie: Q0 -> Q0-)
-Wustrower Str.: guter Beton	Q0- 17341,17990 17289,17952 17100,17819 17015,17935
-Wustrower Str.: guter Beton	Q0- 17289,17952 17356,17856
+Wustrower Str.: Beton	Q1+ 17341,17990 17289,17952 17100,17819 17015,17935
+Wustrower Str.: Beton	Q1+ 17289,17952 17356,17856
 # 
 #: by: Ulrich Wegener: vvv
 #: confirmed_by: srt

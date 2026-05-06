@@ -3623,6 +3623,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 #: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024) (inaktiv)
 #: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
 #: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
+#: source_id: LMS-BR:407312/72 viz2021:13.33123,52.50383,06.05.2026,12:00 (bis 11.05.2026)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -4980,16 +4981,15 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
        {
          'data' => '#: note: offizielle Umleitung über Fischerstr.
 #: note: laut Bauarbeiter dauern die Bauarbeiten 6 (!) Monate (ab Juni 2025)
-#: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet
-# REMOVED (die Umleitungsschilder stehen noch, aber die Baustelle ist weitgehend fertig)
+#: note: laut SGA Lichtenberg bis 06.02.2026 angeordnet, mittlerweile Enddatum 22.05.2026 (endgültiger Deckenschluss)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article409798893/belchmauer-versperrt-strasse-in-rummelsburg-was-steckt-dahinter.html
-#: osm_watch: note 4813149 5
+#: osm_watch: note 4813149 6
 #: osm_watch: way id="198581621" version="22"
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
 #: last_checked: 2026-05-03
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-04-30 (SGA Lichtenberg)
+#: next_check: 2026-05-22 (SGA Lichtenberg)
 # REMOVED (Anlieger frei) ---	2::inwork 16539,10097 16353,10207
 	2::inwork 16353,10207 16148,10329
 # REMOVED (Anlieger frei) ---	2::inwork 16148,10329 15758,10578
@@ -4999,7 +4999,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 ',
          'from' => undef,
          'id' => 3223,
-         'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, Ende der Sperrung unbekannt',
+         'text' => 'Zobtener Str.: Bauarbeiten, Straße gesperrt, voraussichtlich bis zum 22.05.2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5861,13 +5861,13 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://entwicklungsstadt.de/kai-wegner-besucht-zur-neueroeffnung-das-kalle-neukoelln/
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409917943/kalle-neukoelln-ist-fertig-da-schwingt-das-berlinerische-mit.html
 #: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
-#: osm_watch: way id="734271970" version="10"
+# REMOVED --- #: osm_watch: way id="734271970" version="10"
 #: osm_watch: way id="975241319" version="10"
-#: osm_watch: way id="970452276" version="9"
-#: osm_watch: note 5093384 6
+# REMOVED --- #: osm_watch: way id="970452276" version="9"
+#: osm_watch[closed]: note 5093384 7
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-04-28
+#: last_checked: 2026-05-05 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -8550,7 +8550,7 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
 #: by: https://www.entwicklungsstadt.de/marzahner-chaussee-rohbauarbeiten-fuer-neue-wohnungen-kommen-voran/ (Fertigstellung: geplant bis 2027)
-#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026) (bis 30.04.2026) (bis 08.05.2026)
+#: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026) (bis 30.04.2026) (bis 08.05.2026) (vorfristig inaktiv)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m)
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -8559,9 +8559,10 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
 #: osm_watch: way id="1374232475" version="5"
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (ex-H,G,no-T)
-#: last_checked: 2026-03-04
+#: add_fragezeichen: Ist die Merler Straße weiterhin gesperrt?
+#: last_checked: 2026-05-06 (traffic)
 #: check_frequency: 90d
-#: next_check: 2026-05-08 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-05-08 (ex-VIZ-Verkehrsmeldung)
 Merler Weg	q4::inwork 18852,13269 19180,13219
 ',
          'from' => undef,
@@ -9359,9 +9360,9 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
        {
          'data' => '#: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,ex-re-T,W)
-#: osm_watch: way id="722008943" version="15"
-#: osm_watch: way id="722013098" version="15"
-#: osm_watch: way id="1350756367" version="4"
+#: osm_watch: way id="722008943" version="16"
+#: osm_watch: way id="722013098" version="16"
+#: osm_watch: way id="1350756367" version="5"
 #: osm_watch: note 5124809 1
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2026
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
@@ -9953,7 +9954,21 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: RUEDICKEN-2025
+#: also_indoor: traffic (ex-G[zu lang],ex-T[zu kurz])
+#: last_checked: 2026-05-06
+#: check_frequency: 30d
+#: next_check: 2026-06-30
+	q3::inwork 17264,17489 17392,17315 17422,17288 17481,17263
+#  REMOVED (hier fertig) ---	q3::inwork 17159,17631 17186,17593 17264,17489
+',
+         'from' => undef,
+         'id' => 4515,
+         'text' => 'Rüdickenstr.: Fahrbahn kann wegen Markierungsarbeiten gesperrt sein, schmaler Gehweg für Radfahrer frei, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => 1782856799
+       },
        undef,
        undef,
        {
@@ -10001,7 +10016,7 @@ Audre-Lorde-Str.	q4::inwork 12056,10642 12000,10531
 ',
          'from' => 1773529200,
          'id' => 4520,
-         'text' => 'Audre-Lorde-Str.: Bauarbeiten, Sperrung zwischen Waldemarstr. und Naunynstr., evtl. sind auch Radfahrer betroffen, vom 16.03.2026 bis 22.05.2026',
+         'text' => 'Audre-Lorde-Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Waldemarstr. und Naunynstr., vom 16.03.2026 bis 22.05.2026',
          'type' => 'handicap',
          'until' => 1779458400
        },
@@ -10089,14 +10104,15 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-05-2026-b102-ragwegsanierung-zwischen-moegelin-und-rathenow
 #: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 ',
          'from' => 1772924400,
          'id' => 4526,
-         'text' => 'Mögelin: Radwegsanierung, Sperrung des Radwegs vom 09.03.2026 bis Mitte Juli 2026',
+         'text' => 'Mögelin: Radwegsanierung, Sperrung des Radwegs voraussichtlich bis August 2026',
          'type' => 'gesperrt',
-         'until' => 1784311200
+         'until' => 1788213599
        },
        undef,
        {
@@ -10236,7 +10252,7 @@ Glaßbrennerstr.	q4::inwork 11543,16207 11632,16373
          'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2026
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645709.php
 #: by: https://www.berlin.de/imgscale2/9AuxRVefLWbbF7Yg6n-jfxJdZdY8R2b6JXZ86PSf0BA/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI2L21hcmdpbl8yMDAwXzEwMDBfZWUzY2E5ZGUzNWVkNzI0MjNmZDVmYTQ2ODBhY2VlNjZfc3RyYXNzZW5zcGVycnVuZy5wbmc.png
-#: osm_watch: note 5180232 1
+#: osm_watch: note 5180232 2
 #: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
 #: last_checked: 2026-05-04
@@ -10443,19 +10459,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'type' => 'handicap',
          'until' => 1778882399
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260316
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mhachhnv7c22
-#: source_id: LMS-BR:402040/72 viz2021:13.47949,52.51624,17.03.2026,07:00 (bis 28.04.2026) (bis 20.05.2026)
-#: note: 2026-04-19: keine Baugrube zu sehen, baldige Öffnung möglich
-	q4::inwork 15508,12367 15537,12367
-',
-         'from' => 1773702000,
-         'id' => 4560,
-         'text' => 'Normannenstr./Rathausstr.: Anbindung an die Möllendorffstr. gesperrt, bis Mitte Mai 2026',
-         'type' => 'handicap',
-         'until' => 1779314399
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:402038/72 viz2021:13.328819,52.485151,17.03.2026,07:00 (bis 08.06.2026)
 	q4::inwork 5498,8726 5347,8732
@@ -10797,14 +10801,15 @@ Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 183
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1659492.php (Absperrung "innerhalb der nächsten drei Wochen")
 #: osm_watch: way id="77503429" version="18"
-#: add_fragezeichen: Ist der Pankeweg bereits gesperrt?
+#: add_fragezeichen: Ist der Pankeweg noch immer gesperrt?
 #: priority: #A
-# REMOVED --- #: last_checked: 2026-04-08 (Pressemitteilung) --- #: check_frequency: 21d
-Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12235,20380 12216,20344 12154,20325 11995,19759
+#: last_checked: 2026-05-04 (mapillary)
+#: check_frequency: 30d
+Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,20344 12154,20325 12094,20110
 ',
          'from' => 1777410245,
          'id' => 4594,
-         'text' => 'Pankeweg an den Karpfenteichen: möglicherweise wegen Wegschäden gesperrt',
+         'text' => 'Pankeweg an den Karpfenteichen: offiziell wegen Wegschäden gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -10886,6 +10891,16 @@ Pankeweg an den Karpfenteichen: mögliche Sperrung	2::inwork 12235,20380 12216,20
          'text' => 'Gusow-Platkow: B167: Bahnübergang gesperrt, evtl. ist auch der Radverkehr betroffen, 08.05.2026 07:00 Uhr bis 14.05.2026 06:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1778731200
+       },
+       {
+         'data' => '#: note: laut VIZ-Meldung ist auch der Radverkehr betroffen
+	q4::inwork 31079,4336 31034,4148 31025,4116
+',
+         'from' => 1778018400,
+         'id' => 4602,
+         'text' => 'Grünheider Weg: Leitungsarbeiten zwischen Kalkbergeweg und Püttbergeweg, Sperrung, vom 7.5.2026 bis Ende Mai 2026',
+         'type' => 'handicap',
+         'until' => 1780264799
        }
      
 );

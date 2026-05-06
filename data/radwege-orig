@@ -1819,7 +1819,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-04-30 vvv
+#: last_checked: 2026-05-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1840,7 +1840,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="58"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-04-30 vvv
+#: last_checked: 2026-05-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -5300,24 +5300,43 @@ alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
 #: note: kurze Abschnitte mit Verbundsteinpflasterradweg
 Gehweg für Radfahrer frei	RW1; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017 15986,16922 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
 Gehweg für Radfahrer frei, die letzten 60 Meter sind benutzungspflichtig	RW1; 15662,16649 15437,16491
-	RW3; 15437,16491 15297,16321 15236,16241 15194,16186 15130,16098 14967,15885 14936,15857 14808,15788
-die letzten Meter werden als benutzungspflichtiger Radweg auf dem Hochbord geführt	RW3; 14808,15788 14653,15738
+	RW3; 15437,16491 15297,16321 15236,16241 15194,16186 15130,16098
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonry5ias2l
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260312
+#: source_id: LMS-BR:401373/72 viz2021:13.46805,52.5465,10.03.2026,07:00 viz2021:13.46805,52.5465, (vorbereitende Arbeiten, bis 13.03.2026) (Verengung, bis 31.12.2026)
+#: source_id[inactive]: bvg2024:259#HIM_FREETEXT_324670
+#: note: ab 13.03.2026 bis Ende 2026 wegen Fernwärmearbeiten Verengung und Verschwenkung
+#: note: zwischen Indira-Gandhi-Str. und Orankeweg ist die südliche Fahrbahn komplett gesperrt, Radfahrer Richtung Hohenschönhausen müssen zusammen mit Fußgängern den Hochbord benutzen, Richtung Westen auch, aber das ist zumindest am Orankeweg nicht ausgeschildert -> handicap ja/nein? q1? q2? -> erstmal nicht
+#: XXX später wiederherstellen:	RW3; 15130,16098 14967,15885 14936,15857 14808,15788
+#: XXX später wiederherstellen: die letzten Meter werden als benutzungspflichtiger Radweg auf dem Hochbord geführt	RW3; 14808,15788 14653,15738
+#: last_checked: 2026-05-06
+#: check_frequency: 60d
+#: next_check: 2026-12-31
+gemeinsamer Geh- und Radweg	RW2; 15130,16098 14967,15885 14936,15857 14808,15788 14653,15738
 # 
 #: note: Hansastr. Richtung NO
-die ersten Meter werden auf dem Hochbord geführt	RW3; 14653,15738 14808,15788
-	RW3; 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
+#: XXX später wiederherstellen: die ersten Meter werden auf dem Hochbord geführt	RW3; 14653,15738 14808,15788
+#: XXX später wiederherstellen:	RW3; 14808,15788 14936,15857 14967,15885
+#: last_checked: 2026-05-06
+#: check_frequency: 60d
+#: next_check: 2026-12-31
+gemeinsamer Geh- und Radweg	RW2; 14653,15738 14808,15788 14936,15857 14967,15885
+	RW3; 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
 Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
-	RW4; 15875,16816 15929,16870 15986,16922
+# XXX wegen Gleisbauarbeiten wieder aufgehoben	RW4; 15875,16816 15929,16870 15986,16922
+gemeinsamer Geh- und Radweg	RW1; 15875,16816 15929,16870 15986,16922
 #: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
-	RW4; 15986,16922 16139,17017
+# XXX wegen Gleisbauarbeiten wieder aufgehoben	RW4; 15986,16922 16139,17017
+gemeinsamer Geh- und Radweg	RW1; 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
-	RW4; 16139,17017 16296,17114 16318,17128 16352,17150
+# XXX wegen Gleisbauarbeiten wieder aufgehoben	RW4; 16139,17017 16296,17114 16318,17128 16352,17150
+gemeinsamer Geh- und Radweg	RW1; 16139,17017 16296,17114 16318,17128 16352,17150
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-03-07
-#: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-05-06
+# REMOVED --- #: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
 #: historical_note: während der Bauarbeiten (2025/2026): provisorischer gemeinsamer Geh- und Radweg, RW2;
-	RW0; 16352,17150 16460,17214
+gemeinsamer Geh- und Radweg	RW1; 16352,17150 16460,17214
 neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 	RW2; 16578,17285 16837,17440
 # 
@@ -5584,7 +5603,7 @@ neu asphaltiert	RW1; 17286,7173 17211,7280
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2026-03-07 vvv
+#: last_checked: 2026-05-06 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str., Richtung Westen
@@ -7926,7 +7945,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2026-04-28 vvv
+#: last_checked: 2026-05-05 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -7973,7 +7992,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-04-28 vvv
+#: last_checked: 2026-05-05 (mapillary) vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8179,7 +8198,7 @@ die ersten Meter mit Bürgersteigradweg	RW0; 14653,15738 14440,15682
 asphaltiert	RW1; -4098,13201 -4046,13177 -4017,13167
 	RW6;RW6 21409,11941 21411,11863 21456,11825
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/protokoll-fahrrat-am-08102024.pdf (Aufhebung des Benutzungspflicht?)
-#: last_checked: 2025-08-11 (mapillary)
+#: last_checked: 2026-05-06
 #: check_frequency: 270d
 asphaltiert	RW2;RW9 16594,22188 16678,22149 17073,21329
 asphaltiert	RW1;RW1 19363,3730 19125,3491

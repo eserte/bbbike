@@ -824,7 +824,7 @@ Diesterwegstr.: Kopfsteinpflaster	Q2 12060,15141 11995,15012
 Diesterwegstr.: Asphalt	Q0 11995,15012 11964,14962
 Diesterwegstr.: Kopfsteinpflaster	Q2 11964,14962 11864,14781
 Straﬂmannstr.: Kopfsteinpflaster	Q2 13530,13014 13741,13107 13835,13149
-Niederkirchnerstr.: Asphalt	Q0 8720,11226 9155,11283
+Niederkirchnerstr.: Asphalt	Q0 8720,11226 8833,11241 8938,11255 9155,11283
 Johanniterstr.: Asphalt	Q0 9837,10117 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
@@ -1028,7 +1028,7 @@ Weinapfelweg: Asphalt mit Sch‰den	Q1 13219,22689 13200,22766 13183,22817 13156,2
 Pankeweg: unbefestigte Straﬂe, relativ gut befahrbar	Q2 13110,22313 13206,22290
 Pankeweg: Kopfsteinpflaster	Q2 12578,20749 12505,20702
 Pankeweg: asphaltiert	Q0 12505,20702 12386,20636 12363,20582 12310,20523 12266,20467 12235,20380 12216,20344 12154,20325
-Pankeweg: asphaltiert, Wurzelsch‰den	Q1 12154,20325 11995,19759
+Pankeweg: asphaltiert, Wurzelsch‰den	Q1 12154,20325 12094,20110 11995,19759
 Pankeweg: asphaltiert	Q0 11995,19759 11907,19749
 Schloﬂallee: Asphalt, teilweise mit leichten Sch‰den	Q0 11883,19739 11730,19684 11472,19593 11312,19537 11268,19519 11236,19509
 Schloﬂallee: Parkweg, OK	Q1 11236,19509 11081,19456 10857,19379 10636,19289 10589,19275
@@ -5682,7 +5682,7 @@ Doberaner Str.: Beton	Q0 16358,18687 16233,18643
 Doberaner Str.: Asphalt	Q1 16233,18643 16164,18611 16144,18521 16167,18427 16196,18364
 Doberaner Str.: Beton	Q1 16196,18364 16315,18208 16335,18197
 An der Oskar-Schindler-Schule: Beton	Q0 16256,17651 16269,17759 16277,17830
-(Perler Str. - Darﬂer Str.): wassergebundene Decke	Q1 15851,17722 16256,17651 16358,17627 16761,17561
+(Perler Str. - Darﬂer Str.): wassergebundene Decke	Q1 15851,17722 16256,17651 16358,17627 16453,17611 16761,17561
 (entlang der ehemaligen NEB-Trasse): Asphalt	Q0 15821,17510 15814,17454 15839,17431 15939,17412 16141,17325 16146,17304 16229,17217 16296,17114
 (entlang der ehemaligen NEB-Trasse): Beton	Q0 16318,17128 16369,17042
 (entlang der ehemaligen NEB-Trasse): Asphalt	Q0 16369,17042 16402,16990
@@ -10634,7 +10634,8 @@ Clara-M¸ller-Jahnke-Str.: Betonpflaster	Q1 31971,3170 31799,3192 31800,3091 3181
 (Einkaufszentrum Lagunenweg - Parkweg): Verbundsteinpflaster	Q1 31650,3218 31660,3193
 (Parkweg): Asphalt	Q0 31762,3202 31747,3199 31700,3204 31660,3193 31658,3157 31683,3132 31707,3075 31751,3028 31800,2969 31948,2962
 (Falkenberger Str. - Piesporter Str., Wohngebietsstraﬂe): Verbundsteinpflaster	Q1 15370,16781 15362,16742 15350,16729
-B2: neu asphaltierter Radweg	Q0 15778,20350 15872,20496 15900,20531 16025,20631 16644,21042 16815,21156 17073,21329
+B2: asphaltiert mit teilweise erheblichen Wurzelhebungen	Q1; 15778,20350 15872,20496 15900,20531 16025,20631 16644,21042 16815,21156 17073,21329
+B2: aspaltiert mit einigen Wurzelhebungen	Q1; 17073,21329 16815,21156 16644,21042 16025,20631 15900,20531 15872,20496 15778,20350
 (Falkenberger Fuﬂsteig - Falkenberger Chaussee): wassergebundene Decke, teilweise mit Regensch‰den	Q1 18507,18541 18483,18433 18521,18347 18530,18327
 (Falkenberger Chaussee - Darﬂer Str.): Asphalt, etwas wellig	Q1 16938,17500 16848,17530
 (Falkenberger Chaussee - Darﬂer Str.): Beton	Q1 16848,17530 16825,17537 16785,17524
@@ -14259,10 +14260,10 @@ Eisenhammerweg: Kopfsteinpflaster	Q2 1640,19645 1606,19775
 Eisenhammerweg: Beton	Q0 1606,19775 1585,19862
 Eisenhammerweg: m‰ﬂiges Kopfsteinpflaster	Q2 1585,19862 1563,19960 1543,20060
 Eisenhammerweg: schlechtes Kopfsteinpflaster	Q3 1543,20060 1529,20131
-Wustrower Str.: guter Beton	Q0 16888,18610 17016,18436 17076,18355 17128,18281 17217,18165
+Wustrower Str.: Beton	Q1 16888,18610 17016,18436 17076,18355 17128,18281 17217,18165
 Wustrower Str.: Beton mit einigen Sch‰den	Q1 17217,18165 17341,17990
-Wustrower Str.: guter Beton	Q0 17341,17990 17289,17952 17100,17819 17015,17935
-Wustrower Str.: guter Beton	Q0 17289,17952 17356,17856
+Wustrower Str.: Beton	Q1 17341,17990 17289,17952 17100,17819 17015,17935
+Wustrower Str.: Beton	Q1 17289,17952 17356,17856
 Waldseeweg: m‰ﬂiges Kopfsteinpflaster	Q2 4256,23985 4237,23964 4128,23880 3985,23814
 Waldseeweg: m‰ﬂiges Kopfsteinpflaster	Q2 4237,23964 4240,23985
 Waldseeweg: Asphalt	Q0 3985,23814 3860,23767 3791,23730 3698,23657 3663,23608

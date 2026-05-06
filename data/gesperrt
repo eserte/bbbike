@@ -1059,6 +1059,7 @@ Marienfelder Allee: Radweg nur in eine Richtung	1 7706,541 7668,471
 Mittelstreifen mit niedrigem Geländer, Ketten am Hochbord	3nocross::ignrte 3291,12721 3275,12667 3269,12648 3271,12609
 Luisenpl. -> Schloßpark Charlottenburg: Mittelstreifen mit niedrigem Geländer, Ketten am Hochbord	3::igndisp 3269,12648 3275,12667 3261,12670
 Schloßpark Charlottenburg -> Luisenpl.: Mittelstreifen mit niedrigem Geländer, Ketten am Hochbord	3::igndisp 3261,12670 3275,12667 3291,12721
+Margot-Friedländer-Platz	1 8833,11241 8830,11264 8935,11277 8938,11255
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3572,6 +3573,9 @@ Schwingtor	BNP:5:-27:trailer=10 11543,20272
 Drängelgitter	BNP:3:-248:trailer=10 113,7
 Drängelgitter	BNP:3:-68:trailer=10 17498,9714
 Schwingtor	BNP:5:-191:trailer=10 4183,13725
+Überqueren wegen Bauarbeiten nicht möglich	3nocross::ignrte::inwork 14771,14048 14871,14087 14954,14119
+Landsberger Allee -> Anton-Saefkow-Pl.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 14954,14119 14871,14087 14903,14003
+Anton-Saefkow-Pl. -> Landsberger Allee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 14903,14003 14871,14087 14771,14048
 Baustraße im Zeuthener Winkel: wird als öffentliche Straße neu gebaut	2::inwork 25345,-4806 25183,-4565 25042,-4334
 Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,11888

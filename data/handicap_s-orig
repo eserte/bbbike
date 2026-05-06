@@ -50,7 +50,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-04-30 vvv
+#: last_checked: 2026-05-06 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="13"
@@ -1238,12 +1238,13 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
 #: osm_watch: way id="1275438996" version="3"
 # REMOVED --- #: osm_watch: way id="1262014804" version="1"
-#: osm_watch: note 4126168 4
+#: osm_watch: note 4126168 5
 #: osm_watch[closed]: note 4126169 1
 #: priority: #C
-#: last_checked: 2026-03-07 (mapillary)
-#: check_frequency: 120d
-#: next_check: 2026-04-30 (Halteverbotsschilder)
+#: last_checked: 2026-05-06
+#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2026-04-30 (Halteverbotsschilder)
 Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1053645.php (25. Februar 2021 - 16. April 2021) --- #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/bauarbeiten-kreuzung-gesperrt_a301644 --- #: source_id: 2147346907 (bis 16.4.2021) --- #: last_checked: 2021-03-25 (mapillary) vvv --- #: next_check: 2021-04-16 vvv --- #: valid: -20210416 vvv --- Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15856,14915 15944,14836 16033,14756 --- Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15878,14761 15944,14836 15977,14871 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
