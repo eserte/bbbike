@@ -226,61 +226,7 @@ for my $station (sort {$a<=>$b} keys %stations) {
 	}
     }
     if ($adjust_by_precip && $this_res->{date} && defined $this_res->{BF10}) {
-	my $precip_station = sprintf("%05d", $station);
-	my $sum_precip = 0;
-	my $precip_file = "$soil_dwd_dir/precip/precip_now_${precip_station}.zip";
-	if (-e $precip_file) {
-	    my $u = IO::Uncompress::Unzip->new($precip_file)
-		or die "Can't open $precip_file: $UnzipError";
-	    do {
-		my $header_info = $u->getHeaderInfo;
-		my $name = $header_info ? $header_info->{Name} : undef;
-		if ($name && $name =~ /^produkt_zehn_now_rr_.*\.txt$/) {
-		    my $header_line = <$u>;
-		    my @cols = split /;/, $header_line;
-		    my $date_idx;
-		    my $precip_idx;
-		    for my $i (0 .. $#cols) {
-			my $col = $cols[$i];
-			$col =~ s/^\s+|\s+$//g;
-			$date_idx = $i if $col eq 'MESS_DATUM';
-			$precip_idx = $i if $col eq 'RWS_10';
-		    }
-		    if (defined $date_idx && defined $precip_idx) {
-			# soil date is YYYYMMDD, 10min is YYYYMMDDHHMM
-			my $soil_date_limit = $this_res->{date} . "2359";
-			while (<$u>) {
-			    my @f = split /;/, $_;
-			    my $m_date = $f[$date_idx];
-			    if (defined $m_date) {
-				$m_date =~ s/^\s+|\s+$//g;
-				if ($m_date ne "" && $m_date > $soil_date_limit) {
-				    my $val = $f[$precip_idx];
-				    $val =~ s/^\s+|\s+$//g;
-				    if ($val >= 0) {
-					$sum_precip += $val;
-				    }
-				}
-			    }
-			}
-		    }
-		    last;
-		}
-	    } while ($u->nextStream);
-	}
-	if ($sum_precip > 0) {
-	    my $adjustment = int($sum_precip * $precip_factor + 0.5);
-	    my $old_bf10 = $this_res->{BF10};
-	    $this_res->{BF10} += $adjustment;
-	    if ($this_res->{BF10} > $precip_max) {
-		$this_res->{BF10} = $precip_max;
-	    }
-	    if ($as eq 'text') {
-		printf "  (adjusted by precip: %.1fmm * %.1f -> %d -> %d)\n", $sum_precip, $precip_factor, $adjustment, $this_res->{BF10};
-	    }
-	    $this_res->{precip_sum} = $sum_precip;
-	    $this_res->{bf10_old} = $old_bf10;
-	}
+	adjust_by_precip($this_res, $station);
     }
 
     if ($as ne 'text') {
@@ -293,6 +239,66 @@ if ($as eq 'json') {
 } elsif ($as eq 'mapping') {
     my $bf10_mapping = join(',', map { $_->{station_id}.':'.$_->{BF10} } grep { defined $_->{BF10} } values %$res);
     print $bf10_mapping;
+}
+
+sub adjust_by_precip {
+    my($this_res, $station) = @_;
+
+    my $precip_station = sprintf("%05d", $station);
+    my $sum_precip = 0;
+    my $precip_file = "$soil_dwd_dir/precip/precip_now_${precip_station}.zip";
+    if (-e $precip_file) {
+	my $u = IO::Uncompress::Unzip->new($precip_file)
+	    or die "Can't open $precip_file: $UnzipError";
+	do {
+	    my $header_info = $u->getHeaderInfo;
+	    my $name = $header_info ? $header_info->{Name} : undef;
+	    if ($name && $name =~ /^produkt_zehn_now_rr_.*\.txt$/) {
+		my $header_line = <$u>;
+		my @cols = split /;/, $header_line;
+		my $date_idx;
+		my $precip_idx;
+		for my $i (0 .. $#cols) {
+		    my $col = $cols[$i];
+		    $col =~ s/^\s+|\s+$//g;
+		    $date_idx = $i if $col eq 'MESS_DATUM';
+		    $precip_idx = $i if $col eq 'RWS_10';
+		}
+		if (defined $date_idx && defined $precip_idx) {
+		    # soil date is YYYYMMDD, 10min is YYYYMMDDHHMM
+		    my $soil_date_limit = $this_res->{date} . "2359";
+		    while (<$u>) {
+			my @f = split /;/, $_;
+			my $m_date = $f[$date_idx];
+			if (defined $m_date) {
+			    $m_date =~ s/^\s+|\s+$//g;
+			    if ($m_date ne "" && $m_date > $soil_date_limit) {
+				my $val = $f[$precip_idx];
+				$val =~ s/^\s+|\s+$//g;
+				if ($val >= 0) {
+				    $sum_precip += $val;
+				}
+			    }
+			}
+		    }
+		}
+		last;
+	    }
+	} while ($u->nextStream);
+    }
+    if ($sum_precip > 0) {
+	my $adjustment = int($sum_precip * $precip_factor + 0.5);
+	my $old_bf10 = $this_res->{BF10};
+	$this_res->{BF10} += $adjustment;
+	if ($this_res->{BF10} > $precip_max) {
+	    $this_res->{BF10} = $precip_max;
+	}
+	if ($as eq 'text') {
+	    printf "  (adjusted by precip: %.1fmm * %.1f -> %d -> %d)\n", $sum_precip, $precip_factor, $adjustment, $this_res->{BF10};
+	}
+	$this_res->{precip_sum} = $sum_precip;
+	$this_res->{bf10_old} = $old_bf10;
+    }
 }
 
 __END__
