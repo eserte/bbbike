@@ -1092,7 +1092,7 @@ EOF
 sub prepare_mudways_prognosis {
     require JSON::PP;
 
-    my @cmd = ($^X, "$bbbike_rootdir/miscsrc/dwd-soil-update.pl", '-q', '--as', 'mapping');
+    my @cmd = ($^X, "$bbbike_rootdir/miscsrc/dwd-soil-update.pl", '-q', '--as', 'mapping'); # XXX maybe add: '--adjust-by-precip'
     open my $fh, '-|', @cmd;
     my $bf10_mapping = do { local $/; <$fh> };
     if (!$bf10_mapping) {

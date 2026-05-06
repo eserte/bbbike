@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -41,13 +41,22 @@ my $q;
 my $soil_dwd_dir;
 my $for_date;
 my $as = 'text';
+my $adjust_by_precip;
+my $precip_factor = 2.0; # +2% nFK per 1mm rain.
+                         # This heuristic factor is based on an assumed field
+                         # capacity of ~25mm for the top 10cm of soil (1/25 = 4%),
+                         # but halved to account for evaporation, runoff etc.
+                         # Note that the soil moisture values (BF10) are
+                         # given in % nFK (usable field capacity).
+my $precip_max = 120;
 GetOptions(
     "q|quiet" => \$q,
     "soil-dwd-dir=s" => \$soil_dwd_dir,
     "date=s" => \$for_date,
     "as=s" => \$as,
+    "adjust-by-precip" => \$adjust_by_precip,
 )
-    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json|mapping]\n";
+    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json|mapping] [--adjust-by-precip]\n";
 
 $as =~ m{^(text|json|mapping)$}
     or die "--as can only be text (default) or json or mapping\n";
@@ -66,11 +75,11 @@ if (bbbike_aux_dir) {
     $soil_dwd_dir = bbbike_aux_dir . "/data/soil_dwd";
 } else {
     $soil_dwd_dir = bbbike_root . "/tmp/soil_dwd";
-    for my $subdir (qw(recent historical)) {
-	if (!-d "$soil_dwd_dir/$subdir") {
-	    warn "INFO: create $soil_dwd_dir/$subdir directory...";
-	    make_path "$soil_dwd_dir/$subdir";
-	}
+}
+for my $subdir (qw(recent historical precip)) {
+    if (!-d "$soil_dwd_dir/$subdir") {
+	warn "INFO: create $soil_dwd_dir/$subdir directory...";
+	make_path "$soil_dwd_dir/$subdir";
     }
 }
 
@@ -143,6 +152,10 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
 }
 $pm and $pm->wait_all_children;
 
+if ($adjust_by_precip) {
+    fetch_precip_data();
+}
+
 my $res;
 
 # Note:
@@ -177,26 +190,31 @@ for my $station (sort {$a<=>$b} keys %stations) {
 	$this_res->{station_name} = $stations{$station};
     }
     if (!$got_line) {
-	if ($as ne 'text') {
-	    if (defined $for_date) {
-		$this_res->{date} = $for_date;
-	    }
-	    $this_res->{BF10} = undef;
-	} else {
-	    printf "%-12s: no data\n", $station_id;
+	if (defined $for_date) {
+	    $this_res->{date} = $for_date;
 	}
+	$this_res->{BF10} = undef;
     } else {
 	my @f = split /;/, $got_line;
 	my $date = $f[$date_index];
 	my $bf10 = $f[$bf_index];
-	if ($as ne 'text') {
-	    $this_res->{date} = $date;
-	    $bf10 =~ s{\s+}{}g; $bf10 += 0;
-	    $this_res->{BF10} = $bf10;
+	$date =~ s{\s+}{}g;
+	$bf10 =~ s{\s+}{}g; $bf10 += 0;
+	$this_res->{date} = $date;
+	$this_res->{BF10} = $bf10;
+    }
+
+    if ($as eq 'text') {
+	if (!defined $this_res->{BF10}) {
+	    printf "%-12s: no data\n", $station_id;
 	} else {
-	    printf "%-12s: %s %s\n", $station_id, $date, $bf10;
+	    printf "%-12s: %s %s\n", $station_id, $this_res->{date}, $this_res->{BF10};
 	}
     }
+    if ($adjust_by_precip && $this_res->{date} && defined $this_res->{BF10}) {
+	adjust_by_precip($this_res, $station);
+    }
+
     if ($as ne 'text') {
 	$res->{$station} = $this_res;
     }
@@ -207,6 +225,91 @@ if ($as eq 'json') {
 } elsif ($as eq 'mapping') {
     my $bf10_mapping = join(',', map { $_->{station_id}.':'.$_->{BF10} } grep { defined $_->{BF10} } values %$res);
     print $bf10_mapping;
+}
+
+sub fetch_precip_data {
+    # note: this directory may be gitignored for now
+    my $precip_dir = "$soil_dwd_dir/precip";
+    FETCH_PRECIP_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
+	my $pid = $pm and $pm->start and next FETCH_PRECIP_LOOP;
+	warn "INFO: update precipitation for station $station ($stations{$station})...\n" unless $q;
+	my $precip_station = sprintf("%05d", $station);
+	my $url = "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/now/10minutenwerte_nieder_${precip_station}_now.zip";
+	my $target = "$precip_dir/precip_now_${precip_station}.zip";
+	my $resp = $ua->mirror($url, $target);
+	if ($resp->code == 404) {
+	    warn "$url does not exist (404), skipping station $station...\n" unless $q;
+	} elsif ($resp->code >= 400) {
+	    die "Mirroring $url failed: " . $resp->dump;
+	}
+	$pm and $pm->finish;
+    }
+    $pm and $pm->wait_all_children;
+}
+
+sub adjust_by_precip {
+    my($this_res, $station) = @_;
+
+    my $precip_station = sprintf("%05d", $station);
+    my $sum_precip = 0;
+    my $precip_file = "$soil_dwd_dir/precip/precip_now_${precip_station}.zip";
+    if (-e $precip_file) {
+	require IO::Uncompress::Unzip;
+	my $u = IO::Uncompress::Unzip->new($precip_file)
+	    or do {
+		no warnings 'once';
+		die "Can't open $precip_file: $IO::Uncompress::UnzipError";
+	    };
+	while (1) {
+	    my $header_info = $u->getHeaderInfo;
+	    my $name = $header_info ? $header_info->{Name} : undef;
+	    if ($name && $name =~ /^produkt_zehn_now_rr_.*\.txt$/) {
+		my $header_line = <$u>;
+		my @cols = split /;/, $header_line;
+		my $date_idx;
+		my $precip_idx;
+		for my $i (0 .. $#cols) {
+		    my $col = $cols[$i];
+		    $col =~ s/^\s+|\s+$//g;
+		    $date_idx = $i if $col eq 'MESS_DATUM';
+		    $precip_idx = $i if $col eq 'RWS_10';
+		}
+		if (defined $date_idx && defined $precip_idx) {
+		    # soil date is YYYYMMDD, 10min is YYYYMMDDHHMM
+		    my $soil_date_limit = $this_res->{date} . "2359";
+		    while (<$u>) {
+			my @f = split /;/, $_;
+			my $m_date = $f[$date_idx];
+			if (defined $m_date) {
+			    $m_date =~ s/^\s+|\s+$//g;
+			    if ($m_date ne "" && $m_date > $soil_date_limit) {
+				my $val = $f[$precip_idx];
+				$val =~ s/^\s+|\s+$//g;
+				if ($val >= 0) {
+				    $sum_precip += $val;
+				}
+			    }
+			}
+		    }
+		}
+		last;
+	    }
+	    last if !$u->nextStream;
+	}
+    }
+    if ($sum_precip > 0) {
+	my $adjustment = int($sum_precip * $precip_factor + 0.5);
+	my $old_bf10 = $this_res->{BF10};
+	$this_res->{BF10} += $adjustment;
+	if ($this_res->{BF10} > $precip_max) {
+	    $this_res->{BF10} = $precip_max;
+	}
+	if ($as eq 'text') {
+	    printf "  (adjusted by precip: %.1fmm * %.1f -> %d -> %d)\n", $sum_precip, $precip_factor, $adjustment, $this_res->{BF10};
+	}
+	$this_res->{precip_sum} = $sum_precip;
+	$this_res->{bf10_old} = $old_bf10;
+    }
 }
 
 __END__
