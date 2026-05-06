@@ -34,14 +34,6 @@ my %stations = qw(
     427 Schoenefeld
     433 Tempelhof
 );
-# Mapping to 5-digit station IDs for hourly precipitation data
-my %precip_stations = qw(
-    400 00400
-    403 00403
-    420 00420
-    427 00427
-    433 00433
-);
 # There's also
 #    430 Tegel
 # but observations stopped at 20210502.
@@ -51,9 +43,10 @@ my $soil_dwd_dir;
 my $for_date;
 my $as = 'text';
 my $adjust_by_precip;
-my $precip_factor = 4.0; # +4% nFK per 1mm rain.
+my $precip_factor = 2.0; # +2% nFK per 1mm rain.
                          # This heuristic factor is based on an assumed field
-                         # capacity of ~25mm for the top 10cm of soil (1/25 = 4%).
+                         # capacity of ~25mm for the top 10cm of soil (1/25 = 4%),
+                         # but halved to account for evaporation, runoff etc.
                          # Note that the soil moisture values (BF10) are
                          # given in % nFK (usable field capacity).
 my $precip_max = 120;
@@ -63,10 +56,8 @@ GetOptions(
     "date=s" => \$for_date,
     "as=s" => \$as,
     "adjust-by-precip" => \$adjust_by_precip,
-    "precip-factor=f" => \$precip_factor,
-    "precip-max=i" => \$precip_max,
 )
-    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json|mapping] [--adjust-by-precip] [--precip-factor factor] [--precip-max max_bf10]\n";
+    or die "usage: $0 [-q] [--soil-dwd-dir /path/to/directory] [--date YYYY-MM-DD] [--as text|json|mapping] [--adjust-by-precip]\n";
 
 $as =~ m{^(text|json|mapping)$}
     or die "--as can only be text (default) or json or mapping\n";
@@ -165,21 +156,15 @@ $pm and $pm->wait_all_children;
 if ($adjust_by_precip) {
     my $precip_dir = "$soil_dwd_dir/precip";
     FETCH_PRECIP_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
-	my $precip_station = $precip_stations{$station};
-	next if !$precip_station;
-
 	my $pid = $pm and $pm->start and next FETCH_PRECIP_LOOP;
 	warn "INFO: update precipitation for station $station ($stations{$station})...\n" unless $q;
-	for my $type (qw(hourly 10min)) {
-	    my $url = ($type eq 'hourly')
-		? "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/recent/stundenwerte_RR_${precip_station}_akt.zip"
-		: "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/now/10minutenwerte_nieder_${precip_station}_now.zip";
-	    my $target = "$precip_dir/precip_${type}_${precip_station}.zip";
-	    my $resp = $ua->mirror($url, $target);
-	    # 404 is acceptable for 'now' files
-	    $resp->code < 400 || ($type eq '10min' && $resp->code == 404)
-		or die "Mirroring $url failed: " . $resp->dump;
-	}
+	my $precip_station = sprintf("%05d", $station);
+	my $url = "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/now/10minutenwerte_nieder_${precip_station}_now.zip";
+	my $target = "$precip_dir/precip_now_${precip_station}.zip";
+	my $resp = $ua->mirror($url, $target);
+	# 404 is acceptable for 'now' files
+	$resp->code < 400 || $resp->code == 404
+	    or die "Mirroring $url failed: " . $resp->dump;
 	$pm and $pm->finish;
     }
     $pm and $pm->wait_all_children;
@@ -241,55 +226,48 @@ for my $station (sort {$a<=>$b} keys %stations) {
 	}
     }
     if ($adjust_by_precip && $this_res->{date} && defined $this_res->{BF10}) {
-	my $precip_station = $precip_stations{$station};
-	my %precip_by_10min;
-	for my $type (qw(hourly 10min)) {
-	    my $precip_file = "$soil_dwd_dir/precip/precip_${type}_${precip_station}.zip";
-	    if (-e $precip_file) {
-		my $u = IO::Uncompress::Unzip->new($precip_file)
-		    or die "Can't open $precip_file: $UnzipError";
-		while (my $status = $u->nextStream) {
-		    my $name = $u->getHeaderInfo->{Name};
-		    if ($name =~ /^produkt_(rr_stunde|zehn_now_rr)_.*\.txt$/) {
-			my $header = <$u>;
-			my @cols = split /;/, $header;
-			my $date_idx;
-			my $precip_idx;
-			for my $i (0 .. $#cols) {
-			    my $col = $cols[$i];
-			    $col =~ s/^\s+|\s+$//g;
-			    $date_idx = $i if $col eq 'MESS_DATUM';
-			    $precip_idx = $i if $col =~ /^(R1|RWS_10)$/;
-			}
-			if (defined $date_idx && defined $precip_idx) {
-			    # soil date is YYYYMMDD, hourly date is YYYYMMDDHH, 10min is YYYYMMDDHHMM
-			    my $soil_date_limit = $this_res->{date} . "23" . ($type eq '10min' ? "59" : "");
-			    while (<$u>) {
-				my @f = split /;/, $_;
-				my $m_date = $f[$date_idx];
+	my $precip_station = sprintf("%05d", $station);
+	my $sum_precip = 0;
+	my $precip_file = "$soil_dwd_dir/precip/precip_now_${precip_station}.zip";
+	if (-e $precip_file) {
+	    my $u = IO::Uncompress::Unzip->new($precip_file)
+		or die "Can't open $precip_file: $UnzipError";
+	    do {
+		my $header_info = $u->getHeaderInfo;
+		my $name = $header_info ? $header_info->{Name} : undef;
+		if ($name && $name =~ /^produkt_zehn_now_rr_.*\.txt$/) {
+		    my $header_line = <$u>;
+		    my @cols = split /;/, $header_line;
+		    my $date_idx;
+		    my $precip_idx;
+		    for my $i (0 .. $#cols) {
+			my $col = $cols[$i];
+			$col =~ s/^\s+|\s+$//g;
+			$date_idx = $i if $col eq 'MESS_DATUM';
+			$precip_idx = $i if $col eq 'RWS_10';
+		    }
+		    if (defined $date_idx && defined $precip_idx) {
+			# soil date is YYYYMMDD, 10min is YYYYMMDDHHMM
+			my $soil_date_limit = $this_res->{date} . "2359";
+			while (<$u>) {
+			    my @f = split /;/, $_;
+			    my $m_date = $f[$date_idx];
+			    if (defined $m_date) {
 				$m_date =~ s/^\s+|\s+$//g;
-				if ($m_date > $soil_date_limit) {
+				if ($m_date ne "" && $m_date > $soil_date_limit) {
 				    my $val = $f[$precip_idx];
 				    $val =~ s/^\s+|\s+$//g;
 				    if ($val >= 0) {
-					if ($type eq 'hourly') {
-					    for my $mm (qw(00 10 20 30 40 50)) {
-						$precip_by_10min{$m_date . $mm} = $val / 6;
-					    }
-					} else {
-					    $precip_by_10min{$m_date} = $val;
-					}
+					$sum_precip += $val;
 				    }
 				}
 			    }
 			}
-			last;
 		    }
+		    last;
 		}
-	    }
+	    } while ($u->nextStream);
 	}
-	my $sum_precip = 0;
-	$sum_precip += $_ for values %precip_by_10min;
 	if ($sum_precip > 0) {
 	    my $adjustment = int($sum_precip * $precip_factor + 0.5);
 	    my $old_bf10 = $this_res->{BF10};
