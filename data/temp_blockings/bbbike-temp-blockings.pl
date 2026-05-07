@@ -22644,7 +22644,7 @@ EOF
 #: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024) (inaktiv)
 #: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
 #: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
-#: source_id: LMS-BR:407312/72 viz2021:13.33123,52.50383,06.05.2026,12:00 (bis 11.05.2026)
+#: source_id: LMS-BR:407312/72 viz2021:13.33123,52.50383,06.05.2026,12:00 (bis 11.05.2026) (vorfristig inaktiv)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -29186,7 +29186,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-04-08
+#: last_checked: 2026-05-07
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -38093,7 +38093,7 @@ EOF
 #: by: https://az-lichtenrade.de/wp-content/uploads/2025/07/Screenshot-2025-07-07-095708-800x567.png
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu2kux6y6n27
 #: by: https://fahrinfo.vbb.de/him-uploads/1753173224127_Kartenausschnitt_Bahnhofstr.png
-#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/ (für Radfahrer keine Einbahnstraßenregelung in der Goltzstr.) (Feb 2026: Stillstand)
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/ (für Radfahrer keine Einbahnstraßenregelung in der Goltzstr.) (Feb 2026: Stillstand) (Straßenbau beginnt ab Mitte September 2026)
 #: by: https://az-lichtenrade.de/wp-content/uploads/2026/03/26-03-04_Umleitungsplan-ab-0326.png
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
@@ -42452,11 +42452,12 @@ EOF
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-in-berlin-prenzlauer-berg-neuer-endtermin-steht--wird-er-diesmal-wirklich-eingehalten-15569872.html (voraussichtlich bis Juni 2027)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), meistens nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15, 2026-03-02). Radfahrer benutzen hier die Fahrbahn.
 #: last_checked: 2026-04-12 (osm) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
-#: next_check: 2027-03-31 (Tsp) vvv
+#: next_check: 2027-06-30 (Tsp) vvv
 Schönhauser Allee: Radspur gesperrt	q4::inwork; 10908,13978 10933,14122
 #: note: früher wurde man zur nördlichen Fußgängerampel geführt, aber mittlerweile ist hier auch gesperrt, Umweg zur nächsten Überquerungsmöglichkeit mindestens 2x 135m; besser den linken Gehweg benutzen
 Metzer Str.: Fahrbahn gesperrt	q4::inwork; 11006,14087 10933,14122
@@ -43710,11 +43711,12 @@ Gipsstr., etwa 30-40m	q3::inwork 10341,13376 10199,13446
 #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-16 00:00:00"), # 1730782800, # 2024-11-05 06:00, # 1705899600, # 2024-01-22 06:00
-       until => 1766179538, # $isodate2epoch->("2025-12-19 23:59:59"), # $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
+     { from  => $isodate2epoch->("2026-05-07 00:00:00"), # $isodate2epoch->("2025-11-16 00:00:00"), # 1730782800, # 2024-11-05 06:00, # 1705899600, # 2024-01-22 06:00
+       until => $isodate2epoch->("2026-05-22 23:59:59"), # 1766179538, # $isodate2epoch->("2025-12-19 23:59:59"), # $isodate2epoch->("2025-11-21 23:59:59"), # 1730998800, # 2024-11-07 18:00, # 1706115600, # 2024-01-24 18:00
 #      text  => 'Gürtelstr.: Kraneinsatz zwischen Wiesenweg und Weserstr., Sperrung der Fahrbahn, vom 23.01.2024 06:00 bis 24.01.2024 18:00',
 #      text  => 'Gürtelstr.: Kranabbau zwischen Weserstr. und Wiesenweg, Sperrung der Fahrbahn, vom 06.11.2024 06:00 bis 07.11.2024 18:00',
-       text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 19.12.2025',
+#      text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 17.11.2025 bis 19.12.2025',
+       text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 08.05.2026 bis 22.05.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
@@ -43725,15 +43727,17 @@ EOF
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260507
 #: osm_watch: way id="490912373" version="18"
 #: osm_watch: way id="1113567086" version="8"
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
 #: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Ausnahmeregelung für Radfahrer
+#: XXX wie sehr ist der Radverkehr bei der 05/2026er-Sperrung betroffen?
+#: next_check: 2026-05-08
+	q4::inwork 15016,11431 14945,11300
 # REMOVED (frühere Sperrung) ---	q4::inwork 15055,11505 15016,11431
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
-# REMOVED --- #: next_check: 2025-11-17
-	q4::inwork 15016,11431 14945,11300
 EOF
      },
      { from  => 1706223600, # 2024-01-26 00:00
@@ -45292,7 +45296,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-05-04 vvv
+#: last_checked: 2026-05-07 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -51391,7 +51395,8 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
-#: last_checked: 2026-05-02 (Absperrung nur noch etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße)
+#: note: zurzeit noch Absperrung mit nur etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße
+#: last_checked: 2026-05-05 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -51904,6 +51909,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
 #: osm_watch[closed]: note 4953642 2
+#: source_id: LMS-BR:407366/72 viz2021:13.45315,52.52627,06.05.2026,20:00 (Kraneinsatz, bis 08.05.2026)
 #: last_checked: 2026-04-04 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
@@ -52057,6 +52063,7 @@ EOF
 #: by: https://www.berliner-zeitung.de/news/prenzlauer-berg-dunckerbruecke-ab-april-gesperrt-li.10027810
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/fehlende-akzeptanz-fur-vollsperrung-wie-gefahrlich-ist-der-illegale-verkehr-auf-dieser-maroden-berliner-ringbahnbrucke-15471271.html
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=796123#post796123
+#: by: https://www.entwicklungsstadt.de/ersatzneubau-in-prenzlauer-berg-so-laufen-die-arbeiten-an-der-dunckerbruecke/
 #: source_id: LMS-BR:403521/72 viz2021:13.42326,52.54529,01.04.2026,07:00 (bis 14.06.2028)
 #: osm_watch: note 5163943 2
 #: XXX: Dunckerbrücke: Ersatzneubau
@@ -52924,11 +52931,12 @@ EOF
 EOF
      },
      { from  => 1778018400, # 2026-05-06 00:00
-       until => 1780264799, # 2026-05-31 23:59
-       text  => 'Grünheider Weg: Leitungsarbeiten zwischen Kalkbergeweg und Püttbergeweg, Sperrung, vom 7.5.2026 bis Ende Mai 2026',
+       until => $isodate2epoch->("2026-05-22 23:59:59"),
+       text  => 'Grünheider Weg: Leitungsarbeiten zwischen Kalkbergeweg und Püttbergeweg, Sperrung, vom 7.5.2026 bis 22.5.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: note: laut VIZ-Meldung ist auch der Radverkehr betroffen
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mlafautksk2d (auch der Radverkehr ist betroffen)
+#: source_id: LMS-BR:407407/72 viz2021:13.70503,52.43953,07.05.2026,07:00 (bis 22.05.2026)
 	q4::inwork 31079,4336 31034,4148 31025,4116
 EOF
      },

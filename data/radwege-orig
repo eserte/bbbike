@@ -3166,7 +3166,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-05-04 vvv
+#: last_checked: 2026-05-07 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -4815,7 +4815,14 @@ Verbundsteinpflaster	RW2; -4647,12269 -4903,12055
 	RW1;RW1 -4903,12055 -5022,11934
 	RW1;RW1 -5022,11934 -5184,11725 -5399,11426
 	RW2;RW2 -3824,13350 -3836,13310 -3896,13124 -3923,13060
-	RW1;RW1 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4304,12562 -4351,12460 -4365,12358 -4412,12179
+	RW1; -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4304,12562 -4351,12460 -4365,12358 -4412,12179
+	RW1; -4412,12179 -4365,12358 -4351,12460
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neue-radwege-neue-parkplatze-so-soll-die-fahrrad-infrastruktur-in-spandau-verbessert-werden-15558784.html (in Planung)
+#: XXX Gehwegplatten sollen durch Asphalt ersetzt werden, Verbreiterung auf 2,5m
+#: last_checked: 2026-05-06 (Tsp)
+#: check_frequency: 120d
+	RW1; -4351,12460 -4304,12562 -4239,12626
+	RW1; -4239,12626 -4180,12690 -4119,12763 -4063,12842 -4008,12916 -3967,12976 -3923,13060
 	RW1;RW1 2695,7082 2535,7257
 	RW3;RW3 2535,7257 2375,7440 2213,7637
 	RW1;RW3 2213,7637 2169,7690 2112,7754
@@ -7202,7 +7209,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-04-22 (mapillary) vvv
+#: last_checked: 2026-05-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -8452,7 +8459,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-05-02
+#: last_checked: 2026-05-07
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456

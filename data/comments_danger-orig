@@ -48,12 +48,12 @@ Ahrensfelder Chaussee: hohe Bordsteinkante am Ende des Radwegs	CS::danger; 21332
 # REMOVED --- #: check_frequency: 60d
 # REMOVED --- Karl-Marx-Str. hinter Walterstr.: typischerweise parkende Autos auf der provisorischen Radspur	CS::danger; 13121,6689 13141,6651
 # 
-#: next_check_id: MAERKISCHESMUSEUM-2026
-#: XXX 2026-04-30: der Bürgersteig daneben hat eine Asphaltschicht bekommen: wird etwa die Fahrbahn komplett gesperrt und der Radverkehr auf den Hochbord verlegt?
-#: last_checked: 2026-04-30
-#: check_frequency: 14d
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2027-06-30 (entwicklungsstadt)
-Wallstr. (Mitte): Bauarbeiten in Kurve, mögliche Engstellen	CS::danger 11160,12071 11111,12027 11054,11992
+# REMOVED (-> siehe handicap_s-orig-Eintrag) --- #: next_check_id: MAERKISCHESMUSEUM-2026
+# REMOVED --- #: XXX 2026-04-30: der Bürgersteig daneben hat eine Asphaltschicht bekommen: wird etwa die Fahrbahn komplett gesperrt und der Radverkehr auf den Hochbord verlegt?
+# REMOVED --- #: last_checked: 2026-04-30
+# REMOVED --- #: check_frequency: 14d
+# REMOVED --- # REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
+# REMOVED --- Wallstr. (Mitte): Bauarbeiten in Kurve, mögliche Engstellen	CS::danger 11160,12071 11111,12027 11054,11992
 # 
 #: temporary ^^^

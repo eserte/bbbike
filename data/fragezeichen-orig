@@ -1534,6 +1534,7 @@ Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/217 (Sanierung und Verbreiterung auf 2m)
 #: by: https://twitter.com/VIZ_Berlin/status/1467735807180091392
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neue-radwege-neue-parkplatze-so-soll-die-fahrrad-infrastruktur-in-spandau-verbessert-werden-15558784.html (zwischen Ruhwaldweg und Wiesendamm, "Radfahrstreifen", Straßenseite nicht spezifiziert, bis 4. Quartal 2026)
 #: source_id: viz2021:13.254609,52.522683,06.12.2021,07:00 (Umbauarbeiten am Radweg, zwischen Meiningenallee und Reichsstr.) (bis 30.4.2022) (bis 13.7.2022) (bis 16.8.2022) (bis 19.8.2022) (inaktiv)
 #: source_id: viz2021:13.247458,52.524598,15.08.2022,07:00 (Kanalarbeiten an der Einmündung Wiesendamm, haben diese was mit dem Radweg zu tun?) (bis 16.9.2022) (inaktiv)
 #: last_checked: 2026-04-12 vvv
@@ -1541,6 +1542,7 @@ Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361
 # REMOVED --- #: next_check: 2022-08-19 vvv
 Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected 795,12652 655,12690 546,12720 533,12724 425,12755
 # REMOVED (realisiert) --- Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected 228,12812 99,12849 -78,12926
+#: next_check: 2026-12-31 (Tsp)
 Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected -78,12926 -129,12947 -205,12985
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -4935,7 +4937,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstrasse-0 (Baubeginn 2023, verkehrsberuhigte Mischverkehrsfläche)
 #: by: https://www.luisenstadt-mitte.de/drupal/web/projekte/ohmstrasse-0 (alternative URL)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-der-ohmstrasse-876903.php (Neugestaltung bis 2023)
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-07
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-01-01
@@ -4947,7 +4949,7 @@ Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11380,11863 11324,11689
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20250527-mobilitaetsrat-mitte-praesentation.pdf (Bauzeitraum: 2026-2027)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1076_ds_1443_vi_verkehrskonzept_adalbertstrasse.pdf
 #: XXX verschwindet dabei auch das Kopfsteinpflaster?
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-07
 #: check_frequency: 270d
 #: next_check: 2027-12-31 (Mobilitätsrat-Präsentation)
 Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,11106 11726,11265 11808,11482
@@ -5770,7 +5772,7 @@ Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 150
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-07
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -6122,10 +6124,12 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: by: https://www.morgenpost.de/bezirke/pankow/article410390234/abriss-der-schoenhauser-allee-bruecke-startet-frueher-als-geplant.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/uberraschung-kurz-vor-abriss-start-in-berlin-neue-schonhauser-allee-brucke-wird-um-jahre-fruher-fertig--aber-viel-teurer-15478483.html (Bauarbeiten bis 2030)
 #: by: https://www.entwicklungsstadt.de/prenzlauer-berg-schoenhauser-allee-bruecke-schneller-fertig/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-verkehrseinschrankungen-in-berlin-termin-fur-baustart-der-schonhauser-allee-brucke-steht-fest-15563765.html (Baubeginn Oktober 2026)
 #: XXX wird es Einschränkungen geben?
 #: last_checked: 2025-04-25
 # REMOVED --- #: check_frequency: 360d
-#: next_check: 2028-01-01 (SenUVK-Seite: Hauptbaumaßnahme)
+# REMOVED --- #: next_check: 2028-01-01 (SenUVK-Seite: Hauptbaumaßnahme)
+#: next_check: 2026-10-31 (Tsp: Baubeginn)
 Schönhauser-Allee-Brücke: Neubau	?::projected 10969,15944 10975,16010
 # 
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schoenfliesser-bruecke/ (kein Termin; neue Brücke in der Flucht der Straßen angrenzenden) (voraussichtliche Bauzeit: 2027 bis 2028, Dauer 15 Monate)
@@ -6691,12 +6695,14 @@ Blankenburger Chaussee Höhe Beuthener Str./Straße 43: ein Zebrastreifen soll hie
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf (Bd.3) vvv
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6828 (Antrag: Forderung nach einer Erneuerung)
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6828 (neue URL)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/tEj4BLWSyTzpr3nuG9vfrze3Kxt5Cgq2BSi2Upul/jhLiudeQ/37-Anlagen/04/B1310ZB1.pdf (1. Zwischenbericht: Investitionsplanung 2021-2025)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22060.pdf (erst ab 2031 vorgesehen)
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/FbHWcm8xTupr1k8lEe2QMCtdc4iC6CiF5BCfNtcy/HASPEPz/37-Anlagen/05/B1310ZB2.pdf (2. Zwischenbericht: Bauvorbereitung spätestens 2030)
 #: osm_watch: way id="152863346" version="18"
 #: last_checked: 2025-11-05
 #: check_frequency: 720d
-#: next_check: 2031-12-31 (pardok)
+#: next_check: 2030-06-30 (BVV-Drucksache)
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: XXX Maßnahme Fh.6
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6666 (BVV-Beschluss, 2020-12-10)
@@ -7295,7 +7301,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2026-04-30
+#: last_checked: 2026-05-07
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -7809,7 +7815,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-07
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8345,7 +8351,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-07
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8365,7 +8371,7 @@ Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603
 #: by: https://www.entwicklungsstadt.de/gestaltungs-wettbewerb-eroeffnet-neue-ideen-fuer-checkpoint-charlie-gefragt/
 #: by: https://www.entwicklungsstadt.de/hostel-mit-2-500-betten-geplant-wie-viel-tourismus-vertraegt-der-kiez-rund-um-den-checkpoint-charlie/
 #: XXX Wie wird die Situation für Radfahrer aussehen (handicap-Eintrag?)
-#: last_checked: 2026-04-15
+#: last_checked: 2026-05-07
 #: check_frequency: 120d
 #: next_check: 2030-12-31 (entwicklungsstadt)
 Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezogen" werden	? 9478,11317 9474,11360 9468,11412
@@ -9714,6 +9720,7 @@ Rubinweg: wird dieser Abschnitt noch befestigt? wird das Tor dauerhaft offen sei
 #: by: https://www.morgenpost.de/bezirke/mitte/article411772548/berlin-bekommt-eine-helmut-kohl-allee-das-ist-zur-festveranstaltung-geplant.html
 #: by: https://www.tagesspiegel.de/berlin/neuer-strassenname-ab-9-mai-berlin-bekommt-eine-helmut-kohl-allee-15503792.html
 #: by: https://www.tagesspiegel.de/berlin/merkel-und-merz-haben-abgesagt-das-sind-die-gaste-und-das-programm-fur-die-einweihung-der-helmut-kohl-allee-15529905.html
+#: by: https://www.tagesspiegel.de/berlin/berlin-bekommt-die-helmut-kohl-allee-ausgepfiffen-geehrt-umstritten--berliner-erinnerungen-an-den-kanzler-der-einheit-15557584.html
 #: osm_watch: note 4985952 3
 #: note: im DPAG-Mitteilungsblatt 03/2026 bereits umbenannt
 #: last_checked: 2026-03-27
@@ -10622,6 +10629,7 @@ Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/neues-stadtquartier-im-berliner-sudwesten-degewo-deal-sichert-sozialen-wohnungsbau--und-wirft-fragen-auf-15355387.html
 #: by: https://www.entwicklungsstadt.de/lichterfelde-sued-konkrete-plaene-fuers-quartier-neulichterfelde/
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1665497.php
+#: by: https://bvv-steglitz-zehlendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9832 (Vorlage zur Kenntnisnahme)
 # REMOVED --- #: osm_watch: way id="318397770" version="2"
 # REMOVED --- #: osm_watch: way id="318395919" version="6"
 #: osm_watch: way id="49998472" version="9"
@@ -11896,17 +11904,19 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://entwicklungsstadt.de/berlin-mitte-weiterbau-des-bauprojekts-elements-hat-fahrt-aufgenommen/ (Uferweg nicht Teil des Projekts)
 #: by: https://www.luise-nord.de/der-spreebalkon-steht-eroeffnung-2026/ (Eröffnung 2026?)
 #: by: https://www.entwicklungsstadt.de/projekt-elements-am-spreeufer-fassadenarbeiten-schreiten-voran/
-#: XXX möglicherweise geht es vom Paula-Thiede-Ufer in einer verschwenkten Rampe runter
+#: by: https://www.luise-nord.de/erster-abschnitt-spreeuferweg-kommt-schon-im-sommer/ (geplante Eröffnung am 26. Juni 2026)
+#: XXX es wird vom Paula-Thiede-Ufer in einer Rampe runtergehen, zurzeit wird die Deckschicht aufgesetzt
 #: osm_watch: way id="458869330" version="4"
-#: osm_watch: note 3748856 3
-#: last_checked: 2026-05-04
-#: check_frequency: 90d
-#: next_check: 2026-12-31
+#: osm_watch: note 3748856 4
+#: last_checked: 2026-05-07
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2026-06-26
 Uferweg wird verlängert	?::inwork 12010,11545 11962,11596
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: osm_watch: way id="124182482" version="10"
 #: last_checked: 2026-04-06
 #: check_frequency: 120d
+#: next_check: 2026-06-26
 Uferweg geplant	?::projected 11821,11733 11676,11839 11375,11994
 # 
 # REMOVED --- #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf --- #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: I/2019 bis IV/2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.751474.php --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/index.shtml --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/de/vorhaben.shtml --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828308.php (Fertigstellung 1. Quartal 2020) --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/neue-fussgaengerbruecke-montiert_a224536 --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/de/bau.shtml (Ersatzneubau wurde am 28.11.2019 mit provisorischen Treppenanlagen freigegeben) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Straßenlandwidmung) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.974458.php (Eröffnung am 13.8.2020) --- #: by: https://abendblatt-berlin.de/2020/08/14/berlin-bioesdorf-ersatz-fuer-die-alte-bruecke-am-waldbacher-weg-ist-fertig/ --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_42_5125_5208_online.pdf (Einziehung von Straßenland) --- #: XXX vermutlich müssen die Treppenpunkte nach der Rampenanbindung versetzt werden --- #: last_checked: 2020-06-22 vvv --- #: next_check: 2020-08-13 vvv --- # REMOVED --- #: osm_watch: way id="688677632" version="2" --- Waldbacher-Weg-Brücke: Rampen in Bau	?::inwork 20315,12061 20307,12027 --- # REMOVED --- #: osm_watch: way id="688677633" version="3" --- Waldbacher-Weg-Brücke: Rampen in Bau	?::inwork 20363,12057 20359,12035 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -12035,6 +12045,7 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 #: by: https://www.buwog.de/wohnbauprojekte/berlin-friedrichshagener-strasse (noch kein Fertigstellungsdatum)
 #: by: https://entwicklungsstadt.de/abriss-in-koepenick-ein-weiteres-gebaeude-an-der-friedrichshagener-strasse-verschwindet/
 #: by: https://www.entwicklungsstadt.de/kabelwerk-koepenick-coepius/
+#: by: https://www.entwicklungsstadt.de/koepenick-an-der-filmfabrik-entstehen-neue-wohnungen/ (angrenzend: BUWOG-Wohnungen bis 2028)
 #: osm_watch: way id="37588146" version="17"
 #: XXX auch interessant: möglicher Uferweg unter der Salvador-Allende-Brücke bis zum Katzengrabensteg
 #: last_checked: 2026-03-11
@@ -12687,6 +12698,7 @@ Regionalbahnhof Köpenick	?::inwork 22530,6100
 #: by: https://entwicklungsstadt.de/neues-stadtquartier-in-tempelhof-baubeginn-fuer-die-marienhoefe/ (erste Gebäude 2027 fertig, nördlicher Bauabschnitt bis August 2028)
 #: by: https://entwicklungsstadt.de/marienhoefe-in-tempelhof-grundstein-fuer-neues-stadtquartier-gelegt/
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article410457290/eidechsen-baupreise-ueberwunden-baubeginn-im-stadtquartier-marienhoefe.html
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10294 (Aufstellung des Bebauungsplans 7-95-1 (südlicher Teil des Geländes))
 #: XXX überwiegend Fuß- und Radwege sowie verkehrsberuhigte Bereiche geplant
 #: last_checked: 2026-03-25 vvv
 #: check_frequency: 540d vvv
@@ -13104,6 +13116,7 @@ Bebauungsplan 12-63a: wird es hier einen Verbindungsweg geben?	? 2645,20011 2653
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/rahmenplan-siemensstadt-square-2026_entwurf-stand-maerz-2026.pdf
 #: by: https://www.entwicklungsstadt.de/mehr-wohnungen-weniger-bueroflaechen-siemensstadt-square-wird-neu-geplant/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neues-quartier-im-berliner-westen-mehr-wohnungen-in-neuer-siemensstadt-geplant-15419427.html
+#: by: https://www.entwicklungsstadt.de/siemensstadt-square-was-geplant-ist-und-was-schon-umgesetzt-wird/
 #: also_indoor: url https://www.berlin.de/sen/stadtentwicklung/staedtebau/einzelprojekte/siemensstadt-square/
 #: osm_watch: way id="1298280066" version="2"
 #: note: Bebauungsplan 5-123
