@@ -254,7 +254,7 @@ sub adjust_by_precip {
     if (-e $precip_file) {
 	my $u = IO::Uncompress::Unzip->new($precip_file)
 	    or die "Can't open $precip_file: $UnzipError";
-	do {
+	while (1) {
 	    my $header_info = $u->getHeaderInfo;
 	    my $name = $header_info ? $header_info->{Name} : undef;
 	    if ($name && $name =~ /^produkt_zehn_now_rr_.*\.txt$/) {
@@ -288,7 +288,8 @@ sub adjust_by_precip {
 		}
 		last;
 	    }
-	} while ($u->nextStream);
+	    last if !$u->nextStream;
+	}
     }
     if ($sum_precip > 0) {
 	my $adjustment = int($sum_precip * $precip_factor + 0.5);
