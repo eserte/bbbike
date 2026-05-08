@@ -1630,7 +1630,7 @@ Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 #: note: es gibt eine provisorische Verbindung zur Weststr. (mittlerweile bei bbbike eingezeichnet)
 #: last_checked: 2026-04-15 vvv
 #: check_frequency: 120d vvv
-#: osm_watch: way id="273858820" version="12"
+#: osm_watch: way id="273858820" version="13"
 #: osm_watch: way id="1239079510" version="2"
 (Westring, Virchow-Klinikum): Bauarbeiten, gesperrt	2::inwork 5924,15005 5935,14948 5940,14911 6030,14924
 #: osm_watch: way id="273858819" version="12"
@@ -4211,7 +4211,7 @@ Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3606,1153
 #: by: https://www.entwicklungsstadt.de/puschkinallee-ausbau-am-bka-standort-treptow-nimmt-form-an/
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
-#: last_checked: 2026-04-19
+#: last_checked: 2026-05-08
 #: check_frequency: 60d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4324,7 +4324,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-05-03
+#: last_checked: 2026-05-08
 #: check_frequency: 120d
 #: next_check: 2026-05-26 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4750,7 +4750,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-05-03
+#: last_checked: 2026-05-08
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4758,11 +4758,11 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-05-03 vvv
+#: last_checked: 2026-05-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
-Paul-und-Paula-Promenade: Baustraße	2::inwork 14886,10748 14909,10732 14984,10677
+Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10677
 # REMOVED (offen) --- Ulrich-Plenzdorf-Str.	2::inwork 14994,10732 15071,10716 15151,10699
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4834,7 +4834,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="2"
 #: osm_watch: note 3644429 8
-#: last_checked: 2026-05-07
+#: last_checked: 2026-05-08
 #: check_frequency: 30d
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
@@ -5151,7 +5151,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-04-19 vvv
+#: last_checked: 2026-05-08 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5342,7 +5342,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Straßenlandwidmung, Grunerstr.)
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1647248.php
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-04-28
+#: last_checked: 2026-05-08
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5350,7 +5350,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-05-02
+#: last_checked: 2026-05-08
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

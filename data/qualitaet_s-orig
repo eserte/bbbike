@@ -403,7 +403,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="30"
-#: last_checked: 2026-05-05 (mapillary)
+#: last_checked: 2026-05-08
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
@@ -5393,7 +5393,7 @@ Willstätterstr.: Asphalt	Q0 14187,6555 14306,6651
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.): Asphalt	Q0 11460,7802 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof): Asphalt	Q0 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363
-(Strecke an der nordöstlichen Begrenzung): Asphalt	Q0- 10644,8363 10360,8521
+(Strecke an der nordöstlichen Begrenzung): Asphalt mit Unebenheiten	Q1 10644,8363 10360,8521
 (Strecke an der nordöstlichen Begrenzung - Rundkurs): Asphalt	Q0+ 11000,8067 10902,8012
 (Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11490,7735 11509,7636 11527,7530 11547,7432 11552,7396 11589,7353
 (Flughafen Tempelhof - Eingang Oderstr.): Asphalt	Q0 11598,7264 11608,7267
@@ -14007,8 +14007,8 @@ Bahamasbogen: Verbundsteinpflaster	Q1+ -2759,18843 -2621,18840 -2482,18836 -2485
 #: XXX bleibt der unbefestigte Abschnitt?
 #: osm_watch: way id="993271092" version="2"
 #: priority: #C
-#: last_checked: 2026-01-04
-#: check_frequency: 120d
+#: last_checked: 2026-05-08
+#: check_frequency: 180d
 (Mauerweg - Lohmühlenstr.): unbefestigt/Verbundsteinpflaster	Q2+ 13128,9726 13156,9702
 # 
 Topsstr.: Kleinsteinpflaster	Q1 10883,15251 10865,15244
@@ -14493,6 +14493,8 @@ Moderlieschenstr.: Betonplatten	Q1- -732,15940 -866,16042
 (Privatstraße): Verbundsteinpflaster	Q1+ 196,3650 181,3771
 # 
 (Müllerstr. - Ruheplatzstr.): Asphalt	Q0 7607,15282 7617,15307 7627,15412
+# 
+Margot-Friedländer-Platz: große Steinplatten	Q1+ 8938,11255 8935,11277 8830,11264 8833,11241
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 

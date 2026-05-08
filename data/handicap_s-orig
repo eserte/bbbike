@@ -437,7 +437,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-05-02
+#: last_checked: 2026-05-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-05 (VIZ-Verkehrsmeldung)
 #: next_check: 2030-12-31 (entwicklungsstadt)
@@ -558,7 +558,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-04-28
+#: last_checked: 2026-05-08
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -866,10 +866,10 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 ### Friedrichshagen ###
 # 
 #: also_indoor: traffic (G,no-T)
-#: source_id: LMS-BR:392304/72 viz2021:13.60111,52.45156, (Bauarbeiten im angrenzenden Fürstenwalder Damm, bis 30.04.2026) (bis 08.05.2026)
-#: last_checked: 2026-04-19 (traffic)
+#: source_id: LMS-BR:392304/72 viz2021:13.60111,52.45156, (Bauarbeiten im angrenzenden Fürstenwalder Damm, bis 30.04.2026) (bis 08.05.2026) (bis 07.07.2026)
+#: last_checked: 2026-05-07 (traffic)
 #: check_frequency: 21d
-#: next_check: 2026-05-08 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
 Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463650.php --- #: note: vor Ort sahen die Beeinträchtigungen nicht so groß aus --- #: source_id: 2147339863 --- #: valid: 20160627-20161130 --- S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
@@ -942,11 +942,11 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
-#: osm_watch: way id="16096289" version="38"
-#: osm_watch: way id="707100249" version="30"
+#: osm_watch: way id="16096289" version="39"
+#: osm_watch: way id="707100249" version="31"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-07 (osm)
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1022,7 +1022,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhxndyhlk2o
 #: source_id: LMS-BR:405792/72 viz2021:13.424843,52.482167, (bis 26.05.2026)
 #: traffic_note: Ausweichverkehr über Reuterstr. - Flughafenstr., Gefahr von Stauungen vor den Ampeln
-#: last_checked: 2026-04-28 vvv
+#: last_checked: 2026-05-08 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-05-26 vvv
 Hermannstr.: Wasserrohrbruch, Engstelle	q3::inwork; 11884,8492 11882,8519 11882,8527
@@ -2509,7 +2509,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="529086013" version="5"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="16"
-#: last_checked: 2026-04-12
+#: last_checked: 2026-05-08 (daf)
 #: check_frequency: 120d
 #: next_check: 2027-11-30 (deal magazin: Herbst 2027)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329

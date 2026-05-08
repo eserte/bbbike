@@ -1179,6 +1179,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
 #: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00 (inaktiv)
 #: source_id: viz2021:13.49144,52.42064,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
 #: source_id: viz2021:13.49469,52.42125,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
+#: source_id: LMS-BR:407583/72 viz2021:13.49468,52.42128,09.05.2026,12:00 (bis 10.05.2026)
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
 ',
@@ -3624,6 +3625,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 #: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
 #: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
 #: source_id: LMS-BR:407312/72 viz2021:13.33123,52.50383,06.05.2026,12:00 (bis 11.05.2026) (vorfristig inaktiv)
+#: source_id: LMS-BR:407493/72 viz2021:13.33123,52.50383,08.05.2026,04:00 (bis 11.05.2026)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -5308,7 +5310,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 21
-#: last_checked: 2026-03-25
+#: last_checked: 2026-05-08 (internal research)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -7211,8 +7213,8 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
          'data' => '#: next_check_id: METZER-2023
 #: source_id: viz2021:13.413286,52.532546,01.08.2023,07:00 (bis 2.1.2025) (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029) (inaktiv)
 #: source_id: viz2021:13.412618,52.532649,01.08.2023,07:00 (bis 19.12.2025 + Gesamtbaumaßnahme bis 06/2029) (inaktiv)
-#: source_id: LMS-BR:308232/72 viz2021:13.41278,52.53261,01.08.2023,07:00 viz2021:13.41278,52.53261, (Metzer Str., bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025) (bis 18.12.2026) (bis 30.04.2026) (bis 09.05.2026)
-#: source_id: LMS-BR:308231/72 viz2021:13.41245,52.53267,02.01.2025,06:43 viz2021:13.41245,52.53267, (bis 19.12.2025) (bis 18.12.2026) (bis 30.04.2026) (bis 09.05.2026)
+#: source_id: LMS-BR:308232/72 viz2021:13.41278,52.53261,01.08.2023,07:00 viz2021:13.41278,52.53261, (Metzer Str., bis 19.12.2025) (vorfristig inaktiv) (bis 19.12.2025) (bis 18.12.2026) (bis 30.04.2026) (bis 09.05.2026) (bis 31.08.2026)
+#: source_id: LMS-BR:308231/72 viz2021:13.41245,52.53267,02.01.2025,06:43 viz2021:13.41245,52.53267, (bis 19.12.2025) (bis 18.12.2026) (bis 30.04.2026) (bis 09.05.2026) (bis 31.08.2026)
 #: osm_watch: way id="23121446" version="40"
 #: by: https://entwicklungsstadt.de/verkehrsfuehrung-und-baufortschritt-in-pankow-so-sieht-es-aktuell-am-senefelderplatz-aus/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-auf-der-u2-in-berlin-nachste-jahrelange-verzogerung-betrifft-fahrgaste-und-autofahrer-15232832.html (bis März 2027?)
@@ -7429,18 +7431,18 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
 #: source_id: LMS-BR:390063/72 viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025) (bis 19.12.2025) (inaktiv)
 #: source_id: LMS-BR:390300/72 viz2021:13.47181,52.50783, (Kraneinsatz bis 02.12.2025) (bis 12.12.2025) (bis 19.12.2025) (inaktiv)
+#: source_id: LMS-BR:407499/72 viz2021:13.47033,52.50617,08.05.2026,06:00 (bis 22.05.2026)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1749484572528595139#m
 #: by[nocache]: https://nitter.net/pic/orig/media%2FGEdcJW0WIAUAlBC.jpg (mit Umleitungsstrecke für Autos/Radfahrer)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251114
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260507
-#: osm_watch: way id="490912373" version="18"
-#: osm_watch: way id="1113567086" version="8"
+#: osm_watch: way id="490912373" version="19"
+#: osm_watch: way id="1113567086" version="9"
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
 #: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Ausnahmeregelung für Radfahrer
-#: XXX wie sehr ist der Radverkehr bei der 05/2026er-Sperrung betroffen?
-#: next_check: 2026-05-08
-	q4::inwork 15016,11431 14945,11300
+#: note: bei der 05/2026er-Sperrung standen die Bauzäune bereits an der Boxhagener Str.
+	q4::inwork 15016,11431 14945,11300 14918,11249
 # REMOVED (frühere Sperrung) ---	q4::inwork 15055,11505 15016,11431
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
 ',
@@ -7679,7 +7681,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-05-07 vvv
+#: last_checked: 2026-05-08 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -9175,7 +9177,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-04-28
+#: last_checked: 2026-05-08
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9301,7 +9303,7 @@ Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-05-01
+#: last_checked: 2026-05-08
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -9564,20 +9566,21 @@ Südparkbrücke: Neubau	2::inwork -4048,12107 -4033,12108
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20250927
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260119
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260508
 #: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025) (inaktiv)
-#: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026) (bis 31.03.2026) (bis 30.05.2026)
+#: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026) (bis 31.03.2026) (bis 30.05.2026) (vorfristig inaktiv)
 #: note: laut rbb ebenfalls nur bis Ende Januar 2026
 #	q4::inwork; 17916,5675 18013,5627
-#: last_checked: 2026-01-27 (mapillary)
-#: next_check: 2026-05-30 (VIZ-Verkehrsmeldung)
-	q4::inwork 17916,5675 18013,5627
+# REMOVED --- #: last_checked: 2026-01-27 (mapillary) --- #: next_check: 2026-05-30 (VIZ-Verkehrsmeldung)
+#	q4::inwork 17916,5675 18013,5627
+	q4::inwork; 17916,5675 18013,5627
 ',
-         'from' => 1768777200,
+         'from' => 1778364000,
          'id' => 4454,
-         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., voraussichtlich bis Ende Mai 2026',
+         'text' => 'Schnellerstr.: Bauarbeiten, Sperrung Richtung Osten zwischen Flutstr. und Hasselwerderstr., vom 11.5.2026 für voraussichtlich eine Woche',
          'type' => 'handicap',
-         'until' => 1780178399
+         'until' => 1778882400
        },
        undef,
        undef,
@@ -10082,7 +10085,7 @@ Audre-Lorde-Str.	q4::inwork 12056,10642 12000,10531
        {
          'data' => '#: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
 #: osm_watch[closed]: note 4953642 2
-#: source_id: LMS-BR:407366/72 viz2021:13.45315,52.52627,06.05.2026,20:00 (Kraneinsatz, bis 08.05.2026)
+#: source_id: LMS-BR:407366/72 viz2021:13.45315,52.52627,06.05.2026,20:00 (Kraneinsatz, bis 08.05.2026) (inaktiv)
 #: last_checked: 2026-04-04 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
@@ -10722,12 +10725,12 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mjeegagzbk2e
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1660827.php (hier: auch Gehwege gesperrt? Dauer 4-6 Wochen)
 #: by: https://fahrinfo.vbb.de/him-uploads/1776322735562_Kartenausschnitt_Kiefholzstr_003_.jpg
-#: source_id: LMS-BR:404340/72 viz2021:13.50053,52.44753, (kein Endedatum)
+#: source_id: LMS-BR:404340/72 viz2021:13.50053,52.44753, (kein Endedatum) (bis 22.05.2026)
 #: source_id: bvg2024:265#HIM_FREETEXT_330512 (kein Endedatum)
 #: source_id: bvg2024:x11#HIM_FREETEXT_330465 (kein Endedatum)
 #: last_checked: 2026-04-13 (VIZ)
 #: check_frequency: 21d
-#: next_check: 2026-05-31
+#: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
 	2::inwork 17115,4757 17037,4794
 ',
          'from' => 1776194113,
@@ -10803,21 +10806,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'type' => 'handicap',
          'until' => 1789077540
        },
-       {
-         'data' => '#: next_check_id: WANDLITZ-2021
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260425 (Sanierungsarbeiten ab 27.4.2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhcym3k622a (Sperrung auch für den Radverkehr)
-#: source_id: LMS-BR:406184/72 viz2021:13.51884,52.48334,27.04.2026,07:00 (bis 08.05.2026)
-#: last_checked: 2026-05-01
-#: next_check: 2026-05-08
-Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
-',
-         'from' => 1777154400,
-         'id' => 4592,
-         'text' => 'Wandlitzstr.: Asphaltierungsarbeiten, Fahrbahn gesperrt, 27.04.2026 bis 08.05.2026',
-         'type' => 'handicap',
-         'until' => 1778277599
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:407164/72 viz2021:13.42067,52.50324,05.05.2026,07:00 (bis 22.05.2026)
 	q4::inwork 11552,10863 11589,10947 11640,11067
