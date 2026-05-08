@@ -154,20 +154,7 @@ FETCH_HISTORICAL_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
 $pm and $pm->wait_all_children;
 
 if ($adjust_by_precip) {
-    my $precip_dir = "$soil_dwd_dir/precip";
-    FETCH_PRECIP_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
-	my $pid = $pm and $pm->start and next FETCH_PRECIP_LOOP;
-	warn "INFO: update precipitation for station $station ($stations{$station})...\n" unless $q;
-	my $precip_station = sprintf("%05d", $station);
-	my $url = "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/now/10minutenwerte_nieder_${precip_station}_now.zip";
-	my $target = "$precip_dir/precip_now_${precip_station}.zip";
-	my $resp = $ua->mirror($url, $target);
-	# 404 is acceptable for 'now' files
-	$resp->code < 400 || $resp->code == 404
-	    or die "Mirroring $url failed: " . $resp->dump;
-	$pm and $pm->finish;
-    }
-    $pm and $pm->wait_all_children;
+    fetch_precip_data();
 }
 
 my $res;
@@ -239,6 +226,23 @@ if ($as eq 'json') {
 } elsif ($as eq 'mapping') {
     my $bf10_mapping = join(',', map { $_->{station_id}.':'.$_->{BF10} } grep { defined $_->{BF10} } values %$res);
     print $bf10_mapping;
+}
+
+sub fetch_precip_data {
+    my $precip_dir = "$soil_dwd_dir/precip";
+    FETCH_PRECIP_LOOP: for my $station (sort {$a<=>$b} keys %stations) {
+	my $pid = $pm and $pm->start and next FETCH_PRECIP_LOOP;
+	warn "INFO: update precipitation for station $station ($stations{$station})...\n" unless $q;
+	my $precip_station = sprintf("%05d", $station);
+	my $url = "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/now/10minutenwerte_nieder_${precip_station}_now.zip";
+	my $target = "$precip_dir/precip_now_${precip_station}.zip";
+	my $resp = $ua->mirror($url, $target);
+	# 404 is acceptable for 'now' files
+	$resp->code < 400 || $resp->code == 404
+	    or die "Mirroring $url failed: " . $resp->dump;
+	$pm and $pm->finish;
+    }
+    $pm and $pm->wait_all_children;
 }
 
 sub adjust_by_precip {
