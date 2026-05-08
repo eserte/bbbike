@@ -322,7 +322,7 @@ install_non_perl_dependencies() {
 	extra_build_packages=
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package libimage-exiftool-perl tzdata gcc $extra_build_packages $cpanminus_package $cpm_dep_packages $imager_ext_packages $libproj_packages
+    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package libimage-exiftool-perl libtext-unidecode-perl tzdata gcc $extra_build_packages $cpanminus_package $cpm_dep_packages $imager_ext_packages $libproj_packages
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver

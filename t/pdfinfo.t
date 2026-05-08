@@ -30,7 +30,8 @@ my $pdf = PDF::Create->new(
 $pdf->new_page('MediaBox' => [ 0, 0, 595, 842 ]);
 $pdf->close;
 
-my $info_poppler = pdfinfo_with_poppler($filename);
+use BBBikeUtil qw(is_in_path);
+my $info_poppler = is_in_path('pdfinfo') ? pdfinfo_with_poppler($filename) : undef;
 my $info_et_pdf = pdfinfo_with_exiftool($filename);
 
 ok($info_et_pdf, 'pdfinfo_with_exiftool returned data');
