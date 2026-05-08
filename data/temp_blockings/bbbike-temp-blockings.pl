@@ -49957,8 +49957,8 @@ EOF
 	q3::inwork 4690,11369 4897,11354
 EOF
      },
-     { from  => 1752606169, # 2025-07-15 21:02
-       until => $isodate2epoch->("2025-12-18 15:00:00"), # 1758319200, # 2025-09-20 00:00
+     { from  => undef, # 1752606169, # 2025-07-15 21:02
+       until => undef, # $isodate2epoch->("2025-12-18 15:00:00"), # 1758319200, # 2025-09-20 00:00
 #      text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz sowie vor Hermannstr., voraussichtlich bis September 2025',
 #      text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis Dezember 2025',
        text  => 'Thomasstr.: Sperrung vor Hermannstr., Ende der Bauarbeiten unbekannt',
@@ -49967,12 +49967,12 @@ EOF
 #: next_check_id: THOMAS-2025
 #: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:376390/72 viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025) (bis 18.12.2025) (inaktiv)
-#: also_indoor: traffic (ex-G,T,ex-H,ex-W)
-#: last_checked: 2026-04-16 vvv
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: XXX im Zusammenhang mit den Arbeiten an der Ampel
+#: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
+#: last_checked: 2026-05-07 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (infravelo, mobilitaetsrat) vvv
-#: XXX evtl. im Zusammenhang mit den Arbeiten an der Ampel?
-#: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
 Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
 #: next_check ^^^
 #: check_frequency ^^^

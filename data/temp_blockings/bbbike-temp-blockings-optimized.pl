@@ -9194,7 +9194,29 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: THOMAS-2025
+#: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
+#: source_id: LMS-BR:376390/72 viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025) (bis 18.12.2025) (inaktiv)
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: XXX im Zusammenhang mit den Arbeiten an der Ampel
+#: note: kurzer Abschnitt gesperrt + Bordsteine, deshalb q3
+#: last_checked: 2026-05-07 (mapillary) vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-12-31 (infravelo, mobilitaetsrat) vvv
+Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#  REMOVED (alte Meldung) --- #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg --- #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
+# REMOVED (nicht mehr) --- Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
+',
+         'from' => undef,
+         'id' => 4391,
+         'text' => 'Thomasstr.: Sperrung vor Hermannstr., Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,

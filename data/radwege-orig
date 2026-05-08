@@ -6146,7 +6146,7 @@ unebenes Verbundsteinpflaster	RW1; 8791,18605 8891,18545
 	RW1;RW1 8260,18765 8369,18769 8476,18773 8634,18787
 unebenes Verbundsteinpflaster, schmale Stellen	RW1; 3703,7324 3612,7335 3389,7383
 schadhaftes Verbundsteinpflaster	RW1; 3389,7383 3612,7335 3703,7324
-	RW2;RW2 17073,21329 16815,21156 16644,21042 16025,20631
+	RW2;RW2 17073,21329 16815,21156 16644,21042 16181,20734 16025,20631
 Verbundsteinpflaster	RW2; 18166,14277 18141,14363 18057,14549
 	RW4; 18057,14549 18141,14363
 Fahrradschleuse	RW4; 18141,14363 18166,14277
@@ -9451,7 +9451,7 @@ Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 #: next_check_id: THOMAS-2025
 #: XXX wann wird hier die Radspur komplettiert?
-#: last_checked: 2026-04-16
+#: last_checked: 2026-05-07 (mapillary)
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
 	RW3; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696
@@ -9469,7 +9469,7 @@ Grünbeschichtung, einige Leitboys	RW4; 12090,7651 12121,7555 12123,7549
 	RW3; 12123,7549 12158,7449
 #: next_check_id: THOMAS-2025
 #: XXX zwischenzeitlich provisorisch markiert, nun bauzeitlich gemeinsame Spur mit dem Autoverkehr
-#: last_checked: 2026-04-16
+#: last_checked: 2026-05-07 (mapillary)
 	RW0; 12158,7449 12185,7381
 #: historical_note: früher: provisorische Radspur, meistens zugeparkt, RW3; --- nun stehen hier wieder Halteverbotsschilder
 provisorische Radspur	RW3; 12185,7381 12221,7271
