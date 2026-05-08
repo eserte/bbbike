@@ -7,14 +7,13 @@ use BBBikeTest;
 use File::Temp qw(tempfile);
 use Data::Dumper;
 
-eval { require PDF::Create; };
-if ($@) {
-    plan skip_all => 'PDF::Create not installed';
-}
-
-my $info_et = pdfinfo_with_exiftool(__FILE__);
-if (!$info_et) {
-    plan skip_all => 'Image::ExifTool not available';
+BEGIN {
+    if (!eval { require Image::ExifTool; 1 }) {
+	plan skip_all => 'Image::ExifTool not available';
+    }
+    if (!eval { require PDF::Create; 1 }) {
+	plan skip_all => 'PDF::Create not installed';
+    }
 }
 
 plan tests => 9;

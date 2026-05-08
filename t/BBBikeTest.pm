@@ -1264,30 +1264,25 @@ EOF
 
 sub pdfinfo ($) {
     my($pdffile) = @_;
-    if (!defined $can_pdfinfo) {
-	$can_pdfinfo = is_in_path('pdfinfo');
-    }
     if (!defined $can_exiftool) {
 	$can_exiftool = module_exists('Image::ExifTool');
     }
-
-    my $info;
     if ($can_exiftool) {
-	$info = pdfinfo_with_exiftool($pdffile);
+	return pdfinfo_with_exiftool($pdffile);
     }
-    if ((!$info || !exists $info->{Title}) && $can_pdfinfo) {
-	my $poppler_info = pdfinfo_with_poppler($pdffile);
-	if ($poppler_info) {
-	    $info = { %{$info||{}}, %$poppler_info };
-	}
+
+    if (!defined $can_pdfinfo) {
+	$can_pdfinfo = is_in_path('pdfinfo');
     }
-    $info;
+    if ($can_pdfinfo) {
+	return pdfinfo_with_poppler($pdffile);
+    }
+
+    return undef;
 }
 
 sub pdfinfo_with_poppler ($) {
     my($pdffile) = @_;
-    return if !$can_pdfinfo;
-
     my @cmd = ('pdfinfo', $pdffile);
     my %info;
     open my $fh, "-|", @cmd
@@ -1303,33 +1298,41 @@ sub pdfinfo_with_poppler ($) {
     \%info;
 }
 
-sub _pdf_parse_content {
-    my($content, $info_ref) = @_;
+sub pdfinfo_with_exiftool ($) {
+    my($pdffile) = @_;
+    require Image::ExifTool;
+    my $et = Image::ExifTool->new;
 
-    # Regex fallbacks for metadata
-    if ($content =~ m{/Info\s+(\d+)\s+\d+\s+R}) {
-	my $obj_num = $1;
-	if ($content =~ m{$obj_num\s+\d+\s+obj\s*<<(.*?)>>\s*endobj}s) {
-	    my $dict = $1;
-	    for my $meta (qw(Title Author Creator Producer)) {
-		if ((!defined $info_ref->{$meta} || $info_ref->{$meta} eq '') &&
-		    $dict =~ m{/$meta\s*\(([^\)]+)\)}i) {
-		    $info_ref->{$meta} = $1;
-		}
-	    }
-	}
-    }
-    if (!defined $info_ref->{'PDF version'} || $info_ref->{'PDF version'} eq '') {
-	if ($content =~ m{^%PDF-(\d+\.\d+)}) {
-	    $info_ref->{'PDF version'} = $1;
-	}
+    if (!-e $pdffile) {
+	return { Error => "File not found: $pdffile" };
     }
 
-    # Page size / MediaBox
-    if ($content =~ m{/MediaBox\s*\[\s*([-\d\.\s]+)\]}s) {
+    my $output = "";
+    {
+	open my $str_fh, '>', \$output or die "Can't open scalar for writing: $!";
+	$et->Options(Verbose => 2, TextOut => $str_fh);
+	$et->ExtractInfo($pdffile);
+	close $str_fh;
+    }
+
+    my $info_ref = $et->GetInfo;
+    my %info = %$info_ref;
+
+    my %map = (
+	'PageCount'  => 'Pages',
+	'PDFVersion' => 'PDF version',
+    );
+    while (my($old_k, $new_k) = each %map) {
+	if (exists $info{$old_k}) {
+	    $info{$new_k} = delete $info{$old_k};
+	}
+    }
+
+    $info{'File size'} = (-s $pdffile) . " bytes";
+
+    if ($output =~ /MediaBox\s*=\s*\[([\d\.\s,]+)\]/s) {
 	my $val = $1;
-	$val =~ s/^\s+//; $val =~ s/\s+$//;
-	my @c = split /\s+/, $val;
+	my @c = grep { length $_ } split /[\s,]+/, $val;
 	if (@c >= 4) {
 	    my($x1, $y1, $x2, $y2) = @c;
 	    my $w = abs($x2 - $x1);
@@ -1340,77 +1343,15 @@ sub _pdf_parse_content {
 		'842x595' => 'A4',
 	    );
 	    my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
-	    $info_ref->{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
+	    $info{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
 	}
-    }
-}
-
-sub pdfinfo_with_exiftool ($) {
-    my($pdffile) = @_;
-    return if !$can_exiftool;
-
-    require Image::ExifTool;
-    my $et = Image::ExifTool->new;
-    $et->ExtractInfo($pdffile);
-    my %info = %{ $et->GetInfo };
-
-    my %map = (
-	'PageCount'  => 'Pages',
-	'PDFVersion' => 'PDF version',
-	'FileSize'   => 'File size',
-    );
-    while (my($old_k, $new_k) = each %map) {
-	if (exists $info{$old_k}) {
-	    $info{$new_k} = delete $info{$old_k};
-	}
-    }
-
-    my $content;
-    if (open my $fh, "<", $pdffile) {
-	# Don't slurp the whole file if it's too large, but for tests it's fine.
-	# To be safe, read only first 1MB.
-	read $fh, $content, 1024*1024;
-	close $fh;
-    }
-
-    if ($content) {
-	_pdf_parse_content($content, \%info);
-    }
-
-    if (!exists $info{'Page size'}) {
-	my $output = "";
-	open my $str_fh, '>', \$output or die $!;
-	my $old_stdout = select $str_fh;
-	$et->Options(Verbose => 2);
-	$et->ExtractInfo($pdffile);
-	select $old_stdout;
-	close $str_fh;
-
-	if ($output =~ /MediaBox = \[([\d\.\s,]+)\]/) {
-	    my $val = $1;
-	    my @c = split /[\s,]+/, $val;
-	    if (@c >= 4) {
-		my($x1, $y1, $x2, $y2) = @c;
-		my $w = abs($x2 - $x1);
-		my $h = abs($y2 - $y1);
-
-		my %known_sizes = (
-		    '595x842' => 'A4',
-		    '842x595' => 'A4',
-		);
-		my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
-		$info{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
-	    }
-	}
-    }
-
-    if ($info{'File size'} && $info{'File size'} =~ m{^(\d+)(\s+bytes)?$}) {
-	$info{'File size'} = "$1 bytes";
     }
 
     \%info;
 }
-    # Show apache errorlog contents on failures.
+
+# Show apache errorlog contents on failures.
+{
     #
     # Usually used like this:
     #
@@ -1475,6 +1416,7 @@ sub pdfinfo_with_exiftool ($) {
 	    }
 	}
     }
+}
 
 
 sub my_note (@) {
