@@ -375,7 +375,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-05-04 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -619,12 +619,12 @@ Verbundsteinpflaster	RW1; 4415,9343 4342,9301 4224,9241 4096,9175 3998,9125 3919
 Poller	RW4; 4415,9343 4507,9395 4517,9401
 #: note: Straßenbäume sind Platanen
 Verbundsteinpflaster, Wurzelhebungen	RW1; 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3565,9057
-Poller	RW3; 3565,9057 3521,9059
+Poller	RW4; 3565,9057 3521,9059
 Verbundsteinpflaster	RW1; 3521,9059 3565,9057 3688,9051 3760,9052 3816,9052 3831,9052 3919,9085
-	RW1; 3521,9059 3467,9045
+	RW2; 3521,9059 3467,9045 3427,9010 3379,8969
 #: note: vor der Ampel kurzer Schutzstreifen mit Pollern
 	RW1; 3467,9045 3521,9059
-	RW1;RW2 3467,9045 3427,9010 3379,8969
+	RW2; 3379,8969 3427,9010 3467,9045
 	RW1; 3379,8969 3158,8763 2966,8586 2915,8540 2885,8513 2857,8487 2713,8357 2661,8307 2539,8196 2397,8064 2335,7994 2277,7932 2207,7850 2112,7754
 	RW1; 2112,7754 2207,7850 2277,7932 2335,7994 2397,8064
 teilweise unebenes Verbundsteinpflaster, relativ breit	RW1; 2397,8064 2539,8196 2661,8307 2713,8357 2857,8487 2885,8513 2915,8540 2966,8586 3158,8763 3379,8969
@@ -4950,9 +4950,7 @@ Gehweg für Radfahrer frei	RW1; -7050,199 -7050,152
 	RW1;RW1 -1012,3465 -968,3438 -800,3409 -741,3410 -645,3434 -548,3467 -478,3509 -370,3585 -267,3657
 	RW1;RW1 -267,3657 -141,3715 -92,3724 16,3744 181,3771 199,3774 263,3779 394,3694 458,3697
 	RW1;RW 458,3697 627,3749 732,3780
-	RW1;RW1 732,3780 891,3828 1015,3858 1139,3876 1276,3892 1389,3900 1462,3906 1523,3904
-	RW1;RW 1523,3904 1603,3909 1664,3907 1741,3907 1787,3905 1800,3903
-	RW1;RW1 1800,3903 1939,3893 1987,3888 2160,3854 2230,3823
+	RW1;RW1 732,3780 891,3828 1015,3858 1139,3876 1276,3892 1389,3900 1462,3906 1523,3904 1603,3906 1664,3907 1741,3907 1778,3905 1800,3903 1939,3893 1987,3888 2160,3854 2230,3823
 	RW9;RW1 3196,6415 3147,6384
 	RW1;RW9 3196,6415 3216,6393
 unebener Asphalt, Wurzelhebungen, kein Unterstreifen gegen parkende Autos	RW1;RW1 11689,6634 11713,6380 11740,6338
@@ -7209,7 +7207,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-05-07 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -7686,7 +7684,9 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 824,2210 809,2309 790,2
 	RW1; 824,2210 846,2130 980,1893 1025,1813 1080,1637
 	RW1;RW1 1080,1637 1142,1350 1181,1169 1207,1051 1248,871 1267,789 1286,704 1304,537 1322,352 1345,184
 	RW6;RW6 882,396 910,278
-altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 1283,4260 1385,4138 1442,4065 1451,4026 1462,3906 1474,3688 1485,3630 1504,3555 1552,3460
+Asphalt, Wurzelhebungen	RW1; 1283,4260 1385,4138
+altes Verbundsteinpflaster, Wurzelhebungen	RW1; 1385,4138 1442,4065 1451,4026 1462,3906 1474,3688 1485,3630 1504,3555 1552,3460
+altes Verbundsteinpflaster, Wurzelhebungen	RW1; 1552,3460 1504,3555 1485,3630 1474,3688 1462,3906 1451,4026 1442,4065 1385,4138 1283,4260
 	RW1;RW1 10148,1023 10162,1054 10228,1194 10329,1231
 	RW6;RW6 10659,1370 10737,1397 10816,1411
 	RW6;RW6 10737,1397 10795,1251
@@ -8626,8 +8626,8 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2026-04-11
-#: check_frequency: 30d
+#: last_checked: 2026-05-09
+#: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 #: note: Wassertorplatz
@@ -9041,13 +9041,14 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/pop-up-radweg-in-berlin-charlottenburg-warum-in-der-kantstrasse-jetzt-gebaut-wird-14119145.html
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/verkehrsplanung/radverkehr/akteure-und-gremien/20250605_fahrrat_protokoll.pdf
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410250811/radweg-in-kantstrasse-wieso-der-umbau-auf-sich-warten-laesst.html
+#: by: https://www.tagesspiegel.de/berlin/mehr-verachtung-ist-kaum-vorstellbar-berlins-verkehrssenatorin-wollte-lieferwagen-auf-bus-und-radspur-halten-lassen-15568626.html
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
-#: last_checked: 2026-04-06 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten

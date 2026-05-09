@@ -1278,7 +1278,7 @@ Gotenstr. (Schöneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article411451478/neues-berliner-quartier-bekommt-modernen-platz-was-genau-geplant-ist.html
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10270 (Antrag) (Charlotte-Wolf-Platz oder Charlotte-Wolff-Platz?)
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
-#: last_checked: 2026-04-22 (mapillary)
+#: last_checked: 2026-05-09
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (entwicklungsstadt)
 (Gotenstr. - Ella-Barowsky-Str.)	NN 7497,7761 7551,7851
@@ -1740,7 +1740,8 @@ Herbert-von-Karajan-Str.	N 8005,11627 7943,11431
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10250 (offizielle Umbenennung in "Scharounplatz") --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_46_5413_5496_online.pdf (Straßenumbenennung) --- #: XXX wann wird der Platz offiziell umbenannt? Wird es die Scharounstr. weiterhin geben? --- #: osm_watch: way id="694745014" version="12" --- #: last_checked: 2020-11-24 --- #: next_check: 2020-12-07
 #: oldname: -202012: Scharounstr.
 Scharounplatz	N 7943,11431 8083,11381
-Hofjägerallee (Tiergarten)	HH 6826,11479 6809,11570 6778,11742 6744,11936
+#: oldname: -20260509: Hofjägerallee (Tiergarten)
+Helmut-Kohl-Allee	HH 6826,11479 6809,11570 6778,11742 6744,11936
 Großer Stern	HH 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6812,12057 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010
 Bellevueallee	NN 7031,12320 7288,12156 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
 Ahornsteig	NN 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
@@ -4245,12 +4246,12 @@ Ehrenbergstr. (Dahlem)	N 2532,4364 2630,4432 2762,4522 2852,4584 2937,4645 3057,
 Leichhardtstr.	N 1304,4334 1310,4335 1445,4351 1500,4356 1543,4341 1608,4313 1659,4297 1761,4255 1855,4227 1964,4192 2000,4179 2047,4162
 Breisacher Str.	N 2054,4190 2147,4173 2169,4169 2233,4156 2280,4148 2372,4127
 Boltzmannstr.	N 1964,4192 1992,4325 2067,4435 2085,4492 2136,4666
-Forbacher Str.	N 1474,3688 1607,3708 1604,3770 1603,3909
+Forbacher Str.	N 1474,3688 1607,3708 1604,3770 1603,3906
 Lützelsteiner Weg	N 1385,4138 1478,4206 1500,4356 1511,4422 1569,4600 1603,4637 1667,4664 1690,4708
 Garystr.	H 2407,4280 2254,4376 2214,4394 2133,4413 2067,4435 1966,4498 1951,4509 1866,4572 1812,4608 1770,4669 1722,4701 1690,4708 1441,4741
 Brümmerstr.	H 2027,4792 2079,4769 2185,4831 2302,4914 2469,5043 2523,5114 2746,5537 2797,5624 2823,5672
 Berliner Str. (Zehlendorf, Dahlem)	HH 2308,3862 2230,3823 1868,3626 1552,3460 1415,3362 1338,3300 1228,3210 1125,3139 1054,3107 1022,3095 945,3061 820,3081
-Schützallee	N 2230,3823 2160,3854 1987,3888 1939,3893 1800,3903 1787,3905 1741,3907 1664,3907 1603,3909 1523,3904 1462,3906 1389,3900 1276,3892 1139,3876 1015,3858 891,3828 732,3780 627,3749 458,3697
+Schützallee	N 2230,3823 2160,3854 1987,3888 1939,3893 1800,3903 1778,3905 1741,3907 1664,3907 1603,3906 1523,3904 1462,3906 1389,3900 1276,3892 1139,3876 1015,3858 891,3828 732,3780 627,3749 458,3697
 Schweitzerstr.	N 719,3411 678,3457 641,3548 640,3669 627,3749 586,3833 501,3938
 Löhleinstr.	H 2027,4792 2095,4805 2166,4858 2212,4891 2280,4941 2454,5067 2499,5144 2717,5578
 (zur Löhleinstr.)	NN 2717,5578 2771,5674
@@ -18838,7 +18839,7 @@ Harnackstr. (Dahlem)	N 1951,4509 2004,4575 2017,4639 1991,4692
 Von-Wettstein-Str.	N 1691,3990 1612,3995 1617,4054
 Schlettstadter Str.	N 1077,3753 1422,3637 1485,3630 1817,3732 1926,3758 1935,3827 1939,3893
 Ersteiner Str.	N 1604,3770 1781,3807 1935,3827
-Karl-Schmidt-Rottluff-Weg	NN 1787,3905 1781,3807 1796,3765 1817,3732 1868,3626
+Karl-Schmidt-Rottluff-Weg	NN 1778,3905 1781,3807 1796,3765 1817,3732 1868,3626
 Zaberner Str.	N 1276,3892 1252,3821
 Isenheimer Weg	N 1389,3900 1387,3821
 (Molsheimer Str. - Schützallee)	NN 1758,3985 1741,3907
@@ -20010,7 +20011,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-05-08 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
@@ -21180,7 +21181,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025) (bis 31.08.2026) (inaktiv)
 #: source_id: LMS-BR:233438/72 viz2021:13.33801,52.51361,09.01.2025,11:20 viz2021:13.33801,52.51361, (bis 31.08.2026)
-#: last_checked: 2026-04-15
+#: last_checked: 2026-05-09
 #: check_frequency: 180d
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

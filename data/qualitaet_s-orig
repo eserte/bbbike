@@ -1723,6 +1723,7 @@ Oberwallstr.: Kleinsteinpflaster	Q1- 9883,12251 9877,12293 9873,12315
 Oberwallstr.: mäßiger Asphalt	Q1+ 9873,12315 9858,12410
 Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5312,9594 5297,9579
 Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3983,11289 3986,11347 3988,11502
+Krumme Str.: Asphalt mit einigen Schäden	Q0- 3976,11869 3969,11675
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
 #: note: von der Bahn aus gesehen vvv
 #: confirmed_by: Stephan Hammerstein vvv
@@ -3465,7 +3466,7 @@ Sven-Hedin-Str.: asphaltierte Fahrbahn, asphaltierter Radweg	Q0 458,3697 394,369
 Sven-Hedin-Str.: asphaltierte Fahrbahn, Verbundsteinpflasterradweg	Q0 263,3779 199,3774 181,3771 16,3744 -92,3724 -141,3715 -267,3657 -370,3585 -478,3509 -548,3467 -645,3434 -741,3410 -800,3409 -968,3438 -1012,3465
 #: note: Q2 von Dominik Seelow hochgestuft
 Schützallee: kleinteiliges Kopfsteinpflaster auf der Fahrbahn, Radweg mit unebenen Pflaster	Q1 2230,3823 2160,3854 1987,3888 1939,3893
-Schützallee: asphaltierte Fahrbahn, Radweg mit unebenen Pflaster	Q0 1939,3893 1800,3903 1787,3905 1741,3907 1664,3907 1603,3909 1523,3904 1462,3906 1389,3900 1276,3892 1139,3876 1015,3858 891,3828 732,3780 627,3749 458,3697
+Schützallee: asphaltierte Fahrbahn, Radweg mit unebenen Pflaster	Q0 1939,3893 1800,3903 1778,3905 1741,3907 1664,3907 1603,3906 1523,3904 1462,3906 1389,3900 1276,3892 1139,3876 1015,3858 891,3828 732,3780 627,3749 458,3697
 (Robert-W.-Kempner-Str. - Colmarer Weg): Verbundsteinpflasterradweg	Q1+ 2012,3356 2071,3274
 Eisackstr.: mäßiger Asphalt	Q1+; 6431,7883 6471,7742
 Eisackstr.: Asphalt	Q0; 6471,7742 6431,7883
@@ -13615,7 +13616,7 @@ Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 1976
 #: by: https://www.deutsches-architekturforum.de/thread/13768-neuk%C3%B6lln-kleinere-projekte/?postID=789650#post789650
 #: by: https://www.porr.de/news-presse/mitteilungen/detail/nachhaltiges-bauen-in-neukoelln-fuer-wohnprojekt-oder-wird-praedikat-nawoh-qng-angestrebt (Fertigstellung März 2027)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/page-2#post-27248
-#: osm_watch: way id="933570857" version="5"
+#: osm_watch: way id="933570857" version="6"
 #: XXX die Straße wird neu gemacht, wird evtl. nach den Hochbauarbeiten komplettiert
 #: last_checked: 2026-05-07 (mapillary)
 #: check_frequency: 120d
@@ -14495,6 +14496,8 @@ Moderlieschenstr.: Betonplatten	Q1- -732,15940 -866,16042
 (Müllerstr. - Ruheplatzstr.): Asphalt	Q0 7607,15282 7617,15307 7627,15412
 # 
 Margot-Friedländer-Platz: große Steinplatten	Q1+ 8938,11255 8935,11277 8830,11264 8833,11241
+# 
+Karl-Schmidt-Rottluff-Weg: Asphalt stellenweise mit Unebenheiten und Schäden	Q1 1778,3905 1781,3807 1796,3765 1817,3732 1868,3626
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -18333,7 +18336,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="17"
-#: last_checked: 2025-12-29
+#: last_checked: 2026-05-09
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1- 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -30523,7 +30526,7 @@ Lützelsteiner Weg: Beton	Q0 1385,4138 1478,4206 1500,4356
 Balbronner Str.: Asphalt	Q1 1740,4176 1954,4108
 Zaberner Str.: Beton	Q0 1276,3892 1252,3821
 Isenheimer Weg: Beton	Q0 1389,3900 1387,3821
-Forbacher Str.: Beton	Q1 1474,3688 1607,3708 1604,3770 1603,3909
+Forbacher Str.: Beton	Q1 1474,3688 1607,3708 1604,3770 1603,3906
 Ersteiner Str.: Beton	Q1 1604,3770 1781,3807 1935,3827
 # REMOVED (laut osm note abgeschlossen) --- #: next_check_id: SCHLETTSTADTER-2024 --- #: by: https://berliner-abendblatt.de/2022/07/18/huckelpiste-schlettstadter-strasse-wird-saniert/ --- #: osm_watch: note 4231879 3 --- #: XXX Sanierung ab 2024 --- #: note: Laut Baustellenschild der Wasserbetriebe bis Mai 2024; mittlerweile bis August 2024 --- #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? --- #: last_checked: 2024-08-09 --- #: check_frequency: 90d
 #: historical_note: früher (bis 2024) Asphalt, Q1
@@ -31568,6 +31571,7 @@ Karlsbader Str.: Kopfsteinpflaster	Q2 2207,7850 2216,8079
 #: confirmed_by: srt
 Karlsbader Str.: Asphalt	Q0 2216,8079 2219,8263 2223,8500
 Plöner Str.: Asphalt	Q0 2308,8071 2310,8184 2315,8431
+#: confirmed_by: srt
 Gneiststr. (Grunewald): Asphalt	Q0 1421,9173 1587,9320
 Niersteiner Str.: Asphalt	Q0 1677,9404 1562,9436
 #: corrected_by: srt (Kleinpflaster -> ...)

@@ -438,7 +438,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-05-08
+#: last_checked: 2026-05-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-05 (VIZ-Verkehrsmeldung)
 #: next_check: 2030-12-31 (entwicklungsstadt)
@@ -511,7 +511,7 @@ Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,121
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-05-07 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -641,7 +641,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-05-07 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
 #: osm_watch: way id="153698394" version="18"
@@ -1475,6 +1475,25 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 # 
 ### Lichterfelde ###
 # 
+#: note: laut VIZ-Verkehrsmeldung ist nur der Kfz-Verkehr betroffen; bis zur Baseler Str. gibt's auch einen Hochbordradweg
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
+#: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026)
+#: last_checked: 2026-05-09 vvv
+#: next_check: 2026-09-04 vvv
+#: valid: -20260904 vvv
+# REMOVED (Baustelle ist gewandert) --- Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	DH:h=q2,294 3313,2842 3171,2848 3025,2858 3019,2858
+#: note: auf der Fahrbahn gilt eine Einbahnstraßenregelung, frei Richtung Osten
+Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	q2::inwork; 3641,2827 3456,2835 3313,2842 3171,2848
+# REMOVED (Baustelle ist gewandert) --- Baseler Str.: Anbindung Finckensteinallee gesperrt, Umwege	DH:h=q3,90:len=50 3174,3052 3171,2848 3163,2598
+# REMOVED (Baustelle ist gewandert) --- Baseler Str.: Anbindung Finckensteinallee gesperrt, Umwege	DH:h=q3,90:len=50 3174,3052 3171,2848 3313,2842
+# REMOVED (Baustelle ist gewandert) --- Baseler Str.: Anbindung Finckensteinallee gesperrt, Umwege	DH:h=q4,90:len=50 3163,2598 3171,2848 3174,3052
+Paulinenstr.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3318,3046 3313,2842
+Kadettenweg: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3459,2944 3456,2835
+Potsdamer Str.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3644,2937 3641,2827
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
 # REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (ab 22.8.2022, kein Endedatum) --- #: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/ (zwischen Jägerstraße und Parallelstraße bis Ende Oktober 2022, nur für Kfz-Verkehr gesperrt?) --- #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (ca. bis 28.10.2022) --- #: source_id: viz2021:13.331807,52.425977,22.08.2022,07:00 (nur Kfz-Verkehr) (mittlerweile bis 4.11.2022) (inaktiv) vvv --- #: last_checked: 2022-10-15 vvv --- #: next_check: 2022-11-04 vvv --- #: valid: -20221104 vvv --- #: note: hier nur 30m vor der Jägerstr. --- Lorenzstr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 5539,2497 5660,2219 --- Lorenzstr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 5660,2219 5720,2081 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # REMOVED --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719385.php (aufgehoben) --- #: source_id: 2147342640 --- #: last_checked: 2018-07-01 --- #: next_check: 2018-07-30 --- #: valid: -20180730 --- Dahlemer Weg: Bauarbeiten, Fahrbahn und Radweg Richtung Norden gesperrt, Gehweg darf von Radfahrern benutzt werden	q2::inwork; 2123,2803 2146,2878 2152,2912 2198,3169 2203,3213
 # 
@@ -2044,7 +2063,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="27"
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-09
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -5466,8 +5485,8 @@ Degnerstr.: Tramzufahrt, auf Bürgersteig ausweichen	q3; 16449,15604 16445,15590
 Borkumstr.: Privatgelände, Radfahren verboten	q3 11335,17807 11412,17823
 # 
 #: note: explizit für Radfahrer freigegeben ("keine Mofas")
-#: XXX_prog BS: zumindest an der der Schlettstadter Str. an beiden Seiten Bordsteine, evtl. gibt es noch mehr (ansonsten q1?)
-Karl-Schmidt-Rottluff-Weg: einige Fußgänger, Bordsteine	q2 1787,3905 1781,3807 1796,3765 1817,3732 1868,3626
+#: XXX_prog BS: an der Schlettstadter Str. an beiden Seiten Bordsteine, an der Ersteiner Str. gibt es provisorisch aussehende Anrampungen
+Karl-Schmidt-Rottluff-Weg: einige Fußgänger, Bordsteine	q2 1778,3905 1781,3807 1796,3765 1817,3732 1868,3626
 # 
 Anna- und Hermann-Muthesius-Steig: einige Fußgänger, Bäume auf dem Weg	q2 -3126,1798 -3087,1734
 # 
@@ -7621,7 +7640,7 @@ Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Bei Sperrungen des Teltowkanaluferwegs ist hier die offizielle Umleitung für Fußgänger und *Radfahrer*, trotz Grünanlage.
-#: last_checked: 2025-06-25 vvv
+#: last_checked: 2026-05-09 vvv
 #: next_check: 2026-06-19 (VIZ-Verkehrsmeldung) vvv
 #: valid: !20250617-20260619
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065

@@ -2709,12 +2709,12 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
 #: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1777759200,
+         'from' => 1778968800,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 4.5.2026 bis 8.5.2026',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 18.5.2026 bis 22.5.2026',
          'type' => 'gesperrt',
-         'until' => 1778277599
+         'until' => 1779487199
        },
        undef,
        undef,
@@ -3626,6 +3626,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
 #: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
 #: source_id: LMS-BR:407312/72 viz2021:13.33123,52.50383,06.05.2026,12:00 (bis 11.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:407493/72 viz2021:13.33123,52.50383,08.05.2026,04:00 (bis 11.05.2026)
+#: source_id: LMS-BR:407634/72 viz2021:13.33123,52.50383,09.05.2026,10:00 (bis 10.05.2026)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -6599,19 +6600,21 @@ Kreuzungsbereich Ariadnestr.	q3::inwork 2376,25498 2502,25544 2643,25500
 #: osm_watch[closed]: note 3631209 6
 #: osm_watch: note 4556342 7
 #: osm_watch: note 4741254 8
+#: osm_watch: note 5161618 2
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
 #: add_fragezeichen: Besteht die Sperrung des Uferwegs weiterhin? vvv
-#: last_checked: 2026-04-24 (osm) vvv
-#: check_frequency: 210d vvv
-#: next_check: 2026-06-30 (bew.berlin) vvv
+#: last_checked: 2026-05-09 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-12-31 (Baustellenschild) vvv
 ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: osm_watch: way id="46907541" version="19"
 #: osm_watch: way id="1116849053" version="5"
-	2::inwork 3980,2102 4064,2293 4209,2641 4220,2664
 #: osm_watch: way id="77098244" version="20"
-	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
+	2::inwork 3980,2102 4064,2293 4209,2641
+# REMOVED (hier offen) ---	2::inwork 4209,2641 4220,2664
+# REMOVED (hier stehen Bauzäune herum, aber ist passierbar, allerdings vermutlich ohne größeren verkehrlichen Wert) ---	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6619,7 +6622,7 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 ',
          'from' => 1697320800,
          'id' => 3728,
-         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Sperrung möglicherweise bis Ende Juni 2026',
+         'text' => 'Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Sperrung möglicherweise bis Ende 2026',
          'type' => 'gesperrt',
          'until' => 1782856799
        },
@@ -7766,12 +7769,13 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,T,W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
-#: last_checked: 2026-04-11 (traffic, nur Bäkebrücke) vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-19 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: osm_watch: way id="1328520572" version="1" --- Bäkestr.: etwa 50m der Fahrbahn gesperrt	q2::inwork 4411,3180 4587,3097
 #: osm_watch: way id="5363433" version="28"
 #: osm_watch[closed]: note 4442541 4
+#: osm_watch: note 4825689 4
 # REMOVED --- #: note: eigentlich q3-::inwork --- Bäkebrücke: Fahrbahn gesperrt	q3::inwork 4587,3097 4659,3065
 #: note: laut BA-Pressemitteilung auch für den Radverkehr frei
 #: note: nur etwa 50m, deshalb nur q2
@@ -8119,7 +8123,7 @@ Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2026-04-27
+#: last_checked: 2026-05-09
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 # REMOVED (hier Radfahrer frei) ---	q4::inwork; 7696,7771 7632,7807
@@ -8609,21 +8613,22 @@ Merler Weg	q4::inwork 18852,13269 19180,13219
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
 #: also_indoor: traffic (G,no-T)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
-#: osm_watch: note 4702892 3
-#: last_checked: 2026-02-25 vvv
-#: check_frequency: 60d vvv
-# REMOVED --- #: check_frequency: 120d vvv
+#: last_checked: 2026-05-09 vvv
+# REMOVED --- #: check_frequency: 60d vvv
+#: check_frequency: 120d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
-# REMOVED --- Gutenbergstr.: Einbahnstraße	q4::inwork; 5518,12159 5317,12242
-Gutenbergstr.: Fahrbahn gesperrt	q4::inwork 5518,12159 5317,12242
-Hannah-Karminski-Str.	2::inwork 5317,12242 5360,12331
+#: osm_watch: note 4702892 4
+Gutenbergstr.: Einbahnstraße	q4::inwork; 5518,12159 5317,12242
+# REMOVED --- Gutenbergstr.: Fahrbahn gesperrt	q4::inwork 5518,12159 5317,12242
+#: osm_watch: note 5010431 1
+Hannah-Karminski-Str.: Fahrbahn gesperrt	q4::inwork 5317,12242 5360,12331
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 4295,
-         'text' => 'Gutenbergstr.: Hochbauarbeiten zwischen Englische Str. und Hannah-Karminski-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Gutenbergstr.: Einbahnstraßenregelung zwischen Englische Str. und Hannah-Karminski-Str., offen Richtung Westen, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8857,20 +8862,18 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2; im April 2026 nach Hinweis von Thomas K. wieder reaktiviert
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: last_checked: 2026-04-21 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
+#: last_checked: 2026-05-09 vvv
+# REMOVED --- #: check_frequency: 14d (traffic) vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-11-04 (Halteverbotsschilder) vvv
-# REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
-#: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3
-#: XXX Ist dieser Abschnitt noch immer gesperrt?
-#: next_check: 2026-04-21
-Borstellstr.	q4::inwork 6532,4422 6491,4391
 #: note: hier Halteverbotsschilder bis 4.11.2025
-Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
+Borstellstr.	q4::inwork 6309,4328 6368,4324
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
+# REMOVED (hier mittlerweile Fahrbahn frei) --- Brandenburgische Str.	q4::inwork 6638,4394 6532,4422
+# REMOVED (fertig) --- #: historical_note: früher (Frühjahr 2025): "Sperrung erst kurz vor der Kreuzung", q3 --- #: XXX Ist dieser Abschnitt noch immer gesperrt? --- #: next_check: 2026-04-21 --- Borstellstr.	q4::inwork 6532,4422 6491,4391
 ',
          'from' => 1747223796,
          'id' => 4336,
@@ -8949,7 +8952,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324 6391,4328
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-04-27 (traffic) vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
@@ -9071,7 +9074,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: note: Halteverbotsschilder bis 31.03.2026, mittlerweile bis 31.05.2026
 #: note: Baustellenschild der Wasserbetriebe zu Bauarbeiten in der Gegend bis Dezember 2026
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-04-01 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-05-31 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork 4500,6612 4630,6534
@@ -9177,7 +9180,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-05-08
+#: last_checked: 2026-05-09
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9383,8 +9386,8 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-04 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2026-05-09 vvv
+#: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
 # REMOVED (mittlerweile hier offen) --- Rotherstr.	q4::inwork; 13755,10896 13856,10864
@@ -9664,7 +9667,7 @@ Schlegelstr.: Anbindung Chaussestr. unterbrochen	q3::inwork 9044,13711 9231,1384
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-09
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9853,9 +9856,9 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: also_indoor: traffic (none)
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
-#: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen
-#: osm_watch: note 4847575 7
-#: last_checked: 2026-04-22 (mapillary)
+#: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
+#: osm_watch: note 4847575 8
+#: last_checked: 2026-05-09
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
 	q4::inwork 7497,7761 7499,7880
@@ -9928,10 +9931,10 @@ Hönower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
 #: add_fragezeichen: Ist der Uferweg unter dem Siemenssteg weiterhin gesperrt?
 # REMOVED --- #: XXX: Stimmt die Einbahnstraßenrichtung? Und warum steht in der VIZ-Verkehrsmeldung "ab Alt-Lietzow", müsste es nicht "ab Arcostr." heißen?
 #: note: Evtl. steht die Sperrung des Uferwegs auch mit der Einbahnstraßenregelung am Iburger Ufer im Zusammenhang?
-#: last_checked: 2026-04-15
-#: check_frequency: 60d
-#: next_check: 2026-04-30 (VIZ-Verkehrsmeldung zum Iburger Ufer, wird vermutlich verlängert) (wurde aber nicht verlängert)
-# REMOVED --- #: next_check: 2027-09-30 (Baustellenschild)
+#: last_checked: 2026-05-09
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung zum Iburger Ufer, wird vermutlich verlängert) (wurde aber nicht verlängert)
+#: next_check: 2027-09-30 (Baustellenschild)
 # REMOVED (hier für Radfahrer frei in Gegenrichtung) --- Iburger Ufer	q4::inwork; 3889,12591 4085,12614 4129,12619 4160,12612 4289,12576
 Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 ',
@@ -10620,14 +10623,14 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdl-hohenstaufen-pallas-und-goebenstr/?postID=795563#post795563
 #: also_indoor: traffic (G,no-T,no-W,no-H)
 #: osm_watch: way id="251962463" version="4"
-#: last_checked: 2026-05-02 (traffic)
+#: last_checked: 2026-05-09
 #: check_frequency: 30d
 #: next_check: 2027-12-31 (neubaukompass website)
 	q4::inwork; 4886,6819 4886,6711
 ',
          'from' => undef,
          'id' => 4574,
-         'text' => 'Rheingaustr.: Hochbauarbeiten, Einbahnstraßenregelung, evtl. ist auch der Radverkehr betroffen, Ende der Bauarbeiten unbekannt',
+         'text' => 'Rheingaustr.: Hochbauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -10943,6 +10946,19 @@ Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,
          'text' => 'Grünheider Weg: Leitungsarbeiten zwischen Kalkbergeweg und Püttbergeweg, Sperrung, vom 7.5.2026 bis 22.5.2026',
          'type' => 'handicap',
          'until' => 1779487199
+       },
+       {
+         'data' => '#: also_indoor: traffic (T,G,H,no-W)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2026-05-09
+#: check_frequency: 21d (traffic)
+	q4::inwork 5220,2030 5277,2054 5376,2097
+',
+         'from' => undef,
+         'id' => 4603,
+         'text' => 'Jägerstr.: Bauarbeiten, Sperrung, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

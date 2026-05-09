@@ -106,7 +106,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="26"
 #: osm_watch: way id="1430487470" version="2"
-#: last_checked: 2026-04-22 (mapillary)
+#: last_checked: 2026-05-09
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -415,7 +415,7 @@ Große Präsidentenstr.	1 10105,13004 10219,13102
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (geplant)
 #: source_id: viz2021:13.312025,52.498061,30.07.2024,07:00 (Sackgasse, bis 28.02.2025) (keine Erwähnung der Sackgasse mehr, bis 30.04.2025) (bis 16.06.2025) (inaktiv)
 #: osm_watch: way id="4437134" version="19"
-#: last_checked: 2026-03-18
+#: last_checked: 2026-05-09
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-02-28
 Duisburger Str.	1 4183,10144 3880,10154
@@ -3658,10 +3658,12 @@ Drängelgitter	BNP:5 4272,2704
 # REMOVED (gibt's mittlerweile nicht mehr) --- Drängelgitter	BNP:5 4202,2622
 #: by: ^^^
 #: by: Kerstin Klemann: vvv
-#: confirmed_by: srt (noch immer enge Drängelgitter)
-Drängelgitter (2x), für Anhänger nicht passierbar	BNP:10::trailer=no 2009,3362
+#: historical_note: früher standen hier enge Drängelgitter, für Anhänger nicht passierbar vvv
+#: corrected_by: srt (Abstand der Drängelgitter etwas vergrößert)
+Drängelgitter (2x)	BNP:10::trailer=20 2009,3362
 #: corrected_by: srt (Abstand der Drängelgitter etwas vergrößert)
 Drängelgitter (2x)	BNP:10::trailer=20 1980,3409
+#: historical_note ^^^
 #: by: ^^^
 Schwingtor	BNP:5::trailer=10 15054,10168
 Schwingtor	BNP:5::trailer=10 15097,10255
@@ -4268,7 +4270,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-05-02 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt, MoPo) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4841,19 +4843,19 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 # REMOVED (offen) --- #: by: https://berliner-abendblatt.de/2023/01/02/adlershof-neues-quartier-fuer-rund-1-000-menschen/ (keine Erwähnung) --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/autofreies-quartier-wohnen-am-campus-nach-drei-jahren-bauzeit-fertiggestellt_a367172 (keine Erwähnung) --- #: XXX Laut Schilder Eröffnung Ende Mai 2023 --- am 04.06.2023 standen aber immer noch Bauzäune --- #: note: laut osm ist der nördliche Abschnitt mittlerweile offen --- #: last_checked: 2023-06-19 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2023-05-31 vvv --- #: osm_watch: way id="1155774800" version="1" --- Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315 --- #: osm_watch: way id="1155774804" version="3" --- Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18835,3562 18851,3598 --- #: osm_watch: way id="1155774792" version="2" --- (Straßenbahnstrecke - Konrad-Zuse-Str.): noch nicht fertiggestellt	2::inwork 18833,3388 18857,3418 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: TELTOWKANALUFERWEG-2023
-# REMOVED --- #: note: siehe auch Eintrag in temp_blockings (URLs und osm watches dort)
-# REMOVED --- #: by: Karsten S.: wieder (temporär?) frei
-# REMOVED --- #: last_checked: 2023-11-04 vvv
-# REMOVED --- #: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2024-12-31 vvv
-# REMOVED --- #: valid: -20241231 vvv
-# REMOVED --- # REMOVED (hier möglicherweise noch nicht gesperrt) --- Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
-# REMOVED --- Uferweg am Teltowkanal	2::inwork 3980,2102 4209,2641 4220,2664
-# REMOVED --- Uferweg am Teltowkanal	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-# REMOVED --- #: last_checked ^^^
+#: note: siehe auch Eintrag in temp_blockings (URLs und osm watches dort)
+#: by: Karsten S.: wieder (temporär?) frei
+#: last_checked: 2026-05-09 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-12-31 vvv
+#: valid: -20261231 vvv
+Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
+# REMOVED (offen) --- Uferweg am Teltowkanal	2::inwork 3980,2102 4209,2641 4220,2664
+# REMOVED (offen, allerdings stehen hier Bauzäune rum) --- Uferweg am Teltowkanal	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
+#: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (offiziell nun offen) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500 --- # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5" --- #: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht; mittlerweile kann man (manchmal?) gut passieren (gesehen 2024-09-01 (Sun) mittags) --- #: last_checked: 2024-12-04 --- #: check_frequency: 21d --- Am Generalshof: Hochbauarbeiten, Fahrbahn offiziell noch gesperrt	2::inwork 22057,5305 22095,5344
 # REMOVED (hier schon passierbar --- Am Generalshof: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 22095,5344 22140,5392
@@ -5097,7 +5099,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2026-04-15 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5163,7 +5165,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-05-04 vvv
+#: last_checked: 2026-05-09 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5342,7 +5344,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Straßenlandwidmung, Grunerstr.)
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1647248.php
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-05-08
+#: last_checked: 2026-05-09
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5350,7 +5352,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-05-08
+#: last_checked: 2026-05-09
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5780,7 +5782,7 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-14
 # REMOVED --- Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 * 8673,12315 *
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon
-#: last_checked: 2026-05-03 (webcam)
+#: last_checked: 2026-05-09
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 
