@@ -22647,7 +22647,7 @@ EOF
 #: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
 #: source_id: LMS-BR:407312/72 viz2021:13.33123,52.50383,06.05.2026,12:00 (bis 11.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:407493/72 viz2021:13.33123,52.50383,08.05.2026,04:00 (bis 11.05.2026)
-#: source_id: LMS-BR:407634/72 viz2021:13.33123,52.50383,09.05.2026,10:00 (bis 10.05.2026)
+#: source_id: LMS-BR:407634/72 viz2021:13.33123,52.50383,09.05.2026,10:00 (bis 10.05.2026) (inaktiv)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 	q4::temp 5072,10701 5069,10662
@@ -52892,7 +52892,7 @@ EOF
        text  => 'Bahnübergang Werneuchen: Sperrung, evtl. ist auch der Radverkehr betroffen, vom 08.05.2026 18:00 Uhr bis 10.05.2026 08:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: 266000282 (bis 10.05.2026)
+#: source_id: 266000282 (bis 10.05.2026) (inaktiv)
 	2::inwork 29505,24363 29414,24387 29334,24409
 EOF
      },
