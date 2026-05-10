@@ -1,6 +1,6 @@
 # BBBike Agent Instructions
 
-Welcome, Jules. This file provides context and guidelines for working with the BBBike repository.
+Welcome, agent. This file provides context and guidelines for working with the BBBike repository.
 
 ## Project Overview
 
@@ -38,6 +38,8 @@ BBike is a route-finder for cyclists, primarily focused on Berlin and Brandenbur
 
 ## Continuous Integration and Infrastructure
 
+- **GitHub Actions**: Primarily used for CI testing.
+  - Note: Occasionally, network problems can occur during workflow execution, leading to failures in fetching required packages. If you encounter such failures, recognize them as transient infrastructure issues and do not attempt to fix or workaround them in the code.
 - **OBS Support**: The project uses OpenSUSE Build Service (OBS) for newer Linux distributions. The environment variable `USE_ESERTE_OBS` enables and prioritizes OBS repository support.
 - **Docker**: `miscsrc/docker-bbbike` is the primary tool for managing Docker-based builds and tests.
 
