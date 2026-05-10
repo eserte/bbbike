@@ -800,7 +800,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: by: https://bsky.app/profile/eserte.bsky.social/post/3mf5bn74i322s
 #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
-#: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],re-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
+#: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-re-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
 #: last_checked: 2026-05-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
@@ -891,8 +891,8 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id[inactive]: bvg2024:m27#HIM_FREETEXT_302033
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: osm_watch: way id="1392961223" version="5"
-#: also_indoor: traffic (T,re-G[viel zu kurz?],re-W,re-ex-H)
-#: last_checked: 2026-04-12
+#: also_indoor: traffic (T,ex-G[viel zu kurz?],ex-W,re-ex-H)
+#: last_checked: 2026-05-10
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
@@ -1195,7 +1195,7 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-05-03
+#: last_checked: 2026-05-10
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3926,7 +3926,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-05-10 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="13"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467

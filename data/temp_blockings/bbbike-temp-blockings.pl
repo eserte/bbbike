@@ -29641,10 +29641,10 @@ EOF
      { from  => undef, # 
        until => undef, # 1663265122, # undef, # 1573754401, # undef, # XXX
 #      text  => 'Treptower Park, Weg zwischen Karpfenteich und Sowjetisches Ehrenmal: Bauarbeiten, Weg gesperrt',
-#      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt, u.a. der Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
 #      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; Engstelle und Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr.',
-       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Ende April 2026: Bauzäune sind üblicherweise weggeschoben)',
+#      text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt; mögliche Umwege wegen Bauarbeiten am Verbindungsweg Puschkinallee/S-Bhf. Treptower Park - Am Treptower Park/Moosdorfstr. (Stand Ende April 2026: Bauzäune sind üblicherweise weggeschoben)',
+       text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176947.php (kein Datum genannt)
@@ -29660,8 +29660,6 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
 #: last_checked: 2026-04-29 vvv
 #: check_frequency: 14d vvv
-#: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025
-Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind oft weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
 zwischen Karpfenteich und Sowjetisches Ehrenmal: gesperrt	2::inwork 15181,8967 15250,8911
 zwischen Karpfenteich und Sowjetisches Ehrenmal: kann gesperrt sein	2::inwork 15159,8934 15181,8967
 #: check_frequency ^^^
@@ -29690,6 +29688,7 @@ zwischen Karpfenteich und Sowjetisches Ehrenmal: kann gesperrt sein	2::inwork 15
 # REMOVED (offen) ---	2::inwork 15298,8781 15343,8714
 # REMOVED (passierbar) ---	2::inwork 15343,8714 15378,8668
 # REMOVED --- Puschkinallee - Am Treptower Park	2::inwork 14347,9452 14398,9373
+# REMOVED (mittlerweile ist der Bauzaun an der Nordseite verschwunden und an der Südseite gibt es eine offiziell aussehende Öfnung) --- #: note: laut BA-Seite Fertigstellung an die Straße "Am Treptower Park" bis Jahresende 2025 --- Puschkinallee - Am Treptower Park: offiziell gesperrt, Bauzäune sind oft weggeschoben	2::inwork 14320,9530 14347,9452 14398,9373 14382,9299
 EOF
      },
      { from  => 1538258400, # 2018-09-30 00:00
@@ -38880,18 +38879,18 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1353123.php (Verkehrsfreigabe am 8.8.2023)
 #: source_id: viz2021:13.350401,52.428232,13.04.2023,06:00 (bis 31.07.2023) (bis 04.08.2023) (bis 08.08.2023) (inaktiv)
 #: source_id: viz2021:13.352741,52.427535,13.04.2023,06:00 (bis 09.08.2023) (inaktiv)
-#: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023
-#: note: an der östlichen Seite sind sogar die Gehwege gesperrt
+#: also_indoor: traffic (T,G,H[ganz kurz],ex-W)
+#: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
+#: last_checked: 2026-05-10 (traffic)
+#: check_frequency: 14d (traffic)
+Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7172,2343 7051,2366 6965,2418
+# REMOVED --- #: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023 --- #: note: an der östlichen Seite sind sogar die Gehwege gesperrt
 # REMOVED --- #: XXX: nächste Bauabschnitte: von Beselerstraße bis Am Gemeindepark: vom 03.05.2023 bis 28.06.2023 + von Am Gemeindepark bis Malteserstraße: vom 29.06.2023 bis 31.07.2023 --- #: last_checked: 2023-08-05 --- #: next_check: 2023-08-09
 # REMOVED --- #: also_indoor: traffic (B[Gallwitz-AmGemeindepark],G) --- #: next_check: 2022-11-01
 # REMOVED (hier war schon laut Plan) --- westlicher Abschnitt bis Beselerstr.	q4::inwork 6718,2443 6836,2460 6965,2418
 # REMOVED (hier war schon laut Plan) --- mittlerer Abschnitt	q4::inwork 6965,2418 7051,2366 7172,2343
 # REMOVED (alte Sperrung) --- östlicher Abschnitt ab Am Gemeindepark	2::inwork 7172,2343 7285,2377
-#: also_indoor: traffic (T,G,H,W)
-#: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-04-21
-#: check_frequency: 21d (traffic)
-Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7285,2377 7172,2343 7051,2366 6965,2418
+# REMOVED (hier nicht mehr?) --- Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7285,2377 7172,2343
 EOF
      },
      { from  => undef, # 
@@ -40729,7 +40728,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2026-04-05 (mapillary)
+#: last_checked: 2026-05-08 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -41020,7 +41019,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-05-03 vvv
+#: last_checked: 2026-05-10 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -43935,8 +43934,8 @@ EOF
        until => undef, # 1737734400, # 2025-01-24 17:00
 #      text  => 'Magnus-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, vom 19.02.2024 07:00 bis 24.01.2025 17:00',
 #      text  => 'Magnus-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, voraussichtlich bis Ende Oktober 2025',
-#      text  => 'Magnus-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, Ende der Sperrung unbekannt',
-       text  => 'Magnus-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, geplant bis Ende April 2026, voraussichtlich wird die Sperrung verlängert',
+#      text  => 'Magnus-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, geplant bis Ende April 2026, voraussichtlich wird die Sperrung verlängert',
+       text  => 'Magnus-Hirschfeld-Ufer: in Höhe Kanzlergarten Baustelleneinrichtung, für Rad- und Fußverkehr gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KANZLERPARK-2024
@@ -43949,7 +43948,7 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2026-04-29 (daf)
+#: last_checked: 2026-05-08 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-04-30 (Schilder vor Ort)
 # REMOVED --- #: check_frequency: 120d
@@ -46112,7 +46111,7 @@ EOF
 #: osm_watch: way id="105827213" version="12"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 4
-#: last_checked: 2026-04-11 (research)
+#: last_checked: 2026-05-10 (research)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -47354,7 +47353,7 @@ EOF
 #: also_indoor: traffic (ex-T,G[zu lang])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
-#: last_checked: 2026-04-12 (traffic)
+#: last_checked: 2026-05-10 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2028-12-31
@@ -49796,9 +49795,9 @@ EOF
 #: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer; am 2026-04-18 Sat 12:16 nur auf der östlichen Seite ein Durchfahrt-verboten-Schild, keine Barrieren
 #: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein; es gibt nun in der Nähe Halteverbotsschilder bis 17.5.2026
 #: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-04-18
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: check_frequency: 30d
+#: last_checked: 2026-05-10 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
 # REMOVED (hier nicht mehr) ---	q4::inwork 22456,3889 22538,3889
 	q3::inwork 22538,3889 22666,3888
@@ -49840,7 +49839,7 @@ EOF
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand März 2026); bei osm nur die Schleusenüberfahrt als gesperrt gekennzeichnet
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2026-04-11 (research)
+#: last_checked: 2026-05-10 (research)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -50373,7 +50372,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-09 vvv
+#: last_checked: 2026-05-10 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50724,7 +50723,7 @@ EOF
      },
      { from  => undef,
        until => undef, # XXX
-       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Mitte Februar 2026: mit Bauzäunen abgesperrt)',
+       text  => 'Sellerpark - Erika-Heß-Eisstadion: kann wegen Bauarbeiten noch gesperrt sein (Stand Mitte April 2026: mit Bauzäunen abgesperrt)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
@@ -51069,7 +51068,7 @@ Bötzowstr.	q3::inwork 12280,13880 12361,13985 12423,14066
 EOF
      },
      { from  => $isodate2epoch->("2026-01-28 00:00:00"), # 1760131031, # 2025-10-10 23:17
-       until => 1775854327, # $isodate2epoch->("2026-05-30 23:59:59"), # undef, # 1761951599, # 2025-10-31 23:59
+       until => $isodate2epoch->("2026-05-30 23:59:59"), # undef, # 1761951599, # 2025-10-31 23:59
        prewarn_days => 2,
 #      text  => 'Königsheideweg: Sperrung in Höhe Späthsfelder Weg, voraussichtlich bis Ende Oktober 2025',
 #      text  => 'Königsheideweg: Sperrung der Fahrbahn in Höhe Späthsfelder Weg, Umwege, Ende der Bauarbeiten unbekannt',
@@ -51097,16 +51096,14 @@ EOF
 #: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
 #: XXX laut stromnetz-Seite ab 2026-01-30 ist der Königsheideweg wieder komplett gesperrt (-> ampel entfernen, temp blocking erweitern), voraussichtlich bis 2025-04-09
 #: also_indoor: traffic (T,G,H,W)
-#: last_checked: 2025-12-18 (VIZ) vvv
+#: last_checked: 2026-05-10 vvv
 # REMOVED --- #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2026-01-29 (stromnetz) vvv
 #: next_check: 2026-05-30 (VIZ) vvv
-# REMOVED (wieder offen) --- Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
-#: note: laut rbb noch immer gesperrt
 Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
+# REMOVED (wieder offen) --- Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
 EOF
      },
      { from  => 1760220000, # 2025-10-12 00:00
@@ -51300,7 +51297,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: UFER-2025
-#: last_checked: 2026-05-02
+#: last_checked: 2026-05-04 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2026-06-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
@@ -51654,10 +51651,10 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603695.php (Bauarbeiten 6. Oktober 2025 bis Ende Januar 2026)
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
-#: also_indoor: traffic (G,T[nur östlich],no-H,no-W)
+#: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: osm_watch: note 5206966 4
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-05-04 (traffic) vvv
+#: last_checked: 2026-05-10 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 # REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3027,10560 3123,10504
@@ -51893,7 +51890,7 @@ EOF
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 1
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
-#: last_checked: 2026-05-04 (traffic)
+#: last_checked: 2026-05-10 (traffic)
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 EOF
@@ -52358,7 +52355,7 @@ EOF
 #: osm_watch: note 5193492 3
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-05-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
@@ -52409,7 +52406,7 @@ EOF
        text  => 'Marienburger Str.: Einbahnstraßenregelung zwischen Winsstr. und Greifswalder Str.',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (G,no-T,no-H,no-W)
+#: also_indoor: traffic (ex-G,no-T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: last_checked: 2026-04-21
 #: check_frequency: 21d (traffic)
@@ -52644,7 +52641,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (G[ungenaue Richtungsangabe],T,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-05-01 (traffic)
+#: last_checked: 2026-05-10 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork; 16416,16236 16395,16099
 EOF
@@ -52714,11 +52711,13 @@ EOF
 #: osm_watch: way id="10856020" version="52"
 #: osm_watch: note 5250307 2
 #: priority: #A
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-10 vvv
+#: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (BA TK, nbb netzgesellschaft) vvv
 Kastanienallee	2::inwork 18437,7752 19045,6959
 Baustelleneinrichtungsfläche	2::inwork 19045,6959 19080,6986
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -52740,7 +52739,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
 EOF
      },
      { from  => 1776194113, # 2026-04-14 21:15
-       until => 1780264800, # 2026-06-01 00:00
+       until => 1778418424, # 1780264800, # 2026-06-01 00:00
        text  => 'Königsheideweg: Wasserrohrbruch an der Haushoferstr., Sperrung der Fahrbahn, evtl. sind auch die Gehwege gesperrt, voraussichtlich bis Mai 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
@@ -52754,9 +52753,7 @@ EOF
 #: source_id: LMS-BR:404340/72 viz2021:13.50053,52.44753, (kein Endedatum) (bis 22.05.2026)
 #: source_id: bvg2024:265#HIM_FREETEXT_330512 (kein Endedatum)
 #: source_id: bvg2024:x11#HIM_FREETEXT_330465 (kein Endedatum)
-#: last_checked: 2026-04-13 (VIZ)
-#: check_frequency: 21d
-#: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
+# REMOVED (nördlicher Gehweg frei) --- #: last_checked: 2026-04-13 (VIZ) --- #: check_frequency: 21d --- #: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
 	2::inwork 17115,4757 17037,4794
 EOF
      },
@@ -52794,7 +52791,8 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (G,T,no-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-04-18
+#: last_checked: 2026-05-10 (traffic)
+#: check_frequency: 14d (traffic)
 	q4::inwork 22130,1961 22004,2149
 EOF
      },
@@ -52913,7 +52911,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T)
-#: last_checked: 2026-05-01
+#: XXX siehe auch qualitaet_s-orig wegen möglicher Asphaltierung
+#: last_checked: 2026-05-10
 #: next_check: 2026-05-22
 	q4::inwork 18147,8895 18009,8687
 EOF
@@ -52948,14 +52947,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Jägerstr.: Bauarbeiten, Sperrung, Ende der Bauarbeiten unbekannt',
+       until => $isodate2epoch->("2026-06-30 23:59:59"),
+       text  => 'Jägerstr.: Bauarbeiten, Sperrung, voraussichtlich bis Ende Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (T,G,H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2026-05-09
 #: check_frequency: 21d (traffic)
+#: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
 EOF
      },
