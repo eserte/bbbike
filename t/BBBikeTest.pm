@@ -23,7 +23,7 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
-use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo);
+use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo $can_exiftool);
 
 use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
@@ -63,7 +63,7 @@ use BBBikeUtil qw(bbbike_root is_in_path module_exists);
 	      on_author_system maybe_skip_mail_sending_tests
 	      get_pmake image_ok zip_ok create_temporary_content static_url
 	      get_cgi_config selenium_diag noskip_diag
-	      pdfinfo
+	      pdfinfo pdfinfo_with_exiftool pdfinfo_with_poppler
 	      checkpoint_apache_errorlogs output_apache_errorslogs
 	      my_note
 	    ),
@@ -1264,11 +1264,25 @@ EOF
 
 sub pdfinfo ($) {
     my($pdffile) = @_;
+    if (!defined $can_exiftool) {
+	$can_exiftool = eval { require Image::ExifTool; 1 };
+    }
+    if ($can_exiftool) {
+	return pdfinfo_with_exiftool($pdffile);
+    }
+
     if (!defined $can_pdfinfo) {
 	$can_pdfinfo = is_in_path('pdfinfo');
     }
-    return if !$can_pdfinfo;
+    if ($can_pdfinfo) {
+	return pdfinfo_with_poppler($pdffile);
+    }
 
+    return undef;
+}
+
+sub pdfinfo_with_poppler ($) {
+    my($pdffile) = @_;
     my @cmd = ('pdfinfo', $pdffile);
     my %info;
     open my $fh, "-|", @cmd
@@ -1281,11 +1295,73 @@ sub pdfinfo ($) {
     close $fh
 	or die "Error running @cmd: $!";
 
+    $info{'_pdfinfo_implementation'} = "pdfinfo";
+
     \%info;
 }
 
+sub pdfinfo_with_exiftool ($) {
+    my($pdffile) = @_;
+    require Image::ExifTool;
+    my $et = Image::ExifTool->new;
+
+    if (!-e $pdffile) {
+	return { Error => "File not found: $pdffile" };
+    }
+
+    # some information is only available by turning on verbose output and capturing this output
+    my $output = "";
+    {
+	open my $str_fh, '>', \$output or die "Can't open scalar for writing: $!";
+	$et->Options(Verbose => 2, TextOut => $str_fh);
+	$et->ExtractInfo($pdffile);
+	close $str_fh;
+    }
+
+    my $info_ref = $et->GetInfo;
+    my %info = %$info_ref;
+
+    # map to field names as known with pdfinfo
+    my %map = (
+	'PageCount'  => 'Pages',
+	'PDFVersion' => 'PDF version',
+    );
+    while (my($old_k, $new_k) = each %map) {
+	if (exists $info{$old_k}) {
+	    $info{$new_k} = delete $info{$old_k};
+	}
+    }
+
+    $info{'File size'} = (-s $pdffile) . " bytes";
+
+    if ($output =~ /MediaBox = \[([\d\.\s,]+)\]/) {
+	my $val = $1;
+	my @c = grep { length $_ } split /[\s,]+/, $val;
+	if (@c >= 4) {
+	    my($x1, $y1, $x2, $y2) = @c;
+	    my $w = abs($x2 - $x1);
+	    my $h = abs($y2 - $y1);
+
+	    # recognizing ISO A4 is sufficient for now
+	    my %known_sizes = (
+		'595x842' => 'A4',
+		'842x595' => 'A4',
+	    );
+	    my $size_name = $known_sizes{sprintf("%.0fx%.0f", $w, $h)};
+	    $info{'Page size'} = "$w x $h pts" . ($size_name ? " ($size_name)" : "");
+	}
+    }
+
+    {
+	no warnings 'once';
+	$info{'_pdfinfo_implementation'} = "Image::ExifTool $Image::ExifTool::VERSION";
+    }
+
+    \%info;
+}
+
+# Show apache errorlog contents on failures.
 {
-    # Show apache errorlog contents on failures.
     #
     # Usually used like this:
     #
@@ -1351,6 +1427,7 @@ sub pdfinfo ($) {
 	}
     }
 }
+
 
 sub my_note (@) {
     my(@notes) = @_;

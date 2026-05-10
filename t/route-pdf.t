@@ -73,6 +73,8 @@ if (!eval 'use ' . $Route_PDF_class . '; 1') {
     die $@;
 }
 
+my %seen_pdfinfo_sources;
+
 my(undef, $pdffile) = tempfile(SUFFIX => "_test.pdf",
 			       UNLINK => 1);
 
@@ -172,6 +174,10 @@ EOF
     pdfinfo_test($pdffile);
 }
 
+if ($debug) {
+    diag "Following sources were used for pdfinfo: "; diag explain([keys %seen_pdfinfo_sources]);
+}
+
 sub maybe_display {
     my $pdffile = shift;
     if ($do_display) {
@@ -194,6 +200,8 @@ sub pdfinfo_test {
 	my $info = pdfinfo $pdffile;
 	skip 'No pdfinfo available', $pdfinfo_tests
 	    if !$info;
+
+	$seen_pdfinfo_sources{$info->{'_pdfinfo_implementation'}} = 1;
 
 	my $info_like = sub {
 	    my($k,$rx) = @_;
