@@ -4,7 +4,7 @@ Welcome, agent. This file provides context and guidelines for working with the B
 
 ## Project Overview
 
-BBike is a route-finder for cyclists, primarily focused on Berlin and Brandenburg, but extensible to other regions. It consists of a Perl/Tk desktop application, a CGI web interface, and numerous utilities for data processing (GPX, OSM, etc.).
+BBBike is a route-finder for cyclists, primarily focused on Berlin and Brandenburg, but extensible to other regions. It consists of a Perl/Tk desktop application, a CGI web interface, and numerous utilities for data processing (GPX, OSM, etc.).
 
 ## Core Components and Libraries
 
