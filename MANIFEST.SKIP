@@ -86,6 +86,7 @@ patch\.gz$
 ^trash/
 ^t/
 -orig$
+^AGENTS.md$
 ^bbbike.crypt$
 cgi/transcript.bbbike.configure.demonic$
 cgi/bbbike-slow.cgi$
