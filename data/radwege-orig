@@ -7872,7 +7872,7 @@ Poller	RW4; 8607,14253 8732,14098
 #: next_check_id: CHAUSSEE-2026
 #: last_checked: 2026-04-18 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2028-07-01
+#: next_check: 2028-05-11 (VIZ-Verkehrsmeldung)
 provisorische Radspur (Gelbmarkierung)	RW3; 8732,14098 8831,13973
 	RW3; 8607,14253 8570,14299 8490,14397
 # REMOVED (nein) --- #: next_check_id: CHAUSSEESTR-2016 --- #: XXX wird es hier eine Benutzungspflicht geben? --- #: last_checked: 2018-05-17
@@ -8395,7 +8395,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: adac:334221108 (bis 30.06.2026) (!) (neue ID -> inaktiv)
 #: source_id: LMS-BR:372746/72 viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026)
 #: source_id: viz2021:13.49537,52.43164, (Ampelanlage außer Betrieb, kein Endedatum) (inaktiv)
-#: source_id: LMS-BR:362451/72 viz2021:13.485714,52.424228, (bis 12.05.2026)
+#: source_id: LMS-BR:362451/72 viz2021:13.485714,52.424228, (bis 12.05.2026) (bis 31.12.2026)
 #: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892218755624718652 (nur Kfz-Verkehr erwähnt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/stubenrauchstrasse-in-rudow-nach-rohrbruch-gesperrt/ ("mehrere Monate", auf dem Bild scheint die Absperrung über die gesamte Fahrbahnbreite zu gehen, etwa 90m vor der Kanalstraße)
@@ -8408,7 +8408,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
 #: last_checked: 2026-03-01 (mapillary) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-10-31 (Baustellenschild) vvv
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: note: Stubenrauchstr. Richtung Nordosten
 provisorische Radspur	RW4; 16135,2135 16182,2200
 Fahrbahn Richtung NO nur für Radfahrer und Anliegerverkehr	RW10; 16182,2200 16242,2279 16306,2364 16382,2464 16461,2569 16475,2586 16547,2680 16573,2715 16635,2796 16677,2856 16703,2888
@@ -8755,7 +8755,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 # REMOVED --- #: check_frequency: 30d vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
-#: osm_watch: way id="335479077" version="24"
+#: osm_watch: way id="335479077" version="25"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"

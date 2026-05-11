@@ -8384,7 +8384,7 @@ EOF
 #: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00 (inaktiv)
 #: source_id: viz2021:13.49144,52.42064,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
 #: source_id: viz2021:13.49469,52.42125,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
-#: source_id: LMS-BR:407583/72 viz2021:13.49468,52.42128,09.05.2026,12:00 (bis 10.05.2026)
+#: source_id: LMS-BR:407583/72 viz2021:13.49468,52.42128,09.05.2026,12:00 (bis 10.05.2026) (inaktiv)
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
 EOF
@@ -8498,9 +8498,10 @@ EOF
 #: by: https://www.facebook.com/events/1572185126967043/?ref_source=NEWS_FEED&__hwl=1&_rdr (20.9.-22.9.2024)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-traditionsfeste-kein-festumzug-durch-die-kopenicker-altstadt-13344679.html (2025 nur auf dem Marktplatz Friedrichshagen?)
 #: by: https://www.laubinger.de/event/31-fest-auf-der-boelsche-geplant/ (fällt 2025 aus)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article411944067/berlin-boelschefest-2026-in-friedrichshagen-das-ist-dieses-mal-anders.html (Fahrbahn für Autos gesperrt)
 #: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.624675,52.451034,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
-Bölschestr.: evtl. Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
+Bölschestr.: Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
 EOF
      },
      { from  => 1178874938, # 2007-05-11 11:15
@@ -11595,7 +11596,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 256400817 (bis 12.07.2025) (inaktiv)
-#: source_id: 266400437 (bis 11.05.2026)
+#: source_id: 266400437 (bis 11.05.2026) (inaktiv)
 	2::inwork 45856,14437 45740,14260 45732,14245
 EOF
      },
@@ -22646,7 +22647,7 @@ EOF
 #: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
 #: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
 #: source_id: LMS-BR:407312/72 viz2021:13.33123,52.50383,06.05.2026,12:00 (bis 11.05.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:407493/72 viz2021:13.33123,52.50383,08.05.2026,04:00 (bis 11.05.2026)
+#: source_id: LMS-BR:407493/72 viz2021:13.33123,52.50383,08.05.2026,04:00 (bis 11.05.2026) (inaktiv)
 #: source_id: LMS-BR:407634/72 viz2021:13.33123,52.50383,09.05.2026,10:00 (bis 10.05.2026) (inaktiv)
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
@@ -25477,6 +25478,7 @@ EOF
 #: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-bauarbeiten-fuer-den-aussenbereich-gehen-voran/
 #: by: https://www.entwicklungsstadt.de/berliner-baeder-im-wandel-welche-projekte-vorankommen-und-welche-warten/
 #: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-fundamente-der-becken-sind-bereits-gegossen/
+#: by: https://www.entwicklungsstadt.de/stadtbad-tiergarten-bekommt-neues-aussenbecken/ (Eröffnung des Außenbeckens zur Badesaison 2027)
 # REMOVED --- #: osm_watch: way id="848019125" version="6" --- #: osm_watch: note 4030867 1
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023 --- #: last_checked: 2023-12-29 --- #: next_check: 2024-01-23
 #: osm_watch: way id="462738551" version="29"
@@ -25484,6 +25486,7 @@ EOF
 #: osm_watch: note 2694532 12
 #: last_checked: 2026-04-12
 #: check_frequency: 90d
+#: next_check: 2027-05-01 (entwicklungsstadt)
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 EOF
@@ -31300,9 +31303,9 @@ EOF
 #: also_indoor: traffic (re-G,ex-H,re-T,ex-W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch[closed]: note 3210197 6
-#: osm_watch: way id="4792216" version="19"
-#: osm_watch: way id="1148659680" version="7"
-#: last_checked: 2026-04-29
+#: osm_watch: way id="4792216" version="20"
+#: osm_watch: way id="1148659680" version="8"
+#: last_checked: 2026-05-11 (osm)
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -43724,6 +43727,7 @@ EOF
        text  => 'Neue Bahnhofstr.: Kraneinsatz zwischen Weserstr. und Boxhagener Str., Sperrung der Fahrbahn, vom 08.05.2026 bis 22.05.2026',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: NEUEBAHNHOF-2025
 #: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
@@ -43740,8 +43744,8 @@ EOF
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
 #: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Ausnahmeregelung für Radfahrer
 #: note: bei der 05/2026er-Sperrung standen die Bauzäune bereits an der Boxhagener Str.
-	q4::inwork 15016,11431 14945,11300 14918,11249
-# REMOVED (frühere Sperrung) ---	q4::inwork 15055,11505 15016,11431
+Gürtelstr.: hier etwa 40m inklusive Kreuzungsbereich Weserstr. gesperrt	q3::inwork 15055,11505 15016,11431
+Neue Bahnhofstr.: Sperrung der Fahrbahn mit Bauzäunen	q4::inwork 15016,11431 14945,11300 14918,11249
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
 EOF
      },
@@ -46094,7 +46098,8 @@ EOF
      },
      { from  => 1724611975, # 2024-08-25 20:52
        until => undef, # 1735685999, # 2024-12-31 23:59
-       text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2025, evtl. wird die Sperrung verlängert',
+#      text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2025, evtl. wird die Sperrung verlängert',
+       text  => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: FINOWKANAL-2025
@@ -46108,12 +46113,12 @@ EOF
 #: note: auf finowkanal.info kein Endedatum
 #: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025, Ende Dezember 2025) Eröffnung Ende 2025
 #: osm_watch: way id="105827200" version="12"
-#: osm_watch: way id="105827213" version="12"
+#: osm_watch: way id="105827213" version="13"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 4
-#: last_checked: 2026-05-10 (research)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-12-31
+#: last_checked: 2026-05-08 (osm)
+#: check_frequency: 60d
+#: next_check: 2026-12-31 (https://www.openstreetmap.org/changeset/182437146: laut Bauleiter)
 	2::inwork 24769,48739 24781,48768 24766,48828
 EOF
      },
@@ -50897,7 +50902,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-05-10 00:00:00"), # $isodate2epoch->("2026-01-19 00:00:00"), # $isodate2epoch->("2025-09-28 00:00:00"),
-       until => $isodate2epoch->("2026-05-16 00:00:00"), # 1778264408, # $isodate2epoch->("2026-05-30 23:59:59"), # 1762196646, # $isodate2epoch->("2025-11-03 23:59:59"), # 1761951600, # 2025-11-01 00:00
+       until => $isodate2epoch->("2026-05-15 23:59:59"), # 1778264408, # $isodate2epoch->("2026-05-30 23:59:59"), # 1762196646, # $isodate2epoch->("2025-11-03 23:59:59"), # 1761951600, # 2025-11-01 00:00
 #      text  => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 29.09.2025 bis 03.11.2025',
 #      text  => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., vom 20.01.2026 bis voraussichtlich Ende März 2026',
 #      text  => 'Schnellerstr.: Bauarbeiten, Sperrung zwischen Flutstr. und Hasselwerderstr., voraussichtlich bis Ende Mai 2026',
@@ -50908,9 +50913,12 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260119
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260508
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mlkhauziw22h
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic3muximwffd6qmgiz22jljuus2p7wqd7yfgnovnzmr2z2rlawtri
 #: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025) (inaktiv)
 #: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026) (bis 31.03.2026) (bis 30.05.2026) (vorfristig inaktiv)
+#: source_id: LMS-BR:407838/72 viz2021:13.51114,52.45621,11.05.2026,07:00 (bis 15.05.2026)
 #: note: laut rbb ebenfalls nur bis Ende Januar 2026
 #	q4::inwork; 17916,5675 18013,5627
 # REMOVED --- #: last_checked: 2026-01-27 (mapillary) --- #: next_check: 2026-05-30 (VIZ-Verkehrsmeldung)
@@ -51248,12 +51256,12 @@ EOF
 EOF
      },
      { from  => 1761241355, # 2025-10-23 19:42
-       until => $isodate2epoch->("2026-05-11 23:59:59"), # 1765753200, # 2025-12-15 00:00
+       until => 1778521006, # $isodate2epoch->("2026-05-11 23:59:59"), # 1765753200, # 2025-12-15 00:00
        text  => 'Morusstr.: Bauarbeiten an der Einmündung Werbellinstr., Sperrung der Fahrbahn, voraussichtlich bis Mitte Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: WERBELLINAMPEL-2025
-#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025) (bis 27.02.2026) (bis 30.04.2026) (bis 11.05.2026)
+#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025) (bis 27.02.2026) (bis 30.04.2026) (bis 11.05.2026) (inactive)
 	q4::inwork 12427,8109 12446,8032
 EOF
      },
@@ -51986,6 +51994,7 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:395246/72 viz2021:13.298302,52.47039,05.01.2026,07:00 (Zoppoter Str., bis 31.03.2026) (bis 30.06.2026)
 #: source_id: LMS-BR:395247/72 viz2021:13.29834,52.47075,05.01.2026,07:00 (Borkumer Str., bis 31.03.2026) (bis 30.06.2026)
+#: source_id: LMS-BR:407832/72 viz2021:13.298314,52.470505,11.05.2026,07:00 (bis 19.06.2026)
 	q4::inwork 3202,7121 3302,7092 3295,6987
 EOF
      },
@@ -52957,6 +52966,15 @@ EOF
 #: check_frequency: 21d (traffic)
 #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
+EOF
+     },
+     { from  => 1778385600, # 2026-05-10 06:00
+       until => 1780671600, # 2026-06-05 17:00
+       text  => 'Glockenblumenweg: Bauarbeiten zwischen Angelikaweg und Schneeballenweg, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 11.05.2026 06:00 bis 05.06.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:407818/72 viz2021:13.47884,52.43357,11.05.2026,06:00 (bis 05.06.2026)
+	q4::inwork 15660,3177 15808,3063
 EOF
      },
     );

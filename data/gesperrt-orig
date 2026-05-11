@@ -1603,7 +1603,7 @@ Südring, Virchow-Klinikum	1 6158,14851 6078,14864 6073,14892
 Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: next_check_id: VIRCHOW-2023
 # REMOVED (gelöscht) --- #: osm_watch: way id="224136692" version="6"
-#: osm_watch: way id="1168244288" version="4"
+#: osm_watch: way id="1168244288" version="5"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_14_0803_0878_online.pdf (Bebauungsplan 1-113VE)
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1432964.php
 #: by: https://www.stadtentwicklung.berlin.de/download/1-113ve/01_Planzeichnung/240327_1-113VE_B-Plan_Pz_%c3%96ff.pdf (der Südring wird wohl teilweise verschwinden)
@@ -4147,7 +4147,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigbzjnvlhpronxht3kltljejlvulbku2mwya5iobwkufrdryx7ud4@jpeg
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260304
 #: by: https://www.entwicklungsstadt.de/mehrjaehrige-sperrung-in-mitte-u6-bauarbeiten-legen-teil-der-chausseestrasse-lahm/
-#: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026)
+#: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026) (bis 11.05.2028)
 #: osm_watch: way id="1471571709" version="2"
 #: osm_watch: way id="4597200" version="35"
 #: osm_watch: way id="1108289467" version="11"
@@ -4156,7 +4156,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
 #: last_checked: 2026-04-18 (mapillary) vvv
 #: check_frequency: 120d vvv
-#: next_check: 2028-07-01 vvv
+#: next_check: 2028-05-11 (VIZ-Verkehrsmeldung) vvv
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
 # REMOVED (hier nicht) --- Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9070,14058 9011,14019
 Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9011,14019 8870,13926
@@ -4287,7 +4287,7 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 # 
 #: next_check_id: STUBENRAUCH-2025
 #: last_checked: 2026-02-28 vvv
-#: next_check: 2026-10-31 vvv
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 Stubenrauchstr./Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross 16242,2279 16306,2364 16382,2464
 #: historical_note: am Anfang kurze unechte Einbahnstraße und Einfahrt verboten
 Glockenblumenweg: Einbahnstraße	1s:q2:inwork 16461,2569 16260,2717

@@ -10,6 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
+#: XXX Laut Halteverbotsschildern möglicherweise bis Ende November 2026 ("31.11.2026" (sic!))
+#: last_checked: 2026-05-11
+#: check_frequency: 10d
+#: next_check: 2026-11-30 (Halteverbotsschilder)
+Krossener Str.: Sperrung der Fahrbahn wegen Hochbauarbeiten	q4+::inwork 14247,11681 14358,11656
+# 
 # REMOVED (möglicherweise beendet) --- #: last_checked: 2026-03-22
 # REMOVED --- #: check_frequency: 10d
 # REMOVED --- Gubener Str.: Fahrbahn gesperrt, Baustellenfläche	q3::inwork 13352,12003 13339,12029 13326,12056
@@ -27,7 +33,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: last_checked: 2026-05-05
+#: last_checked: 2026-05-11
 #: check_frequency: 21d
 #: next_check: 2026-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -531,6 +537,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,124
 #: next_check: 2026-12-31 (entwicklungsstadt)
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lux-berlin-neust%C3%A4dtischer-kirchplatz.903/page-2#post-23516
+#: by: https://www.entwicklungsstadt.de/zwischen-historie-und-nachverdichtung-in-berlin-mitte-neues-wohnhaus-an-der-schadowstrasse/
 #: osm_watch: note 3469300 9
 #: osm_watch: way id="111833186" version="18"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
@@ -4647,7 +4654,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 #: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="3"
-#: osm_watch: way id="1168244288" version="4"
+#: osm_watch: way id="1168244288" version="5"
 #: last_checked: 2025-12-06 (webcam)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
@@ -5401,7 +5408,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-05-03 vvv
+#: last_checked: 2026-05-11 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-05-15 vvv
 # REMOVED --- #: valid: -20251219

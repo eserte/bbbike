@@ -921,36 +921,6 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html
-#: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
-#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025) (09. Mai 2026 - 10. Mai 2026)
-#: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00 (inaktiv)
-#: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
-#: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
-	2::temp 7201,8870 7101,9027 7029,9156 7007,9220 7001,9253 6994,9288
-	2::temp 7308,9163 7101,9027 6958,8941
-	2::temp 6936,9138 7029,9156
-	2::temp 7007,9220 7124,9226
-',
-         'from' => 1778191200,
-         'id' => 728,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (09.05.2026 und 10.05.2026)',
-         'type' => 'gesperrt',
-         'until' => 1778450399
-       },
        undef,
        undef,
        undef,
@@ -1174,33 +1144,8 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022) (10. Mai 2025 - 11. Mai 2025)
-#: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00 (inaktiv)
-#: source_id: viz2021:13.49144,52.42064,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
-#: source_id: viz2021:13.49469,52.42125,09.05.2025,19:00 (bis 11.05.2025) (inaktiv)
-#: source_id: LMS-BR:407583/72 viz2021:13.49468,52.42128,09.05.2026,12:00 (bis 10.05.2026)
-	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
-	2::temp 16610,1715 16767,1831
-',
-         'from' => 1778191200,
-         'id' => 952,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              5,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (9. und 10. Mai 2026)',
-         'type' => 'gesperrt',
-         'until' => 1778450399
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1223,9 +1168,10 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
 #: by: https://www.facebook.com/events/1572185126967043/?ref_source=NEWS_FEED&__hwl=1&_rdr (20.9.-22.9.2024)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-traditionsfeste-kein-festumzug-durch-die-kopenicker-altstadt-13344679.html (2025 nur auf dem Marktplatz Friedrichshagen?)
 #: by: https://www.laubinger.de/event/31-fest-auf-der-boelsche-geplant/ (fällt 2025 aus)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article411944067/berlin-boelschefest-2026-in-friedrichshagen-das-ist-dieses-mal-anders.html (Fahrbahn für Autos gesperrt)
 #: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.624675,52.451034,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
-Bölschestr.: evtl. Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
+Bölschestr.: Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
 ',
          'from' => 1778623200,
          'id' => 964,
@@ -1607,17 +1553,7 @@ Bölschestr.: evtl. Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,574
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 256400817 (bis 12.07.2025) (inaktiv)
-#: source_id: 266400437 (bis 11.05.2026)
-	2::inwork 45856,14437 45740,14260 45732,14245
-',
-         'from' => 1778191200,
-         'id' => 1326,
-         'text' => 'Rehfelde: Bahnübergang gesperrt, evtl. sind auch Radfahrer betroffen, vom 09.05.2026 18:00 Uhr bis 11.05.2026 05:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1778468400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3612,43 +3548,7 @@ Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12
        },
        undef,
        undef,
-       {
-         'data' => '#: url: https://classicdays-berlin.de/
-#: by: http://www.die-classic-days-berlin.de/programm-2/
-#: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
-#: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
-#: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
-#: note: kann auch im Juni oder Juli stattfinden
-#: source_id: IM_025248 (inaktiv)
-#: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00 (inaktiv)
-#: source_id: viz2021:13.32548,52.503893,02.05.2024,12:00 (Uhlandstr., nur Kfz-Verkehr betroffen, bis 06.05.2024) (inaktiv)
-#: source_id: viz2021:13.33123,52.50383,03.05.2024,04:00 (bis 06.05.2024) (inaktiv)
-#: source_id: viz2021:13.317719,52.501325,09.05.2025,04:00 (bis 12.05.2025) (inaktiv)
-#: source_id: LMS-BR:407312/72 viz2021:13.33123,52.50383,06.05.2026,12:00 (bis 11.05.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:407493/72 viz2021:13.33123,52.50383,08.05.2026,04:00 (bis 11.05.2026)
-#: source_id: LMS-BR:407634/72 viz2021:13.33123,52.50383,09.05.2026,10:00 (bis 10.05.2026) (inaktiv)
-# REMOVED --- #: tempex: 20170616T0400-20170619T0400
-	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
-	q4::temp 5072,10701 5069,10662
-',
-         'from' => 1778119200,
-         'id' => 2439,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              5,
-                              'start',
-                              '2021-06-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, 08.05.2026 04:00 Uhr bis 11.05.2026 05:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1778468400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4058,6 +3958,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-bauarbeiten-fuer-den-aussenbereich-gehen-voran/
 #: by: https://www.entwicklungsstadt.de/berliner-baeder-im-wandel-welche-projekte-vorankommen-und-welche-warten/
 #: by: https://www.berlinerbaeder.de/unternehmen/baustellen/detailseite/die-fundamente-der-becken-sind-bereits-gegossen/
+#: by: https://www.entwicklungsstadt.de/stadtbad-tiergarten-bekommt-neues-aussenbecken/ (Eröffnung des Außenbeckens zur Badesaison 2027)
 # REMOVED --- #: osm_watch: way id="848019125" version="6" --- #: osm_watch: note 4030867 1
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung weiterhin? --- #: XXX laut osm-Notiz Öffnung des Stadtbads am 23.1.2023 --- #: last_checked: 2023-12-29 --- #: next_check: 2024-01-23
 #: osm_watch: way id="462738551" version="29"
@@ -4065,6 +3966,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: note 2694532 12
 #: last_checked: 2026-04-12
 #: check_frequency: 90d
+#: next_check: 2027-05-01 (entwicklungsstadt)
 	2::inwork 7306,13418 7402,13475
 # REMOVED ---	2::inwork 7402,13475 7422,13487 7451,13504 7630,13584
 ',
@@ -4893,9 +4795,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 #: also_indoor: traffic (re-G,ex-H,re-T,ex-W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch[closed]: note 3210197 6
-#: osm_watch: way id="4792216" version="19"
-#: osm_watch: way id="1148659680" version="7"
-#: last_checked: 2026-04-29
+#: osm_watch: way id="4792216" version="20"
+#: osm_watch: way id="1148659680" version="8"
+#: last_checked: 2026-05-11 (osm)
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -7428,7 +7330,8 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
+         'data' => '#: next_check_id: NEUEBAHNHOF-2025
+#: source_id: viz2021:13.472124,52.50813,06.11.2024,06:00 (bis 07.11.2024) (inaktiv)
 #: source_id: viz2021:13.471101,52.507031,23.01.2024,06:00 (bis 24.01.2024) (inaktiv)
 #: source_id: viz2021:13.47181,52.50783,17.11.2025,01:00 (bis 21.11.2025) (inaktiv)
 #: source_id: LMS-BR:390063/72 viz2021:13.47543,52.51188, (Straßenschäden ab 14.11.2025) (bis 19.12.2025) (inaktiv)
@@ -7444,8 +7347,8 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
 #: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Ausnahmeregelung für Radfahrer
 #: note: bei der 05/2026er-Sperrung standen die Bauzäune bereits an der Boxhagener Str.
-	q4::inwork 15016,11431 14945,11300 14918,11249
-# REMOVED (frühere Sperrung) ---	q4::inwork 15055,11505 15016,11431
+Gürtelstr.: hier etwa 40m inklusive Kreuzungsbereich Weserstr. gesperrt	q3::inwork 15055,11505 15016,11431
+Neue Bahnhofstr.: Sperrung der Fahrbahn mit Bauzäunen	q4::inwork 15016,11431 14945,11300 14918,11249
 # REMOVED (hier nicht) ---	q4::inwork 15016,11431 14945,11300
 ',
          'from' => 1778104800,
@@ -7924,17 +7827,17 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
 #: note: auf finowkanal.info kein Endedatum
 #: note: laut umap-Karte Eröffnung in Q2/2025, mittlerweile (Stand Ende März 2025, Anfang Juli 2025, Ende Dezember 2025) Eröffnung Ende 2025
 #: osm_watch: way id="105827200" version="12"
-#: osm_watch: way id="105827213" version="12"
+#: osm_watch: way id="105827213" version="13"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 4
-#: last_checked: 2026-05-10 (research)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-12-31
+#: last_checked: 2026-05-08 (osm)
+#: check_frequency: 60d
+#: next_check: 2026-12-31 (https://www.openstreetmap.org/changeset/182437146: laut Bauleiter)
 	2::inwork 24769,48739 24781,48768 24766,48828
 ',
          'from' => 1724611975,
          'id' => 4150,
-         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, voraussichtlich bis Ende 2025, evtl. wird die Sperrung verlängert',
+         'text' => 'Schleuse Grafenbrück: Überfahrt komplett gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8546,27 +8449,7 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025) (inaktiv) (bis 30.01.2026) (inaktiv) (wechselseite Verkehrsführung, bis 15.05.2026)
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
-#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~03-07-2025-sperrung-am-horstweg-in-potsdam (08.08.2025 ab 22 Uhr bis 11.08.2025 um 6 Uhr, auch Radfahrer sind betroffen)
-#: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/fur-bruckenneubau-der-nuthestrasse-horstweg-in-potsdam-wird-komplett-gesperrt-13963847.html
-#: by: https://www.potsdam.de/de/337-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-sommerferien
-#: by: https://www.potsdam.de/de/486-baumassnahmen-im-hauptstrassennetz-der-stadt-potsdam-den-herbstferien
-#: by: https://www.mobil-potsdam.de/de/baustellen/geplant/?c=5367
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2025-brueckenbau-an-der-l-40-neuer-termin-fuer-vollsperrung-des-horstwegs
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-04-2026-l40-potsdam-fertigstellung-bruecke-ueber-horstweg
-#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5510
-	2::inwork -10495,-2787 -10446,-2693 -10418,-2624
-',
-         'from' => 1778104800,
-         'id' => 4289,
-         'text' => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 08.05.2026 22:00 Uhr bis 11.05.2026 06:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1778472000
-       },
+       undef,
        {
          'data' => '# REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
 # REMOVED --- #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv) --- #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv) ---	q4::inwork 2920,12070 2686,12051
@@ -9591,9 +9474,12 @@ Südparkbrücke: Neubau	2::inwork -4048,12107 -4033,12108
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lzx5gyi4s22p
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260119
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260508
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mlkhauziw22h
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic3muximwffd6qmgiz22jljuus2p7wqd7yfgnovnzmr2z2rlawtri
 #: source_id: viz2021:13.51279,52.45567,29.09.2025,07:00 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.51279,52.45567, (bis 03.11.2025) (inaktiv)
 #: source_id: LMS-BR:396582/72 viz2021:13.51413,52.45523,20.01.2026,07:00 (hier nur bis 31.01.2026) (bis 31.03.2026) (bis 30.05.2026) (vorfristig inaktiv)
+#: source_id: LMS-BR:407838/72 viz2021:13.51114,52.45621,11.05.2026,07:00 (bis 15.05.2026)
 #: note: laut rbb ebenfalls nur bis Ende Januar 2026
 #	q4::inwork; 17916,5675 18013,5627
 # REMOVED --- #: last_checked: 2026-01-27 (mapillary) --- #: next_check: 2026-05-30 (VIZ-Verkehrsmeldung)
@@ -9604,7 +9490,7 @@ Südparkbrücke: Neubau	2::inwork -4048,12107 -4033,12108
          'id' => 4454,
          'text' => 'Schnellerstr.: Bauarbeiten, Sperrung Richtung Osten zwischen Flutstr. und Hasselwerderstr., vom 11.5.2026 für voraussichtlich eine Woche',
          'type' => 'handicap',
-         'until' => 1778882400
+         'until' => 1778882399
        },
        undef,
        undef,
@@ -9765,17 +9651,7 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
          'until' => 1778709599
        },
        undef,
-       {
-         'data' => '#: next_check_id: WERBELLINAMPEL-2025
-#: source_id: LMS-BR:387724/72 viz2021:13.43277,52.47837, (bis 15.12.2025) (bis 27.02.2026) (bis 30.04.2026) (bis 11.05.2026)
-	q4::inwork 12427,8109 12446,8032
-',
-         'from' => 1761241355,
-         'id' => 4478,
-         'text' => 'Morusstr.: Bauarbeiten an der Einmündung Werbellinstr., Sperrung der Fahrbahn, voraussichtlich bis Mitte Mai 2026',
-         'type' => 'handicap',
-         'until' => 1778536799
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/special/shopping/biomarkt/3368882-1925662-oekomarkt-am-hohenstaufenplatz.html
 #: by: https://www.wochenmarkt-deutschland.de/maerkte/berlin/hohenstaufenplatz-schoenleinstrasse/
@@ -10210,6 +10086,7 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
        {
          'data' => '#: source_id: LMS-BR:395246/72 viz2021:13.298302,52.47039,05.01.2026,07:00 (Zoppoter Str., bis 31.03.2026) (bis 30.06.2026)
 #: source_id: LMS-BR:395247/72 viz2021:13.29834,52.47075,05.01.2026,07:00 (Borkumer Str., bis 31.03.2026) (bis 30.06.2026)
+#: source_id: LMS-BR:407832/72 viz2021:13.298314,52.470505,11.05.2026,07:00 (bis 19.06.2026)
 	q4::inwork 3202,7121 3302,7092 3295,6987
 ',
          'from' => undef,
@@ -10969,6 +10846,16 @@ Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,
          'text' => 'Jägerstr.: Bauarbeiten, Sperrung, voraussichtlich bis Ende Juni 2026',
          'type' => 'handicap',
          'until' => 1782856799
+       },
+       {
+         'data' => '#: source_id: LMS-BR:407818/72 viz2021:13.47884,52.43357,11.05.2026,06:00 (bis 05.06.2026)
+	q4::inwork 15660,3177 15808,3063
+',
+         'from' => 1778385600,
+         'id' => 4604,
+         'text' => 'Glockenblumenweg: Bauarbeiten zwischen Angelikaweg und Schneeballenweg, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 11.05.2026 06:00 bis 05.06.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1780671600
        }
      
 );

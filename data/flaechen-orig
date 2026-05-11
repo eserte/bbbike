@@ -1565,8 +1565,16 @@ Osterwäldchen	F:P 18006,10404 17986,10321 18039,10307 18030,10272 18043,10265 1
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2024/pressemitteilung.1402282.php
 #: alias: Park am Urnenfriedhof Gerichtstraße
-Grünzug an der Ruheplatzstraße	F:P 7564,15528 7617,15565 7661,15414 7627,15412
-Urnenfriedhof Gerichtstraße	F:Cemetery 7661,15414 7703,15416 7701,15467 7755,15468 7753,15568 7721,15566 7721,15599 7595,15596 7617,15565 7661,15414
+Grünzug an der Ruheplatzstraße	F:P 7562,15527 7617,15565 7661,15414 7627,15412
+Urnenfriedhof Gerichtstraße	F:Cemetery 7661,15414 7703,15416 7701,15467 7755,15468 7753,15568 7721,15566 7721,15599 7595,15596 7584,15597 7545,15557 7562,15527 7617,15565 7661,15414
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_15_0873_0916_online.pdf (Benennung einer öffentlichen Grün- und Erholungsanlage, Wirksamkeit am 20.5.2026)
+#: by: https://www.entwicklungsstadt.de/neuer-gruenzug-im-wedding-platz-wird-nach-ursula-hirschmann-benannt/
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1669887.php
+#: osm_watch: note 5165009 2
+#: next_check: 2026-05-20
+#: XXX Ursula-Hirschmann-Platz: Benennung geplant
+	F:P 7518,15605 7584,15597 7545,15557 7518,15605
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11916
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1419833.php (Messingplakette seit dem 21.2.2024)
