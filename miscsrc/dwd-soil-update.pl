@@ -163,23 +163,29 @@ my $res;
 # - for v2 files the BFGL01_AG field (index 12) is printed
 my $date_index = 1;
 my $bf_index = 12;
-chdir "$soil_dwd_dir/recent" or die "Can't chdir to $soil_dwd_dir/recent: $!";
+chdir "$soil_dwd_dir" or die "Can't chdir to $soil_dwd_dir/recent: $!";
 for my $station (sort {$a<=>$b} keys %stations) {
-    my $f = "derived_germany_soil_daily_recent_v2_${station}.txt.gz";
-    my $fh = IO::Uncompress::Gunzip->new($f)
-	or die "Can't gunzip $f (in directory $soil_dwd_dir/recent): $GunzipError\n";
+    my @files;
+    push @files, "recent/derived_germany_soil_daily_recent_v2_${station}.txt.gz";
+    if (defined $for_date) {
+	push @files, "historical/derived_germany_soil_daily_historical_v2_${station}.txt.gz";
+    }
     my $got_line;
-    while(<$fh>) {
-	chomp;
-	if (defined $for_date) {
-	    my @f = split /;/, $_;
-	    next if $f[$date_index] ne $for_date;
-	    $got_line = $_;
-	    last;
-	} else {
-	    if (eof $fh) {
+ STATION_FILES: for my $f (@files) {
+	my $fh = IO::Uncompress::Gunzip->new($f)
+	    or die "Can't gunzip $f (in directory $soil_dwd_dir/recent): $GunzipError\n";
+	while(<$fh>) {
+	    chomp;
+	    if (defined $for_date) {
+		my @f = split /;/, $_;
+		next if $f[$date_index] ne $for_date;
 		$got_line = $_;
-		last;
+		last STATION_FILES;
+	    } else {
+		if (eof $fh) {
+		    $got_line = $_;
+		    last STATION_FILES;
+		}
 	    }
 	}
     }
