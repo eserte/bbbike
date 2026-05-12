@@ -853,7 +853,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="17"
-#: last_checked: 2025-10-31 (mapillary)
+#: last_checked: 2026-05-09 (mapillary)
 #: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -4078,6 +4078,15 @@ Schwingtor	BNP:5::trailer=10 4183,13725
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SPREEUFER-2026
+#: XXX es wird vom Paula-Thiede-Ufer in einer Rampe runtergehen, zurzeit wird die Deckschicht aufgesetzt
+#: osm_watch: way id="458869330" version="4"
+#: osm_watch: note 3748856 4
+#: last_checked: 2026-05-12
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2026-06-26
+Uferweg wird verlängert	2::inwork 12010,11545 11962,11596
+# 
 #: next_check_id: LANDSBERGER-2026
 #: last_checked: 2026-05-06
 #: check_frequency: 120d
@@ -4497,7 +4506,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-05-07
+#: last_checked: 2026-05-12
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071

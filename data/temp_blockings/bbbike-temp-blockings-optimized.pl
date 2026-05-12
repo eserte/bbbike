@@ -5617,7 +5617,7 @@ Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?) --- #: note: Halteverbotsschilder mittlerweile bis 07.06.2024, nun bis 28.06.2024 --- #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv --- #: last_checked: 2024-06-22 vvv --- #: next_check: 2024-06-28 vvv --- Jahnstr.	q4::inwork; 12833,6127 13027,6168 --- Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127 --- : next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: note: Halteverbotsschilder bis 18.12.2026
-#: last_checked: 2026-04-18 (mapillary)
+#: last_checked: 2026-05-09 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-12-18 (Halteverbotsschilder)
 Jahnstr.	q3::inwork; 13027,6168 13227,6209
@@ -5771,7 +5771,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch[closed]: note 5093384 7
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-05-05 (mapillary)
+#: last_checked: 2026-05-10 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -7343,6 +7343,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260507
 #: osm_watch: way id="490912373" version="19"
 #: osm_watch: way id="1113567086" version="9"
+#: traffic_note: Umleitungsverkehr in der Relation Weichselstr. - Scharnweberstr., aber Stauungen meist dort, wo es Radspuren gibt; Schleichverkehr im Travekiez; Stauungen im Viktoriakiez (Pfarrstr., Hauffstr.)
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
 #: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Ausnahmeregelung für Radfahrer
@@ -7586,7 +7587,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-05-08 vvv
+#: last_checked: 2026-05-12 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -9637,7 +9638,7 @@ Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
-#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026)
+#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026)
 #: source_id[inactive]: bvg2024:156#HIM_FREETEXT_303396
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Wigandstaler Str.: Einfahrt verboten	q3::inwork; 12910,17123 13037,16957
@@ -9646,9 +9647,9 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
 ',
          'from' => 1761110409,
          'id' => 4476,
-         'text' => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 13. Mai 2026',
+         'text' => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 21. Juni 2026',
          'type' => 'handicap',
-         'until' => 1778709599
+         'until' => 1782079199
        },
        undef,
        undef,
@@ -10420,14 +10421,14 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5q4ohmcs2u
-#: source_id: LMS-BR:401945/72 viz2021:13.35056,52.54723,16.03.2026,07:00 (bis 15.05.2026)
+#: source_id: LMS-BR:401945/72 viz2021:13.35056,52.54723,16.03.2026,07:00 (bis 15.05.2026) (bis 29.05.2026)
 	q4::inwork 6539,15548 6690,15671
 ',
          'from' => 1773529200,
          'id' => 4559,
-         'text' => 'Brüsseler Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Antwerpener Str. und Lütticher Straße, vom 16.03.2026 bis Mitte Mai 2026',
+         'text' => 'Brüsseler Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Antwerpener Str. und Lütticher Straße, vom 16.03.2026 bis Ende Mai 2026',
          'type' => 'handicap',
-         'until' => 1778882399
+         'until' => 1780091999
        },
        undef,
        {
@@ -10856,6 +10857,17 @@ Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,
          'text' => 'Glockenblumenweg: Bauarbeiten zwischen Angelikaweg und Schneeballenweg, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 11.05.2026 06:00 bis 05.06.2026 17:00',
          'type' => 'handicap',
          'until' => 1780671600
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mlnvyvhpyc2t
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid5ji4tqjxbjwqsuewm2lykph6y4cl5jmkdtbqyrbzadla43h6km4
+	q4::inwork; 17251,11789 17169,11677
+',
+         'from' => 1778536800,
+         'id' => 4605,
+         'text' => 'Rosenfelder Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis Mitte Juni 2026',
+         'type' => 'handicap',
+         'until' => 1781560799
        }
      
 );

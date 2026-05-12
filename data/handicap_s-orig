@@ -89,7 +89,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="30"
 #: osm_watch: way id="1072662717" version="34"
-#: last_checked: 2026-05-07
+#: last_checked: 2026-05-12
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -404,7 +404,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-05-07
+#: last_checked: 2026-05-12
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -4061,7 +4061,7 @@ Brienzer Str.: einige Fußgänger	q2 7282,17318 7289,17277
 #: next_check_id: SCHAEFERSEE-2022
 #: XXX nach den Bauarbeiten folgenden Eintrag wiederherstellen: (Weg um den Schäfersee): einige Fußgänger	q1 7466,17627 7415,17696 7320,17718
 #: last_checked: 2025-10-12
-#: next_check: 2026-05-31
+#: next_check: 2026-06-30
 nördlicher Weg am Schäfersee: Umgestaltung, einige Engstellen	q2::inwork 7466,17627 7415,17696 7320,17718
 (Schäfersee - Baseler Str.): einige Fußgänger	q1 7215,17689 7185,17681 7166,17677 6897,17616
 (Genfer Str. - Schäfersee): einige Fußgänger	q1 7076,18026 7089,17990 7116,17989 7123,17892 7127,17857 7162,17737
@@ -5406,11 +5406,11 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026)
+#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
 #: last_checked: 2026-05-11 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2026-05-15 vvv
+#: next_check: 2026-05-26 vvv
 # REMOVED --- #: valid: -20251219
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
 # XXX #: valid: !-20251219
@@ -5527,7 +5527,7 @@ Jungfernheidesteg: enge Brücke, einige Fußgänger	q2 2906,13610 2921,13618 3003,1
 #: note: Grünanlagenschild ohne Zusatzschilder
 (Weg in der Parkstadt Karlshorst): einige Fußgänger	q2 17674,8738 17821,8694 17851,8662
 # 
-(Uferweg): einige Fußgänger	q2 11821,11733 11863,11670 11962,11596
+(Uferweg): einige Fußgänger	q2 11821,11733 11863,11670 11962,11596 12010,11545
 # 
 #: note: zwei Bodenschwellen oben, weitere zwei Bodenschwellen vor der Parkplatzausfahrt; außerdem Tempo 10
 #: note: Bodenschwellen gehen über die gesamte Fahrbahnbreite, aber beim Hochfahren stören sie kaum

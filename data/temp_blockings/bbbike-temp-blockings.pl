@@ -35945,7 +35945,7 @@ EOF
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?) --- #: note: Halteverbotsschilder mittlerweile bis 07.06.2024, nun bis 28.06.2024 --- #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv --- #: last_checked: 2024-06-22 vvv --- #: next_check: 2024-06-28 vvv --- Jahnstr.	q4::inwork; 12833,6127 13027,6168 --- Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127 --- : next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: note: Halteverbotsschilder bis 18.12.2026
-#: last_checked: 2026-04-18 (mapillary)
+#: last_checked: 2026-05-09 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-12-18 (Halteverbotsschilder)
 Jahnstr.	q3::inwork; 13027,6168 13227,6209
@@ -36593,7 +36593,7 @@ EOF
 #: osm_watch[closed]: note 5093384 7
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-05-05 (mapillary)
+#: last_checked: 2026-05-10 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -43740,6 +43740,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260507
 #: osm_watch: way id="490912373" version="19"
 #: osm_watch: way id="1113567086" version="9"
+#: traffic_note: Umleitungsverkehr in der Relation Weichselstr. - Scharnweberstr., aber Stauungen meist dort, wo es Radspuren gibt; Schleichverkehr im Travekiez; Stauungen im Viktoriakiez (Pfarrstr., Hauffstr.)
 #: note: bei der 11/2024er-Sperrung war der gesperrte Abschnitt etwa 70m lang, keine Regelung für Radfahrer
 #: note: 2025-11-15: in Höhe Weserstr. Straßenschäden, Straße ist schon vor dem Kraneinsatz für den Durchgangsverkehr gesperrt
 #: note: bei der 11/2025er-Sperrung war der gesperrte Abschnitt länger, von Norden schon ab Weserstraße inklusive der gesamte Einmündungsbereich, keine Ausnahmeregelung für Radfahrer
@@ -45305,7 +45306,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-05-08 vvv
+#: last_checked: 2026-05-12 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -48225,7 +48226,7 @@ EOF
        text  => 'Horstweg: Sperrung im Bereich des Nutheschnellwegs, geplant vom 08.05.2026 22:00 Uhr bis 11.05.2026 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025) (inaktiv) (bis 30.01.2026) (inaktiv) (wechselseite Verkehrsführung, bis 15.05.2026)
+#: source_id: LS/223-P/25/019 (bis 07.04.2025) (Vollsperrung 08.08. bis 11.08.2025) (Vollsperrung 28.11. bis 01.12.2025) (inaktiv) (bis 30.01.2026) (inaktiv) (wechselseite Verkehrsführung, bis 15.05.2026) (bis 12.06.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~21-02-2025-spatenstich-an-der-bruecke-am-horstweg
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/horstweg-brucke-wird-abgerissen-nuthestrasse-einspurig-bis-weihnachten-13249276.html (weitere Sperrungen 2025)
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/staustellen-in-potsdam-horstweg-brucke-abgerissen-bahnubergang-rehbrucke-gesperrt-13496803.html
@@ -51230,15 +51231,15 @@ EOF
 EOF
      },
      { from  => 1761110409, # 2025-10-22 07:20
-       until => $isodate2epoch->("2026-05-13 23:59:59"),
+       until => $isodate2epoch->("2026-06-21 23:59:59"), # $isodate2epoch->("2026-05-13 23:59:59"),
 #      text  => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
-       text  => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 13. Mai 2026',
+       text  => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 21. Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
-#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026)
+#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026)
 #: source_id[inactive]: bvg2024:156#HIM_FREETEXT_303396
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Wigandstaler Str.: Einfahrt verboten	q3::inwork; 12910,17123 13037,16957
@@ -52436,13 +52437,13 @@ EOF
 EOF
      },
      { from  => 1773529200, # 2026-03-15 00:00
-       until => 1778882399, # 2026-05-15 23:59
-       text  => 'Brüsseler Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Antwerpener Str. und Lütticher Straße, vom 16.03.2026 bis Mitte Mai 2026',
+       until => $isodate2epoch->("2026-05-29 23:59:59"), # 1778882399, # 2026-05-15 23:59
+       text  => 'Brüsseler Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Antwerpener Str. und Lütticher Straße, vom 16.03.2026 bis Ende Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5q4ohmcs2u
-#: source_id: LMS-BR:401945/72 viz2021:13.35056,52.54723,16.03.2026,07:00 (bis 15.05.2026)
+#: source_id: LMS-BR:401945/72 viz2021:13.35056,52.54723,16.03.2026,07:00 (bis 15.05.2026) (bis 29.05.2026)
 	q4::inwork 6539,15548 6690,15671
 EOF
      },
@@ -52975,6 +52976,16 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:407818/72 viz2021:13.47884,52.43357,11.05.2026,06:00 (bis 05.06.2026)
 	q4::inwork 15660,3177 15808,3063
+EOF
+     },
+     { from  => 1778536800, # 2026-05-12 00:00
+       until => 1781560799, # 2026-06-15 23:59
+       text  => 'Rosenfelder Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis Mitte Juni 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mlnvyvhpyc2t
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid5ji4tqjxbjwqsuewm2lykph6y4cl5jmkdtbqyrbzadla43h6km4
+	q4::inwork; 17251,11789 17169,11677
 EOF
      },
     );
