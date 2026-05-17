@@ -1477,7 +1477,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: last_checked: 2026-05-02 vvv
+#: last_checked: 2026-05-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 #: XXX früher RW1;, nun Benutzungspflicht
@@ -1744,7 +1744,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:388766/72 viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
-#: last_checked: 2026-04-15 (mapillary)
+#: last_checked: 2026-05-11 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
@@ -1819,7 +1819,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-05-06 vvv
+#: last_checked: 2026-05-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1840,7 +1840,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="58"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-05-06 vvv
+#: last_checked: 2026-05-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -2833,7 +2833,8 @@ neu asphaltiert, 2m breit	RW1; 1960,6986 1959,7107
 Gehwegplatten	RW1; 1959,7107 1959,7225 1957,7365 1956,7453
 Gehwegplatten, Bord gegen Gehweg	RW1; 1956,7453 1955,7531 1967,7561 1987,7593
 # 
-	RW4;RW3 9811,16112 10005,16150 10045,16157
+	RW4; 9811,16112 10005,16150 10045,16157
+	RW3; 10045,16157 10005,16150 9811,16112 9765,16106
 auf der Radspur stehen regelmäßig wartende Autos vor dem BSR-Recyclinghof	RW4; 10045,16157 10291,16193
 	RW3; 10291,16193 10045,16157
 	RW3;RW3 10291,16193 10421,16175 10591,16159 10739,16146
@@ -4467,7 +4468,7 @@ schlechter Radweg	RW1;RW1 463,933 454,991 333,1104 190,1229
 schlechter Radweg	RW1;RW1 1207,1051 1088,1031 1075,1029 958,1009 932,1005 848,990 786,979 760,975 725,970 656,961 538,944 463,933 230,899
 #: by: ^^^
 # REMOVED --- nicht bestätigt --- #: by: sebastian Wrede: --- RW;RW -3177,15053 -3258,15100 -3368,15170 -3534,15219
-	RW1;RW0 9446,16060 9765,16106 9811,16112
+	RW1; 9446,16060 9765,16106 9811,16112
 #: by: Wolfhard Schleese vvv
 	RW6;RW6 9008,21124 9093,21090 9138,21070
 	RW6;RW6 9130,21187 9093,21090
@@ -4717,9 +4718,11 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: note: da die Absperrung etwa 40m hinter der Widderstr. steht und auch sonst keine Ausschilderung existiert, fahren die meisten Radfahrer praktisch über den Gehweg an der abgesperrten Stelle vorbei
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/protokoll_5_mobilitaetsrat_070126.pdf (Erwähnung)
-#: XXX evtl. Verlegung der RVA auf die Fahrbahn
+#: by: https://www.infravelo.de/projekt/dammweg/ (1. Quartal 2026 - 2. Quartal 2026)
+#: XXX Verlegung der RVA zwischen Widderstraße und der Sonnenallee auf die Fahrbahn
 #: last_checked: 2026-04-29 (aktuell Bauarbeiten)
 #: check_frequency: 30d
+#: next_check: 2026-06-30 (infravelo)
 abgesperrter Radweg, alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg	RW0; 14853,7451 14775,7385
 alte Gehwegplatten, deutliche Schäden und Wurzelhebungen, Bord gegen Gehweg	RW1; 14775,7385 14758,7373 14708,7325 14617,7243
 Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15011,7593 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
@@ -5022,7 +5025,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2026-04-21 vvv
+#: last_checked: 2026-05-16 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -8154,7 +8157,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2026-04-01 (mapillary) vvv
+#: last_checked: 2026-05-16 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

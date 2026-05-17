@@ -33,10 +33,10 @@ Karl-Marx-Str. (Hohen Neuendorf): Bauarbeiten, nur ein schmaler Gehweg ist frei	
 # 
 #: next_check_id: BHFBLANKENFELDE-2023
 #: note: mittlerweile nur Engstelle am östlichen Ende, deshalb q3 -> q2
-#: last_checked: 2026-05-05 (youtube)
+#: last_checked: 2026-05-14 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2025-12-31
-Bhf. Blankenfelde: Engstelle	q2::inwork 11667,-7536 11601,-7560 11551,-7599
+Bhf. Blankenfelde: Engstelle	q2::inwork 11667,-7536 11601,-7560
 # 
 #: temporary ^^^
 ######################################################################
@@ -366,3 +366,11 @@ Fußgängerbrücke Brandenburg: Rampe, Fußgänger	q3 -46122,-1443 -46145,-1468 -4611
 #: XXX_prog BS
 (Friedrich-Engels-Str. - Zum Wasserturm): möglicherweise Bordsteine	q3 -11834,-2213 -11834,-2191
 Meisenweg (Stahnsdorf): kurze Rampe	q3 -3756,-2693 -3775,-2663
+#: XXX_prog BS an der Brunnenstr.
+(August-Bebel-Str. - Brunnenstr.): Fußgänger, schmal, Bordstein	q3 -85679,-75213 -85638,-75188
+(Weg an der Fasanerie): schmal, einige Fußgänger	q2+ -86021,-74305 -86022,-74555 -86061,-74651 -86061,-74766 -86037,-74805 -86034,-74828
+(Hohenköthener Str. - Wülknitzer Str.): schmal	q3 -85836,-75812 -85846,-75843
+#: note: Radfahrer frei 18-10 Uhr
+Schalaunische Str.: Fußgängerzone	q4 -84643,-74599 -84699,-74574 -84742,-74554 -84807,-74544
+#: note: Radfahrer frei 18-10 Uhr
+(Bärteichpromenade - Schalaunische Str.): Fußgängerzone	q4 -84714,-74600 -84699,-74574

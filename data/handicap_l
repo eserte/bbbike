@@ -3,7 +3,7 @@
 #:
 Erika-Wolf-Str.: Bauarbeiten, nur ein enger Weg vorhanden	q4::inwork -12801,-1485 -12708,-1445
 Karl-Marx-Str. (Hohen Neuendorf): Bauarbeiten, nur ein schmaler Gehweg ist frei	q3::inwork 1141,29607 1272,29447
-Bhf. Blankenfelde: Engstelle	q2::inwork 11667,-7536 11601,-7560 11551,-7599
+Bhf. Blankenfelde: Engstelle	q2::inwork 11667,-7536 11601,-7560
 Brandenburger Str.: Fuﬂg‰ngerzone	q4 -12883,-976 -12999,-1000 -13173,-1039 -13289,-1071 -13410,-1101 -13525,-1131 -13556,-1140
 Neuer Garten: Schiebestrecke	q4 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12133,1323
 Neuer Garten: Fuﬂg‰nger	q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12135,1358
@@ -255,6 +255,11 @@ Fuﬂg‰ngerbr¸cke Brandenburg: Rampe, Fuﬂg‰nger	q3 -46122,-1443 -46145,-1468 -4611
 (Bahnhof Wildau): Rampen, Fuﬂg‰nger	q3 26361,-9336 26430,-9359 26436,-9327 26430,-9344 26465,-9352 26461,-9382 26473,-9355 26508,-9363
 (Friedrich-Engels-Str. - Zum Wasserturm): mˆglicherweise Bordsteine	q3 -11834,-2213 -11834,-2191
 Meisenweg (Stahnsdorf): kurze Rampe	q3 -3756,-2693 -3775,-2663
+(August-Bebel-Str. - Brunnenstr.): Fuﬂg‰nger, schmal, Bordstein	q3 -85679,-75213 -85638,-75188
+(Weg an der Fasanerie): schmal, einige Fuﬂg‰nger	q2 -86021,-74305 -86022,-74555 -86061,-74651 -86061,-74766 -86037,-74805 -86034,-74828
+(Hohenkˆthener Str. - W¸lknitzer Str.): schmal	q3 -85836,-75812 -85846,-75843
+Schalaunische Str.: Fuﬂg‰ngerzone	q4 -84643,-74599 -84699,-74574 -84742,-74554 -84807,-74544
+(B‰rteichpromenade - Schalaunische Str.): Fuﬂg‰ngerzone	q4 -84714,-74600 -84699,-74574
 Wollestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -10717,-1227 -10984,-1574
 Am Bˆttcherberg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; -9565,62 -9541,97 -9539,147
 Lange Br¸cke: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
@@ -294,3 +299,4 @@ Jahnstr. (KW): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 262
 Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 26300,-11864 26205,-11862
 Maxim-Gorki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 26289,-12055 26288,-12089 26274,-12153 26252,-12298
 Am Poetensteig, Gramzow: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 50031,90234 50066,89991 50107,89708
+Aribertstr. (Kˆthen): Bauarbeiten, Fahrbahn gesperrt: gesperrt, ggfs. schieben	q4:inwork::igndisp -85324,-74675 -85353,-74839 -85366,-74925

@@ -16,7 +16,7 @@ Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9
 #: osm_watch: node id="13704066872" version="1"
 #: osm_watch: node id="13704066873" version="1"
 #: note: manchmal (oder immer?) bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20)
-#: last_checked: 2026-04-15
+#: last_checked: 2026-05-16
 #: check_frequency: 90d
 #: next_check: 2028-03-03
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
@@ -61,7 +61,7 @@ Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
 #: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026) (bis 22.05.2026)
-#: last_checked: 2026-04-22 (mapillary)
+#: last_checked: 2026-05-16
 #: check_frequency: 90d
 #: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260213
@@ -103,9 +103,9 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # REMOVED --- Lahnstr./Mittelbuschweg: Gegenverkehrsregelung	X::inwork::alternating 13500,7018
 # 
 #: next_check_id: SCHIFFBAUERDAMM-2025
-#: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026)
+#: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
-#: last_checked: 2026-05-09
+#: last_checked: 2026-05-16
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
@@ -121,7 +121,7 @@ Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347
 #: source_id: LMS-BR:379727/72 viz2021:13.37128,52.4366,13.08.2025,07:00 viz2021:13.37128,52.4366, (provisorische Ampelanlage, bis 22.09.2025) (bis 13.03.2026) (bis 06.05.2026) (bis 17.07.2026)
 #: XXX permanente Ampel in Planung
-#: last_checked: 2026-04-29
+#: last_checked: 2026-05-14 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2026-07-17 (VIZ-Verkehrsmeldung)
 Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::inwork 8461,3410
@@ -5620,6 +5620,27 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: note: Anforderungsampel
 	F 49794,-59785
 	B 74976,18303
+	B -67846,-64910
+	B -68384,-65156
+	X -68080,-65645
+	X -67588,-65535
+	X -68304,-65755
+	X -68657,-65830
+	X -68825,-65845
+	X -70306,-66275
+	X -70951,-66829
+	X -71147,-66945
+	X -84020,-74227
+	X -85293,-75159
+	X -85489,-75223
+#: note: Anforderungsampel
+	F -91171,-71033
+	X -90146,-72399
+	B -85907,-75854
+#: note: Anforderungsampel
+	X -86889,-75957
+	B -87749,-68820
+	B -88736,-67128
 # 
 #: section: ^^^
 ################################################################################

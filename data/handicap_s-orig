@@ -10,16 +10,13 @@
 # 
 ### Friedrichshain ###
 # 
-#: XXX Laut Halteverbotsschildern möglicherweise bis Ende November 2026 ("31.11.2026" (sic!))
-#: last_checked: 2026-05-11
-#: check_frequency: 10d
-#: next_check: 2026-11-30 (Halteverbotsschilder)
-Krossener Str.: Sperrung der Fahrbahn wegen Hochbauarbeiten	q4+::inwork 14247,11681 14358,11656
-# 
-# REMOVED (möglicherweise beendet) --- #: last_checked: 2026-03-22
+# REMOVED --- #: XXX Laut Halteverbotsschildern möglicherweise bis Ende November 2026 ("31.11.2026" (sic!))
+# REMOVED --- #: last_checked: 2026-05-16 (Fahrbahn wieder offen)
 # REMOVED --- #: check_frequency: 10d
-# REMOVED --- Gubener Str.: Fahrbahn gesperrt, Baustellenfläche	q3::inwork 13352,12003 13339,12029 13326,12056
+# REMOVED --- #: next_check: 2026-11-30 (Halteverbotsschilder)
+# REMOVED --- Krossener Str.: Sperrung der Fahrbahn wegen Hochbauarbeiten	q4+::inwork 14247,11681 14358,11656
 # 
+# REMOVED (dauerhaft beendet) --- #: last_checked: 2026-03-22 --- #: check_frequency: 10d --- Gubener Str.: Fahrbahn gesperrt, Baustellenfläche	q3::inwork 13352,12003 13339,12029 13326,12056
 # REMOVED --- #: source_id: viz2021:13.4684,52.50706,26.08.2025,06:00 (bis 12.09.2025) (inaktiv) --- #: last_checked: 2025-09-10 --- #: next_check: 2025-09-12 --- #: valid: -20250912 --- Wühlischstr.: Bauarbeiten, Einfahrt verboten	q4::inwork; 14771,11345 14759,11339
 # REMOVED (vorfristig fertig geworden) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php (Bauende: voraussichtlich Anfang Juni 2025) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1549441.php (Querungshilfen im Bezirk, auch diese hier) --- #: also_indoor: traffic (ex-G,ex-W,B,T) --- #: osm_watch: note 3677862 12 --- #: note: Arbeiten für eine neue Gehwegvorstreckung --- #: last_checked: 2025-04-09 --- #: check_frequency: 45d --- #: next_check: 2025-06-01 (BA-Artikel) --- Weserstr.: ca. 50m der Fahrbahn sind wegen Bauarbeiten gesperrt, enge Bürgersteige	q4::inwork 14651,11666 14710,11626
 # REMOVED (vorfristig fertig geworden) --- #: source_id: viz2021:13.45198,52.5107,16.02.2025,18:43 (bis 24.02.2025) (kein Endedatum) (bis 12.03.2025) (bis 18.04.2025) (zu spät inaktiv) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266314 (kein Endedatum) --- #: source_id[inactive]: bvg2024:m13#HIM_FREETEXT_266321 (kein Endedatum) (bis 2025-03-10) --- #: osm_watch: way id="1145213536" version="7" --- #: osm_watch: way id="1363264660" version="3" --- #: note: Halteverbotsschilder bis 18.04.2025 --- #: also_indoor: traffic (G,T) --- #: last_checked: 2025-03-28 (fast fertig) --- #: check_frequency: 3d --- #: next_check: 2025-04-18 (Halteverbotsschilder, VIZ-Verkehrsmeldung) --- #: valid: -20250418 --- Kopernikusstr.: geplatzte Wasserleitung, etwa 20m der Fahrbahn an der Warschauer Str. sind gesperrt	q2::inwork 13651,11731 13895,11663
@@ -56,7 +53,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-05-06 vvv
+#: last_checked: 2026-05-16 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="13"
@@ -87,9 +84,9 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="30"
-#: osm_watch: way id="1072662717" version="34"
-#: last_checked: 2026-05-12
+#: osm_watch: way id="1072662716" version="31"
+#: osm_watch: way id="1072662717" version="35"
+#: last_checked: 2026-05-14 (osm)
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -132,7 +129,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-05-07 vvv
+#: last_checked: 2026-05-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -651,7 +648,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: last_checked: 2026-05-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-06-30 vvv
-#: osm_watch: way id="153698394" version="18"
+#: osm_watch: way id="153698394" version="19"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # REMOVED (offen) --- #: also_indoor: traffic (ex-H,ex-G) --- #: osm_watch: way id="114667396" version="13" --- Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 #: next_check ^^^
@@ -807,7 +804,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: by: https://bsky.app/profile/eserte.bsky.social/post/3mf5bn74i322s
 #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
-#: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-re-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
+#: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
 #: last_checked: 2026-05-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
@@ -2065,6 +2062,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: by: https://www.entwicklungsstadt.de/spreewaldbad-in-kreuzberg-sanierung-laeuft-wiedereroeffnung-fuer-2027-geplant/ (bis III. Quartal 2027)
 #: by: https://www.entwicklungsstadt.de/wellenbad-kreuzberg-sanierung-macht-fortschritte/ (bis Ende 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/dauerbaustelle-berliner-hallenbader-stadtbad-schoneberg-soll-mitte-2026-wieder-offnen--verzogerungen-beim-wellenbad-am-spreewaldplatz-15470876.html
+#: by: https://www.entwicklungsstadt.de/wellenbad-am-spreewaldplatz-dach-geoeffnet-fliesen-entfernt/
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
@@ -4654,7 +4652,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 #: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="3"
-#: osm_watch: way id="1168244288" version="5"
+#: osm_watch: way id="1168244288" version="6"
 #: last_checked: 2025-12-06 (webcam)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
