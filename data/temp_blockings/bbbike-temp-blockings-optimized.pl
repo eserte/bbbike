@@ -5057,7 +5057,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2026-04-12
+#: last_checked: 2026-05-18
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -5759,7 +5759,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch[closed]: note 5093384 7
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-05-10 (mapillary)
+#: last_checked: 2026-05-18
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5793,7 +5793,7 @@ Weserstr. zwischen Innstr. und Treptower Str.	q4::inwork 13217,8493 13384,8354 1
 #: by: https://fahrinfo.vbb.de/him-uploads/1748254774225_Kartenausschnitt_Treptower_Str.png
 #: also_indoor: traffic (T)
 #: note: Länge der Sperrung ca. 50m
-#: traffic_note: Durch die Sperrung der Treptower Str. gibt es deutlich erhöhten Ausweichverkehr z.B. durch die Werrastr.
+#: traffic_note: Durch die Sperrung der Treptower Str. gibt es deutlich erhöhten Ausweichverkehr z.B. durch die Werrastr. und die Thiemannstr.
 #: XXX_prog: eigentlich q4+::inwork;
 Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: next_check ^^^
@@ -5962,7 +5962,55 @@ Michael-Brückner-Platz	2::temp 17728,5756 17807,5730
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
+#: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
+#: source_id: viz2021:13.371607,52.515899,22.04.2024,06:00 (bis 25.04.2024) (inaktiv)
+#: source_id: viz2021:13.36259,52.505907,24.04.2024,18:00 (bis 24.04.2024) (inaktiv)
+#: source_id: viz2021:13.35107,52.51429,05.05.2025,22:00 (bis 30.05.2025) (inaktiv)
+#: source_id: viz2021:13.366231,52.515535,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
+#: source_id: viz2021:13.35064,52.51395,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
+#: source_id: viz2021:13.36259,52.505907,21.05.2025,17:00 (bis 21.05.2025) (inaktiv)
+#: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
+#: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
+#: by: https://viz.berlin.de/2023/05/firmenlauf/
+#: by: https://berliner-firmenlauf.de/ (21. Mai 2025) (20. Mai 2026)
+#: note: 2025 Sperrzaun entlang der Bellevueallee zwischen Straße des 17. Juni und Kemperplatz
+	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095
+# REMOVED (westlich der Bellevueallee nicht gesperrt) ---	2::temp 7383,12095 7026,12054 6828,12031
+# REMOVED (Überfahrt möglich) ---	3 7429,12070 7383,12095 7288,12156 7031,12320
+# REMOVED (Überfahrt möglich) ---	3 7031,12320 7288,12156 7383,12095 7429,12070
+Bremer Weg	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226 8538,12245
+Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156
+	2::temp 7717,11918 7772,12040 7775,12114
+	2::temp 7793,11878 7822,11952 7832,12036 7823,12120 7816,12150
+	2::temp 8016,11770 8020,11937 8022,12016 8052,12033 8057,12065 8034,12093 8049,12140 8055,12186
+	2::temp 8034,12093 8004,12074 7999,12040 8022,12016
+	2::temp 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 8189,11722 8210,11775 8221,11876 8221,11885 8215,12156 8214,12205
+	2::temp 8210,11775 8244,11878 8327,12174 8344,12221
+	2::temp 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
+',
+         'from' => 1779076800,
+         'id' => 3577,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni, Ebertstr. und östlicher Tiergarten: Vorbereitungen für den Berliner Firmenlauf, Straßen und Wege gesperrt, voraussichtlich vom 18.05.2026 bis 21.05.2026 08:00 ',
+         'type' => 'gesperrt',
+         'until' => 1779343200
+       },
        undef,
        undef,
        undef,
@@ -7047,7 +7095,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung; nun wieder Einbahnstraßenregelung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-04-28
+#: last_checked: 2026-05-18
 #: check_frequency: 90d
 #  REMOVED --- #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 12407,8177 12545,8209
@@ -7509,6 +7557,8 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
        {
          'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
+#: source_id: LMS-BR:408563/72 viz2021:13.338888,52.589354,18.05.2026,07:00 (bis 12.06.2026)
+#: source_id: bvg2024:120#HIM_FREETEXT_337463
 #: also_indoor: traffic (G,ex-H,ex-W,no-T)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
 #: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
@@ -7530,7 +7580,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
          'id' => 4089,
          'text' => 'Alt-Wittenau: vor der Einmündung Roedernallee Bauarbeiten, ein kurzes Stück der Fahrbahn ist gesperrt, bis Mitte Juni 2026',
          'type' => 'handicap',
-         'until' => 1781560799
+         'until' => 1781301599
        },
        undef,
        undef,
@@ -7563,7 +7613,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-05-12 vvv
+#: last_checked: 2026-05-18 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -9234,7 +9284,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-10 vvv
+#: last_checked: 2026-05-18 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9310,7 +9360,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        undef,
        {
          'data' => '#: also_indoor: traffic (G,H,no-T)
-#: last_checked: 2026-04-18 (mapillary)
+#: last_checked: 2026-05-16 (mapillary)
 #: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 ',
@@ -10574,7 +10624,8 @@ Baustelleneinrichtungsfläche	2::inwork 19045,6959 19080,6986
        },
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe dauern die Bauarbeiten im Bauabschnitt Böhmische Straße zwischen Kanner Straße und Niemetzstraße von März 2026 bis Mai 2027 -> erwartete Änderungen des aktuell gesperrten Abschnitts, deshalb check_frequency=45d
-#: last_checked: 2026-04-29 vvv
+#: also_indoor: traffic (G[zu kurz],T[zu lang],no-H,no-A,no-W)
+#: last_checked: 2026-05-18 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-05-31 (Baustellenschild der Wasserbetriebe) vvv
 Niemetzstr.	q4::inwork 13583,7642 13571,7588 13581,7586
@@ -10667,7 +10718,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
 #: osm_watch: way id="77503429" version="18"
 #: add_fragezeichen: Ist der Pankeweg noch immer gesperrt?
 #: priority: #A
-#: last_checked: 2026-05-15 (mapillary)
+#: last_checked: 2026-05-16 (mapillary)
 #: check_frequency: 30d
 Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,20344 12154,20325 12094,20110
 ',

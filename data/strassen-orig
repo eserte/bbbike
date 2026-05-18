@@ -223,8 +223,8 @@ Grimmstr. (Kreuzberg)	N 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 1
 Grimmstr. (Kreuzberg)	NN 11164,9885 11164,9904 11170,9919 11177,9935
 #: osm.highway: service
 Grimmstr. [ehemaliges Urbankrankenhaus]	NN 11072,9711 11040,9724 11030,9702 10899,9754 10887,9729 11016,9671 11009,9655 11042,9642
-#: osm.highway: service
-(Dieffenbachstr. - ehemaliges Urbankrankenhaus)	N 10926,9821 10919,9804 10899,9754
+#: historical_note: früher die parallele Servicestraße gemappt (osm.highway: service, N)
+(Dieffenbachstr. - ehemaliges Urbankrankenhaus)	NN 10926,9821 10919,9804 10899,9754
 (Admiralbrücke - Böckhstr.)	NN 11160,9932 11170,9919 11197,9894
 Reichstagufer	N 9286,12886 9209,12795 9171,12758 9117,12705 9098,12687 8892,12576 8766,12541
 Reichstagufer	NN 8766,12541 8667,12555 8596,12576 8554,12593
@@ -20011,7 +20011,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-05-12 vvv
+#: last_checked: 2026-05-18 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
