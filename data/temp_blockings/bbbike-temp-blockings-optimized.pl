@@ -1157,42 +1157,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/ (Aktualisierungen nur bis 2020)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.921158.php (Absage 2020)
-#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html (geplant für 8. und 9. Mai 2021)
-#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20210418 (abgesagt)
-#: by: https://www.laubinger.de/event/30-fest-auf-der-boelschestrasse/ (geplant für 7.05.2022 - 8.05.2022)
-#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
-#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20230325 (wegen Bauarbeiten für 2023 abgesagt)
-#: by: https://www.facebook.com/events/1572185126967043/?ref_source=NEWS_FEED&__hwl=1&_rdr (20.9.-22.9.2024)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-traditionsfeste-kein-festumzug-durch-die-kopenicker-altstadt-13344679.html (2025 nur auf dem Marktplatz Friedrichshagen?)
-#: by: https://www.laubinger.de/event/31-fest-auf-der-boelsche-geplant/ (fällt 2025 aus)
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article411944067/berlin-boelschefest-2026-in-friedrichshagen-das-ist-dieses-mal-anders.html (Fahrbahn für Autos gesperrt)
-#: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.624675,52.451034,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
-#: source_id: LMS-BR:408161/72 viz2021:13.62467,52.45051,14.05.2026,06:00 (bis 17.05.2026)
-Bölschestr.: Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
-',
-         'from' => 1778623200,
-         'id' => 964,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5,
-                              'start',
-                              '2025-05-13T00:00:00'
-                            ]
-                          ],
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (14. bis 17. Mai 2024)',
-         'type' => 'gesperrt',
-         'until' => 1779055200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1887,7 +1852,7 @@ Bölschestr.: Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,5749 2556
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
 #: also_indoor: traffic (T,G)
 #: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
-#: last_checked: 2026-04-06
+#: last_checked: 2026-05-16
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (BVV)
 Kantstr.	q4::inwork 5613,10963 5652,11004
@@ -5997,55 +5962,7 @@ Michael-Brückner-Platz	2::temp 17728,5756 17807,5730
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.350533,52.513921,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
-#: source_id: viz2021:13.37081,52.51779,15.05.2023,06:00 (bis 17.05.2023) (inaktiv)
-#: source_id: viz2021:13.371607,52.515899,22.04.2024,06:00 (bis 25.04.2024) (inaktiv)
-#: source_id: viz2021:13.36259,52.505907,24.04.2024,18:00 (bis 24.04.2024) (inaktiv)
-#: source_id: viz2021:13.35107,52.51429,05.05.2025,22:00 (bis 30.05.2025) (inaktiv)
-#: source_id: viz2021:13.366231,52.515535,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
-#: source_id: viz2021:13.35064,52.51395,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
-#: source_id: viz2021:13.36259,52.505907,21.05.2025,17:00 (bis 21.05.2025) (inaktiv)
-#: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
-#: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
-#: by: https://viz.berlin.de/2023/05/firmenlauf/
-#: by: https://berliner-firmenlauf.de/ (21. Mai 2025) (20. Mai 2026)
-#: note: 2025 Sperrzaun entlang der Bellevueallee zwischen Straße des 17. Juni und Kemperplatz
-	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095
-# REMOVED (westlich der Bellevueallee nicht gesperrt) ---	2::temp 7383,12095 7026,12054 6828,12031
-# REMOVED (Überfahrt möglich) ---	3 7429,12070 7383,12095 7288,12156 7031,12320
-# REMOVED (Überfahrt möglich) ---	3 7031,12320 7288,12156 7383,12095 7429,12070
-Bremer Weg	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226 8538,12245
-Tiergarten, nördlich der Straße des 17. Juni (bis Bellevueallee)	2::temp 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229 7653,12227 7449,12216 7288,12156
-	2::temp 7717,11918 7772,12040 7775,12114
-	2::temp 7793,11878 7822,11952 7832,12036 7823,12120 7816,12150
-	2::temp 8016,11770 8020,11937 8022,12016 8052,12033 8057,12065 8034,12093 8049,12140 8055,12186
-	2::temp 8034,12093 8004,12074 7999,12040 8022,12016
-	2::temp 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
-	2::temp 8189,11722 8210,11775 8221,11876 8221,11885 8215,12156 8214,12205
-	2::temp 8210,11775 8244,11878 8327,12174 8344,12221
-	2::temp 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
-',
-         'from' => 1779076800,
-         'id' => 3577,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni, Ebertstr. und östlicher Tiergarten: Vorbereitungen für den Berliner Firmenlauf, Straßen und Wege gesperrt, voraussichtlich vom 18.05.2026 bis 21.05.2026 08:00 ',
-         'type' => 'gesperrt',
-         'until' => 1779336000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7589,7 +7506,32 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
+#: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
+#: also_indoor: traffic (G,ex-H,ex-W,no-T)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
+#: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
+#: by: https://www.deutsches-architekturforum.de/thread/14764-reinickendorf-kleinere-projekte/?postID=766343#post766343 (Quartier Alt-Wittenau)
+#: by: https://www.gesobau.de/wohnungsbau/quartier-alt-wittenau/ (Bauphase bis Sommer 2026)
+#: by: https://entwicklungsstadt.de/baufortschritt-in-alt-wittenau-gesobau-quartier-nimmt-gestalt-an/ (Fertigstellung Sommer 2026)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1574495.php
+#: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
+#: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/
+#: by: https://www.entwicklungsstadt.de/reinickendorf-roedernallee-118-studenten-wohnheim-waechst/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mm42zwmuqs24 (neue Sperrung Mai 2026)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigidihkfou4dn74k7bo4az24iuh4va3us6s3zms2p6euiz2ccsal4
+# REMOVED --- #: last_checked: 2026-03-24 (traffic) --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
+#	q3::inwork; 5476,20372 5801,20339
+	q3::inwork 5476,20372 5801,20339
+',
+         'from' => 1779055200,
+         'id' => 4089,
+         'text' => 'Alt-Wittenau: vor der Einmündung Roedernallee Bauarbeiten, ein kurzes Stück der Fahrbahn ist gesperrt, bis Mitte Juni 2026',
+         'type' => 'handicap',
+         'until' => 1781560799
+       },
        undef,
        undef,
        undef,

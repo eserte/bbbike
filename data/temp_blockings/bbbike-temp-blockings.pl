@@ -14396,7 +14396,7 @@ EOF
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
 #: also_indoor: traffic (T,G)
 #: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
-#: last_checked: 2026-04-06
+#: last_checked: 2026-05-16
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (BVV)
 Kantstr.	q4::inwork 5613,10963 5652,11004
@@ -37284,11 +37284,11 @@ EOF
 	2::inwork 7189,17666 7173,17591 7222,17471 7253,17467
 EOF
      },
-     { from  => $isodate2epoch->("2026-05-18 06:00:00"), # $isodate2epoch->("2025-05-19 06:00:00"), # $isodate2epoch->("2024-04-22 06:00:00"), # $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00 # zwei Tage vor dem Event
-       until => $isodate2epoch->("2026-05-21 06:00:00"), # $isodate2epoch->("2025-05-22 08:00:00"), # $isodate2epoch->("2024-04-25 08:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
+     { from  => $isodate2epoch->("2026-05-13 06:00:00"), # $isodate2epoch->("2026-05-18 06:00:00"), # $isodate2epoch->("2025-05-19 06:00:00"), # $isodate2epoch->("2024-04-22 06:00:00"), # $isodate2epoch->("2023-05-14 06:00:00"), # 1656302400, # 2022-06-27 06:00 # zwei Tage vor dem Event
+       until => $isodate2epoch->("2026-05-17 06:00:00"), # $isodate2epoch->("2026-05-21 06:00:00"), # $isodate2epoch->("2025-05-22 08:00:00"), # $isodate2epoch->("2024-04-25 08:00:00"), # $isodate2epoch->("2023-05-17 06:00:00"), # 11656561600, # 2022-06-30 06:00 # ein Tag nach dem Event
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Straße des 17. Juni, Ebertstr. und östlicher Tiergarten: Vorbereitungen für den Berliner Firmenlauf, Straßen und Wege gesperrt, voraussichtlich vom 18.05.2026 bis 21.05.2026 08:00 ',
+       text  => 'Straße des 17. Juni, Ebertstr. und östlicher Tiergarten: Vorbereitungen für den Berliner Firmenlauf, Straßen und Wege gesperrt, voraussichtlich vom 14.05.2026 bis 17.05.2026 06:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: viz2021:13.351095,52.514567,28.06.2022,06:00 (inaktiv)
@@ -45199,12 +45199,13 @@ EOF
 #: also_indoor ^^^
 EOF
      },
-     { from  => 1718254800, # 2024-06-13 07:00
-       until => 1776793905, # $isodate2epoch->("2026-09-01 17:00:00"), # 1725030000, # 2024-08-30 17:00
+     { from  => $isodate2epoch->("2026-05-18 00:00:00"), # 1718254800, # 2024-06-13 07:00
+       until => $isodate2epoch->("2026-06-15 23:59:59"), # 1776793905, # $isodate2epoch->("2026-09-01 17:00:00"), # 1725030000, # 2024-08-30 17:00
 #      text  => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, voraussichtlich bis Ende 2025',
-       text  => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, möglicherweise bis zum Sommer 2026',
+#      text  => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, möglicherweise bis zum Sommer 2026',
+       text  => 'Alt-Wittenau: vor der Einmündung Roedernallee Bauarbeiten, ein kurzes Stück der Fahrbahn ist gesperrt, bis Mitte Juni 2026',
        type  => 'handicap',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
 #: also_indoor: traffic (G,ex-H,ex-W,no-T)
@@ -45217,9 +45218,12 @@ EOF
 #: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
 #: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/
 #: by: https://www.entwicklungsstadt.de/reinickendorf-roedernallee-118-studenten-wohnheim-waechst/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mm42zwmuqs24 (neue Sperrung Mai 2026)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigidihkfou4dn74k7bo4az24iuh4va3us6s3zms2p6euiz2ccsal4
 # REMOVED --- #: last_checked: 2026-03-24 (traffic) --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
-	q3::inwork; 5476,20372 5801,20339
+#	q3::inwork; 5476,20372 5801,20339
+	q3::inwork 5476,20372 5801,20339
 EOF
      },
      { from  => 1719122400, # 2024-06-23 08:00
