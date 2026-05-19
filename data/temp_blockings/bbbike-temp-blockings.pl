@@ -5103,7 +5103,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82301_COPY_1',
        data  => <<EOF,
-	2::inwork -925,22941 -774,22977 -728,22990 -700,22998 -656,23011
+	2::inwork -925,22941 -774,22977 -728,22990 -684,23002 -656,23011
 EOF
      },
      { from  => 1149976800, # 2006-06-11 00:00
@@ -17430,6 +17430,7 @@ EOF
        data  => <<EOF,
 #: source_id: 247300035 (bis 02.03.2024) (inaktiv)
 #: source_id: 267301326 (bis 06.06.2026)
+#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin/infobauarbeiten?date=20260518
 	2::inwork 48237,70892 48162,70928 48093,70968
 EOF
      },
@@ -37302,6 +37303,10 @@ EOF
 #: source_id: viz2021:13.35064,52.51395,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
 #: source_id: viz2021:13.36259,52.505907,21.05.2025,17:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
+#: source_id: LMS-BR:408680/72 viz2021:13.35107,52.51429,19.05.2026,06:00 (bis 21.05.2026)
+#: source_id: LMS-BR:408778/72 viz2021:13.36968,52.51571,04.05.2026,00:00 (bis 29.05.2026)
+#: source_id: LMS-BR:408681/72 viz2021:13.37737,52.51457,19.05.2026,06:00 (bis 21.05.2026)
+#: source_id: LMS-BR:408683/72 viz2021:13.36975,52.51584,19.05.2026,06:00 (bis 21.05.2026)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/ (21. Mai 2025) (20. Mai 2026)
@@ -41207,7 +41212,7 @@ EOF
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
 #: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
-#: last_checked: 2026-02-16 (okas)
+#: last_checked: 2026-05-19
 #: check_frequency: 360d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -41224,7 +41229,7 @@ EOF
 #: source_id: LMS-BR:296321/72 viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv) (bis 31.12.2025) (bis 31.12.2026)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2025-11-10 (okas)
+#: last_checked: 2026-05-19
 #: check_frequency: 360d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
@@ -42169,7 +42174,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-04-30
+#: last_checked: 2026-05-19
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -42731,7 +42736,7 @@ EOF
 #: osm_watch: way id="279580369" version="10"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-03-21
+#: last_checked: 2026-05-19
 #: check_frequency: 120d
 #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026))
 	q3::inwork 4335,17642 4392,17777
@@ -44425,11 +44430,11 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2026-05-31 20:00:00"), # $isodate2epoch->("2025-12-31 17:00:00"),
-       text  => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 31.05.2026',
+       until => $isodate2epoch->("2026-08-06 20:00:00"), # $isodate2epoch->("2026-05-31 20:00:00"), # $isodate2epoch->("2025-12-31 17:00:00"),
+       text  => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 06.08.2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/23/175 (bis 10.01.2024) (bis 31.12.2025) (bis 31.05.2026)
+#: source_id: LS/221-E/23/175 (bis 10.01.2024) (bis 31.12.2025) (bis 31.05.2026) (bis 06.08.2026)
 	2::inwork 11448,28068 12126,27740
 EOF
      },
@@ -47644,17 +47649,17 @@ EOF
 EOF
      },
      { from  => 1776451766, # 1730613600, # 2024-11-03 07:00
-       until => $isodate2epoch->("2026-05-25 23:59:59"), # $isodate2epoch->("2025-03-31 18:00:00"), # 1740783540, # 2025-02-28 23:59
+       until => $isodate2epoch->("2026-05-29 23:59:59"), # $isodate2epoch->("2025-03-31 18:00:00"), # 1740783540, # 2025-02-28 23:59
 #      text  => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Wilmersdorfer Str., Richtung Westen gesperrt, bis 28.03.2025',
 #      text  => 'Zillestr.: Einbahnstraßenregelung zwischen Kaiser-Friedrich-Str. und Gierkezeile, Richtung Westen gesperrt, bis 31.03.2025',
-       text  => 'Zillestr.: Sperrung zwischen Richard-Wagner-Str. und Wilmersdorfer Str., evtl. sind auch Radfahrer betroffen, bis 25.5.2026',
+       text  => 'Zillestr.: Sperrung zwischen Richard-Wagner-Str. und Wilmersdorfer Str., evtl. sind auch Radfahrer betroffen, bis 29.5.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.30113,52.51347,04.11.2024,07:00 (bis 28.02.2025) (inaktiv)
 #: source_id: viz2021:13.30113,52.51347,13.02.2025,11:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.30307,52.51345,10.03.2025,12:00 (bis 31.03.2025) (vorfristig inaktiv)
 # REMOVED (alte Verkehrsmeldung) --- #: also_indoor: traffic (H,T) --- #: note: bei rbb und einigen Verkehrsdiensten noch aktiv, bei VIZ nicht mehr --- # REMOVED (hier nicht mehr?) ---	q4::inwork; 3666,11855 3528,11852 ---	q4::inwork; 3528,11852 3406,11849
-#: source_id: LMS-BR:403637/72 viz2021:13.30491,52.51342, (bis 15.05.2026) (bis 25.05.2026)
+#: source_id: LMS-BR:403637/72 viz2021:13.30491,52.51342, (bis 15.05.2026) (bis 25.05.2026) (bis 29.05.2025)
 Zillestr.	q4::inwork 3666,11855 3801,11858
 # 
 EOF
@@ -48485,6 +48490,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410745786/panne-auf-baustelle-in-koepenick-mit-massiven-folgen-fuer-anwohner.html
 #: by: https://www.aktives-adlershof.de/aktuelles?date=20260303 (ab 9.3.2026 Bauarbeiten Nipkowstraße/Radickestraße (evtl. mit Sperrung?))
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mm6kcq2egs2f (Oberspreestr./Flemmingstr.)
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
@@ -48499,6 +48505,7 @@ EOF
 #: source_id: viz2021:13.54611,52.43478,10.06.2025,07:00 (hier: Radickestr. bis Friedenstr., bis 15.08.2025) (inaktiv)
 #: source_id: bvg2024:162#HIM_FREETEXT_323764 (Umleitung, vermutlich wegen bevorstehenden Bauarbeiten an der Kreuzung Radickestr./Nipkowstr.)
 #: source_id: LMS-BR:401266/72 viz2021:13.550062,52.436321,09.03.2026,07:00 (Radickestr./Nipkowstr., bis 27.03.2026) (bis 30.06.2026)
+#: source_id: LMS-BR:408693/72 viz2021:13.56935,52.44468,19.05.2026,07:00 (Oberspreestr./Flemmingstr., bis 04.06.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (bei der Baustelle Radickestr./Nipkowstr. wird nur der Kfz-Verkehr erwähnt, bis Ende März 2026)
@@ -48711,14 +48718,16 @@ EOF
 	q4::inwork 5630,4476 5541,4305
 EOF
      },
-     { from  => 1744520400, # 2025-04-13 07:00
-       until => 1767382941, # $isodate2epoch->("2026-01-02 23:59:59"), # $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
+     { from  => $isodate2epoch->("2026-05-19 00:00:00"), # 1744520400, # 2025-04-13 07:00
+       until => $isodate2epoch->("2026-11-13 23:59:59"), # 1767382941, # $isodate2epoch->("2026-01-02 23:59:59"), # $isodate2epoch->("2025-09-26 17:00:00"), # 1749826800, # 2025-06-13 17:00
 #      text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, vom 14.04.2025 07:00 bis 26.09.2025 17:00',
-       text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Anfang Januar 2026',
+#      text  => 'Wittekindstr.: Anbindung Arnulfstr. gesperrt, voraussichtlich bis Anfang Januar 2026',
+       text  => 'Wittekindstr.: Bauarbeiten zwischen Arnulfstr. und Tankredstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 13.11.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...) (inaktiv)
 #: source_id: LMS-BR:366727/72 viz2021:13.37222,52.4556, (bis 31.10.2025) (bis 28.11.2025) (bis 31.12.2025) (bis 02.01.2026) (inaktiv)
+#: source_id: LMS-BR:408759/72 viz2021:13.37222,52.4556, (bis 13.11.2026)
 	q4::inwork 8365,5502 8365,5418
 EOF
      },
@@ -49523,20 +49532,20 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-03-08 00:00:00"), # 1750654800, # 2025-06-23 07:00
-       until => $isodate2epoch->("2026-05-22 23:59:59"), # $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
+       until => $isodate2epoch->("2026-06-12 23:59:59"), # $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
 #      text  => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Fahrbahn Richtung Osten gesperrt, gemeinsamer Geh- und Radweg (Umwege + Bordsteine), vom 24.06.2025 07:00 bis 31.07.2025 17:00',
-       text  => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis Mitte Mai 2026',
+       text  => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis Mitte Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
 #: source_id: adac:2089388170 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.492511,52.516292,24.06.2025,07:00 (bis 31.07.2025) (inaktiv)
-#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026)
+#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026)
 # REMOVED (alte Bauarbeiten von 2025) --- #: note: bei rbb bis 31.07.2025 verlängert --- #: note: durch die Umwege + Bordsteine ist q4 berechtigt ---	q4::inwork; 16397,12397 16485,12384 16583,12371
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: next_check: 2026-05-22 (VIZ: weitere Arbeiten?)
+#: next_check: 2026-06-12 (VIZ: weitere Arbeiten?)
 	q4::inwork; 16276,12273 16397,12397 16485,12384
 EOF
      },
@@ -50621,12 +50630,12 @@ EOF
      { from  => undef, # 
        until => undef, # XXX
 #      text  => 'Schulweg: Durchgang wegen Bauarbeiten versperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Schulweg: Durchgang wegen Bauarbeiten offiziell versperrt (Stand April 2026: Bauzaun üblicherweise weggeschoben), Ende der Bauarbeiten unbekannt',
+       text  => 'Schulweg: Durchgang wegen Bauarbeiten offiziell versperrt (Stand Mai 2026: Bauzaun üblicherweise weggeschoben), Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-04-19 (Bauzaun weggeschoben)
+#: last_checked: 2026-05-19 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -51231,7 +51240,7 @@ EOF
 EOF
      },
      { from  => 1760824800, # 2025-10-19 00:00
-       until => 1781992799, # 2026-06-20 23:59
+       until => 1779221221, # 1781992799, # 2026-06-20 23:59
        text  => 'Mauerweg Ruppiner Chaussee - Frohnau: Bauarbeiten, evtl. Sperrungen, bis zum Frühjahr 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
@@ -52451,13 +52460,13 @@ EOF
      },
      { from  => 1773529200, # 2026-03-15 00:00
        until => $isodate2epoch->("2026-05-29 23:59:59"), # 1778882399, # 2026-05-15 23:59
-       text  => 'Brüsseler Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Antwerpener Str. und Lütticher Straße, vom 16.03.2026 bis Ende Mai 2026',
+       text  => 'Brüsseler Str.: Bauarbeiten, kurzer Abschnitt der Fahrbahn zwischen Antwerpener Str. und Lütticher Str. ist gesperrt, vom 16.03.2026 bis Ende Mai 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5q4ohmcs2u
 #: source_id: LMS-BR:401945/72 viz2021:13.35056,52.54723,16.03.2026,07:00 (bis 15.05.2026) (bis 29.05.2026)
-	q4::inwork 6539,15548 6690,15671
+	q3::inwork 6539,15548 6690,15671
 EOF
      },
      { from  => $isodate2epoch->("2026-03-17 00:00:00"), # 1773788400, # 2026-03-18 00:00
@@ -52468,7 +52477,7 @@ EOF
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260316
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mhachhnv7c22
-#: source_id: LMS-BR:402040/72 viz2021:13.47949,52.51624,17.03.2026,07:00 (bis 28.04.2026) (bis 20.05.2026)
+#: source_id: LMS-BR:402040/72 viz2021:13.47949,52.51624,17.03.2026,07:00 (bis 28.04.2026) (bis 20.05.2026) (zu spät inaktiv)
 #: note: 2026-04-19: keine Baugrube zu sehen, baldige Öffnung möglich; bereits am 2026-05-06 keine Sperrung, trotz aktiver Verkehrsmeldung
 	q4::inwork 15508,12367 15537,12367
 EOF
@@ -53003,6 +53012,15 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid5ji4tqjxbjwqsuewm2lykph6y4cl5jmkdtbqyrbzadla43h6km4
 #: source_id: LMS-BR:408038/72 viz2021:13.504775,52.510629, (bis 19.06.2026)
 	q4::inwork; 17251,11789 17169,11677
+EOF
+     },
+     { from  => 1779141600, # 2026-05-19 00:00
+       until => 1794610800, # 2026-11-14 00:00
+       text  => 'Paul-Schmidt-Str.: Bauarbeiten zwischen Arnulfstr. und Gerdsmeyerweg, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 13.11.2026 23:59',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:408760/72 viz2021:13.36755,52.45578, (bis 14.11.2026)
+	q4::inwork 8165,5447 8059,5457 8038,5514
 EOF
      },
     );

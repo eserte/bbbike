@@ -532,7 +532,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1040.pdf (keine Priorisierung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2026-05-16 vvv
+#: last_checked: 2026-05-19 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
 #: osm_watch: way id="169459736" version="19"
@@ -2869,9 +2869,9 @@ Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731 1518,20615 1407,20563
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11387 (Ersuchen)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12250 (Beginn der Baumaßnahme: Herbst 2025)
 #: osm_watch: way id="517170155" version="14"
-#: last_checked: 2025-09-23 (mapillary)
-# REMOVED --- #: check_frequency: 720d
-#: next_check: 2025-12-15 (BVV-Drucksache: Beginn Herbst 2025)
+#: last_checked: 2026-05-19
+#: check_frequency: 180d
+# REMOVED (nicht passiert) --- #: next_check: 2025-12-15 (BVV-Drucksache: Beginn Herbst 2025)
 Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 1031,20394
 An der Malche: fester Waldweg	Q1- 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Avenue Jean Mermoz: asphaltiert	Q0 3319,18043 3248,17921 3213,17858 3159,17780 3080,17634
@@ -7624,7 +7624,7 @@ Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 Am Wiesenweg: Betonpflaster	Q0- 21977,988 21856,996 21724,954 21685,916
 (Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2+ 11845,11095 11893,11074 11961,11041
 Mariannenplatz: Kopfsteinpflaster	Q2+ 11893,11074 11854,10972 11819,10942 11805,10899 11805,10858 11804,10846 11772,10764
-(Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4816,17712
+(Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4830,17710
 Belowstr.: guter Beton	Q0 4946,17701 4992,17908
 Hechelstr.: Asphalt	Q0 4786,18168 4739,17960 4683,17669
 Am Doggelhof: Kleinsteinpflaster	Q1- 4462,17892 4537,17874
@@ -7653,9 +7653,10 @@ Im Waldwinkel: neues Verbundsteinpflaster	Q0- 231,22418 184,22257
 Rausendorffweg: grobes Verbundsteinpflaster	Q1- -48,22595 -83,22536 -113,22451
 Am Dorfteich: grobes Verbundsteinpflaster	Q1- -83,22536 -159,22590 -237,22640
 Martin-Rudloff-Weg: grobes Verbundsteinpflaster	Q1- -130,22647 -159,22590
-An der Kremmener Bahn: Verbundsteinpflaster	Q1 -304,22578 -515,22801 -700,22998
+An der Kremmener Bahn: Verbundsteinpflaster	Q1 -296,22585 -510,22810 -684,23002
 Erich-Anger-Weg: Verbundsteinpflaster	Q1 -290,22593 -237,22640 -188,22682
-Dambockstr.: Verbundsteinpflaster	Q1 -290,22593 -304,22578
+(Wohngebiet): Verbundsteinpflaster	Q1 -290,22593 -143,22440
+Dambockstr.: Verbundsteinpflaster	Q1 -290,22593 -296,22585
 Diakonieweg: Verbundsteinpflaster	Q1 -264,22729 -308,22650 -307,22613 -290,22593
 Kiefheider Weg: Asphalt	Q0 -984,23480 -921,23546 -861,23598 -800,23651 -736,23707 -673,23763 -603,23825 -538,23884 -514,23905
 Thurbrucher Steig: Kopfsteinpflaster	Q2 -921,23546 -1075,23690 -1174,23770
@@ -7715,7 +7716,7 @@ Im Rehgrund: Kopfsteinpflaster	Q2 -1273,22719 -1412,22685
 Im Rehgrund: Beton	Q0 -1412,22685 -1561,22649
 Am Bärensprung: Verbundsteinpflaster	Q1 -542,22736 -597,22627 -635,22547 -665,22480 -682,22442 -725,22355
 Spießergasse: Verbundsteinpflaster	Q1 -665,22480 -453,22379
-Dambockstr.: Verbundsteinpflaster	Q1 -304,22578 -412,22468 -453,22379 -489,22295 -540,22172 -586,22064 -629,21975 -667,21881 -703,21788 -711,21761 -722,21718 -726,21683 -727,21676 -751,21579
+Dambockstr.: Verbundsteinpflaster	Q1 -296,22585 -412,22468 -453,22379 -489,22295 -540,22172 -586,22064 -629,21975 -667,21881 -703,21788 -711,21761 -722,21718 -726,21683 -727,21676 -751,21579
 Wildschwansteig: Verbundsteinpflaster	Q1 -487,21631 -603,21642 -726,21683
 Haselhuhnweg: Verbundsteinpflaster	Q1 -722,21718 -945,21788
 Haselhuhnweg: Verbundsteinpflaster	Q1 -918,21975 -929,21851 -945,21788 -954,21749
@@ -7844,7 +7845,7 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: priority: #C
 #: source_id: 2147344935 (inaktiv)
 #: source_id: 2147347061 (Leitungsbau, bis 7.5.2021) (inaktiv)
-#: last_checked: 2025-09-23 (mapillary)
+#: last_checked: 2026-05-19
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-05-07
 Veitstr.: Fahrbahn Beton	Q0- 1886,19835 1606,19775 1557,19765
@@ -13793,7 +13794,7 @@ Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
 #: XXX Wird dieser Abschnitt auch asphaltiert? Vielleicht nach den Bauarbeiten an der Seidelstraßenbrücke?
 #: XXX_osm laut osm fälschlicherweise Verbundsteinpflaster; zwischenzeitlich Komplettsperrung
 #: osm_watch: way id="5059946" version="8"
-#: last_checked: 2026-03-21
+#: last_checked: 2026-05-19
 #: check_frequency: 120d
 #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026))
 (Weg am Kienhorstgraben): unbefestigter Weg, Schotter	Q2 3723,17979 3706,17931
@@ -15941,7 +15942,7 @@ Kleine Andreasstr.: mäßiger Beton	Q1 12059,12172 12211,12128
 # 
 #: by: Ulrike Orlowski vvv
 #: corrected_by: srt (guter Beton -> Asphalt)
-Von-der-Gablentz-Str.: Asphalt	Q0 4794,17716 4816,17712 4872,17703
+Von-der-Gablentz-Str.: Asphalt	Q0 4794,17716 4816,17712 4830,17710 4872,17703
 #: confirmed_by: srt
 Von-der-Gablentz-Str.: guter Beton	Q0- 4872,17703 4946,17701 5144,17659
 Reuterstr. (Reinickendorf): Asphalt	Q0 5314,17558 5307,17582 5318,17617 5363,17667
@@ -16666,7 +16667,7 @@ Miethepfad: Asphalt	Q0 9520,-641 9561,-748 9598,-846
 #: by: Gabriele K.: (war: schlechtes Kopfsteinpflaster, Q3) vvv
 #: corrected_by: Axel Stojenthin:
 #: confirmed_by: srt
-Schulzendorfer Str.: Asphalt	Q0 -656,23011 -700,22998 -728,22990 -774,22977 -925,22941 -1104,22898 -1246,22864 -1309,22848 -1538,22800
+Schulzendorfer Str.: Asphalt	Q0 -656,23011 -684,23002 -728,22990 -774,22977 -925,22941 -1104,22898 -1246,22864 -1309,22848 -1538,22800
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20111116.1510.362622.html vvv
 #: confirmed_by: srt (am westlichen Ende)
 Schulzendorfer Str.: Fahrbahn und Geh/Radweg asphaltiert	Q0 -1538,22800 -2024,22899 -2131,22810 -2165,22794 -2176,22789

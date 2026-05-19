@@ -2587,6 +2587,7 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
        {
          'data' => '#: source_id: 247300035 (bis 02.03.2024) (inaktiv)
 #: source_id: 267301326 (bis 06.06.2026)
+#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin/infobauarbeiten?date=20260518
 	2::inwork 48237,70892 48162,70928 48093,70968
 ',
          'from' => 1779861600,
@@ -5974,6 +5975,10 @@ Michael-Brückner-Platz	2::temp 17728,5756 17807,5730
 #: source_id: viz2021:13.35064,52.51395,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
 #: source_id: viz2021:13.36259,52.505907,21.05.2025,17:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
+#: source_id: LMS-BR:408680/72 viz2021:13.35107,52.51429,19.05.2026,06:00 (bis 21.05.2026)
+#: source_id: LMS-BR:408778/72 viz2021:13.36968,52.51571,04.05.2026,00:00 (bis 29.05.2026)
+#: source_id: LMS-BR:408681/72 viz2021:13.37737,52.51457,19.05.2026,06:00 (bis 21.05.2026)
+#: source_id: LMS-BR:408683/72 viz2021:13.36975,52.51584,19.05.2026,06:00 (bis 21.05.2026)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/ (21. Mai 2025) (20. Mai 2026)
@@ -6919,7 +6924,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
 #: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
-#: last_checked: 2026-02-16 (okas)
+#: last_checked: 2026-05-19
 #: check_frequency: 360d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -6937,7 +6942,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: source_id: LMS-BR:296321/72 viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv) (bis 31.12.2025) (bis 31.12.2026)
 #: osm_watch: note 4444221 2
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
-#: last_checked: 2025-11-10 (okas)
+#: last_checked: 2026-05-19
 #: check_frequency: 360d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q2::inwork 3267,18767 3008,18464
@@ -7058,7 +7063,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-04-30
+#: last_checked: 2026-05-19
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -7199,7 +7204,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: osm_watch: way id="279580369" version="10"
 #: note: Gehweg, Radfahrer frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-03-21
+#: last_checked: 2026-05-19
 #: check_frequency: 120d
 #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026))
 	q3::inwork 4335,17642 4392,17777
@@ -7444,14 +7449,14 @@ Neue Bahnhofstr.: Sperrung der Fahrbahn mit Bauzäunen	q4::inwork 15016,11431 149
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/221-E/23/175 (bis 10.01.2024) (bis 31.12.2025) (bis 31.05.2026)
+         'data' => '#: source_id: LS/221-E/23/175 (bis 10.01.2024) (bis 31.12.2025) (bis 31.05.2026) (bis 06.08.2026)
 	2::inwork 11448,28068 12126,27740
 ',
          'from' => undef,
          'id' => 4043,
-         'text' => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 31.05.2026',
+         'text' => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 06.08.2026',
          'type' => 'gesperrt',
-         'until' => 1780250400
+         'until' => 1786039200
        },
        undef,
        undef,
@@ -8256,15 +8261,15 @@ Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,157
 #: source_id: viz2021:13.30113,52.51347,13.02.2025,11:00 (bis 28.03.2025) (inaktiv)
 #: source_id: viz2021:13.30307,52.51345,10.03.2025,12:00 (bis 31.03.2025) (vorfristig inaktiv)
 # REMOVED (alte Verkehrsmeldung) --- #: also_indoor: traffic (H,T) --- #: note: bei rbb und einigen Verkehrsdiensten noch aktiv, bei VIZ nicht mehr --- # REMOVED (hier nicht mehr?) ---	q4::inwork; 3666,11855 3528,11852 ---	q4::inwork; 3528,11852 3406,11849
-#: source_id: LMS-BR:403637/72 viz2021:13.30491,52.51342, (bis 15.05.2026) (bis 25.05.2026)
+#: source_id: LMS-BR:403637/72 viz2021:13.30491,52.51342, (bis 15.05.2026) (bis 25.05.2026) (bis 29.05.2025)
 Zillestr.	q4::inwork 3666,11855 3801,11858
 # 
 ',
          'from' => 1776451766,
          'id' => 4254,
-         'text' => 'Zillestr.: Sperrung zwischen Richard-Wagner-Str. und Wilmersdorfer Str., evtl. sind auch Radfahrer betroffen, bis 25.5.2026',
+         'text' => 'Zillestr.: Sperrung zwischen Richard-Wagner-Str. und Wilmersdorfer Str., evtl. sind auch Radfahrer betroffen, bis 29.5.2026',
          'type' => 'handicap',
-         'until' => 1779746399
+         'until' => 1780091999
        },
        undef,
        {
@@ -8585,6 +8590,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408735119/von-adlershof-bis-altstadt-koepenick-stromnetz-beginnt-grossprojekt.html
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410745786/panne-auf-baustelle-in-koepenick-mit-massiven-folgen-fuer-anwohner.html
 #: by: https://www.aktives-adlershof.de/aktuelles?date=20260303 (ab 9.3.2026 Bauarbeiten Nipkowstraße/Radickestraße (evtl. mit Sperrung?))
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mm6kcq2egs2f (Oberspreestr./Flemmingstr.)
 #: note: Trafficmeldungen scheinen ungenau zu sein
 #: note: Landjägerstr. hat einen eigenen Eintrag
 #: note: im Dezember 2025 beginnen Bauarbeiten am Furtranplatz und in der Lüdersstr. (bis Ende Februar 2026); demnächst in der Landjägerstr. (nördlich Amtsstr.?) (bis Mitte März 2026)
@@ -8599,6 +8605,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: source_id: viz2021:13.54611,52.43478,10.06.2025,07:00 (hier: Radickestr. bis Friedenstr., bis 15.08.2025) (inaktiv)
 #: source_id: bvg2024:162#HIM_FREETEXT_323764 (Umleitung, vermutlich wegen bevorstehenden Bauarbeiten an der Kreuzung Radickestr./Nipkowstr.)
 #: source_id: LMS-BR:401266/72 viz2021:13.550062,52.436321,09.03.2026,07:00 (Radickestr./Nipkowstr., bis 27.03.2026) (bis 30.06.2026)
+#: source_id: LMS-BR:408693/72 viz2021:13.56935,52.44468,19.05.2026,07:00 (Oberspreestr./Flemmingstr., bis 04.06.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (bei der Baustelle Radickestr./Nipkowstr. wird nur der Kfz-Verkehr erwähnt, bis Ende März 2026)
@@ -8708,7 +8715,18 @@ Lohnauer Steig: möglicherweise gesperrt, genaue Lage unklar	q4::inwork 20790,411
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.370567,52.455681,14.04.2025,07:00 (bis 13.06.2025 + weitere Arbeiten) (bis 11.07.2025 + ...) (inaktiv)
+#: source_id: LMS-BR:366727/72 viz2021:13.37222,52.4556, (bis 31.10.2025) (bis 28.11.2025) (bis 31.12.2025) (bis 02.01.2026) (inaktiv)
+#: source_id: LMS-BR:408759/72 viz2021:13.37222,52.4556, (bis 13.11.2026)
+	q4::inwork 8365,5502 8365,5418
+',
+         'from' => 1779141600,
+         'id' => 4314,
+         'text' => 'Wittekindstr.: Bauarbeiten zwischen Arnulfstr. und Tankredstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 13.11.2026',
+         'type' => 'handicap',
+         'until' => 1794610799
+       },
        undef,
        undef,
        undef,
@@ -8952,19 +8970,19 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
 #: source_id: adac:2089388170 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.492511,52.516292,24.06.2025,07:00 (bis 31.07.2025) (inaktiv)
-#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026)
+#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026)
 # REMOVED (alte Bauarbeiten von 2025) --- #: note: bei rbb bis 31.07.2025 verlängert --- #: note: durch die Umwege + Bordsteine ist q4 berechtigt ---	q4::inwork; 16397,12397 16485,12384 16583,12371
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: next_check: 2026-05-22 (VIZ: weitere Arbeiten?)
+#: next_check: 2026-06-12 (VIZ: weitere Arbeiten?)
 	q4::inwork; 16276,12273 16397,12397 16485,12384
 ',
          'from' => 1772924400,
          'id' => 4368,
-         'text' => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis Mitte Mai 2026',
+         'text' => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis Mitte Juni 2026',
          'type' => 'handicap',
-         'until' => 1779487199
+         'until' => 1781301599
        },
        undef,
        {
@@ -9374,12 +9392,12 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
        {
          'data' => '#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
 #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-04-19 (Bauzaun weggeschoben)
+#: last_checked: 2026-05-19 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 ',
          'from' => undef,
          'id' => 4436,
-         'text' => 'Schulweg: Durchgang wegen Bauarbeiten offiziell versperrt (Stand April 2026: Bauzaun üblicherweise weggeschoben), Ende der Bauarbeiten unbekannt',
+         'text' => 'Schulweg: Durchgang wegen Bauarbeiten offiziell versperrt (Stand Mai 2026: Bauzaun üblicherweise weggeschoben), Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9603,20 +9621,7 @@ Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
          'until' => 1796079599
        },
        undef,
-       {
-         'data' => '#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-start-der-bauarbeiten-an-der-ruppiner-chaussee
-#: by: https://gruen-berlin.de/fileadmin/user_upload/Bilder/03_Projekte/31_Infrastruktur/313_Mauerweg/gruenberlin_projekte_infrastruktur_berlinermauerweg_plangrafik_ruppinerchaussee.png
-#: by: https://www.morgenpost.de/bezirke/reinickendorf/article410272260/eine-eichenholzbank-fuer-den-mauerweg-in-heiligensee.html
-#: osm_watch: note 5018594 1
-#: osm_watch: way id="397531408" version="7"
-	2::inwork -972,24498 -1655,24428 -1940,24464 -1953,24435
-',
-         'from' => 1760824800,
-         'id' => 4475,
-         'text' => 'Mauerweg Ruppiner Chaussee - Frohnau: Bauarbeiten, evtl. Sperrungen, bis zum Frühjahr 2026',
-         'type' => 'gesperrt',
-         'until' => 1781992799
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
@@ -10405,11 +10410,11 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260315
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mh5q4ohmcs2u
 #: source_id: LMS-BR:401945/72 viz2021:13.35056,52.54723,16.03.2026,07:00 (bis 15.05.2026) (bis 29.05.2026)
-	q4::inwork 6539,15548 6690,15671
+	q3::inwork 6539,15548 6690,15671
 ',
          'from' => 1773529200,
          'id' => 4559,
-         'text' => 'Brüsseler Str.: Bauarbeiten, Sperrung der Fahrbahn zwischen Antwerpener Str. und Lütticher Straße, vom 16.03.2026 bis Ende Mai 2026',
+         'text' => 'Brüsseler Str.: Bauarbeiten, kurzer Abschnitt der Fahrbahn zwischen Antwerpener Str. und Lütticher Str. ist gesperrt, vom 16.03.2026 bis Ende Mai 2026',
          'type' => 'handicap',
          'until' => 1780091999
        },
@@ -10837,6 +10842,16 @@ Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,
          'text' => 'Rosenfelder Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis Mitte Juni 2026',
          'type' => 'handicap',
          'until' => 1781906399
+       },
+       {
+         'data' => '#: source_id: LMS-BR:408760/72 viz2021:13.36755,52.45578, (bis 14.11.2026)
+	q4::inwork 8165,5447 8059,5457 8038,5514
+',
+         'from' => 1779141600,
+         'id' => 4606,
+         'text' => 'Paul-Schmidt-Str.: Bauarbeiten zwischen Arnulfstr. und Gerdsmeyerweg, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 13.11.2026 23:59',
+         'type' => 'handicap',
+         'until' => 1794610800
        }
      
 );

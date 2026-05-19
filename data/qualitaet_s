@@ -6021,7 +6021,7 @@ Straﬂe 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 Am Wiesenweg: Betonpflaster	Q0 21977,988 21856,996 21724,954 21685,916
 (Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2 11845,11095 11893,11074 11961,11041
 Mariannenplatz: Kopfsteinpflaster	Q2 11893,11074 11854,10972 11819,10942 11805,10899 11805,10858 11804,10846 11772,10764
-(Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4816,17712
+(Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4830,17710
 Belowstr.: guter Beton	Q0 4946,17701 4992,17908
 Hechelstr.: Asphalt	Q0 4786,18168 4739,17960 4683,17669
 Am Doggelhof: Kleinsteinpflaster	Q1 4462,17892 4537,17874
@@ -6049,9 +6049,10 @@ Im Waldwinkel: neues Verbundsteinpflaster	Q0 231,22418 184,22257
 Rausendorffweg: grobes Verbundsteinpflaster	Q1 -48,22595 -83,22536 -113,22451
 Am Dorfteich: grobes Verbundsteinpflaster	Q1 -83,22536 -159,22590 -237,22640
 Martin-Rudloff-Weg: grobes Verbundsteinpflaster	Q1 -130,22647 -159,22590
-An der Kremmener Bahn: Verbundsteinpflaster	Q1 -304,22578 -515,22801 -700,22998
+An der Kremmener Bahn: Verbundsteinpflaster	Q1 -296,22585 -510,22810 -684,23002
 Erich-Anger-Weg: Verbundsteinpflaster	Q1 -290,22593 -237,22640 -188,22682
-Dambockstr.: Verbundsteinpflaster	Q1 -290,22593 -304,22578
+(Wohngebiet): Verbundsteinpflaster	Q1 -290,22593 -143,22440
+Dambockstr.: Verbundsteinpflaster	Q1 -290,22593 -296,22585
 Diakonieweg: Verbundsteinpflaster	Q1 -264,22729 -308,22650 -307,22613 -290,22593
 Kiefheider Weg: Asphalt	Q0 -984,23480 -921,23546 -861,23598 -800,23651 -736,23707 -673,23763 -603,23825 -538,23884 -514,23905
 Thurbrucher Steig: Kopfsteinpflaster	Q2 -921,23546 -1075,23690 -1174,23770
@@ -6110,7 +6111,7 @@ Im Rehgrund: Kopfsteinpflaster	Q2 -1273,22719 -1412,22685
 Im Rehgrund: Beton	Q0 -1412,22685 -1561,22649
 Am B‰rensprung: Verbundsteinpflaster	Q1 -542,22736 -597,22627 -635,22547 -665,22480 -682,22442 -725,22355
 Spieﬂergasse: Verbundsteinpflaster	Q1 -665,22480 -453,22379
-Dambockstr.: Verbundsteinpflaster	Q1 -304,22578 -412,22468 -453,22379 -489,22295 -540,22172 -586,22064 -629,21975 -667,21881 -703,21788 -711,21761 -722,21718 -726,21683 -727,21676 -751,21579
+Dambockstr.: Verbundsteinpflaster	Q1 -296,22585 -412,22468 -453,22379 -489,22295 -540,22172 -586,22064 -629,21975 -667,21881 -703,21788 -711,21761 -722,21718 -726,21683 -727,21676 -751,21579
 Wildschwansteig: Verbundsteinpflaster	Q1 -487,21631 -603,21642 -726,21683
 Haselhuhnweg: Verbundsteinpflaster	Q1 -722,21718 -945,21788
 Haselhuhnweg: Verbundsteinpflaster	Q1 -918,21975 -929,21851 -945,21788 -954,21749
@@ -12698,7 +12699,7 @@ Defreggerstr.: Asphalt	Q0 14786,8737 14676,8852 14567,8966
 Thomasiusstr.: Asphalt	Q0 6686,12768 6757,13112
 Neuf‰hrer Steig: Beton	Q0 -2015,23307 -2151,23379
 Kleine Andreasstr.: m‰ﬂiger Beton	Q1 12059,12172 12211,12128
-Von-der-Gablentz-Str.: Asphalt	Q0 4794,17716 4816,17712 4872,17703
+Von-der-Gablentz-Str.: Asphalt	Q0 4794,17716 4816,17712 4830,17710 4872,17703
 Von-der-Gablentz-Str.: guter Beton	Q0 4872,17703 4946,17701 5144,17659
 Reuterstr. (Reinickendorf): Asphalt	Q0 5314,17558 5307,17582 5318,17617 5363,17667
 Blankestr.: Asphalt	Q0 5198,17433 5314,17558 5334,17592
@@ -12949,7 +12950,7 @@ Eisnerstr. - S-Bhf Buckower Chaussee: asphaltiert, allerdings an einigen Stellen
 (unter der S-Bahn): Verbundsteinpflaster	Q1 9699,-600 9632,-608
 (unter der S-Bahn): Verbundsteinpflaster	Q0 9632,-608 9562,-619 9520,-641
 Miethepfad: Asphalt	Q0 9520,-641 9561,-748 9598,-846
-Schulzendorfer Str.: Asphalt	Q0 -656,23011 -700,22998 -728,22990 -774,22977 -925,22941 -1104,22898 -1246,22864 -1309,22848 -1538,22800
+Schulzendorfer Str.: Asphalt	Q0 -656,23011 -684,23002 -728,22990 -774,22977 -925,22941 -1104,22898 -1246,22864 -1309,22848 -1538,22800
 Schulzendorfer Str.: Fahrbahn und Geh/Radweg asphaltiert	Q0 -1538,22800 -2024,22899 -2131,22810 -2165,22794 -2176,22789
 Schulzendorfer Str.: Asphalt	Q0 -2176,22789 -2263,22748 -2348,22704 -2377,22689 -2508,22627
 Dielingsgrund: gutes Verbundsteinpflaster	Q1 10590,525 10783,587

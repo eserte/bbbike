@@ -1801,15 +1801,11 @@ asphaltierter Gehweg, nicht für Radfahrer freigegeben	RW0; 11338,-3945 11646,-34
 	RW3?;RW3? -3475,26523 -3556,26560
 #: corrected_by: mapillary (neue Radspur?)
 #: note: zusätzliche sind die Gehwege für Radfahrer freigegeben
-	RW3;RW3 -3556,26560 -3700,26625 -4048,26914
+	RW3;RW3 -3556,26560 -3676,26622 -3811,26705 -4052,26953
 #: confirmed_by: mapillary
-gemeinsamer Geh- und Radweg	RW2;RW2 -4048,26914 -4293,27146
-#: by: mapillary
-asphaltiert	RW9;RW2 -4293,27146 -4584,27508 -4688,27608 -4750,27667 -5182,27964 -5874,28179 -6231,28450 -6646,28977
-#: by: mapillary vvv
-	RW8;RW2 -6646,28977 -6832,29230
-	RW;RW2 -6832,29230 -6989,29419
-#: by ^^^
+gemeinsamer Geh- und Radweg	RW2;RW2 -4052,26953 -4291,27152
+asphaltiert	RW8;RW2 -4291,27152 -4340,27196 -4458,27322 -4595,27522 -4694,27616 -4750,27667 -5182,27964 -5874,28179 -6231,28450 -6646,28977
+asphaltiert	RW8;RW2 -6646,28977 -6817,29208 -6989,29419
 # REMOVED (hier wohl kein Radweg) --- RW;RW -6989,29419 -7125,29585 -7143,29737 -7571,29799
 #: by ^^^
 #: by: Jörg (sirisko)
@@ -1902,8 +1898,7 @@ Gehweg für Radfahrer frei	RW1; 8303,28478 8337,28834
 Gehweg für Radfahrer frei	RW1; -10028,18375 -10088,17984 -10114,17740 -10179,17565
 #: by: mapillary
 Gehweg für Radfahrer frei	RW1;RW9 -10028,18375 -10010,18532 -10000,18629
-#: by: mapillary
-vermutlich asphaltiert	RW8;RW2 -8368,29915 -8606,30137 -9689,31543
+asphaltiert	RW8;RW2 -8368,29915 -8606,30137 -9538,31340 -9689,31543
 Suggestivstreifen	RW3;RW3 -18725,-673 -18726,-501 -18754,-419 -18656,-9
 	RW6;RW6 -17319,-344 -17313,-310 -17362,-272 -17380,-242 -17373,-214
 asphaltiert mit einigen Schäden	RW2;RW8 32069,19686 32060,19519 32304,19033 32307,18799 32338,18762

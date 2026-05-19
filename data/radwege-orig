@@ -878,7 +878,7 @@ Gehwegplatten	RW2; 5198,17433 5109,17507
 Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 4801,17623 4683,17669 4584,17704 4429,17763 4392,17777 4320,17805 4200,17848 4096,17890 4016,17918
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2026-03-21 vvv
+#: last_checked: 2026-05-19 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026)) vvv
 #: XXX Benutzungspflicht nur temporär? früher R1;
@@ -1596,11 +1596,14 @@ Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; -4043,17582 -4147,17735
 asphaltierter Gehweg für Radfahrer frei	RW1; -4147,17735 -4043,17582
 Gehweg für Radfahrer frei, Asphalt mäßig bis gut	RW1;RW9 -4147,17735 -4310,18030 -4538,18366 -4914,18784 -5249,19246 -5271,19404 -5209,19643 -5238,19809 -5716,20231 -6197,20746
 # REMOVED (hier nicht mehr?) ---	RW;RW8 -6197,20746 -6482,20783 -6540,20790 -6782,20818
-teils Verbundsteinpflaster, teils nur aufgemalt	RW1; 1548,21087 1445,21216
-	RW1; 1445,21216 1548,21087
-	RW1;RW2 1840,20761 1808,20817 1787,20836
-	RW3;RW2 1787,20836 1750,20868
-	RW3;RW0 1750,20868 1712,20907 1548,21087
+teils Verbundsteinpflaster, teils nur aufgemalt	RW1; 1548,21087 1476,21177 1445,21216
+	RW1; 1445,21216 1476,21177
+Gehweg für Radfahrer frei	RW1; 1476,21177 1548,21087 1712,20907 1750,20868
+	RW1; 1840,20761 1808,20817 1787,20836
+	RW3; 1787,20836 1750,20868
+#: historical_note: früher benutzungspflichtig
+	RW1; 1750,20868 1787,20836 1808,20817 1840,20761
+	RW3; 1750,20868 1712,20907 1548,21087
 # REMOVED --- #: XXX nach den Bauarbeiten in der Ruppiner Chaussee wieder Radwege in beide Richtungen vvv --- #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/ruppinerchaussee.html --- #: XXX Ende der Baumaßnahmen erst Ende 2013 --- #: priority: #A --- #: next_check: 2013-12-20 vvv
 neu asphaltiert	RW1;RW1 -656,23011 -783,23190 -903,23406 -984,23480 -997,23492 -1084,23564 -1281,23746 -1286,23753 -1373,23844 -1627,24105 -1746,24219
 neu asphaltiert	RW1; -1746,24219 -1872,24336
@@ -7479,7 +7482,7 @@ Radweg nur aufgemalt, Gehwegplatten	RW1; 4094,18307 4009,18322
 	RW6;RW6 -130,22647 -159,22590
 #: XXX_osm: bei osm falsch ("residential")
 	RW6;RW6 -264,22729 -308,22650 -307,22613 -290,22593
-	RW6;RW6 -290,22593 -304,22578
+	RW6;RW6 -290,22593 -296,22585
 	RW6;RW6 -1940,24176 -1981,24197 -2190,24232 -2245,24241
 	RW6;RW6 -2190,24232 -2204,24165 -2014,24126 -1981,24197
 	RW6;RW6 -1809,23863 -1806,23947 -1812,23976 -1855,24072 -1890,24146 -1940,24176

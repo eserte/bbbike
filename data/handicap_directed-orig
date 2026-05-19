@@ -790,4 +790,12 @@ Mittenwalder Str./Gneisenaustr.: Radverkehr muss die Fußgängerampel benutzen	DH:
 #: valid: -20260524
 Bundesstraße 2: Gegenverkehrsregelung, Radverkehr muss auf die gegenüberliegende Seite wechseln	DH:tl=60 16025,20631 16181,20734 16644,21042
 # 
+#: XXX Umweg für Radfahrer wegen Brückenarbeiten
+#: last_checked: 2026-05-19 vvv
+#: check_frequency: 90d vvv
+Hennigsdorf, Havelbrücke	DH:len=117:h=q1,117:tl -2808,25489 -2446,25386
+Hennigsdorf, Havelbrücke	DH:len=117:h=q1,117 -2446,25386 -2808,25489
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: temporary ^^^

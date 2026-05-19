@@ -1078,9 +1078,10 @@ Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 
 Papendickstr.: enge Straße	q0 17071,16174 17073,16222 17135,16334 17171,16372
 Am Wiesenweg: gemeinsamer Geh- und Radweg	q1 21977,988 21856,996 21724,954 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
-(Scharnweberstr. - Berenhorststr.): Fußgänger	q1 4801,17623 4816,17712
+(Scharnweberstr. - Berenhorststr.): Fußgänger, Bordstein	q2 4801,17623 4830,17710
 Ernststr.: wendelförmige Rampen	q4 2821,19559 2780,19548 2714,19529 2689,19544
-An der Kremmener Bahn: Fußgänger	q1 -304,22578 -515,22801 -700,22998
+An der Kremmener Bahn: Fußgänger	q1 -296,22585 -510,22810
+An der Kremmener Bahn: Fußgänger, Zugang an der Schulzendorfer Straße mit Gittern versperrt, Umwege, Bordstein	q3 -510,22810 -684,23002
 Straße 366: Bodenschwellen	q2 -3145,22004 -3281,22011
 Verlängerte Fährstr.: enge Straße	q1 -3419,22102 -3412,22058 -3407,22028 -3402,21994 -3397,21946 -3394,21915 -3367,21860
 Schlütersteg: enger Weg	q3 -3412,22058 -3355,22063
@@ -1771,7 +1772,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 (Giselhersteig - Hadburgpfad): enger Weg	q3 17491,12439 17486,12407
 (Zufahrt zum Stadtbad Tiergarten): Parkplatzverkehr	q2 7332,13367 7306,13418
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 21992,13045 22141,13036 22171,12965
-(westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
+Wuhlesteg (Bibersteg): Behelfsbrücke, eng	q4::inwork 22171,12965 22196,12961
 Stolzenfelsstr.: Gehweg für Radfahrer frei	q2 19468,8168 19446,8152 19407,8143
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19407,8143 19333,8165 19171,8280 18949,8437 18787,8540
 Kunkelstr.: einige Fußgänger, Bordstein	q2 8229,15128 8227,15075

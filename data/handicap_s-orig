@@ -352,7 +352,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="3"
-#: last_checked: 2026-03-21
+#: last_checked: 2026-05-19
 #: check_frequency: 120d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
@@ -392,7 +392,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: note 4844974 2
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2026-05-02
+#: last_checked: 2026-05-19
 #: check_frequency: 30d
 # REMOVED (wird wohl länger dauern?) --- #: next_check: 2026-03-15 (MoPo)
 #: valid: 20171026-
@@ -3097,9 +3097,11 @@ Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17171,16372
 # REMOVED --- #: next_check_id: AMWIESENWEG-2020 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (Zweirichtungsverkehr, 2018) --- #: XXX Bauarbeiten geplant, danach vielleicht ein breiterer Weg (evtl. kann man auch den Q0--Eintrag in qualitaet_s-orig ändern) --- #: by: https://api.fixmyberlin.de/api/plannings/100 (die Umsetzung erfolgt 2018) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf --- #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/gehweg-wird-jetzt-ausgebaut_a261721 (außerdem: "mit versickerungsfähigem Pflaster befestigt") --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.942399.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1-entwurf-vorhabenbezogener-b-plan-9-55-ve.pdf --- #: osm_watch: way id="152177648" version="8" --- #: XXX noch immer offiziell nur für Fußgänger, wird sich das ändern? --- laut osm mittlerweile bicycle=designated --- #: last_checked: 2020-07-31 --- #: next_check: 2020-07-31
 Am Wiesenweg: gemeinsamer Geh- und Radweg	q1+ 21977,988 21856,996 21724,954 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
-(Scharnweberstr. - Berenhorststr.): Fußgänger	q1 4801,17623 4816,17712
+#: XXX_prog BS am nördlichen Ende
+(Scharnweberstr. - Berenhorststr.): Fußgänger, Bordstein	q2 4801,17623 4830,17710
 Ernststr.: wendelförmige Rampen	q4 2821,19559 2780,19548 2714,19529 2689,19544
-An der Kremmener Bahn: Fußgänger	q1 -304,22578 -515,22801 -700,22998
+An der Kremmener Bahn: Fußgänger	q1 -296,22585 -510,22810
+An der Kremmener Bahn: Fußgänger, Zugang an der Schulzendorfer Straße mit Gittern versperrt, Umwege, Bordstein	q3 -510,22810 -684,23002
 Straße 366: Bodenschwellen	q2 -3145,22004 -3281,22011
 Verlängerte Fährstr.: enge Straße	q1 -3419,22102 -3412,22058 -3407,22028 -3402,21994 -3397,21946 -3394,21915 -3367,21860
 Schlütersteg: enger Weg	q3 -3412,22058 -3355,22063
@@ -4076,8 +4078,44 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 (Giselhersteig - Nibelungenring): enger Weg	q3 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): enger Weg	q3 17491,12439 17486,12407
 (Zufahrt zum Stadtbad Tiergarten): Parkplatzverkehr	q2 7332,13367 7306,13418
+# 
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 21992,13045 22141,13036 22171,12965
-(westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
+# 
+#: next_check_id: WUHLESTEG-2022
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1258812.php
+#: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/fussgaengersteig-ueber-die-wuhle-wurde-gesperrt_a361880
+#: by: https://berliner-abendblatt.de/2022/10/27/einsturzgefahr-fussgaengersteg-am-stadion-wuhletal-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/11/06/wuhletal-stadion-ersatzneubau-fuer-fussgaenger-muss-kommen/
+#: by: https://www.die-hellersdorfer.berlin/2022/10/27/einsturzgefahr-fu%C3%9Fg%C3%A4ngerbr%C3%BCcke-%C3%BCber-die-wuhle-gesperrt/
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10578 (Antrag)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10581 (Antrag)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10638 (Anfrage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10811 (Anfrage; der Name "Entenbrücke" wird hier erwähnt)
+#: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/die-fussgaengerbruecke-am-stadion-wuhletal-soll-abgerissen-und-durch-eine-neue-ersetzt-werden_a370367 (neue Brücke innerhalb drei Jahren (Stand März 2023))
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10843 (Antrag)
+#: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/senatsverwaltung-will-ersatzbau-im-jahre-2025-in-betrieb-nehmen_a377225 (Inbetriebnahme 2025)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1312741.php
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10953 (Antrag)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11443 (Antrag)
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-fehlen-personal-und-finanzmittel-fuer-die-auftragsvergabe_a431449 (Sperrung mindestens bis 2026 (Anfang oder Ende?))
+#: by: https://marzahn-hellersdorf.com/brueckenneubau-entenbruecke-am-stadion-wuhletal-verzoegert-sich-vergabeverfahren-noch-nicht-abgeschlossen/ (kein Zeitplan)
+#: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12578
+#: by: https://marzahn-hellersdorf.com/entenbruecke-in-kaulsdorf-nord-neubau-verzoegert-sich-weiter/
+#: by: https://marzahn-hellersdorf.com/abriss-der-alten-entenbruecke-im-wuhletal-abgeschlossen-weg-frei-fuer-neubau/ (kein Termin für einen Neubau)
+#: by: https://marzahn-hellersdorf.com/neue-bruecke-ueber-die-wuhle-soll-namen-bekommen-buergerinnen-und-buerger-gefragt/
+#: by: https://marzahn-hellersdorf.com/entenbruecke-am-stadion-wuhletal-ausschreibung-soll-2026-starten-bauzeit-rund-ein-jahr/
+#: by: https://marzahn-hellersdorf.com/abschied-von-der-entenbruecke-neue-wuhle-bruecke-soll-bibersteg-heissen/
+#: by: https://marzahn-hellersdorf.com/behelfsbruecke-an-der-wuhle-uebergang-am-kuenftigen-bibersteg-wieder-passierbar/
+#: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
+# REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
+#: osm_watch: way id="27944267" version="23"
+#: osm_watch: note 5299211 1
+#: XXX alter Eintrag: (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
+#: last_checked: 2026-05-18 (marzahn-hellersdorf live)
+#: check_frequency: 360d
+#: next_check: 2027-06-30 (marzahn-hellersdorf live: frühester realistischer Termin)
+Wuhlesteg (Bibersteg): Behelfsbrücke, eng	q4::inwork 22171,12965 22196,12961
+# 
 Stolzenfelsstr.: Gehweg für Radfahrer frei	q2 19468,8168 19446,8152 19407,8143
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19407,8143 19333,8165 19171,8280 18949,8437 18787,8540
 # REMOVED --- #: next_check_id: KARLSHORST-2019 --- #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen --- #: last_checked: 2020-08-21 --- #: check_frequency: 90d --- #: next_check: 2020-07-23 --- Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
@@ -5271,7 +5309,8 @@ Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 76
 #: XXX Werden hier durch die Teileinziehung explizite Radfahren-verboten-Schilder aufgestellt?
 #: XXX zurzeit wird die Parkanlage umgestaltet)
 #: osm_watch: note 5214226 1
-#: last_checked: 2026-03-21
+#: last_checked: 2026-05-19
+#: check_frequency: 60d
 Zobeltitzstr.: einige Fußgänger	q2 4370,18039 4492,18013
 # 
 #: note: Grünanlagen-Schild ohne Zusatzschilder
