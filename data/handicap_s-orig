@@ -30,7 +30,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: last_checked: 2026-05-17
+#: last_checked: 2026-05-20
 #: check_frequency: 21d
 #: next_check: 2026-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -53,7 +53,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-05-16 vvv
+#: last_checked: 2026-05-19 (osm) vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="13"
@@ -62,9 +62,9 @@ Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfu
 #: osm_watch: way id="182614432" version="26"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="114684413" version="24"
+#: osm_watch: way id="114684413" version="25"
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
-#: osm_watch: way id="1108260165" version="9"
+#: osm_watch: way id="1108260165" version="10"
 #: note: etwa 30m lang
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: osm_watch: note 5191913 2
@@ -272,7 +272,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-05-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -287,8 +287,8 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="10"
-#: last_checked: 2026-02-20
-#: check_frequency: 90d
+#: last_checked: 2026-05-20
+#: check_frequency: 120d
 #: next_check: 2029-06-30 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 # REMOVED (hier gar kein Durchgang) --- (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14116,10149 14126,10176
@@ -898,7 +898,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],ex-W,re-ex-H)
-#: last_checked: 2026-05-10
+#: last_checked: 2026-05-18 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
@@ -1201,7 +1201,7 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-05-10
+#: last_checked: 2026-05-20
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1317,7 +1317,7 @@ Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-05-02 (daf) vvv
+#: last_checked: 2026-05-16 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1352,7 +1352,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
 #: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
@@ -1367,9 +1367,9 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
 #: last_checked: 2026-04-30 vvv
-#: check_frequency: 21d vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
-#: next_check: 2026-05-28 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
 # REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
 # REMOVED --- #: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
@@ -1422,6 +1422,12 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 # REMOVED (beendet) --- #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt? --- #: also_indoor: traffic (ex-G,B,ex-W) --- #: note: auf etwa 50m Länge gesperrt --- #: last_checked: 2024-04-08 --- #: next_check: 2024-03-31 --- Charlottenburger Str.: Bauarbeiten östlich der Gustav-Adolf-Str., Fahrbahn gesperrt	q3:inwork 12646,16563 12560,16602
 # 
 ### Pankow ###
+# 
+#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026)
+#: last_checked: 2026-05-18 (mapillary)
+#: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
+#: valid: -20260604
+Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
 # 
 # REMOVED --- #: XXX Neumannstraße (Pankow) in beiden Richtungen zwischen Schonensche Straße und Thulestraße: Leitungsbau, Vollsperrung für Kfz-Verkehr, vom 05.06.2023 07:00 bis 28.07.2023 17:00 --- #: source_id: viz2021:13.423554,52.554909,05.06.2023,07:00 (bis 28.07.2023) (inaktiv) --- #: also_indoor: traffic (H,G,B,W) --- #: last_checked: 2023-07-14 --- #: next_check: 2023-07-28 --- #: valid: -20230728 --- Neumannstr.: Bauarbeiten, etwa 30m Fahrbahn gesperrt	q2::inwork 11630,16623 11655,16486
 # REMOVED (vermutlich nicht mehr) --- #: next_check_id: NEUMANN-2021 --- #: XXX Bis wann gehen die Bauarbeiten (laut Baustellenschild bis Juni 2021)? Wird es dann schon eine Radspur o.ä. geben? --- #: also_indoor: traffic (H,G) --- #: last_checked: 2021-02-22 --- #: next_check: 2021-06-01 --- Neumannstr.: Bauarbeiten Richtung Süden zwischen Eschengraben und Thulestr., Ausweichen auf Gehweg	q3+; 11613,16747 11630,16623
@@ -4693,7 +4699,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 #: XXX später wiederherstellen: (Südstr., Virchow-Klinikum): Krankenhausgelände, 20km/h-Zone	q2+
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="3"
-#: osm_watch: way id="1168244288" version="6"
+#: osm_watch: way id="1168244288" version="7"
 #: last_checked: 2025-12-06 (webcam)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
@@ -5308,7 +5314,7 @@ Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 76
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_04_0213_0280_online.pdf (Teileinziehung von Straßenland)
 #: XXX Werden hier durch die Teileinziehung explizite Radfahren-verboten-Schilder aufgestellt?
 #: XXX zurzeit wird die Parkanlage umgestaltet)
-#: osm_watch: note 5214226 1
+#: osm_watch: note 5214226 2
 #: last_checked: 2026-05-19
 #: check_frequency: 60d
 Zobeltitzstr.: einige Fußgänger	q2 4370,18039 4492,18013
@@ -5811,6 +5817,8 @@ Warnitzer Str.: Kurven, unübersichtlch	q1 18141,17960 18041,18073 17962,18010 17
 (Mohrenfalterstr. - Distelfalterstr.): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21491,10815 21494,10816 21517,10827 21601,10864
 (Dukatenfalterweg - Parkweg): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21649,10777 21642,10773 21559,10732
 (Habichtshorst - Schmetterlingswiesen): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21592,10656 21674,10701
+# 
+Eichenstr. - Uferweg: ein paar Stufen oder Umweg über Bürgersteig nehmen	q3 13899,10214 13918,10240
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

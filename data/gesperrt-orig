@@ -1603,7 +1603,7 @@ Südring, Virchow-Klinikum	1 6158,14851 6078,14864 6073,14892
 Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: next_check_id: VIRCHOW-2023
 # REMOVED (gelöscht) --- #: osm_watch: way id="224136692" version="6"
-#: osm_watch: way id="1168244288" version="6"
+#: osm_watch: way id="1168244288" version="7"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_14_0803_0878_online.pdf (Bebauungsplan 1-113VE)
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1432964.php
 #: by: https://www.stadtentwicklung.berlin.de/download/1-113ve/01_Planzeichnung/240327_1-113VE_B-Plan_Pz_%c3%96ff.pdf (der Südring wird wohl teilweise verschwinden)
@@ -2149,6 +2149,8 @@ Märkischer Platz (Dallgow-Döberitz)	1 -13196,15067 -13188,15060 -13188,14999 -13
 #: by ^^^
 # 
 PCK-Parkplatz	1 64952,76990 65078,76848
+# 
+(Marwitz)	1 -7336,29727 -7615,29724
 # 
 #: section ^^^
 ######################################################################
@@ -4144,7 +4146,7 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: osm_watch: way id="1495906089" version="1"
 #: osm_watch: way id="971631807" version="9"
 #: osm_watch: way id="971631806" version="9"
-#: last_checked: 2026-05-16
+#: last_checked: 2026-05-18 (mapillary)
 #: check_frequency: 45d
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
@@ -4245,7 +4247,7 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2026-05-09 (daf) vvv
+#: last_checked: 2026-05-19 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 vvv
 #: osm_watch: way id="752856111" version="16"
@@ -4341,9 +4343,9 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-05-10
+#: last_checked: 2026-05-20
 #: check_frequency: 120d
-#: next_check: 2026-05-26 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
+#: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
 # 
 # REMOVED (mittlerweile (oder schon immer): man kommt an der Baustelle vorbei, etwas verwinkelt, aber lohnt nicht, temporär eine Degradierung q2->q3 vorzunehmen) --- #: priority: #B --- #: last_checked: 2025-04-30 --- #: next_check: 2025-07-31 (Halteverbotsschilder) --- Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877
@@ -4580,8 +4582,8 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 # 
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
-#: osm_watch: way id="1263834183" version="4"
-#: last_checked: 2026-05-08 (mapillary)
+#: osm_watch: way id="1263834183" version="5"
+#: last_checked: 2026-05-19 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-04-30 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
@@ -4828,7 +4830,7 @@ Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
 #: by: https://www.entwicklungsstadt.de/erweiterung-des-bundeskanzleramtes-baukoerper-steht-neue-bruecke-wartet-auf-ihren-einbau/
-#: last_checked: 2026-05-16 vvv
+#: last_checked: 2026-05-18 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="6"
@@ -5000,36 +5002,6 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED --- #: by: mapillary --- #: last_checked: 2022-02-05 (mapillary) --- #: check_frequency: 90d --- Ackerstr. (Schulzendorf): Hochbauarbeiten, Straße gesperrt	2::inwork 22996,-4983 22962,-5193
 # REMOVED (laut osm offen) --- #: by: mapillary --- #: osm_watch: way id="27016349" version="15" --- #: last_checked: 2022-08-07 (mapillary, unsicher) --- # REMOVED --- #: check_frequency: 120d --- #: check_frequency: 60d --- Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5346 22677,-5420
 # 
-#: next_check_id: PARKSTADTKARLSHORST-2021
-#: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-mehrfamilienhaus-wohnanlage-parkstadt-karlshorst-berlin-deutschland-637598.html
-# REMOVED --- #: next_check: 2022-08-01 vvv
-# REMOVED (offen) --- #: osm_watch: way id="1061057020" version="10" --- #: note: wobei der Gehweg bereits passierbar sein kann --- Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17668,8696 17659,8698
-# REMOVED (offen) --- Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
-# REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17628,8556 17608,8483
-#: osm_watch: way id="1084269868" version="20"
-#: last_checked: 2026-04-18
-#: check_frequency: 21d
-Adolf-Wermuth-Allee: noch nicht freigegeben	2::inwork 17608,8483 17588,8413
-# REMOVED (nördlicher Übergang schon offen, südlicher noch gesperrt) --- Ruth-Baumgarte-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17608,8483 17599,8485
-# REMOVED (sieht fertig aus) --- Heiner-Müller-Str. (Mittelstreifen): noch nicht fertig	2::inwork 17639,8627 17648,8626
-# REMOVED (sieht freigegeben aus) --- #: osm_watch: way id="1061057025" version="14" --- #: last_checked: 2025-11-22 --- #: check_frequency: 30d --- An der Waldsiedlung: noch nicht freigegeben, außerdem müssen teilweise noch die Gehwege gebaut werden	2::inwork 17682,8464 17652,8349
-# REMOVED (bereits vor der Eröffnungsfeier freigegeben) --- #: XXX Es wird einen Anschluss an den Traberweg geben. --- #: osm_watch: note 4522174 4 --- #: last_checked: 2025-10-19 --- #: check_frequency: 30d --- #: next_check: 2025-11-06 (BA-Pressemitteilung) --- Weg in der Parkstadt Karlshorst: noch nicht eröffnet	2::inwork 17674,8738 17821,8694 17851,8662
-# REMOVED --- #: osm_watch: way id="1090655354" version="14" --- Adolf-Wermuth-Allee: noch nicht fertig	2::inwork 17639,8627 17619,8558 --- Adolf-Wermuth-Allee: nur der Gehweg ist freigegeben	2s:q4:inwork 17619,8558 17599,8485 17581,8422
-# REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17668,8696 17648,8626 17628,8556
-# REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
-# REMOVED (hier sind zumindest die Gehwege passierbar, Fahrbahn noch provisorisch) --- #: osm_watch: way id="1084269869" version="14" --- Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17521,8549 17619,8558
-# REMOVED (verbunden) --- Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17619,8558 17628,8556
-# REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
-# REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
-# REMOVED --- #: next_check ^^^
-# REMOVED (hier nicht mehr) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17659,8698 17468,8692
-# REMOVED (hier nicht (mehr?)) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17738,8450 17755,8519
-# REMOVED (hier nicht mehr) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17755,8519 17628,8556
-# REMOVED (hier nicht mehr) --- #: osm_watch: way id="1061057021" version="10" --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17773,8588 17648,8626
-# REMOVED (vermutlich nicht mehr) --- #: osm_watch: way id="1061057024" version="10" --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17608,8483 17682,8464 17738,8450
-# REMOVED (fertig) --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: by: https://www.berliner-woche.de/karlshorst/c-bauen/arbeiten-fuer-parkstadt-karlshorst-gehen-voran_a418592 (bis Ende 2024) --- #: note: Halteverbotsschilder bis 31.12.2024 --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2024-12-31 vvv --- # REMOVED --- #: last_checked: 2024-12-27 --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen! --- #: note: Durchfahrt offiziell noch nicht erlaubt, aber hier parken schon Autos in der Parktaschen: q4 -> q3 --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q3:inwork 17753,8290 17771,8349 17794,8429 --- #: osm_watch: note 4660846 3 --- #: last_checked: 2025-06-04 --- # REMOVED --- #: XXX Asphaltierung der Fahrbahn -> qualitaet_s anpassen! --- Trautenauer Str.: Bauarbeiten, Fahrbahn noch gesperrt	2s:q3:inwork 17794,8429 17813,8508 --- # REMOVED (weitgehend offen) --- Trautenauer Str.: Bauarbeiten, Fahrbahn gesperrt, Umwege, Bordsteine	2s:q4:inwork 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773 --- # REMOVED --- #: last_checked: 2024-12-27 --- Georg-Klingenberg-Str.: Bauarbeiten, Fahrbahn und Gehwege offiziell gesperrt	2::inwork 17792,8660 17846,8644 --- # REMOVED --- #: last_checked: 2024-10-11 --- Ruth-Baumgarte-Str.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 17738,8450 17794,8429 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^
-# 
 # REMOVED (hat wohl nichts mit der Chausseestr. (mehr) zu tun) --- #: next_check_id: CHAUSSEE-2020
 #: by: https://www.berliner-woche.de/mitte/c-bauen/abschluss-des-stauraumprogramms-wasserbetriebe-bauen-an-der-chausseestrasse_a357698 (Abschluss des Projekts bis 2026)
 #: by: https://www.deutsches-architekturforum.de/thread/10894-projekte-rund-um-das-bnd-areal/?postID=742860#post742860 (laut Baustellenschild der Wasserbetriebe bis September 2026)
@@ -5148,7 +5120,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-05-09 vvv
+#: last_checked: 2026-05-20 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5167,10 +5139,11 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article408887866/eine-spektakulaere-skyline-wo-berlin-drei-neue-hochhaeuser-bekommt.html (bis Ende 2029)
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/drei-neue-hochhauser-an-der-spree-langzeit-projekt-molecules-mit-neuem-konzept-13684222.html
 #: by: https://www.entwicklungsstadt.de/hochhausprojekt-molecules-berlin-treptowers-stillstand/ (mindestens bis Ende 2030)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/agromex-fanny-zobel-stra%C3%9Fe.5/page-8#post-27408
 #: confirmed_by: srt
 # REMOVED (mehr als zwei Jahre kaputt) --- #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
-#: last_checked: 2026-03-22 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2026-05-20 vvv
+#: check_frequency: 120d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,10152 14373,10046
 (Hoffmannstr. - Uferweg an den Treptowers): wegen Bauarbeiten gesperrt	2::inwork 14116,10149 14126,10176
@@ -5326,6 +5299,9 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_51_3309_3560_online.pdf (zum Bebauungsplan 1-14-1)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_01_0001_0064_online.pdf (Straßenlandwidmung, Grunerstr.)
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1647248.php
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1672182.php (Bebauungsplan beschlossen)
+#: by: https://www.berlin.de/sen/stadtentwicklung/_assets/staedtebau/berliner-mitte/molkenmarkt/planzeichnung_blatt_1.pdf
+#: by: https://www.entwicklungsstadt.de/neue-wohnungen-am-molkenmarkt-bebauungsplan-beschlossen/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
 #: last_checked: 2026-05-09
 #: check_frequency: 90d

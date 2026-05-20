@@ -314,7 +314,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2026-05-10
+#: last_checked: 2026-05-20
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -1220,6 +1220,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/22-08-24-mobilitaetswenderat-protokoll_final.pdf (neben der Asphaltierung wird auch ein modaler Filter am Boxhagener Platz erwähnt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/artikel.1496371.php (voraussichtlich ab 2025)
 # REMOVED (falsche Positionierung, Followup-Note existiert) --- #: osm_watch[closed]: note 4669610 3
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/aus-sondervermogen-des-bundes-finanziert-gehweg-an-der-berliner-east-side-gallery-soll-breiter-werden-15617005.html (Erwähnung)
 #: osm_watch[closed]: note 4719579 5
 #: osm_watch: way id="934995901" version="14"
 #: osm_watch: way id="934995899" version="16"
@@ -1906,9 +1907,7 @@ Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8492,19421 8484,19401
 #: by: http://www.berliner-woche.de/pankow/verkehr/zu-viele-verkehrszeichen-sonderfall-regt-zum-schmunzeln-an-d156819.html
 Platanenstr.: Asphalt	Q0 9498,19817 9349,19782 9177,19745 8977,19694 8956,19688 8779,19589 8710,19550
 #: next_check_id: PLATANEN-2025
-#: XXX Ist der Asphalt nach den Bauarbeiten besser?
-#: last_checked: 2025-06-12 (mapillary)
-#: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
+# REMOVED (es scheint weiterhin Schadstellen zu geben) --- #: XXX Ist der Asphalt nach den Bauarbeiten besser? --- #: last_checked: 2025-06-12 (mapillary) --- #: next_check: 2025-10-30 (VIZ-Verkehrsmeldung)
 #: corrected_by: srt (passabler Asphalt -> ...)
 Platanenstr.: Asphalt mit einigen Schäden	Q0-; 9498,19817 9824,19910
 #: corrected_by: srt (passabler Asphalt -> ...)
@@ -4151,10 +4150,12 @@ Mönchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,1446
 #: by: https://www.berliner-woche.de/spandau/c-bauen/stadtrat-und-spd-verordneter-liefern-sich-hitziges-wortgefecht-im-bauausschuss_a433653
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neuer-marktplatz-in-der-altstadt-spandau-anders-als-am-gendarmenmarkt-mochten-wir-baume-pflanzen-13505032.html (Baustart Frühjahr 2027, Bauzeit zwei-drei Jahre, oder bis 2032?)
 #: by: https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/kabelsanierung-altstadt-spandau/ (Marktplatz: 2026-2027)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-grosste-fussgangerzone-neue-termine-schone-vorbilder--so-wird-der-marktplatz-umgebaut-15607526.html (2028-2032)
+#: by: https://www.morgenpost.de/bezirke/spandau/article412050353/termin-steht-fest-ab-wann-der-marktplatz-in-der-spandauer-altstadt-umgebaut-wird.html
 #: last_checked: 2023-08-20
 # REMOVED --- #: check_frequency: 240d
 # REMOVED --- #: next_check: 2025-03-01
-#: next_check: 2027-12-31 (stromnetz website)
+#: next_check: 2028-12-31 (Tsp)
 Markt: kleinteiliges Kopfsteinpflaster	Q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 #: by: mapillary
 Moritzstr.: kleinteiliges Kopfsteinpflaster	Q1 -3350,14446 -3275,14407
@@ -4486,11 +4487,16 @@ Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3+ 18490,9387 18377,936
 (Fortsetzung Wandlitzstr.): Asphalt	Q0 17981,9000 17837,9086 17743,9116 17570,9103
 Schmiedeberger Weg: Verbundsteinpflaster	Q0- 18021,8976 17987,8954 17956,8935
 Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3- 18070,8945 17929,8742
-#: XXX möglicherweise Asphaltierung?
-#: osm_watch: note 5286405 1
-#: last_checked: 2026-05-10
-#: next_check: 2026-05-22
-Müritzstr.: schlechtes Kopfsteinpflaster	Q3- 18147,8895 18009,8687
+#: historical_note: früher (bis Mai 2026).: schlechtes Kopfsteinpflaster, Q3-
+#: osm_watch: note 5286405 1 vvv
+#: last_checked: 2026-05-20 vvv
+#: next_check: 2026-05-22 vvv
+#: XXX östliche Straßenseite wurde asphaltiert; nach der Öffnung prüfen, ob man auch Richtung Süden auf der Asphaltfläche fahren kann
+Müritzstr.: Parkstreifen Kopfsteinpflaster, daneben asphaltiert	Q2; 18147,8895 18009,8687
+Müritzstr.: Asphalt	Q0; 18009,8687 18147,8895
+#: next_check ^^^
+#: last_checked ^^^
+#: osm_watch ^^^
 Müritzstr.: schlechtes Kopfsteinpflaster	Q3- 18009,8687 17930,8567
 Hoher Wallgraben: Asphalt	Q0 17988,8350 17999,8336
 #: historical_note: früher (bis Mai 2025): Asphalt mit Schäden, Q2+
@@ -7655,7 +7661,7 @@ Am Dorfteich: grobes Verbundsteinpflaster	Q1- -83,22536 -159,22590 -237,22640
 Martin-Rudloff-Weg: grobes Verbundsteinpflaster	Q1- -130,22647 -159,22590
 An der Kremmener Bahn: Verbundsteinpflaster	Q1 -296,22585 -510,22810 -684,23002
 Erich-Anger-Weg: Verbundsteinpflaster	Q1 -290,22593 -237,22640 -188,22682
-(Wohngebiet): Verbundsteinpflaster	Q1 -290,22593 -143,22440
+(Wohngebiet): Verbundsteinpflaster	Q1+ -290,22593 -143,22440
 Dambockstr.: Verbundsteinpflaster	Q1 -290,22593 -296,22585
 Diakonieweg: Verbundsteinpflaster	Q1 -264,22729 -308,22650 -307,22613 -290,22593
 Kiefheider Weg: Asphalt	Q0 -984,23480 -921,23546 -861,23598 -800,23651 -736,23707 -673,23763 -603,23825 -538,23884 -514,23905
@@ -32494,6 +32500,9 @@ Gielower Str.: Asphalt	Q0 13825,4240 14012,4184
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Asphalt	Q0 13904,2787 13807,2863
 #: corrected_by: srt (Verbundsteine -> ...)
 #: historical_note: früher: Asphalt, einzelne Wurzelhebungen, Q0-; dann wieder nur Asphalt, Q0; jetzt wieder Wurzelhebungen
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1672156.php (Bauarbeiten südlich Severingstr. bis Sommer 2027)
+#: XXX werden bei den Bauarbeiten die Schäden durch Wurzelhebungen behoben? wird es Sperrungen geben?
+#: last_checked: 2026-05-09 (mapillary)
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Asphalt, einzelne Wurzelhebungen	Q0- 13807,2863 13761,2993 13763,3015 13730,3111 13740,3252
 #: confirmed_by: srt
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Verbundsteinpflaster	Q1+ 13740,3252 13738,3302 13728,3332

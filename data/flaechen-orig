@@ -1223,6 +1223,7 @@ Heizkraftwerk Mitte	F:Industrial 11676,11839 11682,11849 11648,11872 11554,11914
 Grün- und Erholungsanlage am Waltraud-Krause-Weg	F:P 17872,6584 17845,6488 17826,6495 17852,6589
 SV Blau-Weiß Berlin	F:Sport 8755,4996 8802,4675 8710,4658 8663,4983
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_20_1165_1236_online.pdf (Benennung am 29.5.2026)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1672856.php
 #: XXX Benennung zu Familie-Lewissohn-Park
 #: next_check: 2026-05-29
 	F:P 9076,5160 9062,5154 9079,5072 9162,5085 9177,4995 9236,5001 9230,5041 9193,5036 9183,5103 9102,5093 9096,5165 9076,5160
@@ -1413,7 +1414,7 @@ Jacob-Teitel-Park	F:P 10318,13528 10324,13459 10341,13376 10358,13381 10390,1349
 #: XXX Werden hier Schilder aufgestellt?
 #: osm_watch: way id="28251523" version="17"
 #: priority: #C
-#: last_checked: 2026-05-08 (mapillary)
+#: last_checked: 2026-05-18 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-06-04
 Agnes-Sorma-Park	F:P 8858,13104 8886,13006 8985,13034 8997,13037 8981,13075 8922,13060 8899,13117 8858,13104
@@ -1573,13 +1574,8 @@ Osterwäldchen	F:P 18006,10404 17986,10321 18039,10307 18030,10272 18043,10265 1
 Grünzug an der Ruheplatzstraße	F:P 7562,15527 7617,15565 7661,15414 7627,15412
 Urnenfriedhof Gerichtstraße	F:Cemetery 7661,15414 7703,15416 7701,15467 7755,15468 7753,15568 7721,15566 7721,15599 7595,15596 7584,15597 7545,15557 7562,15527 7617,15565 7661,15414
 # 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_15_0873_0916_online.pdf (Benennung einer öffentlichen Grün- und Erholungsanlage, Wirksamkeit am 20.5.2026)
-#: by: https://www.entwicklungsstadt.de/neuer-gruenzug-im-wedding-platz-wird-nach-ursula-hirschmann-benannt/
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1669887.php
-#: osm_watch: note 5165009 2
-#: next_check: 2026-05-20
-#: XXX Ursula-Hirschmann-Platz: Benennung geplant
-	F:P 7518,15605 7584,15597 7545,15557 7518,15605
+#: oldname: -20260520: <namenslos>
+Ursula-Hirschmann-Platz	F:P 7518,15605 7584,15597 7545,15557 7518,15605
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11916
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1419833.php (Messingplakette seit dem 21.2.2024)
@@ -1800,10 +1796,12 @@ Alice-Salomon-Platz	F:Square 23993,14797 24061,14801 24037,14854 24019,14899 239
 Martha-Ndumbe-Platz	F:Square 8024,15401 7974,15418 7891,15417 7947,15380 7975,15362 8002,15340 8024,15401
 #: note: teilweise frei befahrbar (Kirchengebäude in der Mitte, Parkplatz im Nordteil)
 Bassinplatz (Potsdam)	F:Square -12823,-857 -12801,-960 -12774,-1065 -12677,-1048 -12726,-834 -12823,-857
-#: note: teilweise freibefahrbar, aber zu klein für brauchbare Abkürzungen
+#: note: teilweise frei befahrbar, aber zu klein für brauchbare Abkürzungen
 Marion-Seelig-Platz	F:Square 12161,13711 12189,13750 12204,13719 12161,13711
 #: note: überwiegend frei befahrbar
 Schüßlerplatz	F:Square 22284,4653 22314,4604 22355,4660 22284,4653
+#: note: teilweise frei befahrbar (Teilfläche ist Grünanlage)
+Postplatz (Hennigsdorf)	F:Square -3503,25549 -3486,25488 -3416,25509 -3425,25537 -3436,25581 -3503,25549
 #: ignore ^^^
 #############################################################################
 # in Potsdam
@@ -1923,9 +1921,9 @@ Strandbad Orankesee	F:Sport 15691,16123 15680,16135 15731,16208 15793,16162 1586
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9456 (Vorlage zur Beschlussfassung)
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/___tmp/tmp/45081036/lh0ElVSOy6IOiqOO6isnVvF0GmaSbqItvKmq8kbQ/HIkrMkfw/13-Anlagen/02/attach_F75C.pdf (N-S-Weg nicht mehr vorhanden)
 #: note: früher Brendel Leuchten/Reemtsma
-#: last_checked: 2026-03-21 (daf)
-#: check_frequency: 270d
-#: next_check: 2026-06-15
+#: last_checked: 2026-05-16 (architektur-urbanistik)
+#: check_frequency: 120d
+#: next_check: 2027-12-31 (Tsp)
 	F:Industrial 3895,8079 3779,8105 3777,7984 3649,7992 3639,7800 3735,7792 3731,7689 3839,7787 3884,7829 3895,8079
 #: alias: Heizkraftwerk Wilmersdorf
 #: note: wurde bis 2022 zurückgebaut, weitere Elektrizitätseinrichtungen (Umspannwerk...) existieren hier weiterhin
@@ -2244,7 +2242,7 @@ Bahnhofspark	F:P 6435,18839 6483,18890 6521,18852 6544,18929 6668,18921 6687,190
 KGA Bornholm I	F:Orchard 10197,16528 10209,16674 10200,16850 9945,16865 9921,16770 9943,16550 10197,16528
 #: XXX Teile der KGA sollen bebaut werden
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-umwelt/pankower-bezirksverordnete-geben-pruefauftrag-fuer-idee-der-kleingaertner_a262150
-#: osm_watch: way id="25841750" version="11"
+#: osm_watch: way id="25841750" version="12"
 #: last_checked: 2026-01-14 (mapillary)
 #: check_frequency: 180d
 KGA Bornholm II	F:Orchard 10209,16674 10197,16528 10282,16522 10295,16667 10474,16655 10490,16914 10229,16927 10190,16930 10209,16674

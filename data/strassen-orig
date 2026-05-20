@@ -3153,9 +3153,14 @@ Hohenschönhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,1
 #: by: https://entwicklungsstadt.de/neues-quartier-am-fennpfuhl-580-wohnungen-auf-ehemaligem-busparkplatz/
 #: by: https://entwicklungsstadt.de/lichtenberg-mehr-als-1-600-neue-wohnungen-rund-um-das-sportforum/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_50_3173_3308_online.pdf (Einziehung: Parkplatz Hohenschönhauser Straße östlich Nummer 66)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-am-volkspark.273/#post-27400
+#: by: https://www.howoge.de/immobiliensuche/neubauprojekte/weissenseer-weg.html (Baustart: 4. Quartal 2026, Fertigstellung: 4. Quartal 2029)
+#: by: https://www.dmsw.de/projekte-architektur/weissenseer-weg
+#: by: https://cdn.prod.website-files.com/5c6a8b9ed8c2274b1749e981/64c7d88e693027544f731c43_136_LP.jpg
 #: XXX Werden die bestehenden Wege/Straße im Zuge der neuen Bebauung geändert? Zumindest wird es eine direkte Verbindung zum Weißenseer Weg geben, schon weitgehend fertig, noch nicht freigegeben vvv
 #: last_checked: 2026-04-21 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- #: check_frequency: 60d vvv
+#: next_check: 2026-10-01 (howoge: Baustart) vvv
 #: osm.highway: service
 (Hohenschönhauser Str., Verbindungsweg)	N 14871,14601 14839,14586
 (Hohenschönhauser Str., Verbindungsweg)	NN 14839,14586 14715,14547
@@ -3163,7 +3168,8 @@ Hohenschönhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,1
 (Hohenschönhauser Str., Verbindungsweg)	N 14715,14547 14682,14572
 #: osm.highway: service
 (Hohenschönhauser Str. - Stellerweg)	N 14919,14503 14871,14601 14834,14674 14790,14656
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -16142,7 +16148,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-05-10
+#: last_checked: 2026-05-20
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16537,7 +16543,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-05-10
+#: last_checked: 2026-05-20
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

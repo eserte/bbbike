@@ -6,6 +6,10 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: AUGUSTEVIKTORIAALLEE-2026
+#: last_checked: 2026-05-19
+Auguste-Viktoria-Allee/General-Barby-Str.: Gegenverkehrsregelung	X::inwork::alternating 4414,18243
+# 
 #: next_check_id: GNEISENAU-2026
 #: note: eigentlich knapp östlich der Kreuzung; baustellenbedingt muss auch der Radverkehr im Zuge der Schleiermacherstr. die Ampel benutzen
 #: last_checked: 2026-05-04
@@ -16,7 +20,7 @@ Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9
 #: osm_watch: node id="13704066872" version="1"
 #: osm_watch: node id="13704066873" version="1"
 #: note: manchmal (oder immer?) bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20)
-#: last_checked: 2026-05-16
+#: last_checked: 2026-05-18 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2028-03-03
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
@@ -4512,7 +4516,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7345 (Antrag)
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 2
-#: last_checked: 2026-03-22 (mapillary) vvv
+#: last_checked: 2026-05-18 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -4575,7 +4579,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
 #: XXX noch provisorisch, wird verstetigt --- in Zukunft wird der gesamte Knotenpunkt bis zur Blockdammweg-Rampe durch die Ampelanlage erfasst
-#: last_checked: 2026-05-01
+#: last_checked: 2026-05-20
 #: check_frequency: 90d
 #: next_check: 2026-09-01
 provisorische Fußgängerampel	F::inwork 17720,8854
@@ -5633,6 +5637,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X -86889,-75957
 	B -87749,-68820
 	B -88736,-67128
+	F -3811,26705
 # 
 #: section: ^^^
 ################################################################################

@@ -525,7 +525,7 @@ Landsberger Allee	DH:t=60 19015,14901 18831,14823 18553,14678
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-05-20 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-09-11 (Umstellung der Verkehrsführung (auf die andere Brückenhälfte)) vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
@@ -547,7 +547,7 @@ Marggraffbrücke: Radfahrer Richtung Nordwesten müssen den gegenüberliegenden Rad
 #: by: https://www.tagesspiegel.de/berlin/ein-jahr-lang-einschrankungen-an-der-nordhafenbrucke-in-berlin-mitte-wird-ab-dienstag-gebaut-15310076.html
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
 #: osm_watch: note 5189408 3
-#: last_checked: 2026-05-16 vvv
+#: last_checked: 2026-05-18 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden Radweg wechseln	DH:t=30 7829,14665 7733,14570 7711,14548
@@ -784,18 +784,20 @@ Kurfürstenstr. (Mariendorf): provisorischer Radweg auf dem Gehweg, ca. 40m	DH:h=
 Mittenwalder Str./Gneisenaustr.: Radverkehr muss die Fußgängerampel benutzen	DH:tl 9957,9692 9927,9487 9892,9286
 #: next_check ^^^
 # 
-#: source_id: LMS-BR:406370/72 viz2021:13.489265,52.590253, (bis 24.05.2026)
+#: source_id: LMS-BR:406370/72 viz2021:13.489265,52.590253, (bis 24.05.2026) (bis 05.06.2026)
 #: last_checked: 2026-05-06
-#: next_check: 2026-05-24 (VIZ-Verkehrsmeldung)
-#: valid: -20260524
+#: next_check: 2026-06-05 (VIZ-Verkehrsmeldung)
+#: valid: -20260605
 Bundesstraße 2: Gegenverkehrsregelung, Radverkehr muss auf die gegenüberliegende Seite wechseln	DH:tl=60 16025,20631 16181,20734 16644,21042
 # 
 #: XXX Umweg für Radfahrer wegen Brückenarbeiten
+#: osm_watch: note 5301244 1 vvv
 #: last_checked: 2026-05-19 vvv
 #: check_frequency: 90d vvv
 Hennigsdorf, Havelbrücke	DH:len=117:h=q1,117:tl -2808,25489 -2446,25386
 Hennigsdorf, Havelbrücke	DH:len=117:h=q1,117 -2446,25386 -2808,25489
 #: check_frequency ^^^
 #: last_checked ^^^
+#: osm_watch ^^^
 # 
 #: temporary ^^^
