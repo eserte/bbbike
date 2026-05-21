@@ -264,7 +264,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2026-05-04 vvv
+#: last_checked: 2026-05-21 vvv
 #: check_frequency: 60d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -294,7 +294,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-21
 #: check_frequency: 180d
 #: next_check: 2030-06-30 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -2393,7 +2393,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-05-08 vvv
+#: last_checked: 2026-05-19 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2650,7 +2650,7 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 # REMOVED --- #: XXX Nürnberger Str.: mittlerweile gibt es wegen einer Hochbaustelle provisorische Radspuren; Halteverbotsschilder bis 30.06.2025
 #: osm_watch: way id="4491980" version="31"
 #: priority: #B
-#: last_checked: 2026-04-12 vvv
+#: last_checked: 2026-05-21 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) vvv
@@ -6963,7 +6963,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2026-03-27 vvv
+#: last_checked: 2026-05-21 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche

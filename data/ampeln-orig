@@ -34,7 +34,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-04-22 (mapillary)
+#: last_checked: 2026-05-21
 #: next_check: 2026-07-17
 #: valid: -20260717
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -69,7 +69,8 @@ Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15
 #: check_frequency: 90d
 #: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260213
-#: valid: -20260511
+#: note: valid-Ende weit in der Zukunft
+#: valid: -20261231
 Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
 # 
 # REMOVED (steht noch, ist aber ausgeschaltet) --- #: source_id: LMS-BR:364250/72 viz2021:13.43553,52.42484, (bis 31.05.2026)
@@ -1639,7 +1640,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-21
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	F::inwork 8096,11393

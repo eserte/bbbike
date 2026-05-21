@@ -88,6 +88,14 @@ my $next_interval = sub {
 #: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.39594,52.49837,06.06.2025,12:00 (Lindenstr. bis Alte Jakobstr. gesperrt? bis 10.06.2025) (inaktiv)
+#: source_id: LMS-BR:408961/72 viz2021:13.3896,52.49594,21.05.2026,10:00 (bis 26.05.2026)
+#: source_id: LMS-BR:408964/72 viz2021:13.3987,52.49705,21.05.2026,10:00 (bis 26.05.2026)
+#: source_id: LMS-BR:409019/72 viz2021:13.39572,52.49835,21.05.2026,17:00 (bis 26.05.2026)
+#: source_id: LMS-BR:409017/72 viz2021:13.39196,52.49794,21.05.2026,17:00 (bis 26.05.2026)
+#: source_id: LMS-BR:408963/72 viz2021:13.397052,52.496663,21.05.2026,10:00 (bis 26.05.2026)
+#: source_id: LMS-BR:408962/72 viz2021:13.38921,52.49755,21.05.2026,17:00 (bis 26.05.2026)
+#: source_id: LMS-BR:409018/72 viz2021:13.39586,52.49793,21.05.2026,17:00 (bis 26.05.2026)
+#: source_id: LMS-BR:408965/72 viz2021:13.3956,52.49782,21.05.2026,10:00 (bis 26.05.2026)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -33698,10 +33706,10 @@ EOF
 #: osm_watch: way id="362719487" version="22"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2026-04-12
+#: last_checked: 2026-05-21
 #: check_frequency: 180d
 #: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
-	q4::inwork 6021,10405 6116,10688
+Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
 EOF
      },
      { from  => 1610838000, # 2021-01-17 00:00
@@ -36622,11 +36630,13 @@ EOF
 # REMOVED --- #: next_check: 2023-07-31
 # REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
+#: source_id: LMS-BR:408948/72 viz2021:13.44444,52.48166,21.05.2026,09:00 (bis 28.08.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
 #: last_checked: 2026-04-28 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-09-30 (infravelo) vvv
+#: next_check: 2026-08-28 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
 Weserstr. zwischen Innstr. und Treptower Str.	q4::inwork 13217,8493 13384,8354 13566,8212
 #: source_id[inactive]: bvg2024:171#HIM_FREETEXT_286260
@@ -37306,12 +37316,12 @@ EOF
 #: source_id: viz2021:13.35064,52.51395,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
 #: source_id: viz2021:13.36259,52.505907,21.05.2025,17:00 (bis 21.05.2025) (inaktiv)
 #: source_id: viz2021:13.370513,52.51724,20.05.2025,06:00 (bis 22.05.2025) (inaktiv)
-#: source_id: LMS-BR:408680/72 viz2021:13.35107,52.51429,19.05.2026,06:00 (bis 21.05.2026)
+#: source_id: LMS-BR:408680/72 viz2021:13.35107,52.51429,19.05.2026,06:00 (bis 21.05.2026) (inaktiv)
 #: source_id: LMS-BR:408778/72 viz2021:13.36968,52.51571,04.05.2026,00:00 (bis 29.05.2026) (inaktiv)
-#: source_id: LMS-BR:408681/72 viz2021:13.37737,52.51457,19.05.2026,06:00 (bis 21.05.2026)
-#: source_id: LMS-BR:408683/72 viz2021:13.36975,52.51584,19.05.2026,06:00 (bis 21.05.2026)
-#: source_id: LMS-BR:408872/72 viz2021:13.37683,52.51616,20.05.2026,17:00 (bis 20.05.2026)
-#: source_id: LMS-BR:408873/72 viz2021:13.37678,52.50959,20.05.2026,17:00 (bis 20.05.2026)
+#: source_id: LMS-BR:408681/72 viz2021:13.37737,52.51457,19.05.2026,06:00 (bis 21.05.2026) (inaktiv)
+#: source_id: LMS-BR:408683/72 viz2021:13.36975,52.51584,19.05.2026,06:00 (bis 21.05.2026) (inaktiv)
+#: source_id: LMS-BR:408872/72 viz2021:13.37683,52.51616,20.05.2026,17:00 (bis 20.05.2026) (inaktiv)
+#: source_id: LMS-BR:408873/72 viz2021:13.37678,52.50959,20.05.2026,17:00 (bis 20.05.2026) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
 #: by: https://viz.berlin.de/2023/05/firmenlauf/
 #: by: https://berliner-firmenlauf.de/ (21. Mai 2025) (20. Mai 2026)
@@ -39061,6 +39071,8 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz-1/?date=20260218 (südlicher Abschnitt)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf6wgzoasc2c
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260520
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mmdujl3mb22v
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiawd4l7pt4nipu37zmnmubsynixb5fgxcsn63weypvgyqquipmvju
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
@@ -39068,7 +39080,8 @@ EOF
 #: source_id: viz2021:13.292116,52.641999,08.01.2024,07:00 (bis 31.05.2024) (inaktiv)
 #: source_id: viz2021:13.286611,52.641435,19.08.2024,07:00 (neue Baustelle, nur Kfz-Verkehr, bis 26.08.2024) (bis 23.08.2024) (inaktiv)
 #: source_id: LMS-BR:381984/72 viz2021:13.29204,52.63667,02.09.2025,06:00 (bis 05.01.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:399443/72 viz2021:13.29213,52.635,19.02.2026,07:00 (bis 21.05.2026)
+#: source_id: LMS-BR:399443/72 viz2021:13.29213,52.635,19.02.2026,07:00 (bis 21.05.2026) (inaktiv)
+#: source_id: LMS-BR:408929/72 viz2021:13.29229,52.63873,21.05.2026,07:00 (bis 21.08.2026)
 # REMOVED --- #: also_indoor: traffic (ex-H,G,B,W)
 # REMOVED --- #: note: Fahrbahn wird neu gemacht ---	q4::inwork 2112,26066 2207,26090 2293,26111
 # REMOVED --- #: note: Vorbereitungen für Neubau der Fahrbahn ---	q3::inwork 2293,26111 2402,26121
@@ -42601,7 +42614,7 @@ EOF
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
 #: note: offiziell gesperrt, Absperrungen können aber weggeschoben sein
-#: last_checked: 2026-01-29 (mapillary)
+#: last_checked: 2026-05-21
 #: check_frequency: 120d
 	q3::inwork 7103,11247 7171,11510
 EOF
@@ -45005,13 +45018,14 @@ EOF
 	q4::temp::play 3217,12239 3072,12222
 EOF
      },
-     { from  => $isodate2epoch->("2025-07-23 00:00:00"), # $isodate2epoch->("2025-04-03 00:00:00"), # $isodate2epoch->("2024-09-05 00:00:00"), # 1717092000, # 2024-05-30 20:00 # ein Tag Vorlauf
-       until => $isodate2epoch->("2025-07-25 05:00:00"), # $isodate2epoch->("2025-04-07 04:00:00"), # $isodate2epoch->("2024-09-08 22:00:00"), # 1717387200, # 2024-06-03 06:00
+     { from  => $isodate2epoch->("2026-05-21 00:00:00"), # $isodate2epoch->("2025-07-23 00:00:00"), # $isodate2epoch->("2025-04-03 00:00:00"), # $isodate2epoch->("2024-09-05 00:00:00"), # 1717092000, # 2024-05-30 20:00 # ein Tag Vorlauf
+       until => $isodate2epoch->("2026-05-23 06:00:00"), # $isodate2epoch->("2025-07-25 05:00:00"), # $isodate2epoch->("2025-04-07 04:00:00"), # $isodate2epoch->("2024-09-08 22:00:00"), # 1717387200, # 2024-06-03 06:00
 #      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 31.05.2024 20:00 bis 03.06.2024 06:00',
 #      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 30.08.2024 20:00 bis 01.09.2024 22:00',
 #      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 06.09.2024 20:00 bis 08.09.2024 22:00',
 #      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 04.04.2025 20:00 bis 07.04.2025 04:00',
-       text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 24.07.2025 22:00 bis 25.07.2025 05:00',
+#      text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, Umgehung durch Bahnhofsgebäude, vom 24.07.2025 22:00 bis 25.07.2025 05:00',
+       text  => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, voraussichtlich Umgehung durch Bahnhofsgebäude notwendig, vom 22.05.2026 20:00 bis 23.05.2026 06:00',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
@@ -45027,6 +45041,7 @@ EOF
 #: by: https://www.youtube.com/watch?v=YI1O5phpGiE
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1832086361215578310
 #: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260521
 	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
 EOF
      },
@@ -45331,7 +45346,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-05-18 vvv
+#: last_checked: 2026-05-21 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -46280,7 +46295,7 @@ EOF
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2026-04-12
+#: last_checked: 2026-05-21
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2025-01-19
@@ -47776,7 +47791,7 @@ EOF
 #: source_id[inactive]: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
 #: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
-#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026) (bis 22.04.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026) (bis 22.04.2026) (bis 29.06.2026)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
 #: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
@@ -51832,16 +51847,16 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2026-06-30 23:59:59"), # 1768081856, # undef, # XXX
+       until => $isodate2epoch->("2026-05-29 17:00:00"), # $isodate2epoch->("2026-06-30 23:59:59"), # 1768081856, # undef, # XXX
 #      text  => 'Rüdickenstr.: Baustelle, Fahrbahn gesperrt, Gehweg für Radfahrer frei, Bordsteine, Ende der Bauarbeiten unbekannt',
-       text  => 'Rüdickenstr.: Fahrbahn kann wegen Markierungsarbeiten gesperrt sein, schmaler Gehweg für Radfahrer frei, Ende der Bauarbeiten unbekannt',
+       text  => 'Rüdickenstr.: Fahrbahn kann wegen Markierungsarbeiten gesperrt sein, schmaler Gehweg für Radfahrer frei, Einweiung der Fahrradstraße ist am 29.5.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: RUEDICKEN-2025
 #: also_indoor: traffic (ex-G[zu lang],ex-T[zu kurz])
 #: last_checked: 2026-05-06
 #: check_frequency: 30d
-#: next_check: 2026-06-30
+#: next_check: 2026-05-29
 	q3::inwork 17264,17489 17392,17315 17422,17288 17481,17263
 #  REMOVED (hier fertig) ---	q3::inwork 17159,17631 17186,17593 17264,17489
 EOF
@@ -52368,7 +52383,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Blockdammweg: Bauarbeiten, Fahrbahn (Rampe zur Brücke und Anbindung zur Wandlitzstr.) komplett gesperrt, voraussichtlich bis Herbst 2026',
+       text  => 'Blockdammweg: Bauarbeiten, Fahrbahn (Rampe zur Brücke und Anbindung zur Wandlitzstr.) komplett gesperrt, voraussichtlich bis November 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: BLOCKDAMMWEG-2026
@@ -52396,6 +52411,7 @@ EOF
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24534.pdf
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse (bis voraussichtlich 1. November 2026)
 #: by[nocache]: https://www.uvp-verbund.de/documents-ige-ng/igc_be/27B18CBA-A54C-4B76-B3FF-2B1F76A96A23/Alle_Unterlagen_gesiegelt%2F3_Lageplan_gesiegelt.pdf (Baustelleneinrichtungsfläche)
+#: by: https://www.entwicklungsstadt.de/strassenbahnlinie-21-neue-bvg-anlage-am-blockdammweg-in-karlshorst/ (bis Nov 2026)
 #: osm_watch: note 5193492 3
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
@@ -52886,11 +52902,12 @@ Wandlitzstr.: Sanierungsarbeiten	q4::inwork 18448,8602 18401,8636 18331,8685 183
 EOF
      },
      { from  => $isodate2epoch->("2026-05-04 00:00:00"),
-       until => 1779487200, # 2026-05-23 00:00
-       text  => 'Adalbertstr.: Sanierung der Fahrbahn, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 5.5.2026 bis 22.5.2026',
+       until => $isodate2epoch->("2026-05-29 23:59:59"), # 1779487200, # 2026-05-23 00:00
+       text  => 'Adalbertstr.: Sanierung der Fahrbahn, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 5.5.2026 bis 29.5.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:407164/72 viz2021:13.42067,52.50324,05.05.2026,07:00 (bis 22.05.2026)
+#: source_id: LMS-BR:407164/72 viz2021:13.42067,52.50324,05.05.2026,07:00 (bis 22.05.2026) (bis 29.05.2026)
+#: last_checked: 2026-05-19 (mapillary)
 	q4::inwork 11552,10863 11589,10947 11640,11067
 EOF
      },
@@ -53036,11 +53053,11 @@ EOF
 EOF
      },
      { from  => 1779257198, # 2026-05-20 08:06
-       until => 1782856800, # 2026-07-01 00:00
+       until => 1779390074, # 1782856800, # 2026-07-01 00:00
        text  => 'Schlangenbader Str.: Abschnitt der Fahrbahn zwischen Wiesbadener Str. und Dillenburger Str. gesperrt, voraussichtlich bis 30.06.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:408581/72 viz2021:13.307973,52.470355, (bis 01.07.2026)
+#: source_id: LMS-BR:408581/72 viz2021:13.307973,52.470355, (bis 01.07.2026) (vorfristig inaktiv)
 #: by: https://bsky.app/profile/aintschie.bsky.social/post/3mm7tplfzxc2j
 	q3::inwork 3981,6850 3958,7040 3965,7297
 EOF
@@ -53093,7 +53110,7 @@ EOF
      },
      { from  => $isodate2epoch->("2026-05-12 00:00:00"),
        until => $isodate2epoch->("2026-06-09 23:59:59"),
-       text  => 'Tauentzienstr.: Fernwärmeleitung gebrochen, evtl. ist der Radverkehr von der Sperrung betroffen, bis Anfang Juni 2026',
+       text  => 'Tauentzienstr.: Fernwärmeleitung gebrochen, Abschnitt der Fahrbahn gesperrt, bis Anfang Juni 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260512 (nur Kfz-Verkehr betroffen, vier Wochen)
@@ -53101,12 +53118,36 @@ EOF
 #: source_id: LMS-BR:407953/72 viz2021:13.339174,52.503283,12.05.2026,10:00 (bis 09.06.2026)
 #: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_336720
 #: source_id: bvg2024:m19#HIM_FREETEXT_336928
-#: traffic_note: Radverkehr angeblich nicht betroffen, aber durch den Umleitungsverkehr Stauungen im umliegenden Straßennetz. Gesehen 2026-05-12 Tue 17:39 Nürnberger Str. Richtung SW 6'
 #: also_indoor: traffic (T,no-G)
-#: last_checked: 2026-05-12 (traffic)
-#: check_frequency: 1d
+#: traffic_note: Durch den Umleitungsverkehr Stauungen im umliegenden Straßennetz. Gesehen 2026-05-12 Tue 17:39 Nürnberger Str. Richtung SW 6'
+#: note: etwa 50m der Fahrbahn ist gesperrt, kann z.B. auf der Mittelpromenade umfahren/umgangen werden, außerdem muss die Barriere an der Nürnberger Str. umfahren werden
+#: note: eigentlich q4+ oder q3-
+#: last_checked: 2026-05-21
 #: next_check: 2026-06-09 (VIZ-Verkehrsmeldung)
-Tauentzienstr.: Fernwärmeleitung gebrochen, Sperrung für den Kfz-Verkehr, evtl. auch für den Radverkehr	q4::inwork; 6025,10746 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808
+Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	q4::inwork; 6025,10746 5907,10821
+EOF
+     },
+     { from  => 1779660000, # 2026-05-25 00:00
+       until => 1781128800, # 2026-06-11 00:00
+       text  => 'Ehrlichstr.: Gleisbauarbeiten, Sperrung zwischen Blockdammweg und Liepnitzstr., außerdem Einbahnstraßenregelung im Hönower Wiesenweg, vom 26.05.2026 bis voraussichtlich 10.06.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: EHRLICH-2026
+#: note: "Erhaltungsmaßnahme", keine Radspur
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse
+#: source_id: bvg2024:21#HIM_FREETEXT_338258 (ab 26.5.2026)
+#: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
+#: note: Frage: in der Liepnitzstr. keine Einbahnstraßenregelung?
+#: next_check: 2026-05-26 vvv
+Ehrlichstr.: Vollsperrung zwischen Blockdammweg und Liepnitzstr.	q4::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773 17736,8850
+Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17588,8413 17581,8422 17554,8458 17533,8505 17521,8549 17515,8567 17497,8623 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
+#: next_check ^^^
+##: note: Bauabschnitt 2: vsl. 10.07. bis vsl. 06.09.2026
+#Ehrlichstr.: Vollsperrung zwischen Liepnitzstr. und Heiligenberger Str.	q4::inwork 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377
+#Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18704,8427 18627,8475 18557,8525 18494,8569 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895
+#Müritzstr.: Einbahnstraßenregelung	q4::inwork; 18147,8895 18009,8687
+#Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660 17668,8696 17659,8698 17468,8692
+#Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
 EOF
      },
     );

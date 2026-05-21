@@ -401,7 +401,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-05-12
+#: last_checked: 2026-05-21
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -441,7 +441,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-05-09
+#: last_checked: 2026-05-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-05 (VIZ-Verkehrsmeldung)
 #: next_check: 2030-12-31 (entwicklungsstadt)
@@ -953,7 +953,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="31"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2026-05-07 (osm)
+#: last_checked: 2026-05-21
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -979,24 +979,23 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 # 
 ### Charlottenburg ###
 # 
-# REMOVED --- # REMOVED --- #: next_check_id: RANKE-2023
-# REMOVED --- #: next_check_id: RANKE-2026
-# REMOVED --- # REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
-# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
-# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
-# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
-# REMOVED --- #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
-# REMOVED --- #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
-# REMOVED --- #: osm_watch: note 5181118 1
-# REMOVED --- #: osm_watch: way id="4491984" version="29"
-# REMOVED --- # REMOVED --- #: note: Länge des gesperrten Bereichs etwa 50m (frühere Sperrung)
-# REMOVED --- #: note: Überfahrt über die gesamte Breite gesperrt, außerdem Sperrung im Einmündungsbereich (weniger als 50m lang)
-# REMOVED --- #: also_indoor: traffic (G,T,ex-W)
-# REMOVED --- #: last_checked: 2026-04-12
-# REMOVED --- #: check_frequency: 21d (traffic)
-# REMOVED --- # REMOVED --- #: next_check: 2025-11-08
-# REMOVED --- # REMOVED --- #: valid: -20251108
-# REMOVED --- Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q3::inwork 5669,10704 5782,10884
+#: next_check_id: RANKE-2026
+# REMOVED --- #: next_check_id: RANKE-2023
+# REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3luup3ikm2k
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
+#: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
+#: source_id: LMS-BR:406219/72 viz2021:13.331624,52.50377,27.04.2026,12:00 (Verengung, evtl. im Zusammenhang mit dieser Maßnahme? bis 28.05.2026)
+#: osm_watch: note 5181118 1
+#: osm_watch: way id="4491984" version="29"
+#: also_indoor: traffic (ex-G,T,ex-W)
+#: last_checked: 2026-05-21
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-11-08
+# REMOVED --- #: valid: -20251108
+Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine, große Umwege	q4::inwork 5669,10704 5782,10884
 # 
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
@@ -2542,7 +2541,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="529086013" version="5"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="16"
-#: last_checked: 2026-05-08 (daf)
+#: last_checked: 2026-05-21
 #: check_frequency: 120d
 #: next_check: 2027-11-30 (deal magazin: Herbst 2027)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
