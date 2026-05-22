@@ -441,7 +441,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-05-21
+#: last_checked: 2026-05-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-05 (VIZ-Verkehrsmeldung)
 #: next_check: 2030-12-31 (entwicklungsstadt)
@@ -563,7 +563,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-05-08
+#: last_checked: 2026-05-22
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -646,7 +646,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://www.entwicklungsstadt.de/dauerbaustelle-in-berlin-mitte-umbau-der-charlottenstrasse-startet-spaeter/ (Beginn Ende 2026 oder sogar Anfang 2027)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-05-09 vvv
+#: last_checked: 2026-05-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="153698394" version="19"
@@ -1024,18 +1024,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Neukölln ###
 # 
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260427 (hier: nur Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhxndyhlk2o
-#: source_id: LMS-BR:405792/72 viz2021:13.424843,52.482167, (bis 26.05.2026)
-#: traffic_note: Ausweichverkehr über Reuterstr. - Flughafenstr., Gefahr von Stauungen vor den Ampeln
-#: last_checked: 2026-05-08 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2026-05-26 vvv
-Hermannstr.: Wasserrohrbruch, Engstelle	q3::inwork; 11884,8492 11882,8519 11882,8527
-Karlsgartenstr.: Absperrung an der Hermannstr	q3::inwork 11769,8515 11882,8527
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260427 (hier: nur Kfz-Verkehr) #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhxndyhlk2o #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mmgdzlwgnk2f) --- #: source_id: LMS-BR:405792/72 viz2021:13.424843,52.482167, (bis 26.05.2026) (vorfristig inaktiv) --- #: source_id: LMS-BR:405832/72 viz2021:13.424477,52.48219, (inaktiv) --- #: traffic_note: Ausweichverkehr über Reuterstr. - Flughafenstr., Gefahr von Stauungen vor den Ampeln --- #: last_checked: 2026-05-08 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2026-05-26 vvv --- Hermannstr.: Wasserrohrbruch, Engstelle	q3::inwork; 11884,8492 11882,8519 11882,8527 --- Karlsgartenstr.: Absperrung an der Hermannstr	q3::inwork 11769,8515 11882,8527 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: https://www.buwog.de/wohnbauprojekte/berlin-buwog-set-44 ("BUWOG SET 44", Fertigstellung ab 2028)
 #: by: https://www.entwicklungsstadt.de/buwog-set-44-in-neukoelln-baustart-auf-dem-gelaende-der-geyer-werke/ (bis Herbst 2028)
@@ -1200,7 +1189,7 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-05-20
+#: last_checked: 2026-05-22
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2075,7 +2064,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="27"
-#: last_checked: 2026-05-09
+#: last_checked: 2026-05-22
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -4113,8 +4102,8 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 #: by: https://marzahn-hellersdorf.com/behelfsbruecke-an-der-wuhle-uebergang-am-kuenftigen-bibersteg-wieder-passierbar/
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
-#: osm_watch: way id="27944267" version="23"
-#: osm_watch: note 5299211 1
+#: osm_watch: way id="27944267" version="24"
+#: osm_watch[closed]: note 5299211 2
 #: XXX alter Eintrag: (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
 #: last_checked: 2026-05-18 (marzahn-hellersdorf live)
 #: check_frequency: 360d
@@ -5451,14 +5440,14 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026)
+#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
 #: last_checked: 2026-05-11 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2026-05-26 vvv
+#: next_check: 2026-06-10 vvv
 # REMOVED --- #: valid: -20251219
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
-# XXX #: valid: !-20251219
+# REMOVED --- #: valid: !-20251219
 # XXX (später wiederherstellen) --- Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
 #: next_check ^^^
 #: check_frequency ^^^
