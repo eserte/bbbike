@@ -48,7 +48,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-05-12
+#: last_checked: 2026-05-27
 #: check_frequency: 60d
 Michaelbrücke	F::inwork 11676,11839
 # 
@@ -64,10 +64,11 @@ Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
-#: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026) (bis 22.05.2026)
-#: last_checked: 2026-05-16
-#: check_frequency: 90d
-#: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
+#: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026) (bis 22.05.2026) (inaktiv)
+#: last_checked: 2026-05-27
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260213
 #: note: valid-Ende weit in der Zukunft
 #: valid: -20261231
@@ -110,7 +111,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
-#: last_checked: 2026-05-16
+#: last_checked: 2026-05-27
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
@@ -435,7 +436,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
-#: last_checked: 2026-05-16
+#: last_checked: 2026-05-27
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 # REMOVED (verschoben)	X::inwork 7873,12927
@@ -4043,7 +4044,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-05-21 vvv
+#: last_checked: 2026-05-27 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3

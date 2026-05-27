@@ -88,16 +88,16 @@ my $next_interval = sub {
 #: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.39594,52.49837,06.06.2025,12:00 (Lindenstr. bis Alte Jakobstr. gesperrt? bis 10.06.2025) (inaktiv)
-#: source_id: LMS-BR:408961/72 viz2021:13.3896,52.49594,21.05.2026,10:00 (bis 26.05.2026)
-#: source_id: LMS-BR:408964/72 viz2021:13.3987,52.49705,21.05.2026,10:00 (bis 26.05.2026)
-#: source_id: LMS-BR:409019/72 viz2021:13.39572,52.49835,21.05.2026,17:00 (bis 26.05.2026)
-#: source_id: LMS-BR:409017/72 viz2021:13.39196,52.49794,21.05.2026,17:00 (bis 26.05.2026)
-#: source_id: LMS-BR:408963/72 viz2021:13.397052,52.496663,21.05.2026,10:00 (bis 26.05.2026)
-#: source_id: LMS-BR:408962/72 viz2021:13.38921,52.49755,21.05.2026,17:00 (bis 26.05.2026)
-#: source_id: LMS-BR:409018/72 viz2021:13.39586,52.49793,21.05.2026,17:00 (bis 26.05.2026)
-#: source_id: LMS-BR:408965/72 viz2021:13.3956,52.49782,21.05.2026,10:00 (bis 26.05.2026)
-#: source_id: LMS-BR:409100/72 viz2021:13.39594,52.49837,22.05.2026,12:00 (Lindenstr. bis Alte Jakobstr., bis 26.05.2026)
-#: source_id: LMS-BR:409101/72 viz2021:13.393437,52.494391,22.05.2026,12:00 (bis 26.05.2026)
+#: source_id: LMS-BR:408961/72 viz2021:13.3896,52.49594,21.05.2026,10:00 (bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:408964/72 viz2021:13.3987,52.49705,21.05.2026,10:00 (bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:409019/72 viz2021:13.39572,52.49835,21.05.2026,17:00 (bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:409017/72 viz2021:13.39196,52.49794,21.05.2026,17:00 (bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:408963/72 viz2021:13.397052,52.496663,21.05.2026,10:00 (bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:408962/72 viz2021:13.38921,52.49755,21.05.2026,17:00 (bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:409018/72 viz2021:13.39586,52.49793,21.05.2026,17:00 (bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:408965/72 viz2021:13.3956,52.49782,21.05.2026,10:00 (bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:409100/72 viz2021:13.39594,52.49837,22.05.2026,12:00 (Lindenstr. bis Alte Jakobstr., bis 26.05.2026) (inaktiv)
+#: source_id: LMS-BR:409101/72 viz2021:13.393437,52.494391,22.05.2026,12:00 (bis 26.05.2026) (inaktiv)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -14408,7 +14408,7 @@ EOF
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
 #: also_indoor: traffic (T,G)
 #: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
-#: last_checked: 2026-05-16
+#: last_checked: 2026-05-27
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (BVV)
 Kantstr.	q4::inwork 5613,10963 5652,11004
@@ -36867,7 +36867,7 @@ EOF
 #      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis 10.04.2025',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags zunächst bis Mitte September 2025',
 #      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ende der Bauarbeiten unbekannt',
-       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, vorerst bis Anfang Juni 2026',
+       text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis Juni 2027',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -36904,12 +36904,12 @@ EOF
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: source_id: viz2021:13.492668,52.636706,15.04.2025,12:00 (bis 12.09.2025 + weitere Bauphasen) (inaktiv)
-#: source_id: LMS-BR:365855/72 viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025) (bis 31.12.2027)
+#: source_id: LMS-BR:365855/72 viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025) (bis 31.12.2027) (bis 01.06.2027)
 #: also_indoor: traffic (H,re-G,W,T)
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
 #: last_checked: 2026-04-21 (mapillary) vvv
-#: next_check: 2026-06-01 (DB) vvv
+#: next_check: 2027-06-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16220,25716 16166,25767 16121,25818
 Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767 16220,25716
@@ -40762,7 +40762,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2026-05-08 (mapillary)
+#: last_checked: 2026-05-27
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -42197,7 +42197,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-05-19
+#: last_checked: 2026-05-27
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -46726,7 +46726,7 @@ EOF
 #: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026) (bis 31.03.2026) (bis 20.08.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025) (inaktiv)
-#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv) (bis 31.05.2026)
+#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv) (bis 31.05.2026) (vorfristig inaktiv)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
@@ -46904,7 +46904,7 @@ EOF
 #: source_id: LMS-BR:392050/72 viz2021:13.323692,52.504398,03.12.2025,06:00 (Sperrung; bis 17.06.2026)
 #: source_id: LMS-BR:366524/72 viz2021:13.32531,52.50287, (Gegenverkehrsregelung; bis 29.03.2026) (bis 17.04.2026) (inaktiv)
 #: note: Einbahnstraßenregelung, offen Richtung Savignyplatz; während der Arbeitszeiten kann es aber zu weiteren Einschränkungen kommen (gesehen 2026-02-25 Wed 13:23)
-#: last_checked: 2026-05-16
+#: last_checked: 2026-05-27
 #: next_check: 2026-06-17
 Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,10707
 EOF
@@ -49913,7 +49913,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-03-03 vvv
+#: last_checked: 2026-05-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -50045,7 +50045,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~15-07-2025-b188-kreisverkehr-zwischen-stechow-und-rhinsmuehlen (Bauarbeiten für Kreisverkehr B188/Stechow - Nennhausen; Radwegbau Stechow - Rhinsmühlen (~5km) beginnt nach den Bauarbeiten im September 2025)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~05-09-2025-b188-arbeiten-kreisverkehr-stechow
-#: source_id: LS/223-P/25/088 (bis 06.09.2025) (bis 13.09.2025) (inaktiv) (keine Sperrung mehr, bis 28.04.2026)
+#: source_id: LS/223-P/25/088 (bis 06.09.2025) (bis 13.09.2025) (inaktiv) (keine Sperrung mehr, bis 28.04.2026) (inaktiv)
 #: next_check: 2025-09-13
 Stechow - Rhinsmühlen (B188): Deckensanierung, Bau eine Kreisverkehrs	2::inwork -54051,23436 -53816,23532 -53633,23786 -53625,23953
 EOF
@@ -51358,8 +51358,8 @@ EOF
        data  => <<'EOF',
 #: next_check_id: UFER-2025
 #: last_checked: 2026-05-18 (mapillary)
-#: check_frequency: 14d
-#: next_check: 2026-06-30 (infravelo)
+#: check_frequency: 21d
+#: next_check: 2026-09-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
 	q4::inwork 8245,16064 8194,15960 8140,15859
 EOF
@@ -53080,12 +53080,13 @@ Auguste-Viktoria-Allee: Einbahnstraßenregelung	q4::inwork; 4531,18217 4414,18243
 EOF
      },
      { from  => 1780178400, # 2026-05-31 00:00
-       until => 1782856799, # 2026-06-30 23:59
-       text  => 'Stegelitz - Temmen: Deckensanierung, Sperrung, 1. Juni 2026 bis voraussichtlich Ende Juni 2026',
+       until => $isodate2epoch->("2026-08-21 20:00:00"), # 1782856799, # 2026-06-30 23:59
+       text  => 'Stegelitz - Temmen: Deckensanierung, Sperrung, 1. Juni 2026 bis voraussichtlich August 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-05-2026-l241-bei-stegelitz
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-05-2026-l241-bei-stegelitz (bis Ende Juni 2026)
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%20241%20Stegelitz%20-%20Knotenpunkt%20L%20242%20Deckensanierung%20Karte%2018-05-26.pdf
+#: source_id: LS/221-E/26/043 (bis 21.08.2026)
 	2::inwork 38872,80620 38542,80087 37967,79628 37683,79423 37564,79307 37430,79187 37199,79068 37009,78946 36411,78795 36141,78665 35571,78339 35068,78169 34637,77900
 EOF
      },
@@ -53138,6 +53139,8 @@ EOF
 #: note: "Erhaltungsmaßnahme", keine Radspur
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse
 #: source_id: bvg2024:21#HIM_FREETEXT_338258 (ab 26.5.2026)
+#: source_id: LMS-BR:409558/72 viz2021:13.5113,52.48421,26.05.2026,07:00 (Blockdammweg, bis 26.09.2026)
+#: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 (Ehrlichstr., bis 04.08.2026)
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: Frage: in der Liepnitzstr. keine Einbahnstraßenregelung?
 #: next_check: 2026-05-26 vvv
@@ -53163,6 +53166,15 @@ EOF
 #: last_checked: 2026-05-22
 #: next_check: 2026-07-19 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork; 9146,10284 9111,10090
+EOF
+     },
+     { from  => 1779685200, # 2026-05-25 07:00
+       until => 1796058000, # 2026-11-30 18:00
+       text  => 'Dahlmannstr.: Bauarbeiten zwischen Sybelstr. und Gervinusstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 26.05.2026 07:00 bis 30.11.2026 18:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:409562/72 viz2021:13.303816,52.502718,26.05.2026,07:00 (bis 30.11.2026)
+	q4::inwork 3613,10576 3603,10765
 EOF
      },
     );

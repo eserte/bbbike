@@ -441,7 +441,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-27
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-05 (VIZ-Verkehrsmeldung)
 #: next_check: 2030-12-31 (entwicklungsstadt)
@@ -514,7 +514,7 @@ Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,121
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-05-16 vvv
+#: last_checked: 2026-05-23 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -646,7 +646,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://www.entwicklungsstadt.de/dauerbaustelle-in-berlin-mitte-umbau-der-charlottenstrasse-startet-spaeter/ (Beginn Ende 2026 oder sogar Anfang 2027)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-05-21 vvv
+#: last_checked: 2026-05-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="153698394" version="19"
@@ -987,14 +987,15 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidiwf72mthnluk6qf2iunovhubgosb6jvkwfprtitae6xg3woevee@jpeg (keine Ausnahme für Radfahrer)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
 #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
-#: source_id: LMS-BR:406219/72 viz2021:13.331624,52.50377,27.04.2026,12:00 (Verengung, evtl. im Zusammenhang mit dieser Maßnahme? bis 28.05.2026)
+#: source_id: LMS-BR:406219/72 viz2021:13.331624,52.50377,27.04.2026,12:00 (Verengung, evtl. im Zusammenhang mit dieser Maßnahme? bis 28.05.2026) (bis 30.11.2026)
 #: osm_watch: note 5181118 1
 #: osm_watch: way id="4491984" version="29"
 #: also_indoor: traffic (ex-G,T,ex-W)
 #: last_checked: 2026-05-21
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-11-08
-# REMOVED --- #: valid: -20251108
+#: next_check: 2026-11-30 (VIZ-Verkehrsmeldung)
+#: note: "Notfall"-valid-Direktive
+#: valid: -20261231
 Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine, große Umwege	q4::inwork 5669,10704 5782,10884
 # 
 #: next_check_id: ABBESTR-2021
@@ -5442,7 +5443,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-05-11 vvv
+#: last_checked: 2026-05-27 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-06-10 vvv
 # REMOVED --- #: valid: -20251219

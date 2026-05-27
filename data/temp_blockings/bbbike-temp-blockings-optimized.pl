@@ -1,246 +1,6 @@
-$#temp_blocking = 2;
+$#temp_blocking = 73;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
-#: by: https://www.gratis-in-berlin.de/festivals/item/2009881-strassenfest-am-bluecherplatz-kreuzberg-karneval-der-kulturen (geplant 03.06.2022 bis 06.06.2022)
-#: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt --- gibt es überhaupt ein Straßenfest vorher?)
-#: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
-#: by: https://nitter.cz/VIZ_Berlin/status/1660949370760486913#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnd6Z2s0Ulh3QU1ZSWNJLmpwZw==
-#: by[nocache]: https://twitter.com/VIZ_Berlin/status/1791092486695211121 (2024)
-#: by: https://pbs.twimg.com/media/GNmvjxnXgAE5jzf?format=jpg
-#: source_id: viz2021:13.3896,52.49594,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.39512,52.49691,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.39524,52.49454,25.05.2023,10:00 (bis 30.05.2023) (inaktiv)
-#: source_id: viz2021:13.389478,52.495996,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
-#: source_id: viz2021:13.3893,52.497538,16.05.2024,17:00 (bis 21.05.2024) (inaktiv)
-#: source_id: viz2021:13.395267,52.49454,16.05.2024,10:00 (bis 21.05.2024) (inaktiv)
-#: source_id: viz2021:13.389478,52.495996,05.06.2025,10:00 (bis 10.06.2025) (inaktiv)
-#: source_id: viz2021:13.391442,52.497337,05.06.2025,10:00 (bis 10.06.2025) (inaktiv)
-#: source_id: viz2021:13.3951,52.496194,05.06.2025,10:00 (bis 10.06.2025) (inaktiv)
-#: source_id: viz2021:13.38921,52.49755,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.39571,52.49764,05.06.2025,17:00 (bis 10.06.2025) (vorfristig inaktiv)
-#: source_id: viz2021:13.39594,52.49837,06.06.2025,12:00 (Lindenstr. bis Alte Jakobstr. gesperrt? bis 10.06.2025) (inaktiv)
-#: source_id: LMS-BR:408961/72 viz2021:13.3896,52.49594,21.05.2026,10:00 (bis 26.05.2026)
-#: source_id: LMS-BR:408964/72 viz2021:13.3987,52.49705,21.05.2026,10:00 (bis 26.05.2026)
-#: source_id: LMS-BR:409019/72 viz2021:13.39572,52.49835,21.05.2026,17:00 (bis 26.05.2026)
-#: source_id: LMS-BR:409017/72 viz2021:13.39196,52.49794,21.05.2026,17:00 (bis 26.05.2026)
-#: source_id: LMS-BR:408963/72 viz2021:13.397052,52.496663,21.05.2026,10:00 (bis 26.05.2026)
-#: source_id: LMS-BR:408962/72 viz2021:13.38921,52.49755,21.05.2026,17:00 (bis 26.05.2026)
-#: source_id: LMS-BR:409018/72 viz2021:13.39586,52.49793,21.05.2026,17:00 (bis 26.05.2026)
-#: source_id: LMS-BR:408965/72 viz2021:13.3956,52.49782,21.05.2026,10:00 (bis 26.05.2026)
-#: source_id: LMS-BR:409100/72 viz2021:13.39594,52.49837,22.05.2026,12:00 (Lindenstr. bis Alte Jakobstr., bis 26.05.2026)
-#: source_id: LMS-BR:409101/72 viz2021:13.393437,52.494391,22.05.2026,12:00 (bis 26.05.2026)
-	2::temp 9521,10010 9827,10051
-	2::temp 9521,10010 9448,10014
-	2::temp 9599,10175 9687,10180 9825,10206
-	2::temp 9416,10196 9472,10182 9599,10175
-	2::temp 9579,10122 9536,10064
-	2::temp 9579,10122 9631,10142 9702,10129
-	2::temp 9837,10117 9827,10051
-	2::temp 9837,10117 9858,10199
-	2::temp 9599,10175 9579,10122
-	2::temp 9702,10129 9827,10051
-	2::temp 9702,10129 9816,10119
-	2::temp 9599,10175 9631,10142 9687,10180
-	2::temp 9825,10206 9865,10227 9948,10280
-	2::temp 9873,10285 9865,10227 9858,10199
-	2::temp 9825,10206 9858,10199
-	3 9922,10010 9827,10051 9837,9856
-	3 9837,9856 9827,10051 9922,10010
-	2::temp 9827,10051 9837,9856
-	2::temp 9837,9856 9723,9842
-# REMOVED (hier doch nicht) --- Baruther Str.	2::temp 9723,9842 9588,9827 9387,9804
-Johanniterstr.	2::temp 10066,10071 9837,10117
-Blücherstr. östl. Zossener Str.	2::temp 9827,10051 9922,10010 9950,9987 10006,9942
-Brachvogelstr.	2::temp 9858,10199 9884,10192 10069,10151
-Lindenstr.: Fahrbahn in beide Richtungen gesperrt	q4::temp 9858,10350 9873,10285
-Solmsstr.	q4::temp 9705,9732 9723,9842
-',
-         'from' => 1779228000,
-         'id' => 3,
-         'periodic' => 1,
-         'prewarn_days' => 2,
-         'recurrences' => [
-                            [
-                              'easter',
-                              47,
-                              'start',
-                              '2022-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Straßenfest rund um den Blücherplatz, 22.05.2026 bis 25.05.2026, Sperrungen fangen schon einen Tag vorher an',
-         'type' => 'gesperrt',
-         'until' => 1779768000
-       },
-       {
-         'data' => '#: by: https://www.karneval.berlin/ (früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite) (findet möglicherweise am 15. August 2021 statt)
-#: by: https://www.karneval.berlin/de/aktuell.html (fällt 2021 wieder aus)
-#: by: https://www.berlin.de/events/2092491-2229501-karneval-der-kulturen.html (2022 abgesagt)
-#: by: https://berliner-abendblatt.de/berlin-news/chialo-will-karneval-der-kulturen-sichern-id222039
-#: by: https://viz.berlin.de/2023/05/karneval-der-kulturen/
-#: by: https://www.tagesspiegel.de/berlin/umzug-durch-friedrichshain-und-mitte-karneval-der-kulturen-findet-2025-auf-der-frankfurter-allee-statt-13201078.html (Ringcenter bis Kino International)
-#: by: https://www.tagesspiegel.de/berlin/welche-herausforderungen-die-neue-route-bringt-das-andert-sich-2025-beim-karneval-der-kulturen-in-berlin-13760926.html
-#: by: https://www.tagesspiegel.de/berlin/alle-zeiten-und-anreisemoglichkeiten-diese-strassen-sind-zum-karneval-der-kulturen-2025-in-berlin-gesperrt-13798822.html
-#: by: https://www2.karneval.berlin/fileadmin/user_upload/Bilder/Plaene/Lageplan_Umzug_Anwohnerflyer_WEB.png (Friedrichshainer Route 2025)
-## Kreuzberger Route (ganz früher)
-# REMOVED (2023 hier nicht) --- Yorckstr.	2::temp 9334,9670 9243,9696 9047,9750
-# REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
-# REMOVED ---	3 8774,9534 8777,9601 8778,9759 8778,9759 8779,9812
-# REMOVED ---	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
-# REMOVED ---	3 9000,9509 9032,9673 9047,9750 9078,9916
-# REMOVED ---	3 9078,9916 9047,9750 9032,9673 9000,9509
-# REMOVED (2023 hier nicht) --- Mehringdamm	3 9283,9487 9334,9670 9387,9804
-# REMOVED (2023 hier nicht) --- Mehringdamm	3 9387,9804 9334,9670 9283,9487
-## Kreuzberger Route (früher)
-# REMOVED ---	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670
-# REMOVED ---	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
-# REMOVED ---	3 9524,9426 9552,9602 9588,9827
-# REMOVED ---	3 9588,9827 9552,9602 9524,9426
-# REMOVED ---	3 9650,9404 9676,9564 9705,9732
-# REMOVED ---	3 9705,9732 9676,9564 9650,9404
-# REMOVED ---	3 9767,9386 9790,9528 9820,9718
-# REMOVED ---	3 9820,9718 9790,9528 9767,9386
-# REMOVED ---	3 9892,9286 9927,9487 9957,9692
-# REMOVED ---	3 9957,9692 9927,9487 9892,9286
-# REMOVED ---	3 10004,9268 10032,9456 10067,9674
-# REMOVED ---	3 10067,9674 10032,9456 10004,9268
-# REMOVED ---	3 10123,9233 10198,9405 10290,9604 10306,9640
-# REMOVED ---	3 10306,9640 10290,9604 10198,9405 10123,9233
-# REMOVED ---	3 10547,9233 10564,9292 10580,9361
-# REMOVED ---	3 10580,9361 10564,9292 10547,9233
-# REMOVED ---	3 10705,9234 10713,9260 10749,9342
-# REMOVED ---	3 10749,9342 10713,9260 10705,9234
-# REMOVED ---	3 11141,9107 11136,9183 11208,9345 11274,9492
-# REMOVED ---	3 11274,9492 11208,9345 11136,9183 11141,9107
-# REMOVED ---	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
-# REMOVED ---	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
-# REMOVED --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2024/pressemitteilung.1447817.php (2024; "Sperrung einzelner Eingänge des Volksparks Hasenheide")
-# REMOVED --- Hasenheide Eingang Lilienthalstr.	2 11708,8747 11768,8739
-# REMOVED --- Hasenheide Eingang Graefestr.	2 11136,9183 11141,9107
-# REMOVED --- Hasenheide Eingang Jahnstr. West	2 10709,9192 11111,9104
-# REMOVED --- Hasenheide Eingang Jahnstr. Ost	2 11515,9066 11550,9104
-# REMOVED --- Hasenheide Eingang Lucy-Lameck-Str.	2 11439,9049 11449,9125
-## Friedrichshainer Route
-	2::temp 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595 11678,12727 11635,12745 11589,12768
-	2::temp 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546 12134,12540 12352,12509 12592,12472 12603,12470
-	2::temp 14280,12223 14208,12235 14020,12261 13885,12279 13785,12292 13543,12326 13448,12340 13163,12382 12929,12421 12878,12430 12848,12434 12816,12439
-	3::temp 14073,11995 14208,12235 14229,12311
-	3::temp 14229,12311 14208,12235 14073,11995
-	3::temp 12573,12227 12592,12472 12632,12630
-	3::temp 12632,12630 12592,12472 12573,12227
-	3::temp 11596,12668 11635,12745 11645,12774
-	3::temp 11645,12774 11635,12745 11596,12668
-	3::temp 12891,12549 12878,12430 12950,12340
-	3::temp 12891,12549 12878,12430 12862,12332
-	3::temp 13476,12461 13448,12340 13430,12320
-	3::temp 12355,12541 12352,12509 12339,12436
-	3::temp 13430,12320 13448,12340 13476,12461
-	3::temp 13745,12118 13785,12292 13732,12526
-	3::temp 12339,12436 12352,12509 12355,12541
-	3::temp 13552,12435 13543,12326 13556,12302
-	3::temp 12950,12340 12878,12430 12891,12549
-	3::temp 12950,12340 12878,12430 12862,12332
-	3::temp 12862,12332 12878,12430 12950,12340
-	3::temp 12862,12332 12878,12430 12891,12549
-	3::temp 13556,12302 13543,12326 13552,12435
-	3::temp 13732,12526 13785,12292 13745,12118
-Aufstellbereich bis zum S-Bhf. Frankfurter Allee	2::temp 15361,12071 15110,12107 14994,12121 14926,12129 14854,12137 14709,12156 14621,12168 14582,12174 14523,12183 14488,12188 14427,12197 14381,12205 14280,12223
-	3::temp 14538,12371 14488,12188 14427,12199
-	3::temp 14675,11964 14709,12156 14748,12314
-	3::temp 14427,12199 14488,12188 14538,12371
-	3::temp 14888,11934 14926,12129 15003,12241
-	3::temp 14748,12314 14709,12156 14675,11964
-	3::temp 15077,11910 15110,12107 15104,12216
-	3::temp 15104,12216 15110,12107 15077,11910
-	3::temp 15003,12241 14926,12129 14888,11934
-Auflösebereich bis zum Alexanderplatz	2::temp 11589,12768 11289,12908 11226,12945
-',
-         'from' => 1779487200,
-         'id' => 4,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'easter',
-                              49,
-                              'start',
-                              '2022-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Karneval der Kulturen, Sperrung der Frankfurter Allee und Karl-Marx-Allee zwischen Proskauer Str. und Berolinastr., am 24.05.2026',
-         'type' => 'gesperrt',
-         'until' => 1779659999
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
@@ -1864,7 +1624,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
 #: also_indoor: traffic (T,G)
 #: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
-#: last_checked: 2026-05-16
+#: last_checked: 2026-05-27
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (BVV)
 Kantstr.	q4::inwork 5613,10963 5652,11004
@@ -2669,12 +2429,12 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
 #: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1778968800,
+         'from' => 1780783200,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 18.5.2026 bis 22.5.2026',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 8.6.2026 bis 12.6.2026',
          'type' => 'gesperrt',
-         'until' => 1779487199
+         'until' => 1781301599
        },
        undef,
        undef,
@@ -5844,12 +5604,12 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: source_id: viz2021:13.493025,52.636399,24.04.2024,06:00 (für Kfz-Verkehr auch andere Richtung gesperrt, Wasserrohrbruch, bis 28.02.2025) (bis 04.03.2025) (bis 31.03.2025) (inaktiv)
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: source_id: viz2021:13.492668,52.636706,15.04.2025,12:00 (bis 12.09.2025 + weitere Bauphasen) (inaktiv)
-#: source_id: LMS-BR:365855/72 viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025) (bis 31.12.2027)
+#: source_id: LMS-BR:365855/72 viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025) (bis 31.12.2027) (bis 01.06.2027)
 #: also_indoor: traffic (H,re-G,W,T)
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
 #: last_checked: 2026-04-21 (mapillary) vvv
-#: next_check: 2026-06-01 (DB) vvv
+#: next_check: 2027-06-01 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
 Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16220,25716 16166,25767 16121,25818
 Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767 16220,25716
@@ -5859,7 +5619,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 ',
          'from' => 1744581600,
          'id' => 3551,
-         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, vorerst bis Anfang Juni 2026',
+         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis Juni 2027',
          'type' => 'gesperrt',
          'until' => 1780264800
        },
@@ -6620,35 +6380,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/1-wein-und-winzerfest-westend-baa4f759-86d7-46dc-a637-0f50e53fceac/
-#: by: https://nitter.cz/VIZ_Berlin/status/1662153122070790145#m
-#: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnczOW9BNVd3QUFFM0RnLnBuZw==
-#: by: https://www.family-and-friends-ev.de/?date=20240303
-#: by: https://www.family-and-friends-ev.de/7-9-juni-2025-pfingsten-in-der-preussenallee
-#: by: https://www.visitberlin.de/de/event/wein-und-winzerfest-westend
-#: source_id: viz2021:13.259512,52.513271,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
-#: source_id: viz2021:13.2597,52.51486,18.05.2024,05:00 (bis 20.05.2024) (inaktiv)
-#: source_id: viz2021:13.2597,52.51486,07.06.2025,05:00 (bis 09.06.2025) (inaktiv)
-# REMOVED (nicht an der Marathonallee, fängt erst an der Bayernallee an) ---	2::temp 589,11953 577,11837
-	2::temp 577,11837 562,11710 560,11695 550,11607
-',
-         'from' => 1779400800,
-         'id' => 3789,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preußenallee: Veranstaltung (Wein- und Winzerfest Westend), Fahrbahn voraussichtlich zwischen Bayernallee und Badenallee gesperrt, vom 23.05.2026 bis 25.05.2026',
-         'type' => 'gesperrt',
-         'until' => 1779742800
-       },
+       undef,
        undef,
        undef,
        {
@@ -6702,7 +6434,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2026-05-08 (mapillary)
+#: last_checked: 2026-05-27
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -6993,7 +6725,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-05-19
+#: last_checked: 2026-05-27
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -7172,11 +6904,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1779400800,
+         'from' => 1783029600,
          'id' => 3956,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 23.5.2026 bis 25.5.2026',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 4.7.2026 bis 5.7.2026',
          'type' => 'handicap',
-         'until' => 1779746399
+         'until' => 1783288799
        },
        undef,
        undef,
@@ -7416,30 +7148,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.36063,52.44674,31.05.2024,20:00 (bis 03.06.2024) (inaktiv)
-#: source_id: viz2021:13.361199,52.446973,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.36063,52.44674,07.06.2024,20:00 (bis 08.06.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.36206,52.4473,30.08.2024,20:00 (bis 01.09.2024) (inaktiv)
-#: source_id: viz2021:13.361243,52.446979,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
-#: source_id: viz2021:13.36063,52.44674,06.09.2024,20:00 (bis 08.09.2024) (inaktiv)
-#: source_id: viz2021:13.361338,52.446986,04.04.2025,20:00 (bis 07.04.2025) (inaktiv)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1796572352206995565
-#: by: https://pbs.twimg.com/media/GO5sEElW4AAGByb?format=jpg
-#: by: https://www.youtube.com/watch?v=YI1O5phpGiE
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1832086361215578310
-#: by: https://pbs.twimg.com/media/GWyr1-TXYAAdRMr?format=jpg&name=medium
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260521
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mmhhy4qlkc2d
-	q4::inwork 7597,4499 7628,4521 7667,4549 7690,4563
-',
-         'from' => 1779314400,
-         'id' => 4075,
-         'text' => 'Attilastr.: Fahrbahn unter der Bahnbrücke gesperrt, voraussichtlich Umgehung durch Bahnhofsgebäude notwendig, vom 22.05.2026 20:00 bis 23.05.2026 06:00',
-         'type' => 'handicap',
-         'until' => 1779508800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7869,7 +7578,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
          'data' => '#: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026) (bis 31.03.2026) (bis 20.08.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025) (inaktiv)
-#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv) (bis 31.05.2026)
+#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv) (bis 31.05.2026) (vorfristig inaktiv)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
@@ -9005,7 +8714,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-03-03 vvv
+#: last_checked: 2026-05-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -9597,8 +9306,8 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
        {
          'data' => '#: next_check_id: UFER-2025
 #: last_checked: 2026-05-18 (mapillary)
-#: check_frequency: 14d
-#: next_check: 2026-06-30 (infravelo)
+#: check_frequency: 21d
+#: next_check: 2026-09-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
 	q4::inwork 8245,16064 8194,15960 8140,15859
 ',
@@ -10757,15 +10466,16 @@ Auguste-Viktoria-Allee: Einbahnstraßenregelung	q4::inwork; 4531,18217 4414,18243
          'until' => undef
        },
        {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-05-2026-l241-bei-stegelitz
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-05-2026-l241-bei-stegelitz (bis Ende Juni 2026)
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%20241%20Stegelitz%20-%20Knotenpunkt%20L%20242%20Deckensanierung%20Karte%2018-05-26.pdf
+#: source_id: LS/221-E/26/043 (bis 21.08.2026)
 	2::inwork 38872,80620 38542,80087 37967,79628 37683,79423 37564,79307 37430,79187 37199,79068 37009,78946 36411,78795 36141,78665 35571,78339 35068,78169 34637,77900
 ',
          'from' => 1780178400,
          'id' => 4609,
-         'text' => 'Stegelitz - Temmen: Deckensanierung, Sperrung, 1. Juni 2026 bis voraussichtlich Ende Juni 2026',
+         'text' => 'Stegelitz - Temmen: Deckensanierung, Sperrung, 1. Juni 2026 bis voraussichtlich August 2026',
          'type' => 'gesperrt',
-         'until' => 1782856799
+         'until' => 1787335200
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-05-2026-l36-zw-steinhoefel-und-heinersdorf
@@ -10814,6 +10524,8 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: note: "Erhaltungsmaßnahme", keine Radspur
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse
 #: source_id: bvg2024:21#HIM_FREETEXT_338258 (ab 26.5.2026)
+#: source_id: LMS-BR:409558/72 viz2021:13.5113,52.48421,26.05.2026,07:00 (Blockdammweg, bis 26.09.2026)
+#: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 (Ehrlichstr., bis 04.08.2026)
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: Frage: in der Liepnitzstr. keine Einbahnstraßenregelung?
 #: next_check: 2026-05-26 vvv
@@ -10846,6 +10558,16 @@ Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17856,8162 17793,8225 1775
          'text' => 'Großbeerenstr.: zwischen Tempelhofer Ufer und Obentrautstr. Bauarbeiten, Sperrung der Fahrbahn Richtung Süden, vom 12.05.2026 00:00 bis 19.07.2026 23:59',
          'type' => 'handicap',
          'until' => 1784498340
+       },
+       {
+         'data' => '#: source_id: LMS-BR:409562/72 viz2021:13.303816,52.502718,26.05.2026,07:00 (bis 30.11.2026)
+	q4::inwork 3613,10576 3603,10765
+',
+         'from' => 1779685200,
+         'id' => 4614,
+         'text' => 'Dahlmannstr.: Bauarbeiten zwischen Sybelstr. und Gervinusstr., Sperrung, evtl. sind auch Radfahrer betroffen, vom 26.05.2026 07:00 bis 30.11.2026 18:00',
+         'type' => 'handicap',
+         'until' => 1796058000
        }
      
 );
