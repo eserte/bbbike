@@ -567,7 +567,7 @@
   (if (null url)
       (setq url (bbbike--get-url-under-cursor)))
   (if (or (and bbbike-view-url-prefer-cached
-	       (not (string-match "^http://www.dafmap.de/" url)) ; depends on additional non-cached javascript files, cached version is not usable
+	       (not (string-match "^https?://\\(www\\.\\)?dafmap\\.de/" url)) ; depends on additional non-cached javascript files, cached version is not usable
 	       )
 	  (string-match "/___tmp/tmp/" url) ; temporary berlin.de URLs, usually only valid for a few minutes
 	  (string-match "//www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/" url) ; old Amtsblatt URLs, not available anymore online
@@ -1097,6 +1097,10 @@
     (concat "https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
    ((string-match "^https?://www\\.berlin\\.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp\\(.*\\)" url)
     (concat "https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp" (match-string 1 url)))
+   ((string-match "^https?://\\(?:www\\.\\)?dafmap\\.de/d/berlin\\.html\\?center=\\([0-9.]+\\)\\+\\([0-9.]+\\)\\(.*\\)" url)
+    (concat "https://dafmap.de/berlin?center=" (match-string 1 url) "," (match-string 2 url) (match-string 3 url)))
+   ((string-match "^https?://\\(?:www\\.\\)?dafmap\\.de/d/berlin\\.html\\(.*\\)" url)
+    (concat "https://dafmap.de/berlin" (match-string 1 url)))
    (t url)))
 
 ;;; make Mapillary URLs smaller

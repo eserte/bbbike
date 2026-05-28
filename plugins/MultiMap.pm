@@ -1881,7 +1881,7 @@ sub showmap_url_daf_berlin {
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.dafmap.de/d/berlin.html?center=%s+%s&zoom=%d", $py, $px, $scale;
+    sprintf "https://dafmap.de/berlin?center=%s,%s&zoom=%d", $py, $px, $scale;
 }
 
 sub showmap_daf_berlin {
