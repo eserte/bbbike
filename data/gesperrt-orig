@@ -103,6 +103,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://entwicklungsstadt.de/neugestaltung-am-bahnhof-suedkreuz-mehr-attraktivitaet-fuer-das-quartier/
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10166
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10167 (Vorlage zur Beschlussfassung: 7-100 VE, nicht verkehrsrelevant)
+#: by: https://www.entwicklungsstadt.de/neubau-bella-was-am-suedkreuz-bereits-zu-sehen-ist/
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="26"
 #: osm_watch: way id="1430487470" version="2"
@@ -4288,6 +4289,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/marx-engels-forum-marienviertel.94/page-3#post-26287
 #: by: https://www.entwicklungsstadt.de/marx-engels-forum-in-berlin-mitte-archaeologische-funde-muessen-neugestaltung-weichen/
 #: by: https://www.morgenpost.de/bezirke/mitte/article411813135/so-lange-bleibt-das-marx-engels-forum-noch-gesperrt.html (bis Ende 2027)
+#: by: https://www.entwicklungsstadt.de/rathausforum-in-mitte-neue-uferkante-an-der-spree-nimmt-gestalt-an/
 #: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
 #: osm_watch: note 4795958 5
 #: osm_watch: way id="169067264" version="15"
@@ -4350,7 +4352,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-05-20
+#: last_checked: 2026-05-23
 #: check_frequency: 120d
 #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4521,7 +4523,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-05-21
+#: last_checked: 2026-05-28
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4654,7 +4656,7 @@ Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
 # REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
 #: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
-#: last_checked: 2026-04-29
+#: last_checked: 2026-05-26 (daf)
 #: check_frequency: 120d
 #: next_check: 2026-10-31 (bonava website)
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
@@ -4776,7 +4778,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-28
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4784,7 +4786,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-05-22 vvv
+#: last_checked: 2026-05-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4973,7 +4975,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: osm_watch: way id="36780316" version="11"
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
-#: last_checked: 2026-04-18
+#: last_checked: 2026-05-28
 #: check_frequency: 180d
 #: next_check: 2026-12-15 (Pressemitteilung SenSBW)
 # REMOVED --- #: next_check: 2027-06-30
@@ -5003,7 +5005,7 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://www.erzbistumberlin.de/medien/pressestelle/aktuelle-pressemeldungen/pressemeldung/news-title/richtfest-am-bernhard-lichtenberg-haus/ (Fertigstellung im Sommer 2026)
 #: by: https://www.entwicklungsstadt.de/bernhard-lichtenberg-haus-am-bebelplatz-fassadenarbeiten-am-neubau-sichtbar/
 #: osm_watch: way id="28120501" version="15"
-#: last_checked: 2026-03-24
+#: last_checked: 2026-05-26 (daf)
 #: check_frequency: 90d
 #: next_check: 2026-09-01 (erzbistumberlin)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -5129,7 +5131,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-05-20 vvv
+#: last_checked: 2026-05-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5191,6 +5193,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 #: by: https://jtre.de/de/news/ein_jahr_bauzeit (Fertigstellung des Gebäudes im Frühjahr 2027)
 #: by: https://www.entwicklungsstadt.de/wohnraum-in-der-europacity-nordhafen-living-office-soll-bis-fruehjahr-2027-fertig-werden/
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/nordhafen-living-office-heidestra%C3%9Fe-30-32.1495/#post-26912
+#: by: https://www.entwicklungsstadt.de/nordhafen-living-office-mixed-use-projekt-in-der-europacity-vor-naechster-etappe/ (Fertigstellung Frühjahr 2027)
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
@@ -5664,10 +5667,10 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
 #: osm_watch: way id="154807176" version="66"
-#: osm_watch: way id="186329816" version="50"
+#: osm_watch: way id="186329816" version="51"
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
-#: osm_watch: way id="692480577" version="38"
-#: osm_watch: way id="692480576" version="37"
+#: osm_watch: way id="692480577" version="39"
+#: osm_watch: way id="692480576" version="38"
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 7989,13302
 # REMOVED --- Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8099,13391 8098,13419
 #: next_check ^^^

@@ -375,7 +375,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-05-20 vvv
+#: last_checked: 2026-05-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -566,7 +566,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-05-22 vvv
+#: last_checked: 2026-05-28 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1960,14 +1960,15 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: by: https://www.entwicklungsstadt.de/estrel-tower-rueckbau-des-zweiten-krans-markiert-weiteren-baufortschritt/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mfiwaviigs24 (Fernwärmearbeiten bis Ende März 2026)
 #: by: https://www.entwicklungsstadt.de/estrel-hochhaus-baustelle/
+#: by: https://www.entwicklungsstadt.de/neukoellner-hotelhochhaus-endphase-der-fassadenarbeiten-am-estrel-tower/
 #: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 (bis 31.03.2026) (bis 31.07.2026)
-#: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren
+#: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-05-22 (webcam)
+#: last_checked: 2026-05-28 (webcam)
 #: check_frequency: 14d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
-	RW0; 14174,7505 14305,7415
+	RW1; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
 neues Verbundsteinpflaster	RW2; 14305,7415 14323,7403 14334,7395 14369,7376
 #: historical_note: früher (vor der A100-Eröffnung) keine Benutzungspflicht, vor dem A100-Bau schlechteres Pflaster
@@ -3669,7 +3670,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20201122 (geschützt oder ungeschützt?)
-#: by: https://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2025) (4. Quartal 2025 - 4. Quartal 2026) (4. Quartal 2026 - 4. Quartal 2027)
+#: by: https://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (2. Quartal 2024 - 4. Quartal 2024) (4. Quartal 2024 - 4. Quartal 2025) (4. Quartal 2025 - 4. Quartal 2026) (4. Quartal 2026 - 4. Quartal 2027) (4. Quartal 2027 - 4. Quartal 2028)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6412 (Antrag)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
@@ -3681,7 +3682,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="966685279" version="10"
 #: last_checked: 2026-04-21 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2027-12-31 (infravelo) vvv
+#: next_check: 2028-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
 beginnt mit einem Radstreifen und wird nicht eindeutig auf den Hochbord geführt	RW1; 13439,14673 13520,14542
 alter Asphalt, Schäden, schmaler Unterstreifen gegen parkende Autos	RW1; 13520,14542 13727,14207 13731,14200 13736,14192
@@ -8409,6 +8410,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: by: https://pbs.twimg.com/media/Gks4DQSW0AAAmtk?format=png&name=900x900 (Radfahrer zumindest ab Neuköllner Straße frei)
 #: by: https://fahrinfo.vbb.de/him-uploads/1740562608841_Kartenausschnitt_Stubenrauchstr.png
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lrsnlsyt4s2e
+#: by: https://www.entwicklungsstadt.de/rudow-stubenrauchstrasse-bleibt-gesperrt-das-ist-der-plan/ (bis Oktober 2026)
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
@@ -9054,7 +9056,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
-#: last_checked: 2026-05-09 vvv
+#: last_checked: 2026-05-22 (mapillary) vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
@@ -9369,6 +9371,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html (Schutzstreifen, 555 Meter -> reicht vermutlich für beide Richtungen)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/verkehrsplanung/radverkehr/akteure-und-gremien/20251113_fahrrat_protokoll.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/28012026_fahrrat_protokoll_praesentation.pdf (unklare Finanzierung)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1674129.php (Realisierung eines Radwegs zwischen Alboinstr. und Eresburgstr.; Arbeiten an der Ampelanlage bis Sep 2026)
 #: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße)
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
