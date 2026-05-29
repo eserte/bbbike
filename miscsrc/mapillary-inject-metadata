@@ -176,7 +176,7 @@ sub graph_api_call {
 	    warn "Request $try/$max_tries failed: " . $resp->dump;
 	    sleep 1 if $try < $max_tries;
 	}
-	die "Maximum number of tries ($max_tries) reached, failing permanenlty\n";
+	die "Maximum number of tries ($max_tries) reached, failing permanently\n";
     }
     my $json = $resp->decoded_content;
     my $data = decode_json($json);
