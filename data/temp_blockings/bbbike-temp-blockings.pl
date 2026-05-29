@@ -36785,15 +36785,16 @@ EOF
 	q4::inwork; 12330,8636 12494,8501
 EOF
      },
-     { from  => $isodate2epoch->("2026-04-19 00:00:00"), # $isodate2epoch->("2026-01-25 00:00:00"), # $isodate2epoch->("2025-07-20 00:00:00"), # $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
-       until => $isodate2epoch->("2026-04-30 18:00:00"), # $isodate2epoch->("2026-03-06 11:00:00"), # $isodate2epoch->("2025-08-08 12:00:00"), # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
+     { from  => $isodate2epoch->("2026-05-31 00:00:00"), # $isodate2epoch->("2026-04-19 00:00:00"), # $isodate2epoch->("2026-01-25 00:00:00"), # $isodate2epoch->("2025-07-20 00:00:00"), # $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
+       until => $isodate2epoch->("2026-06-05 16:00:00"), # $isodate2epoch->("2026-04-30 18:00:00"), # $isodate2epoch->("2026-03-06 11:00:00"), # $isodate2epoch->("2025-08-08 12:00:00"), # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
 #      dont_check_date => 1,
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, voraussichtlich bis 28.08.2023, eventuell etwas länger bis zum 30.08.2023',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, Hämmerlingstr. vom 21.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 21.07.2025 06:00 Uhr bis 08.08.2025 12:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 26.01.2026 05:00 Uhr bis 06.03.2026 11:00 Uhr',
-       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 20.04.2026 bis 30.04.2026',
+#      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 20.04.2026 bis 30.04.2026',
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 01.06.2026 06:00 Uhr bis 05.06.2026 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
@@ -36828,7 +36829,7 @@ EOF
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOu2XcAAADii.jpg (Detailkarte der Sperrung)
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025) (neue Sperrung: 26. Januar (circa 5 Uhr), bis Freitag, 6. März 2026 (circa 11 Uhr))
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025) (neue Sperrung: 26. Januar (circa 5 Uhr), bis Freitag, 6. März 2026 (circa 11 Uhr)) (neue Sperrung im Juni 2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1836261367248228357
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html (21. Juli 2025 6 Uhr bis 8. August 2025 12 Uhr)
 #: by: https://www.entwicklungsstadt.de/bahnhof-koepenick-neue-sperrungen-im-zuge-des-grossumbaus/

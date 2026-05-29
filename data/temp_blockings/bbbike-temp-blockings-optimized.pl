@@ -5548,7 +5548,65 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: HAEMMERLING-2022
+#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022) (bis 16.12.2022) (bis 31.1.2023) (inaktiv)
+#: source_id: viz2021:13.572977,52.460203,31.01.2023,17:50 (bis 25.05.2023) (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,31.01.2023,17:31 (bis 25.5.2023) (inaktiv)
+#: source_id: viz2021:13.572719,52.46075,25.05.2023,12:00 (bis 30.06.2023) (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,25.03.2023,06:00 (bis 25.05.2023) (bis 30.6.2023) (bis 01.08.2023) (bis 14.09.2023) (bis 27.08.2023) (bis 30.08.2023) (falsch, bis 05.09.2023) (bis 14.09.2023) (inaktiv)
+#: source_id: viz2021:13.57292,52.460387,14.11.2023,09:00 (Kraneinsatz in der Hämmerlingstr., Sperrung nur für Kfz-Verkehr, bis 14.11.2023) (inaktiv)
+#: source_id: viz2021:13.572959,52.4603,16.02.2024,06:00 (bis 11.03.2024) (inaktiv)
+#: source_id: viz2021:13.57272,52.46075,05.09.2024,18:00 (bis 05.09.2024) (inaktiv)
+#: source_id: viz2021:13.572977,52.460213,18.09.2024,07:00 (Komplettsperrung, bis 04.10.2024) (inaktiv)
+#: source_id: viz2021:13.57272,52.46075,14.09.2023,12:00 (hier nur Gegenverkehrsregelung, bis 04.10.2024) (inaktiv)
+#: source_id: adac:89620388 (bis voraussichtlich 08.08.2025) (inaktiv)
+#: source_id: viz2021:13.57339,52.45923,21.07.2025,07:00 (bis 08.08.2025) (inaktiv)
+#: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558,26.01.2026,05:00 (bis 06.03.2026) (inaktiv)
+#: source_id: LMS-BR:405392/72 viz2021:13.57271,52.46072,20.04.2026,07:00 (bis 30.04.2026) (inaktiv)
+#: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
+#: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
+#: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
+#: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
+#: by: https://www.bahninfo-forum.de/read.php?9,757699,759980#msg-759980 (vielleicht nur bei Union-Heimspielen für Fußgänger gesperrt?)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230223.pdf (Westumfahrung Bahnhofstr.)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230330.pdf (Hämmerlingstr. bis 15.6.2023 gesperrt)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2023/pressemitteilung.1331223.php (Hämmerlingstr. ab Ende Juni 2023 passierbar)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/PR_berlin-frankfurt-oder-bundesgrenze-d-pl_umbau_koepenick_bf_20230531.pdf (bis 11.7.2023)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734 (rechtzeitig zur Sperrung der Bahnhofstr. offen?)
+#: by: https://phoenix1554.wordpress.com/2023/08/20/umbau-bahnhof-berlin-kopenick-20-08-2023/ (Freigabe am 28.8.2023?)
+#: by: https://www.deutsches-architekturforum.de/thread/15143-neubau-regionalbahnhof-k%C3%B6penick/?postID=760886#post760886
+#: by[nocache]: https://nitter.perennialte.ch/VIZ_Berlin/status/1758065960009744712#m (auch Fußgänger sind betroffen!)
+#: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOu2XcAAADii.jpg (Detailkarte der Sperrung)
+#: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025) (neue Sperrung: 26. Januar (circa 5 Uhr), bis Freitag, 6. März 2026 (circa 11 Uhr)) (neue Sperrung im Juni 2026)
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1836261367248228357
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html (21. Juli 2025 6 Uhr bis 8. August 2025 12 Uhr)
+#: by: https://www.entwicklungsstadt.de/bahnhof-koepenick-neue-sperrungen-im-zuge-des-grossumbaus/
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article410891906/s-bahnhof-koepenick-deutsche-bahn-kuendigt-fuer-januar-neue-sperrung-an.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1633950.php
+#: by: https://viz.berlin.de/aktuelle-meldungen/umbau-bahnhof-kopenick-sperrung-hammerlingstrasse/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1656616.php (neue Sperrung im April 2026, siehe auch DB-Seite)
+#: by: https://www.entwicklungsstadt.de/berlin-koepenick-vollsperrung-wegen-umbau-am-s-bahnhof/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mjvnk53jgk23
+#: osm_watch: note 3566736 14
+# REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
+# REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
+# REMOVED --- #: osm_watch: way id="794278028" version="10"
+# REMOVED --- #: osm_watch: way id="1181902719" version="1"
+# REMOVED --- #: XXX nächste Sperrung der Hämmerlingstr.: Von Montag, 21. Juli (6 Uhr), bis Freitag, 8. August 2025 (vsl. 12 Uhr)
+Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
+# REMOVED (hier nicht?) Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 22000,6245 22033,6144
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => 1780178400,
+         'id' => 3549,
+         'text' => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 01.06.2026 06:00 Uhr bis 05.06.2026 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1780668000
+       },
        undef,
        {
          'data' => '#: next_check_id: WILTBERG-2022
