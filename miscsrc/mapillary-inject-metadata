@@ -26,6 +26,10 @@ use LWP::UserAgent;
 
 use BBBikeYAML qw(LoadFile);
 
+# list of failing ids causing errors like
+#   {"error":{"message":"Unsupported get request","type":"MLYApiException","code":100,"error_subcode":33,"fbtrace_id":"..."}}
+my %skip_ids = map {($_,1)} qw(1009369795370425 1560453945705173);
+
 my $token;
 my $with_make = 1;
 GetOptions(
@@ -201,10 +205,10 @@ sub create_image_id_to_make_cache {
     }
     my %image_id_to_make;
     if (%start_ids) {
-	my @start_ids = sort { $a<=>$b } keys %start_ids;
+	my @start_ids = grep { !$skip_ids{$_} } sort { $a<=>$b } keys %start_ids;
 	while(@start_ids) {
 	    my @batch = splice @start_ids, 0, 50; # possibly number of max. elements per batch call
-	    my $data = graph_api_call('?ids='.join(',',@batch).'&fields=make');
+	    my $data = graph_api_call('?fields=make&ids='.join(',',@batch));
 	    while(my($start_id,$v) = each %$data) {
 		$image_id_to_make{$start_id} = $v->{make};
 	    }
