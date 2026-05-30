@@ -181,7 +181,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: osm_watch: way id="102486250" version="31"
 #: osm_watch[closed]: note 4659483 8
 # REMOVED (confirmed) --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
-#: last_checked: 2026-04-06
+#: last_checked: 2026-05-30
 #: check_frequency: 180d
 # REMOVED (ehemaliger infravelo-Eintrag) --- #: next_check: 2025-09-30 (infravelo)
 #: historical_note: früher (bis April 2025): mäßiges bis schlechtes Kopfsteinpflaster, Q2-
@@ -201,7 +201,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2026-04-14
+#: last_checked: 2026-05-29
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -213,7 +213,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-04-14 vvv
+#: last_checked: 2026-05-29 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -576,7 +576,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 # REMOVED (nein, keine Verbesserung) --- #: XXX Ist der Asphalt hier besser geworden?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260427 (Sanierung)
 #: XXX nach der Sanierung vermutlich Q0
-#: last_checked: 2026-05-18
+#: last_checked: 2026-05-29
 #: next_check: 2026-06-26 (VIZ-Verkehrsmeldung)
 Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
@@ -1337,7 +1337,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 #: osm_watch: way id="4810830" version="46"
 #: osm_watch: way id="1431956179" version="1"
-#: last_checked: 2026-03-28
+#: last_checked: 2026-05-30
 #: check_frequency: 720d
 #: next_check: 2028-12-31
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
@@ -4858,12 +4858,14 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 #: by: https://www.berliner-woche.de/baumschulenweg/c-umwelt/arbeiten-zur-aufwertung-der-gruenanlage-lakegrund-sind-gestartet_a428593
 #: by: https://entwicklungsstadt.de/lakegrund-in-berlin-treptow-gruenanlage-wird-klimaresilient-umgestaltet/ (Abschluss 2025)
 #: by: https://www.entwicklungsstadt.de/lakegrund-in-treptow-modernisierung-der-gruenanlage-steht-kurz-vor-dem-abschluss/
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article412112828/berlin-gruenanlage-in-treptow-koepenick-komplett-neugestaltet-mit-diesem-ziel.html (Eröffnung am 3.6.2026)
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
 #: osm_watch: note 4526759 3
 #: XXX "Teilentsiegelung" geplant
 #: last_checked: 2026-03-14
 #: check_frequency: 90d
-#: next_check: 2026-12-31 (BA-Pressemitteilung)
+# REMOVED --- #: next_check: 2026-12-31 (BA-Pressemitteilung)
+#: next_check: 2026-06-03 (MoPo)
 Lakegrund: Beton	Q1+ 16406,7430 16368,7425 16195,7398
 Eschenbachstr.: Kopfsteinpflaster	Q2 16290,7160 16375,7070
 Stormstr. (Baumschulenweg): Kopfsteinpflaster	Q2 16328,7005 16234,7100
@@ -8340,7 +8342,10 @@ Rudolf-Filter-Weg: Beton	Q0- 21009,15539 21040,15589
 (Rudolf-Filter-Weg - Landsberger Allee): Beton	Q0 21040,15589 21068,15646
 Ludwigsfelder Str. (Hellersdorf): Asphalt	Q0 22883,15740 22888,15768 22909,15877 22991,15864 23001,15898 23011,15947 22940,15964 22961,16077 22974,16139
 Michendorfer Str. (Hellersdorf): Beton	Q0 22811,15753 22787,15639 22764,15515
-Luckenwalder Str.: Beton	Q0 22573,15552 22592,15548 22764,15515 22871,15507 22899,15528 22914,15599 22976,15585 23004,15583 23060,15588
+#: historical_note: früher Q0, nach Durchsicht neuerer Bilder (2022) sieht es nicht ganz so gut aus vvv
+Luckenwalder Str.: Beton	Q1+ 22573,15552 22592,15548 22764,15515 22871,15507 22899,15528 22914,15599 22940,15728
+Luckenwalder Str.: Beton	Q1+ 22914,15599 22976,15585 23004,15583 23060,15588
+#: historical_note ^^^
 (Luckenwalder - Kyritzer Str.): Beton	Q0 22573,15552 22579,15416 22579,15407
 Kyritzer Str.: Beton mit zahlreichen Kopfsteinpflasterschwellen	Q2+ 22579,15407 22743,15414 23067,15429
 Kyritzer Str.: Beton	Q0 23067,15429 23245,15442 23270,15423
@@ -9019,8 +9024,8 @@ Jänickestr.: unebener Asphalt	Q1+ 1524,1924 1558,1805 1570,1753
 Jänickestr.: Asphalt	Q0 1570,1753 1588,1697 1616,1594 1645,1486 1702,1278
 Melker Str.: Asphalt	Q0 1616,1594 1778,1659
 Rilkepfad: Asphalt	Q0 1645,1486 1762,1534
-Ladiusstr.: glatt gepflastert	Q1 1224,481 1108,465 1078,443
-Ladiusstr.: Beton mit Schäden	Q1+ 1078,443 1042,406 935,391 924,405
+Ladiusstr.: Beton	Q0- 1224,481 1108,465 1078,443
+Ladiusstr.: glatt gepflastert	Q1- 1078,443 1042,406 935,391 924,405
 Vesterzeile: Beton	Q0 1217,527 1224,481 1226,453
 Ramsteinweg: Asphalt	Q0 967,446 856,546
 Ramsteinweg: Beton	Q0 856,546 755,632 731,641 696,655 642,662 581,670
@@ -9344,7 +9349,7 @@ Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8
 #: next_check_id: MUSSEHL-2025
 #: note: kein "add_fragezeichen", unklares Ende der Bauarbeiten
 #: XXX: Ist die Qualität nach den Bauarbeiten besser geworden?
-#: last_checked: 2026-05-04
+#: last_checked: 2026-05-30
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-20
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8982,8781 8926,8682 8842,8561
@@ -16750,8 +16755,8 @@ Kadettenweg: Asphalt	Q0 3228,3455 3328,3313 3348,3278 3450,3142 3462,3113 3462,3
 #: by: Beate Wolter: früher "Kopfsteinpflaster, Q2", mittlerweile aber: "repariertes Kopfsteinpflaster, Q1" vvv
 #: note: fabio weiss meint Kopfsteinpflaster, Q3, enge Straße, q1
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt) vvv
-#: historical_note: früher Asphalt, Q0-, nun schlechter
-Baseler Str.: Asphalt/Beton mit einigen Schäden	Q1+ 3148,1888 3150,2113 3151,2224
+#: historical_note: früher Asphalt, Q0-, nun schlechter (Q1+); mittlerweile glatt Q1
+Baseler Str.: Asphalt/Beton mit einigen Schäden	Q1 3148,1888 3150,2113 3151,2224
 #: historical_note: früher Q0, nun schlechter
 Baseler Str.: Asphalt/Beton mit einigen Schäden	Q1+ 3151,2224 3161,2482
 #: historical_note: früher Asphalt mit leichten Schäden, Q0-, nun schlechter
@@ -21274,7 +21279,8 @@ Colomierstr.: guter Asphalt	Q0 -5719,2323 -5577,2242
 #: by: Achim Stenzel: vvv
 #: corrected_by: srt (mäßiger Asphalt -> ...)
 Kellerstr.: mäßiges Kopfsteinpflaster	Q2 6312,4806 6385,4896
-Theklastr.: mäßiger Asphalt, unebener Belag	Q1 3738,2821 3737,2671 3732,2461
+#: corrected_by: srt (mäßiger Asphalt, unebener Belag, Q1 -> ...)
+Theklastr.: Asphalt	Q0 3738,2821 3737,2671 3732,2461
 #: confirmed_by: srt
 (Weg an der Markuskirche): guter Asphalt	Q0 6342,4783 6280,4709
 Alt-Schönow: schlechtes Kopfsteinpflaster	Q3 1375,-27 1147,-72

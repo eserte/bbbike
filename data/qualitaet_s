@@ -6672,7 +6672,8 @@ Rudolf-Filter-Weg: Beton	Q0 21009,15539 21040,15589
 (Rudolf-Filter-Weg - Landsberger Allee): Beton	Q0 21040,15589 21068,15646
 Ludwigsfelder Str. (Hellersdorf): Asphalt	Q0 22883,15740 22888,15768 22909,15877 22991,15864 23001,15898 23011,15947 22940,15964 22961,16077 22974,16139
 Michendorfer Str. (Hellersdorf): Beton	Q0 22811,15753 22787,15639 22764,15515
-Luckenwalder Str.: Beton	Q0 22573,15552 22592,15548 22764,15515 22871,15507 22899,15528 22914,15599 22976,15585 23004,15583 23060,15588
+Luckenwalder Str.: Beton	Q1 22573,15552 22592,15548 22764,15515 22871,15507 22899,15528 22914,15599 22940,15728
+Luckenwalder Str.: Beton	Q1 22914,15599 22976,15585 23004,15583 23060,15588
 (Luckenwalder - Kyritzer Str.): Beton	Q0 22573,15552 22579,15416 22579,15407
 Kyritzer Str.: Beton mit zahlreichen Kopfsteinpflasterschwellen	Q2 22579,15407 22743,15414 23067,15429
 Kyritzer Str.: Beton	Q0 23067,15429 23245,15442 23270,15423
@@ -7286,8 +7287,8 @@ Jänickestr.: unebener Asphalt	Q1 1524,1924 1558,1805 1570,1753
 Jänickestr.: Asphalt	Q0 1570,1753 1588,1697 1616,1594 1645,1486 1702,1278
 Melker Str.: Asphalt	Q0 1616,1594 1778,1659
 Rilkepfad: Asphalt	Q0 1645,1486 1762,1534
-Ladiusstr.: glatt gepflastert	Q1 1224,481 1108,465 1078,443
-Ladiusstr.: Beton mit Schäden	Q1 1078,443 1042,406 935,391 924,405
+Ladiusstr.: Beton	Q0 1224,481 1108,465 1078,443
+Ladiusstr.: glatt gepflastert	Q1 1078,443 1042,406 935,391 924,405
 Vesterzeile: Beton	Q0 1217,527 1224,481 1226,453
 Ramsteinweg: Asphalt	Q0 967,446 856,546
 Ramsteinweg: Beton	Q0 856,546 755,632 731,641 696,655 642,662 581,670
@@ -14567,7 +14568,7 @@ Rathenower Str.: guter Asphalt	Q0 11488,531 11563,501
 Glockenstr.: guter Asphalt	Q0 -107,3194 -268,3441 -370,3585
 Colomierstr.: guter Asphalt	Q0 -5719,2323 -5577,2242
 Kellerstr.: mäßiges Kopfsteinpflaster	Q2 6312,4806 6385,4896
-Theklastr.: mäßiger Asphalt, unebener Belag	Q1 3738,2821 3737,2671 3732,2461
+Theklastr.: Asphalt	Q0 3738,2821 3737,2671 3732,2461
 (Weg an der Markuskirche): guter Asphalt	Q0 6342,4783 6280,4709
 Alt-Schönow: schlechtes Kopfsteinpflaster	Q3 1375,-27 1147,-72
 Bondickstr.: Kleinsteinpflaster	Q2 3605,21589 3753,21686 4034,21900 4130,21961 4308,22058

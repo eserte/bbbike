@@ -2,6 +2,7 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
 #: note: XXX_* categorization done 2008-01-26
 #:
+Siemensstr./Borstellstr.	X::inwork 6219,4336
 Auguste-Viktoria-Allee/General-Barby-Str.: Gegenverkehrsregelung	X::inwork 4414,18243
 Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9456
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
@@ -2902,6 +2903,11 @@ UBB, halbstündlich	B 51270,179246
 	X -351,708
 	X -3368,-4430
 	X -1715,-1767
+	F -2422,-2905
+	F -2172,-2445
+	F -1561,-1450
+	X -1331,-1092
+	F -1388,-850
 	B 49463,69701
 	B 50401,70720
 	B 55594,74156

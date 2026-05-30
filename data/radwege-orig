@@ -375,7 +375,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-05-28 vvv
+#: last_checked: 2026-05-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -566,7 +566,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-05-28 vvv
+#: last_checked: 2026-05-29 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1024,7 +1024,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-05-05
+#: last_checked: 2026-05-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1650,14 +1650,17 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: confirmed_by: srt
 #: note: mit Leitboys
 	RW4; 7497,5610 7236,5685
+#: next_check_id: ROEBLING-2026
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz, Suggestivstreifen wird regelmäßig vor rechtsabbiegenden Autos benutzt
 #: XXX Leitboys auch in die andere Richtung waren mal geplant
+#: XXX während der Sperrung der Röblingstr. ist die rechte Spur exklusiv dem Radverkehr gewidmet
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="24"
-#: last_checked: 2026-03-25
-#: check_frequency: 120d
+#: last_checked: 2026-05-30
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 180d
 	RW3; 7236,5685 7497,5610
 Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
 Gehwegplatten	RW1; 8200,5510 8100,5512
@@ -1808,7 +1811,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.infravelo.de/projekt/petersburger-strasse/ (2. Quartal 2024 - 1. Quartal 2027) (3. Quartal 2024 - 1. Quartal 2027) (3. Quartal 2024 - 4. Quartal 2027)
 #: note: früher das infravelo-Projekt "petersburger-strasse-1"
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1482741.php (grundhafte Erneuerung: 2,50 m breite Radwege; neue Ampel am Bersarinplatz; Abschluss im III. Quartal 2027)
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (neue Verkehrsführung ab 16.9.2024)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (neue Verkehrsführung ab 16.9.2024) (Abschluss des 1. BA nun IV. Quartal 2026)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/petersburger-strasse/lageplan_blatt1.pdf
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/petersburger-strasse/lageplan_blatt2.pdf
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/petersburger-strasse/lageplan_blatt3.pdf
@@ -2394,7 +2397,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-05-22 vvv
+#: last_checked: 2026-05-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -3398,7 +3401,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-04-30
+#: last_checked: 2026-05-29
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3409,7 +3412,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-04-30
+#: last_checked: 2026-05-29
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -5251,11 +5254,11 @@ gemeinsamer Rad- und Gehweg, Beton, teilweise eng	RW2; 25256,14110 25095,14171
 	RW2;RW2 23960,15021 23952,15086 23933,15209 23913,15333 23895,15450 23868,15633 23859,15763 23895,15904
 neu asphaltiert	RW2; 22771,16194 22698,15788
 	RW2; 22698,15788 22771,16194
-	RW2; 22698,15788 22811,15753 22883,15740 23080,15700
+	RW2; 22698,15788 22811,15753 22883,15740 22940,15728 23080,15700
 alte Betonplatten, Hebungen und Schäden	RW2; 23080,15700 23218,15671 23272,15660
 neu asphaltiert	RW2; 23272,15660 23388,15637 23411,15632
 	RW2; 23411,15632 23568,15603 23617,15594 23868,15633
-	RW2; 23868,15633 23617,15594 23568,15603 23411,15632 23388,15637 23272,15660 23218,15671 23080,15700 22883,15740 22811,15753 22698,15788
+	RW2; 23868,15633 23617,15594 23568,15603 23411,15632 23388,15637 23272,15660 23218,15671 23080,15700 22940,15728 22883,15740 22811,15753 22698,15788
 alte Betonplatten/Verbundsteinpflaster	RW1;RW1 25007,15650 25005,15636 25003,15617 24982,15433 24968,15307
 	RW1;RW1 24968,15307 25006,15132 25025,15062 25031,15027
 neu asphaltiert, relativ breit	RW1; 25031,15027 25045,14946
@@ -7607,7 +7610,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2026-04-22 (mapillary) vvv
+#: last_checked: 2026-05-29 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -8161,7 +8164,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2026-05-16 vvv
+#: last_checked: 2026-05-29 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8634,7 +8637,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -8733,7 +8736,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
 #: last_checked: 2026-04-30
-#: check_frequency: 30d
+#: check_frequency: 45d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
 #: note: am Ende fehlen ein paar Meter Grünbeschichtung, dafür hier mit Bord von der restlichen Fahrbahn getrennt
@@ -9056,7 +9059,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
-#: last_checked: 2026-05-22 (mapillary) vvv
+#: last_checked: 2026-05-30 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
@@ -9372,7 +9375,8 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/verkehrsplanung/radverkehr/akteure-und-gremien/20251113_fahrrat_protokoll.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/28012026_fahrrat_protokoll_praesentation.pdf (unklare Finanzierung)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1674129.php (Realisierung eines Radwegs zwischen Alboinstr. und Eresburgstr.; Arbeiten an der Ampelanlage bis Sep 2026)
-#: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße)
+#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article412109710/schoeneberger-strasse-soll-verkehrssicher-werden-was-geplant-ist.html
+#: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße); mittlerweile ist nur von einer Erneuerung der Ampelanlage an der Alboinstr. die Rede
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: source_id: viz2021:13.377485,52.466729,13.11.2023,06:00 (Leitungsarbeiten bis 01.12.2023) (inaktiv)

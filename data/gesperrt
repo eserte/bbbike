@@ -2525,9 +2525,11 @@ Wolzenseeweg -> Daumstr.: Mittelstreifen	3::igndisp -1721,16448 -1798,16465 -181
 Wolzenseeweg -> Templiner-See-Str.: Mittelstreifen	3::igndisp -1721,16448 -1798,16465 -1902,16493
 Templiner-See-Str. -> Daumstr.: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1783,16533
 Templiner-See-Str. -> Wolzenseeweg: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1721,16448
-Straßenbahntrasse	3nocross::ignrte 22811,15753 22883,15740 23080,15700
-Ludwigsfelder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 22888,15768 22883,15740 23080,15700
+Straßenbahntrasse	3nocross::ignrte 22811,15753 22883,15740 22940,15728 23080,15700
+Ludwigsfelder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 22888,15768 22883,15740 22940,15728
 Zossener Str. -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 22811,15753 22883,15740 22888,15768
+Zossener Str. -> Luckenwalder Str.: Straßenbahntrasse	3::igndisp 23080,15700 22940,15728 22914,15599
+Luckenwalder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 22914,15599 22940,15728 22883,15740
 Straßenbahntrasse	3nocross::ignrte 22771,16194 22974,16139 23162,16095
 Ludwigsfelder Str. -> Landsberger Chaussee: Straßenbahntrasse	3::igndisp 22961,16077 22974,16139 22771,16194
 Landsberger Chaussee -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 23162,16095 22974,16139 22961,16077

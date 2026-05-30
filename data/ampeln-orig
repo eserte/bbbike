@@ -6,6 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: SIEMENSBORSTELL-2026
+#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026)
+#: last_checked: 2026-05-30
+#: next_check: 2026-08-28
+#: valid: -20260828
+Siemensstr./Borstellstr.	X::inwork 6219,4336
+# 
 #: next_check_id: AUGUSTEVIKTORIAALLEE-2026
 #: last_checked: 2026-05-19
 Auguste-Viktoria-Allee/General-Barby-Str.: Gegenverkehrsregelung	X::inwork::alternating 4414,18243
@@ -48,16 +55,17 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-05-27
+#: last_checked: 2026-05-30
 #: check_frequency: 60d
 Michaelbrücke	F::inwork 11676,11839
 # 
 #: next_check_id: KOENIGSHEIDEWEG-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
-#: source_id: LMS-BR:383381/72 viz2021:13.482381,52.45217, (bis 31.01.2026) (bis 09.04.2026) (bis 30.05.2026)
+#: source_id: LMS-BR:383381/72 viz2021:13.482381,52.45217, (bis 31.01.2026) (bis 09.04.2026) (bis 30.05.2026) (inaktiv)
 #: last_checked: 2025-12-18 (VIZ)
 #: next_check: 2026-05-30 (VIZ)
-#: valid: -20260530
+# REMOVED (setup "emergency" valid directive instead) --- #: valid: -20260530
+#: valid: -20261231
 Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
 # 
 #: next_check_id: HANNOVERSCHE-2025
@@ -111,7 +119,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
-#: last_checked: 2026-05-27
+#: last_checked: 2026-05-30
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
@@ -376,6 +384,11 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 # REMOVED --- #: valid: -20260411
 # REMOVED --- Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 15928,6996
 # 
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
+#: next_check: 2026-08-31
+#: valid: 20260601-20260831
+Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
+# 
 # REMOVED --- #: XXX Schnellerstraße (Niederschöneweide) in beiden Richtungen zwischen Rudower Straße und Köllnische Straße: Kabelschachtsanierung, Gegenverkehrsregelung durch Baustellenampel, vom 25.03.2024 11:00 bis 03.05.2024 17:00 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772165269927981192 --- #: by: https://pbs.twimg.com/media/GJSQEhiXwAAgVQE?format=jpg&name=large (außerdem Anbindung Rudower Str. (von Süden her) gesperrt) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784806818113327427 --- #: by: https://pbs.twimg.com/media/GMGdMBjXMAAwCqG?format=jpg&name=large --- #: source_id: viz2021:13.526211,52.452649,25.03.2024,11:00 (bis 03.05.2024) (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.529,52.452235,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.52392,52.45312,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: next_check: 2024-05-24 --- #: valid: -20240524 --- Schnellerstr./Köllnische Str.: Gegenverkehrsregelung	X::inwork::alternating 18955,5320
 # REMOVED --- #: XXX Mariendorfer Weg/Gottlieb-Dunkel-Straße (Neukölln) in beiden Richtungen Höhe Eschersheimer Straße: Fernwärmeleitungsbau, Gegenverkehrsregelung mit Baustellenampel, Anbindung Eschersheimer Straße gesperrt, vom 06.03.2024 12:00 bis 25.10.2024 17:00 --- #: source_id: viz2021:13.422144,52.462586,06.03.2024,12:00 (bis 25.10.2024) (inaktiv) --- #: source_id: viz2021:13.424532,52.463603,13.03.2024,09:00 (Verschwenkung östlich dieser Stelle, bis 03.06.2024) (bis 15.07.2024) (bis 18.09.2024) (bis 16.10.2024) --- #: note: die Radwege in der Eschersheimer Str. sind nicht gesperrt (Stand Mitte März 2024) --- #: note: zum Carl-Weder-Park kommt man mit einem kleinen Umweg via westlicher Ampel --- #: also_indoor: traffic (ex-H,G,T,B,W) --- #: last_checked: 2024-08-31 (traffic) --- #: check_frequency: 60d --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2024-10-16 --- #: valid: -20241016 --- Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	X::inwork::alternating 11740,6338
 # REMOVED --- #: next_check_id: NEBENDEMDORFTEICH-2024 --- #: source_id: viz2021:13.51352,52.57533,09.01.2024,13:00 (bis 05.02.2024) (inaktiv) --- #: source_id: viz2021:13.514439,52.575353,09.01.2024,13:00 (Tiefbauarbeiten, Ampel, bis 05.02.2024) (bis 07.02.2024) (inaktiv) --- #: next_check: 2024-02-07 --- #: valid: -20240207 --- Dorfstr.: Gegenverkehrsregelung	X::inwork::alternating 17728,18985
@@ -436,7 +449,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
-#: last_checked: 2026-05-27
+#: last_checked: 2026-05-30
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 # REMOVED (verschoben)	X::inwork 7873,12927
@@ -470,7 +483,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-05-11
+#: last_checked: 2026-05-29
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -4044,7 +4057,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-05-27 vvv
+#: last_checked: 2026-05-30 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3
@@ -5226,6 +5239,14 @@ UBB, halbstündlich	B 51270,179246
 	X -351,708
 	X -3368,-4430
 	X -1715,-1767
+#: note: Anforderungsampel
+	F -2422,-2905
+#: note: Anforderungsampel
+	F -2172,-2445
+	F -1561,-1450
+	X -1331,-1092
+#: note: Anforderungsampel, "Dunkelampel"
+	F -1388,-850
 # REMOVED (Unterführung existiert nun) ---	B 15580,-26698
 	B 49463,69701
 	B 50401,70720

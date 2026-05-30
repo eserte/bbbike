@@ -307,9 +307,9 @@ Verbundsteinpflasterradweg	RW2; 346,-454 240,-519 -395,-920
 	RW3; -395,-920 240,-519 346,-454
 Verbundsteinpflasterradweg	RW2;RW2 -395,-920 -650,-1077
 Verbundsteinpflasterradweg	RW1;RW1 -650,-1077 -861,-1207 -882,-1220
-Gehweg für Radfahrer frei	RW1; -1395,-830 -1345,-1016 -1331,-1092
-Gehweg für Radfahrer frei	RW1; -1331,-1092 -1503,-1328 -1573,-1477 -1656,-1702 -1664,-1720
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -1664,-1720 -1656,-1702 -1573,-1477 -1503,-1328 -1331,-1092 -1345,-1016 -1395,-830
+Gehweg für Radfahrer frei	RW1; -1395,-830 -1388,-850 -1345,-1016 -1331,-1092
+Gehweg für Radfahrer frei	RW1; -1331,-1092 -1503,-1328 -1561,-1450 -1656,-1702 -1664,-1720
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -1664,-1720 -1656,-1702 -1561,-1450 -1503,-1328 -1331,-1092 -1345,-1016 -1388,-850 -1395,-830
 Radweg auf Gehweg	RW2;RW2 -14919,-1817 -14733,-1812
 Radweg auf Gehweg	RW2; -14612,-1809 -14733,-1812
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -850,-203 -781,-309 -645,-524 -601,-589 -549,-678
@@ -1577,12 +1577,12 @@ asphaltiert	RW2;RW8 -7756,-9630 -7724,-9612 -7556,-9525 -7526,-9435
 asphaltiert	RW2;RW8 -3848,-5359 -4576,-6237 -5469,-6730 -5550,-6808 -6021,-7385
 asphaltiert	RW2; -3848,-5359 -3821,-5159
 	RW8;RW2 -3318,-4358 -3249,-4256 -3184,-4161 -3170,-4140 -3111,-4047 -2777,-3540 -2740,-3476
-Verbundsteinpflaster	RW2; -2740,-3476 -2617,-3262 -2577,-3189 -2549,-3139 -2415,-2891 -2161,-2424 -2111,-2315 -2023,-2143
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -2740,-3476 -2617,-3262 -2577,-3189 -2549,-3139 -2422,-2905 -2415,-2891 -2335,-2745 -2273,-2632 -2223,-2540 -2172,-2445 -2161,-2424 -2111,-2315 -2082,-2260 -2023,-2143
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -2023,-2143 -1958,-2007 -1896,-1924 -1797,-1804 -1715,-1767
-Verbundsteinpflaster	RW2; -1715,-1767 -1664,-1720
-Beton	RW2; -2111,-2315 -2161,-2424
-asphaltiert	RW2; -2161,-2424 -2415,-2891 -2549,-3139 -2577,-3189
-Verbundsteinpflaster	RW2; -2577,-3189 -2617,-3262 -2740,-3476
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -1715,-1767 -1664,-1720
+Gehweg für Radfahrer frei, Beton	RW1; -2111,-2315 -2161,-2424
+Gehweg für Radfahrer frei, asphaltiert	RW1; -2161,-2424 -2172,-2445 -2223,-2540 -2273,-2632 -2335,-2745 -2415,-2891 -2422,-2905 -2549,-3139 -2577,-3189
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -2577,-3189 -2617,-3262 -2740,-3476
 	RW8;RW2 781,-3280 572,-3234 161,-2953 86,-2903
 Verbundsteinpflaster	RW2; -248,-1160 -321,-1038
 Verbundsteinpflaster	RW1; -321,-1038 -395,-920 -444,-841

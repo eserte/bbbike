@@ -206,7 +206,7 @@ Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 #: osm_watch: note 4996305 1
 #: osm_watch: way id="1025420899" version="8"
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung wieder?
-#: last_checked: 2026-04-01
+#: last_checked: 2026-04-15 (mapillary)
 #: check_frequency: 60d
 Buckower Chaussee	1no 8742,475 8977,505 9004,481
 # 
@@ -2692,7 +2692,7 @@ Schorlemerallee: Mittelstreifen	3nocross 3316,6456 3350,6467 3441,6488
 Berliner Str.: Straßenbahntrasse	3nocross 12392,17517 12429,17685 12462,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 Daumstr.: Mittelstreifen	3nocross -1783,16533 -1798,16465 -1810,16391
-Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
+Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 22940,15728 23080,15700
 Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23162,16095
 Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23403,5410 23402,5483
 Fürstenwalder Damm: Straßenbahntrasse	3nocross 23402,5483 23492,5488 23519,5490
@@ -4139,6 +4139,7 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: by: https://entwicklungsstadt.de/neue-sechsfeld-sporthalle-entsteht-an-der-fredersdorfer-strasse/
 #: by: https://entwicklungsstadt.de/friedrichshain-wie-aus-einem-parkplatz-eine-moderne-schule-wird/ (weiterhin bis Herbst 2026)
 #: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-am-ostbahnhof-zeigt-sich-mit-roter-fassade/
+#: by: https://www.entwicklungsstadt.de/haus-der-familie-und-bildung-am-ostbahnhof-neubau-startet/ (weiterer Neubau, Fertigstellung: Ende 2027)
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
@@ -4295,7 +4296,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-05-21 vvv
+#: last_checked: 2026-05-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt, MoPo) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4347,14 +4348,14 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: by: https://www.entwicklungsstadt.de/ostkreuz-im-umbau-neuer-vorplatz-richtung-victoriakiez/
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
-#: source_id: LMS-BR:402145/72 viz2021:13.47353,52.50308,18.03.2026,07:00 (Verengung in der benachbarten Marktstr., bis 29.05.2026)
+#: source_id: LMS-BR:402145/72 viz2021:13.47353,52.50308,18.03.2026,07:00 (Verengung in der benachbarten Marktstr., bis 29.05.2026) (inaktiv)
 #: osm_watch: way id="394677970" version="11"
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-05-23
-#: check_frequency: 120d
-#: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
+#: last_checked: 2026-05-30
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
 # 
 # REMOVED (mittlerweile (oder schon immer): man kommt an der Baustelle vorbei, etwas verwinkelt, aber lohnt nicht, temporär eine Degradierung q2->q3 vorzunehmen) --- #: priority: #B --- #: last_checked: 2025-04-30 --- #: next_check: 2025-07-31 (Halteverbotsschilder) --- Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877
@@ -4552,19 +4553,20 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
 #: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-so-soll-der-neubau-in-friedrichshain-aussehen/
 #: by: https://www.entwicklungsstadt.de/baustellen-update-am-ostbahnhof-edge-friedrichspark-nimmt-gestalt-an/ (im Laufe des Jahres 2026 bezugsfertig)
+#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-b-yard-baustelle-im-ueberblick/ ("B.YARD", Fertigstellung: Ende 2027/Anfang 2028)
 #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 2
 #: last_checked: 2026-05-21 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2026-03-31 (website) vvv
+#: next_check: 2028-03-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1054783030" version="9"
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q4:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 #: osm_watch: way id="154381294" version="22"
 Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -4863,7 +4865,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-29
 #: check_frequency: 60d
 #: next_check: 2030-12-31 (bbr-bund website)
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
@@ -5065,7 +5067,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2026-05-27 vvv
+#: last_checked: 2026-05-30 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5131,7 +5133,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-05-28 vvv
+#: last_checked: 2026-05-30 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5315,7 +5317,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/staedtebau/berliner-mitte/molkenmarkt/planzeichnung_blatt_1.pdf
 #: by: https://www.entwicklungsstadt.de/neue-wohnungen-am-molkenmarkt-bebauungsplan-beschlossen/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-29
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
@@ -5323,7 +5325,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-29
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5753,7 +5755,7 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-14
 # REMOVED --- Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 * 8673,12315 *
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon
-#: last_checked: 2026-05-09
+#: last_checked: 2026-05-29
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

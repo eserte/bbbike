@@ -4536,12 +4536,14 @@ Tollkrug - Selchow/Glasow: Asphalt	Q0 16251,-6520 14644,-7186 14289,-7003 14232,
 #: next_check_id: BER-2026
 #: by: https://www.entwicklungsstadt.de/neuer-radweg-zum-ber-ausbau-laeuft-hier-geht-er-lang/ (Fertigstellung: Frühjahr 2026)
 #: XXX Ausbau (Asphaltierung?) des Weges, wo genau?
+#: last_checked: 2026-04-19 (osm) vvv
 #: next_check: 2026-05-31 vvv
 Weg entlang des Flughafens: Schotterweg	Q2+ 16251,-6520 16859,-6263
 Weg entlang des Flughafens: unbefestigter Feldweg	Q3+ 16859,-6263 18365,-5657
 Weg entlang des Flughafens: Schotterweg	Q2+ 18365,-5657 18693,-5516 19638,-5134 19673,-5149
-#: next_check ^^^
 Weg entlang des Flughafens: unbefestigter Feldweg	Q3+ 19673,-5149 19813,-5070 19582,-4524 19529,-4494 19570,-4313 19651,-4039
+#: next_check ^^^
+#: last_checked ^^^
 Weg am Flughafen - Kiekebusch: Plattenweg	Q2 18693,-5516 18962,-5709
 #: by: mapillary
 unbefestigter Feldweg	Q2 18962,-5709 19859,-6278 19915,-6315
@@ -5450,7 +5452,6 @@ Arnold-Schönberg-Ring (Kleinmachnow): Asphalt	Q0 -1724,-329 -1715,-370 -1709,-40
 Zum Wetterhäuschen (Kleinmachnow): Verbundsteinpflaster	Q1 -1724,-329 -1753,-188
 Auf der Drift (Kleinmachnow): Kleinsteinpflaster	Q1- -1376,-296 -1416,-84
 Driftkamp (Kleinmachnow): Kleinsteinpflaster	Q1- -1376,-296 -1351,-424 -1324,-469
-#: by: osm
 Driftkamp (Kleinmachnow): Beton	Q0- -1324,-469 -1278,-514 -1224,-570
 Auf der Breite (Kleinmachnow): Kleinsteinpflaster	Q1- -1268,-294 -1309,-59
 Wilhelm-Külz-Weg (Kleinmachnow): Asphalt	Q0 -753,-86 -632,-172
@@ -5521,7 +5522,7 @@ Kirchstr. (Stahnsdorf): Asphalt	Q0 -2242,-1933 -2230,-1967 -2101,-2061 -2023,-21
 Heidestr.: unebenes Kleinsteinpflaster	Q2- -3908,-2723 -3725,-3032
 Heidestr.: Asphalt	Q0 -3725,-3032 -3687,-3099
 Heidestr.: unbefestigte Straße	Q2 -3687,-3099 -3612,-3219 -3576,-3283
-Heideplatz: Kopfsteinpflaster	Q2 -3687,-3099 -3623,-3058 -3577,-3058
+Heideplatz: Kleinsteinpflaster	Q2 -3687,-3099 -3623,-3058 -3577,-3058
 Waldstr.: Asphalt	Q0 -3687,-3099 -3723,-3196
 Am Wiesengrund: Asphalt	Q0 -3723,-3196 -3740,-3242 -3748,-3262 -3761,-3313 -3778,-3376 -3835,-3613
 Waltraudstr.: Kopfsteinpflaster	Q2 -4025,-3231 -4034,-3289 -3942,-3617
@@ -7360,6 +7361,10 @@ Bötzower Str. (Marwitz): Verbundsteinpflaster	Q1+ -7629,29497 -7628,29575 -7615,
 (Marwitz): Asphalt	Q0 -7615,29724 -7336,29727
 #: by: osm, mapillary
 (Marwitz): Kopfsteinpflaster	Q2- -7336,29727 -7333,29761
+Karolinenstr. (Stahnsdorf): Asphalt	Q0 -2335,-2745 -2288,-2771 -2229,-2743 -2197,-2747 -2144,-2843 -2132,-2870
+Am Weiher (Stahnsdorf): Asphalt	Q0 -2223,-2540 -2170,-2562 -2078,-2773 -2091,-2815 -2144,-2843
+Hermann-Scheidemann-Weg (Stahnsdorf): Asphalt	Q0 -2273,-2632 -2309,-2563 -2366,-2648
+Am Streuobsthang (Stahnsdorf): Asphalt	Q0 -2082,-2260 -2065,-2270 -2031,-2285
 ######################### User Contributions #################################
 #: by: osm vvv
 #: confirmed_by: mapillary

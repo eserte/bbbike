@@ -240,6 +240,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 ### Mariendorf ###
 # 
+#: next_check_id: ROEBLING-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf4dnag3yg2z (nur Kfz-Verkehr, bis November 2026 geplant)
 #: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 (bis 13.11.2026)
 #: last_checked: 2026-03-25
@@ -516,7 +517,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11155,12184 11278,121
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-05-23 vvv
+#: last_checked: 2026-05-30 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -566,7 +567,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-29
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung, entwicklungsstadt)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -649,7 +650,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://www.entwicklungsstadt.de/dauerbaustelle-in-berlin-mitte-umbau-der-charlottenstrasse-startet-spaeter/ (Beginn Ende 2026 oder sogar Anfang 2027)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-05-27 vvv
+#: last_checked: 2026-05-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="153698394" version="19"
@@ -810,7 +811,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 #: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
 #: note: im Zuge der Grimmstr. kann die Absperrung weggeschoben sein
-#: last_checked: 2026-05-18 vvv
+#: last_checked: 2026-05-30 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260312
@@ -901,7 +902,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],ex-W,re-ex-H)
-#: last_checked: 2026-05-18 (mapillary)
+#: last_checked: 2026-05-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
@@ -1238,20 +1239,6 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (beendet) --- #: last_checked: 2013-10-29 --- #: next_check: 2013-12-15 (laut Schild bis Dezember 2013) --- #: priority: #A --- Kriemhildstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 17337,12428 17320,12308
 # 
 ### Alt-Hohenschönhausen ###
-# 
-#: note: Halteverbotsschilder gelten bis zum 30.04.2026
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10329 (Antrag)
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10359 (Antrag)
-#: osm_watch: way id="1275438996" version="3"
-# REMOVED --- #: osm_watch: way id="1262014804" version="1"
-#: osm_watch: note 4126168 5
-#: osm_watch[closed]: note 4126169 1
-#: priority: #C
-#: last_checked: 2026-05-06
-#: check_frequency: 60d
-# REMOVED --- #: check_frequency: 120d
-# REMOVED --- #: next_check: 2026-04-30 (Halteverbotsschilder)
-Reichenberger Str.: etwa 80m der Fahrbahn gesperrt	q3-::inwork 15937,15134 16075,15069
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1053645.php (25. Februar 2021 - 16. April 2021) --- #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/bauarbeiten-kreuzung-gesperrt_a301644 --- #: source_id: 2147346907 (bis 16.4.2021) --- #: last_checked: 2021-03-25 (mapillary) vvv --- #: next_check: 2021-04-16 vvv --- #: valid: -20210416 vvv --- Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15856,14915 15944,14836 16033,14756 --- Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15878,14761 15944,14836 15977,14871 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17171,16372 17220,16320 17271,16280 17383,16197
@@ -2069,7 +2056,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="27"
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-30
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -5447,7 +5434,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-05-27 vvv
+#: last_checked: 2026-05-30 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-06-10 vvv
 # REMOVED --- #: valid: -20251219
@@ -7688,7 +7675,7 @@ Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Bei Sperrungen des Teltowkanaluferwegs ist hier die offizielle Umleitung für Fußgänger und *Radfahrer*, trotz Grünanlage.
-#: last_checked: 2026-05-09 vvv
+#: last_checked: 2026-05-30 (parallele Sperrung gesehen) vvv
 #: next_check: 2026-06-19 (VIZ-Verkehrsmeldung) vvv
 #: valid: !20250617-20260619
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065
