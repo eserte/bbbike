@@ -49,9 +49,14 @@ BEGIN {
     }
 }
 
+{
+    use POSIX qw(strftime);
+    use constant SKIP_DOWNLOAD_BBBIKE_ORG_BROKEN => "2026-06-01T16:00:00Z" gt strftime("%FT%TZ", gmtime) && 'download.bbbike.org hopefully only temporary broken';
+    plan skip_all => SKIP_DOWNLOAD_BBBIKE_ORG_BROKEN if SKIP_DOWNLOAD_BBBIKE_ORG_BROKEN;
+}
+
 check_network_testing;
 plan skip_all => "skip bbbike.org live tests" if $ENV{BBBIKE_TEST_SKIP_BBBIKE_ORG};
-
 
 #plan skip_all => 'Mysterious download fails' if $ENV{APPVEYOR}; # for example: https://ci.appveyor.com/project/eserte/bbbike/build/1.0.65#L270
 plan 'no_plan';
