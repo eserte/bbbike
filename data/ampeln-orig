@@ -59,14 +59,14 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 #: check_frequency: 60d
 Michaelbrücke	F::inwork 11676,11839
 # 
-#: next_check_id: KOENIGSHEIDEWEG-2025
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
-#: source_id: LMS-BR:383381/72 viz2021:13.482381,52.45217, (bis 31.01.2026) (bis 09.04.2026) (bis 30.05.2026) (inaktiv)
-#: last_checked: 2025-12-18 (VIZ)
-#: next_check: 2026-05-30 (VIZ)
-# REMOVED (setup "emergency" valid directive instead) --- #: valid: -20260530
-#: valid: -20261231
-Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
+# REMOVED --- #: next_check_id: KOENIGSHEIDEWEG-2025
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
+# REMOVED --- #: source_id: LMS-BR:383381/72 viz2021:13.482381,52.45217, (bis 31.01.2026) (bis 09.04.2026) (bis 30.05.2026) (inaktiv)
+# REMOVED --- #: last_checked: 2025-12-18 (VIZ)
+# REMOVED --- #: next_check: 2026-05-30 (VIZ)
+# REMOVED --- # REMOVED (setup "emergency" valid directive instead) --- #: valid: -20260530
+# REMOVED --- #: valid: -20261231
+# REMOVED --- Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
 # 
 #: next_check_id: HANNOVERSCHE-2025
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
@@ -144,8 +144,8 @@ Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::in
 #: note: an dieser Stelle gibt es keine Überfahrtmöglichkeit auf der Fahrbahn, nur auf dem Gehweg (gesehen: 2025-07-18, 2025-09-10, 2026-02-28)
 #: note: Anforderungsampel für Radfahrer in der Stubenrauchstr. Richtung NO
 #: off: 2024-09-10 Wed 11:25, 2026-02-28 Sat 13:27
-#: on: 2025-10-06 Mon 14:55
-#: last_checked: 2026-03-01 (mapillary)
+#: on: 2025-10-06 Mon 14:55, 2026-05-31 Sun 13:50
+#: last_checked: 2026-05-31
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage, kann ausgeschaltet sein	X::inwork 16461,2569
@@ -576,19 +576,19 @@ Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating 
 # 
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7596 (Antrag auf Verstetigung)
-#: last_checked: 2026-01-17
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-03-11
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-01-17
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-01-17
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
@@ -598,11 +598,11 @@ Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-05-03
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 Köpenicker Str./Hadubrandstr.	F::inwork 21055,8374
 #: note: anstelle des Zebrastreifens, also eigentlich südlich des eingetragenen Punktes
-#: last_checked: 2026-05-03
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 

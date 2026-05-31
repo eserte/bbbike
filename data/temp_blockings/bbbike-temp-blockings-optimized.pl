@@ -6284,7 +6284,7 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: osm_watch: way id="37861386" version="34"
 #: osm_watch: way id="1231148375" version="10"
 #: priority: #B
-#: last_checked: 2026-01-17
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-18 (nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -6445,14 +6445,14 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-16 vvv
+#: last_checked: 2026-05-30 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
-#: osm_watch: way id="4615467" version="38"
+#: osm_watch: way id="4615467" version="39"
 Margarete-Sommer-Str.	2::inwork 12874,13893 12802,13813 12707,13706
 #: note: bis zur Kniprodestr. gesperrt, allerdings könnte die Benutzung des Hochbords geduldet sein
-#: osm_watch: way id="175916784" version="20"
+#: osm_watch: way id="175916784" version="21"
 Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6550,7 +6550,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-05-28 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -7320,17 +7320,52 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
        {
          'data' => '#: next_check_id: WOLZIGERZEILE-2024
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/unterfuehrung-am-s-bahnhof-lichtenrade-ist-fertig_a419600
+#: by: https://dresdner-bahn.de/2019/05/ (Bahnübergang bleibt bis 2023)
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA2_Lichtenrade_Schichauweg-Stadtgrenze/20210716/
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ_dresdner_bahn_faq_20210604.pdf (Sperrung Mitte 2023, Eröffnung der Unterführung für Radfahrer im IV. Quartal 2023)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn (Frühjahr 2025 kann nicht gehalten werden, neues Datum wird noch bekanntgegeben)
+#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-bahnuebergangsarbeiten-bauzustandswechsel/ (nächster Wechsel am 8.12.2023)
+#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article242522652/Aufatmen-in-Lichtenrade-Bahnhofstrasse-bald-fuer-Verkehr-frei.html (Sperrung ab 1. Juli 2024)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240627 (Eröffnung im Frühjahr 2025 vorgesehen)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1460977.php
+#: by: https://www.berlin-dresden.de/bautagebuch.html (Frühjahr 2025)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,824421#msg-824421 (Verschiebung auf Sommer 2025)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22059.pdf (Verzögerungen, trotzdem Fertigstellung bis Sommer 2025)
+#: by: https://az-lichtenrade.de/neuigkeiten/neuigkeit-zur-sperrung-wolziger-zeile/
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/zeitplan?date=20250721 (kein Termin mehr)
+#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article409807736/dresdner-bahn-neue-ber-strecke-mit-schallschutz-teilt-berlin.html
+#: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html (Hoffnung auf eine Eröffnung im Winter 2025/2026)
+#: by: https://www.berliner-zeitung.de/mensch-metropole/start-der-dresdner-bahn-in-berlin-steht-bevor-bald-faehrt-erstmals-ein-ice-durch-lichtenrade-li.10004430 (vor Weihnachten 2025 werden die Treppen eröffnet, im April 2026 die Rampen)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1628173.php
+#: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
+#: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025) (inaktiv)
+#: note: laut Schild Fertigstellung 2024 (mittlerweile ist dieser Termin obsolet)
+#: XXX Rampe auf der östlichen Seite muss noch gebaut werden
+# REMOVED --- #: note: zukünftige Sperrung ist mittlerweile in temp_blockings eingetragen
+#: osm_watch: way id="22909864" version="33"
+# REMOVED --- #: osm_watch: node id="1650096479" version="8"
+#: osm_watch: way id="1168938182" version="14"
+# REMOVED --- #: osm_watch: way id="837927791" version="14"
+#: osm_watch: way id="1168938183" version="10"
+#: osm_watch: note 5094173 3
 #: osm_watch[closed]: note 4283578 4
-#: note: Schranke existiert noch, man kann als Radfahrer/Fußgänger noch halb-legal durch (Stand 2024-07-03) (mittlerweile komplett zu)
+#: also_indoor: search Wolziger_Zeile
+#: last_checked: 2026-04-29
+# REMOVED --- #: check_frequency: 14d (indoor research)
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung (muss aber vermutlich verlängert werden))
+# REMOVED --- #: next_check: 2025-09-20 (pardok, bahninfo)
+#: next_check: 2026-06-01 (DB website: Bauarbeiten bis Ende Mai 2026)
+	2::inwork 10307,-2633 10389,-2632 10405,-2638 10420,-2644
+# REMOVED (mittlerweile komplett zu) --- #: note: Schranke existiert noch, man kann als Radfahrer/Fußgänger noch halb-legal durch (Stand 2024-07-03)
 # REMOVED --- #: last_checked: 2024-09-21 (youtube)
 #	2::inwork 10382,-2598 10362,-2604 10307,-2633
-	2::inwork 10307,-2633 10389,-2632 10405,-2638 10420,-2644
 ',
          'from' => 1777318739,
          'id' => 4102,
-         'text' => 'Wolziger Zeile: Unterführung wegen Bauarbeiten voraussichtlich bis Ende Mai 2026 gesperrt',
+         'text' => 'Wolziger Zeile: Unterführung wegen Bauarbeiten voraussichtlich bis Ende Mai 2026 gesperrt, evtl. werden die Bauarbeiten verlängert',
          'type' => 'gesperrt',
-         'until' => 1780264799
+         'until' => undef
        },
        undef,
        undef,
@@ -7986,7 +8021,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
@@ -8286,7 +8321,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://www.aktives-adlershof.de/fileadmin/Interne_Dokumente/Projekte/Radickestra%C3%9Fe/20260415_Baunewsletter_Netzumstrukturierung_Treptow-K%C3%B6penick_14-1.pdf (Baustelle bleibt jedoch weiterhin eingerichtet)
 #: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen; 2026-04-18 Sat 12:32: Durchfahrt verboten, aber Bauzäune waren teilweise weggeschoben; Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
 #: also_indoor: traffic (no-T,G[nur Flemmingstr])
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-31 (weiterhin Sackgassenschild an der Langen Brücke sowie aus der Weite waren Absperrungen sichtbar) vvv
 #: check_frequency: 30d vvv
 Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
@@ -8298,7 +8333,7 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 30.04.2026) (bis 30.06.2026)
 #: note: Vollsperrung aufgrund Kabelgrube bis Ende Juni 2026
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-04-07 (traffic)
+#: last_checked: 2026-05-31
 # REMOVED --- #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-06-30 (website, VIZ-Verkehrsmeldung)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
@@ -8311,16 +8346,21 @@ Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
 # 
 #: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
 #: also_indoor: traffic (T,no-G,no-W)
-#: last_checked: 2026-04-18
-#: next_check: 2026-06-01
+#: last_checked: 2026-05-31
+#: check_frequency: 14d
+# REMOVED ---  #: next_check: 2026-06-01
 Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
+# 
+#: last_checked: 2026-05-31
+Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
 # 
 #: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
 #: also_indoor: traffic (T,no-G,no-W)
-#: note: nur ein Teilabschnitt, deshalb q4->q3
-#: last_checked: 2026-04-18
-#: next_check: 2026-06-01
-Thomas-Müntzer-Str.: an der Radickestr. gesperrt	q3::inwork 20149,3617 20299,3435
+#: note: nur ein Teilabschnitt, deshalb q4->q3; am 2026-05-31 Sun 13:31 war die Durchfahrt nur offiziell gesperrt, Absperrungen weggeschoben, keine sichtbaren Bauarbeiten
+#: last_checked: 2026-05-31
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2026-06-01
+Thomas-Müntzer-Str.: an der Radickestr. offiziell gesperrt	q3::inwork 20149,3617 20299,3435
 # 
 #: note: Grube offen bis Ende Juni 2026
 #: also_indoor: traffic (none)
@@ -8339,7 +8379,7 @@ Lohnauer Steig: möglicherweise gesperrt, genaue Lage unklar	q4::inwork 20790,411
 # REMOVED --- Gellertstr.: Anbindung an die Radickestraße gesperrt	q3::inwork 20148,3490 20237,3392
 # REMOVED --- Thomas-Müntzer-Str.: Anbindung an die Radickestraße gesperrt	q3::inwork 20149,3617 20299,3435
 # REMOVED --- #: next_check: 2025-07-15
-# REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20862,3824 20776,3753
+# REMOVED --- #: note: mittlerweile (2025-05-07) zwischen Wassermannstraße und Zinsgutstraße als "abgeschlossen" bezeichnet, aber der nächste Bauabschnitt enthält auch diesen Abschnitt? --- Radickestr. zwischen Zinsgutstr. und Wassermannstr.	q4::inwork 20861,3814 20835,3795 20776,3753
 # REMOVED --- #: note: ab 28.07.2025, genauer Abschnitt unklar --- Wassermannstr.	q4::inwork 20637,3919 20776,3753
 # REMOVED --- #: note: 2. Abschnitt hinter der Dörpfeldstraße ab 01.09.2025 --- Wassermannstr. (nördlich der Dörpfeldstraße)	q4::inwork 20637,3919 20583,3983
 # REMOVED --- #: note: im Text "Höhe Handjerystraße bis Höhe Zinsgutstraße", hier nur bis Wassermannstraße, siehe oben --- Radickestr.	q4::inwork 20683,3693 20776,3753
@@ -8349,8 +8389,8 @@ Lohnauer Steig: möglicherweise gesperrt, genaue Lage unklar	q4::inwork 20790,411
 # REMOVED (Abgeschlossen) --- #: note: Beginn voraussichtlich ab dem 28.04.2025 (aber wo genau?); mittlerweile: Absperrung bereits erfolgt. Termin für Start Baumaßnahme folgt; mittlerweile: Maßnahmen ab dem 10.06.2025 fortgesetzt; mittlerweile: Bauende voraussichtlich am 04.08.2025 --- Wünschelburger Gang	q4::inwork 21008,4275 20917,4261 20850,4225 20829,4211
 # REMOVED (abgeschlossen) --- #: note: Beginn voraussichtlich ab dem 07.05.2025 (aber wo genau?); verlängert bis 08.08.2025; verlängert bis 19.09.2025 --- # REMOVED (hier nicht) --- Freystadter Weg	q4::inwork 21046,4173 21017,4220 21008,4275 --- Freystadter Weg	q4::inwork 21008,4275 20981,4628 20981,4696 20994,4761
 # REMOVED (abgeschlossen) --- #: note: Temporäre Baustelleneinrichtungsfläche bis 26.09.2025, nun bis Ende Oktober 2025, nun bis Anfang 2026 --- Lohnauer Steig	q4::inwork 20614,4381 20770,4277 20829,4211 20852,4157 20790,4114
-# REMOVED (mittlerweile: abgeschlossen mit Freigabe) --- #: note: Beginn ab dem 19.05.2025 (aber wo genau?); mittlerweile ab 02.06.2025 --- Zinsgutstr.	q4::inwork 20679,3944 20862,3824
-# REMOVED (hier nicht) --- Zinsgutstr.	q4::inwork 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
+# REMOVED (mittlerweile: abgeschlossen mit Freigabe) --- #: note: Beginn ab dem 19.05.2025 (aber wo genau?); mittlerweile ab 02.06.2025 --- Zinsgutstr.	q4::inwork 20679,3944 20845,3825 20861,3814
+# REMOVED (hier nicht) --- Zinsgutstr.	q4::inwork 20861,3814 20919,3781 21049,3657 21119,3572 21156,3477
 # REMOVED ("Kabeltiefbau abgeschlossen") --- #: note: laut Haltestellenschilder vom 21.05.2025 07 Uhr bis 24.07.2025 17 Uhr; laut Website Verkehrsfreigabe am 08.08.2025 --- Flemmingstr.	q4::inwork 21848,4882 21726,4537 --- #: note: hier war die Fahrbahn bereits am 20.05.2025 gesperrt --- Flemmingstr. (Sackgassenabschnitt)	q4::inwork 21848,4882 21856,4910
 # REMOVED (abgeschlossen) --- #: note: wo genau? --- Selchowstr.	q4::inwork 20790,4114 20583,3983 20380,3855
 # REMOVED --- #: next_check ^^^
@@ -8695,25 +8735,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: FUNKWERK-2025
-#: also_indoor: traffic (re-G,no-T)
-#: note: am 2025-07-19 (Sa) war die Durchfahrt problemlos möglich, am 2025-08-27 (Mi) nachmittags auch; am 2025-12-06 (Sa) war die Fahrbahn gesperrt, aber der Bürgersteig war leer; am 2026-04-18 Sat 12:16 nur auf der östlichen Seite ein Durchfahrt-verboten-Schild, keine Barrieren
-#: note: Halteverbotsschilder bis 19.12.2025, scheint aber noch viel zu tun zu sein; es gibt nun in der Nähe Halteverbotsschilder bis 17.5.2026
-#: add_fragezeichen: Besteht die Sperrung der Charlottenstr. noch immer?
-#: last_checked: 2026-05-22 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-12-19 (Halteverbotsschilder)
-# REMOVED (hier nicht mehr) ---	q4::inwork 22456,3889 22538,3889
-	q3::inwork 22538,3889 22666,3888
-',
-         'from' => 1750888800,
-         'id' => 4379,
-         'text' => 'Charlottenstr.: Fahrbahn zwischen Karlstr. und Wendenschloßstr. kann gesperrt sein (aber evtl. außerhalb der Arbeitszeiten Durchfahrt möglich), Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -8968,7 +8990,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-30 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -8996,7 +9018,7 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
        {
          'data' => '#: next_check_id: MUSSEHL-2025
 #: also_indoor: traffic (G,ex-re-T,W)
-#: osm_watch: way id="722008943" version="16"
+#: osm_watch: way id="722008943" version="17"
 #: osm_watch: way id="722013098" version="16"
 #: osm_watch: way id="1350756367" version="5"
 #: osm_watch: note 5124809 1
@@ -9163,17 +9185,19 @@ Südparkbrücke: Neubau	2::inwork -4048,12107 -4033,12108
        {
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
 #: also_indoor: traffic (no-G,T,H,no-W) vvv
-#: last_checked: 2026-04-18 vvv
-#: next_check: 2026-05-31 (BA-Seite) vvv
-Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
-Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer	q4::inwork; 18445,2642 18374,2971
-#: next_check ^^^
+#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
+#: last_checked: 2026-05-31 vvv
+# REMOVED --- #: next_check: 2026-05-31 (BA-Seite) vvv
+Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q4::inwork; 18374,2971 18445,2642
+# REMOVED (Durchgang/fahrt möglich) --- Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 #: also_indoor ^^^
 ',
          'from' => 1759615200,
          'id' => 4457,
-         'text' => 'Auf dem Oktogon/Hermann-Dorner-Allee: Einschränkungen und Sperrungen wegen Bauarbeiten, vom 6.10.2025 bis voraussichtlich Mai 2026, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Hermann-Dorner-Allee: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9199,44 +9223,7 @@ Schlegelstr.: Anbindung Chaussestr. unterbrochen	q3::inwork 9044,13711 9231,1384
          'until' => 1780696799
        },
        undef,
-       {
-         'data' => '#: next_check_id: KOENIGSHEIDEWEG-2025
-#: by: https://www.tagesspiegel.de/berlin/brandanschlag-von-linksextremisten-im-sudosten-berlins-reparaturen-nach-langstem-stromausfall-der-nachkriegszeit-konnten-bis-2026-dauern-14310101.html
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2tnjk27qs22
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib6xakrcudbjnss6lcxcjqe6l7riqscbfw7jqibwzw2vtetkhm7kq@jpeg
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifikftud5lbc4zhtz5kjrx4fyvomsalwvil26zy5ff6mpmqnqf7tm@jpeg
-#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8147 (Antrag zum Durchgangsverkehr im Ligusterweg)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1614485.php (Busverkehr ab dem 10.11.2025 wieder möglich)
-#: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251218
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdhvspimr22s
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreify53suk5ojkyl7r3nzqjul2mglb7crtmdfajwvq3bh7rutlzwige@jpeg
-#: source_id: LMS-BR:383381/72 viz2021:13.47542,52.45622, (bis 30.09.2025) (bis 06.10.2025) (bis 10.10.2025) (bis 31.10.2205) (inaktiv) (bis 07.11.2025) (bis 19.12.2025) (inaktiv) (bis 30.01.2026) (bis 09.04.2026) (bis 30.05.2026) (inaktiv)
-#: source_id: LMS-BR:397585/72 viz2021:13.48238,52.45217,30.01.2026,10:00 (bis 09.04.2026) (bis 30.05.2026) (inaktiv)
-#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_299151 (bis 2025-11-10)
-#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_306984 (bis 2025-11-21)
-#: source_id[inactive]: bvg2024:265#HIM_FREETEXT_322378 (Umleitung des Busverkehrs via Südostallee - Kiefholzstr.)
-#: note: Busse können am Streckenposten vorbei passieren, Radfahrer nicht; Umweg über den Späthsfelder Weg beträgt 100m, Bürgersteigstrecke 230m
-#: note: offizielle Umleitungsstrecke für den Radverkehr über Johannisthaler Chaussee - Alpenrosenweg - Mahonienweg
-#: XXX laut stromnetz-Seite ab 2026-01-30 ist der Königsheideweg wieder komplett gesperrt (-> ampel entfernen, temp blocking erweitern), voraussichtlich bis 2025-04-09
-#: also_indoor: traffic (ex-T,G,ex-H,ex-W)
-#: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2026-05-10 vvv
-# REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2026-05-30 (VIZ) vvv
-Späthsfelder Weg	q4::inwork 15870,5251 15828,5156
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-# REMOVED (wieder offen) --- Königsheideweg	q4::inwork 15807,5286 15870,5251 16062,5242
-',
-         'from' => 1769554800,
-         'id' => 4466,
-         'prewarn_days' => 2,
-         'text' => 'Späthsfelder Weg: Sperrung der Fahrbahn vor dem Königsheideweg, Umwege, voraussichtlich bis Ende Mai 2026',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
@@ -9433,10 +9420,10 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/sellerstra%C3%9Fe-1-15-errichtung-und-b%C3%BCro-und-laborgeb%C3%A4udes.1506/#post-26917
 #: osm_watch: way id="1080985512" version="16"
-#: osm_watch: way id="1409889274" version="13"
+#: osm_watch: way id="1409889274" version="14"
 #: osm_watch: way id="1430307301" version="5"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-05-18 (mapillary) vvv
+#: last_checked: 2026-05-30 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 # REMOVED (mittlerweile wieder offen, wegen der Bauarbeiten an der Nordhafenbrücke) ---	2::inwork 7662,14579 7696,14577 7733,14570
@@ -9458,7 +9445,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: note: Halteverbotsschilder bis 30.04.2026
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
 #: add_fragezeichen: Wann sie die Bauarbeiten beendet?
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2026-04-30 (Halteverbotsschilder) vvv
 Hönower Str.: Einbahnstraßenregelung	q4::inwork; 18660,9410 18735,9421
@@ -9585,7 +9572,7 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/frost-posse-in-babelsberg-busse-fahren-wochenlang-umleitung--trotz-verschobener-baustelle-15213887.html
 # REMOVED --- #: last_checked: 2026-02-25 (mapillary)
 #: osm_watch: way id="10612721" version="23"
-#: osm_watch: way id="1221275926" version="8"
+#: osm_watch: way id="1221275926" version="9"
 August-Bebel-Str.	q4::inwork -8444,-1691 -8469,-1541
 #: osm_watch: way id="24969126" version="17"
 August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
@@ -10401,17 +10388,7 @@ Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,
          'until' => 1787162400
        },
        undef,
-       {
-         'data' => '#: also_indoor: url https://www.berlin.de/events/5984720-2229501-choriner-kiez-und-strassenfest.html
-#: source_id: LMS-BR:410154/72 viz2021:13.40816,52.53431,30.05.2026,08:00 (bis 31.05.2026)
-	2::temp 10629,14299 10864,14692
-',
-         'from' => 1780005600,
-         'id' => 4598,
-         'text' => 'Choriner Straße: Veranstaltung (Choriner Straßenfest), möglicherweise keine Durchfahrt möglich, 30.5.2026 8 Uhr bis 31.5.2026 16 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1780236000
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: LMS-BR:407048/72 viz2021:13.337175,52.494029,04.05.2026,07:00 (bis 03.07.2026)
@@ -10446,7 +10423,7 @@ Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,
 ',
          'from' => 1778385600,
          'id' => 4604,
-         'text' => 'Glockenblumenweg: Bauarbeiten zwischen Angelikaweg und Schneeballenweg, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 11.05.2026 06:00 bis 05.06.2026 17:00',
+         'text' => 'Glockenblumenweg: Bauarbeiten zwischen Angelikaweg und Schneeballenweg, Sperrung, offiziell ist auch der Radverkehr betroffen, vom 11.05.2026 06:00 bis 05.06.2026 17:00',
          'type' => 'handicap',
          'until' => 1780671600
        },
@@ -10643,6 +10620,17 @@ Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 1744
          'text' => 'Manteuffelstr.: Leitungsarbeiten, zwischen Reichenberger Str. und Skalitzer Str. gesperrt, ab 1.6.2026 bis Anfang August 2026',
          'type' => 'handicap',
          'until' => 1785621599
+       },
+       {
+         'data' => '#: source_id: bvg2024:63#d7b857e0-54a9-468f-bfaa-68b6009dbb47 (bis 2026-06-15)
+#: note: offizielle Umleitung via Pablo-Neruda-Str., am 2026-05-31 Sun 12:18 konnte man an der Haltestelle mit dem Rad passieren
+	2::inwork 23368,3894 22965,4124
+',
+         'from' => 1780178400,
+         'id' => 4619,
+         'text' => 'Müggelheimer Damm: der Geh- und Radweg kann in Höhe Haltestelle Krankenhaus Köpenick/Südseite gesperrt sein, voraussichtlich bis 15.06.2026',
+         'type' => 'gesperrt',
+         'until' => 1781488800
        }
      
 );

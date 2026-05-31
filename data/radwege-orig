@@ -1446,7 +1446,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-05-22 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
@@ -1842,11 +1842,11 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="823635969" version="32"
+#: osm_watch: way id="823635969" version="33"
 #: osm_watch: way id="4615746" version="58"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-05-27 vvv
+#: last_checked: 2026-05-30 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1929,7 +1929,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2026-01-17 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -3330,7 +3330,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-05-22 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3358,7 +3358,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-05-22
+#: last_checked: 2026-05-31
 #: check_frequency: 30d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4726,8 +4726,8 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/protokoll_5_mobilitaetsrat_070126.pdf (Erwähnung)
 #: by: https://www.infravelo.de/projekt/dammweg/ (1. Quartal 2026 - 2. Quartal 2026)
-#: XXX Verlegung der RVA zwischen Widderstraße und der Sonnenallee auf die Fahrbahn
-#: last_checked: 2026-04-29 (aktuell Bauarbeiten)
+#: XXX Verlegung der RVA zwischen Widderstraße und der Sonnenallee auf die Fahrbahn; aktuell Arbeiten zwischen Aronsstr. und Sonnenallee
+#: last_checked: 2026-05-31
 #: check_frequency: 30d
 #: next_check: 2026-06-30 (infravelo)
 abgesperrter Radweg, alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg	RW0; 14853,7451 14775,7385
@@ -4758,7 +4758,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -5394,6 +5394,15 @@ Verbundsteinpflaster	RW1; 22724,6608 22675,6498 22645,6431
 schmaler Unterstreifen gegen parkende Autos, Beton	RW1; 22645,6431 22534,6249
 Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857,6155
 	RW1;RW1 21979,5208 22023,5160 22033,5148 22078,5093 22101,5064 22128,5003
+# 
+#: next_check_id: ALTSTADTKOEPENICK-2024
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
+#: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, (bis 20.05.2026) (bis 29.06.2026)
+#: last_checked: 2026-05-31
+#: next_check: 2026-06-29
+#: valid: -20260629
+gemeinsamer Geh- und Radweg während der Bauarbeiten	RW2;RW2 22128,5003 22133,4986 22154,4923 22196,4847
+# 
 Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
 	RW1; 27189,5169 27097,5108 26971,5025 26620,4936
 	RW2;RW2 21332,4655 21390,4637
@@ -6899,7 +6908,10 @@ asphaltiert, relativ breit	RW2; 17648,5338 17695,5394 17736,5441
 #: note: für rechtsabbiegende Radfahrer gibt es am Anfang ein paar Meter Radspur
 Fahrradschleuse	RW3; 17845,5546 17886,5587
 asphaltiert, relativ breit	RW2; 17736,5441 17695,5394 17648,5338
-asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642
+asphaltiert	RW1; 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971
+#: historical_note: früher asphaltierter Hochbordradweg, RW1;
+	RW3; 18374,2971 18445,2642
+asphaltiert	RW1; 18445,2642 18374,2971 18347,3129 18395,3176 18511,3290 18624,3402 18689,3465 18755,3531 18836,3611 18860,3634 18930,3703
 asphaltiert	RW1;RW2 18445,2642 18338,2669
 # 
 # REMOVED --- #: next_check_id: EISENHUTWEG-2019 --- #: XXX wann wird der Zweirichtungsradweg wieder aufgehoben? --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628311&postcount=221 --- #: by: https://brain-box-berlin.com/ (ab Frühjahr 2020 fertig) --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/am-eisenhutweg-ging-mitte-september-der-richtkranz-hoch_a232741 (bis Mitte 2020) --- #: by: https://www.deutsches-architekturforum.de/thread/4728-wista-wissenschafts-und-wirtschaftsstandort-adlershof/?postID=654941#post654941 --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/2021-sollen-die-ersten-mieter-in-der-brain-box-berlin-einziehen_a285574 --- #: last_checked: 2020-10-04 --- #: check_frequency: 45d
@@ -6912,7 +6924,7 @@ Verbundsteinpflaster	RW1;RW1 18445,2642 18484,2471
 asphaltiert	RW1;RW1 19661,3421 19585,3499 19491,3597 19363,3730 19162,3935
 	RW3; 19162,3935 19130,3969
 	RW6;RW6 19331,3098 19417,3184
-	RW6;RW6 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18196,2974 18199,2960 18156,2912 18014,2830
+	RW6;RW6 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18189,2974 18176,2925 18156,2912 18014,2830
 	RW6;RW6 18156,2912 18007,3066 17890,3204
 	RW6;RW6 18057,3117 18007,3066 17910,3004
 	RW6;RW6 7669,5536 7621,5494 7570,5508 7506,5482
@@ -7595,7 +7607,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: last_checked: 2026-01-17
+#: last_checked: 2026-05-31
 #: check_frequency: 150d
 	RW0; 22365,6149 22467,6135
 # 
@@ -8417,7 +8429,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
-#: last_checked: 2026-03-01 (mapillary) vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: note: Stubenrauchstr. Richtung Nordosten

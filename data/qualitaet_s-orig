@@ -1260,7 +1260,7 @@ Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905
 Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX nach den Bauarbeiten wird vermutlich der provisorische Asphalt entfernt; dann wieder "Kopfsteinpflaster, Q2" vvv
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-31 vvv
 #: next_check: 2027-03-31 vvv
 Alter Markt: Asphalt	Q0 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Asphalt	Q0 22390,4702 22388,4737 22377,4836
@@ -3980,7 +3980,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="5"
 #: priority: #C
-#: last_checked: 2026-04-29
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -4342,7 +4342,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
-#: last_checked: 2026-04-18
+#: last_checked: 2026-05-31
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -4920,7 +4920,7 @@ Schwarzschildstr.: Asphalt	Q0 18749,2672 18759,2592
 Bendemannstr.: Asphalt	Q0 18644,2582 18759,2592 18941,2609
 North-Willys-Str.: Asphalt	Q0 18637,2660 18644,2582 18656,2465
 James-Franck-Str.: Asphalt	Q0 18637,2660 18628,2750 18601,2971 18540,3040 18395,3176
-(James-Franck-Str. - Arthur-Müller-Str.): Asphalt	Q0 18601,2971 18583,2972 18390,2972 18374,2971 18361,2972 18229,2973 18220,2973 18196,2974
+(James-Franck-Str. - Arthur-Müller-Str.): Asphalt	Q0 18601,2971 18583,2972 18390,2972 18374,2971 18361,2972 18229,2973 18220,2973 18189,2974
 Ernst-Lau-Str.: Asphalt	Q0 18766,3260 18651,3148 18540,3040
 Barbara-McClintock-Str.: Asphalt	Q0 18804,2991 18716,3082 18651,3148 18511,3290
 Melli-Beese-Str.: Asphalt	Q0 17762,3243 17825,3280 17827,3549 17832,3740 17880,3963
@@ -5784,7 +5784,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (vom 27. Februar 2022: Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="17"
-#: last_checked: 2026-03-11
+#: last_checked: 2026-05-31
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -6554,7 +6554,10 @@ Worbiser Str.: unbefestigt	Q2 17907,14904 17958,14920
 Zadekstr.: Kopfsteinpflaster	Q2 14550,3625 14468,3484
 Sprosserweg: Beton	Q0- 14865,3068 14933,3158
 Angelikaweg: Gehwegplatten	Q0- 15459,2921 15537,3026
-Glockenblumenweg: Asphalt/Beton	Q0- 15213,3541 15373,3403 15500,3299 15660,3177 15808,3063 15883,3006 15989,2923
+Glockenblumenweg: Asphalt/Beton	Q0- 15213,3541 15373,3403 15500,3299 15660,3177
+#: historical_note: früher (vor Mai 2026) Asphalt/Beton, Q0-
+Glockenblumenweg: Asphalt	Q0 15660,3177 15808,3063
+Glockenblumenweg: Asphalt/Beton	Q0- 15808,3063 15883,3006 15989,2923
 Glockenblumenweg: Asphalt	Q0 15989,2923 16164,2790 16260,2717
 #: note: nur ein kurzer Betonabschnitt auf einer Seite
 Glockenblumenweg: Asphalt	Q0 16260,2717 16461,2569
@@ -18098,7 +18101,8 @@ Kühlebornweg: Asphalt	Q0 5007,4705 5075,4600 5165,4667
 #: confirmed_by: Alexander Lucas, srt vvv
 #: note: in diesem Abschnitt mit einigen flachen Asphaltflicken, aber immer noch Q0
 Radickestr.: Asphalt	Q0 20064,3278 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572
-Radickestr.: Asphalt	Q0 20499,3572 20592,3633 20683,3693 20776,3753 20862,3824
+Radickestr.: Asphalt	Q0 20499,3572 20592,3633 20683,3693 20776,3753 20835,3795 20861,3814
+Radickestr.: Asphalt	Q0 20845,3825 20835,3795
 #: confirmed_by ^^^
 #: by ^^^
 # 
@@ -18825,7 +18829,7 @@ Lüdenscheider Weg: Beton	Q0- -1037,15482 -1371,15293 -1389,15285
 #: by: Claudia (loest): vvv
 #: confirmed_by: Alexander Lucas: vvv
 #: corrected_by: srt (Asphalt -> ...)
-Zinsgutstr.: Beton	Q0- 20679,3944 20862,3824 20919,3781 21049,3657
+Zinsgutstr.: Beton	Q0- 20679,3944 20845,3825 20861,3814 20919,3781 21049,3657
 #: confirmed_by: srt
 Zinsgutstr.: Asphalt	Q0 21049,3657 21119,3572 21156,3477
 #: confirmed_by ^^^
@@ -23208,7 +23212,8 @@ Hallichpromenade: guter Asphalt	Q0 5304,20630 5335,20615 5388,20606
 # 
 #: by: Bernd Honsa: vvv
 Wrightallee: Asphalt	Q0 17887,3285 17892,3537 17892,3550 17896,3738
-Arthur-Müller-Str.: Asphalt	Q0 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18196,2974 18199,2960 18156,2912 18014,2830
+#: confirmed_by: srt
+Arthur-Müller-Str.: Asphalt	Q0 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18189,2974 18176,2925 18156,2912 18014,2830
 #: by: ^^^
 # 
 #: by: Michael Lietz:
@@ -32637,7 +32642,7 @@ Johannes-Zoschke-Str.: mäßiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/ausbau-der-rheinpfalzallee-sollte-laut-spd-dringend-in-die-investitionsplanung_a391367
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10879 (Vorlage zur Kenntnisnahme: Prüfung des versickerungsfähigen Pflasters)
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2025-03-01 vvv
 #: confirmed_by: srt

@@ -1036,7 +1036,7 @@ Straßentunnel	3nocross::ignrte 7901,13324 7895,13415 7907,13532
 Minna-Cauer-Str. -> Lehrter Str.: Straßentunnel	3::igndisp 7901,13324 7895,13415 7873,13448
 Lehrter Str. -> Minna-Cauer-Str.: Straßentunnel	3::igndisp 7873,13448 7895,13415 7907,13532
 Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
-Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
+Eisenhutweg [Wohngebiet]	1 17741,2824 17688,2744 17471,2872 17569,2987
 Puschkinstr. [Nebenstraße]	1s 14152,9746 14092,9773
 Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung	1s 2706,9108 2674,9111
 (Gethsemanestr.)	1 11191,15810 11204,15838 11225,15828 11210,15798 11191,15810
@@ -3609,6 +3609,7 @@ Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp
 Windenweg -> Stubenrauchstr.: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16382,2464
 Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16342,2338
 Glockenblumenweg: Einbahnstraße	1s:inwork 16461,2569 16260,2717
+Petunienweg: Einbahnstraße	1s:inwork 16635,2796 16541,2866
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
 neben der Minna-Todenhagen-Brücke: Sperrung der Rampe und Treppe	2::inwork 16997,7057 16849,6902 16775,6813 16747,6813
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539

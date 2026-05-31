@@ -125,7 +125,7 @@ Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX Einbahnstraßenregelung temporär aufgehoben
-#: last_checked: 2026-04-18
+#: last_checked: 2026-05-31
 #: check_frequency: 120d
 #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
@@ -1522,7 +1522,7 @@ Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 #: next_check_id: HOENOWERWEG-2025
 #: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
-#: last_checked: 2026-05-03
+#: last_checked: 2026-05-31
 #: check_frequency: 90d
 #: next_check: 2027-02-28
 Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
@@ -1763,8 +1763,8 @@ Minna-Cauer-Str.: Straßentunnel	3nocross 7901,13324 7895,13415 7907,13532
 # 
 Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
 # 
-#: note: vermutlich als "unechte Einbahnstraße" gedacht, nur ein Einfahrt-verboten-Schild am nordwestlichen Ende
-Eisenhutweg [Wohngebiet]	1 17569,2987 17471,2872 17688,2744 17741,2824
+#: historical_note: früher: vermutlich als "unechte Einbahnstraße" gedacht, nur ein Einfahrt-verboten-Schild am nordwestlichen Ende; mittlerweile wurde die Einbahnstraße "echt" gemacht und umgesdreht
+Eisenhutweg [Wohngebiet]	1 17741,2824 17688,2744 17471,2872 17569,2987
 # 
 #: note: "Einfahrt verboten" wird nicht mehr wiederholt, unechte Einbahnstraße
 Puschkinstr. [Nebenstraße]	1s:q4 14152,9746 14092,9773
@@ -4312,11 +4312,12 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: STUBENRAUCH-2025
-#: last_checked: 2026-02-28 vvv
+#: last_checked: 2026-05-31 vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 Stubenrauchstr./Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross 16242,2279 16306,2364 16382,2464
 #: historical_note: am Anfang kurze unechte Einbahnstraße und Einfahrt verboten
 Glockenblumenweg: Einbahnstraße	1s:q2:inwork 16461,2569 16260,2717
+Petunienweg: Einbahnstraße	1s:q3:inwork 16635,2796 16541,2866
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -4353,7 +4354,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-05-30
+#: last_checked: 2026-05-31
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4536,7 +4537,7 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg; mittlerweile (2024-12-13) ist die Straße kaum noch erkennbar
 #: priority: #C
-#: last_checked: 2026-03-22 (luftbildsuche)
+#: last_checked: 2026-05-31
 #: check_frequency: 180d
 Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
@@ -4617,7 +4618,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-05-18 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
@@ -4680,7 +4681,7 @@ Lisa-Fittko-Str.: Hochbauarbeiten, Weg existiert im südlichen Abschnitt noch nic
 #: next_check_id: PLANSTRASSE9-2023
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: osm_watch: way id="20420585" version="37"
-#: last_checked: 2026-03-01
+#: last_checked: 2026-05-31
 #: check_frequency: 90d
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
@@ -4740,7 +4741,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 # REMOVED (bis zum Knick offen) --- #: next_check_id: MARIENUFER-2023 --- #: osm_watch: way id="1272560911" version="2" --- #: last_checked: 2025-07-19 --- #: check_frequency: 90d --- #: next_check: 2026-12-31 (entwicklungsstadt) --- # REMOVED (hier nicht mehr) --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22470,3109
 # 
 #: next_check_id: MARIENUFER-2023
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-05-31 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1069273104" version="6"

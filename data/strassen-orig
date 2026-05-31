@@ -2826,7 +2826,7 @@ Schwarzschildstr.	N 18759,2592 18749,2672 18736,2764 18722,2902 18716,2966
 Bendemannstr.	N 18644,2582 18759,2592 18941,2609
 North-Willys-Str.	N 18637,2660 18644,2582 18656,2465
 James-Franck-Str.	N 18637,2660 18628,2750 18601,2971 18540,3040 18395,3176
-(James-Franck-Str. - Arthur-Müller-Str.)	NN 18601,2971 18583,2972 18390,2972 18374,2971 18361,2972 18229,2973 18220,2973 18196,2974
+(James-Franck-Str. - Arthur-Müller-Str.)	NN 18601,2971 18583,2972 18390,2972 18374,2971 18361,2972 18229,2973 18220,2973 18189,2974
 Barbara-McClintock-Str.	N 18804,2991 18716,3082 18651,3148 18511,3290
 Ernst-Lau-Str.	N 18766,3260 18651,3148 18540,3040
 Braunschweiger Ufer	NN 12136,5628 12150,5640 12568,5794 12722,5831 13077,5893 13483,5973
@@ -6486,7 +6486,7 @@ Hackenbergstr.	N 20428,3786 20380,3855 20329,3928 20280,3996 20253,4034 20248,40
 Handjerystr. (Adlershof)	N 20972,3334 20906,3433 20833,3519 20683,3693 20546,3865
 Rudower Chaussee	H 19904,3464 19840,3423 19728,3351 19598,3212 19574,3186 19501,3101 19475,3074 19426,3024 19417,3015 19324,2939 19242,2876 19206,2848 19111,2777 19071,2746 18934,2703 18749,2672 18637,2660 18445,2642
 Straße am Flugplatz	N 17522,3653 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
-Arthur-Müller-Str.	N 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18196,2974 18199,2960 18156,2912 18014,2830
+Arthur-Müller-Str.	N 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18189,2974 18176,2925 18156,2912 18014,2830
 (Arthur-Müller-Str. - Wolfgang-Harlan-Str.)	NN 17942,3205 17943,3282
 Hugo-Junkers-Str.	N 18156,2912 18007,3066 17890,3204
 #: note: Die richtige Schreibweise ist "Fokkerstr.", und es gibt tatsächlich ein Schild, wo es so geschrieben ist, auf allen anderen steht fälschlicherweise "Fokker-Str."
@@ -11370,45 +11370,10 @@ Goltzstr. (Lichtenrade)	N 10983,-2116 10763,-2276 10642,-2371 10563,-2432 10454,
 Rehagener Str.	N 10657,-2639 10648,-2547 10638,-2452 10642,-2371 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10765,-1860
 Klausdorfer Weg	N 10505,-2552 10648,-2547 10833,-2544 10989,-2543
 Rohrbachstr.	N 9658,-2640 9658,-2419 9650,-2135
-# REMOVED (früher bis 1.7.2024 Bahnübergang) --- Wolziger Zeile	N 10382,-2598 10362,-2604 10307,-2633
 # 
-#: next_check_id: WOLZIGERZEILE-2024
-#: by: https://dresdner-bahn.de/2019/05/ (Bahnübergang bleibt bis 2023)
-#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA2_Lichtenrade_Schichauweg-Stadtgrenze/20210716/
-#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ_dresdner_bahn_faq_20210604.pdf (Sperrung Mitte 2023, Eröffnung der Unterführung für Radfahrer im IV. Quartal 2023)
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn (Frühjahr 2025 kann nicht gehalten werden, neues Datum wird noch bekanntgegeben)
-#: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/bauvorhaben-dresdner-bahn-bahnuebergangsarbeiten-bauzustandswechsel/ (nächster Wechsel am 8.12.2023)
-#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article242522652/Aufatmen-in-Lichtenrade-Bahnhofstrasse-bald-fuer-Verkehr-frei.html (Sperrung ab 1. Juli 2024)
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20240627 (Eröffnung im Frühjahr 2025 vorgesehen)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1460977.php
-#: by: https://www.berlin-dresden.de/bautagebuch.html (Frühjahr 2025)
-#: by: https://www.bahninfo-forum.de/read.php?9,578649,824421#msg-824421 (Verschiebung auf Sommer 2025)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-22059.pdf (Verzögerungen, trotzdem Fertigstellung bis Sommer 2025)
-#: by: https://az-lichtenrade.de/neuigkeiten/neuigkeit-zur-sperrung-wolziger-zeile/
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/zeitplan?date=20250721 (kein Termin mehr)
-#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article409807736/dresdner-bahn-neue-ber-strecke-mit-schallschutz-teilt-berlin.html
-#: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html (Hoffnung auf eine Eröffnung im Winter 2025/2026)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/start-der-dresdner-bahn-in-berlin-steht-bevor-bald-faehrt-erstmals-ein-ice-durch-lichtenrade-li.10004430 (vor Weihnachten 2025 werden die Treppen eröffnet, im April 2026 die Rampen)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1628173.php
-#: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
-#: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025) (inaktiv)
-#: note: laut Schild Fertigstellung 2024 (mittlerweile ist dieser Termin obsolet)
-#: XXX Rampe auf der östlichen Seite muss noch gebaut werden
-# REMOVED --- #: note: zukünftige Sperrung ist mittlerweile in temp_blockings eingetragen
-#: osm_watch: way id="22909864" version="33"
-# REMOVED --- #: osm_watch: node id="1650096479" version="8"
-#: osm_watch: way id="1168938182" version="14"
-# REMOVED --- #: osm_watch: way id="837927791" version="14"
-#: osm_watch: way id="1168938183" version="10"
-#: osm_watch: note 5094173 3
-#: also_indoor: search Wolziger_Zeile
-#: last_checked: 2026-04-29
-# REMOVED --- #: check_frequency: 14d (indoor research)
-# REMOVED --- #: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung (muss aber vermutlich verlängert werden))
-# REMOVED --- #: next_check: 2025-09-20 (pardok, bahninfo)
-#: next_check: 2026-06-01 (DB website: Bauarbeiten bis Ende Mai 2026)
+# REMOVED (früher bis 1.7.2024 Bahnübergang) --- Wolziger Zeile	N 10382,-2598 10362,-2604 10307,-2633
 (Unterführung Wolziger Zeile)	NN 10307,-2633 10389,-2632 10405,-2638 10420,-2644
+# 
 Wolziger Zeile	N 10334,-2618 10307,-2633 10287,-2644
 Wolziger Zeile	N 10259,-2660 10287,-2644 10253,-2643 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
 Hohenzollernstr. (Lichtenrade)	N 9559,-2417 9658,-2419 9756,-2415 9864,-2411 9967,-2408 10069,-2405 10173,-2402
@@ -16149,7 +16114,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-05-28
+#: last_checked: 2026-05-31
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16544,7 +16509,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-05-28
+#: last_checked: 2026-05-31
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -17803,7 +17768,8 @@ Ginkgoweg	N 16942,3579 16784,3441
 Kolberger Str. (Gesundbrunnen)	N 8315,15293 8518,15506
 Matthiasstr.	N 12786,13185 12842,13070 12885,12980
 Kühlebornweg	N 5007,4705 5075,4600 5165,4667
-Radickestr.	N 20064,3278 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572 20592,3633 20683,3693 20776,3753 20862,3824
+Radickestr.	N 20064,3278 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572 20592,3633 20683,3693 20776,3753 20835,3795 20861,3814
+Radickestr.	N 20845,3825 20835,3795
 Friedenstr. (Adlershof)	N 20219,3661 20366,3480
 Gellertstr. (Adlershof)	N 20082,3578 20148,3490 20237,3392
 Thomas-Müntzer-Str.	N 20299,3435 20149,3617
@@ -17970,7 +17936,7 @@ Flemmingstr. (Köpenick)	N 21856,4910 21848,4882 21726,4537
 Charlottenstr. (Köpenick)	N 23036,3929 23027,3916 22966,3912 22855,3902 22666,3888 22538,3889 22456,3889
 #: next_check_id: FUNKWERK-2025
 #: XXX Bekommt diese Straße noch einen Straßennamen?
-#: last_checked: 2026-04-18
+#: last_checked: 2026-05-31
 #: check_frequency: 180d
 #: note: Privatstraße
 (Planstraße am ehemaligen Funkwerk)	N 22538,3889 22553,3592 22586,3595
@@ -18798,7 +18764,7 @@ Ruth-Stephan-Str.	N -1665,15347 -1685,15270 -1709,15188
 Elsa-Wagner-Str.	N -1585,15327 -1606,15248 -1631,15164
 Olga-Tschechowa-Str.	N -1829,15394 -1744,15370 -1665,15347 -1585,15327 -1556,15319
 Pulvermühlenweg	N -1848,15535 -1794,15517 -1773,15510 -1547,15377
-Zinsgutstr.	N 20679,3944 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
+Zinsgutstr.	N 20679,3944 20845,3825 20861,3814 20919,3781 21049,3657 21119,3572 21156,3477
 Zinsgutstr. [Wohngebiet]	N 20919,3781 20940,3805 21012,3887
 (Zinsgutstr. - Ottomar-Geschke-Str.)	NN 20940,3805 20917,3827 20958,3875 21016,3923 21087,3995 21073,4165
 (Zinsgutstr. - Ottomar-Geschke-Str.)	NN 21012,3887 21026,3903 21016,3923
@@ -19365,7 +19331,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7343 (Antrag) (abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5TQj0X86Z3AV6QO6ibyHnoLSeLd4YmEqqKXJTU7c/vMYbgDSP/73-Anlagen/06/B1481SB.pdf (Schlussbericht)
-#: last_checked: 2026-01-17
+#: last_checked: 2026-05-31
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
