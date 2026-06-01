@@ -130,7 +130,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-05-21 (mapillary)
+#: last_checked: 2026-06-01
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -403,7 +403,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="30"
-#: last_checked: 2026-05-22
+#: last_checked: 2026-06-01
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
@@ -501,7 +501,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-05-12
+#: last_checked: 2026-06-01
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -7116,6 +7116,7 @@ Sparnecker Weg: Kopfsteinpflaster	Q2- -8125,6184 -7999,6258
 Selbitzer Str.: Asphalt	Q0 -8116,6167 -8206,6072 -8262,5901 -8370,5670
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1657244.php
 #: XXX Verbundsteinpflaster wird durch Asphalt ersetzt (während der Osterferien 2026)
+#: osm_watch: way id="1459903195" version="2"
 #: next_check: 2026-04-13
 Selbitzer Str.: Verbundsteinpflaster	Q1 -8370,5670 -8442,5530
 Selbitzer Str.: Asphalt	Q0 -8442,5530 -8487,5445 -8553,5329 -8614,5185 -8634,5065 -8634,4921 -8642,4789 -8637,4741 -8654,4625

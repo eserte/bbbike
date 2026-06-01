@@ -53,7 +53,7 @@
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026) (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:405906/72 viz2021:13.36206,52.4473,24.04.2026,19:00 (bis 26.04.2026) (inaktiv)
-#: osm_watch: note 5188307 2
+#: osm_watch: note 5188307 2 vvv
 #: last_checked: 2026-04-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
@@ -63,6 +63,7 @@ provisorische Radspuren	RW3; 7628,4521 7597,4499
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: osm_watch ^^^
 # 
 #: temporary ^^^
 # 
@@ -566,7 +567,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-05-29 vvv
+#: last_checked: 2026-06-01 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -4726,6 +4727,7 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/protokoll_5_mobilitaetsrat_070126.pdf (Erwähnung)
 #: by: https://www.infravelo.de/projekt/dammweg/ (1. Quartal 2026 - 2. Quartal 2026)
+#: osm_watch: note 4883566 6
 #: XXX Verlegung der RVA zwischen Widderstraße und der Sonnenallee auf die Fahrbahn; aktuell Arbeiten zwischen Aronsstr. und Sonnenallee
 #: last_checked: 2026-05-31
 #: check_frequency: 30d
@@ -4866,14 +4868,16 @@ Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
 Verbundsteinpflaster, Hebungen und Schäden	RW1; 18491,2128 18396,1990 18361,1926 18322,1898
 #: historical_note: vor Herbst/Winter 2024 Verbundsteinpflaster mit Hebungen und Schäden
 neues Verbundsteinpflaster	RW1; 18322,1898 18242,1841 18199,1811
-#: historical_note: vor Herbst/Winter 2024 nicht benutzungspflichtig gewesen; Verbundsteinpflaster mit Hebungen und Schäden
-neues Verbundsteinpflaster	RW2; 18199,1811 18126,1762
-Verbundsteinpflaster, Hebungen und Schäden	RW2; 18126,1762 18047,1710 17855,1629
+#: historical_note: vor Herbst/Winter 2024 nicht benutzungspflichtig gewesen; im Sep 2025 nicht mehr benutzungspflichtig; Verbundsteinpflaster mit Hebungen und Schäden
+neues Verbundsteinpflaster	RW1; 18199,1811 18126,1762
+#: historical_note: zwischenzeitlich (vor Herbst/Winter 2024 - vor Sep 2025) benutzungspflichtig
+Verbundsteinpflaster, Hebungen und Schäden	RW1; 18126,1762 18047,1710 17855,1629
 alte Gehwegplatten, Hebungen und Schäden	RW1; 17526,1540 17855,1629 17526,1540
 Verbundsteinpflaster	RW1; 17855,1629 18047,1710 18126,1762 18199,1811
-#: historical_note: vor Herbst/Winter 2024 nicht benutzungspflichtig gewesen
-neues Verbundsteinpflaster	RW2; 18199,1811 18242,1841
-Verbundsteinpflaster	RW2; 18242,1841 18322,1898 18361,1926
+#: historical_note: vor Herbst/Winter 2024 nicht benutzungspflichtig gewesen; im Sep 2025 nicht mehr benutzungspflichtig
+neues Verbundsteinpflaster	RW1; 18199,1811 18242,1841
+#: historical_note: zwischenzeitlich (vor Herbst/Winter 2024 - vor Sep 2025) benutzungspflichtig
+Verbundsteinpflaster	RW1; 18242,1841 18322,1898 18361,1926
 Verbundsteinpflaster	RW1; 18361,1926 18396,1990 18491,2128
 neues Verbundsteinpflaster	RW1; 17526,1540 17323,1494 17211,1469
 neues Verbundsteinpflaster	RW1; 17211,1469 17120,1394 16975,1262
@@ -7974,7 +7978,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2026-05-18 vvv
+#: last_checked: 2026-06-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -8021,7 +8025,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-05-18 vvv
+#: last_checked: 2026-06-01 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8482,7 +8486,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-05-12
+#: last_checked: 2026-06-01
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -9477,9 +9481,9 @@ Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 #: next_check_id: THOMAS-2025
 #: XXX wann wird hier die Radspur komplettiert?
-#: last_checked: 2026-05-07 (mapillary)
+#: last_checked: 2026-06-01
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
-	RW3; 12158,7449 12123,7549
+Leitboys	RW4; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696
 Grünbeschichtung	RW4; 12075,7696 12057,7744 12041,7788
 Poller	RW4; 12041,7788 12025,7852 12001,7937

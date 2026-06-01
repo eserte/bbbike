@@ -86,7 +86,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="31"
 #: osm_watch: way id="1072662717" version="35"
-#: last_checked: 2026-05-14 (osm)
+#: last_checked: 2026-06-01
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -402,7 +402,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-05-28
+#: last_checked: 2026-06-01
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -446,7 +446,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
-Rolandufer: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11155,12184 11278,12185
+Rolandufer: Fahrbahn wegen Bauarbeiten verengt oder gesperrt	q3::inwork 11155,12184 11278,12185
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -517,7 +517,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11155,12184 11278,121
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-05-30 vvv
+#: last_checked: 2026-05-31 (osm) vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -542,7 +542,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,123
 #: osm_watch: way id="111833186" version="18"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
-#: osm_watch: way id="153698413" version="20"
+#: osm_watch: way id="153698413" version="21"
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
@@ -914,11 +914,13 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: by: https://www.berliner-woche.de/moabit/c-bauen/plaene-fuer-europaplatz-nord_a415834
 #: by: https://mein.berlin.de/projekte/neugestaltung-europaplatz-nord/
 #: by: https://www.caimmo.com/de/presse/news/artikel/ca-immo-startet-bau-des-anna-lindh-haus-am-berliner-hauptbahnhof/ (Fertigstellung Ende 2026)
+#: by: https://www.caimmo.com/de/portfolio/projekt/anna-lindh-haus/ (geplante Fertigstellung: Anfang 2027)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/vorplatz-am-hbf-europacity-bebauungsplan-ii-201c.155/page-5#post-24166
 #: by: https://entwicklungsstadt.de/europacity-berlin-bauarbeiten-am-anna-lindh-haus-in-vollem-gange/
 #: by: https://entwicklungsstadt.de/berlin-europacity-diese-5-bauprojekte-praegen-das-neue-stadtquartier/ (Rohbau bis März 2026)
 #: by: https://www.entwicklungsstadt.de/bauen-ueber-bahntunneln-fortschritte-beim-anna-lindh-haus-in-der-europacity/
 #: by: https://www.entwicklungsstadt.de/anna-lindh-haus-am-europaplatz-bueroprojekt-in-der-europacity-erreicht-vollvermietung/
+#: by: https://www.entwicklungsstadt.de/anna-lindh-haus-am-europaplatz-fassade-fast-vollstaendig-verglast/ (Fertigstellung 2027)
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://1223a25j44.bautvplus.de/cam1/image.jpg
 #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
@@ -927,7 +929,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="1283287449" version="4"
 #: last_checked: 2026-03-29 (webcam)
 #: check_frequency: 90d
-#: next_check: 2026-12-31 (caimmo website)
+#: next_check: 2027-03-15 (caimmo website: Anfang 2027)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
 # 
 # REMOVED --- #: next_check_id: TRAMTURM-2021 --- #: source_id[inactive]: bvg2021:m27#BVG305466_0 --- #: next_check: 2023-09-06 vvv --- #: check_frequency: 90d vvv --- #: last_checked: 2023-05-14 (osm) vvv
@@ -1046,7 +1048,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-04-28
+#: last_checked: 2026-06-01
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
