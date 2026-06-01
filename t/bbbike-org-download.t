@@ -50,8 +50,8 @@ BEGIN {
 }
 
 {
-    use POSIX qw(strftime);
-    use constant SKIP_DOWNLOAD_BBBIKE_ORG_BROKEN => "2026-06-01T16:00:00Z" gt strftime("%FT%TZ", gmtime) && 'download.bbbike.org hopefully only temporary broken';
+    #use POSIX qw(strftime); use constant SKIP_DOWNLOAD_BBBIKE_ORG_BROKEN => "2026-06-01T16:00:00Z" gt strftime("%FT%TZ", gmtime) && 'download.bbbike.org hopefully only temporary broken';
+    use constant SKIP_DOWNLOAD_BBBIKE_ORG_BROKEN => 0;
     plan skip_all => SKIP_DOWNLOAD_BBBIKE_ORG_BROKEN if SKIP_DOWNLOAD_BBBIKE_ORG_BROKEN;
 }
 
