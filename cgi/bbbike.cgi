@@ -3562,7 +3562,13 @@ sub search_coord {
 
     }
 
-    # handicap_directed XXX not yet enabled
+    # handicap_directed XXX not yet enabled.
+    # Reasons:
+    # 1. it is currently only available for the Berlin (classic) dataset.
+    # 2. it would produce noisy warnings for other datasets.
+    # 3. the penalties are "baked" into the net object, which is
+    #    problematic if the script runs in a persistent environment
+    #    (mod_perl, FastCGI, Plack).
     if (0) {
 	if (!$handicap_directed_net) {
 	    if (-f "$Strassen::datadirs[0]/handicap_directed") { # XXX may be missing for osm data
