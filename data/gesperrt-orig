@@ -401,7 +401,6 @@ Travestr.	1 14836,11842 14901,11808 14986,11760
 Müggelstr.	1 14901,11808 14965,11924
 # REMOVED (stimmt nicht (mehr?)) --- Schmollerplatz/str.	1 13231,9422 13178,9363 13206,9335
 Isarstr.	1s:q4 12349,8464 12368,8356
-Ohmstr.	1 11324,11689 11380,11863
 Anton-Saefkow-Str.	1s:q4 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12780,14675 12700,14726 12575,14812 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
@@ -4085,6 +4084,10 @@ Drängelgitter	BNP:3::trailer=10 -1940,24464
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: PETERSBURGER-2024
+#: last_checked: 2026-06-02
+Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
+# 
 #: next_check_id: DUNCKERBRUECKE-2026
 #: last_checked: 2026-04-16 (mapillary)
 #: check_frequency: 120d
@@ -4092,10 +4095,10 @@ Drängelgitter	BNP:3::trailer=10 -1940,24464
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
 # 
 #: next_check_id: SPREEUFER-2026
-#: XXX es wird vom Paula-Thiede-Ufer in einer Rampe runtergehen, zurzeit wird die Deckschicht aufgesetzt
+#: XXX es wird vom Paula-Thiede-Ufer in einer Rampe runtergehen, zurzeit wird die Deckschicht aufgesetzt; rötliche asphaltähnliche Decke
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 5
-#: last_checked: 2026-05-18
+#: last_checked: 2026-06-02
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2026-06-26
 Uferweg wird verlängert	2::inwork 12010,11545 11962,11596
@@ -4140,13 +4143,14 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: by: https://entwicklungsstadt.de/friedrichshain-wie-aus-einem-parkplatz-eine-moderne-schule-wird/ (weiterhin bis Herbst 2026)
 #: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-am-ostbahnhof-zeigt-sich-mit-roter-fassade/
 #: by: https://www.entwicklungsstadt.de/haus-der-familie-und-bildung-am-ostbahnhof-neubau-startet/ (weiterer Neubau, Fertigstellung: Ende 2027)
+#: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-moderner-neubau-alte-moebel-eroeffnung-wackelt/ (Umzug war für den Januar 2027 geplant, Termin ist nicht mehr zu halten)
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
 #: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
-#: last_checked: 2026-05-04
+#: last_checked: 2026-06-02
 #: check_frequency: 30d
-#: next_check: 2026-08-22 (entwicklungsstadt)
+#: next_check: 2027-03-15 (entwicklungsstadt)
 # REMOVED --- Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,11888
 Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,11888
 # 
@@ -4560,7 +4564,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 2
-#: last_checked: 2026-05-21 vvv
+#: last_checked: 2026-06-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2028-03-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1054783030" version="9"
@@ -5009,7 +5013,7 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://www.erzbistumberlin.de/medien/pressestelle/aktuelle-pressemeldungen/pressemeldung/news-title/richtfest-am-bernhard-lichtenberg-haus/ (Fertigstellung im Sommer 2026)
 #: by: https://www.entwicklungsstadt.de/bernhard-lichtenberg-haus-am-bebelplatz-fassadenarbeiten-am-neubau-sichtbar/
 #: osm_watch: way id="28120501" version="15"
-#: last_checked: 2026-05-26 (daf)
+#: last_checked: 2026-06-02
 #: check_frequency: 90d
 #: next_check: 2026-09-01 (erzbistumberlin)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -5041,7 +5045,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2026-05-16
+#: last_checked: 2026-06-02
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5666,7 +5670,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: also_indoor: traffic
-#: last_checked: 2026-05-27 vvv
+#: last_checked: 2026-06-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230

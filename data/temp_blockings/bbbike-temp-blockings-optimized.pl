@@ -3118,26 +3118,26 @@ Am Schloss Schˆnhausen	2::night 10249,19148 10339,19179
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1412556.php
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
-#: source_id: LMS-BR:342841/72 viz2021:13.5384,52.42059,12.08.2024,07:00 viz2021:13.5384,52.42059, (bis 31.03.2025) (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025) (bis 30.01.2026) (bis 13.02.2026) (bis 03.06.2026)
+#: source_id: LMS-BR:342841/72 viz2021:13.5384,52.42059,12.08.2024,07:00 viz2021:13.5384,52.42059, (bis 31.03.2025) (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025) (bis 30.01.2026) (bis 13.02.2026) (bis 03.06.2026) (bis 26.06.2026)
 #: osm_watch: way id="152466403" version="24"
 #: osm_watch: way id="1424980083" version="3"
 #: osm_watch: way id="1082710233" version="5"
-#: osm_watch: note 4444162 7
-#: also_indoor: traffic (G,T)
+#: osm_watch: note 4444162 8
+#: also_indoor: traffic (G,T,H,W)
 # REMOVED --- #: note: L‰nge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung f¸r Radfahrer via Kˆpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Gr¸nauer Str. ist hier f¸r Anlieger frei; Einbahnstraﬂenregelung gilt f¸r alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
 #: last_checked: 2025-12-12 (mapillary)
-#: next_check: 2026-06-03 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-06-26 (VIZ-Verkehrsmeldung)
 #: historical_note: fr¸her q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
 	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
 ',
          'from' => 1707001200,
          'id' => 2328,
-         'text' => 'Gr¸nauer Str.: Sperrung zwischen Keltensteig und Kˆpenicker Str., voraussichtlich bis Anfang Juni 2026',
+         'text' => 'Gr¸nauer Str.: Sperrung zwischen Keltensteig und Kˆpenicker Str., voraussichtlich bis Ende Juni 2026',
          'type' => 'handicap',
-         'until' => 1780523999
+         'until' => 1782511199
        },
        undef,
        undef,
@@ -3331,41 +3331,7 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://familienfez.fez-berlin.de/programm/kindertagsfest/
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mˆgliche Termine: 1.6.2021 + 6.6.2021)
-#: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
-#: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
-#: by: https://fez-berlin.de/fezveranstaltungen2023/kindertag
-#: by: https://fez-berlin.de/veranstaltungen2024/internationales-kindertagsfest
-#: by: https://fez-berlin.de/veranstaltungen2025/kindertagsfest (ganzes Wochenende, Sa+So)
-#: by: https://tickets.fez-berlin.de/Views/Pages/Appointments/EventAppointments.aspx?EventID=2699 (2026 3 Tage)
-#: tempex: YYYY0531-YYYY0603 vvv
-	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
-	2::temp 19952,5981 19957,5988 20015,6069 20293,6278 20199,6318 20106,6357
-	2::temp 20199,6318 20262,6493 20225,6631
-	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-	2::temp 19939,5999 20064,6290 20086,6307 20106,6357
-#: tempex ^^^
-',
-         'from' => 1780005600,
-         'id' => 2436,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              5,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straﬂen kˆnnen gesperrt sein, 30. Mai 2026 bis 1. Juni 2026',
-         'type' => 'gesperrt',
-         'until' => 1780351199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4471,6 +4437,7 @@ Alter Markt, L¸dersstr.: Einbahnstraﬂenregelung	q4::inwork; 22395,4678 22390,470
          'data' => '#: url: https://www.berliner-teamstaffel.de/
 #: by: https://www.berliner-teamstaffel.de/der-tag/strecke.html
 #: by: https://www.berliner-teamstaffel.de/event/strecke
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnahcqo7622m
 #: source_id: 2147344332 (inaktiv)
 #: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00 (inaktiv)
 #: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00 (inaktiv)
@@ -4504,7 +4471,7 @@ Alter Markt, L¸dersstr.: Einbahnstraﬂenregelung	q4::inwork; 22395,4678 22390,470
                               5
                             ]
                           ],
-         'text' => 'Nˆrdlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straﬂen kˆnnen gesperrt sein, vom 2. Juni 2026 bis 4. Juni 2026',
+         'text' => 'Nˆrdlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straﬂen kˆnnen gesperrt sein, vom 2. Juni 2026 bis 4. Juni 2026, Sperrungen werden erst am Folgetag abgebaut',
          'type' => 'gesperrt',
          'until' => 1780675200
        },
@@ -6510,7 +6477,7 @@ Mommsenstr., ˆstlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: XXX parallelen s¸dˆstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-30 (osm) vvv
+#: last_checked: 2026-06-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -7351,13 +7318,13 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: f¸r den Kfz-Verkehr Einbahnstraﬂenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen f¸r Radfahrer
-#: last_checked: 2026-06-01 vvv
+#: last_checked: 2026-06-02 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine grˆﬂeren Bauarbeiten, gut befahrbar, deshalb q2
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraﬂe/B¸rgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
-#: note: Krausenstr. ist in diesem Abschnitt eine geschotterte Baustraﬂe, manchmal (z.B. im Winter) keine Sperrungen und deshalb eingeschr‰nkt befahrbar
+#: note: Krausenstr. ist in diesem Abschnitt eine geschotterte Baustraﬂe, manchmal (z.B. im Winter) keine Sperrungen und dann eingeschr‰nkt befahrbar
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 9925,11568 9737,11546 9711,11543
 #: note: etwa die H‰lfte der Straﬂe ist normal offen, dann geht\'s ¸ber eine Auffahrt auf einen sehr breiten Gehweg --- eigentlich q3+
 Jerusalemer Str. (S¸d): Baustelleneinrichtungsfl‰che	q3::inwork 9925,11568 9936,11469
@@ -7604,7 +7571,7 @@ Bertastr.	q4::inwork 4448,24277 4510,24170
 #: osm_watch: way id="1119255054" version="13"
 #: note: Start der Sperrung hat sich verzˆgert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-05-28 (osm)
+#: last_checked: 2026-06-02
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -8373,7 +8340,8 @@ Schoelerpark: Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: source_id: viz2021:13.54611,52.43478,10.06.2025,07:00 (hier: Radickestr. bis Friedenstr., bis 15.08.2025) (inaktiv)
 #: source_id: bvg2024:162#HIM_FREETEXT_323764 (Umleitung, vermutlich wegen bevorstehenden Bauarbeiten an der Kreuzung Radickestr./Nipkowstr.)
 #: source_id: LMS-BR:401266/72 viz2021:13.550062,52.436321,09.03.2026,07:00 (Radickestr./Nipkowstr., bis 27.03.2026) (bis 30.06.2026)
-#: source_id: LMS-BR:408693/72 viz2021:13.56935,52.44468,19.05.2026,07:00 (Oberspreestr./Flemmingstr., bis 04.06.2026)
+#: source_id: LMS-BR:408693/72 viz2021:13.56935,52.44468,19.05.2026,07:00 (Oberspreestr./Flemmingstr., bis 04.06.2026) (inaktiv)
+#: source_id: LMS-BR:391949/72 viz2021:13.56818,52.44491, (Oberspreestr./Flemmingstr., bis 16.06.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme f¸r Radfahrer, Anbindung Thomas-M¸ntzer-Str. betroffen)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (bei der Baustelle Radickestr./Nipkowstr. wird nur der Kfz-Verkehr erw‰hnt, bis Ende M‰rz 2026)
@@ -8607,13 +8575,13 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
          'until' => undef
        },
        {
-         'data' => '#: note: fr¸here Veranstaltungstage: 14.5.2022, 17.5.2025, ...
+         'data' => '#: note: fr¸here Veranstaltungstage: 14.5.2022, 17.5.2025, 6.6.2026, ...
 #: url: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
-#: by: https://www.lichtenberg-nachrichten.de/kalender-termine/
-	q4::temp 15434,11086 15359,11115 15461,11313
-	q4::temp 15245,11162 15359,11115 15279,10862
+#: by: https://www.lichtenberg-nachrichten.de/kalender-termine/ (falscher Termin f¸r 2026?)
+Kaskelstr.	q4::temp 15245,11162 15359,11115 15434,11086
+Pfarrstr.	q4::temp 15461,11313 15359,11115 15279,10862
 ',
-         'from' => 1781474400,
+         'from' => 1780610400,
          'id' => 4342,
          'periodic' => 1,
          'recurrence_prewarn_days' => 21,
@@ -8626,9 +8594,9 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
                               5
                             ]
                           ],
-         'text' => 'Pfarrstr. und Kaskelstr.: Straﬂenfest (Viva Victoria), voraussichtlich am 16.5.2026 von 14 bis 22 Uhr',
+         'text' => 'Pfarrstr. und Kaskelstr.: Straﬂenfest (Viva Victoria), voraussichtlich am 6.6.2026 von 14 bis 22 Uhr',
          'type' => 'handicap',
-         'until' => 1781640000
+         'until' => 1780776000
        },
        undef,
        undef,
@@ -8834,7 +8802,7 @@ Lange Str.: mittlerweile auch f¸r Radfahrer Einbahnstraﬂe	q4::inwork; 11993,1197
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-05-30 vvv
+#: last_checked: 2026-06-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -9379,17 +9347,18 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
        },
        {
          'data' => '#: next_check_id: UFER-2025
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260602
 #: last_checked: 2026-05-18 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2026-09-30 (infravelo)
 # REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
 	q4::inwork 8245,16064 8194,15960 8140,15859
 ',
-         'from' => undef,
+         'from' => 1780351200,
          'id' => 4482,
-         'text' => 'Uferstr.: Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten mˆglich (Stand Mitte Mai 2026: keine Bauarbeiten)',
+         'text' => 'Uferstr.: Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten, geplant ab 3.6.2026 bis Mitte Juli 2026',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1784584799
        },
        undef,
        undef,
@@ -9418,7 +9387,7 @@ Kolmarer Str.: Baustelleneinrichtungsfl‰che	q4::inwork 11418,14290 11354,14187
          'data' => '#: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
 #: note: zurzeit noch Absperrung mit nur etwa 50m L‰nge, evtl. Baustelleneinrichtungsfl‰che f¸r die angrenzende Spandauer Str.; noch immer Einbahnstraﬂe
-#: last_checked: 2026-05-21 (mapillary)
+#: last_checked: 2026-06-02
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -9535,7 +9504,7 @@ Hˆnower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
 #: source_id: LMS-BR:390327/72 viz2021:13.31374,52.51816,17.11.2025,07:00 (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:410348/72 viz2021:13.313198,52.517493,01.06.2026,06:00 (bis 03.07.2026)
 #: also_indoor: traffic (G,no-T,W)
-#: osm_watch: note 4547482 4
+#: osm_watch: note 4547482 5
 #: osm_watch: way id="4586182" version="20"
 #: add_fragezeichen: Ist der Radverkehr tats‰chlich betroffen?
 Loschmidtstr.	q4::inwork; 4219,12324 4215,12307 4276,12153 4238,12067
@@ -9840,7 +9809,7 @@ Verbindungsweg	2::inwork 18118,5953 18075,5880
 #: note: siehe auch Eintrag in gesperrt-orig
 #: source_id: LMS-BR:403521/72 viz2021:13.42326,52.54529,01.04.2026,07:00 (bis 14.06.2028)
 #: osm_watch[closed]: note 5163943 2
-#: osm_watch: way id="23252393" version="25"
+#: osm_watch: way id="23252393" version="26"
 #: XXX: Dunckerbr¸cke: Ersatzneubau
 #: XXX: urspr¸ngliche Planung: w‰hrend der Bauarbeiten soll der Fuﬂg‰nger- und Radverkehr auf einer Br¸ckenh‰lfte stattfinden kˆnnen; mittlerweile wird es wohl eine Vollsperrung geben, ab 3. Quartal 2027 wird der Fuﬂ+Radverkehr ¸ber den neuen Rohbau gef¸hrt werden
 #: last_checked: 2026-04-16 (mapillary) vvv
@@ -10072,7 +10041,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        {
          'data' => '#: also_indoor: traffic (ex-G,no-T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraﬂenregelung weiterhin?
-#: last_checked: 2026-05-16
+#: last_checked: 2026-06-02
 #: check_frequency: 21d (traffic)
 # REMOVED --- #: next_check: 2026-03-29
 	q4::inwork; 11821,14317 12077,14186
@@ -10201,7 +10170,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'data' => '#: by[nocache]: https://www.neubaukompass.de/neubau/das-rheingau-berlin/ (bezugsfertig: 4. Quartal 2027)
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdl-hohenstaufen-pallas-und-goebenstr/?postID=795563#post795563
 #: also_indoor: traffic (G,no-T,no-W,no-H)
-#: osm_watch: way id="251962463" version="4"
+#: osm_watch: way id="251962463" version="5"
 #: last_checked: 2026-05-09
 #: check_frequency: 30d
 #: next_check: 2027-12-31 (neubaukompass website)
@@ -10592,6 +10561,7 @@ Tauentzienstr.: Fernw‰rmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: note: "Erhaltungsmaﬂnahme", keine Radspur
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse
 #: by: https://fahrinfo.vbb.de/him-uploads/1779880055285_0.jpg
+#: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11191 (Antrag)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_338258 (ab 26.5.2026)
 #: source_id: LMS-BR:409558/72 viz2021:13.5113,52.48421,26.05.2026,07:00 (Blockdammweg, bis 26.09.2026)
 #: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 (Ehrlichstr., bis 04.08.2026)

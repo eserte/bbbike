@@ -6,6 +6,12 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: WOLLANK-2024
+#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
+#: last_checked: 2026-06-02 (BVV-Drucksache)
+#: next_check: 2026-12-31
+Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
+# 
 #: next_check_id: SIEMENSBORSTELL-2026
 #: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026)
 #: last_checked: 2026-05-30
@@ -41,7 +47,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-05-21
+#: last_checked: 2026-06-02
 #: next_check: 2026-07-17
 #: valid: -20260717
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -68,19 +74,19 @@ Michaelbrücke	F::inwork 11676,11839
 # REMOVED --- #: valid: -20261231
 # REMOVED --- Königsheideweg/Späthsfelder Weg: Gegenverkehrsregelung	X::inwork::alternating 15870,5251
 # 
-#: next_check_id: HANNOVERSCHE-2025
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
-#: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026) (bis 22.05.2026) (inaktiv)
-#: last_checked: 2026-05-27
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20260213
-#: note: valid-Ende weit in der Zukunft
-#: valid: -20261231
-Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
+# REMOVED --- #: next_check_id: HANNOVERSCHE-2025
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251202 (bis Anfang Januar 2026)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m72szmtjhc2f
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibidm25lljvctewpnw3bn5sx3e5p2ijzi3phyd4tk2namzkfcwcpu@jpeg
+# REMOVED --- #: source_id: LMS-BR:392068/72 viz2021:13.38068,52.52839,03.12.2025,08:00 viz2021:13.38068,52.52839, (bis 02.01.2026) (bis 30.01.2026) (bis 13.02.2026) (inaktiv) (bis 20.02.2026) (inaktiv) (bis 06.03.2026) (bis 17.03.2026) (bis 22.05.2026) (inaktiv)
+# REMOVED --- #: last_checked: 2026-06-02
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- # REMOVED --- #: check_frequency: 90d
+# REMOVED --- # REMOVED --- #: next_check: 2026-05-22 (VIZ-Verkehrsmeldung)
+# REMOVED --- # REMOVED --- #: valid: -20260213
+# REMOVED --- #: note: valid-Ende weit in der Zukunft
+# REMOVED --- #: valid: -20261231
+# REMOVED --- Hannoversche Str./Hessische Str.: Baustellenampel	X::inwork 8775,13606
 # 
 # REMOVED (steht noch, ist aber ausgeschaltet) --- #: source_id: LMS-BR:364250/72 viz2021:13.43553,52.42484, (bis 31.05.2026)
 # REMOVED --- #: note: Anforderungsampel für Radfahrer auf dem Radweg (der ab Bauhüttenweg benutzungspflichtig geworden ist) Richtung Süden
@@ -119,7 +125,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
-#: last_checked: 2026-05-30
+#: last_checked: 2026-06-02
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
@@ -4059,7 +4065,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-05-30 vvv
+#: last_checked: 2026-06-02 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3

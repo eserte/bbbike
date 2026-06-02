@@ -587,11 +587,14 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-05-27 vvv
+#: last_checked: 2026-06-02 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=180:h=q3,100:tl 13747,12642 13695,12643 13681,12624
+Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=180:h=q3,100:tl 13761,12690 13695,12643 13681,12624
 #: osm_watch[closed]: note 4639045 5
 #: osm_watch: node id="13657024133" version="1"
-Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
+#Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
+Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, schmaler Weg, Anforderungsampel	DH:len=25:h=q3,100:tl 13695,12643 13685,12664 13622,12806
 # REMOVED (temporär) --- Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13685,12664 13622,12806 13579,12904
 #: osm_watch: node id="13657024132" version="1"
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13481,13128 13434,13234 13383,13349

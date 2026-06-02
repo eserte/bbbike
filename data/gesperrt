@@ -219,7 +219,6 @@ Burgherrenstr.	1 8972,8643 9076,8783
 Travestr.	1 14836,11842 14901,11808 14986,11760
 Müggelstr.	1 14901,11808 14965,11924
 Isarstr.	1s 12349,8464 12368,8356
-Ohmstr.	1 11324,11689 11380,11863
 Anton-Saefkow-Str.	1s 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12780,14675 12700,14726 12575,14812 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
@@ -3579,6 +3578,13 @@ Drängelgitter	BNP:3:-248:trailer=10 113,7
 Drängelgitter	BNP:3:-68:trailer=10 17498,9714
 Schwingtor	BNP:5:-191:trailer=10 4183,13725
 Drängelgitter	BNP:3:-262:trailer=10 -1940,24464
+Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::ignrte::inwork 13685,12664 13622,12806 13579,12904
+Petersburger Str. -> Mühsamstr.: Überquerung in Höhe Mühsamstr. nicht möglich	3::igndisp::inwork 13579,12904 13622,12806 13818,12897
+Petersburger Str. -> Mühsamstr.: Überquerung in Höhe Mühsamstr. nicht möglich	3::igndisp::inwork 13685,12664 13622,12806 13559,12779
+Mühsamstr. -> Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3::igndisp::inwork 13818,12897 13622,12806 13685,12664
+Mühsamstr. -> Mühsamstr.: Überquerung in Höhe Mühsamstr. nicht möglich	3::igndisp::inwork 13818,12897 13622,12806 13559,12779
+Mühsamstr. -> Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3::igndisp::inwork 13559,12779 13622,12806 13579,12904
+Mühsamstr. -> Mühsamstr.: Überquerung in Höhe Mühsamstr. nicht möglich	3::igndisp::inwork 13559,12779 13622,12806 13818,12897
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
 Uferweg wird verlängert	2::inwork 12010,11545 11962,11596
 Überqueren wegen Bauarbeiten nicht möglich	3nocross::ignrte::inwork 14771,14048 14871,14087 14954,14119

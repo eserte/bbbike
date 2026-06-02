@@ -4859,6 +4859,7 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 #: by: https://entwicklungsstadt.de/lakegrund-in-berlin-treptow-gruenanlage-wird-klimaresilient-umgestaltet/ (Abschluss 2025)
 #: by: https://www.entwicklungsstadt.de/lakegrund-in-treptow-modernisierung-der-gruenanlage-steht-kurz-vor-dem-abschluss/
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article412112828/berlin-gruenanlage-in-treptow-koepenick-komplett-neugestaltet-mit-diesem-ziel.html (Eröffnung am 3.6.2026)
+#: by: https://www.entwicklungsstadt.de/neuer-treffpunkt-in-baumschulenweg-gruenanlage-lakegrund-oeffnet/
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
 #: osm_watch: note 4526759 3
 #: XXX "Teilentsiegelung" geplant
@@ -12449,9 +12450,9 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Weg am CleanTech Business Park): fester Belag	Q0 19647,16633 19601,16679 19631,16704 19749,17028 19788,17076 19845,17235 19907,17429
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
-#: XXX mittlerweile gibt es im Schatten der kleinen Baustelle an der Simon-Dach-Str. Ausbesserungsarbeiten; anscheinend werden diese bis mindestens Boxhagener Platz durchgeführt --- Sperrung ist mittlerweile beendet, Ausbesserungsarbeiten stehen noch aus
-#: last_checked: 2026-05-16
-#: check_frequency: 30d
+#: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
+#: last_checked: 2026-06-02
+#: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
 #: note: in der Nähe der Straßenbahnschienen aber keine Schäden mehr
@@ -31491,7 +31492,8 @@ Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6628,15411
 #: confirmed_by: srt
 Ostender Str.: Asphalt	Q0 6628,15411 6649,15427 6794,15553
 Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
-(Zufahrt Str. d. Pariser Kommune): Asphalt	Q0 12577,11804 12617,11888
+#: historical_note: früher (vor den Bauarbeiten für das Heinrich-Hertz-Gymnasium) Asphalt, Q0, mittlerweile deutliche Schäden
+(Zufahrt Str. d. Pariser Kommune): Asphalt mit Schäden	Q1- 12577,11804 12617,11888
 (Zufahrt Str. d. Pariser Kommune): Beton	Q1+ 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz): Beton	Q1+ 12648,11953 12691,12042 12735,12131
 Mehlbeerenweg: Asphalt	Q0 11993,11978 11940,11982 11909,11985
