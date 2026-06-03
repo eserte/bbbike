@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016-2025 Slaven Rezic
+;; Copyright (C) 1997-2014,2016-2026 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -708,6 +708,25 @@
 	(setq description (concat " (" (substring sel (match-beginning 1) (match-end 1)) ")")))
     (beginning-of-line)
     (insert (concat "#: source_id: " source-id description "\n"))))
+
+;;; works best together with the (yet unpublished) firefox currenturl addon 
+(defun bbbike-insert-current-url ()
+  "Read ~/Downloads/current_url.txt and insert '#: by: URL' on a new line below the current one."
+  (interactive)
+  (let ((file "~/Downloads/current_url.txt"))
+    (unless (file-exists-p file)
+      (user-error "File does not exist: %s" file))
+    (let ((url (with-temp-buffer
+                 (insert-file-contents file)
+                 (buffer-string))))
+      (when (string= url "")
+        (user-error "File is empty: %s" file))
+      (unless (string-match-p "\\`https?://.+\\'" url)
+        (user-error "Content does not look like a http/https URL: %s" url))
+      (beginning-of-line)
+      ;(end-of-line)
+      ;(forward-char 1)
+      (insert "#: by: " url "\n"))))
 
 (setq bbbike-next-check-id-regexp "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
 
