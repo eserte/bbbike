@@ -538,7 +538,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,124
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/lux-berlin-neust%C3%A4dtischer-kirchplatz.903/page-2#post-23516
 #: by: https://www.entwicklungsstadt.de/zwischen-historie-und-nachverdichtung-in-berlin-mitte-neues-wohnhaus-an-der-schadowstrasse/
-#: osm_watch: note 3469300 9
+#: osm_watch: note 3469300 10
 #: osm_watch: way id="111833186" version="18"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
@@ -811,12 +811,13 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 #: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
 #: note: im Zuge der Grimmstr. kann die Absperrung weggeschoben sein
-#: last_checked: 2026-05-30 vvv
+#: last_checked: 2026-06-03 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260312
 #: valid: -20260630 vvv
 Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
+#: note: etwa 60m bis zur nächsten Bordsteinabsenkung
 Müllenhoffstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 11311,9576 11110,9661
 #: valid ^^^
 #: check_frequency ^^^
@@ -1415,10 +1416,10 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 # 
 ### Pankow ###
 # 
-#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026)
+#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026) (bis 07.07.2026)
 #: last_checked: 2026-05-18 (mapillary)
-#: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
-#: valid: -20260604
+#: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
+#: valid: -20260707
 Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
 # 
 # REMOVED --- #: XXX Neumannstraße (Pankow) in beiden Richtungen zwischen Schonensche Straße und Thulestraße: Leitungsbau, Vollsperrung für Kfz-Verkehr, vom 05.06.2023 07:00 bis 28.07.2023 17:00 --- #: source_id: viz2021:13.423554,52.554909,05.06.2023,07:00 (bis 28.07.2023) (inaktiv) --- #: also_indoor: traffic (H,G,B,W) --- #: last_checked: 2023-07-14 --- #: next_check: 2023-07-28 --- #: valid: -20230728 --- Neumannstr.: Bauarbeiten, etwa 30m Fahrbahn gesperrt	q2::inwork 11630,16623 11655,16486
@@ -2068,7 +2069,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: way id="30909343" version="27"
-#: last_checked: 2026-05-30
+#: last_checked: 2026-06-03
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -2286,10 +2287,11 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.nd-aktuell.de/artikel/1187963.bvg-oepnv-in-berlin-tram-in-der-investitionsfalle.html (2028/2029?)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/erneuerung-endhaltestelle-lichtenberg (Eröffnung des Planfeststellungsverfahrens vielleicht 2026, Umsetzung 2029/2030)
 #: osm_watch: way id="223184082" version="10"
-#: last_checked: 2026-03-30
+#: note: kann zugeparkt sein, gesehen: 2026-06-03 Wed 12:18
+#: last_checked: 2026-06-03
 #: check_frequency: 360d
 #: next_check: 2029-06-30 (bvg)
-(Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
+(Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng, kann zugeparkt sein	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 # REMOVED (BS wurde abgesenkt) --- #: XXX_prog BS (an der Rungiusstr., ansonsten weiterhin q4)
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12736,5913 13064,5953
@@ -5811,6 +5813,8 @@ Warnitzer Str.: Kurven, unübersichtlch	q1 18141,17960 18041,18073 17962,18010 17
 (Habichtshorst - Schmetterlingswiesen): einige Fußgänger, unübersichtliche Kreuzungen	q1- 21592,10656 21674,10701
 # 
 Eichenstr. - Uferweg: ein paar Stufen oder Umweg über Bürgersteig nehmen	q3 13899,10214 13918,10240
+# 
+(Rüdickenstr. - Röttkenring): einige Fußgänger	q1- 17499,17285 17665,17212 17683,17216
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

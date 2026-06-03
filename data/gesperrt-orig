@@ -133,7 +133,7 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2026-04-06 (daf) vvv
+#: last_checked: 2026-06-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
@@ -160,11 +160,10 @@ Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
 #: historical_note: früher (bis Nov. 2025) Einbahnstraße
 #: next_check: 2026-06-30
 Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219 19577,15166
-#: XXX evtl. wird dieser Abschnitt der Frank-Schweitzer-Str. komplett aufgegeben?
-Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
-Frank-Schweitzer-Str.	1no 19195,14931 19178,14924
-Frank-Schweitzer-Str.	2::inwork 19178,14924 19111,14894 19117,14875
-Frank-Schweitzer-Str.	1no 19117,14875 19256,14906
+# REMOVED (ja, derzeit Rückbau) --- #: XXX evtl. wird dieser Abschnitt der Frank-Schweitzer-Str. komplett aufgegeben? --- Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
+# REMOVED (zukünftige Anbindung an die Unterführung und Rampe prüfen) --- Frank-Schweitzer-Str.	1no 19195,14931 19178,14924
+# REMOVED --- Frank-Schweitzer-Str.	2::inwork 19178,14924 19111,14894 19117,14875
+# REMOVED --- Frank-Schweitzer-Str.	1no 19117,14875 19256,14906
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -579,7 +578,12 @@ Hüsung	1 13324,4784 13400,4788 13468,4766
 Hüsung	1s 13468,4766 13397,4762 13324,4784
 #: by: Christoph Winkelmann:
 Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18459,9354
-(Landsberger Allee - Georg-Knorr-Str.)	1 19169,15015 19314,15059 19364,15045
+#: next_check_id: KNOTENMARZAHN-2022
+#: XXX: während der Sperrung des Fußgängertunnels gibt es hier einen provisorisch abgetrennten Fußweg, vorher war die Kategorie einfach nur "1s"
+#: note: eng, aber sehr wenige Fußgänger zu erwarten, deshalb q3
+#: last_checked: 2026-06-03
+#: check_frequency: 120d
+(Landsberger Allee - Georg-Knorr-Str.)	1s:q3 19169,15015 19314,15059 19364,15045
 #: by: Bosshold, Martin:
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
@@ -4274,7 +4278,8 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 # 
 #: by: https://www.reo.berlin/
 #: by: https://entwicklungsstadt.de/hotelentwicklung-in-friedrichshain-premier-inn-plant-282-zimmer-am-ostkreuz/
-#: last_checked: 2025-12-19
+#: note: anfangs (Sep 2025) mit einem Bauzaun gesperrt, jetzt (Jun 2026) eine Schranke
+#: last_checked: 2026-06-03
 #: check_frequency: 180d
 #: next_check: 2026-08-28 (Halteverbotsschilder in der Straße "Am Bremsenwerk")
 (an den Gebäuden der Deutschen Rentenversicherung): wegen Hochbauarbeiten gesperrt	2::inwork 15322,11335 15273,11350 15168,11327 15058,11250
@@ -4358,7 +4363,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-05-31
+#: last_checked: 2026-06-03
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4489,9 +4494,21 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # REMOVED (neue Rampe existiert) --- #: next_check_id: KNOTENMARZAHN-2022 --- #: XXX an dieser Stelle wird es alternativ eine Rampe geben --- #: osm_watch: note 4298701 3 --- #: osm_watch: way id="1297589176" version="1" --- #: last_checked: 2025-08-24 --- #: check_frequency: 180d --- #: next_check: 2026-12-31 --- (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19157,14948 19162,14931 19121,14916 19173,14932
 # 
 #: next_check_id: KNOTENMARZAHN-2022
+#: note: siehe auch temp-blockings-Eintrag
+#: last_checked: 2026-06-03 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-12-31 vvv
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): massive Sperrung	2::inwork 19173,14932 19171,14938 19157,14979
+(Georg-Knorr-Str. - Landsberger Allee): Bauzäune, gesperrt	2::inwork 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
+(Landsberger Allee - Frank-Schweitzer-Str.): Rampe und Treppe gesperrt	2::inwork 19157,14948 19162,14931 19121,14916 19173,14932 19195,14931
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: next_check_id: KNOTENMARZAHN-2022
 #: osm_watch: way id="4696062" version="30"
 #: last_checked: 2026-01-17
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
 # 
@@ -4499,7 +4516,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: way id="26244466" version="25"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:316070/72 viz2021:13.53642,52.53865, (bis 31.12.2026)
-#: last_checked: 2026-03-01 (luftbildsuche)
+#: last_checked: 2026-06-03
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
@@ -5139,7 +5156,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-06-01 vvv
+#: last_checked: 2026-06-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5788,10 +5805,12 @@ Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::i
 #: by: https://www.lasuv.sachsen.de/b-101-grossenhain-8358.html (wird abgerissen)
 #: by: https://www.mdr.de/nachrichten/sachsen/dresden/grossenhain-riesa/bahn-bruecke-sperrung-umleitung-strassenverkehr-102.html (Baustart September 2025, Brückenfreigabe 2027, evtl. schon früher)
 #: by: https://www.grossenhain.de/newsleser/wie-geht-es-mit-der-bruecke-an-der-b101-weiter.html (Baubeginn Anfang September 2025, Bauzeit 12-18 Monate)
+#: by: https://www.grossenhain.de/baustelleninformationssystem.html (bis 31.12.2026)
+#: by: https://cardomap.idu.de/lramei/lramei.aspx?bm=TOPI&th=BESCHRIFTUNG_ORTSLAGEN%7CBESCHRIFTUNG_GEMEINDEN%7CLANDKREISGRENZE%7CGEMEINDEN%7CMASKIERUNG_GROSSENHAIN%7CSPERRUNGEN_AKTUELL%7CUMLEITUNGEN_AKTUELL&pos-box=392084.59584|5680529.40598|402584.33336|5688279.21225;25833&pos-mark=false
 #: osm_watch: way id="779202212" version="6"
-#: last_checked: 2025-12-06 (indoor research)
+#: last_checked: 2026-06-03 (indoor research)
 #: check_frequency: 180d
-#: next_check: 2027-01-01 (mdr: mögliche Brückenfreigabe)
+#: next_check: 2027-01-01 (mdr: mögliche Brückenfreigabe, Baustelleninformationssystem)
 B101 südlich von Großenhain: Brücke gesperrt	2::inwork 21254,-125506 21046,-125633
 # 
 #: next_check_id: SCHLEUSEFRIEDENTHAL-2025

@@ -525,7 +525,7 @@ Hildburghauser Str.: Bahnunterführung für Fußgänger	q1 4595,1387 4514,1402
 (Bürgipfad - Jenbacher Weg): Fußgänger	q2 5591,240 5671,118 5703,74
 Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): Fußgänger	q1 17790,12255 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
-(Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
+(Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng, kann zugeparkt sein	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12736,5913 13064,5953
 Treseburger Ufer: nur für Fußgänger erlaubt	q4 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
@@ -2779,6 +2779,7 @@ Warnitzer Str.: Kurven, unübersichtlch	q1 18141,17960 18041,18073 17962,18010 17
 (Dukatenfalterweg - Parkweg): einige Fußgänger, unübersichtliche Kreuzungen	q1 21649,10777 21642,10773 21559,10732
 (Habichtshorst - Schmetterlingswiesen): einige Fußgänger, unübersichtliche Kreuzungen	q1 21592,10656 21674,10701
 Eichenstr. - Uferweg: ein paar Stufen oder Umweg über Bürgersteig nehmen	q3 13899,10214 13918,10240
+(Rüdickenstr. - Röttkenring): einige Fußgänger	q1 17499,17285 17665,17212 17683,17216
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3608,6 +3609,7 @@ Barbarastr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6456,
 Parchimer Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 22212,12403 22212,12422 22257,12481 22258,12573 22272,12610
 Stiftsweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11001,18528 11239,18832 11263,18842
 Treskowstr. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 24563,11980 24491,11972
+(Landsberger Allee - Georg-Knorr-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 19169,15015 19314,15059 19364,15045
 Rathausstr.:: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15651,12214 15628,12246 15576,12315 15537,12367
 Steilpfad: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 3375,21230 3280,21477
 Erkelenzdamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261

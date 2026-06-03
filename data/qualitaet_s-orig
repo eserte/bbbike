@@ -201,7 +201,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2026-05-29
+#: last_checked: 2026-06-03
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -213,7 +213,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-05-29 vvv
+#: last_checked: 2026-06-03 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -2942,10 +2942,10 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article410552147/firma-gefeuert-arbeiten-eingestellt-diese-baustelle-wird-zur-posse.html
 #: by: https://mein.berlin.de/ideas/2023-16489/ (bekommt dieser Platz nach Ende der Bauarbeiten den Namen Hermann-Mächtig-Platz?)
 #: source_id[inactive]: bvg2024:256#HIM_FREETEXT_307497
-#: osm_watch: note 4294376 8
+#: osm_watch: note 4294376 9
 #: osm_watch: way id="1025072174" version="5"
 #: XXX außerdem kann die Asphaltfahrbahn neben dem Friedhof gesperrt sein (nicht am Wochenende?), dann Ausweichen über unbefestigten parallelen Weg
-#: last_checked: 2026-03-18 (osm note)
+#: last_checked: 2026-06-03
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (nachhaltige-erneuerung website)
 #: XXX wiederherstellen: (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240
@@ -3364,7 +3364,8 @@ Niederheideweg: Asphalt mit Schäden	Q1 -6518,17539 -5913,17315 -5898,17318
 Niederheideweg: Asphalt	Q0 -5898,17318 -5786,17339
 Sandwiesenweg: Asphalt	Q0 -5918,17180 -5898,17318
 (Pestalozzistr. - Falkenseer Chaussee): Asphalt	Q0 -7276,16753 -7208,16669 -7184,16582 -7176,16398 -7173,16305 -7184,16263
-#: add_fragezeichen: Sind die Holzbohlen nach der Sanierung besser geworden?
+#: add_fragezeichen: Sind die Holzbohlen nach der Sanierung besser geworden? Oder gibt es mittlerweile einen "Steinbelag" (siehe Tsp)?
+#: osm_watch: note 5323933 1
 Brücke über Spektelake: unebene Holzbohlen	Q2 -7228,15504 -7182,15524
 (An der Felgenlake - Finkenkruger Weg): Asphalt	Q0 -7228,15504 -7360,15447
 (An der Felgenlake - Finkenkruger Weg): wassergebundene Decke	Q1 -7119,15501 -7182,15524
@@ -3405,8 +3406,8 @@ Krumme Gärten: Asphalt	Q0 -4011,13407 -3994,13301 -4017,13167
 #: corrected_by: srt (neu gemacht)
 (Mauerweg - Spektelake): Asphalt	Q0 -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7243,15943
 #: corrected_by: srt
-#: add_fragezeichen Sind die Holzbohlen nach der Sanierung besser geworden?
-(Mauerweg - Spektelake): unebene Holzbohlen	Q2 -7243,15943 -7228,15933
+#: historical_note: früher (bis zur Sanierung 2025/2026): unebene Holzbohlen, Q2
+(Mauerweg - Spektelake): Steinbelag	Q0 -7243,15943 -7228,15933
 #: corrected_by: srt (neu gemacht)
 (Mauerweg - Spektelake): Asphalt	Q0 -7228,15933 -7211,15920
 #: historical_note: früher Asphalt, Q0
@@ -4998,7 +4999,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058 (letzter Stand 16.09.2021: Zwischenbericht)
 #: XXX wird hier saniert?
 #: osm_watch: way id="22047751" version="26"
-#: last_checked: 2025-11-08
+#: last_checked: 2026-06-03
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -5011,7 +5012,7 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11050 (Antrag zur Verkehrsberuhigung)
 #: XXX wann wird hier saniert?
 #: osm_watch: way id="22046245" version="25"
-#: last_checked: 2026-04-07
+#: last_checked: 2026-06-03
 #: check_frequency: 360d
 # REMOVED (keine Anzeichen für eine baldige Sanierung) --- #: next_check: 2025-12-31
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
@@ -14350,6 +14351,7 @@ Neben dem Dorfteich: Verbundsteinpflaster	Q1 17757,18991 17748,18956 17766,18949
 (zur Kohlhasenbrücker Str.): Waldweg	Q2 -6998,-1320 -6946,-1418 -6879,-1504
 # 
 (Frank-Schweitzer-Str. - Landsberger Allee): Asphalt	Q0 19256,14906 19254,14925 19319,14970 19318,14984 19309,15023
+Frank-Schweitzer-Str.: welliger Asphalt	Q1 19256,14906 19339,14930
 # 
 (Parkplatz vor dem Stade Napoleon): Verbundsteinpflaster	Q1 4111,15999 4075,16030 4054,16035
 # 
@@ -14519,6 +14521,9 @@ Moderlieschenstr.: Betonplatten	Q1- -732,15940 -866,16042
 Margot-Friedländer-Platz: große Steinplatten	Q1+ 8938,11255 8935,11277 8830,11264 8833,11241
 # 
 Karl-Schmidt-Rottluff-Weg: Asphalt stellenweise mit Unebenheiten und Schäden	Q1 1778,3905 1781,3807 1796,3765 1817,3732 1868,3626
+# 
+#: note: die letzten Meter am östlichen Ende mit Verbundsteinpflaster
+(Rüdickenstr. - Röttkenring): Beton	Q0- 17499,17285 17665,17212 17683,17216
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -14837,7 +14842,8 @@ Straße 47: guter Asphalt	Q0 15118,21585 15286,21630 15332,21658 15364,21696 1537
 Amalienstr. (Lankwitz): Asphalt	Q0 5831,2624 5774,2785
 Friedenstr. (Wannsee): Asphalt	Q0 -7219,454 -7233,495 -7283,556 -7319,601 -7332,662 -7368,794 -7394,918 -7402,948
 Hoppenrader Weg: guter Beton	Q0 -4757,14303 -4612,14267
-Röttkenring: Beton	Q0 17872,17226 17860,17212 17830,17146 17815,17149 17680,17210 17714,17285 17724,17307 17784,17357
+#: corrected_by: srt (Q0 -> Q0-)
+Röttkenring: Beton	Q0- 17872,17226 17860,17212 17830,17146 17815,17149 17680,17210 17683,17216 17714,17285 17724,17307 17784,17357
 #: note: 30er-Zone:
 #: confirmed_by: srt (Mittelteil)
 Stollberger Str.: guter Asphalt	Q0 24221,14142 24034,14212 23989,14307 23983,14318 23930,14426 23918,14452 23925,14480 24013,14521 23998,14555 23938,14527 23925,14514 23862,14477 23887,14409 23930,14426
@@ -15492,7 +15498,8 @@ Am Faulen See: Asphalt, leichte Schäden	Q0- 16520,16200 16551,16307
 Am Faulen See: Asphalt	Q0 16551,16307 16592,16447 16622,16569 16633,16687 16608,16806
 #: confirmed_by: srt
 # REMOVED (nein) --- #: XXX: wurde hier die Qualität verbessert? vvv --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4761 vvv
-Am Faulen See: Asphalt mit Schäden	Q1+ 16608,16806 16550,16914
+#: historical_note: früher Q1+, mittlerweile nur noch Q1
+Am Faulen See: Asphalt mit Schäden	Q1 16608,16806 16550,16914
 #: corrected_by: srt (Asphalt -> Beton)
 Am Faulen See: guter Beton	Q1+ 16550,16914 16471,17036
 #: corrected_by: srt (guter Belag -> ...)
@@ -16413,7 +16420,7 @@ Baikalstr.: mäßiger Beton	Q1- 17210,10350 17255,10510 17276,10617
 #: corrected_by: srt (gute Betonplattenstraße, Q0 -> ...)
 Rüdickenstr.: Asphalt	Q0 17159,17631 17186,17593
 #: confirmed_by: srt (added "-" to "Q0")
-Rüdickenstr.: gute Betonplattenstraße	Q0- 17186,17593 17264,17489 17392,17315 17422,17288 17481,17263 17499,17285 17582,17335 17729,17448
+Rüdickenstr.: Beton	Q0- 17186,17593 17264,17489 17392,17315 17422,17288 17481,17263 17499,17285 17582,17335 17729,17448
 #: corrected_by: srt (Parkweg mit Unebenheiten -> ...)
 (Tränkegraben - Rummelsburger Str.): Beton	Q0- 17249,10702 17244,10737 17261,10827 17257,10875
 #: by: ^^^
@@ -20828,7 +20835,7 @@ Güntherstr.: schlechtes Kopfsteinpflaster, einige Asphaltflicken	Q2-; 17771,8349
 # 
 #: by: Jörg (studi):
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+)
-Merler Weg: kleinteiliges Kopfsteinpflaster	Q2+ 19180,13219 18852,13269
+Merler Weg: kleinteiliges Kopfsteinpflaster	Q2+ 19180,13219 18987,13248 18852,13269
 # 
 #: by: Andrea (techlin):
 Hugo-Heimann-Str.: guter Asphalt	Q0 14120,1991 14165,2106 14184,2157 14218,2181 14259,2184 14393,2137 14444,2090 14587,2032
@@ -26585,7 +26592,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="9"
-#: last_checked: 2026-03-04
+#: last_checked: 2026-06-03
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
@@ -32461,8 +32468,12 @@ Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 #: corrected_by: osm, srt (Beton, Q0- -> ... (ab Frühjahr 2022))
 (Radweg an der Straßenbahn): Asphalt	Q0+ 21871,18244 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442
 #: by: https://www.infravelo.de/projekt/verbindung-zwischen-mehrower-allee-und-wuhletalstrasse/ (4. Quartal 2025 - 3. Quartal 2026)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll-des-fahrrat_2025-10-09_1.pdf (Erwähnung eines Zweirichtungsradwegs parallel zur Tram (Linien 165, M8, M17) --- allerdings gibt es so eine Kombination gar nicht?! Könnte vielleicht auch die Strecke nach Ahrensfelde entlang der M8 sein. Realisierung 2026)
+#: by: https://marzahn-hellersdorf.com/radverkehr-in-marzahn-hellersdorf-stellen-unbesetzt-fahrradstrassen-kaum-vorhanden/ (aktuell in Bau?)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll-des-fahrrat_2026-02-25.pdf (Abschluss in den Sommerferien?)
 #: note: soll asphaltiert und auf 4m verbreitert werden
-#: next_check: 2026-09-30
+#: next_check: 2026-08-15 (fahr-rat)
+# REMOVED --- #: next_check: 2026-09-30 (infravelo)
 (Radweg an der Straßenbahn): Beton	Q0- 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896
 # REMOVED (anscheinend realisiert) --- #: corrected_by: srt (was Q3) --- #: XXX: wird der Radweg hier verbessert? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4
 (Radweg an der Straßenbahn): asphaltiert	Q0 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21192,16466 21179,16455 21067,16327 21036,16286 21035,16280 21000,16238

@@ -68,8 +68,6 @@ Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061
 Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee: nur Rechtsabbiegen erlaubt	3 19644,15320 19512,15092 19565,15106
 Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219 19577,15166
-Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
-Frank-Schweitzer-Str.	2::inwork 19178,14924 19111,14894 19117,14875
 Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13712,20919 13909,20928
 Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
 Seestr.	1 5043,14671 5255,14757 5311,14786 5437,14844
@@ -315,7 +313,7 @@ Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7755,3376
 Hüsung	1 13324,4784 13400,4788 13468,4766
 Hüsung	1s 13468,4766 13397,4762 13324,4784
 Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18459,9354
-(Landsberger Allee - Georg-Knorr-Str.)	1 19169,15015 19314,15059 19364,15045
+(Landsberger Allee - Georg-Knorr-Str.)	1s 19169,15015 19314,15059 19364,15045
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
 Kreuzstr.	1 9818,17921 9893,18179 9895,18297 9905,18329
@@ -3633,6 +3631,9 @@ Am Wiesenrain: Einbahnstraßenregelung	1s:inwork 23931,5992 24122,6007
 Mittelheide - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::inwork 24089,6144 24060,6059 23951,6063
 Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::inwork 24120,6090 24060,6059
 Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): massive Sperrung	2::inwork 19173,14932 19171,14938 19157,14979
+(Georg-Knorr-Str. - Landsberger Allee): Bauzäune, gesperrt	2::inwork 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
+(Landsberger Allee - Frank-Schweitzer-Str.): Rampe und Treppe gesperrt	2::inwork 19157,14948 19162,14931 19121,14916 19173,14932 19195,14931
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
