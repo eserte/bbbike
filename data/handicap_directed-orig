@@ -525,7 +525,7 @@ Landsberger Allee	DH:t=60 19015,14901 18831,14823 18553,14678
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2026-05-20 vvv
+#: last_checked: 2026-06-02 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-09-11 (Umstellung der Verkehrsführung (auf die andere Brückenhälfte)) vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
@@ -787,11 +787,11 @@ Alfred-Kowalke-Str.: Baustellenampel und Gegenverkehrsregelung	DH:tl 18027,11244
 Mittenwalder Str./Gneisenaustr.: Radverkehr muss die Fußgängerampel benutzen	DH:tl 9957,9692 9927,9487 9892,9286
 #: next_check ^^^
 # 
-#: source_id: LMS-BR:406370/72 viz2021:13.489265,52.590253, (bis 24.05.2026) (bis 05.06.2026)
-#: last_checked: 2026-05-06
-#: next_check: 2026-06-05 (VIZ-Verkehrsmeldung)
-#: valid: -20260605
-Bundesstraße 2: Gegenverkehrsregelung, Radverkehr muss auf die gegenüberliegende Seite wechseln	DH:tl=60 16025,20631 16181,20734 16644,21042
+#  REMOVED --- #: source_id: LMS-BR:406370/72 viz2021:13.489265,52.590253, (bis 24.05.2026) (bis 05.06.2026) (inaktiv)
+#  REMOVED --- #: last_checked: 2026-05-06
+#  REMOVED --- #: next_check: 2026-06-05 (VIZ-Verkehrsmeldung)
+#  REMOVED --- #: valid: -20260605
+#  REMOVED --- Bundesstraße 2: Gegenverkehrsregelung, Radverkehr muss auf die gegenüberliegende Seite wechseln	DH:tl=60 16025,20631 16181,20734 16644,21042
 # 
 #: XXX Umweg für Radfahrer wegen Brückenarbeiten
 #: osm_watch: note 5301244 1 vvv

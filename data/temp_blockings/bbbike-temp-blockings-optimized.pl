@@ -1704,6 +1704,7 @@ Kantstr.	q4::inwork 5613,10963 5652,11004
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1538769.php (kein Umzug dieses Jahr)
 #: by: https://www.visitberlin.de/de/event/64-koepenicker-sommer
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409180385/volksfest-koepenicker-sommer-2025-steht-an-mit-diesen-aenderungen.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1676853.php
 #: source_id: viz2021:13.57552,52.44722,13.06.2024,06:00 (hier auch Alt-Köpenick gesperrt, bis 17.06.2024) (inaktiv)
 #: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
 # REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
@@ -3119,7 +3120,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
 #: source_id: LMS-BR:342841/72 viz2021:13.5384,52.42059,12.08.2024,07:00 viz2021:13.5384,52.42059, (bis 31.03.2025) (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025) (bis 30.01.2026) (bis 13.02.2026) (bis 03.06.2026) (bis 26.06.2026)
-#: source_id: bvg2024:163#HIM_FREETEXT_234732
+#: source_id[inactive]: bvg2024:163#HIM_FREETEXT_234732
 #: osm_watch: way id="152466403" version="24"
 #: osm_watch: way id="1424980083" version="3"
 #: osm_watch: way id="1082710233" version="5"
@@ -4207,7 +4208,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-05-21 (mapillary)
+#: last_checked: 2026-06-04
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -6798,7 +6799,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidm6w7deqbesf4p45eknbfejknsw6ev4dyvgqks6z4w7o6ax4gx6q@jpeg
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicknnpabrsd464573rxm4pcrbhtjkynzhsbh65cwpnqkz5ukeed2i@jpeg (Umleitung für Radfahrer)
 #: by: https://www.entwicklungsstadt.de/hackesche-hoefe-denkmalgeschuetztes-ensemble-erhaelt-neue-fassade/
-#: also_indoor: traffic (ex-G,T,H,W)
+#: also_indoor: traffic (ex-G,T,ex-H,ex-W)
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -7320,7 +7321,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-04 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -8499,6 +8500,8 @@ Lohnauer Steig: möglicherweise gesperrt, genaue Lage unklar	q4::inwork 20790,411
 #: by: https://heycharlottenburg.de/ ("Hey Charlottenburg", Fertigstellung: Q3/2027)
 #: by: https://www.entwicklungsstadt.de/hey-charlottenburg-waechst-fast-70-wohnungen-auf-der-mierendorffinsel-bald-bezugsfertig/
 #: by: https://www.entwicklungsstadt.de/hey-charlottenburg-auf-der-mierendorffinsel-erster-bauabschnitt-abgeschlossen/
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/wernigeroder-stra%C3%9Fe-ecke-quedlinburger-stra%C3%9Fe.436/#post-27508
+#: note: möglicherweise ist auch die Klaustaler Str. Einbahnstraße, offen Richtung Süden
 #: last_checked: 2026-05-19 (daf)
 #: next_check: 2026-10-31 (VIZ-Verkehrsmeldung)
 Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
@@ -8647,7 +8650,7 @@ Caspar-Theiß-Str.: Sperrung der Fahrbahn an der Paulsborner Str., Gehweg für Rad
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:371046/72 viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: source_id: LMS-BR:371047/72 viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: last_checked: 2026-06-01 vvv
+#: last_checked: 2026-06-02 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8824,7 +8827,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-05-22
+#: last_checked: 2026-06-04
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9007,7 +9010,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-03 vvv
+#: last_checked: 2026-06-04 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9249,7 +9252,7 @@ Schlegelstr.: Anbindung Chaussestr. unterbrochen	q3::inwork 9044,13711 9231,1384
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-06-03
+#: last_checked: 2026-06-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -10105,6 +10108,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~20-03-2026-baustart-radwegsanierung-entlang-der-l202-und-l20
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~29-05-2026-l202_l20-fertigstellung-der-radwegerneuerungen (bis 12.6.2026)
 #: source_id: LS/223-P/26/041 (bis 22.05.2026) (bis 12.06.2026)
 	2::inwork -10031,18697 -10474,19644
 ',
@@ -10238,14 +10242,14 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
          'until' => 1785880800
        },
        {
-         'data' => '#: source_id: LMS-BR:404317/72 viz2021:13.31786,52.41443, (bis 06.06.2026)
+         'data' => '#: source_id: LMS-BR:404317/72 viz2021:13.31786,52.41443, (bis 06.06.2026) (bis 03.07.2026)
 	q4::inwork 4862,975 4837,890 4768,840
 ',
          'from' => 1775758590,
          'id' => 4581,
-         'text' => 'Woltmannweg: Bauarbeiten zwischen Osdorfer Str. und Blochmannstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 05.06.2026 18:00',
+         'text' => 'Woltmannweg: Bauarbeiten zwischen Osdorfer Str. und Blochmannstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 03.07.2026',
          'type' => 'handicap',
-         'until' => 1780696800
+         'until' => 1783115999
        },
        {
          'data' => '#: by: https://www.entwicklungsstadt.de/treptow-koepenick-volkspark-wuhlheide-baustelle-europaradweg/
@@ -10740,6 +10744,29 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 
          'text' => 'Heinersdorf - Marienfelde: mögliche Sperrung des Wegs wegen Bauarbeiten, 04.06.2026 06:00 Uhr bis 01.07.2026 20:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1782928800
+       },
+       {
+         'data' => '#: source_id: LMS-BR:410748/72 viz2021:13.56417,52.40173, (bis 31.10.2026)
+	q4::inwork 21847,-303 21648,-276 21534,-262
+',
+         'from' => 1780600039,
+         'id' => 4627,
+         'text' => 'Dahmestr.: Kabelbauarbeiten zwischen Buntzelstr. und Hundsfelder Str., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 30.10.2026 ',
+         'type' => 'handicap',
+         'until' => 1793401200
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnhegvmxfs2y
+#: source_id: LMS-BR:410740/72 viz2021:13.31706,52.51236,
+#: XXX Ist der Radverkehr tatsächlich betroffen? Wann sind die Bauarbeiten beendet?
+#: last_checked: 2026-06-04 (VIZ-Verkehrsmeldung)
+	q4::inwork 4507,11936 4475,11845 4498,11740
+',
+         'from' => undef,
+         'id' => 4628,
+         'text' => 'Marie-Elisabeth-Lüders-Str.: Wasserrohrbruch, Sperrung, evtl. ist auch der Radverkehr betroffen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
