@@ -214,6 +214,7 @@ Buckower Chaussee	1no 8742,475 8977,505 9004,481
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
+#: source_id: bvg2024:194#HIM_FREETEXT_341095 (Umleitung, evtl. gibt es hier Bauarbeiten?)
 #: last_checked: 2026-05-03 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
@@ -4827,23 +4828,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 # REMOVED (keine Einbahnstraßenschilder mehr) --- #: next_check_id: GOETEL-2023 --- #: XXX Bleibt die Einbahnstraßenregelung permanent? --- #: osm_watch: way id="1193389996" version="1" --- #: last_checked: 2024-09-18 --- #: check_frequency: 120d --- #: next_check: 2024-10-04 --- Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: MAUERPARK-2022 --- #: osm_watch: way id="30441457" version="31" --- #: last_checked: 2024-04-08 --- #: check_frequency: 60d --- Mauerpark: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # REMOVED --- #: next_check_id: MAUERPARK-2022 --- # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"--- #: osm_watch: way id="1218990564" version="6" --- #: last_checked: 2024-08-13 --- #: check_frequency: 30d --- Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
-# 
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1465666.php (ab Anfang 2024; Abschluss der Bauarbeiten im Frühjahr 2026)
-#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
-#: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1363169.php (Fertigstellung 1. Halbjahr 2026)
-#: by: https://entwicklungsstadt.de/mauerpark-am-falkplatz-nimmt-der-umbau-sichtbare-formen-an/ (Fertigstellung weiterhin erstes Halbjahr 2026)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1573145.php (Teilflächen fertiggestellt, restlicher Bereich bis Frühjahr 2026)
-#: by: https://entwicklungsstadt.de/mauerpark-sanierung-erste-teilflaeche-in-pankow-vorzeitig-fertiggestellt/
-#: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
-#: priority: #C
-#: osm_watch: note 4395422 4
-#: osm_watch: note 4558995 4
-#: last_checked: 2026-05-16
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
-#: next_check: 2026-06-30 (BA, entwicklungsstadt)
-Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
+# REMOVED --- Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
 # 
 # REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022
 # REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9863 (Erwähnung)

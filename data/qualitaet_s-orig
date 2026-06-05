@@ -4854,20 +4854,6 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1+ 12911,15865 12871,15882
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1 12871,15882 12783,15921
 (Eichbuschallee - Plänterwald): Waldweg/Schotter	Q2+ 16144,7882 16534,8182
-#: next_check_id: LAKEGRUND-2024
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1496551.php (Bauarbeiten ab 28.10.2024, Gesamtbaumaßnahme bis Ende 2026)
-#: by: https://www.berliner-woche.de/baumschulenweg/c-umwelt/arbeiten-zur-aufwertung-der-gruenanlage-lakegrund-sind-gestartet_a428593
-#: by: https://entwicklungsstadt.de/lakegrund-in-berlin-treptow-gruenanlage-wird-klimaresilient-umgestaltet/ (Abschluss 2025)
-#: by: https://www.entwicklungsstadt.de/lakegrund-in-treptow-modernisierung-der-gruenanlage-steht-kurz-vor-dem-abschluss/
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article412112828/berlin-gruenanlage-in-treptow-koepenick-komplett-neugestaltet-mit-diesem-ziel.html (Eröffnung am 3.6.2026)
-#: by: https://www.entwicklungsstadt.de/neuer-treffpunkt-in-baumschulenweg-gruenanlage-lakegrund-oeffnet/
-#: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.1382709.php
-#: osm_watch: note 4526759 3
-#: XXX "Teilentsiegelung" geplant
-#: last_checked: 2026-03-14
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2026-12-31 (BA-Pressemitteilung)
-#: next_check: 2026-06-03 (MoPo)
 Lakegrund: Beton	Q1+ 16406,7430 16368,7425 16195,7398
 Eschenbachstr.: Kopfsteinpflaster	Q2 16290,7160 16375,7070
 Stormstr. (Baumschulenweg): Kopfsteinpflaster	Q2 16328,7005 16234,7100
@@ -12832,6 +12818,24 @@ Bennyweg: Verbundsteinpflaster	Q1 17254,15183 17262,15056
 Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059 17319,15038
 (Suermondtstr. - Konrad-Wolf-Str.): Beton	Q0- 16753,16111 16719,16005 16799,15974 16842,15932
 #: note: während der Sperrungen im Mauerpark asphaltiert gewesen
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1465666.php (ab Anfang 2024; Abschluss der Bauarbeiten im Frühjahr 2026)
+#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
+#: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1363169.php (Fertigstellung 1. Halbjahr 2026)
+#: by: https://entwicklungsstadt.de/mauerpark-am-falkplatz-nimmt-der-umbau-sichtbare-formen-an/ (Fertigstellung weiterhin erstes Halbjahr 2026)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1573145.php (Teilflächen fertiggestellt, restlicher Bereich bis Frühjahr 2026)
+#: by: https://entwicklungsstadt.de/mauerpark-sanierung-erste-teilflaeche-in-pankow-vorzeitig-fertiggestellt/
+#: by: https://gruen-berlin.de/pressemitteilung/mauerpark-falkplatz-fertiggestellt
+#: by: https://www.entwicklungsstadt.de/mauerpark-in-pankow-so-sieht-der-fertige-falkplatz-aus/
+#: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
+#: priority: #C
+#: osm_watch: note 4395422 5
+#: osm_watch: note 4558995 4
+#: last_checked: 2026-05-16
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
+# REMOVED --- #: next_check: 2026-06-30 (BA, entwicklungsstadt)
+#: next_check: 2026-06-05 (gruen berlin)
 (Gleimstr. - Mauerpark): unbefestigter Weg	Q2+ 10170,15659 10228,15488
 Lichtburgring: Asphalt	Q0 10004,15636 9965,15731 9933,15815
 Lichtburgring: Betonpflaster	Q0- 9997,15884 10016,15823 10041,15742 10057,15680 10059,15673 10022,15659
