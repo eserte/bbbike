@@ -31324,6 +31324,7 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1674654999844995072#m
 #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRnp5Mjk4YmFnQUVETTdSLmpwZw==
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20250330 (neue Baustellenampel in der Daimlerstr., bis Ende April 2025)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25895.pdf (Rückbau der Karl-Theodor-Schmitz-Brücke? Zeitraum noch in Abstimmung)
 #: also_indoor: traffic (re-G,ex-H,re-T,ex-W)
 # REMOVED (deleted) --- #: osm_watch: way id="200775245" version="13"
 #: osm_watch[closed]: note 3210197 6
@@ -33043,6 +33044,8 @@ EOF
 #: source_id: viz2021:13.479817,52.484127,31.05.2025,15:00 (bis 01.06.2025) (inaktiv)
 #: source_id: viz2021:13.49328,52.4679,31.05.2025,06:00 (bis 01.06.2025) (inaktiv)
 #: source_id: viz2021:13.4959,52.46614,31.05.2025,13:30 (bis 31.05.2025) (inaktiv)
+#: source_id: LMS-BR:410934/72 viz2021:13.49139,52.46918,06.06.2026,06:00 (bis 07.06.2026)
+#: source_id: LMS-BR:410933/72 viz2021:13.49247,52.47005,06.06.2026,06:00 (bis 07.06.2026)
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16144,7882 16406,7430 16507,7254 16633,7434 16673,7511
@@ -36979,6 +36982,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4uubfwzjppj4kxwi7podteh6y73tqqcct3aytuy3zkp65rhl4ta@jpeg
 #: source_id: viz2021:13.51394,52.45526,17.05.2025,00:00 (bis 17.05.2025) (inaktiv)
 #: source_id: viz2021:13.510985,52.455901,17.05.2025,00:00 (bis 17.05.2025) (inaktiv)
+#: source_id: LMS-BR:410942/72 viz2021:13.51413,52.45523,06.06.2026,07:00 (bis 06.06.2026)
 Spreestr.	2::temp 17782,5698 17807,5730 17810,5736 17877,5860
 Schnellerstr.	2::temp 18013,5627 17916,5675 17807,5730
 Flutstr.	2::temp 17916,5675 17931,5695 17980,5721
@@ -49224,6 +49228,7 @@ EOF
 #: url: https://www.berlin.de/events/7467849-2229501-viva-victoria-stadtteilfest-in-lichtenbe.html
 #: by: https://www.lichtenberg-nachrichten.de/kalender-termine/ (falscher Termin für 2026?)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20260605
+#: source_id: LMS-BR:410943/72 viz2021:13.47674,52.50493,06.06.2026,07:00 (bis 06.06.2026)
 Kaskelstr.	q4::temp 15245,11162 15359,11115 15434,11086
 Pfarrstr.	q4::temp 15461,11313 15359,11115 15279,10862
 EOF
@@ -50511,7 +50516,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-05 vvv
+#: last_checked: 2026-06-06 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51645,7 +51650,7 @@ EOF
        text  => 'Gotenstr.: Sperrung der Fahrbahn vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G,W,no-T)
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
@@ -52094,7 +52099,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: KNOTENMARZAHN-2022
 #: note: -> gesperrt-orig
-#: osm_watch: note 4547152 6
+#: osm_watch: note 4547152 7
 #: last_checked: 2026-06-03
 #: check_frequency: 90d
 #: next_check: 2026-12-31
@@ -53486,6 +53491,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnjkv7idhs2g
+#: by: https://www.bahninfo-forum.de/read.php?9,859744,859888#msg-859888 (Bushaltestelle Hinckeldeybrücke ebenfalls gesperrt)
 #: add_fragezeichen: Welche Wege sind gesperrt? vvv
 	2::temp 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3273,15578 3280,15543 3322,15556
 	2::temp 3140,15503 3160,15603 3061,15652

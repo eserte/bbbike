@@ -1447,7 +1447,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-06 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
@@ -2217,6 +2217,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 # 
 #: note: Detmolder Str.
 #: by: https://www.infravelo.de/projekt/detmolder-strasse/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen) (wieder in Planung) (3. Quartal 2028 - 4. Quartal 2028)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25975.pdf (Erwähnung)
 #: note: früher infravelo-Projekt "detmolder-strasse-1"
 #: XXX Sanierung der Radwege vvv
 #: last_checked: 2025-09-13 vvv
@@ -2493,6 +2494,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/radweg-auf-der-rummelsburger-landstrasse-weiter-im-wartemodus_a364244
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
 #: last_checked: 2026-05-20 vvv
 #: check_frequency: 60d vvv
@@ -3331,7 +3333,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-06-05 vvv
+#: last_checked: 2026-06-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3359,7 +3361,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-06-05
+#: last_checked: 2026-06-06
 #: check_frequency: 30d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4831,9 +4833,12 @@ Verbundsteinpflaster	RW2; -4647,12269 -4903,12055
 	RW1; -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4304,12562 -4351,12460 -4365,12358 -4412,12179
 	RW1; -4412,12179 -4365,12358 -4351,12460
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neue-radwege-neue-parkplatze-so-soll-die-fahrrad-infrastruktur-in-spandau-verbessert-werden-15558784.html (in Planung)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25983.pdf (Fertigstellung 2026)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25981.pdf (Umsetzung 2027 avisiert)
 #: XXX Gehwegplatten sollen durch Asphalt ersetzt werden, Verbreiterung auf 2,5m
 #: last_checked: 2026-05-06 (Tsp)
 #: check_frequency: 120d
+#: next_check: 2027-12-31 (pardok)
 	RW1; -4351,12460 -4304,12562 -4239,12626
 	RW1; -4239,12626 -4180,12690 -4119,12763 -4063,12842 -4008,12916 -3967,12976 -3923,13060
 	RW1;RW1 2695,7082 2535,7257
@@ -9285,6 +9290,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/mehr-sicherheit-auf-der-viel-befahrenen-magistrale_a426095
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-stitzung-vom-17072025.pdf (Stubenrauchbrücke bis Ende 2025 fertig?)
 #: by: https://www.morgenpost.de/berlin/article410443878/neue-probleme-bei-der-sanierung-des-u-bahnhofs-ullsteinstrasse.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25895.pdf (Instandsetzung Stubenrauchbrücke: Bauausführung 2028)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.385224,52.448468,03.11.2022,09:00 (Leitungsarbeiten bis 25.11.2022) (bis 5.12.2022) (bis 23.12.2022) (inaktiv)
