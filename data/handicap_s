@@ -56,6 +56,7 @@ Finckensteinallee: Bauarbeiten, schmaler Gehweg f¸r Radfahrer frei	q2::inwork; 3
 Paulinenstr.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3318,3046 3313,2842
 Kadettenweg: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3459,2944 3456,2835
 Potsdamer Str.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3644,2937 3641,2827
+F¸rst-Bismarck-Steg: Engstelle	q3 3879,22574 3907,22560
 (Wuhlewanderweg - Parchimer Str.): einige Fuﬂg‰nger	q1 22031,12208 22080,12218
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9676,14046
@@ -872,7 +873,7 @@ KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4624,15671 4444,15906 4378,15922
 KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4111,15999 4089,15978
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2942,15781 2649,15783 1737,15789
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 (Am Hohenzollernkanal - Bernauer Str.): einige Fuﬂg‰nger	q0 -192,16054 -206,16066 -207,16083 -215,16088 -257,16103
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1 -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
@@ -1694,7 +1695,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Am Gr¸ng¸rtel - Weg zwischen Triftstr. und Eichborndamm): einige Fuﬂg‰nger	q1 4597,20508 4626,20577
 (Weg am Packereigraben - Schluchseestr.): Fuﬂg‰nger	q1 5471,22092 5470,22101 5469,22114 5443,22210
 (Alt-Hermsdorf - Zehntwerderweg): Fuﬂg‰nger, kurze Rampe	q2 4613,22928 4698,22778
-(Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4268,23292 4288,23301 4338,23382 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4498,23876 4535,23922 4647,23973 4754,23998 4820,24010 4903,23999 5023,23954 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
+(Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4268,23292 4277,23296 4288,23301 4337,23370 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4495,23865 4509,23894 4535,23922 4647,23973 4754,23998 4820,24010 4903,23999 5007,23959 5027,23963 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4593,23355 4588,23362 4529,23441
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): absch¸ssige Strecke, ggfs. schieben, einige Fuﬂg‰nger	q4 4529,23441 4500,23476
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4500,23476 4444,23553
@@ -2780,6 +2781,7 @@ Warnitzer Str.: Kurven, un¸bersichtlch	q1 18141,17960 18041,18073 17962,18010 17
 (Habichtshorst - Schmetterlingswiesen): einige Fuﬂg‰nger, un¸bersichtliche Kreuzungen	q1 21592,10656 21674,10701
 Eichenstr. - Uferweg: ein paar Stufen oder Umweg ¸ber B¸rgersteig nehmen	q3 13899,10214 13918,10240
 (R¸dickenstr. - Rˆttkenring): einige Fuﬂg‰nger	q1 17499,17285 17665,17212 17683,17216
+(Bertramstr. - Wanderweg): steile Stelle	q4 5046,24000 5050,23984
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3219,7 +3221,7 @@ W¸rzburger Str.: enge Straﬂe	q0 11681,-1951 11886,-1930 11919,-1927 12082,-1908 
 Hauptweg (Biesdorf): enger Weg	q2 20834,8694 20799,8965 20802,9297
 Hallichpromenade: Fuﬂweg	q2 5388,20606 5441,20613
 Allmendeweg: enge Hausdurchfahrt	q1 3071,21801 3155,21572
-Senheimer Str.: enge Straﬂe	q1 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2540,26280 2552,26327 2562,26379 2560,26475
+Senheimer Str.: enge Straﬂe	q0 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2540,26280 2552,26327 2562,26379 2560,26475
 Romanshorner Weg: enge Straﬂe	q1 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
 Wegerichstr.: enge Straﬂe	q0 16678,2330 16666,2437 16663,2450 16538,2543
 (Hanns-Eisler-Str. - Thomas-Mann-Str.): breit, wenig Fuﬂg‰nger	q0 13548,14980 13369,15083 13324,15109 13328,15127 13289,15149 13266,15162 13123,15244

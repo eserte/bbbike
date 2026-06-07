@@ -24,6 +24,28 @@
 # REMOVED --- #: check_frequency ^^^
 # REMOVED --- #: last_checked ^^^
 # 
+#: next_check_id: CITEFOCH-2024
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_54_4143_4354_online.pdf (Benennung von Privatstraßen, mit Lageplan)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_15_0993_1064_online.pdf (Grundstücksnummern; Erwähnung der Planstraßen K und L)
+#: by: https://entwicklungsstadt.de/cite-foch-in-reinickendorf-so-sieht-es-aktuell-auf-dem-gelaende-aus/
+#: by: https://www.deutsches-architekturforum.de/thread/15267-bv-in-der-cit%C3%A9-foch-reinickendorf/?postID=779817#post779817
+#: by: https://entwicklungsstadt.de/cite-foch-dreizuegige-holzschule-als-notloesung-fuer-geplantes-wohnquartier/
+# REMOVED --- #: XXX Privatstraßen; fehlen beide in Berlin.coords.data, laut DPAG-Mitteilungsblatt und LOR 06/2025 PLZ=13469 für beide vvv --- #: XXX laut osm existiert die Rue Édith Piaf bereits
+#: add_fragezeichen: Wurde die Fahrbahndecke gemacht? vvv
+#: last_checked: 2026-06-07
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-08-06 (osm)
+# REMOVED (deleted) --- #: osm_watch: way id="439884079" version="12"
+#: osm_watch: way id="1420335622" version="7"
+Rue Édith Piaf: fester Sand, etwas Schotter	Q2 4444,21780 4410,21830 4236,21701 4235,21691
+#: osm_watch: way id="439885059" version="8"
+#: osm_watch: way id="1441876331" version="4"
+#: last_checked: 2026-06-07
+#: check_frequency: 120d
+Rue Simone de Beauvoir: fester Sand	Q2 4527,21843 4490,21893 4575,21958
+# REMOVED --- #: XXX ^^^
+#: add_fragezeichen ^^^
+# 
 #: temporary ^^^
 #: section ^^^
 ######################################################################
@@ -3436,7 +3458,7 @@ Allée du Stade: Asphalt	Q0 3591,16260 3709,16192 3781,16175 4035,16051 4054,1603
 #: corrected_by: srt (mittlerweile Wurzelschäden)
 (Am Hohenzollernkanal): Asphalt, einige teils größere Wurzelschäden	Q1+ 3775,15768 3371,15777
 #: corrected_by: srt (mittlerweile Wurzelschäden)
-(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 3371,15777 3308,15773 3252,15781 3005,15780 2942,15781 2649,15783 1737,15789
 #: corrected_by: srt (asphaltiert -> Verbundsteinpflaster)
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
 #: corrected_by: srt (mittlerweile Wurzelschäden)
@@ -9983,6 +10005,7 @@ Dübelpfad: Verbundsteinpflaster	Q1 6021,20550 6090,20414 6097,20398
 Rauhbankzeile: Verbundsteinpflaster	Q1 5959,20524 6030,20385 6040,20364
 Fuchsschwanzweg: Verbundsteinpflaster	Q1 5842,20451 5904,20327 5912,20308
 Schlitzer Str.: Asphalt	Q0 5333,21332 5400,21353 5465,21402 5535,21460 5683,21588 5759,21656
+Schlitzer Str.: Beton mit leichten Schäden	Q0- 6162,21938 5960,21796 5759,21656
 Mauschbacher Steig: Beton	Q0- 5210,21636 5111,21565 5037,21659 4967,21755
 Mauschbacher Steig: Beton, Löcher	Q1 4967,21755 5067,21831
 Dietrichinger Weg: Beton	Q0- 5136,21738 5037,21659
@@ -10001,7 +10024,7 @@ An den Fließtalhöfen: schlechtes Kopfsteinpflaster	Q3 4444,22989 4432,23066 4474
 Rundlingsteig: Beton	Q0 4403,22981 4398,23026 4332,23059 4292,23005 4291,22986
 Bornepfad: Beton	Q0 4332,23059 4312,23157
 Elkesteig: Beton	Q0 4236,23608 4355,23554
-Schildower Str.: Asphalt	Q0 4169,23451 4236,23608 4250,23642 4303,23767 4397,24033 4425,24067 4510,24170 4614,24233 4683,24275 4705,24284 4779,24321
+Schildower Str.: Asphalt	Q0 4169,23451 4236,23608 4250,23642 4303,23767 4397,24033 4425,24067 4510,24170 4614,24233 4684,24271 4706,24282 4779,24321
 Arnheidstr.: Kleinsteinpflaster	Q1- 4250,23642 4185,23679 4098,23761
 # REMOVED --- #: XXX Neubau der Straße von voraussichtlich Mitte 2015 bis voraussichtlich Ende 2016, die Fahrbahn wird dann asphaltiert sein --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129483.php --- #: XXX neue Termine: Baubeginn: voraussichtlich Frühjahr 2017, Bauende: voraussichtlich Mitte 2018 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20161104 --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579605.php (vom 10. April 2017 bis voraussichtlich 15. Oktober 2017) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170730 (bis 31.10.2017) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20180202 --- #: by: osm (asphalt) --- #: XXX: prüfen: Ist die Hermsdorfer Straße mittlerweile asphaltiert? --- #: last_checked: 2017-05-01 --- #: next_check: 2018-02-09 --- #: priority: #A
 Hermsdorfer Str.: Asphalt	Q0 3957,23981 4073,23980 4240,23985 4256,23985 4316,23995 4397,24033
@@ -10080,10 +10103,12 @@ Forlenweg: Gehwegplatten	Q0- 3978,23301 4021,23330
 Wickhofstr.: Beton	Q0 4021,23330 4030,23054
 Brandtstr.: Asphalt	Q0 3846,22943 3876,22900 3847,22863 3838,22813 3896,22718 3955,22707 3999,22721 4017,22698
 Brandtstr.: schlechtes Kopfsteinpflaster	Q3 3876,22900 3928,22900 4019,22770 4015,22736 3999,22721
-Dianastr.: Asphalt	Q0 4337,22753 4238,22734 4172,22722 4146,22701 4119,22634 4050,22428 4032,22374 3985,22236 3970,22215 3855,22055 3771,21910 3744,21854
+Dianastr.: Asphalt	Q0 4337,22753 4238,22734 4172,22722 4146,22701 4119,22634 4050,22428 4037,22389 4032,22374 3985,22236 3970,22215 3855,22055 3771,21910 3744,21854
 Halalistr.: Asphalt	Q0 4137,22301 4174,22328 4209,22338 4280,22383
 Am Leitbruch: mäßiger Asphalt	Q1- 4063,22072 4067,22066 4130,21961
-Rue Racine: Beton	Q0 4343,21602 4334,21540 4307,21506 4254,21495 4204,21536 4198,21615 4204,21705
+Rue Racine: Beton	Q0 4343,21602 4334,21540 4307,21506 4254,21495 4204,21536 4198,21615
+#: historical_note: früher Beton
+Rue Racine: Betonsteinpflaster	Q0- 4198,21615 4204,21705
 Place Molière: Verbundsteinpflaster	Q1 4334,21540 4347,21531 4382,21493
 Place Molière: Verbundsteinpflaster	Q1 4366,21482 4330,21464 4307,21506
 Rue Lamartine: Asphalt	Q0 4437,21775 4497,21694
@@ -10496,9 +10521,16 @@ Rue Charles Calmette: Beton	Q1 3753,16638 3738,16648 3711,16670 3681,16778
 Rue René Laennec: Beton	Q0- 3681,16778 3609,16759
 Rue du Dr Roux: Asphalt	Q0 3606,16453 3612,16526 3624,16564 3615,16633 3636,16663 3711,16670
 Rue Dominique Larrey: Beton mit Schäden	Q1- 3738,16648 3659,16507 3624,16445
-(Am Hohenzollernkanal - Kurt-Schumacher-Damm): Asphalt	Q0 3252,15781 3268,15787 3272,15801 3237,15858 3307,15984 3398,16000
+(Am Hohenzollernkanal - Kurt-Schumacher-Damm): Asphalt	Q0 3252,15781 3268,15787 3272,15801 3237,15858
+#: next_check_id: UFERWEGHOHENZOLLERNKANAL-2026
+#: XXX früher Asphalt, Q0; evtl. nur wegen der Bauarbeiten provisorisch aufgeschütteter Kies für die Baufahrzeuge?
+#: last_checked: 2026-06-07
+(Am Hohenzollernkanal - Kurt-Schumacher-Damm): loser Schotter	Q2- 3237,15858 3307,15984
+(Am Hohenzollernkanal - Kurt-Schumacher-Damm): Asphalt	Q0 3307,15984 3398,16000
+(ehemaliger Flughafen Tegel - Kurt-Schumacher-Damm): Asphalt	Q0 3034,15912 3171,15937 3189,15947 3196,15971 3307,15984
+(provisorische Umfahrung): provisorischer Asphalt	Q1 2942,15781 2948,15797 2943,15813 2924,15825
 (Kurt-Schumacher-Damm - KGA Vor den Toren): unbefestigte holprige Straße	Q2 3237,15858 3058,15846 3009,15811
-(Kurt-Schumacher-Damm - KGA Vor den Toren): Asphalt mit einigen Schäden	Q1 3009,15811 2972,15799 2950,15824 2701,15829
+(Kurt-Schumacher-Damm - KGA Vor den Toren): Asphalt mit einigen Schäden	Q1 3009,15811 2972,15799 2950,15824 2924,15825 2701,15829
 (KGA Vor den Toren - Zur Luftfracht): Kopfsteinpflaster	Q2 2701,15829 2701,15853
 (Uferweg - Vor den Toren): unbefestigter Weg	Q2 2649,15783 2648,15827
 (Adlerweg): Rasengittersteine	Q2 1033,16278 960,16294
@@ -10683,8 +10715,9 @@ Bad-Steben-Str.: Asphalt	Q0 4744,20288 4718,20341
 Am Klauswerder: Asphalt mit einigen Schäden	Q1+ 5335,20671 5231,20750 5170,20673
 Grebenhainer Weg: Beton	Q0 5628,21279 5465,21402
 Ulrichsteiner Weg: Gehwegplatten	Q0- 6093,21648 6066,21691
-Ulrichsteiner Weg: Beton	Q0 6066,21691 6016,21739 5966,21792
-(Schlitzer Str. - Welzower Steig): Gehwegplatten	Q0- 6162,21938 6257,22005
+Ulrichsteiner Weg: Beton	Q0 6066,21691 6016,21739 5960,21796
+(Schlitzer Str. - Welzower Steig): Gehwegplatten	Q0- 6162,21938 6205,21960 6257,22005
+(Schlitzer Str. - Welzower Steig): Gehwegplatten	Q0- 6205,21960 6223,21952
 Ettenheimer Pfad: Asphalt	Q0 4898,22459 5083,22149
 Straße 167 (Waidmannslust): unbefestigte Straße	Q2 4990,22205 4971,22138
 (Straße 167 - Weg am Packereigraben): Gras	Q3 4971,22138 4971,22128
@@ -12085,8 +12118,8 @@ Waschbärweg: Verbundsteinpflaster	Q1+ 26160,12538 26246,12648 26250,12656 26300,
 (Weg am Packereigraben - Schluchseestr.): Beton	Q0 5470,22101 5469,22114
 (Weg am Packereigraben - Schluchseestr.): Gehwegplatten	Q0- 5469,22114 5443,22210
 Lotosweg: schlechtes Kopfsteinpflaster	Q3 4910,23490 5019,23343 4951,23158 4742,23078
-(Wanderweg an den Eichwerder Moorwiesen): Verbundsteinpflaster	Q1- 4268,23292 4288,23301 4338,23382
-(Wanderweg an den Eichwerder Moorwiesen): Feinschotter	Q1 4338,23382 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4498,23876 4535,23922 4647,23973 4754,23998 4820,24010 4903,23999 5023,23954 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
+(Wanderweg an den Eichwerder Moorwiesen): Verbundsteinpflaster	Q1- 4268,23292 4277,23296 4288,23301 4337,23370
+(Wanderweg an den Eichwerder Moorwiesen): Feinschotter	Q1 4337,23370 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4495,23865 4509,23894 4535,23922 4647,23973 4754,23998 4820,24010 4903,23999 5007,23959 5027,23963 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): Schotter	Q2 4593,23355 4588,23362 4529,23441 4500,23476 4444,23553
 (Marthastr. - Wanderweg): Verbundsteinpflaster	Q1 4534,23938 4535,23922
 #: note: am Anfang der Straße ein Wildgitter, trotzdem mit dem Rad befahrbar
@@ -14169,7 +14202,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14188 (Einwohneranfrage)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14190 (Einwohneranfrage)
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
-#: last_checked: 2026-03-21 vvv
+#: last_checked: 2026-06-07 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5243,18162 5301,18447 5324,18560 5345,18675
 Ollenhauerstr.: Radspur mit schadhaftem Asphalt	Q1+; 5324,18560 5301,18447 5243,18162 5225,18070
@@ -14529,6 +14562,10 @@ Karl-Schmidt-Rottluff-Weg: Asphalt stellenweise mit Unebenheiten und Schäden	Q1 
 # 
 #: note: die letzten Meter am östlichen Ende mit Verbundsteinpflaster
 (Rüdickenstr. - Röttkenring): Beton	Q0- 17499,17285 17665,17212 17683,17216
+# 
+Fürst-Bismarck-Steg: Holzbohlen	Q1- 3879,22574 3907,22560
+# 
+(Bertramstr. - Wanderweg): unbefestigt	Q2 5046,24000 5050,23984
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -18498,8 +18535,10 @@ Peter-Huchel-Str.: Asphalt	Q0 22980,13286 23007,13509 23157,13467 23285,13441 23
 #: by: ^^^
 # 
 #: by: Lavinia Meier...: vvv
+#: corrected_by: srt (Asphalt -> Beton, mittlerweile neu gemacht: Betonsteinpflaster)
+Avenue Charles de Gaulle: Betonsteinpflaster	Q0- 4098,21809 4153,21742 4204,21705
 #: corrected_by: srt (Asphalt -> Beton)
-Avenue Charles de Gaulle: Beton	Q0- 4098,21809 4153,21742 4204,21705 4225,21696 4240,21690 4290,21635
+Avenue Charles de Gaulle: Beton	Q0- 4204,21705 4235,21691 4240,21689 4290,21635
 #: confirmed_by: srt
 Avenue Charles de Gaulle: Asphalt	Q0 4290,21635 4305,21619 4343,21602 4380,21609 4497,21694 4525,21714 4631,21788 4698,21705 4747,21645 4778,21633
 Rue Montesquieu: Asphalt	Q0 4655,21939 4527,21843 4444,21780 4437,21775 4311,21681 4316,21633 4305,21619
@@ -23051,8 +23090,7 @@ Bertramstr.: Beton	Q0 4355,23554 4373,23590 4382,23635 4380,23709 4383,23732 439
 #: corrected_by: srt (neu gemacht)
 Bertramstr.: Asphalt	Q0 4486,23979 4510,23992 4613,24032 4737,24064 4829,24067
 #: source_id: viz2021:13.328289,52.622617,20.10.2025,07:00 (bis 20.11.2025) (inaktiv)
-#: XXX Tiefbauarbeiten, danach vielleicht besserer Asphalt?
-#: next_check: 2025-11-20
+# REMOVED (nein, keine Besserung) --- #: XXX Tiefbauarbeiten, danach vielleicht besserer Asphalt? --- #: next_check: 2025-11-20
 Bertramstr.: Asphalt mit einigen Schäden	Q1 4829,24067 4942,24046 5013,24019 5046,24000
 #: corrected_by ^^^
 #: by: ^^^
@@ -23283,7 +23321,11 @@ Ritterstr. (Lichterfelde): Asphalt	Q0 4821,2954 5115,2803
 # 
 #: by: Sven Beckers vvv
 #: corrected_by: Wolfhard Schleese (Q3 -> Q2, Kleinpflastersteine)
-Senheimer Str.: mäßig befahrbare Kleinpflastersteine	Q2 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126
+#: corrected_by: srt (-> neu gemacht)
+#: note: Parkstreifen mit Kleinsteinpflaster
+Senheimer Str.: Asphalt mit gepflasterten Parkstreifen	Q0- 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772
+#: corrected_by: Wolfhard Schleese (Q3 -> Q2, Kleinpflastersteine)
+Senheimer Str.: mäßig befahrbare Kleinpflastersteine	Q2 2519,25772 2496,25915 2484,25984 2490,26126
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Verbundsteinpflaster)
 Senheimer Str.: Verbundsteinpflaster	Q1- 2490,26126 2531,26251 2540,26280 2552,26327 2562,26379 2560,26475
 #: confirmed_by: srt
@@ -25579,8 +25621,10 @@ Klettenberger Str.: guter Beton	Q0 20590,-120 20555,15 20507,196 20470,319 20453
 Gustav-Kirchhoff-Str.: Asphalt	Q0 19396,2777 19496,2674
 # 
 #: by: MaPo: vvv
-#: corrected_by: srt (guter Asphalt -> ...)
-Fürst-Bismarck-Str.: schlechtes Kopfsteinpflaster	Q3 4032,22374 3923,22535
+#: corrected_by: srt (guter Asphalt -> ...) vvv
+Fürst-Bismarck-Str.: schlechtes Kopfsteinpflaster	Q3 4032,22374 4017,22395 3923,22535
+Fürst-Bismarck-Str.: schlechtes Kopfsteinpflaster	Q3 4037,22389 4017,22395
+#: corrected_by ^^^
 #: corrected_by: srt (fester Sandweg, Q2 -> ...)
 #: corrected_by: mapillary (teils schadhafter Asphalt, teils unbefestigter Weg, Q2+ -> ...)
 Birnbaumring: Asphalt	Q0 8661,24952 8751,24988
@@ -29482,7 +29526,7 @@ Heimfriedstr.: mäßige unbefestigte Straße	Q2 15072,23535 15167,23470 15387,23310
 #: by: Theda (...bader...):
 #: confirmed_by: http://farm5.static.flickr.com/4122/4998979916_367325226d_b.jpg (Kopfsteinpflaster)
 #: corrected_by: srt (genauer: Q2 -> Q3+)
-Hochjagdstr.: Kopfsteinpflaster	Q3+ 3947,22000 4034,21900 4098,21809
+Hochjagdstr.: Kopfsteinpflaster	Q3+ 3947,22000 4010,21915 4034,21900 4098,21809
 # 
 #: by: Nora Luetge: vvv
 #: corrected_by: srt (Beton -> Asphalt)
@@ -30387,9 +30431,9 @@ Linumer Str.: gutes Verbundsteinpflaster	Q1 -4326,16581 -4175,16573
 #: corrected_by: srt (mit Betonsteinen gepflastert, Q1 -> ..., neu gemacht)
 Elsestr.: Asphalt	Q0 4665,24436 4656,24379
 #: confirmed_by: srt
-Elsestr.: Asphalt	Q0 4656,24379 4662,24326 4683,24275
+Elsestr.: Asphalt	Q0 4656,24379 4662,24326 4684,24271
 #: confirmed_by: srt
-Elsestr.: guter Beton	Q0 4705,24284 4744,24238 4801,24206 4872,24183 5044,24138
+Elsestr.: guter Beton	Q0 4706,24282 4744,24238 4801,24206 4872,24183 5044,24138
 #: by: ^^^
 # 
 #: by: Andy Heidinger:
@@ -34699,5 +34743,8 @@ Kreuzungsbereich asphaltiert mit einigen Schäden	Q1+ 9443,-1626
 Einmündungsbereich betoniert	Q0 9757,-1621
 Einmündungsbereich asphaltiert	Q0 14645,3691
 Einmündungsbereich asphaltiert	Q0 14911,3568
+Einmündungsbereich mit Kleinpflastersteinen	Q1- 2519,25772
+Kreuzungsbereich mit Kleinpflastersteinen	Q1- 2515,25666
+Kreuzungsbereich mit Kleinpflastersteinen	Q1- 2502,25544
 #: ignore ^^^
 #: section ^^^

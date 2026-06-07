@@ -567,7 +567,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-06-01 vvv
+#: last_checked: 2026-06-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1478,7 +1478,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: last_checked: 2026-05-18 (mapillary) vvv
+#: last_checked: 2026-06-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 #: XXX früher RW1;, nun Benutzungspflicht
@@ -2399,7 +2399,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-06-04 vvv
+#: last_checked: 2026-06-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -7636,7 +7636,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
 #: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2026-05-29 vvv
+#: last_checked: 2026-06-07 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
@@ -7887,8 +7887,10 @@ Gehweg für Radfahrer frei	RW1; -4323,12728 -4721,12891
 	RW6;RW6 5900,20487 5970,20353
 	RW6;RW6 5842,20451 5904,20327
 	RW1; 4724,22376 4800,22412 4898,22459 5006,22507
-Verbundsteinpflasterradwege schlechter Qualität	RW1;RW1 4169,23451 4236,23608 4250,23642 4303,23767 4397,24033 4425,24067 4510,24170 4614,24233 4683,24275 4705,24284 4779,24321
-	RW1; 4779,24321 4849,24335 4861,24316
+Verbundsteinpflasterradwege schlechter Qualität	RW1;RW1 4169,23451 4236,23608 4250,23642 4303,23767 4397,24033 4425,24067
+#: historical_note: früher (bis 2025/2026) Verbundsteinpflasterradwege schlechter Qualität, RW1;RW1
+	RW0;RW0 4425,24067 4510,24170 4614,24233 4684,24271 4706,24282 4779,24321
+	RW0; 4779,24321 4849,24335 4861,24316
 Radweg nur aufgemalt	RW1; 4224,23074 4093,23060 4030,23054
 	RW1; 4030,23054 4000,23034 3983,23021
 Radweg teilweise aufgemalt, teilweise fehlt die Markierung völlig	RW1; 3983,23021 4000,23034 4030,23054 4093,23060
@@ -8190,7 +8192,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2026-05-29 vvv
+#: last_checked: 2026-06-07 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -9861,8 +9863,10 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 	RW7;RW7 6460,8688 6644,8780 6664,8787 6852,8880 6958,8941 7101,9027 7308,9163
 # 
 #: by: osm vvv
-	RW6;RW6 4098,21809 4153,21742 4204,21705
+#: confirmed_by srt vvv
+	RW6;RW6 4098,21809 4153,21742 4204,21705 4235,21691
 	RW6;RW6 4204,21705 4198,21615
+#: confirmed_by ^^^
 #: by ^^^
 # 
 	RW7;RW7 11917,11186 11726,11265 11542,11342 11507,11355

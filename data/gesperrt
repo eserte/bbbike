@@ -292,11 +292,9 @@ Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
 Harnackstr.	1 15837,11529 15881,11621 15875,11692 15917,11782 15984,11827 16020,11814 16099,11786
 Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13399,16398 13377,16378 13348,16387 13331,16424
 Treskowstr. (Mahlsdorf)	1s 24563,11980 24491,11972
-Knoten am Flughafen Tegel	1 2996,15930 2960,15847
-Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
-Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
-Knoten am Flughafen Tegel	1 2828,15903 2880,15908 2913,15944
-(Zur Luftfracht)	1 2880,15884 2787,15870
+Knoten am Flughafen Tegel	1 3034,15912 2981,15896 2957,15844
+Knoten am Flughafen Tegel	1 2957,15844 2880,15884
+(Zur Luftfracht)	1 2880,15884 2801,15871
 Zum Flughafen Tegel	1 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293
 Eschengraben	1 11755,17216 11778,17066 11781,17046 11817,16870 11831,16802 11776,16753
 Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
@@ -1057,13 +1055,14 @@ Mittelstreifen mit niedrigem Geländer, Ketten am Hochbord	3nocross::ignrte 3291,
 Luisenpl. -> Schloßpark Charlottenburg: Mittelstreifen mit niedrigem Geländer, Ketten am Hochbord	3::igndisp 3269,12648 3275,12667 3261,12670
 Schloßpark Charlottenburg -> Luisenpl.: Mittelstreifen mit niedrigem Geländer, Ketten am Hochbord	3::igndisp 3261,12670 3275,12667 3291,12721
 Margot-Friedländer-Platz	1 8830,11264 8935,11277
+Fürst-Bismarck-Str.	1 4017,22395 4037,22389
+Fürst-Bismarck-Str.	1 4032,22374 4017,22395
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
 Müggelheimer Damm	2::igndisp 23476,3829 23368,3894
 B2	2::igndisp -13096,5584 -12865,5567 -12718,5571
 Glienicker Str. (Köpenick): Radweg	1::igndisp 21363,3699 21308,3644
-Nordufer: Radweg	1::igndisp 7156,14763 7129,14787
 (Spandauer Damm - Wiesendamm)	1::igndisp -278,13094 -227,12994
 Köpenicker Str. - Rapsweißlingstr.	1::igndisp 21137,11200 21163,11172
 Konrad-Wolf-Allee [Nebenstraße]	1 -7189,-4365 -7476,-4673
@@ -1830,10 +1829,6 @@ Wuhlewanderweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::ignd
 Wuhlewanderweg -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22244,11311 22242,11269 22238,11223
 Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 21954,11269
 Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 22244,11311
-Mittelstreifen nicht passierbar	3nocross::ignrte 2944,15880 2913,15944 2892,15983 2809,16143
-Zum Flughafen Tegel -> Knoten am ehemaligen Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2944,15880 2913,15944 2880,15908
-Knoten am ehemaligen Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2944,15880
-Knoten am ehemaligen Flughafen Tegel -> Knoten am ehemaligen Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2880,15908
 Straßenbahntrasse	3nocross::ignrte 10904,17288 10899,17331 10892,17396
 Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10892,17396 10899,17331 11094,17339
 Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11094,17339 10899,17331 10904,17288
@@ -3576,6 +3571,11 @@ Drängelgitter	BNP:3:-248:trailer=10 113,7
 Drängelgitter	BNP:3:-68:trailer=10 17498,9714
 Schwingtor	BNP:5:-191:trailer=10 4183,13725
 Drängelgitter	BNP:3:-262:trailer=10 -1940,24464
+Drängelgitter	BNP:3:-113:trailer=10 4277,23296
+Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12780
+Nordufer: Radweg wird vermutlich zurückgebaut	2::inwork 7156,14763 7129,14787
+Knoten am ehemaligen Flughafen Tegel: Rückbau	2::inwork 2996,15930 3009,15965 2988,15999 2954,16006 2846,15986 2818,15966 2810,15931 2828,15903
+Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::ignrte::inwork 13685,12664 13622,12806 13579,12904
 Petersburger Str. -> Mühsamstr.: Überquerung in Höhe Mühsamstr. nicht möglich	3::igndisp::inwork 13579,12904 13622,12806 13818,12897
 Petersburger Str. -> Mühsamstr.: Überquerung in Höhe Mühsamstr. nicht möglich	3::igndisp::inwork 13685,12664 13622,12806 13559,12779

@@ -442,7 +442,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschr‰nkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-06-04 vvv
+#: last_checked: 2026-06-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -1515,6 +1515,13 @@ Potsdamer Str.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3644,293
 ### Wilhelmsruh ###
 # 
 # REMOVED --- #: source_id: viz2021:13.364194,52.588051,07.08.2024,08:00 (hier: falscher Abschnitt, bis 20.09.2024, weiterer Bauabschnitt folgt) (inaktiv) --- #: also_indoor: traffic (ex-G,H,ex-B,ex-T,ex-W) [alle falsch] --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: osm_watch: way id="4765039" version="26" --- #: osm_watch[closed]: note 4522036 1 --- #: last_checked: 2024-11-18 (mapillary) --- #: next_check: 2024-09-20 --- (hier fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7533,20275 7577,20450 ---  (hier auch fertig) --- Uhlandstr.: Fahrbahn wegen Asphaltierungsarbeiten gesperrt	q4::inwork 7506,20170 7533,20275
+# 
+### Waidmannslust ###
+# 
+#: next_check_id: FUERSTBISMARCKSTEG-2026
+#: last_checked: 2026-06-07
+#: check_frequency: 60d
+F¸rst-Bismarck-Steg: Engstelle	q3 3879,22574 3907,22560
 # 
 #: temporary ^^^
 #: section ^^^
@@ -2830,7 +2837,7 @@ KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4624,15671 4444,15906 4378,15922
 KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4111,15999 4089,15978
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2649,15783 1737,15789
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2942,15781 2649,15783 1737,15789
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
 (Am Hohenzollernkanal - Bernauer Str.): einige Fuﬂg‰nger	q0- -192,16054 -206,16066 -207,16083 -215,16088 -257,16103
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
@@ -3981,7 +3988,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Am Gr¸ng¸rtel - Weg zwischen Triftstr. und Eichborndamm): einige Fuﬂg‰nger	q1 4597,20508 4626,20577
 (Weg am Packereigraben - Schluchseestr.): Fuﬂg‰nger	q1- 5471,22092 5470,22101 5469,22114 5443,22210
 (Alt-Hermsdorf - Zehntwerderweg): Fuﬂg‰nger, kurze Rampe	q2 4613,22928 4698,22778
-(Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4268,23292 4288,23301 4338,23382 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4498,23876 4535,23922 4647,23973 4754,23998 4820,24010 4903,23999 5023,23954 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
+(Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4268,23292 4277,23296 4288,23301 4337,23370 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4495,23865 4509,23894 4535,23922 4647,23973 4754,23998 4820,24010 4903,23999 5007,23959 5027,23963 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4593,23355 4588,23362 4529,23441
 #: note: von S¸den her steht hier ein Schild mit durchgestrichenem Rad
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): absch¸ssige Strecke, ggfs. schieben, einige Fuﬂg‰nger	q4 4529,23441 4500,23476
@@ -5820,6 +5827,8 @@ Eichenstr. - Uferweg: ein paar Stufen oder Umweg ¸ber B¸rgersteig nehmen	q3 1389
 # 
 (R¸dickenstr. - Rˆttkenring): einige Fuﬂg‰nger	q1- 17499,17285 17665,17212 17683,17216
 # 
+(Bertramstr. - Wanderweg): steile Stelle	q4 5046,24000 5050,23984
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -6759,7 +6768,8 @@ Hallichpromenade: Fuﬂweg	q2 5388,20606 5441,20613
 Allmendeweg: enge Hausdurchfahrt	q1+ 3071,21801 3155,21572
 # 
 #: by: Sven Beckers
-Senheimer Str.: enge Straﬂe	q1 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2540,26280 2552,26327 2562,26379 2560,26475
+#: corrected_by: srt/policy (q1 -> q0-)
+Senheimer Str.: enge Straﬂe	q0- 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2540,26280 2552,26327 2562,26379 2560,26475
 # 
 #: by: Jan Riemke:
 Romanshorner Weg: enge Straﬂe	q1 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
@@ -7054,7 +7064,7 @@ Tankredstr.: enge Straﬂe, Kurve	q1 8264,5383 8328,5417 8365,5418 8394,5412 8480,
 #: by: Thomas Penski:
 Battenheimer Weg: enge Straﬂe	q1 11762,1040 11681,1031 11393,1243
 #: by: MaPo: vvv
-# REMOVED (corrected_by: srt (q1 -> q0-), dann komplett entfernt) --- F¸rst-Bismarck-Str.: enge Straﬂe	q0- 4032,22374 3923,22535
+# REMOVED (corrected_by: srt (q1 -> q0-), dann komplett entfernt) --- F¸rst-Bismarck-Str.: enge Straﬂe	q0- 4032,22374 4017,22395 3923,22535
 #: corrected_by: srt (q2 -> q0-)
 Birnbaumring: enge Straﬂe	q0- 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8501,25358
 #: by: ^^^

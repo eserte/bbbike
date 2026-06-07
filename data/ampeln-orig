@@ -33,7 +33,7 @@ Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9
 #: osm_watch: node id="13704066872" version="1"
 #: osm_watch: node id="13704066873" version="1"
 #: note: manchmal (oder immer?) bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20)
-#: last_checked: 2026-05-18 (mapillary)
+#: last_checked: 2026-06-07
 #: check_frequency: 90d
 #: next_check: 2028-03-03
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
@@ -2554,6 +2554,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5517,20120
 	X 5476,20372
 # REMOVED (hier nicht mehr, vielleicht nur vorübergehend?) ---	F 5341,21266
+#: note: Anforder für Radfahrer aus dem Göschenplatz
 	X 5343,21250
 	X 5819,21057
 	X 5926,21525
@@ -4239,7 +4240,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	X 9242,7325
 #: note ^^^
 #: note: evtl. dauerhaft ausgeschaltet (gesehen 2023-10-03)
-	F0 2944,15880
+	F0 2941,15878
 	X 18875,13467
 #: note: Anforderungsampel
 #: XXX_prog: Ampel für Radfahrer offiziell nicht relevant
@@ -4363,6 +4364,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: note: Anforderungsampel
 #: off: 2016-10-03 Sun ~15:45
+#: off: 2026-07-07 Sun 08:31
 #: on:  2016-10-08 Sat ~15:00
 #: off_rule: Sun
 	F 3273,14738
