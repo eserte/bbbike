@@ -1571,6 +1571,8 @@ Grünbeschichtung	RW3;RW3 2997,4378 2852,4584 2756,4709 2742,4727 2735,4736 2596,
 #: note: Thielallee, Richtung Norden
 	RW3; 2308,3862 2348,4026 2372,4127 2407,4280
 	RW4; 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
+#: note: Thielallee, Richtung Süden
+	RW4?; 2596,4907 2573,4889 2531,4733 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
 # 
 Radweg nur aufgemalt	RW1; 4246,9406 4057,9648
 Radweg nur aufgemalt	RW1; 4057,9648 4246,9406
@@ -2496,12 +2498,12 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-05-20 vvv
+#: last_checked: 2026-06-08 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
+recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
 asphaltiert	RW2; 17681,7589 17611,7690
 provisorische geschützte Radspur	RW3; 17611,7690 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
-recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3404,7 +3406,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-05-29
+#: last_checked: 2026-06-08
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3415,7 +3417,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-05-29
+#: last_checked: 2026-06-08
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4835,6 +4837,7 @@ Verbundsteinpflaster	RW2; -4647,12269 -4903,12055
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neue-radwege-neue-parkplatze-so-soll-die-fahrrad-infrastruktur-in-spandau-verbessert-werden-15558784.html (in Planung)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25983.pdf (Fertigstellung 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25981.pdf (Umsetzung 2027 avisiert)
+#: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13329 (Bau im Sommer (2026?))
 #: XXX Gehwegplatten sollen durch Asphalt ersetzt werden, Verbreiterung auf 2,5m
 #: last_checked: 2026-05-06 (Tsp)
 #: check_frequency: 120d
@@ -9405,6 +9408,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/28012026_fahrrat_protokoll_praesentation.pdf (unklare Finanzierung)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1674129.php (Realisierung eines Radwegs zwischen Alboinstr. und Eresburgstr.; Arbeiten an der Ampelanlage bis Sep 2026)
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article412109710/schoeneberger-strasse-soll-verkehrssicher-werden-was-geplant-ist.html
+#: by: https://www.entwicklungsstadt.de/radweg-an-der-schoeneberger-strasse-bau-startet-nach-fast-zehn-jahren/
 #: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße); mittlerweile ist nur von einer Erneuerung der Ampelanlage an der Alboinstr. die Rede
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)

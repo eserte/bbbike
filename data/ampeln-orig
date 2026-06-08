@@ -491,7 +491,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-05-29
+#: last_checked: 2026-06-08
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -4239,8 +4239,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: note: Anforderungsampel für linksabbiegende Radfahrer (Te-Damm -> Manfred-von-Richthofen-Str.)
 	X 9242,7325
 #: note ^^^
-#: note: evtl. dauerhaft ausgeschaltet (gesehen 2023-10-03)
-	F0 2941,15878
+# REMOVED (mittlerweile abgebaut) --- #: note: evtl. dauerhaft ausgeschaltet (gesehen 2023-10-03) ---	F0 2941,15878
 	X 18875,13467
 #: note: Anforderungsampel
 #: XXX_prog: Ampel für Radfahrer offiziell nicht relevant

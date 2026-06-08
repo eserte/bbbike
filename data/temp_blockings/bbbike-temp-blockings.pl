@@ -31330,9 +31330,9 @@ EOF
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="20"
 #: osm_watch: way id="1148659680" version="8"
-#: last_checked: 2026-05-11 (osm)
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: check_frequency: 30d
+#: last_checked: 2026-06-08 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 30d (non-traffic)
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
@@ -33679,17 +33679,19 @@ EOF
 #      text  => 'Trautenauer Str.: Fahrbahn wegen Bauarbeiten am Projekt "Parkstadt Karlshorst" gesperrt',
 #      text  => 'Trautenauer Str.: Einbahnstraßenregelung zwischen Georg-Klingenberg-Str. und Ehrlichstr.',
 #      text  => 'Trautenauer Str.: Einbahnstraßenregelung ab Georg-Klingenberg-Str.',
-       text  => 'Trautenauer Str.: Einbahnstraßenregelung, offen Richtung Süden',
+       text  => 'Trautenauer Str.: kurze Einbahnstraßenregelung, offen Richtung Süden',
        type  => 'handicap',
        data  => <<'EOF',
 # REMOVED (nicht mehr) --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2021-03-01 --- #: check_frequency: 45d
 # REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349 ---	q4::inwork 17771,8349 17753,8290
 #: next_check_id: BLOCKDAMMWEG-2026
-#: note: vielleicht Baustelleneinrichtung für den Blockdammweg, vielleicht schon vorbereitend für die Sperrung der Ehrlichstr. und Umleitungsverkehr via Georg-Klingenberg-Str. und Trautenauer Str.
-#: last_checked: 2026-05-28
+#: note: vielleicht Baustelleneinrichtung für den Blockdammweg, vielleicht schon vorbereitend für die Sperrung der Ehrlichstr. und Umleitungsverkehr via Georg-Klingenberg-Str. und Trautenauer Str., oder was ganz anderes
+#: last_checked: 2026-06-08
 #: check_frequency: 14d
-	q4::inwork; 17813,8508 17830,8578 17838,8611 17846,8644
 # REMOVED (früher Einbahnstraßenregelung ab Ehrlichstr.) ---	q4::inwork; 17879,8773 17851,8662 17846,8644
+# REMOVED (früher?) ---	q4::inwork; 17813,8508 17830,8578 17838,8611 17846,8644
+#: note: weil kurz und gut zu überblicken: q4 -> q3
+	q3::inwork; 17794,8429 17813,8508
 EOF
      },
      { from  => undef, # 
@@ -34712,17 +34714,18 @@ EOF
 	q4::inwork; 16958,11778 16815,11729 16786,11668
 EOF
      },
-     { from  => undef, # 1624744800, # 2021-06-27 00:00
-       until => 1693246115, # undef, # 1630533600, # 2021-09-02 00:00
-       text  => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt (Stand Anfang Juli 2023)', # was: 'vom 28.06.2021 bis voraussichtlich 01.09.2021'
+     { from  => $isodate2epoch->("2026-06-14 00:00:00"), # undef, # 1624744800, # 2021-06-27 00:00
+       until => $isodate2epoch->("2026-06-19 23:59:59"), # 1693246115, # undef, # 1630533600, # 2021-09-02 00:00
+#      text  => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt (Stand Anfang Juli 2023)', # was: 'vom 28.06.2021 bis voraussichtlich 01.09.2021'
+       text  => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. wegen Bauarbeiten gesperrt, 15.6.2026 bis 19.6.2026',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (endgültig beendet) --- #: next_check_id: HASSELWERDERPARK-2021
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1100562.php (Sperrung 2021)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/hasselwerder-park-mit-neuen-wegen_a314970 (Sperrung 2021)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1678941.php (neue Sperrung 2026)
 # REMOVED --- #: XXX neue Sperrung 2022-2023, bis wann? Bekommt der gesperrte Abschnitt einen neuen Belag (Verbundsteinpflaster?)? --- #: add_fragezeichen: Ist der Weg im Hasselwerderpark noch immer gesperrt? --- #: last_checked: 2023-08-28 (osm) --- #: check_frequency: 60d
-	2::inwork 18634,5484 18667,5467 18695,5453
-# REMOVED (hier nicht) ---	2::inwork 18506,5596 18560,5539 18634,5484
+	2::inwork 18506,5596 18560,5539 18634,5484 18667,5467 18695,5453
 EOF
      },
      { from  => undef, # 1625250931, # 2021-07-02 20:35
@@ -41083,7 +41086,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-08 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -45697,7 +45700,7 @@ EOF
 #: note: laut BA-Pressemitteilung auch für den Radverkehr frei
 #: note: nur etwa 50m, deshalb nur q2
 Bäkestr.: Fahrbahn zwischen Zebrastreifen und Promenade gesperrt, nördlicher Bürgersteig frei	q2::inwork 4411,3180 4587,3097
-#: osm_watch: way id="121176503" version="12"
+#: osm_watch: way id="121176503" version="14"
 #: note: laut BA-Pressemitteilung Umleitung via Eduard-Spranger-Promenade, aber diese ist für Radfahrer eigentlich nicht erlaubt?
 Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4274,2717
 #: next_check ^^^
@@ -46676,15 +46679,21 @@ EOF
 EOF
      },
      { from  => 1727586000, # 2024-09-29 07:00
-       until => 1730908800, # 2024-11-06 17:00
-       text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, vom 30.09.2024 07:00 bis 06.11.2024 17:00',
+       until => $isodate2epoch->("2026-07-15 23:59:59"), # 1730908800, # 2024-11-06 17:00
+#      text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, vom 30.09.2024 07:00 bis 06.11.2024 17:00',
+       text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, voraussichtlich bis Mitte Juli 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.31115,52.491561,30.09.2024,07:00 (bis 06.11.2024) (inaktiv)
+#: source_id: LMS-BR:409870/72 viz2021:13.30936,52.49204, (bis 15.07.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1840620338042085619
 #: by: https://pbs.twimg.com/media/GYfo8hGWQAATDdF?format=jpg&name=large
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/gesperrt-wegen-bauarbeiten_a426523
-	q4::inwork; 4193,9404 4011,9474
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnr4slx62k2b
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihl62k3nqtl35itj6bdgwcobwdwms23ftrpxlughecy4tywowdopu (auch der nördliche Bürgersteig scheint gesperrt zu sein)
+#: also_indoor: traffic (G,T,H,W)
+#: next_check: 2026-07-15 (wird verlängert?)
+	q4::inwork; 4246,9406 4193,9404 4011,9474
 EOF
      },
      { from  => 1728165600, # 2024-10-06 00:00
@@ -47475,7 +47484,7 @@ EOF
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: way id="89413122" version="10"
 #: osm_watch: note 5293716 1
-#: last_checked: 2026-05-10 (traffic)
+#: last_checked: 2026-06-08 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2028-12-31
@@ -48383,6 +48392,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/marzahner-chaussee-rohbauarbeiten-fuer-neue-wohnungen-kommen-voran/ (Fertigstellung: geplant bis 2027)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260605 (Fräsarbeiten bis Ende Juni 2026, Baustellenampel)
 #: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026) (bis 30.04.2026) (bis 08.05.2026) (vorfristig inaktiv)
+#: source_id: LMS-BR:411214/72 viz2021:13.53353,52.52323,08.06.2026,12:00 (Gegenverkehrsregelung, bis 26.06.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
 #: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m)
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
@@ -50211,10 +50221,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben), 2025-12-06 Sat 11:20 nicht passierbar
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G[zu lang?],no-T,no-W,no-H)
 #: osm_watch: way id="1163982841" version="3"
-#: last_checked: 2026-03-11
-#: check_frequency: 90d
+#: last_checked: 2026-06-08 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 90d
 #: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
 EOF
@@ -51575,7 +51586,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: osm_watch: note 5049958 2
-#: osm_watch: way id="1127993128" version="7"
+#: osm_watch: way id="1127993128" version="9"
 #: last_checked: 2026-06-07
 #: check_frequency: 45d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
@@ -51655,7 +51666,8 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
-#: last_checked: 2026-05-09
+#: last_checked: 2026-06-08 (traffic)
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
 	q4::inwork 7497,7761 7499,7880
@@ -51753,7 +51765,7 @@ EOF
 #: note: Halteverbotsschilder bis 30.04.2026
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
 #: add_fragezeichen: Wann sie die Bauarbeiten beendet?
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-08 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2026-04-30 (Halteverbotsschilder) vvv
 Hönower Str.: Einbahnstraßenregelung	q4::inwork; 18660,9410 18735,9421
@@ -52374,9 +52386,10 @@ EOF
 	q4::temp 10696,12601 10599,12526
 EOF
      },
-     { from  => 1772341200, # 2026-03-01 06:00
+     { from  => $isodate2epoch->("2026-06-08 00:00:00"), # 1772341200, # 2026-03-01 06:00
        until => 1787335200, # 2026-08-21 20:00
-       text  => 'Forstallee: Bauarbeiten zwischen Birkenallee und Fasanenstr., Sperrung, 02.03.2026 06:00 Uhr bis 21.08.2026 20:00 Uhr',
+#      text  => 'Forstallee: Bauarbeiten zwischen Birkenallee und Fasanenstr., Sperrung, 02.03.2026 06:00 Uhr bis 21.08.2026 20:00 Uhr',
+       text  => 'Forstallee: Bauarbeiten zwischen Fasanenstr. und Waldpromenade, Sperrung, 09.06.2026 bis 21.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: FORSTALLEEZEUTHEN-2026
@@ -52384,9 +52397,10 @@ EOF
 #: by: https://www.zeuthen.de/Information-zum-Ausbau-der-Forstallee-707600.html (nächster Bauabschnitt zwischen Fasanenstr./Weichselstr. und Waldpromenade ab 9.6.2026 bis Ende November 2026)
 #: by: https://www.zeuthen.de/cache/43090_1164.png
 #: source_id: 266100065 (bis 21.08.2026)
-#: next_check: 2026-06-09 (zeuthen.de: nächster Bauabschnitt)
-Forstallee: 1. BA zwischen Birkenallee und Fasanenstr.	q4::inwork 25400,-6408 25083,-6494
-#Forstallee: 2. BA zwischen Fasanenstr./Weichselstr. und Waldpromenade	q4::inwork 25083,-6494 24946,-6533
+# REMOVED --- #: next_check: 2026-06-09 (zeuthen.de: nächster Bauabschnitt)
+#Forstallee: 1. BA zwischen Birkenallee und Fasanenstr.	q4::inwork 25400,-6408 25083,-6494
+#: next_check: 2026-08-21 (gibt es weitere Bauabschnitte?)
+Forstallee: 2. BA zwischen Fasanenstr./Weichselstr. und Waldpromenade	q4::inwork 25083,-6494 24946,-6533
 EOF
      },
      { from  => undef, # 
@@ -52545,10 +52559,10 @@ EOF
 #: osm_watch: note 5193492 3
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-05-28 vvv
+#: last_checked: 2026-06-08 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
-# REMOVED (wird sehr wahrscheinlich verlängert) --- #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
+# REMOVED (wird sehr wahrscheinlich verlängert) (tatsächlich weiterhin Baustelle) --- #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
 #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten) vvv
 #: osm_watch: way id="1456917114" version="4"
@@ -52647,7 +52661,7 @@ EOF
        text  => 'Wilhelmsaue: Bauarbeiten zwischen Gerdauer Str. und Bundesallee, Sperrung der Fahrbahn, vom 17.03.2026 07:00 bis 08.06.2026 17:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:402038/72 viz2021:13.328819,52.485151,17.03.2026,07:00 (bis 08.06.2026)
+#: source_id: LMS-BR:402038/72 viz2021:13.328819,52.485151,17.03.2026,07:00 (bis 08.06.2026) (inaktiv)
 	q4::inwork 5498,8726 5347,8732
 EOF
      },
@@ -52811,7 +52825,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdl-hohenstaufen-pallas-und-goebenstr/?postID=795563#post795563
 #: also_indoor: traffic (G,no-T,no-W,no-H)
 #: osm_watch: way id="251962463" version="5"
-#: last_checked: 2026-05-09
+#: last_checked: 2026-06-08 (traffic)
 #: check_frequency: 30d
 #: next_check: 2027-12-31 (neubaukompass website)
 	q4::inwork; 4886,6819 4886,6711
@@ -53253,27 +53267,28 @@ Heinersdorf - Abzweig Tempelberg: 1. BA	2::inwork 65225,6403 64604,5980 64086,54
 EOF
      },
      { from  => $isodate2epoch->("2026-05-12 00:00:00"),
-       until => $isodate2epoch->("2026-06-09 23:59:59"),
-       text  => 'Tauentzienstr.: Fernwärmeleitung gebrochen, Abschnitt der Fahrbahn gesperrt, bis Anfang Juni 2026',
+       until => $isodate2epoch->("2026-07-31 23:59:59"),
+#      text  => 'Tauentzienstr.: Fernwärmeleitung gebrochen, Abschnitt der Fahrbahn gesperrt, bis Anfang Juni 2026',
+       text  => 'Tauentzienstr.: Fernwärmeleitung gebrochen, Abschnitt der Fahrbahn gesperrt, bis Ende Juli 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260512 (nur Kfz-Verkehr betroffen, vier Wochen)
 #: by: https://fahrinfo.vbb.de/him-uploads/1779179333882_Kartenausschnitt_Tauentzienstr_.jpg (Umleitung des Busverkehrs)
-#: source_id: LMS-BR:407953/72 viz2021:13.339174,52.503283,12.05.2026,10:00 (bis 09.06.2026)
+#: source_id: LMS-BR:407953/72 viz2021:13.339174,52.503283,12.05.2026,10:00 (bis 09.06.2026) (bis 31.07.2026)
 #: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_336720
 #: source_id: bvg2024:m19#HIM_FREETEXT_336928
-#: also_indoor: traffic (T,no-G)
+#: also_indoor: traffic (T,G[mittlerweile])
 #: traffic_note: Durch den Umleitungsverkehr Stauungen im umliegenden Straßennetz. Gesehen 2026-05-12 Tue 17:39 Nürnberger Str. Richtung SW 6'
 #: note: etwa 50m der Fahrbahn ist gesperrt, kann z.B. auf der Mittelpromenade umfahren/umgangen werden, außerdem muss die Barriere an der Nürnberger Str. umfahren werden
 #: note: eigentlich q4+ oder q3-
-#: last_checked: 2026-05-21
-#: next_check: 2026-06-09 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-06-08 (traffic, VIZ-Verkehrsmeldung)
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	q4::inwork; 6025,10746 5907,10821
 EOF
      },
      { from  => 1779660000, # 2026-05-25 00:00
-       until => 1781128800, # 2026-06-11 00:00
-       text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Liepnitzstr. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung im Hönower Wiesenweg, vom 26.05.2026 bis voraussichtlich 10.06.2026',
+       until => $isodate2epoch->("2026-07-11 00:00:00"),
+       text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Liepnitzstr. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung im Hönower Wiesenweg, vom 26.05.2026 bis voraussichtlich 10.07.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: EHRLICH-2026
@@ -53288,14 +53303,14 @@ EOF
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
-#: last_checked: 2026-05-28 vvv
-# REMOVED --- #: next_check: 2026-05-26 vvv
+#: last_checked: 2026-06-08 vvv
+#: next_check: 2026-07-10 (2. BA?) vvv
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn und des nördlichen Bürgersteigs	q4::inwork; 17879,8773 17736,8850 17720,8854 17702,8855
 # REMOVED (hier nicht) --- Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17588,8413 17581,8422 17554,8458 17533,8505 17521,8549 17515,8567 17497,8623 17468,8692
 Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 ##: note: Bauabschnitt 2: vsl. 10.07. bis vsl. 06.09.2026
 #Ehrlichstr.: Vollsperrung zwischen Liepnitzstr. und Heiligenberger Str.	q4::inwork 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377
@@ -53514,8 +53529,8 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: UFERWEGHOHENZOLLERNKANAL-2026
-#: osm_watch: note 5306663 1
-#: osm_watch: note 5306663 1
+#: osm_watch: note 5306663 2
+#: osm_watch: note 5306662 2
 #: priority: #A vvv
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
 #: last_checked: 2026-06-07 vvv
