@@ -4118,7 +4118,7 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: XXX ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-06-02
+#: last_checked: 2026-06-09
 Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
@@ -4612,7 +4612,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 2
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-09 (daf) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2028-03-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1054783030" version="9"
@@ -4706,15 +4706,17 @@ Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
 #: by: https://www.deutsches-architekturforum.de/thread/15360-quartier-hugos-mariendorf/?postID=731063#post731063 ("Quartier Hugos")
 #: by: https://entwicklungsstadt.de/zwischen-baustelle-und-nachbarschaft-wie-sich-das-quartier-hugos-entwickelt/ (bis Herbst 2026)
 #: osm_watch: way id="287142081" version="15"
-#: osm_watch: way id="255588538" version="17"
+#: osm_watch: way id="255588538" version="18"
 #: osm_watch: way id="1022315542" version="11"
 #: osm_watch: way id="1202387366" version="4"
 # REMOVED --- #: osm_watch: way id="271172796" version="6"
 # REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
 #: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
+#: add_fragezeichen: Ist die Straße mittlerweile fertig und offen?
 #: last_checked: 2026-05-26 (daf)
 #: check_frequency: 120d
-#: next_check: 2026-10-31 (bonava website)
+# REMOVED --- #: next_check: 2026-10-31 (bonava website)
+#: next_check: 2026-06-08 (osm: offen)
 An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)

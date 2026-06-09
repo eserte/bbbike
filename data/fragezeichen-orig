@@ -7802,7 +7802,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="4"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-09
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7982,6 +7982,7 @@ Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::project
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-droht-der-mega-stau-diese-baustellen-legen-den-westen-lahm-li.10026528 (Beginn 2027, Dauer acht Jahre)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1665628.php
 #: by: https://www.entwicklungsstadt.de/2-400-wohnungen-im-berliner-westen-rahmenplan-setzt-startpunkt-fuer-grossentwicklung/
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1679415.php
 #: also_indoor: url https://www.berlin.de/sen/stadtentwicklung/staedtebau/stadteingang-west/
 #: osm_watch: node id="29997721" version="4"
 #: osm_watch: way id="24756980" version="17"
@@ -9417,7 +9418,7 @@ Kunow - Neue Mühle (Radrundweg): Anbindung geplant	? 66896,81995 66945,81927 669
 #: next_check_id: MICHELANGELO-2025
 #: note: laut Aushang ab Sommer (Juni?) 2025 bis Frühjahr 2027; mittlerweile 1. BA von September 2025 bis Frühjahr 2027; der 2. BA (der vermutlich diese Verbindung betrifft) von 2027 bis 2028
 #: note: ab 13325,15619 Richtung Südosten Bauarbeiten mit Sperrung (gesehen: Mapillary, 2025-10-24; srt, 2025-11-06)
-#: last_checked: 2026-04-02
+#: last_checked: 2026-06-09
 #: check_frequency: 120d
 #: next_check: 2027-04-01
 Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrungen geben?	? 13724,15309 13700,15375 13687,15387 13608,15436 13597,15443
@@ -10051,6 +10052,13 @@ Dorotheenstr. (Mitte): Umbenennung zu Yad-Vashem-Straße am 20.1.2027	?::projecte
 #: next_check: 2026-11-15 (BVV-Drucksache)
 Elsflether Str.: Zebrastreifen soll entstehen	? -4040,13593 -4011,13656 -3992,13593
 # 
+#: next_check_id: SPEKTELAGESTEG-2026
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/spektelakesteg-i-und-ii/ (geplante Bauzeit: 2027 bis 2028)
+#: next_check: 2027-03-15 (SenUVK website) vvv
+Spektelakesteg I: geplante Erhaltungsmaßnahmen	?::projected -6816,15318 -6819,15305
+Spektelakesteg II: geplante Erhaltungsmaßnahmen	?::projected -6147,15204 -6184,15162
+#: next_check ^^^
+# 
 #: section ^^^
 #: ignore ^^^
 # 
@@ -10682,8 +10690,9 @@ Goebelstr.: wird hier ein öffentlicher für Radfahrer benutzbarer Weg entstehen, 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12305 (Vorlage zur Beschlussfassung)
 #: by: https://www.deutsches-architekturforum.de/thread/11058-spandau-kleinere-projekte/?postID=783542#post783542
 #: by: https://am-salzhof-berlin.de/ (Vermietung ab 2027)
-#: last_checked: 2026-01-11 (luftbildsuche)
-#: check_frequency: 720d
+#: by: https://www.deutsches-architekturforum.de/thread/15680-quartier-am-salzhof/?postID=798665#post798665
+#: last_checked: 2026-06-09 (daf)
+#: check_frequency: 360d
 #: next_check: 2027-12-31 (am-salzhof website)
 Daumstr.: abzweigende Wohngebietsstraße wird entstehen, Sackgasse	?::projected -1706,15794 -1492,15901
 # 
@@ -11479,6 +11488,8 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.morgenpost.de/bezirke/pankow/article410137027/stopp-fuer-pankower-tor-senat-nimmt-bescheid-zurueck.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/strassenbahn-anschluss-fur-neues-stadtquartier-so-soll-eine-neue-tramlinie-in-berlin-pankow-den-stau-uberwinden-15061179.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_17_0997_1056_online.pdf (FNP-Änderung)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1679389.php (Informationsveranstaltung)
+#: by: https://www.entwicklungsstadt.de/pankower-tor-bezirk-informiert-ueber-aktuellen-planungsstand/
 #: osm_watch: way id="97369501" version="15"
 # REMOVED (404) --- #: also_indoor: webcam https://portal1761.webcam-profi.de/ (vom Lokschuppen)
 #: last_checked: 2025-09-17
@@ -13039,6 +13050,8 @@ Tamara-Danz-Str. - Rudolfstr.: wird hier eine Fuß- und Radwegverbindung entstehe
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1657282.php
 #: by: https://www.entwicklungsstadt.de/elisabeth-aue-siegerentwurf-fuer-5-000-neue-wohnungen-in-pankow-steht-fest/
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6904 (zum Nahverkehrsknoten Elisabethaue)
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1679411.php
+#: by: https://www.entwicklungsstadt.de/quartier-elisabeth-aue-870-wohnungen-in-pankow-beschlossen/
 #: note: Bebauungsplan 3-89
 #: last_checked: 2026-02-15 (mapillary)
 #: check_frequency: 1000d

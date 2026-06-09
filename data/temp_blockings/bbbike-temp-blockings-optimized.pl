@@ -9765,7 +9765,7 @@ Forstallee: 2. BA zwischen Fasanenstr./Weichselstr. und Waldpromenade	q4::inwork
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse (bis voraussichtlich 1. November 2026)
 #: by[nocache]: https://www.uvp-verbund.de/documents-ige-ng/igc_be/27B18CBA-A54C-4B76-B3FF-2B1F76A96A23/Alle_Unterlagen_gesiegelt%2F3_Lageplan_gesiegelt.pdf (Baustelleneinrichtungsfläche)
 #: by: https://www.entwicklungsstadt.de/strassenbahnlinie-21-neue-bvg-anlage-am-blockdammweg-in-karlshorst/ (bis Nov 2026)
-#: osm_watch: note 5193492 3
+#: osm_watch: note 5193492 4
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
 #: last_checked: 2026-06-08 vvv
@@ -9909,14 +9909,14 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260402
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3miuzl2mxlk23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia66tltsum32mkymbjkhdu43dqpdebywpnndoeadsdfsr2o4tk5vm (Länge des gesperrten Bereichs 72,5m)
-#: source_id: LMS-BR:404063/72 viz2021:13.391393,52.528031,07.04.2026,07:00 (bis 12.06.2026)
+#: source_id: LMS-BR:404063/72 viz2021:13.391393,52.528031,07.04.2026,07:00 (bis 12.06.2026) (bis 03.07.2026)
 	q4::inwork 9508,13578 9373,13769
 ',
          'from' => 1775426400,
          'id' => 4573,
-         'text' => 'Borsigstr.: Bauarbeiten, Anbindung an die Torstr. gesperrt, vom 7.4.2026 bis Mitte Juni 2026',
+         'text' => 'Borsigstr.: Bauarbeiten, Anbindung an die Torstr. gesperrt, vom 7.4.2026 bis Anfang Juli 2026',
          'type' => 'handicap',
-         'until' => 1781301599
+         'until' => 1783115999
        },
        {
          'data' => '#: by[nocache]: https://www.neubaukompass.de/neubau/das-rheingau-berlin/ (bezugsfertig: 4. Quartal 2027)
@@ -10136,22 +10136,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'type' => 'handicap',
          'until' => 1782511199
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1659492.php (Absperrung "innerhalb der nächsten drei Wochen")
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1671075.php (Komplettsperrung ab 18. Mai 2026 für drei bis vier Wochen, Notreparatur)
-#: osm_watch: way id="77503429" version="19"
-#: add_fragezeichen: Ist der Pankeweg noch immer gesperrt?
-#: priority: #A
-#: last_checked: 2026-05-27 (mapillary)
-#: check_frequency: 30d
-Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,20344 12154,20325 12094,20110
-',
-         'from' => 1777410245,
-         'id' => 4594,
-         'text' => 'Pankeweg an den Karpfenteichen: offiziell wegen Wegschäden gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:397387/72 viz2021:13.37299,52.42492,28.01.2026,11:00 (bis 29.05.2026) (bis 19.06.2026)
 #: also_indoor: traffic (G,T)
@@ -10554,13 +10539,19 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 
        },
        {
          'data' => '#: next_check_id: UFERWEGHOHENZOLLERNKANAL-2026
-#: osm_watch: note 5306663 2
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mntppr2co22e (2 Jahre Dauer? also bis Mitte 2028?)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibm4pgrf57ql5ax4imaucp2hyq2p34eyl7uvgrqdutlwelnrp5qxy (mit Umleitungsstrecke und prov. Asphaltrampe)
+#: osm_watch: note 5306663 3
 #: osm_watch: note 5306662 2
 #: priority: #A vvv
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
 #: last_checked: 2026-06-07 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2028-06-01 (VIZ) vvv
 	2::inwork 2942,15781 3005,15780 3252,15781
 	2::inwork 2924,15825 2950,15824 2972,15799 3009,15811 3058,15846 3237,15858
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: priority ^^^
@@ -10582,6 +10573,22 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 
          'id' => 4632,
          'text' => 'Eichhorster Weg: Bauarbeiten zwischen Wallenroder Str. und Lübarser Str., Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: SPEKTELAGESTEG-2026
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1679333.php (I ist gesperrt; Ersatzneubau für I+II ab 2027)
+#: by: https://www.berlin.de/imgscale2/p5uHaxqDJzLymwcKZuQETgIn__mgSXfTYUMtq_BcyV8/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvc2VuL3V2ay9fYXNzZXRzL3ByZXNzZS92ZXJrZWhyL3VtbGVpdHVuZ19zcGVrdGVsYWtlLnBuZw.png (Umleitungsplan)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mntuq3uioc2e
+#: add_fragezeichen: Ist der Steg noch immer gesperrt?
+#: last_checked: 2026-06-09 (Pressemitteilung)
+#: check_frequency: 180d
+	2::inwork -6819,15305 -6816,15318
+',
+         'from' => undef,
+         'id' => 4633,
+         'text' => 'Spektelagesteg I: Sperrung wegen Baufälligkeit',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

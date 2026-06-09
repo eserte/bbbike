@@ -3441,8 +3441,9 @@ Krumme Gärten: Asphalt	Q0 -4011,13407 -3994,13301 -4017,13167
 #: confirmed_by: srt (nur am westlichen Ende)
 (Spektewiesen): Asphalt	Q0 -5695,15104 -5784,15015 -5907,15033 -6004,15063 -6099,15125 -6184,15162 -6197,15188 -6252,15228 -6498,15301 -6584,15311 -6704,15293 -6824,15292
 #: confirmed_by: srt
-#: note: Brücke über den Spektegraben mit Holzbohlen
-(Spektewiesen): Asphalt	Q0 -6824,15292 -6802,15376
+(Spektewiesen): Asphalt	Q0 -6824,15292 -6819,15305
+(Spektewiesen): Holzbohlen	Q1 -6819,15305 -6816,15318
+(Spektewiesen): Asphalt	Q0 -6816,15318 -6802,15376
 #: confirmed_by: srt
 Spekteweg: Asphalt	Q0 -4053,15167 -4277,14981 -4303,14960 -4466,14817 -4671,14818 -4737,14862 -4932,14964 -4963,14979 -4989,14994 -5083,15044 -5151,15059
 #: corrected_by: srt (Asphalt -> ...)
@@ -9932,8 +9933,8 @@ Tellheimstr.: Beton	Q0 -3115,1189 -2885,1306
 Von-der-Trenck-Str.: Beton	Q0 -3308,1377 -3044,1578
 Isoldestr.: Asphalt	Q0 -4033,1416 -4003,1234
 Reichsbahnstr.: Kopfsteinpflaster	Q2 -4554,1391 -4579,1397 -4648,1334
-(zum Hafen Wannsee): Verbundsteinpflaster	Q1 -4944,1298 -4903,1433 -4943,1439
-Ronnebypromenade: Verbundsteinpflaster	Q1 -4905,1514 -4943,1439 -5002,1382 -5067,1400
+(zum Hafen Wannsee): Verbundsteinpflaster	Q1 -4944,1298 -4911,1396 -4973,1350 -4984,1398
+Ronnebypromenade: Verbundsteinpflaster	Q1 -4905,1514 -4943,1439 -4984,1398 -5002,1382 -5067,1400
 (Ronnebypromenade - Königstr.): Verbundsteinpflaster	Q1 -5067,1400 -5127,1392 -5135,1377
 Haagstr.: Asphalt	Q0 -3030,2349 -2882,2373 -2920,2472
 Hoiruper Str.: schlechtes Kopfsteinpflaster	Q3 -3440,3015 -3515,3110
@@ -12472,7 +12473,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-06-02
+#: last_checked: 2026-06-09
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920

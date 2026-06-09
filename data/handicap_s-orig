@@ -53,7 +53,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf B¸rgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-09 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="13"
@@ -1338,7 +1338,7 @@ Friedenauer Hˆhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 #: osm_watch: note 5163520 3
 #: add_fragezeichen: Ist die Fahrbahn wegen der Hochbauarbeiten weiterhin gesperrt?
-#: last_checked: 2026-04-26 (osm note)
+#: last_checked: 2026-06-09
 #: check_frequency: 90d
 Erich-Boltze-Str., Verl‰ngerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
 # 
@@ -3408,8 +3408,8 @@ Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,2
 Am Vierling: Fuﬂg‰nger	q1 -472,4185 -444,4126
 #: note: der nˆrdliche Abschnitt hat getrennte Wege f¸r Fuﬂg‰nger und Radfahrer
 Mutter-Mochow-Weg: Fuﬂg‰nger	q1 -1849,2043 -1802,1919
-(zum Hafen Wannsee): Fuﬂg‰nger	q2 -4944,1298 -4903,1433 -4943,1439
-Ronnebypromenade: Fuﬂg‰nger	q2 -4905,1514 -4943,1439 -5002,1382 -5067,1400
+(zum Hafen Wannsee): Fuﬂg‰nger	q2 -4944,1298 -4911,1396 -4973,1350 -4984,1398
+Ronnebypromenade: Fuﬂg‰nger	q2 -4905,1514 -4943,1439 -4984,1398 -5002,1382 -5067,1400
 (Ronnebypromenade - Kˆnigstr.): Fuﬂg‰nger, Rampe	q3 -5067,1400 -5127,1392 -5135,1377
 (Paul-Krause-Str. - Borussenstr.): steil, eng	q3 -3983,2280 -3966,2291 -3972,2265 -3955,2283 -3938,2287
 Rehsprung: Fuﬂg‰nger	q1 -3521,1681 -3408,1671 -3358,1683 -3311,1665 -3281,1682 -3245,1769 -3153,1837 -3126,1858 -3098,1922 -3112,2106 -3156,2134 -3177,2205 -3284,2323 -3290,2420
@@ -5459,11 +5459,11 @@ Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026)
+#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026) (bis 30.06.2026)
 #: note: L‰nge der gesperrten Fahrbahn: ca. 65m
 #: last_checked: 2026-06-08
 #: check_frequency: 21d
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-06-10 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
 # REMOVED --- #: valid: !-20251219
 # XXX (sp‰ter wiederherstellen) --- Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
