@@ -4,12 +4,14 @@ let lastURL = null;
 // Initialize enabled state from storage
 chrome.storage.local.get({ enabled: true }, function(items) {
   enabled = items.enabled;
+  updateIcon();
 });
 
 // Listen for changes in storage
 chrome.storage.onChanged.addListener(function(changes, area) {
   if (area === 'local' && changes.enabled) {
     enabled = changes.enabled.newValue;
+    updateIcon();
   }
 });
 
@@ -26,6 +28,11 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
     }
   });
 });
+
+function updateIcon() {
+  const iconPath = enabled ? "icon.png" : "icon-disabled.png";
+  chrome.browserAction.setIcon({ path: iconPath });
+}
 
 function writeURLToFile(url) {
   if (!enabled) {
