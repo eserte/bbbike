@@ -4,7 +4,14 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
   }
 });
 
+let lastURL = null;
+
 function writeURLToFile(url) {
+  if (url === lastURL) {
+    return;
+  }
+  lastURL = url;
+
   // Create a blob with the URL content
   var blob = new Blob([url], {type: 'text/plain'});
   
