@@ -3,7 +3,7 @@
   "name": "URL to File",
   "version": "1.0",
   "description": "Writes the URL of the currently loaded tab to a file on local disk.",
-  "permissions": ["tabs", "downloads"],
+  "permissions": ["tabs", "downloads", "storage"],
   "background": {
     "scripts": ["background.js"]
   },
