@@ -1690,7 +1690,6 @@ Bayerische Str. -> Wielandstr.: Mittelstreifen	3::igndisp 4352,10260 4360,10320 
 Wielandstr. -> Olivaer Pl. [Verl. Lietzenburger Str.]: Mittelstreifen	3::igndisp 4371,10465 4360,10320 4485,10307
 Wielandstr. -> Bayerische Str.: Mittelstreifen	3::igndisp 4371,10465 4360,10320 4352,10260
 Suarezstr.	1 2845,10840 2921,10928 2987,11055
-Temporäre Umleitungsstrecke: eigentlich nur für Versorgung und Taxis offen	2 18767,-1343 18653,-1408 18617,-1486 18578,-1538
 (BAB113 - Flughafen Berlin-Brandenburg)	1 18048,-4186 18220,-4115 18329,-4154 18400,-4258 18497,-4285
 (Flughafen Berlin-Brandenburg - BAB113)	1 18497,-4285 18444,-4329 18429,-4421 18393,-4518 18222,-4592
 Elly-Beinhorn-Ring	1 18386,-4109 18423,-4094 18861,-3921 19005,-3862 19059,-3882 19105,-3940 19153,-4033 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
@@ -2805,7 +2804,10 @@ Gritznerstr. -> Schildhornstr.: nur Rechtsabbiegen erlaubt	3 4630,6534 4555,6403
 Fürbringerstr. -> Solmsstr.: nur Rechtsabbiegen erlaubt	3 9820,9718 9705,9732 9676,9564
 Heesestr. -> Albrechtstr.: Linksabbiegen nicht erlaubt	3 5274,5557 5183,5437 5256,5392
 Schönstedtstr.	1 12545,8449 12643,8533
-(Anne-Frank-Carée, Verbindung zwischen Erxlebenstr. und Hassoweg): Poller	2 19624,377 19677,498
+(Anne-Frank-Carée, Verbindung zwischen Hassoweg und Erxlebenstr.): Poller	3 19677,498 19624,377 19591,394
+(Anne-Frank-Carée, Verbindung zwischen Hassoweg und Erxlebenstr.): Poller	3 19677,498 19624,377 19652,366
+(Anne-Frank-Carée, Verbindung zwischen Hassoweg und Erxlebenstr.): Poller	3 19677,498 19624,377 19663,222
 Waghäuseler Str.	1 5498,8598 5652,8605
 Bauhausplatz (Dessau)	1 -68180,-64466 -68093,-64424
 Ohmstr.	1 11324,11689 11380,11863
+Am Graben (Eichwalde)	1 25199,-3451 25292,-3655

@@ -125,7 +125,8 @@ Innstr.: Asphalt	Q0 13301,8606 13314,8624 13368,8689
 Elsenstr.: Asphalt	Q0 13405,8737 13455,8800 13510,8872 13664,9073 13766,9200
 Herrfurthstr.: Asphalt	Q0 11979,8014 11833,7980 11754,7964
 Herrfurthstr.: Asphalt	Q0 11647,7940 11579,7926 11472,7899
-Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
+Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964
+Herrfurthplatz: abgeschliffenes Kopfsteinpflaster	Q1 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7086,8579 7012,8511 6807,8309
 Herbertstr.: Kopfsteinpflaster	Q2 7360,8918 7389,8837 7402,8783
@@ -6025,7 +6026,7 @@ Am Wartenberger Luch: Verbundsteinpflaster	Q0 18060,19146 18100,19127 18179,1909
 Schalauer Str.: Asphalt	Q0 17310,26452 17367,26349 17423,26253
 Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 (Straße 7 - Zepernicker Str.): Asphalt	Q0 17668,26607 17714,26509 17764,26410
-Am Wiesenweg: Betonpflaster	Q0 21977,988 21856,996 21724,954 21685,916
+Am Wiesenweg: Betonpflaster	Q0 21977,988 21889,1000 21856,996 21724,954 21685,916
 (Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2 11845,11095 11893,11074 11961,11041
 Mariannenplatz: Kopfsteinpflaster	Q2 11893,11074 11854,10972 11819,10942 11805,10899 11805,10858 11804,10846 11772,10764
 (Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4830,17710
@@ -6630,7 +6631,7 @@ Eichwalder Aue: Asphalt	Q0 25783,-2288 25608,-2393 25516,-2449
 Eichwalder Aue: unbefestigte Straße	Q2 25516,-2449 25472,-2471 25425,-2475
 Viebahnstr.: unbefestigte Straße	Q2 25608,-2393 25572,-2332
 Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
-Godbersenstr.: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg auf der südlichen Seite kann zum Ausweichen benutzt werden	Q2 26201,-2845 27006,-2778
+Godbersenstr.: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg auf der südlichen Seite kann zum Ausweichen benutzt werden	Q1 26201,-2845 27006,-2778
 Radduscher Weg: Beton	Q0 26360,-1788 26287,-1758 26232,-1723 26124,-1648
 Ragower Weg: Asphalt	Q0 26124,-1648 26152,-1594 26169,-1518 26168,-1424
 Zerkwitzer Weg: Asphalt, Wurzeln	Q1 26175,-1262 26307,-1179 26399,-1118
@@ -12014,6 +12015,7 @@ Karl-Schmidt-Rottluff-Weg: Asphalt stellenweise mit Unebenheiten und Schäden	Q1 
 (Rüdickenstr. - Röttkenring): Beton	Q0 17499,17285 17665,17212 17683,17216
 Fürst-Bismarck-Steg: Holzbohlen	Q1 3879,22574 3907,22560
 (Bertramstr. - Wanderweg): unbefestigt	Q2 5046,24000 5050,23984
+(Wohnquartier Bruno-Taut-Straße): Betonsteinpflaster	Q0 21685,916 21723,969 21714,985 21781,1019 21883,1034 21889,1000
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

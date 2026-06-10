@@ -1971,7 +1971,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-06-02 (mapillary)
+#: last_checked: 2026-06-08 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 	RW1; 14174,7505 14305,7415
@@ -2498,7 +2498,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-06-08 vvv
+#: last_checked: 2026-06-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -2682,11 +2682,11 @@ Verbundsteinpflaster	RW1; 5808,10396 5764,10322 5700,10226 5463,9961
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.335941,52.500029,05.11.2020,07:00 (bis 13.10.2023) (bis 31.12.2023) (bis 30.06.2024) (bis 31.05.2024) (inaktiv) (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
 #: source_id: LMS-BR:310311/72 viz2021:13.33538,52.49928, (bis 27.02.2026) (bis 24.03.2026) (bis 29.04.2026) (bis 19.05.2026) (inaktiv)
-#: source_id: LMS-BR:406187/72 viz2021:13.3359,52.49999,27.04.2026,07:00 (bis 12.06.2026)
+#: source_id: LMS-BR:406187/72 viz2021:13.3359,52.49999,27.04.2026,07:00 (bis 12.06.2026) (bis 19.06.2026)
 #: also_indoor: traffic (ex-B[minor])
 #: last_checked: 2025-12-29
 # REMOVED --- #: check_frequency: 45d
-#: next_check: 2026-06-12 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-06-19 (VIZ-Verkehrsmeldung)
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
@@ -4838,6 +4838,7 @@ Verbundsteinpflaster	RW2; -4647,12269 -4903,12055
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25983.pdf (Fertigstellung 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25981.pdf (Umsetzung 2027 avisiert)
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13329 (Bau im Sommer (2026?))
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/mit-dem-fahrrad-durch-berlin-spandau-auf-diesen-sechs-strecken-werden-neue-radwege-geplant-15697183.html
 #: XXX Gehwegplatten sollen durch Asphalt ersetzt werden, Verbreiterung auf 2,5m
 #: last_checked: 2026-05-06 (Tsp)
 #: check_frequency: 120d
@@ -9090,7 +9091,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
-#: last_checked: 2026-05-30 vvv
+#: last_checked: 2026-06-08 (mapillary) vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten
@@ -9894,4 +9895,7 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 	RW3;RW3 11073,-2037 10983,-2116 10756,-2128
 # 
 	RW6;RW6 196,3650 181,3771
+# 
+#: note: entsprechendes Schild nur am nördlichen Ende, vor dem südlichen Ende sind Poller
+	RW6;RW6 19624,377 19677,498
 # 

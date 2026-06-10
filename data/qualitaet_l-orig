@@ -1556,10 +1556,10 @@ Fahrbahn asphaltiert, benutzungspflichtiger Radweg asphaltiert	Q0 38512,2600 383
 	Q0 41731,-37743 41512,-37406 41006,-37256 40118,-36709 39478,-36702 39284,-36826 39087,-36914 38650,-36450 38648,-36241 38775,-36150 38864,-35989
 	Q0 35518,-32837 35641,-32578
 Asphalt	Q0 35641,-32578 35431,-32237 35498,-31813 34327,-28015 34116,-27800 34053,-27417 32477,-25324 31771,-24401 31744,-24366 31599,-24204 31480,-24133 31385,-24079 31172,-23945 31135,-23644 30457,-21254 30246,-20337 29515,-19702 29106,-19337 29060,-19197 29004,-18977 28779,-18156 28746,-18078 28687,-17987 28642,-17918 28577,-17830 28482,-17673 28469,-17638 28462,-17618 28391,-17431 28331,-17271 28296,-17179 28259,-17081 28250,-17056 28185,-16887 28059,-16553 28040,-16501 27948,-16253 27921,-16182 27892,-16145 27833,-16133 27643,-16156 27599,-16162 27506,-16175 27266,-16213 27020,-16251 26906,-16233 26863,-16171 26832,-16036 26829,-16026 26758,-15727 26734,-15719 26650,-15695 26583,-15677 26572,-15618 26608,-15124 26552,-14903 26473,-14578 26471,-14570 26465,-14385 26442,-14252 26406,-14197 26445,-14110 26448,-14034 26419,-13884 26313,-13049 26217,-12789 26138,-12596 26031,-12300 26017,-12259 25912,-11956 25883,-11875 25886,-11735 25876,-11715 25859,-11559 25632,-11361 25528,-11392 25159,-11526 24893,-11625 24731,-11575 24455,-11282 24418,-11244 24361,-11236 24380,-11123 24353,-10504 24343,-10276 24378,-10040 24278,-9878 23831,-9659 23428,-9268 21802,-6904 21405,-6335 21214,-6112 21180,-5193 21179,-5142 21178,-5058 21165,-4891 21084,-4728 21047,-4360 21013,-4308 21177,-4224 21333,-4046 21447,-3918 21462,-3900 21516,-3839 21607,-3739 21687,-3601 21722,-3421 21696,-2925 21861,-2154 22001,-1632 22003,-1625
-Asphalt	Q0 21013,-4308 20951,-4235 20802,-4032 20711,-3869 20467,-3898 20367,-3844 20265,-3849 20037,-3899 19676,-4036 19651,-4039 19611,-4030
+Asphalt	Q0 21013,-4308 20951,-4235 20802,-4032 20711,-3869 20467,-3898 20383,-3858 20345,-3842 20249,-3848 20037,-3899 19676,-4036 19651,-4039 19611,-4030
 Asphalt	Q0  20347,-2959 20339,-2932 20255,-2910 20179,-2853 20071,-2917 20285,-3268 20285,-3346 20239,-3424 19904,-3581 19586,-3716 19563,-3801 19460,-3818 19282,-3928
 	Q0 21088,-2461 20875,-2584 20285,-2775 20211,-2805 20039,-2863 19996,-2880 19909,-2863
-# REMOVED (existiert nicht mehr) ---	Q0 20367,-3844 20431,-3776 20392,-3450 20236,-3167 19996,-2880
+# REMOVED (existiert nicht mehr) ---	Q0 20345,-3842 20431,-3776 20392,-3450 20236,-3167 19996,-2880
 	Q0 21205,-1763 21239,-1770 21250,-1782 21191,-1982 21062,-2006 21071,-2228 21088,-2461
 	Q0 21084,-4728 21217,-4729 21345,-4761 21548,-4786 21654,-4807 21764,-4869 22040,-5075 22136,-5009 22282,-4989 22389,-5159 22437,-5335 22469,-5470 22482,-5498 22547,-5556 22866,-5844 23035,-5990 23301,-6225 23417,-6330 23523,-6425 23704,-6589 23785,-6662 23875,-6743 23950,-6810 24034,-6887 24173,-7015 24246,-7081 24284,-7118 24356,-7159 24487,-7143 24602,-7131 24713,-7113 24710,-7147 24703,-7243 24700,-7331 24702,-7342 24722,-7523 24733,-7599 24773,-7883 24789,-8000 24802,-8072 24867,-8220 24912,-8323 24982,-8485 25063,-8673 25118,-8791 25192,-8936 25137,-9131 25278,-9181 25369,-9244 25502,-9335 25614,-9418 25779,-9534 25805,-9553 25991,-9671 26093,-9701 26182,-9780 26220,-9816 26262,-9880 26262,-9940 26262,-10015 26285,-10054 26434,-10054
 	Q0 26434,-10054 26450,-10134 26453,-10235 26446,-10394 26466,-10409 26442,-10452 26429,-10647 26418,-10992 26281,-11160 26273,-11289 26267,-11381 26265,-11528 26251,-11566 26178,-11660
@@ -4056,7 +4056,7 @@ Lindenstr. (Schulzendorf): Verbundsteinpflaster	Q1+ 23571,-3325 23676,-3276 2379
 Waltersdorf - Schulzendorf: Asphalt	Q0 21607,-3739 21638,-3747 21662,-3737 21673,-3660 21709,-3605 22041,-3237 22170,-3064 23053,-2729 23152,-2691 23205,-2670 23332,-2621 23453,-2642 23505,-2626 23562,-2604 23626,-2563 23708,-2488 23753,-2479 23787,-2504 23831,-2603
 #: by: osm
 #: confirmed_by: srt (im Bereich Rosa-Luxemburg-Str.)
-Ernst-Thälmann-Str.: Asphalt	Q0 22389,-5159 22591,-5061 22711,-5004 22802,-4959 22991,-4869 23034,-4850 23161,-4729 23364,-4539 23387,-4518 23402,-4512 23556,-4460 23658,-4428 23860,-4362 24200,-4252 24295,-4221 24390,-4190 24501,-4155 24613,-4121 24714,-4087 24758,-4072 24798,-4061
+Ernst-Thälmann-Str.: Asphalt	Q0 22389,-5159 22591,-5061 22711,-5004 22802,-4959 22967,-4880 22991,-4869 23034,-4850 23161,-4729 23364,-4539 23387,-4518 23402,-4512 23556,-4460 23658,-4428 23860,-4362 24200,-4252 24295,-4221 24390,-4190 24501,-4155 24613,-4121 24714,-4087 24758,-4072 24798,-4061
 Karl-Liebknecht-Str. (Schulzendorf): Asphalt	Q0 24613,-4121 24423,-3825 24256,-3568 24185,-3434 24138,-3336 24085,-3227 23885,-2838 23839,-2639 23831,-2603
 #: corrected_by: srt (Beton mit Schäden, Q2 -> ..., neu gemacht)
 August-Bebel-Str. (Schulzendorf): Asphalt	Q0 23655,-3997 23717,-3975 23821,-3942
@@ -4081,12 +4081,10 @@ Am Graben (Eichwalde): welliger Asphalt	Q1 25278,-3661 25365,-3880 25409,-4020
 Am Graben (Eichwalde): welliger Asphalt	Q1 25423,-4016 25379,-3876 25292,-3655
 Am Graben (Eichwalde): Verbundsteinpflaster	Q1+ 25199,-3451 25182,-3414
 Am Graben (Eichwalde): Verbundsteinpflaster	Q1+ 25173,-3420 25190,-3458
-#: by: https://www.agfk-brandenburg.de/2025/08/13/komfortables-kopfsteinpflaster-in-eichwalde/
-#: add_fragezeichen: Wie ist die Qualität nach dem Abschleifen des Kopfsteinpflasters? vvv
-#: note: laut osm smoothness=good
 Am Graben (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25190,-3458 25278,-3661
-Am Graben (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25292,-3655 25199,-3451
-#: add_fragezeichen ^^^
+#: by: https://www.agfk-brandenburg.de/2025/08/13/komfortables-kopfsteinpflaster-in-eichwalde/
+#: historical_note: früher (bis ca. 2025): schlechtes Kopfsteinpflaster, Q3
+Am Graben (Eichwalde): abgeschliffenes Kopfsteinpflaster	Q1- 25292,-3655 25199,-3451
 Friedenstr.: Asphalt	Q0 25212,-4025 25238,-4031 25269,-4041
 Friedenstr.: Kopfsteinpflaster	Q2 25269,-4041 25322,-4042
 Friedenstr. (Eichwalde): Asphalt	Q0 26049,-3876 26163,-3849 26248,-3829 26354,-3805 26395,-3796 26458,-3789 26562,-3781
@@ -4177,7 +4175,9 @@ Melli-Beese-Ring: Asphalt	Q0 17844,-4231 17929,-4435 18028,-4674
 Hugo-Eckener-Allee: Asphalt	Q0 19611,-4030 19579,-4027 19464,-4107 19268,-4192 19036,-4282 18517,-4502
 (Hugo-Eckener-Allee - Elly-Beinhorn-Ring): Asphalt	Q0 18517,-4502 18492,-4417
 (Melli-Beese-Ring - Hugo-Eckener-Allee): Verbundsteinpflaster	Q1 18028,-4674 18199,-4637 18308,-4609 18452,-4551 18494,-4557 18517,-4502
-Temporäre Umleitungsstrecke: Asphalt	Q0 18578,-1538 18617,-1486 18653,-1408 18767,-1343 18849,-1460 18936,-1581 18866,-1674
+# REMOVED (wurde zurückgebaut) --- Temporäre Umleitungsstrecke: Asphalt	Q0 18578,-1538 18617,-1486 18653,-1408 18767,-1343
+Schönefeld - Flughafen Berlin-Brandenburg: Asphalt	Q0 18767,-1343 18849,-1460 18936,-1581
+# REMOVED (wurde zurückgebaut) --- Temporäre Umleitungsstrecke: Asphalt	Q0 18936,-1581 18866,-1674
 Temporäre Umleitungsstrecke: Asphalt	Q0 18666,-1325 18672,-1340 18753,-1327 18767,-1343
 Flughafen Berlin-Brandenburg - Business Park Berlin: Asphalt	Q0 19131,-2145 19158,-2135 19192,-2124 19262,-2128 19311,-2131 19358,-2117 19481,-2008 19608,-1953 19731,-1903 19810,-2094
 Diepenseer Str. (Waltersdorf): Verbundsteinpflaster	Q1 21084,-4728 20594,-4690
@@ -4540,14 +4540,17 @@ Tollkrug - Selchow/Glasow: Asphalt	Q0 16251,-6520 14644,-7186 14289,-7003 14232,
 #: next_check_id: BER-2026
 #: by: https://www.entwicklungsstadt.de/neuer-radweg-zum-ber-ausbau-laeuft-hier-geht-er-lang/ (Fertigstellung: Frühjahr 2026)
 #: XXX Ausbau (Asphaltierung?) des Weges, wo genau?
-#: last_checked: 2026-04-19 (osm) vvv
-#: next_check: 2026-05-31 vvv
+#: last_checked: 2026-06-10 vvv
+#: check_frequency: 21d vvv
+# REMOVED --- #: next_check: 2026-05-31 vvv
 Weg entlang des Flughafens: Schotterweg	Q2+ 16251,-6520 16859,-6263
 Weg entlang des Flughafens: unbefestigter Feldweg	Q3+ 16859,-6263 18365,-5657
 Weg entlang des Flughafens: Schotterweg	Q2+ 18365,-5657 18693,-5516 19638,-5134 19673,-5149
-Weg entlang des Flughafens: unbefestigter Feldweg	Q3+ 19673,-5149 19813,-5070 19582,-4524 19529,-4494 19570,-4313 19651,-4039
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
+#: historical_note: früher (bis Frühjahr 2026): unbefestigter Feldweg, Q3+
+Weg entlang des Flughafens: Asphalt	Q0 19673,-5149 19813,-5070 19582,-4524 19529,-4494 19570,-4313 19651,-4039
 Weg am Flughafen - Kiekebusch: Plattenweg	Q2 18693,-5516 18962,-5709
 #: by: mapillary
 unbefestigter Feldweg	Q2 18962,-5709 19859,-6278 19915,-6315
@@ -6640,7 +6643,7 @@ Groß Glienicker Heide: Kleinsteinpflaster	Q2+ -8661,8457 -8640,8453 -8560,8438 -
 #: next_check_id: BUSINESSPARKBERLIN-2020
 #: osm_watch: way id="193392074" version="5"
 #: XXX wird die Straße befestigt?
-#: last_checked: 2025-11-05
+#: last_checked: 2026-06-10
 #: check_frequency: 180d
 Flughafen Berlin-Brandenburg - Business Park Berlin: unbefestigte Straße, etwas Schotter	Q2+ 19731,-1903 20125,-1739 20412,-1750
 #: next_check_id: BUSINESSPARKBERLIN-2020
@@ -7369,6 +7372,7 @@ Karolinenstr. (Stahnsdorf): Asphalt	Q0 -2335,-2745 -2288,-2771 -2229,-2743 -2197
 Am Weiher (Stahnsdorf): Asphalt	Q0 -2223,-2540 -2170,-2562 -2078,-2773 -2091,-2815 -2144,-2843
 Hermann-Scheidemann-Weg (Stahnsdorf): Asphalt	Q0 -2273,-2632 -2309,-2563 -2366,-2648
 Am Streuobsthang (Stahnsdorf): Asphalt	Q0 -2082,-2260 -2065,-2270 -2031,-2285
+(Ernst-Thälmann-Str. - Zum Feldrain): wassergebundene Decke	Q1 22967,-4880 22973,-4900 22964,-4942 22942,-4983
 ######################### User Contributions #################################
 #: by: osm vvv
 #: confirmed_by: mapillary
@@ -9382,8 +9386,8 @@ Am Stinthorn (Neu Fahrland): mäßiger Asphalt	Q2 -13779,4233 -13763,4232 -13735,4
 #: by: anonymous: vvv
 #: note: "Gehweg gepflastert in schlechtem Zustand, allerdings besser als Fahrbahn"
 #: note: "Bürgersteig ebenfalls in schlechtem Zustand (Sand, Löcher, Wurzeln, lose Gehwegplatten), mit Kinderanhänger schwierig"
-#: confirmed_by: srt
-Gosener Str. (Eichwalde): Fahrbahn grobes Kopfsteinpflaster, Gehweg besser	Q3 26192,-2847 26102,-2822 25836,-2749 25579,-2680 25570,-2679
+#: corrected_by: srt (-> Freigabe des Gehwegs)
+Gosener Str. (Eichwalde): Fahrbahn grobes Kopfsteinpflaster, für Radfahrer freigegebener Gehweg Verbundsteinpflaster	Q1 26192,-2847 26102,-2822 25836,-2749 25579,-2680 25570,-2679
 #: note: "Gehweg gepflastert im schlechten Zustand, wird aber häufig von Radfahrer genutzt, da noch besser als die Fahrbahn"
 Bahnhofstr. (Eichwalde): Fahrbahn sehr grobes Kopfsteinpflaster, Gehweg besser	Q2- 26102,-2822 25912,-2958 25869,-2989 25730,-3091 25567,-3189 25400,-3285
 #: confirmed_by: srt

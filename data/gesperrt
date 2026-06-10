@@ -92,7 +92,8 @@ Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 
 Antonienstr.	1 3930,17923 3946,18003 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s 4228,19024 4223,18982
 Eichborndamm	1 4223,18982 4211,18882 4163,18676 4094,18307 4053,18108 4016,17918
-Spreestr.	1 17900,6072 17939,5968 17935,5961 17877,5860
+Spreestr.	1s 17900,6072 17939,5968 17935,5961
+Spreestr.	1 17935,5961 17877,5860
 Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 Archibaldweg	1s 15674,10851 15777,10897 15820,10916 15870,10938
 Nöldnerplatz	1s 15870,10938 15903,10906
@@ -143,7 +144,7 @@ Greinerstr.	1 8340,3242 8327,2987
 Dederingstr.	1 8455,2979 8476,3367
 Quickborner Str.	1s 8016,21499 8078,21415 8162,21302
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
-Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
+Herrfurthplatz	1 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
 Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
 Grimmstr.	1 11089,9751 11136,9851 11164,9885
 Grimmstr.	1 11164,9885 11175,9882
@@ -870,7 +871,7 @@ Enckestr. - Friedrichstr.	1s 9666,10848 9537,10837
 (Straße vor dem Berliner Ensemble)	1s 9153,12928 9212,12969
 Jürgen-Schumann-Allee	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 Jürgen-Schumann-Allee	2 19282,-3928 19464,-3780 19479,-3690
-Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der nördlichen Seite	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19927,-2756 19904,-2683 19663,-2419 19542,-2356 19330,-2340 19236,-2298 19131,-2145 18866,-1674 18936,-1581
+Jürgen-Schumann-Allee: explizite Radfahren-verboten-Schilder	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19927,-2756 19904,-2683 19663,-2419 19542,-2356 19330,-2340 19236,-2298 19131,-2145 18866,-1674 18853,-1656 18781,-1533 18688,-1498 18578,-1538 18480,-1577
 Business Park Berlin - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19131,-2145 19158,-2135 19192,-2124
 Siedlung Hubertus - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19909,-2863 19996,-2880 20039,-2863
 (Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.)	1 12611,21138 12619,21079
@@ -1277,8 +1278,8 @@ Zufahrt Bahnhof	1 68021,74671 68052,74741 68140,74703 68110,74631
 Brüderstr.	1 68884,73376 68810,73316
 Dorfstr. (Pieskow)	1s 56031,-14776 55983,-14721
 Mittelstreifen	3nocross::ignrte 18419,-1418 18666,-1325 18777,-1298 18892,-1273
-Am Seegraben -> temporäre Umleitungsstrecke: Mittelstreifen	3::igndisp 18777,-1298 18666,-1325 18672,-1340
-temporäre Umleitungsstrecke -> Am Seegraben: Mittelstreifen	3::igndisp 18672,-1340 18666,-1325 18419,-1418
+Flughafen Berlin-Brandenburg -> Am Seegraben: Mittelstreifen	3::igndisp 18672,-1340 18666,-1325 18419,-1418
+Am Seegraben -> Flughafen Berlin-Brandenburg: Mittelstreifen	3::igndisp 18777,-1298 18666,-1325 18672,-1340
 Berliner Chaussee	1 19282,-3928 19460,-3818 19563,-3801 19586,-3716
 Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
@@ -3572,6 +3573,7 @@ Drängelgitter	BNP:3:-68:trailer=10 17498,9714
 Schwingtor	BNP:5:-191:trailer=10 4183,13725
 Drängelgitter	BNP:3:-262:trailer=10 -1940,24464
 Drängelgitter	BNP:3:-113:trailer=10 4277,23296
+Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119 22860,-5130
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12780
 Nordufer: Radweg wird vermutlich zurückgebaut	2::inwork 7156,14763 7129,14787
 Knoten am ehemaligen Flughafen Tegel: Rückbau	2::inwork 2996,15930 3009,15965 2988,15999 2954,16006 2846,15986 2818,15966 2810,15931 2828,15903
@@ -3693,7 +3695,6 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 7989,13302
-B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423

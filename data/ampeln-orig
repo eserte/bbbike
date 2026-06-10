@@ -698,12 +698,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # REMOVED (existiert nicht mehr) --- #: note: Anforderungsampel ---	F::inwork 8950,847
 # REMOVED (existiert nicht mehr) --- #: note: Anforderungsampel ---	F::inwork 9155,1006
 # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: note: Anforderung für Radfahrer in Richtung Nord -> Süd, Richtung Süd -> Nord keine Ampel
-# REMOVED (laut osm wurde die Ampel entfernt) --- #: osm_watch: node id="1646650915" version="4"
-#: last_checked: 2025-06-22 (mapillary)
-#: check_frequency: 180d
-Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
+# REMOVED (wurde abgebaut) --- #: note: Anforderung für Radfahrer in Richtung Nord -> Süd, Richtung Süd -> Nord keine Ampel --- # REMOVED (laut osm wurde die Ampel entfernt) --- #: osm_watch: node id="1646650915" version="4" --- #: last_checked: 2025-06-22 (mapillary) --- #: check_frequency: 180d --- Gegenverkehrsregelung	X::inwork::alternating 18767,-1343
 # 
 #: next_check_id: BAHNHOF-2022
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Frühjahr 2026)
@@ -4278,7 +4273,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2026-06-02 (mapillary)
+#: last_checked: 2026-06-08 (mapillary)
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -4804,6 +4799,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: section ^^^
 ################################################################################
 #: section: Ampeln elsewhere vvv
+dauerhaft ausgeschaltet	X0 18480,-1577
 #: by: mapillary
 #: note: Anforderungsampel
 	F 12351,-8883
@@ -5515,7 +5511,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"
-#: last_checked: 2025-06-22 (mapillary)
+#: last_checked: 2026-06-10
 #: check_frequency: 360d
 	X0 19131,-2145
 #: XXX ^^^

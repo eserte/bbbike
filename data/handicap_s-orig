@@ -59,7 +59,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 #: osm_watch: way id="1083527067" version="13"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="182614432" version="26"
+#: osm_watch: way id="182614432" version="27"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="25"
@@ -903,7 +903,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],ex-W,re-ex-H)
-#: last_checked: 2026-05-29
+#: last_checked: 2026-06-08 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
@@ -1210,7 +1210,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-10
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3106,7 +3106,7 @@ Hallgarter Steig: eng und kurvig	q1 27890,373 27961,321 28042,304 28046,268 2805
 Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27562,-1043 27578,-1153 27539,-1337
 Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17171,16372
 # REMOVED --- #: next_check_id: AMWIESENWEG-2020 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (Zweirichtungsverkehr, 2018) --- #: XXX Bauarbeiten geplant, danach vielleicht ein breiterer Weg (evtl. kann man auch den Q0--Eintrag in qualitaet_s-orig ändern) --- #: by: https://api.fixmyberlin.de/api/plannings/100 (die Umsetzung erfolgt 2018) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf --- #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/gehweg-wird-jetzt-ausgebaut_a261721 (außerdem: "mit versickerungsfähigem Pflaster befestigt") --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.942399.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1-entwurf-vorhabenbezogener-b-plan-9-55-ve.pdf --- #: osm_watch: way id="152177648" version="8" --- #: XXX noch immer offiziell nur für Fußgänger, wird sich das ändern? --- laut osm mittlerweile bicycle=designated --- #: last_checked: 2020-07-31 --- #: next_check: 2020-07-31
-Am Wiesenweg: gemeinsamer Geh- und Radweg	q1+ 21977,988 21856,996 21724,954 21685,916
+Am Wiesenweg: gemeinsamer Geh- und Radweg	q1+ 21977,988 21889,1000 21856,996 21724,954 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
 #: XXX_prog BS am nördlichen Ende
 (Scharnweberstr. - Berenhorststr.): Fußgänger, Bordstein	q2 4801,17623 4830,17710
@@ -3947,7 +3947,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2026-05-10 vvv
+#: last_checked: 2026-06-10 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="13"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -5769,8 +5769,8 @@ Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos
 # 
 #: XXX_prog: BS (an beiden Enden)
 (Anne-Frank-Carée, westlicher Weg): gemeinsamer Geh- und Radweg, Bordsteine	q3 19576,533 19537,420
-#: note: zumindest am südlichen Ende ein "Einfahrt verboten"-Schild ohne weitere Freigaben, vom Charakter her aber eine normale Service-Straße
-(Anne-Frank-Carée, Verbindung zwischen Erxlebenstr. und Hassoweg): Lieferverkehr, einige Fußgänger	q1- 19624,377 19677,498
+#: historical_note: früher am südlichen Ende ein "Einfahrt verboten"-Schild ohne weitere Freigaben, mittlerweile gibt es dort Poller
+(Anne-Frank-Carée, Verbindung zwischen Erxlebenstr. und Hassoweg): einige Fußgänger	q1- 19624,377 19677,498
 # 
 #: note: Grünanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol
 (Fürbringerstr. - Baerwaldstr.): Grünanlage, Fußgänger	q4 10067,9674 10290,9604
@@ -5826,6 +5826,8 @@ Eichenstr. - Uferweg: ein paar Stufen oder Umweg über Bürgersteig nehmen	q3 1389
 (Rüdickenstr. - Röttkenring): einige Fußgänger	q1- 17499,17285 17665,17212 17683,17216
 # 
 (Bertramstr. - Wanderweg): steile Stelle	q4 5046,24000 5050,23984
+# 
+(Wohnquartier Bruno-Taut-Straße): einige Fußgänger	q1 21883,1034 21889,1000
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

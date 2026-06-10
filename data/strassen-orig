@@ -576,7 +576,9 @@ Oderstr. (Neukölln)	NN 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
 Oderstr. (Neukölln)	N 11593,7237 11607,7145 11617,7083 11652,6879 11664,6796 11672,6737
 Herrfurthstr. (Neukölln)	N 11472,7899 11579,7926 11647,7940
 Herrfurthstr. (Neukölln)	N 11754,7964 11833,7980 11979,8014
-Herrfurthplatz	N 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
+Herrfurthplatz	N 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964
+#: historical_note: früher (bis Frühjahr 2026) N
+Herrfurthplatz	NN 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Leinestr.	N 12123,7549 11929,7512 11878,7501 11803,7487 11731,7473 11675,7462 11558,7438
 Leinestr. [Stichstraße]	N 11878,7501 11888,7455
 Leinestr. [Stichstraße]	N 11731,7473 11738,7431
@@ -3518,7 +3520,7 @@ Am Falkenberg [Wohngebietsstraße]	N 21902,877 21740,943 21721,939 21696,909
 Gartenstadtweg	N 21538,479 21527,547 21536,603 21543,673 21685,916
 Akazienhof	N 21801,844 21748,746
 #: note: auf östlicher Seite nur als Fußweg ausgeschildert, auf der westlichen Seite fehlt so ein Schild
-Am Wiesenweg	NN 21977,988 21856,996 21724,954 21685,916
+Am Wiesenweg	NN 21977,988 21889,1000 21856,996 21724,954 21685,916
 Mandelblütenweg	N 21538,479 21591,488 21671,509
 Sternblütenweg	N 21591,488 21620,372
 Lindenblütenstr.	N 21703,388 21671,509 21657,580
@@ -3558,6 +3560,8 @@ Suevenstr.	N 20734,776 20836,982 20898,1100 20912,1127
 (Bruno-Taut-Str. - Am Gartenstadtweg)	NN 21790,682 21783,660 21755,625 21723,605 21688,589 21673,590
 Bruno-Taut-Str.	N 21790,682 21870,803
 Bruno-Taut-Str.	H 21858,811 21902,877 21977,988 22034,1006 22092,999
+#: osm.highway: service
+(Wohnquartier Bruno-Taut-Straße)	N 21685,916 21723,969 21714,985 21781,1019 21883,1034 21889,1000
 Richterstr. (Bohnsdorf, Grünau)	H 22007,711 22062,773 22120,886 22100,941 22092,977 22092,999 22162,1067
 Kirchsteig	N 22007,711 21925,612
 Kirchsteig	N 21402,-116 21465,-15 21515,67
@@ -6376,7 +6380,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="10"
-#: last_checked: 2026-02-28
+#: last_checked: 2026-06-10
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18441,4600 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -16121,7 +16125,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-10
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16517,7 +16521,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-10
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

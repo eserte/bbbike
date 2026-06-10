@@ -1078,7 +1078,7 @@ Appelbacher Weg: Rampe	q2 27780,893 27804,878
 Hallgarter Steig: eng und kurvig	q1 27890,373 27961,321 28042,304 28046,268 28058,155 28068,148 28071,112 28086,101 28070,22 28083,-34 28065,-114 28042,-152
 Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27562,-1043 27578,-1153 27539,-1337
 Papendickstr.: enge Straße	q0 17071,16174 17073,16222 17135,16334 17171,16372
-Am Wiesenweg: gemeinsamer Geh- und Radweg	q1 21977,988 21856,996 21724,954 21685,916
+Am Wiesenweg: gemeinsamer Geh- und Radweg	q1 21977,988 21889,1000 21856,996 21724,954 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fußgänger, Bordstein	q2 4801,17623 4830,17710
 Ernststr.: wendelförmige Rampen	q4 2821,19559 2780,19548 2714,19529 2689,19544
@@ -2753,7 +2753,7 @@ Storkwinkel: einige Fußgänger	q3 2424,9786 2431,9784 2450,9778
 (Goerdelersteg - Reichweindamm): eng, kurvig, einige Fußgänger	q3 3596,14276 3576,14273 3540,14289 3521,14360 3472,14366
 Schönleinstr. [Hohenstaufenplatz]: mögliche Einschränkungen durch parkende Autos	q3 11594,9604 11560,9524
 (Anne-Frank-Carée, westlicher Weg): gemeinsamer Geh- und Radweg, Bordsteine	q3 19576,533 19537,420
-(Anne-Frank-Carée, Verbindung zwischen Erxlebenstr. und Hassoweg): Lieferverkehr, einige Fußgänger	q1 19624,377 19677,498
+(Anne-Frank-Carée, Verbindung zwischen Erxlebenstr. und Hassoweg): einige Fußgänger	q1 19624,377 19677,498
 (Fürbringerstr. - Baerwaldstr.): Grünanlage, Fußgänger	q4 10067,9674 10290,9604
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): Parkplatzzufahrt und Parkplatz	q2 21249,11042 21237,11065 21162,11073 21163,11172
 (Rapsweißlingstr./Apollofalterallee - Köpenicker Str.): einige Fußgänger, ggfs. Bordstein	q3 21163,11172 21137,11200
@@ -2782,6 +2782,7 @@ Warnitzer Str.: Kurven, unübersichtlch	q1 18141,17960 18041,18073 17962,18010 17
 Eichenstr. - Uferweg: ein paar Stufen oder Umweg über Bürgersteig nehmen	q3 13899,10214 13918,10240
 (Rüdickenstr. - Röttkenring): einige Fußgänger	q1 17499,17285 17665,17212 17683,17216
 (Bertramstr. - Wanderweg): steile Stelle	q4 5046,24000 5050,23984
+(Wohnquartier Bruno-Taut-Straße): einige Fußgänger	q1 21883,1034 21889,1000
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3592,6 +3593,7 @@ Vulkanstr./Landsberger Allee - Altenhofer Str.: schmal	q2 15796,14310 15791,1432
 Theodor-Heuss-Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1544,11307 1499,11281
 Katzengraben: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 22451,4749 22439,4838
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4228,19024 4223,18982
+Spreestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17900,6072 17939,5968 17935,5961
 Archibaldweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15674,10851 15777,10897 15820,10916 15870,10938
 Nöldnerplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15870,10938 15903,10906
 Dorotheenstr. (Straßenbahn): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9454,12558 9330,12538

@@ -860,7 +860,7 @@ Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 14239,-492 14091,-597
 Gehweg für Radfahrer frei	RW1; 18533,-687 18555,-588 18561,-566 18595,-440
 	RW2;RW2 18533,-687 18523,-735 18496,-784 18475,-800 18423,-843
 #: note: Radwegschilder fehlen teilweise (z.B. an der Einmündung zum Businesspark Kienberg)
-Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 20711,-3869 20659,-3787 20630,-3690 20632,-3603 20687,-3424 20666,-3280 20564,-3076 20496,-3003 20401,-2960 20347,-2959 20238,-2931 20190,-2892 20120,-2774 20138,-2716 20208,-2688 20265,-2720 20285,-2775
+Asphalt, gemeinsamer Geh- und Radweg	RW2;RW9 20711,-3869 20659,-3787 20630,-3690 20632,-3603 20687,-3424 20666,-3280 20564,-3076 20496,-3003 20401,-2960 20347,-2959 20238,-2931 20190,-2892 20120,-2774 20138,-2716 20208,-2688 20265,-2720 20285,-2775
 schlechte Gehwegplatten, teilweise sogar unbefestigt	RW2; 19618,-1021 19529,-1061 19414,-1098 18892,-1273
 schlechte Gehwegplatten, gemeinsamer Geh- und Radweg	RW2; 18892,-1273 19414,-1098 19529,-1061
 Asphalt, gemeinsamer Geh- und Radweg	RW2; 19529,-1061 19618,-1021
@@ -983,7 +983,8 @@ Asphalt, gemeinsamer Rad- und Gehweg	RW8;RW2 14993,-4196 14767,-4273 14626,-4349
 Asphalt, gemeinsamer Rad- und Gehweg, breit	RW2;RW8 14993,-4196 15053,-4328 15297,-4462 15493,-4693
 Asphalt, gemeinsamer Rad- und Gehweg, ca. 3m breit	RW8;RW2 15342,-5771 15078,-5983 14990,-5999 14775,-5925 14274,-6153 13781,-6410 13562,-6525 13313,-6638 13277,-6655
 	RW2;RW8 13277,-6655 12877,-6903
-Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW9 20037,-3899 19676,-4036
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 20383,-3858 20345,-3842 20249,-3848
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW9 20249,-3848 20037,-3899 19676,-4036
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19676,-4036 19651,-4039 19611,-4030 19579,-4027 19464,-4107 19268,-4192 19036,-4282 18517,-4502
 #: note: Teil des Rundwegs am BER
 #: XXX_prog: hier auch auf der anderen Straßenseite ein Zweirichtungsrad/gehweg
@@ -997,7 +998,8 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19158,-4083 19126,-414
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18517,-4502 18492,-4417
 Verbundsteinpflaster, ein "Geh/Radweg Ende"-Schild	RW0; 19904,-3581 19586,-3716
 Verbundsteinpflaster, Gehweg für Radfahrer frei	RW9;RW1 19904,-3581 20239,-3424 20285,-3346 20285,-3268 20071,-2917
-Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW9 19904,-3581 20037,-3899
+#: note: unklare Ausschilderung: wenn man am nördlichen Ende von Osten kommt und die Fahrbahn benutzt, dann kann man das Schild "gemeinsamer Rad- und Gehweg" gar nicht sehen; deshalb RW2 -> RW1
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW1;RW9 19904,-3581 20037,-3899
 #: by: http://www.potsdam.de/cms/dokumente/10114884_1771576/e922e4ec/ENDFASSUNG%20Abl.%20PdmStadt%2002_13.pdf
 #: by: http://www.potsdam.de/cms/ziel/996205/DE/?date=20130809 (realisiert)
 #: by: http://www.potsdam.de/cms/beitrag/14359560/1761152/
@@ -1210,7 +1212,7 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 23364,-4539 23387,-4518 234
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22389,-5159 22591,-5061 22711,-5004
 #: note: vergessenes Schild?
 Gehweg nicht für Radfahrer freigegeben, Verbundsteinpflaster	RW0; 22711,-5004 22802,-4959
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22802,-4959 22991,-4869 23034,-4850 23161,-4729 23364,-4539
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22802,-4959 22967,-4880 22991,-4869 23034,-4850 23161,-4729 23364,-4539
 #: by: ^^^
 	RW6;RW6 -3858,21445 -3756,21464 -3716,21473
 #: note: in der Praxis als Zweirichtungsradweg benutzt
@@ -1565,6 +1567,7 @@ Asphalt	RW8;RW2 -82736,-89115 -82771,-89086 -83018,-88828
 mäßiger Asphalt	RW8;RW2 -84707,-79148 -84698,-79039 -84639,-78271 -84574,-78119 -84410,-77919 -84345,-77808 -84324,-77655 -84497,-76822 -84594,-76458
 Gehwegplatten (Q1)	RW2;RW8 -88423,-67053 -88736,-67128 -88826,-67144 -89604,-67285
 	RW2; -87463,-73416 -87392,-73431 -87314,-73469
+Bürgersteig mit Verbundsteinpflaster, wird wohl normalerweise auch von Radfahrern in beide Richtungen genutzt	RW0; 21764,-4869 21654,-4807 21548,-4786
 ######################### User Contributions #################################
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (Fahrradstraße geplant)
 #: by: mapillary, osm
@@ -1824,6 +1827,7 @@ Gehweg frei für Radfahrer	RW1;RW1 25052,-3980 25150,-3949 25173,-3957 25206,-401
 Gehweg frei für Radfahrer, Verbundsteinpflaster	RW1; 25678,-3957 25649,-3850 25636,-3813 25622,-3761 25635,-3723 25606,-3640 25556,-3547 25499,-3453 25449,-3365 25400,-3285 25320,-3153 25295,-3103 25217,-2971 25182,-2915
 Gehweg frei für Radfahrer, Verbundsteinpflaster	RW1; 25182,-2915 25217,-2971 25295,-3103 25320,-3153 25400,-3285 25449,-3365 25499,-3453 25556,-3547 25606,-3640 25635,-3723 25622,-3761 25636,-3813 25649,-3850 25678,-3957
 Gehweg frei für Radfahrer	RW1;RW1 25400,-3285 25567,-3189 25730,-3091 25869,-2989 25912,-2958 26102,-2822
+Gehweg frei für Radfahrer	RW1;RW1 25570,-2679 25579,-2680 25836,-2749 26102,-2822 26192,-2847
 asphaltiert	RW2;RW8 -1530,45604 -520,46093
 	RW;RW8? -520,46093 -415,46131 410,46381 570,46367 968,46545 1199,46648
 #: by: osm (teilweise auch bestätigt) vvv
@@ -2421,6 +2425,7 @@ asphaltiert	RW2; 39983,16747 40173,16723
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2; 40173,16723 39983,16747 39839,16849 39780,16893 39447,17131 39393,17172 39287,17231 39235,17255 39133,17299 38817,17412
 Verbundsteinpflaster	RW2;RW8 40528,16613 40495,16686 40487,16703 40386,16711 40173,16723
 # 
+#: historical_note: seit ~2026 und dem Rückbau der temporären Umleitungsstrecke ist der Radweg eigentlich sinnlos, aber die Schilder hängen noch immer
 asphaltiert	RW2;RW8 18849,-1460 18936,-1581
 asphaltiert	RW8;RW2 33505,50943 33723,50646 33933,50268 33997,50141 34017,50103
 	RW6;RW6 24487,-7143 24490,-7241 24493,-7282 24492,-7311

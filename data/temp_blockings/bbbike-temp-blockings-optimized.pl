@@ -3124,16 +3124,20 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: osm_watch: way id="152466403" version="24"
 #: osm_watch: way id="1424980083" version="3"
 #: osm_watch: way id="1082710233" version="5"
-#: osm_watch: note 4444162 8
+#: osm_watch: note 4444162 10
 #: also_indoor: traffic (G,T,H,W)
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
-#: last_checked: 2025-12-12 (mapillary)
-#: next_check: 2026-06-26 (VIZ-Verkehrsmeldung)
+#: note: Gegenverkehrsampel an der Einmündung Grünauer Str./Keltensteig
+#: last_checked: 2026-06-10 vvv
+#: next_check: 2026-06-26 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher q4::inwork; aber es gilt wohl (mittleweile?) in beide Richtungen
-	q4::inwork 20302,1613 20028,1673 19898,1704 19766,1796
+Grünauer Str.: Einbahnstraßenregelung	q4::inwork; 20302,1613 20028,1673 19898,1704 19766,1796
+Grünauer Str.: Anlieger frei, Baustellenverkehr, abschnittsweise unbefestigte Abschnitte	q3::inwork; 19766,1796 19898,1704 20028,1673 20302,1613
 Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
+#: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1707001200,
          'id' => 2328,
@@ -6461,7 +6465,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="17"
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-06-08 vvv
+#: last_checked: 2026-06-10 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -7550,6 +7554,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: by: https://www.erkner.de/rathaus-und-buergerservice/buergerinformationen/aktuelles/neuigkeiten/2026-1/l-30-start-des-zweiten-bauabschnitts.html (Gesamtbaumaßnahme bis Frühjahr 2027)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-04-2026-l30_erkner_zweiter-bauabschnitt
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-05-2026-l30-erkner-erweiterung-des-zweiten-bauabschnitts
+#: by: https://www.entwicklungsstadt.de/erkner-wie-lange-dauert-die-sperrung-der-friedrichstrasse-noch/ (bis Frühjahr 2027?)
 #: osm_watch: note 4705333 2
 #: osm_watch: way id="336698811" version="10"
 #: osm_watch: way id="860389744" version="10"
@@ -7564,7 +7569,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 ',
          'from' => 1742079600,
          'id' => 4189,
-         'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, bis voraussichtlich Ende 2026',
+         'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, möglicherweise bis voraussichtlich Frühjahr 2027',
          'type' => 'gesperrt',
          'until' => 1811775600
        },
@@ -8217,40 +8222,41 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: note: laut Website möglicherweise bis 16.01.2026; nun: Asphaltierung steht noch aus
 #: source_id: viz2021:13.552338,52.439314,06.10.2025,07:00 (bis 14.11.2025) (inaktiv)
 #: source_id: LMS-BR:390691/72 viz2021:13.55418,52.43793, (bis 12.12.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 30.04.2026) (bis 30.06.2026)
-#: note: Vollsperrung aufgrund Kabelgrube bis Ende Juni 2026
-#: also_indoor: traffic (T,G)
+#: note: Vollsperrung aufgrund Kabelgrube bis Ende Juni 2026; Vollsperrung aufgrund Kabelgrube bis voraussichtlich August 2026
+#: also_indoor: traffic (ex-T,G)
 #: last_checked: 2026-05-31
 # REMOVED --- #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung)
-#: next_check: 2026-06-30 (website, VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-06-30 (website, VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-31 (stromnetz website)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
 # 
-#: note: Vollsperrung bis Juni 2026
-#: also_indoor: traffic (G,no-T,no-W)
-#: last_checked: 2026-04-15 (mapillary)
-#: next_check: 2026-06-30
-Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
+# REMOVED ("abgeschlossen") --- #: note: Vollsperrung bis Juni 2026
+# REMOVED --- #: also_indoor: traffic (G,no-T,no-W)
+# REMOVED --- #: last_checked: 2026-04-15 (mapillary)
+# REMOVED --- #: next_check: 2026-06-30
+# REMOVED --- Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
 # 
-#: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
-#: also_indoor: traffic (T,no-G,no-W)
-#: last_checked: 2026-05-31
-#: check_frequency: 14d
-# REMOVED ---  #: next_check: 2026-06-01
+#: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026; mittlerweile bis voraussichtlich August 2026
+#: also_indoor: traffic (T,G,no-W)
+#: last_checked: 2026-06-10 (stromnetz website, traffic)
+#: check_frequency: 30d
+#: next_check: 2026-08-31
 Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
 # 
 #: last_checked: 2026-05-31
 Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
 # 
-#: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
-#: also_indoor: traffic (T,no-G,no-W)
-#: note: nur ein Teilabschnitt, deshalb q4->q3; am 2026-05-31 Sun 13:31 war die Durchfahrt nur offiziell gesperrt, Absperrungen weggeschoben, keine sichtbaren Bauarbeiten
-#: last_checked: 2026-05-31
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2026-06-01
-Thomas-Müntzer-Str.: an der Radickestr. offiziell gesperrt	q3::inwork 20149,3617 20299,3435
+# REMOVED --- #: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
+# REMOVED --- #: also_indoor: traffic (T,no-G,no-W)
+# REMOVED --- #: note: nur ein Teilabschnitt, deshalb q4->q3; am 2026-05-31 Sun 13:31 war die Durchfahrt nur offiziell gesperrt, Absperrungen weggeschoben, keine sichtbaren Bauarbeiten
+# REMOVED --- #: last_checked: 2026-05-31
+# REMOVED --- #: check_frequency: 14d
+# REMOVED --- # REMOVED --- #: next_check: 2026-06-01
+# REMOVED --- Thomas-Müntzer-Str.: an der Radickestr. offiziell gesperrt	q3::inwork 20149,3617 20299,3435
 # 
-#: note: Grube offen bis Ende Juni 2026
+#: note: Grube offen bis Ende Juni 2026; mittlerweile Grube offen bis Ende Juli 2026
 #: also_indoor: traffic (none)
-#: next_check: 2026-06-30
+#: next_check: 2026-07-31
 Lohnauer Steig: möglicherweise gesperrt, genaue Lage unklar	q4::inwork 20790,4114 20852,4157 20829,4211 20770,4277 20614,4381
 # 
 # REMOVED --- #: note: Sperrung im Lohnauer Steig fehlt bei BBBike -> mittlerweile abgeschlossen; mittlerweile: noch keine Verkehrsfreigabe; nun mit Verkehrsfreigabe
@@ -8292,7 +8298,7 @@ Lohnauer Steig: möglicherweise gesperrt, genaue Lage unklar	q4::inwork 20790,411
 ',
          'from' => undef,
          'id' => 4303,
-         'text' => 'Radickestr., Freystadter Weg, Gellertstr., Wassermannstr. und Umgebung: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+         'text' => 'Radickestr., Gellertstr., Wassermannstr. und Umgebung: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9423,14 +9429,16 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
        },
        undef,
        {
-         'data' => '#: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
+         'data' => '#: next_check_id: SCHWARZERWEG-2026
+#: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2025/04/2025-04-28_VZ-Plan01-2_Schoenefeld_Waltersdorf_Schwarzer_Weg_Hubertus-1024x602.jpg
 #: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen? -> nein, noch immer mit langer Umfahrung
 #: osm_watch: way id="1417905902" version="3"
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 1
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
-#: last_checked: 2026-06-03 (traffic)
+#: note: Ausschilderung am westlichen Ende: Verbot für Fahrzeuge aller Art, Anwohner frei
+#: last_checked: 2026-06-10
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 ',
@@ -9457,12 +9465,14 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
        {
          'data' => '#: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
 #: osm_watch[closed]: note 4953642 2
+#: osm_watch: note 5246727 3
 #: source_id: LMS-BR:407366/72 viz2021:13.45315,52.52627,06.05.2026,20:00 (Kraneinsatz, bis 08.05.2026) (inaktiv)
 #: last_checked: 2026-04-04 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
+#: osm_watch: way id="1528007580" version="1"
 Hausburgstr.: gesperrter Abschnitt etwa 50m lang	q4::inwork 13742,13376 13706,13460
-#: osm_watch: way id="8428399" version="36"
+#: osm_watch: way id="8428399" version="37"
 Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,13487 13706,13460
 #: next_check ^^^
 #: check_frequency ^^^
@@ -9489,29 +9499,7 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: HELGAHAHNEMANN-2023
-#: add_fragezeichen: Ist die Verbindung zum Uferweg und der neue Uferweg mittlerweile offiziell offen? vvv
-#: XXX laut osm nicht mehr highway=construction vvv
-#: last_checked: 2026-04-18 vvv
-#: check_frequency: 45d vvv
-#: next_check: 2026-05-26 (osm) vvv
-#: osm_watch: way id="1467787945" version="3"
-Uferweg	2::inwork 18192,5931 18118,5953
-#: osm_watch: way id="958828368" version="5"
-Verbindungsweg	2::inwork 18118,5953 18075,5880
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 4525,
-         'text' => 'Hasselwerderpark/Uferweg - Am Werkstor/Kupferkamp: Wege können noch gesperrt sein (Stand Mitte April 2026: Durchfahrt möglich)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
@@ -9980,12 +9968,14 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
 # REMOVED --- #: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407 --- #: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun? --- #: next_check: 2026-05-01 ---	2::inwork 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
 #: add_fragezeichen: Ist der Weg entlang des BER weiterhin gesperrt?
 #: osm_watch: way id="27043028" version="16"
-#: last_checked: 2026-04-19 (osm)
-	2::inwork 19529,-4494 19582,-4524 19813,-5070 19673,-5149 19638,-5134 18693,-5516 18365,-5657 16859,-6263 16251,-6520
+#: osm_watch: way id="158214949" version="18"
+#: last_checked: 2026-06-10
+#: check_frequency: 21d
+	2::inwork 19651,-4039 19570,-4313 19529,-4494 19582,-4524 19813,-5070 19673,-5149 19638,-5134 18693,-5516 18365,-5657 16859,-6263 16251,-6520
 ',
          'from' => undef,
          'id' => 4578,
-         'text' => 'entlang des BER: Straßenbau, Weg gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'entlang des BER: Straßenbau, Weg gesperrt, Ende der Bauarbeiten unbekannt (Stand 10. Juni 2026: weiterhin Bauarbeiten mit Sperrung)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -10030,7 +10020,7 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
 #: osm_watch: way id="10856020" version="52"
 #: osm_watch: note 5250307 2
 #: priority: #A
-#: last_checked: 2026-05-10 vvv
+#: last_checked: 2026-06-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (BA TK, nbb netzgesellschaft) vvv
 Kastanienallee	2::inwork 18437,7752 19045,6959
@@ -10428,7 +10418,8 @@ Wünsthoffstr.: Einbahnstraßenregelung	q4::inwork; 8461,8097 8265,8092
          'until' => undef
        },
        {
-         'data' => '#: source_id: 267302426 (bis 14.08.2026)
+         'data' => '#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin/infobauarbeiten?date=20260609 (hier vom 9.6.2026)
+#: source_id: 267302426 (bis 14.08.2026)
 	2::inwork 47908,73136 47292,73547
 ',
          'from' => 1780804800,
@@ -10541,14 +10532,17 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 
          'data' => '#: next_check_id: UFERWEGHOHENZOLLERNKANAL-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mntppr2co22e (2 Jahre Dauer? also bis Mitte 2028?)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibm4pgrf57ql5ax4imaucp2hyq2p34eyl7uvgrqdutlwelnrp5qxy (mit Umleitungsstrecke und prov. Asphaltrampe)
-#: osm_watch: note 5306663 3
-#: osm_watch: note 5306662 2
+#: osm_watch[closed]: note 5306663 3
+#: osm_watch[closed]: note 5306662 2
 #: priority: #A vvv
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
 #: last_checked: 2026-06-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-06-01 (VIZ) vvv
+#: osm_watch: way id="511126838" version="14"
+#: osm_watch: way id="511126840" version="12"
 	2::inwork 2942,15781 3005,15780 3252,15781
+#: osm_watch: way id="511126840" version="12"
 	2::inwork 2924,15825 2950,15824 2972,15799 3009,15811 3058,15846 3237,15858
 #: next_check ^^^
 #: check_frequency ^^^
@@ -10590,6 +10584,33 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 
          'text' => 'Spektelagesteg I: Sperrung wegen Baufälligkeit',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: LMS-BR:395248/72 viz2021:13.31388,52.50624,05.01.2026,07:00 (hier nur Kantstr., bis 31.12.2026)
+#: also_indoor: traffic (G,T)
+#: note: Sperrung auf 50m Länge, aber auch Umwege auf der Kantstr. nötig
+#: last_checked: 2026-06-08 (mapillary)
+	q4::inwork 4270,10861 4289,11060
+',
+         'from' => undef,
+         'id' => 4634,
+         'text' => 'Leibnizstr.: Fahrbahn vor der Kantstr. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1672272.php (01.06.2026-12.10.2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/grundhafte-strassenbaumassnahmen-in-der-filandastrasse/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnvwiyezw22e (bis Ende Oktober 2026)
+#: note: bedeutet die Umleitung, dass das Radfahren hier explizit verboten wird?
+#: source_id: LMS-BR:411397/72 viz2021:13.33133,52.45317,10.06.2026,07:00 (bis 30.10.2026)
+Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,5179 5610,5227 5643,5301 5666,5392 5672,5469 5671,5489
+',
+         'from' => 1780981200,
+         'id' => 4635,
+         'text' => 'Neue Filandastr.: Bauarbeiten zwischen Albrechtstr. und Südendstr., Verengung der Fahrbahn, für den Radverkehr existieren Umleitungsstrecken, vom 10.06.2026 bis 30.10.2026',
+         'type' => 'handicap',
+         'until' => 1793401140
        }
      
 );

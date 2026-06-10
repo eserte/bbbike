@@ -278,7 +278,9 @@ Elsenstr.: Asphalt	Q0 13405,8737 13455,8800 13510,8872 13664,9073 13766,9200
 Herrfurthstr.: Asphalt	Q0 11979,8014 11833,7980 11754,7964
 #: note: gepflasterter Parkstreifen
 Herrfurthstr.: Asphalt	Q0 11647,7940 11579,7926 11472,7899
-Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
+Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964
+#: historical_note: früher (bis Frühjahr 2026): mäßiges Kopfsteinpflaster, Q2
+Herrfurthplatz: abgeschliffenes Kopfsteinpflaster	Q1- 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7086,8579 7012,8511 6807,8309
 Herbertstr.: Kopfsteinpflaster	Q2 7360,8918 7389,8837 7402,8783
@@ -336,7 +338,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-10
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -1600,6 +1602,7 @@ Pankeweg: Kopfsteinpflaster	Q2 12578,20749 12505,20702
 Pankeweg: asphaltiert	Q0 12505,20702 12386,20636 12363,20582 12310,20523 12266,20467 12235,20380 12216,20344 12154,20325
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6833
 #: by: mapillary
+#: note: im Mai/Juni 2026 wurden die schlimmsten Wurzelschäden ausgebessert, indem der Asphalt herausgenommen und durch festen Sand ersetzt wurde
 Pankeweg: asphaltiert, Wurzelschäden	Q1 12154,20325 12094,20110 11995,19759
 Pankeweg: asphaltiert	Q0 11995,19759 11907,19749
 Schloßallee: Asphalt, teilweise mit leichten Schäden	Q0- 11883,19739 11730,19684 11472,19593 11312,19537 11268,19519 11236,19509
@@ -2753,6 +2756,7 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18592,3743 18434,3738 18293,3890 18122,4074
 #: note: im Mittelteil gibt es hier einen erhöhten Holzbohlenweg, ähnliche Qualitätskategorie
 (Weg im Landschaftspark Johannisthal): Gehwegplatten, einige Hebungen und fehlende Stellen	Q1- 18347,3947 18293,3890 18031,3737 17976,3735
+#: note: außerdem ein erhöhter Holzbohlenweg mit deutlich schlechterer Qualität (Q2)
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18592,3743 18633,3530
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18930,3703 18803,3694 18633,3530 18562,3461 18451,3352 18337,3238 18304,3208 18080,3268 18031,3737 18006,3992
 (Weg im Landschaftspark Johannisthal): Gehwegplatten	Q0- 18304,3208 18326,3141 18347,3129
@@ -2890,7 +2894,7 @@ Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731 1518,20615 1407,20563
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10362
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11387 (Ersuchen)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12250 (Beginn der Baumaßnahme: Herbst 2025)
-#: osm_watch: way id="517170155" version="14"
+#: osm_watch: way id="517170155" version="15"
 #: last_checked: 2026-05-19
 #: check_frequency: 180d
 # REMOVED (nicht passiert) --- #: next_check: 2025-12-15 (BVV-Drucksache: Beginn Herbst 2025)
@@ -7615,7 +7619,7 @@ Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 1945
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19590,7770 19537,7693
 #: osm_watch: way id="156650954" version="17"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2026-04-18
+#: last_checked: 2026-06-10
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19605,7746 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -7642,7 +7646,7 @@ Am Wartenberger Luch: Verbundsteinpflaster	Q0- 18060,19146 18100,19127 18179,190
 Schalauer Str.: Asphalt	Q0 17310,26452 17367,26349 17423,26253
 Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 (Straße 7 - Zepernicker Str.): Asphalt	Q0 17668,26607 17714,26509 17764,26410
-Am Wiesenweg: Betonpflaster	Q0- 21977,988 21856,996 21724,954 21685,916
+Am Wiesenweg: Betonpflaster	Q0- 21977,988 21889,1000 21856,996 21724,954 21685,916
 (Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2+ 11845,11095 11893,11074 11961,11041
 Mariannenplatz: Kopfsteinpflaster	Q2+ 11893,11074 11854,10972 11819,10942 11805,10899 11805,10858 11804,10846 11772,10764
 (Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4830,17710
@@ -8304,7 +8308,8 @@ Eichwalder Aue: Asphalt	Q0 25783,-2288 25608,-2393 25516,-2449
 Eichwalder Aue: unbefestigte Straße	Q2 25516,-2449 25472,-2471 25425,-2475
 Viebahnstr.: unbefestigte Straße	Q2 25608,-2393 25572,-2332
 Cotheniusstr.: Asphalt	Q0 13228,13615 13430,13733
-Godbersenstr.: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg auf der südlichen Seite kann zum Ausweichen benutzt werden	Q2+ 26201,-2845 27006,-2778
+#: note: Verbundsteinpflaster mit einigen Wurzelschäden
+Godbersenstr.: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg auf der südlichen Seite kann zum Ausweichen benutzt werden	Q1- 26201,-2845 27006,-2778
 Radduscher Weg: Beton	Q0- 26360,-1788 26287,-1758 26232,-1723 26124,-1648
 Ragower Weg: Asphalt	Q0 26124,-1648 26152,-1594 26169,-1518 26168,-1424
 Zerkwitzer Weg: Asphalt, Wurzeln	Q1+ 26175,-1262 26307,-1179 26399,-1118
@@ -9597,8 +9602,8 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7231 (Antrag für die Unterquerung, Juni 2022 gestellt)
 #: osm_watch: way id="127080608" version="7"
 #: XXX siehe auch Maßnahme Gr.9; außerdem soll die Straße "Am Kanal" asphaltiert werden -> letzteres ist realisiert
-#: note: jemand hat hier Teppiche ausgelegt, um die Lage etwas zu lindern (gesehen: 2018-05-06, 2019-01-02, 2019-10-19, 2020-11-28, 2021-04-24, 2022-06-06, 2022-10-05, 2024-12-04, 2025-06-21)
-#: last_checked: 2025-06-21
+#: note: jemand hat hier Teppiche ausgelegt, um die Lage etwas zu lindern (gesehen: 2018-05-06, 2019-01-02, 2019-10-19, 2020-11-28, 2021-04-24, 2022-06-06, 2022-10-05, 2024-12-04, 2025-06-21, 2026-06-10)
+#: last_checked: 2026-06-10
 #: check_frequency: 360d
 Unterführung unter Adlergestell und Bahn: sandig, aber notdürftig mit Teppichen ausgelegt	Q3+ 20939,2413 20904,2426 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
@@ -14567,6 +14572,8 @@ Karl-Schmidt-Rottluff-Weg: Asphalt stellenweise mit Unebenheiten und Schäden	Q1 
 Fürst-Bismarck-Steg: Holzbohlen	Q1- 3879,22574 3907,22560
 # 
 (Bertramstr. - Wanderweg): unbefestigt	Q2 5046,24000 5050,23984
+# 
+(Wohnquartier Bruno-Taut-Straße): Betonsteinpflaster	Q0- 21685,916 21723,969 21714,985 21781,1019 21883,1034 21889,1000
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
