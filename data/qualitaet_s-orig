@@ -3391,9 +3391,9 @@ Niederheideweg: Asphalt mit Schäden	Q1 -6518,17539 -5913,17315 -5898,17318
 Niederheideweg: Asphalt	Q0 -5898,17318 -5786,17339
 Sandwiesenweg: Asphalt	Q0 -5918,17180 -5898,17318
 (Pestalozzistr. - Falkenseer Chaussee): Asphalt	Q0 -7276,16753 -7208,16669 -7184,16582 -7176,16398 -7173,16305 -7184,16263
-#: add_fragezeichen: Sind die Holzbohlen nach der Sanierung besser geworden? Oder gibt es mittlerweile einen "Steinbelag" (siehe Tsp)?
-#: osm_watch: note 5323933 1
-Brücke über Spektelake: unebene Holzbohlen	Q2 -7228,15504 -7182,15524
+#: historical_note: früher (bis 2025/2026): unebene Holzbohlen, Q2
+#: by: osm note
+Brücke über Spektelake: Steinplatten	Q0- -7228,15504 -7182,15524
 (An der Felgenlake - Finkenkruger Weg): Asphalt	Q0 -7228,15504 -7360,15447
 (An der Felgenlake - Finkenkruger Weg): wassergebundene Decke	Q1 -7119,15501 -7182,15524
 Luchweg: Asphalt	Q0 -7840,15503 -7751,15847 -7739,15980 -7739,15993
@@ -14207,6 +14207,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://www.entwicklungsstadt.de/streitpunkt-stadtgruen-wie-es-mit-der-ollenhauerstrasse-weitergeht/
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14188 (Einwohneranfrage)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14190 (Einwohneranfrage)
+#: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-in-reinickendorf-neue-details-verschaerfen-debatte/
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: last_checked: 2026-06-07 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv

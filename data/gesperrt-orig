@@ -750,6 +750,7 @@ Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1627066.php (neu seit ca. Dez 2025, bestätigt bei osm)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13980 (Einbahnstraße wird für Radfahrer nicht freigegeben)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14092 (Anfrage)
+#: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14387 (Anfrage)
 Büdnerring	1 7861,18333 7997,18524
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1627066.php (neu seit ca. Dez 2025, bestätigt in einer osm-Notiz)
 Raschdorffstr.	1 8096,18456 7954,18251
@@ -4586,7 +4587,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-06-04
+#: last_checked: 2026-06-11
 #: check_frequency: 30d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4621,7 +4622,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 2
-#: last_checked: 2026-06-09 (daf) vvv
+#: last_checked: 2026-06-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2028-03-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1054783030" version="9"
@@ -5366,16 +5367,18 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1672182.php (Bebauungsplan beschlossen)
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/staedtebau/berliner-mitte/molkenmarkt/planzeichnung_blatt_1.pdf
 #: by: https://www.entwicklungsstadt.de/neue-wohnungen-am-molkenmarkt-bebauungsplan-beschlossen/
+#: by: https://www.entwicklungsstadt.de/historische-mitte-mittelalterlicher-fund-am-molkenmarkt-sorgt-fuer-neue-erkenntnisse/ (archäologische Grabung bis 2027)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-06-07
-#: check_frequency: 90d
+#: last_checked: 2026-06-11
+#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
 # 
 # REMOVED (offen) --- #: next_check_id: MOLKENMARKT-2021 --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/ --- #: last_checked: 2025-01-21 --- #: check_frequency: 30d --- Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-11
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

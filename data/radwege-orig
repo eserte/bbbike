@@ -1063,7 +1063,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2026-03-15
+#: last_checked: 2026-04-10 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -2401,7 +2401,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-06-07 vvv
+#: last_checked: 2026-06-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -3750,8 +3750,10 @@ unebenes Verbundsteinpflaster	RW1; 10849,-1332 10822,-806 10793,-161
 #: note: Beusselstr. Richtung Süden
 	RW1; 5043,14671 5051,14606 5086,14504
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19, Sa 8-19 und So 7-15 Uhr	RW1; 5086,14504 5205,14253 5212,14154 5220,14043
-teilweise mit Pollern	RW3; 5220,14043 5225,13958 5231,13843
-	RW3; 5231,13843 5238,13714
+#: historical_note: anfangs noch ohne Radwegschilder
+teilweise mit Pollern	RW4; 5220,14043 5225,13958 5231,13843
+#: historical_note: anfangs noch ohne Radwegschilder
+	RW4; 5231,13843 5238,13714
 	RW4; 5238,13714 5246,13488 5248,13434
 Radspur hinter den parkenden Autos	RW4; 5248,13434 5202,13266
 	RW4; 5202,13266 5199,13247

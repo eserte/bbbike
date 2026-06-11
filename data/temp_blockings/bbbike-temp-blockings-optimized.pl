@@ -2388,18 +2388,7 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 247300035 (bis 02.03.2024) (inaktiv)
-#: source_id: 267301326 (bis 06.06.2026) (bis 11.06.2026)
-#: by: https://bauprojekte.deutschebahn.com/p/angermuende-stettin/infobauarbeiten?date=20260518
-	2::inwork 48237,70892 48162,70928 48093,70968
-',
-         'from' => 1779861600,
-         'id' => 1975,
-         'text' => 'Kerkow - Glambeck: Bahnübergang gesperrt, vom 28.05.2026 08:00 Uhr bis 11.06.2026 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1781193600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5284,8 +5273,8 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
 #: source_id: viz2021:13.305716,52.502767,22.12.2023,15:12 (bis 31.08.2024) (inaktiv)
 #: source_id: viz2021:13.30605,52.50146,15.07.2025,07:00 (bis 11.10.2025) (inaktiv)
 #: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:394765/72 viz2021:13.305676,52.501251,01.01.2026,07:00 (bis 30.06.2026)
-#: source_id: LMS-BR:394766/72 viz2021:13.30605,52.50146,01.01.2026,07:00 (benachbarte Lewishamstr., bis 30.06.2026)
+#: source_id: LMS-BR:394765/72 viz2021:13.305676,52.501251,01.01.2026,07:00 (bis 30.06.2026) (bis 30.12.2026)
+#: source_id: LMS-BR:394766/72 viz2021:13.30605,52.50146,01.01.2026,07:00 (benachbarte Lewishamstr., bis 30.06.2026) (bis 30.12.2026)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084 (altes Bauvorhaben von ~2021)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-lewishamstra%C3%9Fe-4-ehem-hotel-panorama-adenauer-platz.1193/page-3#post-26359
@@ -5302,12 +5291,12 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
 #: note: laut rbb Sperrungen in beiden Richtungen
 #: also_indoor: traffic (none)
 #: last_checked: 2026-03-01 (architektur-urbanistik)
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-30 (VIZ-Verkehrsmeldung)
 Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 ',
          'from' => 1752605472,
          'id' => 3496,
-         'text' => 'Waitzstr.: Baustelle, Einbahnstraßenregelung, voraussichtlich bis Juni 2026',
+         'text' => 'Waitzstr.: Baustelle, Einbahnstraßenregelung, voraussichtlich bis Ende 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5650,7 +5639,25 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
+#: by: https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf
+#: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/koenigs-wusterhausen-kreisverkehr-storkower-strasse-zum-jahresende-2024-wieder-befahrbar-bahntunnel-WM2FW4DUHZE65CRJMWD6MFJ43E.html (Maxim-Gorki-Str. und Kreisverkehr werden Ende 2024 komplett freigegeben, die Bahnunterführung erst im Herbst 2025)
+#: by: https://www.maz-online.de/lokales/dahme-spreewald/koenigs-wusterhausen/dahme-spreewald-kreisverkehr-storkower-strasse-in-kw-frei-neue-verkehrsfuehrung-GENTZWH5Y5EGBOEL2ARWQLLGOU.html (nur Kreisverkehr ist frei, Unterführung weiterhin erst im Herbst 2025)
+# REMOVED --- #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
+# REMOVED --- #: last_checked: 2025-06-21 --- #: next_check: 2025-11-30 (maz)
+# REMOVED --- Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26386,-11705 26400,-11718
+# REMOVED --- #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin --- #: last_checked: 2025-02-04 (mapillary) --- #: next_check: 2025-11-30 (maz) --- #: note: eigentlich 1s:q3 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
+#: source_id: 266100759 (Markierungsarbeiten bis 19.06.2026)
+Storkower Straße (Königs Wusterhausen): Markierungsarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen	2::inwork 26327,-11708 26386,-11705 26400,-11718
+',
+         'from' => 1781560800,
+         'id' => 3575,
+         'text' => 'Storkower Straße (Königs Wusterhausen): Markierungsarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 17.06.2026 20:00 Uhr bis 19.06.2026 05:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1781838000
+       },
        undef,
        undef,
        undef,
@@ -6040,11 +6047,13 @@ Sennheimer Str., Königsbacher Zeile bis Schönfließer Str.	q4::inwork 2519,25772 
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
+#: source_id: LMS-BR:411529/72 viz2021:13.331742,52.502949,11.06.2026,06:00 (bis 31.12.2026)
 #: osm_watch: note 4984535 1
 #: osm_watch: way id="1144627217" version="6"
 #: also_indoor: traffic (re-W,ex-G,T)
 #: last_checked: 2026-05-22 (mapillary)
 #: check_frequency: 90d
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork; 5497,10719 5471,10719
 ',
          'from' => undef,
@@ -6961,7 +6970,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
-#: last_checked: 2026-05-25 (mapillary)
+#: last_checked: 2026-06-09 (mapillary)
 #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
@@ -7584,13 +7593,14 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        undef,
        {
          'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 ',
          'from' => 1752962400,
          'id' => 4199,
-         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis 10.07.2026 20:00 Uhr',
+         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, möglicherweise bis September 2026',
          'type' => 'gesperrt',
-         'until' => 1783706400
+         'until' => 1790805599
        },
        {
          'data' => '# REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
@@ -8656,7 +8666,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-06-04
+#: last_checked: 2026-06-11
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -8789,7 +8799,7 @@ Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
 ',
          'from' => 1754431200,
          'id' => 4411,
-         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Mai 2026: Diagonalweg ist offen)',
+         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Juni 2026: Diagonalweg ist offen)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -10602,6 +10612,7 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1672272.php (01.06.2026-12.10.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/grundhafte-strassenbaumassnahmen-in-der-filandastrasse/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnvwiyezw22e (bis Ende Oktober 2026)
+#: by: https://www.entwicklungsstadt.de/filandastrasse-in-steglitz-neue-bauphase-mit-sperrung-geplant/
 #: note: bedeutet die Umleitung, dass das Radfahren hier explizit verboten wird?
 #: source_id: LMS-BR:411397/72 viz2021:13.33133,52.45317,10.06.2026,07:00 (bis 30.10.2026)
 Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,5179 5610,5227 5643,5301 5666,5392 5672,5469 5671,5489
@@ -10611,6 +10622,33 @@ Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,
          'text' => 'Neue Filandastr.: Bauarbeiten zwischen Albrechtstr. und Südendstr., Verengung der Fahrbahn, für den Radverkehr existieren Umleitungsstrecken, vom 10.06.2026 bis 30.10.2026',
          'type' => 'handicap',
          'until' => 1793401140
+       },
+       {
+         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=798765#post798765
+#: osm_watch: way id="1431729132" version="5"
+#: osm_watch: way id="109434523" version="10"
+#: osm_watch: way id="109434525" version="10"
+#: priority: #A
+#: add_fragezeichen: Besteht die Sperrung des Uferwegs weiterhin?
+#: last_checked: 2026-05-27 (osm)
+#: check_frequency: 60d
+	2::inwork 4284,15739 4459,15723 4664,15491 4754,15388 4777,15398
+',
+         'from' => undef,
+         'id' => 4636,
+         'text' => 'Uferweg am Hohenzollernkanal: im Bereich der KGA Plötzensee wegen Wurzelschäden gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: LMS-BR:411535/72 viz2021:13.31707,52.50308,11.06.2026,07:00 (bis 28.08.2026)
+	q4::inwork; 4513,10702 4685,10689
+',
+         'from' => 1781067600,
+         'id' => 4637,
+         'text' => 'Mommsenstr.: Tiefbauarbeiten zwischen Schlüterstr. und Bleibtreustr., Richtung Osten gesperrt, evtl. ist auch der Radverkehr betroffen, vom 11.06.2026 07:00 bis 28.08.2026 18:00',
+         'type' => 'handicap',
+         'until' => 1787932800
        }
      
 );
