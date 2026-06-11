@@ -709,7 +709,7 @@
     (beginning-of-line)
     (insert (concat "#: source_id: " source-id description "\n"))))
 
-;;; works best together with the (yet unpublished) firefox currenturl addon 
+;;; works best together with the firefox addon found in .../bbbike/misc/firefox-currenturl-addon
 (defun bbbike-insert-current-url ()
   "Read ~/Downloads/current_url.txt and insert '#: by: URL' on a new line below the current one."
   (interactive)
