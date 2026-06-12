@@ -30976,7 +30976,7 @@ EOF
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2026-05-25 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
 	2::inwork 3233,12757 3332,12742
 EOF
      },
@@ -43879,8 +43879,8 @@ Marshallstr.: Anbindung am Hüttenweg gesperrt	q3::inwork 1385,5214 1319,5100
 EOF
      },
      { from  => 1707087600, # 2024-02-05 00:00
-       until => $isodate2epoch->("2026-06-30 23:59:59"), # $isodate2epoch->("2024-08-02 18:00:00"), # 1722635940, # 2024-08-02 23:59
-       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Ende Juni 2026',
+       until => $isodate2epoch->("2026-10-09 23:59:59"), # $isodate2epoch->("2026-06-30 23:59:59"), # $isodate2epoch->("2024-08-02 18:00:00"), # 1722635940, # 2024-08-02 23:59
+       text  => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Oktober 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: CHARLOTTENBURGERUFER-2024
@@ -43890,12 +43890,12 @@ EOF
 #: source_id: viz2021:13.30625,52.52024,06.01.2025,06:46 (bis 30.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.30212,52.52129,10.03.2025,09:14 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.30212,52.52129,26.06.2025,17:27 (bis 31.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:385808/72 viz2021:13.2998,52.52136,06.10.2025,07:30 (bis 31.12.2025) (bis 30.06.2026)
+#: source_id: LMS-BR:385808/72 viz2021:13.2998,52.52136,06.10.2025,07:30 (bis 31.12.2025) (bis 30.06.2026) (bis 09.10.2026)
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
 #: last_checked: 2026-06-09 (mapillary)
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 EOF
      },
@@ -45278,7 +45278,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-05-18 00:00:00"), # 1718254800, # 2024-06-13 07:00
-       until => $isodate2epoch->("2026-06-12 23:59:59"), # 1776793905, # $isodate2epoch->("2026-09-01 17:00:00"), # 1725030000, # 2024-08-30 17:00
+       until => 1781299659, # $isodate2epoch->("2026-06-12 23:59:59"), # 1776793905, # $isodate2epoch->("2026-09-01 17:00:00"), # 1725030000, # 2024-08-30 17:00
 #      text  => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, voraussichtlich bis Ende 2025',
 #      text  => 'Alt-Wittenau: Richtung Roedernallee Bauarbeiten, etwa 75m der Fahrbahn sind gesperrt, möglicherweise bis zum Sommer 2026',
        text  => 'Alt-Wittenau: vor der Einmündung Roedernallee Bauarbeiten, ein kurzes Stück der Fahrbahn ist gesperrt, bis Mitte Juni 2026',
@@ -45286,7 +45286,7 @@ EOF
        data  => <<'EOF',
 #: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
-#: source_id: LMS-BR:408563/72 viz2021:13.338888,52.589354,18.05.2026,07:00 (bis 12.06.2026)
+#: source_id: LMS-BR:408563/72 viz2021:13.338888,52.589354,18.05.2026,07:00 (bis 12.06.2026) (inaktiv)
 #: source_id: bvg2024:120#HIM_FREETEXT_337463
 #: also_indoor: traffic (G,ex-H,ex-W,no-T)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
@@ -45395,7 +45395,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-07 vvv
+#: last_checked: 2026-06-12 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -48575,7 +48575,7 @@ EOF
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2026-03-17
+#: last_checked: 2026-06-12 (vermutet)
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -49682,20 +49682,20 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-03-08 00:00:00"), # 1750654800, # 2025-06-23 07:00
-       until => $isodate2epoch->("2026-06-12 23:59:59"), # $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
+       until => $isodate2epoch->("2026-07-03 23:59:59"), # $isodate2epoch->("2026-06-12 23:59:59"), # $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
 #      text  => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Fahrbahn Richtung Osten gesperrt, gemeinsamer Geh- und Radweg (Umwege + Bordsteine), vom 24.06.2025 07:00 bis 31.07.2025 17:00',
-       text  => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis Mitte Juni 2026',
+       text  => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis 03.07.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
 #: source_id: adac:2089388170 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.492511,52.516292,24.06.2025,07:00 (bis 31.07.2025) (inaktiv)
-#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026)
+#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026) (bis 03.07.2026)
 # REMOVED (alte Bauarbeiten von 2025) --- #: note: bei rbb bis 31.07.2025 verlängert --- #: note: durch die Umwege + Bordsteine ist q4 berechtigt ---	q4::inwork; 16397,12397 16485,12384 16583,12371
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: next_check: 2026-06-12 (VIZ: weitere Arbeiten?)
+#: next_check: 2026-07-03 (VIZ-Verkehrsmeldung, evtl. weitere Arbeiten?)
 	q4::inwork; 16276,12273 16397,12397 16485,12384
 EOF
      },
@@ -50052,7 +50052,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-06-11
+#: last_checked: 2026-06-12
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -52364,7 +52364,7 @@ EOF
      { from  => 1771974000, # 2026-02-25 00:00
        until => undef, # 1777068000, # 2026-04-25 00:00
 #      text  => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, vom 26.02.2026 bis 24.04.2026',
-       text  => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, Ende der Bauarbeiten unbekannt',
+       text  => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, Ende der Bauarbeiten unbekannt (Stand Mitte Juni 2026: noch immer gesperrt)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: VOLKSPARKWILMERSDORF-2026
@@ -52373,7 +52373,7 @@ EOF
 #: osm_watch: note 5180232 2
 #: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2026-05-04
+#: last_checked: 2026-06-12
 # REMOVED (wurde nicht gehalten) --- #: next_check: 2026-04-25
 	2::inwork 5533,8478 5660,8366
 EOF
@@ -52898,11 +52898,11 @@ EOF
 EOF
      },
      { from  => 1775758387, # 2026-04-09 20:13
-       until => 1781301600, # 2026-06-13 00:00
+       until => 1781299688, # 1781301600, # 2026-06-13 00:00
        text  => 'Landweg: Sperrung zwischen Réaumurstr. und Osdorfer Str., evtl. sind auch Radfahrer betroffen, bis 12.06.2026 17:00',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LMS-BR:404321/72 viz2021:13.320862,52.410467, (bis 13.06.2026)
+#: source_id: LMS-BR:404321/72 viz2021:13.320862,52.410467, (bis 13.06.2026) (inaktiv)
 #: note: hier keine Bürgersteige
 	2::inwork 4748,453 4759,436 4913,422 5061,409
 EOF
@@ -53496,14 +53496,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1781299621, # undef, # XXX
        text  => 'Marie-Elisabeth-Lüders-Str.: Wasserrohrbruch, Sperrung, evtl. ist auch der Radverkehr betroffen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnhegvmxfs2y
 #: source_id: LMS-BR:410740/72 viz2021:13.31706,52.51236,
-#: XXX Ist der Radverkehr tatsächlich betroffen? Wann sind die Bauarbeiten beendet?
-#: last_checked: 2026-06-04 (VIZ-Verkehrsmeldung)
+#: source_id: LMS-BR:411635/72 viz2021:13.317241,52.513786,12.06.2026,07:00 (nur noch Fahrbahnverengung, bis 31.07.2026)
+# REMOVED --- #: XXX Ist der Radverkehr tatsächlich betroffen? Wann sind die Bauarbeiten beendet? --- #: last_checked: 2026-06-04 (VIZ-Verkehrsmeldung)
 	q4::inwork 4507,11936 4475,11845 4498,11740
 EOF
      },
@@ -53551,10 +53551,10 @@ EOF
 #: last_checked: 2026-06-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-06-01 (VIZ) vvv
-#: osm_watch: way id="511126838" version="14"
-#: osm_watch: way id="511126840" version="12"
+#: osm_watch: way id="511126838" version="15"
+#: osm_watch: way id="511126840" version="13"
 	2::inwork 2942,15781 3005,15780 3252,15781
-#: osm_watch: way id="511126840" version="12"
+#: osm_watch: way id="627318872" version="9"
 	2::inwork 2924,15825 2950,15824 2972,15799 3009,15811 3058,15846 3237,15858
 #: next_check ^^^
 #: check_frequency ^^^

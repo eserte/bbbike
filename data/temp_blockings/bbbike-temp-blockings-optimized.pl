@@ -4432,7 +4432,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2026-05-25 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
 	2::inwork 3233,12757 3332,12742
 ',
          'from' => undef,
@@ -6966,19 +6966,19 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: source_id: viz2021:13.30625,52.52024,06.01.2025,06:46 (bis 30.06.2025) (vorfristig inaktiv)
 #: source_id: viz2021:13.30212,52.52129,10.03.2025,09:14 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.30212,52.52129,26.06.2025,17:27 (bis 31.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:385808/72 viz2021:13.2998,52.52136,06.10.2025,07:30 (bis 31.12.2025) (bis 30.06.2026)
+#: source_id: LMS-BR:385808/72 viz2021:13.2998,52.52136,06.10.2025,07:30 (bis 31.12.2025) (bis 30.06.2026) (bis 09.10.2026)
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
 #: last_checked: 2026-06-09 (mapillary)
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
          'from' => 1707087600,
          'id' => 4006,
-         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Ende Juni 2026',
+         'text' => 'Charlottenburger Ufer: Bauarbeiten zwischen Luisenplatz und Lohmeyerstr., Sperrung der Fahrbahn, auch Radfahrer sind betroffen, voraussichtlich bis Oktober 2026',
          'type' => 'handicap',
-         'until' => 1782856799
+         'until' => 1791583199
        },
        undef,
        undef,
@@ -7151,35 +7151,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
-#: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
-#: source_id: LMS-BR:408563/72 viz2021:13.338888,52.589354,18.05.2026,07:00 (bis 12.06.2026)
-#: source_id: bvg2024:120#HIM_FREETEXT_337463
-#: also_indoor: traffic (G,ex-H,ex-W,no-T)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
-#: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
-#: by: https://www.deutsches-architekturforum.de/thread/14764-reinickendorf-kleinere-projekte/?postID=766343#post766343 (Quartier Alt-Wittenau)
-#: by: https://www.gesobau.de/wohnungsbau/quartier-alt-wittenau/ (Bauphase bis Sommer 2026)
-#: by: https://entwicklungsstadt.de/baufortschritt-in-alt-wittenau-gesobau-quartier-nimmt-gestalt-an/ (Fertigstellung Sommer 2026)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1574495.php
-#: by: https://entwicklungsstadt.de/richtfest-in-alt-wittenau-neues-wohnquartier-fuer-studierende-und-azubis/
-#: by: https://entwicklungsstadt.de/fuenf-neue-wohnprojekte-in-reinickendorf-so-entwickelt-sich-der-berliner-nordwesten/
-#: by: https://www.entwicklungsstadt.de/reinickendorf-roedernallee-118-studenten-wohnheim-waechst/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mm42zwmuqs24 (neue Sperrung Mai 2026)
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigidihkfou4dn74k7bo4az24iuh4va3us6s3zms2p6euiz2ccsal4
-#: by: https://www.entwicklungsstadt.de/reinickendorf-studentenwohnheim-roedernallee-118-fast-fertig/
-# REMOVED --- #: last_checked: 2026-03-24 (traffic) --- #: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
-#	q3::inwork; 5476,20372 5801,20339
-	q3::inwork 5476,20372 5801,20339
-',
-         'from' => 1779055200,
-         'id' => 4089,
-         'text' => 'Alt-Wittenau: vor der Einmündung Roedernallee Bauarbeiten, ein kurzes Stück der Fahrbahn ist gesperrt, bis Mitte Juni 2026',
-         'type' => 'handicap',
-         'until' => 1781301599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7211,7 +7183,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-07 vvv
+#: last_checked: 2026-06-12 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -8150,7 +8122,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2026-03-17
+#: last_checked: 2026-06-12 (vermutet)
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -8557,19 +8529,19 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
 #: source_id: adac:2089388170 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.492511,52.516292,24.06.2025,07:00 (bis 31.07.2025) (inaktiv)
-#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026)
+#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026) (bis 03.07.2026)
 # REMOVED (alte Bauarbeiten von 2025) --- #: note: bei rbb bis 31.07.2025 verlängert --- #: note: durch die Umwege + Bordsteine ist q4 berechtigt ---	q4::inwork; 16397,12397 16485,12384 16583,12371
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: next_check: 2026-06-12 (VIZ: weitere Arbeiten?)
+#: next_check: 2026-07-03 (VIZ-Verkehrsmeldung, evtl. weitere Arbeiten?)
 	q4::inwork; 16276,12273 16397,12397 16485,12384
 ',
          'from' => 1772924400,
          'id' => 4368,
-         'text' => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis Mitte Juni 2026',
+         'text' => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis 03.07.2026',
          'type' => 'handicap',
-         'until' => 1781301599
+         'until' => 1783115999
        },
        undef,
        {
@@ -8666,7 +8638,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-06-11
+#: last_checked: 2026-06-12
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -9669,13 +9641,13 @@ Glaßbrennerstr.	q4::inwork 11543,16207 11632,16373
 #: osm_watch: note 5180232 2
 #: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
 #: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2026-05-04
+#: last_checked: 2026-06-12
 # REMOVED (wurde nicht gehalten) --- #: next_check: 2026-04-25
 	2::inwork 5533,8478 5660,8366
 ',
          'from' => 1771974000,
          'id' => 4541,
-         'text' => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, Ende der Bauarbeiten unbekannt',
+         'text' => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, Ende der Bauarbeiten unbekannt (Stand Mitte Juni 2026: noch immer gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9875,18 +9847,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'type' => 'handicap',
          'until' => 1782165600
        },
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~20-03-2026-baustart-radwegsanierung-entlang-der-l202-und-l20
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~29-05-2026-l202_l20-fertigstellung-der-radwegerneuerungen (bis 12.6.2026)
-#: source_id: LS/223-P/26/041 (bis 22.05.2026) (bis 12.06.2026)
-	2::inwork -10031,18697 -10474,19644
-',
-         'from' => 1774324800,
-         'id' => 4566,
-         'text' => 'L20: Bauarbeiten, Sperrung des Radwegs zwischen Falkensee und Bushaltestelle Falkenhagener Forst, 25.03.2026 05:00 Uhr bis 12.06.2026 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1781287200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mhwuh3kyg22m
@@ -9989,17 +9950,7 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LMS-BR:404321/72 viz2021:13.320862,52.410467, (bis 13.06.2026)
-#: note: hier keine Bürgersteige
-	2::inwork 4748,453 4759,436 4913,422 5061,409
-',
-         'from' => 1775758387,
-         'id' => 4579,
-         'text' => 'Landweg: Sperrung zwischen Réaumurstr. und Osdorfer Str., evtl. sind auch Radfahrer betroffen, bis 12.06.2026 17:00',
-         'type' => 'gesperrt',
-         'until' => 1781301600
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:404324/72 viz2021:13.17839,52.54934,-1 (hier bis Pionierstr., was vermutlich zu weit ist, bis 05.08.2026)
 #: source_id: LMS-BR:388895/72 viz2021:13.17839,52.54934, (hier nur bis Hermann-Schmidt-Weg, was realistischer ist, bis 04.08.2026)
@@ -10503,19 +10454,7 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 
          'type' => 'handicap',
          'until' => 1793401200
        },
-       {
-         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnhegvmxfs2y
-#: source_id: LMS-BR:410740/72 viz2021:13.31706,52.51236,
-#: XXX Ist der Radverkehr tatsächlich betroffen? Wann sind die Bauarbeiten beendet?
-#: last_checked: 2026-06-04 (VIZ-Verkehrsmeldung)
-	q4::inwork 4507,11936 4475,11845 4498,11740
-',
-         'from' => undef,
-         'id' => 4628,
-         'text' => 'Marie-Elisabeth-Lüders-Str.: Wasserrohrbruch, Sperrung, evtl. ist auch der Radverkehr betroffen, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnjkv7idhs2g
@@ -10549,10 +10488,10 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 
 #: last_checked: 2026-06-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-06-01 (VIZ) vvv
-#: osm_watch: way id="511126838" version="14"
-#: osm_watch: way id="511126840" version="12"
+#: osm_watch: way id="511126838" version="15"
+#: osm_watch: way id="511126840" version="13"
 	2::inwork 2942,15781 3005,15780 3252,15781
-#: osm_watch: way id="511126840" version="12"
+#: osm_watch: way id="627318872" version="9"
 	2::inwork 2924,15825 2950,15824 2972,15799 3009,15811 3058,15846 3237,15858
 #: next_check ^^^
 #: check_frequency ^^^

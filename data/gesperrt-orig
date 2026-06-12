@@ -144,11 +144,11 @@ Knoten Märkische/Landsberger Allee	1no 19200,14963 19157,14948 19015,14901
 Knoten Märkische/Landsberger Allee	1no 19254,15000 19309,15023 19364,15045 19512,15092 19565,15106 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19254,15000 19200,14963
 Knoten Märkische/Landsberger Allee	2::inwork 19408,15007 19350,14997 19214,14966 19200,14963
-#: osm_watch: way id="30884033" version="24"
+#: osm_watch: way id="30884033" version="25"
 Knoten Märkische/Landsberger Allee	2::inwork 19452,14807 19464,14971 19408,15007
-#: osm_watch: way id="4696050" version="24"
+#: osm_watch: way id="4696050" version="25"
 Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061 19408,15007
-#: osm_watch: way id="30884034" version="25"
+#: osm_watch: way id="30884034" version="26"
 Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee: nur Rechtsabbiegen erlaubt	3 19644,15320 19512,15092 19565,15106
 #: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
@@ -4554,7 +4554,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: osm_watch: way id="26244466" version="25"
+#: osm_watch: way id="26244466" version="26"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:316070/72 viz2021:13.53642,52.53865, (bis 31.12.2026)
 #: last_checked: 2026-06-03
@@ -5307,7 +5307,7 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: XXX - temporärer Weg in W-O-Richtung südlich der Baustelleneinrichtungsfläche (etwa 8162,10177 8248,10159)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="14"
-#: last_checked: 2026-04-12
+#: last_checked: 2026-06-12
 #: check_frequency: 120d
 #: next_check: 2028-02-28 (pardok)
 #: priority: #A
@@ -5369,7 +5369,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/neue-wohnungen-am-molkenmarkt-bebauungsplan-beschlossen/
 #: by: https://www.entwicklungsstadt.de/historische-mitte-mittelalterlicher-fund-am-molkenmarkt-sorgt-fuer-neue-erkenntnisse/ (archäologische Grabung bis 2027)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-06-11
+#: last_checked: 2026-06-12
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371

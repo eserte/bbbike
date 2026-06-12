@@ -567,7 +567,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-06-07 vvv
+#: last_checked: 2026-06-12 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -2357,12 +2357,17 @@ Busspur in Mittellage ist immer gültig	RW5; 10213,11728 10133,11708 10000,11691 
 Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,11691 10133,11708
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
-#: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m
+#: next_check_id: GERTRAUDENBRUECKE-2025
+#: last_checked: 2026-06-12 vvv
+#: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
-#: note: früher: Busspur gilt Mo-Fr 7-19 Uhr
-Busspur ist immer gültig	RW5; 10240,11740 10299,11786
-#: note: früher: Busspur gilt Mo-Fr 7-19 Uhr
-Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999
+#: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
+provisorische Radspur	RW4; 10240,11740 10299,11786
+#: XXX früher #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
+provisorische Radspur	RW4; 10299,11786 10314,11804 10349,11847 10376,11879
+#: check_frequency ^^^
+#: last_checked ^^^
+Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999
 # 
 #: next_check_id: MUEHLENDAMMBRUECKE-2024
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/35-strassenbruecken-muessen-dringend-saniert-werden-doch-es-fehlt-an-fachkraeften_a331286 (kein Termin)
@@ -2401,7 +2406,7 @@ Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-06-11 vvv
+#: last_checked: 2026-06-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2430,7 +2435,12 @@ asphaltiert, relativ breit	RW2; 10646,12234 10662,12255 10697,12303
 asphaltiert	RW2; 10687,12421 10716,12382 10722,12349 10703,12313 10697,12303
 # 
 Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
-Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
+Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
+#: next_check_id: GERTRAUDENBRUECKE-2025
+#: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
+#: last_checked: 2026-06-12
+#: check_frequency: 90d
+provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
 	RW4; 10951,12637 11057,12715
 # REMOVED --- temporär	RW4; 10849,12557 10838,12496 10807,12451
@@ -8504,7 +8514,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-06-01
+#: last_checked: 2026-06-12
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -9793,7 +9803,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 6994,9288 7118,9315
 #: next_check_id: ELSSHOLZ-2025
 #: osm_watch[closed]: note 4803321 2
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2026-03-17
+#: last_checked: 2026-06-12
 #: check_frequency: 90d
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7118,9315 7202,9329 7299,9346
 Leitboys	RW4; 7299,9346 7418,9366 7471,9360
@@ -9803,7 +9813,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 7418,9366 7299,9346
 #: next_check_id: GRUNEWALDSTR-2025
 #: next_check_id: ELSSHOLZ-2025
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2026-03-17
+#: last_checked: 2026-06-12
 #: check_frequency: 90d
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7299,9346 7202,9329 7118,9315
 Leitboys	RW4; 7118,9315 6994,9288
