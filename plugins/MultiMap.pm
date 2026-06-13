@@ -1936,6 +1936,7 @@ sub showmap_url_gdi_berlin {
 	fluralkis          => 'hintergrund_k5_farbe,alkis_flurstuecke:flurstuecke',
 	flurinspire        => 'hintergrund_k5_farbe,cp_alkis:CP.CadastralZoning,cp_alkis:CP.CadastralParcel',
 	gruenanlagen       => 'hintergrund_k5_grau,gruenanlagen:spielplaetze,gruenanlagen:gruenanlagen',
+	ortho2026          => 'hintergrund_k5_grau,truedop_2026:truedop_2026',
 	ortho2025          => 'hintergrund_k5_grau,truedop_2025_sommer:truedop_2025_sommer_rgb',
 	ortho2025_fruehjahr=> 'hintergrund_k5_grau,dop_2025_fruehjahr:dop_2025',
 	ortho2024          => 'hintergrund_k5_grau,truedop_2024:truedop_2024',
@@ -2056,6 +2057,10 @@ sub show_gdi_berlin_menu {
 	 -command => sub { showmap_gdi_berlin(layers => 'gruenanlagen', %args) },
 	);
     $link_menu->separator;
+    $link_menu->command
+	(-label => 'Orthophotos 2026',
+	 -command => sub { showmap_gdi_berlin(layers => 'ortho2026', %args) },
+	);
     $link_menu->command
 	(-label => 'Orthophotos 2025',
 	 -command => sub { showmap_gdi_berlin(layers => 'ortho2025', %args) },
