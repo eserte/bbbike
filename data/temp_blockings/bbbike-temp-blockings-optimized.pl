@@ -7827,9 +7827,9 @@ Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,157
 #: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026) (bis 17.02.2026) (bis 23.07.2026)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
-#: also_indoor: traffic (re-H,ex-T,A[shorter],G[shorter])
+#: also_indoor: traffic (re-H[anderer Abschnitt],ex-T,A[shorter],ex-G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-04-17 (traffic)
+#: last_checked: 2026-06-13 (traffic)
 #: check_frequency: 60d (traffic)
 #: next_check: 2026-07-23 (VIZ-Verkehrsmeldung)
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 2396,9427 2467,9425
@@ -7957,11 +7957,13 @@ Schüßlerplatz: Fahrbahn gesperrt	q4::inwork 22284,4653 22355,4660
          'data' => '#: by: https://www.tagesspiegel.de/berlin/anschlag-auf-israelische-botschaft-in-berlin-geplant-funf-festnahmen-nach-durchsuchungen-in-potsdam-13249681.html (vom 22.02.2025)
 #: osm_watch: note 4188310 4
 #: also_indoor: traffic (G,T,ex-A,W[degradiert zu NN])
-#: last_checked: 2026-04-17 (traffic) vvv
+#: last_checked: 2026-06-13 (traffic) vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: check_frequency: 60d (traffic) vvv
 # REMOVED --- #: check_frequency: 30d (traffic) vvv
+#: osm_watch: way id="1150968962" version="9"
 Auguste-Viktoria-Str.	q4::temp 2664,8458 2670,8563
+#: osm_watch: way id="1150968962" version="9"
 Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: check_frequency ^^^
 #: last_checked ^^^
