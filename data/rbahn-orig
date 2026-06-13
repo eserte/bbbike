@@ -144,66 +144,34 @@ RE2,RE4,RE6,RE8,RB10,RB21	RB -2168,13648 -2891,13780 -3146,13854 -3361,13966 -36
 # Spandau - Albrechtshof, bis Abzweig Staaken
 RE2,RE4,RE6,RE8,RB10,RB21	RB -3663,14083 -4142,14180 -4766,14330 -5489,14498 -5606,14534
 # 
-#: next_check_id: HAMBURGERBAHN-2025
-#: by: https://www.maz-online.de/lokales/havelland/nauen/falkensee-nauen-friesack-august-2025-bis-april-2026-halten-keine-zuege-schock-fuer-pendler-AOEEKTW5MNGMJMQBOOI4L66LSU.html
-#: by: https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/Liniennetze/bahn-regionalverkehr-brandenburg-und-berlin.pdf (vom 2.8.2025)
-#: by: https://thomas.krickstadt.de/bvg+vbb/netzplanvergleiche/2025-02-19-2025-08-01-xxl.gif
-#: by: https://generalsanierung.db-ersatzverkehr.de/resource/blob/13438864/b872f7333867e698c3a2ef9904e87d43/Bild-Liniennetzplan-gesamt-data.png
-#: by: https://www.deutschebahn.com/de/presse/pressestart_zentrales_uebersicht/Inbetriebnahme-der-Strecke-Hamburg-Berlin-in-zwei-Stufen-Erste-Zugfahrten-ab-15-Mai-13769684 (Verlängerung bis 14.06.2026)
-#: by: https://www.deutschebahn.com/resource/blob/13769696/9911ffb88bbe4341465376f1306f04a8/GS-HH-B_Teilinbetriebnahme_Mrz26-data.png
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgrvlrz4x22n
-#: by: https://viz.berlin.de/aktuelle-meldungen/inbetriebnahme-der-strecke-hamburg-berlin-in-zwei-stufen-erste-zugfahrten-ab-15-mai/
-#: by: https://www.entwicklungsstadt.de/bahnstrecke-berlin-hamburg-zugverkehr-ab-juni-wieder-vollstaendig-moeglich/
-#: by: https://hamburg-berlin.deutschebahn.com/neuigkeiten-reader/aktuelle-informationen-zum-inbetriebnahmekonzept-der-strecke-hamburg-berlin.html
-#: by: https://www.entwicklungsstadt.de/ice-strecke-hamburg-berlin-freigabe-in-zwei-stufen/
-#: by: https://www.entwicklungsstadt.de/strecke-hamburg-berlin-erster-sanierter-abschnitt-wieder-in-betrieb/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/ice-strecke-berlin-hamburg-was-anwohner-und-fahrgaste-jetzt-wissen-mussen-15696214.html
-#: by: https://www.entwicklungsstadt.de/mit-modernen-hochgeschwindigkeits-zuegen-strecke-berlin-hamburg-oeffnet-wieder/
-#: also_indoor: url https://hamburg-berlin.deutschebahn.com/home.html
-#: XXX globale ignore_disconnected-Einträge beachten!
-#: XXX Bauarbeiten zwischen August 2025 und April 2026, Sperrung der Strecke; mittlerweile im brandenburgischen Teil bis 14.06.2026 verlängert vvv
-#: next_check: 2026-06-13 vvv
+# REMOVED --- #: next_check_id: HAMBURGERBAHN-2025 --- #: by: https://www.maz-online.de/lokales/havelland/nauen/falkensee-nauen-friesack-august-2025-bis-april-2026-halten-keine-zuege-schock-fuer-pendler-AOEEKTW5MNGMJMQBOOI4L66LSU.html --- #: by: https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/Liniennetze/bahn-regionalverkehr-brandenburg-und-berlin.pdf (vom 2.8.2025) --- #: by: https://thomas.krickstadt.de/bvg+vbb/netzplanvergleiche/2025-02-19-2025-08-01-xxl.gif --- #: by: https://generalsanierung.db-ersatzverkehr.de/resource/blob/13438864/b872f7333867e698c3a2ef9904e87d43/Bild-Liniennetzplan-gesamt-data.png --- #: by: https://www.deutschebahn.com/de/presse/pressestart_zentrales_uebersicht/Inbetriebnahme-der-Strecke-Hamburg-Berlin-in-zwei-Stufen-Erste-Zugfahrten-ab-15-Mai-13769684 (Verlängerung bis 14.06.2026) --- #: by: https://www.deutschebahn.com/resource/blob/13769696/9911ffb88bbe4341465376f1306f04a8/GS-HH-B_Teilinbetriebnahme_Mrz26-data.png --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgrvlrz4x22n --- #: by: https://viz.berlin.de/aktuelle-meldungen/inbetriebnahme-der-strecke-hamburg-berlin-in-zwei-stufen-erste-zugfahrten-ab-15-mai/ --- #: by: https://www.entwicklungsstadt.de/bahnstrecke-berlin-hamburg-zugverkehr-ab-juni-wieder-vollstaendig-moeglich/ --- #: by: https://hamburg-berlin.deutschebahn.com/neuigkeiten-reader/aktuelle-informationen-zum-inbetriebnahmekonzept-der-strecke-hamburg-berlin.html --- #: by: https://www.entwicklungsstadt.de/ice-strecke-hamburg-berlin-freigabe-in-zwei-stufen/ --- #: by: https://www.entwicklungsstadt.de/strecke-hamburg-berlin-erster-sanierter-abschnitt-wieder-in-betrieb/ --- #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/ice-strecke-berlin-hamburg-was-anwohner-und-fahrgaste-jetzt-wissen-mussen-15696214.html --- #: by: https://www.entwicklungsstadt.de/mit-modernen-hochgeschwindigkeits-zuegen-strecke-berlin-hamburg-oeffnet-wieder/ --- #: also_indoor: url https://hamburg-berlin.deutschebahn.com/home.html --- #: XXX globale ignore_disconnected-Einträge beachten! --- #: XXX Bauarbeiten zwischen August 2025 und April 2026, Sperrung der Strecke; mittlerweile im brandenburgischen Teil bis 14.06.2026 verlängert vvv --- #: next_check: 2026-06-13 vvv
 # Spandau - Albrechtshof, ab Abzweig Staaken
-#: XXX was RE2,RE6,RE8,RB10,RB14	RB
-	RBau -5606,14534 -5819,14597 -6387,14841 -7785,15392 -8380,15635
+RE2,RE6,RE8,RB10,RB14	RB -5606,14534 -5819,14597 -6387,14841 -7785,15392 -8380,15635
 # Albrechtshof - Finkenkrug
-#: XXX was RE2,RE6,RE8,RB10,RB14	RC
-	RBau -8380,15635 -9211,15964 -11091,16736 -13701,17787 -15118,18364
+RE2,RE6,RE8,RB10,RB14	RC -8380,15635 -9211,15964 -11091,16736 -13701,17787 -15118,18364
 # Brieselang (Kreuz): Spandau - Hennigsdorf
-#: XXX was RE6	RC
-	RBau -15118,18364 -15420,18631 -15450,18966 -15342,19183
+RE6	RC -15118,18364 -15420,18631 -15450,18966 -15342,19183
 # Brieselang (Kreuz): Spandau - Nauen
-#: XXX was RE2,RE8,RB10,RB14	RC
-	RBau -15118,18364 -16447,18895
+RE2,RE8,RB10,RB14	RC -15118,18364 -16447,18895
 # Brieselang
-#: XXX was RE2,RE8,RB10,RB14	RC
-	RBau -16447,18895 -16937,19087
+RE2,RE8,RB10,RB14	RC -16447,18895 -16937,19087
 # Brieselang - Nauen
-#: XXX was RE2,RE8,RB10,RB14	R
-	RBau -16937,19087 -19780,20243 -23223,21639 -25072,22379
+RE2,RE8,RB10,RB14	R -16937,19087 -19780,20243 -23223,21639 -25072,22379
 # Nauen - Wittenberge
-#: XXX was RE8	R
-	RBau -25072,22379 -25838,22695 -36566,28924 -36880,29162 -37168,29414 -42501,35115 -45666,38482 -51265,44411 -53882,47169 -55182,48568 -55610,49009 -56140,49574 -56643,49972 -61884,52648 -62357,52856 -62816,52951 -63247,52932 -66896,52598 -70222,51976 -70651,51984 -76209,52454 -80231,53746 -80764,53981 -86303,57716 -89500,59887 -90141,60293 -90994,60758 -95714,62878 -96349,63008 -100698,63337 -101261,63324 -101554,63401 -101830,63579 -102088,63923 -102297,64496
+RE8	R -25072,22379 -25838,22695 -36566,28924 -36880,29162 -37168,29414 -42501,35115 -45666,38482 -51265,44411 -53882,47169 -55182,48568 -55610,49009 -56140,49574 -56643,49972 -61884,52648 -62357,52856 -62816,52951 -63247,52932 -66896,52598 -70222,51976 -70651,51984 -76209,52454 -80231,53746 -80764,53981 -86303,57716 -89500,59887 -90141,60293 -90994,60758 -95714,62878 -96349,63008 -100698,63337 -101261,63324 -101554,63401 -101830,63579 -102088,63923 -102297,64496
 # Wittenberge - Wittstock/Ludwigslust
-#: XXX was RE6,RE8	R
-	RBau -102297,64496 -102473,65843
+RE6,RE8	R -102297,64496 -102473,65843
 # Wittenberge - Ludwigslust
-#: XXX was RE8	R
-	RBau -102473,65843 -104304,81935 -104710,85495 -104861,86051 -105109,86600 -105561,87270 -106050,87753 -116013,94920 -116455,95334 -119804,98464 -120154,98947 -120372,99448 -120511,100101 -120644,100378 -120988,100789 -121308,101024
+RE8	R -102473,65843 -104304,81935 -104710,85495 -104861,86051 -105109,86600 -105561,87270 -106050,87753 -116013,94920 -116455,95334 -119804,98464 -120154,98947 -120372,99448 -120511,100101 -120644,100378 -120988,100789 -121308,101024
 # Ludwigslust - Schwerin Süd
-#: XXX RE8	R
-	RBau -121308,101024 -122843,102135 -123074,102485 -123213,103011 -123225,103207 -123107,103494 -122923,103796 -122717,104061 -122579,104267 -122485,104517 -122455,104737 -122651,106890 -122714,107183 -122944,107862 -123397,109106 -123780,110199 -124028,110854 -125516,113903 -125833,114524 -128915,120755 -129326,121608 -130745,124088 -130812,124549 -130538,125503 -129851,127493
+RE8	R -121308,101024 -122843,102135 -123074,102485 -123213,103011 -123225,103207 -123107,103494 -122923,103796 -122717,104061 -122579,104267 -122485,104517 -122455,104737 -122651,106890 -122714,107183 -122944,107862 -123397,109106 -123780,110199 -124028,110854 -125516,113903 -125833,114524 -128915,120755 -129326,121608 -130745,124088 -130812,124549 -130538,125503 -129851,127493
 # Ludwigslust - Hamburg-Bergedorf
-#: XXX	R
-	RBau -122843,102135 -128154,106066 -128559,106247 -129566,106574 -139119,109731 -139584,109737 -140018,109616 -140670,109229 -141033,108897 -144160,105390 -144444,105100 -144752,104900 -145120,104768 -149330,103851 -153313,102993 -153621,102974 -156097,102987 -156501,103065 -161627,104768 -162014,104864 -162358,104888 -171022,104719 -171384,104768 -171712,104919 -172411,105311 -172906,105903 -176180,110389 -178412,113365 -178768,113740 -180694,115454 -182198,116734 -185229,118250 -186303,118787 -186804,118920 -187499,118884 -187915,118721 -188579,118413 -189087,118304 -189678,118364 -190312,118564 -190819,118709 -191568,118769 -192190,118986 -194533,120562 -195136,120665 -198288,120357 -198801,120417 -199272,120659 -199731,120967 -200191,121091 -201313,121305 -202454,121178 -202991,121009 -204108,120478 -204422,120158 -204845,119475 -205153,119192 -205563,118974 -206075,118784 -206270,118684 -206566,118443 -207097,117755 -207574,117483 -208268,117314 -208739,117066 -209205,116692
+	R -122843,102135 -128154,106066 -128559,106247 -129566,106574 -139119,109731 -139584,109737 -140018,109616 -140670,109229 -141033,108897 -144160,105390 -144444,105100 -144752,104900 -145120,104768 -149330,103851 -153313,102993 -153621,102974 -156097,102987 -156501,103065 -161627,104768 -162014,104864 -162358,104888 -171022,104719 -171384,104768 -171712,104919 -172411,105311 -172906,105903 -176180,110389 -178412,113365 -178768,113740 -180694,115454 -182198,116734 -185229,118250 -186303,118787 -186804,118920 -187499,118884 -187915,118721 -188579,118413 -189087,118304 -189678,118364 -190312,118564 -190819,118709 -191568,118769 -192190,118986 -194533,120562 -195136,120665 -198288,120357 -198801,120417 -199272,120659 -199731,120967 -200191,121091 -201313,121305 -202454,121178 -202991,121009 -204108,120478 -204422,120158 -204845,119475 -205153,119192 -205563,118974 -206075,118784 -206270,118684 -206566,118443 -207097,117755 -207574,117483 -208268,117314 -208739,117066 -209205,116692
 # Wittenberge - Perleberg
-#: XXX RE6	R
-	RBau -102473,65843 -102416,66084 -102259,66259 -100641,66986 -100269,67151 -97132,71097 -97045,71253 -96988,71636 -96921,71748 -96693,71938 -96458,72069
+RE6	R -102473,65843 -102416,66084 -102259,66259 -100641,66986 -100269,67151 -97132,71097 -97045,71253 -96988,71636 -96921,71748 -96693,71938 -96458,72069
 # Neustadt - Kyritz
-#: XXX RB73	R
-	RBau -55182,48568 -55610,49009 -55756,49323 -54726,52115 -54833,52477 -55222,53312 -59292,57718 -59391,57906 -59455,58460
-#: next_check ^^^
-#: XXX ^^^
+RB73	R -55182,48568 -55610,49009 -55756,49323 -54726,52115 -54833,52477 -55222,53312 -59292,57718 -59391,57906 -59455,58460
+# REMOVED --- #: next_check ^^^ --- #: XXX ^^^
 # 
 # Kyritz - Kyritz Am Bürgerpark
 RB73	R -59455,58460 -59520,59145 -59538,59190
@@ -921,6 +889,7 @@ Neubrandenburg - Pasewalk	R -569,128223 -216,128147 3,128126 368,128211 978,1282
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/das-ist-der-erste-abschnitt-der-heidekrautbahn-bleibt-diese-neue-station-mitten-in-berlin-ein-geisterbahnhof-15369628.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_20_1165_1236_online.pdf (Planfeststellungsverfahren, 1. Planänderung)
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=0F1F6F5B-EC06-4424-9F8F-B0AD0D34B3FF
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_25_1561_1608_online.pdf (Verlängerung der Auslegung)
 #: XXX Reaktivierung geplant --- Strecke im Bereich Wilhelmsruh korrigieren!
 #: XXX neue Haltepunkte: Berlin-Wilhelmsruh, Berlin PankowPark, Berlin-Rosenthal (nördlich Wilhelmsruher Damm), Berlin-Blankenfelde (nördlich Bahnhofstr.), Schildow, Schildow Nord, Mühlenbeck und Schönwalde West
 #: XXX bei der Reaktivierung Schranken umtaggen (B0 -> B)
@@ -994,10 +963,10 @@ Brockenbahn	R -165872,-66167 -166029,-66303 -166361,-66387 -166394,-66433 -16638
 #: note: evtl. auch öffentlich nutzbar --- gehört es dann zur Zone C?
 	R 38025,669 38281,627 38414,571 38514,489 38585,323 38581,239 38530,137 37839,-374 37774,-459 37734,-556 37703,-848 37636,-943 37530,-1035 37375,-1047
 # 
-#: note: temporäre Führung während der Sperrung der Hamburger Bahn
-#: next_check: 2026-06-14 vvv
-RB10	RC -21187,15667 -20199,15594 -19917,15570 -19247,15540 -18403,15479 -17129,15268
-RE8,RB10	RC -17129,15268 -16760,15235 -13131,14910 -7506,14349 -6683,14285
-RE8,RB10	RC; -6683,14285 -6468,14259 -5882,14210 -5038,14106 -4712,14111 -4150,14155 -3663,14083
-RE8,RB10	RC; -5606,14534 -5869,14532 -6347,14358 -6465,14308 -6683,14285
-#: next_check ^^^
+# REMOVED --- #: note: temporäre Führung während der Sperrung der Hamburger Bahn
+# REMOVED --- #: next_check: 2026-06-14 vvv
+# REMOVED --- RB10	RC -21187,15667 -20199,15594 -19917,15570 -19247,15540 -18403,15479 -17129,15268
+# REMOVED --- RE8,RB10	RC -17129,15268 -16760,15235 -13131,14910 -7506,14349 -6683,14285
+# REMOVED --- RE8,RB10	RC; -6683,14285 -6468,14259 -5882,14210 -5038,14106 -4712,14111 -4150,14155 -3663,14083
+# REMOVED --- RE8,RB10	RC; -5606,14534 -5869,14532 -6347,14358 -6465,14308 -6683,14285
+# REMOVED --- #: next_check ^^^

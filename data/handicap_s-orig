@@ -30,7 +30,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-13
 #: check_frequency: 21d
 #: next_check: 2026-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -254,9 +254,10 @@ Rˆblingstr.: Sperrung der Fahrbahn (Einbahnstraﬂenregelung), Gehweg f¸r Radfahre
 ### Lichtenrade ###
 # 
 #: next_check_id: WOLZIGERZEILE-2024
-#: last_checked: 2026-04-29
-#: next_check: 2026-06-01
-Horstwalder Str. - Goltzstr.: Arbeiten an der Unterf¸hrung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10382,-2598 10394,-2567
+#: last_checked: 2026-06-13
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2026-06-01
+Horstwalder Str. - Goltzstr.: Arbeiten an der Unterf¸hrung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10392,-2595 10394,-2567
 # 
 # REMOVED --- #: next_check_id: BAHNHOFSTR-2020 --- #: source_id: 2147345858 --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, Fahrrad ggfs. schieben	q3 10273,-2158 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
 # 
@@ -1049,7 +1050,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraﬂenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-06-01
+#: last_checked: 2026-06-13
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 H¸ttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -3076,6 +3077,7 @@ Eingang Okerstr.: Bordstein	q2- 11527,7530 11540,7534
 Eingang Allerstr.: Bordstein	q3 11509,7636 11521,7638
 Tullaweg - An der Heilandsweide: Fuﬂg‰nger	q1 8464,990 8492,1050
 (Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
+(An der Heilandsweide - An der Dorfkirche): einige Fuﬂg‰nger	q1 8378,1110 8338,1034 8259,1028
 #: note: Gr¸nanlagenschild ohne Zusatzschilder zum Radverkehr
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7501,83 7520,76 7535,20 7559,14 7659,-112 7668,-138 7722,-180
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7668,-138 7552,-67 7535,20
@@ -3710,6 +3712,7 @@ Landsberger Allee - Siegfriedstr.: einige Fuﬂg‰nger	q1+ 16590,14386 16596,14367 
 (Weg 1 im KGA Hochspannung): Rampe, enge Radien	q3 18182,9623 18165,9627 18164,9623
 Fromet-und-Moses-Mendelssohn-Platz: einige Fuﬂg‰nger	q1 9797,10771 9733,10827 9682,10836 9666,10848
 #: XXX_prog BS an der Grillostr., q2 belassen
+#: note: Gr¸nanlagen-Schild ohne Zusatzschilder f¸r den Radverkehr
 (Grillostr. - Wehnertstr.): eng, Fuﬂg‰nger, Bordstein	q2 8790,854 8672,919
 (Otisstr. - Wackerweg): eng	q2 3753,18889 3784,18881 3789,18863 3803,18855
 Breitkopfstr.: einige Fuﬂg‰nger	q1 7789,17853 7809,17708 7820,17549
@@ -5178,7 +5181,7 @@ Straﬂenbahnquerung	q3 16705,18222 16739,18249
 Varziner Platz: einige Fuﬂg‰nger	q2 5492,7868 5491,7836
 #: note: keine Ausschilderung
 Rudolf-Leonhard-Str. - Blumberger Damm: einige Fuﬂg‰nger	q1 21493,16387 21538,16444 21574,16547
-Hanielweg: enge Straﬂe	q0- 7651,1615 7610,1695 7562,1796
+Hanielweg: enge Straﬂe	q0- 7657,1618 7613,1697 7562,1796
 Pappritzstr.: enge Straﬂe	q0- 7562,1796 7675,1885 7736,1969 7741,2096
 Herkulesufer: Fuﬂg‰nger, schmal	q2 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
 Herkulesufer: Fuﬂg‰nger, schmal	q2 7135,11171 7115,11220
@@ -5461,7 +5464,7 @@ Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026) (bis 30.06.2026)
 #: note: L‰nge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-13
 #: check_frequency: 21d
 #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
@@ -5845,7 +5848,9 @@ Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7
 #: by: Christian Uhrich:
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
 #: by: Petra (ploewe...):
-An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
+#: confirmed_by: srt
+#: note: Gr¸nanlage, gemeinsamer Geh- und Radweg
+An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8378,1110 8492,1050 8555,1015 8592,979 8687,950
 #: by Andreas (johnnyyen):
 Friedrich-Wilhelm-Str.: eng	q1 8266,5911 8385,5907
 #: by: elke Peters:
@@ -5940,7 +5945,7 @@ Hugo-Heimann-Str.: enge, leicht kurvige Straﬂe	q0- 14120,1991 14165,2106 14184,2
 #: by: Marek B‰nsch:
 #: confirmed_by: srt
 (Am Invalidenfriedhof - Scharnhorststr.): Radfahren verboten, schieben	q4 8096,13951 8200,14016
-# REMOVED --- #: by: Christian Marwitz: --- Am Gemeindepark: enge Straﬂe	q1 7172,2343 7215,2442 7208,2534 7199,2559 7165,2571 7034,2586 6751,2708 6679,2701
+# REMOVED --- #: by: Christian Marwitz: --- Am Gemeindepark: enge Straﬂe	q1 7169,2348 7215,2442 7208,2534 7199,2559 7165,2571 7034,2586 6751,2708 6679,2701
 # 
 #: by: Michael Meixner: vvv
 #: corrected_by: srt/policy (q1 -> q0-)
@@ -6001,7 +6006,7 @@ Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10695,18937 10621,18837 10542,
 #: by: Manfred Kˆhnen:
 #: corrected_by: srt (q2 -> q1)
 Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
-# REMOVED --- #: by: Regine Bast: --- Eiswaldtstr.: schmale Straﬂe	q1 6722,2444 6834,2449 6965,2418 7051,2366 7172,2343 7282,2386
+# REMOVED --- #: by: Regine Bast: --- Eiswaldtstr.: schmale Straﬂe	q1 6722,2444 6834,2449 6965,2418 7051,2366 7169,2348 7282,2386
 # 
 #: by: Stefan Driesner: vvv
 Georg-Lehnig-Str.: enge Straﬂe	q1 14551,13571 14527,13486 14447,13507
@@ -6550,7 +6555,7 @@ Altenburger Str.: Fuﬂg‰nger, Bordstein	q2 6651,1063 6631,968
 (Mauerweg Lichtenrade - Lichterfelde): Fuﬂg‰nger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568 7176,-515 7175,-479 7164,-473 7146,-466 7097,-527 6961,-389 6668,-100 6498,71 6357,215 6256,363 6204,331 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
 # 
 #: by: Josch [AM]
-Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
+Falkenhausenweg: spielende Kinder	q1 7613,1697 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 # 
 #: by: Karin Toedtloff vvv
 (Gielower Str - Buschkrugallee): Fuﬂg‰nger	q1 14012,4184 14053,4173 14119,4153
@@ -7085,7 +7090,7 @@ Kolonie Bismarckruh: Fuﬂg‰nger, Radfahren erlaubt	q1 1293,13332 1311,13210 1336,
 Damwildsteig: enge Straﬂe	q1 -482,21392 -777,21455 -1090,21526 -1213,21553
 #: by: anonymous
 #: corrected_by: srt/policy (q1 ->q0-)
-Beyrodtstr.: enge Straﬂe	q0- 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
+Beyrodtstr.: enge Straﬂe	q0- 7889,1323 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 #: by: Olaf Kr¸ger:
 #: corrected_by: srt/policy (q2 -> q1)
 Egmontstr.: enge Straﬂe	q1 17306,11866 17151,11912

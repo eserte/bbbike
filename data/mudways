@@ -459,6 +459,7 @@ Nalepastr.: unbefestigt, fester Sand	X 17065,8396 17057,8235
 #: mud: 2023-09-23: keine Beeinträchtigungen	h=q0
 #: mud: 2024-12-18: matschige Oberfläche und zahlreiche Pfützen	h=q3+,wet
 #: mud: 2025-06-22: keine Beeinträchtigungen	h=q0	by=mapillary
+#: mud: 2026-06-13: keine Beeinträchtigungen	h=q0
 Tauernallee - Wildspitzweg: fester Sandweg	X 10775,2765 10799,2839 10813,3017 10840,3048 10847,3154
 # 
 #: mud: 2022-10-02: einige Pfützen, matschig	h=q3,wet
@@ -1102,12 +1103,14 @@ Windhuker Str.: wassergebundene Decke	X 5426,16539 5712,16245 5748,16235
 Verlängerte Schulzendorfer Str.: gut befahrbarer Waldweg	X 2150,22464 2015,22435 1834,22421 1622,22383
 # 
 #: mud: 2025-06-11: einige matschige Stellen und Pfützen, alle umfahrbar	h=q1,wet
-(Weg am ehem. Güteraußenring): wassergebundene Decke	X 9170,-673 9143,-667 8656,-736
+(Weg am ehem. Güteraußenring): wassergebundene Decke	X 9176,-672 9143,-667 8656,-736
 # 
 #: mud: 2025-06-11: keine Beeinträchtigungen	h=q0
-(Weg am ehem. Güteraußenring): wassergebundene Decke	X 9170,-673 9252,-667 9352,-643 9424,-608 9492,-538 9522,-533
+#: mud: 2026-06-13: leicht feuchtere Oberfläche	h=q0-,wet
+(Weg am ehem. Güteraußenring): wassergebundene Decke	X 9176,-672 9252,-667 9352,-643 9424,-608 9492,-538 9522,-533
 # 
 #: mud: 2025-06-11: einige Pfützen	h=q2,wet
+#: mud: 2026-06-13: eine Pfütze, leicht feuchtere Oberfläche	h=q2+,wet
 #: note: zwar existiert ein Kleinsteinpflasterstreifen, aber dieser ist schmal
 (Weg am ehem. Güteraußenring): wassergebundene Decke	X 9522,-533 9562,-619
 # 

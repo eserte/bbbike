@@ -2671,9 +2671,9 @@ Staakener Feldstr. -> Brunsbütteler Damm: Mittelstreifen, östlicher Gehweg mit G
 unbequemes Überqueren des Mittelstreifens	3nocross::ignrte 3005,13728 2984,13789 2935,13927 2881,14061
 Weg am Westhafenkanal -> Tegeler Weg: unbequemes Überqueren des Mittelstreifens	3::igndisp 2957,13796 2984,13789 2935,13927
 Weg am Westhafenkanal -> Tegeler Weg: unbequemes Überqueren des Mittelstreifens	3::igndisp 2913,13919 2935,13927 2881,14061
-Mittelstreifen	3nocross::ignrte 8470,329 8584,320 8736,337
-Nahmitzer Damm -> Parkweg im Fresepark: Mittelstreifen	3::igndisp 8736,337 8584,320 8583,310
-Parkweg im Fresepark -> Nahmitzer Damm: Mittelstreifen	3::igndisp 8583,310 8584,320 8470,329
+Mittelstreifen	3nocross::ignrte 8470,335 8583,327 8742,343
+Nahmitzer Damm -> Parkweg im Fresepark: Mittelstreifen	3::igndisp 8742,343 8583,327 8583,310
+Parkweg im Fresepark -> Nahmitzer Damm: Mittelstreifen	3::igndisp 8583,310 8583,327 8470,335
 Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,4093
 Michelangelostr.: links abbiegen nicht möglich	3 13854,15129 13816,15137 13823,15111
 Mittelstreifen	3nocross::ignrte 13560,15318 13540,15329 13279,15468
@@ -2974,7 +2974,7 @@ tragen (Treppe, 10+9 Stufen)	0:25:-258 22110,2643
 tragen (Treppe, ca. 50 Stufen)	0:70:-191 12386,8274
 tragen (Treppe, 18 Stufen)	0:25:-161 -5558,12918
 tragen (Treppe)	0:30:-32 -46087,-1491
-tragen (Treppe)	0:45:-69 10405,-2638
+tragen (Treppe, 11+10 Stufen)	0:35:-60 10400,-2629
 tragen (Treppe, 3 Stufen)	0:10:18 4799,20517
 tragen (zwei Treppen)	0:60:-10 51766,-59693
 tragen (zwei Treppen)	0:60:36 51694,-59945
@@ -4296,8 +4296,8 @@ Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	1::ign
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	1::igndisp 22994,11251 23113,11262
 Gartenfelder Str.: linker Gehweg bis Ampel	1::igndisp -1336,14786 -1282,14789
 Molkenmarkt - Eiergasse: linker Gehweg	1::igndisp 10700,12316 10697,12303
-Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	1::igndisp 8583,301 8736,337
-Nahmitzer Damm: linker Gehweg bis Ampel	1::igndisp 8382,347 8470,310 8583,301
+Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	1::igndisp 8583,301 8742,343
+Nahmitzer Damm: linker Gehweg bis Ampel	1::igndisp 8383,351 8470,310 8583,301
 Minna-Cauer-Str.: linker Gehweg	1::igndisp 7873,13448 7901,13324
 Eduard-Spranger-Promenade - Königsberger Str./Giesensdorfer Str.: linker Gehweg	1::igndisp 4348,2627 4328,2652
 Heerstr.: linker Gehweg	1::igndisp 1028,11309 929,11313

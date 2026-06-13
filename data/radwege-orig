@@ -53,13 +53,12 @@
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026) (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:405906/72 viz2021:13.36206,52.4473,24.04.2026,19:00 (bis 26.04.2026) (inaktiv)
-#: osm_watch: note 5188307 2 vvv
-#: last_checked: 2026-04-29 vvv
-#: check_frequency: 30d vvv
+#: osm_watch: note 5188307 3 vvv
+#: last_checked: 2026-06-13 vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2026-04-30 (VIZ-Verkehrsmeldung) vvv
 provisorische Radspuren	RW3; 7597,4499 7628,4521 7667,4549 7690,4563
-# REMOVED (hier gerade keine mehr) --- provisorische Radspuren	RW3; 7690,4563 7667,4549 7628,4521
-provisorische Radspuren	RW3; 7628,4521 7597,4499
+provisorische Radspuren	RW3; 7690,4563 7667,4549 7628,4521 7597,4499
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -376,7 +375,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-06-04 vvv
+#: last_checked: 2026-06-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1419,6 +1418,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.entwicklungsstadt.de/neue-verkehrsfuehrung-auf-der-elsenbruecke-das-aendert-sich-fuer-alle-verkehrsteilnehmer/
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8251 (Antrag zur Busspur)
 #: by: https://www.entwicklungsstadt.de/elsenbruecke-und-a100-mehr-spuren-aber-kaum-entlastung/
+#: by: https://www.berliner-zeitung.de/article/elsenbruecke-treptow-friedrichshain-drei-fahrstreifen-10087603 (29. Juni 2026)
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1447,7 +1447,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-06-06 vvv
+#: last_checked: 2026-06-13 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
@@ -1932,13 +1932,13 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-12 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
-#: osm_watch: way id="910439501" version="22"
+#: osm_watch: way id="910439501" version="23"
 #: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
@@ -2977,7 +2977,7 @@ die letzten Meter sind benutzungspflichtig	RW1; 10379,-1194 10511,-1274
 	RW1; 10511,-1274 10379,-1194
 	RW1;RW1 10511,-1274 10583,-1311 10720,-1340
 	RW2;RW1 10720,-1340 10849,-1332
-Verbundsteinpflaster	RW1;RW1 8736,337 8769,266 8853,172 9159,-171 9198,-264 9177,-569 9170,-673 9156,-883 9155,-1017
+Verbundsteinpflaster	RW1;RW1 8742,343 8775,272 8858,177 9168,-167 9203,-264 9184,-569 9176,-672 9156,-883 9155,-1017
 relativ breit, neues Verbundsteinpflaster, allerdings schon einige Wurzelhebungen und andere Schäden	RW1; 12207,1704 11865,1564 11765,1522 11483,1401 11216,1293 11157,1269 11012,1210 10829,1135 10769,1111
 relativ breit, neues Verbundsteinpflaster, allerdings schon einige Wurzelhebungen und andere Schäden	RW2; 10769,1111 10673,1072
 #: note: das Radweg-Schild befindet sich *vor* der Einmündung, so dass aus der Ostheimer Str. einbiegende Radfahrer es gar nicht sehen können
@@ -3001,9 +3001,9 @@ provisorisch geschützt	RW4; 9289,595 9196,570
 Bushaltestelle	RW4; 9196,570 9135,551
 	RW4; 9135,551 9079,531 9004,481
 #: historical_note ^^^
-	RW1; 9004,481 8872,391 8736,337
+	RW1; 9004,481 8872,391 8742,343
 #: note: Buckower Chaussee, Richtung Osten
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8736,337 8872,391 9004,481
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8742,343 8872,391 9004,481
 #: historical_note: früher (vor Bau der Brücke) Hochbordradweg + Busspur, RW1
 	RW4; 9004,481 9079,531
 	RW4; 9079,531 9135,551
@@ -3012,11 +3012,11 @@ provisorisch geschützt	RW4; 9196,570 9289,595
 	RW4; 9289,595 9365,615
 Radweg nur aufgemalt	RW1; 9365,615 9858,744
 # 
-Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8736,337 8584,320 8470,329 8382,347 8250,392 8075,499 7937,583 7847,638
+Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8742,343 8583,327 8470,335 8383,351 8251,401 8075,499 7937,583 7847,638
 	RW2; 7847,638 7937,583
 #: historical_note: früher: für Radfahrer freigegebene Busspur ist immer gültig, heute gibt's nur ein Busspur-Schild
 	RW2; 7937,583 8075,499
-	RW1; 8075,499 8250,392 8382,347 8470,329 8584,320 8736,337
+	RW1; 8075,499 8251,401 8383,351 8470,335 8583,327 8742,343
 	RW2;RW2 7847,638 7790,672
 	RW4;RW4 7031,12320 7051,12426
 Verbundsteinpflaster	RW1; 7051,12426 7077,12575 7085,12610
@@ -3345,7 +3345,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-06-06 vvv
+#: last_checked: 2026-06-13 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3373,7 +3373,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-06-06
+#: last_checked: 2026-06-13
 #: check_frequency: 30d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -6276,7 +6276,7 @@ Verbundsteinpflaster	RW1;RW1 7774,647 7706,541
 Beton	RW1; 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
 # REMOVED (separat eingezeichnet) ---	RW1; 21332,4655 21289,4563
 # REMOVED (separat eingezeichnet) --- asphaltiert	RW10; 21289,4563 21206,4387
-# REMOVED (by Thomas Plischka) ---	RW;RW 9177,-569 8814,-543 8828,-273
+# REMOVED (by Thomas Plischka) ---	RW;RW 9184,-569 8814,-543 8828,-273
 	RW6;RW6 6130,23062 6258,22899
 	RW6;RW6 5052,9723 5067,9679 5065,9418 5053,8979
 	RW6;RW6 10590,525 10783,587

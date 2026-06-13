@@ -3231,7 +3231,7 @@ Taunusstr. (Lichtenrade): Asphalt	Q0 11578,-1220 11551,-1114 11506,-965 11503,-9
 # REMOVED (neu gemacht) --- #: next_check_id: GOLTZ-2020 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/goltzstrasse-wird-als-umleitungsstrecke-ertuechtigt_a276910 --- #: add_fragezeichen: Ist die gesamte Goltzstraße mittlerweile asphaltiert? --- #: priority: #B --- #: last_checked: 2020-06-21 --- #: next_check: 2020-09-01
 Goltzstr.: Asphalt	Q0 10642,-2371 10563,-2432 10454,-2520
 #: corrected_by: osm, baustellen-doku.info, srt (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
-Goltzstr.: Asphalt	Q0 10454,-2520 10394,-2567 10382,-2598
+Goltzstr.: Asphalt	Q0 10454,-2520 10394,-2567 10392,-2595
 (Beethovenstr. - Mozartstr., Mauerweg): Asphalt mit Fugen	Q1 10309,-3191 10467,-3201
 Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10155,-2739 10219,-2895 10272,-3027 10323,-3150
 Marie-Curie-Str.: Asphalt	Q0 16751,10674 16751,10696 16861,10923
@@ -3571,9 +3571,9 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 # REMOVED --- #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
 #: osm_watch: way id="30893534" version="30"
 #: osm_watch: way id="1155399359" version="5"
-#: last_checked: 2026-04-29
-#: check_frequency: 120d
-#: next_check: 2026-06-01
+#: last_checked: 2026-06-13
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2026-06-01
 Am Teltowkanal: Asphalt	Q0 7911,4465 7866,4419 7769,4315
 # 
 Am Teltowkanal: Verbundsteinpflaster	Q1 7769,4315 7724,4270
@@ -7458,6 +7458,7 @@ Manntzstr.: Asphalt	Q0 7980,1295 8064,1460
 Manntzstr.: Beton	Q0- 8064,1460 8147,1663
 Domagkstr.: Beton	Q0 8031,1172 8163,1110 8263,1061
 (Kirchstr. - An der Dorfkirche): Verbundsteinpflaster	Q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
+(An der Heilandsweide - An der Dorfkirche): Verbundsteinpflaster/wassergebundene Decke	Q1 8378,1110 8338,1034 8259,1028
 Ahrensdorfer Str.: Asphalt	Q0 7602,305 7576,322 7458,283
 Ahrensdorfer Str.: Beton	Q0- 7458,283 7408,257 7344,261 7286,284
 Zernickstr.: Verbundsteinpflaster	Q1 7408,257 7391,347
@@ -8251,7 +8252,7 @@ Gerberpfad: unbefestigte Straße	Q2 4897,1054 4846,1080 4778,1194 4702,1298
 Großbeerenstr. (Lichterfelde): Beton	Q0 4939,1148 5050,1133
 Großbeerenstr. (Lichterfelde): glattes Kopfsteinpflaster	Q1- 5050,1133 5162,1110
 Heiterwanger Weg: Asphalt	Q0 5889,618 5985,630 6089,643 6186,652 6280,662 6383,667
-(Zufahrt Bauhaus): Asphalt	Q0 8382,347 8372,175
+(Zufahrt Bauhaus): Asphalt	Q0 8383,351 8372,175
 (Zufahrt): Asphalt	Q0 8075,499 8055,343
 Glaserweg: glattes Pflaster	Q1- 10187,872 10237,749
 Ostheimer Str.: glattes Pflaster	Q1 10673,1072 10743,908
@@ -9695,7 +9696,7 @@ Stephaniweg: Kleinsteinpflaster	Q1- 4855,1616 4836,1659 4779,1699
 Lange Str.: Kopfsteinpflaster	Q2 5194,1690 5261,1718
 Schöffenstr.: schlechtes Kopfsteinpflaster	Q3 5048,1651 5132,1672 5194,1690
 Blaumeisenweg: schlechtes Kopfsteinpflaster	Q3 5251,1543 5194,1690
-Fresepark: fester Parkweg	Q1 8769,266 8695,188 8671,118 8626,107 8579,153
+Fresepark: fester Parkweg	Q1 8775,272 8695,188 8671,118 8626,107 8579,153
 Zur Straße Parksiedlung Spruch: Asphalt	Q0 11136,1782 11205,1776
 #: note: beleuchtet
 (Feldspatweg - Parksiedlung Spruch): Verbundsteinpflaster	Q1 10907,1651 10895,1698 10904,1733
@@ -12205,7 +12206,7 @@ Am Steener Berg: Beton	Q0- 17856,25959 18108,26048
 Dr.-Jacobsohn-Promenade: Verbundsteinpflaster	Q1 7757,834 7484,918
 (Weg im Freizeitpark Marienfelde): wassergebundene Decke	Q1- 7977,-864 7978,-846 7980,-823 8021,-805 8013,-773 8024,-710 8023,-662
 (Weg im Freizeitpark Marienfelde): unebenes Verbundsteinpflaster	Q1- 8023,-662 8025,-508 8008,-486 7801,-467 7803,-387 7786,-348 7773,-344
-(Weg am ehem. Güteraußenring): wassergebundene Decke	Q1 9562,-619 9522,-533 9492,-538 9424,-608 9352,-643 9252,-667 9170,-673 9143,-667 8656,-736 8494,-762 8162,-810 8078,-823 8055,-834 7978,-846
+(Weg am ehem. Güteraußenring): wassergebundene Decke	Q1 9562,-619 9522,-533 9492,-538 9424,-608 9352,-643 9252,-667 9176,-672 9143,-667 8656,-736 8494,-762 8162,-810 8078,-823 8055,-834 7978,-846
 (Weg am ehem. Güteraußenring - Weg am Königsgraben): wassergebundene Decke	Q1 8494,-762 8574,-698
 (Weg am ehem. Güteraußenring - Weg am Königsgraben): Kleinsteinpflaster	Q1- 8656,-736 8639,-715 8592,-709
 (Zugang zum S-Bhf. Schichauweg, Bahnsteig Richtung Süden): Verbundsteinpflaster	Q1 9562,-619 9596,-700
@@ -14576,6 +14577,8 @@ Fürst-Bismarck-Steg: Holzbohlen	Q1- 3879,22574 3907,22560
 # 
 (Wohnquartier Bruno-Taut-Straße): Betonsteinpflaster	Q0- 21685,916 21723,969 21714,985 21781,1019 21883,1034 21889,1000
 # 
+(Unterführung Wolziger Zeile): Asphalt	Q0 10307,-2633 10391,-2624 10373,-2575 10394,-2567
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -14937,7 +14940,7 @@ Schönstr.: Asphalt	Q0 13391,16436 13630,16629
 #: corrected_by: srt ("mäßiger" gestrichen, Q1 -> Q0-) (mittlerweile neu gemacht)
 Schönstr.: Asphalt	Q0 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959 14136,17170
 #: confirmed_by: srt
-Beyrodtstr.: guter Asphalt	Q0 7888,1321 7981,1505
+Beyrodtstr.: guter Asphalt	Q0 7889,1323 7981,1505
 #: corrected_by: srt (guter Asphalt -> ...)
 Beyrodtstr.: Beton	Q0 7981,1505 8074,1698
 #: confirmed_by: srt
@@ -15651,7 +15654,7 @@ Andersenstr.: Kopfsteinpflaster	Q2 10282,16522 10295,16667
 #: confirmed_by: srt
 Schönbaumer Weg: Verbundsteinpflaster	Q1 -2424,22991 -2327,22968 -2245,22954 -2175,22937
 #: note: der anonyme Mensch hat auch Radwege eingetragen
-Sperenberger Str.: Asphalt	Q0 9177,-569 8814,-543 8828,-273
+Sperenberger Str.: Asphalt	Q0 9184,-569 8814,-543 8828,-273
 #: corrected_by: srt (Q2 -> Q3+)
 Achtermannstr.: Kopfsteinpflaster	Q3+ 11220,18992 11384,19067
 #: confirmed_by: srt
@@ -16757,7 +16760,7 @@ Dielingsgrund: gutes Verbundsteinpflaster	Q1 10590,525 10783,587
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/grundeigentuemer-kritisieren-die-bvv_a234142 (auch erwähnt hier: Schwedter Str.)
 #: XXX siehe auch Finanzplan Berlin 2019-2023, S. 232 im pdf)
 #: osm_watch: way id="156350665" version="15"
-#: last_checked: 2025-11-29
+#: last_checked: 2026-06-13
 #: check_frequency: 180d
 Dielingsgrund: glattes Kopfsteinpflaster, etwas wellig	Q2+ 10777,605 10880,633 11083,639
 #: by: ^^^
@@ -18379,7 +18382,7 @@ Strömannstr.: Gehwegplatten	Q0- 15945,23608 15957,23635
 Straße 70: fester Sandweg	Q2 15428,22736 15574,22640
 #: confirmed_by: srt
 Blechenstr.: Asphalt	Q0 14014,16722 13936,16763 13870,16837
-Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171
+Nunsdorfer Ring: Asphalt	Q0 8858,177 8981,275 9171,166 9280,-127 9168,-167
 #: corrected_by: srt (gutes -> )
 Albertinenstr.: Kopfsteinpflaster	Q2 14036,16129 14060,16218
 Albertinenstr.: Asphalt	Q0 14060,16218 14124,16552
@@ -18697,7 +18700,7 @@ Dohlengrund: Asphalt	Q0 20716,10434 21009,10425 21250,10420 21277,10435
 Goldammerstr.: Beton	Q0 14739,2714 14768,2763 14855,2859 14949,2967 14977,3039
 Goldammerstr.: Asphalt	Q0 14977,3039 15099,3031 15172,2971 15254,2926
 #: corrected_by: srt (was: "guter Asphalt")
-Am Gemeindepark: Beton	Q0 7172,2343 7215,2442 7208,2534 7199,2559 7165,2571
+Am Gemeindepark: Beton	Q0 7169,2348 7215,2442 7208,2534 7199,2559 7165,2571
 #: confirmed_by: srt
 Am Gemeindepark: guter Asphalt	Q0 7165,2571 7034,2586 6751,2708 6679,2701
 #: by: ^^^
@@ -19759,10 +19762,10 @@ Erich-Kuttner-Str.: Asphalt mit einigen Schäden	Q1+ 14590,13560 14551,13571 1443
 # 
 #: by: Regine Bast: vvv
 #: corrected_by: srt (Beton, Q0 -> ..., neu gemacht)
-Eiswaldtstr.: Asphalt	Q0 6718,2443 6836,2460 6965,2418 7051,2366 7172,2343
+Eiswaldtstr.: Asphalt	Q0 6718,2443 6836,2460 6965,2418 7051,2366 7169,2348
 # REMOVED --- #: next_check_id: EISWALDT-2022 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1259184.php --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1306690.php --- #: add_fragezeichen: Ist die Fahrbahn nach den Bauarbeiten besser geworden? --- #: last_checked: 2023-03-11 (letzte Deckschicht fehlt) --- #: next_check: 2023-08-09
 #: corrected_by: srt (Beton, Q0 -> ..., neu gemacht)
-Eiswaldtstr.: Asphalt	Q0 7172,2343 7285,2377
+Eiswaldtstr.: Asphalt	Q0 7169,2348 7285,2377
 #: by ^^^
 # 
 #: by: Heiko Schmitz:
@@ -19804,9 +19807,9 @@ Hermann-Piper-Str.: Beton	Q0 4766,20084 4920,19928 4997,19849
 # 
 #: by: Samer Aburous vvv
 #: confirmed_by: srt
-Hanielweg: Asphalt	Q0 8070,1261 7980,1295 7888,1321 7830,1345 7810,1349 7787,1361 7651,1615
+Hanielweg: Asphalt	Q0 8070,1261 7980,1295 7889,1323 7830,1345 7810,1349 7787,1361 7657,1618
 #: corrected_by: srt (slightly, Q0 -> Q0-)
-Hanielweg: Asphalt	Q0- 7651,1615 7610,1695 7562,1796
+Hanielweg: Asphalt	Q0- 7657,1618 7613,1697 7562,1796
 #: by ^^^
 # 
 #: by: garci vvv
@@ -22042,7 +22045,7 @@ Stegerwaldstr.: Beton/Asphalt	Q0 8381,1550 8241,1617 8147,1663 8074,1698
 #: note: laut ADFC-Karte gut geeignet:
 An der Heilandsweide: asphaltiert	Q0 8070,1261 8203,1194
 #: corrected_by: srt (Gehwegsteine -> Verbundsteinpflaster)
-An der Heilandsweide: Verbundsteinpflaster, außen fester Sand	Q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
+An der Heilandsweide: Verbundsteinpflaster	Q1 8203,1194 8305,1148 8378,1110 8492,1050 8555,1015 8592,979 8687,950
 Kiepertplatz: schlechtes Kopfsteinpflaster, sehr holprig	Q3 8522,1870 8599,1896
 #: by: ^^^
 # 
@@ -23164,7 +23167,8 @@ Naugarder Str.: Asphalt	Q0 12712,15176 12693,15225 12610,15455 12621,15482
 #: by: ^^^
 # 
 #: by: Jessica Zimmermann:
-An den Klostergärten: mäßiger Beton	Q1 7788,1080 7803,1130 7813,1193 7813,1289 7810,1349
+#: corrected_by: srt (mäßiger Beton -> ...)
+An den Klostergärten: Verbundsteinpflaster	Q1 7788,1080 7803,1130 7813,1193 7813,1289 7810,1349
 # 
 #: by: Jörg Schwarzer: vvv
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
@@ -32134,6 +32138,7 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10694 (Vorlage zur Kenntnisnahme (B-Planentwurf))
 #: by: https://entwicklungsstadt.de/neubau-in-alt-hohenschoenhausen-450-wohnungen-an-der-detlevstrasse-geplant/ (Baustart (für das Hochbauvorhaben): IV. Quartal 2026, Fertigstellung Ende 2028)
 #: by: https://www.howoge.de/immobiliensuche/neubauprojekte/detlevstrasse.html (4. Quartal 2026 - 4. Quartal 2028)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_25_1561_1608_online.pdf (Veröffentlichung eines Bebauungsplanentwurfs)
 #: last_checked: 2026-03-04 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2026-12-31 (Baustart (entwicklungsstadt, howoge)) vvv
@@ -32940,7 +32945,7 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 #: by: ^^^
 # 
 #: by: Josch [AM]
-Falkenhausenweg: Asphalt	Q0 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
+Falkenhausenweg: Asphalt	Q0 7613,1697 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 # 
 #: by: Christian:
 #: corrected_by: srt (Asphalt, Q1 -> ...)
@@ -33248,7 +33253,7 @@ Straße 478: Verbundsteinpflaster	Q1 8054,-198 7781,-182
 (Parkweg am Königsgraben): fester Parkweg	Q1 8571,-588 8595,-259
 #: note: an den Rändern sind schmale Banketten entstanden
 (Parkweg am Königsgraben): schlechtes Feldsteinpflaster	Q3+ 8595,-259 8585,-231 8574,-207 8561,-180
-(Parkweg am Königsgraben): fester Parkweg	Q1 8561,-180 8579,153 8583,301 8583,310 8584,320
+(Parkweg am Königsgraben): fester Parkweg	Q1 8561,-180 8579,153 8583,301 8583,310 8583,327
 #: corrected_by ^^^
 #: confirmed_by: srt
 (Parkweg am Königsgraben): fester Parkweg	Q1 8626,107 8631,31 8618,-45 8612,-162 8574,-207

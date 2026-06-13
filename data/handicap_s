@@ -14,7 +14,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straﬂe der Pariser Kommune - Erich-Steinfurth-Str.): einige Fuﬂg‰nger	q2; 12660,11705 12634,11705 12608,11692
 Rˆblingstr.: Sperrung der Fahrbahn (Einbahnstraﬂenregelung), Gehweg f¸r Radfahrer frei	q2::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
-Horstwalder Str. - Goltzstr.: Arbeiten an der Unterf¸hrung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10382,-2598 10394,-2567
+Horstwalder Str. - Goltzstr.: Arbeiten an der Unterf¸hrung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10392,-2595 10394,-2567
 G¸ldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
@@ -1055,6 +1055,7 @@ Eingang Okerstr.: Bordstein	q2 11527,7530 11540,7534
 Eingang Allerstr.: Bordstein	q3 11509,7636 11521,7638
 Tullaweg - An der Heilandsweide: Fuﬂg‰nger	q1 8464,990 8492,1050
 (Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
+(An der Heilandsweide - An der Dorfkirche): einige Fuﬂg‰nger	q1 8378,1110 8338,1034 8259,1028
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7501,83 7520,76 7535,20 7559,14 7659,-112 7668,-138 7722,-180
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Fuﬂg‰nger	q1 7668,-138 7552,-67 7535,20
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): enger Weg	q3 7722,-180 7718,-288 7749,-290 7776,-283
@@ -2479,7 +2480,7 @@ Straﬂenbahnquerung	q3 17422,17288 17424,17292 17414,17299 17421,17314
 Straﬂenbahnquerung	q3 16705,18222 16739,18249
 Varziner Platz: einige Fuﬂg‰nger	q2 5492,7868 5491,7836
 Rudolf-Leonhard-Str. - Blumberger Damm: einige Fuﬂg‰nger	q1 21493,16387 21538,16444 21574,16547
-Hanielweg: enge Straﬂe	q0 7651,1615 7610,1695 7562,1796
+Hanielweg: enge Straﬂe	q0 7657,1618 7613,1697 7562,1796
 Pappritzstr.: enge Straﬂe	q0 7562,1796 7675,1885 7736,1969 7741,2096
 Herkulesufer: Fuﬂg‰nger, schmal	q2 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
 Herkulesufer: Fuﬂg‰nger, schmal	q2 7135,11171 7115,11220
@@ -2787,7 +2788,7 @@ Eichenstr. - Uferweg: ein paar Stufen oder Umweg ¸ber B¸rgersteig nehmen	q3 1389
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
 Straﬂe 103 (Niederschˆnhausen): enge Straﬂe	q1 10914,20065 11051,19789
-An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
+An der Heilandsweide: Fuﬂg‰nger	q1 8203,1194 8305,1148 8378,1110 8492,1050 8555,1015 8592,979 8687,950
 Friedrich-Wilhelm-Str.: eng	q1 8266,5911 8385,5907
 Blunckstr.: beidseitig beparkt und eng	q1 5429,19165 5502,19162 5571,19178 5601,19204 5609,19230 5603,19320 5586,19428 5572,19478
 (Hochkalterweg - Floningweg): Fuﬂg‰nger	q1 10304,2743 10196,2771
@@ -3145,7 +3146,7 @@ Altenburger Str.: Fuﬂg‰nger, Bordstein	q2 6651,1063 6631,968
 (Lilienthalpark): Fuﬂg‰nger, Radfahren erlaubt	q2 5531,779 5587,816
 (Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
 (Mauerweg Lichtenrade - Lichterfelde): Fuﬂg‰nger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568 7176,-515 7175,-479 7164,-473 7146,-466 7097,-527 6961,-389 6668,-100 6498,71 6357,215 6256,363 6204,331 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
-Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
+Falkenhausenweg: spielende Kinder	q1 7613,1697 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 (Gielower Str - Buschkrugallee): Fuﬂg‰nger	q1 14012,4184 14053,4173 14119,4153
 (Parkweg Buschkrugallee - Bruno-Taut-Ring): Fuﬂg‰nger	q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13632,3875
 (Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fuﬂg‰nger	q1 13463,3854 13489,3857 13573,3885 13601,3895
@@ -3329,7 +3330,7 @@ Thaliaweg: enge Straﬂe	q0 6638,3138 6482,3004
 Marmaraweg: Fuﬂg‰nger	q1 10368,4279 10371,4337
 Kolonie Bismarckruh: Fuﬂg‰nger, Radfahren erlaubt	q1 1293,13332 1311,13210 1336,12967 1335,12921 1242,12535
 Damwildsteig: enge Straﬂe	q1 -482,21392 -777,21455 -1090,21526 -1213,21553
-Beyrodtstr.: enge Straﬂe	q0 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
+Beyrodtstr.: enge Straﬂe	q0 7889,1323 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 Egmontstr.: enge Straﬂe	q1 17306,11866 17151,11912
 Stadtilmer Weg: enge Straﬂe	q1 6515,1010 6495,915 6592,882 6779,816 6841,793
 L¸bener Weg: enge Straﬂe	q1 6403,18289 6353,18292 6314,18295 6227,18299 6131,18302 6045,18305
@@ -3846,8 +3847,8 @@ Lidl-Parkplatz - Alt-Kaulsdorf: linker Gehweg bis zur Ampel "Am Feldberg"	q3::ig
 Alt-Kaulsdorf - Lidl-Parkplatz: linker Gehweg ab Ampel Myslowitzer Str.	q3::igndisp; 23113,11262 22994,11251
 Gartenfelder Str.: linker Gehweg bis Ampel	q3::igndisp; -1282,14789 -1336,14786
 Molkenmarkt - Eiergasse: linker Gehweg	q4::igndisp; 10697,12303 10700,12316
-Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	q4::igndisp; 8736,337 8583,301
-Nahmitzer Damm: linker Gehweg bis Ampel	q4::igndisp; 8583,301 8470,310 8382,347
+Nahmitzer Damm: linker Gehweg bis Parkweg im Fresepark	q4::igndisp; 8742,343 8583,301
+Nahmitzer Damm: linker Gehweg bis Ampel	q4::igndisp; 8583,301 8470,310 8383,351
 Minna-Cauer-Str.: linker Gehweg	q4::igndisp; 7901,13324 7873,13448
 Eduard-Spranger-Promenade - Kˆnigsberger Str./Giesensdorfer Str.: linker Gehweg	q4::igndisp; 4328,2652 4348,2627
 Heerstr.: linker Gehweg	q4::igndisp; 929,11313 1028,11309

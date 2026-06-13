@@ -402,6 +402,11 @@ Siegfriedstr. -> Hermannstr.: Umweg über Fußgängerampel rechts	DH:len=26:tl 1212
 # 
 Landsberger Allee -> Otto-Marquardt-Str.: Umweg über Fußgängerampel	DH:len=20:tl 14871,14087 14954,14119 14888,14280
 # 
+#: note: wenn man auf der Fahrbahn fährt, gibt es nur einen Bordstein zum Überwinden (kerb_up)
+Motzener Str.: Bordsteine	DH:kerb_down:kerb_up 8858,177 8775,272 8695,188
+#: note: oder man benutzt den linken Gehweg bis zur Ampel, oder man bleibt auf der Fahrbahn, dann hat man nur einen Bordstein zum Überwinden (kerb_down)
+Motzener Str.: Bordsteine	DH:kerb_down:kerb_up 8695,188 8775,272 8742,343
+# 
 ######################################################################
 # Vorübergehende Einschränkungen
 #
@@ -588,7 +593,9 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # 
 #: next_check_id: PETERSBURGER-2024
 #: last_checked: 2026-06-09 vvv
-#: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-09-15 (SenUVK site) vvv
+# REMOVED --- #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/?date=20260612 (bis September 2026)
 Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13747,12642 13695,12643 13681,12624
 Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13761,12690 13695,12643 13681,12624
 #: osm_watch[closed]: note 4639045 5
