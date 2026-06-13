@@ -373,7 +373,7 @@ function doLeaflet() {
     var cyclosmAttribution = '\u00a9 <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors. Tiles style by <a href="https://www.cyclosm.org">CyclOSM</a> hosted by <a href="https://openstreetmap.fr">OpenStreetMap France</a>';
     var cyclosmTileLayer = new L.TileLayer(cyclosmUrl, {maxZoom: 19, attribution: cyclosmAttribution});
 
-    var berlinAerialYear = '2025';
+    var berlinAerialYear = '2026';
     //var berlinAerialVariant = '-dop20rgbi';
     //var berlinAerialVariant = '-dop20rgb';
     var berlinAerialVariant = '-truedop20rgb';
