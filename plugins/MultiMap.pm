@@ -26,8 +26,8 @@ use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 use vars qw(%images);
 
 my $map_compare_use_bbbike_org = 1;
-my $newest_berlin_aerial_year = '2025'; # used in MapCompare and possibly Rapid
-my $newest_berlin_aerial = 'berlin-historical-'.$newest_berlin_aerial_year.'-summer';
+my $newest_berlin_aerial_year = '2026'; # used in MapCompare and possibly Rapid
+my $newest_berlin_aerial = 'berlin-historical-'.$newest_berlin_aerial_year.'-spring';
 
 $main::devel_host = $main::devel_host if 0; # cease -w
 
@@ -1557,12 +1557,12 @@ sub show_mapcompare_menu {
 	     # whole of Brandenburg
 	     showmap_mapcompare
 		 (maps => [qw(
+				 berlin-historical-2026-spring
 				 berlin-historical-2025-summer
 				 berlin-historical-2025
 				 berlin-historical-2024
 				 berlin-historical-2023
 				 berlin-historical-2022
-				 berlin-historical-2021
 				 lgb-satellite-color
 				 google-satellite
 			    )],
@@ -1936,6 +1936,7 @@ sub showmap_url_gdi_berlin {
 	fluralkis          => 'hintergrund_k5_farbe,alkis_flurstuecke:flurstuecke',
 	flurinspire        => 'hintergrund_k5_farbe,cp_alkis:CP.CadastralZoning,cp_alkis:CP.CadastralParcel',
 	gruenanlagen       => 'hintergrund_k5_grau,gruenanlagen:spielplaetze,gruenanlagen:gruenanlagen',
+	ortho2026          => 'hintergrund_k5_grau,truedop_2026:truedop_2026',
 	ortho2025          => 'hintergrund_k5_grau,truedop_2025_sommer:truedop_2025_sommer_rgb',
 	ortho2025_fruehjahr=> 'hintergrund_k5_grau,dop_2025_fruehjahr:dop_2025',
 	ortho2024          => 'hintergrund_k5_grau,truedop_2024:truedop_2024',
@@ -2056,6 +2057,10 @@ sub show_gdi_berlin_menu {
 	 -command => sub { showmap_gdi_berlin(layers => 'gruenanlagen', %args) },
 	);
     $link_menu->separator;
+    $link_menu->command
+	(-label => 'Orthophotos 2026',
+	 -command => sub { showmap_gdi_berlin(layers => 'ortho2026', %args) },
+	);
     $link_menu->command
 	(-label => 'Orthophotos 2025',
 	 -command => sub { showmap_gdi_berlin(layers => 'ortho2025', %args) },
