@@ -2720,7 +2720,6 @@ gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 	RW1; 7710,8051 7639,8091 7582,8123 7497,8168
 	RW3;RW3 7710,8051 7733,8023
-#: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4159
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/bezirksamt/beschluesse/2017/05-09/0363_xix-fahrradfuehrung-naumannstrasse-einrichten.pdf
@@ -2728,8 +2727,11 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 # REMOVED (Nov 2025: wieder der alte Stand) --- #: XXX Anfang 2025: der benutzungspflichtige Radweg Richtung Süden fängt wegen Hochbauarbeiten etwa 50m später an
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="25"
-#: last_checked: 2026-02-18
-#: check_frequency: 120d
+#: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
+#: XXX zurzeit ist der Gehweg wegen Bauarbeiten für das BSR-Hochhaus komplett gesperrt: check_frequency von 120d -> 180d erhöht
+#: last_checked: 2026-03-05 (orthofotos)
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 180d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
 Verbundsteinpflaster	RW2; 4324,8899 4327,8991 4325,9082 4325,9159 4339,9224 4377,9258
@@ -9335,7 +9337,7 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: LMS-BR:347435/72 viz2021:13.38458,52.45267,23.09.2024,17:00 viz2021:13.38458,52.45267,(bis 01.11.2024) (bis 31.12.2025) (bis 26.06.2026)
 #: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
 #: priority: #B vvv
-#: last_checked: 2026-02-18 vvv
+#: last_checked: 2026-03-05 (orthofotos) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-06-26 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: valid: -20211007 vvv

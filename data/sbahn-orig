@@ -179,6 +179,7 @@ S85	SB 20033,-559 20170,-510 20428,-365 20575,-227 20716,10 20874,139 21031,227 
 # REMOVED --- S45	SC 18079,-1507 18161,-1456 18333,-1325 18532,-1140 18707,-981 18899,-856 19062,-795 20033,-559
 # REMOVED --- S45	SB 20033,-559 20170,-510 20428,-365 20575,-227 20716,10 20874,139 21031,227 21101,291 21173,359 21271,458 21404,646 21508,796 21577,896 21641,1009 21670,1135 21677,1244 21662,1364 21577,1562 21526,1643 21465,1742 20940,2329 20759,2506 20535,2703 20185,3085 19915,3386 19570,3772 19391,3969 18948,4444 18674,4726 18259,5054 18129,5156 17910,5371 17722,5573 16902,6397 16612,6662 16325,6957 16036,7261 15960,7332 15847,7378 15735,7385 15646,7362 14887,7182 14674,7125 14464,7107 14351,7130 14261,7159 14014,7282 13916,7315 13817,7315 13757,7294 13437,7203 13130,7132
 # REMOVED --- S45	SA 13130,7132 13030,7098 12955,7064 12670,6996 12309,6899
+#: next_check_id: SIEMENSBAHN-2026
 #: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/wie-ist-der-stand_a309918 (Mai 2021)
 #: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/der-bahn-beauftragte-alexander-kaczmarek-inormierte-ueber-den-stand-der-siemensbahn_a311088
 #: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/die-siemensbahn-wird-nach-40-jahren-aus-dem-dornroeschenschlaf-geweckt_a324932 (ab 2029 wieder)
@@ -272,86 +273,12 @@ S85,S9	SC 18079,-1507 17614,-1833 17035,-2287 15081,-3742 14874,-3904 14761,-410
 S85,S9	SC::Tu 15731,-4812 16358,-4962 16848,-4904 17808,-4496
 # REMOVED --- #: next_check ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
-#: next_check_id: S21-2018
-# REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/webcam6.jpg (anscheinend seit Juni 2024 keine aktuellen Bilder mehr)
-#: by: https://www.rbb24.de/panorama/beitrag/2019/08/bauarbeiten-s21-verzoegerungen-verbindung-hauptbahnhof.html (Eröffnung erst 2021, ursprünglich 2020)
-#: by: https://www.berliner-woche.de/moabit/c-verkehr/ueberlegungen-des-fahrgastverbandes-zum-projekt-s21_a260341 (Sommer 2021)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bekommt-im-sommer-2021-eine-neue-s-bahn-strecke-li.104501
-#: by: https://www.berliner-zeitung.de/mensch-metropole/wegen-corona-neue-s-bahn-strecke-fuer-berlin-wird-spaeter-fertig-li.123737 (letztes Quartal 2021, spätestens Mitte Dezember 2021)
-#: by: https://abendblatt-berlin.de/2020/12/17/berliner-hauptbahnhof-neue-s-bahn-verbindung-kommt-2021/ (Beitrag entstand mit Unterstützung der Berliner Zeitung)
-#: by: https://www.rbb24.de/panorama/beitrag/2021/01/berlin-s21-eroeffnung-dezember-2021-anbindung-hauptbahnhof.html
-#: by: https://www.berliner-zeitung.de/mensch-metropole/neue-s-bahn-strecke-in-der-berliner-innenstadt-wird-erst-ende-2022-fertig-li.143527
-#: by: https://abendblatt-berlin.de/2021/03/03/berlin-wedding-eroeffnung-der-neuen-s21-erneut-verschoben/
-#: by: https://www.berliner-woche.de/moabit/c-verkehr/erstes-teilstueck-der-neuen-city-s-bahn-wird-spaeter-fertig_a305688
-#: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20211009 (Fahrplanänderungen am 11.12.2022)
-#: by: https://berliner-abendblatt.de/2021/11/26/neue-linie-s21-lohnt-sich-der-weiterbau/
-#: by: https://berliner-abendblatt.de/2022/01/26/moabit-bekommt-neuen-s-bahnhof/
-#: by: https://www.berliner-woche.de/moabit/c-verkehr/perleberger-bruecke-bald-mit-bahnhof_a335444
-#: by: https://berliner-abendblatt.de/2022/03/05/neue-s-bahn-linie-21-koennte-2037-fertig-sein/
-#: by: https://www.deutschebahn.com/pr-berlin-de/aktuell/presseinformationen/Projekt-City-S-Bahn-Pandemie-verzoegert-Inbetriebnahme-des-ersten-Teilstuecks-7325700 (keine Eröffnung Dez. 2022, kein neuer Termin)
-#: by: https://berliner-abendblatt.de/2022/03/07/neue-s-bahnlinie-21-kommt-spaeter/
-#: by: https://sbahn.berlin/aktuelles/artikel/verzoegerungen-bei-city-s-bahn/
-#: by: https://www.berliner-woche.de/moabit/c-verkehr/betroffenenrat-will-s-bahn-zugang-vom-quartiersplatz_a340814 (zum Bhf. Perleberger Brücke)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/unterirdisch-zum-hauptbahnhof-neue-s-bahn-strecke-geht-xxxx-in-betrieb-li.253125 (Dezember 2023; nach Westhafen 2026)
-#: by: https://www.berlin-s21.de/home.html
-#: by: https://www.berliner-zeitung.de/mensch-metropole/in-diesem-berliner-s-bahnhof-werden-sich-die-fahrgaeste-wie-unter-wasser-fuehlen-li.291654
-#: by: https://www.tagesspiegel.de/berlin/millionenkosten-durch-broselbeton-in-berlin-massive-mangel-am-hauptbahnhof--baustopp-fur-nord-sud-tunnel-9560930.html
-#: by: https://berliner-abendblatt.de/berlin-news/spiegel-baumaengel-an-bruecke-am-berliner-hauptbahnhof-id214710
-#: by: https://www.berliner-zeitung.de/mensch-metropole/dorotheenstrasse-scheidemannstrasse-brandenburger-tors-21-city-s-bahn-s15-gesundbrunnen-unterirdisch-zum-hauptbahnhof-zeitplan-fuer-die-neue-s-bahn-wackelt-potsdamer-platz-li.347844
-#: by: https://www.berliner-kurier.de/verkehr/s-bahn-berlin-hammer-neue-linie-s15-li.360196 (10.12.2023?)
-#: by: https://www.rbb24.de/panorama/beitrag/2023/07/berlin-starttermin-city-s-bahn-verzoegerung.html
-#: by: https://berliner-abendblatt.de/berlin-news/starttermin-des-ersten-city-s-bahn-abschnitts-weiter-unklar-id228497
-#: by: https://www.berliner-zeitung.de/mensch-metropole/s21-s-bahn-tunnel-zum-hauptbahnhof-berlin-wird-spaeter-fertig-als-geplant-city-s-bahn-db-bahn-li.381548 (irgendwann 2024)
-#: by: https://berliner-abendblatt.de/berlin-news/eroeffnung-der-city-s-bahn-verzoegert-sich-bis-2024-id230387
-#: by: https://www.berlin-s21.de/BA-1.html (Juni 2025: Führungen im Bahnhof am 19. September 2025)
-#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1397819.php
-#: by: https://www.rbb24.de/panorama/beitrag/2023/12/berlin-s21-reichstag-sbahn-city-linie-regierungsviertel-tunnel.html (BA2 bis Potsdamer Platz ab 2027)
-#: by: https://berliner-abendblatt.de/berlin-news/senat-gibt-gruenes-licht-fuer-naechsten-planungsschritt-bei-s21-id240248
-#: by: https://www.berliner-zeitung.de/mensch-metropole/neue-s-bahn-fuer-berlin-wann-wird-der-tunnel-zum-hauptbahnhof-endlich-fertig-li.2175029 (Mitte Dezember 2024?)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/eine-neue-s-bahn-linie-fuer-berlin-so-sieht-es-in-der-endstation-der-s15-aus-li.2203134
-#: by: https://berliner-abendblatt.de/berlin-news/s21-interimsstrecke-geht-erst-ende-2024-in-betrieb-id249045
-#: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20240610 (Fahrplanänderungen am 14.12.2024)
-#: by: https://www.rbb24.de/panorama/beitrag/2024/08/s-bahn-berlin-city-gesundbrunnen-hauptbahnhof.html
-#: by: https://www.nd-aktuell.de/artikel/1184855.s-bahn-berlin-doch-keine-zuege-im-dezember-auf-s-projekt.html
-#: by: https://www.deutschebahn.com/de/presse/presse-regional/pr-berlin-de/aktuell/presseinformationen/S-Bahn-faehrt-im-1-Quartal-2025-ueber-den-Nordring-zum-Berliner-Hauptbahnhof-13048126
-#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bekommt-eine-neue-autobahn-und-was-sich-sonst-2025-im-verkehr-aendert-li.2283130 (März 2025?)
-#: by: https://checkpoint.tagesspiegel.de/langmeldung/1c4jKwJuGgtn7ALeFFHR9Q
-#: by: https://www.tagesspiegel.de/berlin/pannenbaustelle-auf-nord-sud-verbindung-eroffnung-der-berliner-s-bahn-linie-s21-verschiebt-sich-erneut-13185256.html
-#: by: https://www.msn.com/de-de/nachrichten/panorama/neue-s-bahn-f%C3%BCr-berlin-er%C3%B6ffnungstermin-von-s21-erneut-gestrichen/ar-AA1yTgOT
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/s-bahnlinie-21.203/page-4#post-24554
-#: by: https://sbahn.berlin/aktuelles/artikel/interimsbahnhof-fuer-s15-wird-fertig-aber-s-bahnen-fahren-erst-2025/ (kein Termin mehr)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/neue-s-bahn-strecke-fuer-berlin-darum-verzoegert-sich-die-eroeffnung-der-linie-s15-li.2301627 (Sep oder Dez 2025?)
-#: by: https://www.berliner-woche.de/mitte/c-bauen/s15-verzoegert-sich-erneut_a436823
-#: by: https://www.tagesspiegel.de/berlin/fex-gestrichen-ersatzlinie-verzogert-sich-berlins-norden-wird-vom-flughafen-ber-abgehangt-13931149.html (Frühjahr 2026)
-#: by: https://entwicklungsstadt.de/neue-fex-strecke-ab-dezember-gesundbrunnen-faellt-weg-und-s15-verzoegert-sich/
-#: by: https://entwicklungsstadt.de/finanzierung-der-s-bahnlinie-s21-zwischen-potsdamer-platz-und-yorckstrasse-weiter-unklar/
-#: by: https://www.bahninfo-forum.de/read.php?9,727867,841021#msg-841021
-#: by: https://igeb.org/files/SVW251022-Fahrgastsprechtag-S.pdf (Frühjahr 2026)
-#: by: https://www.rbb24.de/panorama/beitrag/2025/10/berlin-sbahn-s15-s21-verkehr-oepnv-eroeffnung.html (Eröffnungstermin 28.03.2025)
-#: by: https://entwicklungsstadt.de/s-bahn-linie-s15-neuer-termin-fuer-eroeffnung-im-maerz-2026/
-#: by: https://www.nd-aktuell.de/artikel/1197136.verkehr-s-bahn-berlin-bereitet-sich-auf-neue-strecke-vor.html
-#: by: https://www.entwicklungsstadt.de/berlins-neue-s-bahn-linie-s15-termin-fuer-erste-fahrt-zum-hauptbahnhof-steht-fest/
-#: by: https://www.berliner-zeitung.de/mensch-metropole/blaues-wunder-am-hauptbahnhof-das-ist-die-neue-s-bahnstrecke-fuer-berlin-li.10021254
-#: by: https://www.nd-aktuell.de/artikel/1198325.s-bahn-berlin-berlin-bangen-um-s-eroeffnungstermin.html
-#: by: https://www.entwicklungsstadt.de/erneute-zweifel-am-zeitplan-wann-geht-die-s15-endlich-in-betrieb/
-#: by: https://www.berliner-zeitung.de/mensch-metropole/pure-verzweiflung-an-der-s15-warum-die-neue-s-bahnstrecke-fuer-berlin-einfach-nicht-fertig-wird-li.10025255
-#: by: https://www.entwicklungsstadt.de/neue-s-bahnlinie-s15-warum-der-eroeffnungstermin-erneut-verschoben-wurde/
-#: by: https://www.berlin-s21.de/aktuelles-reader/inbetriebnahme-des-1-bauabschnitts-interimszustand-im-fruehjahr-2026.html
-#: by: https://www.tagesspiegel.de/berlin/verbindet-berliner-hauptbahnhof-mit-nordring-inbetriebnahme-der-s-bahnlinie-s15s21-verzogert-sich-weiter-15394784.html
-#: by: https://www.berliner-zeitung.de/article/neuer-s-bahn-chef-greift-durch-was-das-sofortprogramm-fuer-berlin-bedeutet-10036791 (15.6.2026?)
-#: by: https://www.entwicklungsstadt.de/neue-s-bahn-strecke-in-berlin-startet-am-15-juni/
-#: by: https://www.tagesspiegel.de/berlin/mit-neun-jahren-verspatung-neue-berliner-s-bahn-strecke-wird-am-15-juni-eroffnet-15675523.html
-#: osm_watch: note 4308592 12
-#: osm_watch: note 4308593 6
-#: XXX ursprünglich geplant als S21, wird aber als Linie S15 eröffnet
-#: XXX 2025 noch kein Linienbetrieb auf dem Abzweig nach Westhafen
-#: last_checked: 2026-03-23 (berliner-zeitung) vvv
-#: check_frequency: 120d vvv
-#: next_check: 2026-06-15 (berliner-zeitung, berliner-linienchronik, entwicklungsstadt) vvv
-S15	SBau::Tu 8061,13303 7810,13720
-S15	SBau 7810,13720 7360,14411 7329,14630 7350,14803 7447,14907
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: note: dieser Abschnitt wird vermutlich erst mit der Gartenfeld-S-Bahn eröffnet
-S15	SBau 7360,14411 7199,14524 7052,14556 6944,14562
+#: historical_note: Eröffnung am 2026-06-15 vvv
+S15	SA::Tu 8061,13303 7810,13720
+S15	SA 7810,13720 7360,14411 7329,14630 7350,14803 7447,14907 7830,15200 8556,15719 8731,15786 8870,15819 9019,15847 9138,15896 9299,15930
+#: historical_note ^^^
+#: next_check_id: SIEMENSBAHN-2026
+#: note: dieser Abschnitt wird vermutlich erst mit der Gartenfeld-S-Bahn eröffnet; Liniennummer unklar (S6? S15?)
+#: next_check: 2029-12-31 (DB, pardok, entwicklungsstadt)
+	SBau 7360,14411 7199,14524 7052,14556 6944,14562
+# 

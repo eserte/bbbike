@@ -7661,7 +7661,7 @@ Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,
 #: osm_watch: way id="1309204624" version="2"
 #: also_indoor: traffic (ex-T,G,ex-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2026-03-03 (mapillary)
+#: last_checked: 2026-06-14 (traffic)
 # REMOVED --- #: check_frequency: 90d (traffic check)
 # REMOVED --- #: next_check: 2025-12-31 (Halteverbotsschilder)
 #: next_check: 2026-06-14 (VIZ-Verkehrsmeldung)

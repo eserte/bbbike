@@ -27,7 +27,7 @@
 #: XXX laut rbb Arbeiten bis 25.10.2021, mittlerweile bis 30.8.2022
 # REMOVED --- #: also_indoor: traffic (H,G)
 #: last_checked: 2026-03-18
-#: check_frequency: 90d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-11-04
 Berliner Str. (Wilmersdorf): wird es hier Radspuren geben?	? 3951,8992 3989,8982 4181,8933 4324,8899 4451,8874 4777,8870
 # 
@@ -170,7 +170,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="8049678"  version="20"
 #: XXX laut SenMVKU-Seite wird Schulenburgstraße/Tiefwerderweg voraussichtlich eine Ampel entstehen + Radfahrstreifen zwischen Tiefwerderweg und Ruhlebener Str. (je 1,60m breit)
 #: XXX laut SenMVKU-Seite werden auf der neuen Schulenburgbrücke kombinierte Rad/Gehwege entstehen
-#: last_checked: 2025-04-16
+#: last_checked: 2026-03-05 (orthofotos)
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 540d
 #: next_check: 2031-12-31 (Tsp)
@@ -688,7 +688,7 @@ Alt-Tempelhof: Radverkehrsanlage geplant	?::projected 8949,6644 9052,6664
 #: osm_watch: way id="1171918025" version="9"
 #: osm_watch: way id="1171918026" version="7"
 #: XXX der nördliche Abschnitt in der Schöburgstraße ist nicht mehr bei infravelo gelistet: bedeutet das, dass der Ausbau nicht erfolgen wird? Stattdessen geht die Führung über Parkstraße zum Tempelhofer Damm (aber wird an dieser Stelle eine Überquerung ermöglicht?)
-#: last_checked: 2026-02-18
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 120d
 Schönburgstr. - Blumenthalstr.: fahrradfreundlicher Ausbau war mal geplant	?::projected 8949,6644 8961,6490 8995,6473 9031,6355
 # REMOVED (Redirect auf andere Version) --- #: by: http://www.infravelo.de/projekt/parkstrasse-und-blumenthalstrasse/ (1. Quartal 2022 - 2. Quartal 2023) (in API gelöscht, im Web weiterhin verfügbar) (wieder da) (1. Quartal 2023 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2023)
@@ -792,7 +792,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: osm_watch: way id="31091960" version="24" vvv
 #: osm_watch: way id="31091970" version="23" vvv
 #: osm_watch: way id="330922955" version="11" vvv
-#: last_checked: 2026-04-15 (mapillary) vvv
+#: last_checked: 2026-06-10 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 (infravelo) vvv
 Oberspreestr.: Lückenschluss geplant (Radweg?)	?::projected; 20949,4775 20765,4839 20689,4862
@@ -922,7 +922,7 @@ Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 19769,-4
 #: XXX Ag.9
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_47_6363_6522_online.pdf (Widmung einer öffentlichen Grün- und Erholungsanlage)
-#: last_checked: 2025-07-19
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 360d
 Uferweg südlich des Teltowkanals: Herstellen einer Verbindung geplant, außerdem Verbesserung der Befahrbarkeit bis Adlergestell	?::projected 18480,2381 19375,2341
 # 
@@ -1324,7 +1324,7 @@ Ingeborg-Hunzinger-Str./Straße nach Fichtenau: Einrichten einer Radverkehrsanlag
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (voraussichtlich 2021/2022)
 #: source_id: 2147345751 (möglicherweise inaktiv)
 #: XXX Maßnahme Rd.3 (Nordseite)
-#: last_checked: 2025-09-02 (mapillary)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 360d
 #: next_check: 2028-12-31 (infravelo)
 Fürstenwalder Allee: Baumaßnahmen geplant (Radspuren?)	?::projected; 31632,3297 31447,3372 31366,3404 31139,3497
@@ -1342,7 +1342,7 @@ Fürstenwalder Allee: Baumaßnahmen geplant (Radspuren?)	?::projected; 31632,3297 
 #: source_id: viz2021:13.707015,52.433814,10.01.2023,07:00 (Leitungsarbeiten bis 13.1.2023) (bis 18.1.2023) (inaktiv)
 #: source_id: viz2021:13.706746,52.433855,23.01.2023,09:00 (Leitungsarbeiten bis 20.2.2023) (bis 17.3.2023) (inaktiv)
 #: osm_watch: way id="398767400" version="12"
-#: last_checked: 2025-09-02 (mapillary)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 360d
 #: next_check: 2028-12-31 (infravelo)
 # REMOVED (realisiert) --- Fürstenwalder Allee: Einrichten einer Radverkehrsanlage	?::projected; 30748,3658 30993,3557 31139,3497
@@ -2717,7 +2717,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7387
 #: osm_watch: way id="616889394" version="2"
 #: osm_watch: way id="966122976" version="1"
-#: last_checked: 2025-08-20
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 360d
 Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663 16273,-824
 # 
@@ -4264,7 +4264,7 @@ Rheinstr./Hauptstr.: Busspur geplant	?; 5644,6936 5806,7205 5817,7223 5853,7274 
 # REMOVED (keine Busspur) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf --- Saatwinkler Damm: vermutlich existiert hier bereits eine Busspur, ist sie für Radfahrer freigegeben?	?; 3854,15670 3579,15682
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf
-#: last_checked: 2026-02-18
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 120d
 Friedrich-Karl-Str.: Busspur geplant	?; 8968,5554 9161,5535
 # 
@@ -4972,7 +4972,7 @@ S-Bhf. Greifswalder Str.: Ampelanlage sollte mal entstehen	? 12636,15049 12704,1
 #: source_id: viz2021:13.31578,52.44314,09.10.2024,07:00 (bis 30.09.2025) (bis 26.09.2025) (inaktiv)
 #: source_id: viz2021:13.31578,52.44314, (bis 04.08.2025) (bis 26.09.2025) (bis 31.10.2025) (inaktiv) (bis 13.11.2025) (bis 18.11.2025) (inaktiv)
 #: osm_watch: way id="161883479" version="27"
-#: last_checked: 2025-12-06 (mapillary)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 240d
 # REMOVED --- #: next_check: 2025-11-30
 Hindenburgdamm: Busspur zwischen Klingsorstr. und Händelplatz Richtung Norden war geplant	?; 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
@@ -8170,7 +8170,7 @@ Jean-Jaurès-Str.: wird es hier in Zukunft eine Radverkehrsanlage geben?	? 4456,2
 # 
 #: by: https://www.infravelo.de/projekt/thorwaldsenstrasse/ (1. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2028 - 4. Quartal 2028) (gelöscht)
 #: by: https://www.stadtrand-nachrichten.de/radwegeausbau-steglitz-zehlendorf-berlin/ (Erwähnung der Sanierung)
-#: last_checked: 2025-11-29
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 720d
 #: next_check: 2028-12-31 (ex-infravelo)
 Thorwaldsenstr.: Sanierung und Verbreiterung der Radwege zwischen Canovastr. und Bergstr. beide Seiten	?::projected 6343,6297 6494,6128 6629,5946 6696,5854
@@ -8233,7 +8233,7 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 # REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8909 --- Fennpfuhlweg: beeinträchtigen die Fahrbahnschwellen auch Radfahrer?	? 17697,18989 17750,19181 17761,19221 17845,19186
 # REMOVED (handicap_s-orig-Eintrag existiert) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_30_2009_2068_online.pdf --- #: XXX vermutlich sollte man hier sowieso einen handicap-Eintrag erstellen --- #: next_check: 2022-09-01 --- Herkulesufer: Widmung als Grünanlage geplant	? 7595,11086 7575,11076 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
 # 
-#: next_check_id: S21-2018
+#: next_check_id: S21-BA2
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2208/nachricht7311.html (blockiert durch die Baustelle der S-Bahn)
 #: by: https://berliner-abendblatt.de/2022/08/15/uferpromenaden-am-humboldthafen-eroeffnet/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/sitzplaetze-mit-wasserblick-am-humboldthafen_a355340
@@ -9156,7 +9156,8 @@ Wilhelm-Busch-Str.: Einbahnstraße geplant	?::projected 13205,8126 13312,8026
 #: next_check_id: FRIEDENAUERHOEHE-2024
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=770057#post770057
 #: osm_watch: way id="1323938020" version="7"
-#: last_checked: 2026-02-25
+#: last_checked: 2026-03-05 (orthofotos)
+#: check_frequency: 120d
 #: next_check: 2027-06-30
 Friedenauer Höhe: Erschließungsstraße, evtl. mit Anschluss an die Straße am Güterbahnhof Wilmersdorf	?::inwork 5812,7826 6147,7840
 # 
@@ -9681,6 +9682,7 @@ Hermann-Dorner-Allee: Zebrastreifen vor der Gemeinschaftsschule Adlersdorf (Höhe
 Bebauungsplan 3-85: Friedhof wird verkleinert	? 10145,21017 10142,20925 10269,20960 10224,21280 10129,21251 10135,21171 10140,21107 10145,21017
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1605007.php (geplant für 2026)
+#: last_checked: 2026-03-05 (orthofotos)
 #: next_check: 2026-12-31
 Odernheimer Str.: Zebrastreifen geplant	? 28518,1365 28545,1373 28540,1350
 # 
@@ -9951,6 +9953,7 @@ Carl-Herz-Ufer: Plannung einer Fahrradstraße + Asphaltierung	?::projected 10627,
 #: by: https://www.entwicklungsstadt.de/protest-gegen-schliessung-der-goerlitzer-bruecken-waechst/
 #: by: https://www.entwicklungsstadt.de/goerlitzer-park-bleibt-vorerst-nachts-offen-senat-wehrt-sich/
 #: by: https://www.tagesspiegel.de/berlin/drohende-sperrung-der-gorli-brucken-berliner-bezirk-ladt-senat-und-bahn-zum-krisengesprach-15672411.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25973.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26071.pdf
 #: by: https://www.tagesspiegel.de/berlin/gesprache-laufen-konstruktiv-senat-bahn-und-bezirk-planen-erhalt-der-gorlitzer-brucken-in-berlin-15701425.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1680891.php (evtl. werden die Abschnitte zwischen den Brücken erstmal bleiben?)
@@ -10021,6 +10024,7 @@ Dorotheenstr. (Mitte): Umbenennung zu Yad-Vashem-Straße am 20.1.2027	?::projecte
 # 
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13329 (bis Herbst 2026)
 #: priority: #D
+#: last_checked: 2026-03-05 (orthofotos)
 #: next_check: 2026-11-15 (BVV-Drucksache)
 Elsflether Str.: Zebrastreifen soll entstehen	? -4040,13593 -4011,13656 -3992,13593
 # 
@@ -10422,7 +10426,7 @@ Bebauungsplan 9-15a: hier werden Straßen entstehen	?::projected 18035,4631 17814
 #: by: https://www.deutsches-architekturforum.de/thread/15664-neubau-basketball-arena-johannisthal-vision/?postID=795229#post795229
 #: by: https://www.entwicklungsstadt.de/adlershof-alba-plaene-noch-groesser-vereinscampus-und-arena-fuer-20-000-fans-geplant/
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-einer-basketballhalle.1540/#post-27126
-#: last_checked: 2025-11-05 vvv
+#: last_checked: 2026-03-05 (orthofotos) vvv
 #: check_frequency: 360d vvv
 Hubert-Latham-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18602,4220 18734,4077 19000,3798
 Henry-Farman-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18734,4077 18670,4013
@@ -10450,7 +10454,7 @@ Charles-Boutard-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?:
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Jt.8)
 #: osm_watch: way id="118132050" version="24"
-#: last_checked: 2026-01-27 (mapillary)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 180d
 Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19267,3984 19667,3578
 # REMOVED (eingetragen) --- Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19667,3578 19746,3501
@@ -10649,7 +10653,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: XXX außerdem verschwindet wohl der Siemens-Sportplatz, aber den habe ich sowieso nicht eingezeichnet
 #: osm_watch: node id="5637923915" version="3"
 #: osm_watch: way id="824123320" version="2"
-#: last_checked: 2025-09-24
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 360d
 Goebelstr.: wird hier ein öffentlicher für Radfahrer benutzbarer Weg entstehen, mit Verbindung zum Rohrdamm?	?::projected 994,14721 778,14713
 # 
@@ -11364,7 +11368,7 @@ Ernst-Busch-Platz (Potsdam): genaue Lage? ausgeschildert?	? -7227,-4443 -7179,-4
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/das-bezirksamt-lehnt-die-pilgramer-strasse-als-temporaeren-schulstandort-ab_a392509 (Bebauungsplan ruht)
 #: XXX siehe auch Kaaden-Ring
 #: osm_watch: way id="211737581" version="4"
-#: last_checked: 2025-05-07
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 720d
 Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projected 25165,10776 25164,10709 25402,10709 25402,10779 25165,10776
 # 
@@ -11587,7 +11591,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: osm_watch: way id="154505652" version="17"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
 #: XXX widersprüchliche Angaben zum Wechsel von Ost- auf Westseite: Höhe Irmastr. (BW) oder Höhe Lauchhammerstr. (SEN)
-#: last_checked: 2026-03-11
+#: last_checked: 2026-06-10
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2025-06-01
 TVO: vorgeschlagene Streckenführung	?::projected 21002,5755 20931,5969 20754,6273 20686,6558 20696,6761 20752,7017 20855,7206 20856,7363 20676,7717 20519,8844 20507,9210 20414,9552 20223,9926 20156,10101 20111,10170 19983,10221 19621,10948 19543,11336 19495,11507 19745,11576 19848,11730 19924,11890
@@ -11907,6 +11911,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.entwicklungsstadt.de/spreebalkon-am-paula-thiede-ufer-uferweg-in-mitte-fast-fertig/
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1680795.php
 #: by: https://www.entwicklungsstadt.de/erster-abschnitt-des-spreeuferwegs-in-der-noerdlichen-luisenstadt-fertiggestellt/
+#: by: https://www.entwicklungsstadt.de/vom-sorgenkind-zum-blickfang-an-der-spree-bauprojekt-elements-zeigt-seine-architektur/
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: osm_watch: way id="124182482" version="10"
 #: last_checked: 2026-06-04
@@ -12509,7 +12514,7 @@ Am Sandhaus: werden hier neue Straßen entstehen?	? 14889,25937 15022,25846 15107
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_07_0405_0468_online.pdf
 #: by: https://be.beteiligung.diplanung.de/verfahren/8-102/public/detail
 #: by: https://be.beteiligung.diplanung.de/file/8-102/ac36f138-d50f-44d2-ba72-8265b94d85da
-#: last_checked: 2026-02-16 (B-Plan)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 360d
 Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbindung geben?	? 16512,920 16672,556
 # 
@@ -13147,7 +13152,7 @@ Siemensstadt Square: vermutlich entstehen hier auch einige Straßen und Plätze	?:
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/unterlagen/karten-und-plaene/xiv-274abba_plakat_blatt2.pdf?ts=1694587541
 #: by: https://www.berliner-woche.de/rudow/c-bauen/es-soll-gebaut-werden_a392930
 #: XXX Name der Straße evtl. Blütenstaubweg (siehe zweites Plakat)?
-#: last_checked: 2025-10-06 (mapillary)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 720d
 Bebauungsplan XIV-274abba (Waßmannsdorfer Chaussee 163/175): Planung eines Einfamilienhausgebietes mit privater Straße	?::projected 16381,-574 16439,-761
 # 
@@ -13240,6 +13245,7 @@ Bebauungsplan 3-42 (Brunnengalerie Buch - Nord): drei neue Geh/Radwege in O-W-Ri
 #: check_frequency: 720d
 Bebauungsplan 3-43 (Brunnengalerie Buch - Süd): ein neuer Geh/Radweg in Fortsetzung der Bruno-Apitz-Str. (O-W-Strang) soll entstehen, evtl. weitere Wege	? 16427,24906 16346,24719 16294,24732 16107,24451 16201,24387 16500,24856 16427,24906
 # 
+#: next_check_id: S21-BA2
 #: by: https://www.eba.bund.de/SharedDocs/Anhoerungsverfahren/DE/Berlin/2024/0409_Anoerung_S21_Nordringanbindung_-_Potsdamer_Platz_2_BA.html (Planfeststellungsverfahren)
 #: by: https://www.berlin-s21.de/home.html
 #: by: https://www.berlin-s21.de/BA-2.html
@@ -13355,7 +13361,7 @@ Carola-Buhlmann-Str. (Neu Fahrland): neue Planstraße	? -13823,3324 -13602,3350
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=2e58121f-7ab5-4c58-a8ff-dbc76c9f2cf5 (Planfeststellungsverfahren)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-60-millionen-euro-baustelle-freie-fahrt-fur-die-schiffe--bis-zur-nachsten-bauetappe-15260029.html
 #: XXX außerdem wird es eine neue Straßenverbindung entlang des Ufers des Südhafens geben
-#: last_checked: 2026-03-03 (Ende PFV)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 1000d
 Südhafen Spandau: nördlicher Teil wird verfüllt	?::projected -2903,12975 -2980,13038 -2966,12960 -2930,12919 -2903,12975
 # 
@@ -13364,7 +13370,7 @@ Südhafen Spandau: nördlicher Teil wird verfüllt	?::projected -2903,12975 -2980,1
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-bullengraben-entsteht-hier-der-neue-grunzug-an-spandaus-bekannter-tankstelle-15261287.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_09_0521_0564_online.pdf (Veröffentlichung eines Bebauungsplanentwurfs)
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13259 (Anfrage)
-#: last_checked: 2026-03-02 (B-Plan)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 720d
 Grünzug Bullengraben: wird die Grünanlage inklusive Weg bis zur Klosterstr. verlängert?	? -4023,13493 -3864,13529 -3789,13519
 # 
@@ -14324,7 +14330,7 @@ Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9847,6891
 # REMOVED (sehr schlechte Waldwege --- grober Schotter, sandig, Schlamm, Gras --- lohnt nicht) --- Waldweg zum Campingplatz: Qualität der Straße?	? 28925,-1143 28565,-1339 28248,-1473 28162,-1294 28033,-1259 27845,-1324 27758,-1358
 # 
-#: last_checked: 2026-02-28 (mapillary) vvv
+#: last_checked: 2026-03-05 (orthofotos) vvv
 #: check_frequency: 180d vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3036&mt=0&zoom=14
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_11_0713_0768_online.pdf (Grundstücksnummerierungen)
