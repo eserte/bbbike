@@ -45291,7 +45291,8 @@ EOF
 #: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
 #: source_id: LMS-BR:408563/72 viz2021:13.338888,52.589354,18.05.2026,07:00 (bis 12.06.2026) (inaktiv)
-#: source_id: bvg2024:120#HIM_FREETEXT_337463
+#: source_id[inactive]: bvg2024:120#HIM_FREETEXT_337463
+#: source_id: bvg2024:120#HIM_FREETEXT_343106
 #: also_indoor: traffic (G,ex-H,ex-W,no-T)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
 #: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
@@ -45399,7 +45400,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-12 vvv
+#: last_checked: 2026-06-15 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -46402,16 +46403,21 @@ EOF
 	q3::inwork 14949,11474 14849,11539
 EOF
      },
-     { from  => 1725141600, # 2024-09-01 00:00
-       until => 1726092000, # 2024-09-12 00:00
-       text  => 'Regierungsviertel: Vorbereitungen für das Bürgerfest zum 75-jährigen Bestehen des Deutschen Bundestages, Straßensperrungen, Radfahrer sind auch betroffen, vom 2.9.2024 bis 11.9.2024',
+     { from  => $isodate2epoch->("2026-06-15 00:00:00"), # 1725141600, # 2024-09-01 00:00
+       until => $isodate2epoch->("2026-06-26 14:00:00"), # 1726092000, # 2024-09-12 00:00
+#      text  => 'Regierungsviertel: Vorbereitungen für das Bürgerfest zum 75-jährigen Bestehen des Deutschen Bundestages, Straßensperrungen, Radfahrer sind auch betroffen, vom 2.9.2024 bis 11.9.2024',
+       text  => 'Regierungsviertel: Veranstaltung, Straßensperrungen, evtl. ist auch der Radverkehr betroffen, vom 15.6.2026 bis 26.6.2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20240901 ("schrittweise", Bürgerfest findet am 06.+07.09.2024 statt)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831929069308670071
-	2::temp 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8540,12420
-	2::temp 8433,12753 8309,12758 8306,12609 8207,12606
-	2::temp 8766,12541 8667,12555 8596,12576
+#: source_id: LMS-BR:411973/72 viz2021:13.37353,52.52075,15.06.2026,08:00 (neue Veranstaltung, bis 26.06.2026)
+#: source_id: LMS-BR:411974/72 viz2021:13.37203,52.51939,15.06.2026,08:00 (bis 26.06.2026)
+Otto-von-Bismarck-Allee	2::temp 8433,12753 8309,12758
+Konrad-Adenauer-Str. Höhe Paul-Löbe-Haus	2::temp 8309,12758 8306,12609
+Paul-Löbe-Allee	2::temp 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593
+vor dem Reichstag	2::temp 8554,12593 8540,12420
+Reichstagufer	2::temp 8766,12541 8667,12555 8596,12576
 Uferweg am Paul-Löbe-Haus	2::temp 8473,12753 8495,12651 8596,12576
 EOF
      },
@@ -47244,7 +47250,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1781545886, # undef, # XXX
 #      text  => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2026',
        text  => 'Bausdorfstr.: Hochbauarbeiten, Richtung Westen gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Mitte Juni 2026',
        type  => 'handicap',
@@ -47252,17 +47258,16 @@ EOF
 #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-wohn-geschftshauses-berlin-deutschland-652549.html
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12009 (Anfrage)
 #: by: https://www.entwicklungsstadt.de/kaulsdorfer-spitze-neubauprojekt/ (Kaulsdorfer Spitze)
-#: source_id: LMS-BR:392283/72 viz2021:13.58978,52.513229, (bis 27.02.2026) (bis 31.03.2026) (bis 30.04.2026) (bis 31.05.2026) (bis 14.06.2026)
+#: source_id: LMS-BR:392283/72 viz2021:13.58978,52.513229, (bis 27.02.2026) (bis 31.03.2026) (bis 30.04.2026) (bis 31.05.2026) (bis 14.06.2026) (inaktiv)
 #: note: Länge der Engstelle etwa 80m
 #: note: außerdem ist der Radweg auf der Heinrich-Grüber-Str. wahrscheinlich gesperrt
 #: note: Halteverbotsschilder bis 31.12.2025
 #: osm_watch: way id="1309204624" version="2"
 #: also_indoor: traffic (ex-T,G,ex-W)
-#: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2026-06-14 (traffic)
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet und die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2026-06-14 (traffic)
 # REMOVED --- #: check_frequency: 90d (traffic check)
 # REMOVED --- #: next_check: 2025-12-31 (Halteverbotsschilder)
-#: next_check: 2026-06-14 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-06-14 (VIZ-Verkehrsmeldung)
 	q3::inwork; 23251,12146 23017,12177
 EOF
      },
@@ -47843,7 +47848,7 @@ EOF
        text  => 'Strausberg, Garzauer Str., Ersatzneubau der Eisenbahnüberführung, Sperrung, evtl. sind auch Radfahrer betroffen, vom 17.03.2025 bis 15.06.2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 256401910 (bis 28.11.2025) (Gehwegsperrung bis 25.07.2025) (bis 28.2.2026) (bis 30.4.2026) (inaktiv) (bis 15.06.2026)
+#: source_id: 256401910 (bis 28.11.2025) (Gehwegsperrung bis 25.07.2025) (bis 28.2.2026) (bis 30.4.2026) (inaktiv) (bis 15.06.2026) (inaktiv)
 	2::inwork 41356,16225 41672,16084
 EOF
      },
@@ -49648,7 +49653,7 @@ EOF
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: by: https://www.entwicklungsstadt.de/deutliche-fortschritte-auf-dem-lxk-campus-ein-blick-auf-die-baustelle/
 #: also_indoor: traffic (none)
-#: last_checked: 2026-05-30
+#: last_checked: 2026-06-15 (daf)
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -50447,7 +50452,7 @@ EOF
      { from  => 1754431200, # 2025-08-06 00:00
        until => undef, # 1767222000, # 2026-01-01 00:00
 #      text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Juni 2026: Diagonalweg ist offen)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Mitte Juni 2026: Diagonalweg ist offen)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
@@ -50455,7 +50460,7 @@ EOF
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-06-01
+#: last_checked: 2026-06-15
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50560,7 +50565,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-13 vvv
+#: last_checked: 2026-06-15 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51322,7 +51327,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-06-04
+#: last_checked: 2026-06-15
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -53420,7 +53425,7 @@ EOF
        text  => 'Müggelheimer Damm: der Geh- und Radweg kann in Höhe Haltestelle Krankenhaus Köpenick/Südseite gesperrt sein, voraussichtlich bis 15.06.2026',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: bvg2024:63#d7b857e0-54a9-468f-bfaa-68b6009dbb47 (bis 2026-06-15)
+#: source_id[inactive]: bvg2024:63#d7b857e0-54a9-468f-bfaa-68b6009dbb47 (bis 2026-06-15)
 #: note: offizielle Umleitung via Pablo-Neruda-Str., am 2026-05-31 Sun 12:18 konnte man an der Haltestelle mit dem Rad passieren
 	2::inwork 23368,3894 22965,4124
 EOF
@@ -53487,12 +53492,13 @@ EOF
      },
      { from  => $isodate2epoch->("2026-05-26 00:00:00"),
        until => 1781647200, # 2026-06-17 00:00
-       text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, 26.05.2026 bis 16.06.2026',
+       text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, 26.05.2026 bis 16.06.2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260504 (26.05. bis 16.06.2026)
+#: last_checked: 2026-06-15
 #: next_check: 2026-06-16
-Görlitzer Park: Bauarbeiten vor dem Pamukkale	2::inwork 12384,10368 12457,10309 12502,10244
+Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309 12502,10244
 EOF
      },
      { from  => 1780459200, # 2026-06-03 06:00
@@ -53673,13 +53679,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Teterower Ring/Tollensestr.: Wasserrohrbruch, Sperrung der Kreuzung, Ende der Bauarbeiten unbekannt',
+#      text  => 'Teterower Ring/Tollensestr.: Wasserrohrbruch, Sperrung der Kreuzung, Ende der Bauarbeiten unbekannt',
+       text  => 'Teterower Ring/Tollensestr.: Wasserrohrbruch, Sperrung der Kreuzung, Ende der Bauarbeiten voraussichtlich im Juli 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
-#: last_checked: 2026-06-12 (mz-hd) vvv
+#: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
+#: last_checked: 2026-06-15 (mz-hd) vvv
+#: check_frequency: 21d vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
 	q4::inwork 22717,13278 22563,13340 22594,13408
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -53709,6 +53719,37 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => 1781409600, # 2026-06-14 06:00
+       until => 1782496800, # 2026-06-26 20:00
+       text  => 'Holtzendorffstr.: Bauarbeiten zwischen Rönnestr. und Gervinusstr., evtl. ist auch der Radverkehr betroffen, vom 15.06.2026 06:00 bis 26.06.2026 20:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:411948/72 viz2021:13.2955,52.50343,15.06.2026,06:00 (bis 26.06.2026)
+	q4::inwork 3093,10594 3041,10732
+EOF
+     },
+     { from  => 1781413200, # 2026-06-14 07:00
+       until => 1785510000, # 2026-07-31 17:00
+       text  => 'Laurinsteig/Münchener Str.: Bauarbeiten mit Sperrung im Kreuzungsbereich, vom 15.06.2026 07:00 bis 31.07.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:411963/72 viz2021:13.27222,52.63585,15.06.2026,07:00 (bis 31.07.2026)
+	q4::inwork 1278,25401 1153,25425 1209,25542
+	q4::inwork 1109,25301 1153,25425 1081,25483
+EOF
+     },
+     { from  => 1781474400, # 2026-06-15 00:00
+       until => $isodate2epoch->("2026-06-26 23:59:59"),
+       text  => 'Mirbachplatz: Sperrung der Fahrbahn Richtung Osten, bis voraussichtlich Ende Juni 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: bvg2024:158#HIM_FREETEXT_342782
+#: source_id: bvg2024:255#HIM_FREETEXT_342783
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mod7lsjdl22b ("bis Ende nächster Woche", also 26.6.2026?)
+#: also_indoor: traffic (T,no-G)
+Mirbachplatz	q4::inwork 13331,16424 13348,16387
 EOF
      },
     );
