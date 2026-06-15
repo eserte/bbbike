@@ -10,8 +10,18 @@ chrome.storage.local.get({ enabled: true }, function(items) {
 // Listen for changes in storage
 chrome.storage.onChanged.addListener(function(changes, area) {
   if (area === 'local' && changes.enabled) {
+    let oldEnabled = enabled;
     enabled = changes.enabled.newValue;
     updateIcon();
+    if (enabled && !oldEnabled) {
+      chrome.tabs.query({active: true, lastFocusedWindow: true}, function(tabs) {
+        if (tabs && tabs[0] && tabs[0].url) {
+          writeURLToFile(tabs[0].url);
+        }
+      });
+    } else if (!enabled) {
+      lastURL = null;
+    }
   }
 });
 
