@@ -4,6 +4,7 @@ branches:
     - /github-actions/
     - /gitlab/
     - /doozer/
+    - /archived\//
 skip_tags: true
 shallow_clone: true
 

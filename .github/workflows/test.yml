@@ -7,7 +7,10 @@ on:
       - '*appveyor*'
       - '*gitlab*'
       - '*doozer*'
+      - 'archived/**'
   pull_request:
+    branches-ignore:
+      - 'archived/**'
   workflow_dispatch:
 
 jobs:
