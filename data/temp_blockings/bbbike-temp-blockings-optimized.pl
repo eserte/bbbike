@@ -5497,7 +5497,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch[closed]: note 5093384 7
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-06-01
+#: last_checked: 2026-06-16
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5523,7 +5523,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: source_id: LMS-BR:408948/72 viz2021:13.44444,52.48166,21.05.2026,09:00 (bis 28.08.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-06-13 vvv
+#: last_checked: 2026-06-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
@@ -6507,9 +6507,9 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: note: siehe auch temporär aufgehobene Einbahnstraßenregelung in der westlichen Mellenseestr.
 #: also_indoor: traffic (T,no-G,H)
 #: osm_watch: note 5085082 5
-#: osm_watch: way id="31525839" version="17"
+#: osm_watch: way id="31525839" version="18"
 #: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
-#: last_checked: 2026-06-10 vvv
+#: last_checked: 2026-06-14 (osm) vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -6767,8 +6767,8 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung; nun wieder Einbahnstraßenregelung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-05-18
-#: check_frequency: 90d
+#: last_checked: 2026-06-16
+#: check_frequency: 30d
 #  REMOVED --- #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 12407,8177 12545,8209
 ',
@@ -6847,7 +6847,30 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024) (bis 30.11.2024) (inaktiv)
+#: source_id: viz2021:13.35076,52.53934,18.09.2024,12:14 (bis 07.10.2024) (inaktiv)
+#: source_id: LMS-BR:412090/72 viz2021:13.34684,52.53889,16.06.2026,07:00 (bis 26.06.2026)
+#: osm_watch: way id="4543441" version="47"
+#: also_indoor: traffic (ex-H,ex-G,T,A,ex-W)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3moezhw7sjk2u
+	q4::inwork 6513,14725 6334,14756
+# REMOVED --- #: note: Bauarbeiten beginnen etwa 120m östlich der Föhrer Str., keine Bordsteinabsenkung, alter abgesperrter Radweg existiert als mögliche Umfahrung; mittlerweile (Juni 2024) Bauarbeiten ab Föhrer Str.; 2024-11-03: keine Baugruben mehr, Fahrbahn ist wieder asphaltiert -> baldige Freigabe absehbar
+# REMOVED --- #: priority: #A vvv --- #: add_fragezeichen: Sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-24 (traffic) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2024-11-30 vvv
+# REMOVED ---	q2::inwork; 6334,14756 6513,14725
+# REMOVED ---	q3::inwork; 6513,14725 6334,14756
+# REMOVED (hier nicht mehr) ---		q2::inwork; 6513,14725 6596,14740
+# REMOVED (hier nicht mehr) ---	q2::inwork; 6596,14740 6709,14782
+# REMOVED (nicht mehr) --- #: note: Richtung Westen mit ~100m Umweg an der Buchstr., hier nur Gehweg ---	q3::inwork; 6709,14782 6596,14740
+# REMOVED (hier nicht mehr) ---	q3::inwork; 6596,14740 6513,14725
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
+',
+         'from' => 1781560800,
+         'id' => 3932,
+         'text' => 'Nordufer: zwischen Buchstr. und Föhrer Str. Bauarbeiten mit Sperrung, evtl. ist auch der Radverkehr betroffen, vom 16.06.2026 bis 26.06.2026',
+         'type' => 'handicap',
+         'until' => 1782482400
+       },
        undef,
        undef,
        undef,
@@ -8206,7 +8229,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: source_id: bvg2024:162#HIM_FREETEXT_323764 (Umleitung, vermutlich wegen bevorstehenden Bauarbeiten an der Kreuzung Radickestr./Nipkowstr.)
 #: source_id: LMS-BR:401266/72 viz2021:13.550062,52.436321,09.03.2026,07:00 (Radickestr./Nipkowstr., bis 27.03.2026) (bis 30.06.2026)
 #: source_id: LMS-BR:408693/72 viz2021:13.56935,52.44468,19.05.2026,07:00 (Oberspreestr./Flemmingstr., bis 04.06.2026) (inaktiv)
-#: source_id: LMS-BR:391949/72 viz2021:13.56818,52.44491, (Oberspreestr./Flemmingstr., bis 16.06.2026)
+#: source_id: LMS-BR:391949/72 viz2021:13.56818,52.44491, (Oberspreestr./Flemmingstr., bis 16.06.2026) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lra4kfa2p22n
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiggu54ak5m6rjztswsmxwnuqj7yhjj45ikgmcxyjrslwgi7fdolki@jpeg (keine Ausnahme für Radfahrer, Anbindung Thomas-Müntzer-Str. betroffen)
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (bei der Baustelle Radickestr./Nipkowstr. wird nur der Kfz-Verkehr erwähnt, bis Ende März 2026)
@@ -8455,9 +8478,9 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 #: source_id[inactive]: bvg2024:110#HIM_FREETEXT_284868
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
-#: also_indoor: traffic (T,G,re-H)
+#: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-06-03 (traffic) vvv
+#: last_checked: 2026-06-16 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
@@ -8490,7 +8513,7 @@ Caspar-Theiß-Str.: Sperrung der Fahrbahn an der Paulsborner Str., Gehweg für Rad
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:371046/72 viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: source_id: LMS-BR:371047/72 viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: last_checked: 2026-06-13 vvv
+#: last_checked: 2026-06-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -9354,7 +9377,7 @@ Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: osm_watch: note 5206966 4
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-06-03 (traffic) vvv
+#: last_checked: 2026-06-16 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 # REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3027,10560 3123,10504
@@ -10072,7 +10095,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: also_indoor: traffic (G,T,no-H,W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-06-03 (traffic)
+#: last_checked: 2026-06-16 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 22130,1961 22004,2149
 ',
@@ -10267,12 +10290,12 @@ Heinersdorf - Abzweig Tempelberg: 1. BA	2::inwork 65225,6403 64604,5980 64086,54
 #: by: https://fahrinfo.vbb.de/him-uploads/1779179333882_Kartenausschnitt_Tauentzienstr_.jpg (Umleitung des Busverkehrs)
 #: source_id: LMS-BR:407953/72 viz2021:13.339174,52.503283,12.05.2026,10:00 (bis 09.06.2026) (bis 31.07.2026)
 #: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_336720
-#: source_id: bvg2024:m19#HIM_FREETEXT_336928
-#: also_indoor: traffic (T,G[mittlerweile])
+#: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_336928
+#: also_indoor: traffic (T,G[mittlerweile],H,W)
 #: traffic_note: Durch den Umleitungsverkehr Stauungen im umliegenden Straßennetz. Gesehen 2026-05-12 Tue 17:39 Nürnberger Str. Richtung SW 6\'
 #: note: etwa 50m der Fahrbahn ist gesperrt, kann z.B. auf der Mittelpromenade umfahren/umgangen werden, außerdem muss die Barriere an der Nürnberger Str. umfahren werden
 #: note: eigentlich q4+ oder q3-
-#: last_checked: 2026-06-08 (traffic, VIZ-Verkehrsmeldung)
+#: last_checked: 2026-06-16 (traffic)
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	q4::inwork; 6025,10746 5907,10821
 ',
@@ -10705,7 +10728,9 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
        },
        {
          'data' => '#: source_id: bvg2024:158#HIM_FREETEXT_342782
-#: source_id: bvg2024:255#HIM_FREETEXT_342783
+#: source_id: bvg2024:158#HIM_FREETEXT_343369
+#: source_id[inactive]: bvg2024:255#HIM_FREETEXT_342783
+#: source_id: bvg2024:255#HIM_FREETEXT_343370
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mod7lsjdl22b ("bis Ende nächster Woche", also 26.6.2026?)
 #: also_indoor: traffic (T,no-G)
 Mirbachplatz	q4::inwork 13331,16424 13348,16387

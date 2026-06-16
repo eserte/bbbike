@@ -223,7 +223,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2026-06-03
+#: last_checked: 2026-06-16
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -235,7 +235,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-06-03 vvv
+#: last_checked: 2026-06-16 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -525,7 +525,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-06-12
+#: last_checked: 2026-06-16
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -1025,7 +1025,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2026-05-18 vvv
+#: last_checked: 2026-06-16 vvv
 #: check_frequency: 120d vvv
 Rollbergstr.: Kopfsteinpflaster	Q2- 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Kopfsteinpflaster	Q2 12407,8177 12545,8209 12714,8249
@@ -2630,7 +2630,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: by: https://www.luisenstadt-mitte.de/drupal/web/projekte/rungestrasse-strasse-am-koellnischen-park-0 (alternative URL)
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2026-04-02 (mapillary)
+#: last_checked: 2026-06-16
 #: check_frequency: 120d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -30386,6 +30386,10 @@ Plantage: Asphalt	Q0 -3247,13864 -3320,13802 -3308,13778 -3229,13832
 Sotzmannstr.: guter Asphalt	Q0 -4721,12891 -4680,12998 -4671,13025
 (Sotzmannstr. - Seeburger Str.): Gehwegplatten	Q0- -4671,13025 -4663,13030 -4634,13173
 #: confirmed_by: srt
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1682407.php (Egelpfuhlgraben Süd: Sanierung der Wegeverbindung geplant)
+#: XXX Wann wird saniert? Wird es Sperrungen geben? Wie wird die Qualität danach sein?
+#: last_checked: 2026-06-16 (BA-Pressemitteilung)
+#: check_frequency: 180d
 (Sotzmannstr. - Päwesiner Weg): Kleinpflastersteine und Gehwegplatten	Q1- -4680,12998 -4737,13132
 #: note: überwiegend ein Sandweg, Löcher auch schon mit losen Steinen verfüllt, vor einigen Parzellen asphaltiert oder mit Verbundsteinen gepflastert
 Rebenweg (Staaken): Sandweg, teilweise lose	Q2- -6266,12017 -6483,11710
@@ -32140,6 +32144,8 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: by: https://entwicklungsstadt.de/neubau-in-alt-hohenschoenhausen-450-wohnungen-an-der-detlevstrasse-geplant/ (Baustart (für das Hochbauvorhaben): IV. Quartal 2026, Fertigstellung Ende 2028)
 #: by: https://www.howoge.de/immobiliensuche/neubauprojekte/detlevstrasse.html (4. Quartal 2026 - 4. Quartal 2028)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_25_1561_1608_online.pdf (Veröffentlichung eines Bebauungsplanentwurfs)
+#: by: https://be.beteiligung.diplanung.de/verfahren/11-157-detlevstrasse/public/detail
+#: by: https://be.beteiligung.diplanung.de/file/11-157-detlevstrasse/b2910af3-b463-4139-94c1-af192bf48209 (verkehrsberuhigter Bereich in der Detlevstr. zwischen Oswaldstr. und Bennostr.)
 #: last_checked: 2026-03-04 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2026-12-31 (Baustart (entwicklungsstadt, howoge)) vvv
