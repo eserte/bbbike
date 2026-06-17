@@ -5721,11 +5721,12 @@ Storkower Straße (Königs Wusterhausen): Markierungsarbeiten, Sperrung, evtl. ist
 #: source_id: LMS-BR:408050/72 viz2021:13.22872,52.50513,13.05.2026,06:00 (bis 19.06.2026)
 Kranzallee zwischen Am Postfenn und Kiplingweg	q4::inwork -1501,10833 -1318,10854
 #: source_id: LMS-BR:410057/72 viz2021:13.235056,52.505526,29.05.2026,00:00 (bis 02.07.2026)
+#: source_id: LMS-BR:412196/72 viz2021:13.234732,52.505506,17.06.2026,06:00 (Fahrbahnverengung, bis 31.07.2026)
 Kranzallee zwischen Ragniter Allee und Kiplingweg	q4::inwork -1167,10873 -1028,10889
 ',
          'from' => 1778558400,
          'id' => 3601,
-         'text' => 'Kranzallee: Baustellen zwischen Am Postfenn und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Juli 2026',
+         'text' => 'Kranzallee: Baustellen zwischen Am Postfenn und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, geplant bis Ende Juli 2026',
          'type' => 'handicap',
          'until' => 1783029599
        },
@@ -5758,6 +5759,7 @@ Kranzallee zwischen Ragniter Allee und Kiplingweg	q4::inwork -1167,10873 -1028,1
 #: by: https://entwicklungsstadt.de/kulturbauten-in-der-krise-warum-berlins-grossprojekte-aus-dem-takt-geraten/
 #: by: https://entwicklungsstadt.de/festival-auf-der-baustelle-das-bauhaus-archiv-oeffnet-seine-tueren/
 #: by: https://www.entwicklungsstadt.de/direktorin-bestaetigt-weiteren-zeitverzug-neues-bauhaus-archiv-soll-erst-2027-fertig-werden/
+#: by: https://www.entwicklungsstadt.de/deutscher-ingenieurbaupreis-2026-bauhaus-archiv-tower-in-berlin-nominiert/
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -7358,14 +7360,14 @@ Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025) (inaktiv)
 #: source_id: adac:969740805 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: adac:794067672 (bis 12.12.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026)
+#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026) (bis 31.07.2026)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,T,W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
 #: last_checked: 2026-05-30 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-06-19 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="5363433" version="28"
 #: osm_watch[closed]: note 4442541 4
 #: osm_watch: note 4825689 4
@@ -7388,7 +7390,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 ',
          'from' => 1750024800,
          'id' => 4110,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., voraussichtlich bis Mitte Juni 2026',
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., geplant bis Ende Juli 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7476,6 +7478,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 # REMOVED (nun 404) --- #: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
 #: by: https://www.finowkanal.info/service/aktuelles/
 #: by: https://www.finowkanal.info/aktuelles/aktueller-stand-der-schleusensanierung/ (Arbeiten auf der Zielgeraden)
+#: by: https://www.finowkanal.info/aktuelles/baustellenupdate-ruhlsdorf-bis-heegermuehle/
 # REMOVED --- #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
@@ -7486,7 +7489,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 #: osm_watch: way id="105827213" version="13"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 5
-#: last_checked: 2026-06-05 (finowkanal.info)
+#: last_checked: 2026-06-17 (finowkanal.info)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (https://www.openstreetmap.org/changeset/182437146: laut Bauleiter)
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -7652,27 +7655,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
          'type' => 'gesperrt',
          'until' => 1790805599
        },
-       {
-         'data' => '# REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
-#: source_id: LMS-BR:395330/72 viz2021:13.32193,52.50637, (bis 31.01.2026) (bis 27.02.2026) (inaktiv)
-#: source_id: LMS-BR:400310/72 viz2021:13.32117,52.50746, (bis 27.03.2026) (bis 17.04.2026) (inaktiv)
-# REMOVED --- #: note: etwa 50m der Fahrbahn gesperrt
-# REMOVED --- #: last_checked: 2026-03-28
-# REMOVED --- #: next_check: 2026-04-17 (VIZ-Verkehrsmeldung: ggfs. diesen Abschnitt wieder auskommentieren und Text anpassen)
-# REMOVED --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4828,11094 4775,11203
-#: source_id: LMS-BR:392050/72 viz2021:13.323692,52.504398,03.12.2025,06:00 (Sperrung; bis 17.06.2026) (bis 31.12.2026)
-#: source_id: LMS-BR:366524/72 viz2021:13.32531,52.50287, (Gegenverkehrsregelung; bis 29.03.2026) (bis 17.04.2026) (inaktiv)
-#: note: Einbahnstraßenregelung, offen Richtung Savignyplatz; während der Arbeitszeiten kann es aber zu weiteren Einschränkungen kommen (gesehen 2026-02-25 Wed 13:23)
-#: last_checked: 2026-05-27
-#: next_check: 2026-12-31
-Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 4930,10903 5040,10707
-',
-         'from' => 1764651600,
-         'id' => 4200,
-         'text' => 'Grolmanstr.: Bauarbeiten zwischen Savignyplatz und Uhlandstr., Einbahnstraßenregelung, voraussichtlich bis Ende 2026',
-         'type' => 'handicap',
-         'until' => 1781712000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7937,7 +7920,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
@@ -8049,7 +8032,8 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
 #: also_indoor: traffic (ex-T,ex-H,ex-A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder bis 30.04.2026, mittlerweile bis 31.07.2026
-#: last_checked: 2026-05-03
+#: note: 2026-06-17: Barrieren waren so weggeschoben, dass auch Fahrzeuge passieren können
+#: last_checked: 2026-06-17
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,11337
 # REMOVED (siehe Verkehrszeichenplan) --- #: XXX laut VIZ-Meldung schon ab Grabensprung gesperrt: stimmt das?
@@ -8246,9 +8230,10 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: by: https://www.aktives-adlershof.de/fileadmin/Interne_Dokumente/Projekte/Radickestra%C3%9Fe/20260415_Baunewsletter_Netzumstrukturierung_Treptow-K%C3%B6penick_14-1.pdf (Baustelle bleibt jedoch weiterhin eingerichtet)
 #: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen; 2026-04-18 Sat 12:32: Durchfahrt verboten, aber Bauzäune waren teilweise weggeschoben; Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
 #: also_indoor: traffic (no-T,G[nur Flemmingstr])
-#: last_checked: 2026-05-31 (weiterhin Sackgassenschild an der Langen Brücke sowie aus der Weite waren Absperrungen sichtbar) vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 30d vvv
-Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
+Gutenbergstr.: Fahrbahn wegen Baustelle verengt	q2::inwork 21903,4848 21848,4882
+Gutenbergstr. - Mentzelpark: Umwege	q4::inwork 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -8660,11 +8645,12 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 # REMOVED (nun 404) --- #: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
 #: by: https://www.finowkanal.info/service/aktuelles/
 #: by: https://www.finowkanal.info/aktuelles/aktueller-stand-der-schleusensanierung/ (Arbeiten auf der Zielgeraden)
+#: by: https://www.finowkanal.info/aktuelles/baustellenupdate-ruhlsdorf-bis-heegermuehle/
 #: osm_watch: way id="215065232" version="5"
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand März 2026); bei osm nur die Schleusenüberfahrt als gesperrt gekennzeichnet
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2026-06-05 (finowkanal.info)
+#: last_checked: 2026-06-17 (finowkanal.info)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 ',
          'from' => undef,
@@ -8763,9 +8749,9 @@ Brachvogelstr./Alexandrinenstr. - Carl-Herz-Ufer.: Fußgänger, Grünanlage	q4 1006
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben), 2025-12-06 Sat 11:20 nicht passierbar
 #: also_indoor: traffic (G[zu lang?],no-T,no-W,no-H)
 #: osm_watch: way id="1163982841" version="3"
-#: last_checked: 2026-06-08 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 90d
+#: last_checked: 2026-06-17
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: check_frequency: 90d
 #: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
@@ -8942,22 +8928,7 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiasgxyh4yi2yyv2ipifgm5ybdhxw3cbimwdzuqkhqo6rzca5axq3a@jpeg
-#: source_id: LMS-BR:381588/72 viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026) (bis 31.03.2026) (bis 19.06.2026)
-#: source_id: LMS-BR:386922/72 viz2021:13.31541,52.42855, (bis 31.01.2026) (bis 31.03.2026) (bis 19.06.2026)
-Schillerstr.	q3::inwork 4429,2396 4568,2424
-#: note: nicht komplett gesperrt
-Goethestr.	q3::inwork 4568,2424 4526,2648
-# REMOVED (stimmt nicht) --- Giesensdorfer Str.: Kreuzungsbereich gesperrt	q3::inwork 4366,2563 4429,2396 4454,2221
-',
-         'from' => 1756417862,
-         'id' => 4430,
-         'text' => 'Schillerstr. und Goethestr.: Bauarbeiten, Sperrungen, bis Mitte Juni 2026',
-         'type' => 'handicap',
-         'until' => 1781906399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8997,7 +8968,7 @@ Goethestr.	q3::inwork 4568,2424 4526,2648
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 8
+#: osm_watch: note 4801950 10
 #: osm_watch: way id="53168806" version="7"
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
@@ -9160,7 +9131,7 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Wege weiterhin gesperrt?
-#: last_checked: 2026-05-03
+#: last_checked: 2026-06-17
 	2::inwork 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 ',
          'from' => undef,
@@ -9416,7 +9387,7 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
          'data' => '#: next_check_id: KANZLERPARK-2024
 #: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
 #: osm_watch: way id="1126186878" version="6"
-#: osm_watch: note 5130610 3
+#: osm_watch: note 5130610 4
 #: osm_watch: note 5130626 1
 #: osm_watch: note 5096118 2
 #: add_fragezeichen: Gibt es die Engstelle weiterhin?
@@ -9802,7 +9773,7 @@ Forstallee: 2. BA zwischen Fasanenstr./Weichselstr. und Waldpromenade	q4::inwork
 #: osm_watch: note 5193492 4
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-06-08 vvv
+#: last_checked: 2026-06-17 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 # REMOVED (wird sehr wahrscheinlich verlängert) (tatsächlich weiterhin Baustelle) --- #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
@@ -10045,7 +10016,7 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
 #: osm_watch: way id="10856020" version="52"
 #: osm_watch: note 5250307 2
 #: priority: #A
-#: last_checked: 2026-06-10 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (BA TK, nbb netzgesellschaft) vvv
 Kastanienallee	2::inwork 18437,7752 19045,6959
@@ -10153,7 +10124,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        },
        undef,
        {
-         'data' => '#: source_id: LMS-BR:397387/72 viz2021:13.37299,52.42492,28.01.2026,11:00 (bis 29.05.2026) (bis 19.06.2026)
+         'data' => '#: source_id: LMS-BR:397387/72 viz2021:13.37299,52.42492,28.01.2026,11:00 (bis 29.05.2026) (bis 19.06.2026) (bis 01.07.2026)
 #: also_indoor: traffic (G,T)
 #: note: nur der Kreuzungsbereich ist betroffen, deshalb q3
 #: note: außerdem: Radspur Richtung Süden vor der Kreuzung gesperrt, Radverkehr teilt sich mit dem Kfz-Verkehr eine Fahrspur, Radfahrüberholverbot
@@ -10163,9 +10134,9 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
 ',
          'from' => 1769508000,
          'id' => 4595,
-         'text' => 'Belßstr. - Bahnstr.: Bauarbeiten, Sperrung im Kreuzungsbereich Marienfelder Allee, vom 28.01.2026 11:00 bis 19.06.2026',
+         'text' => 'Belßstr. - Bahnstr.: Bauarbeiten, Sperrung im Kreuzungsbereich Marienfelder Allee, vom 28.01.2026 11:00 bis 01.07.2026',
          'type' => 'handicap',
-         'until' => 1781906399
+         'until' => 1782943199
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-04-2026-l291-eberswalde_liepe_instandsetzung-bruecke-ueber-ragoeser-fliess
@@ -10213,14 +10184,16 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mlnvyvhpyc2t
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid5ji4tqjxbjwqsuewm2lykph6y4cl5jmkdtbqyrbzadla43h6km4
-#: source_id: LMS-BR:408038/72 viz2021:13.504775,52.510629, (bis 19.06.2026)
+#: source_id: LMS-BR:408038/72 viz2021:13.504775,52.510629, (bis 19.06.2026) (bis 26.06.2026)
+#: last_checked: 2026-06-17
+#: next_check: 2026-06-26 (VIZ-Verkehrsmeldung)
 	q4::inwork; 17251,11789 17169,11677
 ',
          'from' => 1778536800,
          'id' => 4605,
-         'text' => 'Rosenfelder Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis Mitte Juni 2026',
+         'text' => 'Rosenfelder Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis Ende Juni 2026',
          'type' => 'handicap',
-         'until' => 1781906399
+         'until' => undef
        },
        {
          'data' => '#: source_id: LMS-BR:408760/72 viz2021:13.36755,52.45578, (bis 14.11.2026)
@@ -10235,12 +10208,14 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        {
          'data' => '#: next_check_id: AUGUSTEVIKTORIAALLEE-2026
-#: also_indoor: traffic (G,no-T,no-H,no-A,no-W)
+#: also_indoor: traffic (G,no-T,no-H,no-A,W)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.82473.php (Knotenpunkt Auguste-Viktoria-Allee/Antonienstraße, also weter westlich, ist das die gleiche Baumaßnahme? 2. Quartal 2026 bis 4. Quartal 2026)
-#: last_checked: 2026-05-19 vvv
+#: last_checked: 2026-06-17 (traffic) vvv
+#: check_frequency: 21d (traffic) vvv
 General-Barby-Str.: Sperrung vor der Auguste-Viktoria-Allee, lange Umwege notwendig	q4::inwork 4461,18475 4414,18243
 Engelmannweg: Sperrung der Fahrbahn	q4::inwork 4531,18217 4492,18013
 Auguste-Viktoria-Allee: Einbahnstraßenregelung	q4::inwork; 4531,18217 4414,18243
+#: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -10318,7 +10293,7 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
-#: last_checked: 2026-06-08 vvv
+#: last_checked: 2026-06-17 vvv
 #: next_check: 2026-07-10 (2. BA?) vvv
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
@@ -10479,18 +10454,7 @@ Gotha-Allee	q4::inwork 765,12564 618,12563
          'type' => 'handicap',
          'until' => 1781881200
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260504 (26.05. bis 16.06.2026)
-#: last_checked: 2026-06-15
-#: next_check: 2026-06-16
-Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309 12502,10244
-',
-         'from' => 1779746400,
-         'id' => 4625,
-         'text' => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, 26.05.2026 bis 16.06.2026',
-         'type' => 'gesperrt',
-         'until' => 1781647200
-       },
+       undef,
        {
          'data' => '#: source_id: LS/222-W/26/072 (bis 01.07.2026)
 	2::inwork 7097,-527 6959,-743
@@ -10591,20 +10555,7 @@ Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LMS-BR:395248/72 viz2021:13.31388,52.50624,05.01.2026,07:00 (hier nur Kantstr., bis 31.12.2026)
-#: source_id: bvg2024:101#HIM_FREETEXT_341949
-#: also_indoor: traffic (G,T)
-#: note: Sperrung auf 50m Länge, aber auch Umwege auf der Kantstr. nötig
-#: last_checked: 2026-06-08 (mapillary)
-	q4::inwork 4270,10861 4289,11060
-',
-         'from' => undef,
-         'id' => 4634,
-         'text' => 'Leibnizstr.: Fahrbahn vor der Kantstr. gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1672272.php (01.06.2026-12.10.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/grundhafte-strassenbaumassnahmen-in-der-filandastrasse/
@@ -10727,7 +10678,7 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
          'until' => 1785510000
        },
        {
-         'data' => '#: source_id: bvg2024:158#HIM_FREETEXT_342782
+         'data' => '#: source_id[inactive]: bvg2024:158#HIM_FREETEXT_342782
 #: source_id: bvg2024:158#HIM_FREETEXT_343369
 #: source_id[inactive]: bvg2024:255#HIM_FREETEXT_342783
 #: source_id: bvg2024:255#HIM_FREETEXT_343370
@@ -10740,6 +10691,16 @@ Mirbachplatz	q4::inwork 13331,16424 13348,16387
          'text' => 'Mirbachplatz: Sperrung der Fahrbahn Richtung Osten, bis voraussichtlich Ende Juni 2026',
          'type' => 'handicap',
          'until' => 1782511199
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1682627.php
+	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
+',
+         'from' => 1781992800,
+         'id' => 4645,
+         'text' => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 31.7.2026',
+         'type' => 'handicap',
+         'until' => 1785535199
        }
      
 );

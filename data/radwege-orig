@@ -2509,7 +2509,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/hQGKffwY/90-Anlagen/04/B0234ZB1.pdf (1. Zwischenbericht)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-06-10 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3419,7 +3419,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-17
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3430,7 +3430,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-17
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4297,7 +4297,7 @@ Verbundsteinpflaster	RW1;RW1 25137,11297 25199,11531
 Verbundsteinpflaster	RW2; 25138,11215 25312,11186
 Betonplatten	RW2; 25312,11186 25138,11215
 Betonplatten	RW8;RW2 25312,11186 25632,11132
-Gehweg für Radfahrer frei	RW1; 23942,5338 23951,5333 24070,5272 24681,4943 24798,4895 24936,4838 25010,4807
+Gehweg für Radfahrer frei	RW1; 23942,5338 23951,5333 24189,5209 24681,4943 24798,4895 24936,4838 25010,4807
 Verbundsteinpflaster	RW2; 23402,5483 23403,5410 23403,5385 23404,5325
 Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
@@ -4780,7 +4780,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -8338,8 +8338,11 @@ asphaltiert	RW1;RW1 18930,3703 19162,3935
 	RW6;RW6 14411,12951 14480,12932 14536,12916 14588,12901 14682,12874
 	RW6;RW6 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 #: note: Radweg etwas abseits der Straße im Wald
-#: note: Zweirichtungsradweg
-asphaltiert, sehr breit (3m)	RW1; 25010,4807 24936,4838 24798,4895 24681,4943 24070,5272 23951,5333 23942,5338
+#: note: Zweirichtungsradweg, gemeinsamer Rad- und Gehweg
+asphaltiert, sehr breit (3m)	RW1; 25010,4807 24936,4838 24798,4895 24681,4943 24189,5209
+#: note: Radweg etwas abseits der Straße im Wald
+#: note: hier kein Zweirichtungsradweg
+asphaltiert, breit	RW1; 24189,5209 23951,5333 23942,5338
 	RW3;RW3 6118,14289 6052,14304 5685,14215 5474,14168 5321,14088 5306,14061
 	RW4;RW4 5306,14061 5279,14047 5220,14043
 	RW6;RW6 14993,10188 15044,10297

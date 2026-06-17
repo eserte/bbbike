@@ -390,11 +390,11 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1077_ds_2020_vi_eine-dauerhafte-sperrung-der-burgsdorfstrasse.pdf
 #: by: https://www.entwicklungsstadt.de/abriss-in-der-burgsdorfstrasse-1-ruine-in-wedding-fast-vollstaendig-verschwunden/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/geisterhaus-in-berlin-wedding-schrottimmobilie-legte-uber-acht-jahre-strasse-lahm--erst-jetzt-folgt-der-abriss-15407901.html
-#: osm_watch: way id="549316654" version="48"
+#: osm_watch: way id="549316654" version="49"
 #: osm_watch: note 4844974 4
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,re-H,T[permanent],no-W)
-#: last_checked: 2026-06-16 (traffic)
+#: last_checked: 2026-06-16 (osm, traffic)
 #: check_frequency: 30d
 # REMOVED (wird wohl länger dauern?) --- #: next_check: 2026-03-15 (MoPo)
 #: valid: 20171026-
@@ -870,7 +870,7 @@ Müllenhoffstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 11311,9576 11110,9661
 #: next_check_id: WESTUMFAHRUNGBAHNHOF-2023
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: way id="24695200" version="19"
-#: last_checked: 2026-03-14 (architektur-urbanistik)
+#: last_checked: 2026-06-17
 #: check_frequency: 120d
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
@@ -933,8 +933,8 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: note 3913793 11
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="4"
-#: last_checked: 2026-06-02
-#: check_frequency: 90d
+#: last_checked: 2026-06-17 (webcam)
+#: check_frequency: 60d
 #: next_check: 2027-03-15 (caimmo website: Anfang 2027)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
 # 
@@ -2304,7 +2304,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/erneuerung-endhaltestelle-lichtenberg (Eröffnung des Planfeststellungsverfahrens vielleicht 2026, Umsetzung 2029/2030)
 #: osm_watch: way id="223184082" version="10"
 #: note: kann zugeparkt sein, gesehen: 2026-06-03 Wed 12:18
-#: last_checked: 2026-06-03
+#: last_checked: 2026-06-17
 #: check_frequency: 360d
 #: next_check: 2029-06-30 (bvg)
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng, kann zugeparkt sein	q3 16535,11920 16512,11894
@@ -2392,9 +2392,9 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/ (1. Quartal 2026: Einreichung der Planfeststellungsunterlagen) (2. Quartal 2029 - 3. Quartal 2031) (3. Quartal 2030 - 4. Quartal 2032)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
 #: osm_watch: way id="77098244" version="20"
-#: last_checked: 2025-06-25 (mapillary)
+#: last_checked: 2026-05-09
 #: check_frequency: 360d
-#: next_check: 2026-06-30
+# REMOVED --- #: next_check: 2026-06-30
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Teltowkanalpromenade: schmale und kurvige Unterführung	q2 4778,3352 4815,3382 4822,3431
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -3954,7 +3954,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2026-06-10 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="13"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -5836,6 +5836,13 @@ Eichenstr. - Uferweg: ein paar Stufen oder Umweg über Bürgersteig nehmen	q3 1389
 # 
 (Wohnquartier Bruno-Taut-Straße): einige Fußgänger	q1 21883,1034 21889,1000
 # 
+#: XXX_prog: BS am südlichen Ende, noch im Wendehammer existiert eine Bordsteinabsenkung
+(Apfelwicklerstr. - Mohrenfalterstr.): einige Fußgänger, Bordstein	q1- 21428,10691 21395,10774
+# 
+(Hoppendorfer Str. - Dammheide): schmal	q1 21989,7953 22061,8050 22074,8103
+(Waldstr. - Dammheide): schmal	q2 22155,8446 22153,8432 22102,8399
+(Waldstr. - Dammheide): schmal	q1 22102,8399 22070,8212 22047,8159 22043,8126
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -7245,7 +7252,7 @@ Großkopfstr.: enge Straße (parkende Autos)	q0- 5159,17726 5363,17667
 #: corrected_by: srt/policy (q3 -> q1):
 Privatstr. 7: enge Straße	q1 16978,16915 17051,16923 17129,16922 17199,16907 17264,16892
 #: by: Daniel (mag645):
-(Deutschhofer Allee - Unter den Birken): Fußgänger, Hunde	q1 21978,8132 22077,8104 22181,8009 22631,7692
+(Deutschhofer Allee - Unter den Birken): Fußgänger, Hunde	q1 21978,8132 22043,8126 22074,8103 22181,8009 22631,7692
 #: by: A.Schulz:
 Roseggerstr. (Mahlsdorf): enge Straße	q1 23661,8597 23860,8480
 #: by: Katja (ondima):
@@ -7715,10 +7722,10 @@ Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,33
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Bei Sperrungen des Teltowkanaluferwegs ist hier die offizielle Umleitung für Fußgänger und *Radfahrer*, trotz Grünanlage.
 #: last_checked: 2026-05-30 (parallele Sperrung gesehen) vvv
-#: next_check: 2026-06-19 (VIZ-Verkehrsmeldung) vvv
-#: valid: !20250617-20260619
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
+#: valid: !20250617-20260731
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065
-#: valid: 20250617-20260619
+#: valid: 20250617-20260731
 Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 #: next_check ^^^
 #: last_checked ^^^

@@ -528,7 +528,7 @@ Gartentor, Zufahrt zum Gemeindehaus (dürfte immer offen sein)	CS 2201,43954
 #: by: Jürgen Schulze (jochen):
 Freienbrinker Saum: die Straße führt am Waldrand entlang, in der Dunkelheit ist mit Wildschweinen zu rechnen	CS 30124,4664 30254,4692 30369,4697 30478,4715 30527,4724 30588,4720 30636,4717 30686,4731 30810,4765 30857,4770 30913,4766 31011,4750 31118,4768 31209,4781 31224,4775 31311,4742 31339,4726 31364,4711 31424,4658
 #: by: Daniel (mag645):
-(Deutschhofer Allee - Unter den Birken): in der Dämmerung ist mit Wildschweinen zu rechnen	CS 21978,8132 22077,8104 22181,8009 22631,7692
+(Deutschhofer Allee - Unter den Birken): in der Dämmerung ist mit Wildschweinen zu rechnen	CS 21978,8132 22043,8126 22074,8103 22181,8009 22631,7692
 # REMOVED (nicht mehr) --- Petriplatz: zusätzliche Ausschilderung "Zur Brüderstr."	CS; 10460,11979 10418,12016
 # REMOVED (lange nicht mehr beobachtet) --- DB-Gelände: bei starken Regenfällen regelmäßig eine große und tiefe Pfütze, die die Durchfahrt erschwert	CS 14107,10911 14043,10928
 # REMOVED (das gilt für das gesamte Märchenland, deshalb Kommentar entfernt) --- #: by: antje weiss dorn: --- Drosselbartweg: Radfahren erlaubt	CS 13899,18833 13909,18835 13953,18842 13967,18842 13993,18833 14061,18791 14206,18700 14218,18674 14222,18666
@@ -2306,6 +2306,11 @@ Rue Édith Piaf: nicht ausgeschildert	CS 4444,21780 4410,21830 4236,21701 4235,2
 Rue Simone de Beauvoir: nicht ausgeschildert	CS 4527,21843 4490,21893 4575,21958
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: add_fragezeichen: Wird der neue Abschnitt der Waldstr. noch ausgeschildert?
+#: last_checked: 2026-06-17
+#: check_frequency: 60d
+Waldstr.: nicht ausgeschildert	CS 22342,9584 22326,9509
 # 
 #: section ^^^
 # DO NOT ADD ANYTHING AFTER THIS POINT!

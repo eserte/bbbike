@@ -37789,7 +37789,7 @@ EOF
        until => $isodate2epoch->("2026-07-02 23:59:59"), # 1781884800, # 2026-06-19 18:00 # 1660587022, # 1664560800, # 2022-09-30 20:00 --- vorfristig entfernt
 #      text  => 'Kranzallee: Baustelle in Höhe Kiplingweg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.08.2022 06:00 bis 30.09.2022 20:00 ',
 #      text  => 'Kranzallee: Baustelle zwischen Am Postfenn und Kiplingweg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.05.2026 06:00 bis 19.06.2026 18:00',
-       text  => 'Kranzallee: Baustellen zwischen Am Postfenn und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Juli 2026',
+       text  => 'Kranzallee: Baustellen zwischen Am Postfenn und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, geplant bis Ende Juli 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.231908,52.505332,08.08.2022,06:00 (inaktiv)
@@ -37797,6 +37797,7 @@ EOF
 #: source_id: LMS-BR:408050/72 viz2021:13.22872,52.50513,13.05.2026,06:00 (bis 19.06.2026)
 Kranzallee zwischen Am Postfenn und Kiplingweg	q4::inwork -1501,10833 -1318,10854
 #: source_id: LMS-BR:410057/72 viz2021:13.235056,52.505526,29.05.2026,00:00 (bis 02.07.2026)
+#: source_id: LMS-BR:412196/72 viz2021:13.234732,52.505506,17.06.2026,06:00 (Fahrbahnverengung, bis 31.07.2026)
 Kranzallee zwischen Ragniter Allee und Kiplingweg	q4::inwork -1167,10873 -1028,10889
 EOF
      },
@@ -38043,6 +38044,7 @@ EOF
 #: by: https://entwicklungsstadt.de/kulturbauten-in-der-krise-warum-berlins-grossprojekte-aus-dem-takt-geraten/
 #: by: https://entwicklungsstadt.de/festival-auf-der-baustelle-das-bauhaus-archiv-oeffnet-seine-tueren/
 #: by: https://www.entwicklungsstadt.de/direktorin-bestaetigt-weiteren-zeitverzug-neues-bauhaus-archiv-soll-erst-2027-fertig-werden/
+#: by: https://www.entwicklungsstadt.de/deutscher-ingenieurbaupreis-2026-bauhaus-archiv-tower-in-berlin-nominiert/
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: XXX Nach Öffnung des Uferwegs prüfen, ob Radfahrer hier überhaupt fahren dürfen.
 #: also_indoor: webcam https://www.youtube.com/watch?v=swATp4lDNFs
@@ -45682,7 +45684,7 @@ EOF
 #      text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke, voraussichtlich von Mitte Februar 2025 bis August 2025 (Stand 26.03.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
 #      text  => 'Teltowkanaluferweg/Bäkebrücke: künftige Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Bäkebrücke (Stand 23.04.2025: keine Sperrung, Bauarbeiten haben nicht begonnen)',
 #      text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., vom 17.06.2025 bis voraussichtlich Ende März 2026',
-       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., voraussichtlich bis Mitte Juni 2026',
+       text  => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., geplant bis Ende Juli 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BAEKEBRUECKE-2022
@@ -45710,14 +45712,14 @@ EOF
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025) (inaktiv)
 #: source_id: adac:969740805 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: adac:794067672 (bis 12.12.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026)
+#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026) (bis 31.07.2026)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,T,W)
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
 #: last_checked: 2026-05-30 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-06-19 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="5363433" version="28"
 #: osm_watch[closed]: note 4442541 4
 #: osm_watch: note 4825689 4
@@ -46243,6 +46245,7 @@ EOF
 # REMOVED (nun 404) --- #: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
 #: by: https://www.finowkanal.info/service/aktuelles/
 #: by: https://www.finowkanal.info/aktuelles/aktueller-stand-der-schleusensanierung/ (Arbeiten auf der Zielgeraden)
+#: by: https://www.finowkanal.info/aktuelles/baustellenupdate-ruhlsdorf-bis-heegermuehle/
 # REMOVED --- #: also_indoor: url https://www.berlin-usedom-radweginfo.de/
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: also_indoor: url https://umap.openstreetmap.fr/de/map/schleusen-region-finowkanal_1110850
@@ -46253,7 +46256,7 @@ EOF
 #: osm_watch: way id="105827213" version="13"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 5
-#: last_checked: 2026-06-05 (finowkanal.info)
+#: last_checked: 2026-06-17 (finowkanal.info)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (https://www.openstreetmap.org/changeset/182437146: laut Bauleiter)
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -47924,7 +47927,7 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
@@ -48305,7 +48308,8 @@ EOF
 #: also_indoor: traffic (ex-T,ex-H,ex-A)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: note: Halteverbotsschilder bis 30.04.2026, mittlerweile bis 31.07.2026
-#: last_checked: 2026-05-03
+#: note: 2026-06-17: Barrieren waren so weggeschoben, dass auch Fahrzeuge passieren können
+#: last_checked: 2026-06-17
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,11337
 # REMOVED (siehe Verkehrszeichenplan) --- #: XXX laut VIZ-Meldung schon ab Grabensprung gesperrt: stimmt das?
@@ -48682,9 +48686,10 @@ EOF
 #: by: https://www.aktives-adlershof.de/fileadmin/Interne_Dokumente/Projekte/Radickestra%C3%9Fe/20260415_Baunewsletter_Netzumstrukturierung_Treptow-K%C3%B6penick_14-1.pdf (Baustelle bleibt jedoch weiterhin eingerichtet)
 #: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen; 2026-04-18 Sat 12:32: Durchfahrt verboten, aber Bauzäune waren teilweise weggeschoben; Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
 #: also_indoor: traffic (no-T,G[nur Flemmingstr])
-#: last_checked: 2026-05-31 (weiterhin Sackgassenschild an der Langen Brücke sowie aus der Weite waren Absperrungen sichtbar) vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 30d vvv
-Gutenbergstr.: Fahrbahn gesperrt, einige Umwege	q4::inwork 21903,4848 21848,4882 21834,4889
+Gutenbergstr.: Fahrbahn wegen Baustelle verengt	q2::inwork 21903,4848 21848,4882
+Gutenbergstr. - Mentzelpark: Umwege	q4::inwork 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -50035,11 +50040,12 @@ EOF
 # REMOVED (nun 404) --- #: by: https://www.finowkanal.info/de/aktuelle-einschraenkungen-finowkanal (alte URL, jetzt ein Redirect)
 #: by: https://www.finowkanal.info/service/aktuelles/
 #: by: https://www.finowkanal.info/aktuelles/aktueller-stand-der-schleusensanierung/ (Arbeiten auf der Zielgeraden)
+#: by: https://www.finowkanal.info/aktuelles/baustellenupdate-ruhlsdorf-bis-heegermuehle/
 #: osm_watch: way id="215065232" version="5"
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand März 2026); bei osm nur die Schleusenüberfahrt als gesperrt gekennzeichnet
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2026-06-05 (finowkanal.info)
+#: last_checked: 2026-06-17 (finowkanal.info)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -50264,9 +50270,9 @@ EOF
 #: note: anscheinend Schubertstr. auch für Fußgänger gesperrt, hier gibt es keinen Gehweg (noch immer?); außerhalb der Arbeitszeiten ggfs. passierbar (gesehen So 2023-03-26, Sa 2023-05-13, Mo 2023-06-19 am Abend (unsicher), Sa 2023-10-28 nachmittags, Sa 2024-02-10 mittags (zumindest das östliche Ende sah offen aus), Mi 2024-03-20 vormittags (durchfahrenden Radfahrer gesehen), Mi 2024-04-10 vormittags: offiziell gesperrt, möglicherweise passierbar, So 2024-09-01 mittags möglicherweise passierbar, Mi 2024-09-04 10:15: man musste an einem Baulastwagen vorbeifahren/schieben), 2025-12-06 Sat 11:20 nicht passierbar
 #: also_indoor: traffic (G[zu lang?],no-T,no-W,no-H)
 #: osm_watch: way id="1163982841" version="3"
-#: last_checked: 2026-06-08 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 90d
+#: last_checked: 2026-06-17
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: check_frequency: 90d
 #: next_check: 2027-12-31 (DB)
 Schubertstr.	2::inwork 21984,6317 21856,6390
 EOF
@@ -50728,15 +50734,15 @@ EOF
 EOF
      },
      { from  => 1756417862, # 2025-08-28 23:51
-       until => $isodate2epoch->("2026-06-19 23:59:59"),
+       until => 1781720964, # $isodate2epoch->("2026-06-19 23:59:59"),
 #      text  => 'Schillerstr., Goethestr. und Giesensdorfer Str.: Bauarbeiten, Sperrungen, bis Ende Januar 2026',
        text  => 'Schillerstr. und Goethestr.: Bauarbeiten, Sperrungen, bis Mitte Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lxj7xzrwjz2t
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiasgxyh4yi2yyv2ipifgm5ybdhxw3cbimwdzuqkhqo6rzca5axq3a@jpeg
-#: source_id: LMS-BR:381588/72 viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026) (bis 31.03.2026) (bis 19.06.2026)
-#: source_id: LMS-BR:386922/72 viz2021:13.31541,52.42855, (bis 31.01.2026) (bis 31.03.2026) (bis 19.06.2026)
+#: source_id: LMS-BR:381588/72 viz2021:13.31337,52.42834,29.08.2025,07:00 (bis 30.01.2026) (bis 31.03.2026) (bis 19.06.2026) (vorfristig inaktiv)
+#: source_id: LMS-BR:386922/72 viz2021:13.31541,52.42855, (bis 31.01.2026) (bis 31.03.2026) (bis 19.06.2026) (vorfristig inaktiv)
 Schillerstr.	q3::inwork 4429,2396 4568,2424
 #: note: nicht komplett gesperrt
 Goethestr.	q3::inwork 4568,2424 4526,2648
@@ -50926,7 +50932,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 8
+#: osm_watch: note 4801950 10
 #: osm_watch: way id="53168806" version="7"
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
@@ -51494,7 +51500,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: add_fragezeichen: Sind die Wege weiterhin gesperrt?
-#: last_checked: 2026-05-03
+#: last_checked: 2026-06-17
 	2::inwork 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 EOF
      },
@@ -51952,7 +51958,7 @@ EOF
 #: next_check_id: KANZLERPARK-2024
 #: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
 #: osm_watch: way id="1126186878" version="6"
-#: osm_watch: note 5130610 3
+#: osm_watch: note 5130610 4
 #: osm_watch: note 5130626 1
 #: osm_watch: note 5096118 2
 #: add_fragezeichen: Gibt es die Engstelle weiterhin?
@@ -52598,7 +52604,7 @@ EOF
 #: osm_watch: note 5193492 4
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-06-08 vvv
+#: last_checked: 2026-06-17 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 # REMOVED (wird sehr wahrscheinlich verlängert) (tatsächlich weiterhin Baustelle) --- #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
@@ -52967,7 +52973,7 @@ EOF
 #: osm_watch: way id="10856020" version="52"
 #: osm_watch: note 5250307 2
 #: priority: #A
-#: last_checked: 2026-06-10 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (BA TK, nbb netzgesellschaft) vvv
 Kastanienallee	2::inwork 18437,7752 19045,6959
@@ -53121,11 +53127,11 @@ Pankeweg an den Karpfenteichen: offizielle Sperrung	2::inwork 12235,20380 12216,
 EOF
      },
      { from  => 1769508000, # 2026-01-27 11:00
-       until => $isodate2epoch->("2026-06-19 23:59:59"), # 1780091940, # 2026-05-29 23:59
-       text  => 'Belßstr. - Bahnstr.: Bauarbeiten, Sperrung im Kreuzungsbereich Marienfelder Allee, vom 28.01.2026 11:00 bis 19.06.2026',
+       until => $isodate2epoch->("2026-07-01 23:59:59"), # 1780091940, # 2026-05-29 23:59
+       text  => 'Belßstr. - Bahnstr.: Bauarbeiten, Sperrung im Kreuzungsbereich Marienfelder Allee, vom 28.01.2026 11:00 bis 01.07.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:397387/72 viz2021:13.37299,52.42492,28.01.2026,11:00 (bis 29.05.2026) (bis 19.06.2026)
+#: source_id: LMS-BR:397387/72 viz2021:13.37299,52.42492,28.01.2026,11:00 (bis 29.05.2026) (bis 19.06.2026) (bis 01.07.2026)
 #: also_indoor: traffic (G,T)
 #: note: nur der Kreuzungsbereich ist betroffen, deshalb q3
 #: note: außerdem: Radspur Richtung Süden vor der Kreuzung gesperrt, Radverkehr teilt sich mit dem Kfz-Verkehr eine Fahrspur, Radfahrüberholverbot
@@ -53227,13 +53233,16 @@ EOF
 EOF
      },
      { from  => 1778536800, # 2026-05-12 00:00
-       until => $isodate2epoch->("2026-06-19 23:59:59"),
-       text  => 'Rosenfelder Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis Mitte Juni 2026',
+       until => undef, # $isodate2epoch->("2026-06-19 23:59:59"),
+       text  => 'Rosenfelder Str.: Einbahnstraßenregelung, offen Richtung Nordosten, voraussichtlich bis Ende Juni 2026',
+#      text  => 'Rosenfelder Str.: Einbahnstraßenregelung, offen Richtung Nordosten, geplant bis Mitte Juni 2026, vermutlich werden die Bauarbeiten verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mlnvyvhpyc2t
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid5ji4tqjxbjwqsuewm2lykph6y4cl5jmkdtbqyrbzadla43h6km4
-#: source_id: LMS-BR:408038/72 viz2021:13.504775,52.510629, (bis 19.06.2026)
+#: source_id: LMS-BR:408038/72 viz2021:13.504775,52.510629, (bis 19.06.2026) (bis 26.06.2026)
+#: last_checked: 2026-06-17
+#: next_check: 2026-06-26 (VIZ-Verkehrsmeldung)
 	q4::inwork; 17251,11789 17169,11677
 EOF
      },
@@ -53262,12 +53271,14 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: AUGUSTEVIKTORIAALLEE-2026
-#: also_indoor: traffic (G,no-T,no-H,no-A,no-W)
+#: also_indoor: traffic (G,no-T,no-H,no-A,W)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.82473.php (Knotenpunkt Auguste-Viktoria-Allee/Antonienstraße, also weter westlich, ist das die gleiche Baumaßnahme? 2. Quartal 2026 bis 4. Quartal 2026)
-#: last_checked: 2026-05-19 vvv
+#: last_checked: 2026-06-17 (traffic) vvv
+#: check_frequency: 21d (traffic) vvv
 General-Barby-Str.: Sperrung vor der Auguste-Viktoria-Allee, lange Umwege notwendig	q4::inwork 4461,18475 4414,18243
 Engelmannweg: Sperrung der Fahrbahn	q4::inwork 4531,18217 4492,18013
 Auguste-Viktoria-Allee: Einbahnstraßenregelung	q4::inwork; 4531,18217 4414,18243
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -53342,7 +53353,7 @@ EOF
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
-#: last_checked: 2026-06-08 vvv
+#: last_checked: 2026-06-17 vvv
 #: next_check: 2026-07-10 (2. BA?) vvv
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
@@ -53621,15 +53632,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1781720718, # undef, # XXX
        text  => 'Leibnizstr.: Fahrbahn vor der Kantstr. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:395248/72 viz2021:13.31388,52.50624,05.01.2026,07:00 (hier nur Kantstr., bis 31.12.2026)
 #: source_id: bvg2024:101#HIM_FREETEXT_341949
-#: also_indoor: traffic (G,T)
+#: also_indoor: traffic (ex-G,ex-T)
 #: note: Sperrung auf 50m Länge, aber auch Umwege auf der Kantstr. nötig
-#: last_checked: 2026-06-08 (mapillary)
+# REMOVED --- #: last_checked: 2026-06-08 (mapillary)
 	q4::inwork 4270,10861 4289,11060
 EOF
      },
@@ -53751,13 +53762,22 @@ EOF
        text  => 'Mirbachplatz: Sperrung der Fahrbahn Richtung Osten, bis voraussichtlich Ende Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: bvg2024:158#HIM_FREETEXT_342782
+#: source_id[inactive]: bvg2024:158#HIM_FREETEXT_342782
 #: source_id: bvg2024:158#HIM_FREETEXT_343369
 #: source_id[inactive]: bvg2024:255#HIM_FREETEXT_342783
 #: source_id: bvg2024:255#HIM_FREETEXT_343370
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mod7lsjdl22b ("bis Ende nächster Woche", also 26.6.2026?)
 #: also_indoor: traffic (T,no-G)
 Mirbachplatz	q4::inwork 13331,16424 13348,16387
+EOF
+     },
+     { from  => $isodate2epoch->("2026-06-21 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-07-31 23:59:59"),
+       text  => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 31.7.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1682627.php
+	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 EOF
      },
     );

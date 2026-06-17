@@ -609,7 +609,8 @@ Riensbergstr.	1 -740,15316 -763,15487
 Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Bahngelände	2 17300,9135 17284,9198
 #: note: 2023-08 waren keine Absperrungen oder Hinweisschilder vorhanden, kommt aber vermutlich noch
-(verlängerte Wandlitzstr.): Bahngelände	2 17837,9086 17743,9116 17570,9103
+#: note: 2026-06 automatisches Tor für die Fahrbahn + abgeschlossenes Tor für Fußgänger
+(verlängerte Wandlitzstr.): Bahngelände	2 17813,9094 17743,9116 17570,9103
 Triniusstr.	1 18339,6660 18273,6606
 # REMOVED (hier nicht) --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
 #: note: Einbahnstraßenschild an der Drosselbartstr., aber kein "Einfahrt verboten"-Schild an der Wegastr., so dass man von Osten aus kommend nichts über die Einbahnstraße erfährt
@@ -4804,7 +4805,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 # REMOVED (bis zum Knick offen) --- #: next_check_id: MARIENUFER-2023 --- #: osm_watch: way id="1272560911" version="2" --- #: last_checked: 2025-07-19 --- #: check_frequency: 90d --- #: next_check: 2026-12-31 (entwicklungsstadt) --- # REMOVED (hier nicht mehr) --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22668,3125 --- An der Villa Bolle: Hochbauarbeiten, gesperrt	2::inwork 22470,3109
 # 
 #: next_check_id: MARIENUFER-2023
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1069273104" version="6"
@@ -4844,7 +4845,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-17
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4852,7 +4853,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-06-10 vvv
+#: last_checked: 2026-06-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5716,15 +5717,15 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: also_indoor: traffic
-#: last_checked: 2026-06-04 (osm) vvv
+#: last_checked: 2026-06-16 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
 #: osm_watch: way id="154807176" version="67"
 #: osm_watch: way id="186329816" version="51"
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
-#: osm_watch: way id="692480577" version="39"
-#: osm_watch: way id="692480576" version="38"
+#: osm_watch: way id="692480577" version="40"
+#: osm_watch: way id="692480576" version="39"
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 7989,13302
 # REMOVED --- Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8099,13391 8098,13419
 #: next_check ^^^
