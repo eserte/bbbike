@@ -561,7 +561,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 # REMOVED --- #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
 #: osm_watch: way id="169459736" version="19"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
-#: osm_watch: way id="25278674" version="29"
+#: osm_watch: way id="25278674" version="32"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -11836,11 +11836,12 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern? vvv
-#: last_checked: 2026-04-19 vvv
+#: last_checked: 2026-06-18 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
-Stadtpark Lichtenberg: unebene Gehwegplatten	Q1+ 15433,12686 15424,12732 15395,12762
+#: historical_note: 2026 abgewertet (Q1+ -> Q1)
+Stadtpark Lichtenberg: unebene Gehwegplatten	Q1 15433,12686 15424,12732 15395,12762
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -12862,26 +12863,8 @@ Anni-Frid-Weg: Verbundsteinpflaster	Q1 17227,15054 17262,15056 17317,15059 17345
 Bennyweg: Verbundsteinpflaster	Q1 17254,15183 17262,15056
 Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059 17319,15038
 (Suermondtstr. - Konrad-Wolf-Str.): Beton	Q0- 16753,16111 16719,16005 16799,15974 16842,15932
-#: note: während der Sperrungen im Mauerpark asphaltiert gewesen
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1465666.php (ab Anfang 2024; Abschluss der Bauarbeiten im Frühjahr 2026)
-#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=765258#post765258
-#: by: https://entwicklungsstadt.de/mauerpark-umbau-des-falkplatzes-soll-im-august-beginnen/
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.1363169.php (Fertigstellung 1. Halbjahr 2026)
-#: by: https://entwicklungsstadt.de/mauerpark-am-falkplatz-nimmt-der-umbau-sichtbare-formen-an/ (Fertigstellung weiterhin erstes Halbjahr 2026)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1573145.php (Teilflächen fertiggestellt, restlicher Bereich bis Frühjahr 2026)
-#: by: https://entwicklungsstadt.de/mauerpark-sanierung-erste-teilflaeche-in-pankow-vorzeitig-fertiggestellt/
-#: by: https://gruen-berlin.de/pressemitteilung/mauerpark-falkplatz-fertiggestellt
-#: by: https://www.entwicklungsstadt.de/mauerpark-in-pankow-so-sieht-der-fertige-falkplatz-aus/
-#: XXX einige Wege werden wohl glatt gepflastert (Betonpflaster oder Verbundsteinpflaster), auch dieser hier?
-#: priority: #C
-#: osm_watch: note 4395422 5
-#: osm_watch: note 4558995 4
-#: last_checked: 2026-05-16
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2025-06-24 (BA-Pressemitteilung)
-# REMOVED --- #: next_check: 2026-06-30 (BA, entwicklungsstadt)
-#: next_check: 2026-06-05 (gruen berlin)
-(Gleimstr. - Mauerpark): unbefestigter Weg	Q2+ 10170,15659 10228,15488
+#: historical_note: früher (bis 2026) gab es einen Weg parallel zur Schwedter Str. (unbefestigter Weg, Q2+); diese Wegverbindung existiert nicht mehr, stattdessen eine Diagonalverbindung eingezeichnet
+(Gleimstr. - Mauerpark): meist Betonsteinpflaster, kurze Abschnitte mit wassergebundener Decke	Q1+ 10377,15697 10377,15675 10339,15648 10257,15619 10250,15565 10224,15529 10228,15488
 Lichtburgring: Asphalt	Q0 10004,15636 9965,15731 9933,15815
 Lichtburgring: Betonpflaster	Q0- 9997,15884 10016,15823 10041,15742 10057,15680 10059,15673 10022,15659
 Lichtburgring: Betonpflaster	Q0- 9965,15731 10041,15742
@@ -32556,6 +32539,7 @@ Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll-des-fahrrat_2026-02-25.pdf (Abschluss in den Sommerferien?)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25978.pdf (in Bau)
 #: note: soll asphaltiert und auf 4m verbreitert werden
+#: last_checked: 2026-06-16 (mapillary)
 #: next_check: 2026-08-15 (fahr-rat)
 # REMOVED --- #: next_check: 2026-09-30 (infravelo)
 (Radweg an der Straßenbahn): Beton	Q0- 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896

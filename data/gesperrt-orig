@@ -134,7 +134,7 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2026-06-03 vvv
+#: last_checked: 2026-06-16 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
@@ -159,7 +159,9 @@ Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
 #: source_id: LMS-BR:391269/72 viz2021:13.540283,52.540747,25.11.2025,07:00 viz2021:13.54008,52.5405,25.11.2025,07:00 (bis 31.03.2026) (bis 30.06.2026)
 #: XXX nach den Bauarbeiten vielleicht wieder zur Einbahnstraße machen?
 #: historical_note: früher (bis Nov. 2025) Einbahnstraße
-#: next_check: 2026-06-30
+#: last_checked: 2026-06-16 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219 19577,15166
 # REMOVED (ja, derzeit Rückbau) --- #: XXX evtl. wird dieser Abschnitt der Frank-Schweitzer-Str. komplett aufgegeben? --- Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
 # REMOVED (zukünftige Anbindung an die Unterführung und Rampe prüfen) --- Frank-Schweitzer-Str.	1no 19195,14931 19178,14924
@@ -4342,7 +4344,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-06-07 vvv
+#: last_checked: 2026-06-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt, MoPo) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4485,9 +4487,9 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,809845#msg-809845 (mittlerweile nur noch für Radfahrer befahrbar)
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,811931#msg-811931
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
-#: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information
+#: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information (vor Ort keine Freigabe für Radfahrer)
 #: also_indoor: traffic (G)
-#: last_checked: 2026-03-11
+#: last_checked: 2026-06-16 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-10-29
 Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
@@ -4868,7 +4870,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 # REMOVED (keine Einbahnstraßenschilder mehr) --- #: next_check_id: GOETEL-2023 --- #: XXX Bleibt die Einbahnstraßenregelung permanent? --- #: osm_watch: way id="1193389996" version="1" --- #: last_checked: 2024-09-18 --- #: check_frequency: 120d --- #: next_check: 2024-10-04 --- Götelstr.: Einbahnstraßenregelung	1 -3260,12540 -3252,12405 -3255,12338 -3284,12304 -3293,12304
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: MAUERPARK-2022 --- #: osm_watch: way id="30441457" version="31" --- #: last_checked: 2024-04-08 --- #: check_frequency: 60d --- Mauerpark: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # REMOVED --- #: next_check_id: MAUERPARK-2022 --- # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"--- #: osm_watch: way id="1218990564" version="6" --- #: last_checked: 2024-08-13 --- #: check_frequency: 30d --- Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
-# REMOVED --- Falkplatz: Weg gesperrt	2::inwork 10228,15488 10170,15659
+# REMOVED --- Falkplatz: Weg gesperrt	2::inwork 10228,15488 10224,15529 10250,15565 10257,15619 10339,15648 10377,15675 10377,15697
 # 
 # REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022
 # REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9863 (Erwähnung)
@@ -4914,7 +4916,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
-#: last_checked: 2026-06-04
+#: last_checked: 2026-06-18
 #: check_frequency: 60d
 #: next_check: 2030-12-31 (bbr-bund website)
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
@@ -5368,7 +5370,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/neue-wohnungen-am-molkenmarkt-bebauungsplan-beschlossen/
 #: by: https://www.entwicklungsstadt.de/historische-mitte-mittelalterlicher-fund-am-molkenmarkt-sorgt-fuer-neue-erkenntnisse/ (archäologische Grabung bis 2027)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-06-12
+#: last_checked: 2026-06-18
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5377,7 +5379,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-06-11
+#: last_checked: 2026-06-18
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

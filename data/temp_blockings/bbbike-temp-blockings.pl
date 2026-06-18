@@ -12726,7 +12726,7 @@ EOF
        text  => 'B 246 Belzig - Wiesenburg OD Klein Glien Straßenbau Vollsperrung 14.08.2008-30.08.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -48903,-31556 -49841,-31648
+	q4::inwork -48948,-31561 -49269,-31516 -50038,-31663
 EOF
      },
      { from  => 1218924000, # 2008-08-17 00:00
@@ -12781,12 +12781,14 @@ EOF
 	2::temp 7322,11177 7435,11514
 EOF
      },
-     { from  => 1219879749, # undef
-       until => 1219879753, # undef
-       text  => 'Johannisstr. (Mitte) in beiden Richtungen zwischen Friedrichstr. und Kalkscheunenstr. Veranstaltung, Straße vollständig gesperrt',
+     { from  => 1781690400, # 2026-06-17 12:00, # 1219879749, # undef
+       until => 1782144000, # 2026-06-22 18:00, # 1219879753, # undef
+#      text  => 'Johannisstr. (Mitte) in beiden Richtungen zwischen Friedrichstr. und Kalkscheunenstr. Veranstaltung, Straße vollständig gesperrt',
+       text  => 'Johannisstr.: zwischen Friedrichstr. und Kalkscheunenstr. Veranstaltung, evtl. ist auch der Radverkehr betroffen, vom 18.06.2026 12:00 bis 22.06.2026 18:00',
        type  => 'gesperrt',
-       source_id => 'IM_009757',
        data  => <<EOF,
+#: source_id: IM_009757 (inaktiv)
+#: source_id: LMS-BR:412360/72 viz2021:13.38769,52.52444,18.06.2026,12:00 (bis 22.06.2026)
 	2::temp 9385,13174 9254,13171
 EOF
      },
@@ -37843,18 +37845,21 @@ EOF
 # REMOVED --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2023-08-14 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2023-08-22 23:59:59"),
-       text  => 'Mauerstr./Zietenplatz: Veranstaltung, Durchfahrt nicht möglich, voraussichtlich bis 22.8.2023',
+     { from  => $isodate2epoch->("2026-06-18 00:00:00"), # $isodate2epoch->("2023-08-14 00:00:00"), # undef, # 
+       until => $isodate2epoch->("2026-06-19 20:00:00"), # $isodate2epoch->("2023-08-22 23:59:59"),
+#      text  => 'Mauerstr./Zietenplatz: Veranstaltung, Durchfahrt nicht möglich, voraussichtlich bis 22.8.2023',
+       text  => 'Glinkastr.: Veranstaltung, Durchfahrt zwischen Jägerstr. und Taubenstr. nicht möglich, am 19.6.2026 von 5 bis 20 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: note: vermutlich für den Tag der offenen Tür der Bundesregierung, 20.+21. August 2022; Sperrung der Fahrbahn bereits am Dienstag vorher
 #: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2022/bundesministerium-fuer-arbeit-und-soziales-2063814
 #: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2023/bundesministerium-fuer-arbeit-und-soziales-2063814
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260618
 #: source_id: viz2021:13.385307,52.511837,14.08.2023,08:00 (bis 22.08.2023) (inaktiv)
 #: source_id: viz2021:13.384516,52.511697,15.08.2023,08:00 (bis 22.08.2023) (inaktiv)
 # REMOVED (hier existiert ein Radweg am Veranstaltungsgelände vorbei) ---	q4::temp 9075,11756 9171,11777
-Mauerstr.	2::temp 9171,11777 9138,11872
+# REMOVED --- Mauerstr.	2::temp 9171,11777 9138,11872
+Glinkastr.	2::temp 9195,11972 9207,11880
 EOF
      },
      { from  => 1736839577, # 1660582743, # 2022-08-15 18:59
@@ -40325,7 +40330,7 @@ EOF
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2026-05-20 (traffic)
+#: last_checked: 2026-06-18 (traffic)
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
@@ -42249,7 +42254,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-18
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 # REMOVED --- #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -45406,7 +45411,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-15 vvv
+#: last_checked: 2026-06-18 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -46255,7 +46260,7 @@ EOF
 #: osm_watch: way id="105827200" version="12"
 #: osm_watch: way id="105827213" version="13"
 #: osm_watch: way id="1328520022" version="2"
-#: osm_watch: note 4244536 5
+#: osm_watch: note 4244536 6
 #: last_checked: 2026-06-17 (finowkanal.info)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (https://www.openstreetmap.org/changeset/182437146: laut Bauleiter)
@@ -46857,7 +46862,7 @@ EOF
 Friedrichstr., 2. BA	q3::inwork 34359,2165 34250,2546
 #: osm_watch: way id="5057517" version="22"
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-05-30 (traffic)
+#: last_checked: 2026-06-16 (mapillary)
 # REMOVED --- #: next_check: 2026-05-31 (VIZ-Verkehrsmeldung)
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 EOF
@@ -48444,7 +48449,7 @@ EOF
 #: XXX der östliche Abschnitt des Merler Wegs wird asphaltiert
 #: also_indoor: traffic (ex-H,G,no-T)
 #: add_fragezeichen: Ist die Merler Straße weiterhin gesperrt?
-#: last_checked: 2026-06-03
+#: last_checked: 2026-06-16 (mapillary)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-05-08 (ex-VIZ-Verkehrsmeldung)
 Merler Weg	q4::inwork 18987,13248 19180,13219
@@ -49764,19 +49769,18 @@ EOF
 EOF
      },
      { from  => 1750748520, # 2025-06-24 09:02
-       until => $isodate2epoch->("2026-06-22 23:59:59"), # $isodate2epoch->("2026-06-01 23:59:59"), # $isodate2epoch->("2026-03-02 23:59:59"), # undef, # 1761951540, # 2025-10-31 23:59
+       until => $isodate2epoch->("2026-10-15 23:59:59"), # $isodate2epoch->("2026-06-01 23:59:59"), # $isodate2epoch->("2026-03-02 23:59:59"), # undef, # 1761951540, # 2025-10-31 23:59
 #      text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, vom 25.06.2025 09:02 bis 31.10.2025',
 #      text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis 02.03.2026',
-       text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis 22. Juni 2026',
+       text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis 15. Oktober 2026',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.43909,52.5791,25.06.2025,09:02 (bis 31.10.2025) (inaktiv)
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
+#: source_id: LMS-BR:373761/72 viz2021:13.43909,52.5791,25.06.2025,09:02 viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026) (inaktiv) (bis 01.06.2026) (bis 22.06.2026) (bis 15.10.2026)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:373761/72 viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026) (inaktiv) (bis 01.06.2026) (bis 22.06.2026)
 #: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
 #: last_checked: 2025-11-10 (VIZ-Verkehrsmeldung)
-#: next_check: 2026-06-22 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 	q3::inwork 12627,19317 12457,19248
 EOF
      },
@@ -50083,7 +50087,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
-#: last_checked: 2026-06-12
+#: last_checked: 2026-06-18
 #: check_frequency: 30d
 # REMOVED (wird länger dauern) --- #: next_check: 2025-09-01 (Halteverbotsschilder)
 	q4::inwork 10951,12249 10957,12401
@@ -50507,7 +50511,7 @@ EOF
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-18
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
 # REMOVED --- #: next_check: 2026-02-28 (strabag)
 #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
@@ -50787,7 +50791,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,H,no-T)
-#: last_checked: 2026-05-16 (mapillary)
+#: last_checked: 2026-06-18
 #: check_frequency: 60d
 	q4::inwork 10189,14649 10273,14689
 EOF
@@ -50932,7 +50936,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 10
+#: osm_watch: note 4801950 11
 #: osm_watch: way id="53168806" version="7"
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
@@ -51435,15 +51439,15 @@ EOF
 EOF
      },
      { from  => 1761110409, # 2025-10-22 07:20
-       until => $isodate2epoch->("2026-06-21 23:59:59"), # $isodate2epoch->("2026-05-13 23:59:59"),
+       until => $isodate2epoch->("2026-07-06 23:59:59"), # $isodate2epoch->("2026-05-13 23:59:59"),
 #      text  => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
-       text  => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 21. Juni 2026',
+       text  => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 6. Juli 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
-#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026)
+#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026)
 #: source_id[inactive]: bvg2024:156#HIM_FREETEXT_303396
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Wigandstaler Str.: Einfahrt verboten	q3::inwork; 12910,17123 13037,16957
@@ -51620,7 +51624,7 @@ EOF
 #: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
 #: note: zurzeit noch Absperrung mit nur etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-18
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -51709,15 +51713,19 @@ EOF
        text  => 'Gotenstr.: Sperrung der Fahrbahn vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: also_indoor: traffic (G,W,no-T)
+#: also_indoor: traffic (G,W,T[nur nördlich])
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/s%C3%BCdkreuz-iii-%E2%80%93-gotenstra%C3%9Fe-ella-barowsky-stra%C3%9Fe.1267/page-4#post-27571
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
-#: last_checked: 2026-06-08 (traffic)
-#: check_frequency: 14d (traffic)
+#: last_checked: 2026-06-11 (architektur-urbanistik) vvv
+#: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
-	q4::inwork 7497,7761 7499,7880
+Gotenstr.: südlich der Kreuzung	q4::inwork 7497,7761 7499,7880
+Gotenstr.: nördlich der Kreuzung	q4::inwork 7499,7880 7499,7937
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -52195,6 +52203,7 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-01-2026-b102-zw-premnitz-und-rathenow-radwegsanierung
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-05-2026-b102-ragwegsanierung-zwischen-moegelin-und-rathenow
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-06-2026-b102-zwischen-premnitz-und-rathenow
 #: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 EOF
@@ -52771,12 +52780,14 @@ EOF
 EOF
      },
      { from  => 1774324800, # 2026-03-24 05:00
-       until => $isodate2epoch->("2026-06-12 20:00:00"), # 1779472800, # 2026-05-22 20:00
-       text  => 'L20: Bauarbeiten, Sperrung des Radwegs zwischen Falkensee und Bushaltestelle Falkenhagener Forst, 25.03.2026 05:00 Uhr bis 12.06.2026 20:00 Uhr',
+       until => $isodate2epoch->("2026-06-26 20:00:00"), # 1779472800, # 2026-05-22 20:00
+#      text  => 'L20: Bauarbeiten, Sperrung des Radwegs zwischen Falkensee und Bushaltestelle Falkenhagener Forst, 25.03.2026 05:00 Uhr bis 12.06.2026 20:00 Uhr',
+       text  => 'L20: Bauarbeiten, Sperrung des Radwegs zwischen Falkensee und Bushaltestelle Falkenhagener Forst, voraussichtlich bis 26.6.2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~20-03-2026-baustart-radwegsanierung-entlang-der-l202-und-l20
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~29-05-2026-l202_l20-fertigstellung-der-radwegerneuerungen (bis 12.6.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-06-2026-l202-und-l20-landkreis-havelland_radwegsanierungen (Nacharbeiten bis ca. 26.6.2026)
 #: source_id: LS/223-P/26/041 (bis 22.05.2026) (bis 12.06.2026)
 	2::inwork -10031,18697 -10474,19644
 EOF
@@ -53778,6 +53789,25 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1682627.php
 	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
+EOF
+     },
+     { from  => 1782597600, # 2026-06-28 00:00
+       until => 1819749599, # 2027-08-31 23:59
+       text  => 'Klein Glien: Erneuerung der Ortsdurchfahrt, voraussichtlich von 29.6.2026 bis Ende August 2027',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-06-2026-b246-erneuerung-ortsdurchfahrt-klein-glien
+	2::inwork -48948,-31561 -49269,-31516
+EOF
+     },
+     { from  => 1781804522, # 2026-06-18 19:42
+       until => 1782165600, # 2026-06-23 00:00
+       text  => 'Zinnowitzer Str.: zwischen Chausseestr. und Caroline-Michaelis-Str. Veranstaltung, evtl. ist auch der Radverkehr betroffen, bis 22.06.2026 22:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:412342/72 viz2021:13.38226,52.53129, (bis 23.06.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mok5z4x4ok2f (hier nur Kfz-Verkehr)
+	q4::temp 8870,13926 9011,14019 9070,14058
 EOF
      },
     );
