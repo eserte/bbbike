@@ -16,7 +16,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '2026.03';
+$VERSION = '2026.06';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -62,9 +62,9 @@ my $bbbike_root = bbbike_root;
 
 ######################################################################
 # configurable
-my $openvbb_download_size = '71MB';
+my $openvbb_download_size = '73MB';
 my $openvbb_year = 2026;
-my $openvbb_index = 1;
+my $openvbb_index = 2;
 my $openvbb_data_url = 'https://www.vbb.de/vbbgtfs';
 ######################################################################
 
