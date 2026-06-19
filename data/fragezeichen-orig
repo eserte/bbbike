@@ -123,7 +123,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt für Radfahrer	?::projected 9047,9
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html (hier ist ein komplett unklares Projekt gelistet: Kynaststraße, von Paul-Paula-Ufer bis Glasbläserallee als Schutzstreifen, 285 Meter --- wo soll das sein?)
 #: osm_watch: way id="667331289" version="7"
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-19
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -469,6 +469,7 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 Köpenicker Landstraße: Radfahrstreifen bis Trojanstr.	?::projected; 15303,8343 15357,8286 15557,8077 15920,7697 16195,7398 16259,7328 16353,7226 16377,7200
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bauliche Umsetzung ab 4. Quartal 2026)
+#: last_checked: 2026-06-19
 #: next_check: 2026-11-15 (pardok: Beginn bauliche Umsetzung (Mitte des Quartals))
 Am Treptower Park: Radfahrstreifen bis Ludwig-Richter-Str.	?::projected; 14257,9432 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
 # 
@@ -3753,7 +3754,7 @@ Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,1271
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/risiko-stelle-vor-berliner-gymnasium-warum-hier-schuler-seit-zwei-jahren-auf-eine-ampel-warten-mussen-15009973.html (Ampel?)
 #: source_id: viz2021:13.439487,52.530759,03.07.2023,10:00 (bis 21.07.2023) (inaktiv)
 #: priority: #D
-#: last_checked: 2026-06-02
+#: last_checked: 2026-06-18
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-21
 Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen oder eine Ampel gebaut?	?::projected 12723,13934 12766,13942 12758,13896
@@ -5714,7 +5715,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) entsteht	
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: osm_watch: note 4969496 4
 #: XXX Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-06-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 15019,10803
@@ -6471,7 +6472,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-19
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg war geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -7978,7 +7979,7 @@ Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::project
 #: osm_watch: way id="24756980" version="17"
 #: osm_watch: way id="4446451" version="19"
 #: osm_watch: way id="4446451" version="19"
-#: last_checked: 2025-12-25 (research, Anscheinend läuft noch das Planfeststellungsverfahren) vvv
+#: last_checked: 2026-06-19 (research) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2025-12-31 (deges) vvv
 Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthofs zurückgebaut oder verlegt?	? 1557,10306 1471,10368 1517,10424 1580,10429 1692,10348 1723,10289 1725,10242 1742,10220
@@ -8017,7 +8018,7 @@ Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14031,9
 #: next_check_id: TREPTOWERPARK-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
 #: osm_watch: note 4970885 2
-#: last_checked: 2026-06-05
+#: last_checked: 2026-06-19
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-11-01
 Treptower Park: werden hier die letzten asphaltierten Wege umgebaut?	?::inwork 15183,9186 15214,9090 15190,9027 15181,8967 15159,8934
@@ -9264,7 +9265,7 @@ Kluckstr.: Fahrradstraße geplant	?::projected 7579,11032 7534,10850
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_15_0873_0916_online.pdf (Widerspruch)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13795 (Antrag)
 #: osm_watch: way id="754567008" version="12"
-#: last_checked: 2026-05-21
+#: last_checked: 2026-06-19 (indoor research)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-23 (Amtsblatt, aber siehe Widerspruch)
 Kluckstr.: Umbenennung in Anita-Augspurg-Str. geplant	? 7579,11032 7534,10850 7517,10775 7487,10643 7478,10612
@@ -9753,7 +9754,7 @@ Heinersdorfer Str.: was für eine Art RVA wird hier entstehen?	?::projected 13584
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1618182.php (bis Ende Mai 2026)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_23_1421_1480_online.pdf (Einziehung von Straßenland)
 #: last_checked: 2026-06-07
-#: check_frequency: 14d
+#: check_frequency: 15d
 # REMOVED --- #: next_check: 2026-05-31
 (Neuenburger Str. - Lindenstr.): Verbesserung der Wegebeziehungen geplant	? 9853,10543 9848,10526 9795,10512
 # 
@@ -9940,6 +9941,7 @@ Sleipnerplatz: Instandsetzung der Fahrbahndeckschicht	? 12921,18691 12838,18734 
 #: by: https://www.entwicklungsstadt.de/koepenick-rudolf-ruehl-allee-bruecke-instandsetzung/ (Sperrung für 4-6 Wochen geplant)
 #: by: https://www.entwicklungsstadt.de/rudolf-ruehl-allee-in-koepenick-zeitplan-fuer-vollsperrung-der-koepenicker-allee-bruecke-steht/ (März bis Mai 2027, Vollsperrung nur für den Kfz-Verkehr)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/koepenicker-allee-bruecke/
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26174.pdf
 #: XXX evtl. wird in der 1. Phase der Weg unter der Brücke gesperrt?
 #: last_checked: 2026-05-31
 #: next_check: 2027-03-01 (Tsp, entwicklungsstadt)
@@ -9974,6 +9976,7 @@ Carl-Herz-Ufer: Plannung einer Fahrradstraße + Asphaltierung	?::projected 10627,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1680891.php (evtl. werden die Abschnitte zwischen den Brücken erstmal bleiben?)
 #: by: https://www.entwicklungsstadt.de/streit-um-goerlitzer-bruecken-erhalt-geplant-sperrung-bleibt/
 #: by: https://www.morgenpost.de/berlin/article412243870/goerlitzer-bruecken-senat-und-bahn-planen-erhalt-doch-erst-folgt-die-sperrung.html
+#: by: https://www.morgenpost.de/berlin/article412316217/so-soll-die-rettung-der-goerlitzer-bahnbruecken-doch-noch-gelingen.html
 #: osm_watch: note 5278957 2
 #: osm_watch: way id="24042478" version="18"
 #: last_checked: 2026-06-15
@@ -11150,7 +11153,7 @@ Krampnitz: neue Planstraßen	?::inwork -14183,5214 -13771,5077
 #: XXX Paul-und-Paula-Promenade sowie der Stadtplatz Rummelsburger Seeblick sollen laut Plakat bis Ende 2025 fertiggestellt werden.
 #: XXX vermutlich beleuchtet; Rampe und Treppe am Paul-und-Paula-Ufer
 #: osm_watch: way id="1077916762" version="14"
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-19
 #: check_frequency: 90d
 # REMOVED (Eröffnung 2025 ist nicht passiert) --- #: next_check: 2025-12-31 (Plakat)
 Paul-und-Paula-Promenade: wird gebaut	?::inwork 14984,10677 15056,10625
@@ -11489,6 +11492,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://bvv-pankow.berlin.de/pi-r/___tmp/tmp/45081036/YYlvm8P0j1sd5SOrJIUwBc0AObSqYhYaR07oLs4V/BUAFccAh/58-Anlagen/03/attach_FEDF.pdf (Geh- und Radweg ab Mühlenstr., Brücke über die Berliner Str., Rampe auf der südwestlichen Seite, Weg wird auf Dach des Einkaufszentrums fortgesetzt)
 #: by: https://bvv-pankow.berlin.de/pi-r/___tmp/tmp/45081036/YYlvm8P0j1sd5SOrJIUwBc0AObSqYhYaR07oLs4V/BUAFccAh/58-Anlagen/04/attach_3040.pdf (in Höhe Neumannstr. Planstraße D mit Unterführung zur Hadlichstr.; mehrere Planstraßen; Weiterführung des Geh- und Radwegs entlang der Bahntrasse) 
 #: by: https://bvv-pankow.berlin.de/pi-r/___tmp/tmp/45081036/YYlvm8P0j1sd5SOrJIUwBc0AObSqYhYaR07oLs4V/BUAFccAh/58-Anlagen/05/attach_6B95.pdf (Weiterführung des Geh- und Radwegs --- unter der Autobahnbrücke? mehrere Planstraßen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_26_1609_1708_online.pdf (öffentliche Auslegung)
 #: osm_watch: way id="97369501" version="15"
 # REMOVED (404) --- #: also_indoor: webcam https://portal1761.webcam-profi.de/ (vom Lokschuppen)
 #: last_checked: 2025-09-17
@@ -11607,6 +11611,8 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://www.entwicklungsstadt.de/s-bahn-bvg-autobahn-tram-berlins-grosse-verkehrsprojekte-im-spannungsfeld-der-interessen/
 #: by: https://www.tagesspiegel.de/berlin/grossprojekte-im-berliner-sudosten-senat-forciert-strassenbau-der-tvo--und-vertagt-bahnstrecke-15428242.html
 #: by: https://www.entwicklungsstadt.de/tvo-finanzierung-663-millionen-euro-zweifel/
+#: by: https://www.morgenpost.de/berlin/article412320964/tvo-schock-berlins-teuerste-stadtstrasse-wird-zum-finanz-fiasko.html (2026 kein Planfeststellungsbeschluss?)
+#: by: https://www.entwicklungsstadt.de/tvo-zeitplan-wackelt-baubeginn-der-ost-verbindung-bleibt-offen/
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/tangentiale-verbindung-ost/
 #: osm_watch: way id="154505652" version="17"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
@@ -12544,11 +12550,13 @@ Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbi
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6139 (Benennung einer Privatstraße)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/neue-namen-fuer-zwoelf-pankower-strassen_a408065 (Erwähnung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_40_2529_2572_online.pdf (Grundstücksnummerierungen, noch immer Planstraße H)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_26_1609_1708_online.pdf (wurde mit Baubeginn zum 1. Juni 2026 wirksam)
 #: XXX wird die KGA an dieser Stelle aufgegeben?
 #: XXX Privatstraße soll "Süßdoldenweg" heißen; PLZ=13158 (laut LOR 06/2025)
 #: osm_watch: way id="293943813" version="6"
 #: last_checked: 2026-03-22 (mapillary)
 #: check_frequency: 180d
+#: next_check: 2026-06-01 (Amtsblatt: Baubeginn)
 Süßdoldenweg: früher Planstraße H, vermutlich entsteht hier die neue Straße, genaue Lage, Qualität?	? 9278,21239 9277,21194 9249,21138
 # 
 #: by: https://www.stadtentwicklung.berlin.de/staedtebau/projekte/tegel/schumacher-quartier/projekt.shtml
@@ -13341,7 +13349,7 @@ Bebauungsplan 3-43 (Brunnengalerie Buch - Süd): ein neuer Geh/Radweg in Fortsetz
 #: by: https://www.entwicklungsstadt.de/neun-jahre-verspaetung-s15-ist-endlich-in-betrieb/
 #: by: https://www.tagesspiegel.de/berlin/in-sechs-minuten-zum-berliner-hauptbahnhof-neue-s-bahn-linie-s15-startet-mit-neun-jahren-verspatung-15714593.html
 #: by: https://www.nd-aktuell.de/artikel/1200409.nahverkehr-neue-babylinie-fuer-die-berliner-s-bahn.html
-# -- zum 2. BA --
+# -- zum 2. BA und zum möglichen Haltepunkt Perleberger Straße --
 #: by: https://www.eba.bund.de/SharedDocs/Anhoerungsverfahren/DE/Berlin/2024/0409_Anoerung_S21_Nordringanbindung_-_Potsdamer_Platz_2_BA.html (Planfeststellungsverfahren)
 #: by: https://www.berlin-s21.de/home.html
 #: by: https://www.berlin-s21.de/BA-2.html
@@ -13351,6 +13359,7 @@ Bebauungsplan 3-43 (Brunnengalerie Buch - Süd): ein neuer Geh/Radweg in Fortsetz
 #: by: https://www.entwicklungsstadt.de/betriebsbeginn-der-s15-so-geht-es-mit-der-seit-jahren-geplanten-s21-weiter/
 #: by: https://www.entwicklungsstadt.de/neue-s-bahn-linie-s15-in-berlin-so-geht-der-ausbau-jetzt-weiter/ (Mitte bis Ende der 2030er Jahre)
 #: by: https://www.entwicklungsstadt.de/s-bahnhof-perleberger-bruecke-neubau-kommt-wohl-erst-2035/
+#: by: https://www.tagesspiegel.de/berlin/geplanter-s-bahnhof-perleberger-brucke-in-berlin-explodierende-kosten-und-30-jahre-verspatung-15723471.html
 #: XXX mögliche Sperrungen im Oberflächenverkehr (laut U-10-04_Verkehrsstudie.pdf):
 #: XXX - Ebertstr. (2030-2035), in den Phasen 1 und 3 südlich Straße des 17. Juni, in Phase 2 auch nördlich davon
 #: XXX - einige Wege im Spreebogenpark (aber nicht der Weg zur Gustav-Heinemann-Brücke), evtl. auch der Spreeuferweg?

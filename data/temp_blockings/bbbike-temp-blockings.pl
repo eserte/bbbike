@@ -29677,6 +29677,7 @@ EOF
        text  => 'Treptower Park: einige Wege im südlichen Teil des Parks sind wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: TREPTOWERPARK-2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176947.php (kein Datum genannt)
 #: by: https://berliner-abendblatt.de/2022/02/16/treptower-park-rodung-und-neupflanzung/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1181109.php
@@ -29684,11 +29685,10 @@ EOF
 #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/weitere-arbeiten-im-treptower-park_a337841
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1243634.php (fertig)
-#: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/ueber-den-bezirk/treptower-park/artikel.1181979.php
-#: next_check_id: TREPTOWERPARK-2025
-#: note: neue Bauarbeiten ab 2024/2025
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1492815.php (Beginn: November 2024)
-#: last_checked: 2026-06-05 vvv
+#: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/ueber-den-bezirk/treptower-park/artikel.1181979.php
+#: note: neue Bauarbeiten ab 2024/2025
+#: last_checked: 2026-06-19 vvv
 #: check_frequency: 14d vvv
 zwischen Karpfenteich und Sowjetisches Ehrenmal: gesperrt	2::inwork 15181,8967 15250,8911
 zwischen Karpfenteich und Sowjetisches Ehrenmal: kann gesperrt sein	2::inwork 15159,8934 15181,8967 15190,9027
@@ -31337,7 +31337,7 @@ EOF
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="20"
 #: osm_watch: way id="1148659680" version="8"
-#: last_checked: 2026-06-08 (traffic)
+#: last_checked: 2026-06-19 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 30d (non-traffic)
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
@@ -34071,7 +34071,7 @@ EOF
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
 #: osm_watch: note 3914565 21
-#: last_checked: 2026-05-08 (internal research)
+#: last_checked: 2026-06-19 (internal research)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -36813,8 +36813,8 @@ EOF
 	q4::inwork; 12330,8636 12494,8501
 EOF
      },
-     { from  => $isodate2epoch->("2026-05-31 00:00:00"), # $isodate2epoch->("2026-04-19 00:00:00"), # $isodate2epoch->("2026-01-25 00:00:00"), # $isodate2epoch->("2025-07-20 00:00:00"), # $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
-       until => $isodate2epoch->("2026-06-05 16:00:00"), # $isodate2epoch->("2026-04-30 18:00:00"), # $isodate2epoch->("2026-03-06 11:00:00"), # $isodate2epoch->("2025-08-08 12:00:00"), # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
+     { from  => $isodate2epoch->("2026-06-21 00:00:00"), # $isodate2epoch->("2026-05-31 00:00:00"), # $isodate2epoch->("2026-04-19 00:00:00"), # $isodate2epoch->("2026-01-25 00:00:00"), # $isodate2epoch->("2025-07-20 00:00:00"), # $isodate2epoch->("2024-09-17 00:00:00"), # 1708028836, # 1651953282, # 2022-05-07 21:54
+       until => $isodate2epoch->("2026-08-07 12:00:00"), # $isodate2epoch->("2026-06-05 16:00:00"), # $isodate2epoch->("2026-04-30 18:00:00"), # $isodate2epoch->("2026-03-06 11:00:00"), # $isodate2epoch->("2025-08-08 12:00:00"), # $isodate2epoch->("2024-10-04 17:00:00"), # undef, # $isodate2epoch->("2024-03-11 17:00:00"), # undef, # 1693242735, # $isodate2epoch->("2023-08-30 18:00:00"), # 1669849200, # 2022-12-01 00:00
 #      dont_check_date => 1,
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung gesperrt, Benutzung des schmalen Gehwegs möglich, außerdem Anbindung Schubertstr. gesperrt, voraussichtlich bis 28.08.2023, eventuell etwas länger bis zum 30.08.2023',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), außerdem Anbindung Schubertstr. gesperrt, vom 18.09.2024 07:00 Uhr bis voraussichtlich 04.10.2024 17:00 Uhr',
@@ -36822,7 +36822,8 @@ EOF
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), geplant vom 21.07.2025 06:00 Uhr bis 08.08.2025 12:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 26.01.2026 05:00 Uhr bis 06.03.2026 11:00 Uhr',
 #      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 20.04.2026 bis 30.04.2026',
-       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 01.06.2026 06:00 Uhr bis 05.06.2026 16:00 Uhr',
+#      text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 01.06.2026 06:00 Uhr bis 05.06.2026 16:00 Uhr',
+       text  => 'Hämmerlingstr.: Eisenbahnunterführung komplett gesperrt (Fahrbahn und Gehweg), vom 22.06.2026 06:00 Uhr bis 07.08.2026 12:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
@@ -36858,7 +36859,7 @@ EOF
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOu2XcAAADii.jpg (Detailkarte der Sperrung)
 #: by[nocache]: https://nitter.perennialte.ch/pic/orig/media%2FGGXnOxmWwAAhC4Z.png (Umleitung für Radfahrer)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1479228.php (nächste Sperrung der Hämmerlingstr.: 23.9.2024-2.10.2024)
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025) (neue Sperrung: 26. Januar (circa 5 Uhr), bis Freitag, 6. März 2026 (circa 11 Uhr)) (neue Sperrung im Juni 2026)
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (weitere Sperrung der Hämmerlingstr.: 28.7.2025-8.8.2025) (neue Sperrung: 26. Januar (circa 5 Uhr), bis Freitag, 6. März 2026 (circa 11 Uhr)) (neue Sperrung im Juni 2026) (22. Juni (6 Uhr) bis 7. August 2026 (12 Uhr))
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1836261367248228357
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html (21. Juli 2025 6 Uhr bis 8. August 2025 12 Uhr)
 #: by: https://www.entwicklungsstadt.de/bahnhof-koepenick-neue-sperrungen-im-zuge-des-grossumbaus/
@@ -36870,6 +36871,8 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mjvnk53jgk23
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article412122944/berlin-s-bahnhof-koepenick-erneute-vollsperrung-der-haemmerlingstrasse.html
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mn777xebys2f
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260619 (neue Sperrung bis Anfang August 2026)
+#: by: https://www.entwicklungsstadt.de/umbau-am-bahnhof-koepenick-monatelang-vollsperrung-in-koepenick/
 #: osm_watch: note 3566736 14
 Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
 # REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
@@ -37323,7 +37326,7 @@ EOF
 # REMOVED --- #: last_checked: 2025-06-21 --- #: next_check: 2025-11-30 (maz)
 # REMOVED --- Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26386,-11705 26400,-11718
 # REMOVED --- #: note: laut Mail ist der Kreisverkehr noch bis 31.01.2025 gesperrt; möglicherweise gibt es also diese Einschränkung weiterhin --- #: last_checked: 2025-02-04 (mapillary) --- #: next_check: 2025-11-30 (maz) --- #: note: eigentlich 1s:q3 --- Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	q3::inwork; 26300,-11727 26301,-11824 26300,-11864
-#: source_id: 266100759 (Markierungsarbeiten bis 19.06.2026)
+#: source_id: 266100759 (Markierungsarbeiten bis 19.06.2026) (inaktiv)
 Storkower Straße (Königs Wusterhausen): Markierungsarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen	2::inwork 26327,-11708 26386,-11705 26400,-11718
 EOF
      },
@@ -37791,13 +37794,14 @@ EOF
        until => $isodate2epoch->("2026-07-02 23:59:59"), # 1781884800, # 2026-06-19 18:00 # 1660587022, # 1664560800, # 2022-09-30 20:00 --- vorfristig entfernt
 #      text  => 'Kranzallee: Baustelle in Höhe Kiplingweg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.08.2022 06:00 bis 30.09.2022 20:00 ',
 #      text  => 'Kranzallee: Baustelle zwischen Am Postfenn und Kiplingweg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.05.2026 06:00 bis 19.06.2026 18:00',
-       text  => 'Kranzallee: Baustellen zwischen Am Postfenn und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, geplant bis Ende Juli 2026',
+#      text  => 'Kranzallee: Baustellen zwischen Am Postfenn und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, geplant bis Ende Juli 2026',
+       text  => 'Kranzallee: Baustelle zwischen Kiplingweg und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, geplant bis Ende Juli 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.231908,52.505332,08.08.2022,06:00 (inaktiv)
 #	q4::inwork -1167,10873 -1318,10854
-#: source_id: LMS-BR:408050/72 viz2021:13.22872,52.50513,13.05.2026,06:00 (bis 19.06.2026)
-Kranzallee zwischen Am Postfenn und Kiplingweg	q4::inwork -1501,10833 -1318,10854
+#: source_id: LMS-BR:408050/72 viz2021:13.22872,52.50513,13.05.2026,06:00 (bis 19.06.2026) (inaktiv)
+# REMOVED (nicht mehr) --- Kranzallee zwischen Am Postfenn und Kiplingweg	q4::inwork -1501,10833 -1318,10854
 #: source_id: LMS-BR:410057/72 viz2021:13.235056,52.505526,29.05.2026,00:00 (bis 02.07.2026)
 #: source_id: LMS-BR:412196/72 viz2021:13.234732,52.505506,17.06.2026,06:00 (Fahrbahnverengung, bis 31.07.2026)
 Kranzallee zwischen Ragniter Allee und Kiplingweg	q4::inwork -1167,10873 -1028,10889
@@ -37846,17 +37850,19 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-06-18 00:00:00"), # $isodate2epoch->("2023-08-14 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2026-06-19 20:00:00"), # $isodate2epoch->("2023-08-22 23:59:59"),
+       until => $isodate2epoch->("2026-06-21 23:59:59"), # $isodate2epoch->("2023-08-22 23:59:59"),
 #      text  => 'Mauerstr./Zietenplatz: Veranstaltung, Durchfahrt nicht möglich, voraussichtlich bis 22.8.2023',
-       text  => 'Glinkastr.: Veranstaltung, Durchfahrt zwischen Jägerstr. und Taubenstr. nicht möglich, am 19.6.2026 von 5 bis 20 Uhr',
+       text  => 'Glinkastr.: Veranstaltung, Durchfahrt zwischen Jägerstr. und Taubenstr. nicht möglich, vom 19.6.2026 bis 21.6.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: note: vermutlich für den Tag der offenen Tür der Bundesregierung, 20.+21. August 2022; Sperrung der Fahrbahn bereits am Dienstag vorher
 #: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2022/bundesministerium-fuer-arbeit-und-soziales-2063814
 #: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2023/bundesministerium-fuer-arbeit-und-soziales-2063814
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260618
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3momhn2df722v
 #: source_id: viz2021:13.385307,52.511837,14.08.2023,08:00 (bis 22.08.2023) (inaktiv)
 #: source_id: viz2021:13.384516,52.511697,15.08.2023,08:00 (bis 22.08.2023) (inaktiv)
+#: source_id: LMS-BR:412460/72 viz2021:13.38651,52.51281,19.06.2026,05:00 (bis 21.06.2026)
 # REMOVED (hier existiert ein Radweg am Veranstaltungsgelände vorbei) ---	q4::temp 9075,11756 9171,11777
 # REMOVED --- Mauerstr.	2::temp 9171,11777 9138,11872
 Glinkastr.	2::temp 9195,11972 9207,11880
@@ -45537,6 +45543,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html (Hoffnung auf eine Eröffnung im Winter 2025/2026)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/start-der-dresdner-bahn-in-berlin-steht-bevor-bald-faehrt-erstmals-ein-ice-durch-lichtenrade-li.10004430 (vor Weihnachten 2025 werden die Treppen eröffnet, im April 2026 die Rampen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1628173.php
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26162.pdf (Eröffnung im Juli 2026?)
 #: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025) (inaktiv)
 #: note: laut Schild Fertigstellung 2024 (mittlerweile ist dieser Termin obsolet)
@@ -45552,14 +45559,15 @@ EOF
 #: also_indoor: search Wolziger_Zeile
 #: last_checked: 2026-06-13 vvv
 #: check_frequency: 14d vvv
+#: next_check: 2026-07-31 (pardok) vvv
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-06-30 (VIZ-Verkehrsmeldung (muss aber vermutlich verlängert werden))
-# REMOVED --- #: next_check: 2025-09-20 (pardok, bahninfo)
 # REMOVED --- #: next_check: 2026-06-01 (DB website: Bauarbeiten bis Ende Mai 2026)
 Wolziger Zeile: Unterführung und Rampen	2::inwork 10307,-2633 10391,-2624 10373,-2575 10394,-2567
 Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
 #: check_frequency ^^^
 #: last_checked ^^^
+#: next_check ^^^
 # REMOVED (mittlerweile komplett zu) --- #: note: Schranke existiert noch, man kann als Radfahrer/Fußgänger noch halb-legal durch (Stand 2024-07-03)
 # REMOVED --- #: last_checked: 2024-09-21 (youtube)
 #	2::inwork 10392,-2595 10362,-2604 10307,-2633
@@ -52225,7 +52233,7 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:395246/72 viz2021:13.298302,52.47039,05.01.2026,07:00 (Zoppoter Str., bis 31.03.2026) (bis 30.06.2026)
 #: source_id: LMS-BR:395247/72 viz2021:13.29834,52.47075,05.01.2026,07:00 (Borkumer Str., bis 31.03.2026) (bis 30.06.2026)
-#: source_id: LMS-BR:407832/72 viz2021:13.298314,52.470505,11.05.2026,07:00 (bis 19.06.2026)
+#: source_id: LMS-BR:407832/72 viz2021:13.298314,52.470505,11.05.2026,07:00 (bis 19.06.2026) (inaktiv)
 	q4::inwork 3202,7121 3302,7092 3295,6987
 EOF
      },
@@ -53226,9 +53234,9 @@ EOF
        text  => 'Jägerstr.: Bauarbeiten, Sperrung, voraussichtlich bis Ende Juni 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (T,G,ex-H,no-W)
+#: also_indoor: traffic (T,G,re-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-05-30 (traffic)
+#: last_checked: 2026-06-19 (traffic)
 #: check_frequency: 21d (traffic)
 #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -53514,7 +53522,7 @@ EOF
        text  => 'Seelingstr.: Sperrung zwischen Sophie-Charlotten-Str. und Danckelmannstr., evtl. ist auch der Radverkehr betroffen, vom 01.06.2026 06:00 bis 19.06.2026 17:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:410355/72 viz2021:13.288284,52.515211,01.06.2026,06:00 (bis 19.06.2026)
+#: source_id: LMS-BR:410355/72 viz2021:13.288284,52.515211,01.06.2026,06:00 (bis 19.06.2026) (inaktiv)
 	q4::inwork 2686,12051 2485,12032
 EOF
      },
@@ -53621,8 +53629,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: also_indoor: traffic (no-G,T,no-W)
-#: last_checked: 2026-06-07
+#: also_indoor: traffic (G[mittlerweile],T,no-W)
+#: last_checked: 2026-06-19 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 5552,21824 5665,21733
 EOF
@@ -53736,9 +53744,10 @@ EOF
        text  => 'Mühlenstr./Bruchwitzstr./ Malteserstr.: Bauarbeiten, Sperrung des Kreuzungsbereichs, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:405760/72 viz2021:13.352099,52.435909, (bis 19.06.2026)
-#: last_checked: 2026-06-13 vvv
-#: check_frequency: 30d vvv
+#: source_id: LMS-BR:405760/72 viz2021:13.352099,52.435909, (bis 19.06.2026) (inaktiv)
+#: also_indoor: traffic (G,T,H,no-W)
+#: last_checked: 2026-06-19 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
 # REMOVED (wird höchstwahrscheinlich verlängert) --- #: next_check: 2026-06-19 vvv
 #: note: Länge der Sperrung in der nördlichen Mühlenstr. ca. 40m
 Mühlenstr.	q3::inwork 7104,3416 7042,3281 6914,3093
@@ -53808,6 +53817,15 @@ EOF
 #: source_id: LMS-BR:412342/72 viz2021:13.38226,52.53129, (bis 23.06.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mok5z4x4ok2f (hier nur Kfz-Verkehr)
 	q4::temp 8870,13926 9011,14019 9070,14058
+EOF
+     },
+     { from  => 1781758800, # 2026-06-18 07:00
+       until => 1784386800, # 2026-07-18 17:00
+       text  => 'Dänenstr.: Baustelle zwischen Seelower Str. und Schönfließer Str., evtl. ist auch der Radverkehr betroffen, vom 19.06.2026 07:00 bis 18.07.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:412466/72 viz2021:13.41018,52.55,19.06.2026,07:00 (bis 18.07.2026)
+	q4::inwork 10729,16042 10593,16037
 EOF
      },
     );
