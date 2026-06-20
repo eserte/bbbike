@@ -6,6 +6,7 @@ branches:
     - /doozer/
     - /^archived\x2f/
 skip_tags: true
+skip_branch_with_pr: true
 shallow_clone: true
 
 cache:
