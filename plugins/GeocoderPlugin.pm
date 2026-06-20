@@ -164,7 +164,7 @@ sub geocoder_dialog {
 		     my $apikey = do {
 			 my $file = "$ENV{HOME}/.opencageapikey";
 			 open my $fh, $file
-			     or main::status_message("Cannot get key from $file: $!", "die");
+			     or die "Cannot get key from $file: $!";
 			 local $_ = <$fh>;
 			 chomp;
 			 $_;
@@ -249,9 +249,7 @@ sub geocoder_dialog {
 	    my $mod = 'Geo::Coder::' . $geocoder_api;
 	    eval "require $mod";
 	}
-	if ($@) {
-	    main::status_message($@, "die");
-	}
+	die $@ if $@;
     };
 
     my $do_geocode = sub {
@@ -262,7 +260,6 @@ sub geocoder_dialog {
 	my $geocoder = $gc->{new}->();
 	my $location = $geocoder->geocode(location => $loc);
 	$gc->{fix_result}->($location) if $gc->{fix_result};
-	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$location],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
 	$location;
     };
@@ -288,7 +285,10 @@ sub geocoder_dialog {
     my $change_geocoder = sub {
 	my $gc = $apis{$geocoder_api};
 	if ($gc->{suggest}) {
-	    $do_geocoder_init->($gc);
+	    eval { $do_geocoder_init->($gc) };
+	    if ($@) {
+		main::status_message($@, "die");
+	    }
 	    if ($can_choicescmd) {
 		$e->configure(-choicescmd => sub {
 				  my(undef, $text) = @_;
@@ -326,7 +326,11 @@ sub geocoder_dialog {
 	$bf->Button(Name => "ok",
 		    -command => sub {
 			my $gc = $apis{$geocoder_api};
-			my $location = $do_geocode->($gc, $get_loc->());
+			my $location = eval { $do_geocode->($gc, $get_loc->()) };
+			if ($@) {
+			    main::status_message($@, "die");
+			    return;
+			}
 			if ($location) {
 			    $res->delete("1.0", "end");
 			    $res->insert("end", $get_long_address->($gc, $location));
@@ -357,8 +361,10 @@ sub geocoder_dialog {
 				my $location = eval {
 				    $do_geocode->($gc, $get_loc->());
 				};
-				if ($@ || !$location) {
-				    warn "Could not geocode '" . $get_loc->() . "' with '$_api': $@";
+				if ($@) {
+				    main::status_message("Could not geocode '" . $get_loc->() . "' with '$_api': $@", "die");
+				} elsif (!$location) {
+				    warn "Could not geocode '" . $get_loc->() . "' with '$_api': no result";
 				} else {
 				    if ($gc->{include_multi_master}) {
 					$loc_addr = $get_long_address->($gc, $location);
