@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019,2020,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019,2020,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,8 +18,10 @@ use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 use strict;
-use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.17;
+use vars qw($VERSION $geocoder_toplevel $DEBUG);
+$VERSION = 3.18;
+$DEBUG = 1 if !defined $DEBUG;
+require Data::Dumper if $DEBUG;
 
 BEGIN {
     if (!eval '
@@ -180,6 +182,19 @@ sub geocoder_dialog {
 		     my $g = $location->{results}->[0]->{geometry};
 		     ($g->{lng}, $g->{lat});
 		 },
+		 'fix_result' => sub {
+		     if (!defined $_[0]) {
+			 # note: the opencage geocoder just warns (using carp()) on errors (like 401 on outdated/wrong API keys), so we have to trap the warnings
+			 my @geocoder_warnings = eval { @{ $_[1] } };
+			 main::status_message("OpenCage call did not return anything. Possible reason: an outdated or wrong API key.\nGeocoder warnings:\n@geocoder_warnings", "error");
+			 return;
+		     }
+		     if ($_[0] && ref $_[0] eq 'HASH' && ref $_[0]->{results} eq 'ARRAY' && !@{ $_[0]->{results} }) {
+			 warn "DEBUG: OpenCage call returned something, but the results array is empty. Original response: " . Data::Dumper->new([$_[0]])->Indent(1)->Useqq(1)->Dump
+			     if $DEBUG;
+			 $_[0] = undef;
+		     }
+		 }
 		},
 
 		'GeocodeXYZ' => {
@@ -260,9 +275,16 @@ sub geocoder_dialog {
 	$do_geocoder_init->($gc);
 
 	my $geocoder = $gc->{new}->();
-	my $location = $geocoder->geocode(location => $loc);
-	$gc->{fix_result}->($location) if $gc->{fix_result};
-	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$location],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
+	my @geocoder_warnings;
+	my $location;
+	{
+	    local $SIG{__WARN__} = sub { push @geocoder_warnings, @_ };
+	    $location = $geocoder->geocode(location => $loc);
+	}
+	$gc->{fix_result}->($location, \@geocoder_warnings) if $gc->{fix_result};
+	if ($DEBUG) {
+	    print STDERR "DEBUG: " . Data::Dumper->new([$location, \@geocoder_warnings],[qw()])->Indent(1)->Useqq(1)->Dump;
+	}
 
 	$location;
     };
