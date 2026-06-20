@@ -3,19 +3,18 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2019,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2019,2021,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package StrassenNextCheck;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.11';
+$VERSION = '0.12';
 
 use Strassen::Core;
 use vars qw(@ISA);
@@ -54,6 +53,14 @@ sub read_stream_nextcheck_records {
 # * if last_checked is defined, then use either
 #   * last_checked+check_frequency (if the latter is defined) or
 #   * last_checked+$args{check_frequency_days} (the latter defaults to 30 days)
+# 
+# _nextcheck_label contains strings like:
+# * next_check: YYYY-MM-DD
+#   (if next_check is defined)
+# * last_checked: YYYY-MM-DD, check_frequency: ${days}d
+#   (if last_checked and check_frequency are defined)
+# * last_checked: YYYY-MM-DD
+#   (id only last_checked is defined)
 sub process_nextcheck_record {
     my($self, $r, $dir, %args) = @_;
 
@@ -83,12 +90,16 @@ sub process_nextcheck_record {
     if (exists $dir->{last_checked} && (!$next_check_info || exists $dir->{check_frequency})) {
 	my $last_checked_date = $get_date->('last_checked');
 	if ($last_checked_date) {
-	    my $check_frequency_days = _get_check_frequency_days($dir) || $args{check_frequency_days};
+	    my $explicit_check_frequency_days = _get_check_frequency_days($dir);
+	    my $check_frequency_days = $explicit_check_frequency_days || $args{check_frequency_days};
 	    my($y,$m,$d) = split /-/, $last_checked_date;
 	    ($y,$m,$d) = Add_Delta_Days($y,$m,$d, $check_frequency_days);
 	    my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 	    if (!$next_check_info || $next_check_info->{date} gt $date) {
 		my $label = "last checked: $last_checked_date";
+		if (defined $explicit_check_frequency_days) {
+		    $label .= ", check frequency: ${explicit_check_frequency_days}d";
+		}
 		$next_check_info = { date => $date, label => $label };
 	    }
 	}
