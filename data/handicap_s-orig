@@ -84,9 +84,9 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 # 
 #: next_check_id: REVALER-2024
 #: note: f¸r Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="31"
-#: osm_watch: way id="1072662717" version="35"
-#: last_checked: 2026-06-16
+#: osm_watch: way id="1072662716" version="32"
+#: osm_watch: way id="1072662717" version="36"
+#: last_checked: 2026-06-20 (osm)
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -2085,8 +2085,9 @@ Hebbelstr.: Fuﬂg‰nger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: XXX: wieder aktivieren: Spreewaldplatz: Fuﬂg‰nger	q1 12341,10218 12292,10374
 #: note: mittlerweile mehrere Engstellen, fr¸her nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
 #: osm_watch[closed]: note 4103526 2
+#: osm_watch: note 5350535 2
 #: osm_watch: way id="30909343" version="27"
-#: last_checked: 2026-06-15
+#: last_checked: 2026-06-20
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fuﬂg‰nger, Engstellen	q3 12341,10218 12292,10374
@@ -2476,7 +2477,6 @@ Dathepromenade: Fuﬂg‰nger	q1 18094,10167 18091,10112 17995,10070
 #: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
 Rheingoldpark: Fuﬂg‰nger haben Vorrang	q1 19073,8828 19145,8659
 Schloﬂinsel Kˆpenick: Fuﬂg‰nger	q4 22093,4499 22087,4470 22084,4455 22076,4422
-Braunschweiger Ufer: Fuﬂg‰nger	q1 12722,5831 13077,5893 13483,5973
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q2 6513,7005 6650,7017
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4954,5888
@@ -5470,7 +5470,7 @@ Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026) (bis 30.06.2026)
 #: note: L‰nge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-06-18
+#: last_checked: 2026-06-20
 #: check_frequency: 21d
 #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
@@ -5844,6 +5844,11 @@ Eichenstr. - Uferweg: ein paar Stufen oder Umweg ¸ber B¸rgersteig nehmen	q3 1389
 (Hoppendorfer Str. - Dammheide): schmal	q1 21989,7953 22061,8050 22074,8103
 (Waldstr. - Dammheide): schmal	q2 22155,8446 22153,8432 22102,8399
 (Waldstr. - Dammheide): schmal	q1 22102,8399 22070,8212 22047,8159 22043,8126
+# 
+#: note: Gr¸nanlagenschilder ohne Zusatzschilder zum Radfahren vvv
+Riedel-Evers-Weg: einige Fuﬂg‰nger	q1+ 12136,5628 12150,5640 12570,5802 12722,5831
+Braunschweiger Ufer: Fuﬂg‰nger	q1+ 12722,5831 13080,5882 13382,5957 13418,5954 13483,5973
+#: note ^^^
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

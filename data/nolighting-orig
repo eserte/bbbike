@@ -3,11 +3,11 @@
 #:
 # laut http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20111124.0930.363028.html die gesamte Nacht beleuchtet: Görlitzer Park	NL 12817,9964 12833,9998 12869,10071 12904,10141 12911,10156
 # REMOVED (auch nachts eingeschaltet) ---  #: XXX Beleuchtung existiert mittlerweile (2011-11-21), ist hier auch nach 22 Uhr eingeschaltet? --- Görlitzer Park	NL 12802,10097 12869,10071 12983,10000 13132,9916 13141,9911
-#: note: Zufahrten sind immer unbeleuchtet vvv
+#: note: Zufahrten sind immer unbeleuchtet (trotz existierender Straßenlaternen) vvv
 Görlitzer Park	NL 12507,10130 12504,10172
 Görlitzer Park	NL 12504,10172 12464,10153
 #: note ^^^
-#: note: keine Beleuchtung mitten in der Nacht
+#: note: keine Beleuchtung mitten in der Nacht (trotz existierender Straßenlaternen)
 Görlitzer Park	NL 12504,10172 12509,10189 12543,10223 12580,10252 12608,10294
 # REMOVED (Beleuchtung existiert, aber wird sie auch eingeschaltet?) --- Görlitzer Park	NL 12670,10160 12543,10223
 #: note: nur teilweise (indirekt) beleuchtet
@@ -328,7 +328,7 @@ Wanderweg Erkner - Hessenwinkel	NL 33526,2771 33419,2765 33406,2738 33255,2762 3
 #: by: https://api.fixmyberlin.de/api/projects/75 (Asphaltierung)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/240605_protokoll-mobilitatsrat_2.pdf ("Widmung in öffentliches Straßenland ist geplant")
 #: osm_watch: way id="13853634" version="43"
-#: last_checked: 2026-06-01
+#: last_checked: 2026-06-20
 #: check_frequency: 60d
 Kirchhofweg	NL 11608,7267 11687,7284 12185,7381
 # 
@@ -1756,7 +1756,7 @@ Mauerweg	NL 9959,16510 9955,16578 9954,16590 9945,16738 9949,16866 9980,16973
 #: by: Klaus Bucher vvv
 #: confirmed_by: srt
 Delfter Ufer	NL 14323,5455 14270,5572 14238,5596 14221,5626 14223,5658 14138,5818 14002,5936 13904,5983 13778,6018 13648,6013 13532,5987
-Braunschweiger Ufer	NL 13483,5973 13077,5893 12722,5831 12568,5794 12150,5640 12136,5628
+Braunschweiger Ufer	NL 13483,5973 13418,5954 13382,5957 13080,5882 12722,5831 12570,5802 12150,5640 12136,5628
 Breitunger Weg	NL 11756,2096 11350,2470 11102,2710 11005,2726
 #: by ^^^
 Tiefwerder - Heerstr.	NL -3179,11763 -3087,11728 -3070,11712 -3037,11680 -3054,11621 -3042,11550 -3075,11510

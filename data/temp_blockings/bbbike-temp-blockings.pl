@@ -28744,10 +28744,10 @@ EOF
 #: source_id: LMS-BR:304601/72 viz2021:13.31363,52.52105,26.06.2023,06:00 viz2021:13.31363,52.52105, (bis 30.06.2025) (bis 01.12.2025) (bis 30.10.2026)
 #: source_id: LMS-BR:410370/72 viz2021:13.310944,52.521154,01.06.2026,07:00 (bis 31.12.2026)
 #: note: bei rbb weiterhin gelistet, bis Ende 2023, mittlerweile bis Ende 2024, nun bis 30.06.2025
-#: also_indoor: traffic (H,G,B,W)
-#: last_checked: 2026-02-25
+#: also_indoor: traffic (H,ex-G,T,W)
+#: last_checked: 2026-06-20 (traffic)
 #: check_frequency: 120d
-#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung (längere der beiden))
 # REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
 Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 # REMOVED (hier nicht) ---	q3::inwork 4071,12720 4124,12721
@@ -34070,7 +34070,7 @@ EOF
 #: osm_watch: way id="1060570985" version="4"
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
-#: osm_watch: note 3914565 21
+#: osm_watch: note 3914565 20
 #: last_checked: 2026-06-19 (internal research)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
@@ -49675,7 +49675,7 @@ EOF
 #: by: https://entwicklungsstadt.de/lxk-campus-in-berlin-friedrichshain-fassadenarbeiten-markieren-naechsten-baufortschritt/
 #: by: https://www.entwicklungsstadt.de/deutliche-fortschritte-auf-dem-lxk-campus-ein-blick-auf-die-baustelle/
 #: also_indoor: traffic (none)
-#: last_checked: 2026-06-15 (daf)
+#: last_checked: 2026-06-20
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (lxk website)
 Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,11978 12238,11931
@@ -50503,10 +50503,10 @@ EOF
 EOF
      },
      { from  => 1755406800, # 2025-08-17 07:00
-       until => $isodate2epoch->("2026-06-30 23:59:59"), # 1772298000, # 2026-02-28 18:00
+       until => $isodate2epoch->("2026-07-31 23:59:59"), # 1772298000, # 2026-02-28 18:00
 #      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, außerdem Baustelleneinrichtungsfläche in der Kolmarer Str., evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
 #      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
-       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bis Ende Juni 2026',
+       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bis Ende Juli 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 viz2021:13.41764,52.53833, (östlich Husemannstr., bis 28.02.2026) (bis 29.05.2026) (bis 30.06.2026)
@@ -50514,15 +50514,15 @@ EOF
 #: by: https://checkpoint.tagesspiegel.de/langmeldung/5Xo8NcrLYvz2MxS7AThUxo
 #: by: https://www.bwb.de/de/baustelleninformationen.php?date=20250903 (außerdem Baustelleneinrichtungsfläche in der Kolmarer Str.; Gesamtbauarbeiten bis Ende 2027; erster Abschnitt bis zur Hagenauer Str. vermutlich im Nov. 2025 fertig) (Jan 2026: erster Abschnitt noch immer abgesperrt)
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
-#: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026?) (korrigiert bis Juni 2026)
+#: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026?) (korrigiert bis Juni 2026) (westl. Abschnitt bis 10.7.2026, östlicher bis 31.7.2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-sperrungen-in-prenzlauer-berg-darum-wird-die-riesen-baustelle-im-berliner-kollwitzkiez-erst-viel-spater-fertig-15554939.html (Gesamtbaumaßnahme bis April 2029; Sredzkistr. bis 3.6.2026 fertig)
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
 #: last_checked: 2026-06-18
 # REMOVED --- #: next_check: 2025-11-30 (BWB-Seite, erster Bauabschnitt)
-# REMOVED --- #: next_check: 2026-02-28 (strabag)
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-07-10 (strabag)
+# REMOVED --- #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Sredzkistr.	q4::inwork 11094,14769 11187,14763 11265,14756 11436,14741
 # REMOVED (laut MoPo derzeit frei) --- Kolmarer Str.	q4::inwork 11354,14187 11418,14290
 EOF
@@ -50587,7 +50587,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-15 vvv
+#: last_checked: 2026-06-20 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50817,14 +50817,12 @@ Griebenowstr.: Einschränkungen nur im Einmündungsbereich	q2::inwork 10399,14429 
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1781941837, # undef, # XXX
 #      text  => 'Schulweg: Durchgang wegen Bauarbeiten versperrt, Ende der Bauarbeiten unbekannt',
        text  => 'Schulweg: Durchgang wegen Bauarbeiten offiziell versperrt (Stand Mai 2026: Bauzaun üblicherweise weggeschoben), Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule
-#: add_fragezeichen: Ist der Schulweg weiterhin gesperrt?
-#: last_checked: 2026-05-19 (Bauzaun weggeschoben)
+# REMOVED --- #: XXX Baustellenverkehr für die Sporterweiterungsfläche der Schule --- #: add_fragezeichen: Ist der Schulweg weiterhin gesperrt? --- #: last_checked: 2026-05-19 (Bauzaun weggeschoben)
 	2::inwork 12600,12860 12551,12785 12483,12682
 EOF
      },
@@ -51609,7 +51607,7 @@ EOF
        until => 1798736400, # 2026-12-31 18:00
 #      text  => 'Knaackstr.: Bauarbeiten zwischen Diedenhofer Str. und Prenzlauer Allee, Sperrung geplant (Stand 2.11.2025: noch keine Sperrung), außerdem Sperrung der Kolmarer Str., vom 01.11.2025 07:00 bis voraussichtlich Ende 2026',
 #      text  => 'Knaackstr.: Bauarbeiten zwischen Wasserturmplatz und Prenzlauer Allee, mögliche Sperrung, außerdem Sperrung der Kolmarer Str., bis voraussichtlich Ende 2026',
-       text  => 'Kolmarer Str.: Sperrung der Fahrbahn, bis voraussichtlich Juni 2026, evtl. wird die Sperrung verlängert',
+       text  => 'Kolmarer Str.: Sperrung der Fahrbahn, bis voraussichtlich Juli 2026, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026? danach geht's in der nordwestlichen Knaackstr. und Wörther Str. weiter (3. BA)) (korrigiert bis Juni 2026)
@@ -51618,7 +51616,7 @@ EOF
 #: also_indoor: traffic (G,T)
 #: last_checked: 2026-05-29
 #: check_frequency: 90d
-#: next_check: 2026-06-30 (strabag)
+#: next_check: 2026-07-31 (strabag)
 # REMOVED --- #: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung)
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 EOF
@@ -52796,7 +52794,7 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~20-03-2026-baustart-radwegsanierung-entlang-der-l202-und-l20
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~29-05-2026-l202_l20-fertigstellung-der-radwegerneuerungen (bis 12.6.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-06-2026-l202-und-l20-landkreis-havelland_radwegsanierungen (Nacharbeiten bis ca. 26.6.2026)
-#: source_id: LS/223-P/26/041 (bis 22.05.2026) (bis 12.06.2026)
+#: source_id: LS/223-P/26/041 (bis 22.05.2026) (bis 12.06.2026) (inaktiv)
 	2::inwork -10031,18697 -10474,19644
 EOF
      },
@@ -53527,14 +53525,19 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-05-26 00:00:00"),
-       until => 1781647200, # 2026-06-17 00:00
-       text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, 26.05.2026 bis 16.06.2026',
+       until => undef, # 1781647200, # 2026-06-17 00:00
+#      text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, 26.05.2026 bis 16.06.2026',
+       text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260504 (26.05. bis 16.06.2026)
-#: last_checked: 2026-06-15
-#: next_check: 2026-06-16
-Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309 12502,10244
+#: osm_watch: note 5352757 1
+#: add_fragezeichen: Ist der Weg noch immer abgesperrt?
+#: last_checked: 2026-06-20
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2026-06-16
+Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12457,10309 12502,10244
+# REMOVED (hier nicht) --- Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309
 EOF
      },
      { from  => 1780459200, # 2026-06-03 06:00
@@ -53826,6 +53829,15 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:412466/72 viz2021:13.41018,52.55,19.06.2026,07:00 (bis 18.07.2026)
 	q4::inwork 10729,16042 10593,16037
+EOF
+     },
+     { from  => 1787263200, # 2026-08-21 00:00
+       until => 1819749600, # 2027-09-01 00:00
+       text  => 'Am Golfplatz: Bauarbeiten zwischen Viereckremise und Amundsenstraße, Sperrung, vom 22.08.2026 bis 31.08.2027',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5548
+	2::inwork -13205,1928 -13200,1980 -13563,2297
 EOF
      },
     );

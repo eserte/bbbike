@@ -617,8 +617,9 @@ Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 1156
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/buendnisgruene-stellen-antrag-auf-umbau-der-eschersheimer-strasse_a368051
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866 (Antrag zum Radverkehr auf der Oderbrücke)
 #: source_id: viz2021:13.421328,52.466121,14.02.2023,08:00 (Sperrung für Kfz-Verkehr, bis 24.02.2023) (inaktiv)
+#: osm_watch: note 5203545 2
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
-#: last_checked: 2026-05-07 (mapillary)
+#: last_checked: 2026-06-20
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (infravelo)
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
@@ -1124,7 +1125,8 @@ Görlitzer Park: Asphalt	Q0 13141,9911 13132,9916 12983,10000 12866,10064 12802,1
 Görlitzer Park: Asphalt	Q0 12670,10160 12543,10223
 Görlitzer Park: Asphalt	Q0 12543,10223 12502,10244
 #: historical_note: früher (bis Juni 2026) Q1-, nach Bauarbeiten wohl besser
-Görlitzer Park: wassergebundene Decke	Q1 12502,10244 12457,10309 12384,10368
+Görlitzer Park: wassergebundene Decke	Q1+ 12502,10244 12457,10309
+Görlitzer Park: wassergebundene Decke, wellig	Q1- 12457,10309 12384,10368
 Görlitzer Park: teils Gehwegplatten, teils Kopfsteinpflaster	Q1- 12384,10368 12331,10409 12328,10442
 Görlitzer Park: Asphalt	Q0 12814,9966 12833,9998 12866,10064
 Görlitzer Park: Gehwegplatten	Q0- 12866,10064 12901,10134 12905,10143
@@ -2822,7 +2824,7 @@ Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7858,12830 7837,128
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7051,12426 7122,12384 7183,12372 7217,12383 7314,12419 7447,12520 7521,12581 7772,12694 7856,12746 7908,12804 7945,12878
 Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2- 12743,6645 12860,6667 12981,6689 13099,6712
 Delbrückstr. (Neukölln): Asphalt	Q0 13099,6712 13117,6716
-Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13136,5593 13116,5689 13105,5748 13077,5893 13064,5953 13027,6168
+Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13136,5593 13116,5689 13105,5748 13080,5882 13064,5953 13027,6168
 #: by: andreas voigt:
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20061221.1045.70244.html
 Rungiusstr.: sehr guter Asphalt	Q0 13027,6168 12997,6290 12981,6366 12979,6374
@@ -2831,8 +2833,9 @@ Rungiusstr.: sehr guter Asphalt	Q0 12979,6374 12965,6430
 (Kolonie Blaschkotal): fester Sandweg, etwas Schotter	Q2 13158,5490 13178,5378 13112,5253
 #: historical_note: früher Q2+, im Feb 2026 auf Q2 degradiert
 (Weg durch Kolonie): fester Sandweg, etwas Schotter	Q2 13112,5253 13045,5119
-Braunschweiger Ufer: Verbundsteinpflaster	Q1+ 13077,5893 13483,5973
-Braunschweiger Ufer: Parkweg	Q1 13077,5893 12722,5831
+Braunschweiger Ufer: Verbundsteinpflaster	Q1+ 13080,5882 13382,5957 13418,5954 13483,5973
+#: historical_note: früher als "Parkweg" getaggt, war das jemals korrekt?
+Braunschweiger Ufer: Verbundsteinpflaster	Q1+ 13080,5882 12722,5831
 Zeppelinstr.: Asphalt	Q0 18700,6604 18417,6775 18240,6845
 #: corrected_by: srt (von Kopfsteinpflaster Q2 -> Asphalt Q0)
 Zeppelinstr.: Asphalt	Q0 18240,6845 18041,6924 17919,6968
@@ -8948,7 +8951,8 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: next_check_id ^^^
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Verbundsteinpflaster	Q1+ 8206,9867 8233,9863 8243,9766
 (Grenzallee - Britzer Hafensteg): überwiegend Asphalt, einige Verbundsteinpflasterabschnitte	Q0 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
-Britzer Hafensteg: Holzbohlen	Q1 13993,6221 13949,6192
+#: historical_note: früher Q1, evtl. schlechter geworden?
+Britzer Hafensteg: Holzbohlen	Q2+ 13993,6221 13949,6192
 Sieversufer: Asphalt	Q0 13949,6192 13883,6163
 zur Eschersheimer Str.: wassergebundene Decke	Q1 11748,6253 11740,6338
 Wildspitzweg [Nebenstraße]: Asphalt	Q0 10914,3147 10889,3011
@@ -13672,7 +13676,7 @@ Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 1976
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/page-2#post-27248
 #: osm_watch: way id="933570857" version="6"
 #: XXX die Straße wird neu gemacht, wird evtl. nach den Hochbauarbeiten komplettiert
-#: last_checked: 2026-06-14 (daf)
+#: last_checked: 2026-06-20
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (porr website)
 (Verlängerung der Siegfriedstr.): Asphalt ohne letzte Deckschicht	Q1+ 11664,6796 11488,6781
@@ -21625,7 +21629,8 @@ Lange Enden: guter Asphalt	Q0 4660,21250 4708,21235 4719,21232
 #: by: Jennifer (jhofmeister): vvv
 #: confirmed_by: srt
 Salbeiweg: Asphalt	Q0 17531,2460 17471,2403 17387,2322 17289,2224
-Braunschweiger Ufer: gepflastert, angenehm zu fahren	Q0 12136,5628 12150,5640 12568,5794 12722,5831
+#: corrected_by: srt ("gepflastert, angenehm zu fahren", Q0 -> ...)
+Riedel-Evers-Weg: Verbundsteinpflaster	Q1+ 12136,5628 12150,5640 12570,5802 12722,5831
 #: corrected_by: srt ("mäßiger" gestrichen)
 Buchsbaumweg: Beton	Q0- 17567,1942 17533,1986 17440,2062 17289,2224 17102,2420 17027,2495 16982,2547 16905,2603 16738,2717
 #: corrected_by: srt (Q1 -> Q1+, "mäßiger" gestrichen)

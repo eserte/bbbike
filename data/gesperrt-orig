@@ -315,7 +315,10 @@ Quickborner Str.	1s:q4 8016,21499 8078,21415 8162,21302
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 # REMOVED --- Molkenmarkt - zur Stralauer Str.	1 10772,12288 10736,12285
 # REMOVED (bis Frühjahr 2026) --- Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964
-Herrfurthplatz	1 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
+#: XXX Bleibt es bei der Einbahnstraßenregelung für den Radverkehr?
+#: osm_watch: way id="889203673" version="8"
+#: last_checked: 2026-06-20
+Herrfurthplatz	1 11713,7899 11671,7904 11647,7940
 Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
 Grimmstr.	1 11089,9751 11136,9851 11164,9885
 Grimmstr.	1 11164,9885 11175,9882
@@ -4141,7 +4144,7 @@ Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
 #: XXX es wird vom Paula-Thiede-Ufer in einer Rampe runtergehen, zurzeit wird die Deckschicht aufgesetzt; rötliche asphaltähnliche Decke
 #: osm_watch: way id="458869330" version="4"
 #: osm_watch: note 3748856 5
-#: last_checked: 2026-06-02
+#: last_checked: 2026-06-20
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2026-06-26
 Uferweg wird verlängert	2::inwork 12010,11545 11962,11596
@@ -4659,12 +4662,12 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="5"
-#: last_checked: 2026-05-27
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-04-30 (Schilder vor Ort)
+#: last_checked: 2026-06-07
+#: check_frequency: 120d
+#: next_check: 2026-12-31 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
-#: note: valid-Datum "präventiv" gesetzt (Brückeneinschub passiert 2026)
-#: valid: -20261231
+#: note: valid-Datum "präventiv" gesetzt (1/2 Jahr länger als next_check)
+#: valid: -20270630
 Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772,12694 7521,12581 7447,12520
 # 
 #: next_check_id: BAB100-2022
@@ -4682,7 +4685,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-06-16 vvv
+#: last_checked: 2026-06-20 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
@@ -5720,12 +5723,12 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: also_indoor: traffic
-#: last_checked: 2026-06-16 (osm) vvv
+#: last_checked: 2026-06-19 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
 #: osm_watch: way id="154807176" version="67"
-#: osm_watch: way id="186329816" version="51"
+#: osm_watch: way id="186329816" version="52"
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
 #: osm_watch: way id="692480577" version="40"
 #: osm_watch: way id="692480576" version="39"
