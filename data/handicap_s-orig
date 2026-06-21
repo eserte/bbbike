@@ -86,7 +86,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="32"
 #: osm_watch: way id="1072662717" version="36"
-#: last_checked: 2026-06-20 (osm)
+#: last_checked: 2026-06-21
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -129,7 +129,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -1174,6 +1174,13 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 #: last_checked ^^^
 # 
 ### Lichtenberg ###
+# 
+#: also_indoor: traffic (G,no-T,no-H,no-W)
+#: last_checked: 2026-06-21
+#: check_frequency: 14d (traffic)
+#: next_check: 2026-07-31 (Halteverbotsschilder)
+#: valid: -20260731
+Rathausstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 15670,12022 15685,12154
 # 
 #: next_check_id: WEISSETAUBE-2025
 #: last_checked: 2026-04-29 (luftbildsuche)

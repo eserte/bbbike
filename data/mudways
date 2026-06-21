@@ -609,12 +609,15 @@ Am Alten Fenn: Feinschotterweg	X 17060,4848 17119,4931 17246,5089 17266,5134 172
 Bitburger Str.: Waldweg, kann an feuchten Tagen etwas schlammig werden	X 15548,17684 15515,17717 15488,17721 15461,17702 15367,17713
 # 
 #: mud: 2021-03-07: weitgehend trocken
+#: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
 NSG Fauler See: Waldweg	X 15990,16479 16091,16523 16107,16586 16138,16605 16172,16686 16239,16737 16303,16816 16369,16821
 # 
 #: mud: 2021-03-07: weitgehend trocken
+#: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
 NSG Fauler See - Drossener Str.: Waldweg	X 16369,16821 16353,16900 16381,16969
 # 
 #: mud: 2021-03-07: weitgehend trocken
+#: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
 NSG Fauler See - Elsastr./Suermondtstr.: Waldweg	X 15965,16482 15918,16383
 # 
 #: mud: 2021-03-15: etwas feuchtere Oberfläche, wenige leicht umfahrbare Pfützen
@@ -724,6 +727,7 @@ Hausvaterweg: unbefestigte Straße	X 20281,18690 20347,18667
 #: mud: 2025-07-10: zahlreiche Pfützen	note=Nur von der Rüdersdorfer Str. aus gesehen; vermutlich nach Berechnung des Bodenfeuchtewerts sind in Tempelhof 7.3mm Niederschlage heruntergekommen, ansonsten wäre es h=q3,wet
 #: mud: 2025-12-19: weitgehend trocken, einige leicht matschige Stellen	h=q1-,wet
 #: mud: 2026-04-21: zahlreiche Pfützen	h=q3,wet	note=Nur von der Rüdersdorfer Str. aus gesehen
+#: mud: 2026-06-21: trocken	h=q0
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): wassergebundene Decke	X 12944,11760 13052,11867
 # 
 #: mud: 2021-12-11: zahlreiche Pfützen
@@ -892,12 +896,15 @@ Blohmstr. - Diedersdorfer Weg: unbefestigter Waldweg	X 9093,-1670 8972,-1581
 #: note: hier auch etwas Autoverkehr, deshalb vermutlich die schlechtere Qualität als im restlichen Abschnitt des Orankestrands
 #: mud: 2023-01-06: einige Pfützen, etwas matschig	h=q2,wet
 #: mud: 2026-04-07: keine Beeinträchtigungen	h=q0
+#: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
 Orankestrand: unbefestigter Weg, etwas Schotter	X 15866,16393 15813,16319
 # 
 #: mud: 2023-01-06: leicht feuchtere Oberfläche	h=q0-,wet
+#: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
 Orankestrand: unbefestigter Weg, etwas Schotter	X 15813,16319 15782,16277 15731,16208
 # 
 #: mud: 2023-01-06: einigen Pfützen, etwas matschig	h=q2,wet
+#: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
 Orankestrand: unbefestigter Weg	X 15731,16208 15664,16115 15592,16069 15479,16060
 # 
 #: mud: 2023-02-25: zahlreiche Pfützen	h=q3,wet	by=mapillary
@@ -955,6 +962,7 @@ Kolonie Albrechtshöhe: wassergebundene Decke	X 10260,5953 10215,5959 9955,5993
 #: mud: 2023-10-19: weitgehend trocken	h=q0-,wet
 #: mud: 2025-10-23: zahlreiche umfahrbare Pfützen, teilweise etwas feucht	h=q2+,wet
 #: mud: 2025-11-08: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
+#: mud: 2026-06-21: trocken, leicht sandig	h=q0-,dry
 Straße 106: fester Sandweg	X 14599,14679 14608,14701 14666,14845 14828,15050
 # 
 #: mud: 2023-05-13: keine Beeinträchtigungen	h=q0
@@ -1117,6 +1125,7 @@ Verlängerte Schulzendorfer Str.: gut befahrbarer Waldweg	X 2150,22464 2015,22435
 (Weg am ehem. Güteraußenring): wassergebundene Decke	X 9522,-533 9562,-619
 # 
 #: mud: 2026-02-24: feuchte, leicht matschige Oberfläche	h=q2+,wet
+#: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke mit Unebenheiten	X 8264,10192 8276,10079
 # 
 #: mud: 2026-03-01: etwas feuchte Oberfläche	h=q1,wet	note=Spurrillen vom früheren Matschwetter
@@ -1124,6 +1133,7 @@ Verlängerte Schulzendorfer Str.: gut befahrbarer Waldweg	X 2150,22464 2015,22435
 (Zobtener Str. - Fischerstr.): unbefestigter Weg, etwas Schotter	X 16353,10207 16404,10286
 # 
 #: mud: 2026-05-06: sehr große Pfütze an der Einmündung Waxweiler Str.	h=q4,wet
+#: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
 (Perler Str. - Darßer Str.)	X 16256,17651 16358,17627 16453,17611
 # 
 #: mud: 2026-05-06: feuchte Oberfläche, einige Pfützen	h=q2,wet

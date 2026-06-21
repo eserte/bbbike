@@ -5494,7 +5494,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch[closed]: note 5093384 7
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-19 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -7593,6 +7593,7 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831929069308670071
 #: source_id: LMS-BR:411973/72 viz2021:13.37353,52.52075,15.06.2026,08:00 (neue Veranstaltung, bis 26.06.2026)
 #: source_id: LMS-BR:411974/72 viz2021:13.37203,52.51939,15.06.2026,08:00 (bis 26.06.2026)
+#: source_id: LMS-BR:412785/72 viz2021:13.372043,52.520143,21.06.2026,06:00 (bis 22.06.2026)
 Otto-von-Bismarck-Allee	2::temp 8433,12753 8309,12758
 Konrad-Adenauer-Str. Hˆhe Paul-Lˆbe-Haus	2::temp 8309,12758 8306,12609
 Paul-Lˆbe-Allee	2::temp 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593
@@ -9538,7 +9539,7 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: osm_watch[closed]: note 4953642 2
 #: osm_watch: note 5246727 3
 #: source_id: LMS-BR:407366/72 viz2021:13.45315,52.52627,06.05.2026,20:00 (Kraneinsatz, bis 08.05.2026) (inaktiv)
-#: last_checked: 2026-04-04 vvv
+#: last_checked: 2026-06-21 (von Thaerstr. aus gesehen) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="1528007580" version="1"
@@ -10008,12 +10009,15 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        },
        {
          'data' => '#: also_indoor: traffic (ex-G,ex-T,ex-H,no-W)
+#: note: Laut Baustellenschild der Wasserbetriebe bis August 2026
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-03 vvv
+#: last_checked: 2026-06-21 vvv
 #: check_frequency: 21d (traffic) vvv
+#: next_check: 2026-08-31 vvv
 Sabinensteig: Einbahnstraﬂenregelung	q4::inwork; 16395,16099 16442,15926
 Oberseestr.: Einbahnstraﬂenregelung	q4::inwork; 16442,15926 16491,15874 16537,15827
 Oberseestr.: Abschnitt der Straﬂe gesperrt	q4::inwork 16442,15926 16369,16003
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^

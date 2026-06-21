@@ -1820,6 +1820,8 @@ Margot-Friedländer-Platz	1 8830,11264 8935,11277
 Fürst-Bismarck-Str.	1 4017,22395 4037,22389
 Fürst-Bismarck-Str.	1 4032,22374 4017,22395
 # 
+Darßer Str.: Mittelstreifen	3nocross 16785,17524 16761,17561 16677,17678
+# 
 #: section ^^^
 ######################################################################
 #: section: empfohlene und unechte Sperrungen vvvvvvvvvvvvvvvvvvvvvvvv
@@ -4626,7 +4628,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 2
-#: last_checked: 2026-06-11 vvv
+#: last_checked: 2026-06-21 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2028-03-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1054783030" version="9"
@@ -5094,7 +5096,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2026-06-02
+#: last_checked: 2026-06-21
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (Tsp)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5188,7 +5190,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-06-15 vvv
+#: last_checked: 2026-06-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5669,7 +5671,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2026-06-04
+#: last_checked: 2026-06-21
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372

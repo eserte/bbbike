@@ -152,7 +152,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-06-01
+#: last_checked: 2026-06-19 (mapillary)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -525,7 +525,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-21
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -5020,7 +5020,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058 (letzter Stand 16.09.2021: Zwischenbericht)
 #: XXX wird hier saniert?
 #: osm_watch: way id="22047751" version="26"
-#: last_checked: 2026-06-03
+#: last_checked: 2026-06-21
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -12488,7 +12488,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-06-09
+#: last_checked: 2026-06-21
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -20430,10 +20430,7 @@ Eisenhammerweg: schlechtes Kopfsteinpflaster	Q3+ 1543,20060 1529,20131
 #: by: Stefan Rose:
 #: corrected_by: srt (guter Beton, Q0 -> ...)
 Wustrower Str.: Beton	Q1+ 16888,18610 17016,18436 17076,18355 17128,18281 17217,18165
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1636595.php
-#: XXX wird hier die Fahrbahndecke saniert? oder nur Gehwegvorstreckungen gebaut?
-#: last_checked: 2026-05-06
-#: check_frequency: 45d
+# REMOVED (nur Gehwegvorstreckungen) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1636595.php --- #: XXX wird hier die Fahrbahndecke saniert? oder nur Gehwegvorstreckungen gebaut? --- #: last_checked: 2026-06-21 --- #: check_frequency: 45d
 #: corrected_by: srt (Q0 -> Q1-, added "mit einigen Schäden")
 Wustrower Str.: Beton mit einigen Schäden	Q1- 17217,18165 17341,17990
 #: confirmed_by: srt (leichte Anpassung der Kategorie: Q0 -> Q0-)
@@ -26654,7 +26651,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="9"
-#: last_checked: 2026-06-03
+#: last_checked: 2026-06-21
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452

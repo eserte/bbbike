@@ -1058,6 +1058,9 @@ Schloßpark Charlottenburg -> Luisenpl.: Mittelstreifen mit niedrigem Geländer, K
 Margot-Friedländer-Platz	1 8830,11264 8935,11277
 Fürst-Bismarck-Str.	1 4017,22395 4037,22389
 Fürst-Bismarck-Str.	1 4032,22374 4017,22395
+Mittelstreifen	3nocross::ignrte 16785,17524 16761,17561 16677,17678
+Darßer Str. -> Perler Str.: Mittelstreifen	3::igndisp 16785,17524 16761,17561 16453,17611
+Perler Str. -> Darßer Str.: Mittelstreifen	3::igndisp 16453,17611 16761,17561 16677,17678
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
