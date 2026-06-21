@@ -28,7 +28,7 @@ use BBBikeYAML qw(LoadFile);
 
 # list of failing ids causing errors like
 #   {"error":{"message":"Unsupported get request","type":"MLYApiException","code":100,"error_subcode":33,"fbtrace_id":"..."}}
-my %skip_ids = map {($_,1)} qw(1009369795370425 1560453945705173);
+my %skip_ids = (); # map {($_,1)} qw(1009369795370425 1560453945705173);
 
 my $token;
 my $with_make = 1;
