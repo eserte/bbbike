@@ -3262,11 +3262,10 @@ Werner-Seelenbinder-Str.: Beton	Q0 -12927,-1576 -13092,-1538
 Am Kanal, Nebenstraße: Asphalt	Q0 -12542,-1305 -12339,-1246
 August-Bebel-Str.: Kopfsteinpflaster	Q2 -8469,-1541 -8485,-1445
 Paul-Gerhardt-Str.: Asphalt	Q0- 3232,803 3271,745 3412,534
-#: source_id: LS/222-W/26/072 (bis 01.07.2026)
-#: XXX nach den Bauarbeiten vielleicht asphaltiert?
-#: osm_watch: way id="24661005" version="20"
-#: next_check: 2026-07-01
-Alte B101-Trasse: feiner Schotter	Q1 7097,-527 6959,-743
+# REMOVED --- #: source_id: LS/222-W/26/072 (bis 01.07.2026) --- #: XXX nach den Bauarbeiten vielleicht asphaltiert? --- #: osm_watch: way id="24661005" version="21" --- #: next_check: 2026-07-01
+#: corrected_by: osm
+#: historical_note: früher (bis etwa Juni 2026): feiner Schotter, Q1
+Alte B101-Trasse: Asphalt	Q0 7097,-527 6959,-743
 (Postenweg): Beton, einige Fugen	Q0- 17245,-683 17806,-561 18170,-449
 Peter-Huchel-Str.: Asphalt	Q0 -13424,1290 -13253,1310 -13263,1394 -13277,1490 -13285,1588 -13294,1681
 Erich-Arendt-Str.: Asphalt	Q0 -13420,1478 -13277,1490 -13125,1508

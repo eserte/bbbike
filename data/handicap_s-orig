@@ -408,7 +408,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-06-15
+#: last_checked: 2026-06-22
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -448,7 +448,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-06-18 vvv
+#: last_checked: 2026-06-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -817,11 +817,12 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 #: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
 #: note: im Zuge der Grimmstr. kann die Absperrung weggeschoben sein
-#: last_checked: 2026-06-12 vvv
+#: last_checked: 2026-06-22 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260312
-#: valid: -20260630 vvv
+#: note "Sicherheits"-valid-Ende
+#: valid: -20260930 vvv
 Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 11110,9661 11141,9732
 #: note: etwa 60m bis zur nächsten Bordsteinabsenkung
 Müllenhoffstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 11311,9576 11110,9661

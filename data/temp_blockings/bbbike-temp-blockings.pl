@@ -12788,7 +12788,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: IM_009757 (inaktiv)
-#: source_id: LMS-BR:412360/72 viz2021:13.38769,52.52444,18.06.2026,12:00 (bis 22.06.2026)
+#: source_id: LMS-BR:412360/72 viz2021:13.38769,52.52444,18.06.2026,12:00 (bis 22.06.2026) (inaktiv)
 	2::temp 9385,13174 9254,13171
 EOF
      },
@@ -36843,6 +36843,7 @@ EOF
 #: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558,26.01.2026,05:00 (bis 06.03.2026) (inaktiv)
 #: source_id: LMS-BR:405392/72 viz2021:13.57271,52.46072,20.04.2026,07:00 (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:410351/72 viz2021:13.57271,52.46072,01.06.2026,06:00 (bis 05.06.2026) (inaktiv)
+#: source_id: LMS-BR:412917/72 viz2021:13.57271,52.46072,22.06.2026,07:00 (bis 07.08.2026)
 #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m (alte Meldung von September 2022)
@@ -36873,6 +36874,8 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mn777xebys2f
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260619 (neue Sperrung bis Anfang August 2026)
 #: by: https://www.entwicklungsstadt.de/umbau-am-bahnhof-koepenick-monatelang-vollsperrung-in-koepenick/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mou3jdgefk25
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1684539.php
 #: osm_watch: note 3566736 14
 Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
 # REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
@@ -37862,7 +37865,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3momhn2df722v
 #: source_id: viz2021:13.385307,52.511837,14.08.2023,08:00 (bis 22.08.2023) (inaktiv)
 #: source_id: viz2021:13.384516,52.511697,15.08.2023,08:00 (bis 22.08.2023) (inaktiv)
-#: source_id: LMS-BR:412460/72 viz2021:13.38651,52.51281,19.06.2026,05:00 (bis 21.06.2026)
+#: source_id: LMS-BR:412460/72 viz2021:13.38651,52.51281,19.06.2026,05:00 (bis 21.06.2026) (inaktiv)
 # REMOVED (hier existiert ein Radweg am Veranstaltungsgelände vorbei) ---	q4::temp 9075,11756 9171,11777
 # REMOVED --- Mauerstr.	2::temp 9171,11777 9138,11872
 Glinkastr.	2::temp 9195,11972 9207,11880
@@ -41848,9 +41851,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1352930.php (unklare Instandsetzung)
-#: osm_watch: way id="238032318" version="6"
+#: osm_watch: way id="238032318" version="7"
 #: add_fragezeichen: Wann ist der Steg wieder offen?
-#: last_checked: 2024-09-08 (mapillary)
+#: last_checked: 2026-06-21 (osm)
 #: check_frequency: 120d
 	2::inwork 11162,22939 11150,22898
 EOF
@@ -45417,7 +45420,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-18 vvv
+#: last_checked: 2026-06-22 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -46433,7 +46436,7 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1831929069308670071
 #: source_id: LMS-BR:411973/72 viz2021:13.37353,52.52075,15.06.2026,08:00 (neue Veranstaltung, bis 26.06.2026)
 #: source_id: LMS-BR:411974/72 viz2021:13.37203,52.51939,15.06.2026,08:00 (bis 26.06.2026)
-#: source_id: LMS-BR:412785/72 viz2021:13.372043,52.520143,21.06.2026,06:00 (bis 22.06.2026)
+#: source_id: LMS-BR:412785/72 viz2021:13.372043,52.520143,21.06.2026,06:00 (bis 22.06.2026) (inaktiv)
 Otto-von-Bismarck-Allee	2::temp 8433,12753 8309,12758
 Konrad-Adenauer-Str. Höhe Paul-Löbe-Haus	2::temp 8309,12758 8306,12609
 Paul-Löbe-Allee	2::temp 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593
@@ -47320,7 +47323,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2026-05-09
+#: last_checked: 2026-06-22
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 # REMOVED (hier Radfahrer frei) ---	q4::inwork; 7696,7771 7632,7807
@@ -47577,14 +47580,14 @@ EOF
        until => undef, # 1753999200, # 2025-08-01 00:00
 #      text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und Bayernring, Fahrbahn gesperrt, vermutlich bis 31.07.2025, evtl. wird verlängert',
 #      text  => 'Loewenhardtdamm: Bauarbeiten zwischen Badener Ring und General-Pape-Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Loewenhardtdamm: Bauarbeiten in Höhe Bayernring mit Sperrung, Fahrbahn gesperrt, möglicherweise bis Juni 2026',
+       text  => 'Loewenhardtdamm: Bauarbeiten in Höhe Bayernring mit Sperrung, Fahrbahn gesperrt, geplant bis Juni 2026, eventuell werden die Bauarbeiten verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (re-G,W,ex-T,A)
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-05-30
+#: last_checked: 2026-06-22
 #: check_frequency: 90d
 #: next_check: 2026-06-30 (Baustellenschild der Wasserbetriebe)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
@@ -48424,17 +48427,20 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-02-09 00:00:00"), # 1743310800, # 2025-03-30 07:00
-       until => $isodate2epoch->("2026-06-30 17:00:00"), # 1749225600, # 2025-06-06 18:00
+       until => $isodate2epoch->("2026-07-10 17:00:00"), # $isodate2epoch->("2026-06-30 17:00:00"), # 1749225600, # 2025-06-06 18:00
 #      text  => 'Seelingstr.: an der Schloßstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2025 07:00 bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
-       text  => 'Seelingstr.: Bauarbeiten zwischen Schloßstr. und Danckelmannstr., Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2026',
+#      text  => 'Seelingstr.: Bauarbeiten zwischen Schloßstr. und Danckelmannstr., Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2026',
+       text  => 'Seelingstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2026',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
 # REMOVED --- #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv) --- #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv) ---	q4::inwork 2920,12070 2686,12051
 #: source_id: LMS-BR:398542/72 viz2021:13.29634,52.51568,09.02.2026,07:00 (Einbahnstraße, aber in welche Richtung? bis 30.06.2026)
 	q4::inwork; 2920,12070 3088,12094
+#: source_id: LMS-BR:412907/72 viz2021:13.28778,52.51516,22.06.2026,07:00 (bis 10.07.2026)
+Seelingstr.: zwischen Sophie-Charlotten-Str. und Danckelmannstr.	q4::inwork 2485,12032 2686,12051
 EOF
      },
      { from  => undef, # 
@@ -50588,7 +50594,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-20 vvv
+#: last_checked: 2026-06-22 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -50684,7 +50690,7 @@ EOF
        until => undef, # 1761951599, # 2025-10-31 23:59
 #      text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Oktober 2025',
 #      text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, geplant bis Februar 2026, voraussichtlich wird verlängert',
-       text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt (Stand Ende Mai 2026: noch immer gesperrt)',
+       text  => 'Mussehlstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt (Stand Mitte Juni 2026: noch immer gesperrt)',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: MUSSEHL-2025
@@ -50695,7 +50701,7 @@ EOF
 #: osm_watch: note 5124809 1
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2026
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
-#: last_checked: 2026-05-30 vvv
+#: last_checked: 2026-06-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2026-02-20 (Halteverbotsschilder) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026; mittlerweile bis 30.04.2026 (aber bereits obsolet)
@@ -50876,20 +50882,24 @@ EOF
 Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
 EOF
      },
-     { from  => 1757626351, # 2025-09-11 23:32
-       until => 1765908940, # undef, # 1762470000, # 2025-11-07 00:00
+     { from  => undef, # 1757626351, # 2025-09-11 23:32
+       until => undef, # 1765908940, # undef, # 1762470000, # 2025-11-07 00:00
 #      text  => 'Schreiberring: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 6.11.2025, evtl. wird verlängert',
-       text  => 'Schreiberring und Wolffring: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Schreiberring und Wolffring: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Schreiberring: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (ex-T,G)
-#: note: laut Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
+#: note: laut altem Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
+#: also_indoor: traffic (no-G,no-T,no-H,no-W)
+#: add_fragezeichen: Ist der Schreiberring weiterhin gesperrt?
+#: last_checked: 2026-06-22
+Schreiberring	q4::inwork 8561,8252 8666,8305
+# REMOVED --- #: also_indoor: traffic (ex-T,G)
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: last_checked: 2025-12-11 (traffic) vvv --- #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: check_frequency: 30d vvv
+# REMOVED --- Schreiberring	q4::inwork 8941,8186 8861,8242 8776,8285
 # REMOVED --- #: next_check: 2025-12-05 (Halteverbotsschilder am Wolffring) vvv
-Schreiberring	q4::inwork 8941,8186 8861,8242 8776,8285
-#: note: hier vermutlich nur Baustelleneinrichtungsfläche für die eigentlich Baustelle am Schreiberring
-Wolffring, südliche Fahrbahn	q4::inwork; 8969,8278 9032,8254
+# REMOVED --- #: note: hier vermutlich nur Baustelleneinrichtungsfläche für die eigentlich Baustelle am Schreiberring --- Wolffring, südliche Fahrbahn	q4::inwork; 8969,8278 9032,8254
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -51446,15 +51456,15 @@ EOF
 EOF
      },
      { from  => 1761110409, # 2025-10-22 07:20
-       until => $isodate2epoch->("2026-07-06 23:59:59"), # $isodate2epoch->("2026-05-13 23:59:59"),
+       until => $isodate2epoch->("2026-08-21 23:59:59"), # $isodate2epoch->("2026-05-13 23:59:59"),
 #      text  => 'Gustav-Adolf-Str.: Sperrung Richtung Nordosten, außerdem Einbahnstraßenregelung in der Amalienstr. und Sperrung der Anbindung Gäblerstr., evtl. sind auch Radfahrer betroffen, bis Mai 2026 ',
-       text  => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 6. Juli 2026',
+       text  => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 21. August 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
-#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026)
+#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026) (bis 21.08.2026)
 #: source_id[inactive]: bvg2024:156#HIM_FREETEXT_303396
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Wigandstaler Str.: Einfahrt verboten	q3::inwork; 12910,17123 13037,16957
@@ -51682,7 +51692,7 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
 #: also_indoor: traffic (re-G,ex-T,W[mittlerweile richtige Lage],no-H)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2026-05-30
+#: last_checked: 2026-06-22
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-05-31 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295
@@ -51725,12 +51735,13 @@ EOF
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
-#: last_checked: 2026-06-11 (architektur-urbanistik) vvv
+#: last_checked: 2026-06-22 vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
 Gotenstr.: südlich der Kreuzung	q4::inwork 7497,7761 7499,7880
-Gotenstr.: nördlich der Kreuzung	q4::inwork 7499,7880 7499,7937
+Gotenstr.: nördlich der Kreuzung komplett gesperrt, auch Bürgersteige	2::inwork 7499,7880 7499,7937
+Quartiersweg: komplett gesperrt	2::inwork 7548,7884 7537,7859
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -52130,10 +52141,10 @@ EOF
 #: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen? -> nein, noch immer mit langer Umfahrung
 #: osm_watch: way id="1417905902" version="3"
 #: osm_watch: way id="1257637878" version="3"
-#: osm_watch: note 5142999 1
+#: osm_watch: note 5142999 2
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
 #: note: Ausschilderung am westlichen Ende: Verbot für Fahrzeuge aller Art, Anwohner frei
-#: last_checked: 2026-06-10
+#: last_checked: 2026-06-21 (osm note)
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 EOF
@@ -52259,19 +52270,24 @@ EOF
 EOF
      },
      { from  => 1769925600, # 2026-02-01 07:00
-       until => undef, # $isodate2epoch->("2026-06-05 23:59:59"), # undef, # 1774195200, # 2026-03-22 17:00
+       until => $isodate2epoch->("2026-08-07 17:00:00"), # undef, # $isodate2epoch->("2026-06-05 23:59:59"), # undef, # 1774195200, # 2026-03-22 17:00
 #      text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 02.02.2026 bis 30.04.2026',
 #      text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, bis Anfang Juni 2026',
-       text  => 'Knesebeckstr.: Einbahnstraße zwischen Savignyplatz und Mommsenstr., offen Richtung Norden, Ende der Bauarbeiten unbekannt',
+#      text  => 'Knesebeckstr.: Einbahnstraße zwischen Savignyplatz und Mommsenstr., offen Richtung Norden, Ende der Bauarbeiten unbekannt',
+       text  => 'Knesebeckstr.: Sperrung zwischen Kurfürstendamm und Savignyplatz, evtl. ist auch der Radverkehr betroffen, bis 7.8.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:397835/72 viz2021:13.32184,52.5019,02.02.2026,07:00 (bis 22.03.2026) (inaktiv)
 #: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (südlicher Abschnitt) (bis 30.04.2026) (bis 05.06.2026)
+#: source_id: LMS-BR:412910/72 viz2021:13.32186,52.50204,22.06.2026,07:00 (zwischen Kudamm und Savignyplatz, bis 07.08.2026)
+#: source_id: LMS-BR:412911/72 viz2021:13.32181,52.50279,22.06.2026,07:00 (Mommsenstr., bis 07.08.2026)
+#: also_indoor: traffic (G,T,H,W)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mougzc3dhs25
+Knesebeckstr. zwischen Ku'damm und Mommsenstr.	q4::inwork 4838,10597 4841,10686
+Knesebeckstr. zwischen Mommsenstr. und Savignyplatz	q3::inwork 4841,10686 4857,10909
+Mommsenstr.	q3::inwork 4685,10689 4841,10686
 # REMOVED (laut mapillary im südlichen Abschnitt keine Einbahnstraßenregelung mehr) --- #: also_indoor: traffic (T,ex-G,ex-W) --- #: last_checked: 2026-05-22 (mapillary) --- #: check_frequency: 21d --- #: next_check: 2026-06-05 ---	q4::inwork; 4838,10597 4819,10355
-#: also_indoor: traffic (no-G,T,no-W)
-#: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-05-30
-	q4::inwork; 4858,10943 4857,10909 4841,10686
+# REMOVED --- #: also_indoor: traffic (no-G,T,no-W) --- #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? --- #: last_checked: 2026-05-30 ---	q4::inwork; 4858,10943 4857,10909 4841,10686
 EOF
      },
      { from  => undef, # 
@@ -52775,14 +52791,14 @@ EOF
 EOF
      },
      { from  => 1774383320, # 2026-03-24 21:15
-       until => 1782165600, # 2026-06-23 00:00
-       text  => 'Pichelswerderstr.: Bauarbeiten zwischen Freiheit und Gewerbehof, Einbahnstraße offen Richtung Norden, bis 22.06.2026',
+       until => $isodate2epoch->("2026-07-27 23:59:59"), # 1782165600, # 2026-06-23 00:00
+       text  => 'Pichelswerderstr.: Bauarbeiten zwischen Freiheit und Gewerbehof, Einbahnstraße offen Richtung Norden, bis 27.07.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:402799/72 viz2021:13.21378,52.53175, (bis 23.06.2026)
+#: source_id: LMS-BR:402799/72 viz2021:13.21378,52.53175, (bis 23.06.2026) (bis 27.07.2026)
 #: note: Einbahnstraßenregelung genau genommen nur bis zur Kaufland-Ausfahrt
 #: last_checked: 2026-03-31 (mapillary)
-#: next_check: 2026-06-23 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-07-27 (VIZ-Verkehrsmeldung)
 	q4::inwork; -2576,13777 -2669,13488
 EOF
      },
@@ -53473,17 +53489,17 @@ EOF
        text  => 'Wünsthoffstr.: Einbahnstraßenregelung bzw. Sperrung der Fahrbahn, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (T[zu lang?],G[zu lang?],W[zu lang?])
+#: also_indoor: traffic (T,G,W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: osm_watch: note 5292595 1
-#: last_checked: 2026-06-13 (traffic)
-#: check_frequency: 14d (traffic)
-Wünsthoffstr.: Sperrung der Fahrbahn	q4::inwork 8461,8084 8519,8088
+#: osm_watch: note 5292595 2
+#: last_checked: 2026-06-22
+#: check_frequency: 21d (traffic)
+Wünsthoffstr.: Sperrung der Fahrbahn	q4::inwork 8461,8084 8519,8088 8620,8095
 #: also_indoor: traffic (no-T,no-G,W[fälschlicherweise Komplettsperrung])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: note 5292048 1
-#: last_checked: 2026-06-13 (traffic)
-#: check_frequency: 14d (traffic)
+#: last_checked: 2026-06-22
+#: check_frequency: 21d (traffic)
 Wünsthoffstr.: Einbahnstraßenregelung	q4::inwork; 8461,8097 8265,8092
 EOF
      },
@@ -53537,7 +53553,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260504 (26.05. bis 16.06.2026)
 #: osm_watch: note 5352757 1
 #: add_fragezeichen: Ist der Weg noch immer abgesperrt?
-#: last_checked: 2026-06-20
+#: last_checked: 2026-06-22
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2026-06-16
 Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12457,10309 12502,10244
@@ -53799,11 +53815,13 @@ Mirbachplatz	q4::inwork 13331,16424 13348,16387
 EOF
      },
      { from  => $isodate2epoch->("2026-06-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2026-07-31 23:59:59"),
-       text  => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 31.7.2026',
+       until => $isodate2epoch->("2026-07-17 23:59:59"), # $isodate2epoch->("2026-07-31 23:59:59"),
+       text  => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 17.7.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1682627.php
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mov62s6ock26 (hier bis 31.07.2026)
+#: source_id: LMS-BR:412913/72 viz2021:13.30654,52.52884,22.06.2026,07:00 (bis 17.07.2026)
 	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 EOF
      },
@@ -53842,6 +53860,15 @@ EOF
        data  => <<'EOF',
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5548
 	2::inwork -13205,1928 -13200,1980 -13563,2297
+EOF
+     },
+     { from  => 1782018000, # 2026-06-21 07:00
+       until => 1784386800, # 2026-07-18 17:00
+       text  => 'Artuswall: Bauarbeiten zwischen Sigismundkorso und Benediktinerstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 22.06.2026 07:00 bis 18.07.2026 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:412909/72 viz2021:13.269045,52.630879,22.06.2026,07:00 (bis 18.07.2026)
+	q4::inwork 946,24934 949,24882 968,24815
 EOF
      },
     );

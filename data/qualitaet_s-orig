@@ -374,8 +374,8 @@ Trakehner Allee: Asphalt	Q0 -496,11720 -722,11598
 Crellestr.: gutes Kopfsteinpflaster	Q1- 7307,8945 7484,9066 7524,9093 7570,9124 7647,9196
 Crellestr.: Kopfsteinpflaster	Q2 7647,9196 7770,9336
 Lucie-Leydicke-Platz: Asphalt	Q0 7882,9490 7836,9413 7770,9336
+Lucie-Leydicke-Platz: Verbundsteinpflaster	Q1 7836,9413 7770,9395
 Neue Kulmer Str.: Kopfsteinpflaster	Q2 7770,9336 7770,9395 7771,9479
-Willmanndamm: Verbundsteinpflaster	Q1 7836,9413 7770,9395
 Helmstr.: gutes Kopfsteinpflaster	Q1 7524,9093 7490,9116 7439,9154 7382,9187
 Belziger Str.: Asphalt	Q0 7308,9163 7101,9027
 Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
@@ -9379,7 +9379,7 @@ Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8
 #: next_check_id: MUSSEHL-2025
 #: note: kein "add_fragezeichen", unklares Ende der Bauarbeiten
 #: XXX: Ist die Qualität nach den Bauarbeiten besser geworden?
-#: last_checked: 2026-05-30
+#: last_checked: 2026-06-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-20
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8982,8781 8926,8682 8842,8561
