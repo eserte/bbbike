@@ -5732,7 +5732,7 @@ Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 150
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-06-22
+#: last_checked: 2026-06-23
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -6748,6 +6748,7 @@ Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projec
 #: by: https://www.morgenpost.de/berlin/article410780946/doerpfeldstrasse-tram-ausbau-steckt-fest-bedarf-weiterer-abstimmungen.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25995.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (Planung nur bis Waldstr., Fertigstellung offen)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/bauarbeiten-im-berliner-sudosten-dauern-viel-langer-als-erhofft-eine-magistrale--zwei-baustellen-nacheinander-15739040.html
 #: osm_watch: way id="11389403" version="44"
 #: last_checked: 2026-05-31
 #: check_frequency: 540d
@@ -7805,7 +7806,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-06-22
+#: last_checked: 2026-06-23
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8257,6 +8258,8 @@ Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_54_3861_3956_online.pdf (Eingruppierung in das Straßenreinigungsverzeichnis (der bestehende Abschnitt))
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/bebauungsplanverfahren/bebauungsplan.1491829.php (Bebauungsplan II-201da)
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/bebauungsplanverfahren/01_ii-201da_bebauungsplanentwurf.pdf
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1685015.php
+#: by: https://www.entwicklungsstadt.de/humboldthafen-sued-was-berlin-am-hauptbahnhof-plant/
 #: XXX ein paar Meter existieren bereits; wird die Uferpromenade mit dem Spreeuferweg verknüpft?
 #: last_checked: 2026-06-02
 #: check_frequency: 180d
@@ -8348,7 +8351,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-06-22
+#: last_checked: 2026-06-23
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8951,9 +8954,9 @@ Quartiersweg - Wilhelm-Kabus-Str.: geplanter Geh- und Radweg	?::projected 7639,7
 #: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024) (bis 08.12.2024) (bis 22.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:162#fe73d49a-2471-4d3b-a756-05ec6943ea49 (2024-11-25 - 2024-12-08)
 #: source_id[inactive]: bvg2024:162#dc4f3cec-5359-4dd3-937e-28db262a7b3f (bis 2025-01-13)
-#: source_id[inactive]: bvg2024:27#HIM_FREETEXT_307837 (Haltestellenverlegung ab 01.12.2025) (zwischenzeitlich entfernt, 3x)
-#: source_id[inactive]: bvg2024:164#HIM_FREETEXT_307835 (-"-)
-#: source_id[inactive]: bvg2024:164#HIM_FREETEXT_307834 (-"-) (zwischenzeitlich nicht aktiv)
+#: source_id: bvg2024:27#HIM_FREETEXT_307837 (Haltestellenverlegung ab 01.12.2025) (zwischenzeitlich entfernt, 4x)
+#: source_id: bvg2024:164#HIM_FREETEXT_307835 (-"-) (zwischenzeitlich entfernt, 2x)
+#: source_id: bvg2024:164#HIM_FREETEXT_307834 (-"-) (zwischenzeitlich entfernt, 2x)
 #: source_id: LMS-BR:400220/72 viz2021:13.5782,52.44641,27.02.2026,07:00 (Lüdersstr., möglicherweise nicht für den Radverkehr, bis 13.03.2026) (inaktiv)
 #: osm_watch: note 4800371 5
 #: XXX Bauphasen laut Bauzeitenplan aus den Ausschreibungsunterlagen: Alt-Köpenick 17.02.2025 - 30.11.2025; Kirchstr. 01.12.2025 - 09.05.2027
@@ -9983,6 +9986,7 @@ Carl-Herz-Ufer: Plannung einer Fahrradstraße + Asphaltierung	?::projected 10627,
 #: by: https://www.entwicklungsstadt.de/streit-um-goerlitzer-bruecken-erhalt-geplant-sperrung-bleibt/
 #: by: https://www.morgenpost.de/berlin/article412243870/goerlitzer-bruecken-senat-und-bahn-planen-erhalt-doch-erst-folgt-die-sperrung.html
 #: by: https://www.morgenpost.de/berlin/article412316217/so-soll-die-rettung-der-goerlitzer-bahnbruecken-doch-noch-gelingen.html
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8340 (Antrag)
 #: osm_watch: note 5278957 2
 #: osm_watch: way id="24042478" version="18"
 #: last_checked: 2026-06-15
@@ -10016,7 +10020,7 @@ Rathenow: nach den Bauarbeiten mit Radschutzstreifen	? -62108,21448 -62111,21747
 #: osm_watch: way id="1151333062" version="4"
 #: osm_watch: way id="23755731" version="17"
 #: osm_watch: note 3954722 6
-#: last_checked: 2026-06-22
+#: last_checked: 2026-06-23
 #: check_frequency: 120d
 #: next_check: 2027-06-30 (infravelo)
 Charlottenstr.: mögliche Fortführung der Fahrradstraße	? 9569,11631 9581,11523 9593,11424 9603,11328
@@ -10059,6 +10063,11 @@ Elsflether Str.: Zebrastreifen soll entstehen	? -4040,13593 -4011,13656 -3992,13
 Spektelakesteg I: geplante Erhaltungsmaßnahmen	?::projected -6816,15318 -6819,15305
 Spektelakesteg II: geplante Erhaltungsmaßnahmen	?::projected -6147,15204 -6184,15162
 #: next_check ^^^
+# 
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8442 (noch ohne Termin)
+#: last_checked: 2026-06-23 (BVV-Drucksache)
+#: check_frequency: 120d
+Nord-Süd-Grünzug: Benennung in Margarete-Berent-Passage	? 8175,8815 8002,8315 7996,8298 7837,7899
 # 
 #: section ^^^
 #: ignore ^^^
@@ -12812,6 +12821,7 @@ An der Kanalbrücke: befindet sich hier die Straße? Qualität?	? -18547,4524 -1847
 #: by: https://entwicklungsstadt.de/u3-verlaengerung-berlin-kosten-steigen-auf-160-millionen-euro/
 #: by: https://www.nd-aktuell.de/artikel/1194529.u-bahn-u-mexikoplatz-baustart-in-elf-monaten.html (Baustart am 1.9.2026)
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/u3-verlaengerung
+#: by: https://www.nd-aktuell.de/artikel/1200581.u-bahn-bau-kein-termin-fuer-u-bahn-zum-mexikoplatz.html (Baustart nicht vor 2027)
 #: next_check: 2030-12-31 (Tsp)
 U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,3442 -1105,3303
 # 

@@ -5470,7 +5470,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
 Weserstr. zwischen Innstr. und Treptower Str.	q4::inwork 13217,8493 13384,8354 13566,8212
-#: source_id[inactive]: bvg2024:171#HIM_FREETEXT_286260
+#: source_id: bvg2024:171#HIM_FREETEXT_286260 (zwischenzeitlich entfernt)
 #: by: https://fahrinfo.vbb.de/him-uploads/1748254774225_Kartenausschnitt_Treptower_Str.png
 #: also_indoor: traffic (T)
 #: note: Länge der Sperrung ca. 50m
@@ -6499,7 +6499,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: also_indoor: traffic (T,no-G,H)
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="18"
-#: source_id[inactive]: bvg2024:396#HIM_FREETEXT_309001
+#: source_id: bvg2024:396#HIM_FREETEXT_309001 (zwischenzeitlich entfernt)
 #: last_checked: 2026-06-14 (osm) vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
@@ -7232,7 +7232,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-22 vvv
+#: last_checked: 2026-06-23 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -7448,11 +7448,11 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
        {
          'data' => '#: next_check_id: PETERSBURGER-2024
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083535036" version="16"
+#: osm_watch: way id="1083535036" version="17"
 #: osm_watch: way id="1119255054" version="13"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-06-02
+#: last_checked: 2026-06-21 (osm)
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -7818,19 +7818,21 @@ Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,157
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
 #: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026) (bis 17.02.2026) (bis 23.07.2026)
+#: source_id: LMS-BR:413048/72 viz2021:13.29035,52.49154,23.06.2026,06:00 (hier bis Auguste-Viktoria-Str., bis 02.10.2026)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
-#: also_indoor: traffic (re-H[anderer Abschnitt],ex-T,A[shorter],ex-G[shorter])
+#: also_indoor: traffic (re-H[ein anderer Abschnitt],re-T[shorter],A,re-G[shorter])
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-06-13 (traffic)
+#: last_checked: 2026-06-23 (traffic)
 #: check_frequency: 60d (traffic)
-#: next_check: 2026-07-23 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-07-23 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-02 (VIZ-Verkehrsmeldung)
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 2396,9427 2467,9425
-	q4::inwork 2467,9425 2592,9419
+Caspar-Theyß-Str.: westlich und östlich Wangenheimstr.	q4::inwork 2467,9425 2592,9419 2728,9409
 ',
          'from' => 1737970440,
          'id' => 4247,
-         'text' => 'Caspar-Theyß-Str.: Bauarbeiten zwischen Humboldtstr. und Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 23.07.2026, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Caspar-Theyß-Str.: Bauarbeiten im Bereich Wangenheimstr., Sperrung der Fahrbahn, voraussichtlich bis 02.10.2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8454,7 +8456,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 #: source_id: viz2021:13.29402,52.48994,01.07.2025,10:03 (Salzbrunner Str., bis 15.07.2025) (inaktiv)
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: LMS-BR:374539/72 viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
-#: source_id[inactive]: bvg2024:110#HIM_FREETEXT_284868
+#: source_id: bvg2024:110#HIM_FREETEXT_284868 (zwischenzeitlich entfernt)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
@@ -8487,7 +8489,7 @@ Caspar-Theiß-Str.: Sperrung der Fahrbahn an der Paulsborner Str., Gehweg für Rad
        {
          'data' => '#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (Bouchéstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025) (inaktiv)
 # REMOVED (Einbahnstraße offen für Radfahrer) --- Bouchéstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_286893 (ohne Endedatum)
+#: source_id: bvg2024:194#HIM_FREETEXT_286893 (ohne Endedatum) (zwischenzeitlich entfernt)
 #: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:371046/72 viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
@@ -9102,7 +9104,7 @@ Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
 #: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026) (bis 21.08.2026)
-#: source_id[inactive]: bvg2024:156#HIM_FREETEXT_303396
+#: source_id: bvg2024:156#HIM_FREETEXT_303396 (zwischenzeitlich entfernt)
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Wigandstaler Str.: Einfahrt verboten	q3::inwork; 12910,17123 13037,16957
 Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
@@ -9239,6 +9241,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
+#: osm_watch: note 5200828 2
 #: last_checked: 2026-06-22 vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
@@ -9265,10 +9268,10 @@ Quartiersweg: komplett gesperrt	2::inwork 7548,7884 7537,7859
 #: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/sellerstra%C3%9Fe-1-15-errichtung-und-b%C3%BCro-und-laborgeb%C3%A4udes.1506/#post-26917
 #: osm_watch: way id="1080985512" version="16"
-#: osm_watch: way id="1409889274" version="14"
+#: osm_watch: way id="1409889274" version="15"
 #: osm_watch: way id="1430307301" version="5"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-06-07 vvv
+#: last_checked: 2026-06-22 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 # REMOVED (mittlerweile wieder offen, wegen der Bauarbeiten an der Nordhafenbrücke) ---	2::inwork 7662,14579 7696,14577 7733,14570
@@ -9488,7 +9491,7 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
        {
          'data' => '#: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
 #: osm_watch[closed]: note 4953642 2
-#: osm_watch: note 5246727 3
+#: osm_watch: note 5246727 4
 #: source_id: LMS-BR:407366/72 viz2021:13.45315,52.52627,06.05.2026,20:00 (Kraneinsatz, bis 08.05.2026) (inaktiv)
 #: last_checked: 2026-06-21 (von Thaerstr. aus gesehen) vvv
 #: check_frequency: 120d vvv
@@ -10747,17 +10750,7 @@ Mirbachplatz	q4::inwork 13331,16424 13348,16387
          'type' => 'handicap',
          'until' => 1819749599
        },
-       {
-         'data' => '#: source_id: LMS-BR:412342/72 viz2021:13.38226,52.53129, (bis 23.06.2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mok5z4x4ok2f (hier nur Kfz-Verkehr)
-	q4::temp 8870,13926 9011,14019 9070,14058
-',
-         'from' => 1781804522,
-         'id' => 4647,
-         'text' => 'Zinnowitzer Str.: zwischen Chausseestr. und Caroline-Michaelis-Str. Veranstaltung, evtl. ist auch der Radverkehr betroffen, bis 22.06.2026 22:00',
-         'type' => 'handicap',
-         'until' => 1782165600
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:412466/72 viz2021:13.41018,52.55,19.06.2026,07:00 (bis 18.07.2026)
 	q4::inwork 10729,16042 10593,16037

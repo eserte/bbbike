@@ -56,7 +56,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 #: last_checked: 2026-06-18 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083527067" version="13"
+#: osm_watch: way id="1083527067" version="14"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="182614432" version="27"
@@ -86,7 +86,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="32"
 #: osm_watch: way id="1072662717" version="36"
-#: last_checked: 2026-06-21
+#: last_checked: 2026-06-23
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -408,7 +408,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-06-22
+#: last_checked: 2026-06-23
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -906,7 +906,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 # 
 #: next_check_id: PERLEBERGER-2024
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
-#: source_id[inactive]: bvg2024:m27#HIM_FREETEXT_302033
+#: source_id: bvg2024:m27#HIM_FREETEXT_302033 (zwischenzeitlich entfernt)
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],ex-W,re-ex-H)
@@ -4137,7 +4137,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26050.pdf
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
-#: osm_watch: way id="27944267" version="24"
+#: osm_watch: way id="27944267" version="25"
 #: osm_watch[closed]: note 5299211 2
 #: XXX alter Eintrag: (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
 #: last_checked: 2026-05-18 (marzahn-hellersdorf live)
