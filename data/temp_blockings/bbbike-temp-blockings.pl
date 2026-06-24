@@ -40826,7 +40826,7 @@ EOF
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2026-05-27
+#: last_checked: 2026-06-24
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -41117,7 +41117,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="18"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001 (zwischenzeitlich entfernt)
-#: last_checked: 2026-06-14 (osm) vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -42263,7 +42263,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-06-18
+#: last_checked: 2026-06-24
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 # REMOVED --- #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -50086,7 +50086,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -52772,13 +52772,13 @@ EOF
 EOF
      },
      { from  => 1774735200, # 2026-03-28 23:00
-       until => 1782856799, # 2026-06-30 23:59
+       until => 1782335264, # 1782856799, # 2026-06-30 23:59
        text  => 'Altenhof: Bauarbeiten, Sperrung, ab 30. März 2026 bis Ende Juni 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-03-2026-l238-deckenerneuerung-altenhof
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%20238%20Altenhof%20-%20KP%20L%2023%20Baubeginn%20Deckenerneuerung_Karte%2013-03-26.pdf
-#: source_id: LS/221-E/26/020 (bis 30.06.2026)
+#: source_id: LS/221-E/26/020 (bis 30.06.2026) (nur noch Gegenverkehrsregelung bis 31.07.2026)
 #: source_id: 256000917 (bis 30.04.2026) (inaktiv)
 # REMOVED --- #: note: 1. BA bis 12.04.2026
 # REMOVED --- #: next_check: 2026-04-12 vvv
@@ -53551,15 +53551,15 @@ EOF
      { from  => $isodate2epoch->("2026-05-26 00:00:00"),
        until => undef, # 1781647200, # 2026-06-17 00:00
 #      text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, 26.05.2026 bis 16.06.2026',
-       text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, Ende der Sperrung unbekannt',
+       text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, vermutlich bis Juli 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260504 (26.05. bis 16.06.2026)
 #: osm_watch: note 5352757 1
 #: add_fragezeichen: Ist der Weg noch immer abgesperrt?
 #: last_checked: 2026-06-22
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2026-06-16
+#: check_frequency: 14d
+#: next_check: 2026-07-31 (BA ("im Juli"))
 Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12457,10309 12502,10244
 # REMOVED (hier nicht) --- Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309
 EOF

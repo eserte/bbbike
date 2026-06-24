@@ -130,7 +130,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
-#: last_checked: 2026-06-02
+#: last_checked: 2026-06-24
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
@@ -462,7 +462,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
-#: last_checked: 2026-05-30
+#: last_checked: 2026-06-24
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 # REMOVED (verschoben)	X::inwork 7873,12927
@@ -4079,7 +4079,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3
@@ -4643,6 +4643,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 	X 17380,8858
 # 
 #: historical_note: seit etwa Ende 2025/Anfang 2026
+#: note: Anforderung für Radfahrer aus der östlichen Eisenacher Str. sowie für die indirekt linksabbiegenden Radfahrer
 	X 22899,15073
 # 
 #: section ^^^
@@ -5069,6 +5070,8 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	X 11701,-3360
 	X 10209,-4270
 	X 30118,16565
+#: XXX_prog lange Wartezeiten für Radfahrer+Fußgänger (zwei Ampeln!)
+#: note: Anforderungsampel
 	X 26908,15630
 	X 26280,15332
 #: note: Anforderungsampel
@@ -5095,6 +5098,8 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	X 13237,-4511
 	X 26508,14454
 	X 26334,15131
+#: note: Anforderungsampel für linksabbiegende Radfahrer Richtung Südwesten
+#: XXX_prog lange Wartezeiten
 	X 26336,15473
 	B 25740,34997
 	B 45740,14260

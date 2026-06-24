@@ -1538,7 +1538,7 @@ Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 #: next_check_id: HOENOWERWEG-2025
 #: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-24
 #: check_frequency: 90d
 #: next_check: 2027-02-28
 Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
@@ -2172,6 +2172,8 @@ Märkischer Platz (Dallgow-Döberitz)	1 -13196,15067 -13188,15060 -13188,14999 -13
 PCK-Parkplatz	1 64952,76990 65078,76848
 # 
 (Marwitz)	1 -7336,29727 -7615,29724
+# 
+(Bushaltestelle am Bahnhof, Strausberg)	1 39639,14672 39639,14595
 # 
 #: section ^^^
 ######################################################################
@@ -4492,13 +4494,20 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,809524#msg-809524
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,809845#msg-809845 (mittlerweile nur noch für Radfahrer befahrbar)
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,811931#msg-811931
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten?date=20260624 (Sperrung der Straße Am Wiesenrain vom 10. Juli 2026 18 Uhr bis 24. August 2026 21 Uhr, vermutlich kann man als Fußgänger noch passieren)
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information (vor Ort keine Freigabe für Radfahrer)
 #: also_indoor: traffic (G)
-#: last_checked: 2026-06-16 (mapillary)
-#: check_frequency: 120d
-#: next_check: 2026-10-29
+#: last_checked: 2026-06-16 (mapillary) vvv
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2026-10-29
+#: next_check: 2026-07-10 (Umstellung von Einbahnstraßenregelung auf Sperrung) vvv
+#: valid: -20260710
 Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
+#: valid: 20260710-20260824
+Am Wiesenrain: Sperrung der Fahrbahn	2s:q4:inwork 23931,5992 24122,6007
+#: next_check ^^^
+#: last_checked ^^^
 #: XXX evtl. muss mudways hier nach den Bauarbeiten neu evaluiert werden?
 #: last_checked: 2026-03-11 vvv
 #: check_frequency: 180d vvv
@@ -4580,8 +4589,8 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
 #: last_checked: 2026-03-01 (osm)
-#: check_frequency: 150d
-#: next_check: 2026-06-30 (BA-Pressemitteilung)
+#: check_frequency: 135d
+#: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
@@ -4593,7 +4602,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-06-23
+#: last_checked: 2026-06-24
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4712,30 +4721,6 @@ Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: ANDERGAERTNEREI-2022
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.733605.php
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-77ve/180909_-2-_b-plan-7-77ve_britzer-strasse-a1_ohne-beschnittzeichen.pdf
-#: by: https://www.berliner-woche.de/mariendorf/c-bauen/areal-der-ehemaligen-gaertnerei-in-der-britzer-strasse-wird-bebaut_a193336 (Fertigstellung ... zweite Quartal 2021 anvisiert)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_42_5125_5208_online.pdf (Benennung einer Privatstraße)
-#: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos (Bezugsfertig: Juli 2026) (mittlerweile: Oktober 2026)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=736121#post736121
-#: by: https://www.deutsches-architekturforum.de/thread/15360-quartier-hugos-mariendorf/?postID=731063#post731063 ("Quartier Hugos")
-#: by: https://entwicklungsstadt.de/zwischen-baustelle-und-nachbarschaft-wie-sich-das-quartier-hugos-entwickelt/ (bis Herbst 2026)
-#: osm_watch: way id="287142081" version="15"
-#: osm_watch: way id="255588538" version="20"
-#: osm_watch: way id="1022315542" version="11"
-#: osm_watch: way id="1202387366" version="4"
-# REMOVED --- #: osm_watch: way id="271172796" version="6"
-# REMOVED --- #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
-#: XXX Bebauungsplan 7-77VE: ggfs. gibt es hier noch weitere Straßen/Wegverbindungen (z.B. sieht man bei osm einen vollständigen Kreis)
-#: add_fragezeichen: Ist die Straße mittlerweile fertig und offen?
-#: last_checked: 2026-06-13
-#: check_frequency: 120d
-#: next_check: 2026-10-31 (bonava website)
-# REMOVED --- #: next_check: 2026-06-08 (osm: offen)
-An der alten Gärtnerei: Baustraße, gesperrt	2::inwork 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
-# 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/carl-bechstein-campus-heidestra%C3%9Fe-46-52.1363/#post-26823
 #: by: https://www.carl-bechstein-stiftung.de/projekte/carl-bechstein-campus/ (Projektstopp: was bedeutet das für diesen Weg?)
@@ -4853,7 +4838,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-06-19
+#: last_checked: 2026-06-24
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4861,7 +4846,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4922,7 +4907,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
-#: last_checked: 2026-06-18
+#: last_checked: 2026-06-24
 #: check_frequency: 60d
 #: next_check: 2030-12-31 (bbr-bund website)
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
@@ -4975,7 +4960,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-24
 #: check_frequency: 180d
 #: next_check: 2028-12-23 (Amtsblatt)
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -5725,7 +5710,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: also_indoor: traffic
-#: last_checked: 2026-06-19 (osm) vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230

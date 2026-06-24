@@ -353,7 +353,7 @@ Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-24
 #: check_frequency: 60d
 Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
@@ -3637,7 +3637,7 @@ Wuhlewanderweg: guter Beton (zweispurig)	Q0 22717,16142 22670,16063 22623,15959 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11953 (Anfrage zur Sanierung: Mittel im Zeitraum 2025-2028 sind berücksichtigt)
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12703 (Anfrage)
 #: XXX wird die Qualität hier verbessert (siehe auch mudways)?
-#: last_checked: 2025-10-25
+#: last_checked: 2026-06-24
 #: check_frequency: 360d
 Wuhlewanderweg: guter Parkweg	Q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
 Wuhlewanderweg: Kleinsteinpflaster	Q1- 22244,11311 22268,11285
@@ -12488,7 +12488,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-06-21
+#: last_checked: 2026-06-24
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -13835,7 +13835,7 @@ Frobenstr.: Asphalt mit einigen Rissen	Q0-; 7429,10366 7413,10244
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): Beton	Q0- 12660,11705 12634,11705 12608,11692
 (Retzowstr. - Seydlitzstr.): Betonpflaster	Q0- 6391,2200 6511,2284
 An der alten Gärtnerei: Asphalt	Q0 11046,3895 11053,3828 11019,3786 10972,3779 10958,3710
-An der alten Gärtnerei: Asphalt	Q0 10879,3719 10888,3787
+An der alten Gärtnerei: Asphalt	Q0 10879,3719 10888,3787 10898,3865 10922,3917 10981,3937 11022,3921 11046,3895
 Lübbener Str.: Asphalt, einige Löcher	Q1 12729,10515 12608,10294
 Weichselstr. - Sasarsteig: Verbundsteinpflaster	Q1 12330,8636 12300,8613 12274,8607
 Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
@@ -18074,7 +18074,7 @@ Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 2
 # REMOVED --- #: osm_watch: way id="24204822" version="32"
 #: osm_watch: way id="9925057" version="27"
 #: osm_watch: way id="628125261" version="10"
-#: last_checked: 2026-04-08
+#: last_checked: 2026-06-24
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -32540,6 +32540,7 @@ Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 #: by: https://marzahn-hellersdorf.com/radverkehr-in-marzahn-hellersdorf-stellen-unbesetzt-fahrradstrassen-kaum-vorhanden/ (aktuell in Bau?)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll-des-fahrrat_2026-02-25.pdf (Abschluss in den Sommerferien?)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25978.pdf (in Bau)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26201.pdf (Fertigstellung im 3. Quartal 2026, Asphaltierung, 4m breit)
 #: note: soll asphaltiert und auf 4m verbreitert werden
 #: last_checked: 2026-06-16 (mapillary)
 #: next_check: 2026-08-15 (fahr-rat)

@@ -6429,7 +6429,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
-#: last_checked: 2026-05-27
+#: last_checked: 2026-06-24
 #: check_frequency: 180d
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
@@ -6500,7 +6500,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="18"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001 (zwischenzeitlich entfernt)
-#: last_checked: 2026-06-14 (osm) vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -6721,7 +6721,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-06-18
+#: last_checked: 2026-06-24
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 # REMOVED --- #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -8664,7 +8664,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -9859,30 +9859,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'type' => 'gesperrt',
          'until' => 1796079599
        },
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-03-2026-l238-deckenerneuerung-altenhof
-#: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%20238%20Altenhof%20-%20KP%20L%2023%20Baubeginn%20Deckenerneuerung_Karte%2013-03-26.pdf
-#: source_id: LS/221-E/26/020 (bis 30.06.2026)
-#: source_id: 256000917 (bis 30.04.2026) (inaktiv)
-# REMOVED --- #: note: 1. BA bis 12.04.2026
-# REMOVED --- #: next_check: 2026-04-12 vvv
-# REMOVED ---	2::inwork 30158,56695 30049,56674 30146,56367
-# REMOVED ---	q4::inwork 30146,56367 30225,55956
-# note: 2. BA vom 13.04.2026 bis 24.04.2026, mittlerweile bis 26.04.2026
-# REMOVED --- #: next_check: 2026-04-25 vvv
-#	q4::inwork 30158,56695 30396,56665 30488,56704 30720,56827 30806,56904
-# note: 3. BA vom 27. April bis zum 13. Mai 2026
-#	q4::inwork 30806,56904 31008,57090 31114,57242 31247,57341 31587,57581 31722,57984
-# note: 4. BA vom 18. Mai bis Ende Juni 2026
-	2::inwork 31722,57984 31872,58453 31863,59127 31968,59333 32207,59713 32638,60246 32783,60359 32855,60461 32848,60794 33037,60947 33171,61270 33118,61738 33172,61951 33219,61981
-# REMOVED --- #: next_check ^^^
-',
-         'from' => 1774735200,
-         'id' => 4564,
-         'text' => 'Altenhof: Bauarbeiten, Sperrung, ab 30. März 2026 bis Ende Juni 2026',
-         'type' => 'gesperrt',
-         'until' => 1782856799
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:402799/72 viz2021:13.21378,52.53175, (bis 23.06.2026) (bis 27.07.2026)
 #: note: Einbahnstraßenregelung genau genommen nur bis zur Kaufland-Ausfahrt
@@ -10479,14 +10456,14 @@ Gotha-Allee	q4::inwork 765,12564 618,12563
 #: osm_watch: note 5352757 1
 #: add_fragezeichen: Ist der Weg noch immer abgesperrt?
 #: last_checked: 2026-06-22
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2026-06-16
+#: check_frequency: 14d
+#: next_check: 2026-07-31 (BA ("im Juli"))
 Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12457,10309 12502,10244
 # REMOVED (hier nicht) --- Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309
 ',
          'from' => 1779746400,
          'id' => 4625,
-         'text' => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, Ende der Sperrung unbekannt',
+         'text' => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, vermutlich bis Juli 2026',
          'type' => 'gesperrt',
          'until' => undef
        },

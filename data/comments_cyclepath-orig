@@ -309,7 +309,7 @@ Asphalt	RW; -18832,1034 -18717,1144 -18673,1266
 asphaltiert	RW8;RW2 -18356,4783 -18233,4501 -18025,4018
 	RW8?;RW -18025,4018 -17956,3840 -17547,2832
 asphaltiert	RW8;RW2 -17547,2832 -17292,2539 -16800,1991 -16706,1911
-	RW6;RW6 39287,17231 39193,16900 39400,15803
+# REMOVED (nicht (mehr?) verkehrsberuhigt) ---	RW6;RW6 39287,17231 39193,16900 39345,16139 39366,16028 39381,15926 39400,15803
 Verbundsteinpflaster, teilweise schadhaft (Wurzelschäden)	RW2;RW8 44106,14616 43743,14634 43264,14436 43162,14428
 #: add_fragezeichen: Wird die Qualität des Radwegs nach den Bauarbeiten besser sein?
 #: source_id: 216400896 (Erneuerung eines Abschnitts des Radwegs, bis 7.8.2021)
@@ -1568,6 +1568,7 @@ mäßiger Asphalt	RW8;RW2 -84707,-79148 -84698,-79039 -84639,-78271 -84574,-78119 
 Gehwegplatten (Q1)	RW2;RW8 -88423,-67053 -88736,-67128 -88826,-67144 -89604,-67285
 	RW2; -87463,-73416 -87392,-73431 -87314,-73469
 Bürgersteig mit Verbundsteinpflaster, wird wohl normalerweise auch von Radfahrern in beide Richtungen genutzt	RW0; 21764,-4869 21654,-4807 21548,-4786
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 39553,15059 39615,15288 39621,15311
 ######################### User Contributions #################################
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (Fahrradstraße geplant)
 #: by: mapillary, osm
@@ -1911,7 +1912,7 @@ asphaltiert	RW8;RW2 -8368,29915 -8606,30137 -9538,31340 -9689,31543
 Suggestivstreifen	RW3;RW3 -18725,-673 -18726,-501 -18754,-419 -18656,-9
 	RW6;RW6 -17319,-344 -17313,-310 -17362,-272 -17380,-242 -17373,-214
 asphaltiert mit einigen Schäden	RW2;RW8 32069,19686 32060,19519 32304,19033 32307,18799 32338,18762
-Betonpflaster	RW8;RW2 32245,18459 31949,18552 31868,18599
+Betonpflaster	RW8;RW2 32254,18456 31949,18552 31868,18599
 asphaltiert	RW8;RW2 31868,18599 31858,18605 31748,18669 31546,18803 31417,19068
 Verbundsteinpflaster	RW2;RW8 -4229,-463 -4105,-383 -4077,-256
 	RW3; -3996,-711 -4162,-596
@@ -2228,7 +2229,7 @@ Verbundsteinpflaster	RW2;RW2 45856,14437 45349,14512 45145,14492 44106,14616
 alte Gehwegplatten	RW2;RW8 41396,16324 41356,16225 40946,15624 40853,15364 40763,15190
 Verbundsteinpflaster	RW2;RW8 40763,15190 40505,14994 40413,14869 40272,14553
 #: note: hier allerdings nur mit dem Zusatzschild "Radfahrer frei", ohne Gehwegschild
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 40272,14553 39515,14603
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 40272,14553 39639,14595 39515,14603
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW9;RW1 40259,14530 39791,13780
 Verbundsteinpflaster	RW1; 40305,12773 40446,12631 40565,12409
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 40412,11647 40179,11450 40084,11390 39925,11298

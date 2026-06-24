@@ -408,7 +408,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-06-23
+#: last_checked: 2026-06-24
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -448,7 +448,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-06-22 vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -523,7 +523,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -656,7 +656,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://www.entwicklungsstadt.de/dauerbaustelle-in-berlin-mitte-umbau-der-charlottenstrasse-startet-spaeter/ (Beginn Ende 2026 oder sogar Anfang 2027)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="153698394" version="19"
@@ -1213,7 +1213,7 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: by: https://www.entwicklungsstadt.de/autohaus-abriss-am-tierpark-was-in-lichtenberg-gebaut-wird/ (Fertigstellung November 2027)
 #: source_id: LMS-BR:407167/72 viz2021:13.52329,52.49559,05.05.2026,07:00 (bis 31.05.2027)
 #: note: außerdem ist die Einbahnstraßenregelung in der restlichen Ontarioseestr. aufgehoben, aber eher geringer verkehrlicher Wert für den Radverkehr
-#: last_checked: 2026-06-08
+#: last_checked: 2026-06-24
 #: check_frequency: 120d
 #: next_check: 2027-05-31
 # REMOVED (Fertigstellungsdatum von entwicklungsstadt nehmen) --- #: valid: -20270531
@@ -1224,7 +1224,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-06-10
+#: last_checked: 2026-06-24
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -4140,10 +4140,10 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 #: osm_watch: way id="27944267" version="25"
 #: osm_watch[closed]: note 5299211 2
 #: XXX alter Eintrag: (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
-#: last_checked: 2026-05-18 (marzahn-hellersdorf live)
+#: last_checked: 2026-06-24
 #: check_frequency: 360d
 #: next_check: 2027-06-30 (marzahn-hellersdorf live: frühester realistischer Termin)
-Wuhlesteg (Bibersteg): Behelfsbrücke, eng	q4::inwork 22171,12965 22196,12961
+Wuhlesteg (Bibersteg): Behelfsbrücke, eng	q4+::inwork 22171,12965 22196,12961
 # 
 Stolzenfelsstr.: Gehweg für Radfahrer frei	q2 19468,8168 19446,8152 19407,8143
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19407,8143 19333,8165 19171,8280 18949,8437 18787,8540
