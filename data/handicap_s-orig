@@ -30,7 +30,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: last_checked: 2026-06-16
+#: last_checked: 2026-06-24 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2026-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -408,7 +408,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-06-24
+#: last_checked: 2026-06-25
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -448,7 +448,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-06-24 vvv
+#: last_checked: 2026-06-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -1165,13 +1165,13 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
 #: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026) (inaktiv)
 #: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026)
-#: last_checked: 2026-05-31 vvv
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2026-06-23 (mapillary) vvv
+# REMOVED (Ende unwahrscheinlich) --- #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 # REMOVED (nicht mehr) --- Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 # REMOVED (Gehwegbenutzung ist nun optional) --- Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 16853,3078
-#: next_check ^^^
+# REMOVED (Ende unwahrscheinlich) --- #: next_check ^^^
 #: last_checked ^^^
 # 
 ### Lichtenberg ###
@@ -1375,7 +1375,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -1435,7 +1435,7 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/wenn-wohnungsbau-den-verkehr-blockiert-fast-jeden-tag-chaos--berliner-bezirk-lasst-gefahrlichen-engpass-weiten-15670280.html (Erwähnung)
 #: by: https://www.entwicklungsstadt.de/heynstrasse-warum-landet-der-durchgangsverkehr-im-wohnkiez/
 #: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026) (bis 07.07.2026)
-#: last_checked: 2026-05-18 (mapillary)
+#: last_checked: 2026-06-23 (mapillary)
 #: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
 #: valid: -20260707
 Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
@@ -2561,7 +2561,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="529086013" version="5"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="16"
-#: last_checked: 2026-05-21
+#: last_checked: 2026-06-23 (daf)
 #: check_frequency: 120d
 #: next_check: 2027-11-30 (deal magazin: Herbst 2027)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
@@ -4656,7 +4656,7 @@ Zeppelinplatz: einige Fußgänger	q1 6794,15553 6884,15456
 (am Spreeufer): schmaler Weg	q2- 20512,5492 20582,5466 20724,5439 20827,5431
 (Wohnquartier Bautzener Str. - Großgörschenstr.): einige Fußgänger	q1 8255,9357 8186,9380
 #: by: mapillary
-(Straße 50 - Straße 50): einige Fußgänger, schmal	q2 15305,22017 15325,22070 15353,22105
+(Straße 50 - Straße 50): einige Fußgänger, schmal	q2 15305,22017 15325,22070 15346,22096 15353,22105
 (S-Bhf. Karow, Bahnhofsunterführung): Fußgänger	q3 14718,23387 14630,23438
 Oberdorfer Steig: schmaler Weg	q2 -8213,14837 -8270,14782
 (Sulzfelder Str. - Hansastr.): einige Fußgänger	q1 15120,16349 15120,16305 15112,16262

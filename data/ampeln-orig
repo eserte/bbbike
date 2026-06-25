@@ -154,9 +154,10 @@ Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::in
 #: next_check_id: STUBENRAUCH-2025
 #: note: an dieser Stelle gibt es keine Überfahrtmöglichkeit auf der Fahrbahn, nur auf dem Gehweg (gesehen: 2025-07-18, 2025-09-10, 2026-02-28)
 #: note: Anforderungsampel für Radfahrer in der Stubenrauchstr. Richtung NO
+#: note: auf der bauzeitlichen Nebenfahrbahn nicht eingeschaltet (gesehen 2026-06-24)
 #: off: 2024-09-10 Wed 11:25, 2026-02-28 Sat 13:27
-#: on: 2025-10-06 Mon 14:55, 2026-05-31 Sun 13:50
-#: last_checked: 2026-05-31
+#: on: 2025-10-06 Mon 14:55, 2026-05-31 Sun 13:50, 2026-06-24 Wed
+#: last_checked: 2026-06-24 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage, kann ausgeschaltet sein	X::inwork 16461,2569
@@ -433,7 +434,7 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2026-04-10 (mapillary)
+#: last_checked: 2026-06-22 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219

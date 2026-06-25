@@ -1427,8 +1427,7 @@ Friedhof der Laurentiusgemeinde	F:Cemetery 21452,4061 21481,4074 21520,3978 2164
 #: alias: Friedhof Pankow VII
 #: alias: Friedhof Uhlandstraße
 Friedhof Rosenthal/Wilhelmsruh	F:Cemetery 7686,20923 7651,20783 7486,20770 7513,20885 7537,20916
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8891
-Kleingartenanlage Hiltrudstraße	F:Orchard 21321,14427 21372,14424 21342,14096 21358,13909 21261,13922 21272,14036 21287,14163 21302,14282 21321,14427
+# REMOVED (ehemalige KGA) --- Kleingartenanlage Hiltrudstraße	F:Orchard 21321,14427 21372,14424 21342,14096 21358,13909 21261,13922 21272,14036 21287,14163 21302,14282 21321,14427
 	F:P 18970,8970 18978,9014 18983,9044 19007,8986 18970,8970
 Jürgen-Fuchs-Platz	F:P 3325,5611 3358,5600 3385,5602 3408,5621 3415,5646 3413,5669 3355,5655 3346,5629 3325,5611
 Hermione-von-Preuschen-Platz	F:P 9863,-2364 9864,-2411 9756,-2415 9757,-2362 9863,-2364
@@ -1545,7 +1544,7 @@ Hermann-Stöhr-Platz	F:P 12476,11864 12453,11790 12378,11806 12413,11901 12476,1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_52_4789_4920_online.pdf (Benennung einer öffentlichen Grünanlage, tatsächlich ohne Bindestrich?)
 #: osm_watch: way id="759545001" version="6"
 #: XXX neuer Name: "Riwne Platz" (tatsächlich ohne Bindestrich?); bei osm schon eingetragen mit start_date:name=2023-11-24, hier mit Bindestrich
-#: last_checked: 2026-06-09
+#: last_checked: 2026-06-22 (mapillary)
 #: check_frequency: 60d
 	F:P 13546,15464 13604,15430 13540,15329 13479,15361 13546,15464
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_30_3225_3284_online.pdf (Widmung als Grünanlage)

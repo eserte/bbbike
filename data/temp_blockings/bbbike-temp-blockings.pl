@@ -34070,8 +34070,8 @@ EOF
 #: osm_watch: way id="1060570985" version="4"
 #: osm_watch: way id="1384307412" version="1"
 #: osm_watch: way id="1384307411" version="2"
-#: osm_watch: note 3914565 20
-#: last_checked: 2026-06-19 (internal research)
+#: osm_watch: note 3914565 21
+#: last_checked: 2026-06-25 (osm note)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2025-12-31 (blankenfelde-mahlow website)
 	2::inwork 10346,-4027 10366,-4011 10778,-3988 11338,-3945
@@ -40730,7 +40730,7 @@ EOF
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-02 vvv
+#: last_checked: 2026-06-22 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -42560,7 +42560,7 @@ EOF
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-in-berlin-prenzlauer-berg-neuer-endtermin-steht--wird-er-diesmal-wirklich-eingehalten-15569872.html (voraussichtlich bis Juni 2027)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), meistens nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15, 2026-03-02). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2026-04-12 (osm) vvv
+#: last_checked: 2026-06-22 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2027-06-30 (Tsp) vvv
@@ -45228,7 +45228,7 @@ EOF
 #: osm_watch: way id="1303423090" version="8"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
-#: last_checked: 2026-05-18 (mapillary)
+#: last_checked: 2026-06-23 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
 #: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
 Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
@@ -45420,7 +45420,7 @@ EOF
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-23 vvv
+#: last_checked: 2026-06-25 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
@@ -50492,7 +50492,7 @@ EOF
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-06-15
+#: last_checked: 2026-06-23 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -52692,10 +52692,10 @@ EOF
        text  => 'Marienburger Str.: Einbahnstraßenregelung zwischen Winsstr. und Greifswalder Str.',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (ex-G,no-T,no-H,no-W)
+#: also_indoor: traffic (re-G,no-T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: last_checked: 2026-06-02
-#: check_frequency: 21d (traffic)
+#: last_checked: 2026-06-25 (traffic)
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-03-29
 	q4::inwork; 11821,14317 12077,14186
 EOF
@@ -52964,8 +52964,8 @@ EOF
 #: next_check_id: BER-2026
 # REMOVED --- #: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407 --- #: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun? --- #: next_check: 2026-05-01 ---	2::inwork 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
 #: add_fragezeichen: Ist der Weg entlang des BER weiterhin gesperrt?
-#: osm_watch: way id="27043028" version="16"
-#: osm_watch: way id="158214949" version="18"
+#: osm_watch: way id="27043028" version="17"
+#: osm_watch: way id="158214949" version="19"
 #: last_checked: 2026-06-10
 #: check_frequency: 21d
 	2::inwork 19651,-4039 19570,-4313 19529,-4494 19582,-4524 19813,-5070 19673,-5149 19638,-5134 18693,-5516 18365,-5657 16859,-6263 16251,-6520
@@ -53223,11 +53223,11 @@ EOF
 EOF
      },
      { from  => 1777784400, # 2026-05-03 07:00
-       until => 1783090800, # 2026-07-03 17:00
-       text  => 'Bamberger Str.: zwischen Motzstr. und Barbarossastr. Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 04.05.2026 07:00 bis 03.07.2026 17:00',
+       until => $isodate2epoch->("2026-08-14 23:59:59"), # 1783090800, # 2026-07-03 17:00
+       text  => 'Bamberger Str.: zwischen Motzstr. und Barbarossastr. Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 04.05.2026 bis 14.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:407048/72 viz2021:13.337175,52.494029,04.05.2026,07:00 (bis 03.07.2026)
+#: source_id: LMS-BR:407048/72 viz2021:13.337175,52.494029,04.05.2026,07:00 (bis 03.07.2026) (bis 14.08.2026)
 #: note: möglicherweise nur kurzer Abschnitt (Hausnummer 13-14a) betroffen, deshalb q4->q3
 	q3::inwork 5893,9530 5900,9737
 EOF
@@ -53815,6 +53815,8 @@ EOF
 #: source_id: bvg2024:255#HIM_FREETEXT_343370
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mod7lsjdl22b ("bis Ende nächster Woche", also 26.6.2026?)
 #: also_indoor: traffic (T,no-G)
+#: last_checked: 2026-06-23 (mapillary)
+#: next_check: 2026-06-26
 Mirbachplatz	q4::inwork 13331,16424 13348,16387
 EOF
      },
@@ -53873,6 +53875,26 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:412909/72 viz2021:13.269045,52.630879,22.06.2026,07:00 (bis 18.07.2026)
 	q4::inwork 946,24934 949,24882 968,24815
+EOF
+     },
+     { from  => 1782619200, # 2026-06-28 06:00
+       until => 1798743600, # 2026-12-31 20:00
+       text  => 'Priort: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, 29.06.2026 06:00 Uhr bis Ende 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: 266320004 (bis 31.12.2026)
+	2::inwork -20853,11781 -19771,12065
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Borkumstr.: mögliche Sperrung im Bereich des Rosa-Luxemburg-Gymnasiums',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/schul-baustelle-fuhrt-zu-strassensperrungen-uberraschende-plananderung-fur-umbau-des-rosa-luxemburg-gymnasiums-13873627.html (ab Anfang 2026)
+#: last_checked: 2026-06-24 (mapillary: sieht gesperrt aus, möglicherweise auch für Fußgänger)
+# REMOVED --- #: next_check: 2026-02-01
+	2::inwork 11412,17823 11335,17807
 EOF
      },
     );

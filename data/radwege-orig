@@ -1091,16 +1091,16 @@ neu asphaltiert	RW2; 10997,16280 10989,16197 10982,16121
 	RW1; 10982,16121 10975,16010 10969,15944 10964,15896 10953,15787
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert, allerdings Mosaikpflaster an allen Auffahrten 
 #: note: an Kreuzungen grün-rot-grün beschichtet
-Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697
+Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauersperrung-uber-hunderte-meter-millionen-radstreifen-in-der-schonhauser-allee-in-berlin-kaum-nutzbar-15484732.html
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2026-04-17 (Tsp) vvv
+#: last_checked: 2026-06-23 (mapillary) vvv
 #: next_check: 2026-09-10 (VIZ-Verkehrsmeldung) vvv
 #: XXX nach den Bauarbeiten wiederherstellen: Radspur, niedrige Protektion	RW4;
-provisorische Radwegführung über Hochbord	RW2;  10941,15697 10925,15581 10917,15525
+provisorische Radwegführung über Hochbord	RW2; 10925,15581 10917,15525
 provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
 #: next_check ^^^
 #: last_checked ^^^
@@ -6151,7 +6151,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="26"
-#: last_checked: 2026-03-07 (mapillary)
+#: last_checked: 2026-06-22 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 180d
 #: next_check: 2027-06-30 (SenUVK website)
@@ -6169,11 +6169,7 @@ alter Asphalt, Unebenheiten und einige Wurzelschäden	RW1; -138,6681 -150,6168 -1
 Verbundsteinpflaster, kein Abstand zu parkenden Autos	RW1; 67,5404 88,5136 110,4950
 	RW1; 110,4950 124,4827 134,4786 151,4736
 enger Radweg, schmaler Unterstreifen gegen parkende Autos, Verbundsteinpflaster	RW1; 151,4736 134,4786 124,4827 110,4950 88,5136 67,5404
-	RW1;RW1 151,4736 169,4676 179,4643 195,4588 198,4580 250,4419 267,4375
-	RW;RW1 267,4375 354,4152 373,4082 396,4000
-	RW1;RW1 396,4000 404,3970 415,3914 458,3697 474,3612
-	RW;RW1 474,3612 511,3532 574,3388
-	RW;RW1 574,3388 578,3380 640,3240
+	RW1;RW1 151,4736 169,4676 179,4643 195,4588 198,4580 250,4419 267,4375 354,4152 373,4082 396,4000 404,3970 415,3914 458,3697 474,3612 511,3532 574,3388 578,3380 640,3240
 # REMOVED ---	RW;RW 640,3240 649,3221 677,3157 669,3119
 	RW6;RW6 -426,9473 -249,9479 73,9438
 gemeinsamer Geh- und Radweg	RW2;RW2 16838,6708 16909,6628 17216,6308 17293,6230
@@ -8459,7 +8455,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-24 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: note: Stubenrauchstr. Richtung Nordosten

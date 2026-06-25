@@ -4151,6 +4151,7 @@ Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
 #: last_checked: 2026-06-20
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2026-06-26
+#: valid: -20260626
 Uferweg wird verlängert	2::inwork 12010,11545 11962,11596
 # 
 #: next_check_id: LANDSBERGER-2026
@@ -4215,7 +4216,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 # 
 #: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026) (bis 22.07.2026)
 #: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
-#: last_checked: 2026-05-19
+#: last_checked: 2026-06-23 (mapillary)
 #: next_check: 2026-07-22
 #: valid: -20260722
 (Berolinastr. - Mollstr.): wegen Tiefbauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
@@ -4368,7 +4369,7 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: STUBENRAUCH-2025
-#: last_checked: 2026-05-31 vvv
+#: last_checked: 2026-06-24 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 Stubenrauchstr./Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross 16242,2279 16306,2364 16382,2464
 #: historical_note: am Anfang kurze unechte Einbahnstraße und Einfahrt verboten
@@ -4495,6 +4496,8 @@ Delbrückstr.: Baustelle, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,809845#msg-809845 (mittlerweile nur noch für Radfahrer befahrbar)
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,811931#msg-811931
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten?date=20260624 (Sperrung der Straße Am Wiesenrain vom 10. Juli 2026 18 Uhr bis 24. August 2026 21 Uhr, vermutlich kann man als Fußgänger noch passieren)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1685646.php
+#: by: https://www.entwicklungsstadt.de/s-bahnhof-hirschgarten-deutsche-bahn-kuendigt-neue-sperrungen-an/
 #: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information (vor Ort keine Freigabe für Radfahrer)
 #: also_indoor: traffic (G)
@@ -4602,7 +4605,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-06-24
+#: last_checked: 2026-06-25
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4637,7 +4640,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 2
-#: last_checked: 2026-06-21 vvv
+#: last_checked: 2026-06-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2028-03-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1054783030" version="9"
