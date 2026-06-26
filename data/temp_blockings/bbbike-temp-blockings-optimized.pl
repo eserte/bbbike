@@ -1624,7 +1624,7 @@ Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
 #: also_indoor: traffic (T,G)
 #: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
-#: last_checked: 2026-05-27
+#: last_checked: 2026-06-26
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (BVV)
 Kantstr.	q4::inwork 5613,10963 5652,11004
@@ -3133,7 +3133,21 @@ Anbindung Normannenstr.	q3::inwork 19898,1704 19888,1645
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: IM_019071 (inaktiv)
+#	q4::inwork 5090,11007 5113,11305
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3moezfxq4c22u (bis 18.09.2026)
+#: source_id: LMS-BR:412089/72 viz2021:13.32617,52.50824,16.06.2026,07:00 (bis 18.09.2026)
+#: source_id: LMS-BR:412908/72 viz2021:13.326006,52.5073,22.06.2026,07:00 (nur Fahrbahnverengung, bis 10.07.2026)
+#: also_indoor: traffic (no-G,no-T,no-H,no-A,no-W)
+Uhlandstr.: Einbahnstraßenregelung zwischen Steinplatz und Kantstr.	q4::inwork; 5090,11007 5113,11305
+',
+         'from' => undef,
+         'id' => 2374,
+         'text' => 'Uhlandstr.: Baustelle, Einbahnstraßenregelung zwischen Steinplatz und Kantstr., offen Richtung Süden, bis 18.09.2026',
+         'type' => 'handicap',
+         'until' => 1789768799
+       },
        undef,
        undef,
        undef,
@@ -4160,7 +4174,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-06-04
+#: last_checked: 2026-06-26
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -7208,7 +7222,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
        undef,
        {
          'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027")
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027") (mittlerweile bis Dezember 2027)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/krausenstrasse-soll-umgestaltet-werden_a317781
 #: by: https://mein.berlin.de/projekte/krausenstrasse-zwischen-friedrichstrasse-und-axel-/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/in-der-krausenstrasse-fallen-ersatzlos-alle-parkplaetze-weg_a318782
@@ -7231,10 +7245,13 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17
 #: XXX Sperrung im 1. BA bis Ende Oktober 2025
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
+#: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
+#: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: last_checked: 2026-06-25 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
-#: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-31 (Ende des 2. BA) vvv
+#  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
@@ -8060,7 +8077,7 @@ Seelingstr.: zwischen Sophie-Charlotten-Str. und Danckelmannstr.	q4::inwork 2485
 ',
          'from' => 1770591600,
          'id' => 4290,
-         'text' => 'Seelingstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2026',
+         'text' => 'Seelingstr.: Bauarbeiten, Sperrung bzw. Einbahnstraßenregelung, bis Mitte Juli 2026',
          'type' => 'handicap',
          'until' => 1783695600
        },
@@ -8868,7 +8885,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-22 vvv
+#: last_checked: 2026-06-26 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9308,25 +9325,7 @@ Hönower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf (alte Sperrung)
-#: source_id: LMS-BR:390327/72 viz2021:13.31374,52.51816,17.11.2025,07:00 (bis 30.04.2026) (inaktiv)
-#: source_id: LMS-BR:410348/72 viz2021:13.313198,52.517493,01.06.2026,06:00 (bis 03.07.2026)
-#: also_indoor: traffic (G,no-T,W)
-#: osm_watch: note 4547482 5
-#: osm_watch: way id="4586182" version="20"
-#: add_fragezeichen: Ist der Radverkehr tatsächlich betroffen?
-Loschmidtstr.	q4::inwork; 4219,12324 4215,12307 4276,12153 4238,12067
-# REMOVED --- #: note: Einbahnstraße frei für Radfahrer
-# REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer? --- #: last_checked: 2025-09-24 --- #: check_frequency: 90d --- #: next_check: 2025-11-17 (VIZ-Verkehrsmeldung: Beginn)
-# REMOVED --- Alt-Lietzow	q4::inwork; 4250,12390 4219,12324
-',
-         'from' => 1780264800,
-         'id' => 4502,
-         'text' => 'Loschmidtstr.: Baustelle, Einbahnstraßenregelung, evtl. ist auch der Radverkehr betroffen, bis 03.07.2026 18:00',
-         'type' => 'gesperrt',
-         'until' => 1783094400
-       },
+       undef,
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/15062-bauprojekte-auf-der-mierendorff-insel-und-in-charlottenburg-nord/?postID=788555#post788555 (Baustellenschild: Sanierung der Pumpenstation bis 30.09.2027)
 #: by: https://www.deutsches-architektur-forum.de/pics/backstein/daf/2025/11/hkw_spreebord05.jpg
@@ -10276,7 +10275,7 @@ Heinersdorf - Abzweig Tempelberg: 1. BA	2::inwork 65225,6403 64604,5980 64086,54
 #: traffic_note: Durch den Umleitungsverkehr Stauungen im umliegenden Straßennetz. Gesehen 2026-05-12 Tue 17:39 Nürnberger Str. Richtung SW 6\'
 #: note: etwa 50m der Fahrbahn ist gesperrt, kann z.B. auf der Mittelpromenade umfahren/umgangen werden, außerdem muss die Barriere an der Nürnberger Str. umfahren werden
 #: note: eigentlich q4+ oder q3-
-#: last_checked: 2026-06-16 (traffic)
+#: last_checked: 2026-06-26 (aus der Entfernung)
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	q4::inwork; 6025,10746 5907,10821
 ',
@@ -10779,6 +10778,33 @@ Mirbachplatz	q4::inwork 13331,16424 13348,16387
          'from' => undef,
          'id' => 4652,
          'text' => 'Borkumstr.: mögliche Sperrung im Bereich des Rosa-Luxemburg-Gymnasiums',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: LMS-BR:412912/72 viz2021:13.303754,52.509885,22.06.2026,07:00 (hier bis Wilmersdorfer Str., bis 31.07.2026)
+#: also_indoor: traffic (no-G,no-T,H,W)
+Schillerstr.	q4::inwork 3522,11447 3571,11451
+Schillerstr. (kurzer Abschnitt)	q3::inwork 3571,11451 3717,11462
+Rückertstr.	q4::inwork 3569,11473 3571,11451
+',
+         'from' => 1782079200,
+         'id' => 4653,
+         'text' => 'Schillerstr./Rückertstr.: Bauarbeiten im Einmündungsbereich, Sperrung der Fahrbahn, bis 11.08.2026',
+         'type' => 'handicap',
+         'until' => 1786485600
+       },
+       {
+         'data' => '#: next_check_id: GERTRAUDENBRUECKE-2025
+#: priority: #A
+#: add_fragezeichen: Gibt es weiterhin Sperrungen?
+#: last_checked: 2026-06-26
+#: check_frequency: 10d
+	2::inwork 10439,11772 10373,11781 10329,11842
+',
+         'from' => undef,
+         'id' => 4654,
+         'text' => 'Gertraudenbrücke, östliche Unterführung: kann wegen Bauarbeiten gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        }

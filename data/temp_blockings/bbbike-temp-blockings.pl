@@ -14410,7 +14410,7 @@ EOF
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
 #: also_indoor: traffic (T,G)
 #: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
-#: last_checked: 2026-05-27
+#: last_checked: 2026-06-26
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (BVV)
 Kantstr.	q4::inwork 5613,10963 5652,11004
@@ -21747,13 +21747,19 @@ EOF
 	q4::inwork 8443,10780 8430,10710
 EOF
      },
-     { from  => 1343706240, # 2012-07-31 05:44
-       until => 1350503220, # 1351695600, # 2012-10-31 16:00
-       text  => 'Uhlandstr. (Charlottenburg): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Steinplatz und Kantstr., 01.08.2012 05:44 Uhr bis 31.10.2012 16:00 Uhr ',
+     { from  => undef, # 1343706240, # 2012-07-31 05:44
+       until => $isodate2epoch->("2026-09-18 23:59:59"), # 1350503220, # 1351695600, # 2012-10-31 16:00
+#      text  => 'Uhlandstr. (Charlottenburg): Baustelle, Straße vollständig gesperrt In beiden Richtungen zwischen Steinplatz und Kantstr., 01.08.2012 05:44 Uhr bis 31.10.2012 16:00 Uhr ',
+       text  => 'Uhlandstr.: Baustelle, Einbahnstraßenregelung zwischen Steinplatz und Kantstr., offen Richtung Süden, bis 18.09.2026',
        type  => 'handicap',
-       source_id => 'IM_019071',
        data  => <<EOF,
-	q4::inwork 5090,11007 5113,11305
+#: source_id: IM_019071 (inaktiv)
+#	q4::inwork 5090,11007 5113,11305
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3moezfxq4c22u (bis 18.09.2026)
+#: source_id: LMS-BR:412089/72 viz2021:13.32617,52.50824,16.06.2026,07:00 (bis 18.09.2026)
+#: source_id: LMS-BR:412908/72 viz2021:13.326006,52.5073,22.06.2026,07:00 (nur Fahrbahnverengung, bis 10.07.2026)
+#: also_indoor: traffic (no-G,no-T,no-H,no-A,no-W)
+Uhlandstr.: Einbahnstraßenregelung zwischen Steinplatz und Kantstr.	q4::inwork; 5090,11007 5113,11305
 EOF
      },
      { from  => 1352918929, # undef, # 
@@ -29219,7 +29225,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-06-04
+#: last_checked: 2026-06-26
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -45396,7 +45402,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
-#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027")
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022) (mittlerweile: Baubeginn Juni 2024) (mittlerweile: "Voraussichtliche Bauzeit: Juni 2024 - Juni 2027") (mittlerweile bis Dezember 2027)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/krausenstrasse-soll-umgestaltet-werden_a317781
 #: by: https://mein.berlin.de/projekte/krausenstrasse-zwischen-friedrichstrasse-und-axel-/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/in-der-krausenstrasse-fallen-ersatzlos-alle-parkplaetze-weg_a318782
@@ -45419,10 +45425,13 @@ EOF
 #: XXX Sperrung im 1. BA bis Ende Oktober 2025
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
 #: XXX Sperrung westlich der Markgrafenstr. ab Februar 2026
+#: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
+#: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: last_checked: 2026-06-25 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
-#: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-31 (Ende des 2. BA) vvv
+#  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
@@ -48435,7 +48444,8 @@ EOF
 #      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: Bauarbeiten zwischen Schloßstr. und Danckelmannstr., Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2026',
-       text  => 'Seelingstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2026',
+#      text  => 'Seelingstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2026',
+       text  => 'Seelingstr.: Bauarbeiten, Sperrung bzw. Einbahnstraßenregelung, bis Mitte Juli 2026',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
@@ -50597,7 +50607,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-22 vvv
+#: last_checked: 2026-06-26 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51853,7 +51863,7 @@ Hönower Str.: Durchfahrt verboten	q4::inwork 18735,9421 18765,9426 18846,9532
 EOF
      },
      { from  => $isodate2epoch->("2026-06-01 00:00:00"), # 1763272800, # 2025-11-16 07:00
-       until => $isodate2epoch->("2026-07-03 18:00:00"), # 1763553111, # 1777564800, # 2026-04-30 18:00
+       until => 1782464167, # $isodate2epoch->("2026-07-03 18:00:00"), # 1763553111, # 1777564800, # 2026-04-30 18:00
 #      text  => 'Loschmidtstr.: Baustelle, Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, vom 17.11.2025 07:00 bis 30.04.2026 18:00',
        text  => 'Loschmidtstr.: Baustelle, Einbahnstraßenregelung, evtl. ist auch der Radverkehr betroffen, bis 03.07.2026 18:00',
        type  => 'gesperrt',
@@ -51864,7 +51874,7 @@ EOF
 #: also_indoor: traffic (G,no-T,W)
 #: osm_watch: note 4547482 5
 #: osm_watch: way id="4586182" version="20"
-#: add_fragezeichen: Ist der Radverkehr tatsächlich betroffen?
+# REMOVED (nein, Radfahrer frei) --- #: add_fragezeichen: Ist der Radverkehr tatsächlich betroffen?
 Loschmidtstr.	q4::inwork; 4219,12324 4215,12307 4276,12153 4238,12067
 # REMOVED --- #: note: Einbahnstraße frei für Radfahrer
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung auch für Radfahrer? --- #: last_checked: 2025-09-24 --- #: check_frequency: 90d --- #: next_check: 2025-11-17 (VIZ-Verkehrsmeldung: Beginn)
@@ -53372,7 +53382,7 @@ EOF
 #: traffic_note: Durch den Umleitungsverkehr Stauungen im umliegenden Straßennetz. Gesehen 2026-05-12 Tue 17:39 Nürnberger Str. Richtung SW 6'
 #: note: etwa 50m der Fahrbahn ist gesperrt, kann z.B. auf der Mittelpromenade umfahren/umgangen werden, außerdem muss die Barriere an der Nürnberger Str. umfahren werden
 #: note: eigentlich q4+ oder q3-
-#: last_checked: 2026-06-16 (traffic)
+#: last_checked: 2026-06-26 (aus der Entfernung)
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	q4::inwork; 6025,10746 5907,10821
 EOF
@@ -53895,6 +53905,31 @@ EOF
 #: last_checked: 2026-06-24 (mapillary: sieht gesperrt aus, möglicherweise auch für Fußgänger)
 # REMOVED --- #: next_check: 2026-02-01
 	2::inwork 11412,17823 11335,17807
+EOF
+     },
+     { from  => 1782079200, # 2026-06-22 00:00
+       until => 1786485600, # 2026-08-12 00:00
+       text  => 'Schillerstr./Rückertstr.: Bauarbeiten im Einmündungsbereich, Sperrung der Fahrbahn, bis 11.08.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:412912/72 viz2021:13.303754,52.509885,22.06.2026,07:00 (hier bis Wilmersdorfer Str., bis 31.07.2026)
+#: also_indoor: traffic (no-G,no-T,H,W)
+Schillerstr.	q4::inwork 3522,11447 3571,11451
+Schillerstr. (kurzer Abschnitt)	q3::inwork 3571,11451 3717,11462
+Rückertstr.	q4::inwork 3569,11473 3571,11451
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Gertraudenbrücke, östliche Unterführung: kann wegen Bauarbeiten gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: next_check_id: GERTRAUDENBRUECKE-2025
+#: priority: #A
+#: add_fragezeichen: Gibt es weiterhin Sperrungen?
+#: last_checked: 2026-06-26
+#: check_frequency: 10d
+	2::inwork 10439,11772 10373,11781 10329,11842
 EOF
      },
     );
