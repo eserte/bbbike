@@ -4121,7 +4121,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12
 #: osm_watch: note 5332936 1
 #: osm_watch: way id="1237814530" version="4"
 #: XXX früher: 1::igndisp
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-25 (mapillary)
 Nordufer: Radweg wird vermutlich zurückgebaut	2::inwork 7156,14763 7129,14787
 # 
 #: next_check_id: URBANTECHREPUBLIC-2022
@@ -4143,16 +4143,6 @@ Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork
 #: check_frequency: 120d
 #: next_check: 2027-09-30 (mögliche Nutzung durch den Rad+Fußverkehr)
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
-# 
-#: next_check_id: SPREEUFER-2026
-#: XXX es wird vom Paula-Thiede-Ufer in einer Rampe runtergehen, zurzeit wird die Deckschicht aufgesetzt; rötliche asphaltähnliche Decke
-#: osm_watch: way id="458869330" version="4"
-#: osm_watch: note 3748856 5
-#: last_checked: 2026-06-20
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-06-26
-#: valid: -20260626
-Uferweg wird verlängert	2::inwork 12010,11545 11962,11596
 # 
 #: next_check_id: LANDSBERGER-2026
 #: last_checked: 2026-05-06
@@ -4209,7 +4199,7 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: osm_watch: way id="1495906089" version="1"
 #: osm_watch: way id="971631807" version="9"
 #: osm_watch: way id="971631806" version="9"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-25 (mapillary)
 #: check_frequency: 45d
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
@@ -4268,8 +4258,10 @@ Am Egelpfuhlgraben: Holzbohlensteg zum Bullengraben gesperrt	2::inwork -5790,134
 #: by: https://baustelle-biz-pichelssee.de/2026/02/23/einbahnstrassenregelung-fuer-die-strasse-alt-pichelsdorf/ (Einbahnstraßenregelung wurde vereinbart, möglicherweise in den restlichen Abschnitten von Alt-Pichelsdorf, aber in welche Richtung und ist auch der Radverkehr betroffen?)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/ice-bahnhof-obdachlose-ig-metall-bussgelder-hier-sind-die-wichtigsten-news-aus-dem-rathaus-berlin-spandau-15294793.html
 #: XXX vermutlich bis 2028 temporär asphaltiert, evtl. auch weitere Einbahnstraßenregelungen?
+#: last_checked: 2026-06-25 (mapillary)
 #: next_check: 2028-11-03
-Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3606,11532 -3657,11631 -3692,11681
+Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3445,11505 -3606,11532
+# REMOVED (hier nicht) --- Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3606,11532 -3657,11631 -3692,11681
 # 
 # REMOVED (nicht mehr relevant) --- #: next_check_id: BUCKOWERCHAUSSEE-2022
 # REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,578649,843064#msg-843064

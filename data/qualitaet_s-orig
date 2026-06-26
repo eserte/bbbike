@@ -998,9 +998,11 @@ Calvinstr.: Kopfsteinpflaster	Q2 6775,12661 6802,12797 6860,13093
 # 
 #: next_check_id: ALTPICHELSDORF-2026
 #: XXX wiederherstellen: Alt-Pichelsdorf: Kopfsteinpflaster	Q2- -3692,11681 -3657,11631 -3606,11532
+#: last_checked: 2026-06-25 (mapillary)
 #: next_check: 2028-11-03
 Alt-Pichelsdorf: provisorisch asphaltiert	Q0 -3692,11681 -3657,11631 -3606,11532
 #: XXX wiederherstellen Alt-Pichelsdorf: Kopfsteinpflaster	Q2- -3606,11532 -3445,11505
+#: last_checked: 2026-06-25 (mapillary)
 #: next_check: 2028-11-03
 Alt-Pichelsdorf: provisorisch asphaltiert	Q0 -3606,11532 -3445,11505
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3445,11505 -3405,11498
@@ -19261,9 +19263,9 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1673321.php
 #: XXX wird hier asphaltiert?
 #: osm_watch: way id="205746338" version="10"
-#: last_checked: 2026-02-10 (BA-Beschluss)
-#: check_frequency: 120d
-#: next_check: 2026-06-01 (Tsp: Baustart)
+#: last_checked: 2026-06-25 (mapillary)
+#: check_frequency: 45d
+# REMOVED (nicht passiert) --- #: next_check: 2026-06-01 (Tsp: Baustart)
 # REMOVED --- #: next_check: 2026-12-31 (Tsp)
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt
