@@ -2415,12 +2415,12 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
 #: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1781992800,
+         'from' => 1783202400,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 22.6.2026 bis 26.6.2026',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 6.7.2026 bis 10.7.2026',
          'type' => 'gesperrt',
-         'until' => 1782511199
+         'until' => 1783720799
        },
        undef,
        undef,
@@ -3275,6 +3275,7 @@ Uhlandstr.: Einbahnstraßenregelung zwischen Steinplatz und Kantstr.	q4::inwork; 
 #: by: https://www.rbb24.de/panorama/beitrag/2025/07/berlin-tegeler-hafenfest-abgesagt-sturmschaeden.html
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581336.php (neuer Termin: 25. bis 28. September 2025)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/rettung-fur-beliebtes-tegeler-hafenfest-in-berlin-ein-veranstalter-schmeisst-hin--jetzt-ubernehmen-zwei-neue-15761700.html
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1686656.php
 # REMOVED (was) : tempex: 20160714-20160717
 #: alias: Tegeler Hafenfest
 	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
@@ -8383,9 +8384,9 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2; im April 2026 nach Hinweis von Thomas K. wieder reaktiviert
 #: also_indoor: traffic (G,T)
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: last_checked: 2026-05-30 vvv
-# REMOVED --- #: check_frequency: 14d (traffic) vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2026-06-27 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-11-04 (Halteverbotsschilder) vvv
 #: note: hier Halteverbotsschilder bis 4.11.2025
 Borstellstr.	q4::inwork 6309,4328 6368,4324
@@ -8450,7 +8451,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-06-16 (traffic) vvv
+#: last_checked: 2026-06-27 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
@@ -8653,7 +8654,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-06-24 vvv
+#: last_checked: 2026-06-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -8818,6 +8819,7 @@ Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
 #: by: https://www.morgenpost.de/bezirke/pankow/article409900647/anwohner-in-prenzlauer-berg-muessen-mit-langen-sperrungen-rechnen.html
 #: by: https://maps.strabag.com/portal/apps/storymaps/stories/a5b1ea73ff6c454f94972392de52e476 (bis Februar 2026?) (korrigiert bis Juni 2026) (westl. Abschnitt bis 10.7.2026, östlicher bis 31.7.2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahrelange-sperrungen-in-prenzlauer-berg-darum-wird-die-riesen-baustelle-im-berliner-kollwitzkiez-erst-viel-spater-fertig-15554939.html (Gesamtbaumaßnahme bis April 2029; Sredzkistr. bis 3.6.2026 fertig)
+#: by: https://www.entwicklungsstadt.de/umbau-in-prenzlauer-berg-was-wird-aus-der-sredzkistrasse/
 #: note: außerhalb der Arbeitszeiten können die Absperrungen weggeschoben sein und eine Durchfahrt ist möglich, gesehen 2025-01-02 Fri 14:13
 #: note: Halteverbotsschilder nun bis 29.05.2026 (gesehen an der Knaackstr.)
 #: also_indoor: traffic (T,G[stark verkürzt],H,A,W)
@@ -8857,7 +8859,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-06-27 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9055,7 +9057,7 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-06-15
+#: last_checked: 2026-06-27
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9325,10 +9327,10 @@ Uferweg	2::inwork 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1603695.php (Bauarbeiten 6. Oktober 2025 bis Ende Januar 2026)
 #: note: während der Bauarbeiten ist die Damaschkestraße im Bereich des Kracauerplatzes gesperrt; allerdings sind hier nur wenige Routings (11/annum, keine in Aug+Sep 2025); auch östlich der Joachim-Friedrich-Str. Bauarbeiten
-#: also_indoor: traffic (ex-G,T,no-H,no-W)
+#: also_indoor: traffic (re-G,T,no-H,no-W)
 #: osm_watch: note 5206966 4
 #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv
-#: last_checked: 2026-06-16 (traffic) vvv
+#: last_checked: 2026-06-27 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 # REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3027,10560 3123,10504
@@ -9844,19 +9846,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'type' => 'handicap',
          'until' => 1785189599
        },
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~20-03-2026-baustart-radwegsanierung-entlang-der-l202-und-l20
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~29-05-2026-l202_l20-fertigstellung-der-radwegerneuerungen (bis 12.6.2026)
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-06-2026-l202-und-l20-landkreis-havelland_radwegsanierungen (Nacharbeiten bis ca. 26.6.2026)
-#: source_id: LS/223-P/26/041 (bis 22.05.2026) (bis 12.06.2026) (inaktiv)
-	2::inwork -10031,18697 -10474,19644
-',
-         'from' => 1774324800,
-         'id' => 4566,
-         'text' => 'L20: Bauarbeiten, Sperrung des Radwegs zwischen Falkensee und Bushaltestelle Falkenhagener Forst, voraussichtlich bis 26.6.2026',
-         'type' => 'gesperrt',
-         'until' => 1782496800
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mhwuh3kyg22m
@@ -10043,7 +10033,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: also_indoor: traffic (G,T,no-H,W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-06-16 (traffic)
+#: last_checked: 2026-06-27 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 22130,1961 22004,2149
 ',
@@ -10065,16 +10055,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'type' => 'handicap',
          'until' => 1806530399
        },
-       {
-         'data' => '#: source_id: LMS-BR:405635/72 viz2021:13.32897,52.43632,22.04.2026,00:00 (bis 26.06.2026)
-	q4::inwork 5370,3587 5468,3302
-',
-         'from' => 1776722400,
-         'id' => 4590,
-         'text' => 'Gärtnerstr.: Bauarbeiten zwischen Marienstr. und Hartmannstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 22.04.2026 bis 26.06.2026',
-         'type' => 'handicap',
-         'until' => 1782511140
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mk2npuw5xs2k
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4y7xizfc6tyab3rgfg4im6jxup6topqj3pjhccstvdccxdvlmpm
@@ -10088,17 +10069,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'until' => 1789077540
        },
        undef,
-       {
-         'data' => '#: source_id: LMS-BR:407164/72 viz2021:13.42067,52.50324,05.05.2026,07:00 (bis 22.05.2026) (bis 29.05.2026) (bis 26.06.2026)
-#: last_checked: 2026-05-29
-	q4::inwork 11552,10863 11589,10947 11640,11067
-',
-         'from' => 1777845600,
-         'id' => 4593,
-         'text' => 'Adalbertstr.: Sanierung der Fahrbahn, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 5.5.2026 bis 26.6.2026',
-         'type' => 'handicap',
-         'until' => 1782511199
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: LMS-BR:397387/72 viz2021:13.37299,52.42492,28.01.2026,11:00 (bis 29.05.2026) (bis 19.06.2026) (bis 01.07.2026)
@@ -10146,7 +10117,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: also_indoor: traffic (T,G,re-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-06-19 (traffic)
+#: last_checked: 2026-06-27 (traffic)
 #: check_frequency: 21d (traffic)
 #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -10155,7 +10126,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'id' => 4603,
          'text' => 'Jägerstr.: Bauarbeiten, Sperrung, voraussichtlich bis Ende Juni 2026',
          'type' => 'handicap',
-         'until' => 1782856799
+         'until' => undef
        },
        undef,
        undef,
@@ -10283,7 +10254,7 @@ Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 1744
          'data' => '#: source_id: LMS-BR:407959/72 viz2021:13.38521,52.49849,12.05.2026,00:00 (bis 19.07.2026)
 #: note: der gesperrte Abschnitt ist schätzungsweise 100m lang, keine Ausnahmen für Radfahrer
 #: priority: #A
-#: last_checked: 2026-05-22
+#: last_checked: 2026-06-26
 #: next_check: 2026-07-19 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
 	q4::inwork; 9146,10284 9111,10090
 ',
@@ -10632,16 +10603,7 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LMS-BR:411948/72 viz2021:13.2955,52.50343,15.06.2026,06:00 (bis 26.06.2026)
-	q4::inwork 3093,10594 3041,10732
-',
-         'from' => 1781409600,
-         'id' => 4642,
-         'text' => 'Holtzendorffstr.: Bauarbeiten zwischen Rönnestr. und Gervinusstr., evtl. ist auch der Radverkehr betroffen, vom 15.06.2026 06:00 bis 26.06.2026 20:00',
-         'type' => 'handicap',
-         'until' => 1782496800
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:411963/72 viz2021:13.27222,52.63585,15.06.2026,07:00 (bis 31.07.2026)
 	q4::inwork 1278,25401 1153,25425 1209,25542

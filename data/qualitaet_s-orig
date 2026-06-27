@@ -415,7 +415,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2- 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2026-06-15
+#: last_checked: 2026-06-27
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -427,7 +427,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="30"
-#: last_checked: 2026-06-01
+#: last_checked: 2026-06-27
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
@@ -596,13 +596,8 @@ Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11808,11482
 #: note: alter brüchiger Asphaltstreifen existiert auch hier, aber wegen diagonal parkender Autos nicht benutzbar
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1515855.php (Fahrbahnsanierung)
-# REMOVED (nein, keine Verbesserung) --- #: XXX Ist der Asphalt hier besser geworden?
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260427 (Sanierung)
-#: XXX nach der Sanierung vermutlich Q0
-#: last_checked: 2026-05-29
-#: next_check: 2026-06-26 (VIZ-Verkehrsmeldung)
-Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
+#: historical_note: früher (bis Juni 2026): Asphalt, einige Schäden, Q0-; (Richtung Süden)
+Adalbertstr.: Asphalt	Q0 11640,11067 11589,10947 11552,10863
 Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
 #: next_check_id: ODER-2022
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn 
@@ -12154,7 +12149,7 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 (Weg zum großen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12337,13436 12310,13481 12254,13495 12232,13477 12238,13441 12247,13444 12256,13428 12278,13418 12295,13433 12275,13445
 (Weg zum großen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12337,13436 12294,13395 12275,13392 12250,13413 12238,13441
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
-Wilhelmine-Gemberg-Weg: Steinpflaster	Q1+ 11715,11522 11767,11662 11821,11733
+Wilhelmine-Gemberg-Weg: Steinpflaster	Q1+ 11715,11522 11767,11662 11827,11720
 #: note: mittlerweile sind große Flächen überasphaltiert, aber dadurch ist die Qualität auch nicht besser
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11055,12717 11030,12741 11007,12773 10970,12822
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11030,12741 11087,12780
@@ -14333,7 +14328,9 @@ Töpchiner Weg [40-48]: Verbundsteinpflaster	Q1+ 11950,1275 11918,1211
 # 
 (Neucölln Carree, Parkplatzzufahrt): Asphalt	Q0 14430,7348 14423,7333 14378,7236 14507,7146
 # 
-(Uferweg): asphaltähnliche Decke	Q0- 11821,11733 11863,11670 11962,11596 12010,11545
+(Uferweg): asphaltähnliche Decke	Q0- 11827,11720 11861,11688 11863,11670 11919,11626
+(Uferweg): wassergebundene Decke, kurzer Kopfsteinpflasterabschnitt	Q1- 11919,11626 11948,11604 11970,11587
+(Uferweg): asphaltähnliche Decke	Q0- 11970,11587 12010,11545
 # 
 Fulhamer Allee: Asphalt, letzte Meter Verbundsteinpflaster	Q0 13213,4565 13225,4495
 # 
