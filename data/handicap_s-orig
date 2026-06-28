@@ -30,7 +30,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: last_checked: 2026-06-27
+#: last_checked: 2026-06-28
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -5478,7 +5478,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026) (bis 30.06.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-06-27
+#: last_checked: 2026-06-28
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
@@ -5857,6 +5857,9 @@ Eichenstr. - Uferweg: ein paar Stufen oder Umweg über Bürgersteig nehmen	q3 1389
 Riedel-Evers-Weg: einige Fußgänger	q1+ 12136,5628 12150,5640 12570,5802 12722,5831
 Braunschweiger Ufer: Fußgänger	q1+ 12722,5831 13080,5882 13382,5957 13418,5954 13483,5973
 #: note ^^^
+# 
+#: XXX_prog: BS vermutlich an beiden Enden, aber auch ohne bei q3 belassen (wegen der Kürze der Strecke)
+Frauenfelder Weg: Bordsteine, einige Fußgänger	q3 7627,17034 7647,17037
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

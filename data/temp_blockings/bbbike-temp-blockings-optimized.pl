@@ -4126,6 +4126,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://entwicklungsstadt.de/was-entsteht-an-der-mierendorffinsel-10-aktuelle-bauprojekte/
 #: by: https://www.entwicklungsstadt.de/heizkraftwerk-charlottenburg-genehmigung-fuer-neue-gasturbinen-ab-2028/
 #: by: https://www.entwicklungsstadt.de/heizkraftwerk-charlottenburg-wird-bis-2028-umfassend-umgebaut/
+#: by: https://www.bew.berlin/aktuelles-und-presse/2026/notwendige-f%C3%A4llarbeiten-am-spreebord/
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
@@ -7189,14 +7190,14 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: osm_watch: way id="1303423090" version="8"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
-#: last_checked: 2026-06-23 (mapillary)
+#: last_checked: 2026-06-25 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
 #: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
-Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
+Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 ',
          'from' => 1717909200,
          'id' => 4083,
-         'text' => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Juli 2026',
+         'text' => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis Juli 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9374,7 +9375,7 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
 #: osm_watch: note 5096118 2
 #: add_fragezeichen: Gibt es die Engstelle weiterhin?
 # REMOVED --- #: XXX auch laut osm note bis 28.2.2026 gesperrt --- #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-24 (mapillary)
 #: check_frequency: 60d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-28
 	q4::inwork 7745,12603 7782,12623

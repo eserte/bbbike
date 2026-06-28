@@ -28750,6 +28750,7 @@ EOF
 #: by: https://entwicklungsstadt.de/was-entsteht-an-der-mierendorffinsel-10-aktuelle-bauprojekte/
 #: by: https://www.entwicklungsstadt.de/heizkraftwerk-charlottenburg-genehmigung-fuer-neue-gasturbinen-ab-2028/
 #: by: https://www.entwicklungsstadt.de/heizkraftwerk-charlottenburg-wird-bis-2028-umfassend-umgebaut/
+#: by: https://www.bew.berlin/aktuelles-und-presse/2026/notwendige-f%C3%A4llarbeiten-am-spreebord/
 #: source_id: viz2021:13.30619,52.5212,30.01.2023,13:52 (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei) (bis 31.3.2023) (bis 14.4.2023) (inaktiv)
 #: source_id: viz2021:13.313479,52.521076,26.06.2023,06:00 (bis 31.12.2023) (inaktiv)
@@ -35794,7 +35795,7 @@ Louise-Schroeder-Platz	2::bomb 7681,16769 7672,16834 7666,16879
 Louise-Schroeder-Platz	2::bomb 7763,16779 7745,16889
 Louise-Schroeder-Platz	2::bomb 7583,16872 7594,16805
 Residenzstr.	2::bomb 7970,17087 8079,16953 8127,16894
-Ungarnstr.	2::bomb 7583,16872 7666,16879
+Ungarnstr.	2::bomb 7583,16872 7638,16877 7666,16879
 Reginhardstr.	2::bomb 7970,17087 7926,17050 7841,16966 7745,16889 7666,16879
 Haßlingerweg	2::bomb 7894,17073 7926,17050
 Hansastr. (Gesundbrunnen)	2::bomb 8079,16953 7884,16940 7841,16966
@@ -45231,7 +45232,8 @@ EOF
        until => undef, # $isodate2epoch->("2025-12-31 18:00:00"), # $isodate2epoch->("2025-08-29 17:00:00"), # 1722265200, # 2024-07-29 17:00
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.08.2025 17:00',
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
-       text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Juli 2026',
+#      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Juli 2026',
+       text  => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis Juli 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
@@ -45240,10 +45242,10 @@ EOF
 #: osm_watch: way id="1303423090" version="8"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
-#: last_checked: 2026-06-23 (mapillary)
+#: last_checked: 2026-06-25 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
 #: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
-Dolomitenstr.: etwa 60-70m der Fahrbahn gesperrt	q3::inwork 10573,17566 10466,17464
+Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 EOF
      },
      { from  => 1717909200, # 2024-06-09 07:00
@@ -52010,7 +52012,7 @@ EOF
 #: osm_watch: note 5096118 2
 #: add_fragezeichen: Gibt es die Engstelle weiterhin?
 # REMOVED --- #: XXX auch laut osm note bis 28.2.2026 gesperrt --- #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
-#: last_checked: 2026-06-07
+#: last_checked: 2026-06-24 (mapillary)
 #: check_frequency: 60d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-28
 	q4::inwork 7745,12603 7782,12623
