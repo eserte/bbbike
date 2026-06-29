@@ -154,8 +154,9 @@ sub handle_file {
 				 my($date, $_cat) = @$time_limit;
 				 if ($dir->{_nextcheck_date}[0] le $date) {
 				     $cat = $_cat;
-				     my $is_directed = $r->[Strassen::CAT] =~ m{;$};
-				     if ($r->[Strassen::CAT] =~ m{^.*?:+(.*)}) { # preserve some category attributes like "projected", "inwork"
+				     my $orig_cat = $r->[Strassen::CAT];
+				     my $is_directed = $orig_cat =~ m{;$} || ($file =~ /handicap_directed/ && $orig_cat =~ /^DH:/);
+				     if ($orig_cat =~ m{^.*?:+(.*)}) { # preserve some category attributes like "projected", "inwork"
 					 my(@attr) = grep { $_ =~ m{^(?:projected|inwork|sign|ignrte);?$} } split /::?/, $1;
 					 if (@attr) {
 					     $cat .= "::" . join("::", @attr);
