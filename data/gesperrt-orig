@@ -156,12 +156,12 @@ Knoten Märkische/Landsberger Allee	1no 19512,15092 19644,15320
 #: note: Radfahrer dürfen und sollen den Bürgersteig in beiden Richtungen benutzen
 Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20251124 (Sperrung ab 25.11.2025 bis voraussichtlich Ende März 2026)
-#: source_id: LMS-BR:391269/72 viz2021:13.540283,52.540747,25.11.2025,07:00 viz2021:13.54008,52.5405,25.11.2025,07:00 (bis 31.03.2026) (bis 30.06.2026)
+#: source_id: LMS-BR:391269/72 viz2021:13.540283,52.540747,25.11.2025,07:00 viz2021:13.54008,52.5405,25.11.2025,07:00 (bis 31.03.2026) (bis 30.06.2026) (bis 31.12.2026)
 #: XXX nach den Bauarbeiten vielleicht wieder zur Einbahnstraße machen?
 #: historical_note: früher (bis Nov. 2025) Einbahnstraße
 #: last_checked: 2026-06-16 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219 19577,15166
 # REMOVED (ja, derzeit Rückbau) --- #: XXX evtl. wird dieser Abschnitt der Frank-Schweitzer-Str. komplett aufgegeben? --- Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
 # REMOVED (zukünftige Anbindung an die Unterführung und Rampe prüfen) --- Frank-Schweitzer-Str.	1no 19195,14931 19178,14924
@@ -4412,7 +4412,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 # REMOVED --- #: by: http://www.berliner-woche.de/johannisthal/bauen/neues-stadtquartier-geplant-d160577.html (geplanter Abschluss 2022, Baubeginn 2019) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_55_6227_6354_online.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/index.shtml --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/vorhabenbezogener_Bebauungsplan9-17VE.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/14_Verkehrsanlagenplanung.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/15_Erlaeuterung-Verkehrsanlagenplanung.pdf --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1065149.php (FNP-Anpassung) --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1114398.php (Vorlage zur Beschlussfassung) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/baubeginn-fuer-583-wohnungen-und-eine-kita-am-eisenhutweg-anfang-2022_a331385 (westlicher Teil: Bauarbeiten 2022 - 2027) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (FNP-Anpassung) --- #: by: https://entwicklungsstadt.de/am-eisenhutweg-in-johannisthal-entsteht-ein-neues-wohnquartier/ --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/grundsteinlegung-fuer-knapp-600-wohnungen-und-eine-kita-im-eisenhutweg_a348008 --- #: by: https://www.deutsches-architekturforum.de/thread/14936-wohnquartier-am-eisenhutweg-degewo-johannisthal-treptow-k%C3%B6penick/?postID=720354#post720354 --- #: by: https://abload.de/img/eisenhut_lageplan_skaaqkk9.jpg --- #: note: für den westlichen Teil (bis zum "Knick" des Eisenhutwegs) wird ein Bebauungsplan 9-17VE aufgestellt; für den östlichen Teil bis Höhe Straße am Flugplatz gibt es noch keine Planungen, also wurde dieser erst einmal rausgenommen --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/index.shtml (östlicher Teil, Bebauungsplan XV-58bb-1) --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/download/XV-58bb-1_Bebauungsplanentwurf.pdf (hier: keine Wege/Straßen) --- #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlg4S2Y4NVh3QUE3OXdVLmpwZw== --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_08_0725_0852_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_28_2981_3084_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/richtfest-gefeiert-am-eisenhutweg_a393890 (bezugsfertig ab 2026) --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1387435.php (Bebauungsplan für den östlichen Teil) --- #: by: https://kw-development.com/bauvorhaben-berlin/eisenhutweg-54-76/ (Fertigstellung 2026) --- #: by: https://www.degewo.de/wachstum/neubau/treptow-koepenick/eisenhutweg-54-76 --- #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-mehrfamilienhaus-wohnanlage-eisenhutweg-berlin-deutschland-637647.html --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/eisenhutweg-adlershof.1012/#post-23644 --- #: source_id: viz2021:13.508467,52.430571,19.07.2022,13:00 (Leitungsarbeiten bis 2.10.2022, Gegenverkehrsregelung) (bis 4.11.2022) (inaktiv) --- #: source_id: viz2021:13.50906,52.430203,22.11.2023,05:00 (Kranabbau bis 23.11.2023) (inaktiv) --- #: source_id: viz2021:13.509368,52.430018,11.09.2024,10:00 (bis 04.10.2024) (bis 18.10.2024) (bis 01.11.2024) (inaktiv) --- # REMOVED (nein) --- #: XXX betreffen die Leitungsarbeiten auch den Radverkehr (z.B. durch die Einrichtung eines Zweirichtungsradwegs?) --- #: osm_watch: way id="1154764619" version="2" --- #: XXX hier wird vermutlich eine Einbahnstraße im Uhrzeigersinn sein --- #: last_checked: 2024-12-27 --- #: check_frequency: 60d --- #: next_check: 2026-01-01 --- Eisenhutweg [Wohngebiet]: wegen Hochbauarbeiten noch gesperrt	2::inwork 17741,2824 17688,2744 17471,2872 17569,2987
 # 
 #: next_check_id: BUCKOWERFELDER-2024
-#: last_checked: 2026-06-26 (osm) vvv
+#: last_checked: 2026-06-28 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED (laut osm hier offen) --- #: osm_watch: way id="946008571" version="9" --- An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
@@ -4424,7 +4424,7 @@ Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019
 # REMOVED (fertig) --- Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12772,1019 12808,968
 # REMOVED (fertig) --- #: XXX außerdem Anbindung zum Mauerweg geplant --- #: osm_watch: way id="946008579" version="8" --- # REMOVED (laut osm hier offen) --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12861,1102 12868,1085 --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12868,1085 12860,1057 12882,999
 #: XXX außerdem Anbindung zum Mauerweg geplant
-#: osm_watch: way id="1341530667" version="2"
+#: osm_watch: way id="1341530667" version="3"
 # REMOVED (laut osm hier offen) --- Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12928,1126 12933,1101
 Knyphausenweg: Hochbauarbeiten, gesperrt	2::inwork 12933,1101 12946,1027
 #: osm_watch: way id="1482608309" version="2"
@@ -4472,7 +4472,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="5"
-#: last_checked: 2026-03-15 (daf)
+#: last_checked: 2026-06-29
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
@@ -4597,7 +4597,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-06-26
+#: last_checked: 2026-06-29
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -5355,6 +5355,8 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/staedtebau/berliner-mitte/molkenmarkt/planzeichnung_blatt_1.pdf
 #: by: https://www.entwicklungsstadt.de/neue-wohnungen-am-molkenmarkt-bebauungsplan-beschlossen/
 #: by: https://www.entwicklungsstadt.de/historische-mitte-mittelalterlicher-fund-am-molkenmarkt-sorgt-fuer-neue-erkenntnisse/ (archäologische Grabung bis 2027)
+#: by: https://www.entwicklungsstadt.de/molkenmarkt-wettbewerb-siegerentwuerfe-fuer-wohnungen-und-theater-stehen-fest/
+#: by: https://www.berlin.de/sen/stadt/presse/pressemeldungen/pressemitteilung.1687105.php
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
 #: last_checked: 2026-06-26
 #: check_frequency: 180d

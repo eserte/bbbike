@@ -1853,10 +1853,10 @@ Hufelandstr.: abgefrästes Kopfsteinpflaster	Q1- 12077,14186 12228,14083
 #: by: https://www.morgenpost.de/berlin/article411594345/baustellen-chaos-kopfsteinpflaster-in-der-hufelandstrasse-wirft-fragen-auf.html
 #: by: https://www.tagesspiegel.de/berlin/fahrradfreundliches-frasen-ist-das-abschleifen-von-kopfsteinpflaster-die-zukunft-fur-berlins-nebenstrassen-15506615.html (restlicher Abschnitt im Juni 2026)
 #: osm_watch: way id="1411626283" version="7"
-#: last_checked: 2026-05-16
-#: check_frequency: 60d
+#: last_checked: 2026-06-29
+#: check_frequency: 30d
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2026-06-30 (Tsp)
+# REMOVED (bis Juni 2026 nicht passiert) --- #: next_check: 2026-06-30 (Tsp)
 Hufelandstr.: abschnittsweise abgefrästes Kopfsteinpflaster	Q2+ 12228,14083 12361,13985
 #: historical_note: früher (bis Ende Oktober 2025): Kopfsteinpflaster, Q2
 Hufelandstr.: abgefrästes Kopfsteinpflaster	Q1- 12361,13985 12478,13903 12582,13834 12578,13800
@@ -8163,7 +8163,7 @@ Mühlenstr.: Asphalt	Q0 6842,2995 6763,2879 6745,2848
 #: XXX Wird das Kopfsteinpflaster auch hier durch Asphalt ersetzt? Und bedeutet das, dass die Route durch den Gemeindepark nicht realisiert wird?
 #: osm_watch: way id="702312697" version="7"
 #: last_checked: 2026-04-01
-#: check_frequency: 90d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-02-24
 Mühlenstr.: Kopfsteinpflaster	Q2+ 6745,2848 6665,2836
 Boraweg: Kleinsteinpflaster	Q2+ 6658,2907 6710,2909 6763,2879
@@ -12488,7 +12488,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-06-24
+#: last_checked: 2026-06-29
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920

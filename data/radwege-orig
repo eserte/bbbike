@@ -2117,7 +2117,7 @@ Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6029,10356
 #: osm_watch: way id="85468589" version="28"
 #: osm_watch: way id="458915639" version="9"
 #: last_checked: 2026-04-01 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
 alter holpriger Verbundsteinpflasterradweg	RW2;RW8 6643,3070 6638,3138 6640,3192 6712,3237
@@ -5053,7 +5053,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2026-06-18 vvv
+#: last_checked: 2026-06-29 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -5418,10 +5418,10 @@ Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
-#: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, (bis 20.05.2026) (bis 29.06.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026)
 #: last_checked: 2026-05-31
-#: next_check: 2026-06-29
-#: valid: -20260629
+#: next_check: 2026-09-02
+#: valid: -20260902
 gemeinsamer Geh- und Radweg während der Bauarbeiten	RW2;RW2 22128,5003 22133,4986 22154,4923 22196,4847
 # 
 Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
@@ -7003,7 +7003,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-06-29 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
@@ -8444,10 +8444,10 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: bvg2024:m11#HIM_FREETEXT_293424 (kein Endedatum) (zwischenzeitlich inaktiv, 1x)
 #: source_id: adac:875632473 (bis 30.06.2026) (!) (neue ID -> inaktiv)
 #: source_id: adac:334221108 (bis 30.06.2026) (!) (neue ID -> inaktiv)
-#: source_id: LMS-BR:372746/72 viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026)
+#: source_id: LMS-BR:372746/72 viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026) (inaktiv)
 #: source_id: viz2021:13.49537,52.43164, (Ampelanlage außer Betrieb, kein Endedatum) (inaktiv)
 #: source_id: LMS-BR:362451/72 viz2021:13.485714,52.424228, (bis 12.05.2026) (bis 31.12.2026)
-#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026)
+#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892218755624718652 (nur Kfz-Verkehr erwähnt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/stubenrauchstrasse-in-rudow-nach-rohrbruch-gesperrt/ ("mehrere Monate", auf dem Bild scheint die Absperrung über die gesamte Fahrbahnbreite zu gehen, etwa 90m vor der Kanalstraße)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1894669757980254425 (bis 30.05.2025)
@@ -9100,7 +9100,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-06-29 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: note: Kantstr., Richtung Osten

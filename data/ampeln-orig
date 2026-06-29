@@ -52,7 +52,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-06-02
+#: last_checked: 2026-06-29
 #: next_check: 2026-07-17
 #: valid: -20260717
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -525,7 +525,7 @@ Gürtelstr.: Gegenverkehrsregelung zwischen Dossestr. und Oderstr.	X::inwork::alt
 #: note: manchmal kaputt oder ausgeschaltet (gesehen 2023-05-06 Sa gegen 12:10, 2023-11-25 gegen 11:30, 2024-12-08 So gegen 14:15, ein Tag in September 2025 gegen 05:00)
 #: note: Anforderungsampel
 	F::inwork 18831,14823
-#: osm_watch: node id="10573986817" version="4"
+#: osm_watch: node id="10573986817" version="5"
 #: XXX_prog gilt nicht für stadtauswärts fahrende Radfahrer auf dem Bürgersteig
 #: note: Anforderungsampel
 	F::inwork 19196,14976
@@ -3122,7 +3122,11 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 8241,11024
 #: XXX_indoor eigentlich zwei Fußgängerampeln in ca. 50-100m Abstand (mittlerweile ist die westliche wegen Bauarbeiten ausgeschaltet)
 #: note: Anforderungsampel (aber wahrscheinlich oft genutzt)
-	F 5829,10964
+#: next_check_id: BREITSCHEIDPLATZ-2026
+#: XXX wegen der Bauarbeiten am Breitscheidplatz ausgeschaltet
+#: last_checked: 2026-06-29
+#: check_frequency: 120d
+	F0 5829,10964
 	X 12060,11323
 	X 3869,10760
 	F 2694,10002
@@ -4081,7 +4085,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-06-29 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3

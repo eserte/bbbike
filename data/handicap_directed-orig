@@ -827,4 +827,14 @@ Borstellstr. -> Am Eichgarten: Umweg	DH:len=20:h=q3,20 6309,4328 6219,4336 6210,
 #: next_check ^^^
 #: last_checked ^^^
 # 
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-bundesumweltministerium-stresemannstra%C3%9Fe.307/#post-9710
+#: by: https://www.deutsches-architekturforum.de/thread/4575-bundesumweltministerium-stresemannstra%C3%9Fe-und-erweiterungsbau/?postID=774211#post774211 (Fertigstellung Ende 2026?)
+#: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/berlin/politik-und-verwaltung/bmukn/erweiterung/projektinformation.html (Fertigstellung geplant 2029)
+#: osm_watch: way id="295838676" version="11"
+#: note: von der Fahrbahn aus könnte man physikalisch abbiegen, ist aber nicht erlaubt
+#: last_checked: 2026-06-29
+#: check_frequency: 120d
+#: next_check: 2029-12-31  (bbr.bund site)
+Stresemannstr. -> Niederkirchnerstr.: Linksabbiegen vom Radweg aus wegen Barrieren nicht möglich, Umweg	DH:len=100 8631,11334 8720,11226 8833,11241
+# 
 #: temporary ^^^

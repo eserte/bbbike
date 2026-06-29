@@ -67,7 +67,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: osm_watch: way id="1108260165" version="11"
 #: note: etwa 30m lang
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
-#: osm_watch: note 5191913 2
+#: osm_watch: note 5191913 3
 #: last_checked: 2026-04-30 vvv
 #: check_frequency: 45d vvv
 Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q3::inwork; 13434,13234 13383,13349
@@ -395,7 +395,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: osm_watch: note 4844974 4
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,re-H,T[permanent],no-W)
-#: last_checked: 2026-06-16 (osm, traffic)
+#: last_checked: 2026-06-29 (daf (noch immer Abrissarbeiten))
 #: check_frequency: 30d
 # REMOVED (wird wohl länger dauern?) --- #: next_check: 2026-03-15 (MoPo)
 #: valid: 20171026-
@@ -408,7 +408,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-06-26
+#: last_checked: 2026-06-29
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -656,7 +656,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://www.entwicklungsstadt.de/dauerbaustelle-in-berlin-mitte-umbau-der-charlottenstrasse-startet-spaeter/ (Beginn Ende 2026 oder sogar Anfang 2027)
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-06-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="153698394" version="19"
@@ -994,6 +994,7 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 ### Charlottenburg ###
 # 
 #: next_check_id: RANKE-2026
+#: next_check_id: BREITSCHEIDPLATZ-2026
 # REMOVED --- #: next_check_id: RANKE-2023
 # REMOVED --- #: note: Länge des gesperrten Bereichs etwa 20-30m --- #: XXX Sperrung der Anbindung Rankestr. wird nicht mehr erwähnt --- #: add_fragezeichen: Gibt es die Baustelle in der Rankestr. im Einmündungsbereich Breitscheidplatz noch? --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-05-31 --- #: check_frequency: 60d --- #: next_check: 2024-07-29 --- #: next_check: 2024-06-13 --- Rankestr.: Einmündungsbereich Breitscheidplatz wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine	q2::inwork 5669,10704 5782,10884
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis 08.11.2025, 18:00 Uhr, hier nur Kfz-Verkehr)
@@ -1164,14 +1165,14 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9872 (Anfrage)
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
 #: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026) (inaktiv)
-#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026)
+#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026)
 #: last_checked: 2026-06-23 (mapillary) vvv
-# REMOVED (Ende unwahrscheinlich) --- #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-08-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 # REMOVED (nicht mehr) --- Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 # REMOVED (Gehwegbenutzung ist nun optional) --- Stubenrauchstr.: Gehwegbenutzung, sehr schmal	q3::inwork; 16786,2989 16831,3049 16853,3078
-# REMOVED (Ende unwahrscheinlich) --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 ### Lichtenberg ###
@@ -1350,7 +1351,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Prenzlauer Berg ###
 # 
-#: osm_watch: note 5163520 3
+#: osm_watch: note 5163520 5
 #: add_fragezeichen: Ist die Fahrbahn wegen der Hochbauarbeiten weiterhin gesperrt?
 #: last_checked: 2026-06-18
 #: check_frequency: 90d
@@ -1375,7 +1376,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-06-22 (mapillary) vvv
+#: last_checked: 2026-06-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
@@ -5476,11 +5477,11 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 # 
 #: next_check_id: FRANKFURTERALLEE-2025
 #: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026) (bis 30.06.2026)
+#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026) (bis 30.06.2026) (bis 03.07.2026)
 #: note: Länge der gesperrten Fahrbahn: ca. 65m
 #: last_checked: 2026-06-28
 #: check_frequency: 10d
-# REMOVED --- #: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-07-03 (VIZ-Verkehrsmeldung)
 Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
 # REMOVED --- #: valid: !-20251219
 # XXX (später wiederherstellen) --- Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
@@ -5860,6 +5861,8 @@ Braunschweiger Ufer: Fußgänger	q1+ 12722,5831 13080,5882 13382,5957 13418,5954 1
 # 
 #: XXX_prog: BS vermutlich an beiden Enden, aber auch ohne bei q3 belassen (wegen der Kürze der Strecke)
 Frauenfelder Weg: Bordsteine, einige Fußgänger	q3 7627,17034 7647,17037
+# 
+Oberfeldstr.: Bahnübergang zusammen mit Fußverkehr	q2 20627,12162 20624,12133 20619,12098
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
