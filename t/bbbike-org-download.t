@@ -112,6 +112,9 @@ for my $url (@urls) {
 		if ($stderr =~ /probably openssl is too old/ && ($ENV{TRAVIS}||'') eq 'true' && ($ENV{CODENAME}||'') =~ m{^(precise|trusty)$}) {
 		    diag "Known failure on precise+trusty (openssl problem), skip rest of tests";
 		    exit 0;
+		} elsif ($stderr =~ /500 Can't connect to download.bbbike.org:443/ && ($ENV{CODENAME}||'') =~ m{^(trusty)$}) {
+		    diag "Known failure on trusty (openssl too old?), skip rest of tests";
+		    exit 0;
 		} else {
 		    diag "Command failed: $stderr";
 		}
