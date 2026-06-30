@@ -338,7 +338,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2026-06-10
+#: last_checked: 2026-06-30
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -353,7 +353,7 @@ Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
-#: last_checked: 2026-06-24
+#: last_checked: 2026-06-30
 #: check_frequency: 60d
 Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
@@ -415,7 +415,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2- 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2026-06-27
+#: last_checked: 2026-06-30
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -427,7 +427,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="30"
-#: last_checked: 2026-06-27
+#: last_checked: 2026-06-30
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
@@ -678,11 +678,12 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10226,14568 10311,14391
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11695 (Antrag zur Swinemünder Brücke)
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749723#post749723 (Umbau hat begonnen)
 #: by: https://www.brunnenviertel-brunnenstrasse.de/390-so-wird-die-swinemuender-umgebaut
+#: by: https://mittemachen-berlin.de/die-vorhabenliste-des-bezirksamtes-mitte-von-berlin/ (Erwähnung einer Radverkehrsmaßnahme (vielleicht Fahrradstraße?) sogar bis Behmstr. + Ausbau in diesem Abschnitt, Projektzeitraum bis 2027)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
 #: last_checked: 2026-04-18 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2027-03-31 (ex-infravelo)
+#: next_check: 2027-03-31 (ex-infravelo; BA: Projektzeitraum)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
 Fürstenberger Str.: Asphalt	Q0 10311,14613 10468,14636
@@ -14200,6 +14201,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14188 (Einwohneranfrage)
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14190 (Einwohneranfrage)
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-in-reinickendorf-neue-details-verschaerfen-debatte/
+#: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-streit-um-116-baeume-und-neuen-radweg/
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: last_checked: 2026-06-07 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
@@ -17519,7 +17521,11 @@ Schönwalder Allee: asphaltiert	Q0 -6540,20790 -6782,20818
 Melanchthonstr. (Wilhelmstadt): grobes Kopfsteinpflaster	Q3 -4169,12371 -4180,12553
 #: corrected_by: srt (asphaltiert, Q0 -> ...)
 (Weverstr. - Gatower Str.): unebener Asphalt, Wurzelhebungen	Q2+ -4169,12371 -4365,12358
-(Südpark): wassergebundene Decke	Q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3928,12049 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
+(Südpark): wassergebundene Decke	Q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3928,12049 -4012,12111 -4033,12108
+#: historical_note: früher (bis Juni 2026) Holzbohlen (allerdings nicht bei BBBike eingetragen)
+#: corrected_by: osm note
+Südparkbrücke: Steinplatten	Q0 -4033,12108 -4048,12107
+(Südpark): wassergebundene Decke	Q1 -4048,12107 -4063,12104 -4092,12062
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2020/pressemitteilung.998882.php (asphaltierter Fuß- und Radweg, bis Frühjahr 2021) --- #: XXX hier (oder ein anderer, parallel verlaufender Weg) wird asphaltiert --- #: next_check: 2021-04-15
 (Südpark): Asphalt	Q0 -4033,11786 -4030,11794 -4029,11803 -4027,11818 -4090,11954 -4095,12006 -4093,12040
 (Südpark): wassergebundene Decke	Q1 -4093,12040 -4092,12062 -4106,12100

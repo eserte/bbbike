@@ -1225,7 +1225,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-06-24
+#: last_checked: 2026-06-30
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3703,7 +3703,8 @@ Preußensiedlung: einige Fußgänger	q1 20971,1046 20957,1043 20850,963
 #: XXX_prog: BS südliches Ende, kann aber einige Meter weiter südlich umfahren werden, ansonsten: einige Fußgänger, q1
 Erieseering: Bordstein	q3 18141,10173 18132,10183
 #: note: Grünanlagen-Schild ohne Zusatzschild am südlichen Ende
-(Erieseering - am Tränkegraben): einige Fußgänger	q1 18132,10183 18114,10215 18085,10244 18076,10324 18042,10392 18039,10398 18026,10490 18034,10567
+#: historical_note: bis Juni 2026 bei BBBike mit "q1" getaggt, aber insbesondere im Sommer sind einige Kurven bewachsen und schmal, deshalb "q2"
+(Erieseering - am Tränkegraben): einige Fußgänger, schmale Abschnitte	q2 18132,10183 18114,10215 18085,10244 18076,10324 18042,10392 18039,10398 18026,10490 18034,10567
 #: note: am nördlichen Eingang existiert ein Schild "Radfahrer absteigen", aber am südlichen Ende fehlt so ein Schild
 (Zachertstr. - am Tränkegraben): Fußgänger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17915,10866 17900,10730 17892,10713 17870,10619
 (am Tränkegraben - Moldaustr.): einige Fußgänger	q1 17870,10619 17856,10560 17864,10537 17856,10508
@@ -5623,10 +5624,10 @@ Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 Suttnerstr.: einige Fußgänger	q2+ 7728,5866 7733,5893 7735,5960
 # 
 #: next_check_id: HINDENBURGDAMM-2022
-#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026) (bis 29.05.2026) (bis 30.06.2026)
+#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026) (bis 29.05.2026) (bis 30.06.2026) (bis 17.08.2026)
 #: XXX nach den Bauarbeiten prüfen und wiederherstellen: (Wolfensteindamm - Händelplatz): Gehweg, einige Fußgänger, q2	q3 4543,4820 4517,4853
 #: last_checked: 2025-12-06 (mapillary)
-#: next_check: 2026-06-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-17 (VIZ-Verkehrsmeldung)
 #: note: zwischenzeitlich (ab ca. 2022): 
 (Wolfensteindamm - Händelplatz): Baustelleneinrichtung, Ausweichen auf Gehweg	q3 4543,4820 4517,4853
 # 

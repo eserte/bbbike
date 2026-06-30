@@ -4779,24 +4779,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (nicht mehr) --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2021-03-01 --- #: check_frequency: 45d
-# REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349 ---	q4::inwork 17771,8349 17753,8290
-#: next_check_id: BLOCKDAMMWEG-2026
-#: note: vielleicht Baustelleneinrichtung für den Blockdammweg, vielleicht schon vorbereitend für die Sperrung der Ehrlichstr. und Umleitungsverkehr via Georg-Klingenberg-Str. und Trautenauer Str., oder was ganz anderes
-#: last_checked: 2026-06-08
-#: check_frequency: 14d
-# REMOVED (früher Einbahnstraßenregelung ab Ehrlichstr.) ---	q4::inwork; 17879,8773 17851,8662 17846,8644
-# REMOVED (früher?) ---	q4::inwork; 17813,8508 17830,8578 17838,8611 17846,8644
-#: note: weil kurz und gut zu überblicken: q4 -> q3
-	q3::inwork; 17794,8429 17813,8508
-',
-         'from' => undef,
-         'id' => 3320,
-         'text' => 'Trautenauer Str.: kurze Einbahnstraßenregelung, offen Richtung Süden',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
@@ -7927,15 +7910,16 @@ Reinerzstr.	q4::temp 2670,8563 2566,8578
 #: by: https://www.nalepaland.de/
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
-#: note: ab und zu kann zumindest das nördliche Tor offen sein (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17, 2025-09-01 Mon 12:13), aber nicht immer (gesehen 2024-11-16 Sat, 2025-09-21 Sun 10:05); das südliche Tor ist immer zu
 #: note: beide Tore offen (gesehen 2025-02-24 Mo 12:30, 2025-02-26 Mi 11:35)
 #: note: nördliches Tor offen, südliches Tor nur geschlossen (aber nicht verschlossen) (gesehen 2025-03-10 Mo 17:25, 2025-03-24 17:32)
+#: note: nördliches Tor offen, südliche Tor ist verschlossen (gesehen 2023-01-13, 2023-11-08, 2024-05-22, 2024-08-17, 2025-09-01 Mon 12:13, 2026-06-30 Tue 18:17)
 #: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30, 2026-04-03 Fri 11:07 Karfreitag)
+#: note: beide Tore verschlossen (gesehen 2024-11-16 Sat, 2025-09-21 Sun 10:05)
 #: osm_watch: way id="207757723" version="8"
 #: osm_watch: way id="275795707" version="5"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
-#: last_checked: 2026-04-03 vvv
+#: last_checked: 2026-06-30 vvv
 #: check_frequency: 90d vvv
 Nalepastr., nördliches Tor am Rundfunkgebäude	2 17069,8411 17065,8396
 #: note: wieder dauerhaft (?) gesperrt -> siehe auch neuen gesperrt-orig-Eintrag
@@ -8013,14 +7997,14 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
        {
          'data' => '# REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
 # REMOVED --- #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv) --- #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv) ---	q4::inwork 2920,12070 2686,12051
-#: source_id: LMS-BR:398542/72 viz2021:13.29634,52.51568,09.02.2026,07:00 (Einbahnstraße, aber in welche Richtung? bis 30.06.2026)
-	q4::inwork; 2920,12070 3088,12094
+#: source_id: LMS-BR:398542/72 viz2021:13.29634,52.51568,09.02.2026,07:00 (Einbahnstraße, aber in welche Richtung? bis 30.06.2026) (inaktiv)
+# REMOVED ---	q4::inwork; 2920,12070 3088,12094
 #: source_id: LMS-BR:412907/72 viz2021:13.28778,52.51516,22.06.2026,07:00 (bis 10.07.2026)
 Seelingstr.: zwischen Sophie-Charlotten-Str. und Danckelmannstr.	q4::inwork 2485,12032 2686,12051
 ',
          'from' => 1770591600,
          'id' => 4290,
-         'text' => 'Seelingstr.: Bauarbeiten, Sperrung bzw. Einbahnstraßenregelung, bis Mitte Juli 2026',
+         'text' => 'Seelingstr.: Bauarbeiten, Sperrung, bis Mitte Juli 2026',
          'type' => 'handicap',
          'until' => 1783695600
        },
@@ -8666,11 +8650,12 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
          'data' => '#: next_check_id: THOMAS-2025
 #: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:376390/72 viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025) (bis 18.12.2025) (inaktiv)
-#: also_indoor: traffic (G,T,no-H,no-W)
+#: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: XXX im Zusammenhang mit den Arbeiten an der Ampel
 #: note: kurzer Abschnitt gesperrt (~40m) + Bordsteine, deshalb q3
-#: last_checked: 2026-06-01 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2026-06-30 (traffic) vvv
+#: check_frequency: 14d (traffic) vvv
+# REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (infravelo, mobilitaetsrat) vvv
 Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
 #: next_check ^^^
@@ -8973,10 +8958,11 @@ Kaiserdamm -> Fritschestr.: Richtung Osten/Norden	3 3159,11562 3320,11583 3287,1
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/morsch-und-marode-diese-berliner-holzbrucken-werden-jetzt-abgerissen-und-neu-gebaut-15444631.html (Bauzeit laut Schild: von März bis Mai 2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neue-brucken-fur-spandau-hier-sollen-fussganger-und-radfahrer-wieder-schneller-vorankommen-15648479.html (geplante Eröffnung im Juni 2026)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/gleich-sechs-neue-brucken-spandau-kann-endlich-wieder-rubermachen-15666133.html
+#: osm_watch: note 5365045 1
 #: add_fragezeichen: Ist die Südparkbrücke mittlerweile wieder befahrbar?
-#: last_checked: 2026-04-09 (Tsp)
-#: check_frequency: 270d
-#: next_check: 2026-06-15 (Tsp)
+#: last_checked: 2026-06-28 (osm note)
+#: check_frequency: 3d
+# REMOVED --- #: next_check: 2026-06-15 (Tsp)
 # REMOVED --- #: next_check: 2026-05-31 (Baustellenschild)
 # REMOVED --- #: next_check: 2026-06-30 (SenMVKU website)
 Südparkbrücke: Neubau	2::inwork -4048,12107 -4033,12108
@@ -9001,10 +8987,10 @@ Südparkbrücke: Neubau	2::inwork -4048,12107 -4033,12108
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
 #: last_checked: 2026-06-29 (traffic) vvv
 #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2026-05-31 (BA-Seite) vvv
+#: next_check: 2026-07-31 (BA-Seite) vvv
 Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q4::inwork; 18374,2971 18445,2642
 # REMOVED (Durchgang/fahrt möglich) --- Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -9198,7 +9184,20 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check_id: HENTIG-2025
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php
+# REMOVED --- #: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2025-11-16 Sun 11:11, 2025-11-30 Sun 12:00, 2025-12-06 Sat 11:40) --- Hentigstr.	q4::inwork 18586,9172 18548,8942 18518,8778
+#: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2026-06-30 Tue 18:08)
+#: next_check: 2026-07-10 (Halteverbotsschilder)
+Hentigstr.: zwischen Marksburgstr. und Aristotelessteig	q4::inwork 18586,9172 18626,9406 18660,9599
+',
+         'from' => 1781560800,
+         'id' => 4495,
+         'text' => 'Hentigstr./Cäsarstr.: mögliche Sperrung wegen Markierungsarbeiten zwischen Marksburgstr. und Aristotelessteig, Ende der Arbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: also_indoor: traffic (G,W,T[nur nördlich])
@@ -9258,7 +9257,7 @@ Quartiersweg: komplett gesperrt	2::inwork 7548,7884 7537,7859
 #: note: Halteverbotsschilder bis 30.04.2026
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
 #: add_fragezeichen: Wann sie die Bauarbeiten beendet?
-#: last_checked: 2026-06-08 vvv
+#: last_checked: 2026-06-30 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2026-04-30 (Halteverbotsschilder) vvv
 Hönower Str.: Einbahnstraßenregelung	q4::inwork; 18660,9410 18735,9421
@@ -9503,7 +9502,7 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
        undef,
        {
          'data' => '#: source_id: LMS-BR:397835/72 viz2021:13.32184,52.5019,02.02.2026,07:00 (bis 22.03.2026) (inaktiv)
-#: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (südlicher Abschnitt) (bis 30.04.2026) (bis 05.06.2026)
+#: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (südlicher Abschnitt) (bis 30.04.2026) (bis 05.06.2026) (bis 30.07.2026)
 #: source_id: LMS-BR:412910/72 viz2021:13.32186,52.50204,22.06.2026,07:00 (zwischen Kudamm und Savignyplatz, bis 07.08.2026)
 #: source_id: LMS-BR:412911/72 viz2021:13.32181,52.50279,22.06.2026,07:00 (Mommsenstr., bis 07.08.2026)
 #: also_indoor: traffic (G,T,H,W)
@@ -9734,7 +9733,7 @@ Forstallee: 2. BA zwischen Fasanenstr./Weichselstr. und Waldpromenade	q4::inwork
 #: osm_watch: note 5193492 4
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-06-30 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 # REMOVED (wird sehr wahrscheinlich verlängert) (tatsächlich weiterhin Baustelle) --- #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
@@ -9900,15 +9899,15 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
          'until' => undef
        },
        {
-         'data' => '#: source_id: LMS-BR:404055/72 viz2021:13.46315,52.49949,07.04.2026,07:00 (bis 29.05.2026) (bis 30.06.2026)
+         'data' => '#: source_id: LMS-BR:404055/72 viz2021:13.46315,52.49949,07.04.2026,07:00 (bis 29.05.2026) (bis 30.06.2026) (bis 14.8.2026)
 #: note: q4 -> q3, weil nur ein kurzer Abschnitt betroffen ist, allerdings müssen Bordsteine überwunden werden
 	q3::inwork 14447,10491 14490,10610
 ',
          'from' => 1775451600,
          'id' => 4577,
-         'text' => 'Bödikerstr.: Bauarbeiten zwischen Corinthstr. und Persiusstr., Sperrung, vom 07.04.2026 07:00 bis 30.06.2026',
+         'text' => 'Bödikerstr.: Bauarbeiten zwischen Corinthstr. und Persiusstr., Sperrung, vom 07.04.2026 07:00 bis 14.08.2026',
          'type' => 'handicap',
-         'until' => 1782856799
+         'until' => 1786744799
        },
        {
          'data' => '#: next_check_id: BER-2026
@@ -10091,7 +10090,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: also_indoor: traffic (T,G,re-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-06-29 (traffic)
+#: last_checked: 2026-06-30 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -10202,7 +10201,7 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-06-30 vvv
 #: next_check: 2026-07-10 (2. BA?) vvv
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
@@ -10719,31 +10718,35 @@ Rückertstr.	q4::inwork 3569,11473 3571,11451
 #: by: https://www.morgenpost.de/berlin/article412316217/so-soll-die-rettung-der-goerlitzer-bahnbruecken-doch-noch-gelingen.html
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8340 (Antrag)
 #: by: https://www.rbb24.de/panorama/beitrag/2026/06/goerlitzer-bruecken-gesperrt-streit-sanierung-deutschebahn-bezirk.html (ab 1.7.2026)
+#: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-werden-gesperrt-warum-die-loesung-weiter-offen-ist/
 #: osm_watch: note 5278957 2
 #: osm_watch: way id="24042478" version="18"
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Wurden die Görlitzer Brücken tatsächlich gesperrt?
-#: last_checked: 2026-06-27
-#: next_check: 2026-07-01
+#: last_checked: 2026-06-30
+#: check_frequency: 2d
+# REMOVED --- #: next_check: 2026-07-01
 Görlitzer Brücken: Sperrung droht	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
 # REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13146,9903 13141,9911
 # REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13970,9349 13940,9376
 ',
+         'dont_check_date' => 1,
          'from' => 1782770400,
          'id' => 4655,
-         'text' => 'Görlitzer Brücken: mögliche Sperrung ab 1.7.2026',
+         'text' => 'Görlitzer Brücken: mögliche Sperrung ab 1.7.2026 (Stand 30.6.2026: es existieren keine Absperrungen)',
          'type' => 'gesperrt',
          'until' => undef
        },
        {
          'data' => '#: source_id: LMS-BR:414040/72 viz2021:13.4861,52.4369,29.06.2026,00:00 (bis 31.07.2026)
+#: source_id: LMS-BR:414171/72 viz2021:13.4861,52.4369, (bis 17.08.2026)
 	q4::inwork 16152,3562 16208,3527 16254,3489
 ',
          'from' => 1782597600,
          'id' => 4656,
-         'text' => 'Minzeweg: Bauarbeiten zwischen Sternliebweg und Zwergasternweg, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 29.06.2026 bis 31.07.2026 ',
+         'text' => 'Minzeweg: Bauarbeiten zwischen Sternliebweg und Zwergasternweg, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 29.06.2026 bis 17.08.2026 ',
          'type' => 'handicap',
-         'until' => 1785535140
+         'until' => 1787003999
        },
        {
          'data' => '#: source_id: LMS-BR:414022/72 viz2021:13.31644,52.51084,29.06.2026,07:00 (bis 31.12.2026)
@@ -10754,6 +10757,16 @@ Görlitzer Brücken: Sperrung droht	2::inwork 13940,9376 13476,9720 13282,9828 132
          'text' => 'Schillerstr.: Bauarbeiten zwischen Herderstr. und Leibnizstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 29.06.2026 bis 31.12.2026 ',
          'type' => 'handicap',
          'until' => 1798757940
+       },
+       {
+         'data' => '#: source_id: LMS-BR:414190/72 viz2021:13.41449,52.55284,30.06.2026,12:00 (bis 31.07.2026)
+	q4::inwork 11337,16291 11255,16313 11004,16360
+',
+         'from' => 1782727200,
+         'id' => 4658,
+         'text' => 'Kuglerstr.: Bauarbeiten zwischen Schönhauser Allee und Greifenhagener Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 30.06.2026 bis 31.07.2026',
+         'type' => 'handicap',
+         'until' => 1785535140
        }
      
 );
