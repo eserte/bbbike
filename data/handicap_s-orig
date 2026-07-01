@@ -1057,7 +1057,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-06-16
+#: last_checked: 2026-07-01
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1178,7 +1178,7 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 ### Lichtenberg ###
 # 
 #: also_indoor: traffic (G,no-T,no-H,no-W)
-#: last_checked: 2026-06-21
+#: last_checked: 2026-07-01 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 #: valid: -20260731
@@ -1225,7 +1225,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-06-30
+#: last_checked: 2026-07-01
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -5263,7 +5263,7 @@ Azaleenstr.: Bodenschwelle	q1 23443,4524 23491,4534 23536,4543
 #: note: Grünanlagen-Schild ohne weitere Zusatzschilder
 (Blitzenroder Ring - Packereigraben): einige Fußgänger	q2 5808,22387 5796,22401 5796,22412
 #: historical_note: früher: am westlichen Ende ein Grünanlagen-Schild mit Radfahrer-Freigabe (mit Karte des erlaubten Wegs), allerdings fehlt die Freigabe am östlichen Ende, BBBike-Beschreibung: "Fußgänger, Radfahren erlaubt"
-#: note: die Grünanlagen-Schilder mittlerweile ohne Zusatzschilder, also auch ohne Freigabe
+#: note: westliches Grünanlagen-Schild mittlerweile ohne Zusatzschilder, also auch ohne Freigabe, beim östlichen Grünanlagen-Schild mit Radfahrer-Freigabe
 Johannisthaler Park: Fußgänger, Grünanlage	q2 17760,4867 17659,4849 17580,4761
 #: note: Grünanlagen-Schild ohne weitere Zusatzschilder (am westlichen Ende)
 (Märkische Allee - Biesdorfer Promenade): Fußgänger, schmal	q2 19743,13210 19757,13191 19830,13170

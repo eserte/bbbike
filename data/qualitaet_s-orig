@@ -152,7 +152,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-06-19 (mapillary)
+#: last_checked: 2026-07-01
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -1024,7 +1024,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2026-06-16 vvv
+#: last_checked: 2026-07-01 vvv
 #: check_frequency: 120d vvv
 Rollbergstr.: Kopfsteinpflaster	Q2- 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Kopfsteinpflaster	Q2 12407,8177 12545,8209 12714,8249
@@ -6215,10 +6215,10 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: XXX bleibt es hier beim Asphalt?
 #: osm_watch: way id="70130294" version="8"
 #: priority: #C
-#: last_checked: 2026-02-28
+#: last_checked: 2026-07-01
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
-(Weg im Johannisthaler Park): Asphalt	Q0 17760,4867 17659,4849 17580,4761
+(Weg im Johannisthaler Park): Asphalt mit einigen schadhaften Stellen	Q0- 17760,4867 17659,4849 17580,4761
 Alter Schönefelder Weg: Asphalt	Q0 19743,1804 19669,1729 19648,1665 19634,1609 19606,1573 19590,1554
 #: historical_note: Beton, Q0 (war es früher auch so schlecht?)
 Bohnsdorfer Weg: Beton mit einigen Hebungen	Q1+ 19843,1375 19919,1291 19940,1265 20086,1114 20138,1042 20192,975 20252,901 20301,838 20383,733 20430,672
@@ -18660,8 +18660,10 @@ Grimmelshausenstr.: Verbundsteinpflaster	Q1 -8293,4915 -8283,4936 -8204,5103 -80
 #: by: kathrin wenkel: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Burgemeisterstr.: Asphalt	Q0 9361,5647 9158,5673
+#: corrected_by: srt (schlechtes holpriges Kopfsteinpflaster, Q3 -> ...)
+Burgemeisterstr.: unebenes Kleinsteinpflaster	Q2- 9158,5673 8981,5692
 #: corrected_by: srt (Q3 -> Q3+, by eyesight)
-Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3+ 9158,5673 8981,5692 8786,5720 8709,5732 8613,5745 8380,5766
+Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3+ 8981,5692 8786,5720 8709,5732 8613,5745 8380,5766
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Burgemeisterstr.: Asphalt mit einigen Schäden	Q1+ 8380,5766 8279,5794 8226,5809
 #: by: ^^^
@@ -25070,8 +25072,8 @@ Argoallee: guter Asphalt	Q0 26715,-6276 26962,-6074 27036,-6064
 #: by: ^^^
 # 
 #: by: Patrizia Bock:
-#: corrected_by: srt (Asphalt -> Beton)
-Muschelkalkweg: Beton	Q0- 10722,1222 10795,1251 10868,1281 10950,1315 11042,1352 11120,1384 11157,1269
+#: corrected_by: srt (Asphalt -> Beton Q0-, mittlerweile schlechter)
+Muschelkalkweg: Beton mit schadhaften Stellen	Q1+ 10722,1222 10795,1251 10868,1281 10950,1315 11042,1352 11120,1384 11157,1269
 # 
 #: by: rainer.scheunemann vvv
 #: confirmed_by: srt
@@ -27779,7 +27781,7 @@ Jahnstr. (Hermsdorf): schlechtes Kopfsteinpflaster	Q3 3707,22864 3689,23078
 # 
 #: by: Irit Früchtnicht vvv
 #: confirmed_by: srt
-Christian-Henkel-Str.: guter Asphalt	Q0 12054,1044 12175,1101 12256,1111 12350,1088 12403,1011
+Christian-Henkel-Str.: guter Asphalt	Q0 12054,1044 12175,1101 12212,1118 12293,1109 12350,1088 12403,1011
 #: confirmed_by: srt
 Buckower Weg: gutes Verbundsteinpflaster	Q1+ 12379,1185 12373,1169 12350,1088
 #: confirmed_by: srt
@@ -32604,9 +32606,11 @@ Gielower Str.: Asphalt	Q0 13825,4240 14012,4184
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Asphalt	Q0 13904,2787 13807,2863
 #: corrected_by: srt (Verbundsteine -> ...)
 #: historical_note: früher: Asphalt, einzelne Wurzelhebungen, Q0-; dann wieder nur Asphalt, Q0; jetzt wieder Wurzelhebungen
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1672156.php (Bauarbeiten südlich Severingstr. bis Sommer 2027)
+#: next_check_id: PARKWEGJOHANNISTHALERGUTSCHMIDT-2026
 #: XXX werden bei den Bauarbeiten die Schäden durch Wurzelhebungen behoben? wird es Sperrungen geben?
-#: last_checked: 2026-05-09 (mapillary)
+#: last_checked: 2026-07-01
+#: check_frequency: 90d
+#: next_check: 2027-09-20 (BA)
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Asphalt, einzelne Wurzelhebungen	Q0- 13807,2863 13761,2993 13763,3015 13730,3111 13740,3252
 #: confirmed_by: srt
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Verbundsteinpflaster	Q1+ 13740,3252 13738,3302 13728,3332
@@ -34775,5 +34779,8 @@ Einmündungsbereich asphaltiert	Q0 14911,3568
 Einmündungsbereich mit Kleinpflastersteinen	Q1- 2519,25772
 Kreuzungsbereich mit Kleinpflastersteinen	Q1- 2515,25666
 Kreuzungsbereich mit Kleinpflastersteinen	Q1- 2502,25544
+Einmündungsbereich asphaltiert	Q0 9143,6415
+Einmündungsbereich asphaltiert	Q0 9141,6459
+Einmündungsbereich asphaltiert	Q0 9136,6552
 #: ignore ^^^
 #: section ^^^
