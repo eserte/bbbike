@@ -4526,7 +4526,7 @@ EOF
 	2 9383,13986 9285,13965 9274,13963 9223,13957 9189,13953
 	2 9148,13944 9189,13953
 	2 9148,13944 9085,13919
-	2 9085,13919 9046,13900 8935,13844
+	2 9085,13919 9046,13900 8974,13864 8935,13844
 EOF
      },
      { from  => 1145430358, # 2006-04-19 09:05
@@ -13513,7 +13513,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010718',
        data  => <<EOF,
-	2::inwork 9085,13919 9046,13900 8935,13844
+	2::inwork 9085,13919 9046,13900 8974,13864 8935,13844
 EOF
      },
      { from  => 1227353511, # 2008-11-22 12:31
@@ -20187,7 +20187,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017330',
        data  => <<EOF,
-	q4::inwork; 9383,13986 9285,13965 9274,13963 9223,13957 9189,13953 9148,13944 9085,13919 9046,13900 8935,13844 8841,13800 8685,13728
+	q4::inwork; 9383,13986 9285,13965 9274,13963 9223,13957 9189,13953 9148,13944 9085,13919 9046,13900 8974,13864 8935,13844 8841,13800 8685,13728
 EOF
      },
      { from  => 1308261600, # 2011-06-17 00:00
@@ -20945,7 +20945,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4508.html',
        data  => <<EOF,
-	q4::inwork 9085,13919 9046,13900 8935,13844
+	q4::inwork 9085,13919 9046,13900 8974,13864 8935,13844
 EOF
      },
      { from  => 1347099450, # undef, # 
@@ -29705,7 +29705,7 @@ EOF
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/ueber-den-bezirk/treptower-park/artikel.1181979.php
 #: note: neue Bauarbeiten ab 2024/2025
 #: last_checked: 2026-06-19 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 21d vvv
 zwischen Karpfenteich und Sowjetisches Ehrenmal: gesperrt	2::inwork 15181,8967 15250,8911
 zwischen Karpfenteich und Sowjetisches Ehrenmal: kann gesperrt sein	2::inwork 15159,8934 15181,8967 15190,9027
 Brücke über den Heidekampgraben: gesperrt	2::inwork 15250,8911 15297,8921 15213,8977
@@ -34343,7 +34343,8 @@ EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-31 00:00:00") }, # 1 Tag Vorlauf
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:00:00") },
-       text  => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
+# (bis Juli 2026) --- text  => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
+       text  => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer jeden Mittwoch zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
        type  => 'handicap',
        recurring => 1,
        data  => <<EOF,
@@ -34788,7 +34789,7 @@ EOF
 #: note: laut rbb: "Radfahrende steigen bitte ab"
 # REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv --- #: next_check: 2021-07-05 vvv
 	q4::inwork; 8685,13728 8841,13800
-	q4::inwork; 8935,13844 9046,13900 9085,13919
+	q4::inwork; 8935,13844 8974,13864 9046,13900 9085,13919
 # REMOVED --- #: next_check ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
@@ -36974,8 +36975,8 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: last_checked ^^^
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-22 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-26 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2024?
+     { from  => $isodate2epoch->("2025-05-22T00:00:00"), # do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-22 00:00:00") }, # 1 Tag Vorlauf
+       until => $isodate2epoch->("2025-09-26T18:30:00"), # do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-26 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2024?
        text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
        type  => 'handicap',
        recurring => 1,
@@ -37810,7 +37811,7 @@ Fischerhüttenweg	2::temp -2528,5366 -2218,5133
 EOF
      },
      { from  => 1778558400, # 2026-05-12 06:00 # 1659844800, # 2022-08-07 06:00
-       until => $isodate2epoch->("2026-07-02 23:59:59"), # 1781884800, # 2026-06-19 18:00 # 1660587022, # 1664560800, # 2022-09-30 20:00 --- vorfristig entfernt
+       until => 1783018374, # $isodate2epoch->("2026-07-02 23:59:59"), # 1781884800, # 2026-06-19 18:00 # 1660587022, # 1664560800, # 2022-09-30 20:00 --- vorfristig entfernt
 #      text  => 'Kranzallee: Baustelle in Höhe Kiplingweg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.08.2022 06:00 bis 30.09.2022 20:00 ',
 #      text  => 'Kranzallee: Baustelle zwischen Am Postfenn und Kiplingweg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 13.05.2026 06:00 bis 19.06.2026 18:00',
 #      text  => 'Kranzallee: Baustellen zwischen Am Postfenn und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, geplant bis Ende Juli 2026',
@@ -37821,7 +37822,7 @@ EOF
 #	q4::inwork -1167,10873 -1318,10854
 #: source_id: LMS-BR:408050/72 viz2021:13.22872,52.50513,13.05.2026,06:00 (bis 19.06.2026) (inaktiv)
 # REMOVED (nicht mehr) --- Kranzallee zwischen Am Postfenn und Kiplingweg	q4::inwork -1501,10833 -1318,10854
-#: source_id: LMS-BR:410057/72 viz2021:13.235056,52.505526,29.05.2026,00:00 (bis 02.07.2026)
+#: source_id: LMS-BR:410057/72 viz2021:13.235056,52.505526,29.05.2026,00:00 (bis 02.07.2026) (inaktiv)
 #: source_id: LMS-BR:412196/72 viz2021:13.234732,52.505506,17.06.2026,06:00 (Fahrbahnverengung, bis 31.07.2026)
 Kranzallee zwischen Ragniter Allee und Kiplingweg	q4::inwork -1167,10873 -1028,10889
 EOF
@@ -42279,7 +42280,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-06-24
+#: last_checked: 2026-07-02
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 # REMOVED --- #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -44590,10 +44591,10 @@ EOF
 	q4::inwork -7529,4853 -7582,4850 -7643,4846 -7797,4850 -8098,4899
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-05 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-10-14 18:30:00") },
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-04-27 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-10-13 18:30:00") },
 #      text  => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 16. April bis zum 15. Oktober (außer Sommerferien) ',
-       text  => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 6. Mai bis zum 14. Oktober (außer Sommerferien) ',
+       text  => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 28. April bis zum 13. Oktober (außer Sommerferien) ',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -45439,7 +45440,7 @@ EOF
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-29 vvv
+#: last_checked: 2026-07-02 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -48452,21 +48453,21 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-02-09 00:00:00"), # 1743310800, # 2025-03-30 07:00
-       until => $isodate2epoch->("2026-07-10 17:00:00"), # $isodate2epoch->("2026-06-30 17:00:00"), # 1749225600, # 2025-06-06 18:00
+       until => $isodate2epoch->("2026-07-24 17:00:00"), # $isodate2epoch->("2026-06-30 17:00:00"), # 1749225600, # 2025-06-06 18:00
 #      text  => 'Seelingstr.: an der Schloßstr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2025 07:00 bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: zwischen Schloßstr. und Danckelmannstr., evtl. sind auch Radfahrer betroffen, bis 06.06.2025 18:00',
 #      text  => 'Seelingstr.: Bauarbeiten zwischen Schloßstr. und Danckelmannstr., Einbahnstraßenregelung, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2026',
 #      text  => 'Seelingstr.: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2026',
 #      text  => 'Seelingstr.: Bauarbeiten, Sperrung bzw. Einbahnstraßenregelung, bis Mitte Juli 2026',
-       text  => 'Seelingstr.: Bauarbeiten, Sperrung, bis Mitte Juli 2026',
+       text  => 'Seelingstr.: Bauarbeiten, Sperrung, bis Ende Juli 2026',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
 # REMOVED --- #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv) --- #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv) ---	q4::inwork 2920,12070 2686,12051
 #: source_id: LMS-BR:398542/72 viz2021:13.29634,52.51568,09.02.2026,07:00 (Einbahnstraße, aber in welche Richtung? bis 30.06.2026) (inaktiv)
 # REMOVED ---	q4::inwork; 2920,12070 3088,12094
-#: source_id: LMS-BR:412907/72 viz2021:13.28778,52.51516,22.06.2026,07:00 (bis 10.07.2026)
+#: source_id: LMS-BR:412907/72 viz2021:13.28778,52.51516,22.06.2026,07:00 (bis 10.07.2026) (bis 24.07.2026)
 Seelingstr.: zwischen Sophie-Charlotten-Str. und Danckelmannstr.	q4::inwork 2485,12032 2686,12051
 EOF
      },
@@ -50112,7 +50113,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-07-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -50989,7 +50990,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: note: allerdings können die Bauzäune weggeschoben sein, gesehen: 2026-05-16 Sat 15:38
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-02
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 EOF
@@ -51688,8 +51689,8 @@ EOF
        data  => <<'EOF',
 #: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="9"
-#: last_checked: 2026-06-07
-#: check_frequency: 45d
+#: last_checked: 2026-07-02
+#: check_frequency: 21d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
 EOF
@@ -52181,7 +52182,7 @@ EOF
 #: osm_watch: note 5142999 2
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
 #: note: Ausschilderung am westlichen Ende: Verbot für Fahrzeuge aller Art, Anwohner frei
-#: last_checked: 2026-06-21 (osm note)
+#: last_checked: 2026-07-02 (traffic)
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 EOF
@@ -53291,7 +53292,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-01 (traffic)
+#: last_checked: 2026-07-02 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -53603,7 +53604,7 @@ EOF
        text  => 'Heinersdorf - Marienfelde: mögliche Sperrung des Wegs wegen Bauarbeiten, 04.06.2026 06:00 Uhr bis 01.07.2026 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: source_id: LS/222-W/26/072 (bis 01.07.2026)
+#: source_id: LS/222-W/26/072 (bis 01.07.2026) (inaktiv)
 	2::inwork 7097,-527 6959,-743
 EOF
      },
@@ -53871,12 +53872,13 @@ EOF
 	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 EOF
      },
-     { from  => 1782597600, # 2026-06-28 00:00
-       until => 1819749599, # 2027-08-31 23:59
-       text  => 'Klein Glien: Erneuerung der Ortsdurchfahrt, voraussichtlich von 29.6.2026 bis Ende August 2027',
+     { from  => $isodate2epoch->("2026-07-12 00:00:00"), # 1782597600, # 2026-06-28 00:00
+       until => $isodate2epoch->("2027-08-31 20:00:00"),
+       text  => 'Klein Glien: Erneuerung der Ortsdurchfahrt, voraussichtlich von 13.7.2026 bis Ende August 2027',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-06-2026-b246-erneuerung-ortsdurchfahrt-klein-glien
+#: source_id: LS/223-P/26/081 (bis 31.08.2026)
 	2::inwork -48948,-31561 -49269,-31516
 EOF
      },
@@ -53958,7 +53960,7 @@ EOF
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: priority: #A
 #: add_fragezeichen: Gibt es weiterhin Sperrungen?
-#: last_checked: 2026-06-29
+#: last_checked: 2026-07-02
 #: check_frequency: 10d
 	2::inwork 10439,11772 10373,11781 10329,11842
 EOF

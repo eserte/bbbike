@@ -4205,7 +4205,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
 #: also_indoor: url https://www.berlin.de/ba-treptow-koepenick/ueber-den-bezirk/treptower-park/artikel.1181979.php
 #: note: neue Bauarbeiten ab 2024/2025
 #: last_checked: 2026-06-19 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 21d vvv
 zwischen Karpfenteich und Sowjetisches Ehrenmal: gesperrt	2::inwork 15181,8967 15250,8911
 zwischen Karpfenteich und Sowjetisches Ehrenmal: kann gesperrt sein	2::inwork 15159,8934 15181,8967 15190,9027
 Brücke über den Heidekampgraben: gesperrt	2::inwork 15250,8911 15297,8921 15213,8977
@@ -5000,7 +5000,7 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
          'from' => 1780178400,
          'id' => 3372,
          'recurring' => 1,
-         'text' => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
+         'text' => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer jeden Mittwoch zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 30.09., außer in den Sommerferien',
          'type' => 'handicap',
          'until' => 1790784000
        },
@@ -5599,20 +5599,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
          'type' => 'gesperrt',
          'until' => 1861916399
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-#: by: http://spielstraßen.de/uebersicht.php#kreu
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php (2025)
-# REMOVED --- #: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen; erster Termin 2023 laut Spielstraßenseite am 26.05. --- #: last_checked: 2024-03-17 --- #: next_check: 2024-05-01
-	q4::temp::play 12822,10487 12897,10439
-',
-         'from' => 1779400800,
-         'id' => 3552,
-         'recurring' => 1,
-         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, von Ende Mai bis Ende September (außer Sommerferien)',
-         'type' => 'handicap',
-         'until' => 1790440200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5684,21 +5671,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.231908,52.505332,08.08.2022,06:00 (inaktiv)
-#	q4::inwork -1167,10873 -1318,10854
-#: source_id: LMS-BR:408050/72 viz2021:13.22872,52.50513,13.05.2026,06:00 (bis 19.06.2026) (inaktiv)
-# REMOVED (nicht mehr) --- Kranzallee zwischen Am Postfenn und Kiplingweg	q4::inwork -1501,10833 -1318,10854
-#: source_id: LMS-BR:410057/72 viz2021:13.235056,52.505526,29.05.2026,00:00 (bis 02.07.2026)
-#: source_id: LMS-BR:412196/72 viz2021:13.234732,52.505506,17.06.2026,06:00 (Fahrbahnverengung, bis 31.07.2026)
-Kranzallee zwischen Ragniter Allee und Kiplingweg	q4::inwork -1167,10873 -1028,10889
-',
-         'from' => 1778558400,
-         'id' => 3601,
-         'text' => 'Kranzallee: Baustelle zwischen Kiplingweg und Ragniter Allee, Sperrung, evtl. sind auch Radfahrer betroffen, geplant bis Ende Juli 2026',
-         'type' => 'handicap',
-         'until' => 1783029599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6658,7 +6631,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-06-24
+#: last_checked: 2026-07-02
 # REMOVED --- #: next_check: 2025-11-07 (VIZ-Verkehrsmeldung zu Gleisbauarbeiten, danach wieder umstellen) --- Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 # REMOVED --- #: next_check: 2026-06-04 (VIZ-Verkehrsmeldung)
 Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
@@ -7019,12 +6992,12 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php
 	q4::temp::play 9570,10566 9556,10666
 ',
-         'from' => 1777932000,
+         'from' => 1777240800,
          'id' => 4046,
          'recurring' => 1,
-         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 6. Mai bis zum 14. Oktober (außer Sommerferien) ',
+         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 28. April bis zum 13. Oktober (außer Sommerferien) ',
          'type' => 'gesperrt',
-         'until' => 1791995400
+         'until' => 1791909000
        },
        undef,
        undef,
@@ -7148,7 +7121,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-06-29 vvv
+#: last_checked: 2026-07-02 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7956,14 +7929,14 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
 # REMOVED --- #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv) --- #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv) ---	q4::inwork 2920,12070 2686,12051
 #: source_id: LMS-BR:398542/72 viz2021:13.29634,52.51568,09.02.2026,07:00 (Einbahnstraße, aber in welche Richtung? bis 30.06.2026) (inaktiv)
 # REMOVED ---	q4::inwork; 2920,12070 3088,12094
-#: source_id: LMS-BR:412907/72 viz2021:13.28778,52.51516,22.06.2026,07:00 (bis 10.07.2026)
+#: source_id: LMS-BR:412907/72 viz2021:13.28778,52.51516,22.06.2026,07:00 (bis 10.07.2026) (bis 24.07.2026)
 Seelingstr.: zwischen Sophie-Charlotten-Str. und Danckelmannstr.	q4::inwork 2485,12032 2686,12051
 ',
          'from' => 1770591600,
          'id' => 4290,
-         'text' => 'Seelingstr.: Bauarbeiten, Sperrung, bis Mitte Juli 2026',
+         'text' => 'Seelingstr.: Bauarbeiten, Sperrung, bis Ende Juli 2026',
          'type' => 'handicap',
-         'until' => 1783695600
+         'until' => 1784905200
        },
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
@@ -8567,7 +8540,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-07-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -8880,7 +8853,7 @@ Schreiberring	q4::inwork 8561,8252 8666,8305
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: note: allerdings können die Bauzäune weggeschoben sein, gesehen: 2026-05-16 Sat 15:38
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-02
 #: check_frequency: 30d
 (Sellerpark - Erika-Heß-Eisstadion)	2::inwork 7866,14541 7897,14565 7899,14577 7966,14622
 ',
@@ -9110,8 +9083,8 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="9"
-#: last_checked: 2026-06-07
-#: check_frequency: 45d
+#: last_checked: 2026-07-02
+#: check_frequency: 21d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder)
 	2::inwork 8050,14556 7996,14487 7940,14447
 ',
@@ -9365,7 +9338,7 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: osm_watch: note 5142999 2
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
 #: note: Ausschilderung am westlichen Ende: Verbot für Fahrzeuge aller Art, Anwohner frei
-#: last_checked: 2026-06-21 (osm note)
+#: last_checked: 2026-07-02 (traffic)
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 ',
@@ -10032,7 +10005,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-01 (traffic)
+#: last_checked: 2026-07-02 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -10515,13 +10488,14 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-06-2026-b246-erneuerung-ortsdurchfahrt-klein-glien
+#: source_id: LS/223-P/26/081 (bis 31.08.2026)
 	2::inwork -48948,-31561 -49269,-31516
 ',
-         'from' => 1782597600,
+         'from' => 1783807200,
          'id' => 4646,
-         'text' => 'Klein Glien: Erneuerung der Ortsdurchfahrt, voraussichtlich von 29.6.2026 bis Ende August 2027',
+         'text' => 'Klein Glien: Erneuerung der Ortsdurchfahrt, voraussichtlich von 13.7.2026 bis Ende August 2027',
          'type' => 'handicap',
-         'until' => 1819749599
+         'until' => 1819735200
        },
        undef,
        {
@@ -10594,7 +10568,7 @@ Rückertstr.	q4::inwork 3569,11473 3571,11451
          'data' => '#: next_check_id: GERTRAUDENBRUECKE-2025
 #: priority: #A
 #: add_fragezeichen: Gibt es weiterhin Sperrungen?
-#: last_checked: 2026-06-29
+#: last_checked: 2026-07-02
 #: check_frequency: 10d
 	2::inwork 10439,11772 10373,11781 10329,11842
 ',

@@ -86,7 +86,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="32"
 #: osm_watch: way id="1072662717" version="36"
-#: last_checked: 2026-06-23
+#: last_checked: 2026-07-02
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -408,7 +408,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-06-29
+#: last_checked: 2026-07-02
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -523,7 +523,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-07-02 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -683,7 +683,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 # REMOVED (noch nicht ganz fertig, im Süden noch kurze Baustelle, umgedrehte Einbahnstraßenregelung, lohnt aber nicht) ---  #: last_checked: 2015-04-09 vvv --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719 --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: SCHWEDTER-2014 vvv --- #: last_checked: 2015-08-11 vvv --- # REMOVED --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452 --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10530,14452 10506,14521
-# REMOVED (offen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1507/nachricht5698.html --- #: XXX wird am 3. August geöffnet --- hat sich aber verzögert! --- #: last_check: 2015-08-05 --- #: check_frequency: 7d --- #: priority: #A --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 9046,13900 8935,13844
+# REMOVED (offen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1507/nachricht5698.html --- #: XXX wird am 3. August geöffnet --- hat sich aber verzögert! --- #: last_check: 2015-08-05 --- #: check_frequency: 7d --- #: priority: #A --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 9046,13900 8974,13864 8935,13844
 # REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-10 vvv --- #: next_check: 2015-08-30 vvv --- #: XXX voraussichtlich gesperrt bis zum 30. August 2015 --- #: priority: #A vvv --- #: source_id: IM_017330 --- #: source_id: INKO_113944 --- #: source_id: IM_021586 --- #: source_id: IM_021585 --- #: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr. --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5212.html
 # REMOVED --- Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::inwork; 9151,13941 9125,13973
 # REMOVED --- #: XXX_prog: evtl. als q4+ eintragen (falls möglich), 9km/h sind eigentlich möglich
@@ -1051,7 +1051,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: source_id[inactive]: bvg2024:171#HIM_FREETEXT_320392 (Haltestelle ist aufgehoben, kein Endedatum)
 #: source_id: bvg2024:171#HIM_FREETEXT_303697 (Verlegung der Haltestelle, kein Endedatum)
 #: XXX Wann sind die Bauarbeiten zu Ende?
-#: last_checked: 2026-04-03 (mapillary)
+#: last_checked: 2026-06-29 (daf)
 #: check_frequency: 180d
 #: next_check: 2028-11-30 (entwicklungsstadt)
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
@@ -5489,7 +5489,7 @@ Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q
 Colbestr.: eng	q0- 14468,11992 14416,11815
 # 
 #: note: Ausschilderung: Gehweg, Radfahrer frei
-Lisa-Fittko-Str.: einige Fußgänger	q1 7734,13944 7731,13927 7787,13839 7787,13838 7872,13685
+Lisa-Fittko-Str.: einige Fußgänger	q1 7734,13944 7731,13927 7787,13839 7787,13838
 # 
 (Schleizer Str. - Plauener Str.): Fußgänger, Wohngebiet	q3 17406,14986 17415,14906
 # 
