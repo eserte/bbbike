@@ -4174,7 +4174,25 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: source_id: bvg2024:218#HIM_FREETEXT_292925 (bis 2025-07-20)
+#: by: https://www.wj-tools.de/index.php/strecken (Berliner Volkstriathlon)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20260703
+# REMOVED (hier nicht) ---	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
+Kronprinzessinenweg	2::temp -3296,3686 -2218,5133 -927,6888
+Havelchaussee bis Grunewaldturm	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856
+Fischerhüttenweg	2::temp -2218,5133 -2112,5050 -2059,5011 -1654,4703 -1443,4542 -1366,4454 -1344,4436 -1297,4385
+# REMOVED (nur bis zum Grunewaldturm) ---	2::temp -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+#	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+#	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
+#	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 683,11270
+',
+         'from' => 1783116000,
+         'id' => 3010,
+         'text' => 'Havelchaussee, Kronprinzessinenweg und Fischerhüttenweg: wegen eines Triathlons Sperrungen am 05.07.2026 vormittags',
+         'type' => 'gesperrt',
+         'until' => 1783245600
+       },
        undef,
        undef,
        undef,
@@ -6869,6 +6887,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_10_0549_0586_online.pdf (Planfeststellungsbeschluss zur Abstellanlage Schönholz)
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neuer-arger-um-bahn-baustelle-in-berlin-anwohner-kritisieren-kahlschlag-auf-raten-im-geschutzten-mauerstreifen-13189999.html
+#: by: https://www.entwicklungsstadt.de/eisenbahnueberfuehrung-wollankstrasse-bauprojekt-geht-in-naechste-phase/
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="7"
@@ -7509,15 +7528,15 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026)
+         'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 ',
          'from' => 1752962400,
          'id' => 4199,
-         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, möglicherweise bis September 2026',
+         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Oktober 2026',
          'type' => 'gesperrt',
-         'until' => 1790805599
+         'until' => 1793473200
        },
        undef,
        undef,
@@ -8450,19 +8469,19 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'data' => '#: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
 #: source_id: adac:2089388170 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.492511,52.516292,24.06.2025,07:00 (bis 31.07.2025) (inaktiv)
-#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026) (bis 03.07.2026)
+#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026) (bis 03.07.2026) (bis 14.08.2026)
 # REMOVED (alte Bauarbeiten von 2025) --- #: note: bei rbb bis 31.07.2025 verlängert --- #: note: durch die Umwege + Bordsteine ist q4 berechtigt ---	q4::inwork; 16397,12397 16485,12384 16583,12371
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: next_check: 2026-07-03 (VIZ-Verkehrsmeldung, evtl. weitere Arbeiten?)
+#: next_check: 2026-08-14 (VIZ-Verkehrsmeldung)
 	q4::inwork; 16276,12273 16397,12397 16485,12384
 ',
          'from' => 1772924400,
          'id' => 4368,
-         'text' => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis 03.07.2026',
+         'text' => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis 14.08.2026',
          'type' => 'handicap',
-         'until' => 1783115999
+         'until' => 1786744799
        },
        undef,
        {
@@ -8648,7 +8667,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10135 (Antrag)
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
-#: osm_watch: note 4895287 3
+#: osm_watch: note 4895287 4
 #: last_checked: 2026-05-04 vvv
 #: check_frequency: 60d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-05-15 vvv
@@ -8847,7 +8866,7 @@ Schreiberring	q4::inwork 8561,8252 8666,8305
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 11
+#: osm_watch: note 4801950 12
 #: osm_watch: way id="53168806" version="7"
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
@@ -9853,16 +9872,7 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
          'type' => 'handicap',
          'until' => 1785880800
        },
-       {
-         'data' => '#: source_id: LMS-BR:404317/72 viz2021:13.31786,52.41443, (bis 06.06.2026) (bis 03.07.2026)
-	q4::inwork 4862,975 4837,890 4768,840
-',
-         'from' => 1775758590,
-         'id' => 4581,
-         'text' => 'Woltmannweg: Bauarbeiten zwischen Osdorfer Str. und Blochmannstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 03.07.2026',
-         'type' => 'handicap',
-         'until' => 1783115999
-       },
+       undef,
        {
          'data' => '#: by: https://www.entwicklungsstadt.de/treptow-koepenick-volkspark-wuhlheide-baustelle-europaradweg/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1660792.php (1600m, also wesentlich länger als die Kastanienallee, bis Ende Oktober 2026)
@@ -10005,7 +10015,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-02 (traffic)
+#: last_checked: 2026-07-03 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -10477,14 +10487,14 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1682627.php
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mov62s6ock26 (hier bis 31.07.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierungsarbeiten-auf-der-olbersstrasse-in-charlottenburg/
-#: source_id: LMS-BR:412913/72 viz2021:13.30654,52.52884,22.06.2026,07:00 (bis 17.07.2026)
+#: source_id: LMS-BR:412913/72 viz2021:13.30654,52.52884,22.06.2026,07:00 (bis 17.07.2026) (bis 31.07.2026)
 	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 ',
          'from' => 1781992800,
          'id' => 4645,
-         'text' => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 17.7.2026',
+         'text' => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 31.7.2026',
          'type' => 'handicap',
-         'until' => 1784325599
+         'until' => 1785535199
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-06-2026-b246-erneuerung-ortsdurchfahrt-klein-glien
@@ -10692,6 +10702,26 @@ Zionskirchplatz: geplante Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280 10
          'text' => 'Kastanienallee/Zionskirchplatz: Gleisbauarbeiten, Sperrungen, vom 3.8.2026 bis 13.12.2026',
          'type' => 'handicap',
          'until' => 1797202799
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260711
+	q4::inwork 9898,12161 9913,12068
+',
+         'from' => 1783220400,
+         'id' => 4661,
+         'text' => 'Oberwallstr.: Kraneinsatz, Sperrung zwischen Französische Str. und Jägerstr., vom 6.7.2026 5:00 Uhr bis 10.7.2026 abends',
+         'type' => 'handicap',
+         'until' => 1783706400
+       },
+       {
+         'data' => '#: source_id: 267201227 (bis 07.08.2026)
+	2::inwork -2544,-35564 -2167,-35441 -1736,-35457 -1574,-35422 -1179,-35503 -820,-35428 -598,-35269 -176,-35295 249,-35387 889,-35447 1487,-35584
+',
+         'from' => 1783483200,
+         'id' => 4662,
+         'text' => 'Luckenwalde und Gottow: Instandsetzung Fahrbahn und Radweg, Sperrung, vom 09.07.2026 06:00 Uhr bis 07.08.2026 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1786125600
        }
      
 );

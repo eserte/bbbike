@@ -4491,8 +4491,10 @@ Park Babelsberg: wassergebundene Decke	Q1 -10519,-1123 -10495,-1069
 (Park Babelsberg, am Havelhaus): unbefestigter Weg	Q2+ -11425,-1001 -11454,-1036
 Wollestr.: Kopfsteinpflaster	Q2 -10984,-1574 -10717,-1227
 #: by: https://www.potsdam.de/de/336-letzte-grosse-strassensanierung-im-sanierungsgebiet-babelsberg-startet (Gesamtmaßname bis Ende 2027)
+#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5562 (Bauarbeiten bis 21.12.2026)
 #: XXX nach der Sanierung vielleicht besseres Pflaster?
-#: next_check: 2027-12-31
+# REMOVED --- #: next_check: 2027-12-31
+#: next_check: 2026-12-21 (mobil-potsdam)
 Wollestr.: schlechtes Kopfsteinpflaster	Q3+ -10717,-1227 -10648,-1130 -10616,-1089
 (Wollestr. - Mühlenstr.): Verbundsteinpflaster	Q1 -10648,-1130 -10691,-1097 -10730,-1103 -10787,-1162 -10790,-1178
 #: by: https://www.potsdam.de/de/336-letzte-grosse-strassensanierung-im-sanierungsgebiet-babelsberg-startet (Gesamtmaßname bis Ende 2027, hier zwei Bauabschnitte)

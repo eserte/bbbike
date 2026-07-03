@@ -29380,16 +29380,18 @@ EOF
 	2::inwork 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936 14308,5627
 EOF
      },
-     { from  => $isodate2epoch->("2025-07-19 00:00:00"), # $isodate2epoch->("2019-05-27 07:00:00"), # 1535691600, # 2018-08-31 07:00
-       until => $isodate2epoch->("2025-07-20 12:00:00"), # $isodate2epoch->("2019-05-28 12:30:00"), # 1535886000, # 2018-09-02 13:00
+     { from  => $isodate2epoch->("2026-07-04 00:00:00"), # $isodate2epoch->("2025-07-19 00:00:00"), # $isodate2epoch->("2019-05-27 07:00:00"), # 1535691600, # 2018-08-31 07:00
+       until => $isodate2epoch->("2026-07-05 12:00:00"), # $isodate2epoch->("2025-07-20 12:00:00"), # $isodate2epoch->("2019-05-28 12:30:00"), # 1535886000, # 2018-09-02 13:00
 #      text  => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
 #      accept_multi_feature_distance => 4000,
 #      text  => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 28.05.2019 zwischen 07:00 und 12:30 Uhr',
-       text  => 'Havelchaussee, Kronprinzessinenweg und Fischerhüttenweg: wegen eines Triathlons Sperrungen am 20.07.2025 vormittags',
+#      text  => 'Havelchaussee, Kronprinzessinenweg und Fischerhüttenweg: wegen eines Triathlons Sperrungen am 20.07.2025 vormittags',
+       text  => 'Havelchaussee, Kronprinzessinenweg und Fischerhüttenweg: wegen eines Triathlons Sperrungen am 05.07.2026 vormittags',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: source_id: bvg2024:218#HIM_FREETEXT_292925 (bis 2025-07-20)
 #: by: https://www.wj-tools.de/index.php/strecken (Berliner Volkstriathlon)
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20260703
 # REMOVED (hier nicht) ---	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
 Kronprinzessinenweg	2::temp -3296,3686 -2218,5133 -927,6888
 Havelchaussee bis Grunewaldturm	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856
@@ -43794,6 +43796,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_10_0549_0586_online.pdf (Planfeststellungsbeschluss zur Abstellanlage Schönholz)
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-nord
 #: by: https://www.tagesspiegel.de/berlin/bezirke/neuer-arger-um-bahn-baustelle-in-berlin-anwohner-kritisieren-kahlschlag-auf-raten-im-geschutzten-mauerstreifen-13189999.html
+#: by: https://www.entwicklungsstadt.de/eisenbahnueberfuehrung-wollankstrasse-bauprojekt-geht-in-naechste-phase/
 #: osm_watch: way id="1149641619" version="3"
 #: osm_watch: way id="1149640630" version="3"
 #: osm_watch: way id="1244101968" version="7"
@@ -47028,14 +47031,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-07-20 00:00:00"), # 1731826800, # 2024-11-17 08:00, # 1729705680, # 1730012400, # 2024-10-27 08:00
-       until => $isodate2epoch->("2026-09-30 23:59:59"), # $isodate2epoch->("2026-07-10 20:00:00"), # $isodate2epoch->("2026-02-28 17:00:00"), # 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
+       until => $isodate2epoch->("2026-10-31 20:00:00"), # $isodate2epoch->("2026-07-10 20:00:00"), # $isodate2epoch->("2026-02-28 17:00:00"), # 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
 #      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.11.2024 08:00 Uhr bis 12.05.2026 16:00 Uhr', # verschoben?
 #      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.07.2025 08:00 Uhr bis 28.02.2026 17:00 Uhr',
 #      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis 10.07.2026 20:00 Uhr',
-       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, möglicherweise bis September 2026',
+       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Oktober 2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026)
+#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 EOF
@@ -49762,20 +49765,20 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-03-08 00:00:00"), # 1750654800, # 2025-06-23 07:00
-       until => $isodate2epoch->("2026-07-03 23:59:59"), # $isodate2epoch->("2026-06-12 23:59:59"), # $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
+       until => $isodate2epoch->("2026-08-14 23:59:59"), # $isodate2epoch->("2026-06-12 23:59:59"), # $isodate2epoch->("2025-07-31 17:00:00"), # 1752246000, # 2025-07-11 17:00
 #      text  => 'Rüdigerstr.: zwischen Schottstr. und Hubertusstr. Fahrbahnsanierungsarbeiten, Fahrbahn Richtung Osten gesperrt, gemeinsamer Geh- und Radweg (Umwege + Bordsteine), vom 24.06.2025 07:00 bis 31.07.2025 17:00',
-       text  => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis 03.07.2026',
+       text  => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, bis 14.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.493372,52.516196,24.06.2025,07:00 (bis 11.07.2025) (bis 15.07.2025) (inaktiv)
 #: source_id: adac:2089388170 (bis 31.07.2025) (inaktiv)
 #: source_id: viz2021:13.492511,52.516292,24.06.2025,07:00 (bis 31.07.2025) (inaktiv)
-#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026) (bis 03.07.2026)
+#: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026) (bis 03.07.2026) (bis 14.08.2026)
 # REMOVED (alte Bauarbeiten von 2025) --- #: note: bei rbb bis 31.07.2025 verlängert --- #: note: durch die Umwege + Bordsteine ist q4 berechtigt ---	q4::inwork; 16397,12397 16485,12384 16583,12371
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: next_check: 2026-07-03 (VIZ-Verkehrsmeldung, evtl. weitere Arbeiten?)
+#: next_check: 2026-08-14 (VIZ-Verkehrsmeldung)
 	q4::inwork; 16276,12273 16397,12397 16485,12384
 EOF
      },
@@ -50483,7 +50486,7 @@ EOF
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10135 (Antrag)
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
-#: osm_watch: note 4895287 3
+#: osm_watch: note 4895287 4
 #: last_checked: 2026-05-04 vvv
 #: check_frequency: 60d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-05-15 vvv
@@ -50984,7 +50987,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 11
+#: osm_watch: note 4801950 12
 #: osm_watch: way id="53168806" version="7"
 #: osm_watch: way id="1463464930" version="1"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
@@ -51894,7 +51897,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-12_-sitzung-am-02_07_2025.pdf (alte Sperrung)
 #: source_id: LMS-BR:390327/72 viz2021:13.31374,52.51816,17.11.2025,07:00 (bis 30.04.2026) (inaktiv)
-#: source_id: LMS-BR:410348/72 viz2021:13.313198,52.517493,01.06.2026,06:00 (bis 03.07.2026)
+#: source_id: LMS-BR:410348/72 viz2021:13.313198,52.517493,01.06.2026,06:00 (bis 03.07.2026) (bis 31.08.2026)
 #: also_indoor: traffic (G,no-T,W)
 #: osm_watch: note 4547482 5
 #: osm_watch: way id="4586182" version="20"
@@ -53028,11 +53031,11 @@ EOF
 EOF
      },
      { from  => 1775758590, # 2026-04-09 20:16
-       until => $isodate2epoch->("2026-07-03 23:59:59"), # 1780696800, # 2026-06-06 00:00
+       until => 1783099679, # $isodate2epoch->("2026-07-03 23:59:59"), # 1780696800, # 2026-06-06 00:00
        text  => 'Woltmannweg: Bauarbeiten zwischen Osdorfer Str. und Blochmannstr., Sperrung, evtl. ist auch der Radverkehr betroffen, bis 03.07.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:404317/72 viz2021:13.31786,52.41443, (bis 06.06.2026) (bis 03.07.2026)
+#: source_id: LMS-BR:404317/72 viz2021:13.31786,52.41443, (bis 06.06.2026) (bis 03.07.2026) (inaktiv)
 	q4::inwork 4862,975 4837,890 4768,840
 EOF
      },
@@ -53292,7 +53295,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-02 (traffic)
+#: last_checked: 2026-07-03 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -53861,14 +53864,14 @@ Mirbachplatz	q4::inwork 13331,16424 13348,16387
 EOF
      },
      { from  => $isodate2epoch->("2026-06-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2026-07-17 23:59:59"), # $isodate2epoch->("2026-07-31 23:59:59"),
-       text  => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 17.7.2026',
+       until => $isodate2epoch->("2026-07-31 23:59:59"), # $isodate2epoch->("2026-07-31 23:59:59"),
+       text  => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 31.7.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1682627.php
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mov62s6ock26 (hier bis 31.07.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierungsarbeiten-auf-der-olbersstrasse-in-charlottenburg/
-#: source_id: LMS-BR:412913/72 viz2021:13.30654,52.52884,22.06.2026,07:00 (bis 17.07.2026)
+#: source_id: LMS-BR:412913/72 viz2021:13.30654,52.52884,22.06.2026,07:00 (bis 17.07.2026) (bis 31.07.2026)
 	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 EOF
      },
@@ -54072,6 +54075,24 @@ Zionskirchplatz: geplante Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280 10
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1783220400, # 2026-07-05 05:00
+       until => 1783706400, # 2026-07-10 20:00
+       text  => 'Oberwallstr.: Kraneinsatz, Sperrung zwischen Französische Str. und Jägerstr., vom 6.7.2026 5:00 Uhr bis 10.7.2026 abends',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260711
+	q4::inwork 9898,12161 9913,12068
+EOF
+     },
+     { from  => 1783483200, # 2026-07-08 06:00
+       until => 1786125600, # 2026-08-07 20:00
+       text  => 'Luckenwalde und Gottow: Instandsetzung Fahrbahn und Radweg, Sperrung, vom 09.07.2026 06:00 Uhr bis 07.08.2026 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: 267201227 (bis 07.08.2026)
+	2::inwork -2544,-35564 -2167,-35441 -1736,-35457 -1574,-35422 -1179,-35503 -820,-35428 -598,-35269 -176,-35295 249,-35387 889,-35447 1487,-35584
 EOF
      },
     );

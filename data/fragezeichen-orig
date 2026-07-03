@@ -998,7 +998,7 @@ Königsheideweg: Bau eines Gehweges Südseite geplant, Freigabe für Radfahrer in b
 # REMOVED --- #: osm_watch: way id="19875855" version="38"
 #: osm_watch: way id="1196086846" version="2"
 #: osm_watch: way id="1370680787" version="2"
-#: osm_watch: way id="31824581" version="32"
+#: osm_watch: way id="31824581" version="33"
 #: last_checked: 2026-05-31
 #: check_frequency: 120d
 Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 15363,5668 15174,5467 15038,5235 14988,5214 14808,5202 14744,5211
@@ -1464,14 +1464,14 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id[inactive]: bvg2024:m4#HIM_FREETEXT_297553 (parallele Gleisbauarbeiten, bis 2025-11-30)
 #: source_id[inactive]: bvg2024:m4#5c1204dc-e817-4dc2-95b0-431bad289cd6 (bis 2025-12-14)
 #: source_id[inactive]: bvg2024:m4#4de79670-2bb7-4c7d-940b-3ad8e3fefa9c (bis 2025-12-14) (doppelt?)
-#: source_id: LMS-BR:392560/72 viz2021:13.489894,52.557953, (bis 22.12.2025) (bis 13.01.2026) (bis 21.01.2026) (bis 06.03.2026) (bis 17.04.2026) (inaktiv) (bis 04.07.2026)
+#: source_id: LMS-BR:392560/72 viz2021:13.489894,52.557953, (bis 22.12.2025) (bis 13.01.2026) (bis 21.01.2026) (bis 06.03.2026) (bis 17.04.2026) (inaktiv) (bis 04.07.2026) (bis 27.07.2026)
 #: source_id[inactive]: bvg2024:156#HIM_FREETEXT_314202
 #: source_id[inactive]: bvg2024:259#HIM_FREETEXT_314203
 #: source_id: bvg2024:m4#457a81e9-1a37-4a8a-a771-1ea228171f72 (Gleisbauarbeiten bis 2026-07-27)
 #: XXX Fertigstellung laut osm note sogar erst Anfang 2027
 #: last_checked: 2026-06-21
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-07-04 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-07-27 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-12-31 (infravelo)
 Hansastr.: Radspuren geplant (2,5m breit) + Sanierung der Fahrbahn	?::inwork 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017 16296,17114 16318,17128
 # 
@@ -1492,7 +1492,7 @@ Hansastr.: Radspuren geplant (2,5m breit) + Sanierung der Fahrbahn	?::inwork 154
 #: source_id: viz2021:13.49483,52.55973,28.10.2025,07:00 (bis 10.11.2025) (inaktiv)
 #: source_id: viz2021:13.49483,52.55973, (Fahrbahnerneuerung, bis 10.11.2025) (inaktiv)
 #: source_id: LMS-BR:391576/72 viz2021:13.49661,52.56016,28.11.2025,07:00 (Gleisbauarbeiten, bis 14.12.2025) (inaktiv)
-#: source_id: LMS-BR:401274/72 viz2021:13.50019,52.56161,09.03.2026,07:00 (Gleisbauarbeiten, bis 04.07.2026)
+#: source_id: LMS-BR:401274/72 viz2021:13.50019,52.56161,09.03.2026,07:00 (Gleisbauarbeiten, bis 04.07.2026) (bis 27.07.2026)
 #: osm_watch: way id="40520565" version="56"
 #: osm_watch: way id="51317007" version="38"
 #: osm_watch: way id="624116238" version="19"
@@ -4113,6 +4113,20 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahre
 #: next_check: 2026-12-31
 Greifswalder Str.: Grünbeschichtung geplant	? 12584,14928 12620,14979
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_56_5397_5484_online.pdf (Straßenlandwidmung, nur für Fußgänger/Radfahrer)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/carl-bechstein-campus-heidestra%C3%9Fe-46-52.1363/#post-26823
+#: by: https://www.carl-bechstein-stiftung.de/projekte/carl-bechstein-campus/ (Projektstopp: was bedeutet das für diesen Weg?)
+#: by: https://return.co.de/blog/articles/grosse-plane-unklare-zukunft-was-wird-aus-dem-bechstein-campus/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/klavierbauer-plante-konzertsaal-bechsteincampus-in-der-berliner-europacity-vorerst-gestoppt-15314396.html
+#: by: https://www.entwicklungsstadt.de/vom-klaviercampus-zum-biergarten-bechstein-campus-in-der-europacity-gestoppt/
+#: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
+#: XXX laut Amtsblatt Verlängerung der Lisa-Fittko-Straße, wird das auch auf der anderen Seite so ausgeschildert?
+#: XXX culdesac-Eintrag an der Döberitzer Str. muss vermutlich geändert werden
+#: osm_watch: way id="237704728" version="4"
+#: last_checked: 2026-07-02
+#: check_frequency: 180d
+Lisa-Fittko-Str.: Baustellenfläche und Brache, Weg existiert im südlichen Abschnitt noch nicht	? 7787,13838 7872,13685
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -5731,7 +5745,7 @@ Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 1
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: XXX zurzeit (Jan 2025) sind Bauarbeiten im nördlichen Kreuzungsbereich
 #: priority: #D
-#: last_checked: 2026-06-18
+#: last_checked: 2026-07-02 (mapillary)
 #: check_frequency: 90d
 Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,15380
 # 
@@ -5788,7 +5802,7 @@ Wiltbergstraße/Ludwig-Hoffmann-Quartier: Zebrastreifen geplant	?::projected 1566
 #: next_check_id: SWINEMUENDER-2023
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: priority: #D
-#: last_checked: 2026-03-21
+#: last_checked: 2026-07-02 (mapillary)
 #: check_frequency: 120d
 Swinemünder Str./Ramlerstr.: Zebrastreifen geplant	?::projected 9606,15753 9646,15737 9694,15718
 # 
@@ -6313,6 +6327,7 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ueberqueren-stark-befahrener-strasse-soll-sicherer-werden_a368762 (Erwähnung)
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9728 (Bauarbeiten in der Schottstr. ab Juli 2026)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1688574.php (Abschluss der Bauarbeiten Anfang Dezember 2026)
+#: by: https://www.entwicklungsstadt.de/neue-verkehrsfuehrung-in-lichtenberg-baustelle-veraendert-schottstrasse/
 #: XXX Mischung aus Gehwegradweg (Rüdigerstr., Schottstr.), Radspur (Alfredstr.) und für Radfahrer freigegebene Busspur (Alfredstr., teilweise schon existierend)
 #: source_id: viz2021:13.493057,52.516212,14.10.2021,07:00 (Fahrbahnsanierungsarbeiten, bis 20.11.2021) (inaktiv)
 #: source_id: viz2021:13.490291,52.514628,15.08.2022,07:00 (Kanalarbeiten, bis 18.9.2022) (inaktiv)
@@ -8366,6 +8381,7 @@ Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezo
 #: by: https://www.howoge.de/immobiliensuche/neubauprojekte/havelufer-quartier.html (Fertigstellung: Dez 2025)
 #: by: https://entwicklungsstadt.de/wohnraum-in-spandau-diese-fuenf-neubauprojekte-entstehen-aktuell/ (bis Herbst 2025/Ende 2025)
 #: by: https://www.entwicklungsstadt.de/neues-quartier-an-der-havel-231-wohnungen-in-spandau-bezugsfertig/
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1689527.php (vorgenommene Benennung am 3.7.2026)
 #: XXX Straßen fehlen in Berlin.coords.data (PLZ=13587 für Meta-London-Str. laut DPAG+LOR, ebenso für Marius-Carpentier-Str. laut DPAG+LOR); private Erschließungsstraßen vvv
 #: XXX Wirksamkeit der Benennung zum 11.3.2023 vvv
 #: XXX außerdem wird es hier einen ausgeschilderten "Patrizia-Boulevard" geben (wo genau?)
@@ -9481,7 +9497,7 @@ Nordufer: neue Fahrradstraße entsteht	?::inwork 6334,14756 6513,14725 6596,14740
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25979.pdf (Umsetzung 2026/2027)
 #: by: https://www.infravelo.de/projekt/juelicher-strasse/ (4. Quartal 2026 - 2. Quartal 2027)
 #: osm_watch: note 3954726 11
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-02 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-06-30 (infravelo)
 Jülicher Str.: wird zur Fahrradstraße	?::projected 9448,16060 9446,16060 9458,16180 9474,16297 9475,16307 9484,16395 9490,16455 9493,16481 9514,16603 9513,16603
@@ -12104,6 +12120,7 @@ Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen od
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/11_187ve_planentwurf.pdf (südlicher Teil der Treffurter Str.: Fläche nur mit "Gehrecht", Radfahrer werden nicht erwähnt)
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/entwurf-liegt-bis-zum-26-juli-an-drei-orten-aus_a386217
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10553 (Vorlage zur Kenntnisnahme)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_28_1753_1812_online.pdf (Einziehung von Straßenland: südliche Treffurter Str.)
 #: XXX evtl. wird es hier eine Hausdurchfahrt geben (während der Bauarbeiten vermutlich gesperrt) sowie der südliche Teil der Treffurter Str. teileingezogen
 #: last_checked: 2026-04-30 (luftbildsuche)
 #: check_frequency: 1000d
@@ -12704,6 +12721,7 @@ Regionalbahnhof Köpenick	?::inwork 22530,6100
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article410457290/eidechsen-baupreise-ueberwunden-baubeginn-im-stadtquartier-marienhoefe.html
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10294 (Aufstellung des Bebauungsplans 7-95-1 (südlicher Teil des Geländes))
 #: by: https://www.entwicklungsstadt.de/900-neue-wohnungen-fuer-tempelhof-marienhoefe-nehmen-gestalt-an/ (erste Wohnungen ab 2028 bezugsfertig)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_28_1753_1812_online.pdf (B-Plan 7-95-1)
 #: XXX überwiegend Fuß- und Radwege sowie verkehrsberuhigte Bereiche geplant
 #: last_checked: 2026-05-26 (daf) vvv
 #: check_frequency: 540d vvv
