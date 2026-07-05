@@ -46765,6 +46765,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnr4slx62k2b
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihl62k3nqtl35itj6bdgwcobwdwms23ftrpxlughecy4tywowdopu (auch der nördliche Bürgersteig scheint gesperrt zu sein)
 #: also_indoor: traffic (G,T,H,W)
+#: last_checked: 2026-07-04
 #: next_check: 2026-07-15 (wird verlängert?)
 	q4::inwork; 4246,9406 4193,9404 4011,9474
 EOF
@@ -50487,10 +50488,10 @@ EOF
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
 #: osm_watch: note 4895287 4
-#: last_checked: 2026-05-04 vvv
+#: last_checked: 2026-07-04 vvv
 #: check_frequency: 60d vvv
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-05-15 vvv
-#: note: Halteverbotsschilder bis 15.05.2026
+#: next_check: 2026-10-31 (Baustellenschild) vvv
+#: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10/26
 Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
 Barbarossastr.: östliche Zufahrt, etwa 30-40m der Fahrbahn sind gesperrt	q3::inwork 6747,9531 6860,9529
 Eisenacher Str.	q4::inwork 6727,9497 6724,9457
@@ -50500,7 +50501,7 @@ Barbarossapl. -> Schwäbische Str.	3::inwork 6694,9537 6727,9497 6771,9458
 Barbarossapl. -> Eisenacher Str.	3::inwork 6747,9531 6727,9497 6724,9457
 Barbarossapl. -> Schwäbische Str.	3::inwork 6747,9531 6727,9497 6771,9458
 Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (hier entgegen der Meldung nicht) --- Eisenacher Str.: Bauarbeiten 2025/2026	q4::inwork 6743,9678 6731,9559
@@ -50628,7 +50629,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-07-04 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51395,7 +51396,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-06-27
+#: last_checked: 2026-07-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -53295,7 +53296,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-03 (traffic)
+#: last_checked: 2026-07-05 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -53430,7 +53431,8 @@ EOF
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
-#: last_checked: 2026-06-30 vvv
+#: also_indoor: traffic (G,T,H,W)
+#: last_checked: 2026-07-03 (bahninfo-forum) vvv
 #: next_check: 2026-07-10 (2. BA?) vvv
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773

@@ -375,7 +375,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-07-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -611,7 +611,9 @@ Gehwegplatten	RW1; 5139,9777 5052,9723 4976,9670
 teilweise Radweg auf der Fahrbahn hinter den parkenden Autos, Asphalt mit einigen Schäden	RW1;RW1 4976,9670 4858,9594 4699,9505 4657,9481 4601,9449 4517,9401
 #: historical_note: früher (bis 2025/2026) Verbundsteinpflaster, RW1;
 provisorische Radspur, Gelbmarkierung	RW4; 4517,9401 4507,9395 4415,9343
-Verbundsteinpflaster	RW1; 4415,9343 4342,9301 4224,9241 4096,9175 3998,9125 3919,9085
+#: historical_note: früher (bis 2026): Verbundsteinpflaster
+Asphalt	RW1; 4415,9343 4342,9301
+Verbundsteinpflaster	RW1; 4342,9301 4224,9241 4096,9175 3998,9125 3919,9085
 	RW1; 3919,9085 3998,9125 4096,9175 4224,9241 4342,9301
 #: historical_note: früher (bis 2025): Verbundsteinpflaster, eher schmal, keine Benutzungspflicht
 	RW2; 4342,9301 4415,9343
@@ -8513,7 +8515,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-05
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -8680,7 +8682,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2026-06-26
+#: last_checked: 2026-07-04
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326

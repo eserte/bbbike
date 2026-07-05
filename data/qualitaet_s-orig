@@ -235,7 +235,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-06-16 vvv
+#: last_checked: 2026-07-04 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -525,7 +525,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-05
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -10541,6 +10541,8 @@ Rue Dominique Larrey: Beton mit Schäden	Q1- 3738,16648 3659,16507 3624,16445
 #: next_check_id: UFERWEGHOHENZOLLERNKANAL-2026
 #: XXX früher Asphalt, Q0; evtl. nur wegen der Bauarbeiten provisorisch aufgeschütteter Kies für die Baufahrzeuge?
 #: last_checked: 2026-06-07
+#: check_frequency: 90d
+#: next_check: 2028-06-01 (VIZ)
 (Am Hohenzollernkanal - Kurt-Schumacher-Damm): loser Schotter	Q2- 3237,15858 3307,15984
 (Am Hohenzollernkanal - Kurt-Schumacher-Damm): Asphalt	Q0 3307,15984 3398,16000
 (ehemaliger Flughafen Tegel - Kurt-Schumacher-Damm): Asphalt	Q0 3034,15912 3171,15937 3189,15947 3196,15971 3307,15984
@@ -13675,11 +13677,13 @@ Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 1976
 #: by: https://www.deutsches-architekturforum.de/thread/13768-neuk%C3%B6lln-kleinere-projekte/?postID=789650#post789650
 #: by: https://www.porr.de/news-presse/mitteilungen/detail/nachhaltiges-bauen-in-neukoelln-fuer-wohnprojekt-oder-wird-praedikat-nawoh-qng-angestrebt (Fertigstellung März 2027)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/page-2#post-27248
+#: by: https://www.entwicklungsstadt.de/wohnungen-an-der-oderstrasse-neuer-baufortschritt-nahe-tempelhofer-feld/ (Fertigstellung: Februar 2027)
 #: osm_watch: way id="933570857" version="6"
 #: XXX die Straße wird neu gemacht, wird evtl. nach den Hochbauarbeiten komplettiert
 #: last_checked: 2026-06-20
 #: check_frequency: 120d
-#: next_check: 2027-03-31 (porr website)
+# REMOVED --- #: next_check: 2027-03-31 (porr website)
+#: next_check: 2027-02-28 (entwicklungsstadt)
 (Verlängerung der Siegfriedstr.): Asphalt ohne letzte Deckschicht	Q1+ 11664,6796 11488,6781
 Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 (Gorgasring - Nonnendammallee): Verbundsteinpflaster	Q1 -695,14819 -676,14773 -679,14743 -928,14643

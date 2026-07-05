@@ -4174,25 +4174,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: source_id: bvg2024:218#HIM_FREETEXT_292925 (bis 2025-07-20)
-#: by: https://www.wj-tools.de/index.php/strecken (Berliner Volkstriathlon)
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20260703
-# REMOVED (hier nicht) ---	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
-Kronprinzessinenweg	2::temp -3296,3686 -2218,5133 -927,6888
-Havelchaussee bis Grunewaldturm	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856
-Fischerhüttenweg	2::temp -2218,5133 -2112,5050 -2059,5011 -1654,4703 -1443,4542 -1366,4454 -1344,4436 -1297,4385
-# REMOVED (nur bis zum Grunewaldturm) ---	2::temp -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-#	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-#	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
-#	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 683,11270
-',
-         'from' => 1783116000,
-         'id' => 3010,
-         'text' => 'Havelchaussee, Kronprinzessinenweg und Fischerhüttenweg: wegen eines Triathlons Sperrungen am 05.07.2026 vormittags',
-         'type' => 'gesperrt',
-         'until' => 1783245600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7467,6 +7449,7 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnr4slx62k2b
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihl62k3nqtl35itj6bdgwcobwdwms23ftrpxlughecy4tywowdopu (auch der nördliche Bürgersteig scheint gesperrt zu sein)
 #: also_indoor: traffic (G,T,H,W)
+#: last_checked: 2026-07-04
 #: next_check: 2026-07-15 (wird verlängert?)
 	q4::inwork; 4246,9406 4193,9404 4011,9474
 ',
@@ -8668,10 +8651,10 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
 #: osm_watch: note 4895287 4
-#: last_checked: 2026-05-04 vvv
+#: last_checked: 2026-07-04 vvv
 #: check_frequency: 60d vvv
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-05-15 vvv
-#: note: Halteverbotsschilder bis 15.05.2026
+#: next_check: 2026-10-31 (Baustellenschild) vvv
+#: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10/26
 Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
 Barbarossastr.: östliche Zufahrt, etwa 30-40m der Fahrbahn sind gesperrt	q3::inwork 6747,9531 6860,9529
 Eisenacher Str.	q4::inwork 6727,9497 6724,9457
@@ -8681,7 +8664,7 @@ Barbarossapl. -> Schwäbische Str.	3::inwork 6694,9537 6727,9497 6771,9458
 Barbarossapl. -> Eisenacher Str.	3::inwork 6747,9531 6727,9497 6724,9457
 Barbarossapl. -> Schwäbische Str.	3::inwork 6747,9531 6727,9497 6771,9458
 Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (hier entgegen der Meldung nicht) --- Eisenacher Str.: Bauarbeiten 2025/2026	q4::inwork 6743,9678 6731,9559
@@ -8763,7 +8746,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-07-04 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -8964,7 +8947,7 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-06-27
+#: last_checked: 2026-07-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -10015,7 +9998,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-03 (traffic)
+#: last_checked: 2026-07-05 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -10126,7 +10109,8 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
-#: last_checked: 2026-06-30 vvv
+#: also_indoor: traffic (G,T,H,W)
+#: last_checked: 2026-07-03 (bahninfo-forum) vvv
 #: next_check: 2026-07-10 (2. BA?) vvv
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
