@@ -187,6 +187,8 @@ ServerAlias [% SERVER_ALIAS %]
 	    AddOutputFilterByType DEFLATE text/css
 	    AddOutputFilterByType DEFLATE application/x-javascript application/javascript application/ecmascript
 	    AddOutputFilterByType DEFLATE application/rss+xml
+	    # Currently no Content-Type, so compress by suffix
+	    AddOutputFilter DEFLATE bbbgeojsonp
 
 	    SetEnvIf User-Agent "bbbike/.*\(Http/[1-3]\.[0-9]+\)" no-gzip
 	    SetEnvIf User-Agent "bbbike/.*\(Http/4\.0[1-7]\) \(darwin\)" no-gzip
