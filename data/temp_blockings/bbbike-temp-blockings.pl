@@ -44661,9 +44661,12 @@ EOF
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
 #: source_id: viz2021:13.620312,52.523169,16.06.2025,10:00 (nach Norden gewandert, bis 04.07.2025) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,16.06.2025,10:00 (bis 04.07.2025) (inaktiv)
+#: source_id: LMS-BR:414866/72 viz2021:13.62349,52.52659,06.07.2026,07:00 (bis 31.07.2026)
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lrpd3zh3xk2v (beendet)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mpxcpxb3os2h (neue Bauarbeiten an der Kreuzung Hönower Str./Am Rosenhag, erstmal bis Ende Juli 2026)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihb6s3tay5r55b4fgomecbzxl254j27cdbukzihwdkr2xkcx4o26y (Radweg aufgehoben, Gegenverkehrsregelung, Einfahrt von Am Rosenhag in die Hönower Str. (beide Seiten) gesperrt)
 #: also_indoor: traffic (ex-B,ex-T,re-G)
 #: note: bei Bing & TomTom & Google nur die östliche Anbindung als gesperrt markiert
 #: note: Außerdem gibt's eine Gegenverkehrsregelung: Richtung Süden müssen die Radfahrer den Bürgersteigradweg benutzen, Richtung Norden ist der vorhandene Bürgersteig abgesperrt und man ist von der Gegenverkehrsregelung betroffen
@@ -45240,18 +45243,18 @@ EOF
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.08.2025 17:00',
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Juli 2026',
-       text  => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis Juli 2026',
+       text  => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis August 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt -> andere Baustelle -> handicap_s) (bis 07.07.2026)
+#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt -> andere Baustelle -> handicap_s) (bis 07.07.2026) (bis 07.08.2026)
 #: osm_watch: way id="1303423090" version="8"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
 #: last_checked: 2026-06-25 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
-#: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung)
 Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 EOF
      },
@@ -45443,7 +45446,7 @@ EOF
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-07-02 vvv
+#: last_checked: 2026-07-06 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -46752,9 +46755,9 @@ EOF
 EOF
      },
      { from  => 1727586000, # 2024-09-29 07:00
-       until => $isodate2epoch->("2026-07-15 23:59:59"), # 1730908800, # 2024-11-06 17:00
+       until => undef, # $isodate2epoch->("2026-07-15 23:59:59"), # 1730908800, # 2024-11-06 17:00
 #      text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, vom 30.09.2024 07:00 bis 06.11.2024 17:00',
-       text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, voraussichtlich bis Mitte Juli 2026',
+       text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, voraussichtlich bis Mitte Juli 2026, evtl. werden die Bauarbeiten verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.31115,52.491561,30.09.2024,07:00 (bis 06.11.2024) (inaktiv)
@@ -50487,11 +50490,11 @@ EOF
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10135 (Antrag)
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
-#: osm_watch: note 4895287 4
+#: osm_watch: note 4895287 6
 #: last_checked: 2026-07-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (Baustellenschild) vvv
-#: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10/26
+#: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10.2026
 Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
 Barbarossastr.: östliche Zufahrt, etwa 30-40m der Fahrbahn sind gesperrt	q3::inwork 6747,9531 6860,9529
 Eisenacher Str.	q4::inwork 6727,9497 6724,9457
@@ -50514,7 +50517,7 @@ EOF
      { from  => 1754431200, # 2025-08-06 00:00
        until => undef, # 1767222000, # 2026-01-01 00:00
 #      text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
-       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Mitte Juni 2026: Diagonalweg ist offen)',
+       text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Juli 2026: Diagonalweg ist offen)',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
@@ -50522,7 +50525,7 @@ EOF
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-06-23 (mapillary)
+#: last_checked: 2026-07-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -50629,7 +50632,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-04 vvv
+#: last_checked: 2026-07-06 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -53296,7 +53299,7 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-05 (traffic)
+#: last_checked: 2026-07-06 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -53589,17 +53592,15 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-05-26 00:00:00"),
-       until => undef, # 1781647200, # 2026-06-17 00:00
+       until => 1783356490, # undef, # 1781647200, # 2026-06-17 00:00
 #      text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, 26.05.2026 bis 16.06.2026',
        text  => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, vermutlich bis Juli 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: next_check_id: PAMUKKALE-2026
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260504 (26.05. bis 16.06.2026)
 #: osm_watch: note 5352757 1
-#: add_fragezeichen: Ist der Weg noch immer abgesperrt?
-#: last_checked: 2026-06-22
-#: check_frequency: 14d
-#: next_check: 2026-07-31 (BA ("im Juli"))
+# REMOVED (ursprüngliche Bauarbeiten fertig, nun weitergeandert) --- #: add_fragezeichen: Ist der Weg noch immer abgesperrt? --- #: last_checked: 2026-07-06 --- #: check_frequency: 14d --- #: next_check: 2026-07-31 (BA ("im Juli"))
 Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12457,10309 12502,10244
 # REMOVED (hier nicht) --- Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309
 EOF
@@ -53965,7 +53966,7 @@ EOF
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: priority: #A
 #: add_fragezeichen: Gibt es weiterhin Sperrungen?
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-06
 #: check_frequency: 10d
 	2::inwork 10439,11772 10373,11781 10329,11842
 EOF
@@ -54080,11 +54081,13 @@ Zionskirchplatz: geplante Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280 10
 EOF
      },
      { from  => 1783220400, # 2026-07-05 05:00
-       until => 1783706400, # 2026-07-10 20:00
+       until => $isodate2epoch->("2026-07-10 18:00:00"),
        text  => 'Oberwallstr.: Kraneinsatz, Sperrung zwischen Französische Str. und Jägerstr., vom 6.7.2026 5:00 Uhr bis 10.7.2026 abends',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260711
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mpxasnngdc2h
+#: source_id: LMS-BR:414854/72 viz2021:13.39677,52.51523,06.07.2026,05:00 (bis 10.07.2026)
 	q4::inwork 9898,12161 9913,12068
 EOF
      },
@@ -54095,6 +54098,27 @@ EOF
        data  => <<'EOF',
 #: source_id: 267201227 (bis 07.08.2026)
 	2::inwork -2544,-35564 -2167,-35441 -1736,-35457 -1574,-35422 -1179,-35503 -820,-35428 -598,-35269 -176,-35295 249,-35387 889,-35447 1487,-35584
+EOF
+     },
+     { from  => 1783483200, # 2026-07-08 06:00
+       until => 1787335200, # 2026-08-21 20:00
+       text  => 'Beiersdorf - Freudenberg: Bauarbeiten, Sperrung, vom 09.07.2026 06:00 Uhr bis 21.08.2026 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/221-F/26/106 (bis 21.08.2026)
+	2::inwork 38168,33025 37893,33125 36687,32987 35962,32731 35907,32648 35737,32393
+EOF
+     },
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-01 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 20:00:00") },
+       text  => 'Freilichtbühne Schwedt (Odertalbühne): Veranstaltungen von Juni bis September, Uferweg gesperrt',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<'EOF',
+#: note: möglicherweise nur im Frühling/Sommer? Gesehen auch im Sommer 2022 + August 2024; laut osm im März 2025 offen gewesen
+#: by: https://theater-schwedt.de/odertalfestspiele (von Juni bis September 2026)
+#: osm_watch[closed]: note 1414569 5
+Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
 EOF
      },
     );

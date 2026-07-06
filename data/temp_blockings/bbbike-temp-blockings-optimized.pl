@@ -6798,11 +6798,11 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1783029600,
+         'from' => 1785448800,
          'id' => 3956,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 4.7.2026 bis 5.7.2026',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 1.8.2026 bis 2.8.2026',
          'type' => 'handicap',
-         'until' => 1783288799
+         'until' => 1785707999
        },
        undef,
        undef,
@@ -7068,18 +7068,18 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        {
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt -> andere Baustelle -> handicap_s) (bis 07.07.2026)
+#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt -> andere Baustelle -> handicap_s) (bis 07.07.2026) (bis 07.08.2026)
 #: osm_watch: way id="1303423090" version="8"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
 #: last_checked: 2026-06-25 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
-#: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung)
 Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 ',
          'from' => 1717909200,
          'id' => 4083,
-         'text' => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis Juli 2026',
+         'text' => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis August 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7122,7 +7122,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-07-02 vvv
+#: last_checked: 2026-07-06 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7455,9 +7455,9 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 ',
          'from' => 1727586000,
          'id' => 4181,
-         'text' => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, voraussichtlich bis Mitte Juli 2026',
+         'text' => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, voraussichtlich bis Mitte Juli 2026, evtl. werden die Bauarbeiten verlängert',
          'type' => 'handicap',
-         'until' => 1784152799
+         'until' => undef
        },
        undef,
        undef,
@@ -8650,11 +8650,11 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10135 (Antrag)
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
-#: osm_watch: note 4895287 4
+#: osm_watch: note 4895287 6
 #: last_checked: 2026-07-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (Baustellenschild) vvv
-#: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10/26
+#: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10.2026
 Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
 Barbarossastr.: östliche Zufahrt, etwa 30-40m der Fahrbahn sind gesperrt	q3::inwork 6747,9531 6860,9529
 Eisenacher Str.	q4::inwork 6727,9497 6724,9457
@@ -8685,14 +8685,14 @@ Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-06-23 (mapillary)
+#: last_checked: 2026-07-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 ',
          'from' => 1754431200,
          'id' => 4411,
-         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Mitte Juni 2026: Diagonalweg ist offen)',
+         'text' => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Juli 2026: Diagonalweg ist offen)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8746,7 +8746,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-04 vvv
+#: last_checked: 2026-07-06 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9998,7 +9998,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        {
          'data' => '#: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-05 (traffic)
+#: last_checked: 2026-07-06 (traffic)
 #: check_frequency: 2d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -10264,22 +10264,7 @@ Gotha-Allee	q4::inwork 765,12564 618,12563
          'until' => 1785535140
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260504 (26.05. bis 16.06.2026)
-#: osm_watch: note 5352757 1
-#: add_fragezeichen: Ist der Weg noch immer abgesperrt?
-#: last_checked: 2026-06-22
-#: check_frequency: 14d
-#: next_check: 2026-07-31 (BA ("im Juli"))
-Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12457,10309 12502,10244
-# REMOVED (hier nicht) --- Görlitzer Park: Bauarbeiten vor dem Pamukkale	q4::inwork 12384,10368 12457,10309
-',
-         'from' => 1779746400,
-         'id' => 4625,
-         'text' => 'Görlitzer Park: Bauarbeiten vor dem Pamukkale, Wegsperrung, schmaler Trampelpfad neben dem Bauzaun existiert, vermutlich bis Juli 2026',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: LMS-BR:410748/72 viz2021:13.56417,52.40173, (bis 31.10.2026)
@@ -10562,7 +10547,7 @@ Rückertstr.	q4::inwork 3569,11473 3571,11451
          'data' => '#: next_check_id: GERTRAUDENBRUECKE-2025
 #: priority: #A
 #: add_fragezeichen: Gibt es weiterhin Sperrungen?
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-06
 #: check_frequency: 10d
 	2::inwork 10439,11772 10373,11781 10329,11842
 ',
@@ -10689,13 +10674,15 @@ Zionskirchplatz: geplante Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280 10
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260711
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mpxasnngdc2h
+#: source_id: LMS-BR:414854/72 viz2021:13.39677,52.51523,06.07.2026,05:00 (bis 10.07.2026)
 	q4::inwork 9898,12161 9913,12068
 ',
          'from' => 1783220400,
          'id' => 4661,
          'text' => 'Oberwallstr.: Kraneinsatz, Sperrung zwischen Französische Str. und Jägerstr., vom 6.7.2026 5:00 Uhr bis 10.7.2026 abends',
          'type' => 'handicap',
-         'until' => 1783706400
+         'until' => 1783699200
        },
        {
          'data' => '#: source_id: 267201227 (bis 07.08.2026)
@@ -10706,6 +10693,29 @@ Zionskirchplatz: geplante Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280 10
          'text' => 'Luckenwalde und Gottow: Instandsetzung Fahrbahn und Radweg, Sperrung, vom 09.07.2026 06:00 Uhr bis 07.08.2026 20:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1786125600
+       },
+       {
+         'data' => '#: source_id: LS/221-F/26/106 (bis 21.08.2026)
+	2::inwork 38168,33025 37893,33125 36687,32987 35962,32731 35907,32648 35737,32393
+',
+         'from' => 1783483200,
+         'id' => 4663,
+         'text' => 'Beiersdorf - Freudenberg: Bauarbeiten, Sperrung, vom 09.07.2026 06:00 Uhr bis 21.08.2026 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1787335200
+       },
+       {
+         'data' => '#: note: möglicherweise nur im Frühling/Sommer? Gesehen auch im Sommer 2022 + August 2024; laut osm im März 2025 offen gewesen
+#: by: https://theater-schwedt.de/odertalfestspiele (von Juni bis September 2026)
+#: osm_watch[closed]: note 1414569 5
+Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
+',
+         'from' => 1780264800,
+         'id' => 4664,
+         'recurring' => 1,
+         'text' => 'Freilichtbühne Schwedt (Odertalbühne): Veranstaltungen von Juni bis September, Uferweg gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1790791200
        }
      
 );

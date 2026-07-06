@@ -223,7 +223,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2026-06-16
+#: last_checked: 2026-07-06
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -235,7 +235,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-07-04 vvv
+#: last_checked: 2026-07-06 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -525,7 +525,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-07-05
+#: last_checked: 2026-07-06
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -1123,8 +1123,13 @@ Görlitzer Park: Asphalt	Q0 13141,9911 13132,9916 12983,10000 12866,10064 12802,1
 Görlitzer Park: Asphalt	Q0 12670,10160 12543,10223
 Görlitzer Park: Asphalt	Q0 12543,10223 12502,10244
 #: historical_note: früher (bis Juni 2026) Q1-, nach Bauarbeiten wohl besser
-Görlitzer Park: wassergebundene Decke	Q1+ 12502,10244 12457,10309
-Görlitzer Park: wassergebundene Decke, wellig	Q1- 12457,10309 12384,10368
+Görlitzer Park: wassergebundene Decke	Q1 12502,10244 12457,10309
+#: next_check_id: PAMUKKALE-2026
+# XXX ursprünglich: Görlitzer Park: wassergebundene Decke, wellig	Q1- 12457,10309 12384,10368
+#: last_checked: 2026-07-06
+#: check_frequency: 14d
+#: next_check: 2026-07-31 (BA: "im Juli")
+Görlitzer Park: wassergebundene Decke, wellig, teils Kopfsteinpflaster	Q2 12457,10309 12384,10368
 Görlitzer Park: teils Gehwegplatten, teils Kopfsteinpflaster	Q1- 12384,10368 12331,10409 12328,10442
 Görlitzer Park: Asphalt	Q0 12814,9966 12833,9998 12866,10064
 Görlitzer Park: Gehwegplatten	Q0- 12866,10064 12901,10134 12905,10143

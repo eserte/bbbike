@@ -2038,9 +2038,6 @@ Krumme Str.	1 25490,14601 25444,14665 25418,14835
 Margaretenstr.	1 25418,14835 25503,14842
 Sophienstr.	1 25503,14842 25527,14696 25555,14657
 Straße am Haussee: abgesperrt, Privatstraße	2 25846,16082 25787,16229
-#: note: möglicherweise nur im Frühling/Sommer? Gesehen auch im Sommer 2022 + August 2024; laut osm im März 2025 offen gewesen
-#: osm_watch: note 1414569 5
-Freilichtbühne Schwedt	2 69562,73280 69634,73330
 #: note: Radweg in einer Richtung
 Bernau - Tempelfelde	1 23179,31047 23103,30923
 # REMOVED (permanent entfernt) --- #: by: grote energus: vvv
@@ -4185,6 +4182,7 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-am-ostbahnhof-zeigt-sich-mit-roter-fassade/
 #: by: https://www.entwicklungsstadt.de/haus-der-familie-und-bildung-am-ostbahnhof-neubau-startet/ (weiterer Neubau, Fertigstellung: Ende 2027)
 #: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-moderner-neubau-alte-moebel-eroeffnung-wackelt/ (Umzug war für den Januar 2027 geplant, Termin ist nicht mehr zu halten)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1689904.php
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
@@ -4286,7 +4284,7 @@ Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3445,1150
 #: by: https://www.entwicklungsstadt.de/bka-standort-puschkinallee-sicherheitscampus-in-treptow-nimmt-form-an/
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
-#: last_checked: 2026-06-15
+#: last_checked: 2026-07-06
 #: check_frequency: 60d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4597,7 +4595,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-06
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -5697,15 +5695,15 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: also_indoor: traffic
-#: last_checked: 2026-06-24 vvv
+#: last_checked: 2026-07-05 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
-#: osm_watch: way id="154807176" version="67"
+#: osm_watch: way id="154807176" version="68"
 #: osm_watch: way id="186329816" version="52"
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
-#: osm_watch: way id="692480577" version="40"
-#: osm_watch: way id="692480576" version="39"
+#: osm_watch: way id="692480577" version="41"
+#: osm_watch: way id="692480576" version="40"
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 7989,13302
 # REMOVED --- Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8099,13391 8098,13419
 #: next_check ^^^
@@ -5753,12 +5751,12 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 # REMOVED --- #: osm_watch: way id="765539341" version="17" brb
-#: last_checked: 2026-02-27 (osm)
+#: last_checked: 2026-07-05 (osm)
 #: check_frequency: 180d
 #: osm_watch: way id="1285592463" version="8" brb
 # REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12802,-1485 -12708,-1445
 #: XXX Evtl. heißt dieser Abschnitt "Alter Markt" (siehe osm)?
-#: osm_watch: way id="90781221" version="19" brb
+#: osm_watch: way id="90781221" version="20" brb
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 # 
 # REMOVED --- #: next_check_id: AMALTENMARKT-2018 --- #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz --- #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf --- #: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."; bei osm mittlerweile offen --- #: osm_watch: way id="760022943" version="19" brb --- #: last_checked: 2024-07-24 (osm) --- #: check_frequency: 60d --- Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12780,-1558 -12719,-1542
