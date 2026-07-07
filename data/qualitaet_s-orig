@@ -152,7 +152,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-07-01
+#: last_checked: 2026-07-07
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -525,7 +525,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-07-06
+#: last_checked: 2026-07-07
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -1024,7 +1024,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 120d vvv
 Rollbergstr.: Kopfsteinpflaster	Q2- 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Kopfsteinpflaster	Q2 12407,8177 12545,8209 12714,8249
@@ -1259,7 +1259,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2026-06-13
+#: last_checked: 2026-07-06
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-05-31 (osm note)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -2074,14 +2074,10 @@ Travestr.: Kopfsteinpflaster	Q2 14986,11760 14901,11808
 Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0- 14901,11808 14836,11842
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1- 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1- 5913,8415 5831,8358
-#: next_check_id: VOLKSPARKWILMERSDORF-2026
-#: osm_watch: note 5180232 2
-#: osm_watch: way id="21849639" version="15"
-#: XXX Nach den Bauarbeiten bessere Qualität (Q1?)? Auch östlich der Prinzregentenstr. wird zumindest punktuell ausgebessert (Höhenunterschiede zu Borden und Gullydeckeln)
-#: add_fragezeichen: Ist die Qualität des Parkwegs nach den Bauarbeiten besser geworden?
-#: last_checked: 2026-06-12
-# REMOVED --- #: next_check: 2026-04-24
-Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
+Volkspark Wilmersdorf: Parkweg	Q1- 5917,8351 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366
+#: historical_note: früher (bis Juni/Juli 2026) nur Q1-, danach etwas besser
+Volkspark Wilmersdorf: Parkweg	Q1 5660,8366 5572,8447
+Volkspark Wilmersdorf: Parkweg	Q1- 5572,8447 5533,8478 5476,8521
 Volkspark Wilmersdorf: Mosaikpflaster mit Parkweg-Streifen	Q1- 5469,8524 5405,8549 5331,8581
 Volkspark Wilmersdorf: Parkweg	Q1- 5761,8339 5699,8308
 # REMOVED --- #: next_check_id: VOLKSPARKWILMERSDORF-2023 --- #: XXX wird die Qualität nach den Bauarbeiten besser sein? vvv --- #: last_checked: 2023-05-25 vvv --- #: next_check: 2023-07-19 vvv --- # REMOVED --- #: next_check: 2023-04-15 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
@@ -14211,6 +14207,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14190 (Einwohneranfrage)
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-in-reinickendorf-neue-details-verschaerfen-debatte/
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-streit-um-116-baeume-und-neuen-radweg/
+#: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-116-baeume-ein-radweg-protest-vorm-rathaus/
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: last_checked: 2026-06-07 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
@@ -17412,7 +17409,8 @@ Sentastr.: Asphalt	Q0 5458,7683 5353,7680
 Elsastr. (Friedenau): Asphalt	Q0 5490,7651 5493,7590 5492,7543
 Ortrudstr.: Asphalt	Q0 5493,7590 5353,7617
 Kundrystr.: Asphalt	Q0 5450,7494 5350,7554
-Straße am Güterbahnhof Wilmersdorf: Kopfsteinpflaster	Q2 6273,7849 6147,7840
+Straße am Güterbahnhof Wilmersdorf: Kopfsteinpflaster	Q3+ 6273,7849 6147,7840
+(Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): Asphalt	Q0 5812,7826 5829,7827 6147,7840
 Schnackenburgstr.: Asphalt	Q0 5636,7540 5812,7536
 Stierstr.: Asphalt	Q0 5957,7773 5956,7686 5955,7420
 Hähnelstr.: Asphalt	Q0 5812,7685 5956,7686 6118,7688 6144,7677

@@ -4747,7 +4747,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
-#: last_checked: 2026-06-01
+#: last_checked: 2026-07-07
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork 12162,8053 12147,8117
@@ -5302,9 +5302,9 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
        undef,
        undef,
        {
-         'data' => '#: note: geöffnet (großes Tor): 2022-02-13 (So) gegen 14:45, 2022-03-27 (So) gegen 13:45, 2022-07-27 (Mi) gegen 17:30, 2022-12-18 (So) gegen 12:15, 2023-04-21 (Fr) gegen 14:20, 2023-08-18 (Fr) gegen 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mo, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert), 2024-04-23 (Di) 17:35 (Spalt, Mofa passt durch), 2024-08-18 (So) 13:20 (weiterhin 100cm breiter Spalt)
+         'data' => '#: note: geöffnet (großes Tor): 2022-02-13 Sun 14:45, 2022-03-27 Sun 13:45, 2022-07-27 Wed 17:30, 2022-12-18 Sun 12:15, 2023-04-21 Fri 14:20, 2023-08-18 Fri 13:10 (allerdings nur ein etwa 120cm breiter Spalt), 2023-12-26 (Mon, Weihnachten) 12:13 (100cm breiter Spalt, Torflügel ist fest verankert), 2024-04-23 Tue 17:35 (Spalt, Mofa passt durch), 2024-08-18 Sun 13:20 (weiterhin 100cm breiter Spalt), 2026-07-07 Tue 17:15 (weiterhin 100cm breiter Spalt)
 #: osm_watch: node id="575826622" version="4" vvv
-#: last_checked: 2026-03-14 (mapillary) vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -5417,7 +5417,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch[closed]: note 5093384 7
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-07-01
+#: last_checked: 2026-07-07
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5443,7 +5443,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: source_id: LMS-BR:408948/72 viz2021:13.44444,52.48166,21.05.2026,09:00 (bis 28.08.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
@@ -6668,7 +6668,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung; nun wieder Einbahnstraßenregelung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-07-01
+#: last_checked: 2026-07-07
 #: check_frequency: 30d
 #  REMOVED --- #: next_check: 2026-03-30 (Halteverbotsschilder, VIZ-Verkehrsmeldung)
 	q4::inwork; 12407,8177 12545,8209
@@ -7122,7 +7122,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-07-06 vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7547,7 +7547,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2026-06-22
+#: last_checked: 2026-07-07
 #: check_frequency: 90d
 #: next_check: 2026-11-30 (Pressemitteilung)
 # REMOVED (hier Radfahrer frei) ---	q4::inwork; 7696,7771 7632,7807
@@ -7611,7 +7611,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: osm_watch: node id="1801491687" version="5"
 #: osm_watch: node id="13935525208" version="1"
 #: osm_watch[closed]: note 5293716 1
-#: last_checked: 2026-06-08 (traffic)
+#: last_checked: 2026-07-07
 # REMOVED --- #: check_frequency: 30d (traffic)
 #: check_frequency: 90d
 #: next_check: 2028-12-31
@@ -7626,13 +7626,13 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (re-G,W,ex-T,A)
+         'data' => '#: also_indoor: traffic (re-G[nur noch ein Stummel],W,ex-T,ex-A)
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-06-22
-#: check_frequency: 90d
-#: next_check: 2026-06-30 (Baustellenschild der Wasserbetriebe)
+#: last_checked: 2026-07-07
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2026-06-30 (Baustellenschild der Wasserbetriebe)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
 	q4::inwork; 8380,8545 8334,8655 8306,8722
 ',
@@ -8030,7 +8030,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2026-06-12 (vermutet)
+#: last_checked: 2026-07-07
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -8372,7 +8372,7 @@ Caspar-Theiß-Str.: Sperrung der Fahrbahn an der Paulsborner Str., Gehweg für Rad
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:371046/72 viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: source_id: LMS-BR:371047/72 viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -8651,7 +8651,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: also_indoor: traffic (none)
 #: osm_watch: note 4895287 6
-#: last_checked: 2026-07-04 vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (Baustellenschild) vvv
 #: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10.2026
@@ -8746,7 +8746,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-06 vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -8822,12 +8822,31 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lyhtc24jas2b
+# REMOVED (alte Meldung) --- #: note: man kann nur auf die andere Straßenseite wechseln --- #: source_id[inactive]: bvg2024:248#HIM_FREETEXT_299338 (kein Endedatum) --- #: source_id: viz2021:13.37918,52.48055, (kein Endedatum) (inaktiv) --- #: also_indoor: traffic (ex-T,G) --- #: last_checked: 2025-11-01 (traffic) --- #: check_frequency: 14d --- Manfred-von-Richthofen-Str.: Wasserrohrbruch	q4::inwork; 8776,8285 8730,8079
+#: last_checked: 2026-07-07 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-08-31 vvv
+Manfred-von-Richthofen-Str.: Fahrbahn Richtung Süden gesperrt	q4::inwork; 8731,7956 8757,7841 8796,7751
+Manfred-von-Richthofen-Str./Rumeyplan: Sperrungen im Kreuzungsbereich	q4::inwork 8812,7730 8796,7751
+Rumeyplan/Manfred-von-Richthofen-Str.: Sperrungen im Kreuzungsbereich	q3::inwork 8895,7797 8796,7751
+Rumeyplan: südliche Fahrbahn gesperrt	q4::inwork 8812,7730 8907,7773 8895,7797
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 4440,
+         'text' => 'Manfred-von-Richthofen-Str./Rumeyplan: Bauarbeiten, Fahrbahnen abschnittsweise gesperrt, voraussichtlich bis Ende August 2026',
+         'type' => 'handicap',
+         'until' => 1788213599
+       },
        {
          'data' => '#: note: laut altem Baustellenschild der Wasserbetriebe sogar Arbeiten bis zum Juni 2027
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: add_fragezeichen: Ist der Schreiberring weiterhin gesperrt?
-#: last_checked: 2026-06-22
+#: last_checked: 2026-07-07
 Schreiberring	q4::inwork 8561,8252 8666,8305
 # REMOVED --- #: also_indoor: traffic (ex-T,G)
 # REMOVED --- #: add_fragezeichen: Besteht die Sperrung noch immer? --- #: last_checked: 2025-12-11 (traffic) vvv --- #: check_frequency: 7d (traffic) vvv
@@ -9099,11 +9118,11 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        undef,
        undef,
        {
-         'data' => '#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026, mittlerweile bis 31.05.2026
+         'data' => '#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026, mittlerweile bis 31.05.2026 (nicht mehr erneuert)
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
 #: also_indoor: traffic (re-G,ex-T,W[mittlerweile richtige Lage],no-H)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2026-06-22
+#: last_checked: 2026-07-07
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-05-31 (Halteverbotsschilder)
 	q4::inwork 8265,8092 8259,8265 8276,8295
@@ -9136,7 +9155,7 @@ Hentigstr.: zwischen Marksburgstr. und Aristotelessteig	q4::inwork 18586,9172 18
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
 #: osm_watch: note 5200828 2
-#: last_checked: 2026-06-22 vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
@@ -9546,23 +9565,7 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
          'until' => 1785535199
        },
        undef,
-       {
-         'data' => '#: next_check_id: VOLKSPARKWILMERSDORF-2026
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1645709.php
-#: by: https://www.berlin.de/imgscale2/9AuxRVefLWbbF7Yg6n-jfxJdZdY8R2b6JXZ86PSf0BA/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvYmEtY2hhcmxvdHRlbmJ1cmctd2lsbWVyc2RvcmYvYWt0dWVsbGVzL3ByZXNzZW1pdHRlaWx1bmdlbi8yMDI2L21hcmdpbl8yMDAwXzEwMDBfZWUzY2E5ZGUzNWVkNzI0MjNmZDVmYTQ2ODBhY2VlNjZfc3RyYXNzZW5zcGVycnVuZy5wbmc.png
-#: osm_watch: note 5180232 2
-#: note: nach den Bauarbeiten vielleicht bessere Qualität, siehe qualitaet_s-orig
-#: add_fragezeichen: Besteht die Sperrung wegen Bauarbeiten weiterhin?
-#: last_checked: 2026-06-12
-# REMOVED (wurde nicht gehalten) --- #: next_check: 2026-04-25
-	2::inwork 5533,8478 5660,8366
-',
-         'from' => 1771974000,
-         'id' => 4541,
-         'text' => 'Volkspark Wilmersdorf: Sperrung des Radwegs zwischen Prinzregentenstr. und Bundesallee, Ende der Bauarbeiten unbekannt (Stand Mitte Juni 2026: noch immer gesperrt)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: LS/223-P/26/014 (bis 28.08.2026)
 	2::inwork -19216,29323 -18694,27999 -18187,27206
@@ -9771,7 +9774,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-s%C3%BCdl-hohenstaufen-pallas-und-goebenstr/?postID=795563#post795563
 #: also_indoor: traffic (G,no-T,no-W,no-H)
 #: osm_watch: way id="251962463" version="5"
-#: last_checked: 2026-06-08 (traffic)
+#: last_checked: 2026-07-07 (traffic)
 #: check_frequency: 30d
 #: next_check: 2027-12-31 (neubaukompass website)
 	q4::inwork; 4886,6819 4886,6711
@@ -9996,10 +9999,10 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (T,ex-G,ex-H,no-W)
+         'data' => '#: also_indoor: traffic (T,ex-G,re-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-06 (traffic)
-#: check_frequency: 2d (traffic)
+#: last_checked: 2026-07-07 (traffic)
+#: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
 ',
@@ -10024,9 +10027,9 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        {
          'data' => '#: next_check_id: AUGUSTEVIKTORIAALLEE-2026
-#: also_indoor: traffic (G,no-T,no-H,no-A,W)
+#: also_indoor: traffic (G,no-T,no-H,no-A,ex-W)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.82473.php (Knotenpunkt Auguste-Viktoria-Allee/Antonienstraße, also weter westlich, ist das die gleiche Baumaßnahme? 2. Quartal 2026 bis 4. Quartal 2026)
-#: last_checked: 2026-06-17 (traffic) vvv
+#: last_checked: 2026-07-07 (traffic) vvv
 #: check_frequency: 21d (traffic) vvv
 General-Barby-Str.: Sperrung vor der Auguste-Viktoria-Allee, lange Umwege notwendig	q4::inwork 4461,18475 4414,18243
 Engelmannweg: Sperrung der Fahrbahn	q4::inwork 4531,18217 4492,18013
@@ -10212,13 +10215,13 @@ Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 1744
          'data' => '#: also_indoor: traffic (T,G,W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: osm_watch: note 5292595 2
-#: last_checked: 2026-06-22
+#: last_checked: 2026-07-07
 #: check_frequency: 21d (traffic)
 Wünsthoffstr.: Sperrung der Fahrbahn	q4::inwork 8461,8084 8519,8088 8620,8095
 #: also_indoor: traffic (no-T,no-G,W[fälschlicherweise Komplettsperrung])
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: note 5292048 1
-#: last_checked: 2026-06-22
+#: last_checked: 2026-07-07
 #: check_frequency: 21d (traffic)
 Wünsthoffstr.: Einbahnstraßenregelung	q4::inwork; 8461,8097 8265,8092
 ',
@@ -10395,8 +10398,10 @@ Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
-#: last_checked: 2026-06-15 (mz-hd) vvv
-#: check_frequency: 21d vvv
+#: also_indoor: traffic (no-G,T,no-H,no-W)
+#: last_checked: 2026-07-07 (traffic) vvv
+#: check_frequency: 7d (traffic) vvv
+# REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
 	q4::inwork 22717,13278 22563,13340 22594,13408
 #: check_frequency ^^^
@@ -10457,6 +10462,7 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mov62s6ock26 (hier bis 31.07.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierungsarbeiten-auf-der-olbersstrasse-in-charlottenburg/
 #: source_id: LMS-BR:412913/72 viz2021:13.30654,52.52884,22.06.2026,07:00 (bis 17.07.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:414995/72 viz2021:13.29643,52.52933,07.07.2026,07:00 (Tegeler Weg bis Kamminer Str., bis 17.07.2026)
 	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 ',
          'from' => 1781992800,
@@ -10532,6 +10538,7 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1686570.php (Dauer voraussichtlich 6-8 Wochen, ab 25.6.2026)
 #: source_id: LMS-BR:412912/72 viz2021:13.303754,52.509885,22.06.2026,07:00 (hier bis Wilmersdorfer Str., bis 31.07.2026)
+#: source_id: LMS-BR:414997/72 viz2021:13.30344,52.50987,07.07.2026,07:00 (bis 31.07.2026)
 #: also_indoor: traffic (no-G,no-T,H,W)
 Schillerstr.	q4::inwork 3522,11447 3571,11451
 Schillerstr. (kurzer Abschnitt)	q3::inwork 3571,11451 3717,11462

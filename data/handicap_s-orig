@@ -86,7 +86,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="32"
 #: osm_watch: way id="1072662717" version="36"
-#: last_checked: 2026-07-06
+#: last_checked: 2026-07-07
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -129,7 +129,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (Tsp) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -890,9 +890,10 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: also_indoor: traffic (G,no-T)
 #: source_id: LMS-BR:392304/72 viz2021:13.60111,52.45156, (Bauarbeiten im angrenzenden Fürstenwalder Damm, bis 30.04.2026) (bis 08.05.2026) (bis 07.07.2026) (vorfristig inaktiv)
-#: last_checked: 2026-07-06 (traffic)
-#: check_frequency: 21d
-#: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-07-07 (traffic)
+# REMOVED --- #: check_frequency: 21d
+#: check_frequency: 2d
+# REMOVED --- #: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
 Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463650.php --- #: note: vor Ort sahen die Beeinträchtigungen nicht so groß aus --- #: source_id: 2147339863 --- #: valid: 20160627-20161130 --- S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
@@ -912,6 +913,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id: viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv)
 #: source_id: bvg2024:m27#HIM_FREETEXT_302033 (zwischenzeitlich entfernt)
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
+#: source_id: bvg2024:m27#HIM_FREETEXT_348335
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],ex-W,re-ex-H)
 #: last_checked: 2026-06-08 (mapillary)
@@ -1061,7 +1063,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-07-01
+#: last_checked: 2026-07-07
 #: check_frequency: 120d
 #: next_check: 2026-07-31 (Halteverbotsschilder)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
@@ -1331,7 +1333,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-07-04 (daf) vvv
+#: last_checked: 2026-07-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1948,7 +1950,7 @@ Martha-Ndumbe-Platz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
 Martha-Ndumbe-Platz: Fußgänger	q2 7929,15355 7947,15380 7974,15418
 Martha-Ndumbe-Platz [Gerichtstr.-Reinickendorfer Str.]: Gehweg, Radfahrer frei	q2 7891,15417 7947,15380 7975,15362 8002,15340
 # REMOVED (hier Radweg) --- Martha-Ndumbe-Platz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
-Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366 5533,8478 5476,8521
+Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5818,8354 5782,8344 5761,8339 5680,8355 5660,8366 5572,8447 5533,8478 5476,8521
 Volkspark Wilmersdorf: einige Fußgänger	q1- 5917,8351 5831,8358
 Volkspark Wilmersdorf: einige Fußgänger	q1- 5680,8355 5699,8308
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
@@ -3656,7 +3658,8 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 # REMOVED (provisorische Absenkung existiert) --- #: XXX_prog BS (ansonsten entfernen) --- #: XXX wird der Bordstein noch abgesenkt? --- #: last_checked: 2014-12-12 --- #: next_check: 2015-03-01 --- Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
 # 
 #: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten bleibt's bei q3)
-Gleisdreieckpark: flache Bordsteine, Spielplatz	q3 8296,10438 8237,10418
+#: note: bei schönen Tagen am Nachmittag und am Wochenende nur q3 oder sogar q4, ansonsten ist hier nicht so viel los
+Gleisdreieckpark: flache Bordsteine, Spielplatz	q2 8296,10438 8237,10418
 #: XXX_prog BS zu beiden Seiten (aber flach!) (ansonsten entfernen)
 Gleisdreieckpark: flache Bordsteine	q1 8145,10090 8211,10083
 Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q1 8211,10083 8276,10079
