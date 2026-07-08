@@ -1432,7 +1432,7 @@ Johannisstr. -> Friedrichstr.: Straßenbahnhaltestelle	3::igndisp 9385,13174 9254
 Mittelstreifen mit Zaun	3nocross::ignrte 7966,15571 7975,15500 8049,15470
 Reinickendorfer Str. -> Martha-Ndumbe-Pl. [Reinickendorfer Str.]: Mittelstreifen mit Zaun	3::igndisp 8049,15470 7975,15500 7975,15484
 Martha-Ndumbe-Pl. [Reinickendorfer Str.] -> Reinickendorfer Str.: Mittelstreifen mit Zaun	3::igndisp 7975,15484 7975,15500 7966,15571
-Mittelstreifen	3nocross::ignrte 7966,15571 7962,15633 7948,15802
+Mittelstreifen	3nocross::ignrte 7966,15571 7962,15633 7946,15792
 Mittelstreifen	3nocross::ignrte 8001,15205 8002,15340 8024,15401
 Reinickendorfer Str. -> Martha-Ndumbe-Pl. [Gerichtstr.-Reinickendorfer Str.]: Mittelstreifen	3::igndisp 8001,15205 8002,15340 7975,15362
 Martha-Ndumbe-Pl. [Gerichtstr.-Reinickendorfer Str.] -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 7975,15362 8002,15340 8024,15401
@@ -1730,8 +1730,8 @@ Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3nocross::ignrt
 Streitstr. -> Wegscheider Str.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3050,16429 -3046,16548 -3214,16561
 Wegscheider Str. -> Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3::igndisp -3214,16561 -3046,16548 -3043,16601
 Mittelstreifen	3nocross::ignrte -3042,16609 -3034,16719 -3033,16757
-Streitstr. -> Marius-Carpentier-Str.: Mittelstreifen	3::igndisp -3033,16757 -3034,16719 -2904,16703
-Marius-Carpentier-Str. -> Streitstr.: Mittelstreifen	3::igndisp -2904,16703 -3034,16719 -3042,16609
+Streitstr. -> Marius-Carpentier-Str.: Mittelstreifen	3::igndisp -3033,16757 -3034,16719 -2908,16701
+Marius-Carpentier-Str. -> Streitstr.: Mittelstreifen	3::igndisp -2908,16701 -3034,16719 -3042,16609
 Mittelstreifen	3nocross::ignrte -3029,16823 -3023,16925 -3018,16974
 Mittelstreifen	3nocross::ignrte -3009,17090 -3006,17128 -2959,17507
 Streitstr. -> Cautiusstr.: Mittelstreifen	3::igndisp -3009,17090 -3006,17128 -3019,17129
@@ -3337,8 +3337,8 @@ Drängelgitter	BNP:3:7:trailer=5 22061,15168
 Drängelgitter kann ohne Absteigen passiert werden	BNP:2:-199 1388,3197
 Drängelgitter	BNP:5:72 11010,-378
 Drängelgitter	BNP:5:-42 22268,11285
-Drängelgitter	BNP:5:66 -7228,15504
-Drängelgitter	BNP:5:-249 -7182,15524
+Drängelgitter	BNP:5:66 -7224,15496
+Drängelgitter	BNP:5:61 -7179,15516
 Drängelgitter und Schranke	BNP:5:-156:trailer=15 14274,12190
 Drängelgitter	BNP:5:-58 14314,14841
 Schwingtor	BNP:5:-35:trailer=10 13867,15111

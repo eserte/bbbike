@@ -852,9 +852,9 @@ Berliner Str. -> Masurenstr.: Straßenbahntrasse	3::igndisp 10892,17396 10885,174
 Masurenstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 10670,17458 10885,17469 10883,17491
 Mittelstreifen	3nocross::ignrte 6587,16199 6572,16212 6447,16321 6440,16327
 Müllerstr. -> Kongostr.: Mittelstreifen	3::igndisp 6572,16212 6447,16321 6349,16213
-Mittelstreifen	3nocross::ignrte 7948,15802 7962,15633 7966,15571
-Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7962,15633 7966,15571
-Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7948,15802 7962,15633 8053,15598
+Mittelstreifen	3nocross::ignrte 7946,15792 7962,15633 7966,15571
+Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8047,15609 7962,15633 7966,15571
+Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7946,15792 7962,15633 8047,15609
 Zeisigweg	1 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
 Nollendorfplatz	1 7033,10328 6971,10346
 Mittelstreifen	3nocross::ignrte 5895,9083 5974,9100 6059,9118
@@ -2815,8 +2815,11 @@ Waldstr.: Poller an der Eschenstr.	3 22326,9509 22413,9544 22458,9532
 Waldstr.: Poller an der Eschenstr.	3 22402,9551 22413,9544 22326,9509
 Waldstr.: Poller an der Eschenstr.	3 22458,9532 22413,9544 22326,9509
 Herrfurthplatz	1 11713,7899 11748,7922 11754,7964
-Meta-London-Str.: Poller an der Straße "Am Maselakepark"	3 -2904,16703 -2939,16495 -2666,16447
-Meta-London-Str.: Poller an der Straße "Am Maselakepark"	3 -2904,16703 -2939,16495 -2955,16418
-Meta-London-Str.: Poller an der Straße "Am Maselakepark"	3 -2666,16447 -2939,16495 -2904,16703
-Meta-London-Str.: Poller an der Straße "Am Maselakepark"	3 -2955,16418 -2939,16495 -2904,16703
+Meta-London-Str.: Poller an der Straße "Am Maselakepark"	3 -2908,16701 -2913,16665 -2927,16588 -2944,16496 -2666,16447
+Meta-London-Str.: Poller an der Straße "Am Maselakepark"	3 -2908,16701 -2913,16665 -2927,16588 -2944,16496 -2955,16418
+Meta-London-Str.: Poller an der Straße "Am Maselakepark"	3 -2666,16447 -2944,16496 -2927,16588 -2913,16665 -2908,16701
+Meta-London-Str.: Poller an der Straße "Am Maselakepark"	3 -2955,16418 -2944,16496 -2927,16588 -2913,16665 -2908,16701
 Karl-Liebknecht-Str. (Altlandsberg)	1 32263,18770 32254,18456
+Mittelstreifen	3nocross::ignrte 8271,15734 8430,15901 8436,15907
+Pankstr. -> Schönstedtstr.: Mittelstreifen	3::igndisp 8271,15734 8430,15901 8338,15987
+Schönstedtstr. -> Pankstr.: Mittelstreifen	3::igndisp 8338,15987 8430,15901 8436,15907

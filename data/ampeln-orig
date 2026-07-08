@@ -6,6 +6,24 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_347631
+#: source_id: bvg2024:194#HIM_FREETEXT_347630
+#: source_id: bvg2024:194#HIM_FREETEXT_348289
+#: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, (bis 16.12.2026)
+#: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
+#: next_check: 2026-07-07
+# REMOVED --- #: next_check: 2026-12-16 (VIZ-Verkehrsmeldung)
+#: valid: -20261216
+Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
+# 
+#: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, (bis 19.06.2026) (bis 14.08.2026)
+#: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026)
+#: note: außerdem sind beide Anbindungen der Ackerstr. gesperrt, kleinere Umwege notwendig
+#: last_checked: 2026-07-08
+#: next_check: 2026-08-14
+#: valid: -20260814
+Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
+# 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026)
 #: next_check: 2026-09-04
 #: valid: -20260904
@@ -52,7 +70,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-06-29
+#: last_checked: 2026-07-08
 #: next_check: 2026-07-17
 #: valid: -20260717
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -1359,7 +1377,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog: nur für N->S relevant; Zebrastreifen in W->O-Richtung
 	X 11976,12595
 #: related ^^^
-#: XXX_prog: Anforderungsampel für Radfahrer aus der Schillingstr.; für Linksabbieger sogar eine zweite (die aber vermutlich synchron geschaltet ist)
+#: XXX_prog: Anforderungsampel für Radfahrer aus der Schillingstr.; für Linksabbieger sogar eine zweite (die aber vermutlich synchron geschaltet ist); außerdem Anforderung für linksabbiegende Radfahrer Karl-Marx-Allee -> Schillingstr., auch hier 2x
 	X 11635,12745
 #: XXX_prog nur für linksabbiegende Radfahrer (Karl-Marx-Allee -> Berolinastraße), mit Anforderung
 	X 11678,12727
@@ -1809,8 +1827,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
 #: XXX wegen nicht mehr existenter Autobahnausfahrt ausgeschaltet
 #: osm_watch: node id="12875745339" version="1"
-#: osm_watch: note 4840114 2
-#: last_checked: 2025-07-05
+#: osm_watch: note 4840114 3
+#: last_checked: 2026-07-08
 #: check_frequency: 360d
 	X0 2446,11776
 	X 2330,11762
@@ -2361,7 +2379,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 22074,9273
 #: XXX_prog eigentlich zwei leicht versetzte Ampeln, die aber für die Reinickendorfer Str. gleich geschaltet sind; ein Geradeausfahren aus der Schererstr. in die Wiesenstr. ist also nicht möglich
 #: XXX_prog: zusammenhängende Ampelanlage vvv
-	X 7948,15802
+	X 7946,15792
 	X 7941,15823
 #: XXX_prog ^^^
 	X 9640,-833
@@ -4085,7 +4103,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-06-29 vvv
+#: last_checked: 2026-07-08 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3
@@ -4189,13 +4207,9 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: note: Anforderungsampel
 	F 6960,13366
 # 
-#: by: mapillary
-#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/endlich-eine-neue-ampel-dieser-provisorische-zebrastreifen-im-berliner-westen-soll-im-sommer-verschwinden-13794124.html (zurzeit nur Zebrastreifen, neue Ampel wird im Sommer 2025 errichtet werden, leicht versetzt)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neuer-platz-neue-termine-neue-brucke-wie-es-zwischen-pichelsdorfer-strasse-und-havel-weitergeht-14449979.html (Arbeiten ruhen; außerdem Erwähnung einer Fußgängerverbindung zur Krowelstr.; in Zukunft wird es auch eine neue Brücke über den Burgwallgraben geben)
 #: note: Anforderungsampel
-#: last_checked: 2025-10-05 (Tsp)
-# REMOVED --- #: next_check: 2025-09-01 (Tsp)
-	F0 -3693,13012
+	F -3693,13012
+# 
 	X 9934,2307
 	F 16487,17785
 # 

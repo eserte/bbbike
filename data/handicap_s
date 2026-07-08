@@ -25,6 +25,8 @@ Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten B¸rgersteig gef¸hrt	q2::inwork 11160,12071 11111,12027 11054,11992
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,12185
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fuﬂg‰nger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fuﬂg‰nger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 9011,12423 9028,12307
@@ -870,14 +872,14 @@ Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11755 2934,11747
 Neue Br¸cke: Fuﬂg‰nger	q1 -3139,14710 -3143,14676 -3150,14631
 (Stichstr. - Charlottenburger Chaussee): Fuﬂg‰nger	q1 -2039,13276 -2031,13310 -2047,13434
-(St¸lpnagelstr. - Knobelsdorffstr.): Fuﬂg‰nger, Bordsteine	q1 2188,11679 2197,11757
+(St¸lpnagelstr. - Knobelsdorffstr.): Fuﬂg‰nger, Bordstein	q3 2188,11679 2197,11757
 KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4624,15671 4444,15906 4378,15922
 KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4111,15999 4089,15978
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2942,15781 2649,15783 1737,15789
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
-(Am Hohenzollernkanal - Bernauer Str.): einige Fuﬂg‰nger	q0 -192,16054 -206,16066 -207,16083 -215,16088 -257,16103
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -182,16045 -231,16061 -242,16087 -255,16096 -257,16103 -822,16535 -910,16608
+(Am Hohenzollernkanal - Bernauer Str.): einige Fuﬂg‰nger	q0 -182,16045 -206,16066 -207,16083 -215,16088 -257,16103
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1 -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fuﬂg‰nger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fuﬂg‰nger	q1 -2587,16600 -2632,16347
@@ -1585,8 +1587,8 @@ Wilhelm-Stolze-Str.: Fuﬂg‰nger	q3 13267,13167 13233,13242
 Straﬂe 77: einige Fuﬂg‰nger, Bordsteine	q2 15320,12375 15408,12394
 Wuhlebr¸cken: Fuﬂg‰nger	q2 22843,14452 22839,14453 22819,14457 22788,14468 22743,14488 22670,14520
 (oberer Wuhlewanderweg - unterer Wuhlewanderweg): Rampe, einige Fuﬂg‰nger	q2 22873,14498 22849,14449 22847,14488 22840,14494
-Bootshausweg: einige Fuﬂg‰nger	q1 -1017,16184 -960,16396 -972,16553 -1016,16585 -1033,16621 -1067,16635
-Bootshausweg: einige Fuﬂg‰nger	q1 -1016,16585 -1058,16611 -1096,16597
+Bootshausweg: einige Fuﬂg‰nger	q1 -1017,16184 -965,16393 -977,16546 -1015,16575 -1033,16621 -1067,16635
+Bootshausweg: einige Fuﬂg‰nger	q1 -1015,16575 -1062,16605 -1096,16597
 (Rauchstr. - Sigmund-Bergmann-Str.): einige Fuﬂg‰nger	q1 -2414,16975 -2371,16776
 (Am Maselakepark - Maselake): Fuﬂg‰nger	q1 -2638,16609 -2587,16600 -2504,16558
 Ackerstr.: einige Fuﬂg‰nger, Bordstein	q2 -3937,15299 -3869,15333
@@ -2615,7 +2617,7 @@ Straﬂenbahn¸bergang	q3 17861,17099 17866,17116
 Straﬂenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 (‹bergang Straﬂenbahnhaltestelle Alte Fˆrsterei)	q3 21365,5832 21364,5827
 (‹bergang Hˆhe Haupteingang Stadion an der Alten Fˆrsterei)	q3 21519,5767 21522,5771
-Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
+Colbestr.: eng durch Zweite-Reihe-Parker	q0 14523,12183 14468,11992
 Colbestr.: eng	q0 14468,11992 14416,11815
 Lisa-Fittko-Str.: einige Fuﬂg‰nger	q1 7734,13944 7731,13927 7787,13839 7787,13838
 (Schleizer Str. - Plauener Str.): Fuﬂg‰nger, Wohngebiet	q3 17406,14986 17415,14906
@@ -2794,6 +2796,7 @@ Riedel-Evers-Weg: einige Fuﬂg‰nger	q1 12136,5628 12150,5640 12570,5802 12722,583
 Braunschweiger Ufer: Fuﬂg‰nger	q1 12722,5831 13080,5882 13382,5957 13418,5954 13483,5973
 Frauenfelder Weg: Bordsteine, einige Fuﬂg‰nger	q3 7627,17034 7647,17037
 Oberfeldstr.: Bahn¸bergang zusammen mit Fuﬂverkehr	q2 20627,12162 20624,12133 20619,12098
+(Bullengraben - Seeburger Str./Seecktstr.): Parkplatzverkehr	q1 -4368,13387 -4334,13338 -4320,13296
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3118,7 +3121,7 @@ Bootshausweg: Fuﬂg‰nger, teilweise sehr eng, nicht f¸r Anh‰nger geeignet	q2 -122
 Bootshausweg: Fuﬂg‰nger	q1 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1691,16848
 Bootshausweg: Fuﬂg‰nger	q1 -1661,16841 -1667,16828 -1675,16813
 Karl-Pokern-Str.: spielende Kinder	q0 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
-(Plantagenstr. - Ruheplatzstr.): Gehweg, Fuﬂg‰nger	q4 7595,15596 7518,15605
+(Plantagenstr. - Ruheplatzstr.): Gehweg, Fuﬂg‰nger	q3 7595,15596 7518,15605
 Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16423,24935 16359,24795 16304,24825 16264,24764 16131,24850
 Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16359,24795 16334,24728
 Bruno-Apitz-Str.: viele Fuﬂg‰nger	q1 16329,24865 16304,24825

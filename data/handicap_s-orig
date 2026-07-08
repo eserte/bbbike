@@ -358,7 +358,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="3"
-#: last_checked: 2026-05-19
+#: last_checked: 2026-07-08
 #: check_frequency: 120d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
@@ -368,7 +368,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 #: by: https://www.entwicklungsstadt.de/forschung-lehre-zukunft-bht-eroeffnet-laborneubau-wal-in-wedding/
 # REMOVED --- #: osm_watch: way id="885130938" version="7"
-#: last_checked: 2026-05-02
+#: last_checked: 2026-07-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -484,19 +484,19 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 # REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11054,11992 11111,12027
 # REMOVED (Sperrung wurde aufgehoben) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-22 --- Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesperrt	q4::inwork 9456,11513 9331,11497
 # 
-# REMOVED --- #: next_check_id: ROTESRATHAUS-2023
-# REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-# REMOVED --- #: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
-# REMOVED --- #: last_checked: 2025-07-04 vvv
-# REMOVED --- #: next_check: 2025-07-04 vvv
-# REMOVED --- #: valid: -20250704 vvv
-# REMOVED --- #: note: eigentlich für Fußgänger verboten
-# REMOVED --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
-# REMOVED --- #: note: eigentlich nur in Richtung W-O befahrbar, deshalb q4
-# REMOVED --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: last_checked ^^^
+#: next_check_id: ROTESRATHAUS-2023
+#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+#: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
+#: last_checked: 2026-07-08 vvv
+#: next_check: 2026-07-10 vvv
+#: valid: -20260710 vvv
+#: note: eigentlich für Fußgänger verboten
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
+#: note: eigentlich nur in Richtung W-O befahrbar, deshalb q4
+(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (hier keine Bauarbeiten mehr) --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: last_checked: 2023-08-09 --- #: check_frequency: 30d --- #: next_check: 2023-08-11 --- #: valid: -20230811 --- Platz der Vereinten Nationen: Anbindung Mollstr. gesperrt, Bordsteine, Engstellen	q4::inwork 11896,13075 11904,13052
 # REMOVED (mittlerweile wieder Führung via Fahrbahn trotz nicht ganz abgeschlossener Baustelle) --- #: source_id: viz2021:13.414995,52.527328,22.05.2023,06:00 (bis 09.06.2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1660510235155484672#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndldEE0b1dBQVU0VmE2LmpwZw== --- #: next_check: 2023-06-09 --- #: valid: -20230609 --- Mollstr.: Fahrbahnsanierungsarbeiten, Radfahrer werden über den Gehweg geführt	q1-::inwork; 11160,13492 11216,13451 11270,13412 11276,13408
@@ -527,7 +527,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
-#: last_checked: 2026-07-02 vvv
+#: last_checked: 2026-07-08 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -890,7 +890,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: also_indoor: traffic (G,no-T)
 #: source_id: LMS-BR:392304/72 viz2021:13.60111,52.45156, (Bauarbeiten im angrenzenden Fürstenwalder Damm, bis 30.04.2026) (bis 08.05.2026) (bis 07.07.2026) (vorfristig inaktiv)
-#: last_checked: 2026-07-07 (traffic)
+#: last_checked: 2026-07-08 (traffic)
 # REMOVED --- #: check_frequency: 21d
 #: check_frequency: 2d
 # REMOVED --- #: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
@@ -915,8 +915,8 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: source_id: bvg2024:m27#HIM_FREETEXT_348335
 #: osm_watch: way id="1392961223" version="5"
-#: also_indoor: traffic (T,ex-G[viel zu kurz?],ex-W,re-ex-H)
-#: last_checked: 2026-06-08 (mapillary)
+#: also_indoor: traffic (T,ex-G[viel zu kurz?],re-W,re-H)
+#: last_checked: 2026-07-08 (traffic)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 # REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
@@ -1442,7 +1442,7 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/wenn-wohnungsbau-den-verkehr-blockiert-fast-jeden-tag-chaos--berliner-bezirk-lasst-gefahrlichen-engpass-weiten-15670280.html (Erwähnung)
 #: by: https://www.entwicklungsstadt.de/heynstrasse-warum-landet-der-durchgangsverkehr-im-wohnkiez/
 #: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026) (bis 07.07.2026) (bis 07.08.2026)
-#: last_checked: 2026-06-23 (mapillary)
+#: last_checked: 2026-07-08
 #: next_check: 2026-08-07 (VIZ-Verkehrsmeldung)
 #: valid: -20260807
 Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
@@ -2855,14 +2855,16 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11755 2934,11747
 Neue Brücke: Fußgänger	q1 -3139,14710 -3143,14676 -3150,14631
 (Stichstr. - Charlottenburger Chaussee): Fußgänger	q1 -2039,13276 -2031,13310 -2047,13434
-(Stülpnagelstr. - Knobelsdorffstr.): Fußgänger, Bordsteine	q1 2188,11679 2197,11757
+#: note: explizite Gehwegschilder ohne Freigabe für Radfahrer
+#: XXX_prog BS (an der Südseite) (ansonsten trotzdem q3)
+(Stülpnagelstr. - Knobelsdorffstr.): Fußgänger, Bordstein	q3 2188,11679 2197,11757
 KGA Plötzensee: einige Fußgänger	q1 4963,15259 4624,15671 4444,15906 4378,15922
 KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4111,15999 4089,15978
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 2942,15781 2649,15783 1737,15789
-(Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -213,16059 -256,16093 -257,16103 -822,16535 -910,16608
-(Am Hohenzollernkanal - Bernauer Str.): einige Fußgänger	q0- -192,16054 -206,16066 -207,16083 -215,16088 -257,16103
+(Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -182,16045 -231,16061 -242,16087 -255,16096 -257,16103 -822,16535 -910,16608
+(Am Hohenzollernkanal - Bernauer Str.): einige Fußgänger	q0- -182,16045 -206,16066 -207,16083 -215,16088 -257,16103
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fußgänger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
@@ -3849,11 +3851,12 @@ Wilhelm-Stolze-Str.: Fußgänger	q3 13267,13167 13233,13242
 Straße 77: einige Fußgänger, Bordsteine	q2 15320,12375 15408,12394
 Wuhlebrücken: Fußgänger	q2 22843,14452 22839,14453 22819,14457 22788,14468 22743,14488 22670,14520
 (oberer Wuhlewanderweg - unterer Wuhlewanderweg): Rampe, einige Fußgänger	q2 22873,14498 22849,14449 22847,14488 22840,14494
-Bootshausweg: einige Fußgänger	q1+ -1017,16184 -960,16396 -972,16553 -1016,16585 -1033,16621 -1067,16635
-Bootshausweg: einige Fußgänger	q1+ -1016,16585 -1058,16611 -1096,16597
+Bootshausweg: einige Fußgänger	q1+ -1017,16184 -965,16393 -977,16546 -1015,16575 -1033,16621 -1067,16635
+Bootshausweg: einige Fußgänger	q1+ -1015,16575 -1062,16605 -1096,16597
 (Rauchstr. - Sigmund-Bergmann-Str.): einige Fußgänger	q1+ -2414,16975 -2371,16776
 (Am Maselakepark - Maselake): Fußgänger	q1 -2638,16609 -2587,16600 -2504,16558
 #: XXX_prog BS nach Osten hin, ansonsten q1
+#: note: Gehweg für Radfahrer frei
 Ackerstr.: einige Fußgänger, Bordstein	q2 -3937,15299 -3869,15333
 (Spektegrünzug): Fußgänger	q1 -4945,14883 -5053,14926 -5168,14943 -5383,14984 -5564,15039 -5610,15079 -5641,15109
 (Spektegrünzug - Unnaer Str.): Fußgänger	q1 -5610,15079 -5608,15098 -5608,15105
@@ -5483,16 +5486,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 (Übergang Straßenbahnhaltestelle Alte Försterei)	q3 21365,5832 21364,5827
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	q3 21519,5767 21522,5771
 # 
-#: next_check_id: FRANKFURTERALLEE-2025
-#: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026) (bis 30.06.2026) (bis 03.07.2026) (bis 08.07.2026)
-#: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-07-04
-#: check_frequency: 10d
-#: next_check: 2026-07-08 (VIZ-Verkehrsmeldung)
-Colbestr.: Anbindung Frankfurter Allee gesperrt, eng durch Zweite-Reihe-Parker	q3 14523,12183 14468,11992
-# REMOVED --- #: valid: !-20251219
-# XXX (später wiederherstellen) --- Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
+Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
 Colbestr.: eng	q0- 14468,11992 14416,11815
 # 
 #: note: Ausschilderung: Gehweg, Radfahrer frei
@@ -5872,6 +5866,8 @@ Frauenfelder Weg: Bordsteine, einige Fußgänger	q3 7627,17034 7647,17037
 # 
 Oberfeldstr.: Bahnübergang zusammen mit Fußverkehr	q2 20627,12162 20624,12133 20619,12098
 # 
+(Bullengraben - Seeburger Str./Seecktstr.): Parkplatzverkehr	q1 -4368,13387 -4334,13338 -4320,13296
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -5970,7 +5966,8 @@ Friedrichstr. (Lichterfelde): Fuß- und Radweg	q1 2890,3561 2717,3600
 Sparrstr. - Triftstr.: Gehweg	q3 7281,15175 7248,15296
 #: note: laut ADFC-Karte "mäßig"
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fußweg und Parkplatz	q2 11094,17339 10899,17331
-(Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3896,13124
+#: corrected_by: srt (q0 -> q0-)
+(Seecktstr. - Wilhelmstr.): breiter Gehweg	q0- -4017,13167 -3896,13124
 #: by: ^^^
 #: by: Helmut Stockinger:
 Gralsburgsteig: enge Straße	q1 2164,25190 2206,25260 2038,25531 1950,25763 1921,26019
@@ -6504,7 +6501,8 @@ Bootshausweg: Fußgänger	q1 -1661,16841 -1667,16828 -1675,16813
 Karl-Pokern-Str.: spielende Kinder	q0- 26079,5057 26034,5056 25984,5070 25941,5069 25860,5067 25732,5065
 # 
 #: by: ingo [AM]
-(Plantagenstr. - Ruheplatzstr.): Gehweg, Fußgänger	q4 7595,15596 7518,15605
+#: corrected_by: srt (q4 -> q3)
+(Plantagenstr. - Ruheplatzstr.): Gehweg, Fußgänger	q3 7595,15596 7518,15605
 # 
 #: by: Andreas Püschel: vvv
 Bruno-Apitz-Str.: viele Fußgänger	q1 16423,24935 16359,24795 16304,24825 16264,24764 16131,24850

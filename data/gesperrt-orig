@@ -207,6 +207,7 @@ Spreestr.	1 17935,5961 17877,5860
 Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifbvsfliejhy4sbashirdwsaw6wdrjtn2oajvwovcyoked53e72xy (vermutlich weiterhin keine Einbahnstraßenregelung?)
 #: osm_watch: note 4996305 1
 #: osm_watch: way id="1025420899" version="8"
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung wieder?
@@ -2245,7 +2246,7 @@ Ibsenstr.	1s:q3 10295,16667 10209,16674
 #: by: https://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="16"
-#: last_checked: 2026-04-12
+#: last_checked: 2026-07-08
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
@@ -2298,7 +2299,7 @@ An der Urania: breiter Mittelstreifen	3nocross 6740,10755 6685,10690 6532,10529
 # REMOVED (nicht mehr) --- Lindenstr./Markgrafenstr.: Barrieren	3nocross 9797,10771 9807,10788 9829,10830
 Friedrichstr.: Straßenbahnhaltestelle	3nocross 9246,13240 9254,13171 9262,13111
 Reinickendorfer Str.: Mittelstreifen mit Zaun	3nocross 7966,15571 7975,15500 8049,15470
-Reinickendorfer Str.: Mittelstreifen	3nocross 7966,15571 7962,15633 7948,15802
+Reinickendorfer Str.: Mittelstreifen	3nocross 7966,15571 7962,15633 7946,15792
 Reinickendorfer Str.: Mittelstreifen	3nocross 8001,15205 8002,15340 8024,15401
 #: XXX_prog unbequemes Überqueren, bessere Alternativen existieren, sollte als eine Art handicap für Punkte implementiert sein
 Spittelmarkt: unbequemes Überqueren	3nocross 10238,11741 10299,11786 10314,11804
@@ -2844,7 +2845,7 @@ tragen (3x13 Stufen)	0:45 18739,4728
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409854635/licht-am-ende-des-tunnels-s-bahnhof-erhaelt-endlich-seinen-aufzug.html (1. Quartal 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23856.pdf (Inbetriebnahme im 2. Quartal 2026)
 #: XXX hier wird es in Zukunft einen Aufzug geben
-#: last_checked: 2026-06-10 (bahninfo-forum)
+#: last_checked: 2026-07-07 (bahninfo-forum)
 # REMOVED --- #: next_check: 2026-06-30 (pardok)
 tragen	0:45 18661,4655
 # 
@@ -3751,8 +3752,8 @@ Drängelgitter	BNP:5 11010,-378
 Drängelgitter	BNP:5 22268,11285
 #: by: rjoop vvv
 #: confirmed_by: srt vvv
-Drängelgitter	BNP:5 -7228,15504
-Drängelgitter	BNP:5 -7182,15524
+Drängelgitter	BNP:5 -7224,15496
+Drängelgitter	BNP:5 -7179,15516
 #: confirmed_by: ^^^
 #: by: ^^^
 #: by: (x)qusor
@@ -4106,7 +4107,7 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=770057#post770057
-#: osm_watch: way id="1323938020" version="7"
+#: osm_watch: way id="1323938020" version="8"
 #: last_checked: 2026-07-07
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2027-06-30
@@ -4253,7 +4254,7 @@ Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inw
 #: osm_watch: way id="236674294" version="8"
 #: note: nur dieser Abschnitt ist offen:
 #: osm_watch: way id="25958768" version="11"
-#: last_checked: 2026-02-27 (BA-Pressemitteilung)
+#: last_checked: 2026-07-08
 #: check_frequency: 360d
 Am Egelpfuhlgraben: Holzbohlensteg zum Bullengraben gesperrt	2::inwork -5790,13458 -5785,13606
 # 
@@ -4669,7 +4670,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2026-06-20 (osm)
+#: last_checked: 2026-07-08
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4678,7 +4679,7 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="5"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-04 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
@@ -4853,18 +4854,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: MAUERPARK-2022 --- #: osm_watch: way id="30441457" version="31" --- #: last_checked: 2024-04-08 --- #: check_frequency: 60d --- Mauerpark: Weg gesperrt	2::inwork 10091,15630 10155,15473
 # REMOVED --- #: next_check_id: MAUERPARK-2022 --- # REMOVED (hier offen) --- #: osm_watch: way id="946925509" version="8"--- #: osm_watch: way id="1218990564" version="6" --- #: last_checked: 2024-08-13 --- #: check_frequency: 30d --- Mauerpark: Weg gesperrt	2::inwork 10071,15684 10045,15754 10061,15775 10050,15824 10046,15844 10081,15853
 # REMOVED --- Falkplatz: Weg gesperrt	2::inwork 10228,15488 10224,15529 10250,15565 10257,15619 10339,15648 10377,15675 10377,15697
-# 
-# REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022
-# REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9863 (Erwähnung)
-# REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung)
-# REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung))
-# REMOVED --- #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein.
-# REMOVED --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv)
-# REMOVED --- #: osm_watch: note 5096562 1
-# REMOVED --- #: priority: #C
-# REMOVED --- #: last_checked: 2025-12-11
-# REMOVED --- #: check_frequency: 60d
-# REMOVED --- Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
+# REMOVED --- #: next_check_id: LICHTENBERGERBRUECKEN-2022 --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9863 (Erwähnung) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9901 (Erwähnung) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10071 (Erwähnung (temporäre Entfernung)) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1691147.php ("vollständig wieder freigegeben") --- #: XXX Scheint Baustellenfläche für die Arbeiten an den Bahnbrücken zu sein. --- #: source_id: viz2021:13.483448,52.502169,22.06.2024,16:00 (benachbarte Nöldnerstr., bis 31.10.2024) (bis 18.11.2024) (bis 15.12.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 31.03.2025) (bis 04.04.2025) (inaktiv) --- #: osm_watch: note 5096562 1 --- #: priority: #C --- #: last_checked: 2025-12-11 --- #: check_frequency: 60d --- Nöldnerplatz [am Skatepark]: wegen Bauarbeiten gesperrt	2::inwork 15820,10916 15844,10894 15856,10821
 # 
 #: next_check_id: KANZLERPARK-2024
 #: XXX Bauarbeiten am Kanzlerpark
@@ -4874,7 +4864,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
 #: by: https://www.entwicklungsstadt.de/erweiterung-des-bundeskanzleramtes-baukoerper-steht-neue-bruecke-wartet-auf-ihren-einbau/
-#: last_checked: 2026-06-07 vvv
+#: last_checked: 2026-07-04 (architektur-urbanistik) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="6"
@@ -5094,14 +5084,14 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED (offen) --- #: next_check_id: HEBAMMENSTEIGBRUECKE-2021 --- #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf?start&ts=1355910105&file=11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf --- #: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 ("voraussichtlich ab 2019 neu gebaut") --- #: by: https://viz.berlin.de/2021/06/a114-vollsperrung/ (gesperrt seit 14.6.2021) (kein Fertigstellungdatum) --- #: by[nocache]: https://nitter.net/VIZ_Berlin/status/1707775993488855468#m (Brücke wird eingehoben) --- #: by: https://my.greenprofi.de/bauprojekte/1323594 (alte Ausschreibung, Bauausführung: 12 Monate) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1790700693709279405 (Einschränkung auf der A114 nur bis 21.05.2024) --- #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=765099#post765099 --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1825419928171675942 (Einschränkung auf der A114 diese Woche) --- # REMOVED (im del-Changeset kommentiert) --- #: osm_watch: way id="298416172" version="9" --- #: osm_watch: way id="43205335" version="3" --- #: osm_watch: way id="298416172" version="15" --- #: osm_watch[closed]: note 4100166 2 --- #: osm_watch: note 4382991 2 --- #: source_id: viz2021:13.447029,52.600595,04.01.2023,08:00 (Neubau, bis 30.6.2023) (inaktiv) --- #: source_id: viz2021:13.447029,52.600595,22.04.2024,10:00 (Neubau, bis 12.06.2024) (schon am nächsten Tag inaktiv) --- #: XXX Rampen auf Westseite mit Verbundsteinpflaster, auf Ostseite mit welligen Asphalt, parallel zur Autobahn --- #: XXX mittlerweile (Nov 2024) noch nicht offiziell freigegeben, aber u.U. befahrbar --- #: last_checked: 2025-03-09 (mapillary) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-06-30 --- Hebammensteigbrücke	2::inwork 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
 # REMOVED (wieder offen) --- Radweg an der Panke	2::inwork 13031,21538 13075,21740 13078,21754
 # REMOVED (keine Einbahnstraße mehr) --- #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung. --- #: osm_watch: way id="4045220" version="49" --- #: osm_watch: way id="938037386" version="3" --- #: osm_watch: way id="868103791" version="3" --- #: last_checked: 2023-03-24 --- #: check_frequency: 60d --- Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
-# REMOVED (laut osm wieder offen) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/ab-31-august-2023-rollt-der-verkehr-ueber-die-neue-tegeler-bruecke_a389844 (Abschluss bis Jahresende (2023)?) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/auf-der-neuen-bruecke-zwischen-tegel-und-siemensstadt-fliesst-der-verkehr_a391961 (Sperrung bis April 2024) --- #: by: https://www.deutsches-architekturforum.de/thread/14128-das-neue-gartenfeld-auf-insel-in-spandau-siemensstadt/?postID=746926#post746926 --- #: osm_watch: way id="930890136" version="22" --- #: last_checked: 2024-04-03 --- #: check_frequency: 180d --- #: next_check: 2023-12-01 --- #: next_check: 2024-04-30 --- Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -192,16054 -203,16064 -213,16059 -256,16093 -257,16103
+# REMOVED (laut osm wieder offen) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/ab-31-august-2023-rollt-der-verkehr-ueber-die-neue-tegeler-bruecke_a389844 (Abschluss bis Jahresende (2023)?) --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/auf-der-neuen-bruecke-zwischen-tegel-und-siemensstadt-fliesst-der-verkehr_a391961 (Sperrung bis April 2024) --- #: by: https://www.deutsches-architekturforum.de/thread/14128-das-neue-gartenfeld-auf-insel-in-spandau-siemensstadt/?postID=746926#post746926 --- #: osm_watch: way id="930890136" version="22" --- #: last_checked: 2024-04-03 --- #: check_frequency: 180d --- #: next_check: 2023-12-01 --- #: next_check: 2024-04-30 --- Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -182,16045 -203,16064 -231,16061 -242,16087 -255,16096 -257,16103
 # REMOVED (aufgehoben) --- #: XXX bis wann geht die Einbahnstraßenregelung? --- #: also_indoor: traffic --- #: last_checked: 2021-07-21 --- Gotlindestr.: Einbahnstraßenregelung	1s:q4:inwork 16720,12614 16859,12613
 # REMOVED --- #: XXX bis wann geht die Einbahnstraßenregelung? --- #: last_checked: 2021-05-17 --- Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
 # REMOVED --- #: osm_watch: way id="871451762" version="1" --- #: last_checked: 2022-05-21 --- #: check_frequency: 7d --- Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-07-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -5355,6 +5345,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-wettbewerb-siegerentwuerfe-fuer-wohnungen-und-theater-stehen-fest/
 #: by: https://www.berlin.de/sen/stadt/presse/pressemeldungen/pressemitteilung.1687105.php
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-die-wichtigsten-details-zu-bau-wohnungen-und-theater/
+#: by: https://www.entwicklungsstadt.de/molkenmarkt-statt-altstadt-rekonstruktion-berlins-neue-historische-mitte/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
 #: last_checked: 2026-06-26
 #: check_frequency: 180d

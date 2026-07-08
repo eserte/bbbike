@@ -1064,7 +1064,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2026-04-10 (mapillary)
+#: last_checked: 2026-06-22 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -2553,13 +2553,13 @@ neuer Asphalt	RW1; 9321,8607 9364,8640 9395,8726
 # REMOVED (Schilder stehen weitgehend) --- #: by: https://twitter.com/BA_Mitte_Berlin/status/1289130338661408770 --- #: XXX es werden noch Schilder aufgestellt (Ende kommender Woche --- also Ende KW 32/2020 --- ist aber nicht passiert) vvv --- #: last_checked: 2020-08-09 (mapillary) vvv --- #: check_frequency: 7d vvv
 #: note: Reinickendorfer Str., Richtung Norden
 	RW1; 8049,15470 7975,15500 7966,15571 7962,15633
-Grünbeschichtung	RW4; 7962,15633 7948,15802 7941,15823 7885,16005 7856,16083 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769 7672,16834 7666,16879
+Grünbeschichtung	RW4; 7962,15633 7946,15792 7941,15823 7885,16005 7856,16083 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769 7672,16834 7666,16879
 #: note: Reinickendorfer Str., Richtung Süden
 Grünbeschichtung	RW4; 7666,16879 7672,16834
 #: note: allerdings existiert noch ein Aufstellstreifen auf der Fahrbahn
 asphaltiert	RW2; 7672,16834 7681,16769
 Grünbeschichtung	RW3; 7681,16769 7713,16557
-Grünbeschichtung	RW4; 7713,16557 7746,16375 7793,16233 7818,16166 7856,16083 7885,16005 7941,15823 7948,15802 7962,15633 7966,15571
+Grünbeschichtung	RW4; 7713,16557 7746,16375 7793,16233 7818,16166 7856,16083 7885,16005 7941,15823 7946,15792 7962,15633 7966,15571
 	RW1; 7966,15571 7975,15500 8049,15470
 # 
 	RW1;RW1 10816,22654 10827,22647
@@ -6130,7 +6130,10 @@ Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 3117,8248 3108,8052 31
 #: historical_note: früher (bis etwa Frühjahr 2026) nur RW3;, etwas schmaler
 	RW4; 3159,11562 3144,11659 3117,11852
 	RW3; 3117,11852 3103,11968 3088,12094 3072,12222 3060,12311 3048,12413 3033,12509
-	RW3; 3033,12509 3048,12413 3060,12311 3072,12222 3088,12094 3103,11968 3117,11852 3144,11659 3159,11562
+	RW3; 3033,12509 3048,12413 3060,12311 3072,12222 3088,12094 3103,11968 3117,11852
+#: historical_note: früher (bis etwa Frühjahr 2026) nur RW3;, etwas schmaler
+	RW4; 3117,11852 3144,11659
+	RW3; 3144,11659 3159,11562
 	RW1;RW1 3337,12855 3361,12865 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
 	RW1; 3534,13098 3645,13206
 	RW2;RW2 19004,11780 19092,11776 19389,11761
@@ -7257,7 +7260,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-06-24 vvv
+#: last_checked: 2026-07-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -9896,7 +9899,7 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
 	RW6;RW6 8278,11257 8280,11296 8253,11306
 # 
-	RW7;RW7 8245,16064 8346,16283 8446,16386
+	RW7;RW7 8140,15859 8194,15960 8245,16064 8346,16283 8446,16386
 # 
 	RW7;RW7 18586,9172 18548,8942 18518,8778
 # 
