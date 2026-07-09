@@ -1721,6 +1721,7 @@ Kantstr.	q4::inwork 5613,10963 5652,11004
 #: by: https://www.classicopenair.de/ (2025: 17. bis 21. Juli 2025) (2026: 9. bis 14. Juli 2026)
 #: source_id: adac:871932322 (bis 24.07.2025) (inaktiv)
 #: source_id: viz2021:13.39333,52.51323,12.07.2025,06:00 (bis 24.07.2025) (inaktiv)
+#: source_id: LMS-BR:415303/72 viz2021:13.39181,52.51359,09.07.2026,18:00 (bis 14.07.2026)
 # REMOVED (hier nicht) ---	q4::temp 9679,11834 9666,11935
 	q4::temp 9666,11935 9656,12031
 # REMOVED (hier nicht) ---	q4::temp 9656,12031 9645,12133
@@ -5528,7 +5529,7 @@ Treptower Str.	q4::inwork 13566,8212 13510,8138
 #: by: https://www.entwicklungsstadt.de/umbau-am-bahnhof-koepenick-monatelang-vollsperrung-in-koepenick/
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mou3jdgefk25
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1684539.php
-#: osm_watch: note 3566736 14
+#: osm_watch: note 3566736 16
 Hämmerlingstr.: Bauarbeiten, komplett gesperrt	2::inwork 21984,6317 22000,6245
 # REMOVED --- #: also_indoor: traffic (G,B,W) ---#: priority: #A --- #: last_checked: 2025-06-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-08-08 (geplantes Ende) vvv
 # REMOVED --- #: note: Unterführung passierbar: 2023-02-19 mittags, 2023-05-13 (Union-Spiel!)
@@ -5943,7 +5944,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2924,15914 2892,15983 2809,16143
 #: also_indoor: traffic (T,G,H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-06-26 (traffic)
+#: last_checked: 2026-07-09 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-07-17 (Halteverbotsschilder)
 # REMOVED --- Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7169,2348 7051,2366 6965,2418
@@ -6144,7 +6145,7 @@ Sennheimer Str., Königsbacher Zeile bis Schönfließer Str.	q4::inwork 2519,25772 
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: note: in einem YouTube-Video vom 4.12.2026 kein Radfahren-verboten-Schild mehr zu sehen
 #: osm_watch: way id="37861386" version="34"
-#: osm_watch: way id="1231148375" version="11"
+#: osm_watch: way id="1231148375" version="12"
 #: priority: #B
 #: last_checked: 2026-06-12 (osm)
 #: check_frequency: 120d
@@ -6701,7 +6702,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-in-berlin-prenzlauer-berg-neuer-endtermin-steht--wird-er-diesmal-wirklich-eingehalten-15569872.html (voraussichtlich bis Juni 2027)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), meistens nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15, 2026-03-02). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2026-06-22 (mapillary) vvv
+#: last_checked: 2026-07-09 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2027-06-30 (Tsp) vvv
@@ -7126,7 +7127,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-07-07 vvv
+#: last_checked: 2026-07-09 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7347,7 +7348,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 #: osm_watch: way id="1119255054" version="13"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-06-21 (osm)
+#: last_checked: 2026-07-09
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -8133,7 +8134,7 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 # 
 #: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026; mittlerweile bis voraussichtlich August 2026
 #: also_indoor: traffic (T,G,no-W)
-#: last_checked: 2026-06-10 (stromnetz website, traffic)
+#: last_checked: 2026-07-09 (stromnetz website, traffic)
 #: check_frequency: 30d
 #: next_check: 2026-08-31
 Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
@@ -9078,7 +9079,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'data' => '#: osm_watch: note 4953648 9
 #: also_indoor: traffic (none)
 #: note: zurzeit noch Absperrung mit nur etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße
-#: last_checked: 2026-06-29
+#: last_checked: 2026-07-09
 #: check_frequency: 14d
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-11-28
@@ -10307,8 +10308,10 @@ Gotha-Allee	q4::inwork 765,12564 618,12563
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1679333.php (I ist gesperrt; Ersatzneubau für I+II ab 2027)
 #: by: https://www.berlin.de/imgscale2/p5uHaxqDJzLymwcKZuQETgIn__mgSXfTYUMtq_BcyV8/rbig2zu1/aHR0cDovL2ltcGVyaWFmcm9udGVuZC1wcm9kLXd3dy1odHRwOjgwODAvc2VuL3V2ay9fYXNzZXRzL3ByZXNzZS92ZXJrZWhyL3VtbGVpdHVuZ19zcGVrdGVsYWtlLnBuZw.png (Umleitungsplan)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mntuq3uioc2e
+#: osm_watch: note 5335583 2
+#: osm_watch: way id="14438401" version="11"
 #: add_fragezeichen: Ist der Steg noch immer gesperrt?
-#: last_checked: 2026-06-09 (Pressemitteilung)
+#: last_checked: 2026-07-08 (osm note + osm)
 #: check_frequency: 180d
 	2::inwork -6819,15305 -6816,15318
 ',
@@ -10361,7 +10364,20 @@ Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,
          'type' => 'handicap',
          'until' => 1787932800
        },
-       undef,
+       {
+         'data' => '#: next_check_id: RADICKE-2026
+#: by: https://www.aktives-adlershof.de/fileadmin/PDF/Bauma%C3%9Fnahmen/260610_Bauinfo_Radickestra%C3%9Fe_4.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1688283.php (bis 8.7.2026)
+#: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
+	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
+	q4::inwork 20835,3795 20845,3825
+',
+         'from' => 1781992800,
+         'id' => 4638,
+         'text' => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 13.7.2026',
+         'type' => 'handicap',
+         'until' => 1783958400
+       },
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
@@ -10517,20 +10533,7 @@ Rückertstr.	q4::inwork 3569,11473 3571,11451
          'type' => 'handicap',
          'until' => 1786485600
        },
-       {
-         'data' => '#: next_check_id: GERTRAUDENBRUECKE-2025
-#: priority: #A
-#: add_fragezeichen: Gibt es weiterhin Sperrungen?
-#: last_checked: 2026-07-06
-#: check_frequency: 10d
-	2::inwork 10439,11772 10373,11781 10329,11842
-',
-         'from' => undef,
-         'id' => 4654,
-         'text' => 'Gertraudenbrücke, östliche Unterführung: kann wegen Bauarbeiten gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1663549.php
 #: by: https://www.entwicklungsstadt.de/schliessung-der-goerlitzer-bruecken-treptow-koepenick-fordert-loesung/
@@ -10694,13 +10697,16 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~01-07-2026-baustart-an-der-l-902-grube-grundhafte-erneuerung-zwischen-bahnhof-und-ortseingang
+#: by: https://www.potsdam.de/de/302-baumassnahmen-im-hauptstrassennetz-den-sommerferien
+#: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5454 (bis 18.12.2026)
+#: source_id: LS/223-P/26/086 (bis 18.12.2026)
 	2::inwork -19656,2362 -19422,2220 -19243,2246 -19106,2228 -18985,2226 -18728,2153
 ',
          'from' => 1783807200,
          'id' => 4665,
-         'text' => 'Bahnhof Grube - Ortseingang Grube: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 13. Juli 2026 bis November 2026',
+         'text' => 'Bahnhof Grube - Ortseingang Grube: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 13. Juli 2026 bis 18. Dezember 2026',
          'type' => 'gesperrt',
-         'until' => 1796079599
+         'until' => 1797620400
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~01-07-2026-l-235-strassenbauarbeiten-zwischen-wesendahl-und-gielsdorf
@@ -10718,8 +10724,8 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
          'data' => '#: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-berlin-friedrichshain-frankfurter-allee-bleibt-bis-ende-der-sommerferien-teilweise-gesperrt-15810152.html
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 #: priority: #A
-#: last_checked: 2026-07-08 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2026-07-09 vvv
+#: check_frequency: 8d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
 	q3::inwork; 14381,12207 14291,12222
@@ -10732,6 +10738,16 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
          'text' => 'Frankfurter Allee: Wasserrohrbruch, Radspur ab Samariterstr. Richtung Westen gesperrt, voraussichtlich bis Ende September 2026',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.potsdam.de/de/303-instandsetzung-eines-teils-der-grossbeerenstrasse-beginnt-am-13-juli
+	q4::inwork; -10634,-2159 -10528,-2196 -10426,-2231 -10327,-2262
+',
+         'from' => 1783807200,
+         'id' => 4668,
+         'text' => 'Großbeerenstr. (Potsdam): Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, vom 13.7.2026 bis 24.8.2026',
+         'type' => 'handicap',
+         'until' => 1787608800
        }
      
 );

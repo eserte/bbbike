@@ -453,7 +453,7 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2026-06-22 (mapillary)
+#: last_checked: 2026-07-09
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -516,7 +516,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-06-27
+#: last_checked: 2026-07-09
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -526,10 +526,11 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260616 (bis Mitte Juli 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mohlhsl6jk2e
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihixc4uykzapjwbqitqzrn4r3c2zliqzifuaxngsxq3sqhowc6zqa
-#: source_id: LMS-BR:412220/72 viz2021:13.4732,52.50935,17.06.2026,09:30 (bis 10.07.2026)
-#: last_checked: 2026-06-27
-#: next_check: 2026-07-10 (VIZ)
-#: valid: -20260710
+#: source_id: LMS-BR:412220/72 viz2021:13.4732,52.50935,17.06.2026,09:30 (bis 10.07.2026) (bis 24.07.2026)
+#: last_checked: 2026-07-09
+#: next_check: 2026-07-24 (VIZ)
+# REMOVED (use "emergency" end) --- #: valid: -20260724
+#: valid: -20261231
 Gürtelstr.: Gegenverkehrsregelung zwischen Dossestr. und Oderstr.	X::inwork::alternating 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
@@ -2534,6 +2535,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderung für Radfahrer aus der Stindestr. (beide Richtungen)
 	X 6203,4630
 #: note: Anforderung für linksabbiegende Radfahrer aus dem Prellerweg in die Sembritzkistr.
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9691
+#: XXX Grüner Pfeil für Radfahrer (2x) soll angebracht werden
+#: last_checked: 2026-07-08 (BVV-Drucksache)
 	X 7236,5685
 	X 5377,5961
 	X 5335,5991
@@ -4405,6 +4409,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: note: Anforderungsampel für Radfahrer aus/in Richtung Priesterweg
 #: note: Ampel für Radfahrer auf den Prellerweg in Richtung Südosten nicht relevant
+#: note: Grüner Pfeil für Radfahrer (Priesterweg -> Prellerweg, N->W)
 	X 7171,5831
 # REMOVED (wurden bereits abgebaut) --- #: next_check_id: HEIDELBERGER-2017 --- #: XXX wann werden die Ampeln wieder abgebaut? --- #: note eigentlich zwei Ampeln, aber zusammengeschaltet --- #: last_checked: 2017-11-18 --- #: check_frequency: 60d ---	F::inwork 13489,9199
 #: note: Anforderung für linksabbiegende Radfahrer in die Alexander-Meißner-Str.
