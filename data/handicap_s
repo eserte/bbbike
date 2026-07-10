@@ -25,8 +25,6 @@ Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2::inwork 11160,12071 11111,12027 11054,11992
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,12185
-(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
-(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,12307
@@ -40,7 +38,7 @@ Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 
 Müllenhoffstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 11311,9576 11110,9661
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
-Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
+Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1::inwork; 6230,13596 6366,13716 6493,13822 6646,13951
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine, Umwege	q4::inwork 5669,10704 5782,10884
@@ -133,7 +131,7 @@ Treptower Park: einige Fußgänger	q1 15297,8921 15213,8977 15190,9027 15154,9106 
 Treptower Park: einige Fußgänger	q1 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
 Görlitzer Park: Fußgänger	q2 12671,10042 12681,10047 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
-Görlitzer Park: Fußgänger	q2 13141,9911 13132,9916 12983,10000 12866,10064 12802,10097
+Görlitzer Park: Fußgänger	q2 13141,9911 13132,9916 13107,9930 12983,10000 12866,10064 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12502,10244 12457,10309 12384,10368 12331,10409 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12866,10064 12901,10134 12905,10143
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12795,10147 12774,10178 12757,10197 12728,10196 12693,10183 12670,10160
@@ -142,7 +140,9 @@ Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12509,10189 12543,10223
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12504,10172 12464,10153
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12608,10294
-Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 12983,10000 12960,9955 12932,9900
+Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 13007,10038 12983,10000 12960,9955 12932,9900
+(Görlitzer Park, zwischen Cuvrystr. und Ratiborstr.): Fußgänger, Kurven	q2 13013,10068 12962,10072 13007,10038
+(Görlitzer Park, zwischen Cuvrystr. und Bahnbrücke): Fußgänger, schmal	q2 13007,10038 13071,9983 13107,9930
 Görlitzer Park: Fußgänger	q2 12509,10189 12502,10244
 Gartenufer: einige Fußgänger	q1 5790,11643 5845,11615 6067,11479 6200,11417 6277,11397 6337,11365 6346,11326
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,11768 5736,11835 5543,11837 5478,11860
@@ -3765,7 +3765,6 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung,
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7757,14318 7735,14305 7652,14257
 Glockenblumenweg: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 16461,2569 16260,2717
 Petunienweg: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 16635,2796 16541,2866
-Am Wiesenrain: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 23931,5992 24122,6007
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
 Wriezener Karree: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12959,11631 12728,11850
@@ -3779,6 +3778,7 @@ Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
 Buswendestelle Gensweg: gesperrt, ggfs. schieben	q4::igndisp 12673,1140 12609,1088 12588,1103
+Am Wiesenrain: Sperrung der Fahrbahn: gesperrt, ggfs. schieben	q4:inwork::igndisp 23931,5992 24122,6007
 George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgersteig frei: gesperrt, ggfs. schieben	q4:inwork::igndisp 7446,14403 7529,14274
 Kreuzung Sewanstr./Am Tierpark	q0::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Radweg	q0::igndisp; 18647,10172 18715,10003

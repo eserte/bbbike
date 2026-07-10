@@ -11560,9 +11560,11 @@ Sorauer Str.	N 12822,10487 12682,10258
 (Görlitzer Park, Einfahrt Liegnitzer Str.)	NN 12690,10062 12681,10047 12671,10042
 (Görlitzer Park, zwischen Forster und Lübbener Str.)	NN 12507,10130 12504,10172 12509,10189 12543,10223 12580,10252 12608,10294
 (Görlitzer Park, zwischen Forster und Lübbener Str.)	NN 12464,10153 12504,10172
-(Görlitzer Park)	NN 13141,9911 13132,9916 12983,10000 12866,10064 12802,10097 12670,10160 12543,10223 12502,10244 12457,10309 12384,10368 12331,10409 12328,10442
+(Görlitzer Park)	NN 13141,9911 13132,9916 13107,9930 12983,10000 12866,10064 12802,10097 12670,10160 12543,10223 12502,10244 12457,10309 12384,10368 12331,10409 12328,10442
 (Görlitzer Park, zwischen Glogauer und Falckensteinstr.)	NN 12814,9966 12833,9998 12866,10064 12901,10134 12905,10143
-(Görlitzer Park, zwischen Cuvrystr. und Ratiborstr.)	NN 13035,10076 13013,10068 13013,10047 12983,10000 12960,9955 12932,9900
+(Görlitzer Park, zwischen Cuvrystr. und Ratiborstr.)	NN 13035,10076 13013,10068 13013,10047 13007,10038 12983,10000 12960,9955 12932,9900
+(Görlitzer Park, zwischen Cuvrystr. und Ratiborstr.)	NN 13013,10068 12962,10072 13007,10038
+(Görlitzer Park, zwischen Cuvrystr. und Bahnbrücke)	NN 13007,10038 13071,9983 13107,9930
 (Görlitzer Park, Rondell)	NN 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196 12757,10197 12774,10178 12795,10147 12802,10097
 (Görlitzer Park, zwischen Lausitzer Platz und Forster Str.)	NN 12509,10189 12502,10244
 (Görlitzer Park, zwischen Rondell und Wiener Str./Forster Str.)	NN 12670,10160 12592,10112 12564,10121 12556,10116 12507,10130
@@ -16152,7 +16154,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-06-24
+#: last_checked: 2026-07-10
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16548,7 +16550,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-06-24
+#: last_checked: 2026-07-10
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -21222,12 +21224,12 @@ An den Eiswerken	N 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	N 14886,10748 14909,10732 14984,10677
 Rummelsburger Seeblick	NN 14927,10807 14918,10769 14909,10732
 # 
-#: next_check_id: ROTESRATHAUS-2023
-#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: last_checked: 2026-07-09
-#: next_check: 2026-07-10
-#: valid: -20260710
-(Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
+# REMOVED --- #: next_check_id: ROTESRATHAUS-2023
+# REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+# REMOVED --- #: last_checked: 2026-07-09
+# REMOVED --- #: next_check: 2026-07-10
+# REMOVED --- #: valid: -20260710
+# REMOVED --- (Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
 # 
 (Passage am Tacheles)	NN 9371,13333 9353,13273 9244,13253
 Aaron-Bernstein-Platz	NN 9353,13273 9382,13265 9385,13246 9463,13256 9476,13293

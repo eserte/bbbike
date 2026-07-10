@@ -220,7 +220,7 @@ Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
 #: source_id: bvg2024:194#HIM_FREETEXT_341095 (Umleitung, evtl. gibt es hier Bauarbeiten?) (-> nichts gesehen)
-#: last_checked: 2026-06-30 vvv
+#: last_checked: 2026-07-10 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -300,7 +300,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="7"
-#: last_checked: 2026-06-30
+#: last_checked: 2026-07-10
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -1059,6 +1059,7 @@ Lindenstr. (Straßenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 2
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/pyramidenbruecke/ (alternative URL)
 #: by: https://entwicklungsstadt.de/grossbaustelle-koepenick-zwischen-verkehrschaos-und-infrastruktur-offensive/
 #: by: https://www.entwicklungsstadt.de/pyramidenbruecke-in-koepenick-bauarbeiten-gehen-voran/
+#: by: https://www.entwicklungsstadt.de/pyramidenbruecke-vor-dem-1-fc-union-leitungen-bremsen-arbeiten-aus/ (Fertigstellung Anfang 2027)
 #: source_id: viz2021:13.56849,52.45383,20.12.2022,15:27 (bis 15.7.2023) (am nächsten Tag wieder entfernt -> inaktiv) (bis 15.07.2023) (inaktiv)
 #: source_id: viz2021:13.567832,52.454403,23.01.2023,08:00 (bis 30.1.2023) (inaktiv)
 #: source_id: viz2021:13.56657,52.45535,29.12.2022,09:39 (bis 15.7.2023) (später am Tag wieder entfernt -> inaktiv) (wieder aktiv, bis 15.7.2023) (inaktiv)
@@ -4105,6 +4106,47 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: GOERLITZERBRUECKEN-2026
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1663549.php
+#: by: https://www.entwicklungsstadt.de/schliessung-der-goerlitzer-bruecken-treptow-koepenick-fordert-loesung/
+#: by: https://www.berliner-zeitung.de/article/alte-bahnbruecken-am-landwehrkanal-stehen-vor-dem-aus-das-ist-der-grund-10032278
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1663916.php
+#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/gorlitzer-bahnbrucken-vor-dem-aus-bezirk-nennt-db-kundigung-ein-totales-desaster-15513150.html
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8277 (Antrag)
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12444 (Resolution)
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12446 (Resolution)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/gorlitzer-bahnbrucken-vor-sperrung-berlin-kampft-um-die-fuss-und-radverbindung-uber-den-landwehrkanal-15546775.html
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article411862788/berlin-brueckensperrung-zwischen-treptow-und-kreuzberg-kommt-noch-eine-loesung.html
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12502 (Anfrage)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article412135376/jeder-tag-ist-brueckentag-berliner-demonstrieren-gegen-schliessung-der-goerlitzer-bruecken.html
+#: by: https://www.entwicklungsstadt.de/protest-gegen-schliessung-der-goerlitzer-bruecken-waechst/
+#: by: https://www.entwicklungsstadt.de/goerlitzer-park-bleibt-vorerst-nachts-offen-senat-wehrt-sich/
+#: by: https://www.tagesspiegel.de/berlin/drohende-sperrung-der-gorli-brucken-berliner-bezirk-ladt-senat-und-bahn-zum-krisengesprach-15672411.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25973.pdf
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26071.pdf
+#: by: https://www.tagesspiegel.de/berlin/gesprache-laufen-konstruktiv-senat-bahn-und-bezirk-planen-erhalt-der-gorlitzer-brucken-in-berlin-15701425.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1680891.php (evtl. werden die Abschnitte zwischen den Brücken erstmal bleiben?)
+#: by: https://www.entwicklungsstadt.de/streit-um-goerlitzer-bruecken-erhalt-geplant-sperrung-bleibt/
+#: by: https://www.morgenpost.de/berlin/article412243870/goerlitzer-bruecken-senat-und-bahn-planen-erhalt-doch-erst-folgt-die-sperrung.html
+#: by: https://www.morgenpost.de/berlin/article412316217/so-soll-die-rettung-der-goerlitzer-bahnbruecken-doch-noch-gelingen.html
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8340 (Antrag)
+#: by: https://www.rbb24.de/panorama/beitrag/2026/06/goerlitzer-bruecken-gesperrt-streit-sanierung-deutschebahn-bezirk.html (ab 1.7.2026)
+#: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-werden-gesperrt-warum-die-loesung-weiter-offen-ist/
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mplq2mrw2k2r
+#: by: https://viz.berlin.de/aktuelle-meldungen/gorlitzer-brucken-ab-01-juli-gesperrt/
+#: by: https://www.morgenpost.de/berlin/article412437202/goerlitzer-bruecken-ab-1-juli-gesperrt-so-soll-jetzt-die-rettung-gelingen.html
+#: osm_watch: note 5278957 5
+#: osm_watch: way id="24042478" version="19"
+#: alias: Görlitzer Bahnbrücken
+#: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
+#: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke feste Zäune aufgebaut.
+#: last_checked: 2026-07-10
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-07-01
+Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
+# REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13146,9903 13141,9911
+# REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13970,9349 13940,9376
+# 
 #: next_check_id: MUEHLENDAMMBRUECKE-2024
 #: by: https://www.deutsches-architekturforum.de/thread/14486-neubau-m%C3%BChlendammbr%C3%BCcke-in-bau/?postID=773634#post773634
 #: osm_watch: note 4545425 9
@@ -4311,7 +4353,7 @@ Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3445,1150
 #: by: https://www.entwicklungsstadt.de/bka-standort-puschkinallee-sicherheitscampus-in-treptow-nimmt-form-an/
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
-#: last_checked: 2026-07-06
+#: last_checked: 2026-07-10
 #: check_frequency: 60d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4400,7 +4442,7 @@ Petunienweg: Einbahnstraße	1s:q3:inwork 16635,2796 16541,2866
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7894 (zum geplanten Skaterpark)
 #: by: https://www.tagesspiegel.de/berlin/jugendliche-haben-die-ideen-geliefert-neuer-skatepark-in-berlins-sudosten-geplant-15312633.html (Projektstart 2028)
 #: priority: #C vvv
-#: last_checked: 2026-05-01 vvv
+#: last_checked: 2026-07-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-04-30 (nd) vvv
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
@@ -4522,14 +4564,13 @@ Delbrückstr.: Baustellenfläche, Sperrung	2::inwork 17085,10855 17123,10844 17141
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-10-29
 #: next_check: 2026-07-10 (Umstellung von Einbahnstraßenregelung auf Sperrung) vvv
-#: valid: -20260710
-Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
+# REMOVED --- #: valid: -20260709 --- Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
 #: valid: 20260710-20260824
 Am Wiesenrain: Sperrung der Fahrbahn	2s:q4:inwork 23931,5992 24122,6007
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX evtl. muss mudways hier nach den Bauarbeiten neu evaluiert werden?
-#: last_checked: 2026-03-11 vvv
+#: last_checked: 2026-07-09 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="37452317" version="6"
@@ -4622,7 +4663,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-07-09
+#: last_checked: 2026-07-10
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
@@ -4846,7 +4887,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-06-27
+#: last_checked: 2026-07-10
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4854,7 +4895,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-06-27 vvv
+#: last_checked: 2026-07-10 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677

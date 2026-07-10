@@ -11,8 +11,9 @@
 #: source_id: bvg2024:194#HIM_FREETEXT_348289
 #: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, (bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
-#: next_check: 2026-07-07
-# REMOVED --- #: next_check: 2026-12-16 (VIZ-Verkehrsmeldung)
+#: note: Länge der Gegenverkehrsregelung: 150m
+#: last_checked: 2026-07-10
+#: next_check: 2026-12-16 (VIZ-Verkehrsmeldung)
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 # 
@@ -220,7 +221,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
-#: last_checked: 2026-06-27 (traffic)
+#: last_checked: 2026-07-10 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20251231

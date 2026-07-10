@@ -86,7 +86,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="32"
 #: osm_watch: way id="1072662717" version="36"
-#: last_checked: 2026-07-07
+#: last_checked: 2026-07-10
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -278,7 +278,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2026-05-20 vvv
+#: last_checked: 2026-07-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -408,11 +408,11 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: note: etwa 20-30m Umweg
-#: last_checked: 2026-06-16
+#: last_checked: 2026-07-01 (mapillary)
 Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-07-09
+#: last_checked: 2026-07-10
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -484,19 +484,19 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 # REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11054,11992 11111,12027
 # REMOVED (Sperrung wurde aufgehoben) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-22 --- Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesperrt	q4::inwork 9456,11513 9331,11497
 # 
-#: next_check_id: ROTESRATHAUS-2023
-#: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-#: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
-#: last_checked: 2026-07-09 vvv
-#: next_check: 2026-07-10 vvv
-#: valid: -20260710 vvv
-#: note: eigentlich für Fußgänger verboten
-(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
-#: note: eigentlich nur in Richtung W-O befahrbar, deshalb q4
-(Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: ROTESRATHAUS-2023
+# REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+# REMOVED --- #: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
+# REMOVED --- #: last_checked: 2026-07-09 vvv
+# REMOVED --- #: next_check: 2026-07-10 vvv
+# REMOVED --- #: valid: -20260710 vvv
+# REMOVED --- #: note: eigentlich für Fußgänger verboten
+# REMOVED --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q2; 10542,12587 10615,12642 10681,12616 10723,12613
+# REMOVED --- #: note: eigentlich nur in Richtung W-O befahrbar, deshalb q4
+# REMOVED --- (Umleitungsstrecke Rotes Rathaus): kurvig, einige Fußgänger	q4; 10723,12613 10681,12616 10615,12642 10542,12587
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED (hier keine Bauarbeiten mehr) --- #: next_check_id: PLDVEREINTENNATIONEN-2023 --- #: last_checked: 2023-08-09 --- #: check_frequency: 30d --- #: next_check: 2023-08-11 --- #: valid: -20230811 --- Platz der Vereinten Nationen: Anbindung Mollstr. gesperrt, Bordsteine, Engstellen	q4::inwork 11896,13075 11904,13052
 # REMOVED (mittlerweile wieder Führung via Fahrbahn trotz nicht ganz abgeschlossener Baustelle) --- #: source_id: viz2021:13.414995,52.527328,22.05.2023,06:00 (bis 09.06.2023) --- #: by: https://nitter.cz/VIZ_Berlin/status/1660510235155484672#m --- #: by: https://nitter.cz/pic/orig/enc/bWVkaWEvRndldEE0b1dBQVU0VmE2LmpwZw== --- #: next_check: 2023-06-09 --- #: valid: -20230609 --- Mollstr.: Fahrbahnsanierungsarbeiten, Radfahrer werden über den Gehweg geführt	q1-::inwork; 11160,13492 11216,13451 11270,13412 11276,13408
@@ -890,7 +890,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: also_indoor: traffic (G,no-T)
 #: source_id: LMS-BR:392304/72 viz2021:13.60111,52.45156, (Bauarbeiten im angrenzenden Fürstenwalder Damm, bis 30.04.2026) (bis 08.05.2026) (bis 07.07.2026) (vorfristig inaktiv)
-#: last_checked: 2026-07-09 (traffic)
+#: last_checked: 2026-07-10 (traffic)
 # REMOVED --- #: check_frequency: 21d
 #: check_frequency: 2d
 # REMOVED --- #: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
@@ -916,11 +916,12 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id: bvg2024:m27#HIM_FREETEXT_348335
 #: osm_watch: way id="1392961223" version="5"
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],re-W,re-H)
-#: last_checked: 2026-07-09 (traffic)
+#: last_checked: 2026-07-09 (mapillary)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung)
-Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021 6818,14102 6992,14251
+Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951
+# REMOVED (hier nicht mehr) --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6646,13951 6730,14021 6818,14102 6992,14251
 # REMOVED (Fahrbahn hier frei in beide Richtungen) --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6992,14251 7123,14367
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11522-am-hauptbahnhof-europacity/?postID=760150#post760150
@@ -1231,7 +1232,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-07-01
+#: last_checked: 2026-07-10
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1663,7 +1664,7 @@ Treptower Park: einige Fußgänger	q1+ 15297,8921 15213,8977 15190,9027 15154,9106
 Treptower Park: einige Fußgänger	q1+ 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
 Görlitzer Park: Fußgänger	q2 12671,10042 12681,10047 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
-Görlitzer Park: Fußgänger	q2 13141,9911 13132,9916 12983,10000 12866,10064 12802,10097
+Görlitzer Park: Fußgänger	q2 13141,9911 13132,9916 13107,9930 12983,10000 12866,10064 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12502,10244 12457,10309 12384,10368 12331,10409 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12866,10064 12901,10134 12905,10143
 Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12795,10147 12774,10178 12757,10197 12728,10196 12693,10183 12670,10160
@@ -1672,7 +1673,9 @@ Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12509,10189 12543,10223
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12504,10172 12464,10153
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12608,10294
-Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 12983,10000 12960,9955 12932,9900
+Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 13007,10038 12983,10000 12960,9955 12932,9900
+(Görlitzer Park, zwischen Cuvrystr. und Ratiborstr.): Fußgänger, Kurven	q2- 13013,10068 12962,10072 13007,10038
+(Görlitzer Park, zwischen Cuvrystr. und Bahnbrücke): Fußgänger, schmal	q2- 13007,10038 13071,9983 13107,9930
 Görlitzer Park: Fußgänger	q2 12509,10189 12502,10244
 Gartenufer: einige Fußgänger	q1 5790,11643 5845,11615 6067,11479 6200,11417 6277,11397 6337,11365 6346,11326
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,11768 5736,11835 5543,11837 5478,11860
