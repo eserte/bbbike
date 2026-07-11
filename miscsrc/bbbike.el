@@ -366,6 +366,12 @@
 
   (autoload 'org-read-date "org" "Read an Org date." t)
 
+  ; disable undo for read-only or temporary bbd files
+  (when (or buffer-read-only
+	    (and buffer-file-name
+		 (string-match-p "/bbbike/tmp/[^/]+\\.bbd\\'" buffer-file-name)))
+    (buffer-disable-undo))
+
   (run-hooks 'bbbike-mode-hook)
   )
 
