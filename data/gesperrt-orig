@@ -2052,10 +2052,10 @@ Bernau, Bahnhofstr.	1 22892,30426 22850,30562
 # REMOVED (auf Mapillary-Bildern nicht erkennbar) --- Elisenau - Börnicke: Privatgelände?	2 24311,26512 24412,26796
 # REMOVED --- Weg nach Altlandsberg: Privatstraße, gesperrt	2 28159,19037 28227,18962 28547,18590 28627,18536 28697,18498
 Bernhard-Kellermann-Str. (Werder)	1 -21112,-3787 -21179,-3628 -21266,-3604
-Vorfahrt Flughafen Schönefeld	1 18419,-1418 18429,-1443 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18293,-1472
+Vorfahrt Flughafen Schönefeld	1 18416,-1411 18429,-1443 18480,-1577 18532,-1717 18401,-1767 18350,-1629 18290,-1463
 Parkplatz Flughafen Schönefeld	1 18480,-1577 18350,-1629
-Mittelstr. B179	1 18398,-1305 18390,-1338 18419,-1418
-Mittelstr. B179	1 18293,-1472 18279,-1438 18398,-1305
+Mittelstr. B179	1 18402,-1288 18390,-1338 18416,-1411
+Mittelstr. B179	1 18290,-1463 18280,-1401 18402,-1288
 Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q3 52442,94134 52419,94029 52355,93894
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
@@ -2083,7 +2083,7 @@ Zufahrt Bahnhof	1 68021,74671 68052,74741 68140,74703 68110,74631
 Brüderstr.	1 68884,73376 68810,73316
 #: note eigentlich verlaufen hier ausgeschilderte Radrouten?!
 Dorfstr. (Pieskow)	1s:q3 56031,-14776 55983,-14721
-B96a: Mittelstreifen	3nocross 18419,-1418 18666,-1325 18777,-1298 18892,-1273
+B96a: Mittelstreifen	3nocross 18416,-1411 18639,-1325 18777,-1298 18892,-1273
 # REMOVED (-> strassen_bab) --- B96a: Kraftfahrzeugstraße	2 16365,-3036 16209,-3558 15991,-3877 15751,-4002 14993,-4196
 # REMOVED (-> strassen_bab) --- B96a: Kraftfahrzeugstraße	2 13513,-4708 13237,-4511 12807,-4353 12124,-4288
 # REMOVED (-> strassen_bab) --- B96: Kraftfahrzeugstraße	2 11701,-3360 12124,-4288 12321,-4750 12654,-5498
@@ -4759,7 +4759,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-07-07 vvv
+#: last_checked: 2026-07-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
@@ -4850,7 +4850,7 @@ An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,
 #: last_checked: 2026-06-17 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
-#: osm_watch: way id="1069273104" version="6"
+#: osm_watch: way id="1069273104" version="7"
 Helmut-Rupprecht-Str.: noch gesperrt	2::inwork 22470,3109 22476,3035 22485,2937
 #: osm_watch: way id="1069273103" version="19"
 #: osm_watch: node id="11816929582" version="3"
@@ -4974,7 +4974,7 @@ Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2026-04-14
+#: last_checked: 2026-07-11
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -5202,7 +5202,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-07-11 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027

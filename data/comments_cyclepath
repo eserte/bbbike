@@ -419,8 +419,8 @@ gemeinsamer Rad- und Gehweg, asphaltiert	RW2;RW9 60941,170792 61782,170086 62155
 gemeinsamer Rad- und Gehweg; zunächst Verbundsteinpflaster, dann asphaltiert	RW;RW8 56606,174200 56991,174001 57351,173906 57489,173876 57621,173775
 Verbundsteinpflasterradweg auf der südlichen Seite, streng benutzungspflichtig	RW;RW 62473,169641 63722,168821
 Betonsteinpflaster, bis 2,5m breit	RW8;RW 1763,120930 1435,120973 1303,121143 842,121718 206,122655 -121,122847
-	RW2; 18419,-1418 18390,-1338 18398,-1305 18454,-1241 18513,-1212 18561,-1183 18578,-1130 18539,-1021 18423,-843 18170,-449 18163,-438 18122,-375 18121,-374
-	RW2; 18121,-374 18122,-375 18163,-438 18170,-449 18423,-843 18539,-1021 18578,-1130 18561,-1183 18515,-1203 18454,-1241 18398,-1305 18279,-1438 18293,-1472
+	RW2; 18416,-1411 18390,-1338 18402,-1288 18454,-1241 18513,-1212 18561,-1183 18578,-1130 18539,-1021 18423,-843 18170,-449 18163,-438 18122,-375 18121,-374
+	RW2; 18121,-374 18122,-375 18163,-438 18170,-449 18423,-843 18539,-1021 18578,-1130 18561,-1183 18515,-1203 18454,-1241 18402,-1288 18280,-1401 18290,-1463
 Verbundsteinpflaster	RW1; 27599,-17988 27416,-17969 27304,-17961 26999,-17905 26989,-17904 26716,-17857 26703,-17858 26623,-17859 26533,-17858 26431,-17830
 Gehweg für Radfahrer frei, asphaltiert	RW1;RW9 27599,-17988 28011,-18007 28046,-18007 28101,-18011 28415,-18028 28642,-17918
 Radweg auf Gehweg	RW; 15125,-3205 14977,-3505 14878,-3602
@@ -714,9 +714,9 @@ Asphalt, gemeinsamer Geh- und Radweg	RW2;RW9 20711,-3869 20659,-3787 20630,-3690
 schlechte Gehwegplatten, teilweise sogar unbefestigt	RW2; 19618,-1021 19529,-1061 19414,-1098 18892,-1273
 schlechte Gehwegplatten, gemeinsamer Geh- und Radweg	RW2; 18892,-1273 19414,-1098 19529,-1061
 Asphalt, gemeinsamer Geh- und Radweg	RW2; 19529,-1061 19618,-1021
-Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18892,-1273 18777,-1298 18666,-1325
-Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18666,-1325 18419,-1418
-mäßiger Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18419,-1418 18293,-1472
+Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18892,-1273 18777,-1298 18639,-1325
+Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18639,-1325 18416,-1411
+mäßiger Asphalt, gemeinsamer Geh- und Radweg	RW2;RW8 18416,-1411 18290,-1463
 	RW6;RW6 -13338,188 -13321,264 -13356,274 -13311,462
 	RW6;RW6 70199,73577 70030,73628 70022,73654 69979,73651 69900,73679
 	RW6;RW6 70022,73654 70249,73687 70661,73830
@@ -817,18 +817,20 @@ Asphalt, gemeinsamer Rad- und Gehweg	RW8;RW2 17364,-2110 17255,-2197 17181,-2257
 Asphalt, gemeinsamer Rad- und Gehweg	RW8;RW2 16365,-3036 16287,-3031 15759,-3594 15661,-3730
 Asphalt, gemeinsamer Rad- und Gehweg	RW8;RW2 14993,-4196 14767,-4273 14626,-4349 14246,-4718 14166,-4781 13964,-4844 13821,-4837 13677,-4801 13513,-4708
 Asphalt, gemeinsamer Rad- und Gehweg, breit	RW2;RW8 14993,-4196 15053,-4328 15297,-4462 15493,-4693
-Asphalt, gemeinsamer Rad- und Gehweg, ca. 3m breit	RW8;RW2 15342,-5771 15078,-5983 14990,-5999 14775,-5925 14274,-6153 13781,-6410 13562,-6525 13313,-6638 13277,-6655
+Asphalt, gemeinsamer Rad- und Gehweg, ca. 3m breit	RW8;RW2 15342,-5771 15082,-5997 14988,-6009 14775,-5925
+Asphalt, Wurzelschäden, gemeinsamer Rad- und Gehweg, ca. 3m breit	RW8;RW2 14775,-5925 14274,-6153
+Asphalt, gemeinsamer Rad- und Gehweg, ca. 3m breit	RW8;RW2 14274,-6153 13781,-6410 13562,-6525 13313,-6638 13277,-6655
 	RW2;RW8 13277,-6655 12877,-6903
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 20383,-3858 20345,-3842 20249,-3848
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW9 20249,-3848 20037,-3899 19676,-4036
-Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19676,-4036 19651,-4039 19611,-4030 19579,-4027 19464,-4107 19268,-4192 19036,-4282 18517,-4502
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19676,-4036 19656,-4037 19611,-4030 19579,-4027 19464,-4107 19268,-4192 19036,-4282 18517,-4502
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18386,-4109 18423,-4094
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18423,-4094 18861,-3921
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18386,-4109 18348,-4107 18267,-4039 18143,-4094 18060,-4131 17992,-4162
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18517,-4502 18492,-4417
 Verbundsteinpflaster, ein "Geh/Radweg Ende"-Schild	RW0; 19904,-3581 19586,-3716
-Verbundsteinpflaster, Gehweg für Radfahrer frei	RW9;RW1 19904,-3581 20239,-3424 20285,-3346 20285,-3268 20071,-2917
+Verbundsteinpflaster, Gehweg für Radfahrer frei	RW9;RW1 19904,-3581 20239,-3424 20285,-3346 20285,-3268 20084,-2932
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW1;RW9 19904,-3581 20037,-3899
 Am Babelsberger Park	RW7;RW7 -11090,-1506 -11084,-1396 -11407,-1086 -11454,-1036 -11486,-1008 -11518,-1023 -11597,-989 -11657,-1018
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 23162,16095 23175,16119 23193,16159

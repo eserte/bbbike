@@ -2419,12 +2419,12 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
 #: next_check: 2026-12-18 (Termine 2027?)
 	2::temp 8554,12593 8540,12420
 ',
-         'from' => 1783202400,
+         'from' => 1788645600,
          'id' => 2021,
          'recurring' => 1,
-         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 6.7.2026 bis 10.7.2026',
+         'text' => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt, nächster Zeitraum 7.9.2026 bis 11.9.2026',
          'type' => 'gesperrt',
-         'until' => 1783720799
+         'until' => 1789163999
        },
        undef,
        undef,
@@ -4811,8 +4811,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="362719487" version="22"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2026-05-21
-#: check_frequency: 180d
+#: last_checked: 2026-07-10 (daf)
+#: check_frequency: 120d
 #: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
 ',
@@ -8724,7 +8724,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-10 vvv
+#: last_checked: 2026-07-11 vvv
 #: check_frequency: 21d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -8898,7 +8898,7 @@ Kaiserdamm -> Fritschestr.: Richtung Osten/Norden	3 3159,11562 3320,11583 3287,1
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
 #: also_indoor: traffic (no-G,ex-T,H,no-W) vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-07-11 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2026-07-31 (BA-Seite) vvv
 Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q4::inwork; 18374,2971 18445,2642
@@ -9327,7 +9327,7 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: osm_watch: note 5142999 2
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
 #: note: Ausschilderung am westlichen Ende: Verbot für Fahrzeuge aller Art, Anwohner frei
-#: last_checked: 2026-07-02 (traffic)
+#: last_checked: 2026-07-11
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 ',
@@ -9800,17 +9800,17 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
        },
        {
          'data' => '#: next_check_id: BER-2026
-# REMOVED --- #: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407 --- #: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun? --- #: next_check: 2026-05-01 ---	2::inwork 13727,-6505 14232,-6903 14289,-7003 14644,-7186 16251,-6520
+# REMOVED --- #: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407 --- #: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun? --- #: next_check: 2026-05-01 ---	2::inwork 13731,-6494 13735,-6535 14228,-6887 14289,-7003 14644,-7186 16251,-6520
 #: add_fragezeichen: Ist der Weg entlang des BER weiterhin gesperrt?
-#: osm_watch: way id="27043028" version="17"
-#: osm_watch: way id="158214949" version="19"
-#: last_checked: 2026-06-10
-#: check_frequency: 21d
-	2::inwork 19651,-4039 19570,-4313 19529,-4494 19582,-4524 19813,-5070 19673,-5149 19638,-5134 18693,-5516 18365,-5657 16859,-6263 16251,-6520
+#: osm_watch: way id="27043028" version="18"
+#: osm_watch: way id="158214949" version="20"
+#: last_checked: 2026-07-11
+#: check_frequency: 14d
+	2::inwork 19656,-4037 19664,-4063 19633,-4099 19591,-4242 19570,-4313 19529,-4494 19582,-4503 19813,-5070 19814,-5106 19675,-5161 19555,-5166 18693,-5516 18365,-5657 16859,-6263 16251,-6520
 ',
          'from' => undef,
          'id' => 4578,
-         'text' => 'entlang des BER: Straßenbau, Weg gesperrt, Ende der Bauarbeiten unbekannt (Stand 10. Juni 2026: weiterhin Bauarbeiten mit Sperrung)',
+         'text' => 'entlang des BER: Straßenbau, Weg offiziell gesperrt, Ende der Sperrung unbekannt (Stand 11. Juli 2026: offiziell gesperrt, Durchfahrt aber möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
