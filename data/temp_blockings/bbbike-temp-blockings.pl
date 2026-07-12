@@ -24591,12 +24591,13 @@ EOF
 	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2025-08-14 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
-       until => $isodate2epoch->("2025-08-17 23:59:59"),
+     { from  => $isodate2epoch->("2026-08-20 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
+       until => $isodate2epoch->("2026-08-23 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 8, start => "2020-10-25T00:00:00"]],
 #      text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 16.8.2024 bis 18.8.2024 möglich',
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 15.8.2025 bis 17.8.2025 möglich',
+#      text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 15.8.2025 bis 17.8.2025 möglich',
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 21.8.2026 bis 23.8.2026 möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.winzerfest-köpenick.de/
@@ -24727,7 +24728,7 @@ EOF
      { from  => $isodate2epoch->("2025-08-18 00:00:00"), # $isodate2epoch->("2023-08-16 14:00:00"), # 1534967761, # 1409202000, # 2014-08-28 07:00
        until => $isodate2epoch->("2025-08-25 12:00:00"), # $isodate2epoch->("2023-08-21 12:00:00"), # $isodate2epoch->("2018-08-27 12:00:00"), # 1409569200, # 2014-09-01 13:00
        periodic => 1,
-       recurrences => [['yearly', days => 17, months => 8]],
+       recurrences => [['yearly', days => 20, months => 6, start => "2026-06-22T00:00:00"]], # ab 2026 im Juni, davor Ende August
        text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 18. August 2025 06 Uhr bis 25. August 2025 12 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -42201,7 +42202,7 @@ EOF
      { from  => $isodate2epoch->("2025-08-21 00:00:00"), # 1692241200, # 2023-08-17 05:00
        until => $isodate2epoch->("2025-08-24 23:00:00"), # 1692561600, # 2023-08-20 22:00
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 8]],
+       recurrences => [['yearly', days => 20, months => 6, start => "2026-06-22T00:00:00"]], # ab 2026 im Juni, davor Ende August
 #      text  => 'Glinkastr.: Veranstaltung, zwischen Jägerstr. und Taubenstr. gesperrt, vom 18.08.2023 05:00 bis 20.08.2023 22:00',
        text  => 'Glinkastr.: Veranstaltung, Fahrbahn zwischen Jägerstr. und Taubenstr. gesperrt, vom 22.08.2025 05:00 bis 24.08.2025 22:00',
        type  => 'gesperrt',
@@ -49276,9 +49277,9 @@ EOF
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="5"
-#: last_checked: 2026-05-14 (mapillary)
-#: check_frequency: 60d
-# REMOVED --- #: check_frequency: 21d (traffic)
+#: last_checked: 2026-07-12 (traffic)
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
 EOF
      },
@@ -49792,8 +49793,10 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
+#: last_checked: 2026-07-12
 #: next_check: 2026-08-14 (VIZ-Verkehrsmeldung)
-	q4::inwork; 16276,12273 16397,12397 16485,12384
+	q4::inwork; 16276,12273 16397,12397
+# REMOVED (hier nicht) ---	q4::inwork; 16397,12397 16485,12384
 EOF
      },
      { from  => undef, #
@@ -50613,7 +50616,7 @@ EOF
      { from  => 1755727200, # 2025-08-21 00:00
        until => 1756072800, # 2025-08-25 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 8]],
+       recurrences => [['yearly', days => 20, months => 6, start => "2026-06-22T00:00:00"]], # ab 2026 im Juni, davor Ende August
        text  => 'Anton-Wilhelm-Amo-Str. - Wilhelmstr.: Veranstaltung, Fahrbahn gesperrt, voraussichtlich bis zum 24.08.2025 abends',
        type  => 'gesperrt',
        data  => <<'EOF',
@@ -52995,18 +52998,19 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Sabinensteig, Oberseestr.: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+       text  => 'Sabinensteig, Oberseestr., Käthestr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (ex-G,ex-T,ex-H,no-W)
 #: note: Laut Baustellenschild der Wasserbetriebe bis August 2026
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-21 vvv
+#: last_checked: 2026-07-12 vvv
 #: check_frequency: 21d (traffic) vvv
-#: next_check: 2026-08-31 vvv
+#: next_check: 2026-08-31 (Baustellenschild der Wasserbetriebe) vvv
 Sabinensteig: Einbahnstraßenregelung	q4::inwork; 16395,16099 16442,15926
 Oberseestr.: Einbahnstraßenregelung	q4::inwork; 16442,15926 16491,15874 16537,15827
 Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
+Käthestr.: Abschnitt der Straße gesperrt	q4::inwork 16369,16003 16349,15935 16351,15914
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -53829,8 +53833,8 @@ EOF
        data  => <<'EOF',
 #: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
-#: also_indoor: traffic (no-G,T,no-H,no-W)
-#: last_checked: 2026-07-07 (traffic) vvv
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: last_checked: 2026-07-12 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
@@ -54155,7 +54159,7 @@ EOF
 #: by: https://www.berliner-zeitung.de/article/berlin-frankfurter-allee-gesperrt-stau-verkehr-friedrichshain-mitte-10172820
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 #: priority: #A
-#: last_checked: 2026-07-09 vvv
+#: last_checked: 2026-07-12 vvv
 #: check_frequency: 8d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207

@@ -3556,7 +3556,42 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.winzerfest-köpenick.de/
+#: by: https://www.laubinger.de/event/koepenickerwinzersommer/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1585924.php
+# REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
+# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22111,4562 22093,4499
+# REMOVED (hier wohl nicht) ---	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
+# REMOVED (hier wohl nicht) ---	2::temp 22212,4655 22214,4548
+# REMOVED (hier wohl nicht) ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
+# REMOVED (hier wohl nicht) ---	2::temp 22314,4604 22355,4660 22363,4678 22395,4678
+# REMOVED (hier wohl nicht) ---	2::temp 22175,4730 22246,4711
+# REMOVED (hier wohl nicht) ---	2::temp 22074,4664 22138,4642
+# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
+Luisenhain	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
+Schlossinsel	2::temp 22093,4499 22087,4470 22084,4455 22076,4422
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1787227200,
+         'id' => 2610,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              8,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 21.8.2026 bis 23.8.2026 möglich',
+         'type' => 'gesperrt',
+         'until' => 1787522399
+       },
        undef,
        undef,
        undef,
@@ -8282,9 +8317,9 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 #: XXX: Mittlerweile beginnen die Bauarbeiten ab Höhe DHL-Zustellbasis (inkl. Sperrung der Gehwege)
 #: also_indoor: traffic (G,no-T)
 #: osm_watch: way id="1376570531" version="5"
-#: last_checked: 2026-05-14 (mapillary)
-#: check_frequency: 60d
-# REMOVED --- #: check_frequency: 21d (traffic)
+#: last_checked: 2026-07-12 (traffic)
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 21d (traffic)
 	2::inwork 8347,3886 8404,3648 8461,3410
 ',
          'from' => undef,
@@ -8432,8 +8467,10 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
+#: last_checked: 2026-07-12
 #: next_check: 2026-08-14 (VIZ-Verkehrsmeldung)
-	q4::inwork; 16276,12273 16397,12397 16485,12384
+	q4::inwork; 16276,12273 16397,12397
+# REMOVED (hier nicht) ---	q4::inwork; 16397,12397 16485,12384
 ',
          'from' => 1772924400,
          'id' => 4368,
@@ -9769,12 +9806,13 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'data' => '#: also_indoor: traffic (ex-G,ex-T,ex-H,no-W)
 #: note: Laut Baustellenschild der Wasserbetriebe bis August 2026
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-21 vvv
+#: last_checked: 2026-07-12 vvv
 #: check_frequency: 21d (traffic) vvv
-#: next_check: 2026-08-31 vvv
+#: next_check: 2026-08-31 (Baustellenschild der Wasserbetriebe) vvv
 Sabinensteig: Einbahnstraßenregelung	q4::inwork; 16395,16099 16442,15926
 Oberseestr.: Einbahnstraßenregelung	q4::inwork; 16442,15926 16491,15874 16537,15827
 Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
+Käthestr.: Abschnitt der Straße gesperrt	q4::inwork 16369,16003 16349,15935 16351,15914
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -9783,7 +9821,7 @@ Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
 ',
          'from' => undef,
          'id' => 4576,
-         'text' => 'Sabinensteig, Oberseestr.: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+         'text' => 'Sabinensteig, Oberseestr., Käthestr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -10359,8 +10397,8 @@ Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
-#: also_indoor: traffic (no-G,T,no-H,no-W)
-#: last_checked: 2026-07-07 (traffic) vvv
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: last_checked: 2026-07-12 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
@@ -10646,7 +10684,7 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
 #: by: https://www.berliner-zeitung.de/article/berlin-frankfurter-allee-gesperrt-stau-verkehr-friedrichshain-mitte-10172820
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 #: priority: #A
-#: last_checked: 2026-07-09 vvv
+#: last_checked: 2026-07-12 vvv
 #: check_frequency: 8d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207

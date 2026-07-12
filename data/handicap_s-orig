@@ -30,7 +30,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: last_checked: 2026-07-04
+#: last_checked: 2026-07-12
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -890,9 +890,9 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: also_indoor: traffic (G,no-T)
 #: source_id: LMS-BR:392304/72 viz2021:13.60111,52.45156, (Bauarbeiten im angrenzenden Fürstenwalder Damm, bis 30.04.2026) (bis 08.05.2026) (bis 07.07.2026) (vorfristig inaktiv)
-#: last_checked: 2026-07-11 (traffic)
+#: last_checked: 2026-07-12 (traffic)
 # REMOVED --- #: check_frequency: 21d
-#: check_frequency: 2d
+#: check_frequency: 3d
 # REMOVED --- #: next_check: 2026-07-07 (VIZ-Verkehrsmeldung)
 Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 # 
@@ -914,7 +914,7 @@ Marienwerderweg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 24366,5504 24320,5621
 #: source_id[inactive]: bvg2024:m27#HIM_FREETEXT_302033 (zwischenzeitlich mehrmals entfernt)
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: source_id: bvg2024:m27#HIM_FREETEXT_348335
-#: osm_watch: way id="1392961223" version="5"
+#: osm_watch: way id="1392961223" version="6"
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],re-W,re-H)
 #: last_checked: 2026-07-09 (mapillary)
 #: check_frequency: 45d
@@ -1185,10 +1185,10 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 ### Lichtenberg ###
 # 
 #: also_indoor: traffic (G,no-T,no-H,no-W)
-#: last_checked: 2026-07-01 (traffic)
+#: last_checked: 2026-07-12
 #: check_frequency: 14d (traffic)
-#: next_check: 2026-07-31 (Halteverbotsschilder)
-#: valid: -20260731
+#: next_check: 2026-07-30 (Halteverbotsschilder)
+#: valid: -20260730
 Rathausstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 15670,12022 15685,12154
 # 
 #: next_check_id: WEISSETAUBE-2025
@@ -4442,6 +4442,7 @@ Lubminer Weg: einige Fußgänger	q1 22319,12663 22391,12677
 (Fleischerstr. - Grünanlage): enger Weg, einige Fußgänger	q2 16433,1180 16450,1135 16457,1129
 Waldstr.: Fußgänger auf dem asphaltiertern Weg	q2 5384,13555 5390,13616 5417,13817 5443,14028
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615
+#: note: per Schild: Radfahren verboten, außer auf den dafür vorgesehenen Wegen (aber welche sind das?)
 (Gotlindestr. - Bornitzstr.): Spielplatz	q3 16432,12612 16433,12626 16421,12682 16428,12741
 (Bärbel-Bohley-Ring - Ramlerstr.): einige Fußgänger	q1 9744,15793 9644,15780
 #: XXX_prog: BS am Buckower Damm, kann mit ein paar Meter Umweg umfahren werden, ansonsten keine Einschränkung
@@ -5489,16 +5490,7 @@ Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116
 (Übergang Straßenbahnhaltestelle Alte Försterei)	q3 21365,5832 21364,5827
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	q3 21519,5767 21522,5771
 # 
-# 
-#: next_check_id: FRANKFURTERALLEE-2025
-#: source_id: viz2021:13.4633,52.51478,15.08.2025,07:00 (bis 05.12.2025) (bis 19.12.2025) (vorfristig inaktiv)
-#: source_id: LMS-BR:395528/72 viz2021:13.46475,52.51464,08.01.2026,00:00 (bis 15.03.2026) (bis 04.05.2026) (bis 15.05.2026) (bis 26.05.2026) (bis 10.06.2026) (bis 30.06.2026) (bis 03.07.2026) (bis 08.07.2026) (fälschlicherweise inaktiv)
-#: note: Länge der gesperrten Fahrbahn: ca. 65m
-#: last_checked: 2026-07-09
-#: check_frequency: 3d
-# REMOVED --- #: next_check: 2026-07-08 (VIZ-Verkehrsmeldung)
-Colbestr.: Anbindung Frankfurter Allee gesperrt	q3::inwork 14523,12183 14468,11992
-# XXX wiederherstellen: Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
+Colbestr.: eng durch Zweite-Reihe-Parker	q0- 14523,12183 14468,11992
 Colbestr.: eng	q0- 14468,11992 14416,11815
 # 
 #: note: Ausschilderung: Gehweg, Radfahrer frei
