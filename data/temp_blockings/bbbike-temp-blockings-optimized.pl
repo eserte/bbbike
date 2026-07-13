@@ -1541,7 +1541,19 @@ Londoner Str.: Richtung Müllerstr. gesperrt	q4::inwork; 5847,17018 5772,16919
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqisukt2rk2l (bis 24.7.2026)
+#: source_id: bvg2024:m29#HIM_FREETEXT_349587
+#: source_id: bvg2024:m29#HIM_FREETEXT_349580
+Reichenberger Str.: Bauarbeiten, Sperrung, vielleicht ist auch der Radverkehr betroffen	q4::inwork 12048,10097 12229,10014 12398,9938
+# REMOVED (alt) ---	1::inwork 12398,9938 12556,9862 12714,9792 12834,9738
+',
+         'from' => 1783893600,
+         'id' => 1563,
+         'text' => 'Reichenberger Str.: Bauarbeiten zwischen Lausitzer Str. und Forster Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 13.07.2026 bis 24.07.2026',
+         'type' => 'handicap',
+         'until' => 1784901600
+       },
        undef,
        undef,
        undef,
@@ -1722,9 +1734,11 @@ Kantstr.	q4::inwork 5613,10963 5652,11004
 #: source_id: adac:871932322 (bis 24.07.2025) (inaktiv)
 #: source_id: viz2021:13.39333,52.51323,12.07.2025,06:00 (bis 24.07.2025) (inaktiv)
 #: source_id: LMS-BR:415303/72 viz2021:13.39181,52.51359,09.07.2026,18:00 (bis 14.07.2026)
-# REMOVED (hier nicht) ---	q4::temp 9679,11834 9666,11935
-	q4::temp 9666,11935 9656,12031
-# REMOVED (hier nicht) ---	q4::temp 9656,12031 9645,12133
+#: XXX_prog: eigentlich q4+::temp
+Markgrafenstr. südlich Taubenstr.: Absperrungen, aber Fahrbahn noch offen	q4::temp 9679,11834 9666,11935
+Markgrafenstr. im mittleren Abschnitt: vollständig gesperrt	q4::temp 9666,11935 9656,12031
+#: XXX_prog: eigentlich q4+::temp
+Markgrafenstr. nördlich Jägerstr.: Absperrungen, aber Fahrbahn noch offen	q4::temp 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
 ',
@@ -1744,7 +1758,7 @@ Kantstr.	q4::inwork 5613,10963 5652,11004
                               '2024-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Markgrafenstr. zwischen Taubenstr. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (9.7.2026 - 14.7.2026; Sperrungen fangen schon früher an und dauern länger)',
+         'text' => 'Markgrafenstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (9.7.2026 - 14.7.2026; Sperrungen fangen schon früher an und dauern länger)',
          'type' => 'gesperrt',
          'until' => 1784318400
        },
@@ -3750,7 +3764,19 @@ Schlossinsel	2::temp 22093,4499 22087,4470 22084,4455 22076,4422
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: GUTSPARKNEUKLADOW-2026
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.312630.php (alte Sperrung von 2015)
+# REMOVED ---	2::inwork -6474,5144 -6366,5215
+# REMOVED ---	2::inwork -5924,5602 -5911,5619 -5853,5674 -5828,5739 -5737,5814 -5382,5948 -5315,5991 -5277,5993 -5254,6005 -4991,6109 -4950,6139 -4835,6220 -4792,6348 -4789,6422 -4774,6514
+	2::inwork -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
+',
+         'from' => 1783893600,
+         'id' => 2704,
+         'text' => 'Gutspark Neukladow: Bauarbeiten, mögliche Sperrungen, bis Herbst 2026',
+         'type' => 'gesperrt',
+         'until' => 1794783599
+       },
        undef,
        undef,
        undef,
@@ -7143,7 +7169,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-07-10 vvv
+#: last_checked: 2026-07-13 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -8155,8 +8181,8 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 #: next_check: 2026-08-31
 Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
 # 
-#: also_indoor: traffic (no-G,T,no-H,W)
-#: last_checked: 2026-06-29 (traffic)
+#: also_indoor: traffic (no-G,T,no-H,ex-W)
+#: last_checked: 2026-07-13 (traffic)
 #: check_frequency: 14d (traffic)
 Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
 # 
@@ -8761,8 +8787,8 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-11 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2026-07-13 vvv
+#: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
 # REMOVED (mittlerweile hier offen) --- Rotherstr.	q4::inwork; 13755,10896 13856,10864
@@ -8967,7 +8993,7 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-07-04
+#: last_checked: 2026-07-13
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9044,25 +9070,7 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: UFER-2025
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260602
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnea7i4kvs2m
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigy6bkos6daciuqatuswxn2busih7f6gscw3bl2ctytlfwvn4yiyi
-#: source_id: LMS-BR:410596/72 viz2021:13.37213,52.54874,03.06.2026,06:00 (bis 13.07.2026)
-#: last_checked: 2026-07-08
-# REMOVED ---#: check_frequency: 21d
-#: next_check: 2026-07-13 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2026-09-30 (infravelo)
-	q4::inwork 8245,16064 8194,15960 8140,15859
-# REMOVED (hier fertig) ---	q4::inwork 8446,16386 8346,16283 8245,16064
-',
-         'from' => 1780351200,
-         'id' => 4482,
-         'text' => 'Uferstr.: mögliche Sperrung der Fahrbahn zwischen Martin-Opitz-Str. und Wiesenstr. wegen Markierungsarbeiten, bis 13. Juli 2026',
-         'type' => 'handicap',
-         'until' => 1783979999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9186,10 +9194,10 @@ Quartiersweg: komplett gesperrt	2::inwork 7548,7884 7537,7859
 #: by: https://www.entwicklungsstadt.de/finanzierung-gesichert-life-science-projekt-berlin-cgt-entsteht-nahe-hauptbahnhof/ ("Berlin CGT")
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/sellerstra%C3%9Fe-1-15-errichtung-und-b%C3%BCro-und-laborgeb%C3%A4udes.1506/#post-26917
 #: osm_watch: way id="1080985512" version="16"
-#: osm_watch: way id="1409889274" version="15"
+#: osm_watch: way id="1409889274" version="16"
 #: osm_watch: way id="1430307301" version="5"
 #: add_fragezeichen: Besteht die Sperrung noch immer? vvv
-#: last_checked: 2026-06-22 (osm) vvv
+#: last_checked: 2026-07-13 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-04-30 (deal magazin) vvv
 # REMOVED (mittlerweile wieder offen, wegen der Bauarbeiten an der Nordhafenbrücke) ---	2::inwork 7662,14579 7696,14577 7733,14570
@@ -9993,16 +10001,16 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (T,ex-G,re-H,no-W)
+         'data' => '#: also_indoor: traffic (T,ex-G,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-07 (traffic)
+#: last_checked: 2026-07-13 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
 ',
          'from' => undef,
          'id' => 4603,
-         'text' => 'Jägerstr.: Bauarbeiten, Sperrung, voraussichtlich bis Ende Juni 2026',
+         'text' => 'Jägerstr.: Bauarbeiten, Sperrung, voraussichtlich bis Ende Juni 2026, evtl. wird die Sperrung verlängert',
          'type' => 'handicap',
          'until' => undef
        },
@@ -10104,6 +10112,7 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 (Ehrlichstr., bis 04.08.2026)
 #: source_id: bvg2024:n40#HIM_FREETEXT_339081
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
+#: source_id: bvg2024:n40#HIM_FREETEXT_349187
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
 #: also_indoor: traffic (G,T,H,W)
@@ -10180,17 +10189,20 @@ Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 1744
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mn7cdyvouc2p
+#: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-6-mobilitaetsrat.pdf (hier: bis voraus. Sept. 2026)
 #: source_id: bvg2024:m44#HIM_FREETEXT_339877
 #: source_id: LMS-BR:410364/72 viz2021:13.43815,52.41747,01.06.2026,07:00 (bis 31.07.2026)
 #: traffic_note: Ausweichverkehr Richtung Norden über Heideläuferweg mit Stauungen vor der Ampel Buckower Damm
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung; evtl. wird verlängert)
 	q4::inwork; 12938,1348 12939,1469
 # REMOVED (hier nicht) ---	q4::inwork; 12939,1469 12940,1547
 ',
          'from' => 1780178400,
          'id' => 4617,
-         'text' => 'Buckower Damm: Bauarbeiten, zwischen Ringslebenstr. und Möllnerweg Richtung Norden gesperrt, ab 1.6.2026 bis Ende Juli 2026',
+         'text' => 'Buckower Damm: Bauarbeiten, zwischen Ringslebenstr. und Möllnerweg Richtung Norden gesperrt, ab 1.6.2026 bis voraussichtlich September 2026',
          'type' => 'handicap',
-         'until' => 1785535199
+         'until' => 1790805599
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
@@ -10380,20 +10392,7 @@ Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,
          'type' => 'handicap',
          'until' => 1787932800
        },
-       {
-         'data' => '#: next_check_id: RADICKE-2026
-#: by: https://www.aktives-adlershof.de/fileadmin/PDF/Bauma%C3%9Fnahmen/260610_Bauinfo_Radickestra%C3%9Fe_4.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1688283.php (bis 8.7.2026)
-#: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
-	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
-	q4::inwork 20835,3795 20845,3825
-',
-         'from' => 1781992800,
-         'id' => 4638,
-         'text' => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 13.7.2026',
-         'type' => 'handicap',
-         'until' => 1783958400
-       },
+       undef,
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
@@ -10711,26 +10710,56 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260710
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqix2ixdqs2l
+#: source_id: LMS-BR:415649/72 viz2021:13.41002,52.52861,13.07.2026,07:00 (bis 22.12.2028)
 #: XXX Sperrung anschauen!
+#: last_checked: 2026-07-13 vvv
+#: check_frequency: 21d (am Anfang höhere Frequenz) vvv
+#: next_check: 2028-12-31 (VIZ) vvv
 #: priority: #A
-#: next_check: 2026-07-13
-	q4::inwork; 10741,13685 10777,13614 10797,13575 10828,13464
+Rosa-Luxemburg-Str.: Fahrbahn Richtung Süden gesperrt	q4::inwork; 10741,13685 10777,13614 10797,13575 10828,13464
+Almstadtstr.: Anbindung an die Rosa-Luxemburg-Str. gesperrt, Umwege	q4::inwork 10767,13443 10797,13575
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1783807200,
          'id' => 4669,
-         'text' => 'Rosa-Luxemburg-Straße: Bauarbeiten zwischen Torstr. und Rosa-Luxemburg-Platz, Sperrung, vom 13.07.2026 bis voraussichtlich Ende 2028',
+         'text' => 'Rosa-Luxemburg-Str.: Bauarbeiten zwischen Torstr. und Rosa-Luxemburg-Platz, Sperrung, vom 13.07.2026 bis voraussichtlich Ende 2028',
          'type' => 'handicap',
-         'until' => 1861916399
+         'until' => 1861138799
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260710
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqiwyedzqs2l
+#: source_id: LMS-BR:415668/72 viz2021:13.51802,52.57482,13.07.2026,11:00 (bis 21.08.2026)
 	q4::inwork 18007,18938 17980,18947 17900,18972 17887,18975
 ',
          'from' => 1783807200,
          'id' => 4670,
-         'text' => 'Dorfstraße: Leitungsarbeiten zwischen Lindenberger Str. und Am Gutshof, Sperrung, vom 13.07.2026 bis Mitte August 2026',
+         'text' => 'Dorfstraße: Leitungsarbeiten zwischen Lindenberger Str. und Am Gutshof, Sperrung, vom 13.07.2026 bis 21.08.2026',
          'type' => 'handicap',
-         'until' => 1786831199
+         'until' => 1787349599
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1692778.php
+	q4::inwork 2697,25593 2895,25786 2933,25830
+',
+         'from' => 1785621600,
+         'id' => 4671,
+         'text' => 'Zeltinger Straße: Bauarbeiten zwischen Markgrafenstr. und Zerndorfer Weg, Sperrung, voraussichtlich vom 3.8.2026 bis 21.8.2026',
+         'type' => 'handicap',
+         'until' => 1787349600
+       },
+       {
+         'data' => '#: source_id: LMS-BR:415638/72 viz2021:13.28551,52.57471,13.07.2026,06:00 (bis 17.08.2026)
+	q4::inwork 2175,18740 2196,18642
+',
+         'from' => 1783828800,
+         'id' => 4672,
+         'text' => 'Sterkrader Str.: Bauarbeiten zwischen Billerbecker Weg und Bernauer Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 13.07.2026 06:00 bis 17.08.2026',
+         'type' => 'handicap',
+         'until' => 1787003940
        }
      
 );

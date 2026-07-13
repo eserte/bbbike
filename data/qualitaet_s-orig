@@ -12497,7 +12497,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-07-12
+#: last_checked: 2026-07-13
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -19278,6 +19278,7 @@ Ottokarstr.: Kopfsteinpflaster	Q2 8642,5422 8744,5483 8767,5571
 #: corrected_by: srt (genauer: unbefestigt; neuerdings asphaltiert)
 Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: corrected_by: srt (added "etwas sandig")
+#: next_check_id: GUTSPARKNEUKLADOW-2026
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1121547.php (Asphaltierung geplant)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1253548.php (fertig, Art der Wegbeschaffenheit unbekannt)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1410581.php (Arbeiten ab 2024)
@@ -19291,12 +19292,13 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neubau-des-berliner-havelradwegs-neuer-asphalt-am-fluss--baustart-noch-2026-15449624.html (Baustart Anfang Juni 2026, Fertigstellung Ende Oktober 2026, mögliche Sperrungen während der Bauarbeiten)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neue-radwege-neue-parkplatze-so-soll-die-fahrrad-infrastruktur-in-spandau-verbessert-werden-15558784.html
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1673321.php
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1692742.php (ab KW 29/2026 bis Herbst 2026)
+#: by: https://mein.berlin.de/projekte/gutspark-neukladow-touristische-gelandeerschliessu/
 #: XXX wird hier asphaltiert?
 #: osm_watch: way id="205746338" version="10"
 #: last_checked: 2026-06-25 (mapillary)
-#: check_frequency: 45d
-# REMOVED (nicht passiert) --- #: next_check: 2026-06-01 (Tsp: Baustart)
-# REMOVED --- #: next_check: 2026-12-31 (Tsp)
+# REMOVED --- #: check_frequency: 45d
+#: next_check: 2026-11-15 (BA-Pressemitteilung (Herbst 2026))
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt
 Ernst-Liesegang-Ufer: wassergebundene Decke	Q1 -5924,5602 -5911,5619 -5853,5674
@@ -34809,5 +34811,6 @@ Einmündungsbereich asphaltiert	Q0 9143,6415
 Einmündungsbereich asphaltiert	Q0 9141,6459
 Einmündungsbereich asphaltiert	Q0 9136,6552
 Kreuzungsbereich asphaltiert	Q0 -3660,15618
+Einmündungsbereich mit unebenem Kleinkopfsteinpflaster	Q2- 16360,15889
 #: ignore ^^^
 #: section ^^^
