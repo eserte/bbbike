@@ -10392,7 +10392,28 @@ Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,
          'type' => 'handicap',
          'until' => 1787932800
        },
-       undef,
+       {
+         'data' => '#: next_check_id: RADICKE-2026
+#: by: https://www.aktives-adlershof.de/fileadmin/PDF/Bauma%C3%9Fnahmen/260610_Bauinfo_Radickestra%C3%9Fe_4.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1688283.php (bis 8.7.2026)
+#: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
+#: by: https://www.aktives-adlershof.de/aktuelles?date=20260713 (Verzögerung bis 17.7.2026)
+#: next_check: 2026-07-17 (nächster BA) vvv
+	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
+	q4::inwork 20835,3795 20845,3825
+# XXX --- #: valid: -20260727
+# XXX --- Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
+# XXX --- #: valid: 20260727-20260814
+# XXX --- Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
+#: next_check ^^^
+',
+         'dont_check_date' => 1,
+         'from' => 1783893600,
+         'id' => 4638,
+         'text' => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 17.7.2026, weitere Bauarbeiten bis 14.08.2026',
+         'type' => 'handicap',
+         'until' => 1786723200
+       },
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)

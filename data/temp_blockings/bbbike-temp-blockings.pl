@@ -53828,17 +53828,26 @@ EOF
 	q4::inwork; 4513,10702 4685,10689
 EOF
      },
-     { from  => 1781992800, # 2026-06-21 00:00
-       until => $isodate2epoch->("2026-07-13 18:00:00"), # 1783375200, # 2026-07-07 00:00
-       text  => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 13.7.2026',
+     { from  => $isodate2epoch->("2026-07-13 00:00:00"), # 1781992800, # 2026-06-21 00:00
+       until => $isodate2epoch->("2026-08-14 18:00:00"), # 1783375200, # 2026-07-07 00:00
+       dont_check_date => 1,
+       text  => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 17.7.2026, weitere Bauarbeiten bis 14.08.2026',
+#      text  => 'Radickestr.: Bauarbeiten im Kreuzungsbereich Nipkowstr., mögliche Sperrung der Fahrbahn, geplant vom 13.7.2026 bis 27.07.2026, weitere Bauarbeiten bis 14.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: RADICKE-2026
 #: by: https://www.aktives-adlershof.de/fileadmin/PDF/Bauma%C3%9Fnahmen/260610_Bauinfo_Radickestra%C3%9Fe_4.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1688283.php (bis 8.7.2026)
 #: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
+#: by: https://www.aktives-adlershof.de/aktuelles?date=20260713 (Verzögerung bis 17.7.2026)
+#: next_check: 2026-07-17 (nächster BA) vvv
 	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
 	q4::inwork 20835,3795 20845,3825
+# XXX --- #: valid: -20260727
+# XXX --- Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
+# XXX --- #: valid: 20260727-20260814
+# XXX --- Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
+#: next_check ^^^
 EOF
      },
      { from  => undef, # 
