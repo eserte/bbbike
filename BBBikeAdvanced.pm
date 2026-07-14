@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1473,6 +1473,20 @@ sub _find_coords {
 	    if (@_coords) {
 		push @coords, @_coords;
 		return @coords; # shortcut search, lat,lon order may conflict with further regexps
+	    }
+	}
+
+	# Waze URL, e.g.
+	# https://www.waze.com/en/live-map/directions?to=ll.52.509395%2C13.389413
+	# https://www.waze.com/en/live-map/directions?latlng=52.50481994047181%2C13.430120944976808
+	while ($s =~ m{waze\.com/[^/]+/live-map/directions\?(?:to=ll\.|latlng=)([-+]?[0-9\.]+)(?:,|%2C)([-+]?[0-9\.]+)}g) {
+	    my @_coords;
+	    my($y,$x) = ($1,$2);
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @_coords, [$x,$y];
+	    if (@_coords) {
+		push @coords, @_coords;
+		return @coords; # shortcut search
 	    }
 	}
 
