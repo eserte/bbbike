@@ -154,26 +154,25 @@ my $vizhistory_cmd = "$^X -I$FindBin::RealBin/.. -I$FindBin::RealBin/../lib $Fin
     is($exit_code, 1, "Exit code is 1 when non-existent ID lookup is run with --all");
 }
 
-# Case: Verify stop_on_buggy_date behaviour (by default, stops on <= 20130122)
+# Case: Verify stop_on_buggy_date behaviour (by default, processed)
 {
     my $cmd = "$vizhistory_cmd --dir $archive_dir --no-pager --all buggy_id";
     my $output = `$cmd 2>&1`;
     my $exit_code = $? >> 8;
 
-    # Should exit with error and "never found" because 20130122 and older were not processed.
-    is($exit_code, 1, "Exit code is 1 because buggy dates <= 20130122 are stopped/skipped by default");
-    like($output, qr/Error: ID 'buggy_id' was never found/, "Output shows never found error");
+    is($exit_code, 0, "Exit code is 0 because buggy dates <= 20130122 are processed by default");
+    like($output, qr/File: 2013\/newvmz-20130122\.yaml/, "Output contains 20130122");
+    like($output, qr/File: 2013\/newvmz-20130121\.yaml/, "Output contains 20130121");
 }
 
-# Case: Verify override with --process-buggy (processes buggy dates <= 20130122)
+# Case: Verify override with --no-process-buggy (stops/skips on buggy dates <= 20130122)
 {
-    my $cmd = "$vizhistory_cmd --dir $archive_dir --no-pager --all --process-buggy buggy_id";
+    my $cmd = "$vizhistory_cmd --dir $archive_dir --no-pager --all --no-process-buggy buggy_id";
     my $output = `$cmd 2>&1`;
     my $exit_code = $? >> 8;
 
-    is($exit_code, 0, "Exit code is 0 with --process-buggy");
-    like($output, qr/File: 2013\/newvmz-20130122\.yaml/, "Output contains 20130122");
-    like($output, qr/File: 2013\/newvmz-20130121\.yaml/, "Output contains 20130121");
+    is($exit_code, 1, "Exit code is 1 with --no-process-buggy");
+    like($output, qr/Error: ID 'buggy_id' was never found/, "Output shows never found error with --no-process-buggy");
 }
 
 sub write_file_content {
