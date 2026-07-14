@@ -144,6 +144,9 @@ for my $f (@files) {
 	    if $f =~ m{/( bvg_disruptions_format.pl
 		       |  mapillary-v4-fetch                  
 		       )$}x && !eval { require Time::Moment; 1 };
+	myskip "$f works only with installed YAML::XS", 1
+	    if $f =~ m{/( vizhistory
+		       )$}x && !eval { require YAML::XS; 1 };
 
 	my @add_opts;
 	if ($f =~ m{\.pm$}) {

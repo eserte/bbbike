@@ -1,0 +1,283 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2026 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# WWW:  https://github.com/eserte/bbbike
+#
+
+use strict;
+use warnings;
+use FindBin;
+use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
+
+use Getopt::Long;
+use File::Temp;
+use BBBikeUtil qw(is_in_path);
+use BBBikeYAML;
+
+my $archive_dir = "$ENV{HOME}/src/bbbike-viz/archive";
+my $opt_all;
+my $opt_debug;
+my $use_pager = -t STDOUT && is_in_path('less');
+my $diff_context = 3;
+my $opt_help;
+
+GetOptions(
+    'dir=s'          => \$archive_dir,
+    'all'            => \$opt_all,
+    'debug'          => \$opt_debug,
+    'pager!'         => \$use_pager,
+    'diff-context=i' => \$diff_context,
+    'help|h|?'       => \$opt_help,
+) or die "usage: $0 [--dir <dir>] [--all] [--debug] [--no-pager] [--diff-context <num>] <id>\n";
+
+if ($opt_help) {
+    print_usage();
+    exit 0;
+}
+
+my $id = shift;
+if (!defined $id || $id eq "") {
+    die "usage: $0 [--dir <dir>] [--all] [--debug] [--no-pager] [--diff-context <num>] <id>\n";
+}
+
+if (!-d $archive_dir) {
+    die "Error: Archive directory '$archive_dir' does not exist\n";
+}
+
+my @files;
+if (opendir(my $dh, $archive_dir)) {
+    while (my $entry = readdir($dh)) {
+        next if $entry =~ /^\.\.?$/;
+        if ($entry =~ /^newvmz-(\d{8})\.yaml$/) {
+            push @files, {
+                path => "$archive_dir/$entry",
+                date => $1,
+                name => $entry,
+            };
+        } elsif ($entry =~ /^\d{4}$/ && -d "$archive_dir/$entry") {
+            if (opendir(my $subdh, "$archive_dir/$entry")) {
+                while (my $subentry = readdir($subdh)) {
+                    if ($subentry =~ /^newvmz-(\d{8})\.yaml$/) {
+                        push @files, {
+                            path => "$archive_dir/$entry/$subentry",
+                            date => $1,
+                            name => "$entry/$subentry",
+                        };
+                    }
+                }
+                closedir($subdh);
+            }
+        }
+    }
+    closedir($dh);
+} else {
+    die "Error: Cannot open directory '$archive_dir': $!\n";
+}
+
+if (!@files) {
+    print STDERR "Error: No VIZ archive files found in '$archive_dir'\n";
+    exit 1;
+}
+
+@files = sort { $b->{date} <=> $a->{date} } @files;
+
+if ($use_pager) {
+    my @pager_cmd = ('less', '-S');
+    open STDOUT, '|-', @pager_cmd
+	or die "Failed to run '@pager_cmd': $!";
+}
+binmode STDOUT, ':utf8';
+
+my $found_at_least_once = 0;
+my @history; # to store versions of payload
+my $files_checked = 0;
+my $last_debug_time = time;
+
+for my $file (@files) {
+    $files_checked++;
+    if ($opt_debug) {
+        my $now = time;
+        if ($files_checked % 100 == 0 || $now - $last_debug_time >= 3) {
+            print STDERR "Checking file: $file->{name} ($files_checked files checked...)\n";
+            $last_debug_time = $now;
+        }
+    }
+
+    my ($payload, $matched_key) = lookup_id_in_file($file->{path}, $id);
+    if ($payload) {
+        $found_at_least_once = 1;
+        push @history, {
+            file        => $file,
+            payload     => $payload,
+            matched_key => $matched_key,
+        };
+    } else {
+        if ($found_at_least_once && !$opt_all) {
+            last;
+        }
+        if (!$opt_all) {
+            last;
+        }
+    }
+}
+
+if (!$found_at_least_once) {
+    print STDERR "Error: ID '$id' was never found in the archive.\n";
+    exit 1;
+}
+
+# Print the history starting from the newest to the oldest found
+for (my $i = 0; $i <= $#history; $i++) {
+    my $current_entry = $history[$i];
+    my $older_entry = ($i < $#history) ? $history[$i+1] : undef;
+
+    my $newer_fh = File::Temp->new(TEMPLATE => "vizhistory_XXXXXXXX", TMPDIR => 1);
+    my $newer_content = dump_sorted($current_entry->{payload});
+    $newer_fh->print($newer_content);
+    $newer_fh->flush;
+
+    my $older_path;
+    my $old_version_label;
+    my $older_fh;
+    if ($older_entry) {
+        $older_fh = File::Temp->new(TEMPLATE => "vizhistory_XXXXXXXX", TMPDIR => 1);
+        my $older_content = dump_sorted($older_entry->{payload});
+        $older_fh->print($older_content);
+        $older_fh->flush;
+        $older_path = $older_fh->filename;
+        $old_version_label = $older_entry->{file}->{date};
+    } else {
+        $older_path = "/dev/null";
+        $old_version_label = "0";
+    }
+
+    my $new_version_label = $current_entry->{file}->{date};
+
+    print "="x70, "\n";
+    print "ID: $id";
+    if (defined $current_entry->{matched_key} && $current_entry->{matched_key} ne $id) {
+        print " (Key: $current_entry->{matched_key})";
+    }
+    print "\n";
+    print "File: $current_entry->{file}->{name}\n";
+
+    my $formatted_date = $current_entry->{file}->{date};
+    if ($formatted_date =~ /^(\d{4})(\d{2})(\d{2})$/) {
+        $formatted_date = "$1-$2-$3";
+    }
+    print "Date: $formatted_date\n\n";
+
+    open my $fh, '-|', 'diff', "--label=$old_version_label", "--label=$new_version_label", "--unified=$diff_context", $older_path, $newer_fh->filename
+        or die "Error while running diff command: $!";
+    while (<$fh>) {
+        next if /^\@\@/;
+        print $_;
+    }
+    print "\n";
+}
+
+close STDOUT;
+
+sub lookup_id_in_file {
+    my ($file_path, $id) = @_;
+
+    my $data = eval { BBBikeYAML::LoadFile($file_path) };
+    if ($@) {
+        warn "Warning: Failed to load YAML file '$file_path': $@\n" if $opt_debug;
+        return;
+    }
+    if (!$data || ref $data ne 'HASH' || !exists $data->{id2rec}) {
+        return;
+    }
+
+    my $id2rec = $data->{id2rec};
+    if (ref $id2rec ne 'HASH') {
+        return;
+    }
+
+    if (exists $id2rec->{$id}) {
+        return ($id2rec->{$id}, $id);
+    }
+
+    for my $key (keys %$id2rec) {
+        my $rec = $id2rec->{$key};
+        if (ref $rec eq 'HASH') {
+            if (defined $rec->{viz2025_id} && $rec->{viz2025_id} eq $id) {
+                return ($rec, $key);
+            }
+        }
+    }
+
+    return;
+}
+
+sub dump_sorted {
+    my ($val, $indent) = @_;
+    $indent //= 0;
+    my $sp = " " x $indent;
+    if (!defined $val) {
+        return "null\n";
+    } elsif (ref $val eq 'HASH') {
+        my $res = "";
+        for my $k (sort keys %$val) {
+            my $v = $val->{$k};
+            if (ref $v) {
+                $res .= "$sp$k:\n" . dump_sorted($v, $indent + 2);
+            } else {
+                my $v_str = defined $v ? $v : "null";
+                if ($v_str =~ /\n/) {
+                    my $ind_sp = " " x ($indent + 2);
+                    $v_str =~ s/^/$ind_sp/mg;
+                    $v_str =~ s/\s+$//;
+                    $res .= "$sp$k: |\n$v_str\n";
+                } else {
+                    $res .= "$sp$k: $v_str\n";
+                }
+            }
+        }
+        return $res;
+    } elsif (ref $val eq 'ARRAY') {
+        my $res = "";
+        for my $item (@$val) {
+            if (ref $item) {
+                my $dumped = dump_sorted($item, $indent + 2);
+                $dumped =~ s/^\s{2}/- /;
+                $res .= $dumped;
+            } else {
+                my $v_str = defined $item ? $item : "null";
+                if ($v_str =~ /\n/) {
+                    my $ind_sp = " " x ($indent + 2);
+                    $v_str =~ s/^/$ind_sp/mg;
+                    $v_str =~ s/\s+$//;
+                    $res .= "$sp- |\n$v_str\n";
+                } else {
+                    $res .= "$sp- $v_str\n";
+                }
+            }
+        }
+        return $res;
+    } else {
+        return "$sp$val\n";
+    }
+}
+
+sub print_usage {
+    print <<EOF;
+usage: $0 [options] <id>
+
+Options:
+  --dir <dir>          Set the VIZ archive directory (default: ~/src/bbbike-viz/archive)
+  --all                Search until the very first file (do not stop on missing ID)
+  --debug              Show currently checked files on STDERR
+  --no-pager           Disable automatic pager
+  --diff-context <num> Set number of context lines for unified diff (default: 3)
+  --help, -h           Show this help message
+EOF
+}
