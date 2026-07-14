@@ -6285,6 +6285,7 @@ Sennheimer Str., Königsbacher Zeile bis Schönfließer Str.	q4::inwork 2519,25772 
 #: source_id: viz2021:13.354875,52.448856,31.03.2023,06:00 (inaktiv)
 #: source_id: viz2021:13.353735,52.447456,31.03.2023,06:00 (bis 28.04.2023, nur eine Richtung gesperrt, und nur Kfz-Verkehr) (inaktiv)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1692148.php (Sperrung im Juli 2026)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1693246.php (bleibt die Einbahnstraße dauerhaft bestehen? auch für den Radverkehr?)
 	q4::inwork 7205,4741 7166,4643 7118,4540 7115,4505 7127,4441 7138,4379 7143,4350 7171,4200
 ',
          'from' => 1784412000,
@@ -7169,7 +7170,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-07-13 vvv
+#: last_checked: 2026-07-14 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -10107,6 +10108,7 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse
 #: by: https://fahrinfo.vbb.de/him-uploads/1779880055285_0.jpg
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11191 (Antrag)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260714
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_338258 (ab 26.5.2026)
 #: source_id: LMS-BR:409558/72 viz2021:13.5113,52.48421,26.05.2026,07:00 (Blockdammweg, bis 26.09.2026)
 #: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 (Ehrlichstr., bis 04.08.2026)
@@ -10115,10 +10117,12 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: source_id: bvg2024:n40#HIM_FREETEXT_349187
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
+#: XXX nach der Baustellenumstellung prüfen
 #: also_indoor: traffic (G,T,H,W)
 #: last_checked: 2026-07-10 vvv
 #: check_frequency: 3d (2. BA?) vvv
 # REMOVED --- #: next_check: 2026-07-10 (2. BA?) vvv
+Ehrlichstr.: vermutlich hier auch Fahrbahn gesperrt	q3::inwork 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn und des nördlichen Bürgersteigs	q4::inwork; 17879,8773 17736,8850 17720,8854 17702,8855
@@ -10136,9 +10140,9 @@ Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 1744
 ',
          'from' => 1779660000,
          'id' => 4612,
-         'text' => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Liepnitzstr. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung im Hönower Wiesenweg, vom 26.05.2026 bis voraussichtlich 10.07.2026, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Heiligenberger Str. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung im Hönower Wiesenweg, vom 26.05.2026 bis voraussichtlich 06.09.2026',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1788731999
        },
        {
          'data' => '#: source_id: LMS-BR:407959/72 viz2021:13.38521,52.49849,12.05.2026,00:00 (bis 19.07.2026)
@@ -10321,7 +10325,7 @@ Gotha-Allee	q4::inwork 765,12564 618,12563
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G[mittlerweile],T,no-W)
-#: last_checked: 2026-07-01 (traffic)
+#: last_checked: 2026-07-14 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 5552,21824 5665,21733
 ',
@@ -10446,7 +10450,7 @@ Preysingstr.	q4::inwork 7721,2137 7650,2112 7581,2092
        {
          'data' => '#: source_id: LMS-BR:405760/72 viz2021:13.352099,52.435909, (bis 19.06.2026) (inaktiv)
 #: also_indoor: traffic (G,T,H,no-W)
-#: last_checked: 2026-07-01 (traffic) vvv
+#: last_checked: 2026-07-14 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED (wird höchstwahrscheinlich verlängert) --- #: next_check: 2026-06-19 vvv
 #: note: Länge der Sperrung in der nördlichen Mühlenstr. ca. 40m
@@ -10733,6 +10737,7 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260710
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqix2ixdqs2l
 #: source_id: LMS-BR:415649/72 viz2021:13.41002,52.52861,13.07.2026,07:00 (bis 22.12.2028)
+#: osm_watch: note 5394140 1
 #: XXX Sperrung anschauen!
 #: last_checked: 2026-07-13 vvv
 #: check_frequency: 21d (am Anfang höhere Frequenz) vvv
@@ -10781,6 +10786,57 @@ Almstadtstr.: Anbindung an die Rosa-Luxemburg-Str. gesperrt, Umwege	q4::inwork 1
          'text' => 'Sterkrader Str.: Bauarbeiten zwischen Billerbecker Weg und Bernauer Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 13.07.2026 06:00 bis 17.08.2026',
          'type' => 'handicap',
          'until' => 1787003940
+       },
+       {
+         'data' => '#: source_id: 266001715 (bis 07.08.2026)
+	2::inwork 19584,48807 18983,49118
+',
+         'from' => 1784437200,
+         'id' => 4673,
+         'text' => 'Marienwerder, Am Finowkanal: Arbeiten an der Eisenbahnbrücke, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 20.07.2026 07:00 Uhr bis 07.08.2026 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1786125600
+       },
+       {
+         'data' => '#: source_id: LS/223-K/26/124 (bis 10.08.2026)
+	q4::inwork -6817,29208 -6989,29419 -7125,29585 -7143,29737 -7333,29761 -7571,29802 -7593,29803 -7833,29837 -7867,29842 -7921,29842 -8029,29819 -8159,29787 -8221,29784
+',
+         'from' => 1784433600,
+         'id' => 4674,
+         'text' => 'Marwitz: Fahrbahnsanierung, Sperrung, vom 20.07.2026 06:00 Uhr bis 10.08.2026 20:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1786384800
+       },
+       {
+         'data' => '#: source_id: LS/223-K/26/114 (bis 21.08.2026)
+	q4::inwork 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
+',
+         'from' => 1784433600,
+         'id' => 4675,
+         'text' => 'Wensickendorf: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 20.07.2026 06:00 Uhr bis 21.08.2026 20:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1787335200
+       },
+       {
+         'data' => '#: source_id: 266320006 (bis 31.10.2026)
+	q4::inwork -22227,16510 -22458,16473 -23014,16290 -23588,16023 -23724,16032
+',
+         'from' => 1785038400,
+         'id' => 4676,
+         'text' => 'Wernitz, Dorfstraße: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 27.07.2026 06:00 Uhr bis 31.10.2026 20:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1793473200
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260714
+#: next_check: 2027-07-15 (VIZ (Mitte 2027))
+	q4::inwork; 5295,17344 5250,17318 5025,17336
+',
+         'from' => 1783980000,
+         'id' => 4677,
+         'text' => 'Kapweg: Stromnetzarbeiten, Sperrung in Richtung Kurt-Schumacher-Platz, voraussichtlich bis Mitte 2027',
+         'type' => 'handicap',
+         'until' => 1815688799
        }
      
 );

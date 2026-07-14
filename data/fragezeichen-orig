@@ -4256,10 +4256,10 @@ Malteserstr.: Busspur geplant, evtl. auch für Radfahrer frei	?; 7539,1529 7630,1
 #: source_id: viz2021:13.40645,52.398143,27.07.2022,07:00 (Leitungsarbeiten, bis 2.11.2022) (inaktiv)
 #: source_id: viz2021:13.406583,52.396514,10.06.2025,07:00 (Leitungsarbeiten, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.406732,52.393143,25.06.2025,07:00 (Buswendemöglichkeit (wegen der Leitungsarbeiten?), bis 06.10.2025) (inaktiv)
-#: source_id: LMS-BR:371939/72 viz2021:13.40677,52.39382, (bis 27.02.2026) (bis 17.07.2026)
+#: source_id: LMS-BR:371939/72 viz2021:13.40677,52.39382, (bis 27.02.2026) (bis 17.07.2026) (bis 30.09.2026)
 #: last_checked: 2026-06-13
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2026-07-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-09-30 (VIZ-Verkehrsmeldung)
 Lichtenrader Damm: Busspur geplant, evtl. auch für Radfahrer frei	?; 10822,-806 10849,-1332
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf
@@ -5749,7 +5749,7 @@ Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 150
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-07-10
+#: last_checked: 2026-07-14
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -6269,6 +6269,7 @@ Lakegrund: Beton --- ändert sich hier noch etwas?	?::inwork 16406,7430 16368,742
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24501.pdf (Ende Mai bis Anfang September 2026: Gleisbauarbeiten zwischen Trautenauer Str. und Heiligenberger Str.; bis November 2026 Fahrleitungsarbeiten)
 #: by: https://vergabekooperation.berlin/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-19b93d33a3f-612e68b1b4be4955&Category=InvitationToTender (Bauzeit 25.05.2026 - 06.09.2026 (Gleisbauarbeiten))
 #: by: https://www.nd-aktuell.de/artikel/1197548.bvg-berlin-tramgleise-immer-abgefahrener.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26393.pdf
 #: note: siehe temp-blockings-Eintrag für die Erhaltungsmaßnahme im Frühling/Sommer 2026
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243331 (2024-10-23 - 2024-11-11)
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_243332 (2024-11-11 - 2024-12-12)
@@ -6472,7 +6473,7 @@ Märkische Allee: Radverkehrsanlagen werden entstehen, evtl. als PBL	?::projected
 #: source_id: LMS-BR:402645/72 viz2021:13.23263,52.52769, (unspezifizierte Tiefbauarbeiten, bis 15.05.2026) (bis 05.06.2026) (bis 12.06.2026) (bis 15.06.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:406301/72 viz2021:13.23182,52.52771,28.04.2026,07:00 (Leitungsarbeiten, bis 15.05.2026) (bis 19.06.2026) (bis 04.09.2026)
 #: source_id: LMS-BR:415652/72 viz2021:13.222558,52.528793,13.07.2026,07:00 (Verengung, bis 24.07.2026)
-#: source_id: bvg2024:m45#HIM_FREETEXT_348911
+#: source_id[inactive]: bvg2024:m45#HIM_FREETEXT_348911
 #: last_checked: 2026-04-01 (mapillary) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2025-09-01 (Tsp) vvv
@@ -7839,7 +7840,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-07-12
+#: last_checked: 2026-07-14
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8012,6 +8013,8 @@ Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::project
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1665628.php
 #: by: https://www.entwicklungsstadt.de/2-400-wohnungen-im-berliner-westen-rahmenplan-setzt-startpunkt-fuer-grossentwicklung/
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1679415.php
+#: by: https://www.entwicklungsstadt.de/stadteingang-west-und-icc-berlin-buendelt-die-verantwortung-fuer-70-hektar/
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1693016.php
 #: also_indoor: url https://www.berlin.de/sen/stadtentwicklung/staedtebau/stadteingang-west/
 #: osm_watch: node id="29997721" version="4"
 #: osm_watch: way id="24756980" version="17"
@@ -9945,7 +9948,7 @@ Rathenow: nach den Bauarbeiten mit Radschutzstreifen	? -62108,21448 -62111,21747
 #: osm_watch: way id="1151333062" version="4"
 #: osm_watch: way id="23755731" version="17"
 #: osm_watch: note 3954722 6
-#: last_checked: 2026-07-07
+#: last_checked: 2026-07-14
 #: check_frequency: 120d
 #: next_check: 2027-06-30 (infravelo)
 Charlottenstr.: mögliche Fortführung der Fahrradstraße	? 9569,11631 9581,11523 9593,11424 9603,11328
@@ -10011,7 +10014,7 @@ Thomasiusstr. - Wilsnacker Str.: Fahrradstraße soll realisiert werden	?::project
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1689676.php (Baubeginn ab 13. Juli 2026, Ende November 2026)
 #: by: https://www.luisenstadt-mitte.de/projekte/umgestaltung-sechseckplatz
 #: by: https://www.entwicklungsstadt.de/was-sich-am-michaelkirchplatz-jetzt-alles-veraendert/
-#: osm_watch: note 5183324 1
+#: osm_watch: note 5183324 2
 #: last_checked: 2026-07-13
 # REMOVED --- #: next_check: 2026-07-13 (BA-Pressemitteilung)
 #: check_frequency: 3d
@@ -10064,6 +10067,10 @@ Straße 42: verkehrsberuhigter Bereich soll entstehen	? 15271,22527 15377,22452 1
 #: last_checked: 2026-07-13
 #: check_frequency: 90d
 Rudolfstr.: beabsichtigte Teileinziehung	?::projected 13886,10939 14026,10869
+# 
+#: source_id: LS/223-K/26/114 (bis 21.08.2026)
+#: next_check: 2026-08-21
+Wensickendorf: nach den Bauarbeiten Radwege? wo genau?	? 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
 # 
 #: section ^^^
 #: ignore ^^^
@@ -11024,7 +11031,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: source_id: viz2021:13.296603,52.450366,30.01.2025,09:19 (Sperrung für Kfz-Verkehr, bis 02.05.2025) (inaktiv)
 #: note: Außerdem Bauarbeiten an der angrenzenden Fabeckstr.: Richtung Süden Gehweg für Radfahrer frei, aber die Fahrbahn war am 2025-03-26 noch passierbar, unklare Verkehrsführung für Radfahrer Richtung Norden (Sackgasse frei für Radfahrer+Fußgänger, aber dann gibt es keine weitere Freigaben)
 #: XXX Privatstraße enthält den Namen "Rabinowitsch-Kempner-Ring" (fehlt bei Berlin.coords.data, PLZ?)
-#: last_checked: 2025-10-18 (luftbildsuche)
+#: last_checked: 2026-03-05 (orthofotos)
 #: check_frequency: 270d
 #: next_check: 2026-12-31 (Tsp)
 Bebauungsplan 6-33 (Fubic): hier entstehen Straßen und Wege	?::projected 3357,4749 3357,4699 3484,4696 3478,4867 3356,4870 3357,4749 3295,4747
@@ -11993,6 +12000,7 @@ Uferweg geplant	?::projected 11827,11720 11676,11839 11375,11994
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1667799.php (Beschluss des Bebauungsplans XXI-22-2)
 #: by: https://www.entwicklungsstadt.de/konnekt-in-marzahn-bebauungsplan-mit-hochhaeusern-beschlossen/
 #: by: https://www.entwicklungsstadt.de/konnekt-in-marzahn-was-geplant-ist-und-was-schon-umgesetzt-wird/ (1. BA Ende 2029, Gesamtfertigstellung 2033)
+#: by: https://www.entwicklungsstadt.de/baufortschritt-bei-konnekt-hochhaus-in-marzahn-nimmt-form-an/
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: last_checked: 2026-04-06 (daf)
 #: check_frequency: 720d

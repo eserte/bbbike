@@ -2364,7 +2364,7 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-07-13 vvv
+#: last_checked: 2026-07-14 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
@@ -2445,7 +2445,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-07-13
+#: last_checked: 2026-07-14
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -8521,7 +8521,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: osm_watch: way id="278197510" version="10"
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-07-10
+#: last_checked: 2026-07-14
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 asphaltierter Radweg ist nicht nutzbar	RW0; 13588,11490 13565,11492 13473,11456
@@ -9340,14 +9340,16 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385297,52.44832,17.06.2024,07:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: viz2021:13.385351,52.448083,27.06.2024,10:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: LMS-BR:347435/72 viz2021:13.38458,52.45267,23.09.2024,17:00 viz2021:13.38458,52.45267, (bis 01.11.2024) (bis 31.12.2025) (bis 26.06.2026) (inaktiv)
-#: XXX: Die provisorischen Radspuren werden "verstetigt" vvv
-#: priority: #B vvv
-#: last_checked: 2026-07-01 vvv
-#: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2026-06-26 (VIZ-Verkehrsmeldung) vvv
+#: source_id: LMS-BR:415838/72 viz2021:13.38457,52.45276, (bis 15.10.2026)
+#: XXX Wird es hier auch eine Radspur geben?
+#: priority: #B
+#: last_checked: 2026-07-01
+#: check_frequency: 120d
+#: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: osm_watch: way id="4526218" version="32"
 #: note: keine Benutzungspflicht
 provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
+# REMOVED --- #: XXX: Die provisorischen Radspuren werden "verstetigt"
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 # REMOVED --- #: osm_watch: way id="111048866" version="19" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs)
@@ -9357,12 +9359,7 @@ provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 917
 # REMOVED (hier realisiert) --- #: osm_watch: way id="30958674" version="23"
 # REMOVED (hier realisiert) --- #: osm_watch: way id="28680189" version="22"
 # REMOVED (hier realisiert) --- #: osm_watch: way id="1214584012" version="2" --- #: historical_note: früher frei für Linienverkehr (wegen des U6-SEVs) --- # provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9275,4672 9259,4815 9247,4915 9239,4980 9206,5193 --- provisorischer gemeinsamer Rad/Gehweg	RW2; 9275,4672 9259,4815 9247,4915 9239,4980 9206,5193
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: XXX ^^^
+# REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^
 #: note: Mariendorfer Damm, Richtung Süden
 #: note: Poller fangen einige Meter nach der Kreuzung an (Bushaltestelle)
 Poller	RW4; 9206,5193 9239,4980 9247,4915
