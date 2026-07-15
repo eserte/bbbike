@@ -163,13 +163,13 @@ Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12
 # REMOVED --- #: valid: -20251219
 # REMOVED --- Kolonnenstr./Herbertstr.: Gegenverkehrsregelung	X::inwork::alternating 7360,8918
 # 
-#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347
-#: source_id: LMS-BR:379727/72 viz2021:13.37128,52.4366,13.08.2025,07:00 viz2021:13.37128,52.4366, (provisorische Ampelanlage, bis 22.09.2025) (bis 13.03.2026) (bis 06.05.2026) (bis 17.07.2026)
-#: XXX permanente Ampel in Planung
-#: last_checked: 2026-05-14 (mapillary)
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2026-07-17 (VIZ-Verkehrsmeldung)
-Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::inwork 8461,3410
+# REMOVED --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347
+# REMOVED --- #: source_id: LMS-BR:379727/72 viz2021:13.37128,52.4366,13.08.2025,07:00 viz2021:13.37128,52.4366, (provisorische Ampelanlage, bis 22.09.2025) (bis 13.03.2026) (bis 06.05.2026) (bis 17.07.2026) (vorfristig inaktiv)
+# REMOVED --- #: XXX permanente Ampel in Planung
+# REMOVED --- #: last_checked: 2026-05-14 (mapillary)
+# REMOVED --- # REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2026-07-17 (VIZ-Verkehrsmeldung)
+# REMOVED --- Lankwitzer Str./Altes Gaswerk Mariendorf/Dederingstr.: provisorische Ampel	X::inwork 8461,3410
 # 
 #: next_check_id: STUBENRAUCH-2025
 #: note: an dieser Stelle gibt es keine Überfahrtmöglichkeit auf der Fahrbahn, nur auf dem Gehweg (gesehen: 2025-07-18, 2025-09-10, 2026-02-28)
@@ -478,6 +478,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: next_check_id: SGEHRENSEE-2023
 #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023) (bis 24.09.2024) (bis 06.09.2024) (bis 31.10.2024) (bis 01.11.2024) (inaktiv)
 #: source_id: LMS-BR:415646/72 viz2021:13.525297,52.555515,13.07.2026,07:00 (bis 03.08.2026)
+#: by: https://marzahn-hellersdorf.com/baustellenampel-am-s-bahnhof-gehrenseestrasse-rueckbau-der-rampe-ist-grund-fuer-verkehrseinschraenkung/
 # REMOVED --- #: note: die dazugehörige S-Bahn-Meldung ist kürzer --- #: last_checked: 2024-05-23 (mapillary) ---
 #: next_check: 2026-08-03
 #: valid: -20260803
@@ -4588,7 +4589,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7345 (Antrag)
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 3
-#: last_checked: 2026-06-27 (mapillary) vvv
+#: last_checked: 2026-07-15 vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -4852,6 +4853,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: section ^^^
 ################################################################################
 #: section: Ampeln elsewhere vvv
+	B 4521,66271
 dauerhaft ausgeschaltet	X0 18480,-1577
 #: by: mapillary
 #: note: Anforderungsampel

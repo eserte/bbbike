@@ -1279,6 +1279,7 @@ Wandlitz	OS 14664,40223
 Wandlitz	OS 12839,36428
 # 
 Basdorf	OS 12839,36428
+Basdorf	OS 12787,36426
 Basdorf	OS 12473,33109
 # 
 Böhmerheide	OS 15886,54280
@@ -1289,10 +1290,10 @@ Hammer|b. Liebenwalde	OS 11553,52195
 # 
 Liebenwalde	OS 10103,52074
 Liebenwalde	OS 9339,50139
-Liebenwalde	OS 8022,52423
+Liebenwalde	OS 8020,52397
 # 
-Kreuzbruch	OS 9949,47382
-Kreuzbruch	OS 9825,48263
+Kreuzbruch	OS 9940,47393
+Kreuzbruch	OS 9859,48125
 # 
 Zehlendorf	OS 9343,42807
 Zehlendorf	OS 8800,41346
@@ -1343,9 +1344,12 @@ Schildow	OS 8488,25390
 Schildow	OS 6172,24604
 Schildow	OS 9113,26979
 # 
+#: note: es gibt anscheinend zwei Teile des Ortes
 Schönerlinde	OS 13345,27187
+Schönerlinde	OS 12457,29259
 Schönerlinde	OS 12362,29651
 Schönerlinde	OS 11620,26773
+Schönerlinde	OS 12852,28069
 # 
 Schönwalde	OS 12362,29651
 Schönwalde	OS 12560,31435
@@ -2455,6 +2459,8 @@ Zehdenick	OS 3553,62804
 Zehdenick	OS 3945,61940
 #: by: ^^^
 # 
+Krewelin	OS 7588,60059
+# 
 Bernöwe	OS 5415,45571
 Bernöwe	OS 4945,45163
 # 
@@ -2705,6 +2711,9 @@ Dagow	OS -14367,82242
 Neuglobsow	OS -14839,81658
 # 
 Menz	OS -14552,77849
+Menz	OS -14645,76407
+#: by: mapillary
+Menz	OS -15721,77225
 # 
 Zernikow	OS -12621,75511
 Zernikow	OS -11567,75358
@@ -2722,6 +2731,7 @@ Marienthal	OS 332,71050
 Marienthal	OS 857,71554
 # 
 Burgwall	OS 1672,71523
+Burgwall	OS 2647,71143
 # 
 Britz	OS 37580,54485
 Britz	OS 38123,51774
@@ -2990,6 +3000,7 @@ Schönfeld|(Barnim)	OS 33326,31394
 Stolzenhagen	OS 11975,41509
 Stolzenhagen	OS 12557,41878
 #: by ^^^
+Stolzenhagen	OS 11520,39015
 #: linked ^^^
 # 
 #: linked: Dewinsee|(Biesenthal) vvv

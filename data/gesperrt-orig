@@ -316,10 +316,6 @@ Quickborner Str.	1s:q4 8016,21499 8078,21415 8162,21302
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 # REMOVED --- Molkenmarkt - zur Stralauer Str.	1 10772,12288 10736,12285
 # REMOVED (bis Frühjahr 2026) --- Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964
-#: XXX Bleibt es bei der Einbahnstraßenregelung für den Radverkehr?
-#: osm_watch: way id="889203673" version="8"
-#: last_checked: 2026-06-20
-Herrfurthplatz	1 11713,7899 11671,7904 11647,7940
 Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
 Grimmstr.	1 11089,9751 11136,9851 11164,9885
 Grimmstr.	1 11164,9885 11175,9882
@@ -2173,6 +2169,8 @@ PCK-Parkplatz	1 64952,76990 65078,76848
 (Marwitz)	1 -7336,29727 -7615,29724
 # 
 (Bushaltestelle am Bahnhof, Strausberg)	1 39639,14672 39639,14595
+# 
+Am Anger (Stolzenhagen)	1s:q4 12160,41454 12172,41401 12098,41281 12014,41220
 # 
 #: section ^^^
 ######################################################################
@@ -4204,7 +4202,7 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: XXX ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-07-09
+#: last_checked: 2026-07-15
 Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
@@ -4473,7 +4471,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-07-01
+#: last_checked: 2026-07-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4762,7 +4760,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-07-11 vvv
+#: last_checked: 2026-07-15 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv

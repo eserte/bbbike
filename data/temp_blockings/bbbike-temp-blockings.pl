@@ -8147,7 +8147,7 @@ EOF
        text  => 'B 109 zw. Stadtgrenze Berliin und Schönerlinde, Dorfstr. Deckeneinbau Vollsperrung 17.04.2007-20.04.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13356,27581 13389,27440 13378,27325 13345,27187
+	2::inwork 13356,27581 13396,27424 13371,27299 13345,27187
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -11513,7 +11513,7 @@ EOF
        text  => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 07.04.2008-09.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -13455,75227 -13950,75662 -14666,76428 -14862,76637
+	2::inwork -13455,75227 -13950,75662 -14645,76407 -14666,76428 -14862,76637
 EOF
      },
      { from  => 1205708400, # 2008-03-17 00:00
@@ -15031,7 +15031,7 @@ EOF
 #: by: https://www.classicopenair.de/ (2025: 17. bis 21. Juli 2025) (2026: 9. bis 14. Juli 2026)
 #: source_id: adac:871932322 (bis 24.07.2025) (inaktiv)
 #: source_id: viz2021:13.39333,52.51323,12.07.2025,06:00 (bis 24.07.2025) (inaktiv)
-#: source_id: LMS-BR:415303/72 viz2021:13.39181,52.51359,09.07.2026,18:00 (bis 14.07.2026)
+#: source_id: LMS-BR:415303/72 viz2021:13.39181,52.51359,09.07.2026,18:00 (bis 14.07.2026) (inaktiv)
 #: XXX_prog: eigentlich q4+::temp
 Markgrafenstr. südlich Taubenstr.: Absperrungen, aber Fahrbahn noch offen	q4::temp 9679,11834 9666,11935
 Markgrafenstr. im mittleren Abschnitt: vollständig gesperrt	q4::temp 9666,11935 9656,12031
@@ -36353,7 +36353,7 @@ EOF
 #: osm_watch: way id="1047544510" version="3"
 #: osm_watch: note 3065138 16
 #: note: Ende Mitte 2026 oder Mitte 2027?
-#: last_checked: 2026-06-13 vvv
+#: last_checked: 2026-07-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2024-05-13 nur q4
@@ -40769,7 +40769,7 @@ EOF
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-06-29 vvv
+#: last_checked: 2026-07-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
@@ -46295,7 +46295,7 @@ EOF
 #: osm_watch: way id="1119255054" version="13"
 #: note: Start der Sperrung hat sich verzögert
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-07-09
+#: last_checked: 2026-07-15
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2027-09-30 (VIZ-Verkehrsmeldung)
 	q4::inwork 13530,13014 13470,12990
@@ -46781,11 +46781,11 @@ EOF
      { from  => 1727586000, # 2024-09-29 07:00
        until => undef, # $isodate2epoch->("2026-07-15 23:59:59"), # 1730908800, # 2024-11-06 17:00
 #      text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, vom 30.09.2024 07:00 bis 06.11.2024 17:00',
-       text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, voraussichtlich bis Mitte Juli 2026, evtl. werden die Bauarbeiten verlängert',
+       text  => 'Westfälische Str.: Bauarbeiten, Fahrbahn zwischen Brandenburgische Str. und Konstanzer Str. gesperrt, auch Radfahrer Richtung Westen sind betroffen, geplant bis Ende Oktober 2026, evtl. werden die Bauarbeiten verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.31115,52.491561,30.09.2024,07:00 (bis 06.11.2024) (inaktiv)
-#: source_id: LMS-BR:409870/72 viz2021:13.30936,52.49204, (bis 15.07.2026)
+#: source_id: LMS-BR:409870/72 viz2021:13.30936,52.49204, (bis 15.07.2026) (bis 27.10.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1840620338042085619
 #: by: https://pbs.twimg.com/media/GYfo8hGWQAATDdF?format=jpg&name=large
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/gesperrt-wegen-bauarbeiten_a426523
@@ -46793,7 +46793,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihl62k3nqtl35itj6bdgwcobwdwms23ftrpxlughecy4tywowdopu (auch der nördliche Bürgersteig scheint gesperrt zu sein)
 #: also_indoor: traffic (G,T,H,W)
 #: last_checked: 2026-07-04
-#: next_check: 2026-07-15 (wird verlängert?)
+#: next_check: 2026-10-27 (wird verlängert?)
 	q4::inwork; 4246,9406 4193,9404 4011,9474
 EOF
      },
@@ -46926,7 +46926,7 @@ EOF
 Friedrichstr., 2. BA	q3::inwork 34359,2165 34250,2546
 #: osm_watch: way id="5057517" version="22"
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-06-16 (mapillary)
+#: last_checked: 2026-07-15 (traffic)
 # REMOVED --- #: next_check: 2026-05-31 (VIZ-Verkehrsmeldung)
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 EOF
@@ -52071,10 +52071,10 @@ EOF
        data  => <<'EOF',
 #: next_check_id: KANZLERPARK-2024
 #: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
-#: osm_watch: way id="1126186878" version="6"
-#: osm_watch: note 5130610 4
-#: osm_watch: note 5130626 1
-#: osm_watch: note 5096118 2
+#: osm_watch: way id="1126186878" version="7"
+#: osm_watch: note 5130610 5
+#: osm_watch[closed]: note 5130626 1
+#: osm_watch[closed]: note 5096118 2
 #: add_fragezeichen: Gibt es die Engstelle weiterhin?
 # REMOVED --- #: XXX auch laut osm note bis 28.2.2026 gesperrt --- #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
 #: last_checked: 2026-06-24 (mapillary)
@@ -52257,9 +52257,9 @@ EOF
        data  => <<'EOF',
 #: also_indoor: traffic (G[nur Hausburgstr],T[nur Hausburgstr],no-H,no-W)
 #: osm_watch[closed]: note 4953642 2
-#: osm_watch: note 5246727 4
+#: osm_watch: note 5246727 5
 #: source_id: LMS-BR:407366/72 viz2021:13.45315,52.52627,06.05.2026,20:00 (Kraneinsatz, bis 08.05.2026) (inaktiv)
-#: last_checked: 2026-06-21 (von Thaerstr. aus gesehen) vvv
+#: last_checked: 2026-07-15 (osm note) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="1528007580" version="1"
@@ -52310,6 +52310,7 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-radwegsanierung-zwischen-premnitz-und-rathenow (vom 16. März 2026 bis Mitte Juli 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-05-2026-b102-ragwegsanierung-zwischen-moegelin-und-rathenow
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-06-2026-b102-zwischen-premnitz-und-rathenow
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~08-07-2026-b102-moeglin_radwegsanierung-entlang-b102
 #: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw) (vorfristig inaktiv) (bis 17.07.2026)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 EOF
@@ -52422,6 +52423,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/fehlende-akzeptanz-fur-vollsperrung-wie-gefahrlich-ist-der-illegale-verkehr-auf-dieser-maroden-berliner-ringbahnbrucke-15471271.html
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-bahn-wasserwege-geb%C3%A4ude/?postID=796123#post796123
 #: by: https://www.entwicklungsstadt.de/ersatzneubau-in-prenzlauer-berg-so-laufen-die-arbeiten-an-der-dunckerbruecke/
+#: by: https://www.entwicklungsstadt.de/ersatzneubau-fuer-dunckerbruecke-zeitplan-sperrungen-und-umleitungen-im-ueberblick/
 #: note: siehe auch Eintrag in gesperrt-orig
 #: source_id: LMS-BR:403521/72 viz2021:13.42326,52.54529,01.04.2026,07:00 (bis 14.06.2028)
 #: osm_watch[closed]: note 5163943 2
@@ -54169,12 +54171,14 @@ EOF
 	2::inwork -19656,2362 -19422,2220 -19243,2246 -19106,2228 -18985,2226 -18728,2153
 EOF
      },
-     { from  => 1783807200, # 2026-07-12 00:00
-       until => 1785535199, # 2026-07-31 23:59
-       text  => 'Wesendahl und Gielsdorf: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 13. Juli 2026 bis voraussichtlich Ende Juli 2026',
+     { from  => $isodate2epoch->("2026-07-19 00:00:00"), # 1783807200, # 2026-07-12 00:00
+       until => $isodate2epoch->("2026-08-21 20:00:00"), # 1785535199, # 2026-07-31 23:59
+       text  => 'Wesendahl und Gielsdorf: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 20. Juli 2026 bis 21. August 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~01-07-2026-l-235-strassenbauarbeiten-zwischen-wesendahl-und-gielsdorf
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~14-07-2026-verzoegerung-auf-der-l-235-baustart-zwischen-wesendahl-und-gielsdorf-ab-20-juli-2026 (hier: weiterhin bis Ende Juli 2026)
+#: source_id: LS/221-F/26/118 (20.07.2026 bis 21.08.2026)
 	2::inwork 41705,22792 41653,22744 40575,22409 39578,22450 39372,22521
 	q4::inwork 39372,22521 39363,22551 39337,22638
 	2::inwork 39337,22638 39261,22692 38770,22609 38547,22511
@@ -54300,8 +54304,32 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260714
-#: next_check: 2027-07-15 (VIZ (Mitte 2027))
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqnwyyrur22n
+#: source_id: LMS-BR:415908/72 viz2021:13.33049,52.56254,15.07.2026,07:00 (hier nur bis 19.08.2026, evtl. der 1. BA)
+# REMOVED --- #: next_check: 2027-07-15 (VIZ (Mitte 2027))
+#: next_check: 2026-08-19 (VIZ-Verkehrsmeldung)
 	q4::inwork; 5295,17344 5250,17318 5025,17336
+EOF
+     },
+     { from  => 1786226400, # 2026-08-09 00:00
+       until => 1787608800, # 2026-08-25 00:00
+       text  => 'Eisenbahnstr. (Werder): Fahrbahnsanierung, Sperrung, voraussichtlich ab 10.08.2026 bis 24.08.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~14-07-2026-baustart-an-der-l-90-in-werder-havel-grundhafte-erneuerung-der-eisenbahnstrasse (weitere Bauabschnitte folgen)
+#: next_check: 2026-08-24
+	q4::inwork -21220,-3831 -21284,-3767
+EOF
+     },
+     { from  => 1785621600, # 2026-08-02 00:00
+       until => 1793487599, # 2026-10-31 23:59
+       text  => 'Kummersdorf Gut - Sperenberg: Bauarbeiten, Sperrung, geplant vom 3. August 2026 bis Ende Oktober 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~14-07-2026-l-70-zwischen-kummersdorf-gut-und-sperenberg-ab-august-vollgesperrt
+#: XXX außerdem Bau eines Radwegs (nicht die gesamte Strecke, nur 1km)
+#: next_check: 2026-10-31
+	2::inwork 9300,-34066 9068,-34115 8564,-34625 8340,-34842 8218,-34884 7351,-35307 5971,-35320 5765,-35529 5865,-35773 5750,-36364
 EOF
      },
     );

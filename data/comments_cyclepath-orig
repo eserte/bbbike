@@ -37,8 +37,10 @@ Verbundsteinpflasterradweg	RW2;RW2 21895,19198 21878,19226 21801,19325 21692,194
 gemeinsamer Rad- und Gehweg, asphaltiert	RW2; 24361,-11236 24418,-11244 24455,-11282
 asphaltiert	RW2;RW8 24361,-11236 24380,-11123 24353,-10504
 guter Zweirichtungsradweg	RW;RW9 24353,-10504 24343,-10276 24378,-10040 24278,-9878
-Gehweg für Radfahrer frei	RW1;RW1 12913,27641 12871,28012
-asphaltiert	RW2;RW8 12871,28012 12352,29576
+#: historical_note: früher möglicherweise in beiden Richtungen
+Gehweg für Radfahrer frei	RW1;RW0 12913,27641 12871,28012
+#: historical_note: früher benutzungspflichtig und Zweirichtungsradweg
+asphaltiert	RW1;RW0 12871,28012 12852,28069 12457,29259 12352,29576
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 34159,5449 33943,5568 33814,5618 33686,5660 33564,5702 33444,5744
 Gehweg für Radfahrer frei, Verbundsteinpflaster, Einmündungen gepflastert	RW1; 33444,5744 33207,5820 33098,5856 32978,5895 32863,5933 32823,5946 32728,5942 32601,5936
 hier keine Radweg-Schilder mehr, Verbundsteinpflaster	RW0; 32601,5936 32479,5931 32376,5926 32252,5917
@@ -388,17 +390,18 @@ Gehweg für Radfahrer frei	RW1; -513,-736 -543,-691 -549,-678
 #: by: http://www.ruppin.de/rheinsberg/freizeit/sport/radwege.html vvv
 #: confirmed_by: osm, srt (teilweise) vvv
 asphaltiert, einige Stellen mit Wurzelschäden	RW9;RW1 -24767,76517 -24592,76567 -23245,76952 -22950,76882 -22392,76828 -22046,76942 -21713,77018 -21657,77056
-asphaltiert, einige Stellen mit Wurzelschäden	RW1;RW9 -21657,77056 -21558,77171 -21532,77183 -20849,77456 -20561,77543 -19887,77845 -19560,77995 -19306,78208 -18903,78024 -18621,77981 -18216,77851 -17887,77872 -16057,77339 -15721,77225
+asphaltiert, einige Stellen mit Wurzelschäden	RW1;RW9 -21657,77056 -21558,77171 -21532,77183 -20849,77456 -20561,77543 -19887,77845 -19560,77995 -19306,78208 -18903,78024 -18621,77981 -18216,77851 -17887,77872 -17441,77742
+asphaltiert, einige Stellen mit Wurzelschäden	RW9;RW1 -17441,77742 -16057,77339
 #: confirmed_by ^^^
 #: by: ^^^
 #: by: http://www.ruppin.de/rheinsberg/freizeit/sport/radwege.html
 #: confirmed_by: osm
 	RW;RW -26740,82997 -26137,84005 -26080,84500 -26120,84667 -26316,84900
-überwiegend auf altem Bahndamm, asphaltiert	RW2;RW8 -14539,77778 -14552,77849 -14606,78452 -14237,80550 -14368,81576
+überwiegend auf altem Bahndamm, asphaltiert, erste Wurzelhebungen	RW2;RW8 -14539,77778 -14552,77849 -14606,78452 -14237,80550 -14368,81576
 straßenbegleitender asphaltierter Radweg, einige meist leichte Wurzelschäden	RW2;RW8 -14368,81576 -12590,81341 -11997,81443
 straßenbegleitender asphaltierter Radweg	RW2;RW8 -11862,81535 -11775,81738 -11636,81973
 straßenbegleitender asphaltierter Radweg	RW2;RW8 -11534,82105 -11364,82291 -11264,82483 -10564,83397 -10516,83471 -10391,83839 -10218,84003 -10105,84173 -10084,84267 -10082,84334 -10064,84410 -9955,84584 -9889,84728 -9834,84789
-straßenbegleitender asphaltierter Radweg, starke Wurzelschäden	RW2;RW8 -13455,75227 -13950,75662 -14666,76428
+straßenbegleitender asphaltierter Radweg, starke Wurzelschäden	RW2;RW8 -13455,75227 -13950,75662 -14645,76407 -14666,76428
 # REMOVED (-> eigener Weg) --- #: by: thomas (kara.) ---	;RW10 -11146,-3489 -11311,-3322 -11438,-3179 -11656,-2944
 # REMOVED --- #: by: Arne Grein: vvv --- #: corrected_by: srt vvv
 # REMOVED (-> eigener Weg) ---	RW8;RW2 -11656,-2944 -11770,-2743 -11912,-2587 -12001,-2495
@@ -582,7 +585,9 @@ asphaltiert	RW1;RW9 -18051,-6362 -18017,-6088 -18023,-6032 -18144,-5817
 kombinierte Geh- und Radwege, Verbundsteinpflaster	RW;RW -19002,-5271 -18894,-5272 -18515,-5282 -17806,-5251 -17682,-5054
 asphaltiert	RW;RW -17682,-5054 -17564,-4895 -17434,-4782 -17194,-4659 -17122,-4622 -16333,-3922 -16157,-3757
 betoniert	RW;RW -16157,-3757 -16063,-3680 -15669,-3311
-Verbundsteinpflaster	RW2;RW2 12395,33537 12307,34017 12207,34503 12056,34918 12025,35002 11964,35230 12006,35572 12191,35674 12572,35866 12644,35950 12815,36368 12839,36428 12854,36464 12887,36543 13546,37474 13894,37979 14367,38641 14433,38733 14498,38870 14517,39074 14538,39303 14593,39903 14630,40076
+#: historical_note: früher benutzungspflichtig
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 12395,33537 12307,34017 12207,34503 12056,34918 12025,35002 11964,35230 12006,35572 12191,35674 12572,35866 12644,35950 12815,36368 12839,36428
+Verbundsteinpflaster	RW2;RW2 12839,36428 12854,36464 12887,36543 13546,37474 13894,37979 14367,38641 14433,38733 14498,38870 14517,39074 14538,39303 14593,39903 14630,40076
 2m breiter Zweirichtungsradweg, asphaltiert	RW2;RW8 14630,40076 14664,40223 14701,40362 14830,41000 14884,41606
 Verbundsteinpflaster	RW2;RW8 14884,41606 14921,42008
 #: historical_note: früher Zweirichtungsradweg
@@ -804,9 +809,11 @@ Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1;RW1 8930,51770 8865,51589 88
 #: note: Radweg auf etwas erhöhten Damm, dadurch möglicherweise geringere Gefahr durch Wurzelhebungen?
 Asphalt	RW8;RW2 9241,50325 9256,50262 9339,50139 9600,49756 9581,49487 9706,48675
 Asphalt, leichte Unebenenheiten	RW8;RW2 9706,48675 9825,48263
+	RW9;RW1 9825,48263 9859,48125 9893,47987 9925,47831 9896,47659
 	RW7;RW7 4819,63584 4801,63458
 Verbundsteinpflaster	RW2;RW2 4801,63458 4948,63424 5014,63359
 Verbundsteinpflaster	RW2;RW2 5444,65780 5367,65584
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 5367,65584 5117,64943 4971,64656 5004,64359 4991,64328 4899,64261 4760,64120
 Verbundsteinpflaster	RW2;RW2 26844,15290 26951,15227 27054,15168 27163,15105 27176,15097 27202,15137 27272,15099 27250,15053 27265,15043 27375,14984 27482,14921 27534,14890 27594,14854
 #: note: wird üblicherweise in beiden Richtungen benutzt, aber eine entsprechende Ausschilderung existiert nicht
 #: historical_note: früher: gemeinsamer Rad- und Gehweg	RW2;
@@ -1061,8 +1068,11 @@ asphaltiert	RW2;RW8 15836,45075 15359,44362
 Verbundsteinpflaster	RW2;RW2 15359,44362 14881,43618 14864,43574 14934,42934 14950,42721 14921,42008
 Verbundsteinpflaster	RW8;RW2 12395,33537 12463,33159
 asphaltiert	RW8;RW2 12463,33159 12473,33109 12635,32221 12560,31435
-Verbundsteinpflaster	RW8;RW2 12560,31435 12466,30452 12362,29651 12352,29576
-mäßiges Verbundsteinpflaster	RW1;RW9 13345,27187 13378,27325
+#: historical_note: früher benutzungspflichtig und Zweirichtungsradweg
+Verbundsteinpflaster	RW1;RW0 12352,29576 12362,29651 12466,30452 12560,31435
+#: historical_note: früher mäßiges Verbundsteinpflaster
+#: note: Achtung: von Norden kommend darf man den Radweg auf der linken Seite benutzen, aber wenig später kommt auf Berliner Gebiet auf der rechten Seite ein Radweg, ohne eine Überquerungsmöglichkeit
+Asphalt	RW1;RW9 13345,27187 13371,27299
 Verbundsteinpflaster	RW2;RW2 1464,-470 1338,-426 1134,-370 818,-298
 #: XXX asphaltiert?
 	RW2?;RW8? 1114,-16369 711,-16679 453,-16856 44,-17429 -94,-17521 -343,-17949 -529,-18353 -648,-18462 -714,-18610 -726,-18718 -954,-18786 -895,-18928 -910,-19238
@@ -2150,7 +2160,7 @@ Beton	RW1; -11008,-3382 -10893,-3289
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31729
 #: by: https://www.o-sp.de/download/lbvbrandenburg/140696
 #: by: osm
-	RW;RW 9059,36323 9282,36780 9439,36963 10209,37661 11598,37920 11779,37863 11818,37915 11852,37949 12044,37981 12210,38054
+	RW;RW 9059,36323 9282,36780 9439,36963 10209,37661 11598,37920 11728,37877 11779,37875 11818,37915 11852,37949 12044,37981 12210,38054
 # 
 	RW2; 1401,-1310 1437,-1298 1477,-1282
 #: by: mapillary, osm
@@ -2336,8 +2346,8 @@ asphaltiert	RW2;RW8 9981,38735 9866,38743 9343,38794 9329,38795
 Gehweg für Radfahrer frei, asphaltiert	RW1;RW9 9329,38795 9056,38825 8954,38837 8873,38845
 Gehweg für Radfahrer frei, asphaltiert	RW1;RW1 8873,38845 8740,38857
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31763 vvv
-#: confirmed_by: mapillary vvv
-asphaltiert	RW2;RW8 13237,37524 12812,37567 11818,37915 11621,38036 11437,38505 11269,38548
+#: confirmed_by: mapillary + srt vvv
+asphaltiert	RW2;RW8 13237,37524 12812,37567 11818,37915 11621,38036 11452,38435 11269,38548
 Verbundsteinpflaster	RW2;RW8 11269,38548 11192,38568
 #: confirmed_by ^^^
 # 
