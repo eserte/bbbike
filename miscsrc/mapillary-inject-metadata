@@ -28,7 +28,7 @@ use BBBikeYAML qw(LoadFile);
 
 # list of failing ids causing errors like
 #   {"error":{"message":"Unsupported get request","type":"MLYApiException","code":100,"error_subcode":33,"fbtrace_id":"..."}}
-my %skip_ids = (); # map {($_,1)} qw(1009369795370425 1560453945705173);
+my %skip_ids = map {($_,1)} qw(2206962903434296 2040453403524566 1536099294668850);
 
 my $token;
 my $with_make = 1;
@@ -78,19 +78,23 @@ for my $filename (@filenames) {
 	    if ($with_make && /\bmake=($|\s)/) { # empty make
 		if (/\bstart_id=(\d+)/) {
 		    my $image_id = $1;
-		    my $make;
-		    if (defined $image_id_to_make->{$image_id}) {
-			$make = $image_id_to_make->{$image_id};
+		    if (!$skip_ids{$image_id}) {
+			my $make;
+			if (defined $image_id_to_make->{$image_id}) {
+			    $make = $image_id_to_make->{$image_id};
+			} else {
+			    my $data = cached_graph_api_call("$image_id?fields=id,make");
+			    $make = $data->{make};
+			}
+			if (!$make) {
+			    warn "WARNING: cannot find make for image id $image_id, skipping...\n";
+			} else {
+			    s/\bmake=/make=$make/;
+			    warn "INFO: inject make $make.\n";
+			    $has_changes++;
+			}
 		    } else {
-			my $data = cached_graph_api_call("$image_id?fields=id,make");
-			$make = $data->{make};
-		    }
-		    if (!$make) {
-			warn "WARNING: cannot find make for image id $image_id, skipping...\n";
-		    } else {
-			s/\bmake=/make=$make/;
-			warn "INFO: inject make $make.\n";
-			$has_changes++;
+			warn "WARNING: image id '$image_id' in skip list, skipping...\n";
 		    }
 		} else {
 		    warn "WARNING: empty make, but no image id (start_id) found in line, skipping...\n";
