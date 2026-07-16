@@ -38216,6 +38216,7 @@ EOF
 #: by: https://fahrinfo.vbb.de/him-uploads/1753173224127_Kartenausschnitt_Bahnhofstr.png
 #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/ (für Radfahrer keine Einbahnstraßenregelung in der Goltzstr.) (Feb 2026: Stillstand) (Straßenbau beginnt ab Mitte September 2026)
 #: by: https://az-lichtenrade.de/wp-content/uploads/2026/03/26-03-04_Umleitungsplan-ab-0326.png
+#: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260715 (zur Mellener Str.)
 #: source_id: viz2021:13.40978,52.38751,19.09.2022,11:00 (bis 31.03.2023) (inaktiv)
 #: source_id: viz2021:13.40978,52.38751,30.03.2023,11:51 (Goltzstr., zusätzlicher Eintrag, bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
@@ -38228,9 +38229,11 @@ EOF
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
+#: XXX die südliche Mellener Str. wird ab dem 3.8.2026 abgehängt
 #: last_checked: 2026-06-13 vvv
 #: check_frequency: 60d (traffic) vvv
-#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-08-02 (Mellener Str. wird gesperrt -> eintragen!) vvv
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
 # REMOVED (nun mit Freigabe für Radfahrer) --- #: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026) (inaktiv) --- #: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026) (bis 31.12.2026) --- #: note: an der Bahnhofstr. keine Freigabe für Radfahrer, allerdings ab Mellener Str. Richtung Goltzstr. mit Einbahnstraße, Radfahrer beide Richtungen ausgeschildert?! --- Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
 #: note: laut az-lichtenrade (15. April 2026): Bauarbeiten an der Zescher Straße verzögern sich
