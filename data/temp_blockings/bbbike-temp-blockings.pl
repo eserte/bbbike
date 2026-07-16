@@ -21267,7 +21267,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2024-02-04 00:00:00"), # 1336255200, # 2012-05-06 00:00
-       until => $isodate2epoch->("2026-07-16 23:59:59"), # undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
+       until => 1784226372, # $isodate2epoch->("2026-07-16 23:59:59"), # undef, # $isodate2epoch->("2025-06-27 17:00:00"), # $isodate2epoch->("2024-02-09 12:00:00"), # 1337464800, # 2012-05-20 00:00
 #      text  => 'Grünauer Straße: Vollsperrung zwischen Normannenstraße und Köpenicker Straße aufgrund eines defekten Regenentwässerungskanal, Bauzeit vom 07.05.12 bis 19.05.12',
 #      text  => 'Grünauer Str.: Sperrung zwischen Normannenstr. und Köpenicker Str., evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich vom 5.2.2024 bis 9.2.2024 12:00 Uhr',
        text  => 'Grünauer Str.: Sperrung zwischen Keltensteig und Köpenicker Str., voraussichtlich bis Mitte Juli 2026',
@@ -21281,12 +21281,12 @@ EOF
 #: source_id: viz2021:13.539055,52.420381,05.02.2024,07:00 (bis 09.02.2024) (inaktiv)
 #: source_id: viz2021:13.544116,52.419129,12.08.2024,07:00 (bis 18.02.2025 + weitere Arbeiten) (bis 31.03.2025 + ...) (bis 11.06.2025 + ...) (bis 13.06.2025 + ...) (bis 27.06.2025 + ...) (bis 31.08.2025 + ...) (inaktiv)
 #: source_id: LMS-BR:342841/72 viz2021:13.5384,52.42059,12.08.2024,07:00 viz2021:13.5384,52.42059, (bis 31.03.2025) (bis 31.08.2025) (bis 02.10.2025) (bis 07.11.2025) (bis 20.12.2025) (bis 30.01.2026) (bis 13.02.2026) (bis 03.06.2026) (bis 26.06.2026) (bis 16.07.2026)
-#: source_id: bvg2024:163#HIM_FREETEXT_234732 (war zwischenzeitlich entfernt)
+#: source_id[inactive]: bvg2024:163#HIM_FREETEXT_234732 (war zwischenzeitlich entfernt)
 #: osm_watch: way id="152466403" version="24"
 #: osm_watch: way id="1424980083" version="4"
 #: osm_watch: way id="1082710233" version="5"
 #: osm_watch: note 4444162 10
-#: also_indoor: traffic (G,T,H,W)
+#: also_indoor: traffic (ex-G,ex-T,H,ex-W)
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
 #: note: laut Baustellenschild der Wasserbetriebe bis Dezember 2025
@@ -36669,7 +36669,7 @@ EOF
 #: osm_watch[closed]: note 5093384 7
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-07-07
+#: last_checked: 2026-07-16
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-09-30 (Halteverbotsschilder)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36696,7 +36696,7 @@ EOF
 #: source_id: LMS-BR:408948/72 viz2021:13.44444,52.48166,21.05.2026,09:00 (bis 28.08.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-07-07 vvv
+#: last_checked: 2026-07-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
@@ -39006,7 +39006,7 @@ EOF
 #: also_indoor: traffic (T,G,H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-07-09 (traffic)
+#: last_checked: 2026-07-16 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-07-17 (Halteverbotsschilder)
 # REMOVED --- Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7169,2348 7051,2366 6965,2418
@@ -46326,7 +46326,7 @@ EOF
 #: osm_watch: way id="105827213" version="13"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 6
-#: last_checked: 2026-06-17 (finowkanal.info)
+#: last_checked: 2026-07-16 (finowkanal.info)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (https://www.openstreetmap.org/changeset/182437146: laut Bauleiter)
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -48768,7 +48768,7 @@ EOF
 # 
 #: by: https://www.aktives-adlershof.de/fileadmin/Interne_Dokumente/Projekte/Radickestra%C3%9Fe/20260415_Baunewsletter_Netzumstrukturierung_Treptow-K%C3%B6penick_14-1.pdf (Baustelle bleibt jedoch weiterhin eingerichtet)
 #: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen; 2026-04-18 Sat 12:32: Durchfahrt verboten, aber Bauzäune waren teilweise weggeschoben; Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
-#: also_indoor: traffic (no-T,G[nur Flemmingstr])
+#: also_indoor: traffic (no-T,ex-G[nur Flemmingstr])
 #: last_checked: 2026-06-17 vvv
 #: check_frequency: 30d vvv
 Gutenbergstr.: Fahrbahn wegen Baustelle verengt	q2::inwork 21903,4848 21848,4882
@@ -49597,7 +49597,7 @@ EOF
 #: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:371046/72 viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
 #: source_id: LMS-BR:371047/72 viz2021:13.44875,52.49034, (Bouchéstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: last_checked: 2026-07-07 vvv
+#: last_checked: 2026-07-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, Halteverbotsschilder) vvv
 #: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
@@ -50131,7 +50131,7 @@ EOF
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand März 2026); bei osm nur die Schleusenüberfahrt als gesperrt gekennzeichnet
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2026-06-17 (finowkanal.info)
+#: last_checked: 2026-07-16 (finowkanal.info)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -50266,8 +50266,8 @@ EOF
 #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: XXX im Zusammenhang mit den Arbeiten an der Ampel
 #: note: Überquerungsmöglichkeit nun ca. 30m südlich der Kreuzung
-#: last_checked: 2026-07-01
-#: check_frequency: 14d
+#: last_checked: 2026-07-16
+#: check_frequency: 21d
 #: next_check: 2026-12-31 (infravelo, mobilitaetsrat)
 Kirchhofweg: Umwege vor der Hermannstr./Thomasstr.	q3::inwork 11687,7284 12185,7381
 # REMOVED #: note: kurzer Abschnitt gesperrt (~40m) + Bordsteine, deshalb q3 --- Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
@@ -50666,7 +50666,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-13 vvv
+#: last_checked: 2026-07-16 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -52744,16 +52744,16 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 EOF
      },
      { from  => 1772838000, # 2026-03-07 00:00
-       until => $isodate2epoch->("2026-07-17 23:59:59"),
-       text  => 'Behrenstr.: Einbahnstraßenregelung vor der Komischen Oper, bis Mitte Juli 2026',
+       until => $isodate2epoch->("2026-07-31 23:59:59"),
+       text  => 'Behrenstr.: Einbahnstraßenregelung vor der Komischen Oper, bis Ende Juli 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BEHREN-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm6ljzf5k2g
 #: source_id: LMS-BR:401270/72 viz2021:13.38605,52.51546,09.03.2026,07:00 (westliche Behrenstr., bis 17.07.2026)
-#: source_id: LMS-BR:401276/72 viz2021:13.38904,52.51565,09.03.2026,07:00 (östliche Behrenstr., auch für den Radverkehr relevant, bis 17.07.2026)
-#: source_id: LMS-BR:401277/72 viz2021:13.38623,52.51459,09.03.2026,07:00 (Glinkastr., bis 17.07.2026)
+#: source_id: LMS-BR:401276/72 viz2021:13.38904,52.51565,09.03.2026,07:00 (östliche Behrenstr., auch für den Radverkehr relevant, bis 17.07.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:401277/72 viz2021:13.38623,52.51459,09.03.2026,07:00 (Glinkastr., bis 17.07.2026) (bis 31.07.2026)
 #: note: Bauarbeiten bis Mitte Juli 2026, es wird nur der Autoverkehr genannt
 # REMOVED --- #: next_check: 2026-03-09 (VIZ)
 # REMOVED (für Radfahrer existiert eine Furt) --- Behrenstr.: gilt die Sperrung auch für Radfahrer?	?::inwork 9164,12172 9064,12156 9054,12154 8861,12125
@@ -53456,8 +53456,9 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260512 (nur Kfz-Verkehr betroffen, vier Wochen)
 #: by: https://fahrinfo.vbb.de/him-uploads/1779179333882_Kartenausschnitt_Tauentzienstr_.jpg (Umleitung des Busverkehrs)
 #: source_id: LMS-BR:407953/72 viz2021:13.339174,52.503283,12.05.2026,10:00 (bis 09.06.2026) (bis 31.07.2026)
-#: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_336720
-#: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_336928
+#: source_id: bvg2024:m19#HIM_FREETEXT_336720 (war zwischenzeitlich gelöscht)
+#: source_id: bvg2024:m19#HIM_FREETEXT_336928 (war zwischenzeitlich gelöscht)
+#: source_id: bvg2024:m46#HIM_FREETEXT_336722 (war zwischenzeitlich gelöscht)
 #: also_indoor: traffic (T,G[mittlerweile],H,W)
 #: traffic_note: Durch den Umleitungsverkehr Stauungen im umliegenden Straßennetz. Gesehen 2026-05-12 Tue 17:39 Nürnberger Str. Richtung SW 6'
 #: note: etwa 50m der Fahrbahn ist gesperrt, kann z.B. auf der Mittelpromenade umfahren/umgangen werden, außerdem muss die Barriere an der Nürnberger Str. umfahren werden
@@ -53841,8 +53842,8 @@ EOF
      { from  => $isodate2epoch->("2026-07-13 00:00:00"), # 1781992800, # 2026-06-21 00:00
        until => $isodate2epoch->("2026-08-14 18:00:00"), # 1783375200, # 2026-07-07 00:00
        dont_check_date => 1,
-       text  => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 17.7.2026, weitere Bauarbeiten bis 14.08.2026',
-#      text  => 'Radickestr.: Bauarbeiten im Kreuzungsbereich Nipkowstr., mögliche Sperrung der Fahrbahn, geplant vom 13.7.2026 bis 27.07.2026, weitere Bauarbeiten bis 14.08.2026',
+#      text  => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 17.7.2026, weitere Bauarbeiten bis 14.08.2026',
+       text  => 'Radickestr.: Bauarbeiten im Kreuzungsbereich Nipkowstr., mögliche Sperrung der Fahrbahn, geplant vom 13.7.2026 bis 27.07.2026, weitere Bauarbeiten bis 14.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: RADICKE-2026
@@ -53850,11 +53851,11 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1688283.php (bis 8.7.2026)
 #: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
 #: by: https://www.aktives-adlershof.de/aktuelles?date=20260713 (Verzögerung bis 17.7.2026)
-#: next_check: 2026-07-17 (nächster BA) vvv
-	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
-	q4::inwork 20835,3795 20845,3825
-# XXX --- #: valid: -20260727
-# XXX --- Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
+#: next_check: 2026-07-26 (nächster BA) vvv
+#	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
+#	q4::inwork 20835,3795 20845,3825
+#: valid: -20260727
+Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
 # XXX --- #: valid: 20260727-20260814
 # XXX --- Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
 #: next_check ^^^
@@ -54077,11 +54078,11 @@ EOF
 EOF
      },
      { from  => 1782727200, # 2026-06-29 12:00
-       until => 1785535140, # 2026-07-31 23:59
-       text  => 'Kuglerstr.: Bauarbeiten zwischen Schönhauser Allee und Greifenhagener Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 30.06.2026 bis 31.07.2026',
+       until => $isodate2epoch->("2026-09-07 23:59:59"), # 1785535140, # 2026-07-31 23:59
+       text  => 'Kuglerstr.: Bauarbeiten zwischen Schönhauser Allee und Greifenhagener Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 30.06.2026 bis 07.09.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:414190/72 viz2021:13.41449,52.55284,30.06.2026,12:00 (bis 31.07.2026)
+#: source_id: LMS-BR:414190/72 viz2021:13.41449,52.55284,30.06.2026,12:00 (bis 31.07.2026) (bis 07.09.2026)
 	q4::inwork 11337,16291 11255,16313 11004,16360
 EOF
      },
@@ -54333,6 +54334,26 @@ EOF
 #: XXX außerdem Bau eines Radwegs (nicht die gesamte Strecke, nur 1km)
 #: next_check: 2026-10-31
 	2::inwork 9300,-34066 9068,-34115 8564,-34625 8340,-34842 8218,-34884 7351,-35307 5971,-35320 5765,-35529 5865,-35773 5750,-36364
+EOF
+     },
+     { from  => $isodate2epoch->("2026-07-16 00:00:00"),
+       until => $isodate2epoch->("2026-11-30 23:59:59"),
+       text  => 'Michaelkirchplatz: Umgestaltung, Fahrbahn offiziell gesperrt, voraussichtlich bis Ende November 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/michaelkirchplatz-1467045.php (bis 2. Quartal 2026)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1631066.php (Umgestaltung _beginnt_ im 2. Quartal 2026)
+#: by: https://www.entwicklungsstadt.de/stadtgruen-statt-parkraum-neugestaltung-des-noerdlichen-michaelkirchplatzes-ab-fruehjahr-2026/
+#: by: https://entwicklungsstadt.de/wp-content/uploads/2026/01/Visualisierung-Michaelkirchstrasse-Melchiorstrasse-%C2%A9-Bezirksamt-Mitte.jpg (reduzierte Asphaltflächen; evtl. Poller zur Verhinderung des Kfz-Durchgangverkehrs)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1689676.php (Baubeginn ab 13. Juli 2026, Ende November 2026)
+#: by: https://www.luisenstadt-mitte.de/projekte/umgestaltung-sechseckplatz
+#: by: https://www.entwicklungsstadt.de/was-sich-am-michaelkirchplatz-jetzt-alles-veraendert/
+#: osm_watch: note 5183324 3
+#: XXX Nach den Bauarbeiten müssen vermutlich gesperrt_car-orig-Einträge erzeugt werden.
+#: last_checked: 2026-07-16
+#: check_frequency: 10d
+#: next_check: 2026-11-30 (BA-Pressemitteilung)
+Michaelkirchplatz	q4::inwork 11491,11396 11458,11394 11451,11378 11507,11355 11514,11372 11491,11396
 EOF
      },
     );

@@ -44,7 +44,8 @@ Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 Siemensstr./Borstellstr.	X::inwork 6219,4336
 # 
 #: next_check_id: AUGUSTEVIKTORIAALLEE-2026
-#: last_checked: 2026-06-17 (traffic)
+#: last_checked: 2026-07-07 (traffic)
+#: check_frequency: 21d (traffic)
 Auguste-Viktoria-Allee/General-Barby-Str.: Gegenverkehrsregelung	X::inwork::alternating 4414,18243
 # 
 #: next_check_id: GNEISENAU-2026
@@ -72,8 +73,8 @@ Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,1
 # 
 #: next_check_id: BEHREN-2026
 #: last_checked: 2026-07-08
-#: next_check: 2026-07-17
-#: valid: -20260717
+#: next_check: 2026-07-31
+#: valid: -20260731
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: next_check_id: ALTEFOERSTEREI-2026
@@ -4554,7 +4555,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2026-07-01
+#: last_checked: 2026-07-16
 #: check_frequency: 30d
 #: next_check: 2026-09-30 (infravelo)
 	X::inwork 12185,7381
