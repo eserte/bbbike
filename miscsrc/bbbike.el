@@ -1165,4 +1165,38 @@
         (insert (bbbike-clean-mapillary-url clipboard-url))
       (message "The clipboard does not contain a valid Mapillary URL."))))
 
+(defun bbbike-insert-temp-blockings-template ()
+  "Insert a temp blockings template as last record in the buffer named
+\"bbbike-temp-blockings.pl\"."
+  (interactive)
+  (unless (equal (buffer-name) "bbbike-temp-blockings.pl")
+    (switch-to-buffer
+     (or (get-buffer "bbbike-temp-blockings.pl")
+	 (error "No buffer named bbbike-temp-blockings.pl"))))
+  (let* ((today (current-time))
+         (from (format-time-string "%Y-%m-%d 00:00:00" today))
+         ;; Approximately one month later.
+         (until (format-time-string
+                 "%Y-%m-%d 23:59:59"
+                 (time-add today (days-to-time 31)))))
+    (progn
+      (goto-char (point-max))
+      (unless (re-search-backward "^    );$" nil t)
+        (error "Cannot find closing '    );'"))
+      (beginning-of-line)
+      (insert
+       (format
+"     { from  => $isodate2epoch->(\"%s\"),
+       until => $isodate2epoch->(\"%s\"),
+       text  => '...',
+       type  => 'handicap',
+       data  => <<'EOF',
+...
+EOF
+     },
+"
+        from until))
+      (backward-char 75) ; move to beginning of first ...
+      )))
+
 (provide 'bbbike-mode)
