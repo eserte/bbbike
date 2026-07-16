@@ -24,7 +24,8 @@ use BBBikeYAML;
 # Set to a YYYYMMDD date to stop before buggy older files, or undef to disable.
 my $stop_on_buggy_date = '20130122';
 
-my $archive_dir = "$ENV{HOME}/src/bbbike-viz/archive";
+my $bbbike_viz_dir = "$ENV{HOME}/src/bbbike-viz";
+my $archive_dir = "$bbbike_viz_dir/archive";
 my $opt_all;
 my $opt_debug;
 my $use_pager = -t STDOUT && is_in_path('less');
@@ -92,6 +93,24 @@ if (!@files) {
 }
 
 @files = sort { $b->{date} <=> $a->{date} } @files;
+
+{
+    my $new_file = "$bbbike_viz_dir/newvmz.new.yaml";
+    if (-r $new_file) {
+	require File::Compare;
+	if (File::Compare::compare($new_file, $files[0]->{path}) != 0) {
+	    if ($opt_debug) {
+		print STDERR "Add $new_file to list.\n";
+	    }
+	    require POSIX;
+	    unshift @files, {
+		date => POSIX::strftime("%Y%m%d", localtime()),
+		path => $new_file,
+		name => "newvmz.new.yaml",
+	    };
+	}
+    }
+}		
 
 if ($use_pager) {
     my @pager_cmd = ('less', '-S');
