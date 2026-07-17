@@ -30,7 +30,7 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: last_checked: 2026-07-12
+#: last_checked: 2026-07-17
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-06-30 (Halteverbotsschilder)
 # REMOVED --- #: valid: -20250630
@@ -412,10 +412,6 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: last_checked: 2026-07-14
 #: check_frequency: 7d
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
-# 
-#: note: etwa 20-30m Umweg
-#: last_checked: 2026-07-01 (mapillary)
-Dresdener Str.: Hochbauarbeiten, Umweg	q3::inwork 11039,11254 11021,11287
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
 #: last_checked: 2026-07-14

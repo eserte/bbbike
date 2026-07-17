@@ -40381,7 +40381,7 @@ EOF
 #: note: 2025-01-04: unklare Situation beim westlichen Abschnitt: hier stehen halb weggedrehte Durchfahrt-verboten-Schilder, benutzbare Fahrgasse existiert
 #: note: 2025-01-04: abgesperrter Abschnitt der Fahrbahn ist etwa 60m lang (an der Wielandstr.), an der Leibnizstr. stehen schon Durchfahrt-verboten-Schilder
 #: XXX laut osm note offen, bei Verkehrsmeldungen aber noch Baustelle
-#: last_checked: 2026-06-18 (traffic)
+#: last_checked: 2026-07-17 (traffic)
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
@@ -46921,7 +46921,7 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-04-2026-l30_erkner_zweiter-bauabschnitt
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-05-2026-l30-erkner-erweiterung-des-zweiten-bauabschnitts
 #: by: https://www.entwicklungsstadt.de/erkner-wie-lange-dauert-die-sperrung-der-friedrichstrasse-noch/ (bis Frühjahr 2027?)
-#: osm_watch: note 4705333 2
+#: osm_watch[closed]: note 4705333 2
 #: osm_watch: way id="336698811" version="10"
 #: osm_watch: way id="860389744" version="10"
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
@@ -50666,7 +50666,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-16 vvv
+#: last_checked: 2026-07-17 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -52314,7 +52314,7 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-05-2026-b102-ragwegsanierung-zwischen-moegelin-und-rathenow
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-06-2026-b102-zwischen-premnitz-und-rathenow
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~08-07-2026-b102-moeglin_radwegsanierung-entlang-b102
-#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw) (vorfristig inaktiv) (bis 17.07.2026)
+#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw) (vorfristig inaktiv) (bis 17.07.2026) (inaktiv)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 EOF
      },
@@ -52744,14 +52744,15 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 EOF
      },
      { from  => 1772838000, # 2026-03-07 00:00
-       until => $isodate2epoch->("2026-07-31 23:59:59"),
-       text  => 'Behrenstr.: Einbahnstraßenregelung vor der Komischen Oper, bis Ende Juli 2026',
+       until => $isodate2epoch->("2027-01-12 23:59:59"), # $isodate2epoch->("2026-07-31 23:59:59"),
+#      text  => 'Behrenstr.: Einbahnstraßenregelung vor der Komischen Oper, bis Ende Juli 2026',
+       text  => 'Behrenstr.: Einbahnstraßenregelung vor der Komischen Oper, bis Januar 2027',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: BEHREN-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm6ljzf5k2g
-#: source_id: LMS-BR:401270/72 viz2021:13.38605,52.51546,09.03.2026,07:00 (westliche Behrenstr., bis 17.07.2026)
+#: source_id: LMS-BR:401270/72 viz2021:13.38605,52.51546,09.03.2026,07:00 (westliche Behrenstr., bis 17.07.2026) (bis 12.01.2027)
 #: source_id: LMS-BR:401276/72 viz2021:13.38904,52.51565,09.03.2026,07:00 (östliche Behrenstr., auch für den Radverkehr relevant, bis 17.07.2026) (bis 31.07.2026)
 #: source_id: LMS-BR:401277/72 viz2021:13.38623,52.51459,09.03.2026,07:00 (Glinkastr., bis 17.07.2026) (bis 31.07.2026)
 #: note: Bauarbeiten bis Mitte Juli 2026, es wird nur der Autoverkehr genannt
@@ -53511,15 +53512,16 @@ Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 1744
 EOF
      },
      { from  => 1778450400, # 2026-05-11 00:00
-       until => 1784498340, # 2026-07-19 23:59
-       text  => 'Großbeerenstr.: zwischen Tempelhofer Ufer und Obentrautstr. Bauarbeiten, Sperrung der Fahrbahn Richtung Süden, vom 12.05.2026 00:00 bis 19.07.2026 23:59',
+       until => $isodate2epoch->("2026-08-31 23:59:59"), # 1784498340, # 2026-07-19 23:59
+#      text  => 'Großbeerenstr.: zwischen Tempelhofer Ufer und Obentrautstr. Bauarbeiten, Sperrung der Fahrbahn Richtung Süden, vom 12.05.2026 00:00 bis 19.07.2026 23:59',
+       text  => 'Großbeerenstr.: zwischen Tempelhofer Ufer und Obentrautstr. Bauarbeiten, Sperrung der Fahrbahn Richtung Süden, vom 12.05.2026 bis 31.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:407959/72 viz2021:13.38521,52.49849,12.05.2026,00:00 (bis 19.07.2026)
+#: source_id: LMS-BR:407959/72 viz2021:13.38521,52.49849,12.05.2026,00:00 (bis 19.07.2026) (bis 31.08.2026)
 #: note: der gesperrte Abschnitt ist schätzungsweise 100m lang, keine Ausnahmen für Radfahrer
 #: priority: #A
 #: last_checked: 2026-06-26
-#: next_check: 2026-07-19 (VIZ-Verkehrsmeldung + Halteverbotsschilder)
+#: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 	q4::inwork; 9146,10284 9111,10090
 EOF
      },
@@ -53870,7 +53872,7 @@ EOF
 #: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
 #: also_indoor: traffic (G,T,no-H,no-W)
-#: last_checked: 2026-07-12 (traffic) vvv
+#: last_checked: 2026-07-17 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
@@ -53943,15 +53945,15 @@ Mirbachplatz	q4::inwork 13331,16424 13348,16387
 EOF
      },
      { from  => $isodate2epoch->("2026-06-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2026-07-31 23:59:59"), # $isodate2epoch->("2026-07-31 23:59:59"),
-       text  => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 31.7.2026',
+       until => $isodate2epoch->("2026-08-31 23:59:59"), # $isodate2epoch->("2026-07-31 23:59:59"),
+       text  => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 31.8.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1682627.php
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mov62s6ock26 (hier bis 31.07.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierungsarbeiten-auf-der-olbersstrasse-in-charlottenburg/
 #: source_id: LMS-BR:412913/72 viz2021:13.30654,52.52884,22.06.2026,07:00 (bis 17.07.2026) (bis 31.07.2026)
-#: source_id: LMS-BR:414995/72 viz2021:13.29643,52.52933,07.07.2026,07:00 (Tegeler Weg bis Kamminer Str., bis 17.07.2026)
+#: source_id: LMS-BR:414995/72 viz2021:13.29643,52.52933,07.07.2026,07:00 (Tegeler Weg bis Kamminer Str., bis 17.07.2026) (bis 31.08.2026)
 	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 EOF
      },
@@ -53976,11 +53978,11 @@ EOF
 EOF
      },
      { from  => 1781758800, # 2026-06-18 07:00
-       until => 1784386800, # 2026-07-18 17:00
+       until => 1784311311, # 1784386800, # 2026-07-18 17:00
        text  => 'Dänenstr.: Baustelle zwischen Seelower Str. und Schönfließer Str., evtl. ist auch der Radverkehr betroffen, vom 19.06.2026 07:00 bis 18.07.2026 17:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:412466/72 viz2021:13.41018,52.55,19.06.2026,07:00 (bis 18.07.2026)
+#: source_id: LMS-BR:412466/72 viz2021:13.41018,52.55,19.06.2026,07:00 (bis 18.07.2026) (vorfristig inaktiv)
 	q4::inwork 10729,16042 10593,16037
 EOF
      },
@@ -54354,6 +54356,41 @@ EOF
 #: check_frequency: 10d
 #: next_check: 2026-11-30 (BA-Pressemitteilung)
 Michaelkirchplatz	q4::inwork 11491,11396 11458,11394 11451,11378 11507,11355 11514,11372 11491,11396
+EOF
+     },
+     { from  => 1783375200, # 2026-07-07 00:00
+       until => 1785967200, # 2026-08-06 00:00
+       text  => 'Residenzstr.: Bauarbeiten am Franz-Neumann-Platz, Sperrungen, Engstellen, geplant bis 5.8.2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: next_check_id: RESIDENZ-2026
+#: source_id: LMS-BR:415057/72 viz2021:13.36354,52.56514,07.07.2026,00:00 (zwischen Simmelstr. und Walderseestr., bis 05.08.2026)
+#: source_id: LMS-BR:415078/72 viz2021:13.36582,52.5629,07.07.2026,00:00 (angrenzende Holländerstr., bis 05.08.2026)
+#: source_id: LMS-BR:415077/72 viz2021:13.36416,52.56378,07.07.2026,00:00 (angrenzende Pankower Allee, bis 05.08.2026)
+#: note: wobei man theoretisch auf der 1+1-spurigen Gegenfahrbahn fahren könnte; ein Radfahrverbot scheint es nicht zu geben
+Residenzstr.: Sperrung Richtung Norden	1::inwork 7602,17399 7579,17532
+Holländerstr.: mögliche Engstellen	q2::inwork; 7602,17399 7675,17427
+Holländerstr.: Sperrung Richtung Westen	q4::inwork; 7675,17430 7602,17399
+Pankower Allee: mögliche Enstellen	q2::inwork 7675,17538 7579,17532
+Fahlandgasse: provisorische Einbahnstraßenregelung	q4::inwork; 7675,17538 7675,17475 7675,17430
+EOF
+     },
+     { from  => 1784196000, # 2026-07-16 12:00
+       until => 1788559140, # 2026-09-04 23:59
+       text  => 'Karwendelstr.: Bauarbeiten zwischen Drakestr. und Ringstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 17.07.2026 12:00 bis 04.09.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 (bis 04.09.2026)
+	q4::inwork 4011,2942 4350,3161
+EOF
+     },
+     { from  => 1785643200, # 2026-08-02 06:00
+       until => 1797620400, # 2026-12-18 20:00
+       text  => 'Schmölln - Grünz: Erneuerung Durchlass, Sperrung, 03.08.2026 06:00 Uhr bis 18.12.2026 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/221-E/26/072 (bis 18.12.2026)
+	2::inwork 57042,99574 57512,99290
 EOF
      },
     );

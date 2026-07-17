@@ -265,7 +265,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 T¸rkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
 #: XXX Baumaﬂnahme 12.15 (Realisierung nach 2011)
-#: last_checked: 2026-03-22 (mapillary)
+#: last_checked: 2026-07-16 (mapillary)
 #: check_frequency: 120d
 #: osm_watch: way id="82449630" version="25"
 #: osm_watch: way id="32426064" version="21"
@@ -1838,6 +1838,7 @@ Marzahner Chaussee: Hochbordradweg entsteht	?::inwork; 19192,13350 19198,13272 1
 # REMOVED --- #: by: https://www.facebook.com/groups/532826740168529/?multi_permalinks=4808702855914208&notif_id=1645116583162629&notif_t=feedback_reaction_generic&ref=notif (Fuﬂg‰ngerampel voraussichtlich April 2022) --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/umweg-fuer-mobilitaetseingeschraenkte-fahrgaeste-auch-noch-im-april_a340976 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-verkehr/bautechnische-probleme-fuehrten-zur-verzoegerung_a347339 (Inbetriebnahme noch im Juni 2022 vorgesehen) --- #: XXX laut osm mittlerweile eingeschaltet --- #: last_checked: 2022-10-10 --- #: check_frequency: 30d --- #: next_check: 2022-10-24 --- Fuﬂg‰ngerampel Rhinstr.: noch nicht eingeschaltet	?::inwork 18201,12190 18216,12209 18235,12189
 # REMOVED (weitgehend realisiert (-> qualitaet_s), aber noch nicht ganz fertig & nicht freigegeben) --- #: next_check_id: KAMERUNER-2020 --- #: XXX nicht eindeutig: "Asphaltierung Kameruner Straﬂe Fahrradstraﬂe Togostraﬂe" --- kˆnnte im Minimalfall nur die Kreuzung sein (siehe auch anderen fragezeichen-Eintrag nur f¸r die gepflasterte Kreuzung) --- #: by: https://api.fixmyberlin.de/api/plannings/53 (Fertigstellung f¸r 2019/2020 geplant (gesamte Kameruner Str.) (mittlerweile nur zwischen Togostr. und M¸llerstr.) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Kameruner/Togo erw‰hnt; 2019) --- #: osm_watch: way id="169711777" version="12" --- #: XXX laut osm bereits fertig, laut VMZ noch gesperrt --- #: source_id: 2147345842 (hier: zwischen Togostr. u. M¸llerstr.) --- #: last_checked: 2020-07-17 --- #: next_check: 2020-08-26 --- Kameruner Str.: vermutlich wird hier asphaltiert	?::inwork 6383,15972 6484,16085 6587,16199
 # 
+#: next_check_id: RESIDENZ-2026
 #: by: https://api.fixmyberlin.de/api/projects/298
 #: by: https://www.infravelo.de/projekt/residenzstrasse/ (Radfahrstreifen in Planung, Bau 4. Quartal 2021 - 4. Quartal 2025) (mittlerweile: Baubeginn 4. Quartal 2023) (4. Quartal 2026 - 4. Quartal 2028)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9859 (Beginn 2023)
@@ -1869,18 +1870,15 @@ Marzahner Chaussee: Hochbordradweg entsteht	?::inwork; 19192,13350 19198,13272 1
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnqvpvhpac2b (Sanierungsarbeiten Hˆhe Simmelstr., bis Ende Juni 2026, danach weitere Arbeiten)
 #: by: https://zukunft-residenzstrasse.de/aktuell/infos-zum-start-der-umbauarbeiten-residenzstrasse.html (voraussichtlich Juni 2026 bis Fr¸hjahr 2028, Baubereich Simmelstr. - Walderseestr.)
 #: source_id: LMS-BR:411172/72 viz2021:13.36354,52.56514,08.06.2026,07:00 (Hˆhe Simmelstr., bis 26.06.2026) (bis 07.07.2026) (bis 05.08.2026)
-#: source_id: LMS-BR:415057/72 viz2021:13.36354,52.56514,07.07.2026,00:00 (zwischen Simmelstr. und Walderseestr., bis 05.08.2026)
-#: source_id: LMS-BR:415078/72 viz2021:13.36582,52.5629,07.07.2026,00:00 (angrenzende Holl‰nderstr., bis 05.08.2026)
-#: source_id: LMS-BR:415077/72 viz2021:13.36416,52.56378,07.07.2026,00:00 (angrenzende Pankower Allee, bis 05.08.2026)
 #: osm_watch: way id="147432180" version="17"
 #: osm_watch: way id="25630356" version="33"
 #: osm_watch: way id="82456679" version="18"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-16 (mapillary)
 # REMOVED --- #: check_frequency: 150d (ab Sommer 2025 ggfs. anpassen)
 #: check_frequency: 90d
-#: next_check: 2026-06-30 (zukunft-residenzstrasse)
+# REMOVED --- #: next_check: 2026-06-30 (zukunft-residenzstrasse)
 Residenzstr.: Radverkehrsanlagen zur Erhˆhung der Radverkehrsqualit‰t	?::projected 7602,17399 7579,17532 7572,17558
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-16 (mapillary)
 #: check_frequency: 360d (keine bekannte Planung)
 #: next_check: 2028-12-31 (infravelo) 
 Residenzstr.: Radverkehrsanlagen zur Erhˆhung der Radverkehrsqualit‰t	?::projected 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
@@ -9921,8 +9919,9 @@ Bl¸cherplatz: Umbenennung zu Eva-Mamlok-Platz	? 9521,10010 9536,10064 9579,10122
 Trampe - Eberswalde: Planung eines Radwegs	? 39350,42740 38746,46954 38683,47327
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-05-2026-b102-ortsdurchfahrt-rathenow-grundhafter-ausbau-startet-sommer-2026 (Juli 2026 bis Ende Oktober 2030)
-#: source_id: LS/223-P/26/084 (bis 31.07.2030)
-#: next_check: 2030-07-31 (Verkehrsmeldung)
+#: source_id: LS/223-P/26/084 (bis 31.07.2030) (bis 21.08.2026)
+#: next_check: 2026-08-21 (Verkehrsmeldung)
+# REMOVED --- #: next_check: 2030-07-31 (Verkehrsmeldung)
 Rathenow: nach den Bauarbeiten mit Radschutzstreifen	? -62108,21448 -62111,21747 -62419,21751
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20260127-mobilitaetsrat-mitte---praesentation.pdf (2026?)
@@ -9949,6 +9948,7 @@ Krumme Lanke: Uferweg wird vielleicht teilweise einen "Pflasterbelag" (Verbundst
 # 
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/berliner-autobahn-wird-auf-jahre-zur-baustelle-marode-brucke-muss-abgerissen-werden--kommt-nun-der-dauerstau-14950862.html (2027-2028)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neuer-zeitplan-fur-brucken-abriss-jahrelange-baustelle-auf-berliner-autobahn--ab-wann-droht-hier-die-sperrung-15661453.html (Abriss fr¸hestens Mitte 2027)
+#: osm_watch: note 4489386 2
 #: last_checked: 2026-07-15
 #: next_check: 2027-10-01 (Tsp)
 Schˆnerlinder Br¸cke: Neubau geplant	?::projected 11980,24276 11959,24220
@@ -10037,7 +10037,7 @@ Schloﬂstr.: Verbreiterung der Radfahrstreifen zwischen Spandauer Damm und Kaiser
 Straﬂe 42: verkehrsberuhigter Bereich soll entstehen	? 15271,22527 15377,22452 15442,22412
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_29_1813_1900_online.pdf
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-17
 #: check_frequency: 90d
 Rudolfstr.: beabsichtigte Teileinziehung	?::projected 13886,10939 14026,10869
 # 
@@ -10050,6 +10050,53 @@ Wensickendorf: nach den Bauarbeiten Radwege? wo genau?	? 8740,38857 8665,38862 8
 Bˆhne - Rathenow (L96): Radwegl¸cke wird geschlossen	? -64529,15725 -64447,15895 -64176,16323 -64923,18443 -65141,19165 -65165,19674 -65134,20143
 #: section ^^^
 #: ignore ^^^
+# 
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/kiezblock-plaene-aus-mitte-haben-auswirkungen-auf-den-bezirk_a344003
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/fussverkehrsprojekte/modellprojekte/kiezblockoffensive/ ("Kiezblock-Offensive in 12 Gebieten (Mitte)")
+#: by: https://www.entwicklungsstadt.de/kiezblocks-in-berlin-mitte-bezirk-und-senat-einigen-sich-auf-vier-projekte/ (Realisierung ab 2026)
+#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13519 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1694863.php
+#: by: https://kiezblocks-mitte.de/alle-kieze/flottwellkiez/ (2026)
+#: by: https://www.entwicklungsstadt.de/vier-kiezblocks-fuer-mitte-in-diesen-strassen-aendert-sich-jetzt-der-verkehr/
+#: last_checked: 2026-06-26 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2026-12-31 vvv
+Flottwellstr.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 8199,10634 8287,10786 8304,10816 8328,10831
+Kurf¸rstenstr.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 8058,10306 7850,10351 7744,10372 7633,10394
+# REMOVED --- Flottwellkiez: Kiezblock geplant	? 8015,11030 8307,10778 8126,10326 7688,10426 8015,11030
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: by: https://www.entwicklungsstadt.de/kiezblocks-in-berlin-mitte-bezirk-und-senat-einigen-sich-auf-vier-projekte/ (Realisierung ab 2026, wo genau?)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1694863.php
+#: by: https://kiezblocks-mitte.de/alle-kieze/soldiner-kiez-ost/ (2026?)
+#: by: https://kiezblocks-mitte.de/alle-kieze/soldiner-kiez-west/ (2026?)
+#: last_checked: 2026-07-02 (mapillary) vvv
+#: check_frequency: 60d vvv
+#: next_check: 2026-12-31 (entwicklungsstadt) vvv
+Steegerstr.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 9771,17154 9787,17050 9736,16919 9719,16904
+Soldiner Str.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 9299,16889 9082,16982
+Biesentaler Str.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 9245,16758 9030,16853
+Koloniestr.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 8503,16716 8583,16914 8592,16938 8606,16973 8677,17154
+# REMOVED --- Soldiner Kiez	? 8519,17464 8489,16773 9416,16666 9620,16947 8519,17464
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: by: https://www.entwicklungsstadt.de/kiezblocks-in-berlin-mitte-bezirk-und-senat-einigen-sich-auf-vier-projekte/ (Realisierung ab 2026, wo genau?)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1694863.php
+#: by: https://kiezblocks-mitte.de/alle-kieze/stephankiez/ (2026?)
+#: last_checked: 2026-04-12 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2026-12-31 (entwicklungsstadt) vvv
+Stephanstr.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 6992,14251 6956,14288 6677,14219
+Stephanstr.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 6226,13951 6325,14031 6394,14085 6487,14156 6677,14219
+Quitzowstr.: Einbahnstraﬂenregelung (hoffentlich nur f¸r Kfz) geplant	?; 6089,14197 6204,14220
+# REMOVED --- Stephankiez	? 6263,14213 6251,13950 6476,13848 7096,14373 6263,14213
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 ######################################################################
 #
@@ -12228,7 +12275,7 @@ Arnimstr.: hier soll eine Gr¸nfl‰che entstehen	?::projected 18472,16844 18267,17
 #: last_checked: 2026-06-10 vvv
 #: check_frequency: 270d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
-#: osm_watch: way id="44606576" version="25"
+#: osm_watch: way id="44606576" version="26"
 # REMOVED --- Bebauungsplan XV-11 (Hasselwerderstr....): Planstraﬂen sowie ein Uferweg werden entstehen	?::projected 17968,5904 18213,5783
 # REMOVED (-> strassen + temp_blockings) --- (Uferweg)	?::inwork 18192,5931 18118,5953
 #: osm_watch: way id="958828369" version="2"
@@ -12318,6 +12365,7 @@ Heinersdorf, Alte G‰rtnerei: neue Straﬂenverbindung, Verlegung des Durchgangverk
 #: by: https://www.entwicklungsstadt.de/verkehrsknoten-marzahn-strassenbahn-faehrt-wieder/
 #: by: https://marzahn-hellersdorf.com/strassenbahn-faehrt-wieder-durch-m6-und-16-rollen-ueber-die-maerkische-allee/
 #: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article412111267/tramlinien-fahren-wieder-durch-marzahner-knoten-dank-dieser-konstruktion.html
+#: by: https://www.entwicklungsstadt.de/verkehrsknoten-marzahn-strassenbahn-faehrt-wieder-grossbaustelle-bleibt/ (bis 2030)
 #: source_id: viz2021:13.539245,52.540066,05.12.2022,07:00 (Vorbereitungsarbeiten bis 9.12.2022) (inaktiv)
 #: source_id: viz2021:13.539533,52.539819,19.12.2022,07:00 (bis 6.1.2023) (bis 31.12.2026) (bis 6.1.2023) (inaktiv)
 #: source_id: viz2021:13.539363,52.5398,06.01.2023,13:06 (bis 03.03.2023) (inaktiv)
@@ -12348,8 +12396,7 @@ Heinersdorf, Alte G‰rtnerei: neue Straﬂenverbindung, Verlegung des Durchgangverk
 #: priority: #A
 #: last_checked: 2026-06-16 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2026-12-31 (Ex-VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2029-12-31 (SenMVKU-Seite, entwicklungsstadt: Gesamtfertigstellung)
+#: next_check: 2030-12-31 (entwicklungsstadt)
 Knoten Marzahn: Neubau	?::inwork 19467,15045 19633,15098
 # 
 #: next_check_id: KANZLERPARK-2024
