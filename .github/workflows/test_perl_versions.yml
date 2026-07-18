@@ -29,6 +29,9 @@ jobs:
             bbbike_test_skip_mapserver: 1
           - perl_version:               5.42.0-bookworm
             bbbike_test_skip_mapserver: 1
+          # XXX use trixie once Tk is fixed
+          - perl_version:               5.44.0-bookworm
+            bbbike_test_skip_mapserver: 1
           # XXX need to fix things for bbbike_test_skip_mapserver: 0
     env:
       TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT: 1
