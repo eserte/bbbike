@@ -27,7 +27,7 @@ if ($] < 5.010) {
     plan skip_all => 'works only with perl 5.10.0 and newer';
 }
 
-plan tests => 21;
+plan tests => 24;
 
 # Setup mock archive directory
 my $tempdir = tempdir(CLEANUP => 1);
@@ -155,6 +155,17 @@ my $vizhistory_cmd = "$^X -I$FindBin::RealBin/.. -I$FindBin::RealBin/../lib $Fin
     my $exit_code = $? >> 8;
 
     is($exit_code, 1, "Exit code is 1 when non-existent ID lookup is run with --all");
+}
+
+# Case: --find-one (should skip newest, find it in an older one, exit 0)
+{
+    my $cmd = "$vizhistory_cmd --dir $archive_dir --no-pager --find-one other_id";
+    my $output = `$cmd 2>&1`;
+    my $exit_code = $? >> 8;
+
+    is($exit_code, 0, "Exit code is 0 with --find-one option for other_id");
+    like($output, qr/File: 2024\/newvmz-20241231\.yaml/, "Output contains oldest file header with --find-one option");
+    like($output, qr/\+text: only in oldest/, "Output contains correct diff for oldest file");
 }
 
 # Case: Verify stop_on_buggy_date behaviour (by default, stops on <= 20130122)

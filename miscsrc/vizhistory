@@ -28,6 +28,7 @@ my $stop_on_buggy_date = '20130122';
 my $bbbike_viz_dir = "$ENV{HOME}/src/bbbike-viz";
 my $archive_dir = "$bbbike_viz_dir/archive";
 my $opt_all;
+my $opt_find_one;
 my $opt_debug;
 my $use_pager = -t STDOUT && is_in_path('less');
 my $diff_context = 3;
@@ -37,12 +38,13 @@ my $opt_help;
 GetOptions(
     'dir=s'          => \$archive_dir,
     'all'            => \$opt_all,
+    'find-one'       => \$opt_find_one,
     'debug'          => \$opt_debug,
     'pager!'         => \$use_pager,
     'diff-context=i' => \$diff_context,
     'process-buggy'  => \$opt_process_buggy,
     'help|h|?'       => \$opt_help,
-) or die "usage: $0 [--dir <dir>] [--all] [--debug] [--no-pager] [--diff-context <num>] [--process-buggy] <id>\n";
+) or die "usage: $0 [--dir <dir>] [--all | --find-one] [--debug] [--no-pager] [--diff-context <num>] [--process-buggy] <id>\n";
 
 if ($opt_help) {
     print_usage();
@@ -51,7 +53,7 @@ if ($opt_help) {
 
 my $id = shift;
 if (!defined $id || $id eq "") {
-    die "usage: $0 [--dir <dir>] [--all] [--debug] [--no-pager] [--diff-context <num>] [--process-buggy] <id>\n";
+    die "usage: $0 [--dir <dir>] [--all | --find-one] [--debug] [--no-pager] [--diff-context <num>] [--process-buggy] <id>\n";
 }
 
 if (!-d $archive_dir) {
@@ -153,9 +155,9 @@ for my $file (@files) {
             matched_key => $matched_key,
         };
     } else {
-        if ($found_at_least_once && !$opt_all) {
-            last;
-        }
+	if ($opt_find_one && !$found_at_least_once) {
+	    next;
+	}
         if (!$opt_all) {
             last;
         }
@@ -317,6 +319,7 @@ usage: $0 [options] <id>
 Options:
   --dir <dir>          Set the VIZ archive directory (default: ~/src/bbbike-viz/archive)
   --all                Search until the very first file (do not stop on missing ID)
+  --find-one           search for one occurrence of ID
   --debug              Show currently checked files on STDERR
   --no-pager           Disable automatic pager
   --diff-context <num> Set number of context lines for unified diff (default: 3)
