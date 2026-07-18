@@ -1769,6 +1769,7 @@ sub show_any_diff {
 	my(@cols) = _vmz_lbvs_splitter($line);
 	if (defined $cols[0] && (($cols[0] =~ /CHANGED/ && $cols[0] !~ /UNCHANGED/) || $cols[0] =~ /REMOVED/)) {
 	    my $id = $cols[2];
+	    my $clean_id = (split(' ', $id || ''))[0] || '';
 	    push @cols, {
 		text => "Hist",
 		cb => sub {
@@ -1776,8 +1777,12 @@ sub show_any_diff {
 		    return $lb->Button(
 			-text => "Hist",
 			-relief => 'flat',
+			-padx => 0,
+			-pady => 0,
+			-borderwidth => 1,
+			-highlightthickness => 0,
 			-command => sub {
-			    _show_viz_history($id);
+			    _show_viz_history($clean_id);
 			}
 		    );
 		}
