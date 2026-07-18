@@ -1745,6 +1745,7 @@ sub show_any_diff {
     $f = $t->Frame->pack(-fill => "both", -expand => 1);
 
     my(@columnwidths) = _vmz_lbvs_columnwidths();
+    push @columnwidths, 80;
     {
 	my $sum_columnwidths = 0;
 	my $joker_index;
@@ -1763,8 +1764,32 @@ sub show_any_diff {
 	}
     }
 
+    my $wrapped_splitter = sub {
+	my($line) = @_;
+	my(@cols) = _vmz_lbvs_splitter($line);
+	if (defined $cols[0] && (($cols[0] =~ /CHANGED/ && $cols[0] !~ /UNCHANGED/) || $cols[0] =~ /REMOVED/)) {
+	    my $id = $cols[2];
+	    push @cols, {
+		text => "Hist",
+		cb => sub {
+		    my ($lb, $col_val) = @_;
+		    return $lb->Button(
+			-text => "Hist",
+			-relief => 'flat',
+			-command => sub {
+			    _show_viz_history($id);
+			}
+		    );
+		}
+	    };
+	} else {
+	    push @cols, "";
+	}
+	return @cols;
+    };
+
     main::choose_ort("str", $abk,
-		     -splitter => \&_vmz_lbvs_splitter,
+		     -splitter => $wrapped_splitter,
 		     -columnwidths => \@columnwidths,
 		     # XXX Maybe implement -infocallback (an info
 		     # button in the choose_ort window) some time, but
@@ -1777,6 +1802,38 @@ sub show_any_diff {
 		     -container => $f,
 		     -ondestroy => sub { $t->destroy },
 		    );
+}
+
+sub _show_viz_history {
+    my ($id) = @_;
+    my $token = "vizhistory-$id";
+    my $t = main::redisplay_top($main::top, $token, -title => "History for ID $id");
+    if (!$t) {
+	$t = $main::toplevel{$token};
+	$_->destroy for ($t->children);
+    } else {
+	$t->geometry("600x400");
+    }
+
+    my $bf = $t->Frame->pack(-side => 'bottom', -fill => 'x');
+    $bf->Button(-text => "Close", -command => sub { $t->destroy })->pack(-pady => 5);
+
+    my $txt = $t->Scrolled("ROText", -scrollbars => "osoe")->pack(-fill => 'both', -expand => 1);
+
+    my $out = "";
+    eval {
+	my $root = bbbike_root();
+	open(my $fh, "-|", $^X, "$root/miscsrc/vizhistory", "--no-pager", $id)
+	    or die "Cannot execute vizhistory: $!";
+	local $/;
+	$out = <$fh>;
+	close($fh);
+    };
+    if ($@) {
+	$out = "Error: $@";
+    }
+
+    $txt->insert('end', $out);
 }
 
 sub _lbvs_info_callback {
