@@ -13,6 +13,7 @@
 
 use strict;
 use warnings;
+use 5.010; # defined-or
 use FindBin;
 use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
 

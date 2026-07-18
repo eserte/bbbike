@@ -23,6 +23,9 @@ use Test::More;
 if (!eval { require YAML::XS; 1 }) {
     plan skip_all => 'YAML::XS not available';
 }
+if ($] < 5.010) {
+    plan skip_all => 'works only with perl 5.10.0 and newer';
+}
 
 plan tests => 21;
 

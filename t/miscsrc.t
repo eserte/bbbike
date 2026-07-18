@@ -119,6 +119,7 @@ for my $f (@files) {
 		       |  check_bbbike_temp_blockings
 		       |  mapillary-v4-fetch
 		       |  VMZTool\.pm
+		       |  vizhistory
 		       |  winter_optimization\.pl
 		       )$}x && $] < 5.010;
 	myskip "$f works only with perl >= 5.14.0", 1
