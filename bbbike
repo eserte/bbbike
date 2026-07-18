@@ -12188,6 +12188,7 @@ sub choose_ort {
 	$sorted = "unsorted";
     }
     my $splitter = $args{-splitter};
+    my $addwidgetcb = $args{-addwidgetcb};
     my $columnwidths = $args{-columnwidths};
     my $container = $args{-container};
     my $do_popup = exists $args{-popup} ? $args{-popup} : 1;
@@ -12355,7 +12356,7 @@ sub choose_ort {
 	    $conv = $object && $object->get_conversion;
 
 	    my $Listbox = "Listbox";
-	    if ($splitter) {
+	    if ($splitter || $addwidgetcb) {
 		$Listbox = "HList";
 	    } else {
 		if ($sorted eq 'alphabetic') {
@@ -12467,11 +12468,14 @@ sub choose_ort {
 		my(@cols) = $splitter->($first_ort, $first_index);
 		$max_cols = scalar @cols;
 	    }
+	    if ($addwidgetcb) {
+		$max_cols = ($max_cols || 1) + 1;
+	    }
 
 	    $lb = $t->Scrolled($Listbox,
 			       -scrollbars => 'osoe',
 			       -selectmode => 'single',
-			       ($splitter
+			       (($splitter || $addwidgetcb)
 				? (-columns => $max_cols,
 				   -exportselection => 1,
 				  )
@@ -12480,7 +12484,7 @@ sub choose_ort {
 			      )->pack(-expand => 1, -fill => 'both');
 	    $t->Advertise(Listbox => $lb->Subwidget("scrolled"));
 
-	    if ($splitter) {
+	    if ($splitter || $addwidgetcb) {
 		my @wraplength;
 		if ($columnwidths) {
 		    @wraplength = @$columnwidths;
@@ -12496,19 +12500,57 @@ sub choose_ort {
 		my $inx = 0;
 		# XXX no support for sort styles here XXX
 		for my $ort (sort keys %orte) {
-		    my(@cols) = $splitter->($ort, $orte{$ort});
+		    my(@cols);
+		    if ($splitter) {
+			@cols = $splitter->($ort, $orte{$ort});
+		    } else {
+			@cols = ($ort);
+		    }
+
+		    my $col_val0 = $cols[0];
+		    my @add_args;
+		    if (ref $col_val0 eq 'HASH') {
+			if (my $cb = $col_val0->{cb}) {
+			    my $w = $cb->($lb, $col_val0);
+			    @add_args = (-itemtype => 'window', -window => $w);
+			} else {
+			    @add_args = (-text => $col_val0->{text});
+			}
+		    } else {
+			@add_args = (-text => $col_val0, -style => $text_style[0]);
+		    }
+
 		    $lb->add($inx,
-			     -text => $cols[0],
+			     @add_args,
 			     -data => $ort,
-			     -style => $text_style[0],
 			    );
 		    for my $col (1 .. $#cols) {
-			next if $col > $max_cols; # XXX off by one?
+			next if $col >= $max_cols;
+			my $col_val = $cols[$col];
+			my @item_args;
+			if (ref $col_val eq 'HASH') {
+			    if (my $cb = $col_val->{cb}) {
+				my $w = $cb->($lb, $col_val);
+				@item_args = (-itemtype => 'window', -window => $w);
+			    } else {
+				@item_args = (-text => $col_val->{text});
+			    }
+			} else {
+			    @item_args = (-text => $col_val, -style => $text_style[$col]);
+			}
 			$lb->itemCreate($inx, $col,
-					-text => $cols[$col],
-					-style => $text_style[$col],
+					@item_args,
 				       );
 		    }
+
+		    if ($addwidgetcb) {
+			my $w = $addwidgetcb->($lb, $ort, $orte{$ort});
+			$lb->itemCreate($inx, $max_cols - 1,
+					-itemtype => 'window',
+					-window => $w,
+				       );
+		    }
+
 		    $inx++;
 		}
 		# XXX destroy text_styles?
@@ -12553,7 +12595,7 @@ sub choose_ort {
 
 	    my $show_sub =  sub {
 		my %args = @_;
-		my $lb_index = ($splitter
+		my $lb_index = (($splitter || $addwidgetcb)
 				? $lb->info('anchor')
 				: $lb->index('active')
 			       );
@@ -12562,7 +12604,7 @@ sub choose_ort {
 		if ($sorted eq 'unsorted') {
 		    $index = $lb_index;
 		} else {
-		    my $ort = ($splitter
+		    my $ort = (($splitter || $addwidgetcb)
 			       ? $lb->info("data", $lb_index)
 			       : $lb->get($lb_index)
 			      );
@@ -12690,7 +12732,7 @@ sub choose_ort {
 	    my $find_and_select_nearest = sub {
 		my($w, $y) = @_;
 		my $inx = $w->nearest($y);
-		if ($splitter) {
+		if ($splitter || $addwidgetcb) {
 		    $w->selectionClear;
 		    $w->selectionSet($inx);
 		    $w->anchorSet($inx);
@@ -12741,10 +12783,11 @@ sub choose_ort {
     }
 
     if (defined $see) {
-	if ($splitter) {
+	if ($splitter || $addwidgetcb) {
 	TRY: {
 		for my $inx ($lb->info('children')) {
-		    if ($lb->itemCget($inx, 0, '-text') eq $see) {
+		    my $text = eval { $lb->itemCget($inx, 0, '-text') };
+		    if (defined $text && $text eq $see) {
 			$lb->see($inx);
 			$lb->anchorSet($inx);
 			last TRY;
