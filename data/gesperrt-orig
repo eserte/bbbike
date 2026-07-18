@@ -300,7 +300,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="7"
-#: last_checked: 2026-07-10
+#: last_checked: 2026-07-18
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -1536,7 +1536,7 @@ Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 #: next_check_id: HOENOWERWEG-2025
 #: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
-#: last_checked: 2026-06-24
+#: last_checked: 2026-07-18
 #: check_frequency: 90d
 #: next_check: 2027-02-28
 Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
@@ -4471,7 +4471,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-07-15
+#: last_checked: 2026-07-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4540,7 +4540,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="5"
-#: last_checked: 2026-06-29
+#: last_checked: 2026-07-16 (luftbildsuche)
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
@@ -4551,29 +4551,10 @@ Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11
 Delbrückstr.: Baustellenfläche, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
 #: next_check_id: HIRSCHGARTEN-2024
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze?date=20240724
-#: by: https://www.bahninfo-forum.de/read.php?9,726467,809524#msg-809524
-#: by: https://www.bahninfo-forum.de/read.php?9,726467,809845#msg-809845 (mittlerweile nur noch für Radfahrer befahrbar)
-#: by: https://www.bahninfo-forum.de/read.php?9,726467,811931#msg-811931
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten?date=20260624 (Sperrung der Straße Am Wiesenrain vom 10. Juli 2026 18 Uhr bis 24. August 2026 21 Uhr, vermutlich kann man als Fußgänger noch passieren)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1685646.php
-#: by: https://www.entwicklungsstadt.de/s-bahnhof-hirschgarten-deutsche-bahn-kuendigt-neue-sperrungen-an/
-#: XXX 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
-#: XXX 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information (vor Ort keine Freigabe für Radfahrer)
-#: also_indoor: traffic (G)
-#: last_checked: 2026-06-16 (mapillary) vvv
-# REMOVED --- #: check_frequency: 120d
-# REMOVED --- #: next_check: 2026-10-29
-#: next_check: 2026-07-10 (Umstellung von Einbahnstraßenregelung auf Sperrung) vvv
-# REMOVED --- #: valid: -20260709 --- Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
-#: valid: 20260710-20260824
-Am Wiesenrain: Sperrung der Fahrbahn	2s:q4:inwork 23931,5992 24122,6007
-#: next_check ^^^
-#: last_checked ^^^
 #: XXX evtl. muss mudways hier nach den Bauarbeiten neu evaluiert werden?
-#: last_checked: 2026-07-09 (mapillary) vvv
+#: last_checked: 2026-07-18 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2026-12-31 vvv
+#: next_check: 2027-09-15 (entwicklungsstadt) vvv
 #: osm_watch: way id="37452317" version="6"
 #: osm_watch: way id="1326231386" version="1"
 Mittelheide - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::inwork 24089,6144 24060,6059 23951,6063
@@ -4650,7 +4631,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
-#: last_checked: 2026-06-30
+#: last_checked: 2026-07-18
 #: check_frequency: 60d
 #: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -4737,7 +4718,7 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="5"
-#: last_checked: 2026-07-04 (architektur-urbanistik)
+#: last_checked: 2026-07-16 (luftbildsuche)
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
@@ -4888,7 +4869,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-07-10
+#: last_checked: 2026-07-18
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4896,7 +4877,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-07-10 vvv
+#: last_checked: 2026-07-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -4922,7 +4903,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
 #: by: https://www.entwicklungsstadt.de/erweiterung-des-bundeskanzleramtes-baukoerper-steht-neue-bruecke-wartet-auf-ihren-einbau/
-#: last_checked: 2026-07-04 (architektur-urbanistik) vvv
+#: last_checked: 2026-07-16 (luftbildsuche) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="6"
@@ -5068,7 +5049,8 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # 
 #: note: "Referenzfläche", Wald wird sich selbst überlassen
 #: osm_watch: note 3250345 4
-#: last_checked: 2025-04-02
+#: osm_watch: way id="836770736" version="4"
+#: last_checked: 2026-07-18
 #: check_frequency: 180d
 Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 # 

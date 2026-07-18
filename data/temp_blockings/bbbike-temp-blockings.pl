@@ -21285,7 +21285,7 @@ EOF
 #: osm_watch: way id="152466403" version="24"
 #: osm_watch: way id="1424980083" version="4"
 #: osm_watch: way id="1082710233" version="5"
-#: osm_watch: note 4444162 10
+#: osm_watch[closed]: note 4444162 10
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
 # REMOVED --- #: note: Länge des gesperrten Abschnitts etwa 65m, deshalb q3 statt q4 ---	q3::inwork 19766,1796 19898,1704
 #: note: zwar gibt es von Richtung Osten eine ausgeschilderte Umleitung für Radfahrer via Köpenicker Str., Lianenweg, Germanenstr. und Keltensteig, aber die Grünauer Str. ist hier für Anlieger frei; Einbahnstraßenregelung gilt für alle; mittlerweile (Juli 2025) Komplettsperrung vor dem Keltensteig
@@ -39006,9 +39006,9 @@ EOF
 #: also_indoor: traffic (T,G,H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-07-16 (traffic)
-#: check_frequency: 14d (traffic)
-#: next_check: 2026-07-17 (Halteverbotsschilder)
+#: last_checked: 2026-07-17 (traffic)
+#: check_frequency: 7d (traffic)
+# REMOVED --- #: next_check: 2026-07-17 (Halteverbotsschilder)
 # REMOVED --- Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7169,2348 7051,2366 6965,2418
 Eiswaldtstr.: Fahrbahnsperrung	q4::inwork 7169,2348 7051,2366 6965,2418
 # REMOVED --- #: note: Sollte noch 2022 fertig werden, jetzt wird's Sommer 2023 --- #: note: an der östlichen Seite sind sogar die Gehwege gesperrt
@@ -41159,7 +41159,7 @@ EOF
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="18"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001 (zwischenzeitlich entfernt)
-#: last_checked: 2026-07-10 vvv
+#: last_checked: 2026-07-18 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
@@ -44101,7 +44101,7 @@ EOF
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2026-07-04 (architektur-urbanistik)
+#: last_checked: 2026-07-16 (luftbildsuche)
 # REMOVED --- #: next_check: 2026-04-30 (Schilder vor Ort)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-10-30 (Schilder vor Ort)
@@ -48003,7 +48003,7 @@ EOF
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-07-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
@@ -48727,7 +48727,7 @@ EOF
 #      text  => 'Lohnauer Steig, Selchowstr. und Umgebung: Stromnetzarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
 #      text  => 'Wassermannstr., Lohnauer Steig, Selchowstr. und Umgebung: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
 #      text  => 'Wassermannstr., Lohnauer Steig und Umgebung, Gutenbergstr., Flemmingstr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
-       text  => 'Radickestr., Gellertstr., Wassermannstr. und Umgebung: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+       text  => 'Radickestr., Gellertstr., Wassermannstr. und Umgebung; Gutenbergstr., Flemmingstr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
        type  => 'handicap',
        accept_multi_feature_distance => 2000,
        data  => <<'EOF',
@@ -48769,7 +48769,7 @@ EOF
 #: by: https://www.aktives-adlershof.de/fileadmin/Interne_Dokumente/Projekte/Radickestra%C3%9Fe/20260415_Baunewsletter_Netzumstrukturierung_Treptow-K%C3%B6penick_14-1.pdf (Baustelle bleibt jedoch weiterhin eingerichtet)
 #: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen; 2026-04-18 Sat 12:32: Durchfahrt verboten, aber Bauzäune waren teilweise weggeschoben; Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
 #: also_indoor: traffic (no-T,ex-G[nur Flemmingstr])
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-07-18 vvv
 #: check_frequency: 30d vvv
 Gutenbergstr.: Fahrbahn wegen Baustelle verengt	q2::inwork 21903,4848 21848,4882
 Gutenbergstr. - Mentzelpark: Umwege	q4::inwork 21848,4882 21834,4889
@@ -51783,7 +51783,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-06-16 00:00:00"), # $isodate2epoch->("2025-11-09 00:00:00"),
-       until => undef, # $isodate2epoch->("2025-12-12 23:59:59"), # $isodate2epoch->("2025-11-28 23:59:59"),
+       until => 1784381763, # undef, # $isodate2epoch->("2025-12-12 23:59:59"), # $isodate2epoch->("2025-11-28 23:59:59"),
 #      text  => 'Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten zwischen Dönhoffstr. und Marksburgstr., 10.11.2025 bis 05.12.2025',
 #      text  => 'Hentigstr.: mögliche Sperrung wegen Markierungsarbeiten zwischen Dönhoffstr. und Marksburgstr., Ende der Arbeiten unbekannt',
        text  => 'Hentigstr./Cäsarstr.: mögliche Sperrung wegen Markierungsarbeiten zwischen Marksburgstr. und Aristotelessteig, Ende der Arbeiten unbekannt',
@@ -51793,8 +51793,7 @@ EOF
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1614369.php
 # REMOVED --- #: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2025-11-16 Sun 11:11, 2025-11-30 Sun 12:00, 2025-12-06 Sat 11:40) --- Hentigstr.	q4::inwork 18586,9172 18548,8942 18518,8778
 #: note: außerhalb der Arbeitszeiten kann die Durchfahrt möglich sein (gesehen 2026-06-30 Tue 18:08)
-#: last_checked: 2026-07-10
-#: check_frequency: 3d
+# REMOVED (weitgehend fertig) --- #: last_checked: 2026-07-10 --- #: check_frequency: 3d
 # REMOVED --- #: next_check: 2026-07-10 (Halteverbotsschilder)
 Hentigstr.: zwischen Marksburgstr. und Aristotelessteig	q4::inwork 18586,9172 18626,9406 18660,9599
 EOF
@@ -51929,7 +51928,7 @@ EOF
 #: note: Halteverbotsschilder bis 30.04.2026
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
 #: add_fragezeichen: Wann sie die Bauarbeiten beendet?
-#: last_checked: 2026-06-30 vvv
+#: last_checked: 2026-07-18 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2026-04-30 (Halteverbotsschilder) vvv
 Hönower Str.: Einbahnstraßenregelung	q4::inwork; 18660,9410 18735,9421
@@ -53106,7 +53105,7 @@ EOF
 #: osm_watch: way id="10856020" version="52"
 #: osm_watch: note 5250307 2
 #: priority: #A
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-07-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (BA TK, nbb netzgesellschaft) vvv
 Kastanienallee	2::inwork 18437,7752 19045,6959
@@ -53472,7 +53471,7 @@ EOF
      { from  => 1779660000, # 2026-05-25 00:00
        until => $isodate2epoch->("2026-09-06 23:59:59"), # $isodate2epoch->("2026-07-11 00:00:00"),
 #      text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Liepnitzstr. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung im Hönower Wiesenweg, vom 26.05.2026 bis voraussichtlich 10.07.2026, evtl. werden die Bauarbeiten verlängert',
-       text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Heiligenberger Str. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung im Hönower Wiesenweg, vom 26.05.2026 bis voraussichtlich 06.09.2026',
+       text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Heiligenberger Str. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung Hönower Wiesenweg - Georg-Klingenberg-Str. - Trautenauer Str. und Müritzstr. - Wandlitzstr., vom 26.05.2026 bis voraussichtlich 06.09.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: EHRLICH-2026
@@ -53489,26 +53488,26 @@ EOF
 #: source_id: bvg2024:n40#HIM_FREETEXT_349187
 #: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
 #: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
+#: note: Bauabschnitt 2: vsl. 10.07. bis vsl. 06.09.2026
 #: XXX nach der Baustellenumstellung prüfen
 #: also_indoor: traffic (G,T,H,W)
-#: last_checked: 2026-07-10 vvv
-#: check_frequency: 3d (2. BA?) vvv
-# REMOVED --- #: next_check: 2026-07-10 (2. BA?) vvv
-Ehrlichstr.: vermutlich hier auch Fahrbahn gesperrt	q3::inwork 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589
-Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687 17997,8695 17929,8742 17879,8773
+#: last_checked: 2026-07-18 vvv
+# REMOVED --- #: check_frequency: 3d (2. BA?) vvv
+#: next_check: 2026-09-06 vvv
+Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589
+Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687
+# REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18009,8687 17997,8695 17929,8742 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn und des nördlichen Bürgersteigs	q4::inwork; 17879,8773 17736,8850 17720,8854 17702,8855
 # REMOVED (hier nicht) --- Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17588,8413 17581,8422 17554,8458 17533,8505 17521,8549 17515,8567 17497,8623 17468,8692
 Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18704,8427 18627,8475 18557,8525 18494,8569 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895
+Trautenauer Str.: Einbahnstraßenregelung	q4::inwork; 17879,8773 17851,8662 17846,8644
+Müritzstr.: Einbahnstraßenregelung	q4::inwork; 18147,8895 18009,8687
+Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660 17668,8696 17659,8698 17468,8692
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
-##: note: Bauabschnitt 2: vsl. 10.07. bis vsl. 06.09.2026
-#Ehrlichstr.: Vollsperrung zwischen Liepnitzstr. und Heiligenberger Str.	q4::inwork 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377
-#Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18704,8427 18627,8475 18557,8525 18494,8569 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895
-#Müritzstr.: Einbahnstraßenregelung	q4::inwork; 18147,8895 18009,8687
-#Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660 17668,8696 17659,8698 17468,8692
-#Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
 EOF
      },
      { from  => 1778450400, # 2026-05-11 00:00
@@ -54000,7 +53999,7 @@ EOF
        text  => 'Artuswall: Bauarbeiten zwischen Sigismundkorso und Benediktinerstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 22.06.2026 07:00 bis 18.07.2026 17:00',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:412909/72 viz2021:13.269045,52.630879,22.06.2026,07:00 (bis 18.07.2026)
+#: source_id: LMS-BR:412909/72 viz2021:13.269045,52.630879,22.06.2026,07:00 (bis 18.07.2026) (inaktiv)
 	q4::inwork 946,24934 949,24882 968,24815
 EOF
      },
@@ -54199,7 +54198,7 @@ EOF
 #: by: https://www.berliner-zeitung.de/article/berlin-frankfurter-allee-gesperrt-stau-verkehr-friedrichshain-mitte-10172820
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 #: priority: #A
-#: last_checked: 2026-07-12 vvv
+#: last_checked: 2026-07-18 vvv
 #: check_frequency: 8d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
@@ -54391,6 +54390,33 @@ EOF
        data  => <<'EOF',
 #: source_id: LS/221-E/26/072 (bis 18.12.2026)
 	2::inwork 57042,99574 57512,99290
+EOF
+     },
+     { from  => $isodate2epoch->("2026-07-10 00:00:00"),
+       until => $isodate2epoch->("2026-08-24 21:00:00"),
+       text  => 'Am Wiesenrain: mögliche Sperrung der Fahrbahn vor dem S-Bhf. Hirschgarten, vom 10.7.2026 bis 24.8.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: HIRSCHGARTEN-2024
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze?date=20240724
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,809524#msg-809524
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,809845#msg-809845 (mittlerweile nur noch für Radfahrer befahrbar)
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,811931#msg-811931
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten?date=20260624 (Sperrung der Straße Am Wiesenrain vom 10. Juli 2026 18 Uhr bis 24. August 2026 21 Uhr, vermutlich kann man als Fußgänger noch passieren)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1685646.php
+#: by: https://www.entwicklungsstadt.de/s-bahnhof-hirschgarten-deutsche-bahn-kuendigt-neue-sperrungen-an/
+#: note: 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
+#: note: 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information (vor Ort keine Freigabe für Radfahrer)
+#: note: 2026-07-18 Sa: Durchfahrt offiziell verboten, aber problemlos möglich (evtl. immer an Wochenenden/außerhalb von Arbeitszeiten?)
+#: also_indoor: traffic (G)
+#: last_checked: 2026-07-18 vvv
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2026-10-29
+#: next_check: 2026-08-24 (db) vvv
+Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
+#: next_check ^^^
+#: last_checked ^^^
+# REMOVED --- #: valid: -20260709 --- Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
 EOF
      },
     );
