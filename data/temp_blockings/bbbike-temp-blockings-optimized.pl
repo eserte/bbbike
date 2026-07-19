@@ -4805,7 +4805,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="362719487" version="22"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2026-07-10 (daf)
+#: last_checked: 2026-07-19
 #: check_frequency: 120d
 #: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
@@ -6475,7 +6475,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
 #: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
-#: last_checked: 2026-05-27 (daf)
+#: last_checked: 2026-07-14 (okas)
 #: check_frequency: 360d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -8442,27 +8442,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
          'until' => 1786744799
        },
        undef,
-       {
-         'data' => '#: also_indoor: traffic (ex-G)
-#: note: Halteverbotsschilder bis 31.03.2026, mittlerweile bis 31.05.2026
-#: note: Baustellenschild der Wasserbetriebe zu Bauarbeiten in der Gegend bis Dezember 2026
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-09 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-05-31 vvv
-# REMOVED (hier nicht mehr) ---	q4::inwork 4500,6612 4630,6534
-	q3::inwork 4630,6534 4846,6417
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 4370,
-         'text' => 'Betty-Katz-Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
 #: source_id: LMS-BR:373761/72 viz2021:13.43909,52.5791,25.06.2025,09:02 viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026) (inaktiv) (bis 01.06.2026) (bis 22.06.2026) (bis 15.10.2026)
@@ -8724,7 +8704,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-17 vvv
+#: last_checked: 2026-07-19 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -9925,9 +9905,9 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (T,ex-G,ex-H,no-W)
+         'data' => '#: also_indoor: traffic (T,ex-G,re-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-13 (traffic)
+#: last_checked: 2026-07-19 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -10072,7 +10052,7 @@ Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660
          'data' => '#: source_id: LMS-BR:407959/72 viz2021:13.38521,52.49849,12.05.2026,00:00 (bis 19.07.2026) (bis 31.08.2026)
 #: note: der gesperrte Abschnitt ist schätzungsweise 100m lang, keine Ausnahmen für Radfahrer
 #: priority: #A
-#: last_checked: 2026-06-26
+#: last_checked: 2026-07-19
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 	q4::inwork; 9146,10284 9111,10090
 ',

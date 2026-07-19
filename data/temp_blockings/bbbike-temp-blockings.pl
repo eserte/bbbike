@@ -28092,7 +28092,7 @@ EOF
 	2::bomb 5957,7773 5813,7774 5812,7721 5772,7709 5722,7720 5685,7719 5636,7718 5636,7734 5635,7820 5635,7868 5517,7869 5511,7841 5636,7734
 	2::bomb 6163,7237 6166,7599 6166,7658 6144,7677 6118,7688 5956,7686 5812,7685
 	2::bomb 5560,8204 5519,8159 5521,8087 5522,8024 5472,8024 5471,7915
-	2::bomb 5660,8366 5652,8234 5651,8218 5631,8141 5808,8124 5801,8031 5697,8027 5632,8024 5570,8024
+	2::bomb 5660,8366 5652,8234 5651,8218 5645,8192 5631,8141 5808,8124 5801,8031 5697,8027 5632,8024 5570,8024
 	2::bomb 5808,8124 5909,8184 6003,8120
 	2::bomb 6409,8026 6373,8083 6341,8174 6313,8254
 	2::bomb 6271,7733 6332,7721 6410,7722
@@ -33766,7 +33766,7 @@ EOF
 #: osm_watch: way id="362719487" version="22"
 #: osm_watch: way id="687428752" version="2"
 #: add_fragezeichen: Sind die Bauarbeiten in der Passauer Straße beendet?
-#: last_checked: 2026-07-10 (daf)
+#: last_checked: 2026-07-19
 #: check_frequency: 120d
 #: next_check: 2027-01-15 (presseportal website, entwicklungsstadt: Anfang 2027)
 Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
@@ -41340,7 +41340,7 @@ EOF
 #: also_indoor: traffic (H,G,W)
 #: historical_note: früher q2, allerdings ist mittlerweile (Juni 2025) ein längerer Abschnitt der Fahrbahn gesperrt, deshalb q3
 #: note: September 2025: die Fahrbahn südlich der Brücke ist für Baufahrzeuge reserviert
-#: last_checked: 2026-05-27 (daf)
+#: last_checked: 2026-07-14 (okas)
 #: check_frequency: 360d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q3::inwork 3213,18115 3420,18470
@@ -49831,23 +49831,18 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1766579604, # undef, # XXX
+       until => 1784464076, # undef, # 1766579604, # undef, # XXX
        text  => 'Betty-Katz-Str.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-G)
 #: note: Halteverbotsschilder bis 31.03.2026, mittlerweile bis 31.05.2026
 #: note: Baustellenschild der Wasserbetriebe zu Bauarbeiten in der Gegend bis Dezember 2026
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-05-09 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-05-31 vvv
+#: note: die Fahrbahnoberfläche hat sich während der Bauarbeiten nicht gebessert
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2026-05-09 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2026-05-31 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork 4500,6612 4630,6534
 	q3::inwork 4630,6534 4846,6417
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1750748520, # 2025-06-24 09:02
@@ -50666,7 +50661,7 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-17 vvv
+#: last_checked: 2026-07-19 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -53347,9 +53342,9 @@ EOF
        text  => 'Jägerstr.: Bauarbeiten, Sperrung, voraussichtlich bis Ende Juni 2026, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (T,ex-G,ex-H,no-W)
+#: also_indoor: traffic (T,ex-G,re-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-13 (traffic)
+#: last_checked: 2026-07-19 (traffic)
 #: check_frequency: 7d (traffic)
 # REMOVED --- #: next_check: 2026-06-30 (T)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -53519,7 +53514,7 @@ EOF
 #: source_id: LMS-BR:407959/72 viz2021:13.38521,52.49849,12.05.2026,00:00 (bis 19.07.2026) (bis 31.08.2026)
 #: note: der gesperrte Abschnitt ist schätzungsweise 100m lang, keine Ausnahmen für Radfahrer
 #: priority: #A
-#: last_checked: 2026-06-26
+#: last_checked: 2026-07-19
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 	q4::inwork; 9146,10284 9111,10090
 EOF

@@ -203,7 +203,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: osm_watch: way id="102486250" version="31"
 #: osm_watch[closed]: note 4659483 8
 # REMOVED (confirmed) --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
-#: last_checked: 2026-05-30
+#: last_checked: 2026-07-19
 #: check_frequency: 180d
 # REMOVED (ehemaliger infravelo-Eintrag) --- #: next_check: 2025-09-30 (infravelo)
 #: historical_note: früher (bis April 2025): mäßiges bis schlechtes Kopfsteinpflaster, Q2-
@@ -235,7 +235,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-07-16 vvv
+#: last_checked: 2026-07-19 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -525,7 +525,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-19
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
@@ -1126,8 +1126,8 @@ Görlitzer Park: Asphalt	Q0 12543,10223 12502,10244
 Görlitzer Park: wassergebundene Decke	Q1 12502,10244 12457,10309
 #: next_check_id: PAMUKKALE-2026
 # XXX ursprünglich: Görlitzer Park: wassergebundene Decke, wellig	Q1- 12457,10309 12384,10368
-#: last_checked: 2026-07-06
-#: check_frequency: 14d
+#: last_checked: 2026-07-19
+#: check_frequency: 7d
 #: next_check: 2026-07-31 (BA: "im Juli")
 Görlitzer Park: wassergebundene Decke, wellig, teils Kopfsteinpflaster	Q2 12457,10309 12384,10368
 Görlitzer Park: teils Gehwegplatten, teils Kopfsteinpflaster	Q1- 12384,10368 12331,10409 12328,10442
@@ -8962,7 +8962,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Grenzallee - Britzer Hafensteg): überwiegend Asphalt, einige Verbundsteinpflasterabschnitte	Q0 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 #: historical_note: früher Q1, evtl. schlechter geworden?
 Britzer Hafensteg: Holzbohlen	Q2+ 13993,6221 13949,6192
-Sieversufer: Asphalt	Q0 13949,6192 13883,6163
+Sieversufer: Asphalt, etwas uneben	Q1+ 13949,6192 13883,6163
 zur Eschersheimer Str.: wassergebundene Decke	Q1 11748,6253 11740,6338
 Wildspitzweg [Nebenstraße]: Asphalt	Q0 10914,3147 10889,3011
 Almweg: Verbundsteinpflaster	Q1 10526,2694 10542,2757
@@ -11838,7 +11838,7 @@ Woldegker Str.: Beton	Q0- 17511,18636 17566,18680 17589,18709 17611,18858 17596,
 Neustrelitzer Str.: Asphalt	Q0 16750,14747 16668,14765 16524,14749
 Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 # REMOVED (realisiert) --- #: next_check_id: FEUERBACH-2018 --- #: XXX Fahrbahn wird neu gebaut --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php?date=20170522 --- #: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6572 --- #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600 (Baubeginn Juli 2018) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.708083.php (während der Bauarbeiten Einbahnstraße Richtung Osten, Bauarbeiten bis Jahresende) --- #: by: https://www.berliner-woche.de/steglitz/c-bauen/die-feuerbachstrasse-wird-endlich-saniert_a168947 --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php --- #: last_checked: 2018-10-07 --- #: next_check: 2019-06-30 --- #: priority: #A
-Feuerbachstr.: Asphalt	Q0 5823,6413 6083,6451
+Feuerbachstr.: Asphalt	Q0+ 5823,6413 6083,6451
 #: historical_note: früher (bis 2025) Q0-
 Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13736,14192 13636,14130
 #: historical_note: früher (bis 2025) Q1
@@ -12499,7 +12499,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-07-15
+#: last_checked: 2026-07-19
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -15661,7 +15661,9 @@ Büchnerweg: Kopfsteinpflaster	Q2 20756,3470 20833,3519 20924,3577 21049,3657
 #: confirmed_by: srt
 Badener Str.: Beton	Q0 24051,9156 23798,9263 23643,9330 23550,9369 23470,9403 23166,9549
 #: confirmed_by: srt
-Helmstedter Str.: Asphalt	Q0 5725,9041 5711,9357 5704,9557
+Helmstedter Str.: Asphalt	Q0 5725,9041 5711,9357
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Helmstedter Str.: Asphalt, einige Schäden	Q0- 5711,9357 5704,9557
 #: corrected_by: srt (Q2 -> Q3)
 Hubertusstr. (Waidmannslust): schlechtes Kopfsteinpflaster	Q3 4050,22428 4137,22301 4241,22168
 #: confirmed_by: srt
@@ -15754,10 +15756,15 @@ Riemeisterstr.: mäßiges Kopfsteinpflaster, aber asphaltierte Radwege	Q1 346,4833
 Pücklerstr.: Fahrbahn mit schlechtem Kopfsteinpflaster, Radweg OK	Q1 2688,7067 2576,7026 2465,6984 2397,6960 2266,6911 2155,6873 2130,6865 2052,6847 1960,6826
 #: confirmed_by: srt
 Wilhelmshöher Str.: guter Asphalt	Q0 4836,7327 4874,7326 5058,7327 5310,7325
+#: confirmed_by: srt
 Sarrazinstr.: guter Asphalt	Q0 5352,7428 5387,7433 5419,7464 5450,7494 5492,7543 5606,7651 5636,7660
+#: confirmed_by: srt
 Perelsplatz: guter Asphalt	Q0 5636,7660 5812,7662
 Bennigsenstr.: guter Asphalt	Q0 5813,7774 5957,7773 6195,7775 6209,7765
-Lauterstr.: guter Asphalt	Q0 5812,7662 5812,7685 5812,7721 5813,7774 5813,7807
+#: confirmed_by: srt
+Lauterstr.: guter Asphalt	Q0 5812,7662 5812,7685 5812,7721 5813,7774
+#: corrected_by: srt (guter Asphalt, Q0 -> ...)
+Lauterstr.: Asphalt mit Schäden	Q1 5813,7774 5813,7807
 Friedrich-Wilhelm-Platz: guter Asphalt	Q0 5314,7217 5310,7325 5318,7424
 Görrestr.: guter Asphalt	Q0 5318,7424 5352,7428
 #: by ^^^
@@ -17483,7 +17490,7 @@ Hittorfstr.: Asphalt	Q0- 2212,4590 2290,4709
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
 Hittorfstr: Kleinsteinpflaster	Q1- 2290,4709 2381,4737 2438,4800 2469,4882 2516,4936 2577,4959
 #: confirmed_by: srt
-Lefèvrestr.: Asphalt	Q0 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643 5360,6642
+Lefèvrestr.: Asphalt	Q0 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5214,6635 5360,6642
 Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3233,12757 3127,12815 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595 2920,13612
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Beton oder Asphalt	Q0 2920,13612 2908,13656 2902,13665
@@ -18451,7 +18458,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="17"
-#: last_checked: 2026-05-09
+#: last_checked: 2026-07-19
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1- 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt

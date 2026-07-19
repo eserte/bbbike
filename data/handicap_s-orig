@@ -86,7 +86,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="32"
 #: osm_watch: way id="1072662717" version="36"
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-19
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
@@ -243,14 +243,16 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: next_check_id: ROEBLING-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf4dnag3yg2z (nur Kfz-Verkehr, bis November 2026 geplant)
 #: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 (bis 13.11.2026)
-#: last_checked: 2026-03-25
+#: note: außerdem drei Fußgängerampeln mit Anforderung, nur für die Fahrbahn und damit für den Verkehr Richtung Norden relevant
+#: last_checked: 2026-07-19
 #: next_check: 2026-11-13 (VIZ)
 #: valid: -20261113
-Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), Gehweg für Radfahrer frei	q2::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
+Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), teilweise sehr enger Gehweg (parkende Autos auf dem Bürgersteig!) für Radfahrer frei	q3::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260706 (weitere Arbeiten bis ca. 2029)
-#: XXX möglicherweise auch Gehweg für Radfahrer frei
-#: next_check: 2026-07-07
-Röblingstr.: Einbahnstraßenregelung, möglicherweise auch zwischen Kirche und Marienhöher Weg Gehweg für Radfahrer frei	q2::inwork; 7625,5231 7773,5027 7807,4975
+#: last_checked: 2026-07-19
+#: next_check: 2026-11-13 (VIZ)
+#: valid: -20261113
+Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für Radfahrer frei	q3::inwork; 7625,5231 7694,5135
 # 
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1355154731493191681 --- #: XXX laut rbbtext bis zum 12.2.2021 gesperrt --- #: source_id: 2147346843 (kein Endedatum) --- #: also_indoor: traffic (H,G) --- #: last_checked: 2021-01-29 (viz twitter) --- #: check_frequency: 14d --- #: next_check: 2021-02-12 --- Rixdorfer Str.: Wasserrohrbruch, einige Meter Fahrbahn hinter der Eisenacher Str. Richtung Süden gesperrt	q2::inwork; 10412,4552 10288,4354
 # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739 --- #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019) --- #: source_id: 2147342785 (Gesamtbaumaßnahme bis Mitte September 2019) --- #: XXX laut fritz bis 2.9.2019, mittlerweile "bis auf Weiteres" --- #: also_indoor: traffic (H,ex-G) --- #: priority: #A --- #: last_checked: 2019-08-03 (mapillary) --- #: next_check: 2019-09-17 --- #: valid: -20190917 --- Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
@@ -6187,8 +6189,8 @@ Schloßpark Charlottenburg: Fußgänger	q1 3233,12757 3127,12815 3065,12975 3016,13
 Spreeweg: unter der Bahnbrücke eng	q3 2920,13612 2908,13656 2902,13665
 Spreeweg: schmal und unübersichtlich	q2 2902,13665 2829,13709 2760,13716 2663,13700 2402,13602 2321,13572
 #: note: Abstufung wegen des leicht kurvigen Verlaufs
-Lefèvrestr.: enge Straße	q1+ 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
-# XXX removed by srt: Lefèvrestr.: enge Straße	q1 5215,6643 5360,6642
+Lefèvrestr.: enge Straße	q1+ 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5214,6635
+# XXX removed by srt: Lefèvrestr.: enge Straße	q1 5214,6635 5360,6642
 #: corrected_by srt: (q4 -> aber man kommt eigentlich gut vorbei) vvv
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q3 7776,12586 7745,12603
 (südliches Spreeufer): Biergarten am HDKDW	q3 7745,12603 7710,12585

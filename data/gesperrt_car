@@ -33,6 +33,7 @@ Falckensteinstr. -> Oberbaumstr.: Oberbaum - Falckenstein/Gröben	3::igndisp 1313
 Oberbaumstr. -> May-Ayim-Ufer: Oberbaum - Falckenstein/Gröben	3::igndisp 13178,10623 13206,10651 13077,10747
 May-Ayim-Ufer -> Oberbaumbrücke: Oberbaum - Falckenstein/Gröben	3::igndisp 13077,10747 13206,10651 13305,10789
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
+Oberbaumbrücke zur Falckensteinstr.: Einfahrt verboten	3 13206,10651 13178,10623 13136,10535
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
 Boxhagener - Neue Bahnhof	3 14799,11330 14918,11249 14945,11300 15016,11431
 Goeben - Kulmer	3 7725,9748 7829,9723 7848,9814 7866,9902
@@ -151,7 +152,7 @@ Fröbelstr. -> Raumerstr.: Prenzlauer Allee	3::igndisp 11873,15010 11776,15060 11
 Große Weinmeisterstr. (Potsdam)	1 -12557,11 -12561,35 -12582,127 -12623,308
 Stellmacherweg	1 13129,2999 13457,2929
 Hittorfstr	1 2438,4800 2469,4882 2516,4936 2577,4959
-Lefèvrestr.	1 5360,6642 5215,6643
+Lefèvrestr.	1 5360,6642 5214,6635
 Kühlebornweg	1 5165,4667 5075,4600 5007,4705
 Gartenstr.	1 22456,3889 22281,4033 22263,4120 22279,4220
 Wichmannstr.	1 6549,11015 6681,10959 6824,10904
@@ -178,7 +179,7 @@ Handjerystr.	1 5641,7189 5624,7113 5565,7024
 Leuthener Str.	1 7494,8354 7578,8358
 Leuthener Str.	1 7716,8356 7640,8359
 Lüdenscheider Weg	1 -1389,15285 -1371,15293 -1037,15482
-Büsingstr.	1 5215,6643 5210,6522
+Büsingstr.	1 5214,6635 5210,6522
 Schrammstr.	1 4954,8454 4958,8355
 Stubbenkammerstr.	1 11631,15192 11801,15132
 Templiner Str.	1 10716,14195 10739,14228
@@ -2164,12 +2165,12 @@ Ursulinenstr. -> Waltersdorfer Chaussee: Abbiegen verboten	3 17750,152 17772,166
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5632,8024 5631,8141 5560,8204
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5560,8204 5631,8141 5632,8024
-Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5632,8024 5631,8141 5651,8218
-Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5631,8141 5632,8024
+Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5632,8024 5631,8141 5645,8192 5651,8218
+Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5645,8192 5631,8141 5632,8024
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5560,8204 5631,8141 5808,8124
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5808,8124 5631,8141 5560,8204
-Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5808,8124 5631,8141 5651,8218
-Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5631,8141 5808,8124
+Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5808,8124 5631,8141 5645,8192 5651,8218
+Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5645,8192 5631,8141 5808,8124
 Mittelinsel	3nocross::ignrte 13138,8762 13193,8832 13227,8877
 Wildenbruchstr. -> Weigandufer: Mittelinsel	3::igndisp 13138,8762 13193,8832 13045,8951
 Wildenbruchstr. -> Weigandufer: Mittelinsel	3::igndisp 13227,8877 13193,8832 13368,8689

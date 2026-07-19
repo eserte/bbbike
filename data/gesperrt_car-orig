@@ -105,8 +105,9 @@ Oberbaum - Falckenstein/Gröben	3nocross 13082,10634 13178,10623 13206,10651 1330
 #: XXX nach den Bauarbeiten existieren keine Verbote oder Absperrungen für Kfz mehr, wird das noch nachgeholt?
 #: priority: #D
 #: last_checked: 2026-07-05
-#: check_frequency: 90d
+#: check_frequency: 14d
 Falckensteinstr. zur Oberbaumbrücke	3 13136,10535 13178,10623 13206,10651
+Oberbaumbrücke zur Falckensteinstr.: Einfahrt verboten	3 13206,10651 13178,10623 13136,10535
 Markt - Neue Bahnhof	3 14988,11130 14918,11249 14908,11231 14879,11182
 Boxhagener - Neue Bahnhof	3 14799,11330 14918,11249 14945,11300 15016,11431
 Goeben - Kulmer	3 7725,9748 7829,9723 7848,9814 7866,9902
@@ -220,7 +221,7 @@ Stellmacherweg	1 13129,2999 13457,2929
 #: by: Andreas Mühlhausen (Einbahnstraße nur für Autofahrer) vvv
 Hittorfstr	1 2438,4800 2469,4882 2516,4936 2577,4959
 #: confirmed_by: srt
-Lefèvrestr.	1 5360,6642 5215,6643
+Lefèvrestr.	1 5360,6642 5214,6635
 #: by: ^^^
 #: by: N. H. Sassi (Einbahnstraße nicht für Radfahrer)
 Kühlebornweg	1 5165,4667 5075,4600 5007,4705
@@ -251,7 +252,7 @@ Leuthener Str.	1 7716,8356 7640,8359
 #: by: Andreas (ansh...) (nicht für Radfahrer):
 #: confirmed_by: srt
 Lüdenscheider Weg	1 -1389,15285 -1371,15293 -1037,15482
-Büsingstr.	1 5215,6643 5210,6522
+Büsingstr.	1 5214,6635 5210,6522
 Schrammstr.	1 4954,8454 4958,8355
 Stubbenkammerstr.	1 11631,15192 11801,15132
 Templiner Str.	1 10716,14195 10739,14228
@@ -1528,12 +1529,12 @@ Gustav-Müller-Str.	1 7643,8634 7642,8815
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/bezirk-baut-feste-sperren-in-der-fahrradstrasse_a298376
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5632,8024 5631,8141 5560,8204
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5560,8204 5631,8141 5632,8024
-Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5632,8024 5631,8141 5651,8218
-Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5631,8141 5632,8024
+Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5632,8024 5631,8141 5645,8192 5651,8218
+Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5645,8192 5631,8141 5632,8024
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5560,8204 5631,8141 5808,8124
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5808,8124 5631,8141 5560,8204
-Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5808,8124 5631,8141 5651,8218
-Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5631,8141 5808,8124
+Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5808,8124 5631,8141 5645,8192 5651,8218
+Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5645,8192 5631,8141 5808,8124
 # 
 #: note: für Radfahrer existiert eine Furt
 Wildenbruchstr./Weigandufer: Mittelinsel	3nocross 13138,8762 13193,8832 13227,8877

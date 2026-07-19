@@ -1495,6 +1495,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6230,13596
 	X 6493,13822
 	X 6730,14021
+#: note: Grüner Pfeil für Radfahrer (Prellerweg -> Munsterdamm, W->S)
 	X 6757,5858
 	X 7690,4563
 	X 7597,4499
@@ -1758,10 +1759,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5870,4992
 	X 6007,5785
 # 
-#: note: Ampel kann auf dem Platz südlich u.U. umfahren werden
 #: note: Kontaktschleifen in der Körnerstr. und Lauenburger Str.
 #: off: 2024-08-09 Fri 23:03
+#: off: 2026-07-19 Sun 12:58
 #: off_rule: night
+#: off_rule: Sun
 	X 5823,6413
 # 
 #: XXX_prog: an der Beckerstr. ist auch eine Ampel nur für die nördliche Richtung, evtl. zusammen mit dieser Ampel geschaltet
@@ -2546,9 +2548,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderung für Radfahrer aus der Stindestr. (beide Richtungen)
 	X 6203,4630
 #: note: Anforderung für linksabbiegende Radfahrer aus dem Prellerweg in die Sembritzkistr.
-#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9691
-#: XXX Grüner Pfeil für Radfahrer (2x) soll angebracht werden
-#: last_checked: 2026-07-08 (BVV-Drucksache)
+#: note: Grüner Pfeil für Radfahrer (Prellerweg -> Sembritzkistr., NW->S)
+#: note: Grüner Pfeil für Radfahrer (Sembritzkistr. -> Prellerweg, S->O)
 	X 7236,5685
 	X 5377,5961
 	X 5335,5991
@@ -3694,11 +3695,13 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: off: 2020-06-21 Sun 15:00
 #: off: 2021-09-12 Sun 13:00
+#: off: 2026-07-19 Sun 13:22
 #: off_rule: Sun
 	X 11871,5195
 # 
 #: off: 2020-06-21 Sun 15:00
 #: off: 2021-09-12 Sun 13:00
+#: off: 2026-07-19 Sun 13:22
 #: off_rule: Sun
 	X 12060,5204
 # 
