@@ -90,7 +90,7 @@ Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaste
 #: historical_note: früher schlechtes Kopfsteinpflaster (12 km/h), Q3
 #: by: mapillary
 Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: Asphalt	Q0 8568,21863 8556,21918 8400,22010 8430,22110
-Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8904,23365 8909,23506
+Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8430,22110 8439,22143 8464,22215 8475,22241 8543,22413 8554,22440 8900,23274 8904,23365 8909,23506
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247 (Asphaltierung??) --- #: XXX: wurden Bahnhofstr. und Hauptstr. in Blankenfelde mittlerweile asphaltiert? Oder ist nur der östliche Abschnitt gemeint? vvv --- #: osm_watch: way id="444587490" version="1"
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
 # REMOVED --- #: osm_watch: way id="30768385" version="11"
@@ -10814,7 +10814,9 @@ Straupitzer Steig: Verbundsteinpflaster	Q1 6756,21528 6769,21377 6770,21342
 (am Fasaneriegraben): wassergebundene Decke	Q1- 7272,21855 7331,22037
 (am Fasaneriegraben): Schotter	Q2 7331,22037 7375,22146 7439,22138 7516,22178
 Gandenitzer Weg: Gehwegplatten	Q1 7476,21225 7447,21509 7549,21524 7545,21667 7520,21710
-(Am Botanischen Garten): unbefestigte Straße, holprig, bei Regen Pfützen	Q2- 9897,21861 9746,21887 9725,21891 9579,21904 9505,21911 9439,21923 9423,21927 9276,21958 9201,21974 9127,21990 9092,22002 8931,22056
+(Am Botanischen Garten): unbefestigte Straße, holprig, bei Regen Pfützen	Q2- 9897,21861 9746,21887 9725,21891 9579,21904 9505,21911 9439,21923 9423,21927 9276,21958 9201,21974 9127,21990 9092,22002 8914,22054 8796,22112
+#: by: mapillary
+(Am Botanischen Garten): zweispurige unbefestigte Straße	Q2 8796,22112 8575,22217 8559,22200 8475,22241
 (Am Zingergraben): unbefestigte Straße	Q2 8987,21430 8866,21520 8794,21573 8780,21646 8785,21669 8830,21788 8849,21842 8848,21920 8800,21947 8736,21985 8659,22031 8557,22063 8430,22110
 (Schienenweg): unbefestigte Straße	Q2 8785,21669 8839,21693 8921,21724 8982,21748 9082,21786 9132,21805 9187,21828 9252,21855 9312,21880 9373,21906 9423,21927
 Hauptweg: Asphalt	Q0 8778,21390 8818,21431 8866,21520 8900,21536 8980,21559 9042,21578 9120,21599 9145,21606 9203,21621 9260,21636 9326,21655 9393,21674 9420,21687 9458,21705 9515,21730

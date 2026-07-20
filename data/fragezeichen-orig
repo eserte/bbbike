@@ -82,7 +82,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2026-07-19
+#: last_checked: 2026-07-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -483,7 +483,7 @@ Am Treptower Park: Radfahrstreifen bis Ludwig-Richter-Str.	?::projected; 14257,9
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-verkehr/entlang-der-hauptstrasse-in-wilhelmsruh-muessen-noch-grundstuecke-erworben-werden_a333710 (nicht vor 2025)
 #: XXX mittelfristig Realisierung von Radstreifen
 #: osm_watch: way id="340337649" version="14"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-18 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2025-03-01
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
@@ -1874,12 +1874,12 @@ Marzahner Chaussee: Hochbordradweg entsteht	?::inwork; 19192,13350 19198,13272 1
 #: osm_watch: way id="147432180" version="17"
 #: osm_watch: way id="25630356" version="33"
 #: osm_watch: way id="82456679" version="18"
-#: last_checked: 2026-07-16 (mapillary)
+#: last_checked: 2026-07-18 (mapillary)
 # REMOVED --- #: check_frequency: 150d (ab Sommer 2025 ggfs. anpassen)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-06-30 (zukunft-residenzstrasse)
 Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::projected 7602,17399 7579,17532 7572,17558
-#: last_checked: 2026-07-16 (mapillary)
+#: last_checked: 2026-07-18 (mapillary)
 #: check_frequency: 360d (keine bekannte Planung)
 #: next_check: 2028-12-31 (infravelo) 
 Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::projected 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
@@ -1894,7 +1894,7 @@ Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::project
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/220111-sachstandsbericht.pdf
 #: osm_watch: way id="352683182" version="26"
 #: osm_watch: way id="501402607" version="18"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-18 (mapillary)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2026-12-31 (ehemaliges infravelo-Datum)
 Residenzstr.: Radstreifen geplant	?::projected 8127,16894 8079,16953 7970,17087
@@ -1929,7 +1929,7 @@ Braunschweiger Str.: Diagonalsperre oder Quersperre geplant	?::projected 13368,7
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="4764878" version="22"
-#: last_checked: 2026-06-07
+#: last_checked: 2026-07-18 (mapillary)
 #: check_frequency: 180d
 Niederstr.: Asphaltierung geplant	?::projected 7634,19793 7769,19736 7857,19693
 # 
@@ -5047,7 +5047,7 @@ Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1
 #: source_id: viz2021:13.209619,52.561485,24.08.2023,10:00 (bis 12.10.2023) (inaktiv)
 #: source_id: viz2021:13.209074,52.561544,20.11.2024,08:30 (Leitungsarbeiten, bis 29.11.2024) (inaktiv)
 #: osm_watch: way id="4978664" version="43"
-#: last_checked: 2026-07-08
+#: last_checked: 2026-07-20 (Verkehrszeichenplan)
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 240d
 Rauchstr.: Busspur in "finaler Abstimmung"	?::projected; -2728,17038 -2908,17072 -3009,17090
@@ -7783,6 +7783,7 @@ Wege um den Schäfersee: Umgestaltung, Weg wird asphaltiert	?::inwork 7320,17718 
 # REMOVED --- #: check_frequency: 360d vvv
 #: next_check: 2026-06-30 (zukunft-residenzstrasse website: Beginn des 3. BA) vvv
 Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7466,17627 7477,17544 7455,17495 7350,17464 7253,17467
+#: last_checked: 2026-07-18 (mapillary)
 Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7477,17544 7572,17558
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -9596,7 +9597,7 @@ Hammelspring - Vogelsang: Bau eines Radwegs	? 10218,73220 10148,73146 9760,72696
 #: osm_watch: way id="25939420" version="19"
 #: osm_watch: way id="1429082251" version="1"
 #: priority: #C
-#: last_checked: 2026-03-22 (mapillary)
+#: last_checked: 2026-07-18 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2026-12-31
 Hauptstr. (Nebenarm): soll als verkehrsberuhigter Bereich ausgewiesen werden	?::projected 8389,21468 8419,21446 8474,21524 8498,21578
@@ -10028,6 +10029,7 @@ S-Bhf. Zehlendorf, Neubau der Eisenbahnüberführung: mögliche bauzeitliche Einsch
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25975.pdf (Baubeginn Februar 2026, beidseitig)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1693776.php (Fahrbahnsanierungsarbeiten bis 31.12.2026, keine Einschränkungen für den Radverkehr)
 #: source_id: bvg2024:309#HIM_FREETEXT_349190 (Umleitung)
+#: source_id: LMS-BR:416445/72 viz2021:13.29705,52.51343,20.07.2026,07:00 (bis 28.07.2026)
 #: XXX Hier gibt es allerdings schon einen Radfahrstreifen --- vielleicht Verbreiterung, Protektion oder Grünbeschichtung?
 #: XXX Länge laut Tsp 667m, das würde für eine Realisierung bis Knobelsdorffstr. sprechen.
 #: note: südlich der Knobelsdorffstr. bereits beidseitig verbreitert, nördlich auf der Westseite weitgehend fertig, auf der Ostseite noch nicht begonnen
@@ -10042,7 +10044,7 @@ Schloßstr.: Verbreiterung der Radfahrstreifen zwischen Spandauer Damm und Kaiser
 Straße 42: verkehrsberuhigter Bereich soll entstehen	? 15271,22527 15377,22452 15442,22412
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_29_1813_1900_online.pdf
-#: last_checked: 2026-07-19
+#: last_checked: 2026-07-20
 #: check_frequency: 90d
 Rudolfstr.: beabsichtigte Teileinziehung	?::projected 13886,10939 14026,10869
 # 
@@ -12711,6 +12713,7 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/chef-des-stillgelegten-flughafens-berlin-tegel-masterplane-schreibt-man-nicht-um-sie-jedes-jahr-anzupassen-15408836.html
 #: by: https://www.entwicklungsstadt.de/tegel-projekt-wird-zu-berlin-txl-neue-struktur-fuer-das-grossprojekt/
 #: by: https://www.tagesspiegel.de/berlin/urban-tech-republic-und-wohnquartier-auf-dem-ex-flughafen-tegel-entsteht-ein-quartier-der-zukunft-15854146.html
+#: by: https://www.entwicklungsstadt.de/berlin-txl-was-geplant-ist-und-was-wann-umgesetzt-wird/
 #: XXX werden die alten Zufahrtstraßen während der Bauarbeiten noch benutzbar sein?
 #: last_checked: 2026-06-07
 #: check_frequency: 720d

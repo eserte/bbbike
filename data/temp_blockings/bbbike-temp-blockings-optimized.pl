@@ -1,519 +1,6 @@
-$#temp_blocking = 73;
+$#temp_blocking = 548;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.stadtfest.berlin/de/index.html
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
-#: by: https://www.stadtfest.berlin/de/index.html (2.+3. Oktober 2021)
-#: by: https://www.siegessaeule.de/magazin/lesbisch-schwules-stadtfest-2021-auf-der-kippe/ (Absage)
-#: by: https://www.stadtfest.berlin/de/index.html?date=20220515
-#: by: https://www.berlin.de/events/2094393-2229501-lesbischschwules-stadtfest.html (19. Juli 2025 - 20. Juli 2025)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1814521868080050462
-#: by: https://pbs.twimg.com/media/GSsvMEiWsAALOVt?format=jpg&name=large
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lu7nuz2q2527
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia3bn3222qjpj4ze4d5yplqplvhtt25eltlcusiccrbc75vuiyyiq@jpeg
-Motzstr.	2::temp 6499,10086 6609,10147 6626,10155 6729,10212 6941,10329 6971,10346
-Kalckreuthstr.	2::temp 6636,10492 6628,10318 6626,10155
-Fuggerstr.	2::temp 6487,10277 6628,10318 6719,10347
-Eisenacher Str.	2::temp 6753,10446 6719,10347 6729,10212 6739,10120
-Nollendorfplatz [Parkplatz]	2::temp 6941,10329 6978,10319 7036,10313
-##: note: laut Karte nur eingeschränktes Halteverbot vvv
-#Eisenacher Str. ab Nollendorfstr.	q4::temp 6739,10120 6741,10017
-#Gossowstr.	q4::temp 6609,10147 6630,9990
-##: note ^^^
-',
-         'from' => 1784239200,
-         'id' => 74,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (18.7.2026 und 19.7.2026)',
-         'type' => 'gesperrt',
-         'until' => 1784498399
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '# REMOVED --- #: source_id: INKO_83663 (inaktiv)
 # REMOVED ---	2::inwork 5772,16919 5847,17018 5953,17131 6051,17269 6091,17346 6126,17448
@@ -3178,41 +2665,7 @@ Uhlandstr.: Einbahnstraßenregelung zwischen Steinplatz und Kantstr.	q4::inwork; 
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk
-#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
-#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021) (24. Juli 2025 - 27. Juli 2025) (16. Juli 2026 - 19. Juli 2026)
-#: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1310556.php
-#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/gruenes-licht-fuer-tegeler-hafenfest-id216068
-#: by: https://berliner-abendblatt.de/kiez-news/reinickendorf/das-tegeler-hafenfest-ist-wieder-da-und-will-an-grosse-zeiten-anschliessen-id226835
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581206.php
-#: by: https://www.rbb24.de/panorama/beitrag/2025/07/berlin-tegeler-hafenfest-abgesagt-sturmschaeden.html
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1581336.php (neuer Termin: 25. bis 28. September 2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/rettung-fur-beliebtes-tegeler-hafenfest-in-berlin-ein-veranstalter-schmeisst-hin--jetzt-ubernehmen-zwei-neue-15761700.html
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1686656.php
-# REMOVED (was) : tempex: 20160714-20160717
-#: alias: Tegeler Hafenfest
-	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
-',
-         'from' => 1784066400,
-         'id' => 2420,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              7,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (16.07.2026 bis 19.07.2026)',
-         'type' => 'gesperrt',
-         'until' => 1784484000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -8704,11 +8157,12 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-19 vvv
+#: last_checked: 2026-07-20 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
 # REMOVED (mittlerweile hier offen) --- Rotherstr.	q4::inwork; 13755,10896 13856,10864
+#: XXX Wird das Kopfsteinpflaster nach der Neupflasterung besser sein (Q2 statt Q2-)?
 Am Rudolfplatz	q4::inwork; 13856,10864 13896,10851 14011,10812
 Rudolfstr.	q4::inwork; 14026,10869 13886,10939
 # REMOVED --- #: next_check ^^^
@@ -8910,7 +8364,7 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-07-13
+#: last_checked: 2026-07-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -9063,14 +8517,14 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (G,W,T[nur nördlich])
+         'data' => '#: also_indoor: traffic (G,ex-W,T,H[nur nördlich])
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/s%C3%BCdkreuz-iii-%E2%80%93-gotenstra%C3%9Fe-ella-barowsky-stra%C3%9Fe.1267/page-4#post-27571
 #: by: https://www.entwicklungsstadt.de/quartiersprojekt-bella-am-suedkreuz-spektakulaere-bilder-der-schoeneberger-grossbaustelle/ ("B\'Ella")
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
 #: osm_watch: note 5200828 2
-#: last_checked: 2026-07-07 vvv
+#: last_checked: 2026-07-20 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
@@ -10353,16 +9807,17 @@ Preysingstr.	q4::inwork 7721,2137 7650,2112 7581,2092
        },
        {
          'data' => '#: source_id: LMS-BR:405760/72 viz2021:13.352099,52.435909, (bis 19.06.2026) (inaktiv)
+#: source_id: LMS-BR:416493/72 viz2021:13.35197,52.43579, (bis 14.08.2026)
 #: also_indoor: traffic (G,T,H,no-W)
-#: last_checked: 2026-07-14 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
-# REMOVED (wird höchstwahrscheinlich verlängert) --- #: next_check: 2026-06-19 vvv
+#: last_checked: 2026-07-20 (traffic) vvv
+# REMOVED --- #: check_frequency: 14d (traffic) vvv
+#: next_check: 2026-08-14 vvv
 #: note: Länge der Sperrung in der nördlichen Mühlenstr. ca. 40m
 Mühlenstr.	q3::inwork 7104,3416 7042,3281 6914,3093
 #: note: Länge der Sperrung in der Malteserstr. ca. 80m
 Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -10597,7 +10052,7 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 #: priority: #A
 #: last_checked: 2026-07-18 vvv
-#: check_frequency: 8d vvv
+#: check_frequency: 14d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
 	q3::inwork; 14381,12207 14291,12222
@@ -10838,6 +10293,16 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
          'text' => 'Am Wiesenrain: mögliche Sperrung der Fahrbahn vor dem S-Bhf. Hirschgarten, vom 10.7.2026 bis 24.8.2026',
          'type' => 'handicap',
          'until' => 1787598000
+       },
+       {
+         'data' => '#: source_id: LMS-BR:416449/72 viz2021:13.4355,52.51475,20.07.2026,07:00 (bis 29.08.2026)
+	q4::inwork 12450,11980 12532,12150
+',
+         'from' => 1784498400,
+         'id' => 4685,
+         'text' => 'Koppenstr.: Bauarbeiten, Anbindung Singerstr. gesperrt, bis 29.08.2026',
+         'type' => 'handicap',
+         'until' => 1788040800
        }
      
 );

@@ -50661,11 +50661,12 @@ EOF
 #: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-19 vvv
+#: last_checked: 2026-07-20 vvv
 #: check_frequency: 14d vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
 # REMOVED (mittlerweile hier offen) --- Rotherstr.	q4::inwork; 13755,10896 13856,10864
+#: XXX Wird das Kopfsteinpflaster nach der Neupflasterung besser sein (Q2 statt Q2-)?
 Am Rudolfplatz	q4::inwork; 13856,10864 13896,10851 14011,10812
 Rudolfstr.	q4::inwork; 14026,10869 13886,10939
 # REMOVED --- #: next_check ^^^
@@ -51437,7 +51438,7 @@ EOF
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-07-13
+#: last_checked: 2026-07-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-01-09 (Halteverbotsschilder)
 	q4::inwork 13408,10837 13436,10903
@@ -51813,14 +51814,14 @@ EOF
        text  => 'Gotenstr.: Sperrung der Fahrbahn vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<'EOF',
-#: also_indoor: traffic (G,W,T[nur nördlich])
+#: also_indoor: traffic (G,ex-W,T,H[nur nördlich])
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/s%C3%BCdkreuz-iii-%E2%80%93-gotenstra%C3%9Fe-ella-barowsky-stra%C3%9Fe.1267/page-4#post-27571
 #: by: https://www.entwicklungsstadt.de/quartiersprojekt-bella-am-suedkreuz-spektakulaere-bilder-der-schoeneberger-grossbaustelle/ ("B'Ella")
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
 #: osm_watch: note 5200828 2
-#: last_checked: 2026-07-07 vvv
+#: last_checked: 2026-07-20 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
@@ -53891,16 +53892,17 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:405760/72 viz2021:13.352099,52.435909, (bis 19.06.2026) (inaktiv)
+#: source_id: LMS-BR:416493/72 viz2021:13.35197,52.43579, (bis 14.08.2026)
 #: also_indoor: traffic (G,T,H,no-W)
-#: last_checked: 2026-07-14 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
-# REMOVED (wird höchstwahrscheinlich verlängert) --- #: next_check: 2026-06-19 vvv
+#: last_checked: 2026-07-20 (traffic) vvv
+# REMOVED --- #: check_frequency: 14d (traffic) vvv
+#: next_check: 2026-08-14 vvv
 #: note: Länge der Sperrung in der nördlichen Mühlenstr. ca. 40m
 Mühlenstr.	q3::inwork 7104,3416 7042,3281 6914,3093
 #: note: Länge der Sperrung in der Malteserstr. ca. 80m
 Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -54194,7 +54196,7 @@ EOF
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 #: priority: #A
 #: last_checked: 2026-07-18 vvv
-#: check_frequency: 8d vvv
+#: check_frequency: 14d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
 	q3::inwork; 14381,12207 14291,12222
@@ -54412,6 +54414,15 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
 #: next_check ^^^
 #: last_checked ^^^
 # REMOVED --- #: valid: -20260709 --- Am Wiesenrain: Einbahnstraßenregelung	1s:q3:inwork 23931,5992 24122,6007
+EOF
+     },
+     { from  => 1784498400, # 2026-07-20 00:00
+       until => 1788040800, # 2026-08-30 00:00
+       text  => 'Koppenstr.: Bauarbeiten, Anbindung Singerstr. gesperrt, bis 29.08.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:416449/72 viz2021:13.4355,52.51475,20.07.2026,07:00 (bis 29.08.2026)
+	q4::inwork 12450,11980 12532,12150
 EOF
      },
     );
