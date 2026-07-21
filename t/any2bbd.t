@@ -137,6 +137,17 @@ A100 (Stadtring) 11.11.2026\tX 13.341823026264,52.4787540244731
 EOF
 	like $err, qr{.*_any2bbd\.geojson\.\.\. OK \(Strassen::GeoJSON\)}, 'expected diagnostics';
     }
+
+    {
+	ok run [@basecmd, '-geojson-name', 'street=.properties.street date=.properties.date', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
+	is $out, <<"EOF", 'expected geojson -> bbd conversion result with concatenated properties';
+#: map: polar
+#: encoding: utf-8
+#:
+street=A100 (Stadtring) date=11.11.2026\tX 13.341823026264,52.4787540244731
+EOF
+	like $err, qr{.*_any2bbd\.geojson\.\.\. OK \(Strassen::GeoJSON\)}, 'expected diagnostics';
+    }
 }
 
 __END__

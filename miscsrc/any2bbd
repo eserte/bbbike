@@ -68,25 +68,28 @@ if ($opt{v}) {
 
 my $namecb;
 if ($opt{'geojson-name'}) {
-    my @splitted_paths;
+    my @defs;
     my @paths = split /\s+/, $opt{'geojson-name'};
     for my $path (@paths) {
-	my @splitted_path;
-	if ($path =~ /^\.(.*)/) {
-	    @splitted_path = split /\./, $1;
+	my %def;
+	if (my($label,$path_rest) = $path =~ /^([a-zA-Z]+=)?\.(.+)/) {
+	    %def = (
+		label          => $label,
+		splitted_path  => [ split /\./, $path_rest ],
+	    );
+	} else {
+	    die "All -geojson-name values have to be paths (e.g. .properties.street), optionally prefixed with a label (e.g. id=.properties.id)\n";
 	}
-	if (!@splitted_path) {
-	    die "All -geojson-name values have to be paths (e.g. .properties.street)\n";
-	}
-	push @splitted_paths, \@splitted_path;
+	push @defs, \%def;
     }
 
     my %warn_once;
     $namecb = sub {
 	my $start_cursor = shift;
 	my @names;
-	for my $splitted_path (@splitted_paths) {
+	for my $def (@defs) {
 	    my $cursor = $start_cursor;
+	    my $splitted_path = $def->{splitted_path};
 	    for my $i (0 .. $#$splitted_path) {
 		if (ref $cursor ne 'HASH') {
 		    if (!$warn_once{nohash}++) {
@@ -96,7 +99,10 @@ if ($opt{'geojson-name'}) {
 		}
 		$cursor = $cursor->{$splitted_path->[$i]};
 	    }
-	    push @names, $cursor if defined $cursor;
+	    if (defined $cursor) {
+		my $label = $def->{label};
+		push @names, (defined $label ? $label : '') . $cursor;
+	    }
 	}
 	if (@names) {
 	    join(' ', @names);
