@@ -4,13 +4,12 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2013,2015,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
-#
+
+# WWW: https://github.com/eserte/bbbike
 
 use strict;
 use FindBin;
@@ -69,27 +68,41 @@ if ($opt{v}) {
 
 my $namecb;
 if ($opt{'geojson-name'}) {
-    my @path;
-    if ($opt{'geojson-name'} =~ /^\.(.*)/) {
-	@path = split /\./, $1;
-    }
-    if (!@path) {
-	die "-geojson-name has to be a path (e.g. .properties.street)\n";
+    my @splitted_paths;
+    my @paths = split /\s+/, $opt{'geojson-name'};
+    for my $path (@paths) {
+	my @splitted_path;
+	if ($path =~ /^\.(.*)/) {
+	    @splitted_path = split /\./, $1;
+	}
+	if (!@splitted_path) {
+	    die "All -geojson-name values have to be paths (e.g. .properties.street)\n";
+	}
+	push @splitted_paths, \@splitted_path;
     }
 
     my %warn_once;
     $namecb = sub {
-	my $cursor = shift;
-	for my $i (0 .. $#path) {
-	    if (ref $cursor ne 'HASH') {
-		if (!$warn_once{nohash}) {
-		    warn "geojson-name: path @path cannot be resolved, feature " . (defined $cursor ? "'$cursor'" : '<undef>') . " is not a HASH\n";
-		    return '';
+	my $start_cursor = shift;
+	my @names;
+	for my $splitted_path (@splitted_paths) {
+	    my $cursor = $start_cursor;
+	    for my $i (0 .. $#$splitted_path) {
+		if (ref $cursor ne 'HASH') {
+		    if (!$warn_once{nohash}++) {
+			warn "geojson-name: path @$splitted_path cannot be resolved, feature " . (defined $cursor ? "'$cursor'" : '<undef>') . " is not a HASH\n";
+			last;
+		    }
 		}
+		$cursor = $cursor->{$splitted_path->[$i]};
 	    }
-	    $cursor = $cursor->{$path[$i]};
+	    push @names, $cursor if defined $cursor;
 	}
-	defined $cursor ? $cursor : '';
+	if (@names) {
+	    join(' ', @names);
+	} else {
+	    '';
+	}
     };
 }
 

@@ -57,7 +57,8 @@ like $err, qr{.*_any2bbd\.trk\.\.\. OK \(Strassen::Gpsman\)};
         {
             "type": "Feature",
             "properties": {
-                "street": "A100 (Stadtring)"
+                "street": "A100 (Stadtring)",
+                "date": "11.11.2026"
             },
             "geometry": {
                 "type": "GeometryCollection",
@@ -79,7 +80,7 @@ EOF
 
     {
 	ok !run [@basecmd, '-geojson-name', 'wrongpath', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
-	like $err, qr{\Q-geojson-name has to be a path (e.g. .properties.street)}, 'expected error message';
+	like $err, qr{\QAll -geojson-name values have to be paths (e.g. .properties.street)}, 'expected error message';
     }
 
     {
@@ -93,14 +94,49 @@ EOF
 EOF
     }
 
-    ok run [@basecmd, '-geojson-name', '.properties.street', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
-    is $out, <<"EOF", 'expected geojson -> bbd conversion result';
+    {
+	ok run [@basecmd, '-geojson-name', '.properties.street .not.existing', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
+	like $err, qr{\Qgeojson-name: path not existing cannot be resolved, feature <undef> is not a HASH}, 'expected warning message';
+	is $out, <<"EOF", 'expected geojson -> bbd conversion result (-geojson-name partially used)';
 #: map: polar
 #: encoding: utf-8
 #:
 A100 (Stadtring)\tX 13.341823026264,52.4787540244731
 EOF
-    like $err, qr{.*_any2bbd\.geojson\.\.\. OK \(Strassen::GeoJSON\)}, 'expected diagnostics';
+    }
+
+    { # order does not matter if a non-existing property is used
+	ok run [@basecmd, '-geojson-name', '.not.existing .properties.street', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
+	like $err, qr{\Qgeojson-name: path not existing cannot be resolved, feature <undef> is not a HASH}, 'expected warning message';
+	is $out, <<"EOF", 'expected geojson -> bbd conversion result (-geojson-name partially used)';
+#: map: polar
+#: encoding: utf-8
+#:
+A100 (Stadtring)\tX 13.341823026264,52.4787540244731
+EOF
+    }
+
+    {
+	ok run [@basecmd, '-geojson-name', '.properties.street', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
+	is $out, <<"EOF", 'expected geojson -> bbd conversion result';
+#: map: polar
+#: encoding: utf-8
+#:
+A100 (Stadtring)\tX 13.341823026264,52.4787540244731
+EOF
+	like $err, qr{.*_any2bbd\.geojson\.\.\. OK \(Strassen::GeoJSON\)}, 'expected diagnostics';
+    }
+
+    {
+	ok run [@basecmd, '-geojson-name', '.properties.street .properties.date', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
+	is $out, <<"EOF", 'expected geojson -> bbd conversion result with concatenated properties';
+#: map: polar
+#: encoding: utf-8
+#:
+A100 (Stadtring) 11.11.2026\tX 13.341823026264,52.4787540244731
+EOF
+	like $err, qr{.*_any2bbd\.geojson\.\.\. OK \(Strassen::GeoJSON\)}, 'expected diagnostics';
+    }
 }
 
 __END__
