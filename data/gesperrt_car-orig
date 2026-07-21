@@ -65,8 +65,10 @@ Nußbaumallee - Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1732,12224
 Bhf. Blankenfelde: neue Unterführung ist noch nicht für den Kfz-Verkehr fertig	2::inwork 11667,-7536 11601,-7560 11551,-7599
 # 
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
+#: source_id: planb2026:113 (Sperrung einer Fahrtrichtung", bis 31.12.2026)
 #: check_frequency: 180d vvv
-#: next_check: 2028-01-01 vvv
+# REMOVED --- #: next_check: 2028-01-01 vvv
+#: next_check: 2026-12-31 (planb) vvv
 #: osm_watch: way id="47973246" version="13"
 #: last_checked: 2026-04-01
 Mecklenburgische Str./Rudolf-Mosse-Str.: Überfahrt gesperrt, für Radfahrer ist ein bisschen Platz frei gelassen	3nocross 3619,7587 3631,7598 3839,7787
@@ -1962,11 +1964,13 @@ Radieschenpfad	1 20582,18475 20635,18381
 #: by: https://www.entwicklungsstadt.de/spreepark-2027-wird-aus-berlins-sehnsuchtsort-ein-geschaeftsmodell/
 #: osm_watch: way id="24202434" version="29"
 #: osm_watch[closed]: note 3010817 1
+#: source_id: planb2026:284 ("Fahrbahneinengung", bis 30.06.2028)
 #: XXX Wird der Asphalt ersetzt werden? Mittlerweile ist der südöstliche Fahrbahnrand abgesperrt --- Anzeichen für erste Bauarbeiten? Mittlerweile (2024-09-30) wurden die Absperrungen wieder zum Waldrand geschoben; die Markierung zur Trennung von Rad/Fuß- und Pkw/Lkw-Verkehr existiert noch, samt einiger entsprechender Verkehrszeichen. Zwischendurch standen die Absperrungen auf der Fahrbahn, seit März 2026 nur noch eine Trennlinie, seit April 2026 wieder Absperrungen zwecks Trennung
 #: note: Durch die neue Schrankenanlage scheint es für Radfahrer keine Einschränkungen zu geben.
 #: last_checked: 2026-07-10
 #: check_frequency: 30d
-#: next_check: 2027-04-15
+#: next_check: 2027-04-15 (entwicklungsstadt: geplante Eröffnung)
+# REMOVED --- #: next_check: 2028-06-30 (planb)
 Dammweg: per Schranke für den Autoverkehr gesperrt	2 15869,8355 16388,8821
 # 
 #: note: für Fußgänger existiert nördlich der Kreuzung eine Überquerungsmöglichkeit

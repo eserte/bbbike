@@ -4103,8 +4103,10 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: source_id: planb2026:3446 (bis 15.08.2026)
 #: last_checked: 2026-07-13
 #: check_frequency: 7d
+#: next_check: 2026-08-15 (planb)
 An der Kommandantur: Gerüstbauarbeiten, Straße gesperrt	2::inwork 9943,12364 9996,12372
 # 
 #: next_check_id: GOERLITZERBRUECKEN-2026
@@ -4141,7 +4143,7 @@ An der Kommandantur: Gerüstbauarbeiten, Straße gesperrt	2::inwork 9943,12364 999
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-01
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
@@ -4272,11 +4274,13 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
 # 
-#: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026) (bis 22.07.2026)
+#: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026)
+#: source_id: planb2026:1298 (bis 01.10.2026)
 #: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
 #: last_checked: 2026-07-13
-#: next_check: 2026-07-22
-#: valid: -20260722
+#: next_check: 2026-10-01 (VIZ-Verkehrsmeldung, planb)
+# REMOVED --- #: valid: -20260722
+#: valid: -20261001
 (Berolinastr. - Mollstr.): wegen Tiefbauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
 # 
 #: next_check_id: CHAUSSEE-2026
@@ -4370,10 +4374,11 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: by: https://www.entwicklungsstadt.de/heidestrasse-18-rohbau-des-neuen-schulz-hotels-waechst-sichtbar-in-die-hoehe/
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
+#: source_id: planb2026:627 (Fahrstreifen-Reduzierung", bis 30.07.2027)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
 #: last_checked: 2026-07-13 (daf) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-03-15 vvv
+#: next_check: 2027-03-15 (entwicklungsstadt) vvv
 #: osm_watch: way id="752856111" version="16"
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7697,14187 7781,14238 7802,14250
 #: osm_watch: way id="237716438" version="27"
@@ -4546,8 +4551,10 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
 # 
 #: osm_watch[closed]: note 4165928 1
+#: source_id: planb2026:2594 (bis 31.12.2026)
 #: last_checked: 2026-06-30
 #: check_frequency: 60d
+#: next_check: 2026-12-31 (planb)
 Delbrückstr.: Baustellenfläche, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
 #: next_check_id: HIRSCHGARTEN-2024
@@ -4582,12 +4589,13 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-a117-zwischen-waltersdorf-und-ad-treptow/
+#: source_id: planb2026:262 (Umleitung, bis 30.09.2026)
 #: note: temp_blockings-Eintrag existiert auch
 #: last_checked: 2026-04-19 (osm)
-#: check_frequency: 60d
-# REMOVED (Verlängerung?) --- #: next_check: 2025-12-31
+#: check_frequency: 120d
+#: next_check: 2026-09-30 (planb)
 #: note: danach "übernimmt" der temp_blockings-Eintrag
-#: valid: -20260618
+#: valid: -20260930
 Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
 # 
 # REMOVED (neue Rampe existiert) --- #: next_check_id: KNOTENMARZAHN-2022 --- #: XXX an dieser Stelle wird es alternativ eine Rampe geben --- #: osm_watch: note 4298701 3 --- #: osm_watch: way id="1297589176" version="1" --- #: last_checked: 2025-08-24 --- #: check_frequency: 180d --- #: next_check: 2026-12-31 --- (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19157,14948 19162,14931 19121,14916 19173,14932
@@ -4644,21 +4652,25 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
+#: source_id: planb2026:240 (bis 31.12.2027)
 #: also_indoor: traffic (G,W)
 #: last_checked: 2026-07-14
 #: check_frequency: 45d
-#: next_check: 2027-06-30 (entwicklungsstadt)
+# REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
+#: next_check: 2027-12-31 (planb)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 # 
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
 #: osm_watch: way id="618834389" version="17"
 #: osm_watch: way id="43619494" version="9"
+#: source_id: planb2026:51 (hier nur Gehwegvollsperrung, bis 31.12.2026)
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg; mittlerweile (2024-12-13) ist die Straße kaum noch erkennbar
 #: priority: #C
 #: last_checked: 2026-05-31
 #: check_frequency: 180d
+#: next_check: 2026-12-31 (planb)
 Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
 #: next_check_id: AMWIEZENERBAHNHOF-2024
@@ -4769,8 +4781,10 @@ Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
 #: next_check_id: PLANSTRASSE9-2023
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: osm_watch: way id="20420585" version="37"
+#: source_id: planb2026:51 (gehört zum Komplex Gartenstadt Karlshorst, bis 31.12.2026)
 #: last_checked: 2026-05-31
 #: check_frequency: 90d
+#: next_check: 2026-12-31 (planb)
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
 # 
@@ -4927,9 +4941,11 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
+#: source_id: planb2026:41 (bis 31.03.2028)
 #: last_checked: 2026-07-09
 #: check_frequency: 60d
-#: next_check: 2030-12-31 (bbr-bund website)
+#: next_check: 2028-03-31 (planb)
+# REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
 # 
 # REMOVED (offen) --- #: by: https://berliner-abendblatt.de/2023/01/02/adlershof-neues-quartier-fuer-rund-1-000-menschen/ (keine Erwähnung) --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/autofreies-quartier-wohnen-am-campus-nach-drei-jahren-bauzeit-fertiggestellt_a367172 (keine Erwähnung) --- #: XXX Laut Schilder Eröffnung Ende Mai 2023 --- am 04.06.2023 standen aber immer noch Bauzäune --- #: note: laut osm ist der nördliche Abschnitt mittlerweile offen --- #: last_checked: 2023-06-19 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2023-05-31 vvv --- #: osm_watch: way id="1155774800" version="1" --- Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18836,3203 18834,3315 --- #: osm_watch: way id="1155774804" version="3" --- Weg entlang der Straßenbahnstrecke: fertig, aber noch mit Bauzäunen abgesperrt	2::inwork 18835,3562 18851,3598 --- #: osm_watch: way id="1155774792" version="2" --- (Straßenbahnstrecke - Konrad-Zuse-Str.): noch nicht fertiggestellt	2::inwork 18833,3388 18857,3418 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -5186,7 +5202,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-07-11 vvv
+#: last_checked: 2026-07-21 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027

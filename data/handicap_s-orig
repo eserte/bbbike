@@ -30,9 +30,10 @@
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
+#: source_id: planb2026:420 (bis 31.08.2026)
 #: last_checked: 2026-07-17
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2026-06-30 (Halteverbotsschilder)
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2026-08-31 (planb)
 # REMOVED --- #: valid: -20250630
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 # 
@@ -260,14 +261,22 @@ Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für R
 ### Lichtenrade ###
 # 
 #: next_check_id: WOLZIGERZEILE-2024
+#: source_id: planb2026:288 (bis 31.08.2026)
 #: last_checked: 2026-06-13
 #: check_frequency: 14d
-# REMOVED --- #: next_check: 2026-06-01
+#: next_check: 2026-08-31 (planb)
 Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10392,-2595 10394,-2567
 # 
 # REMOVED --- #: next_check_id: BAHNHOFSTR-2020 --- #: source_id: 2147345858 --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10273,-2158 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
 # 
 ### Treptow ###
+# 
+#: source_id: planb2026:2356 (bis 30.06.2028)
+#: note: Länge der Einbahnstraßenregelung etwa 150m
+#: last_checked: 2026-07-21
+#: check_frequency: 90d
+#: next_check: 2028-06-30 (planb, Halteverbotsschilder)
+Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 13664,9073
 # 
 # REMOVED (vorfristig vorbei) --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251019 (bis Ende Oktober 2025, hier nur Kfz-Verkehr)
 # REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3lx3m26mh2p
@@ -295,9 +304,11 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="10"
+#: source_id: planb2026:79 (bis 31.12.2027)
 #: last_checked: 2026-05-20
 #: check_frequency: 120d
-#: next_check: 2029-06-30 (agromex website)
+#: next_check: 2027-12-31 (planb)
+# REMOVED --- #: next_check: 2029-06-30 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 # REMOVED (hier gar kein Durchgang) --- (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14116,10149 14126,10176
 # 
@@ -399,11 +410,12 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.entwicklungsstadt.de/burgsdorfstrasse-ruine-in-wedding-verschwindet-nach-jahrelangem-streit/
 #: osm_watch: way id="549316654" version="49"
 #: osm_watch: note 4844974 4
+#: source_id: planb2026:862 (bis 30.08.2026)
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,re-H,T[permanent],no-W)
 #: last_checked: 2026-06-29 (daf (noch immer Abrissarbeiten))
 #: check_frequency: 30d
-# REMOVED (wird wohl länger dauern?) --- #: next_check: 2026-03-15 (MoPo)
+#: next_check: 2026-08-30 (planb)
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -411,8 +423,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
+#: source_id: planb2026:was:3870 (bis 14.08.2026)
 #: last_checked: 2026-07-14
 #: check_frequency: 7d
+#: next_check: 2026-08-14 (planb)
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
@@ -534,6 +548,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
+#: source_id: planb2026:5 (bis 30.04.2028)
 #: last_checked: 2026-07-08 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
@@ -666,10 +681,11 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: by: https://entwicklungsstadt.de/charlottenstrasse-verkehrsverwaltung-nennt-erstmals-konkreten-zeitplan/ (Bauarbeiten ab 2026, Bauzeit ein Jahr)
 #: by: https://www.entwicklungsstadt.de/dauerbaustelle-in-berlin-mitte-umbau-der-charlottenstrasse-startet-spaeter/ (Beginn Ende 2026 oder sogar Anfang 2027)
 #: also_indoor: traffic
+#: source_id: planb2026:135 (bis 31.12.2026)
 #: priority: #B vvv
 #: last_checked: 2026-06-29 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-12-31 (entwicklungsstadt) vvv
+#: next_check: 2026-12-31 (entwicklungsstadt, planb) vvv
 #: osm_watch: way id="153698394" version="19"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # REMOVED (offen) --- #: also_indoor: traffic (ex-H,ex-G) --- #: osm_watch: way id="114667396" version="13" --- Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
@@ -826,11 +842,12 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: by: https://bsky.app/profile/eserte.bsky.social/post/3mf5bn74i322s
 #: source_id: LMS-BR:394880/72 viz2021:13.41673,52.49168, (bis 15.01.2026) (bis 23.01.2026) (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
 #: source_id: LMS-BR:394881/72 viz2021:13.41357,52.49335, viz2021:13.41335,52.49191, (bis 30.01.2026) (bis 06.03.2026) (bis 12.03.2026) (inaktiv)
+#: source_id: planb2026:1536 (bis 21.08.2026)
 #: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
 #: note: im Zuge der Grimmstr. kann die Absperrung weggeschoben sein
 #: last_checked: 2026-07-16 vvv
 #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2026-03-12 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-21 (planb) vvv
 # REMOVED --- #: valid: -20260312
 #: note "Sicherheits"-valid-Ende
 #: valid: -20260930 vvv
@@ -838,6 +855,7 @@ Grimmstr./Müllenhoffstr.: Sperrung im Einmündungsbereich	q3::inwork; 11075,9576 
 #: note: etwa 60m bis zur nächsten Bordsteinabsenkung
 Müllenhoffstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 11311,9576 11110,9661
 #: valid ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1064,16 +1082,19 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: osm_watch: way id="714352578" version="3"
 #: source_id[inactive]: bvg2024:171#HIM_FREETEXT_320392 (Haltestelle ist aufgehoben, kein Endedatum)
 #: source_id: bvg2024:171#HIM_FREETEXT_303697 (Verlegung der Haltestelle, kein Endedatum)
+#: source_id: planb2026:1415 (bis 30.09.2028)
 #: XXX Wann sind die Bauarbeiten zu Ende?
-#: last_checked: 2026-06-29 (daf)
+#: last_checked: 2026-07-21
 #: check_frequency: 180d
-#: next_check: 2028-11-30 (entwicklungsstadt)
+#: next_check: 2028-09-30 (planb)
+# REMOVED --- #: next_check: 2028-11-30 (entwicklungsstadt)
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
 #: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
-#: last_checked: 2026-07-16
+#: source_id: planb2026:419 (bis 31.07.2026)
+#: last_checked: 2026-07-21
 #: check_frequency: 120d
-#: next_check: 2026-07-31 (Halteverbotsschilder)
+#: next_check: 2026-07-31 (Halteverbotsschilder, planb)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 # 
 # REMOVED (nur noch Fahrstreifenreduzierung) --- #: source_id: viz2021:13.428865,52.484307,28.04.2025,07:00 (bis 28.02.2026) (inaktiv)
@@ -1192,9 +1213,10 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 ### Lichtenberg ###
 # 
 #: also_indoor: traffic (G,no-T,no-H,no-W)
+#: source_id: planb2026:2450 (hier nur "Fahrbahneinengung", bis 30.07.2026)
 #: last_checked: 2026-07-12
 #: check_frequency: 14d (traffic)
-#: next_check: 2026-07-30 (Halteverbotsschilder)
+#: next_check: 2026-07-30 (Halteverbotsschilder, planb)
 #: valid: -20260730
 Rathausstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 15670,12022 15685,12154
 # 
@@ -1450,8 +1472,9 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/wenn-wohnungsbau-den-verkehr-blockiert-fast-jeden-tag-chaos--berliner-bezirk-lasst-gefahrlichen-engpass-weiten-15670280.html (Erwähnung)
 #: by: https://www.entwicklungsstadt.de/heynstrasse-warum-landet-der-durchgangsverkehr-im-wohnkiez/
 #: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026) (bis 07.07.2026) (bis 07.08.2026)
+#: source_id: planb2026:175 (bis 07.08.2026)
 #: last_checked: 2026-07-08
-#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20260807
 Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
 # 
@@ -1516,6 +1539,7 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 #: note: laut VIZ-Verkehrsmeldung ist nur der Kfz-Verkehr betroffen; bis zur Baseler Str. gibt's auch einen Hochbordradweg
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
 #: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026)
+#: source_id: planb2026:2679 (hier: "keine Fahrbahn-Einschränkung", bis 31.07.2026)
 #: last_checked: 2026-05-09 vvv
 #: next_check: 2026-09-04 vvv
 #: valid: -20260904 vvv
@@ -2112,6 +2136,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: note 5350535 2
 #: osm_watch: way id="30909343" version="27"
+#: source_id: planb2026:157 (bis 31.12.2026)
 #: last_checked: 2026-07-06
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -2578,9 +2603,10 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="529086013" version="5"
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="16"
+#: source_id: planb2026:353 (bis 31.12.2027)
 #: last_checked: 2026-06-23 (daf)
 #: check_frequency: 120d
-#: next_check: 2027-11-30 (deal magazin: Herbst 2027)
+#: next_check: 2027-12-31 ("Haltverbote", planb)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
 # 
 #: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle

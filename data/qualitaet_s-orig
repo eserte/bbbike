@@ -127,7 +127,8 @@ Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
 Drübecker Weg: Kopfsteinpflaster	Q2 13909,8471 13812,8530
 Kelbraer Str.: Beton	Q0 13830,8381 13909,8471
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
-Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz (Verbundsteinpflaster) möglich	Q2 13687,8734 13774,8849
+#: note: ... nur wenn man Richtung Norden fährt, und auch nur dann, wenn keine überlangen Fahrzeuge auf dem Parkplatz stehen
+Sinsheimer Weg: schlechtes Kopfsteinpflaster, teilweise mit Asphaltflicken, aber Ausweichen auf Parkplatz (Verbundsteinpflaster) möglich	Q2 13687,8734 13774,8849
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 Donaustr.: Asphalt	Q0 12198,8887 12392,8724 12551,8612 12643,8533
 Donaustr.: Asphalt	Q0 12150,8884 12198,8887
@@ -994,12 +995,13 @@ Calvinstr.: Kopfsteinpflaster	Q2 6775,12661 6802,12797 6860,13093
 # 
 #: next_check_id: ALTPICHELSDORF-2026
 #: XXX wiederherstellen: Alt-Pichelsdorf: Kopfsteinpflaster	Q2- -3692,11681 -3657,11631 -3606,11532
+#: source_id: planb2026:1569 ("Haltverbote", bis 03.11.2028)
 #: last_checked: 2026-07-08
-#: next_check: 2028-11-03
+#: next_check: 2028-11-03 (planb)
 Alt-Pichelsdorf: provisorisch asphaltiert	Q0 -3692,11681 -3657,11631 -3606,11532
 #: XXX wiederherstellen Alt-Pichelsdorf: Kopfsteinpflaster	Q2- -3606,11532 -3445,11505
 #: last_checked: 2026-06-25 (mapillary)
-#: next_check: 2028-11-03
+#: next_check: 2028-11-03 (planb)
 Alt-Pichelsdorf: provisorisch asphaltiert	Q0 -3606,11532 -3445,11505
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3445,11505 -3405,11498
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3429,11474 -3445,11505 -3404,11589
@@ -1258,12 +1260,13 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: osm_watch: way id="934995901" version="14"
 #: osm_watch: way id="934995899" version="16"
 #: osm_watch: way id="22820618" version="24"
+#: source_id: planb2026:3071 (Hochbauarbeiten bis 30.11.2026)
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
 #: last_checked: 2026-07-06
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2025-05-31 (osm note)
+#: check_frequency: 60d
+#: next_check: 2026-11-30 (planb)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
 Seumestr.: Kopfsteinpflaster	Q2- 14395,11753 14358,11656 14305,11514 14254,11377
@@ -2981,10 +2984,12 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: source_id[inactive]: bvg2024:256#HIM_FREETEXT_307497
 #: osm_watch: note 4294376 9
 #: osm_watch: way id="1025072174" version="5"
+#: source_id: planb2026:2511 ("Fahrbahneinengung", bis 31.03.2027)
 #: XXX außerdem kann die Asphaltfahrbahn neben dem Friedhof gesperrt sein (nicht am Wochenende?), dann Ausweichen über unbefestigten parallelen Weg
 #: last_checked: 2026-06-03
 #: check_frequency: 120d
-#: next_check: 2027-12-31 (nachhaltige-erneuerung website)
+#: next_check: 2027-03-31 (planb)
+# REMOVED --- #: next_check: 2027-12-31 (nachhaltige-erneuerung website)
 #: XXX wiederherstellen: (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster, Schotter (Asphaltstreifen wegen Bauarbeiten nicht befahrbar)	Q2 17540,12222 17485,12240
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphalt	Q0 17485,12240 17471,12243
@@ -3580,13 +3585,14 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: next_check_id: DRESDNERBAHN-2021
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
+#: source_id: planb2026:5615 (bis 31.07.2026)
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 # REMOVED --- #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
 #: osm_watch: way id="30893534" version="30"
 #: osm_watch: way id="1155399359" version="5"
 #: last_checked: 2026-06-13
 #: check_frequency: 60d
-# REMOVED --- #: next_check: 2026-06-01
+#: next_check: 2026-07-31 (planb)
 Am Teltowkanal: Asphalt	Q0 7911,4465 7866,4419 7769,4315
 # 
 Am Teltowkanal: Verbundsteinpflaster	Q1 7769,4315 7724,4270
@@ -9388,9 +9394,9 @@ Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8
 #: next_check_id: MUSSEHL-2025
 #: note: kein "add_fragezeichen", unklares Ende der Bauarbeiten
 #: XXX: Ist die Qualität nach den Bauarbeiten besser geworden?
-#: last_checked: 2026-06-22
+#: last_checked: 2026-07-20 (traffic)
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-02-20
+#: next_check: 2026-07-31 (planb)
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8982,8781 8926,8682 8842,8561
 Mussehlstr.: Gehwegplatten	Q0- 8842,8561 8759,8458
 Mussehlstr.: Verbundsteinpflaster	Q1+ 8759,8458 8720,8373
@@ -14605,6 +14611,11 @@ Marius-Carpentier-Str.: Asphalt	Q0 -3034,16719 -2908,16701 -2629,16653
 Meta-London-Str.: Betonpflaster	Q0- -2944,16496 -2927,16588 -2913,16665 -2908,16701
 Meta-London-Str. [Wohngebiet]: Betonpflaster	Q0- -2913,16665 -2877,16647 -2638,16609
 Meta-London-Str. [Wohngebiet]: Betonpflaster	Q0- -2927,16588 -2649,16537
+# 
+#: historical_note: früher (bis 2026) ohne Eintrag, evtl. durch den vielen Ausweich- und Umleitungsverkehr schlechter geworden? vvv
+Thiemannstr.: Asphalt mit Schäden	Q1+ 13875,8282 13805,8193 13724,8090
+Thiemannstr.: Asphalt mit Schäden	Q1 13724,8090 13663,8011 13616,7949
+#: historical_note ^^^
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -32193,9 +32204,10 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: by: https://be.beteiligung.diplanung.de/verfahren/11-157-detlevstrasse/public/detail
 #: by: https://be.beteiligung.diplanung.de/file/11-157-detlevstrasse/b2910af3-b463-4139-94c1-af192bf48209 (verkehrsberuhigter Bereich in der Detlevstr. zwischen Oswaldstr. und Bennostr.)
 #: by: https://www.entwicklungsstadt.de/gehrenseestrasse-in-lichtenberg-ehemaliges-betonwerk-wird-zum-neuen-logistikstandort/
+#: by: https://www.entwicklungsstadt.de/hohenschoenhausen-400-wohnungen-im-wald-an-der-detlevstrasse-geplant/ (Bauzeit: Oktober 2027 - Oktober 2029)
 #: last_checked: 2026-03-04 vvv
-#: check_frequency: 360d vvv
-#: next_check: 2026-12-31 (Baustart (entwicklungsstadt, howoge)) vvv
+# REMOVED --- #: check_frequency: 360d vvv
+#: next_check: 2027-10-31 (Baustart (entwicklungsstadt)) vvv
 #: corrected_by: srt (teilweise holpriger Asphalt, Q2 -> ...)
 #: osm_watch: way id="11644300" version="23"
 Detlevstr.: rauer Asphalt	Q1- 18471,16765 18487,16741 18439,16483
@@ -32203,7 +32215,7 @@ Detlevstr.: rauer Asphalt	Q1- 18471,16765 18487,16741 18439,16483
 #: osm_watch: way id="1093572875" version="2"
 Detlevstr.: Asphalt mit erhebliche Hebungen	Q2- 18439,16483 18412,16334 18406,16295
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: confirmed_by: srt (zumindest den Asphalt)

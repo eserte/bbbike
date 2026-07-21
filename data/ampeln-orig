@@ -32,14 +32,17 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8660,1867
 # 
 #: next_check_id: WOLLANK-2024
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
+#: source_id: planb2026:698 ("Gegenverkehrsanlage (LZA)", bis 04.09.2026)
 #: last_checked: 2026-06-02 (BVV-Drucksache)
-#: next_check: 2026-12-31
+#: next_check: 2026-09-04 (planb)
+# REMOVED --- #: next_check: 2026-12-31
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
 #: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026)
+#: source_id: planb2026:482 (bis 28.08.2026)
 #: last_checked: 2026-05-30
-#: next_check: 2026-08-28
+#: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20260828
 Siemensstr./Borstellstr.	X::inwork 6219,4336
 # 
@@ -66,9 +69,11 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 #: next_check_id: CHARLOTTENBURGERUFER-2024
 #: osm_watch: note 5200746 2
 #: note: Anforderungsampel
+#: source_id: planb2026:4035 ("Sicherung gemäß Vz.-plan", bis 20.08.2026)
 #: last_checked: 2026-06-09 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-20 (planb)
+# REMOVED --- #: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
 Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
@@ -86,9 +91,11 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 #: last_checked ^^^
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
+#: source_id: planb2026:900 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
 #: note: eigentlich zwei Fußgängerampeln
 #: last_checked: 2026-07-07
 #: check_frequency: 60d
+#: next_check: 2026-11-04 (planb)
 Michaelbrücke	F::inwork 11676,11839
 # 
 # REMOVED --- #: next_check_id: KOENIGSHEIDEWEG-2025
@@ -420,8 +427,9 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
 #: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026)
+#: source_id: planb2026:2025 (bis 21.08.2026)
 #: last_checked: 2026-07-11
-#: next_check: 2026-08-21
+#: next_check: 2026-08-21 (VIZ-Verkehrsmeldung, planb)
 #: valid: 20260601-20260821
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # 
@@ -537,9 +545,11 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260616 (bis Mitte Juli 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mohlhsl6jk2e
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihixc4uykzapjwbqitqzrn4r3c2zliqzifuaxngsxq3sqhowc6zqa
-#: source_id: LMS-BR:412220/72 viz2021:13.4732,52.50935,17.06.2026,09:30 (bis 10.07.2026) (bis 24.07.2026)
+#: source_id: LMS-BR:412220/72 viz2021:13.4732,52.50935,17.06.2026,09:30 (bis 10.07.2026) (bis 24.07.2026) (vorfristig inaktiv)
+#: source_id: planb2026:984 ("Gegenverkehrsanlage (LZA)", bis 24.07.2026)
 #: last_checked: 2026-07-18
-#: next_check: 2026-07-24 (VIZ)
+#: next_check: 2026-07-21 (VIZ)
+# REMOVED --- #: next_check: 2026-07-24 (VIZ)
 # REMOVED (use "emergency" end) --- #: valid: -20260724
 #: valid: -20261231
 Gürtelstr.: Gegenverkehrsregelung zwischen Dossestr. und Oderstr.	X::inwork::alternating 15153,11691
