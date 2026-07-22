@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-lazy.t,v 1.11 2005/04/06 21:03:03 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -15,6 +14,7 @@ use lib ("$FindBin::RealBin/..",
 
 BEGIN {
     if (!eval q{
+	use Strassen::Core;
 	use Strassen::Lazy;
 	require Object::Realize::Later; Object::Realize::Later->VERSION(0.13);
 	use Test;
@@ -28,6 +28,13 @@ BEGIN {
 
 BEGIN { plan tests => 22 }
 
+my $r1_expected; # the street with index=1, loaded with non-lazy Strassen object
+{
+    my $s = Strassen->new('strassen');
+    $r1_expected = $s->get(1);
+    
+}
+
 {
     my $s = Strassen::Lazy->new("strassen");
     ok(UNIVERSAL::isa($s, "Strassen::Lazy"));
@@ -35,7 +42,7 @@ BEGIN { plan tests => 22 }
     $r = $s->get(1); # trigger realization
     ok($s->isa("Strassen"));
     ok($r);
-    ok($r->[Strassen::NAME], "Methfesselstr."); # by default the second name
+    ok($r->[Strassen::NAME], $r1_expected->[Strassen::NAME]);
     $r = $s->get_by_name("Mehringdamm");
     ok($r);
     ok($r->[Strassen::NAME], "Mehringdamm");
@@ -48,7 +55,7 @@ BEGIN { plan tests => 22 }
     $r = $s->get(1); # trigger realization
     ok($s->isa("MultiStrassen"));
     ok($r);
-    ok($r->[Strassen::NAME], "Methfesselstr."); # by default the second name
+    ok($r->[Strassen::NAME], $r1_expected->[Strassen::NAME]);
     $r = $s->get_by_name("Sonntagstr.");
     ok($r);
     ok($r->[Strassen::NAME], "Sonntagstr.");
