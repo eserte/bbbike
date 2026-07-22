@@ -494,6 +494,14 @@ for my $file (@files) {
 						py => $py,
 						inactive => $inactive,
 					       };
+		     } elsif ($source_id =~ m{\bplanb2026:(-?[\d\.]+),(-?[\d\.]+)}) {
+			 my($px,$py) = ($1,$2);
+			 my($x,$y) = _wgs84_to_utm33U($py,$px);
+			 if ($source_id =~ m{\b(inactive|inaktiv)\)?\s*$}) { # marked as inactive in a "comment" in the source_id value
+			     $inactive = 1;
+			 }
+			 my $planb_url = sprintf 'planb:%d,%d', $x, $y;
+			 push @extra_url_defs, ['planb', $planb_url, ($inactive ? "(inactive)" : ())];
 		     }
 		 }
 		 if (@viz_source_ids) {
@@ -918,6 +926,7 @@ if ($expired_statistics_logfile) {
 #+LINK: osm https://osm.org/%s
 #+LINK: mapillary https://www.mapillary.com/app/?%s
 #+LINK: bbbikeleaflet http://www.bbbike.de/cgi-bin/bbbikeleaflet.cgi?%s
+#+LINK: planb https://gdi.berlin.de/viewer/main/?Map/layerIds=hintergrund_default_grau,planb_ereignisse:ereignisse&visibility=true,true&transparency=0,0&Map/center=[%s]&Map/zoomLevel=7
 # Local variables:
 # compile-command: "$compile_command"
 # End:
