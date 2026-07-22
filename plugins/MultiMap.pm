@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.59;
+$VERSION = 2.60;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -1930,6 +1930,7 @@ sub showmap_url_gdi_berlin {
 	strbefahrung2014   => 'hintergrund_k5_grau,strassenbefahrung:cm_fahrbahn,strassenbefahrung:cl_gehweg,strassenbefahrung:ck_parkflaeche,strassenbefahrung:cj_fussgaengerzone,strassenbefahrung:ci_oeffentlicher_platz,strassenbefahrung:ch_radweg,strassenbefahrung:cg_baustelle,strassenbefahrung:cf_trennstreifen,strassenbefahrung:ce_gruenflaeche,strassenbefahrung:cd_rampe,strassenbefahrung:cc_treppe,strassenbefahrung:ca_haltebereich_bus,strassenbefahrung:bz_gleiskoerper_strab,strassenbefahrung:bx_fahrbahnschwelle,strassenbefahrung:bw_aufmerksamkeitsfeld,strassenbefahrung:bs_induktionsschleife,strassenbefahrung:bq_fahrradstaender,strassenbefahrung:bp_fahrbahnmarkierung_flaeche,strassenbefahrung:bm_zugangsbauwerk,strassenbefahrung:bk_strassenbegrenzung,strassenbefahrung:bi_schranke,strassenbefahrung:be_fahrbahnmarkierunglinie,strassenbefahrung:bd_bordstein,strassenbefahrung:bc_aufmerksamkeitsstreifen,strassenbefahrung:bb_verkehrsschutzgitter,strassenbefahrung:at_mast_lsa,strassenbefahrung:ap_handsteuergeraet_lsa,strassenbefahrung:ai_anforderungstaster_radverkehr',
 	## es existieren mehrere Layer: "gestoert" und "ungestoert", aber oberflächlich gesehen sehen sie gleich aus
 	oepnv              => 'hintergrund_k5_grau,oepnv_ungestoert:d_tramlinien,oepnv_ungestoert:c_buslinien,oepnv_ungestoert:b_tramstopp,oepnv_ungestoert:a_busstopp',
+	planb              => 'hintergrund_default_grau,planb_ereignisse:ereignisse',
 	fnp2015            => 'hintergrund_k5_grau,fnp_2015:0,fnp_2015:1',
 	fnpaktuell         => 'hintergrund_k5_grau,fnp_ak:fnp_ak',
 	bplaene            => 'hintergrund_k5_grau,bplan:c_bp_ak,bplan:b_bp_fs,bplan:a_bp_iv',
@@ -2031,6 +2032,10 @@ sub show_gdi_berlin_menu {
 	 -command => sub { showmap_gdi_berlin(layers => 'oepnv', %args) },
 	);
     $link_menu->separator;
+    $link_menu->command
+	(-label => 'Planbare Ereignisse (Baustellen)',
+	 -command => sub { showmap_gdi_berlin(layers => 'planb', %args) },
+	);
     $link_menu->command
 	(-label => 'FNP 2015',
 	 -command => sub { showmap_gdi_berlin(layers => 'fnp2015', %args) },
