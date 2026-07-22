@@ -23,6 +23,7 @@ BEGIN {
 }
 
 use BBBikeTest qw(image_ok);
+use BBBikeUtil qw(is_in_path);
 
 plan 'no_plan';
 
@@ -39,6 +40,7 @@ for (glob("*.*")) {
 }
 
 sub should_skip_px_1t_gif {
+    return 0 if !is_in_path('dpkg-query') || !is_in_path('dpkg');
     my $libgif_version = `dpkg-query -W -f='\${Version}' libgif7 2>/dev/null`;
     if (defined $libgif_version && length $libgif_version) {
         chomp $libgif_version;
