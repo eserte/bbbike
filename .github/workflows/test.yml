@@ -177,6 +177,7 @@ jobs:
         set -e
         sudo apt-get install -y libipc-run-perl
         ./miscsrc/docker-bbbike test --dist ${{ matrix.dist }} --distver ${{ matrix.distver }} --src local --jobs 8 \
+            --ubuntu-mirror http://debian.charite.de/ubuntu/ \
             --env BBBIKE_TEST_SKIP_MAPSERVER=${{ matrix.bbbike_test_skip_mapserver }} \
             --env USE_ESERTE_OBS=${{ matrix.use_eserte_obs }} \
             --env USE_BBBIKE_PPA=${{ matrix.use_bbbike_ppa }} \
