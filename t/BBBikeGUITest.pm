@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2006,2012,2015,2017,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2006,2012,2015,2017,2021,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 #
@@ -26,7 +25,7 @@ package BBBikeGUITest;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.01;
+$VERSION = 2.02;
 
 use Time::HiRes ();
 use Test::More qw(no_plan);
@@ -82,13 +81,13 @@ sub start_guitest {
     cmp_ok(scalar(@t), ">", 0, "Found Dudenstr");
     my @c = $c->coords($t[0]);
     my($x,$y) = @c[0,1];
-    @t = eval { main::nearest_line_points($x,$y,$c->gettags($t[0])) };
-    is($t[0], 0, "First index in Dudenstr.");
-    my($tx,$ty) = main::transpose(@{ $t[2] });
+    my @ret = eval { main::nearest_line_points($x,$y,$c->gettags($t[0])) };
+    like($ret[0], qr{^\d+$}, "Index tag for Dudenstr. is a number");
+    my($tx,$ty) = main::transpose(@{ $ret[2] });
     cmp_ok(abs($tx-$x), "<", 1)
-	or diag "result from nearest_line_points: @t";
+	or diag "result from nearest_line_points: @ret";
     cmp_ok(abs($ty-$y), "<", 1)
-	or diag "result from nearest_line_points: @t";
+	or diag "result from nearest_line_points: @ret";
 
     $top->after(500, sub { wait_for_chooser_window(0) });
 }
