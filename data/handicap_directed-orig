@@ -697,9 +697,11 @@ Königsberger Str. -> Hindenburgdamm: ggfs. Straßenseite wechseln, oder zugestaut
 #: by: https://viz.berlin.de/aktuelle-meldungen/verschwenkung-des-verkehrs-auf-der-landsberger-allee/ (neue Bauphase vom 19.9.2025 bis Mitte 2028)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article410025129/bauarbeiten-auf-der-landsberger-allee-verkehr-wird-verlagert.html
 #: osm_watch: way id="4687156" version="27"
+#: source_id: planb2026:13.45772567,52.52890379,15.04.2024, (bis 31.12.2026)
 #: last_checked: 2026-05-06 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2028-06-30 vvv
+#: next_check: 2026-12-31 (planb) vvv
+# REMOVED --- #: next_check: 2028-06-30 (VIZ) vvv
 Judith-Auer-Str. -> Franz-Jacob-Str.: Umweg zur Ampel	DH:len=60 14717,14188 14771,14048 14803,13966
 Judith-Auer-Str. -> Landsberger Allee: Umweg zur Ampel	DH:len=60:tl 14717,14188 14771,14048 14871,14087
 Franz-Jacob-Str. -> Judith-Auer-Str.: Umweg zur Ampel	DH:len=60:tl 14803,13966 14771,14048 14717,14188

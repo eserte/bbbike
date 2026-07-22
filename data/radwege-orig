@@ -53,9 +53,9 @@
 #: source_id: viz2021:13.36063,52.44674,29.04.2025,14:24 (Verengung, bis 31.08.2025) (am nächsten Tag bereits inaktiv)
 #: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026) (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:405906/72 viz2021:13.36206,52.4473,24.04.2026,19:00 (bis 26.04.2026) (inaktiv)
-#: source_id: planb2026:4721 (hier: "Gehwegvollsperrung", bis 24.08.2026)
+#: source_id: planb2026:13.36164907,52.44712195,03.08.2026, (hier: "Gehwegvollsperrung", bis 24.08.2026)
 #: osm_watch: note 5188307 3 vvv
-#: last_checked: 2026-06-13 vvv
+#: last_checked: 2026-07-21 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-08-24 (planb) vvv
 provisorische Radspuren	RW3; 7597,4499 7628,4521 7667,4549 7690,4563
@@ -1029,7 +1029,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-07-12
+#: last_checked: 2026-07-22
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3420,7 +3420,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-07-18
+#: last_checked: 2026-07-22
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3431,7 +3431,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-07-18
+#: last_checked: 2026-07-22
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -5377,7 +5377,7 @@ gemeinsamer Geh- und Radweg	RW1; 15986,16922 16139,17017
 # XXX wegen Gleisbauarbeiten wieder aufgehoben	RW4; 16139,17017 16296,17114 16318,17128 16352,17150
 gemeinsamer Geh- und Radweg	RW1; 16139,17017 16296,17114 16318,17128 16352,17150
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-06-21
+#: last_checked: 2026-07-22
 # REMOVED --- #: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
 #: historical_note: während der Bauarbeiten (2025/2026): provisorischer gemeinsamer Geh- und Radweg, RW2;
 gemeinsamer Geh- und Radweg	RW1; 16352,17150 16460,17214
@@ -6263,7 +6263,7 @@ Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15
 #: source_id: planb2026:2368 (Sicherung gemäß Vz.-plan, 31.08.2026)
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
 #: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639 17824,14572
-#: last_checked: 2026-04-29 (luftbildsuche)
+#: last_checked: 2026-07-22
 #: check_frequency: 60d
 #: next_check: 2026-08-31 (planb)
 	RW0; 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639 17824,14572
@@ -7429,8 +7429,8 @@ Fahrradschleuse	RW3; 9858,10350 9873,10285
 # REMOVED (mittlerweile nur Tempo 20) ---	RW6;RW6 20727,18726 20901,18793 21038,18851 21036,18888 21028,18915 20998,18980
 # REMOVED (mittlerweile nur Tempo 20) ---	RW6;RW6 20760,18812 20894,18861 21028,18915
 asphaltiert	RW8;RW2 21165,18715 21137,18782 21123,18813
-	RW4;RW2 20160,18301 20173,18306 20458,18424 20582,18475 20612,18487 20622,18491 20743,18540 20922,18613
-	RW3;RW2 20922,18613 21165,18715
+	RW4;RW2 20160,18301 20173,18306 20458,18424 20582,18475 20612,18487 20622,18491 20743,18540 20916,18610
+	RW3;RW2 20916,18610 21165,18715
 	RW4;RW2 21165,18715 21278,18786
 asphaltiert	RW1;RW1 21278,18786 21332,18819 21359,18834
 	RW4;RW3 20194,14435 20051,14441 19817,14459 19687,14469

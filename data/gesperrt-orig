@@ -275,7 +275,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="21"
-#: last_checked: 2026-06-08 (mapillary)
+#: last_checked: 2026-07-21 (mapillary)
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -4103,6 +4103,14 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: ALLEEDERKOSMONAUTEN-2026
+#: by: https://www.entwicklungsstadt.de/grossbaustelle-an-der-rhinstrasse-bvg-zerlegt-wichtigen-tramknoten-im-berliner-osten/ (laut Baustellenschild bis August 2027)
+#: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 (bis 07.09.2026)
+#: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026)
+#: last_checked: 2026-07-22
+#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18065,13496
+# 
 #: source_id: planb2026:3446 (bis 15.08.2026)
 #: last_checked: 2026-07-13
 #: check_frequency: 7d
@@ -4214,12 +4222,16 @@ Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
 # 
 #: next_check_id: LANDSBERGER-2026
+#: source_id: planb2026:13.45772567,52.52890379,15.04.2024, (bis 31.12.2026)
 #: last_checked: 2026-05-06
 #: check_frequency: 120d
-#: next_check: 2028-06-30
+#: next_check: 2026-12-31 (planb)
+# REMOVED --- #: next_check: 2028-06-30 (VIZ)
 Landsberger Allee/Anton-Saefkow-Platz: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 14771,14048 14871,14087 14954,14119
 # 
 #: by: https://www.zeuthen.de/Baumassnahme-im-2-Bauabschnitt-Strasse-Zeuthener-Winkel-706639.html (ab 13.4.2026)
+#: by: https://www.zeuthen.de/Beteiligung-der-Oeffentlichkeit-zum-Entwurf-der-1-Aenderung-des-Bebauungsplanes-Nr-115-3-Zeuthener-Winkel-Mitte-gem-3-Abs-2-BauGB-708899.html
+#: by: https://www.zeuthen.de/1-B-Plan-115-3_erste-Aenderung_Entwurf-pdf-708902.pdf (diese Straße; außerdem weitere Straßen zwischen Adolph-Menzel-Ring und Emil-Nolde-Ring)
 #: XXX zukünftig Julie-Wolfthorn-Allee
 #: osm_watch: way id="835765737" version="14"
 #: osm_watch: note 5260095 1
@@ -4257,11 +4269,12 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1689904.php
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
+#: source_id: planb2026:13.43684271,52.51255043,02.03.2026,06:00 ("Gehwegvollsperrung", bis 31.03.2027)
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
 #: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
 #: last_checked: 2026-07-16
-#: check_frequency: 30d
-#: next_check: 2027-03-15 (entwicklungsstadt)
+#: check_frequency: 60d
+#: next_check: 2027-03-31 (entwicklungsstadt, planb)
 # REMOVED --- Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,11888
 Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,11888
 # 
@@ -4391,10 +4404,12 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 # 
 #: by: https://www.reo.berlin/
 #: by: https://entwicklungsstadt.de/hotelentwicklung-in-friedrichshain-premier-inn-plant-282-zimmer-am-ostkreuz/
+#: source_id: planb2026:13.47278542,52.50619727,03.03.2025,07:00 (bis 31.03.2027)
 #: note: anfangs (Sep 2025) mit einem Bauzaun gesperrt, jetzt (Jun 2026) eine Schranke
 #: last_checked: 2026-06-03
 #: check_frequency: 180d
-#: next_check: 2026-08-28 (Halteverbotsschilder in der Straße "Am Bremsenwerk")
+# REMOVED --- #: next_check: 2026-08-28 (Halteverbotsschilder in der Straße "Am Bremsenwerk")
+#: next_check: 2027-03-31 (planb)
 (an den Gebäuden der Deutschen Rentenversicherung): wegen Hochbauarbeiten gesperrt	2::inwork 15322,11335 15273,11350 15168,11327 15058,11250
 # 
 #: next_check_id: MARXENGELSFORUM-2025
@@ -4694,9 +4709,12 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 2
+#: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026)
+#: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
 #: last_checked: 2026-07-07 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2028-03-31 (entwicklungsstadt) vvv
+#: next_check: 2026-07-30 (planb) vvv
+# REMOVED --- #: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
 #: osm_watch: way id="1054783030" version="9"
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3:inwork 12758,11915 12788,11898
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q4:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
@@ -5119,9 +5137,10 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
+#: source_id: planb2026:13.43551948,52.50901002,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
 #: last_checked: 2026-07-16
-#: check_frequency: 30d
-#: next_check: 2026-12-31 (Tsp)
+#: check_frequency: 60d
+#: next_check: 2026-12-31 (Tsp, planb)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # 
 # REMOVED --- #: next_check_id: SPREEPARK-2022 --- #: by: https://ausschreibungen-deutschland.de/816165_Spreepark_Berlin_Erschliessung_Ost__Pionierweg_C1_2021_Berlin (u.a.: "Beleuchtung" (zurzeit nolighting), ~6 Monate) --- #: by: https://www.spreepark.berlin/konzept-und-grundlagen/news/detail/weitere-baumassnahmen-im-und-am-spreepark/ (Ausbesserung, Verringerung der Breite von 7 auf 4m, voraussichtlich bis Mai 2022) --- #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800 --- #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (bis Mai 2022) --- #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511 --- #: by: https://www.deutsches-architekturforum.de/thread/14728-neue-pl%C3%A4ne-f%C3%BCr-den-spreepark/?postID=719337#post719337 --- # REMOVED (ja, eingetragen) --- #: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?

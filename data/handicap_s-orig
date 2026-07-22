@@ -131,8 +131,8 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
 #: last_checked: 2026-07-16 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2026-12-31 (Tsp) vvv
+#: check_frequency: 60d vvv
+#: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straﬂe der Pariser Kommune - Erich-Steinfurth-Str.): einige Fuﬂg‰nger	q2; 12660,11705 12634,11705 12608,11692
 #: next_check ^^^
@@ -423,7 +423,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
-#: source_id: planb2026:was:3870 (bis 14.08.2026)
+#: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026)
 #: last_checked: 2026-07-14
 #: check_frequency: 7d
 #: next_check: 2026-08-14 (planb)
@@ -1212,16 +1212,22 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 # 
 ### Lichtenberg ###
 # 
+#: next_check_id: ALLEEDERKOSMONAUTEN-2026
+#: last_checked: 2026-07-22
+#: check_frequency: 14d
+#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+(Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschˆnhauser Grenzgraben): Fuﬂg‰nger, Bordsteine	q3- 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18065,13496
+# 
 #: also_indoor: traffic (G,no-T,no-H,no-W)
-#: source_id: planb2026:2450 (hier nur "Fahrbahneinengung", bis 30.07.2026)
-#: last_checked: 2026-07-12
+#: source_id: planb2026:13.48262603,52.51414893,11.05.2026,06:00 (hier nur "Fahrbahneinengung", bis 30.07.2026)
+#: last_checked: 2026-07-22
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-07-30 (Halteverbotsschilder, planb)
 #: valid: -20260730
 Rathausstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 15670,12022 15685,12154
 # 
 #: next_check_id: WEISSETAUBE-2025
-#: last_checked: 2026-04-29 (luftbildsuche)
+#: last_checked: 2026-07-22
 #: check_frequency: 60d
 Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hochbauarbeiten	q1-::inwork 17526,14531 17824,14572
 # 

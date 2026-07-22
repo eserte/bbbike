@@ -70,7 +70,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 #: osm_watch: note 5200746 2
 #: note: Anforderungsampel
 #: source_id: planb2026:4035 ("Sicherung gemäß Vz.-plan", bis 20.08.2026)
-#: last_checked: 2026-06-09 (mapillary)
+#: last_checked: 2026-07-21 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2026-08-20 (planb)
 # REMOVED --- #: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
@@ -487,11 +487,14 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: next_check_id: SGEHRENSEE-2023
 #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023) (bis 24.09.2024) (bis 06.09.2024) (bis 31.10.2024) (bis 01.11.2024) (inaktiv)
 #: source_id: LMS-BR:415646/72 viz2021:13.525297,52.555515,13.07.2026,07:00 (bis 03.08.2026)
+#: source_id: planb2026:13.52611183,52.55585538,13.07.2026, (bis 03.08.2026)
 #: by: https://marzahn-hellersdorf.com/baustellenampel-am-s-bahnhof-gehrenseestrasse-rueckbau-der-rampe-ist-grund-fuer-verkehrseinschraenkung/
 # REMOVED --- #: note: die dazugehörige S-Bahn-Meldung ist kürzer --- #: last_checked: 2024-05-23 (mapillary) ---
-#: next_check: 2026-08-03
+#: last_checked: 2026-07-22
+#: next_check: 2026-08-03 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20260803
-Gegenverkehrsregelung	X::inwork::alternating 18527,16789
+Gegenverkehrsregelung	X::inwork::alternating 18587,16834
+# REMOVED (frühere Regelung hier) --- Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 # 
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
@@ -535,24 +538,24 @@ Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-07-18
+#: last_checked: 2026-07-22
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 # REMOVED --- #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026 --- #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot --- #: last_checked: 2026-04-03 --- #: check_frequency: 10d --- #: check_frequency: 120d --- #: next_check: 2026-03-31 (Halteverbotsschilder) --- Gürtelstr.	F::inwork 15153,11691
 # 
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260616 (bis Mitte Juli 2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mohlhsl6jk2e
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihixc4uykzapjwbqitqzrn4r3c2zliqzifuaxngsxq3sqhowc6zqa
-#: source_id: LMS-BR:412220/72 viz2021:13.4732,52.50935,17.06.2026,09:30 (bis 10.07.2026) (bis 24.07.2026) (vorfristig inaktiv)
-#: source_id: planb2026:984 ("Gegenverkehrsanlage (LZA)", bis 24.07.2026)
-#: last_checked: 2026-07-18
-#: next_check: 2026-07-21 (VIZ)
-# REMOVED --- #: next_check: 2026-07-24 (VIZ)
-# REMOVED (use "emergency" end) --- #: valid: -20260724
-#: valid: -20261231
-Gürtelstr.: Gegenverkehrsregelung zwischen Dossestr. und Oderstr.	X::inwork::alternating 15153,11691
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260616 (bis Mitte Juli 2026)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mohlhsl6jk2e
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihixc4uykzapjwbqitqzrn4r3c2zliqzifuaxngsxq3sqhowc6zqa
+# REMOVED --- #: source_id: LMS-BR:412220/72 viz2021:13.4732,52.50935,17.06.2026,09:30 (bis 10.07.2026) (bis 24.07.2026) (vorfristig inaktiv)
+# REMOVED --- #: source_id: planb2026:984 ("Gegenverkehrsanlage (LZA)", bis 24.07.2026) (vorfristig inaktiv)
+# REMOVED --- #: last_checked: 2026-07-18
+# REMOVED --- #: next_check: 2026-07-21 (VIZ)
+# REMOVED --- # REMOVED --- #: next_check: 2026-07-24 (VIZ)
+# REMOVED --- # REMOVED (use "emergency" end) --- #: valid: -20260724
+# REMOVED --- #: valid: -20261231
+# REMOVED --- Gürtelstr.: Gegenverkehrsregelung zwischen Dossestr. und Oderstr.	X::inwork::alternating 15153,11691
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 # REMOVED (ja) --- #: XXX gibt es die Ampeln wieder?
@@ -2841,7 +2844,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17254,14451
 	X 17488,15766
 #: note: Anforderung für Radfahrer aus beiden Richtungen zur Ferdinand-Schultze-Str.
-#: note: von der Ferdinand-Schultze-Str. ist auf der Fahrbahn nur das Rechtsabbiegen erlaubt; stattdessen Fußgängerampel nehmen, mit langen Wartezeiten, auf der Mittelinsel nicht synchron geschaltet (siehe auch handicap_directed-Eintrag)
+#: note: von der Ferdinand-Schultze-Str. ist auf der Fahrbahn nur das Rechtsabbiegen erlaubt; stattdessen Fußgängerampel (mit Anforderung) nehmen, mit langen Wartezeiten, auf der Mittelinsel nicht synchron geschaltet (siehe auch handicap_directed-Eintrag)
 	X 17848,14523
 #: note: Kontaktschleifen im Pyramidenring
 	X 18553,14678

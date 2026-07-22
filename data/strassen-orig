@@ -4,6 +4,29 @@
 #: title.en: Streets and places in Berlin
 #: note: XXX_* categorization done 2008-01-26
 #:
+######################################################################
+#: section vorübergehende Straßen/Wegverbindungen vvv
+# 
+#: temporary vvv
+# 
+# REMOVED --- #: next_check_id: ROTESRATHAUS-2023
+# REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
+# REMOVED --- #: last_checked: 2026-07-09
+# REMOVED --- #: next_check: 2026-07-10
+# REMOVED --- #: valid: -20260710
+# REMOVED --- (Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
+# 
+#: next_check_id: ALLEEDERKOSMONAUTEN-2026
+#: last_checked: 2026-07-22
+#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+(Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschönhauser Grenzgraben)	NN 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18065,13496
+# 
+#: temporary ^^^
+#: section ^^^
+# 
+######################################################################
+#: section: permanente Einträge vvv
+# 
 #: street_width: 6 lanes
 Dudenstr.	H 9229,8785 9076,8783 8982,8781 8866,8780 8763,8780 8594,8777 8478,8776 8434,8775 8370,8775 8298,8774 8209,8773
 Methfesselstr.	N 8982,8781 9063,8935 9105,9018 9115,9046 9125,9078 9150,9152 9170,9206 9211,9354
@@ -3227,7 +3250,7 @@ Herzbergstr. [Wohngebiet]	N 15700,13597 15833,13596 15896,13594
 (Landschaftspark Herzberge)	NN 17507,12781 17637,12785 17638,12813 17659,12823 17662,12918 17679,12933 17674,13022 17671,13132
 (Landschaftspark Herzberge)	NN 17300,13061 17300,13118 17491,13125 17671,13132 17684,13133 17698,13134
 (Landschaftspark Herzberge)	NN 17499,12998 17314,12990
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.)	NN 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18104,13510
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.)	NN 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18065,13496 18104,13510
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6766 --- #: XXX hier sind Bauarbeiten zugange, teilweise existieren schon neue Verbundsteinpflasterwege --- #: osm_watch: way id="485690626" version="1" --- #: last_checked: 2018-01-06
 (Landschaftspark Herzberge - Arendsweg/Zufahrt IKEA)	NN 17267,14146 17264,14176
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager)	NN 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
@@ -4914,7 +4937,7 @@ Schulzestr.	N 9618,17693 9494,17824 9343,17985
 (Personentunnel S-Bhf. Wollankstr.)	NN 9434,17823 9383,17757
 Wilhelm-Kuhr-Str.	N 9160,17656 9193,17763 9236,17907
 Wilhelm-Kuhr-Str.	NN 9236,17907 9303,17965 9343,17985
-Wilhelm-Kuhr-Str.	N 9343,17985 9366,17997 9410,18021 9460,18053 9590,18082 9803,18131 9831,18181 9893,18179 10027,18165
+Wilhelm-Kuhr-Str.	N 9343,17985 9366,17997 9410,18021 9460,18053 9590,18082 9776,18125 9803,18131 9831,18181 9893,18179 10027,18165
 (Wilhelm-Kuhr-Str. - Wollankstr.)	NN 9303,17965 9314,17943 9341,17917 9348,17885 9363,17868 9396,17863 9434,17823 9461,17795 9586,17665
 Killisch-von-Horn-Weg	N 9590,18082 9694,17960 9695,17945 9719,17926
 Pichelswerderstr. (Pankow)	N 9787,17880 9719,17926
@@ -10422,7 +10445,7 @@ Hausvaterweg	NN 19994,18347 19844,18400
 Hausvaterweg [Wohngebiet]	N 19620,18291 19645,18363 19661,18358 19704,18459 19789,18423 19844,18400
 (Zehnrutenweg - Elisabeth-Schiemann-Str.)	NN 20454,18778 20484,18788 20586,18822
 Stegeweg (Falkenberg)	N 19409,18397 19579,18933
-Spinatweg	N 20922,18613 20927,18480
+Spinatweg	N 20916,18610 20927,18480
 Schwarzwurzelstr.	N 21009,18503 20927,18480 20814,18419 20759,18390 20698,18359 20654,18336 20538,18275 20452,18273 20407,18273 20289,18274 20186,18238
 Schwarzwurzel-Park	NN 20698,18359 20814,18341 20823,18329
 Farmergasse	N 20759,18390 20726,18447
@@ -10432,7 +10455,7 @@ Lattichweg	N 20635,18381 20523,18329 20453,18321 20452,18273
 Merseburger Str. (Marzahn)	N 20460,18030 20490,18120 20407,18273
 Bernburger Str. (Marzahn)	N 20351,18066 20367,18129 20289,18274
 Dessauer Str. (Marzahn)	N 20160,18301 20186,18238 20232,18123 20256,18096 20351,18066 20460,18030 20576,17994
-Ahrensfelder Chaussee	H 19875,18182 20136,18291 20160,18301 20173,18306 20458,18424 20582,18475 20612,18487 20622,18491 20743,18540 20922,18613 21165,18715 21278,18786 21332,18819 21359,18834 21434,18875
+Ahrensfelder Chaussee	H 19875,18182 20136,18291 20160,18301 20173,18306 20458,18424 20582,18475 20612,18487 20622,18491 20743,18540 20916,18610 21165,18715 21278,18786 21332,18819 21359,18834 21434,18875
 Ahrensfelder Chaussee	H 21359,18834 21400,18817
 #: osm.highway: service
 (Zufahrt Bhf. Ahrensfelde)	N 21165,18715 21199,18643 21137,18520
@@ -10461,11 +10484,11 @@ David-Friedländer-Weg	N 20727,18726 20901,18793 21038,18851 21036,18888 21028,18
 (David-Friedländer-Weg - Barnimer Dörferweg)	N 21036,18888 21065,18895
 (David-Friedländer-Weg - Barnimer Dörferweg)	NN 21065,18895 21084,18899
 Christian-Dohm-Weg	N 20760,18812 20894,18861 21028,18915
-Henriette-Herz-Allee	N 20922,18613 20910,18719 20901,18793 20894,18861 20889,18935
+Henriette-Herz-Allee	N 20916,18610 20907,18717 20901,18793 20894,18861 20889,18935
 Am Gehrensee	N 21165,18715 21137,18782
 #: note: in diesem Abschnitt für Autos nur provisorisch hergestellt
 Am Gehrensee	N 21123,18813 21137,18782
-Karl-Philipp-Moritz-Weg	N 20910,18719 21123,18813
+Karl-Philipp-Moritz-Weg	N 20907,18717 21123,18813
 Falkenberger Chaussee	H 19154,18498 18969,18448 18922,18436 18811,18404 18737,18380 18657,18358 18601,18342 18530,18327 18196,18254 18078,18224 17932,18133 17837,18075 17744,18016 17721,18001 17675,17971
 Falkenberger Chaussee	H 17675,17971 17577,17910 17482,17844
 Falkenberger Chaussee	H 17482,17844 17579,17908 17675,17971
@@ -17839,6 +17862,7 @@ Paplitzer Str.	N 10722,-3191 10735,-3142 10769,-3064 10783,-3033 10831,-2919 108
 Spirdingseestr.	N 11225,-2996 11091,-3056 10890,-3041 10783,-3033 10751,-3030 10606,-3017
 Biesenbrower Str.	N 18118,17795 18237,17637 18403,17631 18553,17749 18740,17900 18846,17986 18865,18152 18801,18233 18749,18295 18656,18222
 Wartiner Str.	N 18811,18404 18886,18300 18979,18179 18967,18015 18959,17940 18888,17881 18809,17820 18740,17900
+Wartiner Str. [zur Biesenbrower Str.]	N 18801,18233 18886,18300
 Passower Str.	N 18967,18015 19079,17999 19071,17874 18974,17796 18965,17789 18888,17881
 Oleanderstr.	N 14032,14099 14166,14069 14271,14024
 Oleanderstr.	NN 14271,14024 14298,14015
@@ -21226,14 +21250,6 @@ Gustav-Tempel-Str.	NN 15205,10616 15200,10600
 An den Eiswerken	N 15004,10791 14994,10732 14984,10677
 Paul-und-Paula-Promenade	N 14886,10748 14909,10732 14984,10677
 Rummelsburger Seeblick	NN 14927,10807 14918,10769 14909,10732
-# 
-# REMOVED --- #: next_check_id: ROTESRATHAUS-2023
-# REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
-# REMOVED --- #: last_checked: 2026-07-09
-# REMOVED --- #: next_check: 2026-07-10
-# REMOVED --- #: valid: -20260710
-# REMOVED --- (Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
-# 
 (Passage am Tacheles)	NN 9371,13333 9353,13273 9244,13253
 Aaron-Bernstein-Platz	NN 9353,13273 9382,13265 9385,13246 9463,13256 9476,13293
 Johannisplatz	NN 9385,13174 9385,13246
@@ -21241,3 +21257,4 @@ Johannisplatz	NN 9385,13174 9385,13246
 #: osm.highway: service
 (Zufahrt U-Bahn-Abstellanlage Hönow)	N 25919,14963 25809,14991
 # 
+#: section ^^^

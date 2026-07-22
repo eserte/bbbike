@@ -607,7 +607,7 @@ Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 1156
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
-#: by: https://www.infravelo.de/projekt/oderstrasse-sued/ (Fahrradstraße, Asphaltierung) (1. Quartal 2024 - 2. Quartal 2024) (1. Quartal 2025 - 2. Quartal 2025) (1. Quartal 2026 - 4. Quartal 2026) (4. Quartal 2026 - 4. Quartal 2027) (4. Quartal 2026 - 4. Quartal 2028)
+#: by: https://www.infravelo.de/projekt/oderstrasse-sued/ (Fahrradstraße, Asphaltierung) (1. Quartal 2024 - 2. Quartal 2024) (1. Quartal 2025 - 2. Quartal 2025) (1. Quartal 2026 - 4. Quartal 2026) (4. Quartal 2026 - 4. Quartal 2027) (4. Quartal 2026 - 4. Quartal 2028) (3. Quartal 2028 - 4. Quartal 2028)
 #: note: früher das infravelo-Projekt "oderstrasse"
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Antrag zur Eschersheimer Str., Erwähnung der Oderstr.)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/buendnisgruene-stellen-antrag-auf-umbau-der-eschersheimer-strasse_a368051
@@ -2213,6 +2213,7 @@ Anton-Saefkow-Platz: glatte Pflasterung	Q0- 15095,13839 15034,13814 15010,13807 
 Märchenweg: neu asphaltiert	Q0 15640,19060 15412,19082 15098,19112 14977,19129 14830,19143
 Märchenweg: leicht rauer Asphalt	Q0- 14830,19143 14743,19174 14546,19286 14284,19451
 Am Bürgerpark: Kopfsteinpflaster	Q2 9343,18080 9365,18062 9410,18021
+Wilhelm-Kuhr-Str.: Kopfsteinpflaster	Q2 9776,18125 9803,18131 9831,18181 9893,18179
 Wilhelm-Kuhr-Str.: Kopfsteinpflaster	Q3+ 9460,18053 9410,18021
 Wilhelm-Kuhr-Str.: Asphalt	Q0- 9460,18053 9590,18082
 (Am Bürgerpark - Wilhelm-Kuhr-Str.): Kopfsteinpflaster	Q2 9365,18062 9366,17997
@@ -2964,7 +2965,7 @@ Ekhofstr.: Kopfsteinpflaster	Q2 23243,1398 23325,1418
 Ekhofstr.: Kopfsteinpflaster	Q2 23382,1429 23464,1449 23552,1468 23562,1470
 Pappelplatz (Mitte): alte Berliner Gehwegplatten	Q1 9750,14132 9676,14046
 Am Krögel: kleinteiliges Kopfsteinpflaster	Q1 10766,12184 10772,12288
-Spinatweg: Betonstraße	Q1 20922,18613 20927,18480
+Spinatweg: Betonstraße	Q1 20916,18610 20927,18480
 Schwarzwurzelstr.: Betonstraße	Q1 21009,18503 20927,18480 20814,18419 20759,18390 20698,18359 20654,18336 20538,18275 20452,18273 20407,18273 20289,18274 20186,18238
 Köthener Str. (Marzahn): Asphalt	Q0 20488,17793 20542,17911 20576,17994 20591,18037
 Köthener Str. (Marzahn): Betonstraße	Q1+ 20591,18037 20616,18126 20538,18275
@@ -2984,10 +2985,11 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: source_id[inactive]: bvg2024:256#HIM_FREETEXT_307497
 #: osm_watch: note 4294376 9
 #: osm_watch: way id="1025072174" version="5"
-#: source_id: planb2026:2511 ("Fahrbahneinengung", bis 31.03.2027)
+#: source_id: planb2026:13.50921404,52.51499445,11.05.2026,07:00 ("Fahrbahneinengung", bis 31.03.2027)
 #: XXX außerdem kann die Asphaltfahrbahn neben dem Friedhof gesperrt sein (nicht am Wochenende?), dann Ausweichen über unbefestigten parallelen Weg
-#: last_checked: 2026-06-03
-#: check_frequency: 120d
+#: last_checked: 2026-07-22 (Fahrbahnarbeiten)
+#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-03-31 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (nachhaltige-erneuerung website)
 #: XXX wiederherstellen: (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240
@@ -5032,7 +5034,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058 (letzter Stand 16.09.2021: Zwischenbericht)
 #: XXX wird hier saniert?
 #: osm_watch: way id="22047751" version="26"
-#: last_checked: 2026-07-12
+#: last_checked: 2026-07-22
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -7024,7 +7026,7 @@ Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
 # 
 #: next_check_id: FALKENBERG-2021
 #: XXX: letzte Deckschicht fehlt noch
-#: last_checked: 2026-03-04
+#: last_checked: 2026-07-22
 #: check_frequency: 150d
 Am Dörferweg: provisorischer Asphalt	Q1+ 20889,18935 20998,18980 21021,18989
 # 
@@ -11013,8 +11015,9 @@ Peter-Strasser-Weg: Asphalt	Q0 9240,7811 9130,7810
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17485,13316 17488,13257 17491,13190 17490,13133 17491,13125
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, zahlreiche Wurzelhebungen	Q2+ 17698,13124 17739,13146 17871,13145 17906,13141
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, vereinzelt leichte Wurzelhebungen	Q0- 17906,13141 17978,13328 18054,13477 18104,13510
+#: historical_note: bis Juli 2026 mit getaggt Q2+, danach Q2
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, zahlreiche Wurzelhebungen	Q2 17698,13124 17739,13146 17871,13145 17906,13141
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, vereinzelt leichte Wurzelhebungen	Q0- 17906,13141 17978,13328 18065,13496 18104,13510
 Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1+ 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 #: historical_note: früher ohne "etwas Schotter", Q1+
@@ -13253,8 +13256,8 @@ David-Friedländer-Weg: Betonpflaster	Q0- 20727,18726 20901,18793 21038,18851 210
 Christian-Dohm-Weg: Betonpflaster	Q0- 20760,18812 20894,18861 21028,18915
 #: by: mapillary
 #: confirmed_by: srt
-Karl-Philipp-Moritz-Weg: Betonpflaster	Q0- 20910,18719 21123,18813
-Henriette-Herz-Allee: Asphalt	Q0 20922,18613 20910,18719 20901,18793 20894,18861 20889,18935
+Karl-Philipp-Moritz-Weg: Betonpflaster	Q0- 20907,18717 21123,18813
+Henriette-Herz-Allee: Asphalt	Q0 20916,18610 20907,18717 20901,18793 20894,18861 20889,18935
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19736,13523 19737,13485
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 19737,13485 19811,13487 19812,13442 19815,13327 19817,13259
 (Allee der Kosmonauten, Verbindungsweg): Asphalt	Q0 19815,13327 19834,13326
@@ -13978,6 +13981,7 @@ Bruno-Bauer-Str.: Gehwegplatten	Q0- 12893,6527 12904,6488 12921,6424
 Priesterweg: Asphalt mit einigen Schäden, Gehwegplatten	Q1 7224,7553 7220,7445 7227,7352
 #: next_check_id: CRAILSHEIMER-2026
 #: add_fragezeichen: Ist die Fahrbahnqualität nach den Bauarbeiten besser geworden?
+#: last_checked: 2026-07-21 (mapillary)
 #: next_check: 2026-07-31
 Crailsheimer Str.: Asphalt mit einigen Schäden	Q1+; 7171,4200 7143,4350 7138,4379
 (Schlesischer Busch - Bouchéstr.): Parkweg	Q1- 13418,9944 13513,9871
@@ -14616,6 +14620,8 @@ Meta-London-Str. [Wohngebiet]: Betonpflaster	Q0- -2927,16588 -2649,16537
 Thiemannstr.: Asphalt mit Schäden	Q1+ 13875,8282 13805,8193 13724,8090
 Thiemannstr.: Asphalt mit Schäden	Q1 13724,8090 13663,8011 13616,7949
 #: historical_note ^^^
+# 
+Wartiner Str. [zur Biesenbrower Str.]: Beton	Q1+ 18801,18233 18886,18300
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -15649,8 +15655,10 @@ Luzinstr.: Beton	Q0 22929,13661 22859,13684 22759,13715
 Rudolf-Seiffert-Str.: Asphalt	Q0 14871,13135 14978,13581 14790,13639
 #: corrected_by: srt (Beton -> Asphalt)
 Rosenbecker Str.: Asphalt	Q0- 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21627,18814
-#: confirmed_by: srt
-Biesenbrower Str.: Beton	Q0 18118,17795 18237,17637 18403,17631 18553,17749 18740,17900 18846,17986 18865,18152 18801,18233 18749,18295 18656,18222
+#: corrected_by: srt (Q0 -> Q0-)
+Biesenbrower Str.: Beton	Q0- 18118,17795 18237,17637 18403,17631 18553,17749 18740,17900 18846,17986 18865,18152 18801,18233
+#: corrected_by: srt (Beton, Q0 -> ...)
+Biesenbrower Str.: Beton mit einigen Schäden	Q1+ 18801,18233 18749,18295 18656,18222
 #: confirmed_by: srt (außer südl. Abschnitt)
 Woltmannweg: Asphalt	Q0 5059,1337 4939,1148 4897,1054 4862,975 4837,890 4768,840
 #: confirmed_by: srt
@@ -24394,9 +24402,12 @@ Am Pfingstberg: Beton mit Schäden	Q1 3311,24150 3271,24283 3225,24431
 Am Pfingstberg: glatter Beton	Q0 3225,24431 3188,24487 3157,24489 3125,24533 3124,24614
 #: by: ^^^
 # 
-#: by: carsten (without valid @)
+#: by: carsten (without valid @) vvv
 #: corrected_by: srt (guter Beton -> ...)
-Randowstr.: Asphalt	Q0 18011,17712 18118,17795 18214,17876 18269,17807 18412,17920 18563,18040 18709,18159
+Randowstr.: Asphalt	Q0 18011,17712 18118,17795 18214,17876 18269,17807 18412,17920
+#: corrected_by: srt (guter Beton, Q0 -> ...)
+Randowstr.: Beton mit Schäden	Q1 18412,17920 18563,18040 18709,18159
+#: by ^^^
 # 
 #: by: Astrid_Belschner...:
 Philipp-Franck-Weg: mäßiges Kopfsteinpflaster	Q2 -6585,502 -6648,679
@@ -24870,7 +24881,8 @@ Am Vierling: mäßiger Beton	Q1- -561,4428 -595,4385 -590,4349 -575,4319 -472,4185
 An der Krummen Lake: rauer Asphalt	Q0- 29288,1618 29376,1738 29476,1874 29546,1968
 # 
 #: by: Anna Lytik:
-Welsestr.: guter Beton	Q0 18601,18342 18624,18259 18656,18222 18709,18159 18746,18116 18744,18050 18480,17836 18357,17735 18300,17740 18253,17796 18269,17807
+#: corrected_by: srt (guter Beton, Q0 -> ...)
+Welsestr.: Beton	Q1+ 18601,18342 18624,18259 18656,18222 18709,18159 18746,18116 18744,18050 18480,17836 18357,17735 18300,17740 18253,17796 18269,17807
 #: note: anonymous meinte: schlechtes Kopfsteinpflaster, enge Straße q2
 #: confirmed_by: srt
 Dornröschenstr.: schlechtes Kopfsteinpflaster	Q3+ 22748,6714 22888,6712
@@ -32205,7 +32217,7 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: by: https://be.beteiligung.diplanung.de/file/11-157-detlevstrasse/b2910af3-b463-4139-94c1-af192bf48209 (verkehrsberuhigter Bereich in der Detlevstr. zwischen Oswaldstr. und Bennostr.)
 #: by: https://www.entwicklungsstadt.de/gehrenseestrasse-in-lichtenberg-ehemaliges-betonwerk-wird-zum-neuen-logistikstandort/
 #: by: https://www.entwicklungsstadt.de/hohenschoenhausen-400-wohnungen-im-wald-an-der-detlevstrasse-geplant/ (Bauzeit: Oktober 2027 - Oktober 2029)
-#: last_checked: 2026-03-04 vvv
+#: last_checked: 2026-07-22 vvv
 # REMOVED --- #: check_frequency: 360d vvv
 #: next_check: 2027-10-31 (Baustart (entwicklungsstadt)) vvv
 #: corrected_by: srt (teilweise holpriger Asphalt, Q2 -> ...)

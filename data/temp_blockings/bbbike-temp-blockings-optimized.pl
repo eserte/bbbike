@@ -5685,7 +5685,8 @@ Sennheimer Str., Königsbacher Zeile bis Schönfließer Str.	q4::inwork 2519,25772 
          'data' => '#: next_check_id: CRAILSHEIMER-2026
 #: source_id: viz2021:13.354875,52.448856,31.03.2023,06:00 (inaktiv)
 #: source_id: viz2021:13.353735,52.447456,31.03.2023,06:00 (bis 28.04.2023, nur eine Richtung gesperrt, und nur Kfz-Verkehr) (inaktiv)
-#: source_id: planb2026:5643 (bis 31.07.2026)
+#: source_id: LMS-BR:416736/72 viz2021:13.35492,52.44891, (bis 31.07.2026)
+#: source_id: planb2026:13.35395568,52.44460453,20.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1692148.php (Sperrung im Juli 2026)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1693246.php (bleibt die Einbahnstraße dauerhaft bestehen? auch für den Radverkehr?)
 	q4::inwork 7205,4741 7166,4643 7118,4540 7115,4505 7127,4441 7138,4379 7143,4350 7171,4200
@@ -6286,7 +6287,26 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: planb2026:13.50326602,52.51530671,10.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 31.07.2026)
+#: also_indoor: traffic (no-G,no-T,no-H,no-W)
+#: next_check: 2026-07-31 (planb)
+Rüdigerstr.: Einbahnstraße	q4::inwork; 16918,12325 17020,12309 17056,12304 17122,12295
+# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024, mittlerweile bis 09.05.2025
+# REMOVED --- #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408790142/bauprojekt-ruedigerstrasse-es-ist-einfach-unverhaeltnismaessig.html
+# REMOVED --- #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv --- #: last_checked: 2025-05-22 (traffic) vvv --- # REMOVED --- #: check_frequency: 30d (outdoor) vvv --- #: check_frequency: 14d (traffic) vvv
+# REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
+# REMOVED (alter Eintrag) --- Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056,12304
+# REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
+# REMOVED (alter Eintrag) --- Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
+# REMOVED ---  --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3978,
+         'text' => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis 31.07.2026',
+         'type' => 'handicap',
+         'until' => 1785535199
+       },
        undef,
        undef,
        undef,
@@ -6369,7 +6389,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: also_indoor: traffic (G,B,T,W)
 #: note: explizite Umleitung für Radfahrer vor Ort
 #: note: bei rbb zurzeit zwei Meldungen, eine bis zum 2.8.2024, die andere bis zum 9.8.2024; jetzt nur noch eine bis zum 2.8.2024, nun auch (wie bei VIZ) bis 31.12.2024, mittlerweile verlängert bis 30.06.2025, mittlerweile vorfristig entfernt, mittlerweile wieder da
-#: last_checked: 2026-06-09 (mapillary)
+#: last_checked: 2026-07-21 (mapillary)
 #: next_check: 2026-10-09 (VIZ-Verkehrsmeldung, planb)
 	q4::inwork 3450,12722 3370,12725 3291,12721
 ',
@@ -7340,6 +7360,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~22-07-2026-l39_freigabe-erster-bauabschnitts-ortsdurchfahrt-kolberg-fuer-pkw
 #: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025) (inaktiv)
 #: source_id: LS/222-W/25/089 (bis 12.09.2025) (inaktiv) (bis 30.05.2026) (bis 30.06.2026) (bis 31.07.2026)
 # REMOVED (Storkow- Kolberg) ---	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
@@ -7349,7 +7370,7 @@ Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
          'id' => 4273,
          'text' => 'Kolberger Dorfstraße: Bauarbeiten, Sperrung, möglicherweise bis Juli 2026',
          'type' => 'gesperrt',
-         'until' => 1785510000
+         'until' => 1784804400
        },
        undef,
        undef,
@@ -7932,7 +7953,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: last_checked: 2026-07-12
+#: last_checked: 2026-07-22
 #: next_check: 2026-08-14 (VIZ-Verkehrsmeldung)
 	q4::inwork; 16276,12273 16397,12397
 # REMOVED (hier nicht) ---	q4::inwork; 16397,12397 16485,12384
@@ -8463,10 +8484,11 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3f6iflglc27
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreievxmc4lkl4ix3jyzpen2xpvr2xl7frexucixqom4qs6ca4xy4jdq@jpeg (Sperrung des Kreuzungsbereichs?)
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9536 (Antrag)
+#: by: https://www.entwicklungsstadt.de/wilmersdorf-im-baustellenmodus-arbeiten-an-der-lietzenburger-strasse-dauern-an/
 #: source_id: viz2021:13.32047,52.49975, (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.31913,52.49968, (kein Endedatum) (inaktiv)
 #: source_id: LMS-BR:385513/72 viz2021:13.32149,52.49982, (bis 30.11.2025) (bis 30.11.2026)
-#: source_id: planb2026:912 (nur "Fahrstreifen-Verschwenkung"?, bis 30.11.2026)
+#: source_id: planb2026:13.31909513,52.49945665,01.06.2025, (nur "Fahrstreifen-Verschwenkung", bis 30.11.2026)
 Lietzenburger Str.	q3::inwork 4764,10350 4659,10335 4485,10307
 Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
 ',
@@ -8482,9 +8504,9 @@ Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
-#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026) (bis 21.08.2026)
+#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026) (bis 21.08.2026) (bis 13.11.2026)
 #: source_id: bvg2024:156#HIM_FREETEXT_303396 (zwischenzeitlich entfernt)
-#: source_id: planb2026:864 (bis 21.08.2026)
+#: source_id: planb2026:13.45429623,52.56206157,20.10.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026)
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Wigandstaler Str.: Einfahrt verboten	q3::inwork; 12910,17123 13037,16957
 Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
@@ -8492,9 +8514,9 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
 ',
          'from' => 1761110409,
          'id' => 4476,
-         'text' => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 21. August 2026',
+         'text' => 'Amalienstr. und Wigandstaler Str.: Einbahnstraßenregelung; außerdem Sperrung der Anbindung Gäblerstr. an die Gustav-Adolf-Str., voraussichtlich bis 13.11.2026',
          'type' => 'handicap',
-         'until' => 1787349599
+         'until' => 1794610799
        },
        undef,
        undef,
@@ -9282,7 +9304,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: source_id: planb2026:1322 (bis 26.08.2026)
 #: source_id: planb2026:2144 (bis 26.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-12 vvv
+#: last_checked: 2026-07-22 vvv
 #: check_frequency: 21d (traffic) vvv
 #: next_check: 2026-08-28 (planb, Baustellenschild der Wasserbetriebe) vvv
 Sabinensteig: Einbahnstraßenregelung	q4::inwork; 16395,16099 16442,15926
@@ -9890,12 +9912,14 @@ Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
+#: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026)
 #: also_indoor: traffic (G,T,no-H,no-W)
 #: last_checked: 2026-07-17 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
-# REMOVED --- #: check_frequency: 21d vvv
+#: next_check: 2026-07-24 (planb) vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
 	q4::inwork 22717,13278 22563,13340 22594,13408
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -10432,6 +10456,72 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
          'text' => 'Koppenstr.: Bauarbeiten, Anbindung Singerstr. gesperrt, bis 29.08.2026',
          'type' => 'handicap',
          'until' => 1788040800
+       },
+       {
+         'data' => '#: source_id: planb2026:13.48092968,52.5389072,13.05.2024,06:00 (bis 31.08.2026)
+#: next_check: 2026-08-31
+	2::inwork 15536,14956 15568,14901
+',
+         'from' => 1784584800,
+         'id' => 4686,
+         'text' => 'Streffenstr.: Bauarbeiten, Durchfahrt u.U. nicht möglich',
+         'type' => 'gesperrt',
+         'until' => 1788213599
+       },
+       {
+         'data' => '	2::inwork 17540,12222 17485,12240
+',
+         'from' => 1784412000,
+         'id' => 4687,
+         'text' => 'Am Städtischen Zentralfriedhof: Bauarbeiten, komplett gesperrt, 20.7.2026 bis 25.7.2026',
+         'type' => 'gesperrt',
+         'until' => 1785016800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1640934.php (zum möglichen Uferweg Baumschulenstraße-Köpenicker Landstraße)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1644291.php (vorbereitende Rodungen bis 1.3.2026)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1651431.php (Machbarkeitsstudie, von Spree bis Heidekampgraben)
+#: by: https://mein.berlin.de/projekte/uferweg/results/
+#: by: https://baume-ecke-koepenicker.de/projekt/machbarkeitsstudie-zur-herstellung-eines-durchgaengigen-uferwegs-an-spree-und-britzer-verbindungskanal/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1696205.php (Bauarbeiten starten ab 3. August 2026, voraussichtlich bis Ende 2027)
+#: by: https://www.entwicklungsstadt.de/17-monate-vollsperrung-was-am-britzer-verbindungskanal-passiert/
+#: XXX Ist der Weg während der Bauarbeiten tatsächlich gesperrt?
+#: XXX Zukünftig wird der Zugang von der Südostalleebrücke barrierefrei möglich sein.
+#: last_checked: 2026-03-22
+# REMOVED --- #: check_frequency: 60d (später auf 120d erhöhen)
+#: next_check: 2026-08-03 (Start der Bauarbeiten)
+Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 16425,6445 16275,6275 16263,6248 16098,6134
+',
+         'from' => 1785621600,
+         'id' => 4688,
+         'text' => '...',
+         'type' => 'gesperrt',
+         'until' => 1830293999
+       },
+       {
+         'data' => '#: source_id: LMS-BR:416688/72 viz2021:13.35107,52.51429,22.07.2026,06:00 (bis 27.07.2026)
+#: source_id: LMS-BR:416689/72 viz2021:13.36975,52.51584,22.07.2026,06:00 (bis 27.07.2026)
+#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon
+#: note: Vorbereitung für den CSD
+	q4::inwork 8637,12258 8592,12252 8538,12245
+',
+         'from' => 1784606400,
+         'id' => 4689,
+         'text' => 'Brandenburger Tor: Engstelle, vom 22.07.2026 bis voraussichtlich 27.07.2026',
+         'type' => 'handicap',
+         'until' => 1785146400
+       },
+       {
+         'data' => '#: source_id: LS/221-F/26/119 (bis 14.08.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-07-2026-l-23-beseitigung-des-bahnuebergangs-am-bahnhof-fangschleuse
+#: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2023%20B%C3%9C-Beseitigung%20Fangschleuse%20Vollsperrung%20Karten%20PM%2017-07-26.pdf
+	2::inwork 39259,574 39259,612
+',
+         'from' => 1784833200,
+         'id' => 4690,
+         'text' => 'Bahnübergang Fangschleuse: Sperrung, evtl. ist auch der Radverkehr betroffen, vom 24.07.2026 bis 14.08.2026',
+         'type' => 'gesperrt',
+         'until' => 1786730400
        }
      
 );
