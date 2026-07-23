@@ -87,9 +87,10 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="32"
 #: osm_watch: way id="1072662717" version="36"
-#: last_checked: 2026-07-19
+#: last_checked: 2026-07-23
 #: check_frequency: 90d
-#: next_check: 2027-12-31 (entwicklungsstadt)
+#: next_check: 2026-10-22 (planb)
+# REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
@@ -304,11 +305,9 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="10"
-#: source_id: planb2026:79 (bis 31.12.2027)
-#: last_checked: 2026-05-20
+#: last_checked: 2026-07-23
 #: check_frequency: 120d
-#: next_check: 2027-12-31 (planb)
-# REMOVED --- #: next_check: 2029-06-30 (agromex website)
+#: next_check: 2029-06-30 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 # REMOVED (hier gar kein Durchgang) --- (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14116,10149 14126,10176
 # 
@@ -823,7 +822,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
-#: last_checked: 2026-05-04 vvv
+#: last_checked: 2026-07-22 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 #: valid: -20261231 vvv

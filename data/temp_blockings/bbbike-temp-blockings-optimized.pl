@@ -1033,12 +1033,13 @@ Londoner Str.: Richtung Müllerstr. gesperrt	q4::inwork; 5847,17018 5772,16919
 #: source_id: bvg2024:m29#HIM_FREETEXT_349587
 #: source_id: bvg2024:m29#HIM_FREETEXT_349580
 #: source_id: planb2026:3001 (sieht nach einer Sperrung des Kreuzungsbereichs aus, bis 24.07.2026)
-Reichenberger Str.: Bauarbeiten, Sperrung, vielleicht ist auch der Radverkehr betroffen	q4::inwork 12048,10097 12229,10014 12398,9938
+Reichenberger Str.: Bauarbeiten im Kreuzungsbereich	q2::inwork 12048,10097 12229,10014 12398,9938
+Ohlauer Str.: Bauarbeiten im Kreuzungsbereich	q2::inwork 12341,10218 12229,10014 12116,9825
 # REMOVED (alt) ---	1::inwork 12398,9938 12556,9862 12714,9792 12834,9738
 ',
          'from' => 1783893600,
          'id' => 1563,
-         'text' => 'Reichenberger Str.: Bauarbeiten zwischen Lausitzer Str. und Forster Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 13.07.2026 bis 24.07.2026',
+         'text' => 'Reichenberger Str./Lausitzer Str.: Bauarbeiten im Kreuzungsbereich, vom 13.07.2026 bis 24.07.2026',
          'type' => 'handicap',
          'until' => 1784901600
        },
@@ -4874,7 +4875,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: source_id: planb2026:90 (bis 31.07.2026)
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-22 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2026-07-31 (planb)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -6127,7 +6128,7 @@ Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: note: Halteverbotsschilder bis Ende März 2026
 #: note: Länge der Einbahnstraßenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung; nun wieder Einbahnstraßenregelung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-07-07
+#: last_checked: 2026-07-22 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2027-03-30 (planb)
 	q4::inwork; 12407,8177 12545,8209
@@ -7099,7 +7100,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: osm_watch: node id="1801491687" version="5"
 #: osm_watch: node id="13935525208" version="1"
 #: osm_watch[closed]: note 5293716 1
-#: source_id: planb2026:325 (bis 26.01.2029)
+#: source_id: planb2026:13.37440267,52.47750014,09.09.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 26.01.2029)
 #: last_checked: 2026-07-07
 # REMOVED --- #: check_frequency: 30d (traffic)
 #: check_frequency: 90d
@@ -7118,16 +7119,17 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (re-G[nur noch ein Stummel],W,ex-T,ex-A)
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
+#: source_id: planb2026:13.37232419,52.48441245,16.12.2024,06:00 ("Sperrung einer Fahrtrichtung", bis 21.08.2026)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
 #: last_checked: 2026-07-07
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2026-06-30 (Baustellenschild der Wasserbetriebe)
+#: check_frequency: 30d
+#: next_check: 2026-08-21 (planb)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
 	q4::inwork; 8380,8545 8334,8655 8306,8722
 ',
          'from' => 1736343075,
          'id' => 4237,
-         'text' => 'Loewenhardtdamm: Bauarbeiten in Höhe Bayernring mit Sperrung, Fahrbahn gesperrt, geplant bis Juni 2026, eventuell werden die Bauarbeiten verlängert',
+         'text' => 'Loewenhardtdamm: Bauarbeiten in Höhe Bayernring mit Sperrung, Fahrbahn gesperrt, möglicherweise bis August 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7181,18 +7183,17 @@ Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,157
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
 #: source_id: adac:935330908 (bis 19.08.2025) (bis 08.09.2025) (bis 05.12.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026) (bis 17.02.2026) (bis 23.07.2026)
+#: source_id: LMS-BR:368136/72 viz2021:13.28668,52.49179, (bis 08.09.2025) (bis 05.12.2025) (bis 23.01.2026) (bis 06.02.2026) (bis 17.02.2026) (bis 23.07.2026) (inaktiv)
 #: source_id: LMS-BR:413048/72 viz2021:13.29035,52.49154,23.06.2026,06:00 (hier bis Auguste-Viktoria-Str., bis 02.10.2026)
-#: source_id: planb2026:3841 (bis 02.10.2026)
-#: source_id: planb2026:272 (bis 23.07.2026)
+#: source_id: planb2026:13.28584,52.4924291,23.06.2026, ("Sicherung gemäß Vz.-plan", bis 02.10.2026)
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article409644647/wieso-eine-baustelle-in-schmargendorf-seit-wochen-still-steht.html
 #: note: bei rbb mittlerweile "Bis auf weiteres", mittlerweile bis 08.09.2025, hier nur zwischen Humboldtstr. und Wangenheimstr. (ebenso bei VIZ)
-#: also_indoor: traffic (re-H[ein anderer Abschnitt],re-T[shorter],A,re-G[shorter])
+#: also_indoor: traffic (re-H,ex-T[shorter],ex-G[shorter],no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2026-06-23 (traffic)
 #: check_frequency: 60d (traffic)
 # REMOVED --- #: next_check: 2026-07-23 (VIZ-Verkehrsmeldung)
-#: next_check: 2026-10-02 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-02 (VIZ-Verkehrsmeldung, planb)
 # REMOVED (hier wohl nicht mehr) ---	q4::inwork 2396,9427 2467,9425
 Caspar-Theyß-Str.: westlich und östlich Wangenheimstr.	q4::inwork 2467,9425 2592,9419 2728,9409
 ',
@@ -7358,20 +7359,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~26-08-2025-l391-freigabe-zw-storkow-und-kolberg
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~22-07-2026-l39_freigabe-erster-bauabschnitts-ortsdurchfahrt-kolberg-fuer-pkw
-#: source_id: LS/221-F/25/032 (bis 30.05.2025) (bis 10.09.2025) (bis 07.09.2025) (inaktiv) (bis 26.09.2025) (inaktiv)
-#: source_id: LS/222-W/25/089 (bis 12.09.2025) (inaktiv) (bis 30.05.2026) (bis 30.06.2026) (bis 31.07.2026)
-# REMOVED (Storkow- Kolberg) ---	2::inwork 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
-Kolberger Dorfstr.	2::inwork 38233,-17559 38254,-17927 38251,-18266 37897,-18911
-',
-         'from' => 1741503600,
-         'id' => 4273,
-         'text' => 'Kolberger Dorfstraße: Bauarbeiten, Sperrung, möglicherweise bis Juli 2026',
-         'type' => 'gesperrt',
-         'until' => 1784804400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7844,7 +7832,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-07-10 (traffic) vvv
+#: last_checked: 2026-07-23 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
@@ -8082,7 +8070,7 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: XXX im Zusammenhang mit den Arbeiten an der Ampel
 #: note: Überquerungsmöglichkeit nun ca. 30m südlich der Kreuzung
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-22 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2026-09-15 (planb)
 # REMOVED --- #: next_check: 2026-12-31 (infravelo, mobilitaetsrat)
@@ -8183,7 +8171,7 @@ Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
 #: osm_watch: note 5038218 4
 #: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-07-10
+#: last_checked: 2026-07-23
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
@@ -8246,10 +8234,10 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
        {
          'data' => '#: osm_watch: note 4924394 6
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
-#: source_id: planb2026:2732 (bis 31.08.2026)
+#: source_id: planb2026:13.4564232,52.50244969,01.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-21 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2026-07-23 vvv
+#: check_frequency: 10d vvv
 #: next_check: 2026-08-31 (planb) vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -8333,7 +8321,7 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
          'data' => '#: also_indoor: traffic (G[ohne Rumeyplan],T[ohne Rumeyplan],H[falsche Stelle],no-W)
 #: source_id: LMS-BR:415345/72 viz2021:13.37828,52.477613, (zwischen Werner-Voß-Damm und Rumeyplan, bis 01.09.2026)
 #: source_id: LMS-BR:415346/72 viz2021:13.38557,52.47199, (zwischen Te-Damm und Schulenburgring (tatsächlich?), bis 08.05.2027)
-#: source_id: planb2026:1410 (bis 01.09.2026)
+#: source_id: planb2026:13.37904221,52.47572048,26.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.09.2026)
 #: add_fragezeichen: Sind die Straßen weiterhin gesperrt? vvv
 #: last_checked: 2026-07-07 vvv
 #: check_frequency: 30d vvv
@@ -8360,7 +8348,7 @@ Rumeyplan: südliche Fahrbahn gesperrt	q4::inwork 8812,7730 8907,7773 8895,7797
 #: note: planb-Eintrag betrifft eine Fahrstreifen-Reduzierung in der Boelckestraße, aber die Fläche ragt in den Schreiberring rein
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: add_fragezeichen: Ist der Schreiberring weiterhin gesperrt?
-#: source_id: planb2026:1043 (bis 13.08.2026)
+#: source_id: planb2026:13.37724442,52.48018571,15.06.2026,06:00 ("Fahrstreifen-Reduzierung", bis 13.08.2026)
 #: last_checked: 2026-07-07
 #: next_check: 2026-08-13 (planb)
 Schreiberring	q4::inwork 8561,8252 8666,8305
@@ -8456,16 +8444,36 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: HUFELAND-2025
+#: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025) (inaktiv)
+#: source_id: planb2026:13.43737859,52.52968831,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 10.09.2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260723
+#: note: widersprüchliche Angaben: laut VIZ-Verkehrsübersicht ab 24.7.2026 und der Radverkehr ist auch betroffen, laut planb Start bereits am 23.7.2026, laut Pressemitteilung ab 29.7.2026 und es wird nur der Kfz-Verkehr erwähnt
+Hufelandstr.: Bau einer Fahrradstraße	q4::inwork 12077,14186 12228,14083 12361,13985 12478,13903 12582,13834 12578,13800
+Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,13985 12423,14066
+# REMOVED --- #: last_checked: 2025-10-21 vvv
+# REMOVED --- #: next_check: 2025-10-21 (nächster Bauabschnitt) vvv
+# REMOVED --- Hufelandstr.	q3::inwork 12228,14083 12361,13985 12478,13903
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED (fertig) ---	q4::inwork 12361,13985 12228,14083 12077,14186
+',
+         'from' => 1784757600,
+         'id' => 4465,
+         'text' => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 24. Juli 2026 bis Mitte September 2026',
+         'type' => 'handicap',
+         'until' => 1789077599
+       },
        undef,
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20251013 (Kraneinsatz)
 #: source_id: viz2021:13.4477,52.50247,14.10.2025,06:00 (bis 17.10.2025) (inaktiv)
-#: source_id: planb2026:1005 (bis 01.11.2027)
+#: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-07-20
+#: last_checked: 2026-07-23
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -8591,7 +8599,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        {
          'data' => '#: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="9"
-#: source_id: planb2026:991 (bis 07.08.2026)
+#: source_id: planb2026:13.37147229,52.53701526,13.10.2025,06:00 ("keine Fahrbahn-Einschränkung", bis 07.08.2026)
 #: last_checked: 2026-07-02
 #: check_frequency: 21d
 #: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder, planb)
@@ -8610,7 +8618,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
 #: note: planb-Eintrag meint "Gegenverkehrsanlage (LZA)", was wohl falsch ist
 #: osm_watch: way id="1529028638" version="1"
-#: source_id: planb2026:1077 (bis 24.07.2026)
+#: source_id: planb2026:13.37428795,52.47883267,27.10.2025,06:00 ("Gegenverkehrsanlage (LZA)" (???), bis 24.07.2026)
 #: also_indoor: traffic (re-G,ex-T,W[mittlerweile richtige Lage],no-H)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2026-07-07
@@ -9225,17 +9233,18 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        },
        undef,
        {
-         'data' => '#: source_id: LMS-BR:402799/72 viz2021:13.21378,52.53175, (bis 23.06.2026) (bis 27.07.2026)
+         'data' => '#: source_id: LMS-BR:402799/72 viz2021:13.21378,52.53175, (bis 23.06.2026) (bis 27.07.2026) (bis 04.08.2026)
+#: source_id: planb2026:13.21191667,52.52799909,13.01.2025, ("Sicherung gemäß Vz.-plan", andere Baustelle vielleicht? bis 10.08.2026)
 #: note: Einbahnstraßenregelung genau genommen nur bis zur Kaufland-Ausfahrt
 #: last_checked: 2026-03-31 (mapillary)
-#: next_check: 2026-07-27 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-04 (VIZ-Verkehrsmeldung)
 	q4::inwork; -2576,13777 -2669,13488
 ',
          'from' => 1774383320,
          'id' => 4565,
-         'text' => 'Pichelswerderstr.: Bauarbeiten zwischen Freiheit und Gewerbehof, Einbahnstraße offen Richtung Norden, bis 27.07.2026',
+         'text' => 'Pichelswerderstr.: Bauarbeiten zwischen Freiheit und Gewerbehof, Einbahnstraße offen Richtung Norden, bis 04.08.2026',
          'type' => 'handicap',
-         'until' => 1785189599
+         'until' => 1785880799
        },
        undef,
        undef,
@@ -9497,11 +9506,11 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (T,ex-G,re-H,no-W)
+         'data' => '#: also_indoor: traffic (T,re-G[noch länger],re-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: source_id: planb2026:1252 (bis 24.07.2026)
-#: source_id: planb2026:4145 (unklar, ist als "Brauerstr." bezeichnet, bis 04.12.2026)
-#: last_checked: 2026-07-19 (traffic)
+#: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026)
+#: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", unklar, ist als "Brauerstr." bezeichnet; bis 04.12.2026)
+#: last_checked: 2026-07-23 (traffic)
 #: check_frequency: 7d (traffic)
 #: next_check: 2026-07-24 (planb)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -9697,7 +9706,8 @@ Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mn7c5q5fpk2p
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidnv6lrohqgc6qevjv352pgwzxqgvecyp4nxvzyb75ruhnbptgc2i (Länge des gesperrten Bereichs ca. 40m)
 #: source_id: LMS-BR:410366/72 viz2021:13.42458,52.49723,01.06.2026,07:00 (bis 08.08.2026)
-#: note: nur ein kurzer Abschnitt gesperrt, deshalb q4->q3
+#: source_id: planb2026:13.42551546,52.49830964,01.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 08.08.2026)
+#: note: nur ein kurzer Abschnitt gesperrt, etwa 60m zwischen den Grundstücksauffahrten um den gesperrten Bereich, deshalb q4->q3
 	q3::inwork 11949,10414 11829,10192
 ',
          'from' => 1780178400,
@@ -9711,7 +9721,7 @@ Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660
          'data' => '#: also_indoor: traffic (T,G,W)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: note 5292595 2
-#: source_id: planb2026:1442 (bis 31.08.2026)
+#: source_id: planb2026:13.37453115,52.47872517,23.02.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
 #: last_checked: 2026-07-07
 #: check_frequency: 21d (traffic)
 #: next_check: 2026-08-31 (planb)
@@ -9967,15 +9977,15 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
        undef,
        {
          'data' => '#: source_id: LMS-BR:411963/72 viz2021:13.27222,52.63585,15.06.2026,07:00 (bis 31.07.2026)
-#: source_id: planb2026:3177 (bis 31.07.2026)
+#: source_id: planb2026:13.27238005,52.63598548,15.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026) (bis 31.08.2026)
 	q4::inwork 1278,25401 1153,25425 1209,25542
 	q4::inwork 1109,25301 1153,25425 1081,25483
 ',
          'from' => 1781413200,
          'id' => 4643,
-         'text' => 'Laurinsteig/Münchener Str.: Bauarbeiten mit Sperrung im Kreuzungsbereich, vom 15.06.2026 07:00 bis 31.07.2026 17:00',
+         'text' => 'Laurinsteig/Münchener Str.: Bauarbeiten mit Sperrung im Kreuzungsbereich, vom 15.06.2026 bis 31.08.2026',
          'type' => 'handicap',
-         'until' => 1785510000
+         'until' => 1788213599
        },
        undef,
        {
@@ -10030,6 +10040,7 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
        },
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/schul-baustelle-fuhrt-zu-strassensperrungen-uberraschende-plananderung-fur-umbau-des-rosa-luxemburg-gymnasiums-13873627.html (ab Anfang 2026)
+#: source_id: planb2026:-
 #: last_checked: 2026-06-24 (mapillary: sieht gesperrt aus, möglicherweise auch für Fußgänger)
 # REMOVED --- #: next_check: 2026-02-01
 	2::inwork 11412,17823 11335,17807
@@ -10042,20 +10053,20 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1686570.php (Dauer voraussichtlich 6-8 Wochen, ab 25.6.2026)
-#: source_id: LMS-BR:412912/72 viz2021:13.303754,52.509885,22.06.2026,07:00 (hier bis Wilmersdorfer Str., bis 31.07.2026)
-#: source_id: LMS-BR:414997/72 viz2021:13.30344,52.50987,07.07.2026,07:00 (bis 31.07.2026)
+#: source_id: LMS-BR:412912/72 viz2021:13.303754,52.509885,22.06.2026,07:00 (hier bis Wilmersdorfer Str., bis 31.07.2026) (bis 31.08.2026)
+#: source_id: LMS-BR:414997/72 viz2021:13.30344,52.50987,07.07.2026,07:00 (bis 31.07.2026) (bis 31.08.2026)
 #: source_id: planb2026:3331 (bis 31.07.2026)
 #: also_indoor: traffic (no-G,no-T,H,W)
-#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, planb)
+#: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 Schillerstr.	q4::inwork 3522,11447 3571,11451
 Schillerstr. (kurzer Abschnitt)	q3::inwork 3571,11451 3717,11462
 Rückertstr.	q4::inwork 3569,11473 3571,11451
 ',
          'from' => 1782079200,
          'id' => 4653,
-         'text' => 'Schillerstr./Rückertstr.: Bauarbeiten im Einmündungsbereich, Sperrung der Fahrbahn, voraussichtlich bis Mitte August 2026',
+         'text' => 'Schillerstr./Rückertstr.: Bauarbeiten im Einmündungsbereich, Sperrung der Fahrbahn, voraussichtlich bis Ende August 2026',
          'type' => 'handicap',
-         'until' => 1786485600
+         'until' => 1788213599
        },
        undef,
        undef,
@@ -10346,8 +10357,9 @@ Almstadtstr.: Anbindung an die Rosa-Luxemburg-Str. gesperrt, Umwege	q4::inwork 1
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~14-07-2026-l-70-zwischen-kummersdorf-gut-und-sperenberg-ab-august-vollgesperrt
+#: source_id: LS/222-W/26/094 (3.8.2026 bis 31.10.2026)
 #: XXX außerdem Bau eines Radwegs (nicht die gesamte Strecke, nur 1km)
-#: next_check: 2026-10-31
+#: next_check: 2026-10-31 (Verkehrsmeldung, ls.brandenburg)
 	2::inwork 9300,-34066 9068,-34115 8564,-34625 8340,-34842 8218,-34884 7351,-35307 5971,-35320 5765,-35529 5865,-35773 5750,-36364
 ',
          'from' => 1785621600,
@@ -10522,6 +10534,26 @@ Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 1
          'text' => 'Bahnübergang Fangschleuse: Sperrung, evtl. ist auch der Radverkehr betroffen, vom 24.07.2026 bis 14.08.2026',
          'type' => 'gesperrt',
          'until' => 1786730400
+       },
+       {
+         'data' => '#: source_id: planb2026:13.38210622,52.46704655,19.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
+	q4::inwork 9052,6664 9046,6784 9048,6877
+	q4::inwork 8846,6781 9046,6784 9245,6791
+',
+         'from' => 1784784734,
+         'id' => 4691,
+         'text' => 'Neue Straße/Borussiastr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 30.09.2026',
+         'type' => 'handicap',
+         'until' => 1790805600
+       },
+       {
+         'data' => 'Weinmeisterhornweg	q4::inwork -5061,11305 -5188,11342 -5202,11347 -5292,11378 -5399,11426
+',
+         'from' => 1785016800,
+         'id' => 4692,
+         'text' => 'Weinmeisterhornweg: Bauarbeiten, Sperrung zwischen Wilhemstr. und Folkungerstr., 27.7.2026 bis 1.8.2026',
+         'type' => 'handicap',
+         'until' => 1785621599
        }
      
 );
