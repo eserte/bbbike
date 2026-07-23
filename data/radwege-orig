@@ -1978,7 +1978,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: by: https://www.entwicklungsstadt.de/neukoellner-hotelhochhaus-endphase-der-fassadenarbeiten-am-estrel-tower/
 #: by: https://www.estreltower.com/webcam (alternative Webcam-URL)
 #: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 (bis 31.03.2026) (bis 31.07.2026)
-#: source_id: planb2026:888 (bis 30.11.2026)
+#: source_id: planb2026:13.4587988,52.4724106,01.10.2025,07:00 ("Fahrstreifen-Reduzierung", bis 30.11.2026)
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
@@ -4745,10 +4745,10 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: check_frequency: 60d vvv
 #: next_check: 2026-08-17 (planb) vvv
 # REMOVED --- #: next_check: 2026-12-31 (infravelo) vvv
-#: source_id: planb2026:3624 ("Gehwegvollsperrung", bis 13.12.2026)
+#: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026)
 #: historical_note: früher: alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg, RW1;; seit ungefähr 2025 existiert eine Absperrung vor den schlimmsten Wurzelhebungen; etwa ab 2026 Provisorium
 provisorische Radwegführung auf der Fahrbahn	RW4; 14853,7451 14775,7385
-#: source_id: planb2026:1747 ("Gehwegvollsperrung", bis 17.08.2026)
+#: source_id: planb2026:13.46660341,52.47141375,04.05.2026,07:00 ("Gehwegvollsperrung", bis 17.08.2026)
 #: historical_note: früher (bis ca. 2026): alte Gehwegplatten, deutliche Schäden und Wurzelhebungen, Bord gegen Gehweg, RW1;
 provisorische Radwegführung auf der Fahrbahn	RW4; 14775,7385 14758,7373 14708,7325 14617,7243
 #: next_check ^^^
@@ -5461,7 +5461,7 @@ Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-20351.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll_fahrrat_26-02-2025.pdf
 #: source_id: viz2021:13.55154,52.55437,22.09.2025,18:00 (Nachtsperrung, bis 23.09.2025) (inaktiv)
-#: source_id: planb2026:311 ("Fahrstreifen-Verschwenkung", bis 31.12.2026)
+#: source_id: planb2026:13.5513287,52.55294667,18.11.2024, ("Fahrstreifen-Verschwenkung", bis 31.12.2026)
 #: last_checked: 2026-03-04 vvv
 #: check_frequency: 150d vvv
 #: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung, planb) vvv
@@ -6260,7 +6260,7 @@ Verbundsteinpflasterradweg	RW1; 17791,14639 17745,14734 17693,14840 17684,14858 
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15588 17405,15454 17424,15400 17432,15378 17609,15006 17638,14945
 #: next_check_id: WEISSETAUBE-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-wei%C3%9Fe-taube.161/page-3#post-26792
-#: source_id: planb2026:2368 (Sicherung gemäß Vz.-plan, 31.08.2026)
+#: source_id: planb2026:13.51369864,52.5358353,01.05.2026, ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
 #: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639 17824,14572
 #: last_checked: 2026-07-22
@@ -7645,7 +7645,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: source_id: planb2026:82 (bis 31.08.2026)
+#: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: last_checked: 2026-05-31
 #: check_frequency: 150d
 #: next_check: 2026-08-31 (planb)
@@ -9816,7 +9816,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 6994,9288 7118,9315
 #: next_check_id: GRUNEWALDSTR-2025
 #: next_check_id: ELSSHOLZ-2025
 #: osm_watch[closed]: note 4803321 2
-#: source_id: planb2026:2660 (bis 03.03.2027)
+#: source_id: planb2026:13.35661917,52.49021456,15.05.2026,00:01 ("-", bis 03.03.2027)
 #: XXX Wann wird die Radspur freigegeben?
 #: last_checked: 2026-07-07
 #: check_frequency: 90d

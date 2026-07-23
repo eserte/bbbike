@@ -4288,7 +4288,7 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
 # 
 #: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026)
-#: source_id: planb2026:1298 (bis 01.10.2026)
+#: source_id: planb2026:13.42640002,52.52310299,03.02.2026, ("Fahrstreifen-Reduzierung", bis 01.10.2026)
 #: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
 #: last_checked: 2026-07-13
 #: next_check: 2026-10-01 (VIZ-Verkehrsmeldung, planb)
@@ -4387,7 +4387,7 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: by: https://www.entwicklungsstadt.de/heidestrasse-18-rohbau-des-neuen-schulz-hotels-waechst-sichtbar-in-die-hoehe/
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
-#: source_id: planb2026:627 (Fahrstreifen-Reduzierung", bis 30.07.2027)
+#: source_id: planb2026:13.36504453,52.53376599,11.08.2025,06:00 ("Fahrstreifen-Reduzierung", bis 30.07.2027)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
 #: last_checked: 2026-07-13 (daf) vvv
 #: check_frequency: 90d vvv
@@ -4566,7 +4566,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
 # 
 #: osm_watch[closed]: note 4165928 1
-#: source_id: planb2026:2594 (bis 31.12.2026)
+#: source_id: planb2026:13.50265147,52.50227465,11.05.2026, ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: last_checked: 2026-06-30
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
@@ -4604,7 +4604,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-a117-zwischen-waltersdorf-und-ad-treptow/
-#: source_id: planb2026:262 (Umleitung, bis 30.09.2026)
+#: source_id: planb2026:13.56543908,52.38830377,21.05.2024, ("Umleitung", bis 30.09.2026)
 #: note: temp_blockings-Eintrag existiert auch
 #: last_checked: 2026-04-19 (osm)
 #: check_frequency: 120d
@@ -4667,7 +4667,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
-#: source_id: planb2026:240 (bis 31.12.2027)
+#: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
 #: last_checked: 2026-07-14
 #: check_frequency: 45d
@@ -4679,7 +4679,7 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
 #: osm_watch: way id="618834389" version="17"
 #: osm_watch: way id="43619494" version="9"
-#: source_id: planb2026:51 (hier nur Gehwegvollsperrung, bis 31.12.2026)
+#: source_id: planb2026:13.53894732,52.48609659,31.12.2024,07:00 (hier nur "Gehwegvollsperrung", bis 31.12.2026)
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg; mittlerweile (2024-12-13) ist die Straße kaum noch erkennbar
 #: priority: #C
@@ -4799,7 +4799,7 @@ Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
 #: next_check_id: PLANSTRASSE9-2023
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: osm_watch: way id="20420585" version="37"
-#: source_id: planb2026:51 (gehört zum Komplex Gartenstadt Karlshorst, bis 31.12.2026)
+#: source_id: planb2026:13.53894732,52.48609659,31.12.2024,07:00 ("Gehwegvollsperrung", gehört zum Komplex Gartenstadt Karlshorst, bis 31.12.2026)
 #: last_checked: 2026-05-31
 #: check_frequency: 90d
 #: next_check: 2026-12-31 (planb)
@@ -4959,7 +4959,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
-#: source_id: planb2026:41 (bis 31.03.2028)
+#: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
 #: last_checked: 2026-07-09
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)

@@ -32,7 +32,7 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8660,1867
 # 
 #: next_check_id: WOLLANK-2024
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
-#: source_id: planb2026:698 ("Gegenverkehrsanlage (LZA)", bis 04.09.2026)
+#: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026)
 #: last_checked: 2026-06-02 (BVV-Drucksache)
 #: next_check: 2026-09-04 (planb)
 # REMOVED --- #: next_check: 2026-12-31
@@ -40,7 +40,7 @@ Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
 #: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026)
-#: source_id: planb2026:482 (bis 28.08.2026)
+#: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026)
 #: last_checked: 2026-05-30
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20260828
@@ -69,7 +69,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 #: next_check_id: CHARLOTTENBURGERUFER-2024
 #: osm_watch: note 5200746 2
 #: note: Anforderungsampel
-#: source_id: planb2026:4035 ("Sicherung gemäß Vz.-plan", bis 20.08.2026)
+#: source_id: planb2026:13.29973905,52.52120309,02.01.2026, ("Sicherung gemäß Vz.-plan", bis 20.08.2026)
 #: last_checked: 2026-07-21 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2026-08-20 (planb)
@@ -91,7 +91,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 #: last_checked ^^^
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
-#: source_id: planb2026:900 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
+#: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
 #: note: eigentlich zwei Fußgängerampeln
 #: last_checked: 2026-07-07
 #: check_frequency: 60d
@@ -427,7 +427,7 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
 #: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026)
-#: source_id: planb2026:2025 (bis 21.08.2026)
+#: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026)
 #: last_checked: 2026-07-11
 #: next_check: 2026-08-21 (VIZ-Verkehrsmeldung, planb)
 #: valid: 20260601-20260821
