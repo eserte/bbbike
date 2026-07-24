@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.61;
+$VERSION = 2.62;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -207,6 +207,8 @@ sub register {
 		      'Geoportal Berlin (Radverkehrsanlagen)';
 		  } elsif ($current_tag_filter eq 'pubtrans') {
 		      'Geoportal Berlin (Bus und Tram)';
+		  } elsif ($current_tag_filter eq 'construction') {
+		      'Geoportal Berlin (planbare Ereignisse)';
 		  } else {
 		      'Geoportal Berlin (1:5000)';
 		  }
@@ -218,13 +220,15 @@ sub register {
 		      showmap_gdi_berlin(layers => 'radverkehrsanlagen', @_);
 		  } elsif ($current_tag_filter eq 'pubtrans') {
 		      showmap_gdi_berlin(layers => 'oepnv', @_);
+		  } elsif ($current_tag_filter eq 'construction') {
+		      showmap_gdi_berlin(layers => 'planb', @_);
 		  } else {
 		      showmap_gdi_berlin(layers => 'k5_farbe', @_);
 		  }
 	      },
 	      callback_3 => sub { show_gdi_berlin_menu(@_) },
 	      ($images{Berlin} ? (icon => $images{Berlin}) : ()),
-	      tags => [qw(bicycle pubtrans)],
+	      tags => [qw(bicycle pubtrans construction)],
 	    };
 	# note: the following is not shown in the complete list, just in the "bicycle" group
 	$main::info_plugins{__PACKAGE__ . '_GeoPortalBerlin_Bicycle'} =
