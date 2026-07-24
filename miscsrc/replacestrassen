@@ -30,17 +30,23 @@ use Strassen::Core;
 my @nameexpr;
 my @catexpr;
 my @coordsexpr;
+my @recexpr;
+my @addglobdir;
 my $revcoords;
 my $do_global_directives = 1;
 GetOptions('nameexpr=s@'   => \@nameexpr,
 	   'catexpr=s@'    => \@catexpr,
 	   'coordsexpr=s@' => \@coordsexpr,
+	   'recexpr=s@'    => \@recexpr,
 	   'revcoords'     => \$revcoords,
-	   'globaldirectives!' => \$do_global_directives
+	   'globaldirectives!' => \$do_global_directives,
+	   'addglobdir=s@' => \@addglobdir,
 	  ) or die <<EOF;
 usage: $0 [-nameexpr ... [-nameexpr ...]]
           [-catexpr ... [-catexpr ...]]
           [-coordsexpr ... [-coordsexpr ...]]
+          [-recexpr ... [-recexpr ...]]
+	  [-addglobdir k=v] [-addglobdir ...]]
           [-revcoords] [-[no]globaldirectives]
 EOF
 
@@ -54,6 +60,7 @@ my $new_s = Strassen->new;
 for my $def (['-nameexpr',   \@nameexpr],
 	     ['-catexpr',    \@catexpr],
 	     ['-coordsexpr', \@coordsexpr],
+	     ['-recexpr',    \@recexpr],
 	    ) {
     my($opt, $exprs) = @$def;
     for my $expr (@$exprs) {
@@ -72,6 +79,10 @@ while(1) {
 
     my $r = $s->next;
     last if !@{ $r->[Strassen::COORDS] };
+
+    for my $recexpr (@recexpr) {
+	$r = $recexpr->($r);
+    }
 
     {
 	my $name = $r->[Strassen::NAME];
@@ -111,6 +122,11 @@ while(1) {
 if ($do_global_directives) {
     $new_s->set_global_directives(dclone $s->get_global_directives);
 }
+for my $addglobdir (@addglobdir) {
+    my($k,$v) = split /=/, $addglobdir, 2;
+    $new_s->set_global_directive($k, $v);
+}
+
 $new_s->write(\*STDOUT); # print to STDOUT, but handle bbd encoding correctly
 
 __END__
